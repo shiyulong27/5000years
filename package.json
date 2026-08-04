@@ -1,0 +1,19 @@
+{
+  "name": "5000years",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "上下五千年 · 历史时间线",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node scripts/validate.mjs && vitest run && astro build",
+    "preview": "astro preview",
+    "test": "vitest run",
+    "validate": "node scripts/validate.mjs"
+  },
+  "devDependencies": {
+    "astro": "^5.13.0",
+    "js-yaml": "^4.1.0",
+    "vitest": "^3.2.0"
+  }
+}
