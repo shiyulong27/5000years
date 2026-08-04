@@ -1,0 +1,19 @@
+# 两条不同 region 的色带，用于验证按 region 分列
+- name: 古埃及新王国
+  start: "-1550"
+  end: "-1069"
+  region: 埃及
+  color: "#d4a574"
+
+- name: 罗马共和国
+  start: "-0509"
+  end: "-0027"
+  region: 地中海
+  color: "#a8916f"
+
+# 同 region 的第二条，须与上条同列
+- name: 罗马帝国
+  start: "-0027"
+  end: "0476"
+  region: 地中海
+  color: "#8f7c5e"

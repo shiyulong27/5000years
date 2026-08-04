@@ -1,0 +1,13 @@
+- id: w-rome-republic
+  date: "-0509"
+  title: 罗马共和国建立
+  category: 政治
+  importance: 5
+  region: 地中海
+
+- id: w-buddha
+  date: "-0486"
+  title: 释迦牟尼涅槃
+  category: 文化
+  importance: 4
+  region: 印度

@@ -1,0 +1,63 @@
+# 测试夹具：覆盖父子关系、并存政权、交替之年衔接
+- id: shanggu
+  name: 上古
+  start: "-2100"
+  end: "-0222"
+  color: "#7f8c8d"
+  summary: 传说与早期王朝时代，用作兜底区间
+
+- id: qin
+  name: 秦
+  start: "-0221"
+  end: "-0207"
+  capital: 咸阳
+  color: "#c0392b"
+  summary: 中国第一个中央集权的王朝
+
+- id: han
+  name: 汉
+  start: "-0202"
+  end: "0220"
+  capital: 长安
+  color: "#e67e22"
+
+- id: xihan
+  name: 西汉
+  start: "-0202"
+  end: "0008"
+  capital: 长安
+  color: "#e67e22"
+  parent: han
+
+- id: donghan
+  name: 东汉
+  start: "0025"
+  end: "0220"
+  capital: 洛阳
+  color: "#e67e22"
+  parent: han
+
+# 并存政权：三国。三者互相重叠，须显式声明 concurrent
+- id: wei
+  name: 魏
+  start: "0220"
+  end: "0266"
+  capital: 洛阳
+  color: "#2980b9"
+  concurrent: true
+
+- id: shu
+  name: 蜀
+  start: "0221"
+  end: "0263"
+  capital: 成都
+  color: "#27ae60"
+  concurrent: true
+
+- id: wu
+  name: 吴
+  start: "0222"
+  end: "0280"
+  capital: 建业
+  color: "#8e44ad"
+  concurrent: true

@@ -1,0 +1,24 @@
+# 君主挂在叶子朝代（西汉/东汉）上，而非根朝代 han
+- dynasty: xihan
+  temple_name: 汉高祖
+  name: 刘邦
+  reign_start: "-0202"
+  reign_end: "-0195"
+  era_names: []
+  role: founder
+
+- dynasty: xihan
+  temple_name: 汉武帝
+  name: 刘彻
+  reign_start: "-0141"
+  reign_end: "-0087"
+  era_names: [建元, 元光, 元狩]
+  note: 年号自此始
+
+- dynasty: donghan
+  temple_name: 汉光武帝
+  name: 刘秀
+  reign_start: "0025"
+  reign_end: "0057"
+  era_names: [建武]
+  role: founder

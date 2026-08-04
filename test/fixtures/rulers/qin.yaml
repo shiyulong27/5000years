@@ -1,0 +1,17 @@
+# 秦：两位君主在交替之年 -0210 衔接，左闭右闭，不算重叠
+- dynasty: qin
+  temple_name: 秦始皇
+  name: 嬴政
+  reign_start: "-0221"
+  reign_end: "-0210"
+  era_names: []
+  note: 首称皇帝
+  role: founder
+
+- dynasty: qin
+  temple_name: 秦二世
+  name: 胡亥
+  reign_start: "-0210"
+  reign_end: "-0207"
+  era_names: []
+  role: last

@@ -1,0 +1,20 @@
+# 三种精度的事件各一条
+- id: qin-unify-221bc
+  date: "-0221"
+  title: 秦灭六国，统一中国
+  category: 政治
+  importance: 5
+  summary: |
+    秦王政灭齐，天下一统，自称始皇帝。废分封行郡县，
+    书同文、车同轨、统一度量衡，中央集权制度自此确立。
+  confidence: 确定
+  sources: [史记·秦始皇本纪]
+
+- id: dazexiang-209bc
+  date: "-0209-07"
+  title: 陈胜吴广起义
+  category: 战争
+  importance: 4
+  summary: 戍卒失期，揭竿于大泽乡，为中国史上首次大规模平民起义。
+  confidence: 确定
+  sources: [史记·陈涉世家]

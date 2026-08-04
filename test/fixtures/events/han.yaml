@@ -1,0 +1,17 @@
+- id: zhangqian-138bc
+  date: "-0138"
+  title: 张骞出使西域
+  category: 外交
+  importance: 4
+  summary: 汉武帝遣张骞通西域，丝绸之路自此开通。
+  confidence: 确定
+  sources: [汉书·张骞传]
+
+- id: chibi-208
+  date: "0208-11"
+  title: 赤壁之战
+  category: 战争
+  importance: 5
+  summary: 孙刘联军败曹操于赤壁，三分之势自此奠定。
+  confidence: 有争议
+  sources: [三国志·周瑜传]
