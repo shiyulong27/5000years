@@ -1,0 +1,34 @@
+# 朝代定义。parent 用于子朝代归并，concurrent 用于并存政权。
+#
+# 「上古」为兜底记录，覆盖夏以前的传说时代——事件不属于任何朝代时校验器
+# 会报错，故此段必须有区间承接，否则远古事件在长卷上无处安放。
+
+- id: shanggu
+  name: 上古
+  start: "-3000"
+  end: "-2071"
+  color: "#95a5a6"
+  summary: 三皇五帝的传说时代，年代与史实均无定论。
+
+- id: xia
+  name: 夏
+  start: "-2070"
+  end: "-1601"
+  capital: 阳城
+  color: "#7f8c8d"
+  summary: 中国史书记载的第一个世袭制王朝，考古学上的对应仍有争议。
+
+- id: shang
+  name: 商
+  start: "-1600"
+  end: "-1047"
+  capital: 殷
+  color: "#8d6e63"
+  summary: 有甲骨文可证的最早王朝。
+
+- id: zhou
+  name: 周
+  start: "-1046"
+  end: "-0256"
+  capital: 镐京
+  color: "#a1887f"
