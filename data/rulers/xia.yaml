@@ -1,0 +1,59 @@
+# 夏代君主。
+#
+# 整个夏代的君主世系皆出自《史记·夏本纪》与《竹书纪年》，
+# 二者在世系、年数上多有出入，且无出土文字可证。
+# 故全部标 confidence: 有争议，年代为推定值而非确考。
+#
+# 此处只录关键几位（开国、中兴、末代），非全部十七王。
+
+- dynasty: xia
+  temple_name: 禹
+  name: 姒文命
+  reign_start: "-2070"
+  reign_end: "-2061"
+  era_names: []
+  note: 治水有功，受舜禅让
+  role: founder
+  confidence: 有争议
+  dispute: |
+    禹的历史性存疑。传世文献将其记为治水英雄与夏的奠基者，
+    但顾颉刚等疑古派认为禹原为神话人物，后被历史化。
+    遂公盨铭文（西周中期）已有「天命禹敷土」之语，
+    可证西周时禹的传说已成形，但不足以证明夏初实有其人。
+
+- dynasty: xia
+  temple_name: 启
+  name: 姒启
+  reign_start: "-2061"
+  reign_end: "-2052"
+  era_names: []
+  note: 首开世袭，家天下之始
+  confidence: 有争议
+  dispute: |
+    继位方式有两说。《史记》称禹传位于益，益让于启；
+    《竹书纪年》则载「益干启位，启杀之」。
+    前者维护禅让叙事，后者直言武力夺位，两说不可调和。
+
+- dynasty: xia
+  temple_name: 少康
+  name: 姒少康
+  reign_start: "-1940"
+  reign_end: "-1919"
+  era_names: []
+  note: 少康中兴，复夏之祚
+  confidence: 有争议
+  dispute: 年代为推定，各家所定相差可达百年。
+
+- dynasty: xia
+  temple_name: 桀
+  name: 姒履癸
+  reign_start: "-1652"
+  reign_end: "-1601"
+  era_names: []
+  note: 夏末代君主，为商汤所灭
+  role: last
+  confidence: 有争议
+  dispute: |
+    桀的暴虐形象多出自后世追述，商周文献有借前朝之亡
+    自证天命的动机，其记载可信度需打折扣。
+    在位年数各说不一，此处采断代工程说。

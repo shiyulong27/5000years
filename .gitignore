@@ -4,3 +4,6 @@ dist/
 .astro/
 .DS_Store
 .shots/
+
+# 临时诊断脚本
+scripts/_*

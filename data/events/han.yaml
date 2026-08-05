@@ -18,10 +18,14 @@
 - id: zhangqian-138bc
   date: "-0138"
   title: 张骞出使西域
-  category: 外交
+  category: 政治
+  tags: [外交, 边疆, 丝路]
   importance: 5
   summary: 汉武帝遣张骞通西域，凿空之举，丝绸之路自此开通。
-  confidence: 确定
+  confidence: 有争议
+  dispute: |
+    出使年份《史记》《汉书》记载略有出入，前139年与前138年两说并存，
+    学界至今未有定论。此处采前138年说。
   sources: [汉书·张骞传]
 
 - id: sima-shiji
@@ -52,7 +56,8 @@
 - id: cailun-paper
   date: "0105"
   title: 蔡伦改进造纸术
-  category: 科技
+  category: 文化
+  tags: [科技, 工艺]
   importance: 5
   summary: 以树皮、麻头、破布为料，纸自此廉而易得，书写载体为之一变。
   confidence: 确定

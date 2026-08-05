@@ -11,8 +11,20 @@ import { locOf } from './load.js'
  * 报错信息的质量直接决定这件事是否可持续。
  */
 
-const CATEGORIES = ['政治', '战争', '文化', '科技', '经济', '外交', '灾异']
-const CONFIDENCES = ['确定', '存疑', '有争议']
+// 大类只保留五个，且只有这五个进筛选开关。
+//
+// 「外交」对前现代中国是时代错置——朝贡体系不是外交，故并入政治。
+// 「灾异」概念混杂——「灾」是实事，「异」是天人感应的解释框架，
+// 故只保留「灾害」。「科技」条目稀少且多与文化交织，并入文化。
+//
+// 更细的划分（制度、宗教、科技、民族、边疆…）放进自由的 tags 字段：
+// tags 不做枚举校验，不做筛选开关，将来供搜索与交叉引用使用。
+// 这样分类不打架，工具栏也不会被十几个复选框塞满。
+const CATEGORIES = ['政治', '战争', '文化', '经济', '灾害']
+
+// 「传说」用于三皇五帝这类本就不属信史的条目——它与「有争议」不同：
+// 有争议是学界对史实有分歧，传说是根本不以信史论。
+const CONFIDENCES = ['确定', '存疑', '有争议', '传说']
 
 // 顶层朝代（parent 为空）在分组时的哨兵键。用不可能与真实 id 冲突的字面量，
 // 避免某个朝代恰好叫 root 时与顶层组混在一起。
@@ -169,11 +181,57 @@ export function validateWithWarnings(data) {
         push(e, `事件「${labelOf(e, 'event')}」的 importance 须为 1–5 的整数，实际为 ${n}`)
       }
     }
-    // confidence 可缺省，默认「确定」
-    if (e.confidence !== undefined && !CONFIDENCES.includes(e.confidence)) {
-      push(e, `事件「${labelOf(e, 'event')}」的 confidence「${e.confidence}」不在 ${CONFIDENCES.join('/')} 之内`)
+    // confidence 与 dispute 由下方 checkConfidence 统一校验
+  }
+
+  // ── tags 须为字符串数组 ─────────────────────────────────────
+  // 取值不做枚举——tags 就是为了容纳 category 装不下的细分维度
+  // （制度、宗教、科技、民族、边疆…），限死取值就失去了意义。
+  // 只校验类型，避免误写成字符串导致下游 join 出怪结果。
+  for (const e of [...events, ...worldEvents]) {
+    if (e.tags === undefined) continue
+    if (!Array.isArray(e.tags)) {
+      push(e, `事件「${labelOf(e, 'event')}」的 tags 须为数组，实际为 ${typeof e.tags}`)
+      continue
+    }
+    for (const t of e.tags) {
+      if (typeof t !== 'string' || t === '') {
+        push(e, `事件「${labelOf(e, 'event')}」的 tags 含非字符串项：${JSON.stringify(t)}`)
+      }
     }
   }
+
+  // ── confidence / dispute：事件、朝代、君主三类通用 ──────────
+  // 夏是否为信史、三皇五帝是否实有其人、张骞出使是前139还是前138——
+  // 争议既可能落在某条事件上，也可能落在整个朝代或某位君主身上，
+  // 故三类都须支持，且都须能写清争议内容而非只标一个「有争议」。
+  const checkConfidence = (records, kind, noun) => {
+    for (const r of records) {
+      // confidence 可缺省，默认「确定」
+      if (r.confidence !== undefined && !CONFIDENCES.includes(r.confidence)) {
+        push(
+          r,
+          `${noun}「${labelOf(r, kind)}」的 confidence「${r.confidence}」不在 ${CONFIDENCES.join('/')} 之内`
+        )
+      }
+      if (r.dispute !== undefined && typeof r.dispute !== 'string') {
+        push(r, `${noun}「${labelOf(r, kind)}」的 dispute 须为文本`)
+      }
+      // 标了非「确定」却不说明争议何在，等于只告诉读者「别信」而不告诉「为何」。
+      // 这是提示不是错误——有些条目确实只能存疑而无从展开。
+      if (r.confidence && r.confidence !== '确定' && !r.dispute) {
+        push(
+          r,
+          `${noun}「${labelOf(r, kind)}」标为「${r.confidence}」但未填 dispute 说明争议内容`,
+          'warn'
+        )
+      }
+    }
+  }
+  checkConfidence(events, 'event', '事件')
+  checkConfidence(worldEvents, 'event', '世界事件')
+  checkConfidence(dynasties, 'dynasty', '朝代')
+  checkConfidence(rulers, 'ruler', '君主')
 
   // ── 引用完整性 ──────────────────────────────────────────────
   const byId = new Map(dynasties.filter((d) => d.id !== undefined).map((d) => [d.id, d]))
