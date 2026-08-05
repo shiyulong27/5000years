@@ -69,3 +69,43 @@
   importance: 4
   summary: 狄奥多西一世死后帝国永久分裂。
   confidence: 确定
+
+- id: w-constantine-313
+  date: "0313"
+  title: 米兰敕令，基督教合法化
+  category: 文化
+  importance: 5
+  summary: 君士坦丁承认基督教，此后渐成罗马国教。
+  confidence: 确定
+
+- id: w-nicaea-325
+  date: "0325"
+  title: 尼西亚公会议
+  category: 文化
+  importance: 4
+  summary: 确立基督教基本教义，是为尼西亚信经。
+  confidence: 确定
+
+- id: w-gupta-320
+  date: "0320"
+  title: 笈多王朝兴起
+  category: 政治
+  importance: 4
+  summary: 印度古典文化的黄金时代，数学上的十进位与零皆成于此时。
+  confidence: 有争议
+
+- id: w-rome-sack-410
+  date: "0410-08"
+  title: 西哥特人洗劫罗马
+  category: 战争
+  importance: 5
+  summary: 罗马城八百年来首次陷落，震动地中海世界。
+  confidence: 确定
+
+- id: w-west-rome-fall-476
+  date: "0476"
+  title: 西罗马帝国灭亡
+  category: 政治
+  importance: 5
+  summary: 末代皇帝被废，西欧进入中世纪。与中国的南北朝几乎同时。
+  confidence: 确定

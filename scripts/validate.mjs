@@ -2,7 +2,7 @@
 import { fileURLToPath } from 'node:url'
 import { existsSync } from 'node:fs'
 import { loadAll } from '../src/lib/load.js'
-import { validate } from '../src/lib/validate.js'
+import { validateWithWarnings } from '../src/lib/validate.js'
 
 /**
  * 数据校验入口。构建与 CI 均先跑此脚本，不通过则中止，绝不发布错误页面。
@@ -23,7 +23,15 @@ try {
   process.exit(1)
 }
 
-const errors = validate(data)
+const { errors, warnings } = validateWithWarnings(data)
+
+// 警告先打印，不影响退出码——史料缺失、有意只录代表性君主都会触发，
+// 值得看一眼但不该中止构建。
+for (const w of warnings) {
+  console.warn(`⚠ data/${w.file}:${w.line}`)
+  console.warn(`  ${w.message}`)
+  console.warn('')
+}
 
 if (errors.length > 0) {
   for (const e of errors) {
@@ -36,7 +44,8 @@ if (errors.length > 0) {
 }
 
 const n = (arr) => arr.length
+const warnNote = warnings.length > 0 ? `（另有 ${warnings.length} 条提示）` : ''
 console.log(
   `✓ 校验通过：${n(data.events)} 条事件，${n(data.dynasties)} 个朝代，` +
-    `${n(data.rulers)} 位君主，${n(data.worldEvents)} 条世界事件，${n(data.civilizations)} 条文明色带`
+    `${n(data.rulers)} 位君主，${n(data.worldEvents)} 条世界事件，${n(data.civilizations)} 条文明色带${warnNote}`
 )

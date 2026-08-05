@@ -54,3 +54,15 @@
   end: "-0185"
   region: 印度
   color: "#96731a"
+
+- name: 笈多王朝
+  start: "0320"
+  end: "0550"
+  region: 印度
+  color: "#a8842a"
+
+- name: 拜占庭帝国
+  start: "0330"
+  end: "1453"
+  region: 地中海
+  color: "#7d8fa0"

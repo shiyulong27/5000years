@@ -1,0 +1,53 @@
+# 君主挂在叶子朝代（西晋/东晋）上，而非根朝代 jin
+
+- dynasty: xijin
+  temple_name: 晋武帝
+  name: 司马炎
+  reign_start: "0266"
+  reign_end: "0290"
+  era_names: [泰始, 咸宁, 太康, 太熙]
+  note: 代魏立晋，太康一统
+  role: founder
+
+- dynasty: xijin
+  temple_name: 晋惠帝
+  name: 司马衷
+  reign_start: "0290"
+  reign_end: "0307"
+  era_names: [永熙, 元康, 永康, 太安, 永兴, 光熙]
+  note: 八王之乱起于其时
+
+- dynasty: xijin
+  temple_name: 晋愍帝
+  name: 司马邺
+  reign_start: "0313"
+  reign_end: "0316"
+  era_names: [建兴]
+  note: 长安陷，西晋亡
+  role: last
+
+- dynasty: dongjin
+  temple_name: 晋元帝
+  name: 司马睿
+  reign_start: "0317"
+  reign_end: "0323"
+  era_names: [建武, 大兴, 永昌]
+  note: 衣冠南渡，建康立国
+  role: founder
+
+- dynasty: dongjin
+  temple_name: 晋孝武帝
+  name: 司马曜
+  reign_start: "0372"
+  reign_end: "0396"
+  era_names: [宁康, 太元]
+  note: 淝水之战在其时
+
+- dynasty: dongjin
+  temple_name: 晋恭帝
+  name: 司马德文
+  reign_start: "0419"
+  reign_end: "0420"
+  era_names: [元熙]
+  note: 禅位于刘裕，东晋亡
+  role: last

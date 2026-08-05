@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { fileURLToPath } from 'node:url'
 import { loadAll } from '../src/lib/load.js'
-import { validate } from '../src/lib/validate.js'
+import { validate, validateWithWarnings } from '../src/lib/validate.js'
 
 const FIXTURES = fileURLToPath(new URL('./fixtures', import.meta.url))
 
@@ -238,6 +238,113 @@ describe('朝代 parent 引用', () => {
       })
     )
     expect(errs.length).toBeGreaterThan(0)
+  })
+
+  it('parent 链成环时报错而非死循环', () => {
+    const errs = validate(
+      freshData((d) => {
+        // han → xihan → han
+        d.dynasties.find((x) => x.id === 'han').parent = 'xihan'
+      })
+    )
+    expect(errs.some((e) => e.message.includes('成环'))).toBe(true)
+  })
+
+  it('子朝代超出父朝代区间时报错', () => {
+    const errs = validate(
+      freshData((d) => {
+        d.dynasties.find((x) => x.id === 'donghan').end = '0300'
+      })
+    )
+    expect(errs.some((e) => e.message.includes('超出父朝代'))).toBe(true)
+  })
+})
+
+describe('起止顺序', () => {
+  it('朝代 end 早于 start 时报错', () => {
+    const errs = validate(
+      freshData((d) => {
+        d.dynasties.find((x) => x.id === 'qin').end = '-0250'
+      })
+    )
+    expect(errs.some((e) => e.message.includes('起止倒置'))).toBe(true)
+  })
+
+  it('君主在位倒置时报错', () => {
+    const errs = validate(
+      freshData((d) => {
+        const r = d.rulers.find((x) => x.temple_name === '秦始皇')
+        r.reign_start = '-0210'
+        r.reign_end = '-0221'
+      })
+    )
+    expect(errs.some((e) => e.message.includes('起止倒置'))).toBe(true)
+  })
+})
+
+describe('君主归属层级', () => {
+  it('君主挂在有子朝代的父朝代上时报错', () => {
+    const errs = validate(
+      freshData((d) => {
+        d.rulers.push({
+          dynasty: 'han', // han 有 xihan/donghan 等子朝代
+          temple_name: '某帝',
+          reign_start: '0100',
+          reign_end: '0110',
+        })
+      })
+    )
+    expect(errs.some((e) => e.message.includes('子朝代'))).toBe(true)
+  })
+})
+
+describe('role 字段', () => {
+  it('role 取值非法时报错', () => {
+    const errs = validate(
+      freshData((d) => {
+        d.rulers[0].role = 'middle'
+      })
+    )
+    expect(errs.some((e) => e.message.includes('role'))).toBe(true)
+  })
+
+  it('同一朝代有多位 founder 时报错', () => {
+    const errs = validate(
+      freshData((d) => {
+        d.rulers.find((r) => r.temple_name === '秦二世').role = 'founder'
+      })
+    )
+    expect(errs.some((e) => e.message.includes('founder'))).toBe(true)
+  })
+})
+
+describe('颜色格式', () => {
+  it('非 #RRGGBB 时报错', () => {
+    const errs = validate(
+      freshData((d) => {
+        d.dynasties.find((x) => x.id === 'qin').color = 'red'
+      })
+    )
+    expect(errs.some((e) => e.message.includes('RRGGBB'))).toBe(true)
+  })
+
+  it('三位简写也报错——color-mix 对其行为不一致', () => {
+    const errs = validate(
+      freshData((d) => {
+        d.dynasties.find((x) => x.id === 'qin').color = '#f00'
+      })
+    )
+    expect(errs.some((e) => e.message.includes('RRGGBB'))).toBe(true)
+  })
+})
+
+describe('君主衔接提示', () => {
+  it('缺口过大时归入 warnings 而非 errors——不应中止构建', () => {
+    const { errors, warnings } = validateWithWarnings(freshData())
+    // 夹具有意只录代表性君主（高祖 -0195 → 武帝 -0141），故必有提示
+    expect(warnings.some((w) => w.message.includes('漏录'))).toBe(true)
+    // 但这不是错误
+    expect(errors).toEqual([])
   })
 })
 

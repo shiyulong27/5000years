@@ -1,0 +1,91 @@
+- id: jin-founding-266
+  date: "0266-02"
+  title: 司马炎代魏，西晋建立
+  category: 政治
+  importance: 5
+  summary: 魏元帝禅位于司马炎，改元泰始，定都洛阳。
+  confidence: 确定
+  sources: [晋书·武帝纪]
+
+- id: bawang-291
+  date: "0291"
+  title: 八王之乱
+  category: 战争
+  importance: 5
+  summary: |
+    宗室诸王互相攻伐十六年，中原残破，国力耗尽，
+    为随之而来的永嘉之乱埋下祸根。
+  confidence: 确定
+  sources: [晋书]
+
+- id: yongjia-311
+  date: "0311-06"
+  title: 永嘉之乱，洛阳陷落
+  category: 战争
+  importance: 5
+  summary: 匈奴刘曜攻破洛阳，掳晋怀帝，士民死者三万余。
+  confidence: 确定
+  sources: [晋书·怀帝纪]
+
+- id: xijin-fall-316
+  date: "0316-11"
+  title: 西晋亡
+  category: 政治
+  importance: 5
+  summary: 长安陷，晋愍帝出降。北方自此进入十六国之世。
+  confidence: 确定
+
+- id: yiguan-nandu-317
+  date: "0317-03"
+  title: 衣冠南渡，东晋建立
+  category: 政治
+  importance: 5
+  summary: |
+    司马睿即位于建康，中原士族大批南迁。
+    江南自此成为华夏文化的重心之一。
+  confidence: 确定
+  sources: [晋书·元帝纪]
+
+- id: zutixibei-320
+  date: "0320"
+  title: 祖逖北伐
+  category: 战争
+  importance: 3
+  summary: 中流击楫，誓复中原。收复黄河以南部分失地，惜功败垂成。
+  confidence: 有争议
+
+- id: wangxizhi-353
+  date: "0353-03-03"
+  title: 王羲之作《兰亭集序》
+  category: 文化
+  importance: 5
+  summary: 会稽山阴之兰亭修禊，序文书法并称绝品，后世奉为行书第一。
+  confidence: 有争议
+  sources: [晋书·王羲之传]
+
+- id: feishui-383
+  date: "0383-11"
+  title: 淝水之战
+  category: 战争
+  importance: 5
+  summary: |
+    前秦苻坚率大军南下，谢玄以八万北府兵破之。
+    风声鹤唳、草木皆兵皆出于此，东晋因此得以偏安百年。
+  confidence: 确定
+  sources: [晋书·谢玄传]
+
+- id: taoyuanming-405
+  date: "0405-11"
+  title: 陶渊明归隐
+  category: 文化
+  importance: 4
+  summary: 不为五斗米折腰，赋《归去来兮辞》去职。田园诗自此成一大宗。
+  confidence: 有争议
+
+- id: dongjin-fall-420
+  date: "0420-06"
+  title: 东晋亡，刘宋代之
+  category: 政治
+  importance: 4
+  summary: 刘裕受禅称帝，南朝之始。
+  confidence: 确定

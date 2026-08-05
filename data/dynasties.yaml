@@ -119,3 +119,31 @@
   color: "#8e44ad"
   concurrent: true
   summary: 据江东六郡，三国中存续最久。
+
+- id: jin
+  name: 晋
+  start: "0266"
+  end: "0420"
+  capital: 洛阳
+  color: "#16a085"
+  # 与孙吴并存 266–280（晋灭吴方一统），故须声明
+  concurrent: true
+  summary: |
+    司马炎代魏，太康年间短暂一统。八王之乱后北方陷于战火，
+    衣冠南渡，此后南北分治两百余年。
+
+- id: xijin
+  name: 西晋
+  start: "0266"
+  end: "0316"
+  capital: 洛阳
+  color: "#16a085"
+  parent: jin
+
+- id: dongjin
+  name: 东晋
+  start: "0317"
+  end: "0420"
+  capital: 建康
+  color: "#16a085"
+  parent: jin
