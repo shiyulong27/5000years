@@ -1,0 +1,71 @@
+# 三皇五帝。
+#
+# 全部标 confidence: 传说——这不是「学界有分歧」，而是根本不以信史论。
+# 名单本身各家就不一致：《史记》采五帝而不载三皇，《世本》《帝王世纪》
+# 《尚书大传》所列三皇各不相同。此处采最通行的一组，并在 dispute 中
+# 说明异说。
+#
+# 年代为象征性推定，无任何史料依据，仅为在长卷上占位。
+# 读者应当一眼看出这一段与夏商周的性质不同。
+#
+# 各家推定的在位年互相矛盾（如帝喾终年与尧始年常有重叠），
+# 此处已作微调以通过区间校验——这种调整本身就说明这些年代
+# 不可当真。真正可靠的信息是次序，不是年份。
+
+- dynasty: shanggu
+  temple_name: 黄帝
+  name: 姬轩辕
+  reign_start: "-2698"
+  reign_end: "-2598"
+  era_names: []
+  note: 五帝之首，华夏共祖
+  role: founder
+  confidence: 传说
+  dispute: |
+    黄帝的存在无考古或同时代文字可证。《史记》以黄帝为五帝之首，
+    但顾颉刚指出「层累地造成的中国古史」——时代越晚，所述古史越早、
+    人物越详。黄帝形象在战国至汉代不断被追加，未必有其人。
+    在位百年之说尤不可信。
+
+- dynasty: shanggu
+  temple_name: 颛顼
+  name: 姬高阳
+  reign_start: "-2514"
+  reign_end: "-2437"
+  era_names: []
+  confidence: 传说
+  dispute: 五帝名单各家不一，《史记》列颛顼为第二，他书或以少昊居之。
+
+- dynasty: shanggu
+  temple_name: 帝喾
+  name: 姬夋
+  reign_start: "-2436"
+  reign_end: "-2367"
+  era_names: []
+  confidence: 传说
+  dispute: 帝喾事迹极简，多为后世追补，与殷商先祖「夋」或为同一神话原型。
+
+- dynasty: shanggu
+  temple_name: 尧
+  name: 伊祁放勋
+  reign_start: "-2366"
+  reign_end: "-2259"
+  era_names: []
+  note: 禅让于舜
+  confidence: 传说
+  dispute: |
+    禅让说出自儒家理想化叙述。《竹书纪年》另载「昔尧德衰，为舜所囚」，
+    与禅让美谈截然相反。两说并存，皆无实证。
+
+- dynasty: shanggu
+  temple_name: 舜
+  name: 姚重华
+  reign_start: "-2255"
+  reign_end: "-2208"
+  era_names: []
+  note: 禅让于禹，五帝之末
+  role: last
+  confidence: 传说
+  dispute: |
+    同尧，禅让与篡夺两说并存。舜的出身、事迹在先秦文献中差异极大，
+    《孟子》称其「东夷之人」，与华夏共祖的叙事本有张力。

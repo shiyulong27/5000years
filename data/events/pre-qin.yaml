@@ -1,3 +1,42 @@
+- id: huangdi-chiyou
+  date: "-2698"
+  title: 涿鹿之战，黄帝败蚩尤
+  category: 战争
+  tags: [民族, 传说]
+  importance: 4
+  summary: 华夏与东夷集团的传说性决战，后世奉为华夏共同体的起点。
+  confidence: 传说
+  dispute: |
+    纯属传说，无任何考古或同时代文字支撑。战场地望、参战方、
+    年代皆无定说。此条录入是因其在文化记忆中的分量，
+    而非因其为史实。
+
+- id: yao-shun-shanrang
+  date: "-2259"
+  title: 尧禅位于舜
+  category: 政治
+  tags: [制度, 传说]
+  importance: 4
+  summary: 儒家理想中的权力交接典范，与后世世袭制形成对照。
+  confidence: 传说
+  dispute: |
+    《尚书》《孟子》述为禅让美谈；《竹书纪年》则载「昔尧德衰，
+    为舜所囚」，直指政变。两说方向相反，皆无实证。
+    禅让叙事的政治功能大于其史实性。
+
+- id: dayu-zhishui
+  date: "-2208"
+  title: 大禹治水
+  category: 灾害
+  tags: [水利, 传说]
+  importance: 5
+  summary: 疏而不堵，十三年而水患平。禹因治水之功受舜禅让。
+  confidence: 传说
+  dispute: |
+    治水传说可能反映了新石器晚期黄河流域的真实洪水记忆——
+    地质证据显示约前1920年确有特大洪水。但将其与禹其人、
+    与夏的建立挂钩，属后世的历史化建构。
+
 - id: xia-founding
   date: "-2070"
   title: 禹传位于启，夏朝建立
