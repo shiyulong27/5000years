@@ -1,0 +1,71 @@
+- id: w-egypt-pyramid
+  date: "-2560"
+  title: 吉萨大金字塔建成
+  category: 文化
+  importance: 5
+  summary: 胡夫金字塔，古代世界七大奇迹中唯一留存至今者。
+  confidence: 有争议
+
+- id: w-hammurabi
+  date: "-1754"
+  title: 《汉谟拉比法典》颁行
+  category: 政治
+  importance: 5
+  summary: 现存最完整的古代成文法典之一。
+  confidence: 有争议
+
+- id: w-troy
+  date: "-1200"
+  title: 特洛伊战争
+  category: 战争
+  importance: 3
+  summary: 荷马史诗所记，考古上确有其城毁于此时。
+  confidence: 有争议
+
+- id: w-rome-republic
+  date: "-0509"
+  title: 罗马共和国建立
+  category: 政治
+  importance: 5
+  summary: 驱逐末代国王，行元老院与执政官之制。
+  confidence: 有争议
+
+- id: w-buddha
+  date: "-0486"
+  title: 释迦牟尼涅槃
+  category: 文化
+  importance: 5
+  summary: 佛教自此传布，数百年后经西域入华。
+  confidence: 有争议
+
+- id: w-alexander
+  date: "-0334"
+  title: 亚历山大东征
+  category: 战争
+  importance: 5
+  summary: 十年间灭波斯，兵锋抵印度河，希腊化世界自此成形。
+  confidence: 确定
+
+- id: w-caesar
+  date: "-0044-03-15"
+  title: 凯撒遇刺
+  category: 政治
+  importance: 4
+  summary: 元老院中被刺，罗马共和国的终结自此不可挽回。
+  confidence: 确定
+
+- id: w-jesus
+  date: "0030"
+  title: 耶稣受难
+  category: 文化
+  importance: 5
+  summary: 基督教自此发端，此后深刻塑造西方文明。
+  confidence: 有争议
+
+- id: w-rome-empire-split
+  date: "0395"
+  title: 罗马帝国东西分治
+  category: 政治
+  importance: 4
+  summary: 狄奥多西一世死后帝国永久分裂。
+  confidence: 确定

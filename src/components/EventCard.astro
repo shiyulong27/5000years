@@ -1,0 +1,28 @@
+---
+import { formatDate } from '../lib/date.js'
+
+const { event } = Astro.props
+const uncertain = event.confidence && event.confidence !== '确定'
+---
+
+<article
+  class="event-card"
+  id={event.id}
+  data-category={event.category}
+  data-importance={event.importance}
+>
+  <header class="event-head">
+    <time class="event-date">{formatDate(event.date)}</time>
+    <span class="event-cat">{event.category}</span>
+    {uncertain && <span class="event-flag" title={`此条${event.confidence}`}>{event.confidence}</span>}
+  </header>
+
+  <h3 class="event-title">{event.title}</h3>
+
+  {/* 缺失字段不渲染对应区块，不显示空白占位——数据缺失是常态而非错误 */}
+  {event.summary && <p class="event-summary">{event.summary}</p>}
+
+  {event.sources?.length > 0 && (
+    <p class="event-sources">{event.sources.join('、')}</p>
+  )}
+</article>

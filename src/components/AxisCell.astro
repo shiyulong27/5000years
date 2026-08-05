@@ -1,0 +1,23 @@
+---
+import { formatDate } from '../lib/date.js'
+
+const { row } = Astro.props
+const { year, dynasties, rulers } = row
+
+const label = year < 0 ? `前${Math.abs(year)}` : String(year)
+---
+
+<div class="axis-cell">
+  <span class="axis-year">{label}</span>
+
+  {/* 分裂期同年多政权，色带并排显示 */}
+  <div class="axis-bands">
+    {dynasties.map((d) => (
+      <span class="axis-band" style={`background:${d.color}`} title={d.name}></span>
+    ))}
+  </div>
+
+  {rulers.length > 0 && (
+    <span class="axis-rulers">{rulers.map((r) => r.temple_name).join('・')}</span>
+  )}
+</div>

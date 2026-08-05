@@ -1,0 +1,514 @@
+/* 上下五千年 · 长卷样式
+ *
+ * 字号与行距以长时间阅读为准，非以信息密度为准。
+ */
+
+:root {
+  --bg: #faf8f5;
+  --fg: #2c2416;
+  --muted: #857a68;
+  --line: #e0d8cc;
+  --card: #fffdfa;
+  --axis-w: 8rem;
+  --world-w: minmax(14rem, 1fr);
+  --china-w: minmax(22rem, 1.6fr);
+  --civ-w: 2.2rem;
+  --row-gap: 1.25rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'SimSun', serif;
+  font-size: 15px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── 页头与工具栏 ─────────────────────────────────── */
+
+.site-head {
+  padding: 2.5rem 2rem 1rem;
+  text-align: center;
+}
+
+.site-head h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.3em;
+  font-weight: 600;
+}
+
+.site-sub {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+}
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  padding: 0.75rem 2rem;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  font-size: 0.85rem;
+}
+
+.tool-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tool-cats {
+  gap: 0.4rem;
+}
+
+.switch,
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chip {
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  transition: opacity 0.15s;
+}
+
+.chip:has(input:not(:checked)) {
+  opacity: 0.35;
+}
+
+.chip input,
+.switch input {
+  margin: 0;
+  accent-color: #8b6f47;
+}
+
+/* 视觉隐藏但保留可聚焦与可点击——用 opacity:0 + 定位会使键盘用户
+   无法聚焦，且辅助技术与自动化工具都点不到 */
+.chip input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.chip:has(input:focus-visible) {
+  outline: 2px solid #8b6f47;
+  outline-offset: 2px;
+}
+
+#jump-dynasty {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--card);
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.tool-current {
+  margin-left: auto;
+  color: var(--muted);
+  letter-spacing: 0.15em;
+}
+
+/* ── 长卷主体 ─────────────────────────────────────── */
+
+main {
+  padding: 1rem 2rem 4rem;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns:
+    repeat(var(--civ-count), var(--civ-w))
+    var(--world-w)
+    var(--axis-w)
+    var(--china-w);
+  /* 不设 align-items:start——跨行的文明色带须拉伸至其整个区间，
+     否则会缩成起始行高的小方块，失去作为参照系的作用 */
+  column-gap: 0.75rem;
+  /* 不用 row-gap：它会在色带跨越的每一行之间切出缝隙，使色带断成一节节。
+     行间距改由单元格自身的上下内边距提供。 */
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.cell {
+  min-width: 0;
+  align-self: start;
+  padding-block: calc(var(--row-gap) / 2);
+}
+
+.cell.is-empty {
+  display: none;
+}
+
+.timeline.hide-world {
+  /* 仅 display:none 不会让 Grid 模板列收缩，中轴会滞留原处、左侧留下
+     大片空白。故关掉世界栏时同时重排列模板，把空间交还给中国事件栏。 */
+  grid-template-columns: var(--axis-w) minmax(0, 1fr);
+}
+
+.timeline.hide-world .cell-world,
+.timeline.hide-world .civ-band {
+  display: none;
+}
+
+.timeline.hide-world .cell-axis {
+  grid-column: 1 !important;
+}
+
+.timeline.hide-world .cell-china {
+  grid-column: 2 !important;
+}
+
+.timeline.hide-world .banner-row {
+  grid-column: 1 / -1 !important;
+}
+
+/* ── 中轴 ─────────────────────────────────────────── */
+
+/* 中轴单元格不整体 sticky——每行各自 sticky 等于没有效果。
+   改为其内容在本行范围内吸顶：滚过长事件列表时年份仍可见。 */
+.cell-axis {
+  position: relative;
+}
+
+/* 中轴贯穿全卷的细线：使长卷在稀疏年份处仍连续，
+   这正是「不逐年出行」得以成立的视觉前提 */
+.cell-axis::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  transform: translateX(-50%);
+  background: var(--line);
+}
+
+.axis-cell {
+  position: sticky;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0;
+  text-align: center;
+  background: var(--bg);
+}
+
+.axis-year {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+}
+
+.axis-bands {
+  display: flex;
+  gap: 2px;
+  width: 100%;
+  justify-content: center;
+}
+
+.axis-band {
+  display: block;
+  width: 0.55rem;
+  height: 2.5rem;
+  border-radius: 1px;
+}
+
+.axis-rulers {
+  font-size: 0.72rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+/* ── 朝代横幅 ─────────────────────────────────────── */
+
+.banner-row {
+  padding-block: 1.25rem 0.35rem;
+  z-index: 5;
+}
+
+.dynasty-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.25rem;
+  padding: 0.6rem 1rem;
+  border-left: 5px solid var(--dynasty-color);
+  background: color-mix(in srgb, var(--dynasty-color) 8%, var(--card));
+  border-radius: 3px;
+}
+
+.banner-name {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.banner-name a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted color-mix(in srgb, var(--dynasty-color) 60%, transparent);
+}
+
+.banner-name a:hover {
+  border-bottom-style: solid;
+}
+
+.banner-span,
+.banner-capital,
+.banner-rulers {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.banner-rulers .sep {
+  margin: 0 0.4rem;
+  opacity: 0.5;
+}
+
+/* ── 事件卡片 ─────────────────────────────────────── */
+
+.event-card {
+  padding: 0.6rem 0.9rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+}
+
+.event-card[hidden] {
+  display: none;
+}
+
+.event-card:last-child {
+  margin-bottom: 0;
+}
+
+.event-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.event-date {
+  font-variant-numeric: tabular-nums;
+}
+
+.event-cat {
+  padding: 0 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+}
+
+/* confidence 非「确定」时的视觉标记：AI 生成的冷门年代与精确日期
+   容易出错，此标记让作者一眼识别需要核查的条目 */
+.event-flag {
+  padding: 0 0.4rem;
+  border-radius: 2px;
+  background: #f5e6c8;
+  color: #8a6d3b;
+}
+
+.event-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.event-summary {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  color: #4a4235;
+  white-space: pre-line;
+}
+
+.event-sources {
+  margin: 0.35rem 0 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.event-sources::before {
+  content: '出处：';
+}
+
+/* ── 文明色带 ─────────────────────────────────────── */
+
+.civ-band {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.5rem 0;
+  border-radius: 3px;
+  opacity: 0.8;
+  /* 置于最底层：横幅与卡片皆可覆于其上，色带只作背景参照 */
+  z-index: 0;
+  overflow: hidden;
+}
+
+.civ-name {
+  writing-mode: vertical-rl;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  position: sticky;
+  top: 4rem;
+}
+
+/* ── 概览页 ───────────────────────────────────────── */
+
+.dynasty-page {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.dynasty-page h1 {
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.25rem;
+}
+
+.dynasty-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.dynasty-page h2 {
+  margin-top: 2.5rem;
+  font-size: 1.15rem;
+  letter-spacing: 0.15em;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.sub-dynasties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.sub-dynasties li {
+  padding: 0.4rem 0.8rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+.ruler-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.ruler-table th,
+.ruler-table td {
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.ruler-table th {
+  color: var(--muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--muted);
+}
+
+.site-foot {
+  padding: 2rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--line);
+}
+
+/* ── 响应式 ───────────────────────────────────────── */
+
+/* 窄屏折叠世界栏与文明列，保留中轴与中国事件。
+   手机上三栏并置无法阅读，折叠不是降级而是正确形态。 */
+@media (max-width: 900px) {
+  :root {
+    --axis-w: 5rem;
+  }
+
+  .timeline {
+    grid-template-columns: var(--axis-w) 1fr;
+  }
+
+  .civ-band,
+  .cell-world {
+    display: none;
+  }
+
+  .cell-axis {
+    grid-column: 1 !important;
+  }
+
+  .cell-china {
+    grid-column: 2 !important;
+  }
+
+  .banner-row {
+    grid-column: 1 / -1 !important;
+  }
+
+  main,
+  .toolbar,
+  .site-head {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .tool-cats {
+    order: 10;
+    width: 100%;
+  }
+}

@@ -1,0 +1,76 @@
+- id: han-founding-202bc
+  date: "-0202"
+  title: 刘邦称帝，汉朝建立
+  category: 政治
+  importance: 5
+  summary: 垓下破项羽，即皇帝位于定陶，定都长安。
+  confidence: 确定
+  sources: [史记·高祖本纪]
+
+- id: wenjing-rule
+  date: "-0180"
+  title: 文景之治
+  category: 政治
+  importance: 4
+  summary: 与民休息，轻徭薄赋，府库充盈，为武帝用兵积蓄国力。
+  confidence: 确定
+
+- id: zhangqian-138bc
+  date: "-0138"
+  title: 张骞出使西域
+  category: 外交
+  importance: 5
+  summary: 汉武帝遣张骞通西域，凿空之举，丝绸之路自此开通。
+  confidence: 确定
+  sources: [汉书·张骞传]
+
+- id: sima-shiji
+  date: "-0091"
+  title: 司马迁著《史记》
+  category: 文化
+  importance: 5
+  summary: 中国第一部纪传体通史，上起黄帝下至汉武，为后世正史之祖。
+  confidence: 有争议
+  sources: [汉书·司马迁传]
+
+- id: wangmang-9
+  date: "0009"
+  title: 王莽篡汉，建立新朝
+  category: 政治
+  importance: 4
+  summary: 外戚代汉自立，行托古改制，十五年而亡。
+  confidence: 确定
+
+- id: guangwu-25
+  date: "0025"
+  title: 刘秀称帝，东汉建立
+  category: 政治
+  importance: 5
+  summary: 定都洛阳，史称光武中兴。
+  confidence: 确定
+
+- id: cailun-paper
+  date: "0105"
+  title: 蔡伦改进造纸术
+  category: 科技
+  importance: 5
+  summary: 以树皮、麻头、破布为料，纸自此廉而易得，书写载体为之一变。
+  confidence: 确定
+  sources: [后汉书·蔡伦传]
+
+- id: huangjin-184
+  date: "0184"
+  title: 黄巾起义
+  category: 战争
+  importance: 4
+  summary: 张角以太平道聚众而起，东汉自此名存实亡。
+  confidence: 确定
+
+- id: chibi-208
+  date: "0208-11"
+  title: 赤壁之战
+  category: 战争
+  importance: 5
+  summary: 孙刘联军以火攻败曹操于赤壁，三分之势自此奠定。
+  confidence: 有争议
+  sources: [三国志·周瑜传]

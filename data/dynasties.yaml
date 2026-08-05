@@ -2,6 +2,8 @@
 #
 # 「上古」为兜底记录，覆盖夏以前的传说时代——事件不属于任何朝代时校验器
 # 会报错，故此段必须有区间承接，否则远古事件在长卷上无处安放。
+#
+# 阶段五、六的目视样本。阶段七将扩充至夏—2026 全时段。
 
 - id: shanggu
   name: 上古
@@ -32,3 +34,88 @@
   end: "-0256"
   capital: 镐京
   color: "#a1887f"
+  summary: 分封建国，礼乐制度自此确立。后半期王室衰微，诸侯争霸。
+
+- id: xizhou
+  name: 西周
+  start: "-1046"
+  end: "-0771"
+  capital: 镐京
+  color: "#a1887f"
+  parent: zhou
+
+- id: dongzhou
+  name: 东周
+  start: "-0770"
+  end: "-0256"
+  capital: 洛邑
+  color: "#a1887f"
+  parent: zhou
+
+- id: qin
+  name: 秦
+  start: "-0221"
+  end: "-0207"
+  capital: 咸阳
+  color: "#c0392b"
+  summary: 中国第一个中央集权的统一王朝。废分封行郡县，书同文车同轨。
+
+- id: han
+  name: 汉
+  start: "-0202"
+  end: "0220"
+  capital: 长安
+  color: "#e67e22"
+  summary: 前后四百余年，奠定此后两千年中国政治与文化的基本格局。
+
+- id: xihan
+  name: 西汉
+  start: "-0202"
+  end: "0008"
+  capital: 长安
+  color: "#e67e22"
+  parent: han
+
+- id: xin
+  name: 新
+  start: "0009"
+  end: "0023"
+  capital: 长安
+  color: "#d35400"
+  parent: han
+
+- id: donghan
+  name: 东汉
+  start: "0025"
+  end: "0220"
+  capital: 洛阳
+  color: "#e67e22"
+  parent: han
+
+# 三国：并存政权，三者时间互相重叠，须显式声明 concurrent
+- id: wei
+  name: 曹魏
+  start: "0220"
+  end: "0266"
+  capital: 洛阳
+  color: "#2980b9"
+  concurrent: true
+  summary: 曹丕代汉。三国之中最强，终为司马氏所篡。
+
+- id: shu
+  name: 蜀汉
+  start: "0221"
+  end: "0263"
+  capital: 成都
+  color: "#27ae60"
+  concurrent: true
+  summary: 刘备以汉室宗亲自居，据益州立国。
+
+- id: wu
+  name: 孙吴
+  start: "0222"
+  end: "0280"
+  capital: 建业
+  color: "#8e44ad"
+  concurrent: true
+  summary: 据江东六郡，三国中存续最久。

@@ -1,0 +1,41 @@
+---
+import { spanYears, yearOf } from '../lib/date.js'
+
+const { dynasty, rulers } = Astro.props
+
+const founder = rulers.find((r) => r.role === 'founder')
+const last = rulers.find((r) => r.role === 'last')
+const span = spanYears(dynasty.start, dynasty.end)
+
+const fmtYear = (d) => {
+  const y = yearOf(d)
+  return y < 0 ? `前${Math.abs(y)}` : String(y)
+}
+
+const base = import.meta.env.BASE_URL
+---
+
+<div
+  class="dynasty-banner"
+  id={`dynasty-${dynasty.id}`}
+  style={`--dynasty-color:${dynasty.color}`}
+  data-dynasty={dynasty.id}
+>
+  <h2 class="banner-name">
+    <a href={`${base}dynasty/${dynasty.id}/`}>{dynasty.name}</a>
+  </h2>
+
+  <span class="banner-span">
+    {fmtYear(dynasty.start)}–{fmtYear(dynasty.end)}　共 {span} 年
+  </span>
+
+  {dynasty.capital && <span class="banner-capital">都 {dynasty.capital}</span>}
+
+  {(founder || last) && (
+    <span class="banner-rulers">
+      {founder && <span>开国 {founder.temple_name}</span>}
+      {founder && last && <span class="sep">·</span>}
+      {last && <span>末代 {last.temple_name}</span>}
+    </span>
+  )}
+</div>

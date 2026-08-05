@@ -1,0 +1,31 @@
+- dynasty: wei
+  temple_name: 魏文帝
+  name: 曹丕
+  reign_start: "0220"
+  reign_end: "0226"
+  era_names: [黄初]
+  role: founder
+
+- dynasty: shu
+  temple_name: 汉昭烈帝
+  name: 刘备
+  reign_start: "0221"
+  reign_end: "0223"
+  era_names: [章武]
+  role: founder
+
+- dynasty: shu
+  temple_name: 蜀后主
+  name: 刘禅
+  reign_start: "0223"
+  reign_end: "0263"
+  era_names: [建兴, 延熙, 景耀, 炎兴]
+  role: last
+
+- dynasty: wu
+  temple_name: 吴大帝
+  name: 孙权
+  reign_start: "0222"
+  reign_end: "0252"
+  era_names: [黄武, 黄龙, 嘉禾, 赤乌]
+  role: founder

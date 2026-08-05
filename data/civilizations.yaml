@@ -1,0 +1,56 @@
+# region 用于世界栏内的横向分列——同一时段可能有多条色带并行，
+# 按 region 分配列位，同一文明区始终在同一列。
+
+- name: 古埃及
+  start: "-3100"
+  end: "-0332"
+  region: 埃及
+  color: "#d4a574"
+
+- name: 两河流域
+  start: "-2900"
+  end: "-0539"
+  region: 西亚
+  color: "#c49a6c"
+
+- name: 古印度
+  start: "-2600"
+  end: "-1900"
+  region: 印度
+  color: "#b8860b"
+
+- name: 吠陀时代
+  start: "-1500"
+  end: "-0500"
+  region: 印度
+  color: "#a67c00"
+
+- name: 古希腊
+  start: "-0800"
+  end: "-0146"
+  region: 地中海
+  color: "#8fa8b8"
+
+- name: 波斯帝国
+  start: "-0550"
+  end: "-0330"
+  region: 西亚
+  color: "#9c7a5c"
+
+- name: 罗马共和国
+  start: "-0509"
+  end: "-0027"
+  region: 地中海
+  color: "#a8916f"
+
+- name: 罗马帝国
+  start: "-0027"
+  end: "0476"
+  region: 地中海
+  color: "#8f7c5e"
+
+- name: 孔雀王朝
+  start: "-0322"
+  end: "-0185"
+  region: 印度
+  color: "#96731a"

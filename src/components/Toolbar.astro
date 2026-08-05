@@ -1,0 +1,39 @@
+---
+const { dynasties } = Astro.props
+
+const CATEGORIES = ['政治', '战争', '文化', '科技', '经济', '外交', '灾异']
+---
+
+<div class="toolbar">
+  <div class="tool-group">
+    <label class="switch">
+      <input type="checkbox" id="only-major" />
+      <span>只看重大事件</span>
+    </label>
+
+    <label class="switch">
+      <input type="checkbox" id="show-world" checked />
+      <span>世界对照</span>
+    </label>
+  </div>
+
+  <div class="tool-group tool-cats">
+    {CATEGORIES.map((c) => (
+      <label class="chip">
+        <input type="checkbox" class="cat-toggle" value={c} checked />
+        <span>{c}</span>
+      </label>
+    ))}
+  </div>
+
+  <div class="tool-group">
+    <select id="jump-dynasty">
+      <option value="">跳转朝代…</option>
+      {dynasties.map((d) => (
+        <option value={d.id}>{d.name}</option>
+      ))}
+    </select>
+  </div>
+
+  <span class="tool-current" id="current-dynasty"></span>
+</div>

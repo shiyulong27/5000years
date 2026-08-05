@@ -1,0 +1,101 @@
+---
+import { fileURLToPath } from 'node:url'
+import Base from '../../layouts/Base.astro'
+import RulerTable from '../../components/RulerTable.astro'
+import EventCard from '../../components/EventCard.astro'
+import { loadAll } from '../../lib/load.js'
+import { resolveRoot } from '../../lib/timeline.js'
+import { spanYears, yearOf, sortKey } from '../../lib/date.js'
+
+export async function getStaticPaths() {
+  const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
+  const data = loadAll(dataDir)
+  const byId = new Map(data.dynasties.map((d) => [d.id, d]))
+
+  // 仅为根朝代出页——子朝代在其根的页内拆分展示
+  const roots = new Map()
+  for (const d of data.dynasties) {
+    const root = resolveRoot(d, byId)
+    if (!roots.has(root.id)) roots.set(root.id, root)
+  }
+
+  const isUnder = (d, rootId) => resolveRoot(d, byId).id === rootId
+
+  return [...roots.values()].map((root) => {
+    const children = data.dynasties.filter((d) => d.id !== root.id && isUnder(d, root.id))
+    const memberIds = new Set([root.id, ...children.map((d) => d.id)])
+
+    return {
+      params: { id: root.id },
+      props: {
+        dynasty: root,
+        children,
+        dynasties: data.dynasties,
+        rulers: data.rulers
+          .filter((r) => memberIds.has(r.dynasty))
+          .sort((a, b) => sortKey(a.reign_start) - sortKey(b.reign_start)),
+        events: data.events
+          .filter((e) => {
+            const y = yearOf(e.date)
+            return y >= yearOf(root.start) && y <= yearOf(root.end)
+          })
+          .sort((a, b) => (b.importance ?? 0) - (a.importance ?? 0) || sortKey(a.date) - sortKey(b.date))
+          .slice(0, 12)
+          .sort((a, b) => sortKey(a.date) - sortKey(b.date)),
+      },
+    }
+  })
+}
+
+const { dynasty, children, rulers, events, dynasties } = Astro.props
+
+const fmt = (d) => {
+  const y = yearOf(d)
+  return y < 0 ? `前${Math.abs(y)}` : String(y)
+}
+
+const base = import.meta.env.BASE_URL
+---
+
+<Base title={`${dynasty.name} · 上下五千年`}>
+  <article class="dynasty-page">
+    <h1>{dynasty.name}</h1>
+    <p class="dynasty-meta">
+      {fmt(dynasty.start)}–{fmt(dynasty.end)}　共 {spanYears(dynasty.start, dynasty.end)} 年
+      {dynasty.capital && <>　都 {dynasty.capital}</>}
+    </p>
+
+    {/* summary 为空则不渲染该块 */}
+    {dynasty.summary && <p class="dynasty-summary">{dynasty.summary}</p>}
+
+    {children.length > 0 && (
+      <>
+        <h2>分期</h2>
+        <ul class="sub-dynasties">
+          {children.map((c) => (
+            <li>
+              <strong>{c.name}</strong>　{fmt(c.start)}–{fmt(c.end)}
+              {c.capital && <>　都 {c.capital}</>}
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {rulers.length > 0 && (
+      <>
+        <h2>世系</h2>
+        <RulerTable rulers={rulers} dynasties={dynasties} />
+      </>
+    )}
+
+    {events.length > 0 && (
+      <>
+        <h2>大事</h2>
+        {events.map((e) => <EventCard event={e} />)}
+      </>
+    )}
+
+    <a class="back-link" href={`${base}#dynasty-${dynasty.id}`}>← 返回长卷</a>
+  </article>
+</Base>

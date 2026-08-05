@@ -1,0 +1,14 @@
+---
+const { band } = Astro.props
+
+// column 为 0 起的 region 序号，Grid 列号从 1 起
+const col = band.column + 1
+---
+
+<div
+  class="civ-band"
+  style={`grid-row:${band.rowStart}/${band.rowEnd + 1};grid-column:${col};background:${band.color}`}
+  title={`${band.name}（${band.region}）`}
+>
+  <span class="civ-name">{band.name}</span>
+</div>

@@ -1,0 +1,49 @@
+# 君主挂在叶子朝代（西汉/新/东汉）上，而非根朝代 han
+- dynasty: xihan
+  temple_name: 汉高祖
+  name: 刘邦
+  reign_start: "-0202"
+  reign_end: "-0195"
+  era_names: []
+  note: 布衣出身而有天下
+  role: founder
+
+- dynasty: xihan
+  temple_name: 汉文帝
+  name: 刘恒
+  reign_start: "-0180"
+  reign_end: "-0157"
+  era_names: []
+  note: 文景之治
+
+- dynasty: xihan
+  temple_name: 汉武帝
+  name: 刘彻
+  reign_start: "-0141"
+  reign_end: "-0087"
+  era_names: [建元, 元光, 元朔, 元狩, 元鼎]
+  note: 年号制度自此始
+
+- dynasty: xin
+  temple_name: 王莽
+  name: 王莽
+  reign_start: "0009"
+  reign_end: "0023"
+  era_names: [始建国, 天凤, 地皇]
+  role: founder
+
+- dynasty: donghan
+  temple_name: 汉光武帝
+  name: 刘秀
+  reign_start: "0025"
+  reign_end: "0057"
+  era_names: [建武, 中元]
+  role: founder
+
+- dynasty: donghan
+  temple_name: 汉献帝
+  name: 刘协
+  reign_start: "0189"
+  reign_end: "0220"
+  era_names: [初平, 兴平, 建安]
+  role: last

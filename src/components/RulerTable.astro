@@ -1,0 +1,40 @@
+---
+import { yearOf } from '../lib/date.js'
+
+const { rulers, dynasties } = Astro.props
+
+const fmt = (d) => {
+  const y = yearOf(d)
+  return y < 0 ? `前${Math.abs(y)}` : String(y)
+}
+
+const nameOf = (id) => dynasties.find((d) => d.id === id)?.name ?? id
+const multi = new Set(rulers.map((r) => r.dynasty)).size > 1
+---
+
+{rulers.length > 0 && (
+  <table class="ruler-table">
+    <thead>
+      <tr>
+        {multi && <th>朝代</th>}
+        <th>庙号</th>
+        <th>姓名</th>
+        <th>在位</th>
+        <th>年号</th>
+        <th>备注</th>
+      </tr>
+    </thead>
+    <tbody>
+      {rulers.map((r) => (
+        <tr>
+          {multi && <td>{nameOf(r.dynasty)}</td>}
+          <td>{r.temple_name}</td>
+          <td>{r.name ?? ''}</td>
+          <td>{fmt(r.reign_start)}–{fmt(r.reign_end)}</td>
+          <td>{r.era_names?.join('、') ?? ''}</td>
+          <td>{r.note ?? ''}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+)}

@@ -1,0 +1,48 @@
+- id: wei-founding-220
+  date: "0220-12-11"
+  title: 曹丕称帝，魏代汉
+  category: 政治
+  importance: 5
+  summary: 汉献帝禅位于曹丕，东汉终，三国鼎立之局正式形成。
+  confidence: 确定
+  sources: [三国志·文帝纪]
+
+- id: shu-founding-221
+  date: "0221-05"
+  title: 刘备称帝，蜀汉建立
+  category: 政治
+  importance: 4
+  summary: 以汉室宗亲自居，国号仍称汉，定都成都。
+  confidence: 确定
+
+- id: yiling-222
+  date: "0222-08"
+  title: 夷陵之战
+  category: 战争
+  importance: 4
+  summary: 陆逊火烧连营，刘备大败，蜀汉元气大伤。
+  confidence: 确定
+
+- id: chushibiao-227
+  date: "0227"
+  title: 诸葛亮上《出师表》
+  category: 文化
+  importance: 4
+  summary: 「先帝创业未半而中道崩殂」，此后六出祁山，鞠躬尽瘁。
+  confidence: 确定
+
+- id: shu-fall-263
+  date: "0263"
+  title: 蜀汉亡
+  category: 政治
+  importance: 4
+  summary: 邓艾偷渡阴平，刘禅出降。
+  confidence: 确定
+
+- id: jin-unify-280
+  date: "0280"
+  title: 西晋灭吴，天下复归一统
+  category: 政治
+  importance: 5
+  summary: 王濬楼船下益州，金陵王气黯然收。三国之世终。
+  confidence: 确定
