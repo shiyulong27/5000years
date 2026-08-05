@@ -5,32 +5,32 @@ const CATEGORIES = ['政治', '战争', '文化', '科技', '经济', '外交', 
 ---
 
 <div class="toolbar">
-  <div class="tool-group">
-    <label class="switch">
-      <input type="checkbox" id="only-major" />
-      <span>只看重大事件</span>
+  <div class="tool-group tool-switches">
+    <label class="switch switch-major">
+      <input type="checkbox" class="switch-input" id="only-major" />
+      <span class="switch-label">只看重大事件</span>
     </label>
 
-    <label class="switch">
-      <input type="checkbox" id="show-world" checked />
-      <span>世界对照</span>
+    <label class="switch switch-world">
+      <input type="checkbox" class="switch-input" id="show-world" checked />
+      <span class="switch-label">世界对照</span>
     </label>
   </div>
 
   <div class="tool-group tool-cats">
     {CATEGORIES.map((c) => (
-      <label class="chip">
-        <input type="checkbox" class="cat-toggle" value={c} checked />
-        <span>{c}</span>
+      <label class="chip" data-cat={c}>
+        <input type="checkbox" class="cat-toggle chip-input" value={c} checked />
+        <span class="chip-label">{c}</span>
       </label>
     ))}
   </div>
 
-  <div class="tool-group">
-    <select id="jump-dynasty">
-      <option value="">跳转朝代…</option>
+  <div class="tool-group tool-jump">
+    <select class="jump-select" id="jump-dynasty">
+      <option class="jump-option jump-placeholder" value="">跳转朝代…</option>
       {dynasties.map((d) => (
-        <option value={d.id}>{d.name}</option>
+        <option class="jump-option" value={d.id}>{d.name}</option>
       ))}
     </select>
   </div>

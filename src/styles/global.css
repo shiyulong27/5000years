@@ -1,19 +1,55 @@
 /* 上下五千年 · 长卷样式
  *
  * 字号与行距以长时间阅读为准，非以信息密度为准。
+ *
+ * ─────────────────────────────────────────────────────
+ * 调整外观时，改下面 :root 里的变量即可，无须改动规则本身。
+ * 分四组：配色、尺寸、排印、间距。
+ * ─────────────────────────────────────────────────────
  */
 
 :root {
-  --bg: #faf8f5;
-  --fg: #2c2416;
-  --muted: #857a68;
-  --line: #e0d8cc;
-  --card: #fffdfa;
-  --axis-w: 8rem;
-  --world-w: minmax(14rem, 1fr);
-  --china-w: minmax(22rem, 1.6fr);
-  --civ-w: 2.2rem;
-  --row-gap: 1.25rem;
+  /* ── 配色 ──────────────────────────────────── */
+  --bg: #faf8f5;              /* 页面底色 */
+  --fg: #2c2416;              /* 正文色 */
+  --muted: #857a68;           /* 次要文字：日期、出处、说明 */
+  --line: #e0d8cc;            /* 分隔线、边框 */
+  --card: #fffdfa;            /* 卡片底色 */
+  --card-hover: #fffefc;      /* 卡片悬停底色 */
+  --accent: #8a6d3b;          /* 强调色：链接、当前朝代 */
+  --flag-bg: #f0e6d2;         /* 存疑标记底色 */
+  --flag-fg: #7a6440;         /* 存疑标记文字 */
+  --banner-bg: #f5f1ea;       /* 朝代横幅底色 */
+  --shadow: rgba(60, 48, 30, 0.06);
+  --control: #8b6f47;         /* 复选框、焦点框 */
+  --summary-fg: #4a4235;      /* 事件简述文字 */
+  --civ-name-fg: #fff;        /* 文明色带上的竖排名称 */
+  --civ-name-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+
+  /* ── 栏宽 ──────────────────────────────────── */
+  --axis-w: 8rem;             /* 中轴列宽 */
+  --world-w: minmax(14rem, 1fr);    /* 世界事件列 */
+  --china-w: minmax(22rem, 1.6fr);  /* 中国事件列 */
+  --civ-w: 2.2rem;            /* 单条文明色带宽 */
+  --page-max: 1600px;         /* 长卷最大宽度 */
+  --dynasty-max: 60rem;       /* 概览页正文宽度 */
+
+  /* ── 排印 ──────────────────────────────────── */
+  --font-serif: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'SimSun', serif;
+  --font-size: 15px;          /* 基准字号 */
+  --line-height: 1.75;        /* 正文行距 */
+  --title-size: 2rem;         /* 站名字号 */
+  --banner-size: 1.35rem;     /* 朝代名字号 */
+  --event-title-size: 1rem;   /* 事件标题字号 */
+  --meta-size: 0.8rem;        /* 日期、类别等元信息字号 */
+  --axis-year-size: 0.95rem;  /* 中轴年份字号 */
+
+  /* ── 间距 ──────────────────────────────────── */
+  --row-gap: 1.25rem;         /* 行间距 */
+  --col-gap: 0.75rem;         /* 列间距 */
+  --card-pad: 0.6rem 0.9rem;  /* 卡片内边距 */
+  --radius: 3px;              /* 圆角 */
+  --page-pad: 2rem;           /* 页面左右留白 */
 }
 
 * {
@@ -24,22 +60,23 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'SimSun', serif;
-  font-size: 15px;
-  line-height: 1.75;
+  font-family: var(--font-serif);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
   -webkit-font-smoothing: antialiased;
 }
 
 /* ── 页头与工具栏 ─────────────────────────────────── */
 
 .site-head {
-  padding: 2.5rem 2rem 1rem;
+  padding: 2.5rem var(--page-pad) 1rem;
   text-align: center;
 }
 
-.site-head h1 {
+.site-head h1,
+.site-title {
   margin: 0;
-  font-size: 2rem;
+  font-size: var(--title-size);
   letter-spacing: 0.3em;
   font-weight: 600;
 }
@@ -99,7 +136,7 @@ body {
 .chip input,
 .switch input {
   margin: 0;
-  accent-color: #8b6f47;
+  accent-color: var(--control);
 }
 
 /* 视觉隐藏但保留可聚焦与可点击——用 opacity:0 + 定位会使键盘用户
@@ -116,7 +153,7 @@ body {
 }
 
 .chip:has(input:focus-visible) {
-  outline: 2px solid #8b6f47;
+  outline: 2px solid var(--control);
   outline-offset: 2px;
 }
 
@@ -132,14 +169,15 @@ body {
 
 .tool-current {
   margin-left: auto;
-  color: var(--muted);
+  color: var(--accent);
   letter-spacing: 0.15em;
 }
 
 /* ── 长卷主体 ─────────────────────────────────────── */
 
-main {
-  padding: 1rem 2rem 4rem;
+main,
+.site-main {
+  padding: 1rem var(--page-pad) 4rem;
 }
 
 .timeline {
@@ -151,10 +189,10 @@ main {
     var(--china-w);
   /* 不设 align-items:start——跨行的文明色带须拉伸至其整个区间，
      否则会缩成起始行高的小方块，失去作为参照系的作用 */
-  column-gap: 0.75rem;
+  column-gap: var(--col-gap);
   /* 不用 row-gap：它会在色带跨越的每一行之间切出缝隙，使色带断成一节节。
      行间距改由单元格自身的上下内边距提供。 */
-  max-width: 1600px;
+  max-width: var(--page-max);
   margin: 0 auto;
 }
 
@@ -225,7 +263,7 @@ main {
 }
 
 .axis-year {
-  font-size: 0.95rem;
+  font-size: var(--axis-year-size);
   font-weight: 600;
   letter-spacing: 0.05em;
   font-variant-numeric: tabular-nums;
@@ -265,13 +303,13 @@ main {
   gap: 0.5rem 1.25rem;
   padding: 0.6rem 1rem;
   border-left: 5px solid var(--dynasty-color);
-  background: color-mix(in srgb, var(--dynasty-color) 8%, var(--card));
-  border-radius: 3px;
+  background: color-mix(in srgb, var(--dynasty-color) 8%, var(--banner-bg));
+  border-radius: var(--radius);
 }
 
 .banner-name {
   margin: 0;
-  font-size: 1.35rem;
+  font-size: var(--banner-size);
   font-weight: 600;
   letter-spacing: 0.2em;
 }
@@ -289,7 +327,7 @@ main {
 .banner-span,
 .banner-capital,
 .banner-rulers {
-  font-size: 0.82rem;
+  font-size: var(--meta-size);
   color: var(--muted);
 }
 
@@ -301,10 +339,10 @@ main {
 /* ── 事件卡片 ─────────────────────────────────────── */
 
 .event-card {
-  padding: 0.6rem 0.9rem;
+  padding: var(--card-pad);
   background: var(--card);
   border: 1px solid var(--line);
-  border-radius: 3px;
+  border-radius: var(--radius);
   margin-bottom: 0.5rem;
 }
 
@@ -314,6 +352,11 @@ main {
 
 .event-card:last-child {
   margin-bottom: 0;
+}
+
+.event-card:hover {
+  background: var(--card-hover);
+  box-shadow: 0 1px 4px var(--shadow);
 }
 
 .event-head {
@@ -341,13 +384,13 @@ main {
 .event-flag {
   padding: 0 0.4rem;
   border-radius: 2px;
-  background: #f5e6c8;
-  color: #8a6d3b;
+  background: var(--flag-bg);
+  color: var(--flag-fg);
 }
 
 .event-title {
   margin: 0;
-  font-size: 1rem;
+  font-size: var(--event-title-size);
   font-weight: 600;
   line-height: 1.5;
 }
@@ -355,7 +398,7 @@ main {
 .event-summary {
   margin: 0.35rem 0 0;
   font-size: 0.88rem;
-  color: #4a4235;
+  color: var(--summary-fg);
   white-space: pre-line;
 }
 
@@ -387,8 +430,8 @@ main {
   writing-mode: vertical-rl;
   font-size: 0.75rem;
   letter-spacing: 0.25em;
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  color: var(--civ-name-fg);
+  text-shadow: var(--civ-name-shadow);
   position: sticky;
   top: 4rem;
 }
@@ -396,13 +439,14 @@ main {
 /* ── 概览页 ───────────────────────────────────────── */
 
 .dynasty-page {
-  max-width: 60rem;
+  max-width: var(--dynasty-max);
   margin: 0 auto;
-  padding: 2rem;
+  padding: var(--page-pad);
 }
 
-.dynasty-page h1 {
-  font-size: 2rem;
+.dynasty-page h1,
+.dynasty-title {
+  font-size: var(--title-size);
   letter-spacing: 0.2em;
   margin-bottom: 0.25rem;
 }
@@ -413,7 +457,8 @@ main {
   margin-top: 0;
 }
 
-.dynasty-page h2 {
+.dynasty-page h2,
+.section-title {
   margin-top: 2.5rem;
   font-size: 1.15rem;
   letter-spacing: 0.15em;
@@ -429,7 +474,8 @@ main {
   list-style: none;
 }
 
-.sub-dynasties li {
+.sub-dynasties li,
+.sub-dynasty {
   padding: 0.4rem 0.8rem;
   background: var(--card);
   border: 1px solid var(--line);

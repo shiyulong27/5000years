@@ -33,9 +33,9 @@ const base = import.meta.env.BASE_URL
 
   {(founder || last) && (
     <span class="banner-rulers">
-      {founder && <span>开国 {founder.temple_name}</span>}
+      {founder && <span class="banner-founder">开国 {founder.temple_name}</span>}
       {founder && last && <span class="sep">·</span>}
-      {last && <span>末代 {last.temple_name}</span>}
+      {last && <span class="banner-last">末代 {last.temple_name}</span>}
     </span>
   )}
 </div>

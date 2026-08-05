@@ -25,18 +25,18 @@ for (const d of data.dynasties) {
 
 <Base title="上下五千年" wide={true}>
   <header class="site-head">
-    <h1>上下五千年</h1>
+    <h1 class="site-title">上下五千年</h1>
     <p class="site-sub">中国历史长卷，与世界文明对照</p>
   </header>
 
   <Toolbar dynasties={roots} />
 
-  <main>
+  <main class="site-main">
     <Timeline rows={rows} bands={bands} columns={columns} />
   </main>
 
   <footer class="site-foot">
-    <p>数据以 YAML 维护，构建时校验。欢迎补充与订正。</p>
+    <p class="foot-note">数据以 YAML 维护，构建时校验。欢迎补充与订正。</p>
   </footer>
 
   <script src="../client/timeline-ui.js"></script>

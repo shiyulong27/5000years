@@ -58,42 +58,47 @@ const base = import.meta.env.BASE_URL
 ---
 
 <Base title={`${dynasty.name} · 上下五千年`}>
-  <article class="dynasty-page">
-    <h1>{dynasty.name}</h1>
+  <article class="dynasty-page" data-dynasty={dynasty.id}>
+    <h1 class="dynasty-title">{dynasty.name}</h1>
     <p class="dynasty-meta">
-      {fmt(dynasty.start)}–{fmt(dynasty.end)}　共 {spanYears(dynasty.start, dynasty.end)} 年
-      {dynasty.capital && <>　都 {dynasty.capital}</>}
+      <span class="dynasty-span">
+        {fmt(dynasty.start)}–{fmt(dynasty.end)}　共 {spanYears(dynasty.start, dynasty.end)} 年
+      </span>
+      {dynasty.capital && <span class="dynasty-capital">　都 {dynasty.capital}</span>}
     </p>
 
     {/* summary 为空则不渲染该块 */}
     {dynasty.summary && <p class="dynasty-summary">{dynasty.summary}</p>}
 
     {children.length > 0 && (
-      <>
-        <h2>分期</h2>
+      <section class="dynasty-section dynasty-periods">
+        <h2 class="section-title">分期</h2>
         <ul class="sub-dynasties">
           {children.map((c) => (
-            <li>
-              <strong>{c.name}</strong>　{fmt(c.start)}–{fmt(c.end)}
-              {c.capital && <>　都 {c.capital}</>}
+            <li class="sub-dynasty" data-dynasty={c.id}>
+              <strong class="sub-name">{c.name}</strong>
+              <span class="sub-span">　{fmt(c.start)}–{fmt(c.end)}</span>
+              {c.capital && <span class="sub-capital">　都 {c.capital}</span>}
             </li>
           ))}
         </ul>
-      </>
+      </section>
     )}
 
     {rulers.length > 0 && (
-      <>
-        <h2>世系</h2>
+      <section class="dynasty-section dynasty-rulers">
+        <h2 class="section-title">世系</h2>
         <RulerTable rulers={rulers} dynasties={dynasties} />
-      </>
+      </section>
     )}
 
     {events.length > 0 && (
-      <>
-        <h2>大事</h2>
-        {events.map((e) => <EventCard event={e} />)}
-      </>
+      <section class="dynasty-section dynasty-events">
+        <h2 class="section-title">大事</h2>
+        <div class="event-list">
+          {events.map((e) => <EventCard event={e} />)}
+        </div>
+      </section>
     )}
 
     <a class="back-link" href={`${base}#dynasty-${dynasty.id}`}>← 返回长卷</a>
