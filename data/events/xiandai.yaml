@@ -1,0 +1,49 @@
+- id: founding-1949
+  date: "1949"
+  title: 开国大典
+  category: 政治
+  importance: 5
+  summary: 中华人民共和国中央人民政府在北京成立，毛泽东宣告政权诞生。
+  confidence: 确定
+
+- id: un-seat-1971
+  date: "1971"
+  title: 恢复联合国合法席位
+  category: 政治
+  importance: 5
+  summary: 联合国大会第 2758 号决议恢复中华人民共和国在联合国的合法席位。
+  confidence: 确定
+  tags: [外交]
+
+- id: reform-1978
+  date: "1978"
+  title: 十一届三中全会，改革开放始
+  category: 政治
+  importance: 5
+  summary: 中共十一届三中全会确立经济建设为中心，开启改革开放，国家发展进入新阶段。
+  confidence: 确定
+
+- id: wto-2001
+  date: "2001"
+  title: 加入世界贸易组织
+  category: 经济
+  importance: 4
+  summary: 中国正式加入世界贸易组织，深度融入全球经济体系。
+  confidence: 确定
+
+- id: shenzhou-2003
+  date: "2003"
+  title: 神舟五号载人航天
+  category: 文化
+  importance: 4
+  summary: 神舟五号载人飞船发射成功，杨利伟成为中国首位进入太空的航天员。
+  confidence: 确定
+  tags: [科技]
+
+- id: olympics-2008
+  date: "2008"
+  title: 北京奥运
+  category: 文化
+  importance: 3
+  summary: 第 29 届夏季奥林匹克运动会于北京举行，世界瞩目。
+  confidence: 确定
