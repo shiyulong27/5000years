@@ -169,3 +169,11 @@
   field: 思想
   note: 理学集大成者，四书集注，此后数百年科举之标的
   confidence: 确定
+
+- id: luxun
+  name: 鲁迅
+  birth: "1881"
+  death: "1936"
+  field: 文学
+  note: 新文学运动旗手，以《呐喊》《彷徨》等解剖国民性
+  confidence: 确定
