@@ -1,0 +1,44 @@
+# 两宋君主。只录关键四位；辽金及宋其余诸帝从略。
+
+- dynasty: beisong
+  temple_name: 宋太祖
+  name: 赵匡胤
+  reign_start: "0960"
+  reign_end: "0976"
+  era_names:
+    - 建隆
+    - 乾德
+    - 开宝
+  note: 陈桥兵变建宋，杯酒释兵权，重文抑武
+  role: founder
+
+- dynasty: beisong
+  temple_name: 宋徽宗
+  name: 赵佶
+  reign_start: "1100"
+  reign_end: "1126"
+  era_names:
+    - 建中靖国
+    - 大观
+    - 宣和
+  note: 擅书画艺术，怠于政事，酿靖康之祸，被掳北去
+
+- dynasty: nansong
+  temple_name: 宋高宗
+  name: 赵构
+  reign_start: "1127"
+  reign_end: "1162"
+  era_names:
+    - 建炎
+    - 绍兴
+  note: 南渡建南宋，与金和议，偏安一隅
+  role: founder
+
+- dynasty: nansong
+  temple_name: 卫王
+  name: 赵昺
+  reign_start: "1278"
+  reign_end: "1279"
+  era_names: []
+  note: 南宋末帝，崖山蹈海殉国
+  role: last

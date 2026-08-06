@@ -1,0 +1,91 @@
+- id: chenqiao-960
+  date: "0960"
+  title: 陈桥兵变，北宋建立
+  category: 政治
+  importance: 5
+  summary: 赵匡胤于陈桥驿黄袍加身，代周建宋，收兵权、强中央，成文治之世。
+  confidence: 确定
+  sources: [宋史·太祖纪]
+
+- id: chanyuan-1004
+  date: "1004"
+  title: 澶渊之盟
+  category: 政治
+  importance: 4
+  summary: 宋辽战于澶州，后议和订盟，宋岁输银绢，换来百余年大体和平。
+  confidence: 确定
+  tags: [外交]
+
+- id: xixia-1038
+  date: "1038"
+  title: 元昊称帝，西夏立
+  category: 政治
+  importance: 3
+  summary: 李元昊称帝建夏，宋夏由此时战时和，西北边患不绝。
+  confidence: 确定
+
+- id: bi-sheng-1044
+  date: "1044"
+  title: 毕昇活字印刷
+  category: 文化
+  importance: 4
+  summary: 毕昇创泥活字排版，为印刷史划时代发明，惜未普及，元代方广行。
+  confidence: 有争议
+  dispute: 活字创制之年无确载，仅《梦溪笔谈》记庆历中，年代为约值。
+
+- id: wang-anshi-1069
+  date: "1069"
+  title: 王安石变法
+  category: 政治
+  importance: 4
+  summary: 王安石拜相行新法，理财整军，新旧党争由此起，变法终告失败。
+  confidence: 确定
+
+- id: zitongjian-1084
+  date: "1084"
+  title: 《资治通鉴》成书
+  category: 文化
+  importance: 5
+  summary: 司马光主编编年通史二百九十四卷，起战国讫五代，为后世资治之鉴。
+  confidence: 确定
+  sources: [宋史·司马光传]
+
+- id: jin-1115
+  date: "1115"
+  title: 阿骨打建金
+  category: 政治
+  importance: 3
+  summary: 完颜阿骨打统一女真诸部称帝，国号金，随即灭辽压宋。
+  confidence: 确定
+
+- id: jingkang-1127
+  date: "1127"
+  title: 靖康之难，北宋亡；同年高宗复统，南宋始
+  category: 战争
+  importance: 5
+  summary: 金军破汴京，掳徽钦二帝北去，北宋亡；康王赵构即位应天，南宋始。
+  confidence: 确定
+
+- id: shaoxing-1141
+  date: "1141"
+  title: 绍兴和议
+  category: 政治
+  importance: 4
+  summary: 南宋与金议和，称臣纳贡、划疆而治，杀害岳飞为代价之一。
+  confidence: 确定
+
+- id: linan-1276
+  date: "1276"
+  title: 临安陷
+  category: 战争
+  importance: 4
+  summary: 元军入临安，恭帝降，南宋政权流亡闽广。
+  confidence: 确定
+
+- id: yamen-1279
+  date: "1279"
+  title: 崖山海战，宋亡
+  category: 战争
+  importance: 5
+  summary: 元军攻崖山，宋军大败，陆秀夫负帝昺蹈海，十万军民殉国，南宋亡。
+  confidence: 确定
