@@ -1,0 +1,56 @@
+- id: minguo-establish-1912
+  date: "1912"
+  title: 清帝退位，民国建立
+  category: 政治
+  importance: 5
+  summary: 孙中山于南京宣誓就任临时大总统，清帝颁布退位诏书，中华民国正式成立。
+  confidence: 确定
+  sources: [清史稿·宣统帝纪]
+
+- id: new-culture-movement-1915
+  date: "1915"
+  title: 新文化运动始
+  category: 文化
+  importance: 4
+  summary: 陈独秀在上海创办《青年杂志》（后改名《新青年》），提唱民主与科学。
+  confidence: 确定
+
+- id: may-fourth-movement-1919
+  date: "1919"
+  title: 五四运动
+  category: 政治
+  importance: 5
+  summary: 北京学生因巴黎和会外交失败爆发爱国游行，迅速演变为全国性反帝反封建爱国运动。
+  confidence: 确定
+
+- id: cpc-founding-1921
+  date: "1921"
+  title: 中国共产党成立
+  category: 政治
+  importance: 5
+  summary: 中国共产党第一次全国代表大会于上海召集，标志着中国共产党正式成立。
+  confidence: 确定
+
+- id: september-18-incident-1931
+  date: "1931"
+  title: 九一八事变
+  category: 战争
+  importance: 5
+  summary: 日本关东军炸毁柳条湖段铁路，袭击沈阳北大营，占领东北全境，十四年抗战揭幕。
+  confidence: 确定
+
+- id: lugou-bridge-incident-1937
+  date: "1937"
+  title: 七七事变，全面抗战始
+  category: 战争
+  importance: 5
+  summary: 日军在北平卢沟桥发动挑衅，中国守军奋起反击，中华民族全面抗日战争爆发。
+  confidence: 确定
+
+- id: victory-over-japan-1945
+  date: "1945"
+  title: 抗战胜利
+  category: 政治
+  importance: 5
+  summary: 日本签署无条件投降书，中国取得抗日战争完全胜利，收复台湾及澎湖列岛。
+  confidence: 确定

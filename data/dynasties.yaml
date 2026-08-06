@@ -364,6 +364,16 @@
   concurrent: true
   summary: 满族建立的统一王朝，奠定近现代中国版图基础。
 
+# ── 民国：共和无帝，不建 rulers 文件 ───────────────────────────
+- id: minguo
+  name: 中华民国
+  start: "1912"
+  end: "1949"
+  color: "#2980b9"
+  concurrent: true
+  summary: 推翻帝制建立共和，历经北洋政府与国民政府时期及八年全面抗战。
+
+
 
 
 
