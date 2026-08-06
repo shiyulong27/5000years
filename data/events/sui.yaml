@@ -1,0 +1,42 @@
+- id: sui-581
+  date: "0581"
+  title: 杨坚代周，隋建立
+  category: 政治
+  importance: 5
+  summary: 杨坚受禅代周，国号隋，都大兴。是为隋文帝，开皇之治自此始。
+  confidence: 确定
+  sources: [隋书·高祖纪]
+
+- id: sui-unify-589
+  date: "0589"
+  title: 隋灭陈，天下一统
+  category: 政治
+  importance: 5
+  summary: 隋将韩擒虎、贺若弼渡江，建康陷，陈后主降，南北分裂两百年至此复归一统。
+  confidence: 确定
+  sources: [隋书·高祖纪]
+
+- id: grand-canal-605
+  date: "0605"
+  title: 开通大运河
+  category: 经济
+  importance: 4
+  summary: 隋炀帝征发民丁开凿通济渠、永济渠等，贯通南北，利漕运而苦民力。
+  confidence: 确定
+  tags: [工程, 漕运]
+
+- id: goguryeo-612
+  date: "0612"
+  title: 一征高句丽，败还
+  category: 战争
+  importance: 4
+  summary: 隋炀帝率大军征高句丽，辽东久攻不下，宇文述诸军大溃于萨水，死者无数。
+  confidence: 确定
+
+- id: sui-fall-618
+  date: "0618"
+  title: 隋亡
+  category: 政治
+  importance: 4
+  summary: 隋炀帝被弑于江都，隋亡。天下群雄并起，旋入唐统。
+  confidence: 确定

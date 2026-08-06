@@ -1,0 +1,26 @@
+# 隋代君主。只录开国与末代两位。
+
+- dynasty: sui
+  temple_name: 隋文帝
+  name: 杨坚
+  reign_start: "0581"
+  reign_end: "0604"
+  era_names:
+    - 开皇
+    - 仁寿
+  note: 开皇之治，改革官制，废九品中正，行科举之先声
+  role: founder
+
+- dynasty: sui
+  temple_name: 隋炀帝
+  name: 杨广
+  reign_start: "0604"
+  reign_end: "0618"
+  era_names:
+    - 大业
+  note: 兴大业、三征高句丽，劳民伤财，天下大乱
+  role: last
+  confidence: 确定
+  dispute: |
+    炀帝之评历代多沿「暴君」说，然其营东都、开运河实为后世
+    所赖；唐初修史为彰正统，对其功业多有贬抑，宜两存。
