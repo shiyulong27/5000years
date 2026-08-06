@@ -77,6 +77,16 @@
     有文字可证的中国信史自此始。
   confidence: 确定
 
+- id: jiangtaigong-diaoyu
+  date: "-1050"
+  title: 姜太公渭水钓鱼
+  category: 政治
+  tags: [商周, 典故]
+  importance: 4
+  summary: 姜尚隐居渭水之滨直钩钓鱼，遇周文王姬昌礼聘为师，辅佐武王克商平天下。
+  confidence: 确定
+  sources: [史记·齐太公世家]
+
 - id: zhou-founding
   date: "-1046"
   title: 武王伐纣，周朝建立
@@ -90,6 +100,28 @@
     亦为有力说。
   sources: [史记·周本纪]
 
+- id: zhougong-dandan
+  date: "-1042"
+  title: 周公吐哺握发，辅佐成王
+  category: 政治
+  tags: [西周, 礼乐, 典故]
+  importance: 4
+  summary: 武王崩，周公旦代成王摄政，一沐三握发、一饭三吐哺求贤，平定三监之乱，制礼作乐建典章制度。
+  confidence: 确定
+  sources: [史记·周公世家]
+
+
+- id: fenghuo-xizhouhou
+  date: "-0771-01"
+  title: 烽火戏诸侯，西周亡
+  category: 政治
+  tags: [西周, 典故]
+  importance: 4
+  summary: 周幽王为博妃子褒姒一笑多次无故点燃烽火戏弄诸侯，申侯引犬戎攻镐京，诸侯不至，幽王被杀。
+  confidence: 有争议
+  dispute: 烽火戏诸侯见于《史记·周本纪》，清华简等新出文书对此叙事提出质疑，学界存争议。
+  sources: [史记·周本纪]
+
 - id: pingwang-east
   date: "-0770"
   title: 平王东迁，东周始
@@ -97,6 +129,91 @@
   importance: 4
   summary: 犬戎破镐京，王室东徙洛邑，自此王纲解纽，诸侯坐大。
   confidence: 确定
+
+- id: bianhe-puyu
+  date: "-0689"
+  title: 卞和献璞玉与和氏璧由来
+  category: 文化
+  tags: [楚国, 典故, 玉石]
+  importance: 3
+  summary: 楚人卞和得璞玉献楚山遭刖两足，至楚文王抱玉痛哭开剖得绝世奇珍，遂命名为「和氏璧」。
+  confidence: 确定
+  sources: [韩非子·和氏]
+
+- id: laoma-shitu
+  date: "-0664"
+  title: 老马识途
+
+  category: 战争
+  tags: [齐国, 典故]
+  importance: 3
+  summary: 齐桓公率军攻打山戎，在孤竹国迷失道路，采纳管仲建议放老马领路而出迷谷。
+  confidence: 确定
+  sources: [韩非子·说林上]
+
+- id: chunwang-chihan
+  date: "-0655"
+  title: 假道伐虢，唇亡齿寒
+  category: 政治
+  tags: [春秋, 典故]
+  importance: 4
+  summary: 晋献公借道虞国灭虢国，虞臣宫之奇谏言「虢虞唇齿也，唇亡则齿寒」，晋灭虢后回师顺道灭虞。
+  confidence: 确定
+  sources: [左传·僖公五年]
+
+- id: bailixi-wuyangpi
+  date: "-0659"
+  title: 秦穆公五羊皮换百里奚
+  category: 政治
+  tags: [秦国, 用人]
+  importance: 3
+  summary: 秦穆公用五张黑羊皮赎回楚国逃奴百里奚，委以国政拜为上卿，开秦国霸业。
+  confidence: 确定
+  sources: [史记·秦本纪]
+
+
+
+- id: qinjin-zhihao
+  date: "-0636"
+  title: 秦穆公纳重耳，秦晋之好
+  category: 政治
+  tags: [外交, 秦国, 晋国]
+  importance: 3
+  summary: 秦穆公接纳流亡公子重耳并以女相嫁，派兵送重耳归国即位为晋文公，结为「秦晋之好」。
+  confidence: 确定
+  sources: [左传·僖公二十三年]
+
+- id: tuibi-sanshe
+  date: "-0632"
+  title: 城濮之战，退避三舍
+
+  category: 战争
+  tags: [晋国, 楚国]
+  importance: 4
+  summary: 晋文公重耳履行当年流亡楚国的许诺退避九十里，后大败楚军于城濮，确立晋国霸业。
+  confidence: 确定
+  sources: [左传·僖公二十八年]
+
+- id: jiezitui-hanshi
+  date: "-0636"
+  title: 介子推隐居绵山，寒食节由来
+  category: 文化
+  tags: [晋国, 典故, 节日]
+  importance: 3
+  summary: 介子推割股奉君随重耳流亡，晋文公即位后赏赐功臣，介子推不求禄位隐居绵山焚死，后人为之禁火寒食。
+  confidence: 有争议
+  dispute: 割股焚山说见于《庄子》《左传注》，史学界认为禁火俗早已有之，后附会于介子推。
+  sources: [左传·僖公二十四年]
+
+- id: yierfanzhi
+  date: "-0606"
+  title: 楚庄王问鼎中原
+  category: 政治
+  tags: [楚国, 霸业]
+  importance: 4
+  summary: 楚庄王陈兵周郊，向周使王孙满询问九鼎轻重，显露出窥伺王权之野心。
+  confidence: 确定
+  sources: [左传·宣公三年]
 
 - id: confucius
   date: "-0551"
@@ -108,6 +225,57 @@
   dispute: |
     生年有前551与前552两说：《公羊》《穀梁》系于鲁襄公二十一年，
     《史记》系于二十二年。后世多从《史记》。
+
+- id: yanzi-shichu
+  date: "-0548"
+  title: 晏子使楚
+  category: 政治
+  tags: [外交, 齐国]
+  importance: 3
+  summary: 齐相晏婴出使楚国，面对楚王种种凌辱刁难机智应对，维护了齐国国格与尊严。
+  confidence: 确定
+  sources: [晏子春秋]
+
+- id: zhuanzhu-wangliao
+  date: "-0515"
+  title: 专诸鱼肠剑刺王僚
+  category: 政治
+  tags: [刺客, 吴国]
+  importance: 3
+  summary: 专诸藏宝剑于炙鱼腹中献鱼于宴席，拔剑刺杀吴王僚，公子光即位为吴王阖闾。
+  confidence: 确定
+  sources: [史记·刺客列传]
+
+- id: sunwu-wugong
+  date: "-0512"
+  title: 孙武吴宫演兵斩爱姬
+  category: 战争
+  tags: [兵家, 军纪]
+  importance: 4
+  summary: 孙武受吴王阖闾召见，在吴宫演练宫女军队，斩抗旨吴王二爱姬以立威严军纪，吴王大服。
+  confidence: 确定
+  sources: [史记·孙子吴起列传]
+
+- id: wuzi-xilu
+  date: "-0506"
+  title: 伍子胥辅助吴王入郢，掘墓鞭尸
+  category: 战争
+  tags: [吴国, 楚国]
+  importance: 4
+  summary: 伍子胥与孙武辅助吴王阖闾五战五胜破楚攻入楚都郢城，伍子胥为报父兄惨死之仇掘楚平王墓鞭尸三百。
+  confidence: 确定
+  sources: [史记·伍子胥列传]
+
+- id: woxin-changdan
+  date: "-0493"
+  title: 越王勾践卧薪尝胆
+
+  category: 政治
+  tags: [越国, 吴国]
+  importance: 4
+  summary: 越王勾践兵败会稽山后入吴为奴，归国后卧薪尝胆、励精图治，最终复仇灭吴。
+  confidence: 确定
+  sources: [史记·越王勾践世家]
 
 - id: warring-states
   date: "-0475"
@@ -121,6 +289,36 @@
     （《春秋》绝笔之翌）、前403（三家分晋受封为侯，《通鉴》
     所始）诸说并存。此处采前475说。
 
+- id: ximenbao-zhiye
+  date: "-0400"
+  title: 西门豹治邺，破除巫风
+  category: 政治
+  tags: [水利, 典故]
+  importance: 3
+  summary: 魏文侯时西门豹任邺令，将巫婆官绅惩治投江破除河伯娶妇迷信，并开十二渠引漳水灌邺。
+  confidence: 确定
+  sources: [史记·滑稽列传]
+
+- id: wuqi-reform
+  date: "-0381"
+  title: 吴起在楚变法与悼王崩伏尸
+  category: 政治
+  tags: [变法, 楚国]
+  importance: 4
+  summary: 兵家名将吴起受楚悼王任用变法裁减封君抑贵族，楚国兵震天下；悼王死后贵族伏击吴起，吴起伏尸悼王遗体杀贼。
+  confidence: 确定
+  sources: [史记·孙子吴起列传]
+
+- id: shangyang-limu
+  date: "-0359"
+  title: 商鞅徙木立信
+  category: 政治
+  tags: [商鞅变法, 典故]
+  importance: 4
+  summary: 商鞅变法前于国都南门立三丈之木，募能徙者予五十金，以显示赏罚严明、诚信立官。
+  confidence: 确定
+  sources: [史记·商君列传]
+
 - id: shangyang-reform
   date: "-0356"
   title: 商鞅变法
@@ -129,3 +327,170 @@
   summary: 废井田开阡陌，奖军功行连坐。秦自此富强，为百年后统一奠基。
   confidence: 确定
   sources: [史记·商君列传]
+
+- id: weiwei-jiuzhao
+  date: "-0354"
+  title: 桂陵之战，围魏救赵
+  category: 战争
+  tags: [军事, 典故]
+  importance: 4
+  summary: 魏攻赵邯郸，齐将田忌、孙膑采用避实击虚策略直攻魏都大梁，于桂陵大败回救的魏军。
+  confidence: 确定
+  sources: [史记·孙子吴起列传]
+
+- id: sunbin-pangjuan
+  date: "-0341"
+  title: 马陵之战，庞涓死于此树下
+  category: 战争
+  tags: [兵法, 减灶诱敌]
+  importance: 4
+  summary: 孙膑用减灶退兵计引诱庞涓轻敌追击，于马陵设伏将庞涓射杀于斫皮大树下，魏国精锐尽丧。
+  confidence: 确定
+  sources: [史记·孙子吴起列传]
+
+- id: shangyang-chelie
+  date: "-0338"
+  title: 秦孝公崩，惠文王车裂商鞅
+  category: 政治
+  tags: [商鞅变法, 典故]
+  importance: 4
+  summary: 秦孝公崩逝后旧贵族诬告商鞅谋反，商鞅出逃因「作法自毙」无凭证难宿客栈，后战败被杀车裂，然秦法未废。
+  confidence: 确定
+  sources: [史记·商君列传]
+
+- id: qianjin-maigu
+  date: "-0314"
+  title: 燕昭王千金买骨，筑黄金台
+  category: 政治
+  tags: [燕国, 用人]
+  importance: 3
+  summary: 燕昭王招贤纳士，采纳郭隗建议「千金买死马骨」显示爱才求贤决心，筑黄金台迎乐毅等天下贤士。
+  confidence: 确定
+  sources: [战国策·燕策一]
+
+- id: zhangyi-lianzheng
+  date: "-0313"
+  title: 张仪行连横策略，张仪欺楚
+  category: 政治
+  tags: [纵横家, 外交]
+  importance: 4
+  summary: 秦相张仪首创「连横」策略拆散六国合纵，以商於六百里之地戏诱楚怀王绝齐，楚王发兵攻秦大败。
+  confidence: 确定
+  sources: [史记·张仪列传]
+
+
+- id: hufu-qishe
+  date: "-0307"
+  title: 赵武灵王推行胡服骑射
+  category: 政治
+  tags: [赵国, 改革, 军事]
+  importance: 4
+  summary: 赵武灵王克服宗室保守势力阻挠，推行「胡服骑射」改革，组建强大骑兵部队，连灭中山国、招抚胡兵。
+  confidence: 确定
+  sources: [史记·赵世家]
+
+- id: mengchangjun-jiming
+  date: "-0298"
+  title: 孟尝君鸡鸣狗盗逃秦
+
+  category: 政治
+  tags: [战国, 典故]
+  importance: 3
+  summary: 齐相孟尝君田文被秦昭王扣留，门客施「狗盗」盗狐白裘献秦姬，再施「鸡鸣」骗关吏开函谷关连夜脱险。
+  confidence: 确定
+  sources: [史记·孟尝君列传]
+
+- id: wanbi-guizhao
+  date: "-0283"
+  title: 完璧归赵与负荆请罪
+  category: 政治
+  tags: [外交, 赵国, 典故]
+  importance: 4
+  summary: 蔺相如携和氏璧赴秦奉使，凭智勇使和氏璧归赵；后廉颇感其贤狭负荆请罪，将相和。
+  confidence: 确定
+  sources: [史记·廉颇蔺相如列传]
+
+- id: tiandan-huoniu
+  date: "-0279"
+  title: 田单设火牛阵大破燕军复国
+  category: 战争
+  tags: [齐国, 奇谋]
+  importance: 4
+  summary: 燕将乐毅攻破齐国七十余城仅余即墨、莒城；齐将田单守即墨用火牛阵夜袭大破燕军，收复齐国全境失地。
+  confidence: 确定
+  sources: [史记·田单列传]
+
+- id: quyuan-miluo
+  date: "-0278"
+  title: 屈原投汨罗江
+
+  category: 文化
+  tags: [楚国, 文学]
+  importance: 4
+  summary: 秦破楚都郢城，楚国大夫屈原满怀悲愤写下《怀沙》后自沉汨罗江殉国。
+  confidence: 确定
+  sources: [史记·屈原贾生列传]
+
+- id: eyu-zhaoshe
+  date: "-0269"
+  title: 阏与之战，狭路相逢勇者胜
+  category: 战争
+  tags: [赵国, 典故]
+  importance: 4
+  summary: 秦军围攻赵国阏与，赵奢率兵急救援，谓「狭路相逢勇者胜」，大破秦军受封马服君。
+  confidence: 确定
+  sources: [史记·廉颇蔺相如列传]
+
+- id: changping-zhizhan
+  date: "-0260"
+  title: 长平之战，白起坑杀赵卒
+  category: 战争
+  tags: [秦国, 赵国, 决定性战役]
+  importance: 5
+  summary: 秦将白起于长平击败赵括，坑杀赵降卒四十万，赵国主力尽丧，秦统一大势已不可逆转。
+  confidence: 确定
+  sources: [史记·白起王翦列传]
+
+- id: chulong-zhaotaihou
+  date: "-0265"
+  title: 触龙说赵太后
+  category: 政治
+  tags: [赵国, 典故]
+  importance: 3
+  summary: 秦攻赵，赵求救于齐，齐要长安君为质；左师触龙规劝赵太后「父母之爱子则为之计深远」，赵太后始送子赴齐。
+  confidence: 确定
+  sources: [战国策·赵策四]
+
+- id: maosui-zijian
+  date: "-0257-01"
+  title: 毛遂自荐
+  category: 政治
+  tags: [外交, 平原君, 典故]
+  importance: 3
+  summary: 秦围赵邯郸，毛遂自荐随平原君出使楚国，按剑定盟，促成楚赵合纵解围。
+  confidence: 确定
+  sources: [史记·平原君虞卿列传]
+
+
+- id: qiefu-jiuzhao
+  date: "-0257-10"
+  title: 信陵君窃符救赵
+  category: 战争
+  tags: [魏国, 邯郸之围]
+  importance: 4
+  summary: 秦围赵邯郸，魏安厘王畏秦不救；信陵君魏无忌通过如姬窃得兵符，夺晋鄙军救赵解围。
+  confidence: 确定
+  sources: [史记·魏公子列传]
+
+
+- id: zhengguo-qu
+  date: "-0246"
+  title: 郑国渠修筑，关中成沃野
+  category: 经济
+  tags: [水利, 秦国]
+  importance: 4
+  summary: 韩国水工郑国奉命入秦修渠本意疲秦，秦王觉察后仍命其完工，引泾水灌溉关中平原，秦由此大富。
+  confidence: 确定
+  sources: [史记·河渠书]
+
+

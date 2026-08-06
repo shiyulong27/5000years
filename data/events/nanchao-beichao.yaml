@@ -16,6 +16,17 @@
   confidence: 确定
   sources: [魏书·世祖纪]
 
+- id: mulan-congjun
+  date: "0450"
+  title: 木兰替父从军
+  category: 战争
+  tags: [北朝, 典故]
+  importance: 3
+  summary: 北朝女子花木兰女扮男装代父从军十二载，击破柔然兵寇，辞官还乡，传为佳话。
+  confidence: 传说
+  dispute: 木兰事迹源自北朝民歌《木兰诗》，人物真实性与具体年代史学界无定论，年代系约估。
+  sources: [木兰诗]
+
 - id: zu-chongzhi-462
   date: "0462"
   title: 祖冲之成《大明历》
@@ -59,6 +70,17 @@
   importance: 3
   summary: 高欢拥立元善见为帝迁洛阳，史称东魏；宇文泰拥立元宝炬都长安，史称西魏，北魏终。
   confidence: 确定
+
+- id: houjing-zhiluan
+  date: "0548"
+  title: 侯景之乱
+  category: 战争
+  tags: [南梁, 兵变]
+  importance: 4
+  summary: 东魏降将侯景举兵叛梁攻陷建康，梁武帝被饿死台城，江南繁华之地毁于一旦。
+  confidence: 确定
+  sources: [梁书·侯景传]
+
 
 - id: chen-and-beizhou-557
   date: "0557"

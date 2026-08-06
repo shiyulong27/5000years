@@ -32,9 +32,20 @@
   summary: 郭威受禅建后周，轻徭薄赋，为周世宗改革奠基。
   confidence: 确定
 
+- id: chairong-gaoping
+  date: "0954"
+  title: 高平之战，柴荣大破北汉与辽军
+  category: 战争
+  tags: [五代, 后周]
+  importance: 4
+  summary: 北汉联合辽军趁郭威新丧犯境，周世宗柴荣亲征御敌，赵匡胤率兵急袭大破北汉辽联军，高平大捷奠定后周强盛。
+  confidence: 确定
+  sources: [旧五代史·周世宗纪]
+
 - id: shizong-955
   date: "0955"
   title: 周世宗改革与北伐
+
   category: 政治
   importance: 4
   summary: 周世宗柴荣励精图治，整顿军政、北伐契丹，收复数州，惜天不假年。

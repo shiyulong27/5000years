@@ -1,11 +1,23 @@
 - id: ming-1368
-  date: "1368"
-  title: 朱元璋建明，定都应天
+  date: "1368-01"
+  title: 朱元璋建明，刘伯温运筹帷幄
   category: 政治
+  tags: [明朝建国, 谋臣]
   importance: 5
-  summary: 朱元璋即帝位于应天（今南京），国号明，是为明太祖。废丞相、设厂卫，皇权极于一人。
+  summary: 朱元璋于应天（今南京）即帝位建明，军师刘基（刘伯温）运筹帷幄定计灭陈友谅、张士诚，北伐驱除胡虏。
   confidence: 确定
-  sources: [明史·太祖纪]
+  sources: [明史·刘基传]
+
+
+- id: jingnan-zhiyi
+  date: "1399"
+  title: 靖难之役爆发
+  category: 战争
+  tags: [明朝, 削藩]
+  importance: 4
+  summary: 建文帝削藩，燕王朱棣以「清君侧」为名于北平起兵，历时四年夺取皇位，是为明成祖。
+  confidence: 确定
+  sources: [明史·成祖纪]
 
 - id: zheng-he-1405
   date: "1405"
@@ -16,6 +28,17 @@
   confidence: 确定
   tags: [外交, 航海]
 
+- id: yongle-dadian
+  date: "1408"
+  title: 《永乐大典》修成
+  category: 文化
+  tags: [典籍, 科技]
+  importance: 4
+  summary: 解缙等三千余学者历时五载修成《永乐大典》，辑图书七八千种，为中国最大文献类书。
+  confidence: 确定
+  sources: [明史·解缙传]
+
+
 - id: yongle-move-1421
   date: "1421"
   title: 永乐迁都北京
@@ -25,12 +48,43 @@
   confidence: 确定
 
 - id: tumu-1449
-  date: "1449"
+  date: "1449-08"
   title: 土木之变
   category: 战争
   importance: 4
   summary: 明英宗亲征瓦剌，于土木堡兵败被俘，明军精锐尽丧，是为国耻。
   confidence: 确定
+
+- id: beijing-baoweizhan
+  date: "1449-10"
+  title: 于谦主持北京保卫战
+  category: 战争
+  tags: [于谦, 瓦剌]
+  importance: 5
+  summary: 兵部尚书于谦拥立明景帝，誓死保卫京师，成功击退瓦剌骑兵攻势，社稷转危为安。
+  confidence: 确定
+  sources: [明史·于谦传]
+
+- id: qijiguang-wokou
+  date: "1561"
+  title: 戚继光台州大捷，抗击倭寇
+  category: 战争
+  tags: [戚家军, 东南沿海]
+  importance: 4
+  summary: 戚继光率兵创九战九捷之绩，痛歼日本倭寇侵略者，肃清东南沿海倭患。
+  confidence: 确定
+  sources: [明史·戚继光传]
+
+- id: hairui-baguan
+  date: "1566"
+  title: 海瑞上《治安疏》
+  category: 政治
+  tags: [清官, 典故]
+  importance: 4
+  summary: 户部主事海瑞备死买棺，直言直谏直批嘉靖帝「嘉靖者言家家皆净也」，名震天下。
+  confidence: 确定
+  sources: [明史·海瑞传]
+
 
 - id: single-whip-1581
   date: "1581"
@@ -39,6 +93,18 @@
   importance: 4
   summary: 张居正推行一条鞭法，赋役折银征收，简化税制，为财政改革之大端。
   confidence: 确定
+
+- id: wanli-daizheng
+  date: "1589"
+  title: 明神宗万历怠政三十载
+  category: 政治
+  tags: [明朝, 朝政失序]
+  importance: 3
+  summary: 明神宗因国本之争与文官集团对立，自万历十七年始三十年不出宫门不上朝，朝廷缺官缺员，政局日趋衰颓。
+  confidence: 确定
+  sources: [明史·神宗纪]
+
+
 
 - id: bencao-1596
   date: "1596"
@@ -49,10 +115,23 @@
   confidence: 确定
   sources: [明史·李时珍传]
 
-- id: jiashen-1644
-  date: "1644"
-  title: 甲申之变，明亡
-  category: 政治
-  importance: 5
-  summary: 李自成破北京，崇祯帝自缢煤山，明亡；吴三桂旋引清兵入关。
+- id: xuxiake-youji
+  date: "1636"
+  title: 徐霞客撰《徐霞客游记》
+  category: 文化
+  tags: [地理, 探险]
+  importance: 4
+  summary: 地理学家徐霞客历三十年考察大半中国奇峰溶洞，撰《徐霞客游记》，为世界最早喀斯特地貌研究。
   confidence: 确定
+  sources: [明史·徐霞客传]
+
+- id: jiashen-1644
+  date: "1644-03"
+  title: 李自成大顺军破北京，崇祯自缢明亡
+  category: 政治
+  tags: [明末农民起义, 甲申之变]
+  importance: 5
+  summary: 李自成率大顺军攻陷北京，崇祯帝于煤山自缢，明朝灭亡；后吴三桂引清兵入关，顺天府失守。
+  confidence: 确定
+  sources: [明史·庄烈帝纪]
+

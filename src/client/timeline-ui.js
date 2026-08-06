@@ -7,6 +7,7 @@
 
 const timeline = document.querySelector('.timeline')
 if (timeline) {
+  const levelFilter = document.getElementById('level-filter')
   const onlyMajor = document.getElementById('only-major')
   const showWorld = document.getElementById('show-world')
   const showFigures = document.getElementById('show-figures')
@@ -16,26 +17,77 @@ if (timeline) {
 
   /**
    * 重算各行可见性。
-   *
-   * 用 JavaScript 而非纯 CSS :has()——需要「当某行的事件被全部筛除时
-   * 隐藏整行」，这依赖对子元素的计数，:has() 在此场景下既脆弱又难调试。
    */
   function apply() {
-    const major = onlyMajor?.checked
+    const level = levelFilter?.value || (onlyMajor?.checked ? 'classic' : 'all')
     const active = new Set(catToggles.filter((t) => t.checked).map((t) => t.value))
 
     // 先决定每张卡片的去留
     for (const card of timeline.querySelectorAll('.event-card')) {
-      const impOk = !major || Number(card.dataset.importance) >= 4
+      const imp = Number(card.dataset.importance) || 3
+      let impOk = true
+      if (level === 'major') {
+        impOk = imp >= 5
+      } else if (level === 'classic') {
+        impOk = imp >= 4
+      } else {
+        impOk = true // 'all'
+      }
+
       const catOk = active.has(card.dataset.category)
       card.hidden = !(impOk && catOk)
     }
 
-    // 再回扫各单元格：卡片全被筛除则隐藏该格
-    for (const cell of timeline.querySelectorAll('.cell-china, .cell-world')) {
-      const cards = cell.querySelectorAll('.event-card')
-      const visible = [...cards].some((c) => !c.hidden)
-      cell.classList.toggle('is-empty', cards.length > 0 && !visible)
+    // 2. 按行 (grid-row) 分组统计可见性，防止中轴年份节点在空行处堆叠重叠
+    const rowsMap = new Map()
+    for (const cell of timeline.querySelectorAll('.cell')) {
+      const gRow = cell.style.gridRow
+      if (!gRow) continue
+      if (!rowsMap.has(gRow)) {
+        rowsMap.set(gRow, { china: null, world: null, axis: null })
+      }
+      const entry = rowsMap.get(gRow)
+      if (cell.classList.contains('cell-china')) entry.china = cell
+      else if (cell.classList.contains('cell-world')) entry.world = cell
+      else if (cell.classList.contains('cell-axis')) entry.axis = cell
+    }
+
+    for (const [_, entry] of rowsMap) {
+      const chinaCards = entry.china ? [...entry.china.querySelectorAll('.event-card')] : []
+      const worldCards = entry.world ? [...entry.world.querySelectorAll('.event-card')] : []
+
+      const hasChinaVisible = chinaCards.some((c) => !c.hidden)
+      const hasWorldVisible = worldCards.some((c) => !c.hidden)
+
+      if (entry.china) entry.china.classList.toggle('is-empty', chinaCards.length > 0 && !hasChinaVisible)
+      if (entry.world) entry.world.classList.toggle('is-empty', worldCards.length > 0 && !hasWorldVisible)
+      // 中轴单元格：左右两侧均无可见事件卡片时隐藏，防止空行年份吸顶重叠
+      if (entry.axis) entry.axis.classList.toggle('is-empty', !hasChinaVisible && !hasWorldVisible)
+    }
+
+    // 3. 处理朝代横幅：若某朝代下无任何可见事件，则隐藏其横幅
+    const allChildren = [...timeline.children]
+    let currentBanner = null
+    let currentBannerHasEvents = false
+
+    for (const el of allChildren) {
+      if (el.classList.contains('banner-row')) {
+        if (currentBanner) {
+          currentBanner.classList.toggle('is-empty', !currentBannerHasEvents)
+        }
+        currentBanner = el
+        currentBannerHasEvents = false
+      } else if (el.classList.contains('cell-china') || el.classList.contains('cell-world')) {
+        if (!el.classList.contains('is-empty')) {
+          const cards = el.querySelectorAll('.event-card')
+          if ([...cards].some((c) => !c.hidden)) {
+            currentBannerHasEvents = true
+          }
+        }
+      }
+    }
+    if (currentBanner) {
+      currentBanner.classList.toggle('is-empty', !currentBannerHasEvents)
     }
 
     timeline.classList.toggle('hide-world', showWorld && !showWorld.checked)
@@ -44,11 +96,14 @@ if (timeline) {
     timeline.classList.toggle('show-figures', !!showFigures?.checked)
   }
 
+
+  levelFilter?.addEventListener('change', apply)
   onlyMajor?.addEventListener('change', apply)
   showWorld?.addEventListener('change', apply)
   showFigures?.addEventListener('change', apply)
   catToggles.forEach((t) => t.addEventListener('change', apply))
   apply()
+
 
   // 朝代跳转
   jump?.addEventListener('change', () => {

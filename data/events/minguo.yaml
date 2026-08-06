@@ -39,6 +39,15 @@
   summary: 日本关东军炸毁柳条湖段铁路，袭击沈阳北大营，占领东北全境，十四年抗战揭幕。
   confidence: 确定
 
+- id: xian-incident-1936
+  date: "1936-12-12"
+  title: 西安事变
+  category: 政治
+  tags: [抗日民族统一战线, 典故]
+  importance: 5
+  summary: 张学良、杨虎城于西安扣押蒋介石实行兵谏，逼蒋抗日，促成抗日民族统一战线初步形成。
+  confidence: 确定
+
 - id: lugou-bridge-incident-1937
   date: "1937"
   title: 七七事变，全面抗战始
@@ -46,6 +55,7 @@
   importance: 5
   summary: 日军在北平卢沟桥发动挑衅，中国守军奋起反击，中华民族全面抗日战争爆发。
   confidence: 确定
+
 
 - id: victory-over-japan-1945
   date: "1945"

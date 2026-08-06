@@ -7,15 +7,57 @@
   confidence: 确定
   sources: [宋史·太祖纪]
 
+- id: cupiu-bingquan
+  date: "0961"
+  title: 杯酒释兵权
+  category: 政治
+  tags: [北宋, 典故]
+  importance: 4
+  summary: 宋太祖设宴劝说石守信等高级将领交出兵权，解除禁军将领威胁，强化中央集权。
+  confidence: 确定
+  sources: [宋史·石守信传]
+
+- id: liyu-nantang
+  date: "0975"
+  title: 宋灭南唐，李煜落魄作词
+  category: 政治
+  tags: [南唐, 词人]
+  importance: 4
+  summary: 宋军攻陷金陵，南唐后主李煜出降，幽禁汴京，作《虞美人》《相见欢》遂成词帝。
+  confidence: 确定
+  sources: [宋史·南唐世家]
+
+- id: yangjiajiang-jinsha
+  date: "0986"
+  title: 雍熙北伐，杨业金沙滩殉国
+  category: 战争
+  tags: [杨家将, 抗辽]
+  importance: 4
+  summary: 宋太宗发兵三路北伐收复燕云十六州，主将杨业于朔州金沙滩孤军绝食撞李陵碑殉国，成就忠烈杨家将传说。
+  confidence: 确定
+  sources: [宋史·杨业传]
+
 - id: chanyuan-treaty-1004
   date: "1004"
-  title: 澶渊之盟
+  title: 寇准促真宗亲征，澶渊之盟
   category: 政治
+  tags: [外交, 辽国, 主战]
   importance: 4
-  summary: 宋真宗与辽圣宗缔结澶渊之盟，约为兄弟之国，开启宋辽百余年和平。
+  summary: 辽军兵临澶州，宰相寇准力排众议促宋真宗亲征北上鼓舞士气，射杀辽将萧挞凛，双方结为兄弟之国维持百年和平。
   confidence: 确定
-  sources: [宋史·真宗纪]
-  tags: [外交]
+  sources: [宋史·寇准传]
+
+
+
+- id: simaguang-zhagang
+  date: "1026"
+  title: 司马光砸缸救友
+  category: 文化
+  tags: [典故, 机智]
+  importance: 3
+  summary: 七岁司马光见同伴落入水缸，持石击破水瓮救活溺水幼童，传为佳话。
+  confidence: 确定
+  sources: [宋史·司马光传]
 
 - id: yuanhao-xixia-1038
   date: "1038"
@@ -26,6 +68,16 @@
   confidence: 确定
   sources: [宋史·夏国传]
 
+- id: fanzhongyan-qingli
+  date: "1043"
+  title: 范仲淹主持庆历新政
+  category: 政治
+  tags: [改革, 典故]
+  importance: 4
+  summary: 范仲淹向宋仁宗呈《答手诏条陈十事》推行新法整顿吏治，虽因守旧派反对而止，后作《岳阳楼记》传世。
+  confidence: 确定
+  sources: [宋史·范仲淹传]
+
 - id: bisheng-moveable-type-1044
   date: "1044"
   title: 毕昇活字印刷
@@ -35,6 +87,28 @@
   confidence: 有争议
   dispute: 活字创制之年无确载，仅《梦溪笔谈》记庆历中，年代为约值。
   sources: [梦溪笔谈]
+
+- id: diqing-tongmianju
+  date: "1053"
+  title: 狄青披发戴铜面具夜袭昆仑关
+  category: 战争
+  tags: [宋朝, 名将]
+  importance: 4
+  summary: 名将狄青每次临阵披发戴青铜面具冲锋陷阵，于大年三十夜出奇兵夜袭昆仑关平定侬智高。
+  confidence: 确定
+  sources: [宋史·狄青传]
+
+- id: baozheng-kaifeng
+  date: "1056"
+  title: 包拯知开封府，铁面无私
+
+  category: 政治
+  tags: [包青天, 清官]
+  importance: 4
+  summary: 包拯任开封府知府，严惩贪官权贵、不避亲戚，朝野称「关节不到，有阎罗包老」，传为包青天。
+  confidence: 确定
+  sources: [宋史·包拯传]
+
 
 - id: wanganshi-reform-1069
   date: "1069"
@@ -54,6 +128,17 @@
   confidence: 确定
   sources: [宋史·司马光传]
 
+- id: su-dongpo-chibi
+  date: "1082"
+  title: 苏轼作《赤壁赋》与《念奴娇·赤壁怀古》
+  category: 文化
+  tags: [词作, 文学]
+  importance: 4
+  summary: 苏轼被贬黄州游赤壁矶，作前后《赤壁赋》与《念奴娇·赤壁怀古》，抒发旷达襟怀与千古兴亡之感。
+  confidence: 确定
+  sources: [宋史·苏轼传]
+
+
 - id: aguda-jin-1115
   date: "1115"
   title: 阿骨打建金
@@ -63,14 +148,46 @@
   confidence: 确定
   sources: [金史·太祖纪]
 
+- id: fangla-qiyi
+  date: "1120"
+  title: 方腊起义与梁山宋江
+  category: 战争
+  tags: [起义, 花石纲]
+  importance: 4
+  summary: 宋徽宗设花石纲搜刮江南，方腊于睦州起义，宋江聚众梁山泊抗宋，尽显北宋末年朝政腐败。
+  confidence: 确定
+  sources: [宋史·徽宗纪]
+
 - id: jingkang-incident-1127
   date: "1127"
   title: 靖康之难，北宋亡；同年高宗复统，南宋始
+
   category: 战争
   importance: 5
   summary: 金军攻陷汴京，俘徽钦二帝，北宋亡；赵构于应天府即位，重建宋朝，史称南宋。
   confidence: 确定
   sources: [宋史·高宗纪]
+
+- id: yuemu-cizi
+  date: "1127-06"
+  title: 岳母刺字，精忠报国
+  category: 战争
+  tags: [岳飞, 典故]
+  importance: 4
+  summary: 北宋灭亡后岳飞从军抗金，岳母姚氏在其背上刺「尽忠报国」（后俗称精忠报国），以此励志保家卫国。
+  confidence: 确定
+  sources: [宋史·岳飞传]
+
+
+- id: yuefei-yancheng
+  date: "1140"
+  title: 郾城大捷与岳飞抗金
+  category: 战争
+  tags: [抗金, 岳家军]
+  importance: 5
+  summary: 岳飞率岳家军在郾城大败金兀术主力拐子马、铁浮图，收复郑州洛阳，直逼汴京。
+  confidence: 确定
+  sources: [宋史·岳飞传]
 
 - id: shaoxing-treaty-1141
   date: "1141"
@@ -90,11 +207,24 @@
   confidence: 确定
   sources: [宋史·恭帝纪]
 
+- id: wen-tianxiang-01279
+  date: "1279-01"
+  title: 文天祥作《过零丁洋》
+  category: 文化
+  tags: [气节, 诗词]
+  importance: 4
+  summary: 丞相文天祥兵败被俘后拒绝降元，于零丁洋作诗「人生自古谁无死？留取丹心照汗青」。
+  confidence: 确定
+  sources: [宋史·文天祥传]
+
 - id: yashan-battle-1279
-  date: "1279"
-  title: 崖山海战，宋亡
+  date: "1279-03"
+  title: 崖山海战，陆秀夫负帝跳海宋亡
   category: 战争
+  tags: [南宋灭亡, 忠烈]
   importance: 5
-  summary: 崖山海战宋军大败，陆秀夫负帝赵昺投海，南宋彻底灭亡。
+  summary: 崖山海战宋军绝境力战不敌，丞相陆秀夫背负八岁少帝赵昺投海殉国，十万军民随之投海，南宋彻底灭亡。
   confidence: 确定
   sources: [宋史·陆秀夫传]
+
+

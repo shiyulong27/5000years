@@ -31,7 +31,7 @@
 - id: zhou
   name: 周
   start: "-1046"
-  end: "-0256"
+  end: "-0221"
   capital: 镐京
   color: "#a1887f"
   summary: 分封建国，礼乐制度自此确立。后半期王室衰微，诸侯争霸。
@@ -47,7 +47,7 @@
 - id: dongzhou
   name: 东周
   start: "-0770"
-  end: "-0256"
+  end: "-0221"
   capital: 洛邑
   color: "#a1887f"
   parent: zhou
@@ -62,7 +62,7 @@
 
 - id: han
   name: 汉
-  start: "-0202"
+  start: "-0206"
   end: "0220"
   capital: 长安
   color: "#e67e22"
@@ -70,11 +70,12 @@
 
 - id: xihan
   name: 西汉
-  start: "-0202"
+  start: "-0206"
   end: "0008"
   capital: 长安
   color: "#e67e22"
   parent: han
+
 
 - id: xin
   name: 新

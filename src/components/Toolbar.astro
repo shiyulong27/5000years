@@ -6,10 +6,11 @@ const { dynasties } = Astro.props
 
 <div class="toolbar">
   <div class="tool-group tool-switches">
-    <label class="switch switch-major">
-      <input type="checkbox" class="switch-input" id="only-major" />
-      <span class="switch-label">只看重大事件</span>
-    </label>
+    <select class="level-select" id="level-filter" title="按重要度与经典度筛选事件">
+      <option value="classic" selected>📜 经典典故 (推荐)</option>
+      <option value="major">👑 历史转折 (大事)</option>
+      <option value="all">📚 全量史料 (全量)</option>
+    </select>
 
     <label class="switch switch-world">
       <input type="checkbox" class="switch-input" id="show-world" checked />
@@ -21,6 +22,7 @@ const { dynasties } = Astro.props
       <span class="switch-label">人物</span>
     </label>
   </div>
+
 
   <div class="tool-group tool-cats">
     {CATEGORIES.map((c) => (

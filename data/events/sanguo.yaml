@@ -1,3 +1,13 @@
+- id: caozhi-qibu
+  date: "0220-11"
+  title: 曹植七步成诗
+  category: 文化
+  tags: [建安文学, 典故]
+  importance: 4
+  summary: 魏文帝曹丕逼迫弟曹植七步之内作诗，曹植应声作「煮豆燃豆萁，豆在釜中泣」，表达兄弟相残之悲痛。
+  confidence: 传说
+  dispute: 典故源自《世说新语·文学》，正史《三国志》未载，具体地点年代系传说推定。
+
 - id: wei-founding-220
   date: "0220-12-11"
   title: 曹丕称帝，魏代汉
@@ -6,6 +16,7 @@
   summary: 汉献帝禅位于曹丕，东汉终，三国鼎立之局正式形成。
   confidence: 确定
   sources: [三国志·文帝纪]
+
 
 - id: shu-founding-221
   date: "0221-05"
@@ -24,6 +35,17 @@
   summary: 陆逊火烧连营，刘备大败，蜀汉元气大伤。
   confidence: 确定
 
+- id: qiqin-menghuo
+  date: "0225"
+  title: 诸葛亮七擒孟获
+  category: 战争
+  tags: [南中, 典故]
+  importance: 4
+  summary: 诸葛亮率军平定南中叛乱，对彝族首领孟获七擒七纵，使其心悦诚服，南中遂安。
+  confidence: 有争议
+  dispute: 七擒七纵见于《汉晋春秋》与《三国志注》，后世对次数细节有学术争议。
+  sources: [三国志·诸葛亮传]
+
 - id: chushibiao-227
   date: "0227"
   title: 诸葛亮上《出师表》
@@ -32,13 +54,37 @@
   summary: 「先帝创业未半而中道崩殂」，此后六出祁山，鞠躬尽瘁。
   confidence: 确定
 
-- id: shu-fall-263
-  date: "0263"
-  title: 蜀汉亡
-  category: 政治
+- id: jieting-jiji
+  date: "0228"
+  title: 街亭之战与挥泪斩马谡
+  category: 战争
+  tags: [北伐, 典故]
   importance: 4
-  summary: 邓艾偷渡阴平，刘禅出降。
+  summary: 参军马谡违背诸葛亮部署舍水上山致街亭失守，蜀军第一次北伐功败垂成，诸葛亮挥泪斩马谡。
   confidence: 确定
+  sources: [三国志·马良传附马谡传]
+
+- id: gaopingling-249
+  date: "0249"
+  title: 高平陵之变
+  category: 政治
+  tags: [魏国, 司马氏]
+  importance: 5
+  summary: 司马懿趁魏帝曹芳拜葛陵之机发动兵变，诛杀曹爽一门，掌控曹魏朝政大权。
+  confidence: 确定
+  sources: [三国志·三少帝纪]
+
+- id: shu-fall-263
+  date: "0263-10"
+  title: 邓艾偷度阴平，蜀汉亡
+  category: 政治
+  tags: [灭蜀, 奇兵]
+  importance: 5
+  summary: 魏将邓艾率精兵行无人之地七百余里、裹毡滚下马阁山险奇袭绵竹，后主刘禅出降，蜀汉灭亡。
+  confidence: 确定
+  sources: [三国志·邓艾传]
+
+
 
 - id: jin-unify-280
   date: "0280"

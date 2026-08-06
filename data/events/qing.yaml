@@ -7,6 +7,17 @@
   confidence: 确定
   sources: [清史稿·世祖本纪]
 
+- id: yangzhou-jiading
+  date: "1645"
+  title: 扬州十日与嘉定三屠
+  category: 战争
+  tags: [清初, 忠烈]
+  importance: 4
+  summary: 清军豫亲王多铎攻破扬州，史可法壮烈殉国，清军屠城十日；后因剃发令又于嘉定实施三屠，江南抗清惨烈。
+  confidence: 确定
+  sources: [明季南略, 扬州十日记]
+
+
 - id: zhengchenggong-taiwan-1662
   date: "1662"
   title: 郑成功收复台湾
@@ -16,6 +27,27 @@
   confidence: 确定
   sources: [清史稿·郑成功传]
   tags: [边疆]
+
+- id: kangxi-aobai
+  date: "1669"
+  title: 康熙智擒鳌拜
+  category: 政治
+  tags: [清朝, 典故]
+  importance: 4
+  summary: 康熙帝十六岁时训练布库少年，于武英殿设伏智擒专权跋扈辅政大臣鳌拜，亲理朝政。
+  confidence: 确定
+  sources: [清史稿·圣祖本纪]
+
+- id: sanfan-zhiluan
+  date: "1673"
+  title: 康熙平定三藩之乱
+
+  category: 战争
+  tags: [清朝, 削藩]
+  importance: 4
+  summary: 吴三桂等三藩举兵叛清，康熙帝历时八年削平三藩，巩固大一统国家版图。
+  confidence: 确定
+  sources: [清史稿·圣祖本纪]
 
 - id: taiwan-incorporation-1683
   date: "1683"
@@ -45,6 +77,16 @@
   sources: [清史稿·高宗本纪]
   tags: [外交]
 
+- id: humen-xiaoyan
+  date: "1839-06"
+  title: 林则徐虎门销烟
+  category: 政治
+  tags: [禁烟, 近代史序幕]
+  importance: 5
+  summary: 钦差大臣林则徐在广州虎门海滩当众销毁英国毒害中国百姓之鸦片，彰显禁烟决心。
+  confidence: 确定
+  sources: [清史稿·林则徐传]
+
 - id: opium-war-1840
   date: "1840"
   title: 鸦片战争
@@ -53,6 +95,7 @@
   summary: 英国发动鸦片战争，清朝战败签订《南京条约》，中国开始沦为半殖民地半封建社会。
   confidence: 确定
   sources: [清史稿·宣宗本纪]
+
 
 - id: taiping-rebellion-1851
   date: "1851"

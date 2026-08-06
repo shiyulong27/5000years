@@ -25,6 +25,36 @@
   confidence: 有争议
   dispute: 西行年份诸传不一，此处从贞观三年说。
 
+- id: fangmou-duduan
+  date: "0630"
+  title: 房谋杜断，贞观名相
+  category: 政治
+  tags: [贞观之治, 典故]
+  importance: 4
+  summary: 宰相房玄龄善于谋划，杜如晦善于决断，二人同心辅佐唐太宗开创贞观盛世，史称「房谋杜断」。
+  confidence: 确定
+  sources: [旧唐书·房玄龄传]
+
+- id: wencheng-tibet
+  date: "0641"
+  title: 文成公主入藏
+  category: 政治
+  tags: [唐蕃, 民族, 和亲]
+  importance: 4
+  summary: 唐太宗遣文成公主嫁吐蕃赞普松赞干布，带去先进中原文化与技术，促进汉藏文化交流。
+  confidence: 确定
+  sources: [旧唐书·吐蕃传]
+
+- id: weizheng-zhijian
+  date: "0643"
+  title: 魏征逝世，太宗痛失人镜
+  category: 政治
+  tags: [贞观之治, 典故]
+  importance: 4
+  summary: 谏议大夫魏征直言敢谏几数百事，卒后太宗恸哭称「以铜为镜可以正衣冠，以人为镜可以明得失，魏征没朕亡一镜矣」。
+  confidence: 确定
+  sources: [旧唐书·魏征传]
+
 - id: wuzetian-690
   date: "0690"
   title: 武则天称帝，改国号周
@@ -42,6 +72,27 @@
   summary: 唐玄宗改元开元，励精图治，社会经济文化臻于极盛，史称开元盛世。
   confidence: 确定
 
+- id: libai-tuoxue
+  date: "0742"
+  title: 李白供奉翰林，高力士脱靴
+  category: 文化
+  tags: [李白, 典故]
+  importance: 4
+  summary: 李白入长安供奉翰林，玄宗沉醉沉香亭召作《清平调》，李白醉中命权宦高力士脱靴、杨国忠研墨，彰显诗仙傲骨。
+  confidence: 确定
+  sources: [旧唐书·李白传]
+
+- id: jianzhen-japan
+  date: "0753"
+  title: 鉴真东渡日本
+
+  category: 文化
+  tags: [中外交流, 佛教]
+  importance: 4
+  summary: 扬州高僧鉴真历经五次失败、双目失明后第六次东渡成功抵达日本，传授佛法与医药建筑文化。
+  confidence: 确定
+  sources: [唐大和上东征传]
+
 - id: anshi-755
   date: "0755"
   title: 安史之乱爆发
@@ -50,6 +101,18 @@
   summary: 安禄山、史思明起兵范阳，唐由盛转衰，此后藩镇割据、国势日蹙。
   confidence: 确定
   sources: [旧唐书·玄宗纪]
+
+- id: guoziyi-huihe
+  date: "0765"
+  title: 郭子仪单骑见回纥
+  category: 政治
+  tags: [唐朝, 典故]
+  importance: 4
+  summary: 吐蕃与回纥联合犯边，八十岁老将郭子仪单骑入回纥军营脱帽与汗相见，回纥退兵并反戈击吐蕃。
+  confidence: 确定
+  sources: [旧唐书·郭子仪传]
+
+
 
 - id: two-tax-780
   date: "0780"
@@ -69,9 +132,12 @@
   confidence: 确定
 
 - id: huangchao-875
-  date: "0875"
-  title: 黄巢起义
+  date: "0880-12"
+  title: 黄巢攻陷长安，建大齐
   category: 战争
+  tags: [唐末起义, 典故]
   importance: 4
-  summary: 黄巢聚众起义，转战大半个中国，攻陷长安，虽败而唐室元气大伤。
+  summary: 黄巢起义军转战千里攻陷长安，唐僖宗逃蜀，黄巢登基建大齐，留「待到秋来九月八，冲天香阵透长安」之名句。
   confidence: 确定
+  sources: [旧唐书·黄巢传]
+

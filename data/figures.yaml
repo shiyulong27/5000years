@@ -7,14 +7,43 @@
 # 默认不显示，由工具栏开关控制——人物数量将远多于事件，
 # 常驻显示会淹没长卷本身。
 
-- id: kongzi
-  name: 孔子
-  birth: "-0551"
-  death: "-0479"
-  field: 思想
-  note: 儒家创始人，其学说此后两千余年为中国思想之主干
+- id: jiangziya
+  name: 姜尚
+  birth: "-1120"
+  death: "-1015"
+  field: 政治
+  note: 姜太公，齐国开国始祖，渭水钓鱼遇周文王，辅佐武王伐纣
   confidence: 有争议
-  dispute: 生年有前551与前552两说，《史记》与《公羊传》所载不同。
+  dispute: 生卒年与享寿百余岁皆为史籍传说推算。
+
+- id: zhougong
+  name: 周公旦
+  birth: "-1090"
+  death: "-1032"
+  field: 政治
+  note: 西周圣人，吐哺握发辅佐成王，平三监之乱，制礼作乐
+  confidence: 有争议
+  dispute: 生卒年据史料推算。
+
+- id: guanzhong
+
+  name: 管仲
+  birth: "-0723"
+  death: "-0645"
+  field: 政治
+  note: 辅佐齐桓公尊王攘夷，成就春秋首霸
+  confidence: 有争议
+  dispute: 生卒年为后世史家推定。
+
+- id: bailixi
+  name: 百里奚
+  birth: "-0725"
+  death: "-0621"
+  field: 政治
+  note: 秦国贤相，用五张羊皮赎还，辅佐秦穆公霸西戎
+  confidence: 有争议
+  dispute: 生卒年为后世史家推算。
+
 
 - id: laozi
   name: 老子
@@ -27,12 +56,230 @@
     生卒年全无定说，其人是否存在亦有争议。《史记》并列三种说法，
     司马迁自己也无法断定。此处年代纯为在长卷上占位。
 
+- id: sunwu
+  name: 孙武
+  birth: "-0545"
+  death: "-0470"
+  field: 军事
+  note: 兵圣，著《孙子兵法》，吴宫演兵，辅佐阖闾大破楚军
+  confidence: 有争议
+  dispute: 生卒年据史料推算。
+
+- id: kongzi
+  name: 孔子
+  birth: "-0551"
+  death: "-0479"
+  field: 思想
+  note: 儒家创始人，其学说此后两千余年为中国思想之主干
+  confidence: 有争议
+  dispute: 生年有前551与前552两说，《史记》与《公羊传》所载不同。
+
+- id: wuzixu
+  name: 伍子胥
+  birth: "-0559"
+  death: "-0484"
+  field: 政治
+  note: 吴国大夫，辅助吴王破楚入郢，掘墓鞭尸报仇，后忠谏赐死
+  confidence: 有争议
+  dispute: 生卒年据典籍推算。
+
+- id: goujian
+  name: 勾践
+  birth: "-0520"
+  death: "-0464"
+  field: 政治
+  note: 越国君主，卧薪尝胆，灭吴称霸
+  confidence: 有争议
+  dispute: 生卒年根据典籍推算。
+
+- id: wuqi
+  name: 吴起
+  birth: "-0440"
+  death: "-0381"
+  field: 军事
+  note: 兵家亚圣，作《吴子兵法》，创魏武卒，后于楚国变法
+  confidence: 有争议
+  dispute: 生卒年据史料推定。
+
+
+- id: zhuangzi
+  name: 庄子
+  birth: "-0369"
+  death: "-0286"
+  field: 思想
+  note: 道家代表人物，著《庄子》，创庄周梦蝶、逍遥游思想
+  confidence: 有争议
+  dispute: 生卒年据史料推算。
+
+- id: sunbin
+  name: 孙膑
+  birth: "-0380"
+  death: "-0316"
+  field: 军事
+  note: 齐国军事家，著《孙膑兵法》，指挥桂陵之战与马陵之战
+  confidence: 有争议
+  dispute: 生卒年无确切记载，系后世推估。
+
+- id: pangjuan
+  name: 庞涓
+  birth: "-0380"
+  death: "-0341"
+  field: 军事
+  note: 魏国名将，陷害同门孙膑致其残废，后于马陵之战中伏自刎
+  confidence: 有争议
+  dispute: 生卒年据典籍推算。
+
+
+- id: zhangyi
+  name: 张仪
+  birth: "-0370"
+  death: "-0309"
+  field: 政治
+  note: 纵横家鼻祖，秦国名相，首创连横破合纵，戏诱楚怀王
+  confidence: 有争议
+  dispute: 生卒年据史料推定。
+
+- id: zhaowanglingwang
+  name: 赵武灵王
+  birth: "-0340"
+  death: "-0295"
+  field: 政治
+  note: 赵国雄主，推行胡服骑射改革，组强骑兵灭中山国
+  confidence: 有争议
+  dispute: 生卒年据史料推定。
+
+- id: mengchangjun
+  name: 孟尝君
+  birth: "-0350"
+  death: "-0279"
+  field: 政治
+  note: 齐相田文，战国四公子之一，广招门客，鸡鸣狗盗脱秦
+  confidence: 有争议
+  dispute: 生卒年为后世史家推定。
+
+- id: quyuan
+  name: 屈原
+  birth: "-0340"
+  death: "-0278"
+  field: 文学
+  note: 楚国诗人，楚辞之祖，著《离骚》《九歌》
+  confidence: 有争议
+  dispute: 生卒年有多种推定说法。
+
+- id: yueyi
+  name: 乐毅
+  birth: "-0330"
+  death: "-0270"
+  field: 军事
+  note: 燕国名将，统领五国伐齐攻破齐国七十余城，封昌国君
+  confidence: 有争议
+  dispute: 生卒年据史料推定。
+
+
+- id: linxiangru
+  name: 蔺相如
+  birth: "-0320"
+  death: "-0260"
+  field: 政治
+  note: 赵国名臣，完璧归赵、渑池会相抗强秦，与廉颇相欢
+  confidence: 有争议
+  dispute: 生卒年为后世史家根据典籍推定。
+
+- id: lianpo
+  name: 廉颇
+  birth: "-0320"
+  death: "-0242"
+  field: 军事
+  note: 赵国名将，长平之战坚守固防，后负荆请罪
+  confidence: 有争议
+  dispute: 生卒年据史料估计。
+
+- id: zhaoshe
+  name: 赵奢
+  birth: "-0310"
+  death: "-0240"
+  field: 军事
+  note: 赵国名将，阏与之战狭路相逢胜秦军，封马服君
+  confidence: 有争议
+  dispute: 生卒年据史料推定。
+
+- id: baiqi
+  name: 白起
+  birth: "-0310"
+  death: "-0257"
+  field: 军事
+  note: 秦国战神、武安君，长平大破赵军，战功赫赫
+  confidence: 有争议
+  dispute: 生年无确载，据典籍推算。
+
+- id: tiandan
+  name: 田单
+  birth: "-0310"
+  death: "-0240"
+  field: 军事
+  note: 齐国名将，守即墨摆火牛阵大破燕军收复齐国失地，封安平君
+  confidence: 有争议
+  dispute: 生卒年据史料推定。
+
+
+- id: lishiqi
+  name: 郦食其
+  birth: "-0268"
+  death: "-0203"
+  field: 政治
+  note: 汉初高徒说客，单骑说降齐王田广，下齐七十余城
+  confidence: 有争议
+  dispute: 生卒年据典籍推定。
+
 - id: qinshihuang
   name: 秦始皇
   birth: "-0259"
   death: "-0210"
   field: 政治
   note: 首位皇帝，废分封行郡县
+  confidence: 确定
+
+
+- id: jingke
+  name: 荆轲
+  birth: "-0255"
+  death: "-0227"
+  field: 政治
+  note: 战国刺客，受燕太子丹之托刺秦王政，功败身死
+  confidence: 有争议
+  dispute: 生年无确切记载，系后世根据典籍推定。
+
+- id: xiangyu
+  name: 项羽
+  birth: "-0232"
+  death: "-0202"
+  field: 军事
+  note: 西楚霸王，巨鹿大破秦军，后于垓下兵败自刎
+  confidence: 确定
+
+- id: hanxin
+  name: 韩信
+  birth: "-0231"
+  death: "-0196"
+  field: 军事
+  note: 汉初兵仙，率军平定魏赵燕齐，垓下十面埋伏灭楚
+  confidence: 有争议
+  dispute: 生年系后世推算。
+
+- id: zhouyafu
+  name: 周亚夫
+  birth: "-0200"
+  death: "-0143"
+  field: 军事
+  note: 西汉名将，细柳营军纪严明，平定吴楚七国之乱
+  confidence: 确定
+
+- id: simaxiangru
+  name: 司马相如
+  birth: "-0179"
+  death: "-0117"
+  field: 文学
+  note: 汉赋大家，作《子虚赋》《上林赋》，弹《凤求凰》聘卓文君
   confidence: 确定
 
 - id: simaqian
@@ -43,6 +290,80 @@
   note: 著《史记》，纪传体通史之祖
   confidence: 有争议
   dispute: 生年有前145与前135两说，卒年更无明确记载。
+
+- id: huoqubing
+  name: 霍去病
+  birth: "-0140"
+  death: "-0117"
+  field: 军事
+  note: 西汉名将，大破匈奴封狼居胥，年仅二十四岁卒
+  confidence: 确定
+
+- id: huoguang
+  name: 霍光
+  birth: "-0130"
+  death: "-0068"
+  field: 政治
+  note: 西汉名臣、权臣，辅政二十载，废立昌邑王刘贺，开宣帝中兴
+  confidence: 确定
+
+- id: suwu
+  name: 苏武
+  birth: "-0140"
+  death: "-0060"
+  field: 政治
+  note: 西汉大臣，出使匈奴被扣，北海牧羊十九载持节不屈
+  confidence: 确定
+
+
+- id: wangzhaojun
+  name: 王昭君
+  birth: "-0054"
+  death: "-0019"
+  field: 政治
+  note: 汉代和亲宫女，出塞嫁匈奴呼韩邪单于，保边境数十年和平
+  confidence: 有争议
+  dispute: 生卒年据史料估计。
+
+- id: mayuan
+  name: 马援
+  birth: "-0014"
+  death: "0049"
+  field: 军事
+  note: 东汉伏波将军，马革裹尸，平定交趾与武陵蛮
+  confidence: 确定
+
+- id: dengyu
+  name: 邓禹
+  birth: "0002"
+  death: "0058"
+  field: 军事
+  note: 东汉开国元勋，云台二十八将之首，仗策追随光武中兴
+  confidence: 确定
+
+- id: banchao
+  name: 班超
+  birth: "0032"
+  death: "0102"
+  field: 军事
+  note: 东汉名将、外交家，投笔从戎，经营西域三十余载
+  confidence: 确定
+
+- id: zhangheng
+  name: 张衡
+  birth: "0078"
+  death: "0139"
+  field: 科技
+  note: 东汉科学家、天文学家，发明地动仪与浑天仪
+  confidence: 确定
+
+- id: huatuo
+  name: 华佗
+  birth: "0145"
+  death: "0208"
+  field: 科技
+  note: 东汉神医，精通外科，创麻沸散与五禽戏
+  confidence: 确定
 
 - id: caocao
   name: 曹操
@@ -60,6 +381,39 @@
   note: 蜀汉丞相，六出祁山
   confidence: 确定
 
+- id: caozhi
+  name: 曹植
+  birth: "0192"
+  death: "0232"
+  field: 文学
+  note: 建安文学代表，「才高八斗」，作《洛神赋》《七步诗》
+  confidence: 确定
+
+- id: jikang
+  name: 嵇康
+  birth: "0223"
+  death: "0262"
+  field: 文学
+  note: 竹林七贤之一，临刑弹《广陵散》，魏晋风骨代表
+  confidence: 确定
+
+
+- id: simayi
+  name: 司马懿
+  birth: "0179"
+  death: "0251"
+  field: 军事
+  note: 曹魏重臣，高平陵之变掌握朝政，为西晋奠基
+  confidence: 确定
+
+- id: wangdao
+  name: 王导
+  birth: "0276"
+  death: "0339"
+  field: 政治
+  note: 东晋开国宰相，辅助司马睿衣冠南渡，安定江左，时称「王与马共天下」
+  confidence: 确定
+
 - id: wangxizhi
   name: 王羲之
   birth: "0303"
@@ -69,6 +423,31 @@
   confidence: 有争议
   dispute: 生卒年有 303–361 与 321–379 两说，学界未有定论。
 
+- id: xiean
+  name: 谢安
+  birth: "0320"
+  death: "0385"
+  field: 政治
+  note: 东晋名士、宰相，运筹帷幄指挥淝水之战以少胜多
+  confidence: 确定
+
+- id: fujian
+  name: 苻坚
+  birth: "0338"
+  death: "0385"
+  field: 政治
+  note: 前秦君主，统一北方，投鞭断流南征东晋，溃于淝水
+  confidence: 确定
+
+- id: gukaizhi
+  name: 顾恺之
+  birth: "0348"
+  death: "0409"
+  field: 艺术
+  note: 东晋画家，创高古游丝描，画《女史箴图》《洛神赋图》
+  confidence: 有争议
+  dispute: 生卒年为后世根据典籍推定。
+
 - id: taoyuanming
   name: 陶渊明
   birth: "0365"
@@ -77,6 +456,48 @@
   note: 田园诗之宗，不为五斗米折腰
   confidence: 有争议
   dispute: 生年有 365 与 372 等说。
+
+
+- id: mulan
+  name: 花木兰
+  birth: "0412"
+  death: "0470"
+  field: 军事
+  note: 北朝巾帼英雄，女扮男装替父从军击破柔然
+  confidence: 传说
+  dispute: 木兰事迹见于《木兰诗》，生卒年与人物真实性为传统文学推测。
+
+- id: weizheng
+  name: 魏征
+  birth: "0580"
+  death: "0643"
+  field: 政治
+  note: 唐代名臣，直言敢谏，唐太宗赞为「以人为镜可以明得失」
+  confidence: 确定
+
+- id: xuanzang
+  name: 玄奘
+  birth: "0602"
+  death: "0664"
+  field: 思想
+  note: 西行求法十七年，译经传法，著《大唐西域记》
+  confidence: 确定
+
+- id: jianzhen
+  name: 鉴真
+  birth: "0688"
+  death: "0763"
+  field: 思想
+  note: 扬州高僧，六次东渡日本弘扬佛法与大唐文化
+  confidence: 确定
+
+- id: guoziyi
+  name: 郭子仪
+  birth: "0697"
+  death: "0781"
+  field: 军事
+  note: 唐代名将，平定安史之乱，单骑见回纥退敌，功高盖世
+  confidence: 确定
 
 - id: libai
   name: 李白
@@ -95,6 +516,7 @@
   confidence: 确定
 
 - id: wangwei
+
   name: 王维
   birth: "0701"
   death: "0761"
@@ -103,13 +525,130 @@
   confidence: 有争议
   dispute: 生年有 699 与 701 两说。
 
-- id: xuanzang
-  name: 玄奘
-  birth: "0602"
-  death: "0664"
-  field: 思想
-  note: 西行求法十七年，译经传法，著《大唐西域记》
+- id: chairong
+  name: 柴荣
+  birth: "0921"
+  death: "0959"
+  field: 政治
+  note: 后周世宗，五代名君，高平大捷破北汉辽军，为宋统一奠基
   confidence: 确定
+
+- id: zhaokuangyin
+  name: 赵匡胤
+  birth: "0927"
+  death: "0976"
+  field: 政治
+  note: 宋太祖，陈桥兵变黄袍加身建北宋，杯酒释兵权强化集权
+  confidence: 确定
+
+
+- id: yangye
+  name: 杨业
+  birth: "0932"
+  death: "0986"
+  field: 军事
+  note: 北宋名将，杨无敌，雍熙北伐陷孤军弹尽粮绝撞李陵碑殉国
+  confidence: 确定
+
+- id: liyu
+  name: 李煜
+  birth: "0937"
+  death: "0978"
+  field: 文学
+  note: 南唐后主，词中之帝，作《虞美人》《相见欢》
+  confidence: 确定
+
+- id: kouzhun
+  name: 寇准
+  birth: "0961"
+  death: "1023"
+  field: 政治
+  note: 北宋贤相，澶渊之盟主战，促真宗亲征御敌保宋辽百年和平
+  confidence: 确定
+
+- id: fanzhongyan
+  name: 范仲淹
+  birth: "0989"
+  death: "1052"
+  field: 政治
+  note: 北宋名臣，主持庆历新政，作《岳阳楼记》立「先天下之忧而忧」高志
+  confidence: 确定
+
+- id: baozheng
+  name: 包拯
+  birth: "0999"
+  death: "1062"
+  field: 政治
+  note: 北宋名臣，包青天，知开封府铁面无私，抑强扶弱
+  confidence: 确定
+
+
+- id: diqing
+  name: 狄青
+  birth: "1008"
+  death: "1057"
+  field: 军事
+  note: 北宋名将，面涅佩铜面具，大年三十夜袭昆仑关
+  confidence: 确定
+
+- id: sushi
+  name: 苏轼
+  birth: "1037"
+  death: "1101"
+  field: 文学
+  note: 苏东坡，诗词文书画皆精，旷达豪放之宗
+  confidence: 确定
+
+
+- id: liqingzhao
+  name: 李清照
+  birth: "1084"
+  death: "1155"
+  field: 文学
+  note: 婉约词宗，易安体传世，南渡后词风转沉郁
+  confidence: 有争议
+  dispute: 卒年无确载，约 1155 为推定；晚年流寓行迹及再嫁与否亦有争议。
+
+- id: yuefei
+  name: 岳飞
+  birth: "1103"
+  death: "1142"
+  field: 军事
+  note: 南宋抗金名将，精忠报国，郾城大捷，被秦桧构陷害死
+  confidence: 确定
+
+- id: zhuxi
+  name: 朱熹
+  birth: "1130"
+  death: "1200"
+  field: 思想
+  note: 理学集大成者，四书集注，此后数百年科举之标的
+  confidence: 确定
+
+- id: guoshoujing
+  name: 郭守敬
+  birth: "1231"
+  death: "1316"
+  field: 科技
+  note: 元代科学家、水利专家，主持开通通惠河并创制《授时历》
+  confidence: 确定
+
+- id: luxiufu
+  name: 陆秀夫
+  birth: "1236"
+  death: "1279"
+  field: 政治
+  note: 南宋丞相，崖山海战背负八岁少帝赵昺投海殉国
+  confidence: 确定
+
+- id: wentianxiang
+  name: 文天祥
+  birth: "1236"
+  death: "1283"
+  field: 政治
+  note: 南宋丞相，宁死不降元，《过零丁洋》《正气歌》传世
+  confidence: 确定
+
 
 - id: guanhanqing
   name: 关汉卿
@@ -120,6 +659,22 @@
   confidence: 有争议
   dispute: 生卒年无确载，此处为约值。
 
+- id: liubowen
+  name: 刘基
+  birth: "1311"
+  death: "1375"
+  field: 政治
+  note: 刘伯温，明朝开国勋臣，神机妙算，运筹帷幄助朱元璋平定天下
+  confidence: 确定
+
+- id: yuqian
+  name: 于谦
+  birth: "1398"
+  death: "1457"
+  field: 政治
+  note: 明代名臣，土木堡之变后主持北京保卫战击退瓦剌
+  confidence: 确定
+
 - id: wangyangming
   name: 王阳明
   birth: "1472"
@@ -128,12 +683,45 @@
   note: 心学集大成者，「知行合一」「致良知」
   confidence: 确定
 
+- id: hairui
+  name: 海瑞
+  birth: "1514"
+  death: "1587"
+  field: 政治
+  note: 明代著名清官，备死上《治安疏》抨击朝政，刚正不阿
+  confidence: 确定
+
 - id: lishizhen
   name: 李时珍
   birth: "1518"
   death: "1593"
   field: 科技
   note: 著《本草纲目》，集本草学之大成
+  confidence: 确定
+
+
+- id: qijiguang
+  name: 戚继光
+  birth: "1528"
+  death: "1588"
+  field: 军事
+  note: 明代抗倭名将，创戚家军与鸳鸯阵，肃清东南沿海倭患
+  confidence: 确定
+
+- id: xuxiake
+  name: 徐霞客
+  birth: "1587"
+  death: "1641"
+  field: 科技
+  note: 明代地理学家，游历大半中国，撰《徐霞客游记》
+  confidence: 确定
+
+- id: zhengchenggong
+  name: 郑成功
+  birth: "1624"
+  death: "1662"
+  field: 军事
+  note: 民族英雄，击败荷兰殖民者收复台湾，建立明郑政权
   confidence: 确定
 
 - id: caoxueqin
@@ -145,29 +733,20 @@
   confidence: 有争议
   dispute: 生卒年无定论，生年有 1715 与 1724 两说，卒年亦有 1763 与 1764 说，此处为约值。
 
-- id: sushi
-  name: 苏轼
-  birth: "1037"
-  death: "1101"
-  field: 文学
-  note: 苏东坡，诗词文书画皆精，旷达豪放之宗
+- id: linzexu
+  name: 林则徐
+  birth: "1785"
+  death: "1850"
+  field: 政治
+  note: 民族英雄，主导虎门销烟，睁眼看世界的第一人
   confidence: 确定
 
-- id: liqingzhao
-  name: 李清照
-  birth: "1084"
-  death: "1155"
-  field: 文学
-  note: 婉约词宗，易安体传世，南渡后词风转沉郁
-  confidence: 有争议
-  dispute: 卒年无确载，约 1155 为推定；晚年流寓行迹及再嫁与否亦有争议。
-
-- id: zhuxi
-  name: 朱熹
-  birth: "1130"
-  death: "1200"
-  field: 思想
-  note: 理学集大成者，四书集注，此后数百年科举之标的
+- id: sunzhongshan
+  name: 孙中山
+  birth: "1866"
+  death: "1925"
+  field: 政治
+  note: 伟大的民主革命先行者，领导辛亥革命，推翻清朝封建统治，创中华民国
   confidence: 确定
 
 - id: luxun
@@ -177,3 +756,4 @@
   field: 文学
   note: 新文学运动旗手，以《呐喊》《彷徨》等解剖国民性
   confidence: 确定
+

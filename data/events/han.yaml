@@ -1,9 +1,60 @@
+- id: yuefa-sanzhang
+  date: "-0206-10"
+  title: 刘邦入咸阳，约法三章
+  category: 政治
+  tags: [楚汉, 典故]
+  importance: 4
+  summary: 刘邦先入关中，召父老约法三章：「杀人者死，伤人及盗抵罪」，大得关中民心。
+  confidence: 确定
+  sources: [史记·高祖本纪]
+
+- id: hongmen-yan
+  date: "-0206-12"
+  title: 鸿门宴
+  category: 政治
+  tags: [楚汉, 典故]
+  importance: 5
+  summary: 刘邦赴项羽鸿门宴，范增设局项庄舞剑意在沛公，刘邦在张良、樊哙掩护下脱险。
+  confidence: 确定
+  sources: [史记·项羽本纪]
+
+- id: xiaohe-zhai-hanxin
+  date: "-0206"
+  title: 萧何月下追韩信
+  category: 政治
+  tags: [楚汉, 用人]
+  importance: 4
+  summary: 韩信未获重用连夜骑马出走，萧何月下连夜追还，并力劝刘邦拜韩信为大将。
+  confidence: 确定
+  sources: [史记·淮阴侯列传]
+
+- id: lishiqi-shuqi
+  date: "-0203"
+  title: 郦食其游说下齐七十余城
+  category: 政治
+  tags: [楚汉, 纵横说客]
+  importance: 4
+  summary: 高祖说客郦食其单骑赴齐，凭凭凭辩说下齐王田广停战降汉，不费一兵一卒收复齐国七十余城。
+  confidence: 确定
+  sources: [史记·郦生陆贾列传]
+
+
+- id: gaixia-zhiwei
+  date: "-0202-01"
+  title: 楚汉相争，垓下之围
+  category: 战争
+  tags: [楚汉, 汉灭楚]
+  importance: 5
+  summary: 汉军围项羽于垓下，夜闻四面楚歌，项羽乌江自刎，楚汉战争结束。
+  confidence: 确定
+  sources: [史记·项羽本纪]
+
 - id: han-founding-202bc
-  date: "-0202"
+  date: "-0202-02"
   title: 刘邦称帝，汉朝建立
   category: 政治
   importance: 5
-  summary: 垓下破项羽，即皇帝位于定陶，定都长安。
+  summary: 垓下破项羽后，刘邦即皇帝位于定陶，定都长安。
   confidence: 确定
   sources: [史记·高祖本纪]
 
@@ -14,6 +65,46 @@
   importance: 4
   summary: 与民休息，轻徭薄赋，府库充盈，为武帝用兵积蓄国力。
   confidence: 确定
+
+- id: zhouyafu-xiliu
+  date: "-0158"
+  title: 周亚夫军细柳，严明军纪
+  category: 政治
+  tags: [军纪, 西汉]
+  importance: 3
+  summary: 匈奴入侵，文帝亲劳军，至细柳营按辔徐行，军门都尉称「军中闻将军令，不闻天子之诏」，文帝大加称赞「此真将军矣」。
+  confidence: 确定
+  sources: [史记·绛侯周勃世家]
+
+- id: qiguo-zhiluan
+  date: "-0154"
+  title: 吴楚七国之乱
+  category: 政治
+  tags: [削藩, 西汉]
+  importance: 4
+  summary: 汉景帝采纳晁错建议削藩，吴王刘濞等七国以「诛晁错清君侧」起兵，周亚夫三月平乱。
+  confidence: 确定
+  sources: [汉书·荆燕吴传]
+
+- id: simaxiangru-zhuowenjun
+  date: "-0142"
+  title: 司马相如弹《凤求凰》聘卓文君
+  category: 文化
+  tags: [汉赋, 典故]
+  importance: 3
+  summary: 蜀中才子司马相如弹《凤求凰》琴曲，与富商之女卓文君相爱夜奔临邛开酒肆当帆，传为千古佳话。
+  confidence: 确定
+  sources: [史记·司马相如列传]
+
+- id: liguang-feijiangjun
+  date: "-0129"
+  title: 飞将军李广击匈奴
+  category: 战争
+  tags: [西汉, 典故]
+  importance: 4
+  summary: 汉将李广历仕文景武三朝，智勇过人射石陷矢，力抗匈奴，匈奴号曰「飞将军」不敢犯。
+  confidence: 确定
+  sources: [史记·李将军列传]
 
 - id: zhangqian-138bc
   date: "-0138"
@@ -28,6 +119,26 @@
     学界至今未有定论。此处采前138年说。
   sources: [汉书·张骞传]
 
+- id: fenglang-juxu
+  date: "-0119"
+  title: 漠北之战，霍去病封狼居胥
+  category: 战争
+  tags: [匈奴, 汉武帝]
+  importance: 5
+  summary: 卫青、霍去病分领大军击匈奴，霍去病大破匈奴左贤王于漠北，封狼居胥山。
+  confidence: 确定
+  sources: [史记·卫将军骠骑列传]
+
+- id: suwu-muyang
+  date: "-0100"
+  title: 苏武牧羊，北海持节
+  category: 政治
+  tags: [气节, 典故]
+  importance: 4
+  summary: 汉使苏武出使匈奴被扣，移牧北海十九载，持汉节不屈，终获归汉。
+  confidence: 确定
+  sources: [汉书·苏武传]
+
 - id: sima-shiji
   date: "-0091"
   title: 司马迁著《史记》
@@ -40,6 +151,39 @@
     推定。迁卒后书有亡缺，褚少孙等补之，今本非尽出迁手。
   sources: [汉书·司马迁传]
 
+- id: hanwudi-zuiji
+  date: "-0089"
+  title: 汉武帝下《轮台罪己诏》
+  category: 政治
+  tags: [西汉, 典故]
+  importance: 4
+  summary: 汉武帝晚年反思多年征伐财力枯竭，下诏深陈既往之悔，停用兵屯田，封丞相为富民侯，转入休养生息。
+  confidence: 确定
+  sources: [汉书·西域传]
+
+- id: huoguang-fuzheng
+  date: "-0074"
+  title: 霍光秉政，废立昌邑王
+
+  category: 政治
+  tags: [西汉, 权臣]
+  importance: 4
+  summary: 汉昭帝崩无子，大司马霍光迎立昌邑王刘贺，见其淫乱二十七日即废之，另立汉宣帝刘询，开宣帝中兴。
+  confidence: 确定
+  sources: [汉书·霍光传]
+
+- id: zhaojun-chusai
+  date: "-0033"
+  title: 昭君出塞
+
+  category: 政治
+  tags: [外交, 和亲]
+  importance: 4
+  summary: 汉元帝以宫女王昭君嫁呼韩邪单于，边境维持了半个多世纪的和平安定。
+  confidence: 确定
+  sources: [汉书·匈奴传]
+
+
 - id: wangmang-9
   date: "0009"
   title: 王莽篡汉，建立新朝
@@ -48,6 +192,16 @@
   summary: 外戚代汉自立，行托古改制，十五年而亡。
   confidence: 确定
 
+- id: kunyang-zhizhan
+  date: "0023-06"
+  title: 昆阳之战，刘秀大破王莽军
+  category: 战争
+  tags: [决定性战役, 绿林军]
+  importance: 5
+  summary: 刘秀率轻骑三千突袭王莽王寻、王邑四十万大军于昆阳城下，斩王寻，王莽主力精锐尽歼，新朝覆灭。
+  confidence: 确定
+  sources: [后汉书·光武帝纪]
+
 - id: guangwu-25
   date: "0025"
   title: 刘秀称帝，东汉建立
@@ -55,6 +209,38 @@
   importance: 5
   summary: 定都洛阳，史称光武中兴。
   confidence: 确定
+
+
+- id: mayuan-guoshi
+  date: "0044"
+  title: 马援马革裹尸
+  category: 战争
+  tags: [东汉, 典故]
+  importance: 3
+  summary: 伏波将军马援远征交趾、武陵，常谓「男儿当死于边野，以马革裹尸还葬」，威震边疆。
+  confidence: 确定
+  sources: [后汉书·马援传]
+
+- id: yuntai-28
+  date: "0060"
+  title: 汉明帝图画云台二十八将
+  category: 政治
+  tags: [东汉, 功臣]
+  importance: 3
+  summary: 汉明帝感念东汉中兴功勋，于洛阳南宫云台阁图画邓禹、马武等二十八位中兴名将画像。
+  confidence: 确定
+  sources: [后汉书·二十八将传]
+
+- id: banchao-toubi
+  date: "0073"
+  title: 班超投笔从戎，平定西域
+  category: 政治
+  tags: [外交, 东汉, 典故]
+  importance: 4
+  summary: 班超投笔从戎出使西域，以「不入虎穴焉得虎子」智歼匈奴使者，经略西域三十余载。
+  confidence: 确定
+  sources: [后汉书·班超传]
+
 
 - id: cailun-paper
   date: "0105"
@@ -66,6 +252,18 @@
   confidence: 确定
   sources: [后汉书·蔡伦传]
 
+- id: zhangheng-didongyi
+  date: "0132"
+  title: 张衡发明地动仪
+  category: 文化
+  tags: [科技, 地质]
+  importance: 4
+  summary: 东汉科学家张衡发明候风地动仪，于洛阳测得陇西地震，为世界最早预警地震仪器。
+  confidence: 确定
+  sources: [后汉书·张衡传]
+
+
+
 - id: huangjin-184
   date: "0184"
   title: 黄巾起义
@@ -73,6 +271,58 @@
   importance: 4
   summary: 张角以太平道聚众而起，东汉自此名存实亡。
   confidence: 确定
+
+- id: dongzhuo-changan
+  date: "0189"
+  title: 董卓入洛阳秉政，诸侯起兵讨董
+  category: 政治
+  tags: [东汉末年, 汉室衰微]
+  importance: 4
+  summary: 董卓率凉州军入洛阳废少帝立献帝，专横残暴焚毁洛阳迁都长安，袁绍等十八路诸侯起兵讨伐。
+  confidence: 确定
+  sources: [后汉书·董卓传]
+
+
+- id: qingmei-zhujiu
+  date: "0199-06"
+  title: 曹操刘备青梅煮酒论英雄
+  category: 政治
+  tags: [三国, 典故]
+  importance: 4
+  summary: 曹操于许昌设盘置青梅煮酒与刘备共饮，论天下英雄称「天下英雄唯使君与操耳」，刘备闻雷巧落匙。
+  confidence: 确定
+  sources: [三国志·先主传]
+
+- id: guanyu-qianlizou
+  date: "0200-04"
+  title: 关羽挂印封金，千里走单骑
+  category: 战争
+  tags: [三国, 典故]
+  importance: 4
+  summary: 关羽斩颜良诛文丑报曹操恩后挂印封金离许昌，护送甘甘二夫人过五关斩六将寻找刘备。
+  confidence: 确定
+  sources: [三国志·关羽传]
+
+- id: guandu-zhizhan
+  date: "0200-10"
+  title: 官渡之战，许攸投曹夜袭乌巢
+  category: 战争
+  tags: [决定性战役, 曹操]
+  importance: 5
+  summary: 曹操与袁绍相持于官渡，采纳许攸奇计亲率精骑奇袭乌巢烧毁袁军粮草，以少胜多击败袁绍奠定北方统一。
+  confidence: 确定
+  sources: [三国志·武帝纪]
+
+
+- id: huatuo-mafeisan
+  date: "0208-01"
+  title: 华佗创制麻沸散
+  category: 文化
+  tags: [医学, 典故]
+  importance: 4
+  summary: 东汉神医华佗创制中药全身麻醉剂「麻沸散」施行外科手术，并编创五禽戏养生。
+  confidence: 确定
+  sources: [后汉书·华佗传]
 
 - id: chibi-208
   date: "0208-11"
@@ -86,3 +336,26 @@
     曹军实额（二十余万抑或号称八十万）、火攻与疫疠孰为主因，
     各书记载不一。
   sources: [三国志·周瑜传]
+
+- id: guanyu-dandao
+  date: "0215-05"
+  title: 关羽单刀赴会
+  category: 政治
+  tags: [荆州, 典故]
+  importance: 4
+  summary: 孙权派鲁肃讨要荆州，关羽应邀只带单刀长枪乘单舟过江赴会相抗，全躯而回。
+  confidence: 确定
+  sources: [三国志·鲁肃传]
+
+- id: guanyu-guagu
+  date: "0219-08"
+  title: 关羽水淹七军与刮骨疗毒
+  category: 战争
+  tags: [荆州, 典故]
+  importance: 4
+  summary: 关羽攻樊城水淹七军威震华夏，左臂中流矢毒箭，请医割肉刮骨去毒，谈笑奕棋自若。
+  confidence: 确定
+  sources: [三国志·关羽传]
+
+
+

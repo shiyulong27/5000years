@@ -7,6 +7,16 @@
   confidence: 确定
   sources: [元史·世祖纪]
 
+- id: marco-polo-1275
+  date: "1275"
+  title: 马可·波罗抵达大都
+  category: 文化
+  tags: [中外交流, 典故]
+  importance: 4
+  summary: 威尼斯商人马可·波罗抵达元大都觐见忽必烈，在华游历十七年，后口述《马可·波罗游记》。
+  confidence: 有争议
+  dispute: 学界对马可·波罗是否亲历中国曾有争论，今主流学者基本认可其游历实情。
+
 - id: yuan-unify-1279
   date: "1279"
   title: 元混一南北
@@ -16,6 +26,17 @@
   confidence: 确定
   sources: [元史·世祖纪]
 
+- id: guohushou-canal-1292
+  date: "1292"
+  title: 郭守敬开通通惠河
+  category: 经济
+  tags: [水利, 科技]
+  importance: 4
+  summary: 郭守敬主持修建通惠河开通，使京杭大运河直达大都积水潭，并创制《授时历》。
+  confidence: 确定
+  sources: [元史·郭守敬传]
+
+
 - id: hongjinjun-1351
   date: "1351"
   title: 红巾军起
@@ -24,6 +45,17 @@
   summary: 刘福通、韩山童领导红巾军起义爆发，揭开元末农民起义序幕。
   confidence: 确定
   sources: [元史·顺帝纪]
+
+- id: zhuyuanzhang-gaozhuqiang
+  date: "1358"
+  title: 朱元璋高筑墙、广积粮、缓称王
+  category: 政治
+  tags: [明朝建国, 策略]
+  importance: 4
+  summary: 朱元璋攻占集庆（南京）后采纳徽州儒士朱升谋略「高筑墙，广积粮，缓称王」，积蓄力量一统天下。
+  confidence: 确定
+  sources: [明史·太祖纪]
+
 
 - id: yuan-fall-1368
   date: "1368"

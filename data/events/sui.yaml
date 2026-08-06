@@ -26,6 +26,28 @@
   sources: [隋书·食货志]
   tags: [工程, 漕运]
 
+- id: suiyangdi-jiangnan
+  date: "0605-10"
+  title: 隋炀帝游江都
+  category: 政治
+  tags: [隋朝, 典故]
+  importance: 3
+  summary: 隋炀帝造巨型龙舟、数千艘龙艛下江都巡游，沿途征调民夫拉纤，奢靡无度加剧民怨。
+  confidence: 确定
+  sources: [隋书·炀帝纪]
+
+
+- id: keju-founding-0606
+  date: "0606"
+  title: 始设进士科，科举制度形成
+  category: 政治
+  tags: [制度, 选官]
+  importance: 5
+  summary: 隋炀帝始设进士科，以考试选拔官吏，打破门阀垄断，中国科举制度正式形成。
+  confidence: 确定
+  sources: [通典·选举]
+
+
 - id: sui-gaogouli-war-0612
   date: "0612"
   title: 一征高句丽，败还

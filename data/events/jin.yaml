@@ -1,3 +1,34 @@
+- id: zhouchu-chusanhai
+  date: "0260"
+  title: 周处斩蛟射虎，除三害
+  category: 文化
+  tags: [魏晋, 典故]
+  importance: 3
+  summary: 义兴少年的周处凶暴强梁，乡人谓之与南山白额虎、长桥蛟龙为「三害」，周处斩蛟射虎后知耻改过，终成西晋名臣。
+  confidence: 确定
+  sources: [世说新语·自新]
+
+- id: jikang-guanglingsan
+  date: "0262"
+  title: 嵇康刑场绝响《广陵散》
+  category: 文化
+  tags: [魏晋, 典故]
+  importance: 4
+  summary: 嵇康因不与司马氏权贵妥协遭诬陷害，行刑前临刑神色不变索琴弹《广陵散》，叹曰「广陵散于今绝矣」。
+  confidence: 确定
+  sources: [晋书·嵇康传]
+
+
+- id: zhulin-qixian
+  date: "0265"
+  title: 竹林七贤与魏晋风度
+  category: 文化
+  tags: [玄学, 魏晋]
+  importance: 4
+  summary: 嵇康、阮籍等七人在竹林肆意酣畅、竹林清谈，代表魏晋名士超逸绝俗、反抗礼教的自由风骨。
+  confidence: 确定
+  sources: [世说新语·伤逝]
+
 - id: jin-founding-266
   date: "0266-02"
   title: 司马炎代魏，西晋建立
@@ -6,6 +37,16 @@
   summary: 魏元帝禅位于司马炎，改元泰始，定都洛阳。
   confidence: 确定
   sources: [晋书·武帝纪]
+
+- id: shichong-wangkai
+  date: "0290"
+  title: 石崇王恺比富
+  category: 文化
+  tags: [社会, 典故]
+  importance: 3
+  summary: 贵戚王恺与散骑常侍石崇争豪斗富、挥霍无度，折射西晋统治集团奢靡颓废之风。
+  confidence: 确定
+  sources: [世说新语·汰侈]
 
 - id: bawang-291
   date: "0291"
@@ -18,6 +59,16 @@
   confidence: 确定
   sources: [晋书]
 
+- id: wenji-qiwu
+  date: "0307"
+  title: 祖逖刘琨闻鸡起舞
+  category: 文化
+  tags: [典故, 励志]
+  importance: 4
+  summary: 青年祖逖与刘琨主簿同寝，夜半闻荒鸡鸣，起舞击剑，立誓报效国家收复中原。
+  confidence: 确定
+  sources: [晋书·祖逖传]
+
 - id: yongjia-311
   date: "0311-06"
   title: 永嘉之乱，洛阳陷落
@@ -26,6 +77,28 @@
   summary: 匈奴刘曜攻破洛阳，掳晋怀帝，士民死者三万余。
   confidence: 确定
   sources: [晋书·怀帝纪]
+
+
+- id: taokan-banzhuan
+  date: "0315"
+  title: 陶侃搬砖，勤俭自强
+  category: 文化
+  tags: [典故, 励志]
+  importance: 3
+  summary: 东晋名将陶侃闲居广州时朝搬百甓于斋外、夕搬于斋内，称「吾方致力于中原，过自优逸恐不堪事」。
+  confidence: 确定
+  sources: [晋书·陶侃传]
+
+- id: yiguan-nandu
+  date: "0317"
+  title: 晋元帝建东晋，衣冠南渡
+  category: 政治
+  tags: [东晋, 门阀]
+  importance: 5
+  summary: 司马睿于建康称帝建东晋，北方大族士民相随衣冠南渡，宰相王导与王敦主掌朝政兵权，时称「王与马，共天下」。
+  confidence: 确定
+  sources: [晋书·王导传]
+
 
 - id: xijin-fall-316
   date: "0316-11"
@@ -71,6 +144,38 @@
     「兰亭论辩」最著；真迹传随葬昭陵，存世皆唐摹本。
   sources: [晋书·王羲之传]
 
+- id: gukaizhi-painting
+  date: "0364"
+  title: 顾恺之作《女史箴图》
+  category: 文化
+  tags: [绘画, 艺术]
+  importance: 4
+  summary: 顾恺之创密体画风，画绝文绝痴绝，作《女史箴图》《洛神赋图》，中国高古游丝描画法之祖。
+  confidence: 确定
+  sources: [晋书·顾恺之传]
+
+- id: wangmeng-qianqin
+  date: "0370"
+  title: 王猛摸虱论天下，辅佐前秦
+  category: 政治
+  tags: [前秦, 宰相]
+  importance: 4
+  summary: 王猛于桓温军前摸虱谈吐自若，后受苻坚礼聘为宰相，推行法治，大治关拢，平定北方。
+  confidence: 确定
+  sources: [晋书·王猛载记]
+
+
+
+- id: fujian-toubian
+  date: "0382"
+  title: 前秦苻坚投鞭断流
+  category: 战争
+  tags: [前秦, 典故]
+  importance: 4
+  summary: 前秦统一北方后苻坚意图灭晋，称「以吾之众投鞭于江足断其流」，不顾魏征等重臣反对决意南征。
+  confidence: 确定
+  sources: [晋书·苻坚载记]
+
 - id: feishui-383
   date: "0383-11"
   title: 淝水之战
@@ -81,6 +186,7 @@
     风声鹤唳、草木皆兵皆出于此，东晋因此得以偏安百年。
   confidence: 确定
   sources: [晋书·谢玄传]
+
 
 - id: taoyuanming-405
   date: "0405-11"

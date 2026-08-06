@@ -232,9 +232,11 @@ main,
   padding-block: calc(var(--row-gap) / 2);
 }
 
-.cell.is-empty {
+.cell.is-empty,
+.banner-row.is-empty {
   display: none;
 }
+
 
 .timeline.hide-world {
   /* 仅 display:none 不会让 Grid 模板列收缩，中轴会滞留原处、左侧留下
@@ -433,6 +435,47 @@ main,
   border-radius: 2px;
 }
 
+.level-select {
+  font-family: inherit;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  background: var(--card);
+  color: var(--fg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  cursor: pointer;
+  outline: none;
+}
+
+.level-select:focus {
+  border-color: var(--accent);
+}
+
+.event-badge {
+  padding: 0.05rem 0.4rem;
+  font-size: 0.72rem;
+  border-radius: 3px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.badge-major {
+  background: color-mix(in srgb, #9e2a2b 12%, transparent);
+  color: #9e2a2b;
+  border: 1px solid color-mix(in srgb, #9e2a2b 30%, transparent);
+}
+
+.badge-classic {
+  background: color-mix(in srgb, #b07d06 14%, transparent);
+  color: #8f6200;
+  border: 1px solid color-mix(in srgb, #b07d06 35%, transparent);
+}
+
+.card-major {
+  border-left-width: 4px;
+}
+
 /* confidence 非「确定」时的视觉标记：AI 生成的冷门年代与精确日期
    容易出错，此标记让作者一眼识别需要核查的条目 */
 .event-flag {
@@ -441,6 +484,7 @@ main,
   background: var(--flag-bg);
   color: var(--flag-fg);
 }
+
 
 .event-title {
   margin: 0;
