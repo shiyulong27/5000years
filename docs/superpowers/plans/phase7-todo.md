@@ -338,13 +338,13 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task C4 ⬜ 近现代人物
+### Task C4 ✅ 近现代人物
 
 **Files:** Modify: `data/figures.yaml`
 
-- [ ] **Step 1: 追加**：`luxun 鲁迅 1881–1936 文学 确定`。（C1 唐人物已在 A3、C3 明清人物已在 A7/A8 完成。）
+- [x] **Step 1: 追加**：`luxun 鲁迅 1881–1936 文学 确定`。（C1 唐人物已在 A3、C3 明清人物已在 A7/A8 完成。）
+- [x] **Step 2: 验收 + 提交** `feat(data): 近现代人物`；改状态。
 
-- [ ] **Step 2: 验收 + 提交** `feat(data): 近现代人物`；改状态。
 
 ---
 
@@ -471,6 +471,8 @@ jobs:
 | 2026-08-06 | Task B4 世界现当代 | Antigravity | feat(data): 世界现当代事件 |
 | 2026-08-06 | Task B5 文明色带补充 | Antigravity | feat(data): 文明色带补至中世纪以后 |
 | 2026-08-06 | Task C2 宋元人物 | Antigravity | feat(data): 宋元人物 |
+| 2026-08-06 | Task C4 近现代人物 | Antigravity | feat(data): 近现代人物 |
+
 
 
 
