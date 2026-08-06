@@ -70,3 +70,39 @@
   end: "1453"
   region: 地中海
   color: "#7d8fa0"
+
+- name: 阿拉伯帝国
+  start: "0632"
+  end: "0750"
+  region: 西亚
+  color: "#7d6608"
+- name: 阿拔斯王朝
+  start: "0750"
+  end: "1258"
+  region: 西亚
+  color: "#8d7a2a"
+- name: 奥斯曼帝国
+  start: "1299"
+  end: "1922"
+  region: 西亚
+  color: "#9c5a3c"
+- name: 法兰克王国
+  start: "0481"
+  end: "0843"
+  region: 欧洲
+  color: "#5d6d7e"
+- name: 神圣罗马帝国
+  start: "0962"
+  end: "1806"
+  region: 欧洲
+  color: "#6e7b8b"
+- name: 玛雅文明
+  start: "0250"
+  end: "0900"
+  region: 美洲
+  color: "#6e8b3d"
+- name: 阿兹特克
+  start: "1300"
+  end: "1521"
+  region: 美洲
+  color: "#8b6e3d"
