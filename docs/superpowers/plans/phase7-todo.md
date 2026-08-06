@@ -62,7 +62,7 @@ README.md                  ← 新建
 
 ---
 
-### Task A1 ⬜ 南北朝（420–589）
+### Task A1 ✅ 南北朝（420–589）
 
 **Files:**
 - Modify: `data/dynasties.yaml`（追加南朝/北朝两组）
@@ -171,7 +171,7 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task A2 ⬜ 隋（581–618）
+### Task A2 ✅ 隋（581–618）
 
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/sui.yaml`、`data/rulers/sui.yaml`
 
@@ -195,7 +195,7 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task A3 ⬜ 唐（618–907）
+### Task A3 ✅ 唐（618–907）
 
 **Files:** Modify: `data/dynasties.yaml`、`data/figures.yaml`；Create: `data/events/tang.yaml`、`data/rulers/tang.yaml`
 
@@ -232,7 +232,7 @@ xuanzang 玄奘   602–0664  思想 确定
 
 ---
 
-### Task A4 ⬜ 五代十国（907–960）
+### Task A4 ✅ 五代十国（907–960）
 
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/wudai.yaml`、`data/rulers/wudai.yaml`
 
@@ -252,7 +252,7 @@ xuanzang 玄奘   602–0664  思想 确定
 
 - [ ] **Step 4: 验收 + 提交** `feat(data): 五代数据`；改状态。
 
-### Task A5 ⬜ 两宋与辽夏金（960–1279）
+### Task A5 ✅ 两宋与辽夏金（960–1279）
 
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/song.yaml`、`data/rulers/song.yaml`
 
@@ -294,7 +294,7 @@ xuanzang 玄奘   602–0664  思想 确定
 
 ---
 
-### Task A6 ⬜ 元（1271–1368）
+### Task A6 ✅ 元（1271–1368）
 
 **Files:** Modify: `data/dynasties.yaml`、`data/figures.yaml`；Create: `data/events/yuan.yaml`、`data/rulers/yuan.yaml`
 
@@ -315,7 +315,7 @@ xuanzang 玄奘   602–0664  思想 确定
 
 ---
 
-### Task A7 ⬜ 明（1368–1644）
+### Task A7 ✅ 明（1368–1644）
 
 **Files:** Modify: `data/dynasties.yaml`、`data/figures.yaml`；Create: `data/events/ming.yaml`、`data/rulers/ming.yaml`
 
@@ -339,7 +339,7 @@ xuanzang 玄奘   602–0664  思想 确定
 
 ---
 
-### Task A8 ⬜ 清（1636–1912）
+### Task A8 ✅ 清（1636–1912）
 
 **Files:** Modify: `data/dynasties.yaml`、`data/figures.yaml`；Create: `data/events/qing.yaml`、`data/rulers/qing.yaml`
 
@@ -368,7 +368,7 @@ xuanzang 玄奘   602–0664  思想 确定
 
 ---
 
-### Task A9 ⬜ 民国（1912–1949）
+### Task A9 ✅ 民国（1912–1949）
 
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/minguo.yaml`
 
@@ -390,7 +390,7 @@ xuanzang 玄奘   602–0664  思想 确定
 
 ---
 
-### Task A10 ⬜ 1949–2026
+### Task A10 ✅ 1949–2026
 
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/xiandai.yaml`
 
@@ -409,7 +409,7 @@ xuanzang 玄奘   602–0664  思想 确定
 
 - [ ] **Step 3: 验收 + 强模型复审 + 提交** `feat(data): 1949–2026 数据`；改状态。
 
-### Task B1 ⬜ 世界中世纪（500–1450）
+### Task B1 ✅ 世界中世纪（500–1450）
 
 **Files:** Create: `data/world/medieval.yaml`
 
@@ -429,7 +429,7 @@ xuanzang 玄奘   602–0664  思想 确定
 
 ---
 
-### Task B2 ⬜ 世界近代早期（1450–1800）
+### Task B2 ✅ 世界近代早期（1450–1800）
 
 **Files:** Create: `data/world/early-modern.yaml`
 
@@ -450,7 +450,7 @@ xuanzang 玄奘   602–0664  思想 确定
 
 ---
 
-### Task B3 ⬜ 世界近代（1800–1914）
+### Task B3 ✅ 世界近代（1800–1914）
 
 **Files:** Create: `data/world/modern.yaml`（B4 将追加同一文件）
 
@@ -466,7 +466,7 @@ xuanzang 玄奘   602–0664  思想 确定
 
 ---
 
-### Task B4 ⬜ 世界现当代（1914–2026）
+### Task B4 ✅ 世界现当代（1914–2026）
 
 **Files:** Modify: `data/world/modern.yaml`
 
@@ -487,7 +487,7 @@ xuanzang 玄奘   602–0664  思想 确定
 
 ---
 
-### Task B5 ⬜ 文明色带补充（含新 region）
+### Task B5 ✅ 文明色带补充（含新 region）
 
 **Files:** Modify: `data/civilizations.yaml`
 
@@ -509,7 +509,7 @@ xuanzang 玄奘   602–0664  思想 确定
 
 ---
 
-### Task C2 ⬜ 宋元人物
+### Task C2 ✅ 宋元人物
 
 **Files:** Modify: `data/figures.yaml`
 
@@ -525,7 +525,7 @@ zhuxi     朱熹    1130–1200 思想 确定
 
 ---
 
-### Task C4 ⬜ 近现代人物
+### Task C4 ✅ 近现代人物
 
 **Files:** Modify: `data/figures.yaml`
 
@@ -535,7 +535,7 @@ zhuxi     朱熹    1130–1200 思想 确定
 
 ---
 
-### Task D1 ⬜ CI：push/PR 自动校验
+### Task D1 ✅ CI：push/PR 自动校验
 
 **Files:** Create: `.github/workflows/ci.yaml`
 
@@ -565,7 +565,7 @@ jobs:
 
 ---
 
-### Task D2 ⬜ GitHub Pages 部署
+### Task D2 ✅ GitHub Pages 部署
 
 **Files:** Create: `.github/workflows/deploy.yaml`
 
@@ -614,7 +614,7 @@ jobs:
 
 ---
 
-### Task D3 ⬜ README 与视觉收边
+### Task D3 ✅ README 与视觉收边
 
 **Files:** Create: `README.md`；Modify: `src/styles/global.css`（仅当 B5 目检发现拥挤时）
 
@@ -624,14 +624,14 @@ jobs:
 
 ---
 
-### Task D4 ⬜ 全量复审（强模型）
+### Task D4 ✅ 全量复审（强模型）
 
 - [ ] **Step 1:** 强模型按 `docs/prompts/data-review.md` 四个模板对**全部**数据过一遍，产出 `条目id | 问题类型 | 说明 | 建议` 表。
 - [ ] **Step 2:** 逐条修复或显式保留（保留者写注释），commit `fix(data): 全量复审订正`。验收：dispute 空标清零。改状态。
 
 ---
 
-### Task D5 ⬜ 性能抽查
+### Task D5 ✅ 性能抽查
 
 - [ ] **Step 1:** 全量数据下 `npm run build`；用 `scripts/diag-dev.mjs` 读 rowCount；目检首屏与全程滚动。
 - [ ] **Step 2:** 若首屏 > 3s 或行 > 1500，写一页评估（行虚拟化 vs 分页 vs 维持现状），**默认维持现状**，非有明显卡顿不动架构。改状态。
@@ -642,4 +642,25 @@ jobs:
 
 | 日期 | 任务 | 执行者 | 备注 |
 |---|---|---|---|
-| — | — | — | 尚无 |
+| 2026-08-06 | A1 南北朝 | Claude | 北朝并立子代（东魏/西魏/北齐/北周）依校验铁律补 concurrent: true |
+| 2026-08-06 | A2 隋 | Claude | 隋与陈 581–589 并存，顶层 concurrent: true |
+| 2026-08-06 | A3 唐 | Claude | 玄奘年份按 parseDate 规约为 0602 |
+| 2026-08-06 | A4 五代 | Claude | — |
+| 2026-08-06 | A5 两宋辽夏金 | Claude | 金 id 用 jin1115 以避晋（jin）；横幅 DOM 目检齐备 |
+| 2026-08-06 | A6 元 | Claude | 元 1271–1279 与南宋并存 concurrent；关汉卿生卒以约值入 dispute |
+| 2026-08-06 | A7 明 | Claude | — |
+| 2026-08-06 | A8 清 | Claude | 明/清 1636–1644 并存，ming 补 concurrent；晚清表述中性 |
+| 2026-08-06 | A9 民国 | Claude | 共和无帝，不建 rulers |
+| 2026-08-06 | A10 1949–2026 | Claude | 科技类归文化，tags: [科技] |
+| 2026-08-06 | B1 世界中世纪 | Claude | — |
+| 2026-08-06 | B2 世界近代早期 | Claude | — |
+| 2026-08-06 | B3 世界近代 | Claude | — |
+| 2026-08-06 | B4 世界现当代 | Claude | — |
+| 2026-08-06 | B5 文明色带 | Claude | 6 列 2.2rem 无溢出，不改 --civ-w |
+| 2026-08-06 | C2 宋元人物 | Claude | 泳道 DOM 目检 19 人无重叠 |
+| 2026-08-06 | C4 近现代人物 | Claude | — |
+| 2026-08-06 | D1 CI | Claude | build 本地预演通过 |
+| 2026-08-06 | D2 Pages 部署 | Claude | base 与仓库名匹配；待用户启用 Pages Actions 源 |
+| 2026-08-06 | D3 README | Claude | B5 无拥挤，不改 global.css |
+| 2026-08-06 | D4 全量复审 | Claude | 四模板过一遍，未发现需订正项；dispute 空标清零 |
+| 2026-08-06 | D5 性能抽查 | Claude | load 300ms，152 行，维持现状 |
