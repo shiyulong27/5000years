@@ -71,12 +71,19 @@
 
 body {
   margin: 0;
-  background: var(--bg);
+  /* 页顶一抹极淡的暖光，纸色不至于平板 */
+  background:
+    radial-gradient(ellipse 80% 40% at 50% -10%, rgba(255, 255, 255, 0.5), transparent),
+    var(--bg);
   color: var(--fg);
   font-family: var(--font-serif);
   font-size: var(--font-size);
   line-height: var(--line-height);
   -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
 }
 
 /* ── 页头与工具栏 ─────────────────────────────────── */
@@ -99,6 +106,15 @@ body {
   color: var(--muted);
   font-size: 0.9rem;
   letter-spacing: 0.1em;
+}
+
+/* 站名下的短双横线，如书籍扉页的栏线 */
+.site-head::after {
+  content: '';
+  display: block;
+  width: 12rem;
+  margin: 1.4rem auto 0;
+  border-top: 3px double var(--line);
 }
 
 .toolbar {
@@ -282,6 +298,16 @@ main,
   background: var(--bg);
 }
 
+/* 每年顶端的菱形节点，落在中轴细线上，长卷读作一串相连的节点 */
+.axis-cell::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  background: var(--card);
+  border: 1px solid var(--muted);
+}
+
 .axis-year {
   font-size: var(--axis-year-size);
   font-weight: 600;
@@ -324,6 +350,8 @@ main,
   padding: 0.6rem 1rem;
   border-left: 5px solid var(--dynasty-color);
   background: color-mix(in srgb, var(--dynasty-color) 8%, var(--banner-bg));
+  /* 内圈一道同色细线，横幅不至单薄 */
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--dynasty-color) 15%, transparent);
   border-radius: var(--radius);
 }
 
@@ -362,8 +390,14 @@ main,
   padding: var(--card-pad);
   background: var(--card);
   border: 1px solid var(--line);
+  /* 左缘加厚：中国事件按所属朝代染色，卡片与横幅同一色系 */
+  border-left: 3px solid var(--line);
   border-radius: var(--radius);
   margin-bottom: 0.5rem;
+}
+
+.cell-china .event-card {
+  border-left-color: color-mix(in srgb, var(--dynasty-color, var(--line)) 45%, var(--line));
 }
 
 .event-card[hidden] {
