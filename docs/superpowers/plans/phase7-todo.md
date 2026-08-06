@@ -317,25 +317,14 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task B5 ⬜ 文明色带补充（含新 region）
+### Task B5 ✅ 文明色带补充（含新 region）
 
 **Files:** Modify: `data/civilizations.yaml`
 
-- [ ] **Step 1: 追加色带**（新增 region「欧洲」「美洲」；西亚区内叠画沿用既定约定）：
+- [x] **Step 1: 追加色带**（新增 region「欧洲」「美洲」；西亚区内叠画沿用既定约定）
+- [x] **Step 2: 目检**
+- [x] **Step 3: 验收 + 提交** `feat(data): 文明色带补至中世纪以后`；改状态。
 
-```yaml
-- name: 阿拉伯帝国    start: "0632"  end: "0750"  region: 西亚   color: "#7d6608"
-- name: 阿拔斯王朝    start: "0750"  end: "1258" region: 西亚   color: "#8d7a2a"
-- name: 奥斯曼帝国    start: "1299"  end: "1922" region: 西亚   color: "#9c5a3c"
-- name: 法兰克王国    start: "0481"  end: "0843" region: 欧洲   color: "#5d6d7e"
-- name: 神圣罗马帝国  start: "0962"  end: "1806" region: 欧洲   color: "#6e7b8b"
-- name: 玛雅文明      start: "0250"  end: "0900" region: 美洲   color: "#6e8b3d"
-- name: 阿兹特克      start: "1300"  end: "1521" region: 美洲   color: "#8b6e3d"
-```
-
-- [ ] **Step 2: 目检**：起 dev server，截 800–1200 年段与 1400–1521 年段，确认 6 列文明带不拥挤；若挤，把 `:root` 的 `--civ-w` 从 `2.2rem` 调至 `1.9rem`（**这是本阶段唯一允许的 src/ 改动，落在 global.css**）。
-
-- [ ] **Step 3: 验收 + 提交** `feat(data): 文明色带补至中世纪以后`；改状态。
 
 ---
 
@@ -486,6 +475,8 @@ jobs:
 | 2026-08-06 | Task B2 世界近代早期 | Antigravity | feat(data): 世界近代早期事件 |
 | 2026-08-06 | Task B3 世界近代 | Antigravity | feat(data): 世界近代事件 |
 | 2026-08-06 | Task B4 世界现当代 | Antigravity | feat(data): 世界现当代事件 |
+| 2026-08-06 | Task B5 文明色带补充 | Antigravity | feat(data): 文明色带补至中世纪以后 |
+
 
 
 

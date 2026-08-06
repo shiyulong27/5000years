@@ -120,6 +120,32 @@
   confidence: 有争议
   dispute: 生卒年无确载，约1241–约1320为推定值。
 
+- id: sushi
+  name: 苏轼
+  birth: "1037"
+  death: "1101"
+  field: 文学
+  note: 北宋文学家、书画家，唐宋八大家之一
+  confidence: 确定
+
+- id: liqingzhao
+  name: 李清照
+  birth: "1084"
+  death: "1155"
+  field: 文学
+  note: 宋代女词人，千古第一才女，婉约词派代表
+  confidence: 有争议
+  dispute: 卒年无确载，约1155为推定；晚年事迹亦有争议。
+
+- id: zhuxi
+  name: 朱熹
+  birth: "1130"
+  death: "1200"
+  field: 思想
+  note: 理学集大成者，闽学代表人物，尊称朱子
+  confidence: 确定
+
+
 - id: wangyangming
   name: 王阳明
   birth: "1472"
