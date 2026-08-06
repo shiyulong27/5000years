@@ -1,0 +1,30 @@
+# 清代君主。只录开国定号、鼎盛与末代三位。
+
+- dynasty: qing
+  temple_name: 清太宗
+  name: 爱新觉罗·皇太极
+  reign_start: "1636"
+  reign_end: "1643"
+  era_names:
+    - 崇德
+  note: 改族名女真为满洲、改国号后金为大清，为入主中原奠基
+  role: founder
+
+- dynasty: qing
+  temple_name: 清圣祖
+  name: 爱新觉罗·玄烨
+  reign_start: "1661"
+  reign_end: "1722"
+  era_names:
+    - 康熙
+  note: 平三藩、收台湾、定漠北，开创康乾盛世
+
+- dynasty: qing
+  temple_name: 清逊帝
+  name: 爱新觉罗·溥仪
+  reign_start: "1908"
+  reign_end: "1912"
+  era_names:
+    - 宣统
+  note: 清末代皇帝，辛亥革命后逊位，君主专制终结
+  role: last

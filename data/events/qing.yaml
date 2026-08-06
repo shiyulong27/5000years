@@ -1,0 +1,101 @@
+- id: qing-1644
+  date: "1644"
+  title: 清军入关，定鼎北京
+  category: 政治
+  importance: 5
+  summary: 李自成破明朝后，清军借机入关，定都北京，逐步统一全国。
+  confidence: 确定
+  sources: [清史稿·世祖本纪]
+
+- id: zheng-chenggong-1662
+  date: "1662"
+  title: 郑成功收复台湾
+  category: 战争
+  importance: 4
+  summary: 郑成功率军渡海，驱逐荷兰殖民者，收复台湾。
+  confidence: 确定
+  tags: [边疆]
+
+- id: taiwan-1683
+  date: "1683"
+  title: 台湾归入版图
+  category: 政治
+  importance: 4
+  summary: 施琅率军入台，郑氏降清，台湾正式纳入清廷版图，设府治理。
+  confidence: 确定
+
+- id: yongzheng-1723
+  date: "1723"
+  title: 摊丁入亩、改土归流
+  category: 政治
+  importance: 4
+  summary: 雍正朝推行赋役改革与西南改土归流，强化中央集权，均平赋役负担。
+  confidence: 确定
+
+- id: macartney-1793
+  date: "1793"
+  title: 马戛尔尼使华
+  category: 政治
+  importance: 3
+  summary: 英国使团前来，欲通商建交，清廷以天朝自居严拒，东西方错过接触之机。
+  confidence: 确定
+  tags: [外交]
+
+- id: opium-war-1840
+  date: "1840"
+  title: 鸦片战争
+  category: 战争
+  importance: 5
+  summary: 英国以鸦片贸易及禁烟为口实兴兵，清军战败，签订不平等条约，中国近代史由此开端。
+  confidence: 确定
+  dispute: |
+    战争起因至今有英方「贸易与外交」与中方「鸦片与侵略」两套叙事；
+    就史实而言，此为清廷在西方工业国冲击下第一次战败，影响深远。
+
+- id: taiping-1851
+  date: "1851"
+  title: 金田起义，太平天国起
+  category: 战争
+  importance: 4
+  summary: 洪秀全于金田起事，建号太平天国，席卷半壁江山，历时十余年。
+  confidence: 确定
+
+- id: yangwu-1861
+  date: "1861"
+  title: 洋务运动始
+  category: 政治
+  importance: 4
+  summary: 曾国藩、李鸿章等兴办近代军工民用企业，「自强求富」，中国工业近代化之始。
+  confidence: 确定
+
+- id: jiawu-1894
+  date: "1894"
+  title: 甲午战争
+  category: 战争
+  importance: 5
+  summary: 中日甲午开战，清军败绩，北洋水师覆灭，割地赔款，国势进一步沉沦。
+  confidence: 确定
+
+- id: wuxu-1898
+  date: "1898"
+  title: 戊戌变法
+  category: 政治
+  importance: 4
+  summary: 光绪帝任用康梁行变法新政，百余日而败，六君子殉难，改革未竟。
+  confidence: 确定
+
+- id: gengzi-1900
+  date: "1900"
+  title: 庚子国变，八国联军入京
+  category: 战争
+  importance: 4
+  summary: 义和团事起，八国联军侵华、攻陷北京，清廷仓皇西狩，次年签订《辛丑条约》。
+  confidence: 确定
+
+- id: xinhai-1911
+  date: "1911"
+  title: 辛亥革命
+  category: 政治
+  importance: 5
+  summary: 武昌起义后各省响应，清帝逊位，两千余年君主专制就此终结。
+  confidence: 确定

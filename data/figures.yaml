@@ -135,3 +135,12 @@
   field: 科技
   note: 著《本草纲目》，集本草学之大成
   confidence: 确定
+
+- id: caoxueqin
+  name: 曹雪芹
+  birth: "1715"
+  death: "1763"
+  field: 文学
+  note: 著《红楼梦》，古典小说之巅峰
+  confidence: 有争议
+  dispute: 生卒年无定论，生年有 1715 与 1724 两说，卒年亦有 1763 与 1764 说，此处为约值。
