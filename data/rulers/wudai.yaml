@@ -1,0 +1,22 @@
+# 五代君主。只录开国与明君各一，其余从略。
+
+- dynasty: houliang
+  temple_name: 梁太祖
+  name: 朱温
+  reign_start: "0907"
+  reign_end: "0912"
+  era_names:
+    - 开平
+    - 乾化
+  note: 黄巢降将起家，篡唐建梁，为五代之始
+  role: founder
+
+- dynasty: houzhou
+  temple_name: 周世宗
+  name: 柴荣
+  reign_start: "0954"
+  reign_end: "0959"
+  era_names:
+    - 显德
+  note: 后周世宗，五代第一明君，北伐契丹，为宋统一奠基
+  confidence: 确定

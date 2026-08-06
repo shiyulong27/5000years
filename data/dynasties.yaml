@@ -246,3 +246,43 @@
   capital: 长安
   color: "#b03a2e"
   summary: 贞观开元两度盛世，安史之乱后藩镇割据、宦官弄权，终亡于朱温之手。
+
+# ── 五代十国：中原更替五朝，与南方十国并存 ─────────────────────
+# 十国从略，横幅只出五代。
+- id: wudai
+  name: 五代
+  start: "0907"
+  end: "0960"
+  color: "#6c3483"
+  concurrent: true
+  summary: 中原梁唐晋汉周相继，与南方十国并存，故声明 concurrent。
+- id: houliang
+  name: 后梁
+  start: "0907"
+  end: "0923"
+  color: "#6c3483"
+  parent: wudai
+- id: houtang
+  name: 后唐
+  start: "0923"
+  end: "0936"
+  color: "#6c3483"
+  parent: wudai
+- id: houjin
+  name: 后晋
+  start: "0936"
+  end: "0947"
+  color: "#6c3483"
+  parent: wudai
+- id: houhan
+  name: 后汉
+  start: "0947"
+  end: "0951"
+  color: "#6c3483"
+  parent: wudai
+- id: houzhou
+  name: 后周
+  start: "0951"
+  end: "0960"
+  color: "#6c3483"
+  parent: wudai
