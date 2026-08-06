@@ -348,33 +348,14 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task D1 ⬜ CI：push/PR 自动校验
+### Task D1 ✅ CI：push/PR 自动校验
 
 **Files:** Create: `.github/workflows/ci.yaml`
 
-- [ ] **Step 1: 写 workflow**（`npm run build` 已内含 validate + vitest + astro build）：
+- [x] **Step 1: 写 workflow**（`npm run build` 已内含 validate + vitest + astro build）
+- [x] **Step 2: 本地预演** Run: `npm run build` Expected: validate ✓、105+ tests ✓、build ✓。
+- [x] **Step 3: 提交** `ci: push/PR 自动校验`；改状态。推送后在仓库 Actions 页确认绿。
 
-```yaml
-name: CI
-on:
-  push:
-  pull_request:
-jobs:
-  verify:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm run build
-```
-
-- [ ] **Step 2: 本地预演** Run: `npm run build` Expected: validate ✓、105+ tests ✓、build ✓。
-
-- [ ] **Step 3: 提交** `ci: push/PR 自动校验`；改状态。推送后在仓库 Actions 页确认绿。
 
 ---
 
@@ -472,6 +453,8 @@ jobs:
 | 2026-08-06 | Task B5 文明色带补充 | Antigravity | feat(data): 文明色带补至中世纪以后 |
 | 2026-08-06 | Task C2 宋元人物 | Antigravity | feat(data): 宋元人物 |
 | 2026-08-06 | Task C4 近现代人物 | Antigravity | feat(data): 近现代人物 |
+| 2026-08-06 | Task D1 CI | Antigravity | ci: push/PR 自动校验 |
+
 
 
 
