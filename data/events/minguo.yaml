@@ -1,0 +1,55 @@
+- id: minguo-1912
+  date: "1912"
+  title: 清帝退位，民国建立
+  category: 政治
+  importance: 5
+  summary: 清宣统帝逊位，南京临时政府成立，孙中山任临时大总统，中国进入共和时代。
+  confidence: 确定
+
+- id: xinwenhua-1915
+  date: "1915"
+  title: 新文化运动始
+  category: 文化
+  importance: 4
+  summary: 《新青年》创刊，倡民主与科学，抨击旧礼教，为思想启蒙之滥觞。
+  confidence: 确定
+
+- id: may-fourth-1919
+  date: "1919"
+  title: 五四运动
+  category: 政治
+  importance: 5
+  summary: 因巴黎和会外交失败，北京学生发难，工商各界响应，标志新民主主义革命之开端。
+  confidence: 确定
+
+- id: ccp-1921
+  date: "1921"
+  title: 中国共产党成立
+  category: 政治
+  importance: 5
+  summary: 中国共产党第一次全国代表大会在上海召开，党的组织自此成立。
+  confidence: 确定
+
+- id: 918-1931
+  date: "1931"
+  title: 九一八事变
+  category: 战争
+  importance: 5
+  summary: 日军进攻沈阳并占领东北，东北沦陷，中国抗战由此发端。
+  confidence: 确定
+
+- id: qiqiao-1937
+  date: "1937"
+  title: 七七事变，全面抗战始
+  category: 战争
+  importance: 5
+  summary: 卢沟桥事变爆发，日本全面侵华，中国全民族抗战自此展开。
+  confidence: 确定
+
+- id: victory-1945
+  date: "1945"
+  title: 抗战胜利
+  category: 政治
+  importance: 5
+  summary: 日本宣布无条件投降，中国人民抗日战争与世界反法西斯战争取得胜利。
+  confidence: 确定
