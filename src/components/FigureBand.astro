@@ -1,0 +1,14 @@
+---
+const { band } = Astro.props
+---
+
+<div
+  class="figure-band"
+  data-figure={band.id}
+  data-field={band.field}
+  data-lane={band.lane}
+  style={`grid-row:${band.rowStart}/${band.rowEnd + 1}`}
+  title={`${band.name}　${band.note ?? ''}`}
+>
+  <span class="figure-name">{band.name}</span>
+</div>

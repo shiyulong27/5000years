@@ -84,6 +84,7 @@ export function buildTimeline(data) {
     events = [],
     worldEvents = [],
     civilizations = [],
+    figures = [],
   } = data
 
   const byId = new Map(dynasties.map((d) => [d.id, d]))
@@ -193,9 +194,48 @@ export function buildTimeline(data) {
     })
   }
 
+  // ── 人物生卒带 ──────────────────────────────────────────────
+  // 与文明带的排布策略不同：文明按 region 分列（同一文明区始终同列，
+  // 便于建立空间记忆），人物则用贪心排布——同代人大量重叠，若按 field
+  // 分列，唐代的文学家会全部挤在一列里互相遮挡。贪心排布保证任意两条
+  // 不重叠者可共用一列，列数随实际拥挤程度自适应。
+  const figureBands = []
+  const lanes = [] // 每条泳道记录其已占用的最末行号
+
+  for (const f of [...figures].sort((a, b) => sortKey(a.birth) - sortKey(b.birth))) {
+    const s = yearOf(f.birth)
+    const e = yearOf(f.death)
+    const inside = yearRows.filter((r) => r.year >= s && r.year <= e)
+    if (inside.length === 0) continue // 生卒区间内无行，长卷上无处安放
+
+    const rowStart = inside[0].gridRow
+    const rowEnd = inside[inside.length - 1].gridRow
+
+    // 找第一条空闲泳道；都占着就新开一条
+    let lane = lanes.findIndex((lastRow) => lastRow < rowStart)
+    if (lane === -1) {
+      lane = lanes.length
+      lanes.push(rowEnd)
+    } else {
+      lanes[lane] = rowEnd
+    }
+
+    figureBands.push({
+      id: f.id,
+      name: f.name,
+      field: f.field,
+      note: f.note,
+      confidence: f.confidence,
+      rowStart,
+      rowEnd,
+      lane,
+    })
+  }
+
   return {
     rows,
     bands,
-    columns: { regions, total: firstSeen.size },
+    figureBands,
+    columns: { regions, total: firstSeen.size, figureLanes: lanes.length },
   }
 }

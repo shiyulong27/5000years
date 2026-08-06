@@ -1,5 +1,6 @@
 import { parseDate, sortKey, yearOf } from './date.js'
 import { locOf } from './load.js'
+import { CATEGORIES, CONFIDENCES, FIELDS } from './enums.js'
 
 /**
  * 数据校验。
@@ -9,22 +10,9 @@ import { locOf } from './load.js'
  *
  * 每条错误须指向具体文件与行号。作者将长期手工编辑数千条 YAML，
  * 报错信息的质量直接决定这件事是否可持续。
+ *
+ * 枚举定义在 enums.js，与工具栏共用——各写一份的代价已经付过一次。
  */
-
-// 大类只保留五个，且只有这五个进筛选开关。
-//
-// 「外交」对前现代中国是时代错置——朝贡体系不是外交，故并入政治。
-// 「灾异」概念混杂——「灾」是实事，「异」是天人感应的解释框架，
-// 故只保留「灾害」。「科技」条目稀少且多与文化交织，并入文化。
-//
-// 更细的划分（制度、宗教、科技、民族、边疆…）放进自由的 tags 字段：
-// tags 不做枚举校验，不做筛选开关，将来供搜索与交叉引用使用。
-// 这样分类不打架，工具栏也不会被十几个复选框塞满。
-const CATEGORIES = ['政治', '战争', '文化', '经济', '灾害']
-
-// 「传说」用于三皇五帝这类本就不属信史的条目——它与「有争议」不同：
-// 有争议是学界对史实有分歧，传说是根本不以信史论。
-const CONFIDENCES = ['确定', '存疑', '有争议', '传说']
 
 // 顶层朝代（parent 为空）在分组时的哨兵键。用不可能与真实 id 冲突的字面量，
 // 避免某个朝代恰好叫 root 时与顶层组混在一起。
@@ -35,12 +23,13 @@ const REQUIRED = {
   dynasty: ['id', 'name', 'start', 'end', 'color'],
   ruler: ['dynasty', 'temple_name', 'reign_start', 'reign_end'],
   civilization: ['name', 'start', 'end', 'region', 'color'],
+  figure: ['id', 'name', 'birth', 'death', 'field'],
 }
 
 /** 记录的可读标签，用于报错措辞 */
 function labelOf(record, kind) {
   if (kind === 'ruler') return record.temple_name ?? '(无庙号)'
-  if (kind === 'civilization') return record.name ?? '(无名)'
+  if (kind === 'civilization' || kind === 'figure') return record.name ?? '(无名)'
   return record.title ?? record.name ?? record.id ?? '(无标题)'
 }
 
@@ -79,7 +68,7 @@ export function validate(data) {
 export function validateWithWarnings(data) {
   const errors = []
   const warnings = []
-  const { dynasties = [], rulers = [], events = [], worldEvents = [], civilizations = [] } = data
+  const { dynasties = [], rulers = [], events = [], worldEvents = [], civilizations = [], figures = [] } = data
 
   const push = (record, message, level = 'error') => {
     const loc = locOf(record) ?? { file: '(未知)', line: 0 }
@@ -102,6 +91,7 @@ export function validateWithWarnings(data) {
   checkRequired(events, 'event', '事件')
   checkRequired(worldEvents, 'event', '世界事件')
   checkRequired(civilizations, 'civilization', '文明')
+  checkRequired(figures, 'figure', '人物')
 
   // ── 日期格式 ────────────────────────────────────────────────
   const checkDate = (record, field, noun, kind) => {
@@ -232,6 +222,7 @@ export function validateWithWarnings(data) {
   checkConfidence(worldEvents, 'event', '世界事件')
   checkConfidence(dynasties, 'dynasty', '朝代')
   checkConfidence(rulers, 'ruler', '君主')
+  checkConfidence(figures, 'figure', '人物')
 
   // ── 引用完整性 ──────────────────────────────────────────────
   const byId = new Map(dynasties.filter((d) => d.id !== undefined).map((d) => [d.id, d]))
@@ -338,6 +329,23 @@ export function validateWithWarnings(data) {
   checkOrder(dynasties, 'dynasty', '朝代', 'start', 'end')
   checkOrder(civilizations, 'civilization', '文明', 'start', 'end')
   checkOrder(rulers, 'ruler', '君主', 'reign_start', 'reign_end')
+  checkOrder(figures, 'figure', '人物', 'birth', 'death')
+
+  // ── 人物：日期格式、field 枚举、id 唯一 ─────────────────────
+  const figIds = new Set()
+  for (const f of figures) {
+    checkDate(f, 'birth', '人物', 'figure')
+    checkDate(f, 'death', '人物', 'figure')
+
+    if (f.field !== undefined && !FIELDS.includes(f.field)) {
+      push(f, `人物「${labelOf(f, 'figure')}」的 field「${f.field}」不在 ${FIELDS.join('/')} 之内`)
+    }
+
+    if (f.id !== undefined) {
+      if (figIds.has(f.id)) push(f, `人物 id「${f.id}」重复`)
+      figIds.add(f.id)
+    }
+  }
 
   // ── parent 指向须存在，且不得成环 ──────────────────────────
   for (const d of dynasties) {

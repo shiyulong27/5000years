@@ -31,6 +31,19 @@
   --world-w: minmax(14rem, 1fr);    /* 世界事件列 */
   --china-w: minmax(22rem, 1.6fr);  /* 中国事件列 */
   --civ-w: 2.2rem;            /* 单条文明色带宽 */
+  --fig-w: 0px;               /* 单条人物泳道宽，默认 0 即隐藏 */
+  --fig-w-open: 1.9rem;       /* 人物图层展开后的泳道宽 */
+
+  /* 人物带按领域分色，取低饱和度——它们是背景参照，不该抢事件卡片的注意力 */
+  --fig-band-bg: #d8d2c4;
+  --fig-band-line: #c4bdac;
+  --fig-name-fg: #4a4438;
+  --fig-lit: #c9b8a8;         /* 文学 */
+  --fig-thought: #b8bfa8;     /* 思想 */
+  --fig-politics: #c4b4a0;    /* 政治 */
+  --fig-military: #c0a8a0;    /* 军事 */
+  --fig-science: #a8b8bf;     /* 科技 */
+  --fig-art: #c8b8c0;         /* 艺术 */
   --page-max: 1600px;         /* 长卷最大宽度 */
   --dynasty-max: 60rem;       /* 概览页正文宽度 */
 
@@ -186,6 +199,7 @@ main,
     repeat(var(--civ-count), var(--civ-w))
     var(--world-w)
     var(--axis-w)
+    repeat(var(--fig-count), var(--fig-w))
     var(--china-w);
   /* 不设 align-items:start——跨行的文明色带须拉伸至其整个区间，
      否则会缩成起始行高的小方块，失去作为参照系的作用 */
@@ -435,6 +449,51 @@ main,
   position: sticky;
   top: 4rem;
 }
+
+/* ── 人物生卒带 ───────────────────────────────────── */
+
+/* 默认隐藏：泳道宽为 0，带体不渲染。
+   人物数量将远多于事件，常驻显示会淹没长卷本身。 */
+.figure-slot {
+  overflow: hidden;
+}
+
+.figure-band {
+  display: none;
+  height: 100%;
+  border-radius: var(--radius);
+  background: var(--fig-band-bg);
+  border: 1px solid var(--fig-band-line);
+  overflow: hidden;
+}
+
+.timeline.show-figures {
+  --fig-w: var(--fig-w-open);
+}
+
+.timeline.show-figures .figure-band {
+  display: block;
+}
+
+.figure-name {
+  writing-mode: vertical-rl;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  color: var(--fig-name-fg);
+  position: sticky;
+  top: 4rem;
+  padding: 0.3rem 0;
+  white-space: nowrap;
+}
+
+/* 按领域分色——文学与思想是长卷上最常出现的两类，
+   给它们最易辨识的色相 */
+.figure-band[data-field='文学'] { --fig-band-bg: var(--fig-lit); }
+.figure-band[data-field='思想'] { --fig-band-bg: var(--fig-thought); }
+.figure-band[data-field='政治'] { --fig-band-bg: var(--fig-politics); }
+.figure-band[data-field='军事'] { --fig-band-bg: var(--fig-military); }
+.figure-band[data-field='科技'] { --fig-band-bg: var(--fig-science); }
+.figure-band[data-field='艺术'] { --fig-band-bg: var(--fig-art); }
 
 /* ── 概览页 ───────────────────────────────────────── */
 

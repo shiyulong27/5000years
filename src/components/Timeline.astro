@@ -2,25 +2,40 @@
 import AxisCell from './AxisCell.astro'
 import EventCard from './EventCard.astro'
 import CivBand from './CivBand.astro'
+import FigureBand from './FigureBand.astro'
 import DynastyBanner from './DynastyBanner.astro'
 
-const { rows, bands, columns } = Astro.props
+const { rows, bands, figureBands = [], columns } = Astro.props
 
-// 列构成：[文明 × N][世界事件][中轴][中国事件]
-// N 与各列位置来自 timeline.js，组件不自行计算。
+// 列构成：[文明 × N][世界事件][中轴][人物 × M][中国事件]
+// N、M 与各列位置来自 timeline.js，组件不自行计算。
 const civCount = columns.total
+const figCount = columns.figureLanes ?? 0
+
 const colWorld = civCount + 1
 const colAxis = civCount + 2
-const colChina = civCount + 3
-const colTotal = civCount + 3
+const colFigStart = civCount + 3
+const colChina = civCount + 3 + figCount
+const colTotal = colChina
 ---
 
 <div
   class="timeline"
-  style={`--civ-count:${civCount};--col-total:${colTotal}`}
+  style={`--civ-count:${civCount};--fig-count:${figCount};--col-total:${colTotal}`}
+  data-has-figures={figCount > 0 ? 'true' : 'false'}
 >
   {/* 文明色带：跨越多行，各据其 region 列 */}
   {bands.map((band) => <CivBand band={band} />)}
+
+  {/* 人物生卒带：贪心排布的泳道，默认由 CSS 隐藏 */}
+  {figureBands.map((band) => (
+    <div
+      class="figure-slot"
+      style={`grid-row:${band.rowStart}/${band.rowEnd + 1};grid-column:${colFigStart + band.lane}`}
+    >
+      <FigureBand band={band} />
+    </div>
+  ))}
 
   {rows.map((row) =>
     row.type === 'banner' ? (

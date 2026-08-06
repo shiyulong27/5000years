@@ -1,7 +1,7 @@
 ---
-const { dynasties } = Astro.props
+import { CATEGORIES } from '../lib/enums.js'
 
-const CATEGORIES = ['政治', '战争', '文化', '科技', '经济', '外交', '灾异']
+const { dynasties } = Astro.props
 ---
 
 <div class="toolbar">
@@ -14,6 +14,11 @@ const CATEGORIES = ['政治', '战争', '文化', '科技', '经济', '外交', 
     <label class="switch switch-world">
       <input type="checkbox" class="switch-input" id="show-world" checked />
       <span class="switch-label">世界对照</span>
+    </label>
+
+    <label class="switch switch-figures">
+      <input type="checkbox" class="switch-input" id="show-figures" />
+      <span class="switch-label">人物</span>
     </label>
   </div>
 

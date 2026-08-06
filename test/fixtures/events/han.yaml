@@ -1,7 +1,8 @@
 - id: zhangqian-138bc
   date: "-0138"
   title: 张骞出使西域
-  category: 外交
+  category: 政治
+  tags: [外交, 边疆, 丝路]
   importance: 4
   summary: 汉武帝遣张骞通西域，丝绸之路自此开通。
   confidence: 确定

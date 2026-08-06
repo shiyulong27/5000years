@@ -9,6 +9,7 @@ const timeline = document.querySelector('.timeline')
 if (timeline) {
   const onlyMajor = document.getElementById('only-major')
   const showWorld = document.getElementById('show-world')
+  const showFigures = document.getElementById('show-figures')
   const catToggles = [...document.querySelectorAll('.cat-toggle')]
   const jump = document.getElementById('jump-dynasty')
   const current = document.getElementById('current-dynasty')
@@ -38,10 +39,14 @@ if (timeline) {
     }
 
     timeline.classList.toggle('hide-world', showWorld && !showWorld.checked)
+
+    // 人物图层默认关闭——人物数量远多于事件，常驻显示会淹没长卷本身
+    timeline.classList.toggle('show-figures', !!showFigures?.checked)
   }
 
   onlyMajor?.addEventListener('change', apply)
   showWorld?.addEventListener('change', apply)
+  showFigures?.addEventListener('change', apply)
   catToggles.forEach((t) => t.addEventListener('change', apply))
   apply()
 

@@ -1,0 +1,79 @@
+# 人物。以生卒年跨行渲染于中国栏，与世界栏的文明色带对称。
+#
+# 人物是时间跨度而非时间点，故不并入 events——若塞进事件模型，
+# 就得替李白挑一个日期（生年？卒年？写《将进酒》那年？），怎么选都失真。
+#
+# field 用于分色与筛选：文学/思想/政治/军事/科技/艺术
+# 默认不显示，由工具栏开关控制——人物数量将远多于事件，
+# 常驻显示会淹没长卷本身。
+
+- id: kongzi
+  name: 孔子
+  birth: "-0551"
+  death: "-0479"
+  field: 思想
+  note: 儒家创始人，其学说此后两千余年为中国思想之主干
+  confidence: 有争议
+  dispute: 生年有前551与前552两说，《史记》与《公羊传》所载不同。
+
+- id: laozi
+  name: 老子
+  birth: "-0571"
+  death: "-0471"
+  field: 思想
+  note: 道家创始人，著《道德经》
+  confidence: 有争议
+  dispute: |
+    生卒年全无定说，其人是否存在亦有争议。《史记》并列三种说法，
+    司马迁自己也无法断定。此处年代纯为在长卷上占位。
+
+- id: qinshihuang
+  name: 秦始皇
+  birth: "-0259"
+  death: "-0210"
+  field: 政治
+  note: 首位皇帝，废分封行郡县
+  confidence: 确定
+
+- id: simaqian
+  name: 司马迁
+  birth: "-0145"
+  death: "-0086"
+  field: 文学
+  note: 著《史记》，纪传体通史之祖
+  confidence: 有争议
+  dispute: 生年有前145与前135两说，卒年更无明确记载。
+
+- id: caocao
+  name: 曹操
+  birth: "0155"
+  death: "0220"
+  field: 政治
+  note: 挟天子以令诸侯，亦为建安文学代表
+  confidence: 确定
+
+- id: zhugeliang
+  name: 诸葛亮
+  birth: "0181"
+  death: "0234"
+  field: 政治
+  note: 蜀汉丞相，六出祁山
+  confidence: 确定
+
+- id: wangxizhi
+  name: 王羲之
+  birth: "0303"
+  death: "0361"
+  field: 艺术
+  note: 书圣，《兰亭集序》为行书第一
+  confidence: 有争议
+  dispute: 生卒年有 303–361 与 321–379 两说，学界未有定论。
+
+- id: taoyuanming
+  name: 陶渊明
+  birth: "0365"
+  death: "0427"
+  field: 文学
+  note: 田园诗之宗，不为五斗米折腰
+  confidence: 有争议
+  dispute: 生年有 365 与 372 等说。

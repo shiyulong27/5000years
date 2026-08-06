@@ -9,7 +9,7 @@ import { buildTimeline, resolveRoot } from '../lib/timeline.js'
 // 构建期完成，产物为纯静态 HTML
 const dataDir = fileURLToPath(new URL('../../data', import.meta.url))
 const data = loadAll(dataDir)
-const { rows, bands, columns } = buildTimeline(data)
+const { rows, bands, figureBands, columns } = buildTimeline(data)
 
 // 跳转下拉只列根朝代——子朝代在概览页内拆分
 const byId = new Map(data.dynasties.map((d) => [d.id, d]))
@@ -32,7 +32,7 @@ for (const d of data.dynasties) {
   <Toolbar dynasties={roots} />
 
   <main class="site-main">
-    <Timeline rows={rows} bands={bands} columns={columns} />
+    <Timeline rows={rows} bands={bands} figureBands={figureBands} columns={columns} />
   </main>
 
   <footer class="site-foot">
