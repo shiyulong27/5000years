@@ -1,0 +1,58 @@
+- id: ming-1368
+  date: "1368"
+  title: 朱元璋建明，定都应天
+  category: 政治
+  importance: 5
+  summary: 朱元璋即帝位于应天（今南京），国号明，是为明太祖。废丞相、设厂卫，皇权极于一人。
+  confidence: 确定
+  sources: [明史·太祖纪]
+
+- id: zheng-he-1405
+  date: "1405"
+  title: 郑和首下西洋
+  category: 政治
+  importance: 5
+  summary: 郑和率庞大船队首使西洋，前后七下，远达非洲东岸，为世界航海史壮举。
+  confidence: 确定
+  tags: [外交, 航海]
+
+- id: yongle-move-1421
+  date: "1421"
+  title: 永乐迁都北京
+  category: 政治
+  importance: 4
+  summary: 明成祖迁都北京，营建紫禁城，北边防务自此与都畿合一。
+  confidence: 确定
+
+- id: tumu-1449
+  date: "1449"
+  title: 土木之变
+  category: 战争
+  importance: 4
+  summary: 明英宗亲征瓦剌，于土木堡兵败被俘，明军精锐尽丧，是为国耻。
+  confidence: 确定
+
+- id: single-whip-1581
+  date: "1581"
+  title: 一条鞭法推行
+  category: 经济
+  importance: 4
+  summary: 张居正推行一条鞭法，赋役折银征收，简化税制，为财政改革之大端。
+  confidence: 确定
+
+- id: bencao-1596
+  date: "1596"
+  title: 《本草纲目》初刻
+  category: 文化
+  importance: 4
+  summary: 李时珍积三十年撰《本草纲目》，收药一千八百余种，为中医学集大成之作。
+  confidence: 确定
+  sources: [明史·李时珍传]
+
+- id: jiashen-1644
+  date: "1644"
+  title: 甲申之变，明亡
+  category: 政治
+  importance: 5
+  summary: 李自成破北京，崇祯帝自缢煤山，明亡；吴三桂旋引清兵入关。
+  confidence: 确定

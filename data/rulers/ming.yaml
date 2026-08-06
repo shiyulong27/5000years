@@ -1,0 +1,30 @@
+# 明代君主。只录开国、靖难迁都与末代三位。
+
+- dynasty: ming
+  temple_name: 明太祖
+  name: 朱元璋
+  reign_start: "1368"
+  reign_end: "1398"
+  era_names:
+    - 洪武
+  note: 乞儿起兵，驱元建明，废丞相、行八股，皇权揽于一身
+  role: founder
+
+- dynasty: ming
+  temple_name: 明成祖
+  name: 朱棣
+  reign_start: "1402"
+  reign_end: "1424"
+  era_names:
+    - 永乐
+  note: 靖难夺位，迁都北京，遣郑和七下西洋
+
+- dynasty: ming
+  temple_name: 明思宗
+  name: 朱由检
+  reign_start: "1627"
+  reign_end: "1644"
+  era_names:
+    - 崇祯
+  note: 勤政而回天乏术，李自成破京，自缢煤山
+  role: last

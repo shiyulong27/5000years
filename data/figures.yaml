@@ -119,3 +119,19 @@
   note: 元曲四大家之首，作《窦娥冤》等杂剧六十余种
   confidence: 有争议
   dispute: 生卒年无确载，此处为约值。
+
+- id: wangyangming
+  name: 王阳明
+  birth: "1472"
+  death: "1529"
+  field: 思想
+  note: 心学集大成者，「知行合一」「致良知」
+  confidence: 确定
+
+- id: lishizhen
+  name: 李时珍
+  birth: "1518"
+  death: "1593"
+  field: 科技
+  note: 著《本草纲目》，集本草学之大成
+  confidence: 确定
