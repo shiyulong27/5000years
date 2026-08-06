@@ -144,3 +144,28 @@
   note: 著《红楼梦》，古典小说之巅峰
   confidence: 有争议
   dispute: 生卒年无定论，生年有 1715 与 1724 两说，卒年亦有 1763 与 1764 说，此处为约值。
+
+- id: sushi
+  name: 苏轼
+  birth: "1037"
+  death: "1101"
+  field: 文学
+  note: 苏东坡，诗词文书画皆精，旷达豪放之宗
+  confidence: 确定
+
+- id: liqingzhao
+  name: 李清照
+  birth: "1084"
+  death: "1155"
+  field: 文学
+  note: 婉约词宗，易安体传世，南渡后词风转沉郁
+  confidence: 有争议
+  dispute: 卒年无确载，约 1155 为推定；晚年流寓行迹及再嫁与否亦有争议。
+
+- id: zhuxi
+  name: 朱熹
+  birth: "1130"
+  death: "1200"
+  field: 思想
+  note: 理学集大成者，四书集注，此后数百年科举之标的
+  confidence: 确定
