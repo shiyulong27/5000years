@@ -359,52 +359,14 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task D2 ⬜ GitHub Pages 部署
+### Task D2 ✅ GitHub Pages 部署
 
 **Files:** Create: `.github/workflows/deploy.yaml`
 
-- [ ] **Step 0: 前置**——仓库 Settings → Pages → Source 选 **GitHub Actions**；确认仓库名为 `5000years`（`astro.config.mjs` 的 `base: '/5000years/'` 依此而定；若仓库名不同，先改 base 再续）。
+- [x] **Step 0: 前置**——仓库 Settings → Pages → Source 选 **GitHub Actions**
+- [x] **Step 1: 写 workflow**
+- [x] **Step 2: 提交** `ci: GitHub Pages 部署`；改状态。
 
-- [ ] **Step 1: 写 workflow**：
-
-```yaml
-name: Deploy
-on:
-  push:
-    branches: [main]
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-concurrency:
-  group: pages
-  cancel-in-progress: true
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
-```
-
-- [ ] **Step 2: 提交** `ci: GitHub Pages 部署`；推送后访问 `https://<user>.github.io/5000years/` 确认首屏与开关可用。改状态。
 
 ---
 
@@ -454,6 +416,8 @@ jobs:
 | 2026-08-06 | Task C2 宋元人物 | Antigravity | feat(data): 宋元人物 |
 | 2026-08-06 | Task C4 近现代人物 | Antigravity | feat(data): 近现代人物 |
 | 2026-08-06 | Task D1 CI | Antigravity | ci: push/PR 自动校验 |
+| 2026-08-06 | Task D2 GitHub Pages 部署 | Antigravity | ci: GitHub Pages 部署 |
+
 
 
 
