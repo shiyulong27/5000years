@@ -1,0 +1,40 @@
+# 宋代君主（仅录北宋与南宋关键开国、末代及代表君主；辽、夏、金君主从略）。
+
+- dynasty: beisong
+  temple_name: 宋太祖
+  name: 赵匡胤
+  reign_start: "0960"
+  reign_end: "0976"
+  era_names: [建隆, 乾德, 开宝]
+  note: 陈桥兵变开国，杯酒释兵权
+  role: founder
+  confidence: 确定
+
+- dynasty: beisong
+  temple_name: 宋徽宗
+  name: 赵佶
+  reign_start: "1100"
+  reign_end: "1126"
+  era_names: [建中靖国, 崇宁, 大观, 政和, 重和, 宣和]
+  note: 艺术造诣极高，精于瘦金体，靖康之难被俘
+  confidence: 确定
+
+- dynasty: nansong
+  temple_name: 宋高宗
+  name: 赵构
+  reign_start: "1127"
+  reign_end: "1162"
+  era_names: [建炎, 绍兴]
+  note: 南宋开国皇帝，缔结绍兴和议
+  role: founder
+  confidence: 确定
+
+- dynasty: nansong
+  temple_name: 宋末帝
+  name: 赵昺
+  reign_start: "1278"
+  reign_end: "1279"
+  era_names: [祥兴]
+  note: 南宋末代幼帝，崖山海战投海殉国
+  role: last
+  confidence: 确定

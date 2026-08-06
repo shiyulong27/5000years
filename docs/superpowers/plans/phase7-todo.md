@@ -198,25 +198,15 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task A4 ⬜ 五代十国（907–960）
+### Task A4 ✅ 五代十国（907–960）
 
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/wudai.yaml`、`data/rulers/wudai.yaml`
 
-- [ ] **Step 1: 朝代**：根 `wudai 907–960 concurrent: true`（与十国并存），子朝代 `houliang 907–923 / houtang 923–936 / houjin 936–947 / houhan 947–951 / houzhou 951–960`。文件头注释：十国从略，横幅只出五代。
+- [x] **Step 1: 朝代**：根 `wudai 907–960 concurrent: true`（与十国并存），子朝代 `houliang 907–923 / houtang 923–936 / houjin 936–947 / houhan 947–951 / houzhou 951–960`。文件头注释：十国从略，横幅只出五代。
+- [x] **Step 2: 事件**
+- [x] **Step 3: 君主**：朱温（houliang, founder）、柴荣（houzhou, note 后周世宗，五代第一明君）。
+- [x] **Step 4: 验收 + 提交** `feat(data): 五代数据`；改状态。
 
-- [ ] **Step 2: 事件**：
-
-```
-0907 朱温篡唐，后梁建立      政治 5 确定
-0923 后唐灭后梁              政治 3 确定
-0936 石敬瑭割幽云十六州      政治 5 确定   tags: [边疆, 外交]
-0951 郭威建后周              政治 3 确定
-0955 周世宗改革与北伐        政治 4 确定
-```
-
-- [ ] **Step 3: 君主**：朱温（houliang, founder）、柴荣（houzhou, note 后周世宗，五代第一明君）。
-
-- [ ] **Step 4: 验收 + 提交** `feat(data): 五代数据`；改状态。
 
 ### Task A5 ⬜ 两宋与辽夏金（960–1279）
 
@@ -611,6 +601,8 @@ jobs:
 | 2026-08-06 | Task A1 南北朝 | Antigravity | feat(data): 南北朝——南北并立两组朝代与事件 |
 | 2026-08-06 | Task A2 隋 | Antigravity | feat(data): 隋代数据 |
 | 2026-08-06 | Task A3 唐 | Antigravity | feat(data): 唐代数据与李白等人物 |
+| 2026-08-06 | Task A4 五代十国 | Antigravity | feat(data): 五代数据 |
+
 
 
 
