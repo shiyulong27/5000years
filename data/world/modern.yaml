@@ -21,3 +21,71 @@
   importance: 5
   summary: 萨拉热窝事件引发第一次世界大战爆发，同盟国与协约国展开全球性大战。
   confidence: 确定
+
+- id: october-revolution-1917
+  date: "1917"
+  title: 十月革命
+  category: 政治
+  importance: 5
+  summary: 列宁领导布尔什维克发动十月革命，建立世界上第一个社会主义国家。
+  confidence: 确定
+
+- id: great-depression-1929
+  date: "1929"
+  title: 大萧条
+  category: 经济
+  importance: 5
+  summary: 美国股市暴跌引发席卷全球的资本主义经济大危机。
+  confidence: 确定
+
+- id: ww2-outbreak-1939
+  date: "1939"
+  title: 二战全面爆发
+  category: 战争
+  importance: 5
+  summary: 德军突袭波兰，英法对德宣战，第二次世界大战在欧洲全面爆发。
+  confidence: 确定
+
+- id: un-founding-1945
+  date: "1945"
+  title: 联合国成立
+  category: 政治
+  importance: 4
+  summary: 《联合国宪章》生效，联合国正式成立，旨在维护国际和平与安全。
+  confidence: 确定
+
+- id: moon-landing-1969
+  date: "1969"
+  title: 人类登月
+  category: 文化
+  importance: 5
+  summary: 美国阿波罗11号飞船成功登月，阿姆斯特朗迈出人类在月球上的第一步。
+  confidence: 确定
+  tags: [航天, 科技]
+
+- id: ussr-dissolution-1991
+  date: "1991"
+  title: 苏联解体
+  category: 政治
+  importance: 5
+  summary: 戈尔巴乔夫辞去苏联总统职务，苏联解体，冷战格局终结。
+  confidence: 确定
+
+- id: www-launch-1991
+  date: "1991"
+  title: 万维网诞生
+  category: 文化
+  importance: 4
+  summary: 蒂姆·伯纳斯-李向公众开放万维网，开启信息时代与互联网革命。
+  confidence: 确定
+  tags: [互联网, 科技]
+
+- id: llm-rise-2022
+  date: "2022"
+  title: 大语言模型兴起
+  category: 文化
+  importance: 4
+  summary: 生成式人工智能与大语言模型突破性发展，掀起全球新一轮 AI 科技革命。
+  confidence: 确定
+  tags: [科技, AI]
+

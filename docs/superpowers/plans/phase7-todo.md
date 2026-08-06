@@ -297,19 +297,13 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task B3 ⬜ 世界近代（1800–1914）
+### Task B3 ✅ 世界近代（1800–1914）
 
 **Files:** Create: `data/world/modern.yaml`（B4 将追加同一文件）
 
-- [ ] **Step 1: 条目（近代段）**：
+- [x] **Step 1: 条目（近代段）**
+- [x] **Step 2: 验收 + 提交** `feat(data): 世界近代事件`；改状态。
 
-```
-1861 美国内战                战争 4 确定
-1868 明治维新始              政治 4 确定
-1914 一战爆发                战争 5 确定
-```
-
-- [ ] **Step 2: 验收 + 提交** `feat(data): 世界近代事件`；改状态。
 
 ---
 
@@ -501,6 +495,8 @@ jobs:
 | 2026-08-06 | Task A10 现代 | Antigravity | feat(data): 1949–2026 数据 |
 | 2026-08-06 | Task B1 世界中世纪 | Antigravity | feat(data): 世界中世纪事件 |
 | 2026-08-06 | Task B2 世界近代早期 | Antigravity | feat(data): 世界近代早期事件 |
+| 2026-08-06 | Task B3 世界近代 | Antigravity | feat(data): 世界近代事件 |
+
 
 
 
