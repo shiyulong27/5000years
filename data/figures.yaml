@@ -77,3 +77,36 @@
   note: 田园诗之宗，不为五斗米折腰
   confidence: 有争议
   dispute: 生年有 365 与 372 等说。
+
+- id: libai
+  name: 李白
+  birth: "0701"
+  death: "0762"
+  field: 文学
+  note: 诗仙，浪漫主义巅峰，仗剑远游，放浪诗酒
+  confidence: 确定
+
+- id: dufu
+  name: 杜甫
+  birth: "0712"
+  death: "0770"
+  field: 文学
+  note: 诗圣，沉郁顿挫，忧国忧民，被称为「诗史」
+  confidence: 确定
+
+- id: wangwei
+  name: 王维
+  birth: "0701"
+  death: "0761"
+  field: 文学
+  note: 诗中有画，山水田园与禅意并存
+  confidence: 有争议
+  dispute: 生年有 699 与 701 两说。
+
+- id: xuanzang
+  name: 玄奘
+  birth: "0602"
+  death: "0664"
+  field: 思想
+  note: 西行求法十七年，译经传法，著《大唐西域记》
+  confidence: 确定

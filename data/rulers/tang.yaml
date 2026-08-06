@@ -1,0 +1,50 @@
+# 唐代君主。只录五帝；其余二十余帝从略。
+
+- dynasty: tang
+  temple_name: 唐高祖
+  name: 李渊
+  reign_start: "0618"
+  reign_end: "0626"
+  era_names:
+    - 武德
+  note: 太原起兵，建唐一统
+  role: founder
+
+- dynasty: tang
+  temple_name: 唐太宗
+  name: 李世民
+  reign_start: "0626"
+  reign_end: "0649"
+  era_names:
+    - 贞观
+  note: 贞观之治，纳谏如流，其后李世民形象为历代明君之典范
+
+- dynasty: tang
+  temple_name: 则天大圣皇帝
+  name: 武曌
+  reign_start: "0690"
+  reign_end: "0705"
+  era_names:
+    - 天授
+    - 神龙
+  note: 中国唯一正统女皇帝，改国号周，用酷吏而亦能任贤
+
+- dynasty: tang
+  temple_name: 唐玄宗
+  name: 李隆基
+  reign_start: "0712"
+  reign_end: "0756"
+  era_names:
+    - 开元
+    - 天宝
+  note: 开元盛世之君，晚年宠杨贵妃、任奸相，酿成安史之乱
+
+- dynasty: tang
+  temple_name: 唐哀帝
+  name: 李柷
+  reign_start: "0904"
+  reign_end: "0907"
+  era_names:
+    - 天祐
+  note: 唐末代皇帝，禅位于朱温，唐亡
+  role: last
