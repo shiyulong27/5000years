@@ -1,62 +1,47 @@
-# 5000years - 中华五千年与世界文明长卷
+# 上下五千年 · 历史时间线
 
-纯静态 Astro 打造的历史长卷可视化平台，将中国历史朝代、大事记、重要君主、文化人物与世界文明发展交织呈现。
+一幅纵贯五千年的长卷时间线。从上古传说到 2026，中国朝代、人物与
+世界文明色带并置于一轴，可缩放、可筛选、可对照东西方历史进程。
 
----
+纯静态站点，数据为 YAML，构建期强校验，绝不发布错误页面。
 
-## 1. 项目一览
+## 项目一览
 
-- **中国史线**：覆盖上古至 现代（-3000 ~ 2026），包含朝代色带、重大政治/战争/文化/经济/灾害事件及君主在位时段。
-- **世界史与文明泳道**：同步呈现在地中海、欧洲、西亚、美洲及印度等文明区域的发展演变与重大历史事件。
-- **人物层**：整合重要历史人物生卒年与领域，支持开关显示。
+- **技术栈**：Astro 5 · js-yaml · vitest · Playwright（诊断脚本）· GitHub Actions
+- **数据模型**：`data/` 下 YAML——朝代（dynasties）、事件（events）、
+  君主（rulers）、人物（figures）、世界事件（world）、文明色带（civilizations）
+- **渲染**：`src/lib/timeline.js` 纯函数把数据编译为行/列，Astro 组件布局
+- **质量闸门**：`npm run build` 串联 校验 → 单测 → 构建，任一步失败即中断
 
----
-
-## 2. 本地运行
+## 本地运行
 
 ```bash
-# 安装依赖
-npm install
-
-# 启动本地开发服务器
-npm run dev
-
-# 运行数据校验与单元测试
-npm test
-
-# 生产环境构建
-npm run build
+npm i          # 安装依赖
+npm run dev    # 开发服务器，http://localhost:4321/5000years/
+npm run build  # 校验 + 测试 + 构建，产物在 dist/
+npm test       # 仅跑单元测试（不含数据校验）
+npm run validate  # 仅跑数据校验
 ```
 
----
+## 数据贡献流程
 
-## 3. 数据贡献流程
+1. **读速查**：`docs/superpowers/plans/phase7-todo.md` 的「数据模型速查」——
+   date 用带引号字符串（`"-0221"`、`"0618"`、`"0220-12-11"`），
+   公元前为负；category 五类（政治/战争/文化/经济/灾害）；
+   confidence 四等（确定/存疑/有争议/传说）。
+2. **改数据**：在 `data/` 对应文件增删条目。
+3. **校验**：`npm run validate`。errors=0 才可提交；warnings 需懂来源。
+4. **争议标注**：confidence 非「确定」必须填 `dispute` 说明争议内容，
+   不得只标「有争议」而不写为何。异说一律按争议机制标注，不伪造精确。
+5. **提交**：消息格式跟随历史（`feat(data): …`、`ci: …`）。
 
-数据文件存放于 `data/` 目录，格式为 YAML。
+## 外部 AI 审查提示词指引
 
-### 数据模型速查
-- **朝代 (`data/dynasties.yaml`)**: `id`, `name`, `start`, `end`, `color`, `summary`, `parent`（可选）, `concurrent`（可选）。
-- **事件 (`data/events/*.yaml`)**: `id`, `date`, `title`, `category` (政治/战争/文化/经济/灾害), `importance` (1–5), `summary`, `confidence`, `dispute`（`confidence` 非「确定」时必填）。
-- **君主 (`data/rulers/*.yaml`)**: `dynasty` (须为叶子朝代), `temple_name`, `name`, `reign_start`, `reign_end`, `era_names`, `note`, `role` (founder/last), `confidence`.
-- **人物 (`data/figures.yaml`)**: `id`, `name`, `birth`, `death`, `field` (文学/思想/政治/军事/科技/艺术), `confidence`.
-- **文明 (`data/civilizations.yaml`)**: `name`, `start`, `end`, `region`, `color`.
+数据量大、AI 生成与人工编辑混合，建议定期用强模型全量复审：
+[`docs/prompts/data-review.md`](docs/prompts/data-review.md) 提供四套
+审查模板（史实交叉、表述中性、争议标注、编年一致性），可产出
+`条目id | 问题类型 | 说明 | 建议` 表后逐条修复。
 
-### 校验规范
-提交数据前须运行校验器：
-```bash
-node scripts/validate.mjs
-```
-确保 `errors=0`。
+## 阶段计划索引
 
----
-
-## 4. 外部 AI 审查提示词指引
-
-在对数据进行史实与表述复审时，可参考项目内置的 AI 审查提示词模板：
-`docs/prompts/data-review.md`
-
----
-
-## 5. 阶段计划索引
-
-- `docs/superpowers/plans/phase7-todo.md` - 阶段七实施计划（长卷数据延伸至 2026 + CI/CD）
+- 实施计划：`docs/superpowers/plans/phase7-todo.md`（阶段七：长卷数据延伸至 2026 + CI/CD）

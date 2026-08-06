@@ -1,45 +1,41 @@
-- id: zhuwen-houliang-0907
+- id: houliang-907
   date: "0907"
   title: 朱温篡唐，后梁建立
   category: 政治
   importance: 5
-  summary: 朱温逼唐哀帝禅位，建国号梁，史称后梁，唐亡，五代十国始。
+  summary: 朱温废唐哀帝自立，国号梁，唐亡，中国进入五代十国分裂期。
   confidence: 确定
-  sources: [旧五代史·梁书·太祖纪]
+  sources: [旧五代史·梁太祖纪]
 
-- id: houtang-destroy-houliang-0923
+- id: houtang-923
   date: "0923"
   title: 后唐灭后梁
   category: 政治
   importance: 3
-  summary: 庄宗李存勖攻陷汴州，灭后梁，建国号唐，史称后唐。
+  summary: 李存勖灭梁，建后唐，都洛阳，以继唐统自居。
   confidence: 确定
-  sources: [旧五代史·唐书·庄宗纪]
 
-- id: shijingtang-16-prefectures-0936
+- id: shi-jingtang-936
   date: "0936"
   title: 石敬瑭割幽云十六州
   category: 政治
   importance: 5
-  summary: 石敬瑭向契丹求援攻灭后唐，建立后晋，割让幽云十六州于契丹，称「儿皇帝」。
+  summary: 石敬瑭借契丹兵灭后唐称帝，割幽云十六州相酬，中原自此失燕云屏障，为宋辽积弱之远因。
   confidence: 确定
-  sources: [旧五代史·晋书·高祖纪]
   tags: [边疆, 外交]
 
-- id: guowei-houzhou-0951
+- id: houzhou-951
   date: "0951"
   title: 郭威建后周
   category: 政治
   importance: 3
-  summary: 郭威发动黄旗加身，建国号周，史称后周。
+  summary: 郭威受禅建后周，轻徭薄赋，为周世宗改革奠基。
   confidence: 确定
-  sources: [旧五代史·周书·太祖纪]
 
-- id: zhoushizong-reform-0955
+- id: shizong-955
   date: "0955"
   title: 周世宗改革与北伐
   category: 政治
   importance: 4
-  summary: 周世宗柴荣整顿吏治军纪，整修大运河，西败后蜀，南征南唐，北伐辽朝，奠定宋朝统一基础。
+  summary: 周世宗柴荣励精图治，整顿军政、北伐契丹，收复数州，惜天不假年。
   confidence: 确定
-  sources: [旧五代史·周书·世宗纪]

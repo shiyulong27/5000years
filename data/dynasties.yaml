@@ -156,35 +156,30 @@
   color: "#7f8c8d"
   concurrent: true
   summary: 宋齐梁陈四代相承，皆都建康。
-
 - id: liusong
   name: 刘宋
   start: "0420"
   end: "0479"
   color: "#7f8c8d"
   parent: nanchao
-
 - id: nanqi
   name: 南齐
   start: "0479"
   end: "0502"
   color: "#7f8c8d"
   parent: nanchao
-
 - id: liang
   name: 梁
   start: "0502"
   end: "0557"
   color: "#7f8c8d"
   parent: nanchao
-
 - id: chen
   name: 陈
   start: "0557"
   end: "0589"
   color: "#7f8c8d"
   parent: nanchao
-
 - id: beichao
   name: 北朝
   start: "0386"
@@ -194,98 +189,97 @@
   summary: |
     北魏统一北方始称北朝；此处区间上溯至北魏建国，
     以容纳其子朝代。
-
 - id: beiwei
   name: 北魏
   start: "0386"
   end: "0534"
   color: "#8d6e63"
   parent: beichao
-
 - id: dongwei
   name: 东魏
   start: "0534"
   end: "0550"
   color: "#8d6e63"
   parent: beichao
+  # 与西魏 535–550 并存，兄弟区间重叠须声明
   concurrent: true
-
 - id: xiwei
   name: 西魏
   start: "0535"
   end: "0557"
   color: "#8d6e63"
   parent: beichao
+  # 与东魏 535–550、北齐 550–557 并存
   concurrent: true
-
 - id: beiqi
   name: 北齐
   start: "0550"
   end: "0577"
   color: "#8d6e63"
   parent: beichao
+  # 与西魏 550–557、北周 557–577 并存
   concurrent: true
-
 - id: beizhou
   name: 北周
   start: "0557"
   end: "0581"
   color: "#8d6e63"
   parent: beichao
+  # 与北齐 557–577 并存
   concurrent: true
 
+# ── 隋：二世而亡，制度遗泽唐宋 ─────────────────────────────────
 - id: sui
   name: 隋
   start: "0581"
   end: "0618"
   color: "#5d6d7e"
+  # 581–589 与南朝陈并存，灭陈后方一统，故须声明
   concurrent: true
-  summary: 二世而亡，制度遗泽唐宋。
+  summary: 开皇平陈天下一统，然役民过甚，二世而亡；三省六部、科举与运河之制遗泽唐宋。
 
+# ── 唐：盛极而衰，藩镇割据 ─────────────────────────────────────
 - id: tang
   name: 唐
   start: "0618"
   end: "0907"
+  capital: 长安
   color: "#b03a2e"
-  summary: 气度恢弘，经济文化空前繁荣，与汉并称汉唐盛世。
+  summary: 贞观开元两度盛世，安史之乱后藩镇割据、宦官弄权，终亡于朱温之手。
 
-# ── 五代十国：十国从略，横幅只出五代 ─────────────────────────
+# ── 五代十国：中原更替五朝，与南方十国并存 ─────────────────────
+# 十国从略，横幅只出五代。
 - id: wudai
   name: 五代
   start: "0907"
   end: "0960"
   color: "#7f8c8d"
   concurrent: true
-  summary: 唐亡后中原相继建立的五个朝代，南方及山西另有十国割据。
-
+  summary: 中原梁唐晋汉周相继，与南方十国并存。
 - id: houliang
   name: 后梁
   start: "0907"
   end: "0923"
   color: "#7f8c8d"
   parent: wudai
-
 - id: houtang
   name: 后唐
   start: "0923"
   end: "0936"
   color: "#7f8c8d"
   parent: wudai
-
 - id: houjin
   name: 后晋
   start: "0936"
   end: "0947"
   color: "#7f8c8d"
   parent: wudai
-
 - id: houhan
   name: 后汉
   start: "0947"
   end: "0951"
   color: "#7f8c8d"
   parent: wudai
-
 - id: houzhou
   name: 后周
   start: "0951"
@@ -293,102 +287,95 @@
   color: "#7f8c8d"
   parent: wudai
 
-# ── 两宋与辽夏金：四政权长期并立，根均 concurrent ─────────────────
+# ── 两宋与辽、夏、金：长期并存，四个根均 concurrent ────────────
 - id: song
   name: 宋
   start: "0960"
   end: "1279"
   color: "#21618c"
   concurrent: true
-  summary: 重文轻武，商品经济与科技文化高度发达。
-
+  summary: 与辽、西夏、金长期并立，重文轻武，岁币买和，终覆于蒙古铁蹄。
 - id: beisong
   name: 北宋
   start: "0960"
   end: "1127"
   color: "#21618c"
   parent: song
-
 - id: nansong
   name: 南宋
   start: "1127"
   end: "1279"
   color: "#21618c"
   parent: song
-
 - id: liao
   name: 辽
   start: "0916"
   end: "1125"
   color: "#6c3483"
   concurrent: true
-  summary: 契丹族建立的北方政权。
-
+  summary: 契丹所建，与五代、北宋先后并立，澶渊之盟后以岁币维持和平。
 - id: xixia
   name: 西夏
   start: "1038"
   end: "1227"
   color: "#117a65"
   concurrent: true
-  summary: 党项族建立的西北政权。
-
+  summary: 党项所建，据西北一隅，与宋辽金周旋三百载。
 - id: jin1115
   name: 金
   start: "1115"
   end: "1234"
   color: "#a04000"
   concurrent: true
-  summary: "女真族建立的北方政权；与司马氏晋（id: jin）区分。"
+  summary: 女真所建，灭辽灭北宋，与南宋对峙，终亡于蒙古。
 
+# ── 元：蒙古铁蹄定于一统 ───────────────────────────────────────
 - id: yuan
   name: 元
   start: "1271"
   end: "1368"
-  color: "#7d6608"
+  capital: 大都
+  color: "#7b241c"
+  # 1271–1279 与之未灭的南宋并存，故声明
   concurrent: true
-  summary: 蒙古族建立的统一王朝，实行行省制度，版图空前辽阔。
+  summary: 忽必烈定国号大元，混一南北，行省制下疆域空前，然民族高压、民变四起，不足百年而亡。
 
+# ── 明：收权极端的汉人王朝 ─────────────────────────────────────
 - id: ming
   name: 明
   start: "1368"
   end: "1644"
-  color: "#c0392b"
+  capital: 北京
+  color: "#b03a2e"
+  # 1636–1644 与清并存，故声明
   concurrent: true
-  summary: 朱元璋建立的大一统王朝，加强专制皇权，郑和下西洋展现海上强盛。
+  summary: 太祖驱元建制，永乐迁都北京，中后期宦官专权、党争酷烈，终亡于李自成与清。
 
+# ── 清：由极盛到三千年未有之变局 ───────────────────────────────
 - id: qing
   name: 清
   start: "1636"
   end: "1912"
-  color: "#8e44ad"
+  capital: 北京
+  color: "#a04000"
+  # 1636–1644 与明并存，入关前后与南明政权亦有重叠，故声明
   concurrent: true
-  summary: 满族建立的统一王朝，奠定近现代中国版图基础。
+  summary: 由后金改称大清入主中原，康雍乾三朝鼎盛，晚清遭列强冲击，变法自强不果，终为辛亥革命终结。
 
-# ── 民国：共和无帝，不建 rulers 文件 ───────────────────────────
+# ── 民国：五族共和，政局多艰 ───────────────────────────────────
+# 共和无帝，故 rulers 不建文件。
 - id: minguo
-  name: 中华民国
+  name: 民国
   start: "1912"
   end: "1949"
-  color: "#2980b9"
+  color: "#5d6d7e"
   concurrent: true
-  summary: 推翻帝制建立共和，历经北洋政府与国民政府时期及八年全面抗战。
+  summary: 清帝逊位后建立的共和政体，历经北洋政府与国民政府时期，军阀割据、抗战军兴，政局多艰。
 
+# ── 中华人民共和国：1949 迄今 ──────────────────────────────────
 - id: zhonghua
   name: 中华人民共和国
   start: "1949"
   end: "2026"
   color: "#c0392b"
-  summary: 1949年10月1日成立，开启中国现代史新篇章。
-
-
-
-
-
-
-
-
-
-
-
-
-
+  summary: 1949 年成立的人民共和国。改革开放后经济快速发展，综合国力显著提升。

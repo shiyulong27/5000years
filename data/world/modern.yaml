@@ -1,91 +1,93 @@
-- id: us-civil-war-1861
+# 世界近代（1800–1914）与现代（1914–2026）事件。
+# 近代段与现当代段同置一文件，见证由列强争霸到两战与科技时代的转折。
+
+- id: w-us-civil-war-1861
   date: "1861"
   title: 美国内战
   category: 战争
   importance: 4
-  summary: 美国南北战争爆发，北方工业州击败南方奴隶州，维护了国家统一并废除了奴隶制。
+  summary: 南北诸州因奴隶制与州权决裂开战，林肯领导北方获胜，美国自此走向统一强国。
   confidence: 确定
 
-- id: meiji-restoration-1868
+- id: w-meiji-1868
   date: "1868"
   title: 明治维新始
   category: 政治
   importance: 4
-  summary: 日本推翻幕府统治，明治天皇开始推行西化改革，迅速走上资本主义与工业化道路。
+  summary: 日本明治天皇主政，废藩置县、殖产兴业，从封建幕府转为近代国家。
   confidence: 确定
 
-- id: ww1-outbreak-1914
+- id: w-ww1-1914
   date: "1914"
   title: 一战爆发
   category: 战争
   importance: 5
-  summary: 萨拉热窝事件引发第一次世界大战爆发，同盟国与协约国展开全球性大战。
+  summary: 萨拉热窝事件后列强两大阵营全面开战，世界陷入四年浩劫，欧洲霸权自此动摇。
   confidence: 确定
 
-- id: october-revolution-1917
+- id: w-oct-revolution-1917
   date: "1917"
   title: 十月革命
   category: 政治
   importance: 5
-  summary: 列宁领导布尔什维克发动十月革命，建立世界上第一个社会主义国家。
+  summary: 布尔什维克在俄国夺取政权，建立苏维埃，成为世界上第一个社会主义国家。
   confidence: 确定
 
-- id: great-depression-1929
+- id: w-great-depression-1929
   date: "1929"
   title: 大萧条
   category: 经济
   importance: 5
-  summary: 美国股市暴跌引发席卷全球的资本主义经济大危机。
+  summary: 华尔街股市崩盘引发全球经济大萧条，数千万人失业，加深了国际危机。
   confidence: 确定
 
-- id: ww2-outbreak-1939
+- id: w-ww2-1939
   date: "1939"
   title: 二战全面爆发
   category: 战争
   importance: 5
-  summary: 德军突袭波兰，英法对德宣战，第二次世界大战在欧洲全面爆发。
+  summary: 德国入侵波兰，二战全面爆发，战火遍及全球，造成空前伤亡。
   confidence: 确定
 
-- id: un-founding-1945
+- id: w-un-1945
   date: "1945"
   title: 联合国成立
   category: 政治
   importance: 4
-  summary: 《联合国宪章》生效，联合国正式成立，旨在维护国际和平与安全。
+  summary: 五十国签署《联合国宪章》，联合国正式成立，望以多边机制维持世界和平。
   confidence: 确定
 
-- id: moon-landing-1969
+- id: w-moon-1969
   date: "1969"
   title: 人类登月
   category: 文化
   importance: 5
-  summary: 美国阿波罗11号飞船成功登月，阿姆斯特朗迈出人类在月球上的第一步。
+  summary: 阿波罗十一号载人登月成功，阿姆斯特朗踏上月球，人类足迹首次印于地外天体。
   confidence: 确定
   tags: [航天, 科技]
 
-- id: ussr-dissolution-1991
+- id: w-soviet-fall-1991
   date: "1991"
   title: 苏联解体
   category: 政治
   importance: 5
-  summary: 戈尔巴乔夫辞去苏联总统职务，苏联解体，冷战格局终结。
+  summary: 苏联各加盟共和国相继独立，冷战格局随之终结，世界进入一超多强时代。
   confidence: 确定
 
-- id: www-launch-1991
+- id: w-web-1991
   date: "1991"
   title: 万维网诞生
   category: 文化
   importance: 4
-  summary: 蒂姆·伯纳斯-李向公众开放万维网，开启信息时代与互联网革命。
+  summary: 伯纳斯-李向公众开放万维网，全球信息互联自此融入日常生活。
   confidence: 确定
   tags: [互联网, 科技]
 
-- id: llm-rise-2022
+- id: w-llm-2022
   date: "2022"
   title: 大语言模型兴起
   category: 文化
   importance: 4
-  summary: 生成式人工智能与大语言模型突破性发展，掀起全球新一轮 AI 科技革命。
+  summary: 生成式大语言模型面向公众开放，人工智能应用急剧普及，重塑知识工作方式。
   confidence: 确定
   tags: [科技, AI]
-

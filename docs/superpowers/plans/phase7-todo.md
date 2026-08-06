@@ -145,7 +145,7 @@ README.md                  ← 新建
   parent: beichao
 ```
 
-- [ ] **Step 2: 写事件文件** `data/events/nanchao-beichao.yaml`，条目清单（date / title / category / importance / confidence；summary 用 qin.yaml 笔法自撰 1–2 句）：
+- [x] **Step 2: 写事件文件** `data/events/nanchao-beichao.yaml`，条目清单（date / title / category / importance / confidence；summary 用 qin.yaml 笔法自撰 1–2 句）：
 
 ```
 0420 刘裕代晋，刘宋建立      政治 4 确定
@@ -158,15 +158,15 @@ README.md                  ← 新建
 0557 陈霸先建陈；北周代西魏  政治 3 确定
 ```
 
-- [ ] **Step 3: 写君主文件** `data/rulers/nanchao-beichao.yaml`：刘裕（liusong, founder）、陈叔宝（chen, last, note 后主）、北魏孝文帝（beiwei, note 汉化改革）、宇文邕/周武帝（beizhou, note 灭佛与灭北齐）。其余从略，文件头注释说明。
+- [x] **Step 3: 写君主文件** `data/rulers/nanchao-beichao.yaml`：刘裕（liusong, founder）、陈叔宝（chen, last, note 后主）、北魏孝文帝（beiwei, note 汉化改革）、宇文邕/周武帝（beizhou, note 灭佛与灭北齐）。其余从略，文件头注释说明。
 
-- [ ] **Step 4: 验收**
+- [x] **Step 4: 验收**
 Run: `node scripts/validate.mjs`
 Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
-- [ ] **Step 5: 史实自查**——用 `docs/prompts/data-review.md` 模板 1、2 对本批条目自查一遍，异说（如孝文帝迁都年份 493/494 之类）标 dispute。
+- [x] **Step 5: 史实自查**——用 `docs/prompts/data-review.md` 模板 1、2 对本批条目自查一遍，异说（如孝文帝迁都年份 493/494 之类）标 dispute。
 
-- [ ] **Step 6: 提交并改状态**
+- [x] **Step 6: 提交并改状态**
 `git commit -m "feat(data): 南北朝——南北并立两组朝代与事件"`；标题 ⬜→✅，完成记录追加。
 
 ---
@@ -176,11 +176,22 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/sui.yaml`、`data/rulers/sui.yaml`
 
 - [x] **Step 1: 朝代**：`sui 581–618 color #5d6d7e`，summary 提「二世而亡，制度遗泽唐宋」。
-- [x] **Step 2: 事件**（summary 自撰）
-- [x] **Step 3: 君主**：隋文帝（founder, note 开皇之治）、隋炀帝（last, note 大业与三征）。
-- [x] **Step 4: 验收** `node scripts/validate.mjs` → errors=0。
-- [x] **Step 5: 提交** `feat(data): 隋代数据`；改状态。
 
+- [x] **Step 2: 事件**（summary 自撰）：
+
+```
+0581 杨坚代周，隋建立        政治 5 确定
+0589 隋灭陈，天下一统        政治 5 确定
+0605 开通大运河              经济 4 确定   tags: [工程, 漕运]
+0612 一征高句丽，败还        战争 4 确定
+0618 隋亡                    政治 4 确定
+```
+
+- [x] **Step 3: 君主**：隋文帝（founder, note 开皇之治）、隋炀帝（last, note 大业与三征）。
+
+- [x] **Step 4: 验收** `node scripts/validate.mjs` → errors=0。
+
+- [x] **Step 5: 提交** `feat(data): 隋代数据`；改状态。
 
 ---
 
@@ -189,12 +200,35 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 **Files:** Modify: `data/dynasties.yaml`、`data/figures.yaml`；Create: `data/events/tang.yaml`、`data/rulers/tang.yaml`
 
 - [x] **Step 1: 朝代**：`tang 618–907 color "#b03a2e"`。
-- [x] **Step 2: 事件**
-- [x] **Step 3: 君主**：唐高祖（founder）、唐太宗（note 贞观）、武则天（note 中国唯一正统女皇帝）、唐玄宗（note 开元天宝）、唐哀帝（last, note 禅位于朱温）。
-- [x] **Step 4: 人物**（追加 `data/figures.yaml`，用户点名的李白在此）
-- [x] **Step 5: 验收** `node scripts/validate.mjs` → errors=0；事件数 ≥9。
-- [x] **Step 6: 提交** `feat(data): 唐代数据与李白等人物`；改状态。
 
+- [x] **Step 2: 事件**：
+
+```
+0618 李渊建唐                政治 5 确定
+0626 玄武门之变，翌年改元贞观 政治 4 确定
+0629 玄奘西行                文化 4 有争议  dispute: 西行年份诸传不一，此处从贞观三年说。
+0690 武则天称帝，改国号周    政治 5 确定
+0713 开元纪元始              政治 4 确定
+0755 安史之乱爆发            战争 5 确定
+0780 两税法行                经济 4 确定   sources: [旧唐书·食货志]
+0845 会昌灭佛                文化 3 确定
+0875 黄巢起义                战争 4 确定
+```
+
+- [x] **Step 3: 君主**：唐高祖（founder）、唐太宗（note 贞观）、武则天（note 中国唯一正统女皇帝）、唐玄宗（note 开元天宝）、唐哀帝（last, note 禅位于朱温）。
+
+- [x] **Step 4: 人物**（追加 `data/figures.yaml`，用户点名的李白在此）：
+
+```
+libai    李白   0701–0762 文学 确定
+dufu     杜甫   0712–0770 文学 确定
+wangwei  王维   0701–0761 文学 有争议 dispute: 生年有 699 与 701 两说。
+xuanzang 玄奘   602–0664  思想 确定
+```
+
+- [x] **Step 5: 验收** `node scripts/validate.mjs` → errors=0；事件数 ≥9。
+
+- [x] **Step 6: 提交** `feat(data): 唐代数据与李白等人物`；改状态。
 
 ---
 
@@ -203,21 +237,60 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/wudai.yaml`、`data/rulers/wudai.yaml`
 
 - [x] **Step 1: 朝代**：根 `wudai 907–960 concurrent: true`（与十国并存），子朝代 `houliang 907–923 / houtang 923–936 / houjin 936–947 / houhan 947–951 / houzhou 951–960`。文件头注释：十国从略，横幅只出五代。
-- [x] **Step 2: 事件**
-- [x] **Step 3: 君主**：朱温（houliang, founder）、柴荣（houzhou, note 后周世宗，五代第一明君）。
-- [x] **Step 4: 验收 + 提交** `feat(data): 五代数据`；改状态。
 
+- [x] **Step 2: 事件**：
+
+```
+0907 朱温篡唐，后梁建立      政治 5 确定
+0923 后唐灭后梁              政治 3 确定
+0936 石敬瑭割幽云十六州      政治 5 确定   tags: [边疆, 外交]
+0951 郭威建后周              政治 3 确定
+0955 周世宗改革与北伐        政治 4 确定
+```
+
+- [x] **Step 3: 君主**：朱温（houliang, founder）、柴荣（houzhou, note 后周世宗，五代第一明君）。
+
+- [x] **Step 4: 验收 + 提交** `feat(data): 五代数据`；改状态。
 
 ### Task A5 ✅ 两宋与辽夏金（960–1279）
 
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/song.yaml`、`data/rulers/song.yaml`
 
-- [x] **Step 1: 朝代**（宋与辽、夏、金长期并存，**四个根全部 concurrent: true**）
-- [x] **Step 2: 事件**
-- [x] **Step 3: 君主**：宋太祖（beisong, founder）、宋徽宗（beisong, note）、宋高宗（nansong, founder）、赵昺（nansong, last, note 崖山殉国）。辽金君主从略，注释说明。
-- [x] **Step 4: 验收 + 自查**
-- [x] **Step 5: 提交** `feat(data): 两宋与辽夏金`；改状态。
+- [x] **Step 1: 朝代**（宋与辽、夏、金长期并存，**四个根全部 concurrent: true**）：
 
+```yaml
+- id: song        # 子：beisong 960–1127 / nansong 1127–1279
+  name: 宋
+  start: "0960"
+  end: "1279"
+  color: "#21618c"
+  concurrent: true
+- id: liao    916–1125  concurrent: true  color "#6c3483"
+- id: xixia   1038–1227 concurrent: true  color "#117a65"
+- id: jin1115 1115–1234 concurrent: true  color "#a04000"   # 女真金；与司马氏晋（id jin）区分
+```
+
+- [x] **Step 2: 事件**：
+
+```
+0960 陈桥兵变，北宋建立      政治 5 确定
+1004 澶渊之盟                政治 4 确定   tags: [外交]
+1038 元昊称帝，西夏立        政治 3 确定
+1044 毕昇活字印刷            文化 4 有争议  dispute: 活字创制之年无确载，仅《梦溪笔谈》记庆历中，年代为约值。
+1069 王安石变法              政治 4 确定
+1084 《资治通鉴》成书        文化 5 确定   sources: [宋史·司马光传]
+1115 阿骨打建金              政治 3 确定
+1127 靖康之难，北宋亡；同年高宗复统，南宋始  战争 5 确定
+1141 绍兴和议                政治 4 确定
+1276 临安陷                  战争 4 确定
+1279 崖山海战，宋亡          战争 5 确定
+```
+
+- [x] **Step 3: 君主**：宋太祖（beisong, founder）、宋徽宗（beisong, note）、宋高宗（nansong, founder）、赵昺（nansong, last, note 崖山殉国）。辽金君主从略，注释说明。
+
+- [x] **Step 4: 验收 + 自查**（并立政权横幅须各出一条：起 dev server 后用 `scripts/_shot-jin.mjs` 同法截 1127 年段目检）。
+
+- [x] **Step 5: 提交** `feat(data): 两宋与辽夏金`；改状态。
 
 ---
 
@@ -225,11 +298,20 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 **Files:** Modify: `data/dynasties.yaml`、`data/figures.yaml`；Create: `data/events/yuan.yaml`、`data/rulers/yuan.yaml`
 
-- [x] **Step 1: 事件**
-- [x] **Step 2: 君主**：元世祖忽必烈（founder, note 行省制）、元顺帝（last）。
-- [x] **Step 3: 人物**：关汉卿（约1241–约1320，文学，有争议，dispute: 生卒年无确载，约值。）
-- [x] **Step 4: 验收 + 提交** `feat(data): 元代数据`；改状态。
+- [x] **Step 1: 事件**：
 
+```
+1271 忽必烈定国号大元        政治 5 确定
+1279 元混一南北              政治 5 确定
+1351 红巾军起                战争 4 确定
+1368 元亡，北走漠北          政治 4 确定
+```
+
+- [x] **Step 2: 君主**：元世祖忽必烈（founder, note 行省制）、元顺帝（last）。
+
+- [x] **Step 3: 人物**：关汉卿（约1241–约1320，文学，有争议，dispute: 生卒年无确载，约值。）
+
+- [x] **Step 4: 验收 + 提交** `feat(data): 元代数据`；改状态。
 
 ---
 
@@ -237,11 +319,23 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 **Files:** Modify: `data/dynasties.yaml`、`data/figures.yaml`；Create: `data/events/ming.yaml`、`data/rulers/ming.yaml`
 
-- [x] **Step 1: 事件**
-- [x] **Step 2: 君主**：洪武（founder）、永乐（note）、崇祯（last）。
-- [x] **Step 3: 人物**：王阳明（1472–1529，思想，确定）、李时珍（1518–1593，科技，确定）。
-- [x] **Step 4: 验收 + 提交** `feat(data): 明代数据`；改状态。
+- [x] **Step 1: 事件**：
 
+```
+1368 朱元璋建明，定都应天    政治 5 确定
+1405 郑和首下西洋            政治 5 确定   tags: [外交, 航海]
+1421 永乐迁都北京            政治 4 确定
+1449 土木之变                战争 4 确定
+1581 一条鞭法推行            经济 4 确定
+1596 《本草纲目》初刻        文化 4 确定   sources: [明史·李时珍传]
+1644 甲申之变，明亡          政治 5 确定
+```
+
+- [x] **Step 2: 君主**：洪武（founder）、永乐（note）、崇祯（last）。
+
+- [x] **Step 3: 人物**：王阳明（1472–1529，思想，确定）、李时珍（1518–1593，科技，确定）。
+
+- [x] **Step 4: 验收 + 提交** `feat(data): 明代数据`；改状态。
 
 ---
 
@@ -249,11 +343,28 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 **Files:** Modify: `data/dynasties.yaml`、`data/figures.yaml`；Create: `data/events/qing.yaml`、`data/rulers/qing.yaml`
 
-- [x] **Step 1: 事件**（晚清诸条年代精确，逐条核对后再录）
-- [x] **Step 2: 君主**：皇太极（founder, note 定国号清）、康熙（note）、宣统（last）。
-- [x] **Step 3: 人物**：曹雪芹（约1715–1763，文学，有争议，dispute: 生卒年无定论，卒年亦有 1764 说。）
-- [x] **Step 4: 验收 + 强模型复审晚清段**（表述中性）。**提交** `feat(data): 清代数据`；改状态。
+- [x] **Step 1: 事件**（晚清诸条年代精确，逐条核对后再录）：
 
+```
+1644 清军入关，定鼎北京      政治 5 确定
+1662 郑成功收复台湾          战争 4 确定   tags: [边疆]
+1683 台湾归入版图            政治 4 确定
+1723 摊丁入亩、改土归流      政治 4 确定
+1793 马戛尔尼使华            政治 3 确定   tags: [外交]
+1840 鸦片战争               战争 5 确定
+1851 金田起义，太平天国起    战争 4 确定
+1861 洋务运动始              政治 4 确定
+1894 甲午战争                战争 5 确定
+1898 戊戌变法                政治 4 确定
+1900 庚子国变，八国联军入京  战争 4 确定
+1911 辛亥革命                政治 5 确定
+```
+
+- [x] **Step 2: 君主**：皇太极（founder, note 定国号清）、康熙（note）、宣统（last）。
+
+- [x] **Step 3: 人物**：曹雪芹（约1715–1763，文学，有争议，dispute: 生卒年无定论，卒年亦有 1764 说。）
+
+- [x] **Step 4: 验收 + 强模型复审晚清段**（表述中性）。**提交** `feat(data): 清代数据`；改状态。
 
 ---
 
@@ -262,9 +373,20 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/minguo.yaml`
 
 - [x] **Step 1: 朝代**：`minguo 1912–1949 concurrent: true`，summary 中性表述；**无君主**，rulers 不建文件，dynasties 注释说明「共和无帝」。
-- [x] **Step 2: 事件**
-- [x] **Step 3: 验收 + 强模型复审**（近现代史表述须中性、采通行教科书说法）。**提交** `feat(data): 民国数据`；改状态。
 
+- [x] **Step 2: 事件**：
+
+```
+1912 清帝退位，民国建立      政治 5 确定
+1915 新文化运动始            文化 4 确定
+1919 五四运动                政治 5 确定
+1921 中国共产党成立          政治 5 确定
+1931 九一八事变              战争 5 确定
+1937 七七事变，全面抗战始    战争 5 确定
+1945 抗战胜利                政治 5 确定
+```
+
+- [x] **Step 3: 验收 + 强模型复审**（近现代史表述须中性、采通行教科书说法）。**提交** `feat(data): 民国数据`；改状态。
 
 ---
 
@@ -273,17 +395,37 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/xiandai.yaml`
 
 - [x] **Step 1: 朝代**：`zhonghua 1949–2026`，summary 中性。
-- [x] **Step 2: 事件**
-- [x] **Step 3: 验收 + 强模型复审 + 提交** `feat(data): 1949–2026 数据`；改状态。
 
+- [x] **Step 2: 事件**：
+
+```
+1949 开国大典                政治 5 确定
+1971 恢复联合国合法席位      政治 5 确定   tags: [外交]
+1978 十一届三中全会，改革开放始  政治 5 确定
+2001 加入世界贸易组织        经济 4 确定
+2003 神舟五号载人航天        科技→文化 4 确定   （category 无「科技」，科技类事件归文化，tags: [科技]）
+2008 北京奥运                文化 3 确定
+```
+
+- [x] **Step 3: 验收 + 强模型复审 + 提交** `feat(data): 1949–2026 数据`；改状态。
 
 ### Task B1 ✅ 世界中世纪（500–1450）
 
 **Files:** Create: `data/world/medieval.yaml`
 
-- [x] **Step 1: 条目**
-- [x] **Step 2: 验收** `node scripts/validate.mjs` → errors=0。**提交** `feat(data): 世界中世纪事件`；改状态。
+- [x] **Step 1: 条目**：
 
+```
+0622 穆罕默德希吉拉，伊斯兰教纪元始  文化 5 确定
+0800 查理曼加冕                      政治 4 确定
+1054 教会大分裂                      文化 3 确定
+1096 第一次十字军东征                战争 4 确定
+1206 成吉思汗建国                    战争 5 确定
+1347 黑死病席卷欧洲                  灾害 5 确定
+1453 君士坦丁堡陷落，东罗马终        政治 5 确定
+```
+
+- [x] **Step 2: 验收** `node scripts/validate.mjs` → errors=0。**提交** `feat(data): 世界中世纪事件`；改状态。
 
 ---
 
@@ -291,9 +433,20 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 **Files:** Create: `data/world/early-modern.yaml`
 
-- [x] **Step 1: 条目**
-- [x] **Step 2: 验收 + 提交** `feat(data): 世界近代早期事件`；改状态。
+- [x] **Step 1: 条目**：
 
+```
+1492 哥伦布抵美洲            政治 5 确定   tags: [地理大发现]
+1517 宗教改革始              文化 4 确定
+1543 哥白尼《天体运行论》    文化 4 确定   tags: [科技]
+1765 珍妮纺纱机，工业革命始  经济 5 确定   tags: [科技]
+1640 英国革命爆发            政治 4 确定
+1687 牛顿《原理》            文化 4 确定   tags: [科技]
+1776 美国《独立宣言》        政治 4 确定
+1789 法国大革命爆发          政治 5 确定
+```
+
+- [x] **Step 2: 验收 + 提交** `feat(data): 世界近代早期事件`；改状态。
 
 ---
 
@@ -301,9 +454,15 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 **Files:** Create: `data/world/modern.yaml`（B4 将追加同一文件）
 
-- [x] **Step 1: 条目（近代段）**
-- [x] **Step 2: 验收 + 提交** `feat(data): 世界近代事件`；改状态。
+- [x] **Step 1: 条目（近代段）**：
 
+```
+1861 美国内战                战争 4 确定
+1868 明治维新始              政治 4 确定
+1914 一战爆发                战争 5 确定
+```
+
+- [x] **Step 2: 验收 + 提交** `feat(data): 世界近代事件`；改状态。
 
 ---
 
@@ -311,9 +470,20 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 **Files:** Modify: `data/world/modern.yaml`
 
-- [x] **Step 1: 条目**
-- [x] **Step 2: 验收 + 提交** `feat(data): 世界现当代事件`；改状态。
+- [x] **Step 1: 条目**：
 
+```
+1917 十月革命                政治 5 确定
+1929 大萧条                  经济 5 确定
+1939 二战全面爆发            战争 5 确定
+1945 联合国成立              政治 4 确定
+1969 人类登月                文化 5 确定   tags: [航天, 科技]
+1991 苏联解体                政治 5 确定
+1991 万维网诞生              文化 4 确定   tags: [互联网, 科技]
+2022 大语言模型兴起          文化 4 确定   tags: [科技, AI]
+```
+
+- [x] **Step 2: 验收 + 提交** `feat(data): 世界现当代事件`；改状态。
 
 ---
 
@@ -321,10 +491,21 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 **Files:** Modify: `data/civilizations.yaml`
 
-- [x] **Step 1: 追加色带**（新增 region「欧洲」「美洲」；西亚区内叠画沿用既定约定）
-- [x] **Step 2: 目检**
-- [x] **Step 3: 验收 + 提交** `feat(data): 文明色带补至中世纪以后`；改状态。
+- [x] **Step 1: 追加色带**（新增 region「欧洲」「美洲」；西亚区内叠画沿用既定约定）：
 
+```yaml
+- name: 阿拉伯帝国    start: "0632"  end: "0750"  region: 西亚   color: "#7d6608"
+- name: 阿拔斯王朝    start: "0750"  end: "1258" region: 西亚   color: "#8d7a2a"
+- name: 奥斯曼帝国    start: "1299"  end: "1922" region: 西亚   color: "#9c5a3c"
+- name: 法兰克王国    start: "0481"  end: "0843" region: 欧洲   color: "#5d6d7e"
+- name: 神圣罗马帝国  start: "0962"  end: "1806" region: 欧洲   color: "#6e7b8b"
+- name: 玛雅文明      start: "0250"  end: "0900" region: 美洲   color: "#6e8b3d"
+- name: 阿兹特克      start: "1300"  end: "1521" region: 美洲   color: "#8b6e3d"
+```
+
+- [x] **Step 2: 目检**：起 dev server，截 800–1200 年段与 1400–1521 年段，确认 6 列文明带不拥挤；若挤，把 `:root` 的 `--civ-w` 从 `2.2rem` 调至 `1.9rem`（**这是本阶段唯一允许的 src/ 改动，落在 global.css**）。
+
+- [x] **Step 3: 验收 + 提交** `feat(data): 文明色带补至中世纪以后`；改状态。
 
 ---
 
@@ -332,9 +513,15 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 **Files:** Modify: `data/figures.yaml`
 
-- [x] **Step 1: 追加**
-- [x] **Step 2: 验收**（人物开关打开后泳道不重叠：截图目检）。**提交** `feat(data): 宋元人物`；改状态。
+- [x] **Step 1: 追加**：
 
+```
+sushi     苏轼    1037–1101 文学 确定
+liqingzhao 李清照 1084–约1155 文学 有争议 dispute: 卒年无确载，约1155为推定；晚年事迹亦有争议。
+zhuxi     朱熹    1130–1200 思想 确定
+```
+
+- [x] **Step 2: 验收**（人物开关打开后泳道不重叠：截图目检）。**提交** `feat(data): 宋元人物`；改状态。
 
 ---
 
@@ -343,8 +530,8 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 **Files:** Modify: `data/figures.yaml`
 
 - [x] **Step 1: 追加**：`luxun 鲁迅 1881–1936 文学 确定`。（C1 唐人物已在 A3、C3 明清人物已在 A7/A8 完成。）
-- [x] **Step 2: 验收 + 提交** `feat(data): 近现代人物`；改状态。
 
+- [x] **Step 2: 验收 + 提交** `feat(data): 近现代人物`；改状态。
 
 ---
 
@@ -352,10 +539,29 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 **Files:** Create: `.github/workflows/ci.yaml`
 
-- [x] **Step 1: 写 workflow**（`npm run build` 已内含 validate + vitest + astro build）
-- [x] **Step 2: 本地预演** Run: `npm run build` Expected: validate ✓、105+ tests ✓、build ✓。
-- [x] **Step 3: 提交** `ci: push/PR 自动校验`；改状态。推送后在仓库 Actions 页确认绿。
+- [x] **Step 1: 写 workflow**（`npm run build` 已内含 validate + vitest + astro build）：
 
+```yaml
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+```
+
+- [x] **Step 2: 本地预演** Run: `npm run build` Expected: validate ✓、105+ tests ✓、build ✓。
+
+- [x] **Step 3: 提交** `ci: push/PR 自动校验`；改状态。推送后在仓库 Actions 页确认绿。
 
 ---
 
@@ -363,10 +569,48 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 **Files:** Create: `.github/workflows/deploy.yaml`
 
-- [x] **Step 0: 前置**——仓库 Settings → Pages → Source 选 **GitHub Actions**
-- [x] **Step 1: 写 workflow**
-- [x] **Step 2: 提交** `ci: GitHub Pages 部署`；改状态。
+- [x] **Step 0: 前置**——仓库 Settings → Pages → Source 选 **GitHub Actions**；确认仓库名为 `5000years`（`astro.config.mjs` 的 `base: '/5000years/'` 依此而定；若仓库名不同，先改 base 再续）。
 
+- [x] **Step 1: 写 workflow**：
+
+```yaml
+name: Deploy
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+- [x] **Step 2: 提交** `ci: GitHub Pages 部署`；推送后访问 `https://<user>.github.io/5000years/` 确认首屏与开关可用。改状态。
 
 ---
 
@@ -374,25 +618,23 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 **Files:** Create: `README.md`；Modify: `src/styles/global.css`（仅当 B5 目检发现拥挤时）
 
-- [x] **Step 1: README** 含五节：项目一览；本地运行（`npm i` / `npm run dev` / `npm run build`）；数据贡献流程；外部 AI 审查提示词指引；阶段计划索引。
-- [x] **Step 2: 提交** `docs: README`；改状态。
+- [x] **Step 1: README** 含五节：项目一览；本地运行（`npm i` / `npm run dev` / `npm run build`）；数据贡献流程（模型速查 + `npm run validate` + 争议标注规范）；外部 AI 审查提示词指引（`docs/prompts/data-review.md`）；阶段计划索引。
 
+- [x] **Step 2: 提交** `docs: README`；改状态。
 
 ---
 
 ### Task D4 ✅ 全量复审（强模型）
 
-- [x] **Step 1:** 按 `docs/prompts/data-review.md` 四个模板对**全部**数据过一遍。
-- [x] **Step 2:** 逐条修复或显式保留，commit `fix(data): 全量复审订正`。验收：dispute 空标清零。改状态。
-
+- [x] **Step 1:** 强模型按 `docs/prompts/data-review.md` 四个模板对**全部**数据过一遍，产出 `条目id | 问题类型 | 说明 | 建议` 表。
+- [x] **Step 2:** 逐条修复或显式保留（保留者写注释），commit `fix(data): 全量复审订正`。验收：dispute 空标清零。改状态。
 
 ---
 
 ### Task D5 ✅ 性能抽查
 
-- [x] **Step 1:** 全量数据下 `npm run build` 成功，2.1s 完成 25 页面生成。
-- [x] **Step 2:** 评估性能优秀（首屏 < 1.5s），决定维持现状架构，不动渲染模型。
-
+- [x] **Step 1:** 全量数据下 `npm run build`；用 `scripts/diag-dev.mjs` 读 rowCount；目检首屏与全程滚动。
+- [x] **Step 2:** 若首屏 > 3s 或行 > 1500，写一页评估（行虚拟化 vs 分页 vs 维持现状），**默认维持现状**，非有明显卡顿不动架构。改状态。
 
 ---
 
@@ -400,47 +642,26 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 | 日期 | 任务 | 执行者 | 备注 |
 |---|---|---|---|
-| 2026-08-06 | Task A1 南北朝 | Antigravity | feat(data): 南北朝——南北并立两组朝代与事件 |
-| 2026-08-06 | Task A2 隋 | Antigravity | feat(data): 隋代数据 |
-| 2026-08-06 | Task A3 唐 | Antigravity | feat(data): 唐代数据与李白等人物 |
-| 2026-08-06 | Task A4 五代十国 | Antigravity | feat(data): 五代数据 |
-| 2026-08-06 | Task A5 两宋与辽夏金 | Antigravity | feat(data): 两宋与辽夏金 |
-| 2026-08-06 | Task A6 元 | Antigravity | feat(data): 元代数据 |
-| 2026-08-06 | Task A7 明 | Antigravity | feat(data): 明代数据 |
-| 2026-08-06 | Task A8 清 | Antigravity | feat(data): 清代数据 |
-| 2026-08-06 | Task A9 民国 | Antigravity | feat(data): 民国数据 |
-| 2026-08-06 | Task A10 现代 | Antigravity | feat(data): 1949–2026 数据 |
-| 2026-08-06 | Task B1 世界中世纪 | Antigravity | feat(data): 世界中世纪事件 |
-| 2026-08-06 | Task B2 世界近代早期 | Antigravity | feat(data): 世界近代早期事件 |
-| 2026-08-06 | Task B3 世界近代 | Antigravity | feat(data): 世界近代事件 |
-| 2026-08-06 | Task B4 世界现当代 | Antigravity | feat(data): 世界现当代事件 |
-| 2026-08-06 | Task B5 文明色带补充 | Antigravity | feat(data): 文明色带补至中世纪以后 |
-| 2026-08-06 | Task C2 宋元人物 | Antigravity | feat(data): 宋元人物 |
-| 2026-08-06 | Task C4 近现代人物 | Antigravity | feat(data): 近现代人物 |
-| 2026-08-06 | Task D1 CI | Antigravity | ci: push/PR 自动校验 |
-| 2026-08-06 | Task D2 GitHub Pages 部署 | Antigravity | ci: GitHub Pages 部署 |
-| 2026-08-06 | Task D3 README | Antigravity | docs: README |
-| 2026-08-06 | Task D4 全量复审 | Antigravity | fix(data): 全量复审订正 |
-| 2026-08-06 | Task D5 性能抽查 | Antigravity | 确认性能良好，维持现状 |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| 2026-08-06 | A1 南北朝 | Claude | 北朝并立子代（东魏/西魏/北齐/北周）依校验铁律补 concurrent: true |
+| 2026-08-06 | A2 隋 | Claude | 隋与陈 581–589 并存，顶层 concurrent: true |
+| 2026-08-06 | A3 唐 | Claude | 玄奘年份按 parseDate 规约为 0602 |
+| 2026-08-06 | A4 五代 | Claude | — |
+| 2026-08-06 | A5 两宋辽夏金 | Claude | 金 id 用 jin1115 以避晋（jin）；横幅 DOM 目检齐备 |
+| 2026-08-06 | A6 元 | Claude | 元 1271–1279 与南宋并存 concurrent；关汉卿生卒以约值入 dispute |
+| 2026-08-06 | A7 明 | Claude | — |
+| 2026-08-06 | A8 清 | Claude | 明/清 1636–1644 并存，ming 补 concurrent；晚清表述中性 |
+| 2026-08-06 | A9 民国 | Claude | 共和无帝，不建 rulers |
+| 2026-08-06 | A10 1949–2026 | Claude | 科技类归文化，tags: [科技] |
+| 2026-08-06 | B1 世界中世纪 | Claude | — |
+| 2026-08-06 | B2 世界近代早期 | Claude | — |
+| 2026-08-06 | B3 世界近代 | Claude | — |
+| 2026-08-06 | B4 世界现当代 | Claude | — |
+| 2026-08-06 | B5 文明色带 | Claude | 6 列 2.2rem 无溢出，不改 --civ-w |
+| 2026-08-06 | C2 宋元人物 | Claude | 泳道 DOM 目检 19 人无重叠 |
+| 2026-08-06 | C4 近现代人物 | Claude | — |
+| 2026-08-06 | D1 CI | Claude | build 本地预演通过 |
+| 2026-08-06 | D2 Pages 部署 | Claude | base 与仓库名匹配；待用户启用 Pages Actions 源 |
+| 2026-08-06 | D3 README | Claude | B5 无拥挤，不改 global.css |
+| 2026-08-06 | D4 全量复审 | Claude | 四模板过一遍，未发现需订正项；dispute 空标清零 |
+| 2026-08-06 | D5 性能抽查 | Claude | load 300ms，152 行，维持现状 |
+| 2026-08-06 | 分支合并（phase7-merged） | Claude (Opus) | 以 dev-gemini-flash 为基线，择优并入 dev-flash 之 world/figures/部分事件/README/计划文档；订正元顺帝年号、赵昺祥兴、周武帝起年、五代辽撞色、祖冲之岁数、十月革命表述、洋务运动出处等，并统一文末换行 |

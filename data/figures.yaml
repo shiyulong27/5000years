@@ -83,7 +83,7 @@
   birth: "0701"
   death: "0762"
   field: 文学
-  note: 诗仙，浪漫主义诗歌巅峰
+  note: 诗仙，浪漫主义巅峰，仗剑远游，放浪诗酒
   confidence: 确定
 
 - id: dufu
@@ -91,7 +91,7 @@
   birth: "0712"
   death: "0770"
   field: 文学
-  note: 诗圣，现实主义诗歌巅峰，诗史
+  note: 诗圣，沉郁顿挫，忧国忧民，被称为「诗史」
   confidence: 确定
 
 - id: wangwei
@@ -99,7 +99,7 @@
   birth: "0701"
   death: "0761"
   field: 文学
-  note: 诗佛，山水田园诗派代表，诗中有画画中有诗
+  note: 诗中有画，山水田园与禅意并存
   confidence: 有争议
   dispute: 生年有 699 与 701 两说。
 
@@ -108,7 +108,7 @@
   birth: "0602"
   death: "0664"
   field: 思想
-  note: 唯识宗创宗者，西行求法译经大师
+  note: 西行求法十七年，译经传法，著《大唐西域记》
   confidence: 确定
 
 - id: guanhanqing
@@ -116,42 +116,16 @@
   birth: "1241"
   death: "1320"
   field: 文学
-  note: 元杂剧奠基人，戏剧大师，著《窦娥冤》
+  note: 元曲四大家之首，作《窦娥冤》等杂剧六十余种
   confidence: 有争议
-  dispute: 生卒年无确载，约1241–约1320为推定值。
-
-- id: sushi
-  name: 苏轼
-  birth: "1037"
-  death: "1101"
-  field: 文学
-  note: 北宋文学家、书画家，唐宋八大家之一
-  confidence: 确定
-
-- id: liqingzhao
-  name: 李清照
-  birth: "1084"
-  death: "1155"
-  field: 文学
-  note: 宋代女词人，千古第一才女，婉约词派代表
-  confidence: 有争议
-  dispute: 卒年无确载，约1155为推定；晚年事迹亦有争议。
-
-- id: zhuxi
-  name: 朱熹
-  birth: "1130"
-  death: "1200"
-  field: 思想
-  note: 理学集大成者，闽学代表人物，尊称朱子
-  confidence: 确定
-
+  dispute: 生卒年无确载，此处为约值。
 
 - id: wangyangming
   name: 王阳明
   birth: "1472"
   death: "1529"
   field: 思想
-  note: 心学集大成者，提出致良知与知行合一
+  note: 心学集大成者，「知行合一」「致良知」
   confidence: 确定
 
 - id: lishizhen
@@ -159,7 +133,7 @@
   birth: "1518"
   death: "1593"
   field: 科技
-  note: 医药学家，著《本草纲目》
+  note: 著《本草纲目》，集本草学之大成
   confidence: 确定
 
 - id: caoxueqin
@@ -167,19 +141,39 @@
   birth: "1715"
   death: "1763"
   field: 文学
-  note: 小说家，著古典小说巅峰《红楼梦》
+  note: 著《红楼梦》，古典小说之巅峰
   confidence: 有争议
-  dispute: 生卒年无定论，生年有 1715 与 1724 两说，卒年亦有 1764 壬午除夕说。
+  dispute: 生卒年无定论，生年有 1715 与 1724 两说，卒年亦有 1763 与 1764 说，此处为约值。
+
+- id: sushi
+  name: 苏轼
+  birth: "1037"
+  death: "1101"
+  field: 文学
+  note: 苏东坡，诗词文书画皆精，旷达豪放之宗
+  confidence: 确定
+
+- id: liqingzhao
+  name: 李清照
+  birth: "1084"
+  death: "1155"
+  field: 文学
+  note: 婉约词宗，易安体传世，南渡后词风转沉郁
+  confidence: 有争议
+  dispute: 卒年无确载，约 1155 为推定；晚年流寓行迹及再嫁与否亦有争议。
+
+- id: zhuxi
+  name: 朱熹
+  birth: "1130"
+  death: "1200"
+  field: 思想
+  note: 理学集大成者，四书集注，此后数百年科举之标的
+  confidence: 确定
 
 - id: luxun
   name: 鲁迅
   birth: "1881"
   death: "1936"
   field: 文学
-  note: 现代文学家、思想家，中国现代文学的奠基人
+  note: 新文学运动旗手，以《呐喊》《彷徨》等解剖国民性
   confidence: 确定
-
-
-
-
-
