@@ -249,6 +249,51 @@
   color: "#b03a2e"
   summary: 气度恢弘，经济文化空前繁荣，与汉并称汉唐盛世。
 
+# ── 五代十国：十国从略，横幅只出五代 ─────────────────────────
+- id: wudai
+  name: 五代
+  start: "0907"
+  end: "0960"
+  color: "#7f8c8d"
+  concurrent: true
+  summary: 唐亡后中原相继建立的五个朝代，南方及山西另有十国割据。
+
+- id: houliang
+  name: 后梁
+  start: "0907"
+  end: "0923"
+  color: "#7f8c8d"
+  parent: wudai
+
+- id: houtang
+  name: 后唐
+  start: "0923"
+  end: "0936"
+  color: "#7f8c8d"
+  parent: wudai
+
+- id: houjin
+  name: 后晋
+  start: "0936"
+  end: "0947"
+  color: "#7f8c8d"
+  parent: wudai
+
+- id: houhan
+  name: 后汉
+  start: "0947"
+  end: "0951"
+  color: "#7f8c8d"
+  parent: wudai
+
+- id: houzhou
+  name: 后周
+  start: "0951"
+  end: "0960"
+  color: "#7f8c8d"
+  parent: wudai
+
+
 
 
 

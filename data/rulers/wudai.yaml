@@ -1,0 +1,18 @@
+- dynasty: houliang
+  temple_name: 梁太祖
+  name: 朱温
+  reign_start: "0907"
+  reign_end: "0912"
+  era_names: [开平, 乾化]
+  note: 篡唐建立后梁，五代开端
+  role: founder
+  confidence: 确定
+
+- dynasty: houzhou
+  temple_name: 周世宗
+  name: 柴荣
+  reign_start: "0954"
+  reign_end: "0959"
+  era_names: [显德]
+  note: 五代第一明君，励精图治，北伐辽朝
+  confidence: 确定

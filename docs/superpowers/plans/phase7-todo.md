@@ -184,40 +184,17 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task A3 ⬜ 唐（618–907）
+### Task A3 ✅ 唐（618–907）
 
 **Files:** Modify: `data/dynasties.yaml`、`data/figures.yaml`；Create: `data/events/tang.yaml`、`data/rulers/tang.yaml`
 
-- [ ] **Step 1: 朝代**：`tang 618–907 color "#b03a2e"`。
+- [x] **Step 1: 朝代**：`tang 618–907 color "#b03a2e"`。
+- [x] **Step 2: 事件**
+- [x] **Step 3: 君主**：唐高祖（founder）、唐太宗（note 贞观）、武则天（note 中国唯一正统女皇帝）、唐玄宗（note 开元天宝）、唐哀帝（last, note 禅位于朱温）。
+- [x] **Step 4: 人物**（追加 `data/figures.yaml`，用户点名的李白在此）
+- [x] **Step 5: 验收** `node scripts/validate.mjs` → errors=0；事件数 ≥9。
+- [x] **Step 6: 提交** `feat(data): 唐代数据与李白等人物`；改状态。
 
-- [ ] **Step 2: 事件**：
-
-```
-0618 李渊建唐                政治 5 确定
-0626 玄武门之变，翌年改元贞观 政治 4 确定
-0629 玄奘西行                文化 4 有争议  dispute: 西行年份诸传不一，此处从贞观三年说。
-0690 武则天称帝，改国号周    政治 5 确定
-0713 开元纪元始              政治 4 确定
-0755 安史之乱爆发            战争 5 确定
-0780 两税法行                经济 4 确定   sources: [旧唐书·食货志]
-0845 会昌灭佛                文化 3 确定
-0875 黄巢起义                战争 4 确定
-```
-
-- [ ] **Step 3: 君主**：唐高祖（founder）、唐太宗（note 贞观）、武则天（note 中国唯一正统女皇帝）、唐玄宗（note 开元天宝）、唐哀帝（last, note 禅位于朱温）。
-
-- [ ] **Step 4: 人物**（追加 `data/figures.yaml`，用户点名的李白在此）：
-
-```
-libai    李白   0701–0762 文学 确定
-dufu     杜甫   0712–0770 文学 确定
-wangwei  王维   0701–0761 文学 有争议 dispute: 生年有 699 与 701 两说。
-xuanzang 玄奘   602–0664  思想 确定
-```
-
-- [ ] **Step 5: 验收** `node scripts/validate.mjs` → errors=0；事件数 ≥9。
-
-- [ ] **Step 6: 提交** `feat(data): 唐代数据与李白等人物`；改状态。
 
 ---
 
@@ -633,5 +610,7 @@ jobs:
 |---|---|---|---|
 | 2026-08-06 | Task A1 南北朝 | Antigravity | feat(data): 南北朝——南北并立两组朝代与事件 |
 | 2026-08-06 | Task A2 隋 | Antigravity | feat(data): 隋代数据 |
+| 2026-08-06 | Task A3 唐 | Antigravity | feat(data): 唐代数据与李白等人物 |
+
 
 
