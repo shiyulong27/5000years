@@ -171,6 +171,15 @@
   confidence: 有争议
   dispute: 生卒年无定论，生年有 1715 与 1724 两说，卒年亦有 1764 壬午除夕说。
 
+- id: luxun
+  name: 鲁迅
+  birth: "1881"
+  death: "1936"
+  field: 文学
+  note: 现代文学家、思想家，中国现代文学的奠基人
+  confidence: 确定
+
+
 
 
 

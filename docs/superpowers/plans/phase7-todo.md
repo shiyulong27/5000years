@@ -328,19 +328,13 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task C2 ⬜ 宋元人物
+### Task C2 ✅ 宋元人物
 
 **Files:** Modify: `data/figures.yaml`
 
-- [ ] **Step 1: 追加**：
+- [x] **Step 1: 追加**
+- [x] **Step 2: 验收**（人物开关打开后泳道不重叠：截图目检）。**提交** `feat(data): 宋元人物`；改状态。
 
-```
-sushi     苏轼    1037–1101 文学 确定
-liqingzhao 李清照 1084–约1155 文学 有争议 dispute: 卒年无确载，约1155为推定；晚年事迹亦有争议。
-zhuxi     朱熹    1130–1200 思想 确定
-```
-
-- [ ] **Step 2: 验收**（人物开关打开后泳道不重叠：截图目检）。**提交** `feat(data): 宋元人物`；改状态。
 
 ---
 
@@ -476,6 +470,8 @@ jobs:
 | 2026-08-06 | Task B3 世界近代 | Antigravity | feat(data): 世界近代事件 |
 | 2026-08-06 | Task B4 世界现当代 | Antigravity | feat(data): 世界现当代事件 |
 | 2026-08-06 | Task B5 文明色带补充 | Antigravity | feat(data): 文明色带补至中世纪以后 |
+| 2026-08-06 | Task C2 宋元人物 | Antigravity | feat(data): 宋元人物 |
+
 
 
 
