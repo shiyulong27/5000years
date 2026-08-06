@@ -307,24 +307,13 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task B4 ⬜ 世界现当代（1914–2026）
+### Task B4 ✅ 世界现当代（1914–2026）
 
 **Files:** Modify: `data/world/modern.yaml`
 
-- [ ] **Step 1: 条目**：
+- [x] **Step 1: 条目**
+- [x] **Step 2: 验收 + 提交** `feat(data): 世界现当代事件`；改状态。
 
-```
-1917 十月革命                政治 5 确定
-1929 大萧条                  经济 5 确定
-1939 二战全面爆发            战争 5 确定
-1945 联合国成立              政治 4 确定
-1969 人类登月                文化 5 确定   tags: [航天, 科技]
-1991 苏联解体                政治 5 确定
-1991 万维网诞生              文化 4 确定   tags: [互联网, 科技]
-2022 大语言模型兴起          文化 4 确定   tags: [科技, AI]
-```
-
-- [ ] **Step 2: 验收 + 提交** `feat(data): 世界现当代事件`；改状态。
 
 ---
 
@@ -496,6 +485,8 @@ jobs:
 | 2026-08-06 | Task B1 世界中世纪 | Antigravity | feat(data): 世界中世纪事件 |
 | 2026-08-06 | Task B2 世界近代早期 | Antigravity | feat(data): 世界近代早期事件 |
 | 2026-08-06 | Task B3 世界近代 | Antigravity | feat(data): 世界近代事件 |
+| 2026-08-06 | Task B4 世界现当代 | Antigravity | feat(data): 世界现当代事件 |
+
 
 
 
