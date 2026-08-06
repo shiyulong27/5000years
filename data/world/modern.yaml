@@ -1,0 +1,26 @@
+# 世界近代（1800–1914）与现代（1914–2026）事件。
+# 近代段与现当代段同置一文件，见证由列强争霸到两战与科技时代的转折。
+
+- id: w-us-civil-war-1861
+  date: "1861"
+  title: 美国内战
+  category: 战争
+  importance: 4
+  summary: 南北诸州因奴隶制与州权决裂开战，林肯领导北方获胜，美国自此走向统一强国。
+  confidence: 确定
+
+- id: w-meiji-1868
+  date: "1868"
+  title: 明治维新始
+  category: 政治
+  importance: 4
+  summary: 日本明治天皇主政，废藩置县、殖产兴业，从封建幕府转为近代国家。
+  confidence: 确定
+
+- id: w-ww1-1914
+  date: "1914"
+  title: 一战爆发
+  category: 战争
+  importance: 5
+  summary: 萨拉热窝事件后列强两大阵营全面开战，世界陷入四年浩劫，欧洲霸权自此动摇。
+  confidence: 确定
