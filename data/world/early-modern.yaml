@@ -1,0 +1,67 @@
+- id: w-columbus-1492
+  date: "1492"
+  title: 哥伦布抵美洲
+  category: 政治
+  importance: 5
+  summary: 哥伦布横渡大西洋抵美洲，欧洲与美洲自此接轨，开启地理大发现时代。
+  confidence: 确定
+  tags: [地理大发现]
+
+- id: w-reformation-1517
+  date: "1517"
+  title: 宗教改革始
+  category: 文化
+  importance: 4
+  summary: 马丁·路德张贴《九十五条论纲》，挑战天主教会，西欧宗教格局自此翻新。
+  confidence: 确定
+
+- id: w-copernicus-1543
+  date: "1543"
+  title: 哥白尼《天体运行论》
+  category: 文化
+  importance: 4
+  summary: 哥白尼提出日心说，颠覆托勒密地心体系，为近代科学革命之先声。
+  confidence: 确定
+  tags: [科技]
+
+- id: w-eng-revolution-1640
+  date: "1640"
+  title: 英国革命爆发
+  category: 政治
+  importance: 4
+  summary: 长期国会与查理一世冲突激化，英国革命爆发，开近代宪政之先河。
+  confidence: 确定
+
+- id: w-newton-1687
+  date: "1687"
+  title: 牛顿《原理》
+  category: 文化
+  importance: 4
+  summary: 牛顿发表《自然哲学的数学原理》，奠定经典力学体系。
+  confidence: 确定
+  tags: [科技]
+
+- id: w-spinning-jenny-1765
+  date: "1765"
+  title: 珍妮纺纱机，工业革命始
+  category: 经济
+  importance: 5
+  summary: 哈格里夫斯发明珍妮纺纱机，纺织产能大增，工业革命自英国发端。
+  confidence: 确定
+  tags: [科技]
+
+- id: w-declaration-1776
+  date: "1776"
+  title: 美国《独立宣言》
+  category: 政治
+  importance: 4
+  summary: 北美十三州宣告独立，阐述天赋人权，美利坚合众国由此立国。
+  confidence: 确定
+
+- id: w-french-revolution-1789
+  date: "1789"
+  title: 法国大革命爆发
+  category: 政治
+  importance: 5
+  summary: 攻占巴士底狱，法国大革命爆发，自由平等理念震撼欧洲王权秩序。
+  confidence: 确定
