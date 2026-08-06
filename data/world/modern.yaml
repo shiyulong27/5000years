@@ -24,3 +24,70 @@
   importance: 5
   summary: 萨拉热窝事件后列强两大阵营全面开战，世界陷入四年浩劫，欧洲霸权自此动摇。
   confidence: 确定
+
+- id: w-oct-revolution-1917
+  date: "1917"
+  title: 十月革命
+  category: 政治
+  importance: 5
+  summary: 布尔什维克在俄国夺取政权，建立苏维埃，世界从此分为两大阵营。
+  confidence: 确定
+
+- id: w-great-depression-1929
+  date: "1929"
+  title: 大萧条
+  category: 经济
+  importance: 5
+  summary: 华尔街股市崩盘引发全球经济大萧条，数千万人失业，加深了国际危机。
+  confidence: 确定
+
+- id: w-ww2-1939
+  date: "1939"
+  title: 二战全面爆发
+  category: 战争
+  importance: 5
+  summary: 德国入侵波兰，二战全面爆发，战火遍及全球，造成空前伤亡。
+  confidence: 确定
+
+- id: w-un-1945
+  date: "1945"
+  title: 联合国成立
+  category: 政治
+  importance: 4
+  summary: 五十国签署《联合国宪章》，联合国正式成立，望以多边机制维持世界和平。
+  confidence: 确定
+
+- id: w-moon-1969
+  date: "1969"
+  title: 人类登月
+  category: 文化
+  importance: 5
+  summary: 阿波罗十一号载人登月成功，阿姆斯特朗踏上月球，人类足迹首次印于地外天体。
+  confidence: 确定
+  tags: [航天, 科技]
+
+- id: w-soviet-fall-1991
+  date: "1991"
+  title: 苏联解体
+  category: 政治
+  importance: 5
+  summary: 苏联各加盟共和国相继独立，冷战格局随之终结，世界进入一超多强时代。
+  confidence: 确定
+
+- id: w-web-1991
+  date: "1991"
+  title: 万维网诞生
+  category: 文化
+  importance: 4
+  summary: 伯纳斯-李向公众开放万维网，全球信息互联自此融入日常生活。
+  confidence: 确定
+  tags: [互联网, 科技]
+
+- id: w-llm-2022
+  date: "2022"
+  title: 大语言模型兴起
+  category: 文化
+  importance: 4
+  summary: 生成式大语言模型面向公众开放，人工智能应用急剧普及，重塑知识工作方式。
+  confidence: 确定
+  tags: [科技, AI]
