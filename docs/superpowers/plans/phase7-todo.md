@@ -221,24 +221,15 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task A6 ⬜ 元（1271–1368）
+### Task A6 ✅ 元（1271–1368）
 
 **Files:** Modify: `data/dynasties.yaml`、`data/figures.yaml`；Create: `data/events/yuan.yaml`、`data/rulers/yuan.yaml`
 
-- [ ] **Step 1: 事件**：
+- [x] **Step 1: 事件**
+- [x] **Step 2: 君主**：元世祖忽必烈（founder, note 行省制）、元顺帝（last）。
+- [x] **Step 3: 人物**：关汉卿（约1241–约1320，文学，有争议，dispute: 生卒年无确载，约值。）
+- [x] **Step 4: 验收 + 提交** `feat(data): 元代数据`；改状态。
 
-```
-1271 忽必烈定国号大元        政治 5 确定
-1279 元混一南北              政治 5 确定
-1351 红巾军起                战争 4 确定
-1368 元亡，北走漠北          政治 4 确定
-```
-
-- [ ] **Step 2: 君主**：元世祖忽必烈（founder, note 行省制）、元顺帝（last）。
-
-- [ ] **Step 3: 人物**：关汉卿（约1241–约1320，文学，有争议，dispute: 生卒年无确载，约值。）
-
-- [ ] **Step 4: 验收 + 提交** `feat(data): 元代数据`；改状态。
 
 ---
 
@@ -574,6 +565,8 @@ jobs:
 | 2026-08-06 | Task A3 唐 | Antigravity | feat(data): 唐代数据与李白等人物 |
 | 2026-08-06 | Task A4 五代十国 | Antigravity | feat(data): 五代数据 |
 | 2026-08-06 | Task A5 两宋与辽夏金 | Antigravity | feat(data): 两宋与辽夏金 |
+| 2026-08-06 | Task A6 元 | Antigravity | feat(data): 元代数据 |
+
 
 
 

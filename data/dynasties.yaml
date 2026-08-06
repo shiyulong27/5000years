@@ -345,9 +345,16 @@
   start: "1271"
   end: "1368"
   color: "#7d6608"
-  # 与南宋在 1271–1279 重叠（忽必烈定国号元至宋亡），故须声明 concurrent
   concurrent: true
   summary: 蒙古族建立的统一王朝，实行行省制度，版图空前辽阔。
+
+- id: ming
+  name: 明
+  start: "1368"
+  end: "1644"
+  color: "#c0392b"
+  summary: 朱元璋建立的大一统王朝，加强专制皇权，郑和下西洋展现海上强盛。
+
 
 
 

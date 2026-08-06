@@ -1,0 +1,28 @@
+- dynasty: ming
+  temple_name: 明太祖
+  name: 朱元璋
+  reign_start: "1368"
+  reign_end: "1398"
+  era_names: [洪武]
+  note: 明朝开国皇帝，废丞相设三司，强化集权
+  role: founder
+  confidence: 确定
+
+- dynasty: ming
+  temple_name: 明成祖
+  name: 朱棣
+  reign_start: "1402"
+  reign_end: "1424"
+  era_names: [永乐]
+  note: 靖难之役即位，迁都北京，修《永乐大典》，派郑和下西洋
+  confidence: 确定
+
+- dynasty: ming
+  temple_name: 明思宗
+  name: 朱由检
+  reign_start: "1627"
+  reign_end: "1644"
+  era_names: [崇祯]
+  note: 明朝末代皇帝，李自成攻陷北京后自缢于煤山
+  role: last
+  confidence: 确定

@@ -1,0 +1,63 @@
+- id: zhuyuanzhang-ming-1368
+  date: "1368"
+  title: 朱元璋建明，定都应天
+  category: 政治
+  importance: 5
+  summary: 朱元璋于应天府（今南京）称帝，国号大明，建元洪武，同年收复大都。
+  confidence: 确定
+  sources: [明史·太祖纪]
+
+- id: zhenghe-voyage-1405
+  date: "1405"
+  title: 郑和首下西洋
+  category: 政治
+  importance: 5
+  summary: 明成祖命郑和率庞大舰队首次出使西洋，揭开七下西洋宏大远航序幕。
+  confidence: 确定
+  sources: [明史·郑和传]
+  tags: [外交, 航海]
+
+- id: yongle-beijing-1421
+  date: "1421"
+  title: 永乐迁都北京
+  category: 政治
+  importance: 4
+  summary: 明成祖朱棣正式迁都北京，以顺天府为京师，确立天子守国门格局。
+  confidence: 确定
+  sources: [明史·成祖纪]
+
+- id: tumubian-1449
+  date: "1449"
+  title: 土木之变
+  category: 战争
+  importance: 4
+  summary: 明英宗亲征瓦剌于土木堡被俘，兵部尚书于谦主持北京保卫战化解危机。
+  confidence: 确定
+  sources: [明史·英宗纪, 明史·于谦传]
+
+- id: yitiaobianfa-1581
+  date: "1581"
+  title: 一条鞭法推行
+  category: 经济
+  importance: 4
+  summary: 张居正于全国推行一条鞭法，将田赋与徭役合并折银征收，简化税制。
+  confidence: 确定
+  sources: [明史·食货志]
+
+- id: bencaogangmu-1596
+  date: "1596"
+  title: 《本草纲目》初刻
+  category: 文化
+  importance: 4
+  summary: 李时珍历时三十余载编撰的本草学巨著《本草纲目》于金陵初刻出版。
+  confidence: 确定
+  sources: [明史·李时珍传]
+
+- id: jiashenbian-1644
+  date: "1644"
+  title: 甲申之变，明亡
+  category: 政治
+  importance: 5
+  summary: 李自成大顺军攻陷北京，崇祯皇帝自缢于煤山，明朝中原统治结束。
+  confidence: 确定
+  sources: [明史·庄烈帝纪]
