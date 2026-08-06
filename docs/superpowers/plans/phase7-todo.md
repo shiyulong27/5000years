@@ -287,24 +287,13 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task B2 ⬜ 世界近代早期（1450–1800）
+### Task B2 ✅ 世界近代早期（1450–1800）
 
 **Files:** Create: `data/world/early-modern.yaml`
 
-- [ ] **Step 1: 条目**：
+- [x] **Step 1: 条目**
+- [x] **Step 2: 验收 + 提交** `feat(data): 世界近代早期事件`；改状态。
 
-```
-1492 哥伦布抵美洲            政治 5 确定   tags: [地理大发现]
-1517 宗教改革始              文化 4 确定
-1543 哥白尼《天体运行论》    文化 4 确定   tags: [科技]
-1765 珍妮纺纱机，工业革命始  经济 5 确定   tags: [科技]
-1640 英国革命爆发            政治 4 确定
-1687 牛顿《原理》            文化 4 确定   tags: [科技]
-1776 美国《独立宣言》        政治 4 确定
-1789 法国大革命爆发          政治 5 确定
-```
-
-- [ ] **Step 2: 验收 + 提交** `feat(data): 世界近代早期事件`；改状态。
 
 ---
 
@@ -511,6 +500,8 @@ jobs:
 | 2026-08-06 | Task A9 民国 | Antigravity | feat(data): 民国数据 |
 | 2026-08-06 | Task A10 现代 | Antigravity | feat(data): 1949–2026 数据 |
 | 2026-08-06 | Task B1 世界中世纪 | Antigravity | feat(data): 世界中世纪事件 |
+| 2026-08-06 | Task B2 世界近代早期 | Antigravity | feat(data): 世界近代早期事件 |
+
 
 
 

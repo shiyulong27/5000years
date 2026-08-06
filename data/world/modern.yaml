@@ -1,0 +1,23 @@
+- id: us-civil-war-1861
+  date: "1861"
+  title: 美国内战
+  category: 战争
+  importance: 4
+  summary: 美国南北战争爆发，北方工业州击败南方奴隶州，维护了国家统一并废除了奴隶制。
+  confidence: 确定
+
+- id: meiji-restoration-1868
+  date: "1868"
+  title: 明治维新始
+  category: 政治
+  importance: 4
+  summary: 日本推翻幕府统治，明治天皇开始推行西化改革，迅速走上资本主义与工业化道路。
+  confidence: 确定
+
+- id: ww1-outbreak-1914
+  date: "1914"
+  title: 一战爆发
+  category: 战争
+  importance: 5
+  summary: 萨拉热窝事件引发第一次世界大战爆发，同盟国与协约国展开全球性大战。
+  confidence: 确定
