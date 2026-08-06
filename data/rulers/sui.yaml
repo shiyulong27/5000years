@@ -1,0 +1,19 @@
+- dynasty: sui
+  temple_name: 隋文帝
+  name: 杨坚
+  reign_start: "0581"
+  reign_end: "0604"
+  era_names: [开皇, 仁寿]
+  note: 统一天下，开创开皇之治
+  role: founder
+  confidence: 确定
+
+- dynasty: sui
+  temple_name: 隋炀帝
+  name: 杨广
+  reign_start: "0604"
+  reign_end: "0618"
+  era_names: [大业]
+  note: 修运河、建东都、三征高句丽，急政致亡
+  role: last
+  confidence: 确定

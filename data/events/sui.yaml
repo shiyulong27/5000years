@@ -1,0 +1,45 @@
+- id: yangjian-sui-0581
+  date: "0581"
+  title: 杨坚代周，隋建立
+  category: 政治
+  importance: 5
+  summary: 杨坚逼北周静帝禅位，建国号隋，开皇之治始。
+  confidence: 确定
+  sources: [隋书·高祖纪]
+
+- id: sui-destroy-chen-0589
+  date: "0589"
+  title: 隋灭陈，天下一统
+  category: 政治
+  importance: 5
+  summary: 隋军攻陷建康，俘陈后主，结束近三百年南北分裂局面。
+  confidence: 确定
+  sources: [隋书·高祖纪]
+
+- id: sui-grand-canal-0605
+  date: "0605"
+  title: 开通大运河
+  category: 经济
+  importance: 4
+  summary: 隋炀帝诏开通济渠、邗沟，连通南北水运，贯通京杭大运河雏形。
+  confidence: 确定
+  sources: [隋书·食货志]
+  tags: [工程, 漕运]
+
+- id: sui-gaogouli-war-0612
+  date: "0612"
+  title: 一征高句丽，败还
+  category: 战争
+  importance: 4
+  summary: 隋炀帝亲征高句丽，萨水之战大败，损兵折将，引发国内民变。
+  confidence: 确定
+  sources: [隋书·炀帝纪]
+
+- id: sui-fall-0618
+  date: "0618"
+  title: 隋亡
+  category: 政治
+  importance: 4
+  summary: 隋炀帝死于江都兵变，隋朝灭亡。
+  confidence: 确定
+  sources: [隋书·炀帝纪]

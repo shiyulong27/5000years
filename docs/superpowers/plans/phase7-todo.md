@@ -62,14 +62,14 @@ README.md                  ← 新建
 
 ---
 
-### Task A1 ⬜ 南北朝（420–589）
+### Task A1 ✅ 南北朝（420–589）
 
 **Files:**
 - Modify: `data/dynasties.yaml`（追加南朝/北朝两组）
 - Create: `data/events/nanchao-beichao.yaml`
 - Create: `data/rulers/nanchao-beichao.yaml`
 
-- [ ] **Step 1: 追加朝代**（北朝起点取 386 以容纳北魏子朝代，summary 里说明）：
+- [x] **Step 1: 追加朝代**（北朝起点取 386 以容纳北魏子朝代，summary 里说明）：
 
 ```yaml
 # ── 南北朝：南北长期并存，均 concurrent ─────────────────────────
@@ -642,4 +642,5 @@ jobs:
 
 | 日期 | 任务 | 执行者 | 备注 |
 |---|---|---|---|
-| — | — | — | 尚无 |
+| 2026-08-06 | Task A1 南北朝 | Antigravity | feat(data): 南北朝——南北并立两组朝代与事件 |
+

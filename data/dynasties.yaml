@@ -234,4 +234,14 @@
   parent: beichao
   concurrent: true
 
+- id: sui
+  name: 隋
+  start: "0581"
+  end: "0618"
+  color: "#5d6d7e"
+  concurrent: true
+  summary: 二世而亡，制度遗泽唐宋。
+
+
+
 
