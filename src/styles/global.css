@@ -222,8 +222,10 @@ main,
 
 .timeline.hide-world {
   /* 仅 display:none 不会让 Grid 模板列收缩，中轴会滞留原处、左侧留下
-     大片空白。故关掉世界栏时同时重排列模板，把空间交还给中国事件栏。 */
-  grid-template-columns: var(--axis-w) minmax(0, 1fr);
+     大片空白。故关掉世界栏时同时重排列模板，把空间交还给中国事件栏。
+     人物泳道仍留在中轴与中国事件之间——行内 grid-column 是为全宽模板
+     算的，此处用 --lane 变量按新模板重定位（!important 压过行内样式）。 */
+  grid-template-columns: var(--axis-w) repeat(var(--fig-count), var(--fig-w)) minmax(0, 1fr);
 }
 
 .timeline.hide-world .cell-world,
@@ -235,8 +237,12 @@ main,
   grid-column: 1 !important;
 }
 
+.timeline.hide-world .figure-slot {
+  grid-column: calc(2 + var(--lane)) !important;
+}
+
 .timeline.hide-world .cell-china {
-  grid-column: 2 !important;
+  grid-column: calc(2 + var(--fig-count)) !important;
 }
 
 .timeline.hide-world .banner-row {
@@ -585,7 +591,7 @@ main,
   }
 
   .timeline {
-    grid-template-columns: var(--axis-w) 1fr;
+    grid-template-columns: var(--axis-w) repeat(var(--fig-count), var(--fig-w)) 1fr;
   }
 
   .civ-band,
@@ -597,8 +603,12 @@ main,
     grid-column: 1 !important;
   }
 
+  .figure-slot {
+    grid-column: calc(2 + var(--lane)) !important;
+  }
+
   .cell-china {
-    grid-column: 2 !important;
+    grid-column: calc(2 + var(--fig-count)) !important;
   }
 
   .banner-row {

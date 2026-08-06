@@ -31,7 +31,7 @@ const colTotal = colChina
   {figureBands.map((band) => (
     <div
       class="figure-slot"
-      style={`grid-row:${band.rowStart}/${band.rowEnd + 1};grid-column:${colFigStart + band.lane}`}
+      style={`grid-row:${band.rowStart}/${band.rowEnd + 1};grid-column:${colFigStart + band.lane};--lane:${band.lane}`}
     >
       <FigureBand band={band} />
     </div>
@@ -39,9 +39,15 @@ const colTotal = colChina
 
   {rows.map((row) =>
     row.type === 'banner' ? (
-      // 横幅横跨三栏（世界/中轴/中国），但不越入文明列——
-      // 色带是跨行的连续背景，被横幅切断会失去其作为参照物的作用
-      <div class="banner-row" style={`grid-row:${row.gridRow};grid-column:${colWorld}/-1`}>
+      // 横幅跨「中轴 + 中国事件」，不越入世界栏。
+      //
+      // 中轴不是中立的——它装着朝代色带与在位君主，都是中国的内容。
+      // 故长卷真正的分界在 [文明带][世界事件] │ [中轴][中国事件]，
+      // 横幅须守住这条线：读者顺世界栏下扫时，不该撞上「秦都咸阳」。
+      //
+      // 跨中轴而非仅在其右：横幅行的中轴是空的（不渲染年份），占用零成本；
+      // 且朝代色带就在中轴里，横幅紧贴色带才说得通「这条带子是什么」。
+      <div class="banner-row" style={`grid-row:${row.gridRow};grid-column:${colAxis}/-1`}>
         <DynastyBanner dynasty={row.dynasty} rulers={row.rulers} />
       </div>
     ) : (
