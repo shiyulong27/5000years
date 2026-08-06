@@ -1,12 +1,12 @@
 - id: ming-1368
   date: "1368-01"
-  title: 朱元璋建明，刘伯温运筹帷幄
+  title: 朱元璋称帝，明朝建立
   category: 政治
   tags: [明朝建国, 谋臣]
   importance: 5
-  summary: 朱元璋于应天（今南京）即帝位建明，军师刘基（刘伯温）运筹帷幄定计灭陈友谅、张士诚，北伐驱除胡虏。
+  summary: 朱元璋于应天（今南京）即帝位，国号明，定都南京。此前已先后灭亡陈友谅、张士诚，随即挥师北伐驱逐元廷。
   confidence: 确定
-  sources: [明史·刘基传]
+  sources: [明史·太祖纪]
 
 
 - id: jingnan-zhiyi
@@ -52,7 +52,7 @@
   title: 土木之变
   category: 战争
   importance: 4
-  summary: 明英宗亲征瓦剌，于土木堡兵败被俘，明军精锐尽丧，是为国耻。
+  summary: 明英宗亲征瓦剌（wǎ là），于土木堡兵败被俘，明军精锐尽丧，是为国耻。
   confidence: 确定
 
 - id: beijing-baoweizhan
@@ -71,7 +71,7 @@
   category: 战争
   tags: [戚家军, 东南沿海]
   importance: 4
-  summary: 戚继光率兵创九战九捷之绩，痛歼日本倭寇侵略者，肃清东南沿海倭患。
+  summary: 戚继光率戚家军台州九战九捷，痛歼倭寇，肃清东南沿海倭患。
   confidence: 确定
   sources: [明史·戚继光传]
 
@@ -81,7 +81,7 @@
   category: 政治
   tags: [清官, 典故]
   importance: 4
-  summary: 户部主事海瑞备死买棺，直言直谏直批嘉靖帝「嘉靖者言家家皆净也」，名震天下。
+  summary: 户部主事海瑞抱必死之心预置棺木，上《治安疏》直谏嘉靖帝，痛陈「嘉靖者，言家家皆净也」，名震天下。
   confidence: 确定
   sources: [明史·海瑞传]
 
@@ -117,11 +117,11 @@
 
 - id: xuxiake-youji
   date: "1636"
-  title: 徐霞客撰《徐霞客游记》
+  title: 徐霞客西南远游
   category: 文化
   tags: [地理, 探险]
   importance: 4
-  summary: 地理学家徐霞客历三十年考察大半中国奇峰溶洞，撰《徐霞客游记》，为世界最早喀斯特地貌研究。
+  summary: 地理学家徐霞客西行远游，考察西南奇峰溶洞，撰《徐霞客游记》，为世界早期喀斯特地貌研究。
   confidence: 确定
   sources: [明史·徐霞客传]
 
@@ -131,7 +131,7 @@
   category: 政治
   tags: [明末农民起义, 甲申之变]
   importance: 5
-  summary: 李自成率大顺军攻陷北京，崇祯帝于煤山自缢，明朝灭亡；后吴三桂引清兵入关，顺天府失守。
+  summary: 李自成率大顺军攻陷北京，崇祯帝于煤山自缢，明朝灭亡。
   confidence: 确定
   sources: [明史·庄烈帝纪]
 

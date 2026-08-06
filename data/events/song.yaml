@@ -29,22 +29,24 @@
 
 - id: yangjiajiang-jinsha
   date: "0986"
-  title: 雍熙北伐，杨业金沙滩殉国
+  title: 雍熙北伐，杨业力战殉国
   category: 战争
   tags: [杨家将, 抗辽]
   importance: 4
-  summary: 宋太宗发兵三路北伐收复燕云十六州，主将杨业于朔州金沙滩孤军绝食撞李陵碑殉国，成就忠烈杨家将传说。
-  confidence: 确定
+  summary: 宋太宗发兵数路北伐欲复燕云失地，主将杨业孤军无援力战被俘，绝食三日而亡，成就忠烈杨家将传说。
+  confidence: 有争议
+  dispute: 「金沙滩撞李陵碑殉国」为《杨家将演义》虚构，正史载杨业败于陈家谷口被俘后绝食而死。
   sources: [宋史·杨业传]
 
 - id: chanyuan-treaty-1004
-  date: "1004"
+  date: "1005"
   title: 寇准促真宗亲征，澶渊之盟
   category: 政治
   tags: [外交, 辽国, 主战]
   importance: 4
-  summary: 辽军兵临澶州，宰相寇准力排众议促宋真宗亲征北上鼓舞士气，射杀辽将萧挞凛，双方结为兄弟之国维持百年和平。
-  confidence: 确定
+  summary: 辽军兵临澶州，宰相寇准力排众议促宋真宗亲征鼓舞士气，射杀辽将萧挞凛，双方订盟约为兄弟之国，维持百年和平。
+  confidence: 有争议
+  dispute: 辽军南下、真宗亲征在1004年，盟约于1005年正月（景德二年）订立，此处系于盟成之年。
   sources: [宋史·寇准传]
 
 
@@ -94,7 +96,7 @@
   category: 战争
   tags: [宋朝, 名将]
   importance: 4
-  summary: 名将狄青每次临阵披发戴青铜面具冲锋陷阵，于大年三十夜出奇兵夜袭昆仑关平定侬智高。
+  summary: 名将狄青每临阵披发戴青铜面具冲锋陷阵，于上元夜举宴麻痹守军后奇袭昆仑关，平定侬智高（nóng zhì gāo）。
   confidence: 确定
   sources: [宋史·狄青传]
 
@@ -150,11 +152,11 @@
 
 - id: fangla-qiyi
   date: "1120"
-  title: 方腊起义与梁山宋江
+  title: 方腊起义
   category: 战争
   tags: [起义, 花石纲]
   importance: 4
-  summary: 宋徽宗设花石纲搜刮江南，方腊于睦州起义，宋江聚众梁山泊抗宋，尽显北宋末年朝政腐败。
+  summary: 宋徽宗设花石纲搜刮江南，方腊于睦州起义，攻占六州五十二县、震动东南，后遭镇压，尽显北宋末年朝政腐败。
   confidence: 确定
   sources: [宋史·徽宗纪]
 
@@ -169,13 +171,16 @@
   sources: [宋史·高宗纪]
 
 - id: yuemu-cizi
-  date: "1127-06"
+  date: "1126"
   title: 岳母刺字，精忠报国
   category: 战争
   tags: [岳飞, 典故]
   importance: 4
-  summary: 北宋灭亡后岳飞从军抗金，岳母姚氏在其背上刺「尽忠报国」（后俗称精忠报国），以此励志保家卫国。
-  confidence: 确定
+  summary: 北宋将亡之际岳飞投身抗金，相传岳母在其背上刺「尽忠报国」（后俗称精忠报国）以励其志。
+  confidence: 传说
+  dispute: |
+    岳母刺字为正史无载的传说，源自后世笔记小说；岳飞从军约在靖康元年（1126），
+    年代亦系约估。
   sources: [宋史·岳飞传]
 
 
@@ -185,7 +190,7 @@
   category: 战争
   tags: [抗金, 岳家军]
   importance: 5
-  summary: 岳飞率岳家军在郾城大败金兀术主力拐子马、铁浮图，收复郑州洛阳，直逼汴京。
+  summary: 岳飞率岳家军在郾城（yǎn chéng）大败金兀术（wù zhú）主力拐子马、铁浮屠，收复郑州洛阳，直逼汴京。
   confidence: 确定
   sources: [宋史·岳飞传]
 
@@ -218,12 +223,12 @@
   sources: [宋史·文天祥传]
 
 - id: yashan-battle-1279
-  date: "1279-03"
+  date: "1279-02"
   title: 崖山海战，陆秀夫负帝跳海宋亡
   category: 战争
   tags: [南宋灭亡, 忠烈]
   importance: 5
-  summary: 崖山海战宋军绝境力战不敌，丞相陆秀夫背负八岁少帝赵昺投海殉国，十万军民随之投海，南宋彻底灭亡。
+  summary: 崖山海战宋军绝境力战不敌，丞相陆秀夫背负八岁少帝赵昺（bǐng）投海殉国，十万军民随之投海，南宋彻底灭亡。
   confidence: 确定
   sources: [宋史·陆秀夫传]
 

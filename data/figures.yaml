@@ -75,7 +75,7 @@
   dispute: 生年有前551与前552两说，《史记》与《公羊传》所载不同。
 
 - id: wuzixu
-  name: 伍子胥
+  name: 伍子胥（xū）
   birth: "-0559"
   death: "-0484"
   field: 政治
@@ -112,7 +112,7 @@
   dispute: 生卒年据史料推算。
 
 - id: sunbin
-  name: 孙膑
+  name: 孙膑（bìn）
   birth: "-0380"
   death: "-0316"
   field: 军事
@@ -177,7 +177,7 @@
 
 
 - id: linxiangru
-  name: 蔺相如
+  name: 蔺相如（lìn）
   birth: "-0320"
   death: "-0260"
   field: 政治
@@ -223,13 +223,13 @@
 
 
 - id: lishiqi
-  name: 郦食其
+  name: 郦食其（lì yì jī）
   birth: "-0268"
-  death: "-0203"
+  death: "-0204"
   field: 政治
-  note: 汉初高徒说客，单骑说降齐王田广，下齐七十余城
+  note: 汉初高阳酒徒说客，单骑说降齐王田广，下齐七十余城，后为田广所烹
   confidence: 有争议
-  dispute: 生卒年据典籍推定。
+  dispute: 生卒年据典籍推定，被杀年份前203、前204两说并存。
 
 - id: qinshihuang
   name: 秦始皇
@@ -390,7 +390,7 @@
   confidence: 确定
 
 - id: jikang
-  name: 嵇康
+  name: 嵇康（jī）
   birth: "0223"
   death: "0262"
   field: 文学
@@ -432,7 +432,7 @@
   confidence: 确定
 
 - id: fujian
-  name: 苻坚
+  name: 苻坚（fú jiān）
   birth: "0338"
   death: "0385"
   field: 政治
@@ -476,7 +476,7 @@
   confidence: 确定
 
 - id: xuanzang
-  name: 玄奘
+  name: 玄奘（zàng）
   birth: "0602"
   death: "0664"
   field: 思想
@@ -534,7 +534,7 @@
   confidence: 确定
 
 - id: zhaokuangyin
-  name: 赵匡胤
+  name: 赵匡胤（yìn）
   birth: "0927"
   death: "0976"
   field: 政治
@@ -547,11 +547,12 @@
   birth: "0932"
   death: "0986"
   field: 军事
-  note: 北宋名将，杨无敌，雍熙北伐陷孤军弹尽粮绝撞李陵碑殉国
-  confidence: 确定
+  note: 北宋名将，杨无敌，雍熙北伐孤军力战被俘，绝食三日殉国
+  confidence: 有争议
+  dispute: 「金沙滩撞李陵碑」为演义虚构，正史载杨业被俘后绝食而死。
 
 - id: liyu
-  name: 李煜
+  name: 李煜（yù）
   birth: "0937"
   death: "0978"
   field: 文学
@@ -618,7 +619,7 @@
   confidence: 确定
 
 - id: zhuxi
-  name: 朱熹
+  name: 朱熹（xī）
   birth: "1130"
   death: "1200"
   field: 思想
@@ -701,7 +702,7 @@
 
 
 - id: qijiguang
-  name: 戚继光
+  name: 戚继光（qī）
   birth: "1528"
   death: "1588"
   field: 军事

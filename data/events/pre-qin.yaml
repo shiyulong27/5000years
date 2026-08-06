@@ -162,13 +162,14 @@
   sources: [左传·僖公五年]
 
 - id: bailixi-wuyangpi
-  date: "-0659"
-  title: 秦穆公五羊皮换百里奚
+  date: "-0655"
+  title: 秦穆公五羊皮换百里奚（xī）
   category: 政治
   tags: [秦国, 用人]
   importance: 3
-  summary: 秦穆公用五张黑羊皮赎回楚国逃奴百里奚，委以国政拜为上卿，开秦国霸业。
-  confidence: 确定
+  summary: 秦穆公用五张羊皮赎百里奚（bǎi lǐ xī）于楚，委以国政拜为上卿，开秦国霸业。
+  confidence: 有争议
+  dispute: 系年《史记》记为穆公五年（前655），此处从之；一说在穆公元年。
   sources: [史记·秦本纪]
 
 
@@ -267,14 +268,14 @@
   sources: [史记·伍子胥列传]
 
 - id: woxin-changdan
-  date: "-0493"
+  date: "-0490"
   title: 越王勾践卧薪尝胆
-
   category: 政治
   tags: [越国, 吴国]
   importance: 4
-  summary: 越王勾践兵败会稽山后入吴为奴，归国后卧薪尝胆、励精图治，最终复仇灭吴。
-  confidence: 确定
+  summary: 越王勾践兵败夫椒后入吴为奴三年，归国后悬挂苦胆常自尝之、励精图治，最终复仇灭吴。
+  confidence: 有争议
+  dispute: 「尝胆」见《史记·越王勾践世家》，「卧薪」为后世（苏轼《拟孙权答曹操书》后）附会成分；归国图强约在前490年前后。
   sources: [史记·越王勾践世家]
 
 - id: warring-states
@@ -305,7 +306,7 @@
   category: 政治
   tags: [变法, 楚国]
   importance: 4
-  summary: 兵家名将吴起受楚悼王任用变法裁减封君抑贵族，楚国兵震天下；悼王死后贵族伏击吴起，吴起伏尸悼王遗体杀贼。
+  summary: 兵家名将吴起受楚悼王任用变法裁减封君抑贵族，楚国兵震天下；悼王死后贵族作乱射杀吴起，吴起伏于王尸之上，箭矢并中王尸，楚肃王遂以辱尸之罪族诛作乱者。
   confidence: 确定
   sources: [史记·孙子吴起列传]
 
@@ -315,7 +316,7 @@
   category: 政治
   tags: [商鞅变法, 典故]
   importance: 4
-  summary: 商鞅变法前于国都南门立三丈之木，募能徙者予五十金，以显示赏罚严明、诚信立官。
+  summary: 商鞅变法前于国都南门立三丈之木，募能徙者予五十金，以取信于民、明示赏罚。
   confidence: 确定
   sources: [史记·商君列传]
 
@@ -344,7 +345,7 @@
   category: 战争
   tags: [兵法, 减灶诱敌]
   importance: 4
-  summary: 孙膑用减灶退兵计引诱庞涓轻敌追击，于马陵设伏将庞涓射杀于斫皮大树下，魏国精锐尽丧。
+  summary: 孙膑用减灶退兵计诱庞涓轻敌追击，于马陵设伏，庞涓兵败穷途自刎而死，魏国精锐尽丧。
   confidence: 确定
   sources: [史记·孙子吴起列传]
 
@@ -406,8 +407,9 @@
   category: 政治
   tags: [外交, 赵国, 典故]
   importance: 4
-  summary: 蔺相如携和氏璧赴秦奉使，凭智勇使和氏璧归赵；后廉颇感其贤狭负荆请罪，将相和。
-  confidence: 确定
+  summary: 蔺相如携和氏璧赴秦奉使，凭智勇使和氏璧完璧归赵；后廉颇感其贤，负荆请罪，将相和。
+  confidence: 有争议
+  dispute: 完璧归赵在前283年前后，负荆请罪系渑池之会（约前279）后之事，两事相隔数年，此处合并一条且系于前283。
   sources: [史记·廉颇蔺相如列传]
 
 - id: tiandan-huoniu

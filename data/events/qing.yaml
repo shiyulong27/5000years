@@ -13,7 +13,7 @@
   category: 战争
   tags: [清初, 忠烈]
   importance: 4
-  summary: 清军豫亲王多铎攻破扬州，史可法壮烈殉国，清军屠城十日；后因剃发令又于嘉定实施三屠，江南抗清惨烈。
+  summary: 清军豫亲王多铎（duó）攻破扬州，史可法壮烈殉国，清军屠城十日；后因剃发令又于嘉定实施三屠，江南抗清惨烈。
   confidence: 确定
   sources: [明季南略, 扬州十日记]
 
@@ -41,7 +41,6 @@
 - id: sanfan-zhiluan
   date: "1673"
   title: 康熙平定三藩之乱
-
   category: 战争
   tags: [清朝, 削藩]
   importance: 4
@@ -111,7 +110,7 @@
   title: 洋务运动始
   category: 政治
   importance: 4
-  summary: 恭亲王奕訢、曾国藩、李鸿章等主导洋务运动，提出「自强」「求富」，开启中国近代化进程。
+  summary: 恭亲王奕訢（yì xīn）、曾国藩、李鸿章等主导洋务运动，提出「自强」「求富」，开启中国近代化进程。
   confidence: 确定
   sources: [清史稿·穆宗本纪]
 

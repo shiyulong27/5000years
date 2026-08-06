@@ -30,11 +30,11 @@
 
 - id: lishiqi-shuqi
   date: "-0203"
-  title: 郦食其游说下齐七十余城
+  title: 郦食其（lì yì jī）游说下齐七十余城
   category: 政治
   tags: [楚汉, 纵横说客]
   importance: 4
-  summary: 高祖说客郦食其单骑赴齐，凭凭凭辩说下齐王田广停战降汉，不费一兵一卒收复齐国七十余城。
+  summary: 高祖说客郦食其（lì yì jī）单骑赴齐，凭三寸不烂之舌说下齐王田广停战降汉，不费一兵一卒收复齐国七十余城。
   confidence: 确定
   sources: [史记·郦生陆贾列传]
 
@@ -72,7 +72,7 @@
   category: 政治
   tags: [军纪, 西汉]
   importance: 3
-  summary: 匈奴入侵，文帝亲劳军，至细柳营按辔徐行，军门都尉称「军中闻将军令，不闻天子之诏」，文帝大加称赞「此真将军矣」。
+  summary: 匈奴入侵，文帝亲劳军，至细柳营按辔（pèi）徐行，军门都尉称「军中闻将军令，不闻天子之诏」，文帝大加称赞「此真将军矣」。
   confidence: 确定
   sources: [史记·绛侯周勃世家]
 
@@ -82,7 +82,7 @@
   category: 政治
   tags: [削藩, 西汉]
   importance: 4
-  summary: 汉景帝采纳晁错建议削藩，吴王刘濞等七国以「诛晁错清君侧」起兵，周亚夫三月平乱。
+  summary: 汉景帝采纳晁错建议削藩，吴王刘濞（bì）等七国以「诛晁错清君侧」起兵，周亚夫三月平乱。
   confidence: 确定
   sources: [汉书·荆燕吴传]
 
@@ -92,8 +92,11 @@
   category: 文化
   tags: [汉赋, 典故]
   importance: 3
-  summary: 蜀中才子司马相如弹《凤求凰》琴曲，与富商之女卓文君相爱夜奔临邛开酒肆当帆，传为千古佳话。
-  confidence: 确定
+  summary: 蜀中才子司马相如弹《凤求凰》琴曲，与富商之女卓文君相爱夜奔临邛（qióng）开酒肆当垆（lú）卖酒，传为千古佳话。
+  confidence: 有争议
+  dispute: |
+    《凤求凰》曲名及「弹琴求爱」细节系后世演绎，不载于《史记·司马相如列传》；
+    司马相如与卓文君相识年代亦史无确载。
   sources: [史记·司马相如列传]
 
 - id: liguang-feijiangjun
@@ -102,7 +105,7 @@
   category: 战争
   tags: [西汉, 典故]
   importance: 4
-  summary: 汉将李广历仕文景武三朝，智勇过人射石陷矢，力抗匈奴，匈奴号曰「飞将军」不敢犯。
+  summary: 汉将李广历仕文景武三朝，智勇过人射石没镞，力抗匈奴，匈奴号曰「飞将军」不敢犯。
   confidence: 确定
   sources: [史记·李将军列传]
 
@@ -198,7 +201,7 @@
   category: 战争
   tags: [决定性战役, 绿林军]
   importance: 5
-  summary: 刘秀率轻骑三千突袭王莽王寻、王邑四十万大军于昆阳城下，斩王寻，王莽主力精锐尽歼，新朝覆灭。
+  summary: 刘秀以少胜多，大破王莽王寻、王邑数十万大军于昆阳城下，斩王寻，王莽主力尽歼，新朝随之败亡。
   confidence: 确定
   sources: [后汉书·光武帝纪]
 
@@ -278,19 +281,22 @@
   category: 政治
   tags: [东汉末年, 汉室衰微]
   importance: 4
-  summary: 董卓率凉州军入洛阳废少帝立献帝，专横残暴焚毁洛阳迁都长安，袁绍等十八路诸侯起兵讨伐。
+  summary: 董卓率凉州军入洛阳废少帝立献帝，专横残暴焚毁洛阳迁都长安，袁绍等关东诸侯起兵讨伐。
   confidence: 确定
   sources: [后汉书·董卓传]
 
 
 - id: qingmei-zhujiu
-  date: "0199-06"
+  date: "0199"
   title: 曹操刘备青梅煮酒论英雄
   category: 政治
   tags: [三国, 典故]
   importance: 4
-  summary: 曹操于许昌设盘置青梅煮酒与刘备共饮，论天下英雄称「天下英雄唯使君与操耳」，刘备闻雷巧落匙。
-  confidence: 确定
+  summary: 曹操于许昌与刘备煮酒论天下英雄，称「天下英雄唯使君与操耳」，刘备惊而落箸。
+  confidence: 有争议
+  dispute: |
+    「青梅煮酒」「闻雷落箸」的场景出自《三国演义》演绎，《三国志·先主传》
+    仅载曹操一句「天下英雄唯使君与操耳」，具体年月亦无考。
   sources: [三国志·先主传]
 
 - id: guanyu-qianlizou
@@ -299,8 +305,11 @@
   category: 战争
   tags: [三国, 典故]
   importance: 4
-  summary: 关羽斩颜良诛文丑报曹操恩后挂印封金离许昌，护送甘甘二夫人过五关斩六将寻找刘备。
-  confidence: 确定
+  summary: 关羽斩颜良报曹操恩后挂印封金离许昌，护送甘糜（mí）二夫人奔归刘备。
+  confidence: 有争议
+  dispute: |
+    「过五关斩六将」「千里走单骑」为《三国演义》演绎，正史《三国志·关羽传》
+    仅记关羽「拜书告辞，奔先主于袁军」；「诛文丑」亦非关羽所杀（文丑为曹操军所斩）。
   sources: [三国志·关羽传]
 
 - id: guandu-zhizhan
@@ -315,13 +324,15 @@
 
 
 - id: huatuo-mafeisan
-  date: "0208-01"
+  date: "0208"
   title: 华佗创制麻沸散
   category: 文化
   tags: [医学, 典故]
   importance: 4
-  summary: 东汉神医华佗创制中药全身麻醉剂「麻沸散」施行外科手术，并编创五禽戏养生。
-  confidence: 确定
+  summary: 东汉神医华佗以酒服麻沸散施行外科手术，并编创五禽戏养生。
+  confidence: 有争议
+  dispute: |
+    麻沸散创制年代史无确载，「全身麻醉」的效果后人有争议，此处系于华佗卒年（208）前后。
   sources: [后汉书·华佗传]
 
 - id: chibi-208
@@ -343,8 +354,11 @@
   category: 政治
   tags: [荆州, 典故]
   importance: 4
-  summary: 孙权派鲁肃讨要荆州，关羽应邀只带单刀长枪乘单舟过江赴会相抗，全躯而回。
-  confidence: 确定
+  summary: 孙权派鲁肃讨要荆州，关羽与鲁肃相会单刀相论，力拒割地，全躯而还。
+  confidence: 有争议
+  dispute: |
+    正史中单刀赴会系鲁肃携关羽单刀相会（各去刀剑），「关羽只带单刀过江
+    赴会」为演义化叙述，细节无确证。
   sources: [三国志·鲁肃传]
 
 - id: guanyu-guagu
