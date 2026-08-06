@@ -5,6 +5,9 @@
   importance: 5
   summary: 胡夫金字塔，古代世界七大奇迹中唯一留存至今者。
   confidence: 有争议
+  dispute: |
+    年代依胡夫在位年推定，埃及年表各家重建相差数十年；
+    建造方式本身亦无定论。
 
 - id: w-hammurabi
   date: "-1754"
@@ -13,6 +16,10 @@
   importance: 5
   summary: 现存最完整的古代成文法典之一。
   confidence: 有争议
+  dispute: |
+    汉谟拉比年代有高、中、低三套年表，此处采中年代说
+    （在位前1792–前1750），法典颁于其在位后期；
+    高、低年代说各相差数十年。
 
 - id: w-troy
   date: "-1200"
@@ -21,6 +28,9 @@
   importance: 3
   summary: 荷马史诗所记，考古上确有其城毁于此时。
   confidence: 有争议
+  dispute: |
+    荷马所述战争是否史实无从证实；考古所能确认者，为特洛伊城
+    （VIIa层）约前1180年毁于兵燹。年代为约值。
 
 - id: w-rome-republic
   date: "-0509"
@@ -29,6 +39,9 @@
   importance: 5
   summary: 驱逐末代国王，行元老院与执政官之制。
   confidence: 有争议
+  dispute: |
+    前509为后世罗马史家的推定，早期史事半属传说；今学界多认为
+    共和体制的形成是渐进过程，此年具象征意义。
 
 - id: w-buddha
   date: "-0486"
@@ -37,6 +50,9 @@
   importance: 5
   summary: 佛教自此传布，数百年后经西域入华。
   confidence: 有争议
+  dispute: |
+    佛陀生卒年有前566–前486（传统说）与约前480–前400（修正说）
+    两大系统，相差数十年。此处采传统说。
 
 - id: w-alexander
   date: "-0334"
@@ -61,6 +77,7 @@
   importance: 5
   summary: 基督教自此发端，此后深刻塑造西方文明。
   confidence: 有争议
+  dispute: 受难年份通行30与33两说，无定论。此处采30说。
 
 - id: w-rome-empire-split
   date: "0395"
@@ -91,8 +108,12 @@
   title: 笈多王朝兴起
   category: 政治
   importance: 4
-  summary: 印度古典文化的黄金时代，数学上的十进位与零皆成于此时。
+  summary: 印度古典文化的黄金时代，十进位值制数学于此成熟。
   confidence: 有争议
+  dispute: |
+    建国年有319与320两说（即笈多纪年之始），此处采320。
+    零作为书写符号的实物记录晚于此时，旧概要谓「零成于此时」
+    不确，已改。
 
 - id: w-rome-sack-410
   date: "0410-08"

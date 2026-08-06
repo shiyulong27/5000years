@@ -62,13 +62,19 @@
   importance: 5
   summary: 鸣条之战，桀奔南巢，夏亡。
   confidence: 有争议
+  dispute: |
+    鸣条之战与桀奔南巢皆出自传世文献，无同时代文字可证；
+    夏本身的信史地位亦有争议（见 xia-founding 条）。年代采
+    夏商周断代工程说（前1600），另有前1550 等说。
 
 - id: oracle-bone
   date: "-1300"
-  title: 盘庚迁殷，甲骨文行世
+  title: 盘庚迁殷
   category: 文化
   importance: 5
-  summary: 有文字可证的中国信史自此始。
+  summary: |
+    迁殷后商政稳定。殷墟甲骨（主要属武丁以降）为最早成体系的汉字，
+    有文字可证的中国信史自此始。
   confidence: 确定
 
 - id: zhou-founding
@@ -78,6 +84,10 @@
   importance: 5
   summary: 牧野之战商亡。分封建国，制礼作乐。
   confidence: 有争议
+  dispute: |
+    牧野之战年代历来聚讼，自前1130至前1018凡四十余说。
+    此处采夏商周断代工程说（前1046），前1044、前1027
+    亦为有力说。
   sources: [史记·周本纪]
 
 - id: pingwang-east
@@ -95,6 +105,9 @@
   importance: 5
   summary: 儒家之祖。其学说此后两千余年为中国思想之主干。
   confidence: 有争议
+  dispute: |
+    生年有前551与前552两说：《公羊》《穀梁》系于鲁襄公二十一年，
+    《史记》系于二十二年。后世多从《史记》。
 
 - id: warring-states
   date: "-0475"
@@ -103,6 +116,10 @@
   importance: 4
   summary: 七雄并立，百家争鸣。中国思想史上最活跃的时代。
   confidence: 有争议
+  dispute: |
+    战国起点为后世史家约定：前475（《史记》六国表）、前481
+    （《春秋》绝笔之翌）、前403（三家分晋受封为侯，《通鉴》
+    所始）诸说并存。此处采前475说。
 
 - id: shangyang-reform
   date: "-0356"

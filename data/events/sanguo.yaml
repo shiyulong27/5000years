@@ -16,7 +16,8 @@
   confidence: 确定
 
 - id: yiling-222
-  date: "0222-08"
+  # 陆逊火攻大破刘备在章武二年六月（《三国志·陆逊传》），八月是刘备退守永安的时间
+  date: "0222-06"
   title: 夷陵之战
   category: 战争
   importance: 4
