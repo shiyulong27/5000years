@@ -1,0 +1,55 @@
+- id: w-hijra-622
+  date: "0622"
+  title: 穆罕默德希吉拉，伊斯兰教纪元始
+  category: 文化
+  importance: 5
+  summary: 穆罕默德自麦加迁往麦地那，伊斯兰历以是年为纪元元年。
+  confidence: 确定
+
+- id: w-charlemagne-800
+  date: "0800"
+  title: 查理曼加冕
+  category: 政治
+  importance: 4
+  summary: 教皇为法兰克王查理曼加冕称帝，西欧重开帝统，中古神圣罗马之先声。
+  confidence: 确定
+
+- id: w-great-schism-1054
+  date: "1054"
+  title: 教会大分裂
+  category: 文化
+  importance: 3
+  summary: 罗马与君士坦丁堡两枢机互绝，天主教与东正教正式分道扬镳。
+  confidence: 确定
+
+- id: w-crusade-1096
+  date: "1096"
+  title: 第一次十字军东征
+  category: 战争
+  importance: 4
+  summary: 西欧骑士打着宗教旗帜东征，攻陷耶路撒冷，此后历次十字军绵延两百年。
+  confidence: 确定
+
+- id: w-genghis-1206
+  date: "1206"
+  title: 成吉思汗建国
+  category: 战争
+  importance: 5
+  summary: 铁木真统一蒙古诸部称成吉思汗，蒙古帝国自此崛起，横扫欧亚。
+  confidence: 确定
+
+- id: w-black-death-1347
+  date: "1347"
+  title: 黑死病席卷欧洲
+  category: 灾害
+  importance: 5
+  summary: 鼠疫自黑海传来，数年内夺去欧洲近三分之一人口，重塑西欧社会结构。
+  confidence: 确定
+
+- id: w-constantinople-1453
+  date: "1453"
+  title: 君士坦丁堡陷落，东罗马终
+  category: 政治
+  importance: 5
+  summary: 奥斯曼攻陷君士坦丁堡，拜占庭帝国终结，中世纪告终，近代史由此开启。
+  confidence: 确定
