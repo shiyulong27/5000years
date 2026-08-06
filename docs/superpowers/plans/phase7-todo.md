@@ -268,24 +268,14 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task A10 ⬜ 1949–2026
+### Task A10 ✅ 1949–2026
 
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/xiandai.yaml`
 
-- [ ] **Step 1: 朝代**：`zhonghua 1949–2026`，summary 中性。
+- [x] **Step 1: 朝代**：`zhonghua 1949–2026`，summary 中性。
+- [x] **Step 2: 事件**
+- [x] **Step 3: 验收 + 强模型复审 + 提交** `feat(data): 1949–2026 数据`；改状态。
 
-- [ ] **Step 2: 事件**：
-
-```
-1949 开国大典                政治 5 确定
-1971 恢复联合国合法席位      政治 5 确定   tags: [外交]
-1978 十一届三中全会，改革开放始  政治 5 确定
-2001 加入世界贸易组织        经济 4 确定
-2003 神舟五号载人航天        科技→文化 4 确定   （category 无「科技」，科技类事件归文化，tags: [科技]）
-2008 北京奥运                文化 3 确定
-```
-
-- [ ] **Step 3: 验收 + 强模型复审 + 提交** `feat(data): 1949–2026 数据`；改状态。
 
 ### Task B1 ⬜ 世界中世纪（500–1450）
 
@@ -529,6 +519,8 @@ jobs:
 | 2026-08-06 | Task A7 明 | Antigravity | feat(data): 明代数据 |
 | 2026-08-06 | Task A8 清 | Antigravity | feat(data): 清代数据 |
 | 2026-08-06 | Task A9 民国 | Antigravity | feat(data): 民国数据 |
+| 2026-08-06 | Task A10 现代 | Antigravity | feat(data): 1949–2026 数据 |
+
 
 
 

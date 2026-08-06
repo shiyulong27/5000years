@@ -1,0 +1,55 @@
+- id: muhammad-hijra-0622
+  date: "0622"
+  title: 穆罕默德希吉拉，伊斯兰教纪元始
+  category: 文化
+  importance: 5
+  summary: 穆罕默德率追随者由麦加迁徙至麦地那，此年定为伊斯兰教历纪元之始。
+  confidence: 确定
+
+- id: charlemagne-coronation-0800
+  date: "0800"
+  title: 查理曼加冕
+  category: 政治
+  importance: 4
+  summary: 教皇利奥三世于罗马为法兰克国王查理加冕，称「罗马人的皇帝」，查理曼帝国建立。
+  confidence: 确定
+
+- id: great-schism-1054
+  date: "1054"
+  title: 教会大分裂
+  category: 文化
+  importance: 3
+  summary: 基督教分裂为以罗马为中心的西方天主教与以君士坦丁堡为中心的东方正教会。
+  confidence: 确定
+
+- id: first-crusade-1096
+  date: "1096"
+  title: 第一次十字军东征
+  category: 战争
+  importance: 4
+  summary: 西欧封建主与骑士在教皇号召下发动第一次十字军东征，攻占耶路撒冷。
+  confidence: 确定
+
+- id: genghis-khan-1206
+  date: "1206"
+  title: 成吉思汗建国
+  category: 战争
+  importance: 5
+  summary: 铁木真统一蒙古各部，尊号成吉思汗，建立大蒙古国。
+  confidence: 确定
+
+- id: black-death-1347
+  date: "1347"
+  title: 黑死病席卷欧洲
+  category: 灾害
+  importance: 5
+  summary: 鼠疫大流行席卷欧洲，导致欧洲近三分之一人口死亡，对欧洲社会产生深远影响。
+  confidence: 确定
+
+- id: constantinople-falls-1453
+  date: "1453"
+  title: 君士坦丁堡陷落，东罗马终
+  category: 政治
+  importance: 5
+  summary: 奥斯曼苏丹穆罕默德二世攻陷君士坦丁堡，拜占庭帝国（东罗马帝国）灭亡。
+  confidence: 确定
