@@ -233,27 +233,15 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task A7 ⬜ 明（1368–1644）
+### Task A7 ✅ 明（1368–1644）
 
 **Files:** Modify: `data/dynasties.yaml`、`data/figures.yaml`；Create: `data/events/ming.yaml`、`data/rulers/ming.yaml`
 
-- [ ] **Step 1: 事件**：
+- [x] **Step 1: 事件**
+- [x] **Step 2: 君主**：洪武（founder）、永乐（note）、崇祯（last）。
+- [x] **Step 3: 人物**：王阳明（1472–1529，思想，确定）、李时珍（1518–1593，科技，确定）。
+- [x] **Step 4: 验收 + 提交** `feat(data): 明代数据`；改状态。
 
-```
-1368 朱元璋建明，定都应天    政治 5 确定
-1405 郑和首下西洋            政治 5 确定   tags: [外交, 航海]
-1421 永乐迁都北京            政治 4 确定
-1449 土木之变                战争 4 确定
-1581 一条鞭法推行            经济 4 确定
-1596 《本草纲目》初刻        文化 4 确定   sources: [明史·李时珍传]
-1644 甲申之变，明亡          政治 5 确定
-```
-
-- [ ] **Step 2: 君主**：洪武（founder）、永乐（note）、崇祯（last）。
-
-- [ ] **Step 3: 人物**：王阳明（1472–1529，思想，确定）、李时珍（1518–1593，科技，确定）。
-
-- [ ] **Step 4: 验收 + 提交** `feat(data): 明代数据`；改状态。
 
 ---
 
@@ -566,6 +554,8 @@ jobs:
 | 2026-08-06 | Task A4 五代十国 | Antigravity | feat(data): 五代数据 |
 | 2026-08-06 | Task A5 两宋与辽夏金 | Antigravity | feat(data): 两宋与辽夏金 |
 | 2026-08-06 | Task A6 元 | Antigravity | feat(data): 元代数据 |
+| 2026-08-06 | Task A7 明 | Antigravity | feat(data): 明代数据 |
+
 
 
 

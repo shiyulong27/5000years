@@ -1,0 +1,28 @@
+- dynasty: qing
+  temple_name: 清太宗
+  name: 爱新觉罗·皇太极
+  reign_start: "1636"
+  reign_end: "1643"
+  era_names: [崇德]
+  note: 改国号大清，定族名为满洲
+  role: founder
+  confidence: 确定
+
+- dynasty: qing
+  temple_name: 清圣祖
+  name: 爱新觉罗·玄烨
+  reign_start: "1661"
+  reign_end: "1722"
+  era_names: [康熙]
+  note: 擒鳌拜、平三藩、收台湾、亲征噶尔丹，开创康乾盛世
+  confidence: 确定
+
+- dynasty: qing
+  temple_name: 宣统帝
+  name: 爱新觉罗·溥仪
+  reign_start: "1908"
+  reign_end: "1912"
+  era_names: [宣统]
+  note: 中国封建王朝末代皇帝，辛亥革命后退位
+  role: last
+  confidence: 确定

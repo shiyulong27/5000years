@@ -353,7 +353,17 @@
   start: "1368"
   end: "1644"
   color: "#c0392b"
+  concurrent: true
   summary: 朱元璋建立的大一统王朝，加强专制皇权，郑和下西洋展现海上强盛。
+
+- id: qing
+  name: 清
+  start: "1636"
+  end: "1912"
+  color: "#8e44ad"
+  concurrent: true
+  summary: 满族建立的统一王朝，奠定近现代中国版图基础。
+
 
 
 
