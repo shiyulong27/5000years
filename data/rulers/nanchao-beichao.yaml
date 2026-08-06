@@ -1,0 +1,39 @@
+# 南北朝君主（精选开国、关键改革及末代君主，其余从略）。
+
+- dynasty: liusong
+  temple_name: 宋武帝
+  name: 刘裕
+  reign_start: "0420"
+  reign_end: "0422"
+  era_names: [永初]
+  note: 代晋自立，南朝宋开国君主
+  role: founder
+  confidence: 确定
+
+- dynasty: beiwei
+  temple_name: 魏孝文帝
+  name: 元宏
+  reign_start: "0471"
+  reign_end: "0499"
+  era_names: [延兴, 承明, 太和]
+  note: 迁都洛阳，推行全面汉化改革
+  confidence: 确定
+
+- dynasty: beizhou
+  temple_name: 周武帝
+  name: 宇文邕
+  reign_start: "0560"
+  reign_end: "0578"
+  era_names: [保定, 天和, 建德, 宣政]
+  note: 建德灭佛，攻灭北齐统一北方
+  confidence: 确定
+
+- dynasty: chen
+  temple_name: 陈后主
+  name: 陈叔宝
+  reign_start: "0582"
+  reign_end: "0589"
+  era_names: [至德, 祯明]
+  note: 南朝陈末代君主，隋灭陈降隋
+  role: last
+  confidence: 确定

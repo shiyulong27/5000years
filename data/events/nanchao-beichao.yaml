@@ -1,0 +1,71 @@
+- id: liuyu-liusong-0420
+  date: "0420"
+  title: 刘裕代晋，刘宋建立
+  category: 政治
+  importance: 4
+  summary: 刘裕逼东晋恭帝禅位，国号宋，南朝始。
+  confidence: 确定
+  sources: [宋书·武帝纪]
+
+- id: beiwei-unify-north-0439
+  date: "0439"
+  title: 北魏统一北方
+  category: 政治
+  importance: 4
+  summary: 太武帝拓跋焘灭北凉，结束十六国割据，北方归于一统。
+  confidence: 确定
+  sources: [魏书·太武帝纪]
+
+- id: zuchongzhi-damingli-0462
+  date: "0462"
+  title: 祖冲之成《大明历》
+  category: 文化
+  importance: 4
+  summary: 祖冲之编制《大明历》，首次引入岁差，割圆术求得圆周率精确值。
+  confidence: 确定
+  sources: [宋书·律历志]
+
+- id: nanqi-establish-0479
+  date: "0479"
+  title: 萧道成代宋，南齐建立
+  category: 政治
+  importance: 3
+  summary: 萧道成受禅代宋建齐，史称南齐。
+  confidence: 确定
+  sources: [南齐书·高帝纪]
+
+- id: xiaowendi-luoyang-0494
+  date: "0494"
+  title: 北魏孝文帝迁都洛阳
+  category: 政治
+  importance: 4
+  summary: 魏孝文帝自平城迁都洛阳，全面推行汉化改革，促进民族融合。
+  confidence: 确定
+  sources: [魏书·高祖纪]
+
+- id: liang-establish-0502
+  date: "0502"
+  title: 萧衍代齐，梁建立
+  category: 政治
+  importance: 3
+  summary: 萧衍篡齐建梁，是为梁武帝。
+  confidence: 确定
+  sources: [梁书·武帝纪]
+
+- id: beiwei-split-0534
+  date: "0534"
+  title: 北魏分裂为东魏西魏
+  category: 政治
+  importance: 3
+  summary: 高欢、宇文泰各拥皇帝，北魏裂为东魏与西魏。
+  confidence: 确定
+  sources: [魏书·孝静帝纪]
+
+- id: chen-beizhou-0557
+  date: "0557"
+  title: 陈霸先建陈；北周代西魏
+  category: 政治
+  importance: 3
+  summary: 陈霸先受禅代梁建立陈朝；宇文觉代西魏建立北周。
+  confidence: 确定
+  sources: [陈书·高祖纪, 周书·孝闵帝纪]
