@@ -147,3 +147,83 @@
   capital: 建康
   color: "#16a085"
   parent: jin
+
+# ── 南北朝：南北长期并存，均 concurrent ─────────────────────────
+- id: nanchao
+  name: 南朝
+  start: "0420"
+  end: "0589"
+  color: "#7f8c8d"
+  concurrent: true
+  summary: 宋齐梁陈四代相承，皆都建康。
+- id: liusong
+  name: 刘宋
+  start: "0420"
+  end: "0479"
+  color: "#7f8c8d"
+  parent: nanchao
+- id: nanqi
+  name: 南齐
+  start: "0479"
+  end: "0502"
+  color: "#7f8c8d"
+  parent: nanchao
+- id: liang
+  name: 梁
+  start: "0502"
+  end: "0557"
+  color: "#7f8c8d"
+  parent: nanchao
+- id: chen
+  name: 陈
+  start: "0557"
+  end: "0589"
+  color: "#7f8c8d"
+  parent: nanchao
+- id: beichao
+  name: 北朝
+  start: "0386"
+  end: "0581"
+  color: "#8d6e63"
+  concurrent: true
+  summary: |
+    北魏统一北方始称北朝；此处区间上溯至北魏建国，
+    以容纳其子朝代。
+- id: beiwei
+  name: 北魏
+  start: "0386"
+  end: "0534"
+  color: "#8d6e63"
+  parent: beichao
+- id: dongwei
+  name: 东魏
+  start: "0534"
+  end: "0550"
+  color: "#8d6e63"
+  parent: beichao
+  # 与西魏 535–550 并存，兄弟区间重叠须声明
+  concurrent: true
+- id: xiwei
+  name: 西魏
+  start: "0535"
+  end: "0557"
+  color: "#8d6e63"
+  parent: beichao
+  # 与东魏 535–550、北齐 550–557 并存
+  concurrent: true
+- id: beiqi
+  name: 北齐
+  start: "0550"
+  end: "0577"
+  color: "#8d6e63"
+  parent: beichao
+  # 与西魏 550–557、北周 557–577 并存
+  concurrent: true
+- id: beizhou
+  name: 北周
+  start: "0557"
+  end: "0581"
+  color: "#8d6e63"
+  parent: beichao
+  # 与北齐 557–577 并存
+  concurrent: true

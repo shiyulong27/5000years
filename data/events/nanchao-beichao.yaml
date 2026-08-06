@@ -1,0 +1,69 @@
+- id: liu-song-420
+  date: "0420"
+  title: 刘裕代晋，刘宋建立
+  category: 政治
+  importance: 4
+  summary: 刘裕废晋恭帝自立，国号宋，南朝自此始。南方政权由门阀共治转向寒门武人当权。
+  confidence: 确定
+  sources: [宋书·武帝本纪]
+
+- id: beiwei-unify-439
+  date: "0439"
+  title: 北魏统一北方
+  category: 政治
+  importance: 4
+  summary: 太武帝灭北凉，北方十六国割据终结，北朝自此与南朝长期对峙。
+  confidence: 确定
+  sources: [魏书·世祖纪]
+
+- id: zu-chongzhi-462
+  date: "0462"
+  title: 祖冲之成《大明历》
+  category: 文化
+  importance: 4
+  summary: 祖冲之造《大明历》，首次将岁差引入历法，其圆周率推算亦早于西方数百年。
+  confidence: 确定
+  sources: [宋书·律历志]
+
+- id: nanqi-479
+  date: "0479"
+  title: 萧道成代宋，南齐建立
+  category: 政治
+  importance: 3
+  summary: 萧道成废宋顺帝自立，国号齐，刘宋亡。
+  confidence: 确定
+
+- id: luoyang-relocate-494
+  date: "0494"
+  title: 北魏孝文帝迁都洛阳
+  category: 政治
+  importance: 4
+  summary: 孝文帝自平城迁都洛阳，禁胡服、断北语、改汉姓，全面汉化，加速民族融合。
+  confidence: 确定
+  dispute: |
+    迁都时点有 493 与 494 两说。孝文帝太和十七年（493）正式下诏，
+    次年（494）大驾至于洛阳并定都，此处取定都之 494 说。
+
+- id: liang-502
+  date: "0502"
+  title: 萧衍代齐，梁建立
+  category: 政治
+  importance: 3
+  summary: 萧衍（梁武帝）代齐立梁，在位四十八年，前期政绩斐然，晚年侯景之乱瓦解梁统。
+  confidence: 确定
+
+- id: beiwei-split-534
+  date: "0534"
+  title: 北魏分裂为东魏西魏
+  category: 政治
+  importance: 3
+  summary: 高欢拥立元善见为帝迁洛阳，史称东魏；宇文泰拥立元宝炬都长安，史称西魏，北魏终。
+  confidence: 确定
+
+- id: chen-and-beizhou-557
+  date: "0557"
+  title: 陈霸先建陈；北周代西魏
+  category: 政治
+  importance: 3
+  summary: 陈霸先代梁建陈；宇文觉受禅代西魏建北周，南北格局进入陈与北周相持。
+  confidence: 确定

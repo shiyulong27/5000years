@@ -1,0 +1,55 @@
+# 南北朝君主。数百年间南北更迭十余代，此处只录关键几位
+# （开国、末代、标志性人物），非完整世系。
+#
+# 北朝诸帝多出自权臣拥立，庙号年号繁复，此处从略。
+
+- dynasty: liusong
+  temple_name: 宋武帝
+  name: 刘裕
+  reign_start: "0420"
+  reign_end: "0422"
+  era_names:
+    - 永初
+  note: 南朝宋开国之君，寒门出身，废晋建宋
+  role: founder
+
+- dynasty: chen
+  temple_name: 陈后主
+  name: 陈叔宝
+  reign_start: "0582"
+  reign_end: "0589"
+  era_names:
+    - 至德
+    - 祯明
+  note: 陈朝末代君主，耽于词赋声色，隋军渡江遂亡
+  role: last
+  confidence: 确定
+  dispute: |
+    史书多将陈之覆亡归于后主荒淫，然隋灭陈亦有时势必然；
+    「后庭花」之讥历代相沿，其个人责任宜有保留。
+
+- dynasty: beiwei
+  temple_name: 北魏孝文帝
+  name: 拓跋宏
+  reign_start: "0471"
+  reign_end: "0499"
+  era_names:
+    - 太和
+  note: 迁都洛阳，行汉化改革，促民族融合
+  confidence: 确定
+  dispute: |
+    在位年依北魏太和纪年推定。其汉化政策历来评价不一：
+    有赞其促进融合者，亦有北族史家谓其自毁尚武之本。
+
+- dynasty: beizhou
+  temple_name: 周武帝
+  name: 宇文邕
+  reign_start: "0561"
+  reign_end: "0578"
+  era_names:
+    - 保定
+    - 天和
+    - 建德
+    - 宣政
+  note: 灭佛抑儒，灭北齐而统一北方
+  confidence: 确定
