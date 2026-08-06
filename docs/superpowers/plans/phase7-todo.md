@@ -257,25 +257,14 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task A9 ⬜ 民国（1912–1949）
+### Task A9 ✅ 民国（1912–1949）
 
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/minguo.yaml`
 
-- [ ] **Step 1: 朝代**：`minguo 1912–1949 concurrent: true`，summary 中性表述；**无君主**，rulers 不建文件，dynasties 注释说明「共和无帝」。
+- [x] **Step 1: 朝代**：`minguo 1912–1949 concurrent: true`，summary 中性表述；**无君主**，rulers 不建文件，dynasties 注释说明「共和无帝」。
+- [x] **Step 2: 事件**
+- [x] **Step 3: 验收 + 强模型复审**（近现代史表述须中性、采通行教科书说法）。**提交** `feat(data): 民国数据`；改状态。
 
-- [ ] **Step 2: 事件**：
-
-```
-1912 清帝退位，民国建立      政治 5 确定
-1915 新文化运动始            文化 4 确定
-1919 五四运动                政治 5 确定
-1921 中国共产党成立          政治 5 确定
-1931 九一八事变              战争 5 确定
-1937 七七事变，全面抗战始    战争 5 确定
-1945 抗战胜利                政治 5 确定
-```
-
-- [ ] **Step 3: 验收 + 强模型复审**（近现代史表述须中性、采通行教科书说法）。**提交** `feat(data): 民国数据`；改状态。
 
 ---
 
@@ -539,6 +528,8 @@ jobs:
 | 2026-08-06 | Task A6 元 | Antigravity | feat(data): 元代数据 |
 | 2026-08-06 | Task A7 明 | Antigravity | feat(data): 明代数据 |
 | 2026-08-06 | Task A8 清 | Antigravity | feat(data): 清代数据 |
+| 2026-08-06 | Task A9 民国 | Antigravity | feat(data): 民国数据 |
+
 
 
 

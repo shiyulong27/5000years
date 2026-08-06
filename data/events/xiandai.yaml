@@ -1,0 +1,49 @@
+- id: prc-founding-1949
+  date: "1949"
+  title: 开国大典
+  category: 政治
+  importance: 5
+  summary: 毛泽东于北京天安门城楼宣告中华人民共和国中央人民政府成立。
+  confidence: 确定
+
+- id: un-seat-restored-1971
+  date: "1971"
+  title: 恢复联合国合法席位
+  category: 政治
+  importance: 5
+  summary: 第26届联合国大会通过第2758号决议，恢复中华人民共和国在联合国的一切合法权利。
+  confidence: 确定
+  tags: [外交]
+
+- id: reform-opening-1978
+  date: "1978"
+  title: 十一届三中全会，改革开放始
+  category: 政治
+  importance: 5
+  summary: 中共十一届三中全会召开，将工作中心转移到经济建设上来，开启改革开放历史新时期。
+  confidence: 确定
+
+- id: wto-entry-2001
+  date: "2001"
+  title: 加入世界贸易组织
+  category: 经济
+  importance: 4
+  summary: 中国正式加入世界贸易组织（WTO），全面融入世界经济体系。
+  confidence: 确定
+
+- id: shenzhou-5-2003
+  date: "2003"
+  title: 神舟五号载人航天
+  category: 文化
+  importance: 4
+  summary: 航天员杨利伟乘神舟五号飞船成功进入太空并安全返回，中国首次载人航天飞行圆满成功。
+  confidence: 确定
+  tags: [科技]
+
+- id: beijing-olympics-2008
+  date: "2008"
+  title: 北京奥运
+  category: 文化
+  importance: 3
+  summary: 第29届夏季奥林匹克运动会在北京成功举办。
+  confidence: 确定

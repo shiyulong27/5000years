@@ -373,6 +373,14 @@
   concurrent: true
   summary: 推翻帝制建立共和，历经北洋政府与国民政府时期及八年全面抗战。
 
+- id: zhonghua
+  name: 中华人民共和国
+  start: "1949"
+  end: "2026"
+  color: "#c0392b"
+  summary: 1949年10月1日成立，开启中国现代史新篇章。
+
+
 
 
 
