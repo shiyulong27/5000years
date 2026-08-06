@@ -242,6 +242,14 @@
   concurrent: true
   summary: 二世而亡，制度遗泽唐宋。
 
+- id: tang
+  name: 唐
+  start: "0618"
+  end: "0907"
+  color: "#b03a2e"
+  summary: 气度恢弘，经济文化空前繁荣，与汉并称汉唐盛世。
+
+
 
 
 

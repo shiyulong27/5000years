@@ -1,0 +1,81 @@
+- id: liyuan-tang-0618
+  date: "0618"
+  title: 李渊建唐
+  category: 政治
+  importance: 5
+  summary: 高祖李渊于长安称帝，国号唐，建元武德。
+  confidence: 确定
+  sources: [旧唐书·高祖纪]
+
+- id: xuanwumen-incident-0626
+  date: "0626"
+  title: 玄武门之变
+  category: 政治
+  importance: 4
+  summary: 秦王李世民发动玄武门之变，诛太子建成，受禅即位，翌年改元贞观。
+  confidence: 确定
+  sources: [旧唐书·太宗纪]
+
+- id: xuanzang-journey-0629
+  date: "0629"
+  title: 玄奘西行
+  category: 文化
+  importance: 4
+  summary: 玄奘自长安发足西行求法，历经艰难到达天竺求取佛经。
+  confidence: 有争议
+  dispute: 西行年份诸传不一，有贞观元年（627）与贞观三年（629）两说，此处从贞观三年说。
+  sources: [大唐西域记, 慈恩寺三藏法师传]
+
+- id: wuzetian-zhou-0690
+  date: "0690"
+  title: 武则天称帝，改国号周
+  category: 政治
+  importance: 5
+  summary: 武曌废睿宗称帝，改国号为周，定都洛阳，史称武周，为中国历史上唯一正统女皇帝。
+  confidence: 确定
+  sources: [旧唐书·则天皇后纪]
+
+- id: kaiyuan-era-0713
+  date: "0713"
+  title: 开元纪元始
+  category: 政治
+  importance: 4
+  summary: 唐玄宗改元开元，任用贤能，励精图治，开创开元盛世。
+  confidence: 确定
+  sources: [旧唐书·玄宗纪]
+
+- id: anshi-rebellion-0755
+  date: "0755"
+  title: 安史之乱爆发
+  category: 战争
+  importance: 5
+  summary: 范阳节度使安禄山联合史思明举兵反唐，唐朝由盛转衰。
+  confidence: 确定
+  sources: [旧唐书·安禄山列传]
+
+- id: liangshuifa-0780
+  date: "0780"
+  title: 两税法行
+  category: 经济
+  importance: 4
+  summary: 杨炎主持推行两税法，取消租庸调，按资产征收户税和地税。
+  confidence: 确定
+  sources: [旧唐书·食货志]
+
+- id: huichang-miefo-0845
+  date: "0845"
+  title: 会昌灭佛
+  category: 文化
+  importance: 3
+  summary: 唐武宗下诏大举毁佛，没收寺院田产，迫使数十万僧尼还俗。
+  confidence: 确定
+  sources: [旧唐书·武宗纪]
+
+- id: huangchao-rebellion-0875
+  date: "0875"
+  title: 黄巢起义
+  category: 战争
+  importance: 4
+  summary: 黄巢起义爆发，席卷半个中国，一度攻陷长安，严重动摇唐朝统治基础。
+  confidence: 确定
+  sources: [旧唐书·黄巢列传]

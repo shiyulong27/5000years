@@ -1,0 +1,46 @@
+- dynasty: tang
+  temple_name: 唐高祖
+  name: 李渊
+  reign_start: "0618"
+  reign_end: "0626"
+  era_names: [武德]
+  note: 唐朝开国皇帝
+  role: founder
+  confidence: 确定
+
+- dynasty: tang
+  temple_name: 唐太宗
+  name: 李世民
+  reign_start: "0626"
+  reign_end: "0649"
+  era_names: [贞观]
+  note: 虚心纳谏，开创贞观之治
+  confidence: 确定
+
+- dynasty: tang
+  temple_name: 武则天
+  name: 武曌
+  reign_start: "0690"
+  reign_end: "0705"
+  era_names: [天授, 如意, 长寿, 延载, 证圣, 天册万岁, 万岁登封, 万岁通天, 神功, 圣历, 久视, 大足, 长安]
+  note: 中国历史上唯一正统女皇帝，改国号为周
+  confidence: 确定
+
+- dynasty: tang
+  temple_name: 唐玄宗
+  name: 李隆基
+  reign_start: "0712"
+  reign_end: "0756"
+  era_names: [先天, 开元, 天宝]
+  note: 开创开元盛世，晚年安史之乱爆发
+  confidence: 确定
+
+- dynasty: tang
+  temple_name: 唐哀帝
+  name: 李柷
+  reign_start: "0904"
+  reign_end: "0907"
+  era_names: [天祐]
+  note: 唐朝末代皇帝，禅位于朱温
+  role: last
+  confidence: 确定

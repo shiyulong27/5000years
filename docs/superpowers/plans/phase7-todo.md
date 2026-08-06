@@ -171,27 +171,16 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task A2 ⬜ 隋（581–618）
+### Task A2 ✅ 隋（581–618）
 
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/sui.yaml`、`data/rulers/sui.yaml`
 
-- [ ] **Step 1: 朝代**：`sui 581–618 color #5d6d7e`，summary 提「二世而亡，制度遗泽唐宋」。
+- [x] **Step 1: 朝代**：`sui 581–618 color #5d6d7e`，summary 提「二世而亡，制度遗泽唐宋」。
+- [x] **Step 2: 事件**（summary 自撰）
+- [x] **Step 3: 君主**：隋文帝（founder, note 开皇之治）、隋炀帝（last, note 大业与三征）。
+- [x] **Step 4: 验收** `node scripts/validate.mjs` → errors=0。
+- [x] **Step 5: 提交** `feat(data): 隋代数据`；改状态。
 
-- [ ] **Step 2: 事件**（summary 自撰）：
-
-```
-0581 杨坚代周，隋建立        政治 5 确定
-0589 隋灭陈，天下一统        政治 5 确定
-0605 开通大运河              经济 4 确定   tags: [工程, 漕运]
-0612 一征高句丽，败还        战争 4 确定
-0618 隋亡                    政治 4 确定
-```
-
-- [ ] **Step 3: 君主**：隋文帝（founder, note 开皇之治）、隋炀帝（last, note 大业与三征）。
-
-- [ ] **Step 4: 验收** `node scripts/validate.mjs` → errors=0。
-
-- [ ] **Step 5: 提交** `feat(data): 隋代数据`；改状态。
 
 ---
 
@@ -643,4 +632,6 @@ jobs:
 | 日期 | 任务 | 执行者 | 备注 |
 |---|---|---|---|
 | 2026-08-06 | Task A1 南北朝 | Antigravity | feat(data): 南北朝——南北并立两组朝代与事件 |
+| 2026-08-06 | Task A2 隋 | Antigravity | feat(data): 隋代数据 |
+
 
