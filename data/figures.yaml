@@ -110,3 +110,12 @@
   field: 思想
   note: 西行求法十七年，译经传法，著《大唐西域记》
   confidence: 确定
+
+- id: guanhanqing
+  name: 关汉卿
+  birth: "1241"
+  death: "1320"
+  field: 文学
+  note: 元曲四大家之首，作《窦娥冤》等杂剧六十余种
+  confidence: 有争议
+  dispute: 生卒年无确载，此处为约值。

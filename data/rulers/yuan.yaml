@@ -1,0 +1,27 @@
+# 元代君主。只录开国与末代两位。
+
+- dynasty: yuan
+  temple_name: 元世祖
+  name: 孛儿只斤·忽必烈
+  reign_start: "1271"
+  reign_end: "1294"
+  era_names:
+    - 至元
+  note: 定国号大元，混一南北，创行省制
+  role: founder
+  confidence: 确定
+  dispute: |
+    忽必烈 1260 即大汗位，此处从定国号「大元」之 1271 起算，
+    以贴合元朝政权区间。
+
+- dynasty: yuan
+  temple_name: 元顺帝
+  name: 孛儿只斤·妥懽帖睦尔
+  reign_start: "1333"
+  reign_end: "1368"
+  era_names:
+    - 至顺
+    - 至元
+    - 至正
+  note: 元末代皇帝，红巾乱起，明军北伐，北走漠北
+  role: last

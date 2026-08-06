@@ -1,0 +1,32 @@
+- id: yuan-1271
+  date: "1271"
+  title: 忽必烈定国号大元
+  category: 政治
+  importance: 5
+  summary: 忽必烈取《易经》「大哉乾元」二字，定国号大元，定都大都（今北京）。
+  confidence: 确定
+  sources: [元史·世祖纪]
+
+- id: yuan-unify-1279
+  date: "1279"
+  title: 元混一南北
+  category: 政治
+  importance: 5
+  summary: 崖山之战灭南宋，元朝统一中国，疆域横跨欧亚，为史上空前。
+  confidence: 确定
+
+- id: red-turban-1351
+  date: "1351"
+  title: 红巾军起
+  category: 战争
+  importance: 4
+  summary: 元末黄河决口、赋役繁苛，韩山童、刘福通等以白莲教聚众起事，天下鼎沸。
+  confidence: 确定
+
+- id: yuan-fall-1368
+  date: "1368"
+  title: 元亡，北走漠北
+  category: 政治
+  importance: 4
+  summary: 明军克大都，元顺帝北遁，元朝在中原的统治结束，史称北元。
+  confidence: 确定
