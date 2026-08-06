@@ -1,0 +1,19 @@
+- dynasty: yuan
+  temple_name: 元世祖
+  name: 孛儿只斤·忽必烈
+  reign_start: "1271"
+  reign_end: "1294"
+  era_names: [至元]
+  note: 定国号大元，灭宋一统天下，确立行省制
+  role: founder
+  confidence: 确定
+
+- dynasty: yuan
+  temple_name: 元顺帝
+  name: 孛儿只斤·妥懽帖睦尔
+  reign_start: "1333"
+  reign_end: "1368"
+  era_names: [元统, 至元, 至正]
+  note: 元朝在中原统治的末代皇帝，大都陷落后北逃漠北
+  role: last
+  confidence: 确定

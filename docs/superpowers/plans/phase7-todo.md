@@ -208,45 +208,16 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 - [x] **Step 4: 验收 + 提交** `feat(data): 五代数据`；改状态。
 
 
-### Task A5 ⬜ 两宋与辽夏金（960–1279）
+### Task A5 ✅ 两宋与辽夏金（960–1279）
 
 **Files:** Modify: `data/dynasties.yaml`；Create: `data/events/song.yaml`、`data/rulers/song.yaml`
 
-- [ ] **Step 1: 朝代**（宋与辽、夏、金长期并存，**四个根全部 concurrent: true**）：
+- [x] **Step 1: 朝代**（宋与辽、夏、金长期并存，**四个根全部 concurrent: true**）
+- [x] **Step 2: 事件**
+- [x] **Step 3: 君主**：宋太祖（beisong, founder）、宋徽宗（beisong, note）、宋高宗（nansong, founder）、赵昺（nansong, last, note 崖山殉国）。辽金君主从略，注释说明。
+- [x] **Step 4: 验收 + 自查**
+- [x] **Step 5: 提交** `feat(data): 两宋与辽夏金`；改状态。
 
-```yaml
-- id: song        # 子：beisong 960–1127 / nansong 1127–1279
-  name: 宋
-  start: "0960"
-  end: "1279"
-  color: "#21618c"
-  concurrent: true
-- id: liao    916–1125  concurrent: true  color "#6c3483"
-- id: xixia   1038–1227 concurrent: true  color "#117a65"
-- id: jin1115 1115–1234 concurrent: true  color "#a04000"   # 女真金；与司马氏晋（id jin）区分
-```
-
-- [ ] **Step 2: 事件**：
-
-```
-0960 陈桥兵变，北宋建立      政治 5 确定
-1004 澶渊之盟                政治 4 确定   tags: [外交]
-1038 元昊称帝，西夏立        政治 3 确定
-1044 毕昇活字印刷            文化 4 有争议  dispute: 活字创制之年无确载，仅《梦溪笔谈》记庆历中，年代为约值。
-1069 王安石变法              政治 4 确定
-1084 《资治通鉴》成书        文化 5 确定   sources: [宋史·司马光传]
-1115 阿骨打建金              政治 3 确定
-1127 靖康之难，北宋亡；同年高宗复统，南宋始  战争 5 确定
-1141 绍兴和议                政治 4 确定
-1276 临安陷                  战争 4 确定
-1279 崖山海战，宋亡          战争 5 确定
-```
-
-- [ ] **Step 3: 君主**：宋太祖（beisong, founder）、宋徽宗（beisong, note）、宋高宗（nansong, founder）、赵昺（nansong, last, note 崖山殉国）。辽金君主从略，注释说明。
-
-- [ ] **Step 4: 验收 + 自查**（并立政权横幅须各出一条：起 dev server 后用 `scripts/_shot-jin.mjs` 同法截 1127 年段目检）。
-
-- [ ] **Step 5: 提交** `feat(data): 两宋与辽夏金`；改状态。
 
 ---
 
@@ -602,6 +573,8 @@ jobs:
 | 2026-08-06 | Task A2 隋 | Antigravity | feat(data): 隋代数据 |
 | 2026-08-06 | Task A3 唐 | Antigravity | feat(data): 唐代数据与李白等人物 |
 | 2026-08-06 | Task A4 五代十国 | Antigravity | feat(data): 五代数据 |
+| 2026-08-06 | Task A5 两宋与辽夏金 | Antigravity | feat(data): 两宋与辽夏金 |
+
 
 
 

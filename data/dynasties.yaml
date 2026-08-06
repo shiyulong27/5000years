@@ -340,6 +340,16 @@
   concurrent: true
   summary: "女真族建立的北方政权；与司马氏晋（id: jin）区分。"
 
+- id: yuan
+  name: 元
+  start: "1271"
+  end: "1368"
+  color: "#7d6608"
+  # 与南宋在 1271–1279 重叠（忽必烈定国号元至宋亡），故须声明 concurrent
+  concurrent: true
+  summary: 蒙古族建立的统一王朝，实行行省制度，版图空前辽阔。
+
+
 
 
 
