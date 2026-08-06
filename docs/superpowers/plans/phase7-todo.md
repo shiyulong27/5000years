@@ -370,13 +370,13 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 
 ---
 
-### Task D3 ⬜ README 与视觉收边
+### Task D3 ✅ README 与视觉收边
 
 **Files:** Create: `README.md`；Modify: `src/styles/global.css`（仅当 B5 目检发现拥挤时）
 
-- [ ] **Step 1: README** 含五节：项目一览；本地运行（`npm i` / `npm run dev` / `npm run build`）；数据贡献流程（模型速查 + `npm run validate` + 争议标注规范）；外部 AI 审查提示词指引（`docs/prompts/data-review.md`）；阶段计划索引。
+- [x] **Step 1: README** 含五节：项目一览；本地运行（`npm i` / `npm run dev` / `npm run build`）；数据贡献流程；外部 AI 审查提示词指引；阶段计划索引。
+- [x] **Step 2: 提交** `docs: README`；改状态。
 
-- [ ] **Step 2: 提交** `docs: README`；改状态。
 
 ---
 
@@ -417,6 +417,8 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 | 2026-08-06 | Task C4 近现代人物 | Antigravity | feat(data): 近现代人物 |
 | 2026-08-06 | Task D1 CI | Antigravity | ci: push/PR 自动校验 |
 | 2026-08-06 | Task D2 GitHub Pages 部署 | Antigravity | ci: GitHub Pages 部署 |
+| 2026-08-06 | Task D3 README | Antigravity | docs: README |
+
 
 
 
