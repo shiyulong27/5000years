@@ -1,0 +1,67 @@
+- id: columbus-americas-1492
+  date: "1492"
+  title: 哥伦布抵美洲
+  category: 政治
+  importance: 5
+  summary: 哥伦布率西班牙船队横渡大西洋抵达美洲，开启地理大发现与全球化进程。
+  confidence: 确定
+  tags: [地理大发现]
+
+- id: protestant-reformation-1517
+  date: "1517"
+  title: 宗教改革始
+  category: 文化
+  importance: 4
+  summary: 马丁·路德发表《九十五条论纲》，拉开欧洲宗教改革序幕。
+  confidence: 确定
+
+- id: copernicus-heliocentrism-1543
+  date: "1543"
+  title: 哥白尼《天体运行论》
+  category: 文化
+  importance: 4
+  summary: 哥白尼出版《天体运行论》，提出日心说，引发近代科学革命。
+  confidence: 确定
+  tags: [科技]
+
+- id: english-revolution-1640
+  date: "1640"
+  title: 英国革命爆发
+  category: 政治
+  importance: 4
+  summary: 英国长期议会召开，资产阶级革命爆发，后建立君主立宪制。
+  confidence: 确定
+
+- id: newton-principia-1687
+  date: "1687"
+  title: 牛顿《原理》
+  category: 文化
+  importance: 4
+  summary: 牛顿出版《自然哲学的数学原理》，阐述万有引力定律与运动三定律，建立经典力学体系。
+  confidence: 确定
+  tags: [科技]
+
+- id: industrial-revolution-1765
+  date: "1765"
+  title: 珍妮纺纱机，工业革命始
+  category: 经济
+  importance: 5
+  summary: 哈格里夫斯发明珍妮纺纱机，标志着第一次工业革命的爆发。
+  confidence: 确定
+  tags: [科技]
+
+- id: us-declaration-independence-1776
+  date: "1776"
+  title: 美国《独立宣言》
+  category: 政治
+  importance: 4
+  summary: 大陆会议发表《独立宣言》，宣告美利坚合众国独立。
+  confidence: 确定
+
+- id: french-revolution-1789
+  date: "1789"
+  title: 法国大革命爆发
+  category: 政治
+  importance: 5
+  summary: 巴黎人民攻占巴士底狱，法国大革命爆发，发表《人权宣言》。
+  confidence: 确定

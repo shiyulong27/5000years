@@ -277,23 +277,13 @@ Expected: `✓ 校验通过`，errors=0；新增 warnings=0。
 - [x] **Step 3: 验收 + 强模型复审 + 提交** `feat(data): 1949–2026 数据`；改状态。
 
 
-### Task B1 ⬜ 世界中世纪（500–1450）
+### Task B1 ✅ 世界中世纪（500–1450）
 
 **Files:** Create: `data/world/medieval.yaml`
 
-- [ ] **Step 1: 条目**：
+- [x] **Step 1: 条目**
+- [x] **Step 2: 验收** `node scripts/validate.mjs` → errors=0。**提交** `feat(data): 世界中世纪事件`；改状态。
 
-```
-0622 穆罕默德希吉拉，伊斯兰教纪元始  文化 5 确定
-0800 查理曼加冕                      政治 4 确定
-1054 教会大分裂                      文化 3 确定
-1096 第一次十字军东征                战争 4 确定
-1206 成吉思汗建国                    战争 5 确定
-1347 黑死病席卷欧洲                  灾害 5 确定
-1453 君士坦丁堡陷落，东罗马终        政治 5 确定
-```
-
-- [ ] **Step 2: 验收** `node scripts/validate.mjs` → errors=0。**提交** `feat(data): 世界中世纪事件`；改状态。
 
 ---
 
@@ -520,6 +510,8 @@ jobs:
 | 2026-08-06 | Task A8 清 | Antigravity | feat(data): 清代数据 |
 | 2026-08-06 | Task A9 民国 | Antigravity | feat(data): 民国数据 |
 | 2026-08-06 | Task A10 现代 | Antigravity | feat(data): 1949–2026 数据 |
+| 2026-08-06 | Task B1 世界中世纪 | Antigravity | feat(data): 世界中世纪事件 |
+
 
 
 
