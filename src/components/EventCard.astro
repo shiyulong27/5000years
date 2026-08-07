@@ -3,6 +3,10 @@ import { formatDate } from '../lib/date.js'
 
 const { event } = Astro.props
 const uncertain = event.confidence && event.confidence !== '确定'
+
+// 属性 1：标签（Tag）—— 精确描述事件属性（如 航天、科技、政治、经济、外交、军事、体育 等）
+const preferredTags = ['航天', '科技', 'AI', '深潜', '科考', '外交', '军事', '芯片', '电影', '体育', '法律', '改革', '民生', '教育', '关税', '贸易', '金融', '俄乌', '中东']
+const tag = event.tags?.find((t) => preferredTags.includes(t)) || event.tags?.[0] || event.category
 ---
 
 <article
@@ -13,12 +17,17 @@ const uncertain = event.confidence && event.confidence !== '确定'
 >
   <header class="event-head">
     <time class="event-date">{formatDate(event.date)}</time>
-    <span class="event-cat">{event.category}</span>
-    {event.importance >= 5 ? (
-      <span class="event-badge badge-major" title="历史巨变与大一统重大事件">👑 历史转折</span>
-    ) : event.importance === 4 ? (
-      <span class="event-badge badge-classic" title="经典典故与名篇故事">📜 经典典故</span>
-    ) : null}
+
+    {/* 属性 1：标签 */}
+    <span class="event-cat">{tag}</span>
+
+    {/* 属性 2：重要性等级（5级重大转折事件挂 👑 徽章，其余由卡片边框权重展现） */}
+    {event.importance >= 5 && (
+      <span class="event-badge badge-major" title="历史巨变与重大转折">
+        👑 历史转折
+      </span>
+    )}
+
     {uncertain && <span class="event-flag" title={`此条${event.confidence}`}>{event.confidence}</span>}
   </header>
 

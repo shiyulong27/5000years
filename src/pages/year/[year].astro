@@ -1,0 +1,70 @@
+---
+import { fileURLToPath } from 'node:url'
+import Base from '../../layouts/Base.astro'
+import EventCard from '../../components/EventCard.astro'
+import { loadAll } from '../../lib/load.js'
+
+export async function getStaticPaths() {
+  const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
+  const data = loadAll(dataDir)
+
+  // 收集所有年份（包括 2025）
+  const years = new Set()
+  data.events.forEach((e) => years.add(e.date.slice(0, 4)))
+  data.worldEvents.forEach((e) => years.add(e.date.slice(0, 4)))
+
+  return [...years].map((yearStr) => {
+    const cnEvents = data.events.filter((e) => e.date.startsWith(yearStr))
+    const worldEvents = data.worldEvents.filter((e) => e.date.startsWith(yearStr))
+
+    return {
+      params: { year: yearStr },
+      props: {
+        yearStr,
+        cnEvents,
+        worldEvents,
+      },
+    }
+  })
+}
+
+const { yearStr, cnEvents, worldEvents } = Astro.props
+
+const sortDesc = (a, b) => b.date.localeCompare(a.date)
+const allEvents = [
+  ...cnEvents.map((e) => ({ ...e, region: 'cn' })),
+  ...worldEvents.map((e) => ({ ...e, region: 'world' })),
+].sort(sortDesc)
+
+const base = import.meta.env.BASE_URL
+---
+
+<Base title={`${yearStr}年 · 中国与世界重大历史事件 | 上下五千年`} wide={true}>
+  <div class="year-page-container">
+    <header class="year-page-head">
+      <a href={base} class="back-link">
+        <span class="arrow">←</span> 返回上下五千年历史长卷
+      </a>
+      <h1 class="year-page-title">{yearStr}年 · 中国与世界重大历史事件</h1>
+      <p class="year-page-sub">年度历史大事记汇编长卷</p>
+    </header>
+
+    <main class="year-timeline-stream">
+      <div class="month-grid">
+        <div class="month-col col-cn">
+          <h3 class="col-header"><span class="icon">🇨🇳</span> 中国大事 ({cnEvents.length})</h3>
+          {cnEvents.map((e) => <EventCard event={e} />)}
+        </div>
+
+        <div class="month-col col-world">
+          <h3 class="col-header"><span class="icon">🌐</span> 世界大事 ({worldEvents.length})</h3>
+          {worldEvents.map((e) => <EventCard event={e} />)}
+        </div>
+      </div>
+    </main>
+
+    <footer class="year-page-foot">
+      <a href={base} class="back-foot-link">← 返回上下五千年主时间线长卷</a>
+    </footer>
+  </div>
+</Base>

@@ -7,34 +7,67 @@
 
 const timeline = document.querySelector('.timeline')
 if (timeline) {
-  const levelFilter = document.getElementById('level-filter')
-  const onlyMajor = document.getElementById('only-major')
+  const levelMultiselect = document.getElementById('level-multiselect')
+  const levelBtn = document.getElementById('level-dropdown-btn')
+  const levelMenu = document.getElementById('level-dropdown-menu')
+  const levelBtnText = document.getElementById('level-btn-text')
+  const levelToggles = [...document.querySelectorAll('.level-toggle')]
+
   const showWorld = document.getElementById('show-world')
   const showFigures = document.getElementById('show-figures')
   const catToggles = [...document.querySelectorAll('.cat-toggle')]
   const jump = document.getElementById('jump-dynasty')
   const current = document.getElementById('current-dynasty')
 
+  // 下拉框展开/收起控制
+  if (levelBtn && levelMenu) {
+    levelBtn.addEventListener('click', (e) => {
+      e.stopPropagation()
+      const isHidden = levelMenu.hasAttribute('hidden')
+      if (isHidden) {
+        levelMenu.removeAttribute('hidden')
+        levelMultiselect?.classList.add('is-open')
+        levelBtn.setAttribute('aria-expanded', 'true')
+      } else {
+        levelMenu.setAttribute('hidden', '')
+        levelMultiselect?.classList.remove('is-open')
+        levelBtn.setAttribute('aria-expanded', 'false')
+      }
+    })
+
+    document.addEventListener('click', (e) => {
+      if (levelMultiselect && !levelMultiselect.contains(e.target)) {
+        levelMenu.setAttribute('hidden', '')
+        levelMultiselect.classList.remove('is-open')
+        levelBtn.setAttribute('aria-expanded', 'false')
+      }
+    })
+  }
+
   /**
    * 重算各行可见性。
    */
   function apply() {
-    const level = levelFilter?.value || (onlyMajor?.checked ? 'classic' : 'all')
-    const active = new Set(catToggles.filter((t) => t.checked).map((t) => t.value))
+    const activeLevels = new Set(levelToggles.filter((t) => t.checked).map((t) => Number(t.value)))
+    const activeCats = new Set(catToggles.filter((t) => t.checked).map((t) => t.value))
+
+    // 动态更新按钮文案
+    if (levelBtnText) {
+      const selected = levelToggles.filter((t) => t.checked).map((t) => Number(t.value)).sort((a, b) => b - a)
+      if (selected.length === 5) {
+        levelBtnText.textContent = '等级: 全部(1-5级)'
+      } else if (selected.length === 0) {
+        levelBtnText.textContent = '等级: 未选择'
+      } else {
+        levelBtnText.textContent = `等级: ${selected.map((v) => v + '级').join(', ')}`
+      }
+    }
 
     // 先决定每张卡片的去留
     for (const card of timeline.querySelectorAll('.event-card')) {
       const imp = Number(card.dataset.importance) || 3
-      let impOk = true
-      if (level === 'major') {
-        impOk = imp >= 5
-      } else if (level === 'classic') {
-        impOk = imp >= 4
-      } else {
-        impOk = true // 'all'
-      }
-
-      const catOk = active.has(card.dataset.category)
+      const impOk = activeLevels.has(imp)
+      const catOk = activeCats.has(card.dataset.category)
       card.hidden = !(impOk && catOk)
     }
 
@@ -96,13 +129,12 @@ if (timeline) {
     timeline.classList.toggle('show-figures', !!showFigures?.checked)
   }
 
-
-  levelFilter?.addEventListener('change', apply)
-  onlyMajor?.addEventListener('change', apply)
+  levelToggles.forEach((t) => t.addEventListener('change', apply))
   showWorld?.addEventListener('change', apply)
   showFigures?.addEventListener('change', apply)
   catToggles.forEach((t) => t.addEventListener('change', apply))
   apply()
+
 
 
   // 朝代跳转

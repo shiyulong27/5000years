@@ -196,11 +196,88 @@ body {
   color: inherit;
 }
 
+/* ── 重要度多选下拉框 ─────────────────────────── */
+.level-multiselect {
+  position: relative;
+  display: inline-block;
+}
+
+.level-dropdown-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--card);
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+  user-select: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.level-dropdown-btn:hover {
+  border-color: var(--accent);
+}
+
+.level-dropdown-btn .btn-arrow {
+  font-size: 0.75em;
+  opacity: 0.6;
+  transition: transform 0.15s;
+}
+
+.level-multiselect.is-open .btn-arrow {
+  transform: rotate(180deg);
+}
+
+.level-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 100;
+  min-width: 175px;
+  padding: 0.35rem 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+.level-dropdown-menu[hidden] {
+  display: none;
+}
+
+.level-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.88em;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.12s;
+}
+
+.level-option:hover {
+  background: var(--hover, rgba(0, 0, 0, 0.04));
+}
+
+.level-option input[type="checkbox"] {
+  margin: 0;
+  accent-color: var(--control);
+  cursor: pointer;
+}
+
 .tool-current {
   margin-left: auto;
   color: var(--accent);
   letter-spacing: 0.15em;
 }
+
 
 /* ── 长卷主体 ─────────────────────────────────────── */
 
@@ -473,8 +550,21 @@ main,
 }
 
 .card-major {
-  border-left-width: 4px;
+  border-left-width: 4px !important;
+  border-left-color: #9e2a2b !important;
+  background: linear-gradient(135deg, #fffdfa 0%, #fdf7eb 100%) !important;
+  box-shadow: 0 3px 10px rgba(158, 42, 43, 0.08) !important;
 }
+
+.card-major:hover {
+  box-shadow: 0 6px 16px rgba(158, 42, 43, 0.15) !important;
+}
+
+.card-classic {
+  border-left-width: 3px;
+  border-left-color: color-mix(in srgb, #b07d06 60%, var(--line));
+}
+
 
 /* confidence 非「确定」时的视觉标记：AI 生成的冷门年代与精确日期
    容易出错，此标记让作者一眼识别需要核查的条目 */
@@ -705,3 +795,240 @@ main,
     width: 100%;
   }
 }
+
+/* ── 2025 年主时间线总结卡片链接包裹 ─────────────────────────── */
+
+.year-summary-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+.year-summary-card-link .event-card {
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.year-summary-card-link .event-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+
+/* ── 2025 年独立专页样式 (year-page-container) ───────────────── */
+
+.year-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem var(--page-pad);
+}
+
+.year-page-head {
+  margin-bottom: 2rem;
+}
+
+.back-link,
+.back-foot-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover,
+.back-foot-link:hover {
+  color: color-mix(in srgb, var(--accent) 80%, black);
+  text-decoration: underline;
+}
+
+.year-page-title {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  color: var(--fg);
+}
+
+.year-page-sub {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* 关键统计与关键词面板 */
+.year-summary-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+.stat-num {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.stat-label {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.stat-highlights {
+  grid-column: span 2;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .stat-highlights {
+    grid-column: span 1;
+  }
+}
+
+.stat-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 0.6rem;
+}
+
+.tags-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag-chip {
+  font-size: 0.78rem;
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  color: var(--fg);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+/* 专页工具栏 */
+.year-filter-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 2rem;
+  padding: 1rem 1.25rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-right: 0.2rem;
+}
+
+.filter-btn,
+.filter-cat-btn {
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 0.3rem 0.75rem;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: var(--fg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-cat-btn:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+
+.filter-btn.active,
+.filter-cat-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ── 2025 年专页三栏长卷（世界在左、中轴在中、中国在右） ─────────── */
+
+.year-page-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+}
+
+.month-timeline-row {
+  display: grid;
+  grid-template-columns: minmax(12rem, 1fr) var(--axis-w) minmax(16rem, 1.4fr);
+  gap: var(--col-gap);
+  align-items: start;
+}
+
+.month-timeline-row .cell-world {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.month-timeline-row .cell-china {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.year-event-item {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .month-timeline-row {
+    grid-template-columns: var(--axis-w) 1fr;
+  }
+
+  .month-timeline-row .cell-world {
+    display: none;
+  }
+}
+
+.year-page-foot {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+

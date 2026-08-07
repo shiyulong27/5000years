@@ -6,11 +6,36 @@ const { dynasties } = Astro.props
 
 <div class="toolbar">
   <div class="tool-group tool-switches">
-    <select class="level-select" id="level-filter" title="按重要度与经典度筛选事件">
-      <option value="classic" selected>📜 经典典故 (推荐)</option>
-      <option value="major">👑 历史转折 (大事)</option>
-      <option value="all">📚 全量史料 (全量)</option>
-    </select>
+    <div class="level-multiselect" id="level-multiselect" title="按重要度等级多选筛选事件">
+      <button type="button" class="level-dropdown-btn" id="level-dropdown-btn" aria-haspopup="true" aria-expanded="false">
+        <span class="btn-text" id="level-btn-text">等级: 4级, 5级</span>
+        <span class="btn-arrow">▾</span>
+      </button>
+      <div class="level-dropdown-menu" id="level-dropdown-menu" hidden>
+        <label class="level-option">
+          <input type="checkbox" class="level-toggle" value="5" checked />
+          <span class="level-label">👑 5级 (历史转折)</span>
+        </label>
+        <label class="level-option">
+          <input type="checkbox" class="level-toggle" value="4" checked />
+          <span class="level-label">⭐ 4级 (重大事件)</span>
+        </label>
+        <label class="level-option">
+          <input type="checkbox" class="level-toggle" value="3" />
+          <span class="level-label">📌 3级 (常态事件)</span>
+        </label>
+        <label class="level-option">
+          <input type="checkbox" class="level-toggle" value="2" />
+          <span class="level-label">📝 2级 (一般细节)</span>
+        </label>
+        <label class="level-option">
+          <input type="checkbox" class="level-toggle" value="1" />
+          <span class="level-label">📜 1级 (补遗史料)</span>
+        </label>
+      </div>
+    </div>
+
+
 
     <label class="switch switch-world">
       <input type="checkbox" class="switch-input" id="show-world" checked />
