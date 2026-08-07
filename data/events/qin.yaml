@@ -2,7 +2,7 @@
   date: "-0227"
   title: 荆轲刺秦王
   category: 政治
-  tags: [燕国, 秦国, 刺客]
+  tags: [经典典故, 刺客]
   importance: 4
   summary: 燕太子丹遣荆轲携督亢（kàng）地图刺杀秦王政，图穷匕见，功败垂成，加速了燕国的灭亡。
   confidence: 确定
@@ -12,6 +12,7 @@
   date: "-0221"
   title: 秦灭六国，统一中国
   category: 政治
+  tags: [制度, 历史转折]
   importance: 5
   summary: |
     秦王政灭齐，天下一统，自称始皇帝。废分封行郡县，
@@ -23,6 +24,7 @@
   date: "-0214"
   title: 连筑长城
   category: 战争
+  tags: [军事, 工程]
   importance: 4
   summary: 蒙恬北逐匈奴，连缀燕赵旧长城为一体。
   confidence: 确定
@@ -32,6 +34,7 @@
   date: "-0209-07"
   title: 陈胜吴广起义
   category: 战争
+  tags: [起义, 历史转折]
   importance: 5
   summary: 戍卒失期，揭竿于大泽乡。「王侯将相宁有种乎」，为中国史上首次大规模平民起义。
   confidence: 确定
@@ -41,7 +44,7 @@
   date: "-0207-12"
   title: 巨鹿之战，破釜沉舟
   category: 战争
-  tags: [项羽, 秦末]
+  tags: [军事, 经典典故]
   importance: 5
   summary: 项羽率楚军渡漳水、破釜沉舟，以一当十、九战皆捷，大破秦将王离部，章邯统率余众后乃降。
   confidence: 确定
@@ -51,8 +54,8 @@
   date: "-0207"
   title: 秦亡
   category: 政治
+  tags: [王朝更替, 历史转折]
   importance: 5
   summary: 子婴降于刘邦，秦历二世而亡，凡十五年。
   confidence: 确定
   sources: [史记·秦始皇本纪]
-

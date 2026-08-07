@@ -59,6 +59,7 @@
   date: "-1600"
   title: 商汤灭夏
   category: 政治
+  tags: [王朝更替, 历史转折]
   importance: 5
   summary: 鸣条之战，桀奔南巢，夏亡。
   confidence: 有争议
@@ -71,6 +72,7 @@
   date: "-1300"
   title: 盘庚迁殷
   category: 文化
+  tags: [科技, 汉字, 历史转折]
   importance: 5
   summary: |
     迁殷后商政稳定。殷墟甲骨（主要属武丁以降）为最早成体系的汉字，
@@ -91,6 +93,7 @@
   date: "-1046"
   title: 武王伐纣，周朝建立
   category: 政治
+  tags: [制度, 历史转折]
   importance: 5
   summary: 牧野之战商亡。分封建国，制礼作乐。
   confidence: 有争议
@@ -126,6 +129,7 @@
   date: "-0770"
   title: 平王东迁，东周始
   category: 政治
+  tags: [历史转折, 制度]
   importance: 4
   summary: 犬戎破镐京，王室东徙洛邑，自此王纲解纽，诸侯坐大。
   confidence: 确定
@@ -220,6 +224,7 @@
   date: "-0551"
   title: 孔子生
   category: 文化
+  tags: [思想, 历史转折]
   importance: 5
   summary: 儒家之祖。其学说此后两千余年为中国思想之主干。
   confidence: 有争议
@@ -282,6 +287,7 @@
   date: "-0475"
   title: 战国之世始
   category: 战争
+  tags: [军事, 历史转折]
   importance: 4
   summary: 七雄并立，百家争鸣。中国思想史上最活跃的时代。
   confidence: 有争议
@@ -324,6 +330,7 @@
   date: "-0356"
   title: 商鞅变法
   category: 政治
+  tags: [制度, 历史转折]
   importance: 5
   summary: 废井田开阡陌，奖军功行连坐。秦自此富强，为百年后统一奠基。
   confidence: 确定
@@ -447,7 +454,7 @@
   date: "-0260"
   title: 长平之战，白起坑杀赵卒
   category: 战争
-  tags: [秦国, 赵国, 决定性战役]
+  tags: [决定性战役, 历史转折]
   importance: 5
   summary: 秦将白起于长平击败赵括，坑杀赵降卒四十万，赵国主力尽丧，秦统一大势已不可逆转。
   confidence: 确定

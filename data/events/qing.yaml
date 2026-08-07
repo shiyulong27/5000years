@@ -2,6 +2,7 @@
   date: "1644"
   title: 清军入关，定鼎北京
   category: 政治
+  tags: [王朝更替, 历史转折]
   importance: 5
   summary: 吴三桂引清兵入关，击败大顺军，顺治帝迁都北京，清朝定鼎中原。
   confidence: 确定
@@ -90,6 +91,7 @@
   date: "1840"
   title: 鸦片战争
   category: 战争
+  tags: [战争, 近代史, 历史转折]
   importance: 5
   summary: 英国发动鸦片战争，清朝战败签订《南京条约》，中国开始沦为半殖民地半封建社会。
   confidence: 确定
@@ -109,6 +111,7 @@
   date: "1861"
   title: 洋务运动始
   category: 政治
+  tags: [洋务运动, 科技, 工业]
   importance: 4
   summary: 恭亲王奕訢（yì xīn）、曾国藩、李鸿章等主导洋务运动，提出「自强」「求富」，开启中国近代化进程。
   confidence: 确定
@@ -118,6 +121,7 @@
   date: "1894"
   title: 甲午战争
   category: 战争
+  tags: [战争, 甲午, 历史转折]
   importance: 5
   summary: 中日甲午战争爆发，清朝战败，签《马关条约》，割让台湾，洋务运动破产。
   confidence: 确定
@@ -145,6 +149,7 @@
   date: "1911"
   title: 辛亥革命
   category: 政治
+  tags: [革命, 历史转折]
   importance: 5
   summary: 武昌起义爆发，各省纷纷响应，推翻清朝封建君主专制统治。
   confidence: 确定

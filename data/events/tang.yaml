@@ -2,6 +2,7 @@
   date: "0618"
   title: 李渊建唐
   category: 政治
+  tags: [王朝更替, 历史转折]
   importance: 5
   summary: 李渊于长安称帝，国号唐。隋末群雄并起，唐室逐步削平割据，一统天下。
   confidence: 确定
@@ -11,6 +12,7 @@
   date: "0626"
   title: 玄武门之变，翌年改元贞观
   category: 政治
+  tags: [政变, 经典典故]
   importance: 4
   summary: 李世民发兵玄武门，杀兄建成、弟元吉，旋即位，是为贞观之治之始。
   confidence: 确定
@@ -20,6 +22,7 @@
   date: "0629"
   title: 玄奘西行
   category: 文化
+  tags: [佛教, 丝路, 经典典故]
   importance: 4
   summary: 玄奘自长安西行求法，历十七年取经归来，译经传法，著《大唐西域记》。
   confidence: 有争议
@@ -59,6 +62,7 @@
   date: "0690"
   title: 武则天称帝，改国号周
   category: 政治
+  tags: [制度, 历史转折]
   importance: 5
   summary: 武则天废唐睿宗自立，改国号为周，为中国历史唯一正统女皇帝。
   confidence: 确定
@@ -68,6 +72,7 @@
   date: "0713"
   title: 开元纪元始
   category: 政治
+  tags: [盛世, 经济]
   importance: 4
   summary: 唐玄宗改元开元，励精图治，社会经济文化臻于极盛，史称开元盛世。
   confidence: 确定

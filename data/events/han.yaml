@@ -53,6 +53,7 @@
   date: "-0202-02"
   title: 刘邦称帝，汉朝建立
   category: 政治
+  tags: [制度, 王朝更替, 历史转折]
   importance: 5
   summary: 垓下破项羽后，刘邦即皇帝位于定陶，定都长安。
   confidence: 确定
@@ -62,6 +63,7 @@
   date: "-0180"
   title: 文景之治
   category: 政治
+  tags: [治世, 经济]
   importance: 4
   summary: 与民休息，轻徭薄赋，府库充盈，为武帝用兵积蓄国力。
   confidence: 确定
@@ -146,6 +148,7 @@
   date: "-0091"
   title: 司马迁著《史记》
   category: 文化
+  tags: [史学, 文学, 历史转折]
   importance: 5
   summary: 中国第一部纪传体通史，上起黄帝下至汉武，为后世正史之祖。
   confidence: 有争议
