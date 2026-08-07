@@ -267,3 +267,31 @@
   confidence: 确定
   tags: [航天, 应急]
 
+- id: cn-spring-festival-202602
+  date: "2026-02-17"
+  title: 丙午马年春节，消费与文旅再创新高
+  category: 经济
+  importance: 3
+  summary: 2026丙午马年春节假期全国出游人次与消费总额再创历史新高，免签范围扩大推动入境游蓬勃发展。
+  confidence: 确定
+  tags: [民俗, 经济]
+
+- id: cn-two-sessions-202603
+  date: "2026-03-05"
+  title: 十四届全国人大四次会议表决通过“十五五”规划纲要
+  category: 政治
+  importance: 5
+  summary: 十四届全国人大四次会议在北京召开，表决通过《中华人民共和国国民经济和社会发展第十五个五年规划和2035年远景目标纲要》。
+  confidence: 确定
+  tags: [政治, 十五五, 历史转折]
+
+- id: cn-army-day-202608
+  date: "2026-08-01"
+  title: 庆祝建军99周年，新型国防科技成果集中发布
+  category: 政治
+  importance: 4
+  summary: 中国人民解放军建军99周年之际，我国自研新型无人作战系统与新概念防空装备集中公布。
+  confidence: 确定
+  tags: [军事, 科技]
+
+

@@ -260,3 +260,22 @@
   confidence: 确定
   tags: [科技, AI]
 
+- id: w-world-economic-forum-202601
+  date: "2026-01-20"
+  title: 世界经济论坛2026年年会举行
+  category: 经济
+  importance: 3
+  summary: 达沃斯世界经济论坛年会在瑞士举行，聚焦智能技术革命、地缘经贸重塑与全球可持续发展。
+  confidence: 确定
+  tags: [经济, 科技]
+
+- id: w-fifa-world-cup-202606
+  date: "2026-06-11"
+  title: 2026美加墨世界杯开幕
+  category: 文化
+  importance: 5
+  summary: 第23届国际足联世界杯在美国、加拿大和墨西哥三国联合举办，为世界杯历史上首次扩军至48支球队的盛会。
+  confidence: 确定
+  tags: [体育, 历史转折]
+
+

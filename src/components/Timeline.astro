@@ -47,7 +47,7 @@ const colTotal = colChina
     ) : (
       <>
         <div class="cell cell-world" style={`grid-row:${row.gridRow};grid-column:${colWorld}`}>
-          {row.year === 2025 ? null : row.worldEvents.map((e) => <EventCard event={e} />)}
+          {[2025, 2026].includes(row.year) ? null : row.worldEvents.map((e) => <EventCard event={e} />)}
         </div>
 
         <div class="cell cell-axis" style={`grid-row:${row.gridRow};grid-column:${colAxis}`}>
@@ -60,12 +60,13 @@ const colTotal = colChina
           data-year={row.year}
           data-dynasty={row.dynasties.map((d) => d.id).join(' ')}
         >
-          {row.year === 2025 ? (
-            <YearSummaryCard year={2025} />
+          {[2025, 2026].includes(row.year) ? (
+            <YearSummaryCard year={row.year} />
           ) : (
             row.cnEvents.map((e) => <EventCard event={e} />)
           )}
         </div>
+
       </>
     )
   )}

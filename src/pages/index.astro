@@ -1,43 +1,106 @@
 ---
-import { fileURLToPath } from 'node:url'
 import Base from '../layouts/Base.astro'
-import Timeline from '../components/Timeline.astro'
-import Toolbar from '../components/Toolbar.astro'
-import { loadAll } from '../lib/load.js'
-import { buildTimeline, resolveRoot } from '../lib/timeline.js'
 
-// 构建期完成，产物为纯静态 HTML
-const dataDir = fileURLToPath(new URL('../../data', import.meta.url))
-const data = loadAll(dataDir)
-const { rows, bands, figureBands, columns } = buildTimeline(data)
+const base = import.meta.env.BASE_URL
 
-// 跳转下拉只列根朝代——子朝代在概览页内拆分
-const byId = new Map(data.dynasties.map((d) => [d.id, d]))
-const roots = []
-const seen = new Set()
-for (const d of data.dynasties) {
-  const root = resolveRoot(d, byId)
-  if (seen.has(root.id)) continue
-  seen.add(root.id)
-  roots.push(root)
-}
+const modules = [
+  {
+    id: 'history',
+    title: '📜 上下五千年 · 历史长卷',
+    sub: '中国历史长卷与世界文明平行对照，三栏中轴沉浸式展现',
+    tag: '历史 / 纪年',
+    status: 'ready',
+    link: `${base}timeline/`,
+    badge: '已上线',
+    desc: '覆盖先秦至 2026 年中外重大历史事件、朝代演进、文明色带与历史人物，支持多级重要度筛选。',
+  },
+  {
+    id: 'poets',
+    title: '✍️ 千古风流 · 诗词名家',
+    sub: '汇聚历代诗人作家的生平年谱、名篇佳作与人文足迹',
+    tag: '诗文 / 年谱',
+    status: 'upcoming',
+    link: '#',
+    badge: '规划中',
+    desc: '从李白、杜甫、苏轼到近代名家，以时间轴还原文人墨客的时代背景与诗意人生。',
+  },
+  {
+    id: 'astronomy',
+    title: '🌌 浩瀚星图 · 天文历法',
+    sub: '追溯天象记录、二十四节气演变、古今航天与宇宙观测',
+    tag: '天文 / 历法',
+    status: 'upcoming',
+    link: '#',
+    badge: '规划中',
+    desc: '收录古天象记载、星图演变及现代商业航天与深空探索里程碑。',
+  },
+  {
+    id: 'geography',
+    title: '🗺️ 山川风物 · 地理图志',
+    sub: '九州山川、重镇古都、名山大川与风土人情图鉴',
+    tag: '地理 / 舆图',
+    status: 'upcoming',
+    link: '#',
+    badge: '规划中',
+    desc: '融汇古代舆图与现代地理风物，呈现大好河山与地理变迁。',
+  },
+  {
+    id: 'science',
+    title: '💡 科技与文明 · 发明突破',
+    sub: '从古代四大发明到现代AI、量子计算与深海科考',
+    tag: '科技 / 发明',
+    status: 'upcoming',
+    link: '#',
+    badge: '规划中',
+    desc: '记录人类科技文明演进史上最具颠覆性的发明与科学突破。',
+  },
+]
 ---
 
-<Base title="上下五千年" wide={true}>
-  <header class="site-head">
-    <h1 class="site-title">上下五千年</h1>
-    <p class="site-sub">中国历史长卷，与世界文明对照</p>
-  </header>
+<Base title="十丘 (TenQiu) · 越九入十 · 全景知识门户" wide={true}>
+  <div class="tenqiu-portal">
+    {/* 卷首 Hero 区域 */}
+    <header class="portal-hero">
+      <div class="hero-brand">
+        <h1 class="hero-title">十 丘</h1>
+        <span class="hero-en">TENQIU CODEX</span>
+      </div>
+      <div class="quick-year-links">
+        <span class="quick-label">热门长卷专页：</span>
+        <a href={`${base}2025/`} class="year-quick-chip">2025年大事记 ➔</a>
+        <a href={`${base}2026/`} class="year-quick-chip">2026年大事记 ➔</a>
+      </div>
 
-  <Toolbar dynasties={roots} />
+    </header>
 
-  <main class="site-main">
-    <Timeline rows={rows} bands={bands} figureBands={figureBands} columns={columns} />
-  </main>
+    {/* 知识模块矩阵 Grid */}
+    <main class="portal-modules-grid">
+      {modules.map((m) => (
+        <div class={`module-card module-${m.status}`}>
+          <div class="module-head">
+            <span class="module-tag">{m.tag}</span>
+            <span class={`module-badge badge-${m.status}`}>{m.badge}</span>
+          </div>
 
-  <footer class="site-foot">
-    <p class="foot-note">数据以 YAML 维护，构建时校验。欢迎补充与订正。</p>
-  </footer>
+          <h2 class="module-title">{m.title}</h2>
+          <p class="module-sub">{m.sub}</p>
+          <p class="module-desc">{m.desc}</p>
 
-  <script src="../client/timeline-ui.js"></script>
+          <div class="module-foot">
+            {m.status === 'ready' ? (
+              <a href={m.link} class="module-btn btn-primary">
+                进入长卷 ➔
+              </a>
+            ) : (
+              <span class="module-btn btn-disabled">规划建置中</span>
+            )}
+          </div>
+        </div>
+      ))}
+    </main>
+
+    <footer class="portal-footer">
+      <p class="foot-text">【十丘】知识门户 · 纯静态构建 · 欢迎共同建设万象知识库</p>
+    </footer>
+  </div>
 </Base>

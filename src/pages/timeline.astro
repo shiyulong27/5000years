@@ -1,0 +1,46 @@
+---
+import { fileURLToPath } from 'node:url'
+import Base from '../layouts/Base.astro'
+import Timeline from '../components/Timeline.astro'
+import Toolbar from '../components/Toolbar.astro'
+import { loadAll } from '../lib/load.js'
+import { buildTimeline, resolveRoot } from '../lib/timeline.js'
+
+// 构建期完成，产物为纯静态 HTML
+const dataDir = fileURLToPath(new URL('../../data', import.meta.url))
+const data = loadAll(dataDir)
+const { rows, bands, figureBands, columns } = buildTimeline(data)
+
+// 跳转下拉只列根朝代——子朝代在概览页内拆分
+const byId = new Map(data.dynasties.map((d) => [d.id, d]))
+const roots = []
+const seen = new Set()
+for (const d of data.dynasties) {
+  const root = resolveRoot(d, byId)
+  if (seen.has(root.id)) continue
+  seen.add(root.id)
+  roots.push(root)
+}
+
+const base = import.meta.env.BASE_URL
+---
+
+<Base title="十丘 · 上下五千年历史长卷" wide={true}>
+  <header class="site-head">
+    <a href={base} class="back-portal-link">← 返回【十丘】知识总门户</a>
+    <h1 class="site-title">十丘 · 上下五千年</h1>
+    <p class="site-sub">中国历史长卷，与世界文明对照</p>
+  </header>
+
+  <Toolbar dynasties={roots} />
+
+  <main class="site-main">
+    <Timeline rows={rows} bands={bands} figureBands={figureBands} columns={columns} />
+  </main>
+
+  <footer class="site-foot">
+    <p class="foot-note">数据以 YAML 维护，构建时校验。欢迎补充与订正。</p>
+  </footer>
+
+  <script src="../client/timeline-ui.js"></script>
+</Base>
