@@ -2,6 +2,7 @@
   date: "1949"
   title: 开国大典
   category: 政治
+  tags: [建国, 历史转折]
   importance: 5
   summary: 毛泽东于北京天安门城楼宣告中华人民共和国中央人民政府成立。
   confidence: 确定
@@ -10,15 +11,16 @@
   date: "1971"
   title: 恢复联合国合法席位
   category: 政治
+  tags: [外交, 历史转折]
   importance: 5
   summary: 第26届联合国大会通过第2758号决议，恢复中华人民共和国在联合国的一切合法权利。
   confidence: 确定
-  tags: [外交]
 
 - id: reform-opening-1978
   date: "1978"
   title: 十一届三中全会，改革开放始
   category: 政治
+  tags: [改革, 历史转折]
   importance: 5
   summary: 中共十一届三中全会召开，将工作中心转移到经济建设上来，开启改革开放历史新时期。
   confidence: 确定
@@ -27,6 +29,7 @@
   date: "2001"
   title: 加入世界贸易组织
   category: 经济
+  tags: [经济, 贸易, 历史转折]
   importance: 4
   summary: 中国正式加入世界贸易组织（WTO），全面融入世界经济体系。
   confidence: 确定
@@ -47,3 +50,220 @@
   importance: 3
   summary: 第29届夏季奥林匹克运动会在北京成功举办。
   confidence: 确定
+
+- id: cn-energy-degree-law-202501
+  date: "2025-01-01"
+  title: 《能源法》《学位法》施行与渐进式延迟退休启动
+  category: 政治
+  importance: 4
+  summary: 《中华人民共和国能源法》《学位法》正式施行，同时中国渐进式延迟法定退休年龄工作全面启动。
+  confidence: 确定
+  tags: [法律, 改革]
+
+- id: cn-deepseek-202501
+  date: "2025-01-20"
+  title: DeepSeek-R1发布震动全球AI格局
+  category: 文化
+  importance: 5
+  summary: 深度求索公司发布开源推理大模型DeepSeek-R1，性能比肩全球顶尖闭源模型而训练成本显著更低，引发世界对中国AI实力的重新评估与全球科技股市场震荡。
+  confidence: 确定
+  tags: [科技, AI]
+
+- id: cn-spring-festival-economy-202502
+  date: "2025-02"
+  title: 农历乙巳蛇年春节假日经济再创新高
+  category: 经济
+  importance: 3
+  summary: 乙巳蛇年春节假期全国旅游出行与文旅消费均创历史新高，假日经济展现强大内需韧性。
+  confidence: 确定
+  tags: [经济, 文化]
+
+- id: cn-harbin-asiad-winter-202502
+  date: "2025-02-07"
+  title: 第九届亚洲冬季运动会在哈尔滨举行
+  category: 文化
+  importance: 3
+  summary: 第九届亚洲冬季运动会在哈尔滨开幕，系中国第三次举办亚冬会，中国代表团位居金牌榜与奖牌榜首位。
+  confidence: 确定
+  tags: [体育, 亚冬会]
+
+- id: cn-two-sessions-202503
+  date: "2025-03-05"
+  title: 全国两会举行，确定全年发展目标任务
+  category: 政治
+  importance: 4
+  summary: 十四届全国人大三次会议与全国政协十四届三次会议在北京召开，政府工作报告将全年经济增长预期目标定为5%左右，部署扩大内需、发展新质生产力、进一步扩大高水平对外开放等重点任务。
+  confidence: 确定
+  tags: [政治, 两会]
+
+- id: cn-nezh2-boxoffice-202503
+  date: "2025-03"
+  title: 《哪吒之魔童闹海》全球票房突破150亿元
+  category: 文化
+  importance: 4
+  summary: 国产动画电影《哪吒之魔童闹海》全球总票房突破150亿元人民币，刷新全球单市场动画电影票房纪录。
+  confidence: 确定
+  tags: [文化, 电影]
+
+- id: cn-strait-thunder-202504
+  date: "2025-04"
+  title: 东部战区举行“海峡雷霆-2025A”演练
+  category: 政治
+  importance: 4
+  summary: 中国人民解放军东部战区在台岛周边组织“海峡雷霆-2025A”演练，检验联合打击与封控能力。
+  confidence: 确定
+  tags: [军事]
+
+- id: cn-eu-china-50th-202505
+  date: "2025-05-06"
+  title: 中欧建交50周年
+  category: 政治
+  importance: 4
+  summary: 中国与欧洲联盟迎来建交50周年，双方举行系列高端对话与文化交流活动。
+  confidence: 确定
+  tags: [外交]
+
+- id: cn-russia-victory-day-202505
+  date: "2025-05-09"
+  title: 国家主席访俄并出席卫国战争胜利80周年庆典
+  category: 政治
+  importance: 4
+  summary: 国家主席对俄罗斯进行国事访问，并出席纪念苏联卫国战争胜利80周年庆典，中俄发表联合声明，深化新时代全面战略协作伙伴关系。
+  confidence: 确定
+  tags: [外交, 中俄]
+
+- id: cn-tianwen-2-202505
+  date: "2025-05"
+  title: 天问二号开启小行星采样探测
+  category: 文化
+  importance: 4
+  summary: 中国“天问二号”探测器发射升空，开启对近地小行星的伴飞探测与样品采样返回任务。
+  confidence: 确定
+  tags: [航天, 科技]
+
+- id: cn-preschool-education-law-202506
+  date: "2025-06-01"
+  title: 《学前教育法》与新修订《监察法》施行
+  category: 政治
+  importance: 3
+  summary: 《中华人民共和国学前教育法》及新修订的《监察法》正式施行，完善教育与监督法治保障。
+  confidence: 确定
+  tags: [法律]
+
+- id: cn-tianzhou-9-202507
+  date: "2025-07-15"
+  title: 天舟九号货运飞船成功发射
+  category: 文化
+  importance: 4
+  summary: 天舟九号货运飞船在文昌航天发射场发射升空，顺利完成与空间站的自主快速交会对接。
+  confidence: 确定
+  tags: [航天, 科技]
+
+- id: cn-free-preschool-202508
+  date: "2025-08-05"
+  title: 逐步推行免费学前教育政策出台
+  category: 经济
+  importance: 4
+  summary: 国务院发布政策指导意见，从2025年秋季学期起逐步免除公办幼儿园学前一年保育教育费。
+  confidence: 确定
+  tags: [民生, 教育]
+
+- id: cn-xizang-60th-202508
+  date: "2025-08-21"
+  title: 西藏自治区成立60周年庆祝大会
+  category: 政治
+  importance: 4
+  summary: 西藏自治区成立60周年庆祝大会在拉萨隆重举行，展现西藏经济社会发展与民族团结历史性成就。
+  confidence: 确定
+  tags: [政治, 西藏]
+
+- id: cn-sco-tianjin-202509
+  date: "2025-09-01"
+  title: 上海合作组织天津峰会举行
+  category: 政治
+  importance: 5
+  summary: 上海合作组织成员国元首理事会第二十五次会议在天津举行，中方提出“全球治理倡议”。
+  confidence: 确定
+  tags: [外交, 上合]
+
+- id: cn-antijapan-80th-202509
+  date: "2025-09-03"
+  title: 纪念抗战胜利80周年大会与阅兵
+  category: 政治
+  importance: 5
+  summary: 纪念中国人民抗日战争暨世界反法西斯战争胜利80周年大会在北京隆重举行并举行阅兵仪式。
+  confidence: 确定
+  tags: [军事, 纪念]
+
+- id: cn-fujian-catapult-202509
+  date: "2025-09-22"
+  title: 福建舰完成多型舰载机电磁弹射训练
+  category: 政治
+  importance: 4
+  summary: 歼-15T、歼-35及空警-600等多型舰载机在电磁弹射航母福建舰上成功实施弹射起飞与着舰训练。
+  confidence: 确定
+  tags: [军事]
+
+- id: cn-cz-600th-202510
+  date: "2025-10"
+  title: 长征系列火箭完成第600次发射
+  category: 文化
+  importance: 4
+  summary: 长征系列运载火箭成功完成第600次发射，自1970年长征一号首飞至此历时55年；2025年全年长征系列共实施69次发射，高密度发射能力持续刷新。
+  confidence: 确定
+  tags: [航天, 科技]
+
+- id: cn-jiaolong-arctic-202510
+  date: "2025-10"
+  title: 蛟龙号完成我国首次北极冰区载人深潜
+  category: 文化
+  importance: 4
+  summary: “蛟龙”号载人潜水器成功完成我国首次北极冰区载人深潜科考，获取极区关键科学数据。
+  confidence: 确定
+  tags: [深潜, 科技]
+
+- id: cn-4th-plenum-20th-202510
+  date: "2025-10-20"
+  title: 中共二十届四中全会审议“十五五”规划建议
+  category: 政治
+  importance: 5
+  summary: 中共二十届四中全会在北京举行，审议通过《中共中央关于制定国民经济和社会发展第十五个五年规划的建议》。
+  confidence: 确定
+  tags: [政治, 十五五]
+
+- id: cn-shenzhou-20-21-202511
+  date: "2025-11-01"
+  title: 神舟二十号与二十一号乘组空间站太空会师
+  category: 文化
+  importance: 4
+  summary: 神舟二十号与神舟二十一号航天员乘组在中国空间站成功实现“太空会师”，开启新一轮轨轮换。
+  confidence: 确定
+  tags: [航天, 科技]
+
+- id: cn-antarctic-42-202511
+  date: "2025-11-01"
+  title: 中国第42次南极考察队起航出征
+  category: 文化
+  importance: 3
+  summary: 中国第42次南极考察队从上海起航，开展极地气候变化、生态环境监测及站区建设任务。
+  confidence: 确定
+  tags: [科考]
+
+- id: cn-fujian-commission-202511
+  date: "2025-11-05"
+  title: 福建舰正式入列，中国进入三航母时代
+  category: 政治
+  importance: 5
+  summary: 我国首艘电磁弹射型航空母舰福建舰入列授旗仪式举行，国家主席出席并登舰视察。福建舰满载排水量8万余吨，为全球首艘采用常规动力电磁弹射技术的航母，驻泊三亚某军港。
+  confidence: 确定
+  tags: [军事, 海军]
+
+- id: cn-shenzhou-20-emergency-202511
+  date: "2025-11-14"
+  title: 神舟二十号遭碎片撞击，载人航天首次应急处置
+  category: 文化
+  importance: 4
+  summary: 神舟二十号返回舱舷窗疑遭空间碎片撞击受损、返回任务推迟；11月14日神舟二十号乘组改乘神舟二十一号飞船安全返回，11月25日神舟二十二号以无人状态应急发射，为空间站首次应急处置。
+  confidence: 确定
+  tags: [航天, 应急]
+
