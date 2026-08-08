@@ -576,4 +576,124 @@
   tags: [政治, 澳门]
   sources: [新华网]
 
+- id: cn-covid-wuhan-202001
+  date: "2020-01-23"
+  title: 全国全面打响疫情防控阻击战，武汉实施离汉通道管控
+  category: 灾害
+  importance: 5
+  summary: 面对突如其来的新冠肺炎疫情，党中央坚持人民至上、生命至上，武汉市实施离汉通道管控，全国迅速打响疫情防控的人民战争、总体战、阻击战。
+  confidence: 确定
+  tags: [灾害, 卫生, 历史转折]
+  sources: [新华网]
+
+- id: cn-civil-code-202005
+  date: "2020-05-28"
+  title: 《中华人民共和国民法典》表决通过
+  category: 政治
+  importance: 5
+  summary: 十三届全国人大三次会议表决通过《中华人民共和国民法典》，自2021年1月1日起施行，这是新中国历史上首个以“法典”命名的法律。
+  confidence: 确定
+  tags: [法律, 政治, 历史转折]
+  sources: [新华网]
+
+- id: cn-hainan-free-trade-202006
+  date: "2020-06-01"
+  title: 《海南自由贸易港建设总体方案》印发
+  category: 经济
+  importance: 4
+  summary: 中共中央、国务院印发《海南自由贸易港建设总体方案》，标志着中国特色自由贸易港建设正式启航。
+  confidence: 确定
+  tags: [经济, 改革]
+  sources: [新华网]
+
+- id: cn-hk-national-security-law-202006
+  date: "2020-06-30"
+  title: 《中华人民共和国香港特别行政区维护国家安全法》通过并实施
+  category: 政治
+  importance: 5
+  summary: 十三届全国人大常委会第二十次会议表决通过香港国安法，国家主席签署主席令予以公布并实施，为香港长治久安提供坚实保障。
+  confidence: 确定
+  tags: [政治, 法律, 历史转折]
+  sources: [新华网]
+
+- id: cn-tianwen1-launch-202007
+  date: "2020-07-23"
+  title: 天问一号开启中国首次自主火星探测任务
+  category: 文化
+  importance: 4
+  summary: 长征五号运载火箭成功将“天问一号”火星探测器送入预定轨道，开启中国首次自主火星探测任务，迈出深空探测历史性一步。
+  confidence: 确定
+  tags: [航天, 科技]
+  sources: [新华网, 国家航天局]
+
+- id: cn-beidou3-system-202007
+  date: "2020-07-31"
+  title: 北斗三号全球卫星导航系统正式开通
+  category: 文化
+  importance: 5
+  summary: 北斗三号全球卫星导航系统建成暨开通仪式在北京举行，标志着中国自主建设、独立运行的全球卫星导航系统全面建成。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [新华网]
+
+- id: cn-korean-war-70th-202010
+  date: "2020-10-23"
+  title: 纪念中国人民志愿军抗美援朝出国作战70周年
+  category: 政治
+  importance: 4
+  summary: 纪念中国人民志愿军抗美援朝出国作战70周年大会在北京隆重举行，发表重要讲话，弘扬伟大的抗美援朝精神。
+  confidence: 确定
+  tags: [政治, 军事]
+  sources: [新华网]
+
+- id: cn-fifth-plenum-202010
+  date: "2020-10-29"
+  title: 党的十九届五中全会审议通过“十四五”规划建议
+  category: 政治
+  importance: 5
+  summary: 中共十九届五中全会在北京举行，审议通过《中共中央关于制定国民经济和社会发展第十四个五年规划和二〇三五年远景目标的建议》。
+  confidence: 确定
+  tags: [政治, 改革, 历史转折]
+  sources: [新华网]
+
+- id: cn-rcep-signature-202011
+  date: "2020-11-15"
+  title: 区域全面经济伙伴关系协定（RCEP）正式签署
+  category: 经济
+  importance: 4
+  summary: 东盟十国与中国、日本、韩国、澳大利亚、新西兰共15国正式签署RCEP，全球人口最多、经贸规模最大的自由贸易区启航。
+  confidence: 确定
+  tags: [经济, 贸易, 外交]
+  sources: [新华网]
+
+- id: cn-poverty-alleviation-202011
+  date: "2020-11-23"
+  title: 全国832个贫困县全部脱贫摘帽
+  category: 经济
+  importance: 5
+  summary: 随着贵州省9个县退出贫困县序列，全国832个贫困县全部脱贫摘帽，新时代脱贫攻坚目标任务如期完成，创造人类减贫史奇迹。
+  confidence: 确定
+  tags: [民生, 经济, 历史转折]
+  sources: [新华网]
+
+- id: cn-change5-return-202012
+  date: "2020-12-17"
+  title: 嫦娥五号实现中国首次月球采样返回
+  category: 文化
+  importance: 5
+  summary: 嫦娥五号返回器携带1731克月球样品在内蒙古四子王旗成功着陆，标志着中国首次月球采样返回任务成功，完成探月工程三步走规划。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [新华网, 国家航天局]
+
+- id: cn-economy-positive-202012
+  date: "2020-12-31"
+  title: 中国成为全球唯一实现正增长的主要经济体，全年GDP突破100万亿元
+  category: 经济
+  importance: 5
+  summary: 2020年中国国内生产总值突破100万亿元人民币，同比增长2.3%，克服新冠疫情严重冲击，成为全球唯一实现正增长的主要经济体。
+  confidence: 确定
+  tags: [经济, 宏观, 历史转折]
+  sources: [国家统计局, 新华网]
+
 
