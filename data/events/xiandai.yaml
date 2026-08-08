@@ -1336,4 +1336,104 @@
   tags: [经济, 宏观, 贸易]
   sources: [国家统计局, 新华网]
 
+- id: cn-national-memorial-day-201402
+  date: "2014-02-27"
+  title: 全国人大常委会设立南京大屠杀死难者国家公祭日与抗战胜利纪念日
+  category: 政治
+  importance: 5
+  summary: 全国人大常委会表决通过决定，将9月3日确定为中国人民抗日战争胜利纪念日，12月13日设立为南京大屠杀死难者国家公祭日。
+  confidence: 确定
+  tags: [政治, 历史, 法治, 历史转折]
+  sources: [新华网]
+
+- id: cn-kunming-attack-201403
+  date: "2014-03-01"
+  title: 云南昆明火车站发生“3·01”严重暴力恐怖袭击事件
+  category: 灾害
+  importance: 4
+  summary: 8名恐怖分子在昆明火车站砍杀无辜群众造成31死141伤，公安机关迅速击毙抓获暴徒，严厉打击暴恐。
+  confidence: 确定
+  tags: [反恐, 治安]
+  sources: [新华网]
+
+- id: cn-russia-gas-deal-201405
+  date: "2014-05-21"
+  title: 中俄签署4000亿美元“西伯利亚力量”管道天然气购销历史性大单
+  category: 经济
+  importance: 5
+  summary: 中石油与俄罗斯天然气公司在上海签署为期30年、总价值4000亿美元天然气购销合同，深化中俄全面战略协作伙伴关系。
+  confidence: 确定
+  tags: [外交, 能源, 历史转折]
+  sources: [新华网]
+
+- id: cn-zhou-yongkang-investigation-201407
+  date: "2014-07-29"
+  title: 中共中央决定对周永康立案审查，反腐败深化推进
+  category: 政治
+  importance: 5
+  summary: 中共中央决定由中纪委对周永康立案审查，表明党中央无禁区、全覆盖、零容忍严惩腐败的坚强意志。
+  confidence: 确定
+  tags: [政治, 反腐, 历史转折]
+  sources: [新华网]
+
+- id: cn-ludian-earthquake-201408
+  date: "2014-08-03"
+  title: 云南省昭通市鲁甸县发生6.5级地震
+  category: 灾害
+  importance: 4
+  summary: 云南鲁甸发生6.5级地震，造成617人遇难，全社会开展紧急救援与牛栏江堰塞湖排险。
+  confidence: 确定
+  tags: [灾害, 地震]
+  sources: [新华网]
+
+- id: cn-literature-symposium-201410
+  date: "2014-10-15"
+  title: 中央召开文艺工作座谈会，指明新时期文艺发展方向
+  category: 文化
+  importance: 4
+  summary: 中共中央召开文艺工作座谈会，强调文艺是时代前进的号角，坚持以人民为中心的创作导向。
+  confidence: 确定
+  tags: [文化, 艺术]
+  sources: [新华网]
+
+- id: cn-fourth-plenum-18th-201410
+  date: "2014-10-23"
+  title: 党的十八届四中全会审议通过全面推进依法治国决定
+  category: 政治
+  importance: 5
+  summary: 中共十八届四中全会在北京举行，首次以中央全会形式专门研究依法治国，通过《中共中央关于全面推进依法治国若干重大问题的决定》。
+  confidence: 确定
+  tags: [政治, 法治, 历史转折]
+  sources: [新华网]
+
+- id: cn-apec-beijing-201411
+  date: "2014-11-11"
+  title: 2014年APEC领导人非正式会议在北京雁栖湖举行
+  category: 政治
+  importance: 5
+  summary: APEC第二十二次领导人非正式会议在北京举行，通过《北京宣言》，正式启动亚太自由贸易区（FTAAP）进程。
+  confidence: 确定
+  tags: [外交, 经济, 历史转折]
+  sources: [新华网]
+
+- id: cn-shanghai-hongkong-stock-connect-201411
+  date: "2014-11-17"
+  title: “沪港通”股票交易互联互通机制正式开通
+  category: 经济
+  importance: 5
+  summary: 上交所与联交所“沪港通”试点启动，首次实现内地与香港资本市场双向开放与资本自由流动。
+  confidence: 确定
+  tags: [经济, 金融, 历史转折]
+  sources: [新华网]
+
+- id: cn-south-to-north-water-diversion-201412
+  date: "2014-12-12"
+  title: 南水北调中线一期工程正式通水
+  category: 经济
+  importance: 5
+  summary: 国家重大工程南水北调中线一期工程通水，丹江口水库长江水沿1432公里干渠源源不断送抵京津。
+  confidence: 确定
+  tags: [民生, 工程, 水利, 历史转折]
+  sources: [新华网]
+
 

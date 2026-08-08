@@ -1375,4 +1375,104 @@
   tags: [经济, 贸易]
   sources: [新华网, 维基百科]
 
+- id: w-mh370-disappearance-201403
+  date: "2014-03-08"
+  title: 马来西亚航空MH370航班失联，引发史上最大规模跨国搜救
+  category: 灾害
+  importance: 5
+  summary: 载有239人的马航MH370客机在从吉隆坡飞往北京途中失联，多国开展史上最大规模搜救。
+  confidence: 确定
+  tags: [灾害, 航空, 历史转折]
+  sources: [新华网, 维基百科]
+
+- id: w-crimea-annexation-201403
+  date: "2014-03-18"
+  title: 克里米亚举行公投加入俄罗斯，引发乌克兰危机与西方制裁
+  category: 政治
+  importance: 5
+  summary: 克里米亚公投脱乌入俄，普京签署入俄条约，美欧对俄罗斯展开全面经济制裁。
+  confidence: 确定
+  tags: [政治, 战争, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-ebola-outbreak-201403
+  date: "2014-03-25"
+  title: 西非暴发史上最严重埃博拉病毒疫情，世卫组织宣布紧急状态
+  category: 灾害
+  importance: 4
+  summary: 几内亚等国暴发埃博拉疫情造成1.1万多人死亡，世卫组织发布全球紧急状态，中国驰援援助。
+  confidence: 确定
+  tags: [灾害, 医疗]
+  sources: [WHO, 新华网]
+
+- id: w-isis-caliphate-201406
+  date: "2014-06-29"
+  title: 极端组织“伊斯兰国”（ISIS）宣布“建国”，席卷伊拉克与叙利亚
+  category: 战争
+  importance: 5
+  summary: 极端组织ISIS攻占摩苏尔后宣布成立跨国“哈里发国”，严重威胁中东与全球安全。
+  confidence: 确定
+  tags: [战争, 反恐, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-ndb-brics-bank-201407
+  date: "2014-07-15"
+  title: 金砖国家在巴西第九届峰会上宣布设立新开发银行（NDB）
+  category: 经济
+  importance: 4
+  summary: 金砖五国领导人签署协议建立初始资本1000亿美元的金砖新开发银行，总部设在上海。
+  confidence: 确定
+  tags: [金融, 全球治理]
+  sources: [新华网]
+
+- id: w-mh17-shot-down-201407
+  date: "2014-07-17"
+  title: 马来西亚航空MH17航班在乌克兰东部上空被击落
+  category: 战争
+  importance: 5
+  summary: 马航MH17客机在乌东顿涅茨克冲突区被防空导弹击落，机上298人全部遇难。
+  confidence: 确定
+  tags: [战争, 灾害, 乌克兰, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-scottish-referendum-201409
+  date: "2014-09-18"
+  title: 苏格兰举行独立公投，55%选民投票留在英国
+  category: 政治
+  importance: 4
+  summary: 苏格兰独立公投中55.3%选民投反对票，维持留在联合王国，避免了英国解体。
+  confidence: 确定
+  tags: [政治, 英国]
+  sources: [维基百科, 新华网]
+
+- id: w-philae-comet-landing-201411
+  date: "2014-11-12"
+  title: 欧洲航天局“菲莱”着陆器成功降落彗星，人类历史上首次
+  category: 文化
+  importance: 5
+  summary: 欧洲“菲莱”着陆器成功降落在彗星67P表面，成为人类航天史上首次软着陆彗星。
+  confidence: 确定
+  tags: [航天, 天文, 科技, 历史转折]
+  sources: [ESA, 维基百科]
+
+- id: w-fed-tapering-ends-201411
+  date: "2014-11-20"
+  title: 美联储宣布完全结束量化宽松（QE3）资产购买计划
+  category: 经济
+  importance: 4
+  summary: 美联储宣布停止购买国债与抵押贷款支持证券，结束金融危机以来实施的三轮QE。
+  confidence: 确定
+  tags: [经济, 金融]
+  sources: [新华网, 维基百科]
+
+- id: w-us-cuba-reconciliation-201412
+  date: "2014-12-17"
+  title: 美国与古巴宣布启动两国关系正常化进程
+  category: 政治
+  importance: 5
+  summary: 美国与古巴领导人发表讲话，宣布将结束半个多世纪的冷战对立，恢复外交关系。
+  confidence: 确定
+  tags: [外交, 冷战, 历史转折]
+  sources: [维基百科, 新华网]
+
 
