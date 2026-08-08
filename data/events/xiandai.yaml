@@ -1436,4 +1436,104 @@
   tags: [民生, 工程, 水利, 历史转折]
   sources: [新华网]
 
+- id: cn-aiib-agreement-signed-201506
+  date: "2015-06-29"
+  title: 《亚洲基础设施投资银行协定》（亚投行/AIIB）在北京签署
+  category: 经济
+  importance: 5
+  summary: 57个亚投行意向创始成员国代表在北京出席签署仪式，中国倡议筹建的首个多边金融机构亚投行迈出关键一步。
+  confidence: 确定
+  tags: [经济, 金融, 历史转折]
+  sources: [新华网]
+
+- id: cn-beijing-winters-olympics-bid-201507
+  date: "2015-07-31"
+  title: 北京成功申办2022年冬奥会，成为全球首个“双奥之城”
+  category: 文化
+  importance: 5
+  summary: 国际奥委会第128次全会上，北京击败阿拉木图赢得2022年第二十四届冬季奥林匹克运动会举办权。
+  confidence: 确定
+  tags: [体育, 文化, 历史转折]
+  sources: [新华网, 国际奥委会]
+
+- id: cn-tianjin-port-explosion-201508
+  date: "2015-08-12"
+  title: 天津港危险品仓库发生特别重大火灾爆炸事故
+  category: 灾害
+  importance: 4
+  summary: 天津港瑞海公司危险品仓库发生特别重大爆炸，造成165人遇难、8人失踪，全社会深刻警醒安全生产。
+  confidence: 确定
+  tags: [灾害, 事故]
+  sources: [新华网]
+
+- id: cn-victory-day-parade-201509
+  date: "2015-09-03"
+  title: 纪念中国人民抗日战争暨世界反法西斯战争胜利70周年阅兵在京举行
+  category: 政治
+  importance: 5
+  summary: 天安门广场举行盛大阅兵仪式，国家主席发表讲话并宣布裁军30万，30位外国领导人出席。
+  confidence: 确定
+  tags: [政治, 军事, 历史转折]
+  sources: [新华网]
+
+- id: cn-tuyouyou-nobel-prize-201510
+  date: "2015-10-05"
+  title: 屠呦呦获得诺贝尔生理学或医学奖，中国本土科学界首个自然科学诺奖
+  category: 文化
+  importance: 5
+  summary: 瑞典卡罗琳医学院宣布将诺贝尔生理学或医学奖授予屠呦呦，表彰其在青蒿素抗疟疾治疗上的划时代发现。
+  confidence: 确定
+  tags: [科技, 医学, 历史转折]
+  sources: [新华网, 诺贝尔奖官网]
+
+- id: cn-fifth-plenum-18th-two-child-201510
+  date: "2015-10-29"
+  title: 党的十八届五中全会决定全面实施“一对夫妇可生育两个孩子政策”
+  category: 政治
+  importance: 5
+  summary: 中共十八届五中全会在北京举行，提出五大发展理念，决定全面实施两孩政策。
+  confidence: 确定
+  tags: [政治, 人口, 民生, 历史转折]
+  sources: [新华网]
+
+- id: cn-c919-rollout-201511
+  date: "2015-11-02"
+  title: 中国首架大型客机C919在上海总装下线
+  category: 文化
+  importance: 5
+  summary: 中国自主研制的首款单通道干线客机C919在上海中国商飞基地成功下线，大型客机研制取得重大突破。
+  confidence: 确定
+  tags: [航空, 科技, 历史转折]
+  sources: [新华网]
+
+- id: cn-xi-ma-meeting-201511
+  date: "2015-11-07"
+  title: 习近平同马英九在新加坡举行两岸领导人历史性会面
+  category: 政治
+  importance: 5
+  summary: 海峡两岸领导人习近平与马英九在新加坡握手会面，这是1949年以来海峡两岸领导人首次会面。
+  confidence: 确定
+  tags: [政治, 两岸, 历史转折]
+  sources: [新华网]
+
+- id: cn-rmb-sdr-basket-201511
+  date: "2015-11-30"
+  title: 国际货币基金组织（IMF）批准人民币加入SDR货币篮子
+  category: 经济
+  importance: 5
+  summary: IMF执董会决定将人民币纳入SDR货币篮子，权重为10.92%，人民币成为第三大权重货币。
+  confidence: 确定
+  tags: [金融, 经济, 历史转折]
+  sources: [IMF, 新华网]
+
+- id: cn-pla-rocket-force-established-201512
+  date: "2015-12-31"
+  title: 中国人民解放军陆军领导机构、火箭军、战略支援部队成立
+  category: 政治
+  importance: 5
+  summary: 国家主席向陆军、火箭军、战略支援部队授予军旗，深化国防和军队改革大幕全面拉开。
+  confidence: 确定
+  tags: [军事, 改革, 历史转折]
+  sources: [新华网]
+
 
