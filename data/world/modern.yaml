@@ -1575,4 +1575,104 @@
   tags: [经济, 金融]
   sources: [新华网, 维基百科]
 
+- id: w-alphago-lee-sedol-201603
+  date: "2016-03-15"
+  title: 人工智能AlphaGo以4比1击败围棋世界冠军李世石
+  category: 文化
+  importance: 5
+  summary: Google DeepMind研发的围棋AI系统AlphaGo以4:1击败李世石，标志着深度学习迎来爆发式划时代突破。
+  confidence: 确定
+  tags: [AI, 人工智能, 科技, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-brexit-referendum-201606
+  date: "2016-06-23"
+  title: 英国举行脱欧公投，52%选民支持脱离欧洲联盟
+  category: 政治
+  importance: 5
+  summary: 英国全民公投51.9%赞成脱离欧盟，首相卡梅伦辞职，引发战后欧洲一体化进程中最严重政治地震。
+  confidence: 确定
+  tags: [政治, 欧洲, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-juno-spacecraft-jupiter-201607
+  date: "2016-07-03"
+  title: 美国“朱诺号”木星探测器成功进入木星轨道
+  category: 文化
+  importance: 4
+  summary: NASA“朱诺号”探测器历经近5年飞行成功进入木星极轨，开展木星大气与磁场科学考察。
+  confidence: 确定
+  tags: [航天, 天文]
+  sources: [NASA, 维基百科]
+
+- id: w-nice-truck-attack-201607
+  date: "2016-07-14"
+  title: 法国尼斯国庆日发生卡车冲撞恐怖袭击，造成86人死亡
+  category: 战争
+  importance: 4
+  summary: 极端武装分子驾驶重型卡车在尼斯人群中冲撞造成86死，ISIS随后认领袭击。
+  confidence: 确定
+  tags: [战争, 反恐, 法国]
+  sources: [维基百科, 新华网]
+
+- id: w-turkey-coup-attempt-201607
+  date: "2016-07-15"
+  title: 土耳其爆发未遂军事政变，总统埃尔多安迅速平息
+  category: 政治
+  importance: 4
+  summary: 土耳其叛乱军人发动政变企图推翻埃尔多安，市民上街抵抗，政变数小时内被平息致250多人死亡。
+  confidence: 确定
+  tags: [政治, 军事]
+  sources: [维基百科, 新华网]
+
+- id: w-us-china-ratify-paris-agreement-201609
+  date: "2016-09-03"
+  title: 中美两国元首在杭州向联合国交存《巴黎协定》批准文书
+  category: 灾害
+  importance: 5
+  summary: 国家主席与美国总统奥巴马向联合国共同交存《巴黎协定》批准文书，推动协定于11月正式生效。
+  confidence: 确定
+  tags: [环境, 气候, 外交, 历史转折]
+  sources: [联合国, 新华网]
+
+- id: w-bhumibol-pass-201610
+  date: "2016-10-13"
+  title: 泰国国王普密蓬·阿杜德逝世，享年88岁
+  category: 政治
+  importance: 4
+  summary: 在位长达70年的泰国国王拉玛九世普密蓬在曼谷逝世，被奉为“国家稳定基石”，全国哀悼一年。
+  confidence: 确定
+  tags: [政治, 人物]
+  sources: [维基百科, 新华网]
+
+- id: w-trump-wins-us-election-201611
+  date: "2016-11-08"
+  title: 共和党候选人唐纳德·特朗普击败希拉里当选美国第45任总统
+  category: 政治
+  importance: 5
+  summary: 地产大亨、政坛黑马特朗普击败希拉里当选美国总统，以“美国优先”与反全球化主张重塑全球格局。
+  confidence: 确定
+  tags: [政治, 美国, 历史转折]
+  sources: [新华网, 维基百科]
+
+- id: w-fidel-castro-pass-201611
+  date: "2016-11-25"
+  title: 古巴革命领袖菲德尔·卡斯特罗逝世，享年90岁
+  category: 政治
+  importance: 5
+  summary: 领导古巴革命、建立美洲首个社会主义国家的古巴革命领袖卡斯特罗逝世，拉美冷战传奇时代落幕。
+  confidence: 确定
+  tags: [政治, 人物, 冷战, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-park-geun-hye-impeachment-201612
+  date: "2016-12-09"
+  title: 韩国国会通过对总统朴槿惠的弹劾案
+  category: 政治
+  importance: 4
+  summary: 因“亲信干政”丑闻引发连续光化门广场集会，韩国国会通过对总统朴槿惠的弹劾案并暂停其职权。
+  confidence: 确定
+  tags: [政治, 韩国]
+  sources: [维基百科, 新华网]
+
 

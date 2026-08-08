@@ -1536,4 +1536,104 @@
   tags: [军事, 改革, 历史转折]
   sources: [新华网]
 
+- id: cn-two-child-policy-enforced-201601
+  date: "2016-01-01"
+  title: 全国全面实施“一对夫妇可生育两个孩子”政策正式生效
+  category: 政治
+  importance: 5
+  summary: 修改后的《人口与计划生育法》施行，实施30多年的独生子女政策历史性终结，全面两孩落地。
+  confidence: 确定
+  tags: [民生, 人口, 法律, 历史转折]
+  sources: [新华网]
+
+- id: cn-south-china-sea-arbitration-201607
+  date: "2016-07-12"
+  title: 中国政府发表关于在南海的主权和权益声明，对所谓南海仲裁案“不接受、不承认”
+  category: 政治
+  importance: 5
+  summary: 针对菲律宾单方面提起的南海仲裁案所谓裁决，中国政府声明裁决无效，坚决维护领海主权。
+  confidence: 确定
+  tags: [外交, 军事, 历史转折]
+  sources: [新华网]
+
+- id: cn-micius-quantum-satellite-201608
+  date: "2016-08-16"
+  title: 世界首颗量子科学实验卫星“墨子号”成功发射
+  category: 文化
+  importance: 5
+  summary: 世界首颗量子科学实验卫星“墨子号”成功发射，标志着中国在量子通信技术领域领跑全球。
+  confidence: 确定
+  tags: [科技, 量子, 航天, 历史转折]
+  sources: [中国科学院, 新华网]
+
+- id: cn-women-volleyball-gold-201608
+  date: "2016-08-21"
+  title: 中国女排在里约奥运会勇夺金牌，时隔12年重登奥运之巅
+  category: 文化
+  importance: 5
+  summary: 里约奥运会女排决赛中，中国女排3比1逆转战胜塞尔维亚队，时隔12年再次夺金，“女排精神”振奋全国。
+  confidence: 确定
+  tags: [体育, 文化, 历史转折]
+  sources: [新华网]
+
+- id: cn-g20-hangzhou-summit-201609
+  date: "2016-09-04"
+  title: 二十国集团（G20）领导人第十一次峰会在杭州举行
+  category: 政治
+  importance: 5
+  summary: G20峰会在杭州举行，达成《杭州峰会公报》，首次将创新和发展置于全球宏观政策核心。
+  confidence: 确定
+  tags: [外交, 经济, 历史转折]
+  sources: [新华网]
+
+- id: cn-tiangong2-space-lab-201609
+  date: "2016-09-15"
+  title: 中国首个真正意义上的空间实验室“天宫二号”成功发射
+  category: 文化
+  importance: 5
+  summary: 天宫二号成功发射，随后与神舟十一号完成交会对接，航天员景海鹏、陈冬在轨驻留30天完成科学实验。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [新华网, 国家航天局]
+
+- id: cn-fast-telescope-open-201609
+  date: "2016-09-25"
+  title: 500米口径球面射电望远镜（FAST，“中国天眼”）落成启用
+  category: 文化
+  importance: 5
+  summary: 具有我国自主知识产权、世界最大单口径最灵敏的射电望远镜FAST在贵州落成启用，被誉为“中国天眼”。
+  confidence: 确定
+  tags: [科技, 天文, 历史转折]
+  sources: [中国科学院, 新华网]
+
+- id: cn-sixth-plenum-18th-core-201610
+  date: "2016-10-27"
+  title: 党的十八届六中全会明确“以习近平同志为核心的党中央”
+  category: 政治
+  importance: 5
+  summary: 中共十八届六中全会在北京举行，通过党内监督条例，正式明确了“以习近平同志为核心的党中央”。
+  confidence: 确定
+  tags: [政治, 党建, 历史转折]
+  sources: [新华网]
+
+- id: cn-long-march-5-maiden-flight-201611
+  date: "2016-11-03"
+  title: 中国最大运载火箭“长征五号”（胖五）首飞成功
+  category: 文化
+  importance: 5
+  summary: 长征五号大推力运载火箭在海南文昌首飞成功，填补我国大推力无毒液体火箭空白。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [国家航天局, 新华网]
+
+- id: cn-shenzhen-hongkong-stock-connect-201612
+  date: "2016-12-05"
+  title: “深港通”股票交易互联互通机制正式开通
+  category: 经济
+  importance: 4
+  summary: 深交所与港交所“深港通”正式开通，标志着中国资本市场进一步实现与国际市场多层次互联互通。
+  confidence: 确定
+  tags: [经济, 金融]
+  sources: [新华网]
+
 
