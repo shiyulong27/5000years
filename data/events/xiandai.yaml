@@ -1136,4 +1136,104 @@
   tags: [民生, 扶贫]
   sources: [新华网]
 
+- id: cn-shenzhou9-launch-201206
+  date: "2012-06-16"
+  title: 神舟九号成功发射，刘洋成为中国首位女航天员，实现首次手控交会对接
+  category: 文化
+  importance: 5
+  summary: 神舟九号载人飞船发射成功，航天员景海鹏、刘旺、刘洋进驻天宫一号，刘洋成为首位飞天女航天员，中国首次实现手控交会对接。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [新华网, 国家航天局]
+
+- id: cn-jiaolong-7062m-201206
+  date: "2012-06-27"
+  title: “蛟龙”号载人潜水器成功下潜至7062米，创最大下潜深度纪录
+  category: 文化
+  importance: 5
+  summary: 中国“蛟龙”号载人潜水器在马里亚纳海沟成功下潜至7062米，创造了中国载人深潜新纪录，具备深海考察能力。
+  confidence: 确定
+  tags: [深潜, 科考, 科技, 历史转折]
+  sources: [新华网]
+
+- id: cn-liaoning-aircraft-carrier-201209
+  date: "2012-09-25"
+  title: 中国第一艘航空母舰“辽宁舰”正式交付海军
+  category: 政治
+  importance: 5
+  summary: 中国第一艘航空母舰“辽宁舰”在大连正式交付海军，标志着中国海军迈入航母时代。
+  confidence: 确定
+  tags: [军事, 科技, 历史转折]
+  sources: [新华网]
+
+- id: cn-moyan-nobel-prize-201210
+  date: "2012-10-11"
+  title: 作家莫言获得诺贝尔文学奖
+  category: 文化
+  importance: 5
+  summary: 瑞典文学院宣布将2012年诺贝尔文学奖授予中国作家莫言，莫言成为首位获得诺贝尔文学奖的中国籍作家。
+  confidence: 确定
+  tags: [文化, 文学, 历史转折]
+  sources: [新华网, 诺贝尔奖官网]
+
+- id: cn-18th-cpc-congress-201211
+  date: "2012-11-08"
+  title: 中国共产党第十八次全国代表大会胜利召开
+  category: 政治
+  importance: 5
+  summary: 中共十八大在北京胜利召开，确立了全面建成小康社会和全面深化改革开放的目标，提出了科学发展观为指导思想。
+  confidence: 确定
+  tags: [政治, 改革, 历史转折]
+  sources: [新华网]
+
+- id: cn-18th-first-plenum-201211
+  date: "2012-11-15"
+  title: 十八届一中全会选举习近平为中共中央总书记
+  category: 政治
+  importance: 5
+  summary: 十八届一中全会在北京举行，选举习近平为中共中央总书记、中央军委主席，中国特色社会主义进入新时代。
+  confidence: 确定
+  tags: [政治, 历史转折]
+  sources: [新华网]
+
+- id: cn-j15-carrier-landing-201211
+  date: "2012-11-23"
+  title: 歼-15舰载机首次成功在辽宁舰着舰起飞
+  category: 政治
+  importance: 4
+  summary: 中国自主研制的歼-15舰载战斗机在辽宁舰上成功完成首次起降飞行训练，核心技术性能符合要求。
+  confidence: 确定
+  tags: [军事, 科技]
+  sources: [新华网]
+
+- id: cn-chinese-dream-201211
+  date: "2012-11-29"
+  title: 国家主席参观《复兴之路》展览并首次提出“中国梦”
+  category: 政治
+  importance: 5
+  summary: 国家主席参观国家博物馆《复兴之路》展览，首次阐述“中国梦”——实现中华民族伟大复兴，是中华民族最伟大的梦想。
+  confidence: 确定
+  tags: [政治, 历史转折]
+  sources: [新华网]
+
+- id: cn-eight-cardinal-couplets-201212
+  date: "2012-12-04"
+  title: 中共中央政治局审议通过改进工作作风“八项规定”
+  category: 政治
+  importance: 5
+  summary: 中共中央政治局召开会议，审议通过关于改进工作作风、密切联系群众的“八项规定”，开启全面从严治党正风肃纪新篇章。
+  confidence: 确定
+  tags: [政治, 党建, 历史转折]
+  sources: [新华网]
+
+- id: cn-jingguang-hsr-open-201212
+  date: "2012-12-26"
+  title: 京广高速铁路全线贯通运营
+  category: 经济
+  importance: 4
+  summary: 北京至广州高标准高速铁路全线贯通运营，全长2298公里，成为世界上运营里程最长的高速铁路。
+  confidence: 确定
+  tags: [经济, 交通]
+  sources: [新华网]
+
 

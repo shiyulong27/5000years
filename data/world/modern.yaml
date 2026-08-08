@@ -1175,4 +1175,104 @@
   tags: [战争, 中东, 历史转折]
   sources: [维基百科, 新华网]
 
+- id: w-us-pivot-to-asia-201201
+  date: "2012-01-05"
+  title: 美国发布新军事战略报告，宣布战略重心转向亚太（“亚太再平衡”）
+  category: 政治
+  importance: 4
+  summary: 美国国防部发布战略报告，正式提出将军事与战略重心转向亚太地区。
+  confidence: 确定
+  tags: [外交, 军事]
+  sources: [维基百科, 新华网]
+
+- id: w-higgs-boson-discovery-201207
+  date: "2012-07-04"
+  title: 欧洲核子研究中心（CERN）宣布发现希格斯玻色子（“上帝粒子”）
+  category: 文化
+  importance: 5
+  summary: CERN大型强子对撞机团队宣布发现与标准模型预言的希格斯玻色子高度吻合的新粒子，填补物理标准模型最后拼图。
+  confidence: 确定
+  tags: [科技, 物理, 历史转折]
+  sources: [CERN, 维基百科, 新华网]
+
+- id: w-curiosity-rover-mars-201208
+  date: "2012-08-06"
+  title: 美国“好奇号”火星车成功着陆火星
+  category: 文化
+  importance: 4
+  summary: NASA“好奇号”火星车采用“天空吊车”方式成功着陆火星盖尔陨石坑，开展火星宜居性考察。
+  confidence: 确定
+  tags: [航天, 科技]
+  sources: [NASA, 维基百科]
+
+- id: w-russia-wto-join-201208
+  date: "2012-08-22"
+  title: 俄罗斯经过18年谈判正式加入世界贸易组织（WTO）
+  category: 经济
+  importance: 4
+  summary: 俄罗斯历经长达18年谈判正式成为WTO第156个成员，标志着全球主要经济体全部融入多边贸易体制。
+  confidence: 确定
+  tags: [经济, 贸易]
+  sources: [新华网, 维基百科]
+
+- id: w-senkaku-diaoyu-islands-201209
+  date: "2012-09-11"
+  title: 日本政府宣布“购买”钓鱼岛及其附属岛屿，中国展开坚决反制
+  category: 政治
+  importance: 5
+  summary: 日本签署“购岛”合同，中国政府公布钓鱼岛领海基线，派遣海监船常态化巡航，坚决捍卫领土主权。
+  confidence: 确定
+  tags: [外交, 军事, 历史转折]
+  sources: [新华网, 维基百科]
+
+- id: w-benghazi-attack-201209
+  date: "2012-09-11"
+  title: 美国驻利比亚班加西领事馆遇袭，大使史蒂文斯遇害
+  category: 战争
+  importance: 4
+  summary: 领事馆遭伊斯兰极端武装分子袭击，美国驻利比亚大使史蒂文斯及3名美军人员遇害，引发政坛震荡。
+  confidence: 确定
+  tags: [战争, 反恐, 美国]
+  sources: [维基百科, 新华网]
+
+- id: w-hurricane-sandy-201210
+  date: "2012-10-24"
+  title: 飓风“桑迪”横扫加勒比与美国东海岸
+  category: 灾害
+  importance: 4
+  summary: 大西洋飓风“桑迪”席卷美东，造成230多人死亡、纽约证交所停市、损失超700亿美元。
+  confidence: 确定
+  tags: [灾害, 飓风]
+  sources: [维基百科, 新华网]
+
+- id: w-obama-re-election-201211
+  date: "2012-11-06"
+  title: 奥巴马击败罗姆尼成功连任美国总统
+  category: 政治
+  importance: 4
+  summary: 2012年美国大选举行，民主党候选人奥巴马击败共和党候选人罗姆尼，成功连任第44任美国总统。
+  confidence: 确定
+  tags: [政治, 美国]
+  sources: [新华网, 维基百科]
+
+- id: w-palestine-un-observer-201211
+  date: "2012-11-29"
+  title: 联合国大会表决给予巴勒斯坦“观察员国”地位
+  category: 政治
+  importance: 4
+  summary: 联合国大会通过决议，正式给予巴勒斯坦联合国“非成员观察员国”地位，外交重大突破。
+  confidence: 确定
+  tags: [外交, 联合国]
+  sources: [联合国, 新华网]
+
+- id: w-maya-calendar-end-201212
+  date: "2012-12-21"
+  title: 玛雅历法“世界末日”传言破灭，《江南Style》突破10亿点击
+  category: 文化
+  importance: 4
+  summary: 玛雅历第13周期结束，“末日预言”和平度过；韩国歌手PSY《江南Style》MV成为YouTube首个突破10亿播放量视频。
+  confidence: 确定
+  tags: [文化, 互联网]
+  sources: [维基百科, 新华网]
+
 
