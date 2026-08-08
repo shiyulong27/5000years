@@ -2075,3 +2075,102 @@
   tags: [环境, 气候, 全球治理, 历史转折]
   sources: [联合国, 维基百科, 新华网]
 
+- id: w-kosovo-independence-200802
+  date: "2008-02-17"
+  title: 科索沃正式宣布从塞尔维亚独立，引发国际社会严重分歧
+  category: 政治
+  importance: 5
+  summary: 科索沃议会单方面宣布独立，获得美国及部分西方国家承认，但俄罗斯、中国及塞尔维亚等国拒绝承认，引发国际社会严重分歧与争议。
+  confidence: 确定
+  tags: [政治, 欧洲, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-tibet-beijing-olympic-relay-200804
+  date: "2008-04-07"
+  title: 北京奥运火炬巴黎传递受到蓄意干扰，中国民众强烈谴责
+  category: 政治
+  importance: 4
+  summary: 北京奥运会火炬在巴黎、伦敦等地传递期间遭到少数别有用心者的蓄意干扰，激起全球华人强烈愤慨，推动爱国主义情感广泛表达。
+  confidence: 确定
+  tags: [政治, 外交, 奥运]
+  sources: [维基百科, 新华网]
+
+- id: w-myanmar-cyclone-200805
+  date: "2008-05-02"
+  title: 热带气旋"纳尔吉斯"重创缅甸，造成逾13万人死亡失踪
+  category: 灾害
+  importance: 5
+  summary: 超强热带气旋"纳尔吉斯"登陆缅甸造成13万余人死亡或失踪，伊洛瓦底江三角洲几乎被夷平，为缅甸史上最惨烈自然灾害。
+  confidence: 确定
+  tags: [灾害, 东南亚]
+  sources: [维基百科, 新华网]
+
+- id: w-russia-georgia-war-200808
+  date: "2008-08-08"
+  title: 俄格战争爆发，俄罗斯军队进入南奥塞梯与格鲁吉亚交战
+  category: 战争
+  importance: 5
+  summary: 格鲁吉亚军队炮击南奥塞梯首府，俄军随即进入格鲁吉亚境内，五日内俄军推进至哥里，战争深刻冲击后苏联地区地缘格局。
+  confidence: 确定
+  tags: [战争, 俄罗斯, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-phelps-eight-gold-200808
+  date: "2008-08-16"
+  title: 美国游泳运动员迈克尔·菲尔普斯在北京奥运会夺得8枚金牌，创历史纪录
+  category: 文化
+  importance: 4
+  summary: 菲尔普斯在北京奥运会上斩获8枚游泳金牌，以单届奥运14金的历史纪录成为史上最成功的奥运运动员之一。
+  confidence: 确定
+  tags: [体育, 奥运]
+  sources: [维基百科, 新华网]
+
+- id: w-lehman-bankruptcy-200809
+  date: "2008-09-15"
+  title: 美国雷曼兄弟银行申请破产，全球金融危机全面爆发
+  category: 经济
+  importance: 5
+  summary: 美国第四大投资银行雷曼兄弟申请破产保护，引发全球股市狂泻、信贷市场冻结，2008年全球金融危机全面爆发，为1929年以来最严重经济危机。
+  confidence: 确定
+  tags: [经济, 金融, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-us-government-bailout-200810
+  date: "2008-10-03"
+  title: 美国国会通过7000亿美元金融救援计划（TARP），布什总统签署生效
+  category: 经济
+  importance: 5
+  summary: 美国国会参众两院通过史上最大规模金融救助法案，授权财政部动用7000亿美元购买问题资产，以阻止金融系统彻底崩溃。
+  confidence: 确定
+  tags: [经济, 金融, 美国, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-obama-wins-election-200811
+  date: "2008-11-04"
+  title: 民主党候选人巴拉克·奥巴马当选美国第44任总统，成为首位非裔总统
+  category: 政治
+  importance: 5
+  summary: 奥巴马在总统选举中以大比数击败共和党麦凯恩，成为美国历史上首位非裔总统，"变革"口号赢得全球广泛共鸣。
+  confidence: 确定
+  tags: [政治, 美国, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-g20-washington-summit-200811
+  date: "2008-11-15"
+  title: G20峰会首次在华盛顿举行，协调各国应对全球金融危机
+  category: 经济
+  importance: 5
+  summary: 二十国集团领导人首次峰会在华盛顿召开，就金融监管改革和协调行动应对危机达成共识，G20正式成为国际经济治理核心平台。
+  confidence: 确定
+  tags: [经济, 全球治理, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-mumbai-terrorist-attacks-200811
+  date: "2008-11-26"
+  title: 印度孟买发生连环恐怖袭击，造成逾160人遇难
+  category: 战争
+  importance: 5
+  summary: 武装分子对孟买泰姬陵酒店等多处目标发动连环恐怖袭击，持续约60小时，造成160余人死亡，成为震惊全球的重大恐袭事件。
+  confidence: 确定
+  tags: [战争, 反恐, 南亚, 历史转折]
+  sources: [维基百科, 新华网]

@@ -2036,3 +2036,92 @@
   tags: [民生, 社保, 农村, 历史转折]
   sources: [新华网]
 
+- id: cn-tibet-314-incident-200803
+  date: "2008-03-14"
+  title: 西藏拉萨发生打砸抢烧严重暴力犯罪事件，政府依法处置
+  category: 政治
+  importance: 5
+  summary: 拉萨发生严重打砸抢烧暴力犯罪事件，造成人员伤亡和财产损失，党和政府迅速依法处置，维护社会稳定与民族团结。
+  confidence: 确定
+  tags: [政治, 西藏, 社会稳定]
+  sources: [新华网]
+
+- id: cn-wenchuan-earthquake-200805
+  date: "2008-05-12"
+  title: 四川汶川发生8.0级特大地震，举国上下同心抗震救灾
+  category: 灾害
+  importance: 5
+  summary: 四川省汶川县发生里氏8.0级特大地震，造成约69227人遇难，全国军民投入史上最大规模救灾行动，彰显了社会主义制度的优越性。
+  confidence: 确定
+  tags: [灾害, 地震, 历史转折]
+  sources: [新华网]
+
+- id: cn-beijing-olympics-200808
+  date: "2008-08-08"
+  title: 第29届夏季奥林匹克运动会在北京隆重开幕，中国首次举办夏季奥运会
+  category: 文化
+  importance: 5
+  summary: 北京奥运会于8月8日晚8时开幕，中国代表团以51金21银28铜位列金牌榜首位，创造了中国参加奥运史上最佳成绩，向世界展示开放中国形象。
+  confidence: 确定
+  tags: [体育, 文化, 历史转折]
+  sources: [新华网, 国际奥委会]
+
+- id: cn-shenzhou7-spacewalk-200809
+  date: "2008-09-27"
+  title: 航天员翟志刚完成中国首次太空出舱行走，神舟七号载人任务圆满成功
+  category: 文化
+  importance: 5
+  summary: 神舟七号于9月25日发射，翟志刚于9月27日完成中国首次太空出舱活动，太空行走约19分35秒，使中国成为世界第三个独立掌握出舱技术的国家。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [国家航天局, 新华网]
+
+- id: cn-melamine-scandal-200809
+  date: "2008-09-11"
+  title: 三鹿奶粉三聚氰胺事件曝光，国家启动I级食品安全应急响应
+  category: 经济
+  importance: 5
+  summary: 三鹿奶粉被查出含三聚氰胺，导致数十万婴幼儿患病，国家启动I级应急响应并重组食品安全监管体系，事件推动食品安全立法重大变革。
+  confidence: 确定
+  tags: [民生, 食品安全, 社会]
+  sources: [新华网, 卫生部]
+
+- id: cn-beijing-olympics-medal-200808
+  date: "2008-08-24"
+  title: 北京奥运会圆满闭幕，中国代表团以51金位列金牌榜首，创历史最佳成绩
+  category: 文化
+  importance: 5
+  summary: 北京奥运会历时16天圆满落幕，中国代表团以51金21银28铜的佳绩位列金牌榜第一，实现了百年奥运梦想，展示了中华民族伟大复兴的强大力量。
+  confidence: 确定
+  tags: [体育, 文化, 历史转折]
+  sources: [新华网]
+
+- id: cn-cross-strait-three-links-200812
+  date: "2008-12-15"
+  title: 海峡两岸海运直航、空运直航、直接通邮全面实现，"大三通"时代正式来临
+  category: 政治
+  importance: 5
+  summary: 两岸"大三通"在12月15日全面实现，历经近30年终于完成两岸海运直航、空运直航及直接通邮，标志着两岸关系迈入历史新阶段。
+  confidence: 确定
+  tags: [政治, 两岸, 历史转折]
+  sources: [国台办, 新华网]
+
+- id: cn-reform-openning-30th-200812
+  date: "2008-12-18"
+  title: 纪念党的十一届三中全会召开30周年大会在北京隆重举行
+  category: 政治
+  importance: 5
+  summary: 改革开放30周年纪念大会在北京举行，胡锦涛发表重要讲话，回顾改革开放伟大历程，明确坚定不移继续推进改革开放的方向。
+  confidence: 确定
+  tags: [政治, 改革, 历史转折]
+  sources: [新华网]
+
+- id: cn-global-financial-crisis-response-2008
+  date: "2008-11-05"
+  title: 国务院公布扩大内需促进经济平稳较快增长十项措施（4万亿投资计划）
+  category: 经济
+  importance: 5
+  summary: 面对全球金融危机冲击，国务院公布4万亿元投资计划，涵盖基础设施、民生工程、节能减排等，有效抵御了金融危机冲击。
+  confidence: 确定
+  tags: [经济, 宏观, 金融危机, 历史转折]
+  sources: [新华网, 国务院]
