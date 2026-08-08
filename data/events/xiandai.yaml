@@ -816,4 +816,124 @@
   tags: [经济, 宏观]
   sources: [国家统计局, 新华网]
 
+- id: cn-beijing-olympics-202202
+  date: "2022-02-04"
+  title: 北京2022年冬奥会、冬残奥会成功举办，北京成为全球首个“双奥之城”
+  category: 文化
+  importance: 5
+  summary: 第24届冬奥会在北京开幕，中国克服疫情影响成功举办简约、安全、精彩的冬奥盛会，中国斩获9金4银2铜创历史最佳成绩，北京成为首个“双奥之城”。
+  confidence: 确定
+  tags: [体育, 文化, 历史转折]
+  sources: [新华网]
+
+- id: cn-fujian-carrier-launch-202206
+  date: "2022-06-17"
+  title: 中国首艘弹射型航空母舰“福建舰”下水
+  category: 政治
+  importance: 5
+  summary: 中国第三艘航空母舰下水命名仪式举行，命名为“中国人民解放军海军福建舰”，是中国首艘完全自主设计建造的弹射型航母。
+  confidence: 确定
+  tags: [军事, 科技, 历史转折]
+  sources: [新华网]
+
+- id: cn-hk-25th-anniversary-202207
+  date: "2022-07-01"
+  title: 庆祝香港回归祖国25周年
+  category: 政治
+  importance: 5
+  summary: 庆祝香港回归祖国25周年大会暨香港特别行政区第六届政府就职典礼在香港隆重举行，强调“一国两制”是经过实践反复检验的好制度。
+  confidence: 确定
+  tags: [政治, 香港, 历史转折]
+  sources: [新华网]
+
+- id: cn-wentian-lab-launch-202207
+  date: "2022-07-24"
+  title: 空间站问天实验舱成功发射
+  category: 文化
+  importance: 4
+  summary: 长征五号B遥三运载火箭成功将中国空间站问天实验舱送入预定轨道，问天实验舱是中国空间站首个科学实验舱。
+  confidence: 确定
+  tags: [航天, 科技]
+  sources: [新华网, 国家航天局]
+
+- id: cn-taiwan-countermeasures-202208
+  date: "2022-08-02"
+  title: 针对佩洛西窜访台湾，东部战区组织环台岛联合军事行动
+  category: 政治
+  importance: 5
+  summary: 美众议长佩洛西窜访中国台湾地区，中国人民解放军东部战区在台岛周边开展一系列联合军事行动，坚决反制“台独”与外部干涉。
+  confidence: 确定
+  tags: [军事, 外交, 历史转折]
+  sources: [新华网]
+
+- id: cn-20th-cpc-congress-202210
+  date: "2022-10-16"
+  title: 中国共产党第二十次全国代表大会胜利召开
+  category: 政治
+  importance: 5
+  summary: 中共二十大在北京胜利召开，提出以中国式现代化全面推进中华民族伟大复兴，开启全面建设社会主义现代化国家新征程。
+  confidence: 确定
+  tags: [政治, 改革, 历史转折]
+  sources: [新华网]
+
+- id: cn-mengtian-lab-launch-202210
+  date: "2022-10-31"
+  title: 空间站梦天实验舱成功发射
+  category: 文化
+  importance: 4
+  summary: 空间站梦天实验舱成功发射并与天和核心舱完成精准对接，标志着中国空间站三舱“T”字基本构型组装完成。
+  confidence: 确定
+  tags: [航天, 科技]
+  sources: [新华网, 国家航天局]
+
+- id: cn-g20-bali-summit-202211
+  date: "2022-11-14"
+  title: 中元首出席G20巴厘岛峰会并举行中美元首会晤
+  category: 政治
+  importance: 4
+  summary: 国家主席出席G20巴厘岛峰会，与美国总统拜登举行面对面会晤，确立“巴厘岛共识”，为中美关系指明方向。
+  confidence: 确定
+  tags: [外交, 政治]
+  sources: [新华网]
+
+- id: cn-jiang-zemin-pass-202211
+  date: "2022-11-30"
+  title: 沉痛悼念江泽民同志
+  category: 政治
+  importance: 5
+  summary: 我党我军我国各族人民公认的享有崇高威望的卓越领导人江泽民同志因病在北京逝世，享年96岁，全党全军全国各族人民深切悼念。
+  confidence: 确定
+  tags: [政治, 历史转折]
+  sources: [新华网]
+
+- id: cn-covid-new-10-rules-202212
+  date: "2022-12-07"
+  title: 国务院联防联控机制发布“新十条”，优化调整疫情防控措施
+  category: 灾害
+  importance: 5
+  summary: 国务院联防联控机制发布关于进一步优化落实疫情防控措施的通知（“新十条”），因时因势调整优化防控策略，平稳进入新阶段。
+  confidence: 确定
+  tags: [民生, 卫生, 历史转折]
+  sources: [新华网]
+
+- id: cn-cop15-montreal-framework-202212
+  date: "2022-12-19"
+  title: 中国作为主席国推动联合国生物多样性大会达成历史性“昆蒙框架”
+  category: 文化
+  importance: 4
+  summary: 联合国生物多样性大会（COP15）在蒙特利尔闭幕，中国作为主席国推动通过“昆明-蒙特利尔全球生物多样性框架”。
+  confidence: 确定
+  tags: [环境, 外交]
+  sources: [新华网, 联合国]
+
+- id: cn-space-station-complete-202212
+  date: "2022-12-31"
+  title: 中国空间站全面建成，完成神舟十五号与十四号太空会师
+  category: 文化
+  importance: 5
+  summary: 随着神舟十五号与神舟十四号乘组实现首次“太空会师”，中国空间站全面建成并转入常态化运营模式。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [新华网, 国家航天局]
+
 

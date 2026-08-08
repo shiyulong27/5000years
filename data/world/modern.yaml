@@ -845,4 +845,124 @@
   tags: [军事, 外交]
   sources: [新华网, 维基百科]
 
+- id: w-rcep-enforcement-202201
+  date: "2022-01-01"
+  title: 《区域全面经济伙伴关系协定》（RCEP）正式生效
+  category: 经济
+  importance: 4
+  summary: RCEP对中国、日本、新西兰、澳大利亚等10国正式生效，标记着全球最大自由贸易区正式落地运行。
+  confidence: 确定
+  tags: [经济, 贸易]
+  sources: [新华网]
+
+- id: w-tonga-volcano-eruption-202201
+  date: "2022-01-15"
+  title: 汤加海底火山猛烈喷发并引发海啸
+  category: 灾害
+  importance: 4
+  summary: 汤加火山发生百年来最猛烈喷发，火山灰柱高达数十公里并引发太平洋全域海啸，破坏力罕见。
+  confidence: 确定
+  tags: [灾害, 火山]
+  sources: [新华网, 维基百科]
+
+- id: w-russia-ukraine-war-202202
+  date: "2022-02-24"
+  title: 俄乌冲突全面爆发
+  category: 战争
+  importance: 5
+  summary: 俄罗斯宣布发起特别军事行动，俄军进入乌克兰，俄乌冲突全面爆发，欧洲地缘政治深刻重塑。
+  confidence: 确定
+  tags: [战争, 俄乌, 历史转折]
+  sources: [新华网, 维基百科]
+
+- id: w-fed-rate-hikes-202203
+  date: "2022-03-16"
+  title: 美联储开启暴力加息周期，全球金融市场剧烈动荡
+  category: 经济
+  importance: 4
+  summary: 美联储开启2004年以来最剧烈的货币紧缩周期，年内连续4次加息75基点，引发全球资本回流。
+  confidence: 确定
+  tags: [经济, 金融]
+  sources: [新华网, 维基百科]
+
+- id: w-shinzo-abe-assassinated-202207
+  date: "2022-07-08"
+  title: 日本前首相安倍晋三遇刺身亡
+  category: 政治
+  importance: 5
+  summary: 日本前首相安倍晋三在奈良市街头演说时遭枪击身亡，引发对日本政坛与社会治安巨大冲击。
+  confidence: 确定
+  tags: [政治, 日本, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-queen-elizabeth-pass-202209
+  date: "2022-09-08"
+  title: 英国女王伊丽莎白二世逝世，查尔斯三世即位
+  category: 政治
+  importance: 5
+  summary: 执政70年的英国女王伊丽莎白二世逝世，其子查尔斯三世即位，英联邦历史性转折。
+  confidence: 确定
+  tags: [政治, 英国, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-nord-stream-sabotage-202209
+  date: "2022-09-26"
+  title: “北溪”天然气管道发生爆炸泄漏
+  category: 战争
+  importance: 4
+  summary: 连接俄罗斯与德国的“北溪-1”和“北溪-2”天然气管道发生剧烈爆炸泄漏，被确认系人为破坏。
+  confidence: 确定
+  tags: [战争, 能源]
+  sources: [维基百科, 新华网]
+
+- id: w-lula-election-brazil-202210
+  date: "2022-10-30"
+  title: 卢拉赢得巴西总统大选，拉美“左翼回潮”
+  category: 政治
+  importance: 4
+  summary: 巴西举行总统选举，前总统卢拉击败博索纳罗再次当选巴西总统，标志着拉丁美洲政治左翼回潮。
+  confidence: 确定
+  tags: [政治, 拉美]
+  sources: [新华网, 维基百科]
+
+- id: w-qatar-world-cup-202211
+  date: "2022-11-20"
+  title: 2022年卡塔尔世界杯开幕，阿根廷队夺冠
+  category: 文化
+  importance: 4
+  summary: 第22届世界杯足球赛在卡塔尔开幕，梅西领衔的阿根廷队在决赛中战胜法国队斩获冠军。
+  confidence: 确定
+  tags: [体育, 文化]
+  sources: [新华网, 维基百科]
+
+- id: w-chatgpt-release-202211
+  date: "2022-11-30"
+  title: OpenAI 发布 ChatGPT，生成式 AI 革命打响
+  category: 文化
+  importance: 5
+  summary: OpenAI正式推出对话式模型ChatGPT，2个月月活突破1亿，拉开生成式AI科技革命序幕。
+  confidence: 确定
+  tags: [科技, AI, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-china-arab-summit-202212
+  date: "2022-12-09"
+  title: 首届中国-阿拉伯国家峰会在利雅得举行
+  category: 政治
+  importance: 4
+  summary: 首届中国-阿拉伯国家峰会与首届中国-海湾阿拉伯国家合作委员会峰会在利雅得举行，开创中阿关系新时代。
+  confidence: 确定
+  tags: [外交, 中东]
+  sources: [新华网]
+
+- id: w-global-inflation-202212
+  date: "2022-12-31"
+  title: 全球陷入40年来最严重通货膨胀与能源危机
+  category: 经济
+  importance: 4
+  summary: 受俄乌冲突与供应链危机影响，全球多国经历40年来最高通胀与能源价格飙升。
+  confidence: 确定
+  tags: [经济, 金融]
+  sources: [IMF, 联合国, 新华网]
+
 
