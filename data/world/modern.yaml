@@ -1275,4 +1275,104 @@
   tags: [文化, 互联网]
   sources: [维基百科, 新华网]
 
+- id: w-chelyabinsk-meteor-201302
+  date: "2013-02-15"
+  title: 俄罗斯车里雅宾斯克发生陨石坠落爆炸事件
+  category: 灾害
+  importance: 4
+  summary: 一颗小行星在大气层中于车里雅宾斯克上空爆炸，释放出相当于近30枚广岛原子弹能量致1500人伤。
+  confidence: 确定
+  tags: [灾害, 天文]
+  sources: [维基百科, 新华网]
+
+- id: w-pope-benedict-resignation-201302
+  date: "2013-02-28"
+  title: 教皇本笃十六世辞职，方济各当选新任教皇
+  category: 文化
+  importance: 4
+  summary: 教皇本笃十六世成为600年来首位主动辞职教皇；方济各当选新任教皇，也是首位来自拉美与非欧洲教皇。
+  confidence: 确定
+  tags: [文化, 宗教]
+  sources: [维基百科, 新华网]
+
+- id: w-boston-marathon-bombing-201304
+  date: "2013-04-15"
+  title: 美国波士顿马拉松爆炸案发生
+  category: 战争
+  importance: 4
+  summary: 波士顿马拉松终点线附近发生恐怖连环爆炸造成3死260多伤，美警方全城戒严搜捕。
+  confidence: 确定
+  tags: [战争, 反恐, 美国]
+  sources: [维基百科, 新华网]
+
+- id: w-prism-snowden-leak-201306
+  date: "2013-06-05"
+  title: 斯诺登曝光美国“棱镜门”监听项目（PRISM），引发全球网络安全风暴
+  category: 政治
+  importance: 5
+  summary: 斯诺登曝光绝密文件证实美国安局长期秘密实施“棱镜”项目监控全球网络与多国领导人。
+  confidence: 确定
+  tags: [政治, 网络安全, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-egypt-morsi-ousted-201307
+  date: "2013-07-03"
+  title: 埃及军方解职总统穆尔西，塞西接管政权
+  category: 政治
+  importance: 4
+  summary: 埃及国防部长塞西解除民选总统穆尔西职务，终止宪法，穆斯林兄弟会执政结束，政局再剧变。
+  confidence: 确定
+  tags: [政治, 中东]
+  sources: [维基百科, 新华网]
+
+- id: w-syria-chemical-attack-201308
+  date: "2013-08-21"
+  title: 叙利亚大马士革郊区发生严重化学武器袭击
+  category: 战争
+  importance: 4
+  summary: 大马士革东古塔地区遭沙林毒气袭击造成数百平民死亡，后经中俄与国际斡旋达成化武销毁协议。
+  confidence: 确定
+  tags: [战争, 中东]
+  sources: [维基百科, 新华网]
+
+- id: w-typhoon-haiyan-201311
+  date: "2013-11-08"
+  title: 超强台风“海燕”重创菲律宾
+  category: 灾害
+  importance: 4
+  summary: 五级风暴“海燕”在菲律宾登陆，持续风速达每小时315公里，造成6300多人死亡，重创独鲁万。
+  confidence: 确定
+  tags: [灾害, 台风]
+  sources: [维基百科, 新华网]
+
+- id: w-ukraine-euromaidan-201311
+  date: "2013-11-21"
+  title: 乌克兰“广场革命”（Euromaidan）抗议爆发
+  category: 政治
+  importance: 5
+  summary: 乌克兰总统暂停与欧盟签署联系国协定，基辅独立广场爆发亲欧派大规模抗议与冲突，开启乌克兰剧变。
+  confidence: 确定
+  tags: [政治, 乌克兰, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-nelson-mandela-pass-201312
+  date: "2013-12-05"
+  title: 纳尔逊·曼德拉逝世，享年95岁
+  category: 政治
+  importance: 5
+  summary: 南非首位黑人总统、反种族隔离斗士曼德拉逝世，近百位国家元首出席国葬，全球悼念。
+  confidence: 确定
+  tags: [政治, 人权, 人物, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-wto-bali-package-201312
+  date: "2013-12-07"
+  title: 世贸组织达成《巴厘一揽子协定》，多哈回合谈判取得历史性突破
+  category: 经济
+  importance: 4
+  summary: WTO会议通过《巴厘一揽子协定》，这是世贸组织成立18年来达成的首个多边贸易协定。
+  confidence: 确定
+  tags: [经济, 贸易]
+  sources: [新华网, 维基百科]
+
 

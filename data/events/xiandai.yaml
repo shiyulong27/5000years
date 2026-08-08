@@ -1236,4 +1236,104 @@
   tags: [经济, 交通]
   sources: [新华网]
 
+- id: cn-xijinping-president-201303
+  date: "2013-03-14"
+  title: 十二届全国人大一次会议选举习近平为国家主席、中央军委主席
+  category: 政治
+  importance: 5
+  summary: 十二届全国人大一次会议在北京举行，选举习近平为国家主席、中央军委主席，国家机构换届顺利完成。
+  confidence: 确定
+  tags: [政治, 历史转折]
+  sources: [新华网]
+
+- id: cn-shenzhou10-space-lecture-201306
+  date: "2013-06-11"
+  title: 神舟十号成功发射，王亚平进行中国首次太空授课
+  category: 文化
+  importance: 5
+  summary: 神舟十号成功发射，航天员聂海胜、张晓光、王亚平进驻天宫一号，王亚平成功进行中国首次太空授课。
+  confidence: 确定
+  tags: [航天, 教育, 科技, 历史转折]
+  sources: [新华网, 国家航天局]
+
+- id: cn-belt-and-road-initiation-201309
+  date: "2013-09-07"
+  title: 国家主席首次提出共建“一带一路”倡议
+  category: 政治
+  importance: 5
+  summary: 国家主席在哈萨克斯坦和印尼先后提出共建“丝绸之路经济带”和“21世纪海上丝绸之路”，合称“一带一路”倡议。
+  confidence: 确定
+  tags: [外交, 经济, 一带一路, 历史转折]
+  sources: [新华网]
+
+- id: cn-shanghai-ftz-open-201309
+  date: "2013-09-29"
+  title: 中国首个自由贸易试验区——中国（上海）自由贸易试验区挂牌成立
+  category: 经济
+  importance: 5
+  summary: 中国（上海）自由贸易试验区挂牌成立，探索负面清单管理与金融创新，拉开新一轮高水平开放序幕。
+  confidence: 确定
+  tags: [经济, 改革, 历史转折]
+  sources: [新华网]
+
+- id: cn-targeted-poverty-alleviation-201311
+  date: "2013-11-03"
+  title: 国家主席在湖南十八洞村首次提出“精准扶贫”理念
+  category: 政治
+  importance: 5
+  summary: 国家主席考察湖南湘西十八洞村，首次提出“精准扶贫”重要理念，为新时代打赢脱贫攻坚战指明方向。
+  confidence: 确定
+  tags: [民生, 扶贫, 历史转折]
+  sources: [新华网]
+
+- id: cn-third-plenum-18th-201311
+  date: "2013-11-12"
+  title: 党的十八届三中全会通过全面深化改革决定，设立国家安全委员会
+  category: 政治
+  importance: 5
+  summary: 中共十八届三中全会在北京举行，审议通过《中共中央关于全面深化改革若干重大问题的决定》，决定设立国家安全委员会。
+  confidence: 确定
+  tags: [政治, 改革, 历史转折]
+  sources: [新华网]
+
+- id: cn-east-china-sea-adiz-201311
+  date: "2013-11-23"
+  title: 中国政府宣布划设东海防空识别区
+  category: 政治
+  importance: 4
+  summary: 国防部发表声明宣布划设东海防空识别区并发布识别规则，坚决维护国家领空安全和主权。
+  confidence: 确定
+  tags: [军事, 外交]
+  sources: [新华网]
+
+- id: cn-change3-yutu-landing-201312
+  date: "2013-12-14"
+  title: 嫦娥三号成功软着陆月球，玉兔号月球车驶上月球表面
+  category: 文化
+  importance: 5
+  summary: 嫦娥三号软着陆于月球虹湾，“玉兔号”月球车驶上月表开展巡视，中国成为第三个实现月球软着陆的国家。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [新华网, 国家航天局]
+
+- id: cn-reeducation-through-labor-abolition-201312
+  date: "2013-12-28"
+  title: 全国人大常委会决定废止劳动教养制度
+  category: 政治
+  importance: 4
+  summary: 十二届全国人大常委会第六次会议表决通过决定，正式废止运行半个多世纪的劳动教养制度。
+  confidence: 确定
+  tags: [法律, 人权]
+  sources: [新华网]
+
+- id: cn-gdp-59trillion-201312
+  date: "2013-12-31"
+  title: 全年GDP突破59万亿元，经济稳中向好
+  category: 经济
+  importance: 4
+  summary: 2013年中国国内生产总值达59.3万亿元，同比增长7.7%，进出口总额突破4万亿美元跃居全球第一大货物贸易国。
+  confidence: 确定
+  tags: [经济, 宏观, 贸易]
+  sources: [国家统计局, 新华网]
+
 
