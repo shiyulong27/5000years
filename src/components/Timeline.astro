@@ -9,7 +9,6 @@ import YearSummaryCard from './YearSummaryCard.astro'
 const { rows, bands, figureBands = [], columns } = Astro.props
 
 // 列构成：[文明 × N][世界事件][中轴][人物 × M][中国事件]
-// N、M 与各列位置来自 timeline.js，组件不自行计算。
 const civCount = columns.total
 const figCount = columns.figureLanes ?? 0
 
@@ -18,6 +17,7 @@ const colAxis = civCount + 2
 const colFigStart = civCount + 3
 const colChina = civCount + 3 + figCount
 const colTotal = colChina
+const summaryYears = [2023, 2024, 2025, 2026]
 ---
 
 <div
@@ -47,7 +47,19 @@ const colTotal = colChina
     ) : (
       <>
         <div class="cell cell-world" style={`grid-row:${row.gridRow};grid-column:${colWorld}`}>
-          {[2025, 2026].includes(row.year) ? null : row.worldEvents.map((e) => <EventCard event={e} />)}
+          {summaryYears.includes(row.year) ? (
+            <div
+              class="world-detail-wrapper"
+              data-year={row.year}
+              style={row.year !== 2023 ? 'display: none;' : ''}
+            >
+              {row.worldEvents.map((e) => (
+                <EventCard event={e} />
+              ))}
+            </div>
+          ) : (
+            row.worldEvents.map((e) => <EventCard event={e} />)
+          )}
         </div>
 
         <div class="cell cell-axis" style={`grid-row:${row.gridRow};grid-column:${colAxis}`}>
@@ -60,16 +72,31 @@ const colTotal = colChina
           data-year={row.year}
           data-dynasty={row.dynasties.map((d) => d.id).join(' ')}
         >
-          {[2025, 2026].includes(row.year) ? (
-            <YearSummaryCard year={row.year} />
+          {summaryYears.includes(row.year) ? (
+            <>
+              <div
+                class="year-summary-wrapper"
+                data-year={row.year}
+                style={row.year === 2023 ? 'display: none;' : ''}
+              >
+                <YearSummaryCard year={row.year} />
+              </div>
+
+              <div
+                class="year-detail-wrapper"
+                data-year={row.year}
+                style={row.year !== 2023 ? 'display: none;' : ''}
+              >
+                {row.cnEvents.map((e) => (
+                  <EventCard event={e} />
+                ))}
+              </div>
+            </>
           ) : (
             row.cnEvents.map((e) => <EventCard event={e} />)
           )}
         </div>
-
       </>
     )
   )}
 </div>
-
-

@@ -5,10 +5,33 @@ const { row } = Astro.props
 const { year, dynasties, rulers } = row
 
 const label = year < 0 ? `前${Math.abs(year)}` : String(year)
+const base = import.meta.env.BASE_URL
+const hasSummary = [2023, 2024, 2025, 2026].includes(year)
+// 2023、2024 默认展开 (detail)，2025/2026 默认概览 (summary)
+const defaultMode = [2023, 2024].includes(year) ? 'detail' : (hasSummary ? 'summary' : 'detail')
 ---
 
-<div class="axis-cell">
-  <span class="axis-year">{label}</span>
+<div class="axis-cell" data-year={year}>
+  {hasSummary ? (
+    <div class="axis-year-group">
+      <a href={`${base}${year}/`} class="axis-year-link" title={`点击进入 ${label} 年独立专页`}>
+        <span class="axis-year clickable-year">{label}</span>
+      </a>
+
+      <button
+        type="button"
+        class="axis-toggle-btn"
+        data-year={year}
+        data-mode={defaultMode}
+        title="点击切换：[概览] 方框卡片 与 [详情] 多条展开"
+      >
+        <span class="toggle-text">{defaultMode === 'summary' ? '概览' : '详情'}</span>
+        <span class="toggle-icon">⇄</span>
+      </button>
+    </div>
+  ) : (
+    <span class="axis-year">{label}</span>
+  )}
 
   {/* 分裂期同年多政权，色带并排显示 */}
   <div class="axis-bands">

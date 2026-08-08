@@ -7,6 +7,10 @@ const uncertain = event.confidence && event.confidence !== '确定'
 // 属性 1：标签（Tag）—— 精确描述事件属性（如 航天、科技、政治、经济、外交、军事、体育 等）
 const preferredTags = ['航天', '科技', 'AI', '深潜', '科考', '外交', '军事', '芯片', '电影', '体育', '法律', '改革', '民生', '教育', '关税', '贸易', '金融', '俄乌', '中东']
 const tag = event.tags?.find((t) => preferredTags.includes(t)) || event.tags?.[0] || event.category
+
+// 属性 2：重要度等级（1-5 级），对应黄色 ⭐ 数量
+const importance = Number(event.importance) || 3
+const stars = '⭐'.repeat(Math.min(5, Math.max(1, importance)))
 ---
 
 <article
@@ -21,7 +25,7 @@ const tag = event.tags?.find((t) => preferredTags.includes(t)) || event.tags?.[0
     {/* 属性 1：标签 */}
     <span class="event-cat">{tag}</span>
 
-    {/* 属性 2：重要性等级（5级重大转折事件挂 👑 徽章，其余由卡片边框权重展现） */}
+    {/* 属性 2：重大转折徽章 */}
     {event.importance >= 5 && (
       <span class="event-badge badge-major" title="历史巨变与重大转折">
         👑 历史转折
@@ -29,6 +33,11 @@ const tag = event.tags?.find((t) => preferredTags.includes(t)) || event.tags?.[0
     )}
 
     {uncertain && <span class="event-flag" title={`此条${event.confidence}`}>{event.confidence}</span>}
+
+    {/* 属性 3：黄色 ⭐ 重要度等级标识 */}
+    <span class="event-importance-stars" title={`重要度等级: ${importance}级 (${stars})`}>
+      {stars}
+    </span>
   </header>
 
 

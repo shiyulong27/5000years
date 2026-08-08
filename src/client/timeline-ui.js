@@ -135,6 +135,75 @@ if (timeline) {
   catToggles.forEach((t) => t.addEventListener('change', apply))
   apply()
 
+  // 概览 / 详情模式动态切换控制 (支持 2023, 2024, 2025, 2026 等年份)
+  const toggleBtns = [...document.querySelectorAll('.axis-toggle-btn')]
+  const btnGlobalDetail = document.getElementById('btn-view-detail')
+  const btnGlobalSummary = document.getElementById('btn-view-summary')
+
+  // 辅助函数：切换单一年份的模式
+  function setYearViewMode(year, mode) {
+    const btn = toggleBtns.find((b) => b.dataset.year === String(year))
+    if (btn) {
+      btn.dataset.mode = mode
+      const toggleText = btn.querySelector('.toggle-text')
+      if (toggleText) toggleText.textContent = mode === 'summary' ? '概览' : '详情'
+    }
+
+    const summaryWrapper = timeline.querySelector(`.year-summary-wrapper[data-year="${year}"]`)
+    const chinaDetailWrapper = timeline.querySelector(`.cell-china .year-detail-wrapper[data-year="${year}"]`)
+    const worldDetailWrapper = timeline.querySelector(`.cell-world .world-detail-wrapper[data-year="${year}"]`)
+
+    if (mode === 'summary') {
+      if (summaryWrapper) summaryWrapper.style.display = 'block'
+      if (chinaDetailWrapper) chinaDetailWrapper.style.display = 'none'
+      if (worldDetailWrapper) worldDetailWrapper.style.display = 'none'
+    } else {
+      if (summaryWrapper) summaryWrapper.style.display = 'none'
+      if (chinaDetailWrapper) chinaDetailWrapper.style.display = 'block'
+      if (worldDetailWrapper) worldDetailWrapper.style.display = 'block'
+    }
+  }
+
+  // 检查并同步顶栏全局按钮高亮
+  function syncGlobalButtons() {
+    if (!btnGlobalDetail || !btnGlobalSummary) return
+    const modes = toggleBtns.map((b) => b.dataset.mode)
+    const allSummary = modes.length > 0 && modes.every((m) => m === 'summary')
+    const allDetail = modes.length > 0 && modes.every((m) => m === 'detail')
+
+    btnGlobalDetail.classList.toggle('active', allDetail)
+    btnGlobalSummary.classList.toggle('active', allSummary)
+  }
+
+  // 1. 全局一键控制 [全展开] 或 [概览卡片]
+  btnGlobalDetail?.addEventListener('click', () => {
+    toggleBtns.forEach((b) => setYearViewMode(b.dataset.year, 'detail'))
+    syncGlobalButtons()
+    apply()
+  })
+
+  btnGlobalSummary?.addEventListener('click', () => {
+    toggleBtns.forEach((b) => setYearViewMode(b.dataset.year, 'summary'))
+    syncGlobalButtons()
+    apply()
+  })
+
+  // 2. 单年份中轴按钮自由覆盖切换
+  toggleBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault()
+      e.stopPropagation()
+
+      const year = btn.dataset.year
+      const currentMode = btn.dataset.mode
+      const newMode = currentMode === 'summary' ? 'detail' : 'summary'
+
+      setYearViewMode(year, newMode)
+      syncGlobalButtons()
+      apply()
+    })
+  })
+
 
 
   // 朝代跳转

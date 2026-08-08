@@ -267,6 +267,15 @@
   confidence: 确定
   tags: [航天, 应急]
 
+- id: cn-lunar-program-202602
+  date: "2026-02-11"
+  title: 长征十号低空演示与梦舟载人飞船逃逸试验，载人登月关键节点
+  category: 文化
+  importance: 4
+  summary: 文昌航天发射场完成长征十号运载火箭低空演示验证与梦舟载人飞船最大动压逃逸飞行试验，为中国载人登月计划的关键节点。
+  confidence: 确定
+  tags: [航天, 科技]
+
 - id: cn-spring-festival-202602
   date: "2026-02-17"
   title: 丙午马年春节，消费与文旅再创新高
@@ -275,6 +284,15 @@
   summary: 2026丙午马年春节假期全国出游人次与消费总额再创历史新高，免签范围扩大推动入境游蓬勃发展。
   confidence: 确定
   tags: [民俗, 经济]
+
+- id: cn-6g-record-202602
+  date: "2026-02-18"
+  title: 我国6G通信技术刷新世界纪录
+  category: 文化
+  importance: 4
+  summary: 中国科研团队公布光纤与无线融合通信研究成果，称创造三项世界纪录，6G传输速率刷新世界纪录，相关论文发表于《自然》。
+  confidence: 确定
+  tags: [科技, 通信]
 
 - id: cn-two-sessions-202603
   date: "2026-03-05"
@@ -285,6 +303,42 @@
   confidence: 确定
   tags: [政治, 十五五, 历史转折]
 
+- id: cn-trump-visit-202605
+  date: "2026-05-13"
+  title: 特朗普访华，举行第六次“习特会”
+  category: 政治
+  importance: 4
+  summary: 美国总统特朗普访华并与习近平举行会谈，为继2025年10月韩国釜山会晤后的第六次“习特会”。
+  confidence: 确定
+  tags: [外交, 政治]
+
+- id: cn-tianwen2-asteroid-202607
+  date: "2026-07-06"
+  title: 天问二号抵达近地小行星“振荡天星”开展探测
+  category: 文化
+  importance: 4
+  summary: 中国天问二号探测器抵达近地小行星“振荡天星”附近，开始近距离科学探测，为行星探测任务重要节点。
+  confidence: 确定
+  tags: [航天, 科技]
+
+- id: cn-cz10b-recovery-202607
+  date: "2026-07-10"
+  title: 长征十号乙运载火箭一级受控回收成功
+  category: 文化
+  importance: 4
+  summary: 长征十号乙运载火箭从海南商业航天发射场升空，并完成一级火箭受控回收，被视为国内可重复使用重型火箭的关键突破。
+  confidence: 确定
+  tags: [航天, 科技]
+
+- id: cn-fields-medal-202607
+  date: "2026-07-23"
+  title: 中国籍数学家首次获得菲尔兹奖
+  category: 文化
+  importance: 4
+  summary: 邓煜、王虹获得2026年菲尔兹奖，为首次获此殊荣的中国籍数学家，王虹并为该奖历史上第三位女性得主。
+  confidence: 确定
+  tags: [科技, 数学]
+
 - id: cn-army-day-202608
   date: "2026-08-01"
   title: 庆祝建军99周年，新型国防科技成果集中发布
@@ -293,5 +347,233 @@
   summary: 中国人民解放军建军99周年之际，我国自研新型无人作战系统与新概念防空装备集中公布。
   confidence: 确定
   tags: [军事, 科技]
+
+- id: cn-two-sessions-202303
+  date: "2023-03"
+  title: 全国两会部署落实党的二十大部署与全年目标任务
+  category: 政治
+  importance: 4
+  summary: 十四届全国人大一次会议与全国政协十四届一次会议在北京召开，贯彻党的二十大精神，确定2023年经济社会发展目标任务，选举产生新一届国家机构领导人员。
+  confidence: 确定
+  tags: [政治, 两会]
+
+- id: cn-institution-reform-202303
+  date: "2023-03-16"
+  title: 党和国家机构改革启动实施
+  category: 政治
+  importance: 4
+  summary: 中共中央、国务院印发《党和国家机构改革方案》，组建中央金融委员会、中央科技委员会等部门，深化重点领域机构职能改革。
+  confidence: 确定
+  tags: [政治, 改革]
+
+- id: cn-thematic-education-202304
+  date: "2023-04"
+  title: 学习贯彻党的二十大精神主题教育开展
+  category: 政治
+  importance: 3
+  summary: 中共中央部署在全党开展学习贯彻党的二十大精神的主题教育活动，以县处级以上领导干部为重点分两批开展。
+  confidence: 确定
+  tags: [政治, 党建]
+
+- id: cn-saudi-iran-202303
+  date: "2023-03-10"
+  title: 中国促成沙特伊朗复交
+  category: 政治
+  importance: 5
+  summary: 经北京对话斡旋，沙特阿拉伯与伊朗在北京签署联合声明宣布恢复外交关系，被视为中东和解潮的转折点，凸显中国斡旋区域冲突的外交影响力。
+  confidence: 确定
+  tags: [外交, 中东]
+
+- id: cn-c919-202305
+  date: "2023-05-28"
+  title: C919国产大飞机商业首航
+  category: 文化
+  importance: 4
+  summary: 全球首架国产大飞机C919执飞上海虹桥—北京首都航线，圆满完成首次商业载客飞行，中国民航自此进入自主研制干线客机时代。
+  confidence: 确定
+  tags: [航空, 科技]
+
+- id: cn-casia-summit-202305
+  date: "2023-05-18"
+  title: 中国—中亚峰会西安举行
+  category: 政治
+  importance: 4
+  summary: 首届中国—中亚峰会在西安举行，六国元首共同签署《中国—中亚峰会西安宣言》，构建更加紧密的中国—中亚命运共同体。
+  confidence: 确定
+  tags: [外交, 中亚]
+
+- id: cn-games-2023
+  date: "2023-07-28"
+  title: 成都大运会与杭州亚运会先后举办
+  category: 文化
+  importance: 3
+  summary: 第31届世界大学生夏季运动会在成都、第19届亚运会在杭州相继成功举办，向世界展示中国城市活力与体育实力。
+  confidence: 确定
+  tags: [体育]
+
+- id: cn-xi-culture-thought-202310
+  date: "2023-10-07"
+  title: 明确提出习近平文化思想
+  category: 政治
+  importance: 4
+  summary: 全国宣传思想文化工作会议首次提出并系统阐述习近平文化思想，为新时代文化建设提供根本遵循。
+  confidence: 确定
+  tags: [政治, 文化]
+
+- id: cn-belt-road-forum-202310
+  date: "2023-10-18"
+  title: 第三届“一带一路”国际合作高峰论坛举行
+  category: 政治
+  importance: 4
+  summary: 第三届“一带一路”国际合作高峰论坛在北京举行，150多个国家、40多位外国领导人与会，宣布中国支持高质量共建“一带一路”的八项行动。
+  confidence: 确定
+  tags: [外交, 一带一路]
+
+- id: cn-financial-meeting-202310
+  date: "2023-10-30"
+  title: 中央金融工作会议首提建设金融强国
+  category: 政治
+  importance: 4
+  summary: 中央金融工作会议在北京举行，首次提出“加快建设金融强国”目标，部署全面加强金融监管、防范化解金融风险。
+  confidence: 确定
+  tags: [经济, 金融]
+
+- id: cn-jishishan-quake-202312
+  date: "2023-12-18"
+  title: 甘肃积石山6.2级地震，国家紧急救援
+  category: 灾害
+  importance: 4
+  summary: 甘肃临夏州积石山县发生6.2级地震，造成重大人员伤亡与房屋损毁，国家主席对抗震救灾作出重要指示，各方力量全力抢险救援。
+  confidence: 确定
+  tags: [灾害, 抗震]
+
+- id: cn-economy-2023
+  date: "2023-12"
+  title: 全年经济回升向好，GDP增长5.2%
+  category: 经济
+  importance: 4
+  summary: 2023年全年国内生产总值超过126万亿元，按不变价格计算比上年增长5.2%，经济总体回升向好、高质量发展扎实推进。
+  confidence: 确定
+  tags: [经济, 宏观]
+
+- id: cn-taiwan-election-202401
+  date: "2024-01-13"
+  title: 2024年台湾地区领导人与立法机构选举举行
+  category: 政治
+  importance: 4
+  summary: 赖清德当选台湾地区领导人，民进党丧失立法机构多数席位，两岸关系与台海局势保持严峻复杂。
+  confidence: 确定
+  tags: [政治, 外交]
+  sources: [新华网, 维基百科]
+
+- id: cn-two-sessions-202403
+  date: "2024-03-05"
+  title: 十四届全国人大二次会议在北京召开
+  category: 政治
+  importance: 4
+  summary: 十四届全国人大二次会议与全国政协十四届二次会议在北京召开，审议通过国务院工作报告，明确全年经济增长5%左右等目标。
+  confidence: 确定
+  tags: [政治, 两会]
+  sources: [新华网]
+
+- id: cn-party-discipline-education-202404
+  date: "2024-04-01"
+  title: 全党扎实开展党纪学习教育
+  category: 政治
+  importance: 3
+  summary: 中共中央印发通知，自2024年4月至7月在全党开展党纪学习教育，推动全面从严治党向纵深发展。
+  confidence: 确定
+  tags: [政治, 党建]
+  sources: [新华网]
+
+- id: cn-joint-sword-202405
+  date: "2024-05-23"
+  title: 东部战区组织“联合利剑-2024A”演习
+  category: 政治
+  importance: 4
+  summary: 中国人民解放军东部战区在台岛周边组织“联合利剑-2024A”演习，坚决捍卫国家主权和领土完整。
+  confidence: 确定
+  tags: [军事, 外交]
+  sources: [新华网]
+
+- id: cn-change6-sample-202406
+  date: "2024-06-25"
+  title: 嫦娥六号实现人类首次月球背面采样返回
+  category: 文化
+  importance: 5
+  summary: 嫦娥六号返回器成功带回1935.3克月球背面样品，标志着人类首次月背采样返回任务取得圆满成功。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [新华网, 国家航天局]
+
+- id: cn-third-plenum-202407
+  date: "2024-07-15"
+  title: 党的二十届三中全会通过进一步全面深化改革决定
+  category: 政治
+  importance: 5
+  summary: 中共二十届三中全会在北京举行，审议通过《中共中央关于进一步全面深化改革、推进中国式现代化的决定》。
+  confidence: 确定
+  tags: [政治, 改革, 历史转折]
+  sources: [新华网]
+
+- id: cn-paris-olympics-202408
+  date: "2024-08-11"
+  title: 中国代表团创境外参加夏奥会历史最佳成绩
+  category: 文化
+  importance: 4
+  summary: 第33届夏奥会在巴黎闭幕，中国体育代表团斩获40金27银24铜共91枚奖牌，创下境外参赛历史最佳成绩。
+  confidence: 确定
+  tags: [体育, 文化]
+  sources: [新华网, 体育总局]
+
+- id: cn-delay-retirement-202409
+  date: "2024-09-13"
+  title: 全国人大常委会表决通过渐进式延迟法定退休年龄决定
+  category: 政治
+  importance: 4
+  summary: 十四届全国人大常委会第十一次会议表决通过关于实施渐进式延迟法定退休年龄的决定，自2025年1月1日起施行。
+  confidence: 确定
+  tags: [民生, 法律, 改革]
+  sources: [新华网]
+
+- id: cn-stimulus-package-202409
+  date: "2024-09-24"
+  title: 党中央部署一揽子增量政策，提振经济与资本市场
+  category: 经济
+  importance: 4
+  summary: 央行、金融监管总局、证监会联合推出降准降息、降低存量房贷利率及支持资本市场一揽子增量政策，提振市场信心。
+  confidence: 确定
+  tags: [经济, 金融]
+  sources: [新华网, 央行]
+
+- id: cn-75th-anniversary-202410
+  date: "2024-10-01"
+  title: 庆祝中华人民共和国成立75周年
+  category: 政治
+  importance: 4
+  summary: 庆祝中华人民共和国成立75周年招待会在北京隆重举行，全党全国各族人民共享祖国荣光，开启新征程。
+  confidence: 确定
+  tags: [政治]
+  sources: [新华网]
+
+- id: cn-spring-festival-unesco-202412
+  date: "2024-12-04"
+  title: “春节”成功列入联合国教科文组织人类非遗名录
+  category: 文化
+  importance: 4
+  summary: “春节——中国人庆祝传统新年的社会实践”在联合国教科文组织非遗委员会会议上通过评审，成功列入人类非遗名录。
+  confidence: 确定
+  tags: [民俗, 文化, 外交]
+  sources: [新华网, 联合国]
+
+- id: cn-macau-25th-202412
+  date: "2024-12-20"
+  title: 庆祝澳门回归祖国25周年
+  category: 政治
+  importance: 4
+  summary: 庆祝澳门回归祖国25周年大会暨澳门特别行政区第六届政府就职典礼在澳门隆重举行，开创“一国两制”新局面。
+  confidence: 确定
+  tags: [政治, 澳门]
+  sources: [新华网]
 
 

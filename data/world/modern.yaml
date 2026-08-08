@@ -260,6 +260,24 @@
   confidence: 确定
   tags: [科技, AI]
 
+- id: w-bulgaria-euro-202601
+  date: "2026-01-01"
+  title: 保加利亚加入欧元区
+  category: 经济
+  importance: 3
+  summary: 保加利亚于2026年1月1日起采用欧元，成为欧元区第21个成员国。
+  confidence: 确定
+  tags: [经济, 欧洲]
+
+- id: w-us-captures-maduro-202601
+  date: "2026-01-03"
+  title: 美国抓获委内瑞拉总统马杜罗
+  category: 政治
+  importance: 4
+  summary: 美国对委内瑞拉发动空袭并抓获总统马杜罗与第一夫人，副总统德尔西·罗德里格斯出任代总统，委内瑞拉政局骤变。
+  confidence: 确定
+  tags: [政治, 外交, 历史转折]
+
 - id: w-world-economic-forum-202601
   date: "2026-01-20"
   title: 世界经济论坛2026年年会举行
@@ -269,6 +287,69 @@
   confidence: 确定
   tags: [经济, 科技]
 
+- id: w-us-exits-who-202601
+  date: "2026-01-22"
+  title: 美国正式退出世界卫生组织
+  category: 政治
+  importance: 4
+  summary: 美国正式退出世界卫生组织，成为继2020年一度退出后再一次退出，全球公共卫生治理格局随之变化。
+  confidence: 确定
+  tags: [外交, 政治]
+
+- id: w-nvidia-crash-202601
+  date: "2026-01-27"
+  title: 英伟达市值单日蒸发约6000亿美元，创美股最大单日损失纪录
+  category: 经济
+  importance: 4
+  summary: 英伟达股价单日暴跌约17%，市值蒸发约6000亿美元，为美国股市历史上最大单日市值损失。
+  confidence: 确定
+  tags: [科技, 经济]
+
+- id: w-new-start-expiry-202602
+  date: "2026-02-05"
+  title: 美俄《新削减战略武器条约》到期
+  category: 政治
+  importance: 4
+  summary: 美俄间最后一项核军控条约《新削减战略武器条约》于2026年2月5日到期且未续签，全球战略核军控出现空白。
+  confidence: 确定
+  tags: [军事, 政治, 历史转折]
+
+- id: w-winter-olympics-202602
+  date: "2026-02-06"
+  title: 2026米兰-科尔蒂纳冬奥会开幕
+  category: 文化
+  importance: 4
+  summary: 第25届冬季奥林匹克运动会在意大利米兰与科尔蒂纳·丹佩佐联合举办，为冬奥会历史上首次由两座城市（国家）共同主办。
+  confidence: 确定
+  tags: [体育]
+
+- id: w-us-israel-iran-war-202602
+  date: "2026-02-28"
+  title: 美以袭击伊朗，最高领袖哈梅内伊遇刺，美伊战争爆发
+  category: 战争
+  importance: 5
+  summary: 美国与以色列对伊朗发动袭击，伊朗最高领袖哈梅内伊遇刺身亡，伊朗宣布封堵霍尔木兹海峡并报复，酿成再度升级的中东全面冲突。
+  confidence: 确定
+  tags: [军事, 历史转折, 外交]
+
+- id: w-russia-luhansk-202604
+  date: "2026-04-01"
+  title: 俄罗斯宣布控制卢甘斯克州
+  category: 战争
+  importance: 4
+  summary: 俄乌冲突持续之际，俄罗斯宣布完全控制卢甘斯克州，乌克兰军方予以否认称前线仍在其掌控之下。
+  confidence: 确定
+  tags: [军事, 战争]
+
+- id: w-artemis2-202604
+  date: "2026-04-01"
+  title: 阿尔忒弥斯二号完成首次载人绕月飞行
+  category: 文化
+  importance: 4
+  summary: 美国阿尔忒弥斯二号任务自1972年阿波罗17号以来首次实现载人绕月飞行，创下人类距地球最远距离纪录，并首次将女性和非美国人送入环月轨道。
+  confidence: 确定
+  tags: [航天, 科技]
+
 - id: w-fifa-world-cup-202606
   date: "2026-06-11"
   title: 2026美加墨世界杯开幕
@@ -277,5 +358,271 @@
   summary: 第23届国际足联世界杯在美国、加拿大和墨西哥三国联合举办，为世界杯历史上首次扩军至48支球队的盛会。
   confidence: 确定
   tags: [体育, 历史转折]
+
+- id: w-croatia-euro-202301
+  date: "2023-01-01"
+  title: 克罗地亚加入欧元区与申根区
+  category: 经济
+  importance: 3
+  summary: 克罗地亚自2023年1月1日起正式采用欧元，成为欧元区第20个成员国，并同时加入申根区。
+  confidence: 确定
+  tags: [经济, 欧洲]
+
+- id: w-brazil-riot-202301
+  date: "2023-01-08"
+  title: 巴西前总统支持者冲击国家机构
+  category: 政治
+  importance: 3
+  summary: 巴西前总统博索纳罗的支持者冲击国会、总统府与最高法院，当局随后逮捕上千名参与者，为巴西现代史上最严重政治危机之一。
+  confidence: 确定
+  tags: [政治, 拉美]
+
+- id: w-turkey-quake-202302
+  date: "2023-02-06"
+  title: 土耳其叙利亚7.8级大地震
+  category: 灾害
+  importance: 5
+  summary: 土耳其南部与叙利亚北部发生7.8级强震，随后再发7.5级余震，造成两国逾5万人死亡、数十万人流离失所，为21世纪全球最惨烈地震灾难之一。
+  confidence: 确定
+  tags: [灾害, 地震]
+
+- id: w-genai-boom-202303
+  date: "2023-03-14"
+  title: 生成式AI引发产业变革
+  category: 文化
+  importance: 5
+  summary: OpenAI发布GPT-4，生成式人工智能能力重大跃升，引爆全球AI产业投资与竞争，推动产业格局深刻变革。
+  confidence: 确定
+  tags: [科技, AI]
+
+- id: w-banking-crisis-202303
+  date: "2023-03-10"
+  title: 硅谷银行倒闭与欧美银行业动荡
+  category: 经济
+  importance: 4
+  summary: 美国硅谷银行与签名银行相继倒闭，随后瑞士信贷被瑞银收购，欧美银行业爆发系统性信任危机，多国央行紧急出手救市。
+  confidence: 确定
+  tags: [经济, 金融]
+
+- id: w-sudan-civil-war-202304
+  date: "2023-04-15"
+  title: 苏丹内战爆发
+  category: 战争
+  importance: 4
+  summary: 苏丹武装部队与快速支援部队在喀土穆爆发武装冲突，随即演变为持续内战，造成大量平民伤亡并引发严重人道主义危机。
+  confidence: 确定
+  tags: [战争, 非洲]
+
+- id: w-covid-emergency-end-202305
+  date: "2023-05-05"
+  title: 世卫组织宣布新冠不再构成国际关注的突发公共卫生事件
+  category: 文化
+  importance: 4
+  summary: 世界卫生组织总干事谭德塞宣布，新冠疫情不再构成“国际关注的突发公共卫生事件”，标志着持续三年多的全球卫生紧急状态结束。
+  confidence: 确定
+  tags: [卫生, 全球]
+
+- id: w-chandrayaan3-202308
+  date: "2023-08-23"
+  title: 印度月船三号成功登月
+  category: 文化
+  importance: 4
+  summary: 印度月船三号探测器在月球南极附近成功软着陆，印度成为继苏联、美国、中国之后第四个实现月面软着陆的国家。
+  confidence: 确定
+  tags: [航天, 科技]
+
+- id: w-brics-g20-202308
+  date: "2023-08-24"
+  title: 金砖国家扩员与非盟加入G20
+  category: 政治
+  importance: 4
+  summary: 金砖国家约翰内斯堡峰会宣布吸纳沙特、埃及、阿联酋、阿根廷、伊朗、埃塞俄比亚六国；随后非洲联盟正式成为二十国集团成员，全球治理格局加速调整。
+  confidence: 确定
+  tags: [外交, 全球治理]
+
+- id: w-fukushima-discharge-202308
+  date: "2023-08-24"
+  title: 日本启动福岛核污染水排海
+  category: 灾害
+  importance: 4
+  summary: 日本不顾国内外强烈反对，启动福岛第一核电站核污染水排放入海，中国等多国宣布暂停进口日本水产品，引发国际海洋环境争议。
+  confidence: 确定
+  tags: [环境, 核安全]
+
+- id: w-extreme-disasters-202309
+  date: "2023-09-10"
+  title: 利比亚溃坝与摩洛哥地震等极端灾害
+  category: 灾害
+  importance: 3
+  summary: 地中海风暴“丹尼尔”引发利比亚德尔纳市两座大坝决堤致逾万人遇难；数日前摩洛哥发生6.8级地震，极端天气与地质灾害接踵而至。
+  confidence: 确定
+  tags: [灾害, 极端天气]
+
+- id: w-israel-hamas-war-202310
+  date: "2023-10-07"
+  title: 新一轮巴以冲突爆发
+  category: 战争
+  importance: 5
+  summary: 巴勒斯坦伊斯兰抵抗运动（哈马斯）对以色列发动大规模突袭，以色列随即对加沙地带发动大规模军事行动，新一轮巴以冲突爆发，中东局势急剧恶化。
+  confidence: 确定
+  tags: [战争, 中东]
+
+- id: w-xijinping-biden-202311
+  date: "2023-11-15"
+  title: 中美元首旧金山会晤
+  category: 政治
+  importance: 5
+  summary: 国家主席习近平与美国总统拜登在美国旧金山斐洛里庄园举行会晤，就中美关系战略性、全局性、方向性问题深入交换意见并达成系列共识。
+  confidence: 确定
+  tags: [外交, 中美]
+
+- id: w-hottest-year-202311
+  date: "2023-11-30"
+  title: 全球最热一年与迪拜气候大会
+  category: 灾害
+  importance: 4
+  summary: 2023年成为有记录以来最热的一年，世界气象组织确认全球气温较工业化前水平升高约1.45℃；《联合国气候变化框架公约》第二十八次缔约方大会（COP28）在迪拜举行并首次就“转型脱离化石燃料”达成共识。
+  confidence: 确定
+  tags: [环境, 气候]
+
+- id: w-brics-expansion-202401
+  date: "2024-01-01"
+  title: 金砖国家实现历史性扩员，埃及、伊朗等五国正式加入
+  category: 政治
+  importance: 4
+  summary: 沙特、埃及、阿联酋、伊朗、埃塞俄比亚五国正式成为金砖国家成员，“大金砖合作”引领“全球南方”加速崛起。
+  confidence: 确定
+  tags: [外交, 全球治理]
+  sources: [新华网, 维基百科]
+
+- id: w-sweden-nato-202403
+  date: "2024-03-07"
+  title: 瑞典正式加入北约，北约完成第32个成员国扩张
+  category: 政治
+  importance: 4
+  summary: 瑞典在华盛顿向美国政府递交交存书，正式成为北约第32个成员国，结束200多年的中立政策，欧洲安全格局改变。
+  confidence: 确定
+  tags: [军事, 外交]
+  sources: [维基百科, 新华网]
+
+- id: w-iran-president-raisi-202405
+  date: "2024-05-19"
+  title: 伊朗总统莱希因直升机失事遇难
+  category: 政治
+  importance: 4
+  summary: 伊朗总统莱希及外长阿卜杜拉希扬乘坐的直升机在东阿塞拜疆省坠毁，机上人员全部遇难，引发中东局势关注。
+  confidence: 确定
+  tags: [政治, 中东]
+  sources: [新华网, 维基百科]
+
+- id: w-eu-elections-202406
+  date: "2024-06-09"
+  title: 欧洲议会选举极右翼势力抬头，法英等多国政局重组
+  category: 政治
+  importance: 4
+  summary: 2024年欧洲议会选举举行，极右翼席位显著增加；法国总统马克龙解散国民议会提前大选，英国工党赢得大选重新执政。
+  confidence: 确定
+  tags: [政治, 欧洲]
+  sources: [维基百科, 新华网]
+
+- id: w-paris-olympics-202407
+  date: "2024-07-26"
+  title: 2024年巴黎奥运会开幕
+  category: 文化
+  importance: 4
+  summary: 第33届夏季奥林匹克运动会在法国巴黎开幕，开幕式首次在塞纳河开放式空间举行，全球200多个国家和地区选手同场竞技。
+  confidence: 确定
+  tags: [体育, 文化]
+  sources: [新华网, 维基百科]
+
+- id: w-ukraine-kursk-202408
+  date: "2024-08-06"
+  title: 乌克兰军队攻入俄罗斯库尔斯克州，乌克兰危机剧烈演变
+  category: 战争
+  importance: 4
+  summary: 乌克兰武装部队发动越境突袭攻入俄罗斯库尔斯克州，为二战以来外国军队对俄罗斯领土最大规模地面前进，战局更趋复杂。
+  confidence: 确定
+  tags: [战争, 俄乌]
+  sources: [维基百科, 新华网]
+
+- id: w-fed-rate-cut-202409
+  date: "2024-09-18"
+  title: 美联储降息50个基点，开启新一轮全球货币宽松周期
+  category: 经济
+  importance: 4
+  summary: 美联储宣布将联邦基金利率目标区间下调50个基点至4.75%-5.00%，为四年多来首次降息，标志着货币政策转向宽松。
+  confidence: 确定
+  tags: [经济, 金融]
+  sources: [新华网, 维基百科]
+
+- id: w-shiba-prime-minister-202410
+  date: "2024-10-01"
+  title: 石破茂当选日本第102任首相
+  category: 政治
+  importance: 3
+  summary: 石破茂当选自民党第28任总裁，并经日本国会指名选举就任第102任日本首相，组建新一届日本内阁。
+  confidence: 确定
+  tags: [政治, 日本]
+  sources: [新华网, 维基百科]
+
+- id: w-us-election-trump-202411
+  date: "2024-11-05"
+  title: 特朗普赢得2024年美国总统大选
+  category: 政治
+  importance: 5
+  summary: 美国举行第60届总统选举，共和党候选人特朗普击败民主党候选人哈里斯，再次当选美国总统，共和党同时赢得国会参众两院控制权。
+  confidence: 确定
+  tags: [政治, 外交, 历史转折]
+  sources: [新华网, 维基百科]
+
+- id: w-apec-g20-latin-america-202411
+  date: "2024-11-16"
+  title: 中元首出席APEC与G20峰会，拉美元首外交取得丰硕成果
+  category: 政治
+  importance: 4
+  summary: 国家主席先后赴秘鲁出席APEC会议、赴巴西出席G20峰会并对两国访问，钱凯港开港，高水平元首外交深化全球合作。
+  confidence: 确定
+  tags: [外交, 全球治理]
+  sources: [新华网]
+
+- id: w-ai-nobel-prizes-202411
+  date: "2024-11-20"
+  title: AI 领域开拓者斩获诺贝尔物理学奖与化学奖
+  category: 文化
+  importance: 4
+  summary: 2024年诺贝尔奖揭晓，神经网络机器学习奠基人霍普菲尔德与辛顿获物理学奖，AlphaFold团队领衔者获化学奖，凸显AI重塑科学。
+  confidence: 确定
+  tags: [科技, AI]
+  sources: [新华网, 诺贝尔奖官网]
+
+- id: w-syria-assad-fall-202412
+  date: "2024-12-08"
+  title: 叙利亚反对派攻陷大马士革，巴沙尔·阿萨德政权倒台
+  category: 战争
+  importance: 5
+  summary: 叙利亚反政府武装攻入首都大马士革，总统巴沙尔·阿萨德离开叙利亚，统治半个多世纪的阿萨德家族政权倒台，中东地缘深刻剧变。
+  confidence: 确定
+  tags: [战争, 中东, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-israel-gaza-conflict-202412
+  date: "2024-12-15"
+  title: 巴以冲突外溢全中东，红海与黎巴嫩危机轮番升级
+  category: 战争
+  importance: 5
+  summary: 加沙战事延宕致数万人伤亡，胡塞武装红海袭击与以色列击毙真主党领导人纳斯鲁拉、哈马斯领导人辛瓦尔，引发中东多线冲突升级。
+  confidence: 确定
+  tags: [战争, 中东, 历史转折]
+  sources: [新华网, 维基百科]
+
+- id: w-hottest-year-2024-202412
+  date: "2024-12-28"
+  title: 2024年打破2023年纪录成为全球史上最热一年
+  category: 灾害
+  importance: 4
+  summary: 世界气象组织确认，2024年升温首次突破工业化前1.5℃临界阈值，连续两年刷新全球有气象记录以来最高气温纪录。
+  confidence: 确定
+  tags: [环境, 气候]
+  sources: [新华网, 联合国]
 
 

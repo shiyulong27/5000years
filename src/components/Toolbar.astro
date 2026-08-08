@@ -35,7 +35,12 @@ const { dynasties } = Astro.props
       </div>
     </div>
 
-
+    {/* 全局视图控制：控制 2023, 2024, 2025, 2026 等年份一键切换 [全展开] 或 [概览卡片] */}
+    <div class="global-view-switch" id="global-view-switch" title="一键控制近现代年份视图：[全展开] 或 [概览卡片]">
+      <span class="view-switch-label">视图:</span>
+      <button type="button" class="view-mode-btn active" data-view="detail" id="btn-view-detail">全展开</button>
+      <button type="button" class="view-mode-btn" data-view="summary" id="btn-view-summary">概览卡片</button>
+    </div>
 
     <label class="switch switch-world">
       <input type="checkbox" class="switch-input" id="show-world" checked />
@@ -47,7 +52,6 @@ const { dynasties } = Astro.props
       <span class="switch-label">人物</span>
     </label>
   </div>
-
 
   <div class="tool-group tool-cats">
     {CATEGORIES.map((c) => (
