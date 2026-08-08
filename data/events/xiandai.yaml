@@ -936,4 +936,104 @@
   tags: [航天, 科技, 历史转折]
   sources: [新华网, 国家航天局]
 
+- id: cn-china-asean-fta-201001
+  date: "2010-01-01"
+  title: 中国-东盟自由贸易区正式建成
+  category: 经济
+  importance: 4
+  summary: 中国-东盟自由贸易区如期全面建成，涵盖19亿人口、6万亿美元GDP，成为发展中国家间最大的自贸区。
+  confidence: 确定
+  tags: [经济, 外交, 贸易]
+  sources: [新华网]
+
+- id: cn-yushu-earthquake-201004
+  date: "2010-04-14"
+  title: 青海玉树发生7.1级强烈地震
+  category: 灾害
+  importance: 4
+  summary: 青海省玉树藏族自治州发生7.1级地震，造成2698人遇难，全国开展抗震救灾与灾后重建。
+  confidence: 确定
+  tags: [灾害, 地震]
+  sources: [新华网]
+
+- id: cn-shanghai-expo-201005
+  date: "2010-05-01"
+  title: 2010年上海世界博览会开幕
+  category: 文化
+  importance: 5
+  summary: 第41届世博会在上海开幕，吸引190个国家和56个国际组织参展，累计参观人次达7308万创历史纪录。
+  confidence: 确定
+  tags: [文化, 盛会, 历史转折]
+  sources: [新华网]
+
+- id: cn-ecfa-agreement-201006
+  date: "2010-06-29"
+  title: 海峡两岸签署《海峡两岸经济合作框架协议》（ECFA）
+  category: 政治
+  importance: 4
+  summary: 海协会与海基会在重庆签署ECFA，开启两岸经济关系正常化、自由化与制度化新篇章。
+  confidence: 确定
+  tags: [政治, 经济, 两岸]
+  sources: [新华网]
+
+- id: cn-education-plan-201007
+  date: "2010-07-29"
+  title: 《国家中长期教育改革和发展规划纲要（2010-2020年）》印发
+  category: 政治
+  importance: 3
+  summary: 中共中央、国务院印发教育规划纲要，擘画未来十年教育改革发展蓝图。
+  confidence: 确定
+  tags: [教育, 改革]
+  sources: [新华网]
+
+- id: cn-change2-launch-201010
+  date: "2010-10-01"
+  title: 嫦娥二号探月卫星成功发射
+  category: 文化
+  importance: 4
+  summary: 长征三号丙运载火箭成功将嫦娥二号送入太空，获得分辨率7米的全月球影像图并成功飞越小行星探测。
+  confidence: 确定
+  tags: [航天, 科技]
+  sources: [新华网, 国家航天局]
+
+- id: cn-fifth-plenum-17th-201010
+  date: "2010-10-18"
+  title: 党的十七届五中全会审议通过“十二五”规划建议
+  category: 政治
+  importance: 4
+  summary: 中共十七届五中全会在北京举行，审议通过《中共中央关于制定国民经济和社会发展第十二个五年规划的建议》。
+  confidence: 确定
+  tags: [政治, 改革]
+  sources: [新华网]
+
+- id: cn-social-insurance-law-201010
+  date: "2010-10-28"
+  title: 《中华人民共和国社会保险法》表决通过
+  category: 政治
+  importance: 4
+  summary: 十一届全国人大常委会第十七次会议表决通过社会保险法，奠定我国社会保障制度基本法律框架。
+  confidence: 确定
+  tags: [法律, 民生]
+  sources: [新华网]
+
+- id: cn-guangzhou-asian-games-201011
+  date: "2010-11-12"
+  title: 第16届亚洲运动会在广州举行
+  category: 文化
+  importance: 4
+  summary: 第16届亚运会在广州开幕，中国代表团获得199枚金牌、416枚奖牌，创亚运历史最好成绩。
+  confidence: 确定
+  tags: [体育, 文化]
+  sources: [新华网]
+
+- id: cn-gdp-second-world-201012
+  date: "2010-12-31"
+  title: 中国全年GDP超越日本，跃居世界第二大经济体
+  category: 经济
+  importance: 5
+  summary: 2010年中国GDP达39.8万亿元人民币（折合5.88万亿美元），首次超越日本成为世界第二大经济体，综合国力历史性飞跃。
+  confidence: 确定
+  tags: [经济, 宏观, 历史转折]
+  sources: [国家统计局, 日本内阁府, 新华网]
+
 

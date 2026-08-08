@@ -965,4 +965,104 @@
   tags: [经济, 金融]
   sources: [IMF, 联合国, 新华网]
 
+- id: w-haiti-earthquake-201001
+  date: "2010-01-12"
+  title: 海地发生7.3级特大地震
+  category: 灾害
+  importance: 4
+  summary: 海地首都太子港附近发生7.3级强烈地震，造成30万多人死亡、数千万人受灾，引发全球紧急救援。
+  confidence: 确定
+  tags: [灾害, 地震]
+  sources: [联合国, 新华网]
+
+- id: w-cheonan-sinking-201003
+  date: "2010-03-26"
+  title: 韩国“天安”号警戒舰爆炸沉没，半岛局势剧烈动荡
+  category: 战争
+  importance: 4
+  summary: 韩国海军“天安”号巡防舰在黄海海域沉没导致46名水兵死亡，引发韩朝紧张局势剧烈升级。
+  confidence: 确定
+  tags: [军事, 外交]
+  sources: [维基百科, 新华网]
+
+- id: w-iceland-volcano-201004
+  date: "2010-04-14"
+  title: 冰岛埃亚菲亚德拉火山喷发，欧洲航空大瘫痪
+  category: 灾害
+  importance: 4
+  summary: 冰岛火山剧烈喷发释放出巨量火山灰，导致二战以来欧洲最大规模空域封锁，近10万航班取消。
+  confidence: 确定
+  tags: [灾害, 航空]
+  sources: [维基百科, 新华网]
+
+- id: w-deepwater-horizon-201004
+  date: "2010-04-20"
+  title: 墨西哥湾“深水地平线”钻井平台爆炸，引发严重生态灾难
+  category: 灾害
+  importance: 4
+  summary: 钻井平台爆炸沉没致11人遇难，490万桶原油泄漏入墨西哥湾，造成美国历史上最严重的海洋原油污染。
+  confidence: 确定
+  tags: [灾害, 环境]
+  sources: [维基百科, 新华网]
+
+- id: w-eurozone-crisis-201005
+  date: "2010-05-09"
+  title: 欧洲主权债务危机爆发，欧盟设立7500亿欧元救助机制
+  category: 经济
+  importance: 5
+  summary: 希腊等欧猪国家引发主权债务危机，欧盟与IMF设立7500亿欧元救助基金，欧债危机震撼全球金融。
+  confidence: 确定
+  tags: [经济, 金融, 历史转折]
+  sources: [新华网, 维基百科]
+
+- id: w-wikileaks-afghan-war-201007
+  date: "2010-07-25"
+  title: 维基解密曝光数万份阿富汗战争机密档案
+  category: 政治
+  importance: 4
+  summary: 维基解密解密曝光超过9万份美军在阿富汗战争中的秘密文件与视频，揭露战争隐情，震惊国际舆论。
+  confidence: 确定
+  tags: [政治, 外交]
+  sources: [维基百科, 新华网]
+
+- id: w-chile-miners-rescue-201010
+  date: "2010-10-13"
+  title: 智利圣何塞铜矿33名矿工地下封堵69天后奇迹全数获救
+  category: 灾害
+  importance: 4
+  summary: 智利铜矿坍塌导致33名矿工被困地下700米，经69天全球极限救援，利用“凤凰号”救生舱全部安全升井。
+  confidence: 确定
+  tags: [灾害, 救援]
+  sources: [新华网, 维基百科]
+
+- id: w-yeonpyeong-shelling-201011
+  date: "2010-11-23"
+  title: 朝韩在延坪岛爆发炮击事件
+  category: 战争
+  importance: 4
+  summary: 朝鲜与韩国在黄海延坪岛附近互相发射数百发炮弹造成4死，半岛局势降至停战以来冰点。
+  confidence: 确定
+  tags: [战争, 军事]
+  sources: [维基百科, 新华网]
+
+- id: w-arab-spring-begins-201012
+  date: "2010-12-17"
+  title: 突尼斯“茉莉花革命”爆发，拉开“阿拉伯之春”序幕
+  category: 政治
+  importance: 5
+  summary: 突尼斯小贩自焚事件引发反政府示威致总统下台，动荡浪潮席卷中东多国，史称“阿拉伯之春”。
+  confidence: 确定
+  tags: [政治, 中东, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-brics-south-africa-201012
+  date: "2010-12-24"
+  title: 南非正式加入，“金砖四国”扩容为“金砖国家”（BRICS）
+  category: 政治
+  importance: 4
+  summary: 中俄印巴一致同意接收南非为正式成员，“金砖四国”（BRIC）正式升级扩容为“金砖国家”（BRICS）。
+  confidence: 确定
+  tags: [外交, 全球治理]
+  sources: [新华网]
+
 
