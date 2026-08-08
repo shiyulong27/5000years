@@ -1975,4 +1975,103 @@
   tags: [政治, 美国]
   sources: [维基百科, 新华网]
 
+- id: w-obama-inauguration-200901
+  date: "2009-01-20"
+  title: 巴拉克·奥巴马宣誓就任美国第44任总统，成为首位非裔美国总统
+  category: 政治
+  importance: 5
+  summary: 奥巴马在美国国会大厦前宣誓就职，成为美国历史上首位非裔总统，开启"变革"新时代，全球数亿人实时收看就职典礼直播。
+  confidence: 确定
+  tags: [政治, 美国, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-g20-london-summit-200904
+  date: "2009-04-02"
+  title: G20伦敦峰会达成共识，承诺注入1.1万亿美元应对全球金融危机
+  category: 经济
+  importance: 5
+  summary: G20领导人在伦敦举行峰会，承诺向国际金融机构注入1.1万亿美元，加强金融监管，推动国际货币基金组织改革。
+  confidence: 确定
+  tags: [经济, 全球治理, 金融危机, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-north-korea-second-nuclear-test-200905
+  date: "2009-05-25"
+  title: 朝鲜进行第二次核试验，联合国安理会一致通过制裁决议
+  category: 政治
+  importance: 5
+  summary: 朝鲜宣称成功进行第二次地下核试验，引发国际社会强烈谴责，联合国安理会通过1874号决议实施更严厉制裁。
+  confidence: 确定
+  tags: [军事, 朝鲜半岛, 核武, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-swine-flu-pandemic-200906
+  date: "2009-06-11"
+  title: 世卫组织宣布甲型H1N1流感进入全球大流行（6级）最高警戒
+  category: 灾害
+  importance: 5
+  summary: WHO宣布将甲型H1N1流感警戒级别升至最高第6级，全球大流行正式开始，超过214个国家和地区发现确诊病例。
+  confidence: 确定
+  tags: [疫情, 公共卫生, 历史转折]
+  sources: [WHO, 维基百科, 新华网]
+
+- id: w-iran-election-protests-200906
+  date: "2009-06-12"
+  title: 伊朗总统选举后爆发大规模抗议示威，"绿色运动"震动德黑兰
+  category: 政治
+  importance: 4
+  summary: 伊朗总统选举结果引发争议，内贾德宣告连任后支持者穆萨维号召抗议，数百万人上街，"绿色运动"成为21世纪初重要政治事件。
+  confidence: 确定
+  tags: [政治, 伊朗, 中东]
+  sources: [维基百科, 新华网]
+
+- id: w-michael-jackson-death-200906
+  date: "2009-06-25"
+  title: 流行音乐之王迈克尔·杰克逊在洛杉矶突然逝世，享年50岁
+  category: 文化
+  importance: 4
+  summary: 迈克尔·杰克逊在洛杉矶家中心脏骤停，经抢救无效去世，震撼全球亿万歌迷，成为史上最受关注的名人离世事件之一。
+  confidence: 确定
+  tags: [文化, 音乐, 美国]
+  sources: [维基百科, 新华网]
+
+- id: w-us-withdraw-iraq-200906
+  date: "2009-06-30"
+  title: 美军撤出伊拉克各主要城市，伊拉克安全部队全面接管
+  category: 战争
+  importance: 5
+  summary: 根据《美伊地位协定》，美国战斗部队从伊拉克主要城市撤出，伊拉克安全部队全面接管，奥巴马推进结束伊拉克战争进程。
+  confidence: 确定
+  tags: [战争, 伊拉克, 美国, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-obama-peace-prize-200910
+  date: "2009-10-09"
+  title: 美国总统奥巴马获授2009年诺贝尔和平奖，引发全球广泛争议
+  category: 政治
+  importance: 4
+  summary: 诺贝尔委员会宣布将和平奖授予上任仅九个月的奥巴马，以表彰其在外交领域的努力，但此举引发国际社会广泛争议。
+  confidence: 确定
+  tags: [政治, 外交, 美国]
+  sources: [诺贝尔委员会, 维基百科, 新华网]
+
+- id: w-lisbon-treaty-effective-200912
+  date: "2009-12-01"
+  title: 《里斯本条约》正式生效，欧盟政治一体化取得历史性突破
+  category: 政治
+  importance: 5
+  summary: 《里斯本条约》生效，欧盟首次设立常任"总统"（欧洲理事会主席）和外交政策高级代表，欧洲一体化制度框架大幅完善。
+  confidence: 确定
+  tags: [政治, 欧洲, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-cop15-copenhagen-200912
+  date: "2009-12-07"
+  title: 《联合国气候变化框架公约》第15次缔约方大会（COP15）在哥本哈根举行
+  category: 灾害
+  importance: 5
+  summary: 全球190余个国家代表在哥本哈根出席气候峰会，就2012年后气候变化协议展开激烈博弈，最终达成不具法律约束力的《哥本哈根协议》。
+  confidence: 确定
+  tags: [环境, 气候, 全球治理, 历史转折]
+  sources: [联合国, 维基百科, 新华网]
 

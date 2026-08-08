@@ -1936,4 +1936,103 @@
   tags: [经济, 宏观, 民生, 历史转折]
   sources: [国家统计局, 新华网]
 
+- id: cn-new-medical-reform-200904
+  date: "2009-04-06"
+  title: 《中共中央国务院关于深化医药卫生体制改革的意见》发布，新医改方案正式出台
+  category: 经济
+  importance: 5
+  summary: 《关于深化医药卫生体制改革的意见》正式发布，确立覆盖城乡居民的医疗卫生体制改革方向，明确到2020年基本建立覆盖全民的基本医疗卫生制度。
+  confidence: 确定
+  tags: [民生, 医疗, 改革, 历史转折]
+  sources: [新华网]
+
+- id: cn-h1n1-response-200906
+  date: "2009-05-11"
+  title: 中国内地发现首例输入性甲型H1N1流感病例，全面启动应急响应
+  category: 灾害
+  importance: 4
+  summary: 中国内地首例甲型H1N1流感确诊病例发现后，国家卫生部门迅速启动联防联控机制，成功研制疫苗并有效遏制疫情蔓延。
+  confidence: 确定
+  tags: [疫情, 公共卫生]
+  sources: [新华网, 卫生部]
+
+- id: cn-urumqi-75-incident-200907
+  date: "2009-07-05"
+  title: 新疆乌鲁木齐发生"7·5"严重暴力犯罪事件，国家依法处置
+  category: 政治
+  importance: 5
+  summary: 乌鲁木齐发生打砸抢烧严重暴力犯罪事件，造成重大人员伤亡，党和政府迅速出动警力依法平息，全面维护社会稳定与民族团结。
+  confidence: 确定
+  tags: [政治, 新疆, 社会稳定]
+  sources: [新华网]
+
+- id: cn-new-china-60th-parade-200910
+  date: "2009-10-01"
+  title: 庆祝中华人民共和国成立60周年大会暨盛大阅兵式在北京天安门广场举行
+  category: 政治
+  importance: 5
+  summary: 新中国成立60周年盛大庆典在天安门广场举行，胡锦涛发表重要讲话并检阅部队，10万军民游行、52个方阵接受检阅，展示国防与建设成就。
+  confidence: 确定
+  tags: [政治, 国庆, 历史转折]
+  sources: [新华网]
+
+- id: cn-economy-first-recovery-2009
+  date: "2009-11-10"
+  title: 中国经济在全球金融危机中率先回升向好，GDP全年增长8.7%
+  category: 经济
+  importance: 5
+  summary: 中国实施积极财政政策和适度宽松货币政策，出台4万亿经济刺激方案，全年GDP增速8.7%，在主要经济体中率先实现经济回升。
+  confidence: 确定
+  tags: [经济, 宏观, 历史转折]
+  sources: [国家统计局, 新华网]
+
+- id: cn-g20-copenhagen-diplomacy-2009
+  date: "2009-09-24"
+  title: 国家主席胡锦涛出席联合国气候变化峰会并在G20匹兹堡峰会上提出中国减排承诺
+  category: 政治
+  importance: 4
+  summary: 胡锦涛出席联合国气候变化峰会，宣布中国将大力发展绿色经济；随后在G20匹兹堡峰会上积极参与全球经济治理改革讨论。
+  confidence: 确定
+  tags: [外交, 气候, 全球治理]
+  sources: [新华网]
+
+- id: cn-major-projects-2009
+  date: "2009-12-26"
+  title: 武广高速铁路正式开通运营，中国进入高铁快速发展时代
+  category: 经济
+  importance: 5
+  summary: 武汉至广州高速铁路正式通车，全程约1069公里，设计时速350公里，为当时全球最快商业运营铁路，标志中国高铁规模化建设正式起步。
+  confidence: 确定
+  tags: [经济, 交通, 高铁, 历史转折]
+  sources: [新华网]
+
+- id: cn-anti-corruption-2009
+  date: "2009-06-18"
+  title: 最高人民检察院公布2008年查处腐败案件情况，反腐败斗争持续深化
+  category: 政治
+  importance: 4
+  summary: 2009年，中国持续推进反腐败斗争，检察机关全年立案侦查贪污贿赂案件超3万件，重大案件处理得到社会广泛关注。
+  confidence: 确定
+  tags: [政治, 反腐, 法治]
+  sources: [新华网, 检察院]
+
+- id: cn-shanghai-expo-preparation-2009
+  date: "2009-01-22"
+  title: 2010年上海世界博览会建设工作全面推进，迎接"城市，让生活更美好"
+  category: 文化
+  importance: 4
+  summary: 2009年上海世博会场馆建设全面进入攻坚阶段，预计参展国家和国际组织逾200个，将成为历史上规模最大的世博会。
+  confidence: 确定
+  tags: [文化, 外交, 上海]
+  sources: [新华网]
+
+- id: cn-social-security-coverage-2009
+  date: "2009-09-04"
+  title: 国务院发布新农村社会养老保险试点方案，探索建立"新农保"制度
+  category: 经济
+  importance: 5
+  summary: 国务院发布《关于开展新型农村社会养老保险试点的指导意见》，标志着中国首次在农村地区建立由政府补贴的养老保险制度，覆盖亿万农民。
+  confidence: 确定
+  tags: [民生, 社保, 农村, 历史转折]
+  sources: [新华网]
 
