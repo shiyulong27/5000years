@@ -1675,4 +1675,104 @@
   tags: [政治, 韩国]
   sources: [维基百科, 新华网]
 
+- id: w-trump-inauguration-201701
+  date: "2017-01-20"
+  title: 唐纳德·特朗普宣誓就任第45任美国总统，立即签署行政令退出TPP
+  category: 政治
+  importance: 5
+  summary: 特朗普宣誓就职并在演讲中强调“美国优先”，上任首日即签署行政令退出TPP，开启单边主义时代。
+  confidence: 确定
+  tags: [政治, 外交, 美国, 历史转折]
+  sources: [新华网, 维基百科]
+
+- id: w-park-geun-hye-removed-201703
+  date: "2017-03-10"
+  title: 韩国宪法法院裁定通过总统朴槿惠弹劾案，朴槿惠被即刻罢免
+  category: 政治
+  importance: 5
+  summary: 韩国宪法法院法官一致裁定通过弹劾案，朴槿惠成为首位被罢免民选总统，文在寅随后当选。
+  confidence: 确定
+  tags: [政治, 韩国, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-macron-wins-french-election-201705
+  date: "2017-05-07"
+  title: 埃马纽埃尔·马克龙击败勒庞当选法国总统
+  category: 政治
+  importance: 4
+  summary: 39岁的马克龙以66.1%选票击败玛丽娜·勒庞，成为法国最年轻总统，巩固欧洲一体化阵营。
+  confidence: 确定
+  tags: [政治, 法国]
+  sources: [维基百科, 新华网]
+
+- id: w-us-withdraws-paris-agreement-201706
+  date: "2017-06-01"
+  title: 特朗普宣布美国退出全球气候变化《巴黎协定》
+  category: 灾害
+  importance: 5
+  summary: 美国总统特朗普在白宫宣布美国退出《巴黎协定》，称协定对美经济不利，引发全球强烈谴责。
+  confidence: 确定
+  tags: [环境, 气候, 历史转折]
+  sources: [新华网, 维基百科]
+
+- id: w-qatar-diplomatic-crisis-201706
+  date: "2017-06-05"
+  title: 沙特、阿联酋等多国宣布与卡塔尔断交并实施封锁
+  category: 政治
+  importance: 4
+  summary: 沙特、阿联酋等多国以卡塔尔支持恐怖主义为由宣布断交并封锁海陆空通道，中东爆发断交风暴。
+  confidence: 确定
+  tags: [外交, 中东]
+  sources: [维基百科, 新华网]
+
+- id: w-rohingya-crisis-201708
+  date: "2017-08-25"
+  title: 缅甸若开邦爆发出发罗兴亚人难民危机
+  category: 灾害
+  importance: 4
+  summary: 若开邦爆发冲突后，超70万罗兴亚人逃往孟加拉国，引发联合国高度关注的难民危机。
+  confidence: 确定
+  tags: [难民, 人权]
+  sources: [联合国, 新华网]
+
+- id: w-las-vegas-shooting-201710
+  date: "2017-10-01"
+  title: 美国拉斯维加斯音乐节发生史上最严重枪击案
+  category: 战争
+  importance: 4
+  summary: 枪手从酒店高层向露天音乐节人群疯狂扫射造成60死800多伤，为美现代史上最惨重单体枪击案。
+  confidence: 确定
+  tags: [治安, 枪支, 美国]
+  sources: [维基百科, 新华网]
+
+- id: w-catalan-independence-declaration-201710
+  date: "2017-10-27"
+  title: 西班牙加泰罗尼亚议会单方面宣布“独立”，马德里接管政权
+  category: 政治
+  importance: 4
+  summary: 加泰罗尼亚自治大区议会单方面独立，西班牙中央政府触发宪法155条收回自治权。
+  confidence: 确定
+  tags: [政治, 欧洲]
+  sources: [维基百科, 新华网]
+
+- id: w-robert-mugabe-resignation-201711
+  date: "2017-11-21"
+  title: 津巴布韦执政37年的总统罗伯特·穆加贝宣布辞职
+  category: 政治
+  importance: 5
+  summary: 在军方与议会压力下，执政37年的津巴布韦建国领袖穆加贝递交辞职信，姆南加古瓦接任。
+  confidence: 确定
+  tags: [政治, 非洲, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-us-jerusalem-capital-201712
+  date: "2017-12-06"
+  title: 特朗普宣布美国承认耶路撒冷为以色列首都并搬迁大使馆
+  category: 政治
+  importance: 5
+  summary: 特朗普打破数十年来国际共识，宣布承认耶路撒冷为以色列首都并启动搬迁大使馆，引发中东动荡。
+  confidence: 确定
+  tags: [外交, 中东, 历史转折]
+  sources: [新华网, 维基百科]
+
 

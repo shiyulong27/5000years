@@ -1636,4 +1636,104 @@
   tags: [经济, 金融]
   sources: [新华网]
 
+- id: cn-xiongan-new-area-201704
+  date: "2017-04-01"
+  title: 中共中央、国务院决定设立河北雄安新区
+  category: 政治
+  importance: 5
+  summary: 中共中央、国务院决定设立河北雄安新区，这是继深圳和浦东之后又一全国意义的新区，“千年大计、国家大事”。
+  confidence: 确定
+  tags: [政治, 经济, 雄安, 历史转折]
+  sources: [新华网]
+
+- id: cn-tianzhou1-cargo-ship-201704
+  date: "2017-04-20"
+  title: 中国首艘货运飞船“天舟一号”成功发射并完成首次在轨推进剂补加
+  category: 文化
+  importance: 5
+  summary: 天舟一号成功发射，随后与天宫二号交会对接并完成中国首次推进剂在轨补加，空间站建造关键技术全面突破。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [国家航天局, 新华网]
+
+- id: cn-shandong-aircraft-carrier-launch-201704
+  date: "2017-04-26"
+  title: 中国首艘国产航空母舰（山东舰）在大连成功下水
+  category: 政治
+  importance: 5
+  summary: 中国首艘完全自主研制的国产航空母舰在大连造船厂成功下水，标志着自主设计建造航母取得重大突破。
+  confidence: 确定
+  tags: [军事, 科技, 历史转折]
+  sources: [新华网]
+
+- id: cn-c919-maiden-flight-201705
+  date: "2017-05-05"
+  title: 中国首款大型干线客机C919在上海成功首飞
+  category: 文化
+  importance: 5
+  summary: C919大型客机在上海浦东机场成功首飞，标志着中国不具备自主研制大客机历史彻底终结。
+  confidence: 确定
+  tags: [航空, 科技, 历史转折]
+  sources: [新华网]
+
+- id: cn-belt-and-road-forum-201705
+  date: "2017-05-14"
+  title: 第一届“一带一路”国际合作高峰论坛在北京成功举行
+  category: 政治
+  importance: 5
+  summary: “一带一路”国际合作高峰论坛在北京举行，29位外国领导人出席，达成270多项成果，“一带一路”进入新阶段。
+  confidence: 确定
+  tags: [外交, 一带一路, 经济, 历史转折]
+  sources: [新华网]
+
+- id: cn-fuxing-emu-debut-201706
+  date: "2017-06-25"
+  title: 中国标准动车组正式命名为“复兴号”并在京沪高铁双向首发
+  category: 经济
+  importance: 5
+  summary: 中国标准动车组被命名为“复兴号”，在京沪高铁实现时速350公里商业运营，中国高铁迈入“复兴号”时代。
+  confidence: 确定
+  tags: [经济, 交通, 科技, 历史转折]
+  sources: [新华网]
+
+- id: cn-zhurihe-parade-201707
+  date: "2017-07-30"
+  title: 庆祝中国人民解放军建军90周年阅兵在朱日和训练基地举行
+  category: 政治
+  importance: 5
+  summary: 庆祝建军90周年沙场阅兵在朱日和举行，国家主席检阅部队，这是新中国成立以来首次建军节沙场阅兵。
+  confidence: 确定
+  tags: [军事, 政治, 历史转折]
+  sources: [新华网]
+
+- id: cn-jiuzhaigou-earthquake-201708
+  date: "2017-08-08"
+  title: 四川省阿坝州九寨沟县发生7.0级地震
+  category: 灾害
+  importance: 4
+  summary: 四川九寨沟发生7.0级地震，造成25人遇难，全社会开展抗震救灾与景区生态修复。
+  confidence: 确定
+  tags: [灾害, 地震]
+  sources: [新华网]
+
+- id: cn-brics-xiamen-summit-201709
+  date: "2017-09-03"
+  title: 金砖国家领导人第九次会晤在福建厦门举行
+  category: 政治
+  importance: 4
+  summary: 金砖领导人会晤在厦门举行，提出“金砖+”合作模式，发表《厦门宣言》，开启金砖第二个“金色十年”。
+  confidence: 确定
+  tags: [外交, 全球治理]
+  sources: [新华网]
+
+- id: cn-19th-cpc-congress-201710
+  date: "2017-10-18"
+  title: 中国共产党第十九次全国代表大会胜利召开，确立习近平新时代中国特色社会主义思想
+  category: 政治
+  importance: 5
+  summary: 中共十九大在北京胜利召开，宣告中国特色社会主义进入新时代，确立习近平新时代中国特色社会主义思想为指导思想。
+  confidence: 确定
+  tags: [政治, 改革, 历史转折]
+  sources: [新华网]
+
 
