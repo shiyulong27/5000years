@@ -1775,4 +1775,104 @@
   tags: [外交, 中东, 历史转折]
   sources: [新华网, 维基百科]
 
+- id: w-panmunjom-declaration-201804
+  date: "2018-04-27"
+  title: 朝韩领导人在板门店举行会晤，发表《板门店宣言》
+  category: 政治
+  importance: 5
+  summary: 金正恩与文在寅在板门店举行历史性会晤，发表《板门店宣言》，宣布朝韩将停止一切敌对行为。
+  confidence: 确定
+  tags: [外交, 朝鲜半岛, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-us-withdraws-iran-deal-201805
+  date: "2018-05-08"
+  title: 特朗普宣布美国单方面退出伊朗核问题全面协议（JCPOA）
+  category: 政治
+  importance: 5
+  summary: 美国总统特朗普在白宫宣布单方面退出伊核协议并重启极度严苛制裁，引发中东局势剧震。
+  confidence: 确定
+  tags: [外交, 中东, 历史转折]
+  sources: [新华网, 维基百科]
+
+- id: w-us-embassy-jerusalem-open-201805
+  date: "2018-05-14"
+  title: 美国驻以色列大使馆在耶路撒冷正式开馆，加沙爆发严重流血冲突
+  category: 战争
+  importance: 4
+  summary: 美驻耶路撒冷使馆开馆，加沙巴勒斯坦示威者与以军爆发剧烈冲突造成60多名巴勒斯坦人死亡。
+  confidence: 确定
+  tags: [战争, 中东, 外交]
+  sources: [维基百科, 新华网]
+
+- id: w-us-north-korea-singapore-summit-201806
+  date: "2018-06-12"
+  title: 朝美两国领导人在新加坡举行历史性首次会晤
+  category: 政治
+  importance: 5
+  summary: 朝鲜最高领导人金正恩与美国总统特朗普在新加坡举行朝美建交70年来首次领导人会晤。
+  confidence: 确定
+  tags: [外交, 朝鲜半岛, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-france-wins-world-cup-201807
+  date: "2018-07-15"
+  title: 法国队击败克罗地亚队夺得2018俄罗斯世界杯冠军
+  category: 文化
+  importance: 4
+  summary: 俄罗斯世界杯闭幕，法国队4:2击败克罗地亚队，时隔20年再次捧得大力神杯。
+  confidence: 确定
+  tags: [体育, 足球, 世界杯]
+  sources: [FIFA, 维基百科, 新华网]
+
+- id: w-brazil-museum-fire-201809
+  date: "2018-09-02"
+  title: 巴西国家博物馆发生毁灭性大火，2000万件文物理史珍品化为灰烬
+  category: 灾害
+  importance: 4
+  summary: 200年历史巴西国家博物馆发生特大火灾，馆藏2000万件藏品中绝大部分被焚毁。
+  confidence: 确定
+  tags: [灾害, 文化遗产]
+  sources: [维基百科, 新华网]
+
+- id: w-khashoggi-assassination-201810
+  date: "2018-10-02"
+  title: 沙特记者贾马尔·卡舒吉在驻伊斯坦布尔领事馆内被残忍暗杀
+  category: 政治
+  importance: 4
+  summary: 异见记者卡舒吉进入沙特驻伊斯坦布尔领事馆后遭特工残忍遇害割尸，事件震撼全球地缘政治。
+  confidence: 确定
+  tags: [政治, 人权, 中东]
+  sources: [维基百科, 新华网]
+
+- id: w-ww1-centenary-201811
+  date: "2018-11-11"
+  title: 第一次世界大战结束100周年纪念仪式在巴黎举行
+  category: 政治
+  importance: 4
+  summary: 法国在巴黎凯旋门举行一战停战百年纪念仪式，全球70多位国家领导人出席，呼吁维护和平。
+  confidence: 确定
+  tags: [外交, 历史]
+  sources: [维基百科, 新华网]
+
+- id: w-kerch-strait-incident-201811
+  date: "2018-11-25"
+  title: 俄乌刻赤海峡冲突发生，俄罗斯扣押乌克兰军舰
+  category: 战争
+  importance: 4
+  summary: 乌克兰舰艇通过刻赤海峡遭俄拦截开火扣押，乌克兰随后宣布进入30天战时状态。
+  confidence: 确定
+  tags: [战争, 乌克兰, 俄罗斯]
+  sources: [维基百科, 新华网]
+
+- id: w-yellow-vests-movement-201812
+  date: "2018-12-15"
+  title: 法国爆发“黄马甲”全境抗议示威运动
+  category: 政治
+  importance: 4
+  summary: 调高燃油税引发“黄马甲”运动在法国巴黎等升级为骚乱，马克龙政府被迫暂停调税并提升最低工资。
+  confidence: 确定
+  tags: [政治, 民生, 法国]
+  sources: [维基百科, 新华网]
+
 
