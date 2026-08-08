@@ -42,6 +42,13 @@ const { dynasties } = Astro.props
       <button type="button" class="view-mode-btn" data-view="summary" id="btn-view-summary">概览卡片</button>
     </div>
 
+    {/* 排序顺序：正序（上古→现代）或倒序（现代→上古） */}
+    <div class="sort-order-switch" id="sort-order-switch" title="切换时间轴排列顺序">
+      <span class="view-switch-label">排序:</span>
+      <button type="button" class="view-mode-btn active" data-order="asc" id="btn-sort-asc">↑ 正序</button>
+      <button type="button" class="view-mode-btn" data-order="desc" id="btn-sort-desc">↓ 倒序</button>
+    </div>
+
     <label class="switch switch-world">
       <input type="checkbox" class="switch-input" id="show-world" checked />
       <span class="switch-label">世界对照</span>

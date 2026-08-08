@@ -239,6 +239,17 @@ body {
   box-shadow: 0 1px 4px color-mix(in srgb, var(--accent) 30%, transparent);
 }
 
+/* 排序顺序切换（正序 / 倒序） */
+.sort-order-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.15rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
 .level-multiselect {
   position: relative;
   display: inline-block;

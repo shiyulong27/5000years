@@ -234,4 +234,72 @@ if (timeline) {
 
     banners.forEach((b) => io.observe(b))
   }
+
+  // ── 排序切换：正序 (asc) / 倒序 (desc) ──────────────────────────
+  const btnSortAsc  = document.getElementById('btn-sort-asc')
+  const btnSortDesc = document.getElementById('btn-sort-desc')
+
+  if (btnSortAsc && btnSortDesc) {
+    /** 收集所有参与 grid 定位的元素并缓存其原始 gridRow */
+    function collectGridItems() {
+      const selectors = ['.cell', '.banner-row', '.civ-band', '.figure-slot']
+      const items = []
+      for (const sel of selectors) {
+        for (const el of timeline.querySelectorAll(sel)) {
+          const raw = el.style.gridRow
+          if (!raw) continue
+          // 格式如 "12" 或 "12 / 15"
+          const parts = raw.split('/').map((s) => parseInt(s.trim(), 10))
+          const rowStart = parts[0]
+          const rowEnd = parts[1] !== undefined ? parts[1] : (parts[0] + 1)
+          items.push({ el, rowStart, rowEnd })
+        }
+      }
+      return items
+    }
+
+    // 在首次切换时缓存正序原始值，避免多次翻转产生累积偏差
+    let _cachedItems = null
+    let _maxRow = 0
+
+    function getItems() {
+      if (_cachedItems) return { items: _cachedItems, maxRow: _maxRow }
+      _cachedItems = collectGridItems()
+      _maxRow = _cachedItems.reduce((m, i) => Math.max(m, i.rowEnd), 0)
+      return { items: _cachedItems, maxRow: _maxRow }
+    }
+
+    /**
+     * 镜像翻转：以 maxRow 为轴，对每个元素的 gridRow 做反射
+     *   newStart = maxRow - rowEnd   + 2
+     *   newEnd   = maxRow - rowStart + 2
+     * 保持每个元素占用的行数不变，位置整体翻转
+     */
+    function applyOrder(desc) {
+      const { items, maxRow } = getItems()
+      for (const { el, rowStart, rowEnd } of items) {
+        if (desc) {
+          const newStart = maxRow - rowEnd + 2
+          const newEnd   = maxRow - rowStart + 2
+          el.style.gridRow = `${newStart} / ${newEnd}`
+        } else {
+          el.style.gridRow = `${rowStart} / ${rowEnd}`
+        }
+      }
+      timeline.classList.toggle('is-reversed', desc)
+    }
+
+    btnSortAsc.addEventListener('click', () => {
+      btnSortAsc.classList.add('active')
+      btnSortDesc.classList.remove('active')
+      applyOrder(false)
+    })
+
+    btnSortDesc.addEventListener('click', () => {
+      btnSortDesc.classList.add('active')
+      btnSortAsc.classList.remove('active')
+      applyOrder(true)
+    })
+  }
 }
+
