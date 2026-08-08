@@ -1836,4 +1836,104 @@
   tags: [经济, 宏观]
   sources: [国家统计局, 新华网]
 
+- id: cn-change4-moon-landing-201901
+  date: "2019-01-03"
+  title: 嫦娥四号探测器成功软着陆月球背面，人类历史上首次
+  category: 文化
+  importance: 5
+  summary: 嫦娥四号自主着陆于月球背面冯·卡门撞击坑，实现人类首次月背软着陆与中继通信，玉兔二号驶上月表。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [新华网, 国家航天局]
+
+- id: cn-foreign-investment-law-201903
+  date: "2019-03-15"
+  title: 十三届全国人大二次会议表决通过《中华人民共和国外商投资法》
+  category: 政治
+  importance: 5
+  summary: 十三届全国人大二次会议通过外商投资法，确立准入前国民待遇加负面清单管理，开启高水平开放新篇章。
+  confidence: 确定
+  tags: [法律, 经济, 开放, 历史转折]
+  sources: [新华网]
+
+- id: cn-second-belt-road-forum-201904
+  date: "2019-04-25"
+  title: 第二届“一带一路”国际合作高峰论坛在北京成功举行
+  category: 政治
+  importance: 5
+  summary: 第二届“一带一路”高峰论坛在北京举行，38位外国领导人出席，开启高质量共建“一带一路”新阶段。
+  confidence: 确定
+  tags: [外交, 一带一路, 经济, 历史转折]
+  sources: [新华网]
+
+- id: cn-daxing-airport-open-201909
+  date: "2019-09-25"
+  title: 北京大兴国际机场正式通航
+  category: 经济
+  importance: 5
+  summary: “新国门”北京大兴国际机场正式投入运营，国家主席出席通航仪式，大兴机场成为全球最大单体航站楼。
+  confidence: 确定
+  tags: [工程, 交通, 北京, 历史转折]
+  sources: [新华网]
+
+- id: cn-70th-anniversary-parade-201910
+  date: "2019-10-01"
+  title: 庆祝中华人民共和国成立70周年大会及盛大阅兵在京举行
+  category: 政治
+  importance: 5
+  summary: 庆祝新中国成立70周年大会在天安门广场举行，国家主席发表讲话并检阅部队，东风-41首秀，10万群众游行。
+  confidence: 确定
+  tags: [政治, 盛会, 军事, 历史转折]
+  sources: [新华网]
+
+- id: cn-fourth-plenum-19th-201910
+  date: "2019-10-31"
+  title: 党的十九届四中全会审议通过坚持和完善中国特色社会主义制度决定
+  category: 政治
+  importance: 5
+  summary: 中共十九届四中全会在北京举行，审议通过《关于坚持和完善中国特色社会主义制度 推进国家治理体系和治理能力现代化若干重大问题的决定》。
+  confidence: 确定
+  tags: [政治, 制度, 历史转折]
+  sources: [新华网]
+
+- id: cn-shandong-carrier-commissioned-201912
+  date: "2019-12-17"
+  title: 中国第一艘国产航空母舰山东舰在海南三亚正式交付入列
+  category: 政治
+  importance: 5
+  summary: 中国首艘国产航母山东舰在三亚交付海军，国家主席出席交接入列仪式，中国正式迈入“双航母时代”。
+  confidence: 确定
+  tags: [军事, 科技, 山东舰, 历史转折]
+  sources: [国防部, 新华网]
+
+- id: cn-macau-handover-20th-201912
+  date: "2019-12-20"
+  title: 庆祝澳门回归祖国20周年大会暨澳门特别行政区第五届政府就职典礼举行
+  category: 政治
+  importance: 4
+  summary: 庆祝澳门回归祖国20周年大会在澳门举行，国家主席出席讲话，总结“一国两制”在澳门成功实践经验。
+  confidence: 确定
+  tags: [政治, 澳门]
+  sources: [新华网]
+
+- id: cn-long-march-5-cz5-flight3-201912
+  date: "2019-12-27"
+  title: 长征五号遥三运载火箭发射成功，中国“胖五”重型火箭复飞成功
+  category: 文化
+  importance: 5
+  summary: 长征五号遥三运载火箭成功将实践二十号送入预定轨道，“胖五”复飞成功，为空间站与探月探火扫清道路。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [新华网, 国家航天局]
+
+- id: cn-gdp-99trillion-201912
+  date: "2019-12-31"
+  title: 中国全年GDP接近100万亿元人民币，人均GDP首次突破1万美元
+  category: 经济
+  importance: 5
+  summary: 2019年中国国内生产总值达99.09万亿元，按年均汇率折算人均GDP首次突破1万美元，实现里程碑跨越。
+  confidence: 确定
+  tags: [经济, 宏观, 民生, 历史转折]
+  sources: [国家统计局, 新华网]
+
 

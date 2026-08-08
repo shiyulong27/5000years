@@ -1875,4 +1875,104 @@
   tags: [政治, 民生, 法国]
   sources: [维基百科, 新华网]
 
+- id: w-isis-territory-lost-201903
+  date: "2019-03-23"
+  title: 叙利亚民主军攻克巴古兹，极端组织“伊斯兰国”（ISIS）丧失最后据点
+  category: 战争
+  importance: 5
+  summary: 库尔德武装攻克ISIS在叙东部巴古兹最后堡垒，标志着ISIS“哈里发国”地盘被全面摧毁。
+  confidence: 确定
+  tags: [战争, 反恐, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-first-black-hole-image-201904
+  date: "2019-04-10"
+  title: 事件视界望远镜（EHT）项目发布人类历史上首张黑洞照片
+  category: 文化
+  importance: 5
+  summary: EHT全球协作组同时发布人类首张黑洞照片，捕获5500万光年M87黑洞阴影，验证了广义相对论。
+  confidence: 确定
+  tags: [天文学, 科技, 历史转折]
+  sources: [EHT, 新华网]
+
+- id: w-notre-dame-fire-201904
+  date: "2019-04-15"
+  title: 法国巴黎圣母院发生特大火灾，木质塔尖坍塌
+  category: 灾害
+  importance: 5
+  summary: 800多年历史的巴黎圣母院突发火灾，木质屋顶与标志性哥特塔尖倒塌，震撼全球文化遗产界。
+  confidence: 确定
+  tags: [灾害, 文化遗产, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-sri-lanka-easter-bombings-201904
+  date: "2019-04-21"
+  title: 斯里兰卡复活节连环恐怖袭击发生，造成269人遇难
+  category: 战争
+  importance: 4
+  summary: 斯里兰卡科伦坡等多处教堂及酒店发生8起自杀式连环爆炸，造成269死500多伤。
+  confidence: 确定
+  tags: [战争, 反恐]
+  sources: [维基百科, 新华网]
+
+- id: w-emperor-akihito-abdication-201904
+  date: "2019-04-30"
+  title: 日本明仁天皇退位，德仁天皇即位，改元“令和”
+  category: 政治
+  importance: 5
+  summary: 85岁明仁天皇退位结束31年“平成”时代；德仁即位为第126代天皇，年号更名“令和”。
+  confidence: 确定
+  tags: [政治, 日本, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-inf-treaty-withdrawal-201908
+  date: "2019-08-02"
+  title: 美国正式宣布退出与苏联签署的《中程导弹条约》（INF）
+  category: 政治
+  importance: 5
+  summary: 美国正式退出1987年《中程导弹条约》，俄罗斯随后宣布条约失效，全球军控体系遭到严重破坏。
+  confidence: 确定
+  tags: [军事, 军控, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-al-baghdadi-killed-201910
+  date: "2019-10-26"
+  title: “伊斯兰国”（ISIS）最高头目巴格达迪在美军突袭中自杀身亡
+  category: 政治
+  importance: 5
+  summary: 特朗普宣布美军特种部队在叙利亚西北部突袭搜捕中，ISIS首领巴格达迪引爆自杀炸弹身亡。
+  confidence: 确定
+  tags: [政治, 反恐, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-climate-emergency-un-201911
+  date: "2019-11-25"
+  title: 欧洲议会宣布全球进入“气候紧急状态”
+  category: 灾害
+  importance: 4
+  summary: 欧洲议会以压倒性票数通过决议，正式宣布欧洲与全球进入“气候与环境紧急状态”。
+  confidence: 确定
+  tags: [环境, 气候]
+  sources: [联合国, 维基百科]
+
+- id: w-boris-johnson-election-201912
+  date: "2019-12-12"
+  title: 鲍里斯·约翰逊率领保守党在英国大选中获压倒性胜利，锁定脱欧
+  category: 政治
+  importance: 5
+  summary: 鲍里斯·约翰逊率保守党赢下1987年以来最大议会多数，打碎脱欧僵局，锁定2020年正式脱欧。
+  confidence: 确定
+  tags: [政治, 英国, 脱欧, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-trump-first-impeachment-201912
+  date: "2019-12-18"
+  title: 美国国会众议院表决通过对总统特朗普的弹劾条款
+  category: 政治
+  importance: 4
+  summary: 众议院表决通过针对特朗普“滥用职权”和“妨碍国会”弹劾条款，特朗普成为史上第三位被弹劾美总统。
+  confidence: 确定
+  tags: [政治, 美国]
+  sources: [维基百科, 新华网]
+
 
