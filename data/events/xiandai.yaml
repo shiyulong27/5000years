@@ -1036,4 +1036,104 @@
   tags: [经济, 宏观, 历史转折]
   sources: [国家统计局, 日本内阁府, 新华网]
 
+- id: cn-twelfth-five-year-plan-201103
+  date: "2011-03-14"
+  title: 十一届全国人大四次会议表决通过“十二五”规划纲要
+  category: 政治
+  importance: 4
+  summary: 十一届全国人大四次会议表决通过《第十二个五年规划纲要》，明确科学发展主题与转变经济发展方式主线。
+  confidence: 确定
+  tags: [政治, 改革]
+  sources: [新华网]
+
+- id: cn-socialist-legal-system-201103
+  date: "2011-03-10"
+  title: 吴邦国宣布中国特色社会主义法律体系已经形成
+  category: 政治
+  importance: 5
+  summary: 十一届全国人大四次会议上宣布中国特色社会主义法律体系已经形成，是我国社会主义民主法制建设史上的里程碑。
+  confidence: 确定
+  tags: [法律, 政治, 历史转折]
+  sources: [新华网]
+
+- id: cn-jinghu-hsr-open-201106
+  date: "2011-06-30"
+  title: 京沪高速铁路全线正式通车运营
+  category: 经济
+  importance: 5
+  summary: 京沪高速铁路正式通车运营，全长1318公里，连接京津冀与长三角两大经济区，是中国建设标准最高的高速铁路。
+  confidence: 确定
+  tags: [经济, 交通, 历史转折]
+  sources: [新华网]
+
+- id: cn-cpc-90th-anniversary-201107
+  date: "2011-07-01"
+  title: 庆祝中国共产党成立90周年大会隆重举行
+  category: 政治
+  importance: 4
+  summary: 庆祝中国共产党成立90周年大会在北京人民大会堂隆重举行，总结党90年奋斗历程与基本经验。
+  confidence: 确定
+  tags: [政治]
+  sources: [新华网]
+
+- id: cn-wenzhou-train-collision-201107
+  date: "2011-07-23"
+  title: 甬温线“7·23”特别重大铁路交通事故发生
+  category: 灾害
+  importance: 4
+  summary: 甬温线浙江温州双屿路段发生动车组列车追尾特别重大铁路交通事故，造成40人死亡、210人受伤。
+  confidence: 确定
+  tags: [灾害, 事故]
+  sources: [新华网]
+
+- id: cn-tiangong1-launch-201109
+  date: "2011-09-29"
+  title: 天宫一号目标飞行器成功发射
+  category: 文化
+  importance: 5
+  summary: 长征二号F T1运载火箭成功将中国首个目标飞行器“天宫一号”送入预定轨道，迈出空间站建造历史性第一步。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [新华网, 国家航天局]
+
+- id: cn-xinhai-centenary-201110
+  date: "2011-10-10"
+  title: 纪念辛亥革命100周年大会举行
+  category: 政治
+  importance: 4
+  summary: 纪念辛亥革命100周年大会在北京隆重举行，深切缅怀孙中山先生等辛亥革命先驱，凝聚民族复兴力量。
+  confidence: 确定
+  tags: [政治, 历史]
+  sources: [新华网]
+
+- id: cn-sixth-plenum-17th-201110
+  date: "2011-10-18"
+  title: 党的十七届六中全会做出建设社会主义文化强国决定
+  category: 政治
+  importance: 4
+  summary: 中共十七届六中全会在北京举行，审议通过《中共中央关于深化文化体制改革推动社会主义文化大发展大繁荣若干重大问题的决定》。
+  confidence: 确定
+  tags: [政治, 文化]
+  sources: [新华网]
+
+- id: cn-shenzhou8-tiangong-docking-201111
+  date: "2011-11-03"
+  title: 神舟八号与天宫一号首次交会对接成功
+  category: 文化
+  importance: 5
+  summary: 神舟八号飞船与天宫一号目标飞行器成功实现空间交会对接，中国成为世界上第三个独立掌握交会对接技术的国家。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [新华网, 国家航天局]
+
+- id: cn-poverty-standard-raised-201111
+  date: "2011-11-29"
+  title: 国家大幅提高农村扶贫标准至2300元
+  category: 经济
+  importance: 4
+  summary: 中央扶贫开发工作会议决定将国家农村扶贫标准大幅提高至农民人均纯收入2300元，比2009年提高92%，惠及1.28亿人。
+  confidence: 确定
+  tags: [民生, 扶贫]
+  sources: [新华网]
+
 

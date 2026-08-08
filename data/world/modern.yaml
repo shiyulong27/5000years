@@ -1065,4 +1065,114 @@
   tags: [外交, 全球治理]
   sources: [新华网]
 
+- id: w-egypt-revolution-201101
+  date: "2011-01-25"
+  title: 埃及爆发大规模抗议，穆巴拉克辞去总统职务
+  category: 政治
+  importance: 5
+  summary: 开罗解放广场爆发持续大规模反政府抗议，执政30年的埃及总统穆巴拉克被迫辞职，“阿拉伯之春”剧烈演进。
+  confidence: 确定
+  tags: [政治, 中东, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-china-gdp-second-official-201102
+  date: "2011-02-14"
+  title: 日本正式证实中国2010年经济总量赶超日本跃居世界第二
+  category: 经济
+  importance: 5
+  summary: 日本内阁府公布数据确认中国2010年经济规模达5.879万亿美元，超越日本（5.474万亿美元），打破日本保持42年的世界第二地位。
+  confidence: 确定
+  tags: [经济, 宏观, 历史转折]
+  sources: [新华网, 维基百科]
+
+- id: w-fukushima-disaster-201103
+  date: "2011-03-11"
+  title: 日本发生9.0级特大地震并引发巨大海啸与福岛核事故
+  category: 灾害
+  importance: 5
+  summary: 日本东北部海域爆发9.0级特大地震引发十几米高海啸，致近2万人死亡失踪，福岛第一核电站发生最高级别（7级）核泄漏。
+  confidence: 确定
+  tags: [灾害, 地震, 核能, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-libya-war-201103
+  date: "2011-03-19"
+  title: 多国联军空袭利比亚，卡扎菲政权倒台
+  category: 战争
+  importance: 5
+  summary: 联合国安理会通过1973号决议后，多国联军发动空袭，利比亚内战爆发，统治利比亚42年的卡扎菲于10月被俘身亡。
+  confidence: 确定
+  tags: [战争, 中东, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-bin-laden-killed-201105
+  date: "2011-05-02"
+  title: “基地”组织头目本·拉登被美军特种部队击毙
+  category: 政治
+  importance: 5
+  summary: 美军海豹突击队在巴基斯坦阿伯塔巴德展开突袭行动击毙9·11事件主谋本·拉登，国际反恐里程碑。
+  confidence: 确定
+  tags: [政治, 反恐, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-south-sudan-independence-201107
+  date: "2011-07-09"
+  title: 南苏丹共和国独立，成为联合国第193个成员国
+  category: 政治
+  importance: 4
+  summary: 南苏丹经公投正式脱离苏丹独立，成为世界最年轻的独立国家及联合国第193个成员国。
+  confidence: 确定
+  tags: [政治, 非洲]
+  sources: [联合国, 新华网]
+
+- id: w-us-downgrade-s-p-201108
+  date: "2011-08-05"
+  title: 标普首次下调美国主权信用评级，全球金融动荡
+  category: 经济
+  importance: 4
+  summary: 标准普尔宣布将美国AAA级长期主权信用评级下调至AA+，这是美国历史上首次丧失顶级主权信用评级。
+  confidence: 确定
+  tags: [经济, 金融]
+  sources: [新华网, 维基百科]
+
+- id: w-occupy-wall-street-201109
+  date: "2011-09-17"
+  title: “占领华尔街”运动在美国纽约爆发
+  category: 政治
+  importance: 4
+  summary: 示威者在纽约华尔街扎营抗议贫富差距与金融精英贪婪，喊出“我们是99%”口号，波及全球。
+  confidence: 确定
+  tags: [政治, 经济, 美国]
+  sources: [维基百科, 新华网]
+
+- id: w-steve-jobs-pass-201110
+  date: "2011-10-05"
+  title: 苹果公司联合创始人史蒂夫·乔布斯逝世
+  category: 文化
+  importance: 4
+  summary: 重新定义个人电脑与移动智能手机体验的科技巨擘、苹果公司联合创始人乔布斯逝世，享年56岁。
+  confidence: 确定
+  tags: [科技, 人物]
+  sources: [维基百科, 新华网]
+
+- id: w-7-billion-population-201110
+  date: "2011-10-31"
+  title: 联合国确认全球人口突破70亿大关
+  category: 灾害
+  importance: 4
+  summary: 联合国人口基金会确认全球人口达到70亿，象征人类社会进步的同时资源环境瓶颈加剧。
+  confidence: 确定
+  tags: [人口, 环境]
+  sources: [联合国, 新华网]
+
+- id: w-us-iraq-war-end-201112
+  date: "2011-12-15"
+  title: 美军举行撤离仪式，历时8年的伊拉克战争正式结束
+  category: 战争
+  importance: 5
+  summary: 美军在巴格达举行降旗仪式，最后一批美军降旗离境，历时8年多的伊拉克战争正式结束。
+  confidence: 确定
+  tags: [战争, 中东, 历史转折]
+  sources: [维基百科, 新华网]
+
 
