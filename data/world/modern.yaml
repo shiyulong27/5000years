@@ -735,4 +735,114 @@
   tags: [经济, 宏观]
   sources: [联合国, IMF, 新华网]
 
+- id: w-capitol-riot-202101
+  date: "2021-01-06"
+  title: 美国国会大厦发生骚乱事件
+  category: 政治
+  importance: 5
+  summary: 特朗普支持者强行闯入美国国会大厦，打断总统大选结果认证会议，造成5人死亡，打破“美式民主”幻象。
+  confidence: 确定
+  tags: [政治, 美国, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-biden-inauguration-202101
+  date: "2021-01-20"
+  title: 拜登宣誓就任第46任美国总统
+  category: 政治
+  importance: 4
+  summary: 拜登宣誓就任美国第46任总统，哈里斯就任副总统，成为美国历史首位女性副总统。
+  confidence: 确定
+  tags: [政治, 美国]
+  sources: [新华网, 维基百科]
+
+- id: w-suez-canal-block-202103
+  date: "2021-03-23"
+  title: “长赐号”货轮搁浅阻塞苏伊士运河
+  category: 经济
+  importance: 4
+  summary: 巨型货轮“长赐号”在苏伊士运河搁浅横跨河道，造成运河双向大堵塞长达6天，数百艘货轮滞留。
+  confidence: 确定
+  tags: [经济, 航运]
+  sources: [新华网, 维基百科]
+
+- id: w-tokyo-olympics-202107
+  date: "2021-07-23"
+  title: 延迟一年举行的2020年东京奥运会开幕
+  category: 文化
+  importance: 4
+  summary: 因新冠疫情推迟一年的第32届夏奥会在日本东京开幕，成为现代奥运史上首个延期举行的奥运会。
+  confidence: 确定
+  tags: [体育, 文化]
+  sources: [新华网, 维基百科]
+
+- id: w-us-withdrawal-afghanistan-202108
+  date: "2021-08-30"
+  title: 美军完成从阿富汗撤离，长达20年的阿富汗战争结束
+  category: 战争
+  importance: 5
+  summary: 最后一架美军运输机飞离喀布尔，美军完成撤离，塔利班重新接管阿富汗，标志着20年阿富汗战争结束。
+  confidence: 确定
+  tags: [战争, 国际, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-aukus-pact-202109
+  date: "2021-09-15"
+  title: 美英澳建立AUKUS三边安全伙伴关系
+  category: 政治
+  importance: 4
+  summary: 美英澳三国宣布成立AUKUS安全联盟，美英协助澳大利亚建造核动力潜艇，引发核扩散担忧。
+  confidence: 确定
+  tags: [军事, 外交]
+  sources: [维基百科, 新华网]
+
+- id: w-cop26-glasgow-202111
+  date: "2021-11-13"
+  title: 联合国格拉斯哥气候大会达成《格拉斯哥气候公约》
+  category: 灾害
+  importance: 4
+  summary: COP26在格拉斯哥闭幕，近200个国家达成协议，首次明确写入逐步减少煤炭使用，维护1.5℃温控目标。
+  confidence: 确定
+  tags: [环境, 气候]
+  sources: [新华网, 联合国]
+
+- id: w-omicron-variant-202111
+  date: "2021-11-26"
+  title: 世卫组织将奥密克戎（Omicron）指定为需关注的新冠变异株
+  category: 灾害
+  importance: 4
+  summary: 世卫组织将南非首次报告的高传播力新冠变异株B.1.1.529命名为奥密克戎并列为需关注变异株。
+  confidence: 确定
+  tags: [灾害, 卫生]
+  sources: [新华网, 联合国]
+
+- id: w-merkel-retirement-202112
+  date: "2021-12-08"
+  title: 默克尔卸任德国总理，朔尔茨就任德国新总理
+  category: 政治
+  importance: 4
+  summary: 执政长达16年的德国总理默克尔正式卸任，朔尔茨当选第9任德国总理，欧洲进入“后默克尔时代”。
+  confidence: 确定
+  tags: [政治, 欧洲]
+  sources: [新华网, 维基百科]
+
+- id: w-james-webb-launch-202112
+  date: "2021-12-25"
+  title: 詹姆斯·韦布空间望远镜成功发射升空
+  category: 文化
+  importance: 4
+  summary: 耗资百亿美元、人类历史上最大最强的“詹姆斯·韦布”空间望远镜成功发射，开启对早期宇宙观测。
+  confidence: 确定
+  tags: [航天, 科技]
+  sources: [NASA, 维基百科, 新华网]
+
+- id: w-russia-nato-tensions-202112
+  date: "2021-12-30"
+  title: 俄罗斯与美国及北约展开安全保障谈判，乌克兰边境局势趋紧
+  category: 政治
+  importance: 4
+  summary: 俄罗斯公布对美对北约安全保障协议草案，要求北约停止东扩，乌克兰局势演变为欧洲地缘博弈焦点。
+  confidence: 确定
+  tags: [军事, 外交]
+  sources: [新华网, 维基百科]
+
 
