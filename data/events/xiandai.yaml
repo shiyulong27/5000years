@@ -2215,3 +2215,93 @@
   confidence: 确定
   tags: [交通, 科技, 高铁, 历史转折]
   sources: [铁道部, 新华网]
+
+- id: cn-agricultural-tax-repeal-200601
+  date: "2006-01-01"
+  title: 中华人民共和国废止农业税条例，在中国延续2600年的"皇粮国税"正式退出历史舞台
+  category: 经济
+  importance: 5
+  summary: 全面废止农业税条例，彻底免除全国8亿农民的农业税负担，结束了延续2600年的农业税历史，标志着新农村建设划时代突破。
+  confidence: 确定
+  tags: [民生, 农业, 改革, 历史转折]
+  sources: [新华网, 人大网]
+
+- id: cn-socialist-values-200603
+  date: "2006-03-04"
+  title: 胡锦涛提出以"八荣八耻"为主要内容的社会主义荣辱观
+  category: 政治
+  importance: 4
+  summary: 胡锦涛提出"八荣八耻"社会主义荣辱观，为新时期公民道德建设和思想道德教育确立了根本遵循。
+  confidence: 确定
+  tags: [文化, 思想, 道德]
+  sources: [新华网]
+
+- id: cn-11th-five-year-plan-200603
+  date: "2006-03-14"
+  title: 十届全国人大四次会议表决通过"十一五"规划纲要
+  category: 经济
+  importance: 5
+  summary: 人大表决通过《"十一五"规划纲要》，首次将"计划"改为"规划"，确立建设创新型国家与资源节约型、环境友好型社会战略。
+  confidence: 确定
+  tags: [经济, 规划, 历史转折]
+  sources: [新华网]
+
+- id: cn-three-gorges-dam-completed-200605
+  date: "2006-05-20"
+  title: 三峡大坝全线浇筑达到设计高程185米，主体工程全面建成
+  category: 经济
+  importance: 5
+  summary: 随着最后一方混凝土浇筑完毕，三峡大坝全线达到设计高程，世界上规模最大的水利枢纽工程主体工程宣告建成。
+  confidence: 确定
+  tags: [工程, 科技, 水利, 历史转折]
+  sources: [新华网, 中国三峡]
+
+- id: cn-qinghai-tibet-railway-open-200607
+  date: "2006-07-01"
+  title: 青藏铁路全线通车运营，结束西藏不通铁路的历史
+  category: 经济
+  importance: 5
+  summary: 青藏铁路格尔木至拉萨段通车，全线全长1956公里，克服高原冻土等三大世界级难题，创造了世界铁路建设史上的奇迹。
+  confidence: 确定
+  tags: [工程, 交通, 西藏, 历史转折]
+  sources: [新华网, 铁道部]
+
+- id: cn-cpc-16th-6th-plenum-200610
+  date: "2006-10-11"
+  title: 中共十六届六中全会审议通过《关于构建社会主义和谐社会若干重大问题的决定》
+  category: 政治
+  importance: 5
+  summary: 全会把"构建社会主义和谐社会"摆在党和国家工作更加突出的位置，明确了构建和谐社会的总体目标和指导原则。
+  confidence: 确定
+  tags: [政治, 和谐社会, 历史转折]
+  sources: [新华网]
+
+- id: cn-long-march-70th-200610
+  date: "2006-10-22"
+  title: 纪念中国工农红军长征胜利70周年大会在北京隆重举行
+  category: 政治
+  importance: 4
+  summary: 纪念红军长征胜利70周年大会在人民大会堂举行，胡锦涛发表讲话，号召大力弘扬伟大长征精神。
+  confidence: 确定
+  tags: [政治, 历史]
+  sources: [新华网]
+
+- id: cn-focac-beijing-summit-200611
+  date: "2006-11-04"
+  title: 中非合作论坛北京峰会隆重开幕，48个非洲国家元首和代表出席
+  category: 政治
+  importance: 5
+  summary: 中非合作论坛北京峰会在京举行，胡锦涛提出发展中非新型战略伙伴关系8项政策措施，开启中非友好合作新篇章。
+  confidence: 确定
+  tags: [外交, 非洲, 历史转折]
+  sources: [外交部, 新华网]
+
+- id: cn-typhoon-saomai-200608
+  date: "2006-08-10"
+  title: 1949年以来登陆中国大陆最强台风"桑美"登陆浙江苍南
+  category: 灾害
+  importance: 4
+  summary: 超强台风"桑美"以17级风力在浙江苍南登陆，造成浙闽沿海严重人员伤亡和经济损失，国家全力展开抗灾救灾。
+  confidence: 确定
+  tags: [灾害, 台风]
+  sources: [新华网, 气象局]

@@ -2264,3 +2264,83 @@
   confidence: 确定
   tags: [政治, 巴基斯坦, 南亚, 历史转折]
   sources: [维基百科, 新华网]
+
+- id: w-montenegro-independence-200606
+  date: "2006-06-03"
+  title: 黑山议会正式宣布黑山独立，塞尔维亚和黑山国家联盟解体
+  category: 政治
+  importance: 5
+  summary: 经公投后黑山正式宣布独立，南斯拉夫联邦最后两个加盟共和国分道扬镳，塞黑联盟正式解体。
+  confidence: 确定
+  tags: [政治, 欧洲, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-world-cup-germany-200606
+  date: "2006-06-09"
+  title: 第18届世界杯足球赛在德国举行，意大利队夺得冠军
+  category: 文化
+  importance: 5
+  summary: 德国世界杯于6月9日至7月9日举行，意大利在决赛点球大战击败法国，第四次夺得世界杯冠军，齐达内红牌离场引发全球关注。
+  confidence: 确定
+  tags: [体育, 足球, 历史转折]
+  sources: [FIFA, 维基百科]
+
+- id: w-lebanon-war-200607
+  date: "2006-07-12"
+  title: 黎以爆发第二次黎巴嫩战争，造成千余人平民伤亡
+  category: 战争
+  importance: 5
+  summary: 真主党与以色列军队爆发历时34天的高强度军事冲突，造成1000余黎巴嫩平民伤亡，安理会通过1701号决议停火。
+  confidence: 确定
+  tags: [战争, 中东, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-pluto-demoted-dwarf-planet-200608
+  date: "2006-08-24"
+  title: 国际天文学联合会投票通过行星新定义，冥王星被降级为矮行星
+  category: 文化
+  importance: 5
+  summary: IAU在布拉格大会上重新定义"行星"，冥王星因未能清除轨道附近其他天体被剥夺九大行星地位，降格为"矮行星"。
+  confidence: 确定
+  tags: [天文, 科学, 历史转折]
+  sources: [IAU, 维基百科]
+
+- id: w-north-korea-first-nuclear-test-200610
+  date: "2006-10-09"
+  title: 朝鲜进行首次地下核试验，引发国际社会震动与联合国严厉制裁
+  category: 政治
+  importance: 5
+  summary: 朝鲜宣称成功进行首次地下核试验，国际社会一致强烈谴责，联合国安理会通过1718号决议对朝鲜实施严厉经济与军事制裁。
+  confidence: 确定
+  tags: [军事, 朝鲜半岛, 核武, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-saddam-executed-200612
+  date: "2006-12-30"
+  title: 伊拉克前总统萨达姆·侯赛因在巴格达被执行绞刑
+  category: 政治
+  importance: 5
+  summary: 被伊拉克高等法庭以反人类罪判处死刑后，伊前总统萨达姆在巴格达被执行绞刑，标志伊拉克战后政局彻底改观。
+  confidence: 确定
+  tags: [政治, 伊拉克, 中东, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-java-earthquake-200605
+  date: "2006-05-27"
+  title: 印度尼西亚爪哇岛发生6.3级强震，造成近6000人遇难
+  category: 灾害
+  importance: 5
+  summary: 印尼日惹及爪哇岛地区发生强烈地震，导致近6000人遇难、数万座房屋倒塌，全球多国紧急提供人道主义援助。
+  confidence: 确定
+  tags: [灾害, 地震, 东南亚]
+  sources: [维基百科, 新华网]
+
+- id: w-shinzo-abe-pm-200609
+  date: "2006-09-26"
+  title: 安倍晋三首次当选日本首相，成为战后日本最年轻的首相
+  category: 政治
+  importance: 4
+  summary: 安倍晋三接替小泉纯一郎出任日本第90任首相，上任后首访中国开展"破冰之旅"，推动中日关系改善。
+  confidence: 确定
+  tags: [政治, 日本, 外交]
+  sources: [维基百科, 新华网]
