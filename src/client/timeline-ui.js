@@ -275,59 +275,59 @@ if (timeline) {
   const btnSortAsc  = document.getElementById('btn-sort-asc')
   const btnSortDesc = document.getElementById('btn-sort-desc')
 
+  /** 收集所有参与 grid 定位的元素并缓存其原始 gridRow */
+  function collectGridItems() {
+    const selectors = ['.cell', '.banner-row', '.civ-band', '.figure-slot']
+    const items = []
+    for (const sel of selectors) {
+      for (const el of timeline.querySelectorAll(sel)) {
+        const raw = el.style.gridRow
+        if (!raw) continue
+        // 格式如 "12" 或 "12 / 15"
+        const parts = raw.split('/').map((s) => parseInt(s.trim(), 10))
+        const rowStart = parts[0]
+        const rowEnd = parts[1] !== undefined ? parts[1] : (parts[0] + 1)
+        items.push({ el, rowStart, rowEnd })
+      }
+    }
+    return items
+  }
+
+  // 在首次切换时缓存正序原始值，避免多次翻转产生累积偏差
+  let _cachedItems = null
+  let _maxRow = 0
+
+  function getItems() {
+    if (_cachedItems) return { items: _cachedItems, maxRow: _maxRow }
+    _cachedItems = collectGridItems()
+    _maxRow = _cachedItems.reduce((m, i) => Math.max(m, i.rowEnd), 0)
+    return { items: _cachedItems, maxRow: _maxRow }
+  }
+
+  /**
+   * 镜像翻转：以 maxRow 为轴，对每个元素的 gridRow 做反射
+   *   newStart = maxRow - rowEnd   + 2
+   *   newEnd   = maxRow - rowStart + 2
+   * 保持每个元素占用的行数不变，位置整体翻转
+   */
+  function applyOrder(desc) {
+    const { items, maxRow } = getItems()
+    for (const { el, rowStart, rowEnd } of items) {
+      if (desc) {
+        const newStart = maxRow - rowEnd + 2
+        const newEnd   = maxRow - rowStart + 2
+        el.style.gridRow = `${newStart} / ${newEnd}`
+      } else {
+        el.style.gridRow = `${rowStart} / ${rowEnd}`
+      }
+    }
+    timeline.classList.toggle('is-reversed', desc)
+
+    // 同步按 data-date 物理重排各年份容器内部的事件卡片 DOM 顺序（倒序: 12月→1月，正序: 1月→12月）
+    sortAllContainers(desc)
+  }
+
   if (btnSortAsc && btnSortDesc) {
-    /** 收集所有参与 grid 定位的元素并缓存其原始 gridRow */
-    function collectGridItems() {
-      const selectors = ['.cell', '.banner-row', '.civ-band', '.figure-slot']
-      const items = []
-      for (const sel of selectors) {
-        for (const el of timeline.querySelectorAll(sel)) {
-          const raw = el.style.gridRow
-          if (!raw) continue
-          // 格式如 "12" 或 "12 / 15"
-          const parts = raw.split('/').map((s) => parseInt(s.trim(), 10))
-          const rowStart = parts[0]
-          const rowEnd = parts[1] !== undefined ? parts[1] : (parts[0] + 1)
-          items.push({ el, rowStart, rowEnd })
-        }
-      }
-      return items
-    }
-
-    // 在首次切换时缓存正序原始值，避免多次翻转产生累积偏差
-    let _cachedItems = null
-    let _maxRow = 0
-
-    function getItems() {
-      if (_cachedItems) return { items: _cachedItems, maxRow: _maxRow }
-      _cachedItems = collectGridItems()
-      _maxRow = _cachedItems.reduce((m, i) => Math.max(m, i.rowEnd), 0)
-      return { items: _cachedItems, maxRow: _maxRow }
-    }
-
-    /**
-     * 镜像翻转：以 maxRow 为轴，对每个元素的 gridRow 做反射
-     *   newStart = maxRow - rowEnd   + 2
-     *   newEnd   = maxRow - rowStart + 2
-     * 保持每个元素占用的行数不变，位置整体翻转
-     */
-    function applyOrder(desc) {
-      const { items, maxRow } = getItems()
-      for (const { el, rowStart, rowEnd } of items) {
-        if (desc) {
-          const newStart = maxRow - rowEnd + 2
-          const newEnd   = maxRow - rowStart + 2
-          el.style.gridRow = `${newStart} / ${newEnd}`
-        } else {
-          el.style.gridRow = `${rowStart} / ${rowEnd}`
-        }
-      }
-      timeline.classList.toggle('is-reversed', desc)
-
-      // 同步按 data-date 物理重排各年份容器内部的事件卡片 DOM 顺序（倒序: 12月→1月，正序: 1月→12月）
-      sortAllContainers(desc)
-    }
-
     btnSortAsc.addEventListener('click', () => {
       btnSortAsc.classList.add('active')
       btnSortDesc.classList.remove('active')
@@ -339,13 +339,114 @@ if (timeline) {
       btnSortAsc.classList.remove('active')
       applyOrder(true)
     })
+  }
 
-    // 初始化检查：若页面加载时默认按钮选中的是倒序，立即执行一次按日期倒序
-    if (btnSortDesc.classList.contains('active')) {
-      applyOrder(true)
+  // ── LocalStorage 本地偏好持久化（默认从 LS 读取，点击保存按钮更新） ──
+  const STORAGE_KEY = 'tenqiu_toolbar_settings'
+
+  function loadSavedSettings() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY)
+      if (!raw) return null
+      return JSON.parse(raw)
+    } catch (e) {
+      console.warn('读取十丘本地偏好设置失败:', e)
+      return null
     }
   }
 
-  // 初始应用全套重算与卡片物理排序
+  function saveCurrentSettings() {
+    const settings = {
+      levels: levelToggles.filter((t) => t.checked).map((t) => Number(t.value)),
+      viewMode: btnGlobalSummary?.classList.contains('active') ? 'summary' : 'detail',
+      sortOrder: btnSortDesc?.classList.contains('active') ? 'desc' : 'asc',
+      showWorld: showWorld ? showWorld.checked : true,
+      showFigures: showFigures ? showFigures.checked : false,
+      categories: catToggles.filter((t) => t.checked).map((t) => t.value),
+    }
+
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(settings))
+      return true
+    } catch (e) {
+      console.warn('保存十丘本地偏好设置失败:', e)
+      return false
+    }
+  }
+
+  function applySavedSettingsToUI() {
+    const settings = loadSavedSettings()
+    if (!settings) return // 无本地存盘偏好时保持当前 HTML 的初始默认状态
+
+    // 1. 等级筛选 (levels)
+    if (Array.isArray(settings.levels)) {
+      const levelSet = new Set(settings.levels)
+      levelToggles.forEach((t) => {
+        t.checked = levelSet.has(Number(t.value))
+      })
+    }
+
+    // 2. 世界对照 (showWorld)
+    if (typeof settings.showWorld === 'boolean' && showWorld) {
+      showWorld.checked = settings.showWorld
+    }
+
+    // 3. 人物 (showFigures)
+    if (typeof settings.showFigures === 'boolean' && showFigures) {
+      showFigures.checked = settings.showFigures
+    }
+
+    // 4. 事件分类 (categories)
+    if (Array.isArray(settings.categories)) {
+      const catSet = new Set(settings.categories)
+      catToggles.forEach((t) => {
+        t.checked = catSet.has(t.value)
+      })
+    }
+
+    // 5. 视图模式 (viewMode: 'summary' | 'detail')
+    if (settings.viewMode === 'summary') {
+      btnGlobalSummary?.classList.add('active')
+      btnGlobalDetail?.classList.remove('active')
+      toggleBtns.forEach((b) => setYearViewMode(b.dataset.year, 'summary'))
+      syncGlobalButtons()
+    } else if (settings.viewMode === 'detail') {
+      btnGlobalDetail?.classList.add('active')
+      btnGlobalSummary?.classList.remove('active')
+      toggleBtns.forEach((b) => setYearViewMode(b.dataset.year, 'detail'))
+      syncGlobalButtons()
+    }
+
+    // 6. 排序方向 (sortOrder: 'asc' | 'desc')
+    if (settings.sortOrder === 'desc') {
+      btnSortDesc?.classList.add('active')
+      btnSortAsc?.classList.remove('active')
+      applyOrder(true)
+    } else if (settings.sortOrder === 'asc') {
+      btnSortAsc?.classList.add('active')
+      btnSortDesc?.classList.remove('active')
+      applyOrder(false)
+    }
+  }
+
+  // 绑定 [💾 保存为默认] 按钮点击事件
+  const btnSaveSettings = document.getElementById('btn-save-settings')
+  btnSaveSettings?.addEventListener('click', () => {
+    const success = saveCurrentSettings()
+    if (success) {
+      btnSaveSettings.classList.add('saved-success')
+      const origText = btnSaveSettings.textContent
+      btnSaveSettings.textContent = '✓ 已保存默认'
+      setTimeout(() => {
+        btnSaveSettings.classList.remove('saved-success')
+        btnSaveSettings.textContent = origText
+      }, 2000)
+    }
+  })
+
+  // 1. 初始化时先尝试恢复本地保存的偏好设置
+  applySavedSettingsToUI()
+
+  // 2. 应用全套可见性重算与 DOM 卡片排序
   apply()
 }
