@@ -2174,3 +2174,93 @@
   confidence: 确定
   tags: [战争, 反恐, 南亚, 历史转折]
   sources: [维基百科, 新华网]
+
+- id: w-ban-ki-moon-un-200701
+  date: "2007-01-01"
+  title: 潘基文正式就任联合国第八任秘书长
+  category: 政治
+  importance: 5
+  summary: 韩国外交官潘基文正式接替安南，成为联合国第八任秘书长，为40年来首位来自东亚的联合国掌门人。
+  confidence: 确定
+  tags: [政治, 联合国, 历史转折]
+  sources: [联合国, 维基百科, 新华网]
+
+- id: w-iphone-launch-200701
+  date: "2007-01-09"
+  title: 史蒂夫·乔布斯在旧金山正式发布首款 iPhone，重新定义智能手机
+  category: 文化
+  importance: 5
+  summary: 苹果公司CEO乔布斯在Macworld上发布一代iPhone，开创多点触控与移动互联网新时代，掀起全球科技与智能手机产业革命。
+  confidence: 确定
+  tags: [科技, 移动互联网, 历史转折]
+  sources: [维基百科, Apple]
+
+- id: w-putin-munich-speech-200702
+  date: "2007-02-10"
+  title: 俄罗斯总统普京在慕尼黑安全会议发表重要演讲，猛烈批评单极世界
+  category: 政治
+  importance: 5
+  summary: 普京在第43届慕尼黑安全会议发表震撼演说，强烈批判美国单边主义与北约东扩，被国际社会视为大国地缘关系转型关键标志。
+  confidence: 确定
+  tags: [政治, 外交, 地缘, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-subprime-mortgage-crisis-200704
+  date: "2007-04-02"
+  title: 美国第二大次级房贷公司申请破产保护，次贷危机正式显现
+  category: 经济
+  importance: 5
+  summary: 新世纪金融公司破产揭开美国次贷危机序幕，8月起迅速演变为全球金融市场剧烈动荡，成为2008年全球金融风暴直接导火索。
+  confidence: 确定
+  tags: [经济, 金融, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-sarkozy-elected-president-200705
+  date: "2007-05-06"
+  title: 尼古拉·萨科齐当选法国总统，开启戴高乐派新时代
+  category: 政治
+  importance: 4
+  summary: 萨科齐在法国总统大选第二轮投票中击败罗雅尔，当选法国总统，主张市场经济改革与强化欧洲一体化领导力。
+  confidence: 确定
+  tags: [政治, 法国, 欧洲]
+  sources: [维基百科, 新华网]
+
+- id: w-virginia-tech-shooting-200704
+  date: "2007-04-16"
+  title: 美国弗吉尼亚理工大学发生恶性枪击案，造成33人死亡
+  category: 灾害
+  importance: 4
+  summary: 校园内爆发枪击惨案，造成包括凶手在内33人遇难，引发全球对校园安全、心理健康与枪支管控的深刻反思。
+  confidence: 确定
+  tags: [社会, 美国, 枪支]
+  sources: [维基百科, 新华网]
+
+- id: w-greece-forest-fires-200708
+  date: "2007-08-23"
+  title: 希腊爆发历史性特大森林大火，造成逾80人遇难
+  category: 灾害
+  importance: 4
+  summary: 罕见高温与干旱引发希腊全国多处森林大火，毁坏数十万公顷森林与农田，联合国及欧洲多国联合展开紧急救援。
+  confidence: 确定
+  tags: [灾害, 环境, 欧洲]
+  sources: [维基百科, 新华网]
+
+- id: w-ipcc-fourth-assessment-200711
+  date: "2007-11-17"
+  title: 联合国IPCC发布第四次评估报告，确认全球变暖主要由人类活动引起
+  category: 灾害
+  importance: 5
+  summary: 气候变化专门委员会（IPCC）发布报告，指出气候变暖事实不容置疑并极其可能由人类活动导致，IPCC于同年获诺贝尔和平奖。
+  confidence: 确定
+  tags: [环境, 气候, 历史转折]
+  sources: [IPCC, 维基百科]
+
+- id: w-benazir-bhutto-assassination-200712
+  date: "2007-12-27"
+  title: 巴基斯坦前总理贝娜齐尔·布托在拉瓦尔品第遇刺身亡
+  category: 政治
+  importance: 5
+  summary: 巴基斯坦首位女性总理布托在集会后遭枪击与自杀式炸弹袭击身亡，震惊国际社会，巴基斯坦政局出现重大动荡。
+  confidence: 确定
+  tags: [政治, 巴基斯坦, 南亚, 历史转折]
+  sources: [维基百科, 新华网]

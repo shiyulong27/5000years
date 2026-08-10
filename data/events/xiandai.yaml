@@ -2125,3 +2125,93 @@
   confidence: 确定
   tags: [经济, 宏观, 金融危机, 历史转折]
   sources: [新华网, 国务院]
+
+- id: cn-property-law-200703
+  date: "2007-03-16"
+  title: 十届全国人大五次会议表决通过《中华人民共和国物权法》
+  category: 政治
+  importance: 5
+  summary: 《物权法》高票通过，明确私有财产与公有财产平等保护原则，标志着中国特色社会主义法律体系建设迈出里程碑式一步。
+  confidence: 确定
+  tags: [政治, 法治, 历史转折]
+  sources: [新华网, 人大网]
+
+- id: cn-tai-lake-algae-blooms-200705
+  date: "2007-05-29"
+  title: 太湖蓝藻大面积爆发致无锡自来水危机，国家重拳整治水污染
+  category: 灾害
+  importance: 4
+  summary: 太湖水质恶化导致蓝藻大面积暴发，无锡发生严重饮用水危机，促使国家全面启动太湖流域生态修复与生态文明建设。
+  confidence: 确定
+  tags: [环境, 生态, 环保]
+  sources: [新华网, 环保部]
+
+- id: cn-hong-kong-10th-anniversary-200707
+  date: "2007-07-01"
+  title: 庆祝香港回归祖国10周年大会暨香港特别行政区第三届政府就职典礼举行
+  category: 政治
+  importance: 5
+  summary: 胡锦涛出席庆祝大会并发表重要讲话，曾荫权宣誓就任三届行政长官，证明"一国两制"方针在香港取得巨大成功。
+  confidence: 确定
+  tags: [政治, 香港, 一国两制, 历史转折]
+  sources: [新华网]
+
+- id: cn-rural-minimum-living-allowance-200707
+  date: "2007-07-11"
+  title: 国务院印发通知在全国范围建立农村最低生活保障制度
+  category: 经济
+  importance: 5
+  summary: 国务院发布《关于在全国建立农村最低生活保障制度的通知》，将数千万困难农村居民纳入最低生活保障，实现民生保障制度重大飞跃。
+  confidence: 确定
+  tags: [民生, 社保, 农村, 历史转折]
+  sources: [新华网, 国务院]
+
+- id: cn-cpc-17th-congress-200710
+  date: "2007-10-15"
+  title: 中国共产党第十七次全国代表大会在北京胜利召开
+  category: 政治
+  importance: 5
+  summary: 中共十七大确立深入贯彻落实科学发展观，把科学发展观写入党章，明确到2020年全面建设小康社会的奋斗目标。
+  confidence: 确定
+  tags: [政治, 党建, 历史转折]
+  sources: [新华网]
+
+- id: cn-change1-lunar-orbiter-200710
+  date: "2007-10-24"
+  title: 我国首颗月球探测卫星"嫦娥一号"在西昌卫星发射中心成功发射
+  category: 文化
+  importance: 5
+  summary: 嫦娥一号由长征三号甲火箭发射升空，11月5日成功进入环月轨道，标志着中国探月工程（绕、落、回）第一步取得圆满成功。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [国家航天局, 新华网]
+
+- id: cn-shanghai-stock-index-6000-200710
+  date: "2007-10-16"
+  title: 沪指突破6124点创历史新高，中国资本市场迎来前所未有大牛市
+  category: 经济
+  importance: 4
+  summary: 上证综指触及历史最高点6124.04点，股改效应与经济高速增长推动资本市场前所未有繁荣，但也伴随后续剧烈波动。
+  confidence: 确定
+  tags: [经济, 金融, 股市]
+  sources: [新华网, 证券时报]
+
+- id: cn-cross-strait-charter-flights-200702
+  date: "2007-02-15"
+  title: 两岸包机常态化与海峡两岸经济文化交流持续深化
+  category: 政治
+  importance: 4
+  summary: 2007年两岸节日包机与常态化包机试点范围进一步扩大，为2008年全面实现大三通奠定了坚实基础。
+  confidence: 确定
+  tags: [政治, 两岸]
+  sources: [新华网, 国台办]
+
+- id: cn-harmony-bullet-train-200704
+  date: "2007-04-18"
+  title: 中国铁路第六次大提速，"和谐号"动车组（CRH）正式投入运营
+  category: 经济
+  importance: 5
+  summary: 全国铁路实施第六次大面积提速，时速200公里及以上的"和谐号"动车组正式在干线开行，中国铁路正式迈入动车组时代。
+  confidence: 确定
+  tags: [交通, 科技, 高铁, 历史转折]
+  sources: [铁道部, 新华网]
