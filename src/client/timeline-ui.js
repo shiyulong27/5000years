@@ -159,8 +159,8 @@ if (timeline) {
       if (worldDetailWrapper) worldDetailWrapper.style.display = 'none'
     } else {
       if (summaryWrapper) summaryWrapper.style.display = 'none'
-      if (chinaDetailWrapper) chinaDetailWrapper.style.display = 'block'
-      if (worldDetailWrapper) worldDetailWrapper.style.display = 'block'
+      if (chinaDetailWrapper) chinaDetailWrapper.style.display = ''
+      if (worldDetailWrapper) worldDetailWrapper.style.display = ''
     }
   }
 
@@ -287,6 +287,19 @@ if (timeline) {
         }
       }
       timeline.classList.toggle('is-reversed', desc)
+
+      // 同步物理翻转各年份内部的事件卡片 DOM 顺序（支持正序 1月→12月 / 倒序 12月→1月）
+      const eventContainers = timeline.querySelectorAll('.year-detail-wrapper, .world-detail-wrapper, .cell-china, .cell-world')
+      eventContainers.forEach((container) => {
+        const cards = [...container.children].filter((el) => el.classList.contains('event-card'))
+        if (cards.length > 1) {
+          if (!container._origCards) {
+            container._origCards = cards
+          }
+          const targetOrder = desc ? [...container._origCards].reverse() : container._origCards
+          targetOrder.forEach((card) => container.appendChild(card))
+        }
+      })
     }
 
     btnSortAsc.addEventListener('click', () => {
