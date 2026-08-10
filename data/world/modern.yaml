@@ -3092,5 +3092,55 @@
   tags: [灾害, 恐怖袭击, 美国]
   sources: [维基百科, 新华网]
 
+- id: w-taliban-kabul-199609
+  date: "1996-09-27"
+  title: 塔利班武装攻占阿富汗首都喀布尔
+  category: 战争
+  importance: 4
+  summary: 阿富汗塔利班武装攻占首都喀布尔并建立政权，阿富汗内战进入新阶段，塔利班随后推行严苛的伊斯兰原教旨主义统治。
+  confidence: 确定
+  tags: [战争, 阿富汗, 塔利班]
+  sources: [维基百科, 新华网]
+
+- id: w-atlanta-olympics-199607
+  date: "1996-07-19"
+  title: 第26届夏季奥运会（亚特兰大）开幕，庆祝奥运百年
+  category: 文化
+  importance: 3
+  summary: 第26届夏季奥林匹克运动会在美国亚特兰大开幕，以此纪念现代奥运会百年华诞，197个国家和地区参赛。
+  confidence: 确定
+  tags: [体育, 奥运]
+  sources: [国际奥委会, 维基百科]
+
+- id: w-annan-secretary-199612
+  date: "1996-12-13"
+  title: 科菲·安南当选联合国秘书长
+  category: 政治
+  importance: 3
+  summary: 联合国安理会推荐加纳外交官科菲·安南出任联合国秘书长，1997年1月1日正式就任，成为首位出身联合国内部的秘书长。
+  confidence: 确定
+  tags: [政治, 联合国]
+  sources: [联合国, 维基百科]
+
+- id: w-mad-cow-crisis-199603
+  date: "1996-03-20"
+  title: 英国爆发"疯牛病"危机，引发欧洲牛肉恐慌
+  category: 灾害
+  importance: 3
+  summary: 英国政府首次承认食用感染疯牛病牛肉可能与人类致命脑病有关，引发欧洲牛肉消费恐慌和贸易禁令，重创英国畜牧业。
+  confidence: 确定
+  tags: [灾害, 公共卫生]
+  sources: [维基百科, 世界动物卫生组织]
+
+- id: w-arafat-elected-199601
+  date: "1996-01-20"
+  title: 阿拉法特当选巴勒斯坦民族权力机构首任主席
+  category: 政治
+  importance: 3
+  summary: 巴勒斯坦举行首次大选，亚西尔·阿拉法特当选巴勒斯坦民族权力机构首任主席，为巴勒斯坦自治政权奠定基础。
+  confidence: 确定
+  tags: [政治, 中东, 巴勒斯坦]
+  sources: [维基百科, 新华网]
+
 
 
