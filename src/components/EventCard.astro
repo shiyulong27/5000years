@@ -4,13 +4,19 @@ import { formatDate } from '../lib/date.js'
 const { event } = Astro.props
 const uncertain = event.confidence && event.confidence !== '确定'
 
-// 属性 1：标签（Tag）—— 精确描述事件属性（如 航天、科技、政治、经济、外交、军事、体育 等）
-const preferredTags = ['航天', '科技', 'AI', '深潜', '科考', '外交', '军事', '芯片', '电影', '体育', '法律', '改革', '民生', '教育', '关税', '贸易', '金融', '俄乌', '中东']
+// 属性 1：标签（Tag）—— 精确描述事件属性
+const preferredTags = ['航天', '科技', 'AI', '深潜', '科考', '外交', '军事', '芯片', '电影', '体育', '法律', '改革', '民生', '教育', '关税', '贸易', '金融', '俄乌', '中东', '农业', '功勋']
 const tag = event.tags?.find((t) => preferredTags.includes(t)) || event.tags?.[0] || event.category
 
 // 属性 2：重要度等级（1-5 级），对应黄色 ⭐ 数量
 const importance = Number(event.importance) || 3
 const stars = '⭐'.repeat(Math.min(5, Math.max(1, importance)))
+
+// 配图 URL 转换与拼接 BASE_URL
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`
+const rawImgUrl = typeof event.image === 'object' ? event.image?.url : event.image
+const imgCaption = typeof event.image === 'object' ? event.image?.caption : null
+const imgUrl = rawImgUrl ? (rawImgUrl.startsWith('/') ? `${base}${rawImgUrl.slice(1)}` : rawImgUrl) : null
 ---
 
 <article
@@ -41,10 +47,17 @@ const stars = '⭐'.repeat(Math.min(5, Math.max(1, importance)))
     </span>
   </header>
 
-
   <h3 class="event-title">{event.title}</h3>
 
-  {/* 缺失字段不渲染对应区块，不显示空白占位——数据缺失是常态而非错误 */}
+  {/* 历史图片/媒体配图支持 */}
+  {imgUrl && (
+    <figure class="event-media">
+      <img src={imgUrl} alt={imgCaption || event.title} loading="lazy" class="event-image" />
+      {imgCaption && <figcaption class="event-image-caption">{imgCaption}</figcaption>}
+    </figure>
+  )}
+
+  {/* 缺失字段不渲染对应区块，不显示空白占位 */}
   {event.summary && <p class="event-summary">{event.summary}</p>}
 
   {event.sources?.length > 0 && (

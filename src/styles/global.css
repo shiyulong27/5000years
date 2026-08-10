@@ -768,6 +768,38 @@ main,
   content: '出处：';
 }
 
+/* ── 事件卡片历史图片/媒体样式 ──────────────────────────────── */
+.event-media {
+  margin: 0.6rem 0 0.4rem;
+  padding: 0;
+  border-radius: calc(var(--radius) + 2px);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--card);
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.event-image {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image {
+  transform: scale(1.02);
+}
+
+.event-image-caption {
+  font-size: 0.76rem;
+  color: var(--muted);
+  padding: 0.35rem 0.6rem;
+  background: color-mix(in srgb, var(--card) 95%, var(--fg));
+  border-top: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
+  text-align: center;
+}
+
 /* ── 文明色带 ─────────────────────────────────────── */
 
 .civ-band {

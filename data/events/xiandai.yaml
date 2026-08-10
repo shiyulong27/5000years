@@ -734,7 +734,19 @@
   summary: 天问一号着陆巡视器成功着陆于火星乌托邦平原南部预选着陆区，“祝融号”火星车展开巡视探测，中国成为第二个成功着陆火星开展巡视探测的国家。
   confidence: 确定
   tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
+- id: cn-yuan-longping-pass-202105
+  date: "2021-05-22"
+  title: “杂交水稻之父”袁隆平院士在长沙逝世
+  category: 文化
+  importance: 5
+  summary: |
+    “杂交水稻之父”、中国工程院院士、共和国勋章获得者袁隆平在湖南长沙逝世，享年91岁。全国数十万民众自发赶赴长沙悼念，联合国及国际社会高度评价其为解决全球饥饿问题作出的划时代贡献。
+  confidence: 确定
+  tags: [科技, 农业, 功勋, 历史转折]
+  sources: [新华网, 人民日报]
+  image:
+    url: "/images/events/2021/yuan_longping.jpg"
+    caption: "“杂交水稻之父”袁隆平院士在金黄色的试验田观察水稻生长"
 
 - id: cn-three-child-policy-202105
   date: "2021-05-31"
