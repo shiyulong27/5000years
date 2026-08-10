@@ -2992,5 +2992,55 @@
   tags: [政治, 东欧]
   sources: [维基百科, 新华网]
 
+- id: w-rwanda-genocide-199404
+  date: "1994-04-07"
+  title: 卢旺达爆发种族大屠杀，约80万人惨遭杀害
+  category: 战争
+  importance: 5
+  summary: 卢旺达总统座机被击落后，胡图族极端分子对图西族发动系统性大屠杀，持续近百日，约80万至100万人遇难，成为20世纪最惨烈的种族灭绝之一。
+  confidence: 确定
+  tags: [战争, 大屠杀, 非洲, 历史转折]
+  sources: [维基百科, 联合国]
+
+- id: w-mandela-elected-199404
+  date: "1994-04-27"
+  title: 南非举行首次多种族大选，曼德拉当选总统
+  category: 政治
+  importance: 5
+  summary: 南非举行历史上首次不分种族的全民大选，非国大领袖纳尔逊·曼德拉当选南非首位黑人总统，标志种族隔离制度正式终结，开启南非新纪元。
+  confidence: 确定
+  tags: [政治, 南非, 曼德拉, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-nafta-effective-199401
+  date: "1994-01-01"
+  title: 《北美自由贸易协定》正式生效
+  category: 经济
+  importance: 4
+  summary: 美国、加拿大、墨西哥三国签署的《北美自由贸易协定》于元旦正式生效，建成覆盖约4亿人口的全球最大自由贸易区，推动区域贸易一体化。
+  confidence: 确定
+  tags: [经济, 贸易, 区域合作]
+  sources: [维基百科, 世界贸易组织]
+
+- id: w-chechen-war-199412
+  date: "1994-12-11"
+  title: 第一次车臣战争爆发
+  category: 战争
+  importance: 4
+  summary: 俄罗斯联邦军队大举进攻宣布独立的伊奇克里亚车臣共和国，第一次车臣战争爆发，战事惨烈持续两年，俄军最终于1996年撤出。
+  confidence: 确定
+  tags: [战争, 俄罗斯, 车臣]
+  sources: [维基百科, 新华网]
+
+- id: w-channel-tunnel-199405
+  date: "1994-05-06"
+  title: 英法海底隧道正式通车
+  category: 文化
+  importance: 3
+  summary: 连接英国与法国的英吉利海峡隧道（英法海底隧道）正式通车，全长逾50公里，是世界最长的海底铁路隧道，实现了英欧大陆的陆路直连。
+  confidence: 确定
+  tags: [科技, 工程, 交通]
+  sources: [维基百科, 新华网]
+
 
 

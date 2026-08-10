@@ -2996,4 +2996,44 @@
   tags: [文化, 理论]
   sources: [新华网, 人民出版社]
 
+- id: cn-tax-sharing-reform-199401
+  date: "1994-01-01"
+  title: 中国全面实施分税制财政体制改革
+  category: 经济
+  importance: 5
+  summary: 从1994年1月1日起，中国全面推行分税制财政管理体制改革，重新划分中央与地方事权和财权，建立以增值税为主体的税制，为市场经济体制奠定财政基础。
+  confidence: 确定
+  tags: [经济, 改革, 历史转折]
+  sources: [新华网, 财政部]
+
+- id: cn-internet-connection-199404
+  date: "1994-04-20"
+  title: 中国实现与国际互联网的全功能连接
+  category: 文化
+  importance: 4
+  summary: 中国国家计算机与网络设施（NCFC）通过美国Sprint公司接入国际互联网64K专线，实现与国际互联网的全功能连接，被誉为中国互联网的诞生之日。
+  confidence: 确定
+  tags: [科技, 互联网]
+  sources: [新华网, 中科院]
+
+- id: cn-three-gorges-start-199412
+  date: "1994-12-14"
+  title: 长江三峡工程正式开工
+  category: 经济
+  importance: 4
+  summary: 世界最大水利枢纽工程——长江三峡工程正式开工，集防洪、发电、航运于一体，创下工程建设规模之最，成为跨世纪重大工程。
+  confidence: 确定
+  tags: [经济, 水利, 工程]
+  sources: [新华网, 国务院三峡办]
+
+- id: cn-modern-enterprise-reform-199406
+  date: "1994-06-01"
+  title: 国务院部署建立现代企业制度改革试点
+  category: 经济
+  importance: 3
+  summary: 国务院批准选择百家国有大中型企业进行建立现代企业制度试点，推动企业产权明晰、责权明确、政企分开、管理科学，深化国有企业改革。
+  confidence: 确定
+  tags: [改革, 国企]
+  sources: [新华网, 国家经贸委]
+
 
