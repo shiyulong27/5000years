@@ -6401,3 +6401,93 @@
   confidence: 确定
   tags: [气候, 灾害, 澳大利亚]
   sources: [澳大利亚气象局, 澳大利亚国家档案馆]
+- id: w-lebanese-civil-war-197504
+  date: '1975-04-13'
+  title: 黎巴嫩内战爆发
+  category: 战争
+  importance: 5
+  summary: 贝鲁特公交车事件后，黎巴嫩基督教民兵与巴勒斯坦及穆斯林武装冲突扩大，持续多年的黎巴嫩内战正式开始。
+  confidence: 确定
+  tags: [黎巴嫩, 内战, 中东, 武装冲突]
+  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Lebanese Civil War]
+- id: w-fall-phnom-penh-197504
+  date: '1975-04-17'
+  title: 红色高棉占领金边
+  category: 战争
+  importance: 5
+  summary: 民主柬埔寨力量攻占金边，朗诺政权垮台；随后实施大规模人口迁移和激进社会改造，柬埔寨进入红色高棉统治时期。
+  confidence: 确定
+  tags: [柬埔寨, 红色高棉, 政权更迭, 战争]
+  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Fall of Phnom Penh]
+- id: w-fall-saigon-197504
+  date: '1975-04-30'
+  title: 西贡陷落，越南战争结束
+  category: 战争
+  importance: 5
+  summary: 北越军队进入西贡，南越政府投降，美国完成撤离，越南战争主要军事行动结束并推动越南统一。
+  confidence: 确定
+  tags: [越南战争, 西贡, 统一, 美国]
+  sources: [美国国务院历史办公室, Encyclopaedia Britannica, Wikipedia—Fall of Saigon]
+- id: w-mayaguez-incident-197505
+  date: '1975-05-12'
+  title: 马亚圭斯号事件
+  category: 战争
+  importance: 3
+  summary: 红色高棉控制的柬埔寨扣押美国商船马亚圭斯号，美国展开营救行动，事件成为越战后美国首次重大军事行动。
+  confidence: 确定
+  tags: [美国, 柬埔寨, 海上冲突, 外交]
+  sources: [美国国防部, Encyclopaedia Britannica, Wikipedia—Mayaguez incident]
+- id: w-indian-emergency-197506
+  date: '1975-06-25'
+  title: 印度宣布全国紧急状态
+  category: 政治
+  importance: 4
+  summary: 印度总理英迪拉·甘地宣布全国紧急状态，政府扩大行政权力并限制部分公民自由，紧急状态持续至1977年。
+  confidence: 确定
+  tags: [印度, 紧急状态, 政治, 公民权利]
+  sources: [印度政府档案, Encyclopaedia Britannica, Wikipedia—The Emergency (India)]
+- id: w-world-womens-conference-197506
+  date: '1975-06-19'
+  title: 联合国第一次世界妇女大会在墨西哥城举行
+  category: 政治
+  importance: 3
+  summary: 联合国在墨西哥城召开首届世界妇女大会，审议平等、发展与和平议题，并通过《世界行动计划》。
+  confidence: 确定
+  tags: [联合国, 妇女权利, 国际会议, 人权]
+  sources: [联合国妇女署, UN Digital Library, Wikipedia—World Conference on Women]
+- id: w-apollo-soyuz-197507
+  date: '1975-07-17'
+  title: 阿波罗—联盟号联合飞行
+  category: 文化
+  importance: 4
+  summary: 美国阿波罗飞船与苏联联盟号飞船在轨交会对接，宇航员联合开展实验，成为冷战时期美苏太空合作的象征。
+  confidence: 确定
+  tags: [航天, 美苏合作, 阿波罗, 联盟号]
+  sources: [NASA, Roscosmos, Wikipedia—Apollo–Soyuz Test Project]
+- id: w-helsinki-accords-197508
+  date: '1975-08-01'
+  title: 赫尔辛基最后文件签署
+  category: 政治
+  importance: 5
+  summary: 欧洲安全与合作会议35国签署《赫尔辛基最后文件》，确认边界原则、人权承诺及安全合作框架，成为缓和时期的重要外交成果。
+  confidence: 确定
+  tags: [赫尔辛基, 欧洲安全, 冷战, 人权]
+  sources: [OSCE, 美国国务院历史办公室, Wikipedia—Helsinki Accords]
+- id: w-angola-independence-197511
+  date: '1975-11-11'
+  title: 安哥拉宣布独立并爆发内战
+  category: 战争
+  importance: 4
+  summary: 安哥拉脱离葡萄牙独立，安哥拉人民解放运动宣布成立人民共和国；多个武装派别争夺政权，内战在冷战大国支持下升级。
+  confidence: 确定
+  tags: [安哥拉, 非洲, 独立, 内战]
+  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Angolan Civil War]
+- id: w-east-timor-invasion-197512
+  date: '1975-12-07'
+  title: 印度尼西亚入侵东帝汶
+  category: 战争
+  importance: 4
+  summary: 印度尼西亚军队登陆东帝汶，随后宣布吞并该地；联合国不承认吞并，东帝汶长期冲突由此加剧。
+  confidence: 确定
+  tags: [东帝汶, 印度尼西亚, 入侵, 联合国]
+  sources: [联合国安理会, Encyclopaedia Britannica, Wikipedia—Indonesian invasion of East Timor]

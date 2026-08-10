@@ -6002,3 +6002,57 @@
   confidence: 确定
   tags: [军事, 科技, 核潜艇]
   sources: [中国军网, 中国船舶集团]
+- id: cn-fourth-npc-first-session-197501
+  date: '1975-01-13'
+  title: 第四届全国人民代表大会第一次会议开幕
+  category: 政治
+  importance: 5
+  summary: 四届人大一次会议在北京开幕，周恩来作政府工作报告，会议通过宪法并完成国务院人事安排，邓小平进入国务院领导核心并主持日常工作。
+  confidence: 确定
+  tags: [全国人大, 政治, 邓小平, 宪法]
+  sources: [新华社, 中国人大网, Wikipedia—4th National People's Congress]
+- id: cn-deng-first-vice-premier-197501
+  date: '1975-01-17'
+  title: 邓小平任国务院第一副总理
+  category: 政治
+  importance: 4
+  summary: 四届人大一次会议后组成的新一届国务院中，邓小平任第一副总理，开始主持国务院常务工作并推动整顿。
+  confidence: 确定
+  tags: [邓小平, 国务院, 政治, 整顿]
+  sources: [中国政府网, 新华社, Wikipedia—Deng Xiaoping]
+- id: cn-haicheng-earthquake-197502
+  date: '1975-02-04'
+  title: 辽宁海城大地震
+  category: 灾害
+  importance: 4
+  summary: 辽宁海城发生7.3级地震，造成房屋和基础设施严重损坏；震前预报与群众疏散使人员伤亡相对降低，成为中国地震预报史的重要案例。
+  confidence: 确定
+  tags: [地震, 辽宁, 灾害, 地震预报]
+  sources: [中国地震局, 新华社, Wikipedia—1975 Haicheng earthquake]
+- id: cn-china-philippines-diplomatic-197506
+  date: '1975-06-09'
+  title: 中国与菲律宾建立外交关系
+  category: 政治
+  importance: 3
+  summary: 中国与菲律宾签署联合公报，正式建立外交关系，菲律宾承认中华人民共和国政府是中国唯一合法政府。
+  confidence: 确定
+  tags: [外交, 菲律宾, 东南亚, 建交]
+  sources: [中华人民共和国外交部, 菲律宾外交部, Wikipedia—China–Philippines relations]
+- id: cn-banqiao-dam-disaster-197508
+  date: '1975-08-08'
+  title: 河南“75·8”特大暴雨与板桥水库溃坝
+  category: 灾害
+  importance: 5
+  summary: 8月上旬极端暴雨中，板桥水库于8月8日溃坝并引发洪水，造成大范围人员伤亡和经济损失，是20世纪最严重的水库灾害之一。
+  confidence: 确定
+  tags: [洪水, 水库, 河南, 灾害]
+  sources: [中华人民共和国水利部, 新华社, Wikipedia—Banqiao Dam disaster]
+- id: cn-first-recoverable-satellite-197511
+  date: '1975-11-26'
+  title: 中国首次成功发射返回式遥感卫星
+  category: 文化
+  importance: 4
+  summary: 中国从酒泉成功发射首颗返回式遥感卫星，并于11月29日按计划回收，成为继美国、苏联后第三个掌握卫星返回技术的国家。
+  confidence: 确定
+  tags: [航天, 返回式卫星, 遥感, 科技]
+  sources: [中国国家航天局, 中国航天科技集团, Wikipedia—Fanhui Shi Weixing]
