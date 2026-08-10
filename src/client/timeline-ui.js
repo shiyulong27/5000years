@@ -288,16 +288,17 @@ if (timeline) {
       }
       timeline.classList.toggle('is-reversed', desc)
 
-      // 同步物理翻转各年份内部的事件卡片 DOM 顺序（支持正序 1月→12月 / 倒序 12月→1月）
+      // 同步按 data-date 物理重排各年份容器内部的事件卡片 DOM 顺序（倒序: 12月→1月，正序: 1月→12月）
       const eventContainers = timeline.querySelectorAll('.year-detail-wrapper, .world-detail-wrapper, .cell-china, .cell-world')
       eventContainers.forEach((container) => {
         const cards = [...container.children].filter((el) => el.classList.contains('event-card'))
         if (cards.length > 1) {
-          if (!container._origCards) {
-            container._origCards = cards
-          }
-          const targetOrder = desc ? [...container._origCards].reverse() : container._origCards
-          targetOrder.forEach((card) => container.appendChild(card))
+          const sorted = cards.sort((a, b) => {
+            const dA = a.dataset.date || ''
+            const dB = b.dataset.date || ''
+            return desc ? dB.localeCompare(dA) : dA.localeCompare(dB)
+          })
+          sorted.forEach((card) => container.appendChild(card))
         }
       })
     }
@@ -313,6 +314,11 @@ if (timeline) {
       btnSortAsc.classList.remove('active')
       applyOrder(true)
     })
+
+    // 初始化检查：若页面加载时默认按钮选中的是倒序，立即执行一次按日期倒序
+    if (btnSortDesc.classList.contains('active')) {
+      applyOrder(true)
+    }
   }
 }
 

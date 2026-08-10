@@ -18,6 +18,7 @@ const stars = '⭐'.repeat(Math.min(5, Math.max(1, importance)))
   id={event.id}
   data-category={event.category}
   data-importance={event.importance}
+  data-date={event.date}
 >
   <header class="event-head">
     <time class="event-date">{formatDate(event.date)}</time>
