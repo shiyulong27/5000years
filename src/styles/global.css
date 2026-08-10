@@ -362,6 +362,30 @@ main,
   padding-block: calc(var(--row-gap) / 2);
 }
 
+/* 详细事件容器与单元格弹性布局：支持倒序 (is-reversed) 时事件按时间倒序反转 */
+.year-detail-wrapper,
+.world-detail-wrapper,
+.cell-china,
+.cell-world {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.year-detail-wrapper .event-card,
+.world-detail-wrapper .event-card,
+.cell-china > .event-card,
+.cell-world > .event-card {
+  margin-bottom: 0;
+}
+
+.timeline.is-reversed .year-detail-wrapper,
+.timeline.is-reversed .world-detail-wrapper,
+.timeline.is-reversed .cell-china,
+.timeline.is-reversed .cell-world {
+  flex-direction: column-reverse;
+}
+
 .cell.is-empty,
 .banner-row.is-empty {
   display: none;
