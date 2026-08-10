@@ -57,6 +57,7 @@ test/                     # Vitest 单元测试
 4. **前端交互全由原生 JS**：src/client/timeline-ui.js 负责等级筛选、分类筛选、正序/倒序切换、视图模式切换，不使用任何前端框架
 5. **倒序排列**：通过 JS 物理重排 DOM 节点实现（不用 CSS flex-direction: column-reverse，会导致双重反转）
 6. **年份概览卡片 (YearSummaryCard)**：概览卡片不使用固定的静态模版描述，而是接收 events={row.cnEvents} 属性，动态按重要度提炼该年份最核心的 3~5 条中国要闻生成列表概览
+7. **历史事件图片配图 (Image Support)**：重大事件 YAML 支持可选的 image 字段（对象 { url, caption } 或图片路径），EventCard.astro 会自动渲染带悬浮缩放与图注的历史影像卡片。静态图片存放于 public/images/events/<年份>/ 目录下
 
 ## 三步门禁校验（每次修改后必须跑）
 npm run validate   # 校验 YAML 数据格式
@@ -78,7 +79,7 @@ npm run dev -- --host 127.0.0.1 --port 4321
 具体要求：
 1. 先搜索新华社 "<目标年份> 国内/国际十大新闻" 作为权威骨架
 2. 再查维基百科 https://en.wikipedia.org/wiki/<目标年份> 补充重磅事件
-3. 每条事件必须包含：id, date, title, category, importance(1-5), summary, confidence, tags, sources
+3. 每条事件必须包含：id, date, title, category, importance(1-5), summary, confidence, tags, sources（重大事件可选加 image 配图）
 4. 中国事件追加到 `data/events/xiandai.yaml` 末尾
 5. 世界事件追加到 `data/world/modern.yaml` 末尾
 6. 创建 `src/pages/<目标年份>.astro` 专页（参考已有的 2024.astro）
@@ -97,6 +98,9 @@ npm run dev -- --host 127.0.0.1 --port 4321
   confidence: 确定
   tags: [标签1, 标签2]
   sources: [新华网, 维基百科]
+  image: # 可选：重大事件历史图片配图
+    url: "/images/events/2022/example.jpg"
+    caption: "图片说明图注"
 
 importance 评级标准：
 - 5级 (历史转折)：划时代重大转折，一年仅 3-5 件
