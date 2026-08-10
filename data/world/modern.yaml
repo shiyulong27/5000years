@@ -3342,5 +3342,95 @@
   tags: [文化, 艺术]
   sources: [维基百科, 新华网]
 
+- id: w-hostage-release-reagan-inauguration-198101
+  date: "1981-01-20"
+  title: 伊朗释放美国人质，里根就任美国总统
+  category: 政治
+  importance: 4
+  summary: 伊朗在被扣押444天后释放52名美国使馆人质，几乎同时里根宣誓就任美国第40任总统，持续逾一年的伊朗人质危机落幕。
+  confidence: 确定
+  tags: [外交, 政治]
+  sources: [维基百科, 新华网]
+
+- id: w-reagan-shot-198103
+  date: "1981-03-30"
+  title: 美国总统里根遇刺受伤生还
+  category: 政治
+  importance: 3
+  summary: 就任仅两个月的里根在华盛顿酒店外遭欣克利开枪击中胸部，经手术抢救生还，随行白宫新闻秘书布雷迪重伤致残。
+  confidence: 确定
+  tags: [政治]
+  sources: [维基百科, 新华网]
+
+- id: w-columbia-sts1-198104
+  date: "1981-04-12"
+  title: 美国哥伦比亚号航天飞机首飞成功
+  category: 文化
+  importance: 5
+  summary: 美国"哥伦比亚"号航天飞机执行STS-1任务成功升空并安全返回，成为世界首架可重复使用的载人航天器，开启航天飞机时代。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [维基百科, NASA]
+
+- id: w-jp2-shot-198105
+  date: "1981-05-13"
+  title: 教皇约翰·保罗二世在圣彼得广场遇刺
+  category: 政治
+  importance: 3
+  summary: 教皇约翰·保罗二世在梵蒂冈圣彼得广场遭土耳其枪手阿贾枪击重伤，经手术抢救生还，后亲赴狱中宽恕刺客，成为冷战末期重大宗教政治事件。
+  confidence: 确定
+  tags: [政治, 文化]
+  sources: [维基百科, 新华网]
+
+- id: w-aids-first-cdc-198106
+  date: "1981-06-05"
+  title: 美国CDC首次报告不明原因肺炎，艾滋病被识别
+  category: 文化
+  importance: 5
+  summary: 美国疾控中心通报洛杉矶5名男同性恋者罹患罕见肺孢子虫肺炎，是人类首次记录到的艾滋病临床病例，开启全球艾滋病大流行序幕。
+  confidence: 确定
+  tags: [卫生, 科技, 历史转折]
+  sources: [维基百科, 美国疾控中心]
+
+- id: w-mtv-launch-198108
+  date: "1981-08-01"
+  title: 美国MTV音乐电视频道开播
+  category: 文化
+  importance: 3
+  summary: 美国MTV音乐电视频道以"Video Killed the Radio Star"开播，成为全球首个24小时播出的音乐录像电视网，深刻重塑流行音乐与青年文化。
+  confidence: 确定
+  tags: [文化, 艺术]
+  sources: [维基百科, 新华网]
+
+- id: w-ibm-pc-5150-198108
+  date: "1981-08-12"
+  title: IBM发布5150型个人电脑，开启PC兼容机时代
+  category: 文化
+  importance: 5
+  summary: IBM推出售价1565美元的5150型个人电脑，采用开放架构与英特尔处理器、微软操作系统，迅速形成兼容机生态，开启个人计算机时代。
+  confidence: 确定
+  tags: [科技, 互联网, 历史转折]
+  sources: [维基百科, IBM]
+
+- id: w-sadat-assassination-198110
+  date: "1981-10-06"
+  title: 埃及总统萨达特阅兵时遇刺身亡
+  category: 政治
+  importance: 4
+  summary: 埃及总统萨达特在开罗举行阅兵庆祝十月战争时遭极端军官枪击身亡，副总统穆巴拉克继任，萨达特因与以色列媾和遇刺改变中东格局。
+  confidence: 确定
+  tags: [政治, 战争]
+  sources: [维基百科, 新华网]
+
+- id: w-poland-martial-law-198112
+  date: "1981-12-13"
+  title: 波兰宣布军管，镇压"团结工会"运动
+  category: 政治
+  importance: 4
+  summary: 波兰部长会议主席雅鲁泽尔斯基宣布国家进入战时状态，实行军管并拘禁团结工会领导人瓦文萨等数千人，试图遏制不断高涨的工运浪潮。
+  confidence: 确定
+  tags: [政治, 改革]
+  sources: [维基百科, 新华网]
+
 
 

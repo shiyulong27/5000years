@@ -3288,4 +3288,74 @@
   tags: [法律, 政治, 历史转折]
   sources: [新华网, 最高人民法院]
 
+- id: cn-song-qingling-death-198105
+  date: "1981-05-29"
+  title: 国家名誉主席宋庆龄逝世
+  category: 政治
+  importance: 4
+  summary: 中华人民共和国国家名誉主席、孙中山夫人宋庆龄在北京病逝，全国下半旗志哀，中共中央追认其为中国共产党正式党员。
+  confidence: 确定
+  tags: [政治, 民生]
+  sources: [新华网, 人民日报]
+
+- id: cn-11th-6th-plenum-resolution-198106
+  date: "1981-06-27"
+  title: 十一届六中全会通过《关于建国以来党的若干历史问题的决议》
+  category: 政治
+  importance: 5
+  summary: 中共十一届六中全会一致通过《关于建国以来党的若干历史问题的决议》，正式否定"文化大革命"，科学评价毛泽东历史地位与毛泽东思想，完成指导思想拨乱反正。
+  confidence: 确定
+  tags: [改革, 政治, 历史转折]
+  sources: [新华网, 人民日报]
+
+- id: cn-chengkun-train-crash-198107
+  date: "1981-07-09"
+  title: 成昆铁路列车坠桥特大事故
+  category: 灾害
+  importance: 3
+  summary: 成昆铁路利子依达大桥遭泥石流冲毁，一列旅客列车坠桥，造成240余人死亡，是中国铁路史上最惨烈的运营事故之一。
+  confidence: 确定
+  tags: [灾害, 民生]
+  sources: [新华网, 铁道部]
+
+- id: cn-yijian-3sat-launch-198109
+  date: "1981-09-20"
+  title: 中国首次以一枚火箭成功发射三颗卫星
+  category: 文化
+  importance: 4
+  summary: 中国用"风暴一号"运载火箭成功将"实践二号"等三颗科学实验卫星送入预定轨道，首次实现"一箭三星"发射，标志中国航天多星发射技术突破。
+  confidence: 确定
+  tags: [航天, 科技]
+  sources: [新华网, 中国航天科技集团]
+
+- id: cn-yexiao-9points-taiwan-198109
+  date: "1981-09-30"
+  title: 叶剑英提出"叶九条"对台和平统一方针
+  category: 政治
+  importance: 3
+  summary: 全国人大常委会委员长叶剑英向新华社记者发表谈话，提出关于台湾回归祖国实现和平统一的九条方针，奠定两岸和平统一政策框架。
+  confidence: 确定
+  tags: [外交, 政治]
+  sources: [新华网, 人民日报]
+
+- id: cn-xinhai-70th-anniv-198110
+  date: "1981-10-10"
+  title: 首都举行辛亥革命70周年纪念大会
+  category: 政治
+  importance: 3
+  summary: 北京举行万人大会纪念辛亥革命70周年，胡耀邦在会上呼吁台湾国民党政军领导人回大陆和故乡看看，向两岸交流释放善意。
+  confidence: 确定
+  tags: [外交, 政治]
+  sources: [新华网, 人民日报]
+
+- id: cn-volleyball-worldcup-198111
+  date: "1981-11-16"
+  title: 中国女排首夺世界杯冠军，开启"五连冠"传奇
+  category: 文化
+  importance: 5
+  summary: 中国女子排球队在日本举行的第3届女排世界杯上七战全胜首夺世界冠军，开启"五连冠"传奇，"女排精神"成为改革开放初期的时代象征。
+  confidence: 确定
+  tags: [体育, 历史转折]
+  sources: [新华网, 国际排联]
+
 
