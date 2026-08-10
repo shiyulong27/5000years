@@ -3432,5 +3432,85 @@
   tags: [政治, 改革]
   sources: [维基百科, 新华网]
 
+- id: w-falklands-war-198204
+  date: "1982-04-02"
+  title: 英阿马岛战争爆发
+  category: 战争
+  importance: 4
+  summary: 阿根廷军队登陆并占领英国控制的马尔维纳斯群岛，英国随即派遣特混舰队远征，两国爆发二战后规模最大的海空作战，6月14日阿根廷战败投降。
+  confidence: 确定
+  tags: [军事, 战争]
+  sources: [维基百科, 新华网]
+
+- id: w-israel-lebanon-war-198206
+  date: "1982-06-06"
+  title: 以色列入侵黎巴嫩
+  category: 战争
+  importance: 4
+  summary: 以色列国防军在沙龙指挥下大举入侵黎巴嫩，围攻巴解武装与驻黎叙利亚军队，兵临贝鲁特，深刻改变中东格局并引发后续长期占领。
+  confidence: 确定
+  tags: [军事, 战争]
+  sources: [维基百科, 新华网]
+
+- id: w-shatila-massacre-198209
+  date: "1982-09-16"
+  title: 黎巴嫩萨布拉—夏蒂拉难民营屠杀事件
+  category: 战争
+  importance: 3
+  summary: 黎巴嫩长枪党民兵在以军默许下闯入贝鲁特西部萨布拉与夏蒂拉巴勒斯坦难民营，屠杀数千名巴勒斯坦平民，以色列调查委员会事后追责沙龙。
+  confidence: 确定
+  tags: [军事, 战争]
+  sources: [维基百科, 新华网]
+
+- id: w-brezhnev-death-andropov-198211
+  date: "1982-11-10"
+  title: 苏联领导人勃列日涅夫逝世，安德罗波夫继任
+  category: 政治
+  importance: 4
+  summary: 执政18年的苏共总书记勃列日涅夫病逝，前克格勃主席安德罗波夫接任，开启苏联短暂改革尝试，但其在位仅一年多即病逝。
+  confidence: 确定
+  tags: [政治, 改革]
+  sources: [维基百科, 新华网]
+
+- id: w-tylenol-murders-198209
+  date: "1982-09-29"
+  title: 美国芝加哥"泰诺"投毒案爆发
+  category: 灾害
+  importance: 3
+  summary: 美国芝加哥地区7人因服用掺氰化物的泰诺胶囊中毒身亡，案件促使全美推行药品防拆封包装法规，深刻重塑现代药品安全包装标准。
+  confidence: 确定
+  tags: [灾害, 民生]
+  sources: [维基百科, 新华网]
+
+- id: w-et-movie-198206
+  date: "1982-06-11"
+  title: 斯皮尔伯格电影《E.T.外星人》上映
+  category: 文化
+  importance: 3
+  summary: 斯皮尔伯格执导的科幻电影《E.T.外星人》在全美公映，此后长期占据影史票房纪录，成为温情科幻经典，深刻影响流行文化。
+  confidence: 确定
+  tags: [文化, 艺术]
+  sources: [维基百科, 新华网]
+
+- id: w-thriller-release-198211
+  date: "1982-11-30"
+  title: 迈克尔·杰克逊专辑《Thriller》发行
+  category: 文化
+  importance: 3
+  summary: 迈克尔·杰克逊第六张录音室专辑《Thriller》全球发行，此后销量逾7000万张成为史上最畅销专辑，重塑流行音乐与MV产业。
+  confidence: 确定
+  tags: [文化, 艺术]
+  sources: [维基百科, 新华网]
+
+- id: w-artificial-heart-198212
+  date: "1982-12-02"
+  title: 世界首例永久性人工心脏植入手术
+  category: 文化
+  importance: 3
+  summary: 美国犹他大学外科医生给牙医巴尼·克拉克植入首枚永久性人工心脏"Jarvik-7"，患者带机存活112天，是人类人工心脏置换的重要里程碑。
+  confidence: 确定
+  tags: [科技, 卫生]
+  sources: [维基百科, 新华网]
+
 
 

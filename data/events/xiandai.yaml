@@ -3358,4 +3358,64 @@
   tags: [体育, 历史转折]
   sources: [新华网, 国际排联]
 
+- id: cn-one-country-two-systems-198201
+  date: "1982-01-11"
+  title: 邓小平首次提出"一个国家，两种制度"构想
+  category: 政治
+  importance: 5
+  summary: 邓小平在接见海外友人时首次系统提出"一个国家，两种制度"的构想，为日后以和平方式解决香港、澳门与台湾问题奠定理论基础。
+  confidence: 确定
+  tags: [外交, 政治, 历史转折]
+  sources: [新华网, 人民日报]
+
+- id: cn-liaochengzhi-letter-jiang-198207
+  date: "1982-07-24"
+  title: 廖承志致信蒋经国吁国共第三次合作
+  category: 政治
+  importance: 3
+  summary: 廖承志以世侄身份致电台湾领导人蒋经国，吁其"度尽劫波兄弟在，相逢一笑泯恩仇"，推动两岸关系缓和与探亲交流，引发海内外广泛关注。
+  confidence: 确定
+  tags: [外交, 政治]
+  sources: [新华网, 人民日报]
+
+- id: cn-12th-congress-198209
+  date: "1982-09-01"
+  title: 中共十二大召开，邓小平提出建设有中国特色的社会主义
+  category: 政治
+  importance: 4
+  summary: 中共第十二次全国代表大会在北京召开，邓小平在开幕词中提出"建设有中国特色的社会主义"这一命题，开启全面开创社会主义现代化建设新局面。
+  confidence: 确定
+  tags: [改革, 政治]
+  sources: [新华网, 人民日报]
+
+- id: cn-thatcher-deng-hk-198209
+  date: "1982-09-24"
+  title: 撒切尔夫人访华，邓小平就香港前途问题交锋
+  category: 政治
+  importance: 5
+  summary: 英国首相撒切尔夫人访华，邓小平向其明确中国将在1997年收回香港主权，并阐明收回后将采取设立特别行政区等特殊政策，中英香港问题谈判由此开启。
+  confidence: 确定
+  tags: [外交, 政治, 历史转折]
+  sources: [新华网, 人民日报]
+
+- id: cn-jl1-submarine-launch-198210
+  date: "1982-10-12"
+  title: 中国潜艇水下发射"巨浪一号"运载火箭成功
+  category: 文化
+  importance: 4
+  summary: 中国用潜艇在水下成功发射"巨浪一号"固体运载火箭，火箭准确溅落预定海域，标志中国掌握水下发射战略导弹技术，海基核力量实现零的突破。
+  confidence: 确定
+  tags: [航天, 军事, 科技]
+  sources: [新华网, 国防科工委]
+
+- id: cn-1982-constitution-198212
+  date: "1982-12-04"
+  title: 五届全国人大五次会议通过现行《中华人民共和国宪法》
+  category: 政治
+  importance: 5
+  summary: 五届全国人大五次会议以无记名投票通过新宪法，即"八二宪法"，确立国家根本政治制度与公民基本权利，成为中国现行并沿用至今的宪法。
+  confidence: 确定
+  tags: [法律, 政治, 历史转折]
+  sources: [新华网, 全国人大常委会]
+
 
