@@ -4760,6 +4760,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1980/11th_5th_plenum_liushaoqi_198002.jpg
+    caption: 中共十一届五中全会为刘少奇平反历史现场与典藏影像
 - id: cn-first-winter-olympics-198002
   date: '1980-02-13'
   title: 中国首次派代表团参加冬季奥运会
@@ -4827,6 +4830,9 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: /images/events/1980/sez_established_198008.jpg
+    caption: 设立深圳、珠海、汕头、厦门经济特区，开启改革开放大潮
 - id: cn-gang-of-four-trial-198011
   date: '1980-11-20'
   title: 最高人民法院特别法庭公审林彪、江青反革命集团案
@@ -4841,6 +4847,9 @@
   sources:
     - 新华网
     - 最高人民法院
+  image:
+    url: /images/events/1980/gang_of_four_trial_198011.jpg
+    caption: 最高人民法院特别法庭公审林彪、江青反革命集团案历史现场与典藏影像
 - id: cn-song-qingling-death-198105
   date: '1981-05-29'
   title: 国家名誉主席宋庆龄逝世
@@ -4868,6 +4877,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1981/11th_6th_plenum_resolution_198106.jpg
+    caption: 十一届六中全会通过《关于建国以来党的若干历史问题的决议》历史现场与典藏影像
 - id: cn-chengkun-train-crash-198107
   date: '1981-07-09'
   title: 成昆铁路列车坠桥特大事故
@@ -4933,6 +4945,9 @@
   sources:
     - 新华网
     - 国际排联
+  image:
+    url: /images/events/1981/volleyball_worldcup_198111.jpg
+    caption: 中国女排首夺世界杯冠军，开启“五连冠”辉煌传奇
 - id: cn-one-country-two-systems-198201
   date: '1982-01-11'
   title: 邓小平首次提出"一个国家，两种制度"构想
@@ -4947,6 +4962,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1982/one_country_two_systems_198201.jpg
+    caption: 邓小平首次提出"一个国家，两种制度"构想历史现场与典藏影像
 - id: cn-liaochengzhi-letter-jiang-198207
   date: '1982-07-24'
   title: 廖承志致信蒋经国吁国共第三次合作
@@ -4987,6 +5005,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1982/thatcher_deng_hk_198209.jpg
+    caption: 撒切尔夫人访华，邓小平就香港前途问题交锋历史现场与典藏影像
 - id: cn-jl1-submarine-launch-198210
   date: '1982-10-12'
   title: 中国潜艇水下发射"巨浪一号"运载火箭成功
@@ -5015,6 +5036,9 @@
   sources:
     - 新华网
     - 全国人大常委会
+  image:
+    url: /images/events/1982/1982_constitution_198212.jpg
+    caption: 五届全国人大五次会议表决通过现行《中华人民共和国宪法》
 - id: cn-cctv-gala-1st-198302
   date: '1983-02-12'
   title: 中央电视台举办首届春节联欢晚会直播
@@ -5093,6 +5117,9 @@
   sources:
     - 新华网
     - 国防科技大学
+  image:
+    url: /images/events/1983/yinhe1_supercomputer_198311.jpg
+    caption: '"银河-I"巨型计算机通过国家鉴定历史现场与典藏影像'
 - id: cn-deng-shenzhen-inspection-198401
   date: '1984-01-24'
   title: 邓小平视察深圳等经济特区并题词肯定
@@ -5133,6 +5160,9 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: /images/events/1984/open_14_coastal_cities_198405.jpg
+    caption: 中共中央、国务院决定进一步开放十四个沿海港口城市历史现场与典藏影像
 - id: cn-la-olympics-xuhaifeng-198407
   date: '1984-07-29'
   title: 中国重返奥运赛场，许海峰夺得中国奥运史上首金
@@ -5146,6 +5176,9 @@
   sources:
     - 新华网
     - 国际奥委会
+  image:
+    url: /images/events/1984/la_olympics_xuhaifeng_198407.jpg
+    caption: 许海峰在洛杉矶奥运会夺得中国奥运史上首金
 - id: cn-lenovo-founded-198411
   date: '1984-11-09'
   title: 柳传志等在中科院计算所创办联想公司前身
@@ -5186,6 +5219,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1984/12th_3rd_plenum_reform_198410.jpg
+    caption: 中共十二届三中全会通过《关于经济体制改革的决定》历史现场与典藏影像
 - id: cn-sino-british-joint-declaration-198412
   date: '1984-12-19'
   title: 中英《关于香港问题的联合声明》在北京正式签署
@@ -5200,6 +5236,9 @@
   sources:
     - 新华网
     - 外交部
+  image:
+    url: /images/events/1984/sino_british_joint_declaration_198412.jpg
+    caption: 中英《关于香港问题的联合声明》在北京正式签署
 - id: cn-rural-10policies-198501
   date: '1985-01-01'
   title: 中共中央国务院发布活跃农村经济十项政策，取消农产品统购派购
@@ -5228,6 +5267,9 @@
   sources:
     - 新华网
     - 国家海洋局
+  image:
+    url: /images/events/1985/antarctic_greatwall_station_198502.jpg
+    caption: 中国南极长城站建成历史现场与典藏影像
 - id: cn-education-reform-decision-198505
   date: '1985-05-27'
   title: 中共中央发布《关于教育体制改革的决定》
@@ -5255,6 +5297,9 @@
   sources:
     - 新华网
     - 中央军委
+  image:
+    url: /images/events/1985/million_troop_cut_198506.jpg
+    caption: 邓小平在中央军委扩大会议上宣布大裁军一百万
 - id: cn-first-teachers-day-198509
   date: '1985-09-10'
   title: 新中国庆祝第一个教师节
@@ -5361,6 +5406,9 @@
   sources:
     - 新华网
     - 科技部
+  image:
+    url: /images/events/1986/863_program_198611.jpg
+    caption: 中共中央国务院批准实施"863计划"历史现场与典藏影像
 - id: cn-huyaobang-resign-198701
   date: '1987-01-16'
   title: 胡耀邦辞去中共中央总书记职务，赵紫阳代理总书记
@@ -5388,6 +5436,9 @@
   sources:
     - 新华网
     - 外交部
+  image:
+    url: /images/events/1987/sino_portuguese_macau_declaration_198704.jpg
+    caption: 中葡《关于澳门问题的联合声明》在北京正式签署历史现场与典藏影像
 - id: cn-daxinganling-fire-198705
   date: '1987-05-06'
   title: 大兴安岭发生特大森林火灾
@@ -5428,6 +5479,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1987/13th_congress_198710.jpg
+    caption: 中共十三大召开，提出社会主义初级阶段理论历史现场与典藏影像
 - id: cn-6th-national-games-198711
   date: '1987-11-20'
   title: 第六届全国运动会在广州开幕
@@ -5467,6 +5521,9 @@
   sources:
     - 新华网
     - 全国人大常委会
+  image:
+    url: /images/events/1988/hainan_province_sez_198804.jpg
+    caption: 七届全国人大一次会议决定海南建省办经济特区历史现场与典藏影像
 - id: cn-price-reform-breakthrough-198808
   date: '1988-08-19'
   title: 中央北戴河会议决定价格改革"闯关"，引发全国抢购风潮
@@ -5562,6 +5619,9 @@
   sources:
     - 新华网
     - 外交部
+  image:
+    url: /images/events/1989/sino_soviet_normalization_198905.jpg
+    caption: 中苏关系实现正常化历史现场与典藏影像
 - id: cn-beijing-june-fourth-198906
   date: '1989-06-04'
   title: 北京发生六四事件
@@ -5576,6 +5636,9 @@
   sources:
     - 国务院新闻办公室
     - 维基百科
+  image:
+    url: /images/events/1989/beijing_june_fourth_198906.jpg
+    caption: 北京发生六四事件历史现场与典藏影像
 - id: cn-jiang-zemin-general-secretary-198906
   date: '1989-06-24'
   title: 江泽民当选中共中央总书记

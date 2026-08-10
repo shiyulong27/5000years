@@ -28,6 +28,52 @@ const baseImages = {
 
 // Special captions lookup map
 const specialCaptions = {
+  // 1980-1989 Key Events
+  'w-berlin-wall-opens-198911': {
+    caption: '1989年11月9日柏林墙开放，民众拥抱欢庆推倒柏林墙',
+    category: 'politics'
+  },
+  'cn-sino-british-joint-declaration-198412': {
+    caption: '中英《关于香港问题的联合声明》在北京正式签署',
+    category: 'diplomacy'
+  },
+  'cn-sez-established-198008': {
+    caption: '设立深圳、珠海、汕头、厦门经济特区，开启改革开放大潮',
+    category: 'economy'
+  },
+  'cn-1982-constitution-198212': {
+    caption: '五届全国人大五次会议表决通过现行《中华人民共和国宪法》',
+    category: 'law'
+  },
+  'cn-la-olympics-xuhaifeng-198407': {
+    caption: '许海峰在洛杉矶奥运会夺得中国奥运史上首金',
+    category: 'sports'
+  },
+  'cn-volleyball-worldcup-198111': {
+    caption: '中国女排首夺世界杯冠军，开启“五连冠”辉煌传奇',
+    category: 'sports'
+  },
+  'cn-million-troop-cut-198506': {
+    caption: '邓小平在中央军委扩大会议上宣布大裁军一百万',
+    category: 'military'
+  },
+  'w-chernobyl-disaster-198604': {
+    caption: '切尔诺贝利核电站发生严重爆炸泄漏事故',
+    category: 'disaster'
+  },
+  'w-challenger-disaster-198601': {
+    caption: '美国挑战者号航天飞机升空爆炸失事',
+    category: 'space'
+  },
+  'w-arpanet-tcpip-198301': {
+    caption: 'ARPANET 切换 TCP/IP 协议，现代互联网诞生',
+    category: 'tech'
+  },
+  'w-macintosh-launch-198401': {
+    caption: '史蒂夫·乔布斯发布首款图形界面 Apple Macintosh 个人电脑',
+    category: 'tech'
+  },
+
   // 1990-1999 Key Events
   'cn-macau-handover-199912': {
     caption: '1999年12月20日，澳门回归祖国政权交接仪式隆重举行',
@@ -69,8 +115,6 @@ const specialCaptions = {
     caption: '深切悼念邓小平同志',
     category: 'politics'
   },
-
-  // 1990-1999 World Events
   'w-soviet-fall-1991': {
     caption: '1991年克里姆林宫苏联国旗降下，苏联正式解体',
     category: 'politics'
@@ -106,8 +150,8 @@ function makeSlug(id) {
   return id.replace(/^(?:cn|w)-/, '').replace(/-/g, '_')
 }
 
-// 35 Years Range (1990 to 2024)
-const years = Array.from({ length: 35 }, (_, i) => String(1990 + i))
+// 45 Years Range (1980 to 2024)
+const years = Array.from({ length: 45 }, (_, i) => String(1980 + i))
 
 let updatedXiandai = 0
 for (const e of xiandai) {
@@ -188,4 +232,4 @@ for (const e of modern) {
 fs.writeFileSync(xiandaiPath, yaml.dump(xiandai, { lineWidth: -1 }), 'utf8')
 fs.writeFileSync(modernPath, yaml.dump(modern, { lineWidth: -1 }), 'utf8')
 
-console.log(`Successfully updated ${updatedXiandai} events in xiandai.yaml and ${updatedModern} events in modern.yaml for 1990-2024!`)
+console.log(`Successfully updated ${updatedXiandai} events in xiandai.yaml and ${updatedModern} events in modern.yaml for 1980-2024!`)

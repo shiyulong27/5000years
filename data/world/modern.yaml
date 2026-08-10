@@ -4821,6 +4821,9 @@
   sources:
     - 维基百科
     - 世界卫生组织
+  image:
+    url: /images/events/1980/smallpox_eradicated_198005.jpg
+    caption: 世界卫生组织宣布全球根除天花——重大国际历史时刻
 - id: w-st-helens-eruption-198005
   date: '1980-05-18'
   title: 美国圣海伦斯火山爆发
@@ -4861,6 +4864,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1980/solidarity_founded_198008.jpg
+    caption: 波兰"团结工会"成立，东欧剧变序幕拉开——重大国际历史时刻
 - id: w-iran-iraq-war-198009
   date: '1980-09-22'
   title: 两伊战争爆发
@@ -4875,6 +4881,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1980/iran_iraq_war_198009.jpg
+    caption: 两伊战争爆发——重大国际历史时刻
 - id: w-reagan-elected-198011
   date: '1980-11-04'
   title: 里根当选美国第40任总统
@@ -4940,6 +4949,9 @@
   sources:
     - 维基百科
     - NASA
+  image:
+    url: /images/events/1981/columbia_sts1_198104.jpg
+    caption: 美国哥伦比亚号航天飞机首飞成功——重大国际历史时刻
 - id: w-jp2-shot-198105
   date: '1981-05-13'
   title: 教皇约翰·保罗二世在圣彼得广场遇刺
@@ -4967,6 +4979,9 @@
   sources:
     - 维基百科
     - 美国疾控中心
+  image:
+    url: /images/events/1981/aids_first_cdc_198106.jpg
+    caption: 美国CDC首次报告不明原因肺炎，艾滋病被识别——重大国际历史时刻
 - id: w-mtv-launch-198108
   date: '1981-08-01'
   title: 美国MTV音乐电视频道开播
@@ -4994,6 +5009,9 @@
   sources:
     - 维基百科
     - IBM
+  image:
+    url: /images/events/1981/ibm_pc_5150_198108.jpg
+    caption: IBM发布5150型个人电脑，开启PC兼容机时代——重大国际历史时刻
 - id: w-sadat-assassination-198110
   date: '1981-10-06'
   title: 埃及总统萨达特阅兵时遇刺身亡
@@ -5138,6 +5156,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1983/arpanet_tcpip_198301.jpg
+    caption: ARPANET 切换 TCP/IP 协议，现代互联网诞生
 - id: w-reagan-sdi-198303
   date: '1983-03-23'
   title: 里根总统提出"战略防御倡议"（星球大战）
@@ -5243,6 +5264,9 @@
   sources:
     - 维基百科
     - 苹果公司
+  image:
+    url: /images/events/1984/macintosh_launch_198401.jpg
+    caption: 史蒂夫·乔布斯发布首款图形界面 Apple Macintosh 个人电脑
 - id: w-andropov-death-chernenko-198402
   date: '1984-02-13'
   title: 苏联领导人安德罗波夫逝世，契尔年科继任
@@ -5308,6 +5332,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1984/indira_gandhi_assassination_198410.jpg
+    caption: 印度总理英迪拉·甘地遇刺身亡——重大国际历史时刻
 - id: w-bhopal-disaster-198412
   date: '1984-12-03'
   title: 印度博帕尔农药厂毒气泄漏灾难
@@ -5322,6 +5349,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1984/bhopal_disaster_198412.jpg
+    caption: 印度博帕尔农药厂毒气泄漏灾难——重大国际历史时刻
 - id: w-gorbachev-general-secretary-198503
   date: '1985-03-11'
   title: 戈尔巴乔夫当选苏共中央总书记
@@ -5336,6 +5366,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1985/gorbachev_general_secretary_198503.jpg
+    caption: 戈尔巴乔夫当选苏共中央总书记——重大国际历史时刻
 - id: w-live-aid-concert-198507
   date: '1985-07-13'
   title: 全球Live Aid慈善摇滚演唱会举行
@@ -5453,6 +5486,9 @@
   sources:
     - 维基百科
     - NASA
+  image:
+    url: /images/events/1986/challenger_disaster_198601.jpg
+    caption: 美国挑战者号航天飞机升空爆炸失事
 - id: w-people-power-philippines-198602
   date: '1986-02-25'
   title: 菲律宾马科斯政权倒台，阿基诺夫人就任总统
@@ -5480,6 +5516,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1986/chernobyl_disaster_198604.jpg
+    caption: 切尔诺贝利核电站发生严重爆炸泄漏事故
 - id: w-nyos-gas-disaster-198608
   date: '1986-08-21'
   title: 喀麦隆尼奥斯湖火山气体喷发，致1700余人死亡
@@ -5597,6 +5636,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1987/black_monday_198710.jpg
+    caption: 纽约股市"黑色星期一"暴跌——重大国际历史时刻
 - id: w-king-cross-fire-198711
   date: '1987-11-18'
   title: 伦敦国王十字地铁站发生大火
@@ -5624,6 +5666,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1987/inf_treaty_198712.jpg
+    caption: 美苏签署《中导条约》——重大国际历史时刻
 - id: w-first-intifada-198712
   date: '1987-12-09'
   title: 巴勒斯坦被占领土爆发第一次起义
@@ -5755,6 +5800,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1988/lockerbie_bombing_198812.jpg
+    caption: 泛美航空103号班机洛克比空难——重大国际历史时刻
 - id: w-soviet-afghanistan-withdrawal-complete-198902
   date: '1989-02-15'
   title: 苏联完成从阿富汗撤军
@@ -5770,6 +5818,9 @@
     - 新华网
     - 联合国
     - 维基百科
+  image:
+    url: /images/events/1989/soviet_afghanistan_withdrawal_complete_198902.jpg
+    caption: 苏联完成从阿富汗撤军——重大国际历史时刻
 - id: w-exxon-valdez-oil-spill-198903
   date: '1989-03-24'
   title: “埃克森·瓦尔迪兹”号发生严重漏油事故
@@ -5798,6 +5849,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/1989/polish_semi_free_election_198906.jpg
+    caption: 波兰举行半自由议会选举——重大国际历史时刻
 - id: w-baltic-way-198908
   date: '1989-08-23'
   title: 爱沙尼亚、拉脱维亚和立陶宛民众组成“波罗的海之路”
@@ -5841,6 +5895,9 @@
     - 德国联邦政府
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/1989/berlin_wall_opens_198911.jpg
+    caption: 1989年11月9日柏林墙开放，民众拥抱欢庆推倒柏林墙
 - id: w-velvet-revolution-198911
   date: '1989-11-17'
   title: 捷克斯洛伐克天鹅绒革命开始
