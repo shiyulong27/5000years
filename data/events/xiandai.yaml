@@ -2816,4 +2816,64 @@
   tags: [改革, 军工]
   sources: [新华网, 国防科工委]
 
+- id: cn-pudong-development-199004
+  date: "1990-04-18"
+  title: 中央宣布开发开放上海浦东新区，开启浦东开发开放进程
+  category: 经济
+  importance: 5
+  summary: 中共中央、国务院正式宣布开发开放上海浦东，把浦东建成国际金融与贸易中心，成为20世纪90年代中国改革开放的标志性战略举措。
+  confidence: 确定
+  tags: [改革, 浦东, 历史转折]
+  sources: [新华网, 国务院]
+
+- id: cn-beijing-asian-games-199009
+  date: "1990-09-22"
+  title: 第11届亚洲运动会在北京隆重开幕
+  category: 文化
+  importance: 5
+  summary: 北京成功举办第11届亚运会，这是中国首次举办大型综合性国际体育赛事，中国代表团以183枚金牌高居金牌榜首位，极大提振民族自豪感。
+  confidence: 确定
+  tags: [体育, 亚运会, 历史转折]
+  sources: [新华网, 亚奥理事会]
+
+- id: cn-shanghai-stock-exchange-199011
+  date: "1990-11-26"
+  title: 上海证券交易所正式成立
+  category: 经济
+  importance: 5
+  summary: 经国务院批准，上海证券交易所于1990年11月26日成立、12月19日开业，与随后开业的深圳交易所共同开启新中国证券市场的规范化发展，标志资本市场重建。
+  confidence: 确定
+  tags: [金融, 改革, 历史转折]
+  sources: [新华网, 中国证监会]
+
+- id: cn-shenzhen-stock-exchange-199012
+  date: "1990-12-19"
+  title: 深圳证券交易所开业试运行
+  category: 经济
+  importance: 4
+  summary: 深圳证券交易所正式开业试运行，与上海证券交易所共同构成中国证券市场南北方两大中心，推动股票市场在全国逐步推开。
+  confidence: 确定
+  tags: [金融, 改革]
+  sources: [新华网, 中国证监会]
+
+- id: cn-asiasat1-launch-199004
+  date: "1990-04-07"
+  title: 中国"长征三号"火箭成功发射"亚洲一号"通信卫星
+  category: 文化
+  importance: 4
+  summary: 中国用"长征三号"运载火箭成功将美国制造的"亚洲一号"通信卫星送入轨道，这是中国首次发射对外商业搭载的国际卫星，标志中国航天走向国际市场。
+  confidence: 确定
+  tags: [航天, 科技]
+  sources: [新华网, 中国航天科技集团]
+
+- id: cn-singapore-diplomatic-199010
+  date: "1990-10-03"
+  title: 中国与新加坡正式建立外交关系
+  category: 政治
+  importance: 3
+  summary: 中国与新加坡在联合国大会期间正式建立外交关系，两国长期友好合作关系进入新阶段，为区域经济合作与投资往来提供制度保障。
+  confidence: 确定
+  tags: [外交]
+  sources: [外交部, 新华网]
+
 

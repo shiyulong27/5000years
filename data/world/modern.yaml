@@ -2782,5 +2782,55 @@
   tags: [灾害, 核事故, 日本]
   sources: [维基百科, 国际原子能机构]
 
+- id: w-germany-reunification-199010
+  date: "1990-10-03"
+  title: 两德正式统一，东德并入联邦德国
+  category: 政治
+  importance: 5
+  summary: 民主德国正式并入联邦德国，柏林墙倒塌约一年后德国实现统一，首都定于柏林，标志冷战后欧洲格局的根本性重塑。
+  confidence: 确定
+  tags: [政治, 德国, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-gulf-crisis-199008
+  date: "1990-08-02"
+  title: 伊拉克入侵科威特，海湾危机爆发
+  category: 战争
+  importance: 5
+  summary: 伊拉克出动大军入侵并吞并科威特，联合国安理会随即通过决议对伊实施全面制裁，随后美军大规模集结海湾，"沙漠盾牌"行动启动，最终引发海湾战争。
+  confidence: 确定
+  tags: [战争, 海湾, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-lithuania-independence-199003
+  date: "1990-03-11"
+  title: 立陶宛宣布独立，拉开苏联解体序幕
+  category: 政治
+  importance: 4
+  summary: 立陶宛最高苏维埃率先宣布脱离苏联恢复独立，成为第一个宣布独立的苏联加盟共和国，拉开了苏联解体的连锁序幕。
+  confidence: 确定
+  tags: [政治, 苏联, 独立]
+  sources: [维基百科, 新华网]
+
+- id: w-gorbachev-president-199003
+  date: "1990-03-15"
+  title: 苏联人民代表大会选举戈尔巴乔夫为苏联首任总统
+  category: 政治
+  importance: 4
+  summary: 苏联第三次人民代表会议选举戈尔巴乔夫为苏联历史上首任、也是唯一一任总统，其改革与新政班子开始以总统制方式运作，但未能阻止苏联解体进程。
+  confidence: 确定
+  tags: [政治, 苏联]
+  sources: [维基百科, 新华网]
+
+- id: w-start-treaty-199006
+  date: "1990-06-01"
+  title: 美苏首脑签署《削减战略进攻性武器条约》初步协议
+  category: 政治
+  importance: 3
+  summary: 美国总统老布什与苏联总统戈尔巴乔夫在华盛顿举行首脑会晤，签署《削减战略进攻性武器条约》初步协议，为冷战后核裁军奠定基础。
+  confidence: 确定
+  tags: [政治, 美苏, 核裁军]
+  sources: [维基百科, 新华网]
+
 
 
