@@ -3042,5 +3042,55 @@
   tags: [科技, 工程, 交通]
   sources: [维基百科, 新华网]
 
+- id: w-wto-founded-199501
+  date: "1995-01-01"
+  title: 世界贸易组织（WTO）正式成立
+  category: 经济
+  importance: 5
+  summary: 世界贸易组织于1995年1月1日在日内瓦正式成立，取代关贸总协定成为全球多边贸易体系的正式机构，总部设于日内瓦。
+  confidence: 确定
+  tags: [经济, 贸易, 历史转折]
+  sources: [世界贸易组织, 维基百科]
+
+- id: w-srebrenica-genocide-199507
+  date: "1995-07-11"
+  title: 斯雷布雷尼察大屠杀，逾8000名穆斯林男性遇害
+  category: 战争
+  importance: 4
+  summary: 波黑塞族部队攻占联合国"安全区"斯雷布雷尼察，系统性处决逾8000名穆斯林男性与男童，成为二战后欧洲最严重的种族屠杀事件。
+  confidence: 确定
+  tags: [战争, 波黑, 大屠杀]
+  sources: [维基百科, 国际刑事法庭]
+
+- id: w-rabin-assassinated-199511
+  date: "1995-11-04"
+  title: 以色列总理拉宾在和平集会上遇刺身亡
+  category: 政治
+  importance: 4
+  summary: 以色列总理伊扎克·拉宾在特拉维夫参加和平集会时被犹太极端分子刺杀身亡，对中东和平进程造成沉重打击。
+  confidence: 确定
+  tags: [政治, 中东, 和平进程]
+  sources: [维基百科, 新华网]
+
+- id: w-dayton-accord-199512
+  date: "1995-12-14"
+  title: 《代顿和平协议》正式签署，波黑战争结束
+  category: 战争
+  importance: 4
+  summary: 波黑、克罗地亚、南斯拉夫三方领导人在美国代顿签署《代顿和平协议》，正式结束持续近四年的波黑战争，确立波黑联邦框架。
+  confidence: 确定
+  tags: [战争, 波黑, 和平协议]
+  sources: [维基百科, 新华网]
+
+- id: w-okc-bombing-199504
+  date: "1995-04-19"
+  title: 美国俄克拉荷马城联邦大楼发生特大爆炸案
+  category: 灾害
+  importance: 3
+  summary: 美国俄克拉荷马城联邦政府大楼遭汽车炸弹袭击，造成168人死亡、数百人受伤，是当时美国本土最严重的恐怖袭击事件。
+  confidence: 确定
+  tags: [灾害, 恐怖袭击, 美国]
+  sources: [维基百科, 新华网]
+
 
 

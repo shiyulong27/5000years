@@ -3036,4 +3036,44 @@
   tags: [改革, 国企]
   sources: [新华网, 国家经贸委]
 
+- id: cn-five-day-workweek-199501
+  date: "1995-01-01"
+  title: 中国开始实行每周五天工作制
+  category: 文化
+  importance: 3
+  summary: 根据国务院《关于职工工作时间的规定》，中国自1995年5月1日起全面实行每周五天工作制，双休日制度正式落地，大幅改善职工生活质量。
+  confidence: 确定
+  tags: [民生, 改革]
+  sources: [新华网, 国务院]
+
+- id: cn-science-education-strategy-199505
+  date: "1995-05-06"
+  title: 《中共中央、国务院关于加速科学技术进步的决定》颁布，确立"科教兴国"战略
+  category: 政治
+  importance: 4
+  summary: 中共中央、国务院颁布关于加速科学技术进步的决定，首次明确提出实施"科教兴国"战略，把科学技术和教育摆在经济社会发展的重要位置。
+  confidence: 确定
+  tags: [改革, 教育, 科技]
+  sources: [新华网, 科技部]
+
+- id: cn-women-conference-199509
+  date: "1995-09-04"
+  title: 联合国第四次世界妇女大会在北京隆重举行
+  category: 政治
+  importance: 4
+  summary: 联合国第四次世界妇女大会在北京开幕，来自185个国家和地区的代表与会，通过《北京宣言》和《行动纲领》，推动全球妇女事业发展。
+  confidence: 确定
+  tags: [外交, 妇女]
+  sources: [新华网, 联合国]
+
+- id: cn-victory-50th-199509
+  date: "1995-09-03"
+  title: 中国隆重纪念抗日战争暨世界反法西斯战争胜利50周年
+  category: 政治
+  importance: 3
+  summary: 首都各界在天安门广场集会，隆重纪念中国人民抗日战争暨世界反法西斯战争胜利50周年，中共中央总书记江泽民发表重要讲话。
+  confidence: 确定
+  tags: [抗战, 纪念]
+  sources: [新华网]
+
 
