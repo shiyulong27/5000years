@@ -6257,3 +6257,75 @@
   confidence: 确定
   tags: [欧洲, 冷战, 外交]
   sources: [德国联邦外交部, 联合国条约集]
+- id: w-ec-first-enlargement-197301
+  date: '1973-01-01'
+  title: 欧洲共同体首次扩大
+  category: 经济
+  importance: 4
+  summary: 英国、爱尔兰和丹麦正式加入欧洲共同体，欧洲一体化由六国扩展至九国。
+  confidence: 确定
+  tags: [欧洲, 贸易, 一体化]
+  sources: [欧盟委员会, 维基百科]
+- id: w-paris-peace-accords-197301
+  date: '1973-01-27'
+  title: 《巴黎和平协定》签署
+  category: 战争
+  importance: 5
+  summary: 美国、北越、南越和越共签署和平协定，美军随后撤出越南并结束直接参战，越南战争进入最后阶段。
+  confidence: 确定
+  tags: [越南战争, 外交, 历史转折]
+  sources: [美国国务院历史办公室, 联合国]
+- id: w-first-handheld-mobile-call-197304
+  date: '1973-04-03'
+  title: 首次手持移动电话通话完成
+  category: 文化
+  importance: 4
+  summary: 摩托罗拉工程师马丁·库珀在纽约完成公认的首次手持蜂窝电话公开通话，开启移动通信设备发展新时代。
+  confidence: 确定
+  tags: [科技, 通信]
+  sources: [摩托罗拉历史档案, 史密森学会]
+- id: w-skylab-launch-197305
+  date: '1973-05-14'
+  title: 美国“天空实验室”发射
+  category: 文化
+  importance: 4
+  summary: 美国发射首个空间站“天空实验室”，此后多批宇航员在轨开展太阳观测、医学和材料实验。
+  confidence: 确定
+  tags: [航天, 科技, 空间站]
+  sources: [美国国家航空航天局, 维基百科]
+- id: w-chile-coup-197309
+  date: '1973-09-11'
+  title: 智利军事政变
+  category: 政治
+  importance: 5
+  summary: 智利军方推翻阿连德政府，奥古斯托·皮诺切特随后建立军政府，智利进入长期威权统治时期。
+  confidence: 确定
+  tags: [政变, 拉美, 人权]
+  sources: [智利国家图书馆, 美国国务院]
+- id: w-yom-kippur-war-197310
+  date: '1973-10-06'
+  title: 第四次中东战争爆发
+  category: 战争
+  importance: 5
+  summary: 埃及和叙利亚向以色列发动进攻，赎罪日战争爆发，引发美苏外交对峙并重塑中东和平进程。
+  confidence: 确定
+  tags: [战争, 中东, 军事]
+  sources: [联合国安理会, 维基百科]
+- id: w-oil-crisis-197310
+  date: '1973-10-17'
+  title: 阿拉伯石油禁运引发第一次石油危机
+  category: 经济
+  importance: 5
+  summary: 阿拉伯产油国对支持以色列的国家实施石油禁运并削减产量，油价暴涨，全球经济陷入通胀与衰退压力。
+  confidence: 确定
+  tags: [能源, 石油, 全球经济]
+  sources: [国际能源署, 美国国务院历史办公室]
+- id: w-sydney-opera-house-opens-197310
+  date: '1973-10-20'
+  title: 悉尼歌剧院正式开幕
+  category: 文化
+  importance: 4
+  summary: 悉尼歌剧院正式开幕，其独特建筑设计使其成为20世纪现代建筑和澳大利亚文化的重要象征。
+  confidence: 确定
+  tags: [建筑, 艺术, 澳大利亚]
+  sources: [悉尼歌剧院, 联合国教科文组织]

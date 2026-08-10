@@ -5885,3 +5885,57 @@
   confidence: 确定
   tags: [外交, 亚太]
   sources: [中国外交部, 澳大利亚外交贸易部]
+- id: cn-luhuo-earthquake-197302
+  date: '1973-02-06'
+  title: 四川炉霍发生强烈地震
+  category: 灾害
+  importance: 4
+  summary: 四川炉霍发生约7.6级地震，造成重大人员伤亡和房屋破坏，是新中国成立后西南地区严重地震灾害之一。
+  confidence: 确定
+  tags: [地震, 灾害, 四川]
+  sources: [中国地震局, 美国地质调查局]
+- id: cn-us-liaison-offices-agreement-197302
+  date: '1973-02-22'
+  title: 中美同意互设联络处
+  category: 政治
+  importance: 4
+  summary: 中美达成互设联络处协议，在正式建交前建立常态化外交沟通机制，双边关系继续向正常化推进。
+  confidence: 确定
+  tags: [外交, 中美关系]
+  sources: [中国外交部, 美国国务院历史办公室]
+- id: cn-china-spain-diplomatic-197303
+  date: '1973-03-09'
+  title: 中国与西班牙建立外交关系
+  category: 政治
+  importance: 3
+  summary: 中华人民共和国与西班牙正式建立外交关系，中国同西欧国家的外交联系继续扩大。
+  confidence: 确定
+  tags: [外交, 欧洲]
+  sources: [中国外交部, 西班牙外交部]
+- id: cn-first-environment-conference-197308
+  date: '1973-08-05'
+  title: 第一次全国环境保护会议召开
+  category: 政治
+  importance: 4
+  summary: 中国召开第一次全国环境保护会议，提出全面规划、合理布局、综合利用和化害为利等方针，现代环境治理体系开始起步。
+  confidence: 确定
+  tags: [环境, 政策, 民生]
+  sources: [生态环境部, 中国政府网]
+- id: cn-10th-cpc-congress-197308
+  date: '1973-08-24'
+  title: 中共十大召开
+  category: 政治
+  importance: 4
+  summary: 中国共产党第十次全国代表大会在北京举行，完成中央领导机构调整，并延续“文化大革命”时期的政治路线。
+  confidence: 确定
+  tags: [政治, 党建]
+  sources: [中共中央党史和文献研究院, 新华网]
+- id: cn-military-region-commanders-transfer-197312
+  date: '1973-12-22'
+  title: 八大军区司令员进行对调
+  category: 政治
+  importance: 4
+  summary: 中央军委发布命令，对八大军区司令员进行大范围对调，以加强中央对军队的统一领导并打破长期任职形成的地域关系。
+  confidence: 确定
+  tags: [军事, 政治, 改革]
+  sources: [中国军网, 中共中央党史资料]
