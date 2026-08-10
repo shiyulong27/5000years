@@ -6662,3 +6662,84 @@
   confidence: 确定
   tags: [航空事故, 马来西亚, 灾害, 劫机]
   sources: [马来西亚民航局, Aviation Safety Network, Wikipedia—Malaysian Airline System Flight 653]
+- id: w-gps-test-satellite-197802
+  date: '1978-02-22'
+  title: 美国GPS首颗试验卫星发射
+  category: 文化
+  importance: 3
+  summary: 美国发射首颗NAVSTAR GPS试验卫星，开启全球定位系统卫星组网和后续民用导航技术发展。
+  confidence: 确定
+  tags: [GPS, 航天, 科技, 美国]
+  sources: [美国空军, NASA, Wikipedia—NAVSTAR GPS]
+- id: w-saur-revolution-197804
+  date: '1978-04-27'
+  title: 阿富汗“四月革命”
+  category: 政治
+  importance: 4
+  summary: 阿富汗人民民主党发动政变推翻达乌德政权，建立阿富汗民主共和国，随后引发长期内战和苏联干预。
+  confidence: 确定
+  tags: [阿富汗, 政变, 冷战, 南亚]
+  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Saur Revolution]
+- id: w-louise-brown-197807
+  date: '1978-07-25'
+  title: 世界首例试管婴儿出生
+  category: 文化
+  importance: 4
+  summary: 路易丝·布朗在英国奥尔德姆出生，成为世界首例经体外受精—胚胎移植技术出生的婴儿，开启辅助生殖医学时代。
+  confidence: 确定
+  tags: [医学, IVF, 英国, 科技]
+  sources: [英国国民保健署NHS, Encyclopaedia Britannica, Wikipedia—Louise Brown]
+- id: w-cinema-rex-fire-197808
+  date: '1978-08-19'
+  title: 伊朗阿巴丹雷克斯电影院火灾
+  category: 灾害
+  importance: 4
+  summary: 阿巴丹雷克斯电影院发生纵火火灾，造成数百人死亡，事件加剧社会对巴列维王朝的不满并成为伊朗革命前奏。
+  confidence: 确定
+  tags: [伊朗, 火灾, 革命, 灾害]
+  sources: [伊朗国家档案机构, Encyclopaedia Britannica, Wikipedia—Cinema Rex fire]
+- id: w-camp-david-accords-197809
+  date: '1978-09-17'
+  title: 《戴维营协议》签署
+  category: 政治
+  importance: 5
+  summary: 埃及总统萨达特、以色列总理贝京在美国斡旋下签署戴维营框架协议，为次年埃以和平条约奠定基础。
+  confidence: 确定
+  tags: [中东和平, 埃及, 以色列, 美国外交]
+  sources: [美国国务院历史办公室, Encyclopaedia Britannica, Wikipedia—Camp David Accords]
+- id: w-pope-john-paul-ii-elected-197810
+  date: '1978-10-16'
+  title: 若望·保禄二世当选教皇
+  category: 政治
+  importance: 4
+  summary: 波兰籍红衣主教卡罗尔·沃伊蒂瓦当选罗马教皇若望·保禄二世，成为近460年来首位非意大利籍教皇。
+  confidence: 确定
+  tags: [梵蒂冈, 教皇, 宗教, 欧洲]
+  sources: [梵蒂冈新闻, Encyclopaedia Britannica, Wikipedia—Pope John Paul II]
+- id: w-jonestown-massacre-197811
+  date: '1978-11-18'
+  title: 琼斯镇大规模死亡事件
+  category: 灾害
+  importance: 4
+  summary: 圭亚那琼斯镇人民圣殿教成员集体服毒，造成900余人死亡，是现代史上最大规模的非自然灾难之一。
+  confidence: 确定
+  tags: [圭亚那, 集体死亡, 灾害, 宗教]
+  sources: [美国国务院历史办公室, Encyclopaedia Britannica, Wikipedia—Jonestown]
+- id: w-spanish-constitution-referendum-197812
+  date: '1978-12-06'
+  title: 西班牙宪法公投通过
+  category: 政治
+  importance: 4
+  summary: 西班牙公民在公投中批准民主宪法，确立君主立宪和议会民主制度，完成佛朗哥时代后的制度转型关键步骤。
+  confidence: 确定
+  tags: [西班牙, 宪法, 民主转型, 欧洲]
+  sources: [西班牙政府, Encyclopaedia Britannica, Wikipedia—Spanish Constitution of 1978]
+- id: w-vietnam-invades-cambodia-197812
+  date: '1978-12-25'
+  title: 越南入侵柬埔寨
+  category: 战争
+  importance: 5
+  summary: 越南军队大规模进入柬埔寨，推翻民主柬埔寨政权并扶植柬埔寨人民共和国，柬越战争和地区冲突升级。
+  confidence: 确定
+  tags: [越南, 柬埔寨, 战争, 东南亚]
+  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Cambodian–Vietnamese War]

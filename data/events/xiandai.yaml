@@ -31,6 +31,7 @@
   importance: 5
   summary: 中共十一届三中全会召开，将工作中心转移到经济建设上来，开启改革开放历史新时期。
   confidence: 确定
+  sources: [中国共产党新闻网, 新华社, Wikipedia—3rd Plenary Session of the 11th CCP Central Committee]
 - id: wto-entry-2001
   date: '2001'
   title: 加入世界贸易组织
@@ -6164,3 +6165,57 @@
   confidence: 确定
   tags: [高考, 教育, 恢复招生, 改革]
   sources: [中华人民共和国教育部, 新华社, Wikipedia—National Higher Education Entrance Examination]
+- id: cn-fifth-npc-constitution-197803
+  date: '1978-03-05'
+  title: 第五届全国人民代表大会第一次会议通过1978年宪法
+  category: 政治
+  importance: 4
+  summary: 五届人大一次会议通过1978年宪法，作为改革开放前的过渡性根本法，调整国家机构和公民权利等制度安排。
+  confidence: 确定
+  tags: [宪法, 全国人大, 政治, 法制]
+  sources: [中国人大网, 新华社, Wikipedia—1978 Constitution of China]
+- id: cn-national-science-conference-197803
+  date: '1978-03-18'
+  title: 全国科学大会在北京召开
+  category: 文化
+  importance: 5
+  summary: 全国科学大会召开，邓小平提出“科学技术是生产力”等重要论断，科技和知识分子政策开始转向。
+  confidence: 确定
+  tags: [科学大会, 科技, 教育, 政策转折]
+  sources: [中国科学院, 新华社, Wikipedia—National Science Conference]
+- id: cn-truth-standard-197805
+  date: '1978-05-11'
+  title: 《实践是检验真理的唯一标准》发表
+  category: 文化
+  importance: 5
+  summary: 《光明日报》发表特约评论员文章，引发关于真理标准的大讨论，为思想路线拨乱反正和改革开放提供理论准备。
+  confidence: 确定
+  tags: [真理标准, 思想解放, 光明日报, 政治思想]
+  sources: [光明日报, 中国共产党新闻网, Wikipedia—Practice is the sole criterion for testing truth]
+- id: cn-china-japan-peace-treaty-197808
+  date: '1978-08-12'
+  title: 《中日和平友好条约》签署
+  category: 政治
+  importance: 4
+  summary: 中国和日本在北京签署和平友好条约，确认和平共处原则并加强双边关系，条约于10月23日生效。
+  confidence: 确定
+  tags: [中日关系, 外交, 条约, 东亚]
+  sources: [中华人民共和国外交部, 日本外务省, Wikipedia—Treaty of Peace and Friendship between Japan and China]
+- id: cn-central-work-conference-197811
+  date: '1978-11-10'
+  title: 中央工作会议召开
+  category: 政治
+  importance: 4
+  summary: 中共中央工作会议在北京召开，围绕经济建设和历史遗留问题展开讨论，为随后十一届三中全会实现工作重点转移作准备。
+  confidence: 确定
+  tags: [中央工作会议, 改革开放, 经济建设, 政治]
+  sources: [中国共产党新闻网, 新华社, Wikipedia—3rd Plenary Session of the 11th CCP Central Committee]
+- id: cn-xiaogang-household-contract-197811
+  date: '1978-11-24'
+  title: 安徽凤阳小岗村实行包产到户
+  category: 经济
+  importance: 4
+  summary: 小岗村18户农民签订分田到户契约，实行“包干到户”，成为农村家庭联产承包责任制的重要先行实践。
+  confidence: 确定
+  tags: [农村改革, 包产到户, 安徽, 经济改革]
+  sources: [中华人民共和国农业农村部, 新华社, Wikipedia—Household responsibility system]
