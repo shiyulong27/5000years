@@ -6329,3 +6329,75 @@
   confidence: 确定
   tags: [建筑, 艺术, 澳大利亚]
   sources: [悉尼歌剧院, 联合国教科文组织]
+- id: w-turkish-airlines-981-197403
+  date: '1974-03-03'
+  title: 土耳其航空981号班机空难
+  category: 灾害
+  importance: 4
+  summary: 土耳其航空981号班机在法国坠毁，机上346人全部遇难，事故推动大型客机货舱门设计和航空安全监管改进。
+  confidence: 确定
+  tags: [航空, 灾害, 安全]
+  sources: [法国航空事故调查局, 国际民航组织]
+- id: w-carnation-revolution-197404
+  date: '1974-04-25'
+  title: 葡萄牙爆发“康乃馨革命”
+  category: 政治
+  importance: 5
+  summary: 葡萄牙军人运动推翻长期“新国家”独裁政权，开启民主化与殖民地非殖民化进程。
+  confidence: 确定
+  tags: [革命, 民主, 欧洲]
+  sources: [葡萄牙议会, 维基百科]
+- id: w-india-smiling-buddha-197405
+  date: '1974-05-18'
+  title: 印度进行首次核试验
+  category: 政治
+  importance: 5
+  summary: 印度在拉贾斯坦邦进行代号“微笑佛”的地下核爆炸，成为第六个公开进行核试验的国家，南亚安全格局显著变化。
+  confidence: 确定
+  tags: [核武器, 南亚, 科技]
+  sources: [印度原子能部, 全面禁止核试验条约组织]
+- id: w-turkey-cyprus-invasion-197407
+  date: '1974-07-20'
+  title: 土耳其出兵塞浦路斯
+  category: 战争
+  importance: 5
+  summary: 土耳其军队登陆塞浦路斯北部，冲突导致岛屿事实分裂，并形成延续至今的塞浦路斯问题。
+  confidence: 确定
+  tags: [战争, 领土, 东地中海]
+  sources: [联合国安理会, 维基百科]
+- id: w-greek-junta-falls-197407
+  date: '1974-07-23'
+  title: 希腊军政府垮台
+  category: 政治
+  importance: 4
+  summary: 塞浦路斯危机后希腊军政府失去支持，文人政府接管国家并启动民主过渡。
+  confidence: 确定
+  tags: [政治, 民主, 欧洲]
+  sources: [希腊议会, 维基百科]
+- id: w-nixon-resigns-197408
+  date: '1974-08-08'
+  title: 尼克松宣布辞去美国总统职务
+  category: 政治
+  importance: 5
+  summary: 水门事件调查压力下，尼克松宣布辞职并于次日生效，成为美国历史上首位辞职的总统。
+  confidence: 确定
+  tags: [美国, 政治, 法律]
+  sources: [尼克松总统图书馆, 美国国家档案馆]
+- id: w-ethiopia-emperor-deposed-197409
+  date: '1974-09-12'
+  title: 埃塞俄比亚军方废黜海尔·塞拉西
+  category: 政治
+  importance: 5
+  summary: 军方“德尔格”废黜海尔·塞拉西一世，延续数百年的埃塞俄比亚帝制终结，国家转入军事政权统治。
+  confidence: 确定
+  tags: [政变, 非洲, 政体]
+  sources: [埃塞俄比亚国家档案, 维基百科]
+- id: w-cyclone-tracy-197412
+  date: '1974-12-24'
+  title: 热带气旋特雷西重创达尔文
+  category: 灾害
+  importance: 4
+  summary: 热带气旋特雷西袭击澳大利亚达尔文，造成严重伤亡并摧毁大部分城市建筑，随后引发大规模疏散与重建。
+  confidence: 确定
+  tags: [气候, 灾害, 澳大利亚]
+  sources: [澳大利亚气象局, 澳大利亚国家档案馆]

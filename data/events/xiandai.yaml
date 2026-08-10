@@ -5939,3 +5939,66 @@
   confidence: 确定
   tags: [军事, 政治, 改革]
   sources: [中国军网, 中共中央党史资料]
+- id: cn-paracel-battle-197401
+  date: '1974-01-19'
+  title: 西沙海战发生
+  category: 战争
+  importance: 4
+  summary: 中国海军与南越海军在西沙群岛发生海战，战后中国控制西沙群岛全部岛礁，南海局势由此发生重要变化。
+  confidence: 确定
+  tags: [海战, 南海, 军事]
+  sources: [中国军网, 维基百科]
+- id: cn-three-worlds-theory-197402
+  date: '1974-02-22'
+  title: 毛泽东提出“三个世界”划分
+  category: 政治
+  importance: 4
+  summary: 毛泽东会见赞比亚总统卡翁达时系统阐述“三个世界”观点，成为此后中国对国际格局和反霸权战略的重要表述。
+  confidence: 确定
+  tags: [外交, 国际关系]
+  sources: [中共中央文献研究室, 中国外交部]
+- id: cn-terracotta-army-discovered-197403
+  date: '1974-03-29'
+  title: 秦始皇兵马俑被发现
+  category: 文化
+  importance: 5
+  summary: 陕西临潼农民打井时发现陶俑碎片，随后考古发掘揭示秦始皇陵大型兵马俑坑，成为中国重大考古发现和世界文化遗产。
+  confidence: 确定
+  tags: [考古, 文化, 历史转折]
+  sources: [秦始皇帝陵博物院, 国家文物局]
+- id: cn-deng-un-speech-197404
+  date: '1974-04-10'
+  title: 邓小平在联合国特别大会发言
+  category: 政治
+  importance: 4
+  summary: 邓小平率中国代表团出席联合国第六届特别大会，系统阐述中国对国际形势、“三个世界”和反霸权问题的立场。
+  confidence: 确定
+  tags: [外交, 联合国, 国际关系]
+  sources: [联合国大会档案, 中国外交部]
+- id: cn-zhaotong-earthquake-197405
+  date: '1974-05-11'
+  title: 云南昭通发生强烈地震
+  category: 灾害
+  importance: 4
+  summary: 云南昭通地区发生约7.1级地震，造成严重人员伤亡、房屋倒塌和山体滑坡等次生灾害。
+  confidence: 确定
+  tags: [地震, 灾害, 云南]
+  sources: [中国地震局, 美国地质调查局]
+- id: cn-china-malaysia-diplomatic-197405
+  date: '1974-05-31'
+  title: 中国与马来西亚建立外交关系
+  category: 政治
+  importance: 4
+  summary: 中华人民共和国与马来西亚正式建立外交关系，马来西亚成为首批与新中国建交的东盟成员国之一。
+  confidence: 确定
+  tags: [外交, 东南亚]
+  sources: [中国外交部, 马来西亚外交部]
+- id: cn-nuclear-submarine-commissioned-197408
+  date: '1974-08-01'
+  title: 中国第一艘核潜艇正式服役
+  category: 文化
+  importance: 4
+  summary: 中国自行研制的第一艘核动力潜艇正式编入海军战斗序列，标志中国建立核动力潜艇部队。
+  confidence: 确定
+  tags: [军事, 科技, 核潜艇]
+  sources: [中国军网, 中国船舶集团]
