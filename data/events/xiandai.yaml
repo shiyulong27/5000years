@@ -2226,6 +2226,76 @@
   tags: [民生, 农业, 改革, 历史转折]
   sources: [新华网, 人大网]
 
+- id: cn-national-npc-200303
+  date: "2003-03-15"
+  title: 十届全国人大一次会议举行，胡锦涛当选中华人民共和国主席
+  category: 政治
+  importance: 5
+  summary: 十届全国人大一次会议选举胡锦涛为国家主席、江泽民为国家中央军委主席，国家领导体制顺利实现新老交替。
+  confidence: 确定
+  tags: [政治, 人大, 历史转折]
+  sources: [新华网, 人大网]
+
+- id: cn-fight-against-sars-200304
+  date: "2003-04-20"
+  title: 中共中央国务院全面部署抗击非典（SARS）工作，构建公共卫生应急体系
+  category: 灾害
+  importance: 5
+  summary: 面对非典疫情爆发，国家成立全国防治非典型肺炎指挥部，建立公开透明疫情发布机制，6月24日世卫组织解除对北京旅游警告并从疫区名单除名。
+  confidence: 确定
+  tags: [疫情, 公共卫生, 历史转折]
+  sources: [新华网, 卫生部]
+
+- id: cn-three-gorges-water-storage-200306
+  date: "2003-06-01"
+  title: 三峡水库正式开始蓄水，下闸蓄水至135米
+  category: 经济
+  importance: 5
+  summary: 三峡水库下闸蓄水，16日三峡双线五级船闸通航，标志着三峡工程由建设阶段进入水库蓄水、船闸通航和首批机组发电阶段。
+  confidence: 确定
+  tags: [工程, 水利, 历史转折]
+  sources: [新华网, 中国三峡]
+
+- id: cn-cepa-signed-200306
+  date: "2003-06-29"
+  title: 《内地与香港关于建立更紧密经贸关系的安排》（CEPA）在香港签署
+  category: 经济
+  importance: 5
+  summary: 中央政府与香港特区政府签署CEPA，开放货物贸易关税优惠与服务贸易市场准入，随后开放赴港"个人游"，强力振兴香港经济。
+  confidence: 确定
+  tags: [经济, 香港, CEPA, 历史转折]
+  sources: [商务部, 新华网]
+
+- id: cn-shenzhou5-manned-flight-200310
+  date: "2003-10-15"
+  title: 我国首次载人航天飞行获得圆满成功，航天员杨利伟乘坐神舟五号飞船遨游太空
+  category: 文化
+  importance: 5
+  summary: 神舟五号载人飞船成功发射并于16日安全着陆，杨利伟成为首位进入太空的中国航天员，标志着中国成为世界上第三个独立掌握载人航天技术的国家。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [国家航天局, 新华网]
+
+- id: cn-cpc-16th-3rd-plenum-200310
+  date: "2003-10-14"
+  title: 中共十六届三中全会通过《关于完善社会主义市场经济体制若干问题的决定》
+  category: 政治
+  importance: 5
+  summary: 全会提出了"坚持以人为本，树立全面、协调、可持续的发展观"，首次完整阐述科学发展观的深刻内涵。
+  confidence: 确定
+  tags: [政治, 经济, 科学发展观, 历史转折]
+  sources: [新华网]
+
+- id: cn-northeast-revitalization-200310
+  date: "2003-10-05"
+  title: 中共中央国务院印发《关于实施东北地区等老工业基地振兴战略的若干意见》
+  category: 经济
+  importance: 5
+  summary: 党中央正式启动"振兴东北老工业基地"战略，深化国有企业改革与产业结构调整，打造中国经济第四增长极。
+  confidence: 确定
+  tags: [经济, 区域, 历史转折]
+  sources: [新华网, 国务院]
+
 - id: cn-constitution-amendment-200403
   date: "2004-03-14"
   title: 十届全国人大二次会议表决通过宪法修正案，将"国家尊重和保障人权"写入宪法

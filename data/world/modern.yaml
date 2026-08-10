@@ -2484,3 +2484,53 @@
   confidence: 确定
   tags: [灾害, 海啸, 地震, 全球, 历史转折]
   sources: [维基百科, 联合国, 新华网]
+
+- id: w-space-shuttle-columbia-disaster-200302
+  date: "2003-02-01"
+  title: 美国"哥伦比亚"号航天飞机返回重返大气层时解体失事，7名宇航员全部遇难
+  category: 灾害
+  importance: 5
+  summary: 哥伦比亚号航天飞机在结束STS-107任务返回途中解体，7名宇航员不幸遇难，美国停飞航天飞机计划长达两年。
+  confidence: 确定
+  tags: [航天, 灾害, 美国, 历史转折]
+  sources: [NASA, 维基百科, 新华网]
+
+- id: w-iraq-war-breaks-out-200303
+  date: "2003-03-20"
+  title: 美英联军空袭巴格达爆发伊拉克战争，推翻萨达姆政权
+  category: 战争
+  importance: 5
+  summary: 美英以伊拉克拥有"大规模杀伤性武器"为由未经联合国授权对伊发动军事打击，一个月后占领巴格达，重塑中东地缘政局。
+  confidence: 确定
+  tags: [战争, 伊拉克, 美国, 中东, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-georgia-rose-revolution-200311
+  date: "2003-11-23"
+  title: 格鲁吉亚爆发"玫瑰革命"，谢瓦尔德纳泽辞职
+  category: 政治
+  importance: 4
+  summary: 格鲁吉亚反对派在萨卡什维利领导下爆发和平抗议迫使总统谢瓦尔德纳泽辞职，后苏联地区迎来首次"颜色革命"。
+  confidence: 确定
+  tags: [政治, 地缘, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-saddam-captured-200312
+  date: "2003-12-13"
+  title: 美军在提克里特捕获隐藏在"蜘蛛洞"中的伊拉克前总统萨达姆
+  category: 战争
+  importance: 5
+  summary: 美军在"红色黎明"行动中捕获隐藏在地下洞穴的萨达姆·侯赛因，标志着萨达姆个人统治彻底画上句号。
+  confidence: 确定
+  tags: [战争, 伊拉克, 美国, 中东, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-concorde-retired-200310
+  date: "2003-10-24"
+  title: 协和式超音速客机（Concorde）完成最后一次商业飞行，正式退役
+  category: 文化
+  importance: 4
+  summary: 世界上唯一投入商业运营的超音速客机协和号在伦敦希思罗机场降落完成告别飞行，结束了长达27年的超音速民航时代。
+  confidence: 确定
+  tags: [科技, 航空, 历史转折]
+  sources: [维基百科, 新华网]
