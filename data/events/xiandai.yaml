@@ -68,6 +68,9 @@
   summary: 深度求索公司发布开源推理大模型DeepSeek-R1，性能比肩全球顶尖闭源模型而训练成本显著更低，引发世界对中国AI实力的重新评估与全球科技股市场震荡。
   confidence: 确定
   tags: [科技, AI]
+  image:
+    url: "/images/events/2025/deepseek-r1-pipeline.png"
+    caption: "DeepSeek-R1技术报告展示的多阶段训练流程图"
 
 - id: cn-spring-festival-economy-202502
   date: "2025-02"
@@ -185,6 +188,9 @@
   summary: 上海合作组织成员国元首理事会第二十五次会议在天津举行，中方提出“全球治理倡议”。
   confidence: 确定
   tags: [外交, 上合]
+  image:
+    url: "/images/events/2025/sco-tianjin-summit.jpg"
+    caption: "2025年上海合作组织天津峰会与会领导人合影"
 
 - id: cn-antijapan-80th-202509
   date: "2025-09-03"
@@ -194,6 +200,9 @@
   summary: 纪念中国人民抗日战争暨世界反法西斯战争胜利80周年大会在北京隆重举行并举行阅兵仪式。
   confidence: 确定
   tags: [军事, 纪念]
+  image:
+    url: "/images/events/2025/victory-day-parade.jpg"
+    caption: "2025年9月3日，北京举行纪念抗战胜利80周年阅兵"
 
 - id: cn-fujian-catapult-202509
   date: "2025-09-22"
@@ -230,6 +239,9 @@
   summary: 中共二十届四中全会在北京举行，审议通过《中共中央关于制定国民经济和社会发展第十五个五年规划的建议》。
   confidence: 确定
   tags: [政治, 十五五]
+  image:
+    url: "/images/events/2025/great-hall-of-the-people.jpg"
+    caption: "2025年10月的北京人民大会堂外景；二十届四中全会在此举行"
 
 - id: cn-shenzhou-20-21-202511
   date: "2025-11-01"
@@ -257,6 +269,9 @@
   summary: 我国首艘电磁弹射型航空母舰福建舰入列授旗仪式举行，国家主席出席并登舰视察。福建舰满载排水量8万余吨，为全球首艘采用常规动力电磁弹射技术的航母，驻泊三亚某军港。
   confidence: 确定
   tags: [军事, 海军]
+  image:
+    url: "/images/events/2025/fujian-flight-deck.jpg"
+    caption: "福建舰飞行甲板与舰载机画面"
 
 - id: cn-shenzhou-20-emergency-202511
   date: "2025-11-14"
@@ -3787,5 +3802,4 @@
   confidence: 确定
   tags: [科技, 科考]
   sources: [新华网, 中国科学院]
-
 
