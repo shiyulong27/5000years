@@ -3618,4 +3618,64 @@
   tags: [改革, 经济]
   sources: [新华网, 人民日报]
 
+- id: cn-7th-5year-plan-198604
+  date: "1986-04-12"
+  title: 六届全国人大四次会议通过第七个五年计划
+  category: 政治
+  importance: 3
+  summary: 六届全国人大第四次会议审议通过《中华人民共和国国民经济和社会发展第七个五年计划》，确立1986至1990年经济社会发展主要目标与改革任务。
+  confidence: 确定
+  tags: [改革, 经济]
+  sources: [新华网, 全国人大常委会]
+
+- id: cn-halley-comet-198604
+  date: "1986-04-11"
+  title: 中国组织哈雷彗星回归大规模联合观测
+  category: 文化
+  importance: 3
+  summary: 在哈雷彗星76年一度的回归期，中国天文学会组织全国联合观测并开展彗星研究，是中国现代天文学史上规模空前的天象联合观测活动。
+  confidence: 确定
+  tags: [科考, 科技]
+  sources: [新华网, 中国天文学会]
+
+- id: cn-labor-contract-system-198605
+  date: "1986-05-04"
+  title: 国务院发布国营企业实行劳动合同制暂行规定
+  category: 经济
+  importance: 4
+  summary: 国务院发布关于国营企业招用工人的四项暂行规定，推行劳动合同制，终结"铁饭碗"统包统配用工制度，是劳动用工制度的根本性改革。
+  confidence: 确定
+  tags: [改革, 民生, 经济]
+  sources: [新华网, 国务院]
+
+- id: cn-12th-6th-plenum-spiritual-civilization-198609
+  date: "1986-09-28"
+  title: 中共十二届六中全会通过精神文明建设指导方针决议
+  category: 政治
+  importance: 3
+  summary: 中共十二届六中全会通过《关于社会主义精神文明建设指导方针的决议》，阐明精神文明建设的战略地位与基本指导方针，推动物质与精神文明协调发展。
+  confidence: 确定
+  tags: [改革, 政治]
+  sources: [新华网, 人民日报]
+
+- id: cn-liubocheng-death-198610
+  date: "1986-10-07"
+  title: 刘伯承元帅在北京逝世
+  category: 政治
+  importance: 3
+  summary: 中华人民共和国元帅、军事家刘伯承在北京病逝，享年94岁，他是开国十大元帅之一、二野主要领导人，为解放战争胜利立下卓越功勋。
+  confidence: 确定
+  tags: [军事, 政治]
+  sources: [新华网, 人民日报]
+
+- id: cn-863-program-198611
+  date: "1986-11-18"
+  title: 中共中央国务院批准实施"863计划"
+  category: 文化
+  importance: 5
+  summary: 中共中央、国务院批准《高技术研究发展计划纲要》，即"863计划"，选择生物、航天、信息、激光、自动化、能源、新材料等七大领域跟踪世界高科技前沿，是中国科技发展的里程碑。
+  confidence: 确定
+  tags: [科技, 改革, 历史转折]
+  sources: [新华网, 科技部]
+
 

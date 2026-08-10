@@ -3742,5 +3742,85 @@
   tags: [科技, 互联网]
   sources: [维基百科, 微软]
 
+- id: w-palme-assassination-198602
+  date: "1986-02-28"
+  title: 瑞典首相奥洛夫·帕尔梅遇刺身亡
+  category: 政治
+  importance: 3
+  summary: 瑞典首相帕尔梅在斯德哥尔摩街头看完电影后遭枪击身亡，凶手长期未破，是瑞典现代史上罕见的政治暴力事件，冲击北欧开放政治传统。
+  confidence: 确定
+  tags: [政治]
+  sources: [维基百科, 新华网]
+
+- id: w-challenger-disaster-198601
+  date: "1986-01-28"
+  title: 美国挑战者号航天飞机升空爆炸
+  category: 灾害
+  importance: 5
+  summary: 美国"挑战者"号航天飞机升空73秒后发生解体爆炸，7名宇航员全部罹难，震惊全球，致使美国航天飞机计划停飞近三年，深刻改变载人航天安全文化。
+  confidence: 确定
+  tags: [航天, 灾害, 历史转折]
+  sources: [维基百科, NASA]
+
+- id: w-people-power-philippines-198602
+  date: "1986-02-25"
+  title: 菲律宾马科斯政权倒台，阿基诺夫人就任总统
+  category: 政治
+  importance: 4
+  summary: 在"人民力量"运动的街头抗争与国际压力下，独裁执政21年的马科斯出逃夏威夷，科拉松·阿基诺就任菲律宾总统，亚洲"第三波民主化"标志性事件。
+  confidence: 确定
+  tags: [政治, 改革]
+  sources: [维基百科, 新华网]
+
+- id: w-chernobyl-disaster-198604
+  date: "1986-04-26"
+  title: 苏联切尔诺贝利核电站发生爆炸泄漏
+  category: 灾害
+  importance: 5
+  summary: 苏联乌克兰切尔诺贝利核电站4号反应堆爆炸并泄漏大量放射性物质，是世界史上最严重的核事故，直接致死与远期致癌致死数以千计，深刻影响全球核能与信息透明。
+  confidence: 确定
+  tags: [灾害, 气候, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-nyos-gas-disaster-198608
+  date: "1986-08-21"
+  title: 喀麦隆尼奥斯湖火山气体喷发，致1700余人死亡
+  category: 灾害
+  importance: 3
+  summary: 喀麦隆尼奥斯火山口湖突然喷发大量二氧化碳，沿山坡下沉至村庄致1700余人窒息身亡，揭示火山湖积存气体喷发这一罕见地质灾害。
+  confidence: 确定
+  tags: [灾害, 气候]
+  sources: [维基百科, 新华网]
+
+- id: w-maradona-hand-of-god-198606
+  date: "1986-06-22"
+  title: 马拉多纳"上帝之手"率阿根廷夺世界杯
+  category: 文化
+  importance: 3
+  summary: 在墨西哥世界杯四分之一决赛中，马拉多纳先以"上帝之手"破门、随后连过五人，阿根廷2比1淘汰英格兰并最终夺冠，成世界杯史上最经典场次之一。
+  confidence: 确定
+  tags: [体育]
+  sources: [维基百科, 新华网]
+
+- id: w-reykjavik-summit-198610
+  date: "1986-10-11"
+  title: 美苏雷克雅未克峰会
+  category: 政治
+  importance: 4
+  summary: 里根与戈尔巴乔夫在冰岛雷克雅未克举行非正式首脑会晤，虽未签协议，却就大幅削减战略核武器取得突破，为日后中导条约与冷战终结铺路。
+  confidence: 确定
+  tags: [外交, 政治]
+  sources: [维基百科, 新华网]
+
+- id: w-iran-contra-scandal-198611
+  date: "1986-11-03"
+  title: 美国"伊朗门"事件曝光
+  category: 政治
+  importance: 4
+  summary: 黎巴嫩媒体披露美国秘密向伊朗出售武器以换取释放人质，所得款项被转交尼加拉瓜反政府武装，违反国会禁令，引发里根政府执政以来最严重政治危机。
+  confidence: 确定
+  tags: [政治, 外交]
+  sources: [维基百科, 新华网]
+
 
 
