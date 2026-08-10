@@ -2882,5 +2882,55 @@
   tags: [政治, 欧洲一体化, 欧盟]
   sources: [维基百科, 欧盟委员会]
 
+- id: w-maastricht-signing-199202
+  date: "1992-02-07"
+  title: 《马斯特里赫特条约》正式签署，欧洲联盟即将成立
+  category: 政治
+  importance: 4
+  summary: 欧共体12国外长与财长在荷兰马斯特里赫特正式签署条约，确立欧洲经济货币联盟与政治联盟目标，为1993年欧盟正式成立奠定法律基础。
+  confidence: 确定
+  tags: [政治, 欧洲一体化, 欧盟]
+  sources: [维基百科, 欧盟委员会]
+
+- id: w-rio-earth-summit-199206
+  date: "1992-06-03"
+  title: 联合国环境与发展大会（里约地球峰会）召开
+  category: 政治
+  importance: 4
+  summary: 联合国环境与发展大会在巴西里约热内卢召开，100多个国家首脑与会，通过《里约环境与发展宣言》和《21世纪议程》，确立可持续发展理念。
+  confidence: 确定
+  tags: [环境, 气候, 可持续发展]
+  sources: [联合国, 维基百科]
+
+- id: w-la riots-199204
+  date: "1992-04-29"
+  title: 美国洛杉矶发生大规模种族骚乱
+  category: 政治
+  importance: 3
+  summary: 美国洛杉矶因白人警察殴打黑人青年罗德尼·金被判无罪引发大规模种族骚乱，持续数日造成数十人死亡、数千人受伤，暴露美国种族矛盾。
+  confidence: 确定
+  tags: [政治, 美国, 种族]
+  sources: [维基百科, 新华网]
+
+- id: w-clinton-elected-199211
+  date: "1992-11-03"
+  title: 克林顿当选美国总统，民主党重新执政
+  category: 政治
+  importance: 3
+  summary: 民主党候选人比尔·克林顿在总统大选中击败共和党在任总统老布什，当选美国第42任总统，结束共和党连续12年执政。
+  confidence: 确定
+  tags: [政治, 美国]
+  sources: [维基百科, 新华网]
+
+- id: w-nafta-signing-199212
+  date: "1992-12-17"
+  title: 美国、加拿大、墨西哥签署《北美自由贸易协定》
+  category: 经济
+  importance: 4
+  summary: 美、加、墨三国领导人签署《北美自由贸易协定》（NAFTA），决定建立覆盖约4亿人口的北美自由贸易区，1994年1月1日正式生效。
+  confidence: 确定
+  tags: [经济, 贸易, 区域合作]
+  sources: [维基百科, 世界贸易组织]
+
 
 

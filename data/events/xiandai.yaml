@@ -2916,4 +2916,44 @@
   tags: [经济, 规划, 改革]
   sources: [新华网, 国家发改委]
 
+- id: cn-deng-southern-tour-199201
+  date: "1992-01-18"
+  title: 邓小平视察南方并发表重要谈话，推动新一轮思想解放
+  category: 政治
+  importance: 5
+  summary: 邓小平从1月18日至2月21日先后视察武昌、深圳、珠海和上海等地，发表著名的"南方谈话"，强调坚持改革开放、发展才是硬道理，为中国新一轮改革开放指明方向。
+  confidence: 确定
+  tags: [改革, 思想解放, 历史转折]
+  sources: [新华网, 人民出版社]
+
+- id: cn-14th-cpc-congress-199210
+  date: "1992-10-12"
+  title: 中共十四大召开，确立建立社会主义市场经济体制的目标
+  category: 政治
+  importance: 5
+  summary: 中国共产党第十四次全国代表大会在北京召开，首次明确提出中国经济体制改革的目标是建立社会主义市场经济体制，选举江泽民为中央委员会总书记。
+  confidence: 确定
+  tags: [改革, 理论, 历史转折]
+  sources: [新华网, 人民日报]
+
+- id: cn-three-gorges-project-199204
+  date: "1992-04-03"
+  title: 七届全国人大五次会议通过关于兴建长江三峡工程的决议
+  category: 经济
+  importance: 4
+  summary: 七届全国人大五次会议表决通过兴建三峡工程的决议，世界最大水利枢纽工程正式立项，兼具防洪、发电、航运等综合效益。
+  confidence: 确定
+  tags: [经济, 水利, 工程]
+  sources: [新华网, 全国人大]
+
+- id: cn-south-korea-diplomatic-199208
+  date: "1992-08-24"
+  title: 中国与韩国正式建立外交关系
+  category: 政治
+  importance: 4
+  summary: 中国与韩国在北京正式签署建交公报并建立大使级外交关系，结束两国长期互不承认的状态，为双边经贸合作与半岛和平稳定创造条件。
+  confidence: 确定
+  tags: [外交, 韩国]
+  sources: [外交部, 新华网]
+
 
