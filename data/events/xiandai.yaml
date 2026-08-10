@@ -2665,3 +2665,75 @@
   confidence: 确定
   tags: [民生, 农业, 改革, 历史转折]
   sources: [新华网, 人大网]
+
+- id: cn-western-development-strategy-200001
+  date: "2000-01-16"
+  title: 国务院成立西部地区开发领导小组，西部大开发战略全面启动实施
+  category: 经济
+  importance: 5
+  summary: 国务院组建西部开发领导小组，朱镕基任组长，正式拉开覆盖12个省区市的西部大开发历史序幕，促进区域协调发展。
+  confidence: 确定
+  tags: [经济, 区域, 西部大开发, 历史转折]
+  sources: [新华网, 国务院]
+
+- id: cn-three-represents-200002
+  date: "2000-02-25"
+  title: 江泽民在广东考察时首次完整阐述"三个代表"重要思想
+  category: 政治
+  importance: 5
+  summary: 江泽民在高州首次提出党要始终代表先进生产力、先进文化与最广大人民根本利益，标志着"三个代表"重要思想正式形成。
+  confidence: 确定
+  tags: [政治, 思想, 党建, 历史转折]
+  sources: [新华网]
+
+- id: cn-sydney-olympics-china-200009
+  date: "2000-09-15"
+  title: 第27届悉尼奥运会举行，中国代表团斩获28金位列金牌榜第三位
+  category: 文化
+  importance: 5
+  summary: 悉尼奥运会在澳大利亚举行，中国代表团获得28金16银15铜，首次挺进奥运金牌榜前三名，实现历史性跨越。
+  confidence: 确定
+  tags: [体育, 奥运, 历史转折]
+  sources: [新华网, 国际奥委会]
+
+- id: cn-beidou1-first-satellite-200010
+  date: "2000-10-31"
+  title: 我国成功发射首颗"北斗一号"导航定位卫星，开启自主卫星导航时代
+  category: 文化
+  importance: 5
+  summary: 长征三号甲火箭成功将首颗北斗导航试验卫星送入轨道，随后12月发射第二颗，构建起中国首个自主双星定位导航系统（北斗一号）。
+  confidence: 确定
+  tags: [航天, 科技, 北斗, 历史转折]
+  sources: [国家航天局, 新华网]
+
+- id: cn-focac-1st-ministerial-200010
+  date: "2000-10-10"
+  title: 中非合作论坛第一届部长级会议在北京隆重开幕
+  category: 政治
+  importance: 5
+  summary: 中非合作论坛首届部长级会议在北京举行，44个非洲国家部长参会，通过《北京宣言》和《中非经济和社会发展合作纲领》，开启中非合作新纪元。
+  confidence: 确定
+  tags: [外交, 非洲, 历史转折]
+  sources: [外交部, 新华网]
+
+- id: cn-5th-national-population-census-200011
+  date: "2000-11-01"
+  title: 第五次全国人口普查登记工作在全国范围内展开，全国总人口达12.95亿
+  category: 经济
+  importance: 4
+  summary: 国家全面展开第五次人口普查，首次采用快速汇总技术，查实全国总人口为12亿9533万人，为21世纪初期经济社会规划提供基准。
+  confidence: 确定
+  tags: [人口, 经济, 统计]
+  sources: [国家统计局, 新华网]
+
+- id: cn-centenary-dawn-200001
+  date: "2000-01-01"
+  title: 全国人民欢庆千禧年，首都举行"迈向新世纪"神州世纪天坛之夜
+  category: 文化
+  importance: 4
+  summary: 北京中华世纪坛举行新世纪圣火点燃仪式，全国各地欢庆千禧新年与新世纪到来，同时顺利度过计算机"千年虫"考验。
+  confidence: 确定
+  tags: [社会, 千禧年, 文化]
+  sources: [新华网]
+
+

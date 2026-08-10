@@ -2652,3 +2652,65 @@
   tags: [灾害, 地震, 南亚]
   sources: [维基百科, 新华网]
 
+- id: w-putin-elected-president-200003
+  date: "2000-03-26"
+  title: 弗拉基米尔·普京在俄大选中当选俄罗斯第二任总统
+  category: 政治
+  importance: 5
+  summary: 普京以53%得票率赢得大选，正式接替叶利钦出任俄罗斯总统，开启了深刻影响21世纪俄国内政与全球地缘局势的普京执政时代。
+  confidence: 确定
+  tags: [政治, 俄罗斯, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-inter-korean-summit-200006
+  date: "2000-06-13"
+  title: 朝韩首脑在平壤举行历史性首次会晤（金大中与金正日会晤）
+  category: 政治
+  importance: 5
+  summary: 韩国总统金大中访问平壤与金正日举行分裂55年来首次首脑会晤，签署《南北共同宣言》，金大中于同年获诺贝尔和平奖。
+  confidence: 确定
+  tags: [政治, 朝鲜半岛, 和平, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-air-france-concorde-crash-200007
+  date: "2000-07-25"
+  title: 法国航空协和式超音速客机在巴黎起飞时坠毁，致113人遇难
+  category: 灾害
+  importance: 5
+  summary: 法航4590号班机在戴高乐机场起飞时轮胎爆裂击穿油箱起火坠毁，造成113人遇难，为超音速协和客机史上首起也是唯一致命空难。
+  confidence: 确定
+  tags: [灾害, 航空, 科技, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-sydney-olympics-200009
+  date: "2000-09-15"
+  title: 第27届夏季奥林匹克运动会在澳大利亚悉尼隆重开幕
+  category: 文化
+  importance: 5
+  summary: 千禧奥运会在悉尼举行，来自199个代表团的近万名运动员参赛，朝韩代表团在开幕式上首次手持"朝鲜半岛旗"共同入场。
+  confidence: 确定
+  tags: [体育, 奥运, 历史转折]
+  sources: [国际奥委会, 维基百科]
+
+- id: w-iss-first-resident-crew-200011
+  date: "2000-11-02"
+  title: 国际空间站（ISS）迎来首批长期常驻宇航员（远征1号）
+  category: 文化
+  importance: 5
+  summary: 美俄三名宇航员乘坐联盟号飞船顺利对接国际空间站并入住，开启了人类在太空连续不断常驻驻留至今的新纪元。
+  confidence: 确定
+  tags: [航天, 科技, 国际空间站, 历史转折]
+  sources: [NASA, 维基百科]
+
+- id: w-us-presidential-election-200011
+  date: "2000-11-07"
+  title: 美国总统大选小布什与戈尔陷入佛罗里达计票争议，最高法院裁决小布什胜选
+  category: 政治
+  importance: 5
+  summary: 美总统大选因佛州极度接近的票数陷入争议与重新计票纠纷，12月12日最高法院裁决停止计票，小布什以271张选举人票当选。
+  confidence: 确定
+  tags: [政治, 美国, 历史转折]
+  sources: [维基百科, 新华网]
+
+
+
