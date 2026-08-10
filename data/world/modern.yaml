@@ -2832,5 +2832,55 @@
   tags: [政治, 美苏, 核裁军]
   sources: [维基百科, 新华网]
 
+- id: w-ussr-dissolution-199112
+  date: "1991-12-25"
+  title: 苏联正式解体，戈尔巴乔夫辞职，15个加盟共和国独立
+  category: 政治
+  importance: 5
+  summary: 戈尔巴乔夫发表电视讲话辞去苏联总统职务，苏联国旗从克里姆林宫降下，存在69年的苏联正式宣告解体，俄罗斯等15个加盟共和国各自独立，冷战格局彻底终结。
+  confidence: 确定
+  tags: [政治, 苏联, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-gulf-war-storm-199101
+  date: "1991-01-17"
+  title: 海湾战争"沙漠风暴"行动爆发，多国部队空袭伊拉克
+  category: 战争
+  importance: 5
+  summary: 以美国为首的多国部队对伊拉克发动"沙漠风暴"大规模空袭，正式打响海湾战争，经过约6周作战后解放科威特并取得决定性胜利。
+  confidence: 确定
+  tags: [战争, 海湾, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-august-coup-199108
+  date: "1991-08-19"
+  title: 苏联发生"八一九"政变，随即失败加速苏联解体
+  category: 政治
+  importance: 4
+  summary: 苏联部分党政军领导人成立"国家紧急状态委员会"软禁戈尔巴乔夫、企图阻止新联盟条约签订，政变仅持续三天即告失败，反而加速了苏联解体的进程。
+  confidence: 确定
+  tags: [政治, 苏联, 政变]
+  sources: [维基百科, 新华网]
+
+- id: w-yugoslavia-breakup-199106
+  date: "1991-06-25"
+  title: 斯洛文尼亚与克罗地亚宣布独立，南斯拉夫开始解体
+  category: 政治
+  importance: 4
+  summary: 斯洛文尼亚和克罗地亚先后宣布脱离南斯拉夫独立，南斯拉夫社会主义联邦随之开始解体，随后巴尔干地区陷入连年战乱。
+  confidence: 确定
+  tags: [政治, 南斯拉夫, 独立]
+  sources: [维基百科, 新华网]
+
+- id: w-maastricht-treaty-199112
+  date: "1991-12-09"
+  title: 欧共体首脑会议签署《马斯特里赫特条约》，确立欧洲联盟蓝图
+  category: 政治
+  importance: 4
+  summary: 欧洲共同体成员国首脑在荷兰马斯特里赫特举行会议并签署条约，确立建立欧洲经济货币联盟与政治联盟的目标，为日后欧盟与欧元奠定法律基础。
+  confidence: 确定
+  tags: [政治, 欧洲一体化, 欧盟]
+  sources: [维基百科, 欧盟委员会]
+
 
 

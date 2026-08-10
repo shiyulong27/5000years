@@ -1,0 +1,135 @@
+﻿---
+import { fileURLToPath } from 'node:url'
+import Base from '../layouts/Base.astro'
+import EventCard from '../components/EventCard.astro'
+import { loadAll } from '../lib/load.js'
+import { CATEGORIES } from '../lib/enums.js'
+
+const dataDir = fileURLToPath(new URL('../../data', import.meta.url))
+const data = loadAll(dataDir)
+
+// 提取 1991 年中国事件与世界事件（源自新华网、维基百科权威记载）
+const cnEvents1991 = data.events.filter((e) => e.date.startsWith('1991'))
+const worldEvents1991 = data.worldEvents.filter((e) => e.date.startsWith('1991'))
+
+// 按日期升序排列（1月 ➔ 12月）
+const sortAsc = (a, b) => a.date.localeCompare(b.date)
+
+const monthRows = []
+for (let m = 1; m <= 12; m++) {
+  const mStr = String(m).padStart(2, '0')
+  const prefix = `1991-${mStr}`
+
+  const cnInMonth = cnEvents1991.filter((e) => e.date.startsWith(prefix)).sort(sortAsc)
+  const worldInMonth = worldEvents1991.filter((e) => e.date.startsWith(prefix)).sort(sortAsc)
+
+  if (cnInMonth.length > 0 || worldInMonth.length > 0) {
+    monthRows.push({
+      month: m,
+      monthLabel: `${m}月`,
+      fullMonthLabel: `1991年${m}月`,
+      cnEvents: cnInMonth,
+      worldEvents: worldInMonth,
+    })
+  }
+}
+
+const base = import.meta.env.BASE_URL
+
+// 通过 CATEGORIES 映射到友好分组标签
+const CATEGORY_LABELS = {
+  政治: '政治',
+  战争: '战争/军事',
+  文化: '文化/科技·体育',
+  经济: '经济/民生',
+  灾害: '灾害',
+}
+const usedCats = new Set([...cnEvents1991, ...worldEvents1991].map((e) => e.category))
+const filterCats = CATEGORIES.filter((c) => usedCats.has(c))
+---
+
+<Base title="1991年 · 中国与世界重大历史事件 | 上下五千年" wide={true}>
+  <div class="year-page-container">
+    {/* 顶栏导航与标题 */}
+    <header class="year-page-head">
+      <a href={base} class="back-link">
+        <span class="arrow">←</span> 返回上下五千年历史长卷
+      </a>
+      <h1 class="year-page-title">1991年 · 中国与世界重大历史事件</h1>
+      <p class="year-page-sub">升序时间线 · 从 1 月至 12 月对照长卷（数据来源于新华网与维基百科）</p>
+    </header>
+
+    {/* 分类筛选工具栏 */}
+    <nav class="year-filter-toolbar">
+      <div class="filter-group">
+        <span class="filter-label">事件分类：</span>
+        <button class="filter-cat-btn active" data-category="all">全部分类</button>
+        {filterCats.map((c) => (
+          <button class="filter-cat-btn" data-category={c}>{CATEGORY_LABELS[c] ?? c}</button>
+        ))}
+      </div>
+    </nav>
+
+    {/* 升序长卷：世界在左，中轴在中间，中国在右 */}
+    <main class="year-page-timeline">
+      {monthRows.map((row) => (
+        <div class="month-timeline-row" data-month={row.month}>
+          {/* 左侧：世界事件 */}
+          <div class="cell cell-world">
+            {row.worldEvents.map((e) => (
+              <div class="year-event-item" data-category={e.category}>
+                <EventCard event={e} />
+              </div>
+            ))}
+          </div>
+
+          {/* 中间：中轴月份节点 */}
+          <div class="cell cell-axis">
+            <div class="axis-cell">
+              <span class="axis-diamond">◇</span>
+              <span class="axis-year">{row.monthLabel}</span>
+              <span class="axis-stem"></span>
+            </div>
+          </div>
+
+          {/* 右侧：中国事件 */}
+          <div class="cell cell-china">
+            {row.cnEvents.map((e) => (
+              <div class="year-event-item" data-category={e.category}>
+                <EventCard event={e} />
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </main>
+
+    <footer class="year-page-foot">
+      <a href={base} class="back-foot-link">← 返回上下五千年主时间线长卷</a>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const catBtns = document.querySelectorAll('.filter-cat-btn')
+      const eventItems = document.querySelectorAll('.year-event-item')
+
+      catBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          catBtns.forEach((b) => b.classList.remove('active'))
+          btn.classList.add('active')
+
+          const selectedCat = btn.getAttribute('data-category')
+          eventItems.forEach((item) => {
+            const cat = item.getAttribute('data-category')
+            if (selectedCat === 'all' || cat === selectedCat) {
+              item.style.display = 'block'
+            } else {
+              item.style.display = 'none'
+            }
+          })
+        })
+      })
+    })
+  </script>
+</Base>

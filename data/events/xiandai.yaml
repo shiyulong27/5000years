@@ -2876,4 +2876,44 @@
   tags: [外交]
   sources: [外交部, 新华网]
 
+- id: cn-qinshan-nuclear-199112
+  date: "1991-12-15"
+  title: 秦山核电站并网发电，中国大陆核电站实现零的突破
+  category: 文化
+  importance: 5
+  summary: 中国大陆首座自行设计建造的核电站——秦山核电站于浙江海盐并网发电，标志中国大陆核电事业从无到有的历史性突破。
+  confidence: 确定
+  tags: [能源, 科技, 历史转折]
+  sources: [新华网, 国家能源局]
+
+- id: cn-east-china-flood-199107
+  date: "1991-07-01"
+  title: 华东地区发生特大洪涝灾害，全国动员抗洪救灾
+  category: 灾害
+  importance: 4
+  summary: 江淮流域及华东地区遭遇百年罕见的特大洪涝灾害，江苏、安徽等省受灾严重，全国军民奋力抗洪并开展大规模重建。
+  confidence: 确定
+  tags: [灾害, 洪水]
+  sources: [新华网, 民政部]
+
+- id: cn-apec-join-199111
+  date: "1991-11-12"
+  title: 中国正式加入亚太经济合作组织（APEC）
+  category: 经济
+  importance: 4
+  summary: 中国与台湾、香港地区一道正式加入亚太经济合作组织，进一步融入亚太区域经济合作进程，为扩大对外开放创造有利条件。
+  confidence: 确定
+  tags: [外交, 贸易, 区域合作]
+  sources: [外交部, APEC秘书处]
+
+- id: cn-eighth-five-plan-199103
+  date: "1991-03-25"
+  title: 七届全国人大四次会议通过"八五"计划纲要
+  category: 经济
+  importance: 3
+  summary: 七届全国人大四次会议审议通过《国民经济和社会发展十年规划和"八五"计划纲要》，提出到2000年国民生产总值比1980年翻两番的目标。
+  confidence: 确定
+  tags: [经济, 规划, 改革]
+  sources: [新华网, 国家发改委]
+
 
