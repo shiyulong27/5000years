@@ -6219,3 +6219,57 @@
   confidence: 确定
   tags: [农村改革, 包产到户, 安徽, 经济改革]
   sources: [中华人民共和国农业农村部, 新华社, Wikipedia—Household responsibility system]
+- id: cn-us-diplomatic-relations-197901
+  date: '1979-01-01'
+  title: 中美正式建立外交关系
+  category: 政治
+  importance: 5
+  summary: 中华人民共和国与美利坚合众国正式建立外交关系，美国承认中华人民共和国政府为中国唯一合法政府并与台湾断交。
+  confidence: 确定
+  tags: [中美关系, 外交, 建交, 冷战]
+  sources: [中华人民共和国外交部, 美国国务院历史办公室, Wikipedia—China–United States relations]
+- id: cn-deng-visits-us-197901
+  date: '1979-01-29'
+  title: 邓小平访美
+  category: 政治
+  importance: 4
+  summary: 邓小平访问美国并与总统卡特会谈，是中美建交后中国领导人首次正式访美，推动双边关系和科技经贸合作。
+  confidence: 确定
+  tags: [邓小平, 美国, 外交, 中美关系]
+  sources: [中华人民共和国外交部, 美国国务院历史办公室, Wikipedia—Deng Xiaoping's visit to the United States]
+- id: cn-us-science-cooperation-197901
+  date: '1979-01-31'
+  title: 中美签署科技合作协定
+  category: 经济
+  importance: 4
+  summary: 中美两国签署政府间科技合作协定，建立广泛科研交流机制，成为建交后首批重要双边合作文件。
+  confidence: 确定
+  tags: [科技合作, 中美关系, 外交, 科技]
+  sources: [中华人民共和国外交部, 美国国务院, Wikipedia—China–United States relations]
+- id: cn-sino-vietnamese-war-197902
+  date: '1979-02-17'
+  title: 中越边境战争爆发
+  category: 战争
+  importance: 5
+  summary: 中国军队从广西、云南方向进入越南北部，双方发生大规模边境军事冲突，中国于3月宣布撤军。
+  confidence: 确定
+  tags: [中越战争, 边境, 军事, 东南亚]
+  sources: [新华社, 中华人民共和国国防部, Wikipedia—Sino-Vietnamese War]
+- id: cn-guangdong-fujian-special-policy-197907
+  date: '1979-07-15'
+  title: 中央决定对广东福建实行特殊政策
+  category: 经济
+  importance: 4
+  summary: 中共中央、国务院决定在广东、福建两省实行对外经济活动特殊政策并试办出口特区，为随后经济特区设立和对外开放奠定基础。
+  confidence: 确定
+  tags: [改革开放, 广东, 福建, 对外开放]
+  sources: [国务院发展研究中心, 新华社, Wikipedia—Special economic zones of China]
+- id: cn-ye-jianying-national-day-speech-197909
+  date: '1979-09-29'
+  title: 叶剑英国庆三十周年讲话
+  category: 政治
+  importance: 4
+  summary: 叶剑英在庆祝中华人民共和国成立三十周年大会发表讲话，提出实现四个现代化的任务，体现改革开放初期国家发展路线调整。
+  confidence: 确定
+  tags: [国庆, 四个现代化, 政治, 改革]
+  sources: [新华社, 中国政府网, Wikipedia—Ye Jianying]

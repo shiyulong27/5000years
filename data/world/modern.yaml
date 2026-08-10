@@ -6743,3 +6743,93 @@
   confidence: 确定
   tags: [越南, 柬埔寨, 战争, 东南亚]
   sources: [联合国, Encyclopaedia Britannica, Wikipedia—Cambodian–Vietnamese War]
+- id: w-shah-leaves-iran-197901
+  date: '1979-01-16'
+  title: 伊朗国王离境
+  category: 政治
+  importance: 4
+  summary: 巴列维国王穆罕默德·礼萨·巴列维离开伊朗，伊朗革命进入政权更替阶段。
+  confidence: 确定
+  tags: [伊朗革命, 政权更迭, 中东, 政治]
+  sources: [伊朗国家档案馆, Encyclopaedia Britannica, Wikipedia—Iranian Revolution]
+- id: w-iranian-revolution-197902
+  date: '1979-02-11'
+  title: 伊朗革命胜利
+  category: 政治
+  importance: 5
+  summary: 伊朗革命力量控制德黑兰，巴列维王朝政权垮台，伊朗伊斯兰共和国随后建立。
+  confidence: 确定
+  tags: [伊朗革命, 伊斯兰共和国, 中东, 政治]
+  sources: [伊朗政府, Encyclopaedia Britannica, Wikipedia—Iranian Revolution]
+- id: w-voyager-1-jupiter-197903
+  date: '1979-03-05'
+  title: “旅行者1号”飞掠木星
+  category: 文化
+  importance: 4
+  summary: NASA“旅行者1号”最接近木星并完成系统观测，发现木星环、木卫一活火山等重要现象。
+  confidence: 确定
+  tags: [航天, 木星, NASA, 科技]
+  sources: [NASA, JPL, Wikipedia—Voyager 1]
+- id: w-egypt-israel-peace-treaty-197903
+  date: '1979-03-26'
+  title: 埃以和平条约签署
+  category: 政治
+  importance: 5
+  summary: 埃及总统萨达特与以色列总理贝京在华盛顿签署和平条约，埃及成为首个与以色列正式媾和的阿拉伯国家。
+  confidence: 确定
+  tags: [埃及, 以色列, 中东和平, 条约]
+  sources: [美国国务院历史办公室, 联合国, Wikipedia—Egypt–Israel peace treaty]
+- id: w-three-mile-island-197903
+  date: '1979-03-28'
+  title: 三里岛核事故
+  category: 灾害
+  importance: 4
+  summary: 美国宾夕法尼亚州三里岛核电站2号机组发生堆芯部分熔毁，是美国商业核电史上最严重的事故。
+  confidence: 确定
+  tags: [核事故, 美国, 能源, 灾害]
+  sources: [美国核管理委员会, Encyclopaedia Britannica, Wikipedia—Three Mile Island accident]
+- id: w-thatcher-prime-minister-197905
+  date: '1979-05-04'
+  title: 玛格丽特·撒切尔出任英国首相
+  category: 政治
+  importance: 4
+  summary: 英国大选后保守党获胜，撒切尔成为英国首位女首相，开启持续十余年的保守党执政时期。
+  confidence: 确定
+  tags: [英国, 撒切尔, 选举, 政治]
+  sources: [英国政府, Encyclopaedia Britannica, Wikipedia—Margaret Thatcher]
+- id: w-pope-poland-visit-197906
+  date: '1979-06-03'
+  title: 教皇若望·保禄二世访问波兰
+  category: 政治
+  importance: 4
+  summary: 若望·保禄二世访问祖国波兰，其公开弥撒和演讲激发社会团结意识，被视为东欧政治变迁的重要催化因素。
+  confidence: 确定
+  tags: [教皇, 波兰, 东欧, 冷战]
+  sources: [梵蒂冈新闻, Encyclopaedia Britannica, Wikipedia—Pope John Paul II's 1979 visit to Poland]
+- id: w-nicaraguan-revolution-197907
+  date: '1979-07-19'
+  title: 桑地诺民族解放阵线进入马那瓜
+  category: 战争
+  importance: 4
+  summary: 尼加拉瓜桑地诺民族解放阵线推翻索摩查政权并控制首都，尼加拉瓜革命政权建立。
+  confidence: 确定
+  tags: [尼加拉瓜, 革命, 中美洲, 政权更迭]
+  sources: [美洲国家组织, Encyclopaedia Britannica, Wikipedia—Nicaraguan Revolution]
+- id: w-iran-hostage-crisis-197911
+  date: '1979-11-04'
+  title: 伊朗人质危机开始
+  category: 战争
+  importance: 4
+  summary: 伊朗学生占领美国驻德黑兰大使馆并扣押人质，危机持续444天，严重影响美伊关系。
+  confidence: 确定
+  tags: [伊朗, 美国, 人质, 外交危机]
+  sources: [美国国务院历史办公室, Encyclopaedia Britannica, Wikipedia—Iran hostage crisis]
+- id: w-soviet-invasion-afghanistan-197912
+  date: '1979-12-24'
+  title: 苏联入侵阿富汗
+  category: 战争
+  importance: 5
+  summary: 苏联军队大规模进入阿富汗并支持喀布尔政权，触发长期战争和国际制裁，冷战紧张局势升级。
+  confidence: 确定
+  tags: [苏联, 阿富汗, 入侵, 冷战]
+  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Soviet–Afghan War]
