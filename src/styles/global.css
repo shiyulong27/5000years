@@ -952,6 +952,43 @@ main,
   box-shadow: 0 4px 12px var(--shadow);
 }
 
+/* ── 概览卡片动态提炼要闻列表样式 ─────────────────────────── */
+.summary-highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.6rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.summary-highlight-item {
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--fg);
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+}
+
+.summary-highlight-item::before {
+  content: '•';
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.summary-highlight-item .highlight-date {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.summary-highlight-item .highlight-title {
+  font-weight: 500;
+  color: var(--fg);
+}
+
 
 /* ── 2025 年独立专页样式 (year-page-container) ───────────────── */
 
