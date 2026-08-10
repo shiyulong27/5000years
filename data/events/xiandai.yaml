@@ -3218,4 +3218,74 @@
   tags: [民生, 改革, 医疗]
   sources: [新华网, 劳动保障部]
 
+- id: cn-11th-5th-plenum-liushaoqi-198002
+  date: "1980-02-29"
+  title: 中共十一届五中全会为刘少奇平反
+  category: 政治
+  importance: 5
+  summary: 中共十一届五中全会通过《关于为刘少奇同志平反的决议》，撤销强加于刘少奇的一切罪名并恢复其作为党和国家领导人的名誉，标志拨乱反正走向深入。
+  confidence: 确定
+  tags: [改革, 政治, 历史转折]
+  sources: [新华网, 人民日报]
+
+- id: cn-first-winter-olympics-198002
+  date: "1980-02-13"
+  title: 中国首次派代表团参加冬季奥运会
+  category: 文化
+  importance: 3
+  summary: 中国派出28名运动员参加在美国普莱西德湖举行的第13届冬季奥运会，是中国首次亮相冬奥会赛场，开启中国冬奥参赛历史。
+  confidence: 确定
+  tags: [体育, 冬奥会]
+  sources: [新华网, 国际奥委会]
+
+- id: cn-imf-worldbank-seat-198004
+  date: "1980-04-15"
+  title: 中国恢复在国际货币基金组织与世界银行合法席位
+  category: 经济
+  importance: 4
+  summary: 国际货币基金组织理事会恢复中国在IMF的代表权，随后世界银行亦恢复中国席位，为中国融入国际金融体系与获得国际开发贷款打开通道。
+  confidence: 确定
+  tags: [金融, 外交]
+  sources: [新华网, 国际货币基金组织]
+
+- id: cn-df5-icbm-test-198005
+  date: "1980-05-18"
+  title: 中国"东风五号"洲际运载火箭全程飞行试验成功
+  category: 文化
+  importance: 4
+  summary: 中国由本土向南太平洋预定海域发射"东风五号"洲际运载火箭并准确溅落，首次完成洲际火箭全程飞行试验，标志中国掌握洲际战略打击能力。
+  confidence: 确定
+  tags: [航天, 军事, 科技]
+  sources: [新华网, 国防科工委]
+
+- id: cn-pengjiamu-lost-198006
+  date: "1980-06-17"
+  title: 科学家彭加木在罗布泊考察失踪
+  category: 文化
+  importance: 3
+  summary: 中国科学院新疆分院副院长彭加木率队深入罗布泊进行综合考察时独自外出找水失踪，国家多次组织搜救未果，成为中国科考史上的重大悬案。
+  confidence: 确定
+  tags: [科考, 科技]
+  sources: [新华网, 中国科学院]
+
+- id: cn-sez-established-198008
+  date: "1980-08-26"
+  title: 全国人大决定设立深圳珠海汕头厦门经济特区
+  category: 经济
+  importance: 5
+  summary: 五届全国人大常委会第十五次会议批准在广东深圳、珠海、汕头及福建厦门设立经济特区，作为中国对外开放的先行试验窗口，开启特区建设序幕。
+  confidence: 确定
+  tags: [改革, 经济, 历史转折]
+  sources: [新华网, 国务院]
+
+- id: cn-gang-of-four-trial-198011
+  date: "1980-11-20"
+  title: 最高人民法院特别法庭公审林彪、江青反革命集团案
+  category: 政治
+  importance: 5
+  summary: 最高人民法院特别法庭在北京开庭公审林彪、江青反革命集团主犯，江青等被判处刑罚，以司法形式清算"文革"罪行，是拨乱反正与法制重建的标志。
+  confidence: 确定
+  tags: [法律, 政治, 历史转折]
+  sources: [新华网, 最高人民法院]
+
 

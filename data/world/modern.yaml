@@ -3242,5 +3242,105 @@
   tags: [科技, 互联网]
   sources: [维基百科, Google]
 
+- id: w-iran-hostage-rescue-fail-198004
+  date: "1980-04-24"
+  title: 美国营救伊朗人质的"蓝光行动"失败
+  category: 政治
+  importance: 3
+  summary: 美军为营救被伊朗扣押的驻伊使馆人质实施"蓝光行动"，直升机在沙漠集结点相撞，8名美军死亡，营救行动失败，重创卡特政府。
+  confidence: 确定
+  tags: [军事, 外交]
+  sources: [维基百科, 新华网]
+
+- id: w-zimbabwe-independence-198004
+  date: "1980-04-18"
+  title: 津巴布韦宣告独立
+  category: 政治
+  importance: 3
+  summary: 津巴布韦正式脱离英国殖民统治宣告独立，穆加贝就任首任总理，结束白人少数政权，非洲去殖民化进程再进一步。
+  confidence: 确定
+  tags: [外交, 民生]
+  sources: [维基百科, 新华网]
+
+- id: w-tito-death-198005
+  date: "1980-05-04"
+  title: 南斯拉夫总统铁托逝世
+  category: 政治
+  importance: 4
+  summary: 南斯拉夫终身总统铁托在卢布尔雅那病逝，其离世使南斯拉夫失去维系联邦的核心人物，为日后南联邦解体埋下伏笔。
+  confidence: 确定
+  tags: [政治, 外交]
+  sources: [维基百科, 新华网]
+
+- id: w-smallpox-eradicated-198005
+  date: "1980-05-08"
+  title: 世界卫生组织宣布全球根除天花
+  category: 文化
+  importance: 5
+  summary: 第33届世界卫生大会正式宣布人类已在全世界范围内消灭天花，这是人类历史上首次也是迄今唯一以疫苗接种彻底根除的烈性传染病。
+  confidence: 确定
+  tags: [卫生, 科技, 历史转折]
+  sources: [维基百科, 世界卫生组织]
+
+- id: w-st-helens-eruption-198005
+  date: "1980-05-18"
+  title: 美国圣海伦斯火山爆发
+  category: 灾害
+  importance: 4
+  summary: 美国华盛顿州圣海伦斯火山发生强烈爆发，火山灰柱高达24公里，造成57人死亡及约30亿美元损失，是20世纪美国本土最严重的火山喷发。
+  confidence: 确定
+  tags: [灾害, 气候]
+  sources: [维基百科, 新华网]
+
+- id: w-moscow-olympics-198007
+  date: "1980-07-19"
+  title: 第22届莫斯科奥运会因多国抵制规模缩水
+  category: 文化
+  importance: 4
+  summary: 因苏联入侵阿富汗，美国、中国等60余国抵制莫斯科奥运会，仅80余国参赛，是奥运史上规模最大的一次抵制，政治干预体育的标志性事件。
+  confidence: 确定
+  tags: [体育, 外交]
+  sources: [维基百科, 新华网]
+
+- id: w-solidarity-founded-198008
+  date: "1980-08-31"
+  title: 波兰"团结工会"成立，东欧剧变序幕拉开
+  category: 政治
+  importance: 5
+  summary: 波兰格但斯克列宁船厂工人罢工后达成协议，独立工会"团结工会"正式成立，成为东欧阵营首个不受执政党控制的工会，开启东欧剧变序幕。
+  confidence: 确定
+  tags: [政治, 改革, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-iran-iraq-war-198009
+  date: "1980-09-22"
+  title: 两伊战争爆发
+  category: 战争
+  importance: 5
+  summary: 伊拉克军队越过边界进攻伊朗，长达八年的两伊战争爆发，造成两国逾百万人伤亡，成为二战后中东地区规模最大的常规战争之一。
+  confidence: 确定
+  tags: [军事, 战争, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-reagan-elected-198011
+  date: "1980-11-04"
+  title: 里根当选美国第40任总统
+  category: 政治
+  importance: 4
+  summary: 共和党人罗纳德·里根在大选中击败谋求连任的卡特当选美国总统，此后推行"里根经济学"与对苏强硬政策，重塑80年代美苏格局。
+  confidence: 确定
+  tags: [政治, 外交]
+  sources: [维基百科, 新华网]
+
+- id: w-lennon-assassination-198012
+  date: "1980-12-08"
+  title: 前披头士成员约翰·列侬遇刺身亡
+  category: 文化
+  importance: 4
+  summary: 英国摇滚巨星、披头士乐队核心成员约翰·列侬在纽约寓所门口遭歌迷枪击身亡，震动全球乐坛，成为流行音乐史上的标志性悲剧。
+  confidence: 确定
+  tags: [文化, 艺术]
+  sources: [维基百科, 新华网]
+
 
 
