@@ -3142,5 +3142,55 @@
   tags: [政治, 中东, 巴勒斯坦]
   sources: [维基百科, 新华网]
 
+- id: w-dolly-cloned-sheep-199702
+  date: "1997-02-27"
+  title: 英国公布全球首只体细胞克隆羊"多利"
+  category: 文化
+  importance: 4
+  summary: 英国罗斯林研究所宣布成功以成年体细胞克隆出绵羊"多利"，这是人类首次克隆大型哺乳动物，掀起全球生物科技革命并引发伦理大讨论。
+  confidence: 确定
+  tags: [科技, 生物, 克隆]
+  sources: [维基百科, 英国皇家学会]
+
+- id: w-blair-pm-199705
+  date: "1997-05-01"
+  title: 布莱尔当选英国首相，工党终结18年在野
+  category: 政治
+  importance: 4
+  summary: 托尼·布莱尔领导工党在大选中取得压倒性胜利，出任英国首相，终结保守党18年执政，推行"第三条道路"的"新工党"改革。
+  confidence: 确定
+  tags: [政治, 英国]
+  sources: [维基百科, 新华网]
+
+- id: w-asian-financial-crisis-199707
+  date: "1997-07-02"
+  title: 泰国放弃固定汇率引发亚洲金融危机
+  category: 经济
+  importance: 5
+  summary: 泰国央行宣布放弃固定汇率制、泰铢大幅贬值，迅速引发泰、韩、印尼等国货币与股市暴跌，演变为席卷东亚的亚洲金融危机。
+  confidence: 确定
+  tags: [经济, 金融, 亚洲金融危机, 历史转折]
+  sources: [维基百科, 国际货币基金组织]
+
+- id: w-pathfinder-mars-199707
+  date: "1997-07-04"
+  title: 美国"火星探路者"号成功着陆火星
+  category: 文化
+  importance: 4
+  summary: 美国"火星探路者"号探测器成功登陆火星，放出"旅居者号"火星车，向地球传回大量图像与数据，开启人类火星探测新篇章。
+  confidence: 确定
+  tags: [航天, 科技, 火星]
+  sources: [NASA, 维基百科]
+
+- id: w-kyoto-protocol-199712
+  date: "1997-12-11"
+  title: 联合国气候大会通过《京都议定书》
+  category: 政治
+  importance: 4
+  summary: 联合国气候变化框架公约第三次缔约方大会在日本京都通过《京都议定书》，首次为发达国家设定具有法律约束力的温室气体减排目标。
+  confidence: 确定
+  tags: [环境, 气候, 温室气体]
+  sources: [联合国, 维基百科]
+
 
 

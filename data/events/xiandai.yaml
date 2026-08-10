@@ -3116,4 +3116,54 @@
   tags: [政治, 精神文明建设]
   sources: [新华网, 人民日报]
 
+- id: cn-deng-xiaoping-death-199702
+  date: "1997-02-19"
+  title: 邓小平在北京逝世，中国改革开放总设计师谢世
+  category: 政治
+  importance: 5
+  summary: 中国改革开放和现代化建设的总设计师邓小平在北京因病逝世，享年93岁，全国各族人民深切悼念，世界高度关注中国未来发展走向。
+  confidence: 确定
+  tags: [政治, 改革, 历史转折]
+  sources: [新华网, 人民日报]
+
+- id: cn-hong-kong-handover-199707
+  date: "1997-07-01"
+  title: 香港回归祖国，香港特别行政区正式成立
+  category: 政治
+  importance: 5
+  summary: 中英两国政府举行香港政权交接仪式，香港正式回归祖国，香港特别行政区宣告成立，董建华出任首任行政长官，"一国两制"正式付诸实践。
+  confidence: 确定
+  tags: [外交, 一国两制, 历史转折]
+  sources: [新华网, 新华社]
+
+- id: cn-chongqing-municipality-199706
+  date: "1997-06-18"
+  title: 重庆直辖市正式挂牌成立
+  category: 政治
+  importance: 4
+  summary: 重庆直辖市正式挂牌，成为中国第四个直辖市，承担三峡库区移民与西部地区开发等重要战略使命。
+  confidence: 确定
+  tags: [政治, 行政区划, 西部开发]
+  sources: [新华网, 重庆市政府]
+
+- id: cn-15th-cpc-congress-199709
+  date: "1997-09-12"
+  title: 中共十五大召开，确立邓小平理论为党的指导思想
+  category: 政治
+  importance: 5
+  summary: 中国共产党第十五次全国代表大会在北京召开，将邓小平理论确立为党的指导思想并写入党章，系统阐述公有制为主体多种所有制共同发展的基本经济制度。
+  confidence: 确定
+  tags: [改革, 理论, 历史转折]
+  sources: [新华网, 人民日报]
+
+- id: cn-rmb-stability-199711
+  date: "1997-11-01"
+  title: 中国承诺人民币不贬值，力保亚洲金融稳定
+  category: 经济
+  importance: 4
+  summary: 面对亚洲金融危机冲击，中国政府郑重承诺人民币不贬值，并积极参与国际金融援助，为维护亚洲乃至世界经济金融稳定作出重要贡献。
+  confidence: 确定
+  tags: [金融, 经济, 亚洲金融危机]
+  sources: [新华网, 中国人民银行]
+
 
