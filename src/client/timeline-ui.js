@@ -19,6 +19,40 @@ if (timeline) {
   const jump = document.getElementById('jump-dynasty')
   const current = document.getElementById('current-dynasty')
 
+  // ── 事件卡片日期解析与 DOM 排序辅助函数 ──────────────────────────
+  function getEventSortKey(el) {
+    const str = el.dataset.date
+    if (!str) return 0
+    const m = /^(-?\d+)(?:-(\d+)(?:-(\d+))?)?$/.exec(str)
+    if (!m) return 0
+    const y = parseInt(m[1], 10)
+    const mth = m[2] ? parseInt(m[2], 10) : 0
+    const d = m[3] ? parseInt(m[3], 10) : 0
+    return y * 10000 + (y >= 0 ? mth * 100 + d : -((13 - mth) * 100 + (32 - d)))
+  }
+
+  function sortContainerCards(container, desc) {
+    const cards = [...container.children].filter((el) => el.classList.contains('event-card'))
+    if (cards.length > 1) {
+      cards.sort((a, b) => {
+        const kA = getEventSortKey(a)
+        const kB = getEventSortKey(b)
+        return desc ? kB - kA : kA - kB
+      })
+      cards.forEach((card) => container.appendChild(card))
+    }
+  }
+
+  function sortAllContainers(desc) {
+    const containers = timeline.querySelectorAll('.year-detail-wrapper, .world-detail-wrapper, .cell-china, .cell-world')
+    containers.forEach((c) => sortContainerCards(c, desc))
+  }
+
+  function isDescMode() {
+    const btnSortDesc = document.getElementById('btn-sort-desc')
+    return btnSortDesc ? btnSortDesc.classList.contains('active') : false
+  }
+
   // 下拉框展开/收起控制
   if (levelBtn && levelMenu) {
     levelBtn.addEventListener('click', (e) => {
@@ -127,13 +161,15 @@ if (timeline) {
 
     // 人物图层默认关闭——人物数量远多于事件，常驻显示会淹没长卷本身
     timeline.classList.toggle('show-figures', !!showFigures?.checked)
+
+    // 每次计算可见性时，确保 DOM 卡片顺序严格符合当前排序设置
+    sortAllContainers(isDescMode())
   }
 
   levelToggles.forEach((t) => t.addEventListener('change', apply))
   showWorld?.addEventListener('change', apply)
   showFigures?.addEventListener('change', apply)
   catToggles.forEach((t) => t.addEventListener('change', apply))
-  apply()
 
   // 概览 / 详情模式动态切换控制 (支持 2023, 2024, 2025, 2026 等年份)
   const toggleBtns = [...document.querySelectorAll('.axis-toggle-btn')]
@@ -162,6 +198,8 @@ if (timeline) {
       if (chinaDetailWrapper) chinaDetailWrapper.style.display = ''
       if (worldDetailWrapper) worldDetailWrapper.style.display = ''
     }
+
+    sortAllContainers(isDescMode())
   }
 
   // 检查并同步顶栏全局按钮高亮
@@ -203,8 +241,6 @@ if (timeline) {
       apply()
     })
   })
-
-
 
   // 朝代跳转
   jump?.addEventListener('change', () => {
@@ -289,18 +325,7 @@ if (timeline) {
       timeline.classList.toggle('is-reversed', desc)
 
       // 同步按 data-date 物理重排各年份容器内部的事件卡片 DOM 顺序（倒序: 12月→1月，正序: 1月→12月）
-      const eventContainers = timeline.querySelectorAll('.year-detail-wrapper, .world-detail-wrapper, .cell-china, .cell-world')
-      eventContainers.forEach((container) => {
-        const cards = [...container.children].filter((el) => el.classList.contains('event-card'))
-        if (cards.length > 1) {
-          const sorted = cards.sort((a, b) => {
-            const dA = a.dataset.date || ''
-            const dB = b.dataset.date || ''
-            return desc ? dB.localeCompare(dA) : dA.localeCompare(dB)
-          })
-          sorted.forEach((card) => container.appendChild(card))
-        }
-      })
+      sortAllContainers(desc)
     }
 
     btnSortAsc.addEventListener('click', () => {
@@ -320,5 +345,7 @@ if (timeline) {
       applyOrder(true)
     }
   }
-}
 
+  // 初始应用全套重算与卡片物理排序
+  apply()
+}
