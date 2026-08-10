@@ -6095,3 +6095,84 @@
   sources:
     - 波兰国家记忆研究院
     - 维基百科
+- id: w-uganda-coup-197101
+  date: '1971-01-25'
+  title: 乌干达发生军事政变，伊迪·阿明掌权
+  category: 政治
+  importance: 4
+  summary: 乌干达军方领导人伊迪·阿明在总统奥博特出访期间发动政变并掌权，随后建立长期军事统治，乌干达人权与地区安全局势显著恶化。
+  confidence: 确定
+  tags: [政治, 军事, 非洲]
+  sources: [大英百科全书, 维基百科]
+- id: w-apollo14-moon-landing-197102
+  date: '1971-02-05'
+  title: 阿波罗14号完成载人登月
+  category: 文化
+  importance: 4
+  summary: 美国阿波罗14号登月舱在月球弗拉·毛罗高地着陆，艾伦·谢泼德等完成科学考察，成为人类第三次成功载人登月任务。
+  confidence: 确定
+  tags: [航天, 科技, 登月]
+  sources: [美国国家航空航天局, 维基百科]
+- id: w-bangladesh-independence-war-197103
+  date: '1971-03-26'
+  title: 孟加拉国宣布独立，解放战争爆发
+  category: 战争
+  importance: 5
+  summary: 东巴基斯坦民族主义力量宣布孟加拉国独立，巴基斯坦军队展开军事行动，孟加拉国解放战争由此全面爆发，并造成大规模难民与人道危机。
+  confidence: 确定
+  tags: [战争, 独立, 南亚, 历史转折]
+  sources: [孟加拉国外交部, 维基百科]
+- id: w-nixon-shock-197108
+  date: '1971-08-15'
+  title: 美国宣布“尼克松冲击”经济措施
+  category: 经济
+  importance: 5
+  summary: 美国总统尼克松宣布暂停美元兑换黄金，并实施进口附加税及工资物价管制，动摇布雷顿森林货币体系基础，推动主要货币转向浮动汇率。
+  confidence: 确定
+  tags: [金融, 美元, 贸易, 历史转折]
+  sources: [美联储历史资料, 美国财政部]
+- id: w-mariner9-mars-orbit-197111
+  date: '1971-11-14'
+  title: “水手9号”进入火星轨道
+  category: 文化
+  importance: 4
+  summary: 美国“水手9号”探测器进入火星轨道，成为首个环绕另一颗行星运行的人造航天器，随后绘制火星表面并发现火山、峡谷等重要地貌。
+  confidence: 确定
+  tags: [航天, 科技, 火星]
+  sources: [美国国家航空航天局, 维基百科]
+- id: w-intel4004-released-197111
+  date: '1971-11-15'
+  title: 英特尔发布4004微处理器
+  category: 文化
+  importance: 4
+  summary: 英特尔公司正式推出4004芯片，通常被视为首款商业化单片微处理器，为个人计算机和嵌入式电子设备的发展奠定基础。
+  confidence: 确定
+  tags: [科技, 芯片, 计算机]
+  sources: [英特尔历史档案, 计算机历史博物馆]
+- id: w-uae-founded-197112
+  date: '1971-12-02'
+  title: 阿拉伯联合酋长国成立
+  category: 政治
+  importance: 4
+  summary: 阿布扎比、迪拜等六个酋长国组成阿拉伯联合酋长国，拉斯海马次年加入，海湾地区形成新的联邦制国家。
+  confidence: 确定
+  tags: [政治, 建国, 中东]
+  sources: [阿联酋外交部, 维基百科]
+- id: w-indo-pak-war-197112
+  date: '1971-12-03'
+  title: 第三次印巴战争爆发
+  category: 战争
+  importance: 4
+  summary: 巴基斯坦空袭印度机场后，两国进入全面战争；东线战事与孟加拉国独立战争合流，战争迅速改变南亚政治版图。
+  confidence: 确定
+  tags: [战争, 军事, 南亚]
+  sources: [联合国, 维基百科]
+- id: w-dhaka-surrender-197112
+  date: '1971-12-16'
+  title: 巴基斯坦东部部队在达卡投降
+  category: 战争
+  importance: 4
+  summary: 巴基斯坦东部司令部向印度与孟加拉联军签署投降书，第三次印巴战争东线结束，孟加拉国取得事实独立。
+  confidence: 确定
+  tags: [战争, 独立, 南亚]
+  sources: [孟加拉国解放战争博物馆, 维基百科]

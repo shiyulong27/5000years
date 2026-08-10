@@ -9,7 +9,7 @@
   summary: 毛泽东于北京天安门城楼宣告中华人民共和国中央人民政府成立。
   confidence: 确定
 - id: un-seat-restored-1971
-  date: '1971'
+  date: '1971-10-25'
   title: 恢复联合国合法席位
   category: 政治
   tags:
@@ -18,6 +18,9 @@
   importance: 5
   summary: 第26届联合国大会通过第2758号决议，恢复中华人民共和国在联合国的一切合法权利。
   confidence: 确定
+  sources:
+    - 联合国
+    - 新华网
 - id: reform-opening-1978
   date: '1978'
   title: 十一届三中全会，改革开放始
@@ -5774,3 +5777,48 @@
   sources:
     - 新华网
     - 国防科工委
+- id: cn-shijian1-satellite-197103
+  date: '1971-03-03'
+  title: “实践一号”科学实验卫星发射成功
+  category: 文化
+  importance: 4
+  summary: 中国使用长征一号运载火箭将“实践一号”科学实验卫星送入轨道，开展空间环境探测等试验，标志中国科学卫星研制与空间科学实验起步。
+  confidence: 确定
+  tags: [航天, 科技, 卫星]
+  sources: [中国国家航天局, 中国科学院]
+- id: cn-ping-pong-diplomacy-197104
+  date: '1971-04-10'
+  title: 美国乒乓球队访华，乒乓外交展开
+  category: 政治
+  importance: 4
+  summary: 美国乒乓球队应邀访问中国，成为中华人民共和国成立后首批公开访华的美国团体之一。以体育交流带动政治接触的“乒乓外交”推动中美关系解冻。
+  confidence: 确定
+  tags: [外交, 体育, 中美关系]
+  sources: [新华网, 美国国务院历史办公室]
+- id: cn-kissinger-secret-visit-197107
+  date: '1971-07-09'
+  title: 基辛格秘密访华
+  category: 政治
+  importance: 5
+  summary: 美国总统国家安全事务助理基辛格秘密抵达北京，与周恩来举行会谈，就尼克松访华和中美关系交换意见，为两国高层正式接触铺平道路。
+  confidence: 确定
+  tags: [外交, 中美关系, 历史转折]
+  sources: [中国外交部, 美国国务院历史办公室]
+- id: cn-nixon-visit-announced-197107
+  date: '1971-07-15'
+  title: 中美同时宣布尼克松将访华
+  category: 政治
+  importance: 4
+  summary: 中国和美国同时公布尼克松总统应邀访问中国的消息，震动国际社会，标志长期隔绝的中美关系开始进入公开缓和阶段。
+  confidence: 确定
+  tags: [外交, 中美关系, 冷战]
+  sources: [新华网, 尼克松总统图书馆]
+- id: cn-lin-biao-incident-197109
+  date: '1971-09-13'
+  title: 林彪事件发生
+  category: 政治
+  importance: 5
+  summary: 林彪等人乘机外逃，飞机在蒙古温都尔汗附近坠毁，机上人员全部死亡。事件冲击“文化大革命”时期的政治格局，并引发此后对相关政治路线和组织问题的清查。
+  confidence: 确定
+  tags: [政治, 党史, 历史转折]
+  sources: [中共中央党史和文献研究院, 新华网]

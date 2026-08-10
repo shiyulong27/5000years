@@ -142,3 +142,33 @@ describe('1970 年重大事件补全', () => {
     expect(axisCell).toMatch(/hasSummary\s*=\s*\[[^\]]*1970/)
   })
 })
+
+describe('1971—1979 年重大事件连续补全', () => {
+  const data = loadAll(path.join(ROOT, 'data'))
+  const timeline = fs.readFileSync(path.join(ROOT, 'src/components/Timeline.astro'), 'utf8')
+  const axisCell = fs.readFileSync(path.join(ROOT, 'src/components/AxisCell.astro'), 'utf8')
+  const requiredFields = [
+    'id', 'date', 'title', 'category', 'importance',
+    'summary', 'confidence', 'tags', 'sources',
+  ]
+
+  for (const year of [1971]) {
+    it(`${year} 年有完整的中外事件、专页和中轴入口`, () => {
+      const chinaEvents = data.events.filter((event) => String(event.date).startsWith(String(year)))
+      const worldEvents = data.worldEvents.filter((event) => String(event.date).startsWith(String(year)))
+      expect(chinaEvents.length, `${year} 年中国事件不足`).toBeGreaterThanOrEqual(6)
+      expect(worldEvents.length, `${year} 年世界事件不足`).toBeGreaterThanOrEqual(8)
+
+      for (const event of [...chinaEvents, ...worldEvents]) {
+        for (const field of requiredFields) {
+          expect(event, `${event.id ?? event.title ?? '未知事件'} 缺少 ${field}`).toHaveProperty(field)
+        }
+        expect(event.sources.length).toBeGreaterThan(1)
+      }
+
+      expect(fs.existsSync(path.join(ROOT, `src/pages/${year}.astro`))).toBe(true)
+      expect(timeline).toMatch(new RegExp(`summaryYears\\s*=\\s*\\[[^\\]]*${year}`))
+      expect(axisCell).toMatch(new RegExp(`hasSummary\\s*=\\s*\\[[^\\]]*${year}`))
+    })
+  }
+})

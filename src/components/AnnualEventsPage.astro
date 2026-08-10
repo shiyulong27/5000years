@@ -1,0 +1,60 @@
+---
+import { fileURLToPath } from 'node:url'
+import Base from '../layouts/Base.astro'
+import EventCard from './EventCard.astro'
+import { loadAll } from '../lib/load.js'
+import { CATEGORIES } from '../lib/enums.js'
+
+const { year } = Astro.props
+const yearString = String(year)
+const dataDir = fileURLToPath(new URL('../../data', import.meta.url))
+const data = loadAll(dataDir)
+const cnEvents = data.events.filter((event) => event.date.startsWith(yearString))
+const worldEvents = data.worldEvents.filter((event) => event.date.startsWith(yearString))
+const sortAsc = (a, b) => a.date.localeCompare(b.date)
+const monthRows = []
+for (let month = 1; month <= 12; month++) {
+  const prefix = `${yearString}-${String(month).padStart(2, '0')}`
+  const cnInMonth = cnEvents.filter((event) => event.date.startsWith(prefix)).sort(sortAsc)
+  const worldInMonth = worldEvents.filter((event) => event.date.startsWith(prefix)).sort(sortAsc)
+  if (cnInMonth.length || worldInMonth.length) monthRows.push({ month, monthLabel: `${month}月`, cnEvents: cnInMonth, worldEvents: worldInMonth })
+}
+const base = import.meta.env.BASE_URL
+const labels = { 政治: '政治', 战争: '战争/军事', 文化: '文化/科技·体育', 经济: '经济/民生', 灾害: '灾害' }
+const usedCats = new Set([...cnEvents, ...worldEvents].map((event) => event.category))
+const filterCats = CATEGORIES.filter((category) => usedCats.has(category))
+---
+
+<Base title={`${yearString}年 · 中国与世界重大历史事件 | 上下五千年`} wide={true}>
+  <div class="year-page-container">
+    <header class="year-page-head">
+      <a href={base} class="back-link"><span class="arrow">←</span> 返回上下五千年历史长卷</a>
+      <h1 class="year-page-title">{yearString}年 · 中国与世界重大历史事件</h1>
+      <p class="year-page-sub">升序时间线 · 从 1 月至 12 月对照长卷（数据来源于官方资料、新华网与维基百科）</p>
+    </header>
+    <nav class="year-filter-toolbar"><div class="filter-group">
+      <span class="filter-label">事件分类：</span><button class="filter-cat-btn active" data-category="all">全部分类</button>
+      {filterCats.map((category) => <button class="filter-cat-btn" data-category={category}>{labels[category] ?? category}</button>)}
+    </div></nav>
+    <main class="year-page-timeline">
+      {monthRows.map((row) => <div class="month-timeline-row" data-month={row.month}>
+        <div class="cell cell-world">{row.worldEvents.map((event) => <div class="year-event-item" data-category={event.category}><EventCard event={event} /></div>)}</div>
+        <div class="cell cell-axis"><div class="axis-cell"><span class="axis-diamond">◇</span><span class="axis-year">{row.monthLabel}</span><span class="axis-stem"></span></div></div>
+        <div class="cell cell-china">{row.cnEvents.map((event) => <div class="year-event-item" data-category={event.category}><EventCard event={event} /></div>)}</div>
+      </div>)}
+    </main>
+    <footer class="year-page-foot"><a href={base} class="back-foot-link">← 返回上下五千年主时间线长卷</a></footer>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.filter-cat-btn')
+      const events = document.querySelectorAll('.year-event-item')
+      buttons.forEach((button) => button.addEventListener('click', () => {
+        buttons.forEach((item) => item.classList.remove('active'))
+        button.classList.add('active')
+        const selected = button.getAttribute('data-category')
+        events.forEach((item) => { item.style.display = selected === 'all' || item.getAttribute('data-category') === selected ? 'block' : 'none' })
+      }))
+    })
+  </script>
+</Base>
