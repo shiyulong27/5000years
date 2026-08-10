@@ -3418,4 +3418,64 @@
   tags: [法律, 政治, 历史转折]
   sources: [新华网, 全国人大常委会]
 
+- id: cn-cctv-gala-1st-198302
+  date: "1983-02-12"
+  title: 中央电视台举办首届春节联欢晚会直播
+  category: 文化
+  importance: 4
+  summary: 中央电视台在除夕夜首次以现场直播形式举办春节联欢晚会，李谷一演唱《难忘今宵》等节目成为时代记忆，春晚由此成为延续至今的春节文化新民俗。
+  confidence: 确定
+  tags: [文化, 艺术]
+  sources: [新华网, 中央电视台]
+
+- id: cn-6th-npc-lixianian-198306
+  date: "1983-06-18"
+  title: 六届全国人大一次会议选举李先念为国家主席
+  category: 政治
+  importance: 3
+  summary: 第六届全国人大第一次会议在北京举行，选举李先念为中华人民共和国主席、彭真为全国人大常委会委员长，完成国家领导人换届。
+  confidence: 确定
+  tags: [政治]
+  sources: [新华网, 全国人大常委会]
+
+- id: cn-crackdown-198308
+  date: "1983-08-25"
+  title: 全国开展严厉打击刑事犯罪活动（"严打"）
+  category: 政治
+  importance: 4
+  summary: 根据邓小平指示，公安部部署全国开展严厉打击刑事犯罪活动，对严重危害社会治安的犯罪分子从重从快惩处，扭转80年代初恶化的社会治安。
+  confidence: 确定
+  tags: [法律, 民生]
+  sources: [新华网, 公安部]
+
+- id: cn-deng-3faces-education-198310
+  date: "1983-10-01"
+  title: 邓小平题词"教育要面向现代化、面向世界、面向未来"
+  category: 文化
+  importance: 3
+  summary: 邓小平为北京景山学校题词"教育要面向现代化，面向世界，面向未来"，提出"三个面向"方针，成为中国教育改革与对外开放的指导思想。
+  confidence: 确定
+  tags: [教育, 改革]
+  sources: [新华网, 人民日报]
+
+- id: cn-12th-2nd-plenum-198310
+  date: "1983-10-12"
+  title: 中共十二届二中全会通过整党决定
+  category: 政治
+  importance: 3
+  summary: 中共十二届二中全会通过《关于整党的决定》，决定用三年时间分期分批对全党进行一次全面整顿，统一思想、整顿作风、加强纪律、纯洁组织。
+  confidence: 确定
+  tags: [改革, 政治]
+  sources: [新华网, 人民日报]
+
+- id: cn-yinhe1-supercomputer-198311
+  date: "1983-11-26"
+  title: '"银河-I"巨型计算机通过国家鉴定'
+  category: 文化
+  importance: 5
+  summary: 国防科技大学研制成功的中国第一台亿次巨型计算机"银河-I"通过国家鉴定，使中国成为世界上少数能独立设计与制造巨型计算机的国家之一。
+  confidence: 确定
+  tags: [科技, 超算, 历史转折]
+  sources: [新华网, 国防科技大学]
+
 

@@ -3512,5 +3512,85 @@
   tags: [科技, 卫生]
   sources: [维基百科, 新华网]
 
+- id: w-arpanet-tcpip-198301
+  date: "1983-01-01"
+  title: ARPANET切换TCP/IP协议，现代互联网诞生
+  category: 文化
+  importance: 5
+  summary: 美国国防部ARPANET网络正式将原有协议全部切换为TCP/IP，从此网络互联成为标准能力，这一天被视作现代互联网的诞生日。
+  confidence: 确定
+  tags: [科技, 互联网, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-reagan-sdi-198303
+  date: "1983-03-23"
+  title: 里根总统提出"战略防御倡议"（星球大战）
+  category: 政治
+  importance: 4
+  summary: 美国总统里根发表电视演说提出"战略防御倡议"，计划在外空部署反弹道导弹防御系统，被讥为"星球大战"，加剧美苏军备竞赛并拖累苏联。
+  confidence: 确定
+  tags: [军事, 政治]
+  sources: [维基百科, 新华网]
+
+- id: w-pioneer10-leaves-solar-198306
+  date: "1983-06-13"
+  title: '"先驱者10号"越过海王星轨道，成为首枚离开太阳系的人造物'
+  category: 文化
+  importance: 4
+  summary: 美国1972年发射的"先驱者10号"探测器越过海王星轨道，成为首个穿越所有大行星轨道、向太阳系外飞去的人造物体，标志深空探测突破。
+  confidence: 确定
+  tags: [航天, 科技]
+  sources: [维基百科, NASA]
+
+- id: w-nintendo-fc-release-198307
+  date: "1983-07-15"
+  title: 任天堂红白机Family Computer在日本发售
+  category: 文化
+  importance: 4
+  summary: 日本任天堂推出8位家用游戏机Family Computer（红白机），凭借超级马里奥等游戏风靡全球，奠定现代家用游戏机产业格局。
+  confidence: 确定
+  tags: [文化, 科技]
+  sources: [维基百科, 新华网]
+
+- id: w-kal007-shot-down-198309
+  date: "1983-09-01"
+  title: 大韩航空007号班机被苏联击落
+  category: 战争
+  importance: 4
+  summary: 大韩航空007号班机误入苏联领空被苏军战斗机击落，机上269人全部罹难，事件激化冷战对立并促使苏联军方与美国加强危机管控。
+  confidence: 确定
+  tags: [军事, 灾害]
+  sources: [维基百科, 新华网]
+
+- id: w-petrov-nuclear-198309
+  date: "1983-09-26"
+  title: 苏联军官彼得罗夫凭判断避免核战
+  category: 政治
+  importance: 4
+  summary: 苏联预警系统误报美国发射洲际导弹，值班军官斯坦尼斯拉夫·彼得罗夫凭经验判断为系统故障而未上报，凭一己判断避免了美苏核大战。
+  confidence: 确定
+  tags: [军事, 政治]
+  sources: [维基百科, 新华网]
+
+- id: w-beirut-marine-bombing-198310
+  date: "1983-10-23"
+  title: 驻贝鲁特美军兵营遭汽车炸弹袭击
+  category: 战争
+  importance: 3
+  summary: 黎巴嫩贝鲁特国际机场附近的美法维和部队兵营遭什叶派武装汽车炸弹袭击，241名美军与58名法军死亡，迫使美法随后撤出黎巴嫩。
+  confidence: 确定
+  tags: [军事, 战争]
+  sources: [维基百科, 新华网]
+
+- id: w-grenada-invasion-198310
+  date: "1983-10-25"
+  title: 美国出兵入侵格林纳达
+  category: 战争
+  importance: 3
+  summary: 美国以保护侨民与恢复民主秩序为由出兵加勒比岛国格林纳达，推翻政变上台的军政府，是越战后美国首次大规模海外军事干预。
+  confidence: 确定
+  tags: [军事, 战争]
+  sources: [维基百科, 新华网]
+
 
 
