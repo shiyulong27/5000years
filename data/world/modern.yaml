@@ -3822,5 +3822,85 @@
   tags: [政治, 外交]
   sources: [维基百科, 新华网]
 
+- id: w-rust-red-square-198705
+  date: "1987-05-28"
+  title: 西德青年鲁斯特驾机降落莫斯科红场
+  category: 政治
+  importance: 3
+  summary: 西德19岁青年马蒂亚斯·鲁斯特驾驶小型飞机穿越苏联防空网降落莫斯科红场，震惊苏联军方，防空与指挥高层因此被大清洗，加速苏军改革讨论。
+  confidence: 确定
+  tags: [政治, 军事]
+  sources: [维基百科, 新华网]
+
+- id: w-reagan-berlin-speech-198706
+  date: "1987-06-12"
+  title: 里根在勃兰登堡门发表"推倒这堵墙"演说
+  category: 政治
+  importance: 4
+  summary: 美国总统里根在东西柏林交界的勃兰登堡门发表演说，呼吁戈尔巴乔夫"推倒这堵墙"，成为冷战末期西方对苏东阵营最具象征意义的政治宣言。
+  confidence: 确定
+  tags: [外交, 政治]
+  sources: [维基百科, 新华网]
+
+- id: w-thatcher-third-term-198706
+  date: "1987-06-11"
+  title: 撒切尔夫人率领保守党赢得大选三连任
+  category: 政治
+  importance: 3
+  summary: 英国大选中撒切尔夫人领导的保守党赢得三连任，撒切尔成为20世纪英国首位蝉联三届的首相，其自由市场改革与国企私有化得以深入推进。
+  confidence: 确定
+  tags: [政治, 改革]
+  sources: [维基百科, 新华网]
+
+- id: w-world-pop-5billion-198707
+  date: "1987-07-11"
+  title: 世界人口达到50亿
+  category: 文化
+  importance: 3
+  summary: 联合国将1987年7月11日定为"世界50亿人口日"，全球人口当日突破50亿，联合国自此将每年7月11日设为世界人口日，唤起对人口与发展的关注。
+  confidence: 确定
+  tags: [民生, 改革]
+  sources: [维基百科, 联合国]
+
+- id: w-black-monday-198710
+  date: "1987-10-19"
+  title: 纽约股市"黑色星期一"暴跌
+  category: 经济
+  importance: 5
+  summary: 道琼斯指数单日重挫22.6%，引发全球股灾并波及伦敦东京香港等市场，是二战后最严重的单日跌幅，但未引发经济衰退，催生熔断机制等风控改革。
+  confidence: 确定
+  tags: [金融, 经济, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-king-cross-fire-198711
+  date: "1987-11-18"
+  title: 伦敦国王十字地铁站发生大火
+  category: 灾害
+  importance: 3
+  summary: 伦敦国王十字地铁站一自动扶梯起火，31人罹难，调查认定积存油脂与烟囱效应是主因，此后伦敦地铁全面禁烟并加强防火管理。
+  confidence: 确定
+  tags: [灾害, 民生]
+  sources: [维基百科, 新华网]
+
+- id: w-inf-treaty-198712
+  date: "1987-12-08"
+  title: 美苏签署《中导条约》
+  category: 政治
+  importance: 5
+  summary: 美国总统里根与苏联领导人戈尔巴乔夫在华盛顿签署《中导条约》，双方承诺销毁全部中短程与中程陆基导弹，是冷战史上首个彻底销毁整类核武器的条约。
+  confidence: 确定
+  tags: [外交, 政治, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-first-intifada-198712
+  date: "1987-12-09"
+  title: 巴勒斯坦被占领土爆发第一次起义
+  category: 战争
+  importance: 4
+  summary: 加沙与约旦河西岸巴勒斯坦人发起反对以色列占领的大规模群众起义，持续逾六年，催生哈马斯崛起并推动中东和平进程进入巴以谈判议程。
+  confidence: 确定
+  tags: [军事, 战争]
+  sources: [维基百科, 新华网]
+
 
 

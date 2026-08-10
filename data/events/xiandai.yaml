@@ -3678,4 +3678,64 @@
   tags: [科技, 改革, 历史转折]
   sources: [新华网, 科技部]
 
+- id: cn-huyaobang-resign-198701
+  date: "1987-01-16"
+  title: 胡耀邦辞去中共中央总书记职务，赵紫阳代理总书记
+  category: 政治
+  importance: 4
+  summary: 在反对资产阶级自由化运动中，胡耀邦因被指"反自由化不力"辞去中共中央总书记职务，由国务院总理赵紫阳代理总书记，反映改革与保守路线的张力。
+  confidence: 确定
+  tags: [政治, 改革]
+  sources: [新华网, 人民日报]
+
+- id: cn-sino-portuguese-macau-declaration-198704
+  date: "1987-04-13"
+  title: 中葡《关于澳门问题的联合声明》在北京正式签署
+  category: 政治
+  importance: 5
+  summary: 中葡两国政府总理在北京正式签署《关于澳门问题的联合声明》，确认中国于1999年12月20日恢复对澳门行使主权并设立特别行政区，澳门前途得以确定。
+  confidence: 确定
+  tags: [外交, 政治, 历史转折]
+  sources: [新华网, 外交部]
+
+- id: cn-daxinganling-fire-198705
+  date: "1987-05-06"
+  title: 大兴安岭发生特大森林火灾
+  category: 灾害
+  importance: 4
+  summary: 黑龙江大兴安岭林区发生建国以来最严重的特大森林火灾，持续近月，过火面积逾百万公顷，211人罹难，暴露林业管理与防火体系重大漏洞。
+  confidence: 确定
+  tags: [灾害, 气候]
+  sources: [新华网, 林业部]
+
+- id: cn-taiwan-mainland-visit-198710
+  date: "1987-10-15"
+  title: 台湾当局宣布开放民众赴大陆探亲
+  category: 政治
+  importance: 4
+  summary: 台湾当局宣布自当日起开放除现役军人及公职人员外的民众赴大陆探亲，逾38年的两岸隔绝被打破，开启两岸民间往来与交流的新阶段。
+  confidence: 确定
+  tags: [外交, 政治]
+  sources: [新华网, 人民日报]
+
+- id: cn-13th-congress-198710
+  date: "1987-10-25"
+  title: 中共十三大召开，提出社会主义初级阶段理论
+  category: 政治
+  importance: 5
+  summary: 中共第十三次全国代表大会在北京召开，赵紫阳作报告系统阐述社会主义初级阶段理论与党的基本路线，并部署政治体制改革，是改革开放理论的重大发展。
+  confidence: 确定
+  tags: [改革, 政治, 历史转折]
+  sources: [新华网, 人民日报]
+
+- id: cn-6th-national-games-198711
+  date: "1987-11-20"
+  title: 第六届全国运动会在广州开幕
+  category: 文化
+  importance: 3
+  summary: 第六届全国运动会在广州天河体育中心开幕，是广东省首次承办全运会，赛后场馆群奠定广州体育中心城市格局，全运会运作模式走向市场化探索。
+  confidence: 确定
+  tags: [体育, 改革]
+  sources: [新华网, 国家体委]
+
 
