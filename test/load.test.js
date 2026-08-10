@@ -152,7 +152,7 @@ describe('1971—1979 年重大事件连续补全', () => {
     'summary', 'confidence', 'tags', 'sources',
   ]
 
-  for (const year of [1971]) {
+  for (const year of [1971, 1972]) {
     it(`${year} 年有完整的中外事件、专页和中轴入口`, () => {
       const chinaEvents = data.events.filter((event) => String(event.date).startsWith(String(year)))
       const worldEvents = data.worldEvents.filter((event) => String(event.date).startsWith(String(year)))

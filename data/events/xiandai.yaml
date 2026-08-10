@@ -5822,3 +5822,66 @@
   confidence: 确定
   tags: [政治, 党史, 历史转折]
   sources: [中共中央党史和文献研究院, 新华网]
+- id: cn-nixon-visit-197202
+  date: '1972-02-21'
+  title: 尼克松总统访华
+  category: 政治
+  importance: 5
+  summary: 美国总统尼克松访问中国并与毛泽东、周恩来会谈，中美关系进入公开缓和与高层接触阶段。
+  confidence: 确定
+  tags: [外交, 中美关系, 冷战]
+  sources: [中国外交部, 美国国务院历史办公室]
+- id: cn-shanghai-communique-197202
+  date: '1972-02-28'
+  title: 中美发表《上海公报》
+  category: 政治
+  importance: 5
+  summary: 中美在上海发表联合公报，确认双方原则立场并开启关系正常化进程，成为冷战时期重要外交文件。
+  confidence: 确定
+  tags: [外交, 中美关系, 历史转折]
+  sources: [中国外交部, 美国国务院]
+- id: cn-china-uk-ambassadorial-197203
+  date: '1972-03-13'
+  title: 中英关系升格为大使级
+  category: 政治
+  importance: 4
+  summary: 中华人民共和国与英国将外交关系提升至大使级，双方正式外交往来进一步制度化。
+  confidence: 确定
+  tags: [外交, 欧洲]
+  sources: [中国外交部, 英国外交档案]
+- id: cn-yinqueshan-bamboo-slips-197204
+  date: '1972-04-10'
+  title: 银雀山汉墓竹简出土
+  category: 文化
+  importance: 4
+  summary: 山东临沂银雀山汉墓出土《孙子兵法》《孙膑兵法》等竹简，为先秦军事文献和中国古代思想史研究提供重要材料。
+  confidence: 确定
+  tags: [考古, 文化, 文献]
+  sources: [国家文物局, 山东省文物局]
+- id: cn-japan-diplomatic-normalization-197209
+  date: '1972-09-29'
+  title: 中日恢复外交关系
+  category: 政治
+  importance: 5
+  summary: 日本首相田中角荣访华，双方签署《中日联合声明》，正式恢复中日外交关系。
+  confidence: 确定
+  tags: [外交, 中日关系, 历史转折]
+  sources: [中国外交部, 日本外务省]
+- id: cn-china-west-germany-diplomatic-197210
+  date: '1972-10-11'
+  title: 中德（西德）建立外交关系
+  category: 政治
+  importance: 4
+  summary: 中华人民共和国与德意志联邦共和国正式建立外交关系，双方开始在新的国际格局下开展双边交往。
+  confidence: 确定
+  tags: [外交, 欧洲]
+  sources: [中国外交部, 德国联邦外交部]
+- id: cn-china-australia-diplomatic-197212
+  date: '1972-12-21'
+  title: 中澳建立外交关系
+  category: 政治
+  importance: 4
+  summary: 中华人民共和国与澳大利亚正式建立外交关系，中国同西方国家的外交联系进一步扩大。
+  confidence: 确定
+  tags: [外交, 亚太]
+  sources: [中国外交部, 澳大利亚外交贸易部]

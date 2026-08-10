@@ -6176,3 +6176,84 @@
   confidence: 确定
   tags: [战争, 独立, 南亚]
   sources: [孟加拉国解放战争博物馆, 维基百科]
+- id: w-bloody-sunday-197201
+  date: '1972-01-30'
+  title: 北爱尔兰“血腥星期日”事件
+  category: 战争
+  importance: 4
+  summary: 德里一场民权示威中，英军向示威者开枪，造成14人死亡，北爱尔兰冲突进一步升级。
+  confidence: 确定
+  tags: [战争, 人权, 北爱尔兰]
+  sources: [英国议会, 维基百科]
+- id: w-sapporo-winter-olympics-197202
+  date: '1972-02-03'
+  title: 札幌冬季奥运会开幕
+  category: 文化
+  importance: 3
+  summary: 第十一届冬季奥运会在日本札幌举行，亚洲首次承办冬奥会。
+  confidence: 确定
+  tags: [体育, 奥运]
+  sources: [国际奥委会, 维基百科]
+- id: w-pioneer10-launch-197203
+  date: '1972-03-02'
+  title: “先驱者10号”发射
+  category: 文化
+  importance: 4
+  summary: NASA发射“先驱者10号”探测器，完成木星近距离探测并成为首个穿越小行星带的航天器。
+  confidence: 确定
+  tags: [航天, 科技, 木星]
+  sources: [美国国家航空航天局, 维基百科]
+- id: w-salt1-abm-treaty-197205
+  date: '1972-05-26'
+  title: 美苏签署《反弹道导弹条约》和SALT I
+  category: 政治
+  importance: 5
+  summary: 美苏签署《反弹道导弹条约》及第一阶段战略武器限制协定，建立冷战时期重要军控框架。
+  confidence: 确定
+  tags: [冷战, 军控, 外交]
+  sources: [美国国务院历史办公室, 联合国条约集]
+- id: w-un-environment-conference-197206
+  date: '1972-06-05'
+  title: 联合国人类环境会议开幕
+  category: 政治
+  importance: 4
+  summary: 联合国人类环境会议在斯德哥尔摩开幕，会议成果促成联合国环境规划署成立，现代国际环境治理由此起步。
+  confidence: 确定
+  tags: [环境, 联合国, 气候]
+  sources: [联合国环境规划署, 维基百科]
+- id: w-watergate-begins-197206
+  date: '1972-06-17'
+  title: 水门事件开始
+  category: 政治
+  importance: 4
+  summary: 民主党全国委员会总部遭闯入，后续调查揭露政府滥权并最终导致美国总统危机。
+  confidence: 确定
+  tags: [美国, 政治, 法律]
+  sources: [美国国家档案馆, 美国参议院水门委员会]
+- id: w-munich-olympics-attack-197209
+  date: '1972-09-05'
+  title: 慕尼黑奥运会袭击事件
+  category: 战争
+  importance: 4
+  summary: “黑色九月”组织劫持并杀害以色列运动员，奥运会被迫中断，国际反恐与赛事安保体系随之改变。
+  confidence: 确定
+  tags: [恐怖主义, 体育, 中东]
+  sources: [国际奥委会, 德国联邦档案馆]
+- id: w-apollo17-launch-197212
+  date: '1972-12-07'
+  title: 阿波罗17号发射
+  category: 文化
+  importance: 4
+  summary: 阿波罗17号升空并完成阿波罗计划最后一次载人登月任务，标志载人月球探测阶段性收束。
+  confidence: 确定
+  tags: [航天, 科技, 登月]
+  sources: [美国国家航空航天局, 维基百科]
+- id: w-basic-treaty-germany-197212
+  date: '1972-12-21'
+  title: 东德与西德签署《基础条约》
+  category: 政治
+  importance: 4
+  summary: 东德与西德签署《基础条约》，相互承认并改善两德关系，为双方进入联合国和欧洲缓和创造条件。
+  confidence: 确定
+  tags: [欧洲, 冷战, 外交]
+  sources: [德国联邦外交部, 联合国条约集]
