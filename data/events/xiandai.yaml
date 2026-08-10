@@ -3738,4 +3738,54 @@
   tags: [体育, 改革]
   sources: [新华网, 国家体委]
 
+- id: cn-7th-npc-1st-meeting-198803
+  date: "1988-03-25"
+  title: 七届全国人大一次会议在北京召开
+  category: 政治
+  importance: 3
+  summary: 七届全国人大第一次会议在北京召开，选举杨尚昆为国家主席、李鹏为国务院总理、万里为全国人大常委会委员长，完成国家领导人换届。
+  confidence: 确定
+  tags: [政治]
+  sources: [新华网, 全国人大常委会]
+
+- id: cn-hainan-province-sez-198804
+  date: "1988-04-13"
+  title: 七届全国人大一次会议决定海南建省办经济特区
+  category: 政治
+  importance: 5
+  summary: 七届全国人大一次会议通过关于设立海南省的决定与关于建立海南经济特区的决议，海南成为中国最年轻的省和最大的经济特区，是改革开放前沿布局的重大举措。
+  confidence: 确定
+  tags: [改革, 政治, 历史转折]
+  sources: [新华网, 全国人大常委会]
+
+- id: cn-price-reform-breakthrough-198808
+  date: "1988-08-19"
+  title: 中央北戴河会议决定价格改革"闯关"，引发全国抢购风潮
+  category: 经济
+  importance: 4
+  summary: 中央在北戴河会议提出价格改革"闯关"，消息引发全国性抢购与挤兑，通货膨胀加剧，迫使中央放缓改革并转而进行治理整顿，是改革进程的重要转折。
+  confidence: 确定
+  tags: [改革, 经济]
+  sources: [新华网, 人民日报]
+
+- id: cn-military-rank-restored-198809
+  date: "1988-09-14"
+  title: 中央军委决定恢复实行军衔制并授予上将军衔
+  category: 政治
+  importance: 4
+  summary: 中央军委决定恢复自1965年取消的军衔制，并在北京举行授衔仪式，授予洪学智等17人上将军衔，标志人民解放军正规化、现代化建设迈出重要一步。
+  confidence: 确定
+  tags: [军事, 改革]
+  sources: [新华网, 中央军委]
+
+- id: cn-beijing-electron-collider-198810
+  date: "1988-10-22"
+  title: 北京正负电子对撞机首次对撞成功
+  category: 文化
+  importance: 4
+  summary: 中国自行设计建造的首台高能粒子加速器北京正负电子对撞机首次对撞成功，随后北京谱仪投入高能物理实验，是中国高能物理与同步辐射研究的里程碑。
+  confidence: 确定
+  tags: [科技, 科考]
+  sources: [新华网, 中国科学院]
+
 

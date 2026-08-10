@@ -3902,5 +3902,95 @@
   tags: [军事, 战争]
   sources: [维基百科, 新华网]
 
+- id: w-soviet-afghanistan-withdrawal-198805
+  date: "1988-05-15"
+  title: 苏军开始从阿富汗分批撤军
+  category: 政治
+  importance: 4
+  summary: 依据4月签署的日内瓦协议，苏联军队自5月15日起开始从阿富汗分阶段撤出，1989年2月完成撤离，结束长达九年的阿富汗战争，地区格局深刻调整。
+  confidence: 确定
+  tags: [军事, 政治]
+  sources: [维基百科, 新华网]
+
+- id: w-8888-uprising-myanmar-198808
+  date: "1988-08-08"
+  title: 缅甸爆发"8888起义"
+  category: 政治
+  importance: 4
+  summary: 缅甸爆发以学生为主体的全国性民主运动，军政府镇压致数千人死亡，昂山素季随后组建全国民主联盟，是缅甸现代民主运动的关键节点。
+  confidence: 确定
+  tags: [政治, 改革]
+  sources: [维基百科, 新华网]
+
+- id: w-zia-ul-haq-crash-198808
+  date: "1988-08-17"
+  title: 巴基斯坦总统齐亚·哈克空难身亡
+  category: 政治
+  importance: 3
+  summary: 巴基斯坦总统齐亚·哈克及多名高级将领因专机爆炸坠毁身亡，事件疑团重重，随后贝娜齐尔·布托成为首位民选女性总理，巴基斯坦重回文官政治。
+  confidence: 确定
+  tags: [政治]
+  sources: [维基百科, 新华网]
+
+- id: w-iran-iraq-ceasefire-198808
+  date: "1988-08-20"
+  title: 两伊战争停火生效
+  category: 战争
+  importance: 4
+  summary: 依据联合国安理会598号决议，伊朗与伊拉克自8月20日起停火，长达八年的两伊战争正式结束，战争未改变两国边界却造成逾百万人伤亡。
+  confidence: 确定
+  tags: [军事, 战争]
+  sources: [维基百科, 新华网]
+
+- id: w-seoul-olympics-198809
+  date: "1988-09-17"
+  title: 第24届汉城奥运会举行
+  category: 文化
+  importance: 4
+  summary: 第24届夏季奥运会在韩国汉城举行，苏联东欧结束抵制重返奥运，是冷战末期东西方体育交流恢复的标志，也推动韩国从军人威权向民主化转型。
+  confidence: 确定
+  tags: [体育, 改革]
+  sources: [维基百科, 新华网]
+
+- id: w-bush-41-elected-198811
+  date: "1988-11-08"
+  title: 乔治·布什当选美国第41任总统
+  category: 政治
+  importance: 3
+  summary: 现任副总统共和党人乔治·布什击败民主党人杜卡基斯当选美国第41任总统，延续里根政府基本政策，任内见证柏林墙倒塌与冷战终结。
+  confidence: 确定
+  tags: [政治, 外交]
+  sources: [维基百科, 新华网]
+
+- id: w-armenia-earthquake-198812
+  date: "1988-12-07"
+  title: 苏联亚美尼亚发生6.8级大地震
+  category: 灾害
+  importance: 4
+  summary: 苏联亚美尼亚加盟共和国列宁纳坎地区发生6.8级地震，约2.5万人罹难，苏联接受国际救援并公开灾情，是冷战期间罕见的开放国际救援行动。
+  confidence: 确定
+  tags: [灾害, 气候]
+  sources: [维基百科, 新华网]
+
+- id: w-gorbachev-un-speech-198812
+  date: "1988-12-07"
+  title: 戈尔巴乔夫在联大发表"新思维"演讲并宣布单方面裁军
+  category: 政治
+  importance: 4
+  summary: 苏联领导人戈尔巴乔夫在联合国大会发表演讲，阐述外交"新思维"并宣布单方面从东欧裁军50万，是苏联在冷战终结进程中具有决定意义的外交宣示。
+  confidence: 确定
+  tags: [外交, 政治, 改革]
+  sources: [维基百科, 新华网]
+
+- id: w-lockerbie-bombing-198812
+  date: "1988-12-21"
+  title: 泛美航空103号班机洛克比空难
+  category: 灾害
+  importance: 5
+  summary: 泛美航空103号班机在苏格兰洛克比上空爆炸坠毁，机上259人与地面11人罹难，调查认定利比亚特工实施炸弹袭击，是9·11前最严重的针对民航恐怖袭击。
+  confidence: 确定
+  tags: [灾害, 战争, 历史转折]
+  sources: [维基百科, 新华网]
+
 
 
