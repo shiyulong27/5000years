@@ -2592,7 +2592,63 @@
   importance: 5
   summary: 40余名车臣武装分子劫持850余名人质，俄特种部队使用麻醉气体解救，造成130名人质及全部恐怖分子死亡，震惊世界。
   confidence: 确定
-  tags: [战争, 反恐, 俄罗斯, 历史转折]
+- id: w-wikipedia-launched-200101
+  date: "2001-01-15"
+  title: 吉米·威尔士与拉里·桑格在网络上正式创办维基百科（Wikipedia）
+  category: 文化
+  importance: 5
+  summary: 维基百科上线运营，采用开放协同编辑模式，发展成为全球规模最大的在线自由百科全书与数字文明知识共享平台。
+  confidence: 确定
+  tags: [互联网, 科技, 文化, 历史转折]
+  sources: [维基百科]
+
+- id: w-george-w-bush-inauguration-200101
+  date: "2001-01-20"
+  title: 乔治·W·布什宣誓就任美国第43任总统
+  category: 政治
+  importance: 5
+  summary: 经最高法院判定佛罗里达州计票争议后，共和党人小布什宣誓就任美第43任总统，开启为期8年的执政生涯。
+  confidence: 确定
+  tags: [政治, 美国, 历史转折]
   sources: [维基百科, 新华网]
 
+- id: w-911-attacks-200109
+  date: "2001-09-11"
+  title: 恐怖分子劫持客机撞击纽约世贸中心与五角大楼（九一一事件），造成近3000人遇难
+  category: 战争
+  importance: 5
+  summary: 基地组织恐怖分子劫持四架客机撞击世贸双子塔与五角大楼，造成2977人死亡，重塑全球安全格局与美国外交战略。
+  confidence: 确定
+  tags: [战争, 反恐, 美国, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-afghanistan-war-begins-200110
+  date: "2001-10-07"
+  title: 美英军队发动"持久自由行动"空袭塔利班，阿富汗战争全面爆发
+  category: 战争
+  importance: 5
+  summary: 911事件后美英发动阿富汗战争打击塔利班和基地组织，拉开全球反恐战争序幕，战争持续长达20年。
+  confidence: 确定
+  tags: [战争, 阿富汗, 反恐, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-kofi-annan-un-nobel-200110
+  date: "2001-10-12"
+  title: 联合国及其秘书长科菲·安南共同荣获诺贝尔和平奖
+  category: 政治
+  importance: 4
+  summary: 挪威诺贝尔委员会宣布将和平奖授予联合国及安理会秘书长安南，表彰其为建立更具条理与和平世界所作出的贡献。
+  confidence: 确定
+  tags: [政治, 联合国, 诺贝尔奖]
+  sources: [诺贝尔奖, 维基百科]
+
+- id: w-gujarat-earthquake-200101
+  date: "2001-01-26"
+  title: 印度古吉拉特邦发生7.7级强震，造成逾两万人遇难
+  category: 灾害
+  importance: 5
+  summary: 强震袭击印度古吉拉特邦，摧毁数十万栋房屋，造成2万余人遇难、16万人受伤，为印度现代史上最严重的地震自然灾害。
+  confidence: 确定
+  tags: [灾害, 地震, 南亚]
+  sources: [维基百科, 新华网]
 

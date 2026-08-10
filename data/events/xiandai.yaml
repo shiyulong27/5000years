@@ -2226,6 +2226,76 @@
   tags: [民生, 农业, 改革, 历史转折]
   sources: [新华网, 人大网]
 
+- id: cn-hainan-nanhai-collision-200104
+  date: "2001-04-01"
+  title: 中美南海撞机事件爆发，海军飞行员王伟壮烈牺牲
+  category: 战争
+  importance: 5
+  summary: 美军EP-3电子侦察机在海南岛东南海域撞毁我歼-8Ⅱ战机，飞行员王伟跳伞失踪后确认牺牲，引发中美深刻外交与军事摩擦。
+  confidence: 确定
+  tags: [军事, 外交, 海南, 历史转折]
+  sources: [国防部, 新华网]
+
+- id: cn-shanghai-cooperation-organization-200106
+  date: "2001-06-15"
+  title: 上海合作组织（SCO）在上海正式成立
+  category: 政治
+  importance: 5
+  summary: 中国、俄罗斯、哈萨克斯坦、吉尔吉斯斯坦、塔吉克斯坦、乌兹别克斯坦六国签署《上海合作组织成立宣言》，上合组织正式诞生。
+  confidence: 确定
+  tags: [外交, 区域合作, 上合, 历史转折]
+  sources: [外交部, 新华网]
+
+- id: cn-beijing-olympic-bid-success-200107
+  date: "2001-07-13"
+  title: 国际奥委会第112次全会在莫斯科投票，北京成功获得2008年第29届夏季奥运会主办权
+  category: 文化
+  importance: 5
+  summary: 萨马兰奇高喊"BEIJING"，北京击败多伦多、巴黎等城市获得2008夏奥会主办权，全国千百万人走上街头欢庆胜利。
+  confidence: 确定
+  tags: [体育, 奥运, 历史转折]
+  sources: [国际奥委会, 新华网]
+
+- id: cn-world-cup-qualification-200110
+  date: "2001-10-07"
+  title: 国足沈阳五里河1:0战胜阿曼，历史性首次晋级世界杯决赛圈
+  category: 文化
+  importance: 5
+  summary: 于根伟破门助中国队1:0战胜阿曼，提前两轮锁定韩日世界杯出线名额，结束了中国足球44年冲击世界杯的漫长等待。
+  confidence: 确定
+  tags: [体育, 足球, 历史转折]
+  sources: [新华网, 中国足协]
+
+- id: cn-apec-shanghai-summit-200110
+  date: "2001-10-21"
+  title: 亚太经合组织（APEC）第九次领导人非正式会议在上海成功举行
+  category: 经济
+  importance: 5
+  summary: 江泽民主持会议，中美俄等20位经济体领导人出席，通过《上海共识》，极大地提升了中国的国际影响力和大国形象。
+  confidence: 确定
+  tags: [经济, 外交, APEC, 历史转折]
+  sources: [外交部, 新华网]
+
+- id: cn-wto-accession-signed-200111
+  date: "2001-11-10"
+  title: 世界贸易组织第4届部长级会议通过中国加入WTO议案，12月11日正式生效
+  category: 经济
+  importance: 5
+  summary: 经过长达15年复关和入世艰苦谈判，多哈会议批准中国加入WTO，12月11日正式成为第143个成员，中国对外开放进入全新阶段。
+  confidence: 确定
+  tags: [经济, WTO, 改革开放, 历史转折]
+  sources: [商务部, 新华网]
+
+- id: cn-qinghai-tibet-railway-start-200106
+  date: "2001-06-29"
+  title: 青藏铁路二期工程（格尔木至拉萨段）开工典礼在格尔木和拉萨同时举行
+  category: 经济
+  importance: 5
+  summary: 国务院批准全面开工建设青藏铁路格拉段，总投资330亿元，拉开了解决西藏无铁路历史与西部大开发重大突破的序幕。
+  confidence: 确定
+  tags: [工程, 交通, 西藏, 历史转折]
+  sources: [铁道部, 新华网]
+
 - id: cn-china-world-cup-debut-200206
   date: "2002-06-04"
   title: 中国国家男子足球队首次亮相韩日世界杯决赛圈
