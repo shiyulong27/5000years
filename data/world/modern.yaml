@@ -6572,3 +6572,93 @@
   confidence: 确定
   tags: [美国, 总统选举, 卡特, 政治]
   sources: [美国国家档案和记录管理局, Encyclopaedia Britannica, Wikipedia—1976 United States presidential election]
+- id: w-carter-inauguration-197701
+  date: '1977-01-20'
+  title: 吉米·卡特就任美国总统
+  category: 政治
+  importance: 4
+  summary: 吉米·卡特在华盛顿宣誓就任美国第39任总统，开启新一届美国政府。
+  confidence: 确定
+  tags: [美国, 卡特, 总统就职, 政治]
+  sources: [美国国家档案和记录管理局, 白宫历史协会, Wikipedia—First inauguration of Jimmy Carter]
+- id: w-indian-election-197703
+  date: '1977-03-20'
+  title: 印度大选结束，人民党获胜
+  category: 政治
+  importance: 4
+  summary: 分阶段投票结束后人民党赢得人民院多数，英迪拉·甘地政府下台，印度首次实现中央政权非国大党更替。
+  confidence: 确定
+  tags: [印度, 大选, 政权更替, 紧急状态]
+  sources: [印度选举委员会, Encyclopaedia Britannica, Wikipedia—1977 Indian general election]
+- id: w-star-wars-release-197705
+  date: '1977-05-25'
+  title: 电影《星球大战》上映
+  category: 文化
+  importance: 3
+  summary: 乔治·卢卡斯执导的《星球大战》在美国上映，成为全球商业和流行文化现象，并推动特效电影工业发展。
+  confidence: 确定
+  tags: [电影, 科幻, 好莱坞, 文化]
+  sources: [美国国会图书馆, Encyclopaedia Britannica, Wikipedia—Star Wars (film)]
+- id: w-spanish-election-197706
+  date: '1977-06-15'
+  title: 西班牙民主化后首次大选
+  category: 政治
+  importance: 5
+  summary: 佛朗哥去世后西班牙举行全国大选，这是1936年以来首次竞争性全国选举，推动国家宪政转型。
+  confidence: 确定
+  tags: [西班牙, 民主转型, 选举, 欧洲]
+  sources: [西班牙内政部, Encyclopaedia Britannica, Wikipedia—1977 Spanish general election]
+- id: w-djibouti-independence-197706
+  date: '1977-06-27'
+  title: 吉布提独立
+  category: 政治
+  importance: 3
+  summary: 法属阿法尔和伊萨领地经公民投票后独立，成立吉布提共和国，哈桑·古莱德·阿普蒂敦任首任总统。
+  confidence: 确定
+  tags: [吉布提, 非洲, 独立, 去殖民化]
+  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Djibouti]
+- id: w-new-york-blackout-197707
+  date: '1977-07-13'
+  title: 纽约大停电
+  category: 灾害
+  importance: 3
+  summary: 雷击引发电网故障，纽约市大部分地区停电约25小时，期间发生大范围骚乱和财产损失。
+  confidence: 确定
+  tags: [纽约, 停电, 城市灾害, 美国]
+  sources: [纽约州政府, 美国能源部, Wikipedia—New York City blackout of 1977]
+- id: w-voyager-2-launch-197708
+  date: '1977-08-20'
+  title: “旅行者2号”发射
+  category: 文化
+  importance: 4
+  summary: NASA发射“旅行者2号”深空探测器，执行外行星探测任务，后续成为运行时间最长的深空探测器之一。
+  confidence: 确定
+  tags: [航天, NASA, 深空探测, 科技]
+  sources: [NASA, JPL, Wikipedia—Voyager 2]
+- id: w-panama-canal-treaties-197709
+  date: '1977-09-07'
+  title: 美国与巴拿马签署《巴拿马运河条约》
+  category: 政治
+  importance: 5
+  summary: 美国总统卡特与巴拿马领导人奥马尔·托里霍斯签署新运河条约，规定运河主权和管理权逐步移交巴拿马。
+  confidence: 确定
+  tags: [巴拿马运河, 美国, 条约, 外交]
+  sources: [美国国务院历史办公室, 巴拿马政府, Wikipedia—Torrijos–Carter Treaties]
+- id: w-sadat-jerusalem-197711
+  date: '1977-11-19'
+  title: 埃及总统萨达特访问耶路撒冷
+  category: 政治
+  importance: 5
+  summary: 萨达特成为首位访问以色列的阿拉伯国家领导人，并在以色列议会演讲，开启埃以和平谈判进程。
+  confidence: 确定
+  tags: [埃及, 以色列, 中东和平, 外交]
+  sources: [埃及外交部, Encyclopaedia Britannica, Wikipedia—Anwar Sadat's visit to Israel]
+- id: w-malaysia-flight-653-197712
+  date: '1977-12-04'
+  title: 马来西亚航空653号航班空难
+  category: 灾害
+  importance: 3
+  summary: 马来西亚航空653号航班在柔佛州坠毁，机上100人全部遇难，事故原因被认定与劫机有关。
+  confidence: 确定
+  tags: [航空事故, 马来西亚, 灾害, 劫机]
+  sources: [马来西亚民航局, Aviation Safety Network, Wikipedia—Malaysian Airline System Flight 653]

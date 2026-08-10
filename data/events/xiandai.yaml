@@ -6110,3 +6110,57 @@
   confidence: 确定
   tags: [四人帮, 文化大革命, 政治, 政权更迭]
   sources: [新华社, 中国共产党新闻网, Wikipedia—Gang of Four]
+- id: cn-china-liberia-diplomatic-197702
+  date: '1977-02-17'
+  title: 中国与利比里亚建立外交关系
+  category: 政治
+  importance: 3
+  summary: 中国与利比里亚签署联合公报，正式建立外交关系，双方确认一个中国原则。
+  confidence: 确定
+  tags: [外交, 利比里亚, 非洲, 建交]
+  sources: [中华人民共和国外交部, 利比里亚外交部, Wikipedia—China–Liberia relations]
+- id: cn-china-jordan-diplomatic-197704
+  date: '1977-04-07'
+  title: 中国与约旦建立外交关系
+  category: 政治
+  importance: 3
+  summary: 中国与约旦正式建立外交关系，双方在联合公报中确认中华人民共和国政府是中国唯一合法政府。
+  confidence: 确定
+  tags: [外交, 约旦, 中东, 建交]
+  sources: [中华人民共和国外交部, 约旦外交部, Wikipedia—China–Jordan relations]
+- id: cn-china-barbados-diplomatic-197705
+  date: '1977-05-30'
+  title: 中国与巴巴多斯建立外交关系
+  category: 政治
+  importance: 3
+  summary: 中国与巴巴多斯正式建立外交关系，扩大了中国同加勒比国家的官方联系。
+  confidence: 确定
+  tags: [外交, 巴巴多斯, 加勒比, 建交]
+  sources: [中华人民共和国外交部, 巴巴多斯外交部, Wikipedia—China–Barbados relations]
+- id: cn-deng-restored-197707
+  date: '1977-07-22'
+  title: 邓小平恢复党政军领导职务
+  category: 政治
+  importance: 5
+  summary: 中共十届三中全会决定恢复邓小平中共中央副主席、国务院副总理、中央军委副主席等职务，结束其长期被排斥状态。
+  confidence: 确定
+  tags: [邓小平, 政治转折, 中共中央, 拨乱反正]
+  sources: [新华社, 中国共产党新闻网, Wikipedia—Deng Xiaoping]
+- id: cn-11th-cpc-congress-197708
+  date: '1977-08-12'
+  title: 中国共产党第十一次全国代表大会开幕
+  category: 政治
+  importance: 4
+  summary: 中共十一大在北京召开，华国锋作政治报告，会议宣布“文化大革命”已经结束并部署新时期任务。
+  confidence: 确定
+  tags: [中共十一大, 政治, 华国锋, 党代会]
+  sources: [中国共产党新闻网, 新华社, Wikipedia—11th National Congress of the CCP]
+- id: cn-gaokao-restored-197710
+  date: '1977-10-12'
+  title: 国务院决定恢复高等学校统一招生考试
+  category: 文化
+  importance: 5
+  summary: 国务院作出恢复高考的决定，招生对象扩大到工农兵及应届高中毕业生，冬季举行“文化大革命”后首次全国统一高考。
+  confidence: 确定
+  tags: [高考, 教育, 恢复招生, 改革]
+  sources: [中华人民共和国教育部, 新华社, Wikipedia—National Higher Education Entrance Examination]
