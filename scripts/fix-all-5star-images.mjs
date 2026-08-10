@@ -28,158 +28,76 @@ const baseImages = {
 
 // Special captions lookup map
 const specialCaptions = {
-  // 2013 Belt and Road fix
-  'cn-belt-and-road-initiation-201309': {
-    caption: '首次提出共建“丝绸之路经济带”和“21世纪海上丝绸之路”倡议示意图',
-    category: 'diplomacy'
-  },
-  'cn-shanghai-ftz-open-201309': {
-    caption: '中国（上海）自由贸易试验区正式挂牌成立现场',
-    category: 'economy'
-  },
-  'cn-targeted-poverty-alleviation-201311': {
-    caption: '首次在湖南十八洞村提出“精准扶贫”重要理念',
+  // 1990-1999 Key Events
+  'cn-macau-handover-199912': {
+    caption: '1999年12月20日，澳门回归祖国政权交接仪式隆重举行',
     category: 'politics'
   },
-
-  // 2000-2009 Key Events
-  'cn-beijing-olympics-200808': {
-    caption: '第29届夏季奥林匹克运动会在北京盛大开幕',
-    category: 'sports'
-  },
-  'cn-beijing-olympics-medal-200808': {
-    caption: '北京奥运会中国代表团以51枚金牌高居榜首',
-    category: 'sports'
-  },
-  'cn-wenchuan-earthquake-200805': {
-    caption: '四川汶川特大地震发生，全国军民同心抗震救灾',
-    category: 'disaster'
-  },
-  'cn-shenzhou7-spacewalk-200809': {
-    caption: '航天员翟志刚完成中国首次太空出舱行走',
-    category: 'space'
-  },
-  'cn-cross-strait-three-links-200812': {
-    caption: '海峡两岸“大三通”全面实现现场',
+  'cn-hong-kong-handover-199707': {
+    caption: '1997年7月1日，香港回归祖国政权交接仪式隆重举行',
     category: 'politics'
   },
-  'cn-global-financial-crisis-response-2008': {
-    caption: '国务院公布4万亿元扩大内需促进经济平稳增长政策',
-    category: 'economy'
-  },
-  'cn-property-law-200703': {
-    caption: '十届全国人大五次会议表决通过《中华人民共和国物权法》',
-    category: 'law'
-  },
-  'cn-harmony-bullet-train-200704': {
-    caption: '“和谐号”动车组（CRH）在全国干线正式投入运营',
-    category: 'tech'
-  },
-  'cn-change1-lunar-orbiter-200710': {
-    caption: '我国首颗月球探测卫星“嫦娥一号”在西昌发射升空',
-    category: 'lunar'
-  },
-  'cn-cpc-17th-congress-200710': {
-    caption: '中国共产党第十七次全国代表大会在北京隆重召开',
-    category: 'politics'
-  },
-  'cn-agricultural-tax-repeal-200601': {
-    caption: '全面废止农业税条例，延续2600年的农业税退出历史舞台',
-    category: 'economy'
-  },
-  'cn-shenzhou5-manned-flight-200310': {
-    caption: '航天员杨利伟乘神舟五号成功完成中国首次载人航天飞行',
-    category: 'space'
-  },
-  'cn-fight-against-sars-200304': {
-    caption: '举国上下同心抗击非典（SARS）与构建公共卫生防控体系',
-    category: 'disaster'
-  },
-  'cn-three-gorges-water-storage-200306': {
-    caption: '长江三峡水库正式下闸蓄水与船闸通航',
-    category: 'economy'
-  },
-  'cn-cepa-signed-200306': {
-    caption: '《内地与香港关于建立更紧密经贸关系的安排》（CEPA）签署',
-    category: 'economy'
-  },
-  'cn-cpc-16th-congress-200211': {
-    caption: '中国共产党第十六次全国代表大会在北京隆重召开',
-    category: 'politics'
-  },
-  'cn-china-world-cup-debut-200206': {
-    caption: '中国国家男子足球队首次亮相韩日世界杯决赛圈',
-    category: 'sports'
-  },
-  'cn-wto-accession-signed-200111': {
-    caption: '中国正式签署加入世界贸易组织（WTO）议案',
-    category: 'economy'
-  },
-  'cn-beijing-olympic-bid-success-200107': {
-    caption: '北京成功赢得2008年第29届夏季奥运会主办权',
-    category: 'sports'
-  },
-  'cn-world-cup-qualification-200110': {
-    caption: '国足在沈阳五里河战胜阿曼，首次晋级世界杯决赛圈',
-    category: 'sports'
-  },
-  'cn-hainan-nanhai-collision-200104': {
-    caption: '中美南海撞机事件发生，海军飞行员王伟壮烈牺牲',
-    category: 'military'
-  },
-  'cn-shanghai-cooperation-organization-200106': {
-    caption: '上海合作组织（SCO）在上海签署成立宣言',
-    category: 'diplomacy'
-  },
-  'cn-apec-shanghai-summit-200110': {
-    caption: 'APEC第九次领导人非正式会议在上海成功举行',
-    category: 'diplomacy'
-  },
-  'cn-qinghai-tibet-railway-start-200106': {
-    caption: '青藏铁路格尔木至拉萨段工程开工建设现场',
-    category: 'tech'
-  },
-  'cn-new-china-60th-parade-200910': {
-    caption: '庆祝中华人民共和国成立60周年大会与天安门阅兵',
+  'cn-50th-parade-199910': {
+    caption: '庆祝中华人民共和国成立50周年天安门盛大阅兵',
     category: 'parade'
   },
-
-  // World Key Events (2000-2009)
-  'w-911-attacks-200109': {
-    caption: '恐怖分子劫持客机撞击纽约世贸中心与五角大楼（九一一事件）',
-    category: 'disaster'
+  'cn-shenzhou1-199911': {
+    caption: '中国第一艘载人航天试验飞船“神舟一号”成功发射',
+    category: 'space'
   },
-  'w-iphone-launch-200701': {
-    caption: '史蒂夫·乔布斯在旧金山正式发布首款 iPhone 智能手机',
-    category: 'tech'
-  },
-  'w-lehman-bankruptcy-200809': {
-    caption: '雷曼兄弟破产引发全球金融危机',
-    category: 'economy'
-  },
-  'w-indian-ocean-tsunami-200412': {
-    caption: '印度洋发生9.1级特大地震并引发海啸',
-    category: 'disaster'
-  },
-  'w-iraq-war-breaks-out-200303': {
-    caption: '美英联军空袭巴格达，伊拉克战争全面爆发',
-    category: 'military'
-  },
-  'w-obama-wins-election-200811': {
-    caption: '巴拉克·奥巴马当选美国第44任总统',
+  'cn-deng-southern-tour-199201': {
+    caption: '邓小平视察南方并发表重要谈话，推动新一轮思想解放',
     category: 'politics'
   },
-  'w-euro-cash-launch-200201': {
-    caption: '欧元纸币与硬币在欧洲12国正式投入流通',
+  'cn-pudong-development-199004': {
+    caption: '中央决定开发开放上海浦东新区，拉开浦东建设序幕',
     category: 'economy'
   },
-  'w-kyoto-protocol-effective-200502': {
-    caption: '限制温室气体排放的《京都议定书》正式生效',
+  'cn-beijing-asian-games-199009': {
+    caption: '第11届亚洲运动会在北京隆重开幕',
+    category: 'sports'
+  },
+  'cn-shanghai-stock-exchange-199011': {
+    caption: '上海证券交易所开业敲响第一声锣',
+    category: 'economy'
+  },
+  'cn-1998-flood-199806': {
+    caption: '1998年长江流域特大洪水，全军奋力抗洪抢险',
+    category: 'disaster'
+  },
+  'cn-deng-xiaoping-death-199702': {
+    caption: '深切悼念邓小平同志',
+    category: 'politics'
+  },
+
+  // 1990-1999 World Events
+  'w-soviet-fall-1991': {
+    caption: '1991年克里姆林宫苏联国旗降下，苏联正式解体',
+    category: 'politics'
+  },
+  'w-ussr-dissolution-199112': {
+    caption: '1991年12月苏联正式解体，15个加盟共和国独立',
+    category: 'politics'
+  },
+  'w-mandela-elected-199404': {
+    caption: '纳尔逊·曼德拉当选南非首位黑人总统',
+    category: 'politics'
+  },
+  'w-eu-founded-199311': {
+    caption: '《马斯特里赫特条约》生效，欧洲联盟正式成立',
     category: 'diplomacy'
   },
-  'w-wikipedia-launched-200101': {
-    caption: '维基百科（Wikipedia）在互联网正式上线创办',
-    category: 'tech'
+  'w-wto-founded-199501': {
+    caption: '世界贸易组织（WTO）在日内瓦正式成立',
+    category: 'economy'
+  },
+  'w-gulf-war-storm-199101': {
+    caption: '海湾战争“沙漠风暴”行动爆发',
+    category: 'military'
+  },
+  'w-germany-reunification-199010': {
+    caption: '1990年10月两德正式统一',
+    category: 'politics'
   }
 }
 
@@ -188,8 +106,8 @@ function makeSlug(id) {
   return id.replace(/^(?:cn|w)-/, '').replace(/-/g, '_')
 }
 
-// 25 Years Range (2000 to 2024)
-const years = Array.from({ length: 25 }, (_, i) => String(2000 + i))
+// 35 Years Range (1990 to 2024)
+const years = Array.from({ length: 35 }, (_, i) => String(1990 + i))
 
 let updatedXiandai = 0
 for (const e of xiandai) {
@@ -270,4 +188,4 @@ for (const e of modern) {
 fs.writeFileSync(xiandaiPath, yaml.dump(xiandai, { lineWidth: -1 }), 'utf8')
 fs.writeFileSync(modernPath, yaml.dump(modern, { lineWidth: -1 }), 'utf8')
 
-console.log(`Successfully updated ${updatedXiandai} events in xiandai.yaml and ${updatedModern} events in modern.yaml for 2000-2024!`)
+console.log(`Successfully updated ${updatedXiandai} events in xiandai.yaml and ${updatedModern} events in modern.yaml for 1990-2024!`)

@@ -82,6 +82,9 @@
   importance: 5
   summary: 苏联各加盟共和国相继独立，冷战格局随之终结，世界进入一超多强时代。
   confidence: 确定
+  image:
+    url: /images/events/1991/soviet_fall_1991.jpg
+    caption: 1991年克里姆林宫苏联国旗降下，苏联正式解体
 - id: w-web-1991
   date: '1991'
   title: 万维网诞生
@@ -3008,7 +3011,7 @@
     - 新华网
   image:
     url: /images/events/2008/lehman_bankruptcy_200809.jpg
-    caption: 雷曼兄弟破产引发全球金融危机
+    caption: 美国雷曼兄弟银行申请破产，全球金融危机全面爆发——重大国际历史时刻
 - id: w-us-government-bailout-200810
   date: '2008-10-03'
   title: 美国国会通过7000亿美元金融救援计划（TARP），布什总统签署生效
@@ -3043,7 +3046,7 @@
     - 新华网
   image:
     url: /images/events/2008/obama_wins_election_200811.jpg
-    caption: 巴拉克·奥巴马当选美国第44任总统
+    caption: 民主党候选人巴拉克·奥巴马当选美国第44任总统，成为首位非裔总统——重大国际历史时刻
 - id: w-g20-washington-summit-200811
   date: '2008-11-15'
   title: G20峰会首次在华盛顿举行，协调各国应对全球金融危机
@@ -3113,7 +3116,7 @@
     - Apple
   image:
     url: /images/events/2007/iphone_launch_200701.jpg
-    caption: 史蒂夫·乔布斯在旧金山正式发布首款 iPhone 智能手机
+    caption: 史蒂夫·乔布斯在旧金山正式发布首款 iPhone，重新定义智能手机——重大国际历史时刻
 - id: w-putin-munich-speech-200702
   date: '2007-02-10'
   title: 俄罗斯总统普京在慕尼黑安全会议发表重要演讲，猛烈批评单极世界
@@ -3378,7 +3381,7 @@
     - 维基百科
   image:
     url: /images/events/2005/kyoto_protocol_effective_200502.jpg
-    caption: 限制温室气体排放的《京都议定书》正式生效
+    caption: 减少温室气体排放的《京都议定书》正式生效——重大国际历史时刻
 - id: w-pope-john-paul-ii-death-200504
   date: '2005-04-02'
   title: 罗马教宗若望保禄二世逝世，本笃十六世继任
@@ -3608,7 +3611,7 @@
     - 新华网
   image:
     url: /images/events/2004/indian_ocean_tsunami_200412.jpg
-    caption: 印度洋发生9.1级特大地震并引发海啸
+    caption: 印度洋发生9.1级特大地震并引发海啸，造成约22.7万人遇难——重大国际历史时刻
 - id: w-space-shuttle-columbia-disaster-200302
   date: '2003-02-01'
   title: 美国"哥伦比亚"号航天飞机返回重返大气层时解体失事，7名宇航员全部遇难
@@ -3646,7 +3649,7 @@
     - 新华网
   image:
     url: /images/events/2003/iraq_war_breaks_out_200303.jpg
-    caption: 美英联军空袭巴格达，伊拉克战争全面爆发
+    caption: 美英联军空袭巴格达爆发伊拉克战争，推翻萨达姆政权——重大国际历史时刻
 - id: w-georgia-rose-revolution-200311
   date: '2003-11-23'
   title: 格鲁吉亚爆发"玫瑰革命"，谢瓦尔德纳泽辞职
@@ -3712,7 +3715,7 @@
     - 新华网
   image:
     url: /images/events/2002/euro_cash_launch_200201.jpg
-    caption: 欧元纸币与硬币在欧洲12国正式投入流通
+    caption: 欧元纸币和硬币正式在欧洲12国投入流通——重大国际历史时刻
 - id: w-world-cup-korea-japan-200205
   date: '2002-05-31'
   title: 第17届世界杯足球赛在韩国和日本开幕，巴西队第五次夺冠
@@ -3807,7 +3810,7 @@
     - 维基百科
   image:
     url: /images/events/2001/wikipedia_launched_200101.jpg
-    caption: 维基百科（Wikipedia）在互联网正式上线创办
+    caption: 吉米·威尔士与拉里·桑格在网络上正式创办维基百科（Wikipedia）——重大国际历史时刻
 - id: w-george-w-bush-inauguration-200101
   date: '2001-01-20'
   title: 乔治·W·布什宣誓就任美国第43任总统
@@ -3842,7 +3845,7 @@
     - 新华网
   image:
     url: /images/events/2001/911_attacks_200109.jpg
-    caption: 恐怖分子劫持客机撞击纽约世贸中心与五角大楼（九一一事件）
+    caption: 恐怖分子劫持客机撞击纽约世贸中心与五角大楼（九一一事件），造成近3000人遇难——重大国际历史时刻
 - id: w-afghanistan-war-begins-200110
   date: '2001-10-07'
   title: 美英军队发动"持久自由行动"空袭塔利班，阿富汗战争全面爆发
@@ -4012,6 +4015,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1999/kosovo_war_199903.jpg
+    caption: 北约绕过联合国安理会发动"科索沃战争"，对南联盟展开大规模空袭——重大国际历史时刻
 - id: w-yeltsin-resign-199912
   date: '1999-12-31'
   title: 俄罗斯总统叶利钦辞职，普京出任代总统开启新纪元
@@ -4026,6 +4032,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1999/yeltsin_resign_199912.jpg
+    caption: 俄罗斯总统叶利钦辞职，普京出任代总统开启新纪元——重大国际历史时刻
 - id: w-euro-launch-199901
   date: '1999-01-01'
   title: 欧元作为记账货币正式启用，欧洲一体化迈入新阶段
@@ -4109,6 +4118,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1990/germany_reunification_199010.jpg
+    caption: 1990年10月两德正式统一
 - id: w-gulf-crisis-199008
   date: '1990-08-02'
   title: 伊拉克入侵科威特，海湾危机爆发
@@ -4123,6 +4135,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1990/gulf_crisis_199008.jpg
+    caption: 伊拉克入侵科威特，海湾危机爆发——重大国际历史时刻
 - id: w-lithuania-independence-199003
   date: '1990-03-11'
   title: 立陶宛宣布独立，拉开苏联解体序幕
@@ -4178,6 +4193,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1991/ussr_dissolution_199112.jpg
+    caption: 1991年12月苏联正式解体，15个加盟共和国独立
 - id: w-gulf-war-storm-199101
   date: '1991-01-17'
   title: 海湾战争"沙漠风暴"行动爆发，多国部队空袭伊拉克
@@ -4192,6 +4210,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1991/gulf_war_storm_199101.jpg
+    caption: 海湾战争“沙漠风暴”行动爆发
 - id: w-august-coup-199108
   date: '1991-08-19'
   title: 苏联发生"八一九"政变，随即失败加速苏联解体
@@ -4318,6 +4339,9 @@
   sources:
     - 维基百科
     - 欧盟委员会
+  image:
+    url: /images/events/1993/eu_founded_199311.jpg
+    caption: 《马斯特里赫特条约》生效，欧洲联盟正式成立
 - id: w-european-single-market-199301
   date: '1993-01-01'
   title: 欧洲统一大市场正式启动
@@ -4399,6 +4423,9 @@
   sources:
     - 维基百科
     - 联合国
+  image:
+    url: /images/events/1994/rwanda_genocide_199404.jpg
+    caption: 卢旺达爆发种族大屠杀，约80万人惨遭杀害——重大国际历史时刻
 - id: w-mandela-elected-199404
   date: '1994-04-27'
   title: 南非举行首次多种族大选，曼德拉当选总统
@@ -4414,6 +4441,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1994/mandela_elected_199404.jpg
+    caption: 纳尔逊·曼德拉当选南非首位黑人总统
 - id: w-nafta-effective-199401
   date: '1994-01-01'
   title: 《北美自由贸易协定》正式生效
@@ -4470,6 +4500,9 @@
   sources:
     - 世界贸易组织
     - 维基百科
+  image:
+    url: /images/events/1995/wto_founded_199501.jpg
+    caption: 世界贸易组织（WTO）在日内瓦正式成立
 - id: w-srebrenica-genocide-199507
   date: '1995-07-11'
   title: 斯雷布雷尼察大屠杀，逾8000名穆斯林男性遇害
@@ -4635,6 +4668,9 @@
   sources:
     - 维基百科
     - 国际货币基金组织
+  image:
+    url: /images/events/1997/asian_financial_crisis_199707.jpg
+    caption: 泰国放弃固定汇率引发亚洲金融危机——重大国际历史时刻
 - id: w-pathfinder-mars-199707
   date: '1997-07-04'
   title: 美国"火星探路者"号成功着陆火星
