@@ -3192,5 +3192,55 @@
   tags: [环境, 气候, 温室气体]
   sources: [联合国, 维基百科]
 
+- id: w-india-nuclear-test-199805
+  date: "1998-05-11"
+  title: 印度接连进行地下核试验，引发南亚核竞赛
+  category: 政治
+  importance: 4
+  summary: 印度在一周内进行5次地下核试验，巴基斯坦随后也进行核试验进行回应，南亚次大陆陷入核军备竞赛，招致国际社会普遍谴责与制裁。
+  confidence: 确定
+  tags: [政治, 核试验, 南亚]
+  sources: [维基百科, 国际原子能机构]
+
+- id: w-soeharto-resign-199805
+  date: "1998-05-21"
+  title: 印尼总统苏哈托下台，32年威权统治终结
+  category: 政治
+  importance: 4
+  summary: 受亚洲金融危机冲击与大规模社会动荡压力，执政32年的印尼总统苏哈托宣布辞职，其"新秩序"威权政体随之瓦解，印尼开启民主转型。
+  confidence: 确定
+  tags: [政治, 印尼, 民主转型]
+  sources: [维基百科, 新华网]
+
+- id: w-ecb-founded-199806
+  date: "1998-06-01"
+  title: 欧洲中央银行正式成立
+  category: 经济
+  importance: 4
+  summary: 欧洲中央银行（ECB）在德国法兰克福正式成立，负责欧元区货币政策，为1999年欧元启动和欧洲经济货币联盟运行奠定制度基础。
+  confidence: 确定
+  tags: [经济, 欧盟, 欧元]
+  sources: [欧洲中央银行, 维基百科]
+
+- id: w-russia-financial-crisis-199808
+  date: "1998-08-17"
+  title: 俄罗斯爆发金融危机，卢布大幅贬值
+  category: 经济
+  importance: 4
+  summary: 俄罗斯政府宣布卢布贬值并暂停偿还外债，触发俄罗斯金融危机，股市汇市暴跌、银行体系崩溃，政府更迭，令俄罗斯经济陷入严重衰退。
+  confidence: 确定
+  tags: [经济, 金融, 俄罗斯]
+  sources: [维基百科, 国际货币基金组织]
+
+- id: w-google-founded-199809
+  date: "1998-09-04"
+  title: 谷歌（Google）公司正式注册成立
+  category: 文化
+  importance: 3
+  summary: 拉里·佩奇与谢尔盖·布林在美国加州正式注册成立谷歌公司，推出划时代的搜索引擎，此后成长为全球最大的互联网科技公司之一。
+  confidence: 确定
+  tags: [科技, 互联网]
+  sources: [维基百科, Google]
+
 
 

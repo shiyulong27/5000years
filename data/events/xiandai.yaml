@@ -3166,4 +3166,44 @@
   tags: [金融, 经济, 亚洲金融危机]
   sources: [新华网, 中国人民银行]
 
+- id: cn-zhu-rongji-pm-199803
+  date: "1998-03-17"
+  title: 朱镕基出任国务院总理，推行政府机构改革
+  category: 政治
+  importance: 4
+  summary: 九届全国人大一次会议选举朱镕基为国务院总理，新一届政府实施大规模机构改革，国务院组成部门大幅精简，被称为"精兵简政"。
+  confidence: 确定
+  tags: [政治, 机构改革]
+  sources: [新华网, 全国人大]
+
+- id: cn-1998-flood-199806
+  date: "1998-06-12"
+  title: 长江流域发生特大洪水，全国军民奋力抗洪抢险
+  category: 灾害
+  importance: 5
+  summary: 长江、嫩江、松花江等流域发生全流域特大洪水，九江长江大堤一度决口，数百万军民奋战抗洪一线，最终取得抗洪抢险全面胜利。
+  confidence: 确定
+  tags: [灾害, 洪水, 抗洪, 历史转折]
+  sources: [新华网, 民政部]
+
+- id: cn-rmb-stability-199807
+  date: "1998-07-01"
+  title: 中国政府重申人民币不贬值，并向国际社会作出承诺
+  category: 经济
+  importance: 4
+  summary: 面对亚洲金融危机持续蔓延，中国政府再次郑重承诺人民币不贬值，为稳定区域经济与金融秩序发挥关键作用，赢得国际社会广泛赞誉。
+  confidence: 确定
+  tags: [金融, 经济, 亚洲金融危机]
+  sources: [新华网, 中国人民银行]
+
+- id: cn-medical-insurance-reform-199812
+  date: "1998-12-01"
+  title: 国务院颁布城镇职工基本医疗保险制度改革决定
+  category: 经济
+  importance: 3
+  summary: 国务院发布《关于建立城镇职工基本医疗保险制度的决定》，在全国范围启动城镇职工基本医疗保险制度改革，构建覆盖城镇职工的医疗保障体系。
+  confidence: 确定
+  tags: [民生, 改革, 医疗]
+  sources: [新华网, 劳动保障部]
+
 
