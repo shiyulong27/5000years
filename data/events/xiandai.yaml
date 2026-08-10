@@ -2956,4 +2956,44 @@
   tags: [外交, 韩国]
   sources: [外交部, 新华网]
 
+- id: cn-wanggu-talks-199304
+  date: "1993-04-27"
+  title: 海峡两岸"汪辜会谈"在新加坡举行，开启两岸高层接触
+  category: 政治
+  importance: 4
+  summary: 大陆海峡两岸关系协会会长汪道涵与台湾海峡交流基金会董事长辜振甫在新加坡举行会谈，签署四项协议，实现两岸44年来首次高层正式会谈。
+  confidence: 确定
+  tags: [两岸, 外交]
+  sources: [新华网, 国台办]
+
+- id: cn-jiang-clinton-summit-199311
+  date: "1993-11-19"
+  title: 江泽民与克林顿在西雅图举行首次正式会晤
+  category: 政治
+  importance: 4
+  summary: 国家主席江泽民与美国总统克林顿借亚太经合组织峰会之机在西雅图举行首次正式会晤，就中美关系等重大议题交换意见，推动两国关系走出低谷。
+  confidence: 确定
+  tags: [外交, 中美]
+  sources: [外交部, 新华网]
+
+- id: cn-14th-third-plenum-199311
+  date: "1993-11-14"
+  title: 中共十四届三中全会通过《关于建立社会主义市场经济体制若干问题的决定》
+  category: 政治
+  importance: 4
+  summary: 中共十四届三中全会审议通过关于建立社会主义市场经济体制若干问题的决定，勾画社会主义市场经济体制的基本框架，推动改革全面深化。
+  confidence: 确定
+  tags: [改革, 理论]
+  sources: [新华网, 人民日报]
+
+- id: cn-deng-selected-works-199311
+  date: "1993-11-02"
+  title: 《邓小平文选》第三卷正式出版发行
+  category: 文化
+  importance: 3
+  summary: 《邓小平文选》第三卷在全国正式出版发行，汇集邓小平改革开放新时期的代表性论著，成为指导中国特色社会主义实践的重要文献。
+  confidence: 确定
+  tags: [文化, 理论]
+  sources: [新华网, 人民出版社]
+
 

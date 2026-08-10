@@ -2932,5 +2932,65 @@
   tags: [经济, 贸易, 区域合作]
   sources: [维基百科, 世界贸易组织]
 
+- id: w-eu-founded-199311
+  date: "1993-11-01"
+  title: 《马斯特里赫特条约》正式生效，欧盟宣告成立
+  category: 政治
+  importance: 5
+  summary: 《马斯特里赫特条约》于1993年11月1日正式生效，欧洲共同体正式更名为欧洲联盟，欧盟宣告成立，欧洲一体化迈入政治联盟新阶段。
+  confidence: 确定
+  tags: [政治, 欧洲一体化, 欧盟, 历史转折]
+  sources: [维基百科, 欧盟委员会]
+
+- id: w-european-single-market-199301
+  date: "1993-01-01"
+  title: 欧洲统一大市场正式启动
+  category: 经济
+  importance: 4
+  summary: 欧共体12国之间实现商品、人员、服务和资本四大自由流通的欧洲统一大市场正式启动，为区域内经济一体化奠定基础。
+  confidence: 确定
+  tags: [经济, 欧洲一体化]
+  sources: [维基百科, 欧盟委员会]
+
+- id: w-moscow-october-crisis-199310
+  date: "1993-10-04"
+  title: 俄罗斯爆发"十月事件"，叶利钦下令炮轰白宫
+  category: 政治
+  importance: 4
+  summary: 俄罗斯总统叶利钦与最高苏维埃就改革路线激烈对峙，叶利钦下令坦克炮轰国会大厦（白宫），清除议会反对派，确立总统制权威。
+  confidence: 确定
+  tags: [政治, 俄罗斯]
+  sources: [维基百科, 新华网]
+
+- id: w-north-korea-npt-199303
+  date: "1993-03-12"
+  title: 朝鲜宣布退出《不扩散核武器条约》
+  category: 政治
+  importance: 4
+  summary: 朝鲜因国际原子能机构核查问题宣布退出《不扩散核武器条约》，引发朝鲜半岛核危机，后经美朝谈判于同年6月宣布"暂缓"退出。
+  confidence: 确定
+  tags: [政治, 朝鲜半岛, 核问题]
+  sources: [维基百科, 新华网]
+
+- id: w-clinton-inauguration-199301
+  date: "1993-01-20"
+  title: 克林顿宣誓就任美国第42任总统
+  category: 政治
+  importance: 3
+  summary: 比尔·克林顿在白宫宣誓就任美国第42任总统，民主党时隔12年重新执政，开始推行其"第三条道路"改革议程。
+  confidence: 确定
+  tags: [政治, 美国]
+  sources: [维基百科, 新华网]
+
+- id: w-czechoslovakia-split-199301
+  date: "1993-01-01"
+  title: 捷克斯洛伐克和平分裂为捷克与斯洛伐克两个独立国家
+  category: 政治
+  importance: 3
+  summary: 捷克斯洛伐克于1993年1月1日正式和平分裂，捷克共和国与斯洛伐克共和国分别成为独立的主权国家，被称为"天鹅绒分离"。
+  confidence: 确定
+  tags: [政治, 东欧]
+  sources: [维基百科, 新华网]
+
 
 
