@@ -2344,3 +2344,73 @@
   confidence: 确定
   tags: [政治, 日本, 外交]
   sources: [维基百科, 新华网]
+
+- id: w-kyoto-protocol-effective-200502
+  date: "2005-02-16"
+  title: 减少温室气体排放的《京都议定书》正式生效
+  category: 灾害
+  importance: 5
+  summary: 全球首个具有法律约束力的温室气体减排国际协议《京都议定书》正式生效，标志着全球应对气候变化迈入新阶段。
+  confidence: 确定
+  tags: [环境, 气候, 全球治理, 历史转折]
+  sources: [联合国, 维基百科]
+
+- id: w-pope-john-paul-ii-death-200504
+  date: "2005-04-02"
+  title: 罗马教宗若望保禄二世逝世，本笃十六世继任
+  category: 文化
+  importance: 5
+  summary: 执掌梵蒂冈26年的教宗若望保禄二世逝世，全球数十亿信徒悼念，随后德籍枢机天主教皇本笃十六世接任第265任教宗。
+  confidence: 确定
+  tags: [宗教, 欧洲, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-london-bombings-200507
+  date: "2005-07-07"
+  title: 英国伦敦公交与地铁连环爆炸案爆发（七七爆炸案），造成52人死亡
+  category: 战争
+  importance: 5
+  summary: 四名恐怖分子在伦敦地铁与双层巴士发动自杀式爆炸袭击，造成52名平民遇难、700余人受伤，震撼欧洲安全格局。
+  confidence: 确定
+  tags: [战争, 反恐, 英国, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-hurricane-katrina-200508
+  date: "2005-08-29"
+  title: 四级飓风"卡特里娜"重创美国新奥尔良，造成逾1800人遇难
+  category: 灾害
+  importance: 5
+  summary: 飓风卡特里娜登陆墨西哥湾沿岸，致新奥尔良堤防决堤、全市80%遭淹没，造成1800余人死亡和上千亿美元惨重损失。
+  confidence: 确定
+  tags: [灾害, 飓风, 美国, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-kashmir-earthquake-200510
+  date: "2005-10-08"
+  title: 南亚克什米尔地区发生7.6级大地震，造成逾8.6万人遇难
+  category: 灾害
+  importance: 5
+  summary: 强烈地震袭击巴控克什米尔及附近地区，导致8.6万余人遇难、数百万人无家可归，为南亚数十年来最惨烈地质灾害。
+  confidence: 确定
+  tags: [灾害, 地震, 南亚, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-merkel-chancellor-200511
+  date: "2005-11-22"
+  title: 安格拉·默克尔宣誓就任德国联邦总理，成为德国首位女性总理
+  category: 政治
+  importance: 5
+  summary: 默克尔在德国联邦议院选举中当选，成为德国历史上首位女性总理兼东德出身的总理，开启长达16年的"默克尔时代"。
+  confidence: 确定
+  tags: [政治, 德国, 欧洲, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-eu-constitution-rejected-200505
+  date: "2005-05-29"
+  title: 法国与荷兰国民公投否决《欧洲宪法条约》，欧洲一体化进程受挫
+  category: 政治
+  importance: 4
+  summary: 法国和荷兰选民先后在公投中高票否决《欧洲宪法条约》，致使欧宪进程陷入停滞，直接促成了后续《里斯本条约》的签署。
+  confidence: 确定
+  tags: [政治, 欧洲, 一体化]
+  sources: [维基百科, 新华网]

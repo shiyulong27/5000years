@@ -2305,3 +2305,83 @@
   confidence: 确定
   tags: [灾害, 台风]
   sources: [新华网, 气象局]
+
+- id: cn-anti-secession-law-200503
+  date: "2005-03-14"
+  title: 十届全国人大三次会议高票通过《反分裂国家法》
+  category: 政治
+  importance: 5
+  summary: 《反分裂国家法》经高票通过后颁布实施，首次将国家反对和遏制"台独"分裂、促进祖国和平统一的政策法律化。
+  confidence: 确定
+  tags: [政治, 两岸, 法治, 历史转折]
+  sources: [新华网, 人大网]
+
+- id: cn-lien-chan-visit-200504
+  date: "2005-04-29"
+  title: 中共中央总书记胡锦涛与中国国民党主席连战举行历史性会谈（连胡会）
+  category: 政治
+  importance: 5
+  summary: 胡锦涛与连战在北京举行60年来国共两党最高领导人首次正式会谈，发布"两岸和平发展共同愿景"，开创两岸关系和平发展新局面。
+  confidence: 确定
+  tags: [政治, 两岸, 外交, 历史转折]
+  sources: [新华网, 国台办]
+
+- id: cn-renminbi-reform-200507
+  date: "2005-07-21"
+  title: 中国人民银行宣布实施人民币汇率形成机制改革
+  category: 经济
+  importance: 5
+  summary: 央行宣布放弃单一盯住美元，实行以市场供求为基础、参考一篮子货币进行调节、有管理的浮动汇率制度，人民币汇率改革迈出关键一步。
+  confidence: 确定
+  tags: [经济, 金融, 汇率, 历史转折]
+  sources: [中国人民银行, 新华网]
+
+- id: cn-victory-60th-200509
+  date: "2005-09-03"
+  title: 中国人民抗日战争暨世界反法西斯战争胜利60周年纪念大会举行
+  category: 政治
+  importance: 5
+  summary: 纪念大会在人民大会堂隆重举行，胡锦涛发表重要讲话，全面阐述抗日战争伟大胜利的深刻历史意义和伟大抗战精神。
+  confidence: 确定
+  tags: [政治, 历史, 历史转折]
+  sources: [新华网]
+
+- id: cn-mount-everest-height-200510
+  date: "2005-10-09"
+  title: 国务院新闻办正式公布珠穆朗玛峰峰顶岩石面海拔高程为8844.43米
+  category: 文化
+  importance: 5
+  summary: 国家测绘局经精确测定正式公布珠峰新高程8844.43米，精度达到±0.21米，为当时全球最精确的珠峰峰顶岩面高程数据。
+  confidence: 确定
+  tags: [地理, 测绘, 科技, 历史转折]
+  sources: [国家测绘局, 新华网]
+
+- id: cn-shenzhou6-space-mission-200510
+  date: "2005-10-12"
+  title: 神舟六号载人飞船成功发射，航天员费俊龙、聂海胜顺利展开多人多天太空飞行
+  category: 文化
+  importance: 5
+  summary: 神舟六号载人飞船在酒泉卫星发射中心成功升空，两名航天员在轨飞行约115小时53分，圆满完成中国首次多人多天太空飞行任务。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [国家航天局, 新华网]
+
+- id: cn-songhua-river-pollution-200511
+  date: "2005-11-13"
+  title: 吉林石化双苯厂爆炸引发松花江重大水污染事件
+  category: 灾害
+  importance: 4
+  summary: 厂区爆炸导致约100吨苯类污染物流入松花江，造成哈尔滨等沿江城市大面积停水，推动国家环保体制改革与跨界水污染治理。
+  confidence: 确定
+  tags: [灾害, 环境, 水污染]
+  sources: [环保部, 新华网]
+
+- id: cn-agricultural-tax-free-decided-200512
+  date: "2005-12-29"
+  title: 十届全国人大常委会表决通过废止农业税条例，明确2006年起全面取消农业税
+  category: 经济
+  importance: 5
+  summary: 十届全国人大常委会第十九次会议表决决定自2006年1月1日起废止《农业税条例》，为终结2600年农业税奠定法律依据。
+  confidence: 确定
+  tags: [民生, 农业, 改革, 历史转折]
+  sources: [新华网, 人大网]
