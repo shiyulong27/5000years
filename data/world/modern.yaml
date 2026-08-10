@@ -5952,3 +5952,146 @@
   sources:
     - 联合国
     - 维基百科
+- id: w-cambodia-coup-197003
+  date: '1970-03-18'
+  title: 柬埔寨国民议会罢免西哈努克，朗诺掌权
+  category: 政治
+  importance: 4
+  summary: 柬埔寨国民议会在西哈努克出访期间通过不信任动议罢免其国家元首职务，朗诺随后出任国家元首代理并组建新政府。柬埔寨此后卷入越南战争，印度支那战火进一步扩大。
+  confidence: 确定
+  tags:
+    - 政治
+    - 外交
+  sources:
+    - 联合国
+    - 维基百科
+- id: w-apollo13-197004
+  date: '1970-04-13'
+  title: 阿波罗13号事故与成功营救
+  category: 文化
+  importance: 4
+  summary: 阿波罗13号飞船飞往月球途中服务舱氧气罐爆炸，三名宇航员借助登月舱作为”救生艇”绕月返航，于4月17日安全溅落太平洋，被称为航天史上”成功的失败”。
+  confidence: 确定
+  tags:
+    - 航天
+    - 科技
+  sources:
+    - 美国国家航空航天局
+    - 维基百科
+- id: w-earth-day-197004
+  date: '1970-04-22'
+  title: 首个”世界地球日”举行
+  category: 文化
+  importance: 3
+  summary: 美国约2000万人参加首个”地球日”活动，呼吁关注环境污染与生态破坏，被视为现代环境保护运动的起点。
+  confidence: 确定
+  tags:
+    - 环保
+    - 民生
+  sources:
+    - 联合国环境规划署
+    - 维基百科
+- id: w-us-cambodia-kent-197004
+  date: '1970-04-30'
+  title: 美国入侵柬埔寨与肯特州立大学枪击事件
+  category: 战争
+  importance: 4
+  summary: 美国总统尼克松宣布美军进入柬埔寨清剿越共基地，引发全美反战浪潮；5月4日国民警卫队在肯特州立大学向抗议学生开枪，造成4名学生死亡，激起更大规模反战抗议。
+  confidence: 确定
+  tags:
+    - 战争
+    - 军事
+  sources:
+    - 美国国会图书馆
+    - 维基百科
+- id: w-brazil-worldcup-197006
+  date: '1970-06-21'
+  title: 巴西第3次捧起世界杯
+  category: 文化
+  importance: 3
+  summary: 巴西队在墨西哥城以4比1击败意大利队，第三次夺得世界杯冠军，从而永久保留雷米特杯，贝利等球星将”桑巴足球”推向巅峰。
+  confidence: 确定
+  tags:
+    - 体育
+  sources:
+    - 国际足联
+    - 维基百科
+- id: w-allende-chile-197009
+  date: '1970-09-04'
+  title: 阿连德赢得智利总统选举
+  category: 政治
+  importance: 3
+  summary: 智利社会党人萨尔瓦多·阿连德在9月4日大选中取得相对多数，10月24日经国会确认后于11月就职，成为拉美首位通过民选上台的马克思主义者总统，推行铜矿国有化等社会主义改革。
+  confidence: 确定
+  tags:
+    - 政治
+    - 改革
+  sources:
+    - 智利政府
+    - 维基百科
+- id: w-black-september-hijack-197009
+  date: '1970-09-06'
+  title: 巴勒斯坦”黑九月”连环劫机事件
+  category: 战争
+  importance: 3
+  summary: 巴勒斯坦激进组织同时在约旦上空劫持多架国际客机，其中三架被押至约旦道森机场后炸毁，引发”黑九月”危机，最终迫使约旦以武力清剿境内巴勒斯坦武装力量。
+  confidence: 确定
+  tags:
+    - 战争
+    - 外交
+  sources:
+    - 联合国
+    - 维基百科
+- id: w-nasser-sadat-197009
+  date: '1970-09-28'
+  title: 纳赛尔病逝，萨达特继任埃及总统
+  category: 政治
+  importance: 3
+  summary: 埃及总统纳赛尔因心脏病突发逝世，副总统安瓦尔·萨达特接任并于10月15日正式就任总统。埃及外交政策此后逐步转向，为1973年十月战争与戴维营进程埋下伏笔。
+  confidence: 确定
+  tags:
+    - 政治
+    - 外交
+  sources:
+    - 联合国
+    - 维基百科
+- id: w-bhola-cyclone-197011
+  date: '1970-11-12'
+  title: 博拉气旋重创东巴基斯坦
+  category: 灾害
+  importance: 5
+  summary: 博拉气旋挟带风暴潮袭击东巴基斯坦与印度西孟加拉邦，估计造成30万至50万人罹难，是历史上最致命的热带气旋之一。灾后救援不力激化当地矛盾，直接推动孟加拉国独立战争爆发。
+  confidence: 确定
+  tags:
+    - 灾害
+    - 气候
+    - 历史转折
+  sources:
+    - 世界气象组织
+    - 联合国
+- id: w-lunokhod1-197011
+  date: '1970-11-17'
+  title: 苏联月球车一号登陆月球
+  category: 文化
+  importance: 3
+  summary: 苏联”月球17号”探测器将首辆无人月球车”月球车一号”送至月面，它在雨海行驶逾10公里并传回大量科学数据，成为人类首辆地外巡视车。
+  confidence: 确定
+  tags:
+    - 航天
+    - 科技
+  sources:
+    - 俄罗斯航天局
+    - 维基百科
+- id: w-gdansk-december-197012
+  date: '1970-12-14'
+  title: 波兰格但斯克十二月事件
+  category: 政治
+  importance: 3
+  summary: 波兰政府宣布大幅上调食品价格，引发格但斯克等地工人大规模罢工与骚乱，军警镇压造成数十人死亡，盖莱克随后取代哥穆尔卡出任波兰统一工人党第一书记。
+  confidence: 确定
+  tags:
+    - 政治
+    - 民生
+  sources:
+    - 波兰国家记忆研究院
+    - 维基百科

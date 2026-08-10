@@ -1,8 +1,11 @@
 import { describe, it, expect } from 'vitest'
+import fs from 'node:fs'
+import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { loadAll, locOf } from '../src/lib/load.js'
 
 const FIXTURES = fileURLToPath(new URL('./fixtures', import.meta.url))
+const ROOT = fileURLToPath(new URL('..', import.meta.url))
 
 describe('loadAll', () => {
   const data = loadAll(FIXTURES)
@@ -67,5 +70,75 @@ describe('locOf', () => {
     expect(Object.keys(qin)).not.toContain('loc')
     // 序列化后不应出现位置信息
     expect(JSON.stringify(qin)).not.toContain('dynasties.yaml')
+  })
+})
+
+describe('1989 年重大事件补全', () => {
+  const data = loadAll(path.join(ROOT, 'data'))
+  const chinaEvents = data.events.filter((event) => String(event.date).startsWith('1989'))
+  const worldEvents = data.worldEvents.filter((event) => String(event.date).startsWith('1989'))
+  const requiredFields = [
+    'id', 'date', 'title', 'category', 'importance',
+    'summary', 'confidence', 'tags', 'sources',
+  ]
+
+  it('包含已确认的 8 条中国事件和 10 条世界事件，且字段完整', () => {
+    expect(chinaEvents).toHaveLength(8)
+    expect(worldEvents).toHaveLength(10)
+
+    for (const event of [...chinaEvents, ...worldEvents]) {
+      for (const field of requiredFields) {
+        expect(event, `${event.id ?? event.title ?? '未知事件'} 缺少 ${field}`).toHaveProperty(field)
+      }
+      expect(event.importance).toBeGreaterThanOrEqual(1)
+      expect(event.importance).toBeLessThanOrEqual(5)
+      expect(event.confidence).toBe('确定')
+      expect(event.tags.length).toBeGreaterThan(0)
+      expect(event.sources.length).toBeGreaterThan(1)
+    }
+  })
+
+  it('存在 1989 年专页并注册两个主时间线入口', () => {
+    expect(fs.existsSync(path.join(ROOT, 'src/pages/1989.astro'))).toBe(true)
+
+    const timeline = fs.readFileSync(path.join(ROOT, 'src/components/Timeline.astro'), 'utf8')
+    const axisCell = fs.readFileSync(path.join(ROOT, 'src/components/AxisCell.astro'), 'utf8')
+    expect(timeline).toMatch(/summaryYears\s*=\s*\[[^\]]*1989/)
+    expect(axisCell).toMatch(/hasSummary\s*=\s*\[[^\]]*1989/)
+  })
+})
+
+describe('1970 年重大事件补全', () => {
+  const data = loadAll(path.join(ROOT, 'data'))
+  const chinaEvents = data.events.filter((event) => String(event.date).startsWith('1970'))
+  const worldEvents = data.worldEvents.filter((event) => String(event.date).startsWith('1970'))
+  const requiredFields = [
+    'id', 'date', 'title', 'category', 'importance',
+    'summary', 'confidence', 'tags', 'sources',
+  ]
+
+  it('包含已确认的 7 条中国事件和 11 条世界事件，且字段完整', () => {
+    expect(chinaEvents).toHaveLength(7)
+    expect(worldEvents).toHaveLength(11)
+
+    for (const event of [...chinaEvents, ...worldEvents]) {
+      for (const field of requiredFields) {
+        expect(event, `${event.id ?? event.title ?? '未知事件'} 缺少 ${field}`).toHaveProperty(field)
+      }
+      expect(event.importance).toBeGreaterThanOrEqual(1)
+      expect(event.importance).toBeLessThanOrEqual(5)
+      expect(event.confidence).toBe('确定')
+      expect(event.tags.length).toBeGreaterThan(0)
+      expect(event.sources.length).toBeGreaterThan(1)
+    }
+  })
+
+  it('存在 1970 年专页并注册两个主时间线入口', () => {
+    expect(fs.existsSync(path.join(ROOT, 'src/pages/1970.astro'))).toBe(true)
+
+    const timeline = fs.readFileSync(path.join(ROOT, 'src/components/Timeline.astro'), 'utf8')
+    const axisCell = fs.readFileSync(path.join(ROOT, 'src/components/AxisCell.astro'), 'utf8')
+    expect(timeline).toMatch(/summaryYears\s*=\s*\[[^\]]*1970/)
+    expect(axisCell).toMatch(/hasSummary\s*=\s*\[[^\]]*1970/)
   })
 })

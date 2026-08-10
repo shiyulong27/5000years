@@ -5680,3 +5680,97 @@
   sources:
     - 中国青少年发展基金会
     - 新华网
+- id: cn-dongfanghong1-197004
+  date: '1970-04-24'
+  title: 中国第一颗人造卫星"东方红一号"发射成功
+  category: 文化
+  importance: 5
+  summary: 中国用自行研制的"长征一号"运载火箭在酒泉基地成功将"东方红一号"送入太空，成为世界上第五个独立研制并发射人造卫星的国家。卫星重173公斤，超过苏美法日四国首颗卫星重量总和，并向全球播送《东方红》乐曲。
+  confidence: 确定
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 中国航天科技集团
+- id: cn-may20-statement-197005
+  date: '1970-05-20'
+  title: 毛泽东发表"五·二〇"声明
+  category: 政治
+  importance: 4
+  summary: 毛泽东发表《全世界人民团结起来，打败美国侵略者及其一切走狗！》声明，谴责美国入侵柬埔寨并扩大印度支那战争，支持柬埔寨、老挝、越南三国人民抗美救国斗争。
+  confidence: 确定
+  tags:
+    - 外交
+    - 政治
+  sources:
+    - 新华网
+    - 人民日报
+- id: cn-chengkun-railway-197007
+  date: '1970-07-01'
+  title: 成昆铁路全线建成通车
+  category: 经济
+  importance: 4
+  summary: 成昆铁路（成都至昆明）全线通车，全长近1100公里，穿越大小凉山与横断山脉，桥隧总长占线路总长逾四成，工程之艰巨在世界铁路建设史上极为罕见，被誉为"人类征服自然的三大奇迹"之一。
+  confidence: 确定
+  tags:
+    - 基建
+    - 经济
+    - 民生
+  sources:
+    - 新华网
+    - 中国铁路
+- id: cn-9th-2nd-plenum-197008
+  date: '1970-08-23'
+  title: 中共九届二中全会在庐山举行
+  category: 政治
+  importance: 4
+  summary: 中共九届二中全会在庐山召开，会议期间林彪集团就设国家主席等问题发动突然袭击，毛泽东发表《我的一点意见》批判"天才论"，并决定对陈伯达立案审查，林彪集团地位受到严重削弱。
+  confidence: 确定
+  tags:
+    - 政治
+    - 党建
+  sources:
+    - 新华网
+    - 中国共产党新闻网
+- id: cn-snowe-tiananmen-197010
+  date: '1970-10-01'
+  title: 斯诺应邀登上天安门城楼
+  category: 政治
+  importance: 3
+  summary: 国庆21周年庆典上，美国记者埃德加·斯诺应毛泽东邀请登上天安门城楼，被外界视为中国向美国发出改善关系的明确信号，为随后展开的乒乓外交及1972年尼克松访华作了铺垫。
+  confidence: 确定
+  tags:
+    - 外交
+    - 政治
+  sources:
+    - 人民日报
+    - 维基百科
+- id: cn-tazara-railway-197010
+  date: '1970-10-26'
+  title: 中国援建坦赞铁路动工
+  category: 经济
+  importance: 3
+  summary: 中国援建的坦桑尼亚—赞比亚铁路正式动工，全长约1860公里，是中国最大的援外工程之一，为打破赞比亚对南部运输通道的依赖作出重要贡献。
+  confidence: 确定
+  tags:
+    - 外交
+    - 基建
+  sources:
+    - 新华网
+    - 维基百科
+- id: cn-nuclear-submarine-197012
+  date: '1970-12-26'
+  title: 中国第一艘核潜艇"长征一号"下水
+  category: 文化
+  importance: 5
+  summary: 中国自行研制的第一艘核动力潜艇在辽宁葫芦岛造船厂下水，使中国成为世界上第五个拥有核潜艇的国家。核潜艇研制体现了自力更生精神，为海基核力量建设奠定基础。
+  confidence: 确定
+  tags:
+    - 军事
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国防科工委
