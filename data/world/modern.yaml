@@ -3592,5 +3592,75 @@
   tags: [军事, 战争]
   sources: [维基百科, 新华网]
 
+- id: w-macintosh-launch-198401
+  date: "1984-01-24"
+  title: 苹果Macintosh电脑发布，开创图形界面个人电脑时代
+  category: 文化
+  importance: 5
+  summary: 苹果公司在股东大会上发布Macintosh个人电脑，以鼠标与图形用户界面取代命令行操作，奠定现代个人电脑交互范式，深刻改变计算普及进程。
+  confidence: 确定
+  tags: [科技, 互联网, 历史转折]
+  sources: [维基百科, 苹果公司]
+
+- id: w-andropov-death-chernenko-198402
+  date: "1984-02-13"
+  title: 苏联领导人安德罗波夫逝世，契尔年科继任
+  category: 政治
+  importance: 3
+  summary: 执政仅15个月的苏共总书记安德罗波夫病逝，73岁的契尔年科接任，苏联高层老人政治特征凸显，13个月后契尔年科亦病逝由戈尔巴乔夫接任。
+  confidence: 确定
+  tags: [政治, 改革]
+  sources: [维基百科, 新华网]
+
+- id: w-soviet-boycott-la-olympics-198405
+  date: "1984-05-08"
+  title: 苏联宣布抵制洛杉矶奥运会
+  category: 文化
+  importance: 3
+  summary: 苏联以安全无保障为由宣布抵制第23届洛杉矶奥运会，东欧多国与古巴等跟进，是对4年前西方抵制莫斯科奥运会的报复。
+  confidence: 确定
+  tags: [体育, 外交]
+  sources: [维基百科, 新华网]
+
+- id: w-la-olympics-198407
+  date: "1984-07-28"
+  title: 第23届洛杉矶奥运会举行
+  category: 文化
+  importance: 4
+  summary: 第23届夏季奥运会在洛杉矶开幕，由民间筹资承办并首次实现盈利，开创奥运会商业化运作模式，中国代表团时隔32年重返奥运赛场。
+  confidence: 确定
+  tags: [体育, 改革]
+  sources: [维基百科, 新华网]
+
+- id: w-brighton-bomb-198410
+  date: "1984-10-12"
+  title: IRA轰炸布莱顿大饭店，撒切尔遇刺未遂
+  category: 政治
+  importance: 3
+  summary: 爱尔兰共和军在保守党年会期间引爆布莱顿大饭店，撒切尔幸免于难，5人死亡，事件加剧英国对北爱共和派的强硬镇压立场。
+  confidence: 确定
+  tags: [政治, 战争]
+  sources: [维基百科, 新华网]
+
+- id: w-indira-gandhi-assassination-198410
+  date: "1984-10-31"
+  title: 印度总理英迪拉·甘地遇刺身亡
+  category: 政治
+  importance: 5
+  summary: 印度总理英迪拉·甘地遭锡克族卫兵刺杀身亡，引发针对锡克教徒的全国性报复暴乱，数千人丧生，其子拉吉夫·甘地接任总理。
+  confidence: 确定
+  tags: [政治, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-bhopal-disaster-198412
+  date: "1984-12-03"
+  title: 印度博帕尔农药厂毒气泄漏灾难
+  category: 灾害
+  importance: 5
+  summary: 美国联合碳化物公司印度博帕尔农药厂泄漏数十吨异氰酸甲酯剧毒气体，当即致死数千人，长期死亡逾2万人，是史上最严重的工业化学灾难。
+  confidence: 确定
+  tags: [灾害, 民生, 历史转折]
+  sources: [维基百科, 新华网]
+
 
 

@@ -3478,4 +3478,84 @@
   tags: [科技, 超算, 历史转折]
   sources: [新华网, 国防科技大学]
 
+- id: cn-deng-shenzhen-inspection-198401
+  date: "1984-01-24"
+  title: 邓小平视察深圳等经济特区并题词肯定
+  category: 政治
+  importance: 4
+  summary: 邓小平先后视察深圳、珠海、厦门经济特区，为深圳题词"深圳的发展和经验证明，我们建立经济特区的政策是正确的"，公开肯定特区建设方向。
+  confidence: 确定
+  tags: [改革, 政治]
+  sources: [新华网, 人民日报]
+
+- id: cn-reagan-china-visit-198404
+  date: "1984-04-26"
+  title: 美国总统里根访华
+  category: 政治
+  importance: 3
+  summary: 美国总统里根抵达北京对中国进行国事访问，中美两国领导人就双边关系与重大国际问题交换意见，是中美建交后首位在任美国总统访华。
+  confidence: 确定
+  tags: [外交, 政治]
+  sources: [新华网, 外交部]
+
+- id: cn-open-14-coastal-cities-198405
+  date: "1984-05-04"
+  title: 中共中央、国务院决定进一步开放十四个沿海港口城市
+  category: 经济
+  importance: 5
+  summary: 中共中央、国务院决定进一步开放天津、上海、大连、青岛、广州等14个沿海港口城市，与经济特区共同构成中国沿海开放前沿地带，对外开放格局大幅拓展。
+  confidence: 确定
+  tags: [改革, 经济, 历史转折]
+  sources: [新华网, 国务院]
+
+- id: cn-la-olympics-xuhaifeng-198407
+  date: "1984-07-29"
+  title: 中国重返奥运赛场，许海峰夺得中国奥运史上首金
+  category: 文化
+  importance: 5
+  summary: 中国体育代表团重返奥运赛场参加第23届洛杉矶奥运会，射击运动员许海峰在男子自选手枪慢射项目夺金，实现中国奥运史上金牌"零的突破"。
+  confidence: 确定
+  tags: [体育, 历史转折]
+  sources: [新华网, 国际奥委会]
+
+- id: cn-lenovo-founded-198411
+  date: "1984-11-09"
+  title: 柳传志等在中科院计算所创办联想公司前身
+  category: 文化
+  importance: 3
+  summary: 柳传志等11名中科院计算技术研究所职工凑集20万元创办"中国科学院计算技术研究所新技术发展公司"，是为联想集团前身，开启中国民营科技企业先河。
+  confidence: 确定
+  tags: [科技, 改革]
+  sources: [新华网, 联想集团]
+
+- id: cn-35th-national-day-parade-198410
+  date: "1984-10-01"
+  title: 首都举行建国35周年阅兵与群众游行
+  category: 政治
+  importance: 4
+  summary: 首都天安门广场举行盛大阅兵与群众游行庆祝建国35周年，中央军委主席邓小平检阅受阅部队，是改革开放后首次国庆大阅兵。
+  confidence: 确定
+  tags: [军事, 政治]
+  sources: [新华网, 人民日报]
+
+- id: cn-12th-3rd-plenum-reform-198410
+  date: "1984-10-20"
+  title: 中共十二届三中全会通过《关于经济体制改革的决定》
+  category: 政治
+  importance: 5
+  summary: 中共十二届三中全会通过《关于经济体制改革的决定》，阐明加快以城市为重点的整个经济体制改革，标志中国改革从农村推向城市、全面展开。
+  confidence: 确定
+  tags: [改革, 政治, 历史转折]
+  sources: [新华网, 人民日报]
+
+- id: cn-sino-british-joint-declaration-198412
+  date: "1984-12-19"
+  title: 中英《关于香港问题的联合声明》在北京正式签署
+  category: 政治
+  importance: 5
+  summary: 中英两国政府总理在北京正式签署《关于香港问题的联合声明》，确认中国于1997年7月1日恢复对香港行使主权并设立特别行政区，香港前途尘埃落定。
+  confidence: 确定
+  tags: [外交, 政治, 历史转折]
+  sources: [新华网, 外交部]
+
 
