@@ -2761,6 +2761,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/obama_inauguration_200901.jpg
+    caption: 巴拉克·奥巴马宣誓就任美国第44任总统，成为首位非裔美国总统——重大国际历史时刻
 - id: w-g20-london-summit-200904
   date: '2009-04-02'
   title: G20伦敦峰会达成共识，承诺注入1.1万亿美元应对全球金融危机
@@ -2776,6 +2779,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/g20_london_summit_200904.jpg
+    caption: G20伦敦峰会达成共识，承诺注入1.1万亿美元应对全球金融危机——重大国际历史时刻
 - id: w-north-korea-second-nuclear-test-200905
   date: '2009-05-25'
   title: 朝鲜进行第二次核试验，联合国安理会一致通过制裁决议
@@ -2791,6 +2797,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/north_korea_second_nuclear_test_200905.jpg
+    caption: 朝鲜进行第二次核试验，联合国安理会一致通过制裁决议——重大国际历史时刻
 - id: w-swine-flu-pandemic-200906
   date: '2009-06-11'
   title: 世卫组织宣布甲型H1N1流感进入全球大流行（6级）最高警戒
@@ -2806,6 +2815,9 @@
     - WHO
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/swine_flu_pandemic_200906.jpg
+    caption: 世卫组织宣布甲型H1N1流感进入全球大流行（6级）最高警戒——重大国际历史时刻
 - id: w-iran-election-protests-200906
   date: '2009-06-12'
   title: 伊朗总统选举后爆发大规模抗议示威，"绿色运动"震动德黑兰
@@ -2849,6 +2861,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/us_withdraw_iraq_200906.jpg
+    caption: 美军撤出伊拉克各主要城市，伊拉克安全部队全面接管——重大国际历史时刻
 - id: w-obama-peace-prize-200910
   date: '2009-10-09'
   title: 美国总统奥巴马获授2009年诺贝尔和平奖，引发全球广泛争议
@@ -2878,6 +2893,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/lisbon_treaty_effective_200912.jpg
+    caption: 《里斯本条约》正式生效，欧盟政治一体化取得历史性突破——重大国际历史时刻
 - id: w-cop15-copenhagen-200912
   date: '2009-12-07'
   title: 《联合国气候变化框架公约》第15次缔约方大会（COP15）在哥本哈根举行
@@ -2894,6 +2912,9 @@
     - 联合国
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/cop15_copenhagen_200912.jpg
+    caption: 《联合国气候变化框架公约》第15次缔约方大会（COP15）在哥本哈根举行——重大国际历史时刻
 - id: w-kosovo-independence-200802
   date: '2008-02-17'
   title: 科索沃正式宣布从塞尔维亚独立，引发国际社会严重分歧
@@ -2908,6 +2929,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/kosovo_independence_200802.jpg
+    caption: 科索沃正式宣布从塞尔维亚独立，引发国际社会严重分歧——重大国际历史时刻
 - id: w-tibet-beijing-olympic-relay-200804
   date: '2008-04-07'
   title: 北京奥运火炬巴黎传递受到蓄意干扰，中国民众强烈谴责
@@ -2935,6 +2959,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/myanmar_cyclone_200805.jpg
+    caption: 热带气旋"纳尔吉斯"重创缅甸，造成逾13万人死亡失踪——重大国际历史时刻
 - id: w-russia-georgia-war-200808
   date: '2008-08-08'
   title: 俄格战争爆发，俄罗斯军队进入南奥塞梯与格鲁吉亚交战
@@ -2949,6 +2976,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/russia_georgia_war_200808.jpg
+    caption: 俄格战争爆发，俄罗斯军队进入南奥塞梯与格鲁吉亚交战——重大国际历史时刻
 - id: w-phelps-eight-gold-200808
   date: '2008-08-16'
   title: 美国游泳运动员迈克尔·菲尔普斯在北京奥运会夺得8枚金牌，创历史纪录
@@ -2976,6 +3006,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/lehman_bankruptcy_200809.jpg
+    caption: 雷曼兄弟破产引发全球金融危机
 - id: w-us-government-bailout-200810
   date: '2008-10-03'
   title: 美国国会通过7000亿美元金融救援计划（TARP），布什总统签署生效
@@ -2991,6 +3024,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/us_government_bailout_200810.jpg
+    caption: 美国国会通过7000亿美元金融救援计划（TARP），布什总统签署生效——重大国际历史时刻
 - id: w-obama-wins-election-200811
   date: '2008-11-04'
   title: 民主党候选人巴拉克·奥巴马当选美国第44任总统，成为首位非裔总统
@@ -3005,6 +3041,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/obama_wins_election_200811.jpg
+    caption: 巴拉克·奥巴马当选美国第44任总统
 - id: w-g20-washington-summit-200811
   date: '2008-11-15'
   title: G20峰会首次在华盛顿举行，协调各国应对全球金融危机
@@ -3019,6 +3058,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/g20_washington_summit_200811.jpg
+    caption: G20峰会首次在华盛顿举行，协调各国应对全球金融危机——重大国际历史时刻
 - id: w-mumbai-terrorist-attacks-200811
   date: '2008-11-26'
   title: 印度孟买发生连环恐怖袭击，造成逾160人遇难
@@ -3034,6 +3076,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/mumbai_terrorist_attacks_200811.jpg
+    caption: 印度孟买发生连环恐怖袭击，造成逾160人遇难——重大国际历史时刻
 - id: w-ban-ki-moon-un-200701
   date: '2007-01-01'
   title: 潘基文正式就任联合国第八任秘书长
@@ -3049,6 +3094,9 @@
     - 联合国
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2007/ban_ki_moon_un_200701.jpg
+    caption: 潘基文正式就任联合国第八任秘书长——重大国际历史时刻
 - id: w-iphone-launch-200701
   date: '2007-01-09'
   title: 史蒂夫·乔布斯在旧金山正式发布首款 iPhone，重新定义智能手机
@@ -3063,6 +3111,9 @@
   sources:
     - 维基百科
     - Apple
+  image:
+    url: /images/events/2007/iphone_launch_200701.jpg
+    caption: 史蒂夫·乔布斯在旧金山正式发布首款 iPhone 智能手机
 - id: w-putin-munich-speech-200702
   date: '2007-02-10'
   title: 俄罗斯总统普京在慕尼黑安全会议发表重要演讲，猛烈批评单极世界
@@ -3078,6 +3129,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2007/putin_munich_speech_200702.jpg
+    caption: 俄罗斯总统普京在慕尼黑安全会议发表重要演讲，猛烈批评单极世界——重大国际历史时刻
 - id: w-subprime-mortgage-crisis-200704
   date: '2007-04-02'
   title: 美国第二大次级房贷公司申请破产保护，次贷危机正式显现
@@ -3092,6 +3146,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2007/subprime_mortgage_crisis_200704.jpg
+    caption: 美国第二大次级房贷公司申请破产保护，次贷危机正式显现——重大国际历史时刻
 - id: w-sarkozy-elected-president-200705
   date: '2007-05-06'
   title: 尼古拉·萨科齐当选法国总统，开启戴高乐派新时代
@@ -3148,6 +3205,9 @@
   sources:
     - IPCC
     - 维基百科
+  image:
+    url: /images/events/2007/ipcc_fourth_assessment_200711.jpg
+    caption: 联合国IPCC发布第四次评估报告，确认全球变暖主要由人类活动引起——重大国际历史时刻
 - id: w-benazir-bhutto-assassination-200712
   date: '2007-12-27'
   title: 巴基斯坦前总理贝娜齐尔·布托在拉瓦尔品第遇刺身亡
@@ -3163,6 +3223,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2007/benazir_bhutto_assassination_200712.jpg
+    caption: 巴基斯坦前总理贝娜齐尔·布托在拉瓦尔品第遇刺身亡——重大国际历史时刻
 - id: w-montenegro-independence-200606
   date: '2006-06-03'
   title: 黑山议会正式宣布黑山独立，塞尔维亚和黑山国家联盟解体
@@ -3177,6 +3240,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/montenegro_independence_200606.jpg
+    caption: 黑山议会正式宣布黑山独立，塞尔维亚和黑山国家联盟解体——重大国际历史时刻
 - id: w-world-cup-germany-200606
   date: '2006-06-09'
   title: 第18届世界杯足球赛在德国举行，意大利队夺得冠军
@@ -3191,6 +3257,9 @@
   sources:
     - FIFA
     - 维基百科
+  image:
+    url: /images/events/2006/world_cup_germany_200606.jpg
+    caption: 第18届世界杯足球赛在德国举行，意大利队夺得冠军——重大国际历史时刻
 - id: w-lebanon-war-200607
   date: '2006-07-12'
   title: 黎以爆发第二次黎巴嫩战争，造成千余人平民伤亡
@@ -3205,6 +3274,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/lebanon_war_200607.jpg
+    caption: 黎以爆发第二次黎巴嫩战争，造成千余人平民伤亡——重大国际历史时刻
 - id: w-pluto-demoted-dwarf-planet-200608
   date: '2006-08-24'
   title: 国际天文学联合会投票通过行星新定义，冥王星被降级为矮行星
@@ -3219,6 +3291,9 @@
   sources:
     - IAU
     - 维基百科
+  image:
+    url: /images/events/2006/pluto_demoted_dwarf_planet_200608.jpg
+    caption: 国际天文学联合会投票通过行星新定义，冥王星被降级为矮行星——重大国际历史时刻
 - id: w-north-korea-first-nuclear-test-200610
   date: '2006-10-09'
   title: 朝鲜进行首次地下核试验，引发国际社会震动与联合国严厉制裁
@@ -3234,6 +3309,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/north_korea_first_nuclear_test_200610.jpg
+    caption: 朝鲜进行首次地下核试验，引发国际社会震动与联合国严厉制裁——重大国际历史时刻
 - id: w-saddam-executed-200612
   date: '2006-12-30'
   title: 伊拉克前总统萨达姆·侯赛因在巴格达被执行绞刑
@@ -3249,6 +3327,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/saddam_executed_200612.jpg
+    caption: 伊拉克前总统萨达姆·侯赛因在巴格达被执行绞刑——重大国际历史时刻
 - id: w-java-earthquake-200605
   date: '2006-05-27'
   title: 印度尼西亚爪哇岛发生6.3级强震，造成近6000人遇难
@@ -3263,6 +3344,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/java_earthquake_200605.jpg
+    caption: 印度尼西亚爪哇岛发生6.3级强震，造成近6000人遇难——重大国际历史时刻
 - id: w-shinzo-abe-pm-200609
   date: '2006-09-26'
   title: 安倍晋三首次当选日本首相，成为战后日本最年轻的首相
@@ -3292,6 +3376,9 @@
   sources:
     - 联合国
     - 维基百科
+  image:
+    url: /images/events/2005/kyoto_protocol_effective_200502.jpg
+    caption: 限制温室气体排放的《京都议定书》正式生效
 - id: w-pope-john-paul-ii-death-200504
   date: '2005-04-02'
   title: 罗马教宗若望保禄二世逝世，本笃十六世继任
@@ -3306,6 +3393,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2005/pope_john_paul_ii_death_200504.jpg
+    caption: 罗马教宗若望保禄二世逝世，本笃十六世继任——重大国际历史时刻
 - id: w-london-bombings-200507
   date: '2005-07-07'
   title: 英国伦敦公交与地铁连环爆炸案爆发（七七爆炸案），造成52人死亡
@@ -3321,6 +3411,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2005/london_bombings_200507.jpg
+    caption: 英国伦敦公交与地铁连环爆炸案爆发（七七爆炸案），造成52人死亡——重大国际历史时刻
 - id: w-hurricane-katrina-200508
   date: '2005-08-29'
   title: 四级飓风"卡特里娜"重创美国新奥尔良，造成逾1800人遇难
@@ -3336,6 +3429,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2005/hurricane_katrina_200508.jpg
+    caption: 四级飓风"卡特里娜"重创美国新奥尔良，造成逾1800人遇难——重大国际历史时刻
 - id: w-kashmir-earthquake-200510
   date: '2005-10-08'
   title: 南亚克什米尔地区发生7.6级大地震，造成逾8.6万人遇难
@@ -3351,6 +3447,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2005/kashmir_earthquake_200510.jpg
+    caption: 南亚克什米尔地区发生7.6级大地震，造成逾8.6万人遇难——重大国际历史时刻
 - id: w-merkel-chancellor-200511
   date: '2005-11-22'
   title: 安格拉·默克尔宣誓就任德国联邦总理，成为德国首位女性总理
@@ -3366,6 +3465,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2005/merkel_chancellor_200511.jpg
+    caption: 安格拉·默克尔宣誓就任德国联邦总理，成为德国首位女性总理——重大国际历史时刻
 - id: w-eu-constitution-rejected-200505
   date: '2005-05-29'
   title: 法国与荷兰国民公投否决《欧洲宪法条约》，欧洲一体化进程受挫
@@ -3395,6 +3497,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2004/madrid_train_bombings_200403.jpg
+    caption: 西班牙马德里发生连环列车爆炸案（3·11爆炸案），造成193人死亡——重大国际历史时刻
 - id: w-eu-expansion-10-countries-200405
   date: '2004-05-01'
   title: 欧盟迎来史上最大规模东扩，波兰等中东欧10国正式加入欧盟
@@ -3411,6 +3516,9 @@
     - 欧盟
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2004/eu_expansion_10_countries_200405.jpg
+    caption: 欧盟迎来史上最大规模东扩，波兰等中东欧10国正式加入欧盟——重大国际历史时刻
 - id: w-beslan-school-siege-200409
   date: '2004-09-01'
   title: 俄罗斯北奥塞梯别斯兰市发生恐怖分子劫持学校人质危机，致334人遇难
@@ -3426,6 +3534,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2004/beslan_school_siege_200409.jpg
+    caption: 俄罗斯北奥塞梯别斯兰市发生恐怖分子劫持学校人质危机，致334人遇难——重大国际历史时刻
 - id: w-george-w-bush-re-elected-200411
   date: '2004-11-02'
   title: 共和党候选人乔治·W·布什在总统大选中击败约翰·克里成功连任
@@ -3440,6 +3551,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2004/george_w_bush_re_elected_200411.jpg
+    caption: 共和党候选人乔治·W·布什在总统大选中击败约翰·克里成功连任——重大国际历史时刻
 - id: w-yasser-arafat-death-200411
   date: '2004-11-11'
   title: 巴勒斯坦民族权力机构主席亚西尔·阿拉法特在巴黎逝世
@@ -3455,6 +3569,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2004/yasser_arafat_death_200411.jpg
+    caption: 巴勒斯坦民族权力机构主席亚西尔·阿拉法特在巴黎逝世——重大国际历史时刻
 - id: w-ukraine-orange-revolution-200411
   date: '2004-11-22'
   title: 乌克兰爆发"橙色革命"，争议大选后尤先科最终当选总统
@@ -3469,6 +3586,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2004/ukraine_orange_revolution_200411.jpg
+    caption: 乌克兰爆发"橙色革命"，争议大选后尤先科最终当选总统——重大国际历史时刻
 - id: w-indian-ocean-tsunami-200412
   date: '2004-12-26'
   title: 印度洋发生9.1级特大地震并引发海啸，造成约22.7万人遇难
@@ -3486,6 +3606,9 @@
     - 维基百科
     - 联合国
     - 新华网
+  image:
+    url: /images/events/2004/indian_ocean_tsunami_200412.jpg
+    caption: 印度洋发生9.1级特大地震并引发海啸
 - id: w-space-shuttle-columbia-disaster-200302
   date: '2003-02-01'
   title: 美国"哥伦比亚"号航天飞机返回重返大气层时解体失事，7名宇航员全部遇难
@@ -3502,6 +3625,9 @@
     - NASA
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2003/space_shuttle_columbia_disaster_200302.jpg
+    caption: 美国"哥伦比亚"号航天飞机返回重返大气层时解体失事，7名宇航员全部遇难——重大国际历史时刻
 - id: w-iraq-war-breaks-out-200303
   date: '2003-03-20'
   title: 美英联军空袭巴格达爆发伊拉克战争，推翻萨达姆政权
@@ -3518,6 +3644,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2003/iraq_war_breaks_out_200303.jpg
+    caption: 美英联军空袭巴格达，伊拉克战争全面爆发
 - id: w-georgia-rose-revolution-200311
   date: '2003-11-23'
   title: 格鲁吉亚爆发"玫瑰革命"，谢瓦尔德纳泽辞职
@@ -3548,6 +3677,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2003/saddam_captured_200312.jpg
+    caption: 美军在提克里特捕获隐藏在"蜘蛛洞"中的伊拉克前总统萨达姆——重大国际历史时刻
 - id: w-concorde-retired-200310
   date: '2003-10-24'
   title: 协和式超音速客机（Concorde）完成最后一次商业飞行，正式退役
@@ -3578,6 +3710,9 @@
     - 欧洲央行
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2002/euro_cash_launch_200201.jpg
+    caption: 欧元纸币与硬币在欧洲12国正式投入流通
 - id: w-world-cup-korea-japan-200205
   date: '2002-05-31'
   title: 第17届世界杯足球赛在韩国和日本开幕，巴西队第五次夺冠
@@ -3593,6 +3728,9 @@
   sources:
     - FIFA
     - 维基百科
+  image:
+    url: /images/events/2002/world_cup_korea_japan_200205.jpg
+    caption: 第17届世界杯足球赛在韩国和日本开幕，巴西队第五次夺冠——重大国际历史时刻
 - id: w-icc-statute-effective-200207
   date: '2002-07-01'
   title: 《罗马规约》生效，国际刑事法院（ICC）在海牙正式成立
@@ -3608,6 +3746,9 @@
   sources:
     - ICC
     - 维基百科
+  image:
+    url: /images/events/2002/icc_statute_effective_200207.jpg
+    caption: 《罗马规约》生效，国际刑事法院（ICC）在海牙正式成立——重大国际历史时刻
 - id: w-switzerland-joins-un-200209
   date: '2002-09-10'
   title: 瑞士联邦正式加入联合国，成为第190个成员国
@@ -3637,6 +3778,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2002/bali_bombings_200210.jpg
+    caption: 印度尼西亚巴厘岛发生针对外国游客的连环炸弹袭击，致202人遇难——重大国际历史时刻
 - id: w-moscow-theater-hostage-crisis-200210
   date: '2002-10-23'
   title: 车臣武装分子劫持莫斯科轴承厂剧院近千名人质，特种部队强攻解救
@@ -3644,6 +3788,9 @@
   importance: 5
   summary: 40余名车臣武装分子劫持850余名人质，俄特种部队使用麻醉气体解救，造成130名人质及全部恐怖分子死亡，震惊世界。
   confidence: 确定
+  image:
+    url: /images/events/2002/moscow_theater_hostage_crisis_200210.jpg
+    caption: 车臣武装分子劫持莫斯科轴承厂剧院近千名人质，特种部队强攻解救——重大国际历史时刻
 - id: w-wikipedia-launched-200101
   date: '2001-01-15'
   title: 吉米·威尔士与拉里·桑格在网络上正式创办维基百科（Wikipedia）
@@ -3658,6 +3805,9 @@
     - 历史转折
   sources:
     - 维基百科
+  image:
+    url: /images/events/2001/wikipedia_launched_200101.jpg
+    caption: 维基百科（Wikipedia）在互联网正式上线创办
 - id: w-george-w-bush-inauguration-200101
   date: '2001-01-20'
   title: 乔治·W·布什宣誓就任美国第43任总统
@@ -3672,6 +3822,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2001/george_w_bush_inauguration_200101.jpg
+    caption: 乔治·W·布什宣誓就任美国第43任总统——重大国际历史时刻
 - id: w-911-attacks-200109
   date: '2001-09-11'
   title: 恐怖分子劫持客机撞击纽约世贸中心与五角大楼（九一一事件），造成近3000人遇难
@@ -3687,6 +3840,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2001/911_attacks_200109.jpg
+    caption: 恐怖分子劫持客机撞击纽约世贸中心与五角大楼（九一一事件）
 - id: w-afghanistan-war-begins-200110
   date: '2001-10-07'
   title: 美英军队发动"持久自由行动"空袭塔利班，阿富汗战争全面爆发
@@ -3702,6 +3858,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2001/afghanistan_war_begins_200110.jpg
+    caption: 美英军队发动"持久自由行动"空袭塔利班，阿富汗战争全面爆发——重大国际历史时刻
 - id: w-kofi-annan-un-nobel-200110
   date: '2001-10-12'
   title: 联合国及其秘书长科菲·安南共同荣获诺贝尔和平奖
@@ -3730,6 +3889,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2001/gujarat_earthquake_200101.jpg
+    caption: 印度古吉拉特邦发生7.7级强震，造成逾两万人遇难——重大国际历史时刻
 - id: w-putin-elected-president-200003
   date: '2000-03-26'
   title: 弗拉基米尔·普京在俄大选中当选俄罗斯第二任总统
@@ -3744,6 +3906,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2000/putin_elected_president_200003.jpg
+    caption: 弗拉基米尔·普京在俄大选中当选俄罗斯第二任总统——重大国际历史时刻
 - id: w-inter-korean-summit-200006
   date: '2000-06-13'
   title: 朝韩首脑在平壤举行历史性首次会晤（金大中与金正日会晤）
@@ -3759,6 +3924,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2000/inter_korean_summit_200006.jpg
+    caption: 朝韩首脑在平壤举行历史性首次会晤（金大中与金正日会晤）——重大国际历史时刻
 - id: w-air-france-concorde-crash-200007
   date: '2000-07-25'
   title: 法国航空协和式超音速客机在巴黎起飞时坠毁，致113人遇难
@@ -3774,6 +3942,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2000/air_france_concorde_crash_200007.jpg
+    caption: 法国航空协和式超音速客机在巴黎起飞时坠毁，致113人遇难——重大国际历史时刻
 - id: w-sydney-olympics-200009
   date: '2000-09-15'
   title: 第27届夏季奥林匹克运动会在澳大利亚悉尼隆重开幕
@@ -3788,6 +3959,9 @@
   sources:
     - 国际奥委会
     - 维基百科
+  image:
+    url: /images/events/2000/sydney_olympics_200009.jpg
+    caption: 第27届夏季奥林匹克运动会在澳大利亚悉尼隆重开幕——重大国际历史时刻
 - id: w-iss-first-resident-crew-200011
   date: '2000-11-02'
   title: 国际空间站（ISS）迎来首批长期常驻宇航员（远征1号）
@@ -3803,6 +3977,9 @@
   sources:
     - NASA
     - 维基百科
+  image:
+    url: /images/events/2000/iss_first_resident_crew_200011.jpg
+    caption: 国际空间站（ISS）迎来首批长期常驻宇航员（远征1号）——重大国际历史时刻
 - id: w-us-presidential-election-200011
   date: '2000-11-07'
   title: 美国总统大选小布什与戈尔陷入佛罗里达计票争议，最高法院裁决小布什胜选
@@ -3817,6 +3994,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2000/us_presidential_election_200011.jpg
+    caption: 美国总统大选小布什与戈尔陷入佛罗里达计票争议，最高法院裁决小布什胜选——重大国际历史时刻
 - id: w-kosovo-war-199903
   date: '1999-03-24'
   title: 北约绕过联合国安理会发动"科索沃战争"，对南联盟展开大规模空袭
@@ -5539,3 +5719,143 @@
   sources:
     - 维基百科
     - 新华网
+- id: w-soviet-afghanistan-withdrawal-complete-198902
+  date: '1989-02-15'
+  title: 苏联完成从阿富汗撤军
+  category: 战争
+  importance: 5
+  summary: 最后一批苏联军队越过阿姆河撤离阿富汗，完成依据日内瓦协议实施的撤军，结束苏联近十年的直接军事干预。撤军并未终止阿富汗内战，但成为冷战末期的重要转折。
+  confidence: 确定
+  tags:
+    - 军事
+    - 战争
+    - 历史转折
+  sources:
+    - 新华网
+    - 联合国
+    - 维基百科
+- id: w-exxon-valdez-oil-spill-198903
+  date: '1989-03-24'
+  title: “埃克森·瓦尔迪兹”号发生严重漏油事故
+  category: 灾害
+  importance: 4
+  summary: 油轮“埃克森·瓦尔迪兹”号在美国阿拉斯加威廉王子湾触礁，原油大规模泄漏并污染漫长海岸线，成为美国最严重的海洋环境灾难之一，推动油污责任与应急法规改革。
+  confidence: 确定
+  tags:
+    - 灾害
+    - 环境
+    - 法律
+  sources:
+    - 美国环境保护署
+    - 维基百科
+- id: w-polish-semi-free-election-198906
+  date: '1989-06-04'
+  title: 波兰举行半自由议会选举
+  category: 政治
+  importance: 5
+  summary: 波兰依据圆桌会议协议举行战后首次具有竞争性的议会选举，团结工会支持者取得压倒性胜利，随后产生东欧社会主义阵营首个非共产党领导的政府，开启东欧剧变进程。
+  confidence: 确定
+  tags:
+    - 政治
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+    - 维基百科
+- id: w-baltic-way-198908
+  date: '1989-08-23'
+  title: 爱沙尼亚、拉脱维亚和立陶宛民众组成“波罗的海之路”
+  category: 政治
+  importance: 4
+  summary: 约两百万民众手拉手组成跨越爱沙尼亚、拉脱维亚和立陶宛的和平人链，纪念《苏德互不侵犯条约》签署五十周年并要求恢复独立，成为波罗的海三国独立运动的象征。
+  confidence: 确定
+  tags:
+    - 政治
+    - 民族
+    - 改革
+  sources:
+    - 联合国教科文组织
+    - 维基百科
+- id: w-loma-prieta-earthquake-198910
+  date: '1989-10-17'
+  title: 美国加利福尼亚发生洛马普列塔地震
+  category: 灾害
+  importance: 4
+  summary: 美国旧金山湾区发生6.9级洛马普列塔地震，造成63人死亡并严重破坏桥梁、高速公路和城市建筑。地震发生在棒球世界大赛转播前，促使加州加强基础设施抗震改造。
+  confidence: 确定
+  tags:
+    - 灾害
+    - 地震
+    - 民生
+  sources:
+    - 美国地质调查局
+    - 维基百科
+- id: w-berlin-wall-opens-198911
+  date: '1989-11-09'
+  title: 柏林墙开放
+  category: 政治
+  importance: 5
+  summary: 民主德国宣布放宽出境限制后，大批民众涌向柏林边境口岸，检查站当晚开放，柏林墙实际失去封锁作用。这一事件象征东欧剧变和冷战秩序瓦解，并直接推动两德统一。
+  confidence: 确定
+  tags:
+    - 政治
+    - 改革
+    - 历史转折
+  sources:
+    - 德国联邦政府
+    - 新华网
+    - 维基百科
+- id: w-velvet-revolution-198911
+  date: '1989-11-17'
+  title: 捷克斯洛伐克天鹅绒革命开始
+  category: 政治
+  importance: 4
+  summary: 布拉格学生示威遭警察驱散后，全国迅速形成大规模和平抗议，公民论坛推动共产党政府交出权力。年底，瓦茨拉夫·哈维尔当选总统，政权转型基本完成。
+  confidence: 确定
+  tags:
+    - 政治
+    - 改革
+  sources:
+    - 捷克共和国政府
+    - 维基百科
+- id: w-malta-summit-198912
+  date: '1989-12-02'
+  title: 美苏首脑举行马耳他峰会
+  category: 政治
+  importance: 4
+  summary: 美国总统乔治·布什与苏联领导人戈尔巴乔夫在马耳他附近举行会晤，讨论东欧局势、裁军和双边关系。峰会虽未签署正式条约，却被广泛视为冷战结束的重要政治标志。
+  confidence: 确定
+  tags:
+    - 外交
+    - 政治
+  sources:
+    - 美国国务院历史办公室
+    - 新华网
+    - 维基百科
+- id: w-romanian-revolution-198912
+  date: '1989-12-16'
+  title: 罗马尼亚革命爆发
+  category: 政治
+  importance: 4
+  summary: 罗马尼亚蒂米什瓦拉的抗议迅速演变为全国性革命，军队转向支持示威者，齐奥塞斯库政权崩溃。齐奥塞斯库夫妇于12月25日被处决，罗马尼亚结束共产党一党统治。
+  confidence: 确定
+  tags:
+    - 政治
+    - 改革
+  sources:
+    - 新华网
+    - 维基百科
+- id: w-us-invasion-panama-198912
+  date: '1989-12-20'
+  title: 美国入侵巴拿马
+  category: 战争
+  importance: 4
+  summary: 美国发动“正义事业行动”，大规模出兵巴拿马并推翻曼努埃尔·诺列加政权。行动造成军民伤亡并受到联合国大会谴责，进一步引发对美国干预拉丁美洲的争议。
+  confidence: 确定
+  tags:
+    - 军事
+    - 战争
+    - 外交
+  sources:
+    - 联合国
+    - 维基百科
