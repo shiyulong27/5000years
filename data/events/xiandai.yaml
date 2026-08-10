@@ -2736,4 +2736,84 @@
   tags: [社会, 千禧年, 文化]
   sources: [新华网]
 
+- id: cn-nato-bomb-embassy-199905
+  date: "1999-05-08"
+  title: 北约导弹轰炸中国驻南斯拉夫联盟大使馆，三名记者不幸遇难
+  category: 政治
+  importance: 5
+  summary: 北约在对南联盟的空袭中悍然轰炸中国驻贝尔格莱德大使馆，新华社记者邵云环、光明日报记者许杏虎及夫人朱颖当场遇难，全国爆发强烈抗议，中国外交部向美方提出最强烈抗议。
+  confidence: 确定
+  tags: [外交, 军事, 历史转折]
+  sources: [新华网, 外交部]
+
+- id: cn-50th-parade-199910
+  date: "1999-10-01"
+  title: 庆祝中华人民共和国成立50周年，首都举行盛大世纪大阅兵
+  category: 政治
+  importance: 5
+  summary: 天安门广场举行国庆50周年盛大阅兵与群众游行，首次展示新型导弹与战机等陆海空军新装备，江泽民检阅受阅部队并发表重要讲话。
+  confidence: 确定
+  tags: [军事, 阅兵, 历史转折]
+  sources: [新华网]
+
+- id: cn-shenzhou1-199911
+  date: "1999-11-20"
+  title: 中国第一艘载人航天试验飞船"神舟一号"发射成功并安全返回
+  category: 文化
+  importance: 5
+  summary: 神舟一号无人试验飞船在酒泉卫星发射中心由长征二号F运载火箭成功发射升空，在轨运行21小时后按预定轨道返回内蒙古中部着陆场，标志着中国载人航天工程取得重大突破。
+  confidence: 确定
+  tags: [航天, 科技, 历史转折]
+  sources: [新华网, 中国载人航天工程办公室]
+
+- id: cn-macau-handover-199912
+  date: "1999-12-20"
+  title: 澳门回归祖国，澳门特别行政区政府正式成立
+  category: 政治
+  importance: 5
+  summary: 中葡两国政府在澳门文化中心举行政权交接仪式，澳门正式回归祖国怀抱，何厚铧宣誓就任澳门特别行政区首任行政长官，"一国两制"方针在澳门落地。
+  confidence: 确定
+  tags: [外交, 一国两制, 历史转折]
+  sources: [新华网, 新华社]
+
+- id: cn-wto-us-agreement-199911
+  date: "1999-11-15"
+  title: 中美就中国加入世界贸易组织签订双边市场准入协议
+  category: 经济
+  importance: 5
+  summary: 外经贸部部长石广生与美国贸易代表巴尔舍夫斯基在北京签署中美关于中国加入世贸组织的双边协议，扫清中国入世道路上的最大障碍，为2001年正式入世奠定基础。
+  confidence: 确定
+  tags: [外交, 贸易, 历史转折]
+  sources: [新华网, 商务部]
+
+- id: cn-deng-theory-constitution-199903
+  date: "1999-03-15"
+  title: 九届全国人大二次会议将"邓小平理论"载入宪法
+  category: 政治
+  importance: 4
+  summary: 九届全国人大二次会议通过宪法修正案，将邓小平理论写入宪法序言，确立其为全党全国人民共同奋斗的指导思想，为改革开放提供根本法律保障。
+  confidence: 确定
+  tags: [法律, 改革, 理论]
+  sources: [新华网, 全国人大]
+
+- id: cn-shenwei1-supercomputer-199907
+  date: "1999-07-01"
+  title: 中国第一台高性能超级计算机"神威I"通过国家鉴定
+  category: 文化
+  importance: 4
+  summary: 中国第一台实测峰值运算速度达每秒3840亿次的高性能计算机"神威I"由国家并行计算机工程技术研究中心研制成功并通过鉴定，标志中国在高性能计算领域跻身世界前列。
+  confidence: 确定
+  tags: [科技, 超算]
+  sources: [新华网, 科技日报]
+
+- id: cn-avic-restructure-199906
+  date: "1999-06-28"
+  title: 中国航空工业第一、第二集团公司挂牌成立
+  category: 经济
+  importance: 3
+  summary: 中国航空工业总公司实施体制改革，按照军品与民品、地域与产品重新整合组建中国航空工业第一集团公司和第二集团公司，推动航空工业市场化改革。
+  confidence: 确定
+  tags: [改革, 军工]
+  sources: [新华网, 国防科工委]
+
 

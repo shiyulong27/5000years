@@ -2712,5 +2712,75 @@
   tags: [政治, 美国, 历史转折]
   sources: [维基百科, 新华网]
 
+- id: w-kosovo-war-199903
+  date: "1999-03-24"
+  title: 北约绕过联合国安理会发动"科索沃战争"，对南联盟展开大规模空袭
+  category: 战争
+  importance: 5
+  summary: 北约以"人道主义干预"为由，未经联合国安理会授权对南斯拉夫联盟发动持续78天的空袭，轰炸民用与基础设施，造成数千平民伤亡，最终促成科索沃国际托管。
+  confidence: 确定
+  tags: [战争, 北约, 科索沃, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-yeltsin-resign-199912
+  date: "1999-12-31"
+  title: 俄罗斯总统叶利钦辞职，普京出任代总统开启新纪元
+  category: 政治
+  importance: 5
+  summary: 叶利钦在新年除夕宣布辞去俄罗斯总统职务，根据宪法由总理普京出任代总统，自此俄罗斯进入普京时代，开启权力更迭与大国复兴的新阶段。
+  confidence: 确定
+  tags: [政治, 俄罗斯, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-euro-launch-199901
+  date: "1999-01-01"
+  title: 欧元作为记账货币正式启用，欧洲一体化迈入新阶段
+  category: 经济
+  importance: 4
+  summary: 欧元正式在11个欧盟成员国作为记账货币启用，各国货币与之锁定汇率，2002年欧元纸币与硬币全面流通，成为仅次于美元的第二大国际储备货币。
+  confidence: 确定
+  tags: [经济, 欧元, 欧洲一体化]
+  sources: [维基百科, 欧盟委员会]
+
+- id: w-world-population-6b-199910
+  date: "1999-10-12"
+  title: 世界总人口突破60亿，联合国宣布"60亿人口日"
+  category: 经济
+  importance: 4
+  summary: 联合国将10月12日定为"60亿人口日"，全球人口在这一天跨过60亿大关，引发对资源、环境与可持续发展的广泛关注。
+  confidence: 确定
+  tags: [人口, 社会]
+  sources: [联合国, 维基百科]
+
+- id: w-panama-canal-handover-199912
+  date: "1999-12-31"
+  title: 巴拿马收回巴拿马运河主权，结束美国长达近百年控制
+  category: 政治
+  importance: 4
+  summary: 按照1977年《托里霍斯-卡特条约》，巴拿马于正午正式全部收回巴拿马运河及周边区域的主权与运营权，美国递交运河控制权并撤出驻军。
+  confidence: 确定
+  tags: [政治, 巴拿马, 主权]
+  sources: [维基百科, 新华网]
+
+- id: w-turkey-izmit-earthquake-199908
+  date: "1999-08-17"
+  title: 土耳其伊兹米特发生7.6级大地震，逾1.7万人遇难
+  category: 灾害
+  importance: 4
+  summary: 土耳其西北部伊兹米特地区凌晨发生7.6级强烈地震，震中位于人口稠密的工业区，造成超过1.7万人死亡、5万人受伤，大量建筑倒塌引发国际救援。
+  confidence: 确定
+  tags: [灾害, 地震, 土耳其]
+  sources: [维基百科, 新华网]
+
+- id: w-tokaimura-nuclear-199909
+  date: "1999-09-30"
+  title: 日本茨城县东海村发生严重核临界事故
+  category: 灾害
+  importance: 4
+  summary: 日本茨城县东海村JCO核燃料加工厂发生日本迄今最严重的临界事故，两名工人受大剂量辐射后死亡，成为警示全球核安全的重大案例。
+  confidence: 确定
+  tags: [灾害, 核事故, 日本]
+  sources: [维基百科, 国际原子能机构]
+
 
 
