@@ -1033,6 +1033,9 @@
   confidence: 确定
   tags: [文化, 盛会, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2010/shanghai_expo.jpg"
+    caption: "2010年上海世界博览会在黄浦江畔盛大开幕"
 
 - id: cn-ecfa-agreement-201006
   date: "2010-06-29"
@@ -1103,6 +1106,9 @@
   confidence: 确定
   tags: [经济, 宏观, 历史转折]
   sources: [国家统计局, 日本内阁府, 新华网]
+  image:
+    url: "/images/events/2010/gdp_second_world.jpg"
+    caption: "2010年中国GDP超越日本，跃居世界第二大经济体"
 
 - id: cn-twelfth-five-year-plan-201103
   date: "2011-03-14"
@@ -1133,6 +1139,9 @@
   confidence: 确定
   tags: [经济, 交通, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2011/jinghu_hsr.jpg"
+    caption: "京沪高速铁路全线正式通车运营"
 
 - id: cn-cpc-90th-anniversary-201107
   date: "2011-07-01"
@@ -1163,6 +1172,9 @@
   confidence: 确定
   tags: [航天, 科技, 历史转折]
   sources: [新华网, 国家航天局]
+  image:
+    url: "/images/events/2011/tiangong1_launch.jpg"
+    caption: "中国首个目标飞行器“天宫一号”在酒泉成功发射"
 
 - id: cn-xinhai-centenary-201110
   date: "2011-10-10"
@@ -1223,6 +1235,9 @@
   confidence: 确定
   tags: [深潜, 科考, 科技, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2012/jiaolong_submersible.jpg"
+    caption: "“蛟龙”号载人潜水器在马里亚纳海沟成功下潜至7062米"
 
 - id: cn-liaoning-aircraft-carrier-201209
   date: "2012-09-25"
@@ -1233,6 +1248,9 @@
   confidence: 确定
   tags: [军事, 科技, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2012/liaoning_carrier.jpg"
+    caption: "中国第一艘航空母舰“辽宁舰”在大连正式交付海军"
 
 - id: cn-moyan-nobel-prize-201210
   date: "2012-10-11"
@@ -1243,6 +1261,9 @@
   confidence: 确定
   tags: [文化, 文学, 历史转折]
   sources: [新华网, 诺贝尔奖官网]
+  image:
+    url: "/images/events/2012/moyan_nobel.jpg"
+    caption: "作家莫言荣获2012年诺贝尔文学奖"
 
 - id: cn-18th-cpc-congress-201211
   date: "2012-11-08"
@@ -1333,6 +1354,9 @@
   confidence: 确定
   tags: [外交, 经济, 一带一路, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2013/belt_and_road.jpg"
+    caption: "首次提出共建“丝绸之路经济带”和“21世纪海上丝绸之路”倡议"
 
 - id: cn-shanghai-ftz-open-201309
   date: "2013-09-29"
@@ -1383,6 +1407,9 @@
   confidence: 确定
   tags: [航天, 科技, 历史转折]
   sources: [新华网, 国家航天局]
+  image:
+    url: "/images/events/2013/change3_yutu.jpg"
+    caption: "嫦娥三号成功软着陆月球，玉兔号月球车驶上月表"
 
 - id: cn-reeducation-through-labor-abolition-201312
   date: "2013-12-28"
@@ -1483,6 +1510,9 @@
   confidence: 确定
   tags: [外交, 经济, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2014/apec_beijing.jpg"
+    caption: "2014年APEC领导人非正式会议在北京雁栖湖成功举行"
 
 - id: cn-shanghai-hongkong-stock-connect-201411
   date: "2014-11-17"
@@ -1503,6 +1533,9 @@
   confidence: 确定
   tags: [民生, 工程, 水利, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2014/water_diversion.jpg"
+    caption: "南水北调中线一期工程正式通水"
 
 - id: cn-aiib-agreement-signed-201506
   date: "2015-06-29"
@@ -1543,6 +1576,9 @@
   confidence: 确定
   tags: [政治, 军事, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2015/victory_day_70th.jpg"
+    caption: "纪念中国人民抗日战争暨世界反法西斯战争胜利70周年阅兵在京举行"
 
 - id: cn-tuyouyou-nobel-prize-201510
   date: "2015-10-05"
@@ -1553,6 +1589,9 @@
   confidence: 确定
   tags: [科技, 医学, 历史转折]
   sources: [新华网, 诺贝尔奖官网]
+  image:
+    url: "/images/events/2015/tuyouyou_nobel.jpg"
+    caption: "屠呦呦因发现青蒿素荣获诺贝尔生理学或医学奖"
 
 - id: cn-fifth-plenum-18th-two-child-201510
   date: "2015-10-29"
@@ -1653,6 +1692,9 @@
   confidence: 确定
   tags: [外交, 经济, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2016/g20_hangzhou.jpg"
+    caption: "二十国集团（G20）领导人第十一次峰会在杭州举行"
 
 - id: cn-tiangong2-space-lab-201609
   date: "2016-09-15"
@@ -1673,6 +1715,9 @@
   confidence: 确定
   tags: [科技, 天文, 历史转折]
   sources: [中国科学院, 新华网]
+  image:
+    url: "/images/events/2016/fast_telescope.jpg"
+    caption: "500米口径球面射电望远镜（FAST“中国天眼”）在贵州落成启用"
 
 - id: cn-sixth-plenum-18th-core-201610
   date: "2016-10-27"
@@ -1713,6 +1758,9 @@
   confidence: 确定
   tags: [政治, 经济, 雄安, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2017/xiongan_new_area.jpg"
+    caption: "中共中央、国务院决定设立河北雄安新区"
 
 - id: cn-tianzhou1-cargo-ship-201704
   date: "2017-04-20"
@@ -1743,6 +1791,9 @@
   confidence: 确定
   tags: [航空, 科技, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2017/c919_maiden_flight.jpg"
+    caption: "中国首款大型干线客机C919在上海成功首飞"
 
 - id: cn-belt-and-road-forum-201705
   date: "2017-05-14"
@@ -1803,6 +1854,9 @@
   confidence: 确定
   tags: [政治, 改革, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2017/cpc_19th_congress.jpg"
+    caption: "中国共产党第十九次全国代表大会在北京隆重召开"
 
 - id: cn-constitution-amendment-201803
   date: "2018-03-11"
@@ -1853,6 +1907,9 @@
   confidence: 确定
   tags: [工程, 交通, 大湾区, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2018/hzm_bridge.jpg"
+    caption: "超级工程港珠澳大桥正式通车运营"
 
 - id: cn-ciie-shanghai-201811
   date: "2018-11-05"
@@ -1863,6 +1920,9 @@
   confidence: 确定
   tags: [经济, 贸易, 进博会, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2018/ciie_first.jpg"
+    caption: "首届中国国际进口博览会在上海隆重开幕"
 
 - id: cn-meng-wanzhou-detention-201812
   date: "2018-12-01"
@@ -1893,6 +1953,9 @@
   confidence: 确定
   tags: [政治, 改革, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2018/reform_40th.jpg"
+    caption: "庆祝改革开放40周年大会在北京隆重举行"
 
 - id: cn-gdp-90trillion-201812
   date: "2018-12-31"
@@ -1913,6 +1976,9 @@
   confidence: 确定
   tags: [航天, 科技, 历史转折]
   sources: [新华网, 国家航天局]
+  image:
+    url: "/images/events/2019/change4_far_side.jpg"
+    caption: "嫦娥四号着陆器与玉兔二号月球车在月球背面完成互拍"
 
 - id: cn-foreign-investment-law-201903
   date: "2019-03-15"
@@ -1943,6 +2009,9 @@
   confidence: 确定
   tags: [工程, 交通, 北京, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2019/daxing_airport.jpg"
+    caption: "“新国门”北京大兴国际机场正式通航投入运营"
 
 - id: cn-70th-anniversary-parade-201910
   date: "2019-10-01"
@@ -1953,6 +2022,9 @@
   confidence: 确定
   tags: [政治, 盛会, 军事, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2019/prc_70th_anniversary.jpg"
+    caption: "庆祝中华人民共和国成立70周年大会在天安门广场盛大举行"
 
 - id: cn-fourth-plenum-19th-201910
   date: "2019-10-31"
@@ -1973,6 +2045,9 @@
   confidence: 确定
   tags: [军事, 科技, 山东舰, 历史转折]
   sources: [国防部, 新华网]
+  image:
+    url: "/images/events/2019/shandong_carrier.jpg"
+    caption: "中国首艘国产航空母舰“山东舰”在海南三亚正式交付入列"
 
 - id: cn-macau-handover-20th-201912
   date: "2019-12-20"
