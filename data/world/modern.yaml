@@ -487,6 +487,9 @@
   summary: 巴勒斯坦伊斯兰抵抗运动（哈马斯）对以色列发动大规模突袭，以色列随即对加沙地带发动大规模军事行动，新一轮巴以冲突爆发，中东局势急剧恶化。
   confidence: 确定
   tags: [战争, 中东]
+  image:
+    url: "/images/events/2023/israel_hamas_war.jpg"
+    caption: "新一轮巴以冲突爆发，加沙及中东地缘局势剧烈动荡"
 
 - id: w-xijinping-biden-202311
   date: "2023-11-15"

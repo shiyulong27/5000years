@@ -398,6 +398,9 @@
   summary: 经北京对话斡旋，沙特阿拉伯与伊朗在北京签署联合声明宣布恢复外交关系，被视为中东和解潮的转折点，凸显中国斡旋区域冲突的外交影响力。
   confidence: 确定
   tags: [外交, 中东]
+  image:
+    url: "/images/events/2023/saudi_iran_reconciliation.jpg"
+    caption: "沙特阿拉伯与伊朗代表在北京签署联合声明宣布恢复外交关系"
 
 - id: cn-c919-202305
   date: "2023-05-28"
@@ -520,6 +523,9 @@
   confidence: 确定
   tags: [航天, 科技, 历史转折]
   sources: [新华网, 国家航天局]
+  image:
+    url: "/images/events/2024/change6_moon_back.jpg"
+    caption: "嫦娥六号返回器携带人类首份月球背面样品成功着陆"
 
 - id: cn-third-plenum-202407
   date: "2024-07-15"
@@ -530,6 +536,9 @@
   confidence: 确定
   tags: [政治, 改革, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2024/cpc_third_plenum_2024.jpg"
+    caption: "党的二十届三中全会在北京人民大会堂胜利召开"
 
 - id: cn-paris-olympics-202408
   date: "2024-08-11"
@@ -600,6 +609,9 @@
   confidence: 确定
   tags: [灾害, 卫生, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2020/wuhan_lockdown.jpg"
+    caption: "全国全面打响疫情防控阻击战，武汉实施离汉通道管控"
 
 - id: cn-civil-code-202005
   date: "2020-05-28"
@@ -610,6 +622,9 @@
   confidence: 确定
   tags: [法律, 政治, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2020/civil_code.jpg"
+    caption: "十三届全国人大三次会议表决通过《中华人民共和国民法典》"
 
 - id: cn-hainan-free-trade-202006
   date: "2020-06-01"
@@ -650,6 +665,9 @@
   confidence: 确定
   tags: [航天, 科技, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2020/beidou3_system.jpg"
+    caption: "北斗三号全球卫星导航系统星座与导航服务示意图"
 
 - id: cn-korean-war-70th-202010
   date: "2020-10-23"
@@ -700,6 +718,9 @@
   confidence: 确定
   tags: [航天, 科技, 历史转折]
   sources: [新华网, 国家航天局]
+  image:
+    url: "/images/events/2020/change5_return.jpg"
+    caption: "嫦娥五号返回器携带月球样品在四子王旗成功着陆"
 
 - id: cn-economy-positive-202012
   date: "2020-12-31"
@@ -740,6 +761,9 @@
   confidence: 确定
   tags: [航天, 科技, 历史转折]
   sources: [新华网, 国家航天局]
+  image:
+    url: "/images/events/2021/tianhe_core_module.jpg"
+    caption: "长征五号B火箭点火升空，成功将天和核心舱送入预定轨道"
 
 - id: cn-zhurong-mars-landing-202105
   date: "2021-05-15"
@@ -749,6 +773,11 @@
   summary: 天问一号着陆巡视器成功着陆于火星乌托邦平原南部预选着陆区，“祝融号”火星车展开巡视探测，中国成为第二个成功着陆火星开展巡视探测的国家。
   confidence: 确定
   tags: [航天, 科技, 历史转折]
+  sources: [新华网, 国家航天局]
+  image:
+    url: "/images/events/2021/zhurong_mars_landing.jpg"
+    caption: "“祝融号”火星车驶上火星表面开展巡视探测"
+
 - id: cn-yuan-longping-pass-202105
   date: "2021-05-22"
   title: “杂交水稻之父”袁隆平院士在长沙逝世
@@ -792,6 +821,9 @@
   confidence: 确定
   tags: [政治, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2021/cpc_centenary.jpg"
+    caption: "庆祝中国共产党成立100周年大会在天安门广场隆重举行"
 
 - id: cn-meng-wanzhou-return-202109
   date: "2021-09-25"
@@ -852,6 +884,9 @@
   confidence: 确定
   tags: [体育, 文化, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2022/beijing_winter_olympics.jpg"
+    caption: "北京2022年冬奥会开幕式在国家体育场盛大举办"
 
 - id: cn-fujian-carrier-launch-202206
   date: "2022-06-17"
@@ -862,6 +897,9 @@
   confidence: 确定
   tags: [军事, 科技, 历史转折]
   sources: [新华网]
+  image:
+    url: "/images/events/2022/fujian_carrier_launch.jpg"
+    caption: "中国首艘弹射型航空母舰“福建舰”下水命名仪式"
 
 - id: cn-hk-25th-anniversary-202207
   date: "2022-07-01"
@@ -962,6 +1000,9 @@
   confidence: 确定
   tags: [航天, 科技, 历史转折]
   sources: [新华网, 国家航天局]
+  image:
+    url: "/images/events/2022/space_station_complete.jpg"
+    caption: "中国空间站“T”字基本构型全面建成示意图"
 
 - id: cn-china-asean-fta-201001
   date: "2010-01-01"
