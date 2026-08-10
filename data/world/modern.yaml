@@ -6491,3 +6491,84 @@
   confidence: 确定
   tags: [东帝汶, 印度尼西亚, 入侵, 联合国]
   sources: [联合国安理会, Encyclopaedia Britannica, Wikipedia—Indonesian invasion of East Timor]
+- id: w-guatemala-earthquake-197602
+  date: '1976-02-04'
+  title: 危地马拉大地震
+  category: 灾害
+  importance: 4
+  summary: 危地马拉发生7.5级地震，首都及高地地区受灾严重，造成约2.3万人死亡并引发大规模救援。
+  confidence: 确定
+  tags: [地震, 危地马拉, 灾害, 中美洲]
+  sources: [USGS, Encyclopaedia Britannica, Wikipedia—1976 Guatemala earthquake]
+- id: w-argentine-coup-197603
+  date: '1976-03-24'
+  title: 阿根廷军事政变
+  category: 政治
+  importance: 5
+  summary: 阿根廷军方推翻总统伊莎贝尔·庇隆，建立军政府，随后展开“肮脏战争”镇压。
+  confidence: 确定
+  tags: [阿根廷, 政变, 军政府, 冷战]
+  sources: [阿根廷国家档案馆, Encyclopaedia Britannica, Wikipedia—1976 Argentine coup d'état]
+- id: w-soweto-uprising-197606
+  date: '1976-06-16'
+  title: 索韦托起义
+  category: 政治
+  importance: 4
+  summary: 南非索韦托学生抗议南非语教学政策，警方开枪导致大量伤亡，事件成为反种族隔离运动的转折点。
+  confidence: 确定
+  tags: [南非, 索韦托, 种族隔离, 学生运动]
+  sources: [南非真相与和解委员会, Encyclopaedia Britannica, Wikipedia—Soweto uprising]
+- id: w-vietnam-reunification-197607
+  date: '1976-07-02'
+  title: 越南社会主义共和国正式统一
+  category: 政治
+  importance: 4
+  summary: 越南国会宣布南北越统一，成立越南社会主义共和国，西贡更名为胡志明市。
+  confidence: 确定
+  tags: [越南, 国家统一, 政治, 东南亚]
+  sources: [越南政府, Encyclopaedia Britannica, Wikipedia—Reunification Day]
+- id: w-operation-entebbe-197607
+  date: '1976-07-04'
+  title: 恩德培行动
+  category: 战争
+  importance: 4
+  summary: 以色列特种部队在乌干达恩德培机场营救被劫持航班人质，行动成功并显著影响反劫机政策。
+  confidence: 确定
+  tags: [以色列, 乌干达, 反恐, 人质营救]
+  sources: [以色列国防军, Encyclopaedia Britannica, Wikipedia—Operation Entebbe]
+- id: w-montreal-olympics-197607
+  date: '1976-07-17'
+  title: 蒙特利尔夏季奥运会开幕
+  category: 文化
+  importance: 3
+  summary: 第21届夏季奥运会在加拿大蒙特利尔开幕，来自100多个国家和地区的运动员参赛。
+  confidence: 确定
+  tags: [奥运会, 体育, 加拿大, 国际赛事]
+  sources: [国际奥委会, Encyclopaedia Britannica, Wikipedia—1976 Summer Olympics]
+- id: w-viking-1-lands-mars-197607
+  date: '1976-07-20'
+  title: “海盗1号”登陆火星
+  category: 文化
+  importance: 4
+  summary: 美国“海盗1号”探测器在火星乌托邦平原成功软着陆并传回首批火星表面图像和实验数据。
+  confidence: 确定
+  tags: [火星, 航天, NASA, 科技]
+  sources: [NASA, JPL, Wikipedia—Viking 1]
+- id: w-korean-axe-murder-197608
+  date: '1976-08-18'
+  title: 朝韩非军事区“砍树事件”
+  category: 战争
+  importance: 4
+  summary: 朝鲜士兵在板门店附近杀害两名美军军官，引发美朝军事对峙；美国随后实施“保罗·班扬行动”砍伐争议树木。
+  confidence: 确定
+  tags: [朝鲜半岛, 军事对峙, 美国, 朝鲜]
+  sources: [美国国防部, Encyclopaedia Britannica, Wikipedia—Korean axe murder incident]
+- id: w-us-election-197611
+  date: '1976-11-02'
+  title: 美国总统大选
+  category: 政治
+  importance: 3
+  summary: 美国总统选举中民主党候选人吉米·卡特击败现任总统杰拉尔德·福特，卡特于次年就任。
+  confidence: 确定
+  tags: [美国, 总统选举, 卡特, 政治]
+  sources: [美国国家档案和记录管理局, Encyclopaedia Britannica, Wikipedia—1976 United States presidential election]

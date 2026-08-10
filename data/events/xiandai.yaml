@@ -6056,3 +6056,57 @@
   confidence: 确定
   tags: [航天, 返回式卫星, 遥感, 科技]
   sources: [中国国家航天局, 中国航天科技集团, Wikipedia—Fanhui Shi Weixing]
+- id: cn-zhou-enlai-dies-197601
+  date: '1976-01-08'
+  title: 周恩来总理逝世
+  category: 政治
+  importance: 5
+  summary: 国务院总理周恩来在北京逝世，享年78岁；其治丧与后续政治影响成为当年中国重大政治事件。
+  confidence: 确定
+  tags: [周恩来, 国务院, 政治, 领导人]
+  sources: [新华社, 中国政府网, Wikipedia—Zhou Enlai]
+- id: cn-tiananmen-incident-197604
+  date: '1976-04-05'
+  title: 四五天安门事件
+  category: 政治
+  importance: 5
+  summary: 清明节期间群众在北京天安门广场悼念周恩来并表达政治诉求，4月5日发生清场和冲突，事件随后被重新定性。
+  confidence: 确定
+  tags: [四五运动, 天安门, 周恩来, 政治]
+  sources: [中国历史研究院, 新华社历史资料, Wikipedia—Tiananmen Incident]
+- id: cn-zhu-de-dies-197607
+  date: '1976-07-06'
+  title: 朱德委员长逝世
+  category: 政治
+  importance: 4
+  summary: 全国人大常委会委员长朱德在北京逝世，享年90岁；他是中国人民解放军和新中国主要缔造者之一。
+  confidence: 确定
+  tags: [朱德, 全国人大, 政治, 领导人]
+  sources: [新华社, 中国人大网, Wikipedia—Zhu De]
+- id: cn-tangshan-earthquake-197607
+  date: '1976-07-28'
+  title: 唐山大地震
+  category: 灾害
+  importance: 5
+  summary: 河北唐山发生里氏7.6级地震，造成大规模人员伤亡和城市毁坏，是20世纪死亡人数最多的自然灾害之一。
+  confidence: 确定
+  tags: [地震, 唐山, 河北, 灾害]
+  sources: [中国地震局, 新华社, Wikipedia—1976 Tangshan earthquake]
+- id: cn-mao-zedong-dies-197609
+  date: '1976-09-09'
+  title: 毛泽东主席逝世
+  category: 政治
+  importance: 5
+  summary: 中共中央主席、中央军委主席毛泽东在北京逝世，享年82岁；中国随后进入重要领导和政策调整阶段。
+  confidence: 确定
+  tags: [毛泽东, 中共中央, 政治, 领导人]
+  sources: [新华社, 中国政府网, Wikipedia—Mao Zedong]
+- id: cn-gang-of-four-arrested-197610
+  date: '1976-10-06'
+  title: 粉碎“四人帮”
+  category: 政治
+  importance: 5
+  summary: 华国锋等采取行动逮捕“四人帮”主要成员，标志“文化大革命”结束及中国政治转折。
+  confidence: 确定
+  tags: [四人帮, 文化大革命, 政治, 政权更迭]
+  sources: [新华社, 中国共产党新闻网, Wikipedia—Gang of Four]
