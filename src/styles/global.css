@@ -379,12 +379,8 @@ main,
   margin-bottom: 0;
 }
 
-.timeline.is-reversed .year-detail-wrapper,
-.timeline.is-reversed .world-detail-wrapper,
-.timeline.is-reversed .cell-china,
-.timeline.is-reversed .cell-world {
-  flex-direction: column-reverse;
-}
+/* 注意：倒序由 JS 物理重排 DOM 节点实现，不再使用 CSS flex-direction: column-reverse，
+   避免 JS 重排 + CSS 反转 = 双重反转导致回到正序 */
 
 .cell.is-empty,
 .banner-row.is-empty {
