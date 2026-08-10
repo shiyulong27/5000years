@@ -2226,6 +2226,86 @@
   tags: [民生, 农业, 改革, 历史转折]
   sources: [新华网, 人大网]
 
+- id: cn-constitution-amendment-200403
+  date: "2004-03-14"
+  title: 十届全国人大二次会议表决通过宪法修正案，将"国家尊重和保障人权"写入宪法
+  category: 政治
+  importance: 5
+  summary: 十届全国人大二次会议通过宪法修正案，首次将"国家尊重和保障人权"与"公民的合法的私有财产不受侵犯"写入宪法，具里程碑意义。
+  confidence: 确定
+  tags: [政治, 宪法, 人权, 历史转折]
+  sources: [新华网, 人大网]
+
+- id: cn-deng-xiaoping-centenary-200408
+  date: "2004-08-22"
+  title: 纪念邓小平同志诞辰100周年大会在北京隆重举行
+  category: 政治
+  importance: 4
+  summary: 邓小平诞辰100周年纪念大会在人民大会堂举行，胡锦涛发表重要讲话，深切怀念中国社会主义改革开放和现代化建设的总设计师。
+  confidence: 确定
+  tags: [政治, 纪念, 历史]
+  sources: [新华网]
+
+- id: cn-liu-xiang-athens-gold-200408
+  date: "2004-08-27"
+  title: 刘翔在雅典奥运会男子110米栏决赛夺冠并平世界纪录（12.91秒）
+  category: 文化
+  importance: 5
+  summary: 刘翔以12秒91的成绩平世界纪录并夺得金牌，创造了中国乃至亚洲人在男子短跑跨栏项目上的历史性突破。
+  confidence: 确定
+  tags: [体育, 奥运, 历史转折]
+  sources: [新华网, 国际奥委会]
+
+- id: cn-athens-olympics-200408
+  date: "2004-08-29"
+  title: 第28届雅典奥运会闭幕，中国代表团以32枚金牌高居金牌榜第二位
+  category: 文化
+  importance: 5
+  summary: 中国体育代表团斩获32金17银14铜，首次跃居奥运金牌榜第二名，创造了中国参加境外奥运会的历史最佳战绩。
+  confidence: 确定
+  tags: [体育, 奥运, 历史转折]
+  sources: [新华网]
+
+- id: cn-cpc-16th-4th-plenum-200409
+  date: "2004-09-19"
+  title: 中共十六届四中全会通过《关于加强党的执政能力建设的决定》
+  category: 政治
+  importance: 5
+  summary: 全会对加强党的执政能力建设作出全面部署，同意江泽民辞去中共中央军事委员会主席职务，决定胡锦涛任中共中央军事委员会主席。
+  confidence: 确定
+  tags: [政治, 党建, 军事, 历史转折]
+  sources: [新华网]
+
+- id: cn-russia-border-agreement-200410
+  date: "2004-10-14"
+  title: 中俄在京签署国界东段补充协定，彻底解决长达4300公里的中俄边界问题
+  category: 政治
+  importance: 5
+  summary: 两国外长签署《关于中俄国界东段的补充协定》，确定黑瞎子岛和阿巴该图洲渚划界，标志着中俄4300多公里边界线全线定界。
+  confidence: 确定
+  tags: [外交, 边界, 历史转折]
+  sources: [外交部, 新华网]
+
+- id: cn-first-economic-census-200412
+  date: "2004-12-31"
+  title: 第一全国经济普查登记工作在全国范围全面展开
+  category: 经济
+  importance: 4
+  summary: 国务院开展首次全国经济普查，全面摸清中国第二、第三产业的发展状况、结构和效益，为制定经济社会政策提供权威科学支撑。
+  confidence: 确定
+  tags: [经济, 统计]
+  sources: [国家统计局, 新华网]
+
+- id: cn-macau-5th-anniversary-200412
+  date: "2004-12-20"
+  title: 庆祝澳门回归祖国5周年大会暨澳门特区第二届政府就职典礼举行
+  category: 政治
+  importance: 4
+  summary: 胡锦涛出席庆祝大会并发表讲话，何厚铧宣誓连任第二任行政长官，展现了"一国两制"在澳门的成功实践。
+  confidence: 确定
+  tags: [政治, 澳门, 一国两制]
+  sources: [新华网]
+
 - id: cn-socialist-values-200603
   date: "2006-03-04"
   title: 胡锦涛提出以"八荣八耻"为主要内容的社会主义荣辱观
