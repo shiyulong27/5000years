@@ -3662,5 +3662,85 @@
   tags: [灾害, 民生, 历史转折]
   sources: [维基百科, 新华网]
 
+- id: w-gorbachev-general-secretary-198503
+  date: "1985-03-11"
+  title: 戈尔巴乔夫当选苏共中央总书记
+  category: 政治
+  importance: 5
+  summary: 米哈伊尔·戈尔巴乔夫在契尔年科病逝后当选苏共中央总书记，随后推行"公开性"与"改革重建"，开启苏联体制变革并最终导致冷战终结与苏联解体。
+  confidence: 确定
+  tags: [政治, 改革, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-live-aid-concert-198507
+  date: "1985-07-13"
+  title: 全球Live Aid慈善摇滚演唱会举行
+  category: 文化
+  importance: 3
+  summary: 为援助非洲饥荒，伦敦温布利与费城肯尼迪球场同时举办Live Aid跨洋现场演唱会，全球逾19亿观众收看，是史上首场全球卫星直播的慈善盛事。
+  confidence: 确定
+  tags: [文化, 民生]
+  sources: [维基百科, 新华网]
+
+- id: w-jal123-crash-198508
+  date: "1985-08-12"
+  title: 日本航空123号班机坠毁，520人遇难
+  category: 灾害
+  importance: 4
+  summary: 日本航空123号班机在群马县高天原山坠毁，520人遇难仅4人生还，是迄今世界航空史上最严重的单一飞行器空难，日航安全文化由此深刻重塑。
+  confidence: 确定
+  tags: [灾害, 民生]
+  sources: [维基百科, 新华网]
+
+- id: w-titanic-wreck-found-198509
+  date: "1985-09-01"
+  title: '"泰坦尼克"号残骸在大西洋海底被发现'
+  category: 文化
+  importance: 3
+  summary: 美法联合考察队用深海潜水器在北大西洋3800米深处发现1912年沉没的"泰坦尼克"号残骸，开启深海考古与泰坦尼克研究的崭新阶段。
+  confidence: 确定
+  tags: [科考, 科技]
+  sources: [维基百科, 新华网]
+
+- id: w-mexico-earthquake-198509
+  date: "1985-09-19"
+  title: 墨西哥城发生8.1级大地震
+  category: 灾害
+  importance: 4
+  summary: 墨西哥西南海域发生8.1级地震，首都墨西哥城遭受重创，官方确认逾万人死亡，数十万人无家可归，暴露首都软土地基建筑的抗震隐患。
+  confidence: 确定
+  tags: [灾害, 气候]
+  sources: [维基百科, 新华网]
+
+- id: w-nevado-ruiz-volcano-198511
+  date: "1985-11-13"
+  title: 哥伦比亚内瓦多·德·鲁伊斯火山爆发，阿尔梅罗城被毁
+  category: 灾害
+  importance: 4
+  summary: 哥伦比亚内瓦多·德·鲁伊斯火山爆发，融雪形成的泥石流吞没阿尔梅罗城，约2.3万人罹难，是20世纪最致命的火山灾难之一。
+  confidence: 确定
+  tags: [灾害, 气候]
+  sources: [维基百科, 新华网]
+
+- id: w-geneva-summit-198511
+  date: "1985-11-19"
+  title: 里根与戈尔巴乔夫举行日内瓦峰会
+  category: 政治
+  importance: 4
+  summary: 美国总统里根与苏联领导人戈尔巴乔夫在日内瓦举行首次会晤，双方就军备控制与人权交换意见，开启美苏关系缓和与一系列首脑峰会。
+  confidence: 确定
+  tags: [外交, 政治]
+  sources: [维基百科, 新华网]
+
+- id: w-windows1-release-198511
+  date: "1985-11-20"
+  title: 微软Windows 1.0正式发布
+  category: 文化
+  importance: 4
+  summary: 微软公司发布首个图形用户界面操作系统Windows 1.0，为个人电脑提供多任务视窗环境，开启此后主导个人计算三十年的Windows王朝。
+  confidence: 确定
+  tags: [科技, 互联网]
+  sources: [维基百科, 微软]
+
 
 

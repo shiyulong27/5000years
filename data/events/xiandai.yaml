@@ -3558,4 +3558,64 @@
   tags: [外交, 政治, 历史转折]
   sources: [新华网, 外交部]
 
+- id: cn-rural-10policies-198501
+  date: "1985-01-01"
+  title: 中共中央国务院发布活跃农村经济十项政策，取消农产品统购派购
+  category: 经济
+  importance: 4
+  summary: 中共中央、国务院发布《关于进一步活跃农村经济的十项政策》，决定取消实行30余年的农产品统购派购制度，改为合同定购，深化农村改革。
+  confidence: 确定
+  tags: [改革, 经济, 民生]
+  sources: [新华网, 人民日报]
+
+- id: cn-antarctic-greatwall-station-198502
+  date: "1985-02-20"
+  title: 中国南极长城站建成
+  category: 文化
+  importance: 5
+  summary: 中国在南极乔治王岛建成的第一座南极科学考察站"长城站"举行落成典礼，标志中国跻身南极科考国家行列，开启极地科学考察时代。
+  confidence: 确定
+  tags: [科考, 科技, 历史转折]
+  sources: [新华网, 国家海洋局]
+
+- id: cn-education-reform-decision-198505
+  date: "1985-05-27"
+  title: 中共中央发布《关于教育体制改革的决定》
+  category: 文化
+  importance: 4
+  summary: 中共中央发布《关于教育体制改革的决定》，提出实行九年制义务教育、分级管理基础教育、调整中等教育结构，是改革开放后教育体制的根本性改革纲领。
+  confidence: 确定
+  tags: [教育, 改革]
+  sources: [新华网, 人民日报]
+
+- id: cn-million-troop-cut-198506
+  date: "1985-06-04"
+  title: 邓小平宣布中国人民解放军裁减员额一百万
+  category: 政治
+  importance: 5
+  summary: 中央军委扩大会议在北京举行，邓小平宣布中国人民解放军减少员额一百万，军队建设转向现代化、正规化，向世界释放中国维护和平、转向以经济建设为中心的信号。
+  confidence: 确定
+  tags: [军事, 改革, 历史转折]
+  sources: [新华网, 中央军委]
+
+- id: cn-first-teachers-day-198509
+  date: "1985-09-10"
+  title: 新中国庆祝第一个教师节
+  category: 文化
+  importance: 3
+  summary: 全国各地隆重庆祝第六届全国人大常委会确定的9月10日教师节，是为新中国成立后首个教师节，旨在形成尊师重教的社会风尚。
+  confidence: 确定
+  tags: [教育, 民生]
+  sources: [新华网, 教育部]
+
+- id: cn-7th-5year-plan-proposal-198509
+  date: "1985-09-23"
+  title: 中共全国代表会议通过"七五"计划建议
+  category: 政治
+  importance: 3
+  summary: 中共全国代表会议在北京举行，通过《中共中央关于制定国民经济和社会发展第七个五年计划的建议》，进一步推进经济体制改革和对外开放。
+  confidence: 确定
+  tags: [改革, 经济]
+  sources: [新华网, 人民日报]
+
 
