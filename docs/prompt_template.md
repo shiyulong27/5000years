@@ -56,6 +56,7 @@ test/                     # Vitest 单元测试
 3. **summaryYears 数组**：Timeline.astro 和 AxisCell.astro 中的 summaryYears 数组控制哪些年份有 [概览/详情] 切换功能，当前为 [2000~2026]
 4. **前端交互全由原生 JS**：src/client/timeline-ui.js 负责等级筛选、分类筛选、正序/倒序切换、视图模式切换，不使用任何前端框架
 5. **倒序排列**：通过 JS 物理重排 DOM 节点实现（不用 CSS flex-direction: column-reverse，会导致双重反转）
+6. **年份概览卡片 (YearSummaryCard)**：概览卡片不使用固定的静态模版描述，而是接收 events={row.cnEvents} 属性，动态按重要度提炼该年份最核心的 3~5 条中国要闻生成列表概览
 
 ## 三步门禁校验（每次修改后必须跑）
 npm run validate   # 校验 YAML 数据格式
