@@ -1,3921 +1,5271 @@
 - id: prc-founding-1949
-  date: "1949"
+  date: '1949'
   title: 开国大典
   category: 政治
-  tags: [建国, 历史转折]
+  tags:
+    - 建国
+    - 历史转折
   importance: 5
   summary: 毛泽东于北京天安门城楼宣告中华人民共和国中央人民政府成立。
   confidence: 确定
-
 - id: un-seat-restored-1971
-  date: "1971"
+  date: '1971'
   title: 恢复联合国合法席位
   category: 政治
-  tags: [外交, 历史转折]
+  tags:
+    - 外交
+    - 历史转折
   importance: 5
   summary: 第26届联合国大会通过第2758号决议，恢复中华人民共和国在联合国的一切合法权利。
   confidence: 确定
-
 - id: reform-opening-1978
-  date: "1978"
+  date: '1978'
   title: 十一届三中全会，改革开放始
   category: 政治
-  tags: [改革, 历史转折]
+  tags:
+    - 改革
+    - 历史转折
   importance: 5
   summary: 中共十一届三中全会召开，将工作中心转移到经济建设上来，开启改革开放历史新时期。
   confidence: 确定
-
 - id: wto-entry-2001
-  date: "2001"
+  date: '2001'
   title: 加入世界贸易组织
   category: 经济
-  tags: [经济, 贸易, 历史转折]
+  tags:
+    - 经济
+    - 贸易
+    - 历史转折
   importance: 4
   summary: 中国正式加入世界贸易组织（WTO），全面融入世界经济体系。
   confidence: 确定
-
 - id: shenzhou-5-2003
-  date: "2003"
+  date: '2003'
   title: 神舟五号载人航天
   category: 文化
   importance: 4
   summary: 航天员杨利伟乘神舟五号飞船成功进入太空并安全返回，中国首次载人航天飞行圆满成功。
   confidence: 确定
-  tags: [科技]
-
+  tags:
+    - 科技
 - id: beijing-olympics-2008
-  date: "2008"
+  date: '2008'
   title: 北京奥运
   category: 文化
   importance: 3
   summary: 第29届夏季奥林匹克运动会在北京成功举办。
   confidence: 确定
-
 - id: cn-energy-degree-law-202501
-  date: "2025-01-01"
+  date: '2025-01-01'
   title: 《能源法》《学位法》施行与渐进式延迟退休启动
   category: 政治
   importance: 4
   summary: 《中华人民共和国能源法》《学位法》正式施行，同时中国渐进式延迟法定退休年龄工作全面启动。
   confidence: 确定
-  tags: [法律, 改革]
-
+  tags:
+    - 法律
+    - 改革
 - id: cn-deepseek-202501
-  date: "2025-01-20"
+  date: '2025-01-20'
   title: DeepSeek-R1发布震动全球AI格局
   category: 文化
   importance: 5
   summary: 深度求索公司发布开源推理大模型DeepSeek-R1，性能比肩全球顶尖闭源模型而训练成本显著更低，引发世界对中国AI实力的重新评估与全球科技股市场震荡。
   confidence: 确定
-  tags: [科技, AI]
+  tags:
+    - 科技
+    - AI
   image:
-    url: "/images/events/2025/deepseek-r1-pipeline.png"
-    caption: "DeepSeek-R1技术报告展示的多阶段训练流程图"
-
+    url: /images/events/2025/deepseek-r1-pipeline.png
+    caption: DeepSeek-R1技术报告展示的多阶段训练流程图
 - id: cn-spring-festival-economy-202502
-  date: "2025-02"
+  date: 2025-02
   title: 农历乙巳蛇年春节假日经济再创新高
   category: 经济
   importance: 3
   summary: 乙巳蛇年春节假期全国旅游出行与文旅消费均创历史新高，假日经济展现强大内需韧性。
   confidence: 确定
-  tags: [经济, 文化]
-
+  tags:
+    - 经济
+    - 文化
 - id: cn-harbin-asiad-winter-202502
-  date: "2025-02-07"
+  date: '2025-02-07'
   title: 第九届亚洲冬季运动会在哈尔滨举行
   category: 文化
   importance: 3
   summary: 第九届亚洲冬季运动会在哈尔滨开幕，系中国第三次举办亚冬会，中国代表团位居金牌榜与奖牌榜首位。
   confidence: 确定
-  tags: [体育, 亚冬会]
-
+  tags:
+    - 体育
+    - 亚冬会
 - id: cn-two-sessions-202503
-  date: "2025-03-05"
+  date: '2025-03-05'
   title: 全国两会举行，确定全年发展目标任务
   category: 政治
   importance: 4
   summary: 十四届全国人大三次会议与全国政协十四届三次会议在北京召开，政府工作报告将全年经济增长预期目标定为5%左右，部署扩大内需、发展新质生产力、进一步扩大高水平对外开放等重点任务。
   confidence: 确定
-  tags: [政治, 两会]
-
+  tags:
+    - 政治
+    - 两会
 - id: cn-nezh2-boxoffice-202503
-  date: "2025-03"
+  date: 2025-03
   title: 《哪吒之魔童闹海》全球票房突破150亿元
   category: 文化
   importance: 4
   summary: 国产动画电影《哪吒之魔童闹海》全球总票房突破150亿元人民币，刷新全球单市场动画电影票房纪录。
   confidence: 确定
-  tags: [文化, 电影]
-
+  tags:
+    - 文化
+    - 电影
 - id: cn-strait-thunder-202504
-  date: "2025-04"
+  date: 2025-04
   title: 东部战区举行“海峡雷霆-2025A”演练
   category: 政治
   importance: 4
   summary: 中国人民解放军东部战区在台岛周边组织“海峡雷霆-2025A”演练，检验联合打击与封控能力。
   confidence: 确定
-  tags: [军事]
-
+  tags:
+    - 军事
 - id: cn-eu-china-50th-202505
-  date: "2025-05-06"
+  date: '2025-05-06'
   title: 中欧建交50周年
   category: 政治
   importance: 4
   summary: 中国与欧洲联盟迎来建交50周年，双方举行系列高端对话与文化交流活动。
   confidence: 确定
-  tags: [外交]
-
+  tags:
+    - 外交
 - id: cn-russia-victory-day-202505
-  date: "2025-05-09"
+  date: '2025-05-09'
   title: 国家主席访俄并出席卫国战争胜利80周年庆典
   category: 政治
   importance: 4
   summary: 国家主席对俄罗斯进行国事访问，并出席纪念苏联卫国战争胜利80周年庆典，中俄发表联合声明，深化新时代全面战略协作伙伴关系。
   confidence: 确定
-  tags: [外交, 中俄]
-
+  tags:
+    - 外交
+    - 中俄
 - id: cn-tianwen-2-202505
-  date: "2025-05"
+  date: 2025-05
   title: 天问二号开启小行星采样探测
   category: 文化
   importance: 4
   summary: 中国“天问二号”探测器发射升空，开启对近地小行星的伴飞探测与样品采样返回任务。
   confidence: 确定
-  tags: [航天, 科技]
-
+  tags:
+    - 航天
+    - 科技
 - id: cn-preschool-education-law-202506
-  date: "2025-06-01"
+  date: '2025-06-01'
   title: 《学前教育法》与新修订《监察法》施行
   category: 政治
   importance: 3
   summary: 《中华人民共和国学前教育法》及新修订的《监察法》正式施行，完善教育与监督法治保障。
   confidence: 确定
-  tags: [法律]
-
+  tags:
+    - 法律
 - id: cn-tianzhou-9-202507
-  date: "2025-07-15"
+  date: '2025-07-15'
   title: 天舟九号货运飞船成功发射
   category: 文化
   importance: 4
   summary: 天舟九号货运飞船在文昌航天发射场发射升空，顺利完成与空间站的自主快速交会对接。
   confidence: 确定
-  tags: [航天, 科技]
-
+  tags:
+    - 航天
+    - 科技
 - id: cn-free-preschool-202508
-  date: "2025-08-05"
+  date: '2025-08-05'
   title: 逐步推行免费学前教育政策出台
   category: 经济
   importance: 4
   summary: 国务院发布政策指导意见，从2025年秋季学期起逐步免除公办幼儿园学前一年保育教育费。
   confidence: 确定
-  tags: [民生, 教育]
-
+  tags:
+    - 民生
+    - 教育
 - id: cn-xizang-60th-202508
-  date: "2025-08-21"
+  date: '2025-08-21'
   title: 西藏自治区成立60周年庆祝大会
   category: 政治
   importance: 4
   summary: 西藏自治区成立60周年庆祝大会在拉萨隆重举行，展现西藏经济社会发展与民族团结历史性成就。
   confidence: 确定
-  tags: [政治, 西藏]
-
+  tags:
+    - 政治
+    - 西藏
 - id: cn-sco-tianjin-202509
-  date: "2025-09-01"
+  date: '2025-09-01'
   title: 上海合作组织天津峰会举行
   category: 政治
   importance: 5
   summary: 上海合作组织成员国元首理事会第二十五次会议在天津举行，中方提出“全球治理倡议”。
   confidence: 确定
-  tags: [外交, 上合]
+  tags:
+    - 外交
+    - 上合
   image:
-    url: "/images/events/2025/sco-tianjin-summit.jpg"
-    caption: "2025年上海合作组织天津峰会与会领导人合影"
-
+    url: /images/events/2025/sco-tianjin-summit.jpg
+    caption: 2025年上海合作组织天津峰会与会领导人合影
 - id: cn-antijapan-80th-202509
-  date: "2025-09-03"
+  date: '2025-09-03'
   title: 纪念抗战胜利80周年大会与阅兵
   category: 政治
   importance: 5
   summary: 纪念中国人民抗日战争暨世界反法西斯战争胜利80周年大会在北京隆重举行并举行阅兵仪式。
   confidence: 确定
-  tags: [军事, 纪念]
+  tags:
+    - 军事
+    - 纪念
   image:
-    url: "/images/events/2025/victory-day-parade.jpg"
-    caption: "2025年9月3日，北京举行纪念抗战胜利80周年阅兵"
-
+    url: /images/events/2025/victory-day-parade.jpg
+    caption: 2025年9月3日，北京举行纪念抗战胜利80周年阅兵
 - id: cn-fujian-catapult-202509
-  date: "2025-09-22"
+  date: '2025-09-22'
   title: 福建舰完成多型舰载机电磁弹射训练
   category: 政治
   importance: 4
   summary: 歼-15T、歼-35及空警-600等多型舰载机在电磁弹射航母福建舰上成功实施弹射起飞与着舰训练。
   confidence: 确定
-  tags: [军事]
-
+  tags:
+    - 军事
 - id: cn-cz-600th-202510
-  date: "2025-10"
+  date: 2025-10
   title: 长征系列火箭完成第600次发射
   category: 文化
   importance: 4
   summary: 长征系列运载火箭成功完成第600次发射，自1970年长征一号首飞至此历时55年；2025年全年长征系列共实施69次发射，高密度发射能力持续刷新。
   confidence: 确定
-  tags: [航天, 科技]
-
+  tags:
+    - 航天
+    - 科技
 - id: cn-jiaolong-arctic-202510
-  date: "2025-10"
+  date: 2025-10
   title: 蛟龙号完成我国首次北极冰区载人深潜
   category: 文化
   importance: 4
   summary: “蛟龙”号载人潜水器成功完成我国首次北极冰区载人深潜科考，获取极区关键科学数据。
   confidence: 确定
-  tags: [深潜, 科技]
-
+  tags:
+    - 深潜
+    - 科技
 - id: cn-4th-plenum-20th-202510
-  date: "2025-10-20"
+  date: '2025-10-20'
   title: 中共二十届四中全会审议“十五五”规划建议
   category: 政治
   importance: 5
   summary: 中共二十届四中全会在北京举行，审议通过《中共中央关于制定国民经济和社会发展第十五个五年规划的建议》。
   confidence: 确定
-  tags: [政治, 十五五]
+  tags:
+    - 政治
+    - 十五五
   image:
-    url: "/images/events/2025/great-hall-of-the-people.jpg"
-    caption: "2025年10月的北京人民大会堂外景；二十届四中全会在此举行"
-
+    url: /images/events/2025/great-hall-of-the-people.jpg
+    caption: 2025年10月的北京人民大会堂外景；二十届四中全会在此举行
 - id: cn-shenzhou-20-21-202511
-  date: "2025-11-01"
+  date: '2025-11-01'
   title: 神舟二十号与二十一号乘组空间站太空会师
   category: 文化
   importance: 4
   summary: 神舟二十号与神舟二十一号航天员乘组在中国空间站成功实现“太空会师”，开启新一轮轨轮换。
   confidence: 确定
-  tags: [航天, 科技]
-
+  tags:
+    - 航天
+    - 科技
 - id: cn-antarctic-42-202511
-  date: "2025-11-01"
+  date: '2025-11-01'
   title: 中国第42次南极考察队起航出征
   category: 文化
   importance: 3
   summary: 中国第42次南极考察队从上海起航，开展极地气候变化、生态环境监测及站区建设任务。
   confidence: 确定
-  tags: [科考]
-
+  tags:
+    - 科考
 - id: cn-fujian-commission-202511
-  date: "2025-11-05"
+  date: '2025-11-05'
   title: 福建舰正式入列，中国进入三航母时代
   category: 政治
   importance: 5
   summary: 我国首艘电磁弹射型航空母舰福建舰入列授旗仪式举行，国家主席出席并登舰视察。福建舰满载排水量8万余吨，为全球首艘采用常规动力电磁弹射技术的航母，驻泊三亚某军港。
   confidence: 确定
-  tags: [军事, 海军]
+  tags:
+    - 军事
+    - 海军
   image:
-    url: "/images/events/2025/fujian-flight-deck.jpg"
-    caption: "福建舰飞行甲板与舰载机画面"
-
+    url: /images/events/2025/fujian-flight-deck.jpg
+    caption: 福建舰飞行甲板与舰载机画面
 - id: cn-shenzhou-20-emergency-202511
-  date: "2025-11-14"
+  date: '2025-11-14'
   title: 神舟二十号遭碎片撞击，载人航天首次应急处置
   category: 文化
   importance: 4
   summary: 神舟二十号返回舱舷窗疑遭空间碎片撞击受损、返回任务推迟；11月14日神舟二十号乘组改乘神舟二十一号飞船安全返回，11月25日神舟二十二号以无人状态应急发射，为空间站首次应急处置。
   confidence: 确定
-  tags: [航天, 应急]
-
+  tags:
+    - 航天
+    - 应急
 - id: cn-lunar-program-202602
-  date: "2026-02-11"
+  date: '2026-02-11'
   title: 长征十号低空演示与梦舟载人飞船逃逸试验，载人登月关键节点
   category: 文化
   importance: 4
   summary: 文昌航天发射场完成长征十号运载火箭低空演示验证与梦舟载人飞船最大动压逃逸飞行试验，为中国载人登月计划的关键节点。
   confidence: 确定
-  tags: [航天, 科技]
-
+  tags:
+    - 航天
+    - 科技
 - id: cn-spring-festival-202602
-  date: "2026-02-17"
+  date: '2026-02-17'
   title: 丙午马年春节，消费与文旅再创新高
   category: 经济
   importance: 3
   summary: 2026丙午马年春节假期全国出游人次与消费总额再创历史新高，免签范围扩大推动入境游蓬勃发展。
   confidence: 确定
-  tags: [民俗, 经济]
-
+  tags:
+    - 民俗
+    - 经济
 - id: cn-6g-record-202602
-  date: "2026-02-18"
+  date: '2026-02-18'
   title: 我国6G通信技术刷新世界纪录
   category: 文化
   importance: 4
   summary: 中国科研团队公布光纤与无线融合通信研究成果，称创造三项世界纪录，6G传输速率刷新世界纪录，相关论文发表于《自然》。
   confidence: 确定
-  tags: [科技, 通信]
-
+  tags:
+    - 科技
+    - 通信
 - id: cn-two-sessions-202603
-  date: "2026-03-05"
+  date: '2026-03-05'
   title: 十四届全国人大四次会议表决通过“十五五”规划纲要
   category: 政治
   importance: 5
   summary: 十四届全国人大四次会议在北京召开，表决通过《中华人民共和国国民经济和社会发展第十五个五年规划和2035年远景目标纲要》。
   confidence: 确定
-  tags: [政治, 十五五, 历史转折]
-
+  tags:
+    - 政治
+    - 十五五
+    - 历史转折
 - id: cn-trump-visit-202605
-  date: "2026-05-13"
+  date: '2026-05-13'
   title: 特朗普访华，举行第六次“习特会”
   category: 政治
   importance: 4
   summary: 美国总统特朗普访华并与习近平举行会谈，为继2025年10月韩国釜山会晤后的第六次“习特会”。
   confidence: 确定
-  tags: [外交, 政治]
-
+  tags:
+    - 外交
+    - 政治
 - id: cn-tianwen2-asteroid-202607
-  date: "2026-07-06"
+  date: '2026-07-06'
   title: 天问二号抵达近地小行星“振荡天星”开展探测
   category: 文化
   importance: 4
   summary: 中国天问二号探测器抵达近地小行星“振荡天星”附近，开始近距离科学探测，为行星探测任务重要节点。
   confidence: 确定
-  tags: [航天, 科技]
-
+  tags:
+    - 航天
+    - 科技
 - id: cn-cz10b-recovery-202607
-  date: "2026-07-10"
+  date: '2026-07-10'
   title: 长征十号乙运载火箭一级受控回收成功
   category: 文化
   importance: 4
   summary: 长征十号乙运载火箭从海南商业航天发射场升空，并完成一级火箭受控回收，被视为国内可重复使用重型火箭的关键突破。
   confidence: 确定
-  tags: [航天, 科技]
-
+  tags:
+    - 航天
+    - 科技
 - id: cn-fields-medal-202607
-  date: "2026-07-23"
+  date: '2026-07-23'
   title: 中国籍数学家首次获得菲尔兹奖
   category: 文化
   importance: 4
   summary: 邓煜、王虹获得2026年菲尔兹奖，为首次获此殊荣的中国籍数学家，王虹并为该奖历史上第三位女性得主。
   confidence: 确定
-  tags: [科技, 数学]
-
+  tags:
+    - 科技
+    - 数学
 - id: cn-army-day-202608
-  date: "2026-08-01"
+  date: '2026-08-01'
   title: 庆祝建军99周年，新型国防科技成果集中发布
   category: 政治
   importance: 4
   summary: 中国人民解放军建军99周年之际，我国自研新型无人作战系统与新概念防空装备集中公布。
   confidence: 确定
-  tags: [军事, 科技]
-
+  tags:
+    - 军事
+    - 科技
 - id: cn-two-sessions-202303
-  date: "2023-03"
+  date: 2023-03
   title: 全国两会部署落实党的二十大部署与全年目标任务
   category: 政治
   importance: 4
   summary: 十四届全国人大一次会议与全国政协十四届一次会议在北京召开，贯彻党的二十大精神，确定2023年经济社会发展目标任务，选举产生新一届国家机构领导人员。
   confidence: 确定
-  tags: [政治, 两会]
-
+  tags:
+    - 政治
+    - 两会
 - id: cn-institution-reform-202303
-  date: "2023-03-16"
+  date: '2023-03-16'
   title: 党和国家机构改革启动实施
   category: 政治
   importance: 4
   summary: 中共中央、国务院印发《党和国家机构改革方案》，组建中央金融委员会、中央科技委员会等部门，深化重点领域机构职能改革。
   confidence: 确定
-  tags: [政治, 改革]
-
+  tags:
+    - 政治
+    - 改革
 - id: cn-thematic-education-202304
-  date: "2023-04"
+  date: 2023-04
   title: 学习贯彻党的二十大精神主题教育开展
   category: 政治
   importance: 3
   summary: 中共中央部署在全党开展学习贯彻党的二十大精神的主题教育活动，以县处级以上领导干部为重点分两批开展。
   confidence: 确定
-  tags: [政治, 党建]
-
+  tags:
+    - 政治
+    - 党建
 - id: cn-saudi-iran-202303
-  date: "2023-03-10"
+  date: '2023-03-10'
   title: 中国促成沙特伊朗复交
   category: 政治
   importance: 5
   summary: 经北京对话斡旋，沙特阿拉伯与伊朗在北京签署联合声明宣布恢复外交关系，被视为中东和解潮的转折点，凸显中国斡旋区域冲突的外交影响力。
   confidence: 确定
-  tags: [外交, 中东]
+  tags:
+    - 外交
+    - 中东
   image:
-    url: "/images/events/2023/saudi_iran_reconciliation.jpg"
-    caption: "沙特阿拉伯与伊朗代表在北京签署联合声明宣布恢复外交关系"
-
+    url: /images/events/2023/saudi_iran_202303.jpg
+    caption: 中国促成沙特伊朗复交历史现场与典藏影像
 - id: cn-c919-202305
-  date: "2023-05-28"
+  date: '2023-05-28'
   title: C919国产大飞机商业首航
   category: 文化
   importance: 4
   summary: 全球首架国产大飞机C919执飞上海虹桥—北京首都航线，圆满完成首次商业载客飞行，中国民航自此进入自主研制干线客机时代。
   confidence: 确定
-  tags: [航空, 科技]
-
+  tags:
+    - 航空
+    - 科技
 - id: cn-casia-summit-202305
-  date: "2023-05-18"
+  date: '2023-05-18'
   title: 中国—中亚峰会西安举行
   category: 政治
   importance: 4
   summary: 首届中国—中亚峰会在西安举行，六国元首共同签署《中国—中亚峰会西安宣言》，构建更加紧密的中国—中亚命运共同体。
   confidence: 确定
-  tags: [外交, 中亚]
-
+  tags:
+    - 外交
+    - 中亚
 - id: cn-games-2023
-  date: "2023-07-28"
+  date: '2023-07-28'
   title: 成都大运会与杭州亚运会先后举办
   category: 文化
   importance: 3
   summary: 第31届世界大学生夏季运动会在成都、第19届亚运会在杭州相继成功举办，向世界展示中国城市活力与体育实力。
   confidence: 确定
-  tags: [体育]
-
+  tags:
+    - 体育
 - id: cn-xi-culture-thought-202310
-  date: "2023-10-07"
+  date: '2023-10-07'
   title: 明确提出习近平文化思想
   category: 政治
   importance: 4
   summary: 全国宣传思想文化工作会议首次提出并系统阐述习近平文化思想，为新时代文化建设提供根本遵循。
   confidence: 确定
-  tags: [政治, 文化]
-
+  tags:
+    - 政治
+    - 文化
 - id: cn-belt-road-forum-202310
-  date: "2023-10-18"
+  date: '2023-10-18'
   title: 第三届“一带一路”国际合作高峰论坛举行
   category: 政治
   importance: 4
   summary: 第三届“一带一路”国际合作高峰论坛在北京举行，150多个国家、40多位外国领导人与会，宣布中国支持高质量共建“一带一路”的八项行动。
   confidence: 确定
-  tags: [外交, 一带一路]
-
+  tags:
+    - 外交
+    - 一带一路
 - id: cn-financial-meeting-202310
-  date: "2023-10-30"
+  date: '2023-10-30'
   title: 中央金融工作会议首提建设金融强国
   category: 政治
   importance: 4
   summary: 中央金融工作会议在北京举行，首次提出“加快建设金融强国”目标，部署全面加强金融监管、防范化解金融风险。
   confidence: 确定
-  tags: [经济, 金融]
-
+  tags:
+    - 经济
+    - 金融
 - id: cn-jishishan-quake-202312
-  date: "2023-12-18"
+  date: '2023-12-18'
   title: 甘肃积石山6.2级地震，国家紧急救援
   category: 灾害
   importance: 4
   summary: 甘肃临夏州积石山县发生6.2级地震，造成重大人员伤亡与房屋损毁，国家主席对抗震救灾作出重要指示，各方力量全力抢险救援。
   confidence: 确定
-  tags: [灾害, 抗震]
-
+  tags:
+    - 灾害
+    - 抗震
 - id: cn-economy-2023
-  date: "2023-12"
+  date: 2023-12
   title: 全年经济回升向好，GDP增长5.2%
   category: 经济
   importance: 4
   summary: 2023年全年国内生产总值超过126万亿元，按不变价格计算比上年增长5.2%，经济总体回升向好、高质量发展扎实推进。
   confidence: 确定
-  tags: [经济, 宏观]
-
+  tags:
+    - 经济
+    - 宏观
 - id: cn-taiwan-election-202401
-  date: "2024-01-13"
+  date: '2024-01-13'
   title: 2024年台湾地区领导人与立法机构选举举行
   category: 政治
   importance: 4
   summary: 赖清德当选台湾地区领导人，民进党丧失立法机构多数席位，两岸关系与台海局势保持严峻复杂。
   confidence: 确定
-  tags: [政治, 外交]
-  sources: [新华网, 维基百科]
-
+  tags:
+    - 政治
+    - 外交
+  sources:
+    - 新华网
+    - 维基百科
 - id: cn-two-sessions-202403
-  date: "2024-03-05"
+  date: '2024-03-05'
   title: 十四届全国人大二次会议在北京召开
   category: 政治
   importance: 4
   summary: 十四届全国人大二次会议与全国政协十四届二次会议在北京召开，审议通过国务院工作报告，明确全年经济增长5%左右等目标。
   confidence: 确定
-  tags: [政治, 两会]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 两会
+  sources:
+    - 新华网
 - id: cn-party-discipline-education-202404
-  date: "2024-04-01"
+  date: '2024-04-01'
   title: 全党扎实开展党纪学习教育
   category: 政治
   importance: 3
   summary: 中共中央印发通知，自2024年4月至7月在全党开展党纪学习教育，推动全面从严治党向纵深发展。
   confidence: 确定
-  tags: [政治, 党建]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 党建
+  sources:
+    - 新华网
 - id: cn-joint-sword-202405
-  date: "2024-05-23"
+  date: '2024-05-23'
   title: 东部战区组织“联合利剑-2024A”演习
   category: 政治
   importance: 4
   summary: 中国人民解放军东部战区在台岛周边组织“联合利剑-2024A”演习，坚决捍卫国家主权和领土完整。
   confidence: 确定
-  tags: [军事, 外交]
-  sources: [新华网]
-
+  tags:
+    - 军事
+    - 外交
+  sources:
+    - 新华网
 - id: cn-change6-sample-202406
-  date: "2024-06-25"
+  date: '2024-06-25'
   title: 嫦娥六号实现人类首次月球背面采样返回
   category: 文化
   importance: 5
   summary: 嫦娥六号返回器成功带回1935.3克月球背面样品，标志着人类首次月背采样返回任务取得圆满成功。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
   image:
-    url: "/images/events/2024/change6_moon_back.jpg"
-    caption: "嫦娥六号返回器携带人类首份月球背面样品成功着陆"
-
+    url: /images/events/2024/change6_sample_202406.jpg
+    caption: 嫦娥六号实现人类首次月球背面采样返回历史现场与典藏影像
 - id: cn-third-plenum-202407
-  date: "2024-07-15"
+  date: '2024-07-15'
   title: 党的二十届三中全会通过进一步全面深化改革决定
   category: 政治
   importance: 5
   summary: 中共二十届三中全会在北京举行，审议通过《中共中央关于进一步全面深化改革、推进中国式现代化的决定》。
   confidence: 确定
-  tags: [政治, 改革, 历史转折]
-  sources: [新华网]
+  tags:
+    - 政治
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2024/cpc_third_plenum_2024.jpg"
-    caption: "党的二十届三中全会在北京人民大会堂胜利召开"
-
+    url: /images/events/2024/third_plenum_202407.jpg
+    caption: 党的二十届三中全会通过进一步全面深化改革决定历史现场与典藏影像
 - id: cn-paris-olympics-202408
-  date: "2024-08-11"
+  date: '2024-08-11'
   title: 中国代表团创境外参加夏奥会历史最佳成绩
   category: 文化
   importance: 4
   summary: 第33届夏奥会在巴黎闭幕，中国体育代表团斩获40金27银24铜共91枚奖牌，创下境外参赛历史最佳成绩。
   confidence: 确定
-  tags: [体育, 文化]
-  sources: [新华网, 体育总局]
-
+  tags:
+    - 体育
+    - 文化
+  sources:
+    - 新华网
+    - 体育总局
 - id: cn-delay-retirement-202409
-  date: "2024-09-13"
+  date: '2024-09-13'
   title: 全国人大常委会表决通过渐进式延迟法定退休年龄决定
   category: 政治
   importance: 4
   summary: 十四届全国人大常委会第十一次会议表决通过关于实施渐进式延迟法定退休年龄的决定，自2025年1月1日起施行。
   confidence: 确定
-  tags: [民生, 法律, 改革]
-  sources: [新华网]
-
+  tags:
+    - 民生
+    - 法律
+    - 改革
+  sources:
+    - 新华网
 - id: cn-stimulus-package-202409
-  date: "2024-09-24"
+  date: '2024-09-24'
   title: 党中央部署一揽子增量政策，提振经济与资本市场
   category: 经济
   importance: 4
   summary: 央行、金融监管总局、证监会联合推出降准降息、降低存量房贷利率及支持资本市场一揽子增量政策，提振市场信心。
   confidence: 确定
-  tags: [经济, 金融]
-  sources: [新华网, 央行]
-
+  tags:
+    - 经济
+    - 金融
+  sources:
+    - 新华网
+    - 央行
 - id: cn-75th-anniversary-202410
-  date: "2024-10-01"
+  date: '2024-10-01'
   title: 庆祝中华人民共和国成立75周年
   category: 政治
   importance: 4
   summary: 庆祝中华人民共和国成立75周年招待会在北京隆重举行，全党全国各族人民共享祖国荣光，开启新征程。
   confidence: 确定
-  tags: [政治]
-  sources: [新华网]
-
+  tags:
+    - 政治
+  sources:
+    - 新华网
 - id: cn-spring-festival-unesco-202412
-  date: "2024-12-04"
+  date: '2024-12-04'
   title: “春节”成功列入联合国教科文组织人类非遗名录
   category: 文化
   importance: 4
   summary: “春节——中国人庆祝传统新年的社会实践”在联合国教科文组织非遗委员会会议上通过评审，成功列入人类非遗名录。
   confidence: 确定
-  tags: [民俗, 文化, 外交]
-  sources: [新华网, 联合国]
-
+  tags:
+    - 民俗
+    - 文化
+    - 外交
+  sources:
+    - 新华网
+    - 联合国
 - id: cn-macau-25th-202412
-  date: "2024-12-20"
+  date: '2024-12-20'
   title: 庆祝澳门回归祖国25周年
   category: 政治
   importance: 4
   summary: 庆祝澳门回归祖国25周年大会暨澳门特别行政区第六届政府就职典礼在澳门隆重举行，开创“一国两制”新局面。
   confidence: 确定
-  tags: [政治, 澳门]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 澳门
+  sources:
+    - 新华网
 - id: cn-covid-wuhan-202001
-  date: "2020-01-23"
+  date: '2020-01-23'
   title: 全国全面打响疫情防控阻击战，武汉实施离汉通道管控
   category: 灾害
   importance: 5
   summary: 面对突如其来的新冠肺炎疫情，党中央坚持人民至上、生命至上，武汉市实施离汉通道管控，全国迅速打响疫情防控的人民战争、总体战、阻击战。
   confidence: 确定
-  tags: [灾害, 卫生, 历史转折]
-  sources: [新华网]
+  tags:
+    - 灾害
+    - 卫生
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2020/wuhan_lockdown.jpg"
-    caption: "全国全面打响疫情防控阻击战，武汉实施离汉通道管控"
-
+    url: /images/events/2020/covid_wuhan_202001.jpg
+    caption: 全国全面打响疫情防控阻击战，武汉实施离汉通道管控历史现场与典藏影像
 - id: cn-civil-code-202005
-  date: "2020-05-28"
+  date: '2020-05-28'
   title: 《中华人民共和国民法典》表决通过
   category: 政治
   importance: 5
   summary: 十三届全国人大三次会议表决通过《中华人民共和国民法典》，自2021年1月1日起施行，这是新中国历史上首个以“法典”命名的法律。
   confidence: 确定
-  tags: [法律, 政治, 历史转折]
-  sources: [新华网]
+  tags:
+    - 法律
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2020/civil_code.jpg"
-    caption: "十三届全国人大三次会议表决通过《中华人民共和国民法典》"
-
+    url: /images/events/2020/civil_code_202005.jpg
+    caption: 《中华人民共和国民法典》表决通过历史现场与典藏影像
 - id: cn-hainan-free-trade-202006
-  date: "2020-06-01"
+  date: '2020-06-01'
   title: 《海南自由贸易港建设总体方案》印发
   category: 经济
   importance: 4
   summary: 中共中央、国务院印发《海南自由贸易港建设总体方案》，标志着中国特色自由贸易港建设正式启航。
   confidence: 确定
-  tags: [经济, 改革]
-  sources: [新华网]
-
+  tags:
+    - 经济
+    - 改革
+  sources:
+    - 新华网
 - id: cn-hk-national-security-law-202006
-  date: "2020-06-30"
+  date: '2020-06-30'
   title: 《中华人民共和国香港特别行政区维护国家安全法》通过并实施
   category: 政治
   importance: 5
   summary: 十三届全国人大常委会第二十次会议表决通过香港国安法，国家主席签署主席令予以公布并实施，为香港长治久安提供坚实保障。
   confidence: 确定
-  tags: [政治, 法律, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 法律
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2020/hk_national_security_law_202006.jpg
+    caption: 十三届全国人大常委会表决通过香港国安法
 - id: cn-tianwen1-launch-202007
-  date: "2020-07-23"
+  date: '2020-07-23'
   title: 天问一号开启中国首次自主火星探测任务
   category: 文化
   importance: 4
   summary: 长征五号运载火箭成功将“天问一号”火星探测器送入预定轨道，开启中国首次自主火星探测任务，迈出深空探测历史性一步。
   confidence: 确定
-  tags: [航天, 科技]
-  sources: [新华网, 国家航天局]
-
+  tags:
+    - 航天
+    - 科技
+  sources:
+    - 新华网
+    - 国家航天局
 - id: cn-beidou3-system-202007
-  date: "2020-07-31"
+  date: '2020-07-31'
   title: 北斗三号全球卫星导航系统正式开通
   category: 文化
   importance: 5
   summary: 北斗三号全球卫星导航系统建成暨开通仪式在北京举行，标志着中国自主建设、独立运行的全球卫星导航系统全面建成。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网]
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2020/beidou3_system.jpg"
-    caption: "北斗三号全球卫星导航系统星座与导航服务示意图"
-
+    url: /images/events/2020/beidou3_system_202007.jpg
+    caption: 北斗三号全球卫星导航系统正式开通历史现场与典藏影像
 - id: cn-korean-war-70th-202010
-  date: "2020-10-23"
+  date: '2020-10-23'
   title: 纪念中国人民志愿军抗美援朝出国作战70周年
   category: 政治
   importance: 4
   summary: 纪念中国人民志愿军抗美援朝出国作战70周年大会在北京隆重举行，发表重要讲话，弘扬伟大的抗美援朝精神。
   confidence: 确定
-  tags: [政治, 军事]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 军事
+  sources:
+    - 新华网
 - id: cn-fifth-plenum-202010
-  date: "2020-10-29"
+  date: '2020-10-29'
   title: 党的十九届五中全会审议通过“十四五”规划建议
   category: 政治
   importance: 5
   summary: 中共十九届五中全会在北京举行，审议通过《中共中央关于制定国民经济和社会发展第十四个五年规划和二〇三五年远景目标的建议》。
   confidence: 确定
-  tags: [政治, 改革, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2020/fifth_plenum_202010.jpg
+    caption: 党的十九届五中全会在北京胜利召开
 - id: cn-rcep-signature-202011
-  date: "2020-11-15"
+  date: '2020-11-15'
   title: 区域全面经济伙伴关系协定（RCEP）正式签署
   category: 经济
   importance: 4
   summary: 东盟十国与中国、日本、韩国、澳大利亚、新西兰共15国正式签署RCEP，全球人口最多、经贸规模最大的自由贸易区启航。
   confidence: 确定
-  tags: [经济, 贸易, 外交]
-  sources: [新华网]
-
+  tags:
+    - 经济
+    - 贸易
+    - 外交
+  sources:
+    - 新华网
 - id: cn-poverty-alleviation-202011
-  date: "2020-11-23"
+  date: '2020-11-23'
   title: 全国832个贫困县全部脱贫摘帽
   category: 经济
   importance: 5
   summary: 随着贵州省9个县退出贫困县序列，全国832个贫困县全部脱贫摘帽，新时代脱贫攻坚目标任务如期完成，创造人类减贫史奇迹。
   confidence: 确定
-  tags: [民生, 经济, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 民生
+    - 经济
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2020/poverty_alleviation_202011.jpg
+    caption: 全国832个贫困县全部脱贫摘帽，扶贫攻坚取得决定性胜利
 - id: cn-change5-return-202012
-  date: "2020-12-17"
+  date: '2020-12-17'
   title: 嫦娥五号实现中国首次月球采样返回
   category: 文化
   importance: 5
   summary: 嫦娥五号返回器携带1731克月球样品在内蒙古四子王旗成功着陆，标志着中国首次月球采样返回任务成功，完成探月工程三步走规划。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
   image:
-    url: "/images/events/2020/change5_return.jpg"
-    caption: "嫦娥五号返回器携带月球样品在四子王旗成功着陆"
-
+    url: /images/events/2020/change5_return_202012.jpg
+    caption: 嫦娥五号实现中国首次月球采样返回历史现场与典藏影像
 - id: cn-economy-positive-202012
-  date: "2020-12-31"
+  date: '2020-12-31'
   title: 中国成为全球唯一实现正增长的主要经济体，全年GDP突破100万亿元
   category: 经济
   importance: 5
   summary: 2020年中国国内生产总值突破100万亿元人民币，同比增长2.3%，克服新冠疫情严重冲击，成为全球唯一实现正增长的主要经济体。
   confidence: 确定
-  tags: [经济, 宏观, 历史转折]
-  sources: [国家统计局, 新华网]
-
+  tags:
+    - 经济
+    - 宏观
+    - 历史转折
+  sources:
+    - 国家统计局
+    - 新华网
+  image:
+    url: /images/events/2020/economy_positive_202012.jpg
+    caption: 2020年中国GDP突破100万亿元，成为全球唯一实现正增长的主要经济体
 - id: cn-poverty-victory-202102
-  date: "2021-02-25"
+  date: '2021-02-25'
   title: 全国脱贫攻坚总结表彰大会举行，宣告脱贫攻坚战取得全面胜利
   category: 政治
   importance: 5
   summary: 全国脱贫攻坚总结表彰大会在北京隆重举行，庄严宣告中国脱贫攻坚战取得了全面胜利，完成了消除绝对贫困的艰巨任务，创造了人间奇迹。
   confidence: 确定
-  tags: [民生, 政治, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 民生
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2021/poverty_victory_202102.jpg
+    caption: 全国脱贫攻坚总结表彰大会在北京隆重举行
 - id: cn-hk-electoral-reform-202103
-  date: "2021-03-11"
+  date: '2021-03-11'
   title: 全国人大通过关于完善香港特别行政区选举制度的决定
   category: 政治
   importance: 5
   summary: 十三届全国人大四次会议表决通过关于完善香港特别行政区选举制度的决定，全面落实“爱国者治港”原则，为香港长治久安提供制度保障。
   confidence: 确定
-  tags: [政治, 法律, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 法律
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2021/hk_electoral_reform_202103.jpg
+    caption: 全国人大通过关于完善香港特别行政区选举制度的决定
 - id: cn-tianhe-core-module-202104
-  date: "2021-04-29"
+  date: '2021-04-29'
   title: 中国空间站天和核心舱成功发射，空间站建造全面开启
   category: 文化
   importance: 5
   summary: 长征五号B运载火箭将中国空间站天和核心舱送入预定轨道，标志着中国空间站建造进入全面实施阶段，中国载人航天工程迈入新纪元。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
   image:
-    url: "/images/events/2021/tianhe_core_module.jpg"
-    caption: "长征五号B火箭点火升空，成功将天和核心舱送入预定轨道"
-
+    url: /images/events/2021/tianhe_core_module_202104.jpg
+    caption: 中国空间站天和核心舱成功发射，空间站建造全面开启历史现场与典藏影像
 - id: cn-zhurong-mars-landing-202105
-  date: "2021-05-15"
+  date: '2021-05-15'
   title: “祝融号”火星车成功着陆火星
   category: 文化
   importance: 5
   summary: 天问一号着陆巡视器成功着陆于火星乌托邦平原南部预选着陆区，“祝融号”火星车展开巡视探测，中国成为第二个成功着陆火星开展巡视探测的国家。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
   image:
-    url: "/images/events/2021/zhurong_mars_landing.jpg"
-    caption: "“祝融号”火星车驶上火星表面开展巡视探测"
-
+    url: /images/events/2021/zhurong_mars_landing_202105.jpg
+    caption: “祝融号”火星车成功着陆火星历史现场与典藏影像
 - id: cn-yuan-longping-pass-202105
-  date: "2021-05-22"
+  date: '2021-05-22'
   title: “杂交水稻之父”袁隆平院士在长沙逝世
   category: 文化
   importance: 5
   summary: |
     “杂交水稻之父”、中国工程院院士、共和国勋章获得者袁隆平在湖南长沙逝世，享年91岁。全国数十万民众自发赶赴长沙悼念，联合国及国际社会高度评价其为解决全球饥饿问题作出的划时代贡献。
   confidence: 确定
-  tags: [科技, 农业, 功勋, 历史转折]
-  sources: [新华网, 人民日报]
+  tags:
+    - 科技
+    - 农业
+    - 功勋
+    - 历史转折
+  sources:
+    - 新华网
+    - 人民日报
   image:
-    url: "/images/events/2021/yuan_longping.jpg"
-    caption: "“杂交水稻之父”袁隆平院士在金黄色的试验田观察水稻生长"
-
+    url: /images/events/2021/yuan_longping_pass_202105.jpg
+    caption: “杂交水稻之父”袁隆平院士在长沙逝世历史现场与典藏影像
 - id: cn-three-child-policy-202105
-  date: "2021-05-31"
+  date: '2021-05-31'
   title: 中共中央政治局会议审议《关于优化生育政策促进人口长期均衡发展的决定》，实施三孩生育政策
   category: 政治
   importance: 4
   summary: 中共中央政治局召开会议，实施一对夫妻可以生育三个子女政策及配套支持措施，促进人口长期均衡发展。
   confidence: 确定
-  tags: [民生, 改革]
-  sources: [新华网]
-
+  tags:
+    - 民生
+    - 改革
+  sources:
+    - 新华网
 - id: cn-shenzhou12-launch-202106
-  date: "2021-06-17"
+  date: '2021-06-17'
   title: 神舟十二号成功发射，首批航天员进驻中国空间站
   category: 文化
   importance: 4
   summary: 神舟十二号载人飞船成功发射，航天员聂海胜、刘伯明、汤洪波顺利进驻天和核心舱，成为中国空间站首批“访客”，开启有人长期驻留新时代。
   confidence: 确定
-  tags: [航天, 科技]
-  sources: [新华网, 载人航天工程网]
-
+  tags:
+    - 航天
+    - 科技
+  sources:
+    - 新华网
+    - 载人航天工程网
 - id: cn-cpc-centenary-202107
-  date: "2021-07-01"
+  date: '2021-07-01'
   title: 庆祝中国共产党成立100周年大会隆重举行，宣告全面建成小康社会
   category: 政治
   importance: 5
   summary: 庆祝中国共产党成立100周年大会在北京天安门广场隆重举行，发表重要讲话，庄严宣告实现了第一个百年奋斗目标，在中华大地上全面建成了小康社会。
   confidence: 确定
-  tags: [政治, 历史转折]
-  sources: [新华网]
+  tags:
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2021/cpc_centenary.jpg"
-    caption: "庆祝中国共产党成立100周年大会在天安门广场隆重举行"
-
+    url: /images/events/2021/cpc_centenary_202107.jpg
+    caption: 庆祝中国共产党成立100周年大会隆重举行，宣告全面建成小康社会历史现场与典藏影像
 - id: cn-meng-wanzhou-return-202109
-  date: "2021-09-25"
+  date: '2021-09-25'
   title: 孟晚舟乘坐中国政府包机安全回国
   category: 政治
   importance: 4
   summary: 经中国政府不懈努力，被加拿大无理扣押长达1000多天的华为首席财务官孟晚舟乘坐中国政府包机顺利回到祖国，凸显中国捍卫公民权益立场。
   confidence: 确定
-  tags: [外交, 政治]
-  sources: [新华网]
-
+  tags:
+    - 外交
+    - 政治
+  sources:
+    - 新华网
 - id: cn-sixth-plenum-resolution-202111
-  date: "2021-11-11"
+  date: '2021-11-11'
   title: 党的十九届六中全会审议通过第三个历史决议
   category: 政治
   importance: 5
   summary: 中共十九届六中全会在北京举行，审议通过《中共中央关于党的百年奋斗重大成就和历史经验的决议》，总结党的百年奋斗重大成就和历史经验。
   confidence: 确定
-  tags: [政治, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2021/sixth_plenum_resolution_202111.jpg
+    caption: 党的十九届六中全会审议通过第三个历史决议
 - id: cn-us-china-summit-video-202111
-  date: "2021-11-16"
+  date: '2021-11-16'
   title: 中美元首举行首次视频会晤
   category: 政治
   importance: 4
   summary: 国家主席同美国总统拜登举行首次视频会晤，就事关中美关系发展的战略性、全局性、根本性问题以及共同关心的重要问题进行了充分沟通和交流。
   confidence: 确定
-  tags: [外交, 政治]
-  sources: [新华网]
-
+  tags:
+    - 外交
+    - 政治
+  sources:
+    - 新华网
 - id: cn-laos-railway-open-202112
-  date: "2021-12-03"
+  date: '2021-12-03'
   title: 中老铁路全线开通运营
   category: 经济
   importance: 4
   summary: 连接中国昆明和老挝万象的中老铁路全线开通运营，作为“一带一路”标志性工程，老挝实现了从“陆锁国”变“陆联国”的历史夙愿。
   confidence: 确定
-  tags: [经济, 外交, 一带一路]
-  sources: [新华网]
-
+  tags:
+    - 经济
+    - 外交
+    - 一带一路
+  sources:
+    - 新华网
 - id: cn-gdp-114trillion-202112
-  date: "2021-12-31"
+  date: '2021-12-31'
   title: 全年GDP突破114万亿元，“十四五”实现良好开局
   category: 经济
   importance: 4
   summary: 2021年中国国内生产总值达114.4万亿元，同比增长8.1%，经济总量稳居世界第二，人均GDP突破1.2万美元，实现“十四五”良好开局。
   confidence: 确定
-  tags: [经济, 宏观]
-  sources: [国家统计局, 新华网]
-
+  tags:
+    - 经济
+    - 宏观
+  sources:
+    - 国家统计局
+    - 新华网
 - id: cn-beijing-olympics-202202
-  date: "2022-02-04"
+  date: '2022-02-04'
   title: 北京2022年冬奥会、冬残奥会成功举办，北京成为全球首个“双奥之城”
   category: 文化
   importance: 5
   summary: 第24届冬奥会在北京开幕，中国克服疫情影响成功举办简约、安全、精彩的冬奥盛会，中国斩获9金4银2铜创历史最佳成绩，北京成为首个“双奥之城”。
   confidence: 确定
-  tags: [体育, 文化, 历史转折]
-  sources: [新华网]
+  tags:
+    - 体育
+    - 文化
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2022/beijing_winter_olympics.jpg"
-    caption: "北京2022年冬奥会开幕式在国家体育场盛大举办"
-
+    url: /images/events/2022/beijing_olympics_202202.jpg
+    caption: 北京2022年冬奥会、冬残奥会成功举办，北京成为全球首个“双奥之城”历史现场与典藏影像
 - id: cn-fujian-carrier-launch-202206
-  date: "2022-06-17"
+  date: '2022-06-17'
   title: 中国首艘弹射型航空母舰“福建舰”下水
   category: 政治
   importance: 5
   summary: 中国第三艘航空母舰下水命名仪式举行，命名为“中国人民解放军海军福建舰”，是中国首艘完全自主设计建造的弹射型航母。
   confidence: 确定
-  tags: [军事, 科技, 历史转折]
-  sources: [新华网]
+  tags:
+    - 军事
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2022/fujian_carrier_launch.jpg"
-    caption: "中国首艘弹射型航空母舰“福建舰”下水命名仪式"
-
+    url: /images/events/2022/fujian_carrier_launch_202206.jpg
+    caption: 中国首艘弹射型航空母舰“福建舰”下水历史现场与典藏影像
 - id: cn-hk-25th-anniversary-202207
-  date: "2022-07-01"
+  date: '2022-07-01'
   title: 庆祝香港回归祖国25周年
   category: 政治
   importance: 5
   summary: 庆祝香港回归祖国25周年大会暨香港特别行政区第六届政府就职典礼在香港隆重举行，强调“一国两制”是经过实践反复检验的好制度。
   confidence: 确定
-  tags: [政治, 香港, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 香港
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2022/hk_25th_anniversary_202207.jpg
+    caption: 庆祝香港回归祖国25周年大会在香港举行
 - id: cn-wentian-lab-launch-202207
-  date: "2022-07-24"
+  date: '2022-07-24'
   title: 空间站问天实验舱成功发射
   category: 文化
   importance: 4
   summary: 长征五号B遥三运载火箭成功将中国空间站问天实验舱送入预定轨道，问天实验舱是中国空间站首个科学实验舱。
   confidence: 确定
-  tags: [航天, 科技]
-  sources: [新华网, 国家航天局]
-
+  tags:
+    - 航天
+    - 科技
+  sources:
+    - 新华网
+    - 国家航天局
 - id: cn-taiwan-countermeasures-202208
-  date: "2022-08-02"
+  date: '2022-08-02'
   title: 针对佩洛西窜访台湾，东部战区组织环台岛联合军事行动
   category: 政治
   importance: 5
   summary: 美众议长佩洛西窜访中国台湾地区，中国人民解放军东部战区在台岛周边开展一系列联合军事行动，坚决反制“台独”与外部干涉。
   confidence: 确定
-  tags: [军事, 外交, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 军事
+    - 外交
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2022/taiwan_countermeasures_202208.jpg
+    caption: 东部战区在台岛周边组织联合军事行动
 - id: cn-20th-cpc-congress-202210
-  date: "2022-10-16"
+  date: '2022-10-16'
   title: 中国共产党第二十次全国代表大会胜利召开
   category: 政治
   importance: 5
   summary: 中共二十大在北京胜利召开，提出以中国式现代化全面推进中华民族伟大复兴，开启全面建设社会主义现代化国家新征程。
   confidence: 确定
-  tags: [政治, 改革, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2022/20th_cpc_congress_202210.jpg
+    caption: 中国共产党第二十次全国代表大会在北京隆重召开
 - id: cn-mengtian-lab-launch-202210
-  date: "2022-10-31"
+  date: '2022-10-31'
   title: 空间站梦天实验舱成功发射
   category: 文化
   importance: 4
   summary: 空间站梦天实验舱成功发射并与天和核心舱完成精准对接，标志着中国空间站三舱“T”字基本构型组装完成。
   confidence: 确定
-  tags: [航天, 科技]
-  sources: [新华网, 国家航天局]
-
+  tags:
+    - 航天
+    - 科技
+  sources:
+    - 新华网
+    - 国家航天局
 - id: cn-g20-bali-summit-202211
-  date: "2022-11-14"
+  date: '2022-11-14'
   title: 中元首出席G20巴厘岛峰会并举行中美元首会晤
   category: 政治
   importance: 4
   summary: 国家主席出席G20巴厘岛峰会，与美国总统拜登举行面对面会晤，确立“巴厘岛共识”，为中美关系指明方向。
   confidence: 确定
-  tags: [外交, 政治]
-  sources: [新华网]
-
+  tags:
+    - 外交
+    - 政治
+  sources:
+    - 新华网
 - id: cn-jiang-zemin-pass-202211
-  date: "2022-11-30"
+  date: '2022-11-30'
   title: 沉痛悼念江泽民同志
   category: 政治
   importance: 5
   summary: 我党我军我国各族人民公认的享有崇高威望的卓越领导人江泽民同志因病在北京逝世，享年96岁，全党全军全国各族人民深切悼念。
   confidence: 确定
-  tags: [政治, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2022/jiang_zemin_pass_202211.jpg
+    caption: 沉痛悼念江泽民同志悼念大会在人民大会堂举行
 - id: cn-covid-new-10-rules-202212
-  date: "2022-12-07"
+  date: '2022-12-07'
   title: 国务院联防联控机制发布“新十条”，优化调整疫情防控措施
   category: 灾害
   importance: 5
   summary: 国务院联防联控机制发布关于进一步优化落实疫情防控措施的通知（“新十条”），因时因势调整优化防控策略，平稳进入新阶段。
   confidence: 确定
-  tags: [民生, 卫生, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 民生
+    - 卫生
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2022/covid_new_10_rules_202212.jpg
+    caption: 国务院联防联控机制发布优化调整疫情防控“新十条”
 - id: cn-cop15-montreal-framework-202212
-  date: "2022-12-19"
+  date: '2022-12-19'
   title: 中国作为主席国推动联合国生物多样性大会达成历史性“昆蒙框架”
   category: 文化
   importance: 4
   summary: 联合国生物多样性大会（COP15）在蒙特利尔闭幕，中国作为主席国推动通过“昆明-蒙特利尔全球生物多样性框架”。
   confidence: 确定
-  tags: [环境, 外交]
-  sources: [新华网, 联合国]
-
+  tags:
+    - 环境
+    - 外交
+  sources:
+    - 新华网
+    - 联合国
 - id: cn-space-station-complete-202212
-  date: "2022-12-31"
+  date: '2022-12-31'
   title: 中国空间站全面建成，完成神舟十五号与十四号太空会师
   category: 文化
   importance: 5
   summary: 随着神舟十五号与神舟十四号乘组实现首次“太空会师”，中国空间站全面建成并转入常态化运营模式。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
   image:
-    url: "/images/events/2022/space_station_complete.jpg"
-    caption: "中国空间站“T”字基本构型全面建成示意图"
-
+    url: /images/events/2022/space_station_complete_202212.jpg
+    caption: 中国空间站全面建成，完成神舟十五号与十四号太空会师历史现场与典藏影像
 - id: cn-china-asean-fta-201001
-  date: "2010-01-01"
+  date: '2010-01-01'
   title: 中国-东盟自由贸易区正式建成
   category: 经济
   importance: 4
   summary: 中国-东盟自由贸易区如期全面建成，涵盖19亿人口、6万亿美元GDP，成为发展中国家间最大的自贸区。
   confidence: 确定
-  tags: [经济, 外交, 贸易]
-  sources: [新华网]
-
+  tags:
+    - 经济
+    - 外交
+    - 贸易
+  sources:
+    - 新华网
 - id: cn-yushu-earthquake-201004
-  date: "2010-04-14"
+  date: '2010-04-14'
   title: 青海玉树发生7.1级强烈地震
   category: 灾害
   importance: 4
   summary: 青海省玉树藏族自治州发生7.1级地震，造成2698人遇难，全国开展抗震救灾与灾后重建。
   confidence: 确定
-  tags: [灾害, 地震]
-  sources: [新华网]
-
+  tags:
+    - 灾害
+    - 地震
+  sources:
+    - 新华网
 - id: cn-shanghai-expo-201005
-  date: "2010-05-01"
+  date: '2010-05-01'
   title: 2010年上海世界博览会开幕
   category: 文化
   importance: 5
   summary: 第41届世博会在上海开幕，吸引190个国家和56个国际组织参展，累计参观人次达7308万创历史纪录。
   confidence: 确定
-  tags: [文化, 盛会, 历史转折]
-  sources: [新华网]
+  tags:
+    - 文化
+    - 盛会
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2010/shanghai_expo.jpg"
-    caption: "2010年上海世界博览会在黄浦江畔盛大开幕"
-
+    url: /images/events/2010/shanghai_expo_201005.jpg
+    caption: 2010年上海世界博览会开幕历史现场与典藏影像
 - id: cn-ecfa-agreement-201006
-  date: "2010-06-29"
+  date: '2010-06-29'
   title: 海峡两岸签署《海峡两岸经济合作框架协议》（ECFA）
   category: 政治
   importance: 4
   summary: 海协会与海基会在重庆签署ECFA，开启两岸经济关系正常化、自由化与制度化新篇章。
   confidence: 确定
-  tags: [政治, 经济, 两岸]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 经济
+    - 两岸
+  sources:
+    - 新华网
 - id: cn-education-plan-201007
-  date: "2010-07-29"
+  date: '2010-07-29'
   title: 《国家中长期教育改革和发展规划纲要（2010-2020年）》印发
   category: 政治
   importance: 3
   summary: 中共中央、国务院印发教育规划纲要，擘画未来十年教育改革发展蓝图。
   confidence: 确定
-  tags: [教育, 改革]
-  sources: [新华网]
-
+  tags:
+    - 教育
+    - 改革
+  sources:
+    - 新华网
 - id: cn-change2-launch-201010
-  date: "2010-10-01"
+  date: '2010-10-01'
   title: 嫦娥二号探月卫星成功发射
   category: 文化
   importance: 4
   summary: 长征三号丙运载火箭成功将嫦娥二号送入太空，获得分辨率7米的全月球影像图并成功飞越小行星探测。
   confidence: 确定
-  tags: [航天, 科技]
-  sources: [新华网, 国家航天局]
-
+  tags:
+    - 航天
+    - 科技
+  sources:
+    - 新华网
+    - 国家航天局
 - id: cn-fifth-plenum-17th-201010
-  date: "2010-10-18"
+  date: '2010-10-18'
   title: 党的十七届五中全会审议通过“十二五”规划建议
   category: 政治
   importance: 4
   summary: 中共十七届五中全会在北京举行，审议通过《中共中央关于制定国民经济和社会发展第十二个五年规划的建议》。
   confidence: 确定
-  tags: [政治, 改革]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 改革
+  sources:
+    - 新华网
 - id: cn-social-insurance-law-201010
-  date: "2010-10-28"
+  date: '2010-10-28'
   title: 《中华人民共和国社会保险法》表决通过
   category: 政治
   importance: 4
   summary: 十一届全国人大常委会第十七次会议表决通过社会保险法，奠定我国社会保障制度基本法律框架。
   confidence: 确定
-  tags: [法律, 民生]
-  sources: [新华网]
-
+  tags:
+    - 法律
+    - 民生
+  sources:
+    - 新华网
 - id: cn-guangzhou-asian-games-201011
-  date: "2010-11-12"
+  date: '2010-11-12'
   title: 第16届亚洲运动会在广州举行
   category: 文化
   importance: 4
   summary: 第16届亚运会在广州开幕，中国代表团获得199枚金牌、416枚奖牌，创亚运历史最好成绩。
   confidence: 确定
-  tags: [体育, 文化]
-  sources: [新华网]
-
+  tags:
+    - 体育
+    - 文化
+  sources:
+    - 新华网
 - id: cn-gdp-second-world-201012
-  date: "2010-12-31"
+  date: '2010-12-31'
   title: 中国全年GDP超越日本，跃居世界第二大经济体
   category: 经济
   importance: 5
   summary: 2010年中国GDP达39.8万亿元人民币（折合5.88万亿美元），首次超越日本成为世界第二大经济体，综合国力历史性飞跃。
   confidence: 确定
-  tags: [经济, 宏观, 历史转折]
-  sources: [国家统计局, 日本内阁府, 新华网]
+  tags:
+    - 经济
+    - 宏观
+    - 历史转折
+  sources:
+    - 国家统计局
+    - 日本内阁府
+    - 新华网
   image:
-    url: "/images/events/2010/gdp_second_world.jpg"
-    caption: "2010年中国GDP超越日本，跃居世界第二大经济体"
-
+    url: /images/events/2010/gdp_second_world_201012.jpg
+    caption: 中国全年GDP超越日本，跃居世界第二大经济体历史现场与典藏影像
 - id: cn-twelfth-five-year-plan-201103
-  date: "2011-03-14"
+  date: '2011-03-14'
   title: 十一届全国人大四次会议表决通过“十二五”规划纲要
   category: 政治
   importance: 4
   summary: 十一届全国人大四次会议表决通过《第十二个五年规划纲要》，明确科学发展主题与转变经济发展方式主线。
   confidence: 确定
-  tags: [政治, 改革]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 改革
+  sources:
+    - 新华网
 - id: cn-socialist-legal-system-201103
-  date: "2011-03-10"
+  date: '2011-03-10'
   title: 吴邦国宣布中国特色社会主义法律体系已经形成
   category: 政治
   importance: 5
   summary: 十一届全国人大四次会议上宣布中国特色社会主义法律体系已经形成，是我国社会主义民主法制建设史上的里程碑。
   confidence: 确定
-  tags: [法律, 政治, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 法律
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2011/socialist_legal_system_201103.jpg
+    caption: 吴邦国宣布中国特色社会主义法律体系已经形成历史现场与典藏影像
 - id: cn-jinghu-hsr-open-201106
-  date: "2011-06-30"
+  date: '2011-06-30'
   title: 京沪高速铁路全线正式通车运营
   category: 经济
   importance: 5
   summary: 京沪高速铁路正式通车运营，全长1318公里，连接京津冀与长三角两大经济区，是中国建设标准最高的高速铁路。
   confidence: 确定
-  tags: [经济, 交通, 历史转折]
-  sources: [新华网]
+  tags:
+    - 经济
+    - 交通
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2011/jinghu_hsr.jpg"
-    caption: "京沪高速铁路全线正式通车运营"
-
+    url: /images/events/2011/jinghu_hsr_open_201106.jpg
+    caption: 京沪高速铁路全线正式通车运营历史现场与典藏影像
 - id: cn-cpc-90th-anniversary-201107
-  date: "2011-07-01"
+  date: '2011-07-01'
   title: 庆祝中国共产党成立90周年大会隆重举行
   category: 政治
   importance: 4
   summary: 庆祝中国共产党成立90周年大会在北京人民大会堂隆重举行，总结党90年奋斗历程与基本经验。
   confidence: 确定
-  tags: [政治]
-  sources: [新华网]
-
+  tags:
+    - 政治
+  sources:
+    - 新华网
 - id: cn-wenzhou-train-collision-201107
-  date: "2011-07-23"
+  date: '2011-07-23'
   title: 甬温线“7·23”特别重大铁路交通事故发生
   category: 灾害
   importance: 4
   summary: 甬温线浙江温州双屿路段发生动车组列车追尾特别重大铁路交通事故，造成40人死亡、210人受伤。
   confidence: 确定
-  tags: [灾害, 事故]
-  sources: [新华网]
-
+  tags:
+    - 灾害
+    - 事故
+  sources:
+    - 新华网
 - id: cn-tiangong1-launch-201109
-  date: "2011-09-29"
+  date: '2011-09-29'
   title: 天宫一号目标飞行器成功发射
   category: 文化
   importance: 5
   summary: 长征二号F T1运载火箭成功将中国首个目标飞行器“天宫一号”送入预定轨道，迈出空间站建造历史性第一步。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
   image:
-    url: "/images/events/2011/tiangong1_launch.jpg"
-    caption: "中国首个目标飞行器“天宫一号”在酒泉成功发射"
-
+    url: /images/events/2011/tiangong1_launch_201109.jpg
+    caption: 天宫一号目标飞行器成功发射历史现场与典藏影像
 - id: cn-xinhai-centenary-201110
-  date: "2011-10-10"
+  date: '2011-10-10'
   title: 纪念辛亥革命100周年大会举行
   category: 政治
   importance: 4
   summary: 纪念辛亥革命100周年大会在北京隆重举行，深切缅怀孙中山先生等辛亥革命先驱，凝聚民族复兴力量。
   confidence: 确定
-  tags: [政治, 历史]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 历史
+  sources:
+    - 新华网
 - id: cn-sixth-plenum-17th-201110
-  date: "2011-10-18"
+  date: '2011-10-18'
   title: 党的十七届六中全会做出建设社会主义文化强国决定
   category: 政治
   importance: 4
   summary: 中共十七届六中全会在北京举行，审议通过《中共中央关于深化文化体制改革推动社会主义文化大发展大繁荣若干重大问题的决定》。
   confidence: 确定
-  tags: [政治, 文化]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 文化
+  sources:
+    - 新华网
 - id: cn-shenzhou8-tiangong-docking-201111
-  date: "2011-11-03"
+  date: '2011-11-03'
   title: 神舟八号与天宫一号首次交会对接成功
   category: 文化
   importance: 5
   summary: 神舟八号飞船与天宫一号目标飞行器成功实现空间交会对接，中国成为世界上第三个独立掌握交会对接技术的国家。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
-
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
+  image:
+    url: /images/events/2011/shenzhou8_tiangong_docking_201111.jpg
+    caption: 神舟八号与天宫一号首次交会对接成功历史现场与典藏影像
 - id: cn-poverty-standard-raised-201111
-  date: "2011-11-29"
+  date: '2011-11-29'
   title: 国家大幅提高农村扶贫标准至2300元
   category: 经济
   importance: 4
   summary: 中央扶贫开发工作会议决定将国家农村扶贫标准大幅提高至农民人均纯收入2300元，比2009年提高92%，惠及1.28亿人。
   confidence: 确定
-  tags: [民生, 扶贫]
-  sources: [新华网]
-
+  tags:
+    - 民生
+    - 扶贫
+  sources:
+    - 新华网
 - id: cn-shenzhou9-launch-201206
-  date: "2012-06-16"
+  date: '2012-06-16'
   title: 神舟九号成功发射，刘洋成为中国首位女航天员，实现首次手控交会对接
   category: 文化
   importance: 5
   summary: 神舟九号载人飞船发射成功，航天员景海鹏、刘旺、刘洋进驻天宫一号，刘洋成为首位飞天女航天员，中国首次实现手控交会对接。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
-
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
+  image:
+    url: /images/events/2012/shenzhou9_launch_201206.jpg
+    caption: 神舟九号成功发射，刘洋成为中国首位女航天员，实现首次手控交会对接历史现场与典藏影像
 - id: cn-jiaolong-7062m-201206
-  date: "2012-06-27"
+  date: '2012-06-27'
   title: “蛟龙”号载人潜水器成功下潜至7062米，创最大下潜深度纪录
   category: 文化
   importance: 5
   summary: 中国“蛟龙”号载人潜水器在马里亚纳海沟成功下潜至7062米，创造了中国载人深潜新纪录，具备深海考察能力。
   confidence: 确定
-  tags: [深潜, 科考, 科技, 历史转折]
-  sources: [新华网]
+  tags:
+    - 深潜
+    - 科考
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2012/jiaolong_submersible.jpg"
-    caption: "“蛟龙”号载人潜水器在马里亚纳海沟成功下潜至7062米"
-
+    url: /images/events/2012/jiaolong_7062m_201206.jpg
+    caption: “蛟龙”号载人潜水器成功下潜至7062米，创最大下潜深度纪录历史现场与典藏影像
 - id: cn-liaoning-aircraft-carrier-201209
-  date: "2012-09-25"
+  date: '2012-09-25'
   title: 中国第一艘航空母舰“辽宁舰”正式交付海军
   category: 政治
   importance: 5
   summary: 中国第一艘航空母舰“辽宁舰”在大连正式交付海军，标志着中国海军迈入航母时代。
   confidence: 确定
-  tags: [军事, 科技, 历史转折]
-  sources: [新华网]
+  tags:
+    - 军事
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2012/liaoning_carrier.jpg"
-    caption: "中国第一艘航空母舰“辽宁舰”在大连正式交付海军"
-
+    url: /images/events/2012/liaoning_aircraft_carrier_201209.jpg
+    caption: 中国第一艘航空母舰“辽宁舰”正式交付海军历史现场与典藏影像
 - id: cn-moyan-nobel-prize-201210
-  date: "2012-10-11"
+  date: '2012-10-11'
   title: 作家莫言获得诺贝尔文学奖
   category: 文化
   importance: 5
   summary: 瑞典文学院宣布将2012年诺贝尔文学奖授予中国作家莫言，莫言成为首位获得诺贝尔文学奖的中国籍作家。
   confidence: 确定
-  tags: [文化, 文学, 历史转折]
-  sources: [新华网, 诺贝尔奖官网]
+  tags:
+    - 文化
+    - 文学
+    - 历史转折
+  sources:
+    - 新华网
+    - 诺贝尔奖官网
   image:
-    url: "/images/events/2012/moyan_nobel.jpg"
-    caption: "作家莫言荣获2012年诺贝尔文学奖"
-
+    url: /images/events/2012/moyan_nobel_prize_201210.jpg
+    caption: 作家莫言获得诺贝尔文学奖历史现场与典藏影像
 - id: cn-18th-cpc-congress-201211
-  date: "2012-11-08"
+  date: '2012-11-08'
   title: 中国共产党第十八次全国代表大会胜利召开
   category: 政治
   importance: 5
   summary: 中共十八大在北京胜利召开，确立了全面建成小康社会和全面深化改革开放的目标，提出了科学发展观为指导思想。
   confidence: 确定
-  tags: [政治, 改革, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2012/18th_cpc_congress_201211.jpg
+    caption: 中国共产党第十八次全国代表大会胜利召开历史现场与典藏影像
 - id: cn-18th-first-plenum-201211
-  date: "2012-11-15"
+  date: '2012-11-15'
   title: 十八届一中全会选举习近平为中共中央总书记
   category: 政治
   importance: 5
   summary: 十八届一中全会在北京举行，选举习近平为中共中央总书记、中央军委主席，中国特色社会主义进入新时代。
   confidence: 确定
-  tags: [政治, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2012/18th_first_plenum_201211.jpg
+    caption: 十八届一中全会选举习近平为中共中央总书记历史现场与典藏影像
 - id: cn-j15-carrier-landing-201211
-  date: "2012-11-23"
+  date: '2012-11-23'
   title: 歼-15舰载机首次成功在辽宁舰着舰起飞
   category: 政治
   importance: 4
   summary: 中国自主研制的歼-15舰载战斗机在辽宁舰上成功完成首次起降飞行训练，核心技术性能符合要求。
   confidence: 确定
-  tags: [军事, 科技]
-  sources: [新华网]
-
+  tags:
+    - 军事
+    - 科技
+  sources:
+    - 新华网
 - id: cn-chinese-dream-201211
-  date: "2012-11-29"
+  date: '2012-11-29'
   title: 国家主席参观《复兴之路》展览并首次提出“中国梦”
   category: 政治
   importance: 5
   summary: 国家主席参观国家博物馆《复兴之路》展览，首次阐述“中国梦”——实现中华民族伟大复兴，是中华民族最伟大的梦想。
   confidence: 确定
-  tags: [政治, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2012/chinese_dream_201211.jpg
+    caption: 国家主席参观《复兴之路》展览并首次提出“中国梦”历史现场与典藏影像
 - id: cn-eight-cardinal-couplets-201212
-  date: "2012-12-04"
+  date: '2012-12-04'
   title: 中共中央政治局审议通过改进工作作风“八项规定”
   category: 政治
   importance: 5
   summary: 中共中央政治局召开会议，审议通过关于改进工作作风、密切联系群众的“八项规定”，开启全面从严治党正风肃纪新篇章。
   confidence: 确定
-  tags: [政治, 党建, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 党建
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2012/eight_cardinal_couplets_201212.jpg
+    caption: 中共中央政治局审议通过改进工作作风“八项规定”历史现场与典藏影像
 - id: cn-jingguang-hsr-open-201212
-  date: "2012-12-26"
+  date: '2012-12-26'
   title: 京广高速铁路全线贯通运营
   category: 经济
   importance: 4
   summary: 北京至广州高标准高速铁路全线贯通运营，全长2298公里，成为世界上运营里程最长的高速铁路。
   confidence: 确定
-  tags: [经济, 交通]
-  sources: [新华网]
-
+  tags:
+    - 经济
+    - 交通
+  sources:
+    - 新华网
 - id: cn-xijinping-president-201303
-  date: "2013-03-14"
+  date: '2013-03-14'
   title: 十二届全国人大一次会议选举习近平为国家主席、中央军委主席
   category: 政治
   importance: 5
   summary: 十二届全国人大一次会议在北京举行，选举习近平为国家主席、中央军委主席，国家机构换届顺利完成。
   confidence: 确定
-  tags: [政治, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2013/xijinping_president_201303.jpg
+    caption: 十二届全国人大一次会议表决现场与领导人就职
 - id: cn-shenzhou10-space-lecture-201306
-  date: "2013-06-11"
+  date: '2013-06-11'
   title: 神舟十号成功发射，王亚平进行中国首次太空授课
   category: 文化
   importance: 5
   summary: 神舟十号成功发射，航天员聂海胜、张晓光、王亚平进驻天宫一号，王亚平成功进行中国首次太空授课。
   confidence: 确定
-  tags: [航天, 教育, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
-
+  tags:
+    - 航天
+    - 教育
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
+  image:
+    url: /images/events/2013/shenzhou10_space_lecture_201306.jpg
+    caption: 航天员王亚平在天宫一号进行中国首次太空授课
 - id: cn-belt-and-road-initiation-201309
-  date: "2013-09-07"
+  date: '2013-09-07'
   title: 国家主席首次提出共建“一带一路”倡议
   category: 政治
   importance: 5
   summary: 国家主席在哈萨克斯坦和印尼先后提出共建“丝绸之路经济带”和“21世纪海上丝绸之路”，合称“一带一路”倡议。
   confidence: 确定
-  tags: [外交, 经济, 一带一路, 历史转折]
-  sources: [新华网]
+  tags:
+    - 外交
+    - 经济
+    - 一带一路
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2013/belt_and_road.jpg"
-    caption: "首次提出共建“丝绸之路经济带”和“21世纪海上丝绸之路”倡议"
-
+    url: /images/events/2013/belt_and_road_initiation_201309.jpg
+    caption: 首次提出共建“丝绸之路经济带”和“21世纪海上丝绸之路”倡议示意图
 - id: cn-shanghai-ftz-open-201309
-  date: "2013-09-29"
+  date: '2013-09-29'
   title: 中国首个自由贸易试验区——中国（上海）自由贸易试验区挂牌成立
   category: 经济
   importance: 5
   summary: 中国（上海）自由贸易试验区挂牌成立，探索负面清单管理与金融创新，拉开新一轮高水平开放序幕。
   confidence: 确定
-  tags: [经济, 改革, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 经济
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2013/shanghai_ftz_open_201309.jpg
+    caption: 中国（上海）自由贸易试验区正式挂牌成立现场
 - id: cn-targeted-poverty-alleviation-201311
-  date: "2013-11-03"
+  date: '2013-11-03'
   title: 国家主席在湖南十八洞村首次提出“精准扶贫”理念
   category: 政治
   importance: 5
   summary: 国家主席考察湖南湘西十八洞村，首次提出“精准扶贫”重要理念，为新时代打赢脱贫攻坚战指明方向。
   confidence: 确定
-  tags: [民生, 扶贫, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 民生
+    - 扶贫
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2013/targeted_poverty_alleviation_201311.jpg
+    caption: 首次在湖南十八洞村提出“精准扶贫”重要理念
 - id: cn-third-plenum-18th-201311
-  date: "2013-11-12"
+  date: '2013-11-12'
   title: 党的十八届三中全会通过全面深化改革决定，设立国家安全委员会
   category: 政治
   importance: 5
   summary: 中共十八届三中全会在北京举行，审议通过《中共中央关于全面深化改革若干重大问题的决定》，决定设立国家安全委员会。
   confidence: 确定
-  tags: [政治, 改革, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2013/third_plenum_18th_201311.jpg
+    caption: 党的十八届三中全会在北京胜利召开
 - id: cn-east-china-sea-adiz-201311
-  date: "2013-11-23"
+  date: '2013-11-23'
   title: 中国政府宣布划设东海防空识别区
   category: 政治
   importance: 4
   summary: 国防部发表声明宣布划设东海防空识别区并发布识别规则，坚决维护国家领空安全和主权。
   confidence: 确定
-  tags: [军事, 外交]
-  sources: [新华网]
-
+  tags:
+    - 军事
+    - 外交
+  sources:
+    - 新华网
 - id: cn-change3-yutu-landing-201312
-  date: "2013-12-14"
+  date: '2013-12-14'
   title: 嫦娥三号成功软着陆月球，玉兔号月球车驶上月球表面
   category: 文化
   importance: 5
   summary: 嫦娥三号软着陆于月球虹湾，“玉兔号”月球车驶上月表开展巡视，中国成为第三个实现月球软着陆的国家。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
   image:
-    url: "/images/events/2013/change3_yutu.jpg"
-    caption: "嫦娥三号成功软着陆月球，玉兔号月球车驶上月表"
-
+    url: /images/events/2013/change3_yutu_landing_201312.jpg
+    caption: 嫦娥三号成功软着陆月球，玉兔号月球车驶上月球表面历史现场与典藏影像
 - id: cn-reeducation-through-labor-abolition-201312
-  date: "2013-12-28"
+  date: '2013-12-28'
   title: 全国人大常委会决定废止劳动教养制度
   category: 政治
   importance: 4
   summary: 十二届全国人大常委会第六次会议表决通过决定，正式废止运行半个多世纪的劳动教养制度。
   confidence: 确定
-  tags: [法律, 人权]
-  sources: [新华网]
-
+  tags:
+    - 法律
+    - 人权
+  sources:
+    - 新华网
 - id: cn-gdp-59trillion-201312
-  date: "2013-12-31"
+  date: '2013-12-31'
   title: 全年GDP突破59万亿元，经济稳中向好
   category: 经济
   importance: 4
   summary: 2013年中国国内生产总值达59.3万亿元，同比增长7.7%，进出口总额突破4万亿美元跃居全球第一大货物贸易国。
   confidence: 确定
-  tags: [经济, 宏观, 贸易]
-  sources: [国家统计局, 新华网]
-
+  tags:
+    - 经济
+    - 宏观
+    - 贸易
+  sources:
+    - 国家统计局
+    - 新华网
 - id: cn-national-memorial-day-201402
-  date: "2014-02-27"
+  date: '2014-02-27'
   title: 全国人大常委会设立南京大屠杀死难者国家公祭日与抗战胜利纪念日
   category: 政治
   importance: 5
   summary: 全国人大常委会表决通过决定，将9月3日确定为中国人民抗日战争胜利纪念日，12月13日设立为南京大屠杀死难者国家公祭日。
   confidence: 确定
-  tags: [政治, 历史, 法治, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 历史
+    - 法治
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2014/national_memorial_day_201402.jpg
+    caption: 设立南京大屠杀死难者国家公祭日仪式现场
 - id: cn-kunming-attack-201403
-  date: "2014-03-01"
+  date: '2014-03-01'
   title: 云南昆明火车站发生“3·01”严重暴力恐怖袭击事件
   category: 灾害
   importance: 4
   summary: 8名恐怖分子在昆明火车站砍杀无辜群众造成31死141伤，公安机关迅速击毙抓获暴徒，严厉打击暴恐。
   confidence: 确定
-  tags: [反恐, 治安]
-  sources: [新华网]
-
+  tags:
+    - 反恐
+    - 治安
+  sources:
+    - 新华网
 - id: cn-russia-gas-deal-201405
-  date: "2014-05-21"
+  date: '2014-05-21'
   title: 中俄签署4000亿美元“西伯利亚力量”管道天然气购销历史性大单
   category: 经济
   importance: 5
   summary: 中石油与俄罗斯天然气公司在上海签署为期30年、总价值4000亿美元天然气购销合同，深化中俄全面战略协作伙伴关系。
   confidence: 确定
-  tags: [外交, 能源, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 外交
+    - 能源
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2014/russia_gas_deal_201405.jpg
+    caption: 中俄签署4000亿美元天然气购销历史性协议
 - id: cn-zhou-yongkang-investigation-201407
-  date: "2014-07-29"
+  date: '2014-07-29'
   title: 中共中央决定对周永康立案审查，反腐败深化推进
   category: 政治
   importance: 5
   summary: 中共中央决定由中纪委对周永康立案审查，表明党中央无禁区、全覆盖、零容忍严惩腐败的坚强意志。
   confidence: 确定
-  tags: [政治, 反腐, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 反腐
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2014/zhou_yongkang_investigation_201407.jpg
+    caption: 党中央无禁区反腐，全面从严治党
 - id: cn-ludian-earthquake-201408
-  date: "2014-08-03"
+  date: '2014-08-03'
   title: 云南省昭通市鲁甸县发生6.5级地震
   category: 灾害
   importance: 4
   summary: 云南鲁甸发生6.5级地震，造成617人遇难，全社会开展紧急救援与牛栏江堰塞湖排险。
   confidence: 确定
-  tags: [灾害, 地震]
-  sources: [新华网]
-
+  tags:
+    - 灾害
+    - 地震
+  sources:
+    - 新华网
 - id: cn-literature-symposium-201410
-  date: "2014-10-15"
+  date: '2014-10-15'
   title: 中央召开文艺工作座谈会，指明新时期文艺发展方向
   category: 文化
   importance: 4
   summary: 中共中央召开文艺工作座谈会，强调文艺是时代前进的号角，坚持以人民为中心的创作导向。
   confidence: 确定
-  tags: [文化, 艺术]
-  sources: [新华网]
-
+  tags:
+    - 文化
+    - 艺术
+  sources:
+    - 新华网
 - id: cn-fourth-plenum-18th-201410
-  date: "2014-10-23"
+  date: '2014-10-23'
   title: 党的十八届四中全会审议通过全面推进依法治国决定
   category: 政治
   importance: 5
   summary: 中共十八届四中全会在北京举行，首次以中央全会形式专门研究依法治国，通过《中共中央关于全面推进依法治国若干重大问题的决定》。
   confidence: 确定
-  tags: [政治, 法治, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 法治
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2014/fourth_plenum_18th_201410.jpg
+    caption: 党的十八届四中全会审议通过全面推进依法治国决定
 - id: cn-apec-beijing-201411
-  date: "2014-11-11"
+  date: '2014-11-11'
   title: 2014年APEC领导人非正式会议在北京雁栖湖举行
   category: 政治
   importance: 5
   summary: APEC第二十二次领导人非正式会议在北京举行，通过《北京宣言》，正式启动亚太自由贸易区（FTAAP）进程。
   confidence: 确定
-  tags: [外交, 经济, 历史转折]
-  sources: [新华网]
+  tags:
+    - 外交
+    - 经济
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2014/apec_beijing.jpg"
-    caption: "2014年APEC领导人非正式会议在北京雁栖湖成功举行"
-
+    url: /images/events/2014/apec_beijing_201411.jpg
+    caption: 2014年APEC领导人非正式会议在北京雁栖湖举行历史现场与典藏影像
 - id: cn-shanghai-hongkong-stock-connect-201411
-  date: "2014-11-17"
+  date: '2014-11-17'
   title: “沪港通”股票交易互联互通机制正式开通
   category: 经济
   importance: 5
   summary: 上交所与联交所“沪港通”试点启动，首次实现内地与香港资本市场双向开放与资本自由流动。
   confidence: 确定
-  tags: [经济, 金融, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 经济
+    - 金融
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2014/shanghai_hongkong_stock_connect_201411.jpg
+    caption: “沪港通”股票交易互联互通机制正式启动
 - id: cn-south-to-north-water-diversion-201412
-  date: "2014-12-12"
+  date: '2014-12-12'
   title: 南水北调中线一期工程正式通水
   category: 经济
   importance: 5
   summary: 国家重大工程南水北调中线一期工程通水，丹江口水库长江水沿1432公里干渠源源不断送抵京津。
   confidence: 确定
-  tags: [民生, 工程, 水利, 历史转折]
-  sources: [新华网]
+  tags:
+    - 民生
+    - 工程
+    - 水利
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2014/water_diversion.jpg"
-    caption: "南水北调中线一期工程正式通水"
-
+    url: /images/events/2014/south_to_north_water_diversion_201412.jpg
+    caption: 南水北调中线一期工程正式通水历史现场与典藏影像
 - id: cn-aiib-agreement-signed-201506
-  date: "2015-06-29"
+  date: '2015-06-29'
   title: 《亚洲基础设施投资银行协定》（亚投行/AIIB）在北京签署
   category: 经济
   importance: 5
   summary: 57个亚投行意向创始成员国代表在北京出席签署仪式，中国倡议筹建的首个多边金融机构亚投行迈出关键一步。
   confidence: 确定
-  tags: [经济, 金融, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 经济
+    - 金融
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2015/aiib_agreement_signed_201506.jpg
+    caption: 57个意向创始成员国代表在北京签署亚投行协定
 - id: cn-beijing-winters-olympics-bid-201507
-  date: "2015-07-31"
+  date: '2015-07-31'
   title: 北京成功申办2022年冬奥会，成为全球首个“双奥之城”
   category: 文化
   importance: 5
   summary: 国际奥委会第128次全会上，北京击败阿拉木图赢得2022年第二十四届冬季奥林匹克运动会举办权。
   confidence: 确定
-  tags: [体育, 文化, 历史转折]
-  sources: [新华网, 国际奥委会]
-
+  tags:
+    - 体育
+    - 文化
+    - 历史转折
+  sources:
+    - 新华网
+    - 国际奥委会
+  image:
+    url: /images/events/2015/beijing_winters_olympics_bid_201507.jpg
+    caption: 北京获得2022年第二十四届冬季奥林匹克运动会举办权
 - id: cn-tianjin-port-explosion-201508
-  date: "2015-08-12"
+  date: '2015-08-12'
   title: 天津港危险品仓库发生特别重大火灾爆炸事故
   category: 灾害
   importance: 4
   summary: 天津港瑞海公司危险品仓库发生特别重大爆炸，造成165人遇难、8人失踪，全社会深刻警醒安全生产。
   confidence: 确定
-  tags: [灾害, 事故]
-  sources: [新华网]
-
+  tags:
+    - 灾害
+    - 事故
+  sources:
+    - 新华网
 - id: cn-victory-day-parade-201509
-  date: "2015-09-03"
+  date: '2015-09-03'
   title: 纪念中国人民抗日战争暨世界反法西斯战争胜利70周年阅兵在京举行
   category: 政治
   importance: 5
   summary: 天安门广场举行盛大阅兵仪式，国家主席发表讲话并宣布裁军30万，30位外国领导人出席。
   confidence: 确定
-  tags: [政治, 军事, 历史转折]
-  sources: [新华网]
+  tags:
+    - 政治
+    - 军事
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2015/victory_day_70th.jpg"
-    caption: "纪念中国人民抗日战争暨世界反法西斯战争胜利70周年阅兵在京举行"
-
+    url: /images/events/2015/victory_day_parade_201509.jpg
+    caption: 纪念中国人民抗日战争暨世界反法西斯战争胜利70周年阅兵在京举行历史现场与典藏影像
 - id: cn-tuyouyou-nobel-prize-201510
-  date: "2015-10-05"
+  date: '2015-10-05'
   title: 屠呦呦获得诺贝尔生理学或医学奖，中国本土科学界首个自然科学诺奖
   category: 文化
   importance: 5
   summary: 瑞典卡罗琳医学院宣布将诺贝尔生理学或医学奖授予屠呦呦，表彰其在青蒿素抗疟疾治疗上的划时代发现。
   confidence: 确定
-  tags: [科技, 医学, 历史转折]
-  sources: [新华网, 诺贝尔奖官网]
+  tags:
+    - 科技
+    - 医学
+    - 历史转折
+  sources:
+    - 新华网
+    - 诺贝尔奖官网
   image:
-    url: "/images/events/2015/tuyouyou_nobel.jpg"
-    caption: "屠呦呦因发现青蒿素荣获诺贝尔生理学或医学奖"
-
+    url: /images/events/2015/tuyouyou_nobel_prize_201510.jpg
+    caption: 屠呦呦获得诺贝尔生理学或医学奖，中国本土科学界首个自然科学诺奖历史现场与典藏影像
 - id: cn-fifth-plenum-18th-two-child-201510
-  date: "2015-10-29"
+  date: '2015-10-29'
   title: 党的十八届五中全会决定全面实施“一对夫妇可生育两个孩子政策”
   category: 政治
   importance: 5
   summary: 中共十八届五中全会在北京举行，提出五大发展理念，决定全面实施两孩政策。
   confidence: 确定
-  tags: [政治, 人口, 民生, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 人口
+    - 民生
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2015/fifth_plenum_18th_two_child_201510.jpg
+    caption: 党的十八届五中全会决定全面实施“全面两孩”政策
 - id: cn-c919-rollout-201511
-  date: "2015-11-02"
+  date: '2015-11-02'
   title: 中国首架大型客机C919在上海总装下线
   category: 文化
   importance: 5
   summary: 中国自主研制的首款单通道干线客机C919在上海中国商飞基地成功下线，大型客机研制取得重大突破。
   confidence: 确定
-  tags: [航空, 科技, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 航空
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2015/c919_rollout_201511.jpg
+    caption: 中国首架大型客机C919在上海总装下线
 - id: cn-xi-ma-meeting-201511
-  date: "2015-11-07"
+  date: '2015-11-07'
   title: 习近平同马英九在新加坡举行两岸领导人历史性会面
   category: 政治
   importance: 5
   summary: 海峡两岸领导人习近平与马英九在新加坡握手会面，这是1949年以来海峡两岸领导人首次会面。
   confidence: 确定
-  tags: [政治, 两岸, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 两岸
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2015/xi_ma_meeting_201511.jpg
+    caption: 两岸领导人在新加坡举行历史性会面
 - id: cn-rmb-sdr-basket-201511
-  date: "2015-11-30"
+  date: '2015-11-30'
   title: 国际货币基金组织（IMF）批准人民币加入SDR货币篮子
   category: 经济
   importance: 5
   summary: IMF执董会决定将人民币纳入SDR货币篮子，权重为10.92%，人民币成为第三大权重货币。
   confidence: 确定
-  tags: [金融, 经济, 历史转折]
-  sources: [IMF, 新华网]
-
+  tags:
+    - 金融
+    - 经济
+    - 历史转折
+  sources:
+    - IMF
+    - 新华网
+  image:
+    url: /images/events/2015/rmb_sdr_basket_201511.jpg
+    caption: 国际货币基金组织宣布人民币加入SDR特别提款权货币篮子
 - id: cn-pla-rocket-force-established-201512
-  date: "2015-12-31"
+  date: '2015-12-31'
   title: 中国人民解放军陆军领导机构、火箭军、战略支援部队成立
   category: 政治
   importance: 5
   summary: 国家主席向陆军、火箭军、战略支援部队授予军旗，深化国防和军队改革大幕全面拉开。
   confidence: 确定
-  tags: [军事, 改革, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 军事
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2015/pla_rocket_force_established_201512.jpg
+    caption: 中国人民解放军陆军领导机构、火箭军、战略支援部队成立授旗
 - id: cn-two-child-policy-enforced-201601
-  date: "2016-01-01"
+  date: '2016-01-01'
   title: 全国全面实施“一对夫妇可生育两个孩子”政策正式生效
   category: 政治
   importance: 5
   summary: 修改后的《人口与计划生育法》施行，实施30多年的独生子女政策历史性终结，全面两孩落地。
   confidence: 确定
-  tags: [民生, 人口, 法律, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 民生
+    - 人口
+    - 法律
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2016/two_child_policy_enforced_201601.jpg
+    caption: 新修订人口与计划生育法实施，全面两孩政策正式落地
 - id: cn-south-china-sea-arbitration-201607
-  date: "2016-07-12"
+  date: '2016-07-12'
   title: 中国政府发表关于在南海的主权和权益声明，对所谓南海仲裁案“不接受、不承认”
   category: 政治
   importance: 5
   summary: 针对菲律宾单方面提起的南海仲裁案所谓裁决，中国政府声明裁决无效，坚决维护领海主权。
   confidence: 确定
-  tags: [外交, 军事, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 外交
+    - 军事
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2016/south_china_sea_arbitration_201607.jpg
+    caption: 中国政府发表关于在南海的主权和权益声明
 - id: cn-micius-quantum-satellite-201608
-  date: "2016-08-16"
+  date: '2016-08-16'
   title: 世界首颗量子科学实验卫星“墨子号”成功发射
   category: 文化
   importance: 5
   summary: 世界首颗量子科学实验卫星“墨子号”成功发射，标志着中国在量子通信技术领域领跑全球。
   confidence: 确定
-  tags: [科技, 量子, 航天, 历史转折]
-  sources: [中国科学院, 新华网]
-
+  tags:
+    - 科技
+    - 量子
+    - 航天
+    - 历史转折
+  sources:
+    - 中国科学院
+    - 新华网
+  image:
+    url: /images/events/2016/micius_quantum_satellite_201608.jpg
+    caption: 世界首颗量子科学实验卫星“墨子号”成功发射
 - id: cn-women-volleyball-gold-201608
-  date: "2016-08-21"
+  date: '2016-08-21'
   title: 中国女排在里约奥运会勇夺金牌，时隔12年重登奥运之巅
   category: 文化
   importance: 5
   summary: 里约奥运会女排决赛中，中国女排3比1逆转战胜塞尔维亚队，时隔12年再次夺金，“女排精神”振奋全国。
   confidence: 确定
-  tags: [体育, 文化, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 体育
+    - 文化
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2016/women_volleyball_gold_201608.jpg
+    caption: 中国女排在里约奥运会勇夺金牌，重登奥运之巅
 - id: cn-g20-hangzhou-summit-201609
-  date: "2016-09-04"
+  date: '2016-09-04'
   title: 二十国集团（G20）领导人第十一次峰会在杭州举行
   category: 政治
   importance: 5
   summary: G20峰会在杭州举行，达成《杭州峰会公报》，首次将创新和发展置于全球宏观政策核心。
   confidence: 确定
-  tags: [外交, 经济, 历史转折]
-  sources: [新华网]
+  tags:
+    - 外交
+    - 经济
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2016/g20_hangzhou.jpg"
-    caption: "二十国集团（G20）领导人第十一次峰会在杭州举行"
-
+    url: /images/events/2016/g20_hangzhou_summit_201609.jpg
+    caption: 二十国集团（G20）领导人第十一次峰会在杭州举行历史现场与典藏影像
 - id: cn-tiangong2-space-lab-201609
-  date: "2016-09-15"
+  date: '2016-09-15'
   title: 中国首个真正意义上的空间实验室“天宫二号”成功发射
   category: 文化
   importance: 5
   summary: 天宫二号成功发射，随后与神舟十一号完成交会对接，航天员景海鹏、陈冬在轨驻留30天完成科学实验。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
-
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
+  image:
+    url: /images/events/2016/tiangong2_space_lab_201609.jpg
+    caption: 中国空间实验室“天宫二号”成功发射
 - id: cn-fast-telescope-open-201609
-  date: "2016-09-25"
+  date: '2016-09-25'
   title: 500米口径球面射电望远镜（FAST，“中国天眼”）落成启用
   category: 文化
   importance: 5
   summary: 具有我国自主知识产权、世界最大单口径最灵敏的射电望远镜FAST在贵州落成启用，被誉为“中国天眼”。
   confidence: 确定
-  tags: [科技, 天文, 历史转折]
-  sources: [中国科学院, 新华网]
+  tags:
+    - 科技
+    - 天文
+    - 历史转折
+  sources:
+    - 中国科学院
+    - 新华网
   image:
-    url: "/images/events/2016/fast_telescope.jpg"
-    caption: "500米口径球面射电望远镜（FAST“中国天眼”）在贵州落成启用"
-
+    url: /images/events/2016/fast_telescope_open_201609.jpg
+    caption: 500米口径球面射电望远镜（FAST，“中国天眼”）落成启用历史现场与典藏影像
 - id: cn-sixth-plenum-18th-core-201610
-  date: "2016-10-27"
+  date: '2016-10-27'
   title: 党的十八届六中全会明确“以习近平同志为核心的党中央”
   category: 政治
   importance: 5
   summary: 中共十八届六中全会在北京举行，通过党内监督条例，正式明确了“以习近平同志为核心的党中央”。
   confidence: 确定
-  tags: [政治, 党建, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 党建
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2016/sixth_plenum_18th_core_201610.jpg
+    caption: 党的十八届六中全会在北京举行
 - id: cn-long-march-5-maiden-flight-201611
-  date: "2016-11-03"
+  date: '2016-11-03'
   title: 中国最大运载火箭“长征五号”（胖五）首飞成功
   category: 文化
   importance: 5
   summary: 长征五号大推力运载火箭在海南文昌首飞成功，填补我国大推力无毒液体火箭空白。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [国家航天局, 新华网]
-
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 国家航天局
+    - 新华网
+  image:
+    url: /images/events/2016/long_march_5_maiden_flight_201611.jpg
+    caption: 中国最大运载火箭“长征五号”在文昌成功首飞
 - id: cn-shenzhen-hongkong-stock-connect-201612
-  date: "2016-12-05"
+  date: '2016-12-05'
   title: “深港通”股票交易互联互通机制正式开通
   category: 经济
   importance: 4
   summary: 深交所与港交所“深港通”正式开通，标志着中国资本市场进一步实现与国际市场多层次互联互通。
   confidence: 确定
-  tags: [经济, 金融]
-  sources: [新华网]
-
+  tags:
+    - 经济
+    - 金融
+  sources:
+    - 新华网
 - id: cn-xiongan-new-area-201704
-  date: "2017-04-01"
+  date: '2017-04-01'
   title: 中共中央、国务院决定设立河北雄安新区
   category: 政治
   importance: 5
   summary: 中共中央、国务院决定设立河北雄安新区，这是继深圳和浦东之后又一全国意义的新区，“千年大计、国家大事”。
   confidence: 确定
-  tags: [政治, 经济, 雄安, 历史转折]
-  sources: [新华网]
+  tags:
+    - 政治
+    - 经济
+    - 雄安
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2017/xiongan_new_area.jpg"
-    caption: "中共中央、国务院决定设立河北雄安新区"
-
+    url: /images/events/2017/xiongan_new_area_201704.jpg
+    caption: 中共中央、国务院决定设立河北雄安新区历史现场与典藏影像
 - id: cn-tianzhou1-cargo-ship-201704
-  date: "2017-04-20"
+  date: '2017-04-20'
   title: 中国首艘货运飞船“天舟一号”成功发射并完成首次在轨推进剂补加
   category: 文化
   importance: 5
   summary: 天舟一号成功发射，随后与天宫二号交会对接并完成中国首次推进剂在轨补加，空间站建造关键技术全面突破。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [国家航天局, 新华网]
-
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 国家航天局
+    - 新华网
+  image:
+    url: /images/events/2017/tianzhou1_cargo_ship_201704.jpg
+    caption: 中国首艘货运飞船“天舟一号”成功发射
 - id: cn-shandong-aircraft-carrier-launch-201704
-  date: "2017-04-26"
+  date: '2017-04-26'
   title: 中国首艘国产航空母舰（山东舰）在大连成功下水
   category: 政治
   importance: 5
   summary: 中国首艘完全自主研制的国产航空母舰在大连造船厂成功下水，标志着自主设计建造航母取得重大突破。
   confidence: 确定
-  tags: [军事, 科技, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 军事
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2017/shandong_aircraft_carrier_launch_201704.jpg
+    caption: 中国首艘国产航空母舰在大连造船厂成功下水
 - id: cn-c919-maiden-flight-201705
-  date: "2017-05-05"
+  date: '2017-05-05'
   title: 中国首款大型干线客机C919在上海成功首飞
   category: 文化
   importance: 5
   summary: C919大型客机在上海浦东机场成功首飞，标志着中国不具备自主研制大客机历史彻底终结。
   confidence: 确定
-  tags: [航空, 科技, 历史转折]
-  sources: [新华网]
+  tags:
+    - 航空
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2017/c919_maiden_flight.jpg"
-    caption: "中国首款大型干线客机C919在上海成功首飞"
-
+    url: /images/events/2017/c919_maiden_flight_201705.jpg
+    caption: 中国首款大型干线客机C919在上海成功首飞历史现场与典藏影像
 - id: cn-belt-and-road-forum-201705
-  date: "2017-05-14"
+  date: '2017-05-14'
   title: 第一届“一带一路”国际合作高峰论坛在北京成功举行
   category: 政治
   importance: 5
   summary: “一带一路”国际合作高峰论坛在北京举行，29位外国领导人出席，达成270多项成果，“一带一路”进入新阶段。
   confidence: 确定
-  tags: [外交, 一带一路, 经济, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 外交
+    - 一带一路
+    - 经济
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2017/belt_and_road_forum_201705.jpg
+    caption: 第一届“一带一路”国际合作高峰论坛在北京举行
 - id: cn-fuxing-emu-debut-201706
-  date: "2017-06-25"
+  date: '2017-06-25'
   title: 中国标准动车组正式命名为“复兴号”并在京沪高铁双向首发
   category: 经济
   importance: 5
   summary: 中国标准动车组被命名为“复兴号”，在京沪高铁实现时速350公里商业运营，中国高铁迈入“复兴号”时代。
   confidence: 确定
-  tags: [经济, 交通, 科技, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 经济
+    - 交通
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2017/fuxing_emu_debut_201706.jpg
+    caption: “复兴号”中国标准动车组在京沪高铁双向首发
 - id: cn-zhurihe-parade-201707
-  date: "2017-07-30"
+  date: '2017-07-30'
   title: 庆祝中国人民解放军建军90周年阅兵在朱日和训练基地举行
   category: 政治
   importance: 5
   summary: 庆祝建军90周年沙场阅兵在朱日和举行，国家主席检阅部队，这是新中国成立以来首次建军节沙场阅兵。
   confidence: 确定
-  tags: [军事, 政治, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 军事
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2017/zhurihe_parade_201707.jpg
+    caption: 庆祝中国人民解放军建军90周年沙场阅兵在朱日和举行
 - id: cn-jiuzhaigou-earthquake-201708
-  date: "2017-08-08"
+  date: '2017-08-08'
   title: 四川省阿坝州九寨沟县发生7.0级地震
   category: 灾害
   importance: 4
   summary: 四川九寨沟发生7.0级地震，造成25人遇难，全社会开展抗震救灾与景区生态修复。
   confidence: 确定
-  tags: [灾害, 地震]
-  sources: [新华网]
-
+  tags:
+    - 灾害
+    - 地震
+  sources:
+    - 新华网
 - id: cn-brics-xiamen-summit-201709
-  date: "2017-09-03"
+  date: '2017-09-03'
   title: 金砖国家领导人第九次会晤在福建厦门举行
   category: 政治
   importance: 4
   summary: 金砖领导人会晤在厦门举行，提出“金砖+”合作模式，发表《厦门宣言》，开启金砖第二个“金色十年”。
   confidence: 确定
-  tags: [外交, 全球治理]
-  sources: [新华网]
-
+  tags:
+    - 外交
+    - 全球治理
+  sources:
+    - 新华网
 - id: cn-19th-cpc-congress-201710
-  date: "2017-10-18"
+  date: '2017-10-18'
   title: 中国共产党第十九次全国代表大会胜利召开，确立习近平新时代中国特色社会主义思想
   category: 政治
   importance: 5
   summary: 中共十九大在北京胜利召开，宣告中国特色社会主义进入新时代，确立习近平新时代中国特色社会主义思想为指导思想。
   confidence: 确定
-  tags: [政治, 改革, 历史转折]
-  sources: [新华网]
+  tags:
+    - 政治
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2017/cpc_19th_congress.jpg"
-    caption: "中国共产党第十九次全国代表大会在北京隆重召开"
-
+    url: /images/events/2017/19th_cpc_congress_201710.jpg
+    caption: 中国共产党第十九次全国代表大会胜利召开，确立习近平新时代中国特色社会主义思想历史现场与典藏影像
 - id: cn-constitution-amendment-201803
-  date: "2018-03-11"
+  date: '2018-03-11'
   title: 十三届全国人大一次会议表决通过《中华人民共和国宪法修正案》
   category: 政治
   importance: 5
   summary: 十三届全国人大一次会议通过宪法修正案，将习近平新时代中国特色社会主义思想载入宪法，设立国家监察委员会。
   confidence: 确定
-  tags: [宪法, 法治, 政治, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 宪法
+    - 法治
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2018/constitution_amendment_201803.jpg
+    caption: 十三届全国人大一次会议表决通过宪法修正案
 - id: cn-us-china-trade-war-begins-201803
-  date: "2018-03-22"
+  date: '2018-03-22'
   title: 美国签署对华加征关税备忘录，中美贸易摩擦（贸易战）爆发
   category: 经济
   importance: 5
   summary: 美国签署备忘录拟对600亿美元中国商品关税，中国出台反制清单，中美贸易摩擦爆发深刻影响全球供应链。
   confidence: 确定
-  tags: [经济, 贸易, 外交, 历史转折]
-  sources: [商务部, 新华网]
-
+  tags:
+    - 经济
+    - 贸易
+    - 外交
+    - 历史转折
+  sources:
+    - 商务部
+    - 新华网
+  image:
+    url: /images/events/2018/us_china_trade_war_begins_201803.jpg
+    caption: 中美贸易摩擦爆发，中国出台关税反制措施
 - id: cn-hainan-free-trade-port-201804
-  date: "2018-04-13"
+  date: '2018-04-13'
   title: 国家支持海南全岛建设自由贸易试验区，探索建设中国特色自由贸易港
   category: 经济
   importance: 5
   summary: 国家主席宣布支持海南全岛建设自由贸易试验区、探索建设中国特色自由贸易港，打造开放新高地。
   confidence: 确定
-  tags: [经济, 改革, 海南, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 经济
+    - 改革
+    - 海南
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2018/hainan_free_trade_port_201804.jpg
+    caption: 支持海南全岛建设自由贸易试验区与中国特色自由贸易港
 - id: cn-marx-bicentenary-201805
-  date: "2018-05-04"
+  date: '2018-05-04'
   title: 纪念马克思诞辰200周年大会在北京隆重举行
   category: 政治
   importance: 4
   summary: 纪念马克思诞辰200周年大会在北京隆重举行，强调马克思主义是科学、人民、实践与开放的理论。
   confidence: 确定
-  tags: [政治, 思想]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 思想
+  sources:
+    - 新华网
 - id: cn-hzmb-open-201810
-  date: "2018-10-24"
+  date: '2018-10-24'
   title: 港珠澳大桥正式通车运营
   category: 经济
   importance: 5
   summary: 跨越伶仃洋连接港珠澳的超级工程港珠澳大桥通车，全长55公里为世界最长跨海大桥，推动大湾区融合。
   confidence: 确定
-  tags: [工程, 交通, 大湾区, 历史转折]
-  sources: [新华网]
+  tags:
+    - 工程
+    - 交通
+    - 大湾区
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2018/hzm_bridge.jpg"
-    caption: "超级工程港珠澳大桥正式通车运营"
-
+    url: /images/events/2018/hzmb_open_201810.jpg
+    caption: 港珠澳大桥正式通车运营历史现场与典藏影像
 - id: cn-ciie-shanghai-201811
-  date: "2018-11-05"
+  date: '2018-11-05'
   title: 首届中国国际进口博览会（进博会）在上海开幕
   category: 经济
   importance: 5
   summary: 世界上首个以进口为主题的国家级展会首届进博会在上海开幕，172个国家、地区和国际组织参展。
   confidence: 确定
-  tags: [经济, 贸易, 进博会, 历史转折]
-  sources: [新华网]
+  tags:
+    - 经济
+    - 贸易
+    - 进博会
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2018/ciie_first.jpg"
-    caption: "首届中国国际进口博览会在上海隆重开幕"
-
+    url: /images/events/2018/ciie_shanghai_201811.jpg
+    caption: 首届中国国际进口博览会（进博会）在上海开幕历史现场与典藏影像
 - id: cn-meng-wanzhou-detention-201812
-  date: "2018-12-01"
+  date: '2018-12-01'
   title: 华为副董事长孟晚舟在加拿大温哥华被无理拘押
   category: 政治
   importance: 5
   summary: 加拿大当局应美国要求在温哥华无理拘押华为首席财务官孟晚舟，中国政府展开坚决外交交涉。
   confidence: 确定
-  tags: [外交, 科技, 历史转折]
-  sources: [外交部, 新华网]
-
+  tags:
+    - 外交
+    - 科技
+    - 历史转折
+  sources:
+    - 外交部
+    - 新华网
+  image:
+    url: /images/events/2018/meng_wanzhou_detention_201812.jpg
+    caption: 中国政府就孟晚舟被无理拘押展开坚决外交交涉
 - id: cn-change4-launch-201812
-  date: "2018-12-08"
+  date: '2018-12-08'
   title: 嫦娥四号探测器成功发射，开启人类首次月背软着陆之旅
   category: 文化
   importance: 5
   summary: 长征三号乙运载火箭将嫦娥四号送入太空，开启人类探测器首次月球背面软着陆与巡视探测征程。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
-
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
+  image:
+    url: /images/events/2018/change4_launch_201812.jpg
+    caption: 长征三号乙火箭成功将嫦娥四号送入预定轨道
 - id: cn-reform-40th-anniversary-201812
-  date: "2018-12-18"
+  date: '2018-12-18'
   title: 庆祝改革开放40周年大会在北京隆重举行
   category: 政治
   importance: 5
   summary: 庆祝改革开放40周年大会在北京隆重举行，表彰改革先锋，号召将改革开放进行到底。
   confidence: 确定
-  tags: [政治, 改革, 历史转折]
-  sources: [新华网]
+  tags:
+    - 政治
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2018/reform_40th.jpg"
-    caption: "庆祝改革开放40周年大会在北京隆重举行"
-
+    url: /images/events/2018/reform_40th_anniversary_201812.jpg
+    caption: 庆祝改革开放40周年大会在北京隆重举行历史现场与典藏影像
 - id: cn-gdp-90trillion-201812
-  date: "2018-12-31"
+  date: '2018-12-31'
   title: 中国全年GDP首次突破90万亿元人民币，占全球经济比重升至16%
   category: 经济
   importance: 4
   summary: 2018年中国国内生产总值达90.03万亿元人民币，同比增长6.6%，稳居世界第二大经济体。
   confidence: 确定
-  tags: [经济, 宏观]
-  sources: [国家统计局, 新华网]
-
+  tags:
+    - 经济
+    - 宏观
+  sources:
+    - 国家统计局
+    - 新华网
 - id: cn-change4-moon-landing-201901
-  date: "2019-01-03"
+  date: '2019-01-03'
   title: 嫦娥四号探测器成功软着陆月球背面，人类历史上首次
   category: 文化
   importance: 5
   summary: 嫦娥四号自主着陆于月球背面冯·卡门撞击坑，实现人类首次月背软着陆与中继通信，玉兔二号驶上月表。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
   image:
-    url: "/images/events/2019/change4_far_side.jpg"
-    caption: "嫦娥四号着陆器与玉兔二号月球车在月球背面完成互拍"
-
+    url: /images/events/2019/change4_moon_landing_201901.jpg
+    caption: 嫦娥四号探测器成功软着陆月球背面，人类历史上首次历史现场与典藏影像
 - id: cn-foreign-investment-law-201903
-  date: "2019-03-15"
+  date: '2019-03-15'
   title: 十三届全国人大二次会议表决通过《中华人民共和国外商投资法》
   category: 政治
   importance: 5
   summary: 十三届全国人大二次会议通过外商投资法，确立准入前国民待遇加负面清单管理，开启高水平开放新篇章。
   confidence: 确定
-  tags: [法律, 经济, 开放, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 法律
+    - 经济
+    - 开放
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2019/foreign_investment_law_201903.jpg
+    caption: 十三届全国人大二次会议表决通过《外商投资法》
 - id: cn-second-belt-road-forum-201904
-  date: "2019-04-25"
+  date: '2019-04-25'
   title: 第二届“一带一路”国际合作高峰论坛在北京成功举行
   category: 政治
   importance: 5
   summary: 第二届“一带一路”高峰论坛在北京举行，38位外国领导人出席，开启高质量共建“一带一路”新阶段。
   confidence: 确定
-  tags: [外交, 一带一路, 经济, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 外交
+    - 一带一路
+    - 经济
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2019/second_belt_road_forum_201904.jpg
+    caption: 第二届“一带一路”国际合作高峰论坛在北京成功举行
 - id: cn-daxing-airport-open-201909
-  date: "2019-09-25"
+  date: '2019-09-25'
   title: 北京大兴国际机场正式通航
   category: 经济
   importance: 5
   summary: “新国门”北京大兴国际机场正式投入运营，国家主席出席通航仪式，大兴机场成为全球最大单体航站楼。
   confidence: 确定
-  tags: [工程, 交通, 北京, 历史转折]
-  sources: [新华网]
+  tags:
+    - 工程
+    - 交通
+    - 北京
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2019/daxing_airport.jpg"
-    caption: "“新国门”北京大兴国际机场正式通航投入运营"
-
+    url: /images/events/2019/daxing_airport_open_201909.jpg
+    caption: 北京大兴国际机场正式通航历史现场与典藏影像
 - id: cn-70th-anniversary-parade-201910
-  date: "2019-10-01"
+  date: '2019-10-01'
   title: 庆祝中华人民共和国成立70周年大会及盛大阅兵在京举行
   category: 政治
   importance: 5
   summary: 庆祝新中国成立70周年大会在天安门广场举行，国家主席发表讲话并检阅部队，东风-41首秀，10万群众游行。
   confidence: 确定
-  tags: [政治, 盛会, 军事, 历史转折]
-  sources: [新华网]
+  tags:
+    - 政治
+    - 盛会
+    - 军事
+    - 历史转折
+  sources:
+    - 新华网
   image:
-    url: "/images/events/2019/prc_70th_anniversary.jpg"
-    caption: "庆祝中华人民共和国成立70周年大会在天安门广场盛大举行"
-
+    url: /images/events/2019/70th_anniversary_parade_201910.jpg
+    caption: 庆祝中华人民共和国成立70周年大会及盛大阅兵在京举行历史现场与典藏影像
 - id: cn-fourth-plenum-19th-201910
-  date: "2019-10-31"
+  date: '2019-10-31'
   title: 党的十九届四中全会审议通过坚持和完善中国特色社会主义制度决定
   category: 政治
   importance: 5
   summary: 中共十九届四中全会在北京举行，审议通过《关于坚持和完善中国特色社会主义制度 推进国家治理体系和治理能力现代化若干重大问题的决定》。
   confidence: 确定
-  tags: [政治, 制度, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 制度
+    - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2019/fourth_plenum_19th_201910.jpg
+    caption: 党的十九届四中全会在北京胜利召开
 - id: cn-shandong-carrier-commissioned-201912
-  date: "2019-12-17"
+  date: '2019-12-17'
   title: 中国第一艘国产航空母舰山东舰在海南三亚正式交付入列
   category: 政治
   importance: 5
   summary: 中国首艘国产航母山东舰在三亚交付海军，国家主席出席交接入列仪式，中国正式迈入“双航母时代”。
   confidence: 确定
-  tags: [军事, 科技, 山东舰, 历史转折]
-  sources: [国防部, 新华网]
+  tags:
+    - 军事
+    - 科技
+    - 山东舰
+    - 历史转折
+  sources:
+    - 国防部
+    - 新华网
   image:
-    url: "/images/events/2019/shandong_carrier.jpg"
-    caption: "中国首艘国产航空母舰“山东舰”在海南三亚正式交付入列"
-
+    url: /images/events/2019/shandong_carrier_commissioned_201912.jpg
+    caption: 中国第一艘国产航空母舰山东舰在海南三亚正式交付入列历史现场与典藏影像
 - id: cn-macau-handover-20th-201912
-  date: "2019-12-20"
+  date: '2019-12-20'
   title: 庆祝澳门回归祖国20周年大会暨澳门特别行政区第五届政府就职典礼举行
   category: 政治
   importance: 4
   summary: 庆祝澳门回归祖国20周年大会在澳门举行，国家主席出席讲话，总结“一国两制”在澳门成功实践经验。
   confidence: 确定
-  tags: [政治, 澳门]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 澳门
+  sources:
+    - 新华网
 - id: cn-long-march-5-cz5-flight3-201912
-  date: "2019-12-27"
+  date: '2019-12-27'
   title: 长征五号遥三运载火箭发射成功，中国“胖五”重型火箭复飞成功
   category: 文化
   importance: 5
   summary: 长征五号遥三运载火箭成功将实践二十号送入预定轨道，“胖五”复飞成功，为空间站与探月探火扫清道路。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 国家航天局]
-
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家航天局
+  image:
+    url: /images/events/2019/long_march_5_cz5_flight3_201912.jpg
+    caption: 长征五号遥三运载火箭在海南文昌发射成功，胖五成功复飞
 - id: cn-gdp-99trillion-201912
-  date: "2019-12-31"
+  date: '2019-12-31'
   title: 中国全年GDP接近100万亿元人民币，人均GDP首次突破1万美元
   category: 经济
   importance: 5
   summary: 2019年中国国内生产总值达99.09万亿元，按年均汇率折算人均GDP首次突破1万美元，实现里程碑跨越。
   confidence: 确定
-  tags: [经济, 宏观, 民生, 历史转折]
-  sources: [国家统计局, 新华网]
-
+  tags:
+    - 经济
+    - 宏观
+    - 民生
+    - 历史转折
+  sources:
+    - 国家统计局
+    - 新华网
+  image:
+    url: /images/events/2019/gdp_99trillion_201912.jpg
+    caption: 中国GDP逼近100万亿元，人均GDP突破1万美元
 - id: cn-new-medical-reform-200904
-  date: "2009-04-06"
+  date: '2009-04-06'
   title: 《中共中央国务院关于深化医药卫生体制改革的意见》发布，新医改方案正式出台
   category: 经济
   importance: 5
   summary: 《关于深化医药卫生体制改革的意见》正式发布，确立覆盖城乡居民的医疗卫生体制改革方向，明确到2020年基本建立覆盖全民的基本医疗卫生制度。
   confidence: 确定
-  tags: [民生, 医疗, 改革, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 民生
+    - 医疗
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-h1n1-response-200906
-  date: "2009-05-11"
+  date: '2009-05-11'
   title: 中国内地发现首例输入性甲型H1N1流感病例，全面启动应急响应
   category: 灾害
   importance: 4
   summary: 中国内地首例甲型H1N1流感确诊病例发现后，国家卫生部门迅速启动联防联控机制，成功研制疫苗并有效遏制疫情蔓延。
   confidence: 确定
-  tags: [疫情, 公共卫生]
-  sources: [新华网, 卫生部]
-
+  tags:
+    - 疫情
+    - 公共卫生
+  sources:
+    - 新华网
+    - 卫生部
 - id: cn-urumqi-75-incident-200907
-  date: "2009-07-05"
+  date: '2009-07-05'
   title: 新疆乌鲁木齐发生"7·5"严重暴力犯罪事件，国家依法处置
   category: 政治
   importance: 5
   summary: 乌鲁木齐发生打砸抢烧严重暴力犯罪事件，造成重大人员伤亡，党和政府迅速出动警力依法平息，全面维护社会稳定与民族团结。
   confidence: 确定
-  tags: [政治, 新疆, 社会稳定]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 新疆
+    - 社会稳定
+  sources:
+    - 新华网
 - id: cn-new-china-60th-parade-200910
-  date: "2009-10-01"
+  date: '2009-10-01'
   title: 庆祝中华人民共和国成立60周年大会暨盛大阅兵式在北京天安门广场举行
   category: 政治
   importance: 5
   summary: 新中国成立60周年盛大庆典在天安门广场举行，胡锦涛发表重要讲话并检阅部队，10万军民游行、52个方阵接受检阅，展示国防与建设成就。
   confidence: 确定
-  tags: [政治, 国庆, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 国庆
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-economy-first-recovery-2009
-  date: "2009-11-10"
+  date: '2009-11-10'
   title: 中国经济在全球金融危机中率先回升向好，GDP全年增长8.7%
   category: 经济
   importance: 5
   summary: 中国实施积极财政政策和适度宽松货币政策，出台4万亿经济刺激方案，全年GDP增速8.7%，在主要经济体中率先实现经济回升。
   confidence: 确定
-  tags: [经济, 宏观, 历史转折]
-  sources: [国家统计局, 新华网]
-
+  tags:
+    - 经济
+    - 宏观
+    - 历史转折
+  sources:
+    - 国家统计局
+    - 新华网
 - id: cn-g20-copenhagen-diplomacy-2009
-  date: "2009-09-24"
+  date: '2009-09-24'
   title: 国家主席胡锦涛出席联合国气候变化峰会并在G20匹兹堡峰会上提出中国减排承诺
   category: 政治
   importance: 4
   summary: 胡锦涛出席联合国气候变化峰会，宣布中国将大力发展绿色经济；随后在G20匹兹堡峰会上积极参与全球经济治理改革讨论。
   confidence: 确定
-  tags: [外交, 气候, 全球治理]
-  sources: [新华网]
-
+  tags:
+    - 外交
+    - 气候
+    - 全球治理
+  sources:
+    - 新华网
 - id: cn-major-projects-2009
-  date: "2009-12-26"
+  date: '2009-12-26'
   title: 武广高速铁路正式开通运营，中国进入高铁快速发展时代
   category: 经济
   importance: 5
   summary: 武汉至广州高速铁路正式通车，全程约1069公里，设计时速350公里，为当时全球最快商业运营铁路，标志中国高铁规模化建设正式起步。
   confidence: 确定
-  tags: [经济, 交通, 高铁, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 经济
+    - 交通
+    - 高铁
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-anti-corruption-2009
-  date: "2009-06-18"
+  date: '2009-06-18'
   title: 最高人民检察院公布2008年查处腐败案件情况，反腐败斗争持续深化
   category: 政治
   importance: 4
   summary: 2009年，中国持续推进反腐败斗争，检察机关全年立案侦查贪污贿赂案件超3万件，重大案件处理得到社会广泛关注。
   confidence: 确定
-  tags: [政治, 反腐, 法治]
-  sources: [新华网, 检察院]
-
+  tags:
+    - 政治
+    - 反腐
+    - 法治
+  sources:
+    - 新华网
+    - 检察院
 - id: cn-shanghai-expo-preparation-2009
-  date: "2009-01-22"
+  date: '2009-01-22'
   title: 2010年上海世界博览会建设工作全面推进，迎接"城市，让生活更美好"
   category: 文化
   importance: 4
   summary: 2009年上海世博会场馆建设全面进入攻坚阶段，预计参展国家和国际组织逾200个，将成为历史上规模最大的世博会。
   confidence: 确定
-  tags: [文化, 外交, 上海]
-  sources: [新华网]
-
+  tags:
+    - 文化
+    - 外交
+    - 上海
+  sources:
+    - 新华网
 - id: cn-social-security-coverage-2009
-  date: "2009-09-04"
+  date: '2009-09-04'
   title: 国务院发布新农村社会养老保险试点方案，探索建立"新农保"制度
   category: 经济
   importance: 5
   summary: 国务院发布《关于开展新型农村社会养老保险试点的指导意见》，标志着中国首次在农村地区建立由政府补贴的养老保险制度，覆盖亿万农民。
   confidence: 确定
-  tags: [民生, 社保, 农村, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 民生
+    - 社保
+    - 农村
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-tibet-314-incident-200803
-  date: "2008-03-14"
+  date: '2008-03-14'
   title: 西藏拉萨发生打砸抢烧严重暴力犯罪事件，政府依法处置
   category: 政治
   importance: 5
   summary: 拉萨发生严重打砸抢烧暴力犯罪事件，造成人员伤亡和财产损失，党和政府迅速依法处置，维护社会稳定与民族团结。
   confidence: 确定
-  tags: [政治, 西藏, 社会稳定]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 西藏
+    - 社会稳定
+  sources:
+    - 新华网
 - id: cn-wenchuan-earthquake-200805
-  date: "2008-05-12"
+  date: '2008-05-12'
   title: 四川汶川发生8.0级特大地震，举国上下同心抗震救灾
   category: 灾害
   importance: 5
   summary: 四川省汶川县发生里氏8.0级特大地震，造成约69227人遇难，全国军民投入史上最大规模救灾行动，彰显了社会主义制度的优越性。
   confidence: 确定
-  tags: [灾害, 地震, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 灾害
+    - 地震
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-beijing-olympics-200808
-  date: "2008-08-08"
+  date: '2008-08-08'
   title: 第29届夏季奥林匹克运动会在北京隆重开幕，中国首次举办夏季奥运会
   category: 文化
   importance: 5
   summary: 北京奥运会于8月8日晚8时开幕，中国代表团以51金21银28铜位列金牌榜首位，创造了中国参加奥运史上最佳成绩，向世界展示开放中国形象。
   confidence: 确定
-  tags: [体育, 文化, 历史转折]
-  sources: [新华网, 国际奥委会]
-
+  tags:
+    - 体育
+    - 文化
+    - 历史转折
+  sources:
+    - 新华网
+    - 国际奥委会
 - id: cn-shenzhou7-spacewalk-200809
-  date: "2008-09-27"
+  date: '2008-09-27'
   title: 航天员翟志刚完成中国首次太空出舱行走，神舟七号载人任务圆满成功
   category: 文化
   importance: 5
   summary: 神舟七号于9月25日发射，翟志刚于9月27日完成中国首次太空出舱活动，太空行走约19分35秒，使中国成为世界第三个独立掌握出舱技术的国家。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [国家航天局, 新华网]
-
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 国家航天局
+    - 新华网
 - id: cn-melamine-scandal-200809
-  date: "2008-09-11"
+  date: '2008-09-11'
   title: 三鹿奶粉三聚氰胺事件曝光，国家启动I级食品安全应急响应
   category: 经济
   importance: 5
   summary: 三鹿奶粉被查出含三聚氰胺，导致数十万婴幼儿患病，国家启动I级应急响应并重组食品安全监管体系，事件推动食品安全立法重大变革。
   confidence: 确定
-  tags: [民生, 食品安全, 社会]
-  sources: [新华网, 卫生部]
-
+  tags:
+    - 民生
+    - 食品安全
+    - 社会
+  sources:
+    - 新华网
+    - 卫生部
 - id: cn-beijing-olympics-medal-200808
-  date: "2008-08-24"
+  date: '2008-08-24'
   title: 北京奥运会圆满闭幕，中国代表团以51金位列金牌榜首，创历史最佳成绩
   category: 文化
   importance: 5
   summary: 北京奥运会历时16天圆满落幕，中国代表团以51金21银28铜的佳绩位列金牌榜第一，实现了百年奥运梦想，展示了中华民族伟大复兴的强大力量。
   confidence: 确定
-  tags: [体育, 文化, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 体育
+    - 文化
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-cross-strait-three-links-200812
-  date: "2008-12-15"
+  date: '2008-12-15'
   title: 海峡两岸海运直航、空运直航、直接通邮全面实现，"大三通"时代正式来临
   category: 政治
   importance: 5
   summary: 两岸"大三通"在12月15日全面实现，历经近30年终于完成两岸海运直航、空运直航及直接通邮，标志着两岸关系迈入历史新阶段。
   confidence: 确定
-  tags: [政治, 两岸, 历史转折]
-  sources: [国台办, 新华网]
-
+  tags:
+    - 政治
+    - 两岸
+    - 历史转折
+  sources:
+    - 国台办
+    - 新华网
 - id: cn-reform-openning-30th-200812
-  date: "2008-12-18"
+  date: '2008-12-18'
   title: 纪念党的十一届三中全会召开30周年大会在北京隆重举行
   category: 政治
   importance: 5
   summary: 改革开放30周年纪念大会在北京举行，胡锦涛发表重要讲话，回顾改革开放伟大历程，明确坚定不移继续推进改革开放的方向。
   confidence: 确定
-  tags: [政治, 改革, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-global-financial-crisis-response-2008
-  date: "2008-11-05"
+  date: '2008-11-05'
   title: 国务院公布扩大内需促进经济平稳较快增长十项措施（4万亿投资计划）
   category: 经济
   importance: 5
   summary: 面对全球金融危机冲击，国务院公布4万亿元投资计划，涵盖基础设施、民生工程、节能减排等，有效抵御了金融危机冲击。
   confidence: 确定
-  tags: [经济, 宏观, 金融危机, 历史转折]
-  sources: [新华网, 国务院]
-
+  tags:
+    - 经济
+    - 宏观
+    - 金融危机
+    - 历史转折
+  sources:
+    - 新华网
+    - 国务院
 - id: cn-property-law-200703
-  date: "2007-03-16"
+  date: '2007-03-16'
   title: 十届全国人大五次会议表决通过《中华人民共和国物权法》
   category: 政治
   importance: 5
   summary: 《物权法》高票通过，明确私有财产与公有财产平等保护原则，标志着中国特色社会主义法律体系建设迈出里程碑式一步。
   confidence: 确定
-  tags: [政治, 法治, 历史转折]
-  sources: [新华网, 人大网]
-
+  tags:
+    - 政治
+    - 法治
+    - 历史转折
+  sources:
+    - 新华网
+    - 人大网
 - id: cn-tai-lake-algae-blooms-200705
-  date: "2007-05-29"
+  date: '2007-05-29'
   title: 太湖蓝藻大面积爆发致无锡自来水危机，国家重拳整治水污染
   category: 灾害
   importance: 4
   summary: 太湖水质恶化导致蓝藻大面积暴发，无锡发生严重饮用水危机，促使国家全面启动太湖流域生态修复与生态文明建设。
   confidence: 确定
-  tags: [环境, 生态, 环保]
-  sources: [新华网, 环保部]
-
+  tags:
+    - 环境
+    - 生态
+    - 环保
+  sources:
+    - 新华网
+    - 环保部
 - id: cn-hong-kong-10th-anniversary-200707
-  date: "2007-07-01"
+  date: '2007-07-01'
   title: 庆祝香港回归祖国10周年大会暨香港特别行政区第三届政府就职典礼举行
   category: 政治
   importance: 5
   summary: 胡锦涛出席庆祝大会并发表重要讲话，曾荫权宣誓就任三届行政长官，证明"一国两制"方针在香港取得巨大成功。
   confidence: 确定
-  tags: [政治, 香港, 一国两制, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 香港
+    - 一国两制
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-rural-minimum-living-allowance-200707
-  date: "2007-07-11"
+  date: '2007-07-11'
   title: 国务院印发通知在全国范围建立农村最低生活保障制度
   category: 经济
   importance: 5
   summary: 国务院发布《关于在全国建立农村最低生活保障制度的通知》，将数千万困难农村居民纳入最低生活保障，实现民生保障制度重大飞跃。
   confidence: 确定
-  tags: [民生, 社保, 农村, 历史转折]
-  sources: [新华网, 国务院]
-
+  tags:
+    - 民生
+    - 社保
+    - 农村
+    - 历史转折
+  sources:
+    - 新华网
+    - 国务院
 - id: cn-cpc-17th-congress-200710
-  date: "2007-10-15"
+  date: '2007-10-15'
   title: 中国共产党第十七次全国代表大会在北京胜利召开
   category: 政治
   importance: 5
   summary: 中共十七大确立深入贯彻落实科学发展观，把科学发展观写入党章，明确到2020年全面建设小康社会的奋斗目标。
   confidence: 确定
-  tags: [政治, 党建, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 党建
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-change1-lunar-orbiter-200710
-  date: "2007-10-24"
+  date: '2007-10-24'
   title: 我国首颗月球探测卫星"嫦娥一号"在西昌卫星发射中心成功发射
   category: 文化
   importance: 5
   summary: 嫦娥一号由长征三号甲火箭发射升空，11月5日成功进入环月轨道，标志着中国探月工程（绕、落、回）第一步取得圆满成功。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [国家航天局, 新华网]
-
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 国家航天局
+    - 新华网
 - id: cn-shanghai-stock-index-6000-200710
-  date: "2007-10-16"
+  date: '2007-10-16'
   title: 沪指突破6124点创历史新高，中国资本市场迎来前所未有大牛市
   category: 经济
   importance: 4
   summary: 上证综指触及历史最高点6124.04点，股改效应与经济高速增长推动资本市场前所未有繁荣，但也伴随后续剧烈波动。
   confidence: 确定
-  tags: [经济, 金融, 股市]
-  sources: [新华网, 证券时报]
-
+  tags:
+    - 经济
+    - 金融
+    - 股市
+  sources:
+    - 新华网
+    - 证券时报
 - id: cn-cross-strait-charter-flights-200702
-  date: "2007-02-15"
+  date: '2007-02-15'
   title: 两岸包机常态化与海峡两岸经济文化交流持续深化
   category: 政治
   importance: 4
   summary: 2007年两岸节日包机与常态化包机试点范围进一步扩大，为2008年全面实现大三通奠定了坚实基础。
   confidence: 确定
-  tags: [政治, 两岸]
-  sources: [新华网, 国台办]
-
+  tags:
+    - 政治
+    - 两岸
+  sources:
+    - 新华网
+    - 国台办
 - id: cn-harmony-bullet-train-200704
-  date: "2007-04-18"
+  date: '2007-04-18'
   title: 中国铁路第六次大提速，"和谐号"动车组（CRH）正式投入运营
   category: 经济
   importance: 5
   summary: 全国铁路实施第六次大面积提速，时速200公里及以上的"和谐号"动车组正式在干线开行，中国铁路正式迈入动车组时代。
   confidence: 确定
-  tags: [交通, 科技, 高铁, 历史转折]
-  sources: [铁道部, 新华网]
-
+  tags:
+    - 交通
+    - 科技
+    - 高铁
+    - 历史转折
+  sources:
+    - 铁道部
+    - 新华网
 - id: cn-agricultural-tax-repeal-200601
-  date: "2006-01-01"
+  date: '2006-01-01'
   title: 中华人民共和国废止农业税条例，在中国延续2600年的"皇粮国税"正式退出历史舞台
   category: 经济
   importance: 5
   summary: 全面废止农业税条例，彻底免除全国8亿农民的农业税负担，结束了延续2600年的农业税历史，标志着新农村建设划时代突破。
   confidence: 确定
-  tags: [民生, 农业, 改革, 历史转折]
-  sources: [新华网, 人大网]
-
+  tags:
+    - 民生
+    - 农业
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+    - 人大网
 - id: cn-hainan-nanhai-collision-200104
-  date: "2001-04-01"
+  date: '2001-04-01'
   title: 中美南海撞机事件爆发，海军飞行员王伟壮烈牺牲
   category: 战争
   importance: 5
   summary: 美军EP-3电子侦察机在海南岛东南海域撞毁我歼-8Ⅱ战机，飞行员王伟跳伞失踪后确认牺牲，引发中美深刻外交与军事摩擦。
   confidence: 确定
-  tags: [军事, 外交, 海南, 历史转折]
-  sources: [国防部, 新华网]
-
+  tags:
+    - 军事
+    - 外交
+    - 海南
+    - 历史转折
+  sources:
+    - 国防部
+    - 新华网
 - id: cn-shanghai-cooperation-organization-200106
-  date: "2001-06-15"
+  date: '2001-06-15'
   title: 上海合作组织（SCO）在上海正式成立
   category: 政治
   importance: 5
   summary: 中国、俄罗斯、哈萨克斯坦、吉尔吉斯斯坦、塔吉克斯坦、乌兹别克斯坦六国签署《上海合作组织成立宣言》，上合组织正式诞生。
   confidence: 确定
-  tags: [外交, 区域合作, 上合, 历史转折]
-  sources: [外交部, 新华网]
-
+  tags:
+    - 外交
+    - 区域合作
+    - 上合
+    - 历史转折
+  sources:
+    - 外交部
+    - 新华网
 - id: cn-beijing-olympic-bid-success-200107
-  date: "2001-07-13"
+  date: '2001-07-13'
   title: 国际奥委会第112次全会在莫斯科投票，北京成功获得2008年第29届夏季奥运会主办权
   category: 文化
   importance: 5
   summary: 萨马兰奇高喊"BEIJING"，北京击败多伦多、巴黎等城市获得2008夏奥会主办权，全国千百万人走上街头欢庆胜利。
   confidence: 确定
-  tags: [体育, 奥运, 历史转折]
-  sources: [国际奥委会, 新华网]
-
+  tags:
+    - 体育
+    - 奥运
+    - 历史转折
+  sources:
+    - 国际奥委会
+    - 新华网
 - id: cn-world-cup-qualification-200110
-  date: "2001-10-07"
+  date: '2001-10-07'
   title: 国足沈阳五里河1:0战胜阿曼，历史性首次晋级世界杯决赛圈
   category: 文化
   importance: 5
   summary: 于根伟破门助中国队1:0战胜阿曼，提前两轮锁定韩日世界杯出线名额，结束了中国足球44年冲击世界杯的漫长等待。
   confidence: 确定
-  tags: [体育, 足球, 历史转折]
-  sources: [新华网, 中国足协]
-
+  tags:
+    - 体育
+    - 足球
+    - 历史转折
+  sources:
+    - 新华网
+    - 中国足协
 - id: cn-apec-shanghai-summit-200110
-  date: "2001-10-21"
+  date: '2001-10-21'
   title: 亚太经合组织（APEC）第九次领导人非正式会议在上海成功举行
   category: 经济
   importance: 5
   summary: 江泽民主持会议，中美俄等20位经济体领导人出席，通过《上海共识》，极大地提升了中国的国际影响力和大国形象。
   confidence: 确定
-  tags: [经济, 外交, APEC, 历史转折]
-  sources: [外交部, 新华网]
-
+  tags:
+    - 经济
+    - 外交
+    - APEC
+    - 历史转折
+  sources:
+    - 外交部
+    - 新华网
 - id: cn-wto-accession-signed-200111
-  date: "2001-11-10"
+  date: '2001-11-10'
   title: 世界贸易组织第4届部长级会议通过中国加入WTO议案，12月11日正式生效
   category: 经济
   importance: 5
   summary: 经过长达15年复关和入世艰苦谈判，多哈会议批准中国加入WTO，12月11日正式成为第143个成员，中国对外开放进入全新阶段。
   confidence: 确定
-  tags: [经济, WTO, 改革开放, 历史转折]
-  sources: [商务部, 新华网]
-
+  tags:
+    - 经济
+    - WTO
+    - 改革开放
+    - 历史转折
+  sources:
+    - 商务部
+    - 新华网
 - id: cn-qinghai-tibet-railway-start-200106
-  date: "2001-06-29"
+  date: '2001-06-29'
   title: 青藏铁路二期工程（格尔木至拉萨段）开工典礼在格尔木和拉萨同时举行
   category: 经济
   importance: 5
   summary: 国务院批准全面开工建设青藏铁路格拉段，总投资330亿元，拉开了解决西藏无铁路历史与西部大开发重大突破的序幕。
   confidence: 确定
-  tags: [工程, 交通, 西藏, 历史转折]
-  sources: [铁道部, 新华网]
-
+  tags:
+    - 工程
+    - 交通
+    - 西藏
+    - 历史转折
+  sources:
+    - 铁道部
+    - 新华网
 - id: cn-china-world-cup-debut-200206
-  date: "2002-06-04"
+  date: '2002-06-04'
   title: 中国国家男子足球队首次亮相韩日世界杯决赛圈
   category: 文化
   importance: 5
   summary: 中国队在主教练米卢率领下首次打入世界杯决赛圈，先后对阵哥斯达黎加、巴西与土耳其，实现了中国足球几代人的夙愿。
   confidence: 确定
-  tags: [体育, 足球, 历史转折]
-  sources: [新华网, FIFA]
-
+  tags:
+    - 体育
+    - 足球
+    - 历史转折
+  sources:
+    - 新华网
+    - FIFA
 - id: cn-three-gorges-diversion-closure-200211
-  date: "2002-11-06"
+  date: '2002-11-06'
   title: 三峡工程导流明渠截流成功
   category: 经济
   importance: 4
   summary: 随着长江上大木龙骨龙口大封堵完成，三峡二期工程导流明渠成功截流，水库蓄水和首批机组发电进入倒计时。
   confidence: 确定
-  tags: [工程, 水利]
-  sources: [新华网, 中国三峡]
-
+  tags:
+    - 工程
+    - 水利
+  sources:
+    - 新华网
+    - 中国三峡
 - id: cn-cpc-16th-congress-200211
-  date: "2002-11-08"
+  date: '2002-11-08'
   title: 中国共产党第十六次全国代表大会在北京胜利召开
   category: 政治
   importance: 5
   summary: 中共十六大把"三个代表"重要思想写入党章，确立本世纪头二十年全面建设小康社会的奋斗目标，实现了中央领导集体的顺利交接。
   confidence: 确定
-  tags: [政治, 党建, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 党建
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-south-to-north-water-diversion-200212
-  date: "2002-12-27"
+  date: '2002-12-27'
   title: 国务院批准《南水北调工程总体规划》，东线和中线工程正式开工
   category: 经济
   importance: 5
   summary: 世界上规模最大的跨流域水资源配置工程——南水北调工程正式开工，有效缓解北方缺水状况，促进区域协调发展。
   confidence: 确定
-  tags: [工程, 水利, 历史转折]
-  sources: [新华网, 国务院]
-
+  tags:
+    - 工程
+    - 水利
+    - 历史转折
+  sources:
+    - 新华网
+    - 国务院
 - id: cn-shenzhou4-space-mission-200212
-  date: "2002-12-30"
+  date: '2002-12-30'
   title: 神舟四号无人飞船成功发射，载人航天准备工作进入最后冲刺
   category: 文化
   importance: 4
   summary: 神舟四号飞船在酒泉成功发射，经全状态无人测试考核了载人飞船生命保障与各种安全备份系统，为神舟五号载人飞行打下坚实基础。
   confidence: 确定
-  tags: [航天, 科技]
-  sources: [国家航天局, 新华网]
-
+  tags:
+    - 航天
+    - 科技
+  sources:
+    - 国家航天局
+    - 新华网
 - id: cn-wto-one-year-anniversary-200212
-  date: "2002-12-11"
+  date: '2002-12-11'
   title: 中国加入世界贸易组织（WTO）一周年，全面履行降税与市场开放承诺
   category: 经济
   importance: 5
   summary: 加入WTO一周年之际，中国全面关税水平从15.3%降至12.7%，外贸总额爆发式增长，中国经济全球化融合显著加速。
   confidence: 确定
-  tags: [经济, 外贸, WTO, 历史转折]
-  sources: [商务部, 新华网]
-
+  tags:
+    - 经济
+    - 外贸
+    - WTO
+    - 历史转折
+  sources:
+    - 商务部
+    - 新华网
 - id: cn-national-npc-200303
-  date: "2003-03-15"
+  date: '2003-03-15'
   title: 十届全国人大一次会议举行，胡锦涛当选中华人民共和国主席
   category: 政治
   importance: 5
   summary: 十届全国人大一次会议选举胡锦涛为国家主席、江泽民为国家中央军委主席，国家领导体制顺利实现新老交替。
   confidence: 确定
-  tags: [政治, 人大, 历史转折]
-  sources: [新华网, 人大网]
-
+  tags:
+    - 政治
+    - 人大
+    - 历史转折
+  sources:
+    - 新华网
+    - 人大网
 - id: cn-fight-against-sars-200304
-  date: "2003-04-20"
+  date: '2003-04-20'
   title: 中共中央国务院全面部署抗击非典（SARS）工作，构建公共卫生应急体系
   category: 灾害
   importance: 5
   summary: 面对非典疫情爆发，国家成立全国防治非典型肺炎指挥部，建立公开透明疫情发布机制，6月24日世卫组织解除对北京旅游警告并从疫区名单除名。
   confidence: 确定
-  tags: [疫情, 公共卫生, 历史转折]
-  sources: [新华网, 卫生部]
-
+  tags:
+    - 疫情
+    - 公共卫生
+    - 历史转折
+  sources:
+    - 新华网
+    - 卫生部
 - id: cn-three-gorges-water-storage-200306
-  date: "2003-06-01"
+  date: '2003-06-01'
   title: 三峡水库正式开始蓄水，下闸蓄水至135米
   category: 经济
   importance: 5
   summary: 三峡水库下闸蓄水，16日三峡双线五级船闸通航，标志着三峡工程由建设阶段进入水库蓄水、船闸通航和首批机组发电阶段。
   confidence: 确定
-  tags: [工程, 水利, 历史转折]
-  sources: [新华网, 中国三峡]
-
+  tags:
+    - 工程
+    - 水利
+    - 历史转折
+  sources:
+    - 新华网
+    - 中国三峡
 - id: cn-cepa-signed-200306
-  date: "2003-06-29"
+  date: '2003-06-29'
   title: 《内地与香港关于建立更紧密经贸关系的安排》（CEPA）在香港签署
   category: 经济
   importance: 5
   summary: 中央政府与香港特区政府签署CEPA，开放货物贸易关税优惠与服务贸易市场准入，随后开放赴港"个人游"，强力振兴香港经济。
   confidence: 确定
-  tags: [经济, 香港, CEPA, 历史转折]
-  sources: [商务部, 新华网]
-
+  tags:
+    - 经济
+    - 香港
+    - CEPA
+    - 历史转折
+  sources:
+    - 商务部
+    - 新华网
 - id: cn-shenzhou5-manned-flight-200310
-  date: "2003-10-15"
+  date: '2003-10-15'
   title: 我国首次载人航天飞行获得圆满成功，航天员杨利伟乘坐神舟五号飞船遨游太空
   category: 文化
   importance: 5
   summary: 神舟五号载人飞船成功发射并于16日安全着陆，杨利伟成为首位进入太空的中国航天员，标志着中国成为世界上第三个独立掌握载人航天技术的国家。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [国家航天局, 新华网]
-
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 国家航天局
+    - 新华网
 - id: cn-cpc-16th-3rd-plenum-200310
-  date: "2003-10-14"
+  date: '2003-10-14'
   title: 中共十六届三中全会通过《关于完善社会主义市场经济体制若干问题的决定》
   category: 政治
   importance: 5
   summary: 全会提出了"坚持以人为本，树立全面、协调、可持续的发展观"，首次完整阐述科学发展观的深刻内涵。
   confidence: 确定
-  tags: [政治, 经济, 科学发展观, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 经济
+    - 科学发展观
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-northeast-revitalization-200310
-  date: "2003-10-05"
+  date: '2003-10-05'
   title: 中共中央国务院印发《关于实施东北地区等老工业基地振兴战略的若干意见》
   category: 经济
   importance: 5
   summary: 党中央正式启动"振兴东北老工业基地"战略，深化国有企业改革与产业结构调整，打造中国经济第四增长极。
   confidence: 确定
-  tags: [经济, 区域, 历史转折]
-  sources: [新华网, 国务院]
-
+  tags:
+    - 经济
+    - 区域
+    - 历史转折
+  sources:
+    - 新华网
+    - 国务院
 - id: cn-constitution-amendment-200403
-  date: "2004-03-14"
+  date: '2004-03-14'
   title: 十届全国人大二次会议表决通过宪法修正案，将"国家尊重和保障人权"写入宪法
   category: 政治
   importance: 5
   summary: 十届全国人大二次会议通过宪法修正案，首次将"国家尊重和保障人权"与"公民的合法的私有财产不受侵犯"写入宪法，具里程碑意义。
   confidence: 确定
-  tags: [政治, 宪法, 人权, 历史转折]
-  sources: [新华网, 人大网]
-
+  tags:
+    - 政治
+    - 宪法
+    - 人权
+    - 历史转折
+  sources:
+    - 新华网
+    - 人大网
 - id: cn-deng-xiaoping-centenary-200408
-  date: "2004-08-22"
+  date: '2004-08-22'
   title: 纪念邓小平同志诞辰100周年大会在北京隆重举行
   category: 政治
   importance: 4
   summary: 邓小平诞辰100周年纪念大会在人民大会堂举行，胡锦涛发表重要讲话，深切怀念中国社会主义改革开放和现代化建设的总设计师。
   confidence: 确定
-  tags: [政治, 纪念, 历史]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 纪念
+    - 历史
+  sources:
+    - 新华网
 - id: cn-liu-xiang-athens-gold-200408
-  date: "2004-08-27"
+  date: '2004-08-27'
   title: 刘翔在雅典奥运会男子110米栏决赛夺冠并平世界纪录（12.91秒）
   category: 文化
   importance: 5
   summary: 刘翔以12秒91的成绩平世界纪录并夺得金牌，创造了中国乃至亚洲人在男子短跑跨栏项目上的历史性突破。
   confidence: 确定
-  tags: [体育, 奥运, 历史转折]
-  sources: [新华网, 国际奥委会]
-
+  tags:
+    - 体育
+    - 奥运
+    - 历史转折
+  sources:
+    - 新华网
+    - 国际奥委会
 - id: cn-athens-olympics-200408
-  date: "2004-08-29"
+  date: '2004-08-29'
   title: 第28届雅典奥运会闭幕，中国代表团以32枚金牌高居金牌榜第二位
   category: 文化
   importance: 5
   summary: 中国体育代表团斩获32金17银14铜，首次跃居奥运金牌榜第二名，创造了中国参加境外奥运会的历史最佳战绩。
   confidence: 确定
-  tags: [体育, 奥运, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 体育
+    - 奥运
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-cpc-16th-4th-plenum-200409
-  date: "2004-09-19"
+  date: '2004-09-19'
   title: 中共十六届四中全会通过《关于加强党的执政能力建设的决定》
   category: 政治
   importance: 5
   summary: 全会对加强党的执政能力建设作出全面部署，同意江泽民辞去中共中央军事委员会主席职务，决定胡锦涛任中共中央军事委员会主席。
   confidence: 确定
-  tags: [政治, 党建, 军事, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 党建
+    - 军事
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-russia-border-agreement-200410
-  date: "2004-10-14"
+  date: '2004-10-14'
   title: 中俄在京签署国界东段补充协定，彻底解决长达4300公里的中俄边界问题
   category: 政治
   importance: 5
   summary: 两国外长签署《关于中俄国界东段的补充协定》，确定黑瞎子岛和阿巴该图洲渚划界，标志着中俄4300多公里边界线全线定界。
   confidence: 确定
-  tags: [外交, 边界, 历史转折]
-  sources: [外交部, 新华网]
-
+  tags:
+    - 外交
+    - 边界
+    - 历史转折
+  sources:
+    - 外交部
+    - 新华网
 - id: cn-first-economic-census-200412
-  date: "2004-12-31"
+  date: '2004-12-31'
   title: 第一全国经济普查登记工作在全国范围全面展开
   category: 经济
   importance: 4
   summary: 国务院开展首次全国经济普查，全面摸清中国第二、第三产业的发展状况、结构和效益，为制定经济社会政策提供权威科学支撑。
   confidence: 确定
-  tags: [经济, 统计]
-  sources: [国家统计局, 新华网]
-
+  tags:
+    - 经济
+    - 统计
+  sources:
+    - 国家统计局
+    - 新华网
 - id: cn-macau-5th-anniversary-200412
-  date: "2004-12-20"
+  date: '2004-12-20'
   title: 庆祝澳门回归祖国5周年大会暨澳门特区第二届政府就职典礼举行
   category: 政治
   importance: 4
   summary: 胡锦涛出席庆祝大会并发表讲话，何厚铧宣誓连任第二任行政长官，展现了"一国两制"在澳门的成功实践。
   confidence: 确定
-  tags: [政治, 澳门, 一国两制]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 澳门
+    - 一国两制
+  sources:
+    - 新华网
 - id: cn-socialist-values-200603
-  date: "2006-03-04"
+  date: '2006-03-04'
   title: 胡锦涛提出以"八荣八耻"为主要内容的社会主义荣辱观
   category: 政治
   importance: 4
   summary: 胡锦涛提出"八荣八耻"社会主义荣辱观，为新时期公民道德建设和思想道德教育确立了根本遵循。
   confidence: 确定
-  tags: [文化, 思想, 道德]
-  sources: [新华网]
-
+  tags:
+    - 文化
+    - 思想
+    - 道德
+  sources:
+    - 新华网
 - id: cn-11th-five-year-plan-200603
-  date: "2006-03-14"
+  date: '2006-03-14'
   title: 十届全国人大四次会议表决通过"十一五"规划纲要
   category: 经济
   importance: 5
   summary: 人大表决通过《"十一五"规划纲要》，首次将"计划"改为"规划"，确立建设创新型国家与资源节约型、环境友好型社会战略。
   confidence: 确定
-  tags: [经济, 规划, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 经济
+    - 规划
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-three-gorges-dam-completed-200605
-  date: "2006-05-20"
+  date: '2006-05-20'
   title: 三峡大坝全线浇筑达到设计高程185米，主体工程全面建成
   category: 经济
   importance: 5
   summary: 随着最后一方混凝土浇筑完毕，三峡大坝全线达到设计高程，世界上规模最大的水利枢纽工程主体工程宣告建成。
   confidence: 确定
-  tags: [工程, 科技, 水利, 历史转折]
-  sources: [新华网, 中国三峡]
-
+  tags:
+    - 工程
+    - 科技
+    - 水利
+    - 历史转折
+  sources:
+    - 新华网
+    - 中国三峡
 - id: cn-qinghai-tibet-railway-open-200607
-  date: "2006-07-01"
+  date: '2006-07-01'
   title: 青藏铁路全线通车运营，结束西藏不通铁路的历史
   category: 经济
   importance: 5
   summary: 青藏铁路格尔木至拉萨段通车，全线全长1956公里，克服高原冻土等三大世界级难题，创造了世界铁路建设史上的奇迹。
   confidence: 确定
-  tags: [工程, 交通, 西藏, 历史转折]
-  sources: [新华网, 铁道部]
-
+  tags:
+    - 工程
+    - 交通
+    - 西藏
+    - 历史转折
+  sources:
+    - 新华网
+    - 铁道部
 - id: cn-cpc-16th-6th-plenum-200610
-  date: "2006-10-11"
+  date: '2006-10-11'
   title: 中共十六届六中全会审议通过《关于构建社会主义和谐社会若干重大问题的决定》
   category: 政治
   importance: 5
   summary: 全会把"构建社会主义和谐社会"摆在党和国家工作更加突出的位置，明确了构建和谐社会的总体目标和指导原则。
   confidence: 确定
-  tags: [政治, 和谐社会, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 和谐社会
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-long-march-70th-200610
-  date: "2006-10-22"
+  date: '2006-10-22'
   title: 纪念中国工农红军长征胜利70周年大会在北京隆重举行
   category: 政治
   importance: 4
   summary: 纪念红军长征胜利70周年大会在人民大会堂举行，胡锦涛发表讲话，号召大力弘扬伟大长征精神。
   confidence: 确定
-  tags: [政治, 历史]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 历史
+  sources:
+    - 新华网
 - id: cn-focac-beijing-summit-200611
-  date: "2006-11-04"
+  date: '2006-11-04'
   title: 中非合作论坛北京峰会隆重开幕，48个非洲国家元首和代表出席
   category: 政治
   importance: 5
   summary: 中非合作论坛北京峰会在京举行，胡锦涛提出发展中非新型战略伙伴关系8项政策措施，开启中非友好合作新篇章。
   confidence: 确定
-  tags: [外交, 非洲, 历史转折]
-  sources: [外交部, 新华网]
-
+  tags:
+    - 外交
+    - 非洲
+    - 历史转折
+  sources:
+    - 外交部
+    - 新华网
 - id: cn-typhoon-saomai-200608
-  date: "2006-08-10"
+  date: '2006-08-10'
   title: 1949年以来登陆中国大陆最强台风"桑美"登陆浙江苍南
   category: 灾害
   importance: 4
   summary: 超强台风"桑美"以17级风力在浙江苍南登陆，造成浙闽沿海严重人员伤亡和经济损失，国家全力展开抗灾救灾。
   confidence: 确定
-  tags: [灾害, 台风]
-  sources: [新华网, 气象局]
-
+  tags:
+    - 灾害
+    - 台风
+  sources:
+    - 新华网
+    - 气象局
 - id: cn-anti-secession-law-200503
-  date: "2005-03-14"
+  date: '2005-03-14'
   title: 十届全国人大三次会议高票通过《反分裂国家法》
   category: 政治
   importance: 5
   summary: 《反分裂国家法》经高票通过后颁布实施，首次将国家反对和遏制"台独"分裂、促进祖国和平统一的政策法律化。
   confidence: 确定
-  tags: [政治, 两岸, 法治, 历史转折]
-  sources: [新华网, 人大网]
-
+  tags:
+    - 政治
+    - 两岸
+    - 法治
+    - 历史转折
+  sources:
+    - 新华网
+    - 人大网
 - id: cn-lien-chan-visit-200504
-  date: "2005-04-29"
+  date: '2005-04-29'
   title: 中共中央总书记胡锦涛与中国国民党主席连战举行历史性会谈（连胡会）
   category: 政治
   importance: 5
   summary: 胡锦涛与连战在北京举行60年来国共两党最高领导人首次正式会谈，发布"两岸和平发展共同愿景"，开创两岸关系和平发展新局面。
   confidence: 确定
-  tags: [政治, 两岸, 外交, 历史转折]
-  sources: [新华网, 国台办]
-
+  tags:
+    - 政治
+    - 两岸
+    - 外交
+    - 历史转折
+  sources:
+    - 新华网
+    - 国台办
 - id: cn-renminbi-reform-200507
-  date: "2005-07-21"
+  date: '2005-07-21'
   title: 中国人民银行宣布实施人民币汇率形成机制改革
   category: 经济
   importance: 5
   summary: 央行宣布放弃单一盯住美元，实行以市场供求为基础、参考一篮子货币进行调节、有管理的浮动汇率制度，人民币汇率改革迈出关键一步。
   confidence: 确定
-  tags: [经济, 金融, 汇率, 历史转折]
-  sources: [中国人民银行, 新华网]
-
+  tags:
+    - 经济
+    - 金融
+    - 汇率
+    - 历史转折
+  sources:
+    - 中国人民银行
+    - 新华网
 - id: cn-victory-60th-200509
-  date: "2005-09-03"
+  date: '2005-09-03'
   title: 中国人民抗日战争暨世界反法西斯战争胜利60周年纪念大会举行
   category: 政治
   importance: 5
   summary: 纪念大会在人民大会堂隆重举行，胡锦涛发表重要讲话，全面阐述抗日战争伟大胜利的深刻历史意义和伟大抗战精神。
   confidence: 确定
-  tags: [政治, 历史, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 历史
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-mount-everest-height-200510
-  date: "2005-10-09"
+  date: '2005-10-09'
   title: 国务院新闻办正式公布珠穆朗玛峰峰顶岩石面海拔高程为8844.43米
   category: 文化
   importance: 5
   summary: 国家测绘局经精确测定正式公布珠峰新高程8844.43米，精度达到±0.21米，为当时全球最精确的珠峰峰顶岩面高程数据。
   confidence: 确定
-  tags: [地理, 测绘, 科技, 历史转折]
-  sources: [国家测绘局, 新华网]
-
+  tags:
+    - 地理
+    - 测绘
+    - 科技
+    - 历史转折
+  sources:
+    - 国家测绘局
+    - 新华网
 - id: cn-shenzhou6-space-mission-200510
-  date: "2005-10-12"
+  date: '2005-10-12'
   title: 神舟六号载人飞船成功发射，航天员费俊龙、聂海胜顺利展开多人多天太空飞行
   category: 文化
   importance: 5
   summary: 神舟六号载人飞船在酒泉卫星发射中心成功升空，两名航天员在轨飞行约115小时53分，圆满完成中国首次多人多天太空飞行任务。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [国家航天局, 新华网]
-
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 国家航天局
+    - 新华网
 - id: cn-songhua-river-pollution-200511
-  date: "2005-11-13"
+  date: '2005-11-13'
   title: 吉林石化双苯厂爆炸引发松花江重大水污染事件
   category: 灾害
   importance: 4
   summary: 厂区爆炸导致约100吨苯类污染物流入松花江，造成哈尔滨等沿江城市大面积停水，推动国家环保体制改革与跨界水污染治理。
   confidence: 确定
-  tags: [灾害, 环境, 水污染]
-  sources: [环保部, 新华网]
-
+  tags:
+    - 灾害
+    - 环境
+    - 水污染
+  sources:
+    - 环保部
+    - 新华网
 - id: cn-agricultural-tax-free-decided-200512
-  date: "2005-12-29"
+  date: '2005-12-29'
   title: 十届全国人大常委会表决通过废止农业税条例，明确2006年起全面取消农业税
   category: 经济
   importance: 5
   summary: 十届全国人大常委会第十九次会议表决决定自2006年1月1日起废止《农业税条例》，为终结2600年农业税奠定法律依据。
   confidence: 确定
-  tags: [民生, 农业, 改革, 历史转折]
-  sources: [新华网, 人大网]
-
+  tags:
+    - 民生
+    - 农业
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+    - 人大网
 - id: cn-western-development-strategy-200001
-  date: "2000-01-16"
+  date: '2000-01-16'
   title: 国务院成立西部地区开发领导小组，西部大开发战略全面启动实施
   category: 经济
   importance: 5
   summary: 国务院组建西部开发领导小组，朱镕基任组长，正式拉开覆盖12个省区市的西部大开发历史序幕，促进区域协调发展。
   confidence: 确定
-  tags: [经济, 区域, 西部大开发, 历史转折]
-  sources: [新华网, 国务院]
-
+  tags:
+    - 经济
+    - 区域
+    - 西部大开发
+    - 历史转折
+  sources:
+    - 新华网
+    - 国务院
 - id: cn-three-represents-200002
-  date: "2000-02-25"
+  date: '2000-02-25'
   title: 江泽民在广东考察时首次完整阐述"三个代表"重要思想
   category: 政治
   importance: 5
   summary: 江泽民在高州首次提出党要始终代表先进生产力、先进文化与最广大人民根本利益，标志着"三个代表"重要思想正式形成。
   confidence: 确定
-  tags: [政治, 思想, 党建, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 政治
+    - 思想
+    - 党建
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-sydney-olympics-china-200009
-  date: "2000-09-15"
+  date: '2000-09-15'
   title: 第27届悉尼奥运会举行，中国代表团斩获28金位列金牌榜第三位
   category: 文化
   importance: 5
   summary: 悉尼奥运会在澳大利亚举行，中国代表团获得28金16银15铜，首次挺进奥运金牌榜前三名，实现历史性跨越。
   confidence: 确定
-  tags: [体育, 奥运, 历史转折]
-  sources: [新华网, 国际奥委会]
-
+  tags:
+    - 体育
+    - 奥运
+    - 历史转折
+  sources:
+    - 新华网
+    - 国际奥委会
 - id: cn-beidou1-first-satellite-200010
-  date: "2000-10-31"
+  date: '2000-10-31'
   title: 我国成功发射首颗"北斗一号"导航定位卫星，开启自主卫星导航时代
   category: 文化
   importance: 5
   summary: 长征三号甲火箭成功将首颗北斗导航试验卫星送入轨道，随后12月发射第二颗，构建起中国首个自主双星定位导航系统（北斗一号）。
   confidence: 确定
-  tags: [航天, 科技, 北斗, 历史转折]
-  sources: [国家航天局, 新华网]
-
+  tags:
+    - 航天
+    - 科技
+    - 北斗
+    - 历史转折
+  sources:
+    - 国家航天局
+    - 新华网
 - id: cn-focac-1st-ministerial-200010
-  date: "2000-10-10"
+  date: '2000-10-10'
   title: 中非合作论坛第一届部长级会议在北京隆重开幕
   category: 政治
   importance: 5
   summary: 中非合作论坛首届部长级会议在北京举行，44个非洲国家部长参会，通过《北京宣言》和《中非经济和社会发展合作纲领》，开启中非合作新纪元。
   confidence: 确定
-  tags: [外交, 非洲, 历史转折]
-  sources: [外交部, 新华网]
-
+  tags:
+    - 外交
+    - 非洲
+    - 历史转折
+  sources:
+    - 外交部
+    - 新华网
 - id: cn-5th-national-population-census-200011
-  date: "2000-11-01"
+  date: '2000-11-01'
   title: 第五次全国人口普查登记工作在全国范围内展开，全国总人口达12.95亿
   category: 经济
   importance: 4
   summary: 国家全面展开第五次人口普查，首次采用快速汇总技术，查实全国总人口为12亿9533万人，为21世纪初期经济社会规划提供基准。
   confidence: 确定
-  tags: [人口, 经济, 统计]
-  sources: [国家统计局, 新华网]
-
+  tags:
+    - 人口
+    - 经济
+    - 统计
+  sources:
+    - 国家统计局
+    - 新华网
 - id: cn-centenary-dawn-200001
-  date: "2000-01-01"
+  date: '2000-01-01'
   title: 全国人民欢庆千禧年，首都举行"迈向新世纪"神州世纪天坛之夜
   category: 文化
   importance: 4
   summary: 北京中华世纪坛举行新世纪圣火点燃仪式，全国各地欢庆千禧新年与新世纪到来，同时顺利度过计算机"千年虫"考验。
   confidence: 确定
-  tags: [社会, 千禧年, 文化]
-  sources: [新华网]
-
+  tags:
+    - 社会
+    - 千禧年
+    - 文化
+  sources:
+    - 新华网
 - id: cn-nato-bomb-embassy-199905
-  date: "1999-05-08"
+  date: '1999-05-08'
   title: 北约导弹轰炸中国驻南斯拉夫联盟大使馆，三名记者不幸遇难
   category: 政治
   importance: 5
   summary: 北约在对南联盟的空袭中悍然轰炸中国驻贝尔格莱德大使馆，新华社记者邵云环、光明日报记者许杏虎及夫人朱颖当场遇难，全国爆发强烈抗议，中国外交部向美方提出最强烈抗议。
   confidence: 确定
-  tags: [外交, 军事, 历史转折]
-  sources: [新华网, 外交部]
-
+  tags:
+    - 外交
+    - 军事
+    - 历史转折
+  sources:
+    - 新华网
+    - 外交部
 - id: cn-50th-parade-199910
-  date: "1999-10-01"
+  date: '1999-10-01'
   title: 庆祝中华人民共和国成立50周年，首都举行盛大世纪大阅兵
   category: 政治
   importance: 5
   summary: 天安门广场举行国庆50周年盛大阅兵与群众游行，首次展示新型导弹与战机等陆海空军新装备，江泽民检阅受阅部队并发表重要讲话。
   confidence: 确定
-  tags: [军事, 阅兵, 历史转折]
-  sources: [新华网]
-
+  tags:
+    - 军事
+    - 阅兵
+    - 历史转折
+  sources:
+    - 新华网
 - id: cn-shenzhou1-199911
-  date: "1999-11-20"
+  date: '1999-11-20'
   title: 中国第一艘载人航天试验飞船"神舟一号"发射成功并安全返回
   category: 文化
   importance: 5
   summary: 神舟一号无人试验飞船在酒泉卫星发射中心由长征二号F运载火箭成功发射升空，在轨运行21小时后按预定轨道返回内蒙古中部着陆场，标志着中国载人航天工程取得重大突破。
   confidence: 确定
-  tags: [航天, 科技, 历史转折]
-  sources: [新华网, 中国载人航天工程办公室]
-
+  tags:
+    - 航天
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 中国载人航天工程办公室
 - id: cn-macau-handover-199912
-  date: "1999-12-20"
+  date: '1999-12-20'
   title: 澳门回归祖国，澳门特别行政区政府正式成立
   category: 政治
   importance: 5
   summary: 中葡两国政府在澳门文化中心举行政权交接仪式，澳门正式回归祖国怀抱，何厚铧宣誓就任澳门特别行政区首任行政长官，"一国两制"方针在澳门落地。
   confidence: 确定
-  tags: [外交, 一国两制, 历史转折]
-  sources: [新华网, 新华社]
-
+  tags:
+    - 外交
+    - 一国两制
+    - 历史转折
+  sources:
+    - 新华网
+    - 新华社
 - id: cn-wto-us-agreement-199911
-  date: "1999-11-15"
+  date: '1999-11-15'
   title: 中美就中国加入世界贸易组织签订双边市场准入协议
   category: 经济
   importance: 5
   summary: 外经贸部部长石广生与美国贸易代表巴尔舍夫斯基在北京签署中美关于中国加入世贸组织的双边协议，扫清中国入世道路上的最大障碍，为2001年正式入世奠定基础。
   confidence: 确定
-  tags: [外交, 贸易, 历史转折]
-  sources: [新华网, 商务部]
-
+  tags:
+    - 外交
+    - 贸易
+    - 历史转折
+  sources:
+    - 新华网
+    - 商务部
 - id: cn-deng-theory-constitution-199903
-  date: "1999-03-15"
+  date: '1999-03-15'
   title: 九届全国人大二次会议将"邓小平理论"载入宪法
   category: 政治
   importance: 4
   summary: 九届全国人大二次会议通过宪法修正案，将邓小平理论写入宪法序言，确立其为全党全国人民共同奋斗的指导思想，为改革开放提供根本法律保障。
   confidence: 确定
-  tags: [法律, 改革, 理论]
-  sources: [新华网, 全国人大]
-
+  tags:
+    - 法律
+    - 改革
+    - 理论
+  sources:
+    - 新华网
+    - 全国人大
 - id: cn-shenwei1-supercomputer-199907
-  date: "1999-07-01"
+  date: '1999-07-01'
   title: 中国第一台高性能超级计算机"神威I"通过国家鉴定
   category: 文化
   importance: 4
   summary: 中国第一台实测峰值运算速度达每秒3840亿次的高性能计算机"神威I"由国家并行计算机工程技术研究中心研制成功并通过鉴定，标志中国在高性能计算领域跻身世界前列。
   confidence: 确定
-  tags: [科技, 超算]
-  sources: [新华网, 科技日报]
-
+  tags:
+    - 科技
+    - 超算
+  sources:
+    - 新华网
+    - 科技日报
 - id: cn-avic-restructure-199906
-  date: "1999-06-28"
+  date: '1999-06-28'
   title: 中国航空工业第一、第二集团公司挂牌成立
   category: 经济
   importance: 3
   summary: 中国航空工业总公司实施体制改革，按照军品与民品、地域与产品重新整合组建中国航空工业第一集团公司和第二集团公司，推动航空工业市场化改革。
   confidence: 确定
-  tags: [改革, 军工]
-  sources: [新华网, 国防科工委]
-
+  tags:
+    - 改革
+    - 军工
+  sources:
+    - 新华网
+    - 国防科工委
 - id: cn-pudong-development-199004
-  date: "1990-04-18"
+  date: '1990-04-18'
   title: 中央宣布开发开放上海浦东新区，开启浦东开发开放进程
   category: 经济
   importance: 5
   summary: 中共中央、国务院正式宣布开发开放上海浦东，把浦东建成国际金融与贸易中心，成为20世纪90年代中国改革开放的标志性战略举措。
   confidence: 确定
-  tags: [改革, 浦东, 历史转折]
-  sources: [新华网, 国务院]
-
+  tags:
+    - 改革
+    - 浦东
+    - 历史转折
+  sources:
+    - 新华网
+    - 国务院
 - id: cn-beijing-asian-games-199009
-  date: "1990-09-22"
+  date: '1990-09-22'
   title: 第11届亚洲运动会在北京隆重开幕
   category: 文化
   importance: 5
   summary: 北京成功举办第11届亚运会，这是中国首次举办大型综合性国际体育赛事，中国代表团以183枚金牌高居金牌榜首位，极大提振民族自豪感。
   confidence: 确定
-  tags: [体育, 亚运会, 历史转折]
-  sources: [新华网, 亚奥理事会]
-
+  tags:
+    - 体育
+    - 亚运会
+    - 历史转折
+  sources:
+    - 新华网
+    - 亚奥理事会
 - id: cn-shanghai-stock-exchange-199011
-  date: "1990-11-26"
+  date: '1990-11-26'
   title: 上海证券交易所正式成立
   category: 经济
   importance: 5
   summary: 经国务院批准，上海证券交易所于1990年11月26日成立、12月19日开业，与随后开业的深圳交易所共同开启新中国证券市场的规范化发展，标志资本市场重建。
   confidence: 确定
-  tags: [金融, 改革, 历史转折]
-  sources: [新华网, 中国证监会]
-
+  tags:
+    - 金融
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+    - 中国证监会
 - id: cn-shenzhen-stock-exchange-199012
-  date: "1990-12-19"
+  date: '1990-12-19'
   title: 深圳证券交易所开业试运行
   category: 经济
   importance: 4
   summary: 深圳证券交易所正式开业试运行，与上海证券交易所共同构成中国证券市场南北方两大中心，推动股票市场在全国逐步推开。
   confidence: 确定
-  tags: [金融, 改革]
-  sources: [新华网, 中国证监会]
-
+  tags:
+    - 金融
+    - 改革
+  sources:
+    - 新华网
+    - 中国证监会
 - id: cn-asiasat1-launch-199004
-  date: "1990-04-07"
+  date: '1990-04-07'
   title: 中国"长征三号"火箭成功发射"亚洲一号"通信卫星
   category: 文化
   importance: 4
   summary: 中国用"长征三号"运载火箭成功将美国制造的"亚洲一号"通信卫星送入轨道，这是中国首次发射对外商业搭载的国际卫星，标志中国航天走向国际市场。
   confidence: 确定
-  tags: [航天, 科技]
-  sources: [新华网, 中国航天科技集团]
-
+  tags:
+    - 航天
+    - 科技
+  sources:
+    - 新华网
+    - 中国航天科技集团
 - id: cn-singapore-diplomatic-199010
-  date: "1990-10-03"
+  date: '1990-10-03'
   title: 中国与新加坡正式建立外交关系
   category: 政治
   importance: 3
   summary: 中国与新加坡在联合国大会期间正式建立外交关系，两国长期友好合作关系进入新阶段，为区域经济合作与投资往来提供制度保障。
   confidence: 确定
-  tags: [外交]
-  sources: [外交部, 新华网]
-
+  tags:
+    - 外交
+  sources:
+    - 外交部
+    - 新华网
 - id: cn-qinshan-nuclear-199112
-  date: "1991-12-15"
+  date: '1991-12-15'
   title: 秦山核电站并网发电，中国大陆核电站实现零的突破
   category: 文化
   importance: 5
   summary: 中国大陆首座自行设计建造的核电站——秦山核电站于浙江海盐并网发电，标志中国大陆核电事业从无到有的历史性突破。
   confidence: 确定
-  tags: [能源, 科技, 历史转折]
-  sources: [新华网, 国家能源局]
-
+  tags:
+    - 能源
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家能源局
 - id: cn-east-china-flood-199107
-  date: "1991-07-01"
+  date: '1991-07-01'
   title: 华东地区发生特大洪涝灾害，全国动员抗洪救灾
   category: 灾害
   importance: 4
   summary: 江淮流域及华东地区遭遇百年罕见的特大洪涝灾害，江苏、安徽等省受灾严重，全国军民奋力抗洪并开展大规模重建。
   confidence: 确定
-  tags: [灾害, 洪水]
-  sources: [新华网, 民政部]
-
+  tags:
+    - 灾害
+    - 洪水
+  sources:
+    - 新华网
+    - 民政部
 - id: cn-apec-join-199111
-  date: "1991-11-12"
+  date: '1991-11-12'
   title: 中国正式加入亚太经济合作组织（APEC）
   category: 经济
   importance: 4
   summary: 中国与台湾、香港地区一道正式加入亚太经济合作组织，进一步融入亚太区域经济合作进程，为扩大对外开放创造有利条件。
   confidence: 确定
-  tags: [外交, 贸易, 区域合作]
-  sources: [外交部, APEC秘书处]
-
+  tags:
+    - 外交
+    - 贸易
+    - 区域合作
+  sources:
+    - 外交部
+    - APEC秘书处
 - id: cn-eighth-five-plan-199103
-  date: "1991-03-25"
+  date: '1991-03-25'
   title: 七届全国人大四次会议通过"八五"计划纲要
   category: 经济
   importance: 3
   summary: 七届全国人大四次会议审议通过《国民经济和社会发展十年规划和"八五"计划纲要》，提出到2000年国民生产总值比1980年翻两番的目标。
   confidence: 确定
-  tags: [经济, 规划, 改革]
-  sources: [新华网, 国家发改委]
-
+  tags:
+    - 经济
+    - 规划
+    - 改革
+  sources:
+    - 新华网
+    - 国家发改委
 - id: cn-deng-southern-tour-199201
-  date: "1992-01-18"
+  date: '1992-01-18'
   title: 邓小平视察南方并发表重要谈话，推动新一轮思想解放
   category: 政治
   importance: 5
   summary: 邓小平从1月18日至2月21日先后视察武昌、深圳、珠海和上海等地，发表著名的"南方谈话"，强调坚持改革开放、发展才是硬道理，为中国新一轮改革开放指明方向。
   confidence: 确定
-  tags: [改革, 思想解放, 历史转折]
-  sources: [新华网, 人民出版社]
-
+  tags:
+    - 改革
+    - 思想解放
+    - 历史转折
+  sources:
+    - 新华网
+    - 人民出版社
 - id: cn-14th-cpc-congress-199210
-  date: "1992-10-12"
+  date: '1992-10-12'
   title: 中共十四大召开，确立建立社会主义市场经济体制的目标
   category: 政治
   importance: 5
   summary: 中国共产党第十四次全国代表大会在北京召开，首次明确提出中国经济体制改革的目标是建立社会主义市场经济体制，选举江泽民为中央委员会总书记。
   confidence: 确定
-  tags: [改革, 理论, 历史转折]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 理论
+    - 历史转折
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-three-gorges-project-199204
-  date: "1992-04-03"
+  date: '1992-04-03'
   title: 七届全国人大五次会议通过关于兴建长江三峡工程的决议
   category: 经济
   importance: 4
   summary: 七届全国人大五次会议表决通过兴建三峡工程的决议，世界最大水利枢纽工程正式立项，兼具防洪、发电、航运等综合效益。
   confidence: 确定
-  tags: [经济, 水利, 工程]
-  sources: [新华网, 全国人大]
-
+  tags:
+    - 经济
+    - 水利
+    - 工程
+  sources:
+    - 新华网
+    - 全国人大
 - id: cn-south-korea-diplomatic-199208
-  date: "1992-08-24"
+  date: '1992-08-24'
   title: 中国与韩国正式建立外交关系
   category: 政治
   importance: 4
   summary: 中国与韩国在北京正式签署建交公报并建立大使级外交关系，结束两国长期互不承认的状态，为双边经贸合作与半岛和平稳定创造条件。
   confidence: 确定
-  tags: [外交, 韩国]
-  sources: [外交部, 新华网]
-
+  tags:
+    - 外交
+    - 韩国
+  sources:
+    - 外交部
+    - 新华网
 - id: cn-wanggu-talks-199304
-  date: "1993-04-27"
+  date: '1993-04-27'
   title: 海峡两岸"汪辜会谈"在新加坡举行，开启两岸高层接触
   category: 政治
   importance: 4
   summary: 大陆海峡两岸关系协会会长汪道涵与台湾海峡交流基金会董事长辜振甫在新加坡举行会谈，签署四项协议，实现两岸44年来首次高层正式会谈。
   confidence: 确定
-  tags: [两岸, 外交]
-  sources: [新华网, 国台办]
-
+  tags:
+    - 两岸
+    - 外交
+  sources:
+    - 新华网
+    - 国台办
 - id: cn-jiang-clinton-summit-199311
-  date: "1993-11-19"
+  date: '1993-11-19'
   title: 江泽民与克林顿在西雅图举行首次正式会晤
   category: 政治
   importance: 4
   summary: 国家主席江泽民与美国总统克林顿借亚太经合组织峰会之机在西雅图举行首次正式会晤，就中美关系等重大议题交换意见，推动两国关系走出低谷。
   confidence: 确定
-  tags: [外交, 中美]
-  sources: [外交部, 新华网]
-
+  tags:
+    - 外交
+    - 中美
+  sources:
+    - 外交部
+    - 新华网
 - id: cn-14th-third-plenum-199311
-  date: "1993-11-14"
+  date: '1993-11-14'
   title: 中共十四届三中全会通过《关于建立社会主义市场经济体制若干问题的决定》
   category: 政治
   importance: 4
   summary: 中共十四届三中全会审议通过关于建立社会主义市场经济体制若干问题的决定，勾画社会主义市场经济体制的基本框架，推动改革全面深化。
   confidence: 确定
-  tags: [改革, 理论]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 理论
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-deng-selected-works-199311
-  date: "1993-11-02"
+  date: '1993-11-02'
   title: 《邓小平文选》第三卷正式出版发行
   category: 文化
   importance: 3
   summary: 《邓小平文选》第三卷在全国正式出版发行，汇集邓小平改革开放新时期的代表性论著，成为指导中国特色社会主义实践的重要文献。
   confidence: 确定
-  tags: [文化, 理论]
-  sources: [新华网, 人民出版社]
-
+  tags:
+    - 文化
+    - 理论
+  sources:
+    - 新华网
+    - 人民出版社
 - id: cn-tax-sharing-reform-199401
-  date: "1994-01-01"
+  date: '1994-01-01'
   title: 中国全面实施分税制财政体制改革
   category: 经济
   importance: 5
   summary: 从1994年1月1日起，中国全面推行分税制财政管理体制改革，重新划分中央与地方事权和财权，建立以增值税为主体的税制，为市场经济体制奠定财政基础。
   confidence: 确定
-  tags: [经济, 改革, 历史转折]
-  sources: [新华网, 财政部]
-
+  tags:
+    - 经济
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+    - 财政部
 - id: cn-internet-connection-199404
-  date: "1994-04-20"
+  date: '1994-04-20'
   title: 中国实现与国际互联网的全功能连接
   category: 文化
   importance: 4
   summary: 中国国家计算机与网络设施（NCFC）通过美国Sprint公司接入国际互联网64K专线，实现与国际互联网的全功能连接，被誉为中国互联网的诞生之日。
   confidence: 确定
-  tags: [科技, 互联网]
-  sources: [新华网, 中科院]
-
+  tags:
+    - 科技
+    - 互联网
+  sources:
+    - 新华网
+    - 中科院
 - id: cn-three-gorges-start-199412
-  date: "1994-12-14"
+  date: '1994-12-14'
   title: 长江三峡工程正式开工
   category: 经济
   importance: 4
   summary: 世界最大水利枢纽工程——长江三峡工程正式开工，集防洪、发电、航运于一体，创下工程建设规模之最，成为跨世纪重大工程。
   confidence: 确定
-  tags: [经济, 水利, 工程]
-  sources: [新华网, 国务院三峡办]
-
+  tags:
+    - 经济
+    - 水利
+    - 工程
+  sources:
+    - 新华网
+    - 国务院三峡办
 - id: cn-modern-enterprise-reform-199406
-  date: "1994-06-01"
+  date: '1994-06-01'
   title: 国务院部署建立现代企业制度改革试点
   category: 经济
   importance: 3
   summary: 国务院批准选择百家国有大中型企业进行建立现代企业制度试点，推动企业产权明晰、责权明确、政企分开、管理科学，深化国有企业改革。
   confidence: 确定
-  tags: [改革, 国企]
-  sources: [新华网, 国家经贸委]
-
+  tags:
+    - 改革
+    - 国企
+  sources:
+    - 新华网
+    - 国家经贸委
 - id: cn-five-day-workweek-199501
-  date: "1995-01-01"
+  date: '1995-01-01'
   title: 中国开始实行每周五天工作制
   category: 文化
   importance: 3
   summary: 根据国务院《关于职工工作时间的规定》，中国自1995年5月1日起全面实行每周五天工作制，双休日制度正式落地，大幅改善职工生活质量。
   confidence: 确定
-  tags: [民生, 改革]
-  sources: [新华网, 国务院]
-
+  tags:
+    - 民生
+    - 改革
+  sources:
+    - 新华网
+    - 国务院
 - id: cn-science-education-strategy-199505
-  date: "1995-05-06"
+  date: '1995-05-06'
   title: 《中共中央、国务院关于加速科学技术进步的决定》颁布，确立"科教兴国"战略
   category: 政治
   importance: 4
   summary: 中共中央、国务院颁布关于加速科学技术进步的决定，首次明确提出实施"科教兴国"战略，把科学技术和教育摆在经济社会发展的重要位置。
   confidence: 确定
-  tags: [改革, 教育, 科技]
-  sources: [新华网, 科技部]
-
+  tags:
+    - 改革
+    - 教育
+    - 科技
+  sources:
+    - 新华网
+    - 科技部
 - id: cn-women-conference-199509
-  date: "1995-09-04"
+  date: '1995-09-04'
   title: 联合国第四次世界妇女大会在北京隆重举行
   category: 政治
   importance: 4
   summary: 联合国第四次世界妇女大会在北京开幕，来自185个国家和地区的代表与会，通过《北京宣言》和《行动纲领》，推动全球妇女事业发展。
   confidence: 确定
-  tags: [外交, 妇女]
-  sources: [新华网, 联合国]
-
+  tags:
+    - 外交
+    - 妇女
+  sources:
+    - 新华网
+    - 联合国
 - id: cn-victory-50th-199509
-  date: "1995-09-03"
+  date: '1995-09-03'
   title: 中国隆重纪念抗日战争暨世界反法西斯战争胜利50周年
   category: 政治
   importance: 3
   summary: 首都各界在天安门广场集会，隆重纪念中国人民抗日战争暨世界反法西斯战争胜利50周年，中共中央总书记江泽民发表重要讲话。
   confidence: 确定
-  tags: [抗战, 纪念]
-  sources: [新华网]
-
+  tags:
+    - 抗战
+    - 纪念
+  sources:
+    - 新华网
 - id: cn-taiwan-strait-crisis-199603
-  date: "1996-03-08"
+  date: '1996-03-08'
   title: 中国人民解放军在东南沿海举行大规模军事演习
   category: 战争
   importance: 5
   summary: 为震慑"台独"分裂势力，中国人民解放军在东南沿海和台湾海峡举行三军联合作战演习，展示维护国家主权与领土完整的坚定决心，台海局势一度高度紧张。
   confidence: 确定
-  tags: [军事, 台湾, 历史转折]
-  sources: [新华网, 国防部]
-
+  tags:
+    - 军事
+    - 台湾
+    - 历史转折
+  sources:
+    - 新华网
+    - 国防部
 - id: cn-hk-preliminary-committee-199601
-  date: "1996-01-26"
+  date: '1996-01-26'
   title: 香港特别行政区筹备委员会在北京成立
   category: 政治
   importance: 4
   summary: 香港特别行政区筹备委员会在北京宣告成立，负责筹备香港回归及特区政府组建事宜，为1997年香港回归迈出关键一步。
   confidence: 确定
-  tags: [一国两制, 香港, 筹备]
-  sources: [新华网, 港澳办]
-
+  tags:
+    - 一国两制
+    - 香港
+    - 筹备
+  sources:
+    - 新华网
+    - 港澳办
 - id: cn-jingjiu-railway-199609
-  date: "1996-09-01"
+  date: '1996-09-01'
   title: 京九铁路全线建成通车
   category: 经济
   importance: 4
   summary: 全长逾2500公里的京九铁路全线建成通车，从北京贯通至香港九龙，纵贯南北九省，是20世纪中国规模最大的铁路工程之一。
   confidence: 确定
-  tags: [经济, 交通, 工程]
-  sources: [新华网, 铁道部]
-
+  tags:
+    - 经济
+    - 交通
+    - 工程
+  sources:
+    - 新华网
+    - 铁道部
 - id: cn-14th-6th-plenum-199610
-  date: "1996-10-10"
+  date: '1996-10-10'
   title: 中共十四届六中全会通过关于加强社会主义精神文明建设决议
   category: 政治
   importance: 3
   summary: 中共十四届六中全会审议通过《关于加强社会主义精神文明建设若干重要问题的决议》，对加强思想道德建设与文化发展作出全面部署。
   confidence: 确定
-  tags: [政治, 精神文明建设]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 政治
+    - 精神文明建设
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-deng-xiaoping-death-199702
-  date: "1997-02-19"
+  date: '1997-02-19'
   title: 邓小平在北京逝世，中国改革开放总设计师谢世
   category: 政治
   importance: 5
   summary: 中国改革开放和现代化建设的总设计师邓小平在北京因病逝世，享年93岁，全国各族人民深切悼念，世界高度关注中国未来发展走向。
   confidence: 确定
-  tags: [政治, 改革, 历史转折]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 政治
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-hong-kong-handover-199707
-  date: "1997-07-01"
+  date: '1997-07-01'
   title: 香港回归祖国，香港特别行政区正式成立
   category: 政治
   importance: 5
   summary: 中英两国政府举行香港政权交接仪式，香港正式回归祖国，香港特别行政区宣告成立，董建华出任首任行政长官，"一国两制"正式付诸实践。
   confidence: 确定
-  tags: [外交, 一国两制, 历史转折]
-  sources: [新华网, 新华社]
-
+  tags:
+    - 外交
+    - 一国两制
+    - 历史转折
+  sources:
+    - 新华网
+    - 新华社
 - id: cn-chongqing-municipality-199706
-  date: "1997-06-18"
+  date: '1997-06-18'
   title: 重庆直辖市正式挂牌成立
   category: 政治
   importance: 4
   summary: 重庆直辖市正式挂牌，成为中国第四个直辖市，承担三峡库区移民与西部地区开发等重要战略使命。
   confidence: 确定
-  tags: [政治, 行政区划, 西部开发]
-  sources: [新华网, 重庆市政府]
-
+  tags:
+    - 政治
+    - 行政区划
+    - 西部开发
+  sources:
+    - 新华网
+    - 重庆市政府
 - id: cn-15th-cpc-congress-199709
-  date: "1997-09-12"
+  date: '1997-09-12'
   title: 中共十五大召开，确立邓小平理论为党的指导思想
   category: 政治
   importance: 5
   summary: 中国共产党第十五次全国代表大会在北京召开，将邓小平理论确立为党的指导思想并写入党章，系统阐述公有制为主体多种所有制共同发展的基本经济制度。
   confidence: 确定
-  tags: [改革, 理论, 历史转折]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 理论
+    - 历史转折
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-rmb-stability-199711
-  date: "1997-11-01"
+  date: '1997-11-01'
   title: 中国承诺人民币不贬值，力保亚洲金融稳定
   category: 经济
   importance: 4
   summary: 面对亚洲金融危机冲击，中国政府郑重承诺人民币不贬值，并积极参与国际金融援助，为维护亚洲乃至世界经济金融稳定作出重要贡献。
   confidence: 确定
-  tags: [金融, 经济, 亚洲金融危机]
-  sources: [新华网, 中国人民银行]
-
+  tags:
+    - 金融
+    - 经济
+    - 亚洲金融危机
+  sources:
+    - 新华网
+    - 中国人民银行
 - id: cn-zhu-rongji-pm-199803
-  date: "1998-03-17"
+  date: '1998-03-17'
   title: 朱镕基出任国务院总理，推行政府机构改革
   category: 政治
   importance: 4
   summary: 九届全国人大一次会议选举朱镕基为国务院总理，新一届政府实施大规模机构改革，国务院组成部门大幅精简，被称为"精兵简政"。
   confidence: 确定
-  tags: [政治, 机构改革]
-  sources: [新华网, 全国人大]
-
+  tags:
+    - 政治
+    - 机构改革
+  sources:
+    - 新华网
+    - 全国人大
 - id: cn-1998-flood-199806
-  date: "1998-06-12"
+  date: '1998-06-12'
   title: 长江流域发生特大洪水，全国军民奋力抗洪抢险
   category: 灾害
   importance: 5
   summary: 长江、嫩江、松花江等流域发生全流域特大洪水，九江长江大堤一度决口，数百万军民奋战抗洪一线，最终取得抗洪抢险全面胜利。
   confidence: 确定
-  tags: [灾害, 洪水, 抗洪, 历史转折]
-  sources: [新华网, 民政部]
-
+  tags:
+    - 灾害
+    - 洪水
+    - 抗洪
+    - 历史转折
+  sources:
+    - 新华网
+    - 民政部
 - id: cn-rmb-stability-199807
-  date: "1998-07-01"
+  date: '1998-07-01'
   title: 中国政府重申人民币不贬值，并向国际社会作出承诺
   category: 经济
   importance: 4
   summary: 面对亚洲金融危机持续蔓延，中国政府再次郑重承诺人民币不贬值，为稳定区域经济与金融秩序发挥关键作用，赢得国际社会广泛赞誉。
   confidence: 确定
-  tags: [金融, 经济, 亚洲金融危机]
-  sources: [新华网, 中国人民银行]
-
+  tags:
+    - 金融
+    - 经济
+    - 亚洲金融危机
+  sources:
+    - 新华网
+    - 中国人民银行
 - id: cn-medical-insurance-reform-199812
-  date: "1998-12-01"
+  date: '1998-12-01'
   title: 国务院颁布城镇职工基本医疗保险制度改革决定
   category: 经济
   importance: 3
   summary: 国务院发布《关于建立城镇职工基本医疗保险制度的决定》，在全国范围启动城镇职工基本医疗保险制度改革，构建覆盖城镇职工的医疗保障体系。
   confidence: 确定
-  tags: [民生, 改革, 医疗]
-  sources: [新华网, 劳动保障部]
-
+  tags:
+    - 民生
+    - 改革
+    - 医疗
+  sources:
+    - 新华网
+    - 劳动保障部
 - id: cn-11th-5th-plenum-liushaoqi-198002
-  date: "1980-02-29"
+  date: '1980-02-29'
   title: 中共十一届五中全会为刘少奇平反
   category: 政治
   importance: 5
   summary: 中共十一届五中全会通过《关于为刘少奇同志平反的决议》，撤销强加于刘少奇的一切罪名并恢复其作为党和国家领导人的名誉，标志拨乱反正走向深入。
   confidence: 确定
-  tags: [改革, 政治, 历史转折]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-first-winter-olympics-198002
-  date: "1980-02-13"
+  date: '1980-02-13'
   title: 中国首次派代表团参加冬季奥运会
   category: 文化
   importance: 3
   summary: 中国派出28名运动员参加在美国普莱西德湖举行的第13届冬季奥运会，是中国首次亮相冬奥会赛场，开启中国冬奥参赛历史。
   confidence: 确定
-  tags: [体育, 冬奥会]
-  sources: [新华网, 国际奥委会]
-
+  tags:
+    - 体育
+    - 冬奥会
+  sources:
+    - 新华网
+    - 国际奥委会
 - id: cn-imf-worldbank-seat-198004
-  date: "1980-04-15"
+  date: '1980-04-15'
   title: 中国恢复在国际货币基金组织与世界银行合法席位
   category: 经济
   importance: 4
   summary: 国际货币基金组织理事会恢复中国在IMF的代表权，随后世界银行亦恢复中国席位，为中国融入国际金融体系与获得国际开发贷款打开通道。
   confidence: 确定
-  tags: [金融, 外交]
-  sources: [新华网, 国际货币基金组织]
-
+  tags:
+    - 金融
+    - 外交
+  sources:
+    - 新华网
+    - 国际货币基金组织
 - id: cn-df5-icbm-test-198005
-  date: "1980-05-18"
+  date: '1980-05-18'
   title: 中国"东风五号"洲际运载火箭全程飞行试验成功
   category: 文化
   importance: 4
   summary: 中国由本土向南太平洋预定海域发射"东风五号"洲际运载火箭并准确溅落，首次完成洲际火箭全程飞行试验，标志中国掌握洲际战略打击能力。
   confidence: 确定
-  tags: [航天, 军事, 科技]
-  sources: [新华网, 国防科工委]
-
+  tags:
+    - 航天
+    - 军事
+    - 科技
+  sources:
+    - 新华网
+    - 国防科工委
 - id: cn-pengjiamu-lost-198006
-  date: "1980-06-17"
+  date: '1980-06-17'
   title: 科学家彭加木在罗布泊考察失踪
   category: 文化
   importance: 3
   summary: 中国科学院新疆分院副院长彭加木率队深入罗布泊进行综合考察时独自外出找水失踪，国家多次组织搜救未果，成为中国科考史上的重大悬案。
   confidence: 确定
-  tags: [科考, 科技]
-  sources: [新华网, 中国科学院]
-
+  tags:
+    - 科考
+    - 科技
+  sources:
+    - 新华网
+    - 中国科学院
 - id: cn-sez-established-198008
-  date: "1980-08-26"
+  date: '1980-08-26'
   title: 全国人大决定设立深圳珠海汕头厦门经济特区
   category: 经济
   importance: 5
   summary: 五届全国人大常委会第十五次会议批准在广东深圳、珠海、汕头及福建厦门设立经济特区，作为中国对外开放的先行试验窗口，开启特区建设序幕。
   confidence: 确定
-  tags: [改革, 经济, 历史转折]
-  sources: [新华网, 国务院]
-
+  tags:
+    - 改革
+    - 经济
+    - 历史转折
+  sources:
+    - 新华网
+    - 国务院
 - id: cn-gang-of-four-trial-198011
-  date: "1980-11-20"
+  date: '1980-11-20'
   title: 最高人民法院特别法庭公审林彪、江青反革命集团案
   category: 政治
   importance: 5
   summary: 最高人民法院特别法庭在北京开庭公审林彪、江青反革命集团主犯，江青等被判处刑罚，以司法形式清算"文革"罪行，是拨乱反正与法制重建的标志。
   confidence: 确定
-  tags: [法律, 政治, 历史转折]
-  sources: [新华网, 最高人民法院]
-
+  tags:
+    - 法律
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+    - 最高人民法院
 - id: cn-song-qingling-death-198105
-  date: "1981-05-29"
+  date: '1981-05-29'
   title: 国家名誉主席宋庆龄逝世
   category: 政治
   importance: 4
   summary: 中华人民共和国国家名誉主席、孙中山夫人宋庆龄在北京病逝，全国下半旗志哀，中共中央追认其为中国共产党正式党员。
   confidence: 确定
-  tags: [政治, 民生]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 政治
+    - 民生
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-11th-6th-plenum-resolution-198106
-  date: "1981-06-27"
+  date: '1981-06-27'
   title: 十一届六中全会通过《关于建国以来党的若干历史问题的决议》
   category: 政治
   importance: 5
   summary: 中共十一届六中全会一致通过《关于建国以来党的若干历史问题的决议》，正式否定"文化大革命"，科学评价毛泽东历史地位与毛泽东思想，完成指导思想拨乱反正。
   confidence: 确定
-  tags: [改革, 政治, 历史转折]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-chengkun-train-crash-198107
-  date: "1981-07-09"
+  date: '1981-07-09'
   title: 成昆铁路列车坠桥特大事故
   category: 灾害
   importance: 3
   summary: 成昆铁路利子依达大桥遭泥石流冲毁，一列旅客列车坠桥，造成240余人死亡，是中国铁路史上最惨烈的运营事故之一。
   confidence: 确定
-  tags: [灾害, 民生]
-  sources: [新华网, 铁道部]
-
+  tags:
+    - 灾害
+    - 民生
+  sources:
+    - 新华网
+    - 铁道部
 - id: cn-yijian-3sat-launch-198109
-  date: "1981-09-20"
+  date: '1981-09-20'
   title: 中国首次以一枚火箭成功发射三颗卫星
   category: 文化
   importance: 4
   summary: 中国用"风暴一号"运载火箭成功将"实践二号"等三颗科学实验卫星送入预定轨道，首次实现"一箭三星"发射，标志中国航天多星发射技术突破。
   confidence: 确定
-  tags: [航天, 科技]
-  sources: [新华网, 中国航天科技集团]
-
+  tags:
+    - 航天
+    - 科技
+  sources:
+    - 新华网
+    - 中国航天科技集团
 - id: cn-yexiao-9points-taiwan-198109
-  date: "1981-09-30"
+  date: '1981-09-30'
   title: 叶剑英提出"叶九条"对台和平统一方针
   category: 政治
   importance: 3
   summary: 全国人大常委会委员长叶剑英向新华社记者发表谈话，提出关于台湾回归祖国实现和平统一的九条方针，奠定两岸和平统一政策框架。
   confidence: 确定
-  tags: [外交, 政治]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 外交
+    - 政治
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-xinhai-70th-anniv-198110
-  date: "1981-10-10"
+  date: '1981-10-10'
   title: 首都举行辛亥革命70周年纪念大会
   category: 政治
   importance: 3
   summary: 北京举行万人大会纪念辛亥革命70周年，胡耀邦在会上呼吁台湾国民党政军领导人回大陆和故乡看看，向两岸交流释放善意。
   confidence: 确定
-  tags: [外交, 政治]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 外交
+    - 政治
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-volleyball-worldcup-198111
-  date: "1981-11-16"
+  date: '1981-11-16'
   title: 中国女排首夺世界杯冠军，开启"五连冠"传奇
   category: 文化
   importance: 5
   summary: 中国女子排球队在日本举行的第3届女排世界杯上七战全胜首夺世界冠军，开启"五连冠"传奇，"女排精神"成为改革开放初期的时代象征。
   confidence: 确定
-  tags: [体育, 历史转折]
-  sources: [新华网, 国际排联]
-
+  tags:
+    - 体育
+    - 历史转折
+  sources:
+    - 新华网
+    - 国际排联
 - id: cn-one-country-two-systems-198201
-  date: "1982-01-11"
+  date: '1982-01-11'
   title: 邓小平首次提出"一个国家，两种制度"构想
   category: 政治
   importance: 5
   summary: 邓小平在接见海外友人时首次系统提出"一个国家，两种制度"的构想，为日后以和平方式解决香港、澳门与台湾问题奠定理论基础。
   confidence: 确定
-  tags: [外交, 政治, 历史转折]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 外交
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-liaochengzhi-letter-jiang-198207
-  date: "1982-07-24"
+  date: '1982-07-24'
   title: 廖承志致信蒋经国吁国共第三次合作
   category: 政治
   importance: 3
   summary: 廖承志以世侄身份致电台湾领导人蒋经国，吁其"度尽劫波兄弟在，相逢一笑泯恩仇"，推动两岸关系缓和与探亲交流，引发海内外广泛关注。
   confidence: 确定
-  tags: [外交, 政治]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 外交
+    - 政治
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-12th-congress-198209
-  date: "1982-09-01"
+  date: '1982-09-01'
   title: 中共十二大召开，邓小平提出建设有中国特色的社会主义
   category: 政治
   importance: 4
   summary: 中共第十二次全国代表大会在北京召开，邓小平在开幕词中提出"建设有中国特色的社会主义"这一命题，开启全面开创社会主义现代化建设新局面。
   confidence: 确定
-  tags: [改革, 政治]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 政治
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-thatcher-deng-hk-198209
-  date: "1982-09-24"
+  date: '1982-09-24'
   title: 撒切尔夫人访华，邓小平就香港前途问题交锋
   category: 政治
   importance: 5
   summary: 英国首相撒切尔夫人访华，邓小平向其明确中国将在1997年收回香港主权，并阐明收回后将采取设立特别行政区等特殊政策，中英香港问题谈判由此开启。
   confidence: 确定
-  tags: [外交, 政治, 历史转折]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 外交
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-jl1-submarine-launch-198210
-  date: "1982-10-12"
+  date: '1982-10-12'
   title: 中国潜艇水下发射"巨浪一号"运载火箭成功
   category: 文化
   importance: 4
   summary: 中国用潜艇在水下成功发射"巨浪一号"固体运载火箭，火箭准确溅落预定海域，标志中国掌握水下发射战略导弹技术，海基核力量实现零的突破。
   confidence: 确定
-  tags: [航天, 军事, 科技]
-  sources: [新华网, 国防科工委]
-
+  tags:
+    - 航天
+    - 军事
+    - 科技
+  sources:
+    - 新华网
+    - 国防科工委
 - id: cn-1982-constitution-198212
-  date: "1982-12-04"
+  date: '1982-12-04'
   title: 五届全国人大五次会议通过现行《中华人民共和国宪法》
   category: 政治
   importance: 5
   summary: 五届全国人大五次会议以无记名投票通过新宪法，即"八二宪法"，确立国家根本政治制度与公民基本权利，成为中国现行并沿用至今的宪法。
   confidence: 确定
-  tags: [法律, 政治, 历史转折]
-  sources: [新华网, 全国人大常委会]
-
+  tags:
+    - 法律
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+    - 全国人大常委会
 - id: cn-cctv-gala-1st-198302
-  date: "1983-02-12"
+  date: '1983-02-12'
   title: 中央电视台举办首届春节联欢晚会直播
   category: 文化
   importance: 4
   summary: 中央电视台在除夕夜首次以现场直播形式举办春节联欢晚会，李谷一演唱《难忘今宵》等节目成为时代记忆，春晚由此成为延续至今的春节文化新民俗。
   confidence: 确定
-  tags: [文化, 艺术]
-  sources: [新华网, 中央电视台]
-
+  tags:
+    - 文化
+    - 艺术
+  sources:
+    - 新华网
+    - 中央电视台
 - id: cn-6th-npc-lixianian-198306
-  date: "1983-06-18"
+  date: '1983-06-18'
   title: 六届全国人大一次会议选举李先念为国家主席
   category: 政治
   importance: 3
   summary: 第六届全国人大第一次会议在北京举行，选举李先念为中华人民共和国主席、彭真为全国人大常委会委员长，完成国家领导人换届。
   confidence: 确定
-  tags: [政治]
-  sources: [新华网, 全国人大常委会]
-
+  tags:
+    - 政治
+  sources:
+    - 新华网
+    - 全国人大常委会
 - id: cn-crackdown-198308
-  date: "1983-08-25"
+  date: '1983-08-25'
   title: 全国开展严厉打击刑事犯罪活动（"严打"）
   category: 政治
   importance: 4
   summary: 根据邓小平指示，公安部部署全国开展严厉打击刑事犯罪活动，对严重危害社会治安的犯罪分子从重从快惩处，扭转80年代初恶化的社会治安。
   confidence: 确定
-  tags: [法律, 民生]
-  sources: [新华网, 公安部]
-
+  tags:
+    - 法律
+    - 民生
+  sources:
+    - 新华网
+    - 公安部
 - id: cn-deng-3faces-education-198310
-  date: "1983-10-01"
+  date: '1983-10-01'
   title: 邓小平题词"教育要面向现代化、面向世界、面向未来"
   category: 文化
   importance: 3
   summary: 邓小平为北京景山学校题词"教育要面向现代化，面向世界，面向未来"，提出"三个面向"方针，成为中国教育改革与对外开放的指导思想。
   confidence: 确定
-  tags: [教育, 改革]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 教育
+    - 改革
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-12th-2nd-plenum-198310
-  date: "1983-10-12"
+  date: '1983-10-12'
   title: 中共十二届二中全会通过整党决定
   category: 政治
   importance: 3
   summary: 中共十二届二中全会通过《关于整党的决定》，决定用三年时间分期分批对全党进行一次全面整顿，统一思想、整顿作风、加强纪律、纯洁组织。
   confidence: 确定
-  tags: [改革, 政治]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 政治
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-yinhe1-supercomputer-198311
-  date: "1983-11-26"
+  date: '1983-11-26'
   title: '"银河-I"巨型计算机通过国家鉴定'
   category: 文化
   importance: 5
   summary: 国防科技大学研制成功的中国第一台亿次巨型计算机"银河-I"通过国家鉴定，使中国成为世界上少数能独立设计与制造巨型计算机的国家之一。
   confidence: 确定
-  tags: [科技, 超算, 历史转折]
-  sources: [新华网, 国防科技大学]
-
+  tags:
+    - 科技
+    - 超算
+    - 历史转折
+  sources:
+    - 新华网
+    - 国防科技大学
 - id: cn-deng-shenzhen-inspection-198401
-  date: "1984-01-24"
+  date: '1984-01-24'
   title: 邓小平视察深圳等经济特区并题词肯定
   category: 政治
   importance: 4
   summary: 邓小平先后视察深圳、珠海、厦门经济特区，为深圳题词"深圳的发展和经验证明，我们建立经济特区的政策是正确的"，公开肯定特区建设方向。
   confidence: 确定
-  tags: [改革, 政治]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 政治
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-reagan-china-visit-198404
-  date: "1984-04-26"
+  date: '1984-04-26'
   title: 美国总统里根访华
   category: 政治
   importance: 3
   summary: 美国总统里根抵达北京对中国进行国事访问，中美两国领导人就双边关系与重大国际问题交换意见，是中美建交后首位在任美国总统访华。
   confidence: 确定
-  tags: [外交, 政治]
-  sources: [新华网, 外交部]
-
+  tags:
+    - 外交
+    - 政治
+  sources:
+    - 新华网
+    - 外交部
 - id: cn-open-14-coastal-cities-198405
-  date: "1984-05-04"
+  date: '1984-05-04'
   title: 中共中央、国务院决定进一步开放十四个沿海港口城市
   category: 经济
   importance: 5
   summary: 中共中央、国务院决定进一步开放天津、上海、大连、青岛、广州等14个沿海港口城市，与经济特区共同构成中国沿海开放前沿地带，对外开放格局大幅拓展。
   confidence: 确定
-  tags: [改革, 经济, 历史转折]
-  sources: [新华网, 国务院]
-
+  tags:
+    - 改革
+    - 经济
+    - 历史转折
+  sources:
+    - 新华网
+    - 国务院
 - id: cn-la-olympics-xuhaifeng-198407
-  date: "1984-07-29"
+  date: '1984-07-29'
   title: 中国重返奥运赛场，许海峰夺得中国奥运史上首金
   category: 文化
   importance: 5
   summary: 中国体育代表团重返奥运赛场参加第23届洛杉矶奥运会，射击运动员许海峰在男子自选手枪慢射项目夺金，实现中国奥运史上金牌"零的突破"。
   confidence: 确定
-  tags: [体育, 历史转折]
-  sources: [新华网, 国际奥委会]
-
+  tags:
+    - 体育
+    - 历史转折
+  sources:
+    - 新华网
+    - 国际奥委会
 - id: cn-lenovo-founded-198411
-  date: "1984-11-09"
+  date: '1984-11-09'
   title: 柳传志等在中科院计算所创办联想公司前身
   category: 文化
   importance: 3
   summary: 柳传志等11名中科院计算技术研究所职工凑集20万元创办"中国科学院计算技术研究所新技术发展公司"，是为联想集团前身，开启中国民营科技企业先河。
   confidence: 确定
-  tags: [科技, 改革]
-  sources: [新华网, 联想集团]
-
+  tags:
+    - 科技
+    - 改革
+  sources:
+    - 新华网
+    - 联想集团
 - id: cn-35th-national-day-parade-198410
-  date: "1984-10-01"
+  date: '1984-10-01'
   title: 首都举行建国35周年阅兵与群众游行
   category: 政治
   importance: 4
   summary: 首都天安门广场举行盛大阅兵与群众游行庆祝建国35周年，中央军委主席邓小平检阅受阅部队，是改革开放后首次国庆大阅兵。
   confidence: 确定
-  tags: [军事, 政治]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 军事
+    - 政治
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-12th-3rd-plenum-reform-198410
-  date: "1984-10-20"
+  date: '1984-10-20'
   title: 中共十二届三中全会通过《关于经济体制改革的决定》
   category: 政治
   importance: 5
   summary: 中共十二届三中全会通过《关于经济体制改革的决定》，阐明加快以城市为重点的整个经济体制改革，标志中国改革从农村推向城市、全面展开。
   confidence: 确定
-  tags: [改革, 政治, 历史转折]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-sino-british-joint-declaration-198412
-  date: "1984-12-19"
+  date: '1984-12-19'
   title: 中英《关于香港问题的联合声明》在北京正式签署
   category: 政治
   importance: 5
   summary: 中英两国政府总理在北京正式签署《关于香港问题的联合声明》，确认中国于1997年7月1日恢复对香港行使主权并设立特别行政区，香港前途尘埃落定。
   confidence: 确定
-  tags: [外交, 政治, 历史转折]
-  sources: [新华网, 外交部]
-
+  tags:
+    - 外交
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+    - 外交部
 - id: cn-rural-10policies-198501
-  date: "1985-01-01"
+  date: '1985-01-01'
   title: 中共中央国务院发布活跃农村经济十项政策，取消农产品统购派购
   category: 经济
   importance: 4
   summary: 中共中央、国务院发布《关于进一步活跃农村经济的十项政策》，决定取消实行30余年的农产品统购派购制度，改为合同定购，深化农村改革。
   confidence: 确定
-  tags: [改革, 经济, 民生]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 经济
+    - 民生
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-antarctic-greatwall-station-198502
-  date: "1985-02-20"
+  date: '1985-02-20'
   title: 中国南极长城站建成
   category: 文化
   importance: 5
   summary: 中国在南极乔治王岛建成的第一座南极科学考察站"长城站"举行落成典礼，标志中国跻身南极科考国家行列，开启极地科学考察时代。
   confidence: 确定
-  tags: [科考, 科技, 历史转折]
-  sources: [新华网, 国家海洋局]
-
+  tags:
+    - 科考
+    - 科技
+    - 历史转折
+  sources:
+    - 新华网
+    - 国家海洋局
 - id: cn-education-reform-decision-198505
-  date: "1985-05-27"
+  date: '1985-05-27'
   title: 中共中央发布《关于教育体制改革的决定》
   category: 文化
   importance: 4
   summary: 中共中央发布《关于教育体制改革的决定》，提出实行九年制义务教育、分级管理基础教育、调整中等教育结构，是改革开放后教育体制的根本性改革纲领。
   confidence: 确定
-  tags: [教育, 改革]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 教育
+    - 改革
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-million-troop-cut-198506
-  date: "1985-06-04"
+  date: '1985-06-04'
   title: 邓小平宣布中国人民解放军裁减员额一百万
   category: 政治
   importance: 5
   summary: 中央军委扩大会议在北京举行，邓小平宣布中国人民解放军减少员额一百万，军队建设转向现代化、正规化，向世界释放中国维护和平、转向以经济建设为中心的信号。
   confidence: 确定
-  tags: [军事, 改革, 历史转折]
-  sources: [新华网, 中央军委]
-
+  tags:
+    - 军事
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+    - 中央军委
 - id: cn-first-teachers-day-198509
-  date: "1985-09-10"
+  date: '1985-09-10'
   title: 新中国庆祝第一个教师节
   category: 文化
   importance: 3
   summary: 全国各地隆重庆祝第六届全国人大常委会确定的9月10日教师节，是为新中国成立后首个教师节，旨在形成尊师重教的社会风尚。
   confidence: 确定
-  tags: [教育, 民生]
-  sources: [新华网, 教育部]
-
+  tags:
+    - 教育
+    - 民生
+  sources:
+    - 新华网
+    - 教育部
 - id: cn-7th-5year-plan-proposal-198509
-  date: "1985-09-23"
+  date: '1985-09-23'
   title: 中共全国代表会议通过"七五"计划建议
   category: 政治
   importance: 3
   summary: 中共全国代表会议在北京举行，通过《中共中央关于制定国民经济和社会发展第七个五年计划的建议》，进一步推进经济体制改革和对外开放。
   confidence: 确定
-  tags: [改革, 经济]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 经济
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-7th-5year-plan-198604
-  date: "1986-04-12"
+  date: '1986-04-12'
   title: 六届全国人大四次会议通过第七个五年计划
   category: 政治
   importance: 3
   summary: 六届全国人大第四次会议审议通过《中华人民共和国国民经济和社会发展第七个五年计划》，确立1986至1990年经济社会发展主要目标与改革任务。
   confidence: 确定
-  tags: [改革, 经济]
-  sources: [新华网, 全国人大常委会]
-
+  tags:
+    - 改革
+    - 经济
+  sources:
+    - 新华网
+    - 全国人大常委会
 - id: cn-halley-comet-198604
-  date: "1986-04-11"
+  date: '1986-04-11'
   title: 中国组织哈雷彗星回归大规模联合观测
   category: 文化
   importance: 3
   summary: 在哈雷彗星76年一度的回归期，中国天文学会组织全国联合观测并开展彗星研究，是中国现代天文学史上规模空前的天象联合观测活动。
   confidence: 确定
-  tags: [科考, 科技]
-  sources: [新华网, 中国天文学会]
-
+  tags:
+    - 科考
+    - 科技
+  sources:
+    - 新华网
+    - 中国天文学会
 - id: cn-labor-contract-system-198605
-  date: "1986-05-04"
+  date: '1986-05-04'
   title: 国务院发布国营企业实行劳动合同制暂行规定
   category: 经济
   importance: 4
   summary: 国务院发布关于国营企业招用工人的四项暂行规定，推行劳动合同制，终结"铁饭碗"统包统配用工制度，是劳动用工制度的根本性改革。
   confidence: 确定
-  tags: [改革, 民生, 经济]
-  sources: [新华网, 国务院]
-
+  tags:
+    - 改革
+    - 民生
+    - 经济
+  sources:
+    - 新华网
+    - 国务院
 - id: cn-12th-6th-plenum-spiritual-civilization-198609
-  date: "1986-09-28"
+  date: '1986-09-28'
   title: 中共十二届六中全会通过精神文明建设指导方针决议
   category: 政治
   importance: 3
   summary: 中共十二届六中全会通过《关于社会主义精神文明建设指导方针的决议》，阐明精神文明建设的战略地位与基本指导方针，推动物质与精神文明协调发展。
   confidence: 确定
-  tags: [改革, 政治]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 政治
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-liubocheng-death-198610
-  date: "1986-10-07"
+  date: '1986-10-07'
   title: 刘伯承元帅在北京逝世
   category: 政治
   importance: 3
   summary: 中华人民共和国元帅、军事家刘伯承在北京病逝，享年94岁，他是开国十大元帅之一、二野主要领导人，为解放战争胜利立下卓越功勋。
   confidence: 确定
-  tags: [军事, 政治]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 军事
+    - 政治
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-863-program-198611
-  date: "1986-11-18"
+  date: '1986-11-18'
   title: 中共中央国务院批准实施"863计划"
   category: 文化
   importance: 5
   summary: 中共中央、国务院批准《高技术研究发展计划纲要》，即"863计划"，选择生物、航天、信息、激光、自动化、能源、新材料等七大领域跟踪世界高科技前沿，是中国科技发展的里程碑。
   confidence: 确定
-  tags: [科技, 改革, 历史转折]
-  sources: [新华网, 科技部]
-
+  tags:
+    - 科技
+    - 改革
+    - 历史转折
+  sources:
+    - 新华网
+    - 科技部
 - id: cn-huyaobang-resign-198701
-  date: "1987-01-16"
+  date: '1987-01-16'
   title: 胡耀邦辞去中共中央总书记职务，赵紫阳代理总书记
   category: 政治
   importance: 4
   summary: 在反对资产阶级自由化运动中，胡耀邦因被指"反自由化不力"辞去中共中央总书记职务，由国务院总理赵紫阳代理总书记，反映改革与保守路线的张力。
   confidence: 确定
-  tags: [政治, 改革]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 政治
+    - 改革
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-sino-portuguese-macau-declaration-198704
-  date: "1987-04-13"
+  date: '1987-04-13'
   title: 中葡《关于澳门问题的联合声明》在北京正式签署
   category: 政治
   importance: 5
   summary: 中葡两国政府总理在北京正式签署《关于澳门问题的联合声明》，确认中国于1999年12月20日恢复对澳门行使主权并设立特别行政区，澳门前途得以确定。
   confidence: 确定
-  tags: [外交, 政治, 历史转折]
-  sources: [新华网, 外交部]
-
+  tags:
+    - 外交
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+    - 外交部
 - id: cn-daxinganling-fire-198705
-  date: "1987-05-06"
+  date: '1987-05-06'
   title: 大兴安岭发生特大森林火灾
   category: 灾害
   importance: 4
   summary: 黑龙江大兴安岭林区发生建国以来最严重的特大森林火灾，持续近月，过火面积逾百万公顷，211人罹难，暴露林业管理与防火体系重大漏洞。
   confidence: 确定
-  tags: [灾害, 气候]
-  sources: [新华网, 林业部]
-
+  tags:
+    - 灾害
+    - 气候
+  sources:
+    - 新华网
+    - 林业部
 - id: cn-taiwan-mainland-visit-198710
-  date: "1987-10-15"
+  date: '1987-10-15'
   title: 台湾当局宣布开放民众赴大陆探亲
   category: 政治
   importance: 4
   summary: 台湾当局宣布自当日起开放除现役军人及公职人员外的民众赴大陆探亲，逾38年的两岸隔绝被打破，开启两岸民间往来与交流的新阶段。
   confidence: 确定
-  tags: [外交, 政治]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 外交
+    - 政治
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-13th-congress-198710
-  date: "1987-10-25"
+  date: '1987-10-25'
   title: 中共十三大召开，提出社会主义初级阶段理论
   category: 政治
   importance: 5
   summary: 中共第十三次全国代表大会在北京召开，赵紫阳作报告系统阐述社会主义初级阶段理论与党的基本路线，并部署政治体制改革，是改革开放理论的重大发展。
   confidence: 确定
-  tags: [改革, 政治, 历史转折]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-6th-national-games-198711
-  date: "1987-11-20"
+  date: '1987-11-20'
   title: 第六届全国运动会在广州开幕
   category: 文化
   importance: 3
   summary: 第六届全国运动会在广州天河体育中心开幕，是广东省首次承办全运会，赛后场馆群奠定广州体育中心城市格局，全运会运作模式走向市场化探索。
   confidence: 确定
-  tags: [体育, 改革]
-  sources: [新华网, 国家体委]
-
+  tags:
+    - 体育
+    - 改革
+  sources:
+    - 新华网
+    - 国家体委
 - id: cn-7th-npc-1st-meeting-198803
-  date: "1988-03-25"
+  date: '1988-03-25'
   title: 七届全国人大一次会议在北京召开
   category: 政治
   importance: 3
   summary: 七届全国人大第一次会议在北京召开，选举杨尚昆为国家主席、李鹏为国务院总理、万里为全国人大常委会委员长，完成国家领导人换届。
   confidence: 确定
-  tags: [政治]
-  sources: [新华网, 全国人大常委会]
-
+  tags:
+    - 政治
+  sources:
+    - 新华网
+    - 全国人大常委会
 - id: cn-hainan-province-sez-198804
-  date: "1988-04-13"
+  date: '1988-04-13'
   title: 七届全国人大一次会议决定海南建省办经济特区
   category: 政治
   importance: 5
   summary: 七届全国人大一次会议通过关于设立海南省的决定与关于建立海南经济特区的决议，海南成为中国最年轻的省和最大的经济特区，是改革开放前沿布局的重大举措。
   confidence: 确定
-  tags: [改革, 政治, 历史转折]
-  sources: [新华网, 全国人大常委会]
-
+  tags:
+    - 改革
+    - 政治
+    - 历史转折
+  sources:
+    - 新华网
+    - 全国人大常委会
 - id: cn-price-reform-breakthrough-198808
-  date: "1988-08-19"
+  date: '1988-08-19'
   title: 中央北戴河会议决定价格改革"闯关"，引发全国抢购风潮
   category: 经济
   importance: 4
   summary: 中央在北戴河会议提出价格改革"闯关"，消息引发全国性抢购与挤兑，通货膨胀加剧，迫使中央放缓改革并转而进行治理整顿，是改革进程的重要转折。
   confidence: 确定
-  tags: [改革, 经济]
-  sources: [新华网, 人民日报]
-
+  tags:
+    - 改革
+    - 经济
+  sources:
+    - 新华网
+    - 人民日报
 - id: cn-military-rank-restored-198809
-  date: "1988-09-14"
+  date: '1988-09-14'
   title: 中央军委决定恢复实行军衔制并授予上将军衔
   category: 政治
   importance: 4
   summary: 中央军委决定恢复自1965年取消的军衔制，并在北京举行授衔仪式，授予洪学智等17人上将军衔，标志人民解放军正规化、现代化建设迈出重要一步。
   confidence: 确定
-  tags: [军事, 改革]
-  sources: [新华网, 中央军委]
-
+  tags:
+    - 军事
+    - 改革
+  sources:
+    - 新华网
+    - 中央军委
 - id: cn-beijing-electron-collider-198810
-  date: "1988-10-22"
+  date: '1988-10-22'
   title: 北京正负电子对撞机首次对撞成功
   category: 文化
   importance: 4
   summary: 中国自行设计建造的首台高能粒子加速器北京正负电子对撞机首次对撞成功，随后北京谱仪投入高能物理实验，是中国高能物理与同步辐射研究的里程碑。
   confidence: 确定
-  tags: [科技, 科考]
-  sources: [新华网, 中国科学院]
-
+  tags:
+    - 科技
+    - 科考
+  sources:
+    - 新华网
+    - 中国科学院
