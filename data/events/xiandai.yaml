@@ -2226,6 +2226,66 @@
   tags: [民生, 农业, 改革, 历史转折]
   sources: [新华网, 人大网]
 
+- id: cn-china-world-cup-debut-200206
+  date: "2002-06-04"
+  title: 中国国家男子足球队首次亮相韩日世界杯决赛圈
+  category: 文化
+  importance: 5
+  summary: 中国队在主教练米卢率领下首次打入世界杯决赛圈，先后对阵哥斯达黎加、巴西与土耳其，实现了中国足球几代人的夙愿。
+  confidence: 确定
+  tags: [体育, 足球, 历史转折]
+  sources: [新华网, FIFA]
+
+- id: cn-three-gorges-diversion-closure-200211
+  date: "2002-11-06"
+  title: 三峡工程导流明渠截流成功
+  category: 经济
+  importance: 4
+  summary: 随着长江上大木龙骨龙口大封堵完成，三峡二期工程导流明渠成功截流，水库蓄水和首批机组发电进入倒计时。
+  confidence: 确定
+  tags: [工程, 水利]
+  sources: [新华网, 中国三峡]
+
+- id: cn-cpc-16th-congress-200211
+  date: "2002-11-08"
+  title: 中国共产党第十六次全国代表大会在北京胜利召开
+  category: 政治
+  importance: 5
+  summary: 中共十六大把"三个代表"重要思想写入党章，确立本世纪头二十年全面建设小康社会的奋斗目标，实现了中央领导集体的顺利交接。
+  confidence: 确定
+  tags: [政治, 党建, 历史转折]
+  sources: [新华网]
+
+- id: cn-south-to-north-water-diversion-200212
+  date: "2002-12-27"
+  title: 国务院批准《南水北调工程总体规划》，东线和中线工程正式开工
+  category: 经济
+  importance: 5
+  summary: 世界上规模最大的跨流域水资源配置工程——南水北调工程正式开工，有效缓解北方缺水状况，促进区域协调发展。
+  confidence: 确定
+  tags: [工程, 水利, 历史转折]
+  sources: [新华网, 国务院]
+
+- id: cn-shenzhou4-space-mission-200212
+  date: "2002-12-30"
+  title: 神舟四号无人飞船成功发射，载人航天准备工作进入最后冲刺
+  category: 文化
+  importance: 4
+  summary: 神舟四号飞船在酒泉成功发射，经全状态无人测试考核了载人飞船生命保障与各种安全备份系统，为神舟五号载人飞行打下坚实基础。
+  confidence: 确定
+  tags: [航天, 科技]
+  sources: [国家航天局, 新华网]
+
+- id: cn-wto-one-year-anniversary-200212
+  date: "2002-12-11"
+  title: 中国加入世界贸易组织（WTO）一周年，全面履行降税与市场开放承诺
+  category: 经济
+  importance: 5
+  summary: 加入WTO一周年之际，中国全面关税水平从15.3%降至12.7%，外贸总额爆发式增长，中国经济全球化融合显著加速。
+  confidence: 确定
+  tags: [经济, 外贸, WTO, 历史转折]
+  sources: [商务部, 新华网]
+
 - id: cn-national-npc-200303
   date: "2003-03-15"
   title: 十届全国人大一次会议举行，胡锦涛当选中华人民共和国主席

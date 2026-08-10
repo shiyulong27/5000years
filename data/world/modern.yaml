@@ -2534,3 +2534,65 @@
   confidence: 确定
   tags: [科技, 航空, 历史转折]
   sources: [维基百科, 新华网]
+
+- id: w-euro-cash-launch-200201
+  date: "2002-01-01"
+  title: 欧元纸币和硬币正式在欧洲12国投入流通
+  category: 经济
+  importance: 5
+  summary: 欧元纸币与硬币在欧洲12国正式取代各国本国货币流通，标志着欧洲经济一体化迈出最具实质意义的历史性一步。
+  confidence: 确定
+  tags: [经济, 货币, 欧洲, 历史转折]
+  sources: [欧洲央行, 维基百科, 新华网]
+
+- id: w-world-cup-korea-japan-200205
+  date: "2002-05-31"
+  title: 第17届世界杯足球赛在韩国和日本开幕，巴西队第五次夺冠
+  category: 文化
+  importance: 5
+  summary: 首次在亚洲及由两座国家联合举办的世界杯在日韩举行，巴西在决赛中2:0击败德国五度封王，罗纳尔多以8球揽获金靴。
+  confidence: 确定
+  tags: [体育, 足球, 亚洲, 历史转折]
+  sources: [FIFA, 维基百科]
+
+- id: w-icc-statute-effective-200207
+  date: "2002-07-01"
+  title: 《罗马规约》生效，国际刑事法院（ICC）在海牙正式成立
+  category: 政治
+  importance: 5
+  summary: 60国批准《罗马规约》后国际刑事法院在海牙成立，成为首个常设的专门管辖灭绝种族罪、反人类罪与战争罪的国际司法机构。
+  confidence: 确定
+  tags: [政治, 国际法, 联合国, 历史转折]
+  sources: [ICC, 维基百科]
+
+- id: w-switzerland-joins-un-200209
+  date: "2002-09-10"
+  title: 瑞士联邦正式加入联合国，成为第190个成员国
+  category: 政治
+  importance: 4
+  summary: 经全国公投后长期保持中立的瑞士正式加入联合国，标志着国际社会普遍性原则得到进一步深化。
+  confidence: 确定
+  tags: [政治, 联合国, 欧洲]
+  sources: [联合国, 维基百科]
+
+- id: w-bali-bombings-200210
+  date: "2002-10-12"
+  title: 印度尼西亚巴厘岛发生针对外国游客的连环炸弹袭击，致202人遇难
+  category: 战争
+  importance: 5
+  summary: 东南亚伊斯兰祈祷团在巴厘岛库塔度假区夜总会引爆强力炸弹，造成包含多名澳大利亚游客在内202人遇难，为印尼史上最惨重恐袭。
+  confidence: 确定
+  tags: [战争, 反恐, 东南亚, 历史转折]
+  sources: [维基百科, 新华网]
+
+- id: w-moscow-theater-hostage-crisis-200210
+  date: "2002-10-23"
+  title: 车臣武装分子劫持莫斯科轴承厂剧院近千名人质，特种部队强攻解救
+  category: 战争
+  importance: 5
+  summary: 40余名车臣武装分子劫持850余名人质，俄特种部队使用麻醉气体解救，造成130名人质及全部恐怖分子死亡，震惊世界。
+  confidence: 确定
+  tags: [战争, 反恐, 俄罗斯, 历史转折]
+  sources: [维基百科, 新华网]
+
+
