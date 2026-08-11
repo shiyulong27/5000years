@@ -62,16 +62,17 @@
   summary: 五十国签署《联合国宪章》，联合国正式成立，望以多边机制维持世界和平。
   confidence: 确定
 - id: w-moon-1969
-  date: '1969'
-  title: 人类登月
+  date: '1969-07-20'
+  title: 阿波罗11号实现人类首次登月
   category: 文化
   tags:
     - 航天
     - 科技
     - 历史转折
   importance: 5
-  summary: 阿波罗十一号载人登月成功，阿姆斯特朗踏上月球，人类足迹首次印于地外天体。
+  summary: 美国阿波罗11号宇航员尼尔·阿姆斯特朗和巴兹·奥尔德林登上月球，完成人类首次载人登月。
   confidence: 确定
+  sources: [NASA, Smithsonian National Air and Space Museum, Wikipedia—Apollo 11]
 - id: w-soviet-fall-1991
   date: '1991'
   title: 苏联解体
@@ -6833,3 +6834,84 @@
   confidence: 确定
   tags: [苏联, 阿富汗, 入侵, 冷战]
   sources: [联合国, Encyclopaedia Britannica, Wikipedia—Soviet–Afghan War]
+- id: w-nixon-inauguration-196901
+  date: '1969-01-20'
+  title: 理查德·尼克松就任美国总统
+  category: 政治
+  importance: 4
+  summary: 尼克松宣誓就任美国第37任总统，提出寻求国际缓和并调整越南战争政策。
+  confidence: 确定
+  tags: [美国, 尼克松, 总统就职, 冷战]
+  sources: [美国国家档案和记录管理局, Encyclopaedia Britannica, Wikipedia—First inauguration of Richard Nixon]
+- id: w-concorde-first-flight-196903
+  date: '1969-03-02'
+  title: 协和式客机首次试飞
+  category: 文化
+  importance: 4
+  summary: 英法联合研制的协和式超音速客机完成首次试飞，开启民用超音速航空时代。
+  confidence: 确定
+  tags: [航空, 超音速, 英国, 法国]
+  sources: [英国国家档案馆, 法国航空航天博物馆, Wikipedia—Concorde]
+- id: w-de-gaulle-resigns-196904
+  date: '1969-04-28'
+  title: 戴高乐辞去法国总统职务
+  category: 政治
+  importance: 4
+  summary: 法国总统戴高乐因公投失利宣布辞职，结束其总统任期，法国进入新的政治调整阶段。
+  confidence: 确定
+  tags: [法国, 戴高乐, 政治, 欧洲]
+  sources: [法国政府档案, Encyclopaedia Britannica, Wikipedia—Charles de Gaulle]
+- id: w-stonewall-riots-196906
+  date: '1969-06-28'
+  title: 石墙骚乱爆发
+  category: 政治
+  importance: 4
+  summary: 纽约警察突袭石墙酒吧后引发持续抗议，事件成为现代同性恋权利运动的重要转折点。
+  confidence: 确定
+  tags: [人权, 社会运动, 美国, 性少数群体]
+  sources: [美国国家公园管理局, 美国国会图书馆, Wikipedia—Stonewall riots]
+- id: w-woodstock-festival-196908
+  date: '1969-08-15'
+  title: 伍德斯托克音乐节开幕
+  category: 文化
+  importance: 3
+  summary: 伍德斯托克音乐节在美国纽约州举行，吸引数十万观众，成为反战和青年文化的重要象征。
+  confidence: 确定
+  tags: [音乐节, 青年文化, 反战, 美国]
+  sources: [美国国会图书馆, Encyclopaedia Britannica, Wikipedia—Woodstock]
+- id: w-libyan-revolution-196909
+  date: '1969-09-01'
+  title: 利比亚革命推翻君主制
+  category: 政治
+  importance: 4
+  summary: 卡扎菲领导的自由军官组织发动政变，推翻伊德里斯王朝并建立利比亚阿拉伯共和国。
+  confidence: 确定
+  tags: [利比亚, 政变, 卡扎菲, 北非]
+  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Libyan Revolution]
+- id: w-arpanet-first-link-196910
+  date: '1969-10-29'
+  title: ARPANET完成首次主机间联网
+  category: 文化
+  importance: 4
+  summary: 加州大学洛杉矶分校与斯坦福研究院之间完成ARPANET首次主机间数据传输，成为现代互联网发展的重要起点。
+  confidence: 确定
+  tags: [互联网, 计算机, 科技, 通信]
+  sources: [美国国防部高级研究计划局, 加州大学洛杉矶分校, Wikipedia—ARPANET]
+- id: w-salt-talks-begin-196911
+  date: '1969-11-17'
+  title: 美苏战略武器限制谈判开始
+  category: 政治
+  importance: 4
+  summary: 美国与苏联在赫尔辛基开始第一阶段战略武器限制谈判，寻求限制核武器竞赛。
+  confidence: 确定
+  tags: [美苏关系, 核军控, 冷战, 外交]
+  sources: [美国国务院历史办公室, Encyclopaedia Britannica, Wikipedia—Strategic Arms Limitation Talks]
+- id: w-apollo-12-196911
+  date: '1969-11-19'
+  title: 阿波罗12号登月
+  category: 文化
+  importance: 4
+  summary: 阿波罗12号在月球风暴洋成功着陆并开展精确取样，验证了后续载人登月任务的导航和科学能力。
+  confidence: 确定
+  tags: [航天, 登月, NASA, 科技]
+  sources: [NASA, Smithsonian National Air and Space Museum, Wikipedia—Apollo 12]

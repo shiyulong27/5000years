@@ -6219,6 +6219,60 @@
   confidence: 确定
   tags: [农村改革, 包产到户, 安徽, 经济改革]
   sources: [中华人民共和国农业农村部, 新华社, Wikipedia—Household responsibility system]
+- id: cn-zhenbao-conflict-196903
+  date: '1969-03-02'
+  title: 珍宝岛武装冲突
+  category: 战争
+  importance: 5
+  summary: 中国与苏联军队在乌苏里江珍宝岛发生武装冲突，边境紧张升级并引发后续外交与军事对峙。
+  confidence: 确定
+  tags: [中苏关系, 边境冲突, 珍宝岛, 军事]
+  sources: [新华社, 中华人民共和国外交部, Wikipedia—Sino-Soviet border conflict]
+- id: cn-ninth-cpc-congress-196904
+  date: '1969-04-01'
+  title: 中国共产党第九次全国代表大会开幕
+  category: 政治
+  importance: 4
+  summary: 中共九大在北京召开，会议通过政治报告和新党章，重新组建中央领导机构，延续“文化大革命”政治路线。
+  confidence: 确定
+  tags: [中共九大, 文化大革命, 政治, 党代会]
+  sources: [中国共产党新闻网, 新华社, Wikipedia—9th National Congress of the CCP]
+- id: cn-zhou-kosygin-airport-talks-196909
+  date: '1969-09-11'
+  title: 周恩来与柯西金北京机场会谈
+  category: 政治
+  importance: 4
+  summary: 中苏边境冲突后，周恩来与苏联部长会议主席柯西金在北京机场举行会谈，同意缓和边境紧张并恢复边界谈判。
+  confidence: 确定
+  tags: [中苏关系, 外交, 边境冲突, 冷战]
+  sources: [中华人民共和国外交部, 俄罗斯外交部档案, Wikipedia—Sino-Soviet border conflict]
+- id: cn-first-underground-nuclear-test-196909
+  date: '1969-09-23'
+  title: 中国首次地下核试验
+  category: 战争
+  importance: 4
+  summary: 中国在新疆罗布泊进行首次地下核试验，标志核试验方式由大气层转入地下，提升核安全与保密能力。
+  confidence: 确定
+  tags: [核试验, 国防科技, 罗布泊, 军事]
+  sources: [中国工程物理研究院, 新华社, Wikipedia—Nuclear weapons tests of China]
+- id: cn-beijing-subway-opens-196910
+  date: '1969-10-01'
+  title: 北京地铁一期工程建成并开始试运行
+  category: 文化
+  importance: 4
+  summary: 北京地铁一期工程建成并开始试运行，成为中国大陆第一条地铁线路，标志现代城市轨道交通建设起步。
+  confidence: 确定
+  tags: [北京地铁, 城市建设, 交通, 科技]
+  sources: [北京地铁, 新华社, Wikipedia—Beijing Subway]
+- id: cn-liu-shaoqi-dies-196911
+  date: '1969-11-12'
+  title: 刘少奇在河南开封逝世
+  category: 政治
+  importance: 5
+  summary: 刘少奇在“文化大革命”期间于河南开封逝世；其后官方长期未公开完整信息，1980年获得平反。
+  confidence: 确定
+  tags: [刘少奇, 文化大革命, 政治, 历史人物]
+  sources: [中国共产党新闻网, 新华社, Wikipedia—Liu Shaoqi]
 - id: cn-us-diplomatic-relations-197901
   date: '1979-01-01'
   title: 中美正式建立外交关系

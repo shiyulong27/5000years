@@ -143,7 +143,7 @@ describe('1970 年重大事件补全', () => {
   })
 })
 
-describe('1971—1979 年重大事件连续补全', () => {
+describe('1969 及 1971—1980 年重大事件连续补全', () => {
   const data = loadAll(path.join(ROOT, 'data'))
   const timeline = fs.readFileSync(path.join(ROOT, 'src/components/Timeline.astro'), 'utf8')
   const axisCell = fs.readFileSync(path.join(ROOT, 'src/components/AxisCell.astro'), 'utf8')
@@ -152,7 +152,7 @@ describe('1971—1979 年重大事件连续补全', () => {
     'summary', 'confidence', 'tags', 'sources',
   ]
 
-  for (const year of [1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980]) {
+  for (const year of [1969, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980]) {
     it(`${year} 年有完整的中外事件、专页和中轴入口`, () => {
       const chinaEvents = data.events.filter((event) => String(event.date).startsWith(String(year)))
       const worldEvents = data.worldEvents.filter((event) => String(event.date).startsWith(String(year)))
