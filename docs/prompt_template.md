@@ -59,10 +59,9 @@ test/                     # Vitest 单元测试
 6. **年份概览卡片 (YearSummaryCard)**：概览卡片不使用固定的静态模版描述，而是接收 events={row.cnEvents} 属性，动态按重要度提炼该年份最核心的 3~5 条中国要闻生成列表概览
 7. **历史事件图片配图 (Image Support)**：重大事件 YAML 支持可选的 image 字段（对象 { url, caption } 或图片路径），EventCard.astro 会自动渲染带悬浮缩放与图注的历史影像卡片。静态图片存放于 public/images/events/<年份>/ 目录下
 
-## 三步门禁校验（每次修改后必须跑）
+## 两步门禁校验（每次修改后必须跑）
 npm run validate   # 校验 YAML 数据格式
 npm test           # 运行 Vitest 单元测试
-npm run build      # 验证全量静态页面编译（可选，但推荐）
 
 ## 启动开发服务器
 npm run dev -- --host 127.0.0.1 --port 4321
@@ -77,15 +76,17 @@ npm run dev -- --host 127.0.0.1 --port 4321
 请按照 `.agents/skills/annual-events-builder/SKILL.md` 中定义的 6 步标准 SOP，为我补全 <目标年份> 年的中国与世界重大事件。
 
 具体要求：
-1. 先搜索新华社 "<目标年份> 国内/国际十大新闻" 作为权威骨架
-2. 再查维基百科 https://en.wikipedia.org/wiki/<目标年份> 补充重磅事件
-3. 每条事件必须包含：id, date, title, category, importance(1-5), summary, confidence, tags, sources（重大事件可选加 image 配图）
-4. 中国事件追加到 `data/events/xiandai.yaml` 末尾
-5. 世界事件追加到 `data/world/modern.yaml` 末尾
-6. 创建 `src/pages/<目标年份>.astro` 专页（参考已有的 2024.astro）
-7. 确保 Timeline.astro 的 summaryYears 和 AxisCell.astro 的 hasSummary 已包含该年份
-8. 完成后依次运行 `npm run validate`、`npm test` 确保 0 错误
-9. 提交代码：`git add . && git commit -m "feat(events): 补全<目标年份>年重大事件与专页路由"`
+1. 以新华社站内搜索、新华社年度国内/国际十大新闻和中英文维基百科年度页作为主要候选来源
+2. 完整读取可访问的来源正文，必要时分页或分段读取；不得仅凭搜索摘要生成事件
+3. 在新华社站内按政治、经济工业、外交军事、科技、文化体育、灾害六个领域补充检索；该清单只用于防漏，不要求每个领域必须有事件
+4. 1978 年以前找不到新华社资料时如实记录；可选用人民日报历史数据库或官方党史、档案资料补充，但不强制扩充数量
+5. 事件数量不设最低或最高限制，不得为了凑数降低 importance 标准
+6. 每条事件必须包含：id, date, title, category, importance(1-5), summary, confidence, tags, sources（重大事件可选加 image 配图）
+7. 中国事件追加到 `data/events/xiandai.yaml`，世界事件追加到 `data/world/modern.yaml`
+8. 创建 `src/pages/<目标年份>.astro` 专页，并确保 Timeline.astro 的 summaryYears 和 AxisCell.astro 的 hasSummary 已包含该年份
+9. 写入前提交候选清单与来源审计报告，列出实际读取的正文和未找到的来源
+10. 完成后依次运行 `npm run validate`、`npm test` 确保 0 错误
+11. 只暂存本次实际修改的明确文件，禁止使用 `git add .`；提交信息使用 `feat(events): 补全<目标年份>年重大事件与专页路由`
 
 事件 YAML 格式示例：
 - id: cn-example-202201
