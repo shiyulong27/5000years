@@ -21,6 +21,9 @@
   sources:
     - 联合国
     - 新华网
+  image:
+    url: /images/events/1971/un_seat_restored_1971.jpg
+    caption: 1971年第26届联大高票通过第2758号决议，恢复中华人民共和国合法席位
 - id: reform-opening-1978
   date: '1978'
   title: 十一届三中全会，改革开放始
@@ -31,7 +34,13 @@
   importance: 5
   summary: 中共十一届三中全会召开，将工作中心转移到经济建设上来，开启改革开放历史新时期。
   confidence: 确定
-  sources: [中国共产党新闻网, 新华社, Wikipedia—3rd Plenary Session of the 11th CCP Central Committee]
+  sources:
+    - 中国共产党新闻网
+    - 新华社
+    - Wikipedia—3rd Plenary Session of the 11th CCP Central Committee
+  image:
+    url: /images/events/1978/reform_opening_1978.jpg
+    caption: 1978年12月中共十一届三中全会在北京召开，开启改革开放新时期
 - id: wto-entry-2001
   date: '2001'
   title: 加入世界贸易组织
@@ -5698,6 +5707,9 @@
   sources:
     - 新华网
     - 中国航天科技集团
+  image:
+    url: /images/events/1970/dongfanghong1_197004.jpg
+    caption: 中国第一颗人造地球卫星“东方红一号”成功发射升空
 - id: cn-may20-statement-197005
   date: '1970-05-20'
   title: 毛泽东发表"五·二〇"声明
@@ -5778,6 +5790,9 @@
   sources:
     - 新华网
     - 国防科工委
+  image:
+    url: /images/events/1970/nuclear_submarine_197012.jpg
+    caption: 中国第一艘核潜艇"长征一号"下水历史现场与典藏影像
 - id: cn-shijian1-satellite-197103
   date: '1971-03-03'
   title: “实践一号”科学实验卫星发射成功
@@ -5785,8 +5800,13 @@
   importance: 4
   summary: 中国使用长征一号运载火箭将“实践一号”科学实验卫星送入轨道，开展空间环境探测等试验，标志中国科学卫星研制与空间科学实验起步。
   confidence: 确定
-  tags: [航天, 科技, 卫星]
-  sources: [中国国家航天局, 中国科学院]
+  tags:
+    - 航天
+    - 科技
+    - 卫星
+  sources:
+    - 中国国家航天局
+    - 中国科学院
 - id: cn-ping-pong-diplomacy-197104
   date: '1971-04-10'
   title: 美国乒乓球队访华，乒乓外交展开
@@ -5794,8 +5814,13 @@
   importance: 4
   summary: 美国乒乓球队应邀访问中国，成为中华人民共和国成立后首批公开访华的美国团体之一。以体育交流带动政治接触的“乒乓外交”推动中美关系解冻。
   confidence: 确定
-  tags: [外交, 体育, 中美关系]
-  sources: [新华网, 美国国务院历史办公室]
+  tags:
+    - 外交
+    - 体育
+    - 中美关系
+  sources:
+    - 新华网
+    - 美国国务院历史办公室
 - id: cn-kissinger-secret-visit-197107
   date: '1971-07-09'
   title: 基辛格秘密访华
@@ -5803,8 +5828,16 @@
   importance: 5
   summary: 美国总统国家安全事务助理基辛格秘密抵达北京，与周恩来举行会谈，就尼克松访华和中美关系交换意见，为两国高层正式接触铺平道路。
   confidence: 确定
-  tags: [外交, 中美关系, 历史转折]
-  sources: [中国外交部, 美国国务院历史办公室]
+  tags:
+    - 外交
+    - 中美关系
+    - 历史转折
+  sources:
+    - 中国外交部
+    - 美国国务院历史办公室
+  image:
+    url: /images/events/1971/kissinger_secret_visit_197107.jpg
+    caption: 基辛格秘密访华历史现场与典藏影像
 - id: cn-nixon-visit-announced-197107
   date: '1971-07-15'
   title: 中美同时宣布尼克松将访华
@@ -5812,8 +5845,13 @@
   importance: 4
   summary: 中国和美国同时公布尼克松总统应邀访问中国的消息，震动国际社会，标志长期隔绝的中美关系开始进入公开缓和阶段。
   confidence: 确定
-  tags: [外交, 中美关系, 冷战]
-  sources: [新华网, 尼克松总统图书馆]
+  tags:
+    - 外交
+    - 中美关系
+    - 冷战
+  sources:
+    - 新华网
+    - 尼克松总统图书馆
 - id: cn-lin-biao-incident-197109
   date: '1971-09-13'
   title: 林彪事件发生
@@ -5821,8 +5859,16 @@
   importance: 5
   summary: 林彪等人乘机外逃，飞机在蒙古温都尔汗附近坠毁，机上人员全部死亡。事件冲击“文化大革命”时期的政治格局，并引发此后对相关政治路线和组织问题的清查。
   confidence: 确定
-  tags: [政治, 党史, 历史转折]
-  sources: [中共中央党史和文献研究院, 新华网]
+  tags:
+    - 政治
+    - 党史
+    - 历史转折
+  sources:
+    - 中共中央党史和文献研究院
+    - 新华网
+  image:
+    url: /images/events/1971/lin_biao_incident_197109.jpg
+    caption: 林彪事件发生历史现场与典藏影像
 - id: cn-nixon-visit-197202
   date: '1972-02-21'
   title: 尼克松总统访华
@@ -5830,8 +5876,16 @@
   importance: 5
   summary: 美国总统尼克松访问中国并与毛泽东、周恩来会谈，中美关系进入公开缓和与高层接触阶段。
   confidence: 确定
-  tags: [外交, 中美关系, 冷战]
-  sources: [中国外交部, 美国国务院历史办公室]
+  tags:
+    - 外交
+    - 中美关系
+    - 冷战
+  sources:
+    - 中国外交部
+    - 美国国务院历史办公室
+  image:
+    url: /images/events/1972/nixon_visit_197202.jpg
+    caption: 1972年2月美国总统尼克松访华，实现跨越太平洋的握手
 - id: cn-shanghai-communique-197202
   date: '1972-02-28'
   title: 中美发表《上海公报》
@@ -5839,8 +5893,16 @@
   importance: 5
   summary: 中美在上海发表联合公报，确认双方原则立场并开启关系正常化进程，成为冷战时期重要外交文件。
   confidence: 确定
-  tags: [外交, 中美关系, 历史转折]
-  sources: [中国外交部, 美国国务院]
+  tags:
+    - 外交
+    - 中美关系
+    - 历史转折
+  sources:
+    - 中国外交部
+    - 美国国务院
+  image:
+    url: /images/events/1972/shanghai_communique_197202.jpg
+    caption: 1972年中美在上海发表历史性《联合公报》
 - id: cn-china-uk-ambassadorial-197203
   date: '1972-03-13'
   title: 中英关系升格为大使级
@@ -5848,8 +5910,12 @@
   importance: 4
   summary: 中华人民共和国与英国将外交关系提升至大使级，双方正式外交往来进一步制度化。
   confidence: 确定
-  tags: [外交, 欧洲]
-  sources: [中国外交部, 英国外交档案]
+  tags:
+    - 外交
+    - 欧洲
+  sources:
+    - 中国外交部
+    - 英国外交档案
 - id: cn-yinqueshan-bamboo-slips-197204
   date: '1972-04-10'
   title: 银雀山汉墓竹简出土
@@ -5857,8 +5923,13 @@
   importance: 4
   summary: 山东临沂银雀山汉墓出土《孙子兵法》《孙膑兵法》等竹简，为先秦军事文献和中国古代思想史研究提供重要材料。
   confidence: 确定
-  tags: [考古, 文化, 文献]
-  sources: [国家文物局, 山东省文物局]
+  tags:
+    - 考古
+    - 文化
+    - 文献
+  sources:
+    - 国家文物局
+    - 山东省文物局
 - id: cn-japan-diplomatic-normalization-197209
   date: '1972-09-29'
   title: 中日恢复外交关系
@@ -5866,8 +5937,16 @@
   importance: 5
   summary: 日本首相田中角荣访华，双方签署《中日联合声明》，正式恢复中日外交关系。
   confidence: 确定
-  tags: [外交, 中日关系, 历史转折]
-  sources: [中国外交部, 日本外务省]
+  tags:
+    - 外交
+    - 中日关系
+    - 历史转折
+  sources:
+    - 中国外交部
+    - 日本外务省
+  image:
+    url: /images/events/1972/japan_diplomatic_normalization_197209.jpg
+    caption: 1972年9月中日两国政府签署联合声明，实现邦交正常化
 - id: cn-china-west-germany-diplomatic-197210
   date: '1972-10-11'
   title: 中德（西德）建立外交关系
@@ -5875,8 +5954,12 @@
   importance: 4
   summary: 中华人民共和国与德意志联邦共和国正式建立外交关系，双方开始在新的国际格局下开展双边交往。
   confidence: 确定
-  tags: [外交, 欧洲]
-  sources: [中国外交部, 德国联邦外交部]
+  tags:
+    - 外交
+    - 欧洲
+  sources:
+    - 中国外交部
+    - 德国联邦外交部
 - id: cn-china-australia-diplomatic-197212
   date: '1972-12-21'
   title: 中澳建立外交关系
@@ -5884,8 +5967,12 @@
   importance: 4
   summary: 中华人民共和国与澳大利亚正式建立外交关系，中国同西方国家的外交联系进一步扩大。
   confidence: 确定
-  tags: [外交, 亚太]
-  sources: [中国外交部, 澳大利亚外交贸易部]
+  tags:
+    - 外交
+    - 亚太
+  sources:
+    - 中国外交部
+    - 澳大利亚外交贸易部
 - id: cn-luhuo-earthquake-197302
   date: '1973-02-06'
   title: 四川炉霍发生强烈地震
@@ -5893,8 +5980,13 @@
   importance: 4
   summary: 四川炉霍发生约7.6级地震，造成重大人员伤亡和房屋破坏，是新中国成立后西南地区严重地震灾害之一。
   confidence: 确定
-  tags: [地震, 灾害, 四川]
-  sources: [中国地震局, 美国地质调查局]
+  tags:
+    - 地震
+    - 灾害
+    - 四川
+  sources:
+    - 中国地震局
+    - 美国地质调查局
 - id: cn-us-liaison-offices-agreement-197302
   date: '1973-02-22'
   title: 中美同意互设联络处
@@ -5902,8 +5994,12 @@
   importance: 4
   summary: 中美达成互设联络处协议，在正式建交前建立常态化外交沟通机制，双边关系继续向正常化推进。
   confidence: 确定
-  tags: [外交, 中美关系]
-  sources: [中国外交部, 美国国务院历史办公室]
+  tags:
+    - 外交
+    - 中美关系
+  sources:
+    - 中国外交部
+    - 美国国务院历史办公室
 - id: cn-china-spain-diplomatic-197303
   date: '1973-03-09'
   title: 中国与西班牙建立外交关系
@@ -5911,8 +6007,12 @@
   importance: 3
   summary: 中华人民共和国与西班牙正式建立外交关系，中国同西欧国家的外交联系继续扩大。
   confidence: 确定
-  tags: [外交, 欧洲]
-  sources: [中国外交部, 西班牙外交部]
+  tags:
+    - 外交
+    - 欧洲
+  sources:
+    - 中国外交部
+    - 西班牙外交部
 - id: cn-first-environment-conference-197308
   date: '1973-08-05'
   title: 第一次全国环境保护会议召开
@@ -5920,8 +6020,13 @@
   importance: 4
   summary: 中国召开第一次全国环境保护会议，提出全面规划、合理布局、综合利用和化害为利等方针，现代环境治理体系开始起步。
   confidence: 确定
-  tags: [环境, 政策, 民生]
-  sources: [生态环境部, 中国政府网]
+  tags:
+    - 环境
+    - 政策
+    - 民生
+  sources:
+    - 生态环境部
+    - 中国政府网
 - id: cn-10th-cpc-congress-197308
   date: '1973-08-24'
   title: 中共十大召开
@@ -5929,8 +6034,12 @@
   importance: 4
   summary: 中国共产党第十次全国代表大会在北京举行，完成中央领导机构调整，并延续“文化大革命”时期的政治路线。
   confidence: 确定
-  tags: [政治, 党建]
-  sources: [中共中央党史和文献研究院, 新华网]
+  tags:
+    - 政治
+    - 党建
+  sources:
+    - 中共中央党史和文献研究院
+    - 新华网
 - id: cn-military-region-commanders-transfer-197312
   date: '1973-12-22'
   title: 八大军区司令员进行对调
@@ -5938,8 +6047,13 @@
   importance: 4
   summary: 中央军委发布命令，对八大军区司令员进行大范围对调，以加强中央对军队的统一领导并打破长期任职形成的地域关系。
   confidence: 确定
-  tags: [军事, 政治, 改革]
-  sources: [中国军网, 中共中央党史资料]
+  tags:
+    - 军事
+    - 政治
+    - 改革
+  sources:
+    - 中国军网
+    - 中共中央党史资料
 - id: cn-paracel-battle-197401
   date: '1974-01-19'
   title: 西沙海战发生
@@ -5947,8 +6061,13 @@
   importance: 4
   summary: 中国海军与南越海军在西沙群岛发生海战，战后中国控制西沙群岛全部岛礁，南海局势由此发生重要变化。
   confidence: 确定
-  tags: [海战, 南海, 军事]
-  sources: [中国军网, 维基百科]
+  tags:
+    - 海战
+    - 南海
+    - 军事
+  sources:
+    - 中国军网
+    - 维基百科
 - id: cn-three-worlds-theory-197402
   date: '1974-02-22'
   title: 毛泽东提出“三个世界”划分
@@ -5956,8 +6075,12 @@
   importance: 4
   summary: 毛泽东会见赞比亚总统卡翁达时系统阐述“三个世界”观点，成为此后中国对国际格局和反霸权战略的重要表述。
   confidence: 确定
-  tags: [外交, 国际关系]
-  sources: [中共中央文献研究室, 中国外交部]
+  tags:
+    - 外交
+    - 国际关系
+  sources:
+    - 中共中央文献研究室
+    - 中国外交部
 - id: cn-terracotta-army-discovered-197403
   date: '1974-03-29'
   title: 秦始皇兵马俑被发现
@@ -5965,8 +6088,16 @@
   importance: 5
   summary: 陕西临潼农民打井时发现陶俑碎片，随后考古发掘揭示秦始皇陵大型兵马俑坑，成为中国重大考古发现和世界文化遗产。
   confidence: 确定
-  tags: [考古, 文化, 历史转折]
-  sources: [秦始皇帝陵博物院, 国家文物局]
+  tags:
+    - 考古
+    - 文化
+    - 历史转折
+  sources:
+    - 秦始皇帝陵博物院
+    - 国家文物局
+  image:
+    url: /images/events/1974/terracotta_army_discovered_197403.jpg
+    caption: 1974年3月陕西临潼农民发现秦始皇陵兵马俑
 - id: cn-deng-un-speech-197404
   date: '1974-04-10'
   title: 邓小平在联合国特别大会发言
@@ -5974,8 +6105,13 @@
   importance: 4
   summary: 邓小平率中国代表团出席联合国第六届特别大会，系统阐述中国对国际形势、“三个世界”和反霸权问题的立场。
   confidence: 确定
-  tags: [外交, 联合国, 国际关系]
-  sources: [联合国大会档案, 中国外交部]
+  tags:
+    - 外交
+    - 联合国
+    - 国际关系
+  sources:
+    - 联合国大会档案
+    - 中国外交部
 - id: cn-zhaotong-earthquake-197405
   date: '1974-05-11'
   title: 云南昭通发生强烈地震
@@ -5983,8 +6119,13 @@
   importance: 4
   summary: 云南昭通地区发生约7.1级地震，造成严重人员伤亡、房屋倒塌和山体滑坡等次生灾害。
   confidence: 确定
-  tags: [地震, 灾害, 云南]
-  sources: [中国地震局, 美国地质调查局]
+  tags:
+    - 地震
+    - 灾害
+    - 云南
+  sources:
+    - 中国地震局
+    - 美国地质调查局
 - id: cn-china-malaysia-diplomatic-197405
   date: '1974-05-31'
   title: 中国与马来西亚建立外交关系
@@ -5992,8 +6133,12 @@
   importance: 4
   summary: 中华人民共和国与马来西亚正式建立外交关系，马来西亚成为首批与新中国建交的东盟成员国之一。
   confidence: 确定
-  tags: [外交, 东南亚]
-  sources: [中国外交部, 马来西亚外交部]
+  tags:
+    - 外交
+    - 东南亚
+  sources:
+    - 中国外交部
+    - 马来西亚外交部
 - id: cn-nuclear-submarine-commissioned-197408
   date: '1974-08-01'
   title: 中国第一艘核潜艇正式服役
@@ -6001,8 +6146,13 @@
   importance: 4
   summary: 中国自行研制的第一艘核动力潜艇正式编入海军战斗序列，标志中国建立核动力潜艇部队。
   confidence: 确定
-  tags: [军事, 科技, 核潜艇]
-  sources: [中国军网, 中国船舶集团]
+  tags:
+    - 军事
+    - 科技
+    - 核潜艇
+  sources:
+    - 中国军网
+    - 中国船舶集团
 - id: cn-fourth-npc-first-session-197501
   date: '1975-01-13'
   title: 第四届全国人民代表大会第一次会议开幕
@@ -6010,8 +6160,18 @@
   importance: 5
   summary: 四届人大一次会议在北京开幕，周恩来作政府工作报告，会议通过宪法并完成国务院人事安排，邓小平进入国务院领导核心并主持日常工作。
   confidence: 确定
-  tags: [全国人大, 政治, 邓小平, 宪法]
-  sources: [新华社, 中国人大网, Wikipedia—4th National People's Congress]
+  tags:
+    - 全国人大
+    - 政治
+    - 邓小平
+    - 宪法
+  sources:
+    - 新华社
+    - 中国人大网
+    - Wikipedia—4th National People's Congress
+  image:
+    url: /images/events/1975/fourth_npc_first_session_197501.jpg
+    caption: 第四届全国人民代表大会第一次会议开幕历史现场与典藏影像
 - id: cn-deng-first-vice-premier-197501
   date: '1975-01-17'
   title: 邓小平任国务院第一副总理
@@ -6019,8 +6179,15 @@
   importance: 4
   summary: 四届人大一次会议后组成的新一届国务院中，邓小平任第一副总理，开始主持国务院常务工作并推动整顿。
   confidence: 确定
-  tags: [邓小平, 国务院, 政治, 整顿]
-  sources: [中国政府网, 新华社, Wikipedia—Deng Xiaoping]
+  tags:
+    - 邓小平
+    - 国务院
+    - 政治
+    - 整顿
+  sources:
+    - 中国政府网
+    - 新华社
+    - Wikipedia—Deng Xiaoping
 - id: cn-haicheng-earthquake-197502
   date: '1975-02-04'
   title: 辽宁海城大地震
@@ -6028,8 +6195,15 @@
   importance: 4
   summary: 辽宁海城发生7.3级地震，造成房屋和基础设施严重损坏；震前预报与群众疏散使人员伤亡相对降低，成为中国地震预报史的重要案例。
   confidence: 确定
-  tags: [地震, 辽宁, 灾害, 地震预报]
-  sources: [中国地震局, 新华社, Wikipedia—1975 Haicheng earthquake]
+  tags:
+    - 地震
+    - 辽宁
+    - 灾害
+    - 地震预报
+  sources:
+    - 中国地震局
+    - 新华社
+    - Wikipedia—1975 Haicheng earthquake
 - id: cn-china-philippines-diplomatic-197506
   date: '1975-06-09'
   title: 中国与菲律宾建立外交关系
@@ -6037,8 +6211,15 @@
   importance: 3
   summary: 中国与菲律宾签署联合公报，正式建立外交关系，菲律宾承认中华人民共和国政府是中国唯一合法政府。
   confidence: 确定
-  tags: [外交, 菲律宾, 东南亚, 建交]
-  sources: [中华人民共和国外交部, 菲律宾外交部, Wikipedia—China–Philippines relations]
+  tags:
+    - 外交
+    - 菲律宾
+    - 东南亚
+    - 建交
+  sources:
+    - 中华人民共和国外交部
+    - 菲律宾外交部
+    - Wikipedia—China–Philippines relations
 - id: cn-banqiao-dam-disaster-197508
   date: '1975-08-08'
   title: 河南“75·8”特大暴雨与板桥水库溃坝
@@ -6046,8 +6227,18 @@
   importance: 5
   summary: 8月上旬极端暴雨中，板桥水库于8月8日溃坝并引发洪水，造成大范围人员伤亡和经济损失，是20世纪最严重的水库灾害之一。
   confidence: 确定
-  tags: [洪水, 水库, 河南, 灾害]
-  sources: [中华人民共和国水利部, 新华社, Wikipedia—Banqiao Dam disaster]
+  tags:
+    - 洪水
+    - 水库
+    - 河南
+    - 灾害
+  sources:
+    - 中华人民共和国水利部
+    - 新华社
+    - Wikipedia—Banqiao Dam disaster
+  image:
+    url: /images/events/1975/banqiao_dam_disaster_197508.jpg
+    caption: 河南“75·8”特大暴雨与板桥水库溃坝历史现场与典藏影像
 - id: cn-first-recoverable-satellite-197511
   date: '1975-11-26'
   title: 中国首次成功发射返回式遥感卫星
@@ -6055,8 +6246,15 @@
   importance: 4
   summary: 中国从酒泉成功发射首颗返回式遥感卫星，并于11月29日按计划回收，成为继美国、苏联后第三个掌握卫星返回技术的国家。
   confidence: 确定
-  tags: [航天, 返回式卫星, 遥感, 科技]
-  sources: [中国国家航天局, 中国航天科技集团, Wikipedia—Fanhui Shi Weixing]
+  tags:
+    - 航天
+    - 返回式卫星
+    - 遥感
+    - 科技
+  sources:
+    - 中国国家航天局
+    - 中国航天科技集团
+    - Wikipedia—Fanhui Shi Weixing
 - id: cn-zhou-enlai-dies-197601
   date: '1976-01-08'
   title: 周恩来总理逝世
@@ -6064,8 +6262,18 @@
   importance: 5
   summary: 国务院总理周恩来在北京逝世，享年78岁；其治丧与后续政治影响成为当年中国重大政治事件。
   confidence: 确定
-  tags: [周恩来, 国务院, 政治, 领导人]
-  sources: [新华社, 中国政府网, Wikipedia—Zhou Enlai]
+  tags:
+    - 周恩来
+    - 国务院
+    - 政治
+    - 领导人
+  sources:
+    - 新华社
+    - 中国政府网
+    - Wikipedia—Zhou Enlai
+  image:
+    url: /images/events/1976/zhou_enlai_dies_197601.jpg
+    caption: 周恩来总理逝世历史现场与典藏影像
 - id: cn-tiananmen-incident-197604
   date: '1976-04-05'
   title: 四五天安门事件
@@ -6073,8 +6281,18 @@
   importance: 5
   summary: 清明节期间群众在北京天安门广场悼念周恩来并表达政治诉求，4月5日发生清场和冲突，事件随后被重新定性。
   confidence: 确定
-  tags: [四五运动, 天安门, 周恩来, 政治]
-  sources: [中国历史研究院, 新华社历史资料, Wikipedia—Tiananmen Incident]
+  tags:
+    - 四五运动
+    - 天安门
+    - 周恩来
+    - 政治
+  sources:
+    - 中国历史研究院
+    - 新华社历史资料
+    - Wikipedia—Tiananmen Incident
+  image:
+    url: /images/events/1976/tiananmen_incident_197604.jpg
+    caption: 四五天安门事件历史现场与典藏影像
 - id: cn-zhu-de-dies-197607
   date: '1976-07-06'
   title: 朱德委员长逝世
@@ -6082,8 +6300,15 @@
   importance: 4
   summary: 全国人大常委会委员长朱德在北京逝世，享年90岁；他是中国人民解放军和新中国主要缔造者之一。
   confidence: 确定
-  tags: [朱德, 全国人大, 政治, 领导人]
-  sources: [新华社, 中国人大网, Wikipedia—Zhu De]
+  tags:
+    - 朱德
+    - 全国人大
+    - 政治
+    - 领导人
+  sources:
+    - 新华社
+    - 中国人大网
+    - Wikipedia—Zhu De
 - id: cn-tangshan-earthquake-197607
   date: '1976-07-28'
   title: 唐山大地震
@@ -6091,8 +6316,18 @@
   importance: 5
   summary: 河北唐山发生里氏7.6级地震，造成大规模人员伤亡和城市毁坏，是20世纪死亡人数最多的自然灾害之一。
   confidence: 确定
-  tags: [地震, 唐山, 河北, 灾害]
-  sources: [中国地震局, 新华社, Wikipedia—1976 Tangshan earthquake]
+  tags:
+    - 地震
+    - 唐山
+    - 河北
+    - 灾害
+  sources:
+    - 中国地震局
+    - 新华社
+    - Wikipedia—1976 Tangshan earthquake
+  image:
+    url: /images/events/1976/tangshan_earthquake_197607.jpg
+    caption: 1976年7月28日河北唐山发生7.8级特大地震，全国抗震救灾
 - id: cn-mao-zedong-dies-197609
   date: '1976-09-09'
   title: 毛泽东主席逝世
@@ -6100,8 +6335,18 @@
   importance: 5
   summary: 中共中央主席、中央军委主席毛泽东在北京逝世，享年82岁；中国随后进入重要领导和政策调整阶段。
   confidence: 确定
-  tags: [毛泽东, 中共中央, 政治, 领导人]
-  sources: [新华社, 中国政府网, Wikipedia—Mao Zedong]
+  tags:
+    - 毛泽东
+    - 中共中央
+    - 政治
+    - 领导人
+  sources:
+    - 新华社
+    - 中国政府网
+    - Wikipedia—Mao Zedong
+  image:
+    url: /images/events/1976/mao_zedong_dies_197609.jpg
+    caption: 毛泽东主席逝世历史现场与典藏影像
 - id: cn-gang-of-four-arrested-197610
   date: '1976-10-06'
   title: 粉碎“四人帮”
@@ -6109,8 +6354,18 @@
   importance: 5
   summary: 华国锋等采取行动逮捕“四人帮”主要成员，标志“文化大革命”结束及中国政治转折。
   confidence: 确定
-  tags: [四人帮, 文化大革命, 政治, 政权更迭]
-  sources: [新华社, 中国共产党新闻网, Wikipedia—Gang of Four]
+  tags:
+    - 四人帮
+    - 文化大革命
+    - 政治
+    - 政权更迭
+  sources:
+    - 新华社
+    - 中国共产党新闻网
+    - Wikipedia—Gang of Four
+  image:
+    url: /images/events/1976/gang_of_four_arrested_197610.jpg
+    caption: 粉碎“四人帮”历史现场与典藏影像
 - id: cn-china-liberia-diplomatic-197702
   date: '1977-02-17'
   title: 中国与利比里亚建立外交关系
@@ -6118,8 +6373,15 @@
   importance: 3
   summary: 中国与利比里亚签署联合公报，正式建立外交关系，双方确认一个中国原则。
   confidence: 确定
-  tags: [外交, 利比里亚, 非洲, 建交]
-  sources: [中华人民共和国外交部, 利比里亚外交部, Wikipedia—China–Liberia relations]
+  tags:
+    - 外交
+    - 利比里亚
+    - 非洲
+    - 建交
+  sources:
+    - 中华人民共和国外交部
+    - 利比里亚外交部
+    - Wikipedia—China–Liberia relations
 - id: cn-china-jordan-diplomatic-197704
   date: '1977-04-07'
   title: 中国与约旦建立外交关系
@@ -6127,8 +6389,15 @@
   importance: 3
   summary: 中国与约旦正式建立外交关系，双方在联合公报中确认中华人民共和国政府是中国唯一合法政府。
   confidence: 确定
-  tags: [外交, 约旦, 中东, 建交]
-  sources: [中华人民共和国外交部, 约旦外交部, Wikipedia—China–Jordan relations]
+  tags:
+    - 外交
+    - 约旦
+    - 中东
+    - 建交
+  sources:
+    - 中华人民共和国外交部
+    - 约旦外交部
+    - Wikipedia—China–Jordan relations
 - id: cn-china-barbados-diplomatic-197705
   date: '1977-05-30'
   title: 中国与巴巴多斯建立外交关系
@@ -6136,8 +6405,15 @@
   importance: 3
   summary: 中国与巴巴多斯正式建立外交关系，扩大了中国同加勒比国家的官方联系。
   confidence: 确定
-  tags: [外交, 巴巴多斯, 加勒比, 建交]
-  sources: [中华人民共和国外交部, 巴巴多斯外交部, Wikipedia—China–Barbados relations]
+  tags:
+    - 外交
+    - 巴巴多斯
+    - 加勒比
+    - 建交
+  sources:
+    - 中华人民共和国外交部
+    - 巴巴多斯外交部
+    - Wikipedia—China–Barbados relations
 - id: cn-deng-restored-197707
   date: '1977-07-22'
   title: 邓小平恢复党政军领导职务
@@ -6145,8 +6421,18 @@
   importance: 5
   summary: 中共十届三中全会决定恢复邓小平中共中央副主席、国务院副总理、中央军委副主席等职务，结束其长期被排斥状态。
   confidence: 确定
-  tags: [邓小平, 政治转折, 中共中央, 拨乱反正]
-  sources: [新华社, 中国共产党新闻网, Wikipedia—Deng Xiaoping]
+  tags:
+    - 邓小平
+    - 政治转折
+    - 中共中央
+    - 拨乱反正
+  sources:
+    - 新华社
+    - 中国共产党新闻网
+    - Wikipedia—Deng Xiaoping
+  image:
+    url: /images/events/1977/deng_restored_197707.jpg
+    caption: 邓小平恢复党政军领导职务历史现场与典藏影像
 - id: cn-11th-cpc-congress-197708
   date: '1977-08-12'
   title: 中国共产党第十一次全国代表大会开幕
@@ -6154,8 +6440,15 @@
   importance: 4
   summary: 中共十一大在北京召开，华国锋作政治报告，会议宣布“文化大革命”已经结束并部署新时期任务。
   confidence: 确定
-  tags: [中共十一大, 政治, 华国锋, 党代会]
-  sources: [中国共产党新闻网, 新华社, Wikipedia—11th National Congress of the CCP]
+  tags:
+    - 中共十一大
+    - 政治
+    - 华国锋
+    - 党代会
+  sources:
+    - 中国共产党新闻网
+    - 新华社
+    - Wikipedia—11th National Congress of the CCP
 - id: cn-gaokao-restored-197710
   date: '1977-10-12'
   title: 国务院决定恢复高等学校统一招生考试
@@ -6163,8 +6456,18 @@
   importance: 5
   summary: 国务院作出恢复高考的决定，招生对象扩大到工农兵及应届高中毕业生，冬季举行“文化大革命”后首次全国统一高考。
   confidence: 确定
-  tags: [高考, 教育, 恢复招生, 改革]
-  sources: [中华人民共和国教育部, 新华社, Wikipedia—National Higher Education Entrance Examination]
+  tags:
+    - 高考
+    - 教育
+    - 恢复招生
+    - 改革
+  sources:
+    - 中华人民共和国教育部
+    - 新华社
+    - Wikipedia—National Higher Education Entrance Examination
+  image:
+    url: /images/events/1977/gaokao_restored_197710.jpg
+    caption: 1977年冬恢复高考，570万考生的命运与国家发展迎来深刻变革
 - id: cn-fifth-npc-constitution-197803
   date: '1978-03-05'
   title: 第五届全国人民代表大会第一次会议通过1978年宪法
@@ -6172,8 +6475,15 @@
   importance: 4
   summary: 五届人大一次会议通过1978年宪法，作为改革开放前的过渡性根本法，调整国家机构和公民权利等制度安排。
   confidence: 确定
-  tags: [宪法, 全国人大, 政治, 法制]
-  sources: [中国人大网, 新华社, Wikipedia—1978 Constitution of China]
+  tags:
+    - 宪法
+    - 全国人大
+    - 政治
+    - 法制
+  sources:
+    - 中国人大网
+    - 新华社
+    - Wikipedia—1978 Constitution of China
 - id: cn-national-science-conference-197803
   date: '1978-03-18'
   title: 全国科学大会在北京召开
@@ -6181,8 +6491,18 @@
   importance: 5
   summary: 全国科学大会召开，邓小平提出“科学技术是生产力”等重要论断，科技和知识分子政策开始转向。
   confidence: 确定
-  tags: [科学大会, 科技, 教育, 政策转折]
-  sources: [中国科学院, 新华社, Wikipedia—National Science Conference]
+  tags:
+    - 科学大会
+    - 科技
+    - 教育
+    - 政策转折
+  sources:
+    - 中国科学院
+    - 新华社
+    - Wikipedia—National Science Conference
+  image:
+    url: /images/events/1978/national_science_conference_197803.jpg
+    caption: 全国科学大会在北京召开历史现场与典藏影像
 - id: cn-truth-standard-197805
   date: '1978-05-11'
   title: 《实践是检验真理的唯一标准》发表
@@ -6190,8 +6510,18 @@
   importance: 5
   summary: 《光明日报》发表特约评论员文章，引发关于真理标准的大讨论，为思想路线拨乱反正和改革开放提供理论准备。
   confidence: 确定
-  tags: [真理标准, 思想解放, 光明日报, 政治思想]
-  sources: [光明日报, 中国共产党新闻网, Wikipedia—Practice is the sole criterion for testing truth]
+  tags:
+    - 真理标准
+    - 思想解放
+    - 光明日报
+    - 政治思想
+  sources:
+    - 光明日报
+    - 中国共产党新闻网
+    - Wikipedia—Practice is the sole criterion for testing truth
+  image:
+    url: /images/events/1978/truth_standard_197805.jpg
+    caption: 《光明日报》特约评论员文章《实践是检验真理的唯一标准》
 - id: cn-china-japan-peace-treaty-197808
   date: '1978-08-12'
   title: 《中日和平友好条约》签署
@@ -6199,8 +6529,15 @@
   importance: 4
   summary: 中国和日本在北京签署和平友好条约，确认和平共处原则并加强双边关系，条约于10月23日生效。
   confidence: 确定
-  tags: [中日关系, 外交, 条约, 东亚]
-  sources: [中华人民共和国外交部, 日本外务省, Wikipedia—Treaty of Peace and Friendship between Japan and China]
+  tags:
+    - 中日关系
+    - 外交
+    - 条约
+    - 东亚
+  sources:
+    - 中华人民共和国外交部
+    - 日本外务省
+    - Wikipedia—Treaty of Peace and Friendship between Japan and China
 - id: cn-central-work-conference-197811
   date: '1978-11-10'
   title: 中央工作会议召开
@@ -6208,8 +6545,15 @@
   importance: 4
   summary: 中共中央工作会议在北京召开，围绕经济建设和历史遗留问题展开讨论，为随后十一届三中全会实现工作重点转移作准备。
   confidence: 确定
-  tags: [中央工作会议, 改革开放, 经济建设, 政治]
-  sources: [中国共产党新闻网, 新华社, Wikipedia—3rd Plenary Session of the 11th CCP Central Committee]
+  tags:
+    - 中央工作会议
+    - 改革开放
+    - 经济建设
+    - 政治
+  sources:
+    - 中国共产党新闻网
+    - 新华社
+    - Wikipedia—3rd Plenary Session of the 11th CCP Central Committee
 - id: cn-xiaogang-household-contract-197811
   date: '1978-11-24'
   title: 安徽凤阳小岗村实行包产到户
@@ -6217,8 +6561,15 @@
   importance: 4
   summary: 小岗村18户农民签订分田到户契约，实行“包干到户”，成为农村家庭联产承包责任制的重要先行实践。
   confidence: 确定
-  tags: [农村改革, 包产到户, 安徽, 经济改革]
-  sources: [中华人民共和国农业农村部, 新华社, Wikipedia—Household responsibility system]
+  tags:
+    - 农村改革
+    - 包产到户
+    - 安徽
+    - 经济改革
+  sources:
+    - 中华人民共和国农业农村部
+    - 新华社
+    - Wikipedia—Household responsibility system
 - id: cn-zhenbao-conflict-196903
   date: '1969-03-02'
   title: 珍宝岛武装冲突
@@ -6226,8 +6577,15 @@
   importance: 5
   summary: 中国与苏联军队在乌苏里江珍宝岛发生武装冲突，边境紧张升级并引发后续外交与军事对峙。
   confidence: 确定
-  tags: [中苏关系, 边境冲突, 珍宝岛, 军事]
-  sources: [新华社, 中华人民共和国外交部, Wikipedia—Sino-Soviet border conflict]
+  tags:
+    - 中苏关系
+    - 边境冲突
+    - 珍宝岛
+    - 军事
+  sources:
+    - 新华社
+    - 中华人民共和国外交部
+    - Wikipedia—Sino-Soviet border conflict
 - id: cn-ninth-cpc-congress-196904
   date: '1969-04-01'
   title: 中国共产党第九次全国代表大会开幕
@@ -6235,8 +6593,15 @@
   importance: 4
   summary: 中共九大在北京召开，会议通过政治报告和新党章，重新组建中央领导机构，延续“文化大革命”政治路线。
   confidence: 确定
-  tags: [中共九大, 文化大革命, 政治, 党代会]
-  sources: [中国共产党新闻网, 新华社, Wikipedia—9th National Congress of the CCP]
+  tags:
+    - 中共九大
+    - 文化大革命
+    - 政治
+    - 党代会
+  sources:
+    - 中国共产党新闻网
+    - 新华社
+    - Wikipedia—9th National Congress of the CCP
 - id: cn-zhou-kosygin-airport-talks-196909
   date: '1969-09-11'
   title: 周恩来与柯西金北京机场会谈
@@ -6244,8 +6609,15 @@
   importance: 4
   summary: 中苏边境冲突后，周恩来与苏联部长会议主席柯西金在北京机场举行会谈，同意缓和边境紧张并恢复边界谈判。
   confidence: 确定
-  tags: [中苏关系, 外交, 边境冲突, 冷战]
-  sources: [中华人民共和国外交部, 俄罗斯外交部档案, Wikipedia—Sino-Soviet border conflict]
+  tags:
+    - 中苏关系
+    - 外交
+    - 边境冲突
+    - 冷战
+  sources:
+    - 中华人民共和国外交部
+    - 俄罗斯外交部档案
+    - Wikipedia—Sino-Soviet border conflict
 - id: cn-first-underground-nuclear-test-196909
   date: '1969-09-23'
   title: 中国首次地下核试验
@@ -6253,8 +6625,15 @@
   importance: 4
   summary: 中国在新疆罗布泊进行首次地下核试验，标志核试验方式由大气层转入地下，提升核安全与保密能力。
   confidence: 确定
-  tags: [核试验, 国防科技, 罗布泊, 军事]
-  sources: [中国工程物理研究院, 新华社, Wikipedia—Nuclear weapons tests of China]
+  tags:
+    - 核试验
+    - 国防科技
+    - 罗布泊
+    - 军事
+  sources:
+    - 中国工程物理研究院
+    - 新华社
+    - Wikipedia—Nuclear weapons tests of China
 - id: cn-beijing-subway-opens-196910
   date: '1969-10-01'
   title: 北京地铁一期工程建成并开始试运行
@@ -6262,8 +6641,15 @@
   importance: 4
   summary: 北京地铁一期工程建成并开始试运行，成为中国大陆第一条地铁线路，标志现代城市轨道交通建设起步。
   confidence: 确定
-  tags: [北京地铁, 城市建设, 交通, 科技]
-  sources: [北京地铁, 新华社, Wikipedia—Beijing Subway]
+  tags:
+    - 北京地铁
+    - 城市建设
+    - 交通
+    - 科技
+  sources:
+    - 北京地铁
+    - 新华社
+    - Wikipedia—Beijing Subway
 - id: cn-liu-shaoqi-dies-196911
   date: '1969-11-12'
   title: 刘少奇在河南开封逝世
@@ -6271,8 +6657,15 @@
   importance: 5
   summary: 刘少奇在“文化大革命”期间于河南开封逝世；其后官方长期未公开完整信息，1980年获得平反。
   confidence: 确定
-  tags: [刘少奇, 文化大革命, 政治, 历史人物]
-  sources: [中国共产党新闻网, 新华社, Wikipedia—Liu Shaoqi]
+  tags:
+    - 刘少奇
+    - 文化大革命
+    - 政治
+    - 历史人物
+  sources:
+    - 中国共产党新闻网
+    - 新华社
+    - Wikipedia—Liu Shaoqi
 - id: cn-four-modernizations-196501
   date: '1965-01-04'
   title: 第三届全国人大一次会议提出“四个现代化”
@@ -6280,8 +6673,15 @@
   importance: 5
   summary: 三届全国人大一次会议闭幕，周恩来在政府工作报告中提出建设现代农业、工业、国防和科学技术的社会主义强国。
   confidence: 确定
-  tags: [四个现代化, 全国人大, 周恩来, 国家发展]
-  sources: [中国人大网, 新华社, Wikipedia—Four Modernizations]
+  tags:
+    - 四个现代化
+    - 全国人大
+    - 周恩来
+    - 国家发展
+  sources:
+    - 中国人大网
+    - 新华社
+    - Wikipedia—Four Modernizations
 - id: cn-second-atomic-test-196505
   date: '1965-05-14'
   title: 中国第二次原子弹试验成功
@@ -6289,8 +6689,15 @@
   importance: 4
   summary: 中国在新疆罗布泊成功进行第二次核试验，采用空投方式引爆，提高了核武器投送和实战化技术能力。
   confidence: 确定
-  tags: [核试验, 国防科技, 罗布泊, 军事]
-  sources: [中国工程物理研究院, 新华社, Wikipedia—Nuclear weapons tests of China]
+  tags:
+    - 核试验
+    - 国防科技
+    - 罗布泊
+    - 军事
+  sources:
+    - 中国工程物理研究院
+    - 新华社
+    - Wikipedia—Nuclear weapons tests of China
 - id: cn-mauritania-diplomatic-196507
   date: '1965-07-19'
   title: 中国与毛里塔尼亚建立外交关系
@@ -6298,8 +6705,15 @@
   importance: 3
   summary: 中国与毛里塔尼亚正式建立外交关系，进一步拓展中国同非洲新独立国家的联系。
   confidence: 确定
-  tags: [外交, 毛里塔尼亚, 非洲, 建交]
-  sources: [中华人民共和国外交部, 毛里塔尼亚外交部, Wikipedia—China–Mauritania relations]
+  tags:
+    - 外交
+    - 毛里塔尼亚
+    - 非洲
+    - 建交
+  sources:
+    - 中华人民共和国外交部
+    - 毛里塔尼亚外交部
+    - Wikipedia—China–Mauritania relations
 - id: cn-tibet-autonomous-region-196509
   date: '1965-09-09'
   title: 西藏自治区成立
@@ -6307,8 +6721,15 @@
   importance: 5
   summary: 西藏自治区第一届人民代表大会在拉萨召开，西藏自治区正式成立，阿沛·阿旺晋美当选自治区人民委员会主席。
   confidence: 确定
-  tags: [西藏, 民族自治, 行政区划, 政治]
-  sources: [西藏自治区人民政府, 新华社, Wikipedia—Tibet Autonomous Region]
+  tags:
+    - 西藏
+    - 民族自治
+    - 行政区划
+    - 政治
+  sources:
+    - 西藏自治区人民政府
+    - 新华社
+    - Wikipedia—Tibet Autonomous Region
 - id: cn-insulin-synthesis-196509
   date: '1965-09-17'
   title: 中国首次人工合成结晶牛胰岛素
@@ -6316,8 +6737,15 @@
   importance: 4
   summary: 中国科研团队完成具有生物活性的结晶牛胰岛素全合成，这是世界上首次人工合成蛋白质的重要成果。
   confidence: 确定
-  tags: [胰岛素, 生物化学, 科技, 医学]
-  sources: [中国科学院, 上海生物化学与细胞生物学研究所, Wikipedia—Total synthesis of insulin]
+  tags:
+    - 胰岛素
+    - 生物化学
+    - 科技
+    - 医学
+  sources:
+    - 中国科学院
+    - 上海生物化学与细胞生物学研究所
+    - Wikipedia—Total synthesis of insulin
 - id: cn-hai-rui-dismissed-196511
   date: '1965-11-10'
   title: 姚文元发表《评新编历史剧〈海瑞罢官〉》
@@ -6325,8 +6753,15 @@
   importance: 4
   summary: 上海《文汇报》刊登姚文元文章，批判吴晗历史剧《海瑞罢官》，此事通常被视为“文化大革命”政治运动的直接前奏。
   confidence: 确定
-  tags: [文化大革命, 海瑞罢官, 政治运动, 文汇报]
-  sources: [中国共产党新闻网, 新华社历史资料, Wikipedia—Hai Rui Dismissed from Office]
+  tags:
+    - 文化大革命
+    - 海瑞罢官
+    - 政治运动
+    - 文汇报
+  sources:
+    - 中国共产党新闻网
+    - 新华社历史资料
+    - Wikipedia—Hai Rui Dismissed from Office
 - id: cn-february-outline-196602
   date: '1966-02-12'
   title: 中共中央批转“二月提纲”
@@ -6334,8 +6769,15 @@
   importance: 4
   summary: 中共中央批转文化革命五人小组《关于当前学术讨论的汇报提纲》，试图将《海瑞罢官》等争论限定为学术讨论；该文件数月后被撤销。
   confidence: 确定
-  tags: [二月提纲, 文化大革命, 学术批判, 政治]
-  sources: [中国共产党新闻网, 新华社历史资料, Wikipedia—February Outline]
+  tags:
+    - 二月提纲
+    - 文化大革命
+    - 学术批判
+    - 政治
+  sources:
+    - 中国共产党新闻网
+    - 新华社历史资料
+    - Wikipedia—February Outline
 - id: cn-may-16-notification-196605
   date: '1966-05-16'
   title: 中共中央发布“五一六通知”
@@ -6343,8 +6785,15 @@
   importance: 5
   summary: 中共中央政治局扩大会议通过《中国共产党中央委员会通知》，撤销“二月提纲”并设立新的文化革命机构，通常被视为“文化大革命”全面发动的标志。
   confidence: 确定
-  tags: [五一六通知, 文化大革命, 中共中央, 政治运动]
-  sources: [中国共产党新闻网, 新华社, Wikipedia—May 16 Notification]
+  tags:
+    - 五一六通知
+    - 文化大革命
+    - 中共中央
+    - 政治运动
+  sources:
+    - 中国共产党新闻网
+    - 新华社
+    - Wikipedia—May 16 Notification
 - id: cn-nie-yuanzi-poster-196605
   date: '1966-05-25'
   title: 北京大学出现聂元梓等人大字报
@@ -6352,8 +6801,15 @@
   importance: 4
   summary: 聂元梓等人在北京大学张贴批判校党委的大字报，6月1日经中央人民广播电台播发后在全国引发大规模政治动员。
   confidence: 确定
-  tags: [大字报, 北京大学, 文化大革命, 群众运动]
-  sources: [北京大学校史馆, 中国共产党新闻网, Wikipedia—Nie Yuanzi]
+  tags:
+    - 大字报
+    - 北京大学
+    - 文化大革命
+    - 群众运动
+  sources:
+    - 北京大学校史馆
+    - 中国共产党新闻网
+    - Wikipedia—Nie Yuanzi
 - id: cn-bombard-headquarters-196608
   date: '1966-08-05'
   title: 毛泽东发表《炮打司令部——我的一张大字报》
@@ -6361,8 +6817,15 @@
   importance: 4
   summary: 毛泽东在中共八届十一中全会期间写下《炮打司令部》，公开批评党内领导人，推动“文化大革命”权力斗争进一步升级。
   confidence: 确定
-  tags: [炮打司令部, 毛泽东, 八届十一中全会, 文化大革命]
-  sources: [中国共产党新闻网, 中央文献出版社资料, Wikipedia—Bombard the Headquarters]
+  tags:
+    - 炮打司令部
+    - 毛泽东
+    - 八届十一中全会
+    - 文化大革命
+  sources:
+    - 中国共产党新闻网
+    - 中央文献出版社资料
+    - Wikipedia—Bombard the Headquarters
 - id: cn-mao-meets-red-guards-196608
   date: '1966-08-18'
   title: 毛泽东首次接见红卫兵
@@ -6370,8 +6833,15 @@
   importance: 5
   summary: 毛泽东在北京天安门广场首次大规模接见红卫兵和师生，随后全国红卫兵运动与“大串联”迅速扩展。
   confidence: 确定
-  tags: [红卫兵, 天安门, 文化大革命, 群众运动]
-  sources: [新华社历史资料, 中国共产党新闻网, Wikipedia—Red Guards]
+  tags:
+    - 红卫兵
+    - 天安门
+    - 文化大革命
+    - 群众运动
+  sources:
+    - 新华社历史资料
+    - 中国共产党新闻网
+    - Wikipedia—Red Guards
 - id: cn-missile-nuclear-test-196610
   date: '1966-10-27'
   title: 中国首次导弹核武器试验成功
@@ -6379,8 +6849,15 @@
   importance: 4
   summary: 中国将核弹头装载在东风二号导弹上，从酒泉发射并在罗布泊靶区实现核爆炸，完成“两弹结合”试验。
   confidence: 确定
-  tags: [两弹结合, 核武器, 导弹, 国防科技]
-  sources: [中国航天科技集团, 中国工程物理研究院, Wikipedia—Dongfeng-2]
+  tags:
+    - 两弹结合
+    - 核武器
+    - 导弹
+    - 国防科技
+  sources:
+    - 中国航天科技集团
+    - 中国工程物理研究院
+    - Wikipedia—Dongfeng-2
 - id: cn-january-storm-196701
   date: '1967-01-23'
   title: 上海“一月风暴”夺权
@@ -6388,8 +6865,15 @@
   importance: 4
   summary: 上海造反派和部分工人组织发动夺权行动，冲击地方党政机构，随后成立上海市革命委员会，成为全国夺权模式样板。
   confidence: 确定
-  tags: [一月风暴, 上海, 文化大革命, 政治]
-  sources: [中国共产党新闻网, 上海地方志, Wikipedia—January Storm]
+  tags:
+    - 一月风暴
+    - 上海
+    - 文化大革命
+    - 政治
+  sources:
+    - 中国共产党新闻网
+    - 上海地方志
+    - Wikipedia—January Storm
 - id: cn-shanghai-commune-196702
   date: '1967-02-05'
   title: 上海人民公社成立
@@ -6397,8 +6881,15 @@
   importance: 4
   summary: 上海造反派宣布成立上海人民公社，数日后改称上海市革命委员会，反映“文化大革命”夺权和地方政权重组。
   confidence: 确定
-  tags: [上海人民公社, 革命委员会, 文化大革命, 政治]
-  sources: [上海地方志, 新华社历史资料, Wikipedia—Shanghai People's Commune]
+  tags:
+    - 上海人民公社
+    - 革命委员会
+    - 文化大革命
+    - 政治
+  sources:
+    - 上海地方志
+    - 新华社历史资料
+    - Wikipedia—Shanghai People's Commune
 - id: cn-first-hydrogen-bomb-196706
   date: '1967-06-17'
   title: 中国首次氢弹空投试验成功
@@ -6406,8 +6897,15 @@
   importance: 5
   summary: 中国在罗布泊成功进行首次氢弹空投试验，爆炸当量达到兆吨级，标志中国掌握热核武器技术。
   confidence: 确定
-  tags: [氢弹, 核试验, 国防科技, 罗布泊]
-  sources: [中国工程物理研究院, 新华社, Wikipedia—Nuclear weapons tests of China]
+  tags:
+    - 氢弹
+    - 核试验
+    - 国防科技
+    - 罗布泊
+  sources:
+    - 中国工程物理研究院
+    - 新华社
+    - Wikipedia—Nuclear weapons tests of China
 - id: cn-wuhan-incident-196707
   date: '1967-07-20'
   title: 武汉“七二〇事件”
@@ -6415,8 +6913,15 @@
   importance: 4
   summary: 武汉地区两大群众组织冲突升级，中央代表团与地方军政机构发生严重对立，事件后中央调整湖北领导并推动“支左”。
   confidence: 确定
-  tags: [武汉, 七二〇事件, 文化大革命, 军政关系]
-  sources: [湖北省地方志, 中国共产党新闻网, Wikipedia—Wuhan incident]
+  tags:
+    - 武汉
+    - 七二〇事件
+    - 文化大革命
+    - 军政关系
+  sources:
+    - 湖北省地方志
+    - 中国共产党新闻网
+    - Wikipedia—Wuhan incident
 - id: cn-british-office-burned-196708
   date: '1967-08-22'
   title: 红卫兵焚烧英国驻华代办处
@@ -6424,8 +6929,15 @@
   importance: 4
   summary: 北京红卫兵冲击并焚烧英国驻华代办处，造成中英外交关系严重危机，英国随后提出抗议。
   confidence: 确定
-  tags: [中英关系, 外交, 红卫兵, 文化大革命]
-  sources: [英国国家档案馆, 中华人民共和国外交部, Wikipedia—Burning of the British Embassy in Beijing]
+  tags:
+    - 中英关系
+    - 外交
+    - 红卫兵
+    - 文化大革命
+  sources:
+    - 英国国家档案馆
+    - 中华人民共和国外交部
+    - Wikipedia—Burning of the British Embassy in Beijing
 - id: cn-tazara-agreement-196709
   date: '1967-09-05'
   title: 中国与坦桑尼亚、赞比亚签署坦赞铁路协定
@@ -6433,8 +6945,15 @@
   importance: 4
   summary: 中国同坦桑尼亚、赞比亚签署坦赞铁路建设相关协定，随后组织大规模援建，成为中国对非洲基础设施合作的标志项目。
   confidence: 确定
-  tags: [坦赞铁路, 对非援助, 基础设施, 外交]
-  sources: [中华人民共和国外交部, 坦桑尼亚政府, Wikipedia—TAZARA Railway]
+  tags:
+    - 坦赞铁路
+    - 对非援助
+    - 基础设施
+    - 外交
+  sources:
+    - 中华人民共和国外交部
+    - 坦桑尼亚政府
+    - Wikipedia—TAZARA Railway
 - id: cn-south-yemen-diplomatic-196801
   date: '1968-01-31'
   title: 中国与南也门建立外交关系
@@ -6442,8 +6961,15 @@
   importance: 3
   summary: 中国同新独立的南也门人民共和国正式建立外交关系，拓展与阿拉伯半岛国家的联系。
   confidence: 确定
-  tags: [外交, 南也门, 中东, 建交]
-  sources: [中华人民共和国外交部, 也门外交部, Wikipedia—China–Yemen relations]
+  tags:
+    - 外交
+    - 南也门
+    - 中东
+    - 建交
+  sources:
+    - 中华人民共和国外交部
+    - 也门外交部
+    - Wikipedia—China–Yemen relations
 - id: cn-worker-team-tsinghua-196807
   date: '1968-07-27'
   title: 工人、解放军宣传队进驻清华大学
@@ -6451,8 +6977,15 @@
   importance: 4
   summary: 北京工人和解放军毛泽东思想宣传队进驻清华大学，制止校内武斗；此后宣传队陆续进入全国学校，改变“文化大革命”群众运动格局。
   confidence: 确定
-  tags: [清华大学, 工宣队, 文化大革命, 教育]
-  sources: [清华大学校史馆, 中国共产党新闻网, Wikipedia—Worker-Peasant-Soldier students]
+  tags:
+    - 清华大学
+    - 工宣队
+    - 文化大革命
+    - 教育
+  sources:
+    - 清华大学校史馆
+    - 中国共产党新闻网
+    - Wikipedia—Worker-Peasant-Soldier students
 - id: cn-revolutionary-committees-complete-196809
   date: '1968-09-05'
   title: 全国各省级革命委员会全部成立
@@ -6460,8 +6993,15 @@
   importance: 4
   summary: 西藏、新疆革命委员会相继成立后，全国29个省级地区均完成革命委员会组建，地方政权重组基本完成。
   confidence: 确定
-  tags: [革命委员会, 文化大革命, 地方政权, 政治]
-  sources: [中国共产党新闻网, 新华社历史资料, Wikipedia—Revolutionary committee]
+  tags:
+    - 革命委员会
+    - 文化大革命
+    - 地方政权
+    - 政治
+  sources:
+    - 中国共产党新闻网
+    - 新华社历史资料
+    - Wikipedia—Revolutionary committee
 - id: cn-liu-shaoqi-expelled-196810
   date: '1968-10-31'
   title: 中共八届十二中全会撤销刘少奇党内外职务
@@ -6469,8 +7009,15 @@
   importance: 4
   summary: 中共八届十二中全会通过决议，将刘少奇开除出党并撤销其党内外全部职务；该决定于1980年被撤销并为其平反。
   confidence: 确定
-  tags: [刘少奇, 八届十二中全会, 文化大革命, 政治]
-  sources: [中国共产党新闻网, 新华社, Wikipedia—Liu Shaoqi]
+  tags:
+    - 刘少奇
+    - 八届十二中全会
+    - 文化大革命
+    - 政治
+  sources:
+    - 中国共产党新闻网
+    - 新华社
+    - Wikipedia—Liu Shaoqi
 - id: cn-down-to-countryside-196812
   date: '1968-12-22'
   title: “知识青年上山下乡”运动全面展开
@@ -6478,8 +7025,15 @@
   importance: 5
   summary: 《人民日报》刊载毛泽东关于“知识青年到农村去”的指示，大规模城市知识青年随后被动员赴农村和边疆。
   confidence: 确定
-  tags: [上山下乡, 知识青年, 农村, 文化大革命]
-  sources: [人民日报, 中国共产党新闻网, Wikipedia—Down to the Countryside Movement]
+  tags:
+    - 上山下乡
+    - 知识青年
+    - 农村
+    - 文化大革命
+  sources:
+    - 人民日报
+    - 中国共产党新闻网
+    - Wikipedia—Down to the Countryside Movement
 - id: cn-nanjing-yangtze-bridge-196812
   date: '1968-12-29'
   title: 南京长江大桥全面建成通车
@@ -6487,8 +7041,15 @@
   importance: 4
   summary: 南京长江大桥公路桥正式通车，铁路桥此前于9月30日通车；这是中国自行设计和建造的大型双层铁路公路桥。
   confidence: 确定
-  tags: [南京长江大桥, 基础设施, 交通, 工程]
-  sources: [中华人民共和国交通运输部, 新华社, Wikipedia—Nanjing Yangtze River Bridge]
+  tags:
+    - 南京长江大桥
+    - 基础设施
+    - 交通
+    - 工程
+  sources:
+    - 中华人民共和国交通运输部
+    - 新华社
+    - Wikipedia—Nanjing Yangtze River Bridge
 - id: cn-us-diplomatic-relations-197901
   date: '1979-01-01'
   title: 中美正式建立外交关系
@@ -6496,8 +7057,18 @@
   importance: 5
   summary: 中华人民共和国与美利坚合众国正式建立外交关系，美国承认中华人民共和国政府为中国唯一合法政府并与台湾断交。
   confidence: 确定
-  tags: [中美关系, 外交, 建交, 冷战]
-  sources: [中华人民共和国外交部, 美国国务院历史办公室, Wikipedia—China–United States relations]
+  tags:
+    - 中美关系
+    - 外交
+    - 建交
+    - 冷战
+  sources:
+    - 中华人民共和国外交部
+    - 美国国务院历史办公室
+    - Wikipedia—China–United States relations
+  image:
+    url: /images/events/1979/us_diplomatic_relations_197901.jpg
+    caption: 1979年1月1日中美正式建立外交关系
 - id: cn-deng-visits-us-197901
   date: '1979-01-29'
   title: 邓小平访美
@@ -6505,8 +7076,15 @@
   importance: 4
   summary: 邓小平访问美国并与总统卡特会谈，是中美建交后中国领导人首次正式访美，推动双边关系和科技经贸合作。
   confidence: 确定
-  tags: [邓小平, 美国, 外交, 中美关系]
-  sources: [中华人民共和国外交部, 美国国务院历史办公室, Wikipedia—Deng Xiaoping's visit to the United States]
+  tags:
+    - 邓小平
+    - 美国
+    - 外交
+    - 中美关系
+  sources:
+    - 中华人民共和国外交部
+    - 美国国务院历史办公室
+    - Wikipedia—Deng Xiaoping's visit to the United States
 - id: cn-us-science-cooperation-197901
   date: '1979-01-31'
   title: 中美签署科技合作协定
@@ -6514,8 +7092,15 @@
   importance: 4
   summary: 中美两国签署政府间科技合作协定，建立广泛科研交流机制，成为建交后首批重要双边合作文件。
   confidence: 确定
-  tags: [科技合作, 中美关系, 外交, 科技]
-  sources: [中华人民共和国外交部, 美国国务院, Wikipedia—China–United States relations]
+  tags:
+    - 科技合作
+    - 中美关系
+    - 外交
+    - 科技
+  sources:
+    - 中华人民共和国外交部
+    - 美国国务院
+    - Wikipedia—China–United States relations
 - id: cn-sino-vietnamese-war-197902
   date: '1979-02-17'
   title: 中越边境战争爆发
@@ -6523,8 +7108,18 @@
   importance: 5
   summary: 中国军队从广西、云南方向进入越南北部，双方发生大规模边境军事冲突，中国于3月宣布撤军。
   confidence: 确定
-  tags: [中越战争, 边境, 军事, 东南亚]
-  sources: [新华社, 中华人民共和国国防部, Wikipedia—Sino-Vietnamese War]
+  tags:
+    - 中越战争
+    - 边境
+    - 军事
+    - 东南亚
+  sources:
+    - 新华社
+    - 中华人民共和国国防部
+    - Wikipedia—Sino-Vietnamese War
+  image:
+    url: /images/events/1979/sino_vietnamese_war_197902.jpg
+    caption: 中越边境战争爆发历史现场与典藏影像
 - id: cn-guangdong-fujian-special-policy-197907
   date: '1979-07-15'
   title: 中央决定对广东福建实行特殊政策
@@ -6532,8 +7127,15 @@
   importance: 4
   summary: 中共中央、国务院决定在广东、福建两省实行对外经济活动特殊政策并试办出口特区，为随后经济特区设立和对外开放奠定基础。
   confidence: 确定
-  tags: [改革开放, 广东, 福建, 对外开放]
-  sources: [国务院发展研究中心, 新华社, Wikipedia—Special economic zones of China]
+  tags:
+    - 改革开放
+    - 广东
+    - 福建
+    - 对外开放
+  sources:
+    - 国务院发展研究中心
+    - 新华社
+    - Wikipedia—Special economic zones of China
 - id: cn-ye-jianying-national-day-speech-197909
   date: '1979-09-29'
   title: 叶剑英国庆三十周年讲话
@@ -6541,5 +7143,12 @@
   importance: 4
   summary: 叶剑英在庆祝中华人民共和国成立三十周年大会发表讲话，提出实现四个现代化的任务，体现改革开放初期国家发展路线调整。
   confidence: 确定
-  tags: [国庆, 四个现代化, 政治, 改革]
-  sources: [新华社, 中国政府网, Wikipedia—Ye Jianying]
+  tags:
+    - 国庆
+    - 四个现代化
+    - 政治
+    - 改革
+  sources:
+    - 新华社
+    - 中国政府网
+    - Wikipedia—Ye Jianying

@@ -72,7 +72,10 @@
   importance: 5
   summary: 美国阿波罗11号宇航员尼尔·阿姆斯特朗和巴兹·奥尔德林登上月球，完成人类首次载人登月。
   confidence: 确定
-  sources: [NASA, Smithsonian National Air and Space Museum, Wikipedia—Apollo 11]
+  sources:
+    - NASA
+    - Smithsonian National Air and Space Museum
+    - Wikipedia—Apollo 11
 - id: w-soviet-fall-1991
   date: '1991'
   title: 苏联解体
@@ -6070,6 +6073,9 @@
   sources:
     - 世界气象组织
     - 联合国
+  image:
+    url: /images/events/1970/bhola_cyclone_197011.jpg
+    caption: 博拉气旋重创东巴基斯坦——重大国际历史时刻
 - id: w-lunokhod1-197011
   date: '1970-11-17'
   title: 苏联月球车一号登陆月球
@@ -6103,8 +6109,13 @@
   importance: 4
   summary: 乌干达军方领导人伊迪·阿明在总统奥博特出访期间发动政变并掌权，随后建立长期军事统治，乌干达人权与地区安全局势显著恶化。
   confidence: 确定
-  tags: [政治, 军事, 非洲]
-  sources: [大英百科全书, 维基百科]
+  tags:
+    - 政治
+    - 军事
+    - 非洲
+  sources:
+    - 大英百科全书
+    - 维基百科
 - id: w-apollo14-moon-landing-197102
   date: '1971-02-05'
   title: 阿波罗14号完成载人登月
@@ -6112,8 +6123,13 @@
   importance: 4
   summary: 美国阿波罗14号登月舱在月球弗拉·毛罗高地着陆，艾伦·谢泼德等完成科学考察，成为人类第三次成功载人登月任务。
   confidence: 确定
-  tags: [航天, 科技, 登月]
-  sources: [美国国家航空航天局, 维基百科]
+  tags:
+    - 航天
+    - 科技
+    - 登月
+  sources:
+    - 美国国家航空航天局
+    - 维基百科
 - id: w-bangladesh-independence-war-197103
   date: '1971-03-26'
   title: 孟加拉国宣布独立，解放战争爆发
@@ -6121,8 +6137,17 @@
   importance: 5
   summary: 东巴基斯坦民族主义力量宣布孟加拉国独立，巴基斯坦军队展开军事行动，孟加拉国解放战争由此全面爆发，并造成大规模难民与人道危机。
   confidence: 确定
-  tags: [战争, 独立, 南亚, 历史转折]
-  sources: [孟加拉国外交部, 维基百科]
+  tags:
+    - 战争
+    - 独立
+    - 南亚
+    - 历史转折
+  sources:
+    - 孟加拉国外交部
+    - 维基百科
+  image:
+    url: /images/events/1971/bangladesh_independence_war_197103.jpg
+    caption: 孟加拉国宣布独立，解放战争爆发——重大国际历史时刻
 - id: w-nixon-shock-197108
   date: '1971-08-15'
   title: 美国宣布“尼克松冲击”经济措施
@@ -6130,8 +6155,17 @@
   importance: 5
   summary: 美国总统尼克松宣布暂停美元兑换黄金，并实施进口附加税及工资物价管制，动摇布雷顿森林货币体系基础，推动主要货币转向浮动汇率。
   confidence: 确定
-  tags: [金融, 美元, 贸易, 历史转折]
-  sources: [美联储历史资料, 美国财政部]
+  tags:
+    - 金融
+    - 美元
+    - 贸易
+    - 历史转折
+  sources:
+    - 美联储历史资料
+    - 美国财政部
+  image:
+    url: /images/events/1971/nixon_shock_197108.jpg
+    caption: 美国宣布“尼克松冲击”经济措施——重大国际历史时刻
 - id: w-mariner9-mars-orbit-197111
   date: '1971-11-14'
   title: “水手9号”进入火星轨道
@@ -6139,8 +6173,13 @@
   importance: 4
   summary: 美国“水手9号”探测器进入火星轨道，成为首个环绕另一颗行星运行的人造航天器，随后绘制火星表面并发现火山、峡谷等重要地貌。
   confidence: 确定
-  tags: [航天, 科技, 火星]
-  sources: [美国国家航空航天局, 维基百科]
+  tags:
+    - 航天
+    - 科技
+    - 火星
+  sources:
+    - 美国国家航空航天局
+    - 维基百科
 - id: w-intel4004-released-197111
   date: '1971-11-15'
   title: 英特尔发布4004微处理器
@@ -6148,8 +6187,13 @@
   importance: 4
   summary: 英特尔公司正式推出4004芯片，通常被视为首款商业化单片微处理器，为个人计算机和嵌入式电子设备的发展奠定基础。
   confidence: 确定
-  tags: [科技, 芯片, 计算机]
-  sources: [英特尔历史档案, 计算机历史博物馆]
+  tags:
+    - 科技
+    - 芯片
+    - 计算机
+  sources:
+    - 英特尔历史档案
+    - 计算机历史博物馆
 - id: w-uae-founded-197112
   date: '1971-12-02'
   title: 阿拉伯联合酋长国成立
@@ -6157,8 +6201,13 @@
   importance: 4
   summary: 阿布扎比、迪拜等六个酋长国组成阿拉伯联合酋长国，拉斯海马次年加入，海湾地区形成新的联邦制国家。
   confidence: 确定
-  tags: [政治, 建国, 中东]
-  sources: [阿联酋外交部, 维基百科]
+  tags:
+    - 政治
+    - 建国
+    - 中东
+  sources:
+    - 阿联酋外交部
+    - 维基百科
 - id: w-indo-pak-war-197112
   date: '1971-12-03'
   title: 第三次印巴战争爆发
@@ -6166,8 +6215,13 @@
   importance: 4
   summary: 巴基斯坦空袭印度机场后，两国进入全面战争；东线战事与孟加拉国独立战争合流，战争迅速改变南亚政治版图。
   confidence: 确定
-  tags: [战争, 军事, 南亚]
-  sources: [联合国, 维基百科]
+  tags:
+    - 战争
+    - 军事
+    - 南亚
+  sources:
+    - 联合国
+    - 维基百科
 - id: w-dhaka-surrender-197112
   date: '1971-12-16'
   title: 巴基斯坦东部部队在达卡投降
@@ -6175,8 +6229,13 @@
   importance: 4
   summary: 巴基斯坦东部司令部向印度与孟加拉联军签署投降书，第三次印巴战争东线结束，孟加拉国取得事实独立。
   confidence: 确定
-  tags: [战争, 独立, 南亚]
-  sources: [孟加拉国解放战争博物馆, 维基百科]
+  tags:
+    - 战争
+    - 独立
+    - 南亚
+  sources:
+    - 孟加拉国解放战争博物馆
+    - 维基百科
 - id: w-bloody-sunday-197201
   date: '1972-01-30'
   title: 北爱尔兰“血腥星期日”事件
@@ -6184,8 +6243,13 @@
   importance: 4
   summary: 德里一场民权示威中，英军向示威者开枪，造成14人死亡，北爱尔兰冲突进一步升级。
   confidence: 确定
-  tags: [战争, 人权, 北爱尔兰]
-  sources: [英国议会, 维基百科]
+  tags:
+    - 战争
+    - 人权
+    - 北爱尔兰
+  sources:
+    - 英国议会
+    - 维基百科
 - id: w-sapporo-winter-olympics-197202
   date: '1972-02-03'
   title: 札幌冬季奥运会开幕
@@ -6193,8 +6257,12 @@
   importance: 3
   summary: 第十一届冬季奥运会在日本札幌举行，亚洲首次承办冬奥会。
   confidence: 确定
-  tags: [体育, 奥运]
-  sources: [国际奥委会, 维基百科]
+  tags:
+    - 体育
+    - 奥运
+  sources:
+    - 国际奥委会
+    - 维基百科
 - id: w-pioneer10-launch-197203
   date: '1972-03-02'
   title: “先驱者10号”发射
@@ -6202,8 +6270,13 @@
   importance: 4
   summary: NASA发射“先驱者10号”探测器，完成木星近距离探测并成为首个穿越小行星带的航天器。
   confidence: 确定
-  tags: [航天, 科技, 木星]
-  sources: [美国国家航空航天局, 维基百科]
+  tags:
+    - 航天
+    - 科技
+    - 木星
+  sources:
+    - 美国国家航空航天局
+    - 维基百科
 - id: w-salt1-abm-treaty-197205
   date: '1972-05-26'
   title: 美苏签署《反弹道导弹条约》和SALT I
@@ -6211,8 +6284,16 @@
   importance: 5
   summary: 美苏签署《反弹道导弹条约》及第一阶段战略武器限制协定，建立冷战时期重要军控框架。
   confidence: 确定
-  tags: [冷战, 军控, 外交]
-  sources: [美国国务院历史办公室, 联合国条约集]
+  tags:
+    - 冷战
+    - 军控
+    - 外交
+  sources:
+    - 美国国务院历史办公室
+    - 联合国条约集
+  image:
+    url: /images/events/1972/salt1_abm_treaty_197205.jpg
+    caption: 美苏签署《反弹道导弹条约》和SALT I——重大国际历史时刻
 - id: w-un-environment-conference-197206
   date: '1972-06-05'
   title: 联合国人类环境会议开幕
@@ -6220,8 +6301,13 @@
   importance: 4
   summary: 联合国人类环境会议在斯德哥尔摩开幕，会议成果促成联合国环境规划署成立，现代国际环境治理由此起步。
   confidence: 确定
-  tags: [环境, 联合国, 气候]
-  sources: [联合国环境规划署, 维基百科]
+  tags:
+    - 环境
+    - 联合国
+    - 气候
+  sources:
+    - 联合国环境规划署
+    - 维基百科
 - id: w-watergate-begins-197206
   date: '1972-06-17'
   title: 水门事件开始
@@ -6229,8 +6315,13 @@
   importance: 4
   summary: 民主党全国委员会总部遭闯入，后续调查揭露政府滥权并最终导致美国总统危机。
   confidence: 确定
-  tags: [美国, 政治, 法律]
-  sources: [美国国家档案馆, 美国参议院水门委员会]
+  tags:
+    - 美国
+    - 政治
+    - 法律
+  sources:
+    - 美国国家档案馆
+    - 美国参议院水门委员会
 - id: w-munich-olympics-attack-197209
   date: '1972-09-05'
   title: 慕尼黑奥运会袭击事件
@@ -6238,8 +6329,13 @@
   importance: 4
   summary: “黑色九月”组织劫持并杀害以色列运动员，奥运会被迫中断，国际反恐与赛事安保体系随之改变。
   confidence: 确定
-  tags: [恐怖主义, 体育, 中东]
-  sources: [国际奥委会, 德国联邦档案馆]
+  tags:
+    - 恐怖主义
+    - 体育
+    - 中东
+  sources:
+    - 国际奥委会
+    - 德国联邦档案馆
 - id: w-apollo17-launch-197212
   date: '1972-12-07'
   title: 阿波罗17号发射
@@ -6247,8 +6343,13 @@
   importance: 4
   summary: 阿波罗17号升空并完成阿波罗计划最后一次载人登月任务，标志载人月球探测阶段性收束。
   confidence: 确定
-  tags: [航天, 科技, 登月]
-  sources: [美国国家航空航天局, 维基百科]
+  tags:
+    - 航天
+    - 科技
+    - 登月
+  sources:
+    - 美国国家航空航天局
+    - 维基百科
 - id: w-basic-treaty-germany-197212
   date: '1972-12-21'
   title: 东德与西德签署《基础条约》
@@ -6256,8 +6357,13 @@
   importance: 4
   summary: 东德与西德签署《基础条约》，相互承认并改善两德关系，为双方进入联合国和欧洲缓和创造条件。
   confidence: 确定
-  tags: [欧洲, 冷战, 外交]
-  sources: [德国联邦外交部, 联合国条约集]
+  tags:
+    - 欧洲
+    - 冷战
+    - 外交
+  sources:
+    - 德国联邦外交部
+    - 联合国条约集
 - id: w-ec-first-enlargement-197301
   date: '1973-01-01'
   title: 欧洲共同体首次扩大
@@ -6265,8 +6371,13 @@
   importance: 4
   summary: 英国、爱尔兰和丹麦正式加入欧洲共同体，欧洲一体化由六国扩展至九国。
   confidence: 确定
-  tags: [欧洲, 贸易, 一体化]
-  sources: [欧盟委员会, 维基百科]
+  tags:
+    - 欧洲
+    - 贸易
+    - 一体化
+  sources:
+    - 欧盟委员会
+    - 维基百科
 - id: w-paris-peace-accords-197301
   date: '1973-01-27'
   title: 《巴黎和平协定》签署
@@ -6274,8 +6385,16 @@
   importance: 5
   summary: 美国、北越、南越和越共签署和平协定，美军随后撤出越南并结束直接参战，越南战争进入最后阶段。
   confidence: 确定
-  tags: [越南战争, 外交, 历史转折]
-  sources: [美国国务院历史办公室, 联合国]
+  tags:
+    - 越南战争
+    - 外交
+    - 历史转折
+  sources:
+    - 美国国务院历史办公室
+    - 联合国
+  image:
+    url: /images/events/1973/paris_peace_accords_197301.jpg
+    caption: 《巴黎和平协定》签署——重大国际历史时刻
 - id: w-first-handheld-mobile-call-197304
   date: '1973-04-03'
   title: 首次手持移动电话通话完成
@@ -6283,8 +6402,12 @@
   importance: 4
   summary: 摩托罗拉工程师马丁·库珀在纽约完成公认的首次手持蜂窝电话公开通话，开启移动通信设备发展新时代。
   confidence: 确定
-  tags: [科技, 通信]
-  sources: [摩托罗拉历史档案, 史密森学会]
+  tags:
+    - 科技
+    - 通信
+  sources:
+    - 摩托罗拉历史档案
+    - 史密森学会
 - id: w-skylab-launch-197305
   date: '1973-05-14'
   title: 美国“天空实验室”发射
@@ -6292,8 +6415,13 @@
   importance: 4
   summary: 美国发射首个空间站“天空实验室”，此后多批宇航员在轨开展太阳观测、医学和材料实验。
   confidence: 确定
-  tags: [航天, 科技, 空间站]
-  sources: [美国国家航空航天局, 维基百科]
+  tags:
+    - 航天
+    - 科技
+    - 空间站
+  sources:
+    - 美国国家航空航天局
+    - 维基百科
 - id: w-chile-coup-197309
   date: '1973-09-11'
   title: 智利军事政变
@@ -6301,8 +6429,16 @@
   importance: 5
   summary: 智利军方推翻阿连德政府，奥古斯托·皮诺切特随后建立军政府，智利进入长期威权统治时期。
   confidence: 确定
-  tags: [政变, 拉美, 人权]
-  sources: [智利国家图书馆, 美国国务院]
+  tags:
+    - 政变
+    - 拉美
+    - 人权
+  sources:
+    - 智利国家图书馆
+    - 美国国务院
+  image:
+    url: /images/events/1973/chile_coup_197309.jpg
+    caption: 智利军事政变——重大国际历史时刻
 - id: w-yom-kippur-war-197310
   date: '1973-10-06'
   title: 第四次中东战争爆发
@@ -6310,8 +6446,16 @@
   importance: 5
   summary: 埃及和叙利亚向以色列发动进攻，赎罪日战争爆发，引发美苏外交对峙并重塑中东和平进程。
   confidence: 确定
-  tags: [战争, 中东, 军事]
-  sources: [联合国安理会, 维基百科]
+  tags:
+    - 战争
+    - 中东
+    - 军事
+  sources:
+    - 联合国安理会
+    - 维基百科
+  image:
+    url: /images/events/1973/yom_kippur_war_197310.jpg
+    caption: 第四次中东战争爆发——重大国际历史时刻
 - id: w-oil-crisis-197310
   date: '1973-10-17'
   title: 阿拉伯石油禁运引发第一次石油危机
@@ -6319,8 +6463,16 @@
   importance: 5
   summary: 阿拉伯产油国对支持以色列的国家实施石油禁运并削减产量，油价暴涨，全球经济陷入通胀与衰退压力。
   confidence: 确定
-  tags: [能源, 石油, 全球经济]
-  sources: [国际能源署, 美国国务院历史办公室]
+  tags:
+    - 能源
+    - 石油
+    - 全球经济
+  sources:
+    - 国际能源署
+    - 美国国务院历史办公室
+  image:
+    url: /images/events/1973/oil_crisis_197310.jpg
+    caption: 阿拉伯产油国实施石油禁运引发第一次全球石油危机
 - id: w-sydney-opera-house-opens-197310
   date: '1973-10-20'
   title: 悉尼歌剧院正式开幕
@@ -6328,8 +6480,13 @@
   importance: 4
   summary: 悉尼歌剧院正式开幕，其独特建筑设计使其成为20世纪现代建筑和澳大利亚文化的重要象征。
   confidence: 确定
-  tags: [建筑, 艺术, 澳大利亚]
-  sources: [悉尼歌剧院, 联合国教科文组织]
+  tags:
+    - 建筑
+    - 艺术
+    - 澳大利亚
+  sources:
+    - 悉尼歌剧院
+    - 联合国教科文组织
 - id: w-turkish-airlines-981-197403
   date: '1974-03-03'
   title: 土耳其航空981号班机空难
@@ -6337,8 +6494,13 @@
   importance: 4
   summary: 土耳其航空981号班机在法国坠毁，机上346人全部遇难，事故推动大型客机货舱门设计和航空安全监管改进。
   confidence: 确定
-  tags: [航空, 灾害, 安全]
-  sources: [法国航空事故调查局, 国际民航组织]
+  tags:
+    - 航空
+    - 灾害
+    - 安全
+  sources:
+    - 法国航空事故调查局
+    - 国际民航组织
 - id: w-carnation-revolution-197404
   date: '1974-04-25'
   title: 葡萄牙爆发“康乃馨革命”
@@ -6346,8 +6508,16 @@
   importance: 5
   summary: 葡萄牙军人运动推翻长期“新国家”独裁政权，开启民主化与殖民地非殖民化进程。
   confidence: 确定
-  tags: [革命, 民主, 欧洲]
-  sources: [葡萄牙议会, 维基百科]
+  tags:
+    - 革命
+    - 民主
+    - 欧洲
+  sources:
+    - 葡萄牙议会
+    - 维基百科
+  image:
+    url: /images/events/1974/carnation_revolution_197404.jpg
+    caption: 葡萄牙爆发“康乃馨革命”——重大国际历史时刻
 - id: w-india-smiling-buddha-197405
   date: '1974-05-18'
   title: 印度进行首次核试验
@@ -6355,8 +6525,16 @@
   importance: 5
   summary: 印度在拉贾斯坦邦进行代号“微笑佛”的地下核爆炸，成为第六个公开进行核试验的国家，南亚安全格局显著变化。
   confidence: 确定
-  tags: [核武器, 南亚, 科技]
-  sources: [印度原子能部, 全面禁止核试验条约组织]
+  tags:
+    - 核武器
+    - 南亚
+    - 科技
+  sources:
+    - 印度原子能部
+    - 全面禁止核试验条约组织
+  image:
+    url: /images/events/1974/india_smiling_buddha_197405.jpg
+    caption: 印度进行首次核试验——重大国际历史时刻
 - id: w-turkey-cyprus-invasion-197407
   date: '1974-07-20'
   title: 土耳其出兵塞浦路斯
@@ -6364,8 +6542,16 @@
   importance: 5
   summary: 土耳其军队登陆塞浦路斯北部，冲突导致岛屿事实分裂，并形成延续至今的塞浦路斯问题。
   confidence: 确定
-  tags: [战争, 领土, 东地中海]
-  sources: [联合国安理会, 维基百科]
+  tags:
+    - 战争
+    - 领土
+    - 东地中海
+  sources:
+    - 联合国安理会
+    - 维基百科
+  image:
+    url: /images/events/1974/turkey_cyprus_invasion_197407.jpg
+    caption: 土耳其出兵塞浦路斯——重大国际历史时刻
 - id: w-greek-junta-falls-197407
   date: '1974-07-23'
   title: 希腊军政府垮台
@@ -6373,8 +6559,13 @@
   importance: 4
   summary: 塞浦路斯危机后希腊军政府失去支持，文人政府接管国家并启动民主过渡。
   confidence: 确定
-  tags: [政治, 民主, 欧洲]
-  sources: [希腊议会, 维基百科]
+  tags:
+    - 政治
+    - 民主
+    - 欧洲
+  sources:
+    - 希腊议会
+    - 维基百科
 - id: w-nixon-resigns-197408
   date: '1974-08-08'
   title: 尼克松宣布辞去美国总统职务
@@ -6382,8 +6573,16 @@
   importance: 5
   summary: 水门事件调查压力下，尼克松宣布辞职并于次日生效，成为美国历史上首位辞职的总统。
   confidence: 确定
-  tags: [美国, 政治, 法律]
-  sources: [尼克松总统图书馆, 美国国家档案馆]
+  tags:
+    - 美国
+    - 政治
+    - 法律
+  sources:
+    - 尼克松总统图书馆
+    - 美国国家档案馆
+  image:
+    url: /images/events/1974/nixon_resigns_197408.jpg
+    caption: 尼克松受水门事件影响发表电视讲话宣布辞去美国总统职务
 - id: w-ethiopia-emperor-deposed-197409
   date: '1974-09-12'
   title: 埃塞俄比亚军方废黜海尔·塞拉西
@@ -6391,8 +6590,16 @@
   importance: 5
   summary: 军方“德尔格”废黜海尔·塞拉西一世，延续数百年的埃塞俄比亚帝制终结，国家转入军事政权统治。
   confidence: 确定
-  tags: [政变, 非洲, 政体]
-  sources: [埃塞俄比亚国家档案, 维基百科]
+  tags:
+    - 政变
+    - 非洲
+    - 政体
+  sources:
+    - 埃塞俄比亚国家档案
+    - 维基百科
+  image:
+    url: /images/events/1974/ethiopia_emperor_deposed_197409.jpg
+    caption: 埃塞俄比亚军方废黜海尔·塞拉西——重大国际历史时刻
 - id: w-cyclone-tracy-197412
   date: '1974-12-24'
   title: 热带气旋特雷西重创达尔文
@@ -6400,8 +6607,13 @@
   importance: 4
   summary: 热带气旋特雷西袭击澳大利亚达尔文，造成严重伤亡并摧毁大部分城市建筑，随后引发大规模疏散与重建。
   confidence: 确定
-  tags: [气候, 灾害, 澳大利亚]
-  sources: [澳大利亚气象局, 澳大利亚国家档案馆]
+  tags:
+    - 气候
+    - 灾害
+    - 澳大利亚
+  sources:
+    - 澳大利亚气象局
+    - 澳大利亚国家档案馆
 - id: w-lebanese-civil-war-197504
   date: '1975-04-13'
   title: 黎巴嫩内战爆发
@@ -6409,8 +6621,18 @@
   importance: 5
   summary: 贝鲁特公交车事件后，黎巴嫩基督教民兵与巴勒斯坦及穆斯林武装冲突扩大，持续多年的黎巴嫩内战正式开始。
   confidence: 确定
-  tags: [黎巴嫩, 内战, 中东, 武装冲突]
-  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Lebanese Civil War]
+  tags:
+    - 黎巴嫩
+    - 内战
+    - 中东
+    - 武装冲突
+  sources:
+    - 联合国
+    - Encyclopaedia Britannica
+    - Wikipedia—Lebanese Civil War
+  image:
+    url: /images/events/1975/lebanese_civil_war_197504.jpg
+    caption: 黎巴嫩内战爆发——重大国际历史时刻
 - id: w-fall-phnom-penh-197504
   date: '1975-04-17'
   title: 红色高棉占领金边
@@ -6418,8 +6640,18 @@
   importance: 5
   summary: 民主柬埔寨力量攻占金边，朗诺政权垮台；随后实施大规模人口迁移和激进社会改造，柬埔寨进入红色高棉统治时期。
   confidence: 确定
-  tags: [柬埔寨, 红色高棉, 政权更迭, 战争]
-  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Fall of Phnom Penh]
+  tags:
+    - 柬埔寨
+    - 红色高棉
+    - 政权更迭
+    - 战争
+  sources:
+    - 联合国
+    - Encyclopaedia Britannica
+    - Wikipedia—Fall of Phnom Penh
+  image:
+    url: /images/events/1975/fall_phnom_penh_197504.jpg
+    caption: 红色高棉占领金边——重大国际历史时刻
 - id: w-fall-saigon-197504
   date: '1975-04-30'
   title: 西贡陷落，越南战争结束
@@ -6427,8 +6659,18 @@
   importance: 5
   summary: 北越军队进入西贡，南越政府投降，美国完成撤离，越南战争主要军事行动结束并推动越南统一。
   confidence: 确定
-  tags: [越南战争, 西贡, 统一, 美国]
-  sources: [美国国务院历史办公室, Encyclopaedia Britannica, Wikipedia—Fall of Saigon]
+  tags:
+    - 越南战争
+    - 西贡
+    - 统一
+    - 美国
+  sources:
+    - 美国国务院历史办公室
+    - Encyclopaedia Britannica
+    - Wikipedia—Fall of Saigon
+  image:
+    url: /images/events/1975/fall_saigon_197504.jpg
+    caption: 1975年4月30日美军与直升机从西贡撤离，越南战争结束
 - id: w-mayaguez-incident-197505
   date: '1975-05-12'
   title: 马亚圭斯号事件
@@ -6436,8 +6678,15 @@
   importance: 3
   summary: 红色高棉控制的柬埔寨扣押美国商船马亚圭斯号，美国展开营救行动，事件成为越战后美国首次重大军事行动。
   confidence: 确定
-  tags: [美国, 柬埔寨, 海上冲突, 外交]
-  sources: [美国国防部, Encyclopaedia Britannica, Wikipedia—Mayaguez incident]
+  tags:
+    - 美国
+    - 柬埔寨
+    - 海上冲突
+    - 外交
+  sources:
+    - 美国国防部
+    - Encyclopaedia Britannica
+    - Wikipedia—Mayaguez incident
 - id: w-indian-emergency-197506
   date: '1975-06-25'
   title: 印度宣布全国紧急状态
@@ -6445,8 +6694,15 @@
   importance: 4
   summary: 印度总理英迪拉·甘地宣布全国紧急状态，政府扩大行政权力并限制部分公民自由，紧急状态持续至1977年。
   confidence: 确定
-  tags: [印度, 紧急状态, 政治, 公民权利]
-  sources: [印度政府档案, Encyclopaedia Britannica, Wikipedia—The Emergency (India)]
+  tags:
+    - 印度
+    - 紧急状态
+    - 政治
+    - 公民权利
+  sources:
+    - 印度政府档案
+    - Encyclopaedia Britannica
+    - Wikipedia—The Emergency (India)
 - id: w-world-womens-conference-197506
   date: '1975-06-19'
   title: 联合国第一次世界妇女大会在墨西哥城举行
@@ -6454,8 +6710,15 @@
   importance: 3
   summary: 联合国在墨西哥城召开首届世界妇女大会，审议平等、发展与和平议题，并通过《世界行动计划》。
   confidence: 确定
-  tags: [联合国, 妇女权利, 国际会议, 人权]
-  sources: [联合国妇女署, UN Digital Library, Wikipedia—World Conference on Women]
+  tags:
+    - 联合国
+    - 妇女权利
+    - 国际会议
+    - 人权
+  sources:
+    - 联合国妇女署
+    - UN Digital Library
+    - Wikipedia—World Conference on Women
 - id: w-apollo-soyuz-197507
   date: '1975-07-17'
   title: 阿波罗—联盟号联合飞行
@@ -6463,8 +6726,15 @@
   importance: 4
   summary: 美国阿波罗飞船与苏联联盟号飞船在轨交会对接，宇航员联合开展实验，成为冷战时期美苏太空合作的象征。
   confidence: 确定
-  tags: [航天, 美苏合作, 阿波罗, 联盟号]
-  sources: [NASA, Roscosmos, Wikipedia—Apollo–Soyuz Test Project]
+  tags:
+    - 航天
+    - 美苏合作
+    - 阿波罗
+    - 联盟号
+  sources:
+    - NASA
+    - Roscosmos
+    - Wikipedia—Apollo–Soyuz Test Project
 - id: w-helsinki-accords-197508
   date: '1975-08-01'
   title: 赫尔辛基最后文件签署
@@ -6472,8 +6742,18 @@
   importance: 5
   summary: 欧洲安全与合作会议35国签署《赫尔辛基最后文件》，确认边界原则、人权承诺及安全合作框架，成为缓和时期的重要外交成果。
   confidence: 确定
-  tags: [赫尔辛基, 欧洲安全, 冷战, 人权]
-  sources: [OSCE, 美国国务院历史办公室, Wikipedia—Helsinki Accords]
+  tags:
+    - 赫尔辛基
+    - 欧洲安全
+    - 冷战
+    - 人权
+  sources:
+    - OSCE
+    - 美国国务院历史办公室
+    - Wikipedia—Helsinki Accords
+  image:
+    url: /images/events/1975/helsinki_accords_197508.jpg
+    caption: 赫尔辛基最后文件签署——重大国际历史时刻
 - id: w-angola-independence-197511
   date: '1975-11-11'
   title: 安哥拉宣布独立并爆发内战
@@ -6481,8 +6761,15 @@
   importance: 4
   summary: 安哥拉脱离葡萄牙独立，安哥拉人民解放运动宣布成立人民共和国；多个武装派别争夺政权，内战在冷战大国支持下升级。
   confidence: 确定
-  tags: [安哥拉, 非洲, 独立, 内战]
-  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Angolan Civil War]
+  tags:
+    - 安哥拉
+    - 非洲
+    - 独立
+    - 内战
+  sources:
+    - 联合国
+    - Encyclopaedia Britannica
+    - Wikipedia—Angolan Civil War
 - id: w-east-timor-invasion-197512
   date: '1975-12-07'
   title: 印度尼西亚入侵东帝汶
@@ -6490,8 +6777,15 @@
   importance: 4
   summary: 印度尼西亚军队登陆东帝汶，随后宣布吞并该地；联合国不承认吞并，东帝汶长期冲突由此加剧。
   confidence: 确定
-  tags: [东帝汶, 印度尼西亚, 入侵, 联合国]
-  sources: [联合国安理会, Encyclopaedia Britannica, Wikipedia—Indonesian invasion of East Timor]
+  tags:
+    - 东帝汶
+    - 印度尼西亚
+    - 入侵
+    - 联合国
+  sources:
+    - 联合国安理会
+    - Encyclopaedia Britannica
+    - Wikipedia—Indonesian invasion of East Timor
 - id: w-guatemala-earthquake-197602
   date: '1976-02-04'
   title: 危地马拉大地震
@@ -6499,8 +6793,15 @@
   importance: 4
   summary: 危地马拉发生7.5级地震，首都及高地地区受灾严重，造成约2.3万人死亡并引发大规模救援。
   confidence: 确定
-  tags: [地震, 危地马拉, 灾害, 中美洲]
-  sources: [USGS, Encyclopaedia Britannica, Wikipedia—1976 Guatemala earthquake]
+  tags:
+    - 地震
+    - 危地马拉
+    - 灾害
+    - 中美洲
+  sources:
+    - USGS
+    - Encyclopaedia Britannica
+    - Wikipedia—1976 Guatemala earthquake
 - id: w-argentine-coup-197603
   date: '1976-03-24'
   title: 阿根廷军事政变
@@ -6508,8 +6809,18 @@
   importance: 5
   summary: 阿根廷军方推翻总统伊莎贝尔·庇隆，建立军政府，随后展开“肮脏战争”镇压。
   confidence: 确定
-  tags: [阿根廷, 政变, 军政府, 冷战]
-  sources: [阿根廷国家档案馆, Encyclopaedia Britannica, Wikipedia—1976 Argentine coup d'état]
+  tags:
+    - 阿根廷
+    - 政变
+    - 军政府
+    - 冷战
+  sources:
+    - 阿根廷国家档案馆
+    - Encyclopaedia Britannica
+    - Wikipedia—1976 Argentine coup d'état
+  image:
+    url: /images/events/1976/argentine_coup_197603.jpg
+    caption: 阿根廷军事政变——重大国际历史时刻
 - id: w-soweto-uprising-197606
   date: '1976-06-16'
   title: 索韦托起义
@@ -6517,8 +6828,15 @@
   importance: 4
   summary: 南非索韦托学生抗议南非语教学政策，警方开枪导致大量伤亡，事件成为反种族隔离运动的转折点。
   confidence: 确定
-  tags: [南非, 索韦托, 种族隔离, 学生运动]
-  sources: [南非真相与和解委员会, Encyclopaedia Britannica, Wikipedia—Soweto uprising]
+  tags:
+    - 南非
+    - 索韦托
+    - 种族隔离
+    - 学生运动
+  sources:
+    - 南非真相与和解委员会
+    - Encyclopaedia Britannica
+    - Wikipedia—Soweto uprising
 - id: w-vietnam-reunification-197607
   date: '1976-07-02'
   title: 越南社会主义共和国正式统一
@@ -6526,8 +6844,15 @@
   importance: 4
   summary: 越南国会宣布南北越统一，成立越南社会主义共和国，西贡更名为胡志明市。
   confidence: 确定
-  tags: [越南, 国家统一, 政治, 东南亚]
-  sources: [越南政府, Encyclopaedia Britannica, Wikipedia—Reunification Day]
+  tags:
+    - 越南
+    - 国家统一
+    - 政治
+    - 东南亚
+  sources:
+    - 越南政府
+    - Encyclopaedia Britannica
+    - Wikipedia—Reunification Day
 - id: w-operation-entebbe-197607
   date: '1976-07-04'
   title: 恩德培行动
@@ -6535,8 +6860,15 @@
   importance: 4
   summary: 以色列特种部队在乌干达恩德培机场营救被劫持航班人质，行动成功并显著影响反劫机政策。
   confidence: 确定
-  tags: [以色列, 乌干达, 反恐, 人质营救]
-  sources: [以色列国防军, Encyclopaedia Britannica, Wikipedia—Operation Entebbe]
+  tags:
+    - 以色列
+    - 乌干达
+    - 反恐
+    - 人质营救
+  sources:
+    - 以色列国防军
+    - Encyclopaedia Britannica
+    - Wikipedia—Operation Entebbe
 - id: w-montreal-olympics-197607
   date: '1976-07-17'
   title: 蒙特利尔夏季奥运会开幕
@@ -6544,8 +6876,15 @@
   importance: 3
   summary: 第21届夏季奥运会在加拿大蒙特利尔开幕，来自100多个国家和地区的运动员参赛。
   confidence: 确定
-  tags: [奥运会, 体育, 加拿大, 国际赛事]
-  sources: [国际奥委会, Encyclopaedia Britannica, Wikipedia—1976 Summer Olympics]
+  tags:
+    - 奥运会
+    - 体育
+    - 加拿大
+    - 国际赛事
+  sources:
+    - 国际奥委会
+    - Encyclopaedia Britannica
+    - Wikipedia—1976 Summer Olympics
 - id: w-viking-1-lands-mars-197607
   date: '1976-07-20'
   title: “海盗1号”登陆火星
@@ -6553,8 +6892,15 @@
   importance: 4
   summary: 美国“海盗1号”探测器在火星乌托邦平原成功软着陆并传回首批火星表面图像和实验数据。
   confidence: 确定
-  tags: [火星, 航天, NASA, 科技]
-  sources: [NASA, JPL, Wikipedia—Viking 1]
+  tags:
+    - 火星
+    - 航天
+    - NASA
+    - 科技
+  sources:
+    - NASA
+    - JPL
+    - Wikipedia—Viking 1
 - id: w-korean-axe-murder-197608
   date: '1976-08-18'
   title: 朝韩非军事区“砍树事件”
@@ -6562,8 +6908,15 @@
   importance: 4
   summary: 朝鲜士兵在板门店附近杀害两名美军军官，引发美朝军事对峙；美国随后实施“保罗·班扬行动”砍伐争议树木。
   confidence: 确定
-  tags: [朝鲜半岛, 军事对峙, 美国, 朝鲜]
-  sources: [美国国防部, Encyclopaedia Britannica, Wikipedia—Korean axe murder incident]
+  tags:
+    - 朝鲜半岛
+    - 军事对峙
+    - 美国
+    - 朝鲜
+  sources:
+    - 美国国防部
+    - Encyclopaedia Britannica
+    - Wikipedia—Korean axe murder incident
 - id: w-us-election-197611
   date: '1976-11-02'
   title: 美国总统大选
@@ -6571,8 +6924,15 @@
   importance: 3
   summary: 美国总统选举中民主党候选人吉米·卡特击败现任总统杰拉尔德·福特，卡特于次年就任。
   confidence: 确定
-  tags: [美国, 总统选举, 卡特, 政治]
-  sources: [美国国家档案和记录管理局, Encyclopaedia Britannica, Wikipedia—1976 United States presidential election]
+  tags:
+    - 美国
+    - 总统选举
+    - 卡特
+    - 政治
+  sources:
+    - 美国国家档案和记录管理局
+    - Encyclopaedia Britannica
+    - Wikipedia—1976 United States presidential election
 - id: w-carter-inauguration-197701
   date: '1977-01-20'
   title: 吉米·卡特就任美国总统
@@ -6580,8 +6940,15 @@
   importance: 4
   summary: 吉米·卡特在华盛顿宣誓就任美国第39任总统，开启新一届美国政府。
   confidence: 确定
-  tags: [美国, 卡特, 总统就职, 政治]
-  sources: [美国国家档案和记录管理局, 白宫历史协会, Wikipedia—First inauguration of Jimmy Carter]
+  tags:
+    - 美国
+    - 卡特
+    - 总统就职
+    - 政治
+  sources:
+    - 美国国家档案和记录管理局
+    - 白宫历史协会
+    - Wikipedia—First inauguration of Jimmy Carter
 - id: w-indian-election-197703
   date: '1977-03-20'
   title: 印度大选结束，人民党获胜
@@ -6589,8 +6956,15 @@
   importance: 4
   summary: 分阶段投票结束后人民党赢得人民院多数，英迪拉·甘地政府下台，印度首次实现中央政权非国大党更替。
   confidence: 确定
-  tags: [印度, 大选, 政权更替, 紧急状态]
-  sources: [印度选举委员会, Encyclopaedia Britannica, Wikipedia—1977 Indian general election]
+  tags:
+    - 印度
+    - 大选
+    - 政权更替
+    - 紧急状态
+  sources:
+    - 印度选举委员会
+    - Encyclopaedia Britannica
+    - Wikipedia—1977 Indian general election
 - id: w-star-wars-release-197705
   date: '1977-05-25'
   title: 电影《星球大战》上映
@@ -6598,8 +6972,15 @@
   importance: 3
   summary: 乔治·卢卡斯执导的《星球大战》在美国上映，成为全球商业和流行文化现象，并推动特效电影工业发展。
   confidence: 确定
-  tags: [电影, 科幻, 好莱坞, 文化]
-  sources: [美国国会图书馆, Encyclopaedia Britannica, Wikipedia—Star Wars (film)]
+  tags:
+    - 电影
+    - 科幻
+    - 好莱坞
+    - 文化
+  sources:
+    - 美国国会图书馆
+    - Encyclopaedia Britannica
+    - Wikipedia—Star Wars (film)
 - id: w-spanish-election-197706
   date: '1977-06-15'
   title: 西班牙民主化后首次大选
@@ -6607,8 +6988,18 @@
   importance: 5
   summary: 佛朗哥去世后西班牙举行全国大选，这是1936年以来首次竞争性全国选举，推动国家宪政转型。
   confidence: 确定
-  tags: [西班牙, 民主转型, 选举, 欧洲]
-  sources: [西班牙内政部, Encyclopaedia Britannica, Wikipedia—1977 Spanish general election]
+  tags:
+    - 西班牙
+    - 民主转型
+    - 选举
+    - 欧洲
+  sources:
+    - 西班牙内政部
+    - Encyclopaedia Britannica
+    - Wikipedia—1977 Spanish general election
+  image:
+    url: /images/events/1977/spanish_election_197706.jpg
+    caption: 西班牙民主化后首次大选——重大国际历史时刻
 - id: w-djibouti-independence-197706
   date: '1977-06-27'
   title: 吉布提独立
@@ -6616,8 +7007,15 @@
   importance: 3
   summary: 法属阿法尔和伊萨领地经公民投票后独立，成立吉布提共和国，哈桑·古莱德·阿普蒂敦任首任总统。
   confidence: 确定
-  tags: [吉布提, 非洲, 独立, 去殖民化]
-  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Djibouti]
+  tags:
+    - 吉布提
+    - 非洲
+    - 独立
+    - 去殖民化
+  sources:
+    - 联合国
+    - Encyclopaedia Britannica
+    - Wikipedia—Djibouti
 - id: w-new-york-blackout-197707
   date: '1977-07-13'
   title: 纽约大停电
@@ -6625,8 +7023,15 @@
   importance: 3
   summary: 雷击引发电网故障，纽约市大部分地区停电约25小时，期间发生大范围骚乱和财产损失。
   confidence: 确定
-  tags: [纽约, 停电, 城市灾害, 美国]
-  sources: [纽约州政府, 美国能源部, Wikipedia—New York City blackout of 1977]
+  tags:
+    - 纽约
+    - 停电
+    - 城市灾害
+    - 美国
+  sources:
+    - 纽约州政府
+    - 美国能源部
+    - Wikipedia—New York City blackout of 1977
 - id: w-voyager-2-launch-197708
   date: '1977-08-20'
   title: “旅行者2号”发射
@@ -6634,8 +7039,15 @@
   importance: 4
   summary: NASA发射“旅行者2号”深空探测器，执行外行星探测任务，后续成为运行时间最长的深空探测器之一。
   confidence: 确定
-  tags: [航天, NASA, 深空探测, 科技]
-  sources: [NASA, JPL, Wikipedia—Voyager 2]
+  tags:
+    - 航天
+    - NASA
+    - 深空探测
+    - 科技
+  sources:
+    - NASA
+    - JPL
+    - Wikipedia—Voyager 2
 - id: w-panama-canal-treaties-197709
   date: '1977-09-07'
   title: 美国与巴拿马签署《巴拿马运河条约》
@@ -6643,8 +7055,18 @@
   importance: 5
   summary: 美国总统卡特与巴拿马领导人奥马尔·托里霍斯签署新运河条约，规定运河主权和管理权逐步移交巴拿马。
   confidence: 确定
-  tags: [巴拿马运河, 美国, 条约, 外交]
-  sources: [美国国务院历史办公室, 巴拿马政府, Wikipedia—Torrijos–Carter Treaties]
+  tags:
+    - 巴拿马运河
+    - 美国
+    - 条约
+    - 外交
+  sources:
+    - 美国国务院历史办公室
+    - 巴拿马政府
+    - Wikipedia—Torrijos–Carter Treaties
+  image:
+    url: /images/events/1977/panama_canal_treaties_197709.jpg
+    caption: 美国与巴拿马签署《巴拿马运河条约》——重大国际历史时刻
 - id: w-sadat-jerusalem-197711
   date: '1977-11-19'
   title: 埃及总统萨达特访问耶路撒冷
@@ -6652,8 +7074,18 @@
   importance: 5
   summary: 萨达特成为首位访问以色列的阿拉伯国家领导人，并在以色列议会演讲，开启埃以和平谈判进程。
   confidence: 确定
-  tags: [埃及, 以色列, 中东和平, 外交]
-  sources: [埃及外交部, Encyclopaedia Britannica, Wikipedia—Anwar Sadat's visit to Israel]
+  tags:
+    - 埃及
+    - 以色列
+    - 中东和平
+    - 外交
+  sources:
+    - 埃及外交部
+    - Encyclopaedia Britannica
+    - Wikipedia—Anwar Sadat's visit to Israel
+  image:
+    url: /images/events/1977/sadat_jerusalem_197711.jpg
+    caption: 埃及总统萨达特访问耶路撒冷——重大国际历史时刻
 - id: w-malaysia-flight-653-197712
   date: '1977-12-04'
   title: 马来西亚航空653号航班空难
@@ -6661,8 +7093,15 @@
   importance: 3
   summary: 马来西亚航空653号航班在柔佛州坠毁，机上100人全部遇难，事故原因被认定与劫机有关。
   confidence: 确定
-  tags: [航空事故, 马来西亚, 灾害, 劫机]
-  sources: [马来西亚民航局, Aviation Safety Network, Wikipedia—Malaysian Airline System Flight 653]
+  tags:
+    - 航空事故
+    - 马来西亚
+    - 灾害
+    - 劫机
+  sources:
+    - 马来西亚民航局
+    - Aviation Safety Network
+    - Wikipedia—Malaysian Airline System Flight 653
 - id: w-gps-test-satellite-197802
   date: '1978-02-22'
   title: 美国GPS首颗试验卫星发射
@@ -6670,8 +7109,15 @@
   importance: 3
   summary: 美国发射首颗NAVSTAR GPS试验卫星，开启全球定位系统卫星组网和后续民用导航技术发展。
   confidence: 确定
-  tags: [GPS, 航天, 科技, 美国]
-  sources: [美国空军, NASA, Wikipedia—NAVSTAR GPS]
+  tags:
+    - GPS
+    - 航天
+    - 科技
+    - 美国
+  sources:
+    - 美国空军
+    - NASA
+    - Wikipedia—NAVSTAR GPS
 - id: w-saur-revolution-197804
   date: '1978-04-27'
   title: 阿富汗“四月革命”
@@ -6679,8 +7125,15 @@
   importance: 4
   summary: 阿富汗人民民主党发动政变推翻达乌德政权，建立阿富汗民主共和国，随后引发长期内战和苏联干预。
   confidence: 确定
-  tags: [阿富汗, 政变, 冷战, 南亚]
-  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Saur Revolution]
+  tags:
+    - 阿富汗
+    - 政变
+    - 冷战
+    - 南亚
+  sources:
+    - 联合国
+    - Encyclopaedia Britannica
+    - Wikipedia—Saur Revolution
 - id: w-louise-brown-197807
   date: '1978-07-25'
   title: 世界首例试管婴儿出生
@@ -6688,8 +7141,15 @@
   importance: 4
   summary: 路易丝·布朗在英国奥尔德姆出生，成为世界首例经体外受精—胚胎移植技术出生的婴儿，开启辅助生殖医学时代。
   confidence: 确定
-  tags: [医学, IVF, 英国, 科技]
-  sources: [英国国民保健署NHS, Encyclopaedia Britannica, Wikipedia—Louise Brown]
+  tags:
+    - 医学
+    - IVF
+    - 英国
+    - 科技
+  sources:
+    - 英国国民保健署NHS
+    - Encyclopaedia Britannica
+    - Wikipedia—Louise Brown
 - id: w-cinema-rex-fire-197808
   date: '1978-08-19'
   title: 伊朗阿巴丹雷克斯电影院火灾
@@ -6697,8 +7157,15 @@
   importance: 4
   summary: 阿巴丹雷克斯电影院发生纵火火灾，造成数百人死亡，事件加剧社会对巴列维王朝的不满并成为伊朗革命前奏。
   confidence: 确定
-  tags: [伊朗, 火灾, 革命, 灾害]
-  sources: [伊朗国家档案机构, Encyclopaedia Britannica, Wikipedia—Cinema Rex fire]
+  tags:
+    - 伊朗
+    - 火灾
+    - 革命
+    - 灾害
+  sources:
+    - 伊朗国家档案机构
+    - Encyclopaedia Britannica
+    - Wikipedia—Cinema Rex fire
 - id: w-camp-david-accords-197809
   date: '1978-09-17'
   title: 《戴维营协议》签署
@@ -6706,8 +7173,18 @@
   importance: 5
   summary: 埃及总统萨达特、以色列总理贝京在美国斡旋下签署戴维营框架协议，为次年埃以和平条约奠定基础。
   confidence: 确定
-  tags: [中东和平, 埃及, 以色列, 美国外交]
-  sources: [美国国务院历史办公室, Encyclopaedia Britannica, Wikipedia—Camp David Accords]
+  tags:
+    - 中东和平
+    - 埃及
+    - 以色列
+    - 美国外交
+  sources:
+    - 美国国务院历史办公室
+    - Encyclopaedia Britannica
+    - Wikipedia—Camp David Accords
+  image:
+    url: /images/events/1978/camp_david_accords_197809.jpg
+    caption: 《戴维营协议》签署——重大国际历史时刻
 - id: w-pope-john-paul-ii-elected-197810
   date: '1978-10-16'
   title: 若望·保禄二世当选教皇
@@ -6715,8 +7192,15 @@
   importance: 4
   summary: 波兰籍红衣主教卡罗尔·沃伊蒂瓦当选罗马教皇若望·保禄二世，成为近460年来首位非意大利籍教皇。
   confidence: 确定
-  tags: [梵蒂冈, 教皇, 宗教, 欧洲]
-  sources: [梵蒂冈新闻, Encyclopaedia Britannica, Wikipedia—Pope John Paul II]
+  tags:
+    - 梵蒂冈
+    - 教皇
+    - 宗教
+    - 欧洲
+  sources:
+    - 梵蒂冈新闻
+    - Encyclopaedia Britannica
+    - Wikipedia—Pope John Paul II
 - id: w-jonestown-massacre-197811
   date: '1978-11-18'
   title: 琼斯镇大规模死亡事件
@@ -6724,8 +7208,15 @@
   importance: 4
   summary: 圭亚那琼斯镇人民圣殿教成员集体服毒，造成900余人死亡，是现代史上最大规模的非自然灾难之一。
   confidence: 确定
-  tags: [圭亚那, 集体死亡, 灾害, 宗教]
-  sources: [美国国务院历史办公室, Encyclopaedia Britannica, Wikipedia—Jonestown]
+  tags:
+    - 圭亚那
+    - 集体死亡
+    - 灾害
+    - 宗教
+  sources:
+    - 美国国务院历史办公室
+    - Encyclopaedia Britannica
+    - Wikipedia—Jonestown
 - id: w-spanish-constitution-referendum-197812
   date: '1978-12-06'
   title: 西班牙宪法公投通过
@@ -6733,8 +7224,15 @@
   importance: 4
   summary: 西班牙公民在公投中批准民主宪法，确立君主立宪和议会民主制度，完成佛朗哥时代后的制度转型关键步骤。
   confidence: 确定
-  tags: [西班牙, 宪法, 民主转型, 欧洲]
-  sources: [西班牙政府, Encyclopaedia Britannica, Wikipedia—Spanish Constitution of 1978]
+  tags:
+    - 西班牙
+    - 宪法
+    - 民主转型
+    - 欧洲
+  sources:
+    - 西班牙政府
+    - Encyclopaedia Britannica
+    - Wikipedia—Spanish Constitution of 1978
 - id: w-vietnam-invades-cambodia-197812
   date: '1978-12-25'
   title: 越南入侵柬埔寨
@@ -6742,8 +7240,18 @@
   importance: 5
   summary: 越南军队大规模进入柬埔寨，推翻民主柬埔寨政权并扶植柬埔寨人民共和国，柬越战争和地区冲突升级。
   confidence: 确定
-  tags: [越南, 柬埔寨, 战争, 东南亚]
-  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Cambodian–Vietnamese War]
+  tags:
+    - 越南
+    - 柬埔寨
+    - 战争
+    - 东南亚
+  sources:
+    - 联合国
+    - Encyclopaedia Britannica
+    - Wikipedia—Cambodian–Vietnamese War
+  image:
+    url: /images/events/1978/vietnam_invades_cambodia_197812.jpg
+    caption: 越南入侵柬埔寨——重大国际历史时刻
 - id: w-shah-leaves-iran-197901
   date: '1979-01-16'
   title: 伊朗国王离境
@@ -6751,8 +7259,15 @@
   importance: 4
   summary: 巴列维国王穆罕默德·礼萨·巴列维离开伊朗，伊朗革命进入政权更替阶段。
   confidence: 确定
-  tags: [伊朗革命, 政权更迭, 中东, 政治]
-  sources: [伊朗国家档案馆, Encyclopaedia Britannica, Wikipedia—Iranian Revolution]
+  tags:
+    - 伊朗革命
+    - 政权更迭
+    - 中东
+    - 政治
+  sources:
+    - 伊朗国家档案馆
+    - Encyclopaedia Britannica
+    - Wikipedia—Iranian Revolution
 - id: w-iranian-revolution-197902
   date: '1979-02-11'
   title: 伊朗革命胜利
@@ -6760,8 +7275,18 @@
   importance: 5
   summary: 伊朗革命力量控制德黑兰，巴列维王朝政权垮台，伊朗伊斯兰共和国随后建立。
   confidence: 确定
-  tags: [伊朗革命, 伊斯兰共和国, 中东, 政治]
-  sources: [伊朗政府, Encyclopaedia Britannica, Wikipedia—Iranian Revolution]
+  tags:
+    - 伊朗革命
+    - 伊斯兰共和国
+    - 中东
+    - 政治
+  sources:
+    - 伊朗政府
+    - Encyclopaedia Britannica
+    - Wikipedia—Iranian Revolution
+  image:
+    url: /images/events/1979/iranian_revolution_197902.jpg
+    caption: 1979年伊朗伊斯兰革命胜利
 - id: w-voyager-1-jupiter-197903
   date: '1979-03-05'
   title: “旅行者1号”飞掠木星
@@ -6769,8 +7294,15 @@
   importance: 4
   summary: NASA“旅行者1号”最接近木星并完成系统观测，发现木星环、木卫一活火山等重要现象。
   confidence: 确定
-  tags: [航天, 木星, NASA, 科技]
-  sources: [NASA, JPL, Wikipedia—Voyager 1]
+  tags:
+    - 航天
+    - 木星
+    - NASA
+    - 科技
+  sources:
+    - NASA
+    - JPL
+    - Wikipedia—Voyager 1
 - id: w-egypt-israel-peace-treaty-197903
   date: '1979-03-26'
   title: 埃以和平条约签署
@@ -6778,8 +7310,18 @@
   importance: 5
   summary: 埃及总统萨达特与以色列总理贝京在华盛顿签署和平条约，埃及成为首个与以色列正式媾和的阿拉伯国家。
   confidence: 确定
-  tags: [埃及, 以色列, 中东和平, 条约]
-  sources: [美国国务院历史办公室, 联合国, Wikipedia—Egypt–Israel peace treaty]
+  tags:
+    - 埃及
+    - 以色列
+    - 中东和平
+    - 条约
+  sources:
+    - 美国国务院历史办公室
+    - 联合国
+    - Wikipedia—Egypt–Israel peace treaty
+  image:
+    url: /images/events/1979/egypt_israel_peace_treaty_197903.jpg
+    caption: 埃以和平条约签署——重大国际历史时刻
 - id: w-three-mile-island-197903
   date: '1979-03-28'
   title: 三里岛核事故
@@ -6787,8 +7329,15 @@
   importance: 4
   summary: 美国宾夕法尼亚州三里岛核电站2号机组发生堆芯部分熔毁，是美国商业核电史上最严重的事故。
   confidence: 确定
-  tags: [核事故, 美国, 能源, 灾害]
-  sources: [美国核管理委员会, Encyclopaedia Britannica, Wikipedia—Three Mile Island accident]
+  tags:
+    - 核事故
+    - 美国
+    - 能源
+    - 灾害
+  sources:
+    - 美国核管理委员会
+    - Encyclopaedia Britannica
+    - Wikipedia—Three Mile Island accident
 - id: w-thatcher-prime-minister-197905
   date: '1979-05-04'
   title: 玛格丽特·撒切尔出任英国首相
@@ -6796,8 +7345,15 @@
   importance: 4
   summary: 英国大选后保守党获胜，撒切尔成为英国首位女首相，开启持续十余年的保守党执政时期。
   confidence: 确定
-  tags: [英国, 撒切尔, 选举, 政治]
-  sources: [英国政府, Encyclopaedia Britannica, Wikipedia—Margaret Thatcher]
+  tags:
+    - 英国
+    - 撒切尔
+    - 选举
+    - 政治
+  sources:
+    - 英国政府
+    - Encyclopaedia Britannica
+    - Wikipedia—Margaret Thatcher
 - id: w-pope-poland-visit-197906
   date: '1979-06-03'
   title: 教皇若望·保禄二世访问波兰
@@ -6805,8 +7361,15 @@
   importance: 4
   summary: 若望·保禄二世访问祖国波兰，其公开弥撒和演讲激发社会团结意识，被视为东欧政治变迁的重要催化因素。
   confidence: 确定
-  tags: [教皇, 波兰, 东欧, 冷战]
-  sources: [梵蒂冈新闻, Encyclopaedia Britannica, Wikipedia—Pope John Paul II's 1979 visit to Poland]
+  tags:
+    - 教皇
+    - 波兰
+    - 东欧
+    - 冷战
+  sources:
+    - 梵蒂冈新闻
+    - Encyclopaedia Britannica
+    - Wikipedia—Pope John Paul II's 1979 visit to Poland
 - id: w-nicaraguan-revolution-197907
   date: '1979-07-19'
   title: 桑地诺民族解放阵线进入马那瓜
@@ -6814,8 +7377,15 @@
   importance: 4
   summary: 尼加拉瓜桑地诺民族解放阵线推翻索摩查政权并控制首都，尼加拉瓜革命政权建立。
   confidence: 确定
-  tags: [尼加拉瓜, 革命, 中美洲, 政权更迭]
-  sources: [美洲国家组织, Encyclopaedia Britannica, Wikipedia—Nicaraguan Revolution]
+  tags:
+    - 尼加拉瓜
+    - 革命
+    - 中美洲
+    - 政权更迭
+  sources:
+    - 美洲国家组织
+    - Encyclopaedia Britannica
+    - Wikipedia—Nicaraguan Revolution
 - id: w-iran-hostage-crisis-197911
   date: '1979-11-04'
   title: 伊朗人质危机开始
@@ -6823,8 +7393,15 @@
   importance: 4
   summary: 伊朗学生占领美国驻德黑兰大使馆并扣押人质，危机持续444天，严重影响美伊关系。
   confidence: 确定
-  tags: [伊朗, 美国, 人质, 外交危机]
-  sources: [美国国务院历史办公室, Encyclopaedia Britannica, Wikipedia—Iran hostage crisis]
+  tags:
+    - 伊朗
+    - 美国
+    - 人质
+    - 外交危机
+  sources:
+    - 美国国务院历史办公室
+    - Encyclopaedia Britannica
+    - Wikipedia—Iran hostage crisis
 - id: w-soviet-invasion-afghanistan-197912
   date: '1979-12-24'
   title: 苏联入侵阿富汗
@@ -6832,8 +7409,18 @@
   importance: 5
   summary: 苏联军队大规模进入阿富汗并支持喀布尔政权，触发长期战争和国际制裁，冷战紧张局势升级。
   confidence: 确定
-  tags: [苏联, 阿富汗, 入侵, 冷战]
-  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Soviet–Afghan War]
+  tags:
+    - 苏联
+    - 阿富汗
+    - 入侵
+    - 冷战
+  sources:
+    - 联合国
+    - Encyclopaedia Britannica
+    - Wikipedia—Soviet–Afghan War
+  image:
+    url: /images/events/1979/soviet_invasion_afghanistan_197912.jpg
+    caption: 1979年12月苏联出兵入侵阿富汗
 - id: w-nixon-inauguration-196901
   date: '1969-01-20'
   title: 理查德·尼克松就任美国总统
@@ -6841,8 +7428,15 @@
   importance: 4
   summary: 尼克松宣誓就任美国第37任总统，提出寻求国际缓和并调整越南战争政策。
   confidence: 确定
-  tags: [美国, 尼克松, 总统就职, 冷战]
-  sources: [美国国家档案和记录管理局, Encyclopaedia Britannica, Wikipedia—First inauguration of Richard Nixon]
+  tags:
+    - 美国
+    - 尼克松
+    - 总统就职
+    - 冷战
+  sources:
+    - 美国国家档案和记录管理局
+    - Encyclopaedia Britannica
+    - Wikipedia—First inauguration of Richard Nixon
 - id: w-concorde-first-flight-196903
   date: '1969-03-02'
   title: 协和式客机首次试飞
@@ -6850,8 +7444,15 @@
   importance: 4
   summary: 英法联合研制的协和式超音速客机完成首次试飞，开启民用超音速航空时代。
   confidence: 确定
-  tags: [航空, 超音速, 英国, 法国]
-  sources: [英国国家档案馆, 法国航空航天博物馆, Wikipedia—Concorde]
+  tags:
+    - 航空
+    - 超音速
+    - 英国
+    - 法国
+  sources:
+    - 英国国家档案馆
+    - 法国航空航天博物馆
+    - Wikipedia—Concorde
 - id: w-de-gaulle-resigns-196904
   date: '1969-04-28'
   title: 戴高乐辞去法国总统职务
@@ -6859,8 +7460,15 @@
   importance: 4
   summary: 法国总统戴高乐因公投失利宣布辞职，结束其总统任期，法国进入新的政治调整阶段。
   confidence: 确定
-  tags: [法国, 戴高乐, 政治, 欧洲]
-  sources: [法国政府档案, Encyclopaedia Britannica, Wikipedia—Charles de Gaulle]
+  tags:
+    - 法国
+    - 戴高乐
+    - 政治
+    - 欧洲
+  sources:
+    - 法国政府档案
+    - Encyclopaedia Britannica
+    - Wikipedia—Charles de Gaulle
 - id: w-stonewall-riots-196906
   date: '1969-06-28'
   title: 石墙骚乱爆发
@@ -6868,8 +7476,15 @@
   importance: 4
   summary: 纽约警察突袭石墙酒吧后引发持续抗议，事件成为现代同性恋权利运动的重要转折点。
   confidence: 确定
-  tags: [人权, 社会运动, 美国, 性少数群体]
-  sources: [美国国家公园管理局, 美国国会图书馆, Wikipedia—Stonewall riots]
+  tags:
+    - 人权
+    - 社会运动
+    - 美国
+    - 性少数群体
+  sources:
+    - 美国国家公园管理局
+    - 美国国会图书馆
+    - Wikipedia—Stonewall riots
 - id: w-woodstock-festival-196908
   date: '1969-08-15'
   title: 伍德斯托克音乐节开幕
@@ -6877,8 +7492,15 @@
   importance: 3
   summary: 伍德斯托克音乐节在美国纽约州举行，吸引数十万观众，成为反战和青年文化的重要象征。
   confidence: 确定
-  tags: [音乐节, 青年文化, 反战, 美国]
-  sources: [美国国会图书馆, Encyclopaedia Britannica, Wikipedia—Woodstock]
+  tags:
+    - 音乐节
+    - 青年文化
+    - 反战
+    - 美国
+  sources:
+    - 美国国会图书馆
+    - Encyclopaedia Britannica
+    - Wikipedia—Woodstock
 - id: w-libyan-revolution-196909
   date: '1969-09-01'
   title: 利比亚革命推翻君主制
@@ -6886,8 +7508,15 @@
   importance: 4
   summary: 卡扎菲领导的自由军官组织发动政变，推翻伊德里斯王朝并建立利比亚阿拉伯共和国。
   confidence: 确定
-  tags: [利比亚, 政变, 卡扎菲, 北非]
-  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Libyan Revolution]
+  tags:
+    - 利比亚
+    - 政变
+    - 卡扎菲
+    - 北非
+  sources:
+    - 联合国
+    - Encyclopaedia Britannica
+    - Wikipedia—Libyan Revolution
 - id: w-arpanet-first-link-196910
   date: '1969-10-29'
   title: ARPANET完成首次主机间联网
@@ -6895,8 +7524,15 @@
   importance: 4
   summary: 加州大学洛杉矶分校与斯坦福研究院之间完成ARPANET首次主机间数据传输，成为现代互联网发展的重要起点。
   confidence: 确定
-  tags: [互联网, 计算机, 科技, 通信]
-  sources: [美国国防部高级研究计划局, 加州大学洛杉矶分校, Wikipedia—ARPANET]
+  tags:
+    - 互联网
+    - 计算机
+    - 科技
+    - 通信
+  sources:
+    - 美国国防部高级研究计划局
+    - 加州大学洛杉矶分校
+    - Wikipedia—ARPANET
 - id: w-salt-talks-begin-196911
   date: '1969-11-17'
   title: 美苏战略武器限制谈判开始
@@ -6904,8 +7540,15 @@
   importance: 4
   summary: 美国与苏联在赫尔辛基开始第一阶段战略武器限制谈判，寻求限制核武器竞赛。
   confidence: 确定
-  tags: [美苏关系, 核军控, 冷战, 外交]
-  sources: [美国国务院历史办公室, Encyclopaedia Britannica, Wikipedia—Strategic Arms Limitation Talks]
+  tags:
+    - 美苏关系
+    - 核军控
+    - 冷战
+    - 外交
+  sources:
+    - 美国国务院历史办公室
+    - Encyclopaedia Britannica
+    - Wikipedia—Strategic Arms Limitation Talks
 - id: w-apollo-12-196911
   date: '1969-11-19'
   title: 阿波罗12号登月
@@ -6913,8 +7556,15 @@
   importance: 4
   summary: 阿波罗12号在月球风暴洋成功着陆并开展精确取样，验证了后续载人登月任务的导航和科学能力。
   confidence: 确定
-  tags: [航天, 登月, NASA, 科技]
-  sources: [NASA, Smithsonian National Air and Space Museum, Wikipedia—Apollo 12]
+  tags:
+    - 航天
+    - 登月
+    - NASA
+    - 科技
+  sources:
+    - NASA
+    - Smithsonian National Air and Space Museum
+    - Wikipedia—Apollo 12
 - id: w-malcolm-x-assassination-196502
   date: '1965-02-21'
   title: 马尔科姆·X遇刺
@@ -6922,8 +7572,15 @@
   importance: 4
   summary: 美国非裔民权活动家马尔科姆·X在纽约演讲时遭枪击身亡，其思想和遇刺长期影响美国民权运动。
   confidence: 确定
-  tags: [美国, 民权运动, 马尔科姆X, 刺杀]
-  sources: [美国联邦调查局档案, Encyclopaedia Britannica, Wikipedia—Assassination of Malcolm X]
+  tags:
+    - 美国
+    - 民权运动
+    - 马尔科姆X
+    - 刺杀
+  sources:
+    - 美国联邦调查局档案
+    - Encyclopaedia Britannica
+    - Wikipedia—Assassination of Malcolm X
 - id: w-us-ground-troops-vietnam-196503
   date: '1965-03-08'
   title: 美国首批地面作战部队登陆南越
@@ -6931,8 +7588,15 @@
   importance: 5
   summary: 美国海军陆战队在岘港登陆，标志美国在越南战争中从军事顾问和空袭进一步升级为大规模地面作战。
   confidence: 确定
-  tags: [越南战争, 美国, 岘港, 冷战]
-  sources: [美国国防部, 美国国务院历史办公室, Wikipedia—United States Marine Corps in Vietnam]
+  tags:
+    - 越南战争
+    - 美国
+    - 岘港
+    - 冷战
+  sources:
+    - 美国国防部
+    - 美国国务院历史办公室
+    - Wikipedia—United States Marine Corps in Vietnam
 - id: w-first-spacewalk-196503
   date: '1965-03-18'
   title: 人类首次太空行走
@@ -6940,8 +7604,15 @@
   importance: 4
   summary: 苏联宇航员阿列克谢·列昂诺夫执行上升2号任务时离开飞船，在舱外活动约12分钟，完成人类首次太空行走。
   confidence: 确定
-  tags: [航天, 太空行走, 苏联, 科技]
-  sources: [Roscosmos, 欧洲航天局, Wikipedia—Voskhod 2]
+  tags:
+    - 航天
+    - 太空行走
+    - 苏联
+    - 科技
+  sources:
+    - Roscosmos
+    - 欧洲航天局
+    - Wikipedia—Voskhod 2
 - id: w-dominican-civil-war-196504
   date: '1965-04-24'
   title: 多米尼加内战爆发
@@ -6949,8 +7620,15 @@
   importance: 4
   summary: 多米尼加共和国军人和民众发动起义，要求恢复博什政府，冲突迅速演变为内战并引来美国军事干预。
   confidence: 确定
-  tags: [多米尼加, 内战, 拉丁美洲, 冷战]
-  sources: [美洲国家组织, Encyclopaedia Britannica, Wikipedia—Dominican Civil War]
+  tags:
+    - 多米尼加
+    - 内战
+    - 拉丁美洲
+    - 冷战
+  sources:
+    - 美洲国家组织
+    - Encyclopaedia Britannica
+    - Wikipedia—Dominican Civil War
 - id: w-voting-rights-act-196508
   date: '1965-08-06'
   title: 美国《投票权法》签署
@@ -6958,8 +7636,15 @@
   importance: 5
   summary: 美国总统约翰逊签署《投票权法》，禁止以识字测试等方式限制少数族裔投票，成为民权立法里程碑。
   confidence: 确定
-  tags: [美国, 民权, 投票权, 法律]
-  sources: [美国国家档案和记录管理局, 美国司法部, Wikipedia—Voting Rights Act of 1965]
+  tags:
+    - 美国
+    - 民权
+    - 投票权
+    - 法律
+  sources:
+    - 美国国家档案和记录管理局
+    - 美国司法部
+    - Wikipedia—Voting Rights Act of 1965
 - id: w-singapore-independence-196508
   date: '1965-08-09'
   title: 新加坡脱离马来西亚独立
@@ -6967,8 +7652,15 @@
   importance: 5
   summary: 新加坡退出马来西亚联邦并成为独立国家，李光耀任总理，随后展开出口导向型国家建设。
   confidence: 确定
-  tags: [新加坡, 独立, 东南亚, 建国]
-  sources: [新加坡国家档案馆, Encyclopaedia Britannica, Wikipedia—Independence of Singapore Agreement 1965]
+  tags:
+    - 新加坡
+    - 独立
+    - 东南亚
+    - 建国
+  sources:
+    - 新加坡国家档案馆
+    - Encyclopaedia Britannica
+    - Wikipedia—Independence of Singapore Agreement 1965
 - id: w-indo-pakistani-war-196509
   date: '1965-09-06'
   title: 第二次印巴战争全面升级
@@ -6976,8 +7668,15 @@
   importance: 4
   summary: 印度军队越过国际边界向拉合尔方向进攻，克什米尔冲突演变为印度和巴基斯坦之间的全面战争。
   confidence: 确定
-  tags: [印度, 巴基斯坦, 克什米尔, 战争]
-  sources: [联合国安理会, Encyclopaedia Britannica, Wikipedia—Indo-Pakistani War of 1965]
+  tags:
+    - 印度
+    - 巴基斯坦
+    - 克什米尔
+    - 战争
+  sources:
+    - 联合国安理会
+    - Encyclopaedia Britannica
+    - Wikipedia—Indo-Pakistani War of 1965
 - id: w-indonesia-september-movement-196509
   date: '1965-09-30'
   title: 印度尼西亚“九三〇事件”
@@ -6985,8 +7684,15 @@
   importance: 4
   summary: 印度尼西亚发生未遂政变，多名高级将领被杀；军方随后在苏哈托领导下镇压共产党及其支持者，造成大规模死亡。
   confidence: 确定
-  tags: [印度尼西亚, 政变, 苏哈托, 冷战]
-  sources: [印度尼西亚国家档案馆, Encyclopaedia Britannica, Wikipedia—30 September Movement]
+  tags:
+    - 印度尼西亚
+    - 政变
+    - 苏哈托
+    - 冷战
+  sources:
+    - 印度尼西亚国家档案馆
+    - Encyclopaedia Britannica
+    - Wikipedia—30 September Movement
 - id: w-rhodesia-udi-196511
   date: '1965-11-11'
   title: 南罗得西亚单方面宣布独立
@@ -6994,8 +7700,15 @@
   importance: 4
   summary: 伊恩·史密斯白人少数政府单方面宣布脱离英国独立，英国和联合国不予承认并实施制裁。
   confidence: 确定
-  tags: [罗得西亚, 去殖民化, 非洲, 制裁]
-  sources: [英国国家档案馆, 联合国, Wikipedia—Rhodesia's Unilateral Declaration of Independence]
+  tags:
+    - 罗得西亚
+    - 去殖民化
+    - 非洲
+    - 制裁
+  sources:
+    - 英国国家档案馆
+    - 联合国
+    - Wikipedia—Rhodesia's Unilateral Declaration of Independence
 - id: w-vatican-ii-closes-196512
   date: '1965-12-08'
   title: 第二次梵蒂冈大公会议闭幕
@@ -7003,8 +7716,15 @@
   importance: 4
   summary: 第二次梵蒂冈大公会议闭幕，会议通过礼仪、教会与现代世界关系等改革文件，深刻影响天主教会。
   confidence: 确定
-  tags: [梵蒂冈, 天主教, 宗教改革, 文化]
-  sources: [梵蒂冈档案, Encyclopaedia Britannica, Wikipedia—Second Vatican Council]
+  tags:
+    - 梵蒂冈
+    - 天主教
+    - 宗教改革
+    - 文化
+  sources:
+    - 梵蒂冈档案
+    - Encyclopaedia Britannica
+    - Wikipedia—Second Vatican Council
 - id: w-palomares-nuclear-accident-196601
   date: '1966-01-17'
   title: 帕洛马雷斯核事故
@@ -7012,8 +7732,15 @@
   importance: 4
   summary: 一架美国B-52轰炸机在西班牙帕洛马雷斯上空与加油机相撞，携带的氢弹坠落并造成放射性污染。
   confidence: 确定
-  tags: [核事故, 西班牙, 美国, 放射性污染]
-  sources: [美国能源部, 西班牙核安全委员会, Wikipedia—1966 Palomares B-52 crash]
+  tags:
+    - 核事故
+    - 西班牙
+    - 美国
+    - 放射性污染
+  sources:
+    - 美国能源部
+    - 西班牙核安全委员会
+    - Wikipedia—1966 Palomares B-52 crash
 - id: w-france-leaves-nato-command-196603
   date: '1966-03-07'
   title: 法国宣布退出北约一体化军事指挥体系
@@ -7021,8 +7748,15 @@
   importance: 4
   summary: 戴高乐致信美国总统约翰逊，宣布法国撤出北约一体化军事指挥结构并要求外国部队撤离法国，法国仍保留北约成员身份。
   confidence: 确定
-  tags: [法国, 北约, 戴高乐, 冷战]
-  sources: [北约, 法国外交部, Wikipedia—France–NATO relations]
+  tags:
+    - 法国
+    - 北约
+    - 戴高乐
+    - 冷战
+  sources:
+    - 北约
+    - 法国外交部
+    - Wikipedia—France–NATO relations
 - id: w-guyana-independence-196605
   date: '1966-05-26'
   title: 圭亚那独立
@@ -7030,8 +7764,15 @@
   importance: 4
   summary: 英属圭亚那脱离英国独立，成立圭亚那独立国，福布斯·伯纳姆任总理。
   confidence: 确定
-  tags: [圭亚那, 独立, 去殖民化, 加勒比]
-  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Independence of Guyana]
+  tags:
+    - 圭亚那
+    - 独立
+    - 去殖民化
+    - 加勒比
+  sources:
+    - 联合国
+    - Encyclopaedia Britannica
+    - Wikipedia—Independence of Guyana
 - id: w-surveyor-1-196606
   date: '1966-06-02'
   title: “勘测者1号”实现美国首次月面软着陆
@@ -7039,8 +7780,15 @@
   importance: 4
   summary: NASA“勘测者1号”在月球风暴洋成功软着陆并传回图像，为阿波罗载人登月任务验证月面条件。
   confidence: 确定
-  tags: [航天, 月球, NASA, 科技]
-  sources: [NASA, JPL, Wikipedia—Surveyor 1]
+  tags:
+    - 航天
+    - 月球
+    - NASA
+    - 科技
+  sources:
+    - NASA
+    - JPL
+    - Wikipedia—Surveyor 1
 - id: w-now-founded-196606
   date: '1966-06-30'
   title: 美国全国妇女组织成立
@@ -7048,8 +7796,15 @@
   importance: 3
   summary: 美国妇女活动家在华盛顿创建全国妇女组织，推动就业、教育、生育和法律平等。
   confidence: 确定
-  tags: [妇女权利, 美国, 社会运动, 性别平等]
-  sources: [National Organization for Women, 美国国会图书馆, Wikipedia—National Organization for Women]
+  tags:
+    - 妇女权利
+    - 美国
+    - 社会运动
+    - 性别平等
+  sources:
+    - National Organization for Women
+    - 美国国会图书馆
+    - Wikipedia—National Organization for Women
 - id: w-england-world-cup-196607
   date: '1966-07-30'
   title: 英格兰赢得世界杯足球赛
@@ -7057,8 +7812,15 @@
   importance: 3
   summary: 英格兰队在伦敦温布利球场决赛中击败西德队，首次获得世界杯冠军。
   confidence: 确定
-  tags: [世界杯, 足球, 英格兰, 体育]
-  sources: [FIFA, Encyclopaedia Britannica, Wikipedia—1966 FIFA World Cup Final]
+  tags:
+    - 世界杯
+    - 足球
+    - 英格兰
+    - 体育
+  sources:
+    - FIFA
+    - Encyclopaedia Britannica
+    - Wikipedia—1966 FIFA World Cup Final
 - id: w-verwoerd-assassinated-196609
   date: '1966-09-06'
   title: 南非总理维沃尔德遇刺
@@ -7066,8 +7828,15 @@
   importance: 4
   summary: 南非总理亨德里克·维沃尔德在开普敦议会内遇刺身亡；他是种族隔离制度的主要设计者之一。
   confidence: 确定
-  tags: [南非, 种族隔离, 刺杀, 政治]
-  sources: [南非政府档案, Encyclopaedia Britannica, Wikipedia—Hendrik Verwoerd]
+  tags:
+    - 南非
+    - 种族隔离
+    - 刺杀
+    - 政治
+  sources:
+    - 南非政府档案
+    - Encyclopaedia Britannica
+    - Wikipedia—Hendrik Verwoerd
 - id: w-botswana-independence-196609
   date: '1966-09-30'
   title: 博茨瓦纳独立
@@ -7075,8 +7844,15 @@
   importance: 4
   summary: 贝专纳保护地脱离英国独立，成立博茨瓦纳共和国，塞雷茨·卡马任首任总统。
   confidence: 确定
-  tags: [博茨瓦纳, 独立, 去殖民化, 非洲]
-  sources: [联合国, Botswana Government, Wikipedia—Independence of Botswana]
+  tags:
+    - 博茨瓦纳
+    - 独立
+    - 去殖民化
+    - 非洲
+  sources:
+    - 联合国
+    - Botswana Government
+    - Wikipedia—Independence of Botswana
 - id: w-lesotho-independence-196610
   date: '1966-10-04'
   title: 莱索托独立
@@ -7084,8 +7860,15 @@
   importance: 3
   summary: 巴苏陀兰脱离英国独立，成立莱索托王国并加入英联邦。
   confidence: 确定
-  tags: [莱索托, 独立, 去殖民化, 非洲]
-  sources: [联合国, Lesotho Government, Wikipedia—History of Lesotho]
+  tags:
+    - 莱索托
+    - 独立
+    - 去殖民化
+    - 非洲
+  sources:
+    - 联合国
+    - Lesotho Government
+    - Wikipedia—History of Lesotho
 - id: w-human-rights-covenants-196612
   date: '1966-12-16'
   title: 联合国通过两项国际人权公约
@@ -7093,8 +7876,15 @@
   importance: 5
   summary: 联合国大会通过《公民权利和政治权利国际公约》及《经济、社会及文化权利国际公约》，构成国际人权法核心文件。
   confidence: 确定
-  tags: [联合国, 人权, 国际法, 公约]
-  sources: [联合国人权事务高级专员办事处, 联合国大会, Wikipedia—International Bill of Human Rights]
+  tags:
+    - 联合国
+    - 人权
+    - 国际法
+    - 公约
+  sources:
+    - 联合国人权事务高级专员办事处
+    - 联合国大会
+    - Wikipedia—International Bill of Human Rights
 - id: w-apollo-1-fire-196701
   date: '1967-01-27'
   title: 阿波罗1号地面测试火灾
@@ -7102,8 +7892,15 @@
   importance: 4
   summary: 阿波罗1号飞船地面测试舱内起火，三名宇航员遇难，NASA随后全面改进载人航天器安全标准。
   confidence: 确定
-  tags: [航天, NASA, 火灾, 灾害]
-  sources: [NASA, Smithsonian National Air and Space Museum, Wikipedia—Apollo 1]
+  tags:
+    - 航天
+    - NASA
+    - 火灾
+    - 灾害
+  sources:
+    - NASA
+    - Smithsonian National Air and Space Museum
+    - Wikipedia—Apollo 1
 - id: w-greek-junta-coup-196704
   date: '1967-04-21'
   title: 希腊军政府政变
@@ -7111,8 +7908,15 @@
   importance: 4
   summary: 希腊军官发动政变推翻看守政府，建立“上校政权”，民主制度暂停至1974年。
   confidence: 确定
-  tags: [希腊, 政变, 军政府, 欧洲]
-  sources: [希腊议会档案, Encyclopaedia Britannica, Wikipedia—Greek junta]
+  tags:
+    - 希腊
+    - 政变
+    - 军政府
+    - 欧洲
+  sources:
+    - 希腊议会档案
+    - Encyclopaedia Britannica
+    - Wikipedia—Greek junta
 - id: w-six-day-war-196706
   date: '1967-06-05'
   title: 六日战争爆发
@@ -7120,8 +7924,15 @@
   importance: 5
   summary: 以色列对埃及、约旦和叙利亚发动先发制人空袭，中东战争全面爆发。
   confidence: 确定
-  tags: [六日战争, 以色列, 阿拉伯国家, 中东]
-  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Six-Day War]
+  tags:
+    - 六日战争
+    - 以色列
+    - 阿拉伯国家
+    - 中东
+  sources:
+    - 联合国
+    - Encyclopaedia Britannica
+    - Wikipedia—Six-Day War
 - id: w-six-day-war-ceasefire-196706
   date: '1967-06-10'
   title: 六日战争停火
@@ -7129,8 +7940,15 @@
   importance: 4
   summary: 以色列与叙利亚停火，六日战争结束；以色列控制西奈半岛、加沙、约旦河西岸、东耶路撒冷和戈兰高地。
   confidence: 确定
-  tags: [六日战争, 停火, 中东, 领土]
-  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Six-Day War]
+  tags:
+    - 六日战争
+    - 停火
+    - 中东
+    - 领土
+  sources:
+    - 联合国
+    - Encyclopaedia Britannica
+    - Wikipedia—Six-Day War
 - id: w-nigerian-civil-war-196707
   date: '1967-07-06'
   title: 尼日利亚内战爆发
@@ -7138,8 +7956,15 @@
   importance: 4
   summary: 尼日利亚联邦政府对比夫拉地区采取军事行动，尼日利亚内战正式开始并造成严重人道危机。
   confidence: 确定
-  tags: [尼日利亚, 比夫拉, 内战, 非洲]
-  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Nigerian Civil War]
+  tags:
+    - 尼日利亚
+    - 比夫拉
+    - 内战
+    - 非洲
+  sources:
+    - 联合国
+    - Encyclopaedia Britannica
+    - Wikipedia—Nigerian Civil War
 - id: w-asean-founded-196708
   date: '1967-08-08'
   title: 东南亚国家联盟成立
@@ -7147,8 +7972,15 @@
   importance: 5
   summary: 印度尼西亚、马来西亚、菲律宾、新加坡和泰国签署《曼谷宣言》，正式成立东盟。
   confidence: 确定
-  tags: [东盟, 东南亚, 国际组织, 外交]
-  sources: [东盟秘书处, 联合国, Wikipedia—ASEAN]
+  tags:
+    - 东盟
+    - 东南亚
+    - 国际组织
+    - 外交
+  sources:
+    - 东盟秘书处
+    - 联合国
+    - Wikipedia—ASEAN
 - id: w-outer-space-treaty-196710
   date: '1967-10-10'
   title: 《外层空间条约》生效
@@ -7156,8 +7988,15 @@
   importance: 4
   summary: 《外层空间条约》生效，确立和平利用外空和禁止在天体部署大规模杀伤性武器等原则。
   confidence: 确定
-  tags: [外层空间, 国际法, 航天, 联合国]
-  sources: [联合国外空司, 联合国条约集, Wikipedia—Outer Space Treaty]
+  tags:
+    - 外层空间
+    - 国际法
+    - 航天
+    - 联合国
+  sources:
+    - 联合国外空司
+    - 联合国条约集
+    - Wikipedia—Outer Space Treaty
 - id: w-venera-4-196710
   date: '1967-10-18'
   title: “金星4号”首次成功传回金星大气数据
@@ -7165,8 +8004,15 @@
   importance: 4
   summary: 苏联“金星4号”探测器进入金星大气并传回温度、压力和成分数据，首次直接测量金星环境。
   confidence: 确定
-  tags: [金星, 航天, 苏联, 科技]
-  sources: [Roscosmos, NASA, Wikipedia—Venera 4]
+  tags:
+    - 金星
+    - 航天
+    - 苏联
+    - 科技
+  sources:
+    - Roscosmos
+    - NASA
+    - Wikipedia—Venera 4
 - id: w-march-pentagon-196710
   date: '1967-10-21'
   title: 华盛顿反越战五角大楼示威
@@ -7174,8 +8020,15 @@
   importance: 3
   summary: 数万名反战者在华盛顿集会并试图进入五角大楼，成为美国反越战运动的标志性事件。
   confidence: 确定
-  tags: [越南战争, 反战, 美国, 社会运动]
-  sources: [美国国会图书馆, Encyclopaedia Britannica, Wikipedia—March on the Pentagon]
+  tags:
+    - 越南战争
+    - 反战
+    - 美国
+    - 社会运动
+  sources:
+    - 美国国会图书馆
+    - Encyclopaedia Britannica
+    - Wikipedia—March on the Pentagon
 - id: w-first-heart-transplant-196712
   date: '1967-12-03'
   title: 世界首例心脏移植手术
@@ -7183,8 +8036,15 @@
   importance: 4
   summary: 南非开普敦医生克里斯蒂安·巴纳德完成世界首例人类心脏移植，推动器官移植医学发展。
   confidence: 确定
-  tags: [医学, 心脏移植, 南非, 科技]
-  sources: [南非医学研究委员会, Encyclopaedia Britannica, Wikipedia—Heart transplantation]
+  tags:
+    - 医学
+    - 心脏移植
+    - 南非
+    - 科技
+  sources:
+    - 南非医学研究委员会
+    - Encyclopaedia Britannica
+    - Wikipedia—Heart transplantation
 - id: w-dubcek-first-secretary-196801
   date: '1968-01-05'
   title: 杜布切克当选捷克斯洛伐克共产党第一书记
@@ -7192,8 +8052,15 @@
   importance: 4
   summary: 亚历山大·杜布切克取代诺沃提尼出任捷共第一书记，随后推动“有人性面孔的社会主义”改革，布拉格之春开始。
   confidence: 确定
-  tags: [布拉格之春, 捷克斯洛伐克, 改革, 冷战]
-  sources: [捷克国家档案馆, Encyclopaedia Britannica, Wikipedia—Prague Spring]
+  tags:
+    - 布拉格之春
+    - 捷克斯洛伐克
+    - 改革
+    - 冷战
+  sources:
+    - 捷克国家档案馆
+    - Encyclopaedia Britannica
+    - Wikipedia—Prague Spring
 - id: w-tet-offensive-196801
   date: '1968-01-30'
   title: 越南战争春节攻势
@@ -7201,8 +8068,15 @@
   importance: 5
   summary: 北越和越共部队在南越多地发动春节攻势，虽遭军事反击，但显著改变美国公众对战争的看法。
   confidence: 确定
-  tags: [越南战争, 春节攻势, 美国, 冷战]
-  sources: [美国国防部, Encyclopaedia Britannica, Wikipedia—Tet Offensive]
+  tags:
+    - 越南战争
+    - 春节攻势
+    - 美国
+    - 冷战
+  sources:
+    - 美国国防部
+    - Encyclopaedia Britannica
+    - Wikipedia—Tet Offensive
 - id: w-mlk-assassination-196804
   date: '1968-04-04'
   title: 马丁·路德·金遇刺
@@ -7210,8 +8084,15 @@
   importance: 5
   summary: 美国民权领袖马丁·路德·金在田纳西州孟菲斯遇刺身亡，引发全国哀悼与多地骚乱。
   confidence: 确定
-  tags: [美国, 民权运动, 马丁路德金, 刺杀]
-  sources: [美国国家档案和记录管理局, FBI档案, Wikipedia—Assassination of Martin Luther King Jr.]
+  tags:
+    - 美国
+    - 民权运动
+    - 马丁路德金
+    - 刺杀
+  sources:
+    - 美国国家档案和记录管理局
+    - FBI档案
+    - Wikipedia—Assassination of Martin Luther King Jr.
 - id: w-may-68-196805
   date: '1968-05-03'
   title: 法国“五月风暴”学生抗议升级
@@ -7219,8 +8100,15 @@
   importance: 4
   summary: 巴黎索邦大学学生抗议与警方冲突，运动随后扩展为全国性罢工和政治危机。
   confidence: 确定
-  tags: [法国, 五月风暴, 学生运动, 罢工]
-  sources: [法国国家档案馆, Encyclopaedia Britannica, Wikipedia—May 68]
+  tags:
+    - 法国
+    - 五月风暴
+    - 学生运动
+    - 罢工
+  sources:
+    - 法国国家档案馆
+    - Encyclopaedia Britannica
+    - Wikipedia—May 68
 - id: w-robert-kennedy-assassination-196806
   date: '1968-06-05'
   title: 罗伯特·肯尼迪遇刺
@@ -7228,8 +8116,15 @@
   importance: 4
   summary: 美国参议员、总统候选人罗伯特·肯尼迪在洛杉矶遭枪击，次日去世，对1968年美国大选产生重大影响。
   confidence: 确定
-  tags: [美国, 罗伯特肯尼迪, 刺杀, 选举]
-  sources: [美国国家档案和记录管理局, FBI档案, Wikipedia—Assassination of Robert F. Kennedy]
+  tags:
+    - 美国
+    - 罗伯特肯尼迪
+    - 刺杀
+    - 选举
+  sources:
+    - 美国国家档案和记录管理局
+    - FBI档案
+    - Wikipedia—Assassination of Robert F. Kennedy
 - id: w-npt-open-signature-196807
   date: '1968-07-01'
   title: 《不扩散核武器条约》开放签署
@@ -7237,8 +8132,15 @@
   importance: 4
   summary: 《不扩散核武器条约》在伦敦、莫斯科和华盛顿开放签署，确立核不扩散、和平利用核能和推进裁军的国际框架。
   confidence: 确定
-  tags: [核不扩散, 国际条约, 军控, 联合国]
-  sources: [联合国条约集, 国际原子能机构, Wikipedia—Treaty on the Non-Proliferation of Nuclear Weapons]
+  tags:
+    - 核不扩散
+    - 国际条约
+    - 军控
+    - 联合国
+  sources:
+    - 联合国条约集
+    - 国际原子能机构
+    - Wikipedia—Treaty on the Non-Proliferation of Nuclear Weapons
 - id: w-warsaw-pact-invasion-czechoslovakia-196808
   date: '1968-08-20'
   title: 华沙条约组织军队入侵捷克斯洛伐克
@@ -7246,8 +8148,15 @@
   importance: 5
   summary: 苏联等华约国家军队进入捷克斯洛伐克，终止布拉格之春改革并引发国际谴责。
   confidence: 确定
-  tags: [捷克斯洛伐克, 华约, 苏联, 布拉格之春]
-  sources: [北约, Encyclopaedia Britannica, Wikipedia—Warsaw Pact invasion of Czechoslovakia]
+  tags:
+    - 捷克斯洛伐克
+    - 华约
+    - 苏联
+    - 布拉格之春
+  sources:
+    - 北约
+    - Encyclopaedia Britannica
+    - Wikipedia—Warsaw Pact invasion of Czechoslovakia
 - id: w-tlatelolco-massacre-196810
   date: '1968-10-02'
   title: 墨西哥特拉特洛尔科大屠杀
@@ -7255,8 +8164,15 @@
   importance: 4
   summary: 墨西哥军警在特拉特洛尔科广场向学生示威者开火并实施逮捕，死亡人数至今存在争议。
   confidence: 确定
-  tags: [墨西哥, 学生运动, 镇压, 人权]
-  sources: [墨西哥国家人权委员会, Encyclopaedia Britannica, Wikipedia—Tlatelolco massacre]
+  tags:
+    - 墨西哥
+    - 学生运动
+    - 镇压
+    - 人权
+  sources:
+    - 墨西哥国家人权委员会
+    - Encyclopaedia Britannica
+    - Wikipedia—Tlatelolco massacre
 - id: w-nixon-election-196811
   date: '1968-11-05'
   title: 尼克松赢得美国总统选举
@@ -7264,8 +8180,15 @@
   importance: 4
   summary: 共和党候选人理查德·尼克松击败休伯特·汉弗莱和乔治·华莱士，当选美国总统。
   confidence: 确定
-  tags: [美国, 总统选举, 尼克松, 政治]
-  sources: [美国国家档案和记录管理局, Encyclopaedia Britannica, Wikipedia—1968 United States presidential election]
+  tags:
+    - 美国
+    - 总统选举
+    - 尼克松
+    - 政治
+  sources:
+    - 美国国家档案和记录管理局
+    - Encyclopaedia Britannica
+    - Wikipedia—1968 United States presidential election
 - id: w-apollo-8-moon-orbit-196812
   date: '1968-12-24'
   title: 阿波罗8号实现首次载人绕月飞行
@@ -7273,5 +8196,12 @@
   importance: 5
   summary: 阿波罗8号宇航员进入月球轨道，成为首批飞离近地轨道并环绕月球的人类，为阿波罗11号登月奠定基础。
   confidence: 确定
-  tags: [航天, 月球, NASA, 科技]
-  sources: [NASA, Smithsonian National Air and Space Museum, Wikipedia—Apollo 8]
+  tags:
+    - 航天
+    - 月球
+    - NASA
+    - 科技
+  sources:
+    - NASA
+    - Smithsonian National Air and Space Museum
+    - Wikipedia—Apollo 8
