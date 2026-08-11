@@ -8,6 +8,60 @@
   importance: 5
   summary: 毛泽东于北京天安门城楼宣告中华人民共和国中央人民政府成立。
   confidence: 确定
+  image:
+    url: /images/events/1949/prc_founding_1949.jpg
+    caption: 开国大典历史现场与典藏影像
+- id: cn-yangtze-crossing-194904
+  date: '1949-04-21'
+  title: 渡江战役打响，解放军占领南京
+  category: 战争
+  importance: 5
+  summary: 毛泽东、朱德发布《向全国进军的命令》，百万雄师过大江。4月23日解放军占领南京，宣告国民党22年反动统治覆灭。
+  confidence: 确定
+  tags:
+    - 解放战争
+    - 渡江战役
+    - 历史转折
+  sources:
+    - 新华网
+    - 人民网
+  image:
+    url: /images/events/1949/yangtze_crossing_194904.jpg
+    caption: 1949年4月百万雄师过大江，解放军占领南京总统府
+- id: cn-cppcc-first-session-194909
+  date: '1949-09-21'
+  title: 中国人民政治协商会议第一届全体会议召开
+  category: 政治
+  importance: 5
+  summary: 9月21日至30日政协第一届全体会议在北平举行。会议通过了具有临时宪法作用的《中国人民政治协商会议共同纲领》，选举毛泽东为中央人民政府主席，定都北平并改名北京。
+  confidence: 确定
+  tags:
+    - 共同纲领
+    - 建国
+    - 政治协商
+  sources:
+    - 人民网
+    - 党史权威文献
+  image:
+    url: /images/events/1949/cppcc_first_session_194909.jpg
+    caption: 中国人民政治协商会议第一届全体会议召开历史现场与典藏影像
+- id: cn-prc-ussr-diplomatic-194910
+  date: '1949-10-02'
+  title: 中国与苏联正式建立外交关系
+  category: 政治
+  importance: 5
+  summary: 苏联政府照会中国宣布承认中华人民共和国，两国正式建立外交关系。苏联成为首个与新中国建交的国家。
+  confidence: 确定
+  tags:
+    - 外交
+    - 中苏关系
+    - 建交
+  sources:
+    - 外交部档案馆
+    - 新华网
+  image:
+    url: /images/events/1949/prc_ussr_diplomatic_194910.jpg
+    caption: 中国与苏联正式建立外交关系历史现场与典藏影像
 - id: cn-sino-soviet-treaty-195002
   date: '1950-02-14'
   title: 中苏签订《中苏友好同盟互助条约》
@@ -22,6 +76,9 @@
   sources:
     - 新华网
     - 中文维基百科
+  image:
+    url: /images/events/1950/sino_soviet_treaty_195002.jpg
+    caption: 中苏签订《中苏友好同盟互助条约》历史现场与典藏影像
 - id: cn-unify-financial-economic-work-195003
   date: '1950-03-03'
   title: 政务院发布统一全国财政收支决定，彻底平抑物价与人民币币值
@@ -50,6 +107,9 @@
   sources:
     - 新华网
     - 中文维基百科
+  image:
+    url: /images/events/1950/marriage_law_195005.jpg
+    caption: 《中华人民共和国婚姻法》公布施行历史现场与典藏影像
 - id: cn-hainan-liberation-195005
   date: '1950-05-01'
   title: 人民解放军解放海南岛
@@ -78,6 +138,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1950/cpc_7th_3rd_plenum_195006.jpg
+    caption: 中共七届三中全会召开，提出为争取国家财经状况基本好转而斗争历史现场与典藏影像
 - id: cn-land-reform-law-195006
   date: '1950-06-30'
   title: 《中华人民共和国土地改革法》公布施行
@@ -92,6 +155,9 @@
   sources:
     - 新华网
     - 中文维基百科
+  image:
+    url: /images/events/1950/land_reform_law_195006.jpg
+    caption: 《中华人民共和国土地改革法》公布施行历史现场与典藏影像
 - id: cn-chamdo-campaign-195010
   date: '1950-10-06'
   title: 昌都战役打响
@@ -120,6 +186,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1950/campaign_suppress_counterrevolutionaries_195010.jpg
+    caption: 中共中央发出“双十指示”，全国全面开展镇压反革命运动历史现场与典藏影像
 - id: cn-enter-korean-war-195010
   date: '1950-10-19'
   title: 中国人民志愿军入朝作战
@@ -134,6 +203,433 @@
   sources:
     - 新华网
     - 中文维基百科
+  image:
+    url: /images/events/1950/enter_korean_war_195010.jpg
+    caption: 中国人民志愿军入朝作战历史现场与典藏影像
+- id: cn-tibet-peaceful-liberation-195105
+  date: '1951-05-23'
+  title: 《和平解放西藏办法的协议》（十七条协议）签订
+  category: 政治
+  importance: 5
+  summary: 中央人民政府全权代表与西藏地方政府全权代表在北京签署《关于和平解放西藏办法的协议》，标志着西藏实现和平解放，祖国大陆实现完全统一。
+  confidence: 确定
+  tags:
+    - 西藏
+    - 和平解放
+    - 国家统一
+  sources:
+    - 新华网
+    - 人民网
+  image:
+    url: /images/events/1951/tibet_peaceful_liberation_195105.jpg
+    caption: 1951年5月《关于和平解放西藏办法的协议》在京签订现场
+- id: cn-three-antis-campaign-195112
+  date: '1951-12-01'
+  title: 中共中央决定在党政机关开展“三反”运动
+  category: 政治
+  importance: 4
+  summary: 中共中央发出指示，在党政机关工作人员中开展反贪污、反浪费、反官僚主义的“三反”运动，保持党的纯洁性与廉洁作风。
+  confidence: 确定
+  tags:
+    - 三反运动
+    - 廉政建设
+    - 党史
+  sources:
+    - 人民网
+    - 党史权威文献
+- id: cn-five-antis-campaign-195201
+  date: '1952-01-26'
+  title: 中共中央部署在私营工商业中开展“五反”运动
+  category: 经济
+  importance: 4
+  summary: 中共中央发出指示，在全国大中城市私营工商业中开展反行贿、反偷税漏税、反盗骗国家财产、反偷工减料、反盗窃国家经济情报的“五反”运动。
+  confidence: 确定
+  tags:
+    - 五反运动
+    - 工商业改造
+    - 经济
+  sources:
+    - 人民网
+    - 党史权威文献
+- id: cn-chengyu-railway-open-195206
+  date: '1952-06-13'
+  title: 成渝铁路全线建成通车
+  category: 经济
+  importance: 4
+  summary: 成渝铁路全线竣工通车，这是新中国成立后完全由中国自己设计、自备器材修建的第一条铁路干线，彻底结束了蜀道难的历史。
+  confidence: 确定
+  tags:
+    - 铁路
+    - 基建
+    - 西南开辟
+  sources:
+    - 新华网
+    - 人民网
+- id: cn-land-reform-basic-completed-195212
+  date: '1952-12-31'
+  title: 全国新解放区土地改革基本完成
+  category: 经济
+  importance: 5
+  summary: 除部分少数民族地区外，全国新解放区土地改革基本完成，3亿多无地少地农民分得约7亿亩土地，彻底废除了在中国延续数千年的封建土地剥削制度。
+  confidence: 确定
+  tags:
+    - 土地改革
+    - 农业
+    - 历史转折
+  sources:
+    - 人民网
+    - 党史权威文献
+  image:
+    url: /images/events/1952/land_reform_basic_completed_195212.jpg
+    caption: 全国新解放区土地改革基本完成历史现场与典藏影像
+- id: cn-first-five-year-plan-195301
+  date: '1953-01-01'
+  title: 我国开始实施发展国民经济第一个五年计划（一五计划）
+  category: 经济
+  importance: 5
+  summary: 我国开始执行发展国民经济的第一个五年计划（1953-1957），集中主要力量发展重工业，建立国家工业化和国防现代化的初步基础。
+  confidence: 确定
+  tags:
+    - 一五计划
+    - 工业化
+    - 历史转折
+  sources:
+    - 人民网
+    - 国家发改委
+  image:
+    url: /images/events/1953/first_five_year_plan_195301.jpg
+    caption: 新中国“一五计划”全面实施，鞍钢与一汽工业建设热火朝天
+- id: cn-korean-armistice-agreement-195307
+  date: '1953-07-27'
+  title: 《朝鲜停战协定》签署，抗美援朝战争取得伟大胜利
+  category: 战争
+  importance: 5
+  summary: 中朝代表团与“联合国军”代表团在板门店签署《朝鲜停战协定》，历时3年的抗美援朝战争胜利结束，极大提升了新中国的国际地位和国防安全。
+  confidence: 确定
+  tags:
+    - 抗美援朝
+    - 朝鲜停战
+    - 历史转折
+  sources:
+    - 新华网
+    - 国防部
+  image:
+    url: /images/events/1953/korean_armistice_agreement_195307.jpg
+    caption: 1953年7月27日《朝鲜停战协定》在板门店正式签署
+- id: cn-five-principles-peaceful-coexistence-195312
+  date: '1953-12-31'
+  title: 周恩来首次提出“和平共处五项原则”
+  category: 政治
+  importance: 5
+  summary: 周恩来总理在接见印度政府代表团时，首次完整提出互相尊重主权和领土完整、互不侵犯、互不干涉内政、平等互利、和平共处五项原则，成为国际关系准则的基石。
+  confidence: 确定
+  tags:
+    - 外交
+    - 和平共处五项原则
+    - 历史转折
+  sources:
+    - 外交部档案馆
+    - 新华网
+  image:
+    url: /images/events/1953/five_principles_peaceful_coexistence_195312.jpg
+    caption: 周恩来首次提出“和平共处五项原则”历史现场与典藏影像
+- id: cn-geneva-conference-195404
+  date: '1954-04-26'
+  title: 周恩来率团出席日内瓦会议
+  category: 政治
+  importance: 5
+  summary: 周恩来总理兼外长率中国代表团首次以五大国之一身份出席日内瓦会议，推动和平解决朝鲜问题和印度支那问题，展示了新中国重大国际影响力。
+  confidence: 确定
+  tags:
+    - 外交
+    - 日内瓦会议
+    - 新中国外交
+  sources:
+    - 外交部档案馆
+    - 新华网
+  image:
+    url: /images/events/1954/geneva_conference_195404.jpg
+    caption: 周恩来率团出席日内瓦会议历史现场与典藏影像
+- id: cn-first-npc-constitution-195409
+  date: '1954-09-20'
+  title: 第一届全国人大通过第一部《中华人民共和国宪法》
+  category: 政治
+  importance: 5
+  summary: 第一届全国人民代表大会第一次会议在北京召开，表决通过第一部《中华人民共和国宪法》（“五四宪法”），确立人民代表大会制度为我国根本政治制度。
+  confidence: 确定
+  tags:
+    - 五四宪法
+    - 全国人大
+    - 历史转折
+  sources:
+    - 人民网
+    - 全国人大网
+  image:
+    url: /images/events/1954/first_npc_constitution_195409.jpg
+    caption: 第一届全国人民代表大会第一次会议表决通过新中国第一部宪法
+- id: cn-kangting-tibet-highway-195412
+  date: '1954-12-25'
+  title: 川藏公路与青藏公路全线通车
+  category: 经济
+  importance: 4
+  summary: 康藏（川藏）公路与青藏公路举行通车典礼，两路同时全线通车拉萨，结束了西藏没有现代公路的历史，极大地促进了西藏经济与国防建设。
+  confidence: 确定
+  tags:
+    - 川藏公路
+    - 青藏公路
+    - 基建
+  sources:
+    - 新华网
+    - 交通运输部
+- id: cn-bandung-conference-195504
+  date: '1955-04-18'
+  title: 周恩来率团出席万隆会议并提出“求同存异”方针
+  category: 政治
+  importance: 5
+  summary: 周恩来率中国代表团出席在印尼万隆举行的亚非会议，提出“求同存异”方针，推动会议达成亚非合作十项原则，开创了亚非国家团结抗帝的新局面。
+  confidence: 确定
+  tags:
+    - 外交
+    - 万隆会议
+    - 求同存异
+  sources:
+    - 外交部档案馆
+    - 新华网
+  image:
+    url: /images/events/1955/bandung_conference_195504.jpg
+    caption: 周恩来总理率中国代表团出席亚非万隆会议并发表演讲
+- id: cn-pla-rank-system-195509
+  date: '1955-09-27'
+  title: 中国人民解放军首次实行军衔制，授予十大元帅和大将
+  category: 战争
+  importance: 5
+  summary: 在中南海举行隆重的授衔授勋典礼，毛泽东主席授予朱德、彭德怀等十人中华人民共和国元帅军衔，周恩来总理授予粟裕等十人大将军衔，军队正规化建设迈出关键一步。
+  confidence: 确定
+  tags:
+    - 十大元帅
+    - 授衔
+    - 军事正规化
+  sources:
+    - 国防部
+    - 新华网
+  image:
+    url: /images/events/1955/pla_rank_system_195509.jpg
+    caption: 1955年9月中南海举行隆重授衔典礼，毛泽东主席授予朱德等十位元帅军衔
+- id: cn-qian-xuesen-return-195510
+  date: '1955-10-08'
+  title: 著名科学家钱学森突破阻挠归国
+  category: 文化
+  importance: 5
+  summary: 在党和政府关怀与外交努力下，著名火箭专家钱学森摆脱美方长达5年的扣押阻挠乘船抵达香港并回到祖国，极大加速了新中国“两弹一星”的研制步伐。
+  confidence: 确定
+  tags:
+    - 钱学森
+    - 两弹一星
+    - 科技归国
+  sources:
+    - 中国科学院
+    - 人民网
+  image:
+    url: /images/events/1955/qian_xuesen_return_195510.jpg
+    caption: 著名科学家钱学森突破阻挠归国历史现场与典藏影像
+- id: cn-three-major-remoulding-195601
+  date: '1956-01-15'
+  title: 农业、手工业和资本主义工商业社会主义改造基本完成
+  category: 经济
+  importance: 5
+  summary: 北京举行庆祝社会主义改造胜利大会。全国农业、手工业和资本主义工商业社会主义改造（三大改造）基本完成，标志社会主义基本制度在我国初步建立。
+  confidence: 确定
+  tags:
+    - 三大改造
+    - 社会主义制度
+    - 历史转折
+  sources:
+    - 人民网
+    - 党史权威文献
+  image:
+    url: /images/events/1956/three_major_remoulding_195601.jpg
+    caption: 1956年北京各界庆祝资本主义工商业社会主义改造胜利
+- id: cn-hundred-flowers-campaign-195604
+  date: '1956-04-28'
+  title: 毛泽东提出“百花齐放，百家争鸣”方针
+  category: 文化
+  importance: 4
+  summary: 毛泽东在中共中央政治局扩大会议上提出“百花齐放，百家争鸣”方针（双百方针），促进艺术发展和科学进步，繁荣社会主义文化。
+  confidence: 确定
+  tags:
+    - 双百方针
+    - 文化
+    - 科学
+  sources:
+    - 人民网
+    - 党史权威文献
+- id: cn-cpc-8th-congress-195609
+  date: '1956-09-15'
+  title: 中共八大召开，明确国内主要矛盾转变为发展生产力需要
+  category: 政治
+  importance: 5
+  summary: 中国共产党第八次全国代表大会在北京召开。大会明确指出社会主要矛盾已经转变为人民对经济文化迅速发展的需要同当前经济文化不能满足人民需要的状况之间的矛盾。
+  confidence: 确定
+  tags:
+    - 中共八大
+    - 主要矛盾
+    - 历史转折
+  sources:
+    - 人民网
+    - 党史权威文献
+  image:
+    url: /images/events/1956/cpc_8th_congress_195609.jpg
+    caption: 中共八大召开，明确国内主要矛盾转变为发展生产力需要历史现场与典藏影像
+- id: cn-wuhan-yangtze-bridge-195710
+  date: '1957-10-15'
+  title: 武汉长江大桥建成通车，“一桥飞架南北”
+  category: 经济
+  importance: 5
+  summary: 长江上第一座铁路线与公路线公铁两用大桥——武汉长江大桥建成通车，彻底打破长江天堑阻隔，连接京汉与粤汉铁路为京广铁路。
+  confidence: 确定
+  tags:
+    - 基建
+    - 武汉长江大桥
+    - 一五计划
+  sources:
+    - 新华网
+    - 人民网
+  image:
+    url: /images/events/1957/wuhan_yangtze_bridge_195710.jpg
+    caption: 1957年十月“万里长江第一桥”——武汉长江大桥建成通车
+- id: cn-first-five-year-plan-completed-195712
+  date: '1957-12-31'
+  title: “一五计划”超额完成，奠定新中国工业化初步基础
+  category: 经济
+  importance: 5
+  summary: 第一个五年计划主要指标超额完成。长春一汽、鞍钢无缝钢管厂、沈阳第一机床厂等重大项目建成投产，形成了我国工业化的初步基础。
+  confidence: 确定
+  tags:
+    - 一五计划
+    - 工业化
+    - 成就
+  sources:
+    - 国家统计局
+    - 人民网
+  image:
+    url: /images/events/1957/first_five_year_plan_completed_195712.jpg
+    caption: “一五计划”超额完成，奠定新中国工业化初步基础历史现场与典藏影像
+- id: cn-great-leap-forward-195805
+  date: '1958-05-05'
+  title: 中共八大二次会议通过社会主义建设总路线，“大跃进”展开
+  category: 经济
+  importance: 5
+  summary: 会议通过“鼓足干劲、力争上游、多快好省地建设社会主义”的总路线，“大跃进”运动在全国范围内全面展开，盲目追求高指标和全民炼钢。
+  confidence: 确定
+  tags:
+    - 大跃进
+    - 总路线
+    - 党史
+  sources:
+    - 人民网
+    - 党史权威文献
+  image:
+    url: /images/events/1958/great_leap_forward_195805.jpg
+    caption: 中共八大二次会议通过社会主义建设总路线，“大跃进”展开历史现场与典藏影像
+- id: cn-jinmen-artillery-bombardment-195808
+  date: '1958-08-23'
+  title: 人民解放军福建前线部队发起炮击金门作战
+  category: 战争
+  importance: 5
+  summary: 解放军福建前线部队对金门国民党守军发动大规模猛烈炮击，展现了反对美国干涉台海内政、遏制“划峡而治”图谋的坚定意志。
+  confidence: 确定
+  tags:
+    - 炮击金门
+    - 台海局势
+    - 军事
+  sources:
+    - 国防部
+    - 新华网
+  image:
+    url: /images/events/1958/jinmen_artillery_bombardment_195808.jpg
+    caption: 人民解放军福建前线部队发起炮击金门作战历史现场与典藏影像
+- id: cn-peoples-commune-movement-195808
+  date: '1958-08-29'
+  title: 中共中央通过《关于在农村建立人民公社问题的决议》
+  category: 经济
+  importance: 5
+  summary: 中央政治局扩大会议通过在农村建立人民公社的决议，全国迅速掀起“政社合一”、“一大二公”的人民公社化运动。
+  confidence: 确定
+  tags:
+    - 人民公社
+    - 农业
+    - 大跃进
+  sources:
+    - 人民网
+    - 党史权威文献
+  image:
+    url: /images/events/1958/peoples_commune_movement_195808.jpg
+    caption: 中共中央通过《关于在农村建立人民公社问题的决议》历史现场与典藏影像
+- id: cn-rong-guotuan-world-champion-195904
+  date: '1959-04-05'
+  title: 容国团夺得第25届世乒赛男单冠军，系新中国首个世界冠军
+  category: 文化
+  importance: 5
+  summary: 容国团在西德多特蒙德第25届世乒赛上击败匈牙利选手夺得男单冠军，实现了新中国体育史上世界冠军零的突破，极大地鼓舞了全国士气。
+  confidence: 确定
+  tags:
+    - 体育
+    - 容国团
+    - 世界冠军
+  sources:
+    - 国家体育总局
+    - 新华网
+  image:
+    url: /images/events/1959/rong_guotuan_world_champion_195904.jpg
+    caption: 容国团夺得第25届世乒赛男单冠军，实现新中国世界冠军零的突破
+- id: cn-lushan-conference-195907
+  date: '1959-07-02'
+  title: 中共中央召开庐山会议
+  category: 政治
+  importance: 5
+  summary: 中共中央政治局扩大会议在庐山举行。会议原本旨在纠正“大跃进”左倾错误，但在彭德怀致信毛泽东表达批评意见后演变为“反右倾”斗争。
+  confidence: 确定
+  tags:
+    - 庐山会议
+    - 彭德怀
+    - 党史
+  sources:
+    - 人民网
+    - 党史权威文献
+  image:
+    url: /images/events/1959/lushan_conference_195907.jpg
+    caption: 中共中央召开庐山会议历史现场与典藏影像
+- id: cn-daqing-field-discovery-195909
+  date: '1959-09-26'
+  title: 松辽平原松基三井喜喷工业油流，发现大庆油田
+  category: 经济
+  importance: 5
+  summary: 黑龙江肇州县松基三井喜喷高产工业油流，标志着大庆油田被成功发现。正值国庆十周年前夕，故命名为“大庆油田”，打破了中国“贫油论”。
+  confidence: 确定
+  tags:
+    - 大庆油田
+    - 石油工业
+    - 历史转折
+  sources:
+    - 人民网
+    - 新华网
+  image:
+    url: /images/events/1959/daqing_field_discovery_195909.jpg
+    caption: 1959年9月松辽平原松基三井喜喷工业油流，大庆油田诞生
+- id: cn-10th-anniversary-parade-195910
+  date: '1959-10-01'
+  title: 庆祝新中国成立10周年，首都十大建筑竣工并举行盛大阅兵
+  category: 文化
+  importance: 4
+  summary: 北京举行建国10周年盛大国庆阅兵，人民大会堂、中国历史博物馆等首都十大建筑仅用10个月竣工投入使用，展现新中国建设飞跃。
+  confidence: 确定
+  tags:
+    - 国庆阅兵
+    - 十大建筑
+    - 建国10周年
+  sources:
+    - 新华网
+    - 人民网
 - id: cn-shanghai-politburo-meeting-196001
   date: '1960-01-07'
   title: 中共中央在上海召开政治局扩大会议研究经济计划
@@ -190,6 +686,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1960/daqing_oil_field_battle_196004.jpg
+    caption: 大庆石油会战全面展开与“铁人”王进喜精神历史现场与典藏影像
 - id: cn-everest-north-summit-196005
   date: '1960-05-25'
   title: 中国登山队首次从北坡登顶珠穆朗玛峰
@@ -204,6 +703,9 @@
   sources:
     - 中央纪委国家监委网站
     - 党史权威文献
+  image:
+    url: /images/events/1960/everest_north_summit_196005.jpg
+    caption: 中国登山队首次从北坡登顶珠穆朗玛峰历史现场与典藏影像
 - id: cn-soviet-withdrawal-experts-196007
   date: '1960-07-16'
   title: 苏联政府照会中国单方面撤走全部在华专家
@@ -218,6 +720,9 @@
   sources:
     - 外交部档案馆
     - 党史权威文献
+  image:
+    url: /images/events/1960/soviet_withdrawal_experts_196007.jpg
+    caption: 苏联政府照会中国单方面撤走全部在华专家历史现场与典藏影像
 - id: cn-cuba-relations-196009
   date: '1960-09-28'
   title: 中国与古巴建立外交关系
@@ -232,6 +737,9 @@
   sources:
     - 中华人民共和国外交部
     - 中国驻古巴使馆
+  image:
+    url: /images/events/1960/cuba_relations_196009.jpg
+    caption: 中国与古巴建立外交关系历史现场与典藏影像
 - id: cn-eight-char-policy-196009
   date: '1960-09-30'
   title: 国家计委报告首次提出“调整、巩固、充实、提高”八字方针
@@ -246,6 +754,9 @@
   sources:
     - 中国共产党新闻网
     - 党史权威文献
+  image:
+    url: /images/events/1960/eight_char_policy_196009.jpg
+    caption: 国家计委报告首次提出“调整、巩固、充实、提高”八字方针历史现场与典藏影像
 - id: cn-cpc-twelve-directives-196011
   date: '1960-11-03'
   title: 中共中央发出“十二条”紧急指示信纠正“共产风”
@@ -274,6 +785,9 @@
   sources:
     - 共产党员网
     - 党史权威文献
+  image:
+    url: /images/events/1960/df1_missile_196011.jpg
+    caption: 我国第一枚国产近程导弹“东风一号”发射成功历史现场与典藏影像
 - id: cn-xinyang-incident-report-196101
   date: '1961-01-01'
   title: 中共中央批转河南信阳事件报告
@@ -288,6 +802,9 @@
   sources:
     - 中国共产党新闻网
     - 党史权威文献
+  image:
+    url: /images/events/1961/xinyang_incident_report_196101.jpg
+    caption: 中共中央批转河南信阳事件报告历史现场与典藏影像
 - id: cn-cpc-8th-9th-plenum-196101
   date: '1961-01-14'
   title: 中共八届九中全会确立经济调整方针
@@ -302,6 +819,9 @@
   sources:
     - 中国共产党新闻网
     - 党史权威文献
+  image:
+    url: /images/events/1961/cpc_8th_9th_plenum_196101.jpg
+    caption: 中共八届九中全会确立经济调整方针历史现场与典藏影像
 - id: cn-cpc-investigation-year-196101
   date: '1961-01-18'
   title: 毛泽东号召全党“大兴调查研究之风”
@@ -316,6 +836,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1961/cpc_investigation_year_196101.jpg
+    caption: 毛泽东号召全党“大兴调查研究之风”历史现场与典藏影像
 - id: cn-prc-cultural-relics-first-batch-196103
   date: '1961-03-04'
   title: 国务院公布第一批全国重点文物保护单位
@@ -344,6 +867,9 @@
   sources:
     - 新华网
     - 国家体育总局
+  image:
+    url: /images/events/1961/26th_table_tennis_beijing_196104.jpg
+    caption: 第26届世界乒乓球锦标赛在北京隆重举行历史现场与典藏影像
 - id: cn-peoples-commune-regulation-196105
   date: '1961-05-21'
   title: 中央工作会议修订农村人民公社工作条例
@@ -358,6 +884,9 @@
   sources:
     - 中国共产党新闻网
     - 党史权威文献
+  image:
+    url: /images/events/1961/peoples_commune_regulation_196105.jpg
+    caption: 中央工作会议修订农村人民公社工作条例历史现场与典藏影像
 - id: cn-atomic-industry-decision-196107
   date: '1961-07-16'
   title: 中共中央作出加强原子能工业建设决定
@@ -400,6 +929,9 @@
   sources:
     - 党史权威文献
     - 新华社
+  image:
+    url: /images/events/1962/seven_thousand_conference_196201.jpg
+    caption: 中共中央在北京召开“七千人大会”历史现场与典藏影像
 - id: cn-df2-missile-test-196203
   date: '1962-03-23'
   title: 中国首枚自行研制的“东风二号”导弹试射失败
@@ -456,6 +988,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1962/cpc_8th_10th_plenum_196209.jpg
+    caption: 中共八届十中全会召开，提出“千万不要忘记阶级斗争”历史现场与典藏影像
 - id: cn-rural-60-rules-196209
   date: '1962-09-27'
   title: 中共中央通过“农业六十条”，确立“三级所有，队为基础”体制
@@ -484,6 +1019,9 @@
   sources:
     - 党史权威文献
     - 党史权威文献
+  image:
+    url: /images/events/1962/sino_indian_border_war_196210.jpg
+    caption: 中印边境自卫反击战爆发历史现场与典藏影像
 - id: cn-zhou-rural-urban-tech-meeting-196301
   date: '1963-01-29'
   title: 周恩来在上海科学技术工作会议上强调实现科学技术现代化
@@ -582,6 +1120,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1963/front_ten_rules_196305.jpg
+    caption: 中共中央印发《前十条》，“四清”运动全面展开历史现场与典藏影像
 - id: cn-sino-soviet-talks-196307
   date: '1963-07-05'
   title: 中共中央与苏共中央代表在莫斯科会谈
@@ -652,6 +1193,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1963/scitech_plan_196312.jpg
+    caption: 中央和国务院原则批准“1963—1972”科学技术规划历史现场与典藏影像
 - id: cn-zhou-enlai-africa-tour-196312
   date: '1963-12-14'
   title: 周恩来总理率团访问亚非十四国
@@ -666,6 +1210,9 @@
   sources:
     - 新华网
     - 外交部档案馆
+  image:
+    url: /images/events/1963/zhou_enlai_africa_tour_196312.jpg
+    caption: 周恩来总理率团访问亚非十四国历史现场与典藏影像
 - id: cn-petroleum-self-sufficient-196312
   date: '1963-12-25'
   title: 我国石油产品基本实现自给
@@ -696,6 +1243,9 @@
     - 中华人民共和国外交部
     - 中国共产党新闻网
     - Wikipedia—China–France relations
+  image:
+    url: /images/events/1964/france_diplomatic_196401.jpg
+    caption: 中法两国正式建立外交关系历史现场与典藏影像
 - id: cn-industrial-learning-daqing-196402
   date: '1964-02-05'
   title: 中共中央号召“工业学大庆”
@@ -810,8 +1360,8 @@
     - 中国共产党新闻网
     - Wikipedia—596 (nuclear test)
   image:
-    url: /images/events/1964/china-first-atomic-bomb-196410.jpg
-    caption: 1964年10月16日，中国第一颗原子弹在新疆罗布泊爆炸成功
+    url: /images/events/1964/first_atomic_bomb_196410.jpg
+    caption: 中国第一颗原子弹爆炸成功历史现场与典藏影像
 - id: cn-four-modernizations-196501
   date: '1965-01-04'
   title: 第三届全国人大一次会议提出“四个现代化”
@@ -828,6 +1378,9 @@
     - 中国人大网
     - 新华社
     - Wikipedia—Four Modernizations
+  image:
+    url: /images/events/1965/four_modernizations_196501.jpg
+    caption: 第三届全国人大一次会议提出“四个现代化”历史现场与典藏影像
 - id: cn-second-atomic-test-196505
   date: '1965-05-14'
   title: 中国第二次原子弹试验成功
@@ -876,6 +1429,9 @@
     - 西藏自治区人民政府
     - 新华社
     - Wikipedia—Tibet Autonomous Region
+  image:
+    url: /images/events/1965/tibet_autonomous_region_196509.jpg
+    caption: 西藏自治区成立历史现场与典藏影像
 - id: cn-insulin-synthesis-196509
   date: '1965-09-17'
   title: 中国首次人工合成结晶牛胰岛素
@@ -940,6 +1496,9 @@
     - 中国共产党新闻网
     - 新华社
     - Wikipedia—May 16 Notification
+  image:
+    url: /images/events/1966/may_16_notification_196605.jpg
+    caption: 中共中央发布“五一六通知”历史现场与典藏影像
 - id: cn-nie-yuanzi-poster-196605
   date: '1966-05-25'
   title: 北京大学出现聂元梓等人大字报
@@ -988,6 +1547,9 @@
     - 新华社历史资料
     - 中国共产党新闻网
     - Wikipedia—Red Guards
+  image:
+    url: /images/events/1966/mao_meets_red_guards_196608.jpg
+    caption: 毛泽东首次接见红卫兵历史现场与典藏影像
 - id: cn-missile-nuclear-test-196610
   date: '1966-10-27'
   title: 中国首次导弹核武器试验成功
@@ -1052,6 +1614,9 @@
     - 中国工程物理研究院
     - 新华社
     - Wikipedia—Nuclear weapons tests of China
+  image:
+    url: /images/events/1967/first_hydrogen_bomb_196706.jpg
+    caption: 中国首次氢弹空投试验成功历史现场与典藏影像
 - id: cn-wuhan-incident-196707
   date: '1967-07-20'
   title: 武汉“七二〇事件”
@@ -1180,6 +1745,9 @@
     - 人民日报
     - 中国共产党新闻网
     - Wikipedia—Down to the Countryside Movement
+  image:
+    url: /images/events/1968/down_to_countryside_196812.jpg
+    caption: “知识青年上山下乡”运动全面展开历史现场与典藏影像
 - id: cn-nanjing-yangtze-bridge-196812
   date: '1968-12-29'
   title: 南京长江大桥全面建成通车
@@ -1212,6 +1780,9 @@
     - 新华社
     - 中华人民共和国外交部
     - Wikipedia—Sino-Soviet border conflict
+  image:
+    url: /images/events/1969/zhenbao_conflict_196903.jpg
+    caption: 珍宝岛武装冲突历史现场与典藏影像
 - id: cn-ninth-cpc-congress-196904
   date: '1969-04-01'
   title: 中国共产党第九次全国代表大会开幕
@@ -1292,6 +1863,9 @@
     - 中国共产党新闻网
     - 新华社
     - Wikipedia—Liu Shaoqi
+  image:
+    url: /images/events/1969/liu_shaoqi_dies_196911.jpg
+    caption: 刘少奇在河南开封逝世历史现场与典藏影像
 - id: cn-dongfanghong1-197004
   date: '1970-04-24'
   title: 中国第一颗人造卫星"东方红一号"发射成功
@@ -1308,7 +1882,7 @@
     - 中国航天科技集团
   image:
     url: /images/events/1970/dongfanghong1_197004.jpg
-    caption: 中国第一颗人造地球卫星“东方红一号”成功发射升空
+    caption: 中国第一颗人造卫星"东方红一号"发射成功历史现场与典藏影像
 - id: cn-may20-statement-197005
   date: '1970-05-20'
   title: 毛泽东发表"五·二〇"声明
@@ -1483,7 +2057,7 @@
     - 新华网
   image:
     url: /images/events/1971/un_seat_restored_1971.jpg
-    caption: 1971年第26届联大高票通过第2758号决议，恢复中华人民共和国合法席位
+    caption: 恢复联合国合法席位历史现场与典藏影像
 - id: cn-nixon-visit-197202
   date: '1972-02-21'
   title: 尼克松总统访华
@@ -1500,7 +2074,7 @@
     - 美国国务院历史办公室
   image:
     url: /images/events/1972/nixon_visit_197202.jpg
-    caption: 1972年2月美国总统尼克松访华，实现跨越太平洋的握手
+    caption: 尼克松总统访华历史现场与典藏影像
 - id: cn-shanghai-communique-197202
   date: '1972-02-28'
   title: 中美发表《上海公报》
@@ -1517,7 +2091,7 @@
     - 美国国务院
   image:
     url: /images/events/1972/shanghai_communique_197202.jpg
-    caption: 1972年中美在上海发表历史性《联合公报》
+    caption: 中美发表《上海公报》历史现场与典藏影像
 - id: cn-china-uk-ambassadorial-197203
   date: '1972-03-13'
   title: 中英关系升格为大使级
@@ -1561,7 +2135,7 @@
     - 日本外务省
   image:
     url: /images/events/1972/japan_diplomatic_normalization_197209.jpg
-    caption: 1972年9月中日两国政府签署联合声明，实现邦交正常化
+    caption: 中日恢复外交关系历史现场与典藏影像
 - id: cn-china-west-germany-diplomatic-197210
   date: '1972-10-11'
   title: 中德（西德）建立外交关系
@@ -1712,7 +2286,7 @@
     - 国家文物局
   image:
     url: /images/events/1974/terracotta_army_discovered_197403.jpg
-    caption: 1974年3月陕西临潼农民发现秦始皇陵兵马俑
+    caption: 秦始皇兵马俑被发现历史现场与典藏影像
 - id: cn-deng-un-speech-197404
   date: '1974-04-10'
   title: 邓小平在联合国特别大会发言
@@ -1942,7 +2516,7 @@
     - Wikipedia—1976 Tangshan earthquake
   image:
     url: /images/events/1976/tangshan_earthquake_197607.jpg
-    caption: 1976年7月28日河北唐山发生7.8级特大地震，全国抗震救灾
+    caption: 唐山大地震历史现场与典藏影像
 - id: cn-mao-zedong-dies-197609
   date: '1976-09-09'
   title: 毛泽东主席逝世
@@ -2082,7 +2656,7 @@
     - Wikipedia—National Higher Education Entrance Examination
   image:
     url: /images/events/1977/gaokao_restored_197710.jpg
-    caption: 1977年冬恢复高考，570万考生的命运与国家发展迎来深刻变革
+    caption: 国务院决定恢复高等学校统一招生考试历史现场与典藏影像
 - id: reform-opening-1978
   date: '1978'
   title: 十一届三中全会，改革开放始
@@ -2099,7 +2673,7 @@
     - Wikipedia—3rd Plenary Session of the 11th CCP Central Committee
   image:
     url: /images/events/1978/reform_opening_1978.jpg
-    caption: 1978年12月中共十一届三中全会在北京召开，开启改革开放新时期
+    caption: 十一届三中全会，改革开放始历史现场与典藏影像
 - id: cn-fifth-npc-constitution-197803
   date: '1978-03-05'
   title: 第五届全国人民代表大会第一次会议通过1978年宪法
@@ -2153,7 +2727,7 @@
     - Wikipedia—Practice is the sole criterion for testing truth
   image:
     url: /images/events/1978/truth_standard_197805.jpg
-    caption: 《光明日报》特约评论员文章《实践是检验真理的唯一标准》
+    caption: 《实践是检验真理的唯一标准》发表历史现场与典藏影像
 - id: cn-china-japan-peace-treaty-197808
   date: '1978-08-12'
   title: 《中日和平友好条约》签署
@@ -2220,7 +2794,7 @@
     - Wikipedia—China–United States relations
   image:
     url: /images/events/1979/us_diplomatic_relations_197901.jpg
-    caption: 1979年1月1日中美正式建立外交关系
+    caption: 中美正式建立外交关系历史现场与典藏影像
 - id: cn-deng-visits-us-197901
   date: '1979-01-29'
   title: 邓小平访美
@@ -2390,7 +2964,7 @@
     - 国务院
   image:
     url: /images/events/1980/sez_established_198008.jpg
-    caption: 设立深圳、珠海、汕头、厦门经济特区，开启改革开放大潮
+    caption: 全国人大决定设立深圳珠海汕头厦门经济特区历史现场与典藏影像
 - id: cn-gang-of-four-trial-198011
   date: '1980-11-20'
   title: 最高人民法院特别法庭公审林彪、江青反革命集团案
@@ -2505,7 +3079,7 @@
     - 国际排联
   image:
     url: /images/events/1981/volleyball_worldcup_198111.jpg
-    caption: 中国女排首夺世界杯冠军，开启“五连冠”辉煌传奇
+    caption: 中国女排首夺世界杯冠军，开启"五连冠"传奇历史现场与典藏影像
 - id: cn-one-country-two-systems-198201
   date: '1982-01-11'
   title: 邓小平首次提出"一个国家，两种制度"构想
@@ -2596,7 +3170,7 @@
     - 全国人大常委会
   image:
     url: /images/events/1982/1982_constitution_198212.jpg
-    caption: 五届全国人大五次会议表决通过现行《中华人民共和国宪法》
+    caption: 五届全国人大五次会议通过现行《中华人民共和国宪法》历史现场与典藏影像
 - id: cn-cctv-gala-1st-198302
   date: '1983-02-12'
   title: 中央电视台举办首届春节联欢晚会直播
@@ -2736,7 +3310,7 @@
     - 国际奥委会
   image:
     url: /images/events/1984/la_olympics_xuhaifeng_198407.jpg
-    caption: 许海峰在洛杉矶奥运会夺得中国奥运史上首金
+    caption: 中国重返奥运赛场，许海峰夺得中国奥运史上首金历史现场与典藏影像
 - id: cn-35th-national-day-parade-198410
   date: '1984-10-01'
   title: 首都举行建国35周年阅兵与群众游行
@@ -2796,7 +3370,7 @@
     - 外交部
   image:
     url: /images/events/1984/sino_british_joint_declaration_198412.jpg
-    caption: 中英《关于香港问题的联合声明》在北京正式签署
+    caption: 中英《关于香港问题的联合声明》在北京正式签署历史现场与典藏影像
 - id: cn-rural-10policies-198501
   date: '1985-01-01'
   title: 中共中央国务院发布活跃农村经济十项政策，取消农产品统购派购
@@ -2857,7 +3431,7 @@
     - 中央军委
   image:
     url: /images/events/1985/million_troop_cut_198506.jpg
-    caption: 邓小平在中央军委扩大会议上宣布大裁军一百万
+    caption: 邓小平宣布中国人民解放军裁减员额一百万历史现场与典藏影像
 - id: cn-first-teachers-day-198509
   date: '1985-09-10'
   title: 新中国庆祝第一个教师节
@@ -3267,7 +3841,7 @@
     - 国务院
   image:
     url: /images/events/1990/pudong_development_199004.jpg
-    caption: 中央决定开发开放上海浦东新区，拉开浦东建设序幕
+    caption: 中央宣布开发开放上海浦东新区，开启浦东开发开放进程历史现场与典藏影像
 - id: cn-beijing-asian-games-199009
   date: '1990-09-22'
   title: 第11届亚洲运动会在北京隆重开幕
@@ -3284,7 +3858,7 @@
     - 亚奥理事会
   image:
     url: /images/events/1990/beijing_asian_games_199009.jpg
-    caption: 第11届亚洲运动会在北京隆重开幕
+    caption: 第11届亚洲运动会在北京隆重开幕历史现场与典藏影像
 - id: cn-singapore-diplomatic-199010
   date: '1990-10-03'
   title: 中国与新加坡正式建立外交关系
@@ -3313,7 +3887,7 @@
     - 中国证监会
   image:
     url: /images/events/1990/shanghai_stock_exchange_199011.jpg
-    caption: 上海证券交易所开业敲响第一声锣
+    caption: 上海证券交易所正式成立历史现场与典藏影像
 - id: cn-shenzhen-stock-exchange-199012
   date: '1990-12-19'
   title: 深圳证券交易所开业试运行
@@ -3401,7 +3975,7 @@
     - 人民出版社
   image:
     url: /images/events/1992/deng_southern_tour_199201.jpg
-    caption: 邓小平视察南方并发表重要谈话，推动新一轮思想解放
+    caption: 邓小平视察南方并发表重要谈话，推动新一轮思想解放历史现场与典藏影像
 - id: cn-three-gorges-project-199204
   date: '1992-04-03'
   title: 七届全国人大五次会议通过关于兴建长江三峡工程的决议
@@ -3681,7 +4255,7 @@
     - 人民日报
   image:
     url: /images/events/1997/deng_xiaoping_death_199702.jpg
-    caption: 深切悼念邓小平同志
+    caption: 邓小平在北京逝世，中国改革开放总设计师谢世历史现场与典藏影像
 - id: cn-chongqing-municipality-199706
   date: '1997-06-18'
   title: 重庆直辖市正式挂牌成立
@@ -3712,7 +4286,7 @@
     - 新华社
   image:
     url: /images/events/1997/hong_kong_handover_199707.jpg
-    caption: 1997年7月1日，香港回归祖国政权交接仪式隆重举行
+    caption: 香港回归祖国，香港特别行政区正式成立历史现场与典藏影像
 - id: cn-15th-cpc-congress-199709
   date: '1997-09-12'
   title: 中共十五大召开，确立邓小平理论为党的指导思想
@@ -3774,7 +4348,7 @@
     - 民政部
   image:
     url: /images/events/1998/1998_flood_199806.jpg
-    caption: 1998年长江流域特大洪水，全军奋力抗洪抢险
+    caption: 长江流域发生特大洪水，全国军民奋力抗洪抢险历史现场与典藏影像
 - id: cn-rmb-stability-199807
   date: '1998-07-01'
   title: 中国政府重申人民币不贬值，并向国际社会作出承诺
@@ -3875,7 +4449,7 @@
     - 新华网
   image:
     url: /images/events/1999/50th_parade_199910.jpg
-    caption: 庆祝中华人民共和国成立50周年天安门盛大阅兵
+    caption: 庆祝中华人民共和国成立50周年，首都举行盛大世纪大阅兵历史现场与典藏影像
 - id: cn-wto-us-agreement-199911
   date: '1999-11-15'
   title: 中美就中国加入世界贸易组织签订双边市场准入协议
@@ -3909,7 +4483,7 @@
     - 中国载人航天工程办公室
   image:
     url: /images/events/1999/shenzhou1_199911.jpg
-    caption: 中国第一艘载人航天试验飞船“神舟一号”成功发射
+    caption: 中国第一艘载人航天试验飞船"神舟一号"发射成功并安全返回历史现场与典藏影像
 - id: cn-macau-handover-199912
   date: '1999-12-20'
   title: 澳门回归祖国，澳门特别行政区政府正式成立
@@ -3926,7 +4500,7 @@
     - 新华社
   image:
     url: /images/events/1999/macau_handover_199912.jpg
-    caption: 1999年12月20日，澳门回归祖国政权交接仪式隆重举行
+    caption: 澳门回归祖国，澳门特别行政区政府正式成立历史现场与典藏影像
 - id: cn-centenary-dawn-200001
   date: '2000-01-01'
   title: 全国人民欢庆千禧年，首都举行"迈向新世纪"神州世纪天坛之夜

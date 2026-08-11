@@ -28,186 +28,70 @@ const baseImages = {
 
 // Special captions lookup map
 const specialCaptions = {
-  // 1970-1979 Key Events
-  'reform-opening-1978': {
-    caption: '1978年12月中共十一届三中全会在北京召开，开启改革开放新时期',
+  // 1949, 1951-1959 Key Events
+  'cn-prc-founding-ceremony-194910': {
+    caption: '1949年10月1日毛泽东主席在天安门城楼宣告中华人民共和国成立',
     category: 'politics'
   },
-  'un-seat-restored-1971': {
-    caption: '1971年第26届联大高票通过第2758号决议，恢复中华人民共和国合法席位',
-    category: 'diplomacy'
-  },
-  'cn-dongfanghong1-197004': {
-    caption: '中国第一颗人造地球卫星“东方红一号”成功发射升空',
-    category: 'space'
-  },
-  'cn-nixon-visit-197202': {
-    caption: '1972年2月美国总统尼克松访华，实现跨越太平洋的握手',
-    category: 'diplomacy'
-  },
-  'cn-shanghai-communique-197202': {
-    caption: '1972年中美在上海发表历史性《联合公报》',
-    category: 'diplomacy'
-  },
-  'cn-japan-diplomatic-normalization-197209': {
-    caption: '1972年9月中日两国政府签署联合声明，实现邦交正常化',
-    category: 'diplomacy'
-  },
-  'cn-terracotta-army-discovered-197403': {
-    caption: '1974年3月陕西临潼农民发现秦始皇陵兵马俑',
-    category: 'tech'
-  },
-  'cn-tangshan-earthquake-197607': {
-    caption: '1976年7月28日河北唐山发生7.8级特大地震，全国抗震救灾',
-    category: 'disaster'
-  },
-  'cn-gaokao-restored-197710': {
-    caption: '1977年冬恢复高考，570万考生的命运与国家发展迎来深刻变革',
-    category: 'politics'
-  },
-  'cn-truth-standard-197805': {
-    caption: '《光明日报》特约评论员文章《实践是检验真理的唯一标准》',
-    category: 'politics'
-  },
-  'cn-us-diplomatic-relations-197901': {
-    caption: '1979年1月1日中美正式建立外交关系',
-    category: 'diplomacy'
-  },
-  'w-fall-saigon-197504': {
-    caption: '1975年4月30日美军与直升机从西贡撤离，越南战争结束',
+  'cn-yangtze-crossing-194904': {
+    caption: '1949年4月百万雄师过大江，解放军占领南京总统府',
     category: 'military'
   },
-  'w-nixon-resigns-197408': {
-    caption: '尼克松受水门事件影响发表电视讲话宣布辞去美国总统职务',
+  'cn-tibet-peaceful-liberation-195105': {
+    caption: '1951年5月《关于和平解放西藏办法的协议》在京签订现场',
     category: 'politics'
   },
-  'w-oil-crisis-197310': {
-    caption: '阿拉伯产油国实施石油禁运引发第一次全球石油危机',
+  'cn-first-five-year-plan-195301': {
+    caption: '新中国“一五计划”全面实施，鞍钢与一汽工业建设热火朝天',
     category: 'economy'
   },
-  'w-iranian-revolution-197902': {
-    caption: '1979年伊朗伊斯兰革命胜利',
-    category: 'politics'
-  },
-  'w-soviet-invasion-afghanistan-197912': {
-    caption: '1979年12月苏联出兵入侵阿富汗',
+  'cn-korean-armistice-agreement-195307': {
+    caption: '1953年7月27日《朝鲜停战协定》在板门店正式签署',
     category: 'military'
   },
-
-  // 1980-1989 Key Events
-  'w-berlin-wall-opens-198911': {
-    caption: '1989年11月9日柏林墙开放，民众拥抱欢庆推倒柏林墙',
+  'cn-first-npc-constitution-195409': {
+    caption: '第一届全国人民代表大会第一次会议表决通过新中国第一部宪法',
     category: 'politics'
   },
-  'cn-sino-british-joint-declaration-198412': {
-    caption: '中英《关于香港问题的联合声明》在北京正式签署',
+  'cn-bandung-conference-195504': {
+    caption: '周恩来总理率中国代表团出席亚非万隆会议并发表演讲',
     category: 'diplomacy'
   },
-  'cn-sez-established-198008': {
-    caption: '设立深圳、珠海、汕头、厦门经济特区，开启改革开放大潮',
+  'cn-pla-rank-system-195509': {
+    caption: '1955年9月中南海举行隆重授衔典礼，毛泽东主席授予朱德等十位元帅军衔',
+    category: 'military'
+  },
+  'cn-three-major-remoulding-195601': {
+    caption: '1956年北京各界庆祝资本主义工商业社会主义改造胜利',
     category: 'economy'
   },
-  'cn-1982-constitution-198212': {
-    caption: '五届全国人大五次会议表决通过现行《中华人民共和国宪法》',
-    category: 'law'
+  'cn-wuhan-yangtze-bridge-195710': {
+    caption: '1957年十月“万里长江第一桥”——武汉长江大桥建成通车',
+    category: 'economy'
   },
-  'cn-la-olympics-xuhaifeng-198407': {
-    caption: '许海峰在洛杉矶奥运会夺得中国奥运史上首金',
+  'cn-daqing-field-discovery-195909': {
+    caption: '1959年9月松辽平原松基三井喜喷工业油流，大庆油田诞生',
+    category: 'economy'
+  },
+  'cn-rong-guotuan-world-champion-195904': {
+    caption: '容国团夺得第25届世乒赛男单冠军，实现新中国世界冠军零的突破',
     category: 'sports'
   },
-  'cn-volleyball-worldcup-198111': {
-    caption: '中国女排首夺世界杯冠军，开启“五连冠”辉煌传奇',
-    category: 'sports'
-  },
-  'cn-million-troop-cut-198506': {
-    caption: '邓小平在中央军委扩大会议上宣布大裁军一百万',
-    category: 'military'
-  },
-  'w-chernobyl-disaster-198604': {
-    caption: '切尔诺贝利核电站发生严重爆炸泄漏事故',
-    category: 'disaster'
-  },
-  'w-challenger-disaster-198601': {
-    caption: '美国挑战者号航天飞机升空爆炸失事',
-    category: 'space'
-  },
-  'w-arpanet-tcpip-198301': {
-    caption: 'ARPANET 切换 TCP/IP 协议，现代互联网诞生',
-    category: 'tech'
-  },
-  'w-macintosh-launch-198401': {
-    caption: '史蒂夫·乔布斯发布首款图形界面 Apple Macintosh 个人电脑',
-    category: 'tech'
-  },
-
-  // 1990-1999 Key Events
-  'cn-macau-handover-199912': {
-    caption: '1999年12月20日，澳门回归祖国政权交接仪式隆重举行',
-    category: 'politics'
-  },
-  'cn-hong-kong-handover-199707': {
-    caption: '1997年7月1日，香港回归祖国政权交接仪式隆重举行',
-    category: 'politics'
-  },
-  'cn-50th-parade-199910': {
-    caption: '庆祝中华人民共和国成立50周年天安门盛大阅兵',
-    category: 'parade'
-  },
-  'cn-shenzhou1-199911': {
-    caption: '中国第一艘载人航天试验飞船“神舟一号”成功发射',
-    category: 'space'
-  },
-  'cn-deng-southern-tour-199201': {
-    caption: '邓小平视察南方并发表重要谈话，推动新一轮思想解放',
-    category: 'politics'
-  },
-  'cn-pudong-development-199004': {
-    caption: '中央决定开发开放上海浦东新区，拉开浦东建设序幕',
-    category: 'economy'
-  },
-  'cn-beijing-asian-games-199009': {
-    caption: '第11届亚洲运动会在北京隆重开幕',
-    category: 'sports'
-  },
-  'cn-shanghai-stock-exchange-199011': {
-    caption: '上海证券交易所开业敲响第一声锣',
-    category: 'economy'
-  },
-  'cn-1998-flood-199806': {
-    caption: '1998年长江流域特大洪水，全军奋力抗洪抢险',
-    category: 'disaster'
-  },
-  'cn-deng-xiaoping-death-199702': {
-    caption: '深切悼念邓小平同志',
-    category: 'politics'
-  },
-  'w-soviet-fall-1991': {
-    caption: '1991年克里姆林宫苏联国旗降下，苏联正式解体',
-    category: 'politics'
-  },
-  'w-ussr-dissolution-199112': {
-    caption: '1991年12月苏联正式解体，15个加盟共和国独立',
-    category: 'politics'
-  },
-  'w-mandela-elected-199404': {
-    caption: '纳尔逊·曼德拉当选南非首位黑人总统',
-    category: 'politics'
-  },
-  'w-eu-founded-199311': {
-    caption: '《马斯特里赫特条约》生效，欧洲联盟正式成立',
+  'w-nato-founded-194904': {
+    caption: '1949年4月12国代表在华盛顿签署《北大西洋公约》',
     category: 'diplomacy'
   },
-  'w-wto-founded-199501': {
-    caption: '世界贸易组织（WTO）在日内瓦正式成立',
-    category: 'economy'
-  },
-  'w-gulf-war-storm-199101': {
-    caption: '海湾战争“沙漠风暴”行动爆发',
-    category: 'military'
-  },
-  'w-germany-reunification-199010': {
-    caption: '1990年10月两德正式统一',
+  'w-stalin-death-195303': {
+    caption: '1953年3月苏联最高领导人斯大林在莫斯科逝世',
     category: 'politics'
+  },
+  'w-dna-double-helix-195304': {
+    caption: '沃森与克里克构建的 DNA 双螺旋结构示意模型',
+    category: 'tech'
+  },
+  'w-sputnik-1-195710': {
+    caption: '1957年10月苏联成功发射人类首颗人造地球卫星 Sputnik 1',
+    category: 'space'
   }
 }
 
@@ -216,8 +100,8 @@ function makeSlug(id) {
   return id.replace(/^(?:cn|w)-/, '').replace(/-/g, '_')
 }
 
-// 55 Years Range (1970 to 2024)
-const years = Array.from({ length: 55 }, (_, i) => String(1970 + i))
+// 76 Years Range (1949 to 2024)
+const years = Array.from({ length: 76 }, (_, i) => String(1949 + i))
 
 let updatedXiandai = 0
 for (const e of xiandai) {
@@ -298,4 +182,4 @@ for (const e of modern) {
 fs.writeFileSync(xiandaiPath, yaml.dump(xiandai, { lineWidth: -1 }), 'utf8')
 fs.writeFileSync(modernPath, yaml.dump(modern, { lineWidth: -1 }), 'utf8')
 
-console.log(`Successfully updated ${updatedXiandai} events in xiandai.yaml and ${updatedModern} events in modern.yaml for 1970-2024!`)
+console.log(`Successfully updated ${updatedXiandai} events in xiandai.yaml and ${updatedModern} events in modern.yaml for 1949-2024!`)
