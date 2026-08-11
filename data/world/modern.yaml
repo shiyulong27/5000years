@@ -8355,6 +8355,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2024/trump_victory_2024.jpg
+    caption: 2024年11月5日美国总统大选投票开票，唐纳德·特朗普锁定胜局赢得2024年美国总统大选
 - id: w-apec-g20-latin-america-202411
   date: '2024-11-16'
   title: 国家主席出席APEC与G20峰会，拉美元首外交取得丰硕成果
@@ -8404,6 +8407,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2024/damascus_syria_2024.jpg
+    caption: 2024年12月8日叙利亚反政府武装攻入首都大马士革，阿萨德家族在叙利亚长达54年的执政终结（图为大马士革历史地标）
 - id: w-israel-gaza-conflict-202412
   date: '2024-12-15'
   title: 巴以冲突外溢全中东，红海与黎巴嫩危机轮番升级
@@ -8418,6 +8424,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2024/gaza_strip_2024.jpg
+    caption: 2024年12月巴以冲突持续外溢至红海与黎巴嫩战线，引发中东局势深刻震荡
 - id: w-hottest-year-2024-202412
   date: '2024-12-28'
   title: 2024年打破2023年纪录成为全球史上最热一年
