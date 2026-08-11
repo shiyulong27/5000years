@@ -5319,6 +5319,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2001/september_11_attacks_2001.jpg
+    caption: 2001年9月11日美国纽约世贸中心与五角大楼遭遇连环恐怖袭击（“9·11”事件），改变全球反恐与国际安全格局
 - id: w-afghanistan-war-begins-200110
   date: '2001-10-07'
   title: 美英军队发动"持久自由行动"空袭塔利班，阿富汗战争全面爆发
