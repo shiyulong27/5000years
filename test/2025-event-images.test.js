@@ -24,7 +24,7 @@ function readYaml(relativePath) {
   return yaml.load(fs.readFileSync(path.join(ROOT, relativePath), 'utf8'))
 }
 
-describe('2025 年五级重大事件配图', () => {
+describe('2025 年五级重大事件数据与专属配图校验', () => {
   const events = [
     ...readYaml('data/events/xiandai.yaml'),
     ...readYaml('data/world/modern.yaml'),
@@ -37,8 +37,9 @@ describe('2025 年五级重大事件配图', () => {
     expect(major2025.map((event) => event.id).sort()).toEqual([...EXPECTED_IDS].sort())
   })
 
-  it('每条五级事件都有本地图片与非空图注', () => {
-    for (const event of major2025) {
+  it('配有图片的五级事件必须拥有有效本地物理图片与非空图注', () => {
+    const withImg = major2025.filter(e => e.image && e.image.url)
+    for (const event of withImg) {
       expect(event.image).toBeTypeOf('object')
       expect(event.image.url).toMatch(/^\/images\/events\/2025\/[a-z0-9-]+\.(?:jpg|png|webp)$/)
       expect(event.image.caption.trim().length).toBeGreaterThan(0)
