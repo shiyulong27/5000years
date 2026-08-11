@@ -6857,7 +6857,7 @@
   date: '2021-05-22'
   title: “杂交水稻之父”袁隆平院士在长沙逝世
   category: 文化
-  importance: 5 # 划时代贡献人物：袁隆平为解决全球粮食安全问题作出不可替代贡献，其逝世影响深远，评定为5级（历史转折）
+  importance: 5
   summary: |
     “杂交水稻之父”、中国工程院院士、共和国勋章获得者袁隆平在湖南长沙逝世，享年91岁。全国数十万民众自发赶赴长沙悼念，联合国及国际社会高度评价其为解决全球饥饿问题作出的划时代贡献。
   confidence: 确定
@@ -6991,6 +6991,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/beijing_winter_olympics_2022.jpg
+    caption: 2022年2月4日北京2022年冬奥会成功举办，北京成为全球首个双奥之城（图为国家体育场“鸟巢”实景照片）
 - id: cn-mu5735-crash-202203
   date: '2022-03-21'
   title: 东航MU5735航班坠毁，中国民航持续安全飞行纪录中断
@@ -7014,6 +7017,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/fujian_carrier_launch.jpg
+    caption: 2022年6月17日中国首艘弹射型航空母舰“福建舰”下水命名，标志中国海军迈入三航母时代（图为福建舰下水现场照片）
 - id: cn-hk-25th-anniversary-202207
   date: '2022-07-01'
   title: 庆祝香港回归祖国25周年
@@ -7027,6 +7033,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/hk_25th_anniversary_2022.jpg
+    caption: 2022年7月1日庆祝香港回归祖国25周年大会盛大举行，彰显一国两制强大生命力（图为香港金紫荆广场实景照片）
 - id: cn-wentian-lab-launch-202207
   date: '2022-07-24'
   title: 空间站问天实验舱成功发射
@@ -7053,6 +7062,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/taiwan_exercises_2022.jpg
+    caption: 2022年8月针对佩洛西窜访台湾，东部战区在台岛周边开展联合军事行动，塑造台海新态势
 - id: cn-20th-cpc-congress-202210
   date: '2022-10-16'
   title: 中国共产党第二十次全国代表大会胜利召开
@@ -7066,6 +7078,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/cpc_20th_congress_2022.jpg
+    caption: 2022年10月16日中国共产党第二十次全国代表大会在北京隆重召开，擘画中国式现代化宏伟蓝图（图为天安门广场与人民大会堂实景照片）
 - id: cn-mengtian-lab-launch-202210
   date: '2022-10-31'
   title: 空间站梦天实验舱成功发射
@@ -7103,6 +7118,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/jiang_zemin_memorial_2022.jpg
+    caption: 2022年11月30日江泽民同志逝世，享年96岁，全国各界沉痛悼念（图为江泽民同志历史肖像）
 - id: cn-covid-new-10-rules-202212
   date: '2022-12-07'
   title: 国务院联防联控机制发布“新十条”，优化调整疫情防控措施
@@ -7116,6 +7134,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/covid_new_10_rules_2022.jpg
+    caption: 2022年12月7日国家发布新十条进一步优化疫情防控措施，开启疫情防控新阶段（图为国家卫生健康委）
 - id: cn-cop15-montreal-framework-202212
   date: '2022-12-19'
   title: 中国作为主席国推动联合国生物多样性大会达成历史性“昆蒙框架”
@@ -7143,6 +7164,9 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2022/space_station_complete_2022.jpg
+    caption: 2022年12月中国空间站“T”字基本构型在轨组装完成，国家太空实验室全面建成（图为中国天宫空间站）
 - id: cn-two-sessions-202303
   date: 2023-03
   title: 全国两会部署落实党的二十大部署与全年目标任务
