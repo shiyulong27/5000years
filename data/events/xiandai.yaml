@@ -8,6 +8,118 @@
   importance: 5
   summary: 毛泽东于北京天安门城楼宣告中华人民共和国中央人民政府成立。
   confidence: 确定
+- id: cn-xinyang-incident-report-196101
+  date: '1961-01-01'
+  title: 中共中央批转河南信阳事件报告
+  category: 政治
+  importance: 5
+  summary: 中共中央批转河南信阳地委关于“信阳事件”的报告，提出整风整社和生产救灾的做法，成为三年困难时期的重要背景之一。
+  confidence: 确定
+  tags:
+    - 三年困难时期
+    - 党内整顿
+    - 民生
+  sources:
+    - 中国共产党新闻网
+    - 党史权威文献
+- id: cn-cpc-8th-9th-plenum-196101
+  date: '1961-01-14'
+  title: 中共八届九中全会确立经济调整方针
+  category: 经济
+  importance: 5
+  summary: 八届九中全会讨论国民经济计划执行情况，正式通过“调整、巩固、充实、提高”的八字方针，标志大跃进方针实际停止，国民经济转入调整轨道。
+  confidence: 确定
+  tags:
+    - 经济调整
+    - 三年困难时期
+    - 党内决策
+  sources:
+    - 中国共产党新闻网
+    - 党史权威文献
+- id: cn-cpc-investigation-year-196101
+  date: '1961-01-18'
+  title: 毛泽东号召全党“大兴调查研究之风”
+  category: 政治
+  importance: 5
+  summary: 八届九中全会上毛泽东号召全党大兴调查研究之风，1961年成为党史上著名的“调查研究年”。中央领导人深入一线实地调研，直接推动了公共食堂取消及农村调整政策落地。
+  confidence: 确定
+  tags:
+    - 党史
+    - 调查研究
+    - 实事求是
+  sources:
+    - 人民网
+    - 党史权威文献
+- id: cn-prc-cultural-relics-first-batch-196103
+  date: '1961-03-04'
+  title: 国务院公布第一批全国重点文物保护单位
+  category: 文化
+  importance: 4
+  summary: 国务院公布第一批全国重点文物保护单位，共180处，标志新中国文物保护工作进入制度化阶段。
+  confidence: 确定
+  tags:
+    - 文物
+    - 文化遗产
+    - 制度建设
+  sources:
+    - 党史权威文献
+    - 国务院关于公布第一批全国重点文物保护单位名单的通知
+- id: cn-26th-table-tennis-beijing-196104
+  date: '1961-04-09'
+  title: 第26届世界乒乓球锦标赛在北京隆重举行
+  category: 文化
+  importance: 5
+  summary: 4月9日至14日第26届世乒赛在北京工人体育馆举行。这是新中国首次举办国际顶级体育大赛，中国队斩获男团、男单（庄则栋）、女单（丘钟惠）三项冠军，掀起全国乒乓热潮。
+  confidence: 确定
+  tags:
+    - 体育
+    - 世乒赛
+    - 文化
+  sources:
+    - 新华网
+    - 国家体育总局
+- id: cn-peoples-commune-regulation-196105
+  date: '1961-05-21'
+  title: 中央工作会议修订农村人民公社工作条例
+  category: 经济
+  importance: 5
+  summary: 中央工作会议修改《农村人民公社工作条例（草案）》，形成修正草案，取消公共食堂和供给制等规定，并同步调整城镇人口、钢产量和相关经济政策。
+  confidence: 确定
+  tags:
+    - 农业
+    - 经济调整
+    - 人民公社
+  sources:
+    - 中国共产党新闻网
+    - 党史权威文献
+- id: cn-atomic-industry-decision-196107
+  date: '1961-07-16'
+  title: 中共中央作出加强原子能工业建设决定
+  category: 文化
+  importance: 4
+  summary: 中共中央决定自力更生、组织力量突破原子能技术，推动中国核工业与相关科技体系建设进入加速阶段。
+  confidence: 确定
+  tags:
+    - 原子能
+    - 科技
+    - 工业
+  sources:
+    - 中国共产党新闻网
+    - 党史权威文献
+- id: cn-industrial-70-rules-196109
+  date: '1961-09-16'
+  title: 中共中央通过《工业七十条》，规范国有企业管理制度
+  category: 经济
+  importance: 4
+  summary: 中共中央试行《国营工业企业工作条例（草案）》（“工业七十条”），明确了企业责任制、经济核算与生产管理规范，为国民经济调整提供了制度保障。
+  confidence: 确定
+  tags:
+    - 经济
+    - 工业
+    - 企业改革
+  sources:
+    - 人民网
+    - 党史权威文献
 - id: cn-seven-thousand-conference-196201
   date: '1962-01-11'
   title: 中共中央在北京召开“七千人大会”

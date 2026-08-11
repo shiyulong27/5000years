@@ -61,6 +61,141 @@
   importance: 4
   summary: 五十国签署《联合国宪章》，联合国正式成立，望以多边机制维持世界和平。
   confidence: 确定
+- id: w-kennedy-inauguration-196101
+  date: '1961-01-20'
+  title: 约翰·肯尼迪就任美国总统
+  category: 政治
+  importance: 4
+  summary: 约翰·F·肯尼迪宣誓就任美国总统，开启美国在冷战高峰期的新一届执政周期，并影响后续古巴和太空竞赛政策。
+  confidence: 确定
+  tags:
+    - 美国
+    - 冷战
+    - 政治
+  sources:
+    - Wikipedia
+- id: w-gagarin-orbit-196104
+  date: '1961-04-12'
+  title: 尤里·加加林成为首位进入太空的人类
+  category: 文化
+  importance: 5
+  summary: 苏联“东方一号”载人飞船成功发射升空，27岁的宇航员尤里·加加林完成人类首次环绕地球轨道飞行，宣告人类太空时代的到来。
+  confidence: 确定
+  tags:
+    - 航天
+    - 冷战
+    - 苏联
+  sources:
+    - Wikipedia
+- id: w-bay-of-pigs-196104
+  date: '1961-04-17'
+  title: 猪湾事件爆发
+  category: 战争
+  importance: 5
+  summary: 美国支持的古巴流亡者登陆古巴后迅速失利，成为冷战时期美国对外政策的重要挫败，也加剧了随后古巴危机的紧张程度。
+  confidence: 确定
+  tags:
+    - 古巴
+    - 冷战
+    - 军事行动
+  sources:
+    - Wikipedia
+- id: w-cuba-socialist-state-196105
+  date: '1961-05-01'
+  title: 菲德尔·卡斯特罗宣布古巴为社会主义国家
+  category: 政治
+  importance: 4
+  summary: 在成功击退猪湾入侵后，卡斯特罗在哈瓦那五一群众大会上正式宣布古巴革命为社会主义性质，美古断交，古巴全面倒向苏联阵营。
+  confidence: 确定
+  tags:
+    - 古巴
+    - 冷战
+    - 拉美政治
+  sources:
+    - Encyclopaedia Britannica
+    - Wikipedia
+- id: w-apollo-program-announced-196105
+  date: '1961-05-25'
+  title: 约翰·肯尼迪总统宣布启动“阿波罗”载人登月计划
+  category: 文化
+  importance: 5
+  summary: 美国总统肯尼迪在国会发表演说，正式提出“在十年内将人类送上月球并安全返回”的目标，标志着人类历史上规模最大的“阿波罗”载人登月计划全面启动。
+  confidence: 确定
+  tags:
+    - 航天
+    - 科技
+    - 冷战太空竞赛
+  sources:
+    - NASA History
+    - JFK Library
+    - Wikipedia
+- id: w-antarctic-treaty-196106
+  date: '1961-06-23'
+  title: 《南极条约》生效
+  category: 政治
+  importance: 4
+  summary: 《南极条约》正式生效，冻结南极主权争议并限制军事活动，成为冷战时期少见的全球合作范例。
+  confidence: 确定
+  tags:
+    - 国际合作
+    - 冷战
+    - 条约
+  sources:
+    - Wikipedia
+- id: w-berlin-wall-start-196108
+  date: '1961-08-13'
+  title: 柏林墙开始修建
+  category: 政治
+  importance: 5
+  summary: 东德开始修建柏林墙，柏林与德国的分裂被制度化，成为冷战欧洲最具象征性的地缘政治边界。
+  confidence: 确定
+  tags:
+    - 冷战
+    - 德国
+    - 欧洲
+  sources:
+    - Wikipedia
+- id: w-nam-founded-196109
+  date: '1961-09-01'
+  title: 不结盟运动正式诞生
+  category: 政治
+  importance: 5
+  summary: 首次不结盟国家首脑会议在贝尔格莱德举行，不结盟运动正式成立，发展中国家在冷战中的独立政治空间由此扩展。
+  confidence: 确定
+  tags:
+    - 不结盟运动
+    - 外交
+    - 发展中国家
+  sources:
+    - Wikipedia
+- id: w-cpsu-22nd-congress-196110
+  date: '1961-10-17'
+  title: 苏共二十二大召开并决定将斯大林遗体迁出列宁墓
+  category: 政治
+  importance: 4
+  summary: 苏共二十二大在莫斯科举行，赫鲁晓夫深化“去斯大林化”，大会通过决议将斯大林遗体从列宁墓迁出并安葬在克里姆林宫墙下，加剧了中苏意识形态分裂。
+  confidence: 确定
+  tags:
+    - 冷战
+    - 苏联
+    - 去斯大林化
+  sources:
+    - Encyclopaedia Britannica
+    - Wikipedia
+- id: w-tsar-bomba-test-196110
+  date: '1961-10-30'
+  title: 苏联试爆人类史上威力最大的核武器“沙皇炸弹”
+  category: 战争
+  importance: 5
+  summary: 苏联在北冰洋新地岛试爆爆炸当量达5000万吨TNT的“沙皇炸弹”（AN602氢弹），其爆炸冲击波环绕地球三次，标志着冷战核军备竞赛达到极盛峰值。
+  confidence: 确定
+  tags:
+    - 冷战
+    - 核武器
+    - 军事
+  sources:
+    - Atomic Heritage Foundation
+    - Wikipedia
 - id: w-john-glenn-orbit-196202
   date: '1962-02-20'
   title: 约翰·格伦完成轨道飞行
