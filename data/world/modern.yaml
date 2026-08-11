@@ -7647,6 +7647,9 @@
   importance: 5
   summary: 英国正式脱离欧洲联盟，结束47年成员国身份，欧洲一体化迎来历史性分水岭。
   confidence: 确定
+  image:
+    url: /images/events/2020/brexit-day-2020.jpg
+    caption: 2020年1月31日英国脱欧日，英国政府大楼以红白蓝灯光点亮
   tags:
     - 政治
     - 外交
@@ -7661,6 +7664,9 @@
   importance: 5
   summary: 世卫组织宣布新冠疫情构成全球大流行，全球陷入深度公共卫生危机与经济重创。
   confidence: 确定
+  image:
+    url: /images/events/2020/who_covid_pandemic_2020.jpg
+    caption: 2020年3月11日世卫组织评估认为新冠肺炎疫情已构成全球大流行，重塑全球卫生公共应急机制
   tags:
     - 灾害
     - 卫生
@@ -7728,6 +7734,9 @@
   importance: 5
   summary: 民主党候选人拜登击败现任总统特朗普，当选第46任美国总统。
   confidence: 确定
+  image:
+    url: /images/events/2020/biden-victory-2020.jpg
+    caption: 2020年11月7日拜登胜选后，华盛顿特区民众举行庆祝活动
   tags:
     - 政治
     - 外交
@@ -7788,6 +7797,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2021/us_capitol_riot_2021.jpg
+    caption: 2021年1月6日示威者强行闯入美国国会大厦阻挠大选选举人票认证，震惊全球
 - id: w-biden-inauguration-202101
   date: '2021-01-20'
   title: 拜登宣誓就任第46任美国总统
@@ -7841,6 +7853,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2021/us_withdrawal_afghanistan_2021.jpg
+    caption: 2021年8月美军最后一架运输机飞离喀布尔，塔利班重掌政权，长达20年的阿富汗战争画上句号
 - id: w-aukus-pact-202109
   date: '2021-09-15'
   title: 美英澳建立AUKUS三边安全伙伴关系
@@ -7969,6 +7984,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2022/russia_ukraine_war_2022.jpg
+    caption: 2022年2月24日俄罗斯宣布对乌克兰采取特别军事行动，地缘政治冲突重塑全球安全与能源格局
 - id: w-fed-rate-hikes-202203
   date: '2022-03-16'
   title: 美联储开启暴力加息周期，全球金融市场剧烈动荡
@@ -7996,6 +8014,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2022/shinzo_abe_assassinated_2022.jpg
+    caption: 2022年7月8日日本前首相安倍晋三在奈良市发表演讲时遭遇枪击身亡，震动国际政坛
 - id: w-queen-elizabeth-pass-202209
   date: '2022-09-08'
   title: 英国女王伊丽莎白二世逝世，查尔斯三世即位
@@ -8010,6 +8031,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2022/queen_elizabeth_pass_2022.jpg
+    caption: 2022年9月8日在位70年的英国女王伊丽莎白二世在巴尔莫勒尔城堡逝世，长子查尔斯即位
 - id: w-nord-stream-sabotage-202209
   date: '2022-09-26'
   title: “北溪”天然气管道发生爆炸泄漏
@@ -8063,6 +8087,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2022/chatgpt_release_2022.jpg
+    caption: 2022年11月30日OpenAI推出生成式对话模型ChatGPT，引发全球通用人工智能（AGI）技术革命
 - id: w-china-arab-summit-202212
   date: '2022-12-09'
   title: 首届中国-阿拉伯国家峰会在利雅得举行
@@ -8119,6 +8146,9 @@
   tags:
     - 灾害
     - 地震
+  image:
+    url: /images/events/2023/turkey_earthquake_2023.jpg
+    caption: 2023年2月土耳其南部爆发强震引发次生灾害，造成土叙两国逾5.9万人遇难，全球救援齐聚
 - id: w-banking-crisis-202303
   date: '2023-03-10'
   title: 硅谷银行倒闭与欧美银行业动荡
@@ -8139,6 +8169,9 @@
   tags:
     - 科技
     - AI
+  image:
+    url: /images/events/2023/gpt4_genai_boom_2023.jpg
+    caption: 2023年3月OpenAI发布GPT-4多模态大模型，推动生成式AI在科技与实体产业全面爆发
 - id: w-sudan-civil-war-202304
   date: '2023-04-15'
   title: 苏丹内战爆发
@@ -8209,6 +8242,9 @@
   tags:
     - 战争
     - 中东
+  image:
+    url: /images/events/2023/israel_hamas_war_2023.jpg
+    caption: 2023年10月7日哈马斯突袭以色列，以军对加沙地带展开大规模军事行动，巴以冲突急剧恶化
 - id: w-xijinping-biden-202311
   date: '2023-11-15'
   title: 中美元首旧金山会晤
@@ -8219,6 +8255,9 @@
   tags:
     - 外交
     - 中美
+  image:
+    url: /images/events/2023/xijinping_biden_summit_2023.jpg
+    caption: 2023年11月15日国家主席习近平在旧金山斐洛里庄园同美国总统拜登举行中美元首会晤，开辟“旧金山愿景”
 - id: w-hottest-year-202311
   date: '2023-11-30'
   title: 全球最热一年与迪拜气候大会
@@ -8657,12 +8696,12 @@
   importance: 5
   summary: 缅甸中部曼德勒附近发生7.7级强震，震源深度约10公里，曼德勒、内比都等地大量建筑倒塌，遇难数千人，泰国曼谷亦受波及，为近年来全球破坏性最强、伤亡最重的地震之一。
   confidence: 确定
+  image:
+    url: /images/events/2025/myanmar_quake_2025.jpg
+    caption: 2025年3月缅甸曼德勒7.7级强震——历史现场与典藏影像
   tags:
     - 灾害
     - 地震
-  image:
-    url: /images/events/2025/myanmar_quake_2025.jpg
-    caption: 2025年3月28日缅甸发生7.7级强震，引发国际人道主义救援行动
 - id: w-south-korea-yoon-202504
   date: '2025-04-04'
   title: 韩国宪法法院裁定尹锡悦弹劾成立

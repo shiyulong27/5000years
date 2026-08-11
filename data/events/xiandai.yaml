@@ -6638,6 +6638,9 @@
   importance: 5
   summary: 面对突如其来的新冠肺炎疫情，党中央坚持人民至上、生命至上，武汉市实施离汉通道管控，全国迅速打响疫情防控的人民战争、总体战、阻击战。
   confidence: 确定
+  image:
+    url: /images/events/2020/wuhan_lockdown.jpg
+    caption: 2020年1月武汉实施离汉通道管控后的城市防疫场景
   tags:
     - 灾害
     - 卫生
@@ -6651,6 +6654,9 @@
   importance: 5
   summary: 十三届全国人大三次会议表决通过《中华人民共和国民法典》，自2021年1月1日起施行，这是新中国历史上首个以“法典”命名的法律。
   confidence: 确定
+  image:
+    url: /images/events/2020/civil_code.jpg
+    caption: 《中华人民共和国民法典》公布文本封面
   tags:
     - 法律
     - 政治
@@ -6676,6 +6682,9 @@
   importance: 5
   summary: 十三届全国人大常委会第二十次会议表决通过香港国安法，国家主席签署主席令予以公布并实施，为香港长治久安提供坚实保障。
   confidence: 确定
+  image:
+    url: /images/events/2020/hk-national-security-law.jpg
+    caption: 《香港国安法》英文译本公版文件封面
   tags:
     - 政治
     - 法律
@@ -6702,6 +6711,9 @@
   importance: 5
   summary: 北斗三号全球卫星导航系统建成暨开通仪式在北京举行，标志着中国自主建设、独立运行的全球卫星导航系统全面建成。
   confidence: 确定
+  image:
+    url: /images/events/2020/beidou3_system.jpg
+    caption: 北斗三号全球卫星导航系统示意图
   tags:
     - 航天
     - 科技
@@ -6727,6 +6739,9 @@
   importance: 5
   summary: 中共十九届五中全会在北京举行，审议通过《中共中央关于制定国民经济和社会发展第十四个五年规划和二〇三五年远景目标的建议》。
   confidence: 确定
+  image:
+    url: /images/events/2020/jingxi-hotel-2020-plenum.jpg
+    caption: 北京京西宾馆外景，2020年十九届五中全会会址
   tags:
     - 政治
     - 改革
@@ -6753,6 +6768,9 @@
   importance: 5
   summary: 随着贵州省9个县退出贫困县序列，全国832个贫困县全部脱贫摘帽，新时代脱贫攻坚目标任务如期完成，创造人类减贫史奇迹。
   confidence: 确定
+  image:
+    url: /images/events/2020/poverty-alleviation-report.jpg
+    caption: 中国国务院新闻办公室《人类减贫的中国实践与贡献》报告封面
   tags:
     - 民生
     - 经济
@@ -6766,6 +6784,9 @@
   importance: 5
   summary: 嫦娥五号返回器携带1731克月球样品在内蒙古四子王旗成功着陆，标志着中国首次月球采样返回任务成功，完成探月工程三步走规划。
   confidence: 确定
+  image:
+    url: /images/events/2020/change5_return.jpg
+    caption: 嫦娥五号返回器携带月球样品在内蒙古四子王旗着陆
   tags:
     - 航天
     - 科技
@@ -6777,7 +6798,7 @@
   date: '2020-12-31'
   title: 中国成为全球唯一实现正增长的主要经济体，全年GDP突破100万亿元
   category: 经济
-  importance: 5
+  importance: 4
   summary: 2020年中国国内生产总值突破100万亿元人民币，同比增长2.3%，克服新冠疫情严重冲击，成为全球唯一实现正增长的主要经济体。
   confidence: 确定
   tags:
@@ -6800,6 +6821,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2021/poverty_victory_2021.jpg
+    caption: 2021年2月全国脱贫攻坚总结表彰大会举行，宣告我国脱贫攻坚战取得全面胜利，创造人类减贫史上的奇迹
 - id: cn-hk-electoral-reform-202103
   date: '2021-03-11'
   title: 全国人大通过关于完善香港特别行政区选举制度的决定
@@ -6813,6 +6837,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2021/hk_electoral_reform_2021.jpg
+    caption: 2021年3月十三届全国人大四次会议高票通过决定，完善香港特区选举制度，落实“爱国者治港”原则
 - id: cn-tianhe-core-module-202104
   date: '2021-04-29'
   title: 中国空间站天和核心舱成功发射，空间站建造全面开启
@@ -6827,6 +6854,9 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2021/tianhe_core_module_2021.jpg
+    caption: 2021年4月长征五号B运载火箭将空间站首个舱段天和核心舱送入轨道，标志中国空间站在轨建造全面开启
 - id: cn-zhurong-mars-landing-202105
   date: '2021-05-15'
   title: “祝融号”火星车成功着陆火星
@@ -6841,11 +6871,14 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2021/zhurong_mars_landing_2021.jpg
+    caption: 2021年5月天问一号着陆巡视器成功着陆于火星乌托邦平原，“祝融号”火星车开启火星巡视探测
 - id: cn-yuan-longping-pass-202105
   date: '2021-05-22'
   title: “杂交水稻之父”袁隆平院士在长沙逝世
   category: 文化
-  importance: 5
+  importance: 4
   summary: |
     “杂交水稻之父”、中国工程院院士、共和国勋章获得者袁隆平在湖南长沙逝世，享年91岁。全国数十万民众自发赶赴长沙悼念，联合国及国际社会高度评价其为解决全球饥饿问题作出的划时代贡献。
   confidence: 确定
@@ -6894,6 +6927,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2021/cpc_centenary_2021.jpg
+    caption: 2021年7月1日天安门广场举行庆祝中国共产党成立100周年大会，宣告全面建成小康社会
 - id: cn-meng-wanzhou-return-202109
   date: '2021-09-25'
   title: 孟晚舟乘坐中国政府包机安全回国
@@ -6918,6 +6954,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2021/cpc_6th_plenum_resolution_2021.jpg
+    caption: 2021年11月中共十九届六中全会通过《中共中央关于党的百年奋斗重大成就和历史经验的决议》
 - id: cn-us-china-summit-video-202111
   date: '2021-11-16'
   title: 中美元首举行首次视频会晤
@@ -6969,6 +7008,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/beijing_winter_olympics_2022.jpg
+    caption: 2022年2月第24届冬季奥林匹克运动会在北京开幕，呈现简约、安全、精彩的冰雪奥运盛会
 - id: cn-fujian-carrier-launch-202206
   date: '2022-06-17'
   title: 中国首艘弹射型航空母舰“福建舰”下水
@@ -6982,6 +7024,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/fujian_carrier_launch_2022.jpg
+    caption: 2022年6月17日我国第三艘航空母舰福建舰在上海江南造船厂下水命名，系我国首艘电磁弹射航母
 - id: cn-hk-25th-anniversary-202207
   date: '2022-07-01'
   title: 庆祝香港回归祖国25周年
@@ -6995,6 +7040,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/hk_25th_anniversary_2022.jpg
+    caption: 2022年7月1日庆祝香港回归祖国25周年大会暨香港特别行政区第六届政府就职典礼举行
 - id: cn-wentian-lab-launch-202207
   date: '2022-07-24'
   title: 空间站问天实验舱成功发射
@@ -7021,6 +7069,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/taiwan_exercises_2022.jpg
+    caption: 2022年8月针对佩洛西窜访中国台湾地区，解放军东部战区在台岛周边开展海空联合军事演训
 - id: cn-20th-cpc-congress-202210
   date: '2022-10-16'
   title: 中国共产党第二十次全国代表大会胜利召开
@@ -7034,6 +7085,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/cpc_20th_congress_2022.jpg
+    caption: 2022年10月中国共产党第二十次全国代表大会在北京召开，确立以中国式现代化全面推进中华民族伟大复兴
 - id: cn-mengtian-lab-launch-202210
   date: '2022-10-31'
   title: 空间站梦天实验舱成功发射
@@ -7049,7 +7103,7 @@
     - 国家航天局
 - id: cn-g20-bali-summit-202211
   date: '2022-11-14'
-  title: 中元首出席G20巴厘岛峰会并举行中美元首会晤
+  title: 国家主席出席G20巴厘岛峰会并举行中美元首会晤
   category: 政治
   importance: 4
   summary: 国家主席出席G20巴厘岛峰会，与美国总统拜登举行面对面会晤，确立“巴厘岛共识”，为中美关系指明方向。
@@ -7071,6 +7125,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/jiang_zemin_pass_2022.jpg
+    caption: 2022年11月30日全党全军全国各族人民公认的享有崇高威望的卓越领导人江泽民同志在上海逝世
 - id: cn-covid-new-10-rules-202212
   date: '2022-12-07'
   title: 国务院联防联控机制发布“新十条”，优化调整疫情防控措施
@@ -7084,6 +7141,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/covid_new_10_rules_2022.jpg
+    caption: 2022年12月7日国务院联防联控机制发布“新十条”，标志着我国疫情防控转入常态化新阶段
 - id: cn-cop15-montreal-framework-202212
   date: '2022-12-19'
   title: 中国作为主席国推动联合国生物多样性大会达成历史性“昆蒙框架”
@@ -7111,6 +7171,9 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2022/space_station_complete_2022.jpg
+    caption: 2022年年底中国空间站“T”字基本构型在轨组装完成，国家太空实验室全面开启营运
 - id: cn-two-sessions-202303
   date: 2023-03
   title: 全国两会部署落实党的二十大部署与全年目标任务
@@ -7131,6 +7194,9 @@
   tags:
     - 外交
     - 中东
+  image:
+    url: /images/events/2023/saudi_iran_reconciliation_2023.jpg
+    caption: 2023年3月10日在中国斡旋下，沙特与伊朗在北京签署联合声明宣布恢复外交关系，展现大国担当
 - id: cn-institution-reform-202303
   date: '2023-03-16'
   title: 党和国家机构改革启动实施
