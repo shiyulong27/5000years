@@ -7005,3 +7005,93 @@
   confidence: 确定
   tags: [梵蒂冈, 天主教, 宗教改革, 文化]
   sources: [梵蒂冈档案, Encyclopaedia Britannica, Wikipedia—Second Vatican Council]
+- id: w-palomares-nuclear-accident-196601
+  date: '1966-01-17'
+  title: 帕洛马雷斯核事故
+  category: 灾害
+  importance: 4
+  summary: 一架美国B-52轰炸机在西班牙帕洛马雷斯上空与加油机相撞，携带的氢弹坠落并造成放射性污染。
+  confidence: 确定
+  tags: [核事故, 西班牙, 美国, 放射性污染]
+  sources: [美国能源部, 西班牙核安全委员会, Wikipedia—1966 Palomares B-52 crash]
+- id: w-france-leaves-nato-command-196603
+  date: '1966-03-07'
+  title: 法国宣布退出北约一体化军事指挥体系
+  category: 政治
+  importance: 4
+  summary: 戴高乐致信美国总统约翰逊，宣布法国撤出北约一体化军事指挥结构并要求外国部队撤离法国，法国仍保留北约成员身份。
+  confidence: 确定
+  tags: [法国, 北约, 戴高乐, 冷战]
+  sources: [北约, 法国外交部, Wikipedia—France–NATO relations]
+- id: w-guyana-independence-196605
+  date: '1966-05-26'
+  title: 圭亚那独立
+  category: 政治
+  importance: 4
+  summary: 英属圭亚那脱离英国独立，成立圭亚那独立国，福布斯·伯纳姆任总理。
+  confidence: 确定
+  tags: [圭亚那, 独立, 去殖民化, 加勒比]
+  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Independence of Guyana]
+- id: w-surveyor-1-196606
+  date: '1966-06-02'
+  title: “勘测者1号”实现美国首次月面软着陆
+  category: 文化
+  importance: 4
+  summary: NASA“勘测者1号”在月球风暴洋成功软着陆并传回图像，为阿波罗载人登月任务验证月面条件。
+  confidence: 确定
+  tags: [航天, 月球, NASA, 科技]
+  sources: [NASA, JPL, Wikipedia—Surveyor 1]
+- id: w-now-founded-196606
+  date: '1966-06-30'
+  title: 美国全国妇女组织成立
+  category: 政治
+  importance: 3
+  summary: 美国妇女活动家在华盛顿创建全国妇女组织，推动就业、教育、生育和法律平等。
+  confidence: 确定
+  tags: [妇女权利, 美国, 社会运动, 性别平等]
+  sources: [National Organization for Women, 美国国会图书馆, Wikipedia—National Organization for Women]
+- id: w-england-world-cup-196607
+  date: '1966-07-30'
+  title: 英格兰赢得世界杯足球赛
+  category: 文化
+  importance: 3
+  summary: 英格兰队在伦敦温布利球场决赛中击败西德队，首次获得世界杯冠军。
+  confidence: 确定
+  tags: [世界杯, 足球, 英格兰, 体育]
+  sources: [FIFA, Encyclopaedia Britannica, Wikipedia—1966 FIFA World Cup Final]
+- id: w-verwoerd-assassinated-196609
+  date: '1966-09-06'
+  title: 南非总理维沃尔德遇刺
+  category: 政治
+  importance: 4
+  summary: 南非总理亨德里克·维沃尔德在开普敦议会内遇刺身亡；他是种族隔离制度的主要设计者之一。
+  confidence: 确定
+  tags: [南非, 种族隔离, 刺杀, 政治]
+  sources: [南非政府档案, Encyclopaedia Britannica, Wikipedia—Hendrik Verwoerd]
+- id: w-botswana-independence-196609
+  date: '1966-09-30'
+  title: 博茨瓦纳独立
+  category: 政治
+  importance: 4
+  summary: 贝专纳保护地脱离英国独立，成立博茨瓦纳共和国，塞雷茨·卡马任首任总统。
+  confidence: 确定
+  tags: [博茨瓦纳, 独立, 去殖民化, 非洲]
+  sources: [联合国, Botswana Government, Wikipedia—Independence of Botswana]
+- id: w-lesotho-independence-196610
+  date: '1966-10-04'
+  title: 莱索托独立
+  category: 政治
+  importance: 3
+  summary: 巴苏陀兰脱离英国独立，成立莱索托王国并加入英联邦。
+  confidence: 确定
+  tags: [莱索托, 独立, 去殖民化, 非洲]
+  sources: [联合国, Lesotho Government, Wikipedia—History of Lesotho]
+- id: w-human-rights-covenants-196612
+  date: '1966-12-16'
+  title: 联合国通过两项国际人权公约
+  category: 政治
+  importance: 5
+  summary: 联合国大会通过《公民权利和政治权利国际公约》及《经济、社会及文化权利国际公约》，构成国际人权法核心文件。
+  confidence: 确定
+  tags: [联合国, 人权, 国际法, 公约]
+  sources: [联合国人权事务高级专员办事处, 联合国大会, Wikipedia—International Bill of Human Rights]

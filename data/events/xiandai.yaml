@@ -6327,6 +6327,60 @@
   confidence: 确定
   tags: [文化大革命, 海瑞罢官, 政治运动, 文汇报]
   sources: [中国共产党新闻网, 新华社历史资料, Wikipedia—Hai Rui Dismissed from Office]
+- id: cn-february-outline-196602
+  date: '1966-02-12'
+  title: 中共中央批转“二月提纲”
+  category: 政治
+  importance: 4
+  summary: 中共中央批转文化革命五人小组《关于当前学术讨论的汇报提纲》，试图将《海瑞罢官》等争论限定为学术讨论；该文件数月后被撤销。
+  confidence: 确定
+  tags: [二月提纲, 文化大革命, 学术批判, 政治]
+  sources: [中国共产党新闻网, 新华社历史资料, Wikipedia—February Outline]
+- id: cn-may-16-notification-196605
+  date: '1966-05-16'
+  title: 中共中央发布“五一六通知”
+  category: 政治
+  importance: 5
+  summary: 中共中央政治局扩大会议通过《中国共产党中央委员会通知》，撤销“二月提纲”并设立新的文化革命机构，通常被视为“文化大革命”全面发动的标志。
+  confidence: 确定
+  tags: [五一六通知, 文化大革命, 中共中央, 政治运动]
+  sources: [中国共产党新闻网, 新华社, Wikipedia—May 16 Notification]
+- id: cn-nie-yuanzi-poster-196605
+  date: '1966-05-25'
+  title: 北京大学出现聂元梓等人大字报
+  category: 政治
+  importance: 4
+  summary: 聂元梓等人在北京大学张贴批判校党委的大字报，6月1日经中央人民广播电台播发后在全国引发大规模政治动员。
+  confidence: 确定
+  tags: [大字报, 北京大学, 文化大革命, 群众运动]
+  sources: [北京大学校史馆, 中国共产党新闻网, Wikipedia—Nie Yuanzi]
+- id: cn-bombard-headquarters-196608
+  date: '1966-08-05'
+  title: 毛泽东发表《炮打司令部——我的一张大字报》
+  category: 政治
+  importance: 4
+  summary: 毛泽东在中共八届十一中全会期间写下《炮打司令部》，公开批评党内领导人，推动“文化大革命”权力斗争进一步升级。
+  confidence: 确定
+  tags: [炮打司令部, 毛泽东, 八届十一中全会, 文化大革命]
+  sources: [中国共产党新闻网, 中央文献出版社资料, Wikipedia—Bombard the Headquarters]
+- id: cn-mao-meets-red-guards-196608
+  date: '1966-08-18'
+  title: 毛泽东首次接见红卫兵
+  category: 政治
+  importance: 5
+  summary: 毛泽东在北京天安门广场首次大规模接见红卫兵和师生，随后全国红卫兵运动与“大串联”迅速扩展。
+  confidence: 确定
+  tags: [红卫兵, 天安门, 文化大革命, 群众运动]
+  sources: [新华社历史资料, 中国共产党新闻网, Wikipedia—Red Guards]
+- id: cn-missile-nuclear-test-196610
+  date: '1966-10-27'
+  title: 中国首次导弹核武器试验成功
+  category: 战争
+  importance: 4
+  summary: 中国将核弹头装载在东风二号导弹上，从酒泉发射并在罗布泊靶区实现核爆炸，完成“两弹结合”试验。
+  confidence: 确定
+  tags: [两弹结合, 核武器, 导弹, 国防科技]
+  sources: [中国航天科技集团, 中国工程物理研究院, Wikipedia—Dongfeng-2]
 - id: cn-us-diplomatic-relations-197901
   date: '1979-01-01'
   title: 中美正式建立外交关系
