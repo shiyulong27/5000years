@@ -5630,6 +5630,9 @@
   sources:
     - 联合国
     - 维基百科
+  image:
+    url: /images/events/2005/kyoto_protocol_2005.jpg
+    caption: 2005年2月16日旨在限制全球温室气体排放的《京都议定书》经俄罗斯批准后正式法律生效
 - id: w-pope-john-paul-ii-death-200504
   date: '2005-04-02'
   title: 罗马教宗若望保禄二世逝世，本笃十六世继任
@@ -5644,6 +5647,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2005/pope_john_paul_pass_2005.jpg
+    caption: 2005年4月2日教宗若望保禄二世在梵蒂冈逝世，枢机主教团选举本笃十六世成为第265任教宗
 - id: w-eu-constitution-rejected-200505
   date: '2005-05-29'
   title: 法国与荷兰国民公投否决《欧洲宪法条约》，欧洲一体化进程受挫
@@ -5673,6 +5679,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2005/london_bombings_2005.jpg
+    caption: 2005年7月7日伦敦早高峰时段3列地铁与1辆公交车突发连环自杀式恐袭，导致52人遇难
 - id: w-hurricane-katrina-200508
   date: '2005-08-29'
   title: 四级飓风"卡特里娜"重创美国新奥尔良，造成逾1800人遇难
@@ -5688,6 +5697,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2005/hurricane_katrina_2005.jpg
+    caption: 2005年8月29日四级飓风卡特里娜横扫美国墨西哥湾沿岸，新奥尔良决堤遭毁灭性打击
 - id: w-kashmir-earthquake-200510
   date: '2005-10-08'
   title: 南亚克什米尔地区发生7.6级大地震，造成逾8.6万人遇难
@@ -5703,6 +5715,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2005/kashmir_earthquake_2005.jpg
+    caption: 2005年10月8日巴控克什米尔地区爆发7.6级大地震，基础设施全面毁坏，酿成极其惨重伤亡
 - id: w-merkel-chancellor-200511
   date: '2005-11-22'
   title: 安格拉·默克尔宣誓就任德国联邦总理，成为德国首位女性总理
@@ -5718,6 +5733,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2005/merkel_chancellor_2005.jpg
+    caption: 2005年11月22日默克尔在柏林宣誓就任德国联邦总理，开启长达16年的默克尔执政时代
 - id: w-java-earthquake-200605
   date: '2006-05-27'
   title: 印度尼西亚爪哇岛发生6.3级强震，造成近6000人遇难
@@ -5732,6 +5750,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/java_earthquake_2006.jpg
+    caption: 2006年5月27日印尼爪哇岛日惹地区发生6.3级强震，多处历史遗迹与村镇被夷为平地
 - id: w-montenegro-independence-200606
   date: '2006-06-03'
   title: 黑山议会正式宣布黑山独立，塞尔维亚和黑山国家联盟解体
@@ -5746,6 +5767,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/montenegro_independence_2006.jpg
+    caption: 2006年6月3日黑山议会根据公投结果正式宣布独立，南斯拉夫解体后最后的国家联盟画上句号
 - id: w-world-cup-germany-200606
   date: '2006-06-09'
   title: 第18届世界杯足球赛在德国举行，意大利队夺得冠军
@@ -5760,6 +5784,9 @@
   sources:
     - FIFA
     - 维基百科
+  image:
+    url: /images/events/2006/world_cup_germany_2006.jpg
+    caption: 2006年夏季第18届世界杯在德国成功举办，意大利队在柏林决赛通过点球大战击败法国队第四次加冕
 - id: w-lebanon-war-200607
   date: '2006-07-12'
   title: 黎以爆发第二次黎巴嫩战争，造成千余人平民伤亡
@@ -5774,6 +5801,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/lebanon_war_2006.jpg
+    caption: 2006年7月真主党越境袭击后以军对黎巴嫩展开34天大规模空袭与陆上冲突，引爆次黎以战争
 - id: w-pluto-demoted-dwarf-planet-200608
   date: '2006-08-24'
   title: 国际天文学联合会投票通过行星新定义，冥王星被降级为矮行星
@@ -5788,6 +5818,9 @@
   sources:
     - IAU
     - 维基百科
+  image:
+    url: /images/events/2006/pluto_demoted_2006.jpg
+    caption: 2006年8月24日国际天文学联合会在布拉格表决通过行星新定义，冥王星排除出九大行星行列列为矮行星
 - id: w-shinzo-abe-pm-200609
   date: '2006-09-26'
   title: 安倍晋三首次当选日本首相，成为战后日本最年轻的首相
@@ -5817,6 +5850,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/nk_first_nuclear_test_2006.jpg
+    caption: 2006年10月9日朝鲜宣布成功进行首次地下核试验，联合国安理会全票一致通过第1718号制裁决议
 - id: w-saddam-executed-200612
   date: '2006-12-30'
   title: 伊拉克前总统萨达姆·侯赛因在巴格达被执行绞刑
@@ -5832,6 +5868,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/saddam_executed_2006.jpg
+    caption: 2006年12月30日伊拉克前总统萨达姆因杜贾尔村案被伊拉克特别法庭判处绞刑并执行
 - id: w-ban-ki-moon-un-200701
   date: '2007-01-01'
   title: 潘基文正式就任联合国第八任秘书长
@@ -5847,6 +5886,9 @@
     - 联合国
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2007/ban_ki_moon_un_2007.jpg
+    caption: 2007年1月1日韩国外交官潘基文接替安南宣誓就任第八任联合国秘书长，展开为期10年任期
 - id: w-iphone-launch-200701
   date: '2007-01-09'
   title: 史蒂夫·乔布斯在旧金山正式发布首款 iPhone，重新定义智能手机
@@ -5861,6 +5903,9 @@
   sources:
     - 维基百科
     - Apple
+  image:
+    url: /images/events/2007/iphone_launch_2007.jpg
+    caption: 2007年1月9日史蒂夫·乔布斯在旧金山Macworld大会发布第一代iPhone，开启移动互联网多点触控新时代
 - id: w-putin-munich-speech-200702
   date: '2007-02-10'
   title: 俄罗斯总统普京在慕尼黑安全会议发表重要演讲，猛烈批评单极世界
@@ -5876,6 +5921,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2007/putin_munich_speech_2007.jpg
+    caption: 2007年2月10日俄罗斯总统普京在慕尼黑安全会议发表讲话，严厉谴责美国单极霸权与北约东扩
 - id: w-subprime-mortgage-crisis-200704
   date: '2007-04-02'
   title: 美国第二大次级房贷公司申请破产保护，次贷危机正式显现
@@ -5890,6 +5938,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2007/subprime_mortgage_crisis_2007.jpg
+    caption: 2007年4月美国第二大次级房贷公司新世纪金融申请破产，次贷违约风暴拉开全球金融危机序幕
 - id: w-virginia-tech-shooting-200704
   date: '2007-04-16'
   title: 美国弗吉尼亚理工大学发生恶性枪击案，造成33人死亡
@@ -5946,6 +5997,9 @@
   sources:
     - IPCC
     - 维基百科
+  image:
+    url: /images/events/2007/ipcc_ar4_report_2007.jpg
+    caption: 2007年11月IPCC发布第四次评估报告警告全球变暖极可能由人类活动导致，该机构同年获诺贝尔和平奖
 - id: w-benazir-bhutto-assassination-200712
   date: '2007-12-27'
   title: 巴基斯坦前总理贝娜齐尔·布托在拉瓦尔品第遇刺身亡
@@ -5961,6 +6015,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2007/benazir_bhutto_assassinated_2007.jpg
+    caption: 2007年12月27日巴基斯坦首位女性总理布托在拉瓦尔品第竞选集会后遭枪击自杀式恐袭身亡
 - id: w-kosovo-independence-200802
   date: '2008-02-17'
   title: 科索沃正式宣布从塞尔维亚独立，引发国际社会严重分歧
@@ -5975,6 +6032,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/kosovo_independence_2008.jpg
+    caption: 2008年2月17日科索沃单方面宣布脱离塞尔维亚独立，塞尔维亚与俄罗斯坚决反对，西方多国予以承认
 - id: w-tibet-beijing-olympic-relay-200804
   date: '2008-04-07'
   title: 北京奥运火炬巴黎传递受到蓄意干扰，中国民众强烈谴责
@@ -6002,6 +6062,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/myanmar_cyclone_2008.jpg
+    caption: 2008年5月强热带气旋纳尔吉斯席卷缅甸伊洛瓦底江三角洲引发巨大风暴潮，造成逾138000人遇难失踪
 - id: w-russia-georgia-war-200808
   date: '2008-08-08'
   title: 俄格战争爆发，俄罗斯军队进入南奥塞梯与格鲁吉亚交战
@@ -6016,6 +6079,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/russia_georgia_war_2008.jpg
+    caption: 2008年8月格鲁吉亚进攻南奥塞梯后俄军大规模介入击退格军，随后俄罗斯宣布承认南奥塞梯与阿布哈兹独立
 - id: w-phelps-eight-gold-200808
   date: '2008-08-16'
   title: 美国游泳运动员迈克尔·菲尔普斯在北京奥运会夺得8枚金牌，创历史纪录
@@ -6043,6 +6109,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/lehman_bankruptcy_2008.jpg
+    caption: 2008年9月15日拥有158年历史的美国第四大投资银行雷曼兄弟申请破产保护，引发1929年以来最严重全球金融危机
 - id: w-us-government-bailout-200810
   date: '2008-10-03'
   title: 美国国会通过7000亿美元金融救援计划（TARP），布什总统签署生效
@@ -6058,6 +6127,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/us_tarp_bailout_2008.jpg
+    caption: 2008年10月美国总统布什签署7000亿美元不良资产救助计划TARP，紧急救助受创华尔街金融机构
 - id: w-obama-wins-election-200811
   date: '2008-11-04'
   title: 民主党候选人巴拉克·奥巴马当选美国第44任总统，成为首位非裔总统
@@ -6072,6 +6144,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/obama_win_election_2008.jpg
+    caption: 2008年11月4日民主党候选人巴拉克·奥巴马在大选中击败麦凯恩，创造历史成为美国首位非裔总统
 - id: w-g20-washington-summit-200811
   date: '2008-11-15'
   title: G20峰会首次在华盛顿举行，协调各国应对全球金融危机
@@ -6086,6 +6161,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/g20_washington_summit_2008.jpg
+    caption: 2008年11月15日G20领导人首次在华盛顿举行峰会，确立G20作为国际经济合作主要平台
 - id: w-mumbai-terrorist-attacks-200811
   date: '2008-11-26'
   title: 印度孟买发生连环恐怖袭击，造成逾160人遇难
@@ -6101,6 +6179,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/mumbai_terror_attacks_2008.jpg
+    caption: 2008年11月26日枪手突袭孟买泰姬玛哈酒店及火车站等多处地标，武装围攻持续近60小时致166人死亡
 - id: w-obama-inauguration-200901
   date: '2009-01-20'
   title: 巴拉克·奥巴马宣誓就任美国第44任总统，成为首位非裔美国总统
@@ -6115,6 +6196,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/obama_inauguration_2009.jpg
+    caption: 2009年1月20日近200万民众在华盛顿国家广场见证奥巴马宣誓就职，开启“变革”执政时代
 - id: w-g20-london-summit-200904
   date: '2009-04-02'
   title: G20伦敦峰会达成共识，承诺注入1.1万亿美元应对全球金融危机
@@ -6130,6 +6214,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/g20_london_summit_2009.jpg
+    caption: 2009年4月2日G20伦敦峰会达成历史性共识，承诺注入1.1万亿美元支持全球贸易与国际金融体系
 - id: w-north-korea-second-nuclear-test-200905
   date: '2009-05-25'
   title: 朝鲜进行第二次核试验，联合国安理会一致通过制裁决议
@@ -6145,6 +6232,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/nk_second_nuclear_test_2009.jpg
+    caption: 2009年5月25日朝鲜宣布进行第二次地下核试验，安理会一致通过第1874号决议强化制裁
 - id: w-swine-flu-pandemic-200906
   date: '2009-06-11'
   title: 世卫组织宣布甲型H1N1流感进入全球大流行（6级）最高警戒
@@ -6160,6 +6250,9 @@
     - WHO
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/h1n1_pandemic_2009.jpg
+    caption: 2009年6月11日世卫组织将甲型H1N1流感警戒级别提升至最高6级，宣告全球流感大流行
 - id: w-iran-election-protests-200906
   date: '2009-06-12'
   title: 伊朗总统选举后爆发大规模抗议示威，"绿色运动"震动德黑兰
@@ -6203,6 +6296,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/us_withdraw_iraq_cities_2009.jpg
+    caption: 2009年6月30日美军作战部队全面撤出伊拉克城镇，伊拉克设立“主权日”全面接管安全战线
 - id: w-obama-peace-prize-200910
   date: '2009-10-09'
   title: 美国总统奥巴马获授2009年诺贝尔和平奖，引发全球广泛争议
@@ -6232,6 +6328,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/lisbon_treaty_2009.jpg
+    caption: 2009年12月1日改革欧盟运作机制的《里斯本条约》生效，设立欧盟理事会常任主席与外交高级代表
 - id: w-cop15-copenhagen-200912
   date: '2009-12-07'
   title: 《联合国气候变化框架公约》第15次缔约方大会（COP15）在哥本哈根举行
@@ -6248,6 +6347,9 @@
     - 联合国
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/cop15_copenhagen_2009.jpg
+    caption: 2009年12月联合国哥本哈根气候大会召开，近百位国家元首出席，发表《哥本哈根协议》
 - id: w-haiti-earthquake-201001
   date: '2010-01-12'
   title: 海地发生7.3级特大地震
@@ -6314,6 +6416,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2010/eurozone_crisis_2010.jpg
+    caption: 2010年5月希腊债务危机蔓延引发欧洲主权债务危机，欧盟与IMF紧急设立7500亿欧元救助机制
 - id: w-wikileaks-afghan-war-201007
   date: '2010-07-25'
   title: 维基解密曝光数万份阿富汗战争机密档案
@@ -6367,6 +6472,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2010/arab_spring_begins_2010.jpg
+    caption: 2010年12月突尼斯暴发街头抗议拉开阿拉伯之春序幕，深刻改写中东北非多国政治格局
 - id: w-brics-south-africa-201012
   date: '2010-12-24'
   title: 南非正式加入，“金砖四国”扩容为“金砖国家”（BRICS）
@@ -6393,6 +6501,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2011/egypt_revolution_2011.jpg
+    caption: 2011年2月开罗解放广场爆发大规模抗议，执政30年的埃及总统穆巴拉克被迫辞职下台
 - id: w-china-gdp-second-official-201102
   date: '2011-02-14'
   title: 日本正式证实中国2010年经济总量赶超日本跃居世界第二
@@ -6407,6 +6518,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2011/japan_gdp_data_2011.jpg
+    caption: 2011年2月14日日本内阁府发布数据证实中国2010年GDP正式超越日本跃居世界第二大经济体
 - id: w-fukushima-disaster-201103
   date: '2011-03-11'
   title: 日本发生9.0级特大地震并引发巨大海啸与福岛核事故
@@ -6422,6 +6536,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2011/fukushima_disaster_2011.jpg
+    caption: 2011年3月11日日本东北部海域发生9.0级强震海啸，引发福岛第一核电站严重核泄漏 disaster
 - id: w-libya-war-201103
   date: '2011-03-19'
   title: 多国联军空袭利比亚，卡扎菲政权倒台
@@ -6436,6 +6553,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2011/libya_war_2011.jpg
+    caption: 2011年3月美法英多国对利比亚发动空袭，卡扎菲执政42年政权覆灭并于10月遇害
 - id: w-bin-laden-killed-201105
   date: '2011-05-02'
   title: “基地”组织头目本·拉登被美军特种部队击毙
@@ -6450,6 +6570,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2011/bin_laden_killed_2011.jpg
+    caption: 2011年5月2日美军海豹突击队在巴基斯坦阿伯塔巴德展开行动突袭击毙基地组织头目本·拉登
 - id: w-south-sudan-independence-201107
   date: '2011-07-09'
   title: 南苏丹共和国独立，成为联合国第193个成员国
@@ -6530,6 +6653,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2011/iraq_war_end_2011.jpg
+    caption: 2011年12月15日美军在巴格达降下军旗举行撤离仪式，历时8年、耗资数万亿美元的伊拉克战争结束
 - id: w-us-pivot-to-asia-201201
   date: '2012-01-05'
   title: 美国发布新军事战略报告，宣布战略重心转向亚太（“亚太再平衡”）
@@ -6558,6 +6684,9 @@
     - CERN
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2012/higgs_boson_cern_2012.jpg
+    caption: 2012年7月4日欧洲核子研究中心在大型强子对撞机LHC实验中证实发现“上帝粒子”希格斯玻色子
 - id: w-curiosity-rover-mars-201208
   date: '2012-08-06'
   title: 美国“好奇号”火星车成功着陆火星
@@ -6598,6 +6727,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2012/diaoyu_islands_countermeasures_2012.jpg
+    caption: 2012年9月日本宣布所谓“购买”钓鱼岛，中国政府严正公布钓鱼岛领海基线并开启常态化巡航
 - id: w-benghazi-attack-201209
   date: '2012-09-11'
   title: 美国驻利比亚班加西领事馆遇袭，大使史蒂文斯遇害
@@ -6718,6 +6850,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2013/snowden_prism_leak_2013.jpg
+    caption: 2013年6月爱德华·斯诺登通过媒体揭露美国国家安全局“棱镜”全球监听计划，引发网络安全风暴
 - id: w-egypt-morsi-ousted-201307
   date: '2013-07-03'
   title: 埃及军方解职总统穆尔西，塞西接管政权
@@ -6771,6 +6906,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2013/ukraine_euromaidan_2013.jpg
+    caption: 2013年11月基辅独立广场爆发大规模抗议，演变为政治剧变与此后乌克兰地缘危机根源
 - id: w-nelson-mandela-pass-201312
   date: '2013-12-05'
   title: 纳尔逊·曼德拉逝世，享年95岁
@@ -6786,6 +6924,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2013/nelson_mandela_pass_2013.jpg
+    caption: 2013年12月5日南非首位黑人总统、诺贝尔和平奖得主曼德拉在约翰尼斯堡逝世，全球哀悼
 - id: w-wto-bali-package-201312
   date: '2013-12-07'
   title: 世贸组织达成《巴厘一揽子协定》，多哈回合谈判取得历史性突破
@@ -6813,6 +6954,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2014/mh370_disappearance_2014.jpg
+    caption: 2014年3月8日载有239人（含154名中国乘客）的MH370客机在吉隆坡飞往北京途中失联
 - id: w-crimea-annexation-201403
   date: '2014-03-18'
   title: 克里米亚举行公投加入俄罗斯，引发乌克兰危机与西方制裁
@@ -6827,6 +6971,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2014/crimea_annexation_2014.jpg
+    caption: 2014年3月18日普京在莫斯科签署条约将克里米亚并入俄罗斯，引发美欧对俄多轮严厉制裁
 - id: w-ebola-outbreak-201403
   date: '2014-03-25'
   title: 西非暴发史上最严重埃博拉病毒疫情，世卫组织宣布紧急状态
@@ -6854,6 +7001,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2014/isis_caliphate_2014.jpg
+    caption: 2014年6月29日巴格达迪在摩苏尔自称“哈里发”，极端组织ISIS占领叙伊大片领土震惊世界
 - id: w-ndb-brics-bank-201407
   date: '2014-07-15'
   title: 金砖国家在巴西第九届峰会上宣布设立新开发银行（NDB）
@@ -6881,6 +7031,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2014/mh17_shot_down_2014.jpg
+    caption: 2014年7月17日马航MH17客机在乌克兰顿涅茨克州近俄边境上空被山毛榉导弹击落，机上298人全部遇难
 - id: w-scottish-referendum-201409
   date: '2014-09-18'
   title: 苏格兰举行独立公投，55%选民投票留在英国
@@ -6909,6 +7062,9 @@
   sources:
     - ESA
     - 维基百科
+  image:
+    url: /images/events/2014/philae_comet_landing_2014.jpg
+    caption: 2014年11月12日欧洲“罗塞塔”号探测器的“菲莱”着陆器成功软着陆67P彗星，人类首次登彗星
 - id: w-fed-tapering-ends-201411
   date: '2014-11-20'
   title: 美联储宣布完全结束量化宽松（QE3）资产购买计划
@@ -6936,6 +7092,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2014/us_cuba_reconciliation_2014.jpg
+    caption: 2014年12月17日奥巴马与劳尔·卡斯特罗同步发表讲话，结束长达半个多世纪的冷战对立与封锁
 - id: w-charlie-hebdo-shooting-201501
   date: '2015-01-07'
   title: 法国巴黎《查理周刊》总部遭恐怖袭击

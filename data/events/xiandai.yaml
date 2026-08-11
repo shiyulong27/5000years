@@ -4695,6 +4695,9 @@
   sources:
     - 新华网
     - 人大网
+  image:
+    url: /images/events/2005/anti_secession_law_2005.jpg
+    caption: 2005年3月14日十届全国人大三次会议高票通过《反分裂国家法》，为遏制“台独”分裂维护和平提供法律保障
 - id: cn-lien-chan-visit-200504
   date: '2005-04-29'
   title: 中共中央总书记胡锦涛与中国国民党主席连战举行历史性会谈（连胡会）
@@ -4710,6 +4713,9 @@
   sources:
     - 新华网
     - 国台办
+  image:
+    url: /images/events/2005/lien_chan_visit_2005.jpg
+    caption: 2005年4月29日国共两党最高领导人时隔60年首次举行历史性正式会谈，发布“两岸和平发展共同愿景”
 - id: cn-renminbi-reform-200507
   date: '2005-07-21'
   title: 中国人民银行宣布实施人民币汇率形成机制改革
@@ -4725,6 +4731,9 @@
   sources:
     - 中国人民银行
     - 新华网
+  image:
+    url: /images/events/2005/renminbi_reform_2005.jpg
+    caption: 2005年7月21日我国开始实行以市场供求为基础、参考一篮子货币进行调节、有管理的浮动汇率制度
 - id: cn-victory-60th-200509
   date: '2005-09-03'
   title: 中国人民抗日战争暨世界反法西斯战争胜利60周年纪念大会举行
@@ -4738,6 +4747,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2005/victory_60th_commemoration_2005.jpg
+    caption: 2005年9月3日在人民大会堂隆重举行抗战胜利60周年纪念大会，颁发中国人民抗日战争胜利60周年纪念章
 - id: cn-mount-everest-height-200510
   date: '2005-10-09'
   title: 国务院新闻办正式公布珠穆朗玛峰峰顶岩石面海拔高程为8844.43米
@@ -4753,6 +4765,9 @@
   sources:
     - 国家测绘局
     - 新华网
+  image:
+    url: /images/events/2005/everest_height_2005.jpg
+    caption: 2005年10月9日国务院新闻办正式公布我国登顶复测得到的珠穆朗玛峰峰顶岩石面海拔高程8844.43米
 - id: cn-shenzhou6-space-mission-200510
   date: '2005-10-12'
   title: 神舟六号载人飞船成功发射，航天员费俊龙、聂海胜顺利展开多人多天太空飞行
@@ -4767,6 +4782,9 @@
   sources:
     - 国家航天局
     - 新华网
+  image:
+    url: /images/events/2005/shenzhou6_spaceflight_2005.jpg
+    caption: 2005年10月12日神舟六号成功发射，航天员费俊龙、聂海胜展开我国首次多人多天太空飞行并安全返回
 - id: cn-songhua-river-pollution-200511
   date: '2005-11-13'
   title: 吉林石化双苯厂爆炸引发松花江重大水污染事件
@@ -4796,6 +4814,9 @@
   sources:
     - 新华网
     - 人大网
+  image:
+    url: /images/events/2005/agricultural_tax_repeal_2005.jpg
+    caption: 2005年12月29日十届全国人大常委会第十九次会议通过决定，自2006年1月1日起废止《农业税条例》
 - id: cn-agricultural-tax-repeal-200601
   date: '2006-01-01'
   title: 中华人民共和国废止农业税条例，在中国延续2600年的"皇粮国税"正式退出历史舞台
@@ -4811,6 +4832,9 @@
   sources:
     - 新华网
     - 人大网
+  image:
+    url: /images/events/2006/agricultural_tax_free_2006.jpg
+    caption: 2006年1月1日起我国全面取消农业税，延续2600年的“皇粮国税”退出历史舞台，惠及九亿农民
 - id: cn-socialist-values-200603
   date: '2006-03-04'
   title: 胡锦涛提出以"八荣八耻"为主要内容的社会主义荣辱观
@@ -4837,6 +4861,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2006/five_year_plan_11th_2006.jpg
+    caption: 2006年3月全国人大表决通过“十一五”规划纲要，将“计划”改为“规划”，明确科学发展观指导
 - id: cn-three-gorges-dam-completed-200605
   date: '2006-05-20'
   title: 三峡大坝全线浇筑达到设计高程185米，主体工程全面建成
@@ -4852,6 +4879,9 @@
   sources:
     - 新华网
     - 中国三峡
+  image:
+    url: /images/events/2006/three_gorges_dam_2006.jpg
+    caption: 2006年5月20日长江三峡水利枢纽大坝全线浇筑至185米设计高程，防洪发电水利工程主体全面建成
 - id: cn-qinghai-tibet-railway-open-200607
   date: '2006-07-01'
   title: 青藏铁路全线通车运营，结束西藏不通铁路的历史
@@ -4867,6 +4897,9 @@
   sources:
     - 新华网
     - 铁道部
+  image:
+    url: /images/events/2006/qinghai_tibet_railway_2006.jpg
+    caption: 2006年7月1日青藏铁路全线通车，天路贯通高原，攻克冻土、高寒缺氧等多项世界级技术难题
 - id: cn-typhoon-saomai-200608
   date: '2006-08-10'
   title: 1949年以来登陆中国大陆最强台风"桑美"登陆浙江苍南
@@ -4893,6 +4926,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2006/cpc_16th_6th_plenum_2006.jpg
+    caption: 2006年10月十六届六中全会在京举行，审议通过《中共中央关于构建社会主义和谐社会若干重大问题的决定》
 - id: cn-long-march-70th-200610
   date: '2006-10-22'
   title: 纪念中国工农红军长征胜利70周年大会在北京隆重举行
@@ -4919,6 +4955,9 @@
   sources:
     - 外交部
     - 新华网
+  image:
+    url: /images/events/2006/focac_beijing_summit_2006.jpg
+    caption: 2006年11月4日中非合作论坛北京峰会在人民大会堂开幕，48个非洲国家元首和代表团齐聚北京
 - id: cn-cross-strait-charter-flights-200702
   date: '2007-02-15'
   title: 两岸包机常态化与海峡两岸经济文化交流持续深化
@@ -4946,6 +4985,9 @@
   sources:
     - 新华网
     - 人大网
+  image:
+    url: /images/events/2007/property_law_2007.jpg
+    caption: 2007年3月16日十届全国人大高票通过《物权法》，明确国家、集体、私人的物权受法律平等保护
 - id: cn-harmony-bullet-train-200704
   date: '2007-04-18'
   title: 中国铁路第六次大提速，"和谐号"动车组（CRH）正式投入运营
@@ -4961,6 +5003,9 @@
   sources:
     - 铁道部
     - 新华网
+  image:
+    url: /images/events/2007/crh_harmony_bullet_train_2007.jpg
+    caption: 2007年4月18日中国铁路实施第六次大提速，时速200公里“和谐号”动车组正式组网投入运营
 - id: cn-tai-lake-algae-blooms-200705
   date: '2007-05-29'
   title: 太湖蓝藻大面积爆发致无锡自来水危机，国家重拳整治水污染
@@ -4989,6 +5034,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2007/hk_10th_anniversary_2007.jpg
+    caption: 2007年7月1日庆祝香港回归祖国10周年大会暨第三届特区政府就职典礼举行，彰显“一国两制”生命力
 - id: cn-rural-minimum-living-allowance-200707
   date: '2007-07-11'
   title: 国务院印发通知在全国范围建立农村最低生活保障制度
@@ -5004,6 +5052,9 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: /images/events/2007/rural_dibao_system_2007.jpg
+    caption: 2007年7月国务院发布通知在全国范围全面建立农村最低生活保障制度，织牢兜底保障网
 - id: cn-cpc-17th-congress-200710
   date: '2007-10-15'
   title: 中国共产党第十七次全国代表大会在北京胜利召开
@@ -5017,6 +5068,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2007/cpc_17th_congress_2007.jpg
+    caption: 2007年10月十七大在北京召开，将科学发展观写入党章，提出开创中国特色社会主义新局面
 - id: cn-shanghai-stock-index-6000-200710
   date: '2007-10-16'
   title: 沪指突破6124点创历史新高，中国资本市场迎来前所未有大牛市
@@ -5045,6 +5099,9 @@
   sources:
     - 国家航天局
     - 新华网
+  image:
+    url: /images/events/2007/change1_lunar_orbiter_2007.jpg
+    caption: 2007年10月24日我国首颗月球探测卫星嫦娥一号在西昌发射成功，迈出中国探月工程“绕”的第一步
 - id: beijing-olympics-2008
   date: '2008'
   title: 北京奥运
@@ -5065,6 +5122,9 @@
     - 社会稳定
   sources:
     - 新华网
+  image:
+    url: /images/events/2008/lhasa_314_incident_2008.jpg
+    caption: 2008年3月14日拉萨发生打砸抢烧严重暴力事件，西藏自治区党委政府依法迅速处置恢复秩序
 - id: cn-wenchuan-earthquake-200805
   date: '2008-05-12'
   title: 四川汶川发生8.0级特大地震，举国上下同心抗震救灾
@@ -5078,6 +5138,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2008/wenchuan_earthquake_2008.jpg
+    caption: 2008年5月12日汶川发生8.0级特大地震，全国军民众志成城开展规模空前的抗震救灾与灾后重建
 - id: cn-beijing-olympics-200808
   date: '2008-08-08'
   title: 第29届夏季奥林匹克运动会在北京隆重开幕，中国首次举办夏季奥运会
@@ -5108,6 +5171,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2008/beijing_olympics_medals_2008.jpg
+    caption: 2008年8月24日北京奥运会闭幕，中国代表团斩获51枚金牌跃居金牌榜第一名，创百年奥运历史辉煌
 - id: cn-melamine-scandal-200809
   date: '2008-09-11'
   title: 三鹿奶粉三聚氰胺事件曝光，国家启动I级食品安全应急响应
@@ -5122,6 +5188,9 @@
   sources:
     - 新华网
     - 卫生部
+  image:
+    url: /images/events/2008/melamine_scandal_2008.jpg
+    caption: 2008年9月三鹿三聚氰胺毒奶粉事件曝光，国务院启动食品安全事故I级响应，重塑食品药品监管法制
 - id: cn-shenzhou7-spacewalk-200809
   date: '2008-09-27'
   title: 航天员翟志刚完成中国首次太空出舱行走，神舟七号载人任务圆满成功
@@ -5136,6 +5205,9 @@
   sources:
     - 国家航天局
     - 新华网
+  image:
+    url: /images/events/2008/shenzhou7_spacewalk_2008.jpg
+    caption: 2008年9月27日神舟七号航天员翟志刚迈出舱门，手挥国旗成功完成中国首次太空出舱漫步壮举
 - id: cn-global-financial-crisis-response-2008
   date: '2008-11-05'
   title: 国务院公布扩大内需促进经济平稳较快增长十项措施（4万亿投资计划）
@@ -5151,6 +5223,9 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: /images/events/2008/stimulus_package_4trillion_2008.jpg
+    caption: 2008年11月为应对全球金融危机冲击，国务院公布扩大内需十项措施，实行积极财政政策
 - id: cn-cross-strait-three-links-200812
   date: '2008-12-15'
   title: 海峡两岸海运直航、空运直航、直接通邮全面实现，"大三通"时代正式来临
@@ -5165,6 +5240,9 @@
   sources:
     - 国台办
     - 新华网
+  image:
+    url: /images/events/2008/cross_strait_three_links_2008.jpg
+    caption: 2008年12月15日海峡两岸直接海运、空运直航与直接通邮全面启动，两岸关系跨入“大三通”时代
 - id: cn-reform-openning-30th-200812
   date: '2008-12-18'
   title: 纪念党的十一届三中全会召开30周年大会在北京隆重举行
@@ -5178,6 +5256,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2008/reform_30th_anniversary_2008.jpg
+    caption: 2008年12月18日纪念十一届三中全会召开30周年大会在京举行，总结30年改革开放宏伟历史进程
 - id: cn-shanghai-expo-preparation-2009
   date: '2009-01-22'
   title: 2010年上海世界博览会建设工作全面推进，迎接"城市，让生活更美好"
@@ -5205,6 +5286,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2009/new_healthcare_reform_2009.jpg
+    caption: 2009年4月6日中共中央国务院印发深化医药卫生体制改革意见，开启覆盖全民的基础医疗保障建设
 - id: cn-h1n1-response-200906
   date: '2009-05-11'
   title: 中国内地发现首例输入性甲型H1N1流感病例，全面启动应急响应
@@ -5245,6 +5329,9 @@
     - 社会稳定
   sources:
     - 新华网
+  image:
+    url: /images/events/2009/urumqi_75_incident_2009.jpg
+    caption: 2009年7月5日乌鲁木齐发生严重打砸抢烧杀暴力犯罪事件，政府依法坚决果断平息暴乱恢复治安
 - id: cn-social-security-coverage-2009
   date: '2009-09-04'
   title: 国务院发布新农村社会养老保险试点方案，探索建立"新农保"制度
@@ -5259,6 +5346,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2009/rural_pension_scheme_2009.jpg
+    caption: 2009年9月1日国务院发布开展新型农村社会养老保险试点指导意见，迈出实现老有所养制度关键一步
 - id: cn-g20-copenhagen-diplomacy-2009
   date: '2009-09-24'
   title: 国家主席胡锦涛出席联合国气候变化峰会并在G20匹兹堡峰会上提出中国减排承诺
@@ -5285,6 +5375,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2009/prc_60th_parade_2009.jpg
+    caption: 2009年10月1日首都各界庆祝新中国成立60周年大会与盛大阅兵式举行，展示甲子辉煌成就与国防实力
 - id: cn-economy-first-recovery-2009
   date: '2009-11-10'
   title: 中国经济在全球金融危机中率先回升向好，GDP全年增长8.7%
@@ -5299,6 +5392,9 @@
   sources:
     - 国家统计局
     - 新华网
+  image:
+    url: /images/events/2009/china_economy_recovery_2009.jpg
+    caption: 2009年中国GDP增长8.7%率先实现经济回升向好，成为支撑全球经济复苏的核心引擎
 - id: cn-major-projects-2009
   date: '2009-12-26'
   title: 武广高速铁路正式开通运营，中国进入高铁快速发展时代
@@ -5313,6 +5409,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2009/wuguang_hsr_open_2009.jpg
+    caption: 2009年12月26日武广高铁通车运营，时速350公里刷新世界铁路运营试验最高速
 - id: cn-china-asean-fta-201001
   date: '2010-01-01'
   title: 中国-东盟自由贸易区正式建成
@@ -5351,6 +5450,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2010/shanghai_expo_2010.jpg
+    caption: 2010年5月1日第41届世界博览会在上海开幕，展现“城市，让生活更美好”的全球盛会
 - id: cn-ecfa-agreement-201006
   date: '2010-06-29'
   title: 海峡两岸签署《海峡两岸经济合作框架协议》（ECFA）
@@ -5440,6 +5542,9 @@
     - 国家统计局
     - 日本内阁府
     - 新华网
+  image:
+    url: /images/events/2010/china_gdp_second_2010.jpg
+    caption: 2010年中国GDP达到39.8万亿元人民币，超越日本正式跃居全球第二大经济体
 - id: cn-socialist-legal-system-201103
   date: '2011-03-10'
   title: 吴邦国宣布中国特色社会主义法律体系已经形成
@@ -5453,6 +5558,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2011/socialist_legal_system_2011.jpg
+    caption: 2011年3月吴邦国在全国人大报告中正式宣告中国特色社会主义法律体系已经形成
 - id: cn-twelfth-five-year-plan-201103
   date: '2011-03-14'
   title: 十一届全国人大四次会议表决通过“十二五”规划纲要
@@ -5478,6 +5586,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2011/jinghu_hsr_open_2011.jpg
+    caption: 2011年6月30日纵贯京津冀与长三角的京沪高铁通车，为世界上一次建成里程最长的长途高铁
 - id: cn-cpc-90th-anniversary-201107
   date: '2011-07-01'
   title: 庆祝中国共产党成立90周年大会隆重举行
@@ -5515,6 +5626,9 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2011/tiangong1_launch_2011.jpg
+    caption: 2011年9月29日天宫一号成功发射升空，我国载人航天空间交会对接试验步入关键阶段
 - id: cn-xinhai-centenary-201110
   date: '2011-10-10'
   title: 纪念辛亥革命100周年大会举行
@@ -5553,6 +5667,9 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2011/shenzhou8_docking_2011.jpg
+    caption: 2011年11月3日神舟八号无人飞船与天宫一号成功实现我国首次自动空间交会对接
 - id: cn-poverty-standard-raised-201111
   date: '2011-11-29'
   title: 国家大幅提高农村扶贫标准至2300元
@@ -5579,6 +5696,9 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2012/shenzhou9_liu_yang_2012.jpg
+    caption: 2012年6月16日神舟九号发射，航天员刘洋飞天，景海鹏等完成我国首次手控空间交会对接
 - id: cn-jiaolong-7062m-201206
   date: '2012-06-27'
   title: “蛟龙”号载人潜水器成功下潜至7062米，创最大下潜深度纪录
@@ -5593,6 +5713,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2012/jiaolong_7062m_2012.jpg
+    caption: 2012年6月27日蛟龙号在马里亚纳海沟下潜至7062米，刷新我国作业型载人深潜最大下潜深度纪录
 - id: cn-liaoning-aircraft-carrier-201209
   date: '2012-09-25'
   title: 中国第一艘航空母舰“辽宁舰”正式交付海军
@@ -5606,6 +5729,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2012/liaoning_carrier_commissioned_2012.jpg
+    caption: 2012年9月25日我国第一艘航空母舰辽宁舰在大连交付海军，中国圆了百年航母梦
 - id: cn-moyan-nobel-prize-201210
   date: '2012-10-11'
   title: 作家莫言获得诺贝尔文学奖
@@ -5620,6 +5746,9 @@
   sources:
     - 新华网
     - 诺贝尔奖官网
+  image:
+    url: /images/events/2012/mo_yan_nobel_2012.jpg
+    caption: 2012年10月11日瑞典学院宣布将诺贝尔文学奖授予中国作家莫言，实现中国籍作家诺贝尔文学奖零突破
 - id: cn-18th-cpc-congress-201211
   date: '2012-11-08'
   title: 中国共产党第十八次全国代表大会胜利召开
@@ -5633,6 +5762,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2012/cpc_18th_congress_2012.jpg
+    caption: 2012年11月十八大在北京召开，确立全面建成小康社会目标，推进中国特色社会主义伟大事业
 - id: cn-18th-first-plenum-201211
   date: '2012-11-15'
   title: 十八届一中全会选举习近平为中共中央总书记
@@ -5645,6 +5777,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2012/cpc_18th_1st_plenum_2012.jpg
+    caption: 2012年11月15日十八届一中全会选举产生新一届中央领导机构，习近平当选为中共中央总书记
 - id: cn-j15-carrier-landing-201211
   date: '2012-11-23'
   title: 歼-15舰载机首次成功在辽宁舰着舰起飞
@@ -5669,6 +5804,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2012/chinese_dream_2012.jpg
+    caption: 2012年11月29日参观国家博物馆《复兴之路》展览时发表重要讲话，首次提出并阐述“中国梦”
 - id: cn-eight-cardinal-couplets-201212
   date: '2012-12-04'
   title: 中共中央政治局审议通过改进工作作风“八项规定”
@@ -5682,6 +5820,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2012/eight_point_regulation_2012.jpg
+    caption: 2012年12月4日政治局会议审议通过关于改进工作作风、密切联系群众的“八项规定”，全面从严治党切入点
 - id: cn-jingguang-hsr-open-201212
   date: '2012-12-26'
   title: 京广高速铁路全线贯通运营
@@ -5706,6 +5847,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2013/xijinping_president_2013.jpg
+    caption: 2013年3月14日十二届全国人大一次会议选举习近平为中华人民共和国主席、中央军委主席
 - id: cn-shenzhou10-space-lecture-201306
   date: '2013-06-11'
   title: 神舟十号成功发射，王亚平进行中国首次太空授课
@@ -5721,6 +5865,9 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2013/shenzhou10_wang_yaping_2013.jpg
+    caption: 2013年6月神舟十号发射升空，航天员王亚平在天宫一号为全国6000万中小学生进行首次太空授课
 - id: cn-belt-and-road-initiation-201309
   date: '2013-09-07'
   title: 国家主席首次提出共建“一带一路”倡议
@@ -5735,6 +5882,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2013/belt_road_initiation_2013.jpg
+    caption: 2013年9月7日在纳扎尔巴耶夫大学发表演讲首次提出共建“丝绸之路经济带”，拉开“一带一路”大幕
 - id: cn-shanghai-ftz-open-201309
   date: '2013-09-29'
   title: 中国首个自由贸易试验区——中国（上海）自由贸易试验区挂牌成立
@@ -5748,6 +5898,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2013/shanghai_ftz_2013.jpg
+    caption: 2013年9月29日我国首个自贸试验区在上海正式挂牌，探索负面清单与制度创新试验田
 - id: cn-targeted-poverty-alleviation-201311
   date: '2013-11-03'
   title: 国家主席在湖南十八洞村首次提出“精准扶贫”理念
@@ -5761,6 +5914,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2013/targeted_poverty_alleviation_2013.jpg
+    caption: 2013年11月3日在湘西十八洞村考察时首次提出“实事求是、因地制宜、分类指导、精准扶贫”重要理念
 - id: cn-third-plenum-18th-201311
   date: '2013-11-12'
   title: 党的十八届三中全会通过全面深化改革决定，设立国家安全委员会
@@ -5774,6 +5930,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2013/cpc_3rd_plenum_2013.jpg
+    caption: 2013年11月十八届三中全会通过《关于全面深化改革若干重大问题的决定》，设立国安委与深化改革领导小组
 - id: cn-east-china-sea-adiz-201311
   date: '2013-11-23'
   title: 中国政府宣布划设东海防空识别区
@@ -5800,6 +5959,9 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2013/change3_yutu_landing_2013.jpg
+    caption: 2013年12月14日嫦娥三号成功软着陆月球虹湾区域，玉兔号月球车驶抵月面，我国实现月球软着陆
 - id: cn-reeducation-through-labor-abolition-201312
   date: '2013-12-28'
   title: 全国人大常委会决定废止劳动教养制度
@@ -5840,6 +6002,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/national_memorial_day_2014.jpg
+    caption: 2014年2月27日全国人大常委会决定将12月13日设立为南京大屠杀死难者国家公祭日，铭记历史珍爱和平
 - id: cn-kunming-attack-201403
   date: '2014-03-01'
   title: 云南昆明火车站发生“3·01”严重暴力恐怖袭击事件
@@ -5865,6 +6030,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/russia_gas_deal_2014.jpg
+    caption: 2014年5月21日中俄在上海签署长达30年、总价值4000亿美元的东线天然气购销合同，能源合作新突破
 - id: cn-zhou-yongkang-investigation-201407
   date: '2014-07-29'
   title: 中共中央决定对周永康立案审查，反腐败深化推进
@@ -5878,6 +6046,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/zhou_yongkang_investigation_2014.jpg
+    caption: 2014年7月29日中共中央决定对周永康立案审查，彰显打虎无禁区、反腐败无特权的坚定决心
 - id: cn-ludian-earthquake-201408
   date: '2014-08-03'
   title: 云南省昭通市鲁甸县发生6.5级地震
@@ -5915,6 +6086,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/cpc_4th_plenum_2014.jpg
+    caption: 2014年10月十八届四中全会在京举行，首次以中央全会形式专题研究全面推进依法治国重大问题
 - id: cn-apec-beijing-201411
   date: '2014-11-11'
   title: 2014年APEC领导人非正式会议在北京雁栖湖举行
@@ -5928,6 +6102,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/apec_beijing_2014.jpg
+    caption: 2014年11月APEC峰会在北京雁栖湖召开，批准亚太自贸区北京路线图，展现大国风采与亚太合力
 - id: cn-shanghai-hongkong-stock-connect-201411
   date: '2014-11-17'
   title: “沪港通”股票交易互联互通机制正式开通
@@ -5941,6 +6118,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/hk_connect_stock_2014.jpg
+    caption: 2014年11月17日“沪港通”试点正式启动，标志资本市场双向开放重大制度突破
 - id: cn-south-to-north-water-diversion-201412
   date: '2014-12-12'
   title: 南水北调中线一期工程正式通水
@@ -5955,6 +6135,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/water_diversion_middle_2014.jpg
+    caption: 2014年12月12日南水北调中线一期工程通水，丹江口水库清泉跨越千余公里供水京津冀
 - id: cn-aiib-agreement-signed-201506
   date: '2015-06-29'
   title: 《亚洲基础设施投资银行协定》（亚投行/AIIB）在北京签署
