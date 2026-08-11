@@ -6381,6 +6381,60 @@
   confidence: 确定
   tags: [两弹结合, 核武器, 导弹, 国防科技]
   sources: [中国航天科技集团, 中国工程物理研究院, Wikipedia—Dongfeng-2]
+- id: cn-january-storm-196701
+  date: '1967-01-23'
+  title: 上海“一月风暴”夺权
+  category: 政治
+  importance: 4
+  summary: 上海造反派和部分工人组织发动夺权行动，冲击地方党政机构，随后成立上海市革命委员会，成为全国夺权模式样板。
+  confidence: 确定
+  tags: [一月风暴, 上海, 文化大革命, 政治]
+  sources: [中国共产党新闻网, 上海地方志, Wikipedia—January Storm]
+- id: cn-shanghai-commune-196702
+  date: '1967-02-05'
+  title: 上海人民公社成立
+  category: 政治
+  importance: 4
+  summary: 上海造反派宣布成立上海人民公社，数日后改称上海市革命委员会，反映“文化大革命”夺权和地方政权重组。
+  confidence: 确定
+  tags: [上海人民公社, 革命委员会, 文化大革命, 政治]
+  sources: [上海地方志, 新华社历史资料, Wikipedia—Shanghai People's Commune]
+- id: cn-first-hydrogen-bomb-196706
+  date: '1967-06-17'
+  title: 中国首次氢弹空投试验成功
+  category: 战争
+  importance: 5
+  summary: 中国在罗布泊成功进行首次氢弹空投试验，爆炸当量达到兆吨级，标志中国掌握热核武器技术。
+  confidence: 确定
+  tags: [氢弹, 核试验, 国防科技, 罗布泊]
+  sources: [中国工程物理研究院, 新华社, Wikipedia—Nuclear weapons tests of China]
+- id: cn-wuhan-incident-196707
+  date: '1967-07-20'
+  title: 武汉“七二〇事件”
+  category: 政治
+  importance: 4
+  summary: 武汉地区两大群众组织冲突升级，中央代表团与地方军政机构发生严重对立，事件后中央调整湖北领导并推动“支左”。
+  confidence: 确定
+  tags: [武汉, 七二〇事件, 文化大革命, 军政关系]
+  sources: [湖北省地方志, 中国共产党新闻网, Wikipedia—Wuhan incident]
+- id: cn-british-office-burned-196708
+  date: '1967-08-22'
+  title: 红卫兵焚烧英国驻华代办处
+  category: 政治
+  importance: 4
+  summary: 北京红卫兵冲击并焚烧英国驻华代办处，造成中英外交关系严重危机，英国随后提出抗议。
+  confidence: 确定
+  tags: [中英关系, 外交, 红卫兵, 文化大革命]
+  sources: [英国国家档案馆, 中华人民共和国外交部, Wikipedia—Burning of the British Embassy in Beijing]
+- id: cn-tazara-agreement-196709
+  date: '1967-09-05'
+  title: 中国与坦桑尼亚、赞比亚签署坦赞铁路协定
+  category: 经济
+  importance: 4
+  summary: 中国同坦桑尼亚、赞比亚签署坦赞铁路建设相关协定，随后组织大规模援建，成为中国对非洲基础设施合作的标志项目。
+  confidence: 确定
+  tags: [坦赞铁路, 对非援助, 基础设施, 外交]
+  sources: [中华人民共和国外交部, 坦桑尼亚政府, Wikipedia—TAZARA Railway]
 - id: cn-us-diplomatic-relations-197901
   date: '1979-01-01'
   title: 中美正式建立外交关系

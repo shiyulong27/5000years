@@ -7095,3 +7095,93 @@
   confidence: 确定
   tags: [联合国, 人权, 国际法, 公约]
   sources: [联合国人权事务高级专员办事处, 联合国大会, Wikipedia—International Bill of Human Rights]
+- id: w-apollo-1-fire-196701
+  date: '1967-01-27'
+  title: 阿波罗1号地面测试火灾
+  category: 灾害
+  importance: 4
+  summary: 阿波罗1号飞船地面测试舱内起火，三名宇航员遇难，NASA随后全面改进载人航天器安全标准。
+  confidence: 确定
+  tags: [航天, NASA, 火灾, 灾害]
+  sources: [NASA, Smithsonian National Air and Space Museum, Wikipedia—Apollo 1]
+- id: w-greek-junta-coup-196704
+  date: '1967-04-21'
+  title: 希腊军政府政变
+  category: 政治
+  importance: 4
+  summary: 希腊军官发动政变推翻看守政府，建立“上校政权”，民主制度暂停至1974年。
+  confidence: 确定
+  tags: [希腊, 政变, 军政府, 欧洲]
+  sources: [希腊议会档案, Encyclopaedia Britannica, Wikipedia—Greek junta]
+- id: w-six-day-war-196706
+  date: '1967-06-05'
+  title: 六日战争爆发
+  category: 战争
+  importance: 5
+  summary: 以色列对埃及、约旦和叙利亚发动先发制人空袭，中东战争全面爆发。
+  confidence: 确定
+  tags: [六日战争, 以色列, 阿拉伯国家, 中东]
+  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Six-Day War]
+- id: w-six-day-war-ceasefire-196706
+  date: '1967-06-10'
+  title: 六日战争停火
+  category: 战争
+  importance: 4
+  summary: 以色列与叙利亚停火，六日战争结束；以色列控制西奈半岛、加沙、约旦河西岸、东耶路撒冷和戈兰高地。
+  confidence: 确定
+  tags: [六日战争, 停火, 中东, 领土]
+  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Six-Day War]
+- id: w-nigerian-civil-war-196707
+  date: '1967-07-06'
+  title: 尼日利亚内战爆发
+  category: 战争
+  importance: 4
+  summary: 尼日利亚联邦政府对比夫拉地区采取军事行动，尼日利亚内战正式开始并造成严重人道危机。
+  confidence: 确定
+  tags: [尼日利亚, 比夫拉, 内战, 非洲]
+  sources: [联合国, Encyclopaedia Britannica, Wikipedia—Nigerian Civil War]
+- id: w-asean-founded-196708
+  date: '1967-08-08'
+  title: 东南亚国家联盟成立
+  category: 政治
+  importance: 5
+  summary: 印度尼西亚、马来西亚、菲律宾、新加坡和泰国签署《曼谷宣言》，正式成立东盟。
+  confidence: 确定
+  tags: [东盟, 东南亚, 国际组织, 外交]
+  sources: [东盟秘书处, 联合国, Wikipedia—ASEAN]
+- id: w-outer-space-treaty-196710
+  date: '1967-10-10'
+  title: 《外层空间条约》生效
+  category: 政治
+  importance: 4
+  summary: 《外层空间条约》生效，确立和平利用外空和禁止在天体部署大规模杀伤性武器等原则。
+  confidence: 确定
+  tags: [外层空间, 国际法, 航天, 联合国]
+  sources: [联合国外空司, 联合国条约集, Wikipedia—Outer Space Treaty]
+- id: w-venera-4-196710
+  date: '1967-10-18'
+  title: “金星4号”首次成功传回金星大气数据
+  category: 文化
+  importance: 4
+  summary: 苏联“金星4号”探测器进入金星大气并传回温度、压力和成分数据，首次直接测量金星环境。
+  confidence: 确定
+  tags: [金星, 航天, 苏联, 科技]
+  sources: [Roscosmos, NASA, Wikipedia—Venera 4]
+- id: w-march-pentagon-196710
+  date: '1967-10-21'
+  title: 华盛顿反越战五角大楼示威
+  category: 政治
+  importance: 3
+  summary: 数万名反战者在华盛顿集会并试图进入五角大楼，成为美国反越战运动的标志性事件。
+  confidence: 确定
+  tags: [越南战争, 反战, 美国, 社会运动]
+  sources: [美国国会图书馆, Encyclopaedia Britannica, Wikipedia—March on the Pentagon]
+- id: w-first-heart-transplant-196712
+  date: '1967-12-03'
+  title: 世界首例心脏移植手术
+  category: 文化
+  importance: 4
+  summary: 南非开普敦医生克里斯蒂安·巴纳德完成世界首例人类心脏移植，推动器官移植医学发展。
+  confidence: 确定
+  tags: [医学, 心脏移植, 南非, 科技]
+  sources: [南非医学研究委员会, Encyclopaedia Britannica, Wikipedia—Heart transplantation]
