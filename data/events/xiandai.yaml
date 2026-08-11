@@ -8,6 +8,9 @@
   importance: 5
   summary: 毛泽东于北京天安门城楼宣告中华人民共和国中央人民政府成立。
   confidence: 确定
+  image:
+    url: /images/events/1949/prc_founding_ceremony_1949.jpg
+    caption: 1949年10月1日毛泽东主席在天安门城楼庄严宣告中华人民共和国成立
 - id: cn-yangtze-crossing-194904
   date: '1949-04-21'
   title: 渡江战役打响，解放军占领南京
@@ -526,6 +529,9 @@
   sources:
     - 人民网
     - 新华网
+  image:
+    url: /images/events/1959/daqing_oilfield_1959.jpg
+    caption: 1959年9月松辽平原松基三井喜喷工业油流，大庆油田诞生
 - id: cn-10th-anniversary-parade-195910
   date: '1959-10-01'
   title: 庆祝新中国成立10周年，首都十大建筑竣工并举行盛大阅兵
@@ -1215,6 +1221,9 @@
     - 新华社
     - 中国共产党新闻网
     - Wikipedia—596 (nuclear test)
+  image:
+    url: /images/events/1964/china_first_atomic_bomb_1964.jpg
+    caption: 1964年10月16日中国第一颗原子弹在新疆罗布泊成功爆炸并升起蘑菇云
 - id: cn-four-modernizations-196501
   date: '1965-01-04'
   title: 第三届全国人大一次会议提出“四个现代化”
@@ -1709,6 +1718,9 @@
   sources:
     - 新华网
     - 中国航天科技集团
+  image:
+    url: /images/events/1970/dongfanghong1_satellite_1970.jpg
+    caption: 1970年4月24日中国第一颗人造地球卫星“东方红一号”发射成功并在太空播送乐曲
 - id: cn-may20-statement-197005
   date: '1970-05-20'
   title: 毛泽东发表"五·二〇"声明
@@ -1872,6 +1884,9 @@
   sources:
     - 联合国
     - 新华网
+  image:
+    url: /images/events/1971/un_seat_restored_1971.jpg
+    caption: 1971年10月第26届联大通过第2758号决议，恢复中华人民共和国在联合国的一切合法权利
 - id: cn-nixon-visit-197202
   date: '1972-02-21'
   title: 尼克松总统访华
