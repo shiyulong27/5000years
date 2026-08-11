@@ -6990,6 +6990,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2015/iran_nuclear_deal_2015.jpg
+    caption: 2015年7月14日伊核问题六国与伊朗在维也纳达成历史性伊核协议（JCPOA），解决长达12年核争端
 - id: w-new-horizons-pluto-201507
   date: '2015-07-14'
   title: 美国“新视野”号飞船首次飞掠冥王星
@@ -7005,6 +7008,9 @@
   sources:
     - NASA
     - 维基百科
+  image:
+    url: /images/events/2015/new_horizons_pluto_2015.jpg
+    caption: 2015年7月14日“新视野”号探测器近距离飞掠冥王星，首次传回“冥王星之心”高清珍贵照片
 - id: w-european-migrant-crisis-201509
   date: '2015-09-02'
   title: 叙利亚难民幼童艾兰遇难照片震惊世界，欧洲难民危机爆发
@@ -7019,6 +7025,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2015/european_migrant_crisis_2015.jpg
+    caption: 2015年9月叙利亚小难民艾兰在海滩遇难照片引发全球关注，数百万中东难民涌入欧洲引爆危机
 - id: w-un-70th-anniversary-201509
   date: '2015-09-28'
   title: 联合国成立70周年峰会在纽约举行
@@ -7046,6 +7055,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2015/paris_attacks_2015.jpg
+    caption: 2015年11月13日巴黎巴塔克兰剧场与法兰西体育场等多地突发连环恐袭，法国进入紧急状态
 - id: w-paris-climate-agreement-201512
   date: '2015-12-12'
   title: 气候变化巴黎大会表决通过历史性《巴黎协定》
@@ -7060,6 +7072,9 @@
   sources:
     - 联合国
     - 新华网
+  image:
+    url: /images/events/2015/paris_climate_agreement_2015.jpg
+    caption: 2015年12月12日近200个缔约方在巴黎气候大会表决通过《巴黎协定》，确立全球减碳温控目标
 - id: w-fed-interest-rate-hike-201512
   date: '2015-12-16'
   title: 美联储启动近十年来首次加息，结束零利率时代
@@ -7088,6 +7103,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2016/alphago_lee_sedol_2016.jpg
+    caption: 2016年3月DeepMind旗下AlphaGo在首尔以4:1战胜围棋九段李世石，标志AI深度学习重大飞跃
 - id: w-brexit-referendum-201606
   date: '2016-06-23'
   title: 英国举行脱欧公投，52%选民支持脱离欧洲联盟
@@ -7102,6 +7120,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2016/brexit_referendum_2016.jpg
+    caption: 2016年6月23日英国举行脱欧公投，选民以51.9%赞成决定退出欧盟，震动欧洲一体化格局
 - id: w-juno-spacecraft-jupiter-201607
   date: '2016-07-03'
   title: 美国“朱诺号”木星探测器成功进入木星轨道
@@ -7157,6 +7178,9 @@
   sources:
     - 联合国
     - 新华网
+  image:
+    url: /images/events/2016/us_china_paris_2016.jpg
+    caption: 2016年9月3年中美元首在杭州向联合国秘书长潘基文共同交存批准文书，推动《巴黎协定》生效
 - id: w-bhumibol-pass-201610
   date: '2016-10-13'
   title: 泰国国王普密蓬·阿杜德逝世，享年88岁
@@ -7184,6 +7208,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2016/trump_win_2016.jpg
+    caption: 2016年11月8日共和党候选人特朗普打破政坛传统，在总统大选中胜出当选美国第45任总统
 - id: w-fidel-castro-pass-201611
   date: '2016-11-25'
   title: 古巴革命领袖菲德尔·卡斯特罗逝世，享年90岁
@@ -7199,6 +7226,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2016/fidel_castro_pass_2016.jpg
+    caption: 2016年11月25日古巴革命领袖、古巴共产党传奇缔造者菲德尔·卡斯特罗在哈瓦那逝世
 - id: w-park-geun-hye-impeachment-201612
   date: '2016-12-09'
   title: 韩国国会通过对总统朴槿惠的弹劾案
@@ -7227,6 +7257,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2017/trump_inauguration_2017.jpg
+    caption: 2017年1月20日特朗普在华盛顿宣誓就任美国第45任总统，首日即签署对跨太平洋伙伴关系协定（TPP）的退出令
 - id: w-park-geun-hye-removed-201703
   date: '2017-03-10'
   title: 韩国宪法法院裁定通过总统朴槿惠弹劾案，朴槿惠被即刻罢免
@@ -7241,6 +7274,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2017/park_geun_hye_removed_2017.jpg
+    caption: 2017年3月10日韩国宪法法院通过对朴槿惠的弹劾案，朴槿惠成为韩国宪政史上首位被罢免的下台总统
 - id: w-macron-wins-french-election-201705
   date: '2017-05-07'
   title: 埃马纽埃尔·马克龙击败勒庞当选法国总统
@@ -7268,6 +7304,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2017/us_withdraws_paris_2017.jpg
+    caption: 2017年6月1日美国总统特朗普在白宫宣布单方面退出《巴黎协定》，引发全球环保治理担忧
 - id: w-qatar-diplomatic-crisis-201706
   date: '2017-06-05'
   title: 沙特、阿联酋等多国宣布与卡塔尔断交并实施封锁
@@ -7335,6 +7374,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2017/mugabe_resignation_2017.jpg
+    caption: 2017年11月21日津巴布韦开国元勋穆加贝在军方干预与议会弹劾压力下宣布辞职，结束37年执政
 - id: w-us-jerusalem-capital-201712
   date: '2017-12-06'
   title: 特朗普宣布美国承认耶路撒冷为以色列首都并搬迁大使馆
@@ -7349,6 +7391,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2017/us_jerusalem_capital_2017.jpg
+    caption: 2017年12月6日美国宣布打破数十年外交政策，承认耶路撒冷为以首都，加剧巴以紧张中东局势
 - id: w-panmunjom-declaration-201804
   date: '2018-04-27'
   title: 朝韩领导人在板门店举行会晤，发表《板门店宣言》
@@ -7363,6 +7408,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2018/panmunjom_declaration_2018.jpg
+    caption: 2018年4月27日文在寅与金正恩在板门店会恶，签署宣言宣布致力于半岛无核化与建立永久和平机制
 - id: w-us-withdraws-iran-deal-201805
   date: '2018-05-08'
   title: 特朗普宣布美国单方面退出伊朗核问题全面协议（JCPOA）
@@ -7377,6 +7425,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2018/us_withdraws_iran_deal_2018.jpg
+    caption: 2018年5月8日特朗普签署备忘录单方面退出伊核协议，并重启对伊朗全面极限施压制裁
 - id: w-us-embassy-jerusalem-open-201805
   date: '2018-05-14'
   title: 美国驻以色列大使馆在耶路撒冷正式开馆，加沙爆发严重流血冲突
@@ -7405,6 +7456,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2018/trump_kim_singapore_2018.jpg
+    caption: 2018年6月12日特朗普与金正恩在新加坡圣淘沙岛举行朝美建交后首次历史性首脑会晤
 - id: w-france-wins-world-cup-201807
   date: '2018-07-15'
   title: 法国队击败克罗地亚队夺得2018俄罗斯世界杯冠军
@@ -7502,6 +7556,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2019/isis_final_territory_2019.jpg
+    caption: 2019年3月23日叙利亚民主军攻克巴古兹，宣告“伊斯兰国”跨越叙伊的所谓“哈里发国”领土全面崩溃
 - id: w-first-black-hole-image-201904
   date: '2019-04-10'
   title: 事件视界望远镜（EHT）项目发布人类历史上首张黑洞照片
@@ -7516,6 +7573,9 @@
   sources:
     - EHT
     - 新华网
+  image:
+    url: /images/events/2019/first_black_hole_image_2019.jpg
+    caption: 2019年4月10日EHT全球射电望远镜阵列发布M87星系中心超大质量黑洞照片，证实广义相对论预言
 - id: w-notre-dame-fire-201904
   date: '2019-04-15'
   title: 法国巴黎圣母院发生特大火灾，木质塔尖坍塌
@@ -7530,6 +7590,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2019/notre_dame_fire_2019.jpg
+    caption: 2019年4月15日800多年历史的巴黎圣母院大教堂修缮期间突发大火，主塔尖坍塌，引发全球文物保护震动
 - id: w-sri-lanka-easter-bombings-201904
   date: '2019-04-21'
   title: 斯里兰卡复活节连环恐怖袭击发生，造成269人遇难
@@ -7557,6 +7620,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2019/japan_reiwa_era_2019.jpg
+    caption: 2019年4月30日日本明仁天皇正式退位结束“平成”时代，次日德仁天皇即位开启“令和”新纪元
 - id: w-inf-treaty-withdrawal-201908
   date: '2019-08-02'
   title: 美国正式宣布退出与苏联签署的《中程导弹条约》（INF）
@@ -7571,6 +7637,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2019/inf_treaty_withdrawal_2019.jpg
+    caption: 2019年8月2日美国正式退出1987年签署的《中程核力量条约》，全球战略稳定与核裁军机制受挫
 - id: w-al-baghdadi-killed-201910
   date: '2019-10-26'
   title: “伊斯兰国”（ISIS）最高头目巴格达迪在美军突袭中自杀身亡
@@ -7585,6 +7654,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2019/baghdadi_killed_2019.jpg
+    caption: 2019年10月26日美军特种部队在叙利亚西北部开展突袭，ISIS最高头目巴格达迪自爆身亡
 - id: w-climate-emergency-un-201911
   date: '2019-11-25'
   title: 欧洲议会宣布全球进入“气候紧急状态”
@@ -7613,6 +7685,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2019/boris_johnson_win_2019.jpg
+    caption: 2019年12月12日约翰逊领导保守党取得1987年以来最大议会席位胜利，提出“搞定脱欧”承诺
 - id: w-trump-first-impeachment-201912
   date: '2019-12-18'
   title: 美国国会众议院表决通过对总统特朗普的弹劾条款
@@ -8000,6 +8075,17 @@
   sources:
     - 新华网
     - 维基百科
+- id: w-dobbs-supreme-court-202206
+  date: '2022-06-24'
+  title: 美国最高法院推翻"罗诉韦德案"，终结联邦堕胎权保障
+  category: 政治
+  importance: 4
+  summary: 美国联邦最高法院就"多布斯诉杰克逊妇女健康组织案"作出裁决，推翻1973年"罗诉韦德案"，终结近50年的联邦堕胎权宪法保障，引发美国社会与政治剧烈震荡及多州立法博弈。
+  confidence: 确定
+  tags:
+    - 政治
+    - 法律
+    - 美国
 - id: w-shinzo-abe-assassinated-202207
   date: '2022-07-08'
   title: 日本前首相安倍晋三遇刺身亡
@@ -8391,7 +8477,7 @@
     caption: 2024年11月5日美国大选开票，共和党候选人特朗普锁定胜局，实现跨越四年的历史性回归
 - id: w-apec-g20-latin-america-202411
   date: '2024-11-16'
-  title: 中元首出席APEC与G20峰会，拉美元首外交取得丰硕成果
+  title: 国家主席出席APEC与G20峰会，拉美元首外交取得丰硕成果
   category: 政治
   importance: 4
   summary: 国家主席先后赴秘鲁出席APEC会议、赴巴西出席G20峰会并对两国访问，钱凯港开港，高水平元首外交深化全球合作。
@@ -8414,6 +8500,16 @@
   sources:
     - 新华网
     - 诺贝尔奖官网
+- id: w-south-korea-martial-law-202412
+  date: '2024-12-03'
+  title: 韩国总统尹锡悦宣布紧急戒严又旋即解除
+  category: 政治
+  importance: 4
+  summary: 韩国总统尹锡悦在深夜发表谈话宣布实施紧急戒严，数小时后遭国会表决否决被迫解除，引发大规模民众抗议与政局动荡，随后演变为弹劾风波。
+  confidence: 确定
+  tags:
+    - 政治
+    - 韩国
 - id: w-syria-assad-fall-202412
   date: '2024-12-08'
   title: 叙利亚反对派攻陷大马士革，巴沙尔·阿萨德政权倒台
