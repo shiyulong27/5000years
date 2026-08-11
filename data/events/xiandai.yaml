@@ -2461,6 +2461,9 @@
     - 中国共产党新闻网
     - 新华社
     - Wikipedia—3rd Plenary Session of the 11th CCP Central Committee
+  image:
+    url: /images/events/1978/reform_opening_1978.jpg
+    caption: 1978年12月中共十一届三中全会在北京召开，作出把全党工作中心转移到经济建设上来的伟大决策，开启改革开放新时期
 - id: cn-fifth-npc-constitution-197803
   date: '1978-03-05'
   title: 第五届全国人民代表大会第一次会议通过1978年宪法
@@ -4272,6 +4275,9 @@
   importance: 4
   summary: 中国正式加入世界贸易组织（WTO），全面融入世界经济体系。
   confidence: 确定
+  image:
+    url: /images/events/2001/wto_entry_2001.jpg
+    caption: 2001年11月中国代表多哈签署加入世界贸易组织议定书，同年12月11日正式成为WTO第143个成员，全面融入全球经济体系
 - id: cn-hainan-nanhai-collision-200104
   date: '2001-04-01'
   title: 中美南海撞机事件爆发，海军飞行员王伟壮烈牺牲
@@ -5086,6 +5092,9 @@
   sources:
     - 新华网
     - 国际奥委会
+  image:
+    url: /images/events/2008/beijing_olympics_2008.jpg
+    caption: 2008年8月8日第29届夏季奥林匹克运动会在北京国家体育场“鸟巢”隆重开幕，呈现震撼世界的华夏文明盛典
 - id: cn-beijing-olympics-medal-200808
   date: '2008-08-24'
   title: 北京奥运会圆满闭幕，中国代表团以51金位列金牌榜首，创历史最佳成绩
@@ -7574,7 +7583,7 @@
   title: 神舟二十号与二十一号乘组空间站太空会师
   category: 文化
   importance: 4
-  summary: 神舟二十号与神舟二十一号航天员乘组在中国空间站成功实现“太空会师”，开启新一轮轨轮换。
+  summary: 神舟二十号与神舟二十一号航天员乘组在中国空间站成功实现“太空会师”，开启新一轮乘组轮换。
   confidence: 确定
   tags:
     - 航天

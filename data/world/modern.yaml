@@ -8580,7 +8580,7 @@
   date: '2025-10-24'
   title: 联合国迎来成立80周年
   category: 政治
-  importance: 5
+  importance: 4
   summary: 联合国成立80周年纪念活动在纽约总部举行。面对单边主义冲击与地区冲突延宕，国际社会呼吁重温联合国宪章宗旨、捍卫多边主义并推进联合国改革。
   confidence: 确定
   tags:
@@ -8608,6 +8608,76 @@
   tags:
     - 科技
     - AI
+- id: w-la-wildfires-202501
+  date: '2025-01-07'
+  title: 美国洛杉矶遭山火重创，酿成史上最惨重山火灾害
+  category: 灾害
+  importance: 4
+  summary: 受强"圣安娜风"助燃，美国洛杉矶西北部帕利塞德与东北部伊顿等多处山火爆发，造成约29人死亡、上万栋建筑被毁，经济损失估算达数千亿美元，为美国历史上损失最惨重的山火灾害。
+  confidence: 确定
+  tags:
+    - 灾害
+    - 美国
+- id: w-potomac-crash-202501
+  date: '2025-01-29'
+  title: 美国华盛顿发生客机与直升机相撞坠河事故
+  category: 灾害
+  importance: 3
+  summary: 美国航空公司一架载有60余名乘客的客机在华盛顿里根国家机场附近与美军"黑鹰"直升机相撞坠入波托马克河，机上人员全部遇难，为美国十多年来最严重的民航事故。
+  confidence: 确定
+  tags:
+    - 灾害
+    - 航空
+- id: w-germany-election-202502
+  date: '2025-02-23'
+  title: 德国联邦议院大选，联盟党胜出
+  category: 政治
+  importance: 4
+  summary: 德国举行联邦议院选举，以基民盟/基社盟为代表的联盟党赢得选举，默茨将出任总理，社民党、绿党执政联盟败选，德国政局与欧洲格局随之调整。
+  confidence: 确定
+  tags:
+    - 政治
+    - 欧洲
+- id: w-myanmar-earthquake-202503
+  date: '2025-03-28'
+  title: 缅甸发生7.7级强震，酿成重大人员伤亡
+  category: 灾害
+  importance: 5
+  summary: 缅甸中部曼德勒附近发生7.7级强震，震源深度约10公里，曼德勒、内比都等地大量建筑倒塌，遇难数千人，泰国曼谷亦受波及，为近年来全球破坏性最强、伤亡最重的地震之一。
+  confidence: 确定
+  tags:
+    - 灾害
+    - 地震
+- id: w-south-korea-yoon-202504
+  date: '2025-04-04'
+  title: 韩国宪法法院裁定尹锡悦弹劾成立
+  category: 政治
+  importance: 4
+  summary: 韩国宪法法院裁定总统尹锡悦因"戒严事件"被弹劾成立并即刻罢免，此前尹锡悦已于1月15日被逮捕，成为韩国历史上又一位被弹劾落台的总统。
+  confidence: 确定
+  tags:
+    - 政治
+    - 韩国
+- id: w-osaka-expo-202504
+  date: '2025-04-13'
+  title: 大阪·关西世博会开幕
+  category: 文化
+  importance: 4
+  summary: 以"设计未来社会，让生命绽放光彩"为主题的2025年大阪·关西世界博览会在日本大阪开幕，展期持续至10月13日。
+  confidence: 确定
+  tags:
+    - 文化
+    - 国际盛事
+- id: w-cop30-202511
+  date: 2025-11
+  title: COP30联合国气候变化大会在巴西贝伦举行
+  category: 政治
+  importance: 4
+  summary: 第三十届联合国气候变化大会在巴西亚马孙门户城市贝伦举行，聚焦国家自主贡献目标提升、气候资金与适应议题。
+  confidence: 确定
+  tags:
+    - 气候
+    - 国际
 - id: w-bulgaria-euro-202601
   date: '2026-01-01'
   title: 保加利亚加入欧元区
