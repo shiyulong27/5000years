@@ -8,6 +8,104 @@
   importance: 5
   summary: 毛泽东于北京天安门城楼宣告中华人民共和国中央人民政府成立。
   confidence: 确定
+- id: cn-seven-thousand-conference-196201
+  date: '1962-01-11'
+  title: 中共中央在北京召开“七千人大会”
+  category: 政治
+  importance: 5
+  summary: 1月11日至2月7日中共中央召开扩大的中央工作会议（即“七千人大会”）。会议总结了大跃进以来的经验教训，开展自我批评，推动国民经济全面转向“调整、巩固、充实、提高”。
+  confidence: 确定
+  tags:
+    - 大跃进
+    - 经济
+    - 党内讨论
+  sources:
+    - 党史权威文献
+    - 新华社
+- id: cn-df2-missile-test-196203
+  date: '1962-03-23'
+  title: 中国首枚自行研制的“东风二号”导弹试射失败
+  category: 文化
+  importance: 4
+  summary: 3月21日我国首枚自主研发的“东风二号”中近程地地导弹在酒泉试射，因发动机故障失控坠毁。钱学森等人随后总结教训建立“稳妥可靠、万无一失”的航天研制规范。
+  confidence: 确定
+  tags:
+    - 航天
+    - 导弹
+    - 国防科技
+  sources:
+    - 党史权威文献
+    - 中国航天科普资料
+- id: cn-shenzhen-escape-hongkong-196205
+  date: '1962-05-05'
+  title: 宝安（深圳）发生大规模“逃港潮”事件与中央紧急处置
+  category: 经济
+  importance: 4
+  summary: 5月初宝安县发生数万民众越境前往香港的“逃港潮”。周恩来总理与广东省委紧急处置部署，并决定搞好宝安边防经济建设，为日后深圳经济特区建立积累了深刻启示。
+  confidence: 确定
+  tags:
+    - 民生
+    - 逃港潮
+    - 深圳历史
+  sources:
+    - 宝安县志
+    - 人民网
+- id: cn-peng-dehuai-words-196206
+  date: '1962-06-16'
+  title: 彭德怀向中共中央递交“八万言书”进行申诉
+  category: 政治
+  importance: 4
+  summary: 6月16日彭德怀向中共中央和毛泽东递交长达8万字的申诉信（史称“八万言书”），对庐山会议给他的结论和个人政治待遇提出申诉。
+  confidence: 确定
+  tags:
+    - 党史
+    - 政治
+    - 申诉
+  sources:
+    - 党史权威文献
+    - 新华社
+- id: cn-cpc-8th-10th-plenum-196209
+  date: '1962-09-24'
+  title: 中共八届十中全会召开，提出“千万不要忘记阶级斗争”
+  category: 政治
+  importance: 5
+  summary: 9月24日至27日中共八届十中全会在北京举行。毛泽东在会上作关于阶级、形势、矛盾和党内团结的讲话，把社会主义社会中的阶级斗争扩大化和绝对化，提出“千万不要忘记阶级斗争”。
+  confidence: 确定
+  tags:
+    - 政治
+    - 阶级斗争
+    - 党史
+  sources:
+    - 人民网
+    - 党史权威文献
+- id: cn-rural-60-rules-196209
+  date: '1962-09-27'
+  title: 中共中央通过“农业六十条”，确立“三级所有，队为基础”体制
+  category: 经济
+  importance: 4
+  summary: 八届十中全会通过《农村人民公社工作条例（修正草案）》（“农业六十条”），确立人民公社“三级所有，队为基础”的体制，稳定了农村土地与生产秩序。
+  confidence: 确定
+  tags:
+    - 农业
+    - 人民公社
+    - 农村改革
+  sources:
+    - 人民网
+    - 党史权威文献
+- id: cn-sino-indian-border-war-196210
+  date: '1962-10-20'
+  title: 中印边境自卫反击战爆发
+  category: 战争
+  importance: 5
+  summary: 针对印军屡屡越过“麦克马洪线”侵扰边境，中国边防部队奉命发起中印边境自卫反击作战，迅速击退侵犯印军，收复失地。
+  confidence: 确定
+  tags:
+    - 军事
+    - 边境
+    - 自卫反击
+  sources:
+    - 党史权威文献
+    - 党史权威文献
 - id: cn-zhou-rural-urban-tech-meeting-196301
   date: '1963-01-29'
   title: 周恩来在上海科学技术工作会议上强调实现科学技术现代化

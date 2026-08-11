@@ -61,6 +61,134 @@
   importance: 4
   summary: 五十国签署《联合国宪章》，联合国正式成立，望以多边机制维持世界和平。
   confidence: 确定
+- id: w-john-glenn-orbit-196202
+  date: '1962-02-20'
+  title: 约翰·格伦完成轨道飞行
+  category: 文化
+  importance: 5
+  summary: 美国宇航员约翰·格伦乘“水银-阿特拉斯6号”任务完成6圈地球轨道飞行，推动美国载人航天迈入稳定运行期。
+  confidence: 确定
+  tags:
+    - 航天
+    - 美国
+    - 人类探索
+  sources:
+    - NASA
+    - 维基百科:1962年
+- id: w-algeria-evian-accord-196203
+  date: '1962-03-18'
+  title: 法国与阿尔及利亚签署停火协议
+  category: 政治
+  importance: 5
+  summary: 埃维昂和平协议签署后，阿尔及利亚独立进程明显加速，殖民体系开始解体，后续独立运动取得关键突破。
+  confidence: 确定
+  tags:
+    - 非殖民化
+    - 外交
+    - 阿尔及利亚
+  sources:
+    - 维基百科:1962年
+    - 维基百科:法国-阿尔及利亚关系
+- id: w-rocket-program-196207
+  date: '1962-07-10'
+  title: 世界首颗通信卫星“Telstar 1”上天
+  category: 文化
+  importance: 4
+  summary: 通信卫星“Telstar 1”发射成功后实现跨大西洋卫星电话及电视信号实验，开启现代卫星通信时代。
+  confidence: 确定
+  tags:
+    - 航天通信
+    - 卫星
+    - 科技
+  sources:
+    - NASA
+    - 维基百科:1962年
+- id: w-marilyn-monroe-death-196208
+  date: '1962-08-05'
+  title: 好莱坞传奇影星玛丽莲·梦露在洛杉矶逝世
+  category: 文化
+  importance: 4
+  summary: 36岁的好莱坞巨星、20世纪流行文化符号玛丽莲·梦露在洛杉矶寓所离奇逝世，引发全球娱乐界与大众文化震动。
+  confidence: 确定
+  tags:
+    - 文化
+    - 好莱坞
+    - 流行文化
+  sources:
+    - Encyclopaedia Britannica
+    - Wikipedia
+- id: w-beatles-first-single-196210
+  date: '1962-10-05'
+  title: 披头士乐队发行首支单曲《Love Me Do》
+  category: 文化
+  importance: 4
+  summary: 英国披头士乐队（The Beatles）发行首支商业单曲《Love Me Do》，标志着“披头士狂热”拉开序幕，深刻改变了现代摇滚乐与青年流行文化。
+  confidence: 确定
+  tags:
+    - 音乐
+    - 文化
+    - 英国
+  sources:
+    - BBC
+    - Rolling Stone
+    - Wikipedia
+- id: w-vatican-ii-council-196210
+  date: '1962-10-11'
+  title: 教宗若望二十三世主持梵蒂冈第二次大公会议开幕
+  category: 政治
+  importance: 5
+  summary: 梵蒂冈第二次大公会议（梵二会议）在圣彼得大教堂盛大开幕。会议全面推进天主教现代改革、倡导宗教对话与世俗包容，是20世纪宗教史最重大变革。
+  confidence: 确定
+  tags:
+    - 宗教
+    - 欧洲
+    - 思想变革
+  sources:
+    - Vatican Official Site
+    - Encyclopaedia Britannica
+    - Wikipedia
+- id: w-cuban-missile-crisis-begin-196210
+  date: '1962-10-14'
+  title: 古巴导弹危机公开爆发
+  category: 战争
+  importance: 5
+  summary: 美国侦察确认苏联在古巴部署核导弹设施后，双方进入核对峙并实施海上封锁，世界核风险一度攀升。
+  confidence: 确定
+  tags:
+    - 冷战
+    - 核风险
+    - 美苏关系
+  sources:
+    - 维基百科:1962年
+    - 维基百科:古巴导弹危机
+- id: w-cuban-missile-crisis-end-196210
+  date: '1962-10-28'
+  title: 古巴导弹危机结束
+  category: 战争
+  importance: 5
+  summary: 美苏宣布同意退出危机升级通道，核导弹退役与秘密交换安排使局势降温，危机逐步告一段落。
+  confidence: 确定
+  tags:
+    - 冷战
+    - 外交
+    - 核风险
+  sources:
+    - 维基百科:1962年
+    - 维基百科:古巴导弹危机
+- id: w-sino-indian-border-war-world-196210
+  date: '1962-11-21'
+  title: 中国宣布中印边境全线单方面停火并交还物资
+  category: 战争
+  importance: 4
+  summary: 11月21日中国政府发表声明，宣布中国边防部队在中印边境全线单方面停火，并从12月1日起后撤至1959年11月7日实际控制线20公里以外，随后交还印军缴获物资。
+  confidence: 确定
+  tags:
+    - 南亚
+    - 边境冲突
+    - 军事
+  sources:
+    - 新华网
+    - Wikipedia
 - id: w-elysee-treaty-196301
   date: '1963-01-22'
   title: 法德签署《爱丽舍条约》实现历史性和解
