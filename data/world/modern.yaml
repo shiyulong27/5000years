@@ -61,6 +61,110 @@
   importance: 4
   summary: 五十国签署《联合国宪章》，联合国正式成立，望以多边机制维持世界和平。
   confidence: 确定
+- id: w-india-republic-195001
+  date: '1950-01-26'
+  title: 印度宪法生效并正式成为共和国
+  category: 政治
+  importance: 5
+  summary: 印度宪法于1950年1月26日生效，印度由此正式建立共和国体制，完成从独立到宪政建国的重要制度转型。
+  confidence: 确定
+  tags:
+    - 印度
+    - 宪法
+    - 历史转折
+  sources:
+    - 印度政府PIB
+    - 中文维基百科
+    - 英文维基百科
+- id: w-wmo-founded-195003
+  date: '1950-03-23'
+  title: 世界气象组织成立
+  category: 文化
+  importance: 4
+  summary: 建立世界气象组织的公约于1950年3月23日生效，世界气象组织由此成立，国际气象合作进入新的制度化阶段。
+  confidence: 确定
+  tags:
+    - 科技
+    - 气象
+    - 国际组织
+  sources:
+    - 世界气象组织
+    - 中文维基百科
+- id: w-schuman-declaration-195005
+  date: '1950-05-09'
+  title: 舒曼宣言提出欧洲煤钢共同体构想
+  category: 政治
+  importance: 5
+  summary: 法国外长罗伯特·舒曼于5月9日提出将法德煤钢生产置于共同机构之下的设想，这份“舒曼宣言”被广泛视为欧洲一体化和欧盟的起点。
+  confidence: 确定
+  tags:
+    - 欧洲一体化
+    - 欧盟
+    - 历史转折
+  sources:
+    - 欧盟官网
+    - 中文维基百科
+    - 英文维基百科
+- id: w-first-kidney-transplant-195006
+  date: '1950-06-17'
+  title: 人类历史上首例成功肾脏移植手术在芝加哥实施
+  category: 文化
+  importance: 4
+  summary: 理查德·劳勒医生在芝加哥小阿里安兄弟医院为患者成功实施了人类历史上首例异体肾移植手术，开启了现代器官移植医学新纪元。
+  confidence: 确定
+  tags:
+    - 医学
+    - 器官移植
+    - 科技
+  sources:
+    - JAMA
+    - Encyclopaedia Britannica
+    - Wikipedia
+- id: w-korean-war-195006
+  date: '1950-06-25'
+  title: 朝鲜战争爆发
+  category: 战争
+  importance: 5
+  summary: 1950年6月25日朝鲜战争爆发，美国随后武装干涉并推动联合国介入，冲突迅速演变为冷战格局下最重要的热战之一。
+  confidence: 确定
+  tags:
+    - 朝鲜战争
+    - 冷战
+    - 历史转折
+  sources:
+    - 新华网
+    - 联合国
+    - 中文维基百科
+    - 英文维基百科
+- id: w-inchon-landing-195009
+  date: '1950-09-15'
+  title: 麦克阿瑟指挥联合国军实施仁川登陆战役
+  category: 战争
+  importance: 5
+  summary: 美军及联合国军在朝鲜半岛仁川成功实施两栖登陆（铬黄行动），切断朝鲜人民军后路，剧变朝鲜战争局势并促使中国做出出兵决策。
+  confidence: 确定
+  tags:
+    - 朝鲜战争
+    - 仁川登陆
+    - 冷战
+  sources:
+    - US Army Center of Military History
+    - Wikipedia
+- id: w-turing-test-paper-195010
+  date: '1950-10-01'
+  title: 阿兰·图灵发表论文提出“图灵测试”，奠定人工智能科学基石
+  category: 文化
+  importance: 5
+  summary: 英国数学家、计算机科学之父阿兰·图灵在哲学期刊《Mind》发表论文《计算机器与智能》，首次提出“图灵测试”与模仿游戏，奠定了人工智能（AI）的科学与哲学起点。
+  confidence: 确定
+  tags:
+    - AI
+    - 计算机科学
+    - 图灵测试
+  sources:
+    - Mind Journal
+    - Stanford Encyclopedia of Philosophy
+    - Wikipedia
 - id: w-cameroon-independence-196001
   date: '1960-01-01'
   title: 喀麦隆独立拉开“非洲年”序幕

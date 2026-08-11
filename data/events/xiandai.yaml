@@ -8,6 +8,132 @@
   importance: 5
   summary: 毛泽东于北京天安门城楼宣告中华人民共和国中央人民政府成立。
   confidence: 确定
+- id: cn-sino-soviet-treaty-195002
+  date: '1950-02-14'
+  title: 中苏签订《中苏友好同盟互助条约》
+  category: 政治
+  importance: 5
+  summary: 经过毛泽东、周恩来与斯大林等会谈，中国和苏联在莫斯科签订《中苏友好同盟互助条约》及有关协定，成为新中国成立初期最重要的外交安排之一。
+  confidence: 确定
+  tags:
+    - 外交
+    - 中苏关系
+    - 历史转折
+  sources:
+    - 新华网
+    - 中文维基百科
+- id: cn-unify-financial-economic-work-195003
+  date: '1950-03-03'
+  title: 政务院发布统一全国财政收支决定，彻底平抑物价与人民币币值
+  category: 经济
+  importance: 4
+  summary: 政务院发布《关于统一国家财政收支管理的决定》，陈云主持实现了全国财粮统一调度管理，彻底结束了国民党时期延续多年的恶性通货膨胀，实现了全国物价稳定。
+  confidence: 确定
+  tags:
+    - 经济
+    - 物价稳定
+    - 人民币
+  sources:
+    - 人民网
+    - 党史权威文献
+- id: cn-marriage-law-195005
+  date: '1950-05-01'
+  title: 《中华人民共和国婚姻法》公布施行
+  category: 政治
+  importance: 5
+  summary: 新中国成立后制定的第一部大典性法律《中华人民共和国婚姻法》公布施行，废除封建婚姻制度，确立婚姻自由、一夫一妻和男女权利平等的崭新社会风尚。
+  confidence: 确定
+  tags:
+    - 法律
+    - 社会改革
+    - 妇女权益
+  sources:
+    - 新华网
+    - 中文维基百科
+- id: cn-hainan-liberation-195005
+  date: '1950-05-01'
+  title: 人民解放军解放海南岛
+  category: 战争
+  importance: 4
+  summary: 人民解放军攻占海南岛，国民党守军残部撤出，标志新中国对华南沿海主要战场的清剿取得决定性进展。
+  confidence: 确定
+  tags:
+    - 解放战争
+    - 海南岛
+    - 军事
+  sources:
+    - 新华网
+    - 中文维基百科
+- id: cn-cpc-7th-3rd-plenum-195006
+  date: '1950-06-06'
+  title: 中共七届三中全会召开，提出为争取国家财经状况基本好转而斗争
+  category: 政治
+  importance: 5
+  summary: 6月6日至9日中共七届三中全会在北京召开。毛泽东发表《为争取国家财政经济状况的基本好转而斗争》报告，提出了“不要四面出击”的战略策略方针和国民经济恢复时期的行动纲领。
+  confidence: 确定
+  tags:
+    - 七届三中全会
+    - 经济恢复
+    - 党史
+  sources:
+    - 人民网
+    - 党史权威文献
+- id: cn-land-reform-law-195006
+  date: '1950-06-30'
+  title: 《中华人民共和国土地改革法》公布施行
+  category: 经济
+  importance: 5
+  summary: 《中华人民共和国土地改革法》公布施行，全国范围内分期分批开展土地改革，推动封建土地所有制走向终结并深刻改变新中国农村社会结构。
+  confidence: 确定
+  tags:
+    - 土地改革
+    - 农业
+    - 历史转折
+  sources:
+    - 新华网
+    - 中文维基百科
+- id: cn-chamdo-campaign-195010
+  date: '1950-10-06'
+  title: 昌都战役打响
+  category: 战争
+  importance: 4
+  summary: 解放军于10月6日发起昌都战役，并在13天内取得决定性胜利，为西藏地方代表赴京谈判和西藏和平解放创造了条件。
+  confidence: 确定
+  tags:
+    - 昌都战役
+    - 西藏
+    - 统一进程
+  sources:
+    - 新华网
+    - 中文维基百科
+- id: cn-campaign-suppress-counterrevolutionaries-195010
+  date: '1950-10-10'
+  title: 中共中央发出“双十指示”，全国全面开展镇压反革命运动
+  category: 政治
+  importance: 5
+  summary: 中共中央发出《关于镇压反革命活动的指示》（双十指示），在全国范围内发动镇压反革命运动，与抗美援朝、土地改革并称为新中国成立初期三大巩固政权运动。
+  confidence: 确定
+  tags:
+    - 镇反运动
+    - 巩固政权
+    - 党史
+  sources:
+    - 人民网
+    - 党史权威文献
+- id: cn-enter-korean-war-195010
+  date: '1950-10-19'
+  title: 中国人民志愿军入朝作战
+  category: 战争
+  importance: 5
+  summary: 应朝鲜党和政府请求，中共中央作出抗美援朝、保家卫国的战略决策，中国人民志愿军于10月19日进入朝鲜战场。
+  confidence: 确定
+  tags:
+    - 抗美援朝
+    - 志愿军
+    - 历史转折
+  sources:
+    - 新华网
+    - 中文维基百科
 - id: cn-shanghai-politburo-meeting-196001
   date: '1960-01-07'
   title: 中共中央在上海召开政治局扩大会议研究经济计划
