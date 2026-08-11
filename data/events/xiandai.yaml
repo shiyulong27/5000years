@@ -7293,6 +7293,9 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2024/change6_sample_2024.jpg
+    caption: 2024年6月25日嫦娥六号返回器安全着陆内蒙古四子王旗，实现人类历史上首次月球背面样品采集返回
 - id: cn-third-plenum-202407
   date: '2024-07-15'
   title: 党的二十届三中全会通过进一步全面深化改革决定
@@ -7306,6 +7309,9 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2024/cpc_3rd_plenum_2024.jpg
+    caption: 2024年7月中共二十届三中全会在北京举行，审议通过《关于进一步全面深化改革、推进中国式现代化的决定》
 - id: cn-paris-olympics-202408
   date: '2024-08-11'
   title: 中国代表团创境外参加夏奥会历史最佳成绩

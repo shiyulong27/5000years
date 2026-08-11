@@ -8347,6 +8347,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2024/trump_election_win_2024.jpg
+    caption: 2024年11月5日美国大选开票，共和党候选人特朗普锁定胜局，实现跨越四年的历史性回归
 - id: w-apec-g20-latin-america-202411
   date: '2024-11-16'
   title: 中元首出席APEC与G20峰会，拉美元首外交取得丰硕成果
@@ -8386,6 +8389,9 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2024/syria_assad_fall_2024.jpg
+    caption: 2024年12月8日叙利亚反政府武装攻入首都大马士革，统治叙利亚54年的阿萨德家族政权覆灭
 - id: w-israel-gaza-conflict-202412
   date: '2024-12-15'
   title: 巴以冲突外溢全中东，红海与黎巴嫩危机轮番升级
@@ -8400,6 +8406,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2024/middle_east_crisis_2024.jpg
+    caption: 2024年12月巴以冲突持续深化外溢，红海航道封锁与黎以真主党战事轮番剧烈升级
 - id: w-hottest-year-2024-202412
   date: '2024-12-28'
   title: 2024年打破2023年纪录成为全球史上最热一年
