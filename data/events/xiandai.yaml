@@ -8,6 +8,146 @@
   importance: 5
   summary: 毛泽东于北京天安门城楼宣告中华人民共和国中央人民政府成立。
   confidence: 确定
+- id: cn-shanghai-politburo-meeting-196001
+  date: '1960-01-07'
+  title: 中共中央在上海召开政治局扩大会议研究经济计划
+  category: 政治
+  importance: 4
+  summary: 中共中央在上海举行政治局扩大会议，讨论1960年国民经济计划以及今后数年的发展设想，为随后全局性经济调整和政策修正提供前置判断。
+  confidence: 确定
+  tags:
+    - 国民经济
+    - 党内会议
+    - 调整
+  sources:
+    - 中国共产党新闻网
+    - 党史权威文献
+- id: cn-hongqiqu-start-196002
+  date: '1960-02-11'
+  title: 红旗渠工程正式开工建设
+  category: 经济
+  importance: 4
+  summary: 河南林县红旗渠正式开工，成为新中国大规模水利建设与群众动员的代表性工程，深刻影响华北地区农业灌溉与基层建设记忆。
+  confidence: 确定
+  tags:
+    - 水利
+    - 农业
+    - 基础设施
+  sources:
+    - 中国共产党新闻网
+    - 红旗渠相关党史资料
+- id: cn-angang-constitution-196003
+  date: '1960-03-22'
+  title: 中央批转“鞍钢宪法”并要求在工业战线推广
+  category: 经济
+  importance: 4
+  summary: 中共中央批转鞍山市委关于技术革新和技术革命运动的报告，将“两参一改三结合”概括为“鞍钢宪法”，要求在工业系统推广。
+  confidence: 确定
+  tags:
+    - 工业
+    - 企业管理
+    - 技术革新
+  sources:
+    - 中国共产党新闻网
+    - 党史权威文献
+- id: cn-daqing-oil-field-battle-196004
+  date: '1960-04-29'
+  title: 大庆石油会战全面展开与“铁人”王进喜精神
+  category: 经济
+  importance: 5
+  summary: 松辽平原大庆石油会战誓师大会举行，“铁人”王进喜发出“宁可少活二十年，拼命也要拿下大油田”的誓言。大庆油田的开发彻底改变了中国工业发展历史，培育了“大庆精神”。
+  confidence: 确定
+  tags:
+    - 大庆油田
+    - 铁人王进喜
+    - 工业建设
+  sources:
+    - 人民网
+    - 党史权威文献
+- id: cn-everest-north-summit-196005
+  date: '1960-05-25'
+  title: 中国登山队首次从北坡登顶珠穆朗玛峰
+  category: 文化
+  importance: 5
+  summary: 王富洲、贡布、屈银华等队员从珠峰北坡成功登顶，完成中国人首次登顶珠穆朗玛峰，也是人类首次由北坡登顶这一世界最高峰。
+  confidence: 确定
+  tags:
+    - 体育
+    - 登山
+    - 珠峰
+  sources:
+    - 中央纪委国家监委网站
+    - 党史权威文献
+- id: cn-soviet-withdrawal-experts-196007
+  date: '1960-07-16'
+  title: 苏联政府照会中国单方面撤走全部在华专家
+  category: 政治
+  importance: 5
+  summary: 7月16日苏联政府突然照会中国政府，单方面决定在1个月内撤走全部1390名在华专家，撕毁几百个合同协议，导致中苏关系公开破裂，逼迫中国全面走向自力更生道路。
+  confidence: 确定
+  tags:
+    - 中苏关系
+    - 外交
+    - 自力更生
+  sources:
+    - 外交部档案馆
+    - 党史权威文献
+- id: cn-cuba-relations-196009
+  date: '1960-09-28'
+  title: 中国与古巴建立外交关系
+  category: 政治
+  importance: 5
+  summary: 中古两国同时发表建交公报，古巴成为首个与中华人民共和国建交的拉美和加勒比国家，中国对拉美外交由此取得关键突破。
+  confidence: 确定
+  tags:
+    - 外交
+    - 拉美
+    - 古巴
+  sources:
+    - 中华人民共和国外交部
+    - 中国驻古巴使馆
+- id: cn-eight-char-policy-196009
+  date: '1960-09-30'
+  title: 国家计委报告首次提出“调整、巩固、充实、提高”八字方针
+  category: 经济
+  importance: 5
+  summary: 中央转发国家计委党组关于1961年国民经济计划控制数字的报告，首次明确提出“调整、巩固、充实、提高”方针，成为此后经济恢复的核心政策框架。
+  confidence: 确定
+  tags:
+    - 八字方针
+    - 经济调整
+    - 三年困难时期
+  sources:
+    - 中国共产党新闻网
+    - 党史权威文献
+- id: cn-cpc-twelve-directives-196011
+  date: '1960-11-03'
+  title: 中共中央发出“十二条”紧急指示信纠正“共产风”
+  category: 经济
+  importance: 4
+  summary: 中共中央发出《关于农村人民公社当前政策问题的紧急指示信》（“十二条”），要求坚决纠正“一平二调”的“共产风”，允许社员经营少量自留地，拉开了农村经济纠偏序幕。
+  confidence: 确定
+  tags:
+    - 农业
+    - 人民公社
+    - 政策调整
+  sources:
+    - 人民网
+    - 党史权威文献
+- id: cn-df1-missile-196011
+  date: '1960-11-05'
+  title: 我国第一枚国产近程导弹“东风一号”发射成功
+  category: 文化
+  importance: 5
+  summary: “东风一号”在西北导弹试验基地发射成功并准确命中目标，标志着中国打破西方核与导弹垄断，结束没有导弹的历史。
+  confidence: 确定
+  tags:
+    - 导弹
+    - 国防科技
+    - 军事
+  sources:
+    - 共产党员网
+    - 党史权威文献
 - id: cn-xinyang-incident-report-196101
   date: '1961-01-01'
   title: 中共中央批转河南信阳事件报告

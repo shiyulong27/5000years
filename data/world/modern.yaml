@@ -61,6 +61,162 @@
   importance: 4
   summary: 五十国签署《联合国宪章》，联合国正式成立，望以多边机制维持世界和平。
   confidence: 确定
+- id: w-cameroon-independence-196001
+  date: '1960-01-01'
+  title: 喀麦隆独立拉开“非洲年”序幕
+  category: 政治
+  importance: 4
+  summary: 喀麦隆于1960年元旦独立，这一年共有17个非洲国家摆脱殖民统治，1960年因此被称为“非洲年”。
+  confidence: 确定
+  tags:
+    - 非洲
+    - 去殖民化
+    - 独立运动
+  sources:
+    - Wikipedia
+    - Encyclopaedia Britannica
+- id: w-challenger-deep-dive-196001
+  date: '1960-01-23'
+  title: 人类首次下潜至挑战者深渊
+  category: 文化
+  importance: 4
+  summary: “的里雅斯特号”深潜器抵达马里亚纳海沟挑战者深渊，标志深海探索进入新阶段，与太空竞赛并列成为人类极限探索的重要节点。
+  confidence: 确定
+  tags:
+    - 深潜
+    - 科技
+    - 海洋
+  sources:
+    - Wikipedia
+    - Encyclopaedia Britannica
+- id: w-u2-incident-196005
+  date: '1960-05-01'
+  title: U-2侦察机事件爆发
+  category: 战争
+  importance: 5
+  summary: 美国U-2高空侦察机在苏联境内被击落，导致美苏关系急剧恶化，原定高层缓和进程受挫，冷战紧张局势再度升级。
+  confidence: 确定
+  tags:
+    - 冷战
+    - 美苏关系
+    - 军事情报
+  sources:
+    - Wikipedia
+    - Encyclopaedia Britannica
+- id: w-first-birth-control-pill-196005
+  date: '1960-05-09'
+  title: 美国 FDA 批准首款口服避孕药上市
+  category: 文化
+  importance: 4
+  summary: 美国食品药品监督管理局（FDA）正式批准首款口服避孕药（Enovid）上市，引发了全球范围内的社会文化革命与女性解放浪潮，重塑了现代社会学结构。
+  confidence: 确定
+  tags:
+    - 医学
+    - 女性解放
+    - 社会变革
+  sources:
+    - FDA History
+    - Encyclopaedia Britannica
+    - Wikipedia
+- id: w-first-laser-invented-196005
+  date: '1960-05-16'
+  title: 西奥多·梅曼研制成功人类第一台红宝石激光器
+  category: 文化
+  importance: 5
+  summary: 美国休斯实验室科学家梅曼成功研制出人类历史上第一台红宝石激光器，获得相干光束，开创了现代光学、半导体、光纤通信与医疗激光新纪元。
+  confidence: 确定
+  tags:
+    - 科技
+    - 物理学
+    - 突破性发明
+  sources:
+    - Nature
+    - IEEE
+    - Wikipedia
+- id: w-great-chilean-earthquake-196005
+  date: '1960-05-22'
+  title: 智利瓦尔迪维亚大地震发生
+  category: 灾害
+  importance: 5
+  summary: 智利发生矩震级9.5级大地震，是现代仪器记录以来最强地震，并引发跨太平洋海啸，造成全球范围灾害影响。
+  confidence: 确定
+  tags:
+    - 地震
+    - 海啸
+    - 智利
+  sources:
+    - USGS
+    - Wikipedia
+- id: w-congo-independence-196006
+  date: '1960-06-30'
+  title: 刚果共和国独立
+  category: 政治
+  importance: 5
+  summary: 比属刚果宣布独立，卡萨武布出任总统、卢蒙巴出任总理，成为非洲去殖民化浪潮中的关键节点，也迅速引发国际政治角力。
+  confidence: 确定
+  tags:
+    - 非洲
+    - 去殖民化
+    - 冷战
+  sources:
+    - Wikipedia
+    - 联合国
+- id: w-rome-olympics-196008
+  date: '1960-08-25'
+  title: 罗马奥运会开幕
+  category: 文化
+  importance: 4
+  summary: 第17届夏季奥运会在罗马开幕，这是电视传播全面影响全球体育叙事的重要一届，也留下多项经典赛事记忆。
+  confidence: 确定
+  tags:
+    - 体育
+    - 奥运会
+    - 文化传播
+  sources:
+    - 国际奥委会
+    - Wikipedia
+- id: w-opec-founded-196009
+  date: '1960-09-10'
+  title: 石油输出国组织成立
+  category: 经济
+  importance: 5
+  summary: 伊拉克、伊朗、科威特、沙特阿拉伯和委内瑞拉在巴格达成立OPEC，发展中国家开始集体争取原油定价与资源主权。
+  confidence: 确定
+  tags:
+    - 石油
+    - 国际经济
+    - 中东
+  sources:
+    - OPEC
+    - Wikipedia
+- id: w-first-tv-presidential-debate-196009
+  date: '1960-09-26'
+  title: 肯尼迪与尼克松举行人类首次总统大选电视辩论
+  category: 政治
+  importance: 4
+  summary: 肯尼迪与尼克松在芝加哥举行人类政治史上首次电视直播总统大选辩论，电视媒体重塑了现代大众政治与大众传播竞选模式。
+  confidence: 确定
+  tags:
+    - 美国大选
+    - 大众传播
+    - 政治
+  sources:
+    - Museum of Broadcast Communications
+    - Wikipedia
+- id: w-kennedy-elected-196011
+  date: '1960-11-08'
+  title: 约翰·肯尼迪当选美国总统
+  category: 政治
+  importance: 4
+  summary: 美国大选中，民主党候选人约翰·肯尼迪击败理查德·尼克松，当选为美国总统，预示美国冷战战略与国内政治风格进入新阶段。
+  confidence: 确定
+  tags:
+    - 美国
+    - 大选
+    - 冷战
+  sources:
+    - Wikipedia
+    - JFK Library
 - id: w-kennedy-inauguration-196101
   date: '1961-01-20'
   title: 约翰·肯尼迪就任美国总统
