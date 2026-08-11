@@ -8241,7 +8241,7 @@
   date: '2024-01-01'
   title: 金砖国家实现历史性扩员，埃及、伊朗等五国正式加入
   category: 政治
-  importance: 4
+  importance: 5
   summary: 沙特、埃及、阿联酋、伊朗、埃塞俄比亚五国正式成为金砖国家成员，“大金砖合作”引领“全球南方”加速崛起。
   confidence: 确定
   tags:
@@ -8250,6 +8250,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2024/brics_expansion_2024.jpg
+    caption: 2024年1月1日沙特、埃及、阿联酋、伊朗、埃塞俄比亚正式加入金砖国家，金砖合作机制实现历史性重大扩员（图为金砖峰会现场摄影）
 - id: w-sweden-nato-202403
   date: '2024-03-07'
   title: 瑞典正式加入北约，北约完成第32个成员国扩张
@@ -8374,7 +8377,7 @@
   date: '2024-11-20'
   title: AI 领域开拓者斩获诺贝尔物理学奖与化学奖
   category: 文化
-  importance: 4
+  importance: 5
   summary: 2024年诺贝尔奖揭晓，神经网络机器学习奠基人霍普菲尔德与辛顿获物理学奖，AlphaFold团队领衔者获化学奖，凸显AI重塑科学。
   confidence: 确定
   tags:
@@ -8383,16 +8386,22 @@
   sources:
     - 新华网
     - 诺贝尔奖官网
+  image:
+    url: /images/events/2024/ai_nobel_prizes_2024.jpg
+    caption: 2024年11月诺贝尔奖揭晓，AI神经网络与AlphaFold2开创者跨界包揽诺贝尔物理学奖与化学奖，标志科学新时代（图为诺贝尔奖金章）
 - id: w-south-korea-martial-law-202412
   date: '2024-12-03'
   title: 韩国总统尹锡悦宣布紧急戒严又旋即解除
   category: 政治
-  importance: 4
+  importance: 5
   summary: 韩国总统尹锡悦在深夜发表谈话宣布实施紧急戒严，数小时后遭国会表决否决被迫解除，引发大规模民众抗议与政局动荡，随后演变为弹劾风波。
   confidence: 确定
   tags:
     - 政治
     - 韩国
+  image:
+    url: /images/events/2024/sk_martial_law_2024.jpg
+    caption: 2024年12月3日韩国总统尹锡悦深夜突发宣布紧急戒严，韩国国会紧急表决要求解戒，引发宪政历史剧变（图为韩国国会大厦现场照片）
 - id: w-syria-assad-fall-202412
   date: '2024-12-08'
   title: 叙利亚反对派攻陷大马士革，巴沙尔·阿萨德政权倒台

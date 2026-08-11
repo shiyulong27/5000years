@@ -7361,7 +7361,7 @@
   date: '2024-09-13'
   title: 全国人大常委会表决通过渐进式延迟法定退休年龄决定
   category: 政治
-  importance: 4
+  importance: 5
   summary: 十四届全国人大常委会第十一次会议表决通过关于实施渐进式延迟法定退休年龄的决定，自2025年1月1日起施行。
   confidence: 确定
   tags:
@@ -7370,6 +7370,9 @@
     - 改革
   sources:
     - 新华网
+  image:
+    url: /images/events/2024/delay_retirement_2024.jpg
+    caption: 2024年9月13日十四届全国人大常委会第十四次会议表决通过渐进式延迟法定退休年龄的决定，实施全社会重大民生制度变革（图为全国人大会议现场照片）
 - id: cn-stimulus-package-202409
   date: '2024-09-24'
   title: 党中央部署一揽子增量政策，提振经济与资本市场
