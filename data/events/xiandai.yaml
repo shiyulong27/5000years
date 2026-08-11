@@ -7402,6 +7402,9 @@
   tags:
     - 科技
     - AI
+  image:
+    url: /images/events/2025/deepseek_r1_2025.jpg
+    caption: 2025年1月DeepSeek发布R1推理模型，突破开源AI技术边界震动全球科技界
 - id: cn-spring-festival-economy-202502
   date: 2025-02
   title: 农历乙巳蛇年春节假日经济再创新高
@@ -7529,6 +7532,9 @@
   tags:
     - 外交
     - 上合
+  image:
+    url: /images/events/2025/sco_tianjin_2025.jpg
+    caption: 2025年9月上合组织天津峰会举行，发表天津宣言推动区域合作
 - id: cn-antijapan-80th-202509
   date: '2025-09-03'
   title: 纪念抗战胜利80周年大会与阅兵
@@ -7539,6 +7545,9 @@
   tags:
     - 军事
     - 纪念
+  image:
+    url: /images/events/2025/antijapan_80th_2025.jpg
+    caption: 2025年9月3日首都天安门广场举行纪念抗战胜利80周年盛大阅兵式
 - id: cn-fujian-catapult-202509
   date: '2025-09-22'
   title: 福建舰完成多型舰载机电磁弹射训练
@@ -7578,6 +7587,9 @@
   tags:
     - 政治
     - 十五五
+  image:
+    url: /images/events/2025/cpc_4th_plenum_2025.jpg
+    caption: 2025年10月中共二十届四中全会在北京召开，谋划“十五五”时期经济社会发展
 - id: cn-shenzhou-20-21-202511
   date: '2025-11-01'
   title: 神舟二十号与二十一号乘组空间站太空会师
@@ -7608,8 +7620,8 @@
     - 军事
     - 海军
   image:
-    url: /images/events/2025/fujian-flight-deck.jpg
-    caption: 福建舰飞行甲板与舰载机画面
+    url: /images/events/2025/fujian_carrier_commission_2025.jpg
+    caption: 2025年11月电磁弹射型航母福建舰正式交付入列，人民海军进入三航母时代
 - id: cn-shenzhou-20-emergency-202511
   date: '2025-11-14'
   title: 神舟二十号遭碎片撞击，载人航天首次应急处置

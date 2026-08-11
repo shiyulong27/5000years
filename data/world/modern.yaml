@@ -8424,8 +8424,8 @@
     - 中东
     - 加沙
   image:
-    url: /images/events/2025/gaza-january-ceasefire.jpg
-    caption: 2025年1月停火后，流离失所的加沙居民经拉希德街返回家园
+    url: /images/events/2025/gaza_ceasefire_jan_2025.jpg
+    caption: 2025年1月加沙停火协议生效，国际社会斡旋缓和中东局势
 - id: w-us-trump-2nd-term-202501
   date: '2025-01-20'
   title: 特朗普宣誓就任第47任美国总统
@@ -8437,8 +8437,8 @@
     - 美国
     - 政治
   image:
-    url: /images/events/2025/trump-inauguration.jpg
-    caption: 2025年1月20日，特朗普在美国总统就职典礼上宣誓
+    url: /images/events/2025/trump_inauguration_2025.jpg
+    caption: 2025年1月20日特朗普在华盛顿国会山宣誓就任第47任美国总统
 - id: w-russia-ukraine-3yr-202502
   date: '2025-02-24'
   title: 俄乌冲突三周年与和平倡议博弈
@@ -8480,8 +8480,8 @@
     - 关税
     - 贸易
   image:
-    url: /images/events/2025/trump-tariffs.jpg
-    caption: 2025年4月2日，特朗普在白宫展示所谓“对等关税”表格
+    url: /images/events/2025/global_tariffs_2025.jpg
+    caption: 2025年4月美国重磅出台全球关税政策，多国采取对等反制措施
 - id: w-pope-francis-dies-202504
   date: '2025-04-21'
   title: 教宗方济各逝世，良十四世继任
@@ -8493,8 +8493,8 @@
     - 宗教
     - 梵蒂冈
   image:
-    url: /images/events/2025/pope-leo-xiv.jpg
-    caption: 2025年5月，新当选的教宗良十四世首次公开亮相
+    url: /images/events/2025/pope_succession_2025.jpg
+    caption: 2025年4月教宗方济各在梵蒂冈逝世，新教宗良十四世当选继任
 - id: w-snooker-zhaoxintong-202505
   date: 2025-05
   title: 赵心童夺得斯诺克世界锦标赛冠军
@@ -8535,8 +8535,8 @@
     - 中东
     - 军事
   image:
-    url: /images/events/2025/israel-iran-war.jpg
-    caption: 2025年6月，以色列空军战机飞往伊朗执行空袭任务
+    url: /images/events/2025/israel_iran_12day_war_2025.jpg
+    caption: 2025年6月中东局势急剧升级，以伊突发“十二日战争”引发国际高度关注
 - id: w-global-tariff-friction-202507
   date: 2025-07
   title: 全球对等关税引发多边贸易争端
@@ -8577,8 +8577,8 @@
     - 中东
     - 政治
   image:
-    url: /images/events/2025/gaza-october-ceasefire.jpg
-    caption: 2025年10月，加沙停火协议签署仪式现场
+    url: /images/events/2025/gaza_oct_peace_2025.jpg
+    caption: 2025年10月加沙全面停火协定签署，启动多国参与的中东重建和平计划
 - id: w-un-80th-202510
   date: '2025-10-24'
   title: 联合国迎来成立80周年
@@ -8590,8 +8590,8 @@
     - 联合国
     - 外交
   image:
-    url: /images/events/2025/un-80th-anniversary.jpg
-    caption: 联合国总部举行纪念联合国成立80周年高级别会议
+    url: /images/events/2025/un_80th_anniversary_2025.jpg
+    caption: 2025年10月24日联合国在纽约总部举行成立80周年纪念大会，重申多边主义
 - id: w-apec-202511
   date: '2025-11-01'
   title: APEC第三十二次领导人非正式会议举行
@@ -8651,6 +8651,9 @@
   tags:
     - 灾害
     - 地震
+  image:
+    url: /images/events/2025/myanmar_quake_2025.jpg
+    caption: 2025年3月28日缅甸发生7.7级强震，引发国际人道主义救援行动
 - id: w-south-korea-yoon-202504
   date: '2025-04-04'
   title: 韩国宪法法院裁定尹锡悦弹劾成立

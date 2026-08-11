@@ -13,11 +13,11 @@ const EXPECTED_IDS = [
   'cn-fujian-commission-202511',
   'w-gaza-ceasefire-202501',
   'w-us-trump-2nd-term-202501',
+  'w-myanmar-earthquake-202503',
   'w-liberation-day-tariffs-202504',
   'w-pope-francis-dies-202504',
   'w-israel-iran-war-202506',
   'w-gaza-ceasefire-plan-202510',
-  'w-un-80th-202510',
 ]
 
 function readYaml(relativePath) {
@@ -37,12 +37,12 @@ describe('2025 年五级重大事件数据与专属配图校验', () => {
     expect(major2025.map((event) => event.id).sort()).toEqual([...EXPECTED_IDS].sort())
   })
 
-  it('配有图片的五级事件必须拥有有效本地物理图片与非空图注', () => {
-    const withImg = major2025.filter(e => e.image && e.image.url)
-    for (const event of withImg) {
-      expect(event.image).toBeTypeOf('object')
-      expect(event.image.url).toMatch(/^\/images\/events\/2025\/[a-z0-9-]+\.(?:jpg|png|webp)$/)
-      expect(event.image.caption.trim().length).toBeGreaterThan(0)
+  it('2025 年所有 12 条 5 级重大事件必须 100% 拥有有效本地物理图片与非空图注', () => {
+    expect(major2025.length).toBe(12)
+    for (const event of major2025) {
+      expect(event.image, `${event.id} 缺少配图`).toBeTypeOf('object')
+      expect(event.image.url).toMatch(/^\/images\/events\/2025\/[a-zA-Z0-9_-]+\.(?:jpg|png|webp)$/)
+      expect(event.image.caption.trim().length, `${event.id} 图注为空`).toBeGreaterThan(0)
 
       const imagePath = path.join(ROOT, 'public', event.image.url.replace(/^\//, ''))
       expect(fs.existsSync(imagePath), `${event.id} 图片不存在`).toBe(true)
