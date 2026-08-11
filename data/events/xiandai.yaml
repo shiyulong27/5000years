@@ -6857,7 +6857,7 @@
   date: '2021-05-22'
   title: “杂交水稻之父”袁隆平院士在长沙逝世
   category: 文化
-  importance: 4
+  importance: 5 # 划时代贡献人物：袁隆平为解决全球粮食安全问题作出不可替代贡献，其逝世影响深远，评定为5级（历史转折）
   summary: |
     “杂交水稻之父”、中国工程院院士、共和国勋章获得者袁隆平在湖南长沙逝世，享年91岁。全国数十万民众自发赶赴长沙悼念，联合国及国际社会高度评价其为解决全球饥饿问题作出的划时代贡献。
   confidence: 确定
@@ -7163,6 +7163,9 @@
   tags:
     - 外交
     - 中东
+  image:
+    url: /images/events/2023/saudi_iran_reconciliation.jpg
+    caption: 2023年3月10日在中国斡旋下，沙特阿拉伯与伊朗在北京签署联合声明宣布复交，断交七年后实现历史性握手（图为沙伊中三方代表历史性握手照片）
 - id: cn-institution-reform-202303
   date: '2023-03-16'
   title: 党和国家机构改革启动实施
@@ -7197,12 +7200,15 @@
   date: '2023-05-28'
   title: C919国产大飞机商业首航
   category: 文化
-  importance: 4
+  importance: 5
   summary: 全球首架国产大飞机C919执飞上海虹桥—北京首都航线，圆满完成首次商业载客飞行，中国民航自此进入自主研制干线客机时代。
   confidence: 确定
   tags:
     - 航空
     - 科技
+  image:
+    url: /images/events/2023/c919_maiden_flight_2023.jpg
+    caption: 2023年5月28日C919国产大飞机成功完成商业首航（MU9191航班），标志中国民航客机制造迈入商业运营新时代（图为C919干线客机实景摄影）
 - id: cn-games-2023
   date: '2023-07-28'
   title: 成都大运会与杭州亚运会先后举办

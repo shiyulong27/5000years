@@ -8127,6 +8127,9 @@
   tags:
     - 灾害
     - 地震
+  image:
+    url: /images/events/2023/turkey_earthquake_2023.jpg
+    caption: 2023年2月6日土耳其南部爆发7.8级特大地震，导致重大生命伤亡与灾后重建（图为地震废墟现场救援照片）
 - id: w-banking-crisis-202303
   date: '2023-03-10'
   title: 硅谷银行倒闭与欧美银行业动荡
@@ -8147,6 +8150,9 @@
   tags:
     - 科技
     - AI
+  image:
+    url: /images/events/2023/genai_boom_2023.jpg
+    caption: 2023年3月14日GPT-4发布与生成式AI快速崛起，掀起全球人工智能大模型产业与技术文明风暴
 - id: w-sudan-civil-war-202304
   date: '2023-04-15'
   title: 苏丹内战爆发
@@ -8161,22 +8167,28 @@
   date: '2023-05-05'
   title: 世卫组织宣布新冠不再构成国际关注的突发公共卫生事件
   category: 文化
-  importance: 4
+  importance: 5
   summary: 世界卫生组织总干事谭德塞宣布，新冠疫情不再构成“国际关注的突发公共卫生事件”，标志着持续三年多的全球卫生紧急状态结束。
   confidence: 确定
   tags:
     - 卫生
     - 全球
+  image:
+    url: /images/events/2023/covid_emergency_end_2023.jpg
+    caption: 2023年5月5日世卫组织宣布新冠疫情不再构成“国际关注的突发公共卫生事件”，三年全球抗疫紧急状态终结（图为世卫组织日内瓦总部）
 - id: w-chandrayaan3-202308
   date: '2023-08-23'
   title: 印度月船三号成功登月
   category: 文化
-  importance: 4
+  importance: 5
   summary: 印度月船三号探测器在月球南极附近成功软着陆，印度成为继苏联、美国、中国之后第四个实现月面软着陆的国家。
   confidence: 确定
   tags:
     - 航天
     - 科技
+  image:
+    url: /images/events/2023/chandrayaan3_landing_2023.jpg
+    caption: 2023年8月23日印度“月船三号”成功在月球南极附近着陆，人类首次实现探月器月球南极软着陆（图为月船三号探测器实物照片）
 - id: w-brics-g20-202308
   date: '2023-08-24'
   title: 金砖国家扩员与非盟加入G20
@@ -8191,12 +8203,15 @@
   date: '2023-08-24'
   title: 日本启动福岛核污染水排海
   category: 灾害
-  importance: 4
+  importance: 5
   summary: 日本不顾国内外强烈反对，启动福岛第一核电站核污染水排放入海，中国等多国宣布暂停进口日本水产品，引发国际海洋环境争议。
   confidence: 确定
   tags:
     - 环境
     - 核安全
+  image:
+    url: /images/events/2023/fukushima_daiichi_2023.jpg
+    caption: 2023年8月24日日本强行启动福岛核污染水排海，引发全球海洋生态与食品安全极大关注（图为福岛第一核电站实景）
 - id: w-extreme-disasters-202309
   date: '2023-09-10'
   title: 利比亚溃坝与摩洛哥地震等极端灾害
@@ -8217,6 +8232,9 @@
   tags:
     - 战争
     - 中东
+  image:
+    url: /images/events/2023/israel_hamas_war_2023.jpg
+    caption: 2023年10月7日新一轮巴以冲突爆发，引发中东数十年来最严重的军事冲突与地缘局势震荡（图为2023年10月现场拍摄真实照片）
 - id: w-xijinping-biden-202311
   date: '2023-11-15'
   title: 中美元首旧金山会晤
@@ -8227,6 +8245,9 @@
   tags:
     - 外交
     - 中美
+  image:
+    url: /images/events/2023/xi_biden_summit_2023.jpg
+    caption: 2023年11月15日中美元首在旧金山举行会晤，开辟面向未来的“旧金山愿景”（图为中美元首会晤现场摄影）
 - id: w-hottest-year-202311
   date: '2023-11-30'
   title: 全球最热一年与迪拜气候大会
