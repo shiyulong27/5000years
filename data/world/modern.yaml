@@ -1072,9 +1072,6 @@
     - 国际奥委会
     - Encyclopaedia Britannica
     - Wikipedia—1964 Summer Olympics
-  image:
-    url: /images/events/1964/tokyo-olympics-196410.jpg
-    caption: 1964年10月10日，第18届夏季奥运会在东京开幕
 - id: w-khrushchev-ousted-196410
   date: '1964-10-14'
   title: 赫鲁晓夫下台，勃列日涅夫接任
@@ -5630,9 +5627,6 @@
   sources:
     - 联合国
     - 维基百科
-  image:
-    url: /images/events/2005/kyoto_protocol_2005.jpg
-    caption: 2005年2月16日旨在限制全球温室气体排放的《京都议定书》经俄罗斯批准后正式法律生效
 - id: w-pope-john-paul-ii-death-200504
   date: '2005-04-02'
   title: 罗马教宗若望保禄二世逝世，本笃十六世继任
@@ -5647,9 +5641,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2005/pope_john_paul_pass_2005.jpg
-    caption: 2005年4月2日教宗若望保禄二世在梵蒂冈逝世，枢机主教团选举本笃十六世成为第265任教宗
 - id: w-eu-constitution-rejected-200505
   date: '2005-05-29'
   title: 法国与荷兰国民公投否决《欧洲宪法条约》，欧洲一体化进程受挫
@@ -5679,9 +5670,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2005/london_bombings_2005.jpg
-    caption: 2005年7月7日伦敦早高峰时段3列地铁与1辆公交车突发连环自杀式恐袭，导致52人遇难
 - id: w-hurricane-katrina-200508
   date: '2005-08-29'
   title: 四级飓风"卡特里娜"重创美国新奥尔良，造成逾1800人遇难
@@ -5697,9 +5685,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2005/hurricane_katrina_2005.jpg
-    caption: 2005年8月29日四级飓风卡特里娜横扫美国墨西哥湾沿岸，新奥尔良决堤遭毁灭性打击
 - id: w-kashmir-earthquake-200510
   date: '2005-10-08'
   title: 南亚克什米尔地区发生7.6级大地震，造成逾8.6万人遇难
@@ -5715,9 +5700,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2005/kashmir_earthquake_2005.jpg
-    caption: 2005年10月8日巴控克什米尔地区爆发7.6级大地震，基础设施全面毁坏，酿成极其惨重伤亡
 - id: w-merkel-chancellor-200511
   date: '2005-11-22'
   title: 安格拉·默克尔宣誓就任德国联邦总理，成为德国首位女性总理
@@ -5733,9 +5715,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2005/merkel_chancellor_2005.jpg
-    caption: 2005年11月22日默克尔在柏林宣誓就任德国联邦总理，开启长达16年的默克尔执政时代
 - id: w-java-earthquake-200605
   date: '2006-05-27'
   title: 印度尼西亚爪哇岛发生6.3级强震，造成近6000人遇难
@@ -5750,9 +5729,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2006/java_earthquake_2006.jpg
-    caption: 2006年5月27日印尼爪哇岛日惹地区发生6.3级强震，多处历史遗迹与村镇被夷为平地
 - id: w-montenegro-independence-200606
   date: '2006-06-03'
   title: 黑山议会正式宣布黑山独立，塞尔维亚和黑山国家联盟解体
@@ -5767,9 +5743,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2006/montenegro_independence_2006.jpg
-    caption: 2006年6月3日黑山议会根据公投结果正式宣布独立，南斯拉夫解体后最后的国家联盟画上句号
 - id: w-world-cup-germany-200606
   date: '2006-06-09'
   title: 第18届世界杯足球赛在德国举行，意大利队夺得冠军
@@ -5784,9 +5757,6 @@
   sources:
     - FIFA
     - 维基百科
-  image:
-    url: /images/events/2006/world_cup_germany_2006.jpg
-    caption: 2006年夏季第18届世界杯在德国成功举办，意大利队在柏林决赛通过点球大战击败法国队第四次加冕
 - id: w-lebanon-war-200607
   date: '2006-07-12'
   title: 黎以爆发第二次黎巴嫩战争，造成千余人平民伤亡
@@ -5801,9 +5771,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2006/lebanon_war_2006.jpg
-    caption: 2006年7月真主党越境袭击后以军对黎巴嫩展开34天大规模空袭与陆上冲突，引爆次黎以战争
 - id: w-pluto-demoted-dwarf-planet-200608
   date: '2006-08-24'
   title: 国际天文学联合会投票通过行星新定义，冥王星被降级为矮行星
@@ -5818,9 +5785,6 @@
   sources:
     - IAU
     - 维基百科
-  image:
-    url: /images/events/2006/pluto_demoted_2006.jpg
-    caption: 2006年8月24日国际天文学联合会在布拉格表决通过行星新定义，冥王星排除出九大行星行列列为矮行星
 - id: w-shinzo-abe-pm-200609
   date: '2006-09-26'
   title: 安倍晋三首次当选日本首相，成为战后日本最年轻的首相
@@ -5850,9 +5814,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2006/nk_first_nuclear_test_2006.jpg
-    caption: 2006年10月9日朝鲜宣布成功进行首次地下核试验，联合国安理会全票一致通过第1718号制裁决议
 - id: w-saddam-executed-200612
   date: '2006-12-30'
   title: 伊拉克前总统萨达姆·侯赛因在巴格达被执行绞刑
@@ -5868,9 +5829,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2006/saddam_executed_2006.jpg
-    caption: 2006年12月30日伊拉克前总统萨达姆因杜贾尔村案被伊拉克特别法庭判处绞刑并执行
 - id: w-ban-ki-moon-un-200701
   date: '2007-01-01'
   title: 潘基文正式就任联合国第八任秘书长
@@ -5886,9 +5844,6 @@
     - 联合国
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2007/ban_ki_moon_un_2007.jpg
-    caption: 2007年1月1日韩国外交官潘基文接替安南宣誓就任第八任联合国秘书长，展开为期10年任期
 - id: w-iphone-launch-200701
   date: '2007-01-09'
   title: 史蒂夫·乔布斯在旧金山正式发布首款 iPhone，重新定义智能手机
@@ -5903,9 +5858,6 @@
   sources:
     - 维基百科
     - Apple
-  image:
-    url: /images/events/2007/iphone_launch_2007.jpg
-    caption: 2007年1月9日史蒂夫·乔布斯在旧金山Macworld大会发布第一代iPhone，开启移动互联网多点触控新时代
 - id: w-putin-munich-speech-200702
   date: '2007-02-10'
   title: 俄罗斯总统普京在慕尼黑安全会议发表重要演讲，猛烈批评单极世界
@@ -5921,9 +5873,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2007/putin_munich_speech_2007.jpg
-    caption: 2007年2月10日俄罗斯总统普京在慕尼黑安全会议发表讲话，严厉谴责美国单极霸权与北约东扩
 - id: w-subprime-mortgage-crisis-200704
   date: '2007-04-02'
   title: 美国第二大次级房贷公司申请破产保护，次贷危机正式显现
@@ -5938,9 +5887,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2007/subprime_mortgage_crisis_2007.jpg
-    caption: 2007年4月美国第二大次级房贷公司新世纪金融申请破产，次贷违约风暴拉开全球金融危机序幕
 - id: w-virginia-tech-shooting-200704
   date: '2007-04-16'
   title: 美国弗吉尼亚理工大学发生恶性枪击案，造成33人死亡
@@ -5997,9 +5943,6 @@
   sources:
     - IPCC
     - 维基百科
-  image:
-    url: /images/events/2007/ipcc_ar4_report_2007.jpg
-    caption: 2007年11月IPCC发布第四次评估报告警告全球变暖极可能由人类活动导致，该机构同年获诺贝尔和平奖
 - id: w-benazir-bhutto-assassination-200712
   date: '2007-12-27'
   title: 巴基斯坦前总理贝娜齐尔·布托在拉瓦尔品第遇刺身亡
@@ -6015,9 +5958,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2007/benazir_bhutto_assassinated_2007.jpg
-    caption: 2007年12月27日巴基斯坦首位女性总理布托在拉瓦尔品第竞选集会后遭枪击自杀式恐袭身亡
 - id: w-kosovo-independence-200802
   date: '2008-02-17'
   title: 科索沃正式宣布从塞尔维亚独立，引发国际社会严重分歧
@@ -6032,9 +5972,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2008/kosovo_independence_2008.jpg
-    caption: 2008年2月17日科索沃单方面宣布脱离塞尔维亚独立，塞尔维亚与俄罗斯坚决反对，西方多国予以承认
 - id: w-tibet-beijing-olympic-relay-200804
   date: '2008-04-07'
   title: 北京奥运火炬巴黎传递受到蓄意干扰，中国民众强烈谴责
@@ -6062,9 +5999,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2008/myanmar_cyclone_2008.jpg
-    caption: 2008年5月强热带气旋纳尔吉斯席卷缅甸伊洛瓦底江三角洲引发巨大风暴潮，造成逾138000人遇难失踪
 - id: w-russia-georgia-war-200808
   date: '2008-08-08'
   title: 俄格战争爆发，俄罗斯军队进入南奥塞梯与格鲁吉亚交战
@@ -6079,9 +6013,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2008/russia_georgia_war_2008.jpg
-    caption: 2008年8月格鲁吉亚进攻南奥塞梯后俄军大规模介入击退格军，随后俄罗斯宣布承认南奥塞梯与阿布哈兹独立
 - id: w-phelps-eight-gold-200808
   date: '2008-08-16'
   title: 美国游泳运动员迈克尔·菲尔普斯在北京奥运会夺得8枚金牌，创历史纪录
@@ -6109,9 +6040,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2008/lehman_bankruptcy_2008.jpg
-    caption: 2008年9月15日拥有158年历史的美国第四大投资银行雷曼兄弟申请破产保护，引发1929年以来最严重全球金融危机
 - id: w-us-government-bailout-200810
   date: '2008-10-03'
   title: 美国国会通过7000亿美元金融救援计划（TARP），布什总统签署生效
@@ -6127,9 +6055,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2008/us_tarp_bailout_2008.jpg
-    caption: 2008年10月美国总统布什签署7000亿美元不良资产救助计划TARP，紧急救助受创华尔街金融机构
 - id: w-obama-wins-election-200811
   date: '2008-11-04'
   title: 民主党候选人巴拉克·奥巴马当选美国第44任总统，成为首位非裔总统
@@ -6144,9 +6069,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2008/obama_win_election_2008.jpg
-    caption: 2008年11月4日民主党候选人巴拉克·奥巴马在大选中击败麦凯恩，创造历史成为美国首位非裔总统
 - id: w-g20-washington-summit-200811
   date: '2008-11-15'
   title: G20峰会首次在华盛顿举行，协调各国应对全球金融危机
@@ -6161,9 +6083,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2008/g20_washington_summit_2008.jpg
-    caption: 2008年11月15日G20领导人首次在华盛顿举行峰会，确立G20作为国际经济合作主要平台
 - id: w-mumbai-terrorist-attacks-200811
   date: '2008-11-26'
   title: 印度孟买发生连环恐怖袭击，造成逾160人遇难
@@ -6179,9 +6098,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2008/mumbai_terror_attacks_2008.jpg
-    caption: 2008年11月26日枪手突袭孟买泰姬玛哈酒店及火车站等多处地标，武装围攻持续近60小时致166人死亡
 - id: w-obama-inauguration-200901
   date: '2009-01-20'
   title: 巴拉克·奥巴马宣誓就任美国第44任总统，成为首位非裔美国总统
@@ -6196,9 +6112,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2009/obama_inauguration_2009.jpg
-    caption: 2009年1月20日近200万民众在华盛顿国家广场见证奥巴马宣誓就职，开启“变革”执政时代
 - id: w-g20-london-summit-200904
   date: '2009-04-02'
   title: G20伦敦峰会达成共识，承诺注入1.1万亿美元应对全球金融危机
@@ -6214,9 +6127,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2009/g20_london_summit_2009.jpg
-    caption: 2009年4月2日G20伦敦峰会达成历史性共识，承诺注入1.1万亿美元支持全球贸易与国际金融体系
 - id: w-north-korea-second-nuclear-test-200905
   date: '2009-05-25'
   title: 朝鲜进行第二次核试验，联合国安理会一致通过制裁决议
@@ -6232,9 +6142,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2009/nk_second_nuclear_test_2009.jpg
-    caption: 2009年5月25日朝鲜宣布进行第二次地下核试验，安理会一致通过第1874号决议强化制裁
 - id: w-swine-flu-pandemic-200906
   date: '2009-06-11'
   title: 世卫组织宣布甲型H1N1流感进入全球大流行（6级）最高警戒
@@ -6250,9 +6157,6 @@
     - WHO
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2009/h1n1_pandemic_2009.jpg
-    caption: 2009年6月11日世卫组织将甲型H1N1流感警戒级别提升至最高6级，宣告全球流感大流行
 - id: w-iran-election-protests-200906
   date: '2009-06-12'
   title: 伊朗总统选举后爆发大规模抗议示威，"绿色运动"震动德黑兰
@@ -6296,9 +6200,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2009/us_withdraw_iraq_cities_2009.jpg
-    caption: 2009年6月30日美军作战部队全面撤出伊拉克城镇，伊拉克设立“主权日”全面接管安全战线
 - id: w-obama-peace-prize-200910
   date: '2009-10-09'
   title: 美国总统奥巴马获授2009年诺贝尔和平奖，引发全球广泛争议
@@ -6328,9 +6229,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2009/lisbon_treaty_2009.jpg
-    caption: 2009年12月1日改革欧盟运作机制的《里斯本条约》生效，设立欧盟理事会常任主席与外交高级代表
 - id: w-cop15-copenhagen-200912
   date: '2009-12-07'
   title: 《联合国气候变化框架公约》第15次缔约方大会（COP15）在哥本哈根举行
@@ -6347,9 +6245,6 @@
     - 联合国
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2009/cop15_copenhagen_2009.jpg
-    caption: 2009年12月联合国哥本哈根气候大会召开，近百位国家元首出席，发表《哥本哈根协议》
 - id: w-haiti-earthquake-201001
   date: '2010-01-12'
   title: 海地发生7.3级特大地震
@@ -6416,9 +6311,6 @@
   sources:
     - 新华网
     - 维基百科
-  image:
-    url: /images/events/2010/eurozone_crisis_2010.jpg
-    caption: 2010年5月希腊债务危机蔓延引发欧洲主权债务危机，欧盟与IMF紧急设立7500亿欧元救助机制
 - id: w-wikileaks-afghan-war-201007
   date: '2010-07-25'
   title: 维基解密曝光数万份阿富汗战争机密档案
@@ -6472,9 +6364,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2010/arab_spring_begins_2010.jpg
-    caption: 2010年12月突尼斯暴发街头抗议拉开阿拉伯之春序幕，深刻改写中东北非多国政治格局
 - id: w-brics-south-africa-201012
   date: '2010-12-24'
   title: 南非正式加入，“金砖四国”扩容为“金砖国家”（BRICS）
@@ -6501,9 +6390,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2011/egypt_revolution_2011.jpg
-    caption: 2011年2月开罗解放广场爆发大规模抗议，执政30年的埃及总统穆巴拉克被迫辞职下台
 - id: w-china-gdp-second-official-201102
   date: '2011-02-14'
   title: 日本正式证实中国2010年经济总量赶超日本跃居世界第二
@@ -6518,9 +6404,6 @@
   sources:
     - 新华网
     - 维基百科
-  image:
-    url: /images/events/2011/japan_gdp_data_2011.jpg
-    caption: 2011年2月14日日本内阁府发布数据证实中国2010年GDP正式超越日本跃居世界第二大经济体
 - id: w-fukushima-disaster-201103
   date: '2011-03-11'
   title: 日本发生9.0级特大地震并引发巨大海啸与福岛核事故
@@ -6536,9 +6419,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2011/fukushima_disaster_2011.jpg
-    caption: 2011年3月11日日本东北部海域发生9.0级强震海啸，引发福岛第一核电站严重核泄漏 disaster
 - id: w-libya-war-201103
   date: '2011-03-19'
   title: 多国联军空袭利比亚，卡扎菲政权倒台
@@ -6553,9 +6433,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2011/libya_war_2011.jpg
-    caption: 2011年3月美法英多国对利比亚发动空袭，卡扎菲执政42年政权覆灭并于10月遇害
 - id: w-bin-laden-killed-201105
   date: '2011-05-02'
   title: “基地”组织头目本·拉登被美军特种部队击毙
@@ -6570,9 +6447,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2011/bin_laden_killed_2011.jpg
-    caption: 2011年5月2日美军海豹突击队在巴基斯坦阿伯塔巴德展开行动突袭击毙基地组织头目本·拉登
 - id: w-south-sudan-independence-201107
   date: '2011-07-09'
   title: 南苏丹共和国独立，成为联合国第193个成员国
@@ -6653,9 +6527,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2011/iraq_war_end_2011.jpg
-    caption: 2011年12月15日美军在巴格达降下军旗举行撤离仪式，历时8年、耗资数万亿美元的伊拉克战争结束
 - id: w-us-pivot-to-asia-201201
   date: '2012-01-05'
   title: 美国发布新军事战略报告，宣布战略重心转向亚太（“亚太再平衡”）
@@ -6684,9 +6555,6 @@
     - CERN
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2012/higgs_boson_cern_2012.jpg
-    caption: 2012年7月4日欧洲核子研究中心在大型强子对撞机LHC实验中证实发现“上帝粒子”希格斯玻色子
 - id: w-curiosity-rover-mars-201208
   date: '2012-08-06'
   title: 美国“好奇号”火星车成功着陆火星
@@ -6727,9 +6595,6 @@
   sources:
     - 新华网
     - 维基百科
-  image:
-    url: /images/events/2012/diaoyu_islands_countermeasures_2012.jpg
-    caption: 2012年9月日本宣布所谓“购买”钓鱼岛，中国政府严正公布钓鱼岛领海基线并开启常态化巡航
 - id: w-benghazi-attack-201209
   date: '2012-09-11'
   title: 美国驻利比亚班加西领事馆遇袭，大使史蒂文斯遇害
@@ -6850,9 +6715,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2013/snowden_prism_leak_2013.jpg
-    caption: 2013年6月爱德华·斯诺登通过媒体揭露美国国家安全局“棱镜”全球监听计划，引发网络安全风暴
 - id: w-egypt-morsi-ousted-201307
   date: '2013-07-03'
   title: 埃及军方解职总统穆尔西，塞西接管政权
@@ -6906,9 +6768,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2013/ukraine_euromaidan_2013.jpg
-    caption: 2013年11月基辅独立广场爆发大规模抗议，演变为政治剧变与此后乌克兰地缘危机根源
 - id: w-nelson-mandela-pass-201312
   date: '2013-12-05'
   title: 纳尔逊·曼德拉逝世，享年95岁
@@ -6924,9 +6783,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2013/nelson_mandela_pass_2013.jpg
-    caption: 2013年12月5日南非首位黑人总统、诺贝尔和平奖得主曼德拉在约翰尼斯堡逝世，全球哀悼
 - id: w-wto-bali-package-201312
   date: '2013-12-07'
   title: 世贸组织达成《巴厘一揽子协定》，多哈回合谈判取得历史性突破
@@ -6954,9 +6810,6 @@
   sources:
     - 新华网
     - 维基百科
-  image:
-    url: /images/events/2014/mh370_disappearance_2014.jpg
-    caption: 2014年3月8日载有239人（含154名中国乘客）的MH370客机在吉隆坡飞往北京途中失联
 - id: w-crimea-annexation-201403
   date: '2014-03-18'
   title: 克里米亚举行公投加入俄罗斯，引发乌克兰危机与西方制裁
@@ -6971,9 +6824,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2014/crimea_annexation_2014.jpg
-    caption: 2014年3月18日普京在莫斯科签署条约将克里米亚并入俄罗斯，引发美欧对俄多轮严厉制裁
 - id: w-ebola-outbreak-201403
   date: '2014-03-25'
   title: 西非暴发史上最严重埃博拉病毒疫情，世卫组织宣布紧急状态
@@ -7001,9 +6851,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2014/isis_caliphate_2014.jpg
-    caption: 2014年6月29日巴格达迪在摩苏尔自称“哈里发”，极端组织ISIS占领叙伊大片领土震惊世界
 - id: w-ndb-brics-bank-201407
   date: '2014-07-15'
   title: 金砖国家在巴西第九届峰会上宣布设立新开发银行（NDB）
@@ -7031,9 +6878,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2014/mh17_shot_down_2014.jpg
-    caption: 2014年7月17日马航MH17客机在乌克兰顿涅茨克州近俄边境上空被山毛榉导弹击落，机上298人全部遇难
 - id: w-scottish-referendum-201409
   date: '2014-09-18'
   title: 苏格兰举行独立公投，55%选民投票留在英国
@@ -7062,9 +6906,6 @@
   sources:
     - ESA
     - 维基百科
-  image:
-    url: /images/events/2014/philae_comet_landing_2014.jpg
-    caption: 2014年11月12日欧洲“罗塞塔”号探测器的“菲莱”着陆器成功软着陆67P彗星，人类首次登彗星
 - id: w-fed-tapering-ends-201411
   date: '2014-11-20'
   title: 美联储宣布完全结束量化宽松（QE3）资产购买计划
@@ -7092,9 +6933,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2014/us_cuba_reconciliation_2014.jpg
-    caption: 2014年12月17日奥巴马与劳尔·卡斯特罗同步发表讲话，结束长达半个多世纪的冷战对立与封锁
 - id: w-charlie-hebdo-shooting-201501
   date: '2015-01-07'
   title: 法国巴黎《查理周刊》总部遭恐怖袭击
@@ -7149,9 +6987,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2015/iran_nuclear_deal_2015.jpg
-    caption: 2015年7月14日伊核问题六国与伊朗在维也纳达成历史性伊核协议（JCPOA），解决长达12年核争端
 - id: w-new-horizons-pluto-201507
   date: '2015-07-14'
   title: 美国“新视野”号飞船首次飞掠冥王星
@@ -7167,9 +7002,6 @@
   sources:
     - NASA
     - 维基百科
-  image:
-    url: /images/events/2015/new_horizons_pluto_2015.jpg
-    caption: 2015年7月14日“新视野”号探测器近距离飞掠冥王星，首次传回“冥王星之心”高清珍贵照片
 - id: w-european-migrant-crisis-201509
   date: '2015-09-02'
   title: 叙利亚难民幼童艾兰遇难照片震惊世界，欧洲难民危机爆发
@@ -7184,9 +7016,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2015/european_migrant_crisis_2015.jpg
-    caption: 2015年9月叙利亚小难民艾兰在海滩遇难照片引发全球关注，数百万中东难民涌入欧洲引爆危机
 - id: w-un-70th-anniversary-201509
   date: '2015-09-28'
   title: 联合国成立70周年峰会在纽约举行
@@ -7214,9 +7043,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2015/paris_attacks_2015.jpg
-    caption: 2015年11月13日巴黎巴塔克兰剧场与法兰西体育场等多地突发连环恐袭，法国进入紧急状态
 - id: w-paris-climate-agreement-201512
   date: '2015-12-12'
   title: 气候变化巴黎大会表决通过历史性《巴黎协定》
@@ -7231,9 +7057,6 @@
   sources:
     - 联合国
     - 新华网
-  image:
-    url: /images/events/2015/paris_climate_agreement_2015.jpg
-    caption: 2015年12月12日近200个缔约方在巴黎气候大会表决通过《巴黎协定》，确立全球减碳温控目标
 - id: w-fed-interest-rate-hike-201512
   date: '2015-12-16'
   title: 美联储启动近十年来首次加息，结束零利率时代
@@ -7262,9 +7085,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2016/alphago_lee_sedol_2016.jpg
-    caption: 2016年3月DeepMind旗下AlphaGo在首尔以4:1战胜围棋九段李世石，标志AI深度学习重大飞跃
 - id: w-brexit-referendum-201606
   date: '2016-06-23'
   title: 英国举行脱欧公投，52%选民支持脱离欧洲联盟
@@ -7279,9 +7099,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2016/brexit_referendum_2016.jpg
-    caption: 2016年6月23日英国举行脱欧公投，选民以51.9%赞成决定退出欧盟，震动欧洲一体化格局
 - id: w-juno-spacecraft-jupiter-201607
   date: '2016-07-03'
   title: 美国“朱诺号”木星探测器成功进入木星轨道
@@ -7337,9 +7154,6 @@
   sources:
     - 联合国
     - 新华网
-  image:
-    url: /images/events/2016/us_china_paris_2016.jpg
-    caption: 2016年9月3年中美元首在杭州向联合国秘书长潘基文共同交存批准文书，推动《巴黎协定》生效
 - id: w-bhumibol-pass-201610
   date: '2016-10-13'
   title: 泰国国王普密蓬·阿杜德逝世，享年88岁
@@ -7367,9 +7181,6 @@
   sources:
     - 新华网
     - 维基百科
-  image:
-    url: /images/events/2016/trump_win_2016.jpg
-    caption: 2016年11月8日共和党候选人特朗普打破政坛传统，在总统大选中胜出当选美国第45任总统
 - id: w-fidel-castro-pass-201611
   date: '2016-11-25'
   title: 古巴革命领袖菲德尔·卡斯特罗逝世，享年90岁
@@ -7385,9 +7196,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2016/fidel_castro_pass_2016.jpg
-    caption: 2016年11月25日古巴革命领袖、古巴共产党传奇缔造者菲德尔·卡斯特罗在哈瓦那逝世
 - id: w-park-geun-hye-impeachment-201612
   date: '2016-12-09'
   title: 韩国国会通过对总统朴槿惠的弹劾案
@@ -7416,9 +7224,6 @@
   sources:
     - 新华网
     - 维基百科
-  image:
-    url: /images/events/2017/trump_inauguration_2017.jpg
-    caption: 2017年1月20日特朗普在华盛顿宣誓就任美国第45任总统，首日即签署对跨太平洋伙伴关系协定（TPP）的退出令
 - id: w-park-geun-hye-removed-201703
   date: '2017-03-10'
   title: 韩国宪法法院裁定通过总统朴槿惠弹劾案，朴槿惠被即刻罢免
@@ -7433,9 +7238,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2017/park_geun_hye_removed_2017.jpg
-    caption: 2017年3月10日韩国宪法法院通过对朴槿惠的弹劾案，朴槿惠成为韩国宪政史上首位被罢免的下台总统
 - id: w-macron-wins-french-election-201705
   date: '2017-05-07'
   title: 埃马纽埃尔·马克龙击败勒庞当选法国总统
@@ -7463,9 +7265,6 @@
   sources:
     - 新华网
     - 维基百科
-  image:
-    url: /images/events/2017/us_withdraws_paris_2017.jpg
-    caption: 2017年6月1日美国总统特朗普在白宫宣布单方面退出《巴黎协定》，引发全球环保治理担忧
 - id: w-qatar-diplomatic-crisis-201706
   date: '2017-06-05'
   title: 沙特、阿联酋等多国宣布与卡塔尔断交并实施封锁
@@ -7533,9 +7332,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2017/mugabe_resignation_2017.jpg
-    caption: 2017年11月21日津巴布韦开国元勋穆加贝在军方干预与议会弹劾压力下宣布辞职，结束37年执政
 - id: w-us-jerusalem-capital-201712
   date: '2017-12-06'
   title: 特朗普宣布美国承认耶路撒冷为以色列首都并搬迁大使馆
@@ -7550,9 +7346,6 @@
   sources:
     - 新华网
     - 维基百科
-  image:
-    url: /images/events/2017/us_jerusalem_capital_2017.jpg
-    caption: 2017年12月6日美国宣布打破数十年外交政策，承认耶路撒冷为以首都，加剧巴以紧张中东局势
 - id: w-panmunjom-declaration-201804
   date: '2018-04-27'
   title: 朝韩领导人在板门店举行会晤，发表《板门店宣言》
@@ -7567,9 +7360,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2018/panmunjom_declaration_2018.jpg
-    caption: 2018年4月27日文在寅与金正恩在板门店会恶，签署宣言宣布致力于半岛无核化与建立永久和平机制
 - id: w-us-withdraws-iran-deal-201805
   date: '2018-05-08'
   title: 特朗普宣布美国单方面退出伊朗核问题全面协议（JCPOA）
@@ -7584,9 +7374,6 @@
   sources:
     - 新华网
     - 维基百科
-  image:
-    url: /images/events/2018/us_withdraws_iran_deal_2018.jpg
-    caption: 2018年5月8日特朗普签署备忘录单方面退出伊核协议，并重启对伊朗全面极限施压制裁
 - id: w-us-embassy-jerusalem-open-201805
   date: '2018-05-14'
   title: 美国驻以色列大使馆在耶路撒冷正式开馆，加沙爆发严重流血冲突
@@ -7615,9 +7402,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2018/trump_kim_singapore_2018.jpg
-    caption: 2018年6月12日特朗普与金正恩在新加坡圣淘沙岛举行朝美建交后首次历史性首脑会晤
 - id: w-france-wins-world-cup-201807
   date: '2018-07-15'
   title: 法国队击败克罗地亚队夺得2018俄罗斯世界杯冠军
@@ -7715,9 +7499,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2019/isis_final_territory_2019.jpg
-    caption: 2019年3月23日叙利亚民主军攻克巴古兹，宣告“伊斯兰国”跨越叙伊的所谓“哈里发国”领土全面崩溃
 - id: w-first-black-hole-image-201904
   date: '2019-04-10'
   title: 事件视界望远镜（EHT）项目发布人类历史上首张黑洞照片
@@ -7732,9 +7513,6 @@
   sources:
     - EHT
     - 新华网
-  image:
-    url: /images/events/2019/first_black_hole_image_2019.jpg
-    caption: 2019年4月10日EHT全球射电望远镜阵列发布M87星系中心超大质量黑洞照片，证实广义相对论预言
 - id: w-notre-dame-fire-201904
   date: '2019-04-15'
   title: 法国巴黎圣母院发生特大火灾，木质塔尖坍塌
@@ -7749,9 +7527,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2019/notre_dame_fire_2019.jpg
-    caption: 2019年4月15日800多年历史的巴黎圣母院大教堂修缮期间突发大火，主塔尖坍塌，引发全球文物保护震动
 - id: w-sri-lanka-easter-bombings-201904
   date: '2019-04-21'
   title: 斯里兰卡复活节连环恐怖袭击发生，造成269人遇难
@@ -7779,9 +7554,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2019/japan_reiwa_era_2019.jpg
-    caption: 2019年4月30日日本明仁天皇正式退位结束“平成”时代，次日德仁天皇即位开启“令和”新纪元
 - id: w-inf-treaty-withdrawal-201908
   date: '2019-08-02'
   title: 美国正式宣布退出与苏联签署的《中程导弹条约》（INF）
@@ -7796,9 +7568,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2019/inf_treaty_withdrawal_2019.jpg
-    caption: 2019年8月2日美国正式退出1987年签署的《中程核力量条约》，全球战略稳定与核裁军机制受挫
 - id: w-al-baghdadi-killed-201910
   date: '2019-10-26'
   title: “伊斯兰国”（ISIS）最高头目巴格达迪在美军突袭中自杀身亡
@@ -7813,9 +7582,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2019/baghdadi_killed_2019.jpg
-    caption: 2019年10月26日美军特种部队在叙利亚西北部开展突袭，ISIS最高头目巴格达迪自爆身亡
 - id: w-climate-emergency-un-201911
   date: '2019-11-25'
   title: 欧洲议会宣布全球进入“气候紧急状态”
@@ -7844,9 +7610,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2019/boris_johnson_win_2019.jpg
-    caption: 2019年12月12日约翰逊领导保守党取得1987年以来最大议会席位胜利，提出“搞定脱欧”承诺
 - id: w-trump-first-impeachment-201912
   date: '2019-12-18'
   title: 美国国会众议院表决通过对总统特朗普的弹劾条款
@@ -7881,9 +7644,6 @@
   importance: 5
   summary: 英国正式脱离欧洲联盟，结束47年成员国身份，欧洲一体化迎来历史性分水岭。
   confidence: 确定
-  image:
-    url: /images/events/2020/brexit-day-2020.jpg
-    caption: 2020年1月31日英国脱欧日，英国政府大楼以红白蓝灯光点亮
   tags:
     - 政治
     - 外交
@@ -7898,9 +7658,6 @@
   importance: 5
   summary: 世卫组织宣布新冠疫情构成全球大流行，全球陷入深度公共卫生危机与经济重创。
   confidence: 确定
-  image:
-    url: /images/events/2020/who_covid_pandemic_2020.jpg
-    caption: 2020年3月11日世卫组织评估认为新冠肺炎疫情已构成全球大流行，重塑全球卫生公共应急机制
   tags:
     - 灾害
     - 卫生
@@ -7968,9 +7725,6 @@
   importance: 5
   summary: 民主党候选人拜登击败现任总统特朗普，当选第46任美国总统。
   confidence: 确定
-  image:
-    url: /images/events/2020/biden-victory-2020.jpg
-    caption: 2020年11月7日拜登胜选后，华盛顿特区民众举行庆祝活动
   tags:
     - 政治
     - 外交
@@ -8031,9 +7785,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2021/us_capitol_riot_2021.jpg
-    caption: 2021年1月6日示威者强行闯入美国国会大厦阻挠大选选举人票认证，震惊全球
 - id: w-biden-inauguration-202101
   date: '2021-01-20'
   title: 拜登宣誓就任第46任美国总统
@@ -8087,9 +7838,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2021/us_withdrawal_afghanistan_2021.jpg
-    caption: 2021年8月美军最后一架运输机飞离喀布尔，塔利班重掌政权，长达20年的阿富汗战争画上句号
 - id: w-aukus-pact-202109
   date: '2021-09-15'
   title: 美英澳建立AUKUS三边安全伙伴关系
@@ -8218,9 +7966,6 @@
   sources:
     - 新华网
     - 维基百科
-  image:
-    url: /images/events/2022/russia_ukraine_war_2022.jpg
-    caption: 2022年2月24日俄罗斯宣布对乌克兰采取特别军事行动，地缘政治冲突重塑全球安全与能源格局
 - id: w-fed-rate-hikes-202203
   date: '2022-03-16'
   title: 美联储开启暴力加息周期，全球金融市场剧烈动荡
@@ -8259,9 +8004,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2022/shinzo_abe_assassinated_2022.jpg
-    caption: 2022年7月8日日本前首相安倍晋三在奈良市发表演讲时遭遇枪击身亡，震动国际政坛
 - id: w-queen-elizabeth-pass-202209
   date: '2022-09-08'
   title: 英国女王伊丽莎白二世逝世，查尔斯三世即位
@@ -8276,9 +8018,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2022/queen_elizabeth_pass_2022.jpg
-    caption: 2022年9月8日在位70年的英国女王伊丽莎白二世在巴尔莫勒尔城堡逝世，长子查尔斯即位
 - id: w-nord-stream-sabotage-202209
   date: '2022-09-26'
   title: “北溪”天然气管道发生爆炸泄漏
@@ -8332,9 +8071,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2022/chatgpt_release_2022.jpg
-    caption: 2022年11月30日OpenAI推出生成式对话模型ChatGPT，引发全球通用人工智能（AGI）技术革命
 - id: w-china-arab-summit-202212
   date: '2022-12-09'
   title: 首届中国-阿拉伯国家峰会在利雅得举行
@@ -8391,9 +8127,6 @@
   tags:
     - 灾害
     - 地震
-  image:
-    url: /images/events/2023/turkey_earthquake_2023.jpg
-    caption: 2023年2月土耳其南部爆发强震引发次生灾害，造成土叙两国逾5.9万人遇难，全球救援齐聚
 - id: w-banking-crisis-202303
   date: '2023-03-10'
   title: 硅谷银行倒闭与欧美银行业动荡
@@ -8414,9 +8147,6 @@
   tags:
     - 科技
     - AI
-  image:
-    url: /images/events/2023/gpt4_genai_boom_2023.jpg
-    caption: 2023年3月OpenAI发布GPT-4多模态大模型，推动生成式AI在科技与实体产业全面爆发
 - id: w-sudan-civil-war-202304
   date: '2023-04-15'
   title: 苏丹内战爆发
@@ -8487,9 +8217,6 @@
   tags:
     - 战争
     - 中东
-  image:
-    url: /images/events/2023/israel_hamas_war_2023.jpg
-    caption: 2023年10月7日哈马斯突袭以色列，以军对加沙地带展开大规模军事行动，巴以冲突急剧恶化
 - id: w-xijinping-biden-202311
   date: '2023-11-15'
   title: 中美元首旧金山会晤
@@ -8500,9 +8227,6 @@
   tags:
     - 外交
     - 中美
-  image:
-    url: /images/events/2023/xijinping_biden_summit_2023.jpg
-    caption: 2023年11月15日国家主席习近平在旧金山斐洛里庄园同美国总统拜登举行中美元首会晤，开辟“旧金山愿景”
 - id: w-hottest-year-202311
   date: '2023-11-30'
   title: 全球最热一年与迪拜气候大会
@@ -8631,9 +8355,6 @@
   sources:
     - 新华网
     - 维基百科
-  image:
-    url: /images/events/2024/trump_election_win_2024.jpg
-    caption: 2024年11月5日美国大选开票，共和党候选人特朗普锁定胜局，实现跨越四年的历史性回归
 - id: w-apec-g20-latin-america-202411
   date: '2024-11-16'
   title: 国家主席出席APEC与G20峰会，拉美元首外交取得丰硕成果
@@ -8683,9 +8404,6 @@
   sources:
     - 维基百科
     - 新华网
-  image:
-    url: /images/events/2024/syria_assad_fall_2024.jpg
-    caption: 2024年12月8日叙利亚反政府武装攻入首都大马士革，统治叙利亚54年的阿萨德家族政权覆灭
 - id: w-israel-gaza-conflict-202412
   date: '2024-12-15'
   title: 巴以冲突外溢全中东，红海与黎巴嫩危机轮番升级
@@ -8700,9 +8418,6 @@
   sources:
     - 新华网
     - 维基百科
-  image:
-    url: /images/events/2024/middle_east_crisis_2024.jpg
-    caption: 2024年12月巴以冲突持续深化外溢，红海航道封锁与黎以真主党战事轮番剧烈升级
 - id: w-hottest-year-2024-202412
   date: '2024-12-28'
   title: 2024年打破2023年纪录成为全球史上最热一年
@@ -8726,9 +8441,6 @@
   tags:
     - 中东
     - 加沙
-  image:
-    url: /images/events/2025/gaza_ceasefire_jan_2025.jpg
-    caption: 2025年1月加沙停火协议生效，国际社会斡旋缓和中东局势
 - id: w-us-trump-2nd-term-202501
   date: '2025-01-20'
   title: 特朗普宣誓就任第47任美国总统
@@ -8739,9 +8451,6 @@
   tags:
     - 美国
     - 政治
-  image:
-    url: /images/events/2025/trump_inauguration_2025.jpg
-    caption: 2025年1月20日特朗普在华盛顿国会山宣誓就任第47任美国总统
 - id: w-russia-ukraine-3yr-202502
   date: '2025-02-24'
   title: 俄乌冲突三周年与和平倡议博弈
@@ -8782,9 +8491,6 @@
   tags:
     - 关税
     - 贸易
-  image:
-    url: /images/events/2025/global_tariffs_2025.jpg
-    caption: 2025年4月美国重磅出台全球关税政策，多国采取对等反制措施
 - id: w-pope-francis-dies-202504
   date: '2025-04-21'
   title: 教宗方济各逝世，良十四世继任
@@ -8795,9 +8501,6 @@
   tags:
     - 宗教
     - 梵蒂冈
-  image:
-    url: /images/events/2025/pope_succession_2025.jpg
-    caption: 2025年4月教宗方济各在梵蒂冈逝世，新教宗良十四世当选继任
 - id: w-snooker-zhaoxintong-202505
   date: 2025-05
   title: 赵心童夺得斯诺克世界锦标赛冠军
@@ -8837,9 +8540,6 @@
   tags:
     - 中东
     - 军事
-  image:
-    url: /images/events/2025/israel_iran_12day_war_2025.jpg
-    caption: 2025年6月中东局势急剧升级，以伊突发“十二日战争”引发国际高度关注
 - id: w-global-tariff-friction-202507
   date: 2025-07
   title: 全球对等关税引发多边贸易争端
@@ -8879,9 +8579,6 @@
   tags:
     - 中东
     - 政治
-  image:
-    url: /images/events/2025/gaza_oct_peace_2025.jpg
-    caption: 2025年10月加沙全面停火协定签署，启动多国参与的中东重建和平计划
 - id: w-un-80th-202510
   date: '2025-10-24'
   title: 联合国迎来成立80周年
@@ -8892,9 +8589,6 @@
   tags:
     - 联合国
     - 外交
-  image:
-    url: /images/events/2025/un_80th_anniversary_2025.jpg
-    caption: 2025年10月24日联合国在纽约总部举行成立80周年纪念大会，重申多边主义
 - id: w-apec-202511
   date: '2025-11-01'
   title: APEC第三十二次领导人非正式会议举行
@@ -8951,9 +8645,6 @@
   importance: 5
   summary: 缅甸中部曼德勒附近发生7.7级强震，震源深度约10公里，曼德勒、内比都等地大量建筑倒塌，遇难数千人，泰国曼谷亦受波及，为近年来全球破坏性最强、伤亡最重的地震之一。
   confidence: 确定
-  image:
-    url: /images/events/2025/myanmar_quake_2025.jpg
-    caption: 2025年3月缅甸曼德勒7.7级强震——历史现场与典藏影像
   tags:
     - 灾害
     - 地震
