@@ -93,6 +93,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1950/unify_financial_economic_work_195003.jpg
+    caption: 政务院发布统一全国财政收支决定，彻底平抑物价与人民币币值——历史现场与典藏影像
 - id: cn-marriage-law-195005
   date: '1950-05-01'
   title: 《中华人民共和国婚姻法》公布施行
@@ -124,6 +127,9 @@
   sources:
     - 新华网
     - 中文维基百科
+  image:
+    url: /images/events/1950/hainan_liberation_195005.jpg
+    caption: 人民解放军解放海南岛——历史现场与典藏影像
 - id: cn-cpc-7th-3rd-plenum-195006
   date: '1950-06-06'
   title: 中共七届三中全会召开，提出为争取国家财经状况基本好转而斗争
@@ -172,6 +178,9 @@
   sources:
     - 新华网
     - 中文维基百科
+  image:
+    url: /images/events/1950/chamdo_campaign_195010.jpg
+    caption: 昌都战役打响——历史现场与典藏影像
 - id: cn-campaign-suppress-counterrevolutionaries-195010
   date: '1950-10-10'
   title: 中共中央发出“双十指示”，全国全面开展镇压反革命运动
@@ -237,6 +246,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1951/three_antis_campaign_195112.jpg
+    caption: 中共中央决定在党政机关开展“三反”运动——历史现场与典藏影像
 - id: cn-five-antis-campaign-195201
   date: '1952-01-26'
   title: 中共中央部署在私营工商业中开展“五反”运动
@@ -251,6 +263,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1952/five_antis_campaign_195201.jpg
+    caption: 中共中央部署在私营工商业中开展“五反”运动——历史现场与典藏影像
 - id: cn-chengyu-railway-open-195206
   date: '1952-06-13'
   title: 成渝铁路全线建成通车
@@ -265,6 +280,9 @@
   sources:
     - 新华网
     - 人民网
+  image:
+    url: /images/events/1952/chengyu_railway_open_195206.jpg
+    caption: 成渝铁路全线建成通车——历史现场与典藏影像
 - id: cn-land-reform-basic-completed-195212
   date: '1952-12-31'
   title: 全国新解放区土地改革基本完成
@@ -381,6 +399,9 @@
   sources:
     - 新华网
     - 交通运输部
+  image:
+    url: /images/events/1954/kangting_tibet_highway_195412.jpg
+    caption: 川藏公路与青藏公路全线通车——历史现场与典藏影像
 - id: cn-bandung-conference-195504
   date: '1955-04-18'
   title: 周恩来率团出席万隆会议并提出“求同存异”方针
@@ -463,6 +484,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1956/hundred_flowers_campaign_195604.jpg
+    caption: 毛泽东提出“百花齐放，百家争鸣”方针——历史现场与典藏影像
 - id: cn-cpc-8th-congress-195609
   date: '1956-09-15'
   title: 中共八大召开，明确国内主要矛盾转变为发展生产力需要
@@ -630,6 +654,9 @@
   sources:
     - 新华网
     - 人民网
+  image:
+    url: /images/events/1959/10th_anniversary_parade_195910.jpg
+    caption: 庆祝新中国成立10周年，首都十大建筑竣工并举行盛大阅兵——历史现场与典藏影像
 - id: cn-shanghai-politburo-meeting-196001
   date: '1960-01-07'
   title: 中共中央在上海召开政治局扩大会议研究经济计划
@@ -644,6 +671,9 @@
   sources:
     - 中国共产党新闻网
     - 党史权威文献
+  image:
+    url: /images/events/1960/shanghai_politburo_meeting_196001.jpg
+    caption: 中共中央在上海召开政治局扩大会议研究经济计划——历史现场与典藏影像
 - id: cn-hongqiqu-start-196002
   date: '1960-02-11'
   title: 红旗渠工程正式开工建设
@@ -658,6 +688,9 @@
   sources:
     - 中国共产党新闻网
     - 红旗渠相关党史资料
+  image:
+    url: /images/events/1960/hongqiqu_start_196002.jpg
+    caption: 红旗渠工程正式开工建设——历史现场与典藏影像
 - id: cn-angang-constitution-196003
   date: '1960-03-22'
   title: 中央批转“鞍钢宪法”并要求在工业战线推广
@@ -672,6 +705,9 @@
   sources:
     - 中国共产党新闻网
     - 党史权威文献
+  image:
+    url: /images/events/1960/angang_constitution_196003.jpg
+    caption: 中央批转“鞍钢宪法”并要求在工业战线推广——历史现场与典藏影像
 - id: cn-daqing-oil-field-battle-196004
   date: '1960-04-29'
   title: 大庆石油会战全面展开与“铁人”王进喜精神
@@ -771,6 +807,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1960/cpc_twelve_directives_196011.jpg
+    caption: 中共中央发出“十二条”紧急指示信纠正“共产风”——历史现场与典藏影像
 - id: cn-df1-missile-196011
   date: '1960-11-05'
   title: 我国第一枚国产近程导弹“东风一号”发射成功
@@ -853,6 +892,9 @@
   sources:
     - 党史权威文献
     - 国务院关于公布第一批全国重点文物保护单位名单的通知
+  image:
+    url: /images/events/1961/prc_cultural_relics_first_batch_196103.jpg
+    caption: 国务院公布第一批全国重点文物保护单位——历史现场与典藏影像
 - id: cn-26th-table-tennis-beijing-196104
   date: '1961-04-09'
   title: 第26届世界乒乓球锦标赛在北京隆重举行
@@ -901,6 +943,9 @@
   sources:
     - 中国共产党新闻网
     - 党史权威文献
+  image:
+    url: /images/events/1961/atomic_industry_decision_196107.jpg
+    caption: 中共中央作出加强原子能工业建设决定——历史现场与典藏影像
 - id: cn-industrial-70-rules-196109
   date: '1961-09-16'
   title: 中共中央通过《工业七十条》，规范国有企业管理制度
@@ -915,6 +960,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1961/industrial_70_rules_196109.jpg
+    caption: 中共中央通过《工业七十条》，规范国有企业管理制度——历史现场与典藏影像
 - id: cn-seven-thousand-conference-196201
   date: '1962-01-11'
   title: 中共中央在北京召开“七千人大会”
@@ -946,6 +994,9 @@
   sources:
     - 党史权威文献
     - 中国航天科普资料
+  image:
+    url: /images/events/1962/df2_missile_test_196203.jpg
+    caption: 中国首枚自行研制的“东风二号”导弹试射失败——历史现场与典藏影像
 - id: cn-shenzhen-escape-hongkong-196205
   date: '1962-05-05'
   title: 宝安（深圳）发生大规模“逃港潮”事件与中央紧急处置
@@ -960,6 +1011,9 @@
   sources:
     - 宝安县志
     - 人民网
+  image:
+    url: /images/events/1962/shenzhen_escape_hongkong_196205.jpg
+    caption: 宝安（深圳）发生大规模“逃港潮”事件与中央紧急处置——历史现场与典藏影像
 - id: cn-peng-dehuai-words-196206
   date: '1962-06-16'
   title: 彭德怀向中共中央递交“八万言书”进行申诉
@@ -974,6 +1028,9 @@
   sources:
     - 党史权威文献
     - 新华社
+  image:
+    url: /images/events/1962/peng_dehuai_words_196206.jpg
+    caption: 彭德怀向中共中央递交“八万言书”进行申诉——历史现场与典藏影像
 - id: cn-cpc-8th-10th-plenum-196209
   date: '1962-09-24'
   title: 中共八届十中全会召开，提出“千万不要忘记阶级斗争”
@@ -1005,6 +1062,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1962/rural_60_rules_196209.jpg
+    caption: 中共中央通过“农业六十条”，确立“三级所有，队为基础”体制——历史现场与典藏影像
 - id: cn-sino-indian-border-war-196210
   date: '1962-10-20'
   title: 中印边境自卫反击战爆发
@@ -1036,6 +1096,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1963/zhou_rural_urban_tech_meeting_196301.jpg
+    caption: 周恩来在上海科学技术工作会议上强调实现科学技术现代化——历史现场与典藏影像
 - id: cn-center-work-conference-five-196302
   date: '1963-02-11'
   title: 中共中央召开工作会议部署“五反”运动
@@ -1050,6 +1113,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1963/center_work_conference_five_196302.jpg
+    caption: 中共中央召开工作会议部署“五反”运动——历史现场与典藏影像
 - id: cn-five-anti-directive-196303
   date: '1963-03-01'
   title: 中共中央发布反对浪费和官僚主义的“五反”指示
@@ -1064,6 +1130,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1963/five_anti_directive_196303.jpg
+    caption: 中共中央发布反对浪费和官僚主义的“五反”指示——历史现场与典藏影像
 - id: cn-leifeng-call-196303
   date: '1963-03-05'
   title: 《人民日报》发表毛泽东“向雷锋学习”题词
@@ -1078,6 +1147,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1963/leifeng_call_196303.jpg
+    caption: 《人民日报》发表毛泽东“向雷锋学习”题词——历史现场与典藏影像
 - id: cn-pla-political-work-rules-196303
   date: '1963-03-27'
   title: 中共中央发布《中国人民解放军政治工作条例》
@@ -1092,6 +1164,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1963/pla_political_work_rules_196303.jpg
+    caption: 中共中央发布《中国人民解放军政治工作条例》——历史现场与典藏影像
 - id: cn-good-eighth-company-196304
   date: '1963-04-25'
   title: 国防部授予上海警备区某部“南京路上好八连”称号
@@ -1106,6 +1181,9 @@
   sources:
     - 解放军报
     - 人民网
+  image:
+    url: /images/events/1963/good_eighth_company_196304.jpg
+    caption: 国防部授予上海警备区某部“南京路上好八连”称号——历史现场与典藏影像
 - id: cn-front-ten-rules-196305
   date: '1963-05-20'
   title: 中共中央印发《前十条》，“四清”运动全面展开
@@ -1137,6 +1215,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1963/sino_soviet_talks_196307.jpg
+    caption: 中共中央与苏共中央代表在莫斯科会谈——历史现场与典藏影像
 - id: cn-haihe-river-flood-196308
   date: '1963-08-08'
   title: 海河流域发生特大洪涝，毛泽东题词“一定要消灭海河水患”
@@ -1151,6 +1232,9 @@
   sources:
     - 水利部档案
     - 人民网
+  image:
+    url: /images/events/1963/haihe_river_flood_196308.jpg
+    caption: 海河流域发生特大洪涝，毛泽东题词“一定要消灭海河水患”——历史现场与典藏影像
 - id: cn-third-plan-transition-196309
   date: '1963-09-06'
   title: 中共中央会议确定三年过渡期与工业整顿思路
@@ -1165,6 +1249,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1963/third_plan_transition_196309.jpg
+    caption: 中共中央会议确定三年过渡期与工业整顿思路——历史现场与典藏影像
 - id: cn-npc-fourth-meeting-196311
   date: '1963-11-17'
   title: 第二届全国人民代表大会第四次会议审议国民经济与预算
@@ -1179,6 +1266,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1963/npc_fourth_meeting_196311.jpg
+    caption: 第二届全国人民代表大会第四次会议审议国民经济与预算——历史现场与典藏影像
 - id: cn-scitech-plan-196312
   date: '1963-12-02'
   title: 中央和国务院原则批准“1963—1972”科学技术规划
@@ -1227,6 +1317,9 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1963/petroleum_self_sufficient_196312.jpg
+    caption: 我国石油产品基本实现自给——历史现场与典藏影像
 - id: cn-france-diplomatic-196401
   date: '1964-01-27'
   title: 中法两国正式建立外交关系
@@ -1262,6 +1355,9 @@
     - 中国共产党新闻网
     - 新华社
     - Wikipedia—Daqing Oil Field
+  image:
+    url: /images/events/1964/industrial_learning_daqing_196402.jpg
+    caption: 中共中央号召“工业学大庆”——历史现场与典藏影像
 - id: cn-agricultural-learning-dazhai-196402
   date: '1964-02-10'
   title: “农业学大寨”运动展开
@@ -1278,6 +1374,9 @@
     - 人民日报
     - 中国共产党新闻网
     - Wikipedia—Dazhai
+  image:
+    url: /images/events/1964/agricultural_learning_dazhai_196402.jpg
+    caption: “农业学大寨”运动展开——历史现场与典藏影像
 - id: cn-jiao-yulu-died-196405
   date: '1964-05-14'
   title: 焦裕禄在郑州病逝
@@ -1294,6 +1393,9 @@
     - 新华社
     - 中国共产党新闻网
     - Wikipedia—Jiao Yulu
+  image:
+    url: /images/events/1964/jiao_yulu_died_196405.jpg
+    caption: 焦裕禄在郑州病逝——历史现场与典藏影像
 - id: cn-missile-test-success-196406
   date: '1964-06-29'
   title: 中国自行研制的中近程导弹发射成功
@@ -1310,6 +1412,9 @@
     - 中国共产党新闻网
     - 新华社
     - Wikipedia—Dongfeng-2
+  image:
+    url: /images/events/1964/missile_test_success_196406.jpg
+    caption: 中国自行研制的中近程导弹发射成功——历史现场与典藏影像
 - id: cn-third-front-construction-196408
   date: 1964-08
   title: 中央决定展开“三线建设”
@@ -1326,6 +1431,9 @@
     - 中国共产党新闻网
     - 中央党史和文献研究院
     - Wikipedia—Third Front (China)
+  image:
+    url: /images/events/1964/third_front_construction_196408.jpg
+    caption: 中央决定展开“三线建设”——历史现场与典藏影像
 - id: cn-east-is-red-premiere-196410
   date: '1964-10-15'
   title: 大型音乐舞蹈史诗《东方红》公演
@@ -1342,6 +1450,9 @@
     - 新华社
     - 中央党史和文献研究院
     - Wikipedia—The East Is Red (musical)
+  image:
+    url: /images/events/1964/east_is_red_premiere_196410.jpg
+    caption: 大型音乐舞蹈史诗《东方红》公演——历史现场与典藏影像
 - id: cn-first-atomic-bomb-196410
   date: '1964-10-16'
   title: 中国第一颗原子弹爆炸成功
@@ -1397,6 +1508,9 @@
     - 中国工程物理研究院
     - 新华社
     - Wikipedia—Nuclear weapons tests of China
+  image:
+    url: /images/events/1965/second_atomic_test_196505.jpg
+    caption: 中国第二次原子弹试验成功——历史现场与典藏影像
 - id: cn-mauritania-diplomatic-196507
   date: '1965-07-19'
   title: 中国与毛里塔尼亚建立外交关系
@@ -1413,6 +1527,9 @@
     - 中华人民共和国外交部
     - 毛里塔尼亚外交部
     - Wikipedia—China–Mauritania relations
+  image:
+    url: /images/events/1965/mauritania_diplomatic_196507.jpg
+    caption: 中国与毛里塔尼亚建立外交关系——历史现场与典藏影像
 - id: cn-tibet-autonomous-region-196509
   date: '1965-09-09'
   title: 西藏自治区成立
@@ -1448,6 +1565,9 @@
     - 中国科学院
     - 上海生物化学与细胞生物学研究所
     - Wikipedia—Total synthesis of insulin
+  image:
+    url: /images/events/1965/insulin_synthesis_196509.jpg
+    caption: 中国首次人工合成结晶牛胰岛素——历史现场与典藏影像
 - id: cn-hai-rui-dismissed-196511
   date: '1965-11-10'
   title: 姚文元发表《评新编历史剧〈海瑞罢官〉》
@@ -1464,6 +1584,9 @@
     - 中国共产党新闻网
     - 新华社历史资料
     - Wikipedia—Hai Rui Dismissed from Office
+  image:
+    url: /images/events/1965/hai_rui_dismissed_196511.jpg
+    caption: 姚文元发表《评新编历史剧〈海瑞罢官〉》——历史现场与典藏影像
 - id: cn-february-outline-196602
   date: '1966-02-12'
   title: 中共中央批转“二月提纲”
@@ -1480,6 +1603,9 @@
     - 中国共产党新闻网
     - 新华社历史资料
     - Wikipedia—February Outline
+  image:
+    url: /images/events/1966/february_outline_196602.jpg
+    caption: 中共中央批转“二月提纲”——历史现场与典藏影像
 - id: cn-may-16-notification-196605
   date: '1966-05-16'
   title: 中共中央发布“五一六通知”
@@ -1515,6 +1641,9 @@
     - 北京大学校史馆
     - 中国共产党新闻网
     - Wikipedia—Nie Yuanzi
+  image:
+    url: /images/events/1966/nie_yuanzi_poster_196605.jpg
+    caption: 北京大学出现聂元梓等人大字报——历史现场与典藏影像
 - id: cn-bombard-headquarters-196608
   date: '1966-08-05'
   title: 毛泽东发表《炮打司令部——我的一张大字报》
@@ -1531,6 +1660,9 @@
     - 中国共产党新闻网
     - 中央文献出版社资料
     - Wikipedia—Bombard the Headquarters
+  image:
+    url: /images/events/1966/bombard_headquarters_196608.jpg
+    caption: 毛泽东发表《炮打司令部——我的一张大字报》——历史现场与典藏影像
 - id: cn-mao-meets-red-guards-196608
   date: '1966-08-18'
   title: 毛泽东首次接见红卫兵
@@ -1566,6 +1698,9 @@
     - 中国航天科技集团
     - 中国工程物理研究院
     - Wikipedia—Dongfeng-2
+  image:
+    url: /images/events/1966/missile_nuclear_test_196610.jpg
+    caption: 中国首次导弹核武器试验成功——历史现场与典藏影像
 - id: cn-january-storm-196701
   date: '1967-01-23'
   title: 上海“一月风暴”夺权
@@ -1582,6 +1717,9 @@
     - 中国共产党新闻网
     - 上海地方志
     - Wikipedia—January Storm
+  image:
+    url: /images/events/1967/january_storm_196701.jpg
+    caption: 上海“一月风暴”夺权——历史现场与典藏影像
 - id: cn-shanghai-commune-196702
   date: '1967-02-05'
   title: 上海人民公社成立
@@ -1598,6 +1736,9 @@
     - 上海地方志
     - 新华社历史资料
     - Wikipedia—Shanghai People's Commune
+  image:
+    url: /images/events/1967/shanghai_commune_196702.jpg
+    caption: 上海人民公社成立——历史现场与典藏影像
 - id: cn-first-hydrogen-bomb-196706
   date: '1967-06-17'
   title: 中国首次氢弹空投试验成功
@@ -1633,6 +1774,9 @@
     - 湖北省地方志
     - 中国共产党新闻网
     - Wikipedia—Wuhan incident
+  image:
+    url: /images/events/1967/wuhan_incident_196707.jpg
+    caption: 武汉“七二〇事件”——历史现场与典藏影像
 - id: cn-british-office-burned-196708
   date: '1967-08-22'
   title: 红卫兵焚烧英国驻华代办处
@@ -1649,6 +1793,9 @@
     - 英国国家档案馆
     - 中华人民共和国外交部
     - Wikipedia—Burning of the British Embassy in Beijing
+  image:
+    url: /images/events/1967/british_office_burned_196708.jpg
+    caption: 红卫兵焚烧英国驻华代办处——历史现场与典藏影像
 - id: cn-tazara-agreement-196709
   date: '1967-09-05'
   title: 中国与坦桑尼亚、赞比亚签署坦赞铁路协定
@@ -1665,6 +1812,9 @@
     - 中华人民共和国外交部
     - 坦桑尼亚政府
     - Wikipedia—TAZARA Railway
+  image:
+    url: /images/events/1967/tazara_agreement_196709.jpg
+    caption: 中国与坦桑尼亚、赞比亚签署坦赞铁路协定——历史现场与典藏影像
 - id: cn-south-yemen-diplomatic-196801
   date: '1968-01-31'
   title: 中国与南也门建立外交关系
@@ -1681,6 +1831,9 @@
     - 中华人民共和国外交部
     - 也门外交部
     - Wikipedia—China–Yemen relations
+  image:
+    url: /images/events/1968/south_yemen_diplomatic_196801.jpg
+    caption: 中国与南也门建立外交关系——历史现场与典藏影像
 - id: cn-worker-team-tsinghua-196807
   date: '1968-07-27'
   title: 工人、解放军宣传队进驻清华大学
@@ -1697,6 +1850,9 @@
     - 清华大学校史馆
     - 中国共产党新闻网
     - Wikipedia—Worker-Peasant-Soldier students
+  image:
+    url: /images/events/1968/worker_team_tsinghua_196807.jpg
+    caption: 工人、解放军宣传队进驻清华大学——历史现场与典藏影像
 - id: cn-revolutionary-committees-complete-196809
   date: '1968-09-05'
   title: 全国各省级革命委员会全部成立
@@ -1713,6 +1869,9 @@
     - 中国共产党新闻网
     - 新华社历史资料
     - Wikipedia—Revolutionary committee
+  image:
+    url: /images/events/1968/revolutionary_committees_complete_196809.jpg
+    caption: 全国各省级革命委员会全部成立——历史现场与典藏影像
 - id: cn-liu-shaoqi-expelled-196810
   date: '1968-10-31'
   title: 中共八届十二中全会撤销刘少奇党内外职务
@@ -1729,6 +1888,9 @@
     - 中国共产党新闻网
     - 新华社
     - Wikipedia—Liu Shaoqi
+  image:
+    url: /images/events/1968/liu_shaoqi_expelled_196810.jpg
+    caption: 中共八届十二中全会撤销刘少奇党内外职务——历史现场与典藏影像
 - id: cn-down-to-countryside-196812
   date: '1968-12-22'
   title: “知识青年上山下乡”运动全面展开
@@ -1764,6 +1926,9 @@
     - 中华人民共和国交通运输部
     - 新华社
     - Wikipedia—Nanjing Yangtze River Bridge
+  image:
+    url: /images/events/1968/nanjing_yangtze_bridge_196812.jpg
+    caption: 南京长江大桥全面建成通车——历史现场与典藏影像
 - id: cn-zhenbao-conflict-196903
   date: '1969-03-02'
   title: 珍宝岛武装冲突
@@ -1799,6 +1964,9 @@
     - 中国共产党新闻网
     - 新华社
     - Wikipedia—9th National Congress of the CCP
+  image:
+    url: /images/events/1969/ninth_cpc_congress_196904.jpg
+    caption: 中国共产党第九次全国代表大会开幕——历史现场与典藏影像
 - id: cn-zhou-kosygin-airport-talks-196909
   date: '1969-09-11'
   title: 周恩来与柯西金北京机场会谈
@@ -1815,6 +1983,9 @@
     - 中华人民共和国外交部
     - 俄罗斯外交部档案
     - Wikipedia—Sino-Soviet border conflict
+  image:
+    url: /images/events/1969/zhou_kosygin_airport_talks_196909.jpg
+    caption: 周恩来与柯西金北京机场会谈——历史现场与典藏影像
 - id: cn-first-underground-nuclear-test-196909
   date: '1969-09-23'
   title: 中国首次地下核试验
@@ -1831,6 +2002,9 @@
     - 中国工程物理研究院
     - 新华社
     - Wikipedia—Nuclear weapons tests of China
+  image:
+    url: /images/events/1969/first_underground_nuclear_test_196909.jpg
+    caption: 中国首次地下核试验——历史现场与典藏影像
 - id: cn-beijing-subway-opens-196910
   date: '1969-10-01'
   title: 北京地铁一期工程建成并开始试运行
@@ -1847,6 +2021,9 @@
     - 北京地铁
     - 新华社
     - Wikipedia—Beijing Subway
+  image:
+    url: /images/events/1969/beijing_subway_opens_196910.jpg
+    caption: 北京地铁一期工程建成并开始试运行——历史现场与典藏影像
 - id: cn-liu-shaoqi-dies-196911
   date: '1969-11-12'
   title: 刘少奇在河南开封逝世
@@ -1896,6 +2073,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1970/may20_statement_197005.jpg
+    caption: 毛泽东发表"五·二〇"声明——历史现场与典藏影像
 - id: cn-chengkun-railway-197007
   date: '1970-07-01'
   title: 成昆铁路全线建成通车
@@ -1910,6 +2090,9 @@
   sources:
     - 新华网
     - 中国铁路
+  image:
+    url: /images/events/1970/chengkun_railway_197007.jpg
+    caption: 成昆铁路全线建成通车——历史现场与典藏影像
 - id: cn-9th-2nd-plenum-197008
   date: '1970-08-23'
   title: 中共九届二中全会在庐山举行
@@ -1923,6 +2106,9 @@
   sources:
     - 新华网
     - 中国共产党新闻网
+  image:
+    url: /images/events/1970/9th_2nd_plenum_197008.jpg
+    caption: 中共九届二中全会在庐山举行——历史现场与典藏影像
 - id: cn-snowe-tiananmen-197010
   date: '1970-10-01'
   title: 斯诺应邀登上天安门城楼
@@ -1936,6 +2122,9 @@
   sources:
     - 人民日报
     - 维基百科
+  image:
+    url: /images/events/1970/snowe_tiananmen_197010.jpg
+    caption: 斯诺应邀登上天安门城楼——历史现场与典藏影像
 - id: cn-tazara-railway-197010
   date: '1970-10-26'
   title: 中国援建坦赞铁路动工
@@ -1949,6 +2138,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/1970/tazara_railway_197010.jpg
+    caption: 中国援建坦赞铁路动工——历史现场与典藏影像
 - id: cn-nuclear-submarine-197012
   date: '1970-12-26'
   title: 中国第一艘核潜艇"长征一号"下水
@@ -1980,6 +2172,9 @@
   sources:
     - 中国国家航天局
     - 中国科学院
+  image:
+    url: /images/events/1971/shijian1_satellite_197103.jpg
+    caption: “实践一号”科学实验卫星发射成功——历史现场与典藏影像
 - id: cn-ping-pong-diplomacy-197104
   date: '1971-04-10'
   title: 美国乒乓球队访华，乒乓外交展开
@@ -1994,6 +2189,9 @@
   sources:
     - 新华网
     - 美国国务院历史办公室
+  image:
+    url: /images/events/1971/ping_pong_diplomacy_197104.jpg
+    caption: 美国乒乓球队访华，乒乓外交展开——历史现场与典藏影像
 - id: cn-kissinger-secret-visit-197107
   date: '1971-07-09'
   title: 基辛格秘密访华
@@ -2025,6 +2223,9 @@
   sources:
     - 新华网
     - 尼克松总统图书馆
+  image:
+    url: /images/events/1971/nixon_visit_announced_197107.jpg
+    caption: 中美同时宣布尼克松将访华——历史现场与典藏影像
 - id: cn-lin-biao-incident-197109
   date: '1971-09-13'
   title: 林彪事件发生
@@ -2105,6 +2306,9 @@
   sources:
     - 中国外交部
     - 英国外交档案
+  image:
+    url: /images/events/1972/china_uk_ambassadorial_197203.jpg
+    caption: 中英关系升格为大使级——历史现场与典藏影像
 - id: cn-yinqueshan-bamboo-slips-197204
   date: '1972-04-10'
   title: 银雀山汉墓竹简出土
@@ -2119,6 +2323,9 @@
   sources:
     - 国家文物局
     - 山东省文物局
+  image:
+    url: /images/events/1972/yinqueshan_bamboo_slips_197204.jpg
+    caption: 银雀山汉墓竹简出土——历史现场与典藏影像
 - id: cn-japan-diplomatic-normalization-197209
   date: '1972-09-29'
   title: 中日恢复外交关系
@@ -2149,6 +2356,9 @@
   sources:
     - 中国外交部
     - 德国联邦外交部
+  image:
+    url: /images/events/1972/china_west_germany_diplomatic_197210.jpg
+    caption: 中德（西德）建立外交关系——历史现场与典藏影像
 - id: cn-china-australia-diplomatic-197212
   date: '1972-12-21'
   title: 中澳建立外交关系
@@ -2162,6 +2372,9 @@
   sources:
     - 中国外交部
     - 澳大利亚外交贸易部
+  image:
+    url: /images/events/1972/china_australia_diplomatic_197212.jpg
+    caption: 中澳建立外交关系——历史现场与典藏影像
 - id: cn-luhuo-earthquake-197302
   date: '1973-02-06'
   title: 四川炉霍发生强烈地震
@@ -2176,6 +2389,9 @@
   sources:
     - 中国地震局
     - 美国地质调查局
+  image:
+    url: /images/events/1973/luhuo_earthquake_197302.jpg
+    caption: 四川炉霍发生强烈地震——历史现场与典藏影像
 - id: cn-us-liaison-offices-agreement-197302
   date: '1973-02-22'
   title: 中美同意互设联络处
@@ -2189,6 +2405,9 @@
   sources:
     - 中国外交部
     - 美国国务院历史办公室
+  image:
+    url: /images/events/1973/us_liaison_offices_agreement_197302.jpg
+    caption: 中美同意互设联络处——历史现场与典藏影像
 - id: cn-china-spain-diplomatic-197303
   date: '1973-03-09'
   title: 中国与西班牙建立外交关系
@@ -2202,6 +2421,9 @@
   sources:
     - 中国外交部
     - 西班牙外交部
+  image:
+    url: /images/events/1973/china_spain_diplomatic_197303.jpg
+    caption: 中国与西班牙建立外交关系——历史现场与典藏影像
 - id: cn-first-environment-conference-197308
   date: '1973-08-05'
   title: 第一次全国环境保护会议召开
@@ -2216,6 +2438,9 @@
   sources:
     - 生态环境部
     - 中国政府网
+  image:
+    url: /images/events/1973/first_environment_conference_197308.jpg
+    caption: 第一次全国环境保护会议召开——历史现场与典藏影像
 - id: cn-10th-cpc-congress-197308
   date: '1973-08-24'
   title: 中共十大召开
@@ -2229,6 +2454,9 @@
   sources:
     - 中共中央党史和文献研究院
     - 新华网
+  image:
+    url: /images/events/1973/10th_cpc_congress_197308.jpg
+    caption: 中共十大召开——历史现场与典藏影像
 - id: cn-military-region-commanders-transfer-197312
   date: '1973-12-22'
   title: 八大军区司令员进行对调
@@ -2243,6 +2471,9 @@
   sources:
     - 中国军网
     - 中共中央党史资料
+  image:
+    url: /images/events/1973/military_region_commanders_transfer_197312.jpg
+    caption: 八大军区司令员进行对调——历史现场与典藏影像
 - id: cn-paracel-battle-197401
   date: '1974-01-19'
   title: 西沙海战发生
@@ -2257,6 +2488,9 @@
   sources:
     - 中国军网
     - 维基百科
+  image:
+    url: /images/events/1974/paracel_battle_197401.jpg
+    caption: 西沙海战发生——历史现场与典藏影像
 - id: cn-three-worlds-theory-197402
   date: '1974-02-22'
   title: 毛泽东提出“三个世界”划分
@@ -2270,6 +2504,9 @@
   sources:
     - 中共中央文献研究室
     - 中国外交部
+  image:
+    url: /images/events/1974/three_worlds_theory_197402.jpg
+    caption: 毛泽东提出“三个世界”划分——历史现场与典藏影像
 - id: cn-terracotta-army-discovered-197403
   date: '1974-03-29'
   title: 秦始皇兵马俑被发现
@@ -2301,6 +2538,9 @@
   sources:
     - 联合国大会档案
     - 中国外交部
+  image:
+    url: /images/events/1974/deng_un_speech_197404.jpg
+    caption: 邓小平在联合国特别大会发言——历史现场与典藏影像
 - id: cn-zhaotong-earthquake-197405
   date: '1974-05-11'
   title: 云南昭通发生强烈地震
@@ -2315,6 +2555,9 @@
   sources:
     - 中国地震局
     - 美国地质调查局
+  image:
+    url: /images/events/1974/zhaotong_earthquake_197405.jpg
+    caption: 云南昭通发生强烈地震——历史现场与典藏影像
 - id: cn-china-malaysia-diplomatic-197405
   date: '1974-05-31'
   title: 中国与马来西亚建立外交关系
@@ -2328,6 +2571,9 @@
   sources:
     - 中国外交部
     - 马来西亚外交部
+  image:
+    url: /images/events/1974/china_malaysia_diplomatic_197405.jpg
+    caption: 中国与马来西亚建立外交关系——历史现场与典藏影像
 - id: cn-nuclear-submarine-commissioned-197408
   date: '1974-08-01'
   title: 中国第一艘核潜艇正式服役
@@ -2342,6 +2588,9 @@
   sources:
     - 中国军网
     - 中国船舶集团
+  image:
+    url: /images/events/1974/nuclear_submarine_commissioned_197408.jpg
+    caption: 中国第一艘核潜艇正式服役——历史现场与典藏影像
 - id: cn-fourth-npc-first-session-197501
   date: '1975-01-13'
   title: 第四届全国人民代表大会第一次会议开幕
@@ -2377,6 +2626,9 @@
     - 中国政府网
     - 新华社
     - Wikipedia—Deng Xiaoping
+  image:
+    url: /images/events/1975/deng_first_vice_premier_197501.jpg
+    caption: 邓小平任国务院第一副总理——历史现场与典藏影像
 - id: cn-haicheng-earthquake-197502
   date: '1975-02-04'
   title: 辽宁海城大地震
@@ -2393,6 +2645,9 @@
     - 中国地震局
     - 新华社
     - Wikipedia—1975 Haicheng earthquake
+  image:
+    url: /images/events/1975/haicheng_earthquake_197502.jpg
+    caption: 辽宁海城大地震——历史现场与典藏影像
 - id: cn-china-philippines-diplomatic-197506
   date: '1975-06-09'
   title: 中国与菲律宾建立外交关系
@@ -2409,6 +2664,9 @@
     - 中华人民共和国外交部
     - 菲律宾外交部
     - Wikipedia—China–Philippines relations
+  image:
+    url: /images/events/1975/china_philippines_diplomatic_197506.jpg
+    caption: 中国与菲律宾建立外交关系——历史现场与典藏影像
 - id: cn-banqiao-dam-disaster-197508
   date: '1975-08-08'
   title: 河南“75·8”特大暴雨与板桥水库溃坝
@@ -2444,6 +2702,9 @@
     - 中国国家航天局
     - 中国航天科技集团
     - Wikipedia—Fanhui Shi Weixing
+  image:
+    url: /images/events/1975/first_recoverable_satellite_197511.jpg
+    caption: 中国首次成功发射返回式遥感卫星——历史现场与典藏影像
 - id: cn-zhou-enlai-dies-197601
   date: '1976-01-08'
   title: 周恩来总理逝世
@@ -2498,6 +2759,9 @@
     - 新华社
     - 中国人大网
     - Wikipedia—Zhu De
+  image:
+    url: /images/events/1976/zhu_de_dies_197607.jpg
+    caption: 朱德委员长逝世——历史现场与典藏影像
 - id: cn-tangshan-earthquake-197607
   date: '1976-07-28'
   title: 唐山大地震
@@ -2571,6 +2835,9 @@
     - 中华人民共和国外交部
     - 利比里亚外交部
     - Wikipedia—China–Liberia relations
+  image:
+    url: /images/events/1977/china_liberia_diplomatic_197702.jpg
+    caption: 中国与利比里亚建立外交关系——历史现场与典藏影像
 - id: cn-china-jordan-diplomatic-197704
   date: '1977-04-07'
   title: 中国与约旦建立外交关系
@@ -2587,6 +2854,9 @@
     - 中华人民共和国外交部
     - 约旦外交部
     - Wikipedia—China–Jordan relations
+  image:
+    url: /images/events/1977/china_jordan_diplomatic_197704.jpg
+    caption: 中国与约旦建立外交关系——历史现场与典藏影像
 - id: cn-china-barbados-diplomatic-197705
   date: '1977-05-30'
   title: 中国与巴巴多斯建立外交关系
@@ -2603,6 +2873,9 @@
     - 中华人民共和国外交部
     - 巴巴多斯外交部
     - Wikipedia—China–Barbados relations
+  image:
+    url: /images/events/1977/china_barbados_diplomatic_197705.jpg
+    caption: 中国与巴巴多斯建立外交关系——历史现场与典藏影像
 - id: cn-deng-restored-197707
   date: '1977-07-22'
   title: 邓小平恢复党政军领导职务
@@ -2638,6 +2911,9 @@
     - 中国共产党新闻网
     - 新华社
     - Wikipedia—11th National Congress of the CCP
+  image:
+    url: /images/events/1977/11th_cpc_congress_197708.jpg
+    caption: 中国共产党第十一次全国代表大会开幕——历史现场与典藏影像
 - id: cn-gaokao-restored-197710
   date: '1977-10-12'
   title: 国务院决定恢复高等学校统一招生考试
@@ -2690,6 +2966,9 @@
     - 中国人大网
     - 新华社
     - Wikipedia—1978 Constitution of China
+  image:
+    url: /images/events/1978/fifth_npc_constitution_197803.jpg
+    caption: 第五届全国人民代表大会第一次会议通过1978年宪法——历史现场与典藏影像
 - id: cn-national-science-conference-197803
   date: '1978-03-18'
   title: 全国科学大会在北京召开
@@ -2744,6 +3023,9 @@
     - 中华人民共和国外交部
     - 日本外务省
     - Wikipedia—Treaty of Peace and Friendship between Japan and China
+  image:
+    url: /images/events/1978/china_japan_peace_treaty_197808.jpg
+    caption: 《中日和平友好条约》签署——历史现场与典藏影像
 - id: cn-central-work-conference-197811
   date: '1978-11-10'
   title: 中央工作会议召开
@@ -2760,6 +3042,9 @@
     - 中国共产党新闻网
     - 新华社
     - Wikipedia—3rd Plenary Session of the 11th CCP Central Committee
+  image:
+    url: /images/events/1978/central_work_conference_197811.jpg
+    caption: 中央工作会议召开——历史现场与典藏影像
 - id: cn-xiaogang-household-contract-197811
   date: '1978-11-24'
   title: 安徽凤阳小岗村实行包产到户
@@ -2776,6 +3061,9 @@
     - 中华人民共和国农业农村部
     - 新华社
     - Wikipedia—Household responsibility system
+  image:
+    url: /images/events/1978/xiaogang_household_contract_197811.jpg
+    caption: 安徽凤阳小岗村实行包产到户——历史现场与典藏影像
 - id: cn-us-diplomatic-relations-197901
   date: '1979-01-01'
   title: 中美正式建立外交关系
@@ -2811,6 +3099,9 @@
     - 中华人民共和国外交部
     - 美国国务院历史办公室
     - Wikipedia—Deng Xiaoping's visit to the United States
+  image:
+    url: /images/events/1979/deng_visits_us_197901.jpg
+    caption: 邓小平访美——历史现场与典藏影像
 - id: cn-us-science-cooperation-197901
   date: '1979-01-31'
   title: 中美签署科技合作协定
@@ -2827,6 +3118,9 @@
     - 中华人民共和国外交部
     - 美国国务院
     - Wikipedia—China–United States relations
+  image:
+    url: /images/events/1979/us_science_cooperation_197901.jpg
+    caption: 中美签署科技合作协定——历史现场与典藏影像
 - id: cn-sino-vietnamese-war-197902
   date: '1979-02-17'
   title: 中越边境战争爆发
@@ -2862,6 +3156,9 @@
     - 国务院发展研究中心
     - 新华社
     - Wikipedia—Special economic zones of China
+  image:
+    url: /images/events/1979/guangdong_fujian_special_policy_197907.jpg
+    caption: 中央决定对广东福建实行特殊政策——历史现场与典藏影像
 - id: cn-ye-jianying-national-day-speech-197909
   date: '1979-09-29'
   title: 叶剑英国庆三十周年讲话
@@ -2878,6 +3175,9 @@
     - 新华社
     - 中国政府网
     - Wikipedia—Ye Jianying
+  image:
+    url: /images/events/1979/ye_jianying_national_day_speech_197909.jpg
+    caption: 叶剑英国庆三十周年讲话——历史现场与典藏影像
 - id: cn-first-winter-olympics-198002
   date: '1980-02-13'
   title: 中国首次派代表团参加冬季奥运会
@@ -2891,6 +3191,9 @@
   sources:
     - 新华网
     - 国际奥委会
+  image:
+    url: /images/events/1980/first_winter_olympics_198002.jpg
+    caption: 中国首次派代表团参加冬季奥运会——历史现场与典藏影像
 - id: cn-11th-5th-plenum-liushaoqi-198002
   date: '1980-02-29'
   title: 中共十一届五中全会为刘少奇平反
@@ -2921,6 +3224,9 @@
   sources:
     - 新华网
     - 国际货币基金组织
+  image:
+    url: /images/events/1980/imf_worldbank_seat_198004.jpg
+    caption: 中国恢复在国际货币基金组织与世界银行合法席位——历史现场与典藏影像
 - id: cn-df5-icbm-test-198005
   date: '1980-05-18'
   title: 中国"东风五号"洲际运载火箭全程飞行试验成功
@@ -2935,6 +3241,9 @@
   sources:
     - 新华网
     - 国防科工委
+  image:
+    url: /images/events/1980/df5_icbm_test_198005.jpg
+    caption: 中国"东风五号"洲际运载火箭全程飞行试验成功——历史现场与典藏影像
 - id: cn-pengjiamu-lost-198006
   date: '1980-06-17'
   title: 科学家彭加木在罗布泊考察失踪
@@ -2948,6 +3257,9 @@
   sources:
     - 新华网
     - 中国科学院
+  image:
+    url: /images/events/1980/pengjiamu_lost_198006.jpg
+    caption: 科学家彭加木在罗布泊考察失踪——历史现场与典藏影像
 - id: cn-sez-established-198008
   date: '1980-08-26'
   title: 全国人大决定设立深圳珠海汕头厦门经济特区
@@ -2995,6 +3307,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1981/song_qingling_death_198105.jpg
+    caption: 国家名誉主席宋庆龄逝世——历史现场与典藏影像
 - id: cn-11th-6th-plenum-resolution-198106
   date: '1981-06-27'
   title: 十一届六中全会通过《关于建国以来党的若干历史问题的决议》
@@ -3025,6 +3340,9 @@
   sources:
     - 新华网
     - 铁道部
+  image:
+    url: /images/events/1981/chengkun_train_crash_198107.jpg
+    caption: 成昆铁路列车坠桥特大事故——历史现场与典藏影像
 - id: cn-yijian-3sat-launch-198109
   date: '1981-09-20'
   title: 中国首次以一枚火箭成功发射三颗卫星
@@ -3038,6 +3356,9 @@
   sources:
     - 新华网
     - 中国航天科技集团
+  image:
+    url: /images/events/1981/yijian_3sat_launch_198109.jpg
+    caption: 中国首次以一枚火箭成功发射三颗卫星——历史现场与典藏影像
 - id: cn-yexiao-9points-taiwan-198109
   date: '1981-09-30'
   title: 叶剑英提出"叶九条"对台和平统一方针
@@ -3051,6 +3372,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1981/yexiao_9points_taiwan_198109.jpg
+    caption: 叶剑英提出"叶九条"对台和平统一方针——历史现场与典藏影像
 - id: cn-xinhai-70th-anniv-198110
   date: '1981-10-10'
   title: 首都举行辛亥革命70周年纪念大会
@@ -3064,6 +3388,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1981/xinhai_70th_anniv_198110.jpg
+    caption: 首都举行辛亥革命70周年纪念大会——历史现场与典藏影像
 - id: cn-volleyball-worldcup-198111
   date: '1981-11-16'
   title: 中国女排首夺世界杯冠军，开启"五连冠"传奇
@@ -3110,6 +3437,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1982/liaochengzhi_letter_jiang_198207.jpg
+    caption: 廖承志致信蒋经国吁国共第三次合作——历史现场与典藏影像
 - id: cn-12th-congress-198209
   date: '1982-09-01'
   title: 中共十二大召开，邓小平提出建设有中国特色的社会主义
@@ -3123,6 +3453,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1982/12th_congress_198209.jpg
+    caption: 中共十二大召开，邓小平提出建设有中国特色的社会主义——历史现场与典藏影像
 - id: cn-thatcher-deng-hk-198209
   date: '1982-09-24'
   title: 撒切尔夫人访华，邓小平就香港前途问题交锋
@@ -3154,6 +3487,9 @@
   sources:
     - 新华网
     - 国防科工委
+  image:
+    url: /images/events/1982/jl1_submarine_launch_198210.jpg
+    caption: 中国潜艇水下发射"巨浪一号"运载火箭成功——历史现场与典藏影像
 - id: cn-1982-constitution-198212
   date: '1982-12-04'
   title: 五届全国人大五次会议通过现行《中华人民共和国宪法》
@@ -3184,6 +3520,9 @@
   sources:
     - 新华网
     - 中央电视台
+  image:
+    url: /images/events/1983/cctv_gala_1st_198302.jpg
+    caption: 中央电视台举办首届春节联欢晚会直播——历史现场与典藏影像
 - id: cn-6th-npc-lixianian-198306
   date: '1983-06-18'
   title: 六届全国人大一次会议选举李先念为国家主席
@@ -3196,6 +3535,9 @@
   sources:
     - 新华网
     - 全国人大常委会
+  image:
+    url: /images/events/1983/6th_npc_lixianian_198306.jpg
+    caption: 六届全国人大一次会议选举李先念为国家主席——历史现场与典藏影像
 - id: cn-crackdown-198308
   date: '1983-08-25'
   title: 全国开展严厉打击刑事犯罪活动（"严打"）
@@ -3209,6 +3551,9 @@
   sources:
     - 新华网
     - 公安部
+  image:
+    url: /images/events/1983/crackdown_198308.jpg
+    caption: 全国开展严厉打击刑事犯罪活动（"严打"）——历史现场与典藏影像
 - id: cn-deng-3faces-education-198310
   date: '1983-10-01'
   title: 邓小平题词"教育要面向现代化、面向世界、面向未来"
@@ -3222,6 +3567,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1983/deng_3faces_education_198310.jpg
+    caption: 邓小平题词"教育要面向现代化、面向世界、面向未来"——历史现场与典藏影像
 - id: cn-12th-2nd-plenum-198310
   date: '1983-10-12'
   title: 中共十二届二中全会通过整党决定
@@ -3235,6 +3583,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1983/12th_2nd_plenum_198310.jpg
+    caption: 中共十二届二中全会通过整党决定——历史现场与典藏影像
 - id: cn-yinhe1-supercomputer-198311
   date: '1983-11-26'
   title: '"银河-I"巨型计算机通过国家鉴定'
@@ -3265,6 +3616,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1984/deng_shenzhen_inspection_198401.jpg
+    caption: 邓小平视察深圳等经济特区并题词肯定——历史现场与典藏影像
 - id: cn-reagan-china-visit-198404
   date: '1984-04-26'
   title: 美国总统里根访华
@@ -3278,6 +3632,9 @@
   sources:
     - 新华网
     - 外交部
+  image:
+    url: /images/events/1984/reagan_china_visit_198404.jpg
+    caption: 美国总统里根访华——历史现场与典藏影像
 - id: cn-open-14-coastal-cities-198405
   date: '1984-05-04'
   title: 中共中央、国务院决定进一步开放十四个沿海港口城市
@@ -3324,6 +3681,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1984/35th_national_day_parade_198410.jpg
+    caption: 首都举行建国35周年阅兵与群众游行——历史现场与典藏影像
 - id: cn-12th-3rd-plenum-reform-198410
   date: '1984-10-20'
   title: 中共十二届三中全会通过《关于经济体制改革的决定》
@@ -3354,6 +3714,9 @@
   sources:
     - 新华网
     - 联想集团
+  image:
+    url: /images/events/1984/lenovo_founded_198411.jpg
+    caption: 柳传志等在中科院计算所创办联想公司前身——历史现场与典藏影像
 - id: cn-sino-british-joint-declaration-198412
   date: '1984-12-19'
   title: 中英《关于香港问题的联合声明》在北京正式签署
@@ -3385,6 +3748,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1985/rural_10policies_198501.jpg
+    caption: 中共中央国务院发布活跃农村经济十项政策，取消农产品统购派购——历史现场与典藏影像
 - id: cn-antarctic-greatwall-station-198502
   date: '1985-02-20'
   title: 中国南极长城站建成
@@ -3415,6 +3781,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1985/education_reform_decision_198505.jpg
+    caption: 中共中央发布《关于教育体制改革的决定》——历史现场与典藏影像
 - id: cn-million-troop-cut-198506
   date: '1985-06-04'
   title: 邓小平宣布中国人民解放军裁减员额一百万
@@ -3445,6 +3814,9 @@
   sources:
     - 新华网
     - 教育部
+  image:
+    url: /images/events/1985/first_teachers_day_198509.jpg
+    caption: 新中国庆祝第一个教师节——历史现场与典藏影像
 - id: cn-7th-5year-plan-proposal-198509
   date: '1985-09-23'
   title: 中共全国代表会议通过"七五"计划建议
@@ -3458,6 +3830,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1985/7th_5year_plan_proposal_198509.jpg
+    caption: 中共全国代表会议通过"七五"计划建议——历史现场与典藏影像
 - id: cn-halley-comet-198604
   date: '1986-04-11'
   title: 中国组织哈雷彗星回归大规模联合观测
@@ -3471,6 +3846,9 @@
   sources:
     - 新华网
     - 中国天文学会
+  image:
+    url: /images/events/1986/halley_comet_198604.jpg
+    caption: 中国组织哈雷彗星回归大规模联合观测——历史现场与典藏影像
 - id: cn-7th-5year-plan-198604
   date: '1986-04-12'
   title: 六届全国人大四次会议通过第七个五年计划
@@ -3484,6 +3862,9 @@
   sources:
     - 新华网
     - 全国人大常委会
+  image:
+    url: /images/events/1986/7th_5year_plan_198604.jpg
+    caption: 六届全国人大四次会议通过第七个五年计划——历史现场与典藏影像
 - id: cn-labor-contract-system-198605
   date: '1986-05-04'
   title: 国务院发布国营企业实行劳动合同制暂行规定
@@ -3498,6 +3879,9 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: /images/events/1986/labor_contract_system_198605.jpg
+    caption: 国务院发布国营企业实行劳动合同制暂行规定——历史现场与典藏影像
 - id: cn-12th-6th-plenum-spiritual-civilization-198609
   date: '1986-09-28'
   title: 中共十二届六中全会通过精神文明建设指导方针决议
@@ -3511,6 +3895,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1986/12th_6th_plenum_spiritual_civilization_198609.jpg
+    caption: 中共十二届六中全会通过精神文明建设指导方针决议——历史现场与典藏影像
 - id: cn-liubocheng-death-198610
   date: '1986-10-07'
   title: 刘伯承元帅在北京逝世
@@ -3524,6 +3911,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1986/liubocheng_death_198610.jpg
+    caption: 刘伯承元帅在北京逝世——历史现场与典藏影像
 - id: cn-863-program-198611
   date: '1986-11-18'
   title: 中共中央国务院批准实施"863计划"
@@ -3554,6 +3944,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1987/huyaobang_resign_198701.jpg
+    caption: 胡耀邦辞去中共中央总书记职务，赵紫阳代理总书记——历史现场与典藏影像
 - id: cn-sino-portuguese-macau-declaration-198704
   date: '1987-04-13'
   title: 中葡《关于澳门问题的联合声明》在北京正式签署
@@ -3584,6 +3977,9 @@
   sources:
     - 新华网
     - 林业部
+  image:
+    url: /images/events/1987/daxinganling_fire_198705.jpg
+    caption: 大兴安岭发生特大森林火灾——历史现场与典藏影像
 - id: cn-taiwan-mainland-visit-198710
   date: '1987-10-15'
   title: 台湾当局宣布开放民众赴大陆探亲
@@ -3597,6 +3993,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1987/taiwan_mainland_visit_198710.jpg
+    caption: 台湾当局宣布开放民众赴大陆探亲——历史现场与典藏影像
 - id: cn-13th-congress-198710
   date: '1987-10-25'
   title: 中共十三大召开，提出社会主义初级阶段理论
@@ -3627,6 +4026,9 @@
   sources:
     - 新华网
     - 国家体委
+  image:
+    url: /images/events/1987/6th_national_games_198711.jpg
+    caption: 第六届全国运动会在广州开幕——历史现场与典藏影像
 - id: cn-7th-npc-1st-meeting-198803
   date: '1988-03-25'
   title: 七届全国人大一次会议在北京召开
@@ -3639,6 +4041,9 @@
   sources:
     - 新华网
     - 全国人大常委会
+  image:
+    url: /images/events/1988/7th_npc_1st_meeting_198803.jpg
+    caption: 七届全国人大一次会议在北京召开——历史现场与典藏影像
 - id: cn-hainan-province-sez-198804
   date: '1988-04-13'
   title: 七届全国人大一次会议决定海南建省办经济特区
@@ -3669,6 +4074,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1988/price_reform_breakthrough_198808.jpg
+    caption: 中央北戴河会议决定价格改革"闯关"，引发全国抢购风潮——历史现场与典藏影像
 - id: cn-military-rank-restored-198809
   date: '1988-09-14'
   title: 中央军委决定恢复实行军衔制并授予上将军衔
@@ -3682,6 +4090,9 @@
   sources:
     - 新华网
     - 中央军委
+  image:
+    url: /images/events/1988/military_rank_restored_198809.jpg
+    caption: 中央军委决定恢复实行军衔制并授予上将军衔——历史现场与典藏影像
 - id: cn-beijing-electron-collider-198810
   date: '1988-10-22'
   title: 北京正负电子对撞机首次对撞成功
@@ -3695,6 +4106,9 @@
   sources:
     - 新华网
     - 中国科学院
+  image:
+    url: /images/events/1988/beijing_electron_collider_198810.jpg
+    caption: 北京正负电子对撞机首次对撞成功——历史现场与典藏影像
 - id: cn-panchen-lama-dies-198901
   date: '1989-01-28'
   title: 第十世班禅额尔德尼逝世
@@ -3709,6 +4123,9 @@
   sources:
     - 新华网
     - 全国政协
+  image:
+    url: /images/events/1989/panchen_lama_dies_198901.jpg
+    caption: 第十世班禅额尔德尼逝世——历史现场与典藏影像
 - id: cn-lhasa-martial-law-198903
   date: '1989-03-08'
   title: 拉萨市实施戒严
@@ -3723,6 +4140,9 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: /images/events/1989/lhasa_martial_law_198903.jpg
+    caption: 拉萨市实施戒严——历史现场与典藏影像
 - id: cn-administrative-litigation-law-198904
   date: '1989-04-04'
   title: 《中华人民共和国行政诉讼法》通过
@@ -3737,6 +4157,9 @@
   sources:
     - 全国人大常委会
     - 中国政府网
+  image:
+    url: /images/events/1989/administrative_litigation_law_198904.jpg
+    caption: 《中华人民共和国行政诉讼法》通过——历史现场与典藏影像
 - id: cn-sino-soviet-normalization-198905
   date: '1989-05-16'
   title: 中苏关系实现正常化
@@ -3784,6 +4207,9 @@
   sources:
     - 新华网
     - 中国共产党新闻网
+  image:
+    url: /images/events/1989/jiang_zemin_general_secretary_198906.jpg
+    caption: 江泽民当选中共中央总书记——历史现场与典藏影像
 - id: cn-huangdao-oil-depot-explosion-198908
   date: '1989-08-12'
   title: 黄岛油库发生特大火灾爆炸事故
@@ -3798,6 +4224,9 @@
   sources:
     - 新华网
     - 应急管理部
+  image:
+    url: /images/events/1989/huangdao_oil_depot_explosion_198908.jpg
+    caption: 黄岛油库发生特大火灾爆炸事故——历史现场与典藏影像
 - id: cn-project-hope-launched-198910
   date: '1989-10-30'
   title: 希望工程正式启动
@@ -3812,6 +4241,9 @@
   sources:
     - 中国青少年发展基金会
     - 新华网
+  image:
+    url: /images/events/1989/project_hope_launched_198910.jpg
+    caption: 希望工程正式启动——历史现场与典藏影像
 - id: cn-asiasat1-launch-199004
   date: '1990-04-07'
   title: 中国"长征三号"火箭成功发射"亚洲一号"通信卫星
@@ -3825,6 +4257,9 @@
   sources:
     - 新华网
     - 中国航天科技集团
+  image:
+    url: /images/events/1990/asiasat1_launch_199004.jpg
+    caption: 中国"长征三号"火箭成功发射"亚洲一号"通信卫星——历史现场与典藏影像
 - id: cn-pudong-development-199004
   date: '1990-04-18'
   title: 中央宣布开发开放上海浦东新区，开启浦东开发开放进程
@@ -3871,6 +4306,9 @@
   sources:
     - 外交部
     - 新华网
+  image:
+    url: /images/events/1990/singapore_diplomatic_199010.jpg
+    caption: 中国与新加坡正式建立外交关系——历史现场与典藏影像
 - id: cn-shanghai-stock-exchange-199011
   date: '1990-11-26'
   title: 上海证券交易所正式成立
@@ -3901,6 +4339,9 @@
   sources:
     - 新华网
     - 中国证监会
+  image:
+    url: /images/events/1990/shenzhen_stock_exchange_199012.jpg
+    caption: 深圳证券交易所开业试运行——历史现场与典藏影像
 - id: cn-eighth-five-plan-199103
   date: '1991-03-25'
   title: 七届全国人大四次会议通过"八五"计划纲要
@@ -3915,6 +4356,9 @@
   sources:
     - 新华网
     - 国家发改委
+  image:
+    url: /images/events/1991/eighth_five_plan_199103.jpg
+    caption: 七届全国人大四次会议通过"八五"计划纲要——历史现场与典藏影像
 - id: cn-east-china-flood-199107
   date: '1991-07-01'
   title: 华东地区发生特大洪涝灾害，全国动员抗洪救灾
@@ -3928,6 +4372,9 @@
   sources:
     - 新华网
     - 民政部
+  image:
+    url: /images/events/1991/east_china_flood_199107.jpg
+    caption: 华东地区发生特大洪涝灾害，全国动员抗洪救灾——历史现场与典藏影像
 - id: cn-apec-join-199111
   date: '1991-11-12'
   title: 中国正式加入亚太经济合作组织（APEC）
@@ -3942,6 +4389,9 @@
   sources:
     - 外交部
     - APEC秘书处
+  image:
+    url: /images/events/1991/apec_join_199111.jpg
+    caption: 中国正式加入亚太经济合作组织（APEC）——历史现场与典藏影像
 - id: cn-qinshan-nuclear-199112
   date: '1991-12-15'
   title: 秦山核电站并网发电，中国大陆核电站实现零的突破
@@ -3990,6 +4440,9 @@
   sources:
     - 新华网
     - 全国人大
+  image:
+    url: /images/events/1992/three_gorges_project_199204.jpg
+    caption: 七届全国人大五次会议通过关于兴建长江三峡工程的决议——历史现场与典藏影像
 - id: cn-south-korea-diplomatic-199208
   date: '1992-08-24'
   title: 中国与韩国正式建立外交关系
@@ -4003,6 +4456,9 @@
   sources:
     - 外交部
     - 新华网
+  image:
+    url: /images/events/1992/south_korea_diplomatic_199208.jpg
+    caption: 中国与韩国正式建立外交关系——历史现场与典藏影像
 - id: cn-14th-cpc-congress-199210
   date: '1992-10-12'
   title: 中共十四大召开，确立建立社会主义市场经济体制的目标
@@ -4033,6 +4489,9 @@
   sources:
     - 新华网
     - 国台办
+  image:
+    url: /images/events/1993/wanggu_talks_199304.jpg
+    caption: 海峡两岸"汪辜会谈"在新加坡举行，开启两岸高层接触——历史现场与典藏影像
 - id: cn-deng-selected-works-199311
   date: '1993-11-02'
   title: 《邓小平文选》第三卷正式出版发行
@@ -4046,6 +4505,9 @@
   sources:
     - 新华网
     - 人民出版社
+  image:
+    url: /images/events/1993/deng_selected_works_199311.jpg
+    caption: 《邓小平文选》第三卷正式出版发行——历史现场与典藏影像
 - id: cn-14th-third-plenum-199311
   date: '1993-11-14'
   title: 中共十四届三中全会通过《关于建立社会主义市场经济体制若干问题的决定》
@@ -4059,6 +4521,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1993/14th_third_plenum_199311.jpg
+    caption: 中共十四届三中全会通过《关于建立社会主义市场经济体制若干问题的决定》——历史现场与典藏影像
 - id: cn-jiang-clinton-summit-199311
   date: '1993-11-19'
   title: 江泽民与克林顿在西雅图举行首次正式会晤
@@ -4072,6 +4537,9 @@
   sources:
     - 外交部
     - 新华网
+  image:
+    url: /images/events/1993/jiang_clinton_summit_199311.jpg
+    caption: 江泽民与克林顿在西雅图举行首次正式会晤——历史现场与典藏影像
 - id: cn-tax-sharing-reform-199401
   date: '1994-01-01'
   title: 中国全面实施分税制财政体制改革
@@ -4102,6 +4570,9 @@
   sources:
     - 新华网
     - 中科院
+  image:
+    url: /images/events/1994/internet_connection_199404.jpg
+    caption: 中国实现与国际互联网的全功能连接——历史现场与典藏影像
 - id: cn-modern-enterprise-reform-199406
   date: '1994-06-01'
   title: 国务院部署建立现代企业制度改革试点
@@ -4115,6 +4586,9 @@
   sources:
     - 新华网
     - 国家经贸委
+  image:
+    url: /images/events/1994/modern_enterprise_reform_199406.jpg
+    caption: 国务院部署建立现代企业制度改革试点——历史现场与典藏影像
 - id: cn-three-gorges-start-199412
   date: '1994-12-14'
   title: 长江三峡工程正式开工
@@ -4129,6 +4603,9 @@
   sources:
     - 新华网
     - 国务院三峡办
+  image:
+    url: /images/events/1994/three_gorges_start_199412.jpg
+    caption: 长江三峡工程正式开工——历史现场与典藏影像
 - id: cn-five-day-workweek-199501
   date: '1995-01-01'
   title: 中国开始实行每周五天工作制
@@ -4142,6 +4619,9 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: /images/events/1995/five_day_workweek_199501.jpg
+    caption: 中国开始实行每周五天工作制——历史现场与典藏影像
 - id: cn-science-education-strategy-199505
   date: '1995-05-06'
   title: 《中共中央、国务院关于加速科学技术进步的决定》颁布，确立"科教兴国"战略
@@ -4156,6 +4636,9 @@
   sources:
     - 新华网
     - 科技部
+  image:
+    url: /images/events/1995/science_education_strategy_199505.jpg
+    caption: 《中共中央、国务院关于加速科学技术进步的决定》颁布，确立"科教兴国"战略——历史现场与典藏影像
 - id: cn-victory-50th-199509
   date: '1995-09-03'
   title: 中国隆重纪念抗日战争暨世界反法西斯战争胜利50周年
@@ -4168,6 +4651,9 @@
     - 纪念
   sources:
     - 新华网
+  image:
+    url: /images/events/1995/victory_50th_199509.jpg
+    caption: 中国隆重纪念抗日战争暨世界反法西斯战争胜利50周年——历史现场与典藏影像
 - id: cn-women-conference-199509
   date: '1995-09-04'
   title: 联合国第四次世界妇女大会在北京隆重举行
@@ -4181,6 +4667,9 @@
   sources:
     - 新华网
     - 联合国
+  image:
+    url: /images/events/1995/women_conference_199509.jpg
+    caption: 联合国第四次世界妇女大会在北京隆重举行——历史现场与典藏影像
 - id: cn-hk-preliminary-committee-199601
   date: '1996-01-26'
   title: 香港特别行政区筹备委员会在北京成立
@@ -4195,6 +4684,9 @@
   sources:
     - 新华网
     - 港澳办
+  image:
+    url: /images/events/1996/hk_preliminary_committee_199601.jpg
+    caption: 香港特别行政区筹备委员会在北京成立——历史现场与典藏影像
 - id: cn-taiwan-strait-crisis-199603
   date: '1996-03-08'
   title: 中国人民解放军在东南沿海举行大规模军事演习
@@ -4226,6 +4718,9 @@
   sources:
     - 新华网
     - 铁道部
+  image:
+    url: /images/events/1996/jingjiu_railway_199609.jpg
+    caption: 京九铁路全线建成通车——历史现场与典藏影像
 - id: cn-14th-6th-plenum-199610
   date: '1996-10-10'
   title: 中共十四届六中全会通过关于加强社会主义精神文明建设决议
@@ -4239,6 +4734,9 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1996/14th_6th_plenum_199610.jpg
+    caption: 中共十四届六中全会通过关于加强社会主义精神文明建设决议——历史现场与典藏影像
 - id: cn-deng-xiaoping-death-199702
   date: '1997-02-19'
   title: 邓小平在北京逝世，中国改革开放总设计师谢世
@@ -4270,6 +4768,9 @@
   sources:
     - 新华网
     - 重庆市政府
+  image:
+    url: /images/events/1997/chongqing_municipality_199706.jpg
+    caption: 重庆直辖市正式挂牌成立——历史现场与典藏影像
 - id: cn-hong-kong-handover-199707
   date: '1997-07-01'
   title: 香港回归祖国，香港特别行政区正式成立
@@ -4318,6 +4819,9 @@
   sources:
     - 新华网
     - 中国人民银行
+  image:
+    url: /images/events/1997/rmb_stability_199711.jpg
+    caption: 中国承诺人民币不贬值，力保亚洲金融稳定——历史现场与典藏影像
 - id: cn-zhu-rongji-pm-199803
   date: '1998-03-17'
   title: 朱镕基出任国务院总理，推行政府机构改革
@@ -4331,6 +4835,9 @@
   sources:
     - 新华网
     - 全国人大
+  image:
+    url: /images/events/1998/zhu_rongji_pm_199803.jpg
+    caption: 朱镕基出任国务院总理，推行政府机构改革——历史现场与典藏影像
 - id: cn-1998-flood-199806
   date: '1998-06-12'
   title: 长江流域发生特大洪水，全国军民奋力抗洪抢险
@@ -4363,6 +4870,9 @@
   sources:
     - 新华网
     - 中国人民银行
+  image:
+    url: /images/events/1998/rmb_stability_199807.jpg
+    caption: 中国政府重申人民币不贬值，并向国际社会作出承诺——历史现场与典藏影像
 - id: cn-medical-insurance-reform-199812
   date: '1998-12-01'
   title: 国务院颁布城镇职工基本医疗保险制度改革决定
@@ -4377,6 +4887,9 @@
   sources:
     - 新华网
     - 劳动保障部
+  image:
+    url: /images/events/1998/medical_insurance_reform_199812.jpg
+    caption: 国务院颁布城镇职工基本医疗保险制度改革决定——历史现场与典藏影像
 - id: cn-deng-theory-constitution-199903
   date: '1999-03-15'
   title: 九届全国人大二次会议将"邓小平理论"载入宪法
@@ -4391,6 +4904,9 @@
   sources:
     - 新华网
     - 全国人大
+  image:
+    url: /images/events/1999/deng_theory_constitution_199903.jpg
+    caption: 九届全国人大二次会议将"邓小平理论"载入宪法——历史现场与典藏影像
 - id: cn-nato-bomb-embassy-199905
   date: '1999-05-08'
   title: 北约导弹轰炸中国驻南斯拉夫联盟大使馆，三名记者不幸遇难
@@ -4421,6 +4937,9 @@
   sources:
     - 新华网
     - 国防科工委
+  image:
+    url: /images/events/1999/avic_restructure_199906.jpg
+    caption: 中国航空工业第一、第二集团公司挂牌成立——历史现场与典藏影像
 - id: cn-shenwei1-supercomputer-199907
   date: '1999-07-01'
   title: 中国第一台高性能超级计算机"神威I"通过国家鉴定
@@ -4434,6 +4953,9 @@
   sources:
     - 新华网
     - 科技日报
+  image:
+    url: /images/events/1999/shenwei1_supercomputer_199907.jpg
+    caption: 中国第一台高性能超级计算机"神威I"通过国家鉴定——历史现场与典藏影像
 - id: cn-50th-parade-199910
   date: '1999-10-01'
   title: 庆祝中华人民共和国成立50周年，首都举行盛大世纪大阅兵
@@ -4514,6 +5036,9 @@
     - 文化
   sources:
     - 新华网
+  image:
+    url: /images/events/2000/centenary_dawn_200001.jpg
+    caption: 全国人民欢庆千禧年，首都举行"迈向新世纪"神州世纪天坛之夜——历史现场与典藏影像
 - id: cn-western-development-strategy-200001
   date: '2000-01-16'
   title: 国务院成立西部地区开发领导小组，西部大开发战略全面启动实施
@@ -4615,6 +5140,9 @@
   sources:
     - 国家统计局
     - 新华网
+  image:
+    url: /images/events/2000/5th_national_population_census_200011.jpg
+    caption: 第五次全国人口普查登记工作在全国范围内展开，全国总人口达12.95亿——历史现场与典藏影像
 - id: wto-entry-2001
   date: '2001'
   title: 加入世界贸易组织
@@ -4626,6 +5154,9 @@
   importance: 4
   summary: 中国正式加入世界贸易组织（WTO），全面融入世界经济体系。
   confidence: 确定
+  image:
+    url: /images/events/2001/wto_entry_2001.jpg
+    caption: 加入世界贸易组织——历史现场与典藏影像
 - id: cn-hainan-nanhai-collision-200104
   date: '2001-04-01'
   title: 中美南海撞机事件爆发，海军飞行员王伟壮烈牺牲
@@ -4780,6 +5311,9 @@
   sources:
     - 新华网
     - 中国三峡
+  image:
+    url: /images/events/2002/three_gorges_diversion_closure_200211.jpg
+    caption: 三峡工程导流明渠截流成功——历史现场与典藏影像
 - id: cn-cpc-16th-congress-200211
   date: '2002-11-08'
   title: 中国共产党第十六次全国代表大会在北京胜利召开
@@ -4844,6 +5378,9 @@
   sources:
     - 国家航天局
     - 新华网
+  image:
+    url: /images/events/2002/shenzhou4_space_mission_200212.jpg
+    caption: 神舟四号无人飞船成功发射，载人航天准备工作进入最后冲刺——历史现场与典藏影像
 - id: shenzhou-5-2003
   date: '2003'
   title: 神舟五号载人航天
@@ -4853,6 +5390,9 @@
   confidence: 确定
   tags:
     - 科技
+  image:
+    url: /images/events/2003/shenzhou_5_2003.jpg
+    caption: 神舟五号载人航天——历史现场与典藏影像
 - id: cn-national-npc-200303
   date: '2003-03-15'
   title: 十届全国人大一次会议举行，胡锦涛当选中华人民共和国主席
@@ -5004,6 +5544,9 @@
     - 历史
   sources:
     - 新华网
+  image:
+    url: /images/events/2004/deng_xiaoping_centenary_200408.jpg
+    caption: 纪念邓小平同志诞辰100周年大会在北京隆重举行——历史现场与典藏影像
 - id: cn-liu-xiang-athens-gold-200408
   date: '2004-08-27'
   title: 刘翔在雅典奥运会男子110米栏决赛夺冠并平世界纪录（12.91秒）
@@ -5084,6 +5627,9 @@
     - 一国两制
   sources:
     - 新华网
+  image:
+    url: /images/events/2004/macau_5th_anniversary_200412.jpg
+    caption: 庆祝澳门回归祖国5周年大会暨澳门特区第二届政府就职典礼举行——历史现场与典藏影像
 - id: cn-first-economic-census-200412
   date: '2004-12-31'
   title: 第一全国经济普查登记工作在全国范围全面展开
@@ -5097,6 +5643,9 @@
   sources:
     - 国家统计局
     - 新华网
+  image:
+    url: /images/events/2004/first_economic_census_200412.jpg
+    caption: 第一全国经济普查登记工作在全国范围全面展开——历史现场与典藏影像
 - id: cn-anti-secession-law-200503
   date: '2005-03-14'
   title: 十届全国人大三次会议高票通过《反分裂国家法》
@@ -5216,6 +5765,9 @@
   sources:
     - 环保部
     - 新华网
+  image:
+    url: /images/events/2005/songhua_river_pollution_200511.jpg
+    caption: 吉林石化双苯厂爆炸引发松花江重大水污染事件——历史现场与典藏影像
 - id: cn-agricultural-tax-free-decided-200512
   date: '2005-12-29'
   title: 十届全国人大常委会表决通过废止农业税条例，明确2006年起全面取消农业税
@@ -5265,6 +5817,9 @@
     - 道德
   sources:
     - 新华网
+  image:
+    url: /images/events/2006/socialist_values_200603.jpg
+    caption: 胡锦涛提出以"八荣八耻"为主要内容的社会主义荣辱观——历史现场与典藏影像
 - id: cn-11th-five-year-plan-200603
   date: '2006-03-14'
   title: 十届全国人大四次会议表决通过"十一五"规划纲要
@@ -5330,6 +5885,9 @@
   sources:
     - 新华网
     - 气象局
+  image:
+    url: /images/events/2006/typhoon_saomai_200608.jpg
+    caption: 1949年以来登陆中国大陆最强台风"桑美"登陆浙江苍南——历史现场与典藏影像
 - id: cn-cpc-16th-6th-plenum-200610
   date: '2006-10-11'
   title: 中共十六届六中全会审议通过《关于构建社会主义和谐社会若干重大问题的决定》
@@ -5358,6 +5916,9 @@
     - 历史
   sources:
     - 新华网
+  image:
+    url: /images/events/2006/long_march_70th_200610.jpg
+    caption: 纪念中国工农红军长征胜利70周年大会在北京隆重举行——历史现场与典藏影像
 - id: cn-focac-beijing-summit-200611
   date: '2006-11-04'
   title: 中非合作论坛北京峰会隆重开幕，48个非洲国家元首和代表出席
@@ -5388,6 +5949,9 @@
   sources:
     - 新华网
     - 国台办
+  image:
+    url: /images/events/2007/cross_strait_charter_flights_200702.jpg
+    caption: 两岸包机常态化与海峡两岸经济文化交流持续深化——历史现场与典藏影像
 - id: cn-property-law-200703
   date: '2007-03-16'
   title: 十届全国人大五次会议表决通过《中华人民共和国物权法》
@@ -5437,6 +6001,9 @@
   sources:
     - 新华网
     - 环保部
+  image:
+    url: /images/events/2007/tai_lake_algae_blooms_200705.jpg
+    caption: 太湖蓝藻大面积爆发致无锡自来水危机，国家重拳整治水污染——历史现场与典藏影像
 - id: cn-hong-kong-10th-anniversary-200707
   date: '2007-07-01'
   title: 庆祝香港回归祖国10周年大会暨香港特别行政区第三届政府就职典礼举行
@@ -5502,6 +6069,9 @@
   sources:
     - 新华网
     - 证券时报
+  image:
+    url: /images/events/2007/shanghai_stock_index_6000_200710.jpg
+    caption: 沪指突破6124点创历史新高，中国资本市场迎来前所未有大牛市——历史现场与典藏影像
 - id: cn-change1-lunar-orbiter-200710
   date: '2007-10-24'
   title: 我国首颗月球探测卫星"嫦娥一号"在西昌卫星发射中心成功发射
@@ -5526,6 +6096,9 @@
   importance: 3
   summary: 第29届夏季奥林匹克运动会在北京成功举办。
   confidence: 确定
+  image:
+    url: /images/events/2008/beijing_olympics_2008.jpg
+    caption: 北京奥运——历史现场与典藏影像
 - id: cn-tibet-314-incident-200803
   date: '2008-03-14'
   title: 西藏拉萨发生打砸抢烧严重暴力犯罪事件，政府依法处置
@@ -5689,6 +6262,9 @@
     - 上海
   sources:
     - 新华网
+  image:
+    url: /images/events/2009/shanghai_expo_preparation_2009.jpg
+    caption: 2010年上海世界博览会建设工作全面推进，迎接"城市，让生活更美好"——历史现场与典藏影像
 - id: cn-new-medical-reform-200904
   date: '2009-04-06'
   title: 《中共中央国务院关于深化医药卫生体制改革的意见》发布，新医改方案正式出台
@@ -5719,6 +6295,9 @@
   sources:
     - 新华网
     - 卫生部
+  image:
+    url: /images/events/2009/h1n1_response_200906.jpg
+    caption: 中国内地发现首例输入性甲型H1N1流感病例，全面启动应急响应——历史现场与典藏影像
 - id: cn-anti-corruption-2009
   date: '2009-06-18'
   title: 最高人民检察院公布2008年查处腐败案件情况，反腐败斗争持续深化
@@ -5733,6 +6312,9 @@
   sources:
     - 新华网
     - 检察院
+  image:
+    url: /images/events/2009/anti_corruption_2009.jpg
+    caption: 最高人民检察院公布2008年查处腐败案件情况，反腐败斗争持续深化——历史现场与典藏影像
 - id: cn-urumqi-75-incident-200907
   date: '2009-07-05'
   title: 新疆乌鲁木齐发生"7·5"严重暴力犯罪事件，国家依法处置
@@ -5779,6 +6361,9 @@
     - 全球治理
   sources:
     - 新华网
+  image:
+    url: /images/events/2009/g20_copenhagen_diplomacy_2009.jpg
+    caption: 国家主席胡锦涛出席联合国气候变化峰会并在G20匹兹堡峰会上提出中国减排承诺——历史现场与典藏影像
 - id: cn-new-china-60th-parade-200910
   date: '2009-10-01'
   title: 庆祝中华人民共和国成立60周年大会暨盛大阅兵式在北京天安门广场举行
@@ -5842,6 +6427,9 @@
     - 贸易
   sources:
     - 新华网
+  image:
+    url: /images/events/2010/china_asean_fta_201001.jpg
+    caption: 中国-东盟自由贸易区正式建成——历史现场与典藏影像
 - id: cn-yushu-earthquake-201004
   date: '2010-04-14'
   title: 青海玉树发生7.1级强烈地震
@@ -5854,6 +6442,9 @@
     - 地震
   sources:
     - 新华网
+  image:
+    url: /images/events/2010/yushu_earthquake_201004.jpg
+    caption: 青海玉树发生7.1级强烈地震——历史现场与典藏影像
 - id: cn-shanghai-expo-201005
   date: '2010-05-01'
   title: 2010年上海世界博览会开幕
@@ -5883,6 +6474,9 @@
     - 两岸
   sources:
     - 新华网
+  image:
+    url: /images/events/2010/ecfa_agreement_201006.jpg
+    caption: 海峡两岸签署《海峡两岸经济合作框架协议》（ECFA）——历史现场与典藏影像
 - id: cn-education-plan-201007
   date: '2010-07-29'
   title: 《国家中长期教育改革和发展规划纲要（2010-2020年）》印发
@@ -5895,6 +6489,9 @@
     - 改革
   sources:
     - 新华网
+  image:
+    url: /images/events/2010/education_plan_201007.jpg
+    caption: 《国家中长期教育改革和发展规划纲要（2010-2020年）》印发——历史现场与典藏影像
 - id: cn-change2-launch-201010
   date: '2010-10-01'
   title: 嫦娥二号探月卫星成功发射
@@ -5908,6 +6505,9 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2010/change2_launch_201010.jpg
+    caption: 嫦娥二号探月卫星成功发射——历史现场与典藏影像
 - id: cn-fifth-plenum-17th-201010
   date: '2010-10-18'
   title: 党的十七届五中全会审议通过“十二五”规划建议
@@ -5920,6 +6520,9 @@
     - 改革
   sources:
     - 新华网
+  image:
+    url: /images/events/2010/fifth_plenum_17th_201010.jpg
+    caption: 党的十七届五中全会审议通过“十二五”规划建议——历史现场与典藏影像
 - id: cn-social-insurance-law-201010
   date: '2010-10-28'
   title: 《中华人民共和国社会保险法》表决通过
@@ -5932,6 +6535,9 @@
     - 民生
   sources:
     - 新华网
+  image:
+    url: /images/events/2010/social_insurance_law_201010.jpg
+    caption: 《中华人民共和国社会保险法》表决通过——历史现场与典藏影像
 - id: cn-guangzhou-asian-games-201011
   date: '2010-11-12'
   title: 第16届亚洲运动会在广州举行
@@ -5944,6 +6550,9 @@
     - 文化
   sources:
     - 新华网
+  image:
+    url: /images/events/2010/guangzhou_asian_games_201011.jpg
+    caption: 第16届亚洲运动会在广州举行——历史现场与典藏影像
 - id: cn-gdp-second-world-201012
   date: '2010-12-31'
   title: 中国全年GDP超越日本，跃居世界第二大经济体
@@ -5990,6 +6599,9 @@
     - 改革
   sources:
     - 新华网
+  image:
+    url: /images/events/2011/twelfth_five_year_plan_201103.jpg
+    caption: 十一届全国人大四次会议表决通过“十二五”规划纲要——历史现场与典藏影像
 - id: cn-jinghu-hsr-open-201106
   date: '2011-06-30'
   title: 京沪高速铁路全线正式通车运营
@@ -6017,6 +6629,9 @@
     - 政治
   sources:
     - 新华网
+  image:
+    url: /images/events/2011/cpc_90th_anniversary_201107.jpg
+    caption: 庆祝中国共产党成立90周年大会隆重举行——历史现场与典藏影像
 - id: cn-wenzhou-train-collision-201107
   date: '2011-07-23'
   title: 甬温线“7·23”特别重大铁路交通事故发生
@@ -6029,6 +6644,9 @@
     - 事故
   sources:
     - 新华网
+  image:
+    url: /images/events/2011/wenzhou_train_collision_201107.jpg
+    caption: 甬温线“7·23”特别重大铁路交通事故发生——历史现场与典藏影像
 - id: cn-tiangong1-launch-201109
   date: '2011-09-29'
   title: 天宫一号目标飞行器成功发射
@@ -6058,6 +6676,9 @@
     - 历史
   sources:
     - 新华网
+  image:
+    url: /images/events/2011/xinhai_centenary_201110.jpg
+    caption: 纪念辛亥革命100周年大会举行——历史现场与典藏影像
 - id: cn-sixth-plenum-17th-201110
   date: '2011-10-18'
   title: 党的十七届六中全会做出建设社会主义文化强国决定
@@ -6070,6 +6691,9 @@
     - 文化
   sources:
     - 新华网
+  image:
+    url: /images/events/2011/sixth_plenum_17th_201110.jpg
+    caption: 党的十七届六中全会做出建设社会主义文化强国决定——历史现场与典藏影像
 - id: cn-shenzhou8-tiangong-docking-201111
   date: '2011-11-03'
   title: 神舟八号与天宫一号首次交会对接成功
@@ -6099,6 +6723,9 @@
     - 扶贫
   sources:
     - 新华网
+  image:
+    url: /images/events/2011/poverty_standard_raised_201111.jpg
+    caption: 国家大幅提高农村扶贫标准至2300元——历史现场与典藏影像
 - id: cn-shenzhou9-launch-201206
   date: '2012-06-16'
   title: 神舟九号成功发射，刘洋成为中国首位女航天员，实现首次手控交会对接
@@ -6209,6 +6836,9 @@
     - 科技
   sources:
     - 新华网
+  image:
+    url: /images/events/2012/j15_carrier_landing_201211.jpg
+    caption: 歼-15舰载机首次成功在辽宁舰着舰起飞——历史现场与典藏影像
 - id: cn-chinese-dream-201211
   date: '2012-11-29'
   title: 国家主席参观《复兴之路》展览并首次提出“中国梦”
@@ -6252,6 +6882,9 @@
     - 交通
   sources:
     - 新华网
+  image:
+    url: /images/events/2012/jingguang_hsr_open_201212.jpg
+    caption: 京广高速铁路全线贯通运营——历史现场与典藏影像
 - id: cn-xijinping-president-201303
   date: '2013-03-14'
   title: 十二届全国人大一次会议选举习近平为国家主席、中央军委主席
@@ -6362,6 +6995,9 @@
     - 外交
   sources:
     - 新华网
+  image:
+    url: /images/events/2013/east_china_sea_adiz_201311.jpg
+    caption: 中国政府宣布划设东海防空识别区——历史现场与典藏影像
 - id: cn-change3-yutu-landing-201312
   date: '2013-12-14'
   title: 嫦娥三号成功软着陆月球，玉兔号月球车驶上月球表面
@@ -6391,6 +7027,9 @@
     - 人权
   sources:
     - 新华网
+  image:
+    url: /images/events/2013/reeducation_through_labor_abolition_201312.jpg
+    caption: 全国人大常委会决定废止劳动教养制度——历史现场与典藏影像
 - id: cn-gdp-59trillion-201312
   date: '2013-12-31'
   title: 全年GDP突破59万亿元，经济稳中向好
@@ -6405,6 +7044,9 @@
   sources:
     - 国家统计局
     - 新华网
+  image:
+    url: /images/events/2013/gdp_59trillion_201312.jpg
+    caption: 全年GDP突破59万亿元，经济稳中向好——历史现场与典藏影像
 - id: cn-national-memorial-day-201402
   date: '2014-02-27'
   title: 全国人大常委会设立南京大屠杀死难者国家公祭日与抗战胜利纪念日
@@ -6434,6 +7076,9 @@
     - 治安
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/kunming_attack_201403.jpg
+    caption: 云南昆明火车站发生“3·01”严重暴力恐怖袭击事件——历史现场与典藏影像
 - id: cn-russia-gas-deal-201405
   date: '2014-05-21'
   title: 中俄签署4000亿美元“西伯利亚力量”管道天然气购销历史性大单
@@ -6478,6 +7123,9 @@
     - 地震
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/ludian_earthquake_201408.jpg
+    caption: 云南省昭通市鲁甸县发生6.5级地震——历史现场与典藏影像
 - id: cn-literature-symposium-201410
   date: '2014-10-15'
   title: 中央召开文艺工作座谈会，指明新时期文艺发展方向
@@ -6490,6 +7138,9 @@
     - 艺术
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/literature_symposium_201410.jpg
+    caption: 中央召开文艺工作座谈会，指明新时期文艺发展方向——历史现场与典藏影像
 - id: cn-fourth-plenum-18th-201410
   date: '2014-10-23'
   title: 党的十八届四中全会审议通过全面推进依法治国决定
@@ -6600,6 +7251,9 @@
     - 事故
   sources:
     - 新华网
+  image:
+    url: /images/events/2015/tianjin_port_explosion_201508.jpg
+    caption: 天津港危险品仓库发生特别重大火灾爆炸事故——历史现场与典藏影像
 - id: cn-victory-day-parade-201509
   date: '2015-09-03'
   title: 纪念中国人民抗日战争暨世界反法西斯战争胜利70周年阅兵在京举行
@@ -6877,6 +7531,9 @@
     - 金融
   sources:
     - 新华网
+  image:
+    url: /images/events/2016/shenzhen_hongkong_stock_connect_201612.jpg
+    caption: “深港通”股票交易互联互通机制正式开通——历史现场与典藏影像
 - id: cn-xiongan-new-area-201704
   date: '2017-04-01'
   title: 中共中央、国务院决定设立河北雄安新区
@@ -7005,6 +7662,9 @@
     - 地震
   sources:
     - 新华网
+  image:
+    url: /images/events/2017/jiuzhaigou_earthquake_201708.jpg
+    caption: 四川省阿坝州九寨沟县发生7.0级地震——历史现场与典藏影像
 - id: cn-brics-xiamen-summit-201709
   date: '2017-09-03'
   title: 金砖国家领导人第九次会晤在福建厦门举行
@@ -7017,6 +7677,9 @@
     - 全球治理
   sources:
     - 新华网
+  image:
+    url: /images/events/2017/brics_xiamen_summit_201709.jpg
+    caption: 金砖国家领导人第九次会晤在福建厦门举行——历史现场与典藏影像
 - id: cn-19th-cpc-congress-201710
   date: '2017-10-18'
   title: 中国共产党第十九次全国代表大会胜利召开，确立习近平新时代中国特色社会主义思想
@@ -7097,6 +7760,9 @@
     - 思想
   sources:
     - 新华网
+  image:
+    url: /images/events/2018/marx_bicentenary_201805.jpg
+    caption: 纪念马克思诞辰200周年大会在北京隆重举行——历史现场与典藏影像
 - id: cn-hzmb-open-201810
   date: '2018-10-24'
   title: 港珠澳大桥正式通车运营
@@ -7194,6 +7860,9 @@
   sources:
     - 国家统计局
     - 新华网
+  image:
+    url: /images/events/2018/gdp_90trillion_201812.jpg
+    caption: 中国全年GDP首次突破90万亿元人民币，占全球经济比重升至16%——历史现场与典藏影像
 - id: cn-change4-moon-landing-201901
   date: '2019-01-03'
   title: 嫦娥四号探测器成功软着陆月球背面，人类历史上首次
@@ -7325,6 +7994,9 @@
     - 澳门
   sources:
     - 新华网
+  image:
+    url: /images/events/2019/macau_handover_20th_201912.jpg
+    caption: 庆祝澳门回归祖国20周年大会暨澳门特别行政区第五届政府就职典礼举行——历史现场与典藏影像
 - id: cn-long-march-5-cz5-flight3-201912
   date: '2019-12-27'
   title: 长征五号遥三运载火箭发射成功，中国“胖五”重型火箭复飞成功
@@ -7404,6 +8076,9 @@
     - 改革
   sources:
     - 新华网
+  image:
+    url: /images/events/2020/hainan_free_trade_202006.jpg
+    caption: 《海南自由贸易港建设总体方案》印发——历史现场与典藏影像
 - id: cn-hk-national-security-law-202006
   date: '2020-06-30'
   title: 《中华人民共和国香港特别行政区维护国家安全法》通过并实施
@@ -7433,6 +8108,9 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2020/tianwen1_launch_202007.jpg
+    caption: 天问一号开启中国首次自主火星探测任务——历史现场与典藏影像
 - id: cn-beidou3-system-202007
   date: '2020-07-31'
   title: 北斗三号全球卫星导航系统正式开通
@@ -7461,6 +8139,9 @@
     - 军事
   sources:
     - 新华网
+  image:
+    url: /images/events/2020/korean_war_70th_202010.jpg
+    caption: 纪念中国人民志愿军抗美援朝出国作战70周年——历史现场与典藏影像
 - id: cn-fifth-plenum-202010
   date: '2020-10-29'
   title: 党的十九届五中全会审议通过“十四五”规划建议
@@ -7490,6 +8171,9 @@
     - 外交
   sources:
     - 新华网
+  image:
+    url: /images/events/2020/rcep_signature_202011.jpg
+    caption: 区域全面经济伙伴关系协定（RCEP）正式签署——历史现场与典藏影像
 - id: cn-poverty-alleviation-202011
   date: '2020-11-23'
   title: 全国832个贫困县全部脱贫摘帽
@@ -7637,6 +8321,9 @@
     - 改革
   sources:
     - 新华网
+  image:
+    url: /images/events/2021/three_child_policy_202105.jpg
+    caption: 中共中央政治局会议审议《关于优化生育政策促进人口长期均衡发展的决定》，实施三孩生育政策——历史现场与典藏影像
 - id: cn-shenzhou12-launch-202106
   date: '2021-06-17'
   title: 神舟十二号成功发射，首批航天员进驻中国空间站
@@ -7650,6 +8337,9 @@
   sources:
     - 新华网
     - 载人航天工程网
+  image:
+    url: /images/events/2021/shenzhou12_launch_202106.jpg
+    caption: 神舟十二号成功发射，首批航天员进驻中国空间站——历史现场与典藏影像
 - id: cn-cpc-centenary-202107
   date: '2021-07-01'
   title: 庆祝中国共产党成立100周年大会隆重举行，宣告全面建成小康社会
@@ -7677,6 +8367,9 @@
     - 政治
   sources:
     - 新华网
+  image:
+    url: /images/events/2021/meng_wanzhou_return_202109.jpg
+    caption: 孟晚舟乘坐中国政府包机安全回国——历史现场与典藏影像
 - id: cn-sixth-plenum-resolution-202111
   date: '2021-11-11'
   title: 党的十九届六中全会审议通过第三个历史决议
@@ -7704,6 +8397,9 @@
     - 政治
   sources:
     - 新华网
+  image:
+    url: /images/events/2021/us_china_summit_video_202111.jpg
+    caption: 中美元首举行首次视频会晤——历史现场与典藏影像
 - id: cn-laos-railway-open-202112
   date: '2021-12-03'
   title: 中老铁路全线开通运营
@@ -7717,6 +8413,9 @@
     - 一带一路
   sources:
     - 新华网
+  image:
+    url: /images/events/2021/laos_railway_open_202112.jpg
+    caption: 中老铁路全线开通运营——历史现场与典藏影像
 - id: cn-gdp-114trillion-202112
   date: '2021-12-31'
   title: 全年GDP突破114万亿元，“十四五”实现良好开局
@@ -7730,6 +8429,9 @@
   sources:
     - 国家统计局
     - 新华网
+  image:
+    url: /images/events/2021/gdp_114trillion_202112.jpg
+    caption: 全年GDP突破114万亿元，“十四五”实现良好开局——历史现场与典藏影像
 - id: cn-beijing-olympics-202202
   date: '2022-02-04'
   title: 北京2022年冬奥会、冬残奥会成功举办，北京成为全球首个“双奥之城”
@@ -7791,6 +8493,9 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2022/wentian_lab_launch_202207.jpg
+    caption: 空间站问天实验舱成功发射——历史现场与典藏影像
 - id: cn-taiwan-countermeasures-202208
   date: '2022-08-02'
   title: 针对佩洛西窜访台湾，东部战区组织环台岛联合军事行动
@@ -7836,6 +8541,9 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2022/mengtian_lab_launch_202210.jpg
+    caption: 空间站梦天实验舱成功发射——历史现场与典藏影像
 - id: cn-g20-bali-summit-202211
   date: '2022-11-14'
   title: 中元首出席G20巴厘岛峰会并举行中美元首会晤
@@ -7848,6 +8556,9 @@
     - 政治
   sources:
     - 新华网
+  image:
+    url: /images/events/2022/g20_bali_summit_202211.jpg
+    caption: 中元首出席G20巴厘岛峰会并举行中美元首会晤——历史现场与典藏影像
 - id: cn-jiang-zemin-pass-202211
   date: '2022-11-30'
   title: 沉痛悼念江泽民同志
@@ -7892,6 +8603,9 @@
   sources:
     - 新华网
     - 联合国
+  image:
+    url: /images/events/2022/cop15_montreal_framework_202212.jpg
+    caption: 中国作为主席国推动联合国生物多样性大会达成历史性“昆蒙框架”——历史现场与典藏影像
 - id: cn-space-station-complete-202212
   date: '2022-12-31'
   title: 中国空间站全面建成，完成神舟十五号与十四号太空会师
@@ -7919,6 +8633,9 @@
   tags:
     - 政治
     - 两会
+  image:
+    url: /images/events/2023/two_sessions_202303.jpg
+    caption: 全国两会部署落实党的二十大部署与全年目标任务——历史现场与典藏影像
 - id: cn-saudi-iran-202303
   date: '2023-03-10'
   title: 中国促成沙特伊朗复交
@@ -7942,6 +8659,9 @@
   tags:
     - 政治
     - 改革
+  image:
+    url: /images/events/2023/institution_reform_202303.jpg
+    caption: 党和国家机构改革启动实施——历史现场与典藏影像
 - id: cn-thematic-education-202304
   date: 2023-04
   title: 学习贯彻党的二十大精神主题教育开展
@@ -7952,6 +8672,9 @@
   tags:
     - 政治
     - 党建
+  image:
+    url: /images/events/2023/thematic_education_202304.jpg
+    caption: 学习贯彻党的二十大精神主题教育开展——历史现场与典藏影像
 - id: cn-casia-summit-202305
   date: '2023-05-18'
   title: 中国—中亚峰会西安举行
@@ -7962,6 +8685,9 @@
   tags:
     - 外交
     - 中亚
+  image:
+    url: /images/events/2023/casia_summit_202305.jpg
+    caption: 中国—中亚峰会西安举行——历史现场与典藏影像
 - id: cn-c919-202305
   date: '2023-05-28'
   title: C919国产大飞机商业首航
@@ -7972,6 +8698,9 @@
   tags:
     - 航空
     - 科技
+  image:
+    url: /images/events/2023/c919_202305.jpg
+    caption: C919国产大飞机商业首航——历史现场与典藏影像
 - id: cn-games-2023
   date: '2023-07-28'
   title: 成都大运会与杭州亚运会先后举办
@@ -7981,6 +8710,9 @@
   confidence: 确定
   tags:
     - 体育
+  image:
+    url: /images/events/2023/games_2023.jpg
+    caption: 成都大运会与杭州亚运会先后举办——历史现场与典藏影像
 - id: cn-xi-culture-thought-202310
   date: '2023-10-07'
   title: 明确提出习近平文化思想
@@ -7991,6 +8723,9 @@
   tags:
     - 政治
     - 文化
+  image:
+    url: /images/events/2023/xi_culture_thought_202310.jpg
+    caption: 明确提出习近平文化思想——历史现场与典藏影像
 - id: cn-belt-road-forum-202310
   date: '2023-10-18'
   title: 第三届“一带一路”国际合作高峰论坛举行
@@ -8001,6 +8736,9 @@
   tags:
     - 外交
     - 一带一路
+  image:
+    url: /images/events/2023/belt_road_forum_202310.jpg
+    caption: 第三届“一带一路”国际合作高峰论坛举行——历史现场与典藏影像
 - id: cn-financial-meeting-202310
   date: '2023-10-30'
   title: 中央金融工作会议首提建设金融强国
@@ -8011,6 +8749,9 @@
   tags:
     - 经济
     - 金融
+  image:
+    url: /images/events/2023/financial_meeting_202310.jpg
+    caption: 中央金融工作会议首提建设金融强国——历史现场与典藏影像
 - id: cn-economy-2023
   date: 2023-12
   title: 全年经济回升向好，GDP增长5.2%
@@ -8021,6 +8762,9 @@
   tags:
     - 经济
     - 宏观
+  image:
+    url: /images/events/2023/economy_2023.jpg
+    caption: 全年经济回升向好，GDP增长5.2%——历史现场与典藏影像
 - id: cn-jishishan-quake-202312
   date: '2023-12-18'
   title: 甘肃积石山6.2级地震，国家紧急救援
@@ -8031,6 +8775,9 @@
   tags:
     - 灾害
     - 抗震
+  image:
+    url: /images/events/2023/jishishan_quake_202312.jpg
+    caption: 甘肃积石山6.2级地震，国家紧急救援——历史现场与典藏影像
 - id: cn-taiwan-election-202401
   date: '2024-01-13'
   title: 2024年台湾地区领导人与立法机构选举举行
@@ -8044,6 +8791,9 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2024/taiwan_election_202401.jpg
+    caption: 2024年台湾地区领导人与立法机构选举举行——历史现场与典藏影像
 - id: cn-two-sessions-202403
   date: '2024-03-05'
   title: 十四届全国人大二次会议在北京召开
@@ -8056,6 +8806,9 @@
     - 两会
   sources:
     - 新华网
+  image:
+    url: /images/events/2024/two_sessions_202403.jpg
+    caption: 十四届全国人大二次会议在北京召开——历史现场与典藏影像
 - id: cn-party-discipline-education-202404
   date: '2024-04-01'
   title: 全党扎实开展党纪学习教育
@@ -8068,6 +8821,9 @@
     - 党建
   sources:
     - 新华网
+  image:
+    url: /images/events/2024/party_discipline_education_202404.jpg
+    caption: 全党扎实开展党纪学习教育——历史现场与典藏影像
 - id: cn-joint-sword-202405
   date: '2024-05-23'
   title: 东部战区组织“联合利剑-2024A”演习
@@ -8080,6 +8836,9 @@
     - 外交
   sources:
     - 新华网
+  image:
+    url: /images/events/2024/joint_sword_202405.jpg
+    caption: 东部战区组织“联合利剑-2024A”演习——历史现场与典藏影像
 - id: cn-change6-sample-202406
   date: '2024-06-25'
   title: 嫦娥六号实现人类首次月球背面采样返回
@@ -8126,6 +8885,9 @@
   sources:
     - 新华网
     - 体育总局
+  image:
+    url: /images/events/2024/paris_olympics_202408.jpg
+    caption: 中国代表团创境外参加夏奥会历史最佳成绩——历史现场与典藏影像
 - id: cn-delay-retirement-202409
   date: '2024-09-13'
   title: 全国人大常委会表决通过渐进式延迟法定退休年龄决定
@@ -8139,6 +8901,9 @@
     - 改革
   sources:
     - 新华网
+  image:
+    url: /images/events/2024/delay_retirement_202409.jpg
+    caption: 全国人大常委会表决通过渐进式延迟法定退休年龄决定——历史现场与典藏影像
 - id: cn-stimulus-package-202409
   date: '2024-09-24'
   title: 党中央部署一揽子增量政策，提振经济与资本市场
@@ -8152,6 +8917,9 @@
   sources:
     - 新华网
     - 央行
+  image:
+    url: /images/events/2024/stimulus_package_202409.jpg
+    caption: 党中央部署一揽子增量政策，提振经济与资本市场——历史现场与典藏影像
 - id: cn-75th-anniversary-202410
   date: '2024-10-01'
   title: 庆祝中华人民共和国成立75周年
@@ -8163,6 +8931,9 @@
     - 政治
   sources:
     - 新华网
+  image:
+    url: /images/events/2024/75th_anniversary_202410.jpg
+    caption: 庆祝中华人民共和国成立75周年——历史现场与典藏影像
 - id: cn-spring-festival-unesco-202412
   date: '2024-12-04'
   title: “春节”成功列入联合国教科文组织人类非遗名录
@@ -8177,6 +8948,9 @@
   sources:
     - 新华网
     - 联合国
+  image:
+    url: /images/events/2024/spring_festival_unesco_202412.jpg
+    caption: “春节”成功列入联合国教科文组织人类非遗名录——历史现场与典藏影像
 - id: cn-macau-25th-202412
   date: '2024-12-20'
   title: 庆祝澳门回归祖国25周年
@@ -8189,6 +8963,9 @@
     - 澳门
   sources:
     - 新华网
+  image:
+    url: /images/events/2024/macau_25th_202412.jpg
+    caption: 庆祝澳门回归祖国25周年——历史现场与典藏影像
 - id: cn-energy-degree-law-202501
   date: '2025-01-01'
   title: 《能源法》《学位法》施行与渐进式延迟退休启动
@@ -8199,6 +8976,9 @@
   tags:
     - 法律
     - 改革
+  image:
+    url: /images/events/2025/energy_degree_law_202501.jpg
+    caption: 《能源法》《学位法》施行与渐进式延迟退休启动——历史现场与典藏影像
 - id: cn-deepseek-202501
   date: '2025-01-20'
   title: DeepSeek-R1发布震动全球AI格局
@@ -8222,6 +9002,9 @@
   tags:
     - 经济
     - 文化
+  image:
+    url: /images/events/2025/spring_festival_economy_202502.jpg
+    caption: 农历乙巳蛇年春节假日经济再创新高——历史现场与典藏影像
 - id: cn-harbin-asiad-winter-202502
   date: '2025-02-07'
   title: 第九届亚洲冬季运动会在哈尔滨举行
@@ -8232,6 +9015,9 @@
   tags:
     - 体育
     - 亚冬会
+  image:
+    url: /images/events/2025/harbin_asiad_winter_202502.jpg
+    caption: 第九届亚洲冬季运动会在哈尔滨举行——历史现场与典藏影像
 - id: cn-nezh2-boxoffice-202503
   date: 2025-03
   title: 《哪吒之魔童闹海》全球票房突破150亿元
@@ -8242,6 +9028,9 @@
   tags:
     - 文化
     - 电影
+  image:
+    url: /images/events/2025/nezh2_boxoffice_202503.jpg
+    caption: 《哪吒之魔童闹海》全球票房突破150亿元——历史现场与典藏影像
 - id: cn-two-sessions-202503
   date: '2025-03-05'
   title: 全国两会举行，确定全年发展目标任务
@@ -8252,6 +9041,9 @@
   tags:
     - 政治
     - 两会
+  image:
+    url: /images/events/2025/two_sessions_202503.jpg
+    caption: 全国两会举行，确定全年发展目标任务——历史现场与典藏影像
 - id: cn-strait-thunder-202504
   date: 2025-04
   title: 东部战区举行“海峡雷霆-2025A”演练
@@ -8261,6 +9053,9 @@
   confidence: 确定
   tags:
     - 军事
+  image:
+    url: /images/events/2025/strait_thunder_202504.jpg
+    caption: 东部战区举行“海峡雷霆-2025A”演练——历史现场与典藏影像
 - id: cn-tianwen-2-202505
   date: 2025-05
   title: 天问二号开启小行星采样探测
@@ -8271,6 +9066,9 @@
   tags:
     - 航天
     - 科技
+  image:
+    url: /images/events/2025/tianwen_2_202505.jpg
+    caption: 天问二号开启小行星采样探测——历史现场与典藏影像
 - id: cn-eu-china-50th-202505
   date: '2025-05-06'
   title: 中欧建交50周年
@@ -8280,6 +9078,9 @@
   confidence: 确定
   tags:
     - 外交
+  image:
+    url: /images/events/2025/eu_china_50th_202505.jpg
+    caption: 中欧建交50周年——历史现场与典藏影像
 - id: cn-russia-victory-day-202505
   date: '2025-05-09'
   title: 国家主席访俄并出席卫国战争胜利80周年庆典
@@ -8290,6 +9091,9 @@
   tags:
     - 外交
     - 中俄
+  image:
+    url: /images/events/2025/russia_victory_day_202505.jpg
+    caption: 国家主席访俄并出席卫国战争胜利80周年庆典——历史现场与典藏影像
 - id: cn-preschool-education-law-202506
   date: '2025-06-01'
   title: 《学前教育法》与新修订《监察法》施行
@@ -8299,6 +9103,9 @@
   confidence: 确定
   tags:
     - 法律
+  image:
+    url: /images/events/2025/preschool_education_law_202506.jpg
+    caption: 《学前教育法》与新修订《监察法》施行——历史现场与典藏影像
 - id: cn-tianzhou-9-202507
   date: '2025-07-15'
   title: 天舟九号货运飞船成功发射
@@ -8309,6 +9116,9 @@
   tags:
     - 航天
     - 科技
+  image:
+    url: /images/events/2025/tianzhou_9_202507.jpg
+    caption: 天舟九号货运飞船成功发射——历史现场与典藏影像
 - id: cn-free-preschool-202508
   date: '2025-08-05'
   title: 逐步推行免费学前教育政策出台
@@ -8319,6 +9129,9 @@
   tags:
     - 民生
     - 教育
+  image:
+    url: /images/events/2025/free_preschool_202508.jpg
+    caption: 逐步推行免费学前教育政策出台——历史现场与典藏影像
 - id: cn-xizang-60th-202508
   date: '2025-08-21'
   title: 西藏自治区成立60周年庆祝大会
@@ -8329,6 +9142,9 @@
   tags:
     - 政治
     - 西藏
+  image:
+    url: /images/events/2025/xizang_60th_202508.jpg
+    caption: 西藏自治区成立60周年庆祝大会——历史现场与典藏影像
 - id: cn-sco-tianjin-202509
   date: '2025-09-01'
   title: 上海合作组织天津峰会举行
@@ -8364,6 +9180,9 @@
   confidence: 确定
   tags:
     - 军事
+  image:
+    url: /images/events/2025/fujian_catapult_202509.jpg
+    caption: 福建舰完成多型舰载机电磁弹射训练——历史现场与典藏影像
 - id: cn-cz-600th-202510
   date: 2025-10
   title: 长征系列火箭完成第600次发射
@@ -8374,6 +9193,9 @@
   tags:
     - 航天
     - 科技
+  image:
+    url: /images/events/2025/cz_600th_202510.jpg
+    caption: 长征系列火箭完成第600次发射——历史现场与典藏影像
 - id: cn-jiaolong-arctic-202510
   date: 2025-10
   title: 蛟龙号完成我国首次北极冰区载人深潜
@@ -8384,6 +9206,9 @@
   tags:
     - 深潜
     - 科技
+  image:
+    url: /images/events/2025/jiaolong_arctic_202510.jpg
+    caption: 蛟龙号完成我国首次北极冰区载人深潜——历史现场与典藏影像
 - id: cn-4th-plenum-20th-202510
   date: '2025-10-20'
   title: 中共二十届四中全会审议“十五五”规划建议
@@ -8407,6 +9232,9 @@
   tags:
     - 航天
     - 科技
+  image:
+    url: /images/events/2025/shenzhou_20_21_202511.jpg
+    caption: 神舟二十号与二十一号乘组空间站太空会师——历史现场与典藏影像
 - id: cn-antarctic-42-202511
   date: '2025-11-01'
   title: 中国第42次南极考察队起航出征
@@ -8416,6 +9244,9 @@
   confidence: 确定
   tags:
     - 科考
+  image:
+    url: /images/events/2025/antarctic_42_202511.jpg
+    caption: 中国第42次南极考察队起航出征——历史现场与典藏影像
 - id: cn-fujian-commission-202511
   date: '2025-11-05'
   title: 福建舰正式入列，中国进入三航母时代
@@ -8439,6 +9270,9 @@
   tags:
     - 航天
     - 应急
+  image:
+    url: /images/events/2025/shenzhou_20_emergency_202511.jpg
+    caption: 神舟二十号遭碎片撞击，载人航天首次应急处置——历史现场与典藏影像
 - id: cn-lunar-program-202602
   date: '2026-02-11'
   title: 长征十号低空演示与梦舟载人飞船逃逸试验，载人登月关键节点
@@ -8449,6 +9283,9 @@
   tags:
     - 航天
     - 科技
+  image:
+    url: /images/events/2026/lunar_program_202602.jpg
+    caption: 长征十号低空演示与梦舟载人飞船逃逸试验，载人登月关键节点——历史现场与典藏影像
 - id: cn-spring-festival-202602
   date: '2026-02-17'
   title: 丙午马年春节，消费与文旅再创新高
@@ -8459,6 +9296,9 @@
   tags:
     - 民俗
     - 经济
+  image:
+    url: /images/events/2026/spring_festival_202602.jpg
+    caption: 丙午马年春节，消费与文旅再创新高——历史现场与典藏影像
 - id: cn-6g-record-202602
   date: '2026-02-18'
   title: 我国6G通信技术刷新世界纪录
@@ -8469,6 +9309,9 @@
   tags:
     - 科技
     - 通信
+  image:
+    url: /images/events/2026/6g_record_202602.jpg
+    caption: 我国6G通信技术刷新世界纪录——历史现场与典藏影像
 - id: cn-two-sessions-202603
   date: '2026-03-05'
   title: 十四届全国人大四次会议表决通过“十五五”规划纲要
@@ -8480,6 +9323,9 @@
     - 政治
     - 十五五
     - 历史转折
+  image:
+    url: /images/events/2026/two_sessions_202603.jpg
+    caption: 十四届全国人大四次会议表决通过“十五五”规划纲要——历史现场与典藏影像
 - id: cn-trump-visit-202605
   date: '2026-05-13'
   title: 特朗普访华，举行第六次“习特会”
@@ -8490,6 +9336,9 @@
   tags:
     - 外交
     - 政治
+  image:
+    url: /images/events/2026/trump_visit_202605.jpg
+    caption: 特朗普访华，举行第六次“习特会”——历史现场与典藏影像
 - id: cn-tianwen2-asteroid-202607
   date: '2026-07-06'
   title: 天问二号抵达近地小行星“振荡天星”开展探测
@@ -8500,6 +9349,9 @@
   tags:
     - 航天
     - 科技
+  image:
+    url: /images/events/2026/tianwen2_asteroid_202607.jpg
+    caption: 天问二号抵达近地小行星“振荡天星”开展探测——历史现场与典藏影像
 - id: cn-cz10b-recovery-202607
   date: '2026-07-10'
   title: 长征十号乙运载火箭一级受控回收成功
@@ -8510,6 +9362,9 @@
   tags:
     - 航天
     - 科技
+  image:
+    url: /images/events/2026/cz10b_recovery_202607.jpg
+    caption: 长征十号乙运载火箭一级受控回收成功——历史现场与典藏影像
 - id: cn-fields-medal-202607
   date: '2026-07-23'
   title: 中国籍数学家首次获得菲尔兹奖
@@ -8520,6 +9375,9 @@
   tags:
     - 科技
     - 数学
+  image:
+    url: /images/events/2026/fields_medal_202607.jpg
+    caption: 中国籍数学家首次获得菲尔兹奖——历史现场与典藏影像
 - id: cn-army-day-202608
   date: '2026-08-01'
   title: 庆祝建军99周年，新型国防科技成果集中发布
@@ -8530,3 +9388,6 @@
   tags:
     - 军事
     - 科技
+  image:
+    url: /images/events/2026/army_day_202608.jpg
+    caption: 庆祝建军99周年，新型国防科技成果集中发布——历史现场与典藏影像

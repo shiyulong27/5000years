@@ -10,26 +10,19 @@ function readYaml(relativePath) {
   return yaml.load(fs.readFileSync(path.join(ROOT, relativePath), 'utf8'))
 }
 
-describe('1949-2024 年 5 级（⭐⭐⭐⭐⭐ 历史转折）重大事件配图 100% 全覆盖强约束验证', () => {
-  const events = [
-    ...readYaml('data/events/xiandai.yaml'),
-    ...readYaml('data/world/modern.yaml'),
-  ]
+describe('全量近现代史事件配图 100% 全覆盖强约束验证', () => {
+  const xiandai = readYaml('data/events/xiandai.yaml')
+  const modern = readYaml('data/world/modern.yaml')
+  const allEvents = [...xiandai, ...modern]
 
-  const years = Array.from({ length: 76 }, (_, i) => String(1949 + i))
-  const major5StarEvents = events.filter((event) => {
-    const year = String(event.date).slice(0, 4)
-    return years.includes(year) && event.importance === 5
+  it('全库共有 1198 条近现代历史事件（中国史 569 条，世界史 629 条）', () => {
+    expect(allEvents.length).toBe(1198)
   })
 
-  it('1949-2024 年共有 511 条 5 级重大事件', () => {
-    expect(major5StarEvents.length).toBe(511)
-  })
-
-  it('所有 511 条 5 级重大事件必须 100% 配置图片、本地物理存在且具备非空图注', () => {
-    for (const event of major5StarEvents) {
+  it('所有 1198 条历史事件必须 100% 配置图片、本地物理存在且具备非空图注', () => {
+    for (const event of allEvents) {
       expect(event.image, `${event.id} 缺少 image 属性`).toBeTypeOf('object')
-      expect(event.image.url).toMatch(/^\/images\/events\/(?:19[4-9]\d|20\d{2})\/[a-zA-Z0-9_-]+\.(?:jpg|png|webp)$/)
+      expect(event.image.url).toMatch(/^\/images\/events\/[a-zA-Z0-9_-]+\/[a-zA-Z0-9_-]+\.(?:jpg|png|webp)$/)
       expect(event.image.caption.trim().length, `${event.id} 图注为空`).toBeGreaterThan(0)
 
       const imagePath = path.join(ROOT, 'public', event.image.url.replace(/^\//, ''))
