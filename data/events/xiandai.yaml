@@ -6435,6 +6435,60 @@
   confidence: 确定
   tags: [坦赞铁路, 对非援助, 基础设施, 外交]
   sources: [中华人民共和国外交部, 坦桑尼亚政府, Wikipedia—TAZARA Railway]
+- id: cn-south-yemen-diplomatic-196801
+  date: '1968-01-31'
+  title: 中国与南也门建立外交关系
+  category: 政治
+  importance: 3
+  summary: 中国同新独立的南也门人民共和国正式建立外交关系，拓展与阿拉伯半岛国家的联系。
+  confidence: 确定
+  tags: [外交, 南也门, 中东, 建交]
+  sources: [中华人民共和国外交部, 也门外交部, Wikipedia—China–Yemen relations]
+- id: cn-worker-team-tsinghua-196807
+  date: '1968-07-27'
+  title: 工人、解放军宣传队进驻清华大学
+  category: 政治
+  importance: 4
+  summary: 北京工人和解放军毛泽东思想宣传队进驻清华大学，制止校内武斗；此后宣传队陆续进入全国学校，改变“文化大革命”群众运动格局。
+  confidence: 确定
+  tags: [清华大学, 工宣队, 文化大革命, 教育]
+  sources: [清华大学校史馆, 中国共产党新闻网, Wikipedia—Worker-Peasant-Soldier students]
+- id: cn-revolutionary-committees-complete-196809
+  date: '1968-09-05'
+  title: 全国各省级革命委员会全部成立
+  category: 政治
+  importance: 4
+  summary: 西藏、新疆革命委员会相继成立后，全国29个省级地区均完成革命委员会组建，地方政权重组基本完成。
+  confidence: 确定
+  tags: [革命委员会, 文化大革命, 地方政权, 政治]
+  sources: [中国共产党新闻网, 新华社历史资料, Wikipedia—Revolutionary committee]
+- id: cn-liu-shaoqi-expelled-196810
+  date: '1968-10-31'
+  title: 中共八届十二中全会撤销刘少奇党内外职务
+  category: 政治
+  importance: 4
+  summary: 中共八届十二中全会通过决议，将刘少奇开除出党并撤销其党内外全部职务；该决定于1980年被撤销并为其平反。
+  confidence: 确定
+  tags: [刘少奇, 八届十二中全会, 文化大革命, 政治]
+  sources: [中国共产党新闻网, 新华社, Wikipedia—Liu Shaoqi]
+- id: cn-down-to-countryside-196812
+  date: '1968-12-22'
+  title: “知识青年上山下乡”运动全面展开
+  category: 政治
+  importance: 5
+  summary: 《人民日报》刊载毛泽东关于“知识青年到农村去”的指示，大规模城市知识青年随后被动员赴农村和边疆。
+  confidence: 确定
+  tags: [上山下乡, 知识青年, 农村, 文化大革命]
+  sources: [人民日报, 中国共产党新闻网, Wikipedia—Down to the Countryside Movement]
+- id: cn-nanjing-yangtze-bridge-196812
+  date: '1968-12-29'
+  title: 南京长江大桥全面建成通车
+  category: 经济
+  importance: 4
+  summary: 南京长江大桥公路桥正式通车，铁路桥此前于9月30日通车；这是中国自行设计和建造的大型双层铁路公路桥。
+  confidence: 确定
+  tags: [南京长江大桥, 基础设施, 交通, 工程]
+  sources: [中华人民共和国交通运输部, 新华社, Wikipedia—Nanjing Yangtze River Bridge]
 - id: cn-us-diplomatic-relations-197901
   date: '1979-01-01'
   title: 中美正式建立外交关系

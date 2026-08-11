@@ -7185,3 +7185,93 @@
   confidence: 确定
   tags: [医学, 心脏移植, 南非, 科技]
   sources: [南非医学研究委员会, Encyclopaedia Britannica, Wikipedia—Heart transplantation]
+- id: w-dubcek-first-secretary-196801
+  date: '1968-01-05'
+  title: 杜布切克当选捷克斯洛伐克共产党第一书记
+  category: 政治
+  importance: 4
+  summary: 亚历山大·杜布切克取代诺沃提尼出任捷共第一书记，随后推动“有人性面孔的社会主义”改革，布拉格之春开始。
+  confidence: 确定
+  tags: [布拉格之春, 捷克斯洛伐克, 改革, 冷战]
+  sources: [捷克国家档案馆, Encyclopaedia Britannica, Wikipedia—Prague Spring]
+- id: w-tet-offensive-196801
+  date: '1968-01-30'
+  title: 越南战争春节攻势
+  category: 战争
+  importance: 5
+  summary: 北越和越共部队在南越多地发动春节攻势，虽遭军事反击，但显著改变美国公众对战争的看法。
+  confidence: 确定
+  tags: [越南战争, 春节攻势, 美国, 冷战]
+  sources: [美国国防部, Encyclopaedia Britannica, Wikipedia—Tet Offensive]
+- id: w-mlk-assassination-196804
+  date: '1968-04-04'
+  title: 马丁·路德·金遇刺
+  category: 政治
+  importance: 5
+  summary: 美国民权领袖马丁·路德·金在田纳西州孟菲斯遇刺身亡，引发全国哀悼与多地骚乱。
+  confidence: 确定
+  tags: [美国, 民权运动, 马丁路德金, 刺杀]
+  sources: [美国国家档案和记录管理局, FBI档案, Wikipedia—Assassination of Martin Luther King Jr.]
+- id: w-may-68-196805
+  date: '1968-05-03'
+  title: 法国“五月风暴”学生抗议升级
+  category: 政治
+  importance: 4
+  summary: 巴黎索邦大学学生抗议与警方冲突，运动随后扩展为全国性罢工和政治危机。
+  confidence: 确定
+  tags: [法国, 五月风暴, 学生运动, 罢工]
+  sources: [法国国家档案馆, Encyclopaedia Britannica, Wikipedia—May 68]
+- id: w-robert-kennedy-assassination-196806
+  date: '1968-06-05'
+  title: 罗伯特·肯尼迪遇刺
+  category: 政治
+  importance: 4
+  summary: 美国参议员、总统候选人罗伯特·肯尼迪在洛杉矶遭枪击，次日去世，对1968年美国大选产生重大影响。
+  confidence: 确定
+  tags: [美国, 罗伯特肯尼迪, 刺杀, 选举]
+  sources: [美国国家档案和记录管理局, FBI档案, Wikipedia—Assassination of Robert F. Kennedy]
+- id: w-npt-open-signature-196807
+  date: '1968-07-01'
+  title: 《不扩散核武器条约》开放签署
+  category: 政治
+  importance: 4
+  summary: 《不扩散核武器条约》在伦敦、莫斯科和华盛顿开放签署，确立核不扩散、和平利用核能和推进裁军的国际框架。
+  confidence: 确定
+  tags: [核不扩散, 国际条约, 军控, 联合国]
+  sources: [联合国条约集, 国际原子能机构, Wikipedia—Treaty on the Non-Proliferation of Nuclear Weapons]
+- id: w-warsaw-pact-invasion-czechoslovakia-196808
+  date: '1968-08-20'
+  title: 华沙条约组织军队入侵捷克斯洛伐克
+  category: 战争
+  importance: 5
+  summary: 苏联等华约国家军队进入捷克斯洛伐克，终止布拉格之春改革并引发国际谴责。
+  confidence: 确定
+  tags: [捷克斯洛伐克, 华约, 苏联, 布拉格之春]
+  sources: [北约, Encyclopaedia Britannica, Wikipedia—Warsaw Pact invasion of Czechoslovakia]
+- id: w-tlatelolco-massacre-196810
+  date: '1968-10-02'
+  title: 墨西哥特拉特洛尔科大屠杀
+  category: 政治
+  importance: 4
+  summary: 墨西哥军警在特拉特洛尔科广场向学生示威者开火并实施逮捕，死亡人数至今存在争议。
+  confidence: 确定
+  tags: [墨西哥, 学生运动, 镇压, 人权]
+  sources: [墨西哥国家人权委员会, Encyclopaedia Britannica, Wikipedia—Tlatelolco massacre]
+- id: w-nixon-election-196811
+  date: '1968-11-05'
+  title: 尼克松赢得美国总统选举
+  category: 政治
+  importance: 4
+  summary: 共和党候选人理查德·尼克松击败休伯特·汉弗莱和乔治·华莱士，当选美国总统。
+  confidence: 确定
+  tags: [美国, 总统选举, 尼克松, 政治]
+  sources: [美国国家档案和记录管理局, Encyclopaedia Britannica, Wikipedia—1968 United States presidential election]
+- id: w-apollo-8-moon-orbit-196812
+  date: '1968-12-24'
+  title: 阿波罗8号实现首次载人绕月飞行
+  category: 文化
+  importance: 5
+  summary: 阿波罗8号宇航员进入月球轨道，成为首批飞离近地轨道并环绕月球的人类，为阿波罗11号登月奠定基础。
+  confidence: 确定
+  tags: [航天, 月球, NASA, 科技]
+  sources: [NASA, Smithsonian National Air and Space Museum, Wikipedia—Apollo 8]
