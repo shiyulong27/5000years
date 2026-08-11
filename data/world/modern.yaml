@@ -6915,3 +6915,93 @@
   confidence: 确定
   tags: [航天, 登月, NASA, 科技]
   sources: [NASA, Smithsonian National Air and Space Museum, Wikipedia—Apollo 12]
+- id: w-malcolm-x-assassination-196502
+  date: '1965-02-21'
+  title: 马尔科姆·X遇刺
+  category: 政治
+  importance: 4
+  summary: 美国非裔民权活动家马尔科姆·X在纽约演讲时遭枪击身亡，其思想和遇刺长期影响美国民权运动。
+  confidence: 确定
+  tags: [美国, 民权运动, 马尔科姆X, 刺杀]
+  sources: [美国联邦调查局档案, Encyclopaedia Britannica, Wikipedia—Assassination of Malcolm X]
+- id: w-us-ground-troops-vietnam-196503
+  date: '1965-03-08'
+  title: 美国首批地面作战部队登陆南越
+  category: 战争
+  importance: 5
+  summary: 美国海军陆战队在岘港登陆，标志美国在越南战争中从军事顾问和空袭进一步升级为大规模地面作战。
+  confidence: 确定
+  tags: [越南战争, 美国, 岘港, 冷战]
+  sources: [美国国防部, 美国国务院历史办公室, Wikipedia—United States Marine Corps in Vietnam]
+- id: w-first-spacewalk-196503
+  date: '1965-03-18'
+  title: 人类首次太空行走
+  category: 文化
+  importance: 4
+  summary: 苏联宇航员阿列克谢·列昂诺夫执行上升2号任务时离开飞船，在舱外活动约12分钟，完成人类首次太空行走。
+  confidence: 确定
+  tags: [航天, 太空行走, 苏联, 科技]
+  sources: [Roscosmos, 欧洲航天局, Wikipedia—Voskhod 2]
+- id: w-dominican-civil-war-196504
+  date: '1965-04-24'
+  title: 多米尼加内战爆发
+  category: 战争
+  importance: 4
+  summary: 多米尼加共和国军人和民众发动起义，要求恢复博什政府，冲突迅速演变为内战并引来美国军事干预。
+  confidence: 确定
+  tags: [多米尼加, 内战, 拉丁美洲, 冷战]
+  sources: [美洲国家组织, Encyclopaedia Britannica, Wikipedia—Dominican Civil War]
+- id: w-voting-rights-act-196508
+  date: '1965-08-06'
+  title: 美国《投票权法》签署
+  category: 政治
+  importance: 5
+  summary: 美国总统约翰逊签署《投票权法》，禁止以识字测试等方式限制少数族裔投票，成为民权立法里程碑。
+  confidence: 确定
+  tags: [美国, 民权, 投票权, 法律]
+  sources: [美国国家档案和记录管理局, 美国司法部, Wikipedia—Voting Rights Act of 1965]
+- id: w-singapore-independence-196508
+  date: '1965-08-09'
+  title: 新加坡脱离马来西亚独立
+  category: 政治
+  importance: 5
+  summary: 新加坡退出马来西亚联邦并成为独立国家，李光耀任总理，随后展开出口导向型国家建设。
+  confidence: 确定
+  tags: [新加坡, 独立, 东南亚, 建国]
+  sources: [新加坡国家档案馆, Encyclopaedia Britannica, Wikipedia—Independence of Singapore Agreement 1965]
+- id: w-indo-pakistani-war-196509
+  date: '1965-09-06'
+  title: 第二次印巴战争全面升级
+  category: 战争
+  importance: 4
+  summary: 印度军队越过国际边界向拉合尔方向进攻，克什米尔冲突演变为印度和巴基斯坦之间的全面战争。
+  confidence: 确定
+  tags: [印度, 巴基斯坦, 克什米尔, 战争]
+  sources: [联合国安理会, Encyclopaedia Britannica, Wikipedia—Indo-Pakistani War of 1965]
+- id: w-indonesia-september-movement-196509
+  date: '1965-09-30'
+  title: 印度尼西亚“九三〇事件”
+  category: 政治
+  importance: 4
+  summary: 印度尼西亚发生未遂政变，多名高级将领被杀；军方随后在苏哈托领导下镇压共产党及其支持者，造成大规模死亡。
+  confidence: 确定
+  tags: [印度尼西亚, 政变, 苏哈托, 冷战]
+  sources: [印度尼西亚国家档案馆, Encyclopaedia Britannica, Wikipedia—30 September Movement]
+- id: w-rhodesia-udi-196511
+  date: '1965-11-11'
+  title: 南罗得西亚单方面宣布独立
+  category: 政治
+  importance: 4
+  summary: 伊恩·史密斯白人少数政府单方面宣布脱离英国独立，英国和联合国不予承认并实施制裁。
+  confidence: 确定
+  tags: [罗得西亚, 去殖民化, 非洲, 制裁]
+  sources: [英国国家档案馆, 联合国, Wikipedia—Rhodesia's Unilateral Declaration of Independence]
+- id: w-vatican-ii-closes-196512
+  date: '1965-12-08'
+  title: 第二次梵蒂冈大公会议闭幕
+  category: 文化
+  importance: 4
+  summary: 第二次梵蒂冈大公会议闭幕，会议通过礼仪、教会与现代世界关系等改革文件，深刻影响天主教会。
+  confidence: 确定
+  tags: [梵蒂冈, 天主教, 宗教改革, 文化]
+  sources: [梵蒂冈档案, Encyclopaedia Britannica, Wikipedia—Second Vatican Council]

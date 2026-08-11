@@ -6273,6 +6273,60 @@
   confidence: 确定
   tags: [刘少奇, 文化大革命, 政治, 历史人物]
   sources: [中国共产党新闻网, 新华社, Wikipedia—Liu Shaoqi]
+- id: cn-four-modernizations-196501
+  date: '1965-01-04'
+  title: 第三届全国人大一次会议提出“四个现代化”
+  category: 政治
+  importance: 5
+  summary: 三届全国人大一次会议闭幕，周恩来在政府工作报告中提出建设现代农业、工业、国防和科学技术的社会主义强国。
+  confidence: 确定
+  tags: [四个现代化, 全国人大, 周恩来, 国家发展]
+  sources: [中国人大网, 新华社, Wikipedia—Four Modernizations]
+- id: cn-second-atomic-test-196505
+  date: '1965-05-14'
+  title: 中国第二次原子弹试验成功
+  category: 战争
+  importance: 4
+  summary: 中国在新疆罗布泊成功进行第二次核试验，采用空投方式引爆，提高了核武器投送和实战化技术能力。
+  confidence: 确定
+  tags: [核试验, 国防科技, 罗布泊, 军事]
+  sources: [中国工程物理研究院, 新华社, Wikipedia—Nuclear weapons tests of China]
+- id: cn-mauritania-diplomatic-196507
+  date: '1965-07-19'
+  title: 中国与毛里塔尼亚建立外交关系
+  category: 政治
+  importance: 3
+  summary: 中国与毛里塔尼亚正式建立外交关系，进一步拓展中国同非洲新独立国家的联系。
+  confidence: 确定
+  tags: [外交, 毛里塔尼亚, 非洲, 建交]
+  sources: [中华人民共和国外交部, 毛里塔尼亚外交部, Wikipedia—China–Mauritania relations]
+- id: cn-tibet-autonomous-region-196509
+  date: '1965-09-09'
+  title: 西藏自治区成立
+  category: 政治
+  importance: 5
+  summary: 西藏自治区第一届人民代表大会在拉萨召开，西藏自治区正式成立，阿沛·阿旺晋美当选自治区人民委员会主席。
+  confidence: 确定
+  tags: [西藏, 民族自治, 行政区划, 政治]
+  sources: [西藏自治区人民政府, 新华社, Wikipedia—Tibet Autonomous Region]
+- id: cn-insulin-synthesis-196509
+  date: '1965-09-17'
+  title: 中国首次人工合成结晶牛胰岛素
+  category: 文化
+  importance: 4
+  summary: 中国科研团队完成具有生物活性的结晶牛胰岛素全合成，这是世界上首次人工合成蛋白质的重要成果。
+  confidence: 确定
+  tags: [胰岛素, 生物化学, 科技, 医学]
+  sources: [中国科学院, 上海生物化学与细胞生物学研究所, Wikipedia—Total synthesis of insulin]
+- id: cn-hai-rui-dismissed-196511
+  date: '1965-11-10'
+  title: 姚文元发表《评新编历史剧〈海瑞罢官〉》
+  category: 政治
+  importance: 4
+  summary: 上海《文汇报》刊登姚文元文章，批判吴晗历史剧《海瑞罢官》，此事通常被视为“文化大革命”政治运动的直接前奏。
+  confidence: 确定
+  tags: [文化大革命, 海瑞罢官, 政治运动, 文汇报]
+  sources: [中国共产党新闻网, 新华社历史资料, Wikipedia—Hai Rui Dismissed from Office]
 - id: cn-us-diplomatic-relations-197901
   date: '1979-01-01'
   title: 中美正式建立外交关系
