@@ -4,6 +4,7 @@ dist/
 .astro/
 .DS_Store
 .shots/
+.worktrees/
 
 # 临时诊断脚本
 scripts/_*
