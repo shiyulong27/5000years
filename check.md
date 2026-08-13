@@ -2111,6 +2111,38 @@
 - 验证：`npm run validate` 通过；`npm test -- test/2020-2024-event-images.test.js test/1948-events.test.js` 通过（2 个测试文件、5 项测试）。
 - 全量测试：`npm test` 已实际执行；1948 配图、全局配图审计及其余 134 项断言通过。另有 4 项 `test/xia-content.test.js` 失败，原因是夏朝的新增事件、人物、三项图片和帝王表标签尚未实现；这些文件不在本次 1948 配图修改范围内。
 
+## 1945-1947 年五星事件配图审查（2026-08-13）
+
+- 审查范围：`data/events/minguo.yaml` 与 `data/world/modern.yaml` 中 1945、1946、1947 年 `importance: 5` 事件；仅处理配图与配图元数据，不修改事件日期、标题、摘要、分类、重要性和来源字段。
+- 修改前：1945-1947 年 22 条五星事件均无配图。修改后：20 条五星事件新增配图；2 条因未找到合格可复用图源保持无图。
+- 图片处理：全部新增文件保存到 `public/images/events/1945/`、`public/images/events/1946/`、`public/images/events/1947/`；来源以 Wikimedia Commons 文件页为准，记录原始文件页、作者/机构和许可。对部分过大的 JPG 仅做常规尺寸压缩，不做生成式补绘、上色或内容修改。
+
+| 事件 ID | Commons 文件页 | 作者/机构 | 许可 | 图注边界 |
+|---|---|---|---|---|
+| `victory-over-japan-1945` | [Surrender of Japan - USS Missouri (restored).jpg](https://commons.wikimedia.org/wiki/File:Surrender_of_Japan_-_USS_Missouri_(restored).jpg) | Army Signal Corps | Public domain | 1945年9月2日日本签署投降书现场，用于同日中国抗战胜利事件 |
+| `cn-cpc-seventh-congress-194504` | [Kang Seng Mao Zedong in Yan'an.jpg](https://commons.wikimedia.org/wiki/File:Kang_Seng_Mao_Zedong_in_Yan%27an.jpg) | Unknown author | Public domain | 延安时期人物背景资料，明确非七大会场现场 |
+| `cn-chongqing-negotiations-194508` | [Mao Zedong leaving Yan'an to Chongqing.jpg](https://commons.wikimedia.org/wiki/File:Mao_Zedong_leaving_Yan%27an_to_Chongqing.jpg) | Unknown author | Public domain | 毛泽东离开延安赴重庆谈判 |
+| `cn-taiwan-retrocession-194510` | [Retrocession day 1945.jpg](https://commons.wikimedia.org/wiki/File:Retrocession_day_1945.jpg) | Unknown author | Public domain | 台湾省受降仪式现场 |
+| `cn-full-civil-war-194606` | [Civil war 1946.jpg](https://commons.wikimedia.org/wiki/File:Civil_war_1946.jpg) | Unknown author | Public domain | 1946年内战相关影像，作为全面内战爆发阶段背景 |
+| `cn-feb28-incident-194702` | [228 Incident h.jpg](https://commons.wikimedia.org/wiki/File:228_Incident_h.jpg) | Unknown author | Public domain | 二二八事件相关现场影像资料 |
+| `cn-liu-deng-dabie-mountains-194706` | [全国大反攻形势略图03576.jpg](https://commons.wikimedia.org/wiki/File:%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%8F%8D%E6%94%BB%E5%BD%A2%E5%8A%BF%E7%95%A5%E5%9B%BE03576.jpg) | Unknown author | Public domain | 全国大反攻形势图，明确非作战现场照片 |
+| `w-un-1945` | [Aklilu Habte-Wold signing UN Charter.jpg](https://commons.wikimedia.org/wiki/File:Aklilu_Habte-Wold_signing_UN_Charter.jpg) | Unknown - UN seal insignia | Public domain | 联合国宪章签署背景，明确非10月24日生效现场 |
+| `w-yalta-conference-194502` | [Yalta summit 1945 with Churchill, Roosevelt, Stalin.jpg](https://commons.wikimedia.org/wiki/File:Yalta_summit_1945_with_Churchill,_Roosevelt,_Stalin.jpg) | U.S. Army Signal Corps Collection, National Archives | Public domain | 雅尔塔会议三国领导人合影 |
+| `w-germany-surrenders-194505` | [German Instrument of Surrender (May 8, 1945) - page 3.jpg](https://commons.wikimedia.org/wiki/File:German_Instrument_of_Surrender_(May_8,_1945)_-_page_3.jpg) | Joint Chiefs of Staff | Public domain | 德国无条件投降书签署页 |
+| `w-atomic-bombings-194508` | [Atomic cloud over Hiroshima.jpg](https://commons.wikimedia.org/wiki/File:Atomic_cloud_over_Hiroshima.jpg) | George R. Caron | Public domain | 广岛原子弹爆炸后的蘑菇云 |
+| `w-japan-surrenders-194509` | [Mamoru Shigemitsu signs the Instrument of Surrender](https://commons.wikimedia.org/wiki/File:Mamoru_Shigemitsu_signs_the_Instrument_of_Surrender,_officially_ending_the_Second_World_War.jpg) | LT. Stephen E. Korpanty; restored by Adam Cuerden | Public domain | 重光葵签署日本投降书现场 |
+| `w-bretton-woods-institutions-194512` | [International Monetary Fund formed 1945](https://commons.wikimedia.org/wiki/File:International_Monetary_Fund_formed_1945_(15839176617).jpg) | Archives New Zealand | CC BY-SA 2.0 | IMF 成立相关档案影像，作为布雷顿森林机构背景 |
+| `w-un-general-assembly-first-194601` | [UN-General assembly 1946-3c.jpg](https://commons.wikimedia.org/wiki/File:UN-General_assembly_1946-3c.jpg) | United Nations Postal Administration | Public domain | 联合国大会纪念邮票，明确非会议现场照片 |
+| `w-iron-curtain-speech-194603` | [1946-03-05 Sinews of Peace Speech.png](https://commons.wikimedia.org/wiki/File:1946-03-05_Sinews_of_Peace_Speech.png) | Unknown author | Public domain | 铁幕演说相关资料图 |
+| `w-nuremberg-verdicts-194610` | [Defendants in the dock at the Nuremberg Trials.jpg](https://commons.wikimedia.org/wiki/File:Defendants_in_the_dock_at_the_Nuremberg_Trials.jpg) | United States Army | Public domain | 纽伦堡审判被告席，作为判决阶段现场背景 |
+| `w-truman-doctrine-194703` | [Truman Doctrine, 03-12-1947, Page 1](https://commons.wikimedia.org/wiki/File:Truman_Doctrine,_03-12-1947,_Page_1_(5476286491).jpg) | The U.S. National Archives | Public domain | 杜鲁门主义国会特别咨文第一页 |
+| `w-marshall-plan-speech-194706` | [General George C. Marshall, official military photo, 1946](https://commons.wikimedia.org/wiki/File:General_George_C._Marshall,_official_military_photo,_1946_(cropped)(c).JPEG) | Unknown author | Public domain | 马歇尔人物背景，明确非哈佛演说现场 |
+| `w-india-pakistan-independence-194708` | [Mountbatten swears in Jawaharlal Nehru](https://commons.wikimedia.org/wiki/File:Lord_Mountbatten_swears_in_Jawaharlal_Nehru_as_the_first_Prime_Minister_of_free_India_on_Aug_15,_1947.jpg) | Photo Division, Government of India | Public domain | 印度独立阶段现场，明确非巴基斯坦独立现场 |
+| `w-un-palestine-partition-194711` | [UN Palestine Partition Versions 1947.jpg](https://commons.wikimedia.org/wiki/File:UN_Palestine_Partition_Versions_1947.jpg) | Zero0000; based on UN Resolution 181 material | Public domain | 巴勒斯坦分治方案地图版本示意 |
+
+- 暂无合格配图：`cn-land-law-outline-194710`、`w-gatt-signed-194710`。检索结果主要为后年土地改革法资料、现代机构外景、PDF/法规文本或与签署现场关联较弱的背景图，为避免误导，保持无图并记录。
+- 验证：`npm run validate` 通过；脚本检查 1945-1947 年所有已引用图片文件均存在且大于 1 KiB；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。未加超时参数直接运行该全局配图审计时曾因默认 5 秒上限超时失败，未出现断言失败。
+
 ## 1947 年事件补全审查（2026-08-13）
 
 - 审查范围：1947 年中国事件 5 条、世界事件 6 条；其中五级 7 条、四级 4 条。

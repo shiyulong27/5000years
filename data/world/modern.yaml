@@ -68,6 +68,12 @@
   sources:
     - United Nations
     - 英文维基百科
+  image:
+    url: /images/events/1945/w-un-1945.jpg
+    caption: 联合国宪章签署场景，作为联合国成立的制度背景资料；非1945年10月24日宪章生效现场
+    source: https://commons.wikimedia.org/wiki/File:Aklilu_Habte-Wold_signing_UN_Charter.jpg
+    author: Unknown - UN seal insignia (top right)
+    license: Public domain
 
 - id: w-yalta-conference-194502
   date: '1945-02-04'
@@ -83,6 +89,12 @@
   sources:
     - 美国国务院历史办公室
     - 英文维基百科
+  image:
+    url: /images/events/1945/w-yalta-conference-194502.jpg
+    caption: 1945年2月雅尔塔会议期间，丘吉尔、罗斯福、斯大林合影
+    source: https://commons.wikimedia.org/wiki/File:Yalta_summit_1945_with_Churchill,_Roosevelt,_Stalin.jpg
+    author: U.S. Army Signal Corps Collection, National Archives
+    license: Public domain
 
 - id: w-germany-surrenders-194505
   date: '1945-05-08'
@@ -98,6 +110,12 @@
   sources:
     - National WWII Museum
     - 英文维基百科
+  image:
+    url: /images/events/1945/w-germany-surrenders-194505.jpg
+    caption: 1945年5月8日德国无条件投降书签署页
+    source: https://commons.wikimedia.org/wiki/File:German_Instrument_of_Surrender_(May_8,_1945)_-_page_3.jpg
+    author: Joint Chiefs of Staff
+    license: Public domain
 
 - id: w-atomic-bombings-194508
   date: '1945-08-06'
@@ -113,6 +131,12 @@
   sources:
     - National WWII Museum
     - 英文维基百科
+  image:
+    url: /images/events/1945/w-atomic-bombings-194508.jpg
+    caption: 1945年8月6日广岛原子弹爆炸后的蘑菇云
+    source: https://commons.wikimedia.org/wiki/File:Atomic_cloud_over_Hiroshima.jpg
+    author: George R. Caron
+    license: Public domain
 
 - id: w-japan-surrenders-194509
   date: '1945-09-02'
@@ -128,6 +152,12 @@
   sources:
     - 美国国家档案馆
     - 英文维基百科
+  image:
+    url: /images/events/1945/w-japan-surrenders-194509.jpg
+    caption: 1945年9月2日，重光葵在密苏里号上签署日本投降书
+    source: https://commons.wikimedia.org/wiki/File:Mamoru_Shigemitsu_signs_the_Instrument_of_Surrender,_officially_ending_the_Second_World_War.jpg
+    author: LT. Stephen E. Korpanty, Army Signal Corps; restored by Adam Cuerden
+    license: Public domain
 
 - id: w-bretton-woods-institutions-194512
   date: '1945-12-27'
@@ -144,6 +174,12 @@
     - IMF
     - World Bank
     - 英文维基百科
+  image:
+    url: /images/events/1945/w-bretton-woods-institutions-194512.jpg
+    caption: 1945年国际货币基金组织成立相关档案影像，作为布雷顿森林机构生效背景资料
+    source: https://commons.wikimedia.org/wiki/File:International_Monetary_Fund_formed_1945_(15839176617).jpg
+    author: Archives New Zealand
+    license: CC BY-SA 2.0
 - id: w-nato-founded-194904
   date: '1949-04-04'
   title: 《北大西洋公约》签署，北大西洋公约组织（NATO）成立
@@ -10396,6 +10432,12 @@
     - Truman Library
     - 美国国家档案馆
     - 美国国务院历史办公室
+  image:
+    url: /images/events/1947/w-truman-doctrine-194703.jpg
+    caption: 1947年3月12日杜鲁门主义国会特别咨文第一页
+    source: https://commons.wikimedia.org/wiki/File:Truman_Doctrine,_03-12-1947,_Page_1_(5476286491).jpg
+    author: The U.S. National Archives
+    license: Public domain
 
 - id: w-marshall-plan-speech-194706
   date: '1947-06-05'
@@ -10412,6 +10454,12 @@
     - Marshall Foundation
     - OECD
     - Truman Library
+  image:
+    url: /images/events/1947/w-marshall-plan-speech-194706.jpg
+    caption: 乔治·马歇尔1946年官方军装肖像，作为1947年哈佛演说提出马歇尔计划的人物背景资料；非演说现场照片
+    source: https://commons.wikimedia.org/wiki/File:General_George_C._Marshall,_official_military_photo,_1946_(cropped)(c).JPEG
+    author: Unknown author
+    license: Public domain
 
 - id: w-india-pakistan-independence-194708
   date: '1947-08-15'
@@ -10427,6 +10475,12 @@
   sources:
     - 英国议会
     - 英文维基百科
+  image:
+    url: /images/events/1947/w-india-pakistan-independence-194708.jpg
+    caption: 1947年8月15日，蒙巴顿主持尼赫鲁宣誓就任印度首任总理；用于印巴分治与独立事件中的印度独立阶段，非巴基斯坦独立现场
+    source: https://commons.wikimedia.org/wiki/File:Lord_Mountbatten_swears_in_Jawaharlal_Nehru_as_the_first_Prime_Minister_of_free_India_on_Aug_15,_1947.jpg
+    author: Photo Division, Government of India
+    license: Public domain
 
 - id: w-gatt-signed-194710
   date: '1947-10-30'
@@ -10457,6 +10511,12 @@
   sources:
     - United Nations
     - 英文维基百科
+  image:
+    url: /images/events/1947/w-un-palestine-partition-194711.jpg
+    caption: 1947年联合国巴勒斯坦分治方案地图版本示意
+    source: https://commons.wikimedia.org/wiki/File:UN_Palestine_Partition_Versions_1947.jpg
+    author: Zero0000; based on UN General Assembly Resolution 181 material
+    license: Public domain
 
 - id: w-who-founded-194804
   date: '1948-04-07'
@@ -10613,6 +10673,12 @@
   sources:
     - United Nations
     - 英文维基百科
+  image:
+    url: /images/events/1946/w-un-general-assembly-first-194601.jpg
+    caption: 1946年联合国大会纪念邮票图像，作为第一届联合国大会的同时代资料；非会议现场照片
+    source: https://commons.wikimedia.org/wiki/File:UN-General_assembly_1946-3c.jpg
+    author: United Nations Postal Administration
+    license: Public domain
 
 - id: w-eniac-announced-194602
   date: '1946-02-14'
@@ -10644,6 +10710,12 @@
   sources:
     - 美国国务院历史办公室
     - 英文维基百科
+  image:
+    url: /images/events/1946/w-iron-curtain-speech-194603.png
+    caption: 1946年3月5日丘吉尔“铁幕演说”相关资料图
+    source: https://commons.wikimedia.org/wiki/File:1946-03-05_Sinews_of_Peace_Speech.png
+    author: Unknown author
+    license: Public domain
 
 - id: w-italy-republic-194606
   date: '1946-06-02'
@@ -10690,6 +10762,12 @@
   sources:
     - United States Holocaust Memorial Museum
     - 英文维基百科
+  image:
+    url: /images/events/1946/w-nuremberg-verdicts-194610.jpg
+    caption: 纽伦堡审判被告席照片，作为1946年判决阶段的审判现场背景资料
+    source: https://commons.wikimedia.org/wiki/File:Defendants_in_the_dock_at_the_Nuremberg_Trials.jpg
+    author: United States Army
+    license: Public domain
 
 - id: w-unicef-founded-194612
   date: '1946-12-11'

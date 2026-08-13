@@ -77,6 +77,12 @@
     - 新华网
     - 中国共产党新闻网
     - 英文维基百科
+  image:
+    url: /images/events/1945/victory-over-japan-1945.jpg
+    caption: 1945年9月2日，日本代表在密苏里号上签署投降书；用于中国抗日战争胜利事件的同日场景
+    source: https://commons.wikimedia.org/wiki/File:Surrender_of_Japan_-_USS_Missouri_(restored).jpg
+    author: Army Signal Corps
+    license: Public domain
 
 - id: cn-cpc-seventh-congress-194504
   date: '1945-04-23'
@@ -92,6 +98,12 @@
   sources:
     - 中国共产党新闻网
     - 中文维基百科
+  image:
+    url: /images/events/1945/cn-cpc-seventh-congress-194504.jpg
+    caption: 延安时期毛泽东与康生合影，作为中共七大召开地和领导层背景资料；非七大会场现场照片
+    source: https://commons.wikimedia.org/wiki/File:Kang_Seng_Mao_Zedong_in_Yan%27an.jpg
+    author: Unknown author
+    license: Public domain
 
 - id: cn-chongqing-negotiations-194508
   date: '1945-08-28'
@@ -107,6 +119,12 @@
   sources:
     - 中国共产党新闻网
     - 中文维基百科
+  image:
+    url: /images/events/1945/cn-chongqing-negotiations-194508.jpg
+    caption: 1945年8月，毛泽东离开延安赴重庆参加国共谈判
+    source: https://commons.wikimedia.org/wiki/File:Mao_Zedong_leaving_Yan%27an_to_Chongqing.jpg
+    author: Unknown author
+    license: Public domain
 
 - id: cn-taiwan-retrocession-194510
   date: '1945-10-25'
@@ -122,6 +140,12 @@
   sources:
     - 新华网
     - 中文维基百科
+  image:
+    url: /images/events/1945/cn-taiwan-retrocession-194510.jpg
+    caption: 1945年10月25日，中国战区台湾省受降仪式现场
+    source: https://commons.wikimedia.org/wiki/File:Retrocession_day_1945.jpg
+    author: Unknown author
+    license: Public domain
 
 - id: cn-feb28-incident-194702
   date: '1947-02-28'
@@ -137,6 +161,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
+  image:
+    url: /images/events/1947/cn-feb28-incident-194702.jpg
+    caption: 二二八事件相关现场影像资料
+    source: https://commons.wikimedia.org/wiki/File:228_Incident_h.jpg
+    author: Unknown author
+    license: Public domain
 
 - id: cn-inner-mongolia-autonomous-government-194705
   date: '1947-05-01'
@@ -168,6 +198,12 @@
   sources:
     - 共产党员网
     - 中文维基百科
+  image:
+    url: /images/events/1947/cn-liu-deng-dabie-mountains-194706.jpg
+    caption: 解放战争全国大反攻形势略图，作为刘邓大军跃进大别山战略转折的形势背景图；非作战现场照片
+    source: https://commons.wikimedia.org/wiki/File:%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%8F%8D%E6%94%BB%E5%BD%A2%E5%8A%BF%E7%95%A5%E5%9B%BE03576.jpg
+    author: Unknown author
+    license: Public domain
 
 - id: cn-land-law-outline-194710
   date: '1947-10-10'
@@ -364,6 +400,12 @@
   sources:
     - 中国共产党新闻网
     - 中文维基百科
+  image:
+    url: /images/events/1946/cn-full-civil-war-194606.jpg
+    caption: 1946年国共内战相关影像，作为全面内战爆发阶段的战事背景资料
+    source: https://commons.wikimedia.org/wiki/File:Civil_war_1946.jpg
+    author: Unknown author
+    license: Public domain
 
 - id: cn-constitution-adopted-194612
   date: '1946-12-25'
