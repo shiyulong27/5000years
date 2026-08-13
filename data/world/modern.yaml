@@ -55,6 +55,204 @@
   summary: 德国入侵波兰，二战全面爆发，战火遍及全球，造成空前伤亡。
   confidence: 确定
 
+- id: w-declaration-united-nations-194201
+  date: '1942-01-01'
+  title: 《联合国家宣言》签署
+  category: 政治
+  importance: 5
+  summary: 26 个反轴心国国家在华盛顿签署《联合国家宣言》，承诺共同对轴心国作战并不单独媾和，“United Nations”一词首次在官方国际文件中使用，为战时同盟和战后联合国奠定政治基础。
+  confidence: 确定
+  tags:
+    - 联合国家宣言
+    - 反法西斯同盟
+    - 联合国
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+    - United Nations
+  image:
+    url: /images/events/1942/w-declaration-united-nations-194201.jpg
+    caption: 1942年1月1日，各国代表在华盛顿签署《联合国家宣言》
+    source: https://commons.wikimedia.org/wiki/File:Signing_Declaration_by_United_Nations.jpg
+    author: Unknown photographer
+    license: Public domain
+
+- id: w-singapore-falls-194202
+  date: '1942-02-15'
+  title: 新加坡沦陷
+  category: 战争
+  importance: 4
+  summary: 英军在新加坡向日军投降，英国在东南亚的殖民军事体系遭受重大打击，日本迅速控制马来亚和新加坡，太平洋战争初期战略态势急剧变化。
+  confidence: 确定
+  tags:
+    - 新加坡战役
+    - 太平洋战争
+    - 英日战争
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-bataan-death-march-194204
+  date: '1942-04-09'
+  title: 巴丹死亡行军开始
+  category: 战争
+  importance: 4
+  summary: 菲律宾巴丹半岛美菲守军投降后，日军强迫数万名战俘和菲律宾平民长距离行军，造成大量死亡，成为太平洋战争中严重战争罪行之一。
+  confidence: 确定
+  tags:
+    - 巴丹死亡行军
+    - 菲律宾战役
+    - 战争罪行
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-doolittle-raid-194204
+  date: '1942-04-18'
+  title: 杜立特空袭日本本土
+  category: 战争
+  importance: 4
+  summary: 美国陆军航空队轰炸机从航空母舰起飞空袭东京等日本城市，军事破坏有限，但显著提振美国士气，并促使日本加快寻求中途岛决战。
+  confidence: 确定
+  tags:
+    - 杜立特空袭
+    - 太平洋战争
+    - 东京
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-coral-sea-battle-194205
+  date: '1942-05-04'
+  title: 珊瑚海海战爆发
+  category: 战争
+  importance: 4
+  summary: 美日航母编队在珊瑚海交战，双方舰队未直接目视交火。战役阻止日军海上进攻莫尔兹比港，是太平洋战争中航母作战形态的重要节点。
+  confidence: 确定
+  tags:
+    - 珊瑚海海战
+    - 航空母舰
+    - 太平洋战争
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-battle-midway-194206
+  date: '1942-06-04'
+  title: 中途岛海战爆发
+  category: 战争
+  importance: 5
+  summary: 美军在中途岛海域击沉日本四艘主力航空母舰，重创日本海军机动部队，太平洋战争战略主动权开始由日本转向美国。
+  confidence: 确定
+  tags:
+    - 中途岛海战
+    - 太平洋战争
+    - 二战转折
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+  image:
+    url: /images/events/1942/w-battle-midway-194206.jpg
+    caption: 1942年6月4日中途岛海战期间，日军空袭后桑德岛油罐燃烧
+    source: https://commons.wikimedia.org/wiki/File:Battle_of_Midway_(Japanese_air_raid).jpg
+    author: US Navy
+    license: Public domain
+
+- id: w-manhattan-project-194208
+  date: '1942-08-13'
+  title: 曼哈顿计划正式启动
+  category: 文化
+  importance: 5
+  summary: 美国建立曼哈顿工程区并组织大规模核武器研发工程，集合美国、英国、加拿大等国科学与工业资源，开启核时代关键技术工程。
+  confidence: 确定
+  tags:
+    - 曼哈顿计划
+    - 核武器
+    - 科学工程
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+    - Atomic Heritage Foundation
+  image:
+    url: /images/events/1942/w-manhattan-project-194208.png
+    caption: 曼哈顿计划主要设施分布示意图，作为1942年计划启动的工程背景资料
+    source: https://commons.wikimedia.org/wiki/File:Manhattan_Project_US_Map.png
+    author: Commons user contribution; author not machine-readable
+    license: Public domain
+
+- id: w-second-el-alamein-194210
+  date: '1942-10-23'
+  title: 第二次阿拉曼战役爆发
+  category: 战争
+  importance: 5
+  summary: 英联邦军队在埃及阿拉曼地区发动反攻并击败轴心国北非部队，遏止其向苏伊士运河和中东油田推进，北非战场出现决定性转折。
+  confidence: 确定
+  tags:
+    - 第二次阿拉曼战役
+    - 北非战场
+    - 二战转折
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+  image:
+    url: /images/events/1942/w-second-el-alamein-194210.jpg
+    caption: 1942年10月阿拉曼战役期间，英军坦克向战场推进
+    source: https://commons.wikimedia.org/wiki/File:El_Alamein_1942_-_British_tanks.jpg
+    author: Gladstone (Sgt), No. 1 Army Film and Photographic Unit; post-work W.wolny
+    license: Public domain
+
+- id: w-operation-torch-194211
+  date: '1942-11-08'
+  title: 盟军实施火炬行动
+  category: 战争
+  importance: 4
+  summary: 英美盟军在法属北非登陆，打开北非西线并夹击轴心国部队，也标志美国陆军大规模投入欧洲和地中海战场。
+  confidence: 确定
+  tags:
+    - 火炬行动
+    - 北非战场
+    - 盟军登陆
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-operation-uranus-194211
+  date: '1942-11-19'
+  title: 苏军发动天王星行动
+  category: 战争
+  importance: 4
+  summary: 苏军在斯大林格勒南北两翼发动反攻，包围德国第六集团军及轴心国部队，直接导致 1943 年斯大林格勒战役以德军投降告终。
+  confidence: 确定
+  tags:
+    - 天王星行动
+    - 斯大林格勒战役
+    - 苏德战争
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-chicago-pile-1-194212
+  date: '1942-12-02'
+  title: 芝加哥 1 号反应堆实现首次可控链式反应
+  category: 文化
+  importance: 5
+  summary: 费米团队在芝加哥大学建成的 Chicago Pile-1 实现人类首次自持可控核链式反应，证明核能工程化可行，成为核能与核武器时代的重要科学转折。
+  confidence: 确定
+  tags:
+    - Chicago Pile-1
+    - 核能
+    - 曼哈顿计划
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+    - U.S. Department of Energy
+  image:
+    url: /images/events/1942/w-chicago-pile-1-194212.png
+    caption: Chicago Pile-1 科学团队在首次可控链式反应四周年时合影，作为1942年实验团队背景资料
+    source: https://commons.wikimedia.org/wiki/File:ChicagoPileTeam.png
+    author: Los Alamos National Laboratory; author not machine-readable
+    license: Attribution
+
 - id: w-casablanca-conference-194301
   date: '1943-01-14'
   title: 卡萨布兰卡会议召开

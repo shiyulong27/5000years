@@ -2189,6 +2189,27 @@
 - 暂无合格配图：`cn-extraterritoriality-abolished-194301`。检索结果主要为条约文本、PDF 或版权/来源不清的签署照片，未找到合格 JPG/PNG 历史现场图，故保持无图并记录。
 - 验证：`npm run validate` 通过；脚本检查 1943 年已引用图片均存在且大于 1 KiB，唯一五星缺图为已记录的 `cn-extraterritoriality-abolished-194301`；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
 
+## 1942 年事件补全审查（2026-08-13）
+
+- 审查范围：1942 年中国事件与世界事件；此前 `data/events/minguo.yaml`、`data/world/modern.yaml` 中均无 1942 年事件，且无 `src/pages/1942.astro` 与时间轴入口。
+- 修改后统计：新增中国事件 4 条、世界事件 11 条；其中五星事件 6 条、四星事件 9 条；五星事件均已配图。
+- 页面与路由：新增 `src/pages/1942.astro`，并在 `Timeline.astro` 与 `AxisCell.astro` 注册 1942 年入口。
+- 已读取/核验来源：中英文维基百科 1942 年、1942 in China、延安整风、中国远征军、浙赣战役、左权、中途岛海战、珊瑚海海战、杜立特空袭、曼哈顿计划、Chicago Pile-1、第二次阿拉曼战役、火炬行动、天王星行动等条目；补查中国共产党新闻网、United Nations、Atomic Heritage Foundation、U.S. Department of Energy 等资料。1978 年以前未找到可直接作为年度新闻清单的新华社 1942 年年度十大新闻正文，已用维基百科、党史资料和国际组织资料交叉核验。
+- 新增中国事件：`cn-yanan-rectification-194202`、`cn-chinese-expeditionary-force-burma-194203`、`cn-zhejiang-jiangxi-campaign-194205`、`cn-zuo-quan-killed-194205`。
+- 新增世界事件：`w-declaration-united-nations-194201`、`w-singapore-falls-194202`、`w-bataan-death-march-194204`、`w-doolittle-raid-194204`、`w-coral-sea-battle-194205`、`w-battle-midway-194206`、`w-manhattan-project-194208`、`w-second-el-alamein-194210`、`w-operation-torch-194211`、`w-operation-uranus-194211`、`w-chicago-pile-1-194212`。
+
+| 事件 ID | Commons 文件页 | 作者/机构 | 许可 | 图注边界 |
+|---|---|---|---|---|
+| `cn-yanan-rectification-194202` | [Yan'an Forum on Literature and Art 1942](https://commons.wikimedia.org/wiki/File:Chairman_Mao_Zedong_(1893-1976)_and_people_at_the_Yan%27an_Forum_on_Literature_and_Art_in_1942,_including_Chen_Xuezhao_5th_from_left_3rd_row.jpg) | 吴印咸 | Public domain | 1942年延安文艺座谈会合影，作为延安整风时期背景资料 |
+| `w-declaration-united-nations-194201` | [Signing Declaration by United Nations.jpg](https://commons.wikimedia.org/wiki/File:Signing_Declaration_by_United_Nations.jpg) | Unknown photographer | Public domain | 1942年1月1日签署现场 |
+| `w-battle-midway-194206` | [Battle of Midway Japanese air raid](https://commons.wikimedia.org/wiki/File:Battle_of_Midway_(Japanese_air_raid).jpg) | US Navy | Public domain | 1942年6月4日中途岛海战期间空袭现场 |
+| `w-manhattan-project-194208` | [Manhattan Project US Map.png](https://commons.wikimedia.org/wiki/File:Manhattan_Project_US_Map.png) | Commons user contribution; author not machine-readable | Public domain | 曼哈顿计划设施地图，明确非1942年启动现场 |
+| `w-second-el-alamein-194210` | [El Alamein 1942 - British tanks.jpg](https://commons.wikimedia.org/wiki/File:El_Alamein_1942_-_British_tanks.jpg) | Gladstone (Sgt), No. 1 Army Film and Photographic Unit; post-work W.wolny | Public domain | 1942年10月阿拉曼战役期间英军坦克照片 |
+| `w-chicago-pile-1-194212` | [ChicagoPileTeam.png](https://commons.wikimedia.org/wiki/File:ChicagoPileTeam.png) | Los Alamos National Laboratory; author not machine-readable | Attribution | 1946年团队合影，作为1942年实验团队背景资料 |
+
+- 未配图说明：其余 9 条四星事件不强制配图；未使用版权不明图片或与事件关联较弱的现代纪念设施图。
+- 验证：`npm run validate` 通过；脚本检查 1942 年所有已引用图片文件均存在且为真实 JPG/PNG，文件均大于 1 KiB；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
+
 ## 1947 年事件补全审查（2026-08-13）
 
 - 审查范围：1947 年中国事件 5 条、世界事件 6 条；其中五级 7 条、四级 4 条。

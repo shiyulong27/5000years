@@ -61,6 +61,73 @@
   summary: 日军在北平卢沟桥发动挑衅，中国守军奋起反击，中华民族全面抗日战争爆发。
   confidence: 确定
 
+- id: cn-yanan-rectification-194202
+  date: '1942-02-01'
+  title: 延安整风运动开始
+  category: 政治
+  importance: 5
+  summary: 中共中央在延安发动整风运动，围绕反对主观主义、宗派主义和党八股展开学习与整顿，推动全党思想统一和组织建设，对中共七大确立毛泽东思想指导地位具有基础性影响。
+  confidence: 确定
+  tags:
+    - 延安整风
+    - 中国共产党
+    - 思想建设
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 中国共产党新闻网
+  image:
+    url: /images/events/1942/cn-yanan-rectification-194202.jpg
+    caption: 1942年5月延安文艺座谈会合影，作为延安整风时期文化与思想整顿背景资料
+    source: https://commons.wikimedia.org/wiki/File:Chairman_Mao_Zedong_(1893-1976)_and_people_at_the_Yan%27an_Forum_on_Literature_and_Art_in_1942,_including_Chen_Xuezhao_5th_from_left_3rd_row.jpg
+    author: 吴印咸
+    license: Public domain
+
+- id: cn-chinese-expeditionary-force-burma-194203
+  date: '1942-03-01'
+  title: 中国远征军入缅作战
+  category: 战争
+  importance: 4
+  summary: 为保卫滇缅公路并支援盟军，中国远征军开入缅甸参加对日作战。缅甸战局虽遭严重挫折，但中国军队由此深度参与盟军东南亚战场。
+  confidence: 确定
+  tags:
+    - 中国远征军
+    - 缅甸战役
+    - 抗日战争
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-zhejiang-jiangxi-campaign-194205
+  date: '1942-05-15'
+  title: 浙赣战役爆发
+  category: 战争
+  importance: 4
+  summary: 日军为报复杜立特空袭后中国沿海机场支援美军，并摧毁浙赣铁路沿线机场与交通设施，在浙江、江西发动大规模作战，造成严重人员伤亡和区域破坏。
+  confidence: 确定
+  tags:
+    - 浙赣战役
+    - 杜立特空袭
+    - 抗日战争
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-zuo-quan-killed-194205
+  date: '1942-05-25'
+  title: 八路军副参谋长左权牺牲
+  category: 战争
+  importance: 4
+  summary: 日军对太行抗日根据地实施扫荡期间，八路军副参谋长左权在山西辽县十字岭突围作战中牺牲，成为抗战时期八路军牺牲的最高级别将领之一。
+  confidence: 确定
+  tags:
+    - 左权
+    - 八路军
+    - 抗日战争
+  sources:
+    - 中文维基百科
+    - 中国共产党新闻网
+
 - id: cn-extraterritoriality-abolished-194301
   date: '1943-01-11'
   title: 中美、中英新约签署，废除在华治外法权
