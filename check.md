@@ -2143,6 +2143,14 @@
 - 暂无合格配图：`cn-land-law-outline-194710`、`w-gatt-signed-194710`。检索结果主要为后年土地改革法资料、现代机构外景、PDF/法规文本或与签署现场关联较弱的背景图，为避免误导，保持无图并记录。
 - 验证：`npm run validate` 通过；脚本检查 1945-1947 年所有已引用图片文件均存在且大于 1 KiB；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。未加超时参数直接运行该全局配图审计时曾因默认 5 秒上限超时失败，未出现断言失败。
 
+## 1945 年日本投降节点拆分补充（2026-08-13）
+
+- 审查范围：`data/world/modern.yaml` 的 1945 年日本投降相关世界事件；按用户要求区分 8 月 15 日宣布投降与 9 月 2 日正式签署投降书。
+- 修改记录：新增 `w-japan-announces-surrender-194508`，日期为 `1945-08-15`，记录昭和天皇通过“玉音放送”宣读《终战诏书》、日本宣布接受《波茨坦公告》并投降。原有 `w-japan-surrenders-194509` 保持为 `1945-09-02` 正式签署投降书事件，不合并。
+- 来源核验：英文维基百科、中文维基百科与新华社资料均区分 1945 年 8 月 15 日宣布投降和 1945 年 9 月 2 日签署投降书两个节点。
+- 配图：新增 [Imperial Rescript on the Termination of the War1.jpg](https://commons.wikimedia.org/wiki/File:Imperial_Rescript_on_the_Termination_of_the_War1.jpg)，作者未详，Commons 标注 Public domain。图注明确说明其为 1945 年 8 月 14 日《终战诏书》文件图，8 月 15 日通过广播播出，非广播现场照片。
+- 验证：`npm run validate` 通过；脚本确认 `w-japan-announces-surrender-194508` 与 `w-japan-surrenders-194509` 均存在、日期分别为 `1945-08-15` 与 `1945-09-02`，且图片文件存在并大于 1 KiB；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
+
 ## 1947 年事件补全审查（2026-08-13）
 
 - 审查范围：1947 年中国事件 5 条、世界事件 6 条；其中五级 7 条、四级 4 条。

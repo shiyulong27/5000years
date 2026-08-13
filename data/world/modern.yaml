@@ -138,6 +138,28 @@
     author: George R. Caron
     license: Public domain
 
+- id: w-japan-announces-surrender-194508
+  date: '1945-08-15'
+  title: 日本宣布接受《波茨坦公告》并投降
+  category: 战争
+  importance: 5
+  summary: 昭和天皇通过“玉音放送”向日本民众宣读《终战诏书》，宣布日本政府接受《波茨坦公告》，同意无条件投降；这是日本停止战争并走向正式签署投降书的关键节点。
+  confidence: 确定
+  tags:
+    - 日本投降
+    - 玉音放送
+    - 二战结束
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+    - 新华网
+  image:
+    url: /images/events/1945/w-japan-announces-surrender-194508.jpg
+    caption: 1945年8月14日《终战诏书》文件图；诏书于8月15日通过“玉音放送”向日本民众播出，非广播现场照片
+    source: https://commons.wikimedia.org/wiki/File:Imperial_Rescript_on_the_Termination_of_the_War1.jpg
+    author: Unknown author
+    license: Public domain
+
 - id: w-japan-surrenders-194509
   date: '1945-09-02'
   title: 日本签署投降书，第二次世界大战结束
