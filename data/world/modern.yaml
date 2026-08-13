@@ -44,6 +44,81 @@
   importance: 5
   summary: 华尔街股市崩盘引发全球经济大萧条，数千万人失业，加深了国际危机。
   confidence: 确定
+- id: w-rhineland-remilitarization-193603
+  date: '1936-03-07'
+  title: 德国重新军事化莱茵兰
+  category: 政治
+  importance: 5
+  summary: 德国军队进入《凡尔赛条约》和《洛迦诺公约》限制下的莱茵兰非军事区，挑战一战后欧洲安全秩序，英法未采取军事回应，纳粹德国扩张信心显著增强。
+  confidence: 确定
+  tags:
+    - 莱茵兰
+    - 纳粹德国
+    - 绥靖政策
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-spanish-civil-war-begins-193607
+  date: '1936-07-17'
+  title: 西班牙内战爆发
+  category: 战争
+  importance: 5
+  summary: 西班牙部分军队发动叛乱，西班牙内战爆发。战争迅速成为欧洲法西斯、共产主义和民主力量间接对抗的战场，并成为二战前的重要国际冲突。
+  confidence: 确定
+  tags:
+    - 西班牙内战
+    - 佛朗哥
+    - 欧洲战争
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-berlin-olympics-193608
+  date: '1936-08-01'
+  title: 柏林奥运会开幕
+  category: 文化
+  importance: 4
+  summary: 柏林夏季奥运会在纳粹德国举行，成为纳粹政权展示国家形象和宣传能力的重要舞台，也因杰西·欧文斯等运动员表现而具有长期象征意义。
+  confidence: 确定
+  tags:
+    - 柏林奥运会
+    - 纳粹德国
+    - 体育
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-rome-berlin-axis-193610
+  date: '1936-10-25'
+  title: 罗马-柏林轴心形成
+  category: 政治
+  importance: 4
+  summary: 德国和意大利加强政治合作，墨索里尼随后称两国关系构成“罗马-柏林轴心”，欧洲法西斯国家协作格局逐步成形。
+  confidence: 确定
+  tags:
+    - 罗马-柏林轴心
+    - 轴心国
+    - 二战前夜
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-anti-comintern-pact-193611
+  date: '1936-11-25'
+  title: 德日签署《反共产国际协定》
+  category: 政治
+  importance: 4
+  summary: 德国和日本签署《反共产国际协定》，名义上针对共产国际，实际推动两国反苏、反共与战略协作，成为轴心阵营形成的重要一步。
+  confidence: 确定
+  tags:
+    - 反共产国际协定
+    - 德日关系
+    - 轴心国
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-hindenburg-disaster-193705
   date: '1937-05-06'
   title: 兴登堡号空难发生
