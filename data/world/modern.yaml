@@ -55,6 +55,126 @@
   summary: 德国入侵波兰，二战全面爆发，战火遍及全球，造成空前伤亡。
   confidence: 确定
 
+- id: w-winter-war-peace-194003
+  date: '1940-03-13'
+  title: 苏芬冬季战争结束
+  category: 战争
+  importance: 4
+  summary: 苏联与芬兰签署莫斯科和平条约，冬季战争结束。芬兰割让部分领土但保留独立，战争暴露苏军问题并影响后来德国对苏联战略的判断。
+  confidence: 确定
+  tags:
+    - 冬季战争
+    - 苏芬战争
+    - 莫斯科和平条约
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-germany-invades-western-europe-194005
+  date: '1940-05-10'
+  title: 德国进攻西欧
+  category: 战争
+  importance: 5
+  summary: 德军发动西线攻势，入侵法国、比利时、荷兰和卢森堡，盟军防线迅速崩溃，欧洲大陆战局发生决定性变化。
+  confidence: 确定
+  tags:
+    - 法国战役
+    - 西线战场
+    - 第二次世界大战
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-dunkirk-evacuation-194005
+  date: '1940-05-26'
+  title: 敦刻尔克大撤退开始
+  category: 战争
+  importance: 5
+  summary: 英国远征军和其他盟军部队从法国敦刻尔克撤往英国，数十万官兵得以保存。撤退虽意味着法国战役失败，但保留了英国继续作战的军事力量。
+  confidence: 确定
+  tags:
+    - 敦刻尔克大撤退
+    - 法国战役
+    - 英国远征军
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-france-falls-194006
+  date: '1940-06-22'
+  title: 法国向德国投降
+  category: 战争
+  importance: 5
+  summary: 法国政府与德国签署停战协定，法国本土大部被德国占领，维希政权建立。西欧大陆秩序由此重组，英国成为欧洲主要的继续抵抗力量。
+  confidence: 确定
+  tags:
+    - 法国战役
+    - 法国投降
+    - 维希法国
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-battle-of-britain-194007
+  date: '1940-07-10'
+  title: 不列颠空战爆发
+  category: 战争
+  importance: 5
+  summary: 德国空军对英国展开持续空袭，试图夺取英伦上空制空权并为登陆英国创造条件。英国皇家空军守住本土，德国未能实现入侵计划。
+  confidence: 确定
+  tags:
+    - 不列颠空战
+    - 英国皇家空军
+    - 第二次世界大战
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-tripartite-pact-194009
+  date: '1940-09-27'
+  title: 德意日三国同盟条约签署
+  category: 政治
+  importance: 4
+  summary: 德国、意大利和日本签署三国同盟条约，正式建立轴心国军事政治合作框架，并对美国等国形成战略威慑。
+  confidence: 确定
+  tags:
+    - 三国同盟
+    - 轴心国
+    - 二战外交
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-katyn-massacre-194004
+  date: '1940-04-01'
+  title: 卡廷大屠杀开始
+  category: 战争
+  importance: 4
+  summary: 苏联秘密警察系统性处决大量波兰军官、知识分子和国家公务人员，卡廷惨案成为二战期间严重的政治屠杀和战争罪行。
+  confidence: 确定
+  tags:
+    - 卡廷惨案
+    - 波兰
+    - 战争罪行
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-greek-italian-war-194010
+  date: '1940-10-28'
+  title: 希意战争爆发
+  category: 战争
+  importance: 4
+  summary: 意大利入侵希腊，希腊军队抵抗并将战线推进至阿尔巴尼亚，迫使德国后来介入巴尔干战事。
+  confidence: 确定
+  tags:
+    - 希意战争
+    - 巴尔干战役
+    - 轴心国
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-lend-lease-act-194103
   date: '1941-03-11'
   title: 美国《租借法案》签署

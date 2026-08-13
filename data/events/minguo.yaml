@@ -61,6 +61,58 @@
   summary: 日军在北平卢沟桥发动挑衅，中国守军奋起反击，中华民族全面抗日战争爆发。
   confidence: 确定
 
+- id: cn-wang-jingwei-regime-194003
+  date: '1940-03-30'
+  title: 南京国民政府成立
+  category: 政治
+  importance: 4
+  summary: 汪精卫在南京成立以日本支持为背景的国民政府，成为抗战时期华中、华东地区的重要傀儡政权。其成立加深了中国政治分裂和日本对占领区的统治。
+  confidence: 确定
+  tags:
+    - 汪精卫政权
+    - 南京国民政府
+    - 抗日战争
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-hundred-regiments-offensive-194008
+  date: '1940-08-20'
+  title: 百团大战爆发
+  category: 战争
+  importance: 5
+  summary: 八路军在华北发动大规模交通破袭和攻坚作战，重点打击日军铁路、公路和据点。百团大战显示了敌后战场的组织动员能力，并对华北抗战形势产生重要影响。
+  confidence: 确定
+  tags:
+    - 百团大战
+    - 八路军
+    - 抗日战争
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 中国共产党新闻网
+  image:
+    url: /images/events/1940/cn-hundred-regiments-offensive-194008.jpg
+    caption: 1940年百团大战中八路军攻占娘子关的历史照片
+    source: https://commons.wikimedia.org/wiki/File:Hundred_Regiments_Offensive_1940.jpg
+    author: Chinese Wikipedia uploader; original source credited to period Chinese press
+    license: Public domain
+
+- id: cn-chongqing-bombing-194005
+  date: '1940-06-05'
+  title: 重庆大轰炸持续升级
+  category: 战争
+  importance: 4
+  summary: 日军对战时中国陪都重庆持续实施大规模空袭，城市公共设施和民众生活遭受严重破坏，重庆成为抗战时期中国遭受战略轰炸最集中的城市之一。
+  confidence: 确定
+  tags:
+    - 重庆大轰炸
+    - 抗日战争
+    - 战略轰炸
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
 - id: cn-new-fourth-army-incident-194101
   date: '1941-01-06'
   title: 皖南事变爆发
