@@ -21,9 +21,10 @@ describe('夏朝内容完善', () => {
   it('完整收录十七王，并标注其争议性与帝王身份', () => {
     expect(xiaRulers.map((ruler) => ruler.temple_name)).toEqual(RULERS)
     for (const ruler of xiaRulers) {
-      expect(ruler.tags).toContain('帝王')
-      expect(ruler.confidence).toBe('有争议')
-      expect(ruler.dispute?.trim()).toBeTruthy()
+      expect(Array.isArray(ruler.tags), `${ruler.temple_name} 的 tags 须为数组`).toBe(true)
+      expect(ruler.tags, `${ruler.temple_name} 缺少帝王标签`).toContain('帝王')
+      expect(ruler.confidence, `${ruler.temple_name} 的 confidence 不正确`).toBe('有争议')
+      expect(ruler.dispute?.trim(), `${ruler.temple_name} 缺少 dispute`).toBeTruthy()
     }
   })
 
@@ -36,21 +37,26 @@ describe('夏朝内容完善', () => {
   it('收录九项夏朝关键事件及其来源和争议说明', () => {
     expect(xiaEvents.map((event) => event.id)).toEqual(expect.arrayContaining(EVENTS))
     for (const event of xiaEvents) {
-      expect(event.tags?.length, `${event.id} 缺少 tags`).toBeGreaterThan(0)
-      expect(event.sources?.length, `${event.id} 缺少 sources`).toBeGreaterThan(0)
-      expect(['传说', '有争议']).toContain(event.confidence)
+      expect(Array.isArray(event.tags), `${event.id} 的 tags 须为数组`).toBe(true)
+      expect(event.tags.length, `${event.id} 缺少 tags`).toBeGreaterThan(0)
+      expect(Array.isArray(event.sources), `${event.id} 的 sources 须为数组`).toBe(true)
+      expect(event.sources.length, `${event.id} 缺少 sources`).toBeGreaterThan(0)
+      for (const source of event.sources) {
+        expect(typeof source === 'string' && source.trim(), `${event.id} 存在空或非文本来源`).toBeTruthy()
+      }
+      expect(['传说', '有争议'], `${event.id} 的 confidence 不正确`).toContain(event.confidence)
       expect(event.dispute?.trim(), `${event.id} 缺少 dispute`).toBeTruthy()
     }
   })
 
   it('收录十位夏朝相关人物并保留人物说明与争议信息', () => {
     const figures = data.figures.filter((figure) => FIGURES.includes(figure.id))
-    expect(figures.map((figure) => figure.id)).toEqual(expect.arrayContaining(FIGURES))
+    expect(figures.map((figure) => figure.id), '缺少夏朝相关人物').toEqual(expect.arrayContaining(FIGURES))
     for (const figure of figures) {
       expect(figure.note?.trim(), `${figure.id} 缺少 note`).toBeTruthy()
-      expect(figure.confidence, `${figure.id} 缺少 confidence`).toBeDefined()
+      expect(figure.confidence, `${figure.id} 的 confidence 不正确`).toBe('有争议')
       expect(figure.dispute?.trim(), `${figure.id} 缺少 dispute`).toBeTruthy()
-      expect(RULERS).not.toContain(figure.name)
+      expect(RULERS, `${figure.id} 不应与君主重复`).not.toContain(figure.name)
     }
   })
 
@@ -58,15 +64,16 @@ describe('夏朝内容完善', () => {
     for (const id of ['dayu-zhishui', 'shaokang-restoration', 'shang-founding']) {
       const event = data.events.find((item) => item.id === id)
       expect(event, `缺少事件 ${id}`).toBeDefined()
-      expect(event?.image?.url ?? '').toMatch(/^\/images\/events\/xia\/[a-z0-9-]+\.jpg$/)
-      expect(event.image?.caption?.trim(), `${id} 缺少图片说明`).toBeTruthy()
-      expect(event?.image?.source ?? '').toMatch(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/)
-      expect(event.image?.author?.trim(), `${id} 缺少作者`).toBeTruthy()
-      expect(event.image?.license?.trim(), `${id} 缺少许可`).toBeTruthy()
+      expect(event?.image?.url ?? '', `${id} 的图片路径不正确`).toMatch(/^\/images\/events\/xia\/[a-z0-9-]+\.jpg$/)
+      expect(event?.image?.caption?.trim(), `${id} 缺少图片说明`).toBeTruthy()
+      expect(event?.image?.source ?? '', `${id} 的图片来源不正确`).toMatch(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/)
+      expect(event?.image?.author?.trim(), `${id} 缺少作者`).toBeTruthy()
+      expect(event?.image?.license?.trim(), `${id} 缺少许可`).toBeTruthy()
 
       const imagePath = path.join(ROOT, 'public', (event?.image?.url ?? '').replace(/^\//, ''))
       expect(fs.existsSync(imagePath), `${id} 图片不存在: ${imagePath}`).toBe(true)
       expect(fs.statSync(imagePath).size, `${id} 图片文件过小`).toBeGreaterThan(1024)
+      expect([...fs.readFileSync(imagePath).subarray(0, 3)], `${id} 图片不是 JPEG`).toEqual([0xff, 0xd8, 0xff])
     }
   })
 
