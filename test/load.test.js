@@ -108,6 +108,53 @@ describe('1989 年重大事件补全', () => {
   })
 })
 
+describe('1947 年重大事件补全倒序试点', () => {
+  const data = loadAll(path.join(ROOT, 'data'))
+  const chinaEvents = data.events.filter((event) => String(event.date).startsWith('1947'))
+  const worldEvents = data.worldEvents.filter((event) => String(event.date).startsWith('1947'))
+  const requiredFields = [
+    'id', 'date', 'title', 'category', 'importance',
+    'summary', 'confidence', 'tags', 'sources',
+  ]
+
+  it('包含已确认的 5 条中国事件和 6 条世界事件，且字段完整', () => {
+    expect(chinaEvents).toHaveLength(5)
+    expect(worldEvents).toHaveLength(6)
+
+    for (const event of [...chinaEvents, ...worldEvents]) {
+      for (const field of requiredFields) {
+        expect(event, `${event.id ?? event.title ?? '未知事件'} 缺少 ${field}`).toHaveProperty(field)
+      }
+      expect(event.importance).toBeGreaterThanOrEqual(1)
+      expect(event.importance).toBeLessThanOrEqual(5)
+      expect(event.confidence).toBe('确定')
+      expect(event.tags.length).toBeGreaterThan(0)
+      expect(event.sources.length).toBeGreaterThan(1)
+    }
+  })
+
+  it('包含二二八事件、跃进大别山、土地法大纲、杜鲁门主义、印巴分治和巴勒斯坦分治决议', () => {
+    const ids = [...chinaEvents, ...worldEvents].map((event) => event.id)
+    expect(ids).toEqual(expect.arrayContaining([
+      'cn-feb28-incident-194702',
+      'cn-liu-deng-dabie-mountains-194706',
+      'cn-land-law-outline-194710',
+      'w-truman-doctrine-194703',
+      'w-india-pakistan-independence-194708',
+      'w-un-palestine-partition-194711',
+    ]))
+  })
+
+  it('存在 1947 年专页并注册两个主时间线入口', () => {
+    expect(fs.existsSync(path.join(ROOT, 'src/pages/1947.astro'))).toBe(true)
+
+    const timeline = fs.readFileSync(path.join(ROOT, 'src/components/Timeline.astro'), 'utf8')
+    const axisCell = fs.readFileSync(path.join(ROOT, 'src/components/AxisCell.astro'), 'utf8')
+    expect(timeline).toMatch(/summaryYears\s*=\s*\[[^\]]*1947/)
+    expect(axisCell).toMatch(/hasSummary\s*=\s*\[[^\]]*1947/)
+  })
+})
+
 describe('1970 年重大事件补全', () => {
   const data = loadAll(path.join(ROOT, 'data'))
   const chinaEvents = data.events.filter((event) => String(event.date).startsWith('1970'))
