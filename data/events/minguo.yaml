@@ -71,6 +71,82 @@
   summary: 日本签署无条件投降书，中国取得抗日战争完全胜利，收复台湾及澎湖列岛。
   confidence: 确定
 
+- id: cn-feb28-incident-194702
+  date: '1947-02-28'
+  title: 台湾发生二二八事件
+  category: 政治
+  importance: 5
+  summary: 台湾因查缉私烟冲突引发全岛性抗议，随后遭到国民政府军政力量镇压，造成大量人员伤亡，深刻影响战后台湾政治秩序、族群关系与社会记忆。
+  confidence: 确定
+  tags:
+    - 台湾
+    - 二二八事件
+    - 战后政治
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-inner-mongolia-autonomous-government-194705
+  date: '1947-05-01'
+  title: 内蒙古自治政府成立
+  category: 政治
+  importance: 4
+  summary: 内蒙古自治政府在乌兰浩特成立，是中国共产党领导下民族区域自治实践的重要早期节点，并为后来内蒙古自治区建制奠定基础。
+  confidence: 确定
+  tags:
+    - 内蒙古
+    - 民族区域自治
+    - 边疆治理
+  sources:
+    - 中央统战部
+    - 人民网
+    - 中国民族宗教网
+
+- id: cn-liu-deng-dabie-mountains-194706
+  date: '1947-06-30'
+  title: 刘邓大军千里跃进大别山
+  category: 战争
+  importance: 5
+  summary: 刘伯承、邓小平率晋冀鲁豫野战军主力强渡黄河，向大别山实施战略跃进，揭开人民解放军由战略防御转入战略进攻的序幕。
+  confidence: 确定
+  tags:
+    - 解放战争
+    - 大别山
+    - 战略进攻
+  sources:
+    - 共产党员网
+    - 中文维基百科
+
+- id: cn-land-law-outline-194710
+  date: '1947-10-10'
+  title: 《中国土地法大纲》公布
+  category: 政治
+  importance: 5
+  summary: 中共中央公布《中国土地法大纲》，明确废除封建性及半封建性剥削土地制度，推动解放区土地改革进入系统展开阶段。
+  confidence: 确定
+  tags:
+    - 土地改革
+    - 解放区
+    - 制度变革
+  sources:
+    - 共产党员网
+    - 中文维基百科
+
+- id: cn-taiwan-constitution-election-194711
+  date: '1947-11-21'
+  title: 行宪国民大会代表选举举行
+  category: 政治
+  importance: 4
+  summary: 中华民国举行行宪国民大会代表选举，作为 1947 年宪法施行前后的制度安排之一，反映国民政府战后宪政转轨尝试。
+  confidence: 确定
+  tags:
+    - 行宪
+    - 国民大会
+    - 民国政治
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
 - id: cn-may-day-slogans-194804
   date: '1948-04-30'
   title: 中共中央发布“五一口号”

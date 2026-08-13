@@ -10283,6 +10283,98 @@
     - 美国国务院历史办公室
     - 美国国家档案馆
 
+- id: w-imf-world-bank-first-loan-194703
+  date: '1947-03-01'
+  title: IMF 开始金融运作，世界银行发放首笔贷款
+  category: 经济
+  importance: 4
+  summary: 国际货币基金组织在布雷顿森林体系框架下开始金融运作；同年世界银行向法国发放首笔重建贷款，共同构成战后国际金融与发展治理的重要制度基础。
+  confidence: 确定
+  tags:
+    - IMF
+    - 世界银行
+    - 布雷顿森林体系
+  sources:
+    - IMF
+    - World Bank
+
+- id: w-truman-doctrine-194703
+  date: '1947-03-12'
+  title: 杜鲁门主义提出
+  category: 政治
+  importance: 5
+  summary: 美国总统杜鲁门在国会演说中提出援助希腊和土耳其以遏制共产主义扩张的政策，标志冷战遏制战略公开成形。
+  confidence: 确定
+  tags:
+    - 冷战
+    - 美国
+    - 遏制政策
+  sources:
+    - Truman Library
+    - 美国国家档案馆
+    - 美国国务院历史办公室
+
+- id: w-marshall-plan-speech-194706
+  date: '1947-06-05'
+  title: 马歇尔提出欧洲复兴计划
+  category: 经济
+  importance: 5
+  summary: 美国国务卿乔治·马歇尔在哈佛大学演说中提出援助欧洲复兴的计划，成为战后西欧重建和冷战阵营形成的重要经济安排。
+  confidence: 确定
+  tags:
+    - 马歇尔计划
+    - 欧洲复兴
+    - 冷战
+  sources:
+    - Marshall Foundation
+    - OECD
+    - Truman Library
+
+- id: w-india-pakistan-independence-194708
+  date: '1947-08-15'
+  title: 印度和巴基斯坦分治独立
+  category: 政治
+  importance: 5
+  summary: 英属印度分治为印度和巴基斯坦两个独立国家，结束英国在南亚的殖民统治，同时引发大规模迁徙和暴力冲突。
+  confidence: 确定
+  tags:
+    - 印巴分治
+    - 去殖民化
+    - 南亚
+  sources:
+    - 英国议会
+    - 英文维基百科
+
+- id: w-gatt-signed-194710
+  date: '1947-10-30'
+  title: 《关税与贸易总协定》签署
+  category: 经济
+  importance: 5
+  summary: 23 个缔约方在日内瓦签署《关税与贸易总协定》，为战后多边贸易规则奠定基础，并成为世界贸易组织的制度前身。
+  confidence: 确定
+  tags:
+    - GATT
+    - 国际贸易
+    - 多边规则
+  sources:
+    - WTO
+    - 英文维基百科
+
+- id: w-un-palestine-partition-194711
+  date: '1947-11-29'
+  title: 联合国通过巴勒斯坦分治决议
+  category: 政治
+  importance: 5
+  summary: 联合国大会通过第 181 号决议，建议在巴勒斯坦分别建立犹太国家和阿拉伯国家，成为随后中东冲突格局的重要制度节点。
+  confidence: 确定
+  tags:
+    - 联合国
+    - 巴勒斯坦
+    - 中东
+  sources:
+    - United Nations
+    - 英文维基百科
+
 - id: w-who-founded-194804
   date: '1948-04-07'
   title: 世界卫生组织正式成立
