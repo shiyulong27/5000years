@@ -2084,3 +2084,29 @@
 - 低质量占位：移除 `cn-china-world-cup-debut-200206` 的 610 字节球衣样式小图引用；该图不是比赛现场，也不满足图片体积下限。
 - SVG 兼容：将 17 条仍具事件专属性的 SVG 地图、图表、标志和棋谱无损栅格化为 PNG，并将数据引用改为 `.png`；原始 Commons 来源、作者与许可元数据保持不变。
 - 复审结果：现有 501 条配图引用均为 JPG/PNG/WebP，文件全部存在且大于 1 KiB；SHA-256 全量扫描无重复组，配图专项 Vitest 通过。
+
+## 1948 年事件配图审查（2026-08-13）
+
+- 审查范围：1948 年中国事件 7 条、世界事件 10 条；其中四级 12 条、五级 5 条。
+- 修改前：17 条事件均无配图。修改后：12 条事件有配图，全部五级事件已覆盖；事件数量、日期、摘要、分类和重要性均未修改。
+- 检索与读取：逐一读取下列 Wikimedia Commons 文件页正文，核对画面内容、年代、作者和许可；页面均可访问。新华网图片仅用于此前事件事实核验，未下载到仓库。
+
+| 事件 ID | Commons 文件页 | 作者/机构 | 许可 | 图注边界 |
+|---|---|---|---|---|
+| `cn-liaoshen-campaign-194809` | [Final Attack on Jinzhou.jpg](https://commons.wikimedia.org/wiki/File:Final_Attack_on_Jinzhou.jpg) | Unknown author | Public domain（PD-China） | 锦州攻坚战原始黑白照片 |
+| `cn-huaihai-campaign-194811` | [PLAHuaihai.jpg](https://commons.wikimedia.org/wiki/File:PLAHuaihai.jpg) | Unknown author | Public domain（PD-China） | 淮海战役坦克配合步兵作战照片 |
+| `cn-pingjin-campaign-194811` | [PLA Enters Peking.jpg](https://commons.wikimedia.org/wiki/File:PLA_Enters_Peking.jpg) | 原上传者 Aukingluntom；原作者未详 | Public domain（PD-China） | 1949年1月31日北平和平解放，明确非战役发起现场 |
+| `cn-pboc-first-rmb-194812` | [RMB1-100-7A.jpg](https://commons.wikimedia.org/wiki/File:RMB1-100-7A.jpg) | 中国人民银行 | Public domain（PD-China） | 1949年第一套人民币票样，明确非1948年12月1日首发现场 |
+| `cn-kiangya-disaster-194812` | [Sunk of SS Kiangya.jpg](https://commons.wikimedia.org/wiki/File:Sunk_of_SS_Kiangya.jpg) | 申报（上海） | Public domain（PD-China） | 1948年12月江亚轮沉没后的船体照片 |
+| `w-gandhi-assassination-194801` | [Gandhi funeral.jpg](https://commons.wikimedia.org/wiki/File:Gandhi_funeral.jpg) | Unknown author | Public domain（PD-India） | 1948年1月甘地送葬队伍 |
+| `w-israel-founded-war-194805` | [Declaration of State of Israel 1948.jpg](https://commons.wikimedia.org/wiki/File:Declaration_of_State_of_Israel_1948.jpg) | Rudi Weissenstein / Israel Government Press Office | Public domain（PD-Israel） | 1948年5月14日独立宣言现场 |
+| `w-south-africa-national-party-194805` | [South African Election 1948.png](https://commons.wikimedia.org/wiki/File:South_African_Election_1948.png) | Icantfindanunusedusernamewhyme | CC BY-SA 3.0 | 2022年绘制的1948年大选结果图，非历史现场照片 |
+| `w-manchester-baby-194806` | [SSEM Replica.jpg](https://commons.wikimedia.org/wiki/File:SSEM_Replica.jpg) | Ian Dunster、Racklever | Public domain | 博物馆复制品，明确非1948年原机现场照片 |
+| `w-berlin-blockade-airlift-194806` | [C-54 landing at Tempelhof.jpg](https://commons.wikimedia.org/wiki/File:C-54_landing_at_Tempelhof.jpg) | Henry Ries / USAF | Public domain（美国空军公务作品） | 1948年柏林空运现场 |
+| `w-korean-two-states-194808` | [Ceremony inaugurating the government of the Republic of Korea.JPG](https://commons.wikimedia.org/wiki/File:Ceremony_inaugurating_the_government_of_the_Republic_of_Korea.JPG) | Unknown author | Public domain（PD-South Korea / PD-1996） | 仅对应8月15日南部政权成立阶段，明确非北部成立现场 |
+| `w-udhr-adopted-194812` | [Eleanor Roosevelt UDHR.jpg](https://commons.wikimedia.org/wiki/File:Eleanor_Roosevelt_UDHR.jpg) | FDR Presidential Library & Museum | CC BY 2.0 | 1949年展示宣言海报，明确非1948年联合国大会现场 |
+
+- 暂无合格配图：`cn-may-day-slogans-194804`、`cn-litang-earthquake-194805`、`w-gatt-provisional-194801`、`w-marshall-plan-enacted-194804`、`w-who-founded-194804`。检索结果主要为版权不明的历史照片、PDF 文献或与事件日期关联较弱的机构背景图，故保持无图。
+- 图片处理：统一保存到 `public/images/events/1948/`；仅使用 Commons 标准缩略图接口进行常规缩放，不使用生成式补绘、AI 上色或内容修改。
+- 验证：`npm run validate` 通过；`npm test -- test/2020-2024-event-images.test.js test/1948-events.test.js` 通过（2 个测试文件、5 项测试）。
+- 全量测试：`npm test` 已实际执行；1948 配图、全局配图审计及其余 134 项断言通过。另有 4 项 `test/xia-content.test.js` 失败，原因是夏朝的新增事件、人物、三项图片和帝王表标签尚未实现；这些文件不在本次 1948 配图修改范围内。

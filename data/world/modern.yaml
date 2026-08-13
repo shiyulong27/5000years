@@ -10261,6 +10261,12 @@
   sources:
     - 印度甘地遗产门户
     - Encyclopaedia Britannica
+  image:
+    url: /images/events/1948/w-gandhi-assassination-194801.jpg
+    caption: 1948年1月甘地遇刺后的送葬队伍
+    source: https://commons.wikimedia.org/wiki/File:Gandhi_funeral.jpg
+    author: Unknown author
+    license: Public domain（PD-India）
 
 - id: w-marshall-plan-enacted-194804
   date: '1948-04-03'
@@ -10306,6 +10312,12 @@
   sources:
     - 联合国
     - 以色列国家档案馆
+  image:
+    url: /images/events/1948/w-israel-founded-war-194805.jpg
+    caption: 1948年5月14日，本-古里安在特拉维夫宣读以色列独立宣言
+    source: https://commons.wikimedia.org/wiki/File:Declaration_of_State_of_Israel_1948.jpg
+    author: Rudi Weissenstein / Israel Government Press Office
+    license: Public domain（PD-Israel）
 
 - id: w-south-africa-national-party-194805
   date: '1948-05-26'
@@ -10321,6 +10333,12 @@
   sources:
     - 南非历史在线
     - Encyclopaedia Britannica
+  image:
+    url: /images/events/1948/w-south-africa-national-party-194805.png
+    caption: 1948年南非大选各省优势党派结果图；蓝色为联合党，橙色为国民党，系2022年绘制的选举资料图
+    source: https://commons.wikimedia.org/wiki/File:South_African_Election_1948.png
+    author: Icantfindanunusedusernamewhyme
+    license: CC BY-SA 3.0
 
 - id: w-manchester-baby-194806
   date: '1948-06-21'
@@ -10336,6 +10354,12 @@
   sources:
     - 曼彻斯特大学
     - 英国计算机学会
+  image:
+    url: /images/events/1948/w-manchester-baby-194806.jpg
+    caption: 曼彻斯特科学与工业博物馆展出的“小型实验机”（Manchester Baby）复制品，非1948年原机现场照片
+    source: https://commons.wikimedia.org/wiki/File:SSEM_Replica.jpg
+    author: Ian Dunster、Racklever
+    license: Public domain
 
 - id: w-berlin-blockade-airlift-194806
   date: '1948-06-24'
@@ -10351,6 +10375,12 @@
   sources:
     - 美国国务院历史办公室
     - 德意志历史博物馆
+  image:
+    url: /images/events/1948/w-berlin-blockade-airlift-194806.jpg
+    caption: 1948年柏林空运期间，柏林市民观看美国C-54运输机在滕珀尔霍夫机场降落
+    source: https://commons.wikimedia.org/wiki/File:C-54_landing_at_Tempelhof.jpg
+    author: Henry Ries / USAF
+    license: Public domain（美国空军公务作品）
 
 - id: w-korean-two-states-194808
   date: '1948-08-15'
@@ -10366,6 +10396,12 @@
   sources:
     - 联合国
     - Encyclopaedia Britannica
+  image:
+    url: /images/events/1948/w-korean-two-states-194808.jpg
+    caption: 1948年8月15日大韩民国政府成立庆祝仪式；对应南部政权成立阶段，非9月9日朝鲜民主主义人民共和国成立现场
+    source: https://commons.wikimedia.org/wiki/File:Ceremony_inaugurating_the_government_of_the_Republic_of_Korea.JPG
+    author: Unknown author
+    license: Public domain（PD-South Korea / PD-1996）
 
 - id: w-udhr-adopted-194812
   date: '1948-12-10'
@@ -10381,3 +10417,9 @@
   sources:
     - 联合国
     - 联合国人权事务高级专员办事处
+  image:
+    url: /images/events/1948/w-udhr-adopted-194812.jpg
+    caption: 1949年埃莉诺·罗斯福展示《世界人权宣言》海报；为宣言通过次年的资料照片，非1948年12月10日联合国大会现场
+    source: https://commons.wikimedia.org/wiki/File:Eleanor_Roosevelt_UDHR.jpg
+    author: FDR Presidential Library & Museum
+    license: CC BY 2.0

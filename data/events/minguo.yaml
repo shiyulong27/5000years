@@ -115,6 +115,12 @@
   sources:
     - 新华网
     - 中国共产党新闻网
+  image:
+    url: /images/events/1948/cn-liaoshen-campaign-194809.jpg
+    caption: 1948年辽沈战役锦州攻坚战中，人民解放军在炮火掩护下向城墙发起进攻
+    source: https://commons.wikimedia.org/wiki/File:Final_Attack_on_Jinzhou.jpg
+    author: Unknown author
+    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
 
 - id: cn-huaihai-campaign-194811
   date: '1948-11-06'
@@ -130,6 +136,12 @@
   sources:
     - 新华网
     - 中国共产党新闻网
+  image:
+    url: /images/events/1948/cn-huaihai-campaign-194811.jpg
+    caption: 淮海战役中，人民解放军华东坦克大队以坦克配合步兵发起攻击
+    source: https://commons.wikimedia.org/wiki/File:PLAHuaihai.jpg
+    author: Unknown author
+    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
 
 - id: cn-pingjin-campaign-194811
   date: '1948-11-29'
@@ -145,6 +157,12 @@
   sources:
     - 新华网
     - 中国共产党新闻网
+  image:
+    url: /images/events/1948/cn-pingjin-campaign-194811.jpg
+    caption: 1949年1月31日人民解放军进入北平，记录平津战役结束阶段的北平和平解放，非1948年11月29日战役发起现场
+    source: https://commons.wikimedia.org/wiki/File:PLA_Enters_Peking.jpg
+    author: 原上传者 Aukingluntom（原作者未详）
+    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
 
 - id: cn-pboc-first-rmb-194812
   date: '1948-12-01'
@@ -160,6 +178,12 @@
   sources:
     - 中国人民银行
     - 新华网
+  image:
+    url: /images/events/1948/cn-pboc-first-rmb-194812.jpg
+    caption: 中国人民银行第一套人民币100元票样；该版票样标注为1949年资料，用于第一套人民币实物背景，非1948年12月1日首发现场
+    source: https://commons.wikimedia.org/wiki/File:RMB1-100-7A.jpg
+    author: 中国人民银行
+    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
 
 - id: cn-kiangya-disaster-194812
   date: '1948-12-03'
@@ -175,3 +199,9 @@
   sources:
     - 上海市地方志办公室
     - 中国航海博物馆
+  image:
+    url: /images/events/1948/cn-kiangya-disaster-194812.jpg
+    caption: 1948年12月“江亚轮”沉没后的船体照片
+    source: https://commons.wikimedia.org/wiki/File:Sunk_of_SS_Kiangya.jpg
+    author: 申报（上海）
+    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）

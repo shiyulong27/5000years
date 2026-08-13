@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import crypto from 'node:crypto'
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -52,5 +53,47 @@ describe('1948 年重大事件补全', () => {
     const axisCell = fs.readFileSync(path.join(ROOT, 'src/components/AxisCell.astro'), 'utf8')
     expect(timeline).toMatch(/summaryYears\s*=\s*\[[^\]]*1948/)
     expect(axisCell).toMatch(/hasSummary\s*=\s*\[[^\]]*1948/)
+  })
+
+  it('五星事件及已核验的重点事件使用可追溯且不重复的真实配图', () => {
+    const illustratedIds = [
+      'cn-liaoshen-campaign-194809',
+      'cn-huaihai-campaign-194811',
+      'cn-pingjin-campaign-194811',
+      'cn-pboc-first-rmb-194812',
+      'cn-kiangya-disaster-194812',
+      'w-gandhi-assassination-194801',
+      'w-israel-founded-war-194805',
+      'w-south-africa-national-party-194805',
+      'w-manchester-baby-194806',
+      'w-berlin-blockade-airlift-194806',
+      'w-korean-two-states-194808',
+      'w-udhr-adopted-194812',
+    ]
+    const events = [...chinaEvents, ...worldEvents]
+    const hashes = new Set()
+
+    for (const event of events.filter((item) => item.importance === 5)) {
+      expect(event.image, `${event.id} 五星事件缺少配图`).toBeTypeOf('object')
+    }
+
+    for (const id of illustratedIds) {
+      const event = events.find((item) => item.id === id)
+      expect(event, `${id} 事件不存在`).toBeTruthy()
+      expect(event.image, `${id} 缺少配图`).toMatchObject({
+        url: expect.stringMatching(/^\/images\/events\/1948\/.+\.(?:jpg|png|webp)$/),
+        caption: expect.any(String),
+        source: expect.stringMatching(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/),
+        author: expect.any(String),
+        license: expect.any(String),
+      })
+
+      const imagePath = path.join(ROOT, 'public', event.image.url.replace(/^\//, ''))
+      expect(fs.existsSync(imagePath), `${id} 图片文件不存在`).toBe(true)
+      expect(fs.statSync(imagePath).size, `${id} 图片文件过小`).toBeGreaterThan(1024)
+      const hash = crypto.createHash('sha256').update(fs.readFileSync(imagePath)).digest('hex')
+      expect(hashes.has(hash), `${id} 与其他 1948 事件复用了同一图片`).toBe(false)
+      hashes.add(hash)
+    }
   })
 })
