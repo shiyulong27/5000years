@@ -53,13 +53,66 @@
   confidence: 确定
 
 - id: lugou-bridge-incident-1937
-  date: "1937"
+  date: '1937-07-07'
   title: 七七事变，全面抗战始
   category: 战争
-  tags: [战争, 历史转折]
+  tags:
+    - 战争
+    - 历史转折
+    - 抗日战争
   importance: 5
-  summary: 日军在北平卢沟桥发动挑衅，中国守军奋起反击，中华民族全面抗日战争爆发。
+  summary: 日军在北平卢沟桥附近挑起冲突，中国守军奋起抵抗，事变迅速扩大为全国性抗战，标志中华民族全面抗日战争爆发。
   confidence: 确定
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 中国共产党新闻网
+
+- id: cn-shanghai-battle-193708
+  date: '1937-08-13'
+  title: 淞沪会战爆发
+  category: 战争
+  importance: 5
+  summary: 中国军队在上海与日军展开大规模会战，战役持续三个月，虽最终撤退，但打破日本迅速迫降中国的企图，并使战争规模和国际关注显著扩大。
+  confidence: 确定
+  tags:
+    - 淞沪会战
+    - 抗日战争
+    - 上海
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-nanjing-falls-193712
+  date: '1937-12-13'
+  title: 南京沦陷，南京大屠杀开始
+  category: 战争
+  importance: 5
+  summary: 日军攻占南京后，对中国军民实施大规模屠杀、强奸、抢掠和纵火。南京大屠杀成为日本侵华战争中最严重的暴行之一，也成为世界反法西斯战争记忆的重要组成部分。
+  confidence: 确定
+  tags:
+    - 南京大屠杀
+    - 南京沦陷
+    - 战争罪行
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 南京大屠杀遇难同胞纪念馆
+
+- id: cn-capital-moves-chongqing-193711
+  date: '1937-11-20'
+  title: 国民政府迁都重庆
+  category: 政治
+  importance: 4
+  summary: 南京形势危急之际，国民政府宣布迁都重庆，战时中国政治、军事和外交中心转入西南内地，重庆成为长期抗战的重要后方基地。
+  confidence: 确定
+  tags:
+    - 重庆
+    - 国民政府
+    - 抗战后方
+  sources:
+    - 中文维基百科
+    - 英文维基百科
 
 - id: cn-taierzhuang-battle-193803
   date: '1938-03-24'

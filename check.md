@@ -2271,6 +2271,18 @@
 - 未配图说明：其余 5 条四星事件不强制配图；未使用版权不明图片或与事件关联较弱的现代纪念设施图。
 - 验证：`npm run validate` 通过；脚本检查 1938 年 4 条五星缺图与本节记录一致，且无图片字段引用不存在文件；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
 
+## 1937 年事件补全审查（2026-08-14）
+
+- 审查范围：1937 年中国事件与世界事件；此前中国侧仅有年份精度的 `lugou-bridge-incident-1937`，世界侧无 1937 年事件，且无 `src/pages/1937.astro` 与时间轴入口。
+- 修改后统计：将 `lugou-bridge-incident-1937` 日期精确到 `1937-07-07` 并补充 tags/sources/summary；新增中国事件 3 条、世界事件 3 条；共有五星事件 4 条、四星事件 3 条；五星事件因当前 Wikimedia 下载限流与南京大屠杀图源敏感性暂未写入图片字段。
+- 页面与路由：新增 `src/pages/1937.astro`，并在 `Timeline.astro` 与 `AxisCell.astro` 注册 1937 年入口。
+- 已读取/核验来源：中英文维基百科 1937 年、卢沟桥事变、淞沪会战、南京大屠杀、国民政府迁都重庆、兴登堡号空难、日本全面侵华战争、罗斯福隔离演说等条目；补查中国共产党新闻网、南京大屠杀遇难同胞纪念馆等资料。1978 年以前未找到可直接作为年度新闻清单的新华社 1937 年年度十大新闻正文，已用维基百科、党史资料和纪念馆资料交叉核验。
+- 新增/修正中国事件：修正 `lugou-bridge-incident-1937`；新增 `cn-shanghai-battle-193708`、`cn-capital-moves-chongqing-193711`、`cn-nanjing-falls-193712`。
+- 新增世界事件：`w-hindenburg-disaster-193705`、`w-japan-invades-china-193707`、`w-quarantine-speech-193710`。
+- 暂无合格本地配图：`lugou-bridge-incident-1937`、`cn-shanghai-battle-193708`、`cn-nanjing-falls-193712`、`w-japan-invades-china-193707`。当前 Wikimedia 下载持续限流；南京大屠杀相关照片另需严肃核验授权、图像边界和展示适宜性，本次不强行配图。
+- 未配图说明：其余 3 条四星事件不强制配图；未使用版权不明图片或与事件关联较弱的现代纪念设施图。
+- 验证：`npm run validate` 通过；脚本检查 1937 年 4 条五星缺图与本节记录一致，且无图片字段引用不存在文件；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
+
 ## 1947 年事件补全审查（2026-08-13）
 
 - 审查范围：1947 年中国事件 5 条、世界事件 6 条；其中五级 7 条、四级 4 条。

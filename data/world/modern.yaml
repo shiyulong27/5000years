@@ -44,6 +44,51 @@
   importance: 5
   summary: 华尔街股市崩盘引发全球经济大萧条，数千万人失业，加深了国际危机。
   confidence: 确定
+- id: w-hindenburg-disaster-193705
+  date: '1937-05-06'
+  title: 兴登堡号空难发生
+  category: 灾害
+  importance: 4
+  summary: 德国齐柏林飞艇兴登堡号在美国新泽西州着陆时起火坠毁，造成重大人员伤亡，并终结了大型载客飞艇商业运营的黄金时期。
+  confidence: 确定
+  tags:
+    - 兴登堡号
+    - 航空事故
+    - 飞艇时代
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-japan-invades-china-193707
+  date: '1937-07-07'
+  title: 日本全面侵华战争爆发
+  category: 战争
+  importance: 5
+  summary: 卢沟桥事变后，日本与中国之间的局部冲突迅速扩大为全面战争，中日战争成为亚洲战场的核心，并与后来的第二次世界大战紧密相连。
+  confidence: 确定
+  tags:
+    - 中日战争
+    - 卢沟桥事变
+    - 亚洲战场
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-quarantine-speech-193710
+  date: '1937-10-05'
+  title: 罗斯福发表“隔离演说”
+  category: 政治
+  importance: 4
+  summary: 罗斯福在芝加哥发表演说，主张对侵略国家进行“隔离”，反映美国孤立主义环境下对国际侵略扩张的警惕和政策转向压力。
+  confidence: 确定
+  tags:
+    - 隔离演说
+    - 美国外交
+    - 二战前夜
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-anschluss-193803
   date: '1938-03-12'
   title: 德国吞并奥地利
