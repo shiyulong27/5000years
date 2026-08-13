@@ -4,7 +4,7 @@
 # 二者在世系、年数上多有出入，且无出土文字可证。
 # 故全部标 confidence: 有争议，年代为推定值而非确考。
 #
-# 此处只录关键几位（开国、中兴、末代），非全部十七王。
+# 按传统文献世系完整收录十七王。
 
 - dynasty: xia
   temple_name: 禹
@@ -12,6 +12,7 @@
   reign_start: "-2070"
   reign_end: "-2061"
   era_names: []
+  tags: [帝王]
   note: 治水有功，受舜禅让
   role: founder
   confidence: 有争议
@@ -27,7 +28,8 @@
   reign_start: "-2061"
   reign_end: "-2052"
   era_names: []
-  note: 首开世袭，家天下之始
+  tags: [帝王]
+  note: 首位世袭君主，家天下之始
   confidence: 有争议
   dispute: |
     继位方式有两说。《史记》称禹传位于益，益让于启；
@@ -35,14 +37,158 @@
     前者维护禅让叙事，后者直言武力夺位，两说不可调和。
 
 - dynasty: xia
+  temple_name: 太康
+  name: 姒太康
+  reign_start: "-2052"
+  reign_end: "-2023"
+  era_names: []
+  tags: [帝王]
+  note: 启之后继位，传统叙事中因失政而失国
+  confidence: 有争议
+  dispute: 传统世系虽见于《史记·夏本纪》等传世文献，但无同时代文字自证；具体在位年代仅为后世推定。
+
+- dynasty: xia
+  temple_name: 仲康
+  name: 姒仲康
+  reign_start: "-2023"
+  reign_end: "-1996"
+  era_names: []
+  tags: [帝王]
+  note: 太康之后继位，列于夏代传统世系
+  confidence: 有争议
+  dispute: 传统世系虽见于《史记·夏本纪》等传世文献，但无同时代文字自证；具体在位年代仅为后世推定。
+
+- dynasty: xia
+  temple_name: 相
+  name: 姒相
+  reign_start: "-1996"
+  reign_end: "-1968"
+  era_names: []
+  tags: [帝王]
+  note: 仲康之子，传统叙事中失国期前的夏王
+  confidence: 有争议
+  dispute: 传统世系虽见于《史记·夏本纪》等传世文献，但无同时代文字自证；具体在位年代仅为后世推定。
+
+- dynasty: xia
   temple_name: 少康
   name: 姒少康
   reign_start: "-1940"
   reign_end: "-1919"
   era_names: []
+  tags: [帝王]
   note: 少康中兴，复夏之祚
   confidence: 有争议
   dispute: 年代为推定，各家所定相差可达百年。
+
+- dynasty: xia
+  temple_name: 杼
+  name: 姒杼
+  reign_start: "-1919"
+  reign_end: "-1902"
+  era_names: []
+  tags: [帝王]
+  note: 少康之子，承继中兴后的夏代王统
+  confidence: 有争议
+  dispute: 传统世系虽见于《史记·夏本纪》等传世文献，但无同时代文字自证；具体在位年代仅为后世推定。
+
+- dynasty: xia
+  temple_name: 槐
+  name: 姒槐
+  reign_start: "-1902"
+  reign_end: "-1858"
+  era_names: []
+  tags: [帝王]
+  note: 杼之后继位，列于夏代传统世系
+  confidence: 有争议
+  dispute: 传统世系虽见于《史记·夏本纪》等传世文献，但无同时代文字自证；具体在位年代仅为后世推定。
+
+- dynasty: xia
+  temple_name: 芒
+  name: 姒芒
+  reign_start: "-1858"
+  reign_end: "-1840"
+  era_names: []
+  tags: [帝王]
+  note: 槐之后继位，列于夏代传统世系
+  confidence: 有争议
+  dispute: 传统世系虽见于《史记·夏本纪》等传世文献，但无同时代文字自证；具体在位年代仅为后世推定。
+
+- dynasty: xia
+  temple_name: 泄
+  name: 姒泄
+  reign_start: "-1840"
+  reign_end: "-1824"
+  era_names: []
+  tags: [帝王]
+  note: 芒之后继位，列于夏代传统世系
+  confidence: 有争议
+  dispute: 传统世系虽见于《史记·夏本纪》等传世文献，但无同时代文字自证；具体在位年代仅为后世推定。
+
+- dynasty: xia
+  temple_name: 不降
+  name: 姒不降
+  reign_start: "-1824"
+  reign_end: "-1765"
+  era_names: []
+  tags: [帝王]
+  note: 泄之后继位，列于夏代传统世系
+  confidence: 有争议
+  dispute: 传统世系虽见于《史记·夏本纪》等传世文献，但无同时代文字自证；具体在位年代仅为后世推定。
+
+- dynasty: xia
+  temple_name: 扃
+  name: 姒扃
+  reign_start: "-1765"
+  reign_end: "-1744"
+  era_names: []
+  tags: [帝王]
+  note: 不降之后继位，列于夏代传统世系
+  confidence: 有争议
+  dispute: 传统世系虽见于《史记·夏本纪》等传世文献，但无同时代文字自证；具体在位年代仅为后世推定。
+
+- dynasty: xia
+  temple_name: 廑
+  name: 姒廑
+  reign_start: "-1744"
+  reign_end: "-1723"
+  era_names: []
+  tags: [帝王]
+  note: 扃之后继位，列于夏代传统世系
+  confidence: 有争议
+  dispute: 传统世系虽见于《史记·夏本纪》等传世文献，但无同时代文字自证；具体在位年代仅为后世推定。
+
+- dynasty: xia
+  temple_name: 孔甲
+  name: 姒孔甲
+  reign_start: "-1723"
+  reign_end: "-1692"
+  era_names: []
+  tags: [帝王]
+  note: 廑之后继位，传统叙事将其统治视为夏末危机加深的阶段
+  confidence: 有争议
+  dispute: 传统世系虽见于《史记·夏本纪》等传世文献，但无同时代文字自证；具体在位年代仅为后世推定。
+
+- dynasty: xia
+  temple_name: 皋
+  name: 姒皋
+  reign_start: "-1692"
+  reign_end: "-1681"
+  era_names: []
+  tags: [帝王]
+  note: 孔甲之后继位，列于夏代传统世系
+  confidence: 有争议
+  dispute: 传统世系虽见于《史记·夏本纪》等传世文献，但无同时代文字自证；具体在位年代仅为后世推定。
+
+- dynasty: xia
+  temple_name: 发
+  name: 姒发
+  reign_start: "-1681"
+  reign_end: "-1652"
+  era_names: []
+  tags: [帝王]
+  note: 皋之后继位，为桀之前的夏王
+  confidence: 有争议
+  dispute: 传统世系虽见于《史记·夏本纪》等传世文献，但无同时代文字自证；具体在位年代仅为后世推定。
 
 - dynasty: xia
   temple_name: 桀
@@ -50,6 +196,7 @@
   reign_start: "-1652"
   reign_end: "-1601"
   era_names: []
+  tags: [帝王]
   note: 夏末代君主，为商汤所灭
   role: last
   confidence: 有争议
