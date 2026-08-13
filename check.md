@@ -2170,6 +2170,25 @@
 - 未配图说明：其余 12 条四星事件不强制配图；未使用版权不明图片或与事件关联较弱的机构外景图。
 - 验证：`npm run validate` 通过；脚本检查 1944 年全部五星事件均有图片且本地文件大于 1 KiB；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
 
+## 1943 年事件补全审查（2026-08-13）
+
+- 审查范围：1943 年中国事件与世界事件；此前 `data/events/minguo.yaml`、`data/world/modern.yaml` 中均无 1943 年事件，且无 `src/pages/1943.astro` 与时间轴入口。
+- 修改后统计：新增中国事件 4 条、世界事件 9 条；其中五星事件 5 条、四星事件 8 条；4 条五星事件新增配图，1 条五星事件因未找到合格可复用图源保持无图。
+- 页面与路由：新增 `src/pages/1943.astro`，并在 `Timeline.astro` 与 `AxisCell.astro` 注册 1943 年入口。
+- 已读取/核验来源：中英文维基百科 1943 年、1943 in China、治外法权废除、美国第十四航空队、常德会战、开罗会议、斯大林格勒战役、库尔斯克战役、德黑兰会议、莫斯科宣言等条目；补查中国共产党新闻网、新华网、联合国和相关国际组织资料。1978 年以前未找到可直接作为年度新闻清单的新华社 1943 年年度十大新闻正文，已用维基百科、党史资料和国际组织资料交叉核验。
+- 新增中国事件：`cn-extraterritoriality-abolished-194301`、`cn-us-14th-air-force-194303`、`cn-changde-battle-194311`、`cn-cairo-conference-194311`。
+- 新增世界事件：`w-casablanca-conference-194301`、`w-stalingrad-surrender-194302`、`w-warsaw-ghetto-uprising-194304`、`w-kursk-battle-194307`、`w-allied-invasion-sicily-194307`、`w-italy-armistice-194309`、`w-moscow-declarations-194310`、`w-tehran-conference-194311`、`w-cairo-declaration-194312`。
+
+| 事件 ID | Commons 文件页 | 作者/机构 | 许可 | 图注边界 |
+|---|---|---|---|---|
+| `cn-cairo-conference-194311` | [Cairo conference.jpg](https://commons.wikimedia.org/wiki/File:Cairo_conference.jpg) | United States Government | Public domain | 开罗会议三国领导人合影 |
+| `w-stalingrad-surrender-194302` | [Bundesarchiv Bild 183-J17815](https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J17815,_Russland,_Kampf_um_Stalingrad,_Soldaten.jpg) | Bundesarchiv | CC BY-SA 3.0 de | 斯大林格勒战役战场背景资料，非2月2日投降现场 |
+| `w-kursk-battle-194307` | [Soviet troops and T-34 tanks counterattacking Kursk](https://commons.wikimedia.org/wiki/File:Soviet_troops_and_T-34_tanks_counterattacking_Kursk_Voronezh_Front_July_1943.jpg) | RIA Novosti archive | CC BY-SA 3.0 | 库尔斯克战役期间苏军反击照片 |
+| `w-tehran-conference-194311` | [Tehran Conference, 1943.jpg](https://commons.wikimedia.org/wiki/File:Tehran_Conference,_1943.jpg) | United States Army | Public domain | 德黑兰会议三国领导人合影 |
+
+- 暂无合格配图：`cn-extraterritoriality-abolished-194301`。检索结果主要为条约文本、PDF 或版权/来源不清的签署照片，未找到合格 JPG/PNG 历史现场图，故保持无图并记录。
+- 验证：`npm run validate` 通过；脚本检查 1943 年已引用图片均存在且大于 1 KiB，唯一五星缺图为已记录的 `cn-extraterritoriality-abolished-194301`；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
+
 ## 1947 年事件补全审查（2026-08-13）
 
 - 审查范围：1947 年中国事件 5 条、世界事件 6 条；其中五级 7 条、四级 4 条。

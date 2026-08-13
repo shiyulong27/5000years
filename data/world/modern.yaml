@@ -55,6 +55,159 @@
   summary: 德国入侵波兰，二战全面爆发，战火遍及全球，造成空前伤亡。
   confidence: 确定
 
+- id: w-casablanca-conference-194301
+  date: '1943-01-14'
+  title: 卡萨布兰卡会议召开
+  category: 政治
+  importance: 4
+  summary: 罗斯福与丘吉尔在卡萨布兰卡会晤，协调盟军地中海和欧洲战略，并提出轴心国必须无条件投降的原则，影响此后盟国战争目标表述。
+  confidence: 确定
+  tags:
+    - 卡萨布兰卡会议
+    - 二战外交
+    - 无条件投降
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-stalingrad-surrender-194302
+  date: '1943-02-02'
+  title: 斯大林格勒战役结束
+  category: 战争
+  importance: 5
+  summary: 德军第六集团军在斯大林格勒地区投降，苏军取得决定性胜利，德国在东线的战略主动权彻底丧失，二战欧洲战场进入根本转折阶段。
+  confidence: 确定
+  tags:
+    - 斯大林格勒战役
+    - 苏德战争
+    - 二战转折
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+  image:
+    url: /images/events/1943/w-stalingrad-surrender-194302.jpg
+    caption: 斯大林格勒战役中的德军士兵，作为1943年战役结束的战场背景资料
+    source: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J17815,_Russland,_Kampf_um_Stalingrad,_Soldaten.jpg
+    author: Bundesarchiv, Bild 183-J17815
+    license: CC BY-SA 3.0 de
+
+- id: w-warsaw-ghetto-uprising-194304
+  date: '1943-04-19'
+  title: 华沙隔都起义爆发
+  category: 战争
+  importance: 4
+  summary: 华沙隔都犹太抵抗者反抗纳粹清场和驱逐行动，起义最终被镇压，但成为大屠杀期间犹太武装抵抗的重要象征。
+  confidence: 确定
+  tags:
+    - 华沙隔都起义
+    - 大屠杀
+    - 犹太抵抗
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-kursk-battle-194307
+  date: '1943-07-05'
+  title: 库尔斯克战役爆发
+  category: 战争
+  importance: 5
+  summary: 德军在库尔斯克突出部发动大规模攻势，苏军防御并反攻获胜，德国装甲力量遭受重创，东线战局由此稳定转入苏军持续进攻。
+  confidence: 确定
+  tags:
+    - 库尔斯克战役
+    - 苏德战争
+    - 二战转折
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+  image:
+    url: /images/events/1943/w-kursk-battle-194307.jpg
+    caption: 1943年7月库尔斯克战役期间，苏军部队和 T-34 坦克反击
+    source: https://commons.wikimedia.org/wiki/File:Soviet_troops_and_T-34_tanks_counterattacking_Kursk_Voronezh_Front_July_1943.jpg
+    author: RIA Novosti archive
+    license: CC BY-SA 3.0
+
+- id: w-allied-invasion-sicily-194307
+  date: '1943-07-10'
+  title: 盟军登陆西西里
+  category: 战争
+  importance: 4
+  summary: 盟军在西西里岛实施登陆作战，打开意大利战役序幕，并促成墨索里尼政权在同月垮台，轴心国欧洲南翼开始瓦解。
+  confidence: 确定
+  tags:
+    - 西西里登陆
+    - 意大利战役
+    - 第二次世界大战
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-italy-armistice-194309
+  date: '1943-09-08'
+  title: 意大利宣布停战
+  category: 战争
+  importance: 4
+  summary: 意大利王国与盟军达成停战并公开宣布，随后德国占领意大利北部和中部，意大利战场转入盟军、德军和意大利抵抗力量的复杂拉锯。
+  confidence: 确定
+  tags:
+    - 意大利停战
+    - 轴心国
+    - 第二次世界大战
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-moscow-declarations-194310
+  date: '1943-10-30'
+  title: 莫斯科宣言发表
+  category: 政治
+  importance: 4
+  summary: 美、英、苏、中发表莫斯科宣言，确认战后建立普遍性国际组织维护和平，并就意大利、奥地利和战争罪责等问题作出安排，是联合国构想制度化的重要前奏。
+  confidence: 确定
+  tags:
+    - 莫斯科宣言
+    - 联合国
+    - 战后秩序
+  sources:
+    - United Nations
+    - 英文维基百科
+
+- id: w-tehran-conference-194311
+  date: '1943-11-28'
+  title: 德黑兰会议召开
+  category: 政治
+  importance: 5
+  summary: 罗斯福、丘吉尔和斯大林在德黑兰会晤，协调开辟第二战场、对德作战和战后安排，标志反法西斯同盟最高层战略协同进入关键阶段。
+  confidence: 确定
+  tags:
+    - 德黑兰会议
+    - 二战外交
+    - 战后秩序
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+  image:
+    url: /images/events/1943/w-tehran-conference-194311.jpg
+    caption: 1943年德黑兰会议期间，斯大林、罗斯福、丘吉尔合影
+    source: https://commons.wikimedia.org/wiki/File:Tehran_Conference,_1943.jpg
+    author: United States Army
+    license: Public domain
+
+- id: w-cairo-declaration-194312
+  date: '1943-12-01'
+  title: 《开罗宣言》发表
+  category: 政治
+  importance: 4
+  summary: 中、美、英三国发表《开罗宣言》，明确对日作战目标及战后日本归还所窃取中国领土等原则，成为战后东亚秩序安排的重要文件。
+  confidence: 确定
+  tags:
+    - 开罗宣言
+    - 对日作战
+    - 战后秩序
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-cassino-monastery-bombed-194402
   date: '1944-02-15'
   title: 盟军轰炸卡西诺山修道院

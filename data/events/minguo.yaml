@@ -61,6 +61,74 @@
   summary: 日军在北平卢沟桥发动挑衅，中国守军奋起反击，中华民族全面抗日战争爆发。
   confidence: 确定
 
+- id: cn-extraterritoriality-abolished-194301
+  date: '1943-01-11'
+  title: 中美、中英新约签署，废除在华治外法权
+  category: 政治
+  importance: 5
+  summary: 中国分别同美国、英国签署新约，宣布废除在华治外法权并取消有关租界、领事裁判权等不平等条约特权，标志中国国际地位在抗战中显著提升。
+  confidence: 确定
+  tags:
+    - 不平等条约
+    - 治外法权
+    - 抗战外交
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 中国共产党新闻网
+
+- id: cn-us-14th-air-force-194303
+  date: '1943-03-10'
+  title: 陈纳德组建美国第十四航空队
+  category: 战争
+  importance: 4
+  summary: 美国第十四航空队在中国战区组建，承接飞虎队作战传统，继续支援中国抗战、打击日军交通线和空中力量，成为中美军事合作的重要组成部分。
+  confidence: 确定
+  tags:
+    - 陈纳德
+    - 第十四航空队
+    - 中美合作
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-changde-battle-194311
+  date: '1943-11-02'
+  title: 常德会战爆发
+  category: 战争
+  importance: 4
+  summary: 日军进攻湖南常德地区，中国军队顽强防守并组织反攻，战役牵制日军兵力，成为抗战后期正面战场的重要会战之一。
+  confidence: 确定
+  tags:
+    - 常德会战
+    - 抗日战争
+    - 正面战场
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-cairo-conference-194311
+  date: '1943-11-22'
+  title: 蒋介石出席开罗会议
+  category: 政治
+  importance: 5
+  summary: 中国、美国、英国三国首脑在开罗会晤，讨论对日作战和战后亚洲安排；随后发表的《开罗宣言》确认日本所窃取的中国领土应归还中国，奠定战后东亚秩序的重要原则。
+  confidence: 确定
+  tags:
+    - 开罗会议
+    - 开罗宣言
+    - 战后秩序
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+    - 新华网
+  image:
+    url: /images/events/1943/cn-cairo-conference-194311.jpg
+    caption: 1943年开罗会议期间，蒋介石、罗斯福、丘吉尔合影
+    source: https://commons.wikimedia.org/wiki/File:Cairo_conference.jpg
+    author: United States Government
+    license: Public domain
+
 - id: cn-operation-ichigo-194404
   date: '1944-04-17'
   title: 日军发动一号作战，豫湘桂战役爆发
