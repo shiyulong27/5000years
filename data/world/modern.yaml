@@ -44,6 +44,67 @@
   importance: 5
   summary: 华尔街股市崩盘引发全球经济大萧条，数千万人失业，加深了国际危机。
   confidence: 确定
+- id: w-saar-plebiscite-193501
+  date: '1935-01-13'
+  title: 萨尔公投决定回归德国
+  category: 政治
+  importance: 4
+  summary: 国际联盟托管下的萨尔地区举行公投，绝大多数选民支持回归德国。纳粹德国由此获得一次重大外交宣传胜利，并进一步挑战凡尔赛体系。
+  confidence: 确定
+  tags:
+    - 萨尔公投
+    - 国际联盟
+    - 纳粹德国
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-germany-rearmament-193503
+  date: '1935-03-16'
+  title: 德国宣布恢复征兵和重整军备
+  category: 政治
+  importance: 5
+  summary: 希特勒宣布恢复义务兵役并公开扩军，直接违反《凡尔赛条约》军事限制，标志纳粹德国公开重整军备并加速欧洲安全危机。
+  confidence: 确定
+  tags:
+    - 德国重整军备
+    - 凡尔赛体系
+    - 纳粹德国
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-nuremberg-laws-193509
+  date: '1935-09-15'
+  title: 纽伦堡法案颁布
+  category: 政治
+  importance: 5
+  summary: 纳粹德国颁布《纽伦堡法案》，剥夺犹太人的德国公民权并禁止所谓“雅利安人”与犹太人通婚，纳粹反犹政策进入制度化、法律化阶段。
+  confidence: 确定
+  tags:
+    - 纽伦堡法案
+    - 纳粹德国
+    - 大屠杀
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+    - United States Holocaust Memorial Museum
+
+- id: w-italy-invades-ethiopia-193510
+  date: '1935-10-03'
+  title: 意大利入侵埃塞俄比亚
+  category: 战争
+  importance: 5
+  summary: 意大利军队入侵埃塞俄比亚，第二次意大利-埃塞俄比亚战争爆发。国际联盟制裁无力，集体安全机制受重创，法西斯国家扩张气焰上升。
+  confidence: 确定
+  tags:
+    - 埃塞俄比亚
+    - 意大利法西斯
+    - 国际联盟
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-rhineland-remilitarization-193603
   date: '1936-03-07'
   title: 德国重新军事化莱茵兰

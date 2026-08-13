@@ -43,6 +43,53 @@
   summary: 日本关东军炸毁柳条湖段铁路，袭击沈阳北大营，占领东北全境，十四年抗战揭幕。
   confidence: 确定
 
+- id: cn-zunyi-conference-193501
+  date: '1935-01-15'
+  title: 遵义会议召开
+  category: 政治
+  importance: 5
+  summary: 中共中央政治局在贵州遵义召开扩大会议，集中总结第五次反“围剿”和长征初期军事指挥问题，确立以毛泽东为代表的新的中央领导集体在军事和组织上的重要地位，成为中共历史上的重要转折。
+  confidence: 确定
+  tags:
+    - 遵义会议
+    - 长征
+    - 中国共产党
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 中国共产党新闻网
+
+- id: cn-long-march-arrives-shaanbei-193510
+  date: '1935-10-19'
+  title: 中央红军到达陕北
+  category: 战争
+  importance: 5
+  summary: 中央红军长征到达陕北吴起镇，与陕北红军会合，中央根据地由南方转向西北，保存了中国共产党和红军的核心力量。
+  confidence: 确定
+  tags:
+    - 长征
+    - 陕北
+    - 红军
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 中国共产党新闻网
+
+- id: cn-wayao-bao-conference-193512
+  date: '1935-12-17'
+  title: 瓦窑堡会议召开
+  category: 政治
+  importance: 4
+  summary: 中共中央在陕北瓦窑堡召开会议，分析华北事变后国内外形势，提出建立抗日民族统一战线的政策方向，为后续国共关系调整奠定基础。
+  confidence: 确定
+  tags:
+    - 瓦窑堡会议
+    - 抗日民族统一战线
+    - 中国共产党
+  sources:
+    - 中文维基百科
+    - 中国共产党新闻网
+
 - id: xian-incident-1936
   date: '1936-12-12'
   title: 西安事变
