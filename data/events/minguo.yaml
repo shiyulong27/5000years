@@ -63,13 +63,65 @@
 
 
 - id: victory-over-japan-1945
-  date: "1945"
+  date: '1945-09-02'
   title: 抗战胜利
   category: 政治
-  tags: [军事, 历史转折]
   importance: 5
-  summary: 日本签署无条件投降书，中国取得抗日战争完全胜利，收复台湾及澎湖列岛。
+  summary: 日本代表在东京湾密苏里号军舰上签署无条件投降书，中国抗日战争暨世界反法西斯战争东方主战场取得完全胜利，战后中国恢复对台湾、澎湖列岛等地的主权。
   confidence: 确定
+  tags:
+    - 抗日战争
+    - 世界反法西斯战争
+    - 历史转折
+  sources:
+    - 新华网
+    - 中国共产党新闻网
+    - 英文维基百科
+
+- id: cn-cpc-seventh-congress-194504
+  date: '1945-04-23'
+  title: 中国共产党第七次全国代表大会在延安开幕
+  category: 政治
+  importance: 5
+  summary: 中共七大在延安召开，确立毛泽东思想为党的指导思想，制定夺取抗战胜利和建设新民主主义中国的政治路线，为战后中国政治格局奠定重要组织与思想基础。
+  confidence: 确定
+  tags:
+    - 中共七大
+    - 延安
+    - 毛泽东思想
+  sources:
+    - 中国共产党新闻网
+    - 中文维基百科
+
+- id: cn-chongqing-negotiations-194508
+  date: '1945-08-28'
+  title: 毛泽东赴重庆谈判，国共签署“双十协定”
+  category: 政治
+  importance: 5
+  summary: 毛泽东应蒋介石邀请抵达重庆参加国共谈判，双方于10月10日签署《政府与中共代表会谈纪要》，即“双十协定”，围绕和平建国、政治民主化和军队国家化等问题作出政治承诺。
+  confidence: 确定
+  tags:
+    - 重庆谈判
+    - 双十协定
+    - 国共关系
+  sources:
+    - 中国共产党新闻网
+    - 中文维基百科
+
+- id: cn-taiwan-retrocession-194510
+  date: '1945-10-25'
+  title: 中国战区台湾省受降仪式举行
+  category: 政治
+  importance: 5
+  summary: 中国战区台湾省受降仪式在台北举行，日本在台湾的殖民统治结束，中国恢复对台湾及澎湖列岛行使主权，10月25日后来被称为台湾光复节。
+  confidence: 确定
+  tags:
+    - 台湾光复
+    - 抗战胜利
+    - 主权恢复
+  sources:
+    - 新华网
+    - 中文维基百科
 
 - id: cn-feb28-incident-194702
   date: '1947-02-28'
