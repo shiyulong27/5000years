@@ -61,6 +61,58 @@
   summary: 日军在北平卢沟桥发动挑衅，中国守军奋起反击，中华民族全面抗日战争爆发。
   confidence: 确定
 
+- id: cn-new-fourth-army-incident-194101
+  date: '1941-01-06'
+  title: 皖南事变爆发
+  category: 政治
+  importance: 5
+  summary: 国民党军队在皖南围攻奉命北移的新四军军部及所属部队，新四军遭受重大损失。事变使国共合作抗战关系严重恶化，也促使中共中央重建新四军军部并调整敌后抗战布局。
+  confidence: 确定
+  tags:
+    - 皖南事变
+    - 新四军
+    - 国共关系
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 中国共产党新闻网
+  image:
+    url: /images/events/1941/cn-new-fourth-army-incident-194101.jpg
+    caption: 1941年1月中共中央革命军事委员会重建新四军军部命令，作为皖南事变后续处置资料
+    source: https://commons.wikimedia.org/wiki/File:Order_of_the_Rebuilding_New_Fourth_Army.jpg
+    author: Central Military Commission of the Chinese Communist Party
+    license: Public domain
+
+- id: cn-chongqing-tunnel-massacre-194106
+  date: '1941-06-05'
+  title: 重庆大隧道惨案发生
+  category: 灾害
+  importance: 4
+  summary: 日军空袭重庆期间，大量民众进入防空隧道避难，因拥挤、通风不足和管理混乱发生严重窒息踩踏惨案，成为重庆大轰炸中伤亡最惨重的民间灾难之一。
+  confidence: 确定
+  tags:
+    - 重庆大轰炸
+    - 防空隧道
+    - 抗日战争
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-hong-kong-battle-194112
+  date: '1941-12-08'
+  title: 香港保卫战爆发
+  category: 战争
+  importance: 4
+  summary: 太平洋战争爆发后，日军进攻香港，英军、加拿大军和香港本地守军进行抵抗，12月25日香港沦陷并进入日占时期。
+  confidence: 确定
+  tags:
+    - 香港保卫战
+    - 太平洋战争
+    - 香港日占时期
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
 - id: cn-yanan-rectification-194202
   date: '1942-02-01'
   title: 延安整风运动开始

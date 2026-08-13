@@ -2210,6 +2210,26 @@
 - 未配图说明：其余 9 条四星事件不强制配图；未使用版权不明图片或与事件关联较弱的现代纪念设施图。
 - 验证：`npm run validate` 通过；脚本检查 1942 年所有已引用图片文件均存在且为真实 JPG/PNG，文件均大于 1 KiB；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
 
+## 1941 年事件补全审查（2026-08-13）
+
+- 审查范围：1941 年中国事件与世界事件；此前 `data/events/minguo.yaml`、`data/world/modern.yaml` 中均无 1941 年事件，且无 `src/pages/1941.astro` 与时间轴入口。
+- 修改后统计：新增中国事件 3 条、世界事件 9 条；其中五星事件 5 条、四星事件 7 条；五星事件均已配图。
+- 页面与路由：新增 `src/pages/1941.astro`，并在 `Timeline.astro` 与 `AxisCell.astro` 注册 1941 年入口。
+- 已读取/核验来源：中英文维基百科 1941 年、皖南事变、重庆大隧道惨案、香港保卫战、租借法案、巴尔干战役、巴巴罗萨行动、大西洋宪章、列宁格勒围困、巴比亚尔大屠杀、莫斯科战役、珍珠港事件、德国对美宣战等条目；补查中国共产党新闻网、Library of Congress、FDR Library、U.S. National Archives 等资料。1978 年以前未找到可直接作为年度新闻清单的新华社 1941 年年度十大新闻正文，已用维基百科、党史资料和国际组织/档案机构资料交叉核验。
+- 新增中国事件：`cn-new-fourth-army-incident-194101`、`cn-chongqing-tunnel-massacre-194106`、`cn-hong-kong-battle-194112`。
+- 新增世界事件：`w-lend-lease-act-194103`、`w-germany-invades-balkans-194104`、`w-operation-barbarossa-194106`、`w-atlantic-charter-194108`、`w-leningrad-siege-begins-194109`、`w-babi-yar-massacre-194109`、`w-soviet-counteroffensive-moscow-194112`、`w-pearl-harbor-us-enters-war-194112`、`w-germany-italy-declare-war-us-194112`。
+
+| 事件 ID | 图源页面 | 作者/机构 | 许可 | 图注边界 |
+|---|---|---|---|---|
+| `cn-new-fourth-army-incident-194101` | [Order of the Rebuilding New Fourth Army](https://commons.wikimedia.org/wiki/File:Order_of_the_Rebuilding_New_Fourth_Army.jpg) | Central Military Commission of the Chinese Communist Party | Public domain | 重建新四军军部命令，作为皖南事变后续处置资料 |
+| `w-lend-lease-act-194103` | [President Franklin D. Roosevelt-1941.jpg](https://commons.wikimedia.org/wiki/File:President_Franklin_D._Roosevelt-1941.jpg) | Library of Congress / New York World-Telegram and the Sun staff photographer | Public domain | 罗斯福签署租借法案现场 |
+| `w-operation-barbarossa-194106` | [Operation Barbarossa map](https://commons.wikimedia.org/wiki/File:Operation_Barbarossa_(26_August_-_5_December_1941).jpg) | The History Department of the United States Military Academy | Public domain | 战役推进示意图，非战场照片 |
+| `w-atlantic-charter-194108` | [FDR Library Atlantic Charter](https://www.fdrlibrary.org/atlantic-charter) | Franklin D. Roosevelt Presidential Library and Museum | Public domain | 大西洋会议期间罗斯福与丘吉尔会晤照片 |
+| `w-pearl-harbor-us-enters-war-194112` | [U.S. National Archives USS Arizona](https://www.archives.gov/research/still-pictures/highlights/uss-arizona-burning) | US National Archives | Public domain | 1941年12月7日珍珠港遭袭现场 |
+
+- 未配图说明：其余 7 条四星事件不强制配图；未使用版权不明图片或与事件关联较弱的现代纪念设施图。
+- 验证：`npm run validate` 通过；脚本检查 1941 年所有五星事件均有图片且已引用图片文件均为真实 JPG，文件均大于 1 KiB；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
+
 ## 1947 年事件补全审查（2026-08-13）
 
 - 审查范围：1947 年中国事件 5 条、世界事件 6 条；其中五级 7 条、四级 4 条。

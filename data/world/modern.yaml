@@ -55,6 +55,168 @@
   summary: 德国入侵波兰，二战全面爆发，战火遍及全球，造成空前伤亡。
   confidence: 确定
 
+- id: w-lend-lease-act-194103
+  date: '1941-03-11'
+  title: 美国《租借法案》签署
+  category: 政治
+  importance: 5
+  summary: 罗斯福签署《租借法案》，授权美国向英国、中国、苏联等反轴心国力量提供军事和物资援助，标志美国在正式参战前已深度介入反法西斯战争。
+  confidence: 确定
+  tags:
+    - 租借法案
+    - 美国外交
+    - 二战援助
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+    - Library of Congress
+  image:
+    url: /images/events/1941/w-lend-lease-act-194103.jpg
+    caption: 1941年3月11日，罗斯福签署 H.R.1776 租借法案
+    source: https://commons.wikimedia.org/wiki/File:President_Franklin_D._Roosevelt-1941.jpg
+    author: Library of Congress / New York World-Telegram and the Sun staff photographer
+    license: Public domain
+
+- id: w-germany-invades-balkans-194104
+  date: '1941-04-06'
+  title: 德军入侵南斯拉夫和希腊
+  category: 战争
+  importance: 4
+  summary: 德国发动巴尔干战役，入侵南斯拉夫和希腊并迅速控制巴尔干要地，为轴心国稳定东南欧侧翼并准备对苏战争创造条件。
+  confidence: 确定
+  tags:
+    - 巴尔干战役
+    - 南斯拉夫战役
+    - 希腊战役
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-operation-barbarossa-194106
+  date: '1941-06-22'
+  title: 德国发动巴巴罗萨行动
+  category: 战争
+  importance: 5
+  summary: 纳粹德国及其盟国撕毁苏德互不侵犯条约，大规模入侵苏联，苏德战争爆发。欧洲战场由此扩大为决定二战走向的陆上主战场。
+  confidence: 确定
+  tags:
+    - 巴巴罗萨行动
+    - 苏德战争
+    - 二战转折
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+  image:
+    url: /images/events/1941/w-operation-barbarossa-194106.jpg
+    caption: 巴巴罗萨行动后期推进态势图，作为1941年德军入侵苏联的战役示意
+    source: https://commons.wikimedia.org/wiki/File:Operation_Barbarossa_(26_August_-_5_December_1941).jpg
+    author: The History Department of the United States Military Academy
+    license: Public domain
+
+- id: w-atlantic-charter-194108
+  date: '1941-08-14'
+  title: 《大西洋宪章》公布
+  category: 政治
+  importance: 5
+  summary: 罗斯福与丘吉尔在大西洋会晤后公布《大西洋宪章》，提出战后国际秩序原则，并成为后续《联合国家宣言》和联合国构想的重要政治基础。
+  confidence: 确定
+  tags:
+    - 大西洋宪章
+    - 二战外交
+    - 战后秩序
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+    - FDR Library
+  image:
+    url: /images/events/1941/w-atlantic-charter-194108.jpg
+    caption: 1941年8月大西洋会议期间，罗斯福与丘吉尔在军舰上会晤
+    source: https://www.fdrlibrary.org/atlantic-charter
+    author: Franklin D. Roosevelt Presidential Library and Museum
+    license: Public domain
+
+- id: w-leningrad-siege-begins-194109
+  date: '1941-09-08'
+  title: 列宁格勒围困开始
+  category: 战争
+  importance: 4
+  summary: 德军和芬兰军队切断列宁格勒陆上交通，城市进入长期围困。围困造成极其严重的平民伤亡，成为苏德战争中最残酷的城市围困之一。
+  confidence: 确定
+  tags:
+    - 列宁格勒围困
+    - 苏德战争
+    - 平民伤亡
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-babi-yar-massacre-194109
+  date: '1941-09-29'
+  title: 巴比亚尔大屠杀发生
+  category: 战争
+  importance: 4
+  summary: 纳粹德国特别行动队及协作者在基辅附近巴比亚尔峡谷屠杀犹太人和平民，成为大屠杀早期大规模枪杀行动的典型惨案。
+  confidence: 确定
+  tags:
+    - 巴比亚尔
+    - 大屠杀
+    - 战争罪行
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-soviet-counteroffensive-moscow-194112
+  date: '1941-12-05'
+  title: 苏军在莫斯科城下发动反攻
+  category: 战争
+  importance: 4
+  summary: 苏军在莫斯科方向发动冬季反攻，迫使德军后退并粉碎其短期攻占苏联首都的计划，德军闪击战在东线遭遇重大挫折。
+  confidence: 确定
+  tags:
+    - 莫斯科战役
+    - 苏德战争
+    - 二战转折
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-pearl-harbor-us-enters-war-194112
+  date: '1941-12-07'
+  title: 日本偷袭珍珠港，美国参加二战
+  category: 战争
+  importance: 5
+  summary: 日本海军航空兵突袭美国太平洋舰队基地珍珠港，次日美国对日宣战并正式参加第二次世界大战，太平洋战争全面爆发并使二战真正全球化。
+  confidence: 确定
+  tags:
+    - 珍珠港事件
+    - 太平洋战争
+    - 美国参战
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+    - National Archives
+  image:
+    url: /images/events/1941/w-pearl-harbor-us-enters-war-194112.jpg
+    caption: 1941年12月7日珍珠港遭袭期间，美国战列舰亚利桑那号燃烧沉没
+    source: https://www.archives.gov/research/still-pictures/highlights/uss-arizona-burning
+    author: US National Archives
+    license: Public domain
+
+- id: w-germany-italy-declare-war-us-194112
+  date: '1941-12-11'
+  title: 德意对美国宣战
+  category: 战争
+  importance: 4
+  summary: 珍珠港事件后，德国和意大利对美国宣战，美国随即对德意宣战，欧洲战争与太平洋战争在战略上进一步连为一个全球冲突。
+  confidence: 确定
+  tags:
+    - 美国参战
+    - 德国对美宣战
+    - 第二次世界大战
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-declaration-united-nations-194201
   date: '1942-01-01'
   title: 《联合国家宣言》签署
