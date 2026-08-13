@@ -45,15 +45,90 @@
   summary: 华尔街股市崩盘引发全球经济大萧条，数千万人失业，加深了国际危机。
   confidence: 确定
 - id: w-ww2-1939
-  date: '1939'
+  date: '1939-09-01'
   title: 二战全面爆发
   category: 战争
   tags:
     - 战争
     - 历史转折
   importance: 5
-  summary: 德国入侵波兰，二战全面爆发，战火遍及全球，造成空前伤亡。
+  summary: 德国入侵波兰，英国和法国随后对德宣战，第二次世界大战全面爆发。战火此后扩展至欧洲、亚洲、非洲和太平洋，造成空前伤亡并重塑国际秩序。
   confidence: 确定
+
+- id: w-spanish-civil-war-ends-193904
+  date: '1939-04-01'
+  title: 西班牙内战结束
+  category: 战争
+  importance: 4
+  summary: 佛朗哥领导的国民军取得胜利，西班牙共和国失败，西班牙进入长期威权统治。内战也成为二战前欧洲意识形态与军事力量对抗的重要预演。
+  confidence: 确定
+  tags:
+    - 西班牙内战
+    - 佛朗哥
+    - 欧洲政治
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-khalkhin-gol-battle-193905
+  date: '1939-05-11'
+  title: 诺门罕战役爆发
+  category: 战争
+  importance: 4
+  summary: 苏蒙军队与日满军队在哈拉哈河地区爆发大规模冲突，朱可夫指挥苏蒙军队获胜。战役影响日本北进战略判断，并间接改变其后续南进方向。
+  confidence: 确定
+  tags:
+    - 诺门罕战役
+    - 苏日冲突
+    - 朱可夫
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-molotov-ribbentrop-pact-193908
+  date: '1939-08-23'
+  title: 苏德互不侵犯条约签署
+  category: 政治
+  importance: 5
+  summary: 苏联与德国签署互不侵犯条约及秘密议定书，划分东欧势力范围。该条约为德国入侵波兰和欧洲大战爆发创造了关键外交条件。
+  confidence: 确定
+  tags:
+    - 苏德互不侵犯条约
+    - 秘密议定书
+    - 二战前夜
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-soviet-invasion-poland-193909
+  date: '1939-09-17'
+  title: 苏联入侵波兰东部
+  category: 战争
+  importance: 4
+  summary: 德国入侵波兰后，苏联根据苏德秘密议定书进入波兰东部，波兰被两大强权夹击并被分割，东欧秩序随之剧变。
+  confidence: 确定
+  tags:
+    - 波兰战役
+    - 苏联
+    - 东欧
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-winter-war-begins-193911
+  date: '1939-11-30'
+  title: 苏芬冬季战争爆发
+  category: 战争
+  importance: 4
+  summary: 苏联进攻芬兰，冬季战争爆发。芬兰军队在严寒和兵力劣势下顽强抵抗，战争引发国际关注并使苏联受到国际联盟谴责。
+  confidence: 确定
+  tags:
+    - 冬季战争
+    - 苏芬战争
+    - 国际联盟
+  sources:
+    - 英文维基百科
+    - 中文维基百科
 
 - id: w-winter-war-peace-194003
   date: '1940-03-13'

@@ -61,6 +61,51 @@
   summary: 日军在北平卢沟桥发动挑衅，中国守军奋起反击，中华民族全面抗日战争爆发。
   confidence: 确定
 
+- id: cn-nanchang-campaign-193903
+  date: '1939-03-17'
+  title: 南昌会战爆发
+  category: 战争
+  importance: 4
+  summary: 日军为控制赣北交通和威胁华中后方，在江西发动南昌作战并占领南昌。会战显示武汉失守后中国正面战场仍在长江中游持续牵制日军。
+  confidence: 确定
+  tags:
+    - 南昌会战
+    - 抗日战争
+    - 正面战场
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-battle-changsha-193909
+  date: '1939-09-17'
+  title: 第一次长沙会战爆发
+  category: 战争
+  importance: 5
+  summary: 日军进攻湖南长沙，中国军队依托湘北、赣西战场展开防御和反击，最终迫使日军撤退。第一次长沙会战是抗战相持阶段中国正面战场的重要胜利之一。
+  confidence: 确定
+  tags:
+    - 第一次长沙会战
+    - 抗日战争
+    - 正面战场
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-wang-jingwei-defects-193912
+  date: '1939-12-30'
+  title: 汪精卫集团公开投日路线
+  category: 政治
+  importance: 4
+  summary: 汪精卫集团在脱离重庆国民政府后继续同日本方面接洽，并推动建立南京傀儡政权的政治安排，成为 1940 年汪伪政权成立的直接前奏。
+  confidence: 确定
+  tags:
+    - 汪精卫
+    - 汪伪政权
+    - 抗战政治
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
 - id: cn-wang-jingwei-regime-194003
   date: '1940-03-30'
   title: 南京国民政府成立
