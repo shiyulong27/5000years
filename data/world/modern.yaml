@@ -671,7 +671,7 @@
     - OPEC
     - Wikipedia
   image:
-    url: "/images/events/1960/w-opec-founded-196009.svg"
+    url: "/images/events/1960/w-opec-founded-196009.png"
     caption: "石油输出国组织（OPEC）标志（作为1960年巴格达成立事件的组织识别图）"
     source: "https://commons.wikimedia.org/wiki/File:OPEC_Logo.svg"
     author: "Unknown author"
@@ -1718,12 +1718,6 @@
     - 联合国人权事务高级专员办事处
     - 联合国大会
     - Wikipedia—International Bill of Human Rights
-  image:
-    url: /images/events/1966/w-human-rights-covenants-196612.pdf
-    caption: "《公民权利和政治权利国际公约》1966年12月16日联合国通过的官方文本资料；与同日通过的另一项公约共同构成两项公约背景"
-    source: "https://commons.wikimedia.org/wiki/File%3AInternational_Covenant_on_Civil_and_Political_Rights.pdf"
-    author: "United Nations Human Rights Committee"
-    license: "Public domain"
 - id: w-apollo-1-fire-196701
   date: '1967-01-27'
   title: 阿波罗1号地面测试火灾
@@ -4922,7 +4916,7 @@
     - 新华网
     - 维基百科
   image:
-    url: "/images/events/1989/w-polish-semi-free-election-198906.svg"
+    url: "/images/events/1989/w-polish-semi-free-election-198906.png"
     caption: "1989年波兰议会选举各选区结果图（首轮竞争性席位）"
     source: "https://commons.wikimedia.org/wiki/File:1989_Polish_parliamentary_election.svg"
     author: "沁水湾"
@@ -5474,7 +5468,7 @@
     - 世界贸易组织
     - 维基百科
   image:
-    url: "/images/events/1995/w-wto-founded-199501.svg"
+    url: "/images/events/1995/w-wto-founded-199501.png"
     caption: "世界贸易组织创始成员（1995年1月1日）分布图"
     source: "https://commons.wikimedia.org/wiki/File:WTO_members.svg"
     author: "Emilfaro"
@@ -5975,7 +5969,7 @@
     - 维基百科
     - 新华网
   image:
-    url: "/images/events/2000/w-us-presidential-election-200011.svg"
+    url: "/images/events/2000/w-us-presidential-election-200011.png"
     caption: "2000年美国总统大选佛罗里达州逐选区结果图（计票争议核心州）"
     source: "https://commons.wikimedia.org/wiki/File:FL_President_2000.svg"
     author: "OrcaLord"
@@ -6155,7 +6149,7 @@
     - ICC
     - 维基百科
   image:
-    url: /images/events/2002/w-icc-statute-effective-200207.svg
+    url: /images/events/2002/w-icc-statute-effective-200207.png
     caption: 国际刑事法院标志资料图（用于2002年7月1日《罗马规约》生效及法院成立的机构背景；非成立日现场照片）
     source: https://commons.wikimedia.org/wiki/File:International_Criminal_Court_logo.svg
     author: Afrank99（后由 Commons 用户维护）
@@ -6340,7 +6334,7 @@
     - 维基百科
     - 新华网
   image:
-    url: /images/events/2004/w-eu-expansion-10-countries-200405.svg
+    url: /images/events/2004/w-eu-expansion-10-countries-200405.png
     caption: 欧盟2004年东扩成员变化图（深蓝为原成员，黄色为新增10国）
     source: https://commons.wikimedia.org/wiki/File:EU25-2004_European_Union_map_enlargement.svg
     author: Kolja21（基于Júlio Reis作品的衍生图）
@@ -6466,7 +6460,7 @@
     - 联合国
     - 维基百科
   image:
-    url: "/images/events/2005/w-kyoto-protocol-effective-200502.svg"
+    url: "/images/events/2005/w-kyoto-protocol-effective-200502.png"
     caption: "《京都议定书》缔约方状态图（全球气候治理背景资料图）"
     source: "https://commons.wikimedia.org/wiki/File:Kyoto_Protocol_parties.svg"
     author: "Canuckguy; Danlaycock"
@@ -6822,7 +6816,7 @@
     - 维基百科
     - 新华网
   image:
-    url: "/images/events/2007/w-subprime-mortgage-crisis-200704.svg"
+    url: "/images/events/2007/w-subprime-mortgage-crisis-200704.png"
     caption: "美国住房抵押贷款逾期率变化图（2000—2010年；次贷危机背景资料图）"
     source: "https://commons.wikimedia.org/wiki/File:Mortgage_delinquencies_by_loan_type_(2000%E2%80%932010).svg"
     author: "Isochrone"
@@ -6884,7 +6878,7 @@
     - IPCC
     - 维基百科
   image:
-    url: "/images/events/2007/w-ipcc-fourth-assessment-200711.svg"
+    url: "/images/events/2007/w-ipcc-fourth-assessment-200711.png"
     caption: "基于 IPCC 2007 年第四次评估报告的全球温度变化图（2007年11月资料图）"
     source: "https://commons.wikimedia.org/wiki/File:IPCC2007_Temperature_Change_Worldmap.svg"
     author: "MovGP0"
@@ -6925,7 +6919,7 @@
     - 维基百科
     - 新华网
   image:
-    url: "/images/events/2008/w-kosovo-independence-200802.svg"
+    url: "/images/events/2008/w-kosovo-independence-200802.png"
     caption: "各国承认科索沃独立情况图（事件背景资料图）"
     source: "https://commons.wikimedia.org/wiki/File:CountriesRecognizingKosovo.svg"
     author: "Alethiareg 等 Commons 贡献者"
@@ -7354,7 +7348,7 @@
     - 新华网
     - 维基百科
   image:
-    url: "/images/events/2010/w-eurozone-crisis-201005.svg"
+    url: "/images/events/2010/w-eurozone-crisis-201005.png"
     caption: "2011年欧元区成员与欧元区状态地图（作为2010年欧洲主权债务危机的区域背景资料图）"
     source: "https://commons.wikimedia.org/wiki/File:Eurozone_map-2011.svg"
     author: "Kolja21"
@@ -8269,7 +8263,7 @@
     - 科技
     - 历史转折
   image:
-    url: "/images/events/2016/w-alphago-lee-sedol-201603.svg"
+    url: "/images/events/2016/w-alphago-lee-sedol-201603.png"
     caption: "AlphaGo 与李世石对局第一局的棋谱图（对应 2016 年人机围棋比赛）"
     source: "https://commons.wikimedia.org/wiki/File:Lee_Sedol_(B)_vs_AlphaGo_(W)_-_Game_1.svg"
     author: "Wesalius"

@@ -2075,3 +2075,12 @@
 | cn-scitech-plan-196312 | `cn-scitech-plan-196312.jpg` | [Commons](https://commons.wikimedia.org/wiki/File:Zhou_Enlai_announced_the_success_of_China%27s_atomic_bomb_test.jpg) | Unknown author | Public domain（PD-China；Commons页面提示需另行核验美国版权状态） | 2026-08-13 | 周恩来1964年宣布首次原子弹试验成功，作为1963—1972科学技术规划的同期自主科技攻关背景，明确非1963年批准现场 |
 | cn-yinhe1-supercomputer-198311 | `cn-yinhe1-supercomputer-198311.png` | [Commons](https://commons.wikimedia.org/wiki/File:First_Russian-Chinese_translation_electronic_computer_in_China.png) | 华南理工大学 | Public domain（PD-China；Commons页面标注中国版权期满） | 2026-08-13 | 1959年中国第一台俄汉翻译电子计算机，作为银河-I之前的电子计算技术先导，明确非银河-I实物 |
 | cn-sino-soviet-normalization-198905 | `cn-sino-soviet-normalization-198905.jpg` | [Commons](https://commons.wikimedia.org/wiki/File:Gorbi_1989.jpg) | Jüppsche | CC BY-SA 2.0 Germany | 2026-08-13 | 戈尔巴乔夫1989年6月公开活动照片，作为中苏关系正常化的人物背景，明确非5月北京会晤现场 |
+
+## 配图重复与格式专项复审（2026-08-13）
+
+- 范围：`data/events/xiandai.yaml`、`data/world/modern.yaml` 的全部配图引用；不改事件事实、日期、重要性、摘要和来源字段。
+- 重复散列：共发现 8 组、涉及 29 条事件引用；每组保留与图片内容最直接对应的一条，移除其余 21 条复用引用及对应冗余文件。典型问题包括人民大会堂外景被跨年代会议事件批量套用、大庆石油列车被用于“八字方针”、京西宾馆外景及政策背景图跨事件复用。
+- 非展示格式：移除 4 条 PDF 文献型配图引用（`cn-11th-6th-plenum-resolution-198106`、`cn-tax-sharing-reform-199401`、`cn-11th-five-year-plan-200603`、`cn-fourth-plenum-18th-201410`）；这些图注均已说明并非事件现场，不适合作为卡片图片。
+- 低质量占位：移除 `cn-china-world-cup-debut-200206` 的 610 字节球衣样式小图引用；该图不是比赛现场，也不满足图片体积下限。
+- SVG 兼容：将 17 条仍具事件专属性的 SVG 地图、图表、标志和棋谱无损栅格化为 PNG，并将数据引用改为 `.png`；原始 Commons 来源、作者与许可元数据保持不变。
+- 复审结果：现有 501 条配图引用均为 JPG/PNG/WebP，文件全部存在且大于 1 KiB；SHA-256 全量扫描无重复组，配图专项 Vitest 通过。
