@@ -2331,6 +2331,18 @@
 - 未配图说明：其余 5 条四星事件不强制配图；未使用版权不明图片或与事件关联较弱的现代纪念设施图。
 - 验证：`npm run validate` 通过；脚本检查 1933 年 3 条五星缺图与本节记录一致，且无图片字段引用不存在文件；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
 
+## 1932 年事件补全审查（2026-08-14）
+
+- 审查范围：1932 年中国事件与世界事件；此前 `data/events/minguo.yaml`、`data/world/modern.yaml` 中均无 1932 年事件，且无 `src/pages/1932.astro` 与时间轴入口。
+- 修改后统计：新增中国事件 3 条、世界事件 5 条；其中五星事件 4 条、四星事件 4 条；4 条五星事件因当前 Wikimedia 下载限流暂未写入图片字段。
+- 页面与路由：新增 `src/pages/1932.astro`，并在 `Timeline.astro` 与 `AxisCell.astro` 注册 1932 年入口。
+- 已读取/核验来源：中英文维基百科 1932 年、一二八事变、伪满洲国、淞沪停战协定、史汀生主义、洛桑会议、沙特阿拉伯建国、查科战争、1932 年美国总统选举等条目；补查 Wikimedia Commons 图片候选。1978 年以前未找到可直接作为年度新闻清单的新华社 1932 年年度十大新闻正文，已用维基百科和历史条目交叉核验。
+- 新增中国事件：`cn-january-28-incident-193201`、`cn-manchukuo-founded-193203`、`cn-shanghai-ceasefire-193205`。
+- 新增世界事件：`w-stimson-doctrine-193201`、`w-lausanne-conference-193207`、`w-chaco-war-begins-193209`、`w-saudi-arabia-founded-193209`、`w-roosevelt-elected-193211`。
+- 暂无合格本地配图：`cn-january-28-incident-193201`、`cn-manchukuo-founded-193203`、`w-saudi-arabia-founded-193209`、`w-roosevelt-elected-193211`。当前 Wikimedia 下载持续限流，未落地真实图片文件；为避免引用不存在文件，本次保持无图并记录待后续补图。
+- 未配图说明：其余 4 条四星事件不强制配图；未使用版权不明图片或与事件关联较弱的现代纪念设施图。
+- 验证：`npm run validate` 通过；脚本检查 1932 年 4 条五星缺图与本节记录一致，且无图片字段引用不存在文件；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
+
 ## 1947 年事件补全审查（2026-08-13）
 
 - 审查范围：1947 年中国事件 5 条、世界事件 6 条；其中五级 7 条、四级 4 条。

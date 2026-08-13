@@ -43,6 +43,51 @@
   summary: 日本关东军炸毁柳条湖段铁路，袭击沈阳北大营，占领东北全境，十四年抗战揭幕。
   confidence: 确定
 
+- id: cn-january-28-incident-193201
+  date: '1932-01-28'
+  title: 一·二八事变爆发
+  category: 战争
+  importance: 5
+  summary: 日军进攻上海闸北等地，中国第十九路军和上海民众展开抵抗，淞沪抗战震动全国，也使日本侵略从东北进一步扩展至华东中心城市。
+  confidence: 确定
+  tags:
+    - 一二八事变
+    - 淞沪抗战
+    - 抗日战争
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-manchukuo-founded-193203
+  date: '1932-03-01'
+  title: 伪满洲国成立
+  category: 政治
+  importance: 5
+  summary: 日本扶植溥仪在东北成立伪满洲国，将九一八事变后的军事占领转化为傀儡政权统治，东北主权危机进一步制度化。
+  confidence: 确定
+  tags:
+    - 伪满洲国
+    - 日本侵华
+    - 东北
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-shanghai-ceasefire-193205
+  date: '1932-05-05'
+  title: 《淞沪停战协定》签署
+  category: 政治
+  importance: 4
+  summary: 中日双方在英美等国调停下签署《淞沪停战协定》，上海战事结束，但中国被迫接受撤军和非军事化安排，华东安全形势继续受制于日本压力。
+  confidence: 确定
+  tags:
+    - 淞沪停战协定
+    - 一二八事变
+    - 中日关系
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
 - id: cn-defense-great-wall-193301
   date: '1933-01-01'
   title: 长城抗战爆发

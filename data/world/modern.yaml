@@ -44,6 +44,81 @@
   importance: 5
   summary: 华尔街股市崩盘引发全球经济大萧条，数千万人失业，加深了国际危机。
   confidence: 确定
+- id: w-stimson-doctrine-193201
+  date: '1932-01-07'
+  title: 美国提出史汀生主义
+  category: 政治
+  importance: 4
+  summary: 美国国务卿史汀生宣布不承认以武力造成的中国东北局势改变，成为国际社会不承认日本侵略成果的重要外交立场。
+  confidence: 确定
+  tags:
+    - 史汀生主义
+    - 东北问题
+    - 美国外交
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-lausanne-conference-193207
+  date: '1932-07-09'
+  title: 洛桑会议结束德国赔款问题
+  category: 经济
+  importance: 4
+  summary: 洛桑会议就德国一战赔款达成安排，实质终结战后赔款体系，反映大萧条冲击下凡尔赛经济秩序的崩解。
+  confidence: 确定
+  tags:
+    - 洛桑会议
+    - 德国赔款
+    - 凡尔赛体系
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-saudi-arabia-founded-193209
+  date: '1932-09-23'
+  title: 沙特阿拉伯王国成立
+  category: 政治
+  importance: 5
+  summary: 阿卜杜勒阿齐兹将内志、汉志等地统一为沙特阿拉伯王国，现代沙特国家形成，对中东政治和后来的全球能源格局产生长期影响。
+  confidence: 确定
+  tags:
+    - 沙特阿拉伯
+    - 中东
+    - 国家建立
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-chaco-war-begins-193209
+  date: '1932-09-09'
+  title: 查科战争爆发
+  category: 战争
+  importance: 4
+  summary: 玻利维亚和巴拉圭围绕格兰查科地区爆发战争，成为两次世界大战之间拉丁美洲规模最大的国家间战争之一。
+  confidence: 确定
+  tags:
+    - 查科战争
+    - 玻利维亚
+    - 巴拉圭
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-roosevelt-elected-193211
+  date: '1932-11-08'
+  title: 罗斯福当选美国总统
+  category: 政治
+  importance: 5
+  summary: 富兰克林·罗斯福在大萧条背景下赢得美国总统选举，民主党重新执政，为 1933 年新政开启奠定政治基础。
+  confidence: 确定
+  tags:
+    - 罗斯福
+    - 美国总统选举
+    - 大萧条
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-hitler-chancellor-193301
   date: '1933-01-30'
   title: 希特勒出任德国总理
