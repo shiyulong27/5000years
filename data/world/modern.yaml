@@ -44,6 +44,83 @@
   importance: 5
   summary: 华尔街股市崩盘引发全球经济大萧条，数千万人失业，加深了国际危机。
   confidence: 确定
+- id: w-anschluss-193803
+  date: '1938-03-12'
+  title: 德国吞并奥地利
+  category: 政治
+  importance: 4
+  summary: 德国军队进入奥地利并推动两国合并，纳粹德国由此扩大领土和人口基础，也进一步破坏欧洲战后秩序。
+  confidence: 确定
+  tags:
+    - 德奥合并
+    - 纳粹德国
+    - 欧洲局势
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-munich-agreement-193809
+  date: '1938-09-30'
+  title: 《慕尼黑协定》签署
+  category: 政治
+  importance: 5
+  summary: 英国、法国、德国和意大利签署《慕尼黑协定》，迫使捷克斯洛伐克割让苏台德地区给德国。绥靖政策暂时避免战争，却使德国进一步增强并为后续扩张创造条件。
+  confidence: 确定
+  tags:
+    - 慕尼黑协定
+    - 绥靖政策
+    - 欧洲外交
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+    - United States Holocaust Memorial Museum
+
+- id: w-kristallnacht-193811
+  date: '1938-11-09'
+  title: 水晶之夜大屠杀发生
+  category: 战争
+  importance: 5
+  summary: 纳粹德国及其支持者在德国、奥地利和苏台德地区大规模袭击犹太人、焚烧会堂并毁坏商店，标志纳粹对犹太人的迫害从制度性歧视升级为公开暴力。
+  confidence: 确定
+  tags:
+    - 水晶之夜
+    - 纳粹德国
+    - 大屠杀
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+    - United States Holocaust Memorial Museum
+
+- id: w-spanish-ebro-offensive-193807
+  date: '1938-07-25'
+  title: 埃布罗战役爆发
+  category: 战争
+  importance: 4
+  summary: 西班牙共和国军队在埃布罗河发动大规模攻势，成为西班牙内战最后一次主要攻势。战役失败后共和国力量迅速衰弱，佛朗哥最终取得胜利。
+  confidence: 确定
+  tags:
+    - 埃布罗战役
+    - 西班牙内战
+    - 欧洲战争
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-first-vienna-award-193811
+  date: '1938-11-02'
+  title: 第一次维也纳仲裁裁决
+  category: 政治
+  importance: 4
+  summary: 德国和意大利通过仲裁迫使捷克斯洛伐克和罗马尼亚将部分以匈牙利人为主的领土割让给匈牙利，进一步瓦解中欧国家体系。
+  confidence: 确定
+  tags:
+    - 第一次维也纳仲裁
+    - 匈牙利
+    - 中欧秩序
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-ww2-1939
   date: '1939-09-01'
   title: 二战全面爆发

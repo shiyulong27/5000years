@@ -61,6 +61,67 @@
   summary: 日军在北平卢沟桥发动挑衅，中国守军奋起反击，中华民族全面抗日战争爆发。
   confidence: 确定
 
+- id: cn-taierzhuang-battle-193803
+  date: '1938-03-24'
+  title: 台儿庄战役爆发
+  category: 战争
+  importance: 5
+  summary: 中国军队在徐州会战期间于台儿庄及周边地区击败日军主力，取得全面抗战以来正面战场的重要胜利，打破日军不可战胜的神话并提振全国抗战信心。
+  confidence: 确定
+  tags:
+    - 台儿庄战役
+    - 徐州会战
+    - 抗日战争
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 中国共产党新闻网
+
+- id: cn-wuhan-battle-193806
+  date: '1938-06-11'
+  title: 武汉会战爆发
+  category: 战争
+  importance: 5
+  summary: 日军沿长江和大别山方向进攻武汉，中国军队展开大规模防御作战。武汉会战持续数月，虽以武汉失守结束，但消耗和迟滞日军，推动中国抗战进入长期相持阶段。
+  confidence: 确定
+  tags:
+    - 武汉会战
+    - 抗日战争
+    - 正面战场
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-guangzhou-falls-193810
+  date: '1938-10-21'
+  title: 广州失守
+  category: 战争
+  importance: 4
+  summary: 日军在华南登陆并攻占广州，切断中国南方重要的对外交通和援华物资通道，进一步加剧中国抗战后方的战略压力。
+  confidence: 确定
+  tags:
+    - 广州战役
+    - 抗日战争
+    - 华南战场
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-wuhan-falls-193810
+  date: '1938-10-25'
+  title: 武汉失守
+  category: 战争
+  importance: 4
+  summary: 中国军队主动撤出武汉三镇，日军相继占领武昌、汉口和汉阳。武汉失守后，中国抗战重心进一步向西南内地转移，正面战场进入战略相持阶段。
+  confidence: 确定
+  tags:
+    - 武汉会战
+    - 武汉失守
+    - 抗日战争
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
 - id: cn-nanchang-campaign-193903
   date: '1939-03-17'
   title: 南昌会战爆发
