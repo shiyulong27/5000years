@@ -205,3 +205,49 @@
     source: https://commons.wikimedia.org/wiki/File:Sunk_of_SS_Kiangya.jpg
     author: 申报（上海）
     license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
+
+- id: cn-ppcc-chongqing-194601
+  date: '1946-01-10'
+  title: 政治协商会议在重庆开幕
+  category: 政治
+  importance: 4
+  summary: 国民党、共产党、民主同盟、青年党和无党派人士代表在重庆召开政治协商会议，围绕政府改组、宪法草案、军队整编等议题达成一批协议，是战后中国争取和平建国的重要制度尝试。
+  confidence: 确定
+  tags:
+    - 政治协商会议
+    - 重庆
+    - 和平建国
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 中国共产党新闻网
+
+- id: cn-full-civil-war-194606
+  date: '1946-06-26'
+  title: 国民党军进攻中原解放区，全面内战爆发
+  category: 战争
+  importance: 5
+  summary: 国民党军大举进攻以宣化店为中心的中原解放区，中原军区部队随后突围，国共停战协定事实上破裂，解放战争进入全面内战阶段。
+  confidence: 确定
+  tags:
+    - 解放战争
+    - 中原突围
+    - 全面内战
+  sources:
+    - 中国共产党新闻网
+    - 中文维基百科
+
+- id: cn-constitution-adopted-194612
+  date: '1946-12-25'
+  title: 制宪国民大会通过《中华民国宪法》
+  category: 政治
+  importance: 4
+  summary: 制宪国民大会在南京通过《中华民国宪法》，规定五院体制与总统制等制度安排，并定于1947年12月25日施行；其通过过程也反映战后国共政治谈判破裂后的宪政争议。
+  confidence: 确定
+  tags:
+    - 中华民国宪法
+    - 制宪国民大会
+    - 民国政治
+  sources:
+    - 中文维基百科
+    - 英文维基百科

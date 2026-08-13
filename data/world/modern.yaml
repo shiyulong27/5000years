@@ -10423,3 +10423,111 @@
     source: https://commons.wikimedia.org/wiki/File:Eleanor_Roosevelt_UDHR.jpg
     author: FDR Presidential Library & Museum
     license: CC BY 2.0
+
+- id: w-un-general-assembly-first-194601
+  date: '1946-01-10'
+  title: 联合国大会第一届会议开幕
+  category: 政治
+  importance: 5
+  summary: 联合国大会第一届会议在伦敦开幕，51个创始会员国代表参加，随后安理会、经社理事会等联合国主要机构陆续开始运作，战后国际组织体系进入实际运行阶段。
+  confidence: 确定
+  tags:
+    - 联合国
+    - 战后秩序
+    - 国际组织
+  sources:
+    - United Nations
+    - 英文维基百科
+
+- id: w-eniac-announced-194602
+  date: '1946-02-14'
+  title: ENIAC 公布，电子通用计算机时代开启
+  category: 文化
+  importance: 4
+  summary: 美国宾夕法尼亚大学研制的 ENIAC 对外公布，作为早期电子通用数字计算机，它展示了高速电子计算的潜力，成为现代计算机发展史上的关键节点。
+  confidence: 确定
+  tags:
+    - ENIAC
+    - 计算机
+    - 科技史
+  sources:
+    - 宾夕法尼亚大学
+    - 美国国家标准与技术研究院
+    - 英文维基百科
+
+- id: w-iron-curtain-speech-194603
+  date: '1946-03-05'
+  title: 丘吉尔发表“铁幕”演说
+  category: 政治
+  importance: 5
+  summary: 英国前首相丘吉尔在美国富尔顿发表演说，称一幅“铁幕”横贯欧洲大陆，公开概括战后东西方对立格局，成为冷战早期政治语汇和阵营意识成形的标志性事件。
+  confidence: 确定
+  tags:
+    - 铁幕演说
+    - 冷战
+    - 欧洲
+  sources:
+    - 美国国务院历史办公室
+    - 英文维基百科
+
+- id: w-italy-republic-194606
+  date: '1946-06-02'
+  title: 意大利公投废除君主制，建立共和国
+  category: 政治
+  importance: 4
+  summary: 意大利举行制度公投，选民以多数支持废除君主制、建立共和国，同日还选出制宪会议，标志法西斯战败后意大利国家制度重建进入新阶段。
+  confidence: 确定
+  tags:
+    - 意大利
+    - 共和国
+    - 战后重建
+  sources:
+    - 意大利总统府
+    - Encyclopaedia Britannica
+    - 英文维基百科
+
+- id: w-philippines-independence-194607
+  date: '1946-07-04'
+  title: 菲律宾脱离美国正式独立
+  category: 政治
+  importance: 4
+  summary: 美国正式承认菲律宾共和国独立，菲律宾结束美国殖民与托管统治，成为战后亚洲去殖民化进程中的重要节点。
+  confidence: 确定
+  tags:
+    - 菲律宾
+    - 去殖民化
+    - 亚洲
+  sources:
+    - 美国国务院历史办公室
+    - 英文维基百科
+
+- id: w-nuremberg-verdicts-194610
+  date: '1946-10-01'
+  title: 纽伦堡国际军事法庭宣判
+  category: 政治
+  importance: 5
+  summary: 纽伦堡国际军事法庭对纳粹德国主要战犯作出判决，确立侵略战争、战争罪和反人类罪的审判实践，对战后国际刑事法和战争责任追究产生深远影响。
+  confidence: 确定
+  tags:
+    - 纽伦堡审判
+    - 国际法
+    - 二战清算
+  sources:
+    - United States Holocaust Memorial Museum
+    - 英文维基百科
+
+- id: w-unicef-founded-194612
+  date: '1946-12-11'
+  title: 联合国儿童基金会成立
+  category: 文化
+  importance: 4
+  summary: 联合国大会设立联合国国际儿童紧急基金，用于援助二战后欧洲和中国等地儿童，后来发展为联合国儿童基金会，成为全球儿童保护与发展援助的重要机构。
+  confidence: 确定
+  tags:
+    - UNICEF
+    - 联合国
+    - 儿童援助
+  sources:
+    - UNICEF
+    - United Nations
+    - 英文维基百科
