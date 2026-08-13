@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- This is a Stata 15.1 generated SVG file (http://www.stata.com) -->
+
+<svg version="1.1" width="5.50in" height="4.00in" viewBox="0 0 3960 2880" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>Stata Graph - GDP (current US$) - United States, China</desc>
+	<rect x="0" y="0" width="3960" height="2880" style="fill:#EAF2F3;stroke:none"/>
+	<rect x="0.00" y="0.00" width="3959.88" height="2880.00" style="fill:#EAF2F3"/>
+	<rect x="2.88" y="2.88" width="3954.12" height="2874.24" style="fill:none;stroke:#EAF2F3;stroke-width:5.76"/>
+	<rect x="336.60" y="275.35" width="3522.42" height="2058.27" style="fill:#FFFFFF"/>
+	<rect x="339.48" y="278.23" width="3516.66" height="2052.51" style="fill:none;stroke:#FFFFFF;stroke-width:5.76"/>
+	<line x1="336.60" y1="2270.39" x2="3859.02" y2="2270.39" style="stroke:#EAF2F3;stroke-width:8.64"/>
+	<line x1="336.60" y1="1819.68" x2="3859.02" y2="1819.68" style="stroke:#EAF2F3;stroke-width:8.64"/>
+	<line x1="336.60" y1="1369.09" x2="3859.02" y2="1369.09" style="stroke:#EAF2F3;stroke-width:8.64"/>
+	<line x1="336.60" y1="918.50" x2="3859.02" y2="918.50" style="stroke:#EAF2F3;stroke-width:8.64"/>
+	<line x1="336.60" y1="467.91" x2="3859.02" y2="467.91" style="stroke:#EAF2F3;stroke-width:8.64"/>
+	<path d=" M399.96 2221.38 L456.51 2219.65 L513.07 2215.81 L569.75 2212.84 L626.30 2208.64 L682.85 2203.31 L739.53 2196.88 L796.08 2192.67 L852.64 2185.49 L909.32 2178.44 L965.87 2173.61 L1022.42 2165.45 L1079.10 2155.17 L1135.65 2141.93 L1192.21 2131.17 L1248.88 2118.54 L1305.44 2101.59 L1361.99 2082.78 L1418.67 2058.40 L1475.22 2033.65 L1531.78 2012.86 L1588.45 1981.42 L1645.01 1969.05 L1701.56 1942.94 L1758.24 1906.55 L1814.79 1879.33 L1871.35 1857.67 L1928.03 1832.79 L1984.58 1798.51 L2041.13 1762.01 L2097.81 1732.93 L2154.36 1715.35 L2210.92 1682.81 L2267.59 1652.24 L2324.15 1613.63 L2380.83 1581.82 L2437.38 1542.84 L2493.93 1497.42 L2550.61 1453.61 L2607.16 1402.50 L2663.72 1346.44 L2720.40 1316.74 L2776.95 1284.81 L2833.50 1237.79 L2890.18 1169.72 L2946.74 1095.47 L3003.29 1025.42 L3059.97 968.00 L3116.52 944.49 L3173.07 968.25 L3229.75 919.24 L3286.30 869.62 L3342.86 810.71 L3399.54 757.74 L3456.09 690.79 L3512.64 627.93 L3569.32 583.75 L3625.88 511.23 L3682.43 415.69 L3739.11 338.84" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:#1A476F;stroke-width:8.64"/>
+	<path d=" M399.96 2265.07 L456.51 2265.93 L513.07 2266.18 L569.75 2265.81 L626.30 2265.07 L682.85 2264.08 L739.53 2263.46 L796.08 2263.83 L852.64 2263.95 L909.32 2263.21 L965.87 2262.10 L1022.42 2261.35 L1079.10 2260.12 L1135.65 2257.89 L1192.21 2257.39 L1248.88 2255.66 L1305.44 2256.53 L1361.99 2254.67 L1418.67 2256.90 L1475.22 2254.30 L1531.78 2253.19 L1588.45 2252.69 L1645.01 2251.95 L1701.56 2249.60 L1758.24 2247.00 L1814.79 2242.54 L1871.35 2243.29 L1928.03 2245.76 L1984.58 2242.30 L2041.13 2239.08 L2097.81 2237.84 L2154.36 2235.86 L2210.92 2231.90 L2267.59 2230.29 L2324.15 2219.53 L2380.83 2204.18 L2437.38 2192.55 L2493.93 2183.76 L2550.61 2177.70 L2607.16 2171.76 L2663.72 2161.24 L2720.40 2149.73 L2776.95 2137.85 L2833.50 2120.77 L2890.18 2094.16 L2946.74 2064.34 L3003.29 2022.39 L3059.97 1950.48 L3116.52 1856.31 L3173.07 1810.64 L3229.75 1721.79 L3286.30 1589.87 L3342.86 1501.51 L3399.54 1407.82 L3456.09 1326.27 L3512.64 1273.55 L3569.32 1257.96 L3625.88 1160.94 L3682.43 1018.12 L3739.11 983.47" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:#90353B;stroke-width:8.64"/>
+	<line x1="336.60" y1="2333.63" x2="336.60" y2="275.35" style="stroke:#000000;stroke-width:5.76"/>
+	<line x1="336.60" y1="2270.39" x2="296.63" y2="2270.39" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="276.58" y="2305.42" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="end">0</text>
+	<line x1="336.60" y1="1819.68" x2="296.63" y2="1819.68" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="276.58" y="1854.71" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="end">5tn</text>
+	<line x1="336.60" y1="1369.09" x2="296.63" y2="1369.09" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="276.58" y="1404.12" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="end">10tn</text>
+	<line x1="336.60" y1="918.50" x2="296.63" y2="918.50" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="276.58" y="953.53" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="end">15tn</text>
+	<line x1="336.60" y1="467.91" x2="296.63" y2="467.91" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="276.58" y="502.94" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="end">$20tn</text>
+	<line x1="336.60" y1="2333.63" x2="3859.02" y2="2333.63" style="stroke:#000000;stroke-width:5.76"/>
+	<line x1="399.96" y1="2333.63" x2="399.96" y2="2373.72" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="399.96" y="2463.58" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">1960</text>
+	<line x1="1531.90" y1="2333.63" x2="1531.90" y2="2373.72" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="1531.90" y="2463.58" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">1980</text>
+	<line x1="2663.84" y1="2333.63" x2="2663.84" y2="2373.72" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="2663.84" y="2463.58" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">2000</text>
+	<line x1="3795.78" y1="2333.63" x2="3795.78" y2="2373.72" style="stroke:#000000;stroke-width:5.76"/>
+	<text x="3795.78" y="2463.58" style="font-family:'Helvetica';font-size:99.99px;fill:#000000" text-anchor="middle">2020</text>
+	<rect x="867.74" y="2558.24" width="2460.15" height="186.37" style="fill:#FFFFFF"/>
+	<rect x="870.61" y="2561.12" width="2454.39" height="180.61" style="fill:none;stroke:#000000;stroke-width:5.76"/>
+	<line x1="911.05" y1="2651.43" x2="1285.39" y2="2651.43" style="stroke:#1A476F;stroke-width:8.64"/>
+	<line x1="2109.57" y1="2651.43" x2="2483.91" y2="2651.43" style="stroke:#90353B;stroke-width:8.64"/>
+	<text x="1345.41" y="2686.46" style="font-family:'Helvetica';font-size:99.99px;fill:#000000">United States</text>
+	<text x="2543.93" y="2686.46" style="font-family:'Helvetica';font-size:99.99px;fill:#000000">China, mainland</text>
+	<text x="2097.81" y="215.98" style="font-family:'Helvetica';font-size:139.96px;fill:#1E2D53" text-anchor="middle">GDP (current US$) - United States, China</text>
+</svg>

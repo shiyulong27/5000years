@@ -1,5 +1,5 @@
 - id: prc-founding-1949
-  date: '1949'
+  date: '1949-10-01'
   title: 开国大典
   category: 政治
   tags:
@@ -11,6 +11,9 @@
   image:
     url: /images/events/1949/prc_founding_ceremony_1949.jpg
     caption: 1949年10月1日毛泽东主席在天安门城楼庄严宣告中华人民共和国成立
+    source: "https://commons.wikimedia.org/wiki/File%3AFounding_Ceremony_of_People%27s_Republic_of_China.jpg"
+    author: "Unknown author"
+    license: "Public domain"
 - id: cn-yangtze-crossing-194904
   date: '1949-04-21'
   title: 渡江战役打响，解放军占领南京
@@ -25,6 +28,12 @@
   sources:
     - 新华网
     - 人民网
+  image:
+    url: "/images/events/1949/cn-yangtze-crossing-194904.jpg"
+    caption: "1949年：渡江战役打响，解放军占领南京"
+    source: "https://commons.wikimedia.org/wiki/File%3AYangtze_Crossing_Monument_-_P1070670.JPG"
+    author: "User:Vmenkov"
+    license: "CC BY-SA 3.0"
 - id: cn-cppcc-first-session-194909
   date: '1949-09-21'
   title: 中国人民政治协商会议第一届全体会议召开
@@ -39,6 +48,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: "/images/events/1949/cn-cppcc-first-session-194909.jpg"
+    caption: "1949年：中国人民政治协商会议第一届全体会议召开"
+    source: "https://commons.wikimedia.org/wiki/File%3A1st_CPPCC_conference.jpg"
+    author: "Unknown authorUnknown author"
+    license: "Public domain"
 - id: cn-prc-ussr-diplomatic-194910
   date: '1949-10-02'
   title: 中国与苏联正式建立外交关系
@@ -53,6 +68,12 @@
   sources:
     - 外交部档案馆
     - 新华网
+  image:
+    url: "/images/events/1949/cn-prc-ussr-diplomatic-194910.jpg"
+    caption: "1949年12月毛泽东在莫斯科与斯大林同框资料照片（中苏建交背景）"
+    source: "https://commons.wikimedia.org/wiki/File%3A1949_Mao_and_Stalin.jpg"
+    author: "未知（Commons 文件标注 Public domain）"
+    license: "Public domain"
 - id: cn-sino-soviet-treaty-195002
   date: '1950-02-14'
   title: 中苏签订《中苏友好同盟互助条约》
@@ -67,6 +88,12 @@
   sources:
     - 新华网
     - 中文维基百科
+  image:
+    url: "/images/events/1950/cn-sino-soviet-treaty-195002.jpg"
+    caption: "1950年：中苏签订《中苏友好同盟互助条约》"
+    source: "https://commons.wikimedia.org/wiki/File%3AVyshinsky%2C_Molotov%2C_Stalin_and_Mao_Zedong.jpg"
+    author: "Fedor Kislov / TASS"
+    license: "Public domain"
 - id: cn-unify-financial-economic-work-195003
   date: '1950-03-03'
   title: 政务院发布统一全国财政收支决定，彻底平抑物价与人民币币值
@@ -86,7 +113,7 @@
   title: 《中华人民共和国婚姻法》公布施行
   category: 政治
   importance: 5
-  summary: 新中国成立后制定的第一部大典性法律《中华人民共和国婚姻法》公布施行，废除封建婚姻制度，确立婚姻自由、一夫一妻和男女权利平等的崭新社会风尚。
+  summary: 新中国成立后制定的第一部法律《中华人民共和国婚姻法》公布施行，废除封建婚姻制度，确立婚姻自由、一夫一妻和男女权利平等的社会制度。
   confidence: 确定
   tags:
     - 法律
@@ -95,6 +122,12 @@
   sources:
     - 新华网
     - 中文维基百科
+  image:
+    url: "/images/events/1950/cn-marriage-law-195005.jpg"
+    caption: "《中华人民共和国婚姻法》原文扫描预览（1950年5月1日施行）"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%A9%9A%E5%A7%BB%E6%B3%95.pdf"
+    author: "全国人民代表大会"
+    license: "Public domain"
 - id: cn-hainan-liberation-195005
   date: '1950-05-01'
   title: 人民解放军解放海南岛
@@ -123,6 +156,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: "/images/events/1950/cn-cpc-7th-3rd-plenum-195006.jpg"
+    caption: "北京人民大会堂外景（2007年），作为1950年七届三中全会在北京召开的地点背景（非1950年会议现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0（兼容2.5/2.0/1.0；GFDL）"
 - id: cn-land-reform-law-195006
   date: '1950-06-30'
   title: 《中华人民共和国土地改革法》公布施行
@@ -137,6 +176,12 @@
   sources:
     - 新华网
     - 中文维基百科
+  image:
+    url: "/images/events/1950/cn-land-reform-law-195006.jpg"
+    caption: "1950年：《中华人民共和国土地改革法》公布施行"
+    source: "https://commons.wikimedia.org/wiki/File%3AA_man_reads_the_Land_Reform_Law_of_PRC.jpg"
+    author: "Unknown authorUnknown author"
+    license: "Public domain"
 - id: cn-chamdo-campaign-195010
   date: '1950-10-06'
   title: 昌都战役打响
@@ -165,6 +210,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: "/images/events/1950/cn-campaign-suppress-counterrevolutionaries-195010.jpg"
+    caption: "1950年：中共中央发出“双十指示”，全国全面开展镇压反革命运动"
+    source: "https://commons.wikimedia.org/wiki/File%3ASuppress_counterrevolutionaries(1951).jpg"
+    author: "Unknown authorUnknown author"
+    license: "Public domain"
 - id: cn-enter-korean-war-195010
   date: '1950-10-19'
   title: 中国人民志愿军入朝作战
@@ -179,12 +230,18 @@
   sources:
     - 新华网
     - 中文维基百科
+  image:
+    url: "/images/events/1950/cn-enter-korean-war-195010.png"
+    caption: "1950年：中国人民志愿军入朝作战"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E5%BF%97%E6%84%BF%E5%86%9B%E8%83%B8%E7%AB%A0.svg"
+    author: "Georgezh9617"
+    license: "CC BY-SA 4.0"
 - id: cn-tibet-peaceful-liberation-195105
   date: '1951-05-23'
   title: 《和平解放西藏办法的协议》（十七条协议）签订
   category: 政治
   importance: 5
-  summary: 中央人民政府全权代表与西藏地方政府全权代表在北京签署《关于和平解放西藏办法的协议》，标志着西藏实现和平解放，祖国大陆实现完全统一。
+  summary: 中央人民政府全权代表与西藏地方政府全权代表在北京签署《关于和平解放西藏办法的协议》，标志着西藏实现和平解放，是中华人民共和国恢复对西藏行使主权的重要节点。
   confidence: 确定
   tags:
     - 西藏
@@ -193,6 +250,12 @@
   sources:
     - 新华网
     - 人民网
+  image:
+    url: "/images/events/1951/cn-tibet-peaceful-liberation-195105.png"
+    caption: "1951年：《和平解放西藏办法的协议》（十七条协议）签订"
+    source: "https://commons.wikimedia.org/wiki/File%3AFlag_of_Tibet.svg"
+    author: "Unknown authorUnknown author"
+    license: "Public domain"
 - id: cn-three-antis-campaign-195112
   date: '1951-12-01'
   title: 中共中央决定在党政机关开展“三反”运动
@@ -249,6 +312,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1952/cn-land-reform-basic-completed-195212.jpg
+    caption: 1952年7月广东佛冈土地改革现场资料照片（美国国家档案馆藏；用于呈现当年土改实践，非12月31日全国完成节点）
+    source: https://commons.wikimedia.org/wiki/File:Real_Story_of_Red_China_Land_Reform_-_NARA_-_5730064.jpg
+    author: U.S. Information Agency（原作者未详）
+    license: Public domain（美国政府档案）
 - id: cn-first-five-year-plan-195301
   date: '1953-01-01'
   title: 我国开始实施发展国民经济第一个五年计划（一五计划）
@@ -263,6 +332,12 @@
   sources:
     - 人民网
     - 国家发改委
+  image:
+    url: "/images/events/1953/cn-first-five-year-plan-195301.png"
+    caption: "1953年：我国开始实施发展国民经济第一个五年计划（一五计划）"
+    source: "https://commons.wikimedia.org/wiki/File%3AThe_Soviet_Union_1968_CPA_3655_stamp_(Young_Workers%2C_Dneprostroi_Dam_and_Order_of_the_Red_Banner_of_Labour_(Komsomol_and_Industry_Constructions_of_First_Five-Year_Plans).png"
+    author: "USSR Post"
+    license: "Public domain"
 - id: cn-korean-armistice-agreement-195307
   date: '1953-07-27'
   title: 《朝鲜停战协定》签署，抗美援朝战争取得伟大胜利
@@ -277,6 +352,12 @@
   sources:
     - 新华网
     - 国防部
+  image:
+    url: "/images/events/1953/cn-korean-armistice-agreement-195307.jpg"
+    caption: "1953年：《朝鲜停战协定》签署，抗美援朝战争取得伟大胜利"
+    source: "https://commons.wikimedia.org/wiki/File%3AKorean_Armistice_Agreement_in_Chinese_(1953).jpg"
+    author: "United States Department of State"
+    license: "Public domain"
 - id: cn-five-principles-peaceful-coexistence-195312
   date: '1953-12-31'
   title: 周恩来首次提出“和平共处五项原则”
@@ -291,6 +372,12 @@
   sources:
     - 外交部档案馆
     - 新华网
+  image:
+    url: "/images/events/1953/cn-five-principles-peaceful-coexistence-195312.png"
+    caption: "1953年：周恩来首次提出“和平共处五项原则”"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B%E5%9C%8B%E5%BE%BD.svg"
+    author: "multiple people, e.g. Lin Huiyin and Liang Sicheng, see [1]"
+    license: "Public domain"
 - id: cn-geneva-conference-195404
   date: '1954-04-26'
   title: 周恩来率团出席日内瓦会议
@@ -305,6 +392,12 @@
   sources:
     - 外交部档案馆
     - 新华网
+  image:
+    url: "/images/events/1954/cn-geneva-conference-195404.jpg"
+    caption: "1954年：周恩来率团出席日内瓦会议"
+    source: "https://commons.wikimedia.org/wiki/File%3A1954_Geneva_Conference.jpg"
+    author: "US Army Photograph"
+    license: "Public domain"
 - id: cn-first-npc-constitution-195409
   date: '1954-09-20'
   title: 第一届全国人大通过第一部《中华人民共和国宪法》
@@ -319,6 +412,12 @@
   sources:
     - 人民网
     - 全国人大网
+  image:
+    url: "/images/events/1954/cn-first-npc-constitution-195409.jpg"
+    caption: "1954年：第一届全国人大通过第一部《中华人民共和国宪法》（会议资料图）"
+    source: "https://commons.wikimedia.org/wiki/File%3ADalai_and_Panchen_voting_for_the_Constitution_of_the_People%27s_Republic_of_China.jpg"
+    author: "Unknown author"
+    license: "Public domain"
 - id: cn-kangting-tibet-highway-195412
   date: '1954-12-25'
   title: 川藏公路与青藏公路全线通车
@@ -347,6 +446,12 @@
   sources:
     - 外交部档案馆
     - 新华网
+  image:
+    url: "/images/events/1955/cn-bandung-conference-195504.jpg"
+    caption: "1955年：周恩来率团出席万隆会议并提出“求同存异”方针"
+    source: "https://commons.wikimedia.org/wiki/File%3AAsian%E2%80%93African_Conference_at_Bandung_April_1955.jpg"
+    author: "Unknown authorUnknown author"
+    license: "Public domain"
 - id: cn-pla-rank-system-195509
   date: '1955-09-27'
   title: 中国人民解放军首次实行军衔制，授予十大元帅和大将
@@ -361,6 +466,12 @@
   sources:
     - 国防部
     - 新华网
+  image:
+    url: "/images/events/1955/cn-pla-rank-system-195509.jpg"
+    caption: "1955年：中国人民解放军首次实行军衔制，授予十大元帅和大将"
+    source: "https://commons.wikimedia.org/wiki/File%3A%D0%9F%D0%B0%D1%80%D0%B0%D0%B4_%D0%B2_%D1%87%D0%B5%D1%81%D1%82%D1%8C_70-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D1%8B_-_40.jpg"
+    author: "Presidential Press and Information Office"
+    license: "CC BY 4.0"
 - id: cn-qian-xuesen-return-195510
   date: '1955-10-08'
   title: 著名科学家钱学森突破阻挠归国
@@ -375,6 +486,12 @@
   sources:
     - 中国科学院
     - 人民网
+  image:
+    url: "/images/events/1955/cn-qian-xuesen-return-195510.jpg"
+    caption: "钱学森与家人乘坐克利夫兰总统号返回中国途中（1955年9月18日资料图）"
+    source: "https://commons.wikimedia.org/wiki/File%3AHsue-shen_Tsien_with_his_family_onboard_SS_President_Cleveland.jpg"
+    author: "Los Angeles Times"
+    license: "CC BY 4.0"
 - id: cn-three-major-remoulding-195601
   date: '1956-01-15'
   title: 农业、手工业和资本主义工商业社会主义改造基本完成
@@ -389,6 +506,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1956/cn-three-major-remoulding-195601.jpg
+    caption: 1956年9月中共八大开幕会上毛泽东致开幕词，作为三大改造完成后社会主义制度建设的同期政治背景（非1月15日庆祝大会现场）
+    source: "https://commons.wikimedia.org/wiki/File:Big_issue_for_600_million_people.jpg"
+    author: "Unknown author"
+    license: "Public domain（PD-China；Commons页面提示需另行核验美国版权状态）"
 - id: cn-hundred-flowers-campaign-195604
   date: '1956-04-28'
   title: 毛泽东提出“百花齐放，百家争鸣”方针
@@ -417,6 +540,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: "/images/events/1956/cn-cpc-8th-congress-195609.jpg"
+    caption: "1956年：中共八大召开，明确国内主要矛盾转变为发展生产力需要"
+    source: "https://commons.wikimedia.org/wiki/File%3ASoong_Ching-ling_at_8th_National_Congress_of_CPC.jpg"
+    author: "Unknown authorUnknown author"
+    license: "Public domain"
 - id: cn-wuhan-yangtze-bridge-195710
   date: '1957-10-15'
   title: 武汉长江大桥建成通车，“一桥飞架南北”
@@ -431,6 +560,12 @@
   sources:
     - 新华网
     - 人民网
+  image:
+    url: "/images/events/1957/cn-wuhan-yangtze-bridge-195710.jpg"
+    caption: "1957年：武汉长江大桥建成通车，“一桥飞架南北”"
+    source: "https://commons.wikimedia.org/wiki/File%3AWuhan_Yangtze_River_Bridge-1.jpg"
+    author: "Fllee"
+    license: "CC BY-SA 3.0"
 - id: cn-first-five-year-plan-completed-195712
   date: '1957-12-31'
   title: “一五计划”超额完成，奠定新中国工业化初步基础
@@ -445,6 +580,12 @@
   sources:
     - 国家统计局
     - 人民网
+  image:
+    url: /images/events/1957/cn-first-five-year-plan-completed-195712.jpg
+    caption: 1957年广交会工业展厅，展示“一五计划”后期工业化成果的同期资料（非12月31日计划总结现场）
+    source: "https://commons.wikimedia.org/wiki/File:1957_Canton_Fair_Industry_showroom.jpg"
+    author: "新华社"
+    license: "Public domain（PD-China；Commons页面提示需另行核验美国版权状态）"
 - id: cn-great-leap-forward-195805
   date: '1958-05-05'
   title: 中共八大二次会议通过社会主义建设总路线，“大跃进”展开
@@ -459,6 +600,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: "/images/events/1958/cn-great-leap-forward-195805.jpg"
+    caption: "1958年：中共八大二次会议通过社会主义建设总路线，“大跃进”展开"
+    source: "https://commons.wikimedia.org/wiki/File%3ABrave_the_wind_and_the_waves.jpg"
+    author: "Wang Liuying (王柳影), Xin Liliang (忻礼良), Meng Muyi (孟幕颐), Xu Jiping (徐寄萍), Zhang Biwu (张碧梧), Wu Shaoyun (吴少云), Jin Zhaofang (金肇芳), Yu Weibo (俞微波), Lu Zezhi (陆泽之)"
+    license: "Public domain"
 - id: cn-jinmen-artillery-bombardment-195808
   date: '1958-08-23'
   title: 人民解放军福建前线部队发起炮击金门作战
@@ -473,6 +620,12 @@
   sources:
     - 国防部
     - 新华网
+  image:
+    url: "/images/events/1958/cn-jinmen-artillery-bombardment-195808.jpg"
+    caption: "金门炮战期间台海危机相关空军资料图（1958年9月15日，非炮击现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3ALockheed_F-104A_of_the_83rd_Fighter_Interceptor_Squadron_at_Taoyuan_Air_Base%2C_Taiwan%2C_on_Sept._15%2C_1958%2C_during_the_Quemoy_Crisis_-_Operation_Jonah_Able.jpg"
+    author: "USAF；National Museum of the U.S. Air Force"
+    license: "Public domain"
 - id: cn-peoples-commune-movement-195808
   date: '1958-08-29'
   title: 中共中央通过《关于在农村建立人民公社问题的决议》
@@ -487,6 +640,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: "/images/events/1958/cn-peoples-commune-movement-195808.jpg"
+    caption: "1958年：中共中央通过《关于在农村建立人民公社问题的决议》"
+    source: "https://commons.wikimedia.org/wiki/File%3APeople's_commune_canteen2.jpg"
+    author: "Unknown authorUnknown author"
+    license: "Public domain"
 - id: cn-rong-guotuan-world-champion-195904
   date: '1959-04-05'
   title: 容国团夺得第25届世乒赛男单冠军，系新中国首个世界冠军
@@ -501,6 +660,12 @@
   sources:
     - 国家体育总局
     - 新华网
+  image:
+    url: "/images/events/1959/cn-rong-guotuan-world-champion-195904.jpg"
+    caption: "1959 年容国团比赛资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ARongguotuan.jpg"
+    author: "Unknown author"
+    license: "Public domain"
 - id: cn-lushan-conference-195907
   date: '1959-07-02'
   title: 中共中央召开庐山会议
@@ -515,6 +680,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: "/images/events/1959/cn-lushan-conference-195907.jpg"
+    caption: "1959年：中共中央召开庐山会议"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E5%BA%90%E5%B1%B1%E4%BC%9A%E8%AE%AE%E6%97%A7%E5%9D%80.JPG"
+    author: "Gisling"
+    license: "CC BY-SA 3.0"
 - id: cn-daqing-field-discovery-195909
   date: '1959-09-26'
   title: 松辽平原松基三井喜喷工业油流，发现大庆油田
@@ -530,8 +701,11 @@
     - 人民网
     - 新华网
   image:
-    url: /images/events/1959/daqing_oilfield_1959.jpg
-    caption: 1959年9月松辽平原松基三井喜喷工业油流，大庆油田诞生
+    url: /images/events/1959/cn-daqing-field-discovery-195909.jpg
+    caption: 1960年6月1日第一列载石油的火车驶出大庆油田，作为1959年油田发现后的早期开发成果背景（非9月26日松基三井现场）
+    source: "https://commons.wikimedia.org/wiki/File:First_train_of_oil_in_Daqing.jpg"
+    author: "Unknown author"
+    license: "Public domain（PD-China；Commons页面提示需另行核验美国版权状态）"
 - id: cn-10th-anniversary-parade-195910
   date: '1959-10-01'
   title: 庆祝新中国成立10周年，首都十大建筑竣工并举行盛大阅兵
@@ -602,6 +776,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: /images/events/1960/cn-daqing-oil-field-battle-196004.jpg
+    caption: 1960年6月1日第一列载油火车驶出大庆油田资料图（事件后续生产节点，非4月29日会战誓师现场）
+    source: https://commons.wikimedia.org/wiki/File:First_train_of_oil_leaving_Daqing.jpg
+    author: 原作者未详（大庆日报资料图）
+    license: Public domain（中国大陆版权期届满）
 - id: cn-everest-north-summit-196005
   date: '1960-05-25'
   title: 中国登山队首次从北坡登顶珠穆朗玛峰
@@ -616,6 +796,12 @@
   sources:
     - 中央纪委国家监委网站
     - 党史权威文献
+  image:
+    url: "/images/events/1960/cn-everest-north-summit-196005.jpg"
+    caption: "1960年：中国登山队首次从北坡登顶珠穆朗玛峰"
+    source: "https://commons.wikimedia.org/wiki/File%3AEverest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+    author: "Luca Galuzzi (Lucag)"
+    license: "CC BY-SA 2.5"
 - id: cn-soviet-withdrawal-experts-196007
   date: '1960-07-16'
   title: 苏联政府照会中国单方面撤走全部在华专家
@@ -630,6 +816,12 @@
   sources:
     - 外交部档案馆
     - 党史权威文献
+  image:
+    url: "/images/events/1960/cn-soviet-withdrawal-experts-196007.jpg"
+    caption: "苏联领导人赫鲁晓夫1960年9月22日在联合国大会的照片，作为苏联撤走在华专家这一中苏关系转折的同期人物背景（非7月16日照会现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Nikita_Khrushchev_1960.jpg"
+    author: "Warren K. Leffler（美国国会图书馆/U.S. News & World Report collection）"
+    license: "Public domain（LOC：no known copyright restrictions）"
 - id: cn-cuba-relations-196009
   date: '1960-09-28'
   title: 中国与古巴建立外交关系
@@ -644,6 +836,12 @@
   sources:
     - 中华人民共和国外交部
     - 中国驻古巴使馆
+  image:
+    url: /images/events/1960/cn-cuba-relations-196009.jpg
+    caption: 古巴领导人菲德尔·卡斯特罗1960年9月22日在联合国大会发言，作为中古建交的同期外交背景（非9月28日建交公报签署现场）
+    source: "https://commons.wikimedia.org/wiki/File:Fidel_Castro_-_UN_General_Assembly_1960.jpg"
+    author: "Warren K. Leffler（美国国会图书馆/U.S. News & World Report collection）"
+    license: "Public domain（LOC：no known copyright restrictions）"
 - id: cn-eight-char-policy-196009
   date: '1960-09-30'
   title: 国家计委报告首次提出“调整、巩固、充实、提高”八字方针
@@ -658,6 +856,12 @@
   sources:
     - 中国共产党新闻网
     - 党史权威文献
+  image:
+    url: "/images/events/1960/cn-eight-char-policy-196009.jpg"
+    caption: "1960年6月1日大庆首列石油列车，作为八字方针提出前后工业生产与经济调整背景资料（非9月30日国家计委报告现场）"
+    source: "https://commons.wikimedia.org/wiki/File:First_train_of_oil_in_Daqing.jpg"
+    author: "Unknown author"
+    license: "Public domain（PD-China；Commons页面提示需另行核验美国版权状态）"
 - id: cn-cpc-twelve-directives-196011
   date: '1960-11-03'
   title: 中共中央发出“十二条”紧急指示信纠正“共产风”
@@ -686,6 +890,12 @@
   sources:
     - 共产党员网
     - 党史权威文献
+  image:
+    url: /images/events/1960/cn-df1-missile-196011.jpg
+    caption: 东风一号导弹在中国人民革命军事博物馆展出，作为1960年首次发射成功的实物背景（非11月5日西北试验基地发射现场）
+    source: "https://commons.wikimedia.org/wiki/File:Dongfeng_1_Missile.jpg"
+    author: "Martin Trolle Mikkelsen"
+    license: "CC BY-SA 2.0"
 - id: cn-xinyang-incident-report-196101
   date: '1961-01-01'
   title: 中共中央批转河南信阳事件报告
@@ -700,6 +910,12 @@
   sources:
     - 中国共产党新闻网
     - 党史权威文献
+  image:
+    url: "/images/events/1961/cn-xinyang-incident-report-196101.jpg"
+    caption: "1959年河南信阳人民公社成员夜间劳动的历史照片，作为信阳事件及三年困难时期的直接地区背景（非1961年报告批转现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Xinyang_working_at_night.jpg"
+    author: "Unknown author"
+    license: "Public domain（PD-China；Commons页面标注美国版权可能因URAA恢复）"
 - id: cn-cpc-8th-9th-plenum-196101
   date: '1961-01-14'
   title: 中共八届九中全会确立经济调整方针
@@ -714,6 +930,12 @@
   sources:
     - 中国共产党新闻网
     - 党史权威文献
+  image:
+    url: "/images/events/1961/cn-cpc-8th-9th-plenum-196101.jpg"
+    caption: "北京人民大会堂外景（2007年），作为1961年八届九中全会在北京召开的地点背景（非1961年会议现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0（兼容2.5/2.0/1.0；GFDL）"
 - id: cn-cpc-investigation-year-196101
   date: '1961-01-18'
   title: 毛泽东号召全党“大兴调查研究之风”
@@ -728,6 +950,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: "/images/events/1961/cn-cpc-investigation-year-196101.jpg"
+    caption: "北京人民大会堂外景（2007年），作为1961年八届九中全会期间提出调查研究号召的地点背景（非1961年会议现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0（兼容2.5/2.0/1.0；GFDL）"
 - id: cn-prc-cultural-relics-first-batch-196103
   date: '1961-03-04'
   title: 国务院公布第一批全国重点文物保护单位
@@ -756,6 +984,12 @@
   sources:
     - 新华网
     - 国家体育总局
+  image:
+    url: "/images/events/1961/cn-26th-table-tennis-beijing-196104.jpg"
+    caption: "1961年10月阿姆斯特丹第十届国际乒乓球锦标赛照片，作为同年北京第26届世乒赛的乒乓球赛事背景资料（非北京比赛现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Tafeltennis_Tiende_Internationale_Kampioenschappen_in_Apollo_Hal,_Bestanddeelnr_913-0226.jpg"
+    author: "Nationaal Archief（作者未署名）"
+    license: "CC0 1.0"
 - id: cn-peoples-commune-regulation-196105
   date: '1961-05-21'
   title: 中央工作会议修订农村人民公社工作条例
@@ -770,6 +1004,12 @@
   sources:
     - 中国共产党新闻网
     - 党史权威文献
+  image:
+    url: "/images/events/1961/cn-peoples-commune-regulation-196105.jpg"
+    caption: "1961年：中央工作会议修订农村人民公社工作条例"
+    source: "https://commons.wikimedia.org/wiki/File%3ACommunes_isolees.JPG"
+    author: "Roulex 45 self-made from source above"
+    license: "Public domain"
 - id: cn-atomic-industry-decision-196107
   date: '1961-07-16'
   title: 中共中央作出加强原子能工业建设决定
@@ -812,6 +1052,12 @@
   sources:
     - 党史权威文献
     - 新华社
+  image:
+    url: "/images/events/1962/cn-seven-thousand-conference-196201.jpg"
+    caption: "1962年：中共中央在北京召开“七千人大会”"
+    source: "https://commons.wikimedia.org/wiki/File%3AWashington%2C_D.C._September_8._Mr._Tervay%2C_Cost_Accountant_(at_back)_overlooking_preparation_of_food_for_the_banquet_to_be_held_in_honor_of_the_delegates_to_the_Thrid_World_Power_Conference_LCCN2016878420.jpg"
+    author: "Harris &amp; Ewing, photographer"
+    license: "Public domain"
 - id: cn-df2-missile-test-196203
   date: '1962-03-23'
   title: 中国首枚自行研制的“东风二号”导弹试射失败
@@ -868,6 +1114,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: "/images/events/1962/cn-cpc-8th-10th-plenum-196209.jpg"
+    caption: "北京人民大会堂外景（2007年），作为1962年八届十中全会在北京召开的地点背景（非1962年会议现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0（兼容2.5/2.0/1.0；GFDL）"
 - id: cn-rural-60-rules-196209
   date: '1962-09-27'
   title: 中共中央通过“农业六十条”，确立“三级所有，队为基础”体制
@@ -896,6 +1148,12 @@
   sources:
     - 党史权威文献
     - 党史权威文献
+  image:
+    url: "/images/events/1962/cn-sino-indian-border-war-196210.jpg"
+    caption: "1962年：中印边境自卫反击战爆发"
+    source: "https://commons.wikimedia.org/wiki/File%3AIndian_soldiers_on_patrol_during_the_1962_Sino-Indian_border_war.jpg"
+    author: "Unknown authorUnknown author"
+    license: "Public domain"
 - id: cn-zhou-rural-urban-tech-meeting-196301
   date: '1963-01-29'
   title: 周恩来在上海科学技术工作会议上强调实现科学技术现代化
@@ -994,6 +1252,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: "/images/events/1963/cn-front-ten-rules-196305.jpg"
+    caption: "北京人民大会堂外景（2007年），作为1963年中央印发《前十条》及相关会议活动的地点背景（非1963年文件发布现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0（兼容2.5/2.0/1.0；GFDL）"
 - id: cn-sino-soviet-talks-196307
   date: '1963-07-05'
   title: 中共中央与苏共中央代表在莫斯科会谈
@@ -1064,6 +1328,12 @@
   sources:
     - 人民网
     - 党史权威文献
+  image:
+    url: "/images/events/1963/cn-scitech-plan-196312.jpg"
+    caption: "周恩来1964年宣布中国首次原子弹试验成功的历史照片，作为1963—1972科学技术规划所涉自主科技攻关的同期背景（非1963年规划批准现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Zhou_Enlai_announced_the_success_of_China%27s_atomic_bomb_test.jpg"
+    author: "Unknown author"
+    license: "Public domain（PD-China；Commons页面提示需另行核验美国版权状态）"
 - id: cn-zhou-enlai-africa-tour-196312
   date: '1963-12-14'
   title: 周恩来总理率团访问亚非十四国
@@ -1078,6 +1348,12 @@
   sources:
     - 新华网
     - 外交部档案馆
+  image:
+    url: "/images/events/1963/cn-zhou-enlai-africa-tour-196312.jpg"
+    caption: "周恩来访问摩洛哥与哈桑二世会见（1964 年 1 月访问行程资料图）"
+    source: "https://commons.wikimedia.org/wiki/File%3A1964-03_1964%E5%B9%B4_%E4%B8%AD%E5%9B%BD%E8%AE%BF%E9%97%AE%E6%91%A9%E6%B4%9B%E5%93%A5_%E5%91%A8%E6%81%A9%E6%9C%A5%E4%B8%8E%E5%93%88%E6%A1%91%E4%BA%8C%E4%B8%96.jpg"
+    author: "人民画报"
+    license: "Public domain"
 - id: cn-petroleum-self-sufficient-196312
   date: '1963-12-25'
   title: 我国石油产品基本实现自给
@@ -1108,6 +1384,12 @@
     - 中华人民共和国外交部
     - 中国共产党新闻网
     - Wikipedia—China–France relations
+  image:
+    url: "/images/events/1964/cn-france-diplomatic-196401.jpg"
+    caption: "1964年：中法两国正式建立外交关系"
+    source: "https://commons.wikimedia.org/wiki/File%3ADiplomatic_license_plate_of_France_2.jpg"
+    author: "2538O"
+    license: "CC0"
 - id: cn-industrial-learning-daqing-196402
   date: '1964-02-05'
   title: 中共中央号召“工业学大庆”
@@ -1224,6 +1506,9 @@
   image:
     url: /images/events/1964/china_first_atomic_bomb_1964.jpg
     caption: 1964年10月16日中国第一颗原子弹在新疆罗布泊成功爆炸并升起蘑菇云
+    source: "https://commons.wikimedia.org/wiki/File%3AChinaABomb_1.jpg"
+    author: "Unknown author"
+    license: "Public domain"
 - id: cn-four-modernizations-196501
   date: '1965-01-04'
   title: 第三届全国人大一次会议提出“四个现代化”
@@ -1240,6 +1525,12 @@
     - 中国人大网
     - 新华社
     - Wikipedia—Four Modernizations
+  image:
+    url: /images/events/1965/cn-four-modernizations-196501.jpg
+    caption: 1964年10月16日周恩来向《东方红》歌唱团员宣布中国首次原子弹试验成功，作为“四个现代化”所涵盖国防与科学技术现代化的同期背景（非1965年1月4日人大会议现场）
+    source: "https://commons.wikimedia.org/wiki/File:Zhou_Enlai_announced_the_success_of_China%27s_atomic_bomb_test.jpg"
+    author: "Unknown author"
+    license: "Public domain（PD-China；Commons页面提示需另行核验美国版权状态）"
 - id: cn-second-atomic-test-196505
   date: '1965-05-14'
   title: 中国第二次原子弹试验成功
@@ -1288,6 +1579,12 @@
     - 西藏自治区人民政府
     - 新华社
     - Wikipedia—Tibet Autonomous Region
+  image:
+    url: "/images/events/1965/cn-tibet-autonomous-region-196509.jpg"
+    caption: "1965年：西藏自治区成立"
+    source: "https://commons.wikimedia.org/wiki/File%3APotala_palace23.jpg"
+    author: "Antoine Taveneaux"
+    license: "CC BY-SA 3.0"
 - id: cn-insulin-synthesis-196509
   date: '1965-09-17'
   title: 中国首次人工合成结晶牛胰岛素
@@ -1352,6 +1649,12 @@
     - 中国共产党新闻网
     - 新华社
     - Wikipedia—May 16 Notification
+  image:
+    url: "/images/events/1966/cn-may-16-notification-196605.jpg"
+    caption: "1966年：中共中央发布“五一六通知”"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5516.jpg"
+    author: "人民日报"
+    license: "Public domain"
 - id: cn-nie-yuanzi-poster-196605
   date: '1966-05-25'
   title: 北京大学出现聂元梓等人大字报
@@ -1400,6 +1703,12 @@
     - 新华社历史资料
     - 中国共产党新闻网
     - Wikipedia—Red Guards
+  image:
+    url: "/images/events/1966/cn-mao-meets-red-guards-196608.jpg"
+    caption: "1966年：毛泽东首次接见红卫兵"
+    source: "https://commons.wikimedia.org/wiki/File%3A1966-11_1966%E5%B9%B4%E5%9B%BD%E5%BA%86%E5%85%B8%E7%A4%BC%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%9E%97%E5%BD%AA.jpg"
+    author: "《人民画报》"
+    license: "Public domain"
 - id: cn-missile-nuclear-test-196610
   date: '1966-10-27'
   title: 中国首次导弹核武器试验成功
@@ -1464,6 +1773,12 @@
     - 中国工程物理研究院
     - 新华社
     - Wikipedia—Nuclear weapons tests of China
+  image:
+    url: "/images/events/1967/cn-first-hydrogen-bomb-196706.jpg"
+    caption: "1967年：中国首次氢弹空投试验成功"
+    source: "https://commons.wikimedia.org/wiki/File%3AThe_first_World_Conference_against_Atomic_%26_Hydrogen_Bombs.JPG"
+    author: "Unknown authorUnknown author"
+    license: "Public domain"
 - id: cn-wuhan-incident-196707
   date: '1967-07-20'
   title: 武汉“七二〇事件”
@@ -1592,6 +1907,12 @@
     - 人民日报
     - 中国共产党新闻网
     - Wikipedia—Down to the Countryside Movement
+  image:
+    url: "/images/events/1968/cn-down-to-countryside-196812.jpg"
+    caption: "1968年：“知识青年上山下乡”运动全面展开"
+    source: "https://commons.wikimedia.org/wiki/File%3APolitical_slogan_by_Red_Guards_on_the_campus_of_Fudan_University_1976.jpg"
+    author: "Villa Giulia"
+    license: "Public domain"
 - id: cn-nanjing-yangtze-bridge-196812
   date: '1968-12-29'
   title: 南京长江大桥全面建成通车
@@ -1624,6 +1945,12 @@
     - 新华社
     - 中华人民共和国外交部
     - Wikipedia—Sino-Soviet border conflict
+  image:
+    url: "/images/events/1969/cn-zhenbao-conflict-196903.png"
+    caption: "1969年：珍宝岛武装冲突"
+    source: "https://commons.wikimedia.org/wiki/File%3AZhenbao_island.png"
+    author: "Zhuwq"
+    license: "CC BY-SA 3.0"
 - id: cn-ninth-cpc-congress-196904
   date: '1969-04-01'
   title: 中国共产党第九次全国代表大会开幕
@@ -1704,6 +2031,12 @@
     - 中国共产党新闻网
     - 新华社
     - Wikipedia—Liu Shaoqi
+  image:
+    url: "/images/events/1969/cn-liu-shaoqi-dies-196911.jpg"
+    caption: "1969年：刘少奇在河南开封逝世"
+    source: "https://commons.wikimedia.org/wiki/File%3ALiu_Shaoqi_(cropped).jpg"
+    author: "unknown author"
+    license: "Public domain"
 - id: cn-dongfanghong1-197004
   date: '1970-04-24'
   title: 中国第一颗人造卫星"东方红一号"发射成功
@@ -1721,6 +2054,9 @@
   image:
     url: /images/events/1970/dongfanghong1_satellite_1970.jpg
     caption: 1970年4月24日中国第一颗人造地球卫星“东方红一号”发射成功并在太空播送乐曲
+    source: "https://commons.wikimedia.org/wiki/File%3ADFH-1_Satellite.jpg"
+    author: "Brücke-Osteuropa"
+    license: "CC0"
 - id: cn-may20-statement-197005
   date: '1970-05-20'
   title: 毛泽东发表"五·二〇"声明
@@ -1801,6 +2137,12 @@
   sources:
     - 新华网
     - 国防科工委
+  image:
+    url: "/images/events/1970/cn-nuclear-submarine-197012.jpg"
+    caption: "1970年：中国第一艘核潜艇\"长征一号\"下水"
+    source: "https://commons.wikimedia.org/wiki/File%3AHan_class.jpg"
+    author: "Service Depicted: Other Service (Assets/Still/1994/Navy/DN-SN-94-00790)"
+    license: "Public domain"
 - id: cn-shijian1-satellite-197103
   date: '1971-03-03'
   title: “实践一号”科学实验卫星发射成功
@@ -1843,6 +2185,12 @@
   sources:
     - 中国外交部
     - 美国国务院历史办公室
+  image:
+    url: "/images/events/1971/cn-kissinger-secret-visit-197107.jpg"
+    caption: "1971年：基辛格秘密访华"
+    source: "https://commons.wikimedia.org/wiki/File%3AHenry_A._Kissinger%2C_U.S._Secretary_of_State%2C_1973-1977.jpg"
+    author: "U.S. Department of State from United States"
+    license: "Public domain"
 - id: cn-nixon-visit-announced-197107
   date: '1971-07-15'
   title: 中美同时宣布尼克松将访华
@@ -1871,6 +2219,12 @@
   sources:
     - 中共中央党史和文献研究院
     - 新华网
+  image:
+    url: "/images/events/1971/cn-lin-biao-incident-197109.jpg"
+    caption: "1971年：林彪事件发生"
+    source: "https://commons.wikimedia.org/wiki/File%3ALinBiaoPlaneEngine.jpeg"
+    author: "Vidor"
+    license: "CC0"
 - id: un-seat-restored-1971
   date: '1971-10-25'
   title: 恢复联合国合法席位
@@ -1885,8 +2239,11 @@
     - 联合国
     - 新华网
   image:
-    url: /images/events/1971/un_seat_restored_1971.jpg
-    caption: 1971年10月第26届联大通过第2758号决议，恢复中华人民共和国在联合国的一切合法权利
+    url: /images/events/1971/un_seat_restored_1971.png
+    caption: 1971年10月第26届联合国大会通过第2758号决议，恢复中华人民共和国在联合国的一切合法权利（决议原文资料图）
+    source: https://commons.wikimedia.org/wiki/File:Resolution-2758.png
+    author: United Nations General Assembly
+    license: Public domain（联合国官方文件）
 - id: cn-nixon-visit-197202
   date: '1972-02-21'
   title: 尼克松总统访华
@@ -1901,6 +2258,12 @@
   sources:
     - 中国外交部
     - 美国国务院历史办公室
+  image:
+    url: "/images/events/1972/cn-nixon-visit-197202.jpg"
+    caption: "1972年：尼克松总统访华"
+    source: "https://commons.wikimedia.org/wiki/File%3ARichard_Nixon_presidential_portrait_(1).jpg"
+    author: "Department of Defense. Department of the Army. Office of the Deputy Chief of Staff for Operations. U.S. Army Audiovisual Center. (ca. 1974 - 05/15/1984)"
+    license: "Public domain"
 - id: cn-shanghai-communique-197202
   date: '1972-02-28'
   title: 中美发表《上海公报》
@@ -1915,6 +2278,12 @@
   sources:
     - 中国外交部
     - 美国国务院
+  image:
+    url: "/images/events/1972/cn-shanghai-communique-197202.jpg"
+    caption: "1972年：中美发表《上海公报》"
+    source: "https://commons.wikimedia.org/wiki/File%3AShanghai0612_Jinjiang.JPG"
+    author: "No machine-readable author provided. Sumple~commonswiki assumed (based on copyright claims)."
+    license: "CC BY-SA 3.0"
 - id: cn-china-uk-ambassadorial-197203
   date: '1972-03-13'
   title: 中英关系升格为大使级
@@ -1956,6 +2325,12 @@
   sources:
     - 中国外交部
     - 日本外务省
+  image:
+    url: "/images/events/1972/cn-japan-diplomatic-normalization-197209.jpg"
+    caption: "1972年9月29日《中日联合声明》原本资料图（人民大会堂签署）"
+    source: "https://commons.wikimedia.org/wiki/File%3AJoint_Communique_of_Japan_and_China.jpg"
+    author: "日本外务省"
+    license: "CC BY 4.0"
 - id: cn-china-west-germany-diplomatic-197210
   date: '1972-10-11'
   title: 中德（西德）建立外交关系
@@ -2104,6 +2479,12 @@
   sources:
     - 秦始皇帝陵博物院
     - 国家文物局
+  image:
+    url: "/images/events/1974/cn-terracotta-army-discovered-197403.jpg"
+    caption: "1974年：秦始皇兵马俑被发现"
+    source: "https://commons.wikimedia.org/wiki/File%3AQinshihuang.jpg"
+    author: "Unknown artistUnknown artist"
+    license: "Public domain"
 - id: cn-deng-un-speech-197404
   date: '1974-04-10'
   title: 邓小平在联合国特别大会发言
@@ -2175,6 +2556,12 @@
     - 新华社
     - 中国人大网
     - Wikipedia—4th National People's Congress
+  image:
+    url: "/images/events/1975/cn-fourth-npc-first-session-197501.jpg"
+    caption: "1975年：第四届全国人民代表大会第一次会议开幕"
+    source: "https://commons.wikimedia.org/wiki/File%3A1st_National_People's_Congress_1.jpg"
+    author: "(China’s Communist Party) 中国共产党"
+    license: "Public domain"
 - id: cn-deng-first-vice-premier-197501
   date: '1975-01-17'
   title: 邓小平任国务院第一副总理
@@ -2239,6 +2626,12 @@
     - 中华人民共和国水利部
     - 新华社
     - Wikipedia—Banqiao Dam disaster
+  image:
+    url: "/images/events/1975/cn-banqiao-dam-disaster-197508.png"
+    caption: "1975年：河南“75·8”特大暴雨与板桥水库溃坝"
+    source: "https://commons.wikimedia.org/wiki/File%3ABanqiao_Dam_Failure.svg"
+    author: "Stevenliuyi"
+    license: "CC BY-SA 4.0"
 - id: cn-first-recoverable-satellite-197511
   date: '1975-11-26'
   title: 中国首次成功发射返回式遥感卫星
@@ -2271,6 +2664,12 @@
     - 新华社
     - 中国政府网
     - Wikipedia—Zhou Enlai
+  image:
+    url: "/images/events/1976/cn-zhou-enlai-dies-197601.jpg"
+    caption: "1976年：周恩来总理逝世"
+    source: "https://commons.wikimedia.org/wiki/File%3AZhou_Enlai_1972.jpg"
+    author: "President (1969-1974 : Nixon). White House Photo Office. 1969-1974; General Services Administration. National Archives and Records Service. Office of Presidential Libraries. Office of Presidential Papers. 1/20/1969-ca. 12/1974"
+    license: "Public domain"
 - id: cn-tiananmen-incident-197604
   date: '1976-04-05'
   title: 四五天安门事件
@@ -2287,6 +2686,12 @@
     - 中国历史研究院
     - 新华社历史资料
     - Wikipedia—Tiananmen Incident
+  image:
+    url: "/images/events/1976/cn-tiananmen-incident-197604.jpg"
+    caption: "1976年：四五天安门事件"
+    source: "https://commons.wikimedia.org/wiki/File%3ATiananmen_Square.jpg"
+    author: "Yo Hibino from Lafayette IN, United States"
+    license: "CC BY 2.0"
 - id: cn-zhu-de-dies-197607
   date: '1976-07-06'
   title: 朱德委员长逝世
@@ -2319,6 +2724,12 @@
     - 中国地震局
     - 新华社
     - Wikipedia—1976 Tangshan earthquake
+  image:
+    url: "/images/events/1976/cn-tangshan-earthquake-197607.jpg"
+    caption: "1976年：唐山大地震"
+    source: "https://commons.wikimedia.org/wiki/File%3ATangshan_earthquake.jpg"
+    author: "the National Oceanic and Atmospheric Administration"
+    license: "Public domain"
 - id: cn-mao-zedong-dies-197609
   date: '1976-09-09'
   title: 毛泽东主席逝世
@@ -2335,6 +2746,12 @@
     - 新华社
     - 中国政府网
     - Wikipedia—Mao Zedong
+  image:
+    url: "/images/events/1976/cn-mao-zedong-dies-197609.jpg"
+    caption: "1976年：毛泽东主席逝世"
+    source: "https://commons.wikimedia.org/wiki/File%3AHo_Yin_e_Mao_Zedong_em_1956.jpg"
+    author: "Unknown authorUnknown author"
+    license: "Public domain"
 - id: cn-gang-of-four-arrested-197610
   date: '1976-10-06'
   title: 粉碎“四人帮”
@@ -2351,6 +2768,12 @@
     - 新华社
     - 中国共产党新闻网
     - Wikipedia—Gang of Four
+  image:
+    url: "/images/events/1976/cn-gang-of-four-arrested-197610.jpg"
+    caption: "1976年：粉碎“四人帮”"
+    source: "https://commons.wikimedia.org/wiki/File%3AWang_Hongwen_at_trial_in_November_1980.jpg"
+    author: "China Publications Centre"
+    license: "Public domain"
 - id: cn-china-liberia-diplomatic-197702
   date: '1977-02-17'
   title: 中国与利比里亚建立外交关系
@@ -2415,6 +2838,12 @@
     - 新华社
     - 中国共产党新闻网
     - Wikipedia—Deng Xiaoping
+  image:
+    url: "/images/events/1977/cn-deng-restored-197707.jpg"
+    caption: "1977年：邓小平恢复党政军领导职务"
+    source: "https://commons.wikimedia.org/wiki/File%3ADeng_Xiaoping_at_the_arrival_ceremony_for_the_Vice_Premier_of_China_(cropped).jpg"
+    author: "Unknown authorUnknown author"
+    license: "Public domain"
 - id: cn-11th-cpc-congress-197708
   date: '1977-08-12'
   title: 中国共产党第十一次全国代表大会开幕
@@ -2447,6 +2876,12 @@
     - 中华人民共和国教育部
     - 新华社
     - Wikipedia—National Higher Education Entrance Examination
+  image:
+    url: "/images/events/1977/cn-gaokao-restored-197710.jpg"
+    caption: "1977年：国务院决定恢复高等学校统一招生考试"
+    source: "https://commons.wikimedia.org/wiki/File%3A2021%E9%99%95%E8%A5%BF%E9%AB%98%E8%80%83%E5%87%86%E8%80%83%E8%AF%81%E6%AD%A3%E9%9D%A2.jpg"
+    author: "Liuxingy"
+    license: "CC BY-SA 4.0"
 - id: reform-opening-1978
   date: '1978'
   title: 十一届三中全会，改革开放始
@@ -2463,7 +2898,10 @@
     - Wikipedia—3rd Plenary Session of the 11th CCP Central Committee
   image:
     url: /images/events/1978/reform_opening_1978.jpg
-    caption: 1978年12月中共十一届三中全会在北京召开，作出把全党工作中心转移到经济建设上来的伟大决策，开启改革开放新时期
+    caption: 1978年12月中共十一届三中全会在北京召开，作出把全党工作中心转移到经济建设上来的伟大决策，开启改革开放新时期（青岛人民庆祝全会召开资料图）
+    source: https://commons.wikimedia.org/wiki/File:%E9%9D%92%E5%B2%9B%E4%BA%BA%E6%B0%91%E6%AC%A2%E5%BA%86%E5%8D%81%E4%B8%80%E5%B1%8A%E4%B8%89%E4%B8%AD%E5%85%A8%E4%BC%9A%E5%8F%AC%E5%BC%80.jpg
+    author: Unknown（青岛市档案馆图片记录）
+    license: Public domain（Commons页面标注）
 - id: cn-fifth-npc-constitution-197803
   date: '1978-03-05'
   title: 第五届全国人民代表大会第一次会议通过1978年宪法
@@ -2496,6 +2934,12 @@
     - 中国科学院
     - 新华社
     - Wikipedia—National Science Conference
+  image:
+    url: "/images/events/1978/cn-national-science-conference-197803.jpg"
+    caption: "1978年：全国科学大会在北京召开"
+    source: "https://commons.wikimedia.org/wiki/File%3ANational_Conference.jpg"
+    author: "Kmurugesan"
+    license: "CC BY-SA 4.0"
 - id: cn-truth-standard-197805
   date: '1978-05-11'
   title: 《实践是检验真理的唯一标准》发表
@@ -2512,6 +2956,12 @@
     - 光明日报
     - 中国共产党新闻网
     - Wikipedia—Practice is the sole criterion for testing truth
+  image:
+    url: "/images/events/1978/cn-truth-standard-197805.jpg"
+    caption: "1978年：《实践是检验真理的唯一标准》发表"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E3%80%8A%E5%AE%9E%E8%B7%B5%E6%98%AF%E6%A3%80%E9%AA%8C%E7%9C%9F%E7%90%86%E7%9A%84%E5%94%AF%E4%B8%80%E6%A0%87%E5%87%86%E3%80%8B%2C_2019-12-14.jpg"
+    author: "Siyuwj"
+    license: "CC BY-SA 4.0"
 - id: cn-china-japan-peace-treaty-197808
   date: '1978-08-12'
   title: 《中日和平友好条约》签署
@@ -2576,6 +3026,12 @@
     - 中华人民共和国外交部
     - 美国国务院历史办公室
     - Wikipedia—China–United States relations
+  image:
+    url: "/images/events/1979/cn-us-diplomatic-relations-197901.jpg"
+    caption: "中美签署外交协议资料图（1979年1月31日，邓小平与吉米·卡特；建交于1月1日生效）"
+    source: "https://commons.wikimedia.org/wiki/File%3ADeng_Xiaoping_and_Jimmy_Carter_sign_diplomatic_agreements_between_the_United_States_and_China_-_NARA_-_183270.tif"
+    author: "Unknown author; U.S. National Archives and Records Administration"
+    license: "Public domain"
 - id: cn-deng-visits-us-197901
   date: '1979-01-29'
   title: 邓小平访美
@@ -2624,6 +3080,12 @@
     - 新华社
     - 中华人民共和国国防部
     - Wikipedia—Sino-Vietnamese War
+  image:
+    url: "/images/events/1979/cn-sino-vietnamese-war-197902.png"
+    caption: "1979年中越边境战争战区示意图（战争资料图，非具体战斗现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3AChi%E1%BA%BFn_tranh_bi%C3%AAn_gi%E1%BB%9Bi_Vi%E1%BB%87t-Trung.png"
+    author: "Paris"
+    license: "Public domain"
 - id: cn-guangdong-fujian-special-policy-197907
   date: '1979-07-15'
   title: 中央决定对广东福建实行特殊政策
@@ -2683,6 +3145,12 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: "/images/events/1980/cn-11th-5th-plenum-liushaoqi-198002.jpg"
+    caption: "刘少奇1967年遭受公开批斗的历史照片，作为1980年十一届五中全会为其平反的历史背景资料（非1980年全会现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Liu_shaoqi.jpg"
+    author: "Unknown author"
+    license: "Public domain（PD-China；Commons页面提示需另行核验美国版权状态）"
 - id: cn-imf-worldbank-seat-198004
   date: '1980-04-15'
   title: 中国恢复在国际货币基金组织与世界银行合法席位
@@ -2737,6 +3205,12 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: "/images/events/1980/cn-sez-established-198008.png"
+    caption: "中国经济特区与沿海开放城市分布图（含 1980 年首批四个经济特区）"
+    source: "https://commons.wikimedia.org/wiki/File%3AChina_SEZ_Map.png"
+    author: "KleinKalve"
+    license: "CC0"
 - id: cn-gang-of-four-trial-198011
   date: '1980-11-20'
   title: 最高人民法院特别法庭公审林彪、江青反革命集团案
@@ -2751,6 +3225,12 @@
   sources:
     - 新华网
     - 最高人民法院
+  image:
+    url: "/images/events/1980/cn-gang-of-four-trial-198011.jpg"
+    caption: "1980年：最高人民法院特别法庭公审林彪、江青反革命集团案"
+    source: "https://commons.wikimedia.org/wiki/File%3A1_Zhengyi_Rd_(20250327123241).jpg"
+    author: "N509FZ"
+    license: "CC BY-SA 4.0"
 - id: cn-song-qingling-death-198105
   date: '1981-05-29'
   title: 国家名誉主席宋庆龄逝世
@@ -2778,6 +3258,12 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: "/images/events/1981/cn-11th-6th-plenum-resolution-198106.pdf"
+    caption: "《中华人民共和国国务院公报》1981年第25号扫描件（决议发布年度的官方文献背景，非六中全会现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3AState_Council_Gazette_-_1981_-_Issue_25.pdf"
+    author: "中华人民共和国国务院"
+    license: "Public domain（PD-PRC-exempt）"
 - id: cn-chengkun-train-crash-198107
   date: '1981-07-09'
   title: 成昆铁路列车坠桥特大事故
@@ -2843,6 +3329,12 @@
   sources:
     - 新华网
     - 国际排联
+  image:
+    url: "/images/events/1981/cn-volleyball-worldcup-198111.jpg"
+    caption: "中国女排 1981 年世界杯冠军奖杯资料照片（赛事实物）"
+    source: "https://commons.wikimedia.org/wiki/File%3ATrophy_of_1981_FIVB_Women%27s_World_Cup_won_by_China_%2820220905113511%29.jpg"
+    author: "N509FZ"
+    license: "CC BY-SA 4.0"
 - id: cn-one-country-two-systems-198201
   date: '1982-01-11'
   title: 邓小平首次提出"一个国家，两种制度"构想
@@ -2857,6 +3349,12 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: "/images/events/1982/cn-one-country-two-systems-198201.png"
+    caption: "1982年：邓小平首次提出\"一个国家，两种制度\"构想"
+    source: "https://commons.wikimedia.org/wiki/File%3AThe_death_of_one_country_two_system_in_Hong_Kong.png"
+    author: "Sam200803"
+    license: "CC BY-SA 4.0"
 - id: cn-liaochengzhi-letter-jiang-198207
   date: '1982-07-24'
   title: 廖承志致信蒋经国吁国共第三次合作
@@ -2897,6 +3395,12 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: "/images/events/1982/cn-thatcher-deng-hk-198209.jpg"
+    caption: "邓小平肖像（1979年美国国家档案馆资料；用于1982年中英香港谈判的中方领导人背景，非会谈现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3ADeng_Xiaoping.jpg"
+    author: "美国国家档案和记录管理局（原作者未详）"
+    license: "Public domain（美国国家档案馆资料）"
 - id: cn-jl1-submarine-launch-198210
   date: '1982-10-12'
   title: 中国潜艇水下发射"巨浪一号"运载火箭成功
@@ -2925,6 +3429,12 @@
   sources:
     - 新华网
     - 全国人大常委会
+  image:
+    url: "/images/events/1982/cn-1982-constitution-198212.jpg"
+    caption: "1982年：五届全国人大五次会议通过现行《中华人民共和国宪法》"
+    source: "https://commons.wikimedia.org/wiki/File%3ACN-pek-zhongnanhai-xinhua-tor.jpg"
+    author: "Bgabel"
+    license: "CC BY-SA 3.0"
 - id: cn-cctv-gala-1st-198302
   date: '1983-02-12'
   title: 中央电视台举办首届春节联欢晚会直播
@@ -3003,6 +3513,12 @@
   sources:
     - 新华网
     - 国防科技大学
+  image:
+    url: "/images/events/1983/cn-yinhe1-supercomputer-198311.png"
+    caption: "1959年中国第一台俄汉翻译电子计算机，作为1983年银河-I巨型计算机研制成功之前中国电子计算技术发展的历史先导（非银河-I实物）"
+    source: "https://commons.wikimedia.org/wiki/File:First_Russian-Chinese_translation_electronic_computer_in_China.png"
+    author: "华南理工大学"
+    license: "Public domain（PD-China；Commons页面标注中国版权期满）"
 - id: cn-deng-shenzhen-inspection-198401
   date: '1984-01-24'
   title: 邓小平视察深圳等经济特区并题词肯定
@@ -3043,6 +3559,12 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: "/images/events/1984/cn-open-14-coastal-cities-198405.jpg"
+    caption: "1984年：中共中央、国务院决定进一步开放十四个沿海港口城市"
+    source: "https://commons.wikimedia.org/wiki/File%3AShenzhen_Coastal_City_at_dusk_2.jpg"
+    author: "そらみみ"
+    license: "CC BY-SA 4.0"
 - id: cn-la-olympics-xuhaifeng-198407
   date: '1984-07-29'
   title: 中国重返奥运赛场，许海峰夺得中国奥运史上首金
@@ -3056,6 +3578,12 @@
   sources:
     - 新华网
     - 国际奥委会
+  image:
+    url: "/images/events/1984/cn-la-olympics-xuhaifeng-198407.jpg"
+    caption: "1984年洛杉矶奥运会颁奖仪式的历史照片；作为中国重返奥运及射击项目首金的赛事背景图，不冒充许海峰夺金瞬间"
+    source: "https://commons.wikimedia.org/wiki/File:Medal_ceremony_at_the_1984_Summer_Olympics.JPEG"
+    author: "Ken Hackman, U.S. Air Force"
+    license: "Public domain"
 - id: cn-35th-national-day-parade-198410
   date: '1984-10-01'
   title: 首都举行建国35周年阅兵与群众游行
@@ -3083,6 +3611,12 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: "/images/events/1984/cn-12th-3rd-plenum-reform-198410.jpg"
+    caption: "北京人民大会堂外景（2007年），作为1984年十二届三中全会在北京召开的地点背景（非1984年会议现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0（兼容2.5/2.0/1.0；GFDL）"
 - id: cn-lenovo-founded-198411
   date: '1984-11-09'
   title: 柳传志等在中科院计算所创办联想公司前身
@@ -3110,6 +3644,12 @@
   sources:
     - 新华网
     - 外交部
+  image:
+    url: "/images/events/1984/cn-sino-british-joint-declaration-198412.jpg"
+    caption: "《中英联合声明》文本扫描预览（1984年12月19日签署）"
+    source: "https://commons.wikimedia.org/wiki/File%3AJoint_declaration_of_the_government_of_the_united_kingdom_of_great_britain_and_northern_ireland_and_the_government_of_the_people%27s_republic_of_china_on_the_question_of_hong_kong.pdf"
+    author: "中华人民共和国政府、英国政府"
+    license: "Public domain"
 - id: cn-rural-10policies-198501
   date: '1985-01-01'
   title: 中共中央国务院发布活跃农村经济十项政策，取消农产品统购派购
@@ -3138,6 +3678,12 @@
   sources:
     - 新华网
     - 国家海洋局
+  image:
+    url: "/images/events/1985/cn-antarctic-greatwall-station-198502.jpg"
+    caption: "1985年：中国南极长城站建成"
+    source: "https://commons.wikimedia.org/wiki/File%3AZhong_shan-ant_hg.jpg"
+    author: "Hannes Grobe, Alfred Wegener Institute"
+    license: "CC BY-SA 2.5"
 - id: cn-education-reform-decision-198505
   date: '1985-05-27'
   title: 中共中央发布《关于教育体制改革的决定》
@@ -3165,6 +3711,12 @@
   sources:
     - 新华网
     - 中央军委
+  image:
+    url: "/images/events/1985/cn-million-troop-cut-198506.jpg"
+    caption: "邓小平资料肖像（1985 年百万大裁军事件背景图，非中央军委扩大会议现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3ADeng_Xiaoping.jpg"
+    author: "Unknown or not provided；NARA"
+    license: "Public domain"
 - id: cn-first-teachers-day-198509
   date: '1985-09-10'
   title: 新中国庆祝第一个教师节
@@ -3271,6 +3823,12 @@
   sources:
     - 新华网
     - 科技部
+  image:
+    url: "/images/events/1986/cn-863-program-198611.png"
+    caption: "1986年：中共中央国务院批准实施\"863计划\""
+    source: "https://commons.wikimedia.org/wiki/File%3A863%E8%AE%A1%E5%88%92-%E6%A0%87%E5%BF%97.png"
+    author: "中华人民共和国科学技术部"
+    license: "Public domain"
 - id: cn-huyaobang-resign-198701
   date: '1987-01-16'
   title: 胡耀邦辞去中共中央总书记职务，赵紫阳代理总书记
@@ -3298,6 +3856,12 @@
   sources:
     - 新华网
     - 外交部
+  image:
+    url: "/images/events/1987/cn-sino-portuguese-macau-declaration-198704.jpg"
+    caption: "澳门内港与澳门皇宫（1987年资料图；用于联合声明签署前澳门历史环境背景，非北京签署现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3AMacau%2C_1987_%286913029485%29.jpg"
+    author: "Nathan Hughes Hamilton"
+    license: "CC BY 2.0"
 - id: cn-daxinganling-fire-198705
   date: '1987-05-06'
   title: 大兴安岭发生特大森林火灾
@@ -3338,6 +3902,12 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1987/cn-13th-congress-198710.jpg
+    caption: 北京人民大会堂外景（2007年，拍摄时正值党代会召开），作为1987年中共十三大举办地点背景（非1987年大会现场）
+    source: "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0（兼容2.5/2.0/1.0；GFDL）"
 - id: cn-6th-national-games-198711
   date: '1987-11-20'
   title: 第六届全国运动会在广州开幕
@@ -3377,6 +3947,12 @@
   sources:
     - 新华网
     - 全国人大常委会
+  image:
+    url: "/images/events/1988/cn-hainan-province-sez-198804.png"
+    caption: "海南省位置与行政区划图（海南建省并设立经济特区背景图）"
+    source: "https://commons.wikimedia.org/wiki/File%3AChina_Hainan.svg"
+    author: "Joowwww"
+    license: "Public domain"
 - id: cn-price-reform-breakthrough-198808
   date: '1988-08-19'
   title: 中央北戴河会议决定价格改革"闯关"，引发全国抢购风潮
@@ -3472,6 +4048,12 @@
   sources:
     - 新华网
     - 外交部
+  image:
+    url: "/images/events/1989/cn-sino-soviet-normalization-198905.jpg"
+    caption: "苏共中央总书记戈尔巴乔夫1989年6月在波恩的公开活动照片，作为其同年访华并推动中苏关系正常化的人物背景（非5月北京会晤现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Gorbi_1989.jpg"
+    author: "Jüppsche"
+    license: "CC BY-SA 2.0 Germany"
 - id: cn-beijing-june-fourth-198906
   date: '1989-06-04'
   title: 北京发生六四事件
@@ -3486,6 +4068,12 @@
   sources:
     - 国务院新闻办公室
     - 维基百科
+  image:
+    url: "/images/events/1989/cn-beijing-june-fourth-198906.jpg"
+    caption: "1989年：北京发生六四事件"
+    source: "https://commons.wikimedia.org/wiki/File%3AUd%C3%A1losti_na_n%C3%A1m%C4%9Bst%C3%AD_Tian_an_men%2C_%C4%8C%C3%ADna_1989%2C_foto_Ji%C5%99%C3%AD_Tondl.jpg"
+    author: "Jiří Tondl (Blow up)"
+    license: "CC BY-SA 4.0"
 - id: cn-jiang-zemin-general-secretary-198906
   date: '1989-06-24'
   title: 江泽民当选中共中央总书记
@@ -3554,6 +4142,12 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: "/images/events/1990/cn-pudong-development-199004.jpg"
+    caption: "1990年：中央宣布开发开放上海浦东新区，开启浦东开发开放进程"
+    source: "https://commons.wikimedia.org/wiki/File%3AShanghai_pudong_development_bank_(8373026066).jpg"
+    author: "Fredrik Rubensson from Stockholm, Sweden"
+    license: "CC BY-SA 2.0"
 - id: cn-beijing-asian-games-199009
   date: '1990-09-22'
   title: 第11届亚洲运动会在北京隆重开幕
@@ -3568,12 +4162,18 @@
   sources:
     - 新华网
     - 亚奥理事会
+  image:
+    url: "/images/events/1990/cn-beijing-asian-games-199009.png"
+    caption: "1990年：第11届亚洲运动会在北京隆重开幕"
+    source: "https://commons.wikimedia.org/wiki/File%3AAsian_Games_logo.svg"
+    author: "Olympic Council of Asia"
+    license: "Public domain"
 - id: cn-singapore-diplomatic-199010
   date: '1990-10-03'
   title: 中国与新加坡正式建立外交关系
   category: 政治
   importance: 3
-  summary: 中国与新加坡在联合国大会期间正式建立外交关系，两国长期友好合作关系进入新阶段，为区域经济合作与投资往来提供制度保障。
+  summary: 中国与新加坡在新加坡签署建交联合公报并正式建立外交关系，两国长期友好合作关系进入新阶段，为区域经济合作与投资往来提供制度保障。
   confidence: 确定
   tags:
     - 外交
@@ -3594,6 +4194,12 @@
   sources:
     - 新华网
     - 中国证监会
+  image:
+    url: "/images/events/1990/cn-shanghai-stock-exchange-199011.jpg"
+    caption: "上海证券交易所大厦资料照片（2008年拍摄，作为交易所成立背景图）"
+    source: "https://commons.wikimedia.org/wiki/File%3AShanghai_Stock_Exchange_Building.jpg"
+    author: "Baycrest"
+    license: "CC BY-SA 2.5"
 - id: cn-shenzhen-stock-exchange-199012
   date: '1990-12-19'
   title: 深圳证券交易所开业试运行
@@ -3662,6 +4268,12 @@
   sources:
     - 新华网
     - 国家能源局
+  image:
+    url: "/images/events/1991/cn-qinshan-nuclear-199112.jpg"
+    caption: "1991年：秦山核电站并网发电，中国大陆核电站实现零的突破"
+    source: "https://commons.wikimedia.org/wiki/File%3ACANDU_at_Qinshan.jpg"
+    author: "Atomic Energy of Canada Limited"
+    license: "Attribution"
 - id: cn-deng-southern-tour-199201
   date: '1992-01-18'
   title: 邓小平视察南方并发表重要谈话，推动新一轮思想解放
@@ -3676,6 +4288,12 @@
   sources:
     - 新华网
     - 人民出版社
+  image:
+    url: "/images/events/1992/cn-deng-southern-tour-199201.jpg"
+    caption: "1992年：邓小平视察南方并发表重要谈话，推动新一轮思想解放"
+    source: "https://commons.wikimedia.org/wiki/File%3ASZ_%E6%B7%B1%E5%9C%B3%E5%8D%9A%E7%89%A9%E9%A4%A8_Shenzhen_Museum_Deng_Xiaoping's_visit_%E6%A4%8D%E6%A8%B9_06.jpg"
+    author: "Luafuohue"
+    license: "CC BY-SA 3.0"
 - id: cn-three-gorges-project-199204
   date: '1992-04-03'
   title: 七届全国人大五次会议通过关于兴建长江三峡工程的决议
@@ -3717,6 +4335,12 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1992/cn-14th-cpc-congress-199210.jpg
+    caption: 北京人民大会堂外景（2007年，拍摄时正值党代会召开），作为1992年中共十四大举办地点背景（非1992年大会现场）
+    source: "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0（兼容2.5/2.0/1.0；GFDL）"
 - id: cn-wanggu-talks-199304
   date: '1993-04-27'
   title: 海峡两岸"汪辜会谈"在新加坡举行，开启两岸高层接触
@@ -3783,6 +4407,12 @@
   sources:
     - 新华网
     - 财政部
+  image:
+    url: "/images/events/1994/cn-tax-sharing-reform-199401.pdf"
+    caption: "《中华人民共和国国务院公报》1994年第10号扫描件（分税制实施年度的国务院法规背景，非1月1日改革启动现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3AState_Council_Gazette_-_1994_-_Issue_10.pdf"
+    author: "中华人民共和国国务院"
+    license: "Public domain（PD-PRC-exempt）"
 - id: cn-internet-connection-199404
   date: '1994-04-20'
   title: 中国实现与国际互联网的全功能连接
@@ -3824,7 +4454,7 @@
     - 新华网
     - 国务院三峡办
 - id: cn-five-day-workweek-199501
-  date: '1995-01-01'
+  date: '1995-05-01'
   title: 中国开始实行每周五天工作制
   category: 文化
   importance: 3
@@ -3903,6 +4533,12 @@
   sources:
     - 新华网
     - 国防部
+  image:
+    url: "/images/events/1996/cn-taiwan-strait-crisis-199603.png"
+    caption: "1996年：中国人民解放军在东南沿海举行大规模军事演习"
+    source: "https://commons.wikimedia.org/wiki/File%3AThird_Taiwan_Strait_Crisis_map.png"
+    author: "BlueHypercane761"
+    license: "CC0"
 - id: cn-jingjiu-railway-199609
   date: '1996-09-01'
   title: 京九铁路全线建成通车
@@ -3944,6 +4580,12 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: "/images/events/1997/cn-deng-xiaoping-death-199702.jpg"
+    caption: "1997年：邓小平在北京逝世，中国改革开放总设计师谢世"
+    source: "https://commons.wikimedia.org/wiki/File%3AXiaoping_Deng_factory.jpg"
+    author: "无名"
+    license: "Public domain"
 - id: cn-chongqing-municipality-199706
   date: '1997-06-18'
   title: 重庆直辖市正式挂牌成立
@@ -3972,6 +4614,12 @@
   sources:
     - 新华网
     - 新华社
+  image:
+    url: "/images/events/1997/cn-hong-kong-handover-199707.jpg"
+    caption: "1997年：香港回归祖国，香港特别行政区正式成立"
+    source: "https://commons.wikimedia.org/wiki/File%3AImage_shows_the_Union_and_Chinese_Flags_together._MOD_45157410.jpg"
+    author: "Sergeant Paul Shaw LBIPP"
+    license: "OGL v1.0"
 - id: cn-15th-cpc-congress-199709
   date: '1997-09-12'
   title: 中共十五大召开，确立邓小平理论为党的指导思想
@@ -3986,6 +4634,12 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/1997/cn-15th-cpc-congress-199709.jpg
+    caption: 北京人民大会堂外景（2007年，拍摄时正值党代会召开），作为1997年中共十五大举办地点背景（非1997年大会现场）
+    source: "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0（兼容2.5/2.0/1.0；GFDL）"
 - id: cn-rmb-stability-199711
   date: '1997-11-01'
   title: 中国承诺人民币不贬值，力保亚洲金融稳定
@@ -4028,6 +4682,12 @@
   sources:
     - 新华网
     - 民政部
+  image:
+    url: "/images/events/1998/cn-1998-flood-199806.png"
+    caption: "1998年：长江流域发生特大洪水，全国军民奋力抗洪抢险"
+    source: "https://commons.wikimedia.org/wiki/File%3A1998_South_Central_Texas_Flood_3.png"
+    author: "Wikimedia Commons contributor"
+    license: "Public domain"
 - id: cn-rmb-stability-199807
   date: '1998-07-01'
   title: 中国政府重申人民币不贬值，并向国际社会作出承诺
@@ -4084,6 +4744,12 @@
   sources:
     - 新华网
     - 外交部
+  image:
+    url: "/images/events/1999/cn-nato-bomb-embassy-199905.jpg"
+    caption: "1999年：北约导弹轰炸中国驻南斯拉夫联盟大使馆，三名记者不幸遇难"
+    source: "https://commons.wikimedia.org/wiki/File%3AChinese-embassy-belgrade-post-bombing.JPG"
+    author: "Stuinzuri (talk)"
+    license: "CC BY 3.0"
 - id: cn-avic-restructure-199906
   date: '1999-06-28'
   title: 中国航空工业第一、第二集团公司挂牌成立
@@ -4123,6 +4789,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/1999/cn-50th-parade-199910.jpg"
+    caption: "1999年10月1日中华人民共和国成立50周年庆典阅兵资料图"
+    source: "https://commons.wikimedia.org/wiki/File%3A50th_anniversary_of_PRC_1.jpg"
+    author: "王小朋友"
+    license: "CC BY-SA 3.0"
 - id: cn-wto-us-agreement-199911
   date: '1999-11-15'
   title: 中美就中国加入世界贸易组织签订双边市场准入协议
@@ -4137,6 +4809,12 @@
   sources:
     - 新华网
     - 商务部
+  image:
+    url: "/images/events/1999/cn-wto-us-agreement-199911.jpg"
+    caption: "1999年：中美就中国加入世界贸易组织签订双边市场准入协议"
+    source: "https://commons.wikimedia.org/wiki/File%3AUS_and_Russia_Sign_Agreement_at_WTO_on_Polio_Eradication.jpg"
+    author: "United States Mission Geneva"
+    license: "CC BY 2.0"
 - id: cn-shenzhou1-199911
   date: '1999-11-20'
   title: 中国第一艘载人航天试验飞船"神舟一号"发射成功并安全返回
@@ -4151,6 +4829,12 @@
   sources:
     - 新华网
     - 中国载人航天工程办公室
+  image:
+    url: "/images/events/1999/cn-shenzhou1-199911.png"
+    caption: "1999年：中国第一艘载人航天试验飞船\"神舟一号\"发射成功并安全返回"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E4%B9%A0%E8%BF%91%E5%B9%B3%E8%BF%99%E6%A0%B7%E5%8B%89%E5%8A%B1%E8%88%AA%E5%A4%A9%E4%BA%BA8.png"
+    author: "中国新闻社"
+    license: "CC BY 4.0"
 - id: cn-macau-handover-199912
   date: '1999-12-20'
   title: 澳门回归祖国，澳门特别行政区政府正式成立
@@ -4165,6 +4849,12 @@
   sources:
     - 新华网
     - 新华社
+  image:
+    url: "/images/events/1999/cn-macau-handover-199912.jpg"
+    caption: "1999年：澳门回归祖国，澳门特别行政区政府正式成立"
+    source: "https://commons.wikimedia.org/wiki/File%3ALisbonagreement.jpg"
+    author: "Public domain source"
+    license: "Public domain"
 - id: cn-centenary-dawn-200001
   date: '2000-01-01'
   title: 全国人民欢庆千禧年，首都举行"迈向新世纪"神州世纪天坛之夜
@@ -4193,6 +4883,12 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: "/images/events/2000/cn-western-development-strategy-200001.jpg"
+    caption: "2000年：国务院成立西部地区开发领导小组，西部大开发战略全面启动实施"
+    source: "https://commons.wikimedia.org/wiki/File%3ABLM_Colorado_Native_Plant_Materials_Development_Program_(20552956026).jpg"
+    author: "mypubliclands"
+    license: "Public domain"
 - id: cn-three-represents-200002
   date: '2000-02-25'
   title: 江泽民在广东考察时首次完整阐述"三个代表"重要思想
@@ -4207,6 +4903,13 @@
     - 历史转折
   sources:
     - 新华网
+    - 卫生部
+  image:
+    url: "/images/events/2000/cn-three-represents-200002.jpg"
+    caption: "2000年：江泽民在广东考察时首次完整阐述\"三个代表\"重要思想"
+    source: "https://commons.wikimedia.org/wiki/File%3AThree_poisons.jpg"
+    author: "Redtigerxyz"
+    license: "CC BY-SA 4.0"
 - id: cn-sydney-olympics-china-200009
   date: '2000-09-15'
   title: 第27届悉尼奥运会举行，中国代表团斩获28金位列金牌榜第三位
@@ -4221,6 +4924,12 @@
   sources:
     - 新华网
     - 国际奥委会
+  image:
+    url: "/images/events/2000/cn-sydney-olympics-china-200009.jpg"
+    caption: "2000年：第27届悉尼奥运会举行，中国代表团斩获28金位列金牌榜第三位"
+    source: "https://commons.wikimedia.org/wiki/File%3AAustralian_Gliders_vs_China_at_the_Sports_Centre_(IMG_2865).jpg"
+    author: "Bidgee"
+    license: "CC BY-SA 3.0 au"
 - id: cn-focac-1st-ministerial-200010
   date: '2000-10-10'
   title: 中非合作论坛第一届部长级会议在北京隆重开幕
@@ -4235,6 +4944,12 @@
   sources:
     - 外交部
     - 新华网
+  image:
+    url: /images/events/2000/cn-focac-1st-ministerial-200010.svg
+    caption: 中非合作论坛成员关系图（2009年制图），作为2000年首届部长级会议开启多边合作机制的组织背景（非北京会议现场）
+    source: "https://commons.wikimedia.org/wiki/File:Forum_on_China-Africa_Cooperation.svg"
+    author: "玖巧仔"
+    license: "CC BY-SA 3.0"
 - id: cn-beidou1-first-satellite-200010
   date: '2000-10-31'
   title: 我国成功发射首颗"北斗一号"导航定位卫星，开启自主卫星导航时代
@@ -4250,6 +4965,12 @@
   sources:
     - 国家航天局
     - 新华网
+  image:
+    url: "/images/events/2000/cn-beidou1-first-satellite-200010.png"
+    caption: "2000年：我国成功发射首颗\"北斗一号\"导航定位卫星，开启自主卫星导航时代"
+    source: "https://commons.wikimedia.org/wiki/File%3AAzimutalprojektion-schief_kl-cropped.png"
+    author: "Stefan Kühn (Fotograf)"
+    license: "CC BY-SA 3.0"
 - id: cn-5th-national-population-census-200011
   date: '2000-11-01'
   title: 第五次全国人口普查登记工作在全国范围内展开，全国总人口达12.95亿
@@ -4293,6 +5014,12 @@
   sources:
     - 国防部
     - 新华网
+  image:
+    url: "/images/events/2001/cn-hainan-nanhai-collision-200104.jpg"
+    caption: "中美撞机事件后 EP-3 机组人员登机返回关岛（2001年4月12日资料图，非撞机瞬间）"
+    source: "https://commons.wikimedia.org/wiki/File%3AEP-3_crew_in_Hainan_Island_incident.jpg"
+    author: "Staff Sgt. John A Giles, U.S. Marine Corps"
+    license: "Public domain"
 - id: cn-shanghai-cooperation-organization-200106
   date: '2001-06-15'
   title: 上海合作组织（SCO）在上海正式成立
@@ -4308,6 +5035,12 @@
   sources:
     - 外交部
     - 新华网
+  image:
+    url: "/images/events/2001/cn-shanghai-cooperation-organization-200106.png"
+    caption: "2001年：上海合作组织（SCO）在上海正式成立"
+    source: "https://commons.wikimedia.org/wiki/File%3AMap_of_Shanghai_Cooperation_Organisation.png"
+    author: "J4keeS237"
+    license: "CC0"
 - id: cn-qinghai-tibet-railway-start-200106
   date: '2001-06-29'
   title: 青藏铁路二期工程（格尔木至拉萨段）开工典礼在格尔木和拉萨同时举行
@@ -4323,6 +5056,12 @@
   sources:
     - 铁道部
     - 新华网
+  image:
+    url: "/images/events/2001/cn-qinghai-tibet-railway-start-200106.jpg"
+    caption: "青藏铁路资料照片（2006年建成通车前后线路，作为 2001 年格拉段开工背景图）"
+    source: "https://commons.wikimedia.org/wiki/File%3ATibetanRailway.jpg"
+    author: "Fanghong"
+    license: "CC BY-SA 2.5"
 - id: cn-beijing-olympic-bid-success-200107
   date: '2001-07-13'
   title: 国际奥委会第112次全会在莫斯科投票，北京成功获得2008年第29届夏季奥运会主办权
@@ -4337,6 +5076,12 @@
   sources:
     - 国际奥委会
     - 新华网
+  image:
+    url: /images/events/2001/cn-beijing-olympic-bid-success-200107.jpg
+    caption: "北京2008年奥运会标志资料照片（2008年香港展出）；用于2001年申办成功的后续标志背景，非7月13日莫斯科投票现场"
+    source: "https://commons.wikimedia.org/wiki/File%3ABeijing_2008_Olympic_Logo_on_Hong_Kong_Art_Museum_2.JPG"
+    author: Xiaowei
+    license: "Public domain"
 - id: cn-world-cup-qualification-200110
   date: '2001-10-07'
   title: 国足沈阳五里河1:0战胜阿曼，历史性首次晋级世界杯决赛圈
@@ -4351,6 +5096,12 @@
   sources:
     - 新华网
     - 中国足协
+  image:
+    url: /images/events/2001/cn-world-cup-qualification-200110.jpg
+    caption: "中国国家足球队赛前合影（2008年世界杯亚洲区预选赛，澳大利亚悉尼）；用于2001年首次出线的球队背景，非沈阳对阿曼比赛现场"
+    source: "https://commons.wikimedia.org/wiki/File%3AChina_national_football_team_06-JUN-2008-ANZstad.jpg"
+    author: Albatross2147
+    license: "Public domain"
 - id: cn-apec-shanghai-summit-200110
   date: '2001-10-21'
   title: 亚太经合组织（APEC）第九次领导人非正式会议在上海成功举行
@@ -4366,6 +5117,12 @@
   sources:
     - 外交部
     - 新华网
+  image:
+    url: "/images/events/2001/cn-apec-shanghai-summit-200110.jpg"
+    caption: "2001年：亚太经合组织（APEC）第九次领导人非正式会议在上海成功举行"
+    source: "https://commons.wikimedia.org/wiki/File%3AVladimir_Putin_at_APEC_Summit_in_China_19-21_October_2001-4.jpg"
+    author: "Presidential Press and Information Office"
+    license: "CC BY 4.0"
 - id: cn-wto-accession-signed-200111
   date: '2001-11-10'
   title: 世界贸易组织第4届部长级会议通过中国加入WTO议案，12月11日正式生效
@@ -4381,6 +5138,12 @@
   sources:
     - 商务部
     - 新华网
+  image:
+    url: "/images/events/2001/cn-wto-accession-signed-200111.jpg"
+    caption: "2001年11月：世界贸易组织第4届部长级会议在多哈举行，中国加入WTO议案获通过（会议资料图）"
+    source: "https://commons.wikimedia.org/wiki/File%3ADoha_Ministerial_Conference_9-13_November_2001_%289308714762%29.jpg"
+    author: "World Trade Organization"
+    license: "CC BY-SA 2.0"
 - id: cn-china-world-cup-debut-200206
   date: '2002-06-04'
   title: 中国国家男子足球队首次亮相韩日世界杯决赛圈
@@ -4395,6 +5158,12 @@
   sources:
     - 新华网
     - FIFA
+  image:
+    url: "/images/events/2002/cn-china-world-cup-debut-200206.png"
+    caption: "中国国家队2002年世界杯球衣样式图（用于首次世界杯参赛背景，非比赛现场照片）"
+    source: "https://commons.wikimedia.org/wiki/File%3AKit_body_chn02a2.png"
+    author: "Hurfer"
+    license: "CC BY-SA 4.0"
 - id: cn-three-gorges-diversion-closure-200211
   date: '2002-11-06'
   title: 三峡工程导流明渠截流成功
@@ -4421,6 +5190,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2002/cn-cpc-16th-congress-200211.jpg"
+    caption: "2002年：中国共产党第十六次全国代表大会在北京胜利召开"
+    source: "https://commons.wikimedia.org/wiki/File%3AGreatHall_auditorium.jpg"
+    author: "Original uploader was AcidBomber at en.wikipedia"
+    license: "CC BY 3.0"
 - id: cn-wto-one-year-anniversary-200212
   date: '2002-12-11'
   title: 中国加入世界贸易组织（WTO）一周年，全面履行降税与市场开放承诺
@@ -4436,6 +5211,12 @@
   sources:
     - 商务部
     - 新华网
+  image:
+    url: "/images/events/2002/cn-wto-one-year-anniversary-200212.jpg"
+    caption: "2001年世界贸易组织总部威廉·拉帕德中心航拍资料照片（中国入世一周年背景）"
+    source: "https://commons.wikimedia.org/wiki/File%3ACwr_aerial_2001.jpg"
+    author: "Photo Lightmotif / Blatt"
+    license: "CC BY-SA 1.0"
 - id: cn-south-to-north-water-diversion-200212
   date: '2002-12-27'
   title: 国务院批准《南水北调工程总体规划》，东线和中线工程正式开工
@@ -4450,6 +5231,12 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: "/images/events/2002/cn-south-to-north-water-diversion-200212.jpg"
+    caption: "2002年：国务院批准《南水北调工程总体规划》，东线和中线工程正式开工"
+    source: "https://commons.wikimedia.org/wiki/File%3ASouth-North_Water_Diversion_East_Line_Corporation_(20201017153319).jpg"
+    author: "N509FZ"
+    license: "CC BY-SA 4.0"
 - id: cn-shenzhou4-space-mission-200212
   date: '2002-12-30'
   title: 神舟四号无人飞船成功发射，载人航天准备工作进入最后冲刺
@@ -4486,6 +5273,12 @@
   sources:
     - 新华网
     - 人大网
+  image:
+    url: "/images/events/2003/cn-national-npc-200303.jpg"
+    caption: "人民大会堂资料照片（全国人大会议地点背景图，2007年拍摄）"
+    source: "https://commons.wikimedia.org/wiki/File%3AGreat_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0"
 - id: cn-fight-against-sars-200304
   date: '2003-04-20'
   title: 中共中央国务院全面部署抗击非典（SARS）工作，构建公共卫生应急体系
@@ -4500,6 +5293,12 @@
   sources:
     - 新华网
     - 卫生部
+  image:
+    url: "/images/events/2003/cn-fight-against-sars-200304.png"
+    caption: "2003年：SARS 防护实验室工作人员佩戴 N95 呼吸防护用品（CDC 资料图）"
+    source: "https://commons.wikimedia.org/wiki/File%3ASARS_2003_lab_worker.png"
+    author: "CDC/Anthony Sanchez"
+    license: "Public domain"
 - id: cn-three-gorges-water-storage-200306
   date: '2003-06-01'
   title: 三峡水库正式开始蓄水，下闸蓄水至135米
@@ -4514,6 +5313,12 @@
   sources:
     - 新华网
     - 中国三峡
+  image:
+    url: "/images/events/2003/cn-three-gorges-water-storage-200306.jpg"
+    caption: "2003年：三峡水库正式开始蓄水，下闸蓄水至135米"
+    source: "https://commons.wikimedia.org/wiki/File%3AThe_Three_Gorges_Dam.jpg"
+    author: "European Union , Copernicus Sentinel-2 imagery"
+    license: "Attribution"
 - id: cn-cepa-signed-200306
   date: '2003-06-29'
   title: 《内地与香港关于建立更紧密经贸关系的安排》（CEPA）在香港签署
@@ -4529,6 +5334,12 @@
   sources:
     - 商务部
     - 新华网
+  image:
+    url: "/images/events/2003/cn-cepa-signed-200306.jpg"
+    caption: "2003年：《内地与香港关于建立更紧密经贸关系的安排》（CEPA）在香港签署"
+    source: "https://commons.wikimedia.org/wiki/File%3AIA_CEPA_Signing_Ceremony_(32334301677).jpg"
+    author: "Australian Embassy Jakarta"
+    license: "CC BY 2.0"
 - id: cn-northeast-revitalization-200310
   date: '2003-10-05'
   title: 中共中央国务院印发《关于实施东北地区等老工业基地振兴战略的若干意见》
@@ -4543,6 +5354,12 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: "/images/events/2003/cn-northeast-revitalization-200310.png"
+    caption: "东北地区振兴战略涉及区域示意图（政策资料图，非 2003 年发布会现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3ANortheast_China.svg"
+    author: "Quintucket"
+    license: "CC0"
 - id: cn-cpc-16th-3rd-plenum-200310
   date: '2003-10-14'
   title: 中共十六届三中全会通过《关于完善社会主义市场经济体制若干问题的决定》
@@ -4557,6 +5374,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2003/cn-cpc-16th-3rd-plenum-200310.jpg"
+    caption: "北京京西宾馆外景（2010年拍摄；作为十六届三中全会举办地点背景资料，非2003年会议现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E5%8C%97%E4%BA%AC%E4%BA%AC%E8%A5%BF%E8%B3%93%E9%A4%A8_2010.jpg"
+    author: "Wpcpey"
+    license: "CC BY-SA 4.0"
 - id: cn-shenzhou5-manned-flight-200310
   date: '2003-10-15'
   title: 我国首次载人航天飞行获得圆满成功，航天员杨利伟乘坐神舟五号飞船遨游太空
@@ -4571,6 +5394,12 @@
   sources:
     - 国家航天局
     - 新华网
+  image:
+    url: "/images/events/2003/cn-shenzhou5-manned-flight-200310.jpg"
+    caption: "2003年：我国首次载人航天飞行获得圆满成功，航天员杨利伟乘坐神舟五号飞船遨游太空"
+    source: "https://commons.wikimedia.org/wiki/File%3AShenzhou-5_mockup_and_parachute_at_NMC.jpg"
+    author: "Shujianyang"
+    license: "CC BY-SA 4.0"
 - id: cn-constitution-amendment-200403
   date: '2004-03-14'
   title: 十届全国人大二次会议表决通过宪法修正案，将"国家尊重和保障人权"写入宪法
@@ -4586,6 +5415,12 @@
   sources:
     - 新华网
     - 人大网
+  image:
+    url: "/images/events/2004/cn-constitution-amendment-200403.jpg"
+    caption: "2004年：中华人民共和国宪法修正案（文件资料图）"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%AE%AA%E6%B3%95%E4%BF%AE%E6%AD%A3%E6%A1%88%EF%BC%882004%E5%B9%B4%EF%BC%89.pdf"
+    author: "National People's Congress"
+    license: "Public domain"
 - id: cn-deng-xiaoping-centenary-200408
   date: '2004-08-22'
   title: 纪念邓小平同志诞辰100周年大会在北京隆重举行
@@ -4613,6 +5448,12 @@
   sources:
     - 新华网
     - 国际奥委会
+  image:
+    url: "/images/events/2004/cn-liu-xiang-athens-gold-200408.jpg"
+    caption: "2004年：刘翔在雅典奥运会男子110米栏比赛中夺冠（人物资料图）"
+    source: "https://commons.wikimedia.org/wiki/File%3ALiu_xiang_2004.jpg"
+    author: "Johnson Lau"
+    license: "CC BY-SA 2.5"
 - id: cn-athens-olympics-200408
   date: '2004-08-29'
   title: 第28届雅典奥运会闭幕，中国代表团以32枚金牌高居金牌榜第二位
@@ -4626,6 +5467,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2004/cn-athens-olympics-200408.png"
+    caption: "2004年：第28届雅典奥运会闭幕，中国代表团以32枚金牌高居金牌榜第二位"
+    source: "https://commons.wikimedia.org/wiki/File%3A2004_Athens_Olympic_Torch.png"
+    author: "Marmat564"
+    license: "CC0"
 - id: cn-cpc-16th-4th-plenum-200409
   date: '2004-09-19'
   title: 中共十六届四中全会通过《关于加强党的执政能力建设的决定》
@@ -4640,6 +5487,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2004/cn-cpc-16th-4th-plenum-200409.jpg"
+    caption: "2004年11月：胡锦涛在巴西利亚（用于十六届四中全会政治背景，非9月19日全会现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3AHu_Jintao_2004.jpg"
+    author: "U. Dettmar / Agência Brasil"
+    license: "CC BY 3.0 BR"
 - id: cn-russia-border-agreement-200410
   date: '2004-10-14'
   title: 中俄在京签署国界东段补充协定，彻底解决长达4300公里的中俄边界问题
@@ -4654,6 +5507,12 @@
   sources:
     - 外交部
     - 新华网
+  image:
+    url: "/images/events/2004/cn-russia-border-agreement-200410.jpg"
+    caption: "中俄 2004 年最终边界协定前东段争议地段示意图（边界资料图，非签署现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3AChina_USSR_E_88.jpg"
+    author: "Unknown"
+    license: "Public domain"
 - id: cn-macau-5th-anniversary-200412
   date: '2004-12-20'
   title: 庆祝澳门回归祖国5周年大会暨澳门特区第二届政府就职典礼举行
@@ -4695,6 +5554,12 @@
   sources:
     - 新华网
     - 人大网
+  image:
+    url: "/images/events/2005/cn-anti-secession-law-200503.jpg"
+    caption: "2005年：十届全国人大三次会议高票通过《反分裂国家法》"
+    source: "https://commons.wikimedia.org/wiki/File%3AGreat_Hall_Of_The_People_At_Night.JPG"
+    author: "Thomas.fanghaenel"
+    license: "CC BY-SA 3.0"
 - id: cn-lien-chan-visit-200504
   date: '2005-04-29'
   title: 中共中央总书记胡锦涛与中国国民党主席连战举行历史性会谈（连胡会）
@@ -4710,6 +5575,12 @@
   sources:
     - 新华网
     - 国台办
+  image:
+    url: "/images/events/2005/cn-lien-chan-visit-200504.jpg"
+    caption: "2005年4月27日：连战在南京明孝陵，记录其访问大陆行程背景（非4月29日北京连胡会谈现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3A2005KMT_NanjingTour_LienChan.jpg"
+    author: "Universe729（原图）；Rico Shen（剪裁/上传）"
+    license: "CC BY-SA 3.0（兼容 GFDL 1.2+）"
 - id: cn-renminbi-reform-200507
   date: '2005-07-21'
   title: 中国人民银行宣布实施人民币汇率形成机制改革
@@ -4725,6 +5596,12 @@
   sources:
     - 中国人民银行
     - 新华网
+  image:
+    url: "/images/events/2005/cn-renminbi-reform-200507.jpg"
+    caption: "2005年：中国人民银行宣布实施人民币汇率形成机制改革"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E9%93%B6%E8%A1%8C.jpg"
+    author: "維基小霸王"
+    license: "CC BY-SA 4.0"
 - id: cn-victory-60th-200509
   date: '2005-09-03'
   title: 中国人民抗日战争暨世界反法西斯战争胜利60周年纪念大会举行
@@ -4738,6 +5615,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2005/cn-victory-60th-200509.jpg"
+    caption: "2005年5月9日：莫斯科红场纪念二战胜利60周年阅兵，作为9月3日北京纪念大会的国际纪念背景（非北京大会现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3A2005_Victory_Day_Parade_%281%29.jpg"
+    author: "Eric Draper（美国白宫）"
+    license: "Public domain（美国联邦政府作品）"
 - id: cn-mount-everest-height-200510
   date: '2005-10-09'
   title: 国务院新闻办正式公布珠穆朗玛峰峰顶岩石面海拔高程为8844.43米
@@ -4753,6 +5636,12 @@
   sources:
     - 国家测绘局
     - 新华网
+  image:
+    url: "/images/events/2005/cn-mount-everest-height-200510.jpg"
+    caption: "2005年：国务院新闻办正式公布珠穆朗玛峰峰顶岩石面海拔高程为8844.43米"
+    source: "https://commons.wikimedia.org/wiki/File%3AEverest-3D-Map-Type-EN.jpg"
+    author: "Tom Patterson"
+    license: "CC0"
 - id: cn-shenzhou6-space-mission-200510
   date: '2005-10-12'
   title: 神舟六号载人飞船成功发射，航天员费俊龙、聂海胜顺利展开多人多天太空飞行
@@ -4767,6 +5656,12 @@
   sources:
     - 国家航天局
     - 新华网
+  image:
+    url: "/images/events/2005/cn-shenzhou6-space-mission-200510.png"
+    caption: "2005年：神舟六号载人飞船成功发射，航天员费俊龙、聂海胜顺利展开多人多天太空飞行"
+    source: "https://commons.wikimedia.org/wiki/File%3AShenzhou_spacecraft_ground_test.png"
+    author: "中国新闻网"
+    license: "CC BY 4.0"
 - id: cn-songhua-river-pollution-200511
   date: '2005-11-13'
   title: 吉林石化双苯厂爆炸引发松花江重大水污染事件
@@ -4796,6 +5691,12 @@
   sources:
     - 新华网
     - 人大网
+  image:
+    url: "/images/events/2005/cn-agricultural-tax-free-decided-200512.jpg"
+    caption: "2005年12月29日全国人大常委会废止农业税条例决定文件扫描预览（自2006年1月1日起施行）"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E5%85%A8%E5%9B%BD%E4%BA%BA%E6%B0%91%E4%BB%A3%E8%A1%A8%E5%A4%A7%E4%BC%9A%E5%B8%B8%E5%8A%A1%E5%A7%94%E5%91%98%E4%BC%9A%E5%85%B3%E4%BA%8E%E5%BA%9F%E6%AD%A2%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%86%9C%E4%B8%9A%E7%A8%8E%E6%9D%A1%E4%BE%8B%E3%80%8B%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
+    author: "全国人民代表大会常务委员会"
+    license: "Public domain（PD-PRC-exempt）"
 - id: cn-agricultural-tax-repeal-200601
   date: '2006-01-01'
   title: 中华人民共和国废止农业税条例，在中国延续2600年的"皇粮国税"正式退出历史舞台
@@ -4811,6 +5712,12 @@
   sources:
     - 新华网
     - 人大网
+  image:
+    url: "/images/events/2006/cn-agricultural-tax-repeal-200601.jpg"
+    caption: "废止农业税条例的全国人大常委会决定文件扫描预览（2005年12月通过，2006年1月1日起施行）"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E5%85%A8%E5%9B%BD%E4%BA%BA%E6%B0%91%E4%BB%A3%E8%A1%A8%E5%A4%A7%E4%BC%9A%E5%B8%B8%E5%8A%A1%E5%A7%94%E5%91%98%E4%BC%9A%E5%85%B3%E4%BA%8E%E5%BA%9F%E6%AD%A2%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%86%9C%E4%B8%9A%E7%A8%8E%E6%9D%A1%E4%BE%8B%E3%80%8B%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
+    author: "全国人民代表大会常务委员会"
+    license: "Public domain"
 - id: cn-socialist-values-200603
   date: '2006-03-04'
   title: 胡锦涛提出以"八荣八耻"为主要内容的社会主义荣辱观
@@ -4837,6 +5744,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2006/cn-11th-five-year-plan-200603.pdf
+    caption: 全国人大常委会公报2006年第3号，收录十届全国人大四次会议关于“十一五”规划纲要的决议与纲要原文（官方文献，非大会现场照片）
+    source: "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%A8%E5%9B%BD%E4%BA%BA%E6%B0%91%E4%BB%A3%E8%A1%A8%E5%A4%A7%E4%BC%9A%E5%B8%B8%E5%8A%A1%E5%A7%94%E5%91%98%E4%BC%9A%E5%85%AC%E6%8A%A52006%E5%B9%B4%E7%AC%AC3%E5%8F%B7.pdf"
+    author: "中华人民共和国全国人民代表大会常务委员会"
+    license: "Public domain（PD-PRC-exempt，官方法律公报）"
 - id: cn-three-gorges-dam-completed-200605
   date: '2006-05-20'
   title: 三峡大坝全线浇筑达到设计高程185米，主体工程全面建成
@@ -4852,6 +5765,12 @@
   sources:
     - 新华网
     - 中国三峡
+  image:
+    url: "/images/events/2006/cn-three-gorges-dam-completed-200605.jpg"
+    caption: "2006年：三峡大坝全线浇筑达到设计高程185米，主体工程全面建成"
+    source: "https://commons.wikimedia.org/wiki/File%3AThree_Gorges_Dam%2C_China_-_natural_colours.jpg"
+    author: "nasa"
+    license: "Public domain"
 - id: cn-qinghai-tibet-railway-open-200607
   date: '2006-07-01'
   title: 青藏铁路全线通车运营，结束西藏不通铁路的历史
@@ -4867,6 +5786,12 @@
   sources:
     - 新华网
     - 铁道部
+  image:
+    url: "/images/events/2006/cn-qinghai-tibet-railway-open-200607.jpg"
+    caption: "2006年：青藏铁路全线通车运营，结束西藏不通铁路的历史"
+    source: "https://commons.wikimedia.org/wiki/File%3AQinghai-Tibet_Railway_View_-_14257015644.jpg"
+    author: "Andrew and Annemarie"
+    license: "CC BY-SA 2.0"
 - id: cn-typhoon-saomai-200608
   date: '2006-08-10'
   title: 1949年以来登陆中国大陆最强台风"桑美"登陆浙江苍南
@@ -4893,6 +5818,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2006/cn-cpc-16th-6th-plenum-200610.jpg"
+    caption: "2006年4月20日：胡锦涛在白宫南草坪欢迎仪式后（用于十六届六中全会政治背景，非10月11日全会现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3ABushhujintao.jpg"
+    author: "Shealah Craighead（美国白宫）"
+    license: "Public domain（美国总统行政办公室作品）"
 - id: cn-long-march-70th-200610
   date: '2006-10-22'
   title: 纪念中国工农红军长征胜利70周年大会在北京隆重举行
@@ -4919,6 +5850,12 @@
   sources:
     - 外交部
     - 新华网
+  image:
+    url: "/images/events/2006/cn-focac-beijing-summit-200611.jpg"
+    caption: "2006年：中非合作论坛北京峰会隆重开幕，48个非洲国家元首和代表出席"
+    source: "https://commons.wikimedia.org/wiki/File%3AKerry_Hotel_Beijing%2C_2018_Beijing_Summit_of_FOCAC%2C_Sep_2018.jpg"
+    author: "颜邯"
+    license: "CC BY-SA 4.0"
 - id: cn-cross-strait-charter-flights-200702
   date: '2007-02-15'
   title: 两岸包机常态化与海峡两岸经济文化交流持续深化
@@ -4946,6 +5883,12 @@
   sources:
     - 新华网
     - 人大网
+  image:
+    url: "/images/events/2007/cn-property-law-200703.jpg"
+    caption: "2007年：《中华人民共和国物权法》文件资料图"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%89%A9%E6%B3%95.pdf"
+    author: "National People's Congress"
+    license: "Public domain"
 - id: cn-harmony-bullet-train-200704
   date: '2007-04-18'
   title: 中国铁路第六次大提速，"和谐号"动车组（CRH）正式投入运营
@@ -4961,6 +5904,12 @@
   sources:
     - 铁道部
     - 新华网
+  image:
+    url: "/images/events/2007/cn-harmony-bullet-train-200704.jpg"
+    caption: "2008年：济南火车站的中国铁路 CRH“和谐号”动车组（车型资料图）"
+    source: "https://commons.wikimedia.org/wiki/File%3AChina_Railways_CRH_harmony.jpg"
+    author: "kanegen"
+    license: "CC BY 2.0"
 - id: cn-tai-lake-algae-blooms-200705
   date: '2007-05-29'
   title: 太湖蓝藻大面积爆发致无锡自来水危机，国家重拳整治水污染
@@ -4989,6 +5938,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2007/cn-hong-kong-10th-anniversary-200707.png"
+    caption: "2007年：庆祝香港回归祖国10周年大会暨香港特别行政区第三届政府就职典礼举行"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E5%BA%86%E7%A5%9D%E9%A6%99%E6%B8%AF%E5%9B%9E%E5%BD%92%E7%A5%96%E5%9B%BD25%E5%91%A8%E5%B9%B4%E5%A4%A7%E4%BC%9A%E6%9A%A8%E9%A6%99%E6%B8%AF%E7%89%B9%E5%88%AB%E8%A1%8C%E6%94%BF%E5%8C%BA%E7%AC%AC%E5%85%AD%E5%B1%8A%E6%94%BF%E5%BA%9C%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC_20220701.png"
+    author: "中国新闻网"
+    license: "CC BY 3.0"
 - id: cn-rural-minimum-living-allowance-200707
   date: '2007-07-11'
   title: 国务院印发通知在全国范围建立农村最低生活保障制度
@@ -5004,6 +5959,12 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: "/images/events/2007/cn-rural-minimum-living-allowance-200707.png"
+    caption: "2007年：国务院印发通知在全国范围建立农村最低生活保障制度"
+    source: "https://commons.wikimedia.org/wiki/File%3AChina_Healthcare_Logo2.png"
+    author: "中国国家医保局"
+    license: "Public domain"
 - id: cn-cpc-17th-congress-200710
   date: '2007-10-15'
   title: 中国共产党第十七次全国代表大会在北京胜利召开
@@ -5017,6 +5978,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2007/cn-cpc-17th-congress-200710.jpg"
+    caption: "2007年：中国共产党第十七次全国代表大会在北京胜利召开"
+    source: "https://commons.wikimedia.org/wiki/File%3APek%C3%ADn_1978_03.jpg"
+    author: "LBM1948"
+    license: "CC BY-SA 4.0"
 - id: cn-shanghai-stock-index-6000-200710
   date: '2007-10-16'
   title: 沪指突破6124点创历史新高，中国资本市场迎来前所未有大牛市
@@ -5045,6 +6012,12 @@
   sources:
     - 国家航天局
     - 新华网
+  image:
+    url: "/images/events/2007/cn-change1-lunar-orbiter-200710.jpg"
+    caption: "2007年：我国首颗月球探测卫星\"嫦娥一号\"在西昌卫星发射中心成功发射"
+    source: "https://commons.wikimedia.org/wiki/File%3AChang'e-1_mockup_at_BASM.jpg"
+    author: "Shujianyang"
+    license: "CC BY-SA 4.0"
 - id: beijing-olympics-2008
   date: '2008'
   title: 北京奥运
@@ -5065,6 +6038,12 @@
     - 社会稳定
   sources:
     - 新华网
+  image:
+    url: "/images/events/2008/cn-tibet-314-incident-200803.png"
+    caption: "2008年3月西藏抗议活动地点示意图（事件资料图，非拉萨现场照片）"
+    source: "https://commons.wikimedia.org/wiki/File%3AMap_of_2008_Tibetan_protest_locations_compiled_by_Students_for_a_Free_Tibet.png"
+    author: "Students for a Free Tibet"
+    license: "CC BY 2.0"
 - id: cn-wenchuan-earthquake-200805
   date: '2008-05-12'
   title: 四川汶川发生8.0级特大地震，举国上下同心抗震救灾
@@ -5078,6 +6057,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2008/cn-wenchuan-earthquake-200805.jpg"
+    caption: "2008年：四川汶川发生8.0级特大地震，举国上下同心抗震救灾"
+    source: "https://commons.wikimedia.org/wiki/File%3ADetails_of_Wenchuan_Earthquake_Memorial_Museum_02.jpg"
+    author: "来斤小仓鼠吧"
+    license: "CC BY-SA 4.0"
 - id: cn-beijing-olympics-200808
   date: '2008-08-08'
   title: 第29届夏季奥林匹克运动会在北京隆重开幕，中国首次举办夏季奥运会
@@ -5095,6 +6080,9 @@
   image:
     url: /images/events/2008/beijing_olympics_2008.jpg
     caption: 2008年8月8日第29届夏季奥林匹克运动会在北京国家体育场“鸟巢”隆重开幕，呈现震撼世界的华夏文明盛典
+    source: "https://commons.wikimedia.org/wiki/File%3A2008_Summer_Olympics_-_Opening_Ceremony_-_Beijing%2C_China_%E5%90%8C%E4%B8%80%E4%B8%AA%E4%B8%96%E7%95%8C_%E5%90%8C%E4%B8%80%E4%B8%AA%E6%A2%A6%E6%83%B3_-_U.S._Army_World_Class_Athlete_Program_-_FMWRC_%281%29.jpg"
+    author: "U.S. Army"
+    license: "CC BY 2.0"
 - id: cn-beijing-olympics-medal-200808
   date: '2008-08-24'
   title: 北京奥运会圆满闭幕，中国代表团以51金位列金牌榜首，创历史最佳成绩
@@ -5108,6 +6096,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2008/cn-beijing-olympics-medal-200808.jpg"
+    caption: "2008年：北京奥运会圆满闭幕，中国代表团以51金位列金牌榜首，创历史最佳成绩"
+    source: "https://commons.wikimedia.org/wiki/File%3ABronze_medal_of_Beijing_2008_Summer_Olympics_at_PRC70_Exhibition_(20191203162835).jpg"
+    author: "N509FZ"
+    license: "CC BY-SA 4.0"
 - id: cn-melamine-scandal-200809
   date: '2008-09-11'
   title: 三鹿奶粉三聚氰胺事件曝光，国家启动I级食品安全应急响应
@@ -5122,6 +6116,12 @@
   sources:
     - 新华网
     - 卫生部
+  image:
+    url: "/images/events/2008/cn-melamine-scandal-200809.jpg"
+    caption: "2008年：三鹿奶粉三聚氰胺事件曝光，国家启动I级食品安全应急响应"
+    source: "https://commons.wikimedia.org/wiki/File%3AMelamine_A.jpg"
+    author: "Aariuser I"
+    license: "CC BY-SA 2.0"
 - id: cn-shenzhou7-spacewalk-200809
   date: '2008-09-27'
   title: 航天员翟志刚完成中国首次太空出舱行走，神舟七号载人任务圆满成功
@@ -5136,6 +6136,12 @@
   sources:
     - 国家航天局
     - 新华网
+  image:
+    url: "/images/events/2008/cn-shenzhou7-spacewalk-200809.jpg"
+    caption: "2008年：航天员翟志刚完成中国首次太空出舱行走，神舟七号载人任务圆满成功"
+    source: "https://commons.wikimedia.org/wiki/File%3AShenzhou_7_spacecraft_model_1.jpg"
+    author: "Brücke-Osteuropa"
+    license: "CC0"
 - id: cn-global-financial-crisis-response-2008
   date: '2008-11-05'
   title: 国务院公布扩大内需促进经济平稳较快增长十项措施（4万亿投资计划）
@@ -5151,6 +6157,12 @@
   sources:
     - 新华网
     - 国务院
+  image:
+    url: "/images/events/2008/cn-global-financial-crisis-response-2008.jpg"
+    caption: "2008年：国务院公布扩大内需促进经济平稳较快增长十项措施（4万亿投资计划）"
+    source: "https://commons.wikimedia.org/wiki/File%3AGlobal_sustainable_recovery_spending_by_governments_in_reponse_to_Covid-19_compared_to_green_spending_labels_enacted_in_post-global_financial_crisis_stimulus_plans.jpg"
+    author: "International Energy Agency"
+    license: "CC BY 4.0"
 - id: cn-cross-strait-three-links-200812
   date: '2008-12-15'
   title: 海峡两岸海运直航、空运直航、直接通邮全面实现，"大三通"时代正式来临
@@ -5165,6 +6177,12 @@
   sources:
     - 国台办
     - 新华网
+  image:
+    url: "/images/events/2008/cn-cross-strait-three-links-200812.jpg"
+    caption: "2008年12月：两岸每日包机航线示意图（12月15日直航启动）"
+    source: "https://commons.wikimedia.org/wiki/File%3ACross-strait_daily_charter_route_map.jpg"
+    author: "Tsungyenlee"
+    license: "CC BY-SA 3.0"
 - id: cn-reform-openning-30th-200812
   date: '2008-12-18'
   title: 纪念党的十一届三中全会召开30周年大会在北京隆重举行
@@ -5178,6 +6196,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2008/cn-reform-openning-30th-200812.jpg
+    caption: 北京人民大会堂外景（2007年），作为2008年改革开放30周年纪念大会举办地点背景（非12月18日大会现场）
+    source: "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0（兼容2.5/2.0/1.0；GFDL）"
 - id: cn-shanghai-expo-preparation-2009
   date: '2009-01-22'
   title: 2010年上海世界博览会建设工作全面推进，迎接"城市，让生活更美好"
@@ -5205,6 +6229,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2009/cn-new-medical-reform-200904.jpg"
+    caption: "上海花木社区卫生服务中心外景（2009年12月），作为2009年新医改推进基层医疗服务建设的同期背景（非4月6日政策发布现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Hospital_in_Yulan_Road.JPG"
+    author: "Emcc83"
+    license: "CC BY-SA 3.0（兼容GFDL）"
 - id: cn-h1n1-response-200906
   date: '2009-05-11'
   title: 中国内地发现首例输入性甲型H1N1流感病例，全面启动应急响应
@@ -5245,6 +6275,12 @@
     - 社会稳定
   sources:
     - 新华网
+  image:
+    url: "/images/events/2009/cn-urumqi-75-incident-200907.jpg"
+    caption: "2009年7月乌鲁木齐事件后的街头场景（7月7日资料图，非处置现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3ARiots_in_Urumqi%2C_July_2009_-1_%284074621870%29.jpg"
+    author: "David Vilder"
+    license: "CC BY 2.0"
 - id: cn-social-security-coverage-2009
   date: '2009-09-04'
   title: 国务院发布新农村社会养老保险试点方案，探索建立"新农保"制度
@@ -5259,6 +6295,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2009/cn-social-security-coverage-2009.jpg"
+    caption: "辽宁大连一名老人在星海湾（2009年5月21日），作为新型农村社会养老保险试点面向老年群体的同期社会背景（非9月4日发布现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Dalian_Liaoning_China_An-elderly-Chinese-at-Xinghai-Bay-01.jpg"
+    author: "CEphoto, Uwe Aranas"
+    license: "CC BY-SA 3.0（兼容GFDL）"
 - id: cn-g20-copenhagen-diplomacy-2009
   date: '2009-09-24'
   title: 国家主席胡锦涛出席联合国气候变化峰会并在G20匹兹堡峰会上提出中国减排承诺
@@ -5285,6 +6327,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2009/cn-new-china-60th-parade-200910.jpg"
+    caption: "2009年10月1日国庆60周年阅兵中的HQ-9防空导弹方队（阅兵资料图）"
+    source: "https://commons.wikimedia.org/wiki/File%3AHQ-9_at_the_China%27s_60th_anniversary_parade.jpg"
+    author: "Voice of America"
+    license: "Public domain"
 - id: cn-economy-first-recovery-2009
   date: '2009-11-10'
   title: 中国经济在全球金融危机中率先回升向好，GDP全年增长8.7%
@@ -5299,6 +6347,12 @@
   sources:
     - 国家统计局
     - 新华网
+  image:
+    url: "/images/events/2009/cn-economy-first-recovery-2009.jpg"
+    caption: "2009年：中国经济在全球金融危机中率先回升向好，GDP全年增长8.7%"
+    source: "https://commons.wikimedia.org/wiki/File%3AEconomy_Growing_(4159109316).jpg"
+    author: "Nancy Pelosi from San Francisco, CA"
+    license: "CC BY 2.0"
 - id: cn-major-projects-2009
   date: '2009-12-26'
   title: 武广高速铁路正式开通运营，中国进入高铁快速发展时代
@@ -5313,6 +6367,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2009/cn-major-projects-2009.jpg"
+    caption: "2009年：武广高速铁路正式开通运营，中国进入高铁快速发展时代"
+    source: "https://commons.wikimedia.org/wiki/File%3ACRH380BL_near_Houshan%2CWuxi.JPG"
+    author: "MNXANL"
+    license: "CC BY-SA 4.0"
 - id: cn-china-asean-fta-201001
   date: '2010-01-01'
   title: 中国-东盟自由贸易区正式建成
@@ -5351,6 +6411,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2010/cn-shanghai-expo-201005.jpg"
+    caption: "2010年：2010年上海世界博览会开幕"
+    source: "https://commons.wikimedia.org/wiki/File%3AShanghai_(Huang_Pu_River_at_Night)_046.jpg"
+    author: "The original uploader was Cedventure at English Wikipedia."
+    license: "CC BY-SA 2.5"
 - id: cn-ecfa-agreement-201006
   date: '2010-06-29'
   title: 海峡两岸签署《海峡两岸经济合作框架协议》（ECFA）
@@ -5440,6 +6506,12 @@
     - 国家统计局
     - 日本内阁府
     - 新华网
+  image:
+    url: "/images/events/2010/cn-gdp-second-world-201012.png"
+    caption: "2010年：中国全年GDP超越日本，跃居世界第二大经济体"
+    source: "https://commons.wikimedia.org/wiki/File%3AOurworldindata_uk-defence-spending-as-a-percentage-of-gdp.png"
+    author: "Max Roser, Esteban Ortiz-Ospina, Hannah Ritchie and Edouard Mathieu"
+    license: "CC BY 4.0"
 - id: cn-socialist-legal-system-201103
   date: '2011-03-10'
   title: 吴邦国宣布中国特色社会主义法律体系已经形成
@@ -5453,6 +6525,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2011/cn-socialist-legal-system-201103.jpg
+    caption: "吴邦国2011年4月在北京人民大会堂会见巴西总统资料照片；用于中国特色社会主义法律体系形成的全国人大领导背景，非3月10日会议现场"
+    source: "https://commons.wikimedia.org/wiki/File%3AWu_Bangguo_Beijing2011.jpg"
+    author: "Roberto Stuckert Filho"
+    license: "CC BY-SA 2.0"
 - id: cn-twelfth-five-year-plan-201103
   date: '2011-03-14'
   title: 十一届全国人大四次会议表决通过“十二五”规划纲要
@@ -5478,6 +6556,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2011/cn-jinghu-hsr-open-201106.jpg
+    caption: 2011年6月30日京沪高速铁路开通首日温家宝登车资料图
+    source: https://commons.wikimedia.org/wiki/File:Wen_Jiabao_boarding_Beijing%E2%80%93Shanghai_High-Speed_Railway_train.jpg
+    author: Wang Chung
+    license: CC BY-SA 3.0
 - id: cn-cpc-90th-anniversary-201107
   date: '2011-07-01'
   title: 庆祝中国共产党成立90周年大会隆重举行
@@ -5515,6 +6599,12 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: "/images/events/2011/cn-tiangong1-launch-201109.png"
+    caption: "2011年：天宫一号目标飞行器成功发射"
+    source: "https://commons.wikimedia.org/wiki/File%3ATiangong_1.svg"
+    author: "Tiangong_1_drawing.png: Craigboy derivative work: 70.49.127.65 Vectorized by Waterced"
+    license: "CC BY-SA 3.0"
 - id: cn-xinhai-centenary-201110
   date: '2011-10-10'
   title: 纪念辛亥革命100周年大会举行
@@ -5553,6 +6643,12 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: "/images/events/2011/cn-shenzhou8-tiangong-docking-201111.png"
+    caption: "2011年：神舟八号与天宫一号首次交会对接成功"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E4%B9%A0%E8%BF%91%E5%B9%B3%E8%BF%99%E6%A0%B7%E5%8B%89%E5%8A%B1%E8%88%AA%E5%A4%A9%E4%BA%BA7.png"
+    author: "中国新闻社"
+    license: "CC BY 4.0"
 - id: cn-poverty-standard-raised-201111
   date: '2011-11-29'
   title: 国家大幅提高农村扶贫标准至2300元
@@ -5579,6 +6675,12 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: "/images/events/2012/cn-shenzhou9-launch-201206.png"
+    caption: "2012年：神舟九号成功发射，刘洋成为中国首位女航天员，实现首次手控交会对接"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E4%B9%A0%E8%BF%91%E5%B9%B3%E8%BF%99%E6%A0%B7%E5%8B%89%E5%8A%B1%E8%88%AA%E5%A4%A9%E4%BA%BA3.png"
+    author: "中国新闻社"
+    license: "CC BY 4.0"
 - id: cn-jiaolong-7062m-201206
   date: '2012-06-27'
   title: “蛟龙”号载人潜水器成功下潜至7062米，创最大下潜深度纪录
@@ -5593,6 +6695,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2012/cn-jiaolong-7062m-201206.jpg
+    caption: "‘蛟龙’号深潜器等比例模型资料图（2024年珠海太空中心）；用于2012年7062米下潜纪录的装备背景，非当日下潜现场"
+    source: "https://commons.wikimedia.org/wiki/File%3AJiaolong_submersible.jpg"
+    author: Shujianyang
+    license: "CC0 1.0"
 - id: cn-liaoning-aircraft-carrier-201209
   date: '2012-09-25'
   title: 中国第一艘航空母舰“辽宁舰”正式交付海军
@@ -5606,6 +6714,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2012/cn-liaoning-aircraft-carrier-201209.jpg"
+    caption: "2012年：中国第一艘航空母舰“辽宁舰”正式交付海军"
+    source: "https://commons.wikimedia.org/wiki/File%3AAircraft_Carrier_Liaoning_CV-16.jpg"
+    author: "Baycrest"
+    license: "CC BY-SA 2.5"
 - id: cn-moyan-nobel-prize-201210
   date: '2012-10-11'
   title: 作家莫言获得诺贝尔文学奖
@@ -5620,6 +6734,12 @@
   sources:
     - 新华网
     - 诺贝尔奖官网
+  image:
+    url: "/images/events/2012/cn-moyan-nobel-prize-201210.jpg"
+    caption: "2012年：作家莫言获得诺贝尔文学奖"
+    source: "https://commons.wikimedia.org/wiki/File%3AMo_Yan_13_2012.jpg"
+    author: "Bengt Nyman"
+    license: "CC BY 2.0"
 - id: cn-18th-cpc-congress-201211
   date: '2012-11-08'
   title: 中国共产党第十八次全国代表大会胜利召开
@@ -5633,6 +6753,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2012/cn-18th-cpc-congress-201211.jpg
+    caption: 中国共产党第十八次全国代表大会会场资料图
+    source: https://commons.wikimedia.org/wiki/File:18th_National_Congress_of_the_Communist_Party_of_China.jpg
+    author: 美国之音记者东方
+    license: Public domain（美国政府作品）
 - id: cn-18th-first-plenum-201211
   date: '2012-11-15'
   title: 十八届一中全会选举习近平为中共中央总书记
@@ -5645,6 +6771,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2012/cn-18th-first-plenum-201211.jpg
+    caption: 2012年11月15日中共十八届一中全会后习近平与中外记者见面资料图
+    source: https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%85%B1%E5%8D%81%E5%85%AB%E5%B1%8A%E4%B8%80%E4%B8%AD%E5%85%A8%E4%BC%9A%E5%90%8E%E5%9C%A8%E8%AE%B0%E8%80%85%E4%BC%9A%E4%B8%8A%E7%9A%84%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%BB%E5%B8%AD.jpg
+    author: XY114514
+    license: CC BY-SA 4.0
 - id: cn-j15-carrier-landing-201211
   date: '2012-11-23'
   title: 歼-15舰载机首次成功在辽宁舰着舰起飞
@@ -5669,6 +6801,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2012/cn-chinese-dream-201211.jpg
+    caption: "国家博物馆《复兴之路》展览资料图（2011年拍摄）；用于2012年11月29日提出‘中国梦’的展览背景，非当日参观现场"
+    source: "https://commons.wikimedia.org/wiki/File%3A003_Road_of_Rejuvenation.jpg"
+    author: "Gary Lee Todd, Ph.D."
+    license: "CC0 1.0"
 - id: cn-eight-cardinal-couplets-201212
   date: '2012-12-04'
   title: 中共中央政治局审议通过改进工作作风“八项规定”
@@ -5682,6 +6820,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2012/cn-eight-cardinal-couplets-201212.jpg
+    caption: 北京人民大会堂外景（2007年），作为2012年12月中央政治局会议审议“八项规定”的地点背景（非12月4日会议现场）
+    source: "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0（兼容2.5/2.0/1.0；GFDL）"
 - id: cn-jingguang-hsr-open-201212
   date: '2012-12-26'
   title: 京广高速铁路全线贯通运营
@@ -5706,6 +6850,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2013/cn-xijinping-president-201303.jpg
+    caption: 习近平与墨西哥总统佩尼亚·涅托在三亚举行欢迎仪式（2013年4月6日；为3月14日当选国家主席后的官方活动资料图，非全国人大选举现场）
+    source: https://commons.wikimedia.org/wiki/File:Xi_Jinping_Sanya2013.jpg
+    author: Angélica Rivera de Peña
+    license: CC BY-SA 2.0
 - id: cn-shenzhou10-space-lecture-201306
   date: '2013-06-11'
   title: 神舟十号成功发射，王亚平进行中国首次太空授课
@@ -5721,6 +6871,12 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: "/images/events/2013/cn-shenzhou10-space-lecture-201306.png"
+    caption: "2013年：神舟十号成功发射，王亚平进行中国首次太空授课"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E4%B9%A0%E8%BF%91%E5%B9%B3%E8%BF%99%E6%A0%B7%E5%8B%89%E5%8A%B1%E8%88%AA%E5%A4%A9%E4%BA%BA4.png"
+    author: "中国新闻社"
+    license: "CC BY 4.0"
 - id: cn-belt-and-road-initiation-201309
   date: '2013-09-07'
   title: 国家主席首次提出共建“一带一路”倡议
@@ -5735,6 +6891,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2013/cn-belt-and-road-initiation-201309.png"
+    caption: "2013年：国家主席首次提出共建“一带一路”倡议"
+    source: "https://commons.wikimedia.org/wiki/File%3ABelt_and_Road_Initiative_participant_map.svg"
+    author: "Owennson"
+    license: "CC BY-SA 4.0"
 - id: cn-shanghai-ftz-open-201309
   date: '2013-09-29'
   title: 中国首个自由贸易试验区——中国（上海）自由贸易试验区挂牌成立
@@ -5748,6 +6910,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2013/cn-shanghai-ftz-open-201309.jpg"
+    caption: "2013年：中国首个自由贸易试验区——中国（上海）自由贸易试验区挂牌成立"
+    source: "https://commons.wikimedia.org/wiki/File%3AShanghai_Free_Trade_Zone.jpg"
+    author: "Baycrest"
+    license: "CC BY-SA 2.5"
 - id: cn-targeted-poverty-alleviation-201311
   date: '2013-11-03'
   title: 国家主席在湖南十八洞村首次提出“精准扶贫”理念
@@ -5761,6 +6929,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2013/cn-targeted-poverty-alleviation-201311.jpg"
+    caption: "湖南省长沙市黄合村乡村景观（2023年拍摄；用于精准扶贫理念提出的湖南乡村背景，非2013年十八洞村考察现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3AHuanghe_Village%2C_Datuopu_Subdistrict_20230609.jpg"
+    author: "Huangdan2060"
+    license: "CC BY 4.0"
 - id: cn-third-plenum-18th-201311
   date: '2013-11-12'
   title: 党的十八届三中全会通过全面深化改革决定，设立国家安全委员会
@@ -5774,6 +6948,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2013/cn-third-plenum-18th-201311.jpg"
+    caption: "北京京西宾馆外景（2010年拍摄；作为十八届三中全会举办地点背景资料，非2013年会议现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E5%8C%97%E4%BA%AC%E4%BA%AC%E8%A5%BF%E8%B3%93%E9%A4%A8_2010.jpg"
+    author: "Wpcpey"
+    license: "CC BY-SA 4.0"
 - id: cn-east-china-sea-adiz-201311
   date: '2013-11-23'
   title: 中国政府宣布划设东海防空识别区
@@ -5800,6 +6980,12 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: "/images/events/2013/cn-change3-yutu-landing-201312.jpg"
+    caption: "2013年：嫦娥三号成功软着陆月球，玉兔号月球车驶上月球表面"
+    source: "https://commons.wikimedia.org/wiki/File%3AYutu-2.jpg"
+    author: "CNSA"
+    license: "CC BY 4.0"
 - id: cn-reeducation-through-labor-abolition-201312
   date: '2013-12-28'
   title: 全国人大常委会决定废止劳动教养制度
@@ -5840,6 +7026,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2014/cn-national-memorial-day-201402.jpg"
+    caption: "2014年：全国人大常委会设立南京大屠杀死难者国家公祭日与抗战胜利纪念日"
+    source: "https://commons.wikimedia.org/wiki/File%3AThe_monument_in_the_front_of_Nanjing_Massacre_Memorial_Hall_(20090614_9921).jpg"
+    author: "Jakub Hałun"
+    license: "CC BY-SA 4.0"
 - id: cn-kunming-attack-201403
   date: '2014-03-01'
   title: 云南昆明火车站发生“3·01”严重暴力恐怖袭击事件
@@ -5865,6 +7057,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2014/cn-russia-gas-deal-201405.jpg"
+    caption: "2014年：中俄签署4000亿美元“西伯利亚力量”管道天然气购销历史性大单"
+    source: "https://commons.wikimedia.org/wiki/File%3ARussia_and_China_sign_major_gas_deal_(cropped).jpeg"
+    author: "Russian presidential Website"
+    license: "CC BY 4.0"
 - id: cn-zhou-yongkang-investigation-201407
   date: '2014-07-29'
   title: 中共中央决定对周永康立案审查，反腐败深化推进
@@ -5878,6 +7076,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/cn-zhou-yongkang-investigation-201407.jpg
+    caption: "周永康2006年在美国华盛顿的资料肖像；用于2014年立案审查条目的当事人背景，非宣布审查决定现场"
+    source: "https://commons.wikimedia.org/wiki/File%3AZhou_Yongkang.jpg"
+    author: Barry Bahler / FEMA
+    license: "Public domain"
 - id: cn-ludian-earthquake-201408
   date: '2014-08-03'
   title: 云南省昭通市鲁甸县发生6.5级地震
@@ -5915,6 +7119,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/cn-fourth-plenum-18th-201410.pdf
+    caption: "全国人大常委会2014年11月1日《关于设立国家宪法日的决定》官方文本；作为四中全会依法治国议题的同期法律背景，非全会现场"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E5%85%A8%E5%9B%BD%E4%BA%BA%E6%B0%91%E4%BB%A3%E8%A1%A8%E5%A4%A7%E4%BC%9A%E5%B8%B8%E5%8A%A1%E5%A7%94%E5%91%98%E4%BC%9A%E5%85%B3%E4%BA%8E%E8%AE%BE%E7%AB%8B%E5%9B%BD%E5%AE%B6%E5%AE%AA%E6%B3%95%E6%97%A5%E7%9A%84%E5%86%B3%E5%AE%9A.pdf"
+    author: "全国人民代表大会常务委员会办公厅"
+    license: "Public domain（PRC official legal document）"
 - id: cn-apec-beijing-201411
   date: '2014-11-11'
   title: 2014年APEC领导人非正式会议在北京雁栖湖举行
@@ -5928,6 +7138,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2014/cn-apec-beijing-201411.jpg"
+    caption: "2014年：2014年APEC领导人非正式会议在北京雁栖湖举行"
+    source: "https://commons.wikimedia.org/wiki/File%3ABeijing_Yanqi_Lake_International_Convention_and_Exhibition_Center_(20201009123651).jpg"
+    author: "N509FZ"
+    license: "CC BY-SA 4.0"
 - id: cn-shanghai-hongkong-stock-connect-201411
   date: '2014-11-17'
   title: “沪港通”股票交易互联互通机制正式开通
@@ -5941,6 +7157,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/cn-shanghai-hongkong-stock-connect-201411.jpg
+    caption: "上海证券大厦资料图（2008年）；用于2014年沪港通开通的上交所机构背景，非11月17日开通仪式现场"
+    source: "https://commons.wikimedia.org/wiki/File%3AShanghai_Stock_Exchange_Building.jpg"
+    author: Baycrest
+    license: "CC BY-SA 2.5"
 - id: cn-south-to-north-water-diversion-201412
   date: '2014-12-12'
   title: 南水北调中线一期工程正式通水
@@ -5955,6 +7177,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/cn-south-to-north-water-diversion-201412.jpg
+    caption: 南水北调中线丹江口水库与输水渠卫星资料图（2014年5月）
+    source: https://commons.wikimedia.org/wiki/File:ISS039-E-18972_-_View_of_China.jpg
+    author: NASA Lyndon B. Johnson Space Center Earth Science and Remote Sensing Unit
+    license: Public domain（NASA）
 - id: cn-aiib-agreement-signed-201506
   date: '2015-06-29'
   title: 《亚洲基础设施投资银行协定》（亚投行/AIIB）在北京签署
@@ -5968,6 +7196,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2015/cn-aiib-agreement-signed-201506.svg"
+    caption: "亚投行意向创始成员国家和地区分布图（2015年4月16日，作为6月29日协定签署的前期成员背景资料）"
+    source: "https://commons.wikimedia.org/wiki/File:AIIBMap.svg"
+    author: "EmberEdison"
+    license: "CC BY-SA 4.0"
 - id: cn-beijing-winters-olympics-bid-201507
   date: '2015-07-31'
   title: 北京成功申办2022年冬奥会，成为全球首个“双奥之城”
@@ -5982,6 +7216,12 @@
   sources:
     - 新华网
     - 国际奥委会
+  image:
+    url: /images/events/2015/cn-beijing-winters-olympics-bid-201507.jpg
+    caption: 北京冬奥组委办公地点（首钢园，2018年7月22日；为2015年7月31日申办成功后的筹办机构资料图，非投票现场）
+    source: https://commons.wikimedia.org/wiki/File:Beijing_Organising_Committee_for_the_2022_Olympic_Games_(20180722152346).jpg
+    author: N509FZ
+    license: CC BY-SA 4.0
 - id: cn-tianjin-port-explosion-201508
   date: '2015-08-12'
   title: 天津港危险品仓库发生特别重大火灾爆炸事故
@@ -6007,6 +7247,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2015/cn-victory-day-parade-201509.jpg
+    caption: 2015年9月3日中国人民抗日战争暨世界反法西斯战争胜利70周年阅兵结束场面
+    source: https://commons.wikimedia.org/wiki/File:2015_China_Victory_Day_parade-ending.jpg
+    author: Voice of America
+    license: Public domain（美国政府作品）
 - id: cn-tuyouyou-nobel-prize-201510
   date: '2015-10-05'
   title: 屠呦呦获得诺贝尔生理学或医学奖，中国本土科学界首个自然科学诺奖
@@ -6021,6 +7267,12 @@
   sources:
     - 新华网
     - 诺贝尔奖官网
+  image:
+    url: /images/events/2015/tu_youyou_nobel_2015.jpg
+    caption: 2015年10月5日屠呦呦获得诺贝尔生理学或医学奖（2015年12月斯德哥尔摩资料图）
+    source: https://commons.wikimedia.org/wiki/File:Tu_Youyou_4987-2015.jpg
+    author: Bengt Nyman
+    license: CC BY-SA 4.0
 - id: cn-fifth-plenum-18th-two-child-201510
   date: '2015-10-29'
   title: 党的十八届五中全会决定全面实施“一对夫妇可生育两个孩子政策”
@@ -6035,6 +7287,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2015/cn-fifth-plenum-18th-two-child-201510.jpg
+    caption: "江西德安县乡村独生子女政策宣传牌资料图（2006年）；用于2015年五中全会决定全面两孩政策的政策转折背景，非全会现场"
+    source: "https://commons.wikimedia.org/wiki/File%3AOne_child_policy.jpg"
+    author: Venus
+    license: "CC BY 2.0"
 - id: cn-c919-rollout-201511
   date: '2015-11-02'
   title: 中国首架大型客机C919在上海总装下线
@@ -6048,6 +7306,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2015/cn-c919-rollout-201511.jpg
+    caption: C919客机资料图（2017年巴黎航展拍摄；用于表示2015年下线的同型飞机，非下线现场）
+    source: https://commons.wikimedia.org/wiki/File:COMAC,_C919_(35509429452).jpg
+    author: Anna Zvereva
+    license: CC BY-SA 2.0
 - id: cn-xi-ma-meeting-201511
   date: '2015-11-07'
   title: 习近平同马英九在新加坡举行两岸领导人历史性会面
@@ -6061,6 +7325,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2015/cn-xi-ma-meeting-201511.jpg"
+    caption: "2015年：习近平同马英九在新加坡举行两岸领导人历史性会面"
+    source: "https://commons.wikimedia.org/wiki/File%3A2015_Ma%E2%80%93Xi_Meeting_07.jpg"
+    author: "政府網站資料開放宣告"
+    license: "Attribution"
 - id: cn-rmb-sdr-basket-201511
   date: '2015-11-30'
   title: 国际货币基金组织（IMF）批准人民币加入SDR货币篮子
@@ -6075,6 +7345,12 @@
   sources:
     - IMF
     - 新华网
+  image:
+    url: /images/events/2015/cn-rmb-sdr-basket-201511.png
+    caption: "国际货币基金组织（IMF）文字标志资料图；用于人民币加入SDR货币篮子的机构背景，非2015年11月30日执董会现场"
+    source: "https://commons.wikimedia.org/wiki/File%3AIMF_Text_Logo.png"
+    author: IMF
+    license: "Public domain"
 - id: cn-pla-rocket-force-established-201512
   date: '2015-12-31'
   title: 中国人民解放军陆军领导机构、火箭军、战略支援部队成立
@@ -6088,6 +7364,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2015/cn-pla-rocket-force-established-201512.svg
+    caption: 火箭军军旗资料图（Commons文件标注日期为2016年7月6日；用于表示新军种成立后的官方标识，非2015年12月31日授旗现场）
+    source: https://commons.wikimedia.org/wiki/File:Rocket_Force_Flag_of_the_People%27s_Republic_of_China.svg
+    author: Ericmetro
+    license: Public domain（PD-PRC-exempt；官方标识使用仍须遵守当地法规）
 - id: cn-two-child-policy-enforced-201601
   date: '2016-01-01'
   title: 全国全面实施“一对夫妇可生育两个孩子”政策正式生效
@@ -6102,6 +7384,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2016/cn-two-child-policy-enforced-201601.jpg
+    caption: "江西德安县乡村独生子女政策宣传牌资料图（2006年）；用于2016年全面两孩政策生效前后的人口政策背景，非政策生效日现场"
+    source: "https://commons.wikimedia.org/wiki/File%3AOne_child_policy.jpg"
+    author: Venus
+    license: "CC BY 2.0"
 - id: cn-south-china-sea-arbitration-201607
   date: '2016-07-12'
   title: 中国政府发表关于在南海的主权和权益声明，对所谓南海仲裁案“不接受、不承认”
@@ -6115,6 +7403,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2016/cn-south-china-sea-arbitration-201607.png"
+    caption: "2016年：中国政府发表关于在南海的主权和权益声明，对所谓南海仲裁案“不接受、不承认”"
+    source: "https://commons.wikimedia.org/wiki/File%3ASouth_China_Sea_claims_map.svg"
+    author: "Voice of America (vectorised by HueMan1)"
+    license: "Public domain"
 - id: cn-micius-quantum-satellite-201608
   date: '2016-08-16'
   title: 世界首颗量子科学实验卫星“墨子号”成功发射
@@ -6130,6 +7424,12 @@
   sources:
     - 中国科学院
     - 新华网
+  image:
+    url: "/images/events/2016/cn-micius-quantum-satellite-201608.svg"
+    caption: "量子科学技术研究开发机构（QST）标志（2016年7月启用；用于墨子号量子科技机构背景，非卫星发射现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3AQst_logo.svg"
+    author: "量子科学技术研究开发机构"
+    license: "Public domain（PD-textlogo；商标权另行适用）"
 - id: cn-women-volleyball-gold-201608
   date: '2016-08-21'
   title: 中国女排在里约奥运会勇夺金牌，时隔12年重登奥运之巅
@@ -6143,6 +7443,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2016/cn-women-volleyball-gold-201608.jpg
+    caption: 2016年里约奥运会中国女排比赛资料图（四分之一决赛）
+    source: https://commons.wikimedia.org/wiki/File:Brasil_vs_China_-_V%C3%B4lei_Feminino_-_Quartas_de_Final_-_Rio_2016.jpg
+    author: Rwjabour
+    license: CC BY-SA 4.0
 - id: cn-g20-hangzhou-summit-201609
   date: '2016-09-04'
   title: 二十国集团（G20）领导人第十一次峰会在杭州举行
@@ -6150,6 +7456,12 @@
   importance: 5
   summary: G20峰会在杭州举行，达成《杭州峰会公报》，首次将创新和发展置于全球宏观政策核心。
   confidence: 确定
+  image:
+    url: "/images/events/2016/cn-g20-hangzhou-summit-201609.jpg"
+    caption: "2016年杭州G20峰会领导人合影"
+    source: "https://commons.wikimedia.org/wiki/File%3AThe_Prime_Minister%2C_Shri_Narendra_Modi_with_other_world_leaders_in_a_family_photograph%2C_at_G20_Summit_2016%2C_in_Hangzhou%2C_China_on_September_04%2C_2016.jpg"
+    author: "Prime Minister's Office (India)"
+    license: "GODL-India"
   tags:
     - 外交
     - 经济
@@ -6170,6 +7482,12 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: "/images/events/2016/cn-tiangong2-space-lab-201609.png"
+    caption: "2016年：中国首个真正意义上的空间实验室“天宫二号”成功发射"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E2%80%9C%E5%A4%A9%E5%AE%AB%E4%BA%8C%E5%8F%B7%E2%80%9D%E5%A4%A7%E4%BA%8B%E8%AE%B03.png"
+    author: "中国新闻社"
+    license: "CC BY 4.0"
 - id: cn-fast-telescope-open-201609
   date: '2016-09-25'
   title: 500米口径球面射电望远镜（FAST，“中国天眼”）落成启用
@@ -6184,6 +7502,12 @@
   sources:
     - 中国科学院
     - 新华网
+  image:
+    url: /images/events/2016/fast_telescope_open_2016.jpg
+    caption: 2016年9月25日FAST“中国天眼”落成启用（建设中的FAST资料图，拍摄于2015年9月）
+    source: https://commons.wikimedia.org/wiki/File:FastTelescope*8sep2015.jpg
+    author: Psr1909
+    license: CC BY-SA 4.0
 - id: cn-sixth-plenum-18th-core-201610
   date: '2016-10-27'
   title: 党的十八届六中全会明确“以习近平同志为核心的党中央”
@@ -6197,6 +7521,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2016/cn-sixth-plenum-18th-core-201610.jpg"
+    caption: "2016年：党的十八届六中全会明确“以习近平同志为核心的党中央”"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E7%B4%A7%E5%AF%86%E5%9B%A2%E7%BB%93%E5%9C%A8%E4%BB%A5%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%90%8C%E5%BF%97%E4%B8%BA%E6%A0%B8%E5%BF%83%E7%9A%84%E5%85%9A%E4%B8%AD%E5%A4%AE%E5%91%A8%E5%9B%B4_%E5%A4%BA%E5%8F%96%E5%85%A8%E9%9D%A2%E5%BB%BA%E8%AE%BE%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E7%8E%B0%E4%BB%A3%E5%8C%96%E5%9B%BD%E5%AE%B6%E6%96%B0%E8%83%9C%E5%88%A9.jpg"
+    author: "維基小霸王"
+    license: "CC BY-SA 4.0"
 - id: cn-long-march-5-maiden-flight-201611
   date: '2016-11-03'
   title: 中国最大运载火箭“长征五号”（胖五）首飞成功
@@ -6211,6 +7541,12 @@
   sources:
     - 国家航天局
     - 新华网
+  image:
+    url: "/images/events/2016/cn-long-march-5-maiden-flight-201611.jpg"
+    caption: "2016年：中国最大运载火箭“长征五号”（胖五）首飞成功"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E9%95%BF%E5%BE%81%E4%BA%94%E5%8F%B7%E9%81%A5%E4%BA%8C%E7%81%AB%E7%AE%AD%E8%BD%AC%E5%9C%BA.jpg"
+    author: "篁竹水声"
+    license: "CC BY 4.0"
 - id: cn-shenzhen-hongkong-stock-connect-201612
   date: '2016-12-05'
   title: “深港通”股票交易互联互通机制正式开通
@@ -6237,6 +7573,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2017/cn-xiongan-new-area-201704.jpg"
+    caption: "2017年：中共中央、国务院决定设立河北雄安新区"
+    source: "https://commons.wikimedia.org/wiki/File%3ABusiness_and_Service_Convention_Center_Xiongan_(20230123122944).jpg"
+    author: "N509FZ"
+    license: "CC BY-SA 4.0"
 - id: cn-tianzhou1-cargo-ship-201704
   date: '2017-04-20'
   title: 中国首艘货运飞船“天舟一号”成功发射并完成首次在轨推进剂补加
@@ -6251,6 +7593,12 @@
   sources:
     - 国家航天局
     - 新华网
+  image:
+    url: "/images/events/2017/cn-tianzhou1-cargo-ship-201704.jpg"
+    caption: "2017年：中国首艘货运飞船“天舟一号”成功发射并完成首次在轨推进剂补加"
+    source: "https://commons.wikimedia.org/wiki/File%3ATianzhou_Cargo_Spaceship.jpg"
+    author: "中国新闻网"
+    license: "CC BY 4.0"
 - id: cn-shandong-aircraft-carrier-launch-201704
   date: '2017-04-26'
   title: 中国首艘国产航空母舰（山东舰）在大连成功下水
@@ -6264,12 +7612,18 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2017/cn-shandong-aircraft-carrier-launch-201704.jpg
+    caption: 中国首艘国产航空母舰山东舰资料图（001A型航母，2017年建造阶段）
+    source: https://commons.wikimedia.org/wiki/File:%E5%81%9C%E6%B3%8A%E4%BA%8E%E5%A4%A7%E8%BF%9E%E6%B8%AF%E7%9A%84001A.jpg
+    author: GG001213
+    license: CC0
 - id: cn-c919-maiden-flight-201705
   date: '2017-05-05'
   title: 中国首款大型干线客机C919在上海成功首飞
   category: 文化
   importance: 5
-  summary: C919大型客机在上海浦东机场成功首飞，标志着中国不具备自主研制大客机历史彻底终结。
+  summary: C919大型客机在上海浦东机场成功首飞，结束了中国长期缺乏自主研制大型干线客机的历史。
   confidence: 确定
   tags:
     - 航空
@@ -6277,6 +7631,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2017/cn-c919-maiden-flight-201705.jpg
+    caption: 2017年5月5日中国首款大型干线客机C919在上海成功首飞（首飞前试飞阶段资料图，拍摄于2017年4月23日）
+    source: https://commons.wikimedia.org/wiki/File:Comac_C919_first_vr_test_at_Shanghai_Pudong.jpg
+    author: Shimin Gu
+    license: GFDL 1.2（Commons VRT授权）
 - id: cn-belt-and-road-forum-201705
   date: '2017-05-14'
   title: 第一届“一带一路”国际合作高峰论坛在北京成功举行
@@ -6291,6 +7651,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2017/cn-belt-and-road-forum-201705.jpg
+    caption: 2017年5月14日“一带一路”国际合作高峰论坛与会领导人合影
+    source: https://commons.wikimedia.org/wiki/File:With_participants_of_the_Belt_and_Road_international_forum.jpg
+    author: 俄罗斯总统新闻与信息局
+    license: CC BY 4.0
 - id: cn-fuxing-emu-debut-201706
   date: '2017-06-25'
   title: 中国标准动车组正式命名为“复兴号”并在京沪高铁双向首发
@@ -6305,6 +7671,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2017/cn-fuxing-emu-debut-201706.jpg
+    caption: 中国标准动车组“复兴号”资料图（CR400型）
+    source: https://commons.wikimedia.org/wiki/File:Fuxinghao_CR400_high-speed_train_front.jpg
+    author: Shihu7
+    license: CC BY-SA 4.0
 - id: cn-zhurihe-parade-201707
   date: '2017-07-30'
   title: 庆祝中国人民解放军建军90周年阅兵在朱日和训练基地举行
@@ -6318,6 +7690,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2017/cn-zhurihe-parade-201707.jpg"
+    caption: "朱日和牧场那达慕活动（2002年拍摄；用于呈现阅兵所在地理环境，非2017年建军节沙场阅兵现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3AZhurihe_Ranch_at_Naadam_1.jpg"
+    author: "Yoshi Canopus"
+    license: "CC BY-SA 4.0"
 - id: cn-jiuzhaigou-earthquake-201708
   date: '2017-08-08'
   title: 四川省阿坝州九寨沟县发生7.0级地震
@@ -6355,6 +7733,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2017/cn-19th-cpc-congress-201710.jpg
+    caption: 深圳龙华区2017年11月拍摄的十九大精神宣传标语，作为大会确立指导思想后的社会传播背景（非10月18日人民大会堂开幕现场）
+    source: "https://commons.wikimedia.org/wiki/File:A_political_slogan_on_the_wall_in_Longhua_District,_Shenzhen,_Guangdong,_China,_picture1.jpg"
+    author: "Huangdan2060"
+    license: "CC0 1.0"
 - id: cn-constitution-amendment-201803
   date: '2018-03-11'
   title: 十三届全国人大一次会议表决通过《中华人民共和国宪法修正案》
@@ -6369,6 +7753,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2018/cn-constitution-amendment-201803.jpg
+    caption: 《中华人民共和国宪法修正案（2018年）》公报首页资料图（全国人大官方法规数据库扫描件）
+    source: https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%AE%AA%E6%B3%95%E4%BF%AE%E6%AD%A3%E6%A1%88%EF%BC%882018%E5%B9%B4%EF%BC%89.pdf
+    author: 全国人民代表大会
+    license: Public domain（PD-PRC-exempt）
 - id: cn-us-china-trade-war-begins-201803
   date: '2018-03-22'
   title: 美国签署对华加征关税备忘录，中美贸易摩擦（贸易战）爆发
@@ -6384,6 +7774,12 @@
   sources:
     - 商务部
     - 新华网
+  image:
+    url: /images/events/2018/cn-us-china-trade-war-begins-201803.jpg
+    caption: 美国财政部长姆努钦与刘鹤率领的中国代表团会谈（2018年5月18日；为3月22日关税备忘录后的贸易争端官方资料图）
+    source: https://commons.wikimedia.org/wiki/File:Liu_He_at_US_Treasury_to_resolve_the_US-China_trade_dispute.jpg
+    author: Office of U.S. Treasury Secretary
+    license: Public domain（美国财政部公务摄影）
 - id: cn-hainan-free-trade-port-201804
   date: '2018-04-13'
   title: 国家支持海南全岛建设自由贸易试验区，探索建设中国特色自由贸易港
@@ -6398,6 +7794,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2018/cn-hainan-free-trade-port-201804.jpg
+    caption: 海南岛卫星图资料（NASA World Wind 公共领域图层；用于标示海南全岛自贸试验区/自由贸易港政策所涉区域，非2018年发布会现场）
+    source: https://commons.wikimedia.org/wiki/File:Hainan_satellite.JPG
+    author: NASA
+    license: Public domain（PD-WorldWind）
 - id: cn-marx-bicentenary-201805
   date: '2018-05-04'
   title: 纪念马克思诞辰200周年大会在北京隆重举行
@@ -6415,7 +7817,7 @@
   title: 港珠澳大桥正式通车运营
   category: 经济
   importance: 5
-  summary: 跨越伶仃洋连接港珠澳的超级工程港珠澳大桥通车，全长55公里为世界最长跨海大桥，推动大湾区融合。
+  summary: 跨越伶仃洋连接港珠澳的超级工程港珠澳大桥通车，全长约55公里，是世界最长的跨海大桥及隧道组合，推动大湾区融合。
   confidence: 确定
   tags:
     - 工程
@@ -6424,6 +7826,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2018/cn-hzmb-open-201810.jpg
+    caption: 港珠澳大桥主桥资料图（2018年3月17日拍摄，通车前）
+    source: https://commons.wikimedia.org/wiki/File:Main_span_of_Hong_Kong-Zhuhai-Macau_Bridge,_2018-03-17.jpg
+    author: Siyuwj
+    license: CC BY-SA 4.0
 - id: cn-ciie-shanghai-201811
   date: '2018-11-05'
   title: 首届中国国际进口博览会（进博会）在上海开幕
@@ -6438,6 +7846,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2018/cn-ciie-shanghai-201811.jpg
+    caption: 2018年11月5日首届中国国际进口博览会开幕式
+    source: https://commons.wikimedia.org/wiki/File:China_International_Import_Expo_in_Shanghai_-_2018_%28UkTrfKnIDn23M3jG9fAqy5GkF2j4GQpe%29.jpg
+    author: 俄罗斯联邦政府网站
+    license: CC BY 4.0
 - id: cn-meng-wanzhou-detention-201812
   date: '2018-12-01'
   title: 华为副董事长孟晚舟在加拿大温哥华被无理拘押
@@ -6452,6 +7866,12 @@
   sources:
     - 外交部
     - 新华网
+  image:
+    url: "/images/events/2018/cn-meng-wanzhou-detention-201812.jpg"
+    caption: "华为会议展台（2018年6月拍摄；用于孟晚舟事件的企业背景，非温哥华拘押现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3AHuaweiConferenceBooth.jpg"
+    author: "Raysonho @ Open Grid Scheduler / Grid Engine"
+    license: "CC0 1.0"
 - id: cn-change4-launch-201812
   date: '2018-12-08'
   title: 嫦娥四号探测器成功发射，开启人类首次月背软着陆之旅
@@ -6466,6 +7886,12 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2018/cn-change4-launch-201812.png
+    caption: 嫦娥四号探测器与玉兔二号月球车示意资料图（2018年12月发布）
+    source: https://commons.wikimedia.org/wiki/File:Chang%27e_4.png
+    author: Loren Roberts（The Planetary Society）
+    license: CC BY-SA 3.0
 - id: cn-reform-40th-anniversary-201812
   date: '2018-12-18'
   title: 庆祝改革开放40周年大会在北京隆重举行
@@ -6479,6 +7905,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2018/cn-reform-40th-anniversary-201812.jpg
+    caption: 深圳“大潮起珠江”改革开放史展览现场（2018年11月27日；为12月18日改革开放40周年大会的同期纪念活动资料图，非北京大会现场）
+    source: https://commons.wikimedia.org/wiki/File:SZ_%E6%B7%B1%E5%9C%B3%E5%B8%82_Shenzhen_%E7%A6%8F%E7%94%B0%E5%8D%80_Futian_%E7%95%B6%E4%BB%A3%E8%97%9D%E8%A1%93%E9%A4%A8_MOCAPE_Great_trend_in_Pear_River_%E5%A4%A7%E6%BD%AE%E8%B5%B7%E7%8F%A0%E6%B1%9F_Guangdong_Economic_open_reform_history_%E5%BB%A3%E6%9D%B1%E6%94%B9%E9%9D%A9%E9%96%8B%E6%94%BE40%E5%91%A8%E5%B9%B4%E5%B1%95%E8%A6%BD_40th_years_Exhibition_in_November_2018_SSG_332.jpg
+    author: Red Guosam ZhuGuang01
+    license: CC BY-SA 4.0
 - id: cn-gdp-90trillion-201812
   date: '2018-12-31'
   title: 中国全年GDP首次突破90万亿元人民币，占全球经济比重升至16%
@@ -6499,6 +7931,12 @@
   importance: 5
   summary: 嫦娥四号自主着陆于月球背面冯·卡门撞击坑，实现人类首次月背软着陆与中继通信，玉兔二号驶上月表。
   confidence: 确定
+  image:
+    url: "/images/events/2019/cn-change4-moon-landing-201901.jpg"
+    caption: "嫦娥四号着陆器资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AChang%27e_4_Lander-_A_Closer_Look_%2801_m1303619844lr_closC5A1C%29.jpg"
+    author: "NASA Goddard Space Flight Center"
+    license: "Public domain"
   tags:
     - 航天
     - 科技
@@ -6520,6 +7958,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2019/cn-foreign-investment-law-201903.jpg
+    caption: 《中华人民共和国外商投资法》公报首页资料图（2019年3月15日通过；全国人大法规数据库扫描件）
+    source: https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%A4%96%E5%95%86%E6%8A%95%E8%B5%84%E6%B3%95.pdf
+    author: 全国人民代表大会
+    license: Public domain（PD-PRC-exempt）
 - id: cn-second-belt-road-forum-201904
   date: '2019-04-25'
   title: 第二届“一带一路”国际合作高峰论坛在北京成功举行
@@ -6534,6 +7978,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2019/cn-second-belt-road-forum-201904.jpg
+    caption: 2019年4月第二届“一带一路”国际合作高峰论坛资料图
+    source: https://commons.wikimedia.org/wiki/File:Ilham_Aliyev_attends_2nd_One_Belt_One_Road_Forum_in_Beijing_06.jpg
+    author: 阿塞拜疆总统新闻与信息局
+    license: CC BY 4.0
 - id: cn-daxing-airport-open-201909
   date: '2019-09-25'
   title: 北京大兴国际机场正式通航
@@ -6548,6 +7998,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2019/cn-daxing-airport-open-201909.jpg
+    caption: 北京大兴国际机场资料图（2019年12月机场快线站台）
+    source: https://commons.wikimedia.org/wiki/File:Beijing_Daxing_International_Airport_1.jpg
+    author: Arne Müseler
+    license: CC0
 - id: cn-70th-anniversary-parade-201910
   date: '2019-10-01'
   title: 庆祝中华人民共和国成立70周年大会及盛大阅兵在京举行
@@ -6562,6 +8018,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2019/cn-70th-anniversary-parade-201910.png"
+    caption: "庆祝中华人民共和国成立70周年大会现场（2019年10月1日）"
+    source: "https://commons.wikimedia.org/wiki/File:%E5%BA%86%E7%A5%9D%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%88%90%E7%AB%8B70%E5%91%A8%E5%B9%B4%E5%A4%A7%E4%BC%9A%E5%9C%A8%E4%BA%AC%E9%9A%86%E9%87%8D%E4%B8%BE%E8%A1%8C14.png"
+    author: "中国新闻社"
+    license: "CC BY 4.0"
 - id: cn-fourth-plenum-19th-201910
   date: '2019-10-31'
   title: 党的十九届四中全会审议通过坚持和完善中国特色社会主义制度决定
@@ -6575,6 +8037,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2019/cn-fourth-plenum-19th-201910.jpg
+    caption: 北京人民大会堂外景（2007年），作为2019年十九届四中全会举办地点背景（非10月28日至31日会议现场）
+    source: "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0（兼容2.5/2.0/1.0；GFDL）"
 - id: cn-shandong-carrier-commissioned-201912
   date: '2019-12-17'
   title: 中国第一艘国产航空母舰山东舰在海南三亚正式交付入列
@@ -6590,6 +8058,12 @@
   sources:
     - 国防部
     - 新华网
+  image:
+    url: "/images/events/2019/cn-shandong-carrier-commissioned-201912.jpg"
+    caption: "建造中的中国海军首艘国产航空母舰山东舰（2019年6月17日拍摄）"
+    source: "https://commons.wikimedia.org/wiki/File:Chinese_aircraft_carrier_Shandong_in_2019.jpg"
+    author: "Tyg728"
+    license: "CC BY-SA 4.0"
 - id: cn-macau-handover-20th-201912
   date: '2019-12-20'
   title: 庆祝澳门回归祖国20周年大会暨澳门特别行政区第五届政府就职典礼举行
@@ -6609,6 +8083,12 @@
   importance: 5
   summary: 长征五号遥三运载火箭成功将实践二十号送入预定轨道，“胖五”复飞成功，为空间站与探月探火扫清道路。
   confidence: 确定
+  image:
+    url: "/images/events/2019/cn-long-march-5-cz5-flight3-201912.jpg"
+    caption: "长征五号遥三火箭发射实践二十号卫星"
+    source: "https://commons.wikimedia.org/wiki/File%3AShijian-20_launch.jpg"
+    author: "Gmandian"
+    license: "CC0"
   tags:
     - 航天
     - 科技
@@ -6631,6 +8111,12 @@
   sources:
     - 国家统计局
     - 新华网
+  image:
+    url: "/images/events/2019/cn-gdp-99trillion-201912.svg"
+    caption: "1960—2019年美国与中国名义GDP对比图（2019年中国接近100万亿元节点的宏观背景）"
+    source: "https://commons.wikimedia.org/wiki/File%3AGDP_-_United_States%2C_China.svg"
+    author: "Bajirao（基于世界银行数据）"
+    license: "CC BY-SA 4.0"
 - id: cn-covid-wuhan-202001
   date: '2020-01-23'
   title: 全国全面打响疫情防控阻击战，武汉实施离汉通道管控
@@ -6640,7 +8126,10 @@
   confidence: 确定
   image:
     url: /images/events/2020/wuhan_lockdown.jpg
-    caption: 2020年1月武汉实施离汉通道管控后的城市防疫场景
+    caption: 2020年1月印尼政府召开从武汉撤离本国公民的高级别会议，反映武汉封控期间的国际撤侨行动
+    source: "https://commons.wikimedia.org/wiki/File%3AHigh_level_meeting_on_evacuation_of_Indonesians_from_Wuhan.png"
+    author: "Biro Pers Setpres (Press Bureau of the Secretariat of the President of Indonesia)"
+    license: "Public domain"
   tags:
     - 灾害
     - 卫生
@@ -6657,6 +8146,9 @@
   image:
     url: /images/events/2020/civil_code.jpg
     caption: 《中华人民共和国民法典》公布文本封面
+    source: https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%B0%91%E6%B3%95%E5%85%B8.pdf
+    author: 全国人民代表大会
+    license: Public domain（中国法律/国家机关文件）
   tags:
     - 法律
     - 政治
@@ -6688,6 +8180,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2020/cn-hk-national-security-law-202006.jpg
+    caption: 香港国安法英文版公报首页资料图（2020年7月公布）
+    source: https://commons.wikimedia.org/wiki/File:Hong_Kong_National_Security_Law_%28English_Translation%29.pdf
+    author: 全国人大常委会
+    license: 中国政府法律文件公有领域（Commons 标注 PD-PRC-exempt）
 - id: cn-tianwen1-launch-202007
   date: '2020-07-23'
   title: 天问一号开启中国首次自主火星探测任务
@@ -6708,15 +8206,18 @@
   importance: 5
   summary: 北斗三号全球卫星导航系统建成暨开通仪式在北京举行，标志着中国自主建设、独立运行的全球卫星导航系统全面建成。
   confidence: 确定
-  image:
-    url: /images/events/2020/beidou3_system.jpg
-    caption: 北斗三号全球卫星导航系统示意图
   tags:
     - 航天
     - 科技
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2020/cn-beidou3-system.jpg
+    caption: 2020年6月23日北斗三号全球卫星导航系统最后一颗组网卫星发射视频截图
+    source: https://commons.wikimedia.org/wiki/File:2020%E5%B9%B46%E6%9C%8823%E6%97%A5_%E4%B8%AD%E5%9B%BD%E5%8F%91%E5%B0%84%E5%8C%97%E6%96%97%E4%B8%89%E5%8F%B7%E5%85%A8%E7%90%83%E5%8D%AB%E6%98%9F%E5%AF%BC%E8%88%AA%E7%B3%BB%E7%BB%9F%E6%9C%80%E5%90%8E%E4%B8%80%E9%A2%97%E7%BB%84%E7%BD%91%E6%98%9F.webm
+    author: 中国新闻网
+    license: CC BY 3.0
 - id: cn-korean-war-70th-202010
   date: '2020-10-23'
   title: 纪念中国人民志愿军抗美援朝出国作战70周年
@@ -6742,6 +8243,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2020/cn-fifth-plenum-202010.jpg
+    caption: 北京人民大会堂外景（2007年），作为2020年十九届五中全会举办地点背景（非10月26日至29日会议现场）
+    source: "https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People.JPG"
+    author: "BrokenSphere"
+    license: "CC BY-SA 3.0（兼容2.5/2.0/1.0；GFDL）"
 - id: cn-rcep-signature-202011
   date: '2020-11-15'
   title: 区域全面经济伙伴关系协定（RCEP）正式签署
@@ -6768,6 +8275,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2020/cn-poverty-alleviation-202011.jpg
+    caption: 国务院新闻办公室《人类减贫的中国实践》白皮书首页资料图（2021年发布；总结并核验2020年脱贫攻坚成果，非贫困县退出现场）
+    source: https://commons.wikimedia.org/wiki/File:Poverty_Alleviation-China%27s_Experience_and_Contribution_(2021).pdf
+    author: 国务院新闻办公室
+    license: Public domain（PD-PRC-exempt）
 - id: cn-change5-return-202012
   date: '2020-12-17'
   title: 嫦娥五号实现中国首次月球采样返回
@@ -6777,7 +8290,10 @@
   confidence: 确定
   image:
     url: /images/events/2020/change5_return.jpg
-    caption: 嫦娥五号返回器携带月球样品在内蒙古四子王旗着陆
+    caption: 嫦娥五号返回器携月壤样本返回中国空间技术研究院（资料图，拍摄于2020年12月18日）
+    source: https://commons.wikimedia.org/wiki/File:Chang-e_5_back_to_CAST_1.png
+    author: 中国新闻社（China News Service）
+    license: CC BY 4.0
   tags:
     - 航天
     - 科技
@@ -6812,6 +8328,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2021/cn-poverty-victory-202102.jpg
+    caption: 2021年2月脱贫攻坚全面胜利主题视频资料图
+    source: https://commons.wikimedia.org/wiki/File:2021%E5%B9%B42%E6%9C%8826%E6%97%A5_%E4%B8%AD%E5%9B%BD%E5%A6%82%E4%BD%95%E4%BB%8E%E8%84%B1%E8%B4%AB%E6%94%BB%E5%9D%9A%E8%BF%88%E5%90%91%E4%B9%A1%E6%9D%91%E6%8C%AF%E5%85%B4%EF%BC%9F.webm
+    author: 中国新闻网
+    license: CC BY 3.0
 - id: cn-hk-electoral-reform-202103
   date: '2021-03-11'
   title: 全国人大通过关于完善香港特别行政区选举制度的决定
@@ -6825,6 +8347,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2021/cn-hk-electoral-reform-202103.jpg
+    caption: 全国人大常委会公报2021年第三号首页资料图（2021年4月刊；收录香港选举制度决定相关法规范本，非3月11日表决现场）
+    source: https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%8D%8E%E4%B8%BA%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%A8%E5%9B%BD%E4%BA%BA%E6%B0%91%E4%BB%A3%E8%A1%A8%E5%A4%A7%E4%BC%9A%E5%B8%B8%E5%8A%A1%E5%A7%94%E5%91%98%E4%BC%9A%E5%85%AC%E6%8A%A52021%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%8F%B7.pdf
+    author: 全国人民代表大会常务委员会办公厅
+    license: Public domain（PD-PRC-exempt）
 - id: cn-tianhe-core-module-202104
   date: '2021-04-29'
   title: 中国空间站天和核心舱成功发射，空间站建造全面开启
@@ -6832,6 +8360,12 @@
   importance: 5
   summary: 长征五号B运载火箭将中国空间站天和核心舱送入预定轨道，标志着中国空间站建造进入全面实施阶段，中国载人航天工程迈入新纪元。
   confidence: 确定
+  image:
+    url: "/images/events/2021/cn-tianhe-core-module-202104.jpg"
+    caption: "长征五号B遥二运载火箭发射天和核心舱"
+    source: "https://commons.wikimedia.org/wiki/File%3ALaunch_of_Tianhe_Core_Module.jpg"
+    author: "China News Service"
+    license: "CC BY 4.0"
   tags:
     - 航天
     - 科技
@@ -6853,6 +8387,12 @@
   sources:
     - 新华网
     - 国家航天局
+  image:
+    url: /images/events/2021/zhurong_mars_landing_2021.jpg
+    caption: 2021年5月15日“祝融号”火星车成功着陆火星（NASA/JPL HiRISE拍摄的天问一号着陆器与祝融号影像）
+    source: https://commons.wikimedia.org/wiki/File:Tianwen-1_Lander_and_Zhurong_Rover_in_Southern_Utopia_Planitia_(ESP_069665_2055-1).jpg
+    author: NASA/JPL/UArizona
+    license: Public domain
 - id: cn-yuan-longping-pass-202105
   date: '2021-05-22'
   title: “杂交水稻之父”袁隆平院士在长沙逝世
@@ -6869,6 +8409,12 @@
   sources:
     - 新华网
     - 人民日报
+  image:
+    url: /images/events/2021/yuan_longping_pass_2021.jpg
+    caption: 2021年5月22日袁隆平院士在长沙逝世（袁隆平1953年大学时期资料照片）
+    source: https://commons.wikimedia.org/wiki/File:Yuan_Longping_in_1953.jpg
+    author: Unknown（原始资料来源：袁隆平：像野稻一样自在）
+    license: Public domain（Commons页面标注）
 - id: cn-three-child-policy-202105
   date: '2021-05-31'
   title: 中共中央政治局会议审议《关于优化生育政策促进人口长期均衡发展的决定》，实施三孩生育政策
@@ -6906,6 +8452,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2021/cpc_centennial_2021.jpg
+    caption: 2021年7月1日庆祝中国共产党成立100周年大会在北京天安门广场举行（大会前夕天安门广场旗帜资料图）
+    source: https://commons.wikimedia.org/wiki/File:%E5%BA%86%E7%A5%9D%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E6%88%90%E7%AB%8B100%E5%91%A8%E5%B9%B4%E5%A4%A7%E4%BC%9A_%E5%A4%A9%E5%AE%89%E9%97%A8%E5%B9%BF%E5%9C%BA_%E6%97%97%E5%B8%9C.jpg
+    author: 維基小霸王
+    license: CC BY-SA 4.0
 - id: cn-zhengzhou-flood-202107
   date: '2021-07-20'
   title: 河南郑州遭遇"7·20"特大暴雨洪灾
@@ -6940,6 +8492,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: "/images/events/2021/cn-sixth-plenum-resolution-202111.jpg"
+    caption: "北京京西宾馆外景（2010年拍摄；作为十九届六中全会举办地点背景资料，非2021年会议现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3A%E5%8C%97%E4%BA%AC%E4%BA%AC%E8%A5%BF%E8%B3%93%E9%A4%A8_2010.jpg"
+    author: "Wpcpey"
+    license: "CC BY-SA 4.0"
 - id: cn-us-china-summit-video-202111
   date: '2021-11-16'
   title: 中美元首举行首次视频会晤
@@ -6993,7 +8551,10 @@
     - 新华网
   image:
     url: /images/events/2022/beijing_winter_olympics_2022.jpg
-    caption: 2022年2月4日北京2022年冬奥会成功举办，北京成为全球首个双奥之城（图为国家体育场“鸟巢”实景照片）
+    caption: 2022年2月4日北京2022年冬奥会开幕（国家体育场开幕式现场资料图）
+    source: https://commons.wikimedia.org/wiki/File:%C3%85bningsceremoni_ved_Vinter-OL_2022_i_Beijing.jpg
+    author: 俄罗斯总统办公厅
+    license: CC BY 4.0
 - id: cn-mu5735-crash-202203
   date: '2022-03-21'
   title: 东航MU5735航班坠毁，中国民航持续安全飞行纪录中断
@@ -7019,7 +8580,10 @@
     - 新华网
   image:
     url: /images/events/2022/fujian_carrier_launch.jpg
-    caption: 2022年6月17日中国首艘弹射型航空母舰“福建舰”下水命名，标志中国海军迈入三航母时代（图为福建舰下水现场照片）
+    caption: 2022年6月17日中国首艘弹射型航空母舰“福建舰”下水命名（图为福建舰下水前在江南造船厂建造基地的资料图，拍摄于2022年4月）
+    source: https://commons.wikimedia.org/wiki/File:JiangnanShipyardChangxingIsland.jpg
+    author: Raysonho @ Open Grid Scheduler / Scalable Grid Engine
+    license: CC0 1.0
 - id: cn-hk-25th-anniversary-202207
   date: '2022-07-01'
   title: 庆祝香港回归祖国25周年
@@ -7034,8 +8598,11 @@
   sources:
     - 新华网
   image:
-    url: /images/events/2022/hk_25th_anniversary_2022.jpg
-    caption: 2022年7月1日庆祝香港回归祖国25周年大会盛大举行，彰显一国两制强大生命力（图为香港金紫荆广场实景照片）
+    url: /images/events/2022/hk_25th_anniversary_2022.png
+    caption: 2022年7月1日庆祝香港回归祖国25周年大会暨香港特别行政区第六届政府就职典礼举行（香港会展中心现场）
+    source: https://commons.wikimedia.org/wiki/File:John_Lee-Ka_Chiu_and_Xi_Jinping_in_HKCEC_20220701.png
+    author: 中国新闻网
+    license: CC BY 3.0
 - id: cn-wentian-lab-launch-202207
   date: '2022-07-24'
   title: 空间站问天实验舱成功发射
@@ -7063,8 +8630,11 @@
   sources:
     - 新华网
   image:
-    url: /images/events/2022/taiwan_exercises_2022.jpg
-    caption: 2022年8月针对佩洛西窜访台湾，东部战区在台岛周边开展联合军事行动，塑造台海新态势
+    url: /images/events/2022/taiwan_exercises_2022.png
+    caption: 2022年8月针对佩洛西窜访台湾，东部战区在台岛周边开展联合军事行动（2022年8月4日至7日军演区域图）
+    source: https://commons.wikimedia.org/wiki/File:PLA-Taiwan-202208.map.png
+    author: OpenStreetMap contributors and Wikimedia maps contributors
+    license: CC BY-SA 4.0
 - id: cn-20th-cpc-congress-202210
   date: '2022-10-16'
   title: 中国共产党第二十次全国代表大会胜利召开
@@ -7080,7 +8650,10 @@
     - 新华网
   image:
     url: /images/events/2022/cpc_20th_congress_2022.jpg
-    caption: 2022年10月16日中国共产党第二十次全国代表大会在北京隆重召开，擘画中国式现代化宏伟蓝图（图为天安门广场与人民大会堂实景照片）
+    caption: 2022年10月16日中国共产党第二十次全国代表大会在北京开幕（二十大新闻中心发言人孙业礼资料图）
+    source: https://commons.wikimedia.org/wiki/File:T%C3%B4n_Nghi%E1%BB%87p_L%E1%BB%85_2022.jpg
+    author: 中国新闻社
+    license: CC BY-SA 4.0
 - id: cn-mengtian-lab-launch-202210
   date: '2022-10-31'
   title: 空间站梦天实验舱成功发射
@@ -7119,8 +8692,11 @@
   sources:
     - 新华网
   image:
-    url: /images/events/2022/jiang_zemin_memorial_2022.jpg
-    caption: 2022年11月30日江泽民同志逝世，享年96岁，全国各界沉痛悼念（图为江泽民同志历史肖像）
+    url: /images/events/2022/jiang_zemin_memorial_2022.png
+    caption: 2022年12月6日江泽民同志追悼大会在北京人民大会堂举行（中国新闻社视频截图）
+    source: https://commons.wikimedia.org/wiki/File:Chinese_State_Funeral_for_Jiang_Zemin.png
+    author: 中国新闻社
+    license: CC BY 4.0
 - id: cn-covid-new-10-rules-202212
   date: '2022-12-07'
   title: 国务院联防联控机制发布“新十条”，优化调整疫情防控措施
@@ -7136,7 +8712,10 @@
     - 新华网
   image:
     url: /images/events/2022/covid_new_10_rules_2022.jpg
-    caption: 2022年12月7日国家发布新十条进一步优化疫情防控措施，开启疫情防控新阶段（图为国家卫生健康委）
+    caption: 2022年12月7日国家发布“新十条”进一步优化疫情防控措施，开启疫情防控新阶段（苏州药店退烧药货架资料图，拍摄于同日）
+    source: https://commons.wikimedia.org/wiki/File:Empty_shelf_for_cold_relieve_drugs_in_a_pharmacy_in_Suzhou-20221207.jpg
+    author: Shwangtianyuan
+    license: CC BY-SA 4.0
 - id: cn-cop15-montreal-framework-202212
   date: '2022-12-19'
   title: 中国作为主席国推动联合国生物多样性大会达成历史性“昆蒙框架”
@@ -7167,6 +8746,9 @@
   image:
     url: /images/events/2022/space_station_complete_2022.jpg
     caption: 2022年12月中国空间站“T”字基本构型在轨组装完成，国家太空实验室全面建成（图为中国天宫空间站）
+    source: https://commons.wikimedia.org/wiki/File:Chinese_Tiangong_Space_Station.jpg
+    author: Shujianyang
+    license: CC BY-SA 4.0
 - id: cn-two-sessions-202303
   date: 2023-03
   title: 全国两会部署落实党的二十大部署与全年目标任务
@@ -7189,7 +8771,10 @@
     - 中东
   image:
     url: /images/events/2023/saudi_iran_reconciliation.jpg
-    caption: 2023年3月10日在中国斡旋下，沙特阿拉伯与伊朗在北京签署联合声明宣布复交，断交七年后实现历史性握手（图为沙伊中三方代表历史性握手照片）
+    caption: 2023年3月10日中国促成沙特伊朗复交（图为双方2023年4月在北京签署联合声明的后续落实会资料图）
+    source: https://commons.wikimedia.org/wiki/File:Saudi-Iran_joint_statement_signing_(2023).jpg
+    author: Mehr News Agency
+    license: CC BY 4.0
 - id: cn-institution-reform-202303
   date: '2023-03-16'
   title: 党和国家机构改革启动实施
@@ -7232,7 +8817,10 @@
     - 科技
   image:
     url: /images/events/2023/c919_maiden_flight_2023.jpg
-    caption: 2023年5月28日C919国产大飞机成功完成商业首航（MU9191航班），标志中国民航客机制造迈入商业运营新时代（图为C919干线客机实景摄影）
+    caption: 2023年5月28日C919国产大飞机成功完成商业首航（图为C919客机资料图，拍摄于2022年12月）
+    source: https://commons.wikimedia.org/wiki/File:China_Eastern_Airlines_COMAC_C919_Airplane_B-919A.jpg
+    author: Liu Boyou
+    license: CC BY-SA 4.0
 - id: cn-games-2023
   date: '2023-07-28'
   title: 成都大运会与杭州亚运会先后举办
@@ -7331,10 +8919,10 @@
     - 新华网
 - id: cn-joint-sword-202405
   date: '2024-05-23'
-  title: 东部战区组织“联合利剑-2024A”演习
+  title: 东部战区组织“联合利剑-2024A/B”演习
   category: 政治
   importance: 4
-  summary: 中国人民解放军东部战区在台岛周边组织“联合利剑-2024A”演习，坚决捍卫国家主权和领土完整。
+  summary: 中国人民解放军东部战区先后于5月23日至24日、10月14日在台岛周边及台湾海峡组织“联合利剑-2024A”和“联合利剑-2024B”演习，坚决捍卫国家主权和领土完整。
   confidence: 确定
   tags:
     - 军事
@@ -7352,6 +8940,24 @@
     - 航天
     - 科技
     - 历史转折
+  sources:
+    - 新华网
+  image:
+    url: /images/events/2024/change6_commons.jpg
+    caption: 资料图：2024年国际宇航大会展出的嫦娥六号月球背面样品（非任务现场图）
+    source: https://commons.wikimedia.org/wiki/File:Chang%27e_6_lunar_samples_at_IAC_2024_03_(cropped).jpg
+    author: BugWarp
+    license: CC BY-SA 4.0
+- id: cn-shenzhen-zhongshan-channel-202406
+  date: '2024-06-30'
+  title: 深中通道正式通车试运营
+  category: 经济
+  importance: 4
+  summary: 国家重大工程深中通道正式通车试运营，将深圳与中山车程由约2小时缩短至约30分钟，推动珠江口东西两岸城市群互联互通。
+  confidence: 确定
+  tags:
+    - 基础设施
+    - 粤港澳大湾区
   sources:
     - 新华网
     - 国家航天局
@@ -7473,6 +9079,12 @@
   tags:
     - 科技
     - AI
+  image:
+    url: /images/events/2025/deepseek_r1_commons.png
+    caption: DeepSeek-R1多阶段训练流程技术图（资料图，非发布现场图）
+    source: https://commons.wikimedia.org/wiki/File:The_multistage_pipeline_of_DeepSeek-R1.png
+    author: Daya Guo等
+    license: CC BY 4.0
 - id: cn-spring-festival-economy-202502
   date: 2025-02
   title: 农历乙巳蛇年春节假日经济再创新高
@@ -7494,11 +9106,11 @@
     - 体育
     - 亚冬会
 - id: cn-nezh2-boxoffice-202503
-  date: 2025-03
+  date: '2025-03-14'
   title: 《哪吒之魔童闹海》全球票房突破150亿元
   category: 文化
   importance: 4
-  summary: 国产动画电影《哪吒之魔童闹海》全球总票房突破150亿元人民币，刷新全球单市场动画电影票房纪录。
+  summary: 国产动画电影《哪吒之魔童闹海》全球总票房突破150亿元人民币，登顶全球动画电影票房榜。
   confidence: 确定
   tags:
     - 文化
@@ -7514,7 +9126,7 @@
     - 政治
     - 两会
 - id: cn-strait-thunder-202504
-  date: 2025-04
+  date: '2025-04-02'
   title: 东部战区举行“海峡雷霆-2025A”演练
   category: 政治
   importance: 4
@@ -7523,7 +9135,7 @@
   tags:
     - 军事
 - id: cn-tianwen-2-202505
-  date: 2025-05
+  date: '2025-05-29'
   title: 天问二号开启小行星采样探测
   category: 文化
   importance: 4
@@ -7600,6 +9212,12 @@
   tags:
     - 外交
     - 上合
+  image:
+    url: /images/events/2025/sco_tianjin_commons.jpg
+    caption: 2025年上合组织天津峰会会场资料图：天津梅江会展中心（非会议现场图）
+    source: https://commons.wikimedia.org/wiki/File:2025_SCO_Summit_-_Tianjin_Meijiang_International_Convention_and_Exhibition_Center.jpg
+    author: 阿塞拜疆总统新闻处
+    license: CC BY 4.0
 - id: cn-antijapan-80th-202509
   date: '2025-09-03'
   title: 纪念抗战胜利80周年大会与阅兵
@@ -7610,6 +9228,12 @@
   tags:
     - 军事
     - 纪念
+  image:
+    url: /images/events/2025/antijapan_80th_commons.jpg
+    caption: 2025年9月3日北京抗战胜利纪念日阅兵资料图（俄罗斯总统新闻处发布）
+    source: https://commons.wikimedia.org/wiki/File:2025_China_Victory_Day_Parade.jpg
+    author: 俄罗斯总统新闻处
+    license: CC BY 4.0
 - id: cn-fujian-catapult-202509
   date: '2025-09-22'
   title: 福建舰完成多型舰载机电磁弹射训练
@@ -7619,6 +9243,16 @@
   confidence: 确定
   tags:
     - 军事
+- id: cn-taiwan-restoration-memorial-day-202510
+  date: '2025-10-24'
+  title: 全国人大常委会决定设立台湾光复纪念日
+  category: 政治
+  importance: 4
+  summary: 十四届全国人大常委会表决通过决定，将10月25日设立为台湾光复纪念日，并规定国家通过多种形式举行纪念活动。
+  confidence: 确定
+  tags:
+    - 政治
+    - 台湾
 - id: cn-cz-600th-202510
   date: 2025-10
   title: 长征系列火箭完成第600次发射
@@ -7649,6 +9283,12 @@
   tags:
     - 政治
     - 十五五
+  image:
+    url: /images/events/2025/cpc_4th_plenum_commons.jpg
+    caption: 人民大会堂资料图（非2025年二十届四中全会现场图）
+    source: https://commons.wikimedia.org/wiki/File:Great_Hall_of_the_People_Beijing_China.jpg
+    author: Philip Nalangan
+    license: CC BY 4.0
 - id: cn-shenzhou-20-21-202511
   date: '2025-11-01'
   title: 神舟二十号与二十一号乘组空间站太空会师
@@ -7672,7 +9312,7 @@
   date: '2025-11-05'
   title: 福建舰正式入列，中国进入三航母时代
   category: 政治
-  importance: 5
+  importance: 4
   summary: 我国首艘电磁弹射型航空母舰福建舰入列授旗仪式举行，国家主席出席并登舰视察。福建舰满载排水量8万余吨，为全球首艘采用常规动力电磁弹射技术的航母，驻泊三亚某军港。
   confidence: 确定
   tags:
@@ -7688,6 +9328,16 @@
   tags:
     - 航天
     - 应急
+- id: cn-hainan-ftp-customs-closure-202512
+  date: '2025-12-18'
+  title: 海南自由贸易港启动全岛封关运作
+  category: 经济
+  importance: 4
+  summary: 海南自由贸易港正式启动全岛封关运作，实施“一线”放开、“二线”管住、岛内自由的政策制度，成为中国推进制度型开放的重要节点。
+  confidence: 确定
+  tags:
+    - 经济
+    - 对外开放
 - id: cn-lunar-program-202602
   date: '2026-02-11'
   title: 长征十号低空演示与梦舟载人飞船逃逸试验，载人登月关键节点

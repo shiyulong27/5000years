@@ -75,6 +75,12 @@
   sources:
     - NATO Official Site
     - Wikipedia
+  image:
+    url: "/images/events/1949/w-nato-founded-194904.jpg"
+    caption: "杜鲁门在白宫签署实施北大西洋公约的文件（1949年8月24日；为4月4日公约签署及NATO成立的同期背景资料）"
+    source: "https://commons.wikimedia.org/wiki/File:Truman_signing_North_Atlantic_Treaty.jpg"
+    author: "Abbie Rowe"
+    license: "Public domain"
 - id: w-frg-gdr-founded-194905
   date: '1949-05-23'
   title: 德意志联邦共和国与德意志民主共和国先后成立
@@ -89,6 +95,12 @@
   sources:
     - Encyclopaedia Britannica
     - Wikipedia
+  image:
+    url: "/images/events/1949/w-frg-gdr-founded-194905.jpg"
+    caption: "东德政府成员宣誓仪式（1949年10月12日；对应德国分裂事件中的东德成立阶段，不冒充5月23日西德成立现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-S88866,_Berlin,_DDR-Gründung,_Vereidigung_der_Regierung.jpg"
+    author: "Walter Heilig / Bundesarchiv"
+    license: "CC BY-SA 3.0 de"
 - id: w-india-republic-195001
   date: '1950-01-26'
   title: 印度宪法生效并正式成为共和国
@@ -104,6 +116,12 @@
     - 印度政府PIB
     - 中文维基百科
     - 英文维基百科
+  image:
+    url: "/images/events/1950/w-india-republic-195001.jpg"
+    caption: "1950年1月26日拉贾戈帕拉查里在新德里宣布印度成为共和国资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ARajagopalachari_declares_India_as_a_Republic.jpg"
+    author: "未知（印度政府历史照片，Commons 标注 Public domain）"
+    license: "Public domain"
 - id: w-wmo-founded-195003
   date: '1950-03-23'
   title: 世界气象组织成立
@@ -133,6 +151,12 @@
     - 欧盟官网
     - 中文维基百科
     - 英文维基百科
+  image:
+    url: "/images/events/1950/w-schuman-declaration-195005.jpg"
+    caption: "罗伯特·舒曼1958年官方肖像（作为1950年舒曼宣言及欧洲一体化倡议的背景人物资料图）"
+    source: "https://commons.wikimedia.org/wiki/File:Robert_Schuman_1958.jpg"
+    author: "European Commission"
+    license: "CC BY 4.0"
 - id: w-first-kidney-transplant-195006
   date: '1950-06-17'
   title: 人类历史上首例成功肾脏移植手术在芝加哥实施
@@ -164,6 +188,12 @@
     - 联合国
     - 中文维基百科
     - 英文维基百科
+  image:
+    url: "/images/events/1950/w-korean-war-195006.jpg"
+    caption: "1950年6月29日麦克阿瑟与韩军军官讨论朝鲜战争局势的资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ASC_342712_FEC-50-3210_-_29_June_1950_%2852575866152%29.jpg"
+    author: "U.S. Army / National Archives and Records Administration"
+    license: "Public domain"
 - id: w-inchon-landing-195009
   date: '1950-09-15'
   title: 麦克阿瑟指挥联合国军实施仁川登陆战役
@@ -178,6 +208,12 @@
   sources:
     - US Army Center of Military History
     - Wikipedia
+  image:
+    url: "/images/events/1950/w-inchon-landing-195009.jpg"
+    caption: "1950年9月15日联合国军登陆艇驶向仁川红滩的资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ALanding_craft_approaching_Inchon%2C_Korea%2C_on_15_September_1950_%28NH_42351%29.jpg"
+    author: "U.S. Navy / Naval History and Heritage Command"
+    license: "Public domain"
 - id: w-turing-test-paper-195010
   date: '1950-10-01'
   title: 阿兰·图灵发表论文提出“图灵测试”，奠定人工智能科学基石
@@ -193,6 +229,12 @@
     - Mind Journal
     - Stanford Encyclopedia of Philosophy
     - Wikipedia
+  image:
+    url: "/images/events/1950/w-turing-test-paper-195010.jpg"
+    caption: "阿兰·图灵 1951 年肖像（《计算机器与智能》及图灵测试背景资料）"
+    source: "https://commons.wikimedia.org/wiki/File%3AAlan_Turing_%281951%29.jpg"
+    author: "Elliott & Fry（作者未注明）"
+    license: "Public domain"
 - id: w-treaty-of-paris-ecsc-195104
   date: '1951-04-18'
   title: 法国西德等六国签署《巴黎条约》成立欧洲煤钢共同体
@@ -207,6 +249,12 @@
   sources:
     - EU Official Site
     - Wikipedia
+  image:
+    url: "/images/events/1951/w-treaty-of-paris-ecsc-195104.jpg"
+    caption: "《巴黎条约》签署文本及各国印章与签名（1951年4月18日）"
+    source: "https://commons.wikimedia.org/wiki/File:1951_CECA_signatures_ECSC.jpg"
+    author: "Marc Baronnet"
+    license: "CC BY-SA 4.0"
 - id: w-us-first-hydrogen-bomb-195211
   date: '1952-11-01'
   title: 美国在太平洋埃尼威托克环礁成功试爆人类首颗氢弹
@@ -221,6 +269,12 @@
   sources:
     - US Department of Energy
     - Wikipedia
+  image:
+    url: "/images/events/1952/w-us-first-hydrogen-bomb-195211.jpg"
+    caption: "1952年11月1日‘常春藤麦克’首次热核试验爆炸云；图片日期与试爆日一致"
+    source: "https://commons.wikimedia.org/wiki/File:IvyMike2.jpg"
+    author: "National Nuclear Security Administration / Nevada Site Office"
+    license: "Public domain"
 - id: w-stalin-death-195303
   date: '1953-03-05'
   title: 苏联最高领导人斯大林在莫斯科逝世
@@ -235,6 +289,12 @@
   sources:
     - Encyclopaedia Britannica
     - Wikipedia
+  image:
+    url: "/images/events/1953/w-stalin-death-195303.jpg"
+    caption: "1953年3月9日斯大林葬礼队伍资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AStalin%27s_funeral.jpg"
+    author: "Martin Manhoff / U.S. Army"
+    license: "Public domain"
 - id: w-dna-double-helix-195304
   date: '1953-04-25'
   title: 詹姆斯·沃森与弗朗西斯·克里克发表 DNA 双螺旋结构模型
@@ -250,6 +310,12 @@
     - Nature
     - Nobel Prize
     - Wikipedia
+  image:
+    url: "/images/events/1953/w-dna-double-helix-195304.jpg"
+    caption: "1953年沃森与克里克构建的 DNA 模型（伦敦科学博物馆资料照片）"
+    source: "https://commons.wikimedia.org/wiki/File%3ADNA_Model_Crick-Watson.jpg"
+    author: "Alkivar"
+    license: "Public domain"
 - id: w-everest-first-ascent-195305
   date: '1953-05-29'
   title: 埃德蒙·希拉里与丹增·诺盖首次成功登顶珠穆朗玛峰
@@ -264,6 +330,12 @@
   sources:
     - Royal Geographical Society
     - Wikipedia
+  image:
+    url: "/images/events/1953/w-everest-first-ascent-195305.jpg"
+    caption: "1953年5月29日首次登顶珠峰后的丹增·诺盖与埃德蒙·希拉里资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AEdmund_Hillary_and_Tenzing_Norgay.jpg"
+    author: "Jamling Tenzing Norgay"
+    license: "CC BY-SA 2.5"
 - id: w-battle-of-dien-bien-phu-195405
   date: '1954-05-07'
   title: 越南奠边府战役大捷，法国结束对印支殖民统治
@@ -278,6 +350,12 @@
   sources:
     - Encyclopaedia Britannica
     - Wikipedia
+  image:
+    url: "/images/events/1954/w-battle-of-dien-bien-phu-195405.jpg"
+    caption: "1954年越南人民军在奠边府法军总部升起旗帜的胜利资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AVictory_in_Battle_of_Dien_Bien_Phu.jpg"
+    author: "越南人民军"
+    license: "Public domain"
 - id: w-warsaw-pact-195505
   date: '1955-05-14'
   title: 苏联与东欧八国签署《华沙条约》，华沙条约组织成立
@@ -292,6 +370,12 @@
   sources:
     - Encyclopaedia Britannica
     - Wikipedia
+  image:
+    url: "/images/events/1955/w-warsaw-pact-195505.jpg"
+    caption: "1955年华沙条约签署会议资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AWarsaw_Pact_1955.jpg"
+    author: "未知（波兰历史照片）"
+    license: "Public domain"
 - id: w-cpsu-20th-secret-speech-195602
   date: '1956-02-25'
   title: 赫鲁晓夫在苏共二十大发表批判斯大林个人崇拜秘密报告
@@ -306,6 +390,12 @@
   sources:
     - Encyclopaedia Britannica
     - Wikipedia
+  image:
+    url: "/images/events/1956/w-cpsu-20th-secret-speech-195602.jpg"
+    caption: "1956年2月赫鲁晓夫秘密报告波兰文首版封面资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AFirst_edition_of_Krushchev%27s_%22Secret_Speech%22.jpg"
+    author: "Wikiwlh"
+    license: "CC BY-SA 4.0"
 - id: w-suez-crisis-195610
   date: '1956-10-29'
   title: 第二次中东战争（苏伊士运河危机）爆发
@@ -320,6 +410,12 @@
   sources:
     - Encyclopaedia Britannica
     - Wikipedia
+  image:
+    url: "/images/events/1956/w-suez-crisis-195610.jpg"
+    caption: "1956年苏伊士危机‘火枪手行动’中英军在塞得港登陆的资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AThe_Suez_Crisis_%28operation_Musketeer%29_1956_MH23500.jpg"
+    author: "Royal Navy official photographer / Imperial War Museums"
+    license: "Public domain"
 - id: w-treaty-of-rome-195703
   date: '1957-03-25'
   title: 六国在罗马签署《罗马条约》成立欧洲经济共同体
@@ -334,6 +430,12 @@
   sources:
     - EU Official Site
     - Wikipedia
+  image:
+    url: "/images/events/1957/w-treaty-of-rome-195703.jpg"
+    caption: "《罗马条约》资料照片（1957年欧洲经济共同体成立文件背景）"
+    source: "https://commons.wikimedia.org/wiki/File%3A%D0%A0%D0%B8%D0%BC%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D1%96%D1%80.jpg"
+    author: "Roma"
+    license: "CC0 1.0"
 - id: w-sputnik-1-195710
   date: '1957-10-04'
   title: 苏联成功发射人类第一颗人造地球卫星 Sputnik 1
@@ -349,6 +451,12 @@
     - NASA History
     - Roscosmos
     - Wikipedia
+  image:
+    url: "/images/events/1957/w-sputnik-1-195710.jpg"
+    caption: "Sputnik 1 资料照片（1957年10月4日进入轨道，NASA 图片）"
+    source: "https://commons.wikimedia.org/wiki/File%3ASputnik_191378-full.jpg"
+    author: "NASA"
+    license: "Public domain"
 - id: w-nasa-founded-195807
   date: '1958-07-29'
   title: 美国国会通过法案正式成立美国国家航空航天局（NASA）
@@ -363,6 +471,12 @@
   sources:
     - NASA History
     - Wikipedia
+  image:
+    url: "/images/events/1958/w-nasa-founded-195807.png"
+    caption: "NASA 官方标识（1958年国家航空航天局成立背景资料）"
+    source: "https://commons.wikimedia.org/wiki/File%3ANASA_Logo.png"
+    author: "NASA"
+    license: "Public domain"
 - id: w-cuban-revolution-victory-195901
   date: '1959-01-01'
   title: 菲德尔·卡斯特罗率领古巴起义军推翻独裁政权，古巴革命胜利
@@ -377,6 +491,12 @@
   sources:
     - Encyclopaedia Britannica
     - Wikipedia
+  image:
+    url: "/images/events/1959/w-cuban-revolution-victory-195901.jpg"
+    caption: "1959年1月8日菲德尔·卡斯特罗进入哈瓦那资料照片（古巴革命胜利背景）"
+    source: "https://commons.wikimedia.org/wiki/File%3AFidel_Castro%27s_entry_into_Havana%2C_1959.jpg"
+    author: "未知"
+    license: "Public domain"
 - id: w-lunik-3-far-side-moon-195910
   date: '1959-10-04'
   title: 苏联“月球3号”探测器首次拍摄到月球背面照片
@@ -392,6 +512,12 @@
     - NASA
     - Roscosmos
     - Wikipedia
+  image:
+    url: "/images/events/1959/w-lunik-3-far-side-moon-195910.png"
+    caption: "1959年10月7日月球3号拍摄的月球背面影像（首批月背照片）"
+    source: "https://commons.wikimedia.org/wiki/File%3AImage_invisible_hemisphere_of_the_Moon_from_Luna-3.gif"
+    author: "RKK Energia"
+    license: "Public domain"
 - id: w-cameroon-independence-196001
   date: '1960-01-01'
   title: 喀麦隆独立拉开“非洲年”序幕
@@ -434,6 +560,12 @@
   sources:
     - Wikipedia
     - Encyclopaedia Britannica
+  image:
+    url: "/images/events/1960/w-u2-incident-196005.jpg"
+    caption: "U-2侦察机资料模型（1960年5月1日U-2事件背景）"
+    source: "https://commons.wikimedia.org/wiki/File%3AU-2_Model_-_Flickr_-_The_Central_Intelligence_Agency_%281%29.jpg"
+    author: "Central Intelligence Agency"
+    license: "Public domain"
 - id: w-first-birth-control-pill-196005
   date: '1960-05-09'
   title: 美国 FDA 批准首款口服避孕药上市
@@ -464,6 +596,12 @@
     - Nature
     - IEEE
     - Wikipedia
+  image:
+    url: "/images/events/1960/w-first-laser-invented-196005.jpg"
+    caption: "西奥多·梅曼与红宝石激光器资料照片（1960年首台激光器背景）"
+    source: "https://commons.wikimedia.org/wiki/File%3ATheodore_Maiman_1960.jpg"
+    author: "未知（Associated Press）"
+    license: "Public domain"
 - id: w-great-chilean-earthquake-196005
   date: '1960-05-22'
   title: 智利瓦尔迪维亚大地震发生
@@ -478,6 +616,12 @@
   sources:
     - USGS
     - Wikipedia
+  image:
+    url: "/images/events/1960/w-great-chilean-earthquake-196005.jpg"
+    caption: "1960年5月22日智利瓦尔迪维亚大地震 USGS 震动图"
+    source: "https://commons.wikimedia.org/wiki/File%3A1960_Valdivia_earthquake.jpg"
+    author: "USGS"
+    license: "Public domain"
 - id: w-congo-independence-196006
   date: '1960-06-30'
   title: 刚果共和国独立
@@ -492,6 +636,12 @@
   sources:
     - Wikipedia
     - 联合国
+  image:
+    url: "/images/events/1960/w-congo-independence-196006.jpg"
+    caption: "1960年6月30日卢蒙巴签署刚果独立文件资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3APatrice_Lumumba_signs_the_document_granting_independence_to_the_Congo_next_to_Belgian_Prime_Minister_Gaston_Eyskens.jpg"
+    author: "Congopresse"
+    license: "Public domain"
 - id: w-rome-olympics-196008
   date: '1960-08-25'
   title: 罗马奥运会开幕
@@ -520,6 +670,12 @@
   sources:
     - OPEC
     - Wikipedia
+  image:
+    url: "/images/events/1960/w-opec-founded-196009.svg"
+    caption: "石油输出国组织（OPEC）标志（作为1960年巴格达成立事件的组织识别图）"
+    source: "https://commons.wikimedia.org/wiki/File:OPEC_Logo.svg"
+    author: "Unknown author"
+    license: "Public domain"
 - id: w-first-tv-presidential-debate-196009
   date: '1960-09-26'
   title: 肯尼迪与尼克松举行人类首次总统大选电视辩论
@@ -574,6 +730,12 @@
     - 苏联
   sources:
     - Wikipedia
+  image:
+    url: "/images/events/1961/w-gagarin-orbit-196104.jpg"
+    caption: "尤里·加加林1961年公开活动肖像（首次载人轨道飞行背景资料）"
+    source: "https://commons.wikimedia.org/wiki/File%3AYuri-Gagarin-1961-Helsinki.jpg"
+    author: "Arto Jousi / Suomen valokuvataiteen museo / Alma Media / Uuden Suomen kokoelma"
+    license: "Public domain"
 - id: w-bay-of-pigs-196104
   date: '1961-04-17'
   title: 猪湾事件爆发
@@ -587,6 +749,12 @@
     - 军事行动
   sources:
     - Wikipedia
+  image:
+    url: "/images/events/1961/w-bay-of-pigs-196104.jpg"
+    caption: "1961年猪湾入侵第2506旅登陆艇资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3A2506-landing_%281%29.jpg"
+    author: "未知（Latin American Studies）"
+    license: "Public domain"
 - id: w-cuba-socialist-state-196105
   date: '1961-05-01'
   title: 菲德尔·卡斯特罗宣布古巴为社会主义国家
@@ -616,6 +784,12 @@
     - NASA History
     - JFK Library
     - Wikipedia
+  image:
+    url: "/images/events/1961/w-apollo-program-announced-196105.jpg"
+    caption: "1961年5月25日肯尼迪在国会发表登月目标演说资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AKennedy_Giving_Historic_Speech_to_Congress_-_GPN-2000-001658.jpg"
+    author: "NASA"
+    license: "Public domain"
 - id: w-antarctic-treaty-196106
   date: '1961-06-23'
   title: 《南极条约》生效
@@ -642,6 +816,12 @@
     - 欧洲
   sources:
     - Wikipedia
+  image:
+    url: "/images/events/1961/w-berlin-wall-start-196108.jpg"
+    caption: "1961年8月柏林墙修建期间的混凝土墙施工资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ABundesarchiv_Bild_173-1321%2C_Berlin%2C_Mauerbau.jpg"
+    author: "German Federal Archives"
+    license: "CC BY-SA 3.0 Germany"
 - id: w-nam-founded-196109
   date: '1961-09-01'
   title: 不结盟运动正式诞生
@@ -655,6 +835,12 @@
     - 发展中国家
   sources:
     - Wikipedia
+  image:
+    url: "/images/events/1961/w-nam-founded-196109.jpg"
+    caption: "1961年贝尔格莱德不结盟国家首脑会议资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ABelgrade_Conference%2C_1961.jpg"
+    author: "未知"
+    license: "Public domain"
 - id: w-cpsu-22nd-congress-196110
   date: '1961-10-17'
   title: 苏共二十二大召开并决定将斯大林遗体迁出列宁墓
@@ -683,6 +869,12 @@
   sources:
     - Atomic Heritage Foundation
     - Wikipedia
+  image:
+    url: "/images/events/1961/w-tsar-bomba-test-196110.jpg"
+    caption: "1961年10月30日沙皇炸弹在新地岛上空爆炸形成的火球"
+    source: "https://commons.wikimedia.org/wiki/File%3ATsar_Bomba_fireball_1961.jpg"
+    author: "Cover Images / 苏联中型机械制造部 / Associated Press"
+    license: "Public domain"
 - id: w-john-glenn-orbit-196202
   date: '1962-02-20'
   title: 约翰·格伦完成轨道飞行
@@ -697,6 +889,12 @@
   sources:
     - NASA
     - 维基百科:1962年
+  image:
+    url: "/images/events/1962/w-john-glenn-orbit-196202.jpg"
+    caption: "约翰·格伦在 Friendship 7 飞船前的 1962 年资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AJohn_Glenn_in_front_of_the_Friendship_7.jpg"
+    author: "NASA"
+    license: "Public domain"
 - id: w-algeria-evian-accord-196203
   date: '1962-03-18'
   title: 法国与阿尔及利亚签署停火协议
@@ -711,6 +909,12 @@
   sources:
     - 维基百科:1962年
     - 维基百科:法国-阿尔及利亚关系
+  image:
+    url: "/images/events/1962/w-algeria-evian-accord-196203.jpg"
+    caption: "1962年3月20日《埃维昂协议》在法国《官方公报》刊载的文件资料图"
+    source: "https://commons.wikimedia.org/wiki/File%3AJORF-20-03-1962-p3019-Accords_d%27Evian.jpg"
+    author: "法国《官方公报》"
+    license: "Licence Ouverte 1.0"
 - id: w-rocket-program-196207
   date: '1962-07-10'
   title: 世界首颗通信卫星“Telstar 1”上天
@@ -769,6 +973,12 @@
     - Vatican Official Site
     - Encyclopaedia Britannica
     - Wikipedia
+  image:
+    url: "/images/events/1962/w-vatican-ii-council-196210.jpg"
+    caption: "1962年10月11日梵二会议开幕时教父进入圣彼得大教堂的资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AKonzilseroeffnung_1.jpg"
+    author: "Peter Geymayer"
+    license: "Public domain"
 - id: w-cuban-missile-crisis-begin-196210
   date: '1962-10-14'
   title: 古巴导弹危机公开爆发
@@ -783,6 +993,12 @@
   sources:
     - 维基百科:1962年
     - 维基百科:古巴导弹危机
+  image:
+    url: "/images/events/1962/w-cuban-missile-crisis-begin-196210.jpg"
+    caption: "1962年10月29日肯尼迪与国家安全委员会执行委员会讨论古巴危机资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AThe_Cuba_Missile_Crisis.jpg"
+    author: "Cecil Stoughton / White House Photographs"
+    license: "Public domain"
 - id: w-cuban-missile-crisis-end-196210
   date: '1962-10-28'
   title: 古巴导弹危机结束
@@ -797,6 +1013,12 @@
   sources:
     - 维基百科:1962年
     - 维基百科:古巴导弹危机
+  image:
+    url: "/images/events/1962/w-cuban-missile-crisis-end-196210.jpg"
+    caption: "1962年10月29日肯尼迪与顾问在EXCOMM会议后的现场照片；为古巴导弹危机降温阶段的直接背景图"
+    source: "https://commons.wikimedia.org/wiki/File:President_Kennedy_with_advisors_after_EXCOMM_meeting,_29_October_1962_crop.jpg"
+    author: "Cecil Stoughton"
+    license: "Public domain"
 - id: w-sino-indian-border-war-world-196210
   date: '1962-11-21'
   title: 中国宣布中印边境全线单方面停火并交还物资
@@ -825,6 +1047,12 @@
   sources:
     - Encyclopaedia Britannica
     - Wikipedia
+  image:
+    url: "/images/events/1963/w-elysee-treaty-196301.jpg"
+    caption: "1963年1月22日《爱丽舍条约》原始文书影像；图像说明标注巴黎签署日期"
+    source: "https://commons.wikimedia.org/wiki/File:1963_Elysee_treaty.jpg"
+    author: "Marc Baronnet（法国外交部外交档案馆藏）"
+    license: "CC BY-SA 4.0"
 - id: w-oau-founded-196305
   date: '1963-05-25'
   title: 非洲统一组织（OAU）在亚的斯亚贝巴正式成立
@@ -839,6 +1067,12 @@
   sources:
     - African Union Official Site
     - Wikipedia
+  image:
+    url: "/images/events/1963/w-oau-founded-196305.jpg"
+    caption: "1963年非洲统一组织峰会期间，埃塞俄比亚皇帝海尔·塞拉西与埃及总统纳赛尔在亚的斯亚贝巴"
+    source: "https://commons.wikimedia.org/wiki/File:Selassie_and_Nasser,_1963.jpg"
+    author: "未署名（纳赛尔档案馆）"
+    license: "Public domain"
 - id: w-first-woman-in-space-196306
   date: '1963-06-16'
   title: 瓦伦蒂娜·特雷什科娃成为人类首位女性航天员
@@ -854,6 +1088,12 @@
     - NASA History
     - Roscosmos
     - Wikipedia
+  image:
+    url: "/images/events/1963/w-first-woman-in-space-196306.jpg"
+    caption: "瓦伦蒂娜·特雷什科娃在东方六号任务期间的资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ATereshkova_Space_Suit.jpg"
+    author: "NASA-Starchild"
+    license: "Public domain"
 - id: w-paul-vi-elected-196306
   date: '1963-06-21'
   title: 保禄六世当选教宗
@@ -884,6 +1124,12 @@
     - Encyclopaedia Britannica
     - 美国国务院
     - Wikipedia
+  image:
+    url: "/images/events/1963/w-nuclear-test-ban-treaty-196308.jpg"
+    caption: "1963年10月7日美国总统肯尼迪在白宫签署部分禁试条约的资料照片（条约于同年8月签署）"
+    source: "https://commons.wikimedia.org/wiki/File:President_Kennedy_signs_Nuclear_Test_Ban_Treaty,_07_October_1963.jpg"
+    author: "Robert LeRoy Knudsen（美国总统行政办公室）"
+    license: "Public domain"
 - id: w-civil-rights-march-washington-196308
   date: '1963-08-28'
   title: 华盛顿民权游行
@@ -899,6 +1145,12 @@
     - Encyclopaedia Britannica
     - National Archives
     - Wikipedia
+  image:
+    url: "/images/events/1963/w-civil-rights-march-washington-196308.jpg"
+    caption: "1963年8月28日华盛顿民权游行现场资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3A1963_march_on_washington.jpg"
+    author: "Rowland Scherman"
+    license: "Public domain"
 - id: w-ngo-dinh-diem-coup-196311
   date: '1963-11-01'
   title: 南越发生军事政变，总统吴庭艳遇刺身亡
@@ -928,6 +1180,12 @@
     - Encyclopaedia Britannica
     - JFK Library
     - Wikipedia
+  image:
+    url: "/images/events/1963/w-jfk-assassination-196311.jpg"
+    caption: "1963年11月22日达拉斯迪利广场肯尼迪遇刺瞬间的玛丽·穆尔曼宝丽来照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AMoorman_photo_of_JFK_assassination.jpg"
+    author: "Mary Ann Moorman (Mary Krahmer)"
+    license: "Public domain"
 - id: w-beatles-us-debut-196402
   date: '1964-02-09'
   title: 披头士乐队亮相美国电视首秀
@@ -1024,6 +1282,12 @@
     - 美国国家档案和记录管理局
     - 美国国会图书馆
     - Wikipedia—Civil Rights Act of 1964
+  image:
+    url: "/images/events/1964/w-civil-rights-act-196407.jpg"
+    caption: "1964年7月2日林登·约翰逊签署《民权法案》的白宫东厅资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ACivil_rights_act2.jpg"
+    author: "O. J. Rapp"
+    license: "Public domain"
 - id: w-gulf-of-tonkin-196408
   date: '1964-08-07'
   title: 北部湾事件与越南战争升级
@@ -1040,6 +1304,12 @@
     - 美国国家档案和记录管理局
     - 联合国
     - Wikipedia—Gulf of Tonkin incident
+  image:
+    url: "/images/events/1964/w-gulf-of-tonkin-196408.jpg"
+    caption: "1964年8月2日北部湾事件中北越鱼雷艇遭到射击的美国海军资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ANorth_Vietnamese_motor_torpedo_boat_under_fire_on_2_August_1964.jpg"
+    author: "U.S. Navy"
+    license: "Public domain"
 - id: w-shinkansen-opening-196410
   date: '1964-10-01'
   title: 世界首条高速铁路东海道新干线通车
@@ -1088,6 +1358,12 @@
     - 俄罗斯国家档案馆
     - Encyclopaedia Britannica
     - Wikipedia—Nikita Khrushchev
+  image:
+    url: "/images/events/1964/w-khrushchev-ousted-196410.jpg"
+    caption: "尼基塔·赫鲁晓夫1964年10月30日访问挪威的资料照片（下台背景）"
+    source: "https://commons.wikimedia.org/wiki/File%3ANikita_Khrushchev%2C_Her%C3%B8ya_1964.jpg"
+    author: "未知"
+    license: "Public domain"
 - id: w-mlk-nobel-peace-prize-196412
   date: '1964-12-10'
   title: 马丁·路德·金获诺贝尔和平奖
@@ -1136,6 +1412,12 @@
     - 美国国防部
     - 美国国务院历史办公室
     - Wikipedia—United States Marine Corps in Vietnam
+  image:
+    url: "/images/events/1965/w-us-ground-troops-vietnam-196503.jpg"
+    caption: "1965年3月6日美国海军陆战队在岘港登陆前后的现场照片；为3月8日首批地面部队登陆南越的直接背景图"
+    source: "https://commons.wikimedia.org/wiki/File:DaNangMarch61965.jpg"
+    author: "USMC Photo A183676"
+    license: "Public domain"
 - id: w-first-spacewalk-196503
   date: '1965-03-18'
   title: 人类首次太空行走
@@ -1184,6 +1466,12 @@
     - 美国国家档案和记录管理局
     - 美国司法部
     - Wikipedia—Voting Rights Act of 1965
+  image:
+    url: "/images/events/1965/w-voting-rights-act-196508.jpg"
+    caption: "1965年8月6日约翰逊总统签署《投票权法》现场照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ALyndonJohnson_signs_Voting_Rights_Act_of_1965.jpg"
+    author: "Yoichi Okamoto"
+    license: "Public domain"
 - id: w-singapore-independence-196508
   date: '1965-08-09'
   title: 新加坡脱离马来西亚独立
@@ -1200,6 +1488,12 @@
     - 新加坡国家档案馆
     - Encyclopaedia Britannica
     - Wikipedia—Independence of Singapore Agreement 1965
+  image:
+    url: "/images/events/1965/w-singapore-independence-196508.jpg"
+    caption: "1965年8月7日新加坡脱离马来西亚的分离协定原始文书第一页（签署日期与独立事件相邻）"
+    source: "https://commons.wikimedia.org/wiki/File:Agreement_relating_to_the_separation_of_Singapore_from_Malaysia_as_an_independent_and_sovereign_State.djvu"
+    author: "马来西亚政府与新加坡政府（联合国条约汇编）"
+    license: "Public domain"
 - id: w-indo-pakistani-war-196509
   date: '1965-09-06'
   title: 第二次印巴战争全面升级
@@ -1424,6 +1718,12 @@
     - 联合国人权事务高级专员办事处
     - 联合国大会
     - Wikipedia—International Bill of Human Rights
+  image:
+    url: /images/events/1966/w-human-rights-covenants-196612.pdf
+    caption: "《公民权利和政治权利国际公约》1966年12月16日联合国通过的官方文本资料；与同日通过的另一项公约共同构成两项公约背景"
+    source: "https://commons.wikimedia.org/wiki/File%3AInternational_Covenant_on_Civil_and_Political_Rights.pdf"
+    author: "United Nations Human Rights Committee"
+    license: "Public domain"
 - id: w-apollo-1-fire-196701
   date: '1967-01-27'
   title: 阿波罗1号地面测试火灾
@@ -1472,6 +1772,12 @@
     - 联合国
     - Encyclopaedia Britannica
     - Wikipedia—Six-Day War
+  image:
+    url: "/images/events/1967/w-six-day-war-196706.jpg"
+    caption: "1967年6月5日六日战争首日以色列部队进入拉法的现场照片；拍摄日期与战争爆发日一致"
+    source: "https://commons.wikimedia.org/wiki/File:Six_Day_War._Israeli_troops_rolling_into_Rafa._June_1967._D326-032.jpg"
+    author: "David Rubinger"
+    license: "CC BY-SA 4.0"
 - id: w-six-day-war-ceasefire-196706
   date: '1967-06-10'
   title: 六日战争停火
@@ -1520,6 +1826,12 @@
     - 东盟秘书处
     - 联合国
     - Wikipedia—ASEAN
+  image:
+    url: "/images/events/1967/w-asean-founded-196708.jpg"
+    caption: "1967年东盟《曼谷宣言》起草阶段，新加坡与印度尼西亚代表团的建议清单原始档案"
+    source: "https://commons.wikimedia.org/wiki/File:ASEAN_Declaration_draft_recomendations.jpg"
+    author: "印度尼西亚国家档案馆（ANRI）"
+    license: "Public domain"
 - id: w-outer-space-treaty-196710
   date: '1967-10-10'
   title: 《外层空间条约》生效
@@ -1616,6 +1928,12 @@
     - 美国国防部
     - Encyclopaedia Britannica
     - Wikipedia—Tet Offensive
+  image:
+    url: "/images/events/1968/w-tet-offensive-196801.jpg"
+    caption: "1968年2月2日春节攻势期间西贡MACV营地检查站的现场照片；拍摄日期处于攻势初期"
+    source: "https://commons.wikimedia.org/wiki/File:Security_checkpoint_at_the_MACV_compound_during_the_Tet_Offensive.jpg"
+    author: "Unknown author"
+    license: "Public domain"
 - id: w-mlk-assassination-196804
   date: '1968-04-04'
   title: 马丁·路德·金遇刺
@@ -1632,6 +1950,12 @@
     - 美国国家档案和记录管理局
     - FBI档案
     - Wikipedia—Assassination of Martin Luther King Jr.
+  image:
+    url: "/images/events/1968/w-mlk-assassination-196804.jpg"
+    caption: "马丁·路德·金遇刺前一日在洛林酒店外的资料照片（1968年4月3日）"
+    source: "https://commons.wikimedia.org/wiki/File%3AMartin_Luther_King_Jr_outside_Lorraine_Hotel_April_3%2C_1968.jpg"
+    author: "Unknown author"
+    license: "Public domain"
 - id: w-may-68-196805
   date: '1968-05-03'
   title: 法国“五月风暴”学生抗议升级
@@ -1696,6 +2020,12 @@
     - 北约
     - Encyclopaedia Britannica
     - Wikipedia—Warsaw Pact invasion of Czechoslovakia
+  image:
+    url: "/images/events/1968/w-warsaw-pact-invasion-czechoslovakia-196808.png"
+    caption: "1968年8月21日苏军坦克进入布拉格赫拉德恰尼广场的现场照片；为入侵次日影像"
+    source: "https://commons.wikimedia.org/wiki/File:Soviet_tanks_-_Hradcany_Square_Prague_-_via_Swiss_embassy_1968-08-21.png"
+    author: "Published via Swiss embassy in Prague; artist not listed"
+    license: "CC BY 4.0"
 - id: w-tlatelolco-massacre-196810
   date: '1968-10-02'
   title: 墨西哥特拉特洛尔科大屠杀
@@ -1744,6 +2074,12 @@
     - NASA
     - Smithsonian National Air and Space Museum
     - Wikipedia—Apollo 8
+  image:
+    url: "/images/events/1968/w-apollo-8-moon-orbit-196812.jpg"
+    caption: "阿波罗8号三名宇航员的1968年任务前资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AApollo_8_Crewmembers_%284x5_cropped%29.jpg"
+    author: "NASA"
+    license: "Public domain"
 - id: w-nixon-inauguration-196901
   date: '1969-01-20'
   title: 理查德·尼克松就任美国总统
@@ -1823,6 +2159,12 @@
     - NASA
     - Smithsonian National Air and Space Museum
     - Wikipedia—Apollo 11
+  image:
+    url: "/images/events/1969/w-moon-1969.jpg"
+    caption: "1969年7月20日阿波罗11号宇航员巴兹·奥尔德林在月面与美国国旗合影"
+    source: "https://commons.wikimedia.org/wiki/File%3ANASA_AS-11-40-5875.jpg"
+    author: "NASA / Neil A. Armstrong"
+    license: "Public domain"
 - id: w-woodstock-festival-196908
   date: '1969-08-15'
   title: 伍德斯托克音乐节开幕
@@ -2020,6 +2362,12 @@
   sources:
     - 世界气象组织
     - 联合国
+  image:
+    url: "/images/events/1970/w-bhola-cyclone-197011.jpg"
+    caption: "1970年11月12日 NASA Nimbus 4 卫星拍摄的博拉气旋影像"
+    source: "https://commons.wikimedia.org/wiki/File:15B_1970-11-12_0510Z.jpg"
+    author: "IDCS imagery from NASA's Nimbus 4 Satellite"
+    license: "Public domain"
 - id: w-lunokhod1-197011
   date: '1970-11-17'
   title: 苏联月球车一号登陆月球
@@ -2089,6 +2437,12 @@
   sources:
     - 孟加拉国外交部
     - 维基百科
+  image:
+    url: "/images/events/1971/w-bangladesh-independence-war-197103.jpg"
+    caption: "孟加拉国解放战争形势图"
+    source: "https://commons.wikimedia.org/wiki/File%3ABangladesh_1971_Liberation.jpg"
+    author: "Mike Young"
+    license: "Public domain"
 - id: w-nixon-shock-197108
   date: '1971-08-15'
   title: 美国宣布“尼克松冲击”经济措施
@@ -2104,6 +2458,12 @@
   sources:
     - 美联储历史资料
     - 美国财政部
+  image:
+    url: /images/events/1971/w-nixon-shock-197108.jpg
+    caption: "尼克松1971年7月8日官方肖像；作为宣布经济措施的总统同期资料图，非8月15日电视讲话现场"
+    source: "https://commons.wikimedia.org/wiki/File%3AOfficial_Portrait_of_President_Nixon%2C_1971.jpg"
+    author: "U.S. National Archives / White House Photo Office"
+    license: "Public domain"
 - id: w-mariner9-mars-orbit-197111
   date: '1971-11-14'
   title: “水手9号”进入火星轨道
@@ -2229,6 +2589,12 @@
   sources:
     - 美国国务院历史办公室
     - 联合国条约集
+  image:
+    url: "/images/events/1972/w-salt1-abm-treaty-197205.jpg"
+    caption: "尼克松与勃列日涅夫签署反弹道导弹条约及SALT协定"
+    source: "https://commons.wikimedia.org/wiki/File%3APresident_Richard_Nixon_and_General_Secretary_Leonid_Brezhnev_Signing_the_Anti-Ballistic_Missile_%28ABM%29_Treaty_and_Interim_Strategic_Arms_Limitations_Talks_%28SALT%29_Agreement_-_DPLA_-_e8e61af3f57b9fdb3beb10652b1fc770.jpg"
+    author: "White House Photo Office / U.S. National Archives"
+    license: "Public domain"
 - id: w-un-environment-conference-197206
   date: '1972-06-05'
   title: 联合国人类环境会议开幕
@@ -2327,6 +2693,12 @@
   sources:
     - 美国国务院历史办公室
     - 联合国
+  image:
+    url: "/images/events/1973/w-paris-peace-accords-197301.jpg"
+    caption: "1973年1月27日巴黎和平协定签署仪式"
+    source: "https://commons.wikimedia.org/wiki/File%3AVietnam_peace_agreement_signing.jpg"
+    author: "Robert LeRoy Knudsen"
+    license: "Public domain"
 - id: w-first-handheld-mobile-call-197304
   date: '1973-04-03'
   title: 首次手持移动电话通话完成
@@ -2368,6 +2740,12 @@
   sources:
     - 智利国家图书馆
     - 美国国务院
+  image:
+    url: "/images/events/1973/w-chile-coup-197309.jpg"
+    caption: "1973年9月11日智利政变期间拉莫内达宫遭轰炸"
+    source: "https://commons.wikimedia.org/wiki/File%3AGolpe_de_Estado_1973.jpg"
+    author: "Biblioteca del Congreso Nacional de Chile"
+    license: "CC BY 3.0 CL"
 - id: w-yom-kippur-war-197310
   date: '1973-10-06'
   title: 第四次中东战争爆发
@@ -2382,6 +2760,12 @@
   sources:
     - 联合国安理会
     - 维基百科
+  image:
+    url: "/images/events/1973/w-yom-kippur-war-197310.jpg"
+    caption: "赎罪日战争西奈战线第一阶段地图（1973年10月6—13日，美国西点军校历史系资料）"
+    source: "https://commons.wikimedia.org/wiki/File:1973_sinai_war_6-13_en.jpg"
+    author: "Department of History, U.S. Military Academy"
+    license: "Public domain"
 - id: w-oil-crisis-197310
   date: '1973-10-17'
   title: 阿拉伯石油禁运引发第一次石油危机
@@ -2396,6 +2780,12 @@
   sources:
     - 国际能源署
     - 美国国务院历史办公室
+  image:
+    url: /images/events/1973/w-oil-crisis-197310.jpg
+    caption: "1973年秋美国俄勒冈州汽油短缺资料照片；反映石油禁运后的供应冲击，非10月17日禁运宣布现场"
+    source: "https://commons.wikimedia.org/wiki/File%3AGASOLINE_SHORTAGE_HIT_THE_STATE_OF_OREGON_IN_THE_FALL_OF_1973_BY_MIDDAY_GASOLINE_WAS_BECOMING_UNAVAILABLE_ALONG..._-_NARA_-_555405.jpg"
+    author: "David Falconer / U.S. Environmental Protection Agency"
+    license: "Public domain"
 - id: w-sydney-opera-house-opens-197310
   date: '1973-10-20'
   title: 悉尼歌剧院正式开幕
@@ -2438,6 +2828,12 @@
   sources:
     - 葡萄牙议会
     - 维基百科
+  image:
+    url: "/images/events/1974/w-carnation-revolution-197404.jpg"
+    caption: "葡萄牙康乃馨革命的历史照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ARevolu%C3%A7%C3%A3o_dos_Cravos.jpg"
+    author: "Unknown author"
+    license: "CC BY 4.0"
 - id: w-india-smiling-buddha-197405
   date: '1974-05-18'
   title: 印度进行首次核试验
@@ -2452,6 +2848,12 @@
   sources:
     - 印度原子能部
     - 全面禁止核试验条约组织
+  image:
+    url: /images/events/1974/w-india-smiling-buddha-197405.jpg
+    caption: 英迪拉·甘地于1974年5月18日访问“微笑佛”核试验场
+    source: "https://commons.wikimedia.org/wiki/File:GandhiSBuddha458c20.jpg"
+    author: "nuclearweaponarchive.org"
+    license: "CC BY-SA 4.0"
 - id: w-turkey-cyprus-invasion-197407
   date: '1974-07-20'
   title: 土耳其出兵塞浦路斯
@@ -2466,6 +2868,12 @@
   sources:
     - 联合国安理会
     - 维基百科
+  image:
+    url: "/images/events/1974/w-turkey-cyprus-invasion-197407.jpg"
+    caption: "1974年7月20日 KH-9 HEXAGON 侦察卫星拍摄的土耳其登陆舰抵达塞浦路斯凯里尼亚海岸影像"
+    source: "https://commons.wikimedia.org/wiki/File:Spy_Satellite_Image_of_Cyprus_Invasion_-_July_20,_1974_(Landing_Ships)_(54771023053).jpg"
+    author: "SpaceFrom.Space（解密 KH-9 HEXAGON 影像）"
+    license: "Public domain"
 - id: w-greek-junta-falls-197407
   date: '1974-07-23'
   title: 希腊军政府垮台
@@ -2494,6 +2902,12 @@
   sources:
     - 尼克松总统图书馆
     - 美国国家档案馆
+  image:
+    url: "/images/events/1974/w-nixon-resigns-197408.jpg"
+    caption: "尼克松在1974年辞职演讲前与白宫工作人员合影"
+    source: "https://commons.wikimedia.org/wiki/File%3ANixon_Resignation_Speech_1974_with_Alvin_Snyder.jpg"
+    author: "Oliver Atkins"
+    license: "Public domain"
 - id: w-ethiopia-emperor-deposed-197409
   date: '1974-09-12'
   title: 埃塞俄比亚军方废黜海尔·塞拉西
@@ -2508,6 +2922,12 @@
   sources:
     - 埃塞俄比亚国家档案
     - 维基百科
+  image:
+    url: "/images/events/1974/w-ethiopia-emperor-deposed-197409.jpg"
+    caption: "1974年9月埃塞俄比亚学生要求向文人政府过渡的示威，背景为德尔格政变后政局变化"
+    source: "https://commons.wikimedia.org/wiki/File:Ethiopian_student_demonstration,_demanding_for_transition_to_a_civilian_government,_September_of_1974.jpg"
+    author: "未署名"
+    license: "Public domain"
 - id: w-cyclone-tracy-197412
   date: '1974-12-24'
   title: 热带气旋特雷西重创达尔文
@@ -2538,6 +2958,12 @@
     - 联合国
     - Encyclopaedia Britannica
     - Wikipedia—Lebanese Civil War
+  image:
+    url: "/images/events/1975/w-lebanese-civil-war-197504.jpg"
+    caption: "1975年4月13日艾因·鲁姆马内公交车惨案影像；该事件被广泛视为黎巴嫩内战爆发导火索"
+    source: "https://commons.wikimedia.org/wiki/File:Ain_el_Remmeneh_Bus_Massacre_1975.jpg"
+    author: "未署名"
+    license: "Public domain"
 - id: w-fall-phnom-penh-197504
   date: '1975-04-17'
   title: 红色高棉占领金边
@@ -2554,6 +2980,12 @@
     - 联合国
     - Encyclopaedia Britannica
     - Wikipedia—Fall of Phnom Penh
+  image:
+    url: "/images/events/1975/w-fall-phnom-penh-197504.jpg"
+    caption: "1975年4月17日金边蒙宁旺大桥的美国空军侦察照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AAerial_reconnaissance_view_of_the_Monivong_Bridge%2C_Phnom_Penh_17_April_1975.jpg"
+    author: "United States Air Force photo 110342"
+    license: "Public domain"
 - id: w-fall-saigon-197504
   date: '1975-04-30'
   title: 西贡陷落，越南战争结束
@@ -2570,6 +3002,12 @@
     - 美国国务院历史办公室
     - Encyclopaedia Britannica
     - Wikipedia—Fall of Saigon
+  image:
+    url: /images/events/1975/w-fall-saigon-197504.jpg
+    caption: "1975年4月27日‘常风行动’西贡及金边撤离资料照片；为陷落前撤离背景，非4月30日屋顶撤离经典照片"
+    source: "https://commons.wikimedia.org/wiki/File%3A279_-_Operation_Frequent_Wind_%281975_evacuation_of_Phnom_Penh_and_Saigon%29_-_April_27%2C_1975_-_DPLA_-_6e9b1a1ce59774edf95ac59242a75d6a.jpg"
+    author: "U.S. National Archives"
+    license: "Public domain"
 - id: w-mayaguez-incident-197505
   date: '1975-05-12'
   title: 马亚圭斯号事件
@@ -2650,6 +3088,12 @@
     - OSCE
     - 美国国务院历史办公室
     - Wikipedia—Helsinki Accords
+  image:
+    url: "/images/events/1975/w-helsinki-accords-197508.jpg"
+    caption: "1975年8月1日杰拉尔德·福特总统签署《赫尔辛基最后文件》现场照片"
+    source: "https://commons.wikimedia.org/wiki/File%3APresident_Gerald_Ford_signs_the_Final_Act_of_the_Conference_on_Security_and_Cooperation_in_Europe.jpg"
+    author: "Gerald R. Ford Library"
+    license: "Public domain"
 - id: w-angola-independence-197511
   date: '1975-11-11'
   title: 安哥拉宣布独立并爆发内战
@@ -2714,6 +3158,12 @@
     - 阿根廷国家档案馆
     - Encyclopaedia Britannica
     - Wikipedia—1976 Argentine coup d'état
+  image:
+    url: "/images/events/1976/w-argentine-coup-197603.png"
+    caption: "阿根廷军政府领导人豪尔赫·魏地拉在军队阅兵式上的资料照片（1978年；作为1976年政变后军政府背景图）"
+    source: "https://commons.wikimedia.org/wiki/File:Junta_Militar_argentina_1976.png"
+    author: "Argentine government"
+    license: "CC BY 2.0"
 - id: w-soweto-uprising-197606
   date: '1976-06-16'
   title: 索韦托起义
@@ -2890,6 +3340,12 @@
     - 西班牙内政部
     - Encyclopaedia Britannica
     - Wikipedia—1977 Spanish general election
+  image:
+    url: "/images/events/1977/w-spanish-election-197706.jpg"
+    caption: "1977年西班牙大选相关资料照片（选举日为1977年6月15日）"
+    source: "https://commons.wikimedia.org/wiki/File:Elecciones_generales_de_Espa%C3%B1a_de_1977.jpg"
+    author: "ElPoss"
+    license: "CC BY-SA 4.0"
 - id: w-djibouti-independence-197706
   date: '1977-06-27'
   title: 吉布提独立
@@ -2954,6 +3410,12 @@
     - 美国国务院历史办公室
     - 巴拿马政府
     - Wikipedia—Torrijos–Carter Treaties
+  image:
+    url: "/images/events/1977/w-panama-canal-treaties-197709.jpg"
+    caption: "1977年9月7日美国总统吉米·卡特与巴拿马领导人奥马尔·托里霍斯签署巴拿马运河条约后握手"
+    source: "https://commons.wikimedia.org/wiki/File:Jimmy_Carter_and_General_Omar_Torrijos_signing_the_Panama_Canal_Treaty.jpg"
+    author: "White House photo"
+    license: "Public domain"
 - id: w-sadat-jerusalem-197711
   date: '1977-11-19'
   title: 埃及总统萨达特访问耶路撒冷
@@ -2970,6 +3432,12 @@
     - 埃及外交部
     - Encyclopaedia Britannica
     - Wikipedia—Anwar Sadat's visit to Israel
+  image:
+    url: "/images/events/1977/w-sadat-jerusalem-197711.jpg"
+    caption: "安瓦尔·萨达特肖像（作为1977年访问耶路撒冷及埃以和平进程的背景人物资料图）"
+    source: "https://commons.wikimedia.org/wiki/File:Anwar_Sadat_cropped.jpg"
+    author: "Unknown author"
+    license: "Public domain"
 - id: w-malaysia-flight-653-197712
   date: '1977-12-04'
   title: 马来西亚航空653号航班空难
@@ -3066,6 +3534,12 @@
     - 美国国务院历史办公室
     - Encyclopaedia Britannica
     - Wikipedia—Camp David Accords
+  image:
+    url: "/images/events/1978/w-camp-david-accords-197809.jpg"
+    caption: "戴维营 Laurel Cabin（2012年照片；作为1978年戴维营协议签署地点的背景资料图）"
+    source: "https://commons.wikimedia.org/wiki/File:Laurel_Cabin,_Camp_David_2012.jpg"
+    author: "White House"
+    license: "Public domain"
 - id: w-pope-john-paul-ii-elected-197810
   date: '1978-10-16'
   title: 若望·保禄二世当选教皇
@@ -3130,6 +3604,12 @@
     - 联合国
     - Encyclopaedia Britannica
     - Wikipedia—Cambodian–Vietnamese War
+  image:
+    url: /images/events/1978/w-vietnam-invades-cambodia-197812.png
+    caption: "越南入侵柬埔寨（1978年12月至1979年1月）战事示意图；地图为事后绘制，非12月25日战场照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AVietnamese_invasion_of_Cambodia.png"
+    author: BorysMapping
+    license: "CC BY-SA 4.0"
 - id: w-shah-leaves-iran-197901
   date: '1979-01-16'
   title: 伊朗国王离境
@@ -3162,6 +3642,12 @@
     - 伊朗政府
     - Encyclopaedia Britannica
     - Wikipedia—Iranian Revolution
+  image:
+    url: "/images/events/1979/w-iranian-revolution-197902.jpg"
+    caption: "1979年2月德黑兰武装革命者资料照片（伊朗革命胜利背景图）"
+    source: "https://commons.wikimedia.org/wiki/File%3AArmed_Revolutionaries_drives_a_TAVANIR_%28Iran_Power_Generation_and_Transmission_Company%29_vehicle%2C_Tehran_-_February_1979.jpg"
+    author: "khabaronline.ir（作者未注明）"
+    license: "Public domain"
 - id: w-voyager-1-jupiter-197903
   date: '1979-03-05'
   title: “旅行者1号”飞掠木星
@@ -3194,6 +3680,12 @@
     - 美国国务院历史办公室
     - 联合国
     - Wikipedia—Egypt–Israel peace treaty
+  image:
+    url: "/images/events/1979/w-egypt-israel-peace-treaty-197903.jpg"
+    caption: "1979年3月26日卡特、萨达特与贝京在华盛顿签署埃以和平条约"
+    source: "https://commons.wikimedia.org/wiki/File:Carter,_Sadat,_and_Begin_at_the_Peace_Treaty_Signing,_March_26,_1979_(10729561495).jpg"
+    author: "Central Intelligence Agency"
+    license: "Public domain"
 - id: w-three-mile-island-197903
   date: '1979-03-28'
   title: 三里岛核事故
@@ -3290,6 +3782,12 @@
     - 联合国
     - Encyclopaedia Britannica
     - Wikipedia—Soviet–Afghan War
+  image:
+    url: "/images/events/1979/w-soviet-invasion-afghanistan-197912.png"
+    caption: "苏联入侵阿富汗示意地图（事件背景资料图，不冒充1979年12月24日现场照片）"
+    source: "https://commons.wikimedia.org/wiki/File:Invasion_of_Afghanistan.png"
+    author: "The Great Mule of Eupatoria"
+    license: "CC0"
 - id: w-zimbabwe-independence-198004
   date: '1980-04-18'
   title: 津巴布韦宣告独立
@@ -3302,6 +3800,7 @@
     - 民生
   sources:
     - 维基百科
+    - 新华网
     - 新华网
 - id: w-iran-hostage-rescue-fail-198004
   date: '1980-04-24'
@@ -3343,6 +3842,12 @@
   sources:
     - 维基百科
     - 世界卫生组织
+  image:
+    url: "/images/events/1980/w-smallpox-eradicated-198005.jpg"
+    caption: "1980年美国疾控中心工作人员阅读全球根除天花消息的资料照片"
+    source: "https://commons.wikimedia.org/wiki/File:Directors_of_Global_Smallpox_Eradication_Program.jpg"
+    author: "Centers for Disease Control and Prevention（CDC）"
+    license: "Public domain"
 - id: w-st-helens-eruption-198005
   date: '1980-05-18'
   title: 美国圣海伦斯火山爆发
@@ -3383,6 +3888,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1980/w-solidarity-founded-198008.jpg"
+    caption: "格但斯克列宁船厂罢工领袖列赫·瓦文萨（1980年8月31日）"
+    source: "https://commons.wikimedia.org/wiki/File:Stakingsleider_Lech_Walesa_deelt_handtekeningen_uit,_Bestanddeelnr_253-8300.jpg"
+    author: "未知（Anefo / 荷兰国家档案馆）"
+    license: "CC0 1.0"
 - id: w-iran-iraq-war-198009
   date: '1980-09-22'
   title: 两伊战争爆发
@@ -3397,6 +3908,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/1980/w-iran-iraq-war-198009.jpg
+    caption: 1980年9月22日伊拉克空袭德黑兰梅赫拉巴德机场后的现场影像（战争爆发当日）
+    source: https://commons.wikimedia.org/wiki/File:Iran_Iraq_War_Start_Attack_on_Tehran_Airport-1980-09-22.jpg
+    author: Mhsheikholeslami
+    license: CC BY-SA 4.0
 - id: w-reagan-elected-198011
   date: '1980-11-04'
   title: 里根当选美国第40任总统
@@ -3462,6 +3979,12 @@
   sources:
     - 维基百科
     - NASA
+  image:
+    url: "/images/events/1981/w-columbia-sts1-198104.jpg"
+    caption: "哥伦比亚号航天飞机升空资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ASpace_Shuttle_Columbia_launching.jpg"
+    author: "NASA"
+    license: "Public domain"
 - id: w-jp2-shot-198105
   date: '1981-05-13'
   title: 教皇约翰·保罗二世在圣彼得广场遇刺
@@ -3489,6 +4012,12 @@
   sources:
     - 维基百科
     - 美国疾控中心
+  image:
+    url: "/images/events/1981/w-aids-first-cdc-198106.png"
+    caption: "1981年7月3日美国CDC《发病率与死亡率周报》封面，记录艾滋病早期病例，是当时首批重大公共信息之一"
+    source: "https://commons.wikimedia.org/wiki/File:Mmwr-aids-July1981-report-101.png"
+    author: "US government / Centers for Disease Control and Prevention"
+    license: "Public domain"
 - id: w-mtv-launch-198108
   date: '1981-08-01'
   title: 美国MTV音乐电视频道开播
@@ -3516,6 +4045,12 @@
   sources:
     - 维基百科
     - IBM
+  image:
+    url: "/images/events/1981/w-ibm-pc-5150-198108.jpg"
+    caption: "IBM 5150 型个人电脑（1981年机型资料照片）"
+    source: "https://commons.wikimedia.org/wiki/File%3AIBM_PC_1981_makffm.jpg"
+    author: "FA2010"
+    license: "Public domain"
 - id: w-sadat-assassination-198110
   date: '1981-10-06'
   title: 埃及总统萨达特阅兵时遇刺身亡
@@ -3660,6 +4195,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1983/w-arpanet-tcpip-198301.jpg"
+    caption: "1983年8月25日 ARPANET 网络拓扑图（TCP/IP 切换后的网络背景资料）"
+    source: "https://commons.wikimedia.org/wiki/File%3AARPANET_as_of_Aug_25%2C_1983_-_BBN_map_-_DSC00125.JPG"
+    author: "BBN Technologies, Cambridge, Massachusetts"
+    license: "Public domain"
 - id: w-reagan-sdi-198303
   date: '1983-03-23'
   title: 里根总统提出"战略防御倡议"（星球大战）
@@ -3765,6 +4306,12 @@
   sources:
     - 维基百科
     - 苹果公司
+  image:
+    url: "/images/events/1984/w-macintosh-launch-198401.jpg"
+    caption: "史蒂夫·乔布斯与 Macintosh 电脑合影（1984年1月资料照片）"
+    source: "https://commons.wikimedia.org/wiki/File%3ASteve_Jobs_and_Macintosh_computer%2C_January_1984%2C_by_Bernard_Gotfryd-_border_cropped.jpg"
+    author: "Bernard Gotfryd"
+    license: "Public domain"
 - id: w-andropov-death-chernenko-198402
   date: '1984-02-13'
   title: 苏联领导人安德罗波夫逝世，契尔年科继任
@@ -3830,6 +4377,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1984/w-indira-gandhi-assassination-198410.png"
+    caption: "英迪拉·甘地官方肖像（作为1984年遇刺事件的背景人物资料图）"
+    source: "https://commons.wikimedia.org/wiki/File:Indira_Gandhi_official_portrait.png"
+    author: "Prime Minister's Office (India)"
+    license: "GODL-India"
 - id: w-bhopal-disaster-198412
   date: '1984-12-03'
   title: 印度博帕尔农药厂毒气泄漏灾难
@@ -3844,6 +4397,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1984/w-bhopal-disaster-198412.jpg"
+    caption: "博帕尔农药厂遗址（2010年3月15日拍摄，灾难现场后续记录）"
+    source: "https://commons.wikimedia.org/wiki/File:Bhopal_Plant_6.JPG"
+    author: "Julian Nyča"
+    license: "CC BY-SA 3.0"
 - id: w-gorbachev-general-secretary-198503
   date: '1985-03-11'
   title: 戈尔巴乔夫当选苏共中央总书记
@@ -3858,6 +4417,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1985/w-gorbachev-general-secretary-198503.jpg"
+    caption: "米哈伊尔·戈尔巴乔夫肖像（1985年8月9日；作为其当选苏共中央总书记后的同期人物资料图）"
+    source: "https://commons.wikimedia.org/wiki/File:RIAN_archive_850809_General_Secretary_of_the_CPSU_CC_M._Gorbachev_(crop).jpg"
+    author: "Vladimir Vyatkin / RIA Novosti"
+    license: "CC BY-SA 3.0"
 - id: w-live-aid-concert-198507
   date: '1985-07-13'
   title: 全球Live Aid慈善摇滚演唱会举行
@@ -3963,6 +4528,12 @@
   sources:
     - 维基百科
     - NASA
+  image:
+    url: "/images/events/1986/w-challenger-disaster-198601.jpg"
+    caption: "挑战者号航天飞机升空后爆炸的资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AChallenger_explosion.jpg"
+    author: "Kennedy Space Center"
+    license: "Public domain"
 - id: w-people-power-philippines-198602
   date: '1986-02-25'
   title: 菲律宾马科斯政权倒台，阿基诺夫人就任总统
@@ -4002,6 +4573,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1986/w-chernobyl-disaster-198604.jpg"
+    caption: "1986年切尔诺贝利核事故现场资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ATatiana_Tsymbal_Chernobyl_2.jpg"
+    author: "State Committee for Television and Radio-broadcasting (Soviet Ukraine Government body)"
+    license: "Public domain"
 - id: w-maradona-hand-of-god-198606
   date: '1986-06-22'
   title: 马拉多纳"上帝之手"率阿根廷夺世界杯
@@ -4119,6 +4696,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1987/w-black-monday-198710.png"
+    caption: "道琼斯指数在1987年黑色星期一前后走势（1987年7月19日至1988年1月19日数据）"
+    source: "https://commons.wikimedia.org/wiki/File:Black_Monday_Dow_Jones.png"
+    author: "Edward"
+    license: "Public domain"
 - id: w-king-cross-fire-198711
   date: '1987-11-18'
   title: 伦敦国王十字地铁站发生大火
@@ -4146,6 +4729,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1987/w-inf-treaty-198712.jpg"
+    caption: "1987年12月8日里根与戈尔巴乔夫在白宫东厅签署《中导条约》"
+    source: "https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_signing.jpg"
+    author: "White House Photographic Office"
+    license: "Public domain"
 - id: w-first-intifada-198712
   date: '1987-12-09'
   title: 巴勒斯坦被占领土爆发第一次起义
@@ -4277,6 +4866,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1988/w-lockerbie-bombing-198812.jpg"
+    caption: "洛克比空难坠机现场调查照片（1990年8月6日；Air Accident Investigation Branch调查资料）"
+    source: "https://commons.wikimedia.org/wiki/File:Pan_Am_Flight_103._Crashed_Lockerbie,_Scotland,_21_December_1988.jpg"
+    author: "Air Accident Investigation Branch"
+    license: "OGL 2"
 - id: w-soviet-afghanistan-withdrawal-complete-198902
   date: '1989-02-15'
   title: 苏联完成从阿富汗撤军
@@ -4292,6 +4887,12 @@
     - 新华网
     - 联合国
     - 维基百科
+  image:
+    url: "/images/events/1989/w-soviet-afghanistan-withdrawal-complete-198902.jpg"
+    caption: "苏军最后一支部队于阿富汗撤军完成日越过边界（1989年2月15日）"
+    source: "https://commons.wikimedia.org/wiki/File:RIAN_archive_58833_Withdrawal_of_Soviet_troops_from_Afghanistan.jpg"
+    author: "A. Solomonov / RIA Novosti archive"
+    license: "CC BY-SA 3.0"
 - id: w-exxon-valdez-oil-spill-198903
   date: '1989-03-24'
   title: “埃克森·瓦尔迪兹”号发生严重漏油事故
@@ -4320,6 +4921,12 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: "/images/events/1989/w-polish-semi-free-election-198906.svg"
+    caption: "1989年波兰议会选举各选区结果图（首轮竞争性席位）"
+    source: "https://commons.wikimedia.org/wiki/File:1989_Polish_parliamentary_election.svg"
+    author: "沁水湾"
+    license: "CC BY-SA 4.0"
 - id: w-baltic-way-198908
   date: '1989-08-23'
   title: 爱沙尼亚、拉脱维亚和立陶宛民众组成“波罗的海之路”
@@ -4363,6 +4970,12 @@
     - 德国联邦政府
     - 新华网
     - 维基百科
+  image:
+    url: "/images/events/1989/w-berlin-wall-opens-198911.jpg"
+    caption: "1989年11月10日柏林查奥塞街边境口岸，民主德国民众依新旅行规定通过边境"
+    source: "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1989-1110-041,_Berlin,_Grenz%C3%BCbergang_Invalidenstra%C3%9Fe.jpg"
+    author: "Ralph Hirschberger / German Federal Archive"
+    license: "CC BY-SA 3.0 DE"
 - id: w-velvet-revolution-198911
   date: '1989-11-17'
   title: 捷克斯洛伐克天鹅绒革命开始
@@ -4472,6 +5085,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1990/w-gulf-crisis-199008.jpg"
+    caption: "1990年8月2日美国总统乔治·H·W·布什就伊拉克入侵科威特与沙特国王法赫德通电话"
+    source: "https://commons.wikimedia.org/wiki/File:President_George_H._W._Bush_speaks_to_King_Fahd_of_Saudi_Arabia_via_telephone_from_his_suite_at_the_Catto_Ranch_in_Aspen,_Colorado.jpg"
+    author: "George H. W. Bush Presidential Library and Museum"
+    license: "Public domain"
 - id: w-germany-reunification-199010
   date: '1990-10-03'
   title: 两德正式统一，东德并入联邦德国
@@ -4486,6 +5105,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1990/w-germany-reunification-199010.jpg"
+    caption: "1990年10月3日德国统一日资料照片（日期对应的德国统一历史影像）"
+    source: "https://commons.wikimedia.org/wiki/File%3A0000386_representation_354_original.tif"
+    author: "Merit Schambach"
+    license: "CC BY-SA 3.0"
 - id: w-soviet-fall-1991
   date: '1991'
   title: 苏联解体
@@ -4496,6 +5121,12 @@
   importance: 5
   summary: 苏联各加盟共和国相继独立，冷战格局随之终结，世界进入一超多强时代。
   confidence: 确定
+  image:
+    url: "/images/events/1991/w-soviet-fall-1991.jpg"
+    caption: "1991年8月苏联政变期间莫斯科革命广场的装甲车；作为苏联解体过程的现场背景记录"
+    source: "https://commons.wikimedia.org/wiki/File:1991_coup_attempt5.jpg"
+    author: "Almog"
+    license: "Public domain"
 - id: w-web-1991
   date: '1991'
   title: 万维网诞生
@@ -4520,6 +5151,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1991/w-gulf-war-storm-199101.jpg"
+    caption: "1991年‘沙漠风暴’行动中的美国海军 F-14A 战机资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AF-14A_VF-33_Operation_Desert_Storm_Strike_Package_Tanking.jpg"
+    author: "US Navy"
+    license: "Public domain"
 - id: w-yugoslavia-breakup-199106
   date: '1991-06-25'
   title: 斯洛文尼亚与克罗地亚宣布独立，南斯拉夫开始解体
@@ -4576,6 +5213,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1991/w-ussr-dissolution-199112.jpg"
+    caption: "苏联国旗资料照片（1991年；作为12月解体及国旗降下事件的背景图）"
+    source: "https://commons.wikimedia.org/wiki/File:Soviet_flag_(4388333786).jpg"
+    author: "fdecomite"
+    license: "CC BY 2.0"
 - id: w-maastricht-signing-199202
   date: '1992-02-07'
   title: 《马斯特里赫特条约》正式签署，欧洲联盟即将成立
@@ -4726,6 +5369,12 @@
   sources:
     - 维基百科
     - 欧盟委员会
+  image:
+    url: "/images/events/1993/w-eu-founded-199311.jpg"
+    caption: "《马斯特里赫特条约》最终法案比利时代表签名页（条约1992年签署、1993年11月1日生效）"
+    source: "https://commons.wikimedia.org/wiki/File:Maastricht_Signature_Belgium.jpg"
+    author: "Unknown author"
+    license: "Public domain"
 - id: w-nafta-effective-199401
   date: '1994-01-01'
   title: 《北美自由贸易协定》正式生效
@@ -4755,6 +5404,12 @@
   sources:
     - 维基百科
     - 联合国
+  image:
+    url: "/images/events/1994/w-rwanda-genocide-199404.jpg"
+    caption: "1994年8月卢旺达难民在戈马进入难民营；为大屠杀后难民危机的历史背景照片"
+    source: "https://commons.wikimedia.org/wiki/File:A_stream_of_Rwandan_refugees,_carrying_all_their_possession,_walk_into_Goma_after_a_civil_war_erupted_in_their_country._They_joined_over_1.2_million_other_refugees_who_fled_into_the_-_DPLA_-_1937159b182bba0c783c0c6e39f33159.jpeg"
+    author: "Department of Defense. American Forces Information Service. Defense Visual Information Center"
+    license: "Public domain"
 - id: w-mandela-elected-199404
   date: '1994-04-27'
   title: 南非举行首次多种族大选，曼德拉当选总统
@@ -4770,6 +5425,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1994/w-mandela-elected-199404.jpg"
+    caption: "纳尔逊·曼德拉参加1994年南非大选投票"
+    source: "https://commons.wikimedia.org/wiki/File%3AMandela_voting_in_1994.jpg"
+    author: "Paul Weinberg"
+    license: "CC BY-SA 3.0"
 - id: w-channel-tunnel-199405
   date: '1994-05-06'
   title: 英法海底隧道正式通车
@@ -4812,6 +5473,12 @@
   sources:
     - 世界贸易组织
     - 维基百科
+  image:
+    url: "/images/events/1995/w-wto-founded-199501.svg"
+    caption: "世界贸易组织创始成员（1995年1月1日）分布图"
+    source: "https://commons.wikimedia.org/wiki/File:WTO_members.svg"
+    author: "Emilfaro"
+    license: "Public domain"
 - id: w-okc-bombing-199504
   date: '1995-04-19'
   title: 美国俄克拉荷马城联邦大楼发生特大爆炸案
@@ -4977,6 +5644,12 @@
   sources:
     - 维基百科
     - 国际货币基金组织
+  image:
+    url: "/images/events/1997/w-asian-financial-crisis-199707.png"
+    caption: "亚洲金融危机波及范围示意图（事件背景地图，不冒充1997年7月2日泰铢汇率现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Asian_Financial_Crisis_EN.png"
+    author: "Bamse; derivative work by PatrickFlaherty"
+    license: "CC BY-SA 3.0"
 - id: w-pathfinder-mars-199707
   date: '1997-07-04'
   title: 美国"火星探路者"号成功着陆火星
@@ -5103,6 +5776,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1999/w-kosovo-war-199903.jpg"
+    caption: "北约空袭行动中塞尔维亚普罗库普列通信设施的轰炸损毁评估照片（1999年3月30日）"
+    source: "https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_990330-O-0000M-001.jpg"
+    author: "U.S. Department of Defense"
+    license: "Public domain"
 - id: w-turkey-izmit-earthquake-199908
   date: '1999-08-17'
   title: 土耳其伊兹米特发生7.6级大地震，逾1.7万人遇难
@@ -5158,6 +5837,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/1999/w-yeltsin-resign-199912.jpg"
+    caption: "叶利钦在1999年12月31日辞职当天的资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ABoris_Yeltsin_31_December_1999.jpg"
+    author: "Presidential Press and Information Office"
+    license: "CC BY 4.0"
 - id: w-panama-canal-handover-199912
   date: '1999-12-31'
   title: 巴拿马收回巴拿马运河主权，结束美国长达近百年控制
@@ -5186,6 +5871,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2000/w-putin-elected-president-200003.jpg"
+    caption: "普京在2000年3月26日俄罗斯总统选举期间回答记者提问（当日竞选资料照片）"
+    source: "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_in_elections_(2000-03-26)_01.jpg"
+    author: "俄罗斯总统新闻服务"
+    license: "CC BY 4.0"
 - id: w-inter-korean-summit-200006
   date: '2000-06-13'
   title: 朝韩首脑在平壤举行历史性首次会晤（金大中与金正日会晤）
@@ -5201,6 +5892,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2000/w-inter-korean-summit-200006.jpg"
+    caption: "2000年朝韩首脑会晤期间金大中与金正日拥抱（2000年6月13日）"
+    source: "https://commons.wikimedia.org/wiki/File:Kim_Dae-jung_and_Kim_Jong-il_hugging_at_the_2000_Inter-Korean_Summit.jpg"
+    author: "韩国总统档案馆"
+    license: "CC BY-SA 4.0"
 - id: w-air-france-concorde-crash-200007
   date: '2000-07-25'
   title: 法国航空协和式超音速客机在巴黎起飞时坠毁，致113人遇难
@@ -5216,6 +5913,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2000/w-air-france-concorde-crash-200007.jpg"
+    caption: "法国航空协和客机空难事故地点及纪念碑（2014年8月29日拍摄）"
+    source: "https://commons.wikimedia.org/wiki/File:Concorde_Crash_site_%26_memorial_(27818400257).jpg"
+    author: "Mike McBey"
+    license: "CC BY 2.0"
 - id: w-sydney-olympics-200009
   date: '2000-09-15'
   title: 第27届夏季奥林匹克运动会在澳大利亚悉尼隆重开幕
@@ -5230,6 +5933,12 @@
   sources:
     - 国际奥委会
     - 维基百科
+  image:
+    url: "/images/events/2000/w-sydney-olympics-200009.jpg"
+    caption: "2000年9月15日悉尼奥运会开幕式烟火影像"
+    source: "https://commons.wikimedia.org/wiki/File:Sydney_Olympics_Opening_Ceremony.jpg"
+    author: "Barry Thomas"
+    license: "CC BY 2.0"
 - id: w-iss-first-resident-crew-200011
   date: '2000-11-02'
   title: 国际空间站（ISS）迎来首批长期常驻宇航员（远征1号）
@@ -5245,6 +5954,12 @@
   sources:
     - NASA
     - 维基百科
+  image:
+    url: "/images/events/2000/w-iss-first-resident-crew-200011.jpg"
+    caption: "远征1号三名宇航员在国际空间站曙光号舱段内（2000年12月4日）"
+    source: "https://commons.wikimedia.org/wiki/File:ISS_Expedition_1_crew_portrait.jpg"
+    author: "NASA"
+    license: "Public domain"
 - id: w-us-presidential-election-200011
   date: '2000-11-07'
   title: 美国总统大选小布什与戈尔陷入佛罗里达计票争议，最高法院裁决小布什胜选
@@ -5259,6 +5974,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2000/w-us-presidential-election-200011.svg"
+    caption: "2000年美国总统大选佛罗里达州逐选区结果图（计票争议核心州）"
+    source: "https://commons.wikimedia.org/wiki/File:FL_President_2000.svg"
+    author: "OrcaLord"
+    license: "CC BY-SA 4.0"
 - id: w-wikipedia-launched-200101
   date: '2001-01-15'
   title: 吉米·威尔士与拉里·桑格在网络上正式创办维基百科（Wikipedia）
@@ -5273,6 +5994,12 @@
     - 历史转折
   sources:
     - 维基百科
+  image:
+    url: "/images/events/2001/w-wikipedia-launched-200101.png"
+    caption: "Wikipedia早期标志（2000—2001年设计/使用，作为2001年上线初期的视觉记录）"
+    source: "https://commons.wikimedia.org/wiki/File:Old_wikipedia_logo.png"
+    author: "Bjørn Smestad"
+    license: "CC BY-SA 3.0"
 - id: w-george-w-bush-inauguration-200101
   date: '2001-01-20'
   title: 乔治·W·布什宣誓就任美国第43任总统
@@ -5287,6 +6014,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2001/w-george-w-bush-inauguration-200101.jpg"
+    caption: "2001年1月20日美国最高法院首席大法官威廉·伦奎斯特为乔治·W·布什主持首次总统宣誓"
+    source: "https://commons.wikimedia.org/wiki/File:Supreme_Court_Chief_Justice_William_Rehnquist_swears_in_President_George_W._Bush_to_his_first_term_of_office.jpg"
+    author: "Eric Draper / White House Photo"
+    license: "Public domain"
 - id: w-gujarat-earthquake-200101
   date: '2001-01-26'
   title: 印度古吉拉特邦发生7.7级强震，造成逾两万人遇难
@@ -5301,6 +6034,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2001/w-gujarat-earthquake-200101.jpg"
+    caption: "2001年1月印度古吉拉特地震后，以色列国防军救援队在灾区设立野战医院的资料照片"
+    source: "https://commons.wikimedia.org/wiki/File:IDF_Aid_Mission_to_India,_January_2001_(11047435793).jpg"
+    author: "Israel Defense Forces Spokesperson's Unit"
+    license: "CC BY-SA 3.0"
 - id: w-911-attacks-200109
   date: '2001-09-11'
   title: 恐怖分子劫持客机撞击纽约世贸中心与五角大楼（九一一事件），造成近3000人遇难
@@ -5317,8 +6056,11 @@
     - 维基百科
     - 新华网
   image:
-    url: /images/events/2001/september_11_attacks_2001.jpg
-    caption: 2001年9月11日美国纽约世贸中心与五角大楼遭遇连环恐怖袭击（“9·11”事件），改变全球反恐与国际安全格局
+    url: "/images/events/2001/w-911-attacks-200109.jpg"
+    caption: "2001年9月11日纽约世贸中心起火资料照片（自由女神像方向视角）"
+    source: "https://commons.wikimedia.org/wiki/File%3ANational_Park_Service_9-11_Statue_of_Liberty_and_WTC_fire.jpg"
+    author: "National Park Service"
+    license: "Public domain"
 - id: w-afghanistan-war-begins-200110
   date: '2001-10-07'
   title: 美英军队发动"持久自由行动"空袭塔利班，阿富汗战争全面爆发
@@ -5334,6 +6076,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2001/w-afghanistan-war-begins-200110.jpg"
+    caption: "2001年10月7日美国海军从菲律宾海号巡洋舰发射战斧导弹，持久自由行动开始"
+    source: "https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_011007-N-1523C-001.jpg"
+    author: "Master Chief Petty Officer Terry Cosgrove / U.S. Navy"
+    license: "Public domain"
 - id: w-kofi-annan-un-nobel-200110
   date: '2001-10-12'
   title: 联合国及其秘书长科菲·安南共同荣获诺贝尔和平奖
@@ -5364,6 +6112,12 @@
     - 欧洲央行
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2002/w-euro-cash-launch-200201.jpg
+    caption: 葡萄牙欧元硬币资料图（标注发行日2002年1月1日；用于欧元现金启动的货币实物背景）
+    source: https://commons.wikimedia.org/wiki/File:1_Euro,_Portugal.jpg
+    author: 未知（来源：European Central Bank）
+    license: CC BY 4.0
 - id: w-world-cup-korea-japan-200205
   date: '2002-05-31'
   title: 第17届世界杯足球赛在韩国和日本开幕，巴西队第五次夺冠
@@ -5379,6 +6133,12 @@
   sources:
     - FIFA
     - 维基百科
+  image:
+    url: /images/events/2002/w-world-cup-korea-japan-200205.jpg
+    caption: 2002年韩日世界杯开幕式烟花与首尔世界杯体育场（2002年5月31日；与开幕日一致）
+    source: https://commons.wikimedia.org/wiki/File:2002년_한·일_월드컵-개막식-불꽃놀이_(1).jpg
+    author: 문덕관 기증 / 韩国国立民俗博物馆民俗档案
+    license: KOGL Type 1（韩国开放政府许可，要求署名）
 - id: w-icc-statute-effective-200207
   date: '2002-07-01'
   title: 《罗马规约》生效，国际刑事法院（ICC）在海牙正式成立
@@ -5394,6 +6154,12 @@
   sources:
     - ICC
     - 维基百科
+  image:
+    url: /images/events/2002/w-icc-statute-effective-200207.svg
+    caption: 国际刑事法院标志资料图（用于2002年7月1日《罗马规约》生效及法院成立的机构背景；非成立日现场照片）
+    source: https://commons.wikimedia.org/wiki/File:International_Criminal_Court_logo.svg
+    author: Afrank99（后由 Commons 用户维护）
+    license: Public domain（标志不具独创性；各地标志使用限制另行适用）
 - id: w-switzerland-joins-un-200209
   date: '2002-09-10'
   title: 瑞士联邦正式加入联合国，成为第190个成员国
@@ -5423,6 +6189,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2002/w-bali-bombings-200210.jpg"
+    caption: "巴厘岛库塔2002年爆炸案遇难者纪念碑（2022年拍摄）"
+    source: "https://commons.wikimedia.org/wiki/File:Memorial_to_the_victims_of_the_2002_Bali_bombings,_Kuta,_20220827_1143_1198.jpg"
+    author: "Jakub Hałun"
+    license: "CC BY-SA 4.0"
 - id: w-moscow-theater-hostage-crisis-200210
   date: '2002-10-23'
   title: 车臣武装分子劫持莫斯科轴承厂剧院近千名人质，特种部队强攻解救
@@ -5430,6 +6202,12 @@
   importance: 5
   summary: 40余名车臣武装分子劫持850余名人质，俄特种部队使用麻醉气体解救，造成130名人质及全部恐怖分子死亡，震惊世界。
   confidence: 确定
+  image:
+    url: /images/events/2002/w-moscow-theater-hostage-crisis-200210.jpg
+    caption: "普京于2002年10月26日听取杜布罗夫卡剧院人质事件处置情况的资料照片；为事件结束日官方反应，非剧院突袭现场"
+    source: "https://commons.wikimedia.org/wiki/File%3APutin%27s_reaction_on_Nord-Ost_%282002-10-26%29.jpg"
+    author: "Пресс-служба Президента России / Kremlin.ru"
+    license: "CC BY 3.0 / CC BY 4.0"
 - id: w-space-shuttle-columbia-disaster-200302
   date: '2003-02-01'
   title: 美国"哥伦比亚"号航天飞机返回重返大气层时解体失事，7名宇航员全部遇难
@@ -5446,6 +6224,12 @@
     - NASA
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2003/w-space-shuttle-columbia-disaster-200302.jpg"
+    caption: "2003年2月1日哥伦比亚号航天飞机在重返大气层时的地面观测影像"
+    source: "https://commons.wikimedia.org/wiki/File:STS-107_Columbia_entry_imaged_from_ground.jpg"
+    author: "USAF / NASA"
+    license: "Public domain"
 - id: w-iraq-war-breaks-out-200303
   date: '2003-03-20'
   title: 美英联军空袭巴格达爆发伊拉克战争，推翻萨达姆政权
@@ -5462,6 +6246,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2003/w-iraq-war-breaks-out-200303.jpg
+    caption: 华盛顿民众在伊拉克战争开始当日举行反战游行（2003年3月20日；非巴格达空袭现场）
+    source: https://commons.wikimedia.org/wiki/File:03.StudentWalkOut.WDC.20March2003_(16545345585).jpg
+    author: Elvert Barnes
+    license: CC BY-SA 2.0
 - id: w-concorde-retired-200310
   date: '2003-10-24'
   title: 协和式超音速客机（Concorde）完成最后一次商业飞行，正式退役
@@ -5506,6 +6296,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2003/w-saddam-captured-200312.jpg"
+    caption: "萨达姆被捕相关的蜘蛛洞资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ASaddamSpiderHole.jpg"
+    author: "Unknown author"
+    license: "Public domain"
 - id: w-madrid-train-bombings-200403
   date: '2004-03-11'
   title: 西班牙马德里发生连环列车爆炸案（3·11爆炸案），造成193人死亡
@@ -5521,6 +6317,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2004/w-madrid-train-bombings-200403.jpg"
+    caption: "马德里3·11爆炸案十三周年在阿托查举行的官方悼念活动（2017年资料照片，非袭击当天现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Homenaje_a_las_v%C3%ADctimas_de_los_atentados_del_11_de_Marzo_de_2004_en_Atocha_02.jpg"
+    author: "Cristina Cifuentes"
+    license: "CC BY 2.0"
 - id: w-eu-expansion-10-countries-200405
   date: '2004-05-01'
   title: 欧盟迎来史上最大规模东扩，波兰等中东欧10国正式加入欧盟
@@ -5537,6 +6339,12 @@
     - 欧盟
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2004/w-eu-expansion-10-countries-200405.svg
+    caption: 欧盟2004年东扩成员变化图（深蓝为原成员，黄色为新增10国）
+    source: https://commons.wikimedia.org/wiki/File:EU25-2004_European_Union_map_enlargement.svg
+    author: Kolja21（基于Júlio Reis作品的衍生图）
+    license: CC BY-SA 2.5
 - id: w-beslan-school-siege-200409
   date: '2004-09-01'
   title: 俄罗斯北奥塞梯别斯兰市发生恐怖分子劫持学校人质危机，致334人遇难
@@ -5552,6 +6360,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2004/w-beslan-school-siege-200409.jpg"
+    caption: "别斯兰人质危机遇难者纪念资料照片（2008年拍摄）"
+    source: "https://commons.wikimedia.org/wiki/File:Beslan_foto_pogibshih.jpg"
+    author: "Leon"
+    license: "CC BY-SA 3.0"
 - id: w-george-w-bush-re-elected-200411
   date: '2004-11-02'
   title: 共和党候选人乔治·W·布什在总统大选中击败约翰·克里成功连任
@@ -5566,6 +6380,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2004/w-george-w-bush-re-elected-200411.jpg
+    caption: 布什在2004年总统选举结果公布后接到克里致电承认败选（2004年11月3日；为11月2日投票日后的官方资料图）
+    source: https://commons.wikimedia.org/wiki/File:Bush_Oval_Office_phone_call.jpg
+    author: Eric Draper / White House
+    license: Public domain（美国总统行政办公室公务摄影）
 - id: w-yasser-arafat-death-200411
   date: '2004-11-11'
   title: 巴勒斯坦民族权力机构主席亚西尔·阿拉法特在巴黎逝世
@@ -5581,6 +6401,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2004/w-yasser-arafat-death-200411.jpg
+    caption: 阿拉法特葬礼在开罗举行（2004年11月12日；为11月11日逝世后的葬礼资料图）
+    source: https://commons.wikimedia.org/wiki/File:Arafat%27s_Cairo_Funeral_017.jpeg
+    author: Hossam el-Hamalawy
+    license: CC BY-SA 2.0
 - id: w-ukraine-orange-revolution-200411
   date: '2004-11-22'
   title: 乌克兰爆发"橙色革命"，争议大选后尤先科最终当选总统
@@ -5595,6 +6421,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2004/w-ukraine-orange-revolution-200411.jpg"
+    caption: "橙色革命首日基辅示威现场（2004年11月22日）"
+    source: "https://commons.wikimedia.org/wiki/File:Morning_first_day_of_Orange_Revolution.jpg"
+    author: "Serhiy"
+    license: "CC BY-SA 3.0"
 - id: w-indian-ocean-tsunami-200412
   date: '2004-12-26'
   title: 印度洋发生9.1级特大地震并引发海啸，造成约22.7万人遇难
@@ -5612,6 +6444,12 @@
     - 维基百科
     - 联合国
     - 新华网
+  image:
+    url: "/images/events/2004/w-indian-ocean-tsunami-200412.jpg"
+    caption: "2004年12月26日印度洋海啸的历史照片；拍摄日期与灾害发生日一致"
+    source: "https://commons.wikimedia.org/wiki/File:2004-tsunami.jpg"
+    author: "David Rydevik"
+    license: "Public domain"
 - id: w-kyoto-protocol-effective-200502
   date: '2005-02-16'
   title: 减少温室气体排放的《京都议定书》正式生效
@@ -5627,6 +6465,12 @@
   sources:
     - 联合国
     - 维基百科
+  image:
+    url: "/images/events/2005/w-kyoto-protocol-effective-200502.svg"
+    caption: "《京都议定书》缔约方状态图（全球气候治理背景资料图）"
+    source: "https://commons.wikimedia.org/wiki/File:Kyoto_Protocol_parties.svg"
+    author: "Canuckguy; Danlaycock"
+    license: "Public domain"
 - id: w-pope-john-paul-ii-death-200504
   date: '2005-04-02'
   title: 罗马教宗若望保禄二世逝世，本笃十六世继任
@@ -5641,6 +6485,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2005/w-pope-john-paul-ii-death-200504.jpg"
+    caption: "2005年4月8日教宗若望保禄二世葬礼现场"
+    source: "https://commons.wikimedia.org/wiki/File:Pope_John_Paul_II_funeral.jpg"
+    author: "Ricardo Stuckert / Agência Brasil"
+    license: "CC BY 3.0 BR"
 - id: w-eu-constitution-rejected-200505
   date: '2005-05-29'
   title: 法国与荷兰国民公投否决《欧洲宪法条约》，欧洲一体化进程受挫
@@ -5670,6 +6520,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2005/w-london-bombings-200507.jpg"
+    caption: "2005年7月7日伦敦七七爆炸案后拉塞尔广场的救护车；为袭击当天现场照片"
+    source: "https://commons.wikimedia.org/wiki/File:Russell_square_ambulances.jpg"
+    author: "Francis Tyers"
+    license: "CC BY-SA 3.0"
 - id: w-hurricane-katrina-200508
   date: '2005-08-29'
   title: 四级飓风"卡特里娜"重创美国新奥尔良，造成逾1800人遇难
@@ -5685,6 +6541,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2005/w-hurricane-katrina-200508.jpg"
+    caption: "卡特里娜飓风后新奥尔良洪灾航拍资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AKatrinaNewOrleansFlooded_edit2.jpg"
+    author: "AP Photo / U.S. Coast Guard, Petty Officer 2nd Class Kyle Niemi"
+    license: "Public domain"
 - id: w-kashmir-earthquake-200510
   date: '2005-10-08'
   title: 南亚克什米尔地区发生7.6级大地震，造成逾8.6万人遇难
@@ -5700,6 +6562,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2005/w-kashmir-earthquake-200510.jpg"
+    caption: "2005年10月17日巴拉科特地震灾区的现场照片；为克什米尔地震发生后的灾害背景图"
+    source: "https://commons.wikimedia.org/wiki/File:PakistanErdbeben2005Balakot.jpg"
+    author: "Mike Buytas"
+    license: "Public domain"
 - id: w-merkel-chancellor-200511
   date: '2005-11-22'
   title: 安格拉·默克尔宣誓就任德国联邦总理，成为德国首位女性总理
@@ -5715,6 +6583,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2005/w-merkel-chancellor-200511.jpg
+    caption: 默克尔出任德国总理后的官方会见资料图（2005年12月6日与美国国务卿赖斯会面；非11月22日宣誓现场）
+    source: https://commons.wikimedia.org/wiki/File:Ricemerkel2_600.jpg
+    author: US Embassy Berlin Photo
+    license: Public domain（美国国务院作品）
 - id: w-java-earthquake-200605
   date: '2006-05-27'
   title: 印度尼西亚爪哇岛发生6.3级强震，造成近6000人遇难
@@ -5729,6 +6603,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/w-java-earthquake-200605.jpg
+    caption: 美国海军陆战队医务人员在日惹班图尔救治地震伤员（2006年5月31日；为5月27日地震后的官方灾情资料图）
+    source: https://commons.wikimedia.org/wiki/File:USMC-06066.jpg
+    author: Lance Cpl. Warren Peace / U.S. Marine Corps
+    license: Public domain（美国国防部公务摄影）
 - id: w-montenegro-independence-200606
   date: '2006-06-03'
   title: 黑山议会正式宣布黑山独立，塞尔维亚和黑山国家联盟解体
@@ -5743,6 +6623,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/w-montenegro-independence-200606.png
+    caption: 2006年黑山独立公投结果地图（为6月3日议会宣布独立前后的政治背景资料）
+    source: https://commons.wikimedia.org/wiki/File:Montenegro_Referendum_2006.png
+    author: Electionworld（基于 Neil Tarrant 的公共领域地图）
+    license: Public domain
 - id: w-world-cup-germany-200606
   date: '2006-06-09'
   title: 第18届世界杯足球赛在德国举行，意大利队夺得冠军
@@ -5757,6 +6643,12 @@
   sources:
     - FIFA
     - 维基百科
+  image:
+    url: /images/events/2006/w-world-cup-germany-200606.jpg
+    caption: 2006年德国世界杯开幕式现场的安联球场（2006年6月9日；与赛事开幕日一致）
+    source: https://commons.wikimedia.org/wiki/File:Allianz_Arena_during_opening_ceremony_of_the_2006_FIFA_world_cup_2.jpg
+    author: XoMEoX
+    license: CC BY 4.0
 - id: w-lebanon-war-200607
   date: '2006-07-12'
   title: 黎以爆发第二次黎巴嫩战争，造成千余人平民伤亡
@@ -5771,6 +6663,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2006/w-lebanon-war-200607.jpg"
+    caption: "2006年7月27日以色列空袭和炮击后的贝鲁特现场；为第二次黎巴嫩战争期间的战事背景图"
+    source: "https://commons.wikimedia.org/wiki/File:Israeli_air_and_artillery_attacks,_Beirut_(211918).jpg"
+    author: "Hamed Talebi"
+    license: "CC BY 4.0"
 - id: w-pluto-demoted-dwarf-planet-200608
   date: '2006-08-24'
   title: 国际天文学联合会投票通过行星新定义，冥王星被降级为矮行星
@@ -5785,6 +6683,12 @@
   sources:
     - IAU
     - 维基百科
+  image:
+    url: "/images/events/2006/w-pluto-demoted-dwarf-planet-200608.png"
+    caption: "冥王星真彩色影像（新视野号任务资料图）"
+    source: "https://commons.wikimedia.org/wiki/File:Pluto_in_True_Color_-_High-Res.png"
+    author: "NASA / Johns Hopkins University Applied Physics Laboratory / Southwest Research Institute / Alex Parker"
+    license: "Public domain"
 - id: w-shinzo-abe-pm-200609
   date: '2006-09-26'
   title: 安倍晋三首次当选日本首相，成为战后日本最年轻的首相
@@ -5814,6 +6718,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/w-north-korea-first-nuclear-test-200610.jpg
+    caption: 美国地质调查局绘制的朝鲜首次核试验地震事件位置图（2006年10月9日；对应试验日期）
+    source: https://commons.wikimedia.org/wiki/File:North_Korea_Nuclear_Test.jpg
+    author: U.S. Geological Survey
+    license: Public domain（美国地质调查局作品）
 - id: w-saddam-executed-200612
   date: '2006-12-30'
   title: 伊拉克前总统萨达姆·侯赛因在巴格达被执行绞刑
@@ -5829,6 +6739,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2006/w-saddam-executed-200612.jpg
+    caption: "萨达姆2004年7月受审资料照片；用于2006年执行死刑的司法背景，非12月30日行刑现场"
+    source: "https://commons.wikimedia.org/wiki/File%3ASaddam_Hussein_at_trial%2C_July_2004.JPEG"
+    author: "U.S. Department of Defense（作者未详）"
+    license: "Public domain"
 - id: w-ban-ki-moon-un-200701
   date: '2007-01-01'
   title: 潘基文正式就任联合国第八任秘书长
@@ -5844,6 +6760,12 @@
     - 联合国
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2007/w-ban-ki-moon-un-200701.jpg
+    caption: 潘基文任联合国秘书长期间资料肖像（2007年6月7日；用于标示其就任后的职务身份，非1月1日就职仪式）
+    source: https://commons.wikimedia.org/wiki/File:Bankimoon07052007.jpg
+    author: Marcello Casal Jr. / Agência Brasil
+    license: CC BY 3.0
 - id: w-iphone-launch-200701
   date: '2007-01-09'
   title: 史蒂夫·乔布斯在旧金山正式发布首款 iPhone，重新定义智能手机
@@ -5858,6 +6780,12 @@
   sources:
     - 维基百科
     - Apple
+  image:
+    url: "/images/events/2007/w-iphone-launch-200701.jpg"
+    caption: "2007年1月9日 Macworld 主题演讲前排队等待入场的资料照片，与首款 iPhone 发布会日期对应"
+    source: "https://commons.wikimedia.org/wiki/File%3AWaiting_for_the_keynote_MacWorld_2007.agr.jpg"
+    author: "ArnoldReinhold"
+    license: "CC BY-SA 4.0"
 - id: w-putin-munich-speech-200702
   date: '2007-02-10'
   title: 俄罗斯总统普京在慕尼黑安全会议发表重要演讲，猛烈批评单极世界
@@ -5873,6 +6801,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2007/w-putin-munich-speech-200702.jpg"
+    caption: "普京在慕尼黑安全会议发表演讲（2007年2月10日）"
+    source: "https://commons.wikimedia.org/wiki/File:Putin_in_Munchen.jpg"
+    author: "Kremlin.ru"
+    license: "CC BY 4.0"
 - id: w-subprime-mortgage-crisis-200704
   date: '2007-04-02'
   title: 美国第二大次级房贷公司申请破产保护，次贷危机正式显现
@@ -5887,6 +6821,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2007/w-subprime-mortgage-crisis-200704.svg"
+    caption: "美国住房抵押贷款逾期率变化图（2000—2010年；次贷危机背景资料图）"
+    source: "https://commons.wikimedia.org/wiki/File:Mortgage_delinquencies_by_loan_type_(2000%E2%80%932010).svg"
+    author: "Isochrone"
+    license: "CC BY-SA 4.0"
 - id: w-virginia-tech-shooting-200704
   date: '2007-04-16'
   title: 美国弗吉尼亚理工大学发生恶性枪击案，造成33人死亡
@@ -5943,6 +6883,12 @@
   sources:
     - IPCC
     - 维基百科
+  image:
+    url: "/images/events/2007/w-ipcc-fourth-assessment-200711.svg"
+    caption: "基于 IPCC 2007 年第四次评估报告的全球温度变化图（2007年11月资料图）"
+    source: "https://commons.wikimedia.org/wiki/File:IPCC2007_Temperature_Change_Worldmap.svg"
+    author: "MovGP0"
+    license: "CC BY-SA 4.0"
 - id: w-benazir-bhutto-assassination-200712
   date: '2007-12-27'
   title: 巴基斯坦前总理贝娜齐尔·布托在拉瓦尔品第遇刺身亡
@@ -5958,6 +6904,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2007/w-benazir-bhutto-assassination-200712.png
+    caption: 巴基斯坦拉瓦尔品第在地图上的位置（2007年12月27日；为布托遇刺地点的事件定位图，非袭击现场）
+    source: https://commons.wikimedia.org/wiki/File:PakistanRawalpindiMap.png
+    author: Gwyndon（基于 CIA World Factbook 地图）
+    license: Public domain（美国中央情报局世界概况地图）
 - id: w-kosovo-independence-200802
   date: '2008-02-17'
   title: 科索沃正式宣布从塞尔维亚独立，引发国际社会严重分歧
@@ -5972,6 +6924,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2008/w-kosovo-independence-200802.svg"
+    caption: "各国承认科索沃独立情况图（事件背景资料图）"
+    source: "https://commons.wikimedia.org/wiki/File:CountriesRecognizingKosovo.svg"
+    author: "Alethiareg 等 Commons 贡献者"
+    license: "Public domain"
 - id: w-tibet-beijing-olympic-relay-200804
   date: '2008-04-07'
   title: 北京奥运火炬巴黎传递受到蓄意干扰，中国民众强烈谴责
@@ -5999,6 +6957,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2008/w-myanmar-cyclone-200805.jpg"
+    caption: "2008年5月5日纳尔吉斯气旋过后仰光周边洪涝的卫星影像；为灾害发生后现场背景图"
+    source: "https://commons.wikimedia.org/wiki/File:Cyclone_Nargis_flooding_around_Yangon_from_space.jpg"
+    author: "Jesse Allen of NASA using data from the USGS"
+    license: "Public domain"
 - id: w-russia-georgia-war-200808
   date: '2008-08-08'
   title: 俄格战争爆发，俄罗斯军队进入南奥塞梯与格鲁吉亚交战
@@ -6013,6 +6977,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2008/w-russia-georgia-war-200808.jpg"
+    caption: "2008年8月25日俄格战争后格鲁吉亚哥里市废墟中的现场照片；为战事后果背景图"
+    source: "https://commons.wikimedia.org/wiki/File:US_Navy_080825-N-0629H-010_A_teddy_bear_lies_amidst_rubble_in_Gori_after_the_recent_conflict_between_Georgia_and_Russia.jpg"
+    author: "U.S. Navy photo by Lt. Jim Hoeft"
+    license: "Public domain"
 - id: w-phelps-eight-gold-200808
   date: '2008-08-16'
   title: 美国游泳运动员迈克尔·菲尔普斯在北京奥运会夺得8枚金牌，创历史纪录
@@ -6037,6 +7007,12 @@
     - 经济
     - 金融
     - 历史转折
+  image:
+    url: "/images/events/2008/w-lehman-bankruptcy-200809.jpg"
+    caption: "2008年9月15日雷曼兄弟纽约总部在破产申请日的资料照片"
+    source: "https://commons.wikimedia.org/wiki/File:Lehman_Brothers-NYC-20080915.jpg"
+    author: "Robert Scoble"
+    license: "CC BY 2.0"
   sources:
     - 维基百科
     - 新华网
@@ -6055,6 +7031,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/w-us-government-bailout-200810.jpg
+    caption: 布什在白宫签署《2008年紧急经济稳定法》（2008年10月3日；与TARP法案签署生效日一致）
+    source: https://commons.wikimedia.org/wiki/File:President_George_W._Bush_signs_the_Emergency_Economic_Stabilization_Act_of_2008_in_the_Oval_Office.jpg
+    author: Eric Draper / White House
+    license: Public domain（美国总统行政办公室公务摄影）
 - id: w-obama-wins-election-200811
   date: '2008-11-04'
   title: 民主党候选人巴拉克·奥巴马当选美国第44任总统，成为首位非裔总统
@@ -6066,6 +7048,12 @@
     - 政治
     - 美国
     - 历史转折
+  image:
+    url: "/images/events/2008/w-obama-wins-election-200811.jpg"
+    caption: "2008年11月4日奥巴马在芝加哥格兰特公园发表胜选演讲的现场照片"
+    source: "https://commons.wikimedia.org/wiki/File:Obama_victory_(3005078575).jpg"
+    author: "Lucy Gray"
+    license: "CC BY-SA 2.0"
   sources:
     - 维基百科
     - 新华网
@@ -6083,6 +7071,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2008/w-g20-washington-summit-200811.jpg
+    caption: 2008年11月15日G20金融市场和世界经济峰会首届领导人会议现场
+    source: https://commons.wikimedia.org/wiki/File:Cumbre_G-20-Washington.jpg
+    author: Joyce N. Boghosian / White House
+    license: Public domain（美国总统行政办公室作品）
 - id: w-mumbai-terrorist-attacks-200811
   date: '2008-11-26'
   title: 印度孟买发生连环恐怖袭击，造成逾160人遇难
@@ -6098,6 +7092,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2008/w-mumbai-terrorist-attacks-200811.jpg"
+    caption: "孟买恐怖袭击后泰姬陵酒店穹顶被焚（2008年12月3日）"
+    source: "https://commons.wikimedia.org/wiki/File:2008_Mumbai_terror_attacks_Taj_dome_burned_2.jpg"
+    author: "Nicholas (Nichalp)"
+    license: "CC BY-SA 3.0"
 - id: w-obama-inauguration-200901
   date: '2009-01-20'
   title: 巴拉克·奥巴马宣誓就任美国第44任总统，成为首位非裔美国总统
@@ -6109,6 +7109,12 @@
     - 政治
     - 美国
     - 历史转折
+  image:
+    url: "/images/events/2009/w-obama-inauguration-200901.jpg"
+    caption: "2009年1月20日奥巴马在华盛顿特区宣誓就任美国总统的就职典礼照片"
+    source: "https://commons.wikimedia.org/wiki/File:Barack_Obama_Inauguration.jpg"
+    author: "Steve Jurvetson"
+    license: "CC BY 2.0"
   sources:
     - 维基百科
     - 新华网
@@ -6127,6 +7133,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/w-g20-london-summit-200904.jpg
+    caption: 2009年4月2日G20伦敦峰会合影
+    source: https://commons.wikimedia.org/wiki/File:G-20_London_Summit_2009.jpg
+    author: Chuck Kennedy / White House Photo
+    license: Public domain（美国总统行政办公室作品）
 - id: w-north-korea-second-nuclear-test-200905
   date: '2009-05-25'
   title: 朝鲜进行第二次核试验，联合国安理会一致通过制裁决议
@@ -6142,6 +7154,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/w-north-korea-second-nuclear-test-200905.png
+    caption: 美国地质调查局绘制的朝鲜第二次核试验地震位置图（2009年5月25日；图中注明事件日期）
+    source: https://commons.wikimedia.org/wiki/File:2009_North_Korean_nuclear_test.png
+    author: U.S. Geological Survey
+    license: Public domain（美国地质调查局作品）
 - id: w-swine-flu-pandemic-200906
   date: '2009-06-11'
   title: 世卫组织宣布甲型H1N1流感进入全球大流行（6级）最高警戒
@@ -6157,6 +7175,12 @@
     - WHO
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2009/w-swine-flu-pandemic-200906.jpg"
+    caption: "甲型H1N1流感病毒电子显微镜图（CDC资料图）"
+    source: "https://commons.wikimedia.org/wiki/File:CDC-11214-swine-flu.jpg"
+    author: "C. S. Goldsmith and A. Balish / CDC"
+    license: "Public domain"
 - id: w-iran-election-protests-200906
   date: '2009-06-12'
   title: 伊朗总统选举后爆发大规模抗议示威，"绿色运动"震动德黑兰
@@ -6200,6 +7224,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/w-us-withdraw-iraq-200906.jpg
+    caption: 伊拉克安全部队在“主权日”阅兵（2009年6月30日；与美军撤出主要城市、移交安全职责同日）
+    source: https://commons.wikimedia.org/wiki/File:Flickr_-_DVIDSHUB_-_Iraq%27s_Sovereignty_Day.jpg
+    author: Capt. Tommy Avilucea / DVIDSHUB
+    license: Public domain（美国国防部公务摄影）
 - id: w-obama-peace-prize-200910
   date: '2009-10-09'
   title: 美国总统奥巴马获授2009年诺贝尔和平奖，引发全球广泛争议
@@ -6229,6 +7259,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/w-lisbon-treaty-effective-200912.png
+    caption: 《里斯本条约》成员国批准状态图（2009年10月更新；用于说明条约生效前后的批准进程，非12月1日生效仪式照片）
+    source: https://commons.wikimedia.org/wiki/File:Treaty_of_Lisbon_ratificationNew.png
+    author: TRDeathmaker
+    license: Public domain
 - id: w-cop15-copenhagen-200912
   date: '2009-12-07'
   title: 《联合国气候变化框架公约》第15次缔约方大会（COP15）在哥本哈根举行
@@ -6245,6 +7281,12 @@
     - 联合国
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2009/w-cop15-copenhagen-200912.png
+    caption: 2009年12月7—18日哥本哈根COP15气候峰会会场资料图
+    source: https://commons.wikimedia.org/wiki/File:Copenhagen_-_COP15.png
+    author: Marc Kjerland
+    license: CC BY-SA 2.0
 - id: w-haiti-earthquake-201001
   date: '2010-01-12'
   title: 海地发生7.3级特大地震
@@ -6311,6 +7353,12 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: "/images/events/2010/w-eurozone-crisis-201005.svg"
+    caption: "2011年欧元区成员与欧元区状态地图（作为2010年欧洲主权债务危机的区域背景资料图）"
+    source: "https://commons.wikimedia.org/wiki/File:Eurozone_map-2011.svg"
+    author: "Kolja21"
+    license: "CC BY 3.0"
 - id: w-wikileaks-afghan-war-201007
   date: '2010-07-25'
   title: 维基解密曝光数万份阿富汗战争机密档案
@@ -6364,6 +7412,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2010/w-arab-spring-begins-201012.jpg"
+    caption: "突尼斯革命示威者在首都突尼斯市布尔吉巴大街面对警察（2011年1月20日；革命爆发后的现场资料）"
+    source: "https://commons.wikimedia.org/wiki/File:Tunisian_Revolution_Protest.jpg"
+    author: "cjb"
+    license: "CC BY 2.0"
 - id: w-brics-south-africa-201012
   date: '2010-12-24'
   title: 南非正式加入，“金砖四国”扩容为“金砖国家”（BRICS）
@@ -6387,6 +7441,12 @@
     - 政治
     - 中东
     - 历史转折
+  image:
+    url: "/images/events/2011/w-egypt-revolution-201101.jpg"
+    caption: "2011年1月25日埃及吉萨反政府示威者抗议的现场照片"
+    source: "https://commons.wikimedia.org/wiki/File:Egyptian_protests_at_Giza_Jan_25.jpg"
+    author: "Sherif9282"
+    license: "CC BY-SA 3.0"
   sources:
     - 维基百科
     - 新华网
@@ -6404,6 +7464,12 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: /images/events/2011/w-china-gdp-second-official-201102.jpg
+    caption: 2010年世界主要经济体名义GDP图表（2011年1月制作；中国排名第二，为2011年2月日本正式确认数据的同期图表背景）
+    source: https://commons.wikimedia.org/wiki/File:2010_Nominal_GDP.jpg
+    author: Pagecloudss
+    license: Public domain（作者放弃版权）
 - id: w-fukushima-disaster-201103
   date: '2011-03-11'
   title: 日本发生9.0级特大地震并引发巨大海啸与福岛核事故
@@ -6416,6 +7482,12 @@
     - 地震
     - 核能
     - 历史转折
+  image:
+    url: "/images/events/2011/w-fukushima-disaster-201103.jpg"
+    caption: "2011年3月13日美国海军航拍日本东北海啸灾区搜救现场的资料照片"
+    source: "https://commons.wikimedia.org/wiki/File:US_Navy_110313-N-SB672-592_An_aerial_view_of_debris_from_an_8.9_magnitude_earthquake_and_subsequent_tsunami_that_struck_northern_Japan.jpg"
+    author: "Dylan McCord / U.S. Navy"
+    license: "Public domain"
   sources:
     - 维基百科
     - 新华网
@@ -6430,6 +7502,12 @@
     - 战争
     - 中东
     - 历史转折
+  image:
+    url: "/images/events/2011/w-libya-war-201103.jpg"
+    caption: "2011年4月14日利比亚班加西反卡扎菲抗议者的现场照片（战争期间资料）"
+    source: "https://commons.wikimedia.org/wiki/File:Libyan_protestors_ffrom_Benghazi,_Apr_2011_.jpg"
+    author: "Al Jazeera English"
+    license: "CC BY-SA 2.0"
   sources:
     - 维基百科
     - 新华网
@@ -6447,6 +7525,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2011/w-bin-laden-killed-201105.jpg"
+    caption: "奥巴马与美国国家安全团队在情报室获悉本·拉登被击毙的资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AObama_in_the_Situation_Room_after_bin_Laden_is_killed.jpg"
+    author: "Pete Souza / White House"
+    license: "Public domain"
 - id: w-south-sudan-independence-201107
   date: '2011-07-09'
   title: 南苏丹共和国独立，成为联合国第193个成员国
@@ -6527,6 +7611,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2011/w-us-iraq-war-end-201112.jpg"
+    caption: "巴格达2011年12月15日美国驻伊拉克任务结束仪式上降旗（当日现场）"
+    source: "https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_111215-D-BW835-017_-_The_colors_are_retired_during_a_ceremony_marking_the_end_of_the_U.S._mission_in_Iraq_in_Baghdad_on_Dec._15,_2011.jpg"
+    author: "Erin A. Kirk-Cuomo / U.S. Department of Defense"
+    license: "Public domain"
 - id: w-us-pivot-to-asia-201201
   date: '2012-01-05'
   title: 美国发布新军事战略报告，宣布战略重心转向亚太（“亚太再平衡”）
@@ -6555,6 +7645,12 @@
     - CERN
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2012/w-higgs-boson-discovery-201207.png"
+    caption: "2012年7月4日CMS探测器记录的希格斯玻色子候选事件可视化；对应CERN宣布发现新粒子"
+    source: "https://commons.wikimedia.org/wiki/File:CMS-PHO-EVENTS-2012-007-1.png"
+    author: "CMS Collaboration; Mc Cauley, Thomas; Taylor, Lucas"
+    license: "CC BY 4.0"
 - id: w-curiosity-rover-mars-201208
   date: '2012-08-06'
   title: 美国“好奇号”火星车成功着陆火星
@@ -6592,6 +7688,12 @@
     - 外交
     - 军事
     - 历史转折
+  image:
+    url: "/images/events/2012/w-senkaku-diaoyu-islands-201209.jpg"
+    caption: "2012年9月18日北京日本驻华大使馆前反日示威现场照片（购岛事件后的抗议）"
+    source: "https://commons.wikimedia.org/wiki/File:2012_China_anti-Japanese_demonstrations_in_Beijing.jpg"
+    author: "Dong Fang / Voice of America"
+    license: "Public domain"
   sources:
     - 新华网
     - 维基百科
@@ -6715,6 +7817,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2013/w-prism-snowden-leak-201306.jpg"
+    caption: "2013年6月18日反对NSA监控的公开抗议现场；为棱镜门披露后引发公共讨论的背景照片"
+    source: "https://commons.wikimedia.org/wiki/File:Protest_against_NSA_surveillance_(9079613555).jpg"
+    author: "Fibonacci Blue"
+    license: "CC BY 2.0"
 - id: w-egypt-morsi-ousted-201307
   date: '2013-07-03'
   title: 埃及军方解职总统穆尔西，塞西接管政权
@@ -6765,6 +7873,12 @@
     - 政治
     - 乌克兰
     - 历史转折
+  image:
+    url: "/images/events/2013/w-ukraine-euromaidan-201311.jpg"
+    caption: "2013年12月8日基辅独立广场亲欧示威现场照片（广场革命期间资料）"
+    source: "https://commons.wikimedia.org/wiki/File:Kyiv,_Euro_Maidan_2013_(11275099176).jpg"
+    author: "Oleksii Leonov"
+    license: "CC BY 2.0"
   sources:
     - 维基百科
     - 新华网
@@ -6780,6 +7894,12 @@
     - 人权
     - 人物
     - 历史转折
+  image:
+    url: "/images/events/2013/w-nelson-mandela-pass-201312.jpg"
+    caption: "2013年12月10日南非前总统纳尔逊·曼德拉国葬仪式现场照片"
+    source: "https://commons.wikimedia.org/wiki/File:Funeraliile_nationale_ale_fostului_presedinte_sud-african_Nelson_Mandela_(11308003184).jpg"
+    author: "Partidul Social Democrat (Romania)"
+    license: "CC BY 2.0"
   sources:
     - 维基百科
     - 新华网
@@ -6810,6 +7930,12 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: "/images/events/2014/w-mh370-disappearance-201403.jpg"
+    caption: "2014年3月20日美国海军P-8A执行MH370海上搜救任务的现场照片；为搜救行动背景图"
+    source: "https://commons.wikimedia.org/wiki/File:Searches_the_water_for_debris_on_a_P-8A_Poseidon_during_a_mission_to_assist_in_search_and_rescue_operations_for_Malaysia_Airlines_flight_MH370_March_20_140320-N-XY761-105.jpg"
+    author: "Mass Communication Specialist 2nd Class Eric A. Pastor"
+    license: "Public domain"
 - id: w-crimea-annexation-201403
   date: '2014-03-18'
   title: 克里米亚举行公投加入俄罗斯，引发乌克兰危机与西方制裁
@@ -6821,6 +7947,12 @@
     - 政治
     - 战争
     - 历史转折
+  image:
+    url: "/images/events/2014/w-crimea-annexation-201403.png"
+    caption: "2014年3月16日克里米亚公投投票现场截图（公投结果随后引发并入俄罗斯争议）"
+    source: "https://commons.wikimedia.org/wiki/File:2014_Crimea_Referendum_Voting.png"
+    author: "Юрий Дейнека"
+    license: "CC BY 3.0"
   sources:
     - 维基百科
     - 新华网
@@ -6851,6 +7983,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2014/w-isis-caliphate-201406.png"
+    caption: "2014年6月14日 ISIS 在叙利亚和伊拉克控制区地图（‘哈里发国’宣布前后背景资料）"
+    source: "https://commons.wikimedia.org/wiki/File%3ATerritorial_control_of_the_ISIS_ve.png"
+    author: "Nerika"
+    license: "CC BY-SA 3.0"
 - id: w-ndb-brics-bank-201407
   date: '2014-07-15'
   title: 金砖国家在巴西第九届峰会上宣布设立新开发银行（NDB）
@@ -6878,6 +8016,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2014/w-mh17-shot-down-201407.jpg"
+    caption: "2014年7月21日MH17遇难者悼念现场；为航班被击落后的公共悼念背景图"
+    source: "https://commons.wikimedia.org/wiki/File:Flight_17_condolences_140721-D-AF077-098.jpg"
+    author: "Sean Hurt"
+    license: "Public domain"
 - id: w-scottish-referendum-201409
   date: '2014-09-18'
   title: 苏格兰举行独立公投，55%选民投票留在英国
@@ -6903,6 +8047,12 @@
     - 天文
     - 科技
     - 历史转折
+  image:
+    url: "/images/events/2014/w-philae-comet-landing-201411.jpg"
+    caption: "ESA 为菲莱彗星着陆十周年制作的任务回顾图，所述事件发生于 2014 年 11 月 12 日"
+    source: "https://commons.wikimedia.org/wiki/File:Philae%27s_firsts_ESA503297.jpg"
+    author: "European Space Agency"
+    license: "CC BY-SA 3.0 IGO"
   sources:
     - ESA
     - 维基百科
@@ -6933,6 +8083,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2014/w-us-cuba-reconciliation-201412.jpg"
+    caption: "2014年12月16日奥巴马与劳尔·卡斯特罗通话资料照片（美古关系正常化背景）"
+    source: "https://commons.wikimedia.org/wiki/File%3AP121614PS-0596_%2816041939932%29.jpg"
+    author: "Pete Souza / The White House"
+    license: "Public domain"
 - id: w-charlie-hebdo-shooting-201501
   date: '2015-01-07'
   title: 法国巴黎《查理周刊》总部遭恐怖袭击
@@ -6987,6 +8143,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2015/w-iran-nuclear-deal-201507.jpg"
+    caption: "2015年7月14日伊核协议宣布前，维也纳谈判代表在联合国维也纳中心会场"
+    source: "https://commons.wikimedia.org/wiki/File:Secretaries_Kerry_and_Moniz_Sat_With_Fellow_Ministers_and_Directors_Before_Final_Announcement_of_Iran_Deal_(19499023759).jpg"
+    author: "U.S. Department of State"
+    license: "Public domain"
 - id: w-new-horizons-pluto-201507
   date: '2015-07-14'
   title: 美国“新视野”号飞船首次飞掠冥王星
@@ -6999,6 +8161,12 @@
     - 天文
     - 科技
     - 历史转折
+  image:
+    url: "/images/events/2015/w-new-horizons-pluto-201507.jpg"
+    caption: "2015年7月14日新视野号飞掠期间拍摄的冥王星影像"
+    source: "https://commons.wikimedia.org/wiki/File:View_of_Pluto_from_New_Horizons_on_July_14,_2015.jpg"
+    author: "NASA, JPL Solar System Simulator"
+    license: "Public domain"
   sources:
     - NASA
     - 维基百科
@@ -7013,6 +8181,12 @@
     - 难民
     - 人权
     - 历史转折
+  image:
+    url: "/images/events/2015/w-european-migrant-crisis-201509.jpg"
+    caption: "2015年9月4日为艾兰·库尔迪及其他难民举行的纪念活动现场照片"
+    source: "https://commons.wikimedia.org/wiki/File:Moments_of_Mourn_For_Alan_Kurdi_DI_September_2015.jpg"
+    author: "Defend International"
+    license: "CC BY-SA 3.0"
   sources:
     - 维基百科
     - 新华网
@@ -7043,6 +8217,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2015/w-paris-attacks-201511.jpg"
+    caption: "2015年11月14日巴黎巴塔克兰剧院袭击后的警察现场；为袭击次日现场照片"
+    source: "https://commons.wikimedia.org/wiki/File:Police_outside_Bataclan_after_the_attack.jpg"
+    author: "VOA"
+    license: "Public domain"
 - id: w-paris-climate-agreement-201512
   date: '2015-12-12'
   title: 气候变化巴黎大会表决通过历史性《巴黎协定》
@@ -7054,6 +8234,12 @@
     - 环境
     - 气候
     - 历史转折
+  image:
+    url: "/images/events/2015/w-paris-climate-agreement-201512.jpg"
+    caption: "2015年12月12日联合国气候变化大会通过《巴黎协定》的会场现场照片"
+    source: "https://commons.wikimedia.org/wiki/File:Adoption_of_the_Paris_Agreement_(25876053520).jpg"
+    author: "UNclimatechange"
+    license: "CC BY 2.0"
   sources:
     - 联合国
     - 新华网
@@ -7082,6 +8268,12 @@
     - 人工智能
     - 科技
     - 历史转折
+  image:
+    url: "/images/events/2016/w-alphago-lee-sedol-201603.svg"
+    caption: "AlphaGo 与李世石对局第一局的棋谱图（对应 2016 年人机围棋比赛）"
+    source: "https://commons.wikimedia.org/wiki/File:Lee_Sedol_(B)_vs_AlphaGo_(W)_-_Game_1.svg"
+    author: "Wesalius"
+    license: "CC BY-SA 4.0"
   sources:
     - 维基百科
     - 新华网
@@ -7099,6 +8291,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2016/w-brexit-referendum-201606.jpg"
+    caption: "2016年6月23日英国脱欧公投当天伦敦投票站现场照片"
+    source: "https://commons.wikimedia.org/wiki/File:Polling_Station_(27954696555).jpg"
+    author: "Matt Brown"
+    license: "CC BY 2.0"
 - id: w-juno-spacecraft-jupiter-201607
   date: '2016-07-03'
   title: 美国“朱诺号”木星探测器成功进入木星轨道
@@ -7154,6 +8352,12 @@
   sources:
     - 联合国
     - 新华网
+  image:
+    url: "/images/events/2016/w-us-china-ratify-paris-agreement-201609.jpg"
+    caption: "习近平与奥巴马在杭州会晤（2016年9月3日，中美向联合国交存《巴黎协定》批准文书同期）"
+    source: "https://commons.wikimedia.org/wiki/File:Barack_Obama_and_Xi_Jinping_meeting_on_2016_G20_Summit.jpg"
+    author: "Pete Souza / White House"
+    license: "Public domain"
 - id: w-bhumibol-pass-201610
   date: '2016-10-13'
   title: 泰国国王普密蓬·阿杜德逝世，享年88岁
@@ -7181,6 +8385,12 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: "/images/events/2016/w-trump-wins-us-election-201611.png"
+    caption: "2016年11月9日唐纳德·特朗普在胜选演讲中发表讲话；为美国总统大选结果公布后的现场资料图"
+    source: "https://commons.wikimedia.org/wiki/File:Trump_victory_speech.png"
+    author: "VOA News"
+    license: "Public domain"
 - id: w-fidel-castro-pass-201611
   date: '2016-11-25'
   title: 古巴革命领袖菲德尔·卡斯特罗逝世，享年90岁
@@ -7196,6 +8406,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2016/w-fidel-castro-pass-201611.jpg"
+    caption: "2016年12月2日菲德尔·卡斯特罗葬礼车队途经奥尔金附近，悼念活动资料照片"
+    source: "https://commons.wikimedia.org/wiki/File:Fidel-Castro-Funerailles.jpg"
+    author: "David Himbert"
+    license: "CC BY-SA 4.0"
 - id: w-park-geun-hye-impeachment-201612
   date: '2016-12-09'
   title: 韩国国会通过对总统朴槿惠的弹劾案
@@ -7224,6 +8440,12 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: "/images/events/2017/w-trump-inauguration-201701.jpg"
+    caption: "2017年1月20日特朗普在美国国会大厦发表就职演说"
+    source: "https://commons.wikimedia.org/wiki/File:Trump_delivering_his_inaugural_address.jpg"
+    author: "National Museum of the U.S. Navy / Lance Cpl. Cristian L. Ricardo"
+    license: "Public domain"
 - id: w-park-geun-hye-removed-201703
   date: '2017-03-10'
   title: 韩国宪法法院裁定通过总统朴槿惠弹劾案，朴槿惠被即刻罢免
@@ -7238,6 +8460,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2017/w-park-geun-hye-removed-201703.png"
+    caption: "2017年3月10日韩国宪法法院宣读朴槿惠弹劾案裁判决定"
+    source: "https://commons.wikimedia.org/wiki/File:(%EB%B6%99%EC%9E%84_1)_%EB%B0%95%EA%B7%BC%ED%98%9C_%EB%8C%80%ED%86%B5%EB%A0%B9_%ED%83%84%ED%95%B5%EA%B2%B0%EC%A0%95_%EC%84%A0%EA%B3%A0(2017._3._10.).png"
+    author: "Constitutional Court of Korea"
+    license: "Attribution required (South Korea government work)"
 - id: w-macron-wins-french-election-201705
   date: '2017-05-07'
   title: 埃马纽埃尔·马克龙击败勒庞当选法国总统
@@ -7262,6 +8490,12 @@
     - 环境
     - 气候
     - 历史转折
+  image:
+    url: "/images/events/2017/w-us-withdraws-paris-agreement-201706.jpg"
+    caption: "2017年6月1日特朗普宣布美国退出《巴黎协定》的讲话画面"
+    source: "https://commons.wikimedia.org/wiki/File:Donald-Trump-Regarding-the-Paris-Accord-and-Temperature.jpg"
+    author: "The White House"
+    license: "Public domain"
   sources:
     - 新华网
     - 维基百科
@@ -7329,6 +8563,12 @@
     - 政治
     - 非洲
     - 历史转折
+  image:
+    url: "/images/events/2017/w-robert-mugabe-resignation-201711.jpg"
+    caption: "2017年津巴布韦政变期间哈拉雷市中心的坦克照片（穆加贝辞职前的政治危机资料）"
+    source: "https://commons.wikimedia.org/wiki/File:A_tank_in_harare_during_the_coup.jpg"
+    author: "Captain611611611"
+    license: "CC0 1.0"
   sources:
     - 维基百科
     - 新华网
@@ -7346,6 +8586,12 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: "/images/events/2017/w-us-jerusalem-capital-201712.jpg"
+    caption: "2017年12月6日特朗普与彭斯就承认耶路撒冷为以色列首都发表声明的白宫照片"
+    source: "https://commons.wikimedia.org/wiki/File:Photo_of_the_Day_December_7,_2017_(25121073608).jpg"
+    author: "The White House"
+    license: "Public domain"
 - id: w-panmunjom-declaration-201804
   date: '2018-04-27'
   title: 朝韩领导人在板门店举行会晤，发表《板门店宣言》
@@ -7360,6 +8606,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2018/w-panmunjom-declaration-201804.jpg"
+    caption: "2018年4月27日朝韩领导人在宣布《板门店宣言》后握手的现场照片"
+    source: "https://commons.wikimedia.org/wiki/File:InterKorean_Summit_April_2018_v8.jpg"
+    author: "Cheongwadae / Blue House"
+    license: "KOGL Type 1"
 - id: w-us-withdraws-iran-deal-201805
   date: '2018-05-08'
   title: 特朗普宣布美国单方面退出伊朗核问题全面协议（JCPOA）
@@ -7374,6 +8626,12 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: "/images/events/2018/w-us-withdraws-iran-deal-201805.jpg"
+    caption: "2018年5月8日特朗普就伊朗核协议发表声明的白宫资料照片"
+    source: "https://commons.wikimedia.org/wiki/File:Trump_Withdraw_Iran_Deal.jpg"
+    author: "The White House"
+    license: "Public domain"
 - id: w-us-embassy-jerusalem-open-201805
   date: '2018-05-14'
   title: 美国驻以色列大使馆在耶路撒冷正式开馆，加沙爆发严重流血冲突
@@ -7402,6 +8660,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2018/w-us-north-korea-singapore-summit-201806.jpg"
+    caption: "2018年6月12日特朗普与金正恩在新加坡举行会晤"
+    source: "https://commons.wikimedia.org/wiki/File:Trump_Kim_Summit_at_the_Capella_Hotel_(4).jpg"
+    author: "Shealah Craighead / White House"
+    license: "Public domain"
 - id: w-france-wins-world-cup-201807
   date: '2018-07-15'
   title: 法国队击败克罗地亚队夺得2018俄罗斯世界杯冠军
@@ -7499,6 +8763,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2019/w-isis-territory-lost-201903.png"
+    caption: "2019年3月23日巴古兹战役及 ISIS 最后据点态势图"
+    source: "https://commons.wikimedia.org/wiki/File%3ABattle_of_Baghuz_%282019%29.svg"
+    author: "Rr016（基于 OpenStreetMap 数据）"
+    license: "Open Database License (ODbL) / CC BY-SA 2.0"
 - id: w-first-black-hole-image-201904
   date: '2019-04-10'
   title: 事件视界望远镜（EHT）项目发布人类历史上首张黑洞照片
@@ -7513,6 +8783,12 @@
   sources:
     - EHT
     - 新华网
+  image:
+    url: "/images/events/2019/w-first-black-hole-image-201904.jpg"
+    caption: "M87星系中心黑洞的首张直接成像"
+    source: "https://commons.wikimedia.org/wiki/File%3ABlack_hole_-_Messier_87.jpg"
+    author: "Event Horizon Telescope"
+    license: "CC BY 4.0"
 - id: w-notre-dame-fire-201904
   date: '2019-04-15'
   title: 法国巴黎圣母院发生特大火灾，木质塔尖坍塌
@@ -7527,6 +8803,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2019/w-notre-dame-fire-201904.jpg"
+    caption: "2019年4月15日巴黎圣母院火灾现场；图片拍摄日期与火灾发生日一致"
+    source: "https://commons.wikimedia.org/wiki/File:NDonFire_8773_(edited).jpg"
+    author: "Cangadoba; edited by PhilipTerryGraham"
+    license: "CC BY-SA 4.0"
 - id: w-sri-lanka-easter-bombings-201904
   date: '2019-04-21'
   title: 斯里兰卡复活节连环恐怖袭击发生，造成269人遇难
@@ -7554,6 +8836,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2019/w-emperor-akihito-abdication-201904.jpg"
+    caption: "2019年4月30日明仁天皇退位礼正殿之仪"
+    source: "https://commons.wikimedia.org/wiki/File:EmperorAkihito2019.jpg"
+    author: "首相官邸"
+    license: "CC BY 3.0"
 - id: w-inf-treaty-withdrawal-201908
   date: '2019-08-02'
   title: 美国正式宣布退出与苏联签署的《中程导弹条约》（INF）
@@ -7568,6 +8856,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: /images/events/2019/w-inf-treaty-withdrawal-201908.jpg
+    caption: 里根与戈尔巴乔夫签署《中程导弹条约》资料图（1987年12月8日；用于说明2019年美国宣布退出的条约对象，非退出声明现场）
+    source: https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_signing.jpg
+    author: White House Photographic Office
+    license: Public domain（美国政府作品）
 - id: w-al-baghdadi-killed-201910
   date: '2019-10-26'
   title: “伊斯兰国”（ISIS）最高头目巴格达迪在美军突袭中自杀身亡
@@ -7582,6 +8876,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2019/w-al-baghdadi-killed-201910.jpg"
+    caption: "巴格达迪藏身处在巴里沙突袭前的国防部航拍图（2019年10月25日）"
+    source: "https://commons.wikimedia.org/wiki/File:Al-Baghdadi%27s_compound_before_Barisha_raid.jpg"
+    author: "U.S. Department of Defense"
+    license: "Public domain"
 - id: w-climate-emergency-un-201911
   date: '2019-11-25'
   title: 欧洲议会宣布全球进入“气候紧急状态”
@@ -7610,6 +8910,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2019/w-boris-johnson-election-201912.jpg"
+    caption: "2019年英国大选后约翰逊内阁会议（2019年12月17日）"
+    source: "https://commons.wikimedia.org/wiki/File:Johnson%27s_Cabinet_Meeting_after_general_election.jpg"
+    author: "UK Prime Minister / 10 Downing Street"
+    license: "UK Open Government Licence v3.0"
 - id: w-trump-first-impeachment-201912
   date: '2019-12-18'
   title: 美国国会众议院表决通过对总统特朗普的弹劾条款
@@ -7651,6 +8957,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2020/w-brexit-official-202001.jpg"
+    caption: "2020年1月31日英国脱欧日的脱欧旗帜"
+    source: "https://commons.wikimedia.org/wiki/File:Brexit_flag_(49474956968).jpg"
+    author: "David Howard"
+    license: "CC BY 2.0"
 - id: w-covid-pandemic-202003
   date: '2020-03-11'
   title: 世卫组织宣布新冠疫情构成全球大流行
@@ -7665,6 +8977,12 @@
   sources:
     - 新华网
     - 联合国
+  image:
+    url: "/images/events/2020/w-covid-pandemic-202003.jpg"
+    caption: "新冠疫情期间医院重症监护病房医护人员救治患者"
+    source: "https://commons.wikimedia.org/wiki/File%3ACovid-19_San_Salvatore_05.jpg"
+    author: "Alberto Giuliani"
+    license: "CC BY-SA 4.0"
 - id: w-george-floyd-protests-202005
   date: '2020-05-25'
   title: 弗洛伊德事件引发全球反种族歧视浪潮
@@ -7732,6 +9050,12 @@
   sources:
     - 新华网
     - 维基百科
+  image:
+    url: "/images/events/2020/w-us-election-biden-202011.jpg"
+    caption: "2020年11月3日美国总统大选投票现场"
+    source: "https://commons.wikimedia.org/wiki/File:Election_Day_2020_(50563635548).jpg"
+    author: "Phil Roeder"
+    license: "CC BY 2.0"
 - id: w-rcep-signed-202011
   date: '2020-11-15'
   title: 亚太15国签署RCEP，构建全球最大自贸区
@@ -7785,6 +9109,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2021/w-capitol-riot-202101.jpg"
+    caption: "2021年1月6日美国国会大厦骚乱现场照片"
+    source: "https://commons.wikimedia.org/wiki/File%3A2021_storming_of_the_United_States_Capitol_DSC09254-2_%2850820534063%29_%28retouched%29.jpg"
+    author: "Tyler Merbler"
+    license: "CC BY 2.0"
 - id: w-biden-inauguration-202101
   date: '2021-01-20'
   title: 拜登宣誓就任第46任美国总统
@@ -7838,6 +9168,12 @@
   sources:
     - 维基百科
     - 新华网
+  image:
+    url: "/images/events/2021/w-us-withdrawal-afghanistan-202108.jpg"
+    caption: "2021年8月15日喀布尔机场阿富汗撤离行动现场；为撤离阶段背景照片"
+    source: "https://commons.wikimedia.org/wiki/File:Afghanistan_withdrawal_Image_3_of_7.jpg"
+    author: "Sgt. Isaiah Campbell"
+    license: "Public domain"
 - id: w-aukus-pact-202109
   date: '2021-09-15'
   title: 美英澳建立AUKUS三边安全伙伴关系
@@ -7939,9 +9275,13 @@
     - 贸易
   sources:
     - 新华网
+    - 维基百科
   image:
-    url: /images/events/2022/rcep_enforcement_2022.jpg
-    caption: 2022年1月1日《区域全面经济伙伴关系协定》（RCEP）正式生效，覆盖全球30%人口的全球最大自贸区开启（图为RCEP领导人会议现场）
+    url: "/images/events/2022/w-rcep-enforcement-202201.png"
+    caption: "RCEP成员经济体分布图（事件背景资料图，不冒充协定签署现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3ARCEP.png"
+    author: "Tiger 7253"
+    license: "CC BY-SA 4.0"
 - id: w-tonga-volcano-eruption-202201
   date: '2022-01-15'
   title: 汤加海底火山猛烈喷发并引发海啸
@@ -7970,8 +9310,11 @@
     - 新华网
     - 维基百科
   image:
-    url: /images/events/2022/russia_ukraine_war_2022.jpg
-    caption: 2022年2月24日俄乌冲突全面爆发，重塑二战后欧洲安全格局与全球地缘秩序（图为2022年俄乌局势地图）
+    url: "/images/events/2022/w-russia-ukraine-war-202202.png"
+    caption: "2022年俄乌战争局势地图资料图"
+    source: "https://commons.wikimedia.org/wiki/File%3AWar_in_Ukraine_%282022%29_ru.png"
+    author: "Homoatrox"
+    license: "CC0"
 - id: w-fed-rate-hikes-202203
   date: '2022-03-16'
   title: 美联储开启暴力加息周期，全球金融市场剧烈动荡
@@ -7986,8 +9329,11 @@
     - 新华网
     - 维基百科
   image:
-    url: /images/events/2022/fed_rate_hikes_2022.jpg
-    caption: 2022年3月美联储开启40年来最强暴力加息周期，终结零利率时代，全球汇率与金融体系剧烈动荡
+    url: "/images/events/2022/w-fed-rate-hikes-202203.jpg"
+    caption: "2022年3月16日联邦公开市场委员会会议资料照片，与美联储启动加息周期对应"
+    source: "https://commons.wikimedia.org/wiki/File%3AFOMC_03152022_3000px_Edited-78069_%2851942669420%29.jpg"
+    author: "Federal Reserve"
+    license: "Public domain"
 - id: w-dobbs-supreme-court-202206
   date: '2022-06-24'
   title: 美国最高法院推翻"罗诉韦德案"，终结联邦堕胎权保障
@@ -8012,10 +9358,12 @@
     - 历史转折
   sources:
     - 维基百科
-    - 新华网
   image:
-    url: /images/events/2022/shinzo_abe_2022.jpg
-    caption: 2022年7月8日日本前首相安倍晋三在奈良街头发表演讲时遇刺身亡，引发日本与全球政坛震动（图为安倍晋三生前肖像）
+    url: "/images/events/2022/w-shinzo-abe-assassinated-202207.jpg"
+    caption: "安倍晋三遇刺后奈良大和西大寺站前的悼念花束"
+    source: "https://commons.wikimedia.org/wiki/File%3AThe_floral_tributes_in_front_of_Yamato-Saidaiji_station_on_11th_July_2022.jpg"
+    author: "Tokumeigakarinoaoshima"
+    license: "CC BY-SA 4.0"
 - id: w-queen-elizabeth-pass-202209
   date: '2022-09-08'
   title: 英国女王伊丽莎白二世逝世，查尔斯三世即位
@@ -8031,8 +9379,11 @@
     - 维基百科
     - 新华网
   image:
-    url: /images/events/2022/queen_elizabeth_2022.jpg
-    caption: 2022年9月8日英国女王伊丽莎白二世在苏格兰巴尔莫勒尔堡逝世，享年96岁，在位70载终结一个时代
+    url: "/images/events/2022/w-queen-elizabeth-pass-202209.jpg"
+    caption: "伊丽莎白二世2019年官方肖像资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AQueen_Elizabeth_II_on_3_June_2019.jpg"
+    author: "The White House"
+    license: "Public domain"
 - id: w-nord-stream-sabotage-202209
   date: '2022-09-26'
   title: “北溪”天然气管道发生爆炸泄漏
@@ -8047,8 +9398,11 @@
     - 维基百科
     - 新华网
   image:
-    url: /images/events/2022/nord_stream_sabotage_2022.jpg
-    caption: 2022年9月26日“北溪-1”与“北溪-2”天然气管道发生蓄意爆炸泄露，彻底切断俄欧天然气纽带（图为北溪管道泄露示意图）
+    url: "/images/events/2022/w-nord-stream-sabotage-202209.jpg"
+    caption: "北溪管道爆炸泄漏位置示意资料图"
+    source: "https://commons.wikimedia.org/wiki/File%3ANord_Stream_gasbideak.jpg"
+    author: "Berria"
+    license: "CC BY-SA 4.0"
 - id: w-lula-election-brazil-202210
   date: '2022-10-30'
   title: 卢拉赢得巴西总统大选，拉美“左翼回潮”
@@ -8090,8 +9444,11 @@
     - 维基百科
     - 新华网
   image:
-    url: /images/events/2022/chatgpt_release_2022.jpg
-    caption: 2022年11月30日OpenAI正式向公众发布ChatGPT，引发全球生成式人工智能技术与产业革命爆发现象
+    url: "/images/events/2022/w-chatgpt-release-202211.png"
+    caption: "ChatGPT 产品界面资料图（2022年12月5日，发布后界面；不冒充11月30日发布现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3AChatGPT_Esperanto.png"
+    author: "Stefangrotz"
+    license: "CC BY-SA 4.0"
 - id: w-china-arab-summit-202212
   date: '2022-12-09'
   title: 首届中国-阿拉伯国家峰会在利雅得举行
@@ -8149,8 +9506,11 @@
     - 灾害
     - 地震
   image:
-    url: /images/events/2023/turkey_earthquake_2023.jpg
-    caption: 2023年2月6日土耳其南部爆发7.8级特大地震，导致重大生命伤亡与灾后重建（图为地震废墟现场救援照片）
+    url: "/images/events/2023/w-turkey-quake-202302.jpg"
+    caption: "2023年土耳其—叙利亚地震灾害现场拼图"
+    source: "https://commons.wikimedia.org/wiki/File%3ACollage_of_2023_Turkey%E2%80%93Syria_earthquake.jpg"
+    author: "Adem"
+    license: "CC BY-SA 4.0"
 - id: w-banking-crisis-202303
   date: '2023-03-10'
   title: 硅谷银行倒闭与欧美银行业动荡
@@ -8171,9 +9531,15 @@
   tags:
     - 科技
     - AI
+  sources:
+    - 维基百科
+    - 新华网
   image:
-    url: /images/events/2023/genai_boom_2023.jpg
-    caption: 2023年3月14日GPT-4发布与生成式AI快速崛起，掀起全球人工智能大模型产业与技术文明风暴（图为人工智能芯片与神经网络芯片写真）
+    url: "/images/events/2023/w-genai-boom-202303.png"
+    caption: "GPT-4 视觉能力示例资料图（OpenAI，2023年3月；事件背景图，不冒充3月14日发布会现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3AGpt-4-visual.png"
+    author: "OpenAI"
+    license: "CC BY-SA 4.0"
 - id: w-sudan-civil-war-202304
   date: '2023-04-15'
   title: 苏丹内战爆发
@@ -8194,9 +9560,15 @@
   tags:
     - 卫生
     - 全球
+  sources:
+    - 新华网
+    - 维基百科
   image:
-    url: /images/events/2023/covid_emergency_end_2023.jpg
-    caption: 2023年5月5日世卫组织宣布新冠疫情不再构成“国际关注的突发公共卫生事件”，三年全球抗疫紧急状态终结（图为世卫组织日内瓦总部）
+    url: "/images/events/2023/w-covid-emergency-end-202305.jpg"
+    caption: "世界卫生组织日内瓦总部与旗帜资料照片（事件背景图，不冒充 2023 年 5 月 5 日现场）"
+    source: "https://commons.wikimedia.org/wiki/File%3AWorld_Health_Organization_Headquarters_and_Flag.jpg"
+    author: "United States Mission Geneva"
+    license: "CC BY 2.0"
 - id: w-chandrayaan3-202308
   date: '2023-08-23'
   title: 印度月船三号成功登月
@@ -8208,8 +9580,11 @@
     - 航天
     - 科技
   image:
-    url: /images/events/2023/chandrayaan3_landing_2023.jpg
-    caption: 2023年8月23日印度“月船三号”成功在月球南极附近着陆，人类首次实现探月器月球南极软着陆（图为月船三号探测器实物照片）
+    url: "/images/events/2023/w-chandrayaan3-202308.png"
+    caption: "月船三号任务使用的Pragyan月球车资料图"
+    source: "https://commons.wikimedia.org/wiki/File%3AChandrayaan-3_Pragyan_rover.png"
+    author: "Indian Space Research Organisation"
+    license: "GODL-India"
 - id: w-brics-g20-202308
   date: '2023-08-24'
   title: 金砖国家扩员与非盟加入G20
@@ -8231,8 +9606,11 @@
     - 环境
     - 核安全
   image:
-    url: /images/events/2023/fukushima_daiichi_2023.jpg
-    caption: 2023年8月24日日本强行启动福岛核污染水排海，引发全球海洋生态与食品安全极大关注（图为福岛第一核电站实景）
+    url: "/images/events/2023/w-fukushima-discharge-202308.jpg"
+    caption: "福岛第一核电站储水罐资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3AFukushima_Daiichi_nuclear_plant_Water_Tanks_%2802813315%29.jpg"
+    author: "IAEA Imagebank"
+    license: "CC BY-SA 2.0"
 - id: w-extreme-disasters-202309
   date: '2023-09-10'
   title: 利比亚溃坝与摩洛哥地震等极端灾害
@@ -8254,8 +9632,11 @@
     - 战争
     - 中东
   image:
-    url: /images/events/2023/israel_hamas_war_2023.jpg
-    caption: 2023年10月7日新一轮巴以冲突爆发，引发中东数十年来最严重的军事冲突与地缘局势震荡（图为2023年10月现场拍摄真实照片）
+    url: "/images/events/2023/w-israel-hamas-war-202310.jpg"
+    caption: "2023年10月加沙地带遭破坏建筑的资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3ADamage_in_Gaza_Strip_during_the_October_2023_-_29.jpg"
+    author: "WAFA / APAimages"
+    license: "CC BY-SA 3.0"
 - id: w-xijinping-biden-202311
   date: '2023-11-15'
   title: 中美元首旧金山会晤
@@ -8266,9 +9647,15 @@
   tags:
     - 外交
     - 中美
+  sources:
+    - 新华网
+    - 维基百科
   image:
-    url: /images/events/2023/xi_biden_summit_2023.jpg
-    caption: 2023年11月15日中美元首在旧金山举行会晤，开辟面向未来的“旧金山愿景”（图为中美元首会晤现场摄影）
+    url: "/images/events/2023/w-xijinping-biden-202311.jpg"
+    caption: "2023年11月15日中美元首在美国旧金山会晤资料照片"
+    source: "https://commons.wikimedia.org/wiki/File%3APresident_Biden_meeting_with_President_Xi_%282023%29.jpg"
+    author: "Office of the President of the United States"
+    license: "Public domain"
 - id: w-hottest-year-202311
   date: '2023-11-30'
   title: 全球最热一年与迪拜气候大会

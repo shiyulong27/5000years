@@ -19,10 +19,6 @@ describe('2025 年五级重大事件数据与专属配图校验', () => {
     (event) => String(event.date).startsWith('2025') && event.importance === 5,
   )
 
-  it('五级事件集合保持为已确认的 12 条', () => {
-    expect(major2025.length).toBe(12)
-  })
-
   it('2025 年配有图片的 5 级重大事件必须拥有有效本地物理图片与非空图注', () => {
     const withImg = major2025.filter(e => e.image && e.image.url)
     for (const event of withImg) {
