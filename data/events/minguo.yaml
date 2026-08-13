@@ -43,6 +43,54 @@
   summary: 日本关东军炸毁柳条湖段铁路，袭击沈阳北大营，占领东北全境，十四年抗战揭幕。
   confidence: 确定
 
+- id: cn-fifth-encirclement-campaign-193404
+  date: '1934-04-01'
+  title: 中央苏区第五次反“围剿”陷入失利
+  category: 战争
+  importance: 4
+  summary: 国民党军队以堡垒推进等方式持续压缩中央苏区，红军在军事指挥和战略应对上遭受严重挫折，中央苏区形势急剧恶化。
+  confidence: 确定
+  tags:
+    - 第五次反围剿
+    - 中央苏区
+    - 红军
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 中国共产党新闻网
+
+- id: cn-long-march-begins-193410
+  date: '1934-10-16'
+  title: 中央红军开始长征
+  category: 战争
+  importance: 5
+  summary: 中央红军主力从江西于都等地出发，突破国民党军封锁线，开始战略转移。长征保存了中国共产党和红军骨干力量，并深刻改变中国革命的空间格局和领导格局。
+  confidence: 确定
+  tags:
+    - 长征
+    - 中央红军
+    - 中国共产党
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 中国共产党新闻网
+
+- id: cn-xiang-river-battle-193411
+  date: '1934-11-25'
+  title: 湘江战役爆发
+  category: 战争
+  importance: 4
+  summary: 中央红军在突破第四道封锁线时于湘江地区遭受重大损失，部队人数锐减。战役惨痛后果推动党内重新反思军事路线和指挥问题。
+  confidence: 确定
+  tags:
+    - 湘江战役
+    - 长征
+    - 红军
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 中国共产党新闻网
+
 - id: cn-zunyi-conference-193501
   date: '1935-01-15'
   title: 遵义会议召开

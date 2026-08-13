@@ -44,6 +44,51 @@
   importance: 5
   summary: 华尔街股市崩盘引发全球经济大萧条，数千万人失业，加深了国际危机。
   confidence: 确定
+- id: w-night-long-knives-193406
+  date: '1934-06-30'
+  title: 长刀之夜发生
+  category: 政治
+  importance: 5
+  summary: 希特勒清洗冲锋队领导层和其他政治对手，巩固纳粹党、国防军和国家机器之间的权力关系，纳粹独裁进一步稳定。
+  confidence: 确定
+  tags:
+    - 长刀之夜
+    - 纳粹德国
+    - 政治清洗
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-hitler-fuhrer-193408
+  date: '1934-08-02'
+  title: 希特勒兼任德国元首
+  category: 政治
+  importance: 5
+  summary: 德国总统兴登堡去世后，希特勒合并总统和总理权力，自称“元首兼帝国总理”，德国国家权力进一步集中于纳粹独裁体制。
+  confidence: 确定
+  tags:
+    - 希特勒
+    - 纳粹德国
+    - 独裁体制
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-ussr-joins-league-193409
+  date: '1934-09-18'
+  title: 苏联加入国际联盟
+  category: 政治
+  importance: 4
+  summary: 苏联加入国际联盟并成为常任理事国，反映欧洲安全局势恶化下的外交调整，也体现集体安全机制在战间期末期的尝试。
+  confidence: 确定
+  tags:
+    - 苏联
+    - 国际联盟
+    - 集体安全
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-saar-plebiscite-193501
   date: '1935-01-13'
   title: 萨尔公投决定回归德国
