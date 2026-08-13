@@ -70,3 +70,108 @@
   importance: 5
   summary: 日本签署无条件投降书，中国取得抗日战争完全胜利，收复台湾及澎湖列岛。
   confidence: 确定
+
+- id: cn-may-day-slogans-194804
+  date: '1948-04-30'
+  title: 中共中央发布“五一口号”
+  category: 政治
+  importance: 4
+  summary: 中共中央发布纪念“五一”劳动节口号，号召各民主党派、人民团体和社会贤达召开政治协商会议、成立民主联合政府，为新政协筹备和新中国建立奠定政治基础。
+  confidence: 确定
+  tags:
+    - 新政协
+    - 统一战线
+    - 建国筹备
+  sources:
+    - 新华网
+    - 中国共产党新闻网
+
+- id: cn-litang-earthquake-194805
+  date: '1948-05-25'
+  title: 川西理塘—稻城发生强烈地震
+  category: 灾害
+  importance: 4
+  summary: 西康省理塘、稻城一带发生约7.3级强烈地震，造成严重人员伤亡和房屋、寺院损毁，是20世纪中国西南地区破坏性较强的地震之一。
+  confidence: 确定
+  tags:
+    - 地震
+    - 四川
+    - 自然灾害
+  sources:
+    - 中国地震局
+    - 美国地质调查局
+
+- id: cn-liaoshen-campaign-194809
+  date: '1948-09-12'
+  title: 辽沈战役打响
+  category: 战争
+  importance: 5
+  summary: 东北人民解放军发起辽沈战役，先后攻克锦州、长春和沈阳，歼灭国民党军主力约47万人，解放东北全境，使全国军事形势发生根本转折。
+  confidence: 确定
+  tags:
+    - 解放战争
+    - 三大战役
+    - 东北
+  sources:
+    - 新华网
+    - 中国共产党新闻网
+
+- id: cn-huaihai-campaign-194811
+  date: '1948-11-06'
+  title: 淮海战役打响
+  category: 战争
+  importance: 5
+  summary: 华东野战军和中原野战军发起淮海战役，在广大群众支援下歼灭国民党军主力约55.5万人，基本解放长江以北的华东和中原地区。
+  confidence: 确定
+  tags:
+    - 解放战争
+    - 三大战役
+    - 淮海
+  sources:
+    - 新华网
+    - 中国共产党新闻网
+
+- id: cn-pingjin-campaign-194811
+  date: '1948-11-29'
+  title: 平津战役打响
+  category: 战争
+  importance: 4
+  summary: 东北野战军和华北军区部队发起平津战役，攻克天津并促成北平和平解放，使华北大部获得解放，三大战役由此进入最后阶段。
+  confidence: 确定
+  tags:
+    - 解放战争
+    - 三大战役
+    - 北平和平解放
+  sources:
+    - 新华网
+    - 中国共产党新闻网
+
+- id: cn-pboc-first-rmb-194812
+  date: '1948-12-01'
+  title: 中国人民银行成立并发行第一套人民币
+  category: 经济
+  importance: 4
+  summary: 中国人民银行在石家庄成立，同日开始发行第一套人民币，逐步统一各解放区货币，为恢复经济秩序和建立新中国统一金融体系创造条件。
+  confidence: 确定
+  tags:
+    - 中国人民银行
+    - 人民币
+    - 金融
+  sources:
+    - 中国人民银行
+    - 新华网
+
+- id: cn-kiangya-disaster-194812
+  date: '1948-12-03'
+  title: “江亚轮”在吴淞口外沉没
+  category: 灾害
+  importance: 4
+  summary: 客轮“江亚轮”自上海驶往宁波途中在吴淞口外爆炸沉没，造成数千人死亡或失踪，是中国近现代伤亡最惨重的海难之一。
+  confidence: 确定
+  tags:
+    - 海难
+    - 上海
+    - 交通事故
+  sources:
+    - 上海市地方志办公室
+    - 中国航海博物馆

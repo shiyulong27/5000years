@@ -10231,3 +10231,153 @@
   tags:
     - 体育
     - 历史转折
+
+- id: w-gatt-provisional-194801
+  date: '1948-01-01'
+  title: 《关税与贸易总协定》开始临时适用
+  category: 经济
+  importance: 4
+  summary: 23个创始缔约方开始临时适用《关税与贸易总协定》（GATT），以削减关税、减少贸易壁垒，为战后多边贸易体系及后来世界贸易组织的发展奠定制度基础。
+  confidence: 确定
+  tags:
+    - GATT
+    - 国际贸易
+    - 战后秩序
+  sources:
+    - 世界贸易组织
+    - 联合国日内瓦办事处
+
+- id: w-gandhi-assassination-194801
+  date: '1948-01-30'
+  title: 圣雄甘地在新德里遇刺身亡
+  category: 政治
+  importance: 4
+  summary: 印度独立运动领袖莫罕达斯·甘地在新德里参加晚祷会途中遭印度教民族主义者枪击身亡，其非暴力思想持续影响全球民权与民族解放运动。
+  confidence: 确定
+  tags:
+    - 印度
+    - 甘地
+    - 非暴力运动
+  sources:
+    - 印度甘地遗产门户
+    - Encyclopaedia Britannica
+
+- id: w-marshall-plan-enacted-194804
+  date: '1948-04-03'
+  title: 美国正式实施马歇尔计划
+  category: 经济
+  importance: 4
+  summary: 美国总统杜鲁门签署《经济合作法》，启动面向西欧的经济援助计划。该计划推动欧洲战后重建，也强化了冷战初期西方阵营的经济与政治联系。
+  confidence: 确定
+  tags:
+    - 马歇尔计划
+    - 欧洲重建
+    - 冷战
+  sources:
+    - 美国国务院历史办公室
+    - 美国国家档案馆
+
+- id: w-who-founded-194804
+  date: '1948-04-07'
+  title: 世界卫生组织正式成立
+  category: 文化
+  importance: 4
+  summary: 《世界卫生组织组织法》正式生效，世界卫生组织成为联合国负责国际公共卫生事务的专门机构；4月7日后来被定为世界卫生日。
+  confidence: 确定
+  tags:
+    - 世界卫生组织
+    - 公共卫生
+    - 联合国
+  sources:
+    - 世界卫生组织
+    - 联合国
+
+- id: w-israel-founded-war-194805
+  date: '1948-05-14'
+  title: 以色列宣布建国，第一次中东战争全面爆发
+  category: 战争
+  importance: 5
+  summary: 以色列在英国结束巴勒斯坦委任统治前夕宣布建国；次日周边阿拉伯国家军队进入巴勒斯坦，战争全面扩大，并造成长期延续的巴以冲突与难民问题。
+  confidence: 确定
+  tags:
+    - 以色列
+    - 第一次中东战争
+    - 巴勒斯坦问题
+  sources:
+    - 联合国
+    - 以色列国家档案馆
+
+- id: w-south-africa-national-party-194805
+  date: '1948-05-26'
+  title: 南非国民党赢得大选，种族隔离制度化
+  category: 政治
+  importance: 4
+  summary: 丹尼尔·马兰领导的国民党在南非大选中获胜并组阁，随后以一系列法律将种族隔离政策系统化，开启持续数十年的种族隔离统治。
+  confidence: 确定
+  tags:
+    - 南非
+    - 种族隔离
+    - 人权
+  sources:
+    - 南非历史在线
+    - Encyclopaedia Britannica
+
+- id: w-manchester-baby-194806
+  date: '1948-06-21'
+  title: “曼彻斯特婴儿”运行首个存储程序
+  category: 文化
+  importance: 4
+  summary: 英国曼彻斯特大学研制的“小型实验机”成功运行存储在电子存储器中的程序，成为首台运行电子存储程序的计算机，为现代通用计算机发展迈出关键一步。
+  confidence: 确定
+  tags:
+    - 计算机
+    - 存储程序
+    - 科技史
+  sources:
+    - 曼彻斯特大学
+    - 英国计算机学会
+
+- id: w-berlin-blockade-airlift-194806
+  date: '1948-06-24'
+  title: 苏联封锁西柏林，柏林空运展开
+  category: 政治
+  importance: 5
+  summary: 苏联切断西方占领区通往西柏林的陆路和水路交通，美英等国随后以大规模空运维持城市供应。危机持续近一年，成为冷战早期第一次重大对峙。
+  confidence: 确定
+  tags:
+    - 柏林封锁
+    - 柏林空运
+    - 冷战
+  sources:
+    - 美国国务院历史办公室
+    - 德意志历史博物馆
+
+- id: w-korean-two-states-194808
+  date: '1948-08-15'
+  title: 朝鲜半岛南北两个政权先后成立
+  category: 政治
+  importance: 4
+  summary: 大韩民国于8月15日在半岛南部成立，朝鲜民主主义人民共和国于9月9日在北部成立，战后占领区分裂由此制度化，并为此后的朝鲜战争埋下伏笔。
+  confidence: 确定
+  tags:
+    - 朝鲜半岛
+    - 冷战
+    - 国家分裂
+  sources:
+    - 联合国
+    - Encyclopaedia Britannica
+
+- id: w-udhr-adopted-194812
+  date: '1948-12-10'
+  title: 联合国大会通过《世界人权宣言》
+  category: 政治
+  importance: 5
+  summary: 联合国大会在巴黎通过《世界人权宣言》，系统阐明人人享有的基本权利和自由，成为现代国际人权规范及后续人权公约的重要基础。
+  confidence: 确定
+  tags:
+    - 世界人权宣言
+    - 联合国
+    - 人权
+  sources:
+    - 联合国
+    - 联合国人权事务高级专员办事处
