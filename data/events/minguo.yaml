@@ -61,6 +61,102 @@
   summary: 日军在北平卢沟桥发动挑衅，中国守军奋起反击，中华民族全面抗日战争爆发。
   confidence: 确定
 
+- id: cn-operation-ichigo-194404
+  date: '1944-04-17'
+  title: 日军发动一号作战，豫湘桂战役爆发
+  category: 战争
+  importance: 5
+  summary: 日军为打通大陆交通线、摧毁中美空军基地而发动一号作战，战火从河南、湖南延至广西，中国正面战场遭受严重挫折，国民政府统治危机与战时动员困境进一步暴露。
+  confidence: 确定
+  tags:
+    - 豫湘桂战役
+    - 一号作战
+    - 抗日战争
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+  image:
+    url: /images/events/1944/cn-operation-ichigo-194404.jpg
+    caption: 1944年日军一号作战计划示意图，展示豫湘桂战役主要推进方向
+    source: https://commons.wikimedia.org/wiki/File:Japanese_Ichigo_Plan_-_April_1944.jpg
+    author: United States Military Academy, Department of History
+    license: Public domain
+
+- id: cn-chinese-expeditionary-force-myitkyina-194405
+  date: '1944-05'
+  title: 中国远征军缅北滇西反攻取得进展
+  category: 战争
+  importance: 4
+  summary: 中国驻印军、中国远征军与盟军在缅北、滇西持续反攻，密支那战役和腾冲、松山等作战相继展开，为恢复中印公路交通线和改善中国战区补给条件创造条件。
+  confidence: 确定
+  tags:
+    - 中国远征军
+    - 缅北滇西战役
+    - 抗日战争
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-dixie-mission-yanan-194407
+  date: '1944-07-22'
+  title: 美军观察组抵达延安
+  category: 政治
+  importance: 4
+  summary: 美国陆军观察组抵达延安，与中共中央及敌后根据地接触，评估中共抗战力量和华北敌后局势，成为战时中美关系与国共关系中的重要外交观察节点。
+  confidence: 确定
+  tags:
+    - 延安
+    - 美军观察组
+    - 抗战外交
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-democratic-coalition-government-194409
+  date: '1944-09'
+  title: 中共提出建立民主联合政府主张
+  category: 政治
+  importance: 4
+  summary: 抗战后期，中共围绕战后中国政治安排提出废除国民党一党专政、建立民主联合政府的主张，推动国共政治分歧从战时合作转向战后国家制度安排之争。
+  confidence: 确定
+  tags:
+    - 民主联合政府
+    - 国共关系
+    - 战后政治
+  sources:
+    - 中文维基百科
+    - 中国共产党新闻网
+
+- id: cn-cpc-sixth-seventh-plenum-194405
+  date: '1944-05-21'
+  title: 中共六届七中全会在延安召开
+  category: 政治
+  importance: 4
+  summary: 中共六届七中全会在延安召开，持续至1945年4月，通过党内历史问题决议并为中共七大作组织和政治准备，是整风运动后党内路线统一的重要环节。
+  confidence: 确定
+  tags:
+    - 中共六届七中全会
+    - 延安整风
+    - 中共七大
+  sources:
+    - 中国共产党新闻网
+    - 中文维基百科
+
+- id: cn-chen-jiageng-yanan-194406
+  date: '1944-06'
+  title: 陈嘉庚发表《南侨回忆录》
+  category: 文化
+  importance: 4
+  summary: 陈嘉庚根据战时回国慰劳考察经历出版《南侨回忆录》，其中关于重庆、延安及抗战政治生态的观察在华侨社会和舆论中产生影响，成为战时中国政治评价的重要文本之一。
+  confidence: 确定
+  tags:
+    - 陈嘉庚
+    - 华侨
+    - 抗战舆论
+  sources:
+    - 中文维基百科
+    - 中国共产党新闻网
+
 
 - id: victory-over-japan-1945
   date: '1945-09-02'

@@ -2151,6 +2151,25 @@
 - 配图：新增 [Imperial Rescript on the Termination of the War1.jpg](https://commons.wikimedia.org/wiki/File:Imperial_Rescript_on_the_Termination_of_the_War1.jpg)，作者未详，Commons 标注 Public domain。图注明确说明其为 1945 年 8 月 14 日《终战诏书》文件图，8 月 15 日通过广播播出，非广播现场照片。
 - 验证：`npm run validate` 通过；脚本确认 `w-japan-announces-surrender-194508` 与 `w-japan-surrenders-194509` 均存在、日期分别为 `1945-08-15` 与 `1945-09-02`，且图片文件存在并大于 1 KiB；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
 
+## 1944 年事件补全审查（2026-08-13）
+
+- 审查范围：1944 年中国事件与世界事件；此前 `data/events/minguo.yaml`、`data/world/modern.yaml` 中均无 1944 年事件，且无 `src/pages/1944.astro` 与时间轴入口。
+- 修改后统计：新增中国事件 6 条、世界事件 10 条；其中五星事件 4 条、四星事件 12 条；五星事件均已配图。
+- 页面与路由：新增 `src/pages/1944.astro`，并在 `Timeline.astro` 与 `AxisCell.astro` 注册 1944 年入口。
+- 已读取/核验来源：中英文维基百科 1944 年、1944 in China、Operation Ichi-Go、Dixie Mission、相关二战战役与国际会议条目；补查中国共产党新闻网、共产党员网、联合国、IMF、World Bank、ICAO 等机构资料。1978 年以前未找到可直接作为年度新闻清单的新华社 1944 年年度十大新闻正文，已用维基百科、党史资料和国际组织资料交叉核验。
+- 新增中国事件：`cn-operation-ichigo-194404`、`cn-chinese-expeditionary-force-myitkyina-194405`、`cn-dixie-mission-yanan-194407`、`cn-democratic-coalition-government-194409`、`cn-cpc-sixth-seventh-plenum-194405`、`cn-chen-jiageng-yanan-194406`。
+- 新增世界事件：`w-cassino-monastery-bombed-194402`、`w-normandy-landings-194406`、`w-operation-bagration-194406`、`w-bretton-woods-conference-194407`、`w-warsaw-uprising-194408`、`w-dumbarton-oaks-conference-194408`、`w-liberation-of-paris-194408`、`w-battle-leyte-gulf-194410`、`w-chicago-convention-194412`、`w-ardennes-offensive-194412`。
+
+| 事件 ID | Commons 文件页 | 作者/机构 | 许可 | 图注边界 |
+|---|---|---|---|---|
+| `cn-operation-ichigo-194404` | [Japanese Ichigo Plan - April 1944.jpg](https://commons.wikimedia.org/wiki/File:Japanese_Ichigo_Plan_-_April_1944.jpg) | United States Military Academy, Department of History | Public domain | 一号作战计划示意图，非战场现场照片 |
+| `w-normandy-landings-194406` | [Into the Jaws of Death 23-0455M edit.jpg](https://commons.wikimedia.org/wiki/File:Into_the_Jaws_of_Death_23-0455M_edit.jpg) | Robert F. Sargent / United States Coast Guard | Public domain | 1944年6月6日奥马哈海滩登陆现场 |
+| `w-operation-bagration-194406` | [BagrationMap2.jpg](https://commons.wikimedia.org/wiki/File:BagrationMap2.jpg) | United States Military Academy, Department of History | Public domain | 巴格拉季昂行动部署和推进示意图，非战场照片 |
+| `w-bretton-woods-conference-194407` | [Coe Bretton Woods 1944.jpg](https://commons.wikimedia.org/wiki/File:Coe_Bretton_Woods_1944.jpg) | International Monetary Fund | Public domain | 1944年7月布雷顿森林会议代表合影 |
+
+- 未配图说明：其余 12 条四星事件不强制配图；未使用版权不明图片或与事件关联较弱的机构外景图。
+- 验证：`npm run validate` 通过；脚本检查 1944 年全部五星事件均有图片且本地文件大于 1 KiB；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
+
 ## 1947 年事件补全审查（2026-08-13）
 
 - 审查范围：1947 年中国事件 5 条、世界事件 6 条；其中五级 7 条、四级 4 条。

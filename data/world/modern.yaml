@@ -54,6 +54,175 @@
   importance: 5
   summary: 德国入侵波兰，二战全面爆发，战火遍及全球，造成空前伤亡。
   confidence: 确定
+
+- id: w-cassino-monastery-bombed-194402
+  date: '1944-02-15'
+  title: 盟军轰炸卡西诺山修道院
+  category: 战争
+  importance: 4
+  summary: 意大利战役中，盟军轰炸卡西诺山本笃会修道院，随后围绕古斯塔夫防线展开激烈争夺，反映欧洲战场推进中的艰难攻坚与文化遗产损毁争议。
+  confidence: 确定
+  tags:
+    - 意大利战役
+    - 第二次世界大战
+    - 卡西诺山
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-normandy-landings-194406
+  date: '1944-06-06'
+  title: 诺曼底登陆开辟西线战场
+  category: 战争
+  importance: 5
+  summary: 盟军在法国诺曼底实施大规模两栖登陆，建立西欧大陆桥头堡，迫使德国同时承受东西两线压力，成为欧洲战场走向纳粹德国败亡的决定性转折之一。
+  confidence: 确定
+  tags:
+    - 诺曼底登陆
+    - 霸王行动
+    - 二战转折
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+  image:
+    url: /images/events/1944/w-normandy-landings-194406.jpg
+    caption: 1944年6月6日，美军第1步兵师士兵在奥马哈海滩登陆
+    source: https://commons.wikimedia.org/wiki/File:Into_the_Jaws_of_Death_23-0455M_edit.jpg
+    author: Robert F. Sargent, United States Coast Guard
+    license: Public domain
+
+- id: w-operation-bagration-194406
+  date: '1944-06-22'
+  title: 苏军发动巴格拉季昂行动
+  category: 战争
+  importance: 5
+  summary: 苏军在白俄罗斯方向发动巴格拉季昂行动，重创德军中央集团军群，收复大片苏联领土并推进至东欧，根本改变东线力量对比。
+  confidence: 确定
+  tags:
+    - 巴格拉季昂行动
+    - 苏德战争
+    - 二战转折
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+  image:
+    url: /images/events/1944/w-operation-bagration-194406.jpg
+    caption: 巴格拉季昂行动期间苏德双方部署与推进方向示意图
+    source: https://commons.wikimedia.org/wiki/File:BagrationMap2.jpg
+    author: United States Military Academy, Department of History
+    license: Public domain
+
+- id: w-bretton-woods-conference-194407
+  date: '1944-07-01'
+  title: 布雷顿森林会议召开
+  category: 经济
+  importance: 5
+  summary: 44个同盟国代表在美国新罕布什尔州布雷顿森林召开联合国货币金融会议，设计国际货币基金组织和世界银行等制度框架，为战后国际金融秩序奠定基础。
+  confidence: 确定
+  tags:
+    - 布雷顿森林体系
+    - IMF
+    - 世界银行
+  sources:
+    - IMF
+    - World Bank
+    - 英文维基百科
+  image:
+    url: /images/events/1944/w-bretton-woods-conference-194407.jpg
+    caption: 1944年7月布雷顿森林会议开幕后代表合影
+    source: https://commons.wikimedia.org/wiki/File:Coe_Bretton_Woods_1944.jpg
+    author: International Monetary Fund
+    license: Public domain
+
+- id: w-warsaw-uprising-194408
+  date: '1944-08-01'
+  title: 华沙起义爆发
+  category: 战争
+  importance: 4
+  summary: 波兰家乡军在华沙发动反德起义，试图在苏军抵达前解放首都；起义最终被德军镇压，城市遭到大规模破坏，成为东欧战后政治格局的重要悲剧节点。
+  confidence: 确定
+  tags:
+    - 华沙起义
+    - 波兰
+    - 第二次世界大战
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-dumbarton-oaks-conference-194408
+  date: '1944-08-21'
+  title: 敦巴顿橡树园会议讨论联合国架构
+  category: 政治
+  importance: 4
+  summary: 美国、英国、苏联和中国代表分阶段在华盛顿敦巴顿橡树园会谈，拟定战后国际安全组织方案，为旧金山会议和联合国成立奠定制度草案。
+  confidence: 确定
+  tags:
+    - 联合国
+    - 战后秩序
+    - 国际组织
+  sources:
+    - United Nations
+    - 英文维基百科
+
+- id: w-liberation-of-paris-194408
+  date: '1944-08-25'
+  title: 巴黎解放
+  category: 战争
+  importance: 4
+  summary: 法国内地抵抗力量与盟军部队进入巴黎，德军守军投降，巴黎结束纳粹占领，法国临时政府权威得以强化。
+  confidence: 确定
+  tags:
+    - 巴黎解放
+    - 法国抵抗运动
+    - 西线战场
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-battle-leyte-gulf-194410
+  date: '1944-10-23'
+  title: 莱特湾海战打响
+  category: 战争
+  importance: 4
+  summary: 美日海军在菲律宾周边爆发莱特湾海战，日军联合舰队主力遭受重创，盟军收复菲律宾的战役获得关键海上保障，太平洋战争进入日本防御崩溃阶段。
+  confidence: 确定
+  tags:
+    - 莱特湾海战
+    - 太平洋战争
+    - 菲律宾
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-chicago-convention-194412
+  date: '1944-12-07'
+  title: 《国际民用航空公约》签署
+  category: 政治
+  importance: 4
+  summary: 多国在芝加哥签署《国际民用航空公约》，确立战后国际民航基本规则，并为国际民用航空组织的成立奠定制度基础。
+  confidence: 确定
+  tags:
+    - 国际民航
+    - 芝加哥公约
+    - ICAO
+  sources:
+    - ICAO
+    - 英文维基百科
+
+- id: w-ardennes-offensive-194412
+  date: '1944-12-16'
+  title: 阿登反击战爆发
+  category: 战争
+  importance: 4
+  summary: 德军在阿登地区发动西线最后一次大规模攻势，短暂突破盟军防线后被遏止，德国已无力恢复战略主动权，西线战事进入最后阶段。
+  confidence: 确定
+  tags:
+    - 阿登反击战
+    - 突出部战役
+    - 西线战场
+  sources:
+    - 英文维基百科
+    - 中文维基百科
 - id: w-un-1945
   date: '1945-10-24'
   title: 联合国成立
