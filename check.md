@@ -2182,7 +2182,7 @@
 | 事件 ID | Commons 文件页 | 作者/机构 | 许可 | 图注边界 |
 |---|---|---|---|---|
 | `cn-cairo-conference-194311` | [Cairo conference.jpg](https://commons.wikimedia.org/wiki/File:Cairo_conference.jpg) | United States Government | Public domain | 开罗会议三国领导人合影 |
-| `w-stalingrad-surrender-194302` | [Bundesarchiv Bild 183-J17815](https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J17815,_Russland,_Kampf_um_Stalingrad,_Soldaten.jpg) | Bundesarchiv | CC BY-SA 3.0 de | 斯大林格勒战役战场背景资料，非2月2日投降现场 |
+| `w-stalingrad-surrender-194302` | [Bundesarchiv Bild 183-J17815, Luftangriff](https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J17815,_Russland,_Kampf_um_Stalingrad,_Luftangriff.jpg) | Bundesarchiv；摄影者未详 | CC BY-SA 3.0 de | 斯大林格勒战役空袭背景资料，非2月2日投降现场 |
 | `w-kursk-battle-194307` | [Soviet troops and T-34 tanks counterattacking Kursk](https://commons.wikimedia.org/wiki/File:Soviet_troops_and_T-34_tanks_counterattacking_Kursk_Voronezh_Front_July_1943.jpg) | RIA Novosti archive | CC BY-SA 3.0 | 库尔斯克战役期间苏军反击照片 |
 | `w-tehran-conference-194311` | [Tehran Conference, 1943.jpg](https://commons.wikimedia.org/wiki/File:Tehran_Conference,_1943.jpg) | United States Army | Public domain | 德黑兰会议三国领导人合影 |
 
