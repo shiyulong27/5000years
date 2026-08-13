@@ -44,6 +44,81 @@
   importance: 5
   summary: 华尔街股市崩盘引发全球经济大萧条，数千万人失业，加深了国际危机。
   confidence: 确定
+- id: w-hitler-chancellor-193301
+  date: '1933-01-30'
+  title: 希特勒出任德国总理
+  category: 政治
+  importance: 5
+  summary: 希特勒被任命为德国总理，纳粹党取得国家权力入口。随后德国迅速走向一党独裁和对外扩张，成为二战和大屠杀的重要起点。
+  confidence: 确定
+  tags:
+    - 希特勒
+    - 纳粹德国
+    - 历史转折
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-reichstag-fire-193302
+  date: '1933-02-27'
+  title: 德国国会纵火案发生
+  category: 政治
+  importance: 4
+  summary: 德国国会大厦发生火灾，纳粹政府借机打击共产党和其他政治反对派，并推动紧急法令扩大国家镇压权力。
+  confidence: 确定
+  tags:
+    - 国会纵火案
+    - 纳粹德国
+    - 政治镇压
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-new-deal-begins-193303
+  date: '1933-03-04'
+  title: 罗斯福新政开始
+  category: 经济
+  importance: 5
+  summary: 富兰克林·罗斯福就任美国总统后启动新政，通过银行整顿、公共工程、社会保障和经济监管等政策应对大萧条，深刻改变美国政府与经济社会关系。
+  confidence: 确定
+  tags:
+    - 罗斯福新政
+    - 大萧条
+    - 美国经济
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-enabling-act-193303
+  date: '1933-03-23'
+  title: 德国《授权法》通过
+  category: 政治
+  importance: 5
+  summary: 德国国会通过《授权法》，允许希特勒政府在无需议会正常立法程序的情况下制定法律，魏玛共和国宪政机制被实质摧毁，纳粹独裁确立。
+  confidence: 确定
+  tags:
+    - 授权法
+    - 纳粹德国
+    - 独裁体制
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-germany-leaves-league-193310
+  date: '1933-10-14'
+  title: 德国退出国际联盟和裁军会议
+  category: 政治
+  importance: 4
+  summary: 纳粹德国宣布退出国际联盟和日内瓦裁军会议，公开挑战战后国际秩序和集体安全机制，为后续重整军备铺路。
+  confidence: 确定
+  tags:
+    - 国际联盟
+    - 德国外交
+    - 二战前夜
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-night-long-knives-193406
   date: '1934-06-30'
   title: 长刀之夜发生

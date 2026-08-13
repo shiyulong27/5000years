@@ -43,6 +43,51 @@
   summary: 日本关东军炸毁柳条湖段铁路，袭击沈阳北大营，占领东北全境，十四年抗战揭幕。
   confidence: 确定
 
+- id: cn-defense-great-wall-193301
+  date: '1933-01-01'
+  title: 长城抗战爆发
+  category: 战争
+  importance: 4
+  summary: 日军进攻热河并威胁长城沿线，中国军队在古北口、喜峰口等地抵抗，长城抗战成为九一八事变后华北抗日的重要战役。
+  confidence: 确定
+  tags:
+    - 长城抗战
+    - 热河
+    - 抗日战争
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-tanggu-truce-193305
+  date: '1933-05-31'
+  title: 《塘沽协定》签订
+  category: 政治
+  importance: 4
+  summary: 中日双方签署《塘沽协定》，中国军队撤出冀东部分地区并形成非武装区，华北主权与安全形势进一步恶化。
+  confidence: 确定
+  tags:
+    - 塘沽协定
+    - 华北危机
+    - 中日关系
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
+- id: cn-fifth-encirclement-begins-193309
+  date: '1933-09-25'
+  title: 第五次“围剿”开始
+  category: 战争
+  importance: 4
+  summary: 国民党军队对中央苏区发动第五次“围剿”，采取堡垒推进等策略，给红军和中央苏区造成持续压力，并直接影响后来的长征。
+  confidence: 确定
+  tags:
+    - 第五次围剿
+    - 中央苏区
+    - 国共内战
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+
 - id: cn-fifth-encirclement-campaign-193404
   date: '1934-04-01'
   title: 中央苏区第五次反“围剿”陷入失利
