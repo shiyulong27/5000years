@@ -34,6 +34,66 @@
   summary: 中国共产党第一次全国代表大会于上海召集，标志着中国共产党正式成立。
   confidence: 确定
 
+- id: cn-hong-kong-seamen-strike-192201
+  date: '1922-01-12'
+  title: 香港海员大罢工开始
+  category: 经济
+  importance: 4
+  summary: 香港海员因工资和待遇问题发动大罢工，并得到广州方面支持，罢工推动华南工人运动高涨，也显示早期工人组织的动员能力。
+  confidence: 确定
+  tags:
+    - 香港海员大罢工
+    - 工人运动
+    - 香港
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-first-zhili-fengtian-war-192204
+  date: '1922-04-29'
+  title: 第一次直奉战争爆发
+  category: 战争
+  importance: 4
+  summary: 直系与奉系军阀为争夺北京政府控制权爆发战争，直系获胜后控制北洋中央政权，军阀政治进入新的权力组合。
+  confidence: 确定
+  tags:
+    - 第一次直奉战争
+    - 北洋军阀
+    - 直系
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-chen-jiongming-revolt-192206
+  date: '1922-06-16'
+  title: 陈炯明兵变
+  category: 政治
+  importance: 4
+  summary: 陈炯明部在广州炮击总统府，孙中山被迫离粤，护法运动受挫，也促使孙中山进一步寻求改组国民党和外部援助。
+  confidence: 确定
+  tags:
+    - 陈炯明
+    - 孙中山
+    - 护法运动
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-cpc-second-congress-192207
+  date: '1922-07-16'
+  title: 中共二大召开
+  category: 政治
+  importance: 5
+  summary: 中国共产党第二次全国代表大会在上海召开，提出反帝反封建的民主革命纲领，明确党的最低纲领和最高纲领。
+  confidence: 确定
+  tags:
+    - 中共二大
+    - 民主革命纲领
+    - 反帝反封建
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: cn-sun-joffe-manifesto-192301
   date: '1923-01-26'
   title: 孙文越飞宣言发表

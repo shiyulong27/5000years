@@ -33,6 +33,96 @@
   importance: 5
   summary: 布尔什维克在俄国夺取政权，建立苏维埃，成为世界上第一个社会主义国家。
   confidence: 确定
+- id: w-washington-naval-treaty-192202
+  date: '1922-02-06'
+  title: 《华盛顿海军条约》签署
+  category: 政治
+  importance: 4
+  summary: 美国、英国、日本、法国、意大利签署限制主力舰吨位的《华盛顿海军条约》，战间期海军军备控制体系由此建立。
+  confidence: 确定
+  tags:
+    - 华盛顿海军条约
+    - 军备控制
+    - 战间期
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-egypt-independence-192202
+  date: '1922-02-28'
+  title: 英国承认埃及独立
+  category: 政治
+  importance: 4
+  summary: 英国单方面宣布结束对埃及的保护国地位并承认埃及独立，但仍保留若干关键控制权，埃及民族国家建设进入新阶段。
+  confidence: 确定
+  tags:
+    - 埃及独立
+    - 英国
+    - 民族主义
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-bbc-founded-192210
+  date: '1922-10-18'
+  title: BBC 成立
+  category: 文化
+  importance: 4
+  summary: 英国广播公司成立，随后发展为公共广播体系的代表性机构，对现代新闻传播和广播文化产生长期影响。
+  confidence: 确定
+  tags:
+    - BBC
+    - 广播
+    - 大众传媒
+  sources:
+    - 英文维基百科
+    - BBC
+
+- id: w-march-on-rome-192210
+  date: '1922-10-28'
+  title: 向罗马进军
+  category: 政治
+  importance: 5
+  summary: 墨索里尼领导的法西斯党发动向罗马进军，随后被任命为意大利首相，欧洲法西斯主义正式进入执政阶段。
+  confidence: 确定
+  tags:
+    - 墨索里尼
+    - 法西斯主义
+    - 意大利
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-irish-free-state-192212
+  date: '1922-12-06'
+  title: 爱尔兰自由邦成立
+  category: 政治
+  importance: 5
+  summary: 爱尔兰自由邦依据英爱条约正式成立，爱尔兰大部分地区脱离英国直接统治，英国和爱尔兰关系进入新阶段。
+  confidence: 确定
+  tags:
+    - 爱尔兰自由邦
+    - 英爱条约
+    - 国家建立
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-soviet-union-founded-192212
+  date: '1922-12-30'
+  title: 苏联成立
+  category: 政治
+  importance: 5
+  summary: 俄罗斯、乌克兰、白俄罗斯和外高加索苏维埃共和国签署联盟条约，苏维埃社会主义共和国联盟正式成立，20 世纪世界政治格局由此深刻改变。
+  confidence: 确定
+  tags:
+    - 苏联
+    - 国家建立
+    - 历史转折
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-treaty-lausanne-192307
   date: '1923-07-24'
   title: 《洛桑条约》签署
