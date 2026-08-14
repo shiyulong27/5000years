@@ -34,6 +34,66 @@
   summary: 中国共产党第一次全国代表大会于上海召集，标志着中国共产党正式成立。
   confidence: 确定
 
+- id: cn-kmt-first-congress-192401
+  date: '1924-01-20'
+  title: 国民党一大召开
+  category: 政治
+  importance: 5
+  summary: 中国国民党第一次全国代表大会在广州召开，确立联俄、联共、扶助农工政策，第一次国共合作正式形成，国民革命进入新阶段。
+  confidence: 确定
+  tags:
+    - 国民党一大
+    - 第一次国共合作
+    - 国民革命
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-whampoa-military-academy-192406
+  date: '1924-06-16'
+  title: 黄埔军校开学
+  category: 战争
+  importance: 5
+  summary: 黄埔军校在广州正式开学，培养国民革命军骨干，也成为此后国共两党军事干部的重要来源。
+  confidence: 确定
+  tags:
+    - 黄埔军校
+    - 国民革命军
+    - 军事教育
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-beijing-coup-192410
+  date: '1924-10-23'
+  title: 北京政变
+  category: 政治
+  importance: 4
+  summary: 冯玉祥发动北京政变，控制北京并囚禁曹锟，直系军阀政权受重创，北洋政治格局再度重组。
+  confidence: 确定
+  tags:
+    - 北京政变
+    - 冯玉祥
+    - 北洋军阀
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-sun-yat-sen-northbound-192411
+  date: '1924-11-13'
+  title: 孙中山北上
+  category: 政治
+  importance: 4
+  summary: 孙中山应冯玉祥等邀请离粤北上，主张召开国民会议、废除不平等条约，试图在北洋政局震荡中推动全国政治重组。
+  confidence: 确定
+  tags:
+    - 孙中山
+    - 国民会议
+    - 北洋政治
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: cn-sun-yat-sen-death-192503
   date: '1925-03-12'
   title: 孙中山逝世

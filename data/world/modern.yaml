@@ -33,6 +33,81 @@
   importance: 5
   summary: 布尔什维克在俄国夺取政权，建立苏维埃，成为世界上第一个社会主义国家。
   confidence: 确定
+- id: w-lenin-death-192401
+  date: '1924-01-21'
+  title: 列宁逝世
+  category: 政治
+  importance: 5
+  summary: 苏维埃俄国和苏联革命领袖列宁逝世，苏联领导层继承斗争加剧，斯大林等人的权力重组影响此后世界共产主义运动。
+  confidence: 确定
+  tags:
+    - 列宁
+    - 苏联
+    - 历史转折
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-first-labour-government-uk-192401
+  date: '1924-01-22'
+  title: 英国首届工党政府成立
+  category: 政治
+  importance: 4
+  summary: 拉姆齐·麦克唐纳组建英国首届工党政府，工党首次进入执政核心，英国两党政治结构开始发生长期变化。
+  confidence: 确定
+  tags:
+    - 工党
+    - 英国政治
+    - 麦克唐纳
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-caliphate-abolished-192403
+  date: '1924-03-03'
+  title: 土耳其废除哈里发制度
+  category: 政治
+  importance: 5
+  summary: 土耳其大国民议会废除奥斯曼哈里发制度，奥斯曼帝国宗教政治遗产终结，土耳其共和国世俗化改革进入关键阶段。
+  confidence: 确定
+  tags:
+    - 哈里发
+    - 土耳其
+    - 世俗化
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-dawes-plan-192408
+  date: '1924-08-16'
+  title: 道威斯计划通过
+  category: 经济
+  importance: 4
+  summary: 协约国接受道威斯计划，重新安排德国赔款并引入美国贷款，暂时缓和凡尔赛体系下的欧洲金融危机。
+  confidence: 确定
+  tags:
+    - 道威斯计划
+    - 德国赔款
+    - 凡尔赛体系
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-surrealist-manifesto-192410
+  date: '1924-10-15'
+  title: 《超现实主义宣言》发表
+  category: 文化
+  importance: 4
+  summary: 安德烈·布勒东发表《超现实主义宣言》，超现实主义作为现代主义艺术和文学运动正式成形。
+  confidence: 确定
+  tags:
+    - 超现实主义
+    - 现代主义
+    - 艺术
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-serum-run-nome-192501
   date: '1925-01-27'
   title: 诺姆血清接力开始
