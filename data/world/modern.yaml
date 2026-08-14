@@ -33,8 +33,53 @@
   importance: 5
   summary: 布尔什维克在俄国夺取政权，建立苏维埃，成为世界上第一个社会主义国家。
   confidence: 确定
+- id: w-lateran-treaty-192902
+  date: '1929-02-11'
+  title: 《拉特兰条约》签署
+  category: 政治
+  importance: 5
+  summary: 意大利王国与罗马教廷签署《拉特兰条约》，承认梵蒂冈城国主权并解决长期“罗马问题”，现代梵蒂冈国家形态由此确立。
+  confidence: 确定
+  tags:
+    - 梵蒂冈
+    - 拉特兰条约
+    - 意大利
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-first-academy-awards-192905
+  date: '1929-05-16'
+  title: 首届奥斯卡金像奖举行
+  category: 文化
+  importance: 4
+  summary: 美国电影艺术与科学学院在洛杉矶举行首届学院奖颁奖典礼，电影工业的国际化奖项体系开始形成。
+  confidence: 确定
+  tags:
+    - 奥斯卡金像奖
+    - 电影
+    - 好莱坞
+  sources:
+    - 英文维基百科
+    - 奥斯卡官网
+
+- id: w-geneva-pow-convention-192907
+  date: '1929-07-27'
+  title: 1929 年战俘待遇日内瓦公约通过
+  category: 政治
+  importance: 4
+  summary: 日内瓦外交会议通过关于战俘待遇的公约，成为现代国际人道法中规范战俘保护的重要基础。
+  confidence: 确定
+  tags:
+    - 日内瓦公约
+    - 战俘
+    - 国际人道法
+  sources:
+    - ICRC
+    - 英文维基百科
+
 - id: w-great-depression-1929
-  date: '1929'
+  date: '1929-10-24'
   title: 大萧条
   category: 经济
   tags:
@@ -42,8 +87,27 @@
     - 金融
     - 历史转折
   importance: 5
-  summary: 华尔街股市崩盘引发全球经济大萧条，数千万人失业，加深了国际危机。
+  summary: 华尔街股市在“黑色星期四”后持续崩盘，金融恐慌迅速扩散并引发全球经济大萧条，数千万人失业，加深了战间期国际危机。
   confidence: 确定
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-young-plan-192909
+  date: '1929-09-01'
+  title: 杨格计划调整德国赔款
+  category: 经济
+  importance: 4
+  summary: 杨格计划试图重新安排德国一战赔款并减轻战后债务压力，但很快遭遇大萧条冲击，凡尔赛经济秩序继续动摇。
+  confidence: 确定
+  tags:
+    - 杨格计划
+    - 德国赔款
+    - 凡尔赛体系
+  sources:
+    - 英文维基百科
+    - 美国国务院历史资料
+
 - id: w-pluto-discovered-193002
   date: '1930-02-18'
   title: 冥王星被发现

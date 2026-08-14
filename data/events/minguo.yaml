@@ -34,6 +34,66 @@
   summary: 中国共产党第一次全国代表大会于上海召集，标志着中国共产党正式成立。
   confidence: 确定
 
+- id: cn-chiang-gui-war-192903
+  date: '1929-03'
+  title: 蒋桂战争爆发
+  category: 战争
+  importance: 4
+  summary: 南京国民政府与新桂系爆发军事冲突，李宗仁、白崇禧等势力受挫，国民党内部军政矛盾进一步激化，并为后续中原大战埋下伏笔。
+  confidence: 确定
+  tags:
+    - 蒋桂战争
+    - 新桂系
+    - 国民政府
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-sino-soviet-conflict-192907
+  date: '1929-07'
+  title: 中东路事件引发中苏武装冲突
+  category: 战争
+  importance: 4
+  summary: 张学良东北当局试图收回中东铁路控制权，苏联随即与中国发生边境和铁路权益冲突，最终迫使中方恢复此前共同管理安排。
+  confidence: 确定
+  tags:
+    - 中东路事件
+    - 张学良
+    - 中苏关系
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-baise-uprising-192912
+  date: '1929-12-11'
+  title: 百色起义爆发
+  category: 战争
+  importance: 4
+  summary: 邓小平、张云逸等在广西百色发动起义，创建红七军和右江革命根据地，成为中国共产党在西南地区开展武装斗争的重要节点。
+  confidence: 确定
+  tags:
+    - 百色起义
+    - 红七军
+    - 右江根据地
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-gutian-congress-192912
+  date: '1929-12-28'
+  title: 古田会议召开
+  category: 政治
+  importance: 5
+  summary: 红四军第九次党的代表大会在福建上杭古田召开，确立思想建党、政治建军原则，对中国共产党军队建设和后来人民军队制度产生深远影响。
+  confidence: 确定
+  tags:
+    - 古田会议
+    - 政治建军
+    - 红四军
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: cn-left-wing-writers-league-193003
   date: '1930-03-02'
   title: 中国左翼作家联盟成立
