@@ -44,6 +44,66 @@
   importance: 5
   summary: 华尔街股市崩盘引发全球经济大萧条，数千万人失业，加深了国际危机。
   confidence: 确定
+- id: w-spanish-second-republic-193104
+  date: '1931-04-14'
+  title: 西班牙第二共和国成立
+  category: 政治
+  importance: 4
+  summary: 西班牙市政选举后君主制垮台，第二共和国成立。共和国改革和政治分裂深刻影响西班牙社会，并为后来的内战埋下伏笔。
+  confidence: 确定
+  tags:
+    - 西班牙第二共和国
+    - 西班牙政治
+    - 欧洲
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-uk-leaves-gold-standard-193109
+  date: '1931-09-21'
+  title: 英国脱离金本位制
+  category: 经济
+  importance: 5
+  summary: 大萧条压力下，英国暂停英镑兑换黄金并脱离金本位制，标志战间期国际金本位体系遭受重大冲击，全球货币秩序加速重组。
+  confidence: 确定
+  tags:
+    - 金本位制
+    - 大萧条
+    - 英国经济
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-manchurian-crisis-193109
+  date: '1931-09-18'
+  title: 满洲事变引发国际危机
+  category: 战争
+  importance: 5
+  summary: 九一八事变后，日本占领中国东北并与国际联盟发生严重外交冲突，满洲危机暴露集体安全机制的软弱，并成为二战前国际秩序崩坏的关键节点之一。
+  confidence: 确定
+  tags:
+    - 满洲事变
+    - 国际联盟
+    - 日本侵华
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-hoover-moratorium-193106
+  date: '1931-06-20'
+  title: 胡佛暂停债务与赔款支付倡议
+  category: 经济
+  importance: 4
+  summary: 美国总统胡佛提出暂停一年支付政府间战争债务和德国赔款，以缓和大萧条和欧洲金融危机，显示战后债务体系已难以维系。
+  confidence: 确定
+  tags:
+    - 胡佛延期偿付
+    - 德国赔款
+    - 大萧条
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-stimson-doctrine-193201
   date: '1932-01-07'
   title: 美国提出史汀生主义

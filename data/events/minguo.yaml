@@ -35,13 +35,35 @@
   confidence: 确定
 
 - id: september-18-incident-1931
-  date: "1931"
+  date: '1931-09-18'
   title: 九一八事变
   category: 战争
-  tags: [战争, 历史转折]
+  tags:
+    - 战争
+    - 历史转折
+    - 抗日战争
   importance: 5
-  summary: 日本关东军炸毁柳条湖段铁路，袭击沈阳北大营，占领东北全境，十四年抗战揭幕。
+  summary: 日本关东军制造柳条湖事件并袭击沈阳北大营，随后迅速占领东北，九一八事变揭开日本大规模侵华序幕，也成为中国十四年抗战的开端。
   confidence: 确定
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+    - 中国共产党新闻网
+
+- id: cn-nenjiang-bridge-resistance-193111
+  date: '1931-11-04'
+  title: 江桥抗战爆发
+  category: 战争
+  importance: 4
+  summary: 马占山部在嫩江桥地区抵抗日军进攻，成为九一八事变后东北军民早期抗日的重要战斗，激发全国抗日舆论。
+  confidence: 确定
+  tags:
+    - 江桥抗战
+    - 马占山
+    - 东北抗战
+  sources:
+    - 中文维基百科
+    - 英文维基百科
 
 - id: cn-january-28-incident-193201
   date: '1932-01-28'
