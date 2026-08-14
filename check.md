@@ -2475,6 +2475,18 @@
 - 未配图说明：其余 4 条四星事件不强制配图；未使用版权不明图片或与事件关联较弱的现代纪念设施图。
 - 验证：`npm run validate` 通过，校验 904 条事件、47 个朝代、65 位君主、837 条世界事件，保留既有 12 条君主缺口提示；脚本检查 1921 年 6 条五星缺图与本节记录一致，且无图片字段引用不存在文件；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
 
+## 1920 年事件补全审查（2026-08-14）
+
+- 审查范围：1920 年中国事件与世界事件；此前 `data/events/minguo.yaml`、`data/world/modern.yaml` 中均无 1920 年事件，且无 `src/pages/1920.astro`；时间轴入口已包含 1920 年。
+- 修改后统计：新增中国事件 4 条、世界事件 6 条；其中五星事件 6 条、四星事件 4 条；6 条五星事件因当前 Wikimedia 下载限流暂未写入图片字段。
+- 页面与路由：新增 `src/pages/1920.astro`；`Timeline.astro` 与 `AxisCell.astro` 已包含 1920 年入口，本次未重复修改。
+- 已读取/核验来源：中英文维基百科 1920 年、上海共产党早期组织、直皖战争、上海社会主义青年团、海原大地震、国际联盟、凡尔赛条约、卡普政变、色佛尔条约、华沙战役、美国第十九修正案等条目；补查美国国家档案馆和 Wikimedia Commons 图片候选。1978 年以前未找到可直接作为年度新闻清单的新华社 1920 年年度十大新闻正文，已用维基百科、机构资料和历史条目交叉核验。
+- 新增中国事件：`cn-shanghai-communist-group-192008`、`cn-zhili-anhui-war-192007`、`cn-socialist-youth-league-192008`、`cn-haiyuan-earthquake-192012`。
+- 新增世界事件：`w-league-of-nations-founded-192001`、`w-treaty-versailles-effective-192001`、`w-kapp-putsch-192003`、`w-treaty-sevres-192008`、`w-battle-warsaw-192008`、`w-us-19th-amendment-192008`。
+- 暂无合格本地配图：`cn-shanghai-communist-group-192008`、`cn-haiyuan-earthquake-192012`、`w-league-of-nations-founded-192001`、`w-treaty-versailles-effective-192001`、`w-battle-warsaw-192008`、`w-us-19th-amendment-192008`。当前 Wikimedia 下载持续限流，未落地真实图片文件；为避免引用不存在文件，本次保持无图并记录待后续补图。
+- 未配图说明：其余 4 条四星事件不强制配图；未使用版权不明图片或与事件关联较弱的现代纪念设施图。
+- 验证：`npm run validate` 通过，校验 908 条事件、47 个朝代、65 位君主、843 条世界事件，保留既有 12 条君主缺口提示；脚本检查 1920 年 6 条五星缺图与本节记录一致，且无图片字段引用不存在文件；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
+
 ## 1947 年事件补全审查（2026-08-13）
 
 - 审查范围：1947 年中国事件 5 条、世界事件 6 条；其中五级 7 条、四级 4 条。

@@ -25,6 +25,66 @@
   summary: 北京学生因巴黎和会外交失败爆发爱国游行，迅速演变为全国性反帝反封建爱国运动。
   confidence: 确定
 
+- id: cn-shanghai-communist-group-192008
+  date: '1920-08'
+  title: 上海共产党早期组织成立
+  category: 政治
+  importance: 5
+  summary: 陈独秀等人在上海建立共产党早期组织，推动马克思主义传播、工人运动和各地建党活动，为中国共产党成立奠定组织基础。
+  confidence: 确定
+  tags:
+    - 上海共产党早期组织
+    - 陈独秀
+    - 建党准备
+  sources:
+    - 中文维基百科
+    - 党史资料
+
+- id: cn-zhili-anhui-war-192007
+  date: '1920-07-14'
+  title: 直皖战争爆发
+  category: 战争
+  importance: 4
+  summary: 直系、奉系联合对皖系开战，段祺瑞皖系势力迅速失败，北洋政府内部权力结构发生重大变化，军阀派系斗争进入新阶段。
+  confidence: 确定
+  tags:
+    - 直皖战争
+    - 北洋军阀
+    - 段祺瑞
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-socialist-youth-league-192008
+  date: '1920-08-22'
+  title: 上海社会主义青年团成立
+  category: 政治
+  importance: 4
+  summary: 上海社会主义青年团成立，成为中国社会主义青年组织的早期形态，为后来中国社会主义青年团和共青团发展提供组织源流。
+  confidence: 确定
+  tags:
+    - 社会主义青年团
+    - 青年运动
+    - 上海
+  sources:
+    - 中文维基百科
+    - 党史资料
+
+- id: cn-haiyuan-earthquake-192012
+  date: '1920-12-16'
+  title: 海原大地震
+  category: 灾害
+  importance: 5
+  summary: 宁夏海原一带发生强烈地震，造成甘肃、宁夏等地巨大伤亡和山体滑坡、地裂等严重灾害，是中国近代最惨重的地震灾害之一。
+  confidence: 确定
+  tags:
+    - 海原大地震
+    - 宁夏
+    - 灾害
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: cpc-founding-1921
   date: '1921-07-23'
   title: 中国共产党成立

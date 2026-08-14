@@ -33,6 +33,96 @@
   importance: 5
   summary: 布尔什维克在俄国夺取政权，建立苏维埃，成为世界上第一个社会主义国家。
   confidence: 确定
+- id: w-league-of-nations-founded-192001
+  date: '1920-01-10'
+  title: 国际联盟正式成立
+  category: 政治
+  importance: 5
+  summary: 《凡尔赛条约》生效后国际联盟正式成立，这是世界上第一个以维护集体安全为目标的普遍性国际组织，战后国际秩序进入制度化尝试阶段。
+  confidence: 确定
+  tags:
+    - 国际联盟
+    - 凡尔赛体系
+    - 集体安全
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-treaty-versailles-effective-192001
+  date: '1920-01-10'
+  title: 《凡尔赛条约》生效
+  category: 政治
+  importance: 5
+  summary: 《凡尔赛条约》正式生效，结束德国与协约国之间的一战战争状态，并奠定战后欧洲赔款、边界和国际联盟安排。
+  confidence: 确定
+  tags:
+    - 凡尔赛条约
+    - 一战后秩序
+    - 德国赔款
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-kapp-putsch-192003
+  date: '1920-03-13'
+  title: 卡普政变爆发
+  category: 政治
+  importance: 4
+  summary: 德国右翼势力发动卡普政变试图推翻魏玛共和国，政变因全国总罢工和行政抵制失败，暴露战后德国民主制度的脆弱性。
+  confidence: 确定
+  tags:
+    - 卡普政变
+    - 魏玛共和国
+    - 德国政治
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-treaty-sevres-192008
+  date: '1920-08-10'
+  title: 《色佛尔条约》签署
+  category: 政治
+  importance: 4
+  summary: 协约国与奥斯曼帝国签署《色佛尔条约》，试图分割奥斯曼领土，但遭土耳其民族运动抵制，最终被《洛桑条约》取代。
+  confidence: 确定
+  tags:
+    - 色佛尔条约
+    - 奥斯曼帝国
+    - 土耳其
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-battle-warsaw-192008
+  date: '1920-08-12'
+  title: 华沙战役爆发
+  category: 战争
+  importance: 5
+  summary: 波兰军队在华沙战役中击退苏俄红军进攻，改变波苏战争进程，也阻止了苏维埃革命向中欧扩展的即时可能。
+  confidence: 确定
+  tags:
+    - 华沙战役
+    - 波苏战争
+    - 欧洲
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-us-19th-amendment-192008
+  date: '1920-08-18'
+  title: 美国第十九修正案获批准
+  category: 政治
+  importance: 5
+  summary: 美国宪法第十九修正案获得批准，禁止以性别为由剥夺公民投票权，美国女性选举权运动取得制度性胜利。
+  confidence: 确定
+  tags:
+    - 女性选举权
+    - 美国宪法
+    - 第十九修正案
+  sources:
+    - 英文维基百科
+    - 美国国家档案馆
+
 - id: w-russian-famine-1921
   date: '1921'
   title: 俄国大饥荒
