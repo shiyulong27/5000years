@@ -33,6 +33,96 @@
   importance: 5
   summary: 布尔什维克在俄国夺取政权，建立苏维埃，成为世界上第一个社会主义国家。
   confidence: 确定
+- id: w-goddard-liquid-rocket-192603
+  date: '1926-03-16'
+  title: 戈达德发射首枚液体燃料火箭
+  category: 文化
+  importance: 5
+  summary: 罗伯特·戈达德在美国马萨诸塞州成功发射世界首枚液体燃料火箭，现代火箭技术和航天工程迈出关键一步。
+  confidence: 确定
+  tags:
+    - 戈达德
+    - 火箭
+    - 航天
+  sources:
+    - NASA
+    - 英文维基百科
+
+- id: w-uk-general-strike-192605
+  date: '1926-05-03'
+  title: 英国总罢工爆发
+  category: 经济
+  importance: 4
+  summary: 英国工会大会为支持煤矿工人发动总罢工，工业社会冲突达到高峰，成为英国劳资关系和工会史上的标志性事件。
+  confidence: 确定
+  tags:
+    - 英国总罢工
+    - 工会
+    - 劳资关系
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-germany-league-nations-192609
+  date: '1926-09-08'
+  title: 德国加入国际联盟
+  category: 政治
+  importance: 4
+  summary: 德国加入国际联盟并成为常任理事国，标志洛迦诺体系下德国重新进入欧洲外交体系，战后国际关系一度趋于缓和。
+  confidence: 确定
+  tags:
+    - 国际联盟
+    - 德国外交
+    - 洛迦诺体系
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-balfour-declaration-192611
+  date: '1926-11-18'
+  title: 帝国会议通过贝尔福宣言
+  category: 政治
+  importance: 5
+  summary: 1926 年帝国会议通过贝尔福宣言，确认英国和自治领为地位平等的共同体成员，为后来英联邦制度和自治领主权发展奠定基础。
+  confidence: 确定
+  tags:
+    - 贝尔福宣言
+    - 英联邦
+    - 自治领
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-nbc-radio-network-192611
+  date: '1926-11-15'
+  title: NBC 广播网开播
+  category: 文化
+  importance: 4
+  summary: 美国全国广播公司开始广播网络服务，商业广播网模式成形，现代大众传媒产业进入网络化运营阶段。
+  confidence: 确定
+  tags:
+    - NBC
+    - 广播
+    - 大众传媒
+  sources:
+    - 英文维基百科
+    - NBC
+
+- id: w-showa-era-begins-192612
+  date: '1926-12-25'
+  title: 日本昭和时代开始
+  category: 政治
+  importance: 4
+  summary: 大正天皇去世后裕仁即位，日本进入昭和时代，此后日本政治、军部扩张与战争进程深刻影响东亚和世界格局。
+  confidence: 确定
+  tags:
+    - 昭和时代
+    - 裕仁
+    - 日本
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-lindbergh-flight-192705
   date: '1927-05-20'
   title: 林德伯格开始单人不着陆飞越大西洋

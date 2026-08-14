@@ -34,6 +34,66 @@
   summary: 中国共产党第一次全国代表大会于上海召集，标志着中国共产党正式成立。
   confidence: 确定
 
+- id: cn-zhongshan-warship-incident-192603
+  date: '1926-03-20'
+  title: 中山舰事件
+  category: 政治
+  importance: 4
+  summary: 蒋介石以中山舰调动为由在广州采取军事行动，限制共产党人在国民革命军中的影响，国共合作内部权力结构开始明显倾斜。
+  confidence: 确定
+  tags:
+    - 中山舰事件
+    - 第一次国共合作
+    - 蒋介石
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-northern-expedition-begins-192607
+  date: '1926-07-09'
+  title: 北伐战争开始
+  category: 战争
+  importance: 5
+  summary: 国民革命军在广州誓师北伐，向北洋军阀控制区推进，北伐成为结束北洋军阀割据、重组中国政治格局的关键战争。
+  confidence: 确定
+  tags:
+    - 北伐
+    - 国民革命军
+    - 历史转折
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-wanxian-incident-192609
+  date: '1926-09-05'
+  title: 万县事件
+  category: 战争
+  importance: 4
+  summary: 四川万县发生中英武装冲突，英国军舰炮击万县，造成中国军民伤亡，成为北伐时期反帝民族情绪高涨的重要事件。
+  confidence: 确定
+  tags:
+    - 万县事件
+    - 反帝运动
+    - 中英关系
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-wuchang-captured-192610
+  date: '1926-10-10'
+  title: 北伐军攻克武昌
+  category: 战争
+  importance: 4
+  summary: 北伐军攻克吴佩孚控制下的武昌，武汉三镇相继纳入国民革命势力范围，北伐在长江中游取得决定性进展。
+  confidence: 确定
+  tags:
+    - 武昌战役
+    - 北伐
+    - 吴佩孚
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: cn-nanjing-incident-192703
   date: '1927-03-24'
   title: 南京事件爆发
