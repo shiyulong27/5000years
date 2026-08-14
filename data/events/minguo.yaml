@@ -26,13 +26,58 @@
   confidence: 确定
 
 - id: cpc-founding-1921
-  date: "1921"
+  date: '1921-07-23'
   title: 中国共产党成立
   category: 政治
   tags: [政治, 历史转折]
   importance: 5
   summary: 中国共产党第一次全国代表大会于上海召集，标志着中国共产党正式成立。
   confidence: 确定
+
+- id: cn-sun-yat-sen-extraordinary-president-192105
+  date: '1921-05-05'
+  title: 孙中山就任非常大总统
+  category: 政治
+  importance: 4
+  summary: 孙中山在广州就任中华民国非常大总统，继续推动护法运动和南方革命政权建设，为后来国民党改组和国民革命积累政治基础。
+  confidence: 确定
+  tags:
+    - 孙中山
+    - 护法运动
+    - 广州军政府
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-chinese-labour-secretariat-192108
+  date: '1921-08-11'
+  title: 中国劳动组合书记部成立
+  category: 经济
+  importance: 4
+  summary: 中国劳动组合书记部在上海成立，成为中国共产党早期领导工人运动的重要公开机构，推动铁路、海员等产业工人组织化。
+  confidence: 确定
+  tags:
+    - 工人运动
+    - 中国共产党
+    - 劳动组合书记部
+  sources:
+    - 中文维基百科
+    - 党史资料
+
+- id: cn-outer-mongolian-revolution-192107
+  date: '1921-07-11'
+  title: 外蒙古人民革命胜利
+  category: 政治
+  importance: 4
+  summary: 蒙古人民革命军进入库伦并建立新的革命政权，外蒙古政治走向深刻改变，也成为民国边疆和中苏蒙关系的重要转折。
+  confidence: 确定
+  tags:
+    - 外蒙古
+    - 蒙古人民革命
+    - 边疆政治
+  sources:
+    - 英文维基百科
+    - 中文维基百科
 
 - id: cn-hong-kong-seamen-strike-192201
   date: '1922-01-12'

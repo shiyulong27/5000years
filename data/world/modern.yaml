@@ -33,6 +33,96 @@
   importance: 5
   summary: 布尔什维克在俄国夺取政权，建立苏维埃，成为世界上第一个社会主义国家。
   confidence: 确定
+- id: w-russian-famine-1921
+  date: '1921'
+  title: 俄国大饥荒
+  category: 灾害
+  importance: 5
+  summary: 俄国内战、征粮政策、旱灾和经济崩溃共同造成伏尔加河流域等地大饥荒，数百万人死亡，并促使苏俄转向新经济政策和国际救援。
+  confidence: 确定
+  tags:
+    - 俄国大饥荒
+    - 苏俄
+    - 灾害
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-new-economic-policy-192103
+  date: '1921-03-21'
+  title: 苏俄实行新经济政策
+  category: 经济
+  importance: 5
+  summary: 布尔什维克政权以新经济政策取代战时共产主义，恢复一定市场交换和私营经济空间，苏俄经济治理路线发生重大调整。
+  confidence: 确定
+  tags:
+    - 新经济政策
+    - 苏俄
+    - 列宁
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-tulsa-race-massacre-192105
+  date: '1921-05-31'
+  title: 塔尔萨种族屠杀
+  category: 政治
+  importance: 4
+  summary: 美国俄克拉荷马州塔尔萨格林伍德黑人社区遭白人暴徒袭击和纵火，造成重大伤亡和财产损失，成为美国种族暴力史上的标志性事件。
+  confidence: 确定
+  tags:
+    - 塔尔萨种族屠杀
+    - 美国种族关系
+    - 格林伍德
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-insulin-discovery-192107
+  date: '1921-07-27'
+  title: 胰岛素被成功分离
+  category: 文化
+  importance: 5
+  summary: 班廷和贝斯特在多伦多成功分离胰岛素，糖尿病治疗由此发生革命性变化，并成为现代医学史上的重大突破。
+  confidence: 确定
+  tags:
+    - 胰岛素
+    - 糖尿病
+    - 医学
+  sources:
+    - 英文维基百科
+    - 诺贝尔奖官网
+
+- id: w-washington-conference-192111
+  date: '1921-11-12'
+  title: 华盛顿会议召开
+  category: 政治
+  importance: 5
+  summary: 华盛顿会议开幕，列强围绕海军军备限制和太平洋、远东秩序展开谈判，最终形成战间期华盛顿体系。
+  confidence: 确定
+  tags:
+    - 华盛顿会议
+    - 华盛顿体系
+    - 远东秩序
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-anglo-irish-treaty-192112
+  date: '1921-12-06'
+  title: 《英爱条约》签署
+  category: 政治
+  importance: 5
+  summary: 英国政府与爱尔兰代表签署《英爱条约》，为爱尔兰自由邦成立奠定法律基础，同时也引发爱尔兰内部对条约的尖锐分裂。
+  confidence: 确定
+  tags:
+    - 英爱条约
+    - 爱尔兰
+    - 民族独立
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-washington-naval-treaty-192202
   date: '1922-02-06'
   title: 《华盛顿海军条约》签署
