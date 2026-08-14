@@ -34,6 +34,66 @@
   summary: 中国共产党第一次全国代表大会于上海召集，标志着中国共产党正式成立。
   confidence: 确定
 
+- id: cn-sun-joffe-manifesto-192301
+  date: '1923-01-26'
+  title: 孙文越飞宣言发表
+  category: 政治
+  importance: 4
+  summary: 孙中山与苏联代表越飞发表联合宣言，确认苏联援助中国国民革命的方向，为国民党改组和第一次国共合作提供外部条件。
+  confidence: 确定
+  tags:
+    - 孙文越飞宣言
+    - 联俄
+    - 国民革命
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-february-seventh-strike-192302
+  date: '1923-02-07'
+  title: 二七惨案
+  category: 政治
+  importance: 4
+  summary: 京汉铁路工人大罢工遭北洋军阀镇压，多名工人和工会领袖遇害，中国早期工人运动遭受重大挫折，也强化了革命组织对武装和统一战线的认识。
+  confidence: 确定
+  tags:
+    - 二七惨案
+    - 工人运动
+    - 京汉铁路
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-cpc-third-congress-192306
+  date: '1923-06-12'
+  title: 中共三大召开
+  category: 政治
+  importance: 5
+  summary: 中国共产党第三次全国代表大会在广州召开，决定共产党员以个人身份加入国民党，推动建立革命统一战线和第一次国共合作。
+  confidence: 确定
+  tags:
+    - 中共三大
+    - 第一次国共合作
+    - 统一战线
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-cao-kun-bribery-election-192310
+  date: '1923-10-05'
+  title: 曹锟贿选总统
+  category: 政治
+  importance: 4
+  summary: 曹锟通过贿赂国会议员当选中华民国大总统，北洋政治公信力进一步破产，军阀政治腐败成为全国舆论焦点。
+  confidence: 确定
+  tags:
+    - 曹锟
+    - 贿选
+    - 北洋政府
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: cn-kmt-first-congress-192401
   date: '1924-01-20'
   title: 国民党一大召开

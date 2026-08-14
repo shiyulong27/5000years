@@ -33,6 +33,96 @@
   importance: 5
   summary: 布尔什维克在俄国夺取政权，建立苏维埃，成为世界上第一个社会主义国家。
   confidence: 确定
+- id: w-treaty-lausanne-192307
+  date: '1923-07-24'
+  title: 《洛桑条约》签署
+  category: 政治
+  importance: 5
+  summary: 协约国与土耳其签署《洛桑条约》，取代《色佛尔条约》并承认现代土耳其边界，奥斯曼帝国战后安排最终定型。
+  confidence: 确定
+  tags:
+    - 洛桑条约
+    - 土耳其
+    - 一战后秩序
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-great-kanto-earthquake-192309
+  date: '1923-09-01'
+  title: 关东大地震
+  category: 灾害
+  importance: 5
+  summary: 日本关东地区发生强烈地震并引发大火，东京和横滨遭受毁灭性破坏，十余万人死亡或失踪，成为日本近代最严重灾害之一。
+  confidence: 确定
+  tags:
+    - 关东大地震
+    - 日本
+    - 灾害
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-disney-founded-192310
+  date: '1923-10-16'
+  title: 迪士尼兄弟工作室成立
+  category: 文化
+  importance: 4
+  summary: 华特·迪士尼和罗伊·迪士尼在美国加州创立迪士尼兄弟工作室，后来发展为全球最具影响力的动画和娱乐公司之一。
+  confidence: 确定
+  tags:
+    - 迪士尼
+    - 动画
+    - 娱乐产业
+  sources:
+    - 英文维基百科
+    - 迪士尼资料
+
+- id: w-turkish-republic-192310
+  date: '1923-10-29'
+  title: 土耳其共和国成立
+  category: 政治
+  importance: 5
+  summary: 土耳其大国民议会宣布成立土耳其共和国，穆斯塔法·凯末尔成为首任总统，奥斯曼帝国后的现代民族国家正式建立。
+  confidence: 确定
+  tags:
+    - 土耳其共和国
+    - 凯末尔
+    - 国家建立
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-beer-hall-putsch-192311
+  date: '1923-11-08'
+  title: 啤酒馆政变
+  category: 政治
+  importance: 4
+  summary: 希特勒和纳粹党在慕尼黑发动未遂政变，虽遭镇压，却使纳粹运动获得全国知名度，并影响其后夺权策略。
+  confidence: 确定
+  tags:
+    - 啤酒馆政变
+    - 纳粹党
+    - 魏玛共和国
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-rentenmark-introduced-192311
+  date: '1923-11-15'
+  title: 德国发行伦滕马克遏制恶性通胀
+  category: 经济
+  importance: 5
+  summary: 魏玛德国推出伦滕马克，取代濒临崩溃的纸马克并稳定货币，标志 1923 年德国恶性通货膨胀进入转折。
+  confidence: 确定
+  tags:
+    - 德国恶性通胀
+    - 伦滕马克
+    - 魏玛共和国
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-lenin-death-192401
   date: '1924-01-21'
   title: 列宁逝世
