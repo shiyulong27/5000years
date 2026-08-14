@@ -33,6 +33,96 @@
   importance: 5
   summary: 布尔什维克在俄国夺取政权，建立苏维埃，成为世界上第一个社会主义国家。
   confidence: 确定
+- id: w-serum-run-nome-192501
+  date: '1925-01-27'
+  title: 诺姆血清接力开始
+  category: 灾害
+  importance: 4
+  summary: 阿拉斯加雪橇犬队接力运送白喉抗毒素至诺姆，公共卫生救援和极地交通协作成为全球新闻，也塑造了现代救灾传奇。
+  confidence: 确定
+  tags:
+    - 诺姆血清接力
+    - 公共卫生
+    - 白喉
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-scopes-trial-192507
+  date: '1925-07-10'
+  title: 斯科普斯审判开庭
+  category: 文化
+  importance: 4
+  summary: 美国田纳西州教师约翰·斯科普斯因教授进化论受审，审判成为科学教育、宗教保守主义和公共舆论冲突的标志性事件。
+  confidence: 确定
+  tags:
+    - 斯科普斯审判
+    - 进化论
+    - 教育
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-mein-kampf-volume1-192507
+  date: '1925-07-18'
+  title: 《我的奋斗》第一卷出版
+  category: 政治
+  importance: 4
+  summary: 希特勒《我的奋斗》第一卷出版，系统表达民族主义、反犹主义和扩张主义思想，成为纳粹意识形态传播的重要文本。
+  confidence: 确定
+  tags:
+    - 我的奋斗
+    - 纳粹主义
+    - 希特勒
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-locarno-treaties-192510
+  date: '1925-10-16'
+  title: 洛迦诺公约草签
+  category: 政治
+  importance: 5
+  summary: 欧洲主要国家在洛迦诺达成一系列安全协议，试图稳定德国西部边界和战后欧洲秩序，形成所谓“洛迦诺精神”。
+  confidence: 确定
+  tags:
+    - 洛迦诺公约
+    - 欧洲安全
+    - 战间期
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-baird-television-192510
+  date: '1925-10-02'
+  title: 贝尔德成功传送电视灰阶图像
+  category: 文化
+  importance: 4
+  summary: 约翰·洛吉·贝尔德在伦敦实验中传送活动灰阶电视图像，成为机械电视技术早期发展的关键节点。
+  confidence: 确定
+  tags:
+    - 贝尔德
+    - 电视
+    - 传媒技术
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-pahlavi-dynasty-192512
+  date: '1925-12-15'
+  title: 巴列维王朝建立
+  category: 政治
+  importance: 4
+  summary: 礼萨汗被立为伊朗沙阿，巴列维王朝取代卡扎尔王朝，伊朗进入以中央集权和现代化改革为核心的新政治阶段。
+  confidence: 确定
+  tags:
+    - 巴列维王朝
+    - 伊朗
+    - 礼萨汗
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-goddard-liquid-rocket-192603
   date: '1926-03-16'
   title: 戈达德发射首枚液体燃料火箭

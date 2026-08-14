@@ -34,6 +34,66 @@
   summary: 中国共产党第一次全国代表大会于上海召集，标志着中国共产党正式成立。
   confidence: 确定
 
+- id: cn-sun-yat-sen-death-192503
+  date: '1925-03-12'
+  title: 孙中山逝世
+  category: 政治
+  importance: 5
+  summary: 孙中山在北京逝世，其遗嘱与政治遗产成为国民革命的重要象征，也深刻影响此后国民党权力结构和中国革命叙事。
+  confidence: 确定
+  tags:
+    - 孙中山
+    - 国民革命
+    - 历史转折
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-may-thirtieth-movement-192505
+  date: '1925-05-30'
+  title: 五卅运动爆发
+  category: 政治
+  importance: 5
+  summary: 上海公共租界巡捕向示威群众开枪，引发全国性反帝爱国运动，工人、学生和商界广泛参与，推动国民革命社会动员迅速扩大。
+  confidence: 确定
+  tags:
+    - 五卅运动
+    - 反帝运动
+    - 工人运动
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-canton-hongkong-strike-192506
+  date: '1925-06-19'
+  title: 省港大罢工开始
+  category: 经济
+  importance: 4
+  summary: 香港和广州工人为声援五卅运动发动长期罢工和抵制，严重冲击英属香港经济，也成为中国近代工人运动的重要高峰。
+  confidence: 确定
+  tags:
+    - 省港大罢工
+    - 工人运动
+    - 香港
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-guangzhou-national-government-192507
+  date: '1925-07-01'
+  title: 广州国民政府成立
+  category: 政治
+  importance: 4
+  summary: 国民政府在广州成立，整合国民党革命政权和军事力量，为随后北伐战争的发动奠定政治组织基础。
+  confidence: 确定
+  tags:
+    - 广州国民政府
+    - 国民党
+    - 北伐
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: cn-zhongshan-warship-incident-192603
   date: '1926-03-20'
   title: 中山舰事件
