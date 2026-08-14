@@ -33,6 +33,81 @@
   importance: 5
   summary: 布尔什维克在俄国夺取政权，建立苏维埃，成为世界上第一个社会主义国家。
   confidence: 确定
+- id: w-lindbergh-flight-192705
+  date: '1927-05-20'
+  title: 林德伯格开始单人不着陆飞越大西洋
+  category: 文化
+  importance: 4
+  summary: 查尔斯·林德伯格驾驶“圣路易斯精神号”从纽约起飞，并于次日抵达巴黎，完成首次单人不着陆飞越大西洋飞行，航空时代的公众想象被极大激发。
+  confidence: 确定
+  tags:
+    - 林德伯格
+    - 航空
+    - 跨大西洋飞行
+  sources:
+    - 英文维基百科
+    - Smithsonian
+
+- id: w-farnsworth-television-192709
+  date: '1927-09-07'
+  title: 法恩斯沃斯演示电子电视
+  category: 文化
+  importance: 4
+  summary: 菲洛·法恩斯沃斯成功传送电子电视图像，标志全电子电视技术取得关键突破，为后来的广播电视产业奠定技术基础。
+  confidence: 确定
+  tags:
+    - 电视
+    - 法恩斯沃斯
+    - 电子技术
+  sources:
+    - 英文维基百科
+    - IEEE
+
+- id: w-jazz-singer-192710
+  date: '1927-10-06'
+  title: 《爵士歌手》上映
+  category: 文化
+  importance: 4
+  summary: 《爵士歌手》在美国上映，作为早期同步对白和歌唱的商业长片，推动电影业从默片时代转向有声电影时代。
+  confidence: 确定
+  tags:
+    - 有声电影
+    - 爵士歌手
+    - 电影史
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-solvay-conference-192710
+  date: '1927-10'
+  title: 第五届索尔维会议召开
+  category: 文化
+  importance: 4
+  summary: 第五届索尔维会议以电子和光子为主题，爱因斯坦、玻尔、居里等科学家围绕量子力学展开讨论，成为现代物理学史上的标志性会议。
+  confidence: 确定
+  tags:
+    - 索尔维会议
+    - 量子力学
+    - 现代物理
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-trotsky-expelled-192711
+  date: '1927-11-12'
+  title: 托洛茨基被开除出苏联共产党
+  category: 政治
+  importance: 4
+  summary: 托洛茨基被开除出苏联共产党，斯大林在党内斗争中进一步巩固权力，苏联政治路线和国际共产主义运动格局随之改变。
+  confidence: 确定
+  tags:
+    - 托洛茨基
+    - 斯大林
+    - 苏联政治
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-uk-equal-franchise-192807
   date: '1928-07-02'
   title: 英国实现成年男女同等选举权
