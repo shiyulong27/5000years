@@ -33,6 +33,81 @@
   importance: 5
   summary: 布尔什维克在俄国夺取政权，建立苏维埃，成为世界上第一个社会主义国家。
   confidence: 确定
+- id: w-uk-equal-franchise-192807
+  date: '1928-07-02'
+  title: 英国实现成年男女同等选举权
+  category: 政治
+  importance: 4
+  summary: 英国《1928 年人民代表法》获得御准，将女性选举年龄降至与男性相同的 21 岁，英国普选权制度迈向成年男女平等。
+  confidence: 确定
+  tags:
+    - 女性选举权
+    - 英国政治
+    - 普选权
+  sources:
+    - 英文维基百科
+    - 英国议会资料
+
+- id: w-kellogg-briand-pact-192808
+  date: '1928-08-27'
+  title: 《非战公约》签署
+  category: 政治
+  importance: 5
+  summary: 多国在巴黎签署《凯洛格-白里安公约》，宣布放弃以战争作为国家政策工具，虽未能阻止二战爆发，却成为后来国际法禁止侵略战争的重要思想来源。
+  confidence: 确定
+  tags:
+    - 非战公约
+    - 国际法
+    - 战间期
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-penicillin-discovered-192809
+  date: '1928-09-28'
+  title: 弗莱明发现青霉素
+  category: 文化
+  importance: 5
+  summary: 亚历山大·弗莱明观察到青霉菌抑制葡萄球菌生长，发现青霉素，为抗生素时代和现代感染治疗奠定基础。
+  confidence: 确定
+  tags:
+    - 青霉素
+    - 医学
+    - 抗生素
+  sources:
+    - 英文维基百科
+    - 诺贝尔奖官网
+
+- id: w-soviet-first-five-year-plan-192810
+  date: '1928-10-01'
+  title: 苏联第一个五年计划开始
+  category: 经济
+  importance: 5
+  summary: 苏联启动第一个五年计划，推动高速工业化和农业集体化，深刻改变苏联经济社会结构，也影响 20 世纪计划经济模式。
+  confidence: 确定
+  tags:
+    - 苏联
+    - 五年计划
+    - 工业化
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-steamboat-willie-192811
+  date: '1928-11-18'
+  title: 《汽船威利号》上映
+  category: 文化
+  importance: 4
+  summary: 迪士尼动画短片《汽船威利号》上映，米老鼠形象由此广为人知，同步声音动画成为商业动画发展的重要里程碑。
+  confidence: 确定
+  tags:
+    - 米老鼠
+    - 动画
+    - 迪士尼
+  sources:
+    - 英文维基百科
+    - 迪士尼资料
+
 - id: w-lateran-treaty-192902
   date: '1929-02-11'
   title: 《拉特兰条约》签署

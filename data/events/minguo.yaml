@@ -34,6 +34,66 @@
   summary: 中国共产党第一次全国代表大会于上海召集，标志着中国共产党正式成立。
   confidence: 确定
 
+- id: cn-jinan-incident-192805
+  date: '1928-05-03'
+  title: 济南惨案爆发
+  category: 战争
+  importance: 4
+  summary: 北伐军进入济南后与日军发生冲突，日军大规模攻击并杀害中国军民和外交人员，严重刺激中国民族主义情绪，也暴露日本对华干涉的升级。
+  confidence: 确定
+  tags:
+    - 济南惨案
+    - 北伐
+    - 中日关系
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-huanggutun-incident-192806
+  date: '1928-06-04'
+  title: 皇姑屯事件
+  category: 战争
+  importance: 4
+  summary: 奉系军阀张作霖在沈阳皇姑屯附近被日本关东军炸死，东北政局发生剧变，也为张学良后续东北易帜创造条件。
+  confidence: 确定
+  tags:
+    - 皇姑屯事件
+    - 张作霖
+    - 关东军
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-northern-expedition-beijing-192806
+  date: '1928-06-08'
+  title: 北伐军进入北京
+  category: 政治
+  importance: 4
+  summary: 国民革命军进入北京，北洋政府统治结束，北伐战争取得决定性成果，南京国民政府的全国政权地位进一步确立。
+  confidence: 确定
+  tags:
+    - 北伐
+    - 北洋政府
+    - 国民政府
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-northeast-flag-replacement-192812
+  date: '1928-12-29'
+  title: 东北易帜
+  category: 政治
+  importance: 5
+  summary: 张学良宣布东北改悬青天白日满地红旗，服从南京国民政府，标志北伐后中国在名义上完成统一。
+  confidence: 确定
+  tags:
+    - 东北易帜
+    - 张学良
+    - 国家统一
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: cn-chiang-gui-war-192903
   date: '1929-03'
   title: 蒋桂战争爆发
