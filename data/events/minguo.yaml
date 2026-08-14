@@ -34,6 +34,66 @@
   summary: 中国共产党第一次全国代表大会于上海召集，标志着中国共产党正式成立。
   confidence: 确定
 
+- id: cn-left-wing-writers-league-193003
+  date: '1930-03-02'
+  title: 中国左翼作家联盟成立
+  category: 文化
+  importance: 4
+  summary: 中国左翼作家联盟在上海成立，鲁迅等作家参与推动，左翼文学和革命文化运动由此形成更有组织的阵地。
+  confidence: 确定
+  tags:
+    - 左联
+    - 鲁迅
+    - 左翼文化
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-central-plains-war-193005
+  date: '1930-05-11'
+  title: 中原大战爆发
+  category: 战争
+  importance: 4
+  summary: 蒋介石南京国民政府与阎锡山、冯玉祥、李宗仁等地方军事集团爆发大规模内战，战争削弱各派军政力量，也加深国民政府统一后的内部裂痕。
+  confidence: 确定
+  tags:
+    - 中原大战
+    - 国民政府
+    - 军阀混战
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-weihaiwei-returned-193010
+  date: '1930-10-01'
+  title: 威海卫结束英租并归还中国
+  category: 政治
+  importance: 4
+  summary: 英国在威海卫的租借统治结束，威海卫归还中国，成为南京国民政府时期收回部分近代租借地权益的重要节点。
+  confidence: 确定
+  tags:
+    - 威海卫
+    - 租借地
+    - 主权
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: cn-first-encirclement-jiangxi-193011
+  date: '1930-11'
+  title: 第一次围剿中央苏区开始
+  category: 战争
+  importance: 4
+  summary: 国民政府军对江西苏区发动第一次围剿，作战延续至 1931 年初并以红军反围剿胜利告终，成为土地革命战争中围剿与反围剿格局的开端。
+  confidence: 确定
+  tags:
+    - 中央苏区
+    - 反围剿
+    - 土地革命战争
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: september-18-incident-1931
   date: '1931-09-18'
   title: 九一八事变

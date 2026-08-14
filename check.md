@@ -2355,6 +2355,18 @@
 - 未配图说明：其余 3 条四星事件不强制配图；未使用版权不明图片或与事件关联较弱的现代纪念设施图。
 - 验证：`npm run validate` 通过，校验 858 条事件、47 个朝代、65 位君主、782 条世界事件，保留既有 12 条君主缺口提示；脚本检查 1931 年 3 条五星缺图与本节记录一致，且无图片字段引用不存在文件；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
 
+## 1930 年事件补全审查（2026-08-14）
+
+- 审查范围：1930 年中国事件与世界事件；此前 `data/events/minguo.yaml`、`data/world/modern.yaml` 中均无 1930 年事件，且无 `src/pages/1930.astro` 与时间轴入口。
+- 修改后统计：新增中国事件 4 条、世界事件 6 条；其中五星事件 2 条、四星事件 8 条；2 条五星事件因当前 Wikimedia 下载限流暂未写入图片字段。
+- 页面与路由：新增 `src/pages/1930.astro`，并在 `Timeline.astro` 与 `AxisCell.astro` 注册 1930 年入口。
+- 已读取/核验来源：中英文维基百科 1930 年、中原大战、中国左翼作家联盟、第一次反围剿、威海卫、盐进军、伦敦海军条约、冥王星发现、斯姆特-霍利关税法、首届世界杯、1930 年德国国会选举等条目；补查 NASA、FIFA、美国国会资料和 Wikimedia Commons 图片候选。1978 年以前未找到可直接作为年度新闻清单的新华社 1930 年年度十大新闻正文，已用维基百科、机构资料和历史条目交叉核验。
+- 新增中国事件：`cn-left-wing-writers-league-193003`、`cn-central-plains-war-193005`、`cn-weihaiwei-returned-193010`、`cn-first-encirclement-jiangxi-193011`。
+- 新增世界事件：`w-pluto-discovered-193002`、`w-salt-march-193003`、`w-london-naval-treaty-193004`、`w-smoot-hawley-tariff-193006`、`w-first-fifa-world-cup-193007`、`w-german-federal-election-193009`。
+- 暂无合格本地配图：`w-salt-march-193003`、`w-smoot-hawley-tariff-193006`。当前 Wikimedia 下载持续限流，未落地真实图片文件；为避免引用不存在文件，本次保持无图并记录待后续补图。
+- 未配图说明：其余 8 条四星事件不强制配图；未使用版权不明图片或与事件关联较弱的现代纪念设施图。
+- 验证：`npm run validate` 通过，校验 862 条事件、47 个朝代、65 位君主、788 条世界事件，保留既有 12 条君主缺口提示；脚本检查 1930 年 2 条五星缺图与本节记录一致，且无图片字段引用不存在文件；`git diff --check` 通过；`npx vitest run test/load.test.js test/validate.test.js test/1948-events.test.js` 通过（3 个测试文件、71 项测试）；`npx vitest run test/2020-2024-event-images.test.js --testTimeout=30000` 通过（1 个测试文件、1 项全局配图审计）。
+
 ## 1947 年事件补全审查（2026-08-13）
 
 - 审查范围：1947 年中国事件 5 条、世界事件 6 条；其中五级 7 条、四级 4 条。

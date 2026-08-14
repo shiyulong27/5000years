@@ -44,6 +44,96 @@
   importance: 5
   summary: 华尔街股市崩盘引发全球经济大萧条，数千万人失业，加深了国际危机。
   confidence: 确定
+- id: w-pluto-discovered-193002
+  date: '1930-02-18'
+  title: 冥王星被发现
+  category: 文化
+  importance: 4
+  summary: 克莱德·汤博在洛厄尔天文台比较照片时确认冥王星存在，扩展了人类对太阳系边缘天体的认识。
+  confidence: 确定
+  tags:
+    - 冥王星
+    - 天文学
+    - 太阳系
+  sources:
+    - 英文维基百科
+    - NASA
+
+- id: w-salt-march-193003
+  date: '1930-03-12'
+  title: 甘地发动盐进军
+  category: 政治
+  importance: 5
+  summary: 甘地率追随者从萨巴尔马蒂出发，以反对英属印度食盐专卖和殖民税制为目标，盐进军成为印度独立运动和非暴力不合作的世界性象征。
+  confidence: 确定
+  tags:
+    - 盐进军
+    - 甘地
+    - 印度独立运动
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-london-naval-treaty-193004
+  date: '1930-04-22'
+  title: 伦敦海军条约签署
+  category: 政治
+  importance: 4
+  summary: 英国、美国、日本等国签署伦敦海军条约，试图继续限制主力舰、巡洋舰和潜艇军备，反映战间期海军军备控制仍在勉力维持。
+  confidence: 确定
+  tags:
+    - 伦敦海军条约
+    - 海军军备
+    - 战间期
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
+- id: w-smoot-hawley-tariff-193006
+  date: '1930-06-17'
+  title: 美国签署斯姆特-霍利关税法
+  category: 经济
+  importance: 5
+  summary: 美国总统胡佛签署提高进口关税的斯姆特-霍利关税法，保护主义政策激化国际贸易摩擦，被视为大萧条时期全球贸易收缩的重要因素之一。
+  confidence: 确定
+  tags:
+    - 斯姆特-霍利关税法
+    - 大萧条
+    - 保护主义
+  sources:
+    - 英文维基百科
+    - 美国国会资料
+
+- id: w-first-fifa-world-cup-193007
+  date: '1930-07-13'
+  title: 首届世界杯开幕
+  category: 文化
+  importance: 4
+  summary: 首届国际足联世界杯在乌拉圭开赛，现代足球最高级别国家队赛事由此制度化，并迅速成长为全球体育文化事件。
+  confidence: 确定
+  tags:
+    - 世界杯
+    - 足球
+    - 乌拉圭
+  sources:
+    - 英文维基百科
+    - FIFA
+
+- id: w-german-federal-election-193009
+  date: '1930-09-14'
+  title: 纳粹党在德国国会选举中跃升
+  category: 政治
+  importance: 4
+  summary: 德国国会选举中，纳粹党获得 107 个席位并成为第二大党，魏玛共和国的议会危机加深，极端主义政治进入快速扩张阶段。
+  confidence: 确定
+  tags:
+    - 魏玛共和国
+    - 纳粹党
+    - 德国政治
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+
 - id: w-spanish-second-republic-193104
   date: '1931-04-14'
   title: 西班牙第二共和国成立
