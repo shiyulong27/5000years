@@ -1,0 +1,137 @@
+---
+import Base from '../../layouts/Base.astro'
+import { fileURLToPath } from 'node:url'
+import { loadAll } from '../../lib/load.js'
+
+const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
+const legends = loadAll(dataDir).legends
+const groups = ['三皇', '五帝'].map((group) => ({
+  name: group,
+  people: legends.filter((legend) => legend.group === group),
+}))
+const base = import.meta.env.BASE_URL
+
+const pinyinTerms = new Map([
+  ['伏羲', 'fú xī'],
+  ['太昊', 'tài hào'],
+  ['包牺', 'bāo xī'],
+  ['稼穑', 'jià sè'],
+  ['女娲', 'nǚ wā'],
+  ['抟土', 'tuán tǔ'],
+  ['轩辕', 'xuān yuán'],
+  ['颛顼', 'zhuān xū'],
+  ['帝喾', 'dì kù'],
+  ['尧', 'yáo'],
+  ['放勋', 'fàng xūn'],
+  ['舜', 'shùn'],
+  ['有虞', 'yǒu yú'],
+  ['禅让', 'shàn ràng'],
+  ['禹', 'yǔ'],
+])
+const pinyinPattern = new RegExp(
+  [...pinyinTerms.keys()].sort((a, b) => b.length - a.length).join('|'),
+  'g',
+)
+
+const annotatePinyin = (text = '') => {
+  const parts = []
+  let cursor = 0
+
+  for (const match of text.matchAll(pinyinPattern)) {
+    if (match.index > cursor) parts.push({ text: text.slice(cursor, match.index) })
+    parts.push({ text: match[0], pinyin: pinyinTerms.get(match[0]) })
+    cursor = match.index + match[0].length
+  }
+
+  if (cursor < text.length) parts.push({ text: text.slice(cursor) })
+  return parts
+}
+---
+
+<Base title="三皇五帝 · 上古传说专题" wide={true}>
+  <main class="legend-page">
+    <a class="legend-back" href={`${base}timeline/`}>← 返回历史长卷</a>
+    <header class="legend-hero">
+      <p class="legend-kicker">上古 · 传说时代</p>
+      <h1>三皇五帝</h1>
+      <p>这是中国上古传说体系中的人物群体，不是可以按现代纪年完全复原的王朝世系。</p>
+    </header>
+
+    <section class="legend-notice">
+      <strong>阅读提示</strong>
+      <span>不同文献对名单、顺序和事迹记载不一。本页呈现的是历史记忆与文化传统；没有可靠证据的年代不会被伪装成确定事实。</span>
+    </section>
+
+    {groups.map((group) => (
+      <section class="legend-group">
+        <div class="legend-group-head">
+          <h2>{group.name}</h2>
+          <span>传说人物</span>
+        </div>
+        <div class="legend-grid">
+          {group.people.map((person) => (
+            <article class="legend-card" id={person.id}>
+              <div class="legend-card-top">
+                <h3>
+                  {annotatePinyin(person.name).map((part) => part.pinyin
+                    ? <ruby>{part.text}<rp>（</rp><rt>{part.pinyin}</rt><rp>）</rp></ruby>
+                    : part.text)}
+                </h3>
+                <span class="legend-badge">{person.confidence}</span>
+              </div>
+              {person.aliases?.length > 0 && (
+                <p class="legend-alias">
+                  又称：{annotatePinyin(person.aliases.join('、')).map((part) => part.pinyin
+                    ? <ruby>{part.text}<rp>（</rp><rt>{part.pinyin}</rt><rp>）</rp></ruby>
+                    : part.text)}
+                </p>
+              )}
+              <p class="legend-summary">
+                {annotatePinyin(person.summary).map((part) => part.pinyin
+                  ? <ruby>{part.text}<rp>（</rp><rt>{part.pinyin}</rt><rp>）</rp></ruby>
+                  : part.text)}
+              </p>
+              <details>
+                <summary>异说与来源</summary>
+                <p>
+                  {annotatePinyin(person.dispute).map((part) => part.pinyin
+                    ? <ruby>{part.text}<rp>（</rp><rt>{part.pinyin}</rt><rp>）</rp></ruby>
+                    : part.text)}
+                </p>
+                <p class="legend-sources">来源：{person.sources?.join('；')}</p>
+              </details>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
+  </main>
+</Base>
+
+<style>
+  .legend-page { max-width: 1120px; margin: 0 auto; padding: 40px 28px 80px; color: #24313a; }
+  .legend-back { color: #6b4f2a; text-decoration: none; }
+  .legend-hero { padding: 56px 0 32px; border-bottom: 1px solid #d8cdbd; }
+  .legend-kicker { margin: 0 0 12px; color: #9a6b32; letter-spacing: .12em; }
+  h1 { margin: 0; font-size: clamp(2.4rem, 6vw, 4.8rem); letter-spacing: .08em; }
+  .legend-hero p:last-child { max-width: 680px; margin: 20px 0 0; color: #68737a; line-height: 1.8; }
+  .legend-notice { display: grid; grid-template-columns: 120px 1fr; gap: 16px; margin: 28px 0 48px; padding: 18px 20px; background: #f4eee4; border-left: 4px solid #b38345; line-height: 1.8; }
+  .legend-notice strong { color: #7d5524; }
+  .legend-group { margin-top: 42px; }
+  .legend-group-head { display: flex; align-items: baseline; gap: 14px; border-bottom: 1px solid #d8cdbd; }
+  .legend-group-head h2 { margin: 0 0 12px; font-size: 1.8rem; }
+  .legend-group-head span { color: #9a6b32; font-size: .9rem; }
+  .legend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-top: 20px; }
+  .legend-card { padding: 22px; background: #fffdf9; border: 1px solid #e4daca; border-radius: 12px; box-shadow: 0 8px 24px rgba(73, 54, 32, .06); }
+  .legend-card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .legend-card h3 { margin: 0; font-size: 1.35rem; }
+  ruby { ruby-align: center; }
+  rt { color: #9a6b32; font-size: .58em; font-weight: 500; letter-spacing: 0; }
+  .legend-badge { padding: 4px 9px; border-radius: 999px; background: #f0e2cc; color: #825923; font-size: .78rem; }
+  .legend-alias, .legend-sources { color: #8a8176; font-size: .88rem; }
+  .legend-summary { line-height: 1.8; }
+  details { margin-top: 16px; padding-top: 12px; border-top: 1px solid #eee5d9; }
+  summary { cursor: pointer; color: #825923; }
+  details p { line-height: 1.75; }
+  @media (max-width: 640px) { .legend-page { padding-inline: 18px; } .legend-notice { grid-template-columns: 1fr; gap: 4px; } }
+</style>

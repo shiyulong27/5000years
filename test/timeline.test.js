@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { fileURLToPath } from 'node:url'
 import { loadAll } from '../src/lib/load.js'
 import { buildTimeline, resolveRoot, collectYears } from '../src/lib/timeline.js'
+import { yearOf } from '../src/lib/date.js'
 
 const FIXTURES = fileURLToPath(new URL('./fixtures', import.meta.url))
 const data = loadAll(FIXTURES)
@@ -34,7 +35,7 @@ describe('resolveRoot — 朝代层级', () => {
 })
 
 describe('collectYears — 出行年份', () => {
-  const years = collectYears(data.events, data.worldEvents, data.dynasties)
+  const years = collectYears(data.events, data.worldEvents, data.dynasties, [], data.rulers)
 
   it('升序且去重', () => {
     expect(years).toEqual([...new Set(years)].sort((a, b) => a - b))
@@ -57,6 +58,12 @@ describe('collectYears — 出行年份', () => {
     expect(years).toContain(-202) // 汉起
     expect(years).toContain(25) // 东汉起
     expect(years).toContain(222) // 吴起
+  })
+
+  it('含君主即位年，确保每位君主在时间线上至少出现一次', () => {
+    for (const ruler of data.rulers) {
+      expect(years).toContain(yearOf(ruler.reign_start))
+    }
   })
 
   it('不含无内容的年份——公元前稀疏，逐年出行会产生数千空行', () => {
@@ -110,6 +117,13 @@ describe('buildTimeline — 行生成', () => {
     expect(ids).toContain('wei')
     expect(ids).toContain('shu')
     expect(ids).toContain('wu')
+  })
+
+  it('君主即位年包含新君主和交接所需的上一任君主', () => {
+    const ruler = data.rulers.find((item) => item.temple_name === '秦二世')
+    const row = rows.find((item) => item.type === 'year' && item.year === yearOf(ruler.reign_start))
+    expect(row.startingRulers.map((item) => item.temple_name)).toContain('秦二世')
+    expect(row.endingRulers.map((item) => item.temple_name)).toContain('秦始皇')
   })
 
   it('朝代交替之年归属正确——-0207 秦末，-0202 汉初', () => {
@@ -196,6 +210,40 @@ describe('buildTimeline — 文明色带', () => {
   it('columns 输出 region 映射与总列数', () => {
     expect(columns.total).toBeGreaterThan(0)
     expect(columns.regions['地中海']).toBeTypeOf('number')
+  })
+})
+
+describe('buildTimeline — 传说人物带', () => {
+  const legend = {
+    id: 'legend-person',
+    name: '传说人物',
+    group: '三皇',
+    summary: '用于测试的传说人物简介。',
+    confidence: '传说',
+    timeline_start: '-2000',
+    timeline_end: '-1900',
+  }
+  const out = buildTimeline({
+    dynasties: [{ id: 'ancient', name: '上古', start: '-2100', end: '-1800', color: '#999999' }],
+    legends: [legend],
+  })
+
+  it('约活动区间会补充时间轴年份锚点', () => {
+    const years = out.rows.filter((row) => row.type === 'year').map((row) => row.year)
+    expect(years).toContain(-2000)
+    expect(years).toContain(-1900)
+  })
+
+  it('传说人物进入人物层并保留分组和简介', () => {
+    const band = out.figureBands.find((item) => item.id === legend.id)
+    expect(band).toMatchObject({
+      name: '传说人物',
+      field: '传说',
+      kind: 'legend',
+      group: '三皇',
+      note: '三皇 · 用于测试的传说人物简介。',
+      detailPath: 'legend/sanhuang-wudi/',
+    })
   })
 })
 

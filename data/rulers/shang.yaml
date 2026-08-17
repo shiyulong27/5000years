@@ -1,0 +1,339 @@
+# 商代君主。
+#
+# 按《史记·殷本纪》的传统王序收录三十位实际即位者。太丁为汤太子，
+# 但早卒未即位，故不计入「历任君王」；将其计入时才会出现「三十一王」口径。
+# 晚商王名与大体先后次序可由殷墟甲骨卜辞互证，早商主要依赖传世文献。
+# 下列绝对年代用于时间线定位，综合《竹书纪年》与夏商周断代工程框架，
+# 不代表学界已有逐王纪年的定论。
+
+- dynasty: shang
+  temple_name: 汤
+  name: 子履
+  reign_start: "-1600"
+  reign_end: "-1546"
+  era_names: []
+  tags: [帝王]
+  note: 鸣条之战灭夏建商，传统称成汤、商汤
+  role: founder
+  confidence: 有争议
+  dispute: 商汤建国年代与在位年数均无同时代文字可证；前1600年采用本项目的断代框架。
+
+- dynasty: shang
+  temple_name: 外丙
+  name: 子胜
+  reign_start: "-1546"
+  reign_end: "-1544"
+  era_names: []
+  tags: [帝王]
+  note: 汤之后短暂在位，传统王序中的第二位商王
+  confidence: 有争议
+  dispute: 外丙是否实际即位及其与仲壬的先后，传世文献和甲骨材料存在不同解释；年代为推定。
+
+- dynasty: shang
+  temple_name: 仲壬
+  name: 子庸
+  reign_start: "-1544"
+  reign_end: "-1540"
+  era_names: []
+  tags: [帝王]
+  note: 汤之子，外丙之后继位
+  confidence: 有争议
+  dispute: 仲壬未见于目前可明确对应的王室周祭卜辞，其是否即位仍有争论；年代为推定。
+
+- dynasty: shang
+  temple_name: 太甲
+  name: 子至
+  reign_start: "-1540"
+  reign_end: "-1528"
+  era_names: []
+  tags: [帝王]
+  note: 传统叙事称受伊尹辅政，放桐宫后复位
+  confidence: 有争议
+  dispute: 伊尹放太甲及迎归复位主要见于传世文献，另有古本《竹书纪年》异说；具体年代为推定。
+
+- dynasty: shang
+  temple_name: 沃丁
+  name: 子绚
+  reign_start: "-1528"
+  reign_end: "-1509"
+  era_names: []
+  tags: [帝王]
+  note: 太甲之子，继承早商王统
+  confidence: 有争议
+  dispute: 早商绝对年代和逐王在位年数缺乏同时代文字支撑，此处仅作时间线定位。
+
+- dynasty: shang
+  temple_name: 太庚
+  name: 子辩
+  reign_start: "-1509"
+  reign_end: "-1504"
+  era_names: []
+  tags: [帝王]
+  note: 沃丁之后继位，传统王序中的早商君主
+  confidence: 有争议
+  dispute: 早商绝对年代和逐王在位年数缺乏同时代文字支撑，此处仅作时间线定位。
+
+- dynasty: shang
+  temple_name: 小甲
+  name: 子高
+  reign_start: "-1504"
+  reign_end: "-1487"
+  era_names: []
+  tags: [帝王]
+  note: 太庚之子，列于传统早商王序
+  confidence: 有争议
+  dispute: 早商绝对年代和逐王在位年数缺乏同时代文字支撑，此处仅作时间线定位。
+
+- dynasty: shang
+  temple_name: 雍己
+  name: 子伷
+  reign_start: "-1487"
+  reign_end: "-1476"
+  era_names: []
+  tags: [帝王]
+  note: 传统文献称其时商势一度衰落
+  confidence: 有争议
+  dispute: 雍己与太戊的先后在传世王序和部分甲骨学重建中存在分歧；年代为推定。
+
+- dynasty: shang
+  temple_name: 太戊
+  name: 子密
+  reign_start: "-1476"
+  reign_end: "-1401"
+  era_names: []
+  tags: [帝王]
+  note: 传统叙事称任用伊陟、巫咸，使商道复兴
+  confidence: 有争议
+  dispute: 太戊长期在位和中兴叙事来自后世文献，具体年数难以核实；年代为推定。
+
+- dynasty: shang
+  temple_name: 仲丁
+  name: 子庄
+  reign_start: "-1400"
+  reign_end: "-1391"
+  era_names: []
+  tags: [帝王]
+  note: 传统文献称迁都于隞，商王朝进入屡迁阶段
+  confidence: 有争议
+  dispute: 仲丁迁隞的年代和遗址对应尚无定论；逐王纪年为推定。
+
+- dynasty: shang
+  temple_name: 外壬
+  name: 子发
+  reign_start: "-1391"
+  reign_end: "-1381"
+  era_names: []
+  tags: [帝王]
+  note: 仲丁之弟，列于中商王序
+  confidence: 有争议
+  dispute: 中商逐王绝对年代缺乏可直接对应的同时代纪年材料，此处为推定。
+
+- dynasty: shang
+  temple_name: 河亶甲
+  name: 子整
+  reign_start: "-1381"
+  reign_end: "-1372"
+  era_names: []
+  tags: [帝王]
+  note: 传统文献称迁都于相，并征伐蓝夷、班方
+  confidence: 有争议
+  dispute: 迁相与征伐记载主要依赖传世文献，地点和年代均有争议。
+
+- dynasty: shang
+  temple_name: 祖乙
+  name: 子滕
+  reign_start: "-1372"
+  reign_end: "-1353"
+  era_names: []
+  tags: [帝王]
+  note: 传统叙事称迁都后商势复振
+  confidence: 有争议
+  dispute: 祖乙所迁都邑有耿、邢、庇等不同解释，逐王年代为推定。
+
+- dynasty: shang
+  temple_name: 祖辛
+  name: 子旦
+  reign_start: "-1353"
+  reign_end: "-1339"
+  era_names: []
+  tags: [帝王]
+  note: 祖乙之子，列于中商王序
+  confidence: 有争议
+  dispute: 中商逐王绝对年代缺乏可直接对应的同时代纪年材料，此处为推定。
+
+- dynasty: shang
+  temple_name: 沃甲
+  name: 子逾
+  reign_start: "-1339"
+  reign_end: "-1334"
+  era_names: []
+  tags: [帝王]
+  note: 又称开甲，祖辛之弟
+  confidence: 有争议
+  dispute: 沃甲名号与王序主要据传世文献和后期祭祀材料重建，绝对年代为推定。
+
+- dynasty: shang
+  temple_name: 祖丁
+  name: 子新
+  reign_start: "-1334"
+  reign_end: "-1325"
+  era_names: []
+  tags: [帝王]
+  note: 祖辛之子，继沃甲之后在位
+  confidence: 有争议
+  dispute: 中商逐王绝对年代缺乏可直接对应的同时代纪年材料，此处为推定。
+
+- dynasty: shang
+  temple_name: 南庚
+  name: 子更
+  reign_start: "-1325"
+  reign_end: "-1319"
+  era_names: []
+  tags: [帝王]
+  note: 传统文献称由庇迁都于奄
+  confidence: 有争议
+  dispute: 南庚迁奄的具体地点与年代尚有争议，逐王纪年为推定。
+
+- dynasty: shang
+  temple_name: 阳甲
+  name: 子和
+  reign_start: "-1319"
+  reign_end: "-1315"
+  era_names: []
+  tags: [帝王]
+  note: 盘庚之兄，传统叙事称其时诸侯不朝
+  confidence: 有争议
+  dispute: 阳甲时期的政治状况主要来自后世概括，绝对年代为推定。
+
+- dynasty: shang
+  temple_name: 盘庚
+  name: 子旬
+  reign_start: "-1315"
+  reign_end: "-1287"
+  era_names: []
+  tags: [帝王]
+  note: 迁都于殷，此后王都长期稳定于今安阳一带
+  confidence: 有争议
+  dispute: 盘庚迁殷约在前1300年较为通行，但具体年份及迁都过程仍有争议。
+
+- dynasty: shang
+  temple_name: 小辛
+  name: 子颂
+  reign_start: "-1287"
+  reign_end: "-1284"
+  era_names: []
+  tags: [帝王]
+  note: 盘庚之弟，迁殷后短暂在位
+  confidence: 有争议
+  dispute: 小辛在位年数来自后世纪年重建，绝对年代并无定论。
+
+- dynasty: shang
+  temple_name: 小乙
+  name: 子敛
+  reign_start: "-1284"
+  reign_end: "-1274"
+  era_names: []
+  tags: [帝王]
+  note: 小辛之弟、武丁之父
+  confidence: 有争议
+  dispute: 小乙在位年数来自后世纪年重建，绝对年代并无定论。
+
+- dynasty: shang
+  temple_name: 武丁
+  name: 子昭
+  reign_start: "-1274"
+  reign_end: "-1215"
+  era_names: []
+  tags: [帝王]
+  note: 任用傅说并大规模征伐，开创武丁中兴
+  confidence: 有争议
+  dispute: 武丁其人与王序有甲骨文实证，但其绝对在位年代存在前1250年前后等多种方案。
+
+- dynasty: shang
+  temple_name: 祖庚
+  name: 子跃
+  reign_start: "-1215"
+  reign_end: "-1204"
+  era_names: []
+  tags: [帝王]
+  note: 武丁之子，延续晚商王室祭祀体系
+  confidence: 有争议
+  dispute: 祖庚王名与次序可由甲骨材料印证，但绝对在位年代仍为重建。
+
+- dynasty: shang
+  temple_name: 祖甲
+  name: 子载
+  reign_start: "-1204"
+  reign_end: "-1171"
+  era_names: []
+  tags: [帝王]
+  note: 武丁之子，晚商祭祀制度在其前后发生调整
+  confidence: 有争议
+  dispute: 祖甲王名与次序可由甲骨材料印证，但其在位年数与祭制改革归属仍有不同意见。
+
+- dynasty: shang
+  temple_name: 廪辛
+  name: 子先
+  reign_start: "-1171"
+  reign_end: "-1167"
+  era_names: []
+  tags: [帝王]
+  note: 祖甲之子，晚商君主
+  confidence: 有争议
+  dispute: 廪辛在位很短，王名可见于祭祀系统，绝对年代为后世重建。
+
+- dynasty: shang
+  temple_name: 康丁
+  name: 子嚣
+  reign_start: "-1167"
+  reign_end: "-1159"
+  era_names: []
+  tags: [帝王]
+  note: 又称庚丁，廪辛之弟
+  confidence: 有争议
+  dispute: 康丁、庚丁为同一王的通行解释较稳妥，但其绝对在位年代仍有争议。
+
+- dynasty: shang
+  temple_name: 武乙
+  name: 子瞿
+  reign_start: "-1159"
+  reign_end: "-1124"
+  era_names: []
+  tags: [帝王]
+  note: 晚商君主，传统文献保存其与周人关系及射天故事
+  confidence: 有争议
+  dispute: 武乙王名有晚商材料背景，但「射天」等叙事具有明显道德化色彩；绝对年代为重建。
+
+- dynasty: shang
+  temple_name: 文丁
+  name: 子托
+  reign_start: "-1124"
+  reign_end: "-1111"
+  era_names: []
+  tags: [帝王]
+  note: 又称太丁，传统文献称曾杀周族首领季历
+  confidence: 有争议
+  dispute: 文丁与周族冲突的细节主要据后世文献重建，其与卜辞王名的对应及绝对年代仍有争议。
+
+- dynasty: shang
+  temple_name: 帝乙
+  name: 子羡
+  reign_start: "-1111"
+  reign_end: "-1075"
+  era_names: []
+  tags: [帝王]
+  note: 帝辛之父，晚商与周族势力消长加剧
+  confidence: 有争议
+  dispute: 帝乙王名和晚商世系较可靠，但其在位起止有多种断代方案。
+
+- dynasty: shang
+  temple_name: 帝辛
+  name: 子受
+  reign_start: "-1075"
+  reign_end: "-1047"
+  era_names: []
+  tags: [帝王]
+  note: 商末代君主，亦称纣王，牧野之战后商亡
+  role: last
+  confidence: 有争议
+  dispute: 帝辛为实有商王，但暴虐形象多经周人及后世层累塑造；在位起年有争议，商亡年采用前1046年框架。

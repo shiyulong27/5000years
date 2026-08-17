@@ -85,13 +85,14 @@ function loadDir(baseDir, subDir) {
  * 读取整个数据目录。
  * @param {string} dataDir
  * @returns {{dynasties: object[], rulers: object[], events: object[],
- *            worldEvents: object[], civilizations: object[], figures: object[]}}
+ *            worldEvents: object[], civilizations: object[], figures: object[], legends: object[]}}
  */
 export function loadAll(dataDir) {
   return {
     dynasties: loadFile(dataDir, 'dynasties.yaml'),
     civilizations: loadFile(dataDir, 'civilizations.yaml'),
     figures: loadFile(dataDir, 'figures.yaml'),
+    legends: loadDir(dataDir, 'legends'),
     rulers: loadDir(dataDir, 'rulers'),
     events: loadDir(dataDir, 'events'),
     worldEvents: loadDir(dataDir, 'world'),

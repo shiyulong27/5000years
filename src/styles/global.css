@@ -340,12 +340,12 @@ main,
 }
 
 .timeline {
+  --fig-layout-count: 0;
   display: grid;
   grid-template-columns:
     repeat(var(--civ-count), var(--civ-w))
     var(--world-w)
     var(--axis-w)
-    repeat(var(--fig-count), var(--fig-w))
     var(--china-w);
   /* 不设 align-items:start——跨行的文明色带须拉伸至其整个区间，
      否则会缩成起始行高的小方块，失去作为参照系的作用 */
@@ -393,7 +393,7 @@ main,
      大片空白。故关掉世界栏时同时重排列模板，把空间交还给中国事件栏。
      人物泳道仍留在中轴与中国事件之间——行内 grid-column 是为全宽模板
      算的，此处用 --lane 变量按新模板重定位（!important 压过行内样式）。 */
-  grid-template-columns: var(--axis-w) repeat(var(--fig-count), var(--fig-w)) minmax(0, 1fr);
+  grid-template-columns: var(--axis-w) minmax(0, 1fr);
 }
 
 .timeline.hide-world .cell-world,
@@ -410,7 +410,7 @@ main,
 }
 
 .timeline.hide-world .cell-china {
-  grid-column: calc(2 + var(--fig-count)) !important;
+  grid-column: calc(2 + var(--fig-layout-count)) !important;
 }
 
 .timeline.hide-world .banner-row {
@@ -829,6 +829,7 @@ main,
 /* 默认隐藏：泳道宽为 0，带体不渲染。
    人物数量将远多于事件，常驻显示会淹没长卷本身。 */
 .figure-slot {
+  display: none;
   overflow: hidden;
 }
 
@@ -842,11 +843,30 @@ main,
 }
 
 .timeline.show-figures {
+  --fig-layout-count: var(--fig-count);
   --fig-w: var(--fig-w-open);
+  grid-template-columns:
+    repeat(var(--civ-count), var(--civ-w))
+    var(--world-w)
+    var(--axis-w)
+    repeat(var(--fig-count), var(--fig-w))
+    var(--china-w);
 }
 
+.timeline.hide-world.show-figures {
+  grid-template-columns: var(--axis-w) repeat(var(--fig-count), var(--fig-w)) minmax(0, 1fr);
+}
+
+.timeline.show-figures .figure-slot,
 .timeline.show-figures .figure-band {
   display: block;
+}
+
+.figure-link {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
 }
 
 .figure-name {
@@ -868,6 +888,7 @@ main,
 .figure-band[data-field='军事'] { --fig-band-bg: var(--fig-military); }
 .figure-band[data-field='科技'] { --fig-band-bg: var(--fig-science); }
 .figure-band[data-field='艺术'] { --fig-band-bg: var(--fig-art); }
+.figure-band[data-field='传说'] { --fig-band-bg: #d8c49f; --fig-band-line: #ad8955; --fig-name-fg: #5f431f; }
 
 /* ── 概览页 ───────────────────────────────────────── */
 
@@ -935,6 +956,153 @@ main,
   white-space: nowrap;
 }
 
+/* 世系表标签徽章：承载 tags 字段（如「帝王」）的紧凑胶囊。
+   无 tags 的旧记录渲染为空，不影响布局。颜色取朝代色，无朝代色时回退暖褐。 */
+.rt-td-tags {
+  white-space: nowrap;
+}
+
+.ruler-tag {
+  display: inline-block;
+  padding: 0.1rem 0.38rem;
+  border: 1px solid color-mix(in srgb, var(--dynasty-color, #9a6b32) 45%, var(--line));
+  border-radius: 999px;
+  color: var(--text);
+  background: color-mix(in srgb, var(--dynasty-color, #9a6b32) 10%, var(--card));
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+
+/* 君王即位卡：作为年代上下文，视觉层级低于事件卡。 */
+.ruler-card {
+  margin-bottom: 0.7rem;
+  padding: 0.7rem 0.8rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--dynasty-color, #8a6f4d) 35%, var(--line));
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--dynasty-color, #8a6f4d) 7%, var(--card));
+  color: var(--text);
+}
+
+.ruler-card-head,
+.ruler-card-identity {
+  display: flex;
+  align-items: baseline;
+}
+
+.ruler-card-head {
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.ruler-card-identity {
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.ruler-card-kicker {
+  color: color-mix(in srgb, var(--dynasty-color, #8a6f4d) 78%, var(--text));
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.ruler-card-title {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+.ruler-card-confidence {
+  flex: none;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.ruler-card-reign {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.ruler-card-note {
+  margin: 0.45rem 0 0;
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.ruler-card-link {
+  display: inline-block;
+  margin-top: 0.45rem;
+  color: color-mix(in srgb, var(--dynasty-color, #8a6f4d) 72%, var(--text));
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ruler-card-link:hover {
+  text-decoration: underline;
+}
+
+.dynasty-figure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.85rem;
+}
+
+.dynasty-figure-card {
+  padding: 0.9rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.dynasty-figure-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.dynasty-figure-head h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.dynasty-figure-field,
+.dynasty-figure-confidence {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.dynasty-figure-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.dynasty-figure-note {
+  margin-bottom: 0;
+  line-height: 1.65;
+}
+
+.dynasty-figure-dispute {
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.dynasty-figure-dispute summary {
+  cursor: pointer;
+}
+
+.dynasty-figure-dispute p {
+  line-height: 1.65;
+}
+
 .back-link {
   display: inline-block;
   margin-top: 2rem;
@@ -959,7 +1127,12 @@ main,
   }
 
   .timeline {
-    grid-template-columns: var(--axis-w) repeat(var(--fig-count), var(--fig-w)) 1fr;
+    grid-template-columns: var(--axis-w) minmax(0, 1fr);
+  }
+
+  .timeline.show-figures,
+  .timeline.hide-world.show-figures {
+    grid-template-columns: var(--axis-w) repeat(var(--fig-count), var(--fig-w)) minmax(0, 1fr);
   }
 
   .civ-band,
@@ -976,7 +1149,7 @@ main,
   }
 
   .cell-china {
-    grid-column: calc(2 + var(--fig-count)) !important;
+    grid-column: calc(2 + var(--fig-layout-count)) !important;
   }
 
   .banner-row {
@@ -993,6 +1166,11 @@ main,
   .tool-cats {
     order: 10;
     width: 100%;
+  }
+
+  .tool-switches {
+    width: 100%;
+    flex-wrap: wrap;
   }
 }
 
@@ -1505,6 +1683,3 @@ main,
 .back-portal-link:hover {
   opacity: 0.8;
 }
-
-
-

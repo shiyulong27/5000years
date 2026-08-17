@@ -125,36 +125,38 @@ if (timeline) {
 
       const hasChinaVisible = chinaCards.some((c) => !c.hidden)
       const hasWorldVisible = worldCards.some((c) => !c.hidden)
+      const hasRulers = !!entry.axis?.querySelector('.axis-rulers')
+      const hasRulerCards = !!entry.china?.querySelector('.ruler-card')
 
-      if (entry.china) entry.china.classList.toggle('is-empty', chinaCards.length > 0 && !hasChinaVisible)
+      if (entry.china) entry.china.classList.toggle('is-empty', chinaCards.length > 0 && !hasChinaVisible && !hasRulerCards)
       if (entry.world) entry.world.classList.toggle('is-empty', worldCards.length > 0 && !hasWorldVisible)
-      // 中轴单元格：左右两侧均无可见事件卡片时隐藏，防止空行年份吸顶重叠
-      if (entry.axis) entry.axis.classList.toggle('is-empty', !hasChinaVisible && !hasWorldVisible)
+      // 君主即位节点即使没有事件也须保留；真正的空行才隐藏。
+      if (entry.axis) entry.axis.classList.toggle('is-empty', !hasChinaVisible && !hasWorldVisible && !hasRulers)
     }
 
     // 3. 处理朝代横幅：若某朝代下无任何可见事件，则隐藏其横幅
     const allChildren = [...timeline.children]
     let currentBanner = null
-    let currentBannerHasEvents = false
+    let currentBannerHasContent = false
 
     for (const el of allChildren) {
       if (el.classList.contains('banner-row')) {
         if (currentBanner) {
-          currentBanner.classList.toggle('is-empty', !currentBannerHasEvents)
+          currentBanner.classList.toggle('is-empty', !currentBannerHasContent)
         }
         currentBanner = el
-        currentBannerHasEvents = false
+        currentBannerHasContent = false
       } else if (el.classList.contains('cell-china') || el.classList.contains('cell-world')) {
         if (!el.classList.contains('is-empty')) {
           const cards = el.querySelectorAll('.event-card')
-          if ([...cards].some((c) => !c.hidden)) {
-            currentBannerHasEvents = true
+          if ([...cards].some((c) => !c.hidden) || el.querySelector('.ruler-card')) {
+            currentBannerHasContent = true
           }
         }
       }
     }
     if (currentBanner) {
-      currentBanner.classList.toggle('is-empty', !currentBannerHasEvents)
+      currentBanner.classList.toggle('is-empty', !currentBannerHasContent)
     }
 
     timeline.classList.toggle('hide-world', showWorld && !showWorld.checked)

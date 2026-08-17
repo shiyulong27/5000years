@@ -1,0 +1,97 @@
+# 三皇五帝：独立于信史君主表的上古传说专题。
+# 本文件不设置在位年份；timeline_start / timeline_end 仅用于在长卷中大致定位，
+# 人物顺序和叙事来自后世文献传统，不能视为已证实纪年。
+- id: sanhuang-fuxi
+  name: 伏羲
+  group: 三皇
+  timeline_start: "-3000"
+  timeline_end: "-2800"
+  aliases: [太昊, 包牺]
+  summary: 传说中创制八卦、结网、婚姻礼制的上古圣王。
+  confidence: 传说
+  dispute: |
+    三皇名单在《史记》《世本》《帝王世纪》《尚书大传》等文献中并不一致，
+    伏羲有时与太昊等称谓合并，此处采用最通行的文化记忆体系。
+  sources: [《史记·三皇本纪》（辑本）, 《易经·系辞》, 《世本》]
+
+- id: sanhuang-shennong
+  name: 神农
+  group: 三皇
+  timeline_start: "-2900"
+  timeline_end: "-2700"
+  aliases: [炎帝, 神农氏]
+  summary: 传说中教民稼穑、尝百草、建立早期农耕与医药知识的上古圣王。
+  confidence: 传说
+  dispute: |
+    神农与炎帝在不同传统中既有合一也有区分；“尝百草”等事迹经过后世长期累积，
+    不能直接还原为某一位可考的历史人物。
+  sources: [《史记·补三皇本纪》, 《淮南子》, 《逸周书》]
+
+- id: sanhuang-nuwa
+  name: 女娲
+  group: 三皇
+  timeline_start: "-3000"
+  timeline_end: "-2800"
+  aliases: [女娲氏]
+  summary: 传说中抟土造人、炼石补天、修复天地秩序的创世母神。
+  confidence: 传说
+  dispute: |
+    女娲是否属于“三皇”存在文献异说；其形象兼具创世神、部族始祖和文化英雄等层次，
+    此处按常见民间与通行教材体系收录。
+  sources: [《山海经》, 《淮南子》, 《风俗通义》]
+
+- id: wudi-huangdi
+  name: 黄帝
+  group: 五帝
+  timeline_start: "-2698"
+  timeline_end: "-2598"
+  aliases: [轩辕氏, 有熊氏]
+  summary: 传说中统一华夏诸部、制定礼制并被后世奉为华夏人文共祖的首位五帝。
+  confidence: 传说
+  dispute: |
+    黄帝的历史存在、在位年代和具体事迹缺乏同时代文字证据；相关叙事在战国至汉代不断累积。
+  sources: [《史记·五帝本纪》, 《国语》, 《逸周书》]
+
+- id: wudi-zhuanxu
+  name: 颛顼
+  group: 五帝
+  timeline_start: "-2514"
+  timeline_end: "-2437"
+  aliases: [高阳氏]
+  summary: 传说中的第二位五帝，常被描述为整顿秩序、区分天地与人神职责的统治者。
+  confidence: 传说
+  dispute: 五帝名单和排序存在异说，颛顼的事迹主要依赖后世文献追述。
+  sources: [《史记·五帝本纪》, 《国语》, 《淮南子》]
+
+- id: wudi-diku
+  name: 帝喾
+  group: 五帝
+  timeline_start: "-2436"
+  timeline_end: "-2367"
+  aliases: [高辛氏]
+  summary: 传说中的第三位五帝，后世谱系叙事常将其与尧、舜及商周先祖相联系。
+  confidence: 传说
+  dispute: 帝喾事迹简略，部分称谓可能与不同神话传统中的人物发生重合。
+  sources: [《史记·五帝本纪》, 《大戴礼记》]
+
+- id: wudi-yao
+  name: 尧
+  group: 五帝
+  timeline_start: "-2366"
+  timeline_end: "-2259"
+  aliases: [陶唐氏, 放勋]
+  summary: 传说中以德治天下并将帝位禅让给舜的五帝之一。
+  confidence: 传说
+  dispute: “尧舜禅让”是儒家政治理想的重要叙事；《竹书纪年》保存了与禅让美谈不同的版本。
+  sources: [《尚书·尧典》, 《史记·五帝本纪》, 《竹书纪年》]
+
+- id: wudi-shun
+  name: 舜
+  group: 五帝
+  timeline_start: "-2255"
+  timeline_end: "-2208"
+  aliases: [有虞氏, 重华]
+  summary: 传说中承接尧位、任用禹治水并以孝德著称的五帝之一。
+  confidence: 传说
+  dispute: 舜的生平与禅让叙事主要见于后世经典，具体年代和事件无法由同时代材料确认。
+  sources: [《尚书·舜典》, 《史记·五帝本纪》, 《孟子》]

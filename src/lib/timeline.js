@@ -49,18 +49,24 @@ function isDescendantOf(dynasty, ancestorId, byId) {
 /**
  * 选取需要出行的年份。
  *
- * 出行条件：该年有中国事件 ∨ 有世界事件 ∨ 是某朝代起始年。
+ * 出行条件：该年有中国事件 ∨ 有世界事件 ∨ 是某朝代或君主起始年
+ * ∨ 是传说人物约活动区间的边界年。
  *
  * 不逐年出行——公元前跨度约 2500 年而事件仅数十条，逐年会产生数千空行，
  * 页面既慢又无从阅读。视觉连续性由朝代色带跨行保证，不靠空行。
  *
  * @returns {number[]} 升序去重
  */
-export function collectYears(events = [], worldEvents = [], dynasties = []) {
+export function collectYears(events = [], worldEvents = [], dynasties = [], legends = [], rulers = []) {
   const years = new Set()
   for (const e of events) years.add(yearOf(e.date))
   for (const e of worldEvents) years.add(yearOf(e.date))
   for (const d of dynasties) years.add(yearOf(d.start))
+  for (const ruler of rulers) years.add(yearOf(ruler.reign_start))
+  for (const legend of legends) {
+    if (legend.timeline_start) years.add(yearOf(legend.timeline_start))
+    if (legend.timeline_end) years.add(yearOf(legend.timeline_end))
+  }
   return [...years].sort((a, b) => a - b)
 }
 
@@ -85,10 +91,11 @@ export function buildTimeline(data) {
     worldEvents = [],
     civilizations = [],
     figures = [],
+    legends = [],
   } = data
 
   const byId = new Map(dynasties.map((d) => [d.id, d]))
-  const years = collectYears(events, worldEvents, dynasties)
+  const years = collectYears(events, worldEvents, dynasties, legends, rulers)
 
   // 按年份归拢事件
   const cnByYear = new Map()
@@ -124,6 +131,16 @@ export function buildTimeline(data) {
       return rootIds.some((rootId) => isDescendantOf(d, rootId, byId))
     })
 
+  const rulersAtBoundary = (y, rootIds, field) =>
+    rulers
+      .filter((r) => {
+        if (yearOf(r[field]) !== y) return false
+        const d = byId.get(r.dynasty)
+        if (!d) return false
+        return rootIds.some((rootId) => isDescendantOf(d, rootId, byId))
+      })
+      .map((r) => ({ ...r, rootId: resolveRoot(byId.get(r.dynasty), byId).id }))
+
   // ── 逐年产出行，根朝代集合变化处插入横幅 ────────────────────
   const rows = []
   let prevRootIds = ''
@@ -157,6 +174,8 @@ export function buildTimeline(data) {
       year: y,
       dynasties: roots,
       rulers: rulersAt(y, rootIds),
+      startingRulers: rulersAtBoundary(y, rootIds, 'reign_start'),
+      endingRulers: rulersAtBoundary(y, rootIds, 'reign_end'),
       cnEvents: orderEvents(cnByYear.get(y) ?? []),
       worldEvents: orderEvents(worldByYear.get(y) ?? []),
       gridRow: rows.length + 1,
@@ -194,19 +213,38 @@ export function buildTimeline(data) {
     })
   }
 
-  // ── 人物生卒带 ──────────────────────────────────────────────
+  // ── 人物生卒带与传说人物约活动区间 ──────────────────────────
   // 与文明带的排布策略不同：文明按 region 分列（同一文明区始终同列，
   // 便于建立空间记忆），人物则用贪心排布——同代人大量重叠，若按 field
   // 分列，唐代的文学家会全部挤在一列里互相遮挡。贪心排布保证任意两条
   // 不重叠者可共用一列，列数随实际拥挤程度自适应。
   const figureBands = []
   const lanes = [] // 每条泳道记录其已占用的最末行号
+  const timelineFigures = [
+    ...figures.map((figure) => ({
+      ...figure,
+      timelineStart: figure.birth,
+      timelineEnd: figure.death,
+      kind: 'figure',
+    })),
+    ...legends
+      .filter((legend) => legend.timeline_start && legend.timeline_end)
+      .map((legend) => ({
+        ...legend,
+        field: '传说',
+        note: `${legend.group} · ${legend.summary}`,
+        timelineStart: legend.timeline_start,
+        timelineEnd: legend.timeline_end,
+        kind: 'legend',
+        detailPath: 'legend/sanhuang-wudi/',
+      })),
+  ]
 
-  for (const f of [...figures].sort((a, b) => sortKey(a.birth) - sortKey(b.birth))) {
-    const s = yearOf(f.birth)
-    const e = yearOf(f.death)
+  for (const f of timelineFigures.sort((a, b) => sortKey(a.timelineStart) - sortKey(b.timelineStart))) {
+    const s = yearOf(f.timelineStart)
+    const e = yearOf(f.timelineEnd)
     const inside = yearRows.filter((r) => r.year >= s && r.year <= e)
-    if (inside.length === 0) continue // 生卒区间内无行，长卷上无处安放
+    if (inside.length === 0) continue // 时间区间内无行，长卷上无处安放
 
     const rowStart = inside[0].gridRow
     const rowEnd = inside[inside.length - 1].gridRow
@@ -226,6 +264,9 @@ export function buildTimeline(data) {
       field: f.field,
       note: f.note,
       confidence: f.confidence,
+      kind: f.kind,
+      group: f.group,
+      detailPath: f.detailPath,
       rowStart,
       rowEnd,
       lane,

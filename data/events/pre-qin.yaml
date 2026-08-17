@@ -25,6 +25,7 @@
     禅让叙事的政治功能大于其史实性。
 
 - id: dayu-zhishui
+  related_dynasties: [xia]
   date: "-2208"
   title: 大禹治水
   category: 灾害
@@ -36,14 +37,22 @@
     治水传说可能反映了新石器晚期黄河流域的真实洪水记忆——
     地质证据显示约前1920年确有特大洪水。但将其与禹其人、
     与夏的建立挂钩，属后世的历史化建构。
+  sources: [尚书·禹贡, 史记·夏本纪]
+  image:
+    url: /images/events/xia/yu-song-portrait.jpg
+    caption: 南宋马麟《夏禹王立像》，为后世对大禹的想象，并非夏代同时期画像
+    source: https://commons.wikimedia.org/wiki/File:King_Yu_of_Xia.jpg
+    author: 马麟（作品）；台北故宫博物院数字化
+    license: Public Domain Mark 1.0
 
 - id: xia-founding
+  related_dynasties: [xia]
   date: "-2070"
-  title: 禹传位于启，夏朝建立
+  title: 禹建夏，启确立世袭
   category: 政治
   tags: [制度, 王朝更替]
   importance: 5
-  summary: 世袭制取代禅让制，中国进入王朝时代。
+  summary: 禹为传统开国君主，启为首位世袭君主，世袭制取代禅让制，中国进入王朝时代。
   confidence: 有争议
   dispute: |
     三重争议叠加：
@@ -55,9 +64,88 @@
     《竹书纪年》则载「益干启位，启杀之」，与禅让叙事相悖。
   sources: [史记·夏本纪, 竹书纪年]
 
+- id: gan-oath
+  related_dynasties: [xia]
+  date: "-2058"
+  title: 甘之战，启讨伐有扈氏
+  category: 战争
+  tags: [世袭制, 有扈氏]
+  importance: 4
+  summary: 传统文献称有扈氏反对启继位，启在甘地交战并获胜，常被解释为世袭王权确立过程中的冲突。
+  confidence: 有争议
+  dispute: 《尚书·甘誓》保存了启战有扈氏的叙事，但成篇年代、战场位置与事件年代均无同时代证据。
+  sources: [尚书·甘誓, 史记·夏本纪]
+
+- id: taikang-lost-state
+  related_dynasties: [xia]
+  date: "-2031"
+  title: 太康失国
+  category: 政治
+  tags: [权力更替, 有穷氏]
+  importance: 4
+  summary: 传统叙事称太康长期在外游猎，有穷氏后羿乘机控制夏政，夏后氏统治由此中断。
+  confidence: 有争议
+  dispute: 事件主要见于后世传世文献，不同典籍对后羿夺权时间、方式及太康结局叙述不一；前2031年仅为时间线推定。
+  sources: [尚书·五子之歌, 左传·襄公四年, 史记·夏本纪]
+
+- id: houyi-takes-xia
+  related_dynasties: [xia]
+  date: "-1990"
+  title: 后羿代夏
+  category: 政治
+  tags: [有穷氏, 权力更替]
+  importance: 4
+  summary: 传统叙事称有穷氏首领后羿掌握夏政并排挤夏后相，形成夏后氏失国时期。
+  confidence: 有争议
+  dispute: 后羿代夏主要据《左传》和《竹书纪年》系统重建，且可能与射日神话中的羿发生混同；日期为推定。
+  sources: [左传·襄公四年, 竹书纪年]
+
+- id: hanzhuo-usurpation
+  related_dynasties: [xia]
+  date: "-1968"
+  title: 寒浞杀羿，覆灭斟灌、斟鄩
+  category: 战争
+  tags: [寒浞, 夏后氏失国]
+  importance: 4
+  summary: 传统叙事称寒浞杀后羿夺权，又命浇、豷攻灭支持夏后的斟灌氏与斟鄩氏，相遇害，夏后氏势力跌入低谷。
+  confidence: 有争议
+  dispute: 人物、部族关系与战争过程均来自后世追述，缺少同时代文字和可与具体人物直接对应的考古材料；日期为推定。
+  sources: [左传·襄公四年, 竹书纪年]
+
+- id: shaokang-restoration
+  related_dynasties: [xia]
+  date: "-1940"
+  title: 少康中兴，夏后氏复国
+  category: 政治
+  tags: [复国, 少康中兴]
+  importance: 5
+  summary: 传统叙事称少康依托有仍氏、有虞氏积聚力量，派女艾侦察、使季杼诱歼，最终消灭浇、豷并恢复夏后氏统治。
+  confidence: 有争议
+  dispute: 「少康中兴」见于《左传》等后世文献，具体军事过程和年代无法由同时代材料核实；前1940年为本项目推定框架。
+  sources: [左传·哀公元年, 左传·襄公四年, 竹书纪年]
+  image:
+    url: /images/events/xia/erlitou-turquoise-dragon.jpg
+    caption: 二里头文化绿松石龙形器，作为夏代问题的考古背景，不与少康本人直接对应
+    source: https://commons.wikimedia.org/wiki/File:绿松石龙形器1.jpg
+    author: 陳寅恪（Wikimedia 用户）
+    license: CC BY-SA 4.0
+
+- id: zhu-expansion
+  related_dynasties: [xia]
+  date: "-1910"
+  title: 杼时期向东夷扩张
+  category: 战争
+  tags: [东夷, 王朝扩张]
+  importance: 3
+  summary: 传统文献将少康之子杼描述为继续征伐东夷、巩固复国成果的君主，反映夏与东方族群关系的历史记忆。
+  confidence: 有争议
+  dispute: 杼的征伐对象、范围和年代在文献中并不一致，无法与具体考古现象一一对应；前1910年仅作时间线定位。
+  sources: [竹书纪年, 国语·鲁语上]
+
 - id: shang-founding
+  related_dynasties: [xia, shang]
   date: "-1600"
-  title: 商汤灭夏
+  title: 鸣条之战，商汤灭夏
   category: 政治
   tags: [王朝更替, 历史转折]
   importance: 5
@@ -67,8 +155,40 @@
     鸣条之战与桀奔南巢皆出自传世文献，无同时代文字可证；
     夏本身的信史地位亦有争议（见 xia-founding 条）。年代采
     夏商周断代工程说（前1600），另有前1550 等说。
+  sources: [史记·殷本纪, 尚书·汤誓]
+  image:
+    url: /images/events/xia/erlitou-bronze-jue.jpg
+    caption: 二里头文化晚期铜爵，作为夏商之际的考古背景，不等同于鸣条之战实物
+    source: https://commons.wikimedia.org/wiki/File:二里头出土铜爵,_2024-06-22_01.jpg
+    author: Siyuwj（Wikimedia 用户）
+    license: CC BY-SA 4.0
+
+- id: yi-yin-regency
+  related_dynasties: [shang]
+  date: "-1537"
+  title: 伊尹辅政与太甲复位
+  category: 政治
+  tags: [辅政, 王权约束]
+  importance: 4
+  summary: 传统叙事称伊尹将失德的太甲放逐桐宫，三年后迎其复位，成为后世讨论臣权与君德的典范。
+  confidence: 有争议
+  dispute: 《史记》《尚书》称伊尹放太甲后迎归；古本《竹书纪年》则有伊尹篡位、太甲杀伊尹的异说，二者无法互证。
+  sources: [尚书·太甲, 史记·殷本纪, 竹书纪年]
+
+- id: zhongding-moves-ao
+  related_dynasties: [shang]
+  date: "-1400"
+  title: 仲丁迁隞，商都屡迁
+  category: 政治
+  tags: [迁都, 中商]
+  importance: 4
+  summary: 传统文献称仲丁将都城迁至隞，此后河亶甲、祖乙等继续迁徙，反映中商政治中心频繁变动。
+  confidence: 有争议
+  dispute: 隞通常与郑州商城联系，但遗址分期、王都属性及各次迁都的具体年代仍有不同意见。
+  sources: [史记·殷本纪, 竹书纪年, 中国社会科学院考古研究所·郑州商城考古资料]
 
 - id: oracle-bone
+  related_dynasties: [shang]
   date: "-1300"
   title: 盘庚迁殷
   category: 文化
@@ -77,7 +197,45 @@
   summary: |
     迁殷后商政稳定。殷墟甲骨（主要属武丁以降）为最早成体系的汉字，
     有文字可证的中国信史自此始。
-  confidence: 确定
+  confidence: 有争议
+  dispute: 盘庚迁殷及殷墟作为晚商都邑的基本框架较可靠，但前1300年只是约数；现存殷墟甲骨主要属于武丁以后，不能直接视为盘庚当年文书。
+  sources: [尚书·盘庚, 史记·殷本纪, 殷墟甲骨卜辞]
+
+- id: wuding-restoration
+  related_dynasties: [shang]
+  date: "-1274"
+  title: 武丁中兴
+  category: 政治
+  tags: [武丁, 中兴, 殷墟]
+  importance: 5
+  summary: 武丁时期王权扩张，对土方、鬼方、羌方等多方用兵，晚商进入政治、军事与青铜文化的鼎盛阶段。
+  confidence: 有争议
+  dispute: 武丁时期的大量征伐可由甲骨卜辞证实，但「武丁中兴」是后世概括；即位绝对年份存在多种断代方案。
+  sources: [殷墟甲骨卜辞, 史记·殷本纪]
+
+- id: fuhao-campaigns
+  related_dynasties: [shang]
+  date: "-1250"
+  title: 妇好领兵征伐方国
+  category: 战争
+  tags: [妇好, 方国, 女性]
+  importance: 5
+  summary: 甲骨卜辞记载妇好参与对土方、羌方、巴方等方国的军事行动，并主持祭祀，是晚商政治军事中的重要人物。
+  confidence: 有争议
+  dispute: 妇好其人、墓葬和出征活动有甲骨文与考古材料互证；前1250年仅为其活跃期的时间线定位，各次战争无法统一到单一年份。
+  sources: [殷墟甲骨卜辞, 中国社会科学院考古研究所·殷墟妇好墓]
+
+- id: late-shang-east-campaigns
+  related_dynasties: [shang]
+  date: "-1055"
+  title: 帝辛大规模经略东南
+  category: 战争
+  tags: [帝辛, 东夷, 晚商]
+  importance: 4
+  summary: 晚商持续向东南方用兵，传统上常解释为牵制商军、加重国力消耗并给周人东进留下机会。
+  confidence: 有争议
+  dispute: 晚商东南战争确有甲骨材料背景，但具体对象是否可统称「东夷」、战争规模及其与商亡的因果关系均有争论；日期为约数。
+  sources: [帝辛时期甲骨卜辞, 左传·昭公十一年, 史记·殷本纪]
 
 - id: jiangtaigong-diaoyu
   date: "-1050"
@@ -90,6 +248,7 @@
   sources: [史记·齐太公世家]
 
 - id: zhou-founding
+  related_dynasties: [shang, zhou]
   date: "-1046"
   title: 武王伐纣，周朝建立
   category: 政治
@@ -501,5 +660,3 @@
   summary: 韩国水工郑国奉命入秦修渠本意疲秦，秦王觉察后仍命其完工，引泾水灌溉关中平原，秦由此大富。
   confidence: 确定
   sources: [史记·河渠书]
-
-

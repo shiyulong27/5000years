@@ -17,8 +17,9 @@ const multi = new Set(rulers.map((r) => r.dynasty)).size > 1
     <thead class="rt-head">
       <tr class="rt-row rt-row-head">
         {multi && <th class="rt-th rt-th-dynasty">朝代</th>}
-        <th class="rt-th rt-th-temple">庙号</th>
+        <th class="rt-th rt-th-temple">称号</th>
         <th class="rt-th rt-th-name">姓名</th>
+        <th class="rt-th rt-th-tags">标签</th>
         <th class="rt-th rt-th-reign">在位</th>
         <th class="rt-th rt-th-era">年号</th>
         <th class="rt-th rt-th-note">备注</th>
@@ -26,10 +27,18 @@ const multi = new Set(rulers.map((r) => r.dynasty)).size > 1
     </thead>
     <tbody class="rt-body">
       {rulers.map((r) => (
-        <tr class="rt-row" data-dynasty={r.dynasty} data-role={r.role ?? ''}>
+        <tr
+          class="rt-row"
+          id={`ruler-${r.dynasty}-${r.temple_name}`}
+          data-dynasty={r.dynasty}
+          data-role={r.role ?? ''}
+        >
           {multi && <td class="rt-td rt-td-dynasty">{nameOf(r.dynasty)}</td>}
           <td class="rt-td rt-td-temple">{r.temple_name}</td>
           <td class="rt-td rt-td-name">{r.name ?? ''}</td>
+          <td class="rt-td rt-td-tags">
+            {r.tags?.map((tag) => <span class="ruler-tag">{tag}</span>)}
+          </td>
           <td class="rt-td rt-td-reign">{fmt(r.reign_start)}–{fmt(r.reign_end)}</td>
           <td class="rt-td rt-td-era">{r.era_names?.join('、') ?? ''}</td>
           <td class="rt-td rt-td-note">{r.note ?? ''}</td>

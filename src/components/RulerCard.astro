@@ -1,0 +1,37 @@
+---
+import { yearOf } from '../lib/date.js'
+
+const { ruler } = Astro.props
+const base = import.meta.env.BASE_URL
+
+const fmt = (date) => {
+  const year = yearOf(date)
+  return year < 0 ? `前${Math.abs(year)}` : String(year)
+}
+
+const anchor = `ruler-${ruler.dynasty}-${ruler.temple_name}`
+const approximate = ruler.confidence && ruler.confidence !== '确定'
+---
+
+<article
+  class="ruler-card"
+  data-ruler={ruler.temple_name}
+  data-dynasty={ruler.dynasty}
+>
+  <header class="ruler-card-head">
+    <div class="ruler-card-identity">
+      <span class="ruler-card-kicker">{ruler.tags?.[0] ?? '君王'}</span>
+      <h3 class="ruler-card-title">{ruler.temple_name}</h3>
+    </div>
+    {ruler.confidence && <span class="ruler-card-confidence">{ruler.confidence}</span>}
+  </header>
+
+  <p class="ruler-card-reign">
+    {approximate && <span>约 </span>}{fmt(ruler.reign_start)}–{fmt(ruler.reign_end)}
+  </p>
+  {ruler.note && <p class="ruler-card-note">{ruler.note}</p>}
+
+  <a class="ruler-card-link" href={`${base}dynasty/${ruler.rootId}/#${encodeURIComponent(anchor)}`}>
+    查看世系 <span aria-hidden="true">→</span>
+  </a>
+</article>

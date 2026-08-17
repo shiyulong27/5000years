@@ -24,6 +24,7 @@ export async function getStaticPaths() {
   return [...roots.values()].map((root) => {
     const children = data.dynasties.filter((d) => d.id !== root.id && isUnder(d, root.id))
     const memberIds = new Set([root.id, ...children.map((d) => d.id)])
+    const isRelated = (record) => record.related_dynasties?.some((id) => memberIds.has(id))
 
     return {
       params: { id: root.id },
@@ -34,10 +35,16 @@ export async function getStaticPaths() {
         rulers: data.rulers
           .filter((r) => memberIds.has(r.dynasty))
           .sort((a, b) => sortKey(a.reign_start) - sortKey(b.reign_start)),
+        figures: data.figures
+          .filter((figure) => {
+            const overlaps = yearOf(figure.birth) <= yearOf(root.end) && yearOf(figure.death) >= yearOf(root.start)
+            return figure.related_dynasties?.length ? isRelated(figure) : overlaps
+          })
+          .sort((a, b) => sortKey(a.birth) - sortKey(b.birth)),
         events: data.events
           .filter((e) => {
             const y = yearOf(e.date)
-            return y >= yearOf(root.start) && y <= yearOf(root.end)
+            return (y >= yearOf(root.start) && y <= yearOf(root.end)) || isRelated(e)
           })
           .sort((a, b) => (b.importance ?? 0) - (a.importance ?? 0) || sortKey(a.date) - sortKey(b.date))
           .slice(0, 12)
@@ -47,7 +54,7 @@ export async function getStaticPaths() {
   })
 }
 
-const { dynasty, children, rulers, events, dynasties } = Astro.props
+const { dynasty, children, rulers, figures, events, dynasties } = Astro.props
 
 const fmt = (d) => {
   const y = yearOf(d)
@@ -87,14 +94,41 @@ const base = import.meta.env.BASE_URL
 
     {rulers.length > 0 && (
       <section class="dynasty-section dynasty-rulers">
-        <h2 class="section-title">世系</h2>
+        <h2 class="section-title">历任帝王</h2>
         <RulerTable rulers={rulers} dynasties={dynasties} />
+      </section>
+    )}
+
+    {figures.length > 0 && (
+      <section class="dynasty-section dynasty-figures">
+        <h2 class="section-title">重要人物</h2>
+        <div class="dynasty-figure-grid">
+          {figures.map((figure) => (
+            <article class="dynasty-figure-card" id={`figure-${figure.id}`}>
+              <header class="dynasty-figure-head">
+                <h3>{figure.name}</h3>
+                <span class="dynasty-figure-field">{figure.field}</span>
+              </header>
+              <p class="dynasty-figure-meta">
+                <span>约 {fmt(figure.birth)}–{fmt(figure.death)}</span>
+                {figure.confidence && <span class="dynasty-figure-confidence">{figure.confidence}</span>}
+              </p>
+              <p class="dynasty-figure-note">{figure.note}</p>
+              {figure.dispute && (
+                <details class="dynasty-figure-dispute">
+                  <summary>争议说明</summary>
+                  <p>{figure.dispute}</p>
+                </details>
+              )}
+            </article>
+          ))}
+        </div>
       </section>
     )}
 
     {events.length > 0 && (
       <section class="dynasty-section dynasty-events">
-        <h2 class="section-title">大事</h2>
+        <h2 class="section-title">重要事件</h2>
         <div class="event-list">
           {events.map((e) => <EventCard event={e} />)}
         </div>

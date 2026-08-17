@@ -68,7 +68,7 @@ export function validate(data) {
 export function validateWithWarnings(data) {
   const errors = []
   const warnings = []
-  const { dynasties = [], rulers = [], events = [], worldEvents = [], civilizations = [], figures = [] } = data
+  const { dynasties = [], rulers = [], events = [], worldEvents = [], civilizations = [], figures = [], legends = [] } = data
 
   const push = (record, message, level = 'error') => {
     const loc = locOf(record) ?? { file: '(未知)', line: 0 }
@@ -92,6 +92,21 @@ export function validateWithWarnings(data) {
   checkRequired(worldEvents, 'event', '世界事件')
   checkRequired(civilizations, 'civilization', '文明')
   checkRequired(figures, 'figure', '人物')
+
+  // 传说专题使用独立数据模型：不强制伪造在位年份，但必须标明传统分组、置信度和异说。
+  for (const legend of legends) {
+    for (const field of ['id', 'name', 'group', 'summary', 'confidence', 'dispute']) {
+      if (legend[field] === undefined || legend[field] === null || legend[field] === '') {
+        push(legend, `传说人物“${legend.name ?? legend.id ?? '(无标题)'}”缺少必填字段 ${field}`)
+      }
+    }
+    if (legend.confidence !== undefined && !CONFIDENCES.includes(legend.confidence)) {
+      push(legend, `传说人物“${legend.name ?? legend.id ?? '(无标题)'}”的 confidence 不合法：${legend.confidence}`)
+    }
+    if (legend.dispute !== undefined && typeof legend.dispute !== 'string') {
+      push(legend, `传说人物“${legend.name ?? legend.id ?? '(无标题)'}”的 dispute 须为文本`)
+    }
+  }
 
   // ── 日期格式 ────────────────────────────────────────────────
   const checkDate = (record, field, noun, kind) => {
@@ -118,6 +133,21 @@ export function validateWithWarnings(data) {
         push(d, `朝代「${d.name}」起止倒置：${d.start} 晚于 ${d.end}`)
       } else {
         dateOk.add(d)
+      }
+    }
+  }
+  for (const legend of legends) {
+    const hasStart = legend.timeline_start !== undefined && legend.timeline_start !== null && legend.timeline_start !== ''
+    const hasEnd = legend.timeline_end !== undefined && legend.timeline_end !== null && legend.timeline_end !== ''
+    if (hasStart !== hasEnd) {
+      push(legend, `传说人物「${legend.name}」的 timeline_start 与 timeline_end 必须同时设置`)
+      continue
+    }
+    if (hasStart && hasEnd) {
+      const a = checkDate(legend, 'timeline_start', '传说人物', 'legend')
+      const b = checkDate(legend, 'timeline_end', '传说人物', 'legend')
+      if (a && b && yearOf(legend.timeline_start) > yearOf(legend.timeline_end)) {
+        push(legend, `传说人物「${legend.name}」时间线区间倒置：${legend.timeline_start} 晚于 ${legend.timeline_end}`)
       }
     }
   }
@@ -235,6 +265,24 @@ export function validateWithWarnings(data) {
   for (const r of rulers) {
     if (r.dynasty !== undefined && !byId.has(r.dynasty)) {
       push(r, `君主「${r.temple_name}」的 dynasty「${r.dynasty}」不存在`)
+    }
+  }
+  for (const [records, noun, kind] of [
+    [events, '事件', 'event'],
+    [worldEvents, '世界事件', 'event'],
+    [figures, '人物', 'figure'],
+  ]) {
+    for (const record of records) {
+      if (record.related_dynasties === undefined) continue
+      if (!Array.isArray(record.related_dynasties) || record.related_dynasties.length === 0) {
+        push(record, `${noun}「${labelOf(record, kind)}」的 related_dynasties 须为非空数组`)
+        continue
+      }
+      for (const dynastyId of record.related_dynasties) {
+        if (!byId.has(dynastyId)) {
+          push(record, `${noun}「${labelOf(record, kind)}」关联的朝代「${dynastyId}」不存在`)
+        }
+      }
     }
   }
 

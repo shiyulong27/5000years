@@ -7,8 +7,217 @@
 # 默认不显示，由工具栏开关控制——人物数量将远多于事件，
 # 常驻显示会淹没长卷本身。
 
+# ── 夏代非君主重要人物 ───────────────────────────────────────
+# 君主不入人物表，与世系表分工；后羿、寒浞作为失国期掌权者只进此表，
+# 不加「帝王」标签。全部使用 confidence: 有争议，年代为时间线占位。
+
+- id: gun
+  name: 鲧
+  related_dynasties: [xia]
+  birth: "-2200"
+  death: "-2100"
+  field: 政治
+  note: 禹之父，传统治水叙事中禹的前任治水者，治水九年未成而被殛
+  confidence: 有争议
+  dispute: |
+    鲧的事迹仅见于后世传世文献，无同时代文字自证；
+    其被殛于羽山的结局与治水经过在不同典籍中叙述不一。生卒年为占位。
+
+- id: boyi
+  name: 伯益
+  related_dynasties: [xia]
+  birth: "-2140"
+  death: "-2040"
+  field: 政治
+  note: 辅禹治水，传统继承叙事中禹原定传位于益，后由启继位
+  confidence: 有争议
+  dispute: |
+    《史记》称禹传位于益、益让于启；《竹书纪年》则载「益干启位，启杀之」，
+    两说方向相反。伯益其人与事迹均无同时代材料可证。生卒年为占位。
+
+- id: youhu-leader
+  name: 有扈氏首领
+  related_dynasties: [xia]
+  birth: "-2080"
+  death: "-2040"
+  field: 军事
+  note: 传统叙事中反对启继位、与启战于甘的部落首领
+  confidence: 有争议
+  dispute: |
+    有扈氏其部族、首领名号与甘之战经过均出自《尚书·甘誓》等后世文献，
+    无同时代证据。生卒年为时间线占位。
+
+- id: houyi-xia
+  name: 后羿（有穷氏）
+  related_dynasties: [xia]
+  birth: "-2040"
+  death: "-1970"
+  field: 军事
+  note: 有穷氏首领，传统叙事中太康失国后掌握夏政的失国期掌权者
+  confidence: 有争议
+  dispute: |
+    其事迹主要见于《左传》《竹书纪年》等后世文献，且常与神话中的射日之羿混同，
+    二者关系至今未有定论。生卒年仅为时间线占位。
+
+- id: hanzhuo
+  name: 寒浞
+  related_dynasties: [xia]
+  birth: "-2010"
+  death: "-1940"
+  field: 政治
+  note: 杀后羿夺权，攻灭支持夏后的斟灌、斟鄩氏，后被少康所灭
+  confidence: 有争议
+  dispute: |
+    寒浞其人及篡权经过均来自后世追述，缺少同时代文字印证；
+    《左传》与《竹书纪年》对其身世、结局叙述亦有出入。生卒年为占位。
+
+- id: nuai
+  name: 女艾
+  related_dynasties: [xia]
+  birth: "-1970"
+  death: "-1910"
+  field: 军事
+  note: 少康复国叙事中的侦察者，传统文献称其受少康派遣刺探浇的虚实
+  confidence: 有争议
+  dispute: |
+    女艾仅见于《左传·哀公元年》等后世文献，其人其事无同时代材料可证；
+    「中国历史上第一位女间谍」之说属后世演绎。生卒年为占位。
+
+- id: mi-xia
+  name: 靡
+  related_dynasties: [xia]
+  birth: "-1980"
+  death: "-1910"
+  field: 军事
+  note: 传统叙事中联合夏后旧部讨灭寒浞、辅佐少康复国的夏臣
+  confidence: 有争议
+  dispute: |
+    靡的事迹见于《左传》《竹书纪年》等后世文献，无同时代文字自证；
+    其在复国过程中的具体作用各家叙述不一。生卒年为占位。
+
+- id: guanlongpang
+  name: 关龙逄
+  related_dynasties: [xia]
+  birth: "-1700"
+  death: "-1620"
+  field: 政治
+  note: 传统忠谏叙事中因直谏夏桀而遇害的夏臣，后世奉为谏臣典范
+  confidence: 有争议
+  dispute: |
+    关龙逄其人及谏桀遇害之事主要见于后世文献，忠谏叙事带有明显的道德化建构色彩；
+    其生卒与事迹年代均无确证。生卒年为占位。
+
+- id: meixi
+  name: 妹喜
+  related_dynasties: [xia]
+  birth: "-1680"
+  death: "-1600"
+  field: 政治
+  note: 传统叙事中桀的宠妃，亡国归因多将其与妺妺、妲己并列
+  confidence: 有争议
+  dispute: |
+    妹喜其人及亡国作用多属后世附会，传统史观将夏之亡归咎于女祸，
+    此种叙事的史实性需打折扣。生卒年为占位。
+
+- id: shangtang
+  name: 商汤
+  related_dynasties: [xia, shang]
+  birth: "-1670"
+  death: "-1580"
+  field: 政治
+  note: 商部族首领，传统叙事中起兵伐桀、鸣条之战灭夏建商的开国之君
+  confidence: 有争议
+  dispute: |
+    商汤伐桀见于《史记·殷本纪》《尚书·汤誓》等文献，然具体年代与战争经过
+    无同时代文字可证；其世系与在位年数为后世追述。生卒年为占位。
+
+# ── 商代非君主重要人物 ───────────────────────────────────────
+
+- id: yiyin
+  name: 伊尹
+  related_dynasties: [shang]
+  birth: "-1640"
+  death: "-1520"
+  field: 政治
+  note: 商初重臣，辅佐商汤灭夏，并在太甲时期承担辅政角色
+  confidence: 有争议
+  dispute: |
+    伊尹为商代先公先王祭祀体系中的重要人物，但其出身、放逐太甲及迎归复位的细节
+    主要来自后世文献，且《尚书》《史记》与古本《竹书纪年》叙事冲突。生卒年为占位。
+
+- id: zhonghui
+  name: 仲虺
+  related_dynasties: [shang]
+  birth: "-1630"
+  death: "-1560"
+  field: 政治
+  note: 传统文献中的商汤左相，《仲虺之诰》被视为商初政治文告
+  confidence: 有争议
+  dispute: 仲虺事迹主要见于传世文献，《仲虺之诰》的成篇年代与文本层累问题长期有争议；生卒年为占位。
+
+- id: fuyue
+  name: 傅说
+  related_dynasties: [shang]
+  birth: "-1300"
+  death: "-1230"
+  field: 政治
+  note: 传统叙事称由筑傅岩之役者被武丁举为相，辅佐武丁中兴
+  confidence: 有争议
+  dispute: 清华简《傅说之命》证明相关传说在战国已有流传，但傅说生平及武丁梦得贤相的细节无法由同时代材料完整核实；生卒年为占位。
+
+- id: fuhao
+  name: 妇好
+  related_dynasties: [shang]
+  birth: "-1280"
+  death: "-1240"
+  field: 军事
+  note: 武丁配偶，参与征伐和祭祀；妇好墓与甲骨卜辞使其成为材料最丰富的商代女性
+  confidence: 有争议
+  dispute: 妇好身份、墓葬和活动有甲骨与考古材料互证，但具体生卒年及各次出征年份无法确定；日期为时间线占位。
+
+- id: bigan
+  name: 比干
+  related_dynasties: [shang]
+  birth: "-1120"
+  death: "-1047"
+  field: 政治
+  note: 商末王族重臣，后世忠谏传统称其因进谏帝辛而遇害
+  confidence: 有争议
+  dispute: 比干之名见于先秦文献，但「剖心」等细节经后世不断铺陈，难以视为可核实的同时代记录；生卒年为占位。
+
+- id: jizi
+  name: 箕子
+  related_dynasties: [shang, zhou]
+  birth: "-1120"
+  death: "-1040"
+  field: 政治
+  note: 商末王族，传统称谏帝辛不听而佯狂；周初相关叙事与《洪范》相联系
+  confidence: 有争议
+  dispute: 箕子其人与商末王族身份有早期文献依据，但出走朝鲜及传授《洪范》等说法的形成过程复杂；生卒年为占位。
+
+- id: weizi
+  name: 微子
+  related_dynasties: [shang, zhou]
+  birth: "-1110"
+  death: "-1020"
+  field: 政治
+  note: 商末王族，周初受封于宋，承担延续殷商祭祀的政治角色
+  confidence: 有争议
+  dispute: 微子受封宋国的基本框架见于传世文献，但其具体生卒、出走经过和劝谏细节无法确考；生卒年为占位。
+
+- id: daji
+  name: 妲己
+  related_dynasties: [shang]
+  birth: "-1090"
+  death: "-1046"
+  field: 政治
+  note: 传统叙事中的帝辛配偶，后世常被塑造成商亡祸因
+  confidence: 有争议
+  dispute: 妲己的恶行多见于较晚文献和文学演绎，将王朝覆亡归咎于女性具有明显的道德化与性别偏见；生卒年为占位。
+
 - id: jiangziya
   name: 姜尚
+  related_dynasties: [shang, zhou]
   birth: "-1120"
   death: "-1015"
   field: 政治
@@ -18,6 +227,7 @@
 
 - id: zhougong
   name: 周公旦
+  related_dynasties: [zhou]
   birth: "-1090"
   death: "-1032"
   field: 政治

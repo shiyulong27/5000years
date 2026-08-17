@@ -5,6 +5,7 @@ import CivBand from './CivBand.astro'
 import FigureBand from './FigureBand.astro'
 import DynastyBanner from './DynastyBanner.astro'
 import YearSummaryCard from './YearSummaryCard.astro'
+import RulerCard from './RulerCard.astro'
 
 const { rows, bands, figureBands = [], columns } = Astro.props
 
@@ -68,10 +69,12 @@ const summaryYears = [1840,1841,1842,1843,1844,1845,1846,1847,1848,1849,1850,185
 
         <div
           class="cell cell-china"
-          style={`grid-row:${row.gridRow};grid-column:${colChina};--dynasty-color:${row.dynasties[0]?.color ?? ''}`}
+          style={`grid-row:${row.gridRow};grid-column:calc(${colFigStart} + var(--fig-layout-count));--dynasty-color:${row.dynasties[0]?.color ?? ''}`}
           data-year={row.year}
           data-dynasty={row.dynasties.map((d) => d.id).join(' ')}
         >
+          {row.startingRulers.map((ruler) => <RulerCard ruler={ruler} />)}
+
           {summaryYears.includes(row.year) ? (
             <>
               <div

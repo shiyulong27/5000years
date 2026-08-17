@@ -1,14 +1,27 @@
 ---
 const { band } = Astro.props
+const base = import.meta.env.BASE_URL
+const label = band.group ? `${band.name} · ${band.group}` : band.name
 ---
 
 <div
   class="figure-band"
   data-figure={band.id}
   data-field={band.field}
+  data-kind={band.kind}
   data-lane={band.lane}
   style={`grid-row:${band.rowStart}/${band.rowEnd + 1}`}
-  title={`${band.name}　${band.note ?? ''}`}
+  title={`${label}　${band.note ?? ''}`}
 >
-  <span class="figure-name">{band.name}</span>
+  {band.detailPath ? (
+    <a
+      class="figure-link"
+      href={`${base}${band.detailPath}#${band.id}`}
+      aria-label={`${label}：${band.note ?? ''}`}
+    >
+      <span class="figure-name">{label}</span>
+    </a>
+  ) : (
+    <span class="figure-name">{label}</span>
+  )}
 </div>
