@@ -59,3 +59,32 @@
   summary: 子婴降于刘邦，秦历二世而亡，凡十五年。
   confidence: 确定
   sources: [史记·秦始皇本纪]
+
+- id: bolang-sha-assassination
+  related_dynasties: [qin]
+  date: "-0218"
+  title: 博浪沙刺秦
+  category: 政治
+  tags: [刺客, 秦末]
+  importance: 4
+  summary: 张良与客在秦始皇东游时于博浪沙狙击，误中副车后逃匿。
+  confidence: 有争议
+  dispute: |
+    事件基本过程见《史记·留侯世家》和《史记·秦始皇本纪》相关记载；
+    前218年为通行纪年，铁椎重量、车队规模和命中副车等细节属于传世叙事，
+    不应写成已由同时代材料独立证实的事实。张良生卒年未在本次补录中占位。
+  sources: [史记·留侯世家, 史记·秦始皇本纪]
+
+- id: shaqiu-change
+  related_dynasties: [qin]
+  date: "-0210"
+  title: 沙丘之变，胡亥继立
+  category: 政治
+  tags: [秦末, 王朝更替]
+  importance: 5
+  summary: 秦始皇崩于沙丘，赵高、李斯与胡亥秘不发丧并改易赐扶苏书，胡亥继位为秦二世。
+  confidence: 有争议
+  dispute: |
+    《史记·秦始皇本纪》《史记·李斯列传》交叉记载始皇崩于沙丘及胡亥继立；
+    改诏的具体文本、人物动机和责任归因主要依赖传世叙事，不能当作无争议的同时代实录。
+  sources: [史记·秦始皇本纪, 史记·李斯列传]

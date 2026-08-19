@@ -59,6 +59,77 @@
   confidence: 确定
   sources: [史记·高祖本纪]
 
+- id: dafeng-ge
+  related_dynasties: [han]
+  date: "-0195"
+  title: 高祖还沛作《大风歌》
+  category: 文化
+  tags: [楚汉, 诗歌]
+  importance: 4
+  summary: 高祖击败黥布后还沛置酒，击筑作《大风歌》，并命沛中子弟学习歌唱。
+  confidence: 有争议
+  dispute: |
+    《史记·高祖本纪》记高祖十二年还沛置酒、作歌和命子弟歌习；
+    歌辞的文本形成层次及场景细节属于传世记载，前195年只作年份级时间线锚点。
+  sources: [史记·高祖本纪]
+
+- id: baideng-siege
+  related_dynasties: [han]
+  date: "-0200"
+  title: 白登之围
+  category: 战争
+  tags: [汉初, 匈奴]
+  importance: 5
+  summary: 汉高祖先至平城，被冒顿单于军队围于白登七日，后经交涉解围并与匈奴议和。
+  confidence: 有争议
+  dispute: |
+    《史记·匈奴列传》记平城、白登、七日围困及解围过程；
+    兵力数字、诱战安排和阏氏交涉的具体细节主要见于单一传世叙事，前200年不细化月份。
+  sources: [史记·匈奴列传, 史记·高祖本纪]
+
+- id: baima-oath
+  related_dynasties: [han]
+  date: "-0196"
+  title: 白马之盟
+  category: 政治
+  tags: [汉初, 盟誓]
+  importance: 4
+  summary: 高祖与功臣刑白马为盟，约定非刘氏不得封王，功臣共同守护刘氏政权。
+  confidence: 有争议
+  dispute: |
+    《史记·吕太后本纪》引用高帝刑白马盟及“非刘氏而王，天下共击之”的约束；
+    盟约的具体日期、参与者范围和后世固定称谓存在传世文本差异，前196年仅作时间线锚点。
+  sources: [史记·吕太后本纪]
+
+- id: zhoubu-zhu-lu
+  related_dynasties: [han]
+  date: "-0180"
+  title: 周勃等诛灭诸吕，迎立文帝
+  category: 政治
+  tags: [汉初, 政变]
+  importance: 5
+  summary: 吕后死后，周勃与陈平等谋诛诸吕，控制局势并迎立代王刘恒为文帝。
+  confidence: 有争议
+  dispute: |
+    《史记·绛侯周勃世家》记周勃与陈平谋诛诸吕并立代王，《史记·吕太后本纪》提供诸吕掌握南北军的背景；
+    夺军顺序、参与者动机和宫廷细节应区分不同传记叙事，前180年不虚构月份。
+  sources: [史记·绛侯周勃世家, 史记·吕太后本纪]
+
+- id: tiying-shangshu
+  related_dynasties: [han]
+  date: "-0167"
+  title: 缇萦上书与文帝改革刑制
+  category: 政治
+  tags: [汉初, 刑制]
+  importance: 4
+  summary: 缇萦随父入京上书，请以身赎父刑；文帝感其言，随后下诏废除肉刑。
+  confidence: 有争议
+  dispute: |
+    《史记·孝文本纪》以文帝十三年记除肉刑，项目采用前167年作为通行时间线锚点；
+    《史记·扁鹊仓公列传》相关段落作“文帝四年”，存在传本或纪年异文。
+    缇萦上书与完整刑制改革之间的单线因果属于传世叙事解释，不应表述为无争议实证。
+  sources: [史记·孝文本纪, 史记·扁鹊仓公列传]
+
 - id: wenjing-rule
   date: "-0180"
   title: 文景之治
@@ -74,8 +145,11 @@
   category: 政治
   tags: [军纪, 西汉]
   importance: 3
-  summary: 匈奴入侵，文帝亲劳军，至细柳营按辔（pèi）徐行，军门都尉称「军中闻将军令，不闻天子之诏」，文帝大加称赞「此真将军矣」。
-  confidence: 确定
+  summary: 《史记》载匈奴入边时周亚夫驻军细柳，军纪严整；文帝劳军入营须遵军令，离营后称许周亚夫治军。
+  confidence: 有争议
+  dispute: |
+    《史记·绛侯周勃世家》以“文帝之后六年”系年，可对应前158年；
+    拦驾、按辔徐行及文帝称赞等完整场景和对话来自传世列传，不应表述为同时代实录。
   sources: [史记·绛侯周勃世家]
 
 - id: qiguo-zhiluan
@@ -87,6 +161,20 @@
   summary: 汉景帝采纳晁错建议削藩，吴王刘濞（bì）等七国以「诛晁错清君侧」起兵，周亚夫三月平乱。
   confidence: 确定
   sources: [汉书·荆燕吴传]
+
+- id: mayi-lure-battle
+  related_dynasties: [han]
+  date: "-0133"
+  title: 马邑诱敌战未成
+  category: 战争
+  tags: [西汉, 匈奴]
+  importance: 4
+  summary: 汉廷令聂壹以献马邑诱匈奴单于入塞，并在马邑附近部署伏兵；单于察觉汉军计划后退兵，伏击未能发动。
+  confidence: 有争议
+  dispute: |
+    《史记·匈奴列传》记聂壹诱敌、单于入武州塞及发现伏兵后退兵；
+    汉军兵力、单于获知计划的具体经过和人物对话属于传世叙事，前133年只作年份级纪年。
+  sources: [史记·匈奴列传]
 
 - id: simaxiangru-zhuowenjun
   date: "-0142"
@@ -373,6 +461,3 @@
   summary: 关羽攻樊城水淹七军威震华夏，左臂中流矢毒箭，请医割肉刮骨去毒，谈笑奕棋自若。
   confidence: 确定
   sources: [三国志·关羽传]
-
-
-
