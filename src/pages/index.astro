@@ -1,8 +1,57 @@
 ---
 import Base from '../layouts/Base.astro'
+import '../styles/learning.css'
 
 const base = import.meta.env.BASE_URL
 
+// 学科启蒙板块
+const subjectModules = [
+  {
+    id: 'chinese',
+    title: '📖 语文 · 语言与拼音启蒙',
+    sub: '从零开始学拼音 · 象形字识字 · 经典童谣诵读',
+    tag: '基础学科 · 语文',
+    status: 'ready',
+    link: `${base}chinese/pinyin/`,
+    portalLink: `${base}chinese/`,
+    badge: '🌟 拼音专页已上线',
+    desc: '面向零基础小朋友与幼小衔接，超详细收录23声母、24韵母、16整体认读，配备顺口溜口诀、四线三格规范、发音点读与拼读合成魔法台。',
+    cardClass: 'card-chinese',
+    icon: '📖',
+    btnText: '🎯 进入拼音王国 ➔',
+    tags: ['汉语拼音', '四线三格', '顺口溜', '拼读魔法台', '听音闯关']
+  },
+  {
+    id: 'math',
+    title: '📐 数学 · 数感与逻辑思维',
+    sub: '认识数字 0-100 · 10/20以内加减法 · 几何图形与时钟',
+    tag: '基础学科 · 数学',
+    status: 'ready',
+    link: `${base}math/`,
+    badge: '🧮 算术乐园已上线',
+    desc: '通过数字双语点读、可视化小圆点算盘和趣味算式，培养孩子初步数感、逻辑思维与几何空间认知。',
+    cardClass: 'card-math',
+    icon: '📐',
+    btnText: '🧮 进入数学乐园 ➔',
+    tags: ['数字点读', '可视化算盘', '加减法', '几何形状']
+  },
+  {
+    id: 'english',
+    title: '🔤 英语 · 自然拼读与启蒙',
+    sub: '26个英文字母 · Phonics 自然拼读 · 萌趣单词卡片',
+    tag: '基础学科 · 英语',
+    status: 'ready',
+    link: `${base}english/`,
+    badge: '🌍 自然拼读已上线',
+    desc: '纯正语音互动点读，带小朋友轻松掌握 A-Z 26个字母发音规律、动物颜色高频词汇及日常礼貌问候。',
+    cardClass: 'card-english',
+    icon: '🔤',
+    btnText: '🚀 进入英语乐园 ➔',
+    tags: ['26个字母', '自然拼读', '单词图卡', '日常问候']
+  }
+]
+
+// 原有通识与历史模块
 const modules = [
   {
     id: 'history',
@@ -13,6 +62,16 @@ const modules = [
     link: `${base}timeline/`,
     badge: '已上线',
     desc: '覆盖先秦至 2026 年中外重大历史事件、朝代演进、文明色带与历史人物，支持多级重要度筛选。',
+  },
+  {
+    id: 'sanhuang-wudi',
+    title: '🜂 三皇五帝 · 上古传说',
+    sub: '独立于信史纪年的传说时代专题，呈现人物传统、文献异说与历史边界',
+    tag: '历史 / 传说',
+    status: 'ready',
+    link: `${base}legend/sanhuang-wudi/`,
+    badge: '专题已上线',
+    desc: '收录伏羲、神农、女娲与五帝，明确区分传说、文献记载和可考历史，不把象征性年代当作确定事实。',
   },
   {
     id: 'poets',
@@ -57,7 +116,7 @@ const modules = [
 ]
 ---
 
-<Base title="十丘 (TenQiu) · 越九入十 · 全景知识门户" wide={true}>
+<Base title="十丘 (TenQiu) · 越九入十 · 全景知识与学科启蒙门户" wide={true}>
   <div class="tenqiu-portal">
     {/* 卷首 Hero 区域 */}
     <header class="portal-hero">
@@ -65,9 +124,51 @@ const modules = [
         <h1 class="hero-title">十 丘</h1>
         <span class="hero-en">TENQIU CODEX</span>
       </div>
+      <p class="hero-tagline">越九入十 · 通识百科与学科启蒙全景平台</p>
     </header>
 
-    {/* 知识模块矩阵 Grid */}
+    {/* 🌟 核心新增：基础学科启蒙专区（语文·数学·英语） */}
+    <section class="portal-subjects-section">
+      <div class="portal-subjects-head">
+        <h2 class="portal-subjects-title">🌱 基础学科启蒙 · 幼小衔接乐园</h2>
+        <p class="portal-subjects-desc">从 0 开始系统启蒙 · 互动点读 · 声画同步 · 激发学习兴趣</p>
+      </div>
+
+      <div class="subjects-cards-grid">
+        {subjectModules.map((sub) => (
+          <div class={`subject-portal-card ${sub.cardClass}`}>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+              <span class="subject-card-icon">{sub.icon}</span>
+              <span class="sub-tag tag-featured">{sub.badge}</span>
+            </div>
+
+            <h3 class="subject-card-title">{sub.title}</h3>
+            <div class="subject-card-sub">{sub.sub}</div>
+
+            <div class="subject-card-tags">
+              {sub.tags.map((t) => (
+                <span class="sub-tag">{t}</span>
+              ))}
+            </div>
+
+            <p class="subject-card-desc">{sub.desc}</p>
+
+            <div class="subject-card-foot">
+              <a href={sub.link} class="subject-enter-btn">
+                {sub.btnText}
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/* 通识与历史模块矩阵 Grid */}
+    <div style="margin-bottom: 1.5rem; text-align: center;">
+      <h2 style="font-size: 1.6rem; font-weight: 800; color: #1e293b; margin: 0 0 0.5rem;">📜 通识与历史长卷</h2>
+      <p style="color: #64748b; font-size: 0.95rem; margin: 0;">穿越千年历史长河，纵览华夏文明与世界风物</p>
+    </div>
+
     <main class="portal-modules-grid">
       {modules.map((m) => (
         <div class={`module-card module-${m.status}`}>
@@ -76,7 +177,7 @@ const modules = [
             <span class={`module-badge badge-${m.status}`}>{m.badge}</span>
           </div>
 
-          <h2 class="module-title">{m.title}</h2>
+          <h3 class="module-title">{m.title}</h3>
           <p class="module-sub">{m.sub}</p>
           <p class="module-desc">{m.desc}</p>
 
@@ -95,7 +196,12 @@ const modules = [
 
     <footer class="portal-footer">
       <p class="foot-text">【十丘】知识门户 · 纯静态构建 · 欢迎共同建设万象知识库</p>
-      <p class="foot-text"><a href={`${base}1950/`}>1950年中国与世界重大事件专页</a></p>
+      <p class="foot-text">
+        <a href={`${base}chinese/pinyin/`} style="color: #e11d48; font-weight: 600; text-decoration: none; margin-right: 1rem;">🎯 汉语拼音专页</a>
+        <a href={`${base}math/`} style="color: #059669; font-weight: 600; text-decoration: none; margin-right: 1rem;">📐 数学启蒙</a>
+        <a href={`${base}english/`} style="color: #d97706; font-weight: 600; text-decoration: none; margin-right: 1rem;">🔤 英语自然拼读</a>
+        <a href={`${base}1950/`} style="color: var(--muted); text-decoration: none;">1950年历史专页</a>
+      </p>
     </footer>
   </div>
 </Base>

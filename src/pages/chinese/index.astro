@@ -1,0 +1,127 @@
+---
+import Base from '../../layouts/Base.astro'
+import '../../styles/learning.css'
+
+const base = import.meta.env.BASE_URL
+
+const chineseModules = [
+  {
+    id: 'pinyin',
+    title: '🎯 汉语拼音 · 零基础启蒙',
+    sub: '从0开始学拼音 · 声母 / 韵母 / 整体认读 / 拼读魔法台',
+    status: 'ready',
+    badge: '🌟 重点推荐 · 已上线',
+    link: `${base}chinese/pinyin/`,
+    desc: '系统收录23个声母、24个韵母（含四声调）、16个整体认读音节，全量配备顺口溜口诀、四线三格书写规范、真人点读发音与合成魔法台。',
+    icon: '🏰',
+    tags: ['四线三格', '顺口溜', '声韵母', '拼读合成', '闯关测验']
+  },
+  {
+    id: 'literacy',
+    title: '🀄 识字大王 · 幼小衔接象形字',
+    sub: '看图识字 · 象形字演变 · 笔画笔顺 · 常用基础高频汉字',
+    status: 'preview',
+    badge: '📝 基础启蒙精选',
+    link: `${base}chinese/pinyin/`,
+    desc: '从日月山川、人手足口等象形字入门，探索汉字从甲骨文到楷书的奇妙演变过程。',
+    icon: '📖',
+    tags: ['象形字', '看图识字', '笔顺临摹', '常用300字']
+  },
+  {
+    id: 'poetry',
+    title: '🌸 启蒙古诗 · 朗朗上口童谣',
+    sub: '经典唐诗名篇 · 配拼音与大字注释 · 配乐朗诵',
+    status: 'preview',
+    badge: '🎵 经典诵读',
+    link: `${base}chinese/pinyin/`,
+    desc: '精选《咏鹅》《悯农》《静夜思》《春晓》等适合幼儿初学启蒙的朗朗上口名篇。',
+    icon: '📜',
+    tags: ['唐诗三百首', '春晓', '静夜思', '咏鹅', '亲子朗诵']
+  },
+  {
+    id: 'fables',
+    title: '🦊 成语故事 · 中华寓言乐园',
+    sub: '守株待兔 · 拔苗助长 · 刻舟求剑 · 盲人摸象',
+    status: 'upcoming',
+    badge: '规划建置中',
+    link: '#',
+    desc: '以图文童趣形式讲解经典中华成语与寓言故事，启迪智慧，明辨是非。',
+    icon: '🎋',
+    tags: ['成语故事', '寓言', '品德启蒙']
+  }
+]
+---
+
+<Base title="语文启蒙中心 · 汉语拼音与汉字乐园 · 十丘" wide={true}>
+  <div class="learn-container">
+    {/* 顶部统一导航 */}
+    <header class="learn-header">
+      <div class="learn-nav-bar">
+        <nav class="learn-breadcrumbs">
+          <a href={base}>🏛️ 十丘门户</a>
+          <span>/</span>
+          <strong style="color: #e11d48;">📖 语文启蒙中心</strong>
+        </nav>
+        <div class="learn-subject-switcher">
+          <a href={base} class="subject-chip chip-home">🏠 门户首页</a>
+          <a href={`${base}chinese/`} class="subject-chip chip-chinese active">📖 语文</a>
+          <a href={`${base}math/`} class="subject-chip chip-math">📐 数学</a>
+          <a href={`${base}english/`} class="subject-chip chip-english">🔤 英语</a>
+        </div>
+      </div>
+    </header>
+
+    {/* 语文主题大横幅 */}
+    <section class="learn-banner" style="background: linear-gradient(135deg, #fff1f2 0%, #fff7ed 100%); border-color: #fecdd3;">
+      <div class="learn-banner-icon">📖🌸</div>
+      <h1 class="learn-title" style="color: #9f1239;">语 文 启 蒙 · 汉 字 与 语 言 乐 园</h1>
+      <p class="learn-subtitle">听、说、读、写从零起步 · 拼音点读 · 象形字演变 · 经典古诗童谣诵读</p>
+      <div class="learn-quick-tips">
+        <span class="quick-tip-pill" style="border: 1px solid #fecdd3; color: #be123c;">🌟 核心重点：汉语拼音从零学</span>
+        <span class="quick-tip-pill" style="border: 1px solid #fecdd3; color: #be123c;">🔤 声韵母 + 整体认读全收录</span>
+        <span class="quick-tip-pill" style="border: 1px solid #fecdd3; color: #be123c;">🔊 支持真人语音交互点读</span>
+      </div>
+    </section>
+
+    {/* 语文模块列表 */}
+    <main style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem; margin-bottom: 3.5rem;">
+      {chineseModules.map((m) => (
+        <div class="subject-portal-card card-chinese">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
+            <span class="subject-card-icon">{m.icon}</span>
+            <span class="sub-tag tag-featured" style={m.status === 'ready' ? 'background: #e11d48; color: #fff;' : 'background: #f1f5f9; color: #64748b;'}>
+              {m.badge}
+            </span>
+          </div>
+
+          <h2 class="subject-card-title">{m.title}</h2>
+          <div class="subject-card-sub">{m.sub}</div>
+
+          <div class="subject-card-tags">
+            {m.tags.map((t) => (
+              <span class="sub-tag">{t}</span>
+            ))}
+          </div>
+
+          <p class="subject-card-desc">{m.desc}</p>
+
+          <div class="subject-card-foot">
+            {m.status === 'ready' ? (
+              <a href={m.link} class="subject-enter-btn" style="background: #e11d48; color: #fff;">
+                🚀 立即进入学习 ➔
+              </a>
+            ) : m.status === 'preview' ? (
+              <a href={m.link} class="subject-enter-btn" style="background: #be123c; color: #fff;">
+                进入拼音与字词乐园 ➔
+              </a>
+            ) : (
+              <span class="subject-enter-btn" style="background: #f1f5f9; color: #94a3b8; cursor: not-allowed;">
+                模块规划建设中
+              </span>
+            )}
+          </div>
+        </div>
+      ))}
+    </main>
+  </div>
+</Base>

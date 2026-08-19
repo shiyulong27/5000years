@@ -1,0 +1,226 @@
+---
+import Base from '../../layouts/Base.astro'
+import '../../styles/learning.css'
+
+const base = import.meta.env.BASE_URL
+
+// 26个英文字母与自然拼读
+const alphabet = [
+  { upper: 'A', lower: 'a', phonics: '/æ/', word: 'Apple', zh: '苹果', icon: '🍎' },
+  { upper: 'B', lower: 'b', phonics: '/b/', word: 'Banana', zh: '香蕉', icon: '🍌' },
+  { upper: 'C', lower: 'c', phonics: '/k/', word: 'Cat', zh: '小猫', icon: '🐱' },
+  { upper: 'D', lower: 'd', phonics: '/d/', word: 'Dog', zh: '小狗', icon: '🐶' },
+  { upper: 'E', lower: 'e', phonics: '/e/', word: 'Elephant', zh: '大象', icon: '🐘' },
+  { upper: 'F', lower: 'f', phonics: '/f/', word: 'Fish', zh: '小鱼', icon: '🐟' },
+  { upper: 'G', lower: 'g', phonics: '/ɡ/', word: 'Giraffe', zh: '长颈鹿', icon: '🦒' },
+  { upper: 'H', lower: 'h', phonics: '/h/', word: 'House', zh: '房子', icon: '🏠' },
+  { upper: 'I', lower: 'i', phonics: '/ɪ/', word: 'Ice cream', zh: '冰淇淋', icon: '🍦' },
+  { upper: 'J', lower: 'j', phonics: '/dʒ/', word: 'Juice', zh: '果汁', icon: '🧃' },
+  { upper: 'K', lower: 'k', phonics: '/k/', word: 'Kite', zh: '风筝', icon: '🪁' },
+  { upper: 'L', lower: 'l', phonics: '/l/', word: 'Lion', zh: '狮子', icon: '🦁' },
+  { upper: 'M', lower: 'm', phonics: '/m/', word: 'Monkey', zh: '猴子', icon: '🐵' },
+  { upper: 'N', lower: 'n', phonics: '/n/', word: 'Nose', zh: '鼻子', icon: '👃' },
+  { upper: 'O', lower: 'o', phonics: '/ɒ/', word: 'Orange', zh: '橙子', icon: '🍊' },
+  { upper: 'P', lower: 'p', phonics: '/p/', word: 'Panda', zh: '熊猫', icon: '🐼' },
+  { upper: 'Q', lower: 'q', phonics: '/kw/', word: 'Queen', zh: '女王', icon: '👑' },
+  { upper: 'R', lower: 'r', phonics: '/r/', word: 'Rabbit', zh: '兔子', icon: '🐰' },
+  { upper: 'S', lower: 's', phonics: '/s/', word: 'Sun', zh: '太阳', icon: '☀️' },
+  { upper: 'T', lower: 't', phonics: '/t/', word: 'Tiger', zh: '老虎', icon: '🐯' },
+  { upper: 'U', lower: 'u', phonics: '/ʌ/', word: 'Umbrella', zh: '雨伞', icon: '☂️' },
+  { upper: 'V', lower: 'v', phonics: '/v/', word: 'Violin', zh: '小提琴', icon: '🎻' },
+  { upper: 'W', lower: 'w', phonics: '/w/', word: 'Watermelon', zh: '西瓜', icon: '🍉' },
+  { upper: 'X', lower: 'x', phonics: '/ks/', word: 'Xylophone', zh: '木琴', icon: '🎼' },
+  { upper: 'Y', lower: 'y', phonics: '/j/', word: 'Yo-yo', zh: '溜溜球', icon: '🪀' },
+  { upper: 'Z', lower: 'z', phonics: '/z/', word: 'Zebra', zh: '斑马', icon: '🦓' },
+]
+
+// 常用分类单词卡
+const wordCategories = [
+  {
+    title: '🐶 萌宠动物 (Animals)',
+    words: [
+      { en: 'Cat', zh: '小猫', icon: '🐱' },
+      { en: 'Dog', zh: '小狗', icon: '🐶' },
+      { en: 'Bird', zh: '小鸟', icon: '🐦' },
+      { en: 'Rabbit', zh: '兔子', icon: '🐰' },
+      { en: 'Panda', zh: '熊猫', icon: '🐼' },
+    ]
+  },
+  {
+    title: '🎨 缤纷色彩 (Colors)',
+    words: [
+      { en: 'Red', zh: '红色', icon: '🔴' },
+      { en: 'Blue', zh: '蓝色', icon: '🔵' },
+      { en: 'Green', zh: '绿色', icon: '🟢' },
+      { en: 'Yellow', zh: '黄色', icon: '🟡' },
+      { en: 'Purple', zh: '紫色', icon: '🟣' },
+    ]
+  },
+  {
+    title: '👨‍👩‍👧 亲爱家庭 (Family)',
+    words: [
+      { en: 'Father / Dad', zh: '爸爸', icon: '👨' },
+      { en: 'Mother / Mom', zh: '妈妈', icon: '👩' },
+      { en: 'Brother', zh: '哥哥/弟弟', icon: '👦' },
+      { en: 'Sister', zh: '姐姐/妹妹', icon: '👧' },
+      { en: 'Baby', zh: '小宝宝', icon: '👶' },
+    ]
+  }
+]
+---
+
+<Base title="英语自然拼读与启蒙乐园 · 十丘" wide={true}>
+  <div class="learn-container">
+    {/* 顶部统一导航 */}
+    <header class="learn-header">
+      <div class="learn-nav-bar">
+        <nav class="learn-breadcrumbs">
+          <a href={base}>🏛️ 十丘门户</a>
+          <span>/</span>
+          <strong style="color: #d97706;">🔤 英语自然拼读乐园</strong>
+        </nav>
+        <div class="learn-subject-switcher">
+          <a href={base} class="subject-chip chip-home">🏠 门户首页</a>
+          <a href={`${base}chinese/`} class="subject-chip chip-chinese">📖 语文</a>
+          <a href={`${base}math/`} class="subject-chip chip-math">📐 数学</a>
+          <a href={`${base}english/`} class="subject-chip chip-english active">🔤 英语</a>
+        </div>
+      </div>
+    </header>
+
+    {/* 英语主题大横幅 */}
+    <section class="learn-banner" style="background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #eff6ff 100%); border-color: #fde68a;">
+      <div class="learn-banner-icon">🔤🌍</div>
+      <h1 class="learn-title" style="color: #92400e;">英 语 启 蒙 · 26 字 母 与 自 然 拼 读</h1>
+      <p class="learn-subtitle">听音辨字 · A-Z 自然拼读发音 · 萌趣认知单词卡片 · 沉浸式英文点读</p>
+      <div class="learn-quick-tips">
+        <span class="quick-tip-pill" style="border: 1px solid #fde68a; color: #b45309;">🔤 26个英文字母点读</span>
+        <span class="quick-tip-pill" style="border: 1px solid #fde68a; color: #b45309;">🎵 Phonics 自然拼读发音</span>
+        <span class="quick-tip-pill" style="border: 1px solid #fde68a; color: #b45309;">🍎 常用萌趣分类单词卡</span>
+      </div>
+    </section>
+
+    {/* 模块 1：26个英文字母 A-Z 自然拼读点读板 */}
+    <section class="learn-section">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-badge" style="background: #fffbeb; color: #d97706;">🔤</span>
+          <div>
+            <h2 class="section-title">第一课：26个英文字母与自然拼读 (Phonics)</h2>
+            <div class="section-subtitle">点击任意字母，聆听纯正美式发音与代表单词</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="english-letter-grid">
+        {alphabet.map((item) => (
+          <div 
+            class="english-letter-card"
+            onclick={`window.speakEnglish('${item.upper} ${item.lower}', '${item.word}', '${item.zh}')`}
+            title="点击收听字母与单词发音"
+          >
+            <div style="font-size: 2rem; margin-bottom: 0.25rem;">{item.icon}</div>
+            <div class="letter-case">{item.upper} {item.lower}</div>
+            <div class="letter-phonics">音标: {item.phonics}</div>
+            <div class="letter-word"><strong>{item.word}</strong></div>
+            <div style="font-size: 0.75rem; color: #94a3b8;">{item.zh}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/* 模块 2：常用分类萌趣单词卡 */}
+    <section class="learn-section">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-badge" style="background: #fffbeb; color: #d97706;">💡</span>
+          <div>
+            <h2 class="section-title">第二课：趣味分类单词图卡</h2>
+            <div class="section-subtitle">动物、颜色、家庭常用词汇一网打尽</div>
+          </div>
+        </div>
+      </div>
+
+      {wordCategories.map((cat) => (
+        <div style="margin-bottom: 2rem;">
+          <h3 style="font-size: 1.2rem; font-weight: 800; color: #92400e; margin: 0 0 1rem;">
+            {cat.title}
+          </h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1rem;">
+            {cat.words.map((w) => (
+              <div 
+                class="intro-card"
+                style="text-align: center; cursor: pointer; border: 2px solid #fde68a; transition: all 0.2s;"
+                onclick={`window.speakEnWord('${w.en}')`}
+                onmouseover="this.style.borderColor='#d97706'; this.style.transform='translateY(-2px)'"
+                onmouseout="this.style.borderColor='#fde68a'; this.style.transform='translateY(0)'"
+              >
+                <div style="font-size: 2.5rem; margin-bottom: 0.25rem;">{w.icon}</div>
+                <div style="font-size: 1.15rem; font-weight: 800; color: #1e293b;">{w.en}</div>
+                <div style="font-size: 0.85rem; color: #64748b;">{w.zh}</div>
+                <span style="display: inline-block; margin-top: 0.4rem; font-size: 0.75rem; background: #fffbeb; color: #d97706; padding: 0.15rem 0.5rem; border-radius: 999px; font-weight: 600;">
+                  🔊 点读
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </section>
+
+    {/* 模块 3：日常英语小问候 */}
+    <section class="learn-section">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-badge" style="background: #fffbeb; color: #d97706;">💬</span>
+          <div>
+            <h2 class="section-title">第三课：日常礼貌英文小问候</h2>
+            <div class="section-subtitle">有礼貌的好宝宝，自信大声说英语！</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+        <div class="intro-card" style="cursor: pointer;" onclick="window.speakEnWord('Hello, Nice to meet you!')">
+          <h4 style="color: #92400e; margin: 0 0 0.25rem;">👋 Hello!</h4>
+          <p style="margin: 0; color: #64748b; font-size: 0.9rem;">你好！见到你很高兴！</p>
+        </div>
+        <div class="intro-card" style="cursor: pointer;" onclick="window.speakEnWord('Good morning!')">
+          <h4 style="color: #92400e; margin: 0 0 0.25rem;">☀️ Good morning!</h4>
+          <p style="margin: 0; color: #64748b; font-size: 0.9rem;">早上好！太阳出来啦！</p>
+        </div>
+        <div class="intro-card" style="cursor: pointer;" onclick="window.speakEnWord('Thank you very much!')">
+          <h4 style="color: #92400e; margin: 0 0 0.25rem;">🙏 Thank you!</h4>
+          <p style="margin: 0; color: #64748b; font-size: 0.9rem;">谢谢你！非常感谢！</p>
+        </div>
+        <div class="intro-card" style="cursor: pointer;" onclick="window.speakEnWord('Goodbye, see you tomorrow!')">
+          <h4 style="color: #92400e; margin: 0 0 0.25rem;">👋 Goodbye!</h4>
+          <p style="margin: 0; color: #64748b; font-size: 0.9rem;">再见！明天见！</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<script is:inline>
+  window.speakEnglish = function(letter, word, zh) {
+    if (!('speechSynthesis' in window)) return
+    window.speechSynthesis.cancel()
+
+    // 播放英文发音
+    const utterance = new SpeechSynthesisUtterance(`${letter}, for ${word}`)
+    utterance.lang = 'en-US'
+    utterance.rate = 0.85
+    window.speechSynthesis.speak(utterance)
+  }
+
+  window.speakEnWord = function(word) {
+    if (!('speechSynthesis' in window)) return
+    window.speechSynthesis.cancel()
+
+    const utterance = new SpeechSynthesisUtterance(word)
+    utterance.lang = 'en-US'
+    utterance.rate = 0.85
+    window.speechSynthesis.speak(utterance)
+  }
+</script>

@@ -1,0 +1,800 @@
+---
+import Base from '../../layouts/Base.astro'
+import '../../styles/learning.css'
+import { pinyinMasterDict, shengmuNames, yunmuNames, toneNamesMap, toneMap } from '../../lib/pinyinDict.js'
+
+const base = import.meta.env.BASE_URL
+
+// 23个声母数据（含标准汉字呼读音）
+const initials = [
+  {
+    group: '唇音（上下嘴唇发音）',
+    items: [
+      { char: 'b', name: '玻', rhyme: '右下半圆 b b b，收听广播 b b b', pos: '占上中格，先写竖，再写右下半圆', words: 'bà 爸 · bái 白', pinyinText: 'b', spoken: '声母 玻。右下半圆 b b b，收听广播 b b b' },
+      { char: 'p', name: '坡', rhyme: '右上半圆 p p p，端盆泼水 p p p', pos: '占中下格，先写竖，再写右上半圆', words: 'pí 皮 · péng 朋', pinyinText: 'p', spoken: '声母 坡。右上半圆 p p p，端盆泼水 p p p' },
+      { char: 'm', name: '摸', rhyme: '两个门洞 m m m，蒙眼捉迷藏 m m m', pos: '占中格，竖、左弯竖、左弯竖（三笔）', words: 'mā 妈 · mǐ 米', pinyinText: 'm', spoken: '声母 摸。两个门洞 m m m，蒙眼捉迷藏 m m m' },
+      { char: 'f', name: '佛', rhyme: '一根拐杖 f f f，大佛微笑 f f f', pos: '占上中格，先写左弯竖，再写短横', words: 'fēi 飞 · fēng 风', pinyinText: 'f', spoken: '声母 佛。一根拐杖 f f f，大佛微笑 f f f' },
+    ]
+  },
+  {
+    group: '舌尖中音（舌尖抵住上齿龈）',
+    items: [
+      { char: 'd', name: '得', rhyme: '左下半圆 d d d，小马奔跑 d d d', pos: '占上中格，先写左下半圆，再写竖', words: 'dà 大 · dōng 东', pinyinText: 'd', spoken: '声母 得。左下半圆 d d d，小马奔跑 d d d' },
+      { char: 't', name: '特', rhyme: '伞柄朝下 t t t，雨滴答答 t t t', pos: '占上中格，先写竖右弯，再写短横', words: 'tiān 天 · tǔ 土', pinyinText: 't', spoken: '声母 特。伞柄朝下 t t t，雨滴答答 t t t' },
+      { char: 'n', name: '讷', rhyme: '一个门洞 n n n，小鸟归巢 n n n', pos: '占中格，先写竖，再写左弯竖', words: 'nǐ 你 · niǎo 鸟', pinyinText: 'n', spoken: '声母 讷。一个门洞 n n n，小鸟归巢 n n n' },
+      { char: 'l', name: '勒', rhyme: '一根小棍 l l l，赶猪过河 l l l', pos: '占上中格，竖到底（一笔写成）', words: 'lè 乐 · lái 来', pinyinText: 'l', spoken: '声母 勒。一根小棍 l l l，赶猪过河 l l l' },
+    ]
+  },
+  {
+    group: '舌根音（舌根抵住软腭）',
+    items: [
+      { char: 'g', name: '哥', rhyme: '9字加弯 g g g，白鸽飞翔 g g g', pos: '占中下格，先写左上半圆，再写竖左弯', words: 'gē 哥 · guó 国', pinyinText: 'g', spoken: '声母 哥。9字加弯 g g g，白鸽飞翔 g g g' },
+      { char: 'k', name: '科', rhyme: '两只蝌蚪 k k k，蝌蚪水草 k k k', pos: '占上中格，先写竖，再写左斜右斜', words: 'kě 可 · kāi 开', pinyinText: 'k', spoken: '声母 科。两只蝌蚪 k k k，蝌蚪水草 k k k' },
+      { char: 'h', name: '喝', rhyme: '一把椅子 h h h，小猴喝水 h h h', pos: '占上中格，先写竖，再写弯竖', words: 'hǎo 好 · huā 花', pinyinText: 'h', spoken: '声母 喝。一把椅子 h h h，小猴喝水 h h h' },
+    ]
+  },
+  {
+    group: '舌面前音（舌面前部贴住硬腭）',
+    items: [
+      { char: 'j', name: '鸡', rhyme: '小鸡啄米 j j j，竖弯加点 j j j', pos: '占上中下三格，先写竖左弯，再点上点', words: 'jī 鸡 · jiā 家', pinyinText: 'j', spoken: '声母 鸡。小鸡啄米 j j j，竖弯加点 j j j' },
+      { char: 'q', name: '七', rhyme: '左上半圆 q q q，气球升空 q q q', pos: '占中下格，先写左上半圆，再写竖', words: 'qī 七 · qiáo 桥', pinyinText: 'q', spoken: '声母 七。左上半圆 q q q，气球升空 q q q' },
+      { char: 'x', name: '西', rhyme: '刀切西瓜 x x x，打个大叉 x x x', pos: '占中格，先写右斜，再写左斜', words: 'xiào 笑 · xīng 星', pinyinText: 'x', spoken: '声母 西。刀切西瓜 x x x，打个大叉 x x x' },
+    ]
+  },
+  {
+    group: '翘舌音（舌尖向上翘起，抵住硬腭前部）',
+    items: [
+      { char: 'zh', name: '知', rhyme: '妈妈织毛衣 zh zh zh，z加h', pos: 'z占中格，h占上中格，靠拢紧凑', words: 'zhōng 中 · zhī 知', pinyinText: 'zh', spoken: '声母 知。妈妈织毛衣 zh zh zh，z加h' },
+      { char: 'ch', name: '吃', rhyme: '皮尺弯弯 ch ch ch，c加h', pos: 'c占中格，h占上中格，紧挨在一起', words: 'chī 吃 · chūn 春', pinyinText: 'ch', spoken: '声母 吃。皮尺弯弯 ch ch ch，c加h' },
+      { char: 'sh', name: '诗', rhyme: '一头狮子 sh sh sh，s加h', pos: 's占中格，h占上中格，亲密无间', words: 'shī 诗 · shū 书', pinyinText: 'sh', spoken: '声母 诗。一头狮子 sh sh sh，s加h' },
+      { char: 'r', name: '日', rhyme: '小树发芽 r r r，红日东升 r r r', pos: '占中格，先写竖，再写右弯短枝', words: 'rén 人 · rì 日', pinyinText: 'r', spoken: '声母 日。小树发芽 r r r，红日东升 r r r' },
+    ]
+  },
+  {
+    group: '平舌音（舌尖向前平伸，顶住上齿背）',
+    items: [
+      { char: 'z', name: '资', rhyme: '像个2字 z z z，写字做操 z z z', pos: '占中格，横折横（一笔写成）', words: 'zì 字 · zǎo 早', pinyinText: 'z', spoken: '声母 资。像个2字 z z z，写字做操 z z z' },
+      { char: 'c', name: '疵', rhyme: '半个圆圈 c c c，刺猬采果 c c c', pos: '占中格，左半圆（一笔写成）', words: 'cǎo 草 · cūn 村', pinyinText: 'c', spoken: '声母 疵。半个圆圈 c c c，刺猬采果 c c c' },
+      { char: 's', name: '思', rhyme: '半个8字 s s s，春蚕吐丝 s s s', pos: '占中格，从右上起笔向左绕弯（一笔）', words: 'sān 三 · sì 四', pinyinText: 's', spoken: '声母 思。半个8字 s s s，春蚕吐丝 s s s' },
+    ]
+  },
+  {
+    group: '零声母 / 特殊声母（亦作起头大字母）',
+    items: [
+      { char: 'y', name: '衣', rhyme: '树杈树杈 y y y，衣服衣服 y y y', pos: '占中下格，先写右斜，再写长左斜', words: 'yī 衣 · yuè 月', pinyinText: 'y', spoken: '声母 衣。树杈树杈 y y y，衣服衣服 y y y' },
+      { char: 'w', name: '屋', rhyme: '屋顶屋顶 w w w，小乌鸦 w w w', pos: '占中格，斜下斜上斜下斜上（两斜弯）', words: 'wǒ 我 · wén 文', pinyinText: 'w', spoken: '声母 屋。屋顶屋顶 w w w，小乌鸦 w w w' },
+    ]
+  }
+]
+
+// 24个韵母数据（含标准汉字呼读音）
+const finals = [
+  {
+    group: '单韵母（6个最核心的母音，发音口形始终不变）',
+    items: [
+      { char: 'a', name: '啊', rhyme: '张大嘴巴 a a a，阿姨唱歌 a a a', tones: ['ā', 'á', 'ǎ', 'à'], toneNames: ['啊 第一声', '啊 第二声', '啊 第三声', '啊 第四声'], pos: '占中格，先写左半圆，再写竖右弯', words: 'ā 妈的啊 · à 好的' },
+      { char: 'o', name: '喔', rhyme: '圆圆嘴巴 o o o，公鸡打鸣 o o o', tones: ['ō', 'ó', 'ǒ', 'ò'], toneNames: ['喔 第一声', '喔 第二声', '喔 第三声', '喔 第四声'], pos: '占中格，从左上起笔画圆（一笔）', words: 'wō 窝 · bō 播' },
+      { char: 'e', name: '鹅', rhyme: '扁扁嘴巴 e e e，清清池塘白鹅戏 e e e', tones: ['ē', 'é', 'ě', 'è'], toneNames: ['鹅 第一声', '鹅 第二声', '鹅 第三声', '鹅 第四声'], pos: '占中格，从中间向右起笔向上绕圆', words: 'é 鹅 · è 饿' },
+      { char: 'i', name: '衣', rhyme: '牙齿对齐 i i i，一件衣服 i i i', tones: ['ī', 'í', 'ǐ', 'ì'], toneNames: ['衣 第一声', '衣 第二声', '衣 第三声', '衣 第四声'], pos: '占上中格，先写竖，再在上格点一点', words: 'yī 一 · nǐ 你' },
+      { char: 'u', name: '乌', rhyme: '嘴巴突出 u u u，乌鸦做窝 u u u', tones: ['ū', 'ú', 'ǔ', 'ù'], toneNames: ['乌 第一声', '乌 第二声', '乌 第三声', '乌 第四声'], pos: '占中格，先写竖右弯，再写竖', words: 'wū 屋 · wǔ 五' },
+      { char: 'ü', name: '迂', rhyme: '吹起口哨 ü ü ü，小鱼吐泡 ü ü ü', tones: ['ǖ', 'ǘ', 'ǚ', 'ǜ'], toneNames: ['迂 第一声', '迂 第二声', '迂 第三声', '迂 第四声'], pos: '占上中格，先写u，再在上格点两点', words: 'yú 鱼 · yǔ 雨' },
+    ]
+  },
+  {
+    group: '复韵母（8个由两个单韵母复合滑动而成）',
+    items: [
+      { char: 'ai', name: '挨', rhyme: '挨着坐坐 ai ai ai，白菜矮小 ai ai ai', tones: ['āi', 'ái', 'ǎi', 'ài'], toneNames: ['挨 第一声', '挨 第二声', '挨 第三声', '爱 第四声'], pos: 'a和i均占中格，i的点在上一格', words: 'ài 爱 · bái 白' },
+      { char: 'ei', name: '欸', rhyme: '用力砍柴 ei ei ei，小羊喂草 ei ei ei', tones: ['ēi', 'éi', 'ěi', 'èi'], toneNames: ['欸 第一声', '欸 第二声', '欸 第三声', '欸 第四声'], pos: 'e占中格，i占上中格', words: 'měi 美 · fēi 飞' },
+      { char: 'ui', name: '威', rhyme: '围上围巾 ui ui ui，回水微风 ui ui ui', tones: ['uī', 'uí', 'uǐ', 'uì'], toneNames: ['微 第一声', '围 第二声', '伟 第三声', '对 第四声'], pos: 'u占中格，i占上中格', words: 'shuǐ 水 · guì 贵' },
+      { char: 'ao', name: '奥', rhyme: '奥运五环 ao ao ao，小猫嗷嗷 ao ao ao', tones: ['āo', 'áo', 'ǎo', 'ào'], toneNames: ['熬 第一声', '豪 第二声', '好 第三声', '奥 第四声'], pos: 'a和o均占中格，紧挨在一起', words: 'hǎo 好 · gāo 高' },
+      { char: 'ou', name: '欧', rhyme: '海鸥海鸥 ou ou ou，小猴吃藕 ou ou ou', tones: ['ōu', 'óu', 'ǒu', 'òu'], toneNames: ['欧 第一声', '猴 第二声', '偶 第三声', '肉 第四声'], pos: 'o和u均占中格', words: 'tóu 头 · hǒu 吼' },
+      { char: 'iu', name: '优', rhyme: '邮筒邮票 iu iu iu，游水九秋 iu iu iu', tones: ['iū', 'iú', 'iǔ', 'iù'], toneNames: ['优 第一声', '油 第二声', '九 第三声', '六 第四声'], pos: 'i占上中格，u占中格', words: 'niú 牛 · jiǔ 九' },
+      { char: 'ie', name: '椰', rhyme: '一片树叶 ie ie ie，写字姐姐 ie ie ie', tones: ['iē', 'ié', 'iě', 'iè'], toneNames: ['椰 第一声', '爷 第二声', '姐 第三声', '叶 第四声'], pos: 'i占上中格，e占中格', words: 'yè 叶 · jiě 姐' },
+      { char: 'üe', name: '约', rhyme: '月儿弯弯 üe üe üe，喜鹊雪花 üe üe üe', tones: ['üē', 'üé', 'üě', 'üè'], toneNames: ['约 第一声', '嚼 第二声', '雪 第三声', '月 第四声'], pos: 'ü占上中格，e占中格', words: 'yuè 月 · xuě 雪' },
+    ]
+  },
+  {
+    group: '特殊韵母（1个独立自成音节的卷舌韵母，不与声母相拼）',
+    items: [
+      { char: 'er', name: '儿', rhyme: '耳朵耳朵 er er er，卷起舌头发 er er er', tones: ['ēr', 'ér', 'ěr', 'èr'], toneNames: ['儿 第一声', '儿 第二声', '耳 第三声', '二 第四声'], pos: 'e和r均占中格', words: 'ér 儿 · èr 二' },
+    ]
+  },
+  {
+    group: '前鼻韵母（5个以舌尖鼻音 n 结尾的韵母）',
+    items: [
+      { char: 'an', name: '安', rhyme: '天安门前 an an an，安全蓝天 an an an', tones: ['ān', 'án', 'ǎn', 'àn'], toneNames: ['安 第一声', '蓝 第二声', '晚 第三声', '按 第四声'], pos: 'a和n均占中格', words: 'shān 山 · kàn 看' },
+      { char: 'en', name: '恩', rhyme: '摁下门铃 en en en，感恩森林 en en en', tones: ['ēn', 'én', 'ěn', 'èn'], toneNames: ['恩 第一声', '人 第二声', '怎 第三声', '摁 第四声'], pos: 'e和n均占中格', words: 'rén 人 · běn 本' },
+      { char: 'in', name: '因', rhyme: '绿荫树下 in in in，音乐拼音 in in in', tones: ['īn', 'ín', 'ǐn', 'ìn'], toneNames: ['因 第一声', '银 第二声', '引 第三声', '印 第四声'], pos: 'i占上中格，n占中格', words: 'jīn 金 · xīn 心' },
+      { char: 'un', name: '温', rhyme: '蚊子嗡嗡 un un un，白云春温 un un un', tones: ['ūn', 'ún', 'ǔn', 'ùn'], toneNames: ['温 第一声', '文 第二声', '准 第三声', '问 第四声'], pos: 'u和n均占中格', words: 'chūn 春 · wén 闻' },
+      { char: 'ün', name: '晕', rhyme: '白云朵朵 ün ün ün，军人轮船 ün ün ün', tones: ['ǖn', 'ǘn', 'ǚn', 'ǜn'], toneNames: ['晕 第一声', '云 第二声', '允 第三声', '运 第四声'], pos: 'ü占上中格，n占中格', words: 'yún 云 · jūn 军' },
+    ]
+  },
+  {
+    group: '后鼻韵母（4个以舌根鼻音 ng 结尾的韵母，声音浑厚响亮）',
+    items: [
+      { char: 'ang', name: '昂', rhyme: '羊角羊角 ang ang ang，太阳阳光 ang ang ang', tones: ['āng', 'áng', 'ǎng', 'àng'], toneNames: ['汪 第一声', '羊 第二声', '想 第三声', '亮 第四声'], pos: 'a、n占中格，g占中下格', words: 'yáng 羊 · bàng 棒' },
+      { char: 'eng', name: '鞥', rhyme: '台灯台灯 eng eng eng，风筝升空 eng eng eng', tones: ['ēng', 'éng', 'ěng', 'èng'], toneNames: ['风 第一声', '朋 第二声', '冷 第三声', '梦 第四声'], pos: 'e、n占中格，g占中下格', words: 'dēng 灯 · fēng 风' },
+      { char: 'ing', name: '英', rhyme: '老鹰老鹰 ing ing ing，星星明亮 ing ing ing', tones: ['īng', 'íng', 'ǐng', 'ìng'], toneNames: ['英 第一声', '明 第二声', '影 第三声', '定 第四声'], pos: 'i、n占中格（点在上格），g占中下格', words: 'xīng 星 · tīng 听' },
+      { char: 'ong', name: '轰', rhyme: '红钟敲响 ong ong ong，天空苍穹 ong ong ong', tones: ['ōng', 'óng', 'ǒng', 'òng'], toneNames: ['中 第一声', '红 第二声', '勇 第三声', '动 第四声'], pos: 'o、n占中格，g占中下格', words: 'hóng 红 · zhōng 中' },
+    ]
+  }
+]
+
+// 16个整体认读音节
+const wholeSyllables = [
+  { group: '翘舌音整体认读（4个）', items: [
+    { char: 'zhi', rhyme: '小蜘蛛 zhi zhi zhi', words: 'zhī 蜘蛛 · zhì 智慧', spoken: '整体认读音节，知。小蜘蛛 zhi zhi zhi，蜘蛛的知' },
+    { char: 'chi', rhyme: '吃苹果 chi chi chi', words: 'chī 吃饭 · chí 迟到', spoken: '整体认读音节，吃。吃苹果 chi chi chi，吃饭的吃' },
+    { char: 'shi', rhyme: '大狮子 shi shi shi', words: 'shī 老师 · shí 十个', spoken: '整体认读音节，师。大狮子 shi shi shi，老师的师' },
+    { char: 'ri', rhyme: '红日升 ri ri ri', words: 'rì 日月 · rè 热情', spoken: '整体认读音节，日。红日东升 ri ri ri，日月的日' },
+  ]},
+  { group: '平舌音整体认读（3个）', items: [
+    { char: 'zi', rhyme: '小写字 zi zi zi', words: 'zì 汉字 · zǐ 儿子', spoken: '整体认读音节，资。小写字 zi zi zi，汉字的字' },
+    { char: 'ci', rhyme: '小刺猬 ci ci ci', words: 'cì 刺猬 · cí 磁铁', spoken: '整体认读音节，疵。小刺猬 ci ci ci，刺猬的刺' },
+    { char: 'si', rhyme: '吐白丝 si si si', words: 'sī 丝绸 · sì 数字四', spoken: '整体认读音节，思。吐白丝 si si si，数字四的四' },
+  ]},
+  { group: '大Y大W带队与复合音节（9个）', items: [
+    { char: 'yi', rhyme: '一件衣服 yi yi yi', words: 'yī 第一 · yǐ 椅子', spoken: '整体认读音节，衣。一件衣服 yi yi yi，第一的一' },
+    { char: 'wu', rhyme: '乌龟乌龟 wu wu wu', words: 'wū 房屋 · wǔ 数字五', spoken: '整体认读音节，屋。乌龟乌龟 wu wu wu，房屋的屋' },
+    { char: 'yu', rhyme: '小金鱼 yu yu yu', words: 'yú 金鱼 · yǔ 下雨', spoken: '整体认读音节，迂。小金鱼 yu yu yu，金鱼的鱼' },
+    { char: 'ye', rhyme: '绿树叶 ye ye ye', words: 'yè 树叶 · yé 爷爷', spoken: '整体认读音节，椰。绿树叶 ye ye ye，树叶的叶' },
+    { char: 'yue', rhyme: '月亮弯 yue yue yue', words: 'yuè 月亮 · yuè 音乐', spoken: '整体认读音节，约。月亮弯弯 yue yue yue，月亮的月' },
+    { char: 'yuan', rhyme: '小汤圆 yuan yuan yuan', words: 'yuán 圆圈 · yuǎn 远方', spoken: '整体认读音节，冤。小汤圆 yuan yuan yuan，圆圈的圆' },
+    { char: 'yin', rhyme: '听音乐 yin yin yin', words: 'yīn 声音 · yín 银行', spoken: '整体认读音节，因。听音乐 yin yin yin，声音的音' },
+    { char: 'yun', rhyme: '天上云 yun yun yun', words: 'yún 白云 · yùn 运动', spoken: '整体认读音节，晕。天上云朵 yun yun yun，白云的云' },
+    { char: 'ying', rhyme: '老鹰飞 ying ying ying', words: 'yīng 雄鹰 · yǐng 影子', spoken: '整体认读音节，英。老鹰飞翔 ying ying ying，雄鹰的鹰' },
+  ]}
+]
+---
+
+<Base title="汉语拼音零基础启蒙 · 拼音王国从0开始 · 十丘" wide={true}>
+  <div class="learn-container">
+    {/* 顶部统一导航栏 */}
+    <header class="learn-header">
+      <div class="learn-nav-bar">
+        <nav class="learn-breadcrumbs">
+          <a href={base}>🏛️ 十丘门户</a>
+          <span>/</span>
+          <a href={`${base}chinese/`}>📖 语文启蒙</a>
+          <span>/</span>
+          <strong style="color: #e11d48;">🎯 汉语拼音专页</strong>
+        </nav>
+        <div class="learn-subject-switcher">
+          <a href={base} class="subject-chip chip-home">🏠 门户首页</a>
+          <a href={`${base}chinese/`} class="subject-chip chip-chinese active">📖 语文</a>
+          <a href={`${base}math/`} class="subject-chip chip-math">📐 数学</a>
+          <a href={`${base}english/`} class="subject-chip chip-english">🔤 英语</a>
+        </div>
+      </div>
+    </header>
+
+    {/* 卷首欢迎横幅 */}
+    <section class="learn-banner">
+      <div class="learn-banner-icon">🏰✨</div>
+      <h1 class="learn-title">拼 音 王 国 · 零 基 础 奇 妙 旅 程</h1>
+      <p class="learn-subtitle">专为小朋友量身打造的从 0 开始拼音全景课程 · 顺口溜速记 · 四线三格规范 · 中文汉字标准拼读朗读</p>
+      <div class="learn-quick-tips">
+        <span class="quick-tip-pill">🎯 23个声母全家福</span>
+        <span class="quick-tip-pill">🎶 24个韵母带四声</span>
+        <span class="quick-tip-pill">⭐ 16个整体认读音节</span>
+        <span class="quick-tip-pill">✨ 拼音合成魔法台</span>
+        <span class="quick-tip-pill">🏆 听音闯关小游戏</span>
+      </div>
+    </section>
+
+    {/* 悬浮快速定位导航 */}
+    <nav class="pinyin-nav-bar">
+      <a href="#intro" class="pinyin-nav-btn">📍 0基础入门与四声</a>
+      <a href="#shengmu" class="pinyin-nav-btn">🔤 23个声母</a>
+      <a href="#yunmu" class="pinyin-nav-btn">🎵 24个韵母</a>
+      <a href="#zhengti" class="pinyin-nav-btn">⭐ 16个整体认读</a>
+      <a href="#rules" class="pinyin-nav-btn">📜 拼读黄金口诀</a>
+      <a href="#blender" class="pinyin-nav-btn">✨ 拼读合成魔法台</a>
+      <a href="#quiz" class="pinyin-nav-btn">🎮 闯关小游戏</a>
+    </nav>
+
+    {/* 模块 1：零基础第一课 · 认识拼音与四线三格 */}
+    <section id="intro" class="learn-section">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-badge">🏰</span>
+          <div>
+            <h2 class="section-title">第一课：认识拼音王国与四线三格</h2>
+            <div class="section-subtitle">为什么我们要学拼音？怎样在四线三格里规范书写？</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pinyin-intro-grid">
+        <div class="intro-card">
+          <h4>🌟 拼音是什么？</h4>
+          <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin: 0 0 0.75rem;">
+            拼音就像是汉字的<strong>“小身份证”</strong>和<strong>“发音小向导”</strong>。学好了拼音，哪怕遇到没学过的汉字，小朋友也能自己读故事书、看绘本啦！
+          </p>
+          <div style="background: #fff; padding: 0.75rem 1rem; border-radius: 8px; font-size: 0.88rem; color: #e11d48; font-weight: 600;">
+            👨‍👩‍👧 拼音大家族有三大支柱：<strong>声母（23个）</strong> + <strong>韵母（24个）</strong> + <strong>整体认读音节（16个）</strong>
+          </div>
+        </div>
+
+        <div class="intro-card">
+          <h4>📏 认识「四线三格」</h4>
+          <div class="four-line-demo">
+            <div class="four-line-canvas">
+              <span class="demo-char">b</span>
+              <div class="four-line-labels">
+                <span>第一线 (顶线)</span>
+                <span>第二线 (上格底)</span>
+                <span>第三线 (基准线)</span>
+                <span>第四线 (底线)</span>
+              </div>
+            </div>
+            <div class="four-line-explains">
+              <span class="explain-tag">上格：高个子住上格 (如 b, d, t, l)</span>
+              <span class="explain-tag">中格：圆滚滚住中格 (如 a, o, e, m)</span>
+              <span class="explain-tag">下格：小尾巴伸下格 (如 p, q, g, y)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 四个声调手势与图解 */}
+      <h3 style="font-size: 1.25rem; font-weight: 800; color: #1e293b; margin: 1.5rem 0 1rem;">
+        🌈 魔法声调帽子（四声歌）
+      </h3>
+      <div class="tones-showcase">
+        <div class="tone-card tone-1" onclick="window.speakText('一声平平高又平，啊，妈妈的妈')">
+          <div class="tone-symbol">ˉ (ā)</div>
+          <div class="tone-name">第一声 · 阴平</div>
+          <div class="tone-rhyme">一声平平高又平 ➔ 如：mā 妈</div>
+        </div>
+        <div class="tone-card tone-2" onclick="window.speakText('二声就像上山坡，啊，麻雀的麻')">
+          <div class="tone-symbol">ˊ (á)</div>
+          <div class="tone-name">第二声 · 阳平</div>
+          <div class="tone-rhyme">二声就像上山坡 ↗ 如：má 麻</div>
+        </div>
+        <div class="tone-card tone-3" onclick="window.speakText('三声下坡又上坡，啊，小马的马')">
+          <div class="tone-symbol">ˇ (ǎ)</div>
+          <div class="tone-name">第三声 · 上声</div>
+          <div class="tone-rhyme">三声下坡又上坡 ∨ 如：mǎ 马</div>
+        </div>
+        <div class="tone-card tone-4" onclick="window.speakText('四声就像下山坡，啊，大坝的坝')">
+          <div class="tone-symbol">ˋ (à)</div>
+          <div class="tone-name">第四声 · 去声</div>
+          <div class="tone-rhyme">四声就像下山坡 ↘ 如：mà 骂</div>
+        </div>
+      </div>
+    </section>
+
+    {/* 模块 2：23个声母全家福 */}
+    <section id="shengmu" class="learn-section">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-badge" style="background: #fff1f2; color: #e11d48;">🔤</span>
+          <div>
+            <h2 class="section-title">第二课：23个声母全家福</h2>
+            <div class="section-subtitle">发音轻而短，放在音节最开头带队！点击任意卡片即可听中文标准发音与顺口溜</div>
+          </div>
+        </div>
+        <div class="voice-control-bar">
+          <span>🔊 点击卡片即读</span>
+        </div>
+      </div>
+
+      {initials.map((cat) => (
+        <div class="pinyin-category-block">
+          <div class="pinyin-category-head">
+            <h4>{cat.group}</h4>
+            <span class="pinyin-category-tip">（共 {cat.items.length} 个）</span>
+          </div>
+
+          <div class="pinyin-grid">
+            {cat.items.map((item) => (
+              <div 
+                class="pinyin-card"
+                onclick={`window.playPinyinCard('${item.char}', '${item.name}', '${item.rhyme}')`}
+                title="点击收听标准发音与顺口溜"
+              >
+                <div class="pinyin-mini-fourline">
+                  <span class="pinyin-char">{item.char}</span>
+                </div>
+                <div class="pinyin-rhyme">{item.rhyme}</div>
+                <div style="font-size: 0.72rem; color: #e11d48; margin-bottom: 0.4rem; font-weight: 500;">
+                  ✍️ {item.pos}
+                </div>
+                <div class="pinyin-words">例：{item.words}</div>
+                <span class="pinyin-play-btn">🔊 朗读 ({item.name})</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </section>
+
+    {/* 模块 3：24个韵母全家福 */}
+    <section id="yunmu" class="learn-section">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-badge" style="background: #eff6ff; color: #3b82f6;">🎵</span>
+          <div>
+            <h2 class="section-title">第三课：24个韵母全家福（带四声调）</h2>
+            <div class="section-subtitle">发音响亮而饱满！包含 6个单韵母 + 8个复韵母 + 1个特殊韵母 + 5个前鼻韵母 + 4个后鼻韵母</div>
+          </div>
+        </div>
+      </div>
+
+      {finals.map((cat) => (
+        <div class="pinyin-category-block">
+          <div class="pinyin-category-head">
+            <h4>{cat.group}</h4>
+            <span class="pinyin-category-tip">（共 {cat.items.length} 个）</span>
+          </div>
+
+          <div class="pinyin-grid">
+            {cat.items.map((item) => (
+              <div 
+                class="pinyin-card"
+                onclick={`window.playFinalCard('${item.char}', '${item.name}', '${item.rhyme}')`}
+                title="点击收听发音"
+              >
+                <div class="pinyin-mini-fourline">
+                  <span class="pinyin-char" id={`display-${item.char}`}>{item.char}</span>
+                </div>
+
+                {item.tones && (
+                  <div class="tone-switch-bar" onclick="event.stopPropagation()">
+                    {item.tones.map((t, idx) => (
+                      <button 
+                        class="tone-btn" 
+                        onclick={`window.switchTone('${item.char}', '${t}', '${item.name}', ${idx+1})`}
+                        title={`第 ${idx+1} 声`}
+                      >
+                        {t}
+                      </button>
+                    ))}
+                  </div>
+                )}
+
+                <div class="pinyin-rhyme">{item.rhyme}</div>
+                <div style="font-size: 0.72rem; color: #3b82f6; margin-bottom: 0.4rem; font-weight: 500;">
+                  ✍️ {item.pos}
+                </div>
+                <div class="pinyin-words">例：{item.words}</div>
+                <span class="pinyin-play-btn" style="background: #eff6ff; color: #2563eb; border-color: #bfdbfe;">🔊 朗读 ({item.name})</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </section>
+
+    {/* 模块 4：16个整体认读音节 */}
+    <section id="zhengti" class="learn-section">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-badge" style="background: #ecfdf5; color: #059669;">⭐</span>
+          <div>
+            <h2 class="section-title">第四课：16个整体认读音节</h2>
+            <div class="section-subtitle">🌟 核心秘诀：不用拼读，看到直接读出来！大Y、大W带队！</div>
+          </div>
+        </div>
+      </div>
+
+      {wholeSyllables.map((cat) => (
+        <div class="pinyin-category-block">
+          <div class="pinyin-category-head">
+            <h4>{cat.group}</h4>
+            <span class="pinyin-category-tip">（共 {cat.items.length} 个）</span>
+          </div>
+
+          <div class="pinyin-grid">
+            {cat.items.map((item) => (
+              <div 
+                class="pinyin-card"
+                onclick={`window.speakText('${item.spoken}')`}
+                title="点击收听整体认读音节"
+                style="border-color: #a7f3d0;"
+              >
+                <div class="pinyin-mini-fourline" style="background-color: #f0fdf4;">
+                  <span class="pinyin-char" style="color: #059669;">{item.char}</span>
+                </div>
+                <div class="pinyin-rhyme">{item.rhyme}</div>
+                <div class="pinyin-words">例：{item.words}</div>
+                <span class="pinyin-play-btn" style="background: #ecfdf5; color: #059669; border-color: #a7f3d0;">🔊 直读</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </section>
+
+    {/* 模块 5：核心口诀与拼读法宝 */}
+    <section id="rules" class="learn-section">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-badge" style="background: #fffbeb; color: #d97706;">📜</span>
+          <div>
+            <h2 class="section-title">第五课：拼读秘籍与黄金口诀宝典</h2>
+            <div class="section-subtitle">背熟三首小儿歌，拼音规则轻松拿满分！</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rhyme-rules-grid">
+        {/* 口诀 1：标调歌 */}
+        <div class="rhyme-card">
+          <div class="rhyme-card-head">
+            <span class="rhyme-card-icon">👑</span>
+            <h3 class="rhyme-card-title">标调歌（帽子戴给谁）</h3>
+          </div>
+          <ul class="rhyme-content-list">
+            <li>🌟 <strong>有 a 别放过</strong> —— 只要见到 a，声调帽子戴在 a 头上！</li>
+            <li>🌟 <strong>没 a 找 o e</strong> —— 没有 a 的时候，就找 o 或 e！</li>
+            <li>🌟 <strong>i u 并列标在后</strong> —— i 和 u 在一起，谁在后面标在谁头上（如 iu 标 u，ui 标 i）！</li>
+            <li>🌟 <strong>单个韵母不用说</strong> —— 只有一个韵母直接戴！</li>
+            <li>🌟 <strong>i 上标调把点抹</strong> —— i 戴帽子时，上面的小圆点要藏起来！</li>
+          </ul>
+          <div class="rhyme-example">
+            💡 示例：hǎo (标在a) · lèi (标在e) · guī (标在i) · liù (标在u)
+          </div>
+        </div>
+
+        {/* 口诀 2：小ü变脸脱帽歌 */}
+        <div class="rhyme-card">
+          <div class="rhyme-card-head">
+            <span class="rhyme-card-icon">🎩</span>
+            <h3 class="rhyme-card-title">小 ü 脱帽敬礼歌</h3>
+          </div>
+          <ul class="rhyme-content-list">
+            <li>🌟 <strong>小 ü 见到 j q x y</strong>，脱下帽子敬个礼！</li>
+            <li>🌟 <strong>脱了帽子还念 ü</strong>，千万别读成 u 呀！</li>
+            <li>🌟 <strong>j q x 真淘气</strong>，从不和 u 在一起！</li>
+            <li>🌟 <strong>碰上 n 和 l</strong>，两点戴整齐（nü, lü 不能脱帽）！</li>
+          </ul>
+          <div class="rhyme-example">
+            💡 示例：j + ü ➔ ju (居) · q + ü ➔ qu (区) · x + ü ➔ xu (须) · y + ü ➔ yu (鱼)
+          </div>
+        </div>
+
+        {/* 口诀 3：拼读法宝歌 */}
+        <div class="rhyme-card">
+          <div class="rhyme-card-head">
+            <span class="rhyme-card-icon">⚡</span>
+            <h3 class="rhyme-card-title">两拼与三拼拼读法宝</h3>
+          </div>
+          <ul class="rhyme-content-list">
+            <li>🌟 <strong>两拼法口诀</strong>：<br/>前音轻短后音重，两音相连猛一碰！<br/>（如：b - à ➔ bà 爸）</li>
+            <li>🌟 <strong>三拼法口诀</strong>：<br/>声轻介快韵母响，三音连读很顺当！<br/>（如：g - u - ā ➔ guā 瓜 · huā 花 · xiào 笑）</li>
+          </ul>
+          <div class="rhyme-example">
+            💡 秘诀：先读声母，快速滑到介母与韵母，一气呵成猛一碰！
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* 模块 6：拼音合成魔法台 */}
+    <section id="blender" class="blender-box">
+      <div class="blender-header">
+        <h2 class="blender-title">✨ 拼 音 合 成 魔 法 台</h2>
+        <p class="blender-desc">选择你喜欢的【声母】、【韵母】和【声调】，施展魔法合成音节，听听标准中文拼读！</p>
+      </div>
+
+      <div class="blender-controls-grid">
+        <div class="blender-col">
+          <div class="blender-col-title">1. 选择声母 (Initials)</div>
+          <select id="blender-shengmu" class="blender-select" onchange="window.updateBlender()">
+            <option value="b">b (玻)</option>
+            <option value="p">p (坡)</option>
+            <option value="m">m (摸)</option>
+            <option value="f">f (佛)</option>
+            <option value="d">d (得)</option>
+            <option value="t">t (特)</option>
+            <option value="n">n (讷)</option>
+            <option value="l">l (勒)</option>
+            <option value="g">g (哥)</option>
+            <option value="k">k (科)</option>
+            <option value="h">h (喝)</option>
+            <option value="j">j (鸡)</option>
+            <option value="q">q (七)</option>
+            <option value="x">x (西)</option>
+            <option value="zh">zh (知)</option>
+            <option value="ch">ch (吃)</option>
+            <option value="sh">sh (诗)</option>
+            <option value="r">r (日)</option>
+            <option value="z">z (资)</option>
+            <option value="c">c (疵)</option>
+            <option value="s">s (思)</option>
+            <option value="y">y (衣)</option>
+            <option value="w">w (屋)</option>
+          </select>
+        </div>
+
+        <div class="blender-operator">+</div>
+
+        <div class="blender-col">
+          <div class="blender-col-title">2. 选择韵母 (Finals)</div>
+          <select id="blender-yunmu" class="blender-select" onchange="window.updateBlender()">
+            <option value="a">a (啊)</option>
+            <option value="o">o (喔)</option>
+            <option value="e">e (鹅)</option>
+            <option value="i">i (衣)</option>
+            <option value="u">u (乌)</option>
+            <option value="ü">ü (迂)</option>
+            <option value="ai">ai (挨)</option>
+            <option value="ei">ei (欸)</option>
+            <option value="ui">ui (威)</option>
+            <option value="ao">ao (奥)</option>
+            <option value="ou">ou (欧)</option>
+            <option value="iu">iu (优)</option>
+            <option value="ie">ie (椰)</option>
+            <option value="an">an (安)</option>
+            <option value="en">en (恩)</option>
+            <option value="in">in (因)</option>
+            <option value="ang">ang (昂)</option>
+            <option value="eng">eng (鞥)</option>
+            <option value="ing">ing (英)</option>
+            <option value="ong">ong (轰)</option>
+          </select>
+        </div>
+
+        <div class="blender-operator">+</div>
+
+        <div class="blender-col">
+          <div class="blender-col-title">3. 选择声调 (Tones)</div>
+          <select id="blender-tone" class="blender-select" onchange="window.updateBlender()">
+            <option value="1">第一声 (ˉ 阴平)</option>
+            <option value="2">第二声 (ˊ 阳平)</option>
+            <option value="3">第三声 (ˇ 上声)</option>
+            <option value="4" selected>第四声 (ˋ 去声)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="blender-result-card">
+        <div style="font-size: 0.9rem; color: #a5b4fc; text-transform: uppercase; font-weight: 700;">
+          ✨ 魔法合成结果 ✨
+        </div>
+        <div id="blender-pinyin-out" class="result-pinyin-display">bà</div>
+        <div id="blender-hanzi-out" class="result-hanzi-display">爸爸 · 大坝</div>
+        <div id="blender-process-out" class="result-meaning-display">拼读过程：b + à ➔ bà (第四声)</div>
+        <button class="blender-speak-btn" onclick="window.speakBlender()">
+          <span>🔊 施展魔法拼读发音</span>
+        </button>
+      </div>
+    </section>
+
+    {/* 模块 7：拼音趣味闯关小游戏 */}
+    <section id="quiz" class="quiz-container">
+      <div class="quiz-score-bar">
+        <span style="font-size: 1.1rem;">🏆 拼音小勇士闯关测试</span>
+        <span class="stars-awarded">
+          <span>得分：</span>
+          <span id="quiz-score">0</span> 分 
+          <span id="quiz-stars">⭐⭐⭐</span>
+        </span>
+      </div>
+
+      <div class="quiz-question-box">
+        <h3 style="font-size: 1.3rem; margin: 0 0 1rem; color: #065f46;">
+          🎯 请点击下方按钮仔细听声音，选出正确的拼音：
+        </h3>
+        <button class="quiz-listen-btn" onclick="window.playQuizAudio()">
+          <span>🔊 点击听题目声音</span>
+        </button>
+
+        <div id="quiz-options-container" class="quiz-options-grid">
+          {/* 动态选项生成 */}
+        </div>
+
+        <div id="quiz-feedback" style="margin-top: 1.25rem; font-size: 1.1rem; font-weight: 700; min-height: 1.5rem;"></div>
+      </div>
+
+      <button 
+        id="quiz-next-btn"
+        style="padding: 0.6rem 2rem; background: #059669; color: #fff; border: none; border-radius: 999px; font-weight: 700; font-size: 1rem; cursor: pointer; display: none;"
+        onclick="window.nextQuizQuestion()"
+      >
+        下一题 ➔
+      </button>
+    </section>
+  </div>
+</Base>
+
+<script is:inline define:vars={{ pinyinMasterDict, shengmuNames, yunmuNames, toneNamesMap, toneMap }}>
+  // ── 语音播报核心（纯正中文普通话，离线可用） ──
+  window.speakText = function(text, rate = 0.85) {
+    if (!('speechSynthesis' in window)) {
+      alert('您的浏览器暂不支持语音合成，推荐使用 Chrome / Safari / Edge 体验互动发音！')
+      return
+    }
+    window.speechSynthesis.cancel() // 停止上一段
+    const utterance = new SpeechSynthesisUtterance(text)
+    utterance.lang = 'zh-CN'
+    utterance.rate = rate // 语速适中，便于儿童辨别音节
+    utterance.pitch = 1.05 // 音调清晰亲和
+    window.speechSynthesis.speak(utterance)
+  }
+
+  // 播放声母与顺口溜（如：声母 玻。右下半圆 b b b...）
+  window.playPinyinCard = function(char, name, rhyme) {
+    window.speakText(`声母 ${name}。${rhyme}`)
+  }
+
+  // 播放韵母与口诀（如：韵母 啊。张大嘴巴 a a a...）
+  window.playFinalCard = function(char, name, rhyme) {
+    window.speakText(`韵母 ${name}。${rhyme}`)
+  }
+
+  // 韵母四声调切换与发音
+  window.switchTone = function(baseFinal, toneChar, name, toneNum) {
+    const el = document.getElementById('display-' + baseFinal)
+    if (el) {
+      el.innerText = toneChar
+      el.style.color = '#ef4444'
+      setTimeout(() => {
+        el.style.color = '#be123c'
+      }, 300)
+    }
+    const tName = toneNamesMap[toneNum] || '声调'
+    window.speakText(`韵母 ${name}，${tName}，${name}`)
+  }
+
+  // ── 拼音合成魔法台更新逻辑 ──
+  window.updateBlender = function() {
+    const s = document.getElementById('blender-shengmu').value
+    const y = document.getElementById('blender-yunmu').value
+    const t = parseInt(document.getElementById('blender-tone').value)
+
+    const key = `${s}-${y}-${t}`
+    const pinyinOut = document.getElementById('blender-pinyin-out')
+    const hanziOut = document.getElementById('blender-hanzi-out')
+    const processOut = document.getElementById('blender-process-out')
+
+    const sName = shengmuNames[s] || s
+    const yName = yunmuNames[y] || y
+    const tName = toneNamesMap[t] || ''
+    const tonedY = toneMap[y] ? toneMap[y][t-1] : y
+
+    if (pinyinMasterDict[key]) {
+      const entry = pinyinMasterDict[key]
+      pinyinOut.innerText = entry.pinyin
+      pinyinOut.style.color = '#fbbf24'
+      hanziOut.innerText = entry.hanzi
+      hanziOut.style.color = '#ffffff'
+      processOut.innerText = `拼读过程：${s} (${sName}) + ${tonedY} (${yName}) ➔ ${entry.pinyin} (${tName})`
+    } else {
+      // 检查当前声母与韵母在普通话中是否有任一声调存在
+      const hasAnyTone = [1, 2, 3, 4].some(toneIdx => pinyinMasterDict[`${s}-${y}-${toneIdx}`])
+      if (hasAnyTone) {
+        let fallbackPinyin = s + tonedY
+        if (['j', 'q', 'x', 'y'].includes(s) && y === 'ü') {
+          fallbackPinyin = s + (toneMap['u'] ? toneMap['u'][t-1] : 'u')
+        }
+        pinyinOut.innerText = fallbackPinyin
+        pinyinOut.style.color = '#fbbf24'
+        hanziOut.innerText = `（拼读音：${sName}—${yName}）`
+        hanziOut.style.color = '#e0e7ff'
+        processOut.innerText = `拼读过程：${s} (${sName}) + ${tonedY} (${yName}) ➔ ${fallbackPinyin} (${tName})`
+      } else {
+        // 声母与韵母在普通话中不能直接相拼
+        pinyinOut.innerText = '⚠️ 不能相拼'
+        pinyinOut.style.color = '#f87171'
+        hanziOut.innerText = '💡 普通话中没有这个音节哦'
+        hanziOut.style.color = '#fca5a5'
+        processOut.innerText = `提示：声母【${s} (${sName})】和韵母【${y} (${yName})】不能直接拼读，请换一个试试吧！`
+      }
+    }
+  }
+
+  // 拼音合成魔法台朗读（遵循小学拼音两拼法标准过程：玻——安——班！班级、搬家！）
+  window.speakBlender = function() {
+    const s = document.getElementById('blender-shengmu').value
+    const y = document.getElementById('blender-yunmu').value
+    const t = parseInt(document.getElementById('blender-tone').value)
+    const key = `${s}-${y}-${t}`
+
+    const sName = shengmuNames[s] || s
+    const yName = yunmuNames[y] || y
+    const tName = toneNamesMap[t] || ''
+
+    if (pinyinMasterDict[key]) {
+      const entry = pinyinMasterDict[key]
+      // 提取汉字组词列表，朗读全部例词（例如：班级、搬家；八、芭蕉、扒开等），不遗漏任何词汇
+      const cleanHanzi = entry.hanzi.replace(/\s*\([^)]*\)/g, '').trim()
+      const wordsList = cleanHanzi.split('·').map(w => w.trim()).filter(Boolean)
+      const spokenWords = wordsList.join('，')
+      const targetChar = (entry.sample ? entry.sample.split(/[，,、]/)[0].trim() : '') || (wordsList[0] ? wordsList[0].charAt(0) : '')
+
+      // 小ü脱帽特殊提醒
+      if (['j', 'q', 'x', 'y'].includes(s) && y === 'ü') {
+        window.speakText(`声母 ${sName}，韵母 ${yName}，小鱼脱帽，${sName}——${yName}——${targetChar}！${spokenWords}！`)
+      } else {
+        window.speakText(`声母 ${sName}，韵母 ${yName}，${tName}，${sName}——${yName}——${targetChar}！${spokenWords}！`)
+      }
+    } else {
+      const hasAnyTone = [1, 2, 3, 4].some(toneIdx => pinyinMasterDict[`${s}-${y}-${toneIdx}`])
+      if (hasAnyTone) {
+        window.speakText(`声母 ${sName}，韵母 ${yName}，${tName}，${sName}——${yName}——！`)
+      } else {
+        window.speakText(`声母 ${sName} 和 韵母 ${yName} 在普通话中不能直接相拼哦，请换其他声母或韵母试试吧！`)
+      }
+    }
+  }
+
+  // ── 闯关测试小游戏 ──
+  const quizBank = [
+    { sound: '请找出：爸爸的 爸，b à bà', char: 'bà', options: ['bà', 'pà', 'dà', 'mà'], tip: '爸爸的 bà' },
+    { sound: '请找出：妈妈的 妈，m ā mā', char: 'mā', options: ['mā', 'nā', 'fā', 'bā'], tip: '妈妈的 mā' },
+    { sound: '请找出：皮球的 皮，p í pí', char: 'pí', options: ['pí', 'qí', 'bí', 'tí'], tip: '皮球的 pí' },
+    { sound: '请找出：小兔子的 兔，t ù tù', char: 'tù', options: ['tù', 'dù', 'lù', 'kù'], tip: '小兔子的 tù' },
+    { sound: '请找出：红色的 红，h óng hóng', char: 'hóng', options: ['hóng', 'gōng', 'zhōng', 'péng'], tip: '红色的 hóng' },
+    { sound: '请找出：星星的 星，x īng xīng', char: 'xīng', options: ['xīng', 'qīng', 'jīng', 'shēng'], tip: '星星的 xīng' },
+  ]
+
+  let currentQuizIdx = 0
+  let currentScore = 0
+
+  window.initQuiz = function() {
+    const q = quizBank[currentQuizIdx]
+    const container = document.getElementById('quiz-options-container')
+    const feedback = document.getElementById('quiz-feedback')
+    const nextBtn = document.getElementById('quiz-next-btn')
+
+    feedback.innerText = ''
+    feedback.style.color = '#1e293b'
+    nextBtn.style.display = 'none'
+
+    container.innerHTML = ''
+    q.options.forEach(opt => {
+      const btn = document.createElement('button')
+      btn.className = 'quiz-opt-btn'
+      btn.innerText = opt
+      btn.onclick = () => window.checkQuizAnswer(btn, opt, q.char, q.tip)
+      container.appendChild(btn)
+    })
+  }
+
+  window.playQuizAudio = function() {
+    const q = quizBank[currentQuizIdx]
+    window.speakText(q.sound)
+  }
+
+  window.checkQuizAnswer = function(btn, chosen, correct, tip) {
+    const feedback = document.getElementById('quiz-feedback')
+    const nextBtn = document.getElementById('quiz-next-btn')
+    const allBtns = document.querySelectorAll('.quiz-opt-btn')
+
+    allBtns.forEach(b => b.disabled = true)
+
+    if (chosen === correct) {
+      btn.classList.add('correct')
+      feedback.innerText = `🎉 太棒了！回答完全正确！（${tip}）`
+      feedback.style.color = '#059669'
+      currentScore += 20
+      document.getElementById('quiz-score').innerText = currentScore
+      window.speakText('太棒了，回答正确！')
+    } else {
+      btn.classList.add('wrong')
+      allBtns.forEach(b => {
+        if (b.innerText === correct) b.classList.add('correct')
+      })
+      feedback.innerText = `💪 加油哦，正确答案是 ${correct}（${tip}）`
+      feedback.style.color = '#ef4444'
+      window.speakText(`再接再厉，正确答案是 ${correct}`)
+    }
+
+    nextBtn.style.display = 'inline-block'
+  }
+
+  window.nextQuizQuestion = function() {
+    currentQuizIdx = (currentQuizIdx + 1) % quizBank.length
+    window.initQuiz()
+    window.playQuizAudio()
+  }
+
+  // 页面加载就绪初始化
+  document.addEventListener('DOMContentLoaded', () => {
+    window.initQuiz()
+    window.updateBlender()
+  })
+</script>

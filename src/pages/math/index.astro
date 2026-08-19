@@ -1,0 +1,225 @@
+---
+import Base from '../../layouts/Base.astro'
+import '../../styles/learning.css'
+
+const base = import.meta.env.BASE_URL
+
+// 1-20 基础数字
+const basicNumbers = [
+  { val: 0, pinyin: 'líng', en: 'Zero' },
+  { val: 1, pinyin: 'yī', en: 'One' },
+  { val: 2, pinyin: 'èr', en: 'Two' },
+  { val: 3, pinyin: 'sān', en: 'Three' },
+  { val: 4, pinyin: 'sì', en: 'Four' },
+  { val: 5, pinyin: 'wǔ', en: 'Five' },
+  { val: 6, pinyin: 'liù', en: 'Six' },
+  { val: 7, pinyin: 'qī', en: 'Seven' },
+  { val: 8, pinyin: 'bā', en: 'Eight' },
+  { val: 9, pinyin: 'jiǔ', en: 'Nine' },
+  { val: 10, pinyin: 'shí', en: 'Ten' },
+  { val: 11, pinyin: 'shí yī', en: 'Eleven' },
+  { val: 12, pinyin: 'shí èr', en: 'Twelve' },
+  { val: 13, pinyin: 'shí sān', en: 'Thirteen' },
+  { val: 14, pinyin: 'shí sì', en: 'Fourteen' },
+  { val: 15, pinyin: 'shí wǔ', en: 'Fifteen' },
+  { val: 16, pinyin: 'shí liù', en: 'Sixteen' },
+  { val: 17, pinyin: 'shí qī', en: 'Seventeen' },
+  { val: 18, pinyin: 'shí bā', en: 'Eighteen' },
+  { val: 19, pinyin: 'shí jiǔ', en: 'Nineteen' },
+  { val: 20, pinyin: 'èr shí', en: 'Twenty' },
+]
+
+// 基础图形
+const shapes = [
+  { name: '圆形 (Circle)', icon: '⚪', pinyin: 'yuán xíng', desc: '圆溜溜像太阳、像皮球' },
+  { name: '正方形 (Square)', icon: '⬛', pinyin: 'zhèng fāng xíng', desc: '四条边一样长，四角方方像魔方' },
+  { name: '长方形 (Rectangle)', icon: '▭', pinyin: 'cháng fāng xíng', desc: '两条长边两条短边，像课本、像电视' },
+  { name: '三角形 (Triangle)', icon: '🔺', pinyin: 'sān jiǎo xíng', desc: '三个尖尖角、三条边，像红领巾、三明治' },
+  { name: '五角星 (Star)', icon: '⭐', pinyin: 'wǔ jiǎo xīng', desc: '五个尖角闪闪发光，像夜空小星星' },
+  { name: '爱心形 (Heart)', icon: '❤️', pinyin: 'ài xīn xíng', desc: '两边弯弯中间尖，表达满满的爱意' },
+]
+---
+
+<Base title="数学启蒙乐园 · 数感与逻辑思维 · 十丘" wide={true}>
+  <div class="learn-container">
+    {/* 顶部统一导航 */}
+    <header class="learn-header">
+      <div class="learn-nav-bar">
+        <nav class="learn-breadcrumbs">
+          <a href={base}>🏛️ 十丘门户</a>
+          <span>/</span>
+          <strong style="color: #059669;">📐 数学启蒙乐园</strong>
+        </nav>
+        <div class="learn-subject-switcher">
+          <a href={base} class="subject-chip chip-home">🏠 门户首页</a>
+          <a href={`${base}chinese/`} class="subject-chip chip-chinese">📖 语文</a>
+          <a href={`${base}math/`} class="subject-chip chip-math active">📐 数学</a>
+          <a href={`${base}english/`} class="subject-chip chip-english">🔤 英语</a>
+        </div>
+      </div>
+    </header>
+
+    {/* 数学主题大横幅 */}
+    <section class="learn-banner" style="background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 50%, #eff6ff 100%); border-color: #a7f3d0;">
+      <div class="learn-banner-icon">📐🧮</div>
+      <h1 class="learn-title" style="color: #065f46;">数 学 启 蒙 · 数 感 与 逻 辑 乐 园</h1>
+      <p class="learn-subtitle">认识数字 0-100 · 10与20以内趣味加减法 · 认识几何图形与时钟</p>
+      <div class="learn-quick-tips">
+        <span class="quick-tip-pill" style="border: 1px solid #a7f3d0; color: #047857;">🔢 数字点读 0-20</span>
+        <span class="quick-tip-pill" style="border: 1px solid #a7f3d0; color: #047857;">🧮 可视化加减法计算台</span>
+        <span class="quick-tip-pill" style="border: 1px solid #a7f3d0; color: #047857;">🔷 几何图形大发现</span>
+      </div>
+    </section>
+
+    {/* 模块 1：数字认知 0-20 点读板 */}
+    <section class="learn-section">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-badge" style="background: #ecfdf5; color: #059669;">🔢</span>
+          <div>
+            <h2 class="section-title">第一课：认识数字王国 (0 - 20)</h2>
+            <div class="section-subtitle">点击任意数字卡片，聆听中英文双语发音与数数儿歌</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="math-grid">
+        {basicNumbers.map((n) => (
+          <div 
+            class="math-num-card"
+            onclick={`window.speakMath('${n.val}', '${n.pinyin}', '${n.en}')`}
+            title="点击收听中英文发音"
+          >
+            <div class="math-num-val">{n.val}</div>
+            <div class="math-num-pinyin">{n.pinyin}</div>
+            <div style="font-size: 0.7rem; color: #64748b;">{n.en}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/* 模块 2：10以内可视化加减法计算器 */}
+    <section class="learn-section" style="border-color: #a7f3d0;">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-badge" style="background: #ecfdf5; color: #059669;">🧮</span>
+          <div>
+            <h2 class="section-title">第二课：趣味加减法可视化练习器</h2>
+            <div class="section-subtitle">选择数字和运算符号，看小圆点实时变动，数数算一算！</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: #f8fafc; border-radius: 16px; padding: 2rem; border: 1px solid #e2e8f0; text-align: center;">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+          <input type="number" id="math-n1" value="3" min="0" max="10" style="font-size: 2rem; width: 80px; text-align: center; font-weight: 800; border-radius: 12px; border: 2px solid #059669; padding: 0.5rem;" onchange="window.calcMath()" />
+          
+          <select id="math-op" style="font-size: 2rem; font-weight: 800; border-radius: 12px; border: 2px solid #059669; padding: 0.5rem;" onchange="window.calcMath()">
+            <option value="+">+</option>
+            <option value="-">-</option>
+          </select>
+
+          <input type="number" id="math-n2" value="2" min="0" max="10" style="font-size: 2rem; width: 80px; text-align: center; font-weight: 800; border-radius: 12px; border: 2px solid #059669; padding: 0.5rem;" onchange="window.calcMath()" />
+
+          <span style="font-size: 2rem; font-weight: 800; color: #059669;">=</span>
+
+          <span id="math-result" style="font-size: 3rem; font-weight: 900; color: #059669; min-width: 60px;">5</span>
+        </div>
+
+        {/* 可视化小圆点展示 */}
+        <div id="math-dots-area" style="display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; min-height: 40px;">
+          {/* 动态小圆点 */}
+        </div>
+
+        <button 
+          style="padding: 0.65rem 2rem; background: #059669; color: #fff; border: none; border-radius: 999px; font-size: 1.1rem; font-weight: 700; cursor: pointer; transition: all 0.2s;"
+          onclick="window.speakMathEquation()"
+        >
+          🔊 朗读这道算式
+        </button>
+      </div>
+    </section>
+
+    {/* 模块 3：认识基础图形 */}
+    <section class="learn-section">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-badge" style="background: #ecfdf5; color: #059669;">🔷</span>
+          <div>
+            <h2 class="section-title">第三课：认识奇妙几何图形</h2>
+            <div class="section-subtitle">生活中处处有图形！点击卡片听图形特征与发音</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem;">
+        {shapes.map((s) => (
+          <div 
+            class="intro-card" 
+            style="cursor: pointer; transition: all 0.2s; border: 2px solid #e2e8f0;"
+            onclick={`window.speakText('${s.name}。${s.desc}')`}
+            onmouseover="this.style.borderColor='#059669'; this.style.transform='translateY(-2px)'"
+            onmouseout="this.style.borderColor='#e2e8f0'; this.style.transform='translateY(0)'"
+          >
+            <div style="font-size: 3rem; text-align: center; margin-bottom: 0.5rem;">{s.icon}</div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #065f46; text-align: center; margin: 0 0 0.25rem;">{s.name}</h3>
+            <div style="font-size: 0.85rem; color: #059669; text-align: center; font-weight: 600; margin-bottom: 0.5rem;">{s.pinyin}</div>
+            <p style="font-size: 0.88rem; color: #64748b; line-height: 1.5; margin: 0; text-align: center;">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  </div>
+</Base>
+
+<script is:inline>
+  window.speakText = function(text) {
+    if (!('speechSynthesis' in window)) return
+    window.speechSynthesis.cancel()
+    const utterance = new SpeechSynthesisUtterance(text)
+    utterance.lang = 'zh-CN'
+    utterance.rate = 0.85
+    window.speechSynthesis.speak(utterance)
+  }
+
+  window.speakMath = function(val, pinyin, en) {
+    window.speakText(`数字 ${val}，拼音 ${pinyin}，英文 ${en}`)
+  }
+
+  window.calcMath = function() {
+    const n1 = parseInt(document.getElementById('math-n1').value) || 0
+    const op = document.getElementById('math-op').value
+    const n2 = parseInt(document.getElementById('math-n2').value) || 0
+    let res = 0
+
+    if (op === '+') {
+      res = n1 + n2
+    } else {
+      res = Math.max(0, n1 - n2)
+    }
+
+    document.getElementById('math-result').innerText = res
+
+    const dotsArea = document.getElementById('math-dots-area')
+    dotsArea.innerHTML = ''
+    for (let i = 0; i < res; i++) {
+      const dot = document.createElement('span')
+      dot.innerText = '🟢'
+      dot.style.fontSize = '1.8rem'
+      dot.title = `第 ${i+1} 个`
+      dotsArea.appendChild(dot)
+    }
+  }
+
+  window.speakMathEquation = function() {
+    const n1 = document.getElementById('math-n1').value
+    const op = document.getElementById('math-op').value === '+' ? '加' : '减'
+    const n2 = document.getElementById('math-n2').value
+    const res = document.getElementById('math-result').innerText
+    window.speakText(`${n1} ${op} ${n2} 等于 ${res}`)
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    window.calcMath()
+  })
+</script>
