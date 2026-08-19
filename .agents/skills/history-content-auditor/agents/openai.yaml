@@ -1,0 +1,4 @@
+interface:
+  display_name: "朝代内容审计"
+  short_description: "按固定书目版本审计中国朝代人物与事件覆盖缺口及史料"
+  default_prompt: "Use $history-content-auditor to audit a dynasty for missing rulers, figures, and events against the fixed book baseline."
