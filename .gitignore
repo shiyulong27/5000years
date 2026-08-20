@@ -6,5 +6,10 @@ dist/
 .shots/
 .worktrees/
 
+# 本地运行与批处理日志
+*.log
+*.err
+.codex/
+
 # 临时诊断脚本
 scripts/_*
