@@ -1,0 +1,72 @@
+---
+import { yearOf } from '../lib/date.js'
+
+const { figure } = Astro.props
+const base = import.meta.env.BASE_URL
+
+const fieldIcons = {
+  '文学': '✍️',
+  '思想': '📜',
+  '政治': '🏛️',
+  '军事': '⚔️',
+  '科技': '🔬',
+  '艺术': '🎨',
+  '传说': '✨',
+}
+const icon = fieldIcons[figure.field] || '👤'
+
+const fmt = (str) => {
+  if (!str) return ''
+  const y = yearOf(str)
+  return y < 0 ? `前${Math.abs(y)}年` : `${y}年`
+}
+
+const lifespanText = figure.birth && figure.death
+  ? `${fmt(figure.birth)}–${fmt(figure.death)}${figure.lifespanYears ? ` · 享年${figure.lifespanYears}岁` : ''}`
+  : figure.birth ? `${fmt(figure.birth)}生` : figure.note
+---
+
+<article
+  class="figure-card"
+  id={`figure-${figure.id}`}
+  data-figure-id={figure.id}
+  data-figure-name={figure.name}
+  data-field={figure.field}
+  data-row-start={figure.rowStart}
+  data-row-end={figure.rowEnd}
+  data-start-year={figure.startYear}
+  data-end-year={figure.endYear}
+>
+  <div class="figure-card-inner">
+    <div class="figure-card-header">
+      <span class="figure-field-badge" data-field={figure.field}>
+        <span class="field-icon">{icon}</span>
+        <span class="field-name">{figure.field}</span>
+      </span>
+      <h4 class="figure-card-name">
+        {figure.name}
+        {figure.confidence && figure.confidence !== '确切' && (
+          <span class="figure-confidence-badge">{figure.confidence}</span>
+        )}
+      </h4>
+      <span class="figure-lifespan">{lifespanText}</span>
+    </div>
+
+    {figure.note && <p class="figure-card-note">{figure.note}</p>}
+
+    {figure.dispute && (
+      <details class="figure-card-dispute">
+        <summary>考证说明</summary>
+        <p>{figure.dispute}</p>
+      </details>
+    )}
+
+    {figure.detailPath && (
+      <div class="figure-card-foot">
+        <a href={`${base}${figure.detailPath}#${figure.id}`} class="figure-detail-link">
+          查看专题考据 ➔
+        </a>
+      </div>
+    )}
+  </div>
+</article>

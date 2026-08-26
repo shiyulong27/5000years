@@ -1,0 +1,216 @@
+---
+import { fileURLToPath } from 'node:url'
+import Base from '../../layouts/Base.astro'
+import { loadAll } from '../../lib/load.js'
+import { yearOf } from '../../lib/date.js'
+
+const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
+const data = loadAll(dataDir)
+const detailIds = new Set(data.figureDetails.map((d) => d.id))
+const base = import.meta.env.BASE_URL
+
+// 时期分桶：与附录 A §A1 分期边界对齐；以生年（缺失时用卒年兜底，均缺失则归「待考」）
+function eraOf(figure) {
+  let y = null
+  if (figure.birth && figure.birth !== '') y = yearOf(figure.birth)
+  else if (figure.death && figure.death !== '') y = yearOf(figure.death)
+  if (y == null) return '生卒待考'
+  const eras = [
+    ['先秦', -100000, -222],
+    ['秦汉', -221, 219],
+    ['魏晋南北朝', 220, 580],
+    ['隋唐五代', 581, 959],
+    ['宋辽夏金', 960, 1279],
+    ['元明清', 1280, 1839],
+    ['近代', 1840, 1948],
+    ['现代', 1949, 2100],
+  ]
+  for (const [name, lo, hi] of eras) {
+    if (y >= lo && y <= hi) return name
+  }
+  return '生卒待考'
+}
+
+const rows = data.figures
+  .map((f) => {
+    const hasDetail = detailIds.has(f.id) && f.has_detail === true
+    const roles = f.roles ?? []
+    const tags = f.tags ?? []
+    const birth = f.birth ? yearOf(f.birth) : null
+    const death = f.death ? yearOf(f.death) : null
+    const lifespan =
+      birth != null && death != null
+        ? `${birth < 0 ? `前${-birth}` : birth}–${death < 0 ? `前${-death}` : death}`
+        : [f.birth_note, f.death_note].filter(Boolean).join('，') || '生卒不可考'
+    return {
+      id: f.id,
+      name: f.name,
+      field: f.field ?? '其他',
+      roles,
+      tags,
+      lifespan,
+      era: eraOf(f),
+      note: f.note ?? '',
+      dispute: f.dispute ?? '',
+      confidence: f.confidence ?? '',
+      hasDetail,
+    }
+  })
+  .sort((a, b) => {
+    // 有详卷者靠前，其余按姓名稳定排序
+    if (a.hasDetail !== b.hasDetail) return a.hasDetail ? -1 : 1
+    return a.name.localeCompare(b.name, 'zh-Hans-CN')
+  })
+
+const fields = [...new Set(rows.map((r) => r.field))].sort()
+const eras = [...new Set(rows.map((r) => r.era))]
+// 按时期固定顺序排列筛选项
+const eraOrder = ['先秦', '秦汉', '魏晋南北朝', '隋唐五代', '宋辽夏金', '元明清', '近代', '现代', '生卒待考']
+eras.sort((a, b) => eraOrder.indexOf(a) - eraOrder.indexOf(b))
+const allRoles = [...new Set(rows.flatMap((r) => r.roles))].sort()
+
+const detailCount = rows.filter((r) => r.hasDetail).length
+
+const head = `
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="千古风流 · 人物总览 | 上下五千年" />
+  <meta property="og:description" content="${detailCount} 位历史人物拥有全景详卷：人生年谱、情境作品、足迹路线、关系网络与历代接受史，全部条目可溯源。" />
+`
+---
+
+<Base title="千古风流 · 人物总览 | 上下五千年" description={`${detailCount} 位历史人物全景详卷总览`} head={head}>
+  <div class="figures-index-page">
+    <header class="figidx-head">
+      <a href={base} class="back-link">← 返回【十丘】知识总门户</a>
+      <h1 class="figidx-title">千古风流 · 人物总览</h1>
+      <p class="figidx-sub">
+        共收录 {rows.length} 位历史人物，其中 {detailCount} 位已有全景详卷（人生年谱 · 情境作品 · 足迹路线 · 关系网络 · 历代接受史）。
+      </p>
+    </header>
+
+    {/* 筛选区：原生表单控件保证键盘可达；筛选纯客户端进行，不改变 URL */}
+    <form class="figidx-filters" id="figidx-filters" autocomplete="off">
+      <label class="filter-item">
+        <span>时期</span>
+        <select id="flt-era">
+          <option value="">全部</option>
+          {eras.map((e) => <option value={e}>{e}</option>)}
+        </select>
+      </label>
+      <label class="filter-item">
+        <span>领域</span>
+        <select id="flt-field">
+          <option value="">全部</option>
+          {fields.map((f) => <option value={f}>{f}</option>)}
+        </select>
+      </label>
+      <label class="filter-item">
+        <span>身份</span>
+        <select id="flt-role">
+          <option value="">全部</option>
+          {allRoles.map((r) => <option value={r}>{r}</option>)}
+        </select>
+      </label>
+      <label class="filter-item filter-search">
+        <span>搜索</span>
+        <input type="search" id="flt-q" placeholder="输入人名…" />
+      </label>
+      <label class="filter-item filter-check">
+        <input type="checkbox" id="flt-detail" checked />
+        <span>仅看有详卷</span>
+      </label>
+      <button type="reset" class="filter-reset" id="flt-reset">重置</button>
+    </form>
+
+    <p class="figidx-count" id="figidx-count" role="status">
+      显示 {rows.length} 人（有详卷 {detailCount} 人）
+    </p>
+
+    <p class="figidx-empty" id="figidx-empty" hidden>
+      没有符合当前筛选条件的人物——请调整时期、领域或清除搜索词。
+    </p>
+
+    <ul class="figidx-grid" id="figidx-grid">
+      {rows.map((r) => (
+        <li
+          class:list={['figidx-card', { 'figidx-card-detail': r.hasDetail }]}
+          data-era={r.era}
+          data-field={r.field}
+          data-roles={r.roles.join('|')}
+          data-name={r.name}
+        >
+          <div class="figidx-card-head">
+            {r.hasDetail ? (
+              <a class="figidx-name" href={`${base}figure/${r.id}/`}>{r.name}</a>
+            ) : (
+              <strong class="figidx-name figidx-name-plain">{r.name}</strong>
+            )}
+            <span class="figidx-lifespan">{r.lifespan}</span>
+          </div>
+          <p class="figidx-meta">
+            <span class="figidx-field">{r.field}</span>
+            {r.roles.length > 0 && <span class="figidx-roles">{r.roles.join(' · ')}</span>}
+          </p>
+          <p class="figidx-note">{r.note}</p>
+          {r.dispute && <p class="figidx-dispute">存疑：{r.dispute}</p>}
+          {r.hasDetail ? (
+            <p class="figidx-foot">
+              <a href={`${base}figure/${r.id}/`}>阅读全景详卷 ➔</a>
+            </p>
+          ) : (
+            <p class="figidx-foot figidx-foot-light">轻量索引条目（暂无详卷）</p>
+          )}
+        </li>
+      ))}
+    </ul>
+
+    <footer class="figidx-foot-note">
+      <p>人物数据以 YAML 维护、构建时校验；详卷内容只收公版古籍原文与中立转述，争议事实随条目标注。</p>
+    </footer>
+  </div>
+</Base>
+
+<script>
+  // 纯客户端组合筛选：无框架依赖；控件失焦/回车均可触发 change/input
+  const eraSel = document.getElementById('flt-era')
+  const fieldSel = document.getElementById('flt-field')
+  const roleSel = document.getElementById('flt-role')
+  const qInput = document.getElementById('flt-q')
+  const detailOnly = document.getElementById('flt-detail')
+  const cards = [...document.querySelectorAll('#figidx-grid .figidx-card')]
+  const countEl = document.getElementById('figidx-count')
+  const emptyEl = document.getElementById('figidx-empty')
+
+  function apply() {
+    const era = eraSel.value
+    const field = fieldSel.value
+    const role = roleSel.value
+    const q = qInput.value.trim()
+    const onlyDetail = detailOnly.checked
+    let shown = 0
+    let withDetail = 0
+    for (const card of cards) {
+      const ok =
+        (!era || card.dataset.era === era) &&
+        (!field || card.dataset.field === field) &&
+        (!role || (card.dataset.roles || '').split('|').includes(role)) &&
+        (!q || (card.dataset.name || '').includes(q)) &&
+        (!onlyDetail || card.classList.contains('figidx-card-detail'))
+      card.hidden = !ok
+      if (ok) {
+        shown++
+        if (card.classList.contains('figidx-card-detail')) withDetail++
+      }
+    }
+    countEl.textContent = `显示 ${shown} 人（有详卷 ${withDetail} 人）`
+    emptyEl.hidden = shown !== 0
+  }
+
+  for (const el of [eraSel, fieldSel, roleSel]) el.addEventListener('change', apply)
+  qInput.addEventListener('input', apply)
+  detailOnly.addEventListener('change', apply)
+  document.getElementById('figidx-filters').addEventListener('reset', () => {
+    // reset 后控件值才恢复默认，延后一帧再统计
+    requestAnimationFrame(apply)
+  })
+</script>

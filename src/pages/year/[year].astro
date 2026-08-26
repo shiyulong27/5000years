@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url'
 import Base from '../../layouts/Base.astro'
 import EventCard from '../../components/EventCard.astro'
 import { loadAll } from '../../lib/load.js'
+import { yearOf } from '../../lib/date.js'
 
 export async function getStaticPaths() {
   const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
@@ -13,9 +14,21 @@ export async function getStaticPaths() {
   data.events.forEach((e) => years.add(e.date.slice(0, 4)))
   data.worldEvents.forEach((e) => years.add(e.date.slice(0, 4)))
 
+  // 人物详情页真实存在的 id：仅在目标页面存在时生成年份页 → 详情页链接（防死链）
+  const figureDetailIds = new Set(data.figureDetails.map((d) => d.id))
+
   return [...years].map((yearStr) => {
     const cnEvents = data.events.filter((e) => e.date.startsWith(yearStr))
     const worldEvents = data.worldEvents.filter((e) => e.date.startsWith(yearStr))
+
+    // 生卒年引用校验：仅当 L1 的 birth/death 精确等于该年才收录（note 型存疑生卒不参与）
+    const yearNum = Number(yearStr)
+    const born = data.figures.filter(
+      (f) => f.birth && yearOf(f.birth) === yearNum
+    )
+    const died = data.figures.filter(
+      (f) => f.death && yearOf(f.death) === yearNum
+    )
 
     return {
       params: { year: yearStr },
@@ -23,12 +36,15 @@ export async function getStaticPaths() {
         yearStr,
         cnEvents,
         worldEvents,
+        born,
+        died,
+        figureDetailIds,
       },
     }
   })
 }
 
-const { yearStr, cnEvents, worldEvents } = Astro.props
+const { yearStr, cnEvents, worldEvents, born, died, figureDetailIds } = Astro.props
 
 const sortDesc = (a, b) => b.date.localeCompare(a.date)
 const allEvents = [
@@ -62,6 +78,45 @@ const base = import.meta.env.BASE_URL
         </div>
       </div>
     </main>
+
+    {(born.length > 0 || died.length > 0) && (
+      <section class="year-figures">
+        {born.length > 0 && (
+          <div class="year-figure-group">
+            <h3 class="col-header"><span class="icon">👶</span> 本年出生 ({born.length})</h3>
+            <ul class="year-figure-list">
+              {born.map((f) => (
+                <li>
+                  {figureDetailIds.has(f.id) ? (
+                    <a href={`${base}figure/${f.id}/`}>{f.name}</a>
+                  ) : (
+                    <span>{f.name}</span>
+                  )}
+                  <span class="year-figure-note">（{f.field} · {f.note}）</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {died.length > 0 && (
+          <div class="year-figure-group">
+            <h3 class="col-header"><span class="icon">🕯️</span> 本年逝世 ({died.length})</h3>
+            <ul class="year-figure-list">
+              {died.map((f) => (
+                <li>
+                  {figureDetailIds.has(f.id) ? (
+                    <a href={`${base}figure/${f.id}/`}>{f.name}</a>
+                  ) : (
+                    <span>{f.name}</span>
+                  )}
+                  <span class="year-figure-note">（{f.field} · {f.note}）</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </section>
+    )}
 
     <footer class="year-page-foot">
       <a href={base} class="back-foot-link">← 返回上下五千年主时间线长卷</a>

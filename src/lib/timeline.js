@@ -218,11 +218,19 @@ export function buildTimeline(data) {
   // 便于建立空间记忆），人物则用贪心排布——同代人大量重叠，若按 field
   // 分列，唐代的文学家会全部挤在一列里互相遮挡。贪心排布保证任意两条
   // 不重叠者可共用一列，列数随实际拥挤程度自适应。
+  //
+  // has_detail 双向校验保证「有详卷必有 L1」；反向（L1 有标记而文件缺失）
+  // 由校验器拦截，故这里以 figureDetails 实际存在性为准生成详情链接。
+  const detailIds = new Set((data.figureDetails ?? []).map((d) => d.id))
+  const figureDetailPath = (figure) =>
+    detailIds.has(figure.id) ? `figure/${figure.id}/` : undefined
+
   const figureBands = []
   const lanes = [] // 每条泳道记录其已占用的最末行号
   const timelineFigures = [
     ...figures.map((figure) => ({
       ...figure,
+      detailPath: figure.detailPath ?? figureDetailPath(figure),
       timelineStart: figure.birth,
       timelineEnd: figure.death,
       kind: 'figure',

@@ -1,0 +1,497 @@
+---
+import { fileURLToPath } from 'node:url'
+import Base from '../../layouts/Base.astro'
+import { loadAll } from '../../lib/load.js'
+import { yearOf, spanYears } from '../../lib/date.js'
+
+export async function getStaticPaths() {
+  const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
+  const data = loadAll(dataDir)
+  const l1ById = new Map(data.figures.map((f) => [f.id, f]))
+  const sourceById = new Map(data.sources.map((s) => [s.id, s]))
+  const nameById = new Map(data.figures.map((f) => [f.id, f.name]))
+  const detailIds = new Set(data.figureDetails.map((d) => d.id))
+
+  return data.figureDetails
+    .filter((detail) => l1ById.has(detail.id))
+    .map((detail) => ({
+      params: { id: detail.id },
+      props: { detail, l1: l1ById.get(detail.id), sourceById, nameById, detailIds },
+    }))
+}
+
+const { detail, l1, sourceById, nameById, detailIds } = Astro.props
+
+const base = import.meta.env.BASE_URL
+const pageUrl = `${base}figure/${detail.id}/`
+
+const fmtYear = (y) => (y == null || y === '' ? '' : y < 0 ? `前${Math.abs(y)}` : `${y}`)
+
+const fmtDateText = (date) => {
+  if (!date) return ''
+  if (date.text) return date.text
+  if (date.year == null) return ''
+  const start = fmtYear(date.year)
+  const end = date.range_end != null ? `–${fmtYear(date.range_end)}` : ''
+  return `${start}${end}年`
+}
+
+// L1 生卒：优先精确 birth/death，缺失时回退 note 字段原文（生卒存疑者不编造年份）
+const lifespanText =
+  l1.birth && l1.death
+    ? `${fmtYear(Number(l1.birth))}–${fmtYear(Number(l1.death))}`
+    : l1.birth_note || l1.death_note
+      ? [l1.birth_note, l1.death_note].filter(Boolean).join('；')
+      : '生卒不可考'
+
+const profile = detail.profile ?? {}
+const stages = detail.timeline ?? []
+const works = detail.works ?? []
+const footprints = detail.footprints ?? []
+const relations = detail.relations ?? []
+const receptions = detail.reception ?? []
+
+// 来源解析：sources_used ∪ 各条目引用的 source_ids
+const usedIds = new Set(detail.sources_used ?? [])
+for (const entry of [...stages, ...works, ...footprints, ...relations]) {
+  for (const id of entry.source_ids ?? []) usedIds.add(id)
+}
+const usedSources = [...usedIds].map((id) => sourceById.get(id)).filter(Boolean)
+const sourceName = (id) => sourceById.get(id)?.title ?? id
+const sourceLink = (id) => sourceById.get(id)?.edition_or_url ?? ''
+
+// 关系目标：仅在对方详卷真实存在时生成站内链接，否则退化为纯文本名（TASK-006 反链规则）
+const relationTarget = (rel) => ({
+  id: rel.target_id,
+  name: nameById.get(rel.target_id) ?? rel.target_id,
+  linked: detailIds.has(rel.target_id),
+})
+
+const stageNames = [...new Set(stages.map((s) => s.stage).filter(Boolean))]
+const revisions = detail.version_notes?.revisions ?? []
+
+const desc = `${l1.name}（${lifespanText}）：${profile.summary ?? l1.note ?? '人物全景详卷'}——年谱 ${stages.length} 条、作品 ${works.length} 篇、足迹 ${footprints.length} 处、接受史 ${receptions.length} 层，全部条目可溯源。`
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: l1.name,
+  alternateName: profile.aliases ?? undefined,
+  description: profile.summary ?? l1.note ?? undefined,
+  jobTitle: profile.roles ?? undefined,
+  mainEntityOfPage: pageUrl,
+  ...(l1.birth && l1.death
+    ? { birthDate: `${fmtYear(Number(l1.birth))}`, deathDate: `${fmtYear(Number(l1.death))}` }
+    : {}),
+})
+
+const head = `
+  <link rel="canonical" href="${pageUrl}" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="${l1.name} · 千古风流" />
+  <meta property="og:description" content="${desc.replace(/"/g, '&quot;')}" />
+  <meta property="og:url" content="${pageUrl}" />
+  <script type="application/ld+json">${jsonLd}<\/script>
+`
+---
+
+
+<Base title={`${l1.name} · 千古风流 · 上下五千年`} description={desc} head={head}>
+  <article class="figure-page" data-figure={detail.id}>
+    <header class="figure-hero">
+      <p class="figure-crumb">
+        <a href={`${base}figures/`}>← 千古风流 · 人物总览</a>
+      </p>
+      <h1 class="figure-name">{l1.name}</h1>
+      <p class="figure-lifespan">{lifespanText}</p>
+      {(profile.courtesy_name || profile.art_name) && (
+        <p class="figure-stylename">
+          {profile.courtesy_name && <span>字 {profile.courtesy_name}</span>}
+          {profile.art_name && <span>号 {profile.art_name}</span>}
+        </p>
+      )}
+      {profile.roles?.length > 0 && (
+        <p class="figure-roles">
+          {profile.roles.map((role) => <span class="figure-role-badge">{role}</span>)}
+        </p>
+      )}
+      {profile.summary && <p class="figure-summary">{profile.summary}</p>}
+      {profile.aliases?.length > 0 && (
+        <p class="figure-aliases">别名：{profile.aliases.join('、')}</p>
+      )}
+    </header>
+
+    {/* ── 人生阶段年谱 ─────────────────────────── */}
+    {stages.length > 0 && (
+      <section class="fig-section" aria-labelledby="sec-timeline">
+        <h2 class="section-title" id="sec-timeline">人生年谱（{stages.length} 条）</h2>
+        {stageNames.length > 1 && (
+          <nav class="stage-nav" aria-label="人生阶段">
+            {stageNames.map((stage, i) => (
+              <a href={`#stage-${i}`}>{stage}</a>
+            ))}
+          </nav>
+        )}
+        {stageNames.map((stage, si) => (
+          <div class="stage-group" id={`stage-${si}`}>
+            {stageNames.length > 1 && <h3 class="stage-title">{stage}</h3>}
+            <ol class="timeline-list">
+              {stages.filter((s) => s.stage === stage).map((entry) => (
+                <li class="timeline-entry">
+                  <div class="timeline-head">
+                    <strong class="timeline-title">{entry.title}</strong>
+                    <span class="timeline-date">{fmtDateText(entry.date)}</span>
+                    {entry.place && <span class="timeline-place">· {entry.place}</span>}
+                  </div>
+                  <p class="timeline-summary">{entry.summary}</p>
+                  {entry.confidence === '存疑' && (
+                    <p class="flag-note">存疑{entry.dispute ? `：${entry.dispute}` : ''}</p>
+                  )}
+                  {entry.source_ids?.length > 0 && (
+                    <p class="src-line">
+                      来源：
+                      {entry.source_ids.map((id) =>
+                        sourceLink(id)
+                          ? <a href={sourceLink(id)} rel="external" target="_blank">{sourceName(id)}</a>
+                          : <span>{sourceName(id)}</span>
+                      )}
+                    </p>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </div>
+        ))}
+      </section>
+    )}
+
+    {/* ── 情境作品 ─────────────────────────────── */}
+    {works.length > 0 && (
+      <section class="fig-section" aria-labelledby="sec-works">
+        <h2 class="section-title" id="sec-works">作品选（{works.length} 篇）</h2>
+        <div class="work-grid">
+          {works.map((w) => (
+            <article class="work-card">
+              <header class="work-head">
+                <h3 class="work-title">{w.title}</h3>
+                {w.genre && <span class="work-genre">{w.genre}</span>}
+              </header>
+              {w.date?.text && w.date.precision !== '未知' && (
+                <p class="work-date">{w.date.text}</p>
+              )}
+              {w.place && <p class="work-place">作于 {w.place}</p>}
+              {w.context && <p class="work-context">{w.context}</p>}
+              {w.excerpt && (
+                <blockquote class:list={['work-excerpt']}>
+                  {w.excerpt}
+                </blockquote>
+              )}
+              {w.themes?.length > 0 && (
+                <p class="work-themes">{w.themes.map((t) => <span class="theme-tag">{t}</span>)}</p>
+              )}
+              {w.influence && <p class="work-influence">{w.influence}</p>}
+              {w.confidence && w.confidence !== '确定' && (
+                <p class="flag-note">{w.confidence}{w.dispute ? `：${w.dispute}` : ''}</p>
+              )}
+              {w.source_ids?.length > 0 && (
+                <p class="src-line">
+                  来源：
+                  {w.source_ids.map((id) =>
+                    sourceLink(id)
+                      ? <a href={sourceLink(id)} rel="external" target="_blank">{sourceName(id)}</a>
+                      : <span>{sourceName(id)}</span>
+                  )}
+                </p>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {/* ── 足迹路线（纯文本呈现：坐标尚未接入地理体系，地图留待接入后启用） ── */}
+    {footprints.length > 0 && (
+      <section class="fig-section" aria-labelledby="sec-footprints">
+        <h2 class="section-title" id="sec-footprints">足迹路线（{footprints.length} 处）</h2>
+        <ol class="footprint-list">
+          {footprints.map((fp) => (
+            <li class="footprint-entry">
+              <strong class="footprint-name">{fp.name}</strong>
+              {fp.modern_name && <span class="footprint-modern">（今 {fp.modern_name}）</span>}
+              <span class="footprint-kind">[{fp.kind}]</span>
+              {fp.visit_date?.text && <span class="footprint-date">　{fp.visit_date.text}</span>}
+              {fp.memorial_only && <span class="footprint-memorial">（纪念地，非事件现场）</span>}
+              {fp.confidence === '存疑' && fp.dispute && (
+                <p class="flag-note">存疑：{fp.dispute}</p>
+              )}
+            </li>
+          ))}
+        </ol>
+      </section>
+    )}
+
+    {/* ── 关系网络 ─────────────────────────────── */}
+    {relations.length > 0 && (
+      <section class="fig-section" aria-labelledby="sec-relations">
+        <h2 class="section-title" id="sec-relations">关系网络（{relations.length} 组）</h2>
+        <ul class="relation-list">
+          {relations.map((rel) => {
+            const target = relationTarget(rel)
+            return (
+              <li class="relation-entry">
+                <span class="relation-type">{rel.relation_type}</span>
+                {target.linked
+                  ? <a class="relation-target" href={`${base}figure/${target.id}/`}>{target.name}</a>
+                  : <strong class="relation-target relation-target-plain">{target.name}</strong>}
+                {rel.direction && <span class="relation-direction">（{rel.direction}）</span>}
+                {rel.period?.text && <span class="relation-period">　{rel.period.text}</span>}
+                {rel.evidence && <p class="relation-evidence">{rel.evidence}</p>}
+                {rel.confidence === '存疑' && rel.dispute && (
+                  <p class="flag-note">存疑：{rel.dispute}</p>
+                )}
+                {rel.source_ids?.length > 0 && (
+                  <p class="src-line">来源：{rel.source_ids.map((id) => sourceName(id)).join('；')}</p>
+                )}
+              </li>
+            )
+          })}
+        </ul>
+      </section>
+    )}
+
+    {/* ── 接受史与考证 ─────────────────────────── */}
+    {receptions.length > 0 && (
+      <section class="fig-section" aria-labelledby="sec-reception">
+        <h2 class="section-title" id="sec-reception">历代接受与考证（{receptions.length} 层）</h2>
+        <ul class="reception-list">
+          {receptions.map((r) => (
+            <li class="reception-entry">
+              <div class="reception-head">
+                <span class="reception-era">{r.era}</span>
+                {r.evaluator && <strong class="reception-evaluator">{r.evaluator}</strong>}
+              </div>
+              {r.quote && r.text_display !== 'none' && (
+                <blockquote class="reception-quote">{r.quote}</blockquote>
+              )}
+              {r.comment && <p class="reception-comment">{r.comment}</p>}
+              {r.confidence === '存疑' && r.dispute && (
+                <p class="flag-note">存疑：{r.dispute}</p>
+              )}
+              {r.source_ids?.length > 0 && (
+                <p class="src-line">
+                  来源：
+                  {r.source_ids.map((id) =>
+                    sourceLink(id)
+                      ? <a href={sourceLink(id)} rel="external" target="_blank">{sourceName(id)}</a>
+                      : <span>{sourceName(id)}</span>
+                  )}
+                </p>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {/* ── 来源与版权说明 ───────────────────────── */}
+    <section class="fig-section fig-sources" aria-labelledby="sec-sources">
+      <h2 class="section-title" id="sec-sources">来源与版权说明</h2>
+      {usedSources.length > 0 && (
+        <ul class="source-list">
+          {usedSources.map((s) => (
+            <li class="source-entry" data-status={s.status}>
+              <strong>{s.title}</strong>
+              {s.author_or_org && <span> · {s.author_or_org}</span>}
+              <span class:list={['source-status', `status-${s.status}`]}>{s.status}</span>
+              {s.edition_or_url && (
+                <>　<a href={s.edition_or_url} rel="external" target="_blank">原文页面</a></>
+              )}
+              {s.notes && <p class="source-notes">{s.notes}</p>}
+            </li>
+          ))}
+        </ul>
+      )}
+      <p class="copyright-note">
+        本卷只收公版古籍原文与中立转述，现代注释译文不入库；存疑与争议事实均以「存疑」标记随条目注明。
+      </p>
+      {detail.version_notes && (
+        <details class="version-notes">
+          <summary>版本记录（建卷 {detail.version_notes.created}，最后复核 {detail.version_notes.last_reviewed}）</summary>
+          <ul>
+            {revisions.map((rev) => (
+              <li><strong>{rev.date}</strong>：{rev.note}</li>
+            ))}
+          </ul>
+        </details>
+      )}
+    </section>
+
+    <a class="back-link" href={`${base}figures/`}>← 返回人物总览</a>
+  </article>
+</Base>
+
+<style>
+  .figure-page {
+    max-width: var(--dynasty-max);
+    margin: 0 auto;
+    padding: var(--page-pad);
+  }
+  .figure-crumb a { color: var(--accent); text-decoration: none; font-size: 0.9rem; }
+  .figure-crumb a:hover { text-decoration: underline; }
+  .figure-name {
+    font-size: var(--title-size);
+    letter-spacing: 0.2em;
+    margin: 0.5rem 0 0.25rem;
+  }
+  .figure-lifespan { color: var(--muted); margin: 0; }
+  .figure-stylename { color: var(--summary-fg); margin: 0.25rem 0 0; font-size: 0.95rem; }
+  .figure-stylename span + span { margin-left: 1rem; }
+  .figure-roles { margin: 0.5rem 0 0; display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  .figure-role-badge {
+    padding: 0.1rem 0.55rem;
+    background: var(--banner-bg);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: var(--meta-size);
+  }
+  .figure-summary {
+    margin-top: 0.75rem;
+    font-size: 1.02rem;
+    color: var(--summary-fg);
+  }
+  .figure-aliases { color: var(--muted); font-size: var(--meta-size); }
+
+  .fig-section { margin-top: 2.5rem; }
+  .stage-nav { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
+  .stage-nav a {
+    padding: 0.15rem 0.6rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: var(--meta-size);
+  }
+  .stage-nav a:hover { text-decoration: underline; }
+  .stage-title { margin: 1.5rem 0 0.5rem; font-size: 1rem; color: var(--accent); }
+
+  .timeline-list, .footprint-list, .relation-list, .reception-list, .source-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0;
+  }
+  .timeline-entry {
+    padding: 0.65rem 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .timeline-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; }
+  .timeline-date, .timeline-place { color: var(--muted); font-size: var(--meta-size); }
+  .timeline-summary { margin: 0.35rem 0 0; color: var(--summary-fg); }
+
+  .flag-note {
+    margin: 0.35rem 0 0;
+    padding: 0.3rem 0.55rem;
+    background: var(--flag-bg);
+    color: var(--flag-fg);
+    border-radius: 3px;
+    font-size: var(--meta-size);
+  }
+  .src-line { margin: 0.35rem 0 0; color: var(--muted); font-size: var(--meta-size); }
+  .src-line a { color: var(--accent); text-decoration: none; }
+  .src-line a:hover { text-decoration: underline; }
+  .src-line > * + * { margin-left: 0.5rem; }
+
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    gap: 0.9rem;
+    margin-top: 0.9rem;
+  }
+  .work-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 0.85rem 1rem;
+  }
+  .work-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.4rem; }
+  .work-title { margin: 0; font-size: 1.02rem; }
+  .work-genre { color: var(--muted); font-size: var(--meta-size); white-space: nowrap; }
+  .work-date, .work-place { margin: 0.25rem 0 0; color: var(--muted); font-size: var(--meta-size); }
+  .work-context { margin: 0.45rem 0 0; color: var(--summary-fg); font-size: 0.92rem; }
+  .work-excerpt {
+    margin: 0.55rem 0 0;
+    padding: 0.55rem 0.8rem;
+    border-left: 3px solid var(--accent);
+    background: var(--card-hover);
+    font-family: var(--font-serif);
+  }
+  .work-themes { margin: 0.45rem 0 0; display: flex; flex-wrap: wrap; gap: 0.3rem; }
+  .theme-tag {
+    padding: 0 0.45rem;
+    background: var(--banner-bg);
+    border-radius: 999px;
+    font-size: var(--meta-size);
+    color: var(--flag-fg);
+  }
+  .work-influence { margin: 0.45rem 0 0; font-size: 0.92rem; color: var(--summary-fg); }
+
+  .footprint-entry { padding: 0.45rem 0; border-bottom: 1px dashed var(--line); }
+  .footprint-modern, .footprint-date { color: var(--muted); font-size: var(--meta-size); }
+  .footprint-kind { color: var(--accent); font-size: var(--meta-size); margin-left: 0.4rem; }
+  .footprint-memorial { color: var(--flag-fg); font-size: var(--meta-size); }
+
+  .relation-entry { padding: 0.55rem 0; border-bottom: 1px dashed var(--line); }
+  .relation-type {
+    display: inline-block;
+    padding: 0 0.5rem;
+    margin-right: 0.4rem;
+    background: var(--banner-bg);
+    border-radius: 3px;
+    font-size: var(--meta-size);
+    color: var(--flag-fg);
+  }
+  .relation-target { color: var(--accent); font-weight: 600; text-decoration: none; }
+  a.relation-target:hover { text-decoration: underline; }
+  .relation-direction, .relation-period { color: var(--muted); font-size: var(--meta-size); }
+  .relation-evidence { margin: 0.3rem 0 0; font-size: 0.9rem; color: var(--summary-fg); }
+
+  .reception-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; }
+  .reception-entry { padding: 0.55rem 0; border-bottom: 1px dashed var(--line); }
+  .reception-era {
+    display: inline-block;
+    padding: 0 0.5rem;
+    background: var(--flag-bg);
+    border-radius: 3px;
+    font-size: var(--meta-size);
+    color: var(--flag-fg);
+  }
+  .reception-quote {
+    margin: 0.4rem 0 0;
+    padding: 0.5rem 0.8rem;
+    border-left: 3px solid var(--line);
+    font-family: var(--font-serif);
+  }
+  .reception-comment { margin: 0.35rem 0 0; font-size: 0.9rem; color: var(--summary-fg); }
+
+  .source-entry { padding: 0.45rem 0; border-bottom: 1px dashed var(--line); font-size: 0.92rem; }
+  .source-entry a { color: var(--accent); }
+  .source-status {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0 0.45rem;
+    border-radius: 3px;
+    font-size: var(--meta-size);
+  }
+  .source-status.status-valid { background: #e5f0e0; color: #3d6630; }
+  .source-status.status-invalid { background: var(--flag-bg); color: var(--flag-fg); }
+  .source-notes { margin: 0.2rem 0 0; color: var(--muted); font-size: var(--meta-size); }
+  .copyright-note { margin-top: 0.9rem; color: var(--muted); font-size: var(--meta-size); }
+  .version-notes { margin-top: 0.75rem; font-size: 0.9rem; }
+  .version-notes summary { cursor: pointer; color: var(--accent); }
+  .version-notes ul { padding-left: 1.2rem; }
+  .version-notes li { margin-top: 0.4rem; color: var(--summary-fg); }
+
+  @media (max-width: 40rem) {
+    .work-grid { grid-template-columns: 1fr; }
+  }
+</style>
