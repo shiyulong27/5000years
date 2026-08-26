@@ -33,3 +33,41 @@ export const CONFIDENCES = ['确定', '存疑', '有争议', '传说']
  * 且会让按领域分色失去辨识度。
  */
 export const FIELDS = ['文学', '思想', '政治', '军事', '科技', '艺术']
+
+/**
+ * 人物详卷（data/figures/detail/*.yaml，schema v1）专用枚举。
+ * 完整字段定义见 docs/figure-detail-schema.md；此处只放受控取值，
+ * roles/tags/genre 等开放文本维度不做枚举，避免把非文学人物卡死。
+ */
+
+/** 日期精度。未知形态禁止携带 year；范围形态 year/range_end 必须成对有序 */
+export const DATE_PRECISIONS = ['精确', '约', '范围', '未知']
+
+export const GENDERS = ['男', '女', '不详']
+
+/** 作品作者归属可信度 */
+export const ATTRIBUTIONS = ['确凿', '存疑', '托名']
+
+/** 展示级别：与附录 A §A6/S2 三级版权策略一一对应 */
+export const DISPLAY_LEVELS = ['full', 'excerpt', 'none']
+
+export const FOOTPRINT_KINDS = ['出生', '居住', '游历', '任职', '谪迁', '逝世', '纪念地']
+
+export const COORD_PRECISIONS = ['县级', '乡镇级', '推定']
+
+/** 「后世附会」类关系强制 inferred: true，渲染层据此降级 */
+export const RELATION_TYPES = ['挚友', '师承', '同僚', '论敌', '亲属', '社群', '思想影响', '后世附会']
+
+export const RECEPTION_ERAS = ['同时代', '历代批评', '近现代学术', '教科书与公共文化', '影视与网络']
+
+/**
+ * 身份体裁建议值。仅作录入提示与筛选聚合用，校验器对未登录值
+ * 只警告不报错——体裁的边界随史料认知扩展，枚举不应成为闸门。
+ */
+export const FIGURE_ROLES = [
+  '诗人', '词人', '散文家', '辞赋家', '戏曲家', '小说家',
+  '史学家', '文学批评家', '思想家', '政治家', '军事家',
+  '科学家', '医学家', '地理学家', '旅行家', '探险家',
+  '书法家', '画家', '音乐家', '教育家', '实业家',
+  '宗教人物', '工程师', '外交家', '剑客',
+]

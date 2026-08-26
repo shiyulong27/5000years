@@ -62,6 +62,55 @@ function loadFile(dir, name) {
 }
 
 /**
+ * 解析单对象 YAML 文件（人物详卷、来源注册表等一文件一条记录的形状）。
+ *
+ * 与顶层数组的 parseWithLoc 相对：详卷每文件只描述一位人物，包一层
+ * 数组只会徒增噪音。行号取首个非空非注释行——报错定位到文件级已够用，
+ * 条目级错误由校验器在 message 中携带条目路径（如 works[2].context）。
+ */
+function parseSingleWithLoc(text, fileLabel) {
+  const doc = yaml.load(text, { filename: fileLabel })
+  if (doc == null) return null
+  if (typeof doc !== 'object' || Array.isArray(doc)) {
+    throw new Error(`${fileLabel}：顶层须为单个对象，实际为 ${Array.isArray(doc) ? '数组' : typeof doc}`)
+  }
+
+  let line = 1
+  const lines = text.split(/\r?\n/)
+  for (let i = 0; i < lines.length; i++) {
+    const t = lines[i].trim()
+    if (t !== '' && !t.startsWith('#')) {
+      line = i + 1
+      break
+    }
+  }
+  Object.defineProperty(doc, LOC, {
+    value: { file: fileLabel, line },
+    enumerable: false,
+    writable: false,
+    configurable: false,
+  })
+  return doc
+}
+
+/**
+ * 读取目录下所有 .yaml 单对象文件，返回对象数组（附各自源位置）。
+ * 文件名即记录 id 的命名约定由校验器负责核对，加载层不做假设。
+ */
+function loadSingleDir(baseDir, subDir) {
+  const dir = join(baseDir, subDir)
+  if (!existsSync(dir)) return []
+
+  const out = []
+  for (const name of readdirSync(dir).sort()) {
+    if (!name.endsWith('.yaml') && !name.endsWith('.yml')) continue
+    const doc = parseSingleWithLoc(readFileSync(join(dir, name), 'utf8'), `${subDir}/${name}`)
+    if (doc !== null) out.push(doc)
+  }
+  return out
+}
+
+/**
  * 读取目录下所有 .yaml 文件并合并。
  *
  * 文件名不参与任何解析逻辑，仅供人工归档之便——事件归属哪个朝代
@@ -84,8 +133,9 @@ function loadDir(baseDir, subDir) {
 /**
  * 读取整个数据目录。
  * @param {string} dataDir
- * @returns {{dynasties: object[], rulers: object[], events: object[],
- *            worldEvents: object[], civilizations: object[], figures: object[], legends: object[]}}
+ * @returns {{dynasties: object[], rulers: object[], polities: object[], events: object[],
+ *            worldEvents: object[], civilizations: object[], figures: object[], legends: object[],
+ *            figureDetails: object[], sources: object[]}}
  */
 export function loadAll(dataDir) {
   return {
@@ -96,6 +146,8 @@ export function loadAll(dataDir) {
     rulers: loadDir(dataDir, 'rulers'),
     events: loadDir(dataDir, 'events'),
     worldEvents: loadDir(dataDir, 'world'),
+    figureDetails: loadSingleDir(dataDir, 'figures/detail'),
+    sources: loadFile(dataDir, 'sources.yaml'),
   }
 }
 
@@ -106,4 +158,20 @@ export function loadAll(dataDir) {
  */
 export function locOf(record) {
   return record?.[LOC] ?? null
+}
+
+/**
+ * 为程序化构造的记录附加源位置。
+ *
+ * 测试夹具经 js-yaml 直接解析时没有经过加载层，报错会落到「(未知):0」；
+ * 校验器测试用本函数补上位置信息，使断言能核对错误指向的文件。
+ */
+export function withLoc(record, file, line = 1) {
+  Object.defineProperty(record, LOC, {
+    value: { file, line },
+    enumerable: false,
+    writable: false,
+    configurable: false,
+  })
+  return record
 }

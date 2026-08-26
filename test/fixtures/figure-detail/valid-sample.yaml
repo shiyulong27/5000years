@@ -1,0 +1,119 @@
+# 人物详卷合法夹具（schema v1）。
+# 供 TASK-002 的 Vitest 使用，同时作为数据作者的参考样例。
+# 「valid-sample」人物本身由测试用合成 figures 数据提供，不得用于真实数据；
+# 关联目标 dufu 复用真实 figures.yaml 中已存在的 id，使断言聚焦于本文件。
+schema_version: 1
+id: valid-sample
+
+profile:
+  courtesy_name: 太白
+  art_name: 青莲居士
+  aliases: [诗仙]
+  gender: 男
+  ethnicity: ""
+  ancestry: 陇西成纪
+  birthplace: "西域碎叶（一说蜀中绵州，异说见 dispute）"
+  death_place: 当涂
+  offices: [翰林待诏]
+  fields: [文学]
+  roles: [诗人]
+  summary: 测试用样板人物
+
+timeline:
+  - stage: 少年蜀中
+    stage_order: 1
+    title: 隐居读书
+    date:
+      text: 约710—718年之间
+      year: 710
+      range_end: 718
+      precision: 范围
+    place: 绵州昌隆
+    summary: 在蜀中隐居读书，习剑术与纵横术。
+    confidence: 存疑
+    dispute: 起讫年份诸说不一。
+    source_ids: [src-test-001]
+  - stage: 仗剑远游
+    stage_order: 2
+    title: 出蜀
+    date:
+      text: 724年前后
+      year: 724
+      precision: 约
+    place: 江陵
+    summary: 出三峡，开始漫游。
+    source_ids: [src-test-001]
+
+works:
+  - work_id: jing-ye-si
+    title: 静夜思
+    alt_titles: []
+    genre: 五言绝句
+    date:
+      text: "约726年"
+      year: 726
+      precision: 约
+    place: 扬州
+    context: 客居扬州旅舍，秋夜望月思乡。
+    attribution: 确凿
+    excerpt: 床前明月光，疑是地上霜。举头望明月，低头思故乡。
+    text_display: full
+    themes: [思乡]
+    influence: 传诵最广的五言绝句之一。
+    source_ids: [src-test-001]
+
+footprints:
+  - name: 碎叶城
+    modern_name: 吉尔吉斯斯坦托克马克附近
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 待考，故不填坐标
+    visit_date:
+      text: 不详
+      precision: 未知
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 有争议
+    dispute: 出生地碎叶说与蜀中说并立。
+    source_ids: [src-test-001, src-test-002]
+
+relations:
+  - relation_type: 挚友
+    target_id: dufu
+    direction: 双向
+    period:
+      text: 744年相识后
+      year: 744
+      precision: 约
+    evidence: 天宝三载洛阳相会，杜甫多次赋诗怀李白。
+    source_ids: [src-test-001]
+  - relation_type: 后世附会
+    target_id: dufu
+    direction: 单向
+    period:
+      text: 不详
+      precision: 未知
+    evidence: 民间流传的捉月传说将二人故事附会串联。
+    inferred: true
+    confidence: 传说
+    dispute: 捉月为文学传说，非信史。
+    source_ids: [src-test-002]
+
+reception:
+  - era: 同时代
+    evaluator: 杜甫
+    quote: 白也诗无敌，飘然思不群。
+    text_display: excerpt
+    comment: 同时代人对其诗坛地位的代表性评价。
+    source_ids: [src-test-001]
+
+sources_used: [src-test-001, src-test-002]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版夹具}

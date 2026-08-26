@@ -1,0 +1,104 @@
+# 人物详卷非法夹具（schema v1）。
+# 集中覆盖 TASK-002 校验器必须拦截的每类错误；每处错误以 err: 注释标号。
+# 「invalid-sample」人物本身由测试用合成 figures 数据提供。
+schema_version: 2            # err-01 schema_version 必须为 1
+id: invalid-sample
+
+profile:
+  gender: 未知性别            # err-02 gender 不在 GENDERS 枚举
+  fields: [文学, 美食]        # err-03 fields 含不在 FIELDS 内的值
+  roles: "诗人"              # err-04 roles 须为数组
+  summary: 测试用非法人物
+
+timeline:
+  - stage: 阶段一
+    stage_order: 1
+    title: 未知却带年份
+    date:
+      text: 不详
+      year: 701              # err-05 precision=未知 时禁止携带 year
+      precision: 未知
+    summary: 摘要
+  - stage: 阶段二
+    stage_order: 2
+    title: 范围倒置
+    date:
+      text: 720—710年之间
+      year: 720
+      range_end: 710         # err-06 范围起止倒置（year > range_end）
+      precision: 范围
+    summary: 摘要
+    related_event_id: no-such-event   # err-07 关联事件不存在
+    source_ids: [src-test-001]
+
+works:
+  - work_id: dup-poem
+    title: 示例诗一
+    genre: 诗
+    date:
+      text: 不详
+      precision: 未知
+    context: ""              # err-08 context（创作情境）为空
+    attribution: 确凿
+    excerpt: 这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。这是一段超过两百字的现代译文摘录。
+    text_display: full       # err-09 full 级别不得携带超长文本
+    source_ids: [src-test-001]
+
+footprints:
+  - name: 无效坐标地
+    modern_name: ""
+    lng: 200.5               # err-10 经度超出 [-180,180]
+    lat: 35.0
+    coord_precision: 县级
+    visit_date:
+      text: 不详
+      precision: 未知
+    kind: 游历
+    route_order: 1
+    inferred: true           # err-11 推定项缺少 coord_source
+  - name: 纪念地未标记
+    modern_name: ""
+    lng: null
+    lat: null
+    coord_precision: 推定
+    visit_date:
+      text: 不详
+      precision: 未知
+    kind: 纪念地             # err-12 kind=纪念地 时 memorial_only 必须为 true，此处缺失
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-test-001]
+
+relations:
+  - relation_type: 笔友       # err-13 relation_type 不在 RELATION_TYPES
+    target_id: no-such-figure # err-14 目标人物不存在
+    direction: 双向
+    period:
+      text: 不详
+      precision: 未知
+    evidence: ""
+    source_ids: [src-test-001]
+  - relation_type: 后世附会
+    target_id: dufu          # err-15 后世附会强制 inferred: true，此处缺失
+    direction: 单向
+    period:
+      text: 不详
+      precision: 未知
+    evidence: 附会故事
+    source_ids: [src-test-001]
+
+reception:
+  - era: 现代网评             # err-16 era 不在 RECEPTION_ERAS
+    evaluator: 匿名网友
+    quote: ""
+    text_display: excerpt
+    comment: 转述
+    source_ids: [src-gone-999] # err-17 引用不存在的来源
+
+sources_used: [src-gone-999]   # err-18 来源不存在于注册表
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 非法夹具}

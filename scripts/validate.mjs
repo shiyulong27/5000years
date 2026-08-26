@@ -47,5 +47,7 @@ const n = (arr) => arr.length
 const warnNote = warnings.length > 0 ? `（另有 ${warnings.length} 条提示）` : ''
 console.log(
   `✓ 校验通过：${n(data.events)} 条事件，${n(data.dynasties)} 个朝代，` +
-    `${n(data.rulers)} 位君主，${n(data.worldEvents)} 条世界事件，${n(data.civilizations)} 条文明色带，${n(data.legends)} 条传说人物${warnNote}`
+    `${n(data.rulers)} 位君主，${n(data.worldEvents)} 条世界事件，${n(data.civilizations)} 条文明色带，` +
+    `${n(data.legends)} 条传说人物，${n(data.figures)} 位人物，` +
+    `${n(data.figureDetails)} 卷人物详卷，${n(data.sources)} 条来源登记${warnNote}`
 )
