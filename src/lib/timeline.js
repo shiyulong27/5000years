@@ -248,14 +248,25 @@ export function buildTimeline(data) {
       })),
   ]
 
-  for (const f of timelineFigures.sort((a, b) => sortKey(a.timelineStart) - sortKey(b.timelineStart))) {
+  // 生卒不可考的人物（L1 以 birth_note/death_note 表述，schema ISSUE-004）
+  // 无数字年份可排布，长卷泳道无法定位——跳过其色带；他们仍在朝代页与
+  // 人物总览中以卡片呈现，详情页年谱不受影响。
+  const placeable = timelineFigures.filter((f) => f.timelineStart && f.timelineEnd)
+  const skipped = timelineFigures.length - placeable.length
+  if (skipped > 0) {
+    console.warn(`[timeline] ${skipped} 位人物生卒不可考，跳过长卷色带渲染`)
+  }
+
+  for (const f of placeable.sort((a, b) => sortKey(a.timelineStart) - sortKey(b.timelineStart))) {
     const s = yearOf(f.timelineStart)
     const e = yearOf(f.timelineEnd)
     const inside = yearRows.filter((r) => r.year >= s && r.year <= e)
     if (inside.length === 0) continue // 时间区间内无行，长卷上无处安放
 
-    const rowStart = inside[0].gridRow
-    const rowEnd = inside[inside.length - 1].gridRow
+    const startRowObj = inside[0]
+    const endRowObj = inside[inside.length - 1]
+    const rowStart = startRowObj.gridRow
+    const rowEnd = endRowObj.gridRow
 
     // 找第一条空闲泳道；都占着就新开一条
     let lane = lanes.findIndex((lastRow) => lastRow < rowStart)
