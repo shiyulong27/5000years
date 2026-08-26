@@ -1,0 +1,592 @@
+# 柳宗元全景详卷（schema v1）
+# 史料审计表（TASK-003 批次一；来源见 data/sources.yaml；两传均已 webfetch 实取）：
+#
+# | 事实点 | 旧唐书·卷160(J) | 新唐书·卷168(X) | 结论与置信 |
+# |---|---|---|---|
+# | 家世 | 河东人；曾伯祖奭高祖朝宰相；父镇太常博士终侍御史 | 其先盖河东人；从曾祖奭中书令得罪武后死高宗时；父镇天宝末奉母隐王屋山后徙吴 | 确定；籍贯表述两史有别 |
+# | 少年才名 | 少聪警绝众尤精西汉诗骚；精裁密致灿若珠贝 | 少精敏绝伦为文章卓伟精致一时辈行推仰 | 确定 |
+# | 入仕 | 登进士第应举宏辞授校书郎蓝田尉；贞元十九年为监察御史 | 第进士博学宏辞科授校书郎调蓝田尉；贞元十九年为监察御史里行 | 确定；御史/御史里行两书异文 |
+# | 永贞内引 | 叔文韦执谊尤奇待；与监察吕温密引禁中与之图事；转礼部员外郎 | 引内禁近与计事擢礼部员外郎欲大进用 | 确定（两史同记） |
+# | 初贬 | 为邵州刺史在道再贬永州司马 | 贬邵州刺史不半道贬永州司马 | 确定；「在道」「不半道」详略互异 |
+# | 永州创作 | 蘊骚人之郁悼写情叙事动必以文为骚文十数篇览之者为之凄恻 | 自放山泽间一寓诸文仿离骚数十篇读者咸悲恻；载贻萧俛许孟容书全文及贞符惩咎赋 | 确定；X独详书信与贞符 |
+# | 让播 | 禹锡有母年高……吾于禹锡为执友胡忍见其若是即草章奏请以柳州授禹锡自往播州会裴度亦奏禹锡终易连州 | 播非人所居而禹锡亲在堂……即具奏欲以柳州授禹锡而自往播会大臣亦为禹锡请因改连州 | 确定（两史互证）；「执友」语出J |
+# | 柳州治绩 | 以男女质钱过期没入钱主宗元革其乡法出私钱赎归其父母 | 设方计悉赎归之尤贫者令书庸视直足相当还其质已没者出己钱助赎 | 确定；X补书庸抵债细节 |
+# | 文教 | 江岭间为进士者不远数千里皆随宗元师法凡经其门必为名士时号柳州 | 南方为进士者走数千里从宗元游经指授者为文辞皆有法世号柳柳州 | 确定 |
+# | 卒 | 元和十四年十月五日卒时年四十七子周六周七才三四岁观察使裴行立营护丧还京师时人义之 | 十四年卒年四十七 | 确定(819)；生年773由四十七倒推闭合 |
+# | 身后 | 无罗池事 | 既没柳人怀之托言降于州之堂庙于罗池愈因碑以实之 | 神异部分按传说处理；J韩传斥「南人妄以柳宗元为罗池神而愈撰碑以实之」为文章纰缪 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: liuzongyuan
+
+profile:
+  courtesy_name: 子厚
+  art_name: ""
+  aliases: [柳河东, 柳柳州]
+  gender: 男
+  ethnicity: ""
+  ancestry: 河东（今山西运城），世居长安（旧唐书径称河东人）
+  birthplace: 长安（主流意见；旧唐书称河东人，新唐书称其先盖河东人而父镇后徙于吴）
+  death_place: 柳州
+  offices: [秘书省校书郎, 蓝田尉, 监察御史（里行）, 礼部员外郎, 邵州刺史（未及上任）, 永州司马, 柳州刺史]
+  fields: [文学]
+  roles: [散文家, 诗人, 思想家]
+  summary: 唐宋八大家中最早的一位，古文运动主将；永贞革新的牺牲者，山水游记与寓言散文的开山，「苛政猛于虎」脉络下最锋利的笔。
+
+timeline:
+  # ── 阶段一：长安少年与入仕 ──────────────────────────
+  - stage: 长安少年与入仕
+    stage_order: 1
+    title: 出生于河东柳氏长安之家
+    date:
+      text: "约773年"
+      year: 773
+      precision: 约
+    place: 长安
+    summary: 河东柳氏之后，曾伯祖柳奭高祖朝为宰相、得罪武后；父柳镇太常博士终于侍御史。生年正史无载，由元和十四年卒时年四十七倒推闭合为773。
+    confidence: 存疑
+    dispute: 籍贯旧唐书称河东人、新唐书称其先盖河东人且父镇天宝末后徙于吴；出生地学界多主长安（其文中自述家有赐书三千卷在长安善和里旧宅），亦有主张生于吴中者。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - stage: 长安少年与入仕
+    stage_order: 2
+    title: 少聪警绝众，尤精西汉诗骚
+    date:
+      text: 少年时期，具体年代不详
+      precision: 未知
+    place: 长安
+    summary: 旧唐书称少聪警绝众尤精西汉诗骚，下笔构思与古为侔，精裁密致灿若珠贝，当时流辈咸推之；新唐书称少精敏绝伦为文章卓伟精致一时辈行推仰。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - stage: 长安少年与入仕
+    stage_order: 3
+    title: 登进士第应宏辞科，授校书郎、蓝田尉
+    date:
+      text: 约793年及第，其后调蓝田尉
+      year: 793
+      precision: 约
+    place: 长安
+    summary: 登进士第，应举宏辞科，授校书郎、调蓝田尉。及第年份从贞元九年通说系年，正史记官职而不著年份。
+    confidence: 存疑
+    dispute: 及第确年793系据贡举记载与刘禹锡同年关系推定，两唐书本传均不载年份。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - stage: 长安少年与入仕
+    stage_order: 4
+    title: 贞元十九年拜监察御史
+    date:
+      text: "803年"
+      year: 803
+      precision: 精确
+    place: 长安
+    summary: 贞元十九年为监察御史（旧唐书）；新唐书作监察御史里行。同年与刘禹锡同台为御史，两人订交自此益密。
+    confidence: 存疑
+    dispute: 旧唐书作「监察御史」，新唐书作「监察御史里行」，品秩有别，两书异文并存。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+
+  # ── 阶段二：永贞内引与骤贬 ──────────────────────────
+  - stage: 永贞内引与骤贬
+    stage_order: 5
+    title: 密引禁中图事，转礼部员外郎
+    date:
+      text: "805年"
+      year: 805
+      precision: 精确
+    place: 长安
+    summary: 顺宗即位，王叔文、韦执谊用事尤奇待宗元，与监察吕温密引禁中与之图事，转尚书礼部员外郎，叔文欲大用之。时号「二王刘柳」。旧唐书刘传并载宗元素不悦武元衡，武元衡由御史中丞左授右庶子。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - stage: 永贞内引与骤贬
+    stage_order: 6
+    title: 叔文败，贬邵州刺史，在道再贬永州司马
+    date:
+      text: 约805—806年之间
+      year: 805
+      range_end: 806
+      precision: 范围
+    place: 邵州、永州
+    summary: 叔文败，与同辈七人俱贬，宗元为邵州刺史；旧唐书称在道再贬永州司马，新唐书称不半道贬永州司马。
+    confidence: 存疑
+    dispute: 是否实际抵达邵州两书措辞略异（在道／不半道），通行认为未及上任即再贬。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+
+  # ── 阶段三：永州十年 ──────────────────────────────
+  - stage: 永州十年
+    stage_order: 7
+    title: 永州谪居十年，骚文十数篇览者凄恻
+    date:
+      text: 约806—815年之间
+      year: 806
+      range_end: 815
+      precision: 范围
+    place: 永州
+    summary: 既罹窜逐涉履蛮瘴崎岖堙厄，蕴骚人之郁悼，写情叙事动必以文，为骚文十数篇览之者为之凄恻；新唐书称其自放山泽间一寓诸文仿离骚数十篇读者咸悲恻。山水游记诸作皆成于此期。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - stage: 永州十年
+    stage_order: 8
+    title: 贻萧俛、许孟容书自陈困厄
+    date:
+      text: 贬永州期间，确切年份不详
+      precision: 未知
+    place: 永州
+    summary: 新唐书全录两书：与萧俛书自述超取显美欲免怪怒媢疾不可得、居蛮夷中久惯习炎毒；与许孟容书自言罪状最甚、煢煢孤立未有子息、先墓在城南阙扫四年、赐书三千卷尚在善和里旧宅。众畏其才高惩刈复进，故无用力者。
+    source_ids: [src-xts-vol168]
+  - stage: 永州十年
+    stage_order: 9
+    title: 著《贞符》黜符命，作《惩咎赋》自儆
+    date:
+      text: 贬永州期间，确切年份不详
+      precision: 未知
+    place: 永州
+    summary: 新唐书载其著《贞符》，驳董仲舒以下受命符瑞之说，主张受命不于天于其人、休符不祥于仁；不得召内闵悼悔念往吝，作《惩咎赋》自儆。两篇为其哲学思想与骚体创作的代表文本。
+    source_ids: [src-xts-vol168]
+  - stage: 永州十年
+    stage_order: 10
+    title: 例移柳州刺史，请以柳州授禹锡自往播州
+    date:
+      text: "815年"
+      year: 815
+      precision: 精确
+    place: 长安诏下
+    summary: 元和十年例移为柳州刺史。时刘禹锡得播州刺史，制书下，宗元谓所亲曰：禹锡有母年高今为郡蛮方西南绝域往复万里，如母子异方便为永诀，吾于禹锡为执友胡忍见其若是。即草章奏请以柳州授禹锡自往播州。会裴度亦奏其事，禹锡终易连州。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+
+  # ── 阶段四：柳州刺史四年 ────────────────────────────
+  - stage: 柳州刺史四年
+    stage_order: 11
+    title: 革男女质钱乡法，出私钱赎归其父母
+    date:
+      text: 柳州任内约815—819年之间
+      year: 815
+      range_end: 819
+      precision: 范围
+    place: 柳州
+    summary: 柳州土俗以男女质钱过期则没入钱主，宗元革其乡法，其已没者仍出私钱赎之归其父母；新唐书补载设方计悉赎归之、尤贫者令书庸视直足相当还其质。与其后韩愈在袁州设法赎没男女归其父母的做法先后同揆。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - stage: 柳州刺史四年
+    stage_order: 12
+    title: 江岭进士不远数千里师从，时号柳柳州
+    date:
+      text: 柳州任内约815—819年之间
+      year: 815
+      range_end: 819
+      precision: 范围
+    place: 柳州
+    summary: 江岭间为进士者不远数千里皆随宗元师法，凡经其门必为名士；新唐书称经指授者为文辞皆有法。著述之盛名动于时，世号柳柳州。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - stage: 柳州刺史四年
+    stage_order: 13
+    title: 元和十四年十月五日卒，年四十七
+    date:
+      text: 819年10月5日（元和十四年十月五日）
+      year: 819
+      precision: 精确
+    place: 柳州
+    summary: 元和十四年十月五日卒时年四十七。子周六、周七才三四岁。观察使裴行立为营护其丧及妻子还于京师，时人义之。生卒773—819由此条与倒推闭合。
+    source_ids: [src-jts-vol160]
+  - stage: 柳州刺史四年
+    stage_order: 14
+    title: 身后：柳人怀之，庙于罗池
+    date:
+      text: 卒后渐起，具体年代不详
+      precision: 未知
+    place: 柳州
+    summary: 新唐书载既没柳人怀之托言降于州之堂人有慢者辄死，庙于罗池韩愈因碑以实之。神异传闻属地方追思的附会层，旧唐书韩传直斥南人妄以柳宗元为罗池神而愈撰碑以实之为文章纰缪。
+    confidence: 传说
+    dispute: 罗池降神为人神化传说，正史层面仅存其庙祀事实与韩愈撰碑一事；韩愈撰碑本身在旧唐书即受批评。
+    source_ids: [src-xts-vol168, src-jts-vol160]
+
+works:
+  - work_id: jiang-xue
+    title: 江雪
+    alt_titles: []
+    genre: 五言绝句
+    date:
+      text: 永州贬谪期间约806—815年之间
+      year: 806
+      range_end: 815
+      precision: 范围
+    place: 永州
+    context: 永州十年孤独处境的极简写照，千山鸟飞绝的天地间独钓寒江，清冷孤绝至极。
+    attribution: 确凿
+    excerpt: 千山鸟飞绝，万径人踪灭。孤舟蓑笠翁，独钓寒江雪。
+    text_display: full
+    themes: [山水, 孤绝]
+    influence: 唐人五绝中最负盛名的雪景诗，历代山水画反复取材。
+    confidence: 存疑
+    dispute: 系年从永州时期通说，确切年份无载。
+    source_ids: [src-qts-liuzongyuan]
+  - work_id: yu-weng
+    title: 渔翁
+    alt_titles: []
+    genre: 七言古诗
+    date:
+      text: 永州贬谪期间约806—815年之间
+      year: 806
+      range_end: 815
+      precision: 范围
+    place: 永州
+    context: 欸乃一声山水绿以声写静，岩上无心云相逐化用陶渊明，寄托谪居中的出世之想。
+    attribution: 确凿
+    excerpt: 渔翁夜傍西岩宿，晓汲清湘燃楚竹。烟销日出不见人，欸乃一声山水绿。回看天际下中流，岩上无心云相逐。
+    text_display: full
+    themes: [山水, 隐逸]
+    influence: 苏轼评其有奇趣，后世论唐诗声色之美常举此篇。
+    confidence: 存疑
+    dispute: 系年从永州时期通说；尾二句宋人已有删留之争（苏轼谓虽不必亦可）。
+    source_ids: [src-qts-liuzongyuan]
+  - work_id: shi-de-xishan-yan-youji
+    title: 始得西山宴游记
+    alt_titles: []
+    genre: 山水游记散文
+    date:
+      text: "809年（文末自纪元和四年）"
+      year: 809
+      precision: 精确
+    place: 永州西山
+    context: 永州八记之首，自余为僇人居是州恒惴栗起笔，发现西山而后知吾向之未始游游于是乎始。文末自纪是岁元和四年，系年有本文内证。
+    attribution: 确凿
+    excerpt: 自余为僇人，居是州，恒惴栗。其隙也，则施施而行，漫漫而游。……攀援而登，箕踞而遨，则凡数州之土壤，皆在衽席之下。……然后知吾向之未始游，游于是乎始。故为之文以志。是岁元和四年也。
+    text_display: excerpt
+    themes: [山水游记, 谪迁心境]
+    influence: 中国古代山水游记独立成体的奠基之作，永州八记自此开篇。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - work_id: xiao-shi-tan-ji
+    title: 小石潭记
+    alt_titles: [至小丘西小石潭记]
+    genre: 山水游记散文
+    date:
+      text: 永州期间，通说809年后
+      year: 809
+      precision: 约
+    place: 永州
+    context: 永州八记之一，潭中鱼可百许头皆若空游无所依写水之清澈至此化境；结于凄神寒骨悄怆幽邃，乐境转凄正是谪居心绪。
+    attribution: 确凿
+    excerpt: 从小丘西行百二十步，隔篁竹，闻水声，如鸣珮环，心乐之。……潭中鱼可百许头，皆若空游无所依。……坐潭上，四面竹树环合，寂寥无人，凄神寒骨，悄怆幽邃。
+    text_display: excerpt
+    themes: [山水游记, 凄清]
+    influence: 中学语文经典篇目，山水游记写作范本。
+    confidence: 存疑
+    dispute: 具体系年无载，从元和年间西山系列之后通说。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - work_id: bu-she-zhe-shuo
+    title: 捕蛇者说
+    alt_titles: []
+    genre: 议论散文（说体）
+    date:
+      text: 永州贬谪期间约806—815年之间
+      year: 806
+      range_end: 815
+      precision: 范围
+    place: 永州
+    context: 永州之野产异蛇起笔，借蒋氏三代宁死于毒蛇不肯死于赋敛的口述，续孔子苛政猛于虎的脉络而下，孰知赋敛之毒有甚是蛇者乎。
+    attribution: 确凿
+    excerpt: 永州之野产异蛇，黑质而白章，触草木尽死。……孔子曰：「苛政猛于虎也。」吾尝疑乎是，今以蒋氏观之，犹信。呜呼！孰知赋敛之毒有甚是蛇者乎！
+    text_display: excerpt
+    themes: [社会批判, 赋敛之毒]
+    influence: 苛政猛于虎命题在唐代最有力的展开，政论散文典范。
+    confidence: 存疑
+    dispute: 系年从永州时期通说，确切年份无载。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - work_id: qian-zhi-lv
+    title: 黔之驴（三戒之一）
+    alt_titles: [三戒·黔之驴]
+    genre: 寓言散文
+    date:
+      text: 永州贬谪期间约806—815年之间
+      year: 806
+      range_end: 815
+      precision: 范围
+    place: 永州
+    context: 三戒（临江之麋、黔之驴、永某氏之鼠）之一，庞然大物技止此耳，讽刺无德无能而虚张声势者。
+    attribution: 确凿
+    excerpt: 黔无驴，有好事者船载以入。至则无可用，放之山下。……驴不胜怒，蹄之。虎因喜，计之曰：「技止此耳！」因跳踉大㘎，断其喉，尽其肉，乃去。
+    text_display: excerpt
+    themes: [寓言, 讽喻]
+    influence: 黔驴技穷成语之所本，中国寓言文学的高峰之作。
+    confidence: 存疑
+    dispute: 系年从永州时期通说。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - work_id: zhongshu-guo-tuo-zhuan
+    title: 种树郭橐驼传
+    alt_titles: []
+    genre: 传记体寓言散文
+    date:
+      text: 长安时期为主流说，年代不详
+      precision: 未知
+    place: 长安（一说）
+    context: 借病偻种树人郭橐驼顺木之天以致其性之说，转入官理之弊——虽曰爱之其实害之，虽曰忧之其实仇之，讽扰民之政。
+    attribution: 确凿
+    excerpt: 郭橐驼，不知始何名。病偻，隆然伏行，有类橐驼者，故乡人号之驼。……虽曰爱之，其实害之；虽曰忧之，其实仇之。
+    text_display: excerpt
+    themes: [寓言, 政论]
+    influence: 以种树之道移之官理的名文，为政贵在无为烦令的古典表述。
+    confidence: 存疑
+    dispute: 作年无载，从长安时期通说，亦有贬前贬后不同系年意见。
+    source_ids: [src-jts-vol160]
+  - work_id: feng-jian-lun
+    title: 封建论
+    alt_titles: []
+    genre: 政论散文
+    date:
+      text: 创作年代无定论，多系于贬永州后
+      precision: 未知
+    place: ""
+    context: 系统论证分封非圣人意也势也，郡县制胜于封建，是其历史政治思想的纲领性文本。
+    attribution: 确凿
+    excerpt: 彼封建者，更古圣王尧、舜、禹、汤、文、武而莫能去之。盖非不欲去之也，势不可也。……故封建非圣人意也，势也。
+    text_display: excerpt
+    themes: [政论, 历史观]
+    influence: 古代论封建郡县之争的第一等文字，苏轼称其出入诸家。
+    confidence: 存疑
+    dispute: 作年有永州说、长安说诸解，无定论。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - work_id: yongzhou-tielubu-zhi
+    title: 永州铁炉步志
+    alt_titles: []
+    genre: 杂记散文
+    date:
+      text: 永州贬谪期间，确切年份不详
+      precision: 未知
+    place: 永州
+    context: 由永州北郭地名铁炉步而炉亡已久、名存实亡发端，讽世人名实不相副、求其义于其末的社会现象，是小题大作的杂文名篇。
+    attribution: 确凿
+    excerpt: 江之浒，凡舟可縻而上下者曰步。永州北郭有步，曰铁炉步。
+    text_display: excerpt
+    themes: [杂文, 名实之辨]
+    influence: 因小见大的杂记体示范。
+    source_ids: [src-jts-vol160]
+  - work_id: deng-liuzhou-chenglou
+    title: 登柳州城楼寄漳汀封连四州
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 约815年初抵柳州
+      year: 815
+      precision: 约
+    place: 柳州城楼
+    context: 元和十年例移刺史后初登城楼，寄刘禹锡（连州）、韩泰（漳州）、韩晔（汀州）、陈谏（封州）四位同难战友。岭树重遮千里目江流曲似九回肠，把共来百越文身地的离散写得沉痛之极。
+    attribution: 确凿
+    excerpt: 城上高楼接大荒，海天愁思正茫茫。惊风乱飐芙蓉水，密雨斜侵薜荔墙。岭树重遮千里目，江流曲似九回肠。共来百越文身地，犹自音书滞一乡。
+    text_display: full
+    themes: [贬谪, 友朋离散]
+    influence: 唐代贬谪律诗的压卷之作，与让播事件同一背景下的诗证。
+    confidence: 存疑
+    dispute: 系年从元和十年夏秋抵柳州后通说。
+    source_ids: [src-qts-liuzongyuan, src-jts-vol160]
+  - work_id: bie-she-di-zong-yi
+    title: 别舍弟宗一
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 约816年
+      year: 816
+      precision: 约
+    place: 柳州
+    context: 送堂弟柳宗一离开柳州赴江陵，零落残魂倍黯然起笔，一身去国六千里万死投荒十二年总括半生贬谪。
+    attribution: 确凿
+    excerpt: 零落残魂倍黯然，双垂别泪越江边。一身去国六千里，万死投荒十二年。桂岭瘴来云似墨，洞庭春尽水如天。欲知此后相思梦，长在荆门郢树烟。
+    text_display: full
+    themes: [离别, 贬谪]
+    influence: 万死投荒一联为贬谪文学中最沉重的自况。
+    confidence: 存疑
+    dispute: 系年诸家有元和十一年（816）与十一年前后之别。
+    source_ids: [src-qts-liuzongyuan]
+
+footprints:
+  - name: 河东（祖籍）
+    modern_name: 山西省运城市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 祖籍；本人是否亲历无载
+      precision: 未知
+    kind: 居住
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 旧唐书称河东人，新唐书称其先盖河东人，均为郡望层面的祖籍表述，无本人到访记载。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - name: 长安（京兆万年）
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 出生至贬谪前的主要活动地，家有善和里旧宅
+      year: 773
+      range_end: 805
+      precision: 范围
+    kind: 出生
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 出生地长安说系学界主流（据其与许孟容书自述善和里旧宅），旧唐书径称河东人。
+    source_ids: [src-xts-vol168, src-jts-vol160]
+  - name: 蓝田
+    modern_name: 陕西省西安市蓝田县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 调蓝田尉，约796—803年之间
+      year: 796
+      range_end: 803
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任蓝田尉起讫年份据登第后职历推定，正史不载具体年份。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - name: 邵州
+    modern_name: 湖南省邵阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约805—806年之间贬邵州刺史，在道再贬
+      year: 805
+      range_end: 806
+      precision: 范围
+    kind: 谪迁
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 旧唐书称在道再贬、新唐书称不半道再贬，通行认为未及上任。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - name: 永州
+    modern_name: 湖南省永州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约806—815年之间贬所十年
+      year: 806
+      range_end: 815
+      precision: 范围
+    kind: 谪迁
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - name: 柳州
+    modern_name: 广西壮族自治区柳州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约815—819年之间刺柳州，卒于任所
+      year: 815
+      range_end: 819
+      precision: 范围
+    kind: 逝世
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - name: 柳侯祠（罗池庙）
+    modern_name: 广西壮族自治区柳州市柳侯公园柳侯祠
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 纪念地坐标待接入体系；不作确证到访处理
+    visit_date:
+      text: 卒后柳人立庙祀之
+      precision: 未知
+    kind: 纪念地
+    route_order: 7
+    memorial_only: true
+    confidence: 传说
+    dispute: 庙祀源于托言降神的传说，韩愈撰罗池神碑一事本身在旧唐书即被史臣批评；此处仅作后世纪念地著录。
+    source_ids: [src-xts-vol168, src-jts-vol160]
+
+relations:
+  - relation_type: 挚友
+    target_id: liuyuxi
+    direction: 双向
+    period:
+      text: 约803年同为御史订交，历永贞同贬至819年柳卒，生死之交
+      year: 803
+      range_end: 819
+      precision: 范围
+    evidence: 正史铁证：旧唐书柳传载元和十年刘禹锡得播州，宗元谓所亲曰禹锡有母年高……吾于禹锡为执友胡忍见其若是，即草章奏请以柳州授禹锡自往播州，会裴度亦奏禹锡终易连州；刘传同卷互见裴度奏母老改连州事。旧唐书史臣曰并以「宗元、禹锡」并举论其文学。登柳州城楼寄漳汀封连四州即寄禹锡之作。
+    source_ids: [src-jts-vol160, src-qts-liuzongyuan]
+  - relation_type: 社群
+    target_id: hanyu
+    direction: 双向
+    period:
+      text: 同倡古文的同道，交往见于贞元元和之际
+      year: 800
+      range_end: 819
+      precision: 范围
+    evidence: 韩柳并称为古文运动双璧。新唐书载韩愈评其文曰雄深雅健似司马子长崔蔡不足多也；柳殁后柳人庙于罗池，愈因碑以实之。但须并记另一面：旧唐书韩传将此事列为愈之纰缪——若南人妄以柳宗元为罗池神而愈撰碑以实之，与讳辨毛颖传同遭史臣非议，即韩愈本人因此碑受到传统史学批评。
+    confidence: 确定
+    source_ids: [src-xts-vol168, src-jts-vol160]
+  - relation_type: 同僚
+    target_id: liuyuxi
+    direction: 双向
+    period:
+      text: 803—805年同朝为御史、同预永贞革新
+      year: 803
+      range_end: 805
+      precision: 范围
+    evidence: 二人同为监察御史（贞元十九年），永贞间同引禁中图事，时号二王刘柳；败后同贬司马，元和十年同例移刺史。挚友条之外单列同僚履历层。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+
+reception:
+  - era: 同时代
+    evaluator: 裴行立与柳州士民
+    quote: 观察使裴行立为营护其丧及妻子还于京师，时人义之。
+    text_display: excerpt
+    comment: 旧唐书所记身后哀荣，营护还葬出自非亲故的观察使，时人义之为同时代人对其人格的直接裁定。
+    source_ids: [src-jts-vol160]
+  - era: 同时代
+    evaluator: 江岭间进士群体
+    quote: 凡经其门，必为名士。
+    text_display: excerpt
+    comment: 旧唐书载江岭间为进士者不远数千里皆随宗元师法，衡阳以南进士多以宗元为师，是其晚年文坛影响的实录。
+    source_ids: [src-jts-vol160]
+  - era: 历代批评
+    evaluator: 旧唐书史臣
+    quote: 贞元、太和之间，以文学耸动搢绅之伍者，宗元、禹锡而已。……而蹈道不谨，昵比小人，自致流离，前隳素业。
+    text_display: excerpt
+    comment: 五代史臣才高而党败的双重评价，代表传统史学对永贞党争的政治批评立场；新唐书赞曰亦责宗元等橈节从之徼幸一时。两种批评与后世对其文学的推崇长期并存。
+    source_ids: [src-jts-vol160, src-xts-vol168]
+  - era: 历代批评
+    evaluator: 韩愈
+    quote: 雄深雅健，似司马子长，崔、蔡不足多也。
+    text_display: excerpt
+    comment: 新唐书所录韩愈对柳文的最高评价，以司马迁拟之，为韩柳并尊格局的最早权威判断之一。
+    source_ids: [src-xts-vol168]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦永贞革新的政治评价再检讨、柳的唯物主义无神论思想（贞符天说封建论）、永州八记的系年与文体开创、韩柳优劣论的历史变迁等议题；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 小石潭记江雪捕蛇者说黔之驴等长期入选中小学语文教材，唐宋八大家概念中位列首位（按生年）。柳侯祠为全国重点文物保护单位。教材版本信息随学期变动，录入时须另行核验当期篇目。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 千山鸟飞绝与黔驴技穷进入日常语汇；影视专题多为文化纪录片性质的正剧化呈现，未见以柳宗元为主角的代表性剧情长片，暂不录具体条目。
+    source_ids: []
+
+sources_used: [src-jts-vol160, src-xts-vol168, src-qts-liuzongyuan]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。14条年谱、11件作品、7处足迹、3组关系、7层接受史；新旧唐书两传均已实取核验，御史里行、再贬措辞、出生地等异说全部落dispute字段}

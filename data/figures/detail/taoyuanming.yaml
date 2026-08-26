@@ -1,0 +1,568 @@
+# 陶渊明全景详卷（schema v1）
+# 史料审计表（TASK-003 批次；来源见 data/sources.yaml）：
+#
+# | 事实点 | 宋书·隐逸传(S，2026-08-25 实取 zh.wikisource.org/wiki/宋書/卷93) | 晋书·隐逸传(J，实取 zh.wikisource.org/wiki/晉書/卷094) | 结论与置信 |
+# |---|---|---|---|
+# | 名字 | 「陶潛字淵明，或云淵明字元亮」 | 「陶潛，字元亮」 | 两史互异：名潜字渊明 / 名渊明字元亮两说并存→记有争议 |
+# | 家世 | 曾祖侃晋大司马 | 大司马侃之曾孙，祖茂武昌太守 | 确定 |
+# | 少年 | 少有高趣著五柳先生传自况，时人谓之实录 | 同载传文全篇 | 确定 |
+# | 初仕 | 起为州祭酒不堪吏职少日自解归；州召主簿不就 | 同 | 确定 |
+# | 参军 | 复为镇军建威参军，「聊欲弦歌以为三径之资」 | 同 | 确定 |
+# | 彭泽辞官 | 督邮至，「我不能为五斗米折腰向乡里小人」即日解印绶去职赋归去来 | 「拳拳事乡里小人邪」；系年义熙二年 | 辞官事实确定；系年 J 作义熙二年与通说义熙元年(405)差一年→存疑 |
+# | 征辟 | 义熙末征著作佐郎不就 | 征著作郎不就 | 确定 |
+# | 王弘 | 半道栗里要之；篮舆；九月九日菊丛送酒 | 元熙中临州；造履；蓝舆 | 确定（细节两书互异并存） |
+# | 颜延之 | 为刘柳后军功曹在寻阳与潜情款；留二万钱悉送酒家 | 未载 | 确定(S) |
+# | 琴 | 畜素琴一张无弦，抚弄寄意 | 弦徽不具，「但识琴中趣何劳弦上声」 | 确定 |
+# | 甲子书例 | 义熙以前书晋氏年号永初以来唯云甲子 | 未载 | 确定(S) |
+# | 卒 | 元嘉四年卒时年六十三 | 以宋元嘉中卒时年六十三 | 卒年确定；生年由六十三倒推约365，另有诸说→存疑 |
+# | 檀道济馈粱肉 | 无载 | 无载 | 仅见萧统《陶渊明传》，正史无载→传说 |
+# | 庐山结庐依慧远／莲社 | 无载（仅记潜尝往庐山） | 无载 | 后世莲社文献所记→存疑 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: taoyuanming
+
+profile:
+  courtesy_name: 元亮（名字归属两说：宋书作名潜字渊明、又云渊明字元亮，晋书作名潜字元亮，详见 timeline 首条 dispute）
+  art_name: ""
+  aliases: [五柳先生, 靖节先生（私谥）]
+  gender: 男
+  ethnicity: ""
+  ancestry: 浔阳柴桑
+  birthplace: 浔阳柴桑
+  death_place: 浔阳柴桑
+  offices: [州祭酒, 镇军参军, 建威参军, 彭泽令]
+  fields: [文学]
+  roles: [诗人, 散文家]
+  summary: 中古田园诗开山之宗，不为五斗米折腰而解绶归耕，以自然真淳之诗与躬耕之行成为后世士人精神的标高。
+
+timeline:
+  # ── 阶段一：家世与少年 ──────────────────────────────
+  - stage: 家世与少年
+    stage_order: 1
+    title: 生于浔阳柴桑没落仕族，曾祖为晋大司马陶侃
+    date:
+      text: "约365年"
+      year: 365
+      precision: 约
+    place: 浔阳柴桑
+    summary: 宋书称陶潜字渊明或云渊明字元亮、寻阳柴桑人、曾祖侃晋大司马；晋书则径作陶潜字元亮，并补祖茂武昌太守。出身东晋功臣之后而家道久衰。
+    confidence: 存疑
+    dispute: 一、名字两说：宋书「陶潜字渊明或云渊明字元亮」与晋书「陶潜字元亮」互异，名渊明抑名潜、字元亮抑字渊明至今聚讼；二、生年两史无载，约365年由卒年六十三倒推，另有372年生、享年七十六或五十二诸说。
+    source_ids: [src-songshu-vol93, src-jinshu-vol94]
+  - stage: 家世与少年
+    stage_order: 2
+    title: 少有高趣，著五柳先生传以自况
+    date:
+      text: 少年时期，具体年代不详
+      precision: 未知
+    place: 浔阳柴桑
+    summary: 宋书载潜少有高趣，尝著五柳先生传以自况——宅边五柳、不慕荣利、性嗜酒、箪瓢屡空晏如也，且谓其自序如此时人谓之实录；晋书录传文全篇。此传成为其一生自我写照。
+    source_ids: [src-songshu-vol93, src-jinshu-vol94]
+
+  # ── 阶段二：五度出仕 ──────────────────────────────
+  - stage: 五度出仕
+    stage_order: 3
+    title: 起为州祭酒，不堪吏职少日自解归
+    date:
+      text: 约393年前后
+      year: 393
+      precision: 约
+    place: 浔阳（江州治所一带）
+    summary: 亲老家贫，起为州祭酒，不堪吏职，少日自解归；州复召主簿不就。首次出仕即以去就自持。系年从学界通谱推定，两史未系年。
+    confidence: 存疑
+    dispute: 祭酒任职年份正史无载，约393年为通说推定。
+    source_ids: [src-songshu-vol93, src-jinshu-vol94]
+  - stage: 五度出仕
+    stage_order: 4
+    title: 躬耕自资，遂抱羸疾
+    date:
+      text: 祭酒去职后至再出仕前
+      year: 394
+      range_end: 403
+      precision: 范围
+    place: 浔阳柴桑
+    summary: 两史同载躬耕自资遂抱羸疾。弃官归田与再度出仕之间的长期耕居生活为其田园诗的生活根基。
+    source_ids: [src-songshu-vol93, src-jinshu-vol94]
+  - stage: 五度出仕
+    stage_order: 5
+    title: 复为镇军、建威参军
+    date:
+      text: 约403—405年之间
+      year: 403
+      range_end: 405
+      precision: 范围
+    place: 京口、建康一带（幕职驻地，地望系推定）
+    summary: 两史同载复为镇军、建威参军，谓亲朋曰聊欲弦歌以为三径之资可乎——出仕动机直书为归隐筹措资费。镇军将军刘裕、建威将军刘敬宣府中参谋军事。
+    confidence: 存疑
+    dispute: 入幕确切年份与驻地正史未详，系年系据刘裕、刘敬宣任职年代推定。
+    source_ids: [src-songshu-vol93, src-jinshu-vol94]
+  - stage: 五度出仕
+    stage_order: 6
+    title: 任彭泽令八十余日，不为五斗米折腰，解印赋归去来
+    date:
+      text: 约405年（义熙元年冬）
+      year: 405
+      precision: 约
+    place: 彭泽
+    summary: 执事者闻其弦歌之志以为彭泽令；公田悉欲种秫酿酒，妻固请乃一顷五十亩种秫五十亩种秔。郡遣督邮至，吏白应束带见之，叹曰我不能为五斗米折腰向乡里小人（晋书作拳拳事乡里小人邪），即日解印绶去职，赋归去来兮辞。辞序自述在官八十余日，此后终身不复出仕。
+    confidence: 存疑
+    dispute: 辞官事实两史互证确凿；惟系年有出入——晋书作义熙二年，通行说法为义熙元年（405）十一月辞官，归去来兮辞序自述仲秋至冬在官八十余日。
+    source_ids: [src-songshu-vol93, src-jinshu-vol94, src-taoji]
+
+  # ── 阶段三：归隐田园 ──────────────────────────────
+  - stage: 归隐田园
+    stage_order: 7
+    title: 义熙末征著作佐郎，不就
+    date:
+      text: 约418年前后（义熙末）
+      year: 418
+      precision: 约
+    place: 浔阳柴桑
+    summary: 宋书载义熙末征著作佐郎不就，晋书作顷之征著作郎不就。此后朝廷征命皆不应，绝州郡觐谒。义熙末具体年份无考。
+    confidence: 存疑
+    dispute: 征命事实两史同载；义熙末所指确年无考。
+    source_ids: [src-songshu-vol93, src-jinshu-vol94]
+  - stage: 归隐田园
+    stage_order: 8
+    title: 居所遭火，草屋焚毁
+    date:
+      text: "约408年（戊申岁六月中）"
+      year: 408
+      precision: 约
+    place: 上京里（柴桑故居）
+    summary: 其戊申岁六月中遇火诗自述草庐寄穷巷、一宅无遗火之灾——林室尽焚舫舟荫门前，举室迁居船中暂处。归耕生活的物质困境见于此类自述诗文。
+    source_ids: [src-taoji]
+  - stage: 归隐田园
+    stage_order: 9
+    title: 江州刺史王弘半道栗里要之
+    date:
+      text: 约420年前后
+      year: 420
+      precision: 约
+    place: 栗里、庐山道中
+    summary: 宋书载江州刺史王弘欲识之不能致也；潜尝往庐山，弘令其故人庞通之赍酒具于半道栗里要之，潜有脚疾使一门生二儿轝篮舆，既至欣然便共饮酌。九月九日出宅边菊丛坐久，值弘送酒至即便就酌醉而后归。晋书另载弘为之造履、令门生二儿共舁蓝舆至州诸细节，情节两书互有详略。
+    confidence: 存疑
+    dispute: 相识过程两书叙述互异（宋书系于王弘遣人候知其往庐山之后，晋书系于元熙中临州），交往事实可信而细节存疑；相访年份系推定。
+    source_ids: [src-songshu-vol93, src-jinshu-vol94]
+  - stage: 归隐田园
+    stage_order: 10
+    title: 与颜延之情款，留二万钱悉送酒家
+    date:
+      text: 约404—426年之间（前后两次交游）
+      year: 404
+      range_end: 426
+      precision: 范围
+    place: 浔阳
+    summary: 宋书载先是颜延之为刘柳后军功曹在寻阳与潜情款；后延之为始安郡经过，日日造潜每往必酣饮致醉，临去留二万钱与潜，潜悉送酒家稍就取酒。二人布衣之交为同时代史料中对其性情最直接的记录。
+    source_ids: [src-songshu-vol93]
+  - stage: 归隐田园
+    stage_order: 11
+    title: 无弦琴与葛巾漉酒的真率风神
+    date:
+      text: 归隐期间，具体年代不详
+      precision: 未知
+    place: 浔阳柴桑
+    summary: 宋书载潜不解音声而畜素琴一张无弦，每有酒适辄抚弄以寄其意；贵贱造之者有酒辄设，若先醉便语客我醉欲眠卿可去；郡将候潜值其酒熟，取头上葛巾漉酒毕还复著之。晋书补但识琴中趣何劳弦上声之语。
+    source_ids: [src-songshu-vol93, src-jinshu-vol94]
+  - stage: 归隐田园
+    stage_order: 12
+    title: 义熙以前书晋氏年号，永初以来唯云甲子
+    date:
+      text: 晋宋易代之际（约420年起）
+      year: 420
+      precision: 约
+    place: 浔阳柴桑
+    summary: 宋书特笔记其出处大节：自以曾祖晋世宰辅耻复屈身后代，自高祖王业渐隆不复肯仕；所著文章皆题其年月，义熙以前则书晋氏年号，自永初以来唯云甲子而已。此条为理解其不仕新朝心迹的最早史源。
+    source_ids: [src-songshu-vol93]
+
+  # ── 阶段四：卒与身后 ──────────────────────────────
+  - stage: 卒与身后
+    stage_order: 13
+    title: 檀道济馈粱肉麾而去之说
+    date:
+      text: 约元嘉三年（426年）前后
+      year: 426
+      precision: 约
+    place: 浔阳
+    summary: 通行传记载江州刺史檀道济往候之，偃卧瘠馁有日矣；道济馈以粱肉麾而去之。此事不见于宋书晋书本传。
+    confidence: 传说
+    dispute: 情节仅见萧统《陶渊明传》等后出文献，正史无载；是否信史学界长期存疑，本卷按传说层著录。
+  - stage: 卒与身后
+    stage_order: 14
+    title: 元嘉四年卒，时年六十三
+    date:
+      text: "427年（元嘉四年）"
+      year: 427
+      precision: 精确
+    place: 浔阳柴桑
+    summary: 宋书明载潜元嘉四年卒时年六十三，晋书作以宋元嘉中卒时年六十三。卒年两史相合，享年六十三由此成为推算生年的基点。
+    source_ids: [src-songshu-vol93, src-jinshu-vol94]
+  - stage: 卒与身后
+    stage_order: 15
+    title: 颜延之作诔，私谥靖节先生
+    date:
+      text: 卒后不久
+      year: 427
+      precision: 约
+    place: 浔阳
+    summary: 卒后友人颜延之念昔日情款作《陶徵士诔》，谥曰靖节徵士，诔文盛称其宽乐令终之美好廉克己之操。私谥靖节自此成为其千年定称。（诔文全文未登记来源，此处仅作事实转述。）
+    confidence: 存疑
+    dispute: 宋书仅记延之与潜情款及赠钱事；作诔私谥事见颜延之诔序本文与萧统诸传，本文件未登记诔文来源，故引文从略、置信降档。
+    source_ids: [src-songshu-vol93]
+
+works:
+  - work_id: yin-jiu-qi-wu
+    title: 饮酒二十首（其五）
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 约417年前后（退隐中期）
+      year: 417
+      precision: 约
+    place: 浔阳柴桑
+    context: 组诗自序谓既醉之后辄题数句自娱。结庐在人境一篇写心远地自偏的境界，采菊东篱下悠然见南山为千古隐逸意象之巅。
+    attribution: 确凿
+    excerpt: 结庐在人境，而无车马喧。问君何能尔？心远地自偏。采菊东篱下，悠然见南山。山气日夕佳，飞鸟相与还。此中有真意，欲辨已忘言。
+    text_display: full
+    themes: [隐逸, 自然, 酒]
+    influence: 采菊见南山一联奠定中国诗歌冲淡美学典范，苏轼以下和陶不绝。
+    confidence: 存疑
+    dispute: 组诗作年诸家系于义熙末至元嘉初之间，非有一年定论。
+    source_ids: [src-taoji]
+
+  - work_id: gui-yuan-tian-ju-yi
+    title: 归园田居五首（其一）
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 约406年（辞彭泽令归田次年）
+      year: 406
+      precision: 约
+    place: 浔阳柴桑
+    context: 解印去职后归耕之初的自道：误落尘网三十年而终得返自然，方宅草屋榆柳桃李的日常白描开田园诗体。
+    attribution: 确凿
+    excerpt: 少无适俗韵，性本爱丘山。误落尘网中，一去三十年。……暧暧远人村，依依墟里烟。狗吠深巷中，鸡鸣桑树颠。……久在樊笼里，复得返自然。
+    text_display: excerpt
+    themes: [田园, 归隐]
+    influence: 归隐主题的第一经典文本，久在樊笼里成为后世士人的共同心声。
+    confidence: 存疑
+    dispute: 作年从辞官次年通说，亦有系于归田数年间者。
+    source_ids: [src-taoji]
+
+  - work_id: gui-yuan-tian-ju-san
+    title: 归园田居五首（其三）
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 约406—407年之间
+      year: 406
+      range_end: 407
+      precision: 范围
+    place: 浔阳柴桑
+    context: 种豆南山下的躬耕实录，晨兴理荒秽带月荷锄归写尽农作辛苦而衣沾不足惜但使愿无违。
+    attribution: 确凿
+    excerpt: 种豆南山下，草盛豆苗稀。晨兴理荒秽，带月荷锄归。道狭草木长，夕露沾我衣。衣沾不足惜，但使愿无违。
+    text_display: full
+    themes: [躬耕, 志节]
+    influence: 中国诗歌史上第一次把体力劳动写得如此庄重而诗意。
+    source_ids: [src-taoji]
+
+  - work_id: gui-qu-lai-xi-ci
+    title: 归去来兮辞
+    alt_titles: [归去来辞]
+    genre: 辞赋
+    date:
+      text: 约405年（义熙元年冬，解印去职之际）
+      year: 405
+      precision: 约
+    place: 彭泽至浔阳柴桑
+    context: 辞官即日所作（宋书赋归去来）。序文交代家贫出仕、妹丧去职、在官八十余日本末；正文舟遥遥以轻飏至乐夫天命复奚疑，为弃官宣言亦是归隐哲学的总纲。宋书本传全文收录。
+    attribution: 确凿
+    excerpt: 归去来兮，田园将芜胡不归！……悟已往之不谏，知来者之可追。实迷途其未远，觉今是而昨非。……云无心以出岫，鸟倦飞而知还。……富贵非吾愿，帝乡不可期。聊乘化以归尽，乐夫天命复奚疑！
+    text_display: excerpt
+    themes: [归隐, 人生哲思]
+    influence: 与不为五斗米折腰共同构成中国文人精神独立的标志性文本，欧阳修叹晋无文章惟陶渊明归去来兮辞。
+    confidence: 存疑
+    dispute: 系年从义熙元年通说；晋书本传系辞官于义熙二年，相差一年。
+    source_ids: [src-songshu-vol93, src-jinshu-vol94, src-taoji]
+
+  - work_id: wu-liu-xian-sheng-zhuan
+    title: 五柳先生传
+    alt_titles: []
+    genre: 传记散文
+    date:
+      text: 少年时期所作（一说作于归隐后），具体年代不详
+      precision: 未知
+    place: 浔阳柴桑
+    context: 宋书载潜少有高趣尝著此传以自况，时人谓之实录。宅边五柳因以为号，好读书不求甚解，环堵萧然晏如也，忘怀得失以此自终。
+    attribution: 确凿
+    excerpt: 先生不知何许人也，不详姓字，宅边有五柳树，因以为号焉。……好读书，不求甚解，每有会意，欣然忘食。……环堵萧然，不蔽风日，短褐穿结，箪瓢屡空，晏如也。……忘怀得失，以此自终。
+    text_display: excerpt
+    themes: [自况, 安贫]
+    influence: 创虚拟人物自传一体，五柳先生成为其终身别号；白居易醉吟先生传等皆效其体。
+    confidence: 存疑
+    dispute: 宋书系于少年，亦有学者主张作于归隐以后，作年两说并存。
+    source_ids: [src-songshu-vol93, src-jinshu-vol94]
+
+  - work_id: tao-hua-yuan-ji
+    title: 桃花源记（并诗）
+    alt_titles: []
+    genre: 散文（记并诗）
+    date:
+      text: 约晋宋易代之际（约420年前后）
+      year: 420
+      precision: 约
+    place: 浔阳柴桑（虚构武陵桃源）
+    context: 以武陵渔人误入桃花林为引，写避秦时乱不知有汉无论魏晋的无君无税理想世界。乱世躬耕经验与老子小国寡民理想的结晶。
+    attribution: 确凿
+    excerpt: 晋太元中，武陵人捕鱼为业。缘溪行，忘路之远近。忽逢桃花林，夹岸数百步，中无杂树，芳草鲜美，落英缤纷。……自云先世避秦时乱，率妻子邑人来此绝境，不复出焉，遂与外人间隔。……不足为外人道也。
+    text_display: excerpt
+    themes: [理想国, 乱世寄托]
+    influence: 桃花源成为中国人对理想社会的通用隐喻，武陵桃源意象影响诗文绘画戏曲千余年。
+    confidence: 存疑
+    dispute: 作年有太元末、义熙、永初诸说，通说系于晋宋易代之际。
+    source_ids: [src-taoji]
+
+  - work_id: za-shi-yi
+    title: 杂诗十二首（其一）
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 约414年前后（通说系于五十岁左右）
+      year: 414
+      precision: 约
+    place: 浔阳柴桑
+    context: 盛年不重来一日难再晨及时当勉励岁月不待人——人生无根蒂飘如陌上尘的漂泊感与惜时之思。
+    attribution: 确凿
+    excerpt: 人生无根蒂，飘如陌上尘。分散逐风转，此已非常身。落地为兄弟，何必骨肉亲！……盛年不重来，一日难再晨。及时当勉励，岁月不待人。
+    text_display: excerpt
+    themes: [人生, 惜时]
+    influence: 及时当勉励成为汉语惜时的第一格言化诗句。
+    confidence: 存疑
+    dispute: 十二首非一时所作，各篇系年诸家出入较大。
+    source_ids: [src-taoji]
+
+  - work_id: du-shan-hai-jing-yi
+    title: 读山海经十三首（其一）
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 归隐后期，具体年代不详
+      precision: 未知
+    place: 浔阳柴桑
+    context: 孟夏草木长的耕读图景：众鸟欣有托吾亦爱吾庐，既耕亦已种时还读我书，泛览周王传流观山海图——隐居生活最恬美的自画像。
+    attribution: 确凿
+    excerpt: 孟夏草木长，绕屋树扶疏。众鸟欣有托，吾亦爱吾庐。既耕亦已种，时还读我书。……泛览《周王传》，流观《山海图》。俯仰终宇宙，不乐复何如。
+    text_display: excerpt
+    themes: [耕读, 夏景]
+    influence: 耕读传家理想的诗意源头。
+    source_ids: [src-taoji]
+
+  - work_id: yi-ju-er
+    title: 移居二首（其二）
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 约410—411年之间（移居南村后）
+      year: 410
+      range_end: 411
+      precision: 范围
+    place: 浔阳南村
+    context: 春秋多佳日登高赋新诗，过门更相呼有酒斟酌之——与素心人邻里的日常欢聚，衣食当须纪力耕不吾欺的务实耕读观。
+    attribution: 确凿
+    excerpt: 春秋多佳日，登高赋新诗。过门更相呼，有酒斟酌之。农务各自归，闲暇辄相思。相思则披衣，言笑无厌时。……衣食当须纪，力耕不吾欺。
+    text_display: full
+    themes: [邻里, 酒, 躬耕]
+    influence: 平淡中见真味的邻里书写，为田园社交题材立范。
+    confidence: 存疑
+    dispute: 移居南村年份诸谱系略有出入。
+    source_ids: [src-taoji]
+
+  - work_id: ni-wan-ge-ci-san
+    title: 拟挽歌辞三首（其三）
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 晚年自挽之作，具体年代不详
+      precision: 未知
+    place: 浔阳柴桑
+    context: 自拟死后送葬情境：亲戚或余悲他人亦已歌，死去何所道托体同山阿——以旷达直面死亡的终极书写。
+    attribution: 确凿
+    excerpt: 荒草何茫茫，白杨亦萧萧。严霜九月中，送我出远郊。……亲戚或余悲，他人亦已歌。死去何所道，托体同山阿。
+    text_display: excerpt
+    themes: [生死, 旷达]
+    influence: 中国文学中最从容的死亡书写之一。
+    source_ids: [src-taoji]
+
+footprints:
+  - name: 浔阳柴桑故里
+    modern_name: 江西省九江市濂溪区（原星子县境）一带
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 故里地望历来有柴桑、栗里、上京里诸考订，坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: 生于斯长于斯，一生主要居所
+      year: 365
+      range_end: 427
+      precision: 范围
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    source_ids: [src-songshu-vol93]
+  - name: 浔阳（江州州治）
+    modern_name: 江西省九江市城区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 州祭酒任期及晚年居所附近
+      year: 393
+      precision: 约
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-songshu-vol93, src-jinshu-vol94]
+  - name: 京口、建康（参军幕职驻地，推定）
+    modern_name: 江苏省镇江市、南京市
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 镇军将军刘裕府驻京口、建威府驻地系据晋末方镇格局推定，坐标待接入体系
+    visit_date:
+      text: 约403—405年之间入镇军、建威参军幕
+      year: 403
+      range_end: 405
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 两史仅记幕职名称未记驻地，随府行止无法确指，此处按推定路线处理。
+    source_ids: [src-songshu-vol93]
+  - name: 彭泽
+    modern_name: 江西省彭泽县一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约405年任县令，在官八十余日
+      year: 405
+      precision: 约
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-songshu-vol93, src-jinshu-vol94, src-taoji]
+  - name: 栗里
+    modern_name: 江西省九江市庐山市（原星子县）温泉镇栗里一带
+    lng: null
+    lat: null
+    coord_precision: 乡镇级
+    coord_source: 栗里地望系历代地方志考订，坐标待接入体系
+    visit_date:
+      text: 约420年前后王弘遣人半道要之处
+      year: 420
+      precision: 约
+    kind: 游历
+    route_order: 5
+    memorial_only: false
+    confidence: 存疑
+    dispute: 宋书明载半道栗里要之地名为早期可靠记录；今栗里地望与纪念遗迹系后人考订附会成分须区分。
+    source_ids: [src-songshu-vol93]
+  - name: 庐山
+    modern_name: 江西省九江市庐山
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 归隐期间常游之地
+      year: 405
+      range_end: 427
+      precision: 范围
+    kind: 游历
+    route_order: 6
+    memorial_only: false
+    confidence: 存疑
+    dispute: 宋书仅载潜尝往庐山及王弘半道要之事；后世莲社高贤传等称其结庐人境与慧远白莲社往还说，正史无载，本卷不从。
+    source_ids: [src-songshu-vol93, src-jinshu-vol94]
+  - name: 陶靖节祠与陶墓（纪念地）
+    modern_name: 江西省九江市陶渊明纪念馆、靖节祠遗址
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 纪念建筑坐标待接入体系；不作确证到访处理
+    visit_date:
+      text: 不详
+      precision: 未知
+    kind: 纪念地
+    route_order: 7
+    memorial_only: true
+    source_ids: [src-songshu-vol93]
+
+relations:
+  - relation_type: 思想影响
+    target_id: menghaoran
+    direction: 单向
+    period:
+      text: 孟浩然承陶诗田园隐逸一路（文学史归纳，非直接交往）
+      precision: 未知
+    evidence: 孟浩然一生布衣隐襄阳、以田园白描立范，其隐逸人格与平淡诗风为唐代接受陶渊明的起点；王孟田园诗派整体承陶。属文学史归纳而非史料可证的直接授受。
+    inferred: true
+    confidence: 确定
+    source_ids: []
+  - relation_type: 思想影响
+    target_id: wangwei
+    direction: 单向
+    period:
+      text: 王维辋川隐居时期的田园写作承陶（文学史归纳，非直接交往）
+      precision: 未知
+    evidence: 王维后期辋川绝句以冲淡自然写田家与山居，苏轼谓其诗中有画，与陶诗自然观一脉相通；唐人以王孟接武陶公为通识。属文学史归纳而非史料可证的直接授受。
+    inferred: true
+    confidence: 确定
+    source_ids: []
+
+reception:
+  - era: 同时代
+    evaluator: 颜延之
+    quote: ""
+    text_display: none
+    comment: 宋书载延之为刘柳后军功曹在寻阳即与潜情款，后赴始安郡道经日日造潜酣饮致醉，临去留二万钱而潜悉送酒家——布衣之交所见性情。潜卒后延之作陶徵士诔并私谥靖节（诔文原文未登记来源，不作引文）。
+    source_ids: [src-songshu-vol93]
+  - era: 历代批评
+    evaluator: 苏轼
+    quote: 欲以晚节师范其万一也。
+    text_display: excerpt
+    comment: 苏轼贬谪中遍和陶诗百余首，自谓深愧渊明欲以晚节师范其万一，并将陶诗推为质而实绮癯而实腴的极境；萧统编陶渊明集作序谓其文章不群词采精拔。此为陶集经典化的两大节点。（和陶诗、萧统序均为公版，来源条目待另行登记后补 source_ids。）
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究集中于名字归属与生年诸说考辨、晋宋易代之际的政治态度（甲子书例与忠愤说之辨）、以及其自然观与真淳诗风的哲学阐释；具体论著引文须逐条取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 桃花源记饮酒其五归园田居长期入选中小学语文教材；不为五斗米折腰成为汉语中人格尊严的成语级典故，桃花源成为理想社会的通用隐喻。教材篇目随学期变动，录入时须另行核验当期篇目。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传媒与网络文化
+    quote: ""
+    text_display: none
+    comment: 世外桃源、归隐田园等意象在影视剧、游戏与文旅命名中被高频借用；网络语境下其形象多为躺平与精神家园讨论的文化资源，评价分化明显，本卷仅作现象著录不作价值判断。
+    source_ids: []
+
+sources_used: [src-songshu-vol93, src-jinshu-vol94, src-taoji]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。15条年谱、11件作品、7处足迹、2组关系、5层接受史；宋书卷93与晋书卷094均已实取维基文库原文，名字两说、生年异说、辞官系年、檀道济传说、莲社说全部落dispute}

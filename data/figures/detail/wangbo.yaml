@@ -1,0 +1,539 @@
+# 王勃全景详卷（schema v1）
+# 史料审计表（TASK 批次；来源见 data/sources.yaml，三条均预登记待核验）：
+#
+# | 事实点 | 旧唐书·卷190上文苑上(J) | 新唐书·卷201文艺上(X) | 结论与置信 |
+# |---|---|---|---|
+# | 籍贯 | 字子安，绛州龙门人；祖通著《元经》《中说》谥文中子 | 字子安，绛州龙门人 | 确定 |
+# | 早慧 | 六岁解属文，词情英迈，与兄勔勮并称「三珠树」（父友杜易简语） | 六岁善文辞；九岁得颜师古注《汉书》读之作《指瑕》以擿其失 | 确定；指瑕事独详于X |
+# | 出仕 | 年未及冠应幽素举及第；乾封初上《宸游东岳颂》《乾元殿颂》 | 麟德初刘祥道巡行关内，上书自陈，对策高第；年未及冠授朝散郎数献颂阙下 | 确定；入仕路径两书侧重不同（J应举/X对策），系年存讨论 |
+# | 入沛府 | 沛王贤闻其名召为沛府修撰甚爱重之 | 沛王闻其名召署府修撰论次《平台秘略》书成王爱重之 | 确定 |
+# | 斗鸡檄文 | 戏为《檄英王鸡文》，高宗怒曰「据此是交构之渐」即日斥勃不令入府 | 勃戏为文檄英王鸡，高宗怒曰「是且交构」斥出府 | 确定（措辞小异） |
+# | 蜀中 | 无此段 | 既废客剑南，尝登葛愦山旷望，慨然思诸葛亮之功赋诗见情 | 确定(X) |
+# | 补虢州 | 久之补虢州参军 | 闻虢州多药草求补参军；倚才陵藉为僚吏共嫉 | 确定 |
+# | 杀官奴 | 官奴曹达犯罪匿之又惧事泄乃杀达以塞口；事发当诛会赦除名 | 官奴曹达抵罪匿勃所惧事泄辄杀之；会赦除名 | 确定；杀人动机两书皆记「惧事泄」，后世翻案讨论不断 |
+# | 父贬 | 时勃父福畤为雍州司户参军坐勃左迁交趾令 | 父福畤繇雍州司功参军坐勃故左迁交址令 | 确定（司户/司功一字之差） |
+# | 省父 | 上元二年往交趾省父道出江中为《采莲赋》以见意 | （无系年明文） | 确定(J) |
+# | 滕王阁序 | 无载 | 初道出钟陵九月九日都督大宴滕王阁宿命其婿作序……至勃沆然不辞……「天才也！」 | 确定(X)；作序年份从上元二年重阳通说，另有异说 |
+# | 卒地卒年 | 渡南海堕水而卒时年二十八 | 勃往省度海溺水痵而卒年二十九 | 两史矛盾：年二十八(J)/二十九(X)，痵悸细节X独有 |
+# | 身后评价 | 裴行俭「士之致遠先器識而後文藝。勃等雖有文才而浮躁淺露豈享爵祿之器耶！」 | 崔融张说评四杰文；腹稿典故 | 确定 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: wangbo
+
+profile:
+  courtesy_name: 子安
+  art_name: ""
+  aliases: [王子安, 王三珠]
+  gender: 男
+  ethnicity: ""
+  ancestry: 绛州龙门（今山西河津），祖王通即隋末大儒文中子
+  birthplace: 绛州龙门
+  death_place: 南海渡海途中（溺亡后惊悸而卒，确切地点无考）
+  offices: [朝散郎, 沛王府修撰, 虢州参军]
+  fields: [文学]
+  roles: [诗人, 散文家]
+  summary: 初唐四杰之首，六岁能文的天才早逝典型；一篇滕王阁序奠定骈文千古地位，斗鸡檄文与擅杀官奴两度断送前程，渡海省父而没年仅二十余。
+
+timeline:
+  # ── 阶段一：绛州天才少年 ──────────────────────────────
+  - stage: 绛州天才少年
+    stage_order: 1
+    title: 出生于绛州龙门书香世家
+    date:
+      text: "约650年"
+      year: 650
+      precision: 约
+    place: 绛州龙门
+    summary: 出身儒学世家，祖王通隋末讲学白牛溪著《元经》《中说》，门人私谥文中子；叔辈福郊福畤皆有名。生年约650系由卒年倒推。
+    confidence: 存疑
+    dispute: 两唐书均无生年明文，约650年由卒年与享年倒推；因卒年两书互异（详见卒条），生年在649—651间浮动，学界尚有他说。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - stage: 绛州天才少年
+    stage_order: 2
+    title: 六岁善文辞，兄第三人称三珠树
+    date:
+      text: "约655年前后"
+      year: 655
+      precision: 约
+    place: 绛州龙门
+    summary: 旧唐书称六岁解属文构思无滞词情英迈，与兄勔勮才藻相类，父友杜易简常称曰此王氏三珠树也。
+    source_ids: [src-jts-vol190a]
+  - stage: 绛州天才少年
+    stage_order: 3
+    title: 九岁作《汉书注指瑕》
+    date:
+      text: "约658年前后"
+      year: 658
+      precision: 约
+    place: 绛州龙门
+    summary: 新唐书载九岁得颜师古注《汉书》读之，作《指瑕》以擿其失，指摘一代经师注本的疏漏，惊动乡邦。
+    source_ids: [src-xts-vol201]
+  - stage: 绛州天才少年
+    stage_order: 4
+    title: 麟德初上书自陈，对策高第
+    date:
+      text: "约664年（麟德初）"
+      year: 664
+      precision: 约
+    place: 关内
+    summary: 新唐书载刘祥道巡行关内，勃上书自陈，祥道表于朝，对策高第。旧唐书则记其年未及冠应幽素举及第，乾封初又诣阙上《宸游东岳颂》《乾元殿颂》。两书所记入仕路径侧重不同。
+    confidence: 存疑
+    dispute: 入仕途径两唐书互异——新唐书作麟德初刘祥道荐引对策，旧唐书作应幽素举及第后再献颂；两者或先后相承，确切年份无定论。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - stage: 绛州天才少年
+    stage_order: 5
+    title: 年未及冠授朝散郎
+    date:
+      text: "约664—665年之间"
+      year: 664
+      range_end: 665
+      precision: 范围
+    place: 长安
+    summary: 新唐书载对策高第后年未及冠授朝散郎（从七上文散官），数献颂阙下。未冠而官已及七品，一时称荣。
+    source_ids: [src-xts-vol201]
+
+  # ── 阶段二：沛王府与斗鸡之祸 ──────────────────────────
+  - stage: 沛王府与斗鸡之祸
+    stage_order: 6
+    title: 沛王李贤召署府修撰
+    date:
+      text: "约666—669年之间"
+      year: 666
+      range_end: 669
+      precision: 范围
+    place: 长安沛王府
+    summary: 沛王贤闻其名召为沛府修撰，甚爱重之；命论次《平台秘略》，书成王益爱重。入王府是勃一生最接近权力中枢的时期。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - stage: 沛王府与斗鸡之祸
+    stage_order: 7
+    title: 戏为《檄英王鸡文》，高宗震怒逐出王府
+    date:
+      text: "约669年"
+      year: 669
+      precision: 约
+    place: 长安
+    summary: 时诸王斗鸡互有胜负，勃戏为《檄英王鸡文》。高宗览之大怒曰二王不相和自此始，是交构之渐，即日斥勃不令入府。一篇游戏文字断送王府前程。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - stage: 沛王府与斗鸡之祸
+    stage_order: 8
+    title: 废斥后客居剑南，登葛愦山赋诗
+    date:
+      text: "约669—671年之间"
+      year: 669
+      range_end: 671
+      precision: 范围
+    place: 剑南（蜀中）
+    summary: 新唐书载勃既废客剑南，尝登葛愦山旷望，慨然思诸葛亮之功，赋诗见情。蜀中漫游期作品多写羁旅漂泊之感。
+    confidence: 存疑
+    dispute: 蜀中之行起讫年份正史无明文，系学界据诗文与行程推定；葛愦山地望亦有待考。
+    source_ids: [src-xts-vol201]
+
+  # ── 阶段三：虢州祸变 ──────────────────────────────
+  - stage: 虢州祸变
+    stage_order: 9
+    title: 求补虢州参军
+    date:
+      text: "约671—672年之间"
+      year: 671
+      range_end: 672
+      precision: 范围
+    place: 虢州
+    summary: 新唐书载其闻虢州多药草求补参军（自请就任以便采药），旧唐书作久之补虢州参军。倚才陵藉，为同僚所嫉。
+    confidence: 存疑
+    dispute: 补虢州年份正史无载，通说系于咸亨年间，具体年次诸谱不一。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - stage: 虢州祸变
+    stage_order: 10
+    title: 匿杀官奴曹达，当诛遇赦除名
+    date:
+      text: "约673—674年之间"
+      year: 673
+      range_end: 674
+      precision: 范围
+    place: 虢州
+    summary: 官奴曹达犯罪匿于勃所，惧事泄乃杀之以塞口。事发当死刑，适逢大赦改判除名。此案性质至今聚讼：或谓恃才傲物遭同僚设局构陷，或谓藏匿罪奴自知败露灭口。
+    confidence: 有争议
+    dispute: 杀奴动机两唐书仅记惧事泄四字；新旧《唐书》成书相距三百余年而情节一致，然唐代律令背景下匿奴杀奴的定罪逻辑、是否遭构陷，自宋以来争论不休。系年亦系推定。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - stage: 虢州祸变
+    stage_order: 11
+    title: 父福畤连坐左迁交趾令
+    date:
+      text: "约674年前后"
+      year: 674
+      precision: 约
+    place: 交趾
+    summary: 父福畤由雍州司户参军（新唐书作司功参军）因勃案连坐，远谪岭南道交趾令。王勃此后每以此深自咎责，遂有万里省父之行。
+    confidence: 存疑
+    dispute: 连坐贬谪年份随勃案系年推定；官职名两书一字之差（司户/司功）。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+
+  # ── 阶段四：南下省父与绝笔 ────────────────────────────
+  - stage: 南下省父与绝笔
+    stage_order: 12
+    title: 上元二年启程往交趾省父，道出江中赋《采莲赋》
+    date:
+      text: "675年（上元二年）"
+      year: 675
+      precision: 精确
+    place: 长江中下游
+    summary: 旧唐书明载上元二年勃往交趾省父，道出江中为《采莲赋》以见意，其辞甚美。取道水路南下，经江南入岭外。
+    source_ids: [src-jts-vol190a]
+  - stage: 南下省父与绝笔
+    stage_order: 13
+    title: 重阳洪州滕王阁宴，即席成序
+    date:
+      text: "675年九月九日（通说）"
+      year: 675
+      precision: 约
+    place: 洪州滕王阁
+    summary: 新唐书载道出钟陵，九月九日都督大宴滕王阁，宿命其婿作序夸客，纸笔遍请莫敢当，至勃沆然不辞。都督怒起更衣遣吏伺其文辄报，一再报语益奇，乃矍然曰天才也，极欢而罢。《滕王阁序》与诗即成于此宴。
+    confidence: 存疑
+    dispute: 作序年份主流定为上元二年(675)重阳赴交趾途中所作，另有十四岁少年作、上元三年返程作等异说；都督阎公之名两唐书未载，宴席细节出自新唐书叙事传统。
+    source_ids: [src-xts-vol201]
+  - stage: 南下省父与绝笔
+    stage_order: 14
+    title: 渡海溺水，惊悸而卒
+    date:
+      text: "约676年（上元三年）"
+      year: 676
+      precision: 约
+    place: 南海（渡琼州海峡一带）
+    summary: 往交趾途中渡南海，堕水惊悸而死（新唐书作痵而卒）。旧唐书称时年二十八，新唐书称年二十九。一代奇才未满三十而没，文集三十卷后多散佚。
+    confidence: 存疑
+    dispute: 卒年两唐书直接矛盾——旧唐书作年二十八，新唐书作年二十九；本卷从L1通说约676年（上元三年八月渡海说为主流），享年相应为27或26周岁（虚岁28/29）。溺水地点史无确载，渡南海所指海域亦有琼州海峡与南海近岸诸理解。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+
+works:
+  - work_id: song-du-shaofu-zhi-renshuzhou
+    title: 送杜少府之任蜀州
+    alt_titles: [送杜少府之任蜀川]
+    genre: 五言律诗
+    date:
+      text: 创作年代不详，一般系于长安供职前后
+      precision: 未知
+    place: 长安（一说）
+    context: 送友人赴蜀上任之作。海内存知己天涯若比邻将离别写得开阔昂扬，一洗送别诗悲酸态。
+    attribution: 确凿
+    excerpt: 城阙辅三秦，风烟望五津。与君离别意，同是宦游人。海内存知己，天涯若比邻。无为在歧路，儿女共沾巾。
+    text_display: full
+    themes: [送别, 友情]
+    influence: 海内存知己成为友情超越空间的千古格言，五律定型期的典范之作。
+    source_ids: [src-qts-wangbo]
+
+  - work_id: tengwangge-xu
+    title: 滕王阁序
+    alt_titles: [秋日登洪府滕王阁饯别序]
+    genre: 骈文
+    date:
+      text: "675年重阳（通说）"
+      year: 675
+      precision: 约
+    place: 洪州滕王阁
+    context: 新唐书载都督大宴滕王阁宿命婿作序夸客，勃沆然不辞援笔立就，都督叹曰天才也。即席挥毫而成千古第一骈文。
+    attribution: 确凿
+    excerpt: 时维九月，序属三秋。潦水尽而寒潭清，烟光凝而暮山紫。……落霞与孤鹜齐飞，秋水共长天一色。……关山难越，谁悲失路之人；萍水相逢，尽是他乡之客。老当益壮，宁移白首之心；穷且益坚，不坠青云之志。
+    text_display: excerpt
+    themes: [宴集, 怀才不遇, 山川]
+    influence: 中国骈文的巅峰文本，落霞秋水一联为妇孺皆知的名句；滕王阁因此序位列江南三大名楼之首。
+    confidence: 存疑
+    dispute: 作序时间地点从上元二年洪州宴通说，另有异说；序末附诗与否及文字异读历代版本讨论不绝。
+    source_ids: [src-xts-vol201]
+
+  - work_id: tengwangge-shi
+    title: 滕王阁诗
+    alt_titles: []
+    genre: 七言古诗
+    date:
+      text: "675年重阳，与序同时所作"
+      year: 675
+      precision: 约
+    place: 洪州滕王阁
+    context: 附于序末的收束之作，阁中帝子今何在槛外长江空自流，将盛衰之慨推向无穷时空。
+    attribution: 确凿
+    excerpt: 滕王高阁临江渚，佩玉鸣鸾罢歌舞。画栋朝飞南浦云，珠帘暮卷西山雨。闲云潭影日悠悠，物换星移几度秋。阁中帝子今何在？槛外长江空自流。
+    text_display: full
+    themes: [怀古, 盛衰]
+    influence: 与序珠联璧合，槛外长江空自流为怀古绝唱。
+    confidence: 存疑
+    dispute: 与序同场所作从通说，系年争议同序。
+    source_ids: [src-xts-vol201]
+
+  - work_id: shan-zhong
+    title: 山中
+    alt_titles: []
+    genre: 五言绝句
+    date:
+      text: "约670年前后，客居巴蜀时期"
+      year: 670
+      precision: 约
+    place: 蜀中
+    context: 被斥出府后漫游剑南，久客思归之作。长江悲已滞以滞字写江亦写己，二十字而苍凉无限。
+    attribution: 确凿
+    excerpt: 长江悲已滞，万里念将归。况属高风晚，山山黄叶飞。
+    text_display: full
+    themes: [羁旅, 思归, 秋]
+    influence: 五绝中以景结情的早期名篇。
+    confidence: 存疑
+    dispute: 系年据蜀中漫游行迹推定。
+    source_ids: [src-qts-wangbo, src-xts-vol201]
+
+  - work_id: bie-xue-hua
+    title: 别薛华
+    alt_titles: [别薛升华]
+    genre: 五言律诗
+    date:
+      text: "约670年前后，客蜀期间"
+      year: 670
+      precision: 约
+    place: 蜀中
+    context: 送别同游友人薛华之作，心事同漂泊生涯共苦辛，把两人命运打成一片，凄苦沉痛与其送杜少府之昂扬恰成两极。
+    attribution: 确凿
+    excerpt: 送送多穷路，遑遑独问津。悲凉千里道，况复百年身。心事同漂泊，生涯共苦辛。无论去与住，俱是梦中人。
+    text_display: full
+    themes: [送别, 漂泊]
+    influence: 展现四杰诗风中沉郁一面的代表作。
+    confidence: 存疑
+    dispute: 薛华其人与作地均难确考，系年从蜀中通说。
+    source_ids: [src-qts-wangbo]
+
+  - work_id: yong-feng
+    title: 咏风
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 咏物寄怀，去来固无迹动息如有情，写风之有情以自见怀抱，日落山水静为君起松声尤见胸襟。
+    attribution: 确凿
+    excerpt: 肃肃凉景生，加我林壑清。驱烟寻涧户，卷雾出山楹。……去来固无迹，动息如有情。日落山水静，为君起松声。
+    text_display: excerpt
+    themes: [咏物, 抒怀]
+    influence: 唐人咏物诗中托物言志的成熟样本。
+    source_ids: [src-qts-wangbo]
+
+  - work_id: cai-lian-fu
+    title: 采莲赋
+    alt_titles: []
+    genre: 骚体赋
+    date:
+      text: "675年南下省父途中"
+      year: 675
+      precision: 精确
+    place: 长江中下游
+    context: 旧唐书明载上元二年往交趾省父道出江中为《采莲赋》以见意其辞甚美，借采莲芳洁寄托迁谪之思。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [咏物, 寄慨]
+    influence: 正史明确系年的赋作，是其绝命之行的文学见证。
+    source_ids: [src-jts-vol190a]
+  - work_id: zhixia
+    title: 汉书注指瑕
+    alt_titles: [指瑕]
+    genre: 史学批评
+    date:
+      text: "约658年，九岁时"
+      year: 658
+      precision: 约
+    place: 绛州龙门
+    context: 九岁读颜师古《汉书注》而作，摘指其失，原书已佚，事具新唐书本传。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [史学, 早慧]
+    influence: 少年批判精神的传奇见证，惜全书亡佚无从覆按。
+    source_ids: [src-xts-vol201]
+
+  - work_id: pingtai-milue
+    title: 平台秘略
+    alt_titles: []
+    genre: 类书撰述
+    date:
+      text: "约666—669年之间，沛王府修撰任内"
+      year: 666
+      range_end: 669
+      precision: 范围
+    place: 长安沛王府
+    context: 沛王李贤命其论次编撰，书成王爱重之；为王府文献编纂之作。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [编纂]
+    influence: 其宫廷文学侍从身份的直接产物，原书亡佚。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+
+footprints:
+  - name: 绛州龙门
+    modern_name: 山西省河津市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约650年出生并度过少年时代"
+      year: 650
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约664年起对策授官、献颂、入沛王府至被斥出府"
+      year: 664
+      range_end: 669
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - name: 剑南蜀中（葛愦山等地）
+    modern_name: 四川省境内（葛愦山地望待考）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 蜀中漫游路线系据诗文与地理常识推定，坐标暂缺
+    visit_date:
+      text: "约669—671年之间"
+      year: 669
+      range_end: 671
+      precision: 范围
+    kind: 游历
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 客剑南为新唐书明文，具体路线与葛愦山地望系推定。
+    source_ids: [src-xts-vol201]
+
+  - name: 虢州
+    modern_name: 河南省灵宝市一带（唐虢州）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约671—674年之间任参军并罹祸"
+      year: 671
+      range_end: 674
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    confidence: 存疑
+    dispute: 任期与祸变年份均系推定。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - name: 洪州钟陵滕王阁
+    modern_name: 江西省南昌市滕王阁
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "675年九月九日途经赴宴作序"
+      year: 675
+      precision: 约
+    kind: 游历
+    route_order: 5
+    memorial_only: false
+    confidence: 存疑
+    dispute: 作序年份从上元二年重阳通说，另有异说。
+    source_ids: [src-xts-vol201]
+  - name: 南海渡海处
+    modern_name: 广东雷州半岛至海南岛一带海域（具体无确考）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 渡南海所指海域系据广州至交趾航线常识推定，坐标暂缺
+    visit_date:
+      text: "约676年渡海溺水而卒"
+      year: 676
+      precision: 约
+    kind: 逝世
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 堕水地点史无确载，渡南海的具体水域与卒年（二十八/二十九岁之异）均存两说。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - name: 交趾
+    modern_name: 越南北部（唐安南都护府交趾郡境）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 省父目的地系据父福畤贬所记载推定，本人是否抵达无实证，坐标暂缺
+    visit_date:
+      text: "约675—676年省父目的地"
+      year: 675
+      range_end: 676
+      precision: 范围
+    kind: 游历
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 交趾为其父贬所与省父目的地（两唐书明文），但王勃本人是否生前抵达，史料无载，此处仅按目的地著录不作到访确证。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+
+reception:
+  - era: 同时代
+    evaluator: 唐高宗（对《檄英王鸡文》）
+    quote: 据此是交构之渐。
+    text_display: excerpt
+    comment: 旧唐书所载高宗阅檄震怒之语（新唐书作是且交构），帝王视角认定此文挑拨诸王关系，遂即日斥出沛王府，成为改变其一生的转折点。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - era: 同时代
+    evaluator: 裴行俭
+    quote: 士之致远，先器识而后文艺。勃等虽有文才，而浮躁浅露，岂享爵禄之器耶！
+    text_display: excerpt
+    comment: 旧唐书所载人伦鉴识名家对四杰的总评，器识先于文艺自此成为千年人才论的著名命题；其对王勃命运的预言性亦使此语流传极广。
+    source_ids: [src-jts-vol190a]
+  - era: 历代批评
+    evaluator: 张说、崔融（评四杰文，见新唐书附传）
+    quote: 勃文章宏放，非常人所及。
+    text_display: excerpt
+    comment: 新唐书骆宾王附传所载崔融语（旧唐书杨炯附传文字略异），开元名相对四杰文章地位的正式追认。
+    source_ids: [src-xts-vol201, src-jts-vol190a]
+  - era: 历代批评
+    evaluator: 杜甫
+    quote: 王杨卢骆当时体，轻薄为文哂未休。尔曹身与名俱灭，不废江河万古流。
+    text_display: excerpt
+    comment: 戏为六绝句之一，为四杰辩护并断言其如江河万古长流。公版诗句，出处登记待补故来源留空（预期产生可追溯性警告）。
+    confidence: 存疑
+    dispute: 本条引文为公版唐诗原文，但对应来源 id 尚未在本项目登记，source_ids 暂留空。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦生卒年与享年推算（二十八/二十九岁之争）、滕王阁序作年与真伪讨论、杀官奴案的律令背景重审、及其在五言律诗定型中的贡献等议题；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 滕王阁序送杜少府之任蜀州长期入选中小学语文教材，落霞与孤鹜齐飞海内存知己成为国民级名句；滕王阁因序而列江南三大名楼。教材篇目随学期变动，录入时须另行核验。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播
+    quote: ""
+    text_display: none
+    comment: 天才早逝与滕王阁一夜成名的戏剧性人生使其成为大众文化常见题材，相关影视改编暂不著录具体作品以免权利状态不明。
+    source_ids: []
+
+sources_used: [src-jts-vol190a, src-xts-vol201, src-qts-wangbo]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: "初版。14条年谱、9件作品（含3件无展示文本的撰述）、7处足迹、0组关系（四杰其余三人不在库，无可考直接交往对象故省略）、5层接受史；卒年两唐书矛盾（28/29）、杀官奴案定性、滕王阁序作年均落dispute"}

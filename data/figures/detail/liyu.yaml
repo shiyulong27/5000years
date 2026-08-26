@@ -1,0 +1,498 @@
+# 李煜全景详卷（schema v1）
+# 史料审计表（实取核验 2026-08-25；来源登记见 data/sources.yaml src-xwushi-liyu）：
+#
+# 实取 URL：https://zh.wikisource.org/wiki/%E6%96%B0%E4%BA%94%E4%BB%A3%E5%8F%B2/%E5%8D%B762
+# 卷次：《新五代史》卷六十二·南唐世家第二（李昪〈子景　景子煜〉），煜传附于此卷，非独立专传。
+#
+# | 事实点 | 新五代史卷62(X) | 结论与置信 |
+# |---|---|---|
+# | 名字形貌 | 字重光初名從嘉景第六子；仁孝善屬文工書畫豐額駢齒一目重瞳子 | 确定(X)；重瞳属形貌记录，不作祥瑞解读 |
+# | 封王储 | 太子冀卒次子從嘉封吳王居東宮；鍾謨請立從善被貶仍立從嘉為太子 | 确定(X)，约显德六年(959) |
+# | 即位 | 建隆二年景遷南都立煜為太子留監國；景卒煜嗣立於金陵 | 确定(X)，961 |
+# | 臣宋去号 | 五年煜下令貶損制度（改中書門下為左右內史府等） | 确定(X)止书贬损制度；去唐国号称江南国主详宋史层，分层标注 |
+# | 潘佑之死 | 六年內史舍人潘佑上書極諫煜收下獄佑自縊死 | 确定(X)止书潘佑；李平连坐出南唐书与笔记层，标争议 |
+# | 伐唐 | 七年詔煜赴闕稱疾不行王師南征 | 确定(X)；曹彬为主帅之名详宋史层 |
+# | 亡国 | 八年十二月王師克金陵；九年煜俘至京師赦之封違命侯拜左千牛衞將軍 | 确定(X) |
+# | 之死 | 其後事具國史——本卷无卒年明文 | 卒年978年四十二据宋史层；牵机药说出笔记传说层，分层标注 |
+# | 家世 | 昪徐州人自言唐憲宗子建王恪之後乃自以為四世孫 | 欧阳修连用「自言」「自以为」示未采信；存疑 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；词作用公版《南唐二主词》通行文本，无现代注释译文。
+schema_version: 1
+id: liyu
+
+profile:
+  courtesy_name: 重光
+  art_name: 钟隐、莲峰居士
+  aliases: [李后主, 违命侯]
+  gender: 男
+  ethnicity: ""
+  ancestry: 徐州（祖父李昪自称唐宪宗之子建王恪的四世孙，欧阳修书「自言」「自以为」示存疑）
+  birthplace: 金陵
+  death_place: 汴梁（东京开封府）
+  offices: [南唐国主, 违命侯（宋爵）, 左千牛卫将军]
+  fields: [文学]
+  roles: [词人, 画家, 音乐家]
+  summary: 南唐末代国主，工书画音律诗文而不恤政事；亡国之后以血泪写词，遂变伶工之词为士大夫之词，后世尊为词中之帝。
+
+timeline:
+  # ── 阶段一：王子岁月 ──────────────────────────────
+  - stage: 王子岁月
+    stage_order: 1
+    title: 出生金陵
+    date:
+      text: "937年"
+      year: 937
+      precision: 精确
+    place: 金陵
+    summary: 初名从嘉，字重光，元宗李璟第六子。为人仁孝，善属文，工书画，丰额骈齿，一目重瞳。一目重瞳系正史形貌记录，后世附会舜与项羽，本卷不作信史外的引申。
+    confidence: 存疑
+    dispute: 新五代史记其形貌而不载生年；937年生与七夕诞辰均系后世据卒年四十二倒推并采笔记层材料。
+    source_ids: [src-xwushi-liyu]
+  - stage: 王子岁月
+    stage_order: 2
+    title: 兄辈凋零，以次封吴王居东宫
+    date:
+      text: 约959年
+      year: 959
+      precision: 约
+    place: 金陵
+    summary: 太子冀卒后，冀以上五子皆早亡，从嘉以次封吴王。钟谟言从嘉轻肆请立纪国公从善，璟怒贬谟国子司业，仍立从嘉为太子。
+    confidence: 存疑
+    dispute: 封吴王在太子冀卒后，冀卒于显德六年九月，故系年约959。
+    source_ids: [src-xwushi-liyu]
+  - stage: 王子岁月
+    stage_order: 3
+    title: 立为太子，留监国
+    date:
+      text: "961年"
+      year: 961
+      precision: 精确
+    place: 金陵
+    summary: 建隆二年璟迁都洪州升为南昌建南都，留太子从嘉监国。同年六月璟卒于南都，年六十四，从嘉以丧归金陵嗣位。
+    source_ids: [src-xwushi-liyu]
+
+  # ── 阶段二：在位金陵 ──────────────────────────────
+  - stage: 在位金陵
+    stage_order: 4
+    title: 嗣立于金陵，遣使修贡
+    date:
+      text: "961年"
+      year: 961
+      precision: 精确
+    place: 金陵
+    summary: 煜嗣立，尊母钟氏为圣尊后，立妃周氏为国后，封弟从善韩王等，大赦境内。遣中书侍郎冯延鲁修贡于宋廷，令诸司四品以下无职事者日二员待制内殿。
+    source_ids: [src-xwushi-liyu]
+  - stage: 在位金陵
+    stage_order: 5
+    title: 光政殿宿直谈论，韩熙载相业不成
+    date:
+      text: 约967年
+      year: 967
+      precision: 约
+    place: 金陵
+    summary: 乾德五年命两省侍郎诸学士分夕于光政殿宿直，煜引与谈论。尝以韩熙载尽忠能直言欲用为相，以熙载后房妓妾数十分司南都试之，终叹吾终不得熙载为相也。
+    confidence: 存疑
+    dispute: 宿直与韩熙载事新五代史系于乾德五年条下；韩熙载夜宴图所绘纵情声色自污情节属画史与笔记层。
+    source_ids: [src-xwushi-liyu]
+  - stage: 在位金陵
+    stage_order: 6
+    title: 弟从善朝宋被留，手疏求还不许
+    date:
+      text: "971年"
+      year: 971
+      precision: 精确
+    place: 金陵、汴京
+    summary: 开宝四年煜遣弟韩王从善朝京师，遂留不遣。煜手疏求从善还国，太祖不许。煜尝怏怏以国蹙为忧，日与臣下酣宴愁思悲歌不已。
+    source_ids: [src-xwushi-liyu]
+  - stage: 在位金陵
+    stage_order: 7
+    title: 贬损制度去国号，称江南国主奉宋正朔
+    date:
+      text: "972年"
+      year: 972
+      precision: 精确
+    place: 金陵
+    summary: 开宝五年煜下令贬损制度：下书称教，改中书门下省为左右内史府、尚书省为司会府、枢密院为光政院，诸王皆降国公，以尊朝廷。史称其性骄侈好声色又喜浮图，不恤政事。
+    confidence: 存疑
+    dispute: 新五代史止书「贬损制度」改易省院名号；「去唐国号称江南国主、去开元钱改用铁钱」等细节详宋史与续资治通鉴长编层，本卷分层标注不混作同源信史。
+    source_ids: [src-xwushi-liyu]
+  - stage: 在位金陵
+    stage_order: 8
+    title: 潘佑极谏下狱自缢，李平连坐
+    date:
+      text: "973年"
+      year: 973
+      precision: 精确
+    place: 金陵
+    summary: 开宝六年内史舍人潘佑上书极谏，煜收下狱，佑自缢死。此事后世视为煜失道之征。
+    confidence: 有争议
+    dispute: 新五代史仅载潘佑收狱自缢；李平与佑同日赐死、及户部尚书之职等细节出自马令陆游南唐书与宋人笔记层，情节后世聚讼，故标争议。
+    source_ids: [src-xwushi-liyu]
+
+  # ── 阶段三：亡国降俘 ──────────────────────────────
+  - stage: 亡国降俘
+    stage_order: 9
+    title: 称疾不行，王师南征
+    date:
+      text: "974年"
+      year: 974
+      precision: 精确
+    place: 金陵
+    summary: 开宝七年太祖遣使诏煜赴阙，煜称疾不行，王师南征。宋军统帅部署（曹彬为主帅潘美都监）之名号新五代史不著，详见宋史层记载。
+    source_ids: [src-xwushi-liyu]
+  - stage: 亡国降俘
+    stage_order: 10
+    title: 遣徐铉周惟简奉表求缓师
+    date:
+      text: 974—975年之间
+      year: 974
+      range_end: 975
+      precision: 范围
+    place: 汴京
+    summary: 煜遣徐铉周惟简等奉表朝廷求缓师，太祖不答。欧阳修于卷末自注录徐铉廷辩轶事：铉仰言李煜无罪陛下师出无名，以太祖尔谓父子者为两家可乎语对而退。
+    source_ids: [src-xwushi-liyu]
+  - stage: 亡国降俘
+    stage_order: 11
+    title: 金陵城破，出降
+    date:
+      text: "975年十二月"
+      year: 975
+      precision: 精确
+    place: 金陵
+    summary: 开宝八年十二月王师克金陵。煜出降被俘至京师。
+    confidence: 存疑
+    dispute: 新五代史仅记城破与被俘至京师；肉袒出降于军门、降仪细节出自宋人记载层，本卷不作确证表述。
+    source_ids: [src-xwushi-liyu]
+  - stage: 亡国降俘
+    stage_order: 12
+    title: 俘至京师，封违命侯拜左千牛卫将军
+    date:
+      text: "976年"
+      year: 976
+      precision: 精确
+    place: 汴京
+    summary: 开宝九年煜俘至京师，太祖赦之，封违命侯，拜左千牛卫将军。违命侯之爵实含贬抑，太宗即位后始加封陇西公（此节详宋史层）。
+    source_ids: [src-xwushi-liyu]
+
+  # ── 阶段四：汴梁囚居 ──────────────────────────────
+  - stage: 汴梁囚居
+    stage_order: 13
+    title: 囚居汴梁，词风巨变
+    date:
+      text: 976—978年之间
+      year: 976
+      range_end: 978
+      precision: 范围
+    place: 汴京
+    summary: 以臣虏之身囚居汴梁凡三年，故国之思皆入词章。虞美人浪淘沙破阵子等后期词以血泪写亡国，词境自宫廷艳情一变而为人生悲慨。
+    confidence: 存疑
+    dispute: 后期词的系年均系后人推定，具体写作年份无可确考；囚居细节多承宋人笔记层。
+    source_ids: []
+  - stage: 汴梁囚居
+    stage_order: 14
+    title: 卒于汴梁，年四十二
+    date:
+      text: "978年"
+      year: 978
+      precision: 精确
+    place: 汴京
+    summary: 太平兴国三年卒，年四十二，葬地传在洛阳北邙山。新五代史于此止书其后事具国史，本卷卒年据宋史层记载补足。
+    confidence: 存疑
+    dispute: 卒年978与享年四十二出自宋史及宋人记载层，非新五代史明文；七夕适值其生日而卒、牵机药赐死说出王铚默记等笔记传说层，不得冒充信史。
+    source_ids: []
+
+works:
+  - work_id: yumeiren-chunhuaqiuyue
+    title: 虞美人·春花秋月何时了
+    alt_titles: [虞美人]
+    genre: 词
+    date:
+      text: 约978年前后（囚居汴梁期间）
+      year: 978
+      precision: 约
+    place: 汴京（推定）
+    context: 亡国入宋后的绝笔之作，通说系于其卒年前夕。通篇以问起以答结，故国之思化作一江春水。
+    attribution: 确凿
+    excerpt: 春花秋月何时了，往事知多少。小楼昨夜又东风，故国不堪回首月明中。……问君能有几多愁，恰似一江春水向东流。
+    text_display: excerpt
+    themes: [亡国之痛, 故国]
+    influence: 词史上以血书者的代表，千古传诵的绝命词。
+    confidence: 存疑
+    dispute: 系年为后人推定；相传此词招致杀身之说属笔记传说层。
+    source_ids: []
+  - work_id: langtaosha-lianwaiyuchanchan
+    title: 浪淘沙令·帘外雨潺潺
+    alt_titles: [浪淘沙]
+    genre: 词
+    date:
+      text: 975—978年之间（囚居时期）
+      year: 975
+      range_end: 978
+      precision: 范围
+    place: 汴京（推定）
+    context: 囚居梦中贪欢醒来所作，流水落花春去也天上人间，身世之痛极矣。
+    attribution: 确凿
+    excerpt: 帘外雨潺潺，春意阑珊。罗衾不耐五更寒。梦里不知身是客，一晌贪欢。……流水落花春去也，天上人间。
+    text_display: excerpt
+    themes: [亡国之痛, 梦境]
+    influence: 以寻常语度入音律而境界全出的后期代表作。
+    confidence: 存疑
+    dispute: 后期词系年为后人推定。
+    source_ids: []
+  - work_id: xiangjianhuan-wuyandushangxilou
+    title: 相见欢·无言独上西楼
+    alt_titles: [乌夜啼·无言独上西楼]
+    genre: 词
+    date:
+      text: 约976—978年之间（囚居时期）
+      year: 976
+      range_end: 978
+      precision: 范围
+    place: 汴京（推定）
+    context: 囚居离愁之作，剪不断理还乱以浅白口语写无可排遣之情。
+    attribution: 确凿
+    excerpt: 无言独上西楼，月如钩。寂寞梧桐深院锁清秋。剪不断，理还乱，是离愁。别是一般滋味在心头。
+    text_display: full
+    themes: [离愁, 孤寂]
+    influence: 千古写愁名篇，全篇如白话而余味无穷。
+    confidence: 存疑
+    dispute: 系年为后人推定；调名相见欢乌夜啼两属，各本互异。
+    source_ids: []
+  - work_id: wuyeti-linhuaxielechunhong
+    title: 乌夜啼·林花谢了春红
+    alt_titles: [相见欢·林花谢了春红]
+    genre: 词
+    date:
+      text: 约976—978年之间（囚居时期）
+      year: 976
+      range_end: 978
+      precision: 范围
+    place: 汴京（推定）
+    context: 借林花风雨写人生长恨，由惜花而自伤身世。
+    attribution: 确凿
+    excerpt: 林花谢了春红，太匆匆。无奈朝来寒雨晚来风。……自是人生长恨水长东。
+    text_display: excerpt
+    themes: [伤春, 人生悲慨]
+    influence: 自是人生长恨水长东为后期血泪之词的名句。
+    confidence: 存疑
+    dispute: 系年为后人推定。
+    source_ids: []
+  - work_id: pozhenzi-sishininianjiaguo
+    title: 破阵子·四十年来家国
+    alt_titles: []
+    genre: 词
+    date:
+      text: 约975—976年之间（亡国之际）
+      year: 975
+      range_end: 976
+      precision: 范围
+    place: 金陵至汴京途中（推定）
+    context: 追述江南建国四十年一旦归为臣虏，最是仓皇辞庙日垂泪对宫娥，苏轼讥其不当恸哭于九庙之外，后世聚讼。
+    attribution: 确凿
+    excerpt: 四十年来家国，三千里地山河。……最是仓皇辞庙日，教坊犹奏别离歌。垂泪对宫娥。
+    text_display: excerpt
+    themes: [亡国之痛, 忏悔]
+    influence: 以帝王身份直写亡国实录的唯一文本。
+    confidence: 存疑
+    dispute: 系年为后人推定；垂泪对宫娥句自宋以来评价两极。
+    source_ids: []
+  - work_id: qingleyue-bielaichunban
+    title: 清平乐·别来春半
+    alt_titles: []
+    genre: 词
+    date:
+      text: 约971年前后
+      year: 971
+      precision: 约
+    place: 金陵（推定）
+    context: 通说为其弟从善朝宋被扣久留不归而作，离恨恰如春草更行更远还生即怀弟兼怀故土之辞。
+    attribution: 确凿
+    excerpt: 别来春半，触目柔肠断。砌下落梅如雪乱，拂了一身还满。……离恨恰如春草，更行更远还生。
+    text_display: excerpt
+    themes: [离恨, 怀人]
+    influence: 以草喻愁的经典意象。
+    confidence: 存疑
+    dispute: 怀弟说系据从善被留事推定，亦有作于亡国前泛写离愁的意见。
+    source_ids: []
+  - work_id: daolianzi-shenyuanjing
+    title: 捣练子令·深院静
+    alt_titles: [捣练子]
+    genre: 词
+    date:
+      text: 不详
+      precision: 未知
+    place: ""
+    context: 以寒砧声写长夜不寐，二十七字小令而声情幽咽。
+    attribution: 确凿
+    excerpt: 深院静，小庭空，断续寒砧断续风。无奈夜长人不寐，数声和月到帘栊。
+    text_display: full
+    themes: [秋夜, 不寐]
+    influence: 南唐小令的极致小品。
+    confidence: 存疑
+    dispute: 创作年代不可考；个别选本归属略有异议。
+    source_ids: []
+  - work_id: wangjiangnan-duishaohen
+    title: 望江南·多少恨
+    alt_titles: [望江梅]
+    genre: 词
+    date:
+      text: 约976—978年之间（囚居时期）
+      year: 976
+      range_end: 978
+      precision: 范围
+    place: 汴京（推定）
+    context: 记囚居中梦返江南旧苑之欢，车如流水马如龙追忆盛时，愈见梦醒之恨。
+    attribution: 确凿
+    excerpt: 多少恨，昨夜梦魂中。还似旧时游上苑，车如流水马如龙。花月正春风。
+    text_display: full
+    themes: [梦境, 故国]
+    influence: 以乐景写哀的范例。
+    confidence: 存疑
+    dispute: 系年为后人推定。
+    source_ids: []
+
+footprints:
+  - name: 金陵
+    modern_name: 江苏省南京市区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "937年出生，成长至此"
+      year: 937
+      precision: 精确
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    confidence: 确定
+    source_ids: [src-xwushi-liyu]
+  - name: 南唐宫城（澄心堂一带）
+    modern_name: 南京市秦淮区内桥东北一带（推定）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 南唐宫城地望系考古与文献推定，坐标暂缺待接入体系登记
+    visit_date:
+      text: 961—975年在位
+      year: 961
+      range_end: 975
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 确定
+    dispute: 在位建都处确凿；宫城精确地望为学界推定。
+    source_ids: [src-xwushi-liyu]
+  - name: 东京开封府（汴梁）
+    modern_name: 河南省开封市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 976—978年囚居终老
+      year: 976
+      range_end: 978
+      precision: 范围
+    kind: 居住
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 确定
+    dispute: 被俘至京师确凿，具体宅第位置无考。
+    source_ids: [src-xwushi-liyu]
+  - name: 礼贤宅故址（赐第）
+    modern_name: 开封市内（宋初所建赐南方降国君主之第，地望无考）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 礼贤宅为宋初朝廷所建以处李煜钱俶之说见宋人记载，具体位置无考，坐标暂缺
+    visit_date:
+      text: 976—978年之间（囚居期间）
+      year: 976
+      range_end: 978
+      precision: 范围
+    kind: 居住
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 有争议
+    dispute: 李煜囚居实际是否礼贤宅，正史无明文，系宋人记载层推定。
+    source_ids: []
+  - name: 北邙山（葬地）
+    modern_name: 河南省洛阳市北邙山
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 葬地北邙山说出自后世谱牒与笔记层，坐标暂缺待核验
+    visit_date:
+      text: "978年卒后葬"
+      year: 978
+      precision: 约
+    kind: 逝世
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 新五代史止书其后事具国史；葬洛阳北邙山为通行说法而非正史明文。
+    source_ids: []
+  - name: 清凉山避暑宫故址
+    modern_name: 江苏省南京市鼓楼区清凉山公园
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 南唐避暑宫遗址地望系地方志与考古推定；作纪念地著录不作确证到访处理
+    visit_date:
+      text: 不详
+      precision: 未知
+    kind: 纪念地
+    route_order: 6
+    memorial_only: true
+    confidence: 存疑
+    dispute: 传为南唐避暑宫故址，属后世纪念性遗迹层，非李煜行迹信史。
+    source_ids: []
+
+# 关系说明：L1 figures.yaml 无南唐相关可关联人物目标，按规范省略 relations 字段，不硬造。
+
+reception:
+  - era: 同时代
+    evaluator: 徐铉（欧阳修录江南故老传闻）
+    quote: 煜以小事大，如子事父，未有过失，奈何见伐？
+    text_display: excerpt
+    comment: 出新五代史卷62欧阳修自注，其自称此事闻之江南故老，属传闻轶事层录入正史论赞，可信度介于信史与笔记之间，如实标注出处层级。太祖尔谓父子者为两家可乎之对亦同出此注。
+    source_ids: [src-xwushi-liyu]
+  - era: 历代批评
+    evaluator: 王国维《人间词话》
+    quote: 词至李后主而眼界始大，感慨遂深，遂变伶工之词而为士大夫之词。
+    text_display: excerpt
+    comment: 公版词话引文待登记来源条目后补入 source_ids，本条暂作中性转述加短引。王氏又有后主之词真所谓以血书者及俨有释迦基督担荷人类罪恶之意诸评，均为二十世纪初公版文献，登记路径同上。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦南唐二主词文本校订与真伪考辨、后期词系年、李煜亡国的政治评价翻转等议题；具体论著引文须逐条取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 虞美人长期入选中学语文教材，千古词帝与绝命词形象成为大众文化符号。教材版本信息随学期变动，录入时须另行核验当期篇目。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 影视剧与网络传播
+    quote: ""
+    text_display: none
+    comment: 大众影视多以情爱传奇演绎其亡国叙事，网络流传七夕生七夕卒、牵机药赐死等戏剧化叙述多承宋人笔记传说层，须与本卷信史条目区分阅读。
+    source_ids: []
+
+sources_used: [src-xwushi-liyu]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版（前次因上游网络故障中断，本次重试完成）。14条年谱、8首作品、6处足迹、关系字段按规范省略、5层接受史；新五代史止书处与宋史笔记层差异全部落dispute分层标注}
+

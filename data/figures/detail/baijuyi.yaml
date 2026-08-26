@@ -1,0 +1,843 @@
+# 白居易全景详卷（schema v1）
+# 史料审计表（实取前置证据；来源登记见 data/sources.yaml）：
+#
+# 实取 URL（2026-08-25，均 HTTP 200 成功返回全文）：
+# | 来源 | 实际访问 URL | 是否找到目标传记 |
+# |---|---|---|
+# | src-jts-vol166 | https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7166 | 是。列传第一百一十六「元稹 白居易」，含白居易本传全文及其弟行简、从父弟敏中附传 |
+# | src-xts-vol119 | https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7119 | 是。列传第四十四卷末「白居易」，含弟行简、弟敏中附传及史臣赞（赞引杜牧语） |
+#
+# | 事实点 | 旧唐书·卷166(J) | 新唐书·卷119(X) | 结论与置信 |
+# |---|---|---|---|
+# | 家世籍贯 | 太原人，北齐白建之后，赐田韩城，至温徙下邽，今为下邽人 | 其先盖太原人，白建有功赐田韩城，又徙下邽 | 确定（两史同） |
+# | 早慧 | 始生六七月乳母指之无二字百试不差（与元稹书自述） | 其始生七月能展书，姆指之无两字虽试百数不差 | 确定 |
+# | 谒顾况 | 年十五六袖文投顾况，况迎门礼遇「吾谓斯文遂绝，复得吾子矣」 | 未冠谒顾况，「吾谓斯文遂绝，今复得子矣」 | 确定（文字小异） |
+# | 进士年 | 贞元十四年始以进士就试，高郢擢甲科 | 贞元中擢进士、拔萃皆中 | 存疑：J纪年与通说贞元十六年（800）登第不合；元稹集序作「二十七举进士」 |
+# | 制科授官 | 元和元年策入第四等，授盩厔县尉、集贤校理 | 对制策乙等，调盩厔尉，为集贤校理 | 确定（等等级记载互异：第四等/乙等） |
+# | 翰林拾遗 | 二年十一月召入翰林，三年五月拜左拾遗 | 月中召入翰林为学士，迁左拾遗 | 确定（J系年更详） |
+# | 贬江州 | 首疏请捕贼雪国耻；宫官非谏职先谏官言事；素恶者摭赏花新井诗伤名教；王涯论不宜治郡，追诏授江州司马 | 首上疏请亟捕贼；宰相嫌其出位；母堕井死赋新井篇言浮华无实行；追贬江州司马 | 确定（叙事细节两书互异，实质均为越职言事遭构陷） |
+# | 江州生活 | 湓城立隐舍庐山遗爱寺草堂，与凑满朗晦四禅师游 | 托浮屠生死说若忘形骸 | 确定 |
+# | 忠州量移 | 十三年冬量移忠州，十四年三月与元稹峡口夷陵置酒 | 久之徙忠州刺史 | 确定（J详） |
+# | 杭州刺史 | 求外任七月除杭州刺史；与元稹杭越邻境篇咏往还 | 为杭州刺史始筑堤捍钱塘湖溉田千顷，浚李泌六井 | 确定（X独详水利） |
+# | 苏州刺史 | 宝历中复出为苏州刺史 | 复拜苏州刺史病免 | 确定 |
+# | 晚年分司 | 惧以党人见斥求致身散地；履道里宅；池上篇醉吟先生传 | 二李党事兴移病还东都；疏诏种树构石楼香山凿八节滩；九老图 | 确定 |
+# | 卒年卒地 | 大中元年卒，时年七十六，赠尚书右仆射；葬香山如满师塔之侧 | 会昌六年卒，年七十五，宣宗以诗吊之；遗命薄葬毋请谥 | 有争议：J卒年系年误（通说从X：会昌六年即846年卒）；卒于洛阳、葬香山两史合 |
+# | 名号 | 自称香山居士 | 自号醉吟先生，称香山居士；元白、刘白并号 | 确定 |
+# | 身后 | 文集七十五卷行世；元稹为序白氏长庆集五十卷 | 敏中为相请谥曰文；东都、江州人为立祠 | 确定 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: baijuyi
+
+profile:
+  courtesy_name: 乐天
+  art_name: 香山居士（晚岁又自号醉吟先生）
+  aliases: [诗魔, 白二十二, 醉吟先生]
+  gender: 男
+  ethnicity: ""
+  ancestry: 太原白氏，北齐五兵尚书白建之后；建以功赐田韩城，子孙家焉，至祖温徙居下邽（今陕西渭南）
+  birthplace: 新郑（河南道郑州新郑县）
+  death_place: 洛阳（卒于履道里私第，遗命葬龙门香山如满师塔之侧）
+  offices: [秘书省校书郎, 盩厔县尉, 翰林学士, 左拾遗, 京兆府户曹参军, 太子左赞善大夫, 江州司马, 忠州刺史, 司门员外郎, 主客郎中知制诰, 中书舍人, 杭州刺史, 太子左庶子分司东都, 苏州刺史, 秘书监, 刑部侍郎, 太子宾客分司, 河南尹, 太子少傅, 刑部尚书致仕]
+  fields: [文学]
+  roles: [诗人]
+  summary: 中唐诗坛巨擘与新乐府运动主将，主张文章合为时而著歌诗合为事而作；一生辗转于谏官直声、江州贬谪与杭苏惠政之间，晚年退居洛阳香山。
+
+timeline:
+  # ── 阶段一：早岁苦学 ──────────────────────────────
+  - stage: 早岁苦学
+    stage_order: 1
+    title: 出生于新郑
+    date:
+      text: "约772年（唐代宗大历七年正月）"
+      year: 772
+      precision: 约
+    place: 郑州新郑
+    summary: 两唐书本传不载生年；新书独记其始生七月能展书，姆指之无两字虽试百数不差。生年系由卒年与会昌六年享年七十五倒推的学界通说。
+    source_ids: [src-xts-vol119]
+  - stage: 早岁苦学
+    stage_order: 2
+    title: 家世占籍下邽
+    date:
+      text: 先世事，具体年代不详
+      precision: 未知
+    place: 韩城、下邽
+    summary: 旧书详记世系：北齐五兵尚书白建有功于高齐赐田韩城子孙家焉，至祖锽、父季庚世敦儒业皆以明经出身；父季庚建中初为彭城令，说李洧以彭门归国累擢襄州别驾。新书从略而大同。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 早岁苦学
+    stage_order: 3
+    title: 袖文谒顾况，一鸣惊人
+    date:
+      text: "约787年前后（十五六岁时）"
+      year: 787
+      precision: 约
+    place: 长安
+    summary: 两书均载其以文谒著作郎顾况：况恃才少所推可，览其文不觉迎门礼遇，叹曰吾谓斯文遂绝，今复得子矣。此事为白氏早慧成名的同时代见证。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 早岁苦学
+    stage_order: 4
+    title: 昼课赋夜课书，口舌成疮
+    date:
+      text: "约780—799年之间（十五六至二十七岁）"
+      year: 780
+      range_end: 799
+      precision: 范围
+    place: 下邽、符离一带
+    summary: 据江州期间与元稹书自述：五六岁便学为诗，九岁谙识声韵；二十以来昼课赋、夜课书、间又课诗，不遑寝息，以至于口舌成疮、手肘成胝；年二十七方从乡赋。苦学力文致肤革不丰、齿发早衰。
+    source_ids: [src-jts-vol166]
+
+  # ── 阶段二：科第入仕 ──────────────────────────────
+  - stage: 科第入仕
+    stage_order: 5
+    title: 进士及第
+    date:
+      text: 贞元年间，约800年前后
+      year: 800
+      precision: 约
+    place: 长安
+    summary: 旧书系贞元十四年始以进士就试，礼部侍郎高郢擢升甲科；新书称擢进士拔萃皆中补校书郎；元稹所作集序称二十七举进士、明年中拔萃甲科。登第确年学界通行作贞元十六年（800年）。
+    confidence: 存疑
+    dispute: 登第年份三源互有出入——旧书系年（十四年就试）、集序年龄（二十七岁举进士约合798年后）与通说（十六年登第）不合，本卷从通说标注约年。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 科第入仕
+    stage_order: 6
+    title: 书判拔萃，授秘书省校书郎
+    date:
+      text: "约803年（进士及第后一二年）"
+      year: 803
+      precision: 约
+    place: 长安
+    summary: 吏部书判拔萃登科，授秘书省校书郎，与元稹同僚订交之始；此后自雠校至结绶畿甸，所著歌诗数十百篇皆意存讽赋箴时之病。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 科第入仕
+    stage_order: 7
+    title: 制科第四等，授盩厔尉
+    date:
+      text: 元和元年（806年）四月
+      year: 806
+      precision: 精确
+    place: 盩厔（今周至）
+    summary: 宪宗策试制举人，应才识兼茂明于体用科，旧书策入第四等、新书作乙等，授盩厔县尉、集贤校理。
+    confidence: 存疑
+    dispute: 及第等级两书互异（第四等/乙等），或系唐宋人对科目等的表述差异，无从核断。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 科第入仕
+    stage_order: 8
+    title: 作长恨歌（通说系于盩厔尉任上）
+    date:
+      text: "约806—807年之间"
+      year: 806
+      range_end: 807
+      precision: 范围
+    place: 盩厔仙游寺（通说）
+    summary: 长恨歌为其感伤诗代表作，与元稹书自述今时所重正在杂律诗与长恨歌以下，又记倡妓诵得白学士长恨歌由是增价、鸡林贾人以一金换一篇诸事。本传未系年，此处从通行谱系。
+    confidence: 存疑
+    dispute: 创作地点与年份系后世据陈鸿长恨歌传及通行年谱推定，两唐书本传均未载本事与系年。
+    source_ids: [src-jts-vol166, src-qts-baijuyi]
+
+  # ── 阶段三：谏官岁月 ──────────────────────────────
+  - stage: 谏官岁月
+    stage_order: 9
+    title: 召入翰林为学士
+    date:
+      text: 元和二年十一月（807年）
+      year: 807
+      precision: 精确
+    place: 长安
+    summary: 章武皇帝（宪宗）纳谏思理渴闻谠言，其歌诗往往流闻禁中，遂召入翰林为学士；新书作月中召入翰林为学士。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 谏官岁月
+    stage_order: 10
+    title: 拜左拾遗
+    date:
+      text: 元和三年五月（808年）
+      year: 808
+      precision: 精确
+    place: 长安
+    summary: 拜左拾遗依前翰林学士。拜命之日即献疏言事，自陈拾遗之选甚重其秩甚卑、朝廷得失无不察天下利病无不言之职志，欲以生平所贮仰酬恩造。
+    source_ids: [src-jts-vol166]
+  - stage: 谏官岁月
+    stage_order: 11
+    title: 谏魏徵宅赎、王锷拜相事
+    date:
+      text: "约808年（左拾遗任内）"
+      year: 808
+      precision: 约
+    place: 长安
+    summary: 李师道进绢为魏徵孙赎宅，居易谏称徽为先朝宰相自可官中收赎，毋令师道掠美，宪宗深然之；河东王锷将加平章事，居易以为锷诛剥民财以市恩泽，不可使四方谓陛下得进奉而与宰相，事乃止。新书又记其谏于頔献歌舞人、请罢孙璹进奉国等十余上，益知名。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 谏官岁月
+    stage_order: 12
+    title: 极谏吐突承璀统兵，帝变色而李绛解围
+    date:
+      text: "约808—809年之间"
+      year: 808
+      range_end: 809
+      precision: 范围
+    place: 长安
+    summary: 王承宗拒命，宪宗令神策中尉吐突承璀为招讨使，居易面论辞情切至，又请罢河北用兵数千百言。旧书记宪宗语李绛曰白居易小子是朕拔擢致名位而无礼于朕朕实难奈，绛以陛下欲开谏诤之路不宜阻居易言解之；新书更增殿中论执强鲠、直言陛下误矣、帝变色必斥之的情节。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 谏官岁月
+    stage_order: 13
+    title: 改官京兆户曹参军，丁母忧退居下邽
+    date:
+      text: 元和五年改官、六年四月丁忧（810—811年之间）
+      year: 810
+      range_end: 811
+      precision: 范围
+    place: 长安、下邽
+    summary: 当改官时帝谓崔群居易官卑俸薄拘于资地，听自便奏来；居易援姜公辅例乞京府判官以便养亲，除京兆府户曹参军。元和六年四月丁母陈夫人之丧，退居下邽。
+    source_ids: [src-jts-vol166]
+  - stage: 谏官岁月
+    stage_order: 14
+    title: 服除入朝，授太子左赞善大夫
+    date:
+      text: 元和九年冬（814年）
+      year: 814
+      precision: 精确
+    place: 长安
+    summary: 丁忧期满入朝，授太子左赞善大夫，为东宫闲职；此任命旋即成为次年贬江州的体制性伏笔——宫官非谏职。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+
+  # ── 阶段四：谪迁江湖 ──────────────────────────────
+  - stage: 谪迁江湖
+    stage_order: 15
+    title: 首疏请捕贼，贬江州司马
+    date:
+      text: 元和十年（815年）七月至秋
+      year: 815
+      precision: 精确
+    place: 长安→江州（浔阳）
+    summary: 盗杀宰相武元衡，居易首上疏急请捕贼以雪国耻。宰相以宫官非谏职不当先谏官言事为嫌，又有素恶居易者摭其赏花新井诗谓母看花堕井死而作诗甚伤名教不宜置彼周行；执政奏贬江表刺史，中书舍人王涯复论不宜治郡，追诏授江州司马。
+    confidence: 确定
+    dispute: 罪名为构陷痕迹两书均予显影（旧书言掎摭、新书直言不可用）；后世通认贬谪实质系越职言事遭权忌与政争倾轧叠加，赏花新井诗案仅为口实。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 谪迁江湖
+    stage_order: 16
+    title: 庐山遗爱寺营草堂，结方外之交
+    date:
+      text: "约816—817年之间"
+      year: 816
+      range_end: 817
+      precision: 范围
+    place: 江州浔阳、庐山
+    summary: 居易儒学之外尤通释典，不以迁谪介意。在湓城立隐舍于庐山遗爱寺，自记东西二林间香炉峰下云木泉石胜绝第一因立草堂；与凑、满、朗、晦四禅师追永、远、宗、雷之迹为人外之交。郡守以朝贵遇之不之责。新书概括为既失志能顺适所遇托浮屠生死说。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 谪迁江湖
+    stage_order: 17
+    title: 秋夜湓浦口作琵琶行（通说）
+    date:
+      text: "约816年秋"
+      year: 816
+      precision: 约
+    place: 江州湓浦口
+    summary: 谪居江州期间的感伤诗巅峰，同是天涯沦落人相逢何必曾相识、座中泣下谁最多江州司马青衫湿诸句与贬谪处境互证。
+    confidence: 存疑
+    dispute: 本传未载此诗本事；系年从江州司马期内秋夜送客的通行说法，具体月日无考。
+    source_ids: [src-qts-baijuyi]
+  - stage: 谪迁江湖
+    stage_order: 18
+    title: 与元稹书论诗之大旨
+    date:
+      text: 元和十年腊月（815年末）
+      year: 815
+      precision: 精确
+    place: 江州浔阳
+    summary: 旧书全录其与元稹书：自述始知文章合为时而著歌诗合为事而作；检讨囊帙分诗为讽谕、闲适、感伤、杂律四类，新乐府一百五十首归讽谕诗；申明志在兼济行在独善之义。又记闻贺雨诗众口籍籍、闻秦中吟权豪贵近相目变色、握军要者切齿诸反应，及自长安抵江西三四千里题咏其诗者处处皆是之传播盛况。
+    source_ids: [src-jts-vol166]
+  - stage: 谪迁江湖
+    stage_order: 19
+    title: 量移忠州刺史，峡口会元稹
+    date:
+      text: 元和十三年冬至十四年三月（818—819年之间）
+      year: 818
+      range_end: 819
+      precision: 范围
+    place: 浔阳→三峡→忠州
+    summary: 十三年冬量移忠州刺史，自浔阳浮江上峡；十四年三月元稹会居于峡口，停舟夷陵三日，与弟行简三人于黄牛峡口石洞中置酒赋诗恋恋不能诀。在忠州为木莲荔枝图寄朝中亲友，天教抛掷在深山之句咸传都下。
+    source_ids: [src-jts-vol166]
+  - stage: 谪迁江湖
+    stage_order: 20
+    title: 召还京师，转主客郎中知制诰
+    date:
+      text: "约819—820年之间（冬召还，明年转官）"
+      year: 819
+      range_end: 820
+      precision: 范围
+    place: 长安
+    summary: 其年冬召还京师拜司门员外郎，明年转主客郎中知制诰加朝散大夫始著绯；时元稹亦征还为尚书郎知制诰同在纶阁。
+    source_ids: [src-jts-vol166]
+
+  # ── 阶段五：宦游杭苏 ──────────────────────────────
+  - stage: 宦游杭苏
+    stage_order: 21
+    title: 转中书舍人，覆试礼部贡举
+    date:
+      text: 长庆元年（821年）
+      year: 821
+      precision: 精确
+    place: 长安
+    summary: 三月受诏与王起覆试钱徽下及第人郑朗等十四人（钱徽科场案）；十月转中书舍人，十一月穆宗亲试制举又与贾餗陈岵为考策官。凡朝廷文字之职无不首居其选，然多为排摈不得用其才。
+    source_ids: [src-jts-vol166]
+  - stage: 宦游杭苏
+    stage_order: 22
+    title: 求外任，出为杭州刺史
+    date:
+      text: 长庆二年七月（822年）
+      year: 822
+      precision: 精确
+    place: 杭州
+    summary: 时天子荒纵宰相才下，河朔复乱，居易累上疏论其事天子不能用，乃求外任。新书独详其在杭政绩：始筑堤捍钱塘湖钟泄其水溉田千顷，复浚李泌六井民赖其汲。旧书记与元稹（时转浙东观察使）杭越邻境篇咏往还不间旬浃，尝会境上数日而别。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 宦游杭苏
+    stage_order: 23
+    title: 秩满分司东都，元稹编白氏长庆集
+    date:
+      text: 长庆四年（824年）
+      year: 824
+      precision: 精确
+    place: 洛阳
+    summary: 杭州秩满除太子左庶子分司东都。元稹时刺会稽，尽征其文手自排缵成五十卷凡二千二百五十一首，以明年当改元长庆讫于是矣，号白氏长庆集并作序，谓禁省观寺邮候墙壁之上无不书、王公妾妇牛童马走之口无不道，鸡林宰相以一金换一篇。
+    source_ids: [src-jts-vol166]
+  - stage: 宦游杭苏
+    stage_order: 24
+    title: 宝历中复出为苏州刺史
+    date:
+      text: "约825—826年之间（宝历中）"
+      year: 825
+      range_end: 826
+      precision: 范围
+    place: 苏州
+    summary: 宝历中复出为苏州刺史，新书谓复拜苏州刺史病免。罢苏州得太湖石五白莲折腰菱青板舫以归，后悉置于洛阳履道里池上。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 宦游杭苏
+    stage_order: 25
+    title: 文宗征拜秘书监，转刑部侍郎
+    date:
+      text: "约826—828年之间（文宗即位至太和二年正月）"
+      year: 826
+      range_end: 828
+      precision: 范围
+    place: 长安
+    summary: 文宗即位征拜秘书监赐金紫；九月上诞节召与僧惟澄道士赵常盈对御讲论于麟德殿，论难锋起辞辨泉注，上疑宿构深嗟挹之。太和二年正月转刑部侍郎封晋阳县男食邑三百户。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+
+  # ── 阶段六：分司与香山 ────────────────────────────
+  - stage: 分司与香山
+    stage_order: 26
+    title: 称病东归求分司，远党祸
+    date:
+      text: 太和三年至七年（829—833年之间）
+      year: 829
+      range_end: 833
+      precision: 范围
+    place: 洛阳
+    summary: 太和三年称病东归求为分司官寻除太子宾客；五年除河南尹，七年复授太子宾客分司。旧书谓李宗闵李德裕朋党事起，妻族杨颖士杨虞卿与宗闵善，居易愈不自安惧以党人见斥，乃求致身散地冀于远害；凡所居官未尝终秩率以病免，识者多之。于履道里得故散骑常侍杨凭宅竹木池馆，作池上篇醉吟先生传以自况。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 分司与香山
+    stage_order: 27
+    title: 辞同州改太子少傅；风病放妓，自撰墓志
+    date:
+      text: 开成元年至四年（836—839年之间）
+      year: 836
+      range_end: 839
+      precision: 范围
+    place: 洛阳
+    summary: 太和末李训构祸衣冠涂地，居易愈无宦情。开成元年除同州刺史辞疾不拜，寻授太子少傅进封冯翊县开国侯。四年冬得风病伏枕累月，乃放诸妓女樊素蛮子等，仍自为墓志，病中吟咏不辍，作病中诗十五篇自谕。
+    source_ids: [src-jts-vol166]
+  - stage: 分司与香山
+    stage_order: 28
+    title: 以刑部尚书致仕，结香火社自号香山居士
+    date:
+      text: "约841—844年之间（会昌中）"
+      year: 841
+      range_end: 844
+      precision: 范围
+    place: 洛阳龙门香山
+    summary: 会昌中请罢太子少傅，以刑部尚书致仕。与香山僧如满结香火社，每肩舆往来白衣鸠杖，自称香山居士。新书又记疏诏种树构石楼香山凿八节滩自号醉吟先生，并与胡杲吉旼郑据刘真卢真张浑狄兼谟卢贞燕集绘为九老图。
+    confidence: 存疑
+    dispute: 致仕与香山居士名号两书合；唯九老图成员名单历来可疑——所列狄兼谟、卢贞二人彼时尚未高年，与皆高年不事者的记述抵牾，学者多疑名单经后人增益。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - stage: 分司与香山
+    stage_order: 29
+    title: 病逝洛阳，葬香山
+    date:
+      text: 会昌六年八月（846年）
+      year: 846
+      precision: 精确
+    place: 洛阳
+    summary: 新书会昌六年卒年七十五，赠尚书右仆射，宣宗以诗吊之，遗命薄葬毋请谥；旧书遗命不归下邽可葬于香山如满师塔之侧家人从命而葬焉。文集七十五卷经史事类三十卷并行于世；无子以其侄孙嗣。东都、江州人为立祠，敏中为相请谥曰文。
+    confidence: 确定
+    dispute: 卒年两书相牾：新书会昌六年（846）享年七十五，旧书误作大中元年（847）年七十六；卒年月日与享年均从新书写定，旧书系年之误为学界共识。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+
+works:
+  - work_id: fude-guyuan-caosongbie
+    title: 赋得古原草送别
+    alt_titles: [草]
+    genre: 五言律诗
+    date:
+      text: 贞元年间早年应考习作，约787—789年之间
+      year: 787
+      range_end: 789
+      precision: 范围
+    place: ""
+    context: 通行说法谓为应考前的习作诗（赋得体），与两书所记少年以文谒顾况而况惊服的事迹时代相接；本传未及此诗。
+    attribution: 确凿
+    excerpt: 离离原上草，一岁一枯荣。野火烧不尽，春风吹又生。远芳侵古道，晴翠接荒城。又送王孙去，萋萋满别情。
+    text_display: full
+    themes: [咏物, 送别]
+    influence: 野火烧不尽春风吹又生成为生生不息意象的千古名句。
+    confidence: 存疑
+    dispute: 系年仅据通行谱系与顾况故事的关联推定，无正史或自述直接系年依据。
+    source_ids: [src-jts-vol166, src-qts-baijuyi]
+
+  - work_id: guan-yimai
+    title: 观刈麦
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: "约806—807年之间（盩厔尉任上）"
+      year: 806
+      range_end: 807
+      precision: 范围
+    place: 盩厔
+    context: 县尉任内目睹农家五月割麦，自愧今我何功德曾不事农桑吏禄三百石岁晏有余粮，是其早期讽谕倾向的自白。
+    attribution: 确凿
+    excerpt: 田家少闲月，五月人倍忙。……足蒸暑土气，背灼炎天光。力尽不知热，但惜夏日长。……念此私自愧，尽日不能忘。
+    text_display: excerpt
+    themes: [讽谕, 农事]
+    influence: 开启其以诗裨补时阙的创作路线，为新乐府精神之先声。
+    confidence: 存疑
+    dispute: 系年从盩厔尉任期通行说法，诗题下自注仅署时官盩厔县尉。
+    source_ids: [src-qts-baijuyi]
+
+  - work_id: changhen-ge
+    title: 长恨歌
+    alt_titles: []
+    genre: 七言古诗（歌行）
+    date:
+      text: "约806—807年之间"
+      year: 806
+      range_end: 807
+      precision: 范围
+    place: 盩厔（通说）
+    context: 咏玄宗与杨贵妃事，自伤亦自警。与元稹书自记其传播之广：倡妓诵得白学士长恨歌由是增价，汉南主人集众娱乐诸妓指而相顾曰此是秦中吟长恨歌主耳。
+    attribution: 确凿
+    excerpt: 汉皇重色思倾国，御宇多年求不得。……在天愿作比翼鸟，在地愿为连理枝。天长地久有时尽，此恨绵绵无绝期。
+    text_display: excerpt
+    themes: [爱情, 咏史, 感伤]
+    influence: 唐代歌行的巅峰传播个案，元稹序谓篇章以来未有如是流传之广者。
+    confidence: 存疑
+    dispute: 本传未系年；创作地盩厔仙游寺说出自通行谱系。
+    source_ids: [src-jts-vol166, src-qts-baijuyi]
+
+  - work_id: xinleyue-maitanweng
+    title: 卖炭翁
+    alt_titles: [新乐府·卖炭翁]
+    genre: 新乐府（七言歌行）
+    date:
+      text: "约808—809年之间（左拾遗任内）"
+      year: 808
+      range_end: 809
+      precision: 范围
+    place: 长安
+    context: 新乐府五十首之一，题下自注苦宫市也。据与元稹书，新乐府共一百五十首中的因事立题部分作于谏官任上欲稍稍进闻于上。
+    attribution: 确凿
+    excerpt: 卖炭翁，伐薪烧炭南山中。满面尘灰烟火色，两鬓苍苍十指黑。……可怜身上衣正单，心忧炭贱愿天寒。……半匹红纱一丈绫，系向牛头充炭直。
+    text_display: excerpt
+    themes: [讽谕, 宫市, 民生]
+    influence: 新乐府运动的旗帜之作，心忧炭贱愿天寒成为民生疾苦的经典写照。
+    confidence: 存疑
+    dispute: 新乐府组诗作年系于元和四年前后谏官任内的通行说法，本传未逐一系年。
+    source_ids: [src-jts-vol166, src-qts-baijuyi]
+
+  - work_id: qinzhongyin-qingfei
+    title: 秦中吟十首（其七·轻肥）
+    alt_titles: [秦中吟·轻肥]
+    genre: 五言组诗（选一）
+    date:
+      text: "约808—810年之间（左拾遗、户曹任内）"
+      year: 808
+      range_end: 810
+      precision: 范围
+    place: 长安
+    context: 与元稹书自述闻秦中吟则权豪贵近者相目而变色，握军要者切齿；此篇写宦官内臣宴饮奢靡而结以是岁江南旱衢州人食人。
+    attribution: 确凿
+    excerpt: 意气骄满路，鞍马光照尘。借问何为者，人称是内臣。……食饱心自若，酒酣气益振。是岁江南旱，衢州人食人！
+    text_display: excerpt
+    themes: [讽谕, 社会]
+    influence: 中唐社会批判诗的代表，其触怒权贵的接受史见于本人书信。
+    confidence: 存疑
+    dispute: 组诗作年系通行推断；所选轻肥一篇为十首中传播最广者。
+    source_ids: [src-jts-vol166, src-qts-baijuyi]
+
+  - work_id: pipa-xing
+    title: 琵琶行
+    alt_titles: [琵琶引]
+    genre: 七言古诗（歌行）
+    date:
+      text: "约816年秋（江州司马任内）"
+      year: 816
+      precision: 约
+    place: 江州湓浦口
+    context: 秋夜浔阳江头送客闻长安倡女弹琵琶，沦落身世与谪臣心境互映；序谓出官二年恬然自安感斯人言是夕始觉有迁谪意。
+    attribution: 确凿
+    excerpt: 浔阳江头夜送客，枫叶荻花秋瑟瑟。……同是天涯沦落人，相逢何必曾相识！……凄凄不似向前声，满座重闻皆掩泣。座中泣下谁最多？江州司马青衫湿。
+    text_display: excerpt
+    themes: [音乐, 谪迁, 感伤]
+    influence: 以声写情的绝调，江州司马青衫湿成为迁客骚人的通用语汇。
+    confidence: 存疑
+    dispute: 本传未载本事；作年从江州贬期通说。
+    source_ids: [src-qts-baijuyi]
+
+  - work_id: dalinsi-taohua
+    title: 大林寺桃花
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: "约817年四月（江州任内）"
+      year: 817
+      precision: 约
+    place: 庐山大林寺
+    context: 与元集虚等十七人游庐山大林寺所作，记山下四月芳菲尽而山寺桃花始盛开的物候惊喜，与江州期经营庐山草堂的行迹相合。
+    attribution: 确凿
+    excerpt: 人间四月芳菲尽，山寺桃花始盛开。长恨春归无觅处，不知转入此中来。
+    text_display: full
+    themes: [山水, 春景]
+    influence: 平易中见机趣的绝句典范。
+    confidence: 存疑
+    dispute: 系年据诗序游山日期的通行考订，本传未载。
+    source_ids: [src-qts-baijuyi]
+
+  - work_id: qiantanghu-chunxing
+    title: 钱塘湖春行
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: "约823—824年之间（杭州刺史任上）"
+      year: 823
+      range_end: 824
+      precision: 范围
+    place: 杭州西湖
+    context: 杭州刺史任上春行湖上，孤山寺北贾亭西至白沙堤一线的早春物候实录，与其捍钱塘湖修水利的政务行迹同城同时。
+    attribution: 确凿
+    excerpt: 孤山寺北贾亭西，水面初平云脚低。几处早莺争暖树，谁家新燕啄春泥。乱花渐欲迷人眼，浅草才能没马蹄。最爱湖东行不足，绿杨阴里白沙堤。
+    text_display: full
+    themes: [西湖, 春景]
+    influence: 咏西湖早春的第一名篇。
+    confidence: 存疑
+    dispute: 系年从杭州任期通行说法，本传未系年。
+    source_ids: [src-qts-baijuyi]
+
+  - work_id: mujiang-yin
+    title: 暮江吟
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: "约822年（赴杭州途中，通说）"
+      year: 822
+      precision: 约
+    place: 长江下游江段（通说）
+    context: 通行谱系系于长庆二年赴杭州道中，写残阳入水与九月初三夜的露月双景，色彩明丽与赴任心境相映。
+    attribution: 确凿
+    excerpt: 一道残阳铺水中，半江瑟瑟半江红。可怜九月初三夜，露似真珠月似弓。
+    text_display: full
+    themes: [江景, 夜色]
+    influence: 小绝句中色彩与光影描摹的名品。
+    confidence: 存疑
+    dispute: 系年与地点均系通行推断，另有作于元和江州期的异说。
+    source_ids: [src-qts-baijuyi]
+
+  - work_id: wen-liushijiu
+    title: 问刘十九
+    alt_titles: []
+    genre: 五言绝句
+    date:
+      text: "约817—819年之间（江州期，通说）"
+      year: 817
+      range_end: 819
+      precision: 范围
+    place: 江州（一说洛阳）
+    context: 邀友人刘十九雪夜小酌的生活小诗，绿蚁新醅酒红泥小火炉的日常暖意与贬谪期顺适所遇的心境相表里。
+    attribution: 确凿
+    excerpt: 绿蚁新醅酒，红泥小火炉。晚来天欲雪，能饮一杯无？
+    text_display: full
+    themes: [饮酒, 友情]
+    influence: 传诵最广的邀饮诗。
+    confidence: 存疑
+    dispute: 刘十九其人与创作地点均有江州、洛阳两说，系年从江州期通说。
+    source_ids: [src-qts-baijuyi]
+
+  - work_id: yijiangnan-zhuyi
+    title: 忆江南三首（其一）
+    alt_titles: [望江南]
+    genre: 词
+    date:
+      text: "约837—838年之间（晚年分司洛阳，通说）"
+      year: 837
+      range_end: 838
+      precision: 范围
+    place: 洛阳
+    context: 晚年居洛阳追忆旧宦江南杭苏诸州所作组词之首，日出江花红胜火春来江水绿如蓝为对江南色彩的极致提炼。
+    attribution: 确凿
+    excerpt: 江南好，风景旧曾谙。日出江花红胜火，春来江水绿如蓝。能不忆江南？
+    text_display: full
+    themes: [忆旧, 江南]
+    influence: 文人词走向成熟的标志性作品之一，忆江南调名由此传播。
+    confidence: 存疑
+    dispute: 作年据晚年分司洛阳的境况推定，无确切系年记载。
+    source_ids: [src-qts-baijuyi]
+
+footprints:
+  - name: 新郑
+    modern_name: 河南省郑州市新郑市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约772年出生并度过幼年"
+      year: 772
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-xts-vol119]
+  - name: 下邽
+    modern_name: 陕西省渭南市临渭区下邽镇
+    lng: null
+    lat: null
+    coord_precision: 乡镇级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 家业所在；元和六年至九年丁忧退居（约811—814年之间）
+      year: 811
+      range_end: 814
+      precision: 范围
+    kind: 居住
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-jts-vol166]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 校书郎、翰林学士、左拾遗、中书舍人、秘书监、刑部侍郎诸任（约803—829年间多次居官）
+      year: 803
+      range_end: 829
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - name: 盩厔
+    modern_name: 陕西省西安市周至县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 元和元年（806年）授盩厔尉
+      year: 806
+      precision: 精确
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - name: 江州浔阳
+    modern_name: 江西省九江市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 元和十年至十三年（815—818年之间）谪居江州司马
+      year: 815
+      range_end: 818
+      precision: 范围
+    kind: 谪迁
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - name: 庐山遗爱寺草堂
+    modern_name: 江西省九江市庐山
+    lng: null
+    lat: null
+    coord_precision: 乡镇级
+    coord_source: 草堂遗址地望系后世考订，坐标暂缺
+    visit_date:
+      text: "约816—817年之间营草堂游咏"
+      year: 816
+      range_end: 817
+      precision: 范围
+    kind: 游历
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-jts-vol166]
+  - name: 忠州
+    modern_name: 重庆市忠县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 元和十三年冬至元和十五年（约818—820年之间）任忠州刺史
+      year: 818
+      range_end: 820
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    source_ids: [src-jts-vol166]
+  - name: 杭州
+    modern_name: 浙江省杭州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 长庆二年至四年（822—824年之间）任杭州刺史，筑堤捍钱塘湖浚六井
+      year: 822
+      range_end: 824
+      precision: 范围
+    kind: 任职
+    route_order: 8
+    memorial_only: false
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - name: 苏州
+    modern_name: 江苏省苏州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约825—826年之间（宝历中）任苏州刺史，病免"
+      year: 825
+      range_end: 826
+      precision: 范围
+    kind: 任职
+    route_order: 9
+    memorial_only: false
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - name: 洛阳履道里宅
+    modern_name: 河南省洛阳市（履道里故址）
+    lng: null
+    lat: null
+    coord_precision: 乡镇级
+    coord_source: 履道里故址地望系考古与文献考订，坐标暂缺
+    visit_date:
+      text: 长庆四年分司始购宅；太和三年后定居至卒（约829—846年之间）
+      year: 829
+      range_end: 846
+      precision: 范围
+    kind: 居住
+    route_order: 10
+    memorial_only: false
+    source_ids: [src-jts-vol166]
+  - name: 龙门香山
+    modern_name: 河南省洛阳市龙门东山（白园）
+    lng: null
+    lat: null
+    coord_precision: 乡镇级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 晚年结香火社常往来；会昌六年（846年）卒后葬香山如满师塔之侧
+      year: 846
+      precision: 精确
+    kind: 逝世
+    route_order: 11
+    memorial_only: false
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - name: 琵琶亭
+    modern_name: 江西省九江市长江边琵琶亭
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 后世纪念建筑历代屡迁重建，现址坐标待核
+    visit_date:
+      text: 不详
+      precision: 未知
+    kind: 纪念地
+    route_order: 12
+    memorial_only: true
+    confidence: 确定
+    dispute: 后人因琵琶行湓浦口送客故事而建亭纪念，非白氏确证到访的建筑本体；仅作纪念地著录。
+    source_ids: [src-qts-baijuyi]
+
+relations:
+  - relation_type: 挚友
+    target_id: liuyuxi
+    direction: 双向
+    period:
+      text: "约826年扬州初逢后唱和终身，至846年居易卒"
+      year: 826
+      range_end: 845
+      precision: 范围
+    evidence: 新唐书本传记元白酬咏之外，称稹卒又与刘禹锡齐名号刘白；二人晚年唱和累帙，居易序刘集举彭城刘梦得诗豪者也其锋森然少敢当者为定评。双向关系另见刘禹锡详卷对应条目。
+    source_ids: [src-xts-vol119]
+  - relation_type: 社群
+    target_id: dufu
+    direction: 双向
+    period:
+      text: 无直接交往；杜甫卒（770）在居易生（772）之前，二人时代不相接
+      precision: 未知
+    evidence: 无任何交往记录。此条实为文学史脉络上的社群对照：居易与元稹书中论杜诗最多可传者千余首，撮其新安石壕潼关吏诸章朱门酒肉臭路有冻死骨之句，以杜诗为讽谕传统的最高参照。
+    inferred: true
+    confidence: 存疑
+    dispute: 二人生卒不相值，任何直接交往的传闻均属附会；白承杜之写实讽谕一路系后世文学史建构而非实际交谊。
+    source_ids: [src-jts-vol166]
+  - relation_type: 思想影响
+    target_id: libai
+    direction: 单向
+    period:
+      text: "约815年末—816年初（江州期诗论中）"
+      year: 815
+      range_end: 816
+      precision: 范围
+    evidence: 与元稹书评李杜云诗之豪者世称李杜，李之作才矣奇矣人不迨矣，索其风雅比兴十无一焉；以李白为才奇而不合风雅比兴的批评参照系，反向确立自家讽谕诗学。
+    confidence: 确定
+    source_ids: [src-jts-vol166]
+
+reception:
+  - era: 同时代
+    evaluator: 顾况
+    quote: 吾谓斯文遂绝，今复得子矣！
+    text_display: excerpt
+    comment: 新旧唐书均载顾况览其文迎门礼遇之事，文字小异；为白氏少年才名的同时代权威见证，亦奠定其早慧叙事的原型。
+    source_ids: [src-jts-vol166, src-xts-vol119]
+  - era: 历代批评
+    evaluator: 杜牧（新唐书赞所引）
+    quote: 纤艳不逞，非庄士雅人所为。流传人间，子父女母交口教授，淫言媟语入人肌骨不可去。
+    text_display: excerpt
+    comment: 新唐书史臣于赞中引杜牧语以纠其失，谓救所失不得不云；这是中唐以降针对元和体末流纤艳之风最尖锐的批评，与史臣观居易始以直道奋完节自高的褒语并存。
+    source_ids: [src-xts-vol119]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦新乐府运动的理论与实践、江州贬谪作为思想分期节点、元白次韵相酬与元和体的传播机制、旧唐书卒年大中之误的史源考辨等议题；具体论著引文须逐条取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 赋得古原草送别卖炭翁钱塘湖春行等长期入选中小学语文教材；西湖白堤虽非其捍湖故堤（白沙堤唐前已有），民间仍以之名寄托对白氏惠政的记忆。教材版本信息随学期变动，录入时须另行核验当期篇目。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众影视与网络传播
+    quote: ""
+    text_display: none
+    comment: 长恨歌琵琶行持续被改编为影视戏曲舞剧与流行歌曲，长恨歌主题实景演出成为文旅品牌；网络语境中绿蚁新醅酒与野火烧不尽成为高频引用文本。具体改编作品随档期变动，不作确证著录。
+    source_ids: []
+
+sources_used: [src-jts-vol166, src-xts-vol119, src-qts-baijuyi]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。29条年谱（6阶段）、11首作品、12处足迹、3组关系、5层接受史；新旧唐书异说全部落dispute字段}

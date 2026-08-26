@@ -1,0 +1,576 @@
+# 班固全景详卷（schema v1）
+# 史料审计表（TASK-003 批次；来源见 data/sources.yaml）：
+#
+# | 事实点 | 后汉书·卷40上(J) | 后汉书·卷40下(X) | 结论与置信 |
+# |---|---|---|---|
+# | 家世籍贯 | 固字孟堅；附父彪传：扶風安陵人，祖況越騎校尉，父稚廣平太守 | — | 确定(J) |
+# | 早慧 | 年九歲能屬文誦詩賦，及長博貫載籍九流百家無不窮究；所學無常師不為章句舉大義而已 | — | 确定(J) |
+# | 王充拊背 | 注引謝承書：年十三王充見之拊其背謂彪曰此兒必記漢事 | — | 确定（谢承书孤证，注引） |
+# | 奏记王苍 | 永平初東平王蒼輔政，時固始弱冠奏記說蒼 | — | 确定(J)；「始弱冠」与生于32年说有十余年出入，落dispute |
+# | 私修国史下狱 | 有人上書顯宗告固私改作國史，有詔下郡收固繫京兆獄盡取其家書 | — | 确定(J)；系年无载，永平五年说推定 |
+# | 班超救兄 | 固弟超恐固為郡所核考不能自明乃馳詣闕上書得召見具言固所著述意 | — | 确定(J)，兄弟关系正史铁证 |
+# | 兰台起步 | 顯宗甚奇之召詣校書部除蘭台令史與陳宗尹敏孟異共成世祖本紀；遷為郎典校秘書；撰列傳載記二十八篇奏之帝乃復使終成前所著書 | — | 确定(J) |
+# | 汉书成书 | 起元高祖終於孝平王莽之誅十有二世二百三十年紀表志傳凡百篇；自永平中始受詔潛精積思二十餘年至建初中乃成當世甚重其書學者莫不諷誦焉 | — | 确定(J) |
+# | 两都赋 | 乃上兩都賦盛稱洛邑制度之美以折西賓淫侈之論（赋全文在本卷） | 明堂辟雍靈台寶鼎白雉五诗在下卷 | 确定(J) |
+# | 章帝恩宠 | — | 及肅宗雅好文章固愈得幸數入讀書禁中；朝廷有大議使難問公卿；位不過郎感東方朔楊雄自論作賓戲；後遷玄武司馬；會諸儒講論五經作白虎通德論令固撰集其事 | 确定(X) |
+# | 匈奴和亲议 | — | 北單于遣使貢獻求欲和親，固議以為宜依故事復遣使者 | 确定(X)；系年推定 |
+# | 典引 | — | 固又作典引篇述敘漢德以為相如封禪靡而不典楊雄美新典而不實 | 确定(X) |
+# | 从军北征 | — | 固後以母喪去官。永元初大將軍竇憲出征匈奴以固為中護軍與參議；遣固行中郎將事將數百騎出居延塞迎北單于使；會南匈奴掩破北庭固至私渠海聞虜中亂引還 | 确定(X)；燕然刻石作铭事出窦宪传（卷23），本卷未实取，按存疑处理 |
+# | 死狱中 | — | 及竇憲敗固先坐免官。洛陽令種兢嘗行固奴干其車騎奴醉罵兢大怒畏憲不敢發心銜之。及竇氏賓客皆逮考兢因此捕繫固遂死獄中。時年六十一。詔以譴責兢抵主者吏罪 | 确定(X)；责任归属双层：种兢挟怨直接动手＋窦氏党案株连背景，分层落dispute |
+# | 范晔论赞 | — | 論曰：遷文直而事核固文贍而事詳。若固之序事不激詭不抑抗贍而不穢詳而有體……固傷遷博物洽聞不能以智免極刑然亦身陷大戮智及之而不能守之 | 确定(X) |
+# | 生卒闭合 | — | 卒時年六十一 | 卒于窦宪败后（永元四年，92）→ 92-61+1=32，生卒32—92闭合 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: bangu
+
+profile:
+  courtesy_name: 孟坚
+  art_name: ""
+  aliases: [班兰台]
+  gender: 男
+  ethnicity: ""
+  ancestry: 扶风安陵
+  birthplace: 扶风安陵
+  death_place: 洛阳（死狱中）
+  offices: [兰台令史, 郎（典校秘书）, 玄武司马, 中护军, 行中郎将事]
+  fields: [文学]
+  roles: [史学家, 散文家, 辞赋家]
+  summary: 断代为史的《汉书》作者，兰台二十年潜精积思终成正史典范，却死于外戚党案的牢狱之中。
+
+timeline:
+  # ── 阶段一：少年安陵 ──────────────────────────────
+  - stage: 少年安陵
+    stage_order: 1
+    title: 生于扶风安陵儒史之家
+    date:
+      text: "约32年"
+      year: 32
+      precision: 约
+    place: 扶风安陵
+    summary: 祖况成帝时为越骑校尉，父稚哀帝时为广平太守。生年正史不书，由本传卒时年六十一与卒于窦宪败后（永元四年，公元92年）倒推闭合。
+    confidence: 存疑
+    dispute: 生年32系倒推所得；而本传注引谢承书谓其十三岁时王充已见其才，奏记东平王苍又系于永平初并称始弱冠，诸点与32年生说存在十余年出入，学界有异说。
+    source_ids: [src-houhanshu-vol40b]
+  - stage: 少年安陵
+    stage_order: 2
+    title: 九岁能属文诵诗赋，长而博览九流百家
+    date:
+      text: 约41—55年之间
+      year: 41
+      range_end: 55
+      precision: 范围
+    place: 扶风安陵
+    summary: 本传记年九岁能属文诵诗赋，及长遂博贯载籍，九流百家之言无不穷究。所学无常师，不为章句，举大义而已。性宽和容众，不以才能高人，诸儒以此慕之。
+    source_ids: [src-houhanshu-vol40b]
+  - stage: 少年安陵
+    stage_order: 3
+    title: 王充拊背预言，弱冠奏记东平王苍
+    date:
+      text: "约58年"
+      year: 58
+      precision: 约
+    place: 洛阳
+    summary: 注引谢承书载十三岁时王充见之拊其背谓彪曰此儿必记汉事。永平初东平王苍以至戚为骠骑将军辅政开东阁延英雄，时固始弱冠，奏记说苍劝其总览贤才为国得人，苍纳之。
+    confidence: 存疑
+    dispute: 奏记王苍系于永平初且称始弱冠，与生于约32年说相抵牾；王充拊背为谢承书孤证。
+    source_ids: [src-houhanshu-vol40b]
+
+  # ── 阶段二：归乡修史与京兆之狱 ────────────────────
+  - stage: 归乡修史与京兆之狱
+    stage_order: 4
+    title: 父班彪卒，归乡里欲续前史
+    date:
+      text: "54年"
+      year: 54
+      precision: 精确
+    place: 扶风安陵
+    summary: 班彪官望都长，建武三十年年五十二卒官。彪曾继司马迁太初以后之阙作后传数十篇。固以彪所续前史未详，乃潜精研思欲就其业，归乡里续撰。
+    source_ids: [src-houhanshu-vol40b]
+  - stage: 归乡修史与京兆之狱
+    stage_order: 5
+    title: 被告私改作国史，收系京兆狱
+    date:
+      text: "约62年"
+      year: 62
+      precision: 约
+    place: 京兆（长安）
+    summary: 既而有人上书显宗告固私改作国史者，有诏下郡收固系京兆狱尽取其家书。先是扶风人苏朗伪言图谶事下狱死，郡吏核考之势严峻。
+    confidence: 存疑
+    dispute: 下狱系年本传无载，学界通行系于永平五年前后，此处从之；罪名实为私修国史，反映东汉国史书写权未放之前提。
+    source_ids: [src-houhanshu-vol40b]
+  - stage: 归乡修史与京兆之狱
+    stage_order: 6
+    title: 弟班超驰诣阙上书，显宗奇之
+    date:
+      text: "约62年"
+      year: 62
+      precision: 约
+    place: 洛阳
+    summary: 弟超恐固为郡所核考不能自明，乃驰诣阙上书，得召见，具言固所著述意，而郡亦上其书。显宗甚奇之，召诣校书部——私修国史的嫌疑就此转为朝廷修史的委任。
+    source_ids: [src-houhanshu-vol40b]
+
+  # ── 阶段三：兰台著述 ──────────────────────────────
+  - stage: 兰台著述
+    stage_order: 7
+    title: 除兰台令史，共成世祖本纪，迁郎典校秘书
+    date:
+      text: 约62—65年之间
+      year: 62
+      range_end: 65
+      precision: 范围
+    place: 洛阳兰台
+    summary: 除兰台令史，与前睢阳令陈宗、长陵令尹敏、司隶从事孟异共成世祖本纪。迁为郎，典校秘书。又撰功臣、平林、新市、公孙述事，作列传载记二十八篇奏之，帝乃复使终成前所著书。
+    confidence: 存疑
+    dispute: 迁郎年份据除兰台令史后的升迁次第推定。
+    source_ids: [src-houhanshu-vol40b]
+  - stage: 兰台著述
+    stage_order: 8
+    title: 受诏终成汉书，潜精积思二十余年
+    date:
+      text: 约66—79年之间
+      year: 66
+      range_end: 79
+      precision: 范围
+    place: 洛阳兰台
+    summary: 固以为汉绍尧运以建帝业，太初以后阙而不录，故探撰前记缀集所闻以为汉书：起元高祖终于孝平王莽之诛，十有二世二百三十年，为纪表志传凡百篇。自永平中始受诏，潜精积思二十余年，至建初中乃成。当世甚重其书，学者莫不讽诵焉。
+    source_ids: [src-houhanshu-vol40b]
+  - stage: 兰台著述
+    stage_order: 9
+    title: 上两都赋，折西宾淫侈之论
+    date:
+      text: 约65—79年之间
+      year: 65
+      range_end: 79
+      precision: 范围
+    place: 洛阳
+    summary: 时京师修起宫室浚缮城隍，而关中耆老犹望朝廷西顾。固感前世相如寿王东方之徒造构文辞终以讽劝，乃上两都赋，盛称洛邑制度之美以折西宾淫侈之论。赋末缀明堂、辟雍、灵台、宝鼎、白雉五诗。
+    confidence: 存疑
+    dispute: 上赋确年无载，据其为郎后遂见亲近的语境系于兰台时期。
+    source_ids: [src-houhanshu-vol40b]
+  - stage: 兰台著述
+    stage_order: 10
+    title: 白虎观议奏，奉诏撰集白虎通德论
+    date:
+      text: "79年"
+      year: 79
+      precision: 精确
+    place: 洛阳白虎观
+    summary: 肃宗雅好文章，固愈得幸，数入读书禁中或连日继夜，每行巡狩辄献上赋颂，朝廷有大议使难问公卿辩论于前。天子会诸儒讲论五经，作白虎通德论，令固撰集其事。会议在章帝建初四年。
+    source_ids: [src-houhanshu-vol40b]
+  - stage: 兰台著述
+    stage_order: 11
+    title: 位不过郎，作答宾戏自通；后迁玄武司马
+    date:
+      text: 约76—88年之间
+      year: 76
+      range_end: 88
+      precision: 范围
+    place: 洛阳
+    summary: 固自以二世才术位不过郎，感东方朔扬雄自论，以不遭苏张范蔡之时，作宾戏以自通焉。后迁玄武司马，主玄武门，秩比千石。
+    confidence: 存疑
+    dispute: 作宾戏与迁玄武司马的先后间隔本传无载，统系于章帝朝。
+    source_ids: [src-houhanshu-vol40b]
+  - stage: 兰台著述
+    stage_order: 12
+    title: 作典引，自许迈轶相如扬雄
+    date:
+      text: 约79—88年之间
+      year: 79
+      range_end: 88
+      precision: 范围
+    place: 洛阳
+    summary: 固又作典引篇述叙汉德，以为相如封禅靡而不典，扬雄美新典而不实，盖自谓得其致焉——以汉承尧后续尧典自命。
+    confidence: 存疑
+    dispute: 典引作年无确载，从章帝朝恩宠最盛期推定。
+    source_ids: [src-houhanshu-vol40b]
+
+  # ── 阶段四：北征幕府 ──────────────────────────────
+  - stage: 北征与狱死
+    stage_order: 13
+    title: 北单于求和亲，固议宜依故事复遣使者
+    date:
+      text: "约88年"
+      year: 88
+      precision: 约
+    place: 洛阳
+    summary: 时北单于遣使贡献求欲和亲，诏问群僚，议者多言不可。固议历数汉兴以来绥御匈奴或修文以和之或用武以征之，未有拒绝弃放不与交接者，主张宜依故事复遣使者，明中国主在忠信。
+    confidence: 存疑
+    dispute: 和亲议系年本传无载，置于窦宪出征前夕的语境中推定。
+    source_ids: [src-houhanshu-vol40b]
+  - stage: 北征与狱死
+    stage_order: 14
+    title: 以母丧去官，入窦宪幕为中护军
+    date:
+      text: "约89年"
+      year: 89
+      precision: 约
+    place: 洛阳至漠北军中
+    summary: 固后以母丧去官。永元初大将军窦宪出征匈奴，以固为中护军与参议。随军登燕然山刻石勒功令固作铭一事载于窦宪传，本传未及。
+    confidence: 存疑
+    dispute: 中护军任命系永元初；燕然刻石作铭出处为后汉书窦宪传（卷二十三），不在本卷所据卷四十上下文本内，故相关条目均按存疑与推定处理。
+    source_ids: [src-houhanshu-vol40b]
+  - stage: 北征与狱死
+    stage_order: 15
+    title: 行中郎将事，出居延塞迎北单于使，至私渠海引还
+    date:
+      text: 约89—90年之间
+      year: 89
+      range_end: 90
+      precision: 范围
+    place: 居延塞至私渠海
+    summary: 北单于闻汉军出遣使款居延塞欲修呼韩邪故事请大使。宪上遣固行中郎将事，将数百骑与虏使俱出居延塞迎之。会南匈奴掩破北庭，固至私渠海闻虏中乱引还。
+    source_ids: [src-houhanshu-vol40b]
+  - stage: 北征与狱死
+    stage_order: 16
+    title: 窦宪败，固先坐免官
+    date:
+      text: "约92年"
+      year: 92
+      precision: 约
+    place: 洛阳
+    summary: 及窦宪败，固先坐免官——因曾入宪幕而首先被牵连去职。
+    confidence: 存疑
+    dispute: 窦宪败亡在永元四年（92），据东汉编年推定；本传仅记及窦宪败固先坐免官而不书年份。
+    source_ids: [src-houhanshu-vol40b]
+  - stage: 北征与狱死
+    stage_order: 17
+    title: 种兢捕系，死洛阳狱中，年六十一
+    date:
+      text: "约92年"
+      year: 92
+      precision: 约
+    place: 洛阳狱
+    summary: 固不教学诸子，诸子多不遵法度吏人苦之。初洛阳令种兢尝行，固奴干其车骑，奴醉骂，兢大怒，畏宪不敢发心衔之。及窦氏宾客皆逮考，兢因此捕系固，遂死狱中。时年六十一。和帝诏以谴责兢，抵主者吏罪。
+    confidence: 有争议
+    dispute: 责任归属分两层如实记录——直接动因是洛阳令种兢挟私怨报复（借逮考窦氏宾客之机捕系），背景是窦宪党案株连的政治气氛；朝廷事后谴责种兢并抵罪主者吏，可证当时已视为冤滥。
+    source_ids: [src-houhanshu-vol40b]
+
+works:
+  - work_id: hanshu
+    title: 汉书
+    alt_titles: [汉书百篇, 前汉书]
+    genre: 断代纪传体正史
+    date:
+      text: 约公元66—79年之间（永平受诏至建初成书）
+      year: 66
+      range_end: 79
+      precision: 范围
+    place: 洛阳兰台
+    context: 起父业、承诏命而成：起元高祖终于孝平王莽之诛，十有二世二百三十年，纪表志传凡百篇。自永平中始受诏潜精积思二十余年，至建初中乃成。当世甚重其书学者莫不讽诵焉。
+    attribution: 确凿
+    excerpt: 固以为汉绍尧运，以建帝业，至于六世……故探撰前记，缀集所闻，以为《汉书》。起元高祖，终于孝平王莽之诛，十有二世，二百三十年，综其行事，傍贯五经，上下洽通。
+    text_display: excerpt
+    themes: [史学, 典制]
+    influence: 中国第一部断代史，创纪传体断代为史的范式，此后历代正史皆祖述之；与史记并称史汉，优劣之争延续千年。
+    source_ids: [src-houhanshu-vol40b]
+
+  - work_id: hanshu-su-wu-zhuan
+    title: 汉书·李广苏建传（苏武节选）
+    alt_titles: [苏武传]
+    genre: 史传文学
+    date:
+      text: 汉书成书期间，约66—79年之间
+      year: 66
+      range_end: 79
+      precision: 范围
+    place: ""
+    context: 李广苏建传第二十四合李广李陵苏建苏武于一篇，苏武杖汉节牧羊十九年不改其守一节尤为千古传诵。李陵置酒贺武曰今足下还归扬名于匈奴功显于汉室虽古竹帛所载丹青所画何以过子卿。
+    attribution: 确凿
+    excerpt: 武既至海上，廩食不至，掘野鼠去草实而食之。杖汉节牧羊，卧起操持，节旄尽落。
+    text_display: excerpt
+    themes: [气节, 史传]
+    influence: 苏武牧羊故事的正史源头，后世民族气节叙事的原型文本。
+    confidence: 存疑
+    dispute: 本卷仅登记该篇条目；原文实取自维基文库汉书卷054页，该来源未在本文件注册表登记，故本条暂不带来源引用，后续批次应增补汉书来源后回填。
+    source_ids: []
+
+  - work_id: liang-du-fu
+    title: 两都赋
+    alt_titles: [两都赋（含明堂辟雍灵台宝鼎白雉五诗）]
+    genre: 大赋（京都赋）
+    date:
+      text: 兰台时期，约65—79年之间
+      year: 65
+      range_end: 79
+      precision: 范围
+    place: 洛阳
+    context: 关中耆老犹望朝廷西顾，固感前世相如寿王东方之徒造构文辞终以讽劝，乃上两都赋盛称洛邑制度之美以折西宾淫侈之论。设西都宾与东都主人问答，以西宾失容降阶作结。
+    attribution: 确凿
+    excerpt: 汉之西都，在于雍州，寔曰长安。左据函谷、二崤之阻，表以太华、终南之山。右界褒斜、陇首之险，带以洪河、泾、渭之川。华实之毛，则九州之上腴焉；防御之阻，则天下之奥区焉。
+    text_display: excerpt
+    themes: [京都, 礼制]
+    influence: 开京都大赋范式，张衡二京赋、左思三都赋皆祖此体；赋末五诗颂明堂辟雍灵台宝鼎白雉，为东汉礼制文学的标本。
+    source_ids: [src-houhanshu-vol40b]
+
+  - work_id: you-tong-fu
+    title: 幽通赋
+    alt_titles: []
+    genre: 骚体赋
+    date:
+      text: 成年早年所作，确切年份不详
+      precision: 未知
+    place: ""
+    context: 致命遂志之作：系高颛之玄胄自叙家世，梦登山迥眺觌幽人之仿佛而究天人性命之理，乱曰保身遗名民之表兮舍生取谊以道用兮。
+    attribution: 确凿
+    excerpt: 系高颛之玄胄兮，氏中叶之炳灵。……魂茕茕与神交兮，精诚发于宵寐。梦登山而迥眺兮，觌幽人之髣彿。……舍生取谊，以道用兮。忧伤夭物，忝莫痛兮。
+    text_display: excerpt
+    themes: [性命, 自省]
+    influence: 东汉述志骚体赋代表，萧统文选收录。
+    confidence: 存疑
+    dispute: 后汉书班固传亦录此赋；本卷摘句实取自维基文库幽通赋单篇页（文选卷十四系统），该来源未在本文件注册表登记，故暂不带来源引用。
+    source_ids: []
+
+  - work_id: bai-hu-tong-yi
+    title: 白虎通义
+    alt_titles: [白虎通德论, 白虎通]
+    genre: 经学总集（奉诏撰集）
+    date:
+      text: "79年白虎观会议后撰集"
+      year: 79
+      precision: 约
+    place: 洛阳白虎观
+    context: 天子会诸儒讲论五经作白虎通德论令固撰集其事。性质是撰集白虎观议奏而成的经学总集而非个人专著：皇帝亲称制临决，班固承担整理定稿。今本四十四篇，三纲六纪篇为其伦纲纲领。
+    attribution: 确凿
+    excerpt: 三纲者何谓也？谓君臣、父子、夫妇也。六纪者，谓诸父、兄弟、族人、诸舅、师长、朋友也。
+    text_display: excerpt
+    themes: [经学, 礼制]
+    influence: 今文经学官方结论的总汇，三纲六纪之说由此定型，深刻塑造两千年伦理秩序话语。
+    confidence: 存疑
+    dispute: 撰集体裁意味着部分篇章归属历来有讨论；摘句实取自维基文库白虎通卷07页，该来源未在本文件注册表登记，故撰集事实引本传而摘句暂不带独立来源。
+    source_ids: [src-houhanshu-vol40b]
+
+  - work_id: da-bin-xi
+    title: 答宾戏
+    alt_titles: [宾戏]
+    genre: 设论文
+    date:
+      text: 章帝朝，约76—88年之间
+      year: 76
+      range_end: 88
+      precision: 范围
+    place: 洛阳
+    context: 固自以二世才术位不过郎，感东方朔答客难扬雄解嘲自论，以不遭苏张范蔡之时，聊复应焉——以宾主问答申明君子守道不苟合于时。
+    attribution: 确凿
+    excerpt: 盖闻圣人有一定之论，烈士有不易之分……太上有立德，其次有立功。……时暗而久章者，君子之真也。
+    text_display: excerpt
+    themes: [抒怀, 处世]
+    influence: 与答客难解嘲同体的士人不遇主题名文，文选收录；本传所著目录四十一篇中有宾戏一目。
+    source_ids: [src-houhanshu-vol40b]
+
+  - work_id: dian-yin
+    title: 典引
+    alt_titles: []
+    genre: 颂赞体大赋
+    date:
+      text: 约79—88年之间
+      year: 79
+      range_end: 88
+      precision: 范围
+    place: 洛阳
+    context: 固又作典引篇述叙汉德，以为相如封禅靡而不典扬雄美新典而不实盖自谓得其致焉——以汉承尧后续尧典自命，是班固文学自负的宣言。
+    attribution: 确凿
+    excerpt: 太极之原，两仪始分……有沉而奥，有浮而清。沉浮交错，庶类混成。
+    text_display: excerpt
+    themes: [颂汉, 典制]
+    influence: 封禅类颂赞文学的殿军之作；本传所著目录四十一篇首列典引。
+    source_ids: [src-houhanshu-vol40b]
+
+  - work_id: yan-ran-shan-ming
+    title: 燕然山铭
+    alt_titles: [封燕然山铭]
+    genre: 铭
+    date:
+      text: "约89年（永元元年）"
+      year: 89
+      precision: 约
+    place: 燕然山
+    context: 永元初窦宪出征匈奴，登燕然山刻石勒功，令班固作铭纪汉威德——勒石纪功的文学化执行者。本卷所据卷四十上下文本未载此事，事出后汉书窦宪传。
+    attribution: 确凿
+    text_display: none
+    themes: [纪功, 边塞]
+    influence: 勒石燕然自此成为武功极致的典故；2010年代蒙古国杭爱山摩崖调查引发铭文实证热议。
+    confidence: 存疑
+    dispute: 作铭事与铭文原文均载于后汉书窦宪传（卷二十三），不在本文件已实取并登记的来源之内；铭文摘句留待增补该来源并另行实取后补入，本条先按存疑登记存在性。
+    source_ids: []
+
+footprints:
+  - name: 扶风安陵（故里）
+    modern_name: 陕西省咸阳市渭城区一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约32年生，54年父卒后归乡里"
+      year: 32
+      range_end: 62
+      precision: 范围
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-houhanshu-vol40b]
+  - name: 京兆狱
+    modern_name: 陕西省西安市一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约62年被告私改作国史，收系于此"
+      year: 62
+      precision: 约
+    kind: 游历
+    route_order: 2
+    memorial_only: false
+    confidence: 存疑
+    dispute: 第一次下狱地在京兆狱（长安），时固归乡里扶风；系年从永平五年前后通行说推定。
+    source_ids: [src-houhanshu-vol40b]
+  - name: 洛阳兰台（校书部）
+    modern_name: 河南省洛阳市汉魏故城遗址一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约62年起除兰台令史、典校秘书，著述二十余年
+      year: 62
+      range_end: 90
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    source_ids: [src-houhanshu-vol40b]
+  - name: 白虎观
+    modern_name: 河南省洛阳市汉魏故城北宫一带
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 白虎观为北宫宫殿名，具体地望系学术推定，坐标待接入体系
+    visit_date:
+      text: "79年白虎观会议"
+      year: 79
+      precision: 精确
+    kind: 游历
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    source_ids: [src-houhanshu-vol40b]
+  - name: 居延塞至私渠海（随军路线）
+    modern_name: 内蒙古额济纳旗至蒙古国境漠北一线
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 路线走向据本传将数百骑与虏使俱出居延塞迎之、至私渠海引还推定
+    visit_date:
+      text: 约89—90年之间行中郎将事迎北单于使
+      year: 89
+      range_end: 90
+      precision: 范围
+    kind: 游历
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    source_ids: [src-houhanshu-vol40b]
+  - name: 燕然山（随军刻石处）
+    modern_name: 蒙古国杭爱山
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 刻石勒功事据后汉书窦宪传（卷二十三）记载推定，本卷未实取该来源；摩崖位置为近年调查议题
+    visit_date:
+      text: "约89年随窦宪大军过此"
+      year: 89
+      precision: 约
+    kind: 游历
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 到访依据来自窦宪传而非本文件登记的卷四十上下文本，按推定项降级处理。
+    source_ids: [src-houhanshu-vol40b]
+  - name: 洛阳狱
+    modern_name: 河南省洛阳市老城区一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约92年被种兢捕系，死狱中，年六十一"
+      year: 92
+      precision: 约
+    kind: 逝世
+    route_order: 7
+    memorial_only: false
+    confidence: 存疑
+    dispute: 卒年据窦宪败（永元四年）后逮考党案的时序推定；死狱责任归属分层详见 timeline 对应条目。
+    source_ids: [src-houhanshu-vol40b]
+
+relations:
+  - relation_type: 思想影响
+    target_id: simaqian
+    direction: 双向
+    period:
+      text: 史学史层面的承继与对话，二人时代不相及
+      precision: 未知
+    evidence: 班彪父子承史记太初以后之阙而讥其是非颇谬于圣人、崇黄老而薄五经，改世家入传断汉为史；范晔论曰并称迁文直而事核固文赡而事详，又谓固伤迁不能以智免极刑然亦身陷大戮智及之而不能守之——承其体例又辨其是非，构成史学史上最著名的对话。
+    inferred: true
+    confidence: 存疑
+    dispute: 双向指史学传承对话关系（思想影响互评），非现实交往；褒贬归纳系范晔论赞与班彪略论的转述。
+    source_ids: [src-houhanshu-vol40b]
+  - relation_type: 亲属
+    target_id: banchao
+    direction: 双向
+    period:
+      text: 约54—92年间兄弟同朝；超后经营西域至102年卒
+      year: 54
+      range_end: 92
+      precision: 范围
+    evidence: 正史铁证——本传载固弟超恐固为郡所核考不能自明，乃驰诣阙上书，得召见，具言固所著述意，救兄于京兆之狱；班超传别有传，兄弟一门文武并显。
+    source_ids: [src-houhanshu-vol40b]
+
+reception:
+  - era: 同时代
+    evaluator: 显宗（汉明帝）
+    quote: 顯宗甚奇之
+    text_display: excerpt
+    comment: 读其所著书后由私修国史的嫌犯转为校书部官员并委以终成前书，当代最高权力对这部国史的正式承认。
+    source_ids: [src-houhanshu-vol40b]
+  - era: 同时代
+    evaluator: 东汉学界
+    quote: 當世甚重其書，學者莫不諷誦焉
+    text_display: excerpt
+    comment: 汉书在建初年间成书即风行，讽诵成风是当时接受度的直接记录。
+    source_ids: [src-houhanshu-vol40b]
+  - era: 历代批评
+    evaluator: 范晔（后汉书论曰）
+    quote: 若固之序事，不激詭，不抑抗，贍而不穢，詳而有體，使讀之者亹亹而不猒，信哉其能成名也。
+    text_display: excerpt
+    comment: 论赞褒贬并陈——既许固文赡而事详的良史之才，又记其父子讥迁是非颇谬于圣人，而责其排死节否正直、身陷大戮智及之而不能守之；这一评价框架主导了此后千年史汉优劣之争的基本议题。
+    source_ids: [src-houhanshu-vol40b]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦汉书与史记的优劣公案再检讨、断代体例与十志典制价值、汉书曲笔与为汉室张本的批评、以及生卒年与著述系年的考订等议题；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 苏武牧羊持节不屈的故事源自汉书李广苏建传，已成为民族气节的公共文化符号；投笔从戎的班超叙事中也常以其兄修史为对照。教材选文版本随学期变动，录入时须另行核验当期篇目。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 影视剧与网络传播
+    quote: ""
+    text_display: none
+    comment: 班固形象多作为窦宪北征与燕然勒石故事的配角出现，无权威影视改编定本；网络流传生平资料真伪混杂，录入任何具体作品须逐部核验版权与史实。
+    source_ids: []
+
+sources_used: [src-houhanshu-vol40b]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。17条年谱（4阶段）、8种作品、7处足迹、2组关系、6层接受史；全部史料实取自维基文库后汉书卷40上下；燕然山铭与苏武传等待补来源条目均按存疑如实标注}

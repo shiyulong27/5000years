@@ -1,0 +1,477 @@
+# 吴承恩全景详卷（schema v1）
+# 史料审计表（实取证据分层；来源登记见 data/sources.yaml，本卷已登记可用来源仅 src-xiyouji）：
+#
+# 【文本层｜维基文库实取】
+# | 事实点 | 证据 | 结论与置信 |
+# |---|---|---|
+# | 西游记入口页 | https://zh.wikisource.org/wiki/西遊記 （2026-08-26 实取）：署名「作者：吳承恩　明」，20卷100回，百回回目完整，末附「附錄」与相关作品（大唐三藏取經詩話／後西遊記／續西遊記／西遊補等） | 文本层可引；文库署名系现代编纂者的通行归属标注，不构成明代证据 |
+# | 第一回全文 | https://zh.wikisource.org/wiki/西遊記/第001回 （2026-08-26 实取）：开篇诗「混沌未分天地亂……欲知造化會元功，須看《西遊釋厄傳》」与石猴出世段「內育仙胞，一日迸裂，產一石卵……化作一個石猴」逐字在手；石碣「花果山福地，水簾洞洞天」 | 文本层确定 |
+# | 陈元之序（世德堂本叙） | 站内检索「陳元之 敘」零命中；文库西游记入口页亦未收 | 序跋层不可实取，相关内容全部降为转述层并在正文注明 |
+#
+# 【存稿层｜维基文库实取（射阳先生存稿系统单篇）】
+# | 二郎搜山图歌 | https://zh.wikisource.org/wiki/二郎搜山圖歌 （2026-08-26 实取）：页面标注「本作品收錄於《射阳先生存稿》」，诗前序「二郎搜山卷，吾鄉豸史吳公家物。失去五十年，今其裔孫醴泉子復於參知李公家得之……為之作歌」及歌行全文在手 | 存稿系统文本可引；存稿为万历刻本递传系统，异文未经善本校勘，置信注存稿流传层 |
+#
+# 【府志书目层｜转引实取（原典未核，注明未实取原典、据近现代整理转引）】
+# | 天启淮安府志卷16人物志二近代文苑、卷19艺文志一淮贤文目 | 经鲁迅《小说旧闻钞·西游记》转引页实取（https://zh.wikisource.org/wiki/小說舊聞鈔/西遊記 ，2026-08-26）：「吳承恩性敏而多慧，博極羣書，爲詩文下筆立成，清雅流麗，有秦少遊之風。復善諧劇，所著雜記幾種，名震一時。數奇，竟以明經授縣貳，未久，恥折腰，遂拂袖而歸，放浪詩酒，卒。」「吳承恩射陽集四冊」 | 转引层可信但非原典；府志未言西游记卷数回目，未言县贰为何县 |
+# | 千顷堂书目（四库全书本）卷24 | 站内检索实取片段：「吳承恩射陽先生存稿〈字汝忠山陽人〉」 | 集部著录确认字号里贯；该书目是否另于他类著录西游记涉版本差异，本卷不断语 |
+#
+# 【后世考证层｜中立转述（现代论著原文一律不引）】
+# | 胡适《西游记考证》《读吴承恩射阳文存》、鲁迅《中国小说史略》第十七篇、阮葵生《茶余客话》卷21 | 经维基文库搜索结果页取得可读片段（生年约1500／父吴锐字廷器／嘉靖十一年父丧／岁贡官长兴县丞／射阳存稿四卷陈文烛序／「惟《淮賢文目》載射陽撰《西遊記通俗演義》」等），均只作转述依据 | 考证结论一律放本层转述，不写成信史 |
+#
+# 特别声明：西游记著作权为学术争议问题，作品条 attribution 用「存疑」并写明公案要点；生卒年（约1500—约1582）全部标推定；
+# 人际关系无可靠一手实据，relations 立零组（不编造）。
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: wuchengen
+
+profile:
+  courtesy_name: 汝忠
+  art_name: 射阳山人（一号射阳居士，通称射阳先生）
+  aliases: [吴射阳, 射阳先生]
+  gender: 男
+  ethnicity: ""
+  ancestry: 直隶淮安府山阳县（千顷堂书目层「字汝忠山阳人」）
+  birthplace: 淮安山阳（今江苏淮安；府志层）
+  death_place: 淮安山阳（推定；放浪诗酒终于故里的府志转引层表述）
+  offices: [长兴县丞（府志层「授县贰」＋近现代考证补正，年份推定）, 荆王府纪善（蕲州；后世方志与近现代考证转述层，存疑）]
+  fields: [文学]
+  roles: [小说家, 诗人]
+  summary: 《西游记》百回本通行归属下的最终写定者——科场蹭蹬、一生潦倒的谐剧之才；性敏多慧、名震一时的淮上才士，身后却因一部小说的著作权成为中国文学史上最著名的公案之一。
+
+timeline:
+  # ── 阶段一：淮安少年与聪慧之名 ────────────────────
+  - stage: 淮安少年与聪慧之名
+    stage_order: 1
+    title: 出生于淮安山阳
+    date:
+      text: 约1500年（推定）
+      year: 1500
+      precision: 约
+    place: 淮安山阳
+    summary: 生年无任何当时记载，通行据行迹与卒年倒推为约1500年；全部属推定层，不能当信史引用。
+    confidence: 存疑
+    dispute: 生年诸谱推定不一，通说约弘治十三年（1500），另有约正德元年（1506）等说；本卷从约1500并全程标推定。
+    source_ids: []
+  - stage: 淮安少年与聪慧之名
+    stage_order: 2
+    title: 家世与父亲吴锐
+    date:
+      text: 正德、嘉靖年间，具体年代不详
+      precision: 未知
+    place: 淮安山阳
+    summary: 存稿中《先府宾墓志》记其家世：父吴锐字廷器，终身未尝入州府，郡守以为贤，乡饮召为宾；嘉靖十一年（1532）父死。墓志原文本次未实取，以上为后世考证层对存稿内容的转述。
+    confidence: 存疑
+    dispute: 墓志文本未实取，家世细节依近现代研究转引；父卒年（1532）为转引层信息。
+    source_ids: []
+  - stage: 淮安少年与聪慧之名
+    stage_order: 3
+    title: 性敏多慧，善谐剧，名震一时
+    date:
+      text: 早年，具体年代不详
+      precision: 未知
+    place: 淮安山阳
+    summary: 天启《淮安府志》称其性敏而多慧，博极群书，为诗文下笔立成，清雅流丽，有秦少游之风；复善谐剧，所著杂记几种，名震一时。此为吴承恩才名最核心的同时代（明代）评价，然本次系经鲁迅《小说旧闻钞》转引页实取，未核府志原典。
+    confidence: 存疑
+    dispute: 府志原文未实取，据转引页录入；「所著杂记几种」未列书名，后人据此悬想与西游记有关，府志本身并无此言。
+    source_ids: [src-xiaoshuojiuwenchao]
+
+  # ── 阶段二：科场久困，岁贡出身 ────────────────────
+  - stage: 科场久困岁贡出身
+    stage_order: 4
+    title: 科场蹭蹬，屡试不售
+    date:
+      text: 嘉靖前期至中期，具体年份不详
+      precision: 未知
+    place: 淮安、南京（应试圈）
+    summary: 才名早著而科举不利，久困场屋，中年后始以岁贡出身——府志所谓数奇。一生仕途由此定格于下僚。
+    confidence: 存疑
+    dispute: 应举次数与补岁贡年份诸谱不一（多说系于嘉靖中后期），均系近现代年谱推定，无一手系年材料。
+    source_ids: []
+  - stage: 科场久困岁贡出身
+    stage_order: 5
+    title: 以明经（岁贡）出身
+    date:
+      text: 约嘉靖二十九年至三十九年之间（推定）
+      year: 1550
+      range_end: 1560
+      precision: 范围
+    place: 淮安
+    summary: 府志记竟以明经授县贰；胡适考证转述为嘉靖中岁贡生。岁贡是其最高功名，亦是理解其一生的钥匙——大才而下僚，谐剧之才与困顿处境的反差塑造了其文字世界的游戏笔墨。
+    confidence: 存疑
+    dispute: 补岁贡的确切年份无载，各家年谱出入颇大，此处仅框定大致范围并标推定。
+    source_ids: []
+
+  # ── 阶段三：长兴县丞与王府纪善（府志层，年份推定）──
+  - stage: 长兴县丞与王府纪善
+    stage_order: 6
+    title: 就任长兴县丞
+    date:
+      text: 约1566年（推定）
+      year: 1566
+      precision: 约
+    place: 长兴（今浙江湖州长兴县）
+    summary: 府志仅云授县贰未指何县；长兴县丞之任见于后世方志选举与近现代考证互证，通行系于嘉靖末，与知县归有光先后同官长兴亦为学界通说（转述，本卷不据此立关系条）。
+    confidence: 存疑
+    dispute: 任份年份诸说出入（嘉靖四十五年至隆庆初均有主张）；与归有光的交往细节无一手实证，均按转述层处理。
+    source_ids: [src-xiaoshuojiuwenchao]
+  - stage: 长兴县丞与王府纪善
+    stage_order: 7
+    title: 耻折腰，拂袖而归
+    date:
+      text: 任县丞未久，约1570年前后（推定）
+      year: 1570
+      precision: 约
+    place: 长兴
+    summary: 府志记其未久，耻折腰，遂拂袖而归，放浪诗酒——不肯逢迎而去官，是府志笔下对其宦途的定性叙述。
+    confidence: 存疑
+    dispute: 去职缘由与年份府志未系年，拂袖而归的具体情事皆出后世铺陈，此处仅录府志转引层的表述。
+    source_ids: [src-xiaoshuojiuwenchao]
+  - stage: 长兴县丞与王府纪善
+    stage_order: 8
+    title: 补荆王府纪善（存疑）
+    date:
+      text: 约1570年代（推定）
+      year: 1570
+      range_end: 1580
+      precision: 范围
+    place: 蕲州荆王府（今湖北蕲春）
+    summary: 后世方志与近现代考证谓其离长兴后曾补授荆王府纪善（藩王府掌讲授陈设之职），晚境萧条中一度寄迹王府。此职不见于天启府志人物志正文，证据层级最弱。
+    confidence: 存疑
+    dispute: 纪善之任的原始记载层级复杂（后世志乘著录与近现代考证互证），年份纯属推定，本卷整体标存疑。
+    source_ids: []
+
+  # ── 阶段四：归里著述与西游记写定期（通行推定层）────
+  - stage: 归里著述与西游记写定期
+    stage_order: 9
+    title: 放浪诗酒，归里著述
+    date:
+      text: 约隆庆、万历之际起
+      year: 1572
+      range_end: 1582
+      precision: 范围
+    place: 淮安山阳
+    summary: 府志转引层记其归后放浪诗酒，卒；有文集存于家，丘少司徒汇而刻之。晚年在乡以诗文自娱，文名仍在淮上一隅。
+    confidence: 存疑
+    dispute: 归里后的具体行事几乎无一手材料，仅有府志概括语与存稿残篇可据。
+    source_ids: []
+  - stage: 归里著述与西游记写定期
+    stage_order: 10
+    title: 二郎搜山图歌——谐剧讽世的自我写照
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: 淮安
+    summary: 存稿名篇，诗前序记吾乡豸史吴公家物失而复得之事；歌中借二郎搜山写斩邪之志：民灾翻出衣冠中，不为猿鹤为沙虫；胸中磨损斩邪刀，欲起平之恨无力。讽世之意与西游记的游戏笔墨同一肝胆。文本经维基文库存稿系统页实取。
+    confidence: 存疑
+    dispute: 系年无载；文本属万历刻本递传的存稿系统，异文未经善本校勘，置信标存稿流传层。
+    source_ids: [src-sheyangcungao]
+  - stage: 归里著述与西游记写定期
+    stage_order: 11
+    title: 西游记百回本通行写定（推定）与世德堂本刊行
+    date:
+      text: 写定年无考；万历二十年（1592）世德堂本刊行（序跋层转述）
+      year: 1592
+      precision: 约
+    place: 淮安／金陵
+    summary: 通行归属说认为百回本最终写定者为吴承恩，写定年在万历刊行之前，具体无考。现存最早完整刊本为万历二十年金陵世德堂本，卷首有陈元之序（序跋层；本次文库检索未获其文，全部按转述处理）。文本层证据：第一回开篇诗以须看西游释厄传点题，石猴出世段俱在（实取）。
+    confidence: 存疑
+    dispute: 写定者是否吴承恩系学术争议（详见作品条著作权公案）；世德堂刊行年份与陈元之序内容均属序跋层转述，本次未实取原典。
+    source_ids: [src-xiyouji]
+
+  # ── 阶段五：身后著作权考辨成为问题 ──────────────────
+  - stage: 身后著作权考辨成为问题
+    stage_order: 12
+    title: 卒于淮安
+    date:
+      text: 约1582年（推定）
+      year: 1582
+      precision: 约
+    place: 淮安山阳
+    summary: 卒年同样无当时记载，通行推定为约万历十年（1582）；亦有约1580年左右等异说。生卒两端均为推定闭合。
+    confidence: 存疑
+    dispute: 卒年诸谱不一（约1580／约1582等），本卷从约1582并标推定。
+    source_ids: []
+  - stage: 身后著作权考辨成为问题
+    stage_order: 13
+    title: 卒后文集汇刻为射阳存稿
+    date:
+      text: 万历年间（转引层）
+      year: 1590
+      range_end: 1600
+      precision: 范围
+    place: 淮安
+    summary: 府志记丘少司徒汇而刻之；后世转引谓邑人收拾残缺分为四卷刊布，太守陈文烛为之序，名曰射阳存稿，又有续稿一卷——今传《射阳先生存稿》即此系统的万历刻本递传。千顷堂书目著录吴承恩射阳先生存稿（字汝忠山阳人）。
+    confidence: 存疑
+    dispute: 汇刻人与确切刊刻年份各转引略有出入（丘度／邱正纲等称谓异写并存）；千顷堂书目四库本卷24著录原文经搜索结果页取得，未逐字核对善本片段，全书版本差异未深校。
+    source_ids: [src-xiaoshuojiuwenchao]
+  - stage: 身后著作权考辨成为问题
+    stage_order: 14
+    title: 清代著作权疑云：丘作旧题与淮人记述并行
+    date:
+      text: 清代
+      year: 1644
+      range_end: 1911
+      precision: 范围
+    place: ""
+    summary: 清初刊本多沿元人旧题倡丘处机（或其门徒）作西游记之说；而淮安地方文献一脉则持续把西游记记在吴承恩名下——阮葵生《茶余客话》虽称此事真伪不值一辨，仍引淮贤文目载射阳撰西游记通俗演义。著作权问题在清代已成两造。
+    confidence: 存疑
+    dispute: 本条为历代批评层的中立转述；茶余客话片段经搜索结果页取得，未逐字核对善本。
+    source_ids: [src-xiaoshuojiuwenchao]
+  - stage: 身后著作权考辨成为问题
+    stage_order: 15
+    title: 近现代归属确立与当代异说并陈
+    date:
+      text: 20世纪20年代至今
+      year: 1920
+      precision: 约
+    place: ""
+    summary: 鲁迅《中国小说史略》与胡适《西游记考证》依据天启府志、淮贤文目一脉确立百回本最终写定者为吴承恩的通行说；此后学界持续存在异说——或据早期刊本陈元之序提华阳洞天主人校订（写定）说，或据千顷堂书目著录类别提出吴承恩西游记或为地理类游记而非小说的异说。诸说至今未有定谳。
+    confidence: 存疑
+    dispute: 本条为近现代学术层的中立转述，不采信任何一方为定论；现代论著原文一律不引。
+    source_ids: []
+
+works:
+  - work_id: xiyouji-baihuiben
+    title: 西游记（百回本）
+    alt_titles: [西游释厄传]
+    genre: 长篇神魔小说（章回体）
+    date:
+      text: 写定年无考；现存最早完整刊本为万历二十年（1592）金陵世德堂本
+      year: 1592
+      precision: 约
+    place: 金陵（刊行地）
+    context: 讲石头里生的猴王皈依佛法、护唐僧西天取经的神魔故事，以游戏笔墨包孕儒释道三教讽刺；第一回开篇诗点题西游释厄传，灵根育孕源流出心性修持大道生一回目统摄全书修心寓意。
+    attribution: 存疑
+    excerpt: 诗曰：混沌未分天地乱，茫茫渺渺无人见。自从盘古破鸿蒙，开辟从兹清浊辨。覆载群生仰至仁，发明万物皆成善。欲知造化会元功，须看《西游释厄传》。……内育仙胞，一日迸裂，产一石卵，似圆毬样大。因见风，化作一个石猴，五官俱备，四肢皆全。
+    text_display: excerpt
+    themes: [神魔, 取经, 修心寓义, 谐剧讽世]
+    influence: 中国四大名著之一，神魔小说的巅峰；孙悟空成为国民级文化形象，大闹天宫等段落进入戏曲、影视与儿童读物的公共记忆。
+    confidence: 有争议
+    dispute: 著作权公案要点——（1）通行说：鲁迅《中国小说史略》、胡适《西游记考证》据天启《淮安府志》著录（复善谐剧所著杂记几种名震一时）与《千顷堂书目》一脉，确立淮安吴承恩为百回本最终写定者；（2）府志仅言杂记几种，未言卷数回目，西游记是否即其中之一无明文；（3）《千顷堂书目》著录情况涉版本差异，有学者主张其著录之吴承恩西游记或为地理类游记而非小说；（4）早期刊本题华阳洞天主人校，陈元之序未确指作者，有学者据此提华阳洞天主人写定说；（5）清初通行本长期题丘处机（或其门徒）作，系沿元人旧题之演变。诸说并陈，本卷不作断语，attribution 标存疑。
+    source_ids: [src-xiyouji]
+
+  - work_id: erlang-soushan-tuge
+    title: 二郎搜山图歌
+    alt_titles: [二郎搜山圖歌]
+    genre: 七言歌行
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: 淮安（咏画本事）
+    context: 为家乡收藏的二郎搜山图画卷而作，借画发论——搜山伏魔的画面之下，是民灾翻出衣冠中的愤世与胸中磨损斩邪刀的无力量；历来被视为理解其谐剧外壳下讽世内核的第一手文本。文本收录于《射阳先生存稿》，经维基文库实取全文。
+    attribution: 确凿
+    excerpt: 诗前序：「二郎搜山卷，吾乡豸史吴公家物。失去五十年，今其裔孙醴泉子复于参知李公家得之，青毡再还，宝剑重合，真奇事也，为之作歌。」……胸中磨损斩邪刀，欲起平之恨无力。救月有矢救日弓，世间岂谓无英雄？
+    text_display: excerpt
+    themes: [题画, 讽世, 斩邪之志]
+    influence: 存稿中最常被援引与西游记互证的诗篇，搜山除妖意象与取经降魔叙事的同构性为学界津津乐道。
+    confidence: 存疑
+    dispute: 作者归属无疑（存稿系统自录）；惟存稿为万历刻本递传文本，异文未经善本校勘，且系年无载，置信标存稿流传层。
+    source_ids: [src-sheyangcungao]
+
+  - work_id: sheyang-xiansheng-cungao
+    title: 射阳先生存稿
+    alt_titles: [射阳存稿, 射阳先生存稿四卷续稿一卷]
+    genre: 诗文集合刻（词曲文赋俱存）
+    date:
+      text: 卒后万历年间汇刻（转引层）
+      year: 1590
+      range_end: 1600
+      precision: 范围
+    place: 淮安
+    context: 身后由乡人收拾残缺汇编刊行，太守陈文烛为之序（转引层）；今传万历刻本递传系统，收录二郎搜山图歌、先府宾墓志等。《千顷堂书目》卷24著录：吴承恩射阳先生存稿（字汝忠山阳人）。存稿是吴承恩研究的一手文本总汇。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [别集, 文献总汇]
+    influence: 其诗文真伪与生平考证的文献基盘；府志所谓文集存于家丘少司徒汇而刻之即指此结集脉络。
+    confidence: 存疑
+    dispute: 汇刻人（丘度／邱正纲等异写）与刊刻年份各转引略有出入；本次仅实取千顷堂书目著录片段与二郎搜山图歌单篇，存稿全书未实取。
+    source_ids: [src-sheyangcungao]
+
+  - work_id: yudingzhi
+    title: 禹鼎志
+    alt_titles: []
+    genre: 志怪小说集
+    date:
+      text: 成书年不详，久佚
+      precision: 未知
+    place: ""
+    context: 志怪短书集，原书已佚；其自序幸存于《射阳先生存稿》，自述幼年即喜储奇闻、及壮旁求曲致的传统，是判断其小说趣味的直接材料。府志所著杂记几种，后人多以禹鼎志当之，但并无明文。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [志怪, 佚书]
+    influence: 虽佚犹存的自序使其成为吴承恩小说观与西游记趣味连续性的关键旁证。
+    confidence: 存疑
+    dispute: 书佚，内容唯赖自序转述；自序文本本次未实取，按存稿转述层处理；将其对应府志杂记几种属推测而非实证。
+    source_ids: []
+
+  - work_id: huacao-xinbian
+    title: 花草新编
+    alt_titles: []
+    genre: 词选（选本）
+    date:
+      text: 编选年代不详；明钞本传世
+      precision: 未知
+    place: ""
+    context: 词学选本，近现代书目著录有明钞本传世；显示其在诗词之外兼治倚声之学的另一面。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [词学, 选本]
+    influence: 补足其文人形象的词学维度，亦为存稿之外的稀见传本。
+    confidence: 存疑
+    dispute: 本次未实取钞本或书目原页，著录信息按近现代书目转述层处理。
+    source_ids: []
+
+footprints:
+  - name: 淮安山阳
+    modern_name: 江苏省淮安市淮安区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1500年生于此，一生大部分时间居此
+      year: 1500
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: false
+    confidence: 存疑
+    dispute: 里贯淮安山阳为府志与千顷堂书目层一致表述；生年为推定。
+    source_ids: []
+  - name: 南京
+    modern_name: 江苏省南京市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 嘉靖间应试与岁贡入监期间往来（推定）
+      year: 1540
+      range_end: 1560
+      precision: 范围
+    kind: 游历
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 南都应试、入南监为学界通行的行迹推想，无一手系年材料。
+    source_ids: []
+  - name: 长兴
+    modern_name: 浙江省湖州市长兴县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1566年起任长兴县丞，未久去职（推定）
+      year: 1566
+      precision: 约
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 府志仅云授县贰未指县名；长兴县丞之任据后世方志选举与近现代考证互证，年份推定。
+    source_ids: []
+  - name: 蕲州荆王府
+    modern_name: 湖北省黄冈市蕲春县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1570年代补荆王府纪善（存疑）
+      year: 1570
+      range_end: 1580
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 纪善之任不见于天启府志人物志正文，证据层级最弱，整体标存疑＋推定。
+    source_ids: []
+  - name: 淮安山阳（卒地）
+    modern_name: 江苏省淮安市淮安区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1582年放浪诗酒终于故里（推定）
+      year: 1582
+      precision: 约
+    kind: 逝世
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 卒年与卒地均无当时记载，据府志转引层卒于乡的概括与近现代年谱推定。
+    source_ids: []
+  - name: 吴承恩故居（纪念馆）
+    modern_name: 江苏省淮安市淮安区河下打铜巷（纪念馆址）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 现代纪念设施，非明代原构
+      precision: 未知
+    kind: 纪念地
+    route_order: 6
+    memorial_only: true
+    inferred: true
+    confidence: 存疑
+    dispute: 故居为现代重建的纪念场所，宅基与明代居址的对应关系未经考古确证，仅作纪念地标登记。
+    source_ids: []
+
+relations: []
+  # 说明：吴承恩无可靠的人际实据一手材料——府志转引层仅记个人才性与宦历，
+  # 传闻中的交游（如与归有光同官长兴、与朱曰藩沈坤辈游）均属后世考证层推测，
+  # 达不到本卷关系条的立条门槛，故立零组，不编造。待取得可核验一手文献后再补。
+
+reception:
+  - era: 同时代
+    evaluator: 天启《淮安府志》（明代方志层，经转引）
+    quote: 性敏而多慧，博极群书，为诗文下笔立成，清雅流丽，有秦少游之风。复善谐剧，所著杂记几种，名震一时。
+    text_display: excerpt
+    comment: 吴承恩才名的核心同时代（明代）评价，也是后世归属说的源头文献。注意两点：一是本次系经鲁迅《小说旧闻钞》转引页实取，未核天启府志原典（转引层）；二是府志成书已在吴氏身后四十余年，且所言杂记几种并未点名西游记。
+    confidence: 存疑
+    source_ids: []
+  - era: 历代批评
+    evaluator: 阮葵生《茶余客话》（清代）
+    quote: 金漳山先生令山阳，修邑志，以吴射阳撰《西游记》事欲入志。予谓此事真伪不值一辨也。……惟《淮贤文目》载射阳撰《西游记通俗演义》。
+    text_display: excerpt
+    comment: 清代著作权两造的地方样本——阮氏一面讥辨伪多事，一面仍引淮贤文目的著录，恰可见淮安地方文献一脉与清初丘作旧题流行的并行。片段经搜索结果页取得，未逐字核对善本。
+    confidence: 存疑
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 鲁迅《中国小说史略》第十七篇与胡适《西游记考证》据天启府志、淮贤文目一脉确立吴承恩归属说，成为教科书层面的通行结论；当代学界异说并陈——华阳洞天主人校订（写定）说、千顷堂书目地理类游记说、府志杂记几种非必指西游记说等，均未成定谳。本卷对各方只作中立转述，现代论著原文一律不引。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 西游记位列四大名著，孙悟空与大闹天宫是国民级文化记忆；吴承恩作为其作者的通行归属随教材与大众读物广泛传播——注意公共文化中的归属表述多为简化版通行说，不等同学术结论。教材表述随版本变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 86版电视剧《西游记》及其后续改编使吴承恩的名字进入大众视野，衍生大量戏剧化敷演（包括对其生平的虚构演绎），一律不作信史依据；网络上的著作权讨论良莠混杂，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-xiyouji, src-sheyangcungao, src-xiaoshuojiuwenchao]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。15条年谱（5阶段）、5件作品、6处足迹、0组关系（无可靠人际实据，报告说明不编造）、5层接受史。文本层实取：维基文库西游记入口页＋第一回全文（开篇诗与石猴出世段逐字在手）；存稿层实取：二郎搜山图歌全文含诗前序。府志书目层经鲁迅小说旧闻钞转引页实取（未核原典）；千顷堂书目卷24著录片段经搜索结果页实取；陈元之序站内检索零命中，序跋层全部按转述处理。西游记作品条attribution存疑并写明著作权公案五要点；生卒年全程标推定。空source_ids条目会产生校验警告，属预期——待主会话登记射阳先生存稿、小说旧闻钞、千顷堂书目等来源后翻转补链。"}

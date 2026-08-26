@@ -1,0 +1,799 @@
+# 韩愈全景详卷（schema v1）
+# 史料审计表（TASK 批次三；来源见 data/sources.yaml）：
+#
+# | 事实点 | 旧唐书·卷160(J) | 新唐书·卷176(X) | 结论与置信 |
+# |---|---|---|---|
+# | 字与籍贯 | 昌黎人 | 邓州南阳人 | 字退之确定；籍贯两书矛盾——学界通说河阳（今河南孟州）人，昌黎为郡望 |
+# | 孤儿苦学 | 生三岁而孤养于从父兄，幼刻苦学儒不俟奖励 | 生三岁而孤，随伯兄会贬官岭表，会卒嫂郑鞠之，日记数千百言通六经百家 | 确定（细节两书互补） |
+# | 幕府入仕 | 董晋镇大梁辟为巡官；张建封请为宾佐 | 董晋宣武节度使表署观察推官；依武宁张建封建封辟府推官 | 确定；幕职名两书互异落dispute |
+# | 论宫市贬阳山 | 上章数千言极论宫市，怒贬连州山阳令，量移江陵府掾曹 | 上疏极论宫市德宗怒贬阳山令，有爱在民民生子多以其姓字之，改江陵法曹参军 | 确定；旧书「山阳」当为传写之误（阳山属连州），落dispute |
+# | 进学解 | 元和初召为国子博士；柳涧事坐妄论复为国子博士，作进学解以自喻 | 权知国子博士分司东都三岁为真；才高数黜乃作进学解自谕 | 确定；业精于勤一段两书全录且文字微异 |
+# | 平淮西碑 | 元和十二年八月裴度奏为行军司马赐金紫；淮蔡平授刑部侍郎诏撰平淮西碑；愬妻诉碑辞不实诏令磨愈文段文昌重撰 | 及度以宰相节度彰义军宣慰淮西奏愈行军司马；愈请乘遽先入汴说韩弘使叶力；元济平迁刑部侍郎 | 确定；磨碑事J独详 |
+# | 谏迎佛骨 | 十四年正月迎佛骨，上疏谏，宪宗怒甚将加极法，裴度崔群救之贬潮州刺史 | 表入帝大怒持示宰相将抵以死，中外骇惧戚里诸贵亦为愈言乃贬潮州刺史 | 确定；谏表两书均全文收录 |
+# | 潮州祭鳄 | 询吏民疾苦，令判官秦济砲一豚一羊投湫水祝之；祝之夕暴风雷，湫水尽涸徙于旧湫西六十里 | 问民疾苦皆曰恶溪有鳄鱼食民畜产且尽；令秦济以一羊一豚投溪水而祝之；暴风震电数日水尽涸西徙六十里 | 确定；祭文两书均收录文字有异 |
+# | 移袁州 | 宪宗谓到潮州表大是爱我；皇甫镈恐其复用率先对曰可量移一郡乃授袁州；设法赎所没男女归其父母削其俗法不许隶人 | 帝得表颇感悔欲复用之；皇甫镛素忌愈直奏言可且内移乃改袁州；悉计庸得赎所没归之父母七百余人因与约禁其为隶 | 确定；赎免人数X独载七百余 |
+# | 镇州宣谕 | 会镇州杀田弘正立王廷凑令愈往宣谕，集军民谕以逆顺辞情切至廷凑畏重之 | 众皆危之元稹言韩愈可惜穆宗亦悔诏愈度事从宜无必入；愈至廷凑严兵迓之，对话实录甚详 | 确定；对话细节X独详 |
+# | 终官与卒 | 李绅台参之争纷然，罢尹兵部侍郎复吏部侍郎；长庆四年十二月卒年五十七赠礼部尚书谥曰文 | 长庆四年卒年五十七赠礼部尚书谥曰文 | 确定 |
+# | 文史评价 | 世称韩文焉；然时有恃才肆意亦有盩孔孟之旨（罗池神碑/讳辨/毛颖传）；顺宗实录颇为当代所非 | 赞曰：愈以六经之文为诸儒倡……学者仰之如泰山北斗 | 两书评价立场相反而各有原文，均如实收录 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: hanyu
+
+profile:
+  courtesy_name: 退之
+  art_name: ""
+  aliases: [韩昌黎, 韩吏部, 韩文公]
+  gender: 男
+  ethnicity: ""
+  ancestry: 郡望昌黎；籍贯两唐书互异——旧书称昌黎人、新书称邓州南阳人，学界通说河阳（今河南孟州）人
+  birthplace: 河阳（学界通说；两唐书均未明言出生地）
+  death_place: 长安
+  offices: [监察御史, 国子博士, 中书舍人, 太子右庶子, 行军司马, 刑部侍郎, 潮州刺史, 袁州刺史, 国子祭酒, 兵部侍郎, 吏部侍郎, 京兆尹兼御史大夫]
+  fields: [文学]
+  roles: [散文家, 诗人, 思想家]
+  summary: 古文运动领袖、唐宋八大家之首，「文起八代之衰」；一生三度遭贬而直谏不改，以六经之文为诸儒倡。
+
+timeline:
+  # ── 阶段一：孤儿苦学 ──────────────────────────────
+  - stage: 孤儿苦学
+    stage_order: 1
+    title: 出生
+    date:
+      text: "约768年"
+      year: 768
+      precision: 约
+    place: 河阳（学界通说）
+    summary: 旧书称昌黎人、新书称邓州南阳人，父仲卿旧书谓无名位、新书记武昌令有美政。生年由长庆四年卒年五十七倒推为768年，与 L1 登记一致。
+    confidence: 存疑
+    dispute: 籍贯三说并立（郡望昌黎／新书邓州南阳／学界通说河阳即今河南孟州）；生年768由卒年倒推，正史无出生纪年。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - stage: 孤儿苦学
+    stage_order: 2
+    title: 三岁而孤，随伯兄贬岭表，嫂郑鞠之
+    date:
+      text: 约777—779年之间
+      year: 777
+      range_end: 779
+      precision: 范围
+    place: 自长安贬途至韶州
+    summary: 愈生三岁而孤。旧书谓养于从父兄；新书记随伯兄韩会贬官岭表、会卒后嫂郑氏鞠养。两书互证其早年失怙流离。
+    confidence: 存疑
+    dispute: 韩会贬韶州及其卒年正史无明确纪年，此范围系学界据大历末政局推定。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - stage: 孤儿苦学
+    stage_order: 3
+    title: 刻苦学儒，日记数千百言
+    date:
+      text: 幼年及少年时期
+      precision: 未知
+    place: 岭表、江南一带
+    summary: 旧书称幼刻苦学儒不俟奖励；新书记愈自知读书日记数千百言，比长尽能通六经百家学。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+
+  # ── 阶段二：科举与幕府 ────────────────────────────
+  - stage: 科举与幕府
+    stage_order: 4
+    title: 投文公卿，登进士第
+    date:
+      text: "约792年"
+      year: 792
+      precision: 约
+    place: 长安
+    summary: 洎举进士投文于公卿间，故相郑余庆颇为之延誉由是知名于时，寻登进士第。
+    confidence: 存疑
+    dispute: 及第年份两唐书未系年，792从贞元八年陆贽知贡举榜（俗称龙虎榜）的学界通说。
+    source_ids: [src-jts-vol160]
+  - stage: 科举与幕府
+    stage_order: 5
+    title: 应吏部试屡不中，上宰相书求仕
+    date:
+      text: 约793—795年之间
+      year: 793
+      range_end: 795
+      precision: 范围
+    place: 长安
+    summary: 登第后守选应吏部博学宏词科连年不中，曾三上宰相书自陈「三举于礼部乃一得，三选于吏部卒无成」。两唐书于此段均无载。
+    confidence: 存疑
+    dispute: 事出本人上宰相书自述，属别集文献；引文来源尚未注册待核，年份系据登第后三年间通行谱牒推定。
+    inferred: true
+    source_ids: []
+  - stage: 科举与幕府
+    stage_order: 6
+    title: 入董晋宣武军幕
+    date:
+      text: 约796—799年之间
+      year: 796
+      range_end: 799
+      precision: 范围
+    place: 汴州（大梁）
+    summary: 宰相董晋出镇大梁辟入幕府。晋卒后愈从丧出，不四日汴军乱乃去。幕职名两书互异：旧书作巡官、新书作观察推官。
+    confidence: 存疑
+    dispute: 幕府起讫年份据董晋镇汴时段推定；官名旧书「巡官」与新书「观察推官」互异，无从定谳。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - stage: 科举与幕府
+    stage_order: 7
+    title: 依张建封徐州幕
+    date:
+      text: 约799—800年之间
+      year: 799
+      range_end: 800
+      precision: 范围
+    place: 徐州
+    summary: 徐州张建封又请为其宾佐（新书作辟府推官）。愈发言真率无所畏避，操行坚正拙于世务。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+
+  # ── 阶段三：御史南贬 ──────────────────────────────
+  - stage: 御史南贬
+    stage_order: 8
+    title: 调授四门博士，转监察御史
+    date:
+      text: 约802—803年之间
+      year: 802
+      range_end: 803
+      precision: 范围
+    place: 长安
+    summary: 自幕府调授四门博士，转监察御史。时德宗晚年政出多门宰相不专机务。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - stage: 御史南贬
+    stage_order: 9
+    title: 极论宫市，怒贬阳山令
+    date:
+      text: "约803年"
+      year: 803
+      precision: 约
+    place: 长安、阳山
+    summary: 宫市之弊谏官论之不听，愈尝上章数千言极论之，德宗怒贬阳山令。新书记其在阳山有爱在民，民生子多以其姓字之。
+    confidence: 存疑
+    dispute: 旧书作「连州山阳令」新书作「阳山令」——阳山县唐属连州，旧书「山阳」当为传写之误，本卷从新书；贬因后世另有牵涉永贞党争之说，正史唯记论宫市得罪。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - stage: 御史南贬
+    stage_order: 10
+    title: 量移江陵法曹参军
+    date:
+      text: 约805—806年之间
+      year: 805
+      range_end: 806
+      precision: 范围
+    place: 江陵
+    summary: 顺宗即位后遇赦量移，旧书作江陵府掾曹、新书作改江陵法曹参军。
+    confidence: 存疑
+    dispute: 量移确年在永贞至元和初之间，据通行谱牒推定。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+
+  # ── 阶段四：博士岁月与《进学解》 ──────────────────────
+  - stage: 博士岁月与进学解
+    stage_order: 11
+    title: 元和初召为国子博士，分司东都
+    date:
+      text: "约806年"
+      year: 806
+      precision: 约
+    place: 长安、洛阳
+    summary: 旧书作元和初召为国子博士；新书记权知国子博士分司东都三岁为真，后改都官员外郎即拜河南令，迁职方员外郎。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - stage: 博士岁月与进学解
+    stage_order: 12
+    title: 华阴柳涧案，坐妄论复为国子博士
+    date:
+      text: 约808—810年之间
+      year: 808
+      range_end: 810
+      precision: 范围
+    place: 长安
+    summary: 华阴令柳涧获罪事起，愈因使过华以为刺史相党上疏理之；诏御史按验得涧赃状，再贬封溪尉。以愈妄论，复为国子博士。两书叙事框架一致而因果详略互异。
+    confidence: 存疑
+    dispute: 案发年份两书无明文纪年，系据职历排比推定。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - stage: 博士岁月与进学解
+    stage_order: 13
+    title: 才高数黜，作《进学解》自喻
+    date:
+      text: "约813年"
+      year: 813
+      precision: 约
+    place: 长安
+    summary: 愈自以才高累被摈黜，作进学解以自喻。设国子先生与诸生问答，自嘲「暂为御史遂窜南夷，三为博士冗不见治」。执政览其文而怜之。
+    confidence: 存疑
+    dispute: 作年诸谱互有出入（元和八年至十年诸说并存），本卷从复为国子博士后通说。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - stage: 博士岁月与进学解
+    stage_order: 14
+    title: 转郎官史职，知制诰拜中书舍人，旋被谗改太子右庶子
+    date:
+      text: 约813—816年之间
+      year: 813
+      range_end: 816
+      precision: 范围
+    place: 长安
+    summary: 执政怜其才，改比部郎中史馆修撰，逾岁转考功郎中知制诰拜中书舍人。俄有不悦愈者摭其旧事（江陵时为裴均子锷作序饯行呼其字），此论喧于朝列，坐是改太子右庶子。
+    source_ids: [src-jts-vol160]
+
+  # ── 阶段五：平淮西 ──────────────────────────────
+  - stage: 平淮西
+    stage_order: 15
+    title: 裴度奏为淮西行军司马，随军平蔡
+    date:
+      text: "817年"
+      year: 817
+      precision: 精确
+    place: 淮西行营（蔡州一线）
+    summary: 元和十二年八月宰臣裴度为淮西宣慰处置使兼彰义军节度使，请愈为行军司马仍赐金紫。新书记愈请乘遽先入汴说韩弘使叶力。十二月淮蔡平，随度还朝，以功授刑部侍郎。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - stage: 平淮西
+    stage_order: 16
+    title: 奉诏撰《平淮西碑》，碑成被磨
+    date:
+      text: "约818年"
+      year: 818
+      precision: 约
+    place: 长安
+    summary: 诏愈撰平淮西碑，其辞多叙裴度事。时先入蔡州擒吴元济的李愬以功第一不平，愬妻出入禁中因诉碑辞不实，诏令磨愈文，宪宗命翰林学士段文昌重撰文勒石。
+    confidence: 存疑
+    dispute: 奉诏撰碑在还朝之后，确切月份无载；碑文叙功归属引发的风波为唐代碑刻史著名公案，韩碑与段碑优劣历代聚讼。
+    source_ids: [src-jts-vol160]
+
+  # ── 阶段六：谏佛骨与潮州 ────────────────────────────
+  - stage: 谏佛骨与潮州
+    stage_order: 17
+    title: 谏迎佛骨，几死，一夕贬潮州
+    date:
+      text: "819年"
+      year: 819
+      precision: 精确
+    place: 长安
+    summary: 凤翔法门寺塔三十年一开，十四年正月宪宗令中使迎佛骨入大内，王公士庶奔走舍施有废业破产烧顶灼臂而求供养者。愈素不喜佛上疏极谏，乞以此骨付之水火。宪宗怒甚将加极法，裴度崔群救之，乃贬潮州刺史。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - stage: 谏佛骨与潮州
+    stage_order: 18
+    title: 左迁至蓝关，雪中示侄孙湘
+    date:
+      text: "约819年春"
+      year: 819
+      precision: 约
+    place: 蓝关（赴潮州贬途）
+    summary: 贬途遇大雪阻于蓝关，侄孙韩湘赶来同行，赋诗有「一封朝奏九重天，夕贬潮阳路八千」「云横秦岭家何在，雪拥蓝关马不前」之句。
+    confidence: 存疑
+    dispute: 诗与本事见于别集，两唐书无载；系年从贬潮途中通说。
+    source_ids: [src-qts-hanyu]
+  - stage: 谏佛骨与潮州
+    stage_order: 19
+    title: 至潮州视事，祭鳄鱼徙恶溪
+    date:
+      text: "约819年"
+      year: 819
+      precision: 约
+    place: 潮州
+    summary: 既视事询吏民疾苦，皆曰郡西恶溪湫水有鳄鱼食民畜产将尽。居数日愈自往视之，令判官秦济以一豚一羊投水而祝之，限三日乃至七日率丑类南徙于海。祝之夕暴风雷起，数日水尽涸，西徙六十里，自是潮人无鳄患。
+    confidence: 存疑
+    dispute: 祭文与祝后风雷涸水之事两书均载然文字互异；「鳄鱼西徙」的自然解释与史笔渲染之辨历来有讨论，本卷照录正史层面记载。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - stage: 谏佛骨与潮州
+    stage_order: 20
+    title: 上表哀谢，宪宗动容而皇甫镈沮之
+    date:
+      text: "约819年"
+      year: 819
+      precision: 约
+    place: 潮州
+    summary: 愈至潮阳上表哀谢。宪宗谓宰臣曰昨得韩愈到潮州表因思其所谏佛骨事大是爱我，欲复用愈；皇甫镈恶愈狷直恐其复用，对曰愈终狂疏且可量移一郡。新书记帝得表颇感悔。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - stage: 谏佛骨与潮州
+    stage_order: 21
+    title: 改刺袁州，赎男女隶者归其父母
+    date:
+      text: 约819—820年之间
+      year: 819
+      range_end: 820
+      precision: 范围
+    place: 袁州
+    summary: 袁州之俗男女隶于人者逾约则没入出钱之家。愈至设法赎其所没男女归其父母，削其俗法不许隶人；新书计其数为七百余人。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+
+  # ── 阶段七：晚年重臣 ──────────────────────────────
+  - stage: 晚年重臣
+    stage_order: 22
+    title: 征为国子祭酒，转兵部侍郎
+    date:
+      text: "约820年"
+      year: 820
+      precision: 约
+    place: 长安
+    summary: 元和十五年征为国子祭酒，转兵部侍郎。
+    source_ids: [src-jts-vol160]
+  - stage: 晚年重臣
+    stage_order: 23
+    title: 只身宣谕镇州王庭凑，勇夺三军之帅
+    date:
+      text: "约822年"
+      year: 822
+      precision: 约
+    place: 镇州
+    summary: 镇州乱杀田弘正立王庭凑，诏愈宣抚。既行众皆危之，元稹言韩愈可惜穆宗亦悔，诏愈度事从宜无必入。愈至，廷凑严兵迓之甲士陈廷，愈大声责以逆顺，历数安史李希烈子孙无一存者、田弘正刘悟李祐归顺受旌节事，众讙曰善。廷凑虑众变疾麾使去，即出牛元翼围。愈归奏其语帝大悦，转吏部侍郎。
+    confidence: 存疑
+    dispute: 宣谕确年在长庆二年，两书均无明书月份；对话实录独详于新书，史笔润饰程度不可知。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - stage: 晚年重臣
+    stage_order: 24
+    title: 转京兆尹，李绅台参之争，复为吏部侍郎
+    date:
+      text: "约823年"
+      year: 823
+      precision: 约
+    place: 长安
+    summary: 转京兆尹兼御史大夫，以不台参为御史中丞李绅所劾。绅愈性皆褊僻，文刺往还纷然不止，乃出绅浙西观察使愈亦罢尹为兵部侍郎；穆宗怜绅面辞泣涕，追制绅为兵部侍郎，愈复为吏部侍郎。
+    source_ids: [src-jts-vol160]
+  - stage: 晚年重臣
+    stage_order: 25
+    title: 卒于长安，赠礼部尚书谥曰文
+    date:
+      text: "824年（长庆四年十二月）"
+      year: 824
+      precision: 精确
+    place: 长安
+    summary: 长庆四年十二月卒时年五十七，赠礼部尚书谥曰文。有文集四十卷，婿李汉为之序。旧书评其性弘通与人交荣悴不易，诱厉后进馆之者十六七，凡嫁内外及友朋孤女仅十人。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+
+works:
+  - work_id: shi-shuo
+    title: 师说
+    alt_titles: []
+    genre: 说（论说文）
+    date:
+      text: "约802年"
+      year: 802
+      precision: 约
+    place: 长安
+    context: 任四门博士前后，针对当时耻学于师的门第风气而作，提出学者必有师、传道受业解惑、道之所存师之所存的师道纲领。新书将其与原道原性并举为奥衍闳深佐佑六经之篇。
+    attribution: 确凿
+    excerpt: 古之学者必有师。师者，所以传道受业解惑也。……是故无贵无贱，无长无少，道之所存，师之所存也。
+    text_display: excerpt
+    themes: [教育, 论道]
+    influence: 中国教育史上论师的经典文本，长期入选语文教材。
+    confidence: 存疑
+    dispute: 系年从贞元十八年四门博士任上的通说；正文摘句据通行公版文本，别集底本来源尚未注册。
+    source_ids: [src-xts-vol176]
+  - work_id: za-shuo-si-ma-shuo
+    title: 杂说四·马说
+    alt_titles: [马说]
+    genre: 说（杂文）
+    date:
+      text: 不详
+      precision: 未知
+    place: ""
+    context: 以千里马常有而伯乐不常有托物寓怀，写才士不遇与识者之难，为其杂著中最传诵的一篇。
+    attribution: 确凿
+    excerpt: 世有伯乐，然后有千里马。千里马常有，而伯乐不常有。故虽有名马，祇辱于奴隶人之手，骈死于槽枥之间，不以千里称也。
+    text_display: excerpt
+    themes: [托物寓怀, 人才]
+    influence: 伯乐与千里马成为中国人才观的核心意象之一。
+    confidence: 存疑
+    dispute: 作年无考；正文摘句据通行公版文本，别集来源尚未注册待核。
+    source_ids: []
+  - work_id: jin-xue-jie
+    title: 进学解
+    alt_titles: []
+    genre: 解（论辩文）
+    date:
+      text: "约813年"
+      year: 813
+      precision: 约
+    place: 长安
+    context: 才高数黜复为国子博士后，设国子先生与诸生答难以自嘲反讽，业精于勤荒于嬉与障百川而东之回狂澜于既倒俱出此篇。执政览其文而怜之，改比部郎中史馆修撰——一篇牢骚换来升迁。
+    attribution: 确凿
+    excerpt: 业精于勤，荒于嬉；行成于思，毁于随。……沈浸醲郁，含英咀华，作为文章，其书满家。……障百川而东之，回狂澜于既倒。
+    text_display: excerpt
+    themes: [治学, 自嘲]
+    influence: 劝学与逆境自处的千古格言渊薮，两唐书本传全文转录足见唐人已视为代表作。
+    confidence: 存疑
+    dispute: 作年诸谱互有出入；摘句以旧唐书本传引文为主。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - work_id: ji-shi-lang-wen
+    title: 祭十二郎文
+    alt_titles: [祭侄十二郎老成文]
+    genre: 祭文
+    date:
+      text: "约803年"
+      year: 803
+      precision: 约
+    place: 长安
+    context: 闻侄韩老成死讯后的破体之作，不循骈俪祭文程式，以家常语写生离死别，一在天之涯一在地之角写尽骨肉参商。
+    attribution: 确凿
+    excerpt: 呜呼！吾少孤，及长，不省所怙，惟兄嫂是依。……一在天之涯，一在地之角。
+    text_display: excerpt
+    themes: [哀祭, 亲情]
+    influence: 破体为文的抒情典范，被誉为祭文中千年绝调。
+    confidence: 存疑
+    dispute: 系年从贞元十九年通说；正文据通行公版文本，别集来源尚未注册。
+    source_ids: []
+  - work_id: ping-huai-xi-bei
+    title: 平淮西碑
+    alt_titles: [韩碑]
+    genre: 碑文
+    date:
+      text: "约818年"
+      year: 818
+      precision: 约
+    place: 长安
+    context: 淮西平后奉诏撰碑以颂宪宗武功，辞多叙统帅裴度事。先入蔡州擒吴元济的李愬不平，其妻出入禁中诉碑辞不实，诏令磨去韩文，命段文昌重撰勒石。一碑两刻、磨石易主，为唐代碑刻史最著名的公案。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [颂功, 史笔]
+    influence: 碑虽被磨，李商隐咏史诗韩碑与历代翻案之议使其影响反胜段碑。
+    confidence: 存疑
+    dispute: 撰碑确月无载；韩碑本文未收（本卷只收已实取核验文本），碑文归属与叙功是非历代聚讼。
+    source_ids: [src-jts-vol160]
+  - work_id: lun-fo-gu-biao
+    title: 论佛骨表
+    alt_titles: [谏迎佛骨表]
+    genre: 奏表
+    date:
+      text: "819年"
+      year: 819
+      precision: 精确
+    place: 长安
+    context: 宪宗迎法门寺佛骨入禁中，举国狂热供养。愈上表历数上古帝王无佛而寿、汉明帝以后事佛者运祚不长、梁武帝舍身而饿死台城，乞以枯朽之骨付之水火，末云佛如有灵能作祸祟宜加臣身。宪宗怒甚将加极法，赖裴度崔群营救得贬潮州。
+    attribution: 确凿
+    excerpt: 事佛求福，乃更得祸。由此观之，佛不足信，亦可知矣。……佛如有灵，能作祸祟，凡有殃咎，宜加臣身。上天鉴临，臣不怨悔。
+    text_display: excerpt
+    themes: [排佛, 直谏]
+    influence: 唐代反佛论的巅峰文献，直接触发其一生最大政治挫折。
+    confidence: 存疑
+    dispute: 表文两唐书均全文收录而文字小异，摘句以旧书为主。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - work_id: ji-e-yu-wen
+    title: 祭鳄鱼文
+    alt_titles: []
+    genre: 檄文式祭文
+    date:
+      text: "约819年"
+      year: 819
+      precision: 约
+    place: 潮州
+    context: 至潮州问民疾苦，知恶溪鳄鱼为患，自往视之，令判官秦济以一豚一羊投溪水而读此文，限鳄鱼三日乃至七日南徙于海，否则操劲弓毒矢与鳄鱼从事。祝之夕暴风雷起，数日水尽涸西徙六十里。
+    attribution: 确凿
+    excerpt: 今天子神圣，四海之外，抚而有之。况扬州之境，刺史县令之所治……鳄鱼岂可与刺史杂处此土哉？……今与鳄鱼约，三日乃至七日，如顽而不徙，须为物害，则刺史选材伎壮夫，操劲弓毒矢，与鳄鱼从事矣！
+    text_display: excerpt
+    themes: [为民除患, 谐趣庄严]
+    influence: 以庄词谐事著称的名文，潮州鳄溪由此得名韩江的传说源头。
+    confidence: 存疑
+    dispute: 文字两书所录互异，摘句以旧书为主；鳄鱼西徙事的信史程度见timeline相应条目dispute。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - work_id: zuo-qian-zhi-lan-guan
+    title: 左迁至蓝关示侄孙湘
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: "819年"
+      year: 819
+      precision: 精确
+    place: 蓝关
+    context: 谏佛骨一封朝奏夕贬八千里的诗化总结，雪拥蓝关马不前写尽忠而获罪之悲，好收吾骨瘴江边预作身后之托。
+    attribution: 确凿
+    excerpt: 一封朝奏九重天，夕贬潮阳路八千。欲为圣朝除弊事，肯将衰朽惜残年。云横秦岭家何在？雪拥蓝关马不前。知汝远来应有意，好收吾骨瘴江边。
+    text_display: full
+    themes: [贬谪, 直谏]
+    influence: 与论佛骨表互证的传记性名篇，颈联为秦岭蓝关的经典意象。
+    confidence: 存疑
+    dispute: 首联次句通行本亦有作「一封朝奏九重天」与此一致；颔联「圣朝」一本作「圣明」，异文从全唐诗通行文本。
+    source_ids: [src-qts-hanyu, src-jts-vol160]
+  - work_id: ba-yue-shi-wu-ye-zeng-zhang-gong-cao
+    title: 八月十五夜赠张功曹
+    alt_titles: []
+    genre: 七言古诗
+    date:
+      text: "约805年"
+      year: 805
+      precision: 约
+    place: 郴州（北归候命期间）
+    context: 永贞革新之际赦令下而二人同滞郴州候命，中秋对酌，代张署抒迁谪之愤，一年明月今宵多以旷语收束悲音。
+    attribution: 确凿
+    excerpt: 纤云四卷天无河，清风吹空月舒波。沙平水息声影绝，一杯相属君当歌。……一年明月今宵多，人生由命非由他，有酒不饮奈明何。
+    text_display: excerpt
+    themes: [中秋, 迁谪]
+    influence: 唐人中秋诗中以气格胜的代表。
+    confidence: 存疑
+    dispute: 作地郴州与作年永贞元年从通行编年说；摘句据通行公版文本，全唐诗来源待核验。
+    source_ids: [src-qts-hanyu]
+  - work_id: shan-shi
+    title: 山石
+    alt_titles: []
+    genre: 七言古诗
+    date:
+      text: "约800年"
+      year: 800
+      precision: 约
+    place: 洛阳西惠林寺一带（通说）
+    context: 记黄昏到寺至天明独去的游踪，不假雕绘而境界清绝，人生如此自可乐岂必局束为人鞿为散文名篇山石的同一机杼。
+    attribution: 确凿
+    excerpt: 山石荦确行径微，黄昏到寺蝙蝠飞。升堂坐阶新雨足，芭蕉叶大栀子肥。……人生如此自可乐，岂必局束为人鞿。
+    text_display: excerpt
+    themes: [纪游, 清景]
+    influence: 以文为诗、单行直写的代表性作品。
+    confidence: 存疑
+    dispute: 系年诸说在贞元十五年至十八年之间，本卷取其一并注明。
+    source_ids: [src-qts-hanyu]
+  - work_id: tiao-zhang-ji
+    title: 调张籍
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 约815—820年之间
+      year: 815
+      range_end: 820
+      precision: 范围
+    place: ""
+    context: 为回应时人谤伤李杜而作，李杜文章在光焰万丈长的并尊宣言，蚍蜉撼大树可笑不自量成为嘲讽不自量力的成语。
+    attribution: 确凿
+    excerpt: 李杜文章在，光焰万丈长。不知群儿愚，那用故谤伤。蚍蜉撼大树，可笑不自量。
+    text_display: excerpt
+    themes: [论诗, 尊崇李杜]
+    influence: 奠定李杜并尊格局的中唐关键表述。
+    confidence: 存疑
+    dispute: 系年有元和与长庆两说并存；摘句据通行公版文本。
+    source_ids: [src-qts-hanyu]
+  - work_id: zao-chun-cheng-shui-bu-zhang-shiba
+    title: 早春呈水部张十八员外
+    alt_titles: [早春呈水部张十八员外二首（其一）]
+    genre: 七言绝句
+    date:
+      text: "约823年"
+      year: 823
+      precision: 约
+    place: 长安
+    context: 长庆三年早春邀张籍游曲江而作，草色遥看近却无以似有还无之色状早春之神，为其晚年闲适期的清丽小品。
+    attribution: 确凿
+    excerpt: 天街小雨润如酥，草色遥看近却无。最是一年春好处，绝胜烟柳满皇都。
+    text_display: full
+    themes: [早春, 咏景]
+    influence: 咏早春第一名篇，长期入选语文教材。
+    confidence: 存疑
+    dispute: 系年从长庆三年通说。
+    source_ids: [src-qts-hanyu]
+
+footprints:
+  - name: 河阳
+    modern_name: 河南省孟州市
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 出生地系学界通说推定（两唐书仅载昌黎郡望与邓州南阳异说），坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: "约768年生"
+      year: 768
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 出生地说之一；籍贯三说详见 profile.ancestry 与 timeline 首条。
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约792年起进士及第、任职、终老
+      year: 792
+      range_end: 824
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - name: 汴州
+    modern_name: 河南省开封市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约796—799年之间佐董晋宣武军幕
+      year: 796
+      range_end: 799
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - name: 徐州
+    modern_name: 江苏省徐州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约799—800年之间佐张建封武宁军幕
+      year: 799
+      range_end: 800
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - name: 阳山
+    modern_name: 广东省清远市阳山县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约803—805年之间贬所
+      year: 803
+      range_end: 805
+      precision: 范围
+    kind: 谪迁
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - name: 江陵
+    modern_name: 湖北省荆州市荆州区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约805—806年之间量移法曹参军
+      year: 805
+      range_end: 806
+      precision: 范围
+    kind: 谪迁
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - name: 洛阳
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 元和初分司东都数年（国子博士、河南令任上）
+      year: 806
+      range_end: 812
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 分司起讫年份据新书「三岁为真」与职历排比推定。
+    source_ids: [src-xts-vol176]
+  - name: 蔡州（淮西行营）
+    modern_name: 河南省驻马店市汝南县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "817年以行军司马从裴度征淮西"
+      year: 817
+      precision: 精确
+    kind: 任职
+    route_order: 8
+    memorial_only: false
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - name: 潮州
+    modern_name: 广东省潮州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约819年贬所，祭鳄兴教
+      year: 819
+      precision: 约
+    kind: 谪迁
+    route_order: 9
+    memorial_only: false
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - name: 袁州
+    modern_name: 江西省宜春市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约819—820年之间刺史任上赎男女隶者
+      year: 819
+      range_end: 820
+      precision: 范围
+    kind: 任职
+    route_order: 10
+    memorial_only: false
+    source_ids: [src-jts-vol160, src-xts-vol176]
+  - name: 镇州
+    modern_name: 河北省石家庄市正定县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约822年奉诏宣谕王庭凑
+      year: 822
+      precision: 约
+    kind: 游历
+    route_order: 11
+    memorial_only: false
+    source_ids: [src-jts-vol160, src-xts-vol176]
+
+relations:
+  - relation_type: 挚友
+    target_id: liuzongyuan
+    direction: 双向
+    period:
+      text: 约803年同官监察御史订交，至819年柳宗元卒
+      year: 803
+      range_end: 819
+      precision: 范围
+    evidence: 二人同倡古文运动、贞元十九年先后为监察御史，同列旧书卷160本传。旧书韩愈传同时载有批评语境：「南人妄以柳宗元为罗池神，而愈撰碑以实之」，列为愈文之纰缪例——韩柳交谊与史臣对其罗池庙碑的非议一并照录，不作删削。
+    confidence: 存疑
+    dispute: 直接交往细节（书信唱和、柳卒后愈为撰祭文墓志）主要见于别集而非两唐书正文，本条以正史同传并列与共同事业为主要证据。
+    source_ids: [src-jts-vol160]
+  - relation_type: 思想影响
+    target_id: dufu
+    direction: 单向
+    period:
+      text: 中唐对盛唐诗学的追认与继承
+      precision: 未知
+    evidence: 调张籍「李杜文章在，光焰万丈长」，尊杜推李并斥谤伤者为蚍蜉撼树；韩愈奇崛险怪的诗风被视为杜诗沉郁顿挫之外的又一变径。此为单向的接受关系，非交往证据。
+    inferred: true
+    confidence: 存疑
+    dispute: 韩愈接受杜甫的具体路径与程度属文学史推论，非史料明文记载的师承或交谊。
+    source_ids: [src-qts-hanyu]
+
+reception:
+  - era: 同时代
+    evaluator: 时人与后学（旧唐书本传）
+    quote: 后学之士，取为师法。当时作者甚众，无以过之，故世称「韩文」焉。
+    text_display: excerpt
+    comment: 旧书载其务反近体、抒意立言自成一家新语，世称韩文焉——以姓氏冠文体之称，唐代文人中仅此一人。
+    source_ids: [src-jts-vol160]
+  - era: 同时代
+    evaluator: 旧唐书史臣
+    quote: 韩、李二文公，于陵迟之末，遑遑仁义；有志于持世范，欲以人文化成，而道未果也。至若抑杨、墨，排释、老，虽于道未弘，亦端士之用心也。
+    text_display: excerpt
+    comment: 五代史臣对韩李二人的总评原貌：肯定其扶植仁义的端士用心而不讳其道未果，与其对刘柳蹈道不谨的贬语形成对照。旧书另录「恃才肆意亦有盩孔孟之旨」（罗池神碑、讳辨、毛颖传诸例）与顺宗实录遭当代非议诸端，本卷一并存照。
+    source_ids: [src-jts-vol160]
+  - era: 历代批评
+    evaluator: 新唐书赞
+    quote: 自愈没，其言大行，学者仰之如泰山、北斗云。
+    text_display: excerpt
+    comment: 宋祁赞语称其拨衰反正功齐孟子、以六经之文为诸儒倡——新旧两书评价落差本身就是接受史的标本。
+    source_ids: [src-xts-vol176]
+  - era: 历代批评
+    evaluator: 苏轼
+    quote: 文起八代之衰，而道济天下之溺。
+    text_display: excerpt
+    comment: 出自苏轼潮州韩文公庙碑，为传统社会对韩愈的终极定位。碑文为公版原文，但该碑来源尚未在本项目注册，source_ids 暂留空以待补登记。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究围绕古文运动的理论构造与历史定位、韩愈排佛与道统说的儒学复兴意义、以文为诗的得失评价翻转等议题展开；具体论著引文须逐条取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 师说、马说、早春呈水部张十八员外、左迁至蓝关示侄孙湘等长期入选中小学语文教材；文起八代之衰与韩文公祠成为其公共文化符号。教材版本信息随学期变动，录入时须另行核验当期篇目。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 暂无可考记录
+    quote: ""
+    text_display: none
+    comment: 未检索到权威影视正剧改编记录；网络传播集中于教材名篇与潮州韩文公祠文旅内容，暂不著录具体条目。
+    source_ids: []
+
+sources_used: [src-jts-vol160, src-xts-vol176, src-qts-hanyu]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。25条年谱（7阶段）、12首作品、11处足迹、2组关系、5层接受史（6条）。旧唐书卷160与新唐书卷176均已实取核验；新旧书异文（籍贯、阳山/山阳、幕职名、祭鳄文字）全部落dispute；苏轼庙碑引文与部分别集文本source_ids留空待注册}

@@ -1,0 +1,648 @@
+# 刘长卿全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 全唐诗·卷147小传层（维基文库实取） | 唐才子传·卷二层（维基文库实取） | 结论与置信 |
+# |---|---|---|---|
+# | 名号籍贯 | 劉長卿字文房河間人 | 長卿字文房河間人 | 确定；两源同作河间人，「宣城」等籍贯异说为后世考证之说，本次两源未见 |
+# | 科第 | 開元二十一年進士 | 開元二十一年徐徵榜及第 | 确定（两源同年）；后世考订进士年另有异说，落 dispute |
+# | 监察御史 | 至德中爲監察御史 | 至德中歷監察御史 | 确定 |
+# | 转运判官 | 以檢校祠部員外郎爲轉運使判官知淮南鄂嶽轉運留後 | 以檢校祠部員外郎出爲轉運使判官知淮西嶽鄂轉運留後 | 确定；「淮南／淮西」「鄂嶽」两源微异，按各源自录 |
+# | 遭诬系狱 | 鄂嶽觀察使吳仲孺誣奏 | 觀察使吳仲孺誣奏非罪繫姑蘇獄 | 确定；系狱地点姑苏仅见唐才子传层 |
+# | 贬南巴 | 貶潘州南邑尉 | 貶潘州南巴尉 | 确定（被贬事实）；「南邑尉／南巴尉」两源异文，落 dispute |
+# | 量移睦州 | 會有爲之辯者除睦州司馬 | 會有爲辯之者量移睦州司馬 | 确定 |
+# | 终官 | 終隨州刺史 | 終隨州刺史 | 确定；生卒年正史无传，诸说落 dispute |
+# | 五言长城 | 權德輿嘗一作「常」謂爲五言長城 | 權德輿稱爲「五言長城」 | 确定；两源均记为权德舆之称而非自称——通行「自称」说不合两源，落 dispute 纠正 |
+# | 时誉引语 | 皇甫湜亦云詩未有劉長卿一句已呼宋玉爲老兵其見重如此 | （无此句） | 全唐诗小传层确定 |
+# | 性格与两贬 | —— | 清才冠世頗淩浮俗性剛多忤權門故兩逢遷斥人悉冤之 | 唐才子传层；中兴间气集（高仲武，唐人选本）「兩遭遷謫」可互证 |
+# | 唐才子传独有轶事 | —— | 少居嵩山讀書移家鄱陽每題詩不言姓但書長卿灞陵碧澗有別業淮南李穆公之婿也 | 笔记层：唐才子传为元人辛文房所撰诗人传略，多采传记说部，含传闻成分，不足尽据 |
+# | 作品文本 | 卷147—151编诗五卷；《逢雪宿芙蓉山主人》《送灵澈上人》《听弹琴》《新年作》等单篇页逐字实取 | —— | 公版原文层；异文以页面所注一作某照录 |
+# | 同时代选评 | —— | —— | 《中兴间气集》卷下（四库全书本，维基文库实取）：長卿有吏幹剛而犯上兩遭遷謫皆自取之…… |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: liuchangqing
+
+profile:
+  courtesy_name: 文房
+  art_name: 五言长城（权德舆所称，见全唐诗小传与唐才子传；后人沿称）
+  aliases: [刘随州, 刘文房]
+  gender: 男
+  ethnicity: ""
+  ancestry: 河间（全唐诗小传与唐才子传同作河间人）
+  birthplace: ""
+  death_place: ""
+  offices: [监察御史, 检校祠部员外郎·转运使判官·知淮西岳鄂转运留后, 潘州南巴尉, 睦州司马, 随州刺史]
+  fields: [文学]
+  roles: [诗人]
+  summary: 自许「今人称前有沈宋王杜后有钱郎刘李」的大历十才子前辈诗人；性刚多忤权门而两遭迁谪，五言律精工凝练号称「五言长城」，「日暮苍山远，风雪夜归人」是千古不灭的雪夜画面。
+
+timeline:
+  # ── 阶段一：早年与科第 ────────────────────────────
+  - stage: 早年与科第
+    stage_order: 1
+    title: 出生；生年诸说不一
+    date:
+      text: 约726年前后（主流推定），另有约709年生等异说
+      year: 726
+      precision: 约
+    place: ""
+    summary: 刘长卿无正史本传，生年无载。学界主流推定约生于开元十四年（726）前后，另有生于709年等异说，相差近二十年，只能按推定著录。
+    confidence: 存疑
+    dispute: 生年诸说不一：约726年说为主流，另有约709年生说（据登第年龄倒推口径不同）；两说均系后人推算，无原始记载。
+    source_ids: [src-qts-liuchangqing]
+  - stage: 早年与科第
+    stage_order: 2
+    title: 少居嵩山读书
+    date:
+      text: 早年在嵩山读书，具体年代不详
+      precision: 未知
+    place: 嵩山
+    summary: 唐才子传称其少居嵩山读书——早年隐读嵩山的经历与其后遍游山水、多与方外人往还的诗风一脉相承。
+    confidence: 存疑
+    dispute: 仅见于唐才子传（元人所撰诗人传略，含传闻成分），无唐代原始文献互证。
+    source_ids: [src-tangcaizizhuan]
+  - stage: 早年与科第
+    stage_order: 3
+    title: 移家鄱阳最久
+    date:
+      text: 具体年代不详
+      precision: 未知
+    place: 鄱阳
+    summary: 唐才子传又称其后移家来鄱阳最久——饶州鄱阳一带是其早年重要活动地，集中饶州、余干一路行旅之作甚多。
+    confidence: 存疑
+    dispute: 仅见于唐才子传（元人所撰诗人传略，含传闻成分）；移家年份无考。
+    source_ids: [src-tangcaizizhuan]
+  - stage: 早年与科第
+    stage_order: 4
+    title: 开元二十一年进士及第
+    date:
+      text: 开元二十一年（733）
+      year: 733
+      precision: 精确
+    place: 长安
+    summary: 全唐诗小传与唐才子传并载开元二十一年进士（唐才子传记徐徵榜及第）。此为两源一致的确切科第记录。
+    confidence: 存疑
+    dispute: 两源均作开元二十一年，然后世学者对其登第年份尚有异说（或谓开成间记载有误，另考他年）；本卷从两源原文。
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+
+  # ── 阶段二：监察御史与转运判官 ────────────────────
+  - stage: 监察御史与转运判官
+    stage_order: 5
+    title: 至德中为监察御史
+    date:
+      text: 至德中（约756—758）
+      year: 756
+      range_end: 758
+      precision: 范围
+    place: 长安
+    summary: 两源并载至德中为（历）监察御史。时当肃宗即位灵武、两京收复之际，刘长卿由此入朝为宪官。
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+  - stage: 监察御史与转运判官
+    stage_order: 6
+    title: 检校祠部员外郎，为转运使判官知淮西岳鄂转运留后
+    date:
+      text: 约乾元、上元间，确切年份不详
+      year: 758
+      precision: 约
+    place: 淮南、鄂岳一路
+    summary: 以检校祠部员外郎为转运使判官，知淮西岳鄂转运留后——掌江淮至荆鄂一线财赋转运，是安史乱后朝廷仰给东南的要职。
+    confidence: 存疑
+    dispute: 任期起讫年份无明文，系据至德中拜监察御史与吴仲孺构陷事序推定；「淮南／淮西」两源用字小异。
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+  - stage: 监察御史与转运判官
+    stage_order: 7
+    title: 以诗驰声上元宝应间
+    date:
+      text: 上元、宝应间（约760—762）
+      year: 760
+      range_end: 762
+      precision: 范围
+    place: ""
+    summary: 全唐诗小传明载其以诗驰声上元、宝应间——肃代之际已是海内知名的第一流诗人，故敢题诗但书「长卿」而不言姓。
+    source_ids: [src-qts-liuchangqing]
+  - stage: 监察御史与转运判官
+    stage_order: 8
+    title: 灞陵碧涧有别业
+    date:
+      text: 具体年代不详
+      precision: 未知
+    place: 灞陵碧涧
+    summary: 唐才子传载其在长安附近灞陵碧涧有别业——京郊置产，与其宦游江南的行迹相表里。
+    confidence: 存疑
+    dispute: 仅见于唐才子传（元人所撰诗人传略，含传闻成分）。
+    source_ids: [src-tangcaizizhuan]
+
+  # ── 阶段三：两遭迁谪 ──────────────────────────────
+  - stage: 两遭迁谪
+    stage_order: 9
+    title: 鄂岳观察使吴仲孺诬奏，非罪系姑苏狱
+    date:
+      text: 约大历初，确切年份不详
+      year: 766
+      precision: 约
+    place: 姑苏（苏州）
+    summary: 转运留后任上为观察使吴仲孺诬奏，唐才子传谓非罪系姑苏狱。唐才子传又总评其性刚多忤权门，故两逢迁斥，人悉冤之——性格即命运的两遭迁谪由此始。
+    confidence: 存疑
+    dispute: 吴仲孺构陷确有两源明载，惟系狱年份与系狱地点姑苏均无唐代原始记载，姑苏说仅见于唐才子传（元人所撰诗人传略，含传闻成分）。
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+  - stage: 两遭迁谪
+    stage_order: 10
+    title: 贬潘州南巴尉
+    date:
+      text: 约大历初，确切年份不详
+      year: 766
+      precision: 约
+    place: 潘州南巴
+    summary: 由狱案直贬岭南潘州南巴尉——从财赋要差跌落到岭外卑秩，是其一生最大的一次政治坠落。赴贬途中有《却赴南邑留别苏台知己》等作。
+    confidence: 存疑
+    dispute: 被贬事实两源确载，惟贬地异文须辨：全唐诗小传作「南邑尉」，唐才子传作「南巴尉」，通行从南巴说；贬行年份系推定。
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+  - stage: 两遭迁谪
+    stage_order: 11
+    title: 有为辩之者，量移睦州司马
+    date:
+      text: 约大历年间，确切年份不详
+      year: 769
+      precision: 约
+    place: 睦州
+    summary: 会有为辩之者，量移睦州司马——得人辩白而自岭外内迁浙西，仍是从佐官做起。所谓「两遭迁谪」（唐人选本中兴间气集亦云两遭迁谪），至此完成。
+    confidence: 存疑
+    dispute: 量移年份无明文，系据贬谪事序与睦州时期诗作推定。
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+
+  # ── 阶段四：睦州司马时期 ──────────────────────────
+  - stage: 睦州司马时期
+    stage_order: 12
+    title: 睦州司马任上
+    date:
+      text: 约大历年间
+      year: 769
+      range_end: 777
+      precision: 范围
+    place: 睦州
+    summary: 睦州（治建德，今浙江建德一带）司马任上，与严维、张南史、秦系等江东诗人唱酬往还，卷中《却归睦州至七里滩下作》《对酒寄严维》诸篇皆此时行迹。
+    confidence: 存疑
+    dispute: 任睦州的起讫年份据诗作与职历推定。
+    source_ids: [src-qts-liuchangqing]
+  - stage: 睦州司马时期
+    stage_order: 13
+    title: 七里滩下的失意与山水
+    date:
+      text: 睦州任内，确切年份不详
+      precision: 未知
+    place: 睦州七里滩
+    summary: 却归睦州至七里滩下作诸篇，以严陵濑的钓台山水安顿迁谪之身——伤而不怨（中兴间气集评语）的诗品在此一阶段最为典型。
+    source_ids: [src-qts-liuchangqing]
+
+  # ── 阶段五：终随州刺史与晚年 ──────────────────────
+  - stage: 终随州刺史与晚年
+    stage_order: 14
+    title: 迁随州刺史，世称刘随州
+    date:
+      text: 约大历末至建中年间
+      year: 779
+      range_end: 783
+      precision: 范围
+    place: 随州
+    summary: 终随州刺史（两源同载）——由司马再起为州刺史收官，后世因称刘随州。淮西李希烈叛乱前后，随州正当兵冲，晚年行迹遂晦。
+    confidence: 存疑
+    dispute: 刺史任期与起讫年份正史无传，系据职历与时代背景推定。
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+  - stage: 终随州刺史与晚年
+    stage_order: 15
+    title: 卒年无传，约789—791年间诸说并存
+    date:
+      text: 约789—791年间（一说更早），无定论
+      year: 789
+      range_end: 791
+      precision: 范围
+    place: ""
+    summary: 刘长卿无正史本传，卒于何年何地均无原始记载。主流推定约卒于贞元初（约789—791），另有据权德舆文翰推考的他年之说，只能并存著录。
+    confidence: 存疑
+    dispute: 卒年诸说不一：约789年、约789—791年间为主流区间，亦有提前至786年前后的考订；卒地同样无载，随州卒说仅为终官地的自然推断。
+    source_ids: [src-qts-liuchangqing]
+
+works:
+  - work_id: feng-xue-su-fu-rong-shan-zhu-ren
+    title: 逢雪宿芙蓉山主人
+    alt_titles: []
+    genre: 五言绝句
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: 芙蓉山（所在地有多说）
+    context: 全唐诗卷147首篇。日暮苍山远，天寒白屋贫，柴门闻犬吠，风雪夜归人——二十字写尽荒山雪夜的清冷与归人的暖意。
+    attribution: 确凿
+    excerpt: 日暮苍山远，天寒白屋贫。柴门闻犬吠，风雪夜归人。
+    text_display: full
+    themes: [雪夜, 山村, 行旅]
+    influence: 中国诗歌中最著名的雪夜画面之一，长期入选语文教材与古今选本。
+    source_ids: [src-qts-liuchangqing]
+
+  - work_id: song-ling-che-shang-ren
+    title: 送灵澈上人
+    alt_titles: []
+    genre: 五言绝句
+    date:
+      text: 创作年代不详，一般系于江浙时期
+      precision: 未知
+    place: 江浙一带
+    context: 送僧灵澈归山之作，苍苍竹林寺杳杳钟声晚以声色写别境，荷笠带夕阳青山独归远纯是画笔。
+    attribution: 确凿
+    excerpt: 苍苍竹林寺，杳杳钟声晚。荷笠带夕阳，青山独归远。
+    text_display: full
+    themes: [送别, 僧友, 山水]
+    influence: 收入唐诗三百首的五绝名篇，以淡墨写离情的典范。
+    source_ids: [src-qts-liuchangqing]
+
+  - work_id: ting-tan-qin
+    title: 听弹琴
+    alt_titles: []
+    genre: 五言绝句
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 泠泠七丝上静听松风寒，借琴寄慨：古调虽自爱，今人多不弹——曲高和寡的自况。
+    attribution: 确凿
+    excerpt: 泠泠七丝上，静听松风寒。古调虽自爱，今人多不弹。（「七丝」一作「七弦」）
+    text_display: full
+    themes: [音乐, 孤怀, 自况]
+    influence: 古调虽自爱今人多不弹成为曲高和寡的千古成语式表达。
+    source_ids: [src-qts-liuchangqing]
+
+  - work_id: jian-bie-wang-shi-yi-nan-you
+    title: 饯别王十一南游
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 全唐诗卷148。望君烟水阔挥手泪沾巾起笔，长江一帆远落日五湖春以帆影落日写目送之情，不着一个别字的送别名篇。
+    attribution: 确凿
+    excerpt: 望君烟水阔，挥手泪沾巾。飞鸟没何处，青山空向人。长江一帆远，落日五湖春。谁见汀洲上，相思愁白蘋。
+    text_display: full
+    themes: [送别, 江景, 相思]
+    influence: 收入唐诗三百首，五律送别体的精工样本。
+    source_ids: [src-qts-liuchangqing]
+
+  - work_id: chang-sha-guo-jia-yi-zhai
+    title: 长沙过贾谊宅
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 一般系于贬南巴往返途经长沙时，确切年份不详
+      precision: 未知
+    place: 长沙贾谊宅
+    context: 三年谪宦此栖迟，万古惟留楚客悲——过贾谊故宅而自伤迁谪，汉文有道恩犹薄湘水无情吊岂知借古人酒杯浇自己块垒。
+    attribution: 确凿
+    excerpt: 三年谪宦此栖迟，万古惟留楚客悲。秋草独寻人去后，寒林空见日斜时。汉文有道恩犹薄，湘水无情吊岂知。寂寂江山摇落处，怜君何事到天涯。（「独寻」一作「渐寻」）
+    text_display: full
+    themes: [吊古, 迁谪, 自伤]
+    influence: 其七律压卷之作，吊贾谊而自吊的迁谪诗典范，收入唐诗三百首。
+    source_ids: [src-qts-liuchangqing]
+
+  - work_id: deng-yu-gan-gu-xian-cheng
+    title: 登余干古县城
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 创作年代不详，一般系于游饶州余干时
+      precision: 未知
+    place: 余干古县城
+    context: 孤城上与白云齐万古荒凉楚水西，登废县而写陵谷之变：沙鸟不知陵谷变朝飞暮去弋阳溪，荒凉之极归于无言。
+    attribution: 确凿
+    excerpt: 孤城上与白云齐，万古荒凉楚水西。官舍已空秋草绿，女墙犹在夜乌啼。平江渺渺来人远，落日亭亭向客低。沙鸟不知陵谷变，朝飞暮去弋阳溪。（「白云」一作「迢递」，「荒凉」一作「萧条」）
+    text_display: full
+    themes: [怀古, 废墟, 陵谷之变]
+    influence: 大历怀古诗中以荒寒意境著称的一篇。
+    source_ids: [src-qts-liuchangqing]
+
+  - work_id: xun-nan-xi-chang-shan-dao-ren-yin-ju
+    title: 寻南溪常山道人隐居
+    alt_titles: [寻常山南溪道士隐居]
+    genre: 五言律诗
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: 南溪
+    context: 寻人不遇而不作失望语，过雨看松色随山到水源，结于溪花与禅意相对亦忘言——不遇之遇，正是其方外交游诗的至高处。
+    attribution: 确凿
+    excerpt: 一路经行处，莓苔见履痕。白云依静渚，春草闭闲门。过雨看松色，随山到水源。溪花与禅意，相对亦忘言。
+    text_display: full
+    themes: [访隐, 不遇, 禅意]
+    influence: 收入唐诗三百首；溪花与禅意相对亦忘言为以景结情的名联。
+    source_ids: [src-qts-liuchangqing]
+
+  - work_id: xin-nian-zuo
+    title: 新年作
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 创作年代不详，从诗意看当为迁谪岭南时期
+      precision: 未知
+    place: 岭南贬途（据诗意）
+    context: 乡心新岁切天畔独潸然，老至居人下春归在客先——新年独在天涯，已似长沙傅自比贾谊，是其迁谪心境最直接的写照。
+    attribution: 确凿
+    excerpt: 乡心新岁切，天畔独潸然。老至居人下，春归在客先。岭猿同旦暮，江柳共风烟。已似长沙傅，从今又几年。（「已似」一作「已是」）
+    text_display: full
+    themes: [新年, 乡愁, 迁谪]
+    influence: 老至居人下春归在客先为大历五律炼句的代表。
+    source_ids: [src-qts-liuchangqing]
+
+  - work_id: song-li-zhong-cheng-zhi-xiang-zhou
+    title: 送李中丞之襄州
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 为罢归的老将送行：流落征南将曾驱十万师，独立三边静轻生一剑知，茫茫汉江上日暮欲何之——写尽功臣迟暮的无处归宿，唐人选本中兴间气集选录。
+    attribution: 确凿
+    excerpt: 流落征南将，曾驱十万师。罢归无旧业，老去恋明时。独立三边静，轻生一剑知。茫茫汉江上，日暮欲何之。
+    text_display: full
+    themes: [赠别, 老将, 身世之感]
+    influence: 咏功臣失路的五律名篇，中兴间气集与唐诗三百首并录。
+    source_ids: [src-qts-liuchangqing]
+
+  - work_id: zhe-ju-yu-yue-ting-zuo
+    title: 谪居于越亭作（中兴间气集本题）
+    alt_titles: []
+    genre: 五言排律
+    date:
+      text: 迁谪时期所作，确切年份不详
+      precision: 未知
+    place: 越亭（岭南贬途，一说在桂州）
+    context: 唐人选本中兴间气集所选九首之一。得罪风霜苦全生天地仁，青山数行泪沧海一穷鳞——正是选家所评伤而不怨的实证文本。
+    attribution: 确凿
+    excerpt: 天南愁望绝，亭上柳条新。……得罪风霜苦，全生天地仁。青山数行泪，沧海一穷鳞。
+    text_display: excerpt
+    themes: [迁谪, 自辩, 江海穷愁]
+    influence: 见于唐人选本的迁谪自述，与高仲武「伤而不怨亦足以发挥风雅」的评语互证。
+    source_ids: [src-qts-liuchangqing]
+
+footprints:
+  - name: 河间
+    modern_name: 河北省河间市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 籍贯所在，是否实际生长于此无载
+      precision: 未知
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 两源均作河间人，惟此为郡望籍贯层面的记载，出生地是否即河间无原始文献可证。
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+  - name: 嵩山
+    modern_name: 河南省登封市嵩山
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 少居嵩山读书，具体年代不详
+      precision: 未知
+    kind: 游历
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 仅见于唐才子传（元人所撰诗人传略，含传闻成分）。
+    source_ids: [src-tangcaizizhuan]
+  - name: 鄱阳
+    modern_name: 江西省鄱阳县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 移家来鄱阳最久，具体年代不详
+      precision: 未知
+    kind: 居住
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 仅见于唐才子传（元人所撰诗人传略，含传闻成分）。
+    source_ids: [src-tangcaizizhuan]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 开元二十一年（733）进士及第；至德中（约756—758）为监察御史
+      year: 733
+      precision: 精确
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+  - name: 灞陵碧涧
+    modern_name: 陕西省西安市灞桥一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 灞陵碧涧有别业，年代不详
+      precision: 未知
+    kind: 居住
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 仅见于唐才子传（元人所撰诗人传略，含传闻成分）。
+    source_ids: [src-tangcaizizhuan]
+  - name: 淮西岳鄂转运一路
+    modern_name: 安徽、湖北沿江一带（治所无确载）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约乾元上元间为转运使判官知淮西岳鄂转运留后
+      year: 758
+      precision: 约
+    kind: 任职
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 转运留后驻在地无确载，按职辖区域著录。
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+  - name: 姑苏（苏州）
+    modern_name: 江苏省苏州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约大历初非罪系姑苏狱
+      year: 766
+      precision: 约
+    kind: 谪迁
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 系狱姑苏仅见唐才子传（元人所撰诗人传略，含传闻成分），系年据事序推定。
+    source_ids: [src-tangcaizizhuan]
+  - name: 潘州南巴
+    modern_name: 广东省茂名市一带（南巴故地）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约大历初贬潘州南巴尉
+      year: 766
+      precision: 约
+    kind: 谪迁
+    route_order: 8
+    memorial_only: false
+    confidence: 存疑
+    dispute: 贬地异文：全唐诗小传作南邑尉，唐才子传作南巴尉，通行从南巴；贬行年份系推定。
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+  - name: 长沙
+    modern_name: 湖南省长沙市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 迁谪途中过长沙，访贾谊宅作长沙过贾谊宅
+      precision: 未知
+    kind: 游历
+    route_order: 9
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 过长沙行旅由长沙过贾谊宅诗证，系于贬南巴往返途中属主流推定，确切年份无载。
+    source_ids: [src-qts-liuchangqing]
+  - name: 余干
+    modern_name: 江西省余干县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 游饶州余干，作登余干古县城、余干旅舍
+      precision: 未知
+    kind: 游历
+    route_order: 10
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 由诗作证其到访，具体年份无载；与早年移家鄱阳的经历相呼应。
+    source_ids: [src-qts-liuchangqing]
+  - name: 睦州
+    modern_name: 浙江省建德市一带（唐睦州治）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约大历年间量移睦州司马
+      year: 769
+      range_end: 777
+      precision: 范围
+    kind: 任职
+    route_order: 11
+    memorial_only: false
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+  - name: 随州
+    modern_name: 湖北省随州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约大历末建中间迁随州刺史
+      year: 779
+      range_end: 783
+      precision: 范围
+    kind: 任职
+    route_order: 12
+    memorial_only: false
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+  - name: 随州（卒地推定）
+    modern_name: 湖北省随州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约789—791年间卒（推定）
+      year: 789
+      range_end: 791
+      precision: 范围
+    kind: 逝世
+    route_order: 13
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 卒年卒地均无原始记载，此处按终官地随州卒说推定著录；另有他地说与更早卒年之说并存。
+    source_ids: [src-qts-liuchangqing]
+
+relations: []
+# 说明：本次实取的两源（全唐诗小传、唐才子传刘长卿传）涉及的交游对象——严维、张南史、秦系、
+# 皇甫冉、李嘉祐、郎士元、钱起、灵澈、李穆（婿）、吴仲孺（构陷者）——以及评家权德舆、高仲武，
+# 均未在 data/figures.yaml 入库（现有可关联人物中无可靠直接交往的实取证据），故本卷 0 组关系，
+# 不为凑数编造。待上述人物入库后再补建（社群/同僚类关系候选：秦系、严维、灵澈）。
+
+reception:
+  - era: 同时代
+    evaluator: 高仲武《中兴间气集》（唐人选本，选其诗九首）
+    quote: 长卿有吏干，刚而犯上，两遭迁谪，皆自取之。诗体虽不新奇，甚能炼饰。……思锐才窄也。……可谓伤而不怨，亦足以发挥风雅矣。
+    text_display: excerpt
+    comment: 同时代选家的定音之评：一面直言其性格致祸与「语意稍同、思锐才窄」的创作局限，一面肯定其炼饰之功与伤而不怨的风雅品格。据四库全书本（维基文库）实取并施加现代标点断句。
+    confidence: 确定
+    source_ids: [src-zhongxingjianqiji]
+  - era: 同时代
+    evaluator: 韩翃（《中兴间气集》卷下韩翃评语中带及）
+    quote: 其比兴深于刘员外，筋节成于皇甫冉也。
+    text_display: excerpt
+    comment: 选家评韩翃时以刘长卿（刘员外）为比兴深度的标尺，可见其在大历诗坛的坐标地位。
+    confidence: 确定
+    source_ids: [src-zhongxingjianqiji]
+  - era: 历代批评
+    evaluator: 权德舆称、皇甫湜引，全唐诗小传总述
+    quote: 權德輿嘗謂爲五言長城。皇甫湜亦云：「詩未有劉長卿一句，已呼宋玉爲老兵。」其見重如此。
+    text_display: excerpt
+    comment: 五言长城之称出自权德舆（两源一致），后人沿称遂成定名；皇甫湜语则状其诗句被广泛援用的盛况。注意：「自称五言长城」为通行误记，实取两源均作权德舆所称。
+    source_ids: [src-qts-liuchangqing, src-tangcaizizhuan]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究将其定位为大历诗风的代表作家与五言律精工化的关键人物，围绕其生平系年（生卒、两次贬谪路线）、与大历十才子的先后关系、五言长城的诗体内涵等展开考订；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 逢雪宿芙蓉山主人长期入选语文教材与古典选本，柴门闻犬吠风雪夜归人为国民级诗句；送灵澈上人、听弹琴、饯别王十一南游、长沙过贾谊宅等收入唐诗三百首系统。教材篇目随学期变动录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中刘长卿形象罕见；网络传播集中于其雪夜、送别名句与「五言长城」称号，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-qts-liuchangqing, src-tangcaizizhuan]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。15条年谱（5阶段）、10首作品、13处足迹、0组关系（合规目标未入库，报告说明）、6层接受史（同时代两层含中兴间气集实取评语）。生平全部实取自维基文库全唐诗卷147小传与唐才子传卷2刘长卿传原文；作品文本逐篇实取单篇页；中兴间气集评语实取四库全书本卷下。五言长城按实取著录为权德舆所称而非自称；南邑尉/南巴尉异文、生卒年诸说均落dispute。"}

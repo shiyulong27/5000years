@@ -1,0 +1,515 @@
+# 柳永全景详卷（schema v1）
+# 史料分层审计表（柳永正史无传，本卷以笔记与词集为据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 避暑录话(叶梦得，笔记层) | 能改斋漫录等他书笔记 | 词集内证 | 结论与置信 |
+# |---|---|---|---|---|
+# | 字与排行 | 柳永字耆卿 | 排行第七称柳七 | — | 确定（笔记同记） |
+# | 举子时声名 | 为举子时多游狭邪善为歌辞；教坊乐工每得新腔必求永为辞始行于世 | — | 羁旅艳词自述互证 | 确定（笔记层） |
+# | 科第 | 初举进士登科为睦州掾 | 屡试不第说（鹤冲天背景） | 鹤冲天词 | 登科确定；落第细节属笔记传说层 |
+# | 且去填词/奉旨填词 | 无载 | 能改斋漫录记仁宗「且去浅斟低唱何要浮名」 | — | 传说层，正史无载→标传说 |
+# | 基层宦历 | 为睦州掾；连荐遭物议不得调；初任官满考荐举法自永始 | 余杭令泗州判官等（学界据方志本集推定） | — | 睦州掾确定（笔记）；余杭泗州推定→存疑 |
+# | 官终 | 永终屯田员外郎 | — | — | 确定（笔记层），世称柳屯田 |
+# | 卒葬 | 死旅殡润州僧寺；王和甫为守时求其后不得乃出钱葬之 | — | — | 润州卒殡确定（笔记层）；卒年约1053系推定存疑 |
+# | 身后传说 | 无载 | 吊柳七、群妓合金葬之说（宋人笔记敷演） | — | 传说层 |
+# | 改名事 | 「后改名三变」（维基文库四库本原文如此，与他书所记原名三变改名永互为异文） | 原名三变后改名永 | — | 异文并录→存疑 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: liuyong
+
+profile:
+  courtesy_name: 耆卿
+  art_name: ""
+  aliases: [柳七, 柳三变（原名）, 白衣卿相, 柳屯田]
+  gender: 男
+  ethnicity: ""
+  ancestry: 崇安（今福建武夷山）
+  birthplace: 崇安（一说生于其父宦所济州任城，详见 timeline 出生条目）
+  death_place: 润州（据避暑录话死旅殡润州僧寺，卒年与地点均系笔记层记载）
+  offices: [睦州掾（睦州团练推官）, 余杭令（学界推定）, 泗州判官（一说）, 屯田员外郎（晚年官至）]
+  fields: [文学]
+  roles: [词人]
+  summary: 北宋慢词开山，「凡有井水饮处即能歌柳词」的第一位专力写词的文人，正史无传而声传天下。
+
+timeline:
+  # ── 阶段一：崇安少年 ──────────────────────────────
+  - stage: 崇安少年
+    stage_order: 1
+    title: 出生于崇安仕宦之家
+    date:
+      text: 生年不详，诸家推定约984—987年间
+      precision: 未知
+    place: 崇安
+    summary: 柳永正史无传。出身仕宦之家，父柳宜曾仕南唐入宋为官，兄长三复、三接皆有科第功名。生年诸说不一，通说约987年（一说984），均系倒推。
+    confidence: 存疑
+    dispute: 生年无任何原始记载，约984—987间诸说均由科第经历与卒年倒推，无法确证。
+    source_ids: []
+    # 出处待登记：生平框架据宋人笔记与本集推定，避暑录话/能改斋漫录条目尚未登记 sources.yaml
+  - stage: 崇安少年
+    stage_order: 2
+    title: 幼承家学，工于音律
+    date:
+      text: 少年时期，具体年代不详
+      precision: 未知
+    place: 崇安
+    summary: 家世儒业而柳永兼通音律，为其后来为教坊乐工创制慢词新腔的根基。此期事迹仅见于后世追述，无可系年。
+    source_ids: []
+
+  # ── 阶段二：汴京填词 ──────────────────────────────
+  - stage: 汴京填词
+    stage_order: 3
+    title: 赴京应试滞留汴京，坊曲填词名声大噪
+    date:
+      text: 约1000—1015年之间（据词作系年与科第经历推定）
+      year: 1000
+      range_end: 1015
+      precision: 范围
+    place: 汴京
+    summary: 叶梦得避暑录话载其「为举子时多游狭邪，善为歌辞。教坊乐工每得新腔，必求永为辞，始行于世，于是声传一时」。滞留汴京流连坊曲成为其词风形成的土壤。
+    confidence: 存疑
+    dispute: 声名鹊起之事避暑录话有明文，然滞留起讫年份系据词作编年与应试经历推定。
+    source_ids: []
+    # 出处待登记：叶梦得《避暑录话》柳永条已实取维基文库原文，sources.yaml 待补登
+  - stage: 汴京填词
+    stage_order: 4
+    title: 科举屡试不第，作鹤冲天自抒牢骚
+    date:
+      text: 约天禧前后，具体年份不详
+      precision: 未知
+    place: 汴京
+    summary: 屡试不第期间作鹤冲天黄金榜上，有「才子词人，自是白衣卿相」「忍把浮名，换了浅斟低唱」之句，以狂语自遣。此词成为后世「且去填词」传说的引子。
+    confidence: 有争议
+    dispute: 落第次数与鹤冲天作年均无可确考；吴曾能改斋漫录以此词为仁宗黜落之因，然笔记叙事晚出，因果链条属传说层而非信史。
+    source_ids: []
+    # 出处待登记：《鹤冲天》见乐章集（src-yuezhangji 为词集总目非单篇页面）；能改斋漫录待登记
+  - stage: 汴京填词
+    stage_order: 5
+    title: 仁宗「且去填词」黜落与自称「奉旨填词柳三变」（传说层）
+    date:
+      text: 相传在应举期间，年代不详
+      precision: 未知
+    place: 汴京
+    summary: 宋人笔记相传仁宗临轩放榜特黜之曰「且去浅斟低唱，何要浮名」，柳永遂自称「奉旨填词柳三变」浪迹坊曲。此事流传极广而正史无载。
+    confidence: 传说
+    dispute: 仅见能改斋漫录等宋人笔记，情节近逸闻敷演；「奉旨填词」三字亦只见于后世题署与笔记转述，不得冒充信史，本卷按传说层著录。
+    source_ids: []
+    # 出处待登记：吴曾《能改斋漫录》卷十六待登记
+  - stage: 汴京填词
+    stage_order: 6
+    title: 浪迹江南，望海潮咏杭州
+    date:
+      text: 约天圣年间（1030年前后的漫游期，系学界推定）
+      year: 1025
+      precision: 约
+    place: 苏州、杭州、扬州一带
+    summary: 失意后辗转江南都会，倚声填词以自给。望海潮东南形胜铺写杭州「三秋桂子，十里荷花」的承平气象，为咏杭州绝唱；干谒赠孙何（一说孙沔）的故事属笔记层附会。
+    confidence: 存疑
+    dispute: 漫游路线与年份均系据词作内容推定；受赠者孙何/孙沔两说并存，干谒情境出自古今词话等笔记，可信度有限。
+    source_ids: []
+
+  # ── 阶段三：登第宦历 ──────────────────────────────
+  - stage: 登第宦历
+    stage_order: 7
+    title: 景祐元年改名永，登进士第
+    date:
+      text: "景祐元年（1034年）"
+      year: 1034
+      precision: 精确
+    place: 汴京
+    summary: 仁宗亲政开恩科，柳永与其兄三接同登景祐元年进士第。此前原名三变，登第前后改名永、改字耆卿。避暑录话称其「初举进士登科，为睦州掾」。登科之年为此卷少数可精确系年的坐标点。
+    source_ids: []
+    # 出处待登记：登第年份据《宋史》纪事与地方志通说；避暑录话「初举进士登科为睦州掾」已实取，待登记
+  - stage: 登第宦历
+    stage_order: 8
+    title: 初仕睦州掾，连荐遭物议不得调
+    date:
+      text: 约景祐初（1034—1036年间）
+      year: 1034
+      range_end: 1036
+      precision: 范围
+    place: 睦州
+    summary: 避暑录话载：旧初任官荐举法不限成考，永到官，郡将知其名，与监司连荐之，物议喧然；及代还至铨，有摘以言者遂不得调。自是诏初任官须满考乃得荐举，自永始——柳永的名声反成仕途负累，并促成一项制度变更。
+    source_ids: []
+    # 出处待登记：叶梦得《避暑录话》柳永条全文已实取维基文库，sources.yaml 待补登
+  - stage: 登第宦历
+    stage_order: 9
+    title: 转官余杭令、泗州判官等基层职务
+    date:
+      text: 约宝元至庆历间（1038—1048年间，据方志与学界考订推定）
+      year: 1038
+      range_end: 1048
+      precision: 范围
+    place: 余杭、泗州等地
+    summary: 登第后长期辗转江淮浙间任下级官吏。余杭令、泗州判官等历官系后世据方志、本集诗文考订，各家谱系略有出入。
+    confidence: 存疑
+    dispute: 基层宦历无正史可依，历官次序与年份诸家考订不一；本卷仅取学界通说的保守表述。
+    source_ids: []
+    inferred: true
+  - stage: 登第宦历
+    stage_order: 10
+    title: 作醉蓬莱忤旨，仁宗置不问
+    date:
+      text: 宦游后期，具体年份不详
+      precision: 未知
+    place: 京师或外任
+    summary: 避暑录话载其因秋晚张乐献醉蓬莱辞，「语不称旨，仁宗亦疑有欲为之地者，因置不问」；又记其上元辞传禁中多称之。文名既以词起，复以词累之。
+    source_ids: []
+    # 出处待登记：叶梦得《避暑录话》柳永条
+  - stage: 登第宦历
+    stage_order: 11
+    title: 官终屯田员外郎，世称柳屯田
+    date:
+      text: 晚年至仕之时，具体年份不详
+      precision: 未知
+    place: ""
+    summary: 避暑录话明载「永终屯田员外郎」，故世称柳屯田。此为其最终官职的唯一同时代明确记录。
+    source_ids: []
+    # 出处待登记：叶梦得《避暑录话》柳永条
+
+  # ── 阶段四：晚境身后 ──────────────────────────────
+  - stage: 晚境身后
+    stage_order: 12
+    title: 卒于润州旅次，殡僧寺，王和甫出钱葬之
+    date:
+      text: 约1053年前后（皇祐至至和间，系学界推定）
+      year: 1053
+      precision: 约
+    place: 润州
+    summary: 避暑录话载「死旅，殡润州僧寺。王和甫为守时，求其后不得，乃为出钱葬之」——客死旅舍，权厝僧寺，身后无嗣，赖太守出资方得安葬。
+    confidence: 存疑
+    dispute: 卒地润州有同时代笔记为据而卒年全凭推定，通行约1053年说与皇祐五年、至和三年诸说并存。
+    source_ids: []
+    # 出处待登记：叶梦得《避暑录话》柳永条
+  - stage: 晚境身后
+    stage_order: 13
+    title: 「吊柳七」与群妓合金葬之的传说
+    date:
+      text: 卒后传闻敷演，起于北宋末南宋初
+      precision: 未知
+    place: 润州一带
+    summary: 后世相传柳永死日家无余财，群妓合金而葬之，此后每逢清明妓者携酒肴祭于墓侧谓之吊柳七。此说敷演成戏文话本题材，流传极广。
+    confidence: 传说
+    dispute: 合金葬与吊七故事仅见宋人笔记与小说系统，与避暑录话「王和甫出钱葬之」的信实记载相竞而行，属市民文学对白衣卿相形象的情感投射，本卷按传说层著录。
+    source_ids: []
+    # 出处待登记：曾敏行《独醒杂志》、《方舆胜览》等笔记层文献待登记
+
+works:
+  - work_id: yulinling-hanchanqiqie
+    title: 雨霖铃·寒蝉凄切
+    alt_titles: [雨霖铃·秋别]
+    genre: 词（双调慢词）
+    date:
+      text: 创作年代不详，当在离京南下之际
+      precision: 未知
+    place: 汴京城外长亭（词境推定）
+    context: 秋别之作。上片写实离亭执手，下片悬想别后，寒蝉骤雨兰舟晓月层层铺叙，为宋代离别词第一名篇，宋金十大曲之一。
+    attribution: 确凿
+    excerpt: 寒蝉凄切。对长亭晚，骤雨初歇。……执手相看泪眼，竟无语凝噎。……今宵酒醒何处，杨柳岸、晓风残月。
+    text_display: excerpt
+    themes: [离别, 羁旅]
+    influence: 执手相看泪眼与杨柳岸晓风残月成为汉语离别意象的极致表达。
+    source_ids: [src-yuezhangji]
+  - work_id: bashengganzhou-duixiaoxiao
+    title: 八声甘州·对潇潇暮雨洒江天
+    alt_titles: []
+    genre: 词（慢词）
+    date:
+      text: 创作年代不详，羁旅行役时期
+      precision: 未知
+    place: 江上（泛指）
+    context: 秋士登高怀远之词。霜风凄紧关河冷落一联，苏轼叹为不减唐人高处（侯鲭录所记，笔记层），是雅俗之争中柳词被士大夫承认的孤证。
+    attribution: 确凿
+    excerpt: 对潇潇暮雨洒江天，一番洗清秋。渐霜风凄紧，关河冷落，残照当楼。……惟有长江水，无语东流。
+    text_display: excerpt
+    themes: [羁旅, 秋思]
+    influence: 关河冷落残照当楼被历代词论推为柳词中最近唐人气象的一联。
+    source_ids: [src-yuezhangji]
+  - work_id: wanghaichao-dongnanxingsheng
+    title: 望海潮·东南形胜
+    alt_titles: []
+    genre: 词（慢词）
+    date:
+      text: 约漫游杭州时期，具体年份不详
+      precision: 未知
+    place: 杭州
+    context: 铺叙杭城形胜繁华的都市词。三秋桂子十里荷花一联相传令金主完颜亮兴起投鞭渡江之志（鹤林玉露所记，传说层），足见其传播之广。
+    attribution: 确凿
+    excerpt: 东南形胜，三吴都会，钱塘自古繁华。……重湖叠𪩘清嘉。有三秋桂子，十里荷花。
+    text_display: excerpt
+    themes: [咏地, 都市]
+    influence: 以词体为城市立传的开山之作，罗大经至谓一词牵动长江万里愁。
+    source_ids: [src-yuezhangji]
+  - work_id: dielianhua-zhuyiweilou
+    title: 蝶恋花·伫倚危楼风细细
+    alt_titles: [凤栖梧·伫倚危楼风细细]
+    genre: 词（小令）
+    date:
+      text: 创作年代不详，漂泊怀人时期
+      precision: 未知
+    place: ""
+    context: 怀人之作。结拍衣带渐宽终不悔为伊消得人憔悴，王国维人间词话借喻古今成大事业大学问者的第二境界，使俚情小令升格为治学箴言。
+    attribution: 确凿
+    excerpt: 伫倚危楼风细细，望极春愁，黯黯生天际。……衣带渐宽终不悔。为伊消得人憔悴。
+    text_display: full
+    themes: [相思, 抒怀]
+    influence: 衣带渐宽一句经王国维征引成为中国文化中执着精神的通用符号。
+    confidence: 存疑
+    dispute: 此词调名蝶恋花与凤栖梧两见，亦有归入欧阳修词集的异文归属之争，主流定为柳永作。
+    source_ids: [src-yuezhangji]
+  - work_id: dingfengbo-zichunlai
+    title: 定风波·自春来惨绿愁红
+    alt_titles: [定风波·伫立长堤（另首同名）]
+    genre: 词（慢词）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 代言体闺怨俚词。针线闲拈伴伊坐一句相传晏殊面斥柳永「殊虽作曲子不曾道彩线慵拈伴伊坐」（画墁录所记），成为柳词俚俗之评的经典公案。
+    attribution: 确凿
+    excerpt: 自春来、惨绿愁红，芳心是事可可。……镇相随、莫抛躲，针线闲拈伴伊坐。
+    text_display: excerpt
+    themes: [闺怨, 俚俗]
+    influence: 柳词俚俗一路的代表，晏殊轶事使其成为雅俗之争的标本。
+    source_ids: [src-yuezhangji]
+  - work_id: hechongtian-huangjinbangshang
+    title: 鹤冲天·黄金榜上
+    alt_titles: []
+    genre: 词
+    date:
+      text: 应举落第期间所作，具体年份不详
+      precision: 未知
+    place: 汴京（推定）
+    context: 落第抒愤之作。忍把浮名换了浅斟低唱相传触怒仁宗致其黜落，遂有奉旨填词之谑（能改斋漫录所记，传说层）。词本身是科举失意心态最直白的自供状。
+    attribution: 确凿
+    excerpt: 黄金榜上，偶失龙头望。……才子词人，自是白衣卿相。……忍把浮名，换了浅斟低唱！
+    text_display: excerpt
+    themes: [落第, 狂放]
+    influence: 白衣卿相与浅斟低唱自此成为柳永的人格标签，敷演为元曲话本中的经典形象。
+    confidence: 存疑
+    dispute: 词作归属柳永无疑，然其引发黜落的叙事属笔记传说层，作年与落第具体情形不可考。
+    source_ids: [src-yuezhangji]
+  - work_id: qishi-wanqiutian
+    title: 戚氏·晚秋天
+    alt_titles: []
+    genre: 词（长调慢词三叠）
+    date:
+      text: 晚年羁旅时期所作（一说外放荆南时），具体年份不详
+      precision: 未知
+    place: 江陵一带（据词境推定）
+    context: 二百一十二字三叠一韵到底，为北宋长调之最。孤馆度日如年以下自暮夜写到拂晓，把未名未禄的悔恨与帝里旧欢的追忆层层铺展，时人比之于离骚（碧鸡漫志引语，笔记层）。
+    attribution: 确凿
+    excerpt: 晚秋天，一霎微雨洒庭轩。……孤馆，度日如年。……念利名，憔悴长萦绊。……停灯向晓，抱影无眠。
+    text_display: excerpt
+    themes: [羁旅, 感遇]
+    influence: 柳永自制新腔与慢词铺叙艺术的极限之作。
+    source_ids: [src-yuezhangji]
+  - work_id: erlangshen-yanguangxie
+    title: 二郎神·炎光谢
+    alt_titles: []
+    genre: 词（慢词）
+    date:
+      text: 创作年代不详，七夕题材
+      precision: 未知
+    place: ""
+    context: 咏七夕慢词。炎光谢过暮雨芳尘轻洒写新秋雨霁星娥驾轮之境，清丽疏朗，是柳词中少见的清空一路。
+    attribution: 确凿
+    excerpt: 炎光谢。过暮雨、芳尘轻洒。乍露冷风清庭户，爽天如水，玉钩遥挂。应是星娥嗟久阻，叙旧约、飙轮欲驾。
+    text_display: excerpt
+    themes: [七夕, 秋景]
+    influence: 七夕词中以铺叙见长的代表作，可见柳词不止俚俗一格。
+    source_ids: [src-yuezhangji]
+  - work_id: shaonianyou-changangudao
+    title: 少年游·长安古道马迟迟
+    alt_titles: [少年游·参差烟树灞陵桥（另首同名）]
+    genre: 词（小令）
+    date:
+      text: 晚年宦游时期所作（学界推定），具体年份不详
+      precision: 未知
+    place: 长安古道（词境泛指西行道途）
+    context: 秋日行役小令。夕阳岛外秋风原上目断四天垂，以极简笔墨写尽天涯倦游之境，与慢词铺叙相映见其笔力。
+    attribution: 确凿
+    excerpt: 长安古道马迟迟，高柳乱蝉嘶。夕阳岛外，秋风原上，目断四天垂。
+    text_display: full
+    themes: [羁旅, 秋]
+    influence: 小令中苍凉疏淡一路的典范。
+    confidence: 存疑
+    dispute: 作年系晚年推定；乐章集内少年游多首，此首归属历来无异而系年无据。
+    source_ids: [src-yuezhangji]
+
+footprints:
+  - name: 崇安故里
+    modern_name: 福建省南平市武夷山市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 籍贯地坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: 出生至赴京前，具体年代不详
+      precision: 未知
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    source_ids: []
+    # 出处待登记：籍贯崇安据宋人著录与地方志通说
+  - name: 汴京
+    modern_name: 河南省开封市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约真宗朝起长期居留应试填词，至景祐登第
+      year: 1000
+      range_end: 1034
+      precision: 范围
+    kind: 居住
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 滞留汴京的起讫年份系据词作编年与应试经历推定；坊曲填词事避暑录话有明文。
+    source_ids: []
+  - name: 杭州
+    modern_name: 浙江省杭州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约漫游江南时期到访，据望海潮咏杭州推定
+      year: 1025
+      precision: 约
+    kind: 游历
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 到访杭州由望海潮词内容推定，确年无考；干谒孙何（一说孙沔）情境属笔记层。
+    source_ids: [src-yuezhangji]
+  - name: 睦州
+    modern_name: 浙江省建德市一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 州治地望据历史地理通说，坐标待接入体系
+    visit_date:
+      text: 景祐初登第后首任（约1034—1036年间）
+      year: 1034
+      range_end: 1036
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 避暑录话明言初举进士登科为睦州掾，任职可信；具体起讫年份系推定。
+    source_ids: []
+  - name: 余杭
+    modern_name: 浙江省杭州市余杭区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 县治地望据历史地理通说，坐标待接入体系
+    visit_date:
+      text: 约宝元至庆历间宦游任县令（推定）
+      year: 1038
+      range_end: 1048
+      precision: 范围
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 余杭令历官出自方志与学界考订，无原始任命文书可稽，年份纯属推定。
+    source_ids: []
+  - name: 润州僧寺（权厝处）
+    modern_name: 江苏省镇江市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 卒殡之地据避暑录话文字，僧寺名不可考，坐标待接入体系
+    visit_date:
+      text: 约1053年前后客死权厝于此
+      year: 1053
+      precision: 约
+    kind: 逝世
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 死旅殡润州僧寺为王和甫出资葬事的同时代笔记记载，卒年约1053系学界推定。
+    source_ids: []
+    # 出处待登记：叶梦得《避暑录话》柳永条
+
+relations:
+  - relation_type: 社群
+    target_id: zhoubangyan
+    direction: 双向
+    period:
+      text: 词史谱系上的先后承续，非同时交往
+      year: 1034
+      range_end: 1121
+      precision: 范围
+    evidence: 此为词史谱系归纳而非交往记载：柳永创制慢词长调体制，周邦彦承其体式而精严格律、审定音声，成为格律派集大成者；历代词论惯以周柳并称对照慢词发展两阶段。二人相隔约一代，无任何直接交往的文字记载。
+    inferred: true
+    confidence: 确定
+    source_ids: []
+    # 与 zhoubangyan.yaml 对应关系条目互为镜像；出处待登记（宋史文苑传周邦彦资料已在全局注册但本卷限用 src-yuezhangji）
+
+reception:
+  - era: 同时代
+    evaluator: 叶梦得（避暑录话）
+    quote: 凡有井水饮处，即能歌柳词。
+    text_display: excerpt
+    comment: 出自叶梦得避暑录话柳永条——记其仕丹徒时闻诸西夏归明官，言柳词传播之广及于域外。同条又记教坊乐工每得新腔必求永为辞，是理解柳永创作机制的第一手材料。该笔记条目已于2026-08-25自维基文库实取全文，sources.yaml 尚未登记，故此处 source_ids 暂留空（警告预期）。
+    source_ids: []
+  - era: 历代批评
+    evaluator: 苏轼（语见赵令畤侯鲭录，笔记层）
+    quote: 不减唐人高处
+    text_display: excerpt
+    comment: 相传苏轼曾举八声甘州渐霜风凄紧关河冷落残照当楼数语，谓世言柳耆卿曲俗，非也，此语不减唐人高处。此说出赵令畤侯鲭录卷七，属宋人笔记转述而非苏轼文集本文；侯鲭录尚未登记 sources.yaml，source_ids 留空并中性转述其传闻性质。
+    source_ids: []
+  - era: 历代批评
+    evaluator: 李清照（词论）
+    quote: 词语尘下
+    text_display: excerpt
+    comment: 李清照词论批评柳屯田者变旧声作新声出乐章集大得声称于世，然虽协音律而词语尘下——肯定其协律与新声之功、贬其语言尘下，是宋人对柳词雅俗之争中最系统的负面表述。词论为公版古籍可短引；该文献尚未登记 sources.yaml，source_ids 留空。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦柳永生平系年的重建（生卒年、登第与宦历考订）、慢词体制与宋词转型的枢纽地位、以及雅俗二重性评价史的梳理；具体论著引文须逐条取得许可后补入，本卷暂作中立综述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 雨霖铃八声甘州望海潮长期入选中学语文教材与诵读选本；凡有井水饮处皆能歌柳词成为大众文化中宋词普及度的代名词，白衣卿相与奉旨填词的形象经由话本戏曲广泛传播。教材篇目随学期变动，录入时须另行核验。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 影视剧与网络传播
+    quote: ""
+    text_display: none
+    comment: 柳永题材影视剧与网络音频节目多以雨霖铃与吊柳七传说为核心素材，白衣卿相形象持续再生产；相关改编作品的具体引用须逐案核验版权状态后另行登记，本卷不作引述。
+    source_ids: []
+
+sources_used: [src-yuezhangji]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。13条年谱（4阶段）、9首作品、6处足迹、1组关系、6条接受史。柳永正史无传，全部材料按笔记/传说/推定三层标注；且去填词、奉旨填词、吊柳七一律标传说层；除预登记 src-yuezhangji 外各条 source_ids 留空并在行内注明出处待登记}
+
+# ── 本次实取 URL 清单（2026-08-25）──────────────────
+# 维基文库《雨霖铃》(柳永)：https://zh.wikisource.org/wiki/雨霖鈴_(柳永)
+# 维基文库《八声甘州》(柳永)：https://zh.wikisource.org/wiki/八聲甘州_(柳永)
+# 维基文库《望海潮》(柳永)：https://zh.wikisource.org/wiki/望海潮_(柳永)
+# 维基文库《蝶恋花》(柳永)：https://zh.wikisource.org/wiki/蝶戀花_(柳永)
+# 维基文库《避暑录话》（柳永条全文）：https://zh.wikisource.org/zh-hans/避暑錄話
+# 古文岛《鹤冲天·黄金榜上》：https://www.guwendao.net/gushiwen_35e5da67ba.aspx
+# 古文岛《定风波·自春来》：https://www.guwendao.net/shiwenv_37afbc0eb0b6.aspx
+# 古诗文网《戚氏·晚秋天》：https://www.cngwzj.com/gushi/SongDai/48931/
+# 龙榆生纪念网站《唐宋名家词选》柳永页（含二郎神/画墁录晏殊条）：https://longyusheng.org/ci/liuyong/13.html

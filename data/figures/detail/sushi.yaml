@@ -1,0 +1,871 @@
+# 苏轼全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 宋史·卷338·列传第九十七·苏轼传（维基文库实取，oldid=1458054） | 结论与置信 |
+# |---|---|---|
+# | 名号籍贯 | 蘇軾字子瞻眉州眉山人 | 确定 |
+# | 少年母教 | 生十年父洵遊學四方母程氏親授以書；程氏讀東漢范滂傳，軾請曰軾若爲滂母許之否乎 | 确定 |
+# | 嘉祐二年 | 試禮部，主司歐陽脩得軾刑賞忠厚論驚喜欲擢冠多士猶疑其客曾鞏所爲但置第二；復以春秋對義居第一殿試中乙科；脩語梅聖俞曰吾當避此人出一頭地 | 确定（1057） |
+# | 制科三等 | 歐陽脩以才識兼茂薦之秘閣，復對制策入三等；自宋初以來制策入三等惟吳育與軾而已；除大理評事簽書鳳翔府判官 | 确定；制科确年本传不系（通行嘉祐六年1061） |
+# | 议新法 | 熙寧二年還朝王安石執政以判官告院；四年上議反對變科舉，神宗召見，對曰但患求治太急聽言太廣進人太銳；又上書論其不便願陛下結人心厚風俗存紀綱 | 确定 |
+# | 外放履历 | 使御史謝景溫論奏其過窮治無所得軾遂請外通判杭州；徙知密州（爭手實法）；徙知徐州（河決曹村廬於城上過家不入卒全其城）；徙知湖州 | 确定；各州起讫年份本传不系 |
+# | 乌台诗案 | 御史李定舒亶何正臣摭其表語並媒蘖所爲詩以爲訕謗逮赴臺獄欲置之死鍛煉久之不決神宗獨憐之以黃州團練副使安置；築室於東坡自號東坡居士 | 确定；案发年份本传不系年（元丰二年1079说据编年史料，本卷未实取，按约处理） |
+# | 金陵会晤 | 手札移軾汝州有曰蘇軾黜居思咎閱歲滋深人材實難不忍終棄；道過金陵見王安石論大兵大獄，安石曰出在安石口入在子瞻耳 | 确定；过金陵年份本传不系（元丰七年1084通说） |
+# | 元祐历官 | 至常神宗崩哲宗立復朝奉郎知登州召爲禮部郎中；遷起居舍人中書舍人；尋除翰林學士；二年兼侍讀；四年拜龍圖閣學士知杭州；六年改翰林承旨出知潁州；七年徙揚州以兵部尚書召兼侍讀遷禮部尚書；八年出知定州 | 确定（本传逐年系年） |
+# | 知杭政绩 | 免上供米三之一作病坊；浚茅山鹽橋二河復完六井；取葑田積湖中爲長堤植芙蓉楊柳杭人名爲蘇公堤；二十年間再蒞杭有德於民家有畫像飲食必祝又作生祠 | 确定 |
+# | 绍圣贬窜 | 御史論所作詞命以爲譏斥先朝遂以本官知英州尋降一官未至貶寧遠軍節度副使惠州安置；居三年泊然無所蒂芥；又貶瓊州別駕居昌化（故儋耳地非人所居藥餌皆無有）買地築室儋人運甓畚土以助之獨與幼子過處著書以爲樂 | 确定；贬惠贬儋起讫本传仅记「紹聖初」「居三年」，具体年份按约处理 |
+# | 北归病卒 | 徽宗立移廉州改舒州團練副使徙永州更三大赦遂提舉玉局觀復朝奉郎；建中靖國元年卒于常州年六十六 | 确定（1100/1101） |
+# | 文章评价 | 嘗自謂作文如行雲流水初無定質但常行於所當行止於所不可不止；其體渾涵光芒雄視百代有文章以來蓋亦鮮矣 | 确定 |
+# | 苏门诸人 | 一時文人如黃庭堅晁補之秦觀張耒陳師道舉世未之識軾待之如朋儔未嘗以師資自予也 | 确定 |
+# | 身后 | 高宗卽位贈資政殿學士謂爲文章之宗親制集贊；遂崇贈太師諡文忠 | 确定 |
+# | 词作文本 | 念奴娇水调歌头江城子二首定风波等取维基文库单篇页通行公版文本；念奴娇异文极多（浪聲沈/穿空/拍岸/强虜/人間如寄等），从御定词谱系统并注异文层 | 通行本层；未逐字核对善本异文 |
+# | 关西大汉条 | 幕士論柳蘇詞：學士詞須關西大漢鐵綽板唱大江東去——原題吹劍錄；本次未在维基文库定位吹剑录单行页，經清·沈雄《古今词话》（维基文库）转引实取得手 | 笔记转引层，出处链已注明 |
+# | 荔支叹 | 无独立单篇页；经维基文库 API 检索定位页名「荔支嘆」（出自東坡全集），全文实取得手 | 确定 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: sushi
+
+profile:
+  courtesy_name: 子瞻（一字和仲，据维基文库作者页）
+  art_name: 东坡居士
+  aliases: [苏东坡, 东坡, 苏文忠]
+  gender: 男
+  ethnicity: ""
+  ancestry: 眉州眉山
+  birthplace: 眉州眉山
+  death_place: 常州
+  offices: [大理评事·签书凤翔府判官, 判登闻鼓院, 直史馆, 判官告院, 杭州通判, 知密州, 知徐州, 知湖州, 黄州团练副使, 复朝奉郎·知登州, 礼部郎中, 起居舍人, 中书舍人, 翰林学士, 翰林学士兼侍读, 龙图阁学士·知杭州, 翰林学士承旨, 知颍州, 知扬州, 兵部尚书兼侍读, 礼部尚书（端明殿学士·翰林侍读学士）, 知定州, 宁远军节度副使·惠州安置, 琼州别驾·昌化安置, 舒州团练副使, 提举玉局观·复朝奉郎]
+  fields: [文学, 艺术]
+  roles: [词人, 诗人, 散文家, 书法家, 画家]
+  summary: 千古文豪，诗词文书画全才；嘉祐榜上一鸣惊人，乌台诗案九死一生而旷达不改，问汝平生功业黄州惠州儋州——进退从容的士大夫典范。
+
+timeline:
+  # ── 阶段一：眉山少年与兄弟师承 ──────────────────────
+  - stage: 眉山少年与兄弟师承
+    stage_order: 1
+    title: 生于眉州眉山
+    date:
+      text: 约1037年
+      year: 1037
+      precision: 约
+    place: 眉州眉山
+    summary: 苏轼生于眉州眉山。本传不载生年，卒年六十六倒推与通行谱系定为1037年（通行作景祐三年十二月十九日）；与L1登记一致。
+    confidence: 存疑
+    dispute: 生年正史本传无载，1037系由建中靖国元年（1101）卒、年六十六倒推闭合；墓志系月日未实取。
+    source_ids: [src-songshi-vol338]
+  - stage: 眉山少年与兄弟师承
+    stage_order: 2
+    title: 母程氏亲授以书，范滂之问
+    date:
+      text: 少年时期，具体年代不详
+      precision: 未知
+    place: 眉山
+    summary: 本传记生十年父洵游学四方母程氏亲授以书，闻古今成败辄能语其要。程氏读东汉范滂传慨然太息，轼请曰轼若为滂母许之否乎，程氏曰汝能为滂吾顾不能为滂母邪——母子气节相许，为其人格底色。
+    source_ids: [src-songshi-vol338]
+  - stage: 眉山少年与兄弟师承
+    stage_order: 3
+    title: 博通经史，读庄子叹得吾心
+    date:
+      text: 弱冠之前，具体年代不详
+      precision: 未知
+    place: 眉山
+    summary: 本传记比冠博通经史属文日数千言好贾谊陆贽书；既而读庄子叹曰吾昔有见口未能言今见是书得吾心矣。与弟辙同承父洵之教，师父洵为文本传明载。
+    source_ids: [src-songshi-vol338]
+
+  # ── 阶段二：名动京师与欧门知遇 ──────────────────────
+  - stage: 名动京师与欧门知遇
+    stage_order: 4
+    title: 嘉祐二年试礼部，欧阳修置第二
+    date:
+      text: "1057年"
+      year: 1057
+      precision: 精确
+    place: 汴京
+    summary: 嘉祐二年试礼部，主司欧阳修思以救时文磔裂诡异之弊，得轼刑赏忠厚论惊喜欲擢冠多士犹疑其客曾巩所为但置第二；复以春秋对义居第一殿试中乙科。后以书见修，修语梅圣俞曰吾当避此人出一头地，闻者始哗不厌久乃信服。
+    source_ids: [src-songshi-vol338]
+  - stage: 名动京师与欧门知遇
+    stage_order: 5
+    title: 丁母忧；嘉祐五年调福昌主簿
+    date:
+      text: "1060年"
+      year: 1060
+      precision: 精确
+    place: 眉山、汴京
+    summary: 进士及第后丁母忧。本传系嘉祐五年调福昌主簿。
+    source_ids: [src-songshi-vol338]
+  - stage: 名动京师与欧门知遇
+    stage_order: 6
+    title: 欧阳修荐试秘阁，制策入三等
+    date:
+      text: 约1061年
+      year: 1061
+      precision: 约
+    place: 汴京
+    summary: 欧阳修以才识兼茂荐之秘阁，试六论旧不起草以故文多不工，轼始具草文义粲然；复对制策入三等——自宋初以来制策入三等惟吴育与轼而已。此为宋代制科最高等第的极罕记录。
+    confidence: 存疑
+    dispute: 荐举试制科事本传明载而不系年，通行系于嘉祐六年（1061）。
+    source_ids: [src-songshi-vol338]
+  - stage: 名动京师与欧门知遇
+    stage_order: 7
+    title: 签书凤翔府判官；治平还朝与丧父
+    date:
+      text: 约1061—1066年之间
+      year: 1061
+      range_end: 1066
+      precision: 范围
+    place: 凤翔、汴京
+    summary: 除大理评事签书凤翔府判官，访民间利害为修衙规使自择水工以时进止自是害减半。治平二年入判登闻鼓院，英宗欲以唐故事召入翰林知制诰，宰相韩琦谓要在朝廷培养之骤用适足以累之，试二论复入三等得直史馆；轼闻琦语曰公可谓爱人以德矣。会洵卒丁忧。
+    confidence: 存疑
+    dispute: 签书凤翔起讫与丧父年份本传不具系（凤翔任通说1061—1065，洵卒治平三年1066），此处按范围著录。
+    source_ids: [src-songshi-vol338]
+
+  # ── 阶段三：新法之争与自请外放 ──────────────────────
+  - stage: 新法之争与自请外放
+    stage_order: 8
+    title: 熙宁还朝，与王安石异论
+    date:
+      text: "1069年"
+      year: 1069
+      precision: 精确
+    place: 汴京
+    summary: 熙宁二年还朝，王安石执政素恶其议论异己，以判官告院。新旧党争自此与苏轼仕途相始终。
+    source_ids: [src-songshi-vol338]
+  - stage: 新法之争与自请外放
+    stage_order: 9
+    title: 议变科举，进言求治太急
+    date:
+      text: "1071年"
+      year: 1071
+      precision: 精确
+    place: 汴京
+    summary: 安石欲变科举兴学校诏两制三馆议，轼上议谓得人之道在于知人知人之法在于责实。神宗悟即日召见，对曰陛下不患不明不患不勤不患不断但患求治太急听言太广进人太锐，神宗悚然曰卿三言朕当熟思之。安石不悦，命权开封府推官将困之以事；轼决断精敏声闻益远，又疏谏市浙灯扰民，即诏罢之。
+    source_ids: [src-songshi-vol338]
+  - stage: 新法之争与自请外放
+    stage_order: 10
+    title: 上书论新法不便，结人心厚风俗存纪纲
+    date:
+      text: 约1071年前后，熙宁新政推行期间
+      year: 1071
+      precision: 约
+    place: 汴京
+    summary: 上书万言论新法不便，开宗明义臣之所欲言者三言而已愿陛下结人心厚风俗存纪纲；历论制置三司条例司、青苗、免役、均输诸法之弊，谓民可与乐成难与虑始乃战国贪功之人行险侥幸之说。
+    source_ids: [src-songshi-vol338]
+  - stage: 新法之争与自请外放
+    stage_order: 11
+    title: 谢景温论奏穷治无所得，请外通判杭州
+    date:
+      text: 约1071—1074年之间
+      year: 1071
+      range_end: 1074
+      precision: 范围
+    place: 杭州
+    summary: 轼见安石赞神宗以独断专任，因试进士发策以晋武平吴独断而克苻坚伐晋独断而亡为问，安石滋怒，使御史谢景温论奏其过穷治无所得，轼遂请外通判杭州。任间每因法以便民民赖以安，却高丽使者私币书称甲子之事。
+    confidence: 存疑
+    dispute: 通判杭州起讫年份本传不系年，通说熙宁四年（1071）至七年（1074）。
+    source_ids: [src-songshi-vol338]
+  - stage: 新法之争与自请外放
+    stage_order: 12
+    title: 知密州，争罢手实法
+    date:
+      text: 约1074—1077年之间
+      year: 1074
+      range_end: 1077
+      precision: 范围
+    place: 密州
+    summary: 徙知密州。司农行手实法不时施行者以违制论，轼谓提举官曰违制之坐若自朝廷谁敢不从今出于司农是擅造律也；未几朝廷知法害民罢之。又有盗案投书不视抚定惊溃悍卒之举。
+    confidence: 存疑
+    dispute: 知密州起讫年份本传不系年，通说熙宁七年至九年。
+    source_ids: [src-songshi-vol338]
+  - stage: 新法之争与自请外放
+    stage_order: 13
+    title: 知徐州抗洪，庐于城上过家不入
+    date:
+      text: 约1077—1079年之间
+      year: 1077
+      range_end: 1079
+      precision: 范围
+    place: 徐州
+    summary: 徙知徐州。河决曹村泛于梁山泊汇于城下城将败，富民争出避水，轼曰富民出民皆动摇吾在是水决不能败城，驱使复入；诣武卫营呼卒长率禁军持畚锸筑东南长堤，雨日夜不止轼庐于其上过家不入，卒全其城。复请调来岁夫增筑故城为木岸朝廷从之。
+    confidence: 存疑
+    dispute: 河决曹村在熙宁十年（1077），知徐起讫年份本传不具系，按范围著录。
+    source_ids: [src-songshi-vol338]
+
+  # ── 阶段四：乌台诗案与黄州东坡 ──────────────────────
+  - stage: 乌台诗案与黄州东坡
+    stage_order: 14
+    title: 移知湖州，以诗文获罪下御史台狱
+    date:
+      text: 约1079年
+      year: 1079
+      precision: 约
+    place: 湖州、汴京御史台
+    summary: 徙知湖州上表以谢，又以事不便民者不敢言以诗托讽庶有补于国。御史李定舒亶何正臣摭其表语并媒孽所为诗以为讪谤，逮赴台狱欲置之死锻炼久之不决。此即乌台诗案。
+    confidence: 存疑
+    dispute: 案发年份本传不系年，元丰二年（1079）说据编年史料与通行年谱，本卷未实取编年原典，按约处理；涉案诗文清单与结案细节属专门文献（乌台诗案诗话、续资治通鉴长编等）待补。
+    source_ids: [src-songshi-vol338]
+  - stage: 乌台诗案与黄州东坡
+    stage_order: 15
+    title: 贬黄州团练副使，筑室东坡自号东坡居士
+    date:
+      text: 约1080—1084年之间
+      year: 1080
+      range_end: 1084
+      precision: 范围
+    place: 黄州
+    summary: 神宗独怜之以黄州团练副使安置。轼与田父野老相从溪山间，筑室于东坡自号东坡居士。谪居五年为其文学巅峰期：念奴娇赤壁怀古、前后赤壁赋、定风波皆成于此。
+    confidence: 存疑
+    dispute: 贬黄起讫年份本传不系年，按元丰三年至七年间通说框定范围；东坡居士自号的准确始年无载。
+    source_ids: [src-songshi-vol338]
+  - stage: 乌台诗案与黄州东坡
+    stage_order: 16
+    title: 神宗手札移汝州，道过金陵会王安石
+    date:
+      text: 约1084年
+      year: 1084
+      precision: 约
+    place: 黄州、汝州道中、金陵
+    summary: 神宗数有意复用辄为当路者沮之，尝语宰相曰国史至重可命苏轼成之，遂手札移轼汝州有曰苏轼黜居思咎阅岁滋深人材实难不忍终弃。轼未至汝上书自言饥寒有田在常愿得居之，朝奏夕报可。道过金陵见王安石论大兵大狱汉唐灭亡之兆，安石曰出在安石口入在子瞻耳——政敌而相见尽欢，为党争史上著名一幕。
+    confidence: 存疑
+    dispute: 过金陵年份本传不系年，元丰七年（1084）说为通行。
+    source_ids: [src-songshi-vol338]
+
+  # ── 阶段五：元祐还朝与再度外放 ──────────────────────
+  - stage: 元祐还朝与再度外放
+    stage_order: 17
+    title: 哲宗立，知登州召为礼部郎中
+    date:
+      text: "1085年"
+      year: 1085
+      precision: 精确
+    place: 常州、登州、汴京
+    summary: 至常而神宗崩哲宗立，复朝奉郎知登州，召为礼部郎中。本传又载轼旧善司马光章惇，二人不合，轼引许靖故事劝惇毋慢司马光，光赖以少安。
+    source_ids: [src-songshi-vol338]
+  - stage: 元祐还朝与再度外放
+    stage_order: 18
+    title: 迁中书舍人，寻除翰林学士；与司马光争役法
+    date:
+      text: "1086年"
+      year: 1086
+      precision: 精确
+    place: 汴京
+    summary: 迁起居舍人辞蔡确不许；元祐元年以七品服入侍延和即赐银绯迁中书舍人。司马光为相欲复差役，轼谓差役免役各有利害骤罢免役而行差役正如罢长征而复民兵盖未易也，陈于政事堂光忿然，轼举韩魏公刺陕西义勇时光为谏官力争旧事诘之，光笑之。寻除翰林学士。
+    source_ids: [src-songshi-vol338]
+  - stage: 元祐还朝与再度外放
+    stage_order: 19
+    title: 兼侍读；宣仁后金莲烛送归院
+    date:
+      text: 约1087—1088年之间
+      year: 1087
+      range_end: 1088
+      precision: 范围
+    place: 汴京
+    summary: 二年兼侍读，每进读至治乱兴衰邪正得失之际未尝不反复开导。尝锁宿禁中召对便殿，宣仁后告以此先帝意也先帝每诵卿文章必叹曰奇才奇才但未及进用卿耳，轼不觉哭失声，宣仁后与哲宗亦泣，已而命坐赐茶彻御前金莲烛送归院。三年权知礼部贡举。
+    source_ids: [src-songshi-vol338]
+  - stage: 元祐还朝与再度外放
+    stage_order: 20
+    title: 以龙图阁学士知杭州，救灾浚湖筑苏公堤
+    date:
+      text: 约1089—1091年之间
+      year: 1089
+      range_end: 1091
+      precision: 范围
+    place: 杭州
+    summary: 四年积以论事为当轴者所恨恐不见容请外，拜龙图阁学士知杭州。既至杭大旱饑疫并作，请免本路上供米三之一，作病坊遣医分坊治病活者甚众；浚茅山盐桥二河以通漕复完六井，取葑田积湖中南北径三十里为长堤植芙蓉杨柳其上望之如图画，杭人名为苏公堤。本传记轼二十年间再莅杭有德于民家有画像饮食必祝又作生祠以报。
+    source_ids: [src-songshi-vol338]
+  - stage: 元祐还朝与再度外放
+    stage_order: 21
+    title: 召回迁翰林承旨；历知颍州扬州，召为兵部尚书礼部尚书
+    date:
+      text: "1091—1092年"
+      year: 1091
+      range_end: 1092
+      precision: 范围
+    place: 汴京、颍州、扬州
+    summary: 六年召为吏部尚书未至，以弟辙除右丞改翰林承旨，在翰林数月复以谗请外出知颍州（测淮水高程谏止凿黄堆工程、遣尉捕宿贼尹遇）；七年徙扬州请复漕法旧制；未阅岁以兵部尚书召兼侍读，迁礼部兼端明殿翰林侍读两学士为礼部尚书。
+    source_ids: [src-songshi-vol338]
+
+  # ── 阶段六：岭海贬窜与北归病卒 ──────────────────────
+  - stage: 岭海贬窜与北归病卒
+    stage_order: 22
+    title: 宣仁后崩乞补外，出知定州
+    date:
+      text: "1093年"
+      year: 1093
+      precision: 精确
+    place: 定州
+    summary: 八年宣仁后崩哲宗亲政，轼乞补外以两学士出知定州，不得入辞。既行上书言天下治乱出于下情之通塞愿虚心循理一切未有所为默观庶事之利害。整饬定州军政，取贪污者配隶远恶缮修营房部勒战法众皆畏伏，定人言自韩琦去后不见此礼至今矣。
+    source_ids: [src-songshi-vol338]
+  - stage: 岭海贬窜与北归病卒
+    stage_order: 23
+    title: 绍圣初论词命讥斥先朝，贬宁远军节度副使惠州安置
+    date:
+      text: 约1094年
+      year: 1094
+      precision: 约
+    place: 英州道中、惠州
+    summary: 绍圣初御史论轼掌内外制日所作词命以为讥斥先朝，遂以本官知英州，寻降一官，未至，贬宁远军节度副使惠州安置。居三年泊然无所蒂芥人无贤愚皆得其欢心。
+    confidence: 存疑
+    dispute: 本传仅记绍圣初不系具体年份；贬惠确年起讫（通行绍圣元年1094抵惠）据年谱与编年史料，本卷未实取，按约处理。
+    source_ids: [src-songshi-vol338]
+  - stage: 岭海贬窜与北归病卒
+    stage_order: 24
+    title: 又贬琼州别驾居昌化，儋耳买地筑室著书
+    date:
+      text: 约1097—1100年之间
+      year: 1097
+      range_end: 1100
+      precision: 范围
+    place: 昌化（儋州）
+    summary: 又贬琼州别驾居昌化。昌化故儋耳地非人所居药饵皆无有，初僦官屋以居有司犹谓不可，轼遂买地筑室儋人运甓畚土以助之；独与幼子过处著书以为乐时时从其父老游若将终身。海南时期完成书传，与和陶诗同为晚年著述大宗。
+    confidence: 存疑
+    dispute: 贬儋起讫本传不系年，按居惠三年之后至徽宗立之间的范围著录；通行系于绍圣四年（1097）渡海。
+    source_ids: [src-songshi-vol338]
+  - stage: 岭海贬窜与北归病卒
+    stage_order: 25
+    title: 徽宗立量移内迁，更三大赦提举玉局观
+    date:
+      text: "1100年"
+      year: 1100
+      precision: 精确
+    place: 廉州、永州一带北归途中
+    summary: 徽宗立移廉州改舒州团练副使徙永州，更三大赦遂提举玉局观复朝奉郎。本传谓轼自元祐以来未尝以岁课乞迁故官止于此。
+    source_ids: [src-songshi-vol338]
+  - stage: 岭海贬窜与北归病卒
+    stage_order: 26
+    title: 卒于常州，年六十六
+    date:
+      text: "1101年"
+      year: 1101
+      precision: 精确
+    place: 常州
+    summary: 建中靖国元年卒于常州年六十六。北归途中作自题金山画像，问汝平生功业黄州惠州儋州——以三个贬所为平生功业的自嘲自评，成为其一生结局的经典概括。
+    source_ids: [src-songshi-vol338, src-dongpoji]
+  - stage: 岭海贬窜与北归病卒
+    stage_order: 27
+    title: 身后：赠太师谥文忠，文章雄视百代
+    date:
+      text: 南宋高宗以后追褒
+      year: 1127
+      range_end: 1138
+      precision: 范围
+    place: ""
+    summary: 史臣论其体浑涵光芒雄视百代有文章以来盖亦鲜矣。高宗即位赠资政殿学士以其文置左右读之终日忘倦谓为文章之宗亲制集赞；遂崇赠太师谥文忠。
+    confidence: 存疑
+    dispute: 赠资政殿学士在高宗即位初，崇赠太师系年史无明文，按绍兴年间范围著录。
+    source_ids: [src-songshi-vol338]
+
+works:
+  - work_id: nian-nu-jiao-chibi-huaigu
+    title: 念奴娇·赤壁怀古
+    alt_titles: []
+    genre: 词（慢词）
+    date:
+      text: "1082年"
+      year: 1082
+      precision: 精确
+    place: 黄州赤壁（赤鼻矶）
+    context: 黄州贬居期间游赤鼻矶怀古之作，大江东去浪淘尽千古风流人物开豪放词境；与前后赤壁赋同为一时之作。
+    attribution: 确凿
+    excerpt: 大江东去，浪淘尽、千古风流人物。故垒西边，人道是、三国周郎赤壁。……羽扇纶巾，谈笑间、樯橹灰飞烟灭。……人生如梦，一尊还酹江月。
+    text_display: excerpt
+    themes: [怀古, 豪放]
+    influence: 宋词豪放一派的奠基之作，千古风流人物由此成为项目名与国民语汇。
+    confidence: 存疑
+    dispute: 异文极多——维基文库页注浪淘尽一作浪声沈、崩云一作穿空、裂岸一作拍岸、谈笑间一作笑谈间、樯橹一作强虏、人间如梦一作人生如寄等，本卷从御定词谱系统；系年从维基文库页标注之1082年。
+    source_ids: [src-dongpoji]
+
+  - work_id: shui-diao-ge-tou-ming-yue-ji-shi-you
+    title: 水调歌头·明月几时有
+    alt_titles: [水调歌头·丙辰中秋]
+    genre: 词（慢词）
+    date:
+      text: "1076年"
+      year: 1076
+      precision: 精确
+    place: 密州
+    context: 小序自述丙辰中秋欢饮达旦大醉作此篇兼怀子由——中秋醉后对月的哲学追问与人伦祝愿，兼怀其弟苏辙。
+    attribution: 确凿
+    excerpt: 明月几时有，把酒问青天。……人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共婵娟。
+    text_display: excerpt
+    themes: [中秋, 怀人, 哲思]
+    influence: 但愿人长久千里共婵娟为中秋第一绝唱，南宋以来传唱不衰。
+    source_ids: [src-dongpoji]
+
+  - work_id: jiang-cheng-zi-mizhou-chulie
+    title: 江城子·密州出猎
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: "1075年"
+      year: 1075
+      precision: 精确
+    place: 密州
+    context: 知密州时祭常山会猎而作，老夫聊发少年狂写太守出猎盛况；会挽雕弓如满月西北望射天狼以射天狼喻御边之志。
+    attribution: 确凿
+    excerpt: 老夫聊发少年狂，左牵黄，右擎苍。……会挽雕弓如满月，西北望，射天狼。
+    text_display: excerpt
+    themes: [出猎, 豪放, 用世]
+    influence: 与念奴娇并为宋词豪放开山的标志作品。
+    source_ids: [src-dongpoji]
+
+  - work_id: jiang-cheng-zi-yimao-zhengyue-jimeng
+    title: 江城子·乙卯正月二十日夜记梦
+    alt_titles: [江城子·十年生死两茫茫]
+    genre: 词（小令）
+    date:
+      text: "1075年"
+      year: 1075
+      precision: 精确
+    place: 密州
+    context: 乙卯正月二十日夜梦见亡妻王弗而作，十年生死两茫茫不思量自难忘，悼亡词中情致最深的绝唱。
+    attribution: 确凿
+    excerpt: 十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉。……相顾无言，惟有泪千行。料得年年肠断处，明月夜，短松冈。
+    text_display: excerpt
+    themes: [悼亡, 记梦]
+    influence: 中国悼亡词的巅峰之作，与贺铸半死桐并称。
+    source_ids: [src-dongpoji]
+
+  - work_id: ding-feng-bo-mo-ting-chuan-lin
+    title: 定风波·莫听穿林打叶声
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: "1082年"
+      year: 1082
+      precision: 精确
+    place: 黄州沙湖道中
+    context: 小序自述三月七日沙湖道中遇雨雨具先去同行皆狼狈余独不觉已而遂晴故作此；也无风雨也无晴为黄州时期旷达人格的定格。
+    attribution: 确凿
+    excerpt: 莫听穿林打叶声，何妨吟啸且徐行。竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。……回首向来萧瑟处，归去，也无风雨也无晴。
+    text_display: excerpt
+    themes: [旷达, 雨中行]
+    influence: 也无风雨也无晴成为中国文化中宠辱不惊的人格符号。
+    source_ids: [src-dongpoji]
+
+  - work_id: qian-chibi-fu
+    title: 前赤壁赋
+    alt_titles: [赤壁赋]
+    genre: 文赋
+    date:
+      text: "1082年"
+      year: 1082
+      precision: 精确
+    place: 黄州赤壁
+    context: 壬戌之秋七月既望与客泛舟游于赤壁之下，由曹操固一世之雄而今安在哉转入变与不变的哲学自解——自其不变者而观之则物与我皆无尽也；江上清风山间明月取之无禁用之不竭。卷末附亲书本跋云轼去岁作此赋未尝轻出以示人……多难畏事。
+    attribution: 确凿
+    excerpt: 清风徐来，水波不兴。……寄蜉蝣于天地，渺沧海之一粟。哀吾生之须臾，羡长江之无穷。……惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色，取之无禁，用之不竭。
+    text_display: excerpt
+    themes: [怀古, 哲思, 旷达]
+    influence: 文赋的极致典范，与后赤壁赋并称双璧，长期入选语文教材。
+    source_ids: [src-dongpoji]
+
+  - work_id: hou-chibi-fu
+    title: 后赤壁赋
+    alt_titles: []
+    genre: 文赋
+    date:
+      text: "1082年"
+      year: 1082
+      precision: 精确
+    place: 黄州赤壁
+    context: 前赋三个月后是岁十月之望重游赤壁，江流有声断岸千尺山高月小水落石出写冬夜江山，孤鹤横江道士入梦以梦幻结——与前赋的水月之辩相对，境界转幽峭。
+    attribution: 确凿
+    excerpt: 江流有声，断岸千尺；山高月小，水落石出。……适有孤鹤，横江东来。翅如车轮，玄裳缟衣，戛然长鸣，掠予舟而西也。
+    text_display: excerpt
+    themes: [冬夜山水, 梦, 幽峭]
+    influence: 山高月小水落石出为历代画家竞写的意境母题（乔仲常后赤壁赋图等）。
+    confidence: 存疑
+    dispute: 维基文库页注梦一道士句原本据推断为二道士，后人以孤鹤当为道士改一字，台湾学者衣若芬专文论之；文字小异并存。
+    source_ids: [src-dongpoji]
+
+  - work_id: ti-xi-lin-bi
+    title: 题西林壁
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约1084年
+      year: 1084
+      precision: 约
+    place: 庐山西林寺
+    context: 游庐山题壁诗，横看成岭侧成峰远近高低各不同，不识庐山真面目只缘身在此山中——以观山写当局者迷的哲理，宋诗理趣的极致样本。
+    attribution: 确凿
+    excerpt: 横看成岭侧成峰，远近高低各不同。不识庐山真面目，只缘身在此山中。
+    text_display: full
+    themes: [哲理, 山水]
+    influence: 不识庐山真面目成为国民成语级表达。
+    confidence: 存疑
+    dispute: 维基文库页不系年；通行系于元丰七年（1084）自黄州赴汝州途中游庐山，亦有异说。第二句页注异文甚夥（总不同/看山了/无一同等），本卷从不相同。
+    source_ids: [src-dongpoji]
+
+  - work_id: yin-hu-shang-chu-qing-hou-yu
+    title: 饮湖上初晴后雨二首（其二）
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约1073年
+      year: 1073
+      precision: 约
+    place: 西湖
+    context: 杭州通判任上游湖之作，水光潋滟晴方好山色空蒙雨亦奇，欲把西湖比西子淡妆浓抹总相宜——西湖从此得名西子湖。
+    attribution: 确凿
+    excerpt: 水光潋滟晴方好，山色空蒙雨亦奇。欲把西湖比西子，淡妆浓抹总相宜。
+    text_display: full
+    themes: [西湖, 比喻]
+    influence: 咏西湖的第一名篇，西子比遂成西湖千年定评。
+    confidence: 存疑
+    dispute: 维基文库页不系年；通说系于熙宁年间通判杭州任上，确切年份无考。
+    source_ids: [src-dongpoji]
+
+  - work_id: hui-chong-chun-jiang-wan-jing
+    title: 惠崇春江晚景
+    alt_titles: [惠崇春江晓景, 书衮仪所藏惠崇画二首（其一）]
+    genre: 题画七言绝句
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 为僧惠崇春江晚景图所题，竹外桃花三两枝春江水暖鸭先知——凭画面想象画外之物，题画诗中以虚写实的第一。
+    attribution: 确凿
+    excerpt: 竹外桃花三两枝，春江水暖鸭先知。蒌蒿满地芦芽短，正是河豚欲上时。
+    text_display: full
+    themes: [题画, 早春]
+    influence: 春江水暖鸭先知为咏早春第一警句。
+    confidence: 存疑
+    dispute: 题名晚景/晓景二形并行（维基文库两页并存，东坡全集目录作晓景二首）；创作年份无考，页名晚景页仅录其一。
+    source_ids: [src-dongpoji]
+
+  - work_id: he-ziyou-mianchi-huai-jiu
+    title: 和子由渑池怀旧
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 约1061年
+      year: 1061
+      precision: 约
+    place: 渑池道中
+    context: 和其弟苏辙怀旧之作，人生到处知何似应似飞鸿踏雪泥——雪泥鸿爪由此成为人生聚散无常的千古意象，作于初仕凤翔途经渑池时。
+    attribution: 确凿
+    excerpt: 人生到处知何似，应似飞鸿踏雪泥。泥上偶然留指爪，鸿飞那复计东西。
+    text_display: excerpt
+    themes: [怀旧, 兄弟, 人生如寄]
+    influence: 雪泥鸿爪为汉语中最著名的比喻之一。
+    confidence: 存疑
+    dispute: 维基文库页不系年；通行系于嘉祐六年（1061）赴凤翔签判任途中，与制科授官行程相合。
+    source_ids: [src-dongpoji]
+
+  - work_id: li-zhi-tan
+    title: 荔支叹
+    alt_titles: [荔枝叹]
+    genre: 七言古诗
+    date:
+      text: 约1095年
+      year: 1095
+      precision: 约
+    place: 惠州（一说）
+    context: 由汉唐荔枝进贡的惊尘溅血写到本朝斗茶贡花争新买宠——我愿天公怜赤子莫生尤物为疮痏；点名词臣丁谓蔡襄进小龙团欧阳修所惊叹之事，锋芒不减当年，岭海贬所犹存讽谕风骨。
+    attribution: 确凿
+    excerpt: 十里一置飞尘灰，五里一堠兵火催。……我愿天公怜赤子，莫生尤物为疮痏。君不见武夷溪边粟粒芽，前丁后蔡相笼加。
+    text_display: excerpt
+    themes: [讽谕, 贡赋之弊]
+    influence: 晚年讽谕诗的代表，证明其批判精神至贬所未泯。
+    confidence: 存疑
+    dispute: 维基文库页名荔支叹无系年；通行系于绍圣年间惠州贬所，确切年份无考；荔支/荔枝二字并行。
+    source_ids: [src-dongpoji]
+
+  - work_id: zi-ti-jin-shan-hua-xiang
+    title: 自题金山画像
+    alt_titles: []
+    genre: 六言绝句（题画赞）
+    date:
+      text: 约1101年
+      year: 1101
+      precision: 约
+    place: 金山寺（镇江）
+    context: 北归经金山寺观李公麟所绘己像而自题，心似已灰之木身如不系之舟，问汝平生功业黄州惠州儋州——临终之年对自己一生的最终总结，三个贬所即全部功业的自嘲式碑铭。
+    attribution: 确凿
+    excerpt: 心似已灰之木，身如不系之舟。问汝平生功业，黄州惠州儋州。
+    text_display: full
+    themes: [自题, 一生总结, 旷达]
+    influence: 其生命终章的定格文本，后世论苏轼人格必引。
+    confidence: 存疑
+    dispute: 维基文库页不系年；通行系于建中靖国元年（1101）北归过金山时，画像作者与确切时地据笔记年谱层，本传无载。
+    source_ids: [src-dongpoji]
+
+footprints:
+  - name: 眉山
+    modern_name: 四川省眉山市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1037年生，少年成长于此
+      year: 1037
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    confidence: 存疑
+    dispute: 生年本传无载按约处理，见timeline出生条。
+    source_ids: [src-songshi-vol338]
+  - name: 汴京
+    modern_name: 河南省开封市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 1057年进士及第；熙宁、元祐间两度在朝任职
+      year: 1057
+      range_end: 1093
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-songshi-vol338]
+  - name: 凤翔
+    modern_name: 陕西省宝鸡市凤翔区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1061—1065年签书凤翔府判官
+      year: 1061
+      range_end: 1065
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任期起讫本传不系年，按通行职历推定。
+    source_ids: [src-songshi-vol338]
+  - name: 杭州
+    modern_name: 浙江省杭州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1071—1074年通判杭州；1089—1091年以龙图阁学士知杭州，浚湖筑堤
+      year: 1071
+      range_end: 1091
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 两任起讫本传不系年，按通行职历框定；本传明载二十年間再蒞杭有德於民。
+    source_ids: [src-songshi-vol338]
+  - name: 密州
+    modern_name: 山东省诸城市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1074—1077年知密州，作水调歌头江城子二首
+      year: 1074
+      range_end: 1077
+      precision: 范围
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任期起讫本传不系年按通行职历推定；水调歌头系年丙辰（1076）据词序。
+    source_ids: [src-songshi-vol338, src-dongpoji]
+  - name: 徐州
+    modern_name: 江苏省徐州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1077—1079年知徐州，抗洪全城
+      year: 1077
+      range_end: 1079
+      precision: 范围
+    kind: 任职
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任期起讫本传不系年；河决曹村在熙宁十年（1077）。
+    source_ids: [src-songshi-vol338]
+  - name: 湖州
+    modern_name: 浙江省湖州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1079年徙知湖州，旋因诗案被逮
+      year: 1079
+      precision: 约
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 到任与被捕月份本传无载，乌台诗案系年按约处理见timeline对应条。
+    source_ids: [src-songshi-vol338]
+  - name: 黄州
+    modern_name: 湖北省黄冈市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1080—1084年黄州团练副使安置，躬耕东坡自号东坡居士
+      year: 1080
+      range_end: 1084
+      precision: 范围
+    kind: 谪迁
+    route_order: 8
+    memorial_only: false
+    confidence: 存疑
+    dispute: 贬所起讫本传不系年按范围著录。
+    source_ids: [src-songshi-vol338]
+  - name: 惠州
+    modern_name: 广东省惠州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1094—1097年宁远军节度副使惠州安置，居三年泊然无所蒂芥
+      year: 1094
+      range_end: 1097
+      precision: 范围
+    kind: 谪迁
+    route_order: 9
+    memorial_only: false
+    confidence: 存疑
+    dispute: 本传仅记绍圣初贬惠州居三年，起讫年份按约与范围处理。
+    source_ids: [src-songshi-vol338]
+  - name: 昌化（儋州）
+    modern_name: 海南省儋州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1097—1100年琼州别驾昌化安置，买地筑室著书以为乐
+      year: 1097
+      range_end: 1100
+      precision: 范围
+    kind: 谪迁
+    route_order: 10
+    memorial_only: false
+    confidence: 存疑
+    dispute: 贬儋起讫本传不系年，按居惠三年后至徽宗立之间的范围著录。
+    source_ids: [src-songshi-vol338]
+  - name: 常州
+    modern_name: 江苏省常州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1101年建中靖国元年卒于此；此前1084年曾乞居常州获准"
+      year: 1101
+      precision: 精确
+    kind: 逝世
+    route_order: 11
+    memorial_only: false
+    source_ids: [src-songshi-vol338]
+
+relations:
+  - relation_type: 师承
+    target_id: ouyangxiu
+    direction: 双向
+    period:
+      text: 1057年礼部试知遇至1072年欧阳修卒
+      year: 1057
+      range_end: 1072
+      precision: 范围
+    evidence: 本传明载嘉祐二年试礼部主司欧阳修得轼刑赏忠厚论惊喜欲擢冠多士犹疑其客曾巩所为但置第二；后以书见修修语梅圣俞曰吾当避此人出一头地；又以才识兼茂荐之秘阁。欧阳修之于苏轼为座主、荐主与文坛衣钵相传之人。
+    source_ids: [src-songshi-vol338]
+  - relation_type: 论敌
+    target_id: wanganshi
+    direction: 双向
+    period:
+      text: 1069—1076年新法之争为主，1084年金陵会晤和解
+      year: 1069
+      range_end: 1084
+      precision: 范围
+    evidence: 本传载王安石执政素恶其议论异己以判官告院；轼上书论新法不便愿陛下结人心厚风俗存纪纲；安石使御史谢景温论奏其过穷治无所得。然元丰末道过金陵见王安石论大兵大狱，安石厉声曰安石须说出在安石口入在子瞻耳，轼戏言争减半年磨勘虽杀人亦为之安石笑而不言——政见论敌而私谊终存，措辞须两面兼顾不可简化为对立。
+    source_ids: [src-songshi-vol338]
+  - relation_type: 师承
+    target_id: huangtingjian
+    direction: 双向
+    period:
+      text: 元祐前后订交至1101年苏轼卒
+      year: 1085
+      range_end: 1101
+      precision: 范围
+    evidence: 本传列一时文人如黄庭坚晁补之秦观张耒陈师道举世未之识轼待之如朋俦未尝以师资自予也——苏门授受之实存而苏轼不以师自居；宋人并称苏黄，本卷按苏门师承著录。
+    confidence: 存疑
+    dispute: 师承名义系本卷依苏门传统归类；正史层面仅记待之如朋俔未尝以师资自予，严格说是亦师亦友关系，订交确切年份正史无载。
+    source_ids: [src-songshi-vol338]
+  - relation_type: 挚友
+    target_id: qinguan
+    direction: 双向
+    period:
+      text: 约1077—1078年徐州订交至1100年秦观卒
+      year: 1077
+      range_end: 1100
+      precision: 范围
+    evidence: 本传列秦观于轼所奖掖的一时文人之中待之如朋俦；秦观本传（宋史卷444）互证见苏轼于徐为赋黄楼轼以为有屈宋才，元祐初轼以贤良方正荐于朝；秦观死轼叹曰少游不幸死道路哀哉世岂复有斯人乎。苏门四学士中情谊最深者。
+    source_ids: [src-songshi-vol338, src-songshi-vol444]
+
+reception:
+  - era: 同时代
+    evaluator: 欧阳修
+    quote: 吾当避此人出一头地。
+    text_display: excerpt
+    comment: 本传直引的欧阳修语，代表当时文坛领袖对苏轼的最高让贤之评，闻者始哗不厌久乃信服。
+    source_ids: [src-songshi-vol338]
+  - era: 同时代
+    evaluator: 神宗（宣仁后转述）
+    quote: 先帝每诵卿文章，必叹曰：「奇才，奇才！」但未及进用卿耳。
+    text_display: excerpt
+    comment: 本传便殿对话所记，神宗宫中读其文膳进忘食称为天下奇才——帝王赏识与其终身不获大用构成其命运的张力。
+    source_ids: [src-songshi-vol338]
+  - era: 历代批评
+    evaluator: 南宋笔记层（俞文豹《吹剑录》，经清·沈雄《古今词话》转引）
+    quote: 学士词，须关西大汉，铁绰板，唱大江东去。
+    text_display: excerpt
+    comment: 幕士对比柳永晓风残月与苏轼大江东去之语，确立苏词豪放一派的大众印象。出处链说明：吹剑录单行页本次未能在维基文库定位，此条经维基文库清·沈雄古今词话（幕士论柳苏词则）转引实取得手，属转引层；严羽沧浪诗话无直接可比条目未采。
+    confidence: 确定
+    source_ids: [src-gujincihua]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦宋词豪放开山之定位、乌台诗案的文献学整理、苏轼文化人格与儒释道合流思想研究、诗词书画一体性讨论等议题；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 水调歌头念奴娇赤壁怀古前后赤壁赋题西林壁饮湖上初晴后雨惠崇春江晚景等长期入选中小学语文教材；东坡肉苏公堤雪泥鸿爪胸有成竹等衍生语汇深入日常，东坡成为中华文化顶级IP之一。教材篇目随学期变动录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧与网络传播中的东坡形象多为轶事化敷演（东坡肉佛印和尚等段子层），不作信史依据；暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-songshi-vol338, src-dongpoji, src-gujincihua]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: 初版。27条年谱（6阶段）、13首作品（诗词文赋混合）、11处足迹、4组关系（师承欧阳修/论敌王安石/师承黄庭坚/挚友秦观）、6层接受史（含影视网络占位）。生平事实全部实取自维基文库宋史卷338苏轼传原文（oldid=1458054）；13篇作品均经维基文库单篇页实取（荔支叹经API检索定位页名后全文实取）；关西大汉条经古今词话转引实取。乌台诗案及惠州儋州贬窜本传不系年，一律按约/范围+dispute处理}

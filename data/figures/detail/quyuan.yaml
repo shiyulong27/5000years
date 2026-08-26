@@ -1,0 +1,495 @@
+# 屈原全景详卷（schema v1）
+# 史料审计表（2026-08-25 实取；来源见 data/sources.yaml）：
+#
+# | 事实点 | 史记·卷八十四·屈原贾生列传(J) | 楚辞(C) | 结论与置信 |
+# |---|---|---|---|
+# | 名姓身份 | 屈原者名平楚之同姓也为楚怀王左徒 | C·离骚序：与楚同姓仕于怀王为三闾大夫掌王族三姓昭屈景 | 确定(J)；三闾大夫职掌出王逸序 |
+# | 才具 | 博闻彊志明於治乱娴於辞令入则图议国事出则应对诸侯王甚任之 | 同义（C序） | 确定(J) |
+# | 遭谗被疏 | 上官大夫与之同列争宠而心害其能夺稿不得因谗之王怒而疏屈平 | 同列大夫上官靳尚妒害其能共谮毁之王乃疏 | 确定(J) |
+# | 作离骚 | 忧愁幽思而作离骚盖自怨生也；其文约其辞微其志絜其行廉 | 离骚经者屈原之所作也 | 确定(J)；「离骚」释离忧出J |
+# | 张仪诈楚 | 绝齐约六百里实与六里丹淅大败斩首八万蓝田之战齐竟怒不救楚 | — | 确定(J)；绝对年份系战国纪年框架推定 |
+# | 使齐谏杀张仪 | 是时屈平既疏不复在位使於齐顾反谏怀王何不杀张仪追张仪不及 | — | 确定(J) |
+# | 谏入秦不返 | 秦虎狼之国不可信不如毋行；稚子子兰劝行；怀王入武关留秦竟死于秦 | — | 确定(J) |
+# | 迁于江南 | 令尹子兰使上官大夫短屈原於顷襄王顷襄王怒而迁之 | C序：襄王复用谗言迁屈原於江南 | 确定(J) |
+# | 泽畔行吟 | 被发行吟泽畔颜色憔悴形容枯槁与渔父问答举世混浊而我独清 | C·渔父全篇（文字小异：宁赴常流/宁赴湘流） | 确定(J)；渔父篇归属存疑 |
+# | 怀沙与自沉 | 乃作怀沙之赋（全文引录）於是怀石遂自沈汨罗以死 | — | 确定(J) |
+# | 身后 | 楚有宋玉唐勒景差之徒皆好辞以赋见称然皆祖屈原之从容辞令终莫敢直谏 | 汉初贾谊百有余年后投书吊屈原（J同卷） | 确定(J) |
+# | 生卒年 | 两项均无载 | — | 约前340—约前278均系学界推算通说，必须存疑 |
+# | 出生地 | 无载 | — | 秭归说出后世地志，郢都说并存，落dispute |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: quyuan
+
+profile:
+  courtesy_name: 原
+  art_name: ""
+  aliases: [屈平, 灵均, 三闾大夫]
+  gender: 男
+  ethnicity: ""
+  ancestry: 楚之同姓（楚国王族屈氏）
+  birthplace: 正史未载；秭归说为主流通说，郢都说并存，详见 timeline 出生条目 dispute
+  death_place: 汨罗江
+  offices: [左徒（楚怀王朝）, 三闾大夫（王逸序谓掌王族昭屈景三姓）]
+  fields: [文学]
+  roles: [诗人, 政治家]
+  summary: 楚辞之祖，中国第一位留下姓名的伟大诗人；博闻强志娴于辞令而忠而被谤，怀石自沉汨罗，以《离骚》开启中国浪漫主义诗歌源头。
+
+timeline:
+  # ── 阶段一：出身与左徒任上 ──────────────────────────
+  - stage: 出身与左徒任上
+    stage_order: 1
+    title: 出生于楚国王族屈氏
+    date:
+      text: "约前340年"
+      year: -340
+      precision: 约
+    place: 楚国（出生地无载）
+    summary: 史记称屈原者名平楚之同姓也。生年正史无载，约前340系学界由事迹倒推的通说；离骚自述摄提贞于孟陬惟庚寅吾以降，学者据此推其生辰，诸家结论不一。名平字原，离骚中自称名余曰正则兮字余曰灵均。
+    confidence: 有争议
+    dispute: 生卒年正史均无载，约前340—约前278全部系学界推算；依摄提星岁推生年诸说相差可达十余年。出生地史记亦未载，秭归说出自后世地志，郢都说并存。
+    source_ids: [src-shiji-vol84, src-chuci]
+  - stage: 出身与左徒任上
+    stage_order: 2
+    title: 为楚怀王左徒，博闻强志娴于辞令
+    date:
+      text: 楚怀王朝早期，具体年份不详
+      precision: 未知
+    place: 郢都
+    summary: 史记载其博闻强志明于治乱娴于辞令，入则与王图议国事以出号令，出则接遇宾客应对诸侯，王甚任之。王逸序又记其为三闾大夫，掌王族三姓昭屈景，序其谱属率其贤良。
+    source_ids: [src-shiji-vol84, src-chuci]
+  - stage: 出身与左徒任上
+    stage_order: 3
+    title: 造为宪令，上官大夫进谗，怀王疏之
+    date:
+      text: 怀王朝前期，约前317—前313年之间
+      year: -317
+      range_end: -313
+      precision: 范围
+    place: 郢都
+    summary: 怀王使屈原造为宪令，属草稿未定，上官大夫见而欲夺之，屈平不与，因谗之曰每一令出平伐其功以为非我莫能为也。王怒而疏屈平。争宠夺稿与伐功二说史记并录。
+    confidence: 存疑
+    dispute: 遭疏确年正史无纪年，系年区间据战国史事框架推定；夺稿之争与谗语细节史记两处叙述略有重叠出入，历代注家多有调和。
+    source_ids: [src-shiji-vol84]
+  - stage: 出身与左徒任上
+    stage_order: 4
+    title: 忧愁幽思而作离骚
+    date:
+      text: 创作年代聚讼纷纭，被疏之后说为主流
+      precision: 未知
+    place: 楚国
+    summary: 史记谓屈平疾王听之不聪也谗谄之蔽明也，故忧愁幽思而作离骚，离骚者犹离忧也；信而见疑忠而被谤能无怨乎？屈平之作离骚盖自怨生也。又赞其文约辞微志洁行廉，举类迩而见义远。
+    confidence: 存疑
+    dispute: 离骚创作时地有被疏后作、怀王入秦前作、顷襄王迁江南后作诸说；史记系之于被疏之后，后世学者多有异解。
+    source_ids: [src-shiji-vol84]
+
+  # ── 阶段二：怀王晚期的曲折与国难 ──────────────────────
+  - stage: 怀王晚期的曲折与国难
+    stage_order: 5
+    title: 张仪诈楚，丹阳蓝田之败
+    date:
+      text: 约前313—前312年之间
+      year: -313
+      range_end: -312
+      precision: 范围
+    place: 丹阳、蓝田一线
+    summary: 屈平既绌，秦欲伐齐而患齐楚从亲，遣张仪厚币委质事楚，许商於之地六百里以诱绝齐盟；楚绝齐而受地，仪诈曰仪与王约六里不闻六百里。怀王怒兴师伐秦，大破于丹淅斩首八万，悉发国中兵战于蓝田又败，齐竟怒不救楚，楚大困。
+    confidence: 存疑
+    dispute: 史记本传不系绝对年份，前313—前312系据战国纪年通史框架推定；传文以屈平既绌领起，寓贬黜与国运之因果判断。
+    source_ids: [src-shiji-vol84]
+  - stage: 怀王晚期的曲折与国难
+    stage_order: 6
+    title: 使于齐还，谏怀王何不杀张仪
+    date:
+      text: 约前311年
+      year: -311
+      precision: 约
+    place: 郢都
+    summary: 张仪以一仪而当汉中地请往如楚，厚币用事臣靳尚设诡辩于宠姬郑袖，怀王竟听郑袖复释去张仪。是时屈平既疏不复在位，使于齐，顾反谏怀王曰何不杀张仪？怀王悔，追张仪不及。
+    confidence: 存疑
+    dispute: 使齐与还谏年份据张仪行迹推定，正史传无纪年。
+    source_ids: [src-shiji-vol84]
+  - stage: 怀王晚期的曲折与国难
+    stage_order: 7
+    title: 谏阻入秦不听，怀王入秦不返
+    date:
+      text: "约前299年"
+      year: -299
+      precision: 约
+    place: 武关
+    summary: 秦昭王与楚婚欲与怀王会，怀王欲行，屈平曰秦虎狼之国不可信不如毋行。稚子子兰劝王行奈何绝秦欢，怀王卒行。入武关秦伏兵绝其后因留怀王以求割地，怀王怒不听，亡走赵赵不内，复之秦竟死于秦而归葬。楚人既咎子兰以劝怀王入秦而不反也。
+    source_ids: [src-shiji-vol84]
+
+  # ── 阶段三：顷襄王朝迁谪与自沉 ────────────────────────
+  - stage: 顷襄王朝迁谪与自沉
+    stage_order: 8
+    title: 子兰使上官短之，顷襄王怒而迁之
+    date:
+      text: 顷襄王初年，约前298—前296年之间
+      year: -298
+      range_end: -296
+      precision: 范围
+    place: 自郢都迁往江南沅湘流域
+    summary: 长子顷襄王立以其弟子兰为令尹。屈原既嫉之，虽放流眷顾楚国系心怀王不忘欲反，冀幸君之一悟俗之一改，一篇之中三致志焉。令尹子兰闻之大怒，卒使上官大夫短屈原于顷襄王，顷襄王怒而迁之。
+    confidence: 存疑
+    dispute: 迁谪确年正史无载，顷襄王初年系通说推定，亦有主顷襄王元年即迁与再迁江南两阶段说的分歧；迁往地域据楚辞地理意象推定。
+    source_ids: [src-shiji-vol84, src-chuci]
+  - stage: 顷襄王朝迁谪与自沉
+    stage_order: 9
+    title: 披发行吟泽畔，与渔父问答
+    date:
+      text: 迁谪期间，具体年份不详
+      precision: 未知
+    place: 江滨泽畔
+    summary: 屈原至于江滨，被发行吟泽畔，颜色憔悴形容枯槁。渔父见而问之子非三闾大夫欤何故而至此？答曰举世混浊而我独清众人皆醉而我独醒是以见放；又宁赴常流而葬乎江鱼腹中耳，安能以皓皓之白而蒙世俗之温蠖乎。
+    confidence: 存疑
+    dispute: 问答场景史记本传与楚辞渔父篇文字互有小异（宁赴常流／宁赴湘流）；渔父篇作者归属历来有争议，问答是否实有其事亦带文学化叙事色彩。
+    source_ids: [src-shiji-vol84, src-chuci]
+  - stage: 顷襄王朝迁谪与自沉
+    stage_order: 10
+    title: 乃作怀沙之赋
+    date:
+      text: 自沉前夕，具体年份不详
+      precision: 未知
+    place: 沅湘流域
+    summary: 史记全文引录怀沙之赋：陶陶孟夏兮草木莽莽伤怀永哀兮汩徂南土；乱曰浩浩沅湘兮分流汨兮……定心广志余何畏惧兮；知死不可让兮愿勿爱兮明以告君子兮吾将以为类兮。绝笔明志之音凄怆。
+    source_ids: [src-shiji-vol84]
+  - stage: 顷襄王朝迁谪与自沉
+    stage_order: 11
+    title: 怀石自沉汨罗以死
+    date:
+      text: "约前278年"
+      year: -278
+      precision: 约
+    place: 汨罗江
+    summary: 於是怀石遂自沈汨罗以死。卒年正史无载，通说系于前278年秦将白起拔郢、郢都陷落之后，以身殉国与殉都相终始。
+    confidence: 有争议
+    dispute: 卒年前278系与白起破郢相系的推定通说，另有前277等异说；正史传内并无纪年，自沉动机后世亦有多重诠释。
+    source_ids: [src-shiji-vol84]
+
+  # ── 阶段四：身后影响 ──────────────────────────────
+  - stage: 身后影响
+    stage_order: 12
+    title: 宋玉唐勒景差皆祖屈原
+    date:
+      text: 战国晚期，屈原身后数十年间
+      precision: 未知
+    place: 楚国
+    summary: 屈原既死之后，楚有宋玉唐勒景差之徒者皆好辞而以赋见称，然皆祖屈原之从容辞令，终莫敢直谏。其后楚日以削，数十年竟为秦所灭。
+    source_ids: [src-shiji-vol84]
+  - stage: 身后影响
+    stage_order: 13
+    title: 贾谊渡湘投书吊屈原，楚辞成体
+    date:
+      text: "约前176年（自沉后百有余年）"
+      year: -176
+      precision: 约
+    place: 湘水
+    summary: 史记谓自屈原沈汨罗后百有余年汉有贾生为长沙王太傅，过湘水投书以吊屈原。太史公曰余读离骚天问招魂哀郢悲其志；适长沙观屈原所自沉渊未尝不垂涕想见其为人。汉人辑楚地歌辞成楚辞一书，骚体由此成为中国文学的源头性文体。
+    source_ids: [src-shiji-vol84, src-chuci]
+  - stage: 身后影响
+    stage_order: 14
+    title: 端午纪念习俗层（传说）
+    date:
+      text: 起源时代与流变均存多说
+      precision: 未知
+    place: 汨罗江流域及全国
+    summary: 五月五日龙舟竞渡食粽投江以吊屈原，为流传最广的民俗叙事层；民间并有粽叶裹饭护其遗体、渔舟抢救等口传情节。
+    confidence: 传说
+    dispute: 端午节的起源有多源之说（吴越龙图腾祭祀、恶月禳灾等学术假说），纪念屈原为后世层累附益的民俗叙事，先秦两汉早期文献并无此系记录，不可作为信史事实采信。
+    source_ids: []
+
+works:
+  - work_id: li-sao
+    title: 离骚
+    alt_titles: [离骚经]
+    genre: 骚体长诗
+    date:
+      text: 创作年代众说纷纭，通说作于遭谗被疏之后
+      precision: 未知
+    place: 楚国
+    context: 中国古代最长的抒情诗。史记称其上称帝喾下道齐桓中述汤武以刺世事，明道德之广崇治乱之条贯靡不毕见；王逸序谓善鸟香草以配忠贞恶禽臭物以比谗佞，开创香草美人比兴传统。
+    attribution: 确凿
+    excerpt: 帝高阳之苗裔兮，朕皇考曰伯庸。……长太息以掩涕兮，哀民生之多艰。亦余心之所善兮，虽九死其犹未悔。……路漫漫其修远兮，吾将上下而求索。
+    text_display: excerpt
+    themes: [美政理想, 香草美人, 求索]
+    influence: 楚辞的开山与巅峰，「路漫漫其修远兮」成为中华求索精神的千古格言。
+    confidence: 存疑
+    dispute: 作者归属无争议（史记明言屈平之作离骚）；创作年代诸说并立；通行本「路漫漫」 wikisource 本作「路曼曼」，异文并存。
+    source_ids: [src-shiji-vol84, src-chuci]
+
+  - work_id: jiu-ge-guo-shang
+    title: 九歌·国殇
+    alt_titles: []
+    genre: 楚辞（祭歌）
+    date:
+      text: 迁谪沅湘间所作说为主流，年代不详
+      precision: 未知
+    place: 沅湘之间
+    context: 王逸序谓屈原放逐窜伏其域，出见俗人祭祀之礼歌舞之乐其词鄙陋，因为作九歌之曲。国殇一篇祭奠为国捐躯的将士，是九歌中唯一的人鬼之歌。
+    attribution: 确凿
+    excerpt: 操吴戈兮被犀甲，车错毂兮短兵接。旌蔽日兮敌若云，矢交坠兮士争先。……身既死兮神以灵，魂魄毅兮为鬼雄。
+    text_display: excerpt
+    themes: [祭奠将士, 悲壮]
+    influence: 中国文学中最早正面礼颂阵亡将士的名篇，「魂魄毅兮为鬼雄」为后世反复吟咏。
+    confidence: 存疑
+    dispute: 九歌整体归属屈原为主流意见，然近代以来亦有主张其为楚地祭歌原始文本经屈原加工改写说；系年无载。
+    source_ids: [src-chuci]
+
+  - work_id: jiu-ge-xiang-fu-ren
+    title: 九歌·湘夫人
+    alt_titles: []
+    genre: 楚辞（祭歌）
+    date:
+      text: 与九歌组诗同时，年代不详
+      precision: 未知
+    place: 沅湘洞庭之间
+    context: 与湘君为姊妹篇，望夫不至的怅惘与袅袅秋风洞庭波木叶下的秋景交融，被视为中国情景交融传统的源头之一。
+    attribution: 确凿
+    excerpt: 帝子降兮北渚，目眇眇兮愁予。袅袅兮秋风，洞庭波兮木叶下。
+    text_display: excerpt
+    themes: [秋思, 企慕]
+    influence: 「袅袅兮秋风，洞庭波兮木叶下」被誉为千古言秋之祖。
+    confidence: 存疑
+    dispute: 湘君湘夫人所指为尧女舜妃说、配偶神对祭说等历代聚讼；归属讨论同九歌条。
+    source_ids: [src-chuci]
+
+  - work_id: tian-wen
+    title: 天问
+    alt_titles: []
+    genre: 骚体奇诗
+    date:
+      text: 放逐期间作说为主流，年代不详
+      precision: 未知
+    place: 楚地
+    context: 王逸序谓屈原放逐彷徨山泽，见楚先王庙及公卿祠堂图画天地山川神灵古贤圣怪物行事，因书其壁呵而问之以泄愤懑。一口气连发一百七十余问，上问天文下诘历史。
+    attribution: 确凿
+    excerpt: 曰：遂古之初，谁传道之？上下未形，何由考之？……日月安属？列星安陈？
+    text_display: excerpt
+    themes: [宇宙之问, 疑古精神]
+    influence: 中国文学史上罕见的系统性追问宇宙与历史的奇作，近代以来被视为理性怀疑精神的上古先声。
+    confidence: 存疑
+    dispute: 太史公已并举离骚天问招魂哀郢而读之，归属无疑义；创作缘起壁画说系王逸序的传闻式记述，作年无载。
+    source_ids: [src-shiji-vol84, src-chuci]
+
+  - work_id: jiu-zhang-huai-sha
+    title: 九章·怀沙
+    alt_titles: []
+    genre: 骚体组诗（九章之一）
+    date:
+      text: 自沉前夕说为主流，年代不详
+      precision: 未知
+    place: 沅湘流域
+    context: 史记本传于渔父问答之后全文引录此赋，随即记怀石自沉，故旧说视为绝笔。篇中变白为黑倒上以为下凤凰在笯鸡雉翔舞之愤，与知死不可让之决绝相终始。
+    attribution: 确凿
+    excerpt: 陶陶孟夏兮，草木莽莽。伤怀永哀兮，汩徂南土。……知死不可让兮，愿勿爱兮！明以告君子兮，吾将以为类兮。
+    text_display: excerpt
+    themes: [绝笔, 明志]
+    influence: 因史记全录而成为确定屈原自沉心迹的第一手文献，怀沙绝笔遂成千古定谳式叙事。
+    confidence: 存疑
+    dispute: 史记所录与楚辞九章本文字句有异文；「临终绝笔」的定位系由史记编排方式导出的推断，九章各篇作年均无载。
+    source_ids: [src-shiji-vol84, src-chuci]
+
+  - work_id: yu-fu
+    title: 渔父
+    alt_titles: []
+    genre: 辞赋体散文
+    date:
+      text: 迁谪江湘间事为背景，写作年代不详
+      precision: 未知
+    place: 江湘之间
+    context: 屈原既放游于江潭行吟泽畔，与莞尔而笑鼓枻而去的渔父对答，沧浪之水清兮可以濯吾缨一曲收束，展现两种处世哲学的对话张力。
+    attribution: 存疑
+    excerpt: 屈原既放，游于江潭，行吟泽畔，颜色憔悴，形容枯槁。……沧浪之水清兮，可以濯吾缨；沧浪之水浊兮，可以濯吾足。
+    text_display: excerpt
+    themes: [处世抉择, 清醒与孤独]
+    influence: 「沧浪之歌」化入中国士人出处进退的精神语汇，渔父自此成为隐逸象征原型。
+    confidence: 有争议
+    dispute: 作者归属历来有争议：汉人题屈原作，近现代学者多疑为楚人悼屈之作或后人拟托；史记本传已含问答雏形而文字互异，孰先孰后尚无定论。
+    source_ids: [src-shiji-vol84, src-chuci]
+
+  - work_id: bu-ju
+    title: 卜居
+    alt_titles: []
+    genre: 辞赋体散文
+    date:
+      text: 放逐期间事为背景，写作年代不详
+      precision: 未知
+    place: 楚地
+    context: 屈原既放三年心烦虑乱不知所从，往见太卜郑詹尹，连发八组宁可／将谁之问；詹尹释策而谢曰尺有所短寸有所长，用君之心行君之意龟策诚不能知事。
+    attribution: 存疑
+    excerpt: 吾宁悃悃款款朴以忠乎？将送往劳来斯无穷乎？……黄钟毁弃，瓦釜雷鸣；谗人高张，贤士无名。
+    text_display: excerpt
+    themes: [人格抉择, 讽世]
+    influence: 黄钟毁弃瓦釜雷鸣成为针砭贤愚倒置的成语；设问自陈的文体为汉赋主客问答开先河。
+    confidence: 有争议
+    dispute: 作者归属与渔父同为悬案：传统题屈原，近现代多疑为拟托之作；篇中「屈原既放三年」的自述口吻本身即是疑点所在。
+    source_ids: [src-chuci]
+
+footprints:
+  - name: 秭归
+    modern_name: 湖北省宜昌市秭归县
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 出生地秭归说出自后世地志与传统谱牒，非正史所载；坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: "约前340年出生（一说）"
+      year: -340
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 有争议
+    dispute: 史记未载出生地；秭归说为主流通说，郢都说并存，乐平等边缘说法亦曾流传。
+    source_ids: []
+  - name: 郢都
+    modern_name: 湖北省荆州市纪南城遗址一带
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 左徒任上活动地按楚国都城制度推定为郢都；坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: 楚怀王朝任职期间
+      year: -328
+      range_end: -299
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 史记仅记为楚怀王左徒入则图议国事出则应对诸侯，未明言任职地点；按楚廷所在推定为郢都。
+    source_ids: [src-shiji-vol84]
+  - name: 汉北
+    modern_name: 湖北省西北部至河南省西南部汉水以北地区
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 放逐汉北说据楚辞作品地理线索与学界推定；坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: 初次放逐，约当怀王朝后期
+      precision: 未知
+    kind: 谪迁
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 汉北放逐说主要依据九章抽思「有鸟自南兮来集汉北」等句推定；史记本传仅言王怒而疏屈平与顷襄王怒而迁之两次处分，未言初次放逐地点，是否存在独立的汉北阶段尚有争论。
+    source_ids: [src-chuci]
+  - name: 江南沅湘流域
+    modern_name: 湖南省沅江、湘江流域及洞庭湖周边
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 迁谪行迹据史记「迁之」与楚辞作品地名（沅湘洞庭枉渚辰阳溆浦）推定；坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: 顷襄王朝迁谪期间，约前290年代以后
+      year: -296
+      precision: 约
+    kind: 谪迁
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 迁谪的具体路线、范围与年限均无正史纪年，行踪复原纯据作品地理意象与学界推定，存在一次迁谪与两次迁徙两说。
+    source_ids: [src-shiji-vol84, src-chuci]
+  - name: 汨罗江
+    modern_name: 湖南省汨罗市汨罗江
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约前278年怀石自沉"
+      year: -278
+      precision: 约
+    kind: 逝世
+    route_order: 5
+    memorial_only: false
+    confidence: 确定
+    dispute: ""
+    source_ids: [src-shiji-vol84]
+  - name: 屈子祠（汨罗）
+    modern_name: 湖南省汨罗市屈子祠
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 纪念建筑坐标待接入体系；不作确证到访处理
+    visit_date:
+      text: 不详
+      precision: 未知
+    kind: 纪念地
+    route_order: 6
+    memorial_only: true
+    confidence: 传说
+    dispute: 祠宇始建年代传说成分甚大，历代重建沿革待考；此处仅为后世纪念地著录，非屈原生平到访证据。
+    source_ids: []
+
+relations:
+  - relation_type: 思想影响
+    target_id: libai
+    direction: 单向
+    period:
+      text: 屈原身后两千余年，唐代接受高峰之一
+      year: 730
+      range_end: 762
+      precision: 范围
+    evidence: 李白《江上吟》（公版唐诗）盛赞「屈平词赋悬日月，楚王台榭空山丘」，以屈原词赋之不朽对照宫台楼榭之速朽；其纵横恣肆的想象与香草美人传统对李白诗风影响深远，为文学史共识。该关系证据源出唐诗而非本卷登记来源，故暂不挂 source_ids，待登记公版唐诗总集来源后补链。
+    inferred: true
+    confidence: 存疑
+    dispute: 影响关系系文学史综合判断而非直接史料记载的交往事实；单向（屈原→李白）成立无碍，反向不存在。
+    source_ids: []
+
+reception:
+  - era: 同时代
+    evaluator: 楚国朝野
+    quote: ""
+    text_display: none
+    comment: 楚人既咎子兰以劝怀王入秦而不反也——迁谪之际楚人舆论站在屈原一边；史记又称其虽放流眷顾楚国系心怀王不忘欲反，可见其在楚国公众记忆中的忠臣形象当时已然确立。
+    source_ids: [src-shiji-vol84]
+  - era: 同时代
+    evaluator: 渔父（传世文本中的对话者形象）
+    quote: 举世混浊而我独清，众人皆醉而我独醒，是以见放。
+    text_display: excerpt
+    comment: 此为屈原在问答中的自述，借传世文本保存了同时代人对「何以见放」的追问与他的回答，构成屈原自我定位的第一人称史料。
+    source_ids: [src-shiji-vol84, src-chuci]
+  - era: 历代批评
+    evaluator: 司马迁
+    quote: 推此志也，虽与日月争光可也。
+    text_display: excerpt
+    comment: 史记屈原贾生列传中对屈原志节的最高定格，与太史公曰余读离骚天问招魂哀郢悲其志、适长沙观屈原所自沉渊未尝不垂涕的动情笔法一起，奠定了两千年屈原评价的基调。
+    source_ids: [src-shiji-vol84]
+  - era: 历代批评
+    evaluator: 唐司马贞《索隐述赞》
+    quote: 屈平行正，以事怀王。瑾瑜比洁，日月争光。忠而见放，谗者益章。赋骚见志，怀沙自伤。
+    text_display: excerpt
+    comment: 附于史记卷末的传统史评，浓缩正史系统对屈原「忠而被谗、以赋见志」的标准叙事，可与贾谊吊屈原赋同观的汉代以降接受链条。
+    source_ids: [src-shiji-vol84]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦四大议题：生卒年推算（约前340—前278诸说）、生平两次放逐与行踪复原、渔父卜居等篇作者归属辨析、端午节起源与纪念屈原叙事的层累形成过程。均为中立综述，具体论著引文须取得许可后补入。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 离骚节选长期入选中学语文教材，路漫漫其修远兮成为国民级格言；端午节（龙舟、食粽）以屈原纪念为核心文化符号广泛传承。教材篇目与非遗申报表述随年度变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众影视与网络传播
+    quote: ""
+    text_display: none
+    comment: 暂无可核实的稳定代表作条目；影视剧与网络二次创作数量多而版权与事实质量参差，按规范从严不录入。
+    source_ids: []
+
+sources_used: [src-shiji-vol84, src-chuci]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。14条年谱（4阶段）、7部作品、6处足迹、1组关系、7条接受史；生卒年 出生地 渔父卜居归属 端午习俗层等争议全部落dispute}

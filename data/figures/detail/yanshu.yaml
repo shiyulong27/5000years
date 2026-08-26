@@ -1,0 +1,706 @@
+# 晏殊全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 宋史·卷311·列传第七十·晏殊传（维基文库实取） | 结论与置信 |
+# |---|---|---|
+# | 名号籍贯 | 晏殊字同叔撫州臨川人 | 确定 |
+# | 神童召试 | 七歲能屬文景德初張知白安撫江南以神童薦之；帝召殊與進士千餘人並試廷中殊神氣不懾援筆立成賜同進士出身 | 确定；具体年份正史仅系景德初 |
+# | 不欺 | 覆試詩賦論殊奏臣嘗私習此賦請試他題帝愛其不欺既成數稱善 | 确定 |
+# | 释褐 | 擢秘書省正字秘閣讀書 | 确定 |
+# | 真宗信任 | 為昇王府記室參軍為太子舍人尋知制誥為翰林學士帝每訪殊以事率用方寸小紙細書已答奏輒並稿上帝重其慎密 | 确定 |
+# | 垂帘建言 | 宰相丁謂樞密使曹利用各欲獨見奏事殊建言群臣奏事太后者垂簾聽之皆毋得見議遂定 | 确定 |
+# | 应天兴学 | 罷知宣州數月改應天府延范仲淹以教生徒自五代以來天下學校廢興學自殊始 | 确定；系年正史无载 |
+# | 好贤进贤 | 平居好賢當世知名之士如范仲淹孔道輔皆出其門及為相益務進賢材而仲淹與韓琦富弼皆進用 | 确定 |
+# | 与欧阳修 | 殊出歐陽修為河北都轉運諫官奏留不許 | 确定（本传仅此一事；修出其门下说属通行层） |
+# | 论罢外任 | 孫甫蔡襄上言宸妃生聖躬為天下主而殊嘗被詔志宸妃墓沒而不言又奏論殊役官兵治僦舍以規利坐是降工部尚書知穎州然時以謂非殊罪 | 确定 |
+# | 拜相 | 康定初知樞密院事遂為樞密使進同中書門下平章事慶歷中拜集賢殿學士同平章事兼樞密使 | 确定；本传作集賢殿學士非大學士 |
+# | 性情文章 | 性剛簡奉養清儉善知人富弼楊察皆其婿也文章贍麗應用不窮尤工詩閒雅有情思晚歲篤學不倦 | 确定 |
+# | 身后 | 已而薨帝雖臨奠以不視疾為恨特罷朝二日贈司空兼侍中諡元獻篆其碑首曰舊學之碑 | 确定；本传不系卒年不记享年 |
+# | 词作文本 | 浣溪沙蝶戀花清平樂破陣子踏莎行采桑子玉樓春山亭柳等均取珠玉詞四庫全書本維基文库全文 | 确定（四庫全書本系统；异文未逐字校善本） |
+# | 无可奈何二句本事 | 四庫本珠玉詞提要：浣溪沙春恨詞無可奈何花落去似曾相識燕歸來二句乃殊示張寺丞王校勘七言律中腹聫復齋漫錄嘗述之今復填入詞内 | 提要层确定（提要引复斋漫录）；「与王琪联句」另一说未实取，存疑转述 |
+# | 冯煦评语 | 蒿庵論詞維基文库实取：晏同叔去五代未遠馨烈所扇得之最先故左宮右徵和婉而明麗為北宋倚聲家初祖 | 确定（公版清代词论） |
+# | 王国维评语 | 人間詞話維基文库实取：古今之成大事業大學問者必經過三種之境界昨夜西風凋碧樹獨上高樓望盡天涯路此第一境也 | 确定（公版近现代词论） |
+# | 生年 | 本传无载；通行据卒年1055与享年六十五倒推为991 | 推定层，标存疑 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: yanshu
+
+profile:
+  courtesy_name: 同叔
+  art_name: ""
+  aliases: [晏元献, 元献公, 临川晏公]
+  gender: 男
+  ethnicity: ""
+  ancestry: 抚州临川
+  birthplace: 抚州临川（今江西省抚州市临川区）
+  death_place: 汴京（今河南省开封市）
+  offices: [秘书省正字, 太常寺奉礼郎, 集贤校理, 知制诰, 翰林学士, 枢密副使, 参知政事, 知枢密院事, 枢密使, 集贤殿学士同平章事兼枢密使, 观文殿大学士]
+  fields: [文学, 政治]
+  roles: [词人, 政治家]
+  summary: 北宋倚声家初祖、承平气象中的太平宰相；神童出身而一生缜密持重，兴学应天、延揽范仲淹欧阳修一辈贤才开庆历风气，词则承南唐而启一代，「无可奈何花落去」遂成千年名句。
+
+timeline:
+  # ── 阶段一：临川神童 ──────────────────────────────
+  - stage: 临川神童
+    stage_order: 1
+    title: 生于抚州临川
+    date:
+      text: 约991年（通行推定）
+      year: 991
+      precision: 约
+    place: 抚州临川
+    summary: 晏殊生于抚州临川。生年本传无载，通行据卒年（至和二年1055）与享年六十五之说倒推，此处按推定著录。
+    confidence: 存疑
+    dispute: 宋史本传不记生年亦不记享年；991年生为学界通行推定，另有小异之说并存。
+    source_ids: [src-songshi-vol311]
+  - stage: 临川神童
+    stage_order: 2
+    title: 七岁能属文，张知白荐为神童
+    date:
+      text: 景德初（约1004—1005年之间）
+      year: 1004
+      range_end: 1005
+      precision: 范围
+    place: 抚州临川、江南
+    summary: 七岁能属文，景德初张知白安抚江南，以神童荐之。少年才名为朝廷所闻。
+    source_ids: [src-songshi-vol311]
+  - stage: 临川神童
+    stage_order: 3
+    title: 廷中试艺赐同进士出身，擢秘书省正字
+    date:
+      text: 景德初（约1004—1005年之间）
+      year: 1004
+      range_end: 1005
+      precision: 范围
+    place: 汴京
+    summary: 帝召殊与进士千余人并试廷中，殊神气不慑，援笔立成，帝嘉赏，赐同进士出身；寇準以江外人议之，真宗以张九龄非江外人邪折之。覆试诗赋论时奏臣尝私习此赋请试他题，帝爱其不欺，擢秘书省正字，秘阁读书。一场廷试兼显才气与诚实两面，为其终身仕途奠基。
+    source_ids: [src-songshi-vol311]
+  - stage: 临川神童
+    stage_order: 4
+    title: 召试中书，东封恩迁集贤校理
+    date:
+      text: 约1006—1008年之间
+      year: 1006
+      range_end: 1008
+      precision: 范围
+    place: 汴京
+    summary: 明年召试中书迁太常寺奉礼郎；东封恩迁光禄寺丞，为集贤校理。馆阁储才之路自此始。
+    confidence: 存疑
+    dispute: 召试中书记为本传「明年」，东封恩系大中祥符元年（1008）封禅推恩；起讫年份据此推定。
+    source_ids: [src-songshi-vol311]
+
+  # ── 阶段二：东宫旧学与真宗信任 ────────────────────
+  - stage: 东宫旧学与真宗信任
+    stage_order: 5
+    title: 为昇王府记室参军、太子舍人，成东宫旧臣
+    date:
+      text: 真宗朝后期（约1017—1021年之间）
+      year: 1017
+      range_end: 1021
+      precision: 范围
+    place: 汴京
+    summary: 为昇王府记室参军，岁中迁尚书户部员外郎，为太子舍人，寻知制诰判集贤院。赵祯（后来的仁宗）出阁受学之日，晏殊已在僚属之列，此即日后「东宫旧臣」「旧学」之谊的本源。
+    confidence: 存疑
+    dispute: 入昇王府的具体年份正史无载，系据仁宗册立太子前后行迹推定。
+    source_ids: [src-songshi-vol311]
+  - stage: 东宫旧学与真宗信任
+    stage_order: 6
+    title: 翰林学士任上，帝重其慎密
+    date:
+      text: 真宗朝末期
+      year: 1021
+      precision: 约
+    place: 汴京
+    summary: 久之为翰林学士迁左庶子。帝每访殊以事，率用方寸小纸细书，已答奏，辄并稿封上，帝重其慎密——以缄默谨密得真宗信任，亦见其为政性格。
+    confidence: 存疑
+    dispute: 任翰林学士起讫年份正史不系年，此处按真宗末年通说约估。
+    source_ids: [src-songshi-vol311]
+
+  # ── 阶段三：仁宗朝执政兴学 ────────────────────────
+  - stage: 仁宗朝执政兴学
+    stage_order: 7
+    title: 乾兴定议：建言垂帘听政皆毋得独见
+    date:
+      text: 约1022年（乾兴元年）
+      year: 1022
+      precision: 约
+    place: 汴京
+    summary: 仁宗即位，章献明肃太后奉遗诏权听政。宰相丁谓、枢密使曹利用各欲独见奏事，无敢决其议者，殊建言群臣奏事太后者垂帘听之皆毋得见，议遂定。一朝体制之争，由其一言而定。
+    source_ids: [src-songshi-vol311]
+  - stage: 仁宗朝执政兴学
+    stage_order: 8
+    title: 预修真宗实录，拜枢密副使
+    date:
+      text: 约1022—1023年之间
+      year: 1022
+      range_end: 1023
+      precision: 范围
+    place: 汴京
+    summary: 迁右谏议大夫兼侍读学士，太后以东宫旧臣恩不称加给事中；预修真宗实录，进礼部侍郎，拜枢密副使，进入执政行列。
+    source_ids: [src-songshi-vol311]
+  - stage: 仁宗朝执政兴学
+    stage_order: 9
+    title: 忤太后旨罢知宣州，移应天府延范仲淹教生徒
+    date:
+      text: 约1026—1028年之间
+      year: 1026
+      range_end: 1028
+      precision: 范围
+    place: 宣州、应天府（今商丘）
+    summary: 上疏论张耆不可为枢密使忤太后旨，又以笏撞从者折齿遭御史弹奏，罢知宣州；数月改应天府，延范仲淹以教生徒。本传特笔：自五代以来天下学校废，兴学自殊始——宋代兴学传统由此发端。
+    confidence: 存疑
+    dispute: 罢知宣州与移应天的具体年份正史不系年，通行系于天圣年间，此处取约1026—1028范围；聘范仲淹执教应天府书院即在此期。
+    source_ids: [src-songshi-vol311]
+  - stage: 仁宗朝执政兴学
+    stage_order: 10
+    title: 复为枢密副使，改参知政事
+    date:
+      text: 约1032—1034年之间
+      year: 1032
+      range_end: 1034
+      precision: 范围
+    place: 汴京
+    summary: 召拜御史中丞，改资政殿学士兼翰林侍读学士，兵部侍郎兼秘书监，为三司使，复为枢密副使，未拜改参知政事加尚书左丞。太后谒太庙有请服衮冕者，殊以周官后服对，持礼而不激。
+    confidence: 存疑
+    dispute: 再执政的起讫年份正史不系年，据章献太后临朝后期职历推定。
+    source_ids: [src-songshi-vol311]
+  - stage: 仁宗朝执政兴学
+    stage_order: 11
+    title: 西边用兵陈攻守策，康定为枢密使
+    date:
+      text: 约1040年（康定初）
+      year: 1040
+      precision: 约
+    place: 汴京
+    summary: 陕西方用兵，殊请罢内臣监兵，不以阵图授诸将使得应敌为攻守，又请募弓箭手教之战、出宫中长物助边费，悉为施行。康定初知枢密院事，遂为枢密使——对夏战局中的军政主脑。
+    source_ids: [src-songshi-vol311]
+
+  # ── 阶段四：庆历拜相 ──────────────────────────────
+  - stage: 庆历拜相
+    stage_order: 12
+    title: 拜集贤殿学士同平章事兼枢密使
+    date:
+      text: 庆历中（约1043年）
+      year: 1043
+      precision: 约
+    place: 汴京
+    summary: 进同中书门下平章事，庆历中拜集贤殿学士同平章事兼枢密使——以宰相兼枢密，登仕途顶点。本传作集賢殿學士，后世或称集贤殿大学士。
+    confidence: 存疑
+    dispute: 拜相具体月份正史仅系庆历中；结衔本传作集贤殿学士，通行文献多作集贤殿大学士，两说并存。
+    source_ids: [src-songshi-vol311]
+  - stage: 庆历拜相
+    stage_order: 13
+    title: 益务进贤材：仲淹、韩琦、富弼皆进用
+    date:
+      text: 庆历年间（约1043—1044年之间）
+      year: 1043
+      range_end: 1044
+      precision: 范围
+    place: 汴京
+    summary: 平居好贤，当世知名之士如范仲淹、孔道辅皆出其门；及为相益务进贤材，仲淹与韩琦富弼皆进用至于台阁。帝亦奋然有意欲因群材以更治——庆历新政的人事班底与其荐引直接相关。
+    source_ids: [src-songshi-vol311]
+  - stage: 庆历拜相
+    stage_order: 14
+    title: 出欧阳修为河北都转运，谏官奏留不许
+    date:
+      text: 庆历年间（约1043—1044年之间）
+      year: 1043
+      range_end: 1044
+      precision: 范围
+    place: 汴京
+    summary: 殊出欧阳修为河北都转运，谏官奏留不许——宰相用人之际与言路的一桩公案，亦是二人关系在正史中最直接的记载。
+    confidence: 存疑
+    dispute: 出修的确切年份正史不系年；欧阳修出其门下的通行说法本传未明言，属后世综述层。
+    source_ids: [src-songshi-vol311]
+
+  # ── 阶段五：论罢外任与病卒 ────────────────────────
+  - stage: 论罢外任与病卒
+    stage_order: 15
+    title: 孙甫蔡襄论罢，降工部尚书知颍州
+    date:
+      text: 约1044年
+      year: 1044
+      precision: 约
+    place: 汴京、颍州（今阜阳）
+    summary: 孙甫、蔡襄上言：宸妃生圣躬为天下主，而殊尝被诏志宸妃墓没而不言；又奏论殊役官兵治僦舍以规利。坐是降工部尚书知颍州。本传辨之：志不敢斥言以章献太后方临朝，所役兵乃辅臣例宣借者，时以谓非殊罪——相位终于是役，时论犹为之屈。
+    confidence: 存疑
+    dispute: 罢相降官年份通行系庆历四年（1044）前后，正史不系年。
+    source_ids: [src-songshi-vol311]
+  - stage: 论罢外任与病卒
+    stage_order: 16
+    title: 历知亳陈许诸州，以观文殿大学士知永兴军徙河南府
+    date:
+      text: 约1034年亳州起，至约1046—1053年之间历典大州
+      year: 1034
+      range_end: 1053
+      precision: 范围
+    place: 亳州、陈州、许州、永兴军、河南府（今洛阳）
+    summary: 章献太后崩后以礼部尚书罢知亳州徙陈州；罢相后徙陈州又徙许州，祀明堂迁户部，以观文殿大学士知永兴军，徙河南府迁兵部。累典大州而吏民畏其悁急，晚岁仍屡膺方面重任。
+    confidence: 存疑
+    dispute: 各州起讫年份正史均不系年，仅能据传序先后框定区间；知亳州在前段（太后崩后）、余任在后段，此处合并著录。
+    source_ids: [src-songshi-vol311]
+  - stage: 论罢外任与病卒
+    stage_order: 17
+    title: 留侍经筵，病卒汴京，谥元献
+    date:
+      text: 约1055年（至和二年，通行说）
+      year: 1055
+      precision: 约
+    place: 汴京
+    summary: 以疾请归京师访医药，既平复求出守，特留侍经筵，诏五日一与起居仪从如宰相；逾年病寖剧，驰奏臣老疾行愈矣不足为陛下忧，已而薨。帝虽临奠，以不视疾为恨，特罢朝二日，赠司空兼侍中，谥元献，篆其碑首曰舊學之碑。性刚简奉养清俭，文章赡丽应用不穷，尤工诗闲雅有情思；文集二百四十卷，又删次梁陈以后名臣述作为集选一百卷。
+    confidence: 存疑
+    dispute: 卒年正史本传不系年，通行作至和二年（1055）；享年六十五亦不见本传，生年991即据此倒推，均为推定层。
+    source_ids: [src-songshi-vol311]
+
+works:
+  - work_id: huan-xi-sha-yi-qu-xin-ci-jiu-yi-bei
+    title: 浣溪沙·一曲新词酒一杯
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 闲步小园而叹流光，夕阳西下几时回以寻常口吻问出不可挽回之事；无可奈何花落去似曾相识燕归来一联对仗天成，成为其词乃至宋词的标志性名句。
+    attribution: 确凿
+    excerpt: 一曲新词酒一杯，去年天气旧亭台，夕阳西下几时回？无可奈何花落去，似曾相识燕归来。小园香径独徘徊。
+    text_display: full
+    themes: [惜时, 春恨, 圆融观照]
+    influence: 无可奈何花落去一联千古传诵；四库提要引复斋漫录指出二句先见于其七律示张寺丞王校勘腹联而后填入词内。
+    confidence: 有争议
+    dispute: 二句来历有两说并行：四库本珠玉词提要引复斋漫录谓出自其七律示张寺丞王校勘腹联复填入词；另通行笔记流传「与王琪联句得之」的本事，本次未能在维基文库实取该条原文，按存疑转述著录。异文与系年均无定论。
+    source_ids: [src-zhuyuci]
+
+  - work_id: die-lian-hua-jian-ju-chou-yan-lan-qie-lu
+    title: 蝶恋花·槛菊愁烟兰泣露
+    alt_titles: [鹊踏枝·槛菊愁烟（四库本原注向另刻）]
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 秋晓怀远之作：昨夜西风凋碧树，独上高楼望尽天涯路，以凋碧树的狠重笔力写望远怀人之境，悲壮而不纤弱。
+    attribution: 确凿
+    excerpt: 槛菊愁烟兰泣露，罗幕轻寒，燕子双飞去。明月不谙离恨苦，斜光到晓穿朱户。　昨夜西风凋碧树，独上高楼，望尽天涯路。欲寄彩笺无尺素，山长水阔知何处。
+    text_display: full
+    themes: [秋思, 怀远, 高远境界]
+    influence: 王国维人间词话取其下片首二句为古今成大事业大学问者三种境界之第一境；维基文库四库本作欲寄彩笺无尺素，人间词话引作兼尺素，异文并存。
+    confidence: 有争议
+    dispute: 尾句异文：珠玉词四库全书本作欲寄彩箋無尺素，人间词话引文作欲寄彩箋兼尺素，通行选本两见；创作年代不详。
+    source_ids: [src-zhuyuci]
+
+  - work_id: qing-ping-yue-jin-feng-xi-xi
+    title: 清平乐·金风细细
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 细叶坠、初尝醉、微寒银屏，全篇以淡笔写秋宵闲静，是其雍容和婉一路的本色小令。
+    attribution: 确凿
+    excerpt: 金风细细，叶叶梧桐坠。绿酒初尝人易醉，一枕小窗浓睡。　紫薇朱槿花残，斜阳却照阑干。双燕欲归时节，银屏昨夜微寒。
+    text_display: full
+    themes: [秋景, 闲淡]
+    influence: 冯煦所谓左宫右徵和婉而明丽的小令样本。
+    source_ids: [src-zhuyuci]
+
+  - work_id: qing-ping-yue-hong-jian-xiao-zi
+    title: 清平乐·红笺小字
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 说尽平生意而鸿雁在云鱼在水，惆怅此情难寄；结拍人面不知何处绿波依旧东流，以流水收束无处投递之情。
+    attribution: 确凿
+    excerpt: 红笺小字，说尽平生意。鸿雁在云鱼在水，惆怅此情难寄。　斜阳独倚西楼，遥山恰对帘钩。人面不知何处，绿波依旧东流。
+    text_display: full
+    themes: [相思, 书信]
+    influence: 其闲雅有情思一面的代表作。
+    source_ids: [src-zhuyuci]
+
+  - work_id: po-zhen-zi-yan-zi-yu-gui-shi-jie
+    title: 破阵子·燕子欲归时节
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 秋日小会而襟怀难尽，多少襟怀言不尽写向蛮笺曲调中——直言以词代书的写作姿态，此情千万重收束沉着。
+    attribution: 确凿
+    excerpt: 燕子欲归时节，高楼昨夜西风。求得人间成小会，试把金尊傍菊丛。歌长粉面红。　斜日更穿帘幕，微凉渐入梧桐。多少襟怀言不尽，写向蛮笺曲调中。此情千万重。
+    text_display: full
+    themes: [秋会, 襟怀]
+    influence: 珠玉词四库本所收破阵子的代表一首，可见其慢节拍小令的铺叙功夫。
+    source_ids: [src-zhuyuci]
+
+  - work_id: ta-suo-xing-xiao-jing-hong-xi
+    title: 踏莎行·小径红稀
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 春残郊行之景：春风不解禁杨花蒙蒙乱扑行人面，结拍一场愁梦酒醒时斜阳却照深深院，以景语暗写迟暮。
+    attribution: 确凿
+    excerpt: 小径红稀，芳郊绿遍，高台树色阴阴见。春风不解禁杨花，蒙蒙乱扑行人面。　翠叶藏莺，朱帘隔燕，炉香静逐游丝转。一场愁梦酒醒时，斜阳却照深深院。
+    text_display: full
+    themes: [暮春, 景语]
+    influence: 其写景浑成的代表作，历代选家常举为珠玉词正宗。
+    source_ids: [src-zhuyuci]
+
+  - work_id: cai-sang-zi-shi-guang-zhi-jie-cui-ren-lao
+    title: 采桑子·时光只解催人老
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 时光只解催人老不信多情，长恨离亭泪滴春衫酒易醒；下片梧桐昨夜西风急好梦频惊何处高楼雁一声，雁声破梦与蝶恋花同一机杼。
+    attribution: 确凿
+    excerpt: 时光只解催人老，不信多情，长恨离亭，泪滴春衫酒易醒。　梧桐昨夜西风急，淡月胧明，好梦频惊，何处高楼雁一声。
+    text_display: full
+    themes: [惜时, 别恨, 秋声]
+    influence: 以声象收束愁绪的名篇，可见其惜时主题的另一写法。
+    source_ids: [src-zhuyuci]
+
+  - work_id: yu-lou-chun-chi-tang-shui-lv-feng-wei-nuan
+    title: 玉楼春·池塘水绿风微暖
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 忆旧游而伤聚散：重头歌韵响铮琮入破舞腰红乱旋写歌舞繁盛，结拍当时共我赏花人点检如今无一半，盛衰之感直贯而下。
+    attribution: 确凿
+    excerpt: 池塘水绿风微暖，记得玉真初见面。……当时共我赏花人，点检如今无一半。
+    text_display: excerpt
+    themes: [忆旧, 盛衰之感]
+    influence: 太平宰相词中难得的直露沧桑语，常被举为其富贵气象背后的时间意识标本。
+    source_ids: [src-zhuyuci]
+
+  - work_id: shan-ting-liu-jia-zhu-xi-qin
+    title: 山亭柳·赠歌者
+    alt_titles: [山亭柳·家住西秦]
+    genre: 词（慢词）
+    date:
+      text: 晚年说（约皇祐间知永兴军时期，通行推测）
+      year: 1050
+      precision: 约
+    place: 永兴军（今西安，一说）
+    context: 借歌者数年来往咸京道残杯冷炙谩消魂的身世，写若有知音见采不辞遍唱阳春的知音之叹，一曲当筵落泪重掩罗巾，寄托极深，风格在珠玉集中独见沉郁。
+    attribution: 确凿
+    excerpt: 家住西秦，赌博艺随身。……若有知音见采，不辞遍唱阳春。一曲当筵落泪，重掩罗巾。
+    text_display: excerpt
+    themes: [知音, 身世寄托]
+    influence: 晏殊词中罕见的感慨身世之作，被视为晚年心境的注脚。
+    confidence: 存疑
+    dispute: 系年从晚年知永兴军时的通行推测，正史与词集均无明证。
+    source_ids: [src-zhuyuci]
+
+  - work_id: huan-xi-sha-yi-xiang-nian-guang-you-xian-shen
+    title: 浣溪沙·一向年光有限身
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 一向年光有限身等闲离别易销魂直逼人生有限之痛，而以满目山河空念远落花风雨更伤春宕开，结在不如怜取眼前人的旷达收束。
+    attribution: 确凿
+    excerpt: 一向年光有限身，等闲离别易销魂，酒筵歌席莫辞频。　满目山河空念远，落花风雨更伤春，不如怜取眼前人。
+    text_display: full
+    themes: [惜时, 离别, 旷达]
+    influence: 不如怜取眼前人与无可奈何一联合为其惜时哲学的两面，历代传诵。
+    source_ids: [src-zhuyuci]
+
+footprints:
+  - name: 抚州临川
+    modern_name: 江西省抚州市临川区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约991年生于此，童年在此
+      year: 991
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    confidence: 存疑
+    dispute: 出生年份为通行推定。
+    source_ids: [src-songshi-vol311]
+  - name: 汴京
+    modern_name: 河南省开封市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 景德初（约1004—1005）召试入仕，此后长期任职
+      year: 1004
+      range_end: 1005
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-songshi-vol311]
+  - name: 宣州
+    modern_name: 安徽省宣城市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1026—1028年间忤太后旨罢知宣州
+      year: 1026
+      range_end: 1028
+      precision: 范围
+    kind: 谪迁
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 罢知年份正史不系年，据天圣间职历推定。
+    source_ids: [src-songshi-vol311]
+  - name: 应天府
+    modern_name: 河南省商丘市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1026—1028年间改知应天府，延范仲淹教生徒，兴学自殊始
+      year: 1026
+      range_end: 1028
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    confidence: 存疑
+    dispute: 知应天与兴学的具体年份正史不系年，通行系于天圣间。
+    source_ids: [src-songshi-vol311]
+  - name: 亳州
+    modern_name: 安徽省亳州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 章献太后崩后（约1033—1034年间）罢知亳州
+      year: 1033
+      range_end: 1034
+      precision: 范围
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 系于太后崩（明道二年1033）后，正史不系年。
+    source_ids: [src-songshi-vol311]
+  - name: 颍州
+    modern_name: 安徽省阜阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1044年孙甫蔡襄论罢后降工部尚书知颍州
+      year: 1044
+      precision: 约
+    kind: 谪迁
+    route_order: 6
+    memorial_only: false
+    confidence: 存疑
+    dispute: 罢相降官年份通行系庆历四年前后，正史不系年。
+    source_ids: [src-songshi-vol311]
+  - name: 陈州
+    modern_name: 河南省周口市淮阳区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 先后两度：太后崩后自亳州徙陈州；罢相后又徙陈州
+      year: 1034
+      range_end: 1046
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 两度知陈州的起讫年份正史均不系年，按传序框定区间。
+    source_ids: [src-songshi-vol311]
+  - name: 许州
+    modern_name: 河南省许昌市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1045—1046年间徙知许州
+      year: 1045
+      range_end: 1046
+      precision: 范围
+    kind: 任职
+    route_order: 8
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 自颍徙许的年份正史不系年，按传序推定。
+    source_ids: [src-songshi-vol311]
+  - name: 永兴军
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1049—1052年间以观文殿大学士知永兴军
+      year: 1049
+      range_end: 1052
+      precision: 范围
+    kind: 任职
+    route_order: 9
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 系于皇祐间祀明堂推恩之后，正史不系年。
+    source_ids: [src-songshi-vol311]
+  - name: 河南府
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1052—1054年间自永兴军徙河南府（西京留守任）
+      year: 1052
+      range_end: 1054
+      precision: 范围
+    kind: 任职
+    route_order: 10
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 徙河南府年份正史不系年，按卒前数年框定。
+    source_ids: [src-songshi-vol311]
+  - name: 汴京
+    modern_name: 河南省开封市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1054—1055年以疾归京师访医药，留侍经筵，病卒于此
+      year: 1054
+      range_end: 1055
+      precision: 范围
+    kind: 逝世
+    route_order: 11
+    memorial_only: false
+    confidence: 存疑
+    dispute: 卒年本传不系年，通行作至和二年（1055）。
+    source_ids: [src-songshi-vol311]
+
+relations:
+  - relation_type: 同僚
+    target_id: fanzhongyan
+    direction: 双向
+    period:
+      text: 约1026—1028年应天府兴学延范仲淹教生徒起，至庆历间进用
+      year: 1026
+      range_end: 1044
+      precision: 范围
+    evidence: 本传明载改应天府延范仲淹以教生徒自五代以来天下学校廢興學自殊始；又载平居好贤当世知名之士如范仲淹孔道辅皆出其门，及为相益务进贤材而仲淹与韩琦富弼皆进用。
+    confidence: 确定
+    source_ids: [src-songshi-vol311]
+  - relation_type: 同僚
+    target_id: ouyangxiu
+    direction: 双向
+    period:
+      text: 庆历间（约1043—1044年）宰相任内
+      year: 1043
+      range_end: 1044
+      precision: 范围
+    evidence: 本传明载殊出欧阳修为河北都转运谏官奏留不许；欧阳修出其门下之说属通行综述层，本传未明言。冯煦蒿庵论词并以文忠与元献并举：独文忠与元献学之既至为之亦勤……词家遂有西江一派。
+    confidence: 存疑
+    dispute: 二人词学渊源（蒿庵论词并称西江一派）有公版词论可据；「出其门下」的具体表述待核欧阳修集与宋人笔记后再升级。
+    source_ids: [src-songshi-vol311]
+  - relation_type: 社群
+    target_id: liuyong
+    direction: 双向
+    period:
+      text: 真宗末至仁宗朝同时期在朝在野
+      year: 1020
+      range_end: 1050
+      precision: 范围
+    evidence: 冯煦蒿庵论词实取：耆卿词曲处能直密处能疏……自是北宋巨手——将柳永置于与元献同代的词史序列中对照；晏柳直接交往的轶事属宋人笔记层，本次未能实取原文。
+    confidence: 存疑
+    dispute: 通行笔记所传晏殊与柳永的当面问答（如「彩线慵拈伴伊坐」事）未见维基文库实取，仅作同代词坛对照关系著录，不作为交往实证。
+    source_ids: []
+
+reception:
+  - era: 同时代
+    evaluator: 宋仁宗
+    quote: 帝虽临奠，以不视疾为恨，特罢朝二日，赠司空兼侍中，谥元献，篆其碑首曰「舊學之碑」。
+    text_display: excerpt
+    comment: 本传直录的身后哀荣——罢朝二日与御篆碑首「舊學之碑」，是东宫旧学之谊的最终注脚，也是人臣身后极遇。
+    source_ids: [src-songshi-vol311]
+  - era: 同时代
+    evaluator: 本传史臣论
+    quote: 得象浑厚有容，殊喜荐拔人物，乐善不倦，方之诸人，殊其最优乎！
+    text_display: excerpt
+    comment: 卷末论曰将晏殊置于同卷诸宰相之上，以荐拔人物乐善不倦为第一义，与传中兴学、进贤诸事互证。
+    source_ids: [src-songshi-vol311]
+  - era: 历代批评
+    evaluator: 刘攽《中山诗话》（转引自冯煦《蒿庵论词》）
+    quote: 元献喜冯延巳歌词，其所自作，亦不减延巳。
+    text_display: excerpt
+    comment: 宋人诗话对其词与冯延巳渊源的早期定位；本卷经由蒿庵论词转引实取，中山诗话原书条目待另行核验。
+    confidence: 存疑
+    dispute: 中山诗话原文未经独立实取，现按转引层著录。
+    source_ids: [src-haoanlunci]
+  - era: 历代批评
+    evaluator: 冯煦《蒿庵论词》
+    quote: 晏同叔去五代未远，馨烈所扇，得之最先，故左宫右徵，和婉而明丽，为北宋倚声家初祖。
+    text_display: excerpt
+    comment: 北宋倚声家初祖的定性即出于此——清代词论对其承南唐启北宋词统地位的代表性总结；蒿庵论词为清代公版文献，已在维基文库实取全文比对。
+    confidence: 确定
+    source_ids: [src-haoanlunci]
+  - era: 近现代学术
+    evaluator: 王国维《人间词话》
+    quote: 古今之成大事业、大学问者，必经过三种之境界：「昨夜西风凋碧树。独上高楼，望尽天涯路。」此第一境也。
+    text_display: excerpt
+    comment: 三境界说以晏殊蝶恋花两句为第一境，使其词进入近现代人生哲学的经典话语；人间词话为公版文献（王国维1909年前后刊布），已在维基文库实取相关条目。
+    confidence: 确定
+    source_ids: [src-renjiancihua]
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 浣溪沙一曲新词酒一杯长期入选语文教材与大众读本，无可奈何花落去似曾相识燕归来为国民级名句；教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中的晏殊形象多为庆历政局与宋词背景的戏剧化敷演，不作信史依据；网络传播集中于其名句与「太平宰相」标签，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-songshi-vol311, src-zhuyuci]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。17条年谱（5阶段）、10首作品、11处足迹、3组关系（提携范仲淹／门下欧阳修／同代词坛柳永）、6层接受史（含影视网络占位）。生平全部实取维基文库宋史卷311晏殊传；词作文本实取珠玉词四庫全書本；冯煦蒿庵论词、王国维人间词话均在维基文库实取。无可奈何二句本事按四库提要引复斋漫录著录，王琪联句说标存疑转述。生年991与卒年1055均为推定层并标注。"}

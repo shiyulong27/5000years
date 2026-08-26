@@ -1,0 +1,695 @@
+# 范成大全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 宋史·卷386·列传第一百四十五·范成大传（维基文库实取） | 结论与置信 |
+# |---|---|---|
+# | 名号籍贯 | 范成大，字致能，吳郡人 | 确定；文库原文作「致能」，通行又作「至能」，异文并存 |
+# | 及第 | 紹興二十四年，擢進士第 | 确定 |
+# | 初仕 | 授戶曹，監和劑局 | 确定；预判之「监和安赏罚」不确，以原文「监和剂局」为准 |
+# | 中历朝官 | 隆興元年遷正字累遷著作佐郎除吏部郎官言者論其超躐罷奉祠；起知處州創義役修通濟堰；除禮部員外郎兼崇政殿說書遷起居郎 | 确定；处州起讫本传不系年 |
+# | 使金系年 | 本传叙事不系年；《攬轡錄》（维基文库实取）开篇：乾道六年閏五月戊子成大被命與康諝爲奉使大金國信使副六月甲子出國門 | 使金定于乾道六年1170，系年精确依据文集层 |
+# | 使金全节 | 至燕山密草奏具言受書式懷之入；初進國書詞氣慷慨忽奏兩朝既為叔侄而受書禮未稱搢笏出之；金主大駭此豈獻書處耶；太子欲殺成大越王止之竟得全節而歸 | 确定 |
+# | 帅桂帅蜀 | 知靜江府（广西盐政）；除敷文閣待制四川制置使（黎州边备、表孙松寿樊汉广之节蜀士归心） | 确定；职衔以本传为准，起讫不系年 |
+# | 参政与罢退 | 召對除權吏部尚書拜參知政事兩月為言者所論奉祠；起知明州奏罷海物之獻；除端明殿學士尋帥金陵 | 确定；拜参年份本传不载 |
+# | 晚阶与卒 | 以病請閑進資政殿學士再領洞霄宮紹熙三年加大學士四年薨 | 确定；绍熙四年即1193年 |
+# | 自号与著述 | 自號「石湖」，有《石湖集》《攬轡錄》《桂海虞衡集》行於世；素有文名尤工於詩 | 确定；「石湖居士」之称见诗集署名层 |
+# | 谥号 | 本传不载 | 通行「文穆」说出自碑传层（周必大神道碑系统），本次未实取，存疑 |
+# | 早年孤露苦读 | 本传不载 | 碑传笔记层通说，存疑著录 |
+# | 四时田园杂兴 | 本传无载 | 从作品层处理：维基文库四時田園雜興专页实取六首 |
+# | 作品文本 | 州橋、會同館（石湖詩集四庫本卷12）、催租行橫塘（卷03）、四時田園雜興专页、攬轡錄专页均实取；后催租行文库检索零命中 | 通行本层；简体转写，异文未深校标存疑 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: fanchengda
+
+profile:
+  courtesy_name: 致能（一作至能）
+  art_name: 石湖居士（本传作自号石湖）
+  aliases: [范石湖, 石湖居士]
+  gender: 男
+  ethnicity: ""
+  ancestry: 吴郡
+  birthplace: 吴郡（今江苏苏州）
+  death_place: 苏州石湖（据晚年归隐行迹推定，本传不载卒地）
+  offices: [户曹, 监和剂局, 秘书省正字, 著作佐郎, 吏部郎官, 知处州, 礼部员外郎兼崇政殿说书, 起居郎, 中书舍人, 知静江府, 敷文阁待制, 四川制置使, 权吏部尚书, 参知政事, 知明州, 端明殿学士（帅金陵）, 资政殿学士]
+  fields: [文学, 政治]
+  roles: [诗人, 政治家]
+  summary: 中兴四大诗人之一、古代田园诗的集成者；乾道六年使金，笏进受书疏几死而全节，纪行诸作为宋诗名场；晚年退居石湖著《四时田园杂兴》，集田园诗传统之大成。
+
+timeline:
+  # ── 阶段一：吴郡少年 ──────────────────────────────
+  - stage: 吴郡少年
+    stage_order: 1
+    title: 出生于吴郡
+    date:
+      text: "1126年"
+      year: 1126
+      precision: 约
+    place: 吴郡
+    summary: 本传仅称吳郡人。生年正史无载，1126年说从主档登记与学界通行年谱。
+    confidence: 存疑
+    dispute: 生年本传及已实取文献均不载，系主档与通行年谱推算值。
+    source_ids: [src-songshi-vol386]
+  - stage: 吴郡少年
+    stage_order: 2
+    title: 早岁孤露，苦读自立
+    date:
+      text: 少年时期，具体年代不详
+      precision: 未知
+    place: 吴郡
+    summary: 本传称吳郡人，少年行迹正史无载。通行说法谓其早年父母双亡，家贫苦读，属碑传笔记层事迹。
+    confidence: 存疑
+    dispute: 父母早亡与苦读事本传不载，出自周必大神道碑等碑传文献层，本次未实取原文，按通说存疑著录；本传可证者惟籍贯吴郡。
+    source_ids: [src-songshi-vol386]
+
+  # ── 阶段二：及第历职 ──────────────────────────────
+  - stage: 及第历职
+    stage_order: 3
+    title: 绍兴二十四年擢进士第
+    date:
+      text: "1154年"
+      year: 1154
+      precision: 精确
+    place: 临安
+    summary: 本传记紹興二十四年，擢進士第。时年二十九岁上下，此前屡困科场。
+    source_ids: [src-songshi-vol386]
+  - stage: 及第历职
+    stage_order: 4
+    title: 授户曹，监和剂局
+    date:
+      text: 约1154年起
+      year: 1154
+      precision: 约
+    place: ""
+    summary: 及第后初仕，本传记授戶曹，監和劑局。任职州郡与起讫年份本传皆无载。
+    confidence: 存疑
+    dispute: 户曹掾任职地点与监和剂局起讫年份正史不载，只能框定为及第后数年内。
+    source_ids: [src-songshi-vol386]
+  - stage: 及第历职
+    stage_order: 5
+    title: 隆兴元年迁正字，旋遭论罢奉祠
+    date:
+      text: "1163年起"
+      year: 1163
+      precision: 精确
+    place: 临安
+    summary: 本传记隆興元年遷正字，累遷著作佐郎，除吏部郎官。言者論其超躐，罷，奉祠——升迁过速遭弹击而去职。
+    source_ids: [src-songshi-vol386]
+  - stage: 及第历职
+    stage_order: 6
+    title: 起知处州，创义役、复通济堰
+    date:
+      text: 约1165—1167年之间
+      year: 1165
+      range_end: 1167
+      precision: 范围
+    place: 处州
+    summary: 起知處州，陛对论日力国力人力三事，上嘉纳。处民争役，为创义役，随家贫富输金买田助当役者，诏颁其法于诸路；又访故迹叠石筑防修复通济堰，置堤闸四十九所溉田二十万亩，民食其利——治郡实绩为南宋循吏典型。
+    confidence: 存疑
+    dispute: 义役与通济堰事本传详载，惟知处州起讫年份本传不系年，此处按乾道前期通说框定。
+    source_ids: [src-songshi-vol386]
+  - stage: 及第历职
+    stage_order: 7
+    title: 除礼部员外郎兼崇政殿说书，迁起居郎
+    date:
+      text: 约1167—1169年之间
+      year: 1167
+      range_end: 1169
+      precision: 范围
+    place: 临安
+    summary: 除禮部員外郎兼崇政殿說書。乾道令以绢计赃估价轻而论罪重，成大奏承平时绢匹不及千钱而估价过倍，上驚曰是陷民深文，遂增为四千而刑轻——以经济实情正刑法的名对。
+    confidence: 存疑
+    dispute: 除官次第本传明确，具体年份不系年，按乾道中期职历推定。
+    source_ids: [src-songshi-vol386]
+
+  # ── 阶段三：使金全节 ──────────────────────────────
+  - stage: 使金全节
+    stage_order: 8
+    title: 受命充金祈请国信使
+    date:
+      text: "1170年"
+      year: 1170
+      precision: 精确
+    place: 临安
+    summary: 隆興再講和，失定受書之禮，上嘗悔之。遷起居郎，假資政殿大學士，充金祈請國信使；國書專求陵寢蓋泛使也。上面諭受書事，成大乞併載書中，不從。《攬轡錄》开篇记乾道六年閏五月戊子被命，六月甲子出國門。
+    confidence: 存疑
+    dispute: 本传叙事不系年；乾道六年1170系年精确取自《攬轡錄》开篇原文（维基文库说郛本实取，来源 src-lanpeilu 已登记）。
+    source_ids: [src-songshi-vol386, src-lanpeilu]
+  - stage: 使金全节
+    stage_order: 9
+    title: 至燕山笏进受书疏，几死全节
+    date:
+      text: "1170年"
+      year: 1170
+      precision: 精确
+    place: 燕山
+    summary: 金迎使者慕成大名，至求巾幘效之。至燕山密草奏具言受書式懷之入；初進國書詞氣慷慨，金君臣方傾聽，成大忽奏曰兩朝既為叔侄而受書禮未稱臣有疏，搢笏出之。金主大駭曰此豈獻書處耶，左右以笏標起之，成大屹不動必欲書達。太子欲殺成大，越王止之，竟得全節而歸。
+    source_ids: [src-songshi-vol386]
+  - stage: 使金全节
+    stage_order: 10
+    title: 还除中书舍人，封还张说词头
+    date:
+      text: 约1171年
+      year: 1171
+      precision: 约
+    place: 临安
+    summary: 使還除中書舍人，奏论大理议刑递加一等非以严致平乃酷也，上稱為知言。張說除簽書樞密院事，成大當制，留詞頭七日不下，又上疏言之，說命竟寢——以外制抵制佞幸超擢。
+    confidence: 存疑
+    dispute: 除中书舍人与封还词头本传不系年，按使还之后通说推定。
+    source_ids: [src-songshi-vol386]
+
+  # ── 阶段四：帅桂帅蜀 ──────────────────────────────
+  - stage: 帅桂帅蜀
+    stage_order: 11
+    title: 知静江府，整饬广西盐政
+    date:
+      text: 约1173—1177年之间
+      year: 1173
+      range_end: 1177
+      precision: 范围
+    place: 静江府
+    summary: 知靜江府。廣西窘匱專藉鹽利，漕臣尽取之致增价抑配，成大入境曰利害有大於此乎，奏请裁抑漕司强取之数以宽郡县则科抑可禁，上從之；后有司议改客贩法，卒不易成大说——盐政决断为帅桂首政。
+    confidence: 存疑
+    dispute: 知静江府起讫本传不系年，按乾道末淳熙初通说框定。
+    source_ids: [src-songshi-vol386]
+  - stage: 帅桂帅蜀
+    stage_order: 12
+    title: 除敷文阁待制、四川制置使
+    date:
+      text: 约1177—1180年之间
+      year: 1177
+      range_end: 1180
+      precision: 范围
+    place: 成都
+    summary: 除敷文閣待制四川制置使，上賜度牒錢四十萬緡。在蜀表挂冠不住之名士孙松寿樊汉广之节，诏召不起，蜀士由是歸心；凡人才可用者悉致幕下用所長不拘小節，其傑然者露章薦之往往顯於朝位至二府。
+    confidence: 存疑
+    dispute: 制置四川起讫本传不系年，按淳熙初期通说框定；荐拔幕贤与陆游交谊的具体文本未实取。
+    source_ids: [src-songshi-vol386]
+  - stage: 帅桂帅蜀
+    stage_order: 13
+    title: 经画西南边防，禽斩王文才
+    date:
+      text: 约1177—1180年之间
+      year: 1177
+      range_end: 1180
+      precision: 范围
+    place: 黎州
+    summary: 疏言吐蕃青羌两犯黎州，臣当教阅将兵外修堡砦仍讲明教阅团结之法使人自为战三者非财不可。增战兵五千奏置路分都监，吐蕃入寇之路十有八悉筑栅分戍；白水砦将王文才私娶蠻女常導之寇邊，成大重赏檄群蠻使相疑貳，俄禽文才以獻即斬之。
+    confidence: 存疑
+    dispute: 边防事本传详载而不系年，并入制置四川任期框定。
+    source_ids: [src-songshi-vol386]
+
+  # ── 阶段五：参政与罢退 ────────────────────────────
+  - stage: 参政与罢退
+    stage_order: 14
+    title: 除权吏部尚书，拜参知政事两月罢
+    date:
+      text: 约1178年
+      year: 1178
+      precision: 约
+    place: 临安
+    summary: 召對，除權吏部尚書，拜參知政事。兩月，為言者所論，奉祠——执政仅两月即遭论罢，为其宦途顶点亦为转折点。
+    confidence: 存疑
+    dispute: 拜参与罢政年份本传不系年，通行系于淳熙五年1178。
+    source_ids: [src-songshi-vol386]
+  - stage: 参政与罢退
+    stage_order: 15
+    title: 起知明州，奏罢海物之献
+    date:
+      text: 约1180—1182年之间
+      year: 1180
+      range_end: 1182
+      precision: 范围
+    place: 明州
+    summary: 起知明州，奏罷海物之獻——罢贡品之扰为地方减负，是其一贯恤民作风。
+    confidence: 存疑
+    dispute: 知明州起讫本传不系年，按参政罢祠之后通说推定。
+    source_ids: [src-songshi-vol386]
+  - stage: 参政与罢退
+    stage_order: 16
+    title: 除端明殿学士，帅金陵振饥
+    date:
+      text: 约1182—1184年之间
+      year: 1182
+      range_end: 1184
+      precision: 范围
+    place: 金陵
+    summary: 除端明殿學士尋帥金陵。會歲旱奏移軍儲米二十萬振饑民減租米五萬；水賊徐五竊發號靜江大將軍捕而戮之。
+    confidence: 存疑
+    dispute: 帅金陵起讫本传不系年，按明州任后通说推定。
+    source_ids: [src-songshi-vol386]
+
+  # ── 阶段六：石湖终老 ──────────────────────────────
+  - stage: 石湖终老
+    stage_order: 17
+    title: 以病请闲，进资政殿学士，退居石湖
+    date:
+      text: 约1186年起
+      year: 1186
+      precision: 约
+    place: 石湖
+    summary: 以病請閑，進資政殿學士，再領洞霄宮。晚年退隐苏城西南石湖，自號石湖；通行系《四时田园杂兴》六十首于淳熙十三年（约1186）退居期间所作，田园诗至此集成。
+    confidence: 存疑
+    dispute: 归隐起始与田园杂兴创作年份本传及文库专页均不载，按淳熙十三年通说推定。
+    source_ids: [src-songshi-vol386]
+  - stage: 石湖终老
+    stage_order: 18
+    title: 绍熙三年加大学士，四年薨
+    date:
+      text: "1193年"
+      year: 1193
+      precision: 精确
+    place: 石湖
+    summary: 紹熙三年加大學士，四年薨（绍熙四年即1193年）。成大素有文名尤工於詩，自號石湖，有《石湖集》《攬轡錄》《桂海虞衡集》行於世。通行谓諡文穆。
+    confidence: 存疑
+    dispute: 卒年本传系年明确；谥文穆之说本传不载，出自周必大神道碑等碑传层，本次未实取，存疑著录。
+    source_ids: [src-songshi-vol386]
+
+works:
+  - work_id: si-shi-tian-yuan-za-xing-xuan-yi-mei-zi-jin-huang
+    title: 四时田园杂兴（选一）
+    alt_titles: [四時田園雜興]
+    genre: 七言绝句（田园组诗选段）
+    date:
+      text: 约1186年，退居石湖期间
+      year: 1186
+      precision: 约
+    place: 石湖
+    context: 组诗性质：通说共六十首分春日、晚春、夏日、秋日、冬日五组，为古代田园诗集大成之作。此首写江南仲夏农事风光，篱落无人而蜂蝶自忙。
+    attribution: 确凿
+    excerpt: 梅子金黄杏子肥，麦花雪白菜花稀。日长篱落无人过，唯有蜻蜓蛱蝶飞。
+    text_display: full
+    themes: [田园, 农事, 夏景]
+    influence: 梅子金黄杏子肥为田园组诗最传诵的开卷式画面之一，长期入选语文教材。
+    confidence: 存疑
+    dispute: 维基文库专页仅录六首且不标序号，六十首分五组的通说规模未逐条实取；系年按退居石湖通说。文本自繁体原文转写为简体，异文未深校。
+    source_ids: [src-shihuji]
+
+  - work_id: si-shi-tian-yuan-za-xing-xuan-er-zhou-chu-yun-tian
+    title: 四时田园杂兴（选二）
+    alt_titles: []
+    genre: 七言绝句（田园组诗选段）
+    date:
+      text: 约1186年，退居石湖期间
+      year: 1186
+      precision: 约
+    place: 石湖
+    context: 组诗中最著名的一首：昼耘夜绩写农家终岁劳作，童孙学种瓜以稚趣反衬生计之艰，白描到家。
+    attribution: 确凿
+    excerpt: 昼出耘田夜绩麻，村庄儿女各当家。童孙未解供耕织，也傍桑阴学种瓜。
+    text_display: full
+    themes: [田园, 农家儿女, 白描]
+    influence: 昼出耘田夜绩麻为国民级田园诗句，语文教材长期选目。
+    confidence: 存疑
+    dispute: 同上，组诗总规模与序号体系未逐条实取；文本转写异文未深校。
+    source_ids: [src-shihuji]
+
+  - work_id: si-shi-tian-yuan-za-xing-xuan-san-xin-zhu-chang-ni
+    title: 四时田园杂兴（选三）
+    alt_titles: []
+    genre: 七言绝句（田园组诗选段）
+    date:
+      text: 约1186年，退居石湖期间
+      year: 1186
+      precision: 约
+    place: 石湖
+    context: 秋日打稻场夜景：笑歌声里轻雷动，一夜连枷响到明，丰收之夜的声景写得欢腾有力，是组诗中少有的亮色。
+    attribution: 确凿
+    excerpt: 新筑场泥镜面平，家家打稻趁霜晴。笑歌声里轻雷动，一夜连枷响到明。
+    text_display: full
+    themes: [田园, 丰收, 秋景]
+    influence: 以声响写劳动场面田园诗名句。
+    confidence: 存疑
+    dispute: 同上，组诗总规模未实取；文本转写异文未深校。
+    source_ids: [src-shihuji]
+
+  - work_id: si-shi-tian-yuan-za-xing-xuan-si-cai-ling-xin-ku
+    title: 四时田园杂兴（选四）
+    alt_titles: []
+    genre: 七言绝句（田园组诗选段）
+    date:
+      text: 约1186年，退居石湖期间
+      year: 1186
+      precision: 约
+    place: 石湖
+    context: 血指流丹鬼质枯写采菱者劳损至极，近来湖面亦收租直斥赋税侵渔及于水面——田园组诗并非牧歌，批判锋芒在此。
+    attribution: 确凿
+    excerpt: 采菱辛苦废犁锄，血指流丹鬼质枯。无力买田聊种水，近来湖面亦收租！
+    text_display: full
+    themes: [田园, 苦役, 批判]
+    influence: 无力买田聊种水近来湖面亦收租为组诗社会批判面的代表作。
+    confidence: 存疑
+    dispute: 同上，组诗总规模未实取；文本转写异文未深校。
+    source_ids: [src-shihuji]
+
+  - work_id: zhou-qiao-shi-qing
+    title: 州桥
+    alt_titles: [州橋]
+    genre: 七言绝句（使金纪行）
+    date:
+      text: "1170年，乾道六年使金道经汴京"
+      year: 1170
+      precision: 精确
+    place: 汴京
+    context: 原注：南望朱雀门北望宣德楼皆旧御路也。使金纪行组诗之一：忍泪失声询使者几时真有六军来，借遗民之问写中原之望，语浅痛深。
+    attribution: 确凿
+    excerpt: 州桥南北是天街，父老年年等驾回。忍泪失声询使者，几时真有六军来！
+    text_display: full
+    themes: [使金, 遗民, 家国之痛]
+    influence: 使金纪行诗第一名篇，父老等驾回成为中原遗民意象的经典定格。
+    confidence: 存疑
+    dispute: 文本实取自石湖诗集四库本卷12，与四部丛刊本石湖居士诗集互见；个别字形版本或有异文，未深校。
+    source_ids: [src-shihuji]
+
+  - work_id: hui-tong-guan-wan-li-gu-chen
+    title: 会同馆
+    alt_titles: [㑹同館]
+    genre: 七言绝句（使金纪行）
+    date:
+      text: "1170年，乾道六年使金留馆燕山"
+      year: 1170
+      precision: 精确
+    place: 燕山会同馆
+    context: 原题注：燕山客馆也授馆之明日守吏微言有议留使人者。以苏武持节自况，致命之秋以身许国，与其廷争受书礼互为注脚。
+    attribution: 确凿
+    excerpt: 万里孤臣致命秋，此身何止一沤浮。提携汉节同生死，休问羝羊解乳不。
+    text_display: full
+    themes: [使金, 持节, 生死]
+    influence: 使金气节的自我写照，与本传全节而归的记载可互相印证。
+    confidence: 存疑
+    dispute: 文本实取自石湖诗集四库本卷12；转写异文未深校。
+    source_ids: [src-shihuji]
+
+  - work_id: heng-tang-nan-pu-chun-lai
+    title: 横塘
+    alt_titles: [橫塘]
+    genre: 七言绝句
+    date:
+      text: 创作年代不详，一般视为早期苏州时期作品
+      precision: 未知
+    place: 苏州横塘
+    context: 南浦春绿石桥朱塔，年年送客之地细雨垂杨，以淡笔写离情，是苏州横塘的经典题咏。
+    attribution: 确凿
+    excerpt: 南浦春来绿一川，石桥朱塔两依然。年年送客横塘路，细雨垂杨系画船。
+    text_display: full
+    themes: [送别, 江南水乡]
+    influence: 年年送客横塘路使横塘成为姑苏离别地标，后世方志多引。
+    confidence: 存疑
+    dispute: 文本实取自石湖诗集四库本卷03（石仓历代诗选卷174互见）；创作年份无考。
+    source_ids: [src-shihuji]
+
+  - work_id: cui-zu-xing
+    title: 催租行
+    alt_titles: [催租行（乐府体）]
+    genre: 乐府体古诗
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 里正敲门催租而农户慳囊仅三百钱，聊复偿君草鞋费，以诙谐写苛政，与姊妹篇后催租行同为悯农乐府名作。
+    attribution: 确凿
+    excerpt: 输租得钞官更催，踉跄里正敲门来。手持文书杂嗔喜，我亦来营醉归耳。床头悭囊大如拳，扑破正有三百钱。不堪与君成一醉，聊复偿君草鞋费。
+    text_display: full
+    themes: [悯农, 苛政, 讽喻]
+    influence: 与范成大后催租行并为南宋悯农诗双璧，上承张籍王建乐传统。
+    confidence: 存疑
+    dispute: 文本实取自石湖诗集四库本卷03；其后催租行在维基文库检索零命中未获原文，本卷不予摘引；转写异文未深校。
+    source_ids: [src-shihuji]
+
+  - work_id: lan-pei-lu
+    title: 揽辔录
+    alt_titles: [攬轡錄]
+    genre: 日记体行记
+    date:
+      text: "1170年，乾道六月使金往返途中所记"
+      year: 1170
+      precision: 精确
+    place: 使金沿途（泗州、汴京、相州、邯郸至燕山一线）
+    context: 使金日记，逐日记行程与北方风物遗民情状；开篇即系受命与出国门日期，为本卷使金系年的精确依据；入汴一段弥望悉荒墟之叹与州桥诗互证。
+    attribution: 确凿
+    excerpt: 乾道六年閏五月戊子，成大被命以資政殿大學士，與崇信節度使康諝，爲奉使大金國信使副。六月甲子，出國門。
+    text_display: excerpt
+    themes: [使金, 行记, 遗民]
+    influence: 与楼钥北行日录等同为乾道使金文献名品，本传列其行世著述之一。
+    confidence: 存疑
+    dispute: 文本实取自维基文库攬轡錄专页（说郛本系统，src-lanpeilu）；说郛本与他本文字或有出入。
+    source_ids: [src-lanpeilu]
+
+  - work_id: gui-hai-yu-heng-zhi
+    title: 桂海虞衡志
+    alt_titles: [桂海虞衡集（本传所称）]
+    genre: 地理博物杂记
+    date:
+      text: 约1173—1177年，帅桂林期间
+      year: 1173
+      range_end: 1177
+      precision: 范围
+    place: 静江府
+    context: 记广南西路山川物产风俗土贡之书，为研究宋代岭南民族与物产的第一手文献；本传作《桂海虞衡集》，与今通行书名微异。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [岭南, 博物, 方志]
+    influence: 宋代岭南风物的经典记录，后世方志类书多所援引。
+    confidence: 存疑
+    dispute: 本传仅记其行世而不载撰年；文本本次未实取，摘引须另行核验；书名桂海虞衡志与本传所称桂海虞衡集并存。
+    source_ids: [src-songshi-vol386]
+
+footprints:
+  - name: 吴郡
+    modern_name: 江苏省苏州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约1126年生，少年时期在此"
+      year: 1126
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    confidence: 存疑
+    dispute: 生年为推算值，见年谱首条 dispute。
+    source_ids: [src-songshi-vol386]
+  - name: 临安
+    modern_name: 浙江省杭州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1154年及第后历京官，至1178年拜参知政事两月罢
+      year: 1154
+      range_end: 1178
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-songshi-vol386]
+  - name: 处州
+    modern_name: 浙江省丽水市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1165—1167年起知处州，创义役修通济堰
+      year: 1165
+      range_end: 1167
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    confidence: 存疑
+    dispute: 任期年份据职历推定。
+    source_ids: [src-songshi-vol386]
+  - name: 燕山（使金行程终点）
+    modern_name: 北京市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1170年使金，渡淮经汴京相州邯郸至燕山，笏进受书疏"
+      year: 1170
+      precision: 精确
+    kind: 游历
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-songshi-vol386]
+  - name: 静江府
+    modern_name: 广西壮族自治区桂林市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1173—1177年知静江府，整饬广西盐政
+      year: 1173
+      range_end: 1177
+      precision: 范围
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    confidence: 存疑
+    dispute: 任期年份据职历推定。
+    source_ids: [src-songshi-vol386]
+  - name: 成都
+    modern_name: 四川省成都市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1177—1180年以敷文阁待制四川制置使驻成都
+      year: 1177
+      range_end: 1180
+      precision: 范围
+    kind: 任职
+    route_order: 6
+    memorial_only: false
+    confidence: 存疑
+    dispute: 任期年份据职历推定。
+    source_ids: [src-songshi-vol386]
+  - name: 明州
+    modern_name: 浙江省宁波市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1180—1182年知明州，奏罢海物之献
+      year: 1180
+      range_end: 1182
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任期年份据职历推定。
+    source_ids: [src-songshi-vol386]
+  - name: 金陵
+    modern_name: 江苏省南京市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1182—1184年端明殿学士帅金陵，移粟振饥
+      year: 1182
+      range_end: 1184
+      precision: 范围
+    kind: 任职
+    route_order: 8
+    memorial_only: false
+    confidence: 存疑
+    dispute: 任期年份据职历推定。
+    source_ids: [src-songshi-vol386]
+  - name: 石湖
+    modern_name: 江苏省苏州市石湖景区（苏州市郊）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1186年起退隐石湖，著四时田园杂兴，至1193年卒
+      year: 1186
+      range_end: 1193
+      precision: 范围
+    kind: 居住
+    route_order: 9
+    memorial_only: false
+    confidence: 存疑
+    dispute: 归隐起始年份按通说推定；卒地本传不载，按晚年归隐地推定。
+    source_ids: [src-songshi-vol386]
+
+relations:
+  - relation_type: 同僚
+    target_id: luyou
+    direction: 双向
+    period:
+      text: 约1177—1178年，范成大制置四川、陆游居成都期间
+      year: 1177
+      range_end: 1178
+      precision: 范围
+    evidence: 本传记其在蜀凡人才可用者悉致幕下用所长不拘小节其傑然者露章薦之；通行说法谓陆游此时居成都为府僚，两人诗歌唱和甚密，范去蜀后犹有寄怀之作。
+    confidence: 存疑
+    dispute: 二人成都交往的正史明文与唱和诗文本本次均未实取，幕府僚属细节据双方诗集通说，须核剑南诗稿与石湖诗集相关篇目后翻转。
+    source_ids: [src-luyou-ji]
+  - relation_type: 社群
+    target_id: yangwanli
+    direction: 双向
+    period:
+      text: 南宋中期并世，与杨万里齐名
+      year: 1154
+      range_end: 1193
+      precision: 范围
+    evidence: 通行文学史公论：尤袤、杨万里、范成大、陆游并称中兴四大诗人（又称南宋四大家），四人皆主江西而各自出新。
+    confidence: 存疑
+    dispute: 并称之说属后世文学史通说层，宋人原始文献中的并称文本本次未实取，暂按通说著录。
+    source_ids: [src-yangwanli-zhuan]
+  - relation_type: 挚友
+    target_id: jiangkui
+    direction: 双向
+    period:
+      text: 绍熙二年（1191）冬前后，姜夔载雪诣石湖
+      year: 1191
+      precision: 约
+    evidence: 姜夔暗香疏影二词自序（项目已于2026-08-25在四库本全览页实取）：辛亥之冬予载雪诣石湖，止既月，授简索句且征新声，作此两曲；石湖把玩不已，使工妓隶习之音节谐婉——范成大授简索句为白石名词的直接推手。
+    confidence: 确定
+    source_ids: [src-baishidaoren]
+
+reception:
+  - era: 同时代
+    evaluator: 《宋史》史臣论
+    quote: 成大致书北庭，几于见杀，卒不辱命。
+    text_display: excerpt
+    comment: 元修宋史论曰将范成大与刘珙王刚中等并列，许为有古大臣风烈，使金不辱命是其盖棺第一评价。
+    source_ids: [src-songshi-vol386]
+  - era: 同时代
+    evaluator: 金朝迎伴使节
+    quote: 金迎使者慕成大名，至求巾帻效之。
+    text_display: excerpt
+    comment: 本传所记敌国士人慕其文名乃至仿其衣冠，可见使金之前其诗名已播于北方。
+    source_ids: [src-songshi-vol386]
+  - era: 同时代
+    evaluator: 宋孝宗朝廷
+    quote: 上尝命陈俊卿择文士掌内制，俊卿以成大及张震对。
+    text_display: excerpt
+    comment: 本传所记朝廷以其为文士首选之一，孝宗朝掌制之望可知。
+    source_ids: [src-songshi-vol386]
+  - era: 历代批评
+    evaluator: 历代诗话选家综述
+    quote: ""
+    text_display: none
+    comment: 明清以来选家大体以清新温润概括石湖诗风，其田园绝句与使金纪行被视为宋诗两大名片；历代评语原文（诗话总集、四库提要等）须逐一实取后方可补引，本层暂作中立转述。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦其田园诗对诗经农事诗陶渊明田园传统的集成意义、使金纪行诗的爱国书写、以及石湖诗集版本源流；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 四时田园杂兴（昼出耘田夜绩麻、梅子金黄杏子肥等首）长期入选中小学语文教材，州桥亦常见于爱国主义诗文选本；教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中的范成大形象多为使金故事的戏剧化敷演，不作信史依据；网络传播集中于其田园名句与石湖胜迹话题，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-songshi-vol386, src-shihuji, src-lanpeilu, src-baishidaoren]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。18条年谱（6阶段）、10件作品（田园杂兴拆四选段）、9处足迹、3组关系（陆游/杨万里/姜夔）、7层接受史（含占位）。生平事实实取自维基文库宋史卷386范成大传；使金系年1170取自攬轡錄开篇（该来源待补登）；州桥/会同馆取自石湖诗集四库本卷12，催租行/横塘取自卷03，田园杂兴六首取自文库专页。后催租行文库零命中未摘引；谥文穆、早年孤露、组诗六十首规模均按存疑著录。"}
+    - {date: 2026-08-26, note: "收口修订：src-lanpeilu 已由主会话登记为有效，使金系年条与揽辔录作品条自 src-shihuji 迁移至 src-lanpeilu 引用。另注：本传原文作「致能」，通行作「至能」，字形异文并存。"}

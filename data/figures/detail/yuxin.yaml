@@ -1,0 +1,629 @@
+# 庾信全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 周书·卷41·列传第三十三·庾信传（维基文库实取） | 结论与置信 |
+# |---|---|---|
+# | 名号家世 | 庾信字子山南阳新野人也祖易齐徵士父肩吾梁散骑常侍中书令 | 确定 |
+# | 少年气象 | 幼而俊迈聪敏绝伦博览群书尤善春秋左氏传身长八尺腰带十围容止颓然有过人者 | 确定 |
+# | 东宫徐庾体 | 摛子陵及信并为抄撰学士父子在东宫出入禁闼恩礼莫与比隆既有盛才文并绮艳故世号为徐庾体焉当时后进竞相模范每有一文京都莫不传诵 | 确定 |
+# | 郢州与聘魏 | 累迁尚书度支郎中通直正员郎出为郢州别驾寻兼通直散骑常侍聘于东魏文章辞令盛为邺下所称还为东宫学士领建康令 | 职历确定；聘东魏年份本传不系年 |
+# | 朱雀航退兵 | 侯景作乱简文帝命信率宫中文武千余人营于朱雀航及景至信以众先退台城陷后信奔于江陵 | 确定 |
+# | 出使被留 | 及即位转右卫将军封武康县侯加散骑常侍来聘于我属大军南讨遂留长安 | 使魏被留为核心转折确定；使魏年份本传不载，从哀江南赋序中兴道销穷于甲戌（承圣三年554）推定为约554 |
+# | 江陵平后 | 江陵平拜使持节抚军将军右金紫光禄大夫大都督寻进车骑大将军仪同三司 | 确定 |
+# | 北周历官 | 孝闵帝践阼封临清县子邑五百户除司水下大夫出为弘农郡守迁骠骑大将军开府仪同三司司宪中大夫进爵义城县侯俄拜洛州刺史信多识旧章为政简静吏民安之 | 确定；各任职具体年份本传不系 |
+# | 陈请还国 | 时陈氏与朝廷通好南北流寓之士各许还其旧国陈氏乃请王褒及信等十数人高祖唯放王克殷不害等信及褒留而不遣 | 确定；通好年份本传不系 |
+# | 优礼与交游 | 世宗高祖并雅好文学信特蒙恩礼至于赵滕诸王周旋款至有若布衣之交群公碑志多相请托唯王褒颇与信相埒自余文人莫有逮者 | 确定 |
+# | 乡关之思 | 信虽位望通显常有乡关之思乃作哀江南赋以致其意云 | 确定；作赋年份无定年 |
+# | 卒 | 大象初以疾去职卒隋文帝深悼之赠本官加荆淮二州刺史子立嗣 | 去职确定；卒年本传不系，通行隋开皇元年（581）说 |
+# | 一传两评 | 唯王褒庾信奇才秀出牢笼于一代；然则子山之文发源于宋末盛行于梁季其体以淫放为本其词以轻险为宗……若以庾氏方之斯又词赋之罪人也 | 确定；唐初史臣褒贬并存 |
+# | 作品文本 | 哀江南赋并序（周书本传全文收录）枯树赋小园赋寄王琳取维基文库公版全文实取；拟咏怀选段（其四其七其十一其十八其二十六）取中华诗库庾信集页文本 | 通行本层；异文未深校善本，标存疑说明 |
+# | 杜甫评语 | 庾信文章老更成凌云健笔意纵横（戏为六绝句其一）、庾信平生最萧瑟暮年诗赋动江关（咏怀古迹五首其一）实取自维基文库全唐诗卷227卷230 | 确定（来源 src-quantangshi-vol227/vol230 已登记） |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: yuxin
+
+profile:
+  courtesy_name: 子山
+  art_name: ""
+  aliases: []
+  gender: 男
+  ethnicity: ""
+  ancestry: 南阳新野
+  birthplace: 南阳新野（籍贯；实际出生地无确载）
+  death_place: 长安（今陕西西安）
+  offices: [湘东国常侍, 安南府参军, 抄撰学士, 尚书度支郎中, 通直正员郎, 郢州别驾, 通直散骑常侍（聘东魏）, 东宫学士, 领建康令, 御史中丞, 右卫将军, 散骑常侍, 抚军将军, 右金紫光禄大夫, 大都督, 车骑大将军仪同三司, 司水下大夫, 弘农郡守, 骠骑大将军开府仪同三司, 司宪中大夫, 洛州刺史, 司宗中大夫]
+  fields: [文学]
+  roles: [诗人, 辞赋家]
+  summary: 南北朝文学的集大成者：前期与徐摛父子竞写绮艳、号「徐庾体」而风靡梁代宫廷；侯景之乱台城奔散、出使西魏适逢江陵之变被留长安，后半生位望通显而常有乡关之思。「庾信文章老更成」「暮年诗赋动江关」——由绮艳到苍凉的蜕变，成为中国文学史上风格转型的经典范式。
+
+timeline:
+  # ── 阶段一：新野世族与东宫徐庾体 ──────────────────
+  - stage: 新野世族与东宫徐庾体
+    stage_order: 1
+    title: 生于南阳新野文学世家
+    date:
+      text: 约513年
+      year: 513
+      precision: 约
+    place: 南阳新野
+    summary: 庾信生于南阳新野世家：祖易为齐徵士，父肩吾官梁散骑常侍、中书令。生年系通行说法，据卒年开皇元年（581）与享年六十九倒推闭合，正史无明文。
+    confidence: 存疑
+    dispute: 生年513为学界通行推算（卒年581减享年六十九），周书本传不载生年。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 新野世族与东宫徐庾体
+    stage_order: 2
+    title: 幼而俊迈，尤善左氏传
+    date:
+      text: 少年时期，具体年代不详
+      precision: 未知
+    place: ""
+    summary: 本传记其幼而俊迈聪敏绝伦，博览群书尤善春秋左氏传；身长八尺腰带十围，容止颓然有过人者——体貌魁伟而学有根柢，为其出入宫廷的资本。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 新野世族与东宫徐庾体
+    stage_order: 3
+    title: 起家湘东国常侍
+    date:
+      text: 约530年代前期，具体年份不详
+      year: 530
+      range_end: 535
+      precision: 约
+    place: 江陵一带
+    summary: 起家湘东国常侍，转安南府参军，仕途起于湘东王萧绎（后来的梁元帝）藩国系统。
+    confidence: 存疑
+    dispute: 起家年份本传不系年，系据萧绎藩国时期推定。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 新野世族与东宫徐庾体
+    stage_order: 4
+    title: 与徐陵并为抄撰学士，世号徐庾体
+    date:
+      text: 约531—548年之间（萧纲立为太子至侯景乱前）
+      year: 531
+      range_end: 548
+      precision: 范围
+    place: 建康东宫
+    summary: 父肩吾为梁太子中庶子掌管记，东海徐摛为左卫率，摛子徐陵及信并为抄撰学士。父子在东宫出入禁闼恩礼莫与比隆；既有盛才文并绮艳，故世号为徐庾体焉——宫廷绮艳诗风的代表品牌由此定型。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 新野世族与东宫徐庾体
+    stage_order: 5
+    title: 每有一文，京都莫不传诵
+    date:
+      text: 东宫时期
+      year: 531
+      range_end: 548
+      precision: 范围
+    place: 建康
+    summary: 当时后进竞相模范，每有一文京都莫不传诵——庾信是梁代文坛真正的流量中心，徐庾体即当日最时髦的写作范式。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 新野世族与东宫徐庾体
+    stage_order: 6
+    title: 出为郢州别驾，兼通直散骑常侍聘于东魏
+    date:
+      text: 约梁大同年间（535—546）
+      year: 535
+      range_end: 546
+      precision: 范围
+    place: 郢州、邺下
+    summary: 累迁尚书度支郎中、通直正员郎，出为郢州别驾；寻兼通直散骑常侍聘于东魏，文章辞令盛为邺下所称——北方文坛亦为之倾倒。
+    confidence: 存疑
+    dispute: 聘东魏为庾信首次使北，本传不系年，诸谱系推定不一，此处框定在大同年间。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 新野世族与东宫徐庾体
+    stage_order: 7
+    title: 还为东宫学士，领建康令
+    date:
+      text: 聘魏归来后，约547年前后
+      year: 547
+      precision: 约
+    place: 建康
+    summary: 自邺下还朝，还为东宫学士领建康令，兼京县长官与东宫文学之任，声望臻于顶点——两年后侯景之乱即至。
+    confidence: 存疑
+    dispute: 还朝年份系按聘魏归国与侯景乱的间隔推定。
+    source_ids: [src-zhoushu-vol41]
+
+  # ── 阶段二：侯景之乱台城奔散 ──────────────────────
+  - stage: 侯景之乱台城奔散
+    stage_order: 8
+    title: 奉命守朱雀航，以众先退
+    date:
+      text: "548年（太清二年）"
+      year: 548
+      precision: 精确
+    place: 建康朱雀航
+    summary: 侯景作乱，简文帝命信率宫中文武千余人营于朱雀航；及景至，信以众先退。宫廷文人临阵溃退，成为他终身难以洗刷的一笔，也是绮艳文风与乱世武备对照的著名场景。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 侯景之乱台城奔散
+    stage_order: 9
+    title: 台城陷，奔于江陵
+    date:
+      text: "549年（太清三年）"
+      year: 549
+      precision: 精确
+    place: 建康至江陵
+    summary: 台城陷后信奔于江陵，投依拥兵上游的湘东王萧绎。梁代宫廷的锦绣岁月至此崩解，庾信的人生自此折向漂泊。
+    source_ids: [src-zhoushu-vol41]
+
+  # ── 阶段三：出使西魏与江陵之变被留 ────────────────
+  - stage: 出使西魏与江陵之变被留
+    stage_order: 10
+    title: 元帝承制除御史中丞，即位转右卫将军
+    date:
+      text: 552—553年之间
+      year: 552
+      range_end: 553
+      precision: 范围
+    place: 江陵
+    summary: 梁元帝承制除御史中丞，及即位转右卫将军封武康县侯加散骑常侍——乱后重建的江陵小朝廷中文武要职集于一身。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 出使西魏与江陵之变被留
+    stage_order: 11
+    title: 来聘于西魏，属大军南讨，遂留长安
+    date:
+      text: 约554年（承圣三年，岁在甲戌）
+      year: 554
+      precision: 约
+    place: 长安
+    summary: 加散骑常侍来聘于西魏；属大军南讨遂留长安——出使之日恰逢西魏发兵攻江陵，使命未成而故国将倾，从此被扣留北地。此为本卷核心转折：哀江南赋序自纪华阳奔命有去无归中兴道销穷于甲戌，甲戌即承圣三年。
+    confidence: 存疑
+    dispute: 使魏年份本传不系年，此处据哀江南赋序甲戌干支与本传叙事次序互证推为554年；亦有学者系于553年。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 出使西魏与江陵之变被留
+    stage_order: 12
+    title: 江陵平，梁亡；西魏授抚军将军进车骑大将军
+    date:
+      text: 554—555年之间
+      year: 554
+      range_end: 555
+      precision: 范围
+    place: 长安
+    summary: 江陵平，元帝遇害，梁室名存实亡；庾信身为梁使而故国已灭。西魏拜使持节抚军将军右金紫光禄大夫大都督，寻进车骑大将军仪同三司——以敌国之官荣羁旅之身，屈仕与乡关之思的终身矛盾自此开始。
+    source_ids: [src-zhoushu-vol41]
+
+  # ── 阶段四：北周优礼与高位 ────────────────────────
+  - stage: 北周优礼与高位
+    stage_order: 13
+    title: 孝闵帝践阼，封临清县子，除司水下大夫
+    date:
+      text: "557年"
+      year: 557
+      precision: 精确
+    place: 长安
+    summary: 北周孝闵帝践阼，封临清县子邑五百户除司水下大夫——周室代魏，庾信又转而为周臣，累朝易帜而其身愈留。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 北周优礼与高位
+    stage_order: 14
+    title: 出为弘农郡守
+    date:
+      text: 约557—560年之间
+      year: 557
+      range_end: 560
+      precision: 范围
+    place: 弘农
+    summary: 出为弘农郡守，第一次外放牧民，地当关河要冲。
+    confidence: 存疑
+    dispute: 任郡守的具体起讫年份本传不系，系据职迁次第推定。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 北周优礼与高位
+    stage_order: 15
+    title: 迁骠骑大将军开府仪同三司机宪中大夫，俄拜洛州刺史
+    date:
+      text: 约560—565年之间
+      year: 560
+      range_end: 565
+      precision: 范围
+    place: 长安、洛州
+    summary: 迁骠骑大将军开府仪同三司机宪中大夫进爵义城县侯，俄拜洛州刺史。信多识旧章为政简静吏民安之——文人的治理能力获得正面评价，官至开府仪同。
+    confidence: 存疑
+    dispute: 各职迁转年份本传不系，此处按北周前期职历次第框定。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 北周优礼与高位
+    stage_order: 16
+    title: 陈氏请还流人，高祖唯放王克殷不害，信留而不遣
+    date:
+      text: 约562年前后（陈周通好之际）
+      year: 562
+      precision: 约
+    place: 长安
+    summary: 时陈氏与朝廷通好南北流寓之士各许还其旧国，陈氏乃请王褒及信等十数人；高祖唯放王克殷不害等，信及褒留而不遣——归国的唯一窗口开启又关闭，乡关之思自此绝望化，暮年作品的底色由此铸定。
+    confidence: 存疑
+    dispute: 陈周通好及放还事本传不系年，学界系于陈文帝天嘉年间，具体年份有异说。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 北周优礼与高位
+    stage_order: 17
+    title: 征为司宗中大夫；赵滕诸王有若布衣之交
+    date:
+      text: 约565年以后
+      year: 565
+      precision: 约
+    place: 长安
+    summary: 寻徵为司宗中大夫。世宗高祖并雅好文学信特蒙恩礼，至于赵滕诸王周旋款至有若布衣之交；群公碑志多相请托，唯王褒颇与信相埒自馀文人莫有逮者——北朝文坛第一人的地位确立。
+    source_ids: [src-zhoushu-vol41]
+
+  # ── 阶段五：暮年哀思与开皇卒 ──────────────────────
+  - stage: 暮年哀思与开皇卒
+    stage_order: 18
+    title: 常有乡关之思，乃作哀江南赋以致其意
+    date:
+      text: 约578—579年之间（暮年，无定年）
+      year: 578
+      range_end: 579
+      precision: 约
+    place: 长安
+    summary: 信虽位望通显常有乡关之思，乃作哀江南赋以致其意。序自言信年始二毛即逢丧乱藐是流离至于暮齿——追叙家世、梁亡与羁旅三大主题的千古典范在此完成，日暮途远人间何世成为乱世士人的共同心声。
+    confidence: 存疑
+    dispute: 哀江南赋创作年份无定年，通说系于入北晚年（约578—579）；亦有更早成篇说。
+    source_ids: [src-zhoushu-vol41, src-yuzishanji]
+  - stage: 暮年哀思与开皇卒
+    stage_order: 19
+    title: 大象初，以疾去职
+    date:
+      text: "579年（大象元年）"
+      year: 579
+      precision: 精确
+    place: 长安
+    summary: 大象初以疾去职，致仕结束近三十年的北朝仕宦。
+    source_ids: [src-zhoushu-vol41]
+  - stage: 暮年哀思与开皇卒
+    stage_order: 20
+    title: 卒；隋文帝深悼之，赠本官加荆淮二州刺史
+    date:
+      text: 约581年（隋开皇元年，通行说）
+      year: 581
+      precision: 约
+    place: 长安
+    summary: 卒。隋文帝深悼之赠本官加荆淮二州刺史，子立嗣。身历四朝（梁西魏北周隋）而终不得归，卒年距隋文帝受禅仅数月，恰是一个南北分裂时代落幕前的谢幕者。
+    confidence: 存疑
+    dispute: 卒年周书本传不系（仅言大象初去职后卒），通行从北史系统隋开皇元年（581）说；享年六十九与生年513闭合。
+    source_ids: [src-zhoushu-vol41]
+
+works:
+  - work_id: ai-jiang-nan-fu-bing-xu
+    title: 哀江南赋并序
+    alt_titles: [哀江南赋]
+    genre: 骈赋（并序）
+    date:
+      text: 约578—579年之间，暮年所作，无定年
+      year: 578
+      range_end: 579
+      precision: 约
+    place: 长安
+    context: 以赋体追叙庾氏家世、梁代兴亡与自己出使被留的经历，三日哭于都亭三年囚于别馆写尽遗臣之痛；周书本传全文收录并明言乃作哀江南赋以致其意。
+    attribution: 确凿
+    excerpt: 日暮途远，人间何世。将军一去，大树飘零；壮士不还，寒风萧瑟。……天道周星，物极不反。傅燮之但悲身世，无所求生；袁安之每念王室，自然流涕。
+    text_display: excerpt
+    themes: [乡关之思, 家国兴亡, 骈文巅峰]
+    influence: 中国辞赋史的巅峰之作与六朝骈文的压卷文本；日暮途远人间何世、穷者欲达其言劳者须歌其事成为千古名句，杜甫暮年诗赋动江关即指此赋一路的晚年创作。
+    confidence: 确定
+    source_ids: [src-zhoushu-vol41, src-yuzishanji]
+
+  - work_id: ku-shu-fu
+    title: 枯树赋
+    alt_titles: []
+    genre: 骈赋
+    date:
+      text: 一般系于入北以后，具体年份不详
+      precision: 未知
+    place: 长安
+    context: 假殷仲文顾庭槐之叹起兴，以树木之移植摧折喻羁旅之士的摇落飘零；结尾桓大司马昔年种柳今看摇落的慨叹，是六朝文中传诵最广的段落之一。
+    attribution: 确凿
+    excerpt: 昔年种柳，依依汉南；今看摇落，凄怆江潭。树犹如此，人何以堪！
+    text_display: excerpt
+    themes: [摇落之悲, 羁旅, 托物言志]
+    influence: 树犹如此人何以堪化用桓温故事而成为汉语中感叹生命流逝的通用语汇；此赋与哀江南赋并为其晚年赋作双璧。
+    confidence: 确定
+    source_ids: [src-yuzishanji]
+
+  - work_id: xiao-yuan-fu
+    title: 小园赋
+    alt_titles: []
+    genre: 骈赋
+    date:
+      text: 一般系于入北后期，具体年份不详
+      precision: 未知
+    place: 长安
+    context: 咏长安城中数亩敝庐，以蜗角蚊睫又足相容者的自嘲写羁旅者退守心灵一隅的姿态；一寸二寸之鱼三竿两竿之竹的闲淡笔墨背后，是山崩川竭冰碎瓦裂的家国之痛。
+    attribution: 确凿
+    excerpt: 一寸二寸之鱼，三竿两竿之竹；云气荫于丛蓍，金精养于秋菊……落叶半床，狂花满屋；名为野人之家，是谓愚公之谷。
+    text_display: excerpt
+    themes: [隐逸自适, 乡关之思, 骈文小品]
+    influence: 与枯树赋并称的晚年名赋；以极简之景写极深之悲的笔法为后世园林书写与闲适散文开辟了路径。
+    confidence: 确定
+    source_ids: [src-yuzishanji]
+
+  - work_id: ni-yong-huai-qi-qi-yu-guan-duan-yin-xin
+    title: 拟咏怀二十七首·其七（榆关断音信）
+    alt_titles: [拟咏怀·榆关断音信]
+    genre: 五言古诗
+    date:
+      text: 入北以后所作，具体年份不详
+      precision: 未知
+    place: 长安
+    context: 组诗二十七首为庾信暮年诗的代表，此首以闺中思妇口吻自喻北地羁臣：故国音书断绝，恨心终不歇而红颜无复多。
+    attribution: 确凿
+    excerpt: 榆关断音信，汉使绝经过。胡笳落泪曲，羌笛断肠歌。纤腰减束素，别泪损横波。恨心终不歇，红颜无复多。枯木期填海，青山望断河。
+    text_display: full
+    themes: [乡关之思, 音书断绝, 香草美人自喻]
+    influence: 拟咏怀组诗被视为上承阮籍咏怀的典范；枯木期填海青山望断河以不可能之事写不绝之望，是其晚期诗风的标本句。
+    confidence: 确定
+    source_ids: [src-yuzishanji]
+
+  - work_id: ni-yong-huai-qi-shi-yi-yao-luo-qiu-wei-qi
+    title: 拟咏怀二十七首·其十一（摇落秋为气）
+    alt_titles: [拟咏怀·摇落秋为气]
+    genre: 五言古诗
+    date:
+      text: 入北以后所作，具体年份不详
+      precision: 未知
+    place: 长安
+    context: 哀悼江陵之变的挽歌：天亡遭愤战日蹙值愁兵写梁室覆亡，眼前一杯酒谁论身后名则以反讽收束，痛感乱世中及时行乐与身后之名两皆虚妄。
+    attribution: 确凿
+    excerpt: 摇落秋为气，凄凉多怨情。啼枯湘水竹，哭坏杞梁城。……楚歌饶恨曲，南风多死声。眼前一杯酒，谁论身后名。
+    text_display: excerpt
+    themes: [亡国之痛, 秋气悲怀, 身后之名]
+    influence: 眼前一杯酒谁论身后名为历代选家激赏的名联，可见庾信晚年由绮丽入苍劲的典型转折。
+    confidence: 确定
+    source_ids: [src-yuzishanji]
+
+  - work_id: ni-yong-huai-qi-si-chu-cai-cheng-jin-yong
+    title: 拟咏怀二十七首·其四（楚材称晋用）
+    alt_titles: [拟咏怀·楚材称晋用]
+    genre: 五言古诗
+    date:
+      text: 入北以后所作，具体年份不详
+      precision: 未知
+    place: 长安
+    context: 连用楚材晋用、羁旅寓卫等典故自况北仕的尴尬：被用而非所愿，安齐而独未安；结句唯彼穷途恸知余行路难直承阮籍穷途之哭。
+    attribution: 确凿
+    excerpt: 楚材称晋用，秦臣即赵冠。离宫延子产，羁旅接陈完。寓卫非所寓，安齐独未安。雪泣悲去鲁，凄然忆相韩。唯彼穷途恸，知余行路难。
+    text_display: full
+    themes: [羁臣之痛, 用典如己出, 上承阮籍]
+    influence: 是理解庾信屈仕北朝心态的第一手文本；典故密度与情感强度的结合为其晚期五古的代表性面目。
+    confidence: 确定
+    source_ids: [src-yuzishanji]
+
+  - work_id: ni-yong-huai-qi-shi-ba-xun-si-wan-hu-hou
+    title: 拟咏怀二十七首·其十八（寻思万户侯）
+    alt_titles: [拟咏怀·寻思万户侯]
+    genre: 五言古诗
+    date:
+      text: 入北以后所作，具体年份不详
+      precision: 未知
+    place: 长安
+    context: 夜半愁生而琴书满床，虽言梦蝴蝶定自非庄周——明知旷达不可得而强学旷达，乐天知命何时能不忧的自问是其精神困境的白描。
+    attribution: 确凿
+    excerpt: 寻思万户侯，中夜忽然愁。琴声遍屋里，书卷满床头。虽言梦蝴蝶，定自非庄周。……露泣连珠下，萤飘碎火流。乐天乃知命，何时能不忧。
+    text_display: excerpt
+    themes: [中夜之愁, 庄周之辨, 知命之难]
+    influence: 残月如新月新秋似旧秋一类回环句式，显示其对诗歌语言精度的极致追求，下启唐代律诗的对仗锤炼。
+    confidence: 确定
+    source_ids: [src-yuzishanji]
+
+  - work_id: ni-yong-huai-qi-er-shi-liu-xiao-tiao-ting-zhang-yuan
+    title: 拟咏怀二十七首·其二十六（萧条亭障远）
+    alt_titles: [拟咏怀·萧条亭障远]
+    genre: 五言古诗
+    date:
+      text: 入北以后所作，具体年份不详
+      precision: 未知
+    place: 长安
+    context: 关塞风尘的边地意象与历史送别的叠印：秋风别苏武寒水送荆轲，谁言气盖世晨起帐中歌——以项羽垓下之歌收束，写尽英雄末路与羁臣无归的双重悲凉。
+    attribution: 确凿
+    excerpt: 萧条亭障远，凄惨风尘多。关门临白狄，城影入黄河。秋风别苏武，寒水送荆轲。谁言气盖世，晨起帐中歌。
+    text_display: full
+    themes: [边塞意象, 历史送别, 英雄末路]
+    influence: 边塞景物入抒情旧题的写法被视为唐人边塞诗的先声之一；此首亦是庾信融合南朝技巧与北地气象的直观样本。
+    confidence: 确定
+    source_ids: [src-yuzishanji]
+
+  - work_id: ji-wang-lin
+    title: 寄王琳
+    alt_titles: []
+    genre: 五言绝句（早期五绝）
+    date:
+      text: 王琳卒（573）前，入北期间，具体年份不详
+      year: 557
+      range_end: 573
+      precision: 范围
+    place: 长安
+    context: 写给仍奉梁正朔、拥兵长江中游抗陈的将领王琳。故国信使稀疏之际得万里来书，独下千行泪——私人情谊承载的是对梁室的最后忠诚。
+    attribution: 确凿
+    excerpt: 玉关道路远，金陵信使疏。独下千行泪，开君万里书。
+    text_display: full
+    themes: [故国之忠, 万里书信, 泪]
+    influence: 二十字的绝唱，被视为早期五言绝句成熟的标志之作；独下千行泪开君万里书的对照结构为后世尺素题材的经典原型。
+    confidence: 确定
+    source_ids: [src-yuzishanji]
+
+footprints:
+  - name: 南阳新野
+    modern_name: 河南省新野县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约513年生于此（籍贯地；实际出生地无确载）
+      year: 513
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 本传仅记南阳新野人，实际出生地无载；按籍贯地著录并标注推断。
+    source_ids: [src-zhoushu-vol41]
+  - name: 建康
+    modern_name: 江苏省南京市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约531—549年在东宫任抄撰学士东宫学士领建康令，至台城陷奔走
+      year: 531
+      range_end: 549
+      precision: 范围
+    kind: 居住
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-zhoushu-vol41]
+  - name: 郢州
+    modern_name: 湖北省武汉市（梁郢州治江夏）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 聘魏前任郢州别驾，具体年份不详
+      precision: 未知
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任郢州别驾年份本传不系，是否实际赴任亦无旁证，按职历著录。
+    source_ids: [src-zhoushu-vol41]
+  - name: 邺下
+    modern_name: 河北省临漳县（东魏都城邺）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约梁大同年间聘于东魏，文章辞令盛为邺下所称
+      year: 535
+      range_end: 546
+      precision: 范围
+    kind: 游历
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 聘魏年份无定年，此处框定在大同年间。
+    source_ids: [src-zhoushu-vol41]
+  - name: 江陵
+    modern_name: 湖北省荆州市荆州区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 549年台城陷后奔于江陵，历任御史中丞右卫将军，554年自江陵出使西魏
+      year: 549
+      range_end: 554
+      precision: 范围
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-zhoushu-vol41]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 554年使魏被留居此，历仕西魏北周，约581年终老于此
+      year: 554
+      range_end: 581
+      precision: 范围
+    kind: 谪迁
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-zhoushu-vol41]
+  - name: 弘农
+    modern_name: 河南省灵宝市（北周弘农郡）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约557—560年间出为弘农郡守
+      year: 557
+      range_end: 560
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任郡守起讫年份据职迁次第推定。
+    source_ids: [src-zhoushu-vol41]
+  - name: 洛州
+    modern_name: 河南省洛阳市（北周洛州治所说）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约560—565年间俄拜洛州刺史，为政简静吏民安之
+      year: 560
+      range_end: 565
+      precision: 范围
+    kind: 任职
+    route_order: 8
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 拜洛州刺史年份本传不系；北周洛州治所从洛阳说，另有异说待考。
+    source_ids: [src-zhoushu-vol41]
+
+relations:
+  - relation_type: 思想影响
+    target_id: dufu
+    direction: 单向
+    period:
+      text: 杜甫论庾信诗（约761—767年间作戏为六绝句与咏怀古迹）
+      year: 761
+      range_end: 767
+      precision: 约
+    evidence: 杜甫戏为六绝句其一：庾信文章老更成，凌云健笔意纵横。今人嗤点流传赋，不觉前贤畏后生；咏怀古迹五首其一：羯胡事主终无赖，词客哀时且未还。庾信平生最萧瑟，暮年诗赋动江关——并以词客哀时自况，两联均实取自维基文库全唐诗卷227卷230。
+    source_ids: [src-quantangshi-vol227, src-quantangshi-vol230]
+
+reception:
+  - era: 同时代
+    evaluator: 北周皇室（《周书》本传所记）
+    quote: 世宗、高祖并雅好文学，信特蒙恩礼。至于赵、滕诸王，周旋款至，有若布衣之交。群公碑志，多相请托。
+    text_display: excerpt
+    comment: 本传直书庾信在北周的礼遇之隆：帝王雅好文学而特蒙恩礼，宗王与之布衣之交，碑志文字争相请托——同时代的接受以优礼与文名垄断为特征。滕王宇文逌编庾子山集并作序盛赞其文，本次未能于网络公版全文库实取该序原文，暂不引录，待核补。
+    source_ids: [src-zhoushu-vol41]
+  - era: 历代批评
+    evaluator: 唐修《周书》史臣（令狐德棻）
+    quote: 唯王褒、庾信奇才秀出，牢笼于一代。……然则子山之文，发源于宋末，盛行于梁季。其体以淫放为本，其词以轻险为宗。……若以庾氏方之，斯又词赋之罪人也。
+    text_display: excerpt
+    comment: 一传之内毁誉并存：既承认其牢笼一代的文坛地位，又沿杨广（斥为文妖之先声）一路斥其绮艳为词赋之罪人——这一褒贬张力本身构成庾信接受史的起点，也折射唐初对齐梁文风的官方清算立场。
+    source_ids: [src-zhoushu-vol41]
+  - era: 历代批评
+    evaluator: 杜甫
+    quote: 庾信文章老更成，凌云健笔意纵横。今人嗤点流传赋，不觉前贤畏后生。／庾信平生最萧瑟，暮年诗赋动江关。
+    text_display: excerpt
+    comment: 分别出自戏为六绝句其一与咏怀古迹五首其一（实取自维基文库全唐诗卷227卷230）。前者为庾信晚年风格翻案定谳，后者以萧瑟暮年与动江关注入身世共鸣——杜甫并在咏怀古迹中以词客哀时且未还自比庾信。此两联奠定了此后千年评价的主基调。
+    confidence: 确定
+    source_ids: [src-quantangshi-vol227, src-quantangshi-vol230]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究的共识性框架为：庾信是南北文风融合的集大成者——以南朝的形式技巧承载北地的苍凉经验，前期绮艳与后期老成的分期、徐庾体与宫体诗的关系、乡关之思的主题学与哀江南赋的史学价值为主要议题；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 哀江南赋序与小园赋枯树赋选段长期见于大学及中学语文读本，日暮途远人间何世、树犹如此人何以堪进入日常语言；庾信文章老更成作为文学史成语广泛流通。教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中庾信形象多为南朝宫廷与南北交聘故事的点缀，缺乏可靠专门作品可引；网络传播集中于其暮年名句与徐庾体话题，暂不作信史依据著录。
+    source_ids: []
+
+sources_used: [src-zhoushu-vol41, src-yuzishanji, src-quantangshi-vol227, src-quantangshi-vol230]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "收口修订：src-zhoushu-vol41、src-yuzishanji 翻转为有效；杜甫两联挂新增登记的 src-quantangshi-vol227/vol230（relations 思想影响→dufu 与 reception 均已挂接）。"}
+    - {date: 2026-08-26, note: "初版。20条年谱（5阶段）、9件作品（含拟咏怀拆5首选段）、8处足迹、1组关系（思想影响→dufu单向，evidence为全唐诗实取诗句）、6层接受史。生平全部实取自维基文库周书卷41庾信传；哀江南赋并序枯树赋小园赋寄王琳经维基文库公版全文实取；拟咏怀选段经中华诗库庾信集页文本实取；杜甫两联经维基文库全唐诗卷227卷230实取。"}

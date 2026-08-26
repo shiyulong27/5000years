@@ -1,0 +1,563 @@
+# 陈子昂全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 旧唐书·文苑中卷190(J) | 新唐书·卷107(X) | 结论与置信 |
+# |---|---|---|---|
+# | 家世 | 梓州射洪人，家世富豪 | 其先居新城，六世祖太乐齐时为郡司马；父元敬岁饥出粟万石赈乡里 | 确定 |
+# | 发愤读书 | 独苦节读书尤善属文 | 十八未知书，以富家子尚气决弋博自如；入乡校感悔即痛修饬 | 确定(X详J略) |
+# | 感遇诗与王适评 | 初为感遇诗三十首，王适惊曰此子必为天下文宗 | 为感遇诗三十八章，王适曰是必为海内文宗乃请交 | 确定；篇数两书异文(30/38)，今传本38首 |
+# | 及第与诣阙上书 | 举进士，会高宗崩灵驾将还长安，诣阙上书盛陈东都形胜 | 文明初举进士，高宗崩将迁梓宫长安，盛言东都胜垲可营山陵 | 确定(684前后) |
+# | 初官 | 则天召见奇其对拜麟台正字 | 武后奇其才召见金华殿擢麟台正字 | 确定 |
+# | 谏雅州讨生羌 | 上书七验谏止 | 同记七验 | 确定 |
+# | 迁转 | 再转右拾遗，数上疏陈事词皆典美 | 俄迁右卫胄曹参军；周受命上受命颂；母丧去官服终擢右拾遗 | 确定；职序两书叙述互异 |
+# | 征西北蕃随乔知之 | 不载 | 不载 | 两唐书本传均不载；出自卢藏用陈氏别传系统（来源未登记），存疑 |
+# | 北讨契丹 | 武攸宜统军北讨契丹以子昂为管记军中文翰皆委之 | 表子昂参谋，次渔阳前军败进谏，攸宜怒徙署军曹 | 确定(696) |
+# | 归侍与庐墓 | （父为县令段简所辱遽还乡里） | 圣历初以父老表解官归侍诏以官供养；会父丧庐冢次每哀恸闻者为涕 | 确定(X详) |
+# | 死因 | 简因事收系狱中忧愤而卒时年四十余 | 段简贪暴闻其富欲害之，家人纳钱二十万缗薄其赂捕送狱中，果死狱中年四十三 | 确定「死于狱中」；情节两书互异，「受武三思讽使罗织」说不见于本传 |
+# | 身后 | 有集十卷友人黄门侍郎卢藏用为之序盛行于代 | 大历中东川节度使李叔明为立旌德碑于梓州学堂至今犹存 | 确定 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: chenziang
+
+profile:
+  courtesy_name: 伯玉
+  art_name: ""
+  aliases: [陈拾遗, 诗骨]
+  gender: 男
+  ethnicity: ""
+  ancestry: 梓州射洪
+  birthplace: 梓州射洪
+  death_place: 射洪狱中（新唐书果死狱中；狱属家乡县署）
+  offices: [麟台正字, 右卫胄曹参军, 右拾遗]
+  fields: [文学]
+  roles: [诗人]
+  summary: 唐诗风骨革新的先驱，登幽州台歌的作者；屡谏不遇、冤死狱中的谏诤诗人。
+
+timeline:
+  # ── 阶段一：豪家任侠与发愤读书 ──────────────────────
+  - stage: 豪家任侠与发愤读书
+    stage_order: 1
+    title: 出生于梓州射洪豪富之家
+    date:
+      text: 约659—661年之间（两说并存）
+      year: 659
+      range_end: 661
+      precision: 范围
+    place: 梓州射洪
+    summary: 新唐书记其家世富豪，六世祖太乐当齐时以豪杰为郡司马，父元敬世高赀、岁饥出粟万石赈乡里。生年史无明文，学界有659与661两说。
+    confidence: 存疑
+    dispute: 生年659说与661说并立，均由卒年与新唐书「年四十三」倒推，无直接史料定谳。
+    source_ids: [src-jts-vol190m, src-xts-vol107]
+  - stage: 豪家任侠与发愤读书
+    stage_order: 2
+    title: 十八未知书，入乡校感悔痛修饬
+    date:
+      text: 约十八岁时（约676—679年之间）
+      year: 676
+      range_end: 679
+      precision: 范围
+    place: 梓州射洪
+    summary: 新唐书载子昂十八未知书，以富家子尚气决弋博自如；它日入乡校感悔，即痛修饬。旧唐书亦称其独苦节读书尤善属文。
+    confidence: 存疑
+    dispute: 十八岁折算年份随生年两说浮动，此处按659—661年生取约值。
+    source_ids: [src-xts-vol107, src-jts-vol190m]
+  - stage: 豪家任侠与发愤读书
+    stage_order: 3
+    title: 买胡琴碎之以文会友（本事层传闻）
+    date:
+      text: 举进士之前，确切年份不详
+      precision: 未知
+    place: 梓州（一说洛阳）
+    summary: 相传子昂初入京不为人知，以百万市胡琴，众集时举而碎之，邀众人观其文以一日之内声华溢都——即所谓碎琴故事。
+    confidence: 传说
+    dispute: 此事出自卢藏用陈氏别传一系的逸闻，两唐书本传均不载；学界多视为唐人本事层传闻而非信史，地点与细节诸书记述互异。
+    source_ids: []
+  - stage: 豪家任侠与发愤读书
+    stage_order: 4
+    title: 为感遇诗，王适惊为天下文宗
+    date:
+      text: 及第前数年间（约680—684年之间）
+      year: 680
+      range_end: 684
+      precision: 范围
+    place: 梓州、长安
+    summary: 旧唐书载初为感遇诗三十首，京兆司功王适见而惊曰此子必为天下文宗矣，由是知名；新唐书作三十八章且谓王适因此请交。
+    confidence: 存疑
+    dispute: 感遇诗篇数旧唐书作三十首、新唐书作三十八章，今传本三十八首；王适读诗时间在及第前后亦仅能据本传语序推定。
+    source_ids: [src-jts-vol190m, src-xts-vol107]
+
+  # ── 阶段二：进士及第与谏诤成名 ──────────────────────
+  - stage: 进士及第与谏诤成名
+    stage_order: 5
+    title: 文明初举进士
+    date:
+      text: 约684年（文明初）
+      year: 684
+      precision: 约
+    place: 长安
+    summary: 新唐书载文明初举进士。文明为684年年号，及第确年系据此推定。
+    confidence: 存疑
+    dispute: 「文明初」所指具体年份略有弹性，及第年亦有光宅前后微调之说。
+    source_ids: [src-xts-vol107]
+  - stage: 进士及第与谏诤成名
+    stage_order: 6
+    title: 高宗崩，诣阙上书谏灵驾西迁
+    date:
+      text: 约684年
+      year: 684
+      precision: 约
+    place: 洛阳
+    summary: 会高宗崩，灵驾将还长安；子昂诣阙上书，盛陈东都形胜可以安置山陵、关中旱俭灵驾西行不便，极言迁葬劳弊。两唐书均全文或节录此书。
+    source_ids: [src-jts-vol190m, src-xts-vol107]
+  - stage: 进士及第与谏诤成名
+    stage_order: 7
+    title: 武则天召见金华殿，拜麟台正字
+    date:
+      text: 约684—685年之间
+      year: 684
+      range_end: 685
+      precision: 范围
+    place: 洛阳
+    summary: 新唐书载武后奇其才召见金华殿，子昂貌柔野少威仪而占对慷慨，擢麟台正字；旧唐书作则天召见奇其对拜麟台正字。
+    source_ids: [src-jts-vol190m, src-xts-vol107]
+  - stage: 进士及第与谏诤成名
+    stage_order: 8
+    title: 谏雅州道讨生羌，上书七验
+    date:
+      text: 垂拱初（约685—687年之间）
+      year: 685
+      range_end: 687
+      precision: 范围
+    place: 洛阳
+    summary: 则天将事雅州讨生羌因以袭击吐蕃，子昂上书以七验力谏，谓西蜀之祸自此结；两唐书同录其疏。其后吐蕃果入寇为边患最甚。
+    source_ids: [src-jts-vol190m, src-xts-vol107]
+  - stage: 进士及第与谏诤成名
+    stage_order: 9
+    title: 随乔知之征西北蕃（居延海一带，推定）
+    date:
+      text: 约686—687年之间
+      year: 686
+      range_end: 687
+      precision: 范围
+    place: 西北边塞（居延海一带，推定）
+    summary: 相传垂拱间曾随乔知之护军西北蕃，亲历居延海一带边塞，同军有王无竞。此行两唐书本传不载，行迹与路线均系据别传与同期诗作推定。
+    confidence: 存疑
+    dispute: 随乔知之征西北蕃事见于卢藏用陈氏别传一系材料，新旧唐书本传均无载；同行人名、年份与到达地望皆有讨论，本条按推定著录。
+    inferred: true
+    source_ids: []
+  - stage: 进士及第与谏诤成名
+    stage_order: 10
+    title: 论调元气劝兴明堂太学，奏八科
+    date:
+      text: 垂拱至永昌年间（约685—689年之间）
+      year: 685
+      range_end: 689
+      precision: 范围
+    place: 洛阳
+    summary: 垂拱初诏问群臣调元气当以何道，子昂劝后兴明堂太学；后又奉召条上利害奏八科（措刑、官人、知贤、去疑、招谏、劝赏、息兵、安宗子）。其间迁右卫胄曹参军。
+    source_ids: [src-xts-vol107]
+
+  # ── 阶段三：仕周与从军北征 ──────────────────────
+  - stage: 仕周与从军北征
+    stage_order: 11
+    title: 周受命上颂，数召见而言不见用
+    date:
+      text: 约690年
+      year: 690
+      precision: 约
+    place: 洛阳
+    summary: 后既称皇帝改号周，子昂上周受命颂；虽数召见问政事论亦详切，故奏闻辄罢。旧唐书另记徐元庆手刃杀父仇一案，子昂建议宜正国法然后旌其闾墓，当时议者咸以为是。
+    source_ids: [src-xts-vol107, src-jts-vol190m]
+  - stage: 仕周与从军北征
+    stage_order: 12
+    title: 以母丧去官，服终擢右拾遗
+    date:
+      text: 约692—694年之间
+      year: 692
+      range_end: 694
+      precision: 范围
+    place: 洛阳
+    summary: 新唐书载以母丧去官，服终，擢右拾遗。子昂多病居职不乐。
+    confidence: 存疑
+    dispute: 母丧起讫年份史无明文，系据任职序列推定。
+    source_ids: [src-xts-vol107]
+  - stage: 仕周与从军北征
+    stage_order: 13
+    title: 从武攸宜讨契丹，进言不用徙署军曹
+    date:
+      text: 约696年（万岁通天初）
+      year: 696
+      precision: 约
+    place: 幽州·渔阳
+    summary: 武攸宜讨契丹高置幕府，表子昂参谋（旧唐书作管记，军中文翰皆委之）。军次渔阳前军败举军震恐，子昂进谏乞分麾下万人为前驱，攸宜以其儒者谢不纳；居数日复进计，攸宜怒徙署军曹，子昂知不合不复言。
+    source_ids: [src-jts-vol190m, src-xts-vol107]
+  - stage: 仕周与从军北征
+    stage_order: 14
+    title: 登蓟北楼，作蓟丘览古与登幽州台歌
+    date:
+      text: 约696年从军期间
+      year: 696
+      precision: 约
+    place: 幽州台（蓟北楼）
+    summary: 随军幽州失意之际登蓟北楼，览燕昭王黄金台遗迹，作蓟丘览古赠卢居士藏用七首与登幽州台歌，前不见古人后不见来者遂成千古绝唱。
+    confidence: 存疑
+    dispute: 组诗系年从万岁通天元年随军说；登幽州台歌题名通行本后出，楚辞后语所录与本集文字小异。
+    source_ids: [src-qts-chenziang]
+
+  # ── 阶段四：解官归侍与冤死 ──────────────────────
+  - stage: 解官归侍与冤死
+    stage_order: 15
+    title: 圣历初解官归侍，父丧庐墓
+    date:
+      text: 约698年（圣历初）
+      year: 698
+      precision: 约
+    place: 梓州射洪
+    summary: 新唐书载圣历初以父老表解官归侍，诏以官供养；会父丧，庐冢次，每哀恸闻者为涕。
+    source_ids: [src-xts-vol107]
+  - stage: 解官归侍与冤死
+    stage_order: 16
+    title: 县令段简构陷下狱，死于狱中年四十余
+    date:
+      text: 约702年
+      year: 702
+      precision: 约
+    place: 梓州射洪狱中
+    summary: 新唐书载县令段简贪暴闻其富欲害子昂，家人纳钱二十万缗简薄其赂捕送狱中，子昂自筮惊曰天命不祐吾殆死乎，果死狱中年四十三；旧唐书则记父为段简所辱遽还乡里，简因事收系狱中忧愤而卒，时年四十余。
+    confidence: 存疑
+    dispute: 卒年有长安二年（702）通说与700年前诸说；构陷情节两唐书互异，后世更有段简受武三思等讽使罗织、附会其家资巨亿诸说，皆不见于两唐书本传，本文从实取文本著录。
+    source_ids: [src-jts-vol190m, src-xts-vol107]
+
+works:
+  - work_id: deng-youzhou-tai-ge
+    title: 登幽州台歌
+    alt_titles: [登幽州台歌（蓟北楼作）]
+    genre: 五言古诗（杂言）
+    date:
+      text: 约696年随军幽州期间
+      year: 696
+      precision: 约
+    place: 幽州台（蓟北楼）
+    context: 从武攸宜北讨契丹进言不用徙署军曹，失意中登蓟北楼吊古伤今而作。
+    attribution: 确凿
+    excerpt: 前不见古人，后不见来者。念天地之悠悠，独怆然而涕下。
+    text_display: full
+    themes: [怀才不遇, 宇宙人生]
+    influence: 唐诗中天地意识的极致表达，孤篇横绝。
+    confidence: 存疑
+    dispute: 题名通行本后出；黄庭坚引作「前不见古人」云云或谓本属蓟丘览古逸句，文本层次尚有讨论。
+    source_ids: [src-qts-chenziang]
+  - work_id: ganyu-san-shi-ba-qi-er
+    title: 感遇诗三十八章（其二）
+    alt_titles: [感遇三十八首·兰若生春夏]
+    genre: 五言古诗
+    date:
+      text: 及第前后陆续所作，编年不详
+      precision: 未知
+    place: ""
+    context: 兰若生春夏一篇以草木幽独自况，岁华摇落芳意无成，是其比兴寄托的代表。
+    attribution: 确凿
+    excerpt: 兰若生春夏，芊蔚何青青。幽独空林色，朱蕤冒紫茎。迟迟白日晚，袅袅秋风生。岁华尽摇落，芳意竟何成。
+    text_display: full
+    themes: [比兴寄托, 咂叹身世]
+    influence: 正史认证的风骨革新代表作，王适读之惊为天下文宗。
+    confidence: 存疑
+    dispute: 组诗篇数旧唐书作三十首、新唐书作三十八章，今传本三十八首；单篇系年不可考。
+    source_ids: [src-jts-vol190m, src-xts-vol107, src-qts-chenziang]
+  - work_id: xiu-zhu-pian-xu
+    title: 与东方左史虬修竹篇序
+    alt_titles: [修竹篇并序]
+    genre: 序文
+    date:
+      text: 约圣历前后，确年不详
+      precision: 未知
+    place: 洛阳
+    context: 因东方虬咏孤桐篇而作，标举汉魏风骨与兴寄，直斥齐梁彩丽竞繁——唐诗革新理论的宣言书。
+    attribution: 确凿
+    excerpt: 文章道弊五百年矣。汉魏风骨，晋宋莫传……仆尝暇时观齐梁间诗，彩丽竞繁，而兴寄都绝，每以永叹。
+    text_display: excerpt
+    themes: [文学理论, 风骨兴寄]
+    influence: 唐代诗文革新运动的理论纲领，韩愈国朝盛文章子昂始高蹈之先声。
+    source_ids: [src-qts-chenziang]
+  - work_id: chun-ye-bie-you-ren
+    title: 春夜别友人二首（其一）
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 约青年离蜀前后，确年不详
+      precision: 未知
+    place: 洛阳道上
+    context: 银烛吐青烟金樽对绮筵，写离堂惜别与长河晓天，悠悠洛阳道此会在何年。
+    attribution: 确凿
+    excerpt: 银烛吐青烟，金樽对绮筵。离堂思琴瑟，别路绕山川。明月隐高树，长河没晓天。悠悠洛阳道，此会在何年。
+    text_display: full
+    themes: [送别, 夜景]
+    influence: 五律送别的典范之作。
+    confidence: 存疑
+    dispute: 作年与地点系据诗意推定。
+    source_ids: [src-qts-chenziang]
+  - work_id: song-wei-da-cong-jun
+    title: 送魏大从军
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 约垂拱年间，确年不详
+      precision: 未知
+    place: ""
+    context: 匈奴犹未灭魏绛复从戎，以边功相勉，见其经世之气。
+    attribution: 确凿
+    excerpt: 匈奴犹未灭，魏绛复从戎。怅别三河道，言追六郡雄。雁山横代北，狐塞接云中。勿使燕然上，惟留汉将功。
+    text_display: full
+    themes: [送别, 边塞]
+    influence: 盛唐边塞送别诗的先导。
+    confidence: 存疑
+    dispute: 系年系据边事背景推定。
+    source_ids: [src-qts-chenziang]
+  - work_id: ji-qiu-lan-gu-yan-zhao-wang
+    title: 蓟丘览古赠卢居士藏用七首·燕昭王
+    alt_titles: [蓟丘览古]
+    genre: 五言古诗（组诗之一）
+    date:
+      text: 约696年随军幽州期间
+      year: 696
+      precision: 约
+    place: 幽州蓟丘
+    context: 南登碣石馆遥望黄金台，吊燕昭王礼贤故事，与其进言不遇的处境互证；登幽州台歌即同一情境下的产物。
+    attribution: 确凿
+    excerpt: 南登碣石馆，遥望黄金台。丘陵尽乔木，昭王安在哉？霸图怅已矣，驱马复归来。
+    text_display: full
+    themes: [怀古, 礼贤不遇]
+    influence: 与登幽州台歌互文的组诗，幽州台意象群之所本。
+    confidence: 存疑
+    dispute: 组诗作于随军时期从通说，序称身犹是客等语与系年细节尚有讨论。
+    source_ids: [src-qts-chenziang]
+  - work_id: xian-shan-huai-gu
+    title: 岘山怀古
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 约垂拱间往返荆楚途中，确年不详
+      precision: 未知
+    place: 襄阳岘山
+    context: 秣马临荒甸登高览旧都，过羊祜堕泪碑故地而兴亡国之思。
+    attribution: 确凿
+    excerpt: 秣马临荒甸，登高览旧都。犹悲堕泪碣，尚想卧龙图。……谁知万里客，怀古正踌躕。
+    text_display: excerpt
+    themes: [怀古]
+    influence: 初唐五古怀古的成熟之作。
+    confidence: 存疑
+    dispute: 系年系据行迹推定。
+    source_ids: [src-qts-chenziang]
+  - work_id: du-jingmen-wang-chu
+    title: 度荆门望楚
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 约青年出蜀途中，确年不详
+      precision: 未知
+    place: 荆门山
+    context: 遥遥去巫峡望望下章台，写初次出峡入楚的新鲜视野，巴国山川尽荆门烟雾开。
+    attribution: 确凿
+    excerpt: 遥遥去巫峡，望望下章台。巴国山川尽，荆门烟雾开。城分苍野外，树断白云隈。今日狂歌客，谁知入楚来。
+    text_display: full
+    themes: [山水, 行旅]
+    influence: 出蜀纪行的清新名篇。
+    confidence: 存疑
+    dispute: 系初度出蜀抑或再出蜀所作尚有讨论。
+    source_ids: [src-qts-chenziang]
+
+footprints:
+  - name: 梓州射洪金华山故宅（读书堂）
+    modern_name: 四川省射洪市金华山陈子昂读书台一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 出生至十八发愤读书、及解官归侍均在故里
+      year: 659
+      range_end: 702
+      precision: 范围
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    confidence: 存疑
+    dispute: 出生年份两说致区间起点浮动。
+    source_ids: [src-jts-vol190m, src-xts-vol107]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约684年前后举进士诣阙上书
+      year: 684
+      range_end: 685
+      precision: 范围
+    kind: 游历
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-jts-vol190m, src-xts-vol107]
+  - name: 洛阳
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约684—696年之间任麟台正字、右卫胄曹参军、右拾遗
+      year: 684
+      range_end: 696
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    source_ids: [src-jts-vol190m, src-xts-vol107]
+  - name: 西北边塞（居延海一带，推定）
+    modern_name: 内蒙古自治区额济纳旗居延海一带
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 行迹据卢藏用陈氏别传一系材料与同期边塞诗作推定；两唐书本传不载，坐标待接入体系
+    visit_date:
+      text: 约686—687年之间随乔知之征西北蕃
+      year: 686
+      range_end: 687
+      precision: 范围
+    kind: 游历
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 此行正史无载，年份地望均有讨论，按推定著录。
+    source_ids: []
+  - name: 幽州台（蓟北楼）
+    modern_name: 北京市西南（遗址所在历代考订不一）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 黄金台蓟北楼地望历来聚讼，坐标不作确指；待接入体系
+    visit_date:
+      text: 约696年随军北征期间
+      year: 696
+      precision: 约
+    kind: 游历
+    route_order: 5
+    memorial_only: false
+    confidence: 存疑
+    dispute: 幽州台即蓟北楼之说为主流，遗址确切位置无定论。
+    source_ids: [src-xts-vol107, src-qts-chenziang]
+  - name: 梓州射洪（归乡庐墓）
+    modern_name: 四川省射洪市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约698年起解官归侍，父丧庐冢次
+      year: 698
+      precision: 约
+    kind: 居住
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-xts-vol107]
+  - name: 射洪县狱
+    modern_name: 四川省射洪市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 系狱于家乡县署据本传文理推定；坐标待接入体系
+    visit_date:
+      text: 约702年死于狱中
+      year: 702
+      precision: 约
+    kind: 逝世
+    route_order: 7
+    memorial_only: false
+    confidence: 存疑
+    dispute: 死地系由段简为家乡县令、收系狱中文理推定；卒年另有他说。
+    source_ids: [src-jts-vol190m, src-xts-vol107]
+  - name: 梓州旌德碑与学堂故址
+    modern_name: 四川省三台县、射洪市一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 纪念性建筑坐标待接入体系
+    visit_date:
+      text: 大历中立碑，学堂至今犹存（新唐书语）
+      year: 766
+      range_end: 779
+      precision: 范围
+    kind: 纪念地
+    route_order: 8
+    memorial_only: true
+    source_ids: [src-xts-vol107]
+
+relations:
+  - relation_type: 思想影响
+    target_id: libai
+    direction: 单向
+    period:
+      text: 开元以后，隔代文学史的路线承续
+      year: 720
+      range_end: 762
+      precision: 范围
+    evidence: 新唐书称唐兴文章承徐庾余风天下祖尚子昂始变雅正；李白继其扫除齐梁绮靡、恢复汉魏风骨的革新路线而集大成，后世论者常以陈李并举。此系文学史归纳，两人相隔逾三十年，并无任何直接交往记载。
+    inferred: true
+    confidence: 存疑
+    dispute: 本条为思想脉络层面的单向归纳关系，非交往实证；「李白受陈子昂直接影响」的具体程度在学界亦有不同评估。
+    source_ids: [src-xts-vol107]
+
+reception:
+  - era: 同时代
+    evaluator: 王适
+    quote: 此子必为天下文宗矣！
+    text_display: excerpt
+    comment: 旧唐书所记京兆司功王适读感遇诗后的断语，子昂由是知名；新唐书作是必为海内文宗且谓王适因此请交。
+    source_ids: [src-jts-vol190m, src-xts-vol107]
+  - era: 同时代
+    evaluator: 卢藏用
+    quote: ""
+    text_display: none
+    comment: 旧唐书载子昂有集十卷，友人黄门侍郎卢藏用为之序盛行于代；新唐书又载其轻财好施笃朋友，与陆余庆王无竞房融崔泰之卢藏用赵元最厚。
+    source_ids: [src-jts-vol190m, src-xts-vol107]
+  - era: 历代批评
+    evaluator: 韩愈
+    quote: 国朝盛文章，子昂始高蹈。
+    text_display: excerpt
+    comment: 韩愈荐士诗句（公版原文），把唐诗革新的起点系于子昂，是对其文学史地位最有力的传统定评；出处未另行登记来源，引用边界以该联为限。
+    source_ids: []
+  - era: 历代批评
+    evaluator: 新唐书史臣
+    quote: 乃以王者之术勉之，卒为妇人讪侮不用，可谓荐圭璧于房闼，以脂泽污漫之也。
+    text_display: excerpt
+    comment: 宋祁赞语对其谏诤谋国之效持尖锐否定态度，与对其文章始变雅正的肯定并存，代表宋代史学评价的两面性。
+    source_ids: [src-xts-vol107]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦生卒年考订（659/661两说）、死因与段简案的法律政治解读（含受武氏讽使罗织说的史料层级辨析）、感遇诗与修竹篇序的风骨理论定位等议题；具体论著引文须逐条取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 登幽州台歌长期入选中小学语文教材，前不见古人成为大众熟语；射洪金华山读书台为其最重要的乡邦纪念地。教材篇目随学期变动录入时须另行核验。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 影视与网络传播
+    quote: ""
+    text_display: none
+    comment: 暂无稳定、权威的影视形象记载可录，本层留空待补。
+    source_ids: []
+
+sources_used: [src-jts-vol190m, src-xts-vol107, src-qts-chenziang]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。16条年谱、8篇作品、8处足迹、1组关系、7条接受史（覆盖全部5个时代层）；新旧唐书异说全部落dispute字段}

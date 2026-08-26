@@ -1,0 +1,565 @@
+# 周邦彦全景详卷（schema v1）
+# 史料审计表（TASK-003 批次；来源见 data/sources.yaml）：
+#
+# | 事实点 | 宋史·卷444·文苑六·周邦彦传(S) | 结论与置信 |
+# |---|---|---|
+# | 字籍 | 字美成，钱塘人 | 确定(S) |
+# | 少年 | 疏隽少检，不为州里推重，而博涉百家之书 | 确定(S)；「疏隽少检」后世解作风流放浪属引申 |
+# | 献赋 | 元丰初游京师，献汴都赋万余言，神宗异之，命侍臣读于迩英阁，召赴政事堂 | 确定(S)；献赋确年史无明文，通说约元丰元年前后，另有元丰六七年间说 |
+# | 一命为正 | 自太学诸生一命为正（太学正），居五岁不迁，益尽力于辞章 | 确定(S) |
+# | 外任 | 出教授庐州，知溧水县，还为国子主簿 | 确定(S)；三任确年俱无载，仅能按叙次推定先后 |
+# | 召对 | 哲宗召对，使诵前赋，除秘书省正字 | 确定(S)；年份无载 |
+# | 中历 | 历校书郎、考功员外郎，卫尉、宗正少卿，兼议礼局检讨 | 确定(S) |
+# | 知府 | 以直龙图阁知河中府，徽宗欲使毕礼书复留之；逾年乃知隆德府，徙明州 | 确定(S) |
+# | 大晟 | 入拜秘书监，进徽猷阁待制、提举大晟府 | 确定(S)；提举确年无载，学界通说约政和末 |
+# | 晚年卒 | 未几知顺昌府，徙处州，卒，年六十六，赠宣奉大夫 | 确定(S)；卒年干支史无明文，1056—1121系由年六十六与学界通说互证倒推 |
+# | 音乐 | 好音乐，能自度曲，制乐府长短句，词韵清蔚，传于世 | 确定(S) |
+#
+# 不采事项：方腊乱起归钱塘说、与李师师轶事、大晟府与万俟咏田为讨论古音等均出笔记诗话层，
+# 宋史无载，本卷一律不入 timeline 或标传说存疑。
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: zhoubangyan
+
+profile:
+  courtesy_name: 美成
+  art_name: 清真居士
+  aliases: [周清真, 词家之冠（后人誉）]
+  gender: 男
+  ethnicity: ""
+  ancestry: 杭州钱塘（今浙江杭州）
+  birthplace: 钱塘
+  death_place: ""
+  offices: [太学正, 庐州教授, 溧水知县, 秘书省正字, 大晟府提举]
+  fields: [文学]
+  roles: [词人, 音乐家]
+  summary: 北宋格律派词的集大成者，好音乐能自度曲，以一赋得神宗赏识，晚提举大晟府审定音律，词韵清蔚垂范后世。
+
+timeline:
+  # ── 阶段一：钱塘少年 ──────────────────────────────
+  - stage: 钱塘少年
+    stage_order: 1
+    title: 生于钱塘
+    date:
+      text: 约1056年
+      year: 1056
+      precision: 约
+    place: 钱塘
+    summary: 宋史载其字美成，钱塘人。生年正史无载，1056系由卒年六十六与学界通说卒年互证倒推。
+    confidence: 存疑
+    dispute: 生年纯系由卒年六十六倒推；卒年本身亦非正文明文（详见卒条 dispute），故生年在通说1056上下浮动。
+    source_ids: [src-songshi-vol444]
+  - stage: 钱塘少年
+    stage_order: 2
+    title: 疏隽少检，博涉百家之书
+    date:
+      text: 少年时期，具体年代不详
+      precision: 未知
+    place: 钱塘
+    summary: 宋史记其为人才华疏俊而少检束，不为乡里推重，然博览群籍涉猎百家。日后献赋与度曲的根柢皆植于此期。
+    source_ids: [src-songshi-vol444]
+
+  # ── 阶段二：元丰献赋 ──────────────────────────────
+  - stage: 元丰献赋
+    stage_order: 3
+    title: 游京师，献汴都赋万余言
+    date:
+      text: 元丰初（约1078年前后）
+      year: 1078
+      precision: 约
+    place: 京师开封
+    summary: 宋史载元丰初游京师，献汴都赋万余言，神宗异之，命侍臣读于迩英阁，召赴政事堂。一介诸生因赋名动京师。
+    confidence: 存疑
+    dispute: 宋史仅言元丰初未系确年；另有学者据楼钥序等推献赋于元丰六七年间。南宋陈郁藏一话腴称赋凡七千言，与宋史万余言之数亦有小异。
+    source_ids: [src-songshi-vol444]
+  - stage: 元丰献赋
+    stage_order: 4
+    title: 自太学诸生一命为正
+    date:
+      text: 献赋后随即（约1078年起）
+      year: 1078
+      precision: 约
+    place: 京师开封
+    summary: 因赋受知，自太学诸生超擢为太学正，由布衣诸生一步登第入仕，为其仕途起点。
+    confidence: 存疑
+    dispute: 擢太学正紧承献赋，确切年份随献赋系年而定，史无明文。
+    source_ids: [src-songshi-vol444]
+  - stage: 元丰献赋
+    stage_order: 5
+    title: 居五岁不迁，益尽力于辞章
+    date:
+      text: 约1078—1083年之间
+      year: 1078
+      range_end: 1083
+      precision: 范围
+    place: 京师开封
+    summary: 宋史载居五岁不迁，遂益尽力于辞章。仕途停滞反促成其文学深耕，此期词章造诣日精。
+    confidence: 存疑
+    dispute: 五岁起讫由擢太学正之年顺推，系约数。
+    source_ids: [src-songshi-vol444]
+
+  # ── 阶段三：州县外任 ──────────────────────────────
+  - stage: 州县外任
+    stage_order: 6
+    title: 出教庐州教授
+    date:
+      text: 元祐间（约1086—1090年之间）
+      year: 1086
+      range_end: 1090
+      precision: 范围
+    place: 庐州
+    summary: 宋史叙次出教授庐州，离京外任教职，开启辗转州县的十年宦游。
+    confidence: 存疑
+    dispute: 出庐州确年史无明文，元祐间系学界依官历叙次推定的通行区间。
+    source_ids: [src-songshi-vol444]
+  - stage: 州县外任
+    stage_order: 7
+    title: 知溧水县
+    date:
+      text: 约元祐末绍圣间（约1090—1096年之间）
+      year: 1090
+      range_end: 1096
+      precision: 范围
+    place: 溧水
+    summary: 宋史叙次继知溧水县。名作满庭芳夏日溧水无想山作即此期作品，风老莺雏雨肥梅子写江南县斋景况。
+    confidence: 存疑
+    dispute: 知溧水确年史无明文，系年由官历叙次与词作系年交叉推定。
+    source_ids: [src-songshi-vol444]
+  - stage: 州县外任
+    stage_order: 8
+    title: 还为国子主簿
+    date:
+      text: 约绍圣间（约1096年前后）
+      year: 1096
+      precision: 约
+    place: 京师开封
+    summary: 宋史载外任十年之后还京为国子主簿，结束州县辗转，重返京师学官系统。
+    confidence: 存疑
+    dispute: 还京确年史无明文，约1096前后系推定。
+    source_ids: [src-songshi-vol444]
+
+  # ── 阶段四：哲宗召对与大晟提举 ────────────────────
+  - stage: 哲宗召对与大晟提举
+    stage_order: 9
+    title: 哲宗召对，使诵前赋，除秘书省正字
+    date:
+      text: 绍圣元符间（约1094—1100年之间）
+      year: 1094
+      range_end: 1100
+      precision: 范围
+    place: 京师开封
+    summary: 宋史载哲宗召对，使诵前赋，除秘书省正字。二十年前旧赋成为再起的敲门砖，此后历校书郎、考功员外郎。
+    confidence: 存疑
+    dispute: 召对确年史无明文，哲宗亲政后的绍圣元符间系依官历推定的通行区间。
+    source_ids: [src-songshi-vol444]
+  - stage: 哲宗召对与大晟提举
+    stage_order: 10
+    title: 历郎曹，兼议礼局检讨
+    date:
+      text: 徽宗朝（约1101—1115年之间）
+      year: 1101
+      range_end: 1115
+      precision: 范围
+    place: 京师开封
+    summary: 宋史载历校书郎、考功员外郎，卫尉、宗正少卿，兼议礼局检讨，进入徽宗朝礼乐制作系统。
+    confidence: 存疑
+    dispute: 诸职迁转确年俱无载，徽宗朝区间系总括性推定。
+    source_ids: [src-songshi-vol444]
+  - stage: 哲宗召对与大晟提举
+    stage_order: 11
+    title: 以直龙图阁知河中府，徽宗复留使毕礼书
+    date:
+      text: 约1110年代前期
+      year: 1110
+      range_end: 1115
+      precision: 范围
+    place: 河中府、京师开封
+    summary: 宋史载以直龙图阁出知河中府，徽宗欲使其完成礼书，复留之逾年。礼书之役使其滞京未行。
+    confidence: 存疑
+    dispute: 出知河中与复留确年史无明文，系由议礼局改罢时间旁推。
+    source_ids: [src-songshi-vol444]
+  - stage: 哲宗召对与大晟提举
+    stage_order: 12
+    title: 逾年乃知隆德府，徙明州
+    date:
+      text: 约1115年前后
+      year: 1115
+      precision: 约
+    place: 隆德府、明州
+    summary: 宋史载留京逾年后出知隆德府，又徙明州，再度外任郡守。
+    confidence: 存疑
+    dispute: 两任确年史无明文，约1115前后系依前条叙次顺推。
+    source_ids: [src-songshi-vol444]
+  - stage: 哲宗召对与大晟提举
+    stage_order: 13
+    title: 入拜秘书监，进徽猷阁待制、提举大晟府
+    date:
+      text: 约1116年（政和末）
+      year: 1116
+      precision: 约
+    place: 京师开封
+    summary: 宋史载入拜秘书监，进徽猷阁待制、提举大晟府。掌国家音乐机构，审定古音创制新调，为其词乐生涯顶点。宋史总评其好音乐能自度曲，制乐府长短句，词韵清蔚传于世。
+    confidence: 存疑
+    dispute: 提举大晟府确年史无明文，约政和末（1116前后）为学界通说推定。
+    source_ids: [src-songshi-vol444]
+
+  # ── 阶段五：晚年任郡与卒 ──────────────────────────
+  - stage: 晚年任郡与卒
+    stage_order: 14
+    title: 未几知顺昌府，徙处州
+    date:
+      text: 约1117—1120年之间
+      year: 1117
+      range_end: 1120
+      precision: 范围
+    place: 顺昌府、处州
+    summary: 宋史载提举大晟府未几，出知顺昌府，又徙处州。晚年仍辗转郡守任上。
+    confidence: 存疑
+    dispute: 两任确年史无明文，由提举大晟府通说年份顺推。
+    source_ids: [src-songshi-vol444]
+  - stage: 晚年任郡与卒
+    stage_order: 15
+    title: 卒于处州任后，年六十六，赠宣奉大夫
+    date:
+      text: 约1121年
+      year: 1121
+      precision: 约
+    place: 处州
+    summary: 宋史叙次徙处州后即缀卒事，年六十六，赠宣奉大夫。卒地正史未明言，通说卒于处州任所附近。
+    confidence: 存疑
+    dispute: 卒年干支史无明文，1121系由年六十六与生年倒推互证的学界通说；卒地不详，方腊乱起归钱塘之说出自后世谱牒笔记层材料，宋史无载，本卷不采。
+    source_ids: [src-songshi-vol444]
+
+works:
+  - work_id: su-mu-zhe-liao-chen-xiang
+    title: 苏幕遮·燎沉香
+    alt_titles: [苏幕遮·夏日溧水无想山作之外咏荷名篇]
+    genre: 词（小令）
+    date:
+      text: 创作年代不详，一般定为北宋后期在京师时
+      precision: 未知
+    place: ""
+    context: 夏日雨后观荷思乡之作，叶上初阳干宿雨水面清圆一一风荷举为王士祯所称写荷绝唱，王国维誉为真能得荷之神理者。
+    attribution: 确凿
+    excerpt: 燎沉香，消溽暑。鸟雀呼晴，侵晓窥檐语。叶上初阳干宿雨，水面清圆，一一风荷举。故乡遥，何日去？家住吴门，久作长安旅。五月渔郎相忆否？小楫轻舟，梦入芙蓉浦。
+    text_display: full
+    themes: [咏物, 荷, 思乡]
+    influence: 一一风荷举成为咏荷千古名句，入选现代语文教材。
+    source_ids: [src-qingzhenji]
+
+  - work_id: shao-nian-you-bing-dao-ru-shui
+    title: 少年游·并刀如水
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: 京师开封（一说）
+    context: 冬夜室内调笙听语的生活小品，低声问向谁行宿城上已三更马滑霜浓不如休去直是少人行，体贴入微而止于礼。
+    attribution: 确凿
+    excerpt: 并刀如水，吴盐胜雪，纤手破新橙。锦幄初温，兽烟不断，相对坐调笙。低声问：向谁行宿？城上已三更。马滑霜浓，不如休去，直是少人行。
+    text_display: full
+    themes: [艳情, 生活]
+    influence: 以白描工笔写旖旎情境的小令典范。
+    confidence: 传说
+    dispute: 本词本事附会周邦彦与李师师及宋徽宗三角故事，出自南宋张端义贵耳集等笔记层材料，纯属小说家言，词作本体可信而本事不足为据。
+    source_ids: [src-qingzhenji]
+
+  - work_id: lan-ling-wang-liu-yin-zhi
+    title: 兰陵王·柳阴直
+    alt_titles: [兰陵王·柳]
+    genre: 词（慢词，自度曲）
+    date:
+      text: 创作年代不详，通说为提举大晟府前后在京送别之作
+      precision: 未知
+    place: 京师开封隋堤（一说）
+    context: 咏柳送别名篇，谁识京华倦客道尽久客倦游之感。愁一箭风快半篙波暖写舟行人去回望京华。
+    attribution: 确凿
+    excerpt: 柳阴直，烟里丝丝弄碧。隋堤上、曾见几番，拂水飘绵送行色。……愁一箭风快，半篙波暖，回头迢递便数驿，望人在天北。
+    text_display: excerpt
+    themes: [送别, 咏柳, 倦游]
+    influence: 此曲南宋流传极广，西楼南瓦奏之无虚日，号称渭城三叠式送别曲。
+    source_ids: [src-qingzhenji]
+
+  - work_id: liu-chou-qiang-wei-xie-hou
+    title: 六丑·蔷薇谢后作
+    alt_titles: []
+    genre: 词（慢词，自度曲）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 咏落花惜春的长调，为问花何在夜来风雨葬楚宫倾国问花葬花笔法为后世红楼葬花意象之远源。曲名六丑相传因其犯六个宫调声之美音难歌而得名。
+    attribution: 确凿
+    excerpt: 正单衣试酒，怅客里光阴虚掷。……为问花何在？夜来风雨，葬楚宫倾国。
+    text_display: excerpt
+    themes: [咏物, 惜春]
+    influence: 自度曲犯调技巧的代表样本，历代词论推为涩曲之极则。
+    confidence: 存疑
+    dispute: 六丑曲名缘起出自南宋王灼碧鸡漫志等所记传闻，细节难以确考。
+    source_ids: [src-qingzhenji]
+
+  - work_id: die-lian-hua-yue-jiao-jing-wu
+    title: 蝶恋花·月皎惊乌栖不定
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 别前一夜与临歧执手的连续镜头，唤起两眸清炯炯泪花落枕红绵冷写彻夜无眠细腻入骨。
+    attribution: 确凿
+    excerpt: 月皎惊乌栖不定，更漏将残，辘轳牵金井。唤起两眸清炯炯，泪花落枕红绵冷。
+    text_display: excerpt
+    themes: [离别, 夜]
+    influence: 泪花落枕一联被推为写别情睡态的神来之笔。
+    source_ids: [src-qingzhenji]
+
+  - work_id: man-ting-fang-feng-lao-ying-chu
+    title: 满庭芳·风老莺雏
+    alt_titles: [满庭芳·夏日溧水无想山作]
+    genre: 词（慢词）
+    date:
+      text: 知溧水县期间（约1090年代前期）
+      year: 1090
+      range_end: 1096
+      precision: 范围
+    place: 溧水无想山
+    context: 溧水县斋夏日遣怀，地卑山近衣润费炉烟写江南卑湿，且莫思身外长近尊前为其失意自宽之语。
+    attribution: 确凿
+    excerpt: 风老莺雏，雨肥梅子，午阴嘉树清圆。地卑山近，衣润费炉烟。
+    text_display: excerpt
+    themes: [夏日, 宦游]
+    influence: 风老莺雏雨肥梅子化用杜牧诗句点化无痕，为用典典范。
+    confidence: 存疑
+    dispute: 作年系知溧水任上通说，词题所系地点为主要依据，确年无考。
+    source_ids: [src-qingzhenji]
+
+  - work_id: xi-he-jin-ling-huai-gu
+    title: 西河·金陵怀古
+    alt_titles: [西河·大石金陵]
+    genre: 词（慢词，隐括体）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: 金陵
+    context: 全篇隐括化用刘禹锡石头城乌衣巷与古乐府石城乐成篇，示范集句隐括法——旧句翻出新意，浑然如己出。
+    attribution: 确凿
+    excerpt: 佳丽地，南朝盛事谁记？山围故国周遭在，潮打孤城寂寞。
+    text_display: excerpt
+    themes: [怀古]
+    influence: 词体隐括唐人成句的教科书级范例，张炎词源称其采唐诗融化如自己出。
+    source_ids: [src-qingzhenji]
+
+  - work_id: rui-long-yin-zhang-tai-lu
+    title: 瑞龙吟·章台路
+    alt_titles: []
+    genre: 词（慢词，自度曲）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: 京师开封（一说）
+    context: 重访坊陌故人不在的追忆之作，双拽头结构为自度曲声律安排的名案。归骑晚纤纤池塘飞雨断肠院落一帘风絮。
+    attribution: 确凿
+    excerpt: 章台路，还见褪粉梅梢，试花桃树。愔愔坊陌人家，定巢燕子，归来旧处。
+    text_display: excerpt
+    themes: [怀旧, 坊陌]
+    influence: 清真压卷之作之一，周济称其不过人面桃花旧曲翻新耳，然层层脱换笔笔勾勒。
+    source_ids: [src-qingzhenji]
+
+  - work_id: yu-lou-chun-tao-xi-bu-zuo
+    title: 玉楼春·桃溪不作从容住
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 借刘晨阮肇天台山遇仙故事写情缘中断之恨，当时相候赤阑桥今日独寻黄叶路今昔对勘。
+    attribution: 确凿
+    excerpt: 桃溪不作从容住，秋藕绝来无续处。当时相候赤阑桥，今日独寻黄叶路。……人如风后入江云，情似雨馀粘地絮。
+    text_display: excerpt
+    themes: [艳情, 悔别]
+    influence: 结拍人如风后入江云情似雨馀粘地絮被推为对仗言情绝诣。
+    source_ids: [src-qingzhenji]
+
+footprints:
+  - name: 钱塘
+    modern_name: 浙江省杭州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 出生与少年时期
+      year: 1056
+      range_end: 1077
+      precision: 范围
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-songshi-vol444]
+  - name: 京师开封
+    modern_name: 河南省开封市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 元丰初游学献赋，此后太学正、秘书省、大晟府诸京职所在
+      year: 1078
+      range_end: 1117
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-songshi-vol444]
+  - name: 庐州
+    modern_name: 安徽省合肥市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 元祐间教授庐州
+      year: 1086
+      range_end: 1090
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任期区间系学界依宋史叙次推定。
+    source_ids: [src-songshi-vol444]
+  - name: 溧水
+    modern_name: 江苏省南京市溧水区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约元祐末绍圣间知溧水县
+      year: 1090
+      range_end: 1096
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任期区间系学界依宋史叙次与词作系年推定。
+    source_ids: [src-songshi-vol444]
+  - name: 隆德府与明州
+    modern_name: 山西省长治市、浙江省宁波市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 徽宗朝先后知隆德府、徙明州
+      year: 1115
+      precision: 约
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 两任先后见于宋史叙次，确年无载。
+    source_ids: [src-songshi-vol444]
+  - name: 顺昌府
+    modern_name: 安徽省阜阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 提举大晟府后未几出知顺昌府
+      year: 1117
+      range_end: 1120
+      precision: 范围
+    kind: 任职
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任期区间系由大晟府提举通说年份顺推。
+    source_ids: [src-songshi-vol444]
+  - name: 处州
+    modern_name: 浙江省丽水市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 晚年徙知处州，史文叙次其后即卒，年六十六
+      year: 1121
+      precision: 约
+    kind: 逝世
+    route_order: 7
+    memorial_only: false
+    confidence: 存疑
+    dispute: 宋史叙徙处州卒年六十六，未明言卒地；卒年干支系学界通说推定。
+    source_ids: [src-songshi-vol444]
+
+relations:
+  - relation_type: 社群
+    target_id: liuyong
+    direction: 双向
+    period:
+      text: 词史谱系上的先后承续，非同时交往
+      year: 1000
+      range_end: 1121
+      precision: 范围
+    evidence: 此为词史谱系归纳而非交往记载：柳永创制慢词长调体制，周邦彦承其体式而精严格律、审定音声，成为格律派集大成者；历代词论惯以周柳并称对照慢词发展两阶段。二人相隔约一代，无任何直接交往的文字记载。
+    inferred: true
+    confidence: 确定
+    source_ids: [src-songshi-vol444, src-qingzhenji]
+
+reception:
+  - era: 同时代
+    evaluator: 宋神宗（读汴都赋后）
+    quote: 神宗异之，命侍臣读于迩英阁，召赴政事堂。
+    text_display: excerpt
+    comment: 宋史本传所记，一介太学生以赋受知人主的原始评价记录，是其早年声名的直接来源。
+    source_ids: [src-songshi-vol444]
+  - era: 同时代
+    evaluator: 宋史本传总评（元人所辑宋世公论）
+    quote: 好音乐，能自度曲，制乐府长短句，词韵清蔚，传于世。
+    text_display: excerpt
+    comment: 正史对其词乐兼擅的盖棺定论，词韵清蔚四字是官方文本层面的风格判语。
+    source_ids: [src-songshi-vol444]
+  - era: 历代批评
+    evaluator: 南宋·陈郁《藏一话腴》（外编）
+    quote: 二百年来以乐府独步。贵人、学士、市儇、妓女，皆知美成词为可爱。
+    text_display: excerpt
+    comment: 南宋人笔记中的顶级定位，兼记其词雅俗共赏传播之广。该书为宋代公版文献，此处仅收短引；来源注册表暂未登记该条目，引用边界以本短引为限。
+    confidence: 存疑
+    dispute: 各本文字小异（或作贵人学士市儇妓女皆知／知美成词为可爱），引文从中华书局通行整理本常见形态，版本文字尚待核验。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦提举大晟府的机构职能与其词律关系、自度曲与犯调的音乐学还原、清真词编年笺证及王国维清真先生遗事以来的批评史重估等议题；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 苏幕遮燎沉香长期入选中学语文教材，叶上初阳干宿雨水面清圆一一风荷举成为公共记忆中的咏荷名句。教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播
+    quote: ""
+    text_display: none
+    comment: 与李师师的传奇故事在网络与影视改编中被反复敷演，然该叙事源自贵耳集等笔记层材料，史料价值等同于小说家言；本卷不著录具体影视作品以免权利状态不明。
+    source_ids: []
+
+sources_used: [src-songshi-vol444, src-qingzhenji]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。15条年谱、9首作品、7组足迹、1组关系、6层接受史；宋史卷444实取，卒年生年均落dispute；李师师轶事标传说不采}

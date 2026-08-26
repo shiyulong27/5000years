@@ -1,0 +1,634 @@
+# 岳飞全景详卷（schema v1）——首个 field=军事 的非文学人物适配性样板
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# 【正史本传层】宋史·卷365·列传第一百二十四·岳飞传（维基文库实取，URL: https://zh.wikisource.org/wiki/宋史/卷365）
+# | 事实点 | 本传原文（节录） | 结论与置信 |
+# |---|---|---|
+# | 名号籍贯 | 岳飛字鵬舉，相州湯陰人。世力農。父和，能節食以濟饑者 | 确定 |
+# | 少年气质 | 少負氣節，沈厚寡言，家貧力學，尤好左氏春秋、孫吳兵法。生有神力，未冠，挽弓三百斤，弩八石。學射於周同 | 确定 |
+# | 首次应募 | 宣和四年，真定宣撫劉韐募敢戰士，飛應募 | 确定（唯一系年的从军起点；「四次从军」为后世综述，见dispute） |
+# | 宗泽麾下 | 戰開德、曹州皆有功，澤大奇之……授以陣圖。飛曰：「陣而後戰，兵法之常，運用之妙，存乎一心。」澤是其言 | 确定 |
+# | 谏杜充南撤 | 杜充將還建康，飛曰：「中原地尺寸不可棄，今一舉足，此地非我有，他日欲復取之，非數十萬眾不可。」充不聽 | 确定 |
+# | 军纪与口碑 | 軍無見糧，將士忍饑，不敢擾民。金所籍兵相謂曰：「此岳爺爺軍。」爭來降附；軍號「凍死不拆屋，餓死不鹵掠。」敵為之語曰：「撼山易，撼岳家軍難。」 | 确定（军事制度类条目入timeline之本传支撑） |
+# | 收复建康 | 兀朮趨建康，飛設伏牛頭山待之……兀朮奔淮西，遂復建康 | 确定 |
+# | 襄汉六郡 | 飛奏：「襄陽等六郡為恢復中原基本，今當先取六郡，以除心膂之病。」遂復郢隨襄陽鄧唐信陽 | 确定 |
+# | 连结河朔 | 紹興五年，飛遣梁興等布德意，招結兩河豪傑……其所揭旗以「岳」為號……自燕以南，金號令不行 | 确定 |
+# | 郾城大捷 | 兀朮有勁軍……號「拐子馬」……飛戒步卒以麻札刀入陣，勿仰視，第斫馬足……遂大敗之。兀朮大慟曰：「自海上起兵，皆以此勝，今已矣！」 | 确定 |
+# | 背嵬军 | 貴將遊奕、雲將背嵬戰于城西；遣驍將以背嵬騎五百奮擊，大破之 | 确定（背嵬为岳飞亲军番号，本传三见） |
+# | 朱仙镇 | 飛進軍朱仙鎮，距汴京四十五里，與兀朮對壘而陣 | 本传明载照录；近现代学者考辨为岳珂系统增饰（见dispute，属后世考证层） |
+# | 直捣黄龙 | 飛大喜，語其下曰：「直抵黃龍府，與諸君痛飲爾！」 | 确定 |
+# | 十二金牌 | 一日奉十二金字牌，飛憤惋泣下，東向再拜曰：「十年之力，廢於一旦。」民遮馬慟哭……哭聲震野 | 确定 |
+# | 罢兵权 | 授樞密副使，位參知政事上，飛固請還兵柄 | 确定 |
+# | 背刺四字 | 初命何鑄鞠之，飛裂裳以背示鑄，有「盡忠報國」四大字，深入膚理。既而閱實無左驗，鑄明其無辜。改命万俟禼 | 确定。注意：背刺原文是「盡忠報國」，「精忠報國」是后世混同高宗手書「精忠岳飛」旗而来的通俗说法 |
+# | 死因与年龄 | 嵗暮，獄不成，檜手書小紙付獄，即報飛死，時年三十九 | 确定（本传仅记「歲暮」不系日；绍兴十一年岁暮合公历已入1142年初） |
+# | 莫须有 | 獄之將上也，韓世忠不平，詣檜詰其實，檜曰：「飛子雲與張憲書雖不明，其事體莫須有。」世忠曰：「『莫須有』三字，何以服天下？」 | 确定。「莫须有」出自韩世忠问语中的秦桧答语，本传铁证 |
+# | 身后平反 | 孝宗詔復飛官，以禮改葬……建廟於鄂，號忠烈。淳熙六年，謚武穆。嘉定四年，追封鄂王 | 确定。注意：本传无「改諡忠武」，该后续谥变属本传之外的文献层（见reception dispute） |
+# | 五子与岳珂线索 | 五子：雲、雷、霖、震、霆。霖子珂，以淮西十五御札辯驗彙次……嘉定間，為籲天辯誣集五卷、天定錄二卷上之 | 确定（《金佗稡编》线索由本传附传导航：岳珂为霖之子，《籲天辯誣集》即金佗系统文献；金佗稡编原书站内检索未获独立全文页，本卷按转述层处理） |
+# | 论赞 | 論曰：西漢而下……求其文武全器、仁智并施如宋岳飛者，一代豈多見哉……真有諸葛孔明之風，而卒死於秦檜之手……高宗忍自棄其中原，故忍殺飛，嗚呼冤哉！嗚呼冤哉！ | 确定（元代史臣论赞，入reception历代批评层） |
+#
+# 【文集层】作品三件均实取维基文库单篇页公版文本：
+# - 满江红 https://zh.wikisource.org/wiki/滿江紅_(怒髮衝冠)（页面自身标注「此詞是否為岳飛作，未有定論。一說為明人假借岳飛之名而作」，脚注「約明中後期『金』改为『天』」——著作权公案的文库内直接证据）
+# - 小重山 https://zh.wikisource.org/wiki/小重山_(岳飛)（瑶琴/瑶箏异文页注详列花草稡编词综岳武穆遗文历代诗餘诸本）
+# - 池州翠微亭 https://zh.wikisource.org/wiki/池州翠微亭
+# 单篇页来源尚未登记 data/sources.yaml，建议主会话新增 src-manjianghong（或分立三条）；登记前各作品条暂挂 src-songshi-vol365 并在此声明。
+#
+# 【后世考证层】朱仙镇之战真伪（邓广铭等考辨为岳珂增饰）、满江红著作权（余嘉锡夏承焘等明代说与辩驳方之争）、《金佗稡编》史料层次——均按近现代学术层中立转述，不引现代原文。
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: yuefei
+
+profile:
+  courtesy_name: 鹏举
+  art_name: ""
+  aliases: [岳武穆, 岳忠武（后世谥称）, 岳爷爷（金军呼）]
+  gender: 男
+  ethnicity: ""
+  ancestry: 相州汤阴
+  birthplace: 相州汤阴
+  death_place: 临安大理寺狱（据本传鞫狱于大理寺及檜手書小紙付獄推定）
+  offices: [承信郎, 秉义郎, 留守司统制, 通泰镇抚使兼知泰州, 神武右军副统制, 神武副军都统制, 神武后军都统制, 清远军节度使, 检校少保, 太尉, 宣抚使兼营田大使, 少保河南北诸路招讨使, 枢密副使, 万寿观使奉朝请, 武昌郡开国公（进封）]
+  fields: [军事]
+  roles: [军事家]
+  summary: 南宋中兴诸将之首，农家出身以列校拔起的一代军事家——治军严明（冻死不拆屋饿死不掳掠）、用兵存乎一心，收复襄汉六郡、郾城大破拐子马、连结河朔谋恢复；绍兴十年北伐功败垂成于十二道金字牌，绍兴十一年岁暮被赐死于大理寺狱，年三十九，狱成于「莫须有」三字；孝宗时平反改葬，谥武穆，后追封鄂王，成为中国历史上精忠符号与悲剧名将的双重原型。
+
+timeline:
+  # ── 阶段一：汤阴农家与四次从军 ──────────────────────────────
+  - stage: 汤阴农家与四次从军
+    stage_order: 1
+    title: 生于相州汤阴农家
+    date:
+      text: 约1103年（由卒年三十九倒推的通行说）
+      year: 1103
+      precision: 约
+    place: 相州汤阴
+    summary: 岳飛字鵬舉，相州湯陰人。世力農。飛生時有大禽若鵠飛鳴室上，因以為名；未彌月河決內黃，母姚抱飛坐甕中衝濤及岸得免。生年本传不载，由卒年「時年三十九」按虚岁倒推定为1103年。
+    confidence: 存疑
+    dispute: 正史不载生年；1103年为据卒年三十九倒推的通行说，细部月份无考。
+    source_ids: [src-songshi-vol365]
+  - stage: 汤阴农家与四次从军
+    stage_order: 2
+    title: 家贫力学，学射周同
+    date:
+      text: 少年时期，具体年代不详
+      precision: 未知
+    place: 汤阴
+    summary: 少負氣節，沈厚寡言，家貧力學，尤好左氏春秋、孫吳兵法。生有神力，未冠挽弓三百斤弩八石；學射於周同盡其術能左右射，同死朔望設祭於其冢。父義之曰汝為時用其徇國死義乎。
+    source_ids: [src-songshi-vol365]
+  - stage: 汤阴农家与四次从军
+    stage_order: 3
+    title: 宣和四年应真定府募敢战士，计擒陶俊
+    date:
+      text: "1122年（宣和四年）"
+      year: 1122
+      precision: 精确
+    place: 真定府、相州
+    summary: 宣和四年真定宣撫劉韐募敢戰士，飛應募。相有劇賊陶俊賈進和，飛請百騎滅之——遣卒偽為商入賊境，伏兵山下，陽北誘敵，擒俊及進和以歸。此为本传唯一系年的从军起点。
+    confidence: 存疑
+    dispute: 通俗叙述常称岳飞「四次从军」（真定、平定军等），系综合他书与年谱的合计说法；本传仅明书宣和四年应募一次及其后随刘浩、归宗泽等经历，「四次」之说引用时须注明非本传明文。
+    source_ids: [src-songshi-vol365]
+  - stage: 汤阴农家与四次从军
+    stage_order: 4
+    title: 招降吉倩，滑南斩枭将，迁秉义郎隶宗泽
+    date:
+      text: 约1126—1127年间（靖康之际）
+      year: 1126
+      range_end: 1127
+      precision: 范围
+    place: 相州、李固渡、滑州
+    summary: 康王至相，飛因劉浩見，命招賊吉倩，倩以眾三百八十人降，補承信郎。以鐵騎三百往李固渡嘗敵敗之；與敵相持於滑南，獨馳迎敵斬舞刀梟將，敵大敗。遷秉義郎，隸留守宗澤。
+    confidence: 存疑
+    dispute: 此段战事系于靖康至建炎初，本传叙事连贯而不逐条系年，年份据康王开帅府时间推定。
+    source_ids: [src-songshi-vol365]
+
+  # ── 阶段二：宗泽麾下与建康收复 ──────────────────────────────
+  - stage: 宗泽麾下与建康收复
+    stage_order: 5
+    title: 战开德曹州，答宗泽「运用之妙，存乎一心」
+    date:
+      text: 约1127—1128年间（宗泽留守东京时期）
+      year: 1127
+      range_end: 1128
+      precision: 范围
+    place: 开德、曹州、汴京
+    summary: 戰開德、曹州皆有功，澤大奇之曰爾勇智才藝古良將不能過然好野戰非萬全計，因授以陣圖。飛曰：「陣而後戰，兵法之常，運用之妙，存乎一心。」澤是其言——宋代军事思想史上最著名的将帅问答之一。
+    confidence: 存疑
+    dispute: 本传不系年，从宗泽任东京留守时段推定。
+    source_ids: [src-songshi-vol365]
+  - stage: 宗泽麾下与建康收复
+    stage_order: 6
+    title: 越职上书夺官，诣张所说河北
+    date:
+      text: 约1127年（康王即位之初）
+      year: 1127
+      precision: 约
+    place: 汴京、河北
+    summary: 康王即位，飛上書數千言请乘敵穴未固親率六軍北渡，書聞，以越職奪官歸。詣河北招討使張所，所待以國士；飛論勇不足恃用兵在先定謀，又陈凭据要冲峙列重镇固守河北之策，所大喜。
+    confidence: 存疑
+    dispute: 上书与诣张所均在建炎元年前后，本传不系年。
+    source_ids: [src-songshi-vol365]
+  - stage: 宗泽麾下与建康收复
+    stage_order: 7
+    title: 从王彦渡河拔新乡，太行山擒拓跋耶乌
+    date:
+      text: 约1127—1128年间
+      year: 1127
+      range_end: 1128
+      precision: 范围
+    place: 新乡、侯兆川、太行山
+    summary: 命從王彥渡河，飛獨引所部鏖戰奪其纛遂拔新鄉；戰侯兆川身被十餘創士皆死戰；食盡走彥壁乞糧彥不許，引兵益北戰于太行山，單騎持丈八鐵槍刺殺黑風大王。自知與彥有隙，復歸宗澤。
+    confidence: 存疑
+    dispute: 本传不系年；与王彦之隙的曲直两说不一，本传仅记事实经过。
+    source_ids: [src-songshi-vol365]
+  - stage: 宗泽麾下与建康收复
+    stage_order: 8
+    title: 泣谏杜充：中原地尺寸不可弃
+    date:
+      text: 约1129年（建炎三年）
+      year: 1129
+      precision: 约
+    place: 建康
+    summary: 杜充將還建康，飛曰：「中原地尺寸不可棄，今一舉足，此地非我有，他日欲復取之，非數十萬眾不可。」充不聽。後金人寇烏江充閉門不出，飛泣諫請視師，充竟不出，金人遂由馬家渡渡江。
+    confidence: 存疑
+    dispute: 杜充弃开封南撤在建炎三年，本传不系年；马家渡之战诸将溃散中獨飛力戰。
+    source_ids: [src-songshi-vol365]
+  - stage: 宗泽麾下与建康收复
+    stage_order: 9
+    title: 广德六捷、牛头山设伏，收复建康
+    date:
+      text: 约1130年（建炎四年）
+      year: 1130
+      precision: 约
+    place: 广德、宜兴、镇江、建康
+    summary: 會充已降金，諸將多行剽掠，惟飛軍秋毫無所犯。兀朮趨杭州，飛要擊至廣德境中六戰皆捷；駐軍鍾村軍無見糧將士忍饑不敢擾民，金所籍兵相謂曰此岳爺爺軍爭來降附。兀朮趨建康，飛設伏牛頭山夜令百人黑衣混金營擾之，大破之于新城，兀朮奔淮西，遂復建康。
+    confidence: 存疑
+    dispute: 收复建康在建炎四年（1130），本传不逐事系年；「岳爺爺軍」军民口碑为本传直书。
+    source_ids: [src-songshi-vol365]
+
+  # ── 阶段三：襄汉六郡与郾城大捷 ──────────────────────────────
+  - stage: 襄汉六郡与郾城大捷
+    stage_order: 10
+    title: 高宗手书「精忠岳飞」制旗以赐
+    date:
+      text: 约1133年（绍兴三年）
+      year: 1133
+      precision: 约
+    place: 临安行在
+    summary: 秋，入見，帝手書「精忠岳飛」字，製旗以賜之。授鎮南軍承宣使、江南西路沿江制置使，又改神武後軍都統制。——「精忠」二字的国家授受是后世「精忠报国」俗说的官方源头。
+    confidence: 存疑
+    dispute: 手書賜旗本传系于绍兴三年秋；「精忠報國」四字連用係后世将赐旗「精忠」与本传背刺「盡忠報國」混同而成的通俗说法，引用时须分层。
+    source_ids: [src-songshi-vol365]
+  - stage: 襄汉六郡与郾城大捷
+    stage_order: 11
+    title: 收复襄汉六郡
+    date:
+      text: 约1134年（绍兴四年）
+      year: 1134
+      precision: 约
+    place: 郢州、随州、襄阳、邓州、唐州、信阳军
+    summary: 飛奏襄陽等六郡為恢復中原基本今當先取六郡以除心膂之病；趙鼎曰知上流利害無如飛者。渡江中流顧幕屬曰飛不擒賊不涉此江。鼓眾登郢州，偽將京超投崖死；趣襄陽破李成，復鄧州唐州信陽軍。帝喜曰朕素聞岳飛行軍有紀律未知能破敵如此。尋授清遠軍節度使。
+    confidence: 存疑
+    dispute: 六郡之役在绍兴四年，本传叙于「四年」条下；营田之议自是兴。
+    source_ids: [src-songshi-vol365]
+  - stage: 襄汉六郡与郾城大捷
+    stage_order: 12
+    title: 八日平杨么：以水寇攻水寇
+    date:
+      text: 约1135年（绍兴五年）
+      year: 1135
+      precision: 约
+    place: 鼎州、洞庭湖
+    summary: 所部皆西北人不習水戰，飛曰兵何常顧用之何如耳。先遣黃佐楊欽等招降离析其腹心，伐君山木為巨筏塞諸港汊腐木亂草浮上流壅賊車輪，楊么投水牛皋擒斬之，果八日而賊平。浚嘆曰岳侯神算也。
+    confidence: 存疑
+    dispute: 平杨么在绍兴五年，本传叙事不另系年。
+    source_ids: [src-songshi-vol365]
+  - stage: 襄汉六郡与郾城大捷
+    stage_order: 13
+    title: 军纪制度化：「冻死不拆屋，饿死不卤掠」
+    date:
+      text: 岳家军治军通则，本传总叙不系年
+      precision: 未知
+    place: 鄂州军中
+    summary: 師每休舍課將士注坡跳壕皆重鎧習之；卒有取民麻一縷以束芻者立斬以徇；卒夜宿民開門願納無敢入者。軍號「凍死不拆屋，餓死不鹵掠。」凡有頒犒均給軍吏秋毫不私。善以少擊眾，謀定而後戰故有勝無敗，敵為之語曰：「撼山易，撼岳家軍難。」又調軍食必蹙額曰東南民力耗敝極矣，募民營田歲省漕運之半——纪律、训练、后勤、屯田构成完整的治军制度体系。
+    source_ids: [src-songshi-vol365]
+  - stage: 襄汉六郡与郾城大捷
+    stage_order: 14
+    title: 连结河朔之谋：遣梁兴招结两河豪杰
+    date:
+      text: 自约1135年起布局，1140年收效
+      year: 1135
+      range_end: 1140
+      precision: 范围
+    place: 太行山、两河
+    summary: 先是紹興五年飛遣梁興等布德意招結兩河豪傑，山砦韋銓孫謀等歛兵固堡以待王師，李通胡清李寶李興等舉眾來歸，金人動息山川險要一時皆得其實。紹興十年梁興會太行忠義及兩河豪傑累戰皆捷，自燕以南金號令不行，河北簽軍無一人從者，金帥烏陵思謀但諭其下曰毋輕動俟岳家軍來即降。
+    source_ids: [src-songshi-vol365]
+  - stage: 襄汉六郡与郾城大捷
+    stage_order: 15
+    title: 郾城大捷：麻札刀斫马足大破拐子马
+    date:
+      text: "1140年（绍兴十年）"
+      year: 1140
+      precision: 精确
+    place: 郾城
+    summary: 兀朮合龍虎大王蓋天大王與韓常之兵逼郾城。飛遣子雲領騎兵直貫其陣戒之曰不勝先斬汝，鏖戰數十合賊屍布野。初兀朮有勁軍皆重鎧貫以韋索三人為聯號拐子馬，是役以萬五千騎來，飛戒步卒以麻札刀入陣勿仰視第斫馬足，拐子馬相連一馬仆二馬不能行，官軍奮擊遂大敗之。兀朮大慟曰自海上起兵皆以此勝今已矣。
+    confidence: 存疑
+    dispute: 郾城之役本传系于绍兴十年明文；「三人相联号拐子马」的战术解释近现代学者（如邓广铭）另有专考商榷（转述层，见reception）。
+    source_ids: [src-songshi-vol365]
+  - stage: 襄汉六郡与郾城大捷
+    stage_order: 16
+    title: 颍昌背嵬决胜，进驻朱仙镇，「直抵黄龙府」
+    date:
+      text: "1140年（绍兴十年）"
+      year: 1140
+      precision: 精确
+    place: 颍昌、朱仙镇
+    summary: 方郾城再捷飛謂雲曰賊屢敗必還攻潁昌汝宜速援王貴。既而兀朮果至，雲以騎兵八百挺前決戰步軍張左右翼繼之，殺兀朮婿夏金吾，兀朮遁去。飛進軍朱仙鎮距汴京四十五里，遣驍將以背嵬騎五百奮擊大破之。飛大喜語其下曰：「直抵黃龍府，與諸君痛飲爾！」
+    confidence: 存疑
+    dispute: 朱仙镇之战本传明载照录；惟近现代学者（邓广铭等）考辨此役为岳珂《金佗稡编》系统的增饰，宋人当时文书未见其功（后世考证层转述），引用时须双注。
+    source_ids: [src-songshi-vol365]
+
+  # ── 阶段四：十二金牌与十年之功 ──────────────────────────────
+  - stage: 十二金牌与十年之功
+    stage_order: 17
+    title: 一日奉十二金字牌班师：「十年之力，废于一旦」
+    date:
+      text: "1140年（绍兴十年）七月中旬前后"
+      year: 1140
+      precision: 约
+    place: 郾城—朱仙镇一线
+    summary: 方指日渡河，而檜欲畫淮以北棄之，風臺臣請班師；先請張俊楊沂中歸，而後言飛孤軍不可久留乞令班師。一日奉十二金字牌，飛憤惋泣下，東向再拜曰：「十年之力，廢於一旦。」民遮馬慟哭訴曰我等戴香盆運糧草以迎官軍金人悉知之相公去我輩無噍類矣。飛亦悲泣取詔示之曰吾不得擅留。哭聲震野，飛留五日以待其徙，從而南者如市。
+    confidence: 存疑
+    dispute: 「十二金字牌」之「十二」为本传明文；班师确切日期本传不载，「七月中旬前后」系据绍兴十年战程推定。
+    source_ids: [src-songshi-vol365]
+
+  # ── 阶段五：枢府罢权与风波狱 ──────────────────────────────
+  - stage: 枢府罢权与风波狱
+    stage_order: 18
+    title: 明升暗夺：授枢密副使罢兵权
+    date:
+      text: "1141年（绍兴十一年）四月"
+      year: 1141
+      precision: 约
+    place: 临安
+    summary: 時和議既決，檜患飛異己，乃密奏召三大將論功行賞。韓世忠張俊已至飛獨後，檜又用王次翁計俟之六七日。既至，授樞密副使位參知政事上，飛固請還兵柄——以枢府虚衔收三大将兵权的制度化削藩之举。
+    confidence: 存疑
+    dispute: 除枢副在本传系于绍兴十一年，月日据三大将赴行在时序推定。
+    source_ids: [src-songshi-vol365]
+  - stage: 枢府罢权与风波狱
+    stage_order: 19
+    title: 万俟禼劾飞，还两镇节；张俊构陷诱王俊诬告张宪
+    date:
+      text: "1141年（绍兴十一年）"
+      year: 1141
+      precision: 约
+    place: 临安
+    summary: 檜志未伸也，以谏议大夫万俟禼与飞有怨风禼劾飞，又风中丞何鑄侍御史羅汝楫交章彈論；飛累章請罷樞柄，尋還兩鎮節充萬壽觀使奉朝請。又諭張俊令劫王貴誘王俊誣告張憲謀還飛兵——罗织之网由党争与私人恩怨层层结成。
+    source_ids: [src-songshi-vol365]
+  - stage: 枢府罢权与风波狱
+    stage_order: 20
+    title: 何铸鞫狱，裂裳示背「尽忠报国」四大字
+    date:
+      text: "1141年（绍兴十一年）冬"
+      year: 1141
+      precision: 约
+    place: 临安大理寺狱
+    summary: 檜遣使捕飛父子證張憲事，使者至，飛笑曰皇天后土可表此心。初命何鑄鞠之，飛裂裳以背示鑄，有「盡忠報國」四大字深入膚理。既而閱實無左驗，鑄明其無辜，改命万俟禼。禼誣飛與憲書令虛申探報以動朝廷，且言其書已焚。
+    confidence: 存疑
+    dispute: 背刺四字本传作「盡忠報國」而非「精忠報國」；狱址大理寺系由鞫狱官何鑄万俟禼职任及「下棘寺」语推定。
+    source_ids: [src-songshi-vol365]
+  - stage: 枢府罢权与风波狱
+    stage_order: 21
+    title: 岁暮狱不成，檜手书小纸付狱，飞死，时年三十九
+    date:
+      text: 绍兴十一年岁暮（公历已入1142年初）
+      year: 1142
+      precision: 约
+    place: 临安大理寺狱
+    summary: 飛坐繫兩月無可證者。或教禼以臺章所指淮西事為言，傅會其獄。嵗暮，獄不成，檜手書小紙付獄，即報飛死，時年三十九。雲棄市。籍家貲徙家嶺南，幕屬于鵬等從坐者六人。狱中大理寺丞李若樸何彥猷大理卿薛仁輔並言飛無罪俱被劾，宗正卿士㒟請以百口保飛亦劾竄死，布衣劉允升上書訟冤下棘寺以死。
+    confidence: 存疑
+    dispute: 本传仅记「嵗暮」不系日；绍兴十一年农历岁暮换算公历已在1142年初（通行作1142年1月末），L1卒年1142与此闭合；赐死的具体方式本传不载细节。
+    source_ids: [src-songshi-vol365]
+  - stage: 枢府罢权与风波狱
+    stage_order: 22
+    title: 韩世忠诣桧诘实：「莫须有」三字何以服天下
+    date:
+      text: "1141年末—1142年初，狱案将上之时"
+      year: 1141
+      range_end: 1142
+      precision: 范围
+    place: 临安
+    summary: 獄之將上也，韓世忠不平，詣檜詰其實，檜曰：「飛子雲與張憲書雖不明，其事體莫須有。」世忠曰：「『莫須有』三字，何以服天下？」——「莫须有」自此成为中国法律史上冤狱的代名词。時洪皓在金國中蠟書馳奏，以為金人所畏服者惟飛至以父呼之，諸酋聞其死酌酒相賀。
+    source_ids: [src-songshi-vol365]
+  - stage: 枢府罢权与风波狱
+    stage_order: 23
+    title: 身后平反：孝宗复官改葬，谥武穆，追封鄂王
+    date:
+      text: 孝宗即位初复官改葬；淳熙六年(1179)謚武穆；嘉定四年(1211)追封鄂王
+      year: 1162
+      range_end: 1211
+      precision: 范围
+    place: 临安、鄂州
+    summary: 檜死后议复飛官，万俟禼犹沮之；太學生程宏圖上書訟冤，故部曲合辭訟之哭聲雷震。孝宗詔復飛官以禮改葬賜錢百萬求其後悉官之，建廟於鄂號忠烈。淳熙六年謚武穆，嘉定四年追封鄂王。
+    confidence: 存疑
+    dispute: 本传止于「追封鄂王」；后世通称的「改諡忠武」（宝庆间）不见于本传，属本传之外文献层，本卷不作为本传事实著录。
+    source_ids: [src-songshi-vol365]
+
+works:
+  # 三件作品文本均实取维基文库单篇页（简体转录自页面繁体原文，通行本层）；
+  # 单篇页来源未登记前暂挂 src-songshi-vol365，建议主会话新增登记后翻转。
+  - work_id: manjianghong-nufachongguan-xiehuai
+    title: 满江红·怒发冲冠
+    alt_titles: [满江红·写怀]
+    genre: 词（慢词）
+    date:
+      text: 创作年代无定说；若为岳作当系绍兴间，若为明人拟托则系明中期以后
+      precision: 未知
+    place: ""
+    context: 怒发冲冠凭栏处潇潇雨歇起笔，三十功名尘与土八千里路云和月，靖康耻犹未雪臣子恨何时灭，待从头收拾旧山河朝天阙——中国传播度最高的爱国词。
+    attribution: 存疑
+    excerpt: 怒发冲冠，凭阑处、萧萧雨歇。擡望眼，仰天长啸，壮怀激烈。……三十功名尘与土，八千里路云和月。……靖康耻，犹未雪；臣子恨，何时灭？……待从头、收拾旧山河，朝天阙。
+    text_display: excerpt
+    themes: [报国, 靖康之愤, 收复]
+    influence: 国民记忆层面的第一爱国词，其著作权公案本身也成为学术史名案。
+    confidence: 有争议
+    dispute: 著作权公案：此词宋代文献无征，明代始见于著录；维基文库单篇页自身标注「此詞是否為岳飛作，未有定論。一說為明人假借岳飛之名而作」，并注「約明中後期『金』改为『天』」。近现代学界余嘉锡、夏承焘等主明代说（贺兰山方位、岳飞孙辈未辑此词等为疑点），另有学者力主岳作说，双方论辩至今未决——本卷按近现代学术层中立转述双方立场，不引现代原文，attribution 著录为存疑。
+    source_ids: [src-manjianghong]
+
+  - work_id: xiaochongshan-zuoye-hanqun-buzhu-ming
+    title: 小重山·昨夜寒蛩不住鸣
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代无定说，多系于绍兴和议前后
+      year: 1138
+      range_end: 1141
+      precision: 范围
+    place: ""
+    context: 昨夜寒蛩不住鸣惊回千里梦已三更，欲將心事付瑤琴知音少弦斷有誰聽——与其豪迈公共形象相对的幽独一面，主战者孤怀无人可诉的心声。
+    attribution: 确凿
+    excerpt: 昨夜寒蛩不住鸣。惊回千里梦，已三更。起来独自绕阶行。人悄悄，帘外月胧明。白首为功名。旧山松竹老，阻归程。欲将心事付瑶琴。知音少，弦断有谁听？
+    text_display: full
+    themes: [孤怀, 知音难觅, 归乡受阻]
+    influence: 岳飞传世词中最可靠的一首，展示其词风的另一极，常与满江红对读。
+    confidence: 确定
+    dispute: 归属争议较满江红为少（本卷从通行较可靠说著录为确凿）；惟文本仍赖明代以降辑本传世，异文有瑶琴/瑶筝两系（明陈耀文花草稡编清朱彝尊词综及钦定四库全书岳武穆遗文作瑶琴，历代诗馀引陈郁藏一话腴作瑶筝——文库页注实取），系年只能框定于和议前后。
+    source_ids: [src-xiaochongshan-yuefei]
+
+  - work_id: chizhou-cuiweiting
+    title: 池州翠微亭
+    alt_titles: []
+    genre: 诗（七言绝句）
+    date:
+      text: 创作年代无定说，多系于绍兴间驻军沿江时期
+      year: 1134
+      range_end: 1141
+      precision: 范围
+    place: 池州翠微亭
+    context: 经年塵土滿征衣特特尋芳上翠微，好水好山看不足馬蹄催趁月明歸——戎马间隙的山水一瞥，武人诗中难得的明快之作。
+    attribution: 存疑
+    excerpt: 经年尘土满征衣，特特寻芳上翠微。好水好山看不足，马蹄催趁月明归。
+    text_display: full
+    themes: [军旅间隙, 山水]
+    influence: 岳飞传世诗作的代表，与经年塵土滿征衣的自画像互证其儒将气象。
+    confidence: 存疑
+    dispute: 此诗不见于宋元早期文献著录，赖明人所辑岳飞佚诗文一系文本传世（维基文库单篇页署南宋岳飞）；归属学界一般采信但无宋刻实证，故按存疑著录，系年仅能框定于驻军沿江时期。
+    source_ids: [src-chizhou-cuiweiting]
+
+footprints:
+  - name: 相州汤阴
+    modern_name: 河南省安阳市汤阴县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1103年生，少年时期在家乡务农习武
+      year: 1103
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-songshi-vol365]
+  - name: 真定府
+    modern_name: 河北省石家庄市正定县一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1122年应真定宣抚刘韐募敢战士"
+      year: 1122
+      precision: 精确
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-songshi-vol365]
+  - name: 开封、开德、曹州一线
+    modern_name: 河南省开封市、河南省濮阳市、山东省菏泽市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1127—1128年隶宗泽留守司，战开德曹州，答阵图之问
+      year: 1127
+      range_end: 1128
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    confidence: 存疑
+    dispute: 各战事本传不逐一系年，时段据宗泽留守任期推定。
+    source_ids: [src-songshi-vol365]
+  - name: 新乡、太行山
+    modern_name: 河南省新乡市及豫晋交界的太行山区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1127—1128年从王彦渡河拔新乡，转战太行山
+      year: 1127
+      range_end: 1128
+      precision: 范围
+    kind: 游历
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 渡河作战路线据本传地名序列推定。
+    source_ids: [src-songshi-vol365]
+  - name: 宜兴、建康
+    modern_name: 江苏省宜兴市、江苏省南京市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1130年移屯宜兴，设伏牛头山大破兀朮，收复建康
+      year: 1130
+      precision: 约
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    confidence: 存疑
+    dispute: 建炎四年战程本传不逐月系年。
+    source_ids: [src-songshi-vol365]
+  - name: 郢州、随州、襄阳、邓州
+    modern_name: 湖北省钟祥市、随州市、襄阳市及河南省邓州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1134年收复襄汉六郡，此后移屯鄂州经营上流
+      year: 1134
+      precision: 约
+    kind: 任职
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-songshi-vol365]
+  - name: 鄂州
+    modern_name: 湖北省武汉市武昌区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约绍兴四年以后长期移屯鄂州，为岳家军驻节之地
+      year: 1134
+      precision: 约
+    kind: 居住
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 本传记趙鼎奏乞令飛屯鄂岳及還軍鄂州数见，长驻格局由此推定。
+    source_ids: [src-songshi-vol365]
+  - name: 郾城、颍昌
+    modern_name: 河南省漯河市郾城区、许昌市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1140年自以轻骑驻郾城，大破拐子马；颍昌背嵬再捷"
+      year: 1140
+      precision: 精确
+    kind: 任职
+    route_order: 8
+    memorial_only: false
+    source_ids: [src-songshi-vol365]
+  - name: 朱仙镇、开封一线
+    modern_name: 河南省开封市祥符区朱仙镇及开封市区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1140年进军朱仙镇距汴京四十五里，旋奉金牌班师"
+      year: 1140
+      precision: 约
+    kind: 游历
+    route_order: 9
+    memorial_only: false
+    inferred: true
+    confidence: 有争议
+    dispute: 本传明载飛進軍朱仙鎮距汴京四十五里並錄其文，本卷照录；惟近现代学者（邓广铭等）考辨朱仙镇大捷为岳珂《金佗稡编》系统的增饰、当时行实文书无徵（后世考证层转述），故此足迹标inferred并有争议，采用与否须双注。
+    source_ids: [src-songshi-vol365]
+  - name: 临安大理寺狱
+    modern_name: 浙江省杭州市（南宋大理寺故地）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 绍兴十一年冬下狱，岁暮被害，时年三十九
+      year: 1141
+      range_end: 1142
+      precision: 范围
+    kind: 逝世
+    route_order: 10
+    memorial_only: false
+    confidence: 存疑
+    dispute: 狱址大理寺系据鞫狱官职任与下棘寺语推定；本传不载狱中地点细节。
+    source_ids: [src-songshi-vol365]
+  - name: 杭州西湖栖霞岭墓（岳王庙）
+    modern_name: 浙江省杭州市西湖区栖霞岭南麓岳王庙墓
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 孝宗诏以礼改葬于此（后世墓祀所在，今存）
+      year: 1162
+      precision: 约
+    kind: 纪念地
+    route_order: 11
+    memorial_only: true
+    inferred: true
+    confidence: 存疑
+    dispute: 本传仅记孝宗詔復飛官以禮改葬，不改葬地点；栖霞岭墓址为后世记载与现存遗迹，按纪念地著录。
+    source_ids: [src-songshi-vol365]
+
+# relations 说明：已 grep data/figures.yaml 全部 208 个 id，
+# 秦桧（qinhui）、韩世忠、张俊、宋孝宗均未入库，无可用的合规 target_id；
+# 按「宁缺毋滥」原则本卷不建任何 relation。
+# 岳家军群体（社群组）无具体 target_id，其军纪口碑已入 timeline 第13条与 reception 同时代层；
+# 韩世忠「莫须有」之问入 reception 同时代层。秦桧入库后应补建 论敌 组（evidence 引本传
+# 檜手書小紙付獄、兀朮遺檜書必殺飛始可和、莫须有问答三段铁证）。
+relations: []
+
+reception:
+  - era: 同时代
+    evaluator: 韩世忠
+    quote: 「莫须有」三字，何以服天下？
+    text_display: excerpt
+    comment: 本传直书的狱案问语——同时代大将公开质疑冤狱的唯一实录，「莫须有」由此成为千古冤狱的代名词。
+    source_ids: [src-songshi-vol365]
+  - era: 同时代
+    evaluator: 金人与两河军民
+    quote: 撼山易，撼岳家军难；俟岳家军来即降；金人所畏服者惟飞，至以父呼之。
+    text_display: excerpt
+    comment: 敌我两方的口碑并见本传——金军将士私语岳爺爺軍争来降附，金帅乌陵思谋诫其下俟岳家军来即降；洪皓自金国蜡书驰奏金人所畏服者惟飞，诸酋闻其死酌酒相贺。对手的畏惧是军事人物同时代评价的最高形态。
+    source_ids: [src-songshi-vol365]
+  - era: 历代批评
+    evaluator: 《宋史》史臣论赞（元代修史）
+    quote: 求其文武全器、仁智并施如宋岳飛者，一代豈多見哉。……忠義之言，流出肺腑，真有諸葛孔明之風，而卒死於秦檜之手。……高宗忍自棄其中原，故忍殺飛，嗚呼冤哉！嗚呼冤哉！
+    text_display: excerpt
+    comment: 卷末论赞将其置于韩彭绛灌之上而比迹关张诸葛，并以檀道济自坏长城为喻直指高宗之忍——正史层面责任表述的双向定位（论赞兼责高宗与檜），为历代评价的权威底本。
+    source_ids: [src-songshi-vol365]
+  - era: 历代批评
+    evaluator: 宋廷平反与谥号变迁层（孝宗诏、忠烈庙、武穆谥、鄂王封）
+    quote: ""
+    text_display: none
+    comment: 孝宗诏复飞官以礼改葬建庙于鄂号忠烈，淳熙六年谥武穆，嘉定四年追封鄂王（均本传明文）；其后改谥忠武不见于本传，属更晚文献层（转述存疑）。后世武庙从祀、历代鄂王庙祀与《金佗稡编》（岳珂籲天辯誣集系统，本传附传明载其御札辩验汇次事迹）构成的官方与家族双重纪念体系，本卷以转述为主，未逐一实取原文献。
+    confidence: 存疑
+    dispute: 改谥忠武（宝庆间）与武庙从祀的具体年分均非本传所载，本卷按后世文献层转述，未实取原始诏令文本。
+    source_ids: [src-songshi-vol365]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究两大焦点均为学术公案——其一，郾城战史与拐子马制度的考释（重铠贯索三人相联的战术含义有专门商榷），以及朱仙镇之战真伪之辨（主流意见倾向岳珂系统增饰说，亦有异见）；其二，满江红著作权论战（明代说与岳作说长期对垒，详见works条dispute）。另有《金佗稡编》史料层次的文献学研究（家传碑志与官文书互校）。上述均按近现代学术层中立转述双方立场，不引现代原文，具体论著引文须取得许可后补入。
+    source_ids: [src-songshi-vol365]
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 精忠报国的国民记忆层——注意分层：本传背刺原文为尽忠报国四大字，精忠出自高宗手书精忠岳飞旗，二者在流传中被混同为精忠报国并完成符号化；满江红入选教材与大众读本，岳王庙跪像与还我山河题字成为公共记忆装置。教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: [src-songshi-vol365]
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中的岳飞形象集中于郾城大捷、风波狱与精忠报国母题的戏剧化敷演，不作信史依据；网络传播中满江红著作权争论时有回潮，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-songshi-vol365, src-manjianghong, src-xiaochongshan-yuefei, src-chizhou-cuiweiting]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版（非文学人物适配性样板，首个field=军事详卷）。23条年谱（5阶段）、3件作品（满江红存疑+著作权公案/小重山确凿/池州翠微亭存疑）、11处足迹、0组关系（库内无qinhui等合规target_id，空置说明）、7层接受史。宋史卷365实取成功（wikisource）；满江红/小重山/池州翠微亭均实取维基文库单篇页。关键校正：背刺本传作尽忠报国（非精忠报国）、莫须有出自韩世忠问语中秦桧答语、卒于岁暮合公历1142年初、本传无改谥忠武、朱仙镇照录本传并注邓广铭增饰考辨。"}

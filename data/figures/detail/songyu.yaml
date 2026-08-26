@@ -1,0 +1,448 @@
+# 宋玉全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# 分层原则：宋玉无正史本传，生卒、生平细节均不可考。本卷严格分四层：
+#   L1 正史一层：仅《史记·屈原贾生列传》一句；
+#   L2 总集文本层：《楚辞·九辩》与《昭明文选》诸赋原文（作品内叙事不等于史实）；
+#   L3 王逸章句序层：东汉王逸《九辩》序的「屈原弟子」说；
+#   L4 汉宋笔记传说层：《汉书·艺文志》著录、《襄阳耆旧记》故里说等（本卷按转述层处理）。
+#
+# | 事实点 | 证据（实取） | 结论与置信 |
+# |---|---|---|
+# | 正史唯一记载 | 史記卷84实取：「屈原既死之後，楚有宋玉、唐勒、景差之徒者，皆好辭而以賦見稱；然皆祖屈原之從容辭令，終莫敢直諫。」 | 确定；此为正史对宋玉的全部记载，仅言时代与文学取向 |
+# | 生卒 | 无任何正史记载 | 不可考；一切年份用「不可考/约」表达 |
+# | 九辩文本与王逸序 | 楚辭卷第八实取：「悲哉，秋之爲氣也！蕭瑟兮，草木摇落而變衰」「坎廩兮，貧士失職而志不平。廓落兮，羇旅而無友生」；王逸序：「宋玉者，屈原弟子也。閔惜其師，忠而放逐，故作〈九辯〉以述其志」 | 文本层确定；弟子系 L3 传说层存疑（史记仅言「祖屈原之从容辞令」，未言师承） |
+# | 风赋 | 維基文庫風賦(宋玉)实取：「夫風生於地，起於青蘋之末」「此獨大王之風耳，庶人安得而共之」 | 文本层确定；著作权存疑（后人拟托之说） |
+# | 高唐赋/神女赋 | 維基文庫实取：「旦爲朝雲，暮爲行雨。朝朝暮暮，陽臺之下」（高唐）；「耀乎若白日初出照屋梁。其少進也，皎若明月舒其光」（神女） | 文本层确定；著作权存疑 |
+# | 登徒子好色赋 | 維基文庫实取：「增之一分則太長，減之一分則太短」「然此女登牆闚臣三年，至今未許也」 | 文本层确定；自辩为赋家虚构叙事，非史实 |
+# | 对楚王问 | 維基文庫實取（古文觀止版）：「其爲【陽春白雪】，國中屬而和者，不過數十人……是其曲彌高，其和彌寡」 | 文本层确定；著作权存疑 |
+# | 故里鄢 | 《襄阳耆旧记》称宋玉鄢人——本次未在维基文库实取该条，按转述层著录 | L4 传说层存疑推定 |
+# | 汉书艺文志著录 | 通行著录谓班固载「宋玉赋十六篇」——本次未实取，按转述层著录 | L4 转述层存疑 |
+# | 杜甫评价 | 全唐詩卷230实取：「搖落深知宋玉悲，風流儒雅亦吾師」 | 确定（接受层） |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: songyu
+
+profile:
+  courtesy_name: ""
+  art_name: ""
+  aliases: [屈宋（并称）]
+  gender: 男
+  ethnicity: ""
+  ancestry: 楚国鄢（据襄阳耆旧记传说层推定）
+  birthplace: 楚国鄢（今湖北宜城一带，传说层推定）
+  death_place: "" # 卒地不可考
+  offices: [] # 无正史职官记载；王逸序称「楚大夫」属章句序层，风赋「侍」字属文本内证层，均不作实任职官
+  fields: [文学]
+  roles: [辞赋家]
+  summary: 屈原之后楚国最重要的辞赋家，「屈宋」并称千年；以《九辩》开中国文学悲秋传统，以阳春白雪留下「曲高和寡」的典故。正史仅存一句记载，生平几不可考，而名字深植于汉语。
+
+timeline:
+  # ── 阶段一：生卒与正史坐标 ──────────────────────────
+  - stage: 生卒不可考
+    stage_order: 1
+    title: 出生于楚鄢（传说层推定）
+    date:
+      text: 生年不可考，约战国晚期（前3世纪前后活动）
+      precision: 未知
+    place: 楚国鄢
+    summary: 宋玉生于何年史无明文。故里旧说据襄阳耆旧记谓其为楚鄢人，属汉魏以来地方传闻层，只能作推定。
+    confidence: 存疑
+    dispute: 正史无本传，生年与故里均不可确证；鄢人说系《襄阳耆旧记》层转述，本次未能在维基文库实取原条。
+    source_ids: [src-shiji-vol84]
+  - stage: 生卒不可考
+    stage_order: 2
+    title: 卒年卒地不可考
+    date:
+      text: 卒年不可考，当顷襄王之后、楚亡之前
+      precision: 未知
+    place: ""
+    summary: 卒年卒地均无载。可框定的大限是：其名既见于史记「屈原既死之后」的叙述序列，又必早于秦灭楚（前223年），此外无从细究。
+    confidence: 存疑
+    dispute: 「屈原死后至楚亡之间」仅为逻辑边界而非考证结论，学界诸说不一。
+    source_ids: [src-shiji-vol84]
+  - stage: 生卒不可考
+    stage_order: 3
+    title: 正史唯一记载：屈原既死之后，以赋见称
+    date:
+      text: 时代定位为屈原既死之后的战国晚期，具体年份不可考
+      precision: 未知
+    place: 楚国
+    summary: 史记屈原贾生列传：「屈原既死之後，楚有宋玉、唐勒、景差之徒者，皆好辭而以賦見稱；然皆祖屈原之從容辭令，終莫敢直諫。」一句之内给出三重信息——时代（承屈原）、身份（辞赋家群体之首）、局限（莫敢直谏）。此为正史对宋玉的全部记载。
+    source_ids: [src-shiji-vol84]
+
+  # ── 阶段二：文学侍从（文本内证层） ────────────────────
+  - stage: 侍从襄王
+    stage_order: 4
+    title: 侍从楚襄王游兰台宫（文本内证层）
+    date:
+      text: 创作所托年代不可考，文本托于楚襄王之世
+      precision: 未知
+    place: 兰台宫
+    summary: 风赋开头：「楚襄王遊於蘭臺之宮，宋玉、景差侍。」与史记顷襄王世的时段相容。「侍」字提示其为文学侍从之臣的处境，但这是赋的叙事设定，不是史官记录。
+    confidence: 存疑
+    dispute: 属总集文本内证层：赋中君臣问答为赋体惯例框架，不能径作行迹实录。
+    source_ids: [src-wenxuan]
+  - stage: 侍从襄王
+    stage_order: 5
+    title: 风赋讽谏：大王雄风与庶人雌风（文本层）
+    date:
+      text: 创作系年不可考
+      precision: 未知
+    place: 兰台宫（文本语境）
+    summary: 襄王披襟当风曰快哉此风，宋玉对曰「此獨大王之風耳，庶人安得而共之」，继而铺写「夫風生於地，起於青蘋之末」的大王雄风与起于穷巷的庶人雌风，以对比暗讽贵贱悬殊——历来视为「讽一劝百」式婉谏的代表。
+    confidence: 存疑
+    dispute: 讽谏主旨是历代读法而非文本自陈；著作权亦有拟托之说。
+    source_ids: [src-wenxuan]
+  - stage: 侍从襄王
+    stage_order: 6
+    title: 登徒子好色赋自辩：东家之子登墙窥臣三年（虚构叙事层）
+    date:
+      text: 创作系年不可考
+      precision: 未知
+    place: 楚宫（文本语境）
+    summary: 赋设登徒子短宋玉于王曰体貌闲丽口多微辞又性好色，宋玉自辩：东家之子增之一分则太长减之一分则太短，然此女登墙窥臣三年至今未许也——以极端修辞反证己不好色。注意：此为赋家虚构的自我形象，属文本层人物塑造，非史实自述。
+    confidence: 存疑
+    dispute: 自辩情节纯属赋体虚构；后人据此附会宋玉美男子形象，属接受层附会；著作权亦存疑。
+    source_ids: [src-wenxuan]
+  - stage: 侍从襄王
+    stage_order: 7
+    title: 对楚王问：阳春白雪，曲高和寡（文本层）
+    date:
+      text: 创作系年不可考
+      precision: 未知
+    place: 郢中（文本语境）
+    summary: 客有歌于郢中：下里巴人和者数千人，阳春白雪和者不过数十人，「是其曲彌高，其和彌寡」；继以鲲凤自喻，谓圣人瑰意琦行超然独处，世俗安知臣之所为。以答问形式自陈孤高处境，成语阳春白雪、下里巴人、曲高和寡皆源于此篇。
+    confidence: 存疑
+    dispute: 属对问体文本层；是否自况失意、著作权归属均有争议。
+    source_ids: [src-wenxuan]
+  - stage: 侍从襄王
+    stage_order: 8
+    title: 高唐神女二赋：旦为朝云，暮为行雨（文本层）
+    date:
+      text: 创作系年不可考，二赋托于襄王游云梦语境
+      precision: 未知
+    place: 云梦之台、巫山（文本语境）
+    summary: 高唐赋序先王梦遇巫山神女，「妾在巫山之陽，高丘之阻，旦爲朝雲，暮爲行雨。朝朝暮暮，陽臺之下」；神女赋续写襄王使玉赋高唐之事、玉夜梦神女，「耀乎若白日初出照屋梁」。二赋确立了中国文学最恒久的意象群之一（巫山云雨、阳台梦），结句思万方忧国害、开贤圣辅不逮仍归讽谏。
+    confidence: 存疑
+    dispute: 二赋著作权自宋以来即有讨论，近现代疑古考辨更趋存疑；梦中遇合纯属文学虚构。
+    source_ids: [src-wenxuan]
+
+  # ── 阶段三：失职与悲秋（创作层） ──────────────────────
+  - stage: 失职悲秋
+    stage_order: 9
+    title: 贫士失职而志不平——九辩的放逐失职解读（创作层）
+    date:
+      text: 创作系年不可考；旧说多系于失职去位之后
+      precision: 未知
+    place: ""
+    summary: 九辩自陈「坎廩兮，貧士失職而志不平。廓落兮，羇旅而無友生」，又有「願賜不肖之軀而別離兮，放遊志乎雲中」之语。王逸以来旧读多据此推断宋玉曾失职离开楚廷，然此系由文本逆推生平，生平本身无载。
+    confidence: 存疑
+    dispute: 「失职放逐」是由诗句到传记的传统重构，创作背景不可考；亦有学者主张纯为代言体拟骚之作。
+    source_ids: [src-chuci]
+  - stage: 失职悲秋
+    stage_order: 10
+    title: 九辩悲秋：悲哉秋之为气也——悲秋之祖（创作层）
+    date:
+      text: 创作系年不可考
+      precision: 未知
+    place: ""
+    summary: 「悲哉，秋之爲氣也！蕭瑟兮，草木摇落而變衰。憭慄兮，若在遠行。登山臨水兮，送將歸。」自此萧瑟秋气与士不遇之悲结为一体，杜甫所谓摇落深知宋玉悲正是此脉。九辩由此成为中国文学的悲秋之祖。
+    source_ids: [src-chuci]
+
+  # ── 阶段四：传承与身后（汉代以下各层） ────────────────
+  - stage: 身后声名
+    stage_order: 11
+    title: 王逸定谳：屈原弟子说（章句序层）
+    date:
+      text: 东汉（王逸楚辞章句约成书于114—119年之后），宋玉事迹本身不可考
+      year: 114
+      range_end: 119
+      precision: 约
+    place: ""
+    summary: 王逸九辩序：「宋玉者，屈原弟子也。閔惜其師，忠而放逐，故作〈九辯〉以述其志。」并称刘向、王褒咸悲其文依而作词，故号楚辞。弟子说自此成为通行叙事，但它是东汉章句序的追认，非汉代以前的史料。
+    confidence: 存疑
+    dispute: 史记仅言「祖屈原之从容辞令」，未言师授；弟子说是王逸层的推衍，后世沿袭与质疑并存。
+    source_ids: [src-chuci, src-shiji-vol84]
+  - stage: 身后声名
+    stage_order: 12
+    title: 汉书艺文志著录宋玉赋十六篇（转述层）
+    date:
+      text: 东汉班固著录，具体成书约公元1世纪
+      precision: 约
+    place: ""
+    summary: 通行说法谓汉书艺文志诗赋略著录「宋玉赋十六篇」，为汉代书目对其赋家地位的确认；今存题名宋玉之作远少于此，真伪参差。该条本次未在维基文库实取，按转述层著录待核。
+    confidence: 存疑
+    dispute: 转述层未实取原文，专条来源待登记；此处暂挂正史层坐标——史记已确立其「以赋见称」的赋家地位，艺文志著录系该地位的目录学延伸。十六篇与今存篇目对应关系历来聚讼。
+    source_ids: [src-shiji-vol84]
+  - stage: 身后声名
+    stage_order: 13
+    title: 屈宋并称与唐勒景差之衬（接受层回望）
+    date:
+      text: 由汉至唐逐渐定型，具体时点不可考
+      precision: 未知
+    place: ""
+    summary: 史记将宋玉置于唐勒、景差之首，汉人以降渐以「屈宋」并称尊之为楚辞嫡传。这一并称是历代接受的累积结果：正史那句「终莫敢直谏」同时划出了他与屈原的精神分界。
+    source_ids: [src-shiji-vol84]
+  - stage: 身后声名
+    stage_order: 14
+    title: 宜城故宅纪念传统形成（纪念地传说层）
+    date:
+      text: 地方纪念传统起于何时不可考，明清方志多有记述
+      precision: 未知
+    place: 湖北宜城（传说层）
+    summary: 故里鄢说流行后，宜城等地渐有宋玉故宅、墓冢之类遗迹传闻并见载于方志，属地方纪念传说层，不能证实为其真实居葬之地。
+    confidence: 存疑
+    dispute: 纪念地均为后世附会层；另有湖南临澧等地说并存，无从裁定。
+    source_ids: []
+
+works:
+  - work_id: jiu-bian
+    title: 九辩
+    alt_titles: []
+    genre: 骚体抒情长诗（楚辞）
+    date:
+      text: 创作系年不可考
+      precision: 未知
+    place: ""
+    context: 悲秋之祖。以秋气起兴写贫士失职、羁旅无友之悲，末以愿赐躯放游云中作结；楚辞卷第八收录，王逸序定为宋玉悯师之作。
+    attribution: 确凿
+    excerpt: 悲哉，秋之为气也！萧瑟兮，草木摇落而变衰。……坎廪兮，贫士失职而志不平。廓落兮，羁旅而无友生。
+    text_display: excerpt
+    themes: [悲秋, 士不遇, 羁旅]
+    influence: 开中国文学悲秋传统之源，摇落、秋气从此成为士人感怀的经典语码；鲁迅以下文学史皆以九辩为宋玉代表作。
+    confidence: 有争议
+    dispute: 王逸章句定谳为宋玉作，传统从之；近现代学者仍有主张屈原或汉人拟作者，本卷从王逸传统标确凿而保留争议记录。
+    source_ids: [src-chuci]
+
+  - work_id: feng-fu
+    title: 风赋
+    alt_titles: []
+    genre: 大赋（问答体咏物赋）
+    date:
+      text: 创作系年不可考，文本托于楚襄王兰台之游
+      precision: 未知
+    place: 兰台宫（文本语境）
+    context: 以大王雄风、庶人雌风之对举婉讽贵贱之别，风起于青蘋之末一段为咏物铺写的千古典范。
+    attribution: 存疑
+    excerpt: 夫风生于地，起于青蘋之末，侵淫谿谷，盛怒于土囊之口……此所谓大王之雄风也。
+    text_display: excerpt
+    themes: [讽谏, 咏物, 贵贱对比]
+    influence: 起于青蘋之末成为形容事端初起的成语级意象；确立问答体讽谕赋的路数。
+    confidence: 有争议
+    dispute: 昭明文选题宋玉作，而后世考辨多疑为后人拟托襄王故事；讽谏主旨亦系历代读法。
+    source_ids: [src-wenxuan]
+
+  - work_id: gao-tang-fu
+    title: 高唐赋
+    alt_titles: []
+    genre: 大赋（并序）
+    date:
+      text: 创作系年不可考
+      precision: 未知
+    place: 云梦之台、巫山（文本语境）
+    context: 序写先王梦遇巫山之女、立庙号朝云的故事，正文铺写巫山水势草木田猎，结以思万方忧国害的讽谏收束。
+    attribution: 存疑
+    excerpt: 妾在巫山之阳，高丘之阻，旦为朝云，暮为行雨。朝朝暮暮，阳台之下。
+    text_display: excerpt
+    themes: [神话, 山水铺陈, 讽谏]
+    influence: 巫山云雨、阳台成为汉语男女情事的经典隐喻源头的源头文本；朝朝暮暮入词曲千年不绝。
+    confidence: 有争议
+    dispute: 文选题宋玉作，著作权近现代多存疑；序中先王指怀王抑或更早楚王亦无定论。
+    source_ids: [src-wenxuan]
+
+  - work_id: shen-nu-fu
+    title: 神女赋
+    alt_titles: []
+    genre: 大赋（并序）
+    date:
+      text: 创作系年不可考
+      precision: 未知
+    place: 云梦之浦（文本语境）
+    context: 高唐赋姊妹篇。写宋玉梦遇神女而白于王，极貌写神女之姣丽与怀贞亮之絜清、颃薄怒以自持的人神阻隔，欢情未接而惆怅垂涕。
+    attribution: 存疑
+    excerpt: 其始来也，耀乎若白日初出照屋梁。其少进也，皎若明月舒其光。……頩薄怒以自持兮，曾不可乎犯干。
+    text_display: excerpt
+    themes: [神女, 人神阻隔, 美的极致书写]
+    influence: 中国美人描写的范式文本之一，直接滋养曹植洛神赋；神女的贞静自持确立了可望不可即的美学原型。
+    confidence: 有争议
+    dispute: 与高唐赋同属著作权存疑之作；文中王梦玉梦之纠缠历来异读纷纭。
+    source_ids: [src-wenxuan]
+
+  - work_id: deng-tu-zi-hao-se-fu
+    title: 登徒子好色赋
+    alt_titles: []
+    genre: 大赋（并序，问答体）
+    date:
+      text: 创作系年不可考
+      precision: 未知
+    place: 楚宫（文本语境）
+    context: 设登徒子谗短与宋玉自辩、章华大夫扬诗守礼三层问答。东家之子增一分太长减一分太短的描写成为中国写美人的极致笔法；登徒子之名则被冤枉性地变成好色者的代称。
+    attribution: 存疑
+    excerpt: 东家之子，增之一分则太长，减之一分则太短，著粉则太白，施朱则太赤。……然此女登墙窥臣三年，至今未许也。
+    text_display: excerpt
+    themes: [自辩, 美人描写, 守德]
+    influence: 增之一分减之一分为后世写美的度量衡式经典；登徒子蒙冤成为语言史上著名公案，成语登徒子沿用至今。
+    confidence: 有争议
+    dispute: 后人拟托之说流行；赋中自辩为虚构叙事，不得引为宋玉生平或品行的史料。
+    source_ids: [src-wenxuan]
+
+  - work_id: dui-chu-wang-wen
+    title: 对楚王问
+    alt_titles: [宋玉对楚王问]
+    genre: 对问体散文
+    date:
+      text: 创作系年不可考
+      precision: 未知
+    place: 郢中（文本语境）
+    context: 答士民众庶不誉之甚之问，设郢中歌者层级递进：下里巴人和者数千，阳春白雪和者数十，曲弥高和弥寡；复以鲲凤自喻瑰意琦行。文选列入对问类之首，开东方朔答客难一路文体。
+    attribution: 存疑
+    excerpt: 客有歌于郢中者……其为阳春白雪，国中属而和者，不过数十人……是其曲弥高，其和弥寡。
+    text_display: excerpt
+    themes: [孤高自许, 雅俗之辨, 自辩]
+    influence: 阳春白雪、下里巴人、曲高和寡三大成语皆出于此，是宋玉进入国民语言的直接通道。
+    confidence: 有争议
+    dispute: 本次所据维基文库页面为古文观止系统文本（与文选本文字小异）；著作权与系年均存疑。
+    source_ids: [src-wenxuan]
+
+footprints:
+  - name: 鄢（楚邑）
+    modern_name: 湖北省宜城市一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 出生于此（传说层推定），具体年份不可考
+      precision: 未知
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 故里鄢说出襄阳耆旧记传说层，本次未能实取原条；生年不可考。直接来源未登记，暂挂正史时代坐标（战国楚地背景），待补专条来源。
+    source_ids: [src-shiji-vol84]
+  - name: 郢都
+    modern_name: 湖北省荆州市（纪南城遗址一带）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 文本内证显示其侍从襄王于郢中，具体年份不可考
+      precision: 未知
+    kind: 居住
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 依据为风赋对楚王问等文本内证（兰台侍游、郢中歌者），属文学语境推定，非史官行迹记录。
+    source_ids: [src-wenxuan]
+  - name: 云梦（云梦之台、云梦之浦）
+    modern_name: 湖北省荆州、孝感一带古云梦泽区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 高唐神女二赋托于襄王游云梦语境，年份不可考
+      precision: 未知
+    kind: 游历
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 游云梦为赋体叙事框架，是否实有其行不可考，按文本层推定著录。
+    source_ids: [src-wenxuan]
+  - name: 宜城宋玉故宅（传说遗迹）
+    modern_name: 湖北省宜城市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 后世纪念传统，起始年代不可考
+      precision: 未知
+    kind: 纪念地
+    route_order: 4
+    memorial_only: true
+    inferred: true
+    confidence: 存疑
+    dispute: 故宅墓冢均系后世附会的纪念传说层，非经证实的居葬遗址；杜甫「江山故宅空文藻」所咏故宅传说即在江汉一带流传。直接来源（方志与襄阳耆旧记系统）未登记，暂挂正史时代坐标，待补专条来源。
+    source_ids: [src-shiji-vol84]
+  - name: 临澧宋玉城（传说遗迹）
+    modern_name: 湖南省临澧县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 地方传说谓宋玉晚年流寓于此，不可考
+      precision: 未知
+    kind: 纪念地
+    route_order: 5
+    memorial_only: true
+    inferred: true
+    confidence: 存疑
+    dispute: 晚年流寓澧州之说纯属地方传说层，与宜城说并存无凭可断，仅作纪念地名录登记；直接来源未登记，暂挂正史时代坐标，待补专条来源。
+    source_ids: [src-shiji-vol84]
+
+relations:
+  - relation_type: 师承
+    target_id: quyuan
+    direction: 双向
+    period:
+      text: 战国晚期，具体年份不可考；弟子说定型于东汉王逸序
+      precision: 未知
+    evidence: 王逸楚辞章句九辩序实取：「宋玉者，屈原弟子也。闵惜其师，忠而放逐，故作〈九辩〉以述其志。」史记卷84实取仅言「祖屈原之从容辞令」，未言师授；九辩悯师之旨亦属王逸层的读法。
+    confidence: 存疑
+    dispute: 师承关系出自东汉章句序层而非正史；史记只提供文学谱系上的继承（祖其辞令），故本组关系按传说层存疑著录，不作定谳。
+    source_ids: [src-chuci, src-shiji-vol84]
+
+reception:
+  - era: 同时代
+    evaluator: 司马迁《史记·屈原贾生列传》（西汉）
+    quote: 屈原既死之后，楚有宋玉、唐勒、景差之徒者，皆好辞而以赋见称；然皆祖屈原之从容辞令，终莫敢直谏。
+    text_display: excerpt
+    comment: 关于宋玉最早的史料与评价，一褒一贬俱在其中：肯定其辞赋成就，指出其不敢直谏的局限。注：枚举所限归入同时代档，实际为汉代追记。
+    source_ids: [src-shiji-vol84]
+  - era: 同时代
+    evaluator: 王逸《楚辞章句·九辩序》（东汉）
+    quote: 宋玉者，屈原弟子也。闵惜其师，忠而放逐，故作〈九辩〉以述其志。
+    text_display: excerpt
+    comment: 弟子说的源头文本，奠定了宋玉作为屈原嫡传、九辩为悯师之作的千年叙事；注：同为汉代追认层。
+    source_ids: [src-chuci]
+  - era: 历代批评
+    evaluator: 杜甫《咏怀古迹五首·其二》（全唐诗卷230）
+    quote: 摇落深知宋玉悲，风流儒雅亦吾师。怅望千秋一洒泪，萧条异代不同时。江山故宅空文藻，云雨荒台岂梦思。
+    text_display: excerpt
+    comment: 唐人接受的高峰：杜甫以异代知音自任，风流儒雅亦吾师把宋玉正式请入诗歌传统的师承谱系；摇落深知宋玉悲浓缩了九辩开创的整个悲秋传统。文本经维基文库全唐诗卷230实取核验。
+    source_ids: [src-quantangshi-vol230]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦两条主线——其一为著作权公案：自疑古思潮以来，九辩以外的题名宋玉诸赋多被考订为存疑乃至拟托，真伪之辨至今未有定谳；其二为文学史定位：作为屈原之后楚辞第一人与汉赋体制的先导，其讽谏方式（讽而不直）与悲秋母题被反复讨论。具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 阳春白雪、下里巴人、曲高和寡、巫山云雨、朝朝暮暮、登徒子等成语典故使其成为进入日常语言最深的先秦作家之一；屈宋并称与悲秋之祖是教科书叙事的两大支点。教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中的宋玉形象多为美男子与才子传说的戏剧化敷演（多源自登徒子好色赋虚构层与后世附会），不作信史依据；网络传播集中于其成语典故与悲秋名句，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-shiji-vol84, src-chuci, src-wenxuan]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "收口修订：src-wenxuan 翻转为有效；杜甫咏怀古迹其二引文挂新增登记的 src-quantangshi-vol230。"}
+    - {date: 2026-08-26, note: "初版。14条年谱（4阶段）、6件作品、5处足迹、1组关系（师承屈原，存疑层）、6层接受史。正史一层（史记卷84）、总集文本层（九辩全文及王逸序、风赋、高唐赋、神女赋、登徒子好色赋、对楚王问）、接受层（全唐诗卷230杜甫诗）均在维基文库实取；襄阳耆旧记与汉书艺文志两条按转述层如实标注未实取。"}

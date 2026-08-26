@@ -1,0 +1,466 @@
+# 孟浩然全景详卷（schema v1）
+# 史料审计表（TASK-003 批次一；来源见 data/sources.yaml）：
+#
+# | 事实点 | 旧唐书·文苑下(J) | 新唐书·文艺下(X) | 结论与置信 |
+# |---|---|---|---|
+# | 籍贯身份 | 隐鹿门山以诗自适 | 襄州襄阳人，少好节义喜振人患难，隐鹿门山 | 确定(X)；一生布衣处士 |
+# | 入京应试 | 年四十来游京师应进士不第还 | 年四十乃游京师；太学赋诗一座嗟伏；不才明主弃放还 | 应举与否两书侧重不同：J明言不第，X记放还轶事；并存记录 |
+# | 匿床下事 | 无载 | 维私邀入内署玄宗至匿床下…帝诵至不才明主弃曰卿不求仕而朕未尝弃卿奈何诬我 | 仅X载，本事小说化风险高→存疑 |
+# | 韩朝宗约荐 | 无载 | 约偕至京师欲荐诸朝；会故人至剧饮叱曰业已饮遑恤他卒不赴 | 仅X载→存疑（细节近逸闻） |
+# | 荆州幕 | 张九龄镇荆州署为从事与之唱和 | 张九龄为荆州辟置于府府罢 | 确定（两书同记） |
+# | 卒 | 不达而卒（含糊） | 开元末病疽背卒 | 从X：开元末(约740)病疽背卒；生年689由卒年与年四十逆推 |
+# | 身后 | 无载 | 樊泽节度时符载以笺叩泽更为刻碑凤林山南封宠其墓；王维过郢州画浩然像于刺史亭曰浩然亭咸通中更名孟亭 | 确定(X) |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: menghaoran
+
+profile:
+  courtesy_name: 浩然
+  art_name: ""
+  aliases: [孟山人, 孟襄阳]
+  gender: 男
+  ethnicity: ""
+  ancestry: 襄州襄阳
+  birthplace: 襄州襄阳涧南园
+  death_place: 襄阳
+  offices: [处士（终身布衣）, 荆州幕从事（张九龄辟）]
+  fields: [文学]
+  roles: [诗人]
+  summary: 盛唐山水田园诗派开山，一生布衣而诗名冠代，「气蒸云梦泽」的隐逸大家。
+
+timeline:
+  # ── 阶段一：襄阳隐读 ──────────────────────────────
+  - stage: 襄阳隐读
+    stage_order: 1
+    title: 出生于襄州襄阳
+    date:
+      text: "约689年"
+      year: 689
+      precision: 约
+    place: 襄阳涧南园
+    summary: 正史无生年。新唐书称字浩然襄州襄阳人少好节义喜振人患难。生年由开元末卒与年四十游京师倒推。
+    confidence: 存疑
+    dispute: 生年约689系学界通说倒推，正史无载。
+    source_ids: [src-xts-vol203]
+  - stage: 襄阳隐读
+    stage_order: 2
+    title: 隐居鹿门山
+    date:
+      text: 青年时期
+      precision: 未知
+    place: 鹿门山
+    summary: 两唐书并载隐鹿门山以诗自适。夜归鹿门歌即其隐居生活的自写照。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+
+  # ── 阶段二：四十入京 ──────────────────────────────
+  - stage: 四十入京
+    stage_order: 3
+    title: 年四十游京师，太学赋诗名动一座
+    date:
+      text: 约728—729年之间
+      year: 728
+      range_end: 729
+      precision: 范围
+    place: 长安
+    summary: 新唐书载年四十乃游京师，尝于太学赋诗一座嗟伏无敢抗。张九龄王维雅称道之。系年由卒年与年四十倒推。
+    confidence: 存疑
+    dispute: 入京确年无载，通说在开元十六七年前后。
+    source_ids: [src-xts-vol203]
+  - stage: 四十入京
+    stage_order: 4
+    title: 应举不第与「不才明主弃」放还传说
+    date:
+      text: 约728—730年之间
+      year: 728
+      range_end: 730
+      precision: 范围
+    place: 长安
+    summary: 旧唐书明言应进士不第还。新唐书另记王维私邀入内署而玄宗至浩然匿床下，帝诵其诗至不才明主弃句曰卿不求仕而朕未尝弃卿奈何诬我因放还。
+    confidence: 有争议
+    dispute: 应举不第（旧书）与放还轶事（新书）叙事不同源；匿床下情节仅见新书且近本事小说笔法，细节存疑。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 四十入京
+    stage_order: 5
+    title: 韩朝宗约荐不赴的逸事
+    date:
+      text: 入京期间，确切年份不详
+      precision: 未知
+    place: 襄阳
+    summary: 新唐书载采访使韩朝宗约偕至京师欲荐诸朝，会故人至剧饮欢甚，或曰君与韩公有期，浩然叱曰业已饮遑恤他，卒不赴，朝宗怒辞行而浩然不悔。
+    confidence: 存疑
+    dispute: 仅见新唐书，近逸闻笔法；其不拘行迹的性格写照可信而细节存疑。
+    source_ids: [src-xts-vol203]
+
+  # ── 阶段三：荆州从幕与漫游 ──────────────────────────
+  - stage: 荆州从幕与漫游
+    stage_order: 6
+    title: 张九龄辟置荆州府
+    date:
+      text: 约737—740年之间
+      year: 737
+      range_end: 740
+      precision: 范围
+    place: 荆州
+    summary: 旧唐书载张九龄镇荆州署为从事与之唱和；新唐书作张九龄为荆州辟置于府府罢。此为其一生唯一幕职。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 荆州从幕与漫游
+    stage_order: 7
+    title: 吴越漫游，宿建德江
+    date:
+      text: 约727—732年之间
+      year: 727
+      range_end: 732
+      precision: 范围
+    place: 沿长江下游至吴越
+    summary: 移舟泊烟渚日暮客愁新即吴越纪行之作。漫游年份据诗集编年推定。
+    confidence: 存疑
+    dispute: 吴越之行起讫年份诸家谱系略有出入。
+    source_ids: [src-quantangshi-meng]
+
+  # ── 阶段四：病逝与身后 ──────────────────────────────
+  - stage: 病逝与身后
+    stage_order: 8
+    title: 开元末病疽背卒
+    date:
+      text: 约740年
+      year: 740
+      precision: 约
+    place: 襄阳
+    summary: 新唐书载开元末病疽背卒；旧唐书作不达而卒。享年约五十二。
+    confidence: 存疑
+    dispute: 卒年开元末从新书，旧书不达而卒语含糊未系年。
+    source_ids: [src-xts-vol203, src-jts-vol190b]
+  - stage: 病逝与身后
+    stage_order: 9
+    title: 樊泽刻碑凤林山南
+    date:
+      text: 贞元年间（卒后数十年）
+      precision: 未知
+    place: 凤林山南
+    summary: 后樊泽为节度使时浩然墓庳坏，符载以笺叩泽陈其文质杰美殒落岁久，泽乃更为刻碑凤林山南封宠其墓。
+    source_ids: [src-xts-vol203]
+  - stage: 病逝与身后
+    stage_order: 10
+    title: 浩然亭更名孟亭
+    date:
+      text: 咸通年间（晚唐）
+      precision: 未知
+    place: 郢州
+    summary: 初王维过郢州画浩然像于刺史亭因曰浩然亭；咸通中刺史郑諴谓贤者名不可斥更署曰孟亭。
+    source_ids: [src-xts-vol203]
+
+works:
+  - work_id: chun-xiao
+    title: 春晓
+    alt_titles: []
+    genre: 五言绝句
+    date:
+      text: 创作年代不详，隐居襄阳时期
+      precision: 未知
+    place: 襄阳
+    context: 春眠不觉晓处处闻啼鸟。夜来风雨声花落知多少。隐居生活的闲适与惜春心绪。
+    attribution: 确凿
+    excerpt: 春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。
+    text_display: full
+    themes: [春, 闲适]
+    influence: 传诵度最高的唐诗之一。
+    source_ids: [src-quantangshi-meng]
+  - work_id: guo-gu-ren-zhuang
+    title: 过故人庄
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 隐居襄阳时期，年代不详
+      precision: 未知
+    place: 襄阳农村
+    context: 故人具鸡黍邀我至田家。田家情谊与村景白描的田园诗典范。
+    attribution: 确凿
+    excerpt: 故人具鸡黍，邀我至田家。绿树村边合，青山郭外斜。
+    text_display: full
+    themes: [田园, 友情]
+    influence: 田家白描一路的最高标准。
+    source_ids: [src-quantangshi-meng]
+
+  - work_id: wang-dongting-hu
+    title: 望洞庭湖赠张丞相
+    alt_titles: [临洞庭湖赠张丞相]
+    genre: 五言律诗
+    date:
+      text: 约733—734年之间（张九龄拜相前后）
+      year: 733
+      range_end: 734
+      precision: 范围
+    place: 岳阳洞庭湖畔
+    context: 干谒之作。八月湖水平涵虚混太清写洞庭壮景，欲济无舟楫端居耻圣明陈求仕之愿。
+    attribution: 确凿
+    excerpt: 八月湖水平，涵虚混太清。气蒸云梦泽，波撼岳阳城。……坐观垂钓者，徒有羡鱼情。
+    text_display: excerpt
+    themes: [干谒, 山水]
+    influence: 气蒸云梦泽波撼岳阳城为咏洞庭绝唱。
+    confidence: 存疑
+    dispute: 赠对象为张说抑或张九龄历来有两说，系年随之浮动。
+    source_ids: [src-quantangshi-meng]
+  - work_id: su-jiande-jiang
+    title: 宿建德江
+    alt_titles: []
+    genre: 五言绝句
+    date:
+      text: 吴越漫游期间，约730年前后
+      year: 730
+      precision: 约
+    place: 建德江
+    context: 移舟泊烟渚日暮客愁新。野旷天低树江清月近人。
+    attribution: 确凿
+    excerpt: 移舟泊烟渚，日暮客愁新。野旷天低树，江清月近人。
+    text_display: full
+    themes: [羁旅, 月]
+    influence: 客愁与清景相融的纪行名篇。
+    source_ids: [src-quantangshi-meng]
+  - work_id: ye-gui-lumen
+    title: 夜归鹿门歌
+    alt_titles: [夜归鹿门山歌]
+    genre: 七言古诗
+    date:
+      text: 隐居襄阳时期，年代不详
+      precision: 未知
+    place: 鹿门山
+    context: 鹿门月照开烟树忽到庞公栖隐处。隐居生活的自画像。
+    attribution: 确凿
+    excerpt: 山寺钟鸣昼已昏，渔梁渡头争渡喧。……鹿门月照开烟树，忽到庞公栖隐处。
+    text_display: excerpt
+    themes: [隐逸]
+    influence: 与两唐书「隐鹿门山」记载互证的自述材料。
+    source_ids: [src-quantangshi-meng]
+  - work_id: zao-han-jiang-shang
+    title: 早寒江上有怀
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 约漫游或入京前，年代不详
+      precision: 未知
+    place: 汉水江上
+    context: 木落雁南度北风江上寒。乡泪客中尽孤帆天际看。
+    attribution: 确凿
+    excerpt: 木落雁南度，北风江上寒。我家襄水曲，遥隔楚云端。
+    text_display: full
+    themes: [思乡, 秋]
+    influence: 情景浑成的早期山水行旅代表。
+    source_ids: [src-quantangshi-meng]
+
+  - work_id: xia-ri-nan-ting
+    title: 夏日南亭怀辛大
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 隐居襄阳时期，年代不详
+      precision: 未知
+    place: 襄阳南亭
+    context: 荷风送香气竹露滴清响。感此怀故人中宵劳梦想。
+    attribution: 确凿
+    excerpt: 山光忽西落，池月渐东上。……荷风送香气，竹露滴清响。
+    text_display: excerpt
+    themes: [夏夜, 怀友]
+    influence: 荷风竹露一联为感官细察的名句。
+    source_ids: [src-quantangshi-meng]
+  - work_id: yu-zhu-zi-deng-xianshan
+    title: 与诸子登岘山
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 晚年隐居时期，年代不详
+      precision: 未知
+    place: 岘山
+    context: 人事有代谢往来成古今。羊公碑尚在读罢泪沾襟。借羊祜堕泪碑抒身世之感。
+    attribution: 确凿
+    excerpt: 人事有代谢，往来成古今。江山留胜迹，我辈复登临。
+    text_display: full
+    themes: [怀古]
+    influence: 首联以平淡语道尽古今之变。
+    source_ids: [src-quantangshi-meng]
+
+footprints:
+  - name: 襄阳涧南园
+    modern_name: 湖北省襄阳市襄城区涧南园
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 涧南园地望据本集诗文考订，坐标待接入 data/geography 体系
+    visit_date:
+      text: 生于斯长于斯，一生主要居所
+      year: 689
+      range_end: 740
+      precision: 范围
+    kind: 居住
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    source_ids: [src-quantangshi-meng, src-xts-vol203]
+  - name: 鹿门山
+    modern_name: 湖北省襄阳市鹿门山
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 青年起的隐居地
+      year: 710
+      range_end: 740
+      precision: 范围
+    kind: 居住
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 年四十游京师
+      year: 728
+      range_end: 730
+      precision: 范围
+    kind: 游历
+    route_order: 3
+    memorial_only: false
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - name: 荆州
+    modern_name: 湖北省荆州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约737—740年之间张九龄府中从事
+      year: 737
+      range_end: 740
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - name: 洞庭湖
+    modern_name: 湖南省岳阳市洞庭湖
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约733—734年间游历
+      year: 733
+      range_end: 734
+      precision: 范围
+    kind: 游历
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 到访由望洞庭湖赠张丞相系年与内容推定。
+    source_ids: [src-quantangshi-meng]
+  - name: 建德江
+    modern_name: 浙江省建德市新安江一段
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 唐建德江对应今江段系历史地理考订，坐标待接入体系
+    visit_date:
+      text: 吴越漫游期间，约730年前后
+      year: 730
+      precision: 约
+    kind: 游历
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    source_ids: [src-quantangshi-meng]
+  - name: 岘山
+    modern_name: 湖北省襄阳市岘山
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 晚年与诸子登临
+      year: 735
+      range_end: 740
+      precision: 范围
+    kind: 游历
+    route_order: 7
+    memorial_only: false
+    source_ids: [src-quantangshi-meng]
+  - name: 凤林山南（墓）
+    modern_name: 湖北省襄阳市凤林山
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 樊泽刻碑处地望系后世考订，坐标待接入体系
+    visit_date:
+      text: 卒后葬此，贞元间刻碑封宠其墓
+      precision: 未知
+    kind: 纪念地
+    route_order: 8
+    memorial_only: true
+    source_ids: [src-xts-vol203]
+
+relations:
+  - relation_type: 挚友
+    target_id: wangwei
+    direction: 双向
+    period:
+      text: 开元间订交于长安
+      year: 728
+      range_end: 740
+      precision: 范围
+    evidence: 新唐书载王维雅称道之并私邀入内署；旧唐书孟传附见唱和事。王孟并称开山水田园一派，二人诗集中存互相寄赠之作。
+    confidence: 存疑
+    dispute: 匿床下遇玄宗的情节仅见新唐书且近本事小说，交往本身可信而细节存疑。
+    source_ids: [src-xts-vol203, src-jts-vol190b]
+  - relation_type: 社群
+    target_id: libai
+    direction: 单向
+    period:
+      text: 李白青年时遥致倾慕，或有一面之缘
+      year: 727
+      range_end: 735
+      precision: 范围
+    evidence: 李白赠孟浩然诗称吾爱孟夫子风流天下闻；黄鹤楼送孟浩然之广陵亦为送孟之作。李白对孟的仰慕见于本人诗集。
+    inferred: true
+    confidence: 确定
+    source_ids: [src-quantangshi-li]
+
+reception:
+  - era: 同时代
+    evaluator: 张九龄、王维
+    quote: ""
+    text_display: none
+    comment: 新唐书谓张九龄王维雅称道之；王维又画其像于郢州刺史亭，亭因曰浩然亭——以画像立亭致敬为同时代罕见的身后礼遇。
+    source_ids: [src-xts-vol203]
+  - era: 历代批评
+    evaluator: 杜甫
+    quote: 清诗句句尽堪传。
+    text_display: excerpt
+    comment: 解闷十二绝句中评孟语，唐人对浩然清境诗风的代表性概括。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 研究聚焦孟浩然入京行卷细节的真伪辨析、与张九龄府关系的系年、以及盛唐隐逸诗人群体中的定位；具体论著引文须取得许可后补入。
+    source_ids: []
+
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 春晓过故人庄宿建德江长期入选语文教材；布衣诗人与田园隐逸的文化形象深入人心。教材篇目随学期变动，录入时须另行核验。
+    source_ids: []
+
+sources_used: [src-jts-vol190b, src-xts-vol203, src-quantangshi-meng]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。10条年谱、8首作品、8处足迹、2组关系、4层接受史；生卒均系倒推落dispute，匿名床下等逸闻标存疑}

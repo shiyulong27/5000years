@@ -1,0 +1,671 @@
+# 王安石全景详卷（schema v1）
+# 史料审计表（来源登记见 data/sources.yaml；src-songshi-vol327 / src-wanganshi-ji 均 status: 失效·待核验，
+# 引用处触发失效警告属预期，URL 已于本次实取核验）：
+#
+# | 事实点 | 宋史·卷327 本传(S) | 文集/其他层 | 结论与置信 |
+# |---|---|---|---|
+# | 字贯 | 字介甫，抚州临川人，父益都官员外郎 | —— | 确定(S)；L1 生年 1021 系由卒年六十八倒推的学界通说 |
+# | 进士第 | 擢进士上第，签书淮南判官 | 庆历二年(1042)杨寘榜，「第四名」出自后世谱牒笔记层 | 及第确定(S)；年份 1042 从通说；「第四」不入正文仅注 dispute |
+# | 鄞县政绩 | 起堤堰决陂塘为水陆之利；贷谷与民出息以偿俾新陈相易邑人便之 | 王臨川集卷83《鄞縣經遊記》纪庆历七年十一月巡视十四乡（本次实取） | 确定(S+W)；青苗雏形说据此，贷谷出息为本传原文明文 |
+# | 万言书 | 入为度支判官时嘉祐三年也，于是上万言书……后当国所注措大抵祖此书 | —— | 确定(S)，1058 系年即本传明文 |
+# | 越次入对 | 神宗甫即位命知江宁府，数月召为翰林学士兼侍讲；熙宁元年四月始造朝，问为治所先对曰择术为先 | —— | 确定(S)，熙宁元年=1068 |
+# | 新法条目 | 设制置三司条例司；农田水利青苗均输保甲免役市易保马方田诸役相继并兴，遣提举官四十余辈颁行天下 | 各法内容（二分息、二丁取一等）皆本传原文明载 | 确定(S)；注意：本传叙事带明显负面立场（「由是賦斂愈重而天下騷然矣」「其強辯背理率類此」），本卷照录并在此注明史源偏向 |
+# | 朝野反对 | 吕诲论过失十事；司马光答诏「士夫沸騰黎民騷動」、三诒书；韩琦谏疏 | —— | 确定(S) |
+# | 流民图与天变 | 郑侠绘流民图献曰旱由安石所致去安石天必雨；慈圣宣仁二太后流涕谓帝曰安石乱天下；帝亦疑之遂罢相 | —— | 确定(S) |
+# | 再相与吕惠卿交恶 | 惠卿发安石私书曰无使上知；雱愤恚疽发背死 | —— | 确定(S) |
+# | 封爵卒葬 | 元丰二年改封荆；元祐元年卒年六十八赠太傅 | 卒于江宁从通说（本传未明书葬地） | 确定(S) |
+# | 身后荣辱 | 绍圣谥文配享庙庭；崇宁追封舒王列颜孟之次；钦宗时杨时言诏停；高宗停配享削王封 | —— | 确定(S)；评价随新旧党争政局翻覆，详见 reception |
+# | 苏洵辩奸论 | 本传载蜀人苏洵独曰不近人情者鲜不为大奸慝作辩奸论刺之 | 南宋以降学者多疑辩奸论为伪托 | 录本传原文并标有争议（伪托之争） |
+# | 乌台诗案救轼说 | 本卷王安礼附传载安礼谏勿因语言罪轼得轻比；「岂有圣世而杀才士乎」出于安石之口者未见正史 | 见宋人笔记层（出处未逐条核验） | 关系条按笔记层标注层级，confidence 存疑 |
+# | 诗文文本 | —— | 伤仲永、读孟尝君传、游褒禅山记、鄞县经游记已自维基文库《傷仲永》《讀孟嘗君傳》《王臨川集/卷083》实取核验；元日泊船瓜洲登飞来峰梅花书湖阴先生壁桂枝香用通行公版文本，未逐页核对宋刻底本，异文落各条 dispute | 核验程度如实分层标注 |
+# | 春风又绿江南岸 | —— | 「绿」字屡改炼字典故出自洪迈《容斋随笔》（笔记层，本次未实取原书） | 存疑，笔记层 |
+#
+# 版权：本文件只收公版古籍原文与本项目自写中立转述；无现代注释译文。
+schema_version: 1
+id: wanganshi
+
+profile:
+  courtesy_name: 介甫
+  art_name: 半山
+  aliases: [王荆公, 王文公, 拗相公（贬称，出自民间话本与旧党语境，非当时正式称谓）]
+  gender: 男
+  ethnicity: ""
+  ancestry: 抚州临川
+  birthplace: 抚州临川（通说）
+  death_place: 江宁
+  offices: [签书淮南判官, 知鄞县, 舒州通判, 知常州, 提点江东刑狱, 度支判官, 知制诰, 翰林学士兼侍讲, 参知政事, 同中书门下平章事（拜相，两度）, 知江宁府, 荆国公]
+  fields: [文学]
+  roles: [政治家, 散文家, 诗人]
+  summary: 以「天变不足畏」之姿主持熙宁变法的北宋宰相，唐宋八大家之一；身后评价随党争政局翻覆千年，半山体诗歌峭拔简劲自成一格。
+
+timeline:
+  # ── 阶段一：临川与宦游少年 ──────────────────────────
+  - stage: 临川与宦游少年
+    stage_order: 1
+    title: 生于抚州临川
+    date:
+      text: "约1021年"
+      year: 1021
+      precision: 约
+    place: 抚州临川
+    summary: 王安石字介甫抚州临川人，父益都官员外郎。生年 1021 由元祐元年卒年六十八倒推，系学界通说而非正史明文。
+    confidence: 存疑
+    dispute: 生年为推算值，各家谱系或有出入；卒年 1086 为本传明文。
+    source_ids: [src-songshi-vol327]
+  - stage: 临川与宦游少年
+    stage_order: 2
+    title: 少好读书过目不忘，曾巩携文示欧阳修
+    date:
+      text: 少年时期，确切年份不详
+      precision: 未知
+    place: 临川、韶州等地（随父宦游）
+    summary: 本传称少好读书一过目终身不忘，其属文动笔如飞初若不经意既成见者皆服其精妙。友人曾巩携其所文示欧阳修，修为之延誉。少年随父仕宦各地之行迹据其文集自述，正史未详。
+    source_ids: [src-songshi-vol327]
+
+  # ── 阶段二：州县历练 ──────────────────────────────
+  - stage: 州县历练
+    stage_order: 3
+    title: 擢进士上第，签书淮南判官
+    date:
+      text: 庆历二年（1042）
+      year: 1042
+      precision: 精确
+    place: 汴京、扬州
+    summary: 擢进士上第，授签书淮南判官。旧制秩满许献文求试馆职，安石独否。年份从庆历二年通说。
+    confidence: 存疑
+    dispute: 本传仅言擢进士上第未系年亦无名次；庆历二年及第与「第四名」之说出自后世谱牒笔记层，本卷年份从通说、名次不入正文。
+    source_ids: [src-songshi-vol327]
+  - stage: 州县历练
+    stage_order: 4
+    title: 知鄞县，起堤堰贷谷与民
+    date:
+      text: 庆历七年至八年间（约1047—1048）
+      year: 1047
+      range_end: 1048
+      precision: 范围
+    place: 鄞县（今浙江宁波）
+    summary: 再调知鄞县，起堤堰决陂塘为水陆之利；贷谷与民出息以偿俾新陈相易邑人便之——后世视为青苗法之雏形。《鄞县经游记》纪庆历七年十一月巡视县境东西十四乡布置水利，为其亲历明文。
+    source_ids: [src-songshi-vol327, src-wanganshi-ji]
+  - stage: 州县历练
+    stage_order: 5
+    title: 通判舒州，文彦博荐恬退、欧阳修荐谏官皆辞
+    date:
+      text: 至和、嘉祐间（约1051—1058）
+      year: 1051
+      range_end: 1058
+      precision: 范围
+    place: 舒州、常州、江东
+    summary: 通判舒州。文彦博为相荐安石恬退乞不次进用以激奔竞之风；寻召试馆职不就。欧阳修荐为谏官以祖母年高辞，修以其须禄养言于朝用为群牧判官，请知常州，移提点江东刑狱。屡辞美官之名由是大起，士大夫恨不识其面。
+    confidence: 存疑
+    dispute: 各职起讫年份据职历与荐引先后推定，本传无逐年系年。
+    source_ids: [src-songshi-vol327]
+  - stage: 州县历练
+    stage_order: 6
+    title: 入为度支判官，上万言书仁宗
+    date:
+      text: 嘉祐三年（1058）
+      year: 1058
+      precision: 精确
+    place: 汴京
+    summary: 移提点江东刑狱入为度支判官时嘉祐三年也。上万言书以为天下财力困穷风俗衰坏患在不知法度不法先王之政，主张因天下之力以生天下之财，愿监苟且因循之弊为之以渐。仁宗未用。本传特笔：后安石当国其所注措大抵皆祖此书。
+    source_ids: [src-songshi-vol327]
+  - stage: 州县历练
+    stage_order: 7
+    title: 知制诰纠察在京刑狱，母丧守制讲学江宁
+    date:
+      text: 嘉祐末至治平间（约1061—1067）
+      year: 1061
+      range_end: 1067
+      precision: 范围
+    place: 汴京、江宁
+    summary: 直集贤院同修起居注辞之累日至八九上章乃受，遂知制诰纠察在京刑狱自是不复辞官。以母忧去，终英宗世召不起，居江宁讲学授徒。守制讲学细节据文集与其门人记述，正史仅记召不起。
+    confidence: 存疑
+    dispute: 守制地点与讲学规模正史无载，从学界通说。
+    source_ids: [src-songshi-vol327]
+
+  # ── 阶段三：越次入对与拜相变法 ────────────────────────
+  - stage: 越次入对与拜相变法
+    stage_order: 8
+    title: 神宗立，越次入对问治道
+    date:
+      text: 熙宁元年四月（1068）
+      year: 1068
+      precision: 精确
+    place: 汴京
+    summary: 神宗在藩邸时韩维每称维之友王安石之说，帝由是想见其人。甫即位命知江宁府数月召为翰林学士兼侍讲。熙宁元年四月始造朝入对，帝问为治所先对曰择术为先；帝举唐太宗，安石曰陛下当法尧舜何以太宗为哉。君臣问答即本传所载越次入对之实录。
+    source_ids: [src-songshi-vol327]
+  - stage: 越次入对与拜相变法
+    stage_order: 9
+    title: 拜参知政事，设制置三司条例司行新法
+    date:
+      text: 熙宁二年二月（1069）
+      year: 1069
+      precision: 精确
+    place: 汴京
+    summary: 二年二月拜参知政事。帝问所施设以何先，对曰变风俗立法度正方今之所急也。于是设制置三司条例司，令陈升之同领之，吕惠卿预其事；农田水利青苗均输保甲免役市易保马方田诸役相继并兴号为新法，遣提举官四十余辈颁行天下。
+    related_event_id: wanganshi-reform-1069
+    source_ids: [src-songshi-vol327]
+  - stage: 越次入对与拜相变法
+    stage_order: 10
+    title: 青苗免役诸法推行与内容要目
+    date:
+      text: 熙宁二年至七年之间（1069—1074）
+      year: 1069
+      range_end: 1074
+      precision: 范围
+    place: 天下诸路
+    summary: 本传分记诸法：青苗以常平籴本散与人户令出息二分春散秋敛；免役据家赀高下出钱雇人充役；市易赊贷官财出息十分之二；保甲籍乡村之民二丁取一十家为保教之战阵；保马户养官马一匹；方田东西南北各千步量地定税。四方争言农田水利古陂废堰悉务兴复。须注：本传继以「由是賦斂愈重而天下騷然矣」总评，系元修宋史的负面定性，本卷照录史源立场供读者对照，不作增删。
+    confidence: 存疑
+    dispute: 条目内容为正史明文，然宋史本传对变法整体持批评立场（论曰径引朱熹「流毒四海」语），诸法实际执行效果在史料层面存在旧党记录占优的结构性偏差。
+    source_ids: [src-songshi-vol327]
+  - stage: 越次入对与拜相变法
+    stage_order: 11
+    title: 吕诲弹章、司马光三诒书、韩琦谏疏
+    date:
+      text: 熙宁二年至三年之间（1069—1070）
+      year: 1069
+      range_end: 1070
+      precision: 范围
+    place: 汴京
+    summary: 御史中丞吕诲论安石过失十事帝为出诲。韩琦谏疏至帝感悟欲从之，安石求去。司马光答诏有士夫沸腾黎民骚动之语，安石怒抗章自辨；安石与光素厚，光援朋友责善之义三诒书反复劝之，安石不乐。其后刘述程颢范纯仁等台谏相继去朝，骤用李定为御史又起争议。
+    source_ids: [src-songshi-vol327]
+  - stage: 越次入对与拜相变法
+    stage_order: 12
+    title: 拜同中书门下平章事
+    date:
+      text: 熙宁三年十二月（1070）
+      year: 1070
+      precision: 精确
+    place: 汴京
+    summary: 三年十二月拜同中书门下平章事，正式居首相之位主导变法。
+    source_ids: [src-songshi-vol327]
+
+  # ── 阶段四：天变之争与两罢相 ────────────────────────
+  - stage: 天变之争与两罢相
+    stage_order: 13
+    title: 王韶开熙河，解玉带赐安石
+    date:
+      text: 约熙宁五年至六年之间（1072—1073）
+      year: 1072
+      range_end: 1073
+      precision: 范围
+    place: 熙河、汴京
+    summary: 王韶开熙河奏功，帝以安石主议解所服玉带赐之。同年前后开封民避保甲有截指断腕者、东明民遮宰相马诉助役钱，安石皆强辩折之，本传评曰其强辩背理率类此。
+    confidence: 存疑
+    dispute: 开熙河系年从熙河之役通说；截指断腕等事本传采自旧党一面记录，读者须知史源立场。
+    source_ids: [src-songshi-vol327]
+  - stage: 天变之争与两罢相
+    stage_order: 14
+    title: 郑侠流民图与天变之争，首次罢相
+    date:
+      text: 熙宁七年春（1074）
+      year: 1074
+      precision: 精确
+    place: 汴京
+    summary: 天下久旱饥民流离，帝欲尽罢法度之不善者，安石曰水旱常数尧汤所不免。监安上门郑侠绘流民扶老携幼困苦之状为图以献曰旱由安石所致去安石天必雨。慈圣宣仁二太后流涕谓帝曰安石乱天下，帝亦疑之。遂罢为观文殿大学士知江宁府。本传又录其「天变不足畏祖宗不足法人言不足恤」之语为论敌概括其立场。
+    source_ids: [src-songshi-vol327]
+  - stage: 天变之争与两罢相
+    stage_order: 15
+    title: 复相与吕惠卿交恶
+    date:
+      text: 熙宁八年二月至九年间（1075—1076）
+      year: 1075
+      range_end: 1076
+      precision: 范围
+    place: 汴京
+    summary: 韩绛吕惠卿守其成谋时号传法沙门护法善神；惠卿实欲自得政忌安石复来，陷其弟安国。绛觉其意密白帝请召之，八年二月复拜相，《三经义》成加尚书左仆射兼门下侍郎。后惠卿发安石私书有无使上知者，子雱愤恚疽发背死。
+    confidence: 存疑
+    dispute: 无使上知私书事发之月日本传未细系，范围据再相起讫推定。
+    source_ids: [src-songshi-vol327]
+  - stage: 天变之争与两罢相
+    stage_order: 16
+    title: 子雱死后力请解机务，再罢退居江宁
+    date:
+      text: 熙宁九年（1076）
+      year: 1076
+      precision: 精确
+    place: 汴京、江宁
+    summary: 再相以来屡谢病求去，及子雱死尤悲伤不堪力请解几务，上益厌之。罢为镇南军节度使同平章事判江宁府，从此离朝，居江宁城东与钟山之间，自号半山。
+    source_ids: [src-songshi-vol327]
+
+  # ── 阶段五：江宁十年与身后 ──────────────────────────
+  - stage: 江宁十年与身后
+    stage_order: 17
+    title: 封舒国公改封荆国公，著字说
+    date:
+      text: 熙宁十年至元丰间（1077—1085）
+      year: 1077
+      range_end: 1085
+      precision: 范围
+    place: 江宁
+    summary: 判江宁府明年改集禧观使封舒国公；元丰二年复拜左仆射观文殿大学士换特进改封荆。训释诗书周礼既成颁之学官天下号新义；晚居金陵又作字说，本传评其多穿凿傅会其流入于佛老。哲宗立加司空。
+    confidence: 存疑
+    dispute: 封爵迁转依本传次序，元丰二年复拜左仆射为虚衔优礼；字说之学理评价历来聚讼，本传贬语照录。
+    source_ids: [src-songshi-vol327]
+  - stage: 江宁十年与身后
+    stage_order: 18
+    title: 司马光当国尽废新法，安石病逝江宁
+    date:
+      text: 元祐元年（1086）
+      year: 1086
+      precision: 精确
+    place: 江宁
+    summary: 哲宗立太皇太后垂帘，司马光执政相继罢免役青苗诸法，安石在江宁闻之默然，未几卒年六十八赠太傅。本传未直书废法与卒之关联，废法次第见司马光等传，此处从通说合叙。
+    confidence: 存疑
+    dispute: 安石对新法尽废的具体反应见于宋人笔记层而非本传明文；卒月日诸谱略有出入。
+    source_ids: [src-songshi-vol327]
+  - stage: 江宁十年与身后
+    stage_order: 19
+    title: 身后荣辱翻覆：谥文、配享、追封到停罢削夺
+    date:
+      text: 绍圣至绍兴间（1094—1130年代）
+      year: 1094
+      range_end: 1138
+      precision: 范围
+    place: 汴京
+    summary: 绍圣中谥曰文配享神宗庙庭；崇宁三年配食文宣王庙列于颜孟之次追封舒王；钦宗时杨时以为言诏停之；高宗用赵鼎吕聪问言停宗庙配享削其王封。一人之褒赠与剥夺随新旧党争政局三翻四覆，为宋代政治文化之缩影。
+    confidence: 存疑
+    dispute: 绍圣起讫上限取绍圣元年，高宗削封下限取绍兴年间赵鼎当政期，系据本传叙次推定。
+    source_ids: [src-songshi-vol327]
+
+works:
+  - work_id: yuan-ri
+    title: 元日
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约熙宁初年拜相前后（1069年前后）
+      year: 1069
+      precision: 约
+    place: 汴京（一说）
+    context: 初执国柄力行新法之际咏岁元新象，爆竹屠苏桃符的更新意象与变法气象互映。
+    attribution: 确凿
+    excerpt: 爆竹声中一岁除，春风送暖入屠苏。千门万户曈曈日，总把新桃换旧符。
+    text_display: full
+    themes: [节令, 更新]
+    influence: 咏春节第一诗，曈曈日与新桃旧符成为辞旧迎新的公共意象。
+    confidence: 存疑
+    dispute: 系年从熙宁初通说，无正史或编年确证；文本用通行公版，未逐页核对宋刻底本。
+    source_ids: [src-wanganshi-ji]
+
+  - work_id: bo-chuan-gua-zhou
+    title: 泊船瓜洲
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 熙宁八年复相途中说为主流，另有晚年江宁说
+      year: 1075
+      precision: 约
+    place: 瓜洲渡（今江苏扬州邗江南）
+    context: 京口瓜洲一水间钟山只隔数重山——离乡赴阙之际回望钟山，春风又绿江南岸明月何时照还。
+    attribution: 确凿
+    excerpt: 京口瓜洲一水间，钟山只隔数重山。春风又绿江南岸，明月何时照我还？
+    text_display: full
+    themes: [思归, 江景]
+    influence: 春风又绿江南岸为炼字典范，洪迈容斋随笔记其先作到过入满凡十字而后定为绿字。
+    confidence: 存疑
+    dispute: 作时有复相途中与晚年江宁两说；「绿」字屡改典故出自洪迈容斋随笔笔记层，本次未实取该书原文，姑存疑；文本用通行公版本未核宋刻底本。
+    source_ids: [src-wanganshi-ji]
+
+  - work_id: deng-fei-lai-feng
+    title: 登飞来峰
+    alt_titles: [登飞来峰（一作浙东纪行诗）]
+    genre: 七言绝句
+    date:
+      text: 约皇祐二年前后知鄞县秩满往返杭州之际（约1050年前后）
+      year: 1050
+      precision: 约
+    place: 杭州飞来峰（一说绍兴林山）
+    context: 青年州县官登高明志之作，不畏浮云遮望眼与其后变法中不惧人言的姿态互为印证。
+    attribution: 确凿
+    excerpt: 飞来山上千寻塔，闻说鸡鸣见日升。不畏浮云遮望眼，自缘身在最高层。
+    text_display: full
+    themes: [登览, 明志]
+    influence: 不畏浮云遮望眼成为不惧阻挠的经典格言，长期入选语文教材。
+    confidence: 存疑
+    dispute: 作地有杭州飞来峰与绍兴林山（应天塔）两说；异文「飞来山上」一作「飞来峰上千寻塔」、「自缘」一作「只缘」。文本用通行公版本未核宋刻底本。
+    source_ids: [src-wanganshi-ji]
+
+  - work_id: mei-hua-qiang-jiao
+    title: 梅花
+    alt_titles: []
+    genre: 五言绝句
+    date:
+      text: 晚年退居江宁时期（约1077—1086）
+      year: 1077
+      range_end: 1086
+      precision: 范围
+    place: 江宁
+    context: 罢相闲居以凌寒孤梅自况，为有暗香来写尽政治失意中的自持。
+    attribution: 确凿
+    excerpt: 墙角数枝梅，凌寒独自开。遥知不是雪，为有暗香来。
+    text_display: full
+    themes: [咏物, 自喻]
+    influence: 咏梅绝唱之一，凌寒独自开成为人格操守的象征。
+    confidence: 存疑
+    dispute: 系年从退居江宁通说；文本用通行公版本未核宋刻底本。
+    source_ids: [src-wanganshi-ji]
+
+  - work_id: shu-hu-yin-xian-sheng-bi
+    title: 书湖阴先生壁二首（其一）
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 晚年退居江宁时期（约1077—1086）
+      year: 1077
+      range_end: 1086
+      precision: 范围
+    place: 江宁钟山（湖阴先生杨德逢宅）
+    context: 题隐居邻友杨德逢屋壁，一水护田将绿绕两山排闼送青来以山水有情写田园之趣。
+    attribution: 确凿
+    excerpt: 茅檐长扫净无苔，花木成畦手自栽。一水护田将绿绕，两山排闼送青来。
+    text_display: excerpt
+    themes: [田园, 咏景]
+    influence: 对偶精工而自然，被推为绝句中炼句极致。
+    confidence: 存疑
+    dispute: 系年与受主杨德逢身份从江宁时期通说；其二未录。文本用通行公版本。
+    source_ids: [src-wanganshi-ji]
+
+  - work_id: shang-zhong-yong
+    title: 伤仲永
+    alt_titles: []
+    genre: 散文（杂说）
+    date:
+      text: 庆历三年前后追记（约1043）
+      year: 1043
+      precision: 约
+    place: 金溪（今江西金溪）
+    context: 记金溪神童方仲永不使学而泯然众人的故事，结以受于人者不至之叹，申后天学习之重。
+    attribution: 确凿
+    excerpt: 金溪民方仲永，世隶耕。仲永生五年，未尝识书具，忽啼求之。……卒之为众人，则其受于人者不至也。
+    text_display: excerpt
+    themes: [劝学, 人才]
+    influence: 长期入选语文教材，伤仲永成为天赋荒废的经典隐喻。
+    confidence: 存疑
+    exclude: false
+    dispute: 所记之事在明道中（1032—1033），成文年份系据文中还自扬州的行迹推定的通说；文本已自维基文库《傷仲永》（据王臨川集卷071）实取核验。
+    source_ids: [src-wanganshi-ji]
+
+  - work_id: you-bao-chan-shan-ji
+    title: 游褒禅山记
+    alt_titles: []
+    genre: 散文（游记）
+    date:
+      text: 至和元年七月（1054）
+      year: 1054
+      precision: 精确
+    place: 和州褒禅山（今安徽含山）
+    context: 与四人拥火探华阳洞不得极游，因发世之奇伟瑰怪非常之观常在于险远的求思之论，尽吾志而不能至者可以无悔矣——其志其力其物相之辨被视为变法精神的先声。
+    attribution: 确凿
+    excerpt: 夫夷以近，则游者众；险以远，则至者少。而世之奇伟瑰怪非常之观，常在于险远……尽吾志也，而不能至者，可以无悔矣。
+    text_display: excerpt
+    themes: [游记, 明志]
+    influence: 借游说理的唐宋古文名篇，长期入选语文教材。
+    confidence: 确定
+    dispute: ""
+    notes: 文末落款至和元年七月某日临川王某记，系年即作者自书明文。
+    source_ids: [src-wanganshi-ji]
+
+  - work_id: du-meng-chang-jun-chuan
+    title: 读孟尝君传
+    alt_titles: []
+    genre: 散文（读史短论）
+    date:
+      text: 成文年份不详
+      precision: 未知
+    place: ""
+    context: 全文不满百字而四转到底，翻世皆称孟尝君能得士之案，断言鸡鸣狗盗之出其门此士之所以不至也。
+    attribution: 确凿
+    excerpt: 世皆称孟尝君能得士，士以故归之，而卒赖其力，以脱于虎豹之秦。嗟乎！孟尝君特鸡鸣狗盗之雄耳，岂足以言得士？
+    text_display: excerpt
+    themes: [读史, 翻案]
+    influence: 短文翻案的极致范本，长期入选语文教材与古文选本。
+    confidence: 确定
+    dispute: ""
+    notes: 文本已自维基文库《讀孟嘗君傳》（据王臨川集卷071、古文观止卷11）实取核验；成文年代无载。
+    source_ids: [src-wanganshi-ji]
+
+  - work_id: gui-zhi-xiang-jin-ling-huai-gu
+    title: 桂枝香·金陵怀古
+    alt_titles: []
+    genre: 词
+    date:
+      text: 居江宁时期（约熙宁年间）
+      year: 1067
+      range_end: 1076
+      precision: 范围
+    place: 江宁
+    context: 登高晚秋览金陵形胜，千里澄江似练翠峰如簇；叹六朝旧事随流水，念门外楼头悲恨相续，借吊古警当世。
+    attribution: 确凿
+    excerpt: 登临送目，正故国晚秋，天气初肃。千里澄江似练，翠峰如簇。……六朝旧事随流水，但寒烟衰草凝绿。
+    text_display: excerpt
+    themes: [怀古, 咏史]
+    influence: 以词怀古的开山杰作，历代词话推为金陵怀古绝调。
+    confidence: 存疑
+    dispute: 系年从居江宁通说无确证；结句异文「衰草」一作「芳草」。文本用通行公版本未核底本。
+    source_ids: [src-wanganshi-ji]
+
+footprints:
+  - name: 临川故里
+    modern_name: 江西省抚州市临川区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 少年在家乡，随父宦游往来
+      year: 1021
+      range_end: 1042
+      precision: 范围
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-songshi-vol327]
+  - name: 扬州（淮南判官幕）
+    modern_name: 江苏省扬州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 庆历二年起签书淮南判官，秩满后方去
+      year: 1042
+      range_end: 1046
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    confidence: 存疑
+    dispute: 幕职起讫年份据职历推定，本传无逐年系年。
+    source_ids: [src-songshi-vol327]
+  - name: 鄞县
+    modern_name: 浙江省宁波市鄞州区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约庆历七年知鄞县，兴水利试行贷谷
+      year: 1047
+      range_end: 1048
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    source_ids: [src-songshi-vol327, src-wanganshi-ji]
+  - name: 舒州
+    modern_name: 安徽省潜山市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 至和、嘉祐间通判舒州
+      year: 1051
+      range_end: 1054
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 通判舒州为本传明文，具体起讫年份系推定。
+    source_ids: [src-songshi-vol327]
+  - name: 常州
+    modern_name: 江苏省常州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 嘉祐间请知常州
+      year: 1056
+      range_end: 1058
+      precision: 范围
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 知常州起讫年份系据本传叙次推定。
+    source_ids: [src-songshi-vol327]
+  - name: 汴京
+    modern_name: 河南省开封市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 嘉祐三年入为度支判官起，历任翰林学士、参知政事、两度拜相，至熙宁九年罢相离朝
+      year: 1058
+      range_end: 1076
+      precision: 范围
+    kind: 任职
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-songshi-vol327]
+  - name: 江宁（半山园）
+    modern_name: 江苏省南京市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 母丧守制、两任知江宁府，熙宁九年退居至元祐元年病逝
+      year: 1063
+      range_end: 1086
+      precision: 范围
+    kind: 居住
+    route_order: 7
+    memorial_only: false
+    source_ids: [src-songshi-vol327]
+  - name: 钟山（定林寺一带）
+    modern_name: 江苏省南京市紫金山
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 晚年退居期间常骑驴遍游钟山，居所正在城中与钟山半道故名半山
+      year: 1076
+      range_end: 1086
+      precision: 范围
+    kind: 居住
+    route_order: 8
+    memorial_only: false
+    confidence: 存疑
+    dispute: 半山得名与游山事迹见于其江宁时期诗文与宋人记载，本传未详，系年从通说。
+    source_ids: [src-wanganshi-ji]
+
+relations:
+  - relation_type: 同僚
+    target_id: sushi
+    direction: 双向
+    period:
+      text: 熙宁、元丰间同朝为僚，政见相左而文章相知
+      year: 1068
+      range_end: 1086
+      precision: 范围
+    evidence: 苏轼因反对新法外放，乌台诗案系狱几死。本卷王安礼附传明载苏轼下御史狱势危甚无敢救者，安礼从容言自古大度之主不以言语罪人，轼以故得轻比；至于安石本人「岂有圣世而杀才士乎」之救轼语，仅见宋人笔记层，正史无征。二人晚年于江宁会晤唱和，苏轼有骑驴渺渺入荒陂想见先生未病时之句（文集层，未实取核验）。
+    confidence: 存疑
+    dispute: 安石救轼语属宋人笔记层，出处未经正史核验；江宁会晤与唱和诗文本尚未实取，引用时须降级展示。政敌而私谊有据的判断本身依赖多层史料拼接，故整条标存疑。
+    source_ids: [src-songshi-vol327]
+  - relation_type: 同僚
+    target_id: ouyangxiu
+    direction: 双向
+    period:
+      text: 庆历至熙宁间同朝，由奖掖而分歧
+      year: 1042
+      range_end: 1071
+      precision: 范围
+    evidence: 友生曾巩携安石文示欧阳修，修为之延誉；修又荐为谏官，安石以祖母年高辞，修以其须禄养言于朝用为群牧判官。及新法行，欧乞致仕冯京请留之，安石曰修附丽韩琦以琦为社稷臣如此人在一郡则坏一郡在朝廷则坏朝廷留之安用乃听之——奖掖与排斥均为本传明文。
+    confidence: 确定
+    source_ids: [src-songshi-vol327]
+
+reception:
+  - era: 同时代
+    evaluator: 韩琦
+    quote: 安石为翰林学士则有余，处辅弼之地则不可。
+    text_display: excerpt
+    comment: 本传论曰所引神宗问相时韩琦答语，代表旧党元老对其行政能力的保留意见；本卷照录以存史源，不代表项目立场。
+    source_ids: [src-songshi-vol327]
+  - era: 同时代
+    evaluator: 司马光
+    quote: 士夫沸腾，黎民骚动。
+    text_display: excerpt
+    comment: 新法初行时司马光答诏语，本传明载；光后又三致书反复论新法之害，二人由素厚之交转为政敌，为新旧党争最具象征性的对立。
+    source_ids: [src-songshi-vol327]
+  - era: 同时代
+    evaluator: 吕诲（御史中丞）
+    quote: ""
+    text_display: none
+    comment: 熙宁二年上疏论安石过失十事，为新法反对派的第一份系统性弹章；弹章全文见宋史吕诲传，本卷未逐条录入。
+    source_ids: [src-songshi-vol327]
+  - era: 同时代
+    evaluator: 苏洵（本传引述，真伪有争）
+    quote: 是不近人情者，鲜不为大奸慝。
+    text_display: excerpt
+    comment: 本传记安石未贵时蜀人苏洵作辩奸论刺之比之王衍卢杞合为一人。南宋以降学者多疑辩奸论系伪托，此处仅录宋史引述原貌并如实标注归属争议。
+    confidence: 有争议
+    dispute: 辩奸论是否苏洵所作、所指是否安石，历代聚讼未决；宋史采录入传本身反映元修史书的批判取向。
+    source_ids: [src-songshi-vol327]
+  - era: 历代批评
+    evaluator: 元·脱脱等《宋史》论曰（引朱熹）
+    quote: 以文章节行高一世，而尤以道德经济为己任。……而安石乃汲汲以财利兵革为先务，引用凶邪，排摈忠直，躁迫强戾……卒之群奸嗣虐，流毒四海。
+    text_display: excerpt
+    comment: 南宋理学家的否定性定调被元修宋史采为盖棺论论断，并与高宗停配享削王封的官方处置相表里，构成此后数百年「变乱祖宗法度」的主流评价；本卷照录原文以呈现传统史学的批判框架，不作增删。
+    source_ids: [src-songshi-vol327]
+  - era: 历代批评
+    evaluator: 清代蔡上翔《王荆公年谱考略》以来的翻案脉络
+    quote: ""
+    text_display: none
+    comment: 清代蔡上翔系统考辨宋史本传与旧党记载的不实处为其辩白，近代梁启超著王荆公更尊之为三代以下唯一完人与大改革家，二十世纪史学则多以改革家框架重估熙宁变法。本条为中立综述：上述著作的具体引文尚未逐一实取公版核验，故暂不引原文，来源留空待补。
+    confidence: 存疑
+    dispute: 翻案派论证同样带有立场，本卷对肯定与否定的两造均保持转述而不背书；相关原始文献待登记后再补引文。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 百余年来变法评价经历否定—翻案—多元的完整变迁：从传统党争叙事到改革家叙事，再到对青苗保甲诸法社会经济效果的实证研究、对宋史史源（多本旧党文字）的方法论反思。具体论著引文须逐条取得许可或核验公版后补入，本卷暂作综述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 元日登飞来峰泊船瓜洲梅花及文言伤仲永游褒禅山记读孟尝君传长期入选中小学语文教材；作为唐宋八大家与熙宁变法主导者的双重形象进入公共文化。教材篇目随学期变动，录入时须另行核验当期目录。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传媒
+    quote: ""
+    text_display: none
+    comment: 拗相公一词出自南宋以降笔记与话本传统（如京本通俗小说拗相公饮恨半山堂），至今仍是网络语境中对固执改革者的高频标签；影视形象多为变法叙事主角。具体作品名录暂不收录，待专项整理。
+    source_ids: []
+
+sources_used: [src-songshi-vol327, src-wanganshi-ji]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。19条年谱（5阶段）、9首作品、8处足迹、2组关系、5层接受史；宋史卷327、伤仲永、读孟尝君传、王临川集卷83均已实取维基文库；诗词用通行文本并分层标注核验程度；宋史负面史源立场已在审计表与相关条目注明}

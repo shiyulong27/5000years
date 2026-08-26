@@ -1,0 +1,746 @@
+# 李白全景详卷（schema v1）
+# 史料审计表（TASK-003 前置证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 旧唐书·文苑下(J) | 新唐书·文艺中(X) | 结论与置信 |
+# |---|---|---|---|
+# | 家世籍贯 | 山东人，父任城尉 | 兴圣皇帝九世孙，隋末徙西域，神龙初还客巴西 | 两史矛盾，记有争议 |
+# | 名号由来 | 无载 | 母梦长庚星因命之 | 确定(X) |
+# | 荐举入京 | 吴筠荐之，与筠俱待诏翰林 | 与吴筠善，筠被召故白亦至长安 | 确定（两史同记）；玉真公主/元丹丘荐说属学术讨论 |
+# | 待诏翰林 | 召入以水洒面秉笔 | 帝赐食亲为调羹，供奉翰林 | 确定 |
+# | 力士脱靴 | 引足令高力士脱靴由是斥去 | 使高力士脱靴；力士擿诗激杨贵妃 | 确定（细节两书互异） |
+# | 离京 | 浪迹江湖终日沉饮 | 恳求还山帝赐金放还 | 从X「赐金放还」；744年为学界通说推定 |
+# | 永王事 | 白在宣州谒见辟为从事 | 转侧宿松匡庐间璘辟为府僚佐 | 确定 |
+# | 流放遇赦 | 长流夜郎后遇赦得还 | 有诏长流夜郎会赦还寻阳 | 确定；未至夜郎说据早发白帝城系年（存疑） |
+# | 死地死因 | 饮酒过度醉死于宣城 | 年六十余卒；依李阳冰当涂；悦谢家青山 | 两史矛盾；当涂为主流，宣城醉死说存疑记录 |
+# | 身后 | 文集二十卷行于时 | 初葬东麓元和末范传正改葬青山；文宗诏三绝 | 确定(X) |
+# | 生年 | 两史无载 | 卒时年六十余(762卒)，倒推约701 | 约701；草堂集序神龙初生说异(src-caotangxu待核) |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: libai
+
+profile:
+  courtesy_name: 太白
+  art_name: 青莲居士
+  aliases: [谪仙人, 诗仙, 李十二]
+  gender: 男
+  ethnicity: ""
+  ancestry: 陇西成纪（新唐书记为兴圣皇帝九世孙，先世隋末以罪徙西域）
+  birthplace: "三说并立：西域碎叶说、蜀中巴西说、旧唐书山东说，详见 timeline 出生条目 dispute"
+  death_place: 当涂
+  offices: [翰林待诏（供奉翰林）, 左拾遗（代宗征召时已卒）]
+  fields: [文学]
+  roles: [诗人, 剑客]
+  summary: 盛唐浪漫主义诗歌巅峰，贺知章惊为谪仙人；一生辗转于漫游、干谒、宫廷与乱世流离之间。
+
+timeline:
+  # ── 阶段一：蜀中岁月 ──────────────────────────────
+  - stage: 蜀中岁月
+    stage_order: 1
+    title: 出生与家世迁转
+    date:
+      text: "约701年"
+      year: 701
+      precision: 约
+    place: "绵州巴西（一说西域碎叶）"
+    summary: 新唐书记其先隋末以罪徙西域、神龙初遁还客巴西，母梦长庚星而生；旧唐书则称山东人、父为任城尉。出生地与生年均系长期考辨对象。
+    confidence: 存疑
+    dispute: 出生地有碎叶、巴西诸说并立；生年约701系由卒年六十余倒推，草堂集序神龙初生说与之不合。
+    source_ids: [src-xts-vol202, src-jts-vol190b]
+  - stage: 蜀中岁月
+    stage_order: 2
+    title: 十岁通诗书，隐读岷山
+    date:
+      text: 约710—718年之间
+      year: 710
+      range_end: 718
+      precision: 范围
+    place: 绵州昌隆
+    summary: 新唐书载十岁通诗书，既长隐岷山，州举有道不应。
+    source_ids: [src-xts-vol202]
+  - stage: 蜀中岁月
+    stage_order: 3
+    title: 苏颋益州惊为天才
+    date:
+      text: 约720年前后
+      year: 720
+      precision: 约
+    place: 成都
+    summary: 苏颋为益州长史，见白异之，谓是子天才英特，少益以学可比相如。
+    source_ids: [src-xts-vol202]
+  - stage: 蜀中岁月
+    stage_order: 4
+    title: 击剑任侠，喜纵横术
+    date:
+      text: 少年时期，具体年代不详
+      precision: 未知
+    place: 蜀中
+    summary: 新唐书称其喜纵横术、击剑、为任侠、轻财重施。
+    source_ids: [src-xts-vol202]
+
+  # ── 阶段二：仗剑远游 ──────────────────────────────
+  - stage: 仗剑远游
+    stage_order: 5
+    title: 出蜀远游
+    date:
+      text: 约724—725年之间
+      year: 724
+      range_end: 725
+      precision: 范围
+    place: 出三峡沿江而下
+    summary: 自称仗剑去国辞亲远游。出蜀年份系学界依其诗文行迹推定，正史无载。
+    confidence: 存疑
+    dispute: 出蜀确年在724与725间尚有分歧；仗剑去国语出其自述文章，全文来源待核。
+    source_ids: [src-libai-shangpeishu]
+  - stage: 仗剑远游
+    stage_order: 6
+    title: 维扬散金三十余万
+    date:
+      text: 约726年
+      year: 726
+      precision: 约
+    place: 扬州
+    summary: 自述不逾一年散金三十余万，落魄公子悉皆济之。客病扬州旅舍，江行诗多作于此前后。
+    confidence: 存疑
+    dispute: 散金事出自本人自述文章，年代系推定。
+    source_ids: [src-libai-shangpeishu, src-quantangshi-li]
+  - stage: 仗剑远游
+    stage_order: 7
+    title: 安陆成家
+    date:
+      text: 约727—736年之间
+      year: 727
+      range_end: 736
+      precision: 范围
+    place: 安陆
+    summary: 娶故宰相许圉师孙女，酒隐安陆蹉跎十年，以安陆为中心四处干谒漫游。
+    confidence: 存疑
+    dispute: 成婚确年与十年跨度系学界通说推定，正史无载。
+    source_ids: [src-quantangshi-li]
+  - stage: 仗剑远游
+    stage_order: 8
+    title: 初入长安求仕
+    date:
+      text: 约730—731年之间
+      year: 730
+      range_end: 731
+      precision: 范围
+    place: 长安
+    summary: 一入长安干谒求仕不遇，历终南山等地而返。此行有无及年代均系据诗文推定。
+    confidence: 存疑
+    dispute: 初入长安年代旧说在开元十八年前后，亦有学者主张更晚或无此行。
+    source_ids: [src-quantangshi-li]
+  - stage: 仗剑远游
+    stage_order: 9
+    title: 移家东鲁，竹溪六逸
+    date:
+      text: 约736—740年之间
+      year: 736
+      range_end: 740
+      precision: 范围
+    place: 任城、徂徕山
+    summary: 移家东鲁。与孔巢父、韩准、裴政、张叔明、陶沔隐徂徕山酣歌纵酒，号竹溪六逸。两唐书同记此事而人名互异。
+    confidence: 存疑
+    dispute: 移家年份系推定；六逸名单两唐书人名有一字之差（韩准/韩沔）。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+
+  # ── 阶段三：长安三年 ──────────────────────────────
+  - stage: 长安三年
+    stage_order: 10
+    title: 奉诏入京，供奉翰林
+    date:
+      text: 约742年
+      year: 742
+      precision: 约
+    place: 长安
+    summary: 天宝初南入会稽与吴筠善；筠被召故白亦至长安。往见贺知章，知章叹曰子谪仙人也。言于玄宗，召见金銮殿论当世事，奏颂一篇，帝赐食亲为调羹，有诏供奉翰林。旧唐书则径称筠荐之于朝遣使召之。
+    source_ids: [src-xts-vol202, src-jts-vol190b]
+  - stage: 长安三年
+    stage_order: 11
+    title: 沉香亭应制乐章
+    date:
+      text: 约743年
+      year: 743
+      precision: 约
+    place: 长安兴庆宫沉香亭
+    summary: 帝坐沉香亭子意有所感欲得白为乐章，召入而白已醉，左右以水靧面稍解，援笔成文婉丽精切无留思。即清平调词三首之所本。
+    source_ids: [src-xts-vol202, src-quantangshi-li]
+  - stage: 长安三年
+    stage_order: 12
+    title: 力士脱靴传说
+    date:
+      text: 供奉翰林期间
+      year: 742
+      range_end: 744
+      precision: 范围
+    place: 长安
+    summary: 尝沉醉殿上引足令高力士脱靴（旧唐书）。新唐书又载力士耻之擿其诗以激杨贵妃，帝欲官白妃辄沮止；并记玄宗度曲召白醉中秉笔顷之成十余章事。
+    confidence: 存疑
+    dispute: 脱靴事两唐书均载然情节互异，后世敷演尤多；本条仅录正史层面记载。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+  - stage: 长安三年
+    stage_order: 13
+    title: 赐金放还
+    date:
+      text: 约744年
+      year: 744
+      precision: 约
+    place: 长安
+    summary: 自知不为亲近所容益骜放不自修，恳求还山，帝赐金放还。离京年份744为学界通说。
+    source_ids: [src-xts-vol202]
+
+  # ── 阶段四：漫游梁宋东鲁 ────────────────────────────
+  - stage: 漫游梁宋东鲁
+    stage_order: 14
+    title: 与杜甫同游梁宋东鲁
+    date:
+      text: 约744—745年之间
+      year: 744
+      range_end: 745
+      precision: 范围
+    place: 洛阳、梁宋、东鲁
+    summary: 离京后与杜甫相遇订交，次年复同游东鲁，杜甫有醉眠秋共被携手日同行之句。李杜相会是文学史著名事件，具体月日无考。
+    confidence: 存疑
+    dispute: 相会地点洛阳系主流意见亦有异说；正史无载，据双方诗文集互证推定。
+    source_ids: [src-quantangshi-li]
+  - stage: 漫游梁宋东鲁
+    stage_order: 15
+    title: 齐州受道箓
+    date:
+      text: 约744年前后
+      year: 744
+      precision: 约
+    place: 齐州紫极宫
+    summary: 请北海高天师授道箓于齐州紫极宫，正式入道。系据其诗文与唐人道教制度推定。
+    confidence: 存疑
+    dispute: 受箓年份有744与746两说。
+    source_ids: [src-quantangshi-li]
+  - stage: 漫游梁宋东鲁
+    stage_order: 16
+    title: 北游幽州观安禄山之势
+    date:
+      text: 约751—752年之间
+      year: 751
+      range_end: 752
+      precision: 范围
+    place: 幽州
+    summary: 北游幽州目睹安禄山坐大势成，忧愤而返。乱前此行系据幽州胡马客歌等诗文系年推定。
+    confidence: 存疑
+    dispute: 幽州之行年代诸家谱系略有出入。
+    source_ids: [src-quantangshi-li]
+
+  # ── 阶段五：乱世流离 ──────────────────────────────
+  - stage: 乱世流离
+    stage_order: 17
+    title: 安史乱起，转侧宿松匡庐间
+    date:
+      text: 约755—756年之间
+      year: 755
+      range_end: 756
+      precision: 范围
+    place: 宿松、匡庐（庐山）
+    summary: 安禄山反，两京陷落，白转侧宿松、匡庐间避乱。新唐书系年明确在永王辟召之前。
+    source_ids: [src-xts-vol202]
+  - stage: 乱世流离
+    stage_order: 18
+    title: 入永王璘幕
+    date:
+      text: 约756年末—757年初之间
+      year: 756
+      range_end: 757
+      precision: 范围
+    place: 宣州一带
+    summary: 玄宗幸蜀途中命永王璘为江淮兵马都督扬州节度大使；旧唐书载白在宣州谒见遂辟为从事，新唐书称璘辟为府僚佐。璘起兵兵败，白逃还彭泽。
+    confidence: 存疑
+    dispute: 应聘动机与是否知情后世聚讼纷纭；正史仅记辟召与败亡事实。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+  - stage: 乱世流离
+    stage_order: 19
+    title: 系浔阳狱，郭子仪请赎说
+    date:
+      text: 约757年
+      year: 757
+      precision: 约
+    place: 浔阳
+    summary: 永王败，白当诛。新唐书载初白游并州见郭子仪奇之，子仪尝犯法白为救免，至是子仪请解官以赎，有诏长流夜郎。此段因果两唐书独详于新书。
+    confidence: 有争议
+    dispute: 郭李互救故事时序难合，自宋以来学者多疑其为传闻附会，新唐书采小说家言的可能性被反复讨论。
+    source_ids: [src-xts-vol202]
+  - stage: 乱世流离
+    stage_order: 20
+    title: 长流夜郎，中道遇赦
+    date:
+      text: 约758—759年之间
+      year: 758
+      range_end: 759
+      precision: 范围
+    place: 自浔阳溯江至白帝城一带
+    summary: 长流夜郎，乾元二年春行至白帝城遇赦得还。早发白帝城即作于此时（该诗归属主流定为李白，系年从通说）。
+    confidence: 存疑
+    dispute: 遇赦地点有巫山、白帝城诸说；早发白帝城亦有主张非李白所作或作于出蜀年少时的少数意见。
+    source_ids: [src-jts-vol190b, src-xts-vol202, src-quantangshi-li]
+  - stage: 乱世流离
+    stage_order: 21
+    title: 宋若思辟参谋，依李阳冰于当涂
+    date:
+      text: 约759—761年之间
+      year: 759
+      range_end: 761
+      precision: 范围
+    place: 寻阳、金陵、当涂
+    summary: 新唐书载会赦还寻阳坐事下狱，宋若思将吴兵三千赴河南道寻阳释其囚辟为参谋未几辞职。后贫病交加，往依族叔当涂县令李阳冰。代宗立以左拾遗召而白已卒。
+    source_ids: [src-xts-vol202]
+  - stage: 乱世流离
+    stage_order: 22
+    title: 病逝当涂，葬东山麓
+    date:
+      text: "约762年"
+      year: 762
+      precision: 约
+    place: 当涂
+    summary: 新唐书谓卒年六十余，临终以诗文稿托李阳冰编集作序。初葬当涂龙山之东麓；元和末宣歙观察使范传正祭墓改葬青山，访后裔惟二孙女嫁为民妻。旧唐书则称饮酒过度醉死于宣城，与当涂病卒说并存。
+    confidence: 存疑
+    dispute: 死地死因两唐书相牾：当涂病卒为主流（李阳冰序托稿事可佐），宣城醉死说记录存疑；捉月骑鲸为文学传说不足为据。
+    source_ids: [src-xts-vol202, src-jts-vol190b]
+
+works:
+  - work_id: huanghelou-song-menghaoran
+    title: 黄鹤楼送孟浩然之广陵
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约730年前后
+      year: 730
+      precision: 约
+    place: 江夏黄鹤楼
+    context: 开元年间游历荆楚，送别孟浩然东下扬州。故人西辞黄鹤楼烟花三月下扬州孤帆远影碧空尽唯见长江天际流。
+    attribution: 确凿
+    excerpt: 故人西辞黄鹤楼，烟花三月下扬州。孤帆远影碧空尽，唯见长江天际流。
+    text_display: full
+    themes: [送别, 江景]
+    influence: 送别诗中情景交融的典范之作。
+    source_ids: [src-quantangshi-li]
+
+  - work_id: jing-ye-si
+    title: 静夜思
+    alt_titles: [夜思]
+    genre: 五言绝句
+    date:
+      text: 约726年
+      year: 726
+      precision: 约
+    place: 扬州（一说）
+    context: 客居扬州旅舍秋夜望月思乡而作，系年从扬州旅居说。
+    attribution: 确凿
+    excerpt: 床前明月光，疑是地上霜。举头望明月，低头思故乡。
+    text_display: full
+    themes: [思乡]
+    influence: 传诵最广的唐诗之一。
+    confidence: 存疑
+    dispute: 宋刊本首句作床前看月光第三句作举头望山月，今通行文本为明清改定；创作地点与年份均系推定。
+    source_ids: [src-quantangshi-li]
+  - work_id: shu-dao-nan
+    title: 蜀道难
+    alt_titles: []
+    genre: 乐府
+    date:
+      text: 创作年代众说纷纭，约在天宝初见贺知章之前
+      precision: 未知
+    place: ""
+    context: 新唐书载贺知章读其文而叹谪仙人，旧题此诗即所读之篇；主旨或送友人入蜀、或讽时事、或咏蜀道之险，历代聚讼。
+    attribution: 确凿
+    excerpt: 噫吁嚱危乎高哉！蜀道之难难于上青天。蚕丛及鱼凫开国何茫然。尔来四万八千岁不与秦塞通人烟。
+    text_display: excerpt
+    themes: [山水, 乐府]
+    influence: 想落天外的乐府绝唱，殷璠称其奇之又奇。
+    confidence: 存疑
+    dispute: 系年有开元末、天宝初诸说；作意自唐以来无定论。
+    source_ids: [src-xts-vol202, src-quantangshi-li]
+  - work_id: qingpingdiao
+    title: 清平调词三首
+    alt_titles: [清平调]
+    genre: 乐府词
+    date:
+      text: 约743年
+      year: 743
+      precision: 约
+    place: 长安兴庆宫沉香亭
+    context: 新唐书载玄宗沉香亭意有所感欲得白为乐章，白醉中援笔成文婉丽精切。云想衣裳花想容即其一。
+    attribution: 确凿
+    excerpt: 云想衣裳花想容，春风拂槛露华浓。若非群玉山头见，会向瑶台月下逢。
+    text_display: full
+    themes: [应制, 咏牡丹]
+    influence: 应制诗中传诵最广者，亦为力士脱靴传闻之背景。
+    confidence: 存疑
+    dispute: 三首是否一时一地所作及文字小异尚有讨论；应制情境据新唐书。
+    source_ids: [src-xts-vol202, src-quantangshi-li]
+  - work_id: xing-lu-nan
+    title: 行路难三首（其一）
+    alt_titles: []
+    genre: 乐府
+    date:
+      text: 约744年离京之际
+      year: 744
+      precision: 约
+    place: 长安
+    context: 赐金放还前后，抒怀才不遇与自信突破交织之情。
+    attribution: 确凿
+    excerpt: 金樽清酒斗十千，玉盘珍羞直万钱。停杯投箸不能食，拔剑四顾心茫然。长风破浪会有时，直挂云帆济沧海。
+    text_display: full
+    themes: [抒怀]
+    influence: 长风破浪成为士人困境自励的千古名句。
+    source_ids: [src-quantangshi-li]
+  - work_id: yue-xia-du-zhuo
+    title: 月下独酌四首（其一）
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 约744年
+      year: 744
+      precision: 约
+    place: 长安
+    context: 供奉翰林末期孤独处境的自写照，独酌邀月成三人。
+    attribution: 确凿
+    excerpt: 花间一壶酒，独酌无相亲。举杯邀明月，对影成三人。
+    text_display: full
+    themes: [孤独, 月]
+    influence: 以月为友的浪漫想象代表。
+    source_ids: [src-quantangshi-li]
+  - work_id: mengyou-tianmu
+    title: 梦游天姥吟留别
+    alt_titles: [梦游天姥山别东鲁诸公]
+    genre: 七言古诗
+    date:
+      text: 约745年
+      year: 745
+      precision: 约
+    place: 东鲁
+    context: 离开长安后由东鲁将游吴越，梦游天姥而留别诸公。安能摧眉折腰事权贵使我不得开心颜为其宣言。
+    attribution: 确凿
+    excerpt: 海客谈瀛洲，烟涛微茫信难求。越人语天姥，云霞明灭或可睹。……安能摧眉折腰事权贵，使我不得开心颜！
+    text_display: excerpt
+    themes: [梦境, 傲岸]
+    influence: 其人格宣言与浪漫主义笔法的高峰。
+    confidence: 存疑
+    dispute: 系年从天宝四载通说，亦有异说。
+    source_ids: [src-quantangshi-li]
+
+  - work_id: jiang-jin-jiu
+    title: 将进酒
+    alt_titles: []
+    genre: 乐府
+    date:
+      text: 约天宝年间，通说约752年
+      year: 752
+      precision: 约
+    place: 嵩山颍阳山居（一说）
+    context: 与友人岑勋应元丹丘邀宴饮，怀才不遇而纵酒高歌。天生我材必有用千金散尽还复来。
+    attribution: 确凿
+    excerpt: 君不见黄河之水天上来，奔流到海不复回。……天生我材必有用，千金散尽还复来。
+    text_display: excerpt
+    themes: [饮酒, 抒怀]
+    influence: 豪放诗风的极致代表。
+    confidence: 存疑
+    dispute: 作年有开元说与天宝说之争，地点亦有嵩山、颍阳诸异说。
+    source_ids: [src-quantangshi-li]
+  - work_id: wang-lushan-pubu
+    title: 望庐山瀑布（其二）
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约天宝乱前，或谓开元间初游庐山所作
+      year: 750
+      precision: 约
+    place: 庐山
+    context: 遥望香炉峰瀑布，飞流直下三千尺疑是银河落九天。与永王事前后转侧匡庐的行迹相合。
+    attribution: 确凿
+    excerpt: 日照香炉生紫烟，遥看瀑布挂前川。飞流直下三千尺，疑是银河落九天。
+    text_display: full
+    themes: [山水]
+    influence: 咏庐山瀑布的绝唱。
+    confidence: 存疑
+    dispute: 系年有开元与天宝两说。
+    source_ids: [src-quantangshi-li]
+  - work_id: zao-fa-baidicheng
+    title: 早发白帝城
+    alt_titles: [下江陵]
+    genre: 七言绝句
+    date:
+      text: 约759年春
+      year: 759
+      precision: 约
+    place: 白帝城至江陵江段
+    context: 长流夜郎中道遇赦，乘舟东还江陵，轻快如释重负。两岸猿声啼不住轻舟已过万重山。
+    attribution: 确凿
+    excerpt: 朝辞白帝彩云间，千里江陵一日还。两岸猿声啼不住，轻舟已过万重山。
+    text_display: full
+    themes: [遇赦, 江行]
+    influence: 其晚年命运转折的诗化见证。
+    confidence: 存疑
+    dispute: 归属主流定为李白，然亦有学者主张非李白作；系年从乾元二年赦归通说。
+    source_ids: [src-quantangshi-li]
+
+footprints:
+  - name: 碎叶城
+    modern_name: 吉尔吉斯斯坦托克马克附近
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 出生地碎叶说系学术推定，坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: "约701年"
+      year: 701
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 有争议
+    dispute: 出生地说之一，与蜀中巴西说并立。
+    source_ids: [src-xts-vol202]
+  - name: 绵州昌隆青莲乡
+    modern_name: 四川省江油市青莲镇
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 神龙初以后，幼年至出蜀
+      year: 705
+      range_end: 724
+      precision: 范围
+    kind: 居住
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-xts-vol202]
+  - name: 岷山（匡山）读书处
+    modern_name: 四川省江油市匡山
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 匡山读书处地望系后世考订，坐标暂缺
+    visit_date:
+      text: 约710—718年之间
+      year: 710
+      range_end: 718
+      precision: 范围
+    kind: 游历
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    source_ids: [src-xts-vol202]
+
+  - name: 成都
+    modern_name: 四川省成都市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约720年前后
+      year: 720
+      precision: 约
+    kind: 游历
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-xts-vol202]
+  - name: 安陆
+    modern_name: 湖北省安陆市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约727—736年之间
+      year: 727
+      range_end: 736
+      precision: 范围
+    kind: 居住
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-quantangshi-li]
+  - name: 任城与徂徕山
+    modern_name: 山东省济宁市、泰安市徂徕山
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约736—742年之间
+      year: 736
+      range_end: 742
+      precision: 范围
+    kind: 居住
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 移家东鲁年份系推定。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约742—744年之间
+      year: 742
+      range_end: 744
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    source_ids: [src-xts-vol202, src-jts-vol190b]
+  - name: 宣城敬亭山
+    modern_name: 安徽省宣城市敬亭山
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约753年起多次游历，晚年尤多
+      year: 753
+      precision: 约
+    kind: 游历
+    route_order: 8
+    memorial_only: false
+    source_ids: [src-jts-vol190b, src-quantangshi-li]
+  - name: 浔阳与庐山
+    modern_name: 江西省九江市庐山
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约756—757年之间
+      year: 756
+      range_end: 757
+      precision: 范围
+    kind: 谪迁
+    route_order: 9
+    memorial_only: false
+    source_ids: [src-xts-vol202]
+  - name: 夜郎流放道（未至）
+    modern_name: 重庆市至贵州遵义一线
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 流放路线走向系学界推定；中道遇赦未至贬所
+    visit_date:
+      text: 约758—759年之间
+      year: 758
+      range_end: 759
+      precision: 范围
+    kind: 谪迁
+    route_order: 10
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 遇赦地点有巫山白帝诸说，实际到达的最远点无定论。
+    source_ids: [src-xts-vol202, src-jts-vol190b]
+  - name: 当涂青山
+    modern_name: 安徽省马鞍山市当涂县青山李白墓
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约762年卒，初葬龙山，元和末改葬青山"
+      year: 762
+      precision: 约
+    kind: 逝世
+    route_order: 11
+    memorial_only: false
+    source_ids: [src-xts-vol202]
+  - name: 采石矶（捉月传说地）
+    modern_name: 安徽省马鞍山市采石矶
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 纪念地坐标待接入体系；传说地不作确证到访处理
+    visit_date:
+      text: 不详
+      precision: 未知
+    kind: 纪念地
+    route_order: 12
+    memorial_only: true
+    confidence: 传说
+    dispute: 醉酒捉月骑鲸升天为文学传说，正史无载；旧唐书宣城醉死说亦非采石。此处仅作后世纪念地著录。
+    source_ids: [src-jts-vol190b]
+
+relations:
+  - relation_type: 挚友
+    target_id: dufu
+    direction: 双向
+    period:
+      text: 约744—745年订交，此后终身以诗相忆
+      year: 744
+      precision: 约
+    evidence: 天宝三载离京后与杜甫相遇订交，同游梁宋东鲁；杜甫存怀李白诗十余首，有醉眠秋共被携手日同行之句。两唐书并称李杜齐名。
+    source_ids: [src-jts-vol190b, src-xts-vol202, src-quantangshi-li]
+  - relation_type: 社群
+    target_id: wangwei
+    direction: 双向
+    period:
+      text: 同处开元天宝长安诗坛，生卒几乎相同
+      year: 701
+      range_end: 761
+      precision: 范围
+    evidence: 李王同为盛唐代表诗人且有共同友人圈，然现存史料无二人直接交往记载，后世常并称对照。
+    inferred: true
+    confidence: 存疑
+    dispute: 二人无交往记录本身即学界常讨论的话题，任何交往传闻均属附会。
+    source_ids: [src-jts-vol190b]
+  - relation_type: 后世附会
+    target_id: guoziyi
+    direction: 双向
+    period:
+      text: 传说谓开元间并州相识
+      year: 735
+      precision: 约
+    evidence: 新唐书载白尝救犯法之子仪、子仪后请解官赎白之罪。此段因果时序难合，自宋以来学者多疑为传闻，故按规范标为后世附会层。
+    inferred: true
+    confidence: 有争议
+    dispute: 正史有载而事迹可信度存疑，属「史源存疑的附会叙事」典型个案。
+    source_ids: [src-xts-vol202]
+
+reception:
+  - era: 同时代
+    evaluator: 贺知章
+    quote: 子，谪仙人也！
+    text_display: excerpt
+    comment: 新唐书所记知章读其文后的惊呼，谪仙人由此成为李白终生标签。
+    source_ids: [src-xts-vol202]
+  - era: 同时代
+    evaluator: 杜甫
+    quote: 白也诗无敌，飘然思不群。笔落惊风雨，诗成泣鬼神。
+    text_display: excerpt
+    comment: 友人视角中最权威的同时代评价，出自杜甫寄李十二白二十韵与春日忆李白。
+    source_ids: [src-quantangshi-li]
+  - era: 历代批评
+    evaluator: 韩愈
+    quote: 李杜文章在，光焰万丈长。
+    text_display: excerpt
+    comment: 中唐以后李杜并举的经典表述，出自调张籍，奠定二人并尊格局。
+    source_ids: [src-quantangshi-li]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦出生地碎叶说考辨、生卒年推算、与永王璘案的政治评价翻转等议题；具体论著引文须逐条取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 静夜思望庐山瀑布早发白帝城等长期入选中小学语文教材；诗仙形象成为中华文化符号。教材版本信息随学期变动，录入时须另行核验当期篇目。
+    source_ids: []
+
+sources_used: [src-jts-vol190b, src-xts-vol202, src-quantangshi-li]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。22条年谱、11首作品、12处足迹、3组关系、5层接受史；新旧唐书异说全部落dispute字段}

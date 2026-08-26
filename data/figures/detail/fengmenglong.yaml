@@ -1,0 +1,543 @@
+# 冯梦龙全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 层级 | 证据与实取记录 | 结论与置信 |
+# |---|---|---|---|
+# | 名号籍贯生卒 | 序跋层／汇编层 | 维基文库 Author:馮夢龍 页实取：「馮夢龍1574年—1646年字猶龍，又字子猶，號龍子猶﹑墨憨齋主人﹑顧曲散人等。長洲（今江蘇省蘇州市）人。明代文學家、戲曲家」 | 确定；惟正史无传，此页为汇编层 |
+# | 喻世明言叙 | 序跋层 | 维基文库喻世明言/序全文实取：绿天馆主人题，「試今說話人當場描寫……雖小誦《孝經》、《論語》，其感人未必如是之捷且深也」及「茂苑野史氏，家藏古今通俗小說甚富……凡四十種」均在 | 确定；叙不系年，刊行约天启元年系通行推定；绿天馆主人是否冯氏化名系学界推测 |
+# | 警世通言叙 | 序跋层 | 维基文库警世通言/序全文实取：「事真而理不贗，即事贗而理亦真」，尾署「時天啟甲子臘月，豫章無礙居士題」 | 确定；无碍居士化名归属同为推测 |
+# | 醒世恒言叙 | 序跋层 | 维基文库醒世恆言/序全文实取：「明者，取其可以導愚也；通者，取其可以適俗也」「以《明言》、《通言》、《恒言》為六經國史之輔」，尾署「天啟丁卯中秋，隴西可一居士題于白下之棲霞山房」 | 确定；可一居士化名归属同为推测 |
+# | 三言单篇文本 | 文本层 | 喻世明言/第01卷蔣興哥重會珍珠衫开篇西江月及正文实取；警世通言/第32卷杜十娘怒沉百寶箱全文实取（「妾椟中有玉，恨郎眼内无珠」「不会风流莫妄谈，单单情字费人参」）；醒世恆言/第03卷賣油郎獨占花魁开头及「易求無價寶，難得有情郎」实取 | 确定（文本层）；单篇底本问题另落各条 dispute |
+# | 寿宁知县政绩 | 方志层（转引）＋公文层 | 维基文库禁溺女告示页全文实取：「壽寧縣正堂馮為嚴禁淹女以懲薄俗事……」页面注「崇禎七年至十一年（1634-1638年）任壽甯知縣」 | 任期确定；告示为任上公牍第一手文本 |
+# | 寿宁待志 | 方志层（转引） | 站内检索实取千顷堂书目卷07条目「馮夢龍夀寧縣待志二卷」 | 书目著录确定；内容转述 |
+# | 甲申纪事 | 书目层（转引） | 站内检索实取南明史稿/引用書目条目「《甲申紀事》明馮夢龍　弘光刻本」；冯梦龙全集清单页列甲申紀事、壽寧待志、中興偉略等26种 | 书目著录确定；原书本次不可达，内容仅转述 |
+# | 卒年异说 | 后世考证层（转述） | 作者页作1646；「忧愤而卒」「被清兵所杀」异说为学界通行转述，本次未获原始文献佐证 | 存疑，dispute 著录 |
+# | 诸生久困、丹徒训导、治春秋讲学 | 后世考证层（转述） | 未获原始文献，赖后世年谱传记层转述 | 存疑，逐条 dispute |
+# | 情教观 | 序跋层（未实取） | 「借男女之真情，发名教之伪药」出情史叙（龙子犹序），本次未在维基文库实取原文，按通行公版引文转述 | 存疑，出处待核 |
+#
+# 来源说明：本卷全部证据实际抓取自维基文库多个页面（URL 见上），但来源登记表
+# 暂只挂 src-gujinxiaoshuo 一个 id（占位待翻转），故条目级 source_ids 统一引此
+# 占位 id；主会话收口时建议拆分登记后翻转。
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: fengmenglong
+
+profile:
+  courtesy_name: 犹龙（又字子犹；一说犹龙、子犹皆其号而非字，异说落 dispute）
+  art_name: 墨憨斋主人（一号龙子犹、顾曲散人等）
+  aliases: [龙子犹, 顾曲散人, 冯犹龙, 冯子犹]
+  gender: 男
+  ethnicity: ""
+  ancestry: 南直隶苏州府长洲
+  birthplace: 苏州府长洲（今江苏苏州；一说吴县，记载小异）
+  death_place: 卒地旧籍无明文，通行谓卒于故乡苏州一带（推定）
+  offices: [寿宁知县（崇祯七年至十一年）]
+  fields: [文学]
+  roles: [文学家, 编辑家]
+  summary: 三言的编纂者与写定者，中国通俗文学的一代宗师；以「借男女之真情，发名教之伪药」的情教观为俗文学立论，把话本小说推到与六经国史并立的地位。
+
+timeline:
+  # ── 阶段一：吴县少年与诸生久困 ──────────────────────
+  - stage: 吴县少年与诸生久困
+    stage_order: 1
+    title: 出生于南直隶苏州府长洲
+    date:
+      text: "1574年"
+      year: 1574
+      precision: 精确
+    place: 苏州府长洲
+    summary: 冯梦龙生于苏州府长洲。生卒年从维基文库作者页汇编（1574—1646）；正史无传，籍贯长洲为主流记载，吴县说与之并存。
+    confidence: 存疑
+    dispute: 生年1574系汇编层数据，原始出处为晚出年谱传记层；籍贯长洲说与吴县说记载小异。
+    source_ids: [src-gujinxiaoshuo]
+  - stage: 吴县少年与诸生久困
+    stage_order: 2
+    title: 才情跌宕，诸生久困科场
+    date:
+      text: 万历年间，具体年代不详
+      precision: 未知
+    place: 苏州
+    summary: 少年才情跌宕，与同里文士声气相求；然科举蹇滞，以诸生久困场屋，终其前半生未获举业突破——此为其转向通俗著述的重要背景。
+    confidence: 存疑
+    dispute: 正史无传，本条全赖清代以来年谱与方志传记层转述，细节无从核验。
+    source_ids: [src-gujinxiaoshuo]
+
+  # ── 阶段二：编纂通俗文学的黄金期（三言山歌智囊等）───
+  - stage: 编纂通俗文学的黄金期
+    stage_order: 3
+    title: 辑民间歌谣挂枝儿山歌，题墨憨斋主人
+    date:
+      text: 约万历末至天启间
+      year: 1620
+      precision: 约
+    place: 苏州
+    summary: 广辑吴地民间时调，成挂枝儿、山歌二集，维基文库作者页著录「山歌（題墨憨齋主人）」。以文人身份整理市井情歌，是其俗文学立场最早的大胆实践。
+    confidence: 存疑
+    dispute: 刊行年份无定说；挂枝儿曾涉毁版风波云云属笔记层传闻。
+    source_ids: [src-gujinxiaoshuo]
+  - stage: 编纂通俗文学的黄金期
+    stage_order: 4
+    title: 古今小说刻成，绿天馆主人作叙
+    date:
+      text: 约1621年（天启元年前后通行说）
+      year: 1621
+      precision: 约
+    place: 苏州
+    summary: 古今小说（后改名喻世明言）四十篇刻成。叙称据茂苑野史氏家藏选其可嘉惠里耳者凡四十种，并宣言说话人当场描写之感动力「虽小诵孝经论语其感人未必如是之捷且深也」。
+    confidence: 存疑
+    dispute: 叙不署年，天启元年说系学界通行推定；绿天馆主人、茂苑野史氏是否皆冯氏化名均系推测而非实证。
+    source_ids: [src-gujinxiaoshuo]
+  - stage: 编纂通俗文学的黄金期
+    stage_order: 5
+    title: 警世通言刻成，豫章无碍居士题叙
+    date:
+      text: "1624年（天启甲子腊月）"
+      year: 1624
+      precision: 精确
+    place: 苏州
+    summary: 警世通言四十卷刻成，叙尾署「時天啟甲子臘月，豫章無礙居士題」。叙中提出「事真而理不贗，即事贗而理亦真」，为通俗演义的真实观立论。
+    confidence: 存疑
+    dispute: 刻书年份有序尾天启甲子为据，然无碍居士是否冯氏化名系学界推测。
+    source_ids: [src-gujinxiaoshuo]
+  - stage: 编纂通俗文学的黄金期
+    stage_order: 6
+    title: 醒世恒言刻成，三言至此齐备
+    date:
+      text: "1627年（天启丁卯中秋）"
+      year: 1627
+      precision: 精确
+    place: 白下（南京）栖霞山房题叙
+    summary: 醒世恒言四十种继明言通言而刻，可一居士叙于白下栖霞山房，谓「明者取其可以导愚也，通者取其可以适俗也」，并以三言为六经国史之辅。三言体制至此完成。
+    confidence: 存疑
+    dispute: 刻书年份有序尾天启丁卯为据；可一居士化名归属系推测；叙题地白下不能直接证明冯氏本人当时身在南京。
+    source_ids: [src-gujinxiaoshuo]
+  - stage: 编纂通俗文学的黄金期
+    stage_order: 7
+    title: 编智囊古今谭概等杂纂盛行于世
+    date:
+      text: 约天启至崇祯初，具体年份无定说
+      year: 1626
+      precision: 约
+    place: 苏州
+    summary: 以智囊、古今谭概为代表的智术与笑谑类杂纂相继编成行世，维基文库冯梦龙全集清单页并列著录。编纂出版成为其主要生涯形态。
+    confidence: 存疑
+    dispute: 各书成书年份诸谱互异，此处只作阶段概述不作精确系年。
+    source_ids: [src-gujinxiaoshuo]
+
+  # ── 阶段三：经学复兴与春秋指月的另一面 ──────────────
+  - stage: 经学复兴与春秋指月的另一面
+    stage_order: 8
+    title: 治春秋以致大名，麟经指月春秋衡库相继问世
+    date:
+      text: 约天启至崇祯间，具体年份无定说
+      year: 1628
+      range_end: 1634
+      precision: 范围
+    place: 苏州（讲学游历见后世考证层转述）
+    summary: 冯氏另一面是经生：治春秋有年，以经艺致大名，麟经指月、春秋衡库、四书指月等经学著述见于全集清单页。通俗文学家与经师两重身份并存，正是理解其人的关键。
+    confidence: 存疑
+    dispute: 经学著述书目著录确定，然成书年代与赴湖广麻城一带讲春秋之说均出后世考证层，本次未获原始文献佐证。
+    source_ids: [src-gujinxiaoshuo]
+
+  # ── 阶段四：崇祯间寿宁知县政绩 ──────────────────────
+  - stage: 崇祯间寿宁知县政绩
+    stage_order: 9
+    title: 出任福建寿宁知县
+    date:
+      text: "1634年（崇祯七年）"
+      year: 1634
+      precision: 精确
+    place: 福建建宁府寿宁县
+    summary: 年近六十由贡生出仕，任福建寿宁知县。任期据维基文库禁溺女告示页面注为崇禎七年至十一年（1634—1638）。久困场屋而晚得一官，是其仕宦生涯的全部。
+    confidence: 存疑
+    dispute: 出仕前贡入国子监及曾任丹徒训导之说出自后世年谱传记层转述，未获原始文献佐证。
+    source_ids: [src-gujinxiaoshuo]
+  - stage: 崇祯间寿宁知县政绩
+    stage_order: 10
+    title: 颁禁溺女告示，严惩溺弃女婴
+    date:
+      text: 任内崇祯七年至十一年之间
+      year: 1634
+      range_end: 1638
+      precision: 范围
+    place: 寿宁县
+    summary: 针对寿宁溺杀女婴陋俗亲草告示，开宗明义「一般十月怀胎，吃尽辛苦，不論男女，總是骨血，何忍淹棄」，并立赏罚：溺女者拿男子重责三十枷号一月，举首者赏银五钱，朔望结状并入「本鄉無淹女」。情教思想落实为民政法令。
+    source_ids: [src-gujinxiaoshuo]
+  - stage: 崇祯间寿宁知县政绩
+    stage_order: 11
+    title: 撰寿宁待志，记一县风土政事
+    date:
+      text: 任内至离任前后
+      year: 1634
+      range_end: 1638
+      precision: 范围
+    place: 寿宁县
+    summary: 在任修撰寿宁待志二卷，千顷堂书目卷07著录「馮夢龍夀寧縣待志二卷」。待志多记亲历亲见，是研究闽东山区社会的第一手文献，也是其方志层生平的主要来源。
+    confidence: 存疑
+    dispute: 书目著录确定；成书确切年份与原书全貌须俟善本核验。
+    source_ids: [src-gujinxiaoshuo]
+  - stage: 崇祯间寿宁知县政绩
+    stage_order: 12
+    title: 崇祯十一年任满离寿宁
+    date:
+      text: "1638年（崇祯十一年）"
+      year: 1638
+      precision: 精确
+    place: 寿宁县
+    summary: 崇祯十一年知县任期届满去职归里，此后不复出仕。任期起讫从禁溺女告示页面注（1634—1638）。
+    confidence: 存疑
+    dispute: 离任年份据任期下限推定，交接细节无考。
+    source_ids: [src-gujinxiaoshuo]
+
+  # ── 阶段五：明亡之际的孤愤与卒年异说 ────────────────
+  - stage: 明亡之际的孤愤与卒年异说
+    stage_order: 13
+    title: 甲申之变，撰甲申纪事存亡国之痛
+    date:
+      text: "1644年（崇祯十七年甲申）"
+      year: 1644
+      precision: 精确
+    place: 苏州
+    summary: 京师陷、社稷倾，老儒辑甲申纪事记北都之变，弘光刻本著录于南明史稿引用书目（站内检索实取条目名）。另有中兴伟略等拥唐王诸作，孤愤著述以寄恢复之望。
+    confidence: 存疑
+    dispute: 甲申纪事书目著录确定；具体编撰地点与过程无原始文献佐证，姑系于故里。
+    source_ids: [src-gujinxiaoshuo]
+  - stage: 明亡之际的孤愤与卒年异说
+    stage_order: 14
+    title: 卒，卒年异说并存
+    date:
+      text: "1646年（清顺治三年）"
+      year: 1646
+      precision: 精确
+    place: 苏州（推定）
+    summary: 1646年（南明隆武二年）卒，年七十三。卒因旧籍无明文，通行谓忧愤而终；又有身遭兵祸被清兵所杀一说。一代通俗文学宗师的结局竟成悬案。
+    confidence: 有争议
+    dispute: 卒年1646从维基文库作者页汇编；卒因忧愤而卒说与被清兵所杀说并陈，均出后世考证层转述，本次未获原始文献佐证；卒地亦无明文。
+    source_ids: [src-gujinxiaoshuo]
+
+works:
+  - work_id: gujin-xiaoshuo-yushi-mingyan
+    title: 古今小说（喻世明言）
+    alt_titles: [喻世明言, 古今小说]
+    genre: 白话短篇小说集（话本选辑加工总集，非个人创作集）
+    date:
+      text: 约1621年（天启元年前后通行说）
+      year: 1621
+      precision: 约
+    place: 苏州
+    context: 绿天馆主人叙称茂苑野史氏家藏古今通俗小说甚富，贾人之请抽其可嘉惠里耳者凡四十种畀为一刻——性质是据底本编选加工的话本总集，叙事中不得写成个人创作。
+    attribution: 确凿
+    excerpt: 试今说话人当场描写，可喜可愕，可悲可涕，可歌可舞……虽小诵《孝经》、《论语》，其感人未必如是之捷且深也。（绿天馆主人叙）
+    text_display: excerpt
+    themes: [话本总集, 通俗文学宣言, 编选加工]
+    influence: 三言之首，与通言恒言共同奠定明代白话短篇小说的经典体制。
+    confidence: 存疑
+    dispute: 编纂归属冯梦龙为通行确论，然叙署绿天馆主人及叙中茂苑野史氏是否均为冯氏化名系学界推测而非自署实证；刊行年份系推定。
+    source_ids: [src-gujinxiaoshuo]
+
+  - work_id: jingshi-tongyan
+    title: 警世通言
+    alt_titles: []
+    genre: 白话短篇小说集（话本选辑加工总集，宋元旧作约占半数）
+    date:
+      text: "1624年（天启甲子）"
+      year: 1624
+      precision: 精确
+    place: 苏州
+    context: 无碍居士叙提出事真而理不赝即事赝而理亦真的通俗演义真实观，视之为村醪市脯所济者众——三言理论色彩最重的一篇叙。
+    attribution: 确凿
+    excerpt: 事真而理不贗，即事贗而理亦真，不害於風化，不謬於聖賢，不戾於詩書經史。（无碍居士叙）
+    text_display: excerpt
+    themes: [话本总集, 真实观, 劝世]
+    influence: 收杜十娘怒沉百宝箱、白娘子永镇雷峰塔等千古名篇。
+    confidence: 存疑
+    dispute: 刻年有序尾天启甲子为据；叙署豫章无碍居士是否冯氏化名系推测；各篇多有底本，不得视为个人创作集。
+    source_ids: [src-gujinxiaoshuo]
+
+  - work_id: xingshi-hengyan
+    title: 醒世恒言
+    alt_titles: []
+    genre: 白话短篇小说集（话本选辑加工总集）
+    date:
+      text: "1627年（天启丁卯）"
+      year: 1627
+      precision: 精确
+    place: 苏州
+    context: 可一居士叙以酒醉喻人心，忠孝为醒悖逆为醉，将三言定位为六经国史之辅而导愚适俗——俗文学的合法性宣言至此完成三部曲。
+    attribution: 确凿
+    excerpt: 明者，取其可以導愚也；通者，取其可以適俗也。恒則習之而不厭，傳之而可久。三刻殊名，其義一耳。……以《明言》、《通言》、《恒言》為六經國史之輔，不亦可乎？（可一居士叙）
+    text_display: excerpt
+    themes: [话本总集, 六经国史之辅, 醒世]
+    influence: 收卖油郎独占花魁、十五贯戏言成巧祸等名篇；三言体系收官之作。
+    confidence: 存疑
+    dispute: 刻年有序尾天启丁卯为据；叙署陇西可一居士是否冯氏化名系推测。
+    source_ids: [src-gujinxiaoshuo]
+
+  - work_id: du-shiniang-nu-chen-baibaoxiang
+    title: 杜十娘怒沉百宝箱
+    alt_titles: [警世通言第三十二卷]
+    genre: 拟话本（单篇，收入警世通言）
+    date:
+      text: 刊于1624年警世通言，写作年代不详
+      year: 1624
+      precision: 约
+    place: ""
+    context: 万历间教坊名妓杜十娘托身李甲，中途被卖，抱百宝箱自沉瓜洲江心——负心与真情的经典悲剧结构。结尾诗直点情字，与冯氏情教观相呼应。
+    attribution: 确凿
+    excerpt: 妾椟中有玉，恨郎眼内无珠。……不会风流莫妄谈，单单情字费人参。若将情字能参透，唤作风流也不惭。
+    text_display: excerpt
+    themes: [女性悲剧, 真情与负心, 商人社会]
+    influence: 三言艺术成就最高篇目之一，长期入选语文教材与各种选本。
+    confidence: 存疑
+    dispute: 单篇收入归属确凿；惟拟话本写定者的个人创作成分与底本关系（通行谓本事出宋懋澄负情侬传）属考证层，本次未实取底本文献。
+    source_ids: [src-gujinxiaoshuo]
+
+  - work_id: mai-youlang-du-zhan-huakui
+    title: 卖油郎独占花魁
+    alt_titles: [醒世恆言第三卷]
+    genre: 拟话本（单篇，收入醒世恒言）
+    date:
+      text: 刊于1627年醒世恒言，写作年代不详
+      year: 1627
+      precision: 约
+    place: ""
+    context: 汴梁逃难来的卖油小贩秦重积银十两只为见花魁娘子一面，以体贴尊重赢得美娘真心——市井小民取代公子王孙成为爱情主角，市民价值观的话本表达。
+    attribution: 存疑
+    excerpt: 易求無價寶，難得有情郎。
+    text_display: excerpt
+    themes: [市民爱情, 小人物尊严, 平民价值观]
+    influence: 三言中最具市民文学标本意义的名篇，与杜十娘并为教材常客。
+    confidence: 存疑
+    dispute: 单篇底本情况无考，写定过程中冯氏个人的创作比重无法确指，故作者归属按编选加工总集性质标存疑。
+    source_ids: [src-gujinxiaoshuo]
+
+  - work_id: jiang-xingge-chonghui-zhenzhu-shan
+    title: 蒋兴哥重会珍珠衫
+    alt_titles: [喻世明言第一卷]
+    genre: 拟话本（单篇，收入古今小说卷首）
+    date:
+      text: 刊于约1621年古今小说，写作年代不详
+      year: 1621
+      precision: 约
+    place: ""
+    context: 三言开卷第一篇：商人妇三巧儿失身后，丈夫蒋兴哥休之而不忍辱之，终得破镜重圆。对婚姻中人之常情的体谅远过礼法苛责，是情教观的叙事范本。
+    attribution: 存疑
+    excerpt: 眼是情媒，心為慾種。
+    text_display: excerpt
+    themes: [婚恋伦理, 人情高于礼法, 商人生活]
+    influence: 开卷即巅峰，被视为三言人情描写的最高水准。
+    confidence: 存疑
+    dispute: 单篇底本无考，冯氏加工成分无法确指，作者归属标存疑；维基文库该卷页面校对级别低，文字异文未深校。
+    source_ids: [src-gujinxiaoshuo]
+
+  - work_id: zhinang
+    title: 智囊
+    alt_titles: [智囊补]
+    genre: 类书式智术故事总集（编纂）
+    date:
+      text: 约天启末成书初本，后屡经增补
+      year: 1626
+      precision: 约
+    place: 苏州
+    context: 辑历代智谋故事分部类纂，维基文库冯梦龙全集清单页著录。行世极广，是其编纂出版事业的支柱产品之一。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [智术, 类书编纂]
+    influence: 明代最流行的智谋类书之一，后世翻刻增补不绝。
+    confidence: 存疑
+    dispute: 成书与增补年份诸说不一；本次未实取原书文本，条目按书目著录加转述著录。
+    source_ids: [src-gujinxiaoshuo]
+
+  - work_id: shan-ge-guazhier
+    title: 山歌（附挂枝儿辑事）
+    alt_titles: [挂枝儿, 童痴二弄]
+    genre: 民歌时调总集（辑录）
+    date:
+      text: 约万历末至天启间辑刊
+      year: 1620
+      precision: 约
+    place: 苏州
+    context: 广辑吴中民间情歌，维基文库作者页著录「山歌（題墨憨齋主人）」。以文人身分原样保存市井声口，为明代民歌研究的核心文献。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [民歌辑录, 民间情歌, 俗文学]
+    influence: 明代民间文学搜集的里程碑，直接启发后世歌谣学运动对其的重新发现。
+    confidence: 存疑
+    dispute: 辑者归属确凿（题墨憨斋主人）；刊行年份与挂枝儿毁版传闻均属考证层笔记层，未获原始佐证；本次未实取原书文本。
+    source_ids: [src-gujinxiaoshuo]
+
+  - work_id: xin-lieguo-zhi
+    title: 新列国志
+    alt_titles: [新列国志]
+    genre: 长篇历史演义小说（编著）
+    date:
+      text: 约崇祯间刊行
+      year: 1630
+      precision: 约
+    place: 苏州
+    context: 据余邵鱼列国志传重加敷演而成的春秋战国历史演义，维基文库冯梦龙全集清单页著录新列國志。清蔡元放据此修订为东周列国志通行至今。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [历史演义, 春秋战国]
+    influence: 经蔡元放评改后以东周列国志之名成为列国题材的定型本。
+    confidence: 存疑
+    dispute: 刊行年份系约估；改编幅度与底本关系属版本学考证层；本次未实取原书文本。
+    source_ids: [src-gujinxiaoshuo]
+
+  - work_id: taiping-guangji-chao
+    title: 太平广记钞
+    alt_titles: []
+    genre: 类书节钞（编纂）
+    date:
+      text: 约天启间刊行
+      year: 1625
+      precision: 约
+    place: 苏州
+    context: 就宋代太平广记删繁节钞而成的大型类书，维基文库冯梦龙全集清单页著录太平廣記鈔。为其小说渊薮式的案头工程，三言取材的资料库。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [类书, 小说资料库]
+    influence: 明代太平广记流传史上最重要的节本。
+    confidence: 存疑
+    dispute: 刊行年份系约估；节钞体例细节未实取原书核对，按书目著录加转述著录。
+    source_ids: [src-gujinxiaoshuo]
+
+footprints:
+  - name: 苏州府长洲
+    modern_name: 江苏省苏州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1574年生，一生除仕宦外大半居此"
+      year: 1574
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    confidence: 存疑
+    dispute: 籍贯长洲说为主流，吴县说并存；生年1574系汇编层数据。
+    source_ids: [src-gujinxiaoshuo]
+  - name: 南京（白下）
+    modern_name: 江苏省南京市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 应试常往之地，具体次数年份无考
+      precision: 未知
+    kind: 游历
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 诸生应乡试例赴南京，且可一居士叙题于白下栖霞山房；然冯氏本人到南京的确切行迹无原始文献坐实，按制度性推定著录。
+    source_ids: [src-gujinxiaoshuo]
+  - name: 丹徒（镇江）
+    modern_name: 江苏省镇江市丹徒区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 出任寿宁前任丹徒训导之说，年份无考
+      precision: 未知
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 丹徒训导之说出自后世年谱传记层转述，本次站内检索未获原始文献佐证，暂存疑著录；若后续核实无据应删除本条。
+    source_ids: [src-gujinxiaoshuo]
+  - name: 福建寿宁
+    modern_name: 福建省宁德市寿宁县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1634—1638年任寿宁知县"
+      year: 1634
+      range_end: 1638
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-gujinxiaoshuo]
+  - name: 苏州（晚年归里卒地）
+    modern_name: 江苏省苏州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1638年离任归里，1646年卒于此一带（推定）"
+      year: 1646
+      precision: 约
+    kind: 逝世
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 卒地旧籍无明文，归里苏州说系据晚年活动推定；卒因忧愤而卒与被清兵所杀两说并存，均出后世考证层。
+    source_ids: [src-gujinxiaoshuo]
+
+relations: []
+
+reception:
+  - era: 同时代
+    evaluator: 绿天馆主人（古今小说叙署）
+    quote: 试今说话人当场描写，可喜可愕，可悲可涕，可歌可舞……怯者勇，淫者贞，薄者敦，顽钝者汗下。虽小诵《孝经》、《论语》，其感人未必如是之捷且深也。
+    text_display: excerpt
+    comment: 中国俗文学史上最有力的宣言之一——以说书场上的感动力压倒经传的抽象教训，为白话小说争得存在权。叙署化名是否冯氏本人系学界推测，故评价人与被评人可能同为一人。
+    confidence: 存疑
+    dispute: 化名归属推测；叙不系年。
+    source_ids: [src-gujinxiaoshuo]
+  - era: 同时代
+    evaluator: 可一居士（醒世恒言叙署）
+    quote: 以《明言》、《通言》、《恒言》為六經國史之輔，不亦可乎？
+    text_display: excerpt
+    comment: 同时代对三言价值的最高定位——把话本总集安放进六经国史之辅的正统序列，通俗文学的合法性论证至此完成。
+    confidence: 存疑
+    dispute: 叙署可一居士化名归属系推测。
+    source_ids: [src-gujinxiaoshuo]
+  - era: 历代批评
+    evaluator: 姑苏笑花主人《今古奇观序》（转述）
+    quote: ""
+    text_display: none
+    comment: 崇祯间抱瓮老人选今古奇观四十篇，通行说法谓其序以三言二拍为白话小说正宗、所选悉从三言二拍拔萃——三言由此获得跨书场的选本经典地位。序文本次未能实取，仅按通行转述著录，引文待核后翻转。
+    confidence: 存疑
+    dispute: 选目构成与序文措辞未经本次实取核验。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究将其置于通俗文学整理者与市民文学研究框架之下，聚焦三言的底本源流考证、编选加工程度的量化分析、情教观的思想史定位及其出版活动与晚明江南商业出版的关系等议题；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 杜十娘怒沉百宝箱与卖油郎独占花魁长期入选语文教材与大众读本，成为国民级的古典白话短篇记忆；三言作为话本总集的公共形象主要经由这两篇建立。教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 杜十娘、白娘子等篇目被戏曲影视反复改编，多为戏剧化敷演，不作信史依据；冯梦龙本人的影视形象罕见，网络传播集中于三言名篇与情教名言，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-gujinxiaoshuo]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。14条年谱（5阶段）、10件作品、5处足迹、0组关系（凌濛初袁于令等潜在目标均未入库，不为凑数编造）、6层接受史。三言三叙全文、蒋兴哥/杜十娘/卖油郎三单篇关键句、禁溺女告示全文均维基文库实取；甲申纪事寿宁待志为书目层转引；卒年异说丹徒训导麻城讲学等按后世考证层存疑著录。来源仅 src-gujinxiaoshuo 占位待翻转（实际抓取URL见头注）。"}

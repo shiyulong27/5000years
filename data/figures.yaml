@@ -1,970 +1,1995 @@
-# 人物。以生卒年跨行渲染于中国栏，与世界栏的文明色带对称。
-#
-# 人物是时间跨度而非时间点，故不并入 events——若塞进事件模型，
-# 就得替李白挑一个日期（生年？卒年？写《将进酒》那年？），怎么选都失真。
-#
-# field 用于分色与筛选：文学/思想/政治/军事/科技/艺术
-# 默认不显示，由工具栏开关控制——人物数量将远多于事件，
-# 常驻显示会淹没长卷本身。
-
-# ── 夏代非君主重要人物 ───────────────────────────────────────
-# 君主不入人物表，与世系表分工；后羿、寒浞作为失国期掌权者只进此表，
-# 不加「帝王」标签。全部使用 confidence: 有争议，年代为时间线占位。
-
 - id: gun
   name: 鲧
-  related_dynasties: [xia]
-  birth: "-2200"
-  death: "-2100"
+  related_dynasties:
+    - xia
+  birth: '-2200'
+  death: '-2100'
   field: 政治
   note: 禹之父，传统治水叙事中禹的前任治水者，治水九年未成而被殛
   confidence: 有争议
   dispute: |
     鲧的事迹仅见于后世传世文献，无同时代文字自证；
     其被殛于羽山的结局与治水经过在不同典籍中叙述不一。生卒年为占位。
-
 - id: boyi
   name: 伯益
-  related_dynasties: [xia]
-  birth: "-2140"
-  death: "-2040"
+  related_dynasties:
+    - xia
+  birth: '-2140'
+  death: '-2040'
   field: 政治
   note: 辅禹治水，传统继承叙事中禹原定传位于益，后由启继位
   confidence: 有争议
   dispute: |
     《史记》称禹传位于益、益让于启；《竹书纪年》则载「益干启位，启杀之」，
     两说方向相反。伯益其人与事迹均无同时代材料可证。生卒年为占位。
-
 - id: youhu-leader
   name: 有扈氏首领
-  related_dynasties: [xia]
-  birth: "-2080"
-  death: "-2040"
+  related_dynasties:
+    - xia
+  birth: '-2080'
+  death: '-2040'
   field: 军事
   note: 传统叙事中反对启继位、与启战于甘的部落首领
   confidence: 有争议
   dispute: |
     有扈氏其部族、首领名号与甘之战经过均出自《尚书·甘誓》等后世文献，
     无同时代证据。生卒年为时间线占位。
-
 - id: houyi-xia
   name: 后羿（有穷氏）
-  related_dynasties: [xia]
-  birth: "-2040"
-  death: "-1970"
+  related_dynasties:
+    - xia
+  birth: '-2040'
+  death: '-1970'
   field: 军事
   note: 有穷氏首领，传统叙事中太康失国后掌握夏政的失国期掌权者
   confidence: 有争议
   dispute: |
     其事迹主要见于《左传》《竹书纪年》等后世文献，且常与神话中的射日之羿混同，
     二者关系至今未有定论。生卒年仅为时间线占位。
-
 - id: hanzhuo
   name: 寒浞
-  related_dynasties: [xia]
-  birth: "-2010"
-  death: "-1940"
+  related_dynasties:
+    - xia
+  birth: '-2010'
+  death: '-1940'
   field: 政治
   note: 杀后羿夺权，攻灭支持夏后的斟灌、斟鄩氏，后被少康所灭
   confidence: 有争议
   dispute: |
     寒浞其人及篡权经过均来自后世追述，缺少同时代文字印证；
     《左传》与《竹书纪年》对其身世、结局叙述亦有出入。生卒年为占位。
-
-- id: nuai
-  name: 女艾
-  related_dynasties: [xia]
-  birth: "-1970"
-  death: "-1910"
-  field: 军事
-  note: 少康复国叙事中的侦察者，传统文献称其受少康派遣刺探浇的虚实
-  confidence: 有争议
-  dispute: |
-    女艾仅见于《左传·哀公元年》等后世文献，其人其事无同时代材料可证；
-    「中国历史上第一位女间谍」之说属后世演绎。生卒年为占位。
-
 - id: mi-xia
   name: 靡
-  related_dynasties: [xia]
-  birth: "-1980"
-  death: "-1910"
+  related_dynasties:
+    - xia
+  birth: '-1980'
+  death: '-1910'
   field: 军事
   note: 传统叙事中联合夏后旧部讨灭寒浞、辅佐少康复国的夏臣
   confidence: 有争议
   dispute: |
     靡的事迹见于《左传》《竹书纪年》等后世文献，无同时代文字自证；
     其在复国过程中的具体作用各家叙述不一。生卒年为占位。
-
+- id: nuai
+  name: 女艾
+  related_dynasties:
+    - xia
+  birth: '-1970'
+  death: '-1910'
+  field: 军事
+  note: 少康复国叙事中的侦察者，传统文献称其受少康派遣刺探浇的虚实
+  confidence: 有争议
+  dispute: |
+    女艾仅见于《左传·哀公元年》等后世文献，其人其事无同时代材料可证；
+    「中国历史上第一位女间谍」之说属后世演绎。生卒年为占位。
 - id: guanlongpang
   name: 关龙逄
-  related_dynasties: [xia]
-  birth: "-1700"
-  death: "-1620"
+  related_dynasties:
+    - xia
+  birth: '-1700'
+  death: '-1620'
   field: 政治
   note: 传统忠谏叙事中因直谏夏桀而遇害的夏臣，后世奉为谏臣典范
   confidence: 有争议
   dispute: |
     关龙逄其人及谏桀遇害之事主要见于后世文献，忠谏叙事带有明显的道德化建构色彩；
     其生卒与事迹年代均无确证。生卒年为占位。
-
 - id: meixi
   name: 妹喜
-  related_dynasties: [xia]
-  birth: "-1680"
-  death: "-1600"
+  related_dynasties:
+    - xia
+  birth: '-1680'
+  death: '-1600'
   field: 政治
   note: 传统叙事中桀的宠妃，亡国归因多将其与妺妺、妲己并列
   confidence: 有争议
   dispute: |
     妹喜其人及亡国作用多属后世附会，传统史观将夏之亡归咎于女祸，
     此种叙事的史实性需打折扣。生卒年为占位。
-
 - id: shangtang
   name: 商汤
-  related_dynasties: [xia, shang]
-  birth: "-1670"
-  death: "-1580"
+  related_dynasties:
+    - xia
+    - shang
+  birth: '-1670'
+  death: '-1580'
   field: 政治
   note: 商部族首领，传统叙事中起兵伐桀、鸣条之战灭夏建商的开国之君
   confidence: 有争议
   dispute: |
     商汤伐桀见于《史记·殷本纪》《尚书·汤誓》等文献，然具体年代与战争经过
     无同时代文字可证；其世系与在位年数为后世追述。生卒年为占位。
-
-# ── 商代非君主重要人物 ───────────────────────────────────────
-
 - id: yiyin
   name: 伊尹
-  related_dynasties: [shang]
-  birth: "-1640"
-  death: "-1520"
+  related_dynasties:
+    - shang
+  birth: '-1640'
+  death: '-1520'
   field: 政治
   note: 商初重臣，辅佐商汤灭夏，并在太甲时期承担辅政角色
   confidence: 有争议
   dispute: |
     伊尹为商代先公先王祭祀体系中的重要人物，但其出身、放逐太甲及迎归复位的细节
     主要来自后世文献，且《尚书》《史记》与古本《竹书纪年》叙事冲突。生卒年为占位。
-
 - id: zhonghui
   name: 仲虺
-  related_dynasties: [shang]
-  birth: "-1630"
-  death: "-1560"
+  related_dynasties:
+    - shang
+  birth: '-1630'
+  death: '-1560'
   field: 政治
   note: 传统文献中的商汤左相，《仲虺之诰》被视为商初政治文告
   confidence: 有争议
   dispute: 仲虺事迹主要见于传世文献，《仲虺之诰》的成篇年代与文本层累问题长期有争议；生卒年为占位。
-
 - id: fuyue
   name: 傅说
-  related_dynasties: [shang]
-  birth: "-1300"
-  death: "-1230"
+  related_dynasties:
+    - shang
+  birth: '-1300'
+  death: '-1230'
   field: 政治
   note: 传统叙事称由筑傅岩之役者被武丁举为相，辅佐武丁中兴
   confidence: 有争议
   dispute: 清华简《傅说之命》证明相关传说在战国已有流传，但傅说生平及武丁梦得贤相的细节无法由同时代材料完整核实；生卒年为占位。
-
 - id: fuhao
   name: 妇好
-  related_dynasties: [shang]
-  birth: "-1280"
-  death: "-1240"
+  related_dynasties:
+    - shang
+  birth: '-1280'
+  death: '-1240'
   field: 军事
   note: 武丁配偶，参与征伐和祭祀；妇好墓与甲骨卜辞使其成为材料最丰富的商代女性
   confidence: 有争议
   dispute: 妇好身份、墓葬和活动有甲骨与考古材料互证，但具体生卒年及各次出征年份无法确定；日期为时间线占位。
-
+- id: zhouwenwang
+  name: 周文王姬昌
+  related_dynasties:
+    - zhou
+    - xizhou
+  birth: '-1152'
+  death: '-1050'
+  field: 政治
+  note: 周族首领，经营岐周、扩张势力，为武王克商奠定基础；王号为后世追尊
+  confidence: 有争议
+  dispute: 姬昌其人及周族崛起有早期文献背景，但生卒年、受命称王及羑里演《周易》等细节多经后世重构。
 - id: bigan
   name: 比干
-  related_dynasties: [shang]
-  birth: "-1120"
-  death: "-1047"
+  related_dynasties:
+    - shang
+  birth: '-1120'
+  death: '-1047'
   field: 政治
   note: 商末王族重臣，后世忠谏传统称其因进谏帝辛而遇害
   confidence: 有争议
   dispute: 比干之名见于先秦文献，但「剖心」等细节经后世不断铺陈，难以视为可核实的同时代记录；生卒年为占位。
-
 - id: jizi
   name: 箕子
-  related_dynasties: [shang, zhou]
-  birth: "-1120"
-  death: "-1040"
+  related_dynasties:
+    - shang
+    - zhou
+  birth: '-1120'
+  death: '-1040'
   field: 政治
   note: 商末王族，传统称谏帝辛不听而佯狂；周初相关叙事与《洪范》相联系
   confidence: 有争议
   dispute: 箕子其人与商末王族身份有早期文献依据，但出走朝鲜及传授《洪范》等说法的形成过程复杂；生卒年为占位。
-
-- id: weizi
-  name: 微子
-  related_dynasties: [shang, zhou]
-  birth: "-1110"
-  death: "-1020"
-  field: 政治
-  note: 商末王族，周初受封于宋，承担延续殷商祭祀的政治角色
-  confidence: 有争议
-  dispute: 微子受封宋国的基本框架见于传世文献，但其具体生卒、出走经过和劝谏细节无法确考；生卒年为占位。
-
-- id: daji
-  name: 妲己
-  related_dynasties: [shang]
-  birth: "-1090"
-  death: "-1046"
-  field: 政治
-  note: 传统叙事中的帝辛配偶，后世常被塑造成商亡祸因
-  confidence: 有争议
-  dispute: 妲己的恶行多见于较晚文献和文学演绎，将王朝覆亡归咎于女性具有明显的道德化与性别偏见；生卒年为占位。
-
 - id: jiangziya
   name: 姜尚
-  related_dynasties: [shang, zhou]
-  birth: "-1120"
-  death: "-1015"
+  related_dynasties:
+    - shang
+    - zhou
+  birth: '-1120'
+  death: '-1015'
   field: 政治
   note: 姜太公，齐国开国始祖，渭水钓鱼遇周文王，辅佐武王伐纣
   confidence: 有争议
   dispute: 生卒年与享寿百余岁皆为史籍传说推算。
-
+- id: weizi
+  name: 微子
+  related_dynasties:
+    - shang
+    - zhou
+  birth: '-1110'
+  death: '-1020'
+  field: 政治
+  note: 商末王族，周初受封于宋，承担延续殷商祭祀的政治角色
+  confidence: 有争议
+  dispute: 微子受封宋国的基本框架见于传世文献，但其具体生卒、出走经过和劝谏细节无法确考；生卒年为占位。
+- id: zhaogong-shi
+  name: 召公奭（shì）
+  related_dynasties:
+    - zhou
+    - xizhou
+  birth: '-1100'
+  death: '-0995'
+  field: 政治
+  note: 西周开国重臣，参与分陕而治、营建洛邑，并辅佐成王、康王
+  confidence: 有争议
+  dispute: 召公的政治活动见于《尚书》与传世文献，但生卒年及「甘棠遗爱」等细节难以确考。
+- id: daji
+  name: 妲己
+  related_dynasties:
+    - shang
+  birth: '-1090'
+  death: '-1046'
+  field: 政治
+  note: 传统叙事中的帝辛配偶，后世常被塑造成商亡祸因
+  confidence: 有争议
+  dispute: 妲己的恶行多见于较晚文献和文学演绎，将王朝覆亡归咎于女性具有明显的道德化与性别偏见；生卒年为占位。
 - id: zhougong
   name: 周公旦
-  related_dynasties: [zhou]
-  birth: "-1090"
-  death: "-1032"
+  related_dynasties:
+    - zhou
+  birth: '-1090'
+  death: '-1032'
   field: 政治
   note: 西周圣人，吐哺握发辅佐成王，平三监之乱，制礼作乐
   confidence: 有争议
   dispute: 生卒年据史料推算。
-
-- id: guanzhong
-
-  name: 管仲
-  birth: "-0723"
-  death: "-0645"
+- id: boqin
+  name: 伯禽
+  related_dynasties:
+    - zhou
+    - xizhou
+  birth: '-1060'
+  death: '-0998'
   field: 政治
-  note: 辅佐齐桓公尊王攘夷，成就春秋首霸
+  note: 周公旦之子，受封于鲁，是周初分封和东方统治的重要执行者
   confidence: 有争议
-  dispute: 生卒年为后世史家推定。
-
+  dispute: 伯禽受封鲁国的基本框架较可靠，但就封、征淮夷和在位年数主要依赖后世文献重建。
+- id: kangshu-feng
+  name: 康叔封
+  related_dynasties:
+    - zhou
+    - xizhou
+  birth: '-1060'
+  death: '-1000'
+  field: 政治
+  note: 武王之弟，三监之乱后受封卫国，负责治理殷商故地
+  confidence: 有争议
+  dispute: 康叔受封及《康诰》所反映的治理原则具有史料基础，但具体年代、生卒与封地演变仍有争议。
+- id: gongbo-he
+  name: 共伯和
+  related_dynasties:
+    - zhou
+    - xizhou
+  birth: '-0900'
+  death: '-0820'
+  field: 政治
+  note: 部分文献所称共和行政主持者，可能为共国国君和
+  confidence: 有争议
+  dispute: 《史记》解释「共和」为周公、召公共同行政，《竹书纪年》与清华简材料则支持共伯和摄政说；其身份至今未定，生卒年为占位。
+- id: yinjifu
+  name: 尹吉甫
+  related_dynasties:
+    - zhou
+    - xizhou
+  birth: '-0850'
+  death: '-0780'
+  field: 军事
+  note: 宣王时期卿士，参与反击猃狁；《诗经》传统亦将部分篇章与其联系
+  confidence: 有争议
+  dispute: 尹吉甫活动可与《诗经》及青铜铭文传统联系，但生卒年、具体官职和诗篇作者归属仍有争议。
+- id: baosi
+  name: 褒姒
+  related_dynasties:
+    - zhou
+    - xizhou
+  birth: '-0800'
+  death: '-0771'
+  field: 政治
+  note: 周幽王后妃，传统亡国叙事将废申后、立其子与西周末局势相联系
+  confidence: 有争议
+  dispute: 褒姒可能具有历史人物背景，但「一笑倾国」「烽火戏诸侯」属于强烈道德化的后世叙事，将西周灭亡归因于女性并不可靠。
 - id: bailixi
   name: 百里奚
-  birth: "-0725"
-  death: "-0621"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0725'
+  death: '-0621'
   field: 政治
   note: 秦国贤相，用五张羊皮赎还，辅佐秦穆公霸西戎
   confidence: 有争议
   dispute: 生卒年为后世史家推算。
-
-
+- id: guanzhong
+  name: 管仲
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0723'
+  death: '-0645'
+  field: 政治
+  note: 经鲍叔牙举荐辅佐齐桓公，推行改革并尊王攘夷，成就春秋首霸
+  confidence: 有争议
+  dispute: 鲍叔牙举荐管仲及管仲辅齐事迹见于《左传》《史记》；具体对话和评价有后世整理成分，生卒年为后世史家推定。
+- id: qihuangong
+  name: 齐桓公
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0716'
+  death: '-0643'
+  field: 政治
+  note: 任用管仲改革，尊王攘夷，多次会盟诸侯，成为春秋首霸
+  confidence: 有争议
+  dispute: 即位、卒年相对明确，生年为后世推定；「春秋五霸」具体名单历来有不同说法。
+- id: jinwengong
+  name: 晋文公
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0697'
+  death: '-0628'
+  field: 政治
+  note: 公子重耳流亡十九年后返晋即位，城濮败楚并主持践土之盟
+  confidence: 有争议
+  dispute: 流亡、即位和城濮之战见于《左传》《史记》，生年及部分行程细节存在不同推算。
+- id: chuzhuangwang
+  name: 楚庄王
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0640'
+  death: '-0591'
+  field: 政治
+  note: 楚国君主，问鼎中原并在邲之战击败晋军，奠定楚国霸业
+  confidence: 有争议
+  dispute: 在位与卒年较明确，生年无确载；是否列入「春秋五霸」取决于采用的传统名单。
+- id: zichan
+  name: 子产
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0581'
+  death: '-0522'
+  field: 政治
+  note: 郑国执政，整顿田制、铸刑书，以务实治理和宽猛相济著称
+  confidence: 有争议
+  dispute: 执政活动主要见于《左传》，生年为后世推算；铸刑书的制度性质仍有不同解释。
+- id: yanzi
+  name: 晏婴
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0578'
+  death: '-0500'
+  field: 政治
+  note: 齐国名相，以节俭、善谏和外交应对著称，后世称晏子
+  confidence: 有争议
+  dispute: 其仕齐事迹有《左传》可参照，《晏子春秋》包含后世编纂和寓言化内容，生年亦为推定。
 - id: laozi
   name: 老子
-  birth: "-0571"
-  death: "-0471"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0571'
+  death: '-0471'
   field: 思想
   note: 道家创始人，著《道德经》
   confidence: 有争议
   dispute: |
     生卒年全无定说，其人是否存在亦有争议。《史记》并列三种说法，
     司马迁自己也无法断定。此处年代纯为在长卷上占位。
-
+- id: wuzixu
+  name: 伍子胥（xū）
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0559'
+  death: '-0484'
+  field: 政治
+  note: 父兄被楚平王杀害后逃楚入吴，辅助吴王破楚入郢，后因忠谏吴王夫差而死
+  confidence: 有争议
+  dispute: 逃楚入吴、辅助破楚及被赐死见于《史记·伍子胥列传》等传世记载；过昭关、掘墓鞭尸等细节带有后世叙事和道德化表达，生卒年据典籍推算。
+- id: kongzi
+  name: 孔子
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0551'
+  death: '-0479'
+  field: 思想
+  note: 儒家创始人，离鲁后周游卫、宋、陈、蔡等诸侯国，晚年返鲁，其学说此后两千余年为中国思想之主干
+  confidence: 有争议
+  dispute: 周游列国的大体经历见于《史记·孔子世家》，具体行程、停留时间和部分细节有不同传说；生年有前551与前552两说，《史记》与《公羊传》所载不同。
 - id: sunwu
   name: 孙武
-  birth: "-0545"
-  death: "-0470"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0545'
+  death: '-0470'
   field: 军事
   note: 兵圣，著《孙子兵法》，吴宫演兵，辅佐阖闾大破楚军
   confidence: 有争议
   dispute: 生卒年据史料推算。
-
-- id: kongzi
-  name: 孔子
-  birth: "-0551"
-  death: "-0479"
-  field: 思想
-  note: 儒家创始人，其学说此后两千余年为中国思想之主干
-  confidence: 有争议
-  dispute: 生年有前551与前552两说，《史记》与《公羊传》所载不同。
-
-- id: wuzixu
-  name: 伍子胥（xū）
-  birth: "-0559"
-  death: "-0484"
-  field: 政治
-  note: 吴国大夫，辅助吴王破楚入郢，掘墓鞭尸报仇，后忠谏赐死
-  confidence: 有争议
-  dispute: 生卒年据典籍推算。
-
 - id: goujian
   name: 勾践
-  birth: "-0520"
-  death: "-0464"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0520'
+  death: '-0464'
   field: 政治
   note: 越国君主，卧薪尝胆，灭吴称霸
   confidence: 有争议
   dispute: 生卒年根据典籍推算。
-
+- id: caogui
+  name: 曹刿（guì）
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0700'
+  death: '-0650'
+  field: 军事
+  note: 鲁国大夫，长勺之战中向鲁庄公分析民心与战机，主张待齐军疲惫后反击
+  confidence: 有争议
+  dispute: 曹刿和长勺之战主要见于《左传·庄公十年》，生卒年和官职履历没有确考，此处年代仅作时间线占位。
+- id: songxiangong
+  name: 宋襄公
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0670'
+  death: '-0637'
+  field: 政治
+  note: 宋国君主，齐桓公死后试图主持诸侯秩序，泓水之战败于楚军
+  confidence: 有争议
+  dispute: 宋襄公在位和泓水之战见于《左传》《史记》，生年为后世推定；「不鼓不成列」体现的战争观不应简化为“愚蠢”。
+- id: xiangao
+  name: 弦高（xián gāo）
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+  birth: '-0650'
+  death: '-0620'
+  field: 政治
+  note: 郑国商人，秦军袭郑途中以犒师和报信争取郑国备战时间
+  confidence: 有争议
+  dispute: 弦高事迹主要见于《左传·僖公三十三年》，生卒年和商人身份细节没有确考，年代仅作时间线占位。
+- id: fanli
+  name: 范蠡（lǐ）
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+    - zhanguo
+  birth: '-0536'
+  death: '-0448'
+  field: 政治
+  note: 越国大夫，辅佐勾践灭吴；功成后离越经商，后世称陶朱公
+  confidence: 有争议
+  dispute: 范蠡辅越、离越和经商经历见于《史记·越王勾践世家》《国语·越语》，生卒年、陶朱公传说和具体行迹均有不同说法。
+- id: wenzhong
+  name: 文种（zhǒng）
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - chunqiu
+    - zhanguo
+  birth: '-0550'
+  death: '-0472'
+  field: 政治
+  note: 越国大夫，与范蠡共同辅佐勾践复国灭吴，主持越国政务，后被勾践赐死
+  confidence: 有争议
+  dispute: 文种辅越、主持国政和结局见于《史记·越王勾践世家》《国语·越语》，生卒年和具体政治活动年代为后世推定。
+- id: mozi
+  name: 墨子
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0468'
+  death: '-0376'
+  field: 思想
+  note: 墨家创始人，主张兼爱、非攻、尚贤，并重视逻辑、工程与守城技术；《墨子·公输》载其赴楚演示守城之法，说服楚王停止攻宋
+  confidence: 有争议
+  dispute: 生卒年没有定论，常见推定约为前468年至前376年；止楚攻宋见《墨子·公输》，可作传统叙事承载，但事件精确年份和对话真实性不可确证；《墨子》由墨家学派长期累积编成。
 - id: wuqi
   name: 吴起
-  birth: "-0440"
-  death: "-0381"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0440'
+  death: '-0381'
   field: 军事
   note: 兵家亚圣，作《吴子兵法》，创魏武卒，后于楚国变法
   confidence: 有争议
   dispute: 生卒年据史料推定。
-
-
-- id: zhuangzi
-  name: 庄子
-  birth: "-0369"
-  death: "-0286"
-  field: 思想
-  note: 道家代表人物，著《庄子》，创庄周梦蝶、逍遥游思想
+- id: shangyang
+  name: 商鞅
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0390'
+  death: '-0338'
+  field: 政治
+  note: 在秦孝公支持下主持两次变法，以县制、军功爵和编户制度强化秦国
   confidence: 有争议
-  dispute: 生卒年据史料推算。
-
+  dispute: 卒年和主要变法节点较明确，生年为后世推算；部分具体法令见于后出文献，需与秦简材料互证。
+- id: suqin
+  name: 苏秦
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0382'
+  death: '-0284'
+  field: 政治
+  note: 战国纵横家，以合纵策略游说诸侯共同抗秦
+  confidence: 有争议
+  dispute: 传世《史记》叙事与马王堆帛书《战国纵横家书》存在明显差异，其活动年代和事迹归属长期有争论。
 - id: sunbin
   name: 孙膑（bìn）
-  birth: "-0380"
-  death: "-0316"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0380'
+  death: '-0316'
   field: 军事
   note: 齐国军事家，著《孙膑兵法》，指挥桂陵之战与马陵之战
   confidence: 有争议
   dispute: 生卒年无确切记载，系后世推估。
-
 - id: pangjuan
   name: 庞涓
-  birth: "-0380"
-  death: "-0341"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0380'
+  death: '-0341'
   field: 军事
   note: 魏国名将，陷害同门孙膑致其残废，后于马陵之战中伏自刎
   confidence: 有争议
   dispute: 生卒年据典籍推算。
-
-
+- id: mengzi
+  name: 孟子
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0372'
+  death: '-0289'
+  field: 思想
+  note: 儒家代表人物，主张性善、仁政与民贵君轻，游说列国推行王道
+  confidence: 有争议
+  dispute: 生卒年有多种说法，此处采用常见推定；其游历次序和《孟子》成书过程仍有讨论。
 - id: zhangyi
   name: 张仪
-  birth: "-0370"
-  death: "-0309"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0370'
+  death: '-0309'
   field: 政治
   note: 纵横家鼻祖，秦国名相，首创连横破合纵，戏诱楚怀王
   confidence: 有争议
   dispute: 生卒年据史料推定。
-
-- id: zhaowanglingwang
-  name: 赵武灵王
-  birth: "-0340"
-  death: "-0295"
-  field: 政治
-  note: 赵国雄主，推行胡服骑射改革，组强骑兵灭中山国
+- id: zhuangzi
+  name: 庄子
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0369'
+  death: '-0286'
+  field: 思想
+  note: 道家代表人物，著《庄子》，创庄周梦蝶、逍遥游思想
   confidence: 有争议
-  dispute: 生卒年据史料推定。
-
+  dispute: 生卒年据史料推算。
 - id: mengchangjun
   name: 孟尝君
-  birth: "-0350"
-  death: "-0279"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0350'
+  death: '-0279'
   field: 政治
   note: 齐相田文，战国四公子之一，广招门客，鸡鸣狗盗脱秦
   confidence: 有争议
   dispute: 生卒年为后世史家推定。
-
+- id: zhaowanglingwang
+  name: 赵武灵王
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0340'
+  death: '-0295'
+  field: 政治
+  note: 赵国雄主，推行胡服骑射改革，组强骑兵灭中山国
+  confidence: 有争议
+  dispute: 生卒年据史料推定。
 - id: quyuan
   name: 屈原
-  birth: "-0340"
-  death: "-0278"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0340'
+  death: '-0278'
   field: 文学
   note: 楚国诗人，楚辞之祖，著《离骚》《九歌》
+  has_detail: true
   confidence: 有争议
   dispute: 生卒年有多种推定说法。
-
 - id: yueyi
   name: 乐毅
-  birth: "-0330"
-  death: "-0270"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0330'
+  death: '-0270'
   field: 军事
   note: 燕国名将，统领五国伐齐攻破齐国七十余城，封昌国君
   confidence: 有争议
   dispute: 生卒年据史料推定。
-
-
 - id: linxiangru
   name: 蔺相如（lìn）
-  birth: "-0320"
-  death: "-0260"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0320'
+  death: '-0260'
   field: 政治
   note: 赵国名臣，完璧归赵、渑池会相抗强秦，与廉颇相欢
   confidence: 有争议
   dispute: 生卒年为后世史家根据典籍推定。
-
 - id: lianpo
   name: 廉颇
-  birth: "-0320"
-  death: "-0242"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0320'
+  death: '-0242'
   field: 军事
   note: 赵国名将，长平之战坚守固防，后负荆请罪
   confidence: 有争议
   dispute: 生卒年据史料估计。
-
+- id: xunzi
+  name: 荀子
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0313'
+  death: '-0238'
+  field: 思想
+  note: 儒家代表人物，主张性恶与礼法并重，曾任稷下学宫祭酒
+  confidence: 有争议
+  dispute: 生卒年和游历次序多据后世材料推定；《荀子》各篇并非都能确定出自本人。
 - id: zhaoshe
   name: 赵奢
-  birth: "-0310"
-  death: "-0240"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0310'
+  death: '-0240'
   field: 军事
   note: 赵国名将，阏与之战狭路相逢胜秦军，封马服君
   confidence: 有争议
   dispute: 生卒年据史料推定。
-
 - id: baiqi
   name: 白起
-  birth: "-0310"
-  death: "-0257"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0310'
+  death: '-0257'
   field: 军事
   note: 秦国战神、武安君，长平大破赵军，战功赫赫
   confidence: 有争议
   dispute: 生年无确载，据典籍推算。
-
 - id: tiandan
   name: 田单
-  birth: "-0310"
-  death: "-0240"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0310'
+  death: '-0240'
   field: 军事
   note: 齐国名将，守即墨摆火牛阵大破燕军收复齐国失地，封安平君
   confidence: 有争议
   dispute: 生卒年据史料推定。
-
-
+- id: hanfei
+  name: 韩非
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0280'
+  death: '-0233'
+  field: 思想
+  note: 法家集大成者，综合法、术、势理论，入秦后遭李斯构陷而死
+  confidence: 有争议
+  dispute: 卒年及入秦经过主要据《史记》，生年为约数；《韩非子》部分篇章的作者归属存在讨论。
 - id: lishiqi
   name: 郦食其（lì yì jī）
-  birth: "-0268"
-  death: "-0204"
+  related_dynasties:
+    - han
+  birth: '-0268'
+  death: '-0204'
   field: 政治
   note: 汉初高阳酒徒说客，单骑说降齐王田广，下齐七十余城，后为田广所烹
   confidence: 有争议
   dispute: 生卒年据典籍推定，被杀年份前203、前204两说并存。
-
 - id: qinshihuang
   name: 秦始皇
-  birth: "-0259"
-  death: "-0210"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+    - qin
+  birth: '-0259'
+  death: '-0210'
   field: 政治
   note: 首位皇帝，废分封行郡县
   confidence: 确定
-
-
 - id: jingke
   name: 荆轲
-  birth: "-0255"
-  death: "-0227"
+  related_dynasties:
+    - zhou
+    - dongzhou
+    - zhanguo
+  birth: '-0255'
+  death: '-0227'
   field: 政治
   note: 战国刺客，受燕太子丹之托刺秦王政，功败身死
   confidence: 有争议
   dispute: 生年无确切记载，系后世根据典籍推定。
-
 - id: xiangyu
   name: 项羽
-  birth: "-0232"
-  death: "-0202"
+  related_dynasties:
+    - qin
+    - han
+  birth: '-0232'
+  death: '-0202'
   field: 军事
   note: 西楚霸王，巨鹿大破秦军，后于垓下兵败自刎
   confidence: 确定
-
 - id: hanxin
   name: 韩信
-  birth: "-0231"
-  death: "-0196"
+  related_dynasties:
+    - han
+  birth: '-0231'
+  death: '-0196'
   field: 军事
   note: 汉初兵仙，率军平定魏赵燕齐，垓下十面埋伏灭楚
   confidence: 有争议
   dispute: 生年系后世推算。
-
 - id: zhouyafu
   name: 周亚夫
-  birth: "-0200"
-  death: "-0143"
+  birth: '-0200'
+  death: '-0143'
   field: 军事
   note: 西汉名将，细柳营军纪严明，平定吴楚七国之乱
-  confidence: 确定
-
+  confidence: 有争议
+  dispute: 生年无确切记载，前200年仅为项目时间线占位；卒年据《史记·绛侯周勃世家》文帝后元二年系年。
 - id: simaxiangru
   name: 司马相如
-  birth: "-0179"
-  death: "-0117"
+  birth: '-0179'
+  death: '-0117'
   field: 文学
   note: 汉赋大家，作《子虚赋》《上林赋》，弹《凤求凰》聘卓文君
+  has_detail: true
   confidence: 确定
-
 - id: simaqian
   name: 司马迁
-  birth: "-0145"
-  death: "-0086"
+  birth: '-0145'
+  death: '-0086'
   field: 文学
   note: 著《史记》，纪传体通史之祖
+  has_detail: true
   confidence: 有争议
   dispute: 生年有前145与前135两说，卒年更无明确记载。
-
 - id: huoqubing
   name: 霍去病
-  birth: "-0140"
-  death: "-0117"
+  birth: '-0140'
+  death: '-0117'
   field: 军事
   note: 西汉名将，大破匈奴封狼居胥，年仅二十四岁卒
   confidence: 确定
-
-- id: huoguang
-  name: 霍光
-  birth: "-0130"
-  death: "-0068"
-  field: 政治
-  note: 西汉名臣、权臣，辅政二十载，废立昌邑王刘贺，开宣帝中兴
-  confidence: 确定
-
 - id: suwu
   name: 苏武
-  birth: "-0140"
-  death: "-0060"
+  birth: '-0140'
+  death: '-0060'
   field: 政治
   note: 西汉大臣，出使匈奴被扣，北海牧羊十九载持节不屈
   confidence: 确定
-
-
+- id: huoguang
+  name: 霍光
+  birth: '-0130'
+  death: '-0068'
+  field: 政治
+  note: 西汉名臣、权臣，辅政二十载，废立昌邑王刘贺，开宣帝中兴
+  confidence: 确定
 - id: wangzhaojun
   name: 王昭君
-  birth: "-0054"
-  death: "-0019"
+  birth: '-0054'
+  death: '-0019'
   field: 政治
   note: 汉代和亲宫女，出塞嫁匈奴呼韩邪单于，保边境数十年和平
   confidence: 有争议
   dispute: 生卒年据史料估计。
-
 - id: mayuan
   name: 马援
-  birth: "-0014"
-  death: "0049"
+  birth: '-0014'
+  death: '0049'
   field: 军事
   note: 东汉伏波将军，马革裹尸，平定交趾与武陵蛮
   confidence: 确定
-
 - id: dengyu
   name: 邓禹
-  birth: "0002"
-  death: "0058"
+  birth: '0002'
+  death: '0058'
   field: 军事
   note: 东汉开国元勋，云台二十八将之首，仗策追随光武中兴
   confidence: 确定
-
 - id: banchao
   name: 班超
-  birth: "0032"
-  death: "0102"
+  birth: '0032'
+  death: '0102'
   field: 军事
   note: 东汉名将、外交家，投笔从戎，经营西域三十余载
   confidence: 确定
-
 - id: zhangheng
   name: 张衡
-  birth: "0078"
-  death: "0139"
+  birth: '0078'
+  death: '0139'
   field: 科技
   note: 东汉科学家、天文学家，发明地动仪与浑天仪
   confidence: 确定
-
 - id: huatuo
   name: 华佗
-  birth: "0145"
-  death: "0208"
+  birth: '0145'
+  death: '0208'
   field: 科技
   note: 东汉神医，精通外科，创麻沸散与五禽戏
   confidence: 确定
-
 - id: caocao
   name: 曹操
-  birth: "0155"
-  death: "0220"
+  birth: '0155'
+  death: '0220'
   field: 政治
   note: 挟天子以令诸侯，亦为建安文学代表
   confidence: 确定
-
-- id: zhugeliang
-  name: 诸葛亮
-  birth: "0181"
-  death: "0234"
-  field: 政治
-  note: 蜀汉丞相，六出祁山
-  confidence: 确定
-
-- id: caozhi
-  name: 曹植
-  birth: "0192"
-  death: "0232"
-  field: 文学
-  note: 建安文学代表，「才高八斗」，作《洛神赋》《七步诗》
-  confidence: 确定
-
-- id: jikang
-  name: 嵇康（jī）
-  birth: "0223"
-  death: "0262"
-  field: 文学
-  note: 竹林七贤之一，临刑弹《广陵散》，魏晋风骨代表
-  confidence: 确定
-
-
 - id: simayi
   name: 司马懿
-  birth: "0179"
-  death: "0251"
+  birth: '0179'
+  death: '0251'
   field: 军事
   note: 曹魏重臣，高平陵之变掌握朝政，为西晋奠基
   confidence: 确定
-
+- id: zhugeliang
+  name: 诸葛亮
+  birth: '0181'
+  death: '0234'
+  field: 政治
+  note: 蜀汉丞相，六出祁山
+  confidence: 确定
+- id: caozhi
+  name: 曹植
+  birth: '0192'
+  death: '0232'
+  field: 文学
+  note: 建安文学代表，「才高八斗」，作《洛神赋》《七步诗》
+  has_detail: true
+  confidence: 确定
+- id: jikang
+  name: 嵇康（jī）
+  birth: '0223'
+  death: '0262'
+  field: 文学
+  note: 竹林七贤之一，临刑弹《广陵散》，魏晋风骨代表
+  has_detail: true
+  confidence: 确定
 - id: wangdao
   name: 王导
-  birth: "0276"
-  death: "0339"
+  birth: '0276'
+  death: '0339'
   field: 政治
   note: 东晋开国宰相，辅助司马睿衣冠南渡，安定江左，时称「王与马共天下」
   confidence: 确定
-
 - id: wangxizhi
   name: 王羲之
-  birth: "0303"
-  death: "0361"
+  birth: '0303'
+  death: '0361'
   field: 艺术
   note: 书圣，《兰亭集序》为行书第一
   confidence: 有争议
   dispute: 生卒年有 303–361 与 321–379 两说，学界未有定论。
-
 - id: xiean
   name: 谢安
-  birth: "0320"
-  death: "0385"
+  birth: '0320'
+  death: '0385'
   field: 政治
   note: 东晋名士、宰相，运筹帷幄指挥淝水之战以少胜多
   confidence: 确定
-
 - id: fujian
   name: 苻坚（fú jiān）
-  birth: "0338"
-  death: "0385"
+  birth: '0338'
+  death: '0385'
   field: 政治
   note: 前秦君主，统一北方，投鞭断流南征东晋，溃于淝水
   confidence: 确定
-
 - id: gukaizhi
   name: 顾恺之
-  birth: "0348"
-  death: "0409"
+  birth: '0348'
+  death: '0409'
   field: 艺术
   note: 东晋画家，创高古游丝描，画《女史箴图》《洛神赋图》
   confidence: 有争议
   dispute: 生卒年为后世根据典籍推定。
-
 - id: taoyuanming
   name: 陶渊明
-  birth: "0365"
-  death: "0427"
+  birth: '0365'
+  death: '0427'
   field: 文学
   note: 田园诗之宗，不为五斗米折腰
+  has_detail: true
   confidence: 有争议
   dispute: 生年有 365 与 372 等说。
-
-
 - id: mulan
   name: 花木兰
-  birth: "0412"
-  death: "0470"
+  birth: '0412'
+  death: '0470'
   field: 军事
   note: 北朝巾帼英雄，女扮男装替父从军击破柔然
   confidence: 传说
   dispute: 木兰事迹见于《木兰诗》，生卒年与人物真实性为传统文学推测。
-
 - id: weizheng
   name: 魏征
-  birth: "0580"
-  death: "0643"
+  birth: '0580'
+  death: '0643'
   field: 政治
   note: 唐代名臣，直言敢谏，唐太宗赞为「以人为镜可以明得失」
   confidence: 确定
-
 - id: xuanzang
   name: 玄奘（zàng）
-  birth: "0602"
-  death: "0664"
+  birth: '0602'
+  death: '0664'
   field: 思想
   note: 西行求法十七年，译经传法，著《大唐西域记》
   confidence: 确定
-
 - id: jianzhen
   name: 鉴真
-  birth: "0688"
-  death: "0763"
+  birth: '0688'
+  death: '0763'
   field: 思想
   note: 扬州高僧，六次东渡日本弘扬佛法与大唐文化
   confidence: 确定
-
 - id: guoziyi
   name: 郭子仪
-  birth: "0697"
-  death: "0781"
+  birth: '0697'
+  death: '0781'
   field: 军事
   note: 唐代名将，平定安史之乱，单骑见回纥退敌，功高盖世
   confidence: 确定
-
 - id: libai
   name: 李白
-  birth: "0701"
-  death: "0762"
+  birth: '0701'
+  death: '0762'
   field: 文学
   note: 诗仙，浪漫主义巅峰，仗剑远游，放浪诗酒
+  roles: [诗人, 剑客]
+  tags: [盛唐, 浪漫主义, 乐府]
+  has_detail: true
   confidence: 确定
-
-- id: dufu
-  name: 杜甫
-  birth: "0712"
-  death: "0770"
-  field: 文学
-  note: 诗圣，沉郁顿挫，忧国忧民，被称为「诗史」
-  confidence: 确定
-
 - id: wangwei
-
   name: 王维
-  birth: "0701"
-  death: "0761"
+  birth: '0701'
+  death: '0761'
   field: 文学
   note: 诗中有画，山水田园与禅意并存
-  confidence: 有争议
+  roles: [诗人, 画家, 音乐家]
+  tags: [盛唐, 山水田园, 辋川]
+  has_detail: true
+  confidence: 确定
   dispute: 生年有 699 与 701 两说。
-
+- id: dufu
+  name: 杜甫
+  birth: '0712'
+  death: '0770'
+  field: 文学
+  note: 诗圣，沉郁顿挫，忧国忧民，被称为「诗史」
+  has_detail: true
+  confidence: 确定
 - id: chairong
   name: 柴荣
-  birth: "0921"
-  death: "0959"
+  birth: '0921'
+  death: '0959'
   field: 政治
   note: 后周世宗，五代名君，高平大捷破北汉辽军，为宋统一奠基
   confidence: 确定
-
 - id: zhaokuangyin
   name: 赵匡胤（yìn）
-  birth: "0927"
-  death: "0976"
+  birth: '0927'
+  death: '0976'
   field: 政治
   note: 宋太祖，陈桥兵变黄袍加身建北宋，杯酒释兵权强化集权
   confidence: 确定
-
-
 - id: yangye
   name: 杨业
-  birth: "0932"
-  death: "0986"
+  birth: '0932'
+  death: '0986'
   field: 军事
   note: 北宋名将，杨无敌，雍熙北伐孤军力战被俘，绝食三日殉国
   confidence: 有争议
   dispute: 「金沙滩撞李陵碑」为演义虚构，正史载杨业被俘后绝食而死。
-
 - id: liyu
   name: 李煜（yù）
-  birth: "0937"
-  death: "0978"
+  birth: '0937'
+  death: '0978'
   field: 文学
   note: 南唐后主，词中之帝，作《虞美人》《相见欢》
+  has_detail: true
   confidence: 确定
-
 - id: kouzhun
   name: 寇准
-  birth: "0961"
-  death: "1023"
+  birth: '0961'
+  death: '1023'
   field: 政治
   note: 北宋贤相，澶渊之盟主战，促真宗亲征御敌保宋辽百年和平
   confidence: 确定
-
 - id: fanzhongyan
   name: 范仲淹
-  birth: "0989"
-  death: "1052"
+  birth: '0989'
+  death: '1052'
   field: 政治
   note: 北宋名臣，主持庆历新政，作《岳阳楼记》立「先天下之忧而忧」高志
   confidence: 确定
-
 - id: baozheng
   name: 包拯
-  birth: "0999"
-  death: "1062"
+  birth: '0999'
+  death: '1062'
   field: 政治
   note: 北宋名臣，包青天，知开封府铁面无私，抑强扶弱
   confidence: 确定
-
-
 - id: diqing
   name: 狄青
-  birth: "1008"
-  death: "1057"
+  birth: '1008'
+  death: '1057'
   field: 军事
   note: 北宋名将，面涅佩铜面具，大年三十夜袭昆仑关
   confidence: 确定
-
 - id: sushi
   name: 苏轼
-  birth: "1037"
-  death: "1101"
+  birth: '1037'
+  death: '1101'
   field: 文学
   note: 苏东坡，诗词文书画皆精，旷达豪放之宗
+  has_detail: true
   confidence: 确定
-
-
 - id: liqingzhao
   name: 李清照
-  birth: "1084"
-  death: "1155"
+  birth: '1084'
+  death: '1155'
   field: 文学
   note: 婉约词宗，易安体传世，南渡后词风转沉郁
+  has_detail: true
   confidence: 有争议
   dispute: 卒年无确载，约 1155 为推定；晚年流寓行迹及再嫁与否亦有争议。
-
 - id: yuefei
   name: 岳飞
-  birth: "1103"
-  death: "1142"
+  birth: '1103'
+  death: '1142'
   field: 军事
   note: 南宋抗金名将，精忠报国，郾城大捷，被秦桧构陷害死
+  has_detail: true
   confidence: 确定
-
 - id: zhuxi
   name: 朱熹（xī）
-  birth: "1130"
-  death: "1200"
+  birth: '1130'
+  death: '1200'
   field: 思想
   note: 理学集大成者，四书集注，此后数百年科举之标的
   confidence: 确定
-
 - id: guoshoujing
   name: 郭守敬
-  birth: "1231"
-  death: "1316"
+  birth: '1231'
+  death: '1316'
   field: 科技
   note: 元代科学家、水利专家，主持开通通惠河并创制《授时历》
   confidence: 确定
-
 - id: luxiufu
   name: 陆秀夫
-  birth: "1236"
-  death: "1279"
+  birth: '1236'
+  death: '1279'
   field: 政治
   note: 南宋丞相，崖山海战背负八岁少帝赵昺投海殉国
   confidence: 确定
-
 - id: wentianxiang
   name: 文天祥
-  birth: "1236"
-  death: "1283"
+  birth: '1236'
+  death: '1283'
   field: 政治
   note: 南宋丞相，宁死不降元，《过零丁洋》《正气歌》传世
   confidence: 确定
-
-
 - id: guanhanqing
   name: 关汉卿
-  birth: "1241"
-  death: "1320"
+  birth: '1241'
+  death: '1320'
   field: 文学
   note: 元曲四大家之首，作《窦娥冤》等杂剧六十余种
   confidence: 有争议
   dispute: 生卒年无确载，此处为约值。
-
 - id: liubowen
   name: 刘基
-  birth: "1311"
-  death: "1375"
+  birth: '1311'
+  death: '1375'
   field: 政治
   note: 刘伯温，明朝开国勋臣，神机妙算，运筹帷幄助朱元璋平定天下
   confidence: 确定
-
 - id: yuqian
   name: 于谦
-  birth: "1398"
-  death: "1457"
+  birth: '1398'
+  death: '1457'
   field: 政治
   note: 明代名臣，土木堡之变后主持北京保卫战击退瓦剌
   confidence: 确定
-
 - id: wangyangming
   name: 王阳明
-  birth: "1472"
-  death: "1529"
+  birth: '1472'
+  death: '1529'
   field: 思想
   note: 心学集大成者，「知行合一」「致良知」
   confidence: 确定
-
 - id: hairui
   name: 海瑞
-  birth: "1514"
-  death: "1587"
+  birth: '1514'
+  death: '1587'
   field: 政治
   note: 明代著名清官，备死上《治安疏》抨击朝政，刚正不阿
   confidence: 确定
-
 - id: lishizhen
   name: 李时珍
-  birth: "1518"
-  death: "1593"
+  birth: '1518'
+  death: '1593'
   field: 科技
   note: 著《本草纲目》，集本草学之大成
   confidence: 确定
-
-
 - id: qijiguang
   name: 戚继光（qī）
-  birth: "1528"
-  death: "1588"
+  birth: '1528'
+  death: '1588'
   field: 军事
   note: 明代抗倭名将，创戚家军与鸳鸯阵，肃清东南沿海倭患
   confidence: 确定
-
 - id: xuxiake
   name: 徐霞客
-  birth: "1587"
-  death: "1641"
+  birth: '1587'
+  death: '1641'
   field: 科技
   note: 明代地理学家，游历大半中国，撰《徐霞客游记》
   confidence: 确定
-
+- id: huangzongxi
+  name: 黄宗羲
+  related_dynasties:
+    - qing
+  birth: '1610'
+  death: '1695'
+  field: 思想
+  note: 明清之际启蒙思想家、史学家，著《明夷待访录》，深刻批判封建君主专制制度
+  confidence: 确定
+- id: aobai
+  name: 鳌拜
+  related_dynasties:
+    - qing
+  birth: '1610'
+  death: '1669'
+  field: 军事
+  note: 清初辅政大臣、名将，功勋卓著但晚年专横跋扈、结党专权，后被康熙帝智擒禁锢
+  confidence: 确定
+- id: dorgon
+  name: 多尔衮
+  related_dynasties:
+    - qing
+  birth: '1612'
+  death: '1650'
+  field: 政治
+  note: 清初摄政王，努尔哈赤第十四子，主持清军入关定鼎中原，奠定清朝全国统治基础
+  confidence: 确定
+- id: guyanwu
+  name: 顾炎武
+  related_dynasties:
+    - qing
+  birth: '1613'
+  death: '1682'
+  field: 思想
+  note: 明清之际思想家、史学家、朴学奠基人，力倡经世致用与考据学，提出“天下兴亡，匹夫有责”
+  confidence: 确定
+- id: wangfuzhi
+  name: 王夫之
+  related_dynasties:
+    - qing
+  birth: '1619'
+  death: '1692'
+  field: 思想
+  note: 明清之际唯物主义思想家、哲学家，著《读通鉴论》，总结中国古代朴素唯物主义哲学之大成
+  confidence: 确定
 - id: zhengchenggong
   name: 郑成功
-  birth: "1624"
-  death: "1662"
+  birth: '1624'
+  death: '1662'
   field: 军事
   note: 民族英雄，击败荷兰殖民者收复台湾，建立明郑政权
   confidence: 确定
-
+  related_dynasties:
+    - qing
+- id: songgotu
+  name: 索额图
+  related_dynasties:
+    - qing
+  birth: '1636'
+  death: '1703'
+  field: 政治
+  note: 康熙朝保和殿大学士兼领侍卫内大臣，代表清政府主持签订中俄《尼布楚条约》
+  confidence: 确定
+- id: pusongling
+  name: 蒲松龄
+  related_dynasties:
+    - qing
+  birth: '1640'
+  death: '1715'
+  field: 文学
+  note: 清代著名文学家，著文言短篇小说集《聊斋志异》，讽刺封建科举与官场腐败，艺术成就极高
+  confidence: 确定
+- id: nalanxingde
+  name: 纳兰性德
+  related_dynasties:
+    - qing
+  birth: '1655'
+  death: '1685'
+  field: 文学
+  note: 清代著名词人，御前侍卫，词风清丽婉约、格高韵远，著有《饮水词》，被誉为“清代第一词人”
+  confidence: 确定
+- id: zhangtingyu
+  name: 张廷玉
+  related_dynasties:
+    - qing
+  birth: '1672'
+  death: '1755'
+  field: 政治
+  note: 历仕康雍乾三朝保和殿大学士、军机大臣，完善军机处规章体制，是清代唯一配享太庙的汉族大臣
+  confidence: 确定
+- id: niangengyao
+  name: 年羹尧
+  related_dynasties:
+    - qing
+  birth: '1679'
+  death: '1726'
+  field: 军事
+  note: 清代名将，官至抚远大将军，平定青海罗卜藏丹津叛乱，后因骄横跋扈结党营私被雍正帝赐死
+  confidence: 确定
 - id: caoxueqin
   name: 曹雪芹
-  birth: "1715"
-  death: "1763"
+  birth: '1715'
+  death: '1763'
   field: 文学
   note: 著《红楼梦》，古典小说之巅峰
   confidence: 有争议
-  dispute: 生卒年无定论，生年有 1715 与 1724 两说，卒年亦有 1763 与 1764 说，此处为约值。
-
+  dispute: 生卒年无定论，生年有 1715 与 1724 两说，卒年亦有 1763 与 1764 说，此处为约值；《红楼梦》的作者归属、脂本系统和成书过程也存在学术争议，不据此伪造单年创作事件。
+  related_dynasties:
+    - qing
+- id: jixiaolan
+  name: 纪昀
+  related_dynasties:
+    - qing
+  birth: '1724'
+  death: '1805'
+  field: 文学
+  note: 字晓岚，乾隆朝礼部尚书、协办大学士，《四库全书》总纂官，著笔记小说《阅微草堂笔记》
+  confidence: 确定
+- id: heshen
+  name: 和珅
+  related_dynasties:
+    - qing
+  birth: '1750'
+  death: '1799'
+  field: 政治
+  note: 乾隆朝首席军机大臣、文华殿大学士，深得乾隆宠信但聚敛无度、贪墨巨富，嘉庆帝即位后赐死
+  confidence: 确定
 - id: linzexu
   name: 林则徐
-  birth: "1785"
-  death: "1850"
+  birth: '1785'
+  death: '1850'
   field: 政治
   note: 民族英雄，主导虎门销烟，睁眼看世界的第一人
   confidence: 确定
-
+  related_dynasties:
+    - qing
+- id: gongzizhen
+  name: 龚自珍
+  related_dynasties:
+    - qing
+  birth: '1792'
+  death: '1841'
+  field: 文学
+  note: 清代思想家、文学家，近代启蒙思想先驱，力倡革新图强，著《己亥杂诗》（劝天公重抖擞）
+  confidence: 确定
+- id: weiyuan
+  name: 魏源
+  birth: '1794'
+  death: '1857'
+  field: 思想
+  note: 编撰《海国图志》，首倡「师夷长技以制夷」开启近代向西方学习先河
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: zengguofan
+  name: 曾国藩
+  birth: '1811'
+  death: '1872'
+  field: 政治
+  note: 晚清重臣，创办湘军与安庆内军械所，洋务运动主要发起人之一
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: zuozongtang
+  name: 左宗棠
+  birth: '1812'
+  death: '1885'
+  field: 军事
+  note: 晚清名臣，创办福州船政局，力主塞防并统兵收复新疆
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: hongxiuquan
+  name: 洪秀全
+  birth: '1814'
+  death: '1864'
+  field: 政治
+  note: 太平天国天王，领导金田起义，建立太平天国政权
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: xushou
+  name: 徐寿
+  birth: '1818'
+  death: '1884'
+  field: 科技
+  note: 近代化学先驱，参与设计中国第一艘蒸汽动力轮船「黄鹄号」，创办格致书院
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: lihongzhang
+  name: 李鸿章
+  birth: '1823'
+  death: '1901'
+  field: 政治
+  note: 洋务运动核心领袖，创办江南制造总局、轮船招商局及北洋水师
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: ronghong
+  name: 容闳
+  birth: '1828'
+  death: '1912'
+  field: 思想
+  note: 中国留学生之父，首位获美国大学学位的中国留学生，力促晚清幼童赴美留学
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: yixin
+  name: 奕訢
+  related_dynasties:
+    - qing
+  birth: '1833'
+  death: '1898'
+  field: 政治
+  note: 道光帝第六子（恭亲王），主持设立总理各国事务衙门与京师同文馆，洋务运动在中央的主要倡导者与领袖
+  confidence: 确定
+- id: cixi
+  name: 慈禧太后
+  related_dynasties:
+    - qing
+  birth: '1835'
+  death: '1908'
+  field: 政治
+  note: 晚清实际最高统治者，辛酉政变后垂帘听政近半个世纪，支持洋务运动但镇压戊戌变法，终结洋务与百日维新
+  confidence: 确定
+- id: zhangzhidong
+  name: 张之洞
+  birth: '1837'
+  death: '1909'
+  field: 政治
+  note: 晚清洋务重臣，创办汉阳铁厂与湖北枪炮厂，提出「中学为体，西学为用」
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: wuchangshuo
+  name: 吴昌硕
+  birth: '1844'
+  death: '1927'
+  field: 艺术
+  note: 近代书画金石泰斗，海派艺术领军人物，西泠印社首任社长
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: dengshichang
+  name: 邓世昌
+  birth: '1849'
+  death: '1894'
+  field: 军事
+  note: 北洋海军致远舰管带，甲午黄海海战中誓死抗敌，与舰同沉壮烈殉国
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: zhangjian
+  name: 张謇
+  birth: '1853'
+  death: '1926'
+  field: 思想
+  note: 近代实业家、教育家，倡导「实业救国」，创办大生纱厂及南通多所学校
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: yanfu
+  name: 严复
+  birth: '1854'
+  death: '1921'
+  field: 思想
+  note: 近代启蒙思想家、翻译家，译《天演论》传播进化论，首倡「信达雅」
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: kangyouwei
+  name: 康有为
+  birth: '1858'
+  death: '1927'
+  field: 思想
+  note: 维新变法领袖，主导公车上书与百日维新，倡导君主立宪
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: yuanshikai
+  name: 袁世凯
+  birth: '1859'
+  death: '1916'
+  field: 政治
+  note: 北洋军阀领袖，首任中华民国大总统，后图谋称帝引发护国战争败亡
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: zhantianyou
+  name: 詹天佑
+  birth: '1861'
+  death: '1919'
+  field: 科技
+  note: 中国铁路工程先驱，主持修建完全由中国人自主设计建造的京张铁路
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: qibaishi
+  name: 齐白石
+  birth: '1864'
+  death: '1957'
+  field: 艺术
+  note: 现代中国画大师，开创「红花墨叶」大写意花鸟画新风
+  confidence: 确定
+- id: tansitong
+  name: 谭嗣同
+  birth: '1865'
+  death: '1898'
+  field: 思想
+  note: 戊戌六君子之一，著《仁学》，百日维新失败后慷慨就义
+  confidence: 确定
+  related_dynasties:
+    - qing
 - id: sunzhongshan
   name: 孙中山
-  birth: "1866"
-  death: "1925"
+  birth: '1866'
+  death: '1925'
   field: 政治
   note: 伟大的民主革命先行者，领导辛亥革命，推翻清朝封建统治，创中华民国
   confidence: 确定
-
+- id: caiyuanpei
+  name: 蔡元培
+  birth: '1868'
+  death: '1940'
+  field: 思想
+  note: 民主进步教育家，任北大校长期间力倡「思想自由，兼容并包」，奠定新文化运动基础
+  confidence: 确定
+- id: zhangtaiyan
+  name: 章太炎
+  birth: '1869'
+  death: '1936'
+  field: 思想
+  note: 近代民主革命家、思想家、国学大师，主编《民报》宣传反清革命
+  confidence: 确定
+- id: liangqichao
+  name: 梁启超
+  birth: '1873'
+  death: '1929'
+  field: 思想
+  note: 近代思想家、学者，维新运动领袖之一，主笔《新民丛报》启发一代民智
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: huangxing
+  name: 黄兴
+  birth: '1874'
+  death: '1916'
+  field: 军事
+  note: 辛亥革命核心军事领袖，中华民国开国元勋，与孙中山并称「孙黄」
+  confidence: 确定
+- id: qiujin
+  name: 秋瑾
+  birth: '1875'
+  death: '1907'
+  field: 政治
+  note: 近代女权运动先驱、辛亥革命志士，倡导妇女解放与反清革命，绍兴就义
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: wangguowei
+  name: 王国维
+  birth: '1877'
+  death: '1927'
+  field: 文学
+  note: 近代学者、国学大师，融汇中西美学与史学考据，著《人间词话》
+  confidence: 确定
+  related_dynasties:
+    - qing
+- id: chenduxiu
+  name: 陈独秀
+  birth: '1879'
+  death: '1942'
+  field: 思想
+  note: 新文化运动发起人与旗手，创办《新青年》，中国共产党主要创始人之一
+  confidence: 确定
+- id: lishutong
+  name: 李叔同
+  birth: '1880'
+  death: '1942'
+  field: 艺术
+  note: 现代艺术与音乐戏剧先驱，首倡话剧与现代美术教育，后出家为弘一法师
+  confidence: 确定
 - id: luxun
   name: 鲁迅
-  birth: "1881"
-  death: "1936"
+  birth: '1881'
+  death: '1936'
   field: 文学
-  note: 新文学运动旗手，以《呐喊》《彷徨》等解剖国民性
+  note: 现代文学巨匠，新文化运动旗手，以《呐喊》《彷徨》等深刻解剖国民性
   confidence: 确定
-
+- id: songjiaoren
+  name: 宋教仁
+  birth: '1882'
+  death: '1913'
+  field: 政治
+  note: 近代民主革命家，改组同盟会为国民党，力倡政党政治与责任内阁制，遇刺殉国
+  confidence: 确定
+- id: caie
+  name: 蔡锷
+  birth: '1882'
+  death: '1916'
+  field: 军事
+  note: 著名爱国将领，护国战争领袖，首义云南誓师讨袁，再造共和
+  confidence: 确定
+- id: fengru
+  name: 冯如
+  birth: '1884'
+  death: '1912'
+  field: 科技
+  note: 中国航空之父，中国第一位飞机设计师与飞行家，开创中国近代航空事业
+  confidence: 确定
+- id: lidazhao
+  name: 李大钊
+  birth: '1889'
+  death: '1927'
+  field: 思想
+  note: 中国共产主义运动先驱，最早在中国系统传播马克思主义，中国共产党主要创始人之一
+  confidence: 确定
+- id: hushi
+  name: 胡适
+  birth: '1891'
+  death: '1962'
+  field: 文学
+  note: 新文化运动核心领袖，倡导白话文运动与文学改良，对现代学术转型影响深远
+  confidence: 确定
+- id: menghaoran
+  name: 孟浩然
+  birth: '0689'
+  death: '0740'
+  field: 文学
+  note: 山水田园诗派代表，隐鹿门山以诗自适，一生布衣
+  has_detail: true
+  roles: [诗人]
+  tags: [盛唐, 山水田园]
+  confidence: 确定
+- id: baijuyi
+  name: 白居易
+  birth: '0772'
+  death: '0846'
+  field: 文学
+  note: 诗魔，新乐府运动倡导者，文章合为时而著歌诗合为事而作
+  roles: [诗人]
+  tags: [中唐, 新乐府, 元白]
+  has_detail: true
+  confidence: 确定
+- id: liuyuxi
+  name: 刘禹锡
+  birth: '0772'
+  death: '0842'
+  field: 文学
+  note: 诗豪，永贞革新与牛李党争间两度贬谪，竹枝词开风土诗新境
+  has_detail: true
+  roles: [诗人]
+  tags: [中唐, 永贞革新]
+  confidence: 确定
+- id: dumu
+  has_detail: true
+  name: 杜牧
+  birth: '0803'
+  death: '0852'
+  field: 文学
+  note: 小杜，咏史绝句与兵学才略兼长
+  roles: [诗人]
+  tags: [晚唐, 咏史]
+  confidence: 确定
+- id: lishangyin
+  name: 李商隐
+  has_detail: true
+  birth: '0813'
+  death: '0858'
+  field: 文学
+  note: 晚唐义山体，无题诗朦胧深婉，陷牛李党争坎壈终身
+  roles: [诗人]
+  tags: [晚唐, 无题]
+  confidence: 确定
+- id: hanyu
+  name: 韩愈
+  birth: '0768'
+  death: '0824'
+  field: 文学
+  note: 文起八代之衰，古文运动倡导者，唐宋八大家之首
+  has_detail: true
+  roles: [散文家, 诗人, 思想家]
+  tags: [中唐, 古文运动]
+  confidence: 确定
+- id: liuzongyuan
+  name: 柳宗元
+  birth: '0773'
+  death: '0819'
+  field: 文学
+  note: 与刘禹锡共历永贞革新贬谪，山水游记与寓言的开创者
+  has_detail: true
+  roles: [散文家, 诗人]
+  tags: [中唐, 永贞革新]
+  confidence: 确定
+- id: yuanzhen
+  name: 元稹
+  birth: '0779'
+  death: '0831'
+  field: 文学
+  note: 与白居易并称元白，新乐府运动代表，传奇莺莺传作者
+  has_detail: true
+  roles: [诗人, 小说家]
+  tags: [中唐, 新乐府, 元白]
+  confidence: 确定
+- id: lihe
+  name: 李贺
+  birth: '0790'
+  death: '0816'
+  field: 文学
+  note: 诗鬼，奇诡冷艳自成一家，因父名讳不得举进士，二十七岁早逝
+  has_detail: true
+  roles: [诗人]
+  tags: [中唐, 奇诡]
+  confidence: 确定
+- id: wangbo
+  name: 王勃
+  birth: '0650'
+  death: '0676'
+  field: 文学
+  note: 初唐四杰之首，滕王阁序名动千古，渡海溺水而卒
+  has_detail: true
+  roles: [诗人, 散文家]
+  tags: [初唐, 四杰]
+  confidence: 确定
+- id: chenziang
+  name: 陈子昂
+  birth: '0659'
+  death: '0702'
+  field: 文学
+  note: 前不见古人的孤独先声，汉魏风骨革新的旗帜
+  has_detail: true
+  roles: [诗人]
+  tags: [初唐, 风骨]
+  confidence: 确定
+- id: ouyangxiu
+  name: 欧阳修
+  birth: '1007'
+  death: '1072'
+  field: 文学
+  note: 唐宋八大家之一，北宋诗文革新运动领袖，醉翁之意不在酒
+  has_detail: true
+  roles: [散文家, 诗人, 文学批评家]
+  tags: [北宋, 诗文革新]
+  confidence: 确定
+- id: wanganshi
+  name: 王安石
+  birth: '1021'
+  death: '1086'
+  field: 文学
+  note: 唐宋八大家之一，熙宁变法主导者，半山体峭拔简劲
+  has_detail: true
+  roles: [政治家, 散文家, 诗人]
+  tags: [北宋, 熙宁变法]
+  confidence: 确定
+- id: luyou
+  name: 陆游
+  birth: '1125'
+  death: '1210'
+  field: 文学
+  note: 存诗近万首的爱国诗人，示儿绝笔与沈园情事并传
+  has_detail: true
+  roles: [诗人, 词人]
+  tags: [南宋, 爱国]
+  confidence: 确定
+- id: ruanji
+  name: 阮籍
+  birth: '0210'
+  death: '0263'
+  field: 文学
+  note: 竹林七贤之一，咏怀八十二首开五言抒情组诗新境，青白眼待人
+  has_detail: true
+  roles: [诗人, 思想家]
+  tags: [魏晋, 竹林七贤]
+  confidence: 确定
+- id: bangu
+  name: 班固
+  birth: '0032'
+  death: '0092'
+  field: 文学
+  note: 断代史之祖著汉书，两都赋开京都大赋典范，死于窦宪狱
+  has_detail: true
+  roles: [史学家, 散文家]
+  tags: [东汉, 史学]
+  confidence: 确定
+- id: liuyong
+  name: 柳永
+  field: 文学
+  birth_note: 约987年（一说984），生年诸说不一
+  death_note: 约1053年，卒年亦系推定
+  note: 奉旨填词柳三变，慢词开山，凡有井水饮处皆能歌柳词
+  roles: [词人]
+  tags: [北宋, 慢词]
+  has_detail: true
+  confidence: 有争议
+  dispute: 生卒年均系学界推定，正史无传。
+- id: qinguan
+  name: 秦观
+  birth: '1049'
+  death: '1100'
+  field: 文学
+  note: 苏门四学士之一，婉约派正宗，两情若是久又岂在朝朝暮暮
+  roles: [词人, 散文家]
+  tags: [北宋, 婉约]
+  has_detail: true
+  confidence: 确定
+- id: zhoubangyan
+  name: 周邦彦
+  birth: '1056'
+  death: '1121'
+  field: 文学
+  note: 词家之冠，提举大晟府，格律派集大成者
+  roles: [词人, 音乐家]
+  tags: [北宋, 格律]
+  has_detail: true
+  confidence: 确定
+- id: jiangkui
+  name: 姜夔
+  field: 文学
+  birth_note: 约1155年，生年系推定
+  death_note: 约1221年，卒年亦系推定
+  note: 白石道人，清空骚雅自度曲传世，布衣终身
+  roles: [词人, 音乐家]
+  tags: [南宋, 骚雅]
+  has_detail: true
+  confidence: 有争议
+  dispute: 生卒年均系学界推定，宋史无传。
+- id: huangtingjian
+  name: 黄庭坚
+  birth: '1045'
+  death: '1105'
+  field: 文学
+  note: 字鲁直号山谷道人，江西诗派开山之祖，苏门四学士之一，书法宋四家
+  roles: [诗人, 书法家]
+  tags: [北宋, 江西诗派]
+  has_detail: true
+  confidence: 确定
+- id: yangwanli
+  name: 杨万里
+  birth: '1127'
+  death: '1206'
+  field: 文学
+  note: 字廷秀号诚斋，诚斋体活法自成一家的中兴四大诗人
+  roles: [诗人]
+  tags: [南宋, 诚斋体]
+  has_detail: true
+  confidence: 确定
+- id: fanchengda
+  name: 范成大
+  birth: '1126'
+  death: '1193'
+  field: 文学
+  note: 字至能号石湖居士，田园诗集大成的中兴四大诗人，曾使金全节而归
+  roles: [诗人]
+  tags: [南宋, 田园]
+  has_detail: true
+  confidence: 确定
+- id: yanshu
+  name: 晏殊
+  birth: '0991'
+  death: '1055'
+  field: 文学
+  note: 字同叔，北宋倚声家初祖，太平宰相词人，无可奈何花落去
+  roles: [词人, 政治家]
+  tags: [北宋, 婉约]
+  has_detail: true
+  confidence: 确定
+- id: wentingyun
+  name: 温庭筠
+  birth_note: 约812年（一说约801），生年诸说不一
+  death_note: 约866年（一说870），卒年亦存异说
+  field: 文学
+  note: 字飞卿，花间鼻祖，与李商隐并称温李
+  roles: [词人, 诗人]
+  tags: [晚唐, 花间]
+  has_detail: true
+  confidence: 有争议
+  dispute: 生卒年诸说纷歧（约812—866为主流，另有约801—870等），正史本传不系生卒。
+- id: songyu
+  name: 宋玉
+  birth_note: 生年不可考（活动于屈原之后、汉初之前）
+  death_note: 卒年不可考
+  field: 文学
+  note: 屈原之后楚辞大家，「悲哉秋之为气也」悲秋之祖，阳春白雪曲高和寡
+  roles: [辞赋家]
+  tags: [战国, 楚辞]
+  has_detail: true
+  confidence: 有争议
+  dispute: 正史无专传，仅史记卷84屈原贾生列传附见其名（「宋玉唐勒景差之属者皆好辞而以赋见称」）；生卒生平皆赖传说层。
+- id: zuosi
+  name: 左思
+  birth: '0250'
+  death: '0305'
+  field: 文学
+  note: 字太冲，洛阳纸贵的主角，咏史诗与三都赋作者
+  roles: [诗人, 辞赋家]
+  tags: [西晋, 咏史]
+  has_detail: true
+  confidence: 确定
+- id: baozhao
+  name: 鲍照
+  birth_note: 约414年（一说412），生年系推定
+  death_note: 约466年，卒于乱军中
+  field: 文学
+  note: 字明远，元嘉三大家之一，拟行路难与俊逸鲍参军
+  roles: [诗人]
+  tags: [南朝, 乐府]
+  has_detail: true
+  confidence: 有争议
+  dispute: 生年系推定；正史无专传，附见于南史临川烈武王道规传后。
+- id: yuxin
+  name: 庾信
+  birth: '0513'
+  death: '0581'
+  field: 文学
+  note: 字子山，南北朝文学集大成者，暮年词赋动江关的乡关之思
+  roles: [诗人, 辞赋家]
+  tags: [北朝, 六朝]
+  has_detail: true
+  confidence: 确定
+- id: luobinwang
+  name: 骆宾王
+  birth_note: 约626年生（一说619或640），生年诸说不一
+  death_note: 卒年不详，684年从徐敬业讨武后兵败后下落不明（被杀、投水、逃匿为僧诸说并存）
+  field: 文学
+  note: 初唐四杰之一，为徐敬业讨武曌檄的作者，咏鹅神童
+  roles: [诗人]
+  tags: [初唐, 四杰]
+  has_detail: true
+  confidence: 有争议
+  dispute: 生年诸说不一；结局两唐书所载互异且无定论。
+- id: liuchangqing
+  name: 刘长卿
+  birth_note: 约726年生（一说709），生年诸说不一
+  death_note: 约789—791年间卒（一说约786），卒年亦系推定
+  field: 文学
+  note: 字文房，五言长城，自号五言长城而两遭迁谪
+  roles: [诗人]
+  tags: [中唐, 五言]
+  has_detail: true
+  confidence: 有争议
+  dispute: 正史无本传，生平赖全唐诗小传与唐才子传；生卒年均系学界推定。
+- id: weiyingwu
+  name: 韦应物
+  birth_note: 约737年生（一说735），生年系推定
+  death_note: 约791年后卒（卒年无确载），苏州刺史任满罢去后事迹不详
+  field: 文学
+  note: 韦苏州，山水田园诗继陶王韦柳一脉，「独怜幽草涧边生」
+  roles: [诗人]
+  tags: [中唐, 山水田园]
+  has_detail: true
+  confidence: 有争议
+  dispute: 正史无本传，生平赖全唐诗小传与唐才子传；生卒年均系推定。
+- id: wuchengen
+  name: 吴承恩
+  birth_note: 约1500年生（一说1504），生年系推定
+  death_note: 约1582年卒（一说1580或1583），卒年亦系推定
+  field: 文学
+  note: 射阳山人，《西游记》百回本最终写定者的通行归属（存疑）
+  roles: [小说家]
+  tags: [明代, 西游记]
+  has_detail: true
+  confidence: 有争议
+  dispute: 正史无传；《西游记》著作权系鲁迅胡适据天启淮安府志等考证确立的通行说，学界至今存在异说（如华阳洞天主人校订说、许白云说等），生卒年均系推定。
+- id: fengmenglong
+  name: 冯梦龙
+  birth_note: "1574"
+  death_note: "1646"
+  field: 文学
+  note: 字犹龙号墨憨斋主人，三言编撰者，通俗文学一代宗师
+  roles: [文学家, 编辑家]
+  tags: [明代, 三言]
+  has_detail: true
+  confidence: 确定
+- id: xinqiji
+  name: 辛弃疾
+  birth: '1140'
+  death: '1207'
+  field: 文学
+  note: 字幼安号稼轩，豪放词宗，「醉里挑灯看剑」的归正人悲慨
+  roles: [词人]
+  tags: [南宋, 豪放]
+  has_detail: true
+  confidence: 确定

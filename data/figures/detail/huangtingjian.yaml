@@ -1,0 +1,754 @@
+# 黄庭坚全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 宋史·卷444·文苑六·黄庭坚传（维基文库实取 https://zh.wikisource.org/wiki/宋史/卷444 ） | 结论与置信 |
+# |---|---|---|
+# | 名号籍贯 | 黃庭堅字魯直洪州分寧人 | 确定 |
+# | 幼年警敏 | 幼警悟讀書數過輒成誦；舅李常過其家取架上書問之無不通常驚以為一日千里 | 确定 |
+# | 及第释褐 | 舉進士調葉縣尉 | 确定；及第年份正史无载（通行治平四年1067），标推定 |
+# | 生年 | 本传不载卒年六十一 | 生年1045系学界据享年六十一与卒年1105倒推的通说，标推定 |
+# | 《庄子》得名答语 | 本传无载；宋人笔记层有问名"庭坚"出处的传说，本次未能在维基文库定位可靠公版原文 | 不采信，待核 |
+# | 苏轼称叹 | 蘇軾嘗見其詩文以為超軼絕塵獨立萬物之表世久無此作由是聲名始震 | 确定；相识年份正史无载 |
+# | 北京国子监教授 | 熙寧初舉四京學官第文為優教授北京國子監留守文彥博才之留再任 | 确定 |
+# | 太和治绩 | 知太和縣以平易治；時課頒鹽筴諸縣爭占多數太和獨否吏不悅而民安之 | 确定 |
+# | 元祐入馆 | 哲宗立召為校書郎、《神宗實錄》檢討官；踰年遷著作佐郎加集賢校理；《實錄》成擢起居舍人 | 确定 |
+# | 笃孝 | 丁母艱；母病彌年晝夜視顏色衣不解帶；及亡廬墓下哀毀得疾幾殆 | 确定 |
+# | 铁龙爪案 | 庭堅書「用鐵龍爪治河有同兒戲」至是首問焉；對曰庭堅時官北都嘗親見之真兒戲耳；凡有問皆直辭以對聞者壯之；貶涪州別駕黔州安置言者猶以處善地為骫法 | 确定 |
+# | 移戎州 | 以親嫌遂移戎州；庭堅泊然不以遷謫介意；蜀士慕從之遊講學不倦 | 确定 |
+# | 徽宗起复与骤罢 | 徽宗即位起監鄂州稅簽書寧國軍判官知舒州以吏部員外郎召皆辭不行；丐郡得知太平州至之九日罷主管玉隆觀 | 确定 |
+# | 承天院记案 | 在河北與趙挺之有微隙；挺之執政轉運判官陳舉承風旨上其所作《荊南承天院記》指為幸災；復除名羈管宜州 | 确定；除名年份正史无载（通说崇宁二三年间1102—1103），标推定 |
+# | 卒 | 三年徙永州未聞命而卒年六十一 | 确定；卒年1105（崇宁四年）与享年六十一闭合 |
+# | 文艺定评 | 學問文章天成性得；陳師道謂其詩得法杜甫學甫而不為者；善行草書楷法亦自成一家；與張耒晁補之秦觀俱游蘇軾門天下稱為四學士而庭堅于文章尤長於詩蜀江西君子以庭堅配軾故稱蘇黃；軾為侍從時舉以自代其詞有「瓌偉之文妙絕當世孝友之行追配古人」之語 | 确定 |
+# | 自号由来 | 初遊灊皖山谷寺石牛洞樂其林泉之勝因自號山谷道人云 | 确定 |
+# | 作品文本 | 诗：寄黄几复／登快阁／清明／牧童诗／雨中登岳阳楼望君山／病起荆江亭即事 各维基文库单篇页实取；词：山谷集（四库全书本）/词 卷实取（定风波、鹧鸪天、清平乐、虞美人、千秋岁并序等） | 通行本层；清明、鹧鸪天、清平乐存在异文，逐条 dispute 标注 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: huangtingjian
+
+profile:
+  courtesy_name: 鲁直
+  art_name: 山谷道人（晚号涪翁）
+  aliases: [黄鲁直, 黄山谷, 山谷先生]
+  gender: 男
+  ethnicity: ""
+  ancestry: 洪州分宁
+  birthplace: 洪州分宁（今江西修水）
+  death_place: 宜州（今广西宜山）
+  offices: [叶县尉, 北京国子监教授, 知太和县, 秘书省校书郎, 《神宗实录》检讨官, 著作佐郎, 集贤校理, 起居舍人, 秘书丞提点明道宫兼国史编修官, 涪州别驾黔州安置（贬）, 知太平州, 主管玉隆观（罢）]
+  fields: [文学, 艺术]
+  roles: [诗人, 书法家]
+  summary: 江西诗派开山之祖、苏门四学士之一，「点铁成金、夺胎换骨」的诗法宗师；书法列宋四家，与苏轼并称苏黄——一生以笃孝直辞立身，暮岁投荒而诗格愈老愈成。
+
+timeline:
+  # ── 阶段一：分宁少年 ──────────────────────────────
+  - stage: 分宁少年
+    stage_order: 1
+    title: 出生于洪州分宁
+    date:
+      text: "1045年"
+      year: 1045
+      precision: 约
+    place: 洪州分宁
+    summary: 黄庭坚生于洪州分宁。本传不载生年，仅记卒年六十一，学界据卒年1105倒推定为1045年生，从通说。
+    confidence: 存疑
+    dispute: 生年系由本传「年六十一」与卒年1105倒推的通说，非正史明载。
+    source_ids: [src-songshi-vol444]
+  - stage: 分宁少年
+    stage_order: 2
+    title: 幼警悟，读书数过辄成诵
+    date:
+      text: 幼年时期，具体年代不详
+      precision: 未知
+    place: 分宁
+    summary: 本传记其幼警悟，读书数过辄成诵；舅李常过其家，取架上书问之，无不通，常惊以为一日千里——过目成诵的神童之名由此而起。
+    source_ids: [src-songshi-vol444]
+
+  # ── 阶段二：叶县入仕 ──────────────────────────────
+  - stage: 叶县入仕
+    stage_order: 3
+    title: 举进士，调叶县尉
+    date:
+      text: 约1067年
+      year: 1067
+      precision: 约
+    place: 叶县
+    summary: 举进士第，调叶县尉，仕途起点在畿县尉职。及第年份正史无载，从通行治平四年（1067）说。
+    confidence: 存疑
+    dispute: 本传仅记举进士调叶县尉而不系年，及第年份系学界通行推定。
+    source_ids: [src-songshi-vol444]
+  - stage: 叶县入仕
+    stage_order: 4
+    title: 举四京学官第一，教授北京国子监
+    date:
+      text: 熙宁初，约1068年起
+      year: 1068
+      precision: 约
+    place: 北京大名府
+    summary: 熙宁初举四京学官，试文定为优等，除教授北京国子监；留守文彦博才之，留再任。得元老旧臣赏识，学官声望日隆。
+    source_ids: [src-songshi-vol444]
+
+  # ── 阶段三：苏门交游与太和治县 ────────────────────
+  - stage: 苏门与太和
+    stage_order: 5
+    title: 苏轼见其诗文，叹为超轶绝尘
+    date:
+      text: 相识年代正史无载，约熙宁末元丰初
+      year: 1078
+      precision: 约
+    place: ""
+    summary: 苏轼尝见其诗文，以为超轶绝尘，独立万物之表，世久无此作，由是声名始震。此为本传明载的苏黄订交起点。
+    confidence: 存疑
+    dispute: 苏轼读其诗文的场合与年份正史无载，学界多系于元丰初苏轼知徐州前后，此处仅作约估。
+    source_ids: [src-songshi-vol444]
+  - stage: 苏门与太和
+    stage_order: 6
+    title: 知太和县，盐政独不扰民
+    date:
+      text: 约1080—1084年间
+      year: 1080
+      range_end: 1084
+      precision: 范围
+    place: 太和县
+    summary: 知太和县，以平易治。时课颁盐筴，诸县争占多数，太和独否，吏不悦，而民安之——宁可忤上官也不以苛政病民。
+    confidence: 存疑
+    dispute: 知太和的起讫年份据职历推定；名作登快阁通行系于此期。
+    source_ids: [src-songshi-vol444]
+  - stage: 苏门与太和
+    stage_order: 7
+    title: 监德州德平镇
+    date:
+      text: 约1085年前后
+      year: 1085
+      precision: 约
+    place: 德州德平镇
+    summary: 名作寄黄几复诗题自注乙丑年德平镇作，可知元丰八年（1085）其在监德州德平镇任上，与旧友黄几复南北相望而作此名篇。
+    confidence: 存疑
+    dispute: 监德平镇一职正史本传无载，据作品自注与职历考订补入，年份以诗题乙丑（1085）为据。
+    source_ids: [src-shanGuji]
+
+  # ── 阶段四：馆阁修实录 ────────────────────────────
+  - stage: 馆阁修实录
+    stage_order: 8
+    title: 哲宗立，召为校书郎、《神宗实录》检讨官
+    date:
+      text: 约1086年
+      year: 1086
+      precision: 约
+    place: 汴京
+    summary: 哲宗立，召为校书郎、《神宗实录》检讨官，与秦观等同入馆阁系统，苏门人物一时齐聚朝廷。
+    source_ids: [src-songshi-vol444]
+  - stage: 馆阁修实录
+    stage_order: 9
+    title: 迁著作佐郎，加集贤校理
+    date:
+      text: 约1087年
+      year: 1087
+      precision: 约
+    place: 汴京
+    summary: 踰年迁著作佐郎，加集贤校理，馆职递进。
+    source_ids: [src-songshi-vol444]
+  - stage: 馆阁修实录
+    stage_order: 10
+    title: 《实录》成，擢起居舍人
+    date:
+      text: 约1091年前，《实录》进呈后
+      year: 1091
+      precision: 约
+    place: 汴京
+    summary: 《神宗实录》成书，擢起居舍人，位列近侍记录皇帝言行。此为其仕途顶点，亦埋下日后实录文字狱祸根。
+    confidence: 存疑
+    dispute: 实录成书与擢起居舍人的确切年份正史不载，从元祐后期通说。
+    source_ids: [src-songshi-vol444]
+  - stage: 馆阁修实录
+    stage_order: 11
+    title: 丁母艰，庐墓哀毁几殆
+    date:
+      text: 约1091—1094年间
+      year: 1091
+      range_end: 1094
+      precision: 范围
+    place: 汴京一带
+    summary: 母病弥年，昼夜视颜色，衣不解带；及亡，庐墓下，哀毁得疾几殆。本传特书性笃孝，孝行为其平生底色。
+    confidence: 存疑
+    dispute: 居丧起讫年份据服除后任职次序推定。
+    source_ids: [src-songshi-vol444]
+
+  # ── 阶段五：贬黔戎 ──────────────────────────────
+  - stage: 贬黔戎
+    stage_order: 12
+    title: 绍圣初，出知宣州改鄂州
+    date:
+      text: 约1094年
+      year: 1094
+      precision: 约
+    place: 宣州、鄂州
+    summary: 绍圣初，出知宣州，改鄂州。新党复起清算元祐旧臣，章惇蔡卞与其党论《实录》多诬，前史官被分居畿邑以待问。
+    source_ids: [src-songshi-vol444]
+  - stage: 贬黔戎
+    stage_order: 13
+    title: 铁龙爪诘问，直辞对曰真儿戏耳
+    date:
+      text: 约1094—1095年之间
+      year: 1094
+      range_end: 1095
+      precision: 范围
+    place: 陈留等畿邑
+    summary: 千余条实录文字摘示质问，考阅悉有据依，所余才三十二事；庭坚所书「用铁龙爪治河，有同儿戏」首被追问，对曰庭坚时官北都，尝亲见之，真儿戏耳。凡有问皆直辞以对，闻者壮之——遂贬涪州别驾、黔州安置。
+    source_ids: [src-songshi-vol444]
+  - stage: 贬黔戎
+    stage_order: 14
+    title: 黔州安置，讲学不倦
+    date:
+      text: 约1095—1099年之间
+      year: 1095
+      range_end: 1099
+      precision: 范围
+    place: 黔州
+    summary: 万里投荒而泊然不以迁谪介意，蜀士慕从之游，讲学不倦，凡经指授，下笔皆可观。名作定风波次高左藏使君韵即黔中重阳所作。
+    confidence: 存疑
+    dispute: 到黔离黔年份据贬窜次第推定。
+    source_ids: [src-songshi-vol444, src-shanGuji]
+  - stage: 贬黔戎
+    stage_order: 15
+    title: 以亲嫌移戎州
+    date:
+      text: 约1099—1100年之间
+      year: 1099
+      range_end: 1100
+      precision: 范围
+    place: 戎州
+    summary: 外甥婚嫁触亲嫌避籍，再移戎州安置。贬所更远更久，而讲学咏歌自若，蜀中从游者益众。
+    confidence: 存疑
+    dispute: 本传仅记以亲嫌移戎州而不系年，移置年份据行迹推定。
+    source_ids: [src-songshi-vol444]
+
+  # ── 阶段六：晚年宜州 ──────────────────────────────
+  - stage: 宜州晚年
+    stage_order: 16
+    title: 徽宗即位，起复皆辞不行
+    date:
+      text: "1100年"
+      year: 1100
+      precision: 约
+    place: 戎州、鄂州一带
+    summary: 徽宗即位，起监鄂州税，签书宁国军判官，知舒州，以吏部员外郎召，皆辞不行。放还东归途中经岳阳作雨中登岳阳楼望君山，去国十年老尽少年心之句已见虞美人宜州见梅作。
+    confidence: 存疑
+    dispute: 辞不起诸命与东归行程的逐年路线据文集系年推定。
+    source_ids: [src-songshi-vol444, src-shanGuji]
+  - stage: 宜州晚年
+    stage_order: 17
+    title: 知太平州九日而罢
+    date:
+      text: 约1102年
+      year: 1102
+      precision: 约
+    place: 太平州
+    summary: 丐郡得知太平州，至之九日，罢主管玉隆观。到官九日即遭罢免，为生平宦海最短的任期，党祸迫在眉睫。
+    confidence: 存疑
+    dispute: 罢太平州年份正史无载，据职历通说系于崇宁元年（1102）。
+    source_ids: [src-songshi-vol444]
+  - stage: 宜州晚年
+    stage_order: 18
+    title: 承天院记案，除名羁管宜州
+    date:
+      text: 约1102—1103年之间
+      year: 1102
+      range_end: 1103
+      precision: 范围
+    place: 荆南、宜州
+    summary: 在河北与赵挺之有微隙，挺之执政，转运判官陈举承风旨，上其所作《荆南承天院记》，指为幸灾，复除名、羁管宜州——一篇游记竟成罪状，贬窜至此极矣。
+    confidence: 存疑
+    dispute: 除名羁管的精确年份正史无载，学界有崇宁二年（1103）抵宜州等异说，此处作范围表达。
+    source_ids: [src-songshi-vol444]
+  - stage: 宜州晚年
+    stage_order: 19
+    title: 卒于宜州，年六十一
+    date:
+      text: "1105年"
+      year: 1105
+      precision: 精确
+    place: 宜州
+    summary: 羁管三年，徙永州，未闻命而卒，年六十一。一代宗师殁于岭外瘴乡；卒年与享年闭合，反推生年1045。
+    source_ids: [src-songshi-vol444]
+
+works:
+  - work_id: ji-huang-jifu
+    title: 寄黄几复
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 元丰八年（1085），诗题自注乙丑年德平镇作
+      year: 1085
+      precision: 精确
+    place: 德州德平镇
+    context: 我居北海君南海，寄雁传书谢不能——与少年旧友黄几复一在齐鲁海滨一在岭南，雁不能传书；颔联桃李春风一杯酒江湖夜雨十年灯为千古名句。
+    attribution: 确凿
+    excerpt: 桃李春风一杯酒，江湖夜雨十年灯。……想得读书头已白，隔溪猿哭瘴烟藤。
+    text_display: excerpt
+    themes: [怀旧, 友朋, 江湖流落]
+    influence: 桃李春风一杯酒江湖夜雨十年灯被视为以熟语炼成的绝唱，是宋诗以故为新主张的最佳注脚。
+    source_ids: [src-shanGuji]
+
+  - work_id: deng-kuaige
+    title: 登快阁
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 约元丰五年（1082）知太和县时作
+      year: 1082
+      precision: 约
+    place: 太和县快阁
+    context: 痴儿了却公家事，快阁东西倚晚晴；落木千山天远大澄江一道月分明一联洗尽铅华，是其山水诗的最高境界。
+    attribution: 确凿
+    excerpt: 痴儿了却公家事，快阁东西倚晚晴。落木千山天远大，澄江一道月分明。……万里归船弄长笛，此心吾与白鸥盟。
+    text_display: excerpt
+    themes: [登览, 归隐之志, 澄澈之境]
+    influence: 公认的黄诗第一名篇，历代选家必收；尾联白鸥盟成为士大夫归隐心结的经典意象。
+    confidence: 存疑
+    dispute: 系年通行元丰五年太和任上说，亦有异说；方回瀛奎律髓卷一收录并加评点，为历代批评重要载体。
+    source_ids: [src-shanGuji]
+
+  - work_id: qingming-huangtingjian
+    title: 清明
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 佳节清明桃李笑，野田荒冢只生愁——以乐景衬哀景；颈联人乞祭余骄妾妇士甘焚死不公侯用两则典故对照贤愚，结句满眼蓬蒿共一丘归于齐物之叹。
+    attribution: 确凿
+    excerpt: 佳节清明桃李笑，野田荒冢只生愁。……贤愚千载知谁是，满眼蓬蒿共一丘。
+    text_display: excerpt
+    themes: [清明, 生死之思, 用典]
+    influence: 长期入选传统蒙学与大众读本千家诗（卷四），为其传播最广的节令诗。
+    confidence: 存疑
+    dispute: 维基文库所据千家诗本作野田荒隴紙生愁，纸字显系形误，通行本作荒冢只生愁；荒陇与荒冢、纸与只均有版本差异，此处从通行本并标注异文。
+    source_ids: [src-shanGuji]
+
+  - work_id: mu-tong-shi
+    title: 牧童诗
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 传为七岁时作，年代不可确考
+      precision: 未知
+    place: ""
+    context: 多少长安名利客，机关用尽不如君——以牧童短笛反讽长安名利场，机锋早熟。
+    attribution: 存疑
+    excerpt: 骑牛远远过前村，短笛横吹隔陇闻。多少长安名利客，机关用尽不如君。
+    text_display: full
+    themes: [讽喻, 名利之辨]
+    influence: 流传极广的题画式小诗，常被视为山谷早慧的证据。
+    confidence: 有争议
+    dispute: 七岁作之说出桐江诗话世传之语，属笔记层传闻；苕溪渔隐丛话引桐江诗话并存录，且该诗另见托名于他处（如后世小说引为他作），著作权难成定论，故标有争议。
+    source_ids: [src-shanGuji]
+
+  - work_id: yuzhong-dengyueyanglou-wangjunshan
+    title: 雨中登岳阳楼望君山（其一）
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约1102年放还东归途经岳阳时
+      year: 1102
+      precision: 约
+    place: 岳阳楼
+    context: 投荒万死鬓毛斑，生入瞿塘滟滪关——历尽贬谪侥幸生还，未到江南先一笑，岳阳楼上对君山；劫后余生的旷达一啸。
+    attribution: 确凿
+    excerpt: 投荒万死鬓毛斑，生入瞿塘滟滪关。未到江南先一笑，岳阳楼上对君山。
+    text_display: excerpt
+    themes: [贬谪生还, 旷达, 山水]
+    influence: 晚年诗风愈老愈苍的代表，投荒万死与先一笑的对撞被视为绝境重生的千古名句。
+    confidence: 存疑
+    dispute: 东归途经岳阳的具体年份据行迹推定，约1102年前后。
+    source_ids: [src-shanGuji]
+
+  - work_id: bingqi-jingjiangting-jishi
+    title: 病起荆江亭即事（其二）
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 约1102年寓居荆南时
+      year: 1102
+      precision: 约
+    place: 荆南
+    context: 闭门觅句陈无己，对客挥毫秦少游——以八字速写两位挚友的创作姿态，成为陈师道秦观的经典画像；尾联正字不知温饱未，西风吹泪古藤州哭悼客死藤州的秦观。
+    attribution: 确凿
+    excerpt: 闭门觅句陈无己，对客挥毫秦少游。正字不知温饱未，西风吹泪古藤州。
+    text_display: excerpt
+    themes: [友朋追怀, 论诗绝句笔法]
+    influence: 闭门觅句对客挥毫自此成为陈秦二人的定型评语，开后来论诗绝句体式的先声。
+    confidence: 存疑
+    dispute: 系年从崇宁初寓荆南通说。
+    source_ids: [src-shanGuji]
+
+  - work_id: ding-fengbo-ci-gaozuocang
+    title: 定风波·次高左藏使君韵
+    alt_titles: [定风波·万里黔中一漏天]
+    genre: 词
+    date:
+      text: 黔州安置期间重阳作，约1097—1098年
+      year: 1097
+      range_end: 1098
+      precision: 范围
+    place: 黔州
+    context: 万里黔中一漏天，屋居终日似乘船——瘴雨连绵的贬所里，却写出莫笑老翁犹气岸的倔强，戏马台前追两谢，驰射风清犹拍古人肩。
+    attribution: 确凿
+    excerpt: 万里黔中一漏天，屋居终日似乘船。……莫笑老翁犹气岸，君看，几人白发上华颠。
+    text_display: excerpt
+    themes: [贬谪, 倔强旷达, 重阳]
+    influence: 贬谪词中以气骨胜的代表作，老翁犹气岸为其黔中人格写照。
+    confidence: 存疑
+    dispute: 系年框定在黔中期间，确切重阳无考。
+    source_ids: [src-shanGuji]
+
+  - work_id: qingping-le-chungui-hechu
+    title: 清平乐·晚春
+    alt_titles: [清平乐·春归何处]
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 春归何处？寂寞无行路——向春天发痴问，唤取归来同住；问取黄鹂而百啭无人能解，因风飞过蔷薇，以无理之趣写惜春痴情。
+    attribution: 确凿
+    excerpt: 春归何处？寂寞无行路。若有人知春去处，唤取归来同住。……百啭无人能解，因风飞过蔷薇。
+    text_display: excerpt
+    themes: [惜春, 痴语, 无理而妙]
+    influence: 其小令中最脍炙人口的一首，春归何处成为送春题材的经典发问。
+    confidence: 存疑
+    dispute: 结句文本有异：维基文库白香词谱箋本作因风飞过蔷薇，四库本山谷集词作因风吹过蔷薇，一字之差各有所据。
+    source_ids: [src-shanGuji]
+
+  - work_id: zhegu-tian-huangju-zhitou
+    title: 鹧鸪天·黄菊枝头生晓寒
+    alt_titles: []
+    genre: 词
+    date:
+      text: "1100年，戎州席上"
+      year: 1100
+      precision: 精确
+    place: 戎州
+    context: 小序云座中有眉山隐客史应之和前韵，即席答之。醉里簪花倒着冠、黄花白发相牵挽，付与时人冷眼看——以狂态傲世，是晚年风骨的自塑。
+    attribution: 确凿
+    excerpt: 黄菊枝头生晓寒，人生莫放酒杯乾。……黄花白发相牵挽，付与时人冷眼看。
+    text_display: excerpt
+    themes: [狂傲, 秋兴, 冷眼处世]
+    influence: 与史应之和韵唱酬的名场，醉里簪花倒着冠成为后世画家反复图写的意象。
+    confidence: 存疑
+    dispute: 维基文库单篇页作身建在且加餐無裙歌板盡清歡付與時人冷眼看，四库本山谷集词作身健在且加飡舞裙歌板盡情歡付與傍人冷眼看，健／建、舞／無、傍／时有明显异文，从四库本并标注。
+    source_ids: [src-shanGuji]
+
+  - work_id: yumeiren-yizhou-jianmei
+    title: 虞美人·宜州见梅作
+    alt_titles: []
+    genre: 词
+    date:
+      text: 约1105年初春，宜州羁管中
+      year: 1105
+      precision: 约
+    place: 宜州
+    context: 天涯也有江南信，梅破知春近——岭外绝域忽见梅花，结拍平生个里愿杯深，去国十年老尽少年心，十年贬谪的心史一笔收束。
+    attribution: 确凿
+    excerpt: 天涯也有江南信，梅破知春近。……平生个里愿杯深，去国十年老尽少年心。
+    text_display: excerpt
+    themes: [贬谪, 梅花, 心史]
+    influence: 绝笔期词作的代表作，去国十年老尽少年心为其晚年心境的定谳之句。
+    confidence: 存疑
+    dispute: 系年从宜州最后一年早春说，亦有作于赴宜途中之异说。
+    source_ids: [src-shanGuji]
+
+  - work_id: qianqiusui-zhuihe-qinshaoyou
+    title: 千秋岁·追和秦少游
+    alt_titles: [千秋岁·苑边花外]
+    genre: 词
+    date:
+      text: 崇宁甲申（1104）道过衡阳
+      year: 1104
+      precision: 精确
+    place: 衡阳
+    context: 词序自记：少游得谪尝梦中作词云醉卧古藤阴下了不知南北，竟以元符庚辰死于藤州光华亭上；崇宁甲申庭坚窜宜州道过衡阳，览其遗墨，始追和其千秋岁词。飞骑轧鸣珂碎齐歌云绕扇赵舞风回带忆当年同朝之乐，结以洒泪谁能会，醉卧藤阴盖，人已去词空在——苏门凋零的挽歌。
+    attribution: 确凿
+    excerpt: 苑边花外，记得同朝退。……人已去，词空在……重感慨，波涛万顷珠沉海。
+    text_display: excerpt
+    themes: [悼亡, 苏门情谊, 今昔之感]
+    influence: 追和秦观千秋岁的名作，词序本身即秦观临终谶语的原始文献，为苏门交谊最沉痛的见证。
+    source_ids: [src-shanGuji]
+
+footprints:
+  - name: 洪州分宁
+    modern_name: 江西省九江市修水县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 1045年生，幼年在此度过
+      year: 1045
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    confidence: 存疑
+    dispute: 生年系据卒年六十一倒推的通说。
+    source_ids: [src-songshi-vol444]
+  - name: 叶县
+    modern_name: 河南省平顶山市叶县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1067年登第后调叶县尉
+      year: 1067
+      precision: 约
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 及第与赴任年份正史无载，系通行推定。
+    source_ids: [src-songshi-vol444]
+  - name: 北京大名府
+    modern_name: 河北省邯郸市大名县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 熙宁初教授北京国子监，留再任
+      year: 1068
+      range_end: 1072
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任职起讫年份据熙宁初与再任记载推定。
+    source_ids: [src-songshi-vol444]
+  - name: 太和县
+    modern_name: 江西省吉安市泰和县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1080—1084年知太和县，登快阁
+      year: 1080
+      range_end: 1084
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 知县起讫与登快阁作年均系推定。
+    source_ids: [src-songshi-vol444]
+  - name: 德州德平镇
+    modern_name: 山东省德州市德平镇（今属临邑县境）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 元丰八年监德平镇，作寄黄几复
+      year: 1085
+      precision: 精确
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 此职本传无载，据寄黄几复诗题自注乙丑年德平镇作考补。
+    source_ids: [src-shanGuji]
+  - name: 汴京
+    modern_name: 河南省开封市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1086—1094年任职秘书省实录局
+      year: 1086
+      range_end: 1094
+      precision: 范围
+    kind: 任职
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-songshi-vol444]
+  - name: 黔州
+    modern_name: 重庆市彭水苗族土家族自治县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1095—1099年贬涪州别驾黔州安置
+      year: 1095
+      range_end: 1099
+      precision: 范围
+    kind: 谪迁
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 到黔年份据绍圣贬窜次第推定。
+    source_ids: [src-songshi-vol444, src-shanGuji]
+  - name: 戎州
+    modern_name: 四川省宜宾市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1099—1100年以亲嫌移戎州
+      year: 1099
+      range_end: 1100
+      precision: 范围
+    kind: 谪迁
+    route_order: 8
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 移置年份正史无载，据行迹推定。
+    source_ids: [src-songshi-vol444]
+  - name: 荆南
+    modern_name: 湖北省荆州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1102年放还途中寓居，病起荆江亭即事与承天院记均作于此期
+      year: 1102
+      precision: 约
+    kind: 居住
+    route_order: 9
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 寓居年份据承天院记案发时序推定。
+    source_ids: [src-songshi-vol444, src-shanGuji]
+  - name: 太平州
+    modern_name: 安徽省马鞍山市当涂县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1102年知太平州，至官九日而罢
+      year: 1102
+      precision: 约
+    kind: 任职
+    route_order: 10
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 到官九日即罢，年份系通说崇宁元年。
+    source_ids: [src-songshi-vol444]
+  - name: 宜州
+    modern_name: 广西壮族自治区河池市宜州区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1103年抵宜州羁管，1105年卒于此
+      year: 1103
+      range_end: 1105
+      precision: 范围
+    kind: 逝世
+    route_order: 11
+    memorial_only: false
+    confidence: 存疑
+    dispute: 抵宜年份正史无载，通说崇宁二年冬除名三年抵宜州；卒年1105正史有载。
+    source_ids: [src-songshi-vol444, src-shanGuji]
+
+relations:
+  - relation_type: 师承
+    target_id: sushi
+    direction: 双向
+    period:
+      text: 元丰间苏轼称赏其诗文始知名，至1101年苏轼卒
+      year: 1080
+      range_end: 1101
+      precision: 范围
+    evidence: 本传明载蘇軾嘗見其詩文以為超軼絕塵獨立萬物之表世久無此作由是聲名始震；又載與張耒晁補之秦觀俱游蘇軾門天下稱為四學士；軾為侍從時舉以自代其詞有瓌偉之文妙絕當世孝友之行追配古人之語其重之也如此。
+    source_ids: [src-songshi-vol444]
+
+  - relation_type: 挚友
+    target_id: qinguan
+    direction: 双向
+    period:
+      text: 元祐同朝共事，至1100年秦观卒
+      year: 1086
+      range_end: 1100
+      precision: 范围
+    evidence: 本传载二人俱游苏轼门天下称为四学士；病起荆江亭即事以闭门觅句陈无己对客挥毫秦少游并称陈秦，尾联西风吹泪古藤州哭秦观客死；崇宁甲申道过衡阳览秦观遗墨作千秋岁追和，词序自记其事。
+    source_ids: [src-songshi-vol444, src-shanGuji]
+
+  - relation_type: 思想影响
+    target_id: dufu
+    direction: 单向
+    period:
+      text: 后世对其诗学谱系的公论
+      year: 1105
+      precision: 约
+    evidence: 本传引陈师道语谓其诗得法杜甫学甫而不为者；江西诗派尊杜为一祖、以庭坚为一宗，即由此脉而来。
+    confidence: 存疑
+    dispute: 与杜甫无现实交集，此为诗学承传关系而非人际交往；一祖三宗之说出自方回瀛奎律髓评点（公版文献，原文未逐条实取，暂以中立转述著录）。
+    source_ids: [src-songshi-vol444]
+
+reception:
+  - era: 同时代
+    evaluator: 苏轼
+    quote: 超轶绝尘，独立万物之表，世久无此作。
+    text_display: excerpt
+    comment: 本传直引的苏轼评语，是苏黄订交的起点，也把黄庭坚一举推入第一流诗人之列。
+    source_ids: [src-songshi-vol444]
+  - era: 同时代
+    evaluator: 苏轼
+    quote: 瓌伟之文，妙绝当世；孝友之行，追配古人。
+    text_display: excerpt
+    comment: 本传载轼为侍从时举庭坚自代的荐词，才与行并举，其重之也如此。
+    source_ids: [src-songshi-vol444]
+  - era: 同时代
+    evaluator: 陈师道及天下公论
+    quote: 其诗得法杜甫，学甫而不为者。……蜀、江西君子以庭坚配轼，故称苏、黄。
+    text_display: excerpt
+    comment: 本传引陈师道论定其诗学渊源，又记当时人以之配苏轼并称苏黄，生前已是诗坛并峙的双峰。
+    source_ids: [src-songshi-vol444]
+  - era: 历代批评
+    evaluator: 方回《瀛奎律髓》及江西诗派论
+    quote: ""
+    text_display: none
+    comment: 宋末元初方回瀛奎律髓倡一祖三宗之说，以杜甫为一祖、黄庭坚与陈师道陈与义为三宗，江西诗派奉庭坚为开山之祖；点铁成金夺胎换骨的诗法表述见于其诗文与宋人诗话转相称引。上述均为公版古籍层面的中立转述，具体评点原文未经逐条实取，暂不录引文，待登记瀛奎律髓来源后补核。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦江西诗派诗法体系的建构与局限、苏门交游与党争、山谷诗编年与版本（山谷集内外集及山谷琴趣外篇系统）、书法宋四家的形成等议题；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 登快阁长期入选高校与中学语文选本，清明经千家诗进入蒙学传统，桃李春风一杯酒江湖夜雨十年灯成为国民级名句；教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中的黄庭坚形象多为苏轼故事的配角敷演，不作信史依据；网络传播集中于其书法（松风阁诗帖等）与名句，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-songshi-vol444, src-shanGuji]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。19条年谱（6阶段）、11首作品、11处足迹、3组关系（师承苏轼／友朋秦观／诗学渊源杜甫）、7层接受史（含近现代学术与影视网络占位）。全部生平事实实取自维基文库宋史卷444黄庭坚传原文；诗词文本实取自维基文库单篇页与四库本山谷集词卷。庄子得名传说本传无载未采信；清明鹧鸪天清平乐等异文逐条dispute标注；生年1045及第1067等推定项均已标存疑。"}

@@ -1,0 +1,747 @@
+# 李清照全景详卷（schema v1）
+# 史料分层审计表（李清照《宋史》无专传；本卷按四层著录——自述层/诗文层/宋人记载层/后世考证层；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 自述层：金石录后序（维基文库实取 https://zh.wikisource.org/wiki/金石錄後序_(李清照) ） | 诗文层（维基文库单篇页实取） | 宋人记载层 | 后世考证层 | 结论与置信 |
+# |---|---|---|---|---|---|
+# | 生年1084 | 「余建中辛巳始歸趙氏」（1101）＋「余自少陸機作賦之二年至過蘧瑗知非之兩歲三十四年之間」自述倒推 | — | — | 学界通说倒推 | 约1084确定口径（推定值，标dispute） |
+# | 卒年 | 无载 | — | — | 诸谱推定约1155 | 无确载→未知+dispute |
+# | 籍贯济南 | — | — | 维基文库作者页称齐州章丘人；历城说并行 | 章丘/历城异说至今并存 | 异说并录→dispute |
+# | 归赵氏与青州屏居 | 建中辛巳归赵氏、质衣市碑相国寺、屏居乡里十年、归来堂赌书泼茶「甘心老是鄉矣」 | — | — | 屏居起讫年份系学界据赵挺之卒年等推定 | 自述层主干确定；系年存疑 |
+# | 靖康南渡失散 | 靖康丙午侯守淄川、十二月金人陷青州十余屋煨烬、建炎丁未奔丧南来载书十五车、洪州陷书散、会稽卜居钟氏舍夜盗五簏、「今日忽閱此書如見故人」 | — | — | 行程细部系年诸谱小异 | 自述层主干确定 |
+# | 赵明诚卒 | 己酉池阳诀别「八月十八日遂不起取筆作詩絕筆而終」 | — | — | — | 确定（1129） |
+# | 再嫁张汝舟讼离 | 后序不载 | — | 建炎以來繫年要錄卷058实取：「右承奉郎監諸軍審計司張汝舟屬吏以汝舟妻李氏訟其妄增舉數入官也……李氏格非女能爲歌詞自號易安居士」（https://zh.wikisource.org/wiki/建炎以來繫年要錄/卷058 ；通行引文多误标卷88，卷88维基文库实取全文未见此条）；碧雞漫志卷2实取：「再嫁某氏訟而離之晚節流蕩無歸」（https://zh.wikisource.org/wiki/碧雞漫志/2 ）；苕溪渔隐丛话、云麓漫抄等所记互有出入 | 宋代已有辩诬之说；清代俞正燮系统考辨为辩诬说代表；现代学界两说并存 | 按「宋人记载层+后世争议」双层著录，不作定论亦不隐去→confidence 存疑 |
+# | 晚年流寓金华 | — | 打馬圖經（打马图序）实取：「易安居士亦自臨安泝流涉岩灘之險抵金華卜居陳氏第」（https://zh.wikisource.org/wiki/打馬圖經 ） | — | 武陵春双溪系年从金华说为主流 | 诗文层确定 |
+# | 金石录后序署年 | 「紹興二年玄黓歲壯月朔甲寅易安室題」 | — | — | — | 确定（1132自题） |
+# | 词论「别是一家」 | — | 詞論(李清照)实取：「乃知詞別是一家知之者少」（https://zh.wikisource.org/wiki/詞論_(李清照) ） | — | 词论真伪与完整性有学术讨论 | 文本层确定；争议注明 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: liqingzhao
+
+profile:
+  courtesy_name: ""
+  art_name: 易安居士
+  aliases: [李易安, 易安]
+  gender: 女
+  ethnicity: ""
+  ancestry: 济南（历城/章丘异说并存，详见 dispute）
+  birthplace: 济南
+  death_place: 无确载（通谓约终于临安，存疑）
+  offices: []
+  fields: [文学]
+  roles: [词人]
+  summary: 婉约词宗，「易安体」的创立者；前半生赌书泼茶，后半生家国俱碎而词境愈深，兼有「生当作人杰」的巾帼之气。宋史无专传，生平第一手文献为其自撰金石录后序。
+
+timeline:
+  # ── 阶段一：济南少女与溪亭日暮 ────────────────────
+  - stage: 济南少女与溪亭日暮
+    stage_order: 1
+    title: 生于济南（章丘/历城异说）
+    date:
+      text: 约1084年
+      year: 1084
+      precision: 约
+    place: 济南
+    summary: 李清照生于齐州济南。生年非当时记载，系据金石录后序自述倒推——后序明言「余建中辛巳（1101）始归赵氏」，又自叙「三十四年之间忧患得失何其多」，与归嫁时年岁相合，学界通推约1084。
+    confidence: 存疑
+    dispute: 生年为据自述倒推的推定值，L1既有口径一致标注；籍贯济南境内历城、章丘两说并存，作者页从章丘说，本卷并录不改判。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 济南少女与溪亭日暮
+    stage_order: 2
+    title: 少女溪亭日暮，惊起一滩鸥鹭
+    date:
+      text: 约1099年前后，少女时期
+      year: 1099
+      precision: 约
+    place: 济南一带
+    summary: 如梦令·常记溪亭日暮自忆少女游冶：沉醉不知归路，误入藕花深处——兴致、酒意与野趣俱全的少女气象，是理解其前期词风的底色。
+    confidence: 存疑
+    dispute: 词无自注年代，维基文库单篇页标注北宋元符二年（1099），系编者推定；创作地亦只能框定在济南时期。
+    source_ids: [src-licizhaoji]
+  - stage: 济南少女与溪亭日暮
+    stage_order: 3
+    title: 绿肥红瘦传诵，诗名初起
+    date:
+      text: 北宋末年，具体年代不详
+      precision: 未知
+    place: ""
+    summary: 如梦令·昨夜雨疏风骤一出，「绿肥红瘦」即为人激赏。宋人记载层：胡仔苕溪渔隐丛话称近时妇人能文词如李易安颇多佳句如云绿肥红瘦此语甚新（今见花菴词选等转引），是其生前已获词名的同时代证据。
+    confidence: 存疑
+    dispute: 苕溪渔隐评语原文未见独立页面，本条经唐宋諸賢绝妙词选等转引实取，属宋人记载层的转引证据。
+    source_ids: [src-licizhaoji]
+
+  # ── 阶段二：归赵氏与青州屏居 ──────────────────────
+  - stage: 归赵氏与青州屏居
+    stage_order: 4
+    title: 建中辛巳归赵氏
+    date:
+      text: "1101年"
+      year: 1101
+      precision: 精确
+    place: 汴京
+    summary: 后序自述：余建中辛巳，始归赵氏。时先君作礼部员外郎，丞相作吏部侍郎，侯年二十一，在太学作学生。十八岁嫁二十一岁的太学生赵明诚，两家父祖同朝，此为她一生叙事的起点。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 归赵氏与青州屏居
+    stage_order: 5
+    title: 质衣市碑相国寺，葛天氏之民
+    date:
+      text: "1101—1102年之间"
+      year: 1101
+      range_end: 1102
+      precision: 范围
+    place: 汴京相国寺
+    summary: 赵、李族寒，素贫俭。每朔望谒告出，质衣取半千钱，步入相国寺，市碑文果实归；相对展玩咀嚼，自谓葛天氏之民也——典衣买碑文的清贫之乐，是她亲笔写下的新婚图景。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 归赵氏与青州屏居
+    stage_order: 6
+    title: 徐熙牡丹图二十万钱，留信宿而还之
+    date:
+      text: 崇宁间
+      year: 1102
+      range_end: 1106
+      precision: 范围
+    place: 汴京
+    summary: 后序记崇宁间有人持徐熙牡丹图求钱二十万，夫妇留信宿计无所出而还之，相向惋怅者数日。收藏之癖已成，而财力不逮，自述细节宛然。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 归赵氏与青州屏居
+    stage_order: 7
+    title: 屏居青州十年，归来堂赌书泼茶
+    date:
+      text: 约1107—1121年之间
+      year: 1107
+      range_end: 1121
+      precision: 范围
+    place: 青州
+    summary: 后屏居乡里十年……每饭罢坐归来堂烹茶，指堆积书史言某事在某书某卷第几页第几行，以中否角胜负为饮茶先后，中即举杯大笑至茶倾覆怀中反不得饮而起。甘心老是乡矣——赌书泼茶成为中国文人夫妇生活的千古典范意象。
+    confidence: 存疑
+    dispute: 屏居起讫年份系学界据崇宁间政局与赵挺之身故等推定，后序仅言十年不系年。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 归赵氏与青州屏居
+    stage_order: 8
+    title: 连守两郡，夜尽一烛勘校题跋
+    date:
+      text: 约1121—1126年之间
+      year: 1121
+      range_end: 1126
+      precision: 范围
+    place: 莱州、淄州
+    summary: 后序：连守两郡，竭其俸入以事铅椠。每获一书即同共勘校整集签题……夜尽一烛为率。故能纸札精致字画完整冠诸收书家。莱淄二州守郡时期是赵氏金石书画收藏的鼎盛期，亦是夫妻同校共跋的最后安稳岁月。
+    confidence: 存疑
+    dispute: 两郡通指莱州淄州，起讫年份据职历推定。
+    source_ids: [src-jinshilu-houxu]
+
+  # ── 阶段三：靖康之变与南渡失散 ────────────────────
+  - stage: 靖康之变与南渡失散
+    stage_order: 9
+    title: 靖康丙午，侯守淄川，闻金人犯京师
+    date:
+      text: "1126年"
+      year: 1126
+      precision: 精确
+    place: 淄川
+    summary: 后序：至靖康丙午岁，侯守淄川。闻金人犯京师，四顾茫然，盈箱溢箧且恋恋且怅怅，知其必不为己物矣——盛世收藏的丧钟在靖康元年敲响。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 靖康之变与南渡失散
+    stage_order: 10
+    title: 建炎丁未奔太夫人丧南来，载书十五车
+    date:
+      text: "1127年春三月"
+      year: 1127
+      precision: 精确
+    place: 汴京—建康一线
+    summary: 建炎丁未春三月奔太夫人丧南来。长物不能尽载，屡减去尚载书十五车，连舻渡淮又渡江至建康——南渡之初，十五车书画金石已是拣了又拣的家底。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 靖康之变与南渡失散
+    stage_order: 11
+    title: 十二月金人陷青州，十余屋书册什物皆煨烬
+    date:
+      text: "1127年十二月"
+      year: 1127
+      precision: 精确
+    place: 青州故第
+    summary: 青州故第尚锁书册什物用屋十余间，期明年春再具舟载之。十二月金人陷青州，凡所谓十余屋者已皆为煨烬矣——留在故乡的大半收藏一夜焚尽。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 靖康之变与南渡失散
+    stage_order: 12
+    title: 明诚起复知建康府
+    date:
+      text: "1128年秋九月"
+      year: 1128
+      precision: 精确
+    place: 建康
+    summary: 后序：建炎戊申秋九月，侯起复知建康府。己酉春三月罢。赵明诚复起守建康，李清照随寓江宁，此期她有踏雪寻诗等传闻行迹，正事则以后序为纲。
+    confidence: 存疑
+    dispute: 起复罢郡月份从后序纪年；随寓细节正史无载。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 靖康之变与南渡失散
+    stage_order: 13
+    title: 池阳诀别与建康丧变
+    date:
+      text: "1129年六月至八月"
+      year: 1129
+      precision: 精确
+    place: 池阳、建康
+    summary: 己酉夏五月明诚被旨知湖州，驻家池阳独赴召。六月十三日舍舟告别，葛衣岸巾精神如虎，遥嘱城中缓急先去辎重次衣被次书册，独宗器与身俱存亡。途中冒大暑感疾，她一日夜行三百里赶至，病已膏肓。八月十八日遂不起，取笔作诗绝笔而终——后序中最沉痛的一笔。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 靖康之变与南渡失散
+    stage_order: 14
+    title: 金人陷洪州，连舻渡江之书散为云烟
+    date:
+      text: "1129年冬十二月"
+      year: 1129
+      precision: 精确
+    place: 洪州
+    summary: 葬毕无所之，遣故吏送行李往投明诚妹婿于洪州。冬十二月金人陷洪州，所谓连舻渡江之书又散为云烟矣。仅剩病中把玩搬在卧内的少量卷轴写本，岿然独存。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 靖康之变与南渡失散
+    stage_order: 15
+    title: 追随行在：台、剡、黄岩入海、温、越、衢
+    date:
+      text: "1129—1130年之间"
+      year: 1129
+      range_end: 1130
+      precision: 范围
+    place: 台州、剡县、黄岩、温州、越州、衢州
+    summary: 上江不可往，遂往依敕局删定官之弟。到台台守已遁，之剡出睦弃衣被走黄岩雇舟入海奔行朝。时驻跸章安，从御舟海道之温又之越。庚戌十二月放散百官遂之衢——一个寡妇携书追着流亡朝廷跑的路线图。
+    confidence: 存疑
+    dispute: 南渡行程各段月份据后序干支推排，个别节点诸谱小异。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 靖康之变与南渡失散
+    stage_order: 16
+    title: 玉壶颁金之谣，欲赴外廷投进
+    date:
+      text: 约1130年
+      year: 1130
+      precision: 约
+    place: 越州、剡县一带
+    summary: 先侯疾亟时有张飞卿学士携玉壶过视，其实珉也。不知何人传道遂妄言有颁金之语——谣传她通敌献器。余大惶怖不敢言，尽将家中铜器等物欲赴外廷投进以自明，所藏再遭散佚。
+    confidence: 存疑
+    dispute: 颁金之谤仅见于其自述，事件始末无法旁证，惟自述本身即为第一手史料。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 靖康之变与南渡失散
+    stage_order: 17
+    title: 会稽钟氏舍，一夕穴壁负五簏去
+    date:
+      text: 约1130—1131年之间
+      year: 1130
+      range_end: 1131
+      precision: 范围
+    place: 会稽
+    summary: 在会稽卜居士民钟氏舍，忽一夕穴壁负五簏去——卧榻之下最后的五六簏书画砚墨被盗去大半，重立赏收赎仅追回十八轴。所谓岿然独存者乃十去其七八。盗悲一节，是南渡藏书聚散史的终点。
+    confidence: 存疑
+    dispute: 会稽卜居与被盗的年份据后序叙事次第与绍兴辛亥赴越行程推定。
+    source_ids: [src-jinshilu-houxu]
+
+  # ── 阶段四：再嫁讼离风波（宋人记载层） ────────────
+  - stage: 再嫁讼离风波
+    stage_order: 18
+    title: 再嫁张汝舟、讼而离之（宋人记载，历来有争）
+    date:
+      text: 绍兴二年（1132）前后
+      year: 1132
+      precision: 约
+    place: 临安
+    summary: 宋人记载层：《建炎以来系年要录》卷58载右承奉郎监诸军审计司张汝舟属吏，以汝舟妻李氏讼其妄增举数入官也，其后有司当汝舟私罪徒诏除名柳州编管，李氏格非女能为歌词自号易安居士；王灼碧鸡漫志称赵死再嫁某氏讼而离之晚节流荡无归。宋代记载互有出入，同时已有辩诬之说；清代俞正燮作系统考辨主辩诬说，近现代学界两说并存。
+    confidence: 存疑
+    dispute: 本卷按「宋人记载层+后世争议」双层著录，不作定论亦不隐去。要点：其一，李清照自述性文字（金石录后序及投内翰綦公崇礼启之外的自述）均不载此事；其二，系年要录讼事条目通行引文多标卷88，本次维基文库卷88实取全文未见该条，实际见于卷58（绍兴二年九月至十月），引用时应以卷58为准；其三，俞正燮辩诬说属清代考证层而非宋代证据，不能反向推翻宋人记载，只说明此案自古有争。
+    source_ids: [src-xinianyaolu-vol58]
+    # 出处待登记：建炎以来系年要录卷058、碧鸡漫志卷2 实取原文待主会话登记 sources.yaml 后补填 source_ids
+
+  # ── 阶段五：流寓临安金华与终老 ────────────────────
+  - stage: 流寓临安金华与终老
+    stage_order: 19
+    title: 绍兴二年壮月自题金石录后序
+    date:
+      text: "1132年八月"
+      year: 1132
+      precision: 精确
+    place: 杭州
+    summary: 今日忽阅此书如见故人……今手泽如新而墓木已拱悲夫！绍兴二年玄黓岁壮月朔甲寅易安室题。这篇自述性散文在她晚年整理旧稿时写成，三十四年忧患得失至此收束，是她生平叙事的第一手主干文献。
+    source_ids: [src-jinshilu-houxu]
+  - stage: 流寓临安金华与终老
+    stage_order: 20
+    title: 避乱金华，卜居陈氏第，泛舟双溪
+    date:
+      text: "1134—1135年之间"
+      year: 1134
+      range_end: 1135
+      precision: 范围
+    place: 金华
+    summary: 打马图序自述：易安居士亦自临安泝流涉岩滩之险抵金华卜居陈氏第，乍释舟楫而见轩窗意颇释然。同期武陵春风住尘香花已尽：只恐双溪舴艋舟载不动许多愁——金华时期的自述与词作互证其行迹心境。
+    confidence: 存疑
+    dispute: 避乱金华起讫从通说绍兴四年冬至五年前后；武陵春系年从金华说为主流，亦有异说。
+    source_ids: [src-licizhaoji]
+  - stage: 流寓临安金华与终老
+    stage_order: 21
+    title: 元宵怕见夜间出去，听人笑语
+    date:
+      text: 南宋初晚年后，创作年代无定说
+      precision: 未知
+    place: 临安
+    summary: 永遇乐·落日熔金写晚年元宵：如今憔悴风鬟霜鬓怕见夜间出去，不如向帘儿底下听人笑语——盛衰之感与流寓孤独凝于一词，后人多以其寄托今昔之痛。
+    confidence: 存疑
+    dispute: 创作年份无定说，或谓绍兴中居临安所作；刘辰翁和此词自注须溪自记乙亥元宵亦证其在南宋已广被共鸣。
+    source_ids: [src-licizhaoji]
+  - stage: 流寓临安金华与终老
+    stage_order: 22
+    title: 卒年无确载，约1155为推定
+    date:
+      text: 卒年不详，通说约1155年（推定上限）
+      precision: 未知
+    place: ""
+    summary: 李清照卒年史无明文，约1155系后世据陆游夫人孙氏幼时见其晚年欲以所学授孙氏女的记载等材料推定的上限，亦有他说。卒地亦无确载，通谓终于临安。
+    confidence: 存疑
+    dispute: 卒年无任何原始记载，约1155为推定值；晚年行迹及再嫁与否均有争议，全部沿用 L1 既有 dispute 口径。
+    source_ids: []
+
+works:
+  - work_id: ru-meng-ling-chang-ji-xi-ting
+    title: 如梦令·常记溪亭日暮
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 约1099年，少女时期（编者推定）
+      year: 1099
+      precision: 约
+    place: 济南一带
+    context: 少女溪亭醉游迷路的即景小品，争渡争渡惊起一滩鸥鹭，以动破静收束，天真烂漫。
+    attribution: 确凿
+    excerpt: 常记溪亭日暮，沉醉不知归路。兴尽晚回舟，误入藕花深处。争渡，争渡，惊起一滩鸥鹭。
+    text_display: full
+    themes: [少女情怀, 游冶, 夏景]
+    influence: 其前期词的名片之作，与昨夜雨疏风骤并为国民级如梦令双璧。
+    confidence: 存疑
+    dispute: 词作归属无争；系年与地点系编者推定。
+    source_ids: [src-licizhaoji]
+
+  - work_id: ru-meng-ling-zuo-ye-yu-shu
+    title: 如梦令·昨夜雨疏风骤
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 约1100年前后（编者推定）
+      year: 1100
+      precision: 约
+    place: ""
+    context: 卷帘人与海棠依旧的一问一答，绿肥红瘦四字以人拟花翻出新警，宋人已激赏此语甚新。
+    attribution: 确凿
+    excerpt: 昨夜雨疏风骤，浓睡不消残酒。试问卷帘人，却道海棠依旧。知否，知否？应是绿肥红瘦。
+    text_display: full
+    themes: [惜春, 伤花, 白描对话]
+    influence: 绿肥红瘦成为炼字典范，入选历代词选与语文教材。
+    source_ids: [src-licizhaoji]
+
+  - work_id: zui-hua-yin-bo-wu-nong-yun
+    title: 醉花阴·薄雾浓云愁永昼
+    alt_titles: [醉花阴·九日]
+    genre: 词（小令）
+    date:
+      text: 前期重阳寄外之作，创作年代无定说
+      precision: 未知
+    place: ""
+    context: 重阳怀人，结拍莫道不销魂帘卷西风人比黄花瘦，以菊喻人清瘦入骨。宋人笔记层流传元祐诸家苦思胜之不得的传说，不足为信史。
+    attribution: 确凿
+    excerpt: 薄雾浓云愁永昼，瑞脑销金兽。……莫道不销魂，帘卷西风，人比黄花瘦。
+    text_display: excerpt
+    themes: [重阳, 相思, 咏菊]
+    influence: 人比黄花瘦为千古名句，帘卷西风一句归属无争议。
+    confidence: 存疑
+    dispute: 词句归属确凿；宋人所传赵明诚闭门三日填词五十阕杂之而终不及的竞胜本事属笔记传说层，不可为据。
+    source_ids: [src-licizhaoji]
+
+  - work_id: yi-jian-mei-hong-ou-xiang-can
+    title: 一剪梅·红藕香残玉簟秋
+    alt_titles: [一剪梅·别愁]
+    genre: 词（小令）
+    date:
+      text: 前期别后相思之作，创作年代无定说
+      precision: 未知
+    place: ""
+    context: 此情无计可消除才下眉头却上心头，将无形相思写成可掬可挪之物，缠而不靡。
+    attribution: 确凿
+    excerpt: 花自飘零水自流。一种相思，两处闲愁。此情无计可消除，才下眉头，却上心头。
+    text_display: excerpt
+    themes: [离情, 相思]
+    influence: 才下眉头却上心头为婉约情语的教科书级范本。
+    source_ids: [src-licizhaoji]
+
+  - work_id: yu-jia-ao-tian-jie-yun-tao
+    title: 渔家傲·天接云涛连晓雾
+    alt_titles: [渔家傲·记梦]
+    genre: 词（长调记梦）
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 记梦境而直叩天语：我报路长嗟日暮学诗谩有惊人句，九万里风鹏正举——以庄周鹏翼自壮，豪气逼人，历来视为漱玉词中的别调。
+    attribution: 确凿
+    excerpt: 天接云涛连晓雾，星河欲转千帆舞。……我报路长嗟日暮，学诗谩有惊人句。九万里风鹏正举。风休住，蓬舟吹取三山去！
+    text_display: excerpt
+    themes: [记梦, 怀才之叹, 豪放气象]
+    influence: 清人梁启超谓其绝似苏辛派不类漱玉集中语，是论其词风多样性的常引证据（转述层）。
+    confidence: 确定
+    source_ids: [src-licizhaoji]
+
+  - work_id: sheng-sheng-man-xun-xun-mi-mi
+    title: 声声慢·寻寻觅觅
+    alt_titles: [声声慢·秋情]
+    genre: 词（慢词）
+    date:
+      text: 南渡后晚年之作，创作年代无定说
+      year: 1129
+      range_end: 1155
+      precision: 范围
+    place: ""
+    context: 开篇十四叠字寻寻觅觅冷冷清清凄凄惨惨戚戚，前无古人；这次第怎一个愁字了得，以口语收束万钧之愁，晚期词风的极诣。
+    attribution: 确凿
+    excerpt: 寻寻觅觅，冷冷清清，凄凄惨惨戚戚。……梧桐更兼细雨，到黄昏、点点滴滴。这次第，怎一个愁字了得！
+    text_display: excerpt
+    themes: [孤寂, 国破家亡之痛, 叠字艺术]
+    influence: 十四叠字为汉语音乐性的巅峰实验，历代和者畏其难，清人有独不敢次此篇恐为妇人所笑之语。
+    confidence: 存疑
+    dispute: 系年只能框定在南渡之后，确切年份地点无考；文本异文较多（晚来风急/晓来风急等）。
+    source_ids: [src-licizhaoji]
+
+  - work_id: wu-ling-chun-feng-zhu-chen-xiang
+    title: 武陵春·风住尘香花已尽
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 约绍兴四年冬至五年（1134—1135），避乱金华时期
+      year: 1134
+      range_end: 1135
+      precision: 范围
+    place: 金华双溪
+    context: 物是人非事事休欲语泪先流，结拍只恐双溪舴艋舟载不动许多愁，把愁写成有重量的实物，金华流寓的心境实录。
+    attribution: 确凿
+    excerpt: 风住尘香花已尽，日晚倦梳头。物是人非事事休，欲语泪先流。闻说双溪春尚好，也拟泛轻舟。只恐双溪舴艋舟，载不动许多愁。
+    text_display: full
+    themes: [流寓, 春愁, 家国之痛]
+    influence: 载不动许多愁为以虚为实的千古愁句。
+    confidence: 存疑
+    dispute: 系年从金华说为主流，亦有异说。
+    source_ids: [src-licizhaoji]
+
+  - work_id: yong-yu-le-luo-ri-rong-jin
+    title: 永遇乐·落日熔金
+    alt_titles: [永遇乐·元宵]
+    genre: 词（慢词）
+    date:
+      text: 南渡后晚年所作，创作年代无定说
+      precision: 未知
+    place: 临安
+    context: 以中州盛日的闺门三五对照如今的憔悴霜鬓，帘儿底下听人笑语，热闹中的自我放逐，南宋元宵词的压卷之作。
+    attribution: 确凿
+    excerpt: 落日熔金，暮云合璧，人在何处。……如今憔悴，风鬟霜鬓，怕见夜间出去。不如向、帘儿底下，听人笑语。
+    text_display: excerpt
+    themes: [元宵, 今昔之感, 流寓孤独]
+    influence: 南宋末刘辰翁读此词为之涕下并有和李清照永遇乐之作，足证其跨时代的感染力（转述层）。
+    confidence: 存疑
+    dispute: 创作年份无定说。
+    source_ids: [src-licizhaoji]
+
+  - work_id: wu-jiang-sheng-dang-zuo-ren-jie
+    title: 乌江（夏日绝句）
+    alt_titles: [夏日绝句]
+    genre: 诗（七绝）
+    date:
+      text: 建炎中南渡期间，具体年份无确考
+      year: 1127
+      range_end: 1129
+      precision: 范围
+    place: 乌江（项羽自刎处，今安徽和县，行旅说）
+    context: 生当作人杰死亦为鬼雄，至今思项羽不肯过江东。借项羽宁死不屈讽南宋朝廷仓皇南逃，巾帼之笔有金石之声。
+    attribution: 确凿
+    excerpt: 生当作人杰，死亦为鬼雄。至今思项羽，不肯过江东。
+    text_display: full
+    themes: [咏史, 讽刺时政, 节烈之气]
+    influence: 与其婉约词风构成巨大张力，是「巾帼不让须眉」人格形象的核心文本，入选教材层。
+    confidence: 存疑
+    dispute: 乌江行旅说系据诗题与其夫建康—江淮行迹推断（inferred），作年与是否过乌江均无原始记载。
+    source_ids: [src-licizhaoji]
+
+  - work_id: ci-lun-bie-shi-yi-jia
+    title: 词论
+    alt_titles: []
+    genre: 词学专论
+    date:
+      text: 晚年整理平生词学见解而成，作年无定说
+      precision: 未知
+    place: ""
+    context: 历数唐五代至本朝词家得失，直评柳永词语尘下、晏殊欧阳修苏轼皆句读不葺之诗尔又往往不协音律，提出词别是一家的本体主张——中国文学批评史上第一篇女性词学专论。
+    attribution: 确凿
+    excerpt: 乃知词别是一家，知之者少。
+    text_display: excerpt
+    themes: [词体独立, 音律本位, 批评胆识]
+    influence: 别是一家成为词体论的纲领性表述；其遍诋诸家的锋芒引发历代聚讼。
+    confidence: 存疑
+    dispute: 今本经苕溪渔隐丛话等宋人类书征引辑存，文本完整性与真伪有学术讨论；对苏轼等的批评是词学立场之争而非私怨。
+    source_ids: [src-licizhaoji]
+
+  - work_id: jin-shi-lu-hou-xu
+    title: 金石录后序
+    alt_titles: []
+    genre: 散文（序跋）
+    date:
+      text: "1132年（绍兴二年玄黓岁壮月）自题"
+      year: 1132
+      precision: 精确
+    place: 杭州
+    context: 为亡夫赵明诚金石录三十卷所作后序，实为一篇自传性散文：由质衣市碑到赌书泼茶，再到靖康煨烬池阳诀别洪州云烟，得之艰而失之易的浩叹贯穿始终。
+    attribution: 确凿
+    excerpt: 余自少陆机作赋之二年，至过蘧瑗知非之两岁，三十四年之间，忧患得失，何其多也！然有有必有无，有聚必有散，乃理之常。
+    text_display: excerpt
+    themes: [自述生平, 图书聚散, 生死之恸]
+    influence: 散文史上的名篇，更是其生平研究无可替代的第一手文献；宋人瑞桂堂暇录已称使人叹息。
+    source_ids: [src-jinshilu-houxu]
+
+  - work_id: dian-jiang-chun-cu-ba-qiu-qian
+    title: 点绛唇·蹴罢秋千
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 前期闺情之作，创作年代不详
+      precision: 未知
+    place: ""
+    context: 见客入来袜刬金钗溜，和羞走倚门回首却把青梅嗅，少女娇态活泼如画。
+    attribution: 存疑
+    excerpt: 蹴罢秋千，起来慵整纤纤手。……和羞走，倚门回首，却把青梅嗅。
+    text_display: excerpt
+    themes: [少女情态, 闺趣]
+    influence: 广为选本与大众读物收录的闺情名篇。
+    confidence: 有争议
+    dispute: 此首著作权历来有争（或作苏轼、无名氏等），维基文库作者页列于正集而历代归属分歧未决，按存疑著录。
+    source_ids: [src-licizhaoji]
+
+footprints:
+  - name: 济南
+    modern_name: 山东省济南市（历城/章丘异说）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1084年生，少年时期在此
+      year: 1084
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 生年系倒推；籍贯历城、章丘两说并存。
+    source_ids: [src-jinshilu-houxu]
+  - name: 汴京
+    modern_name: 河南省开封市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1101年归赵氏，太学生妇时期质衣市碑相国寺"
+      year: 1101
+      precision: 精确
+    kind: 居住
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-jinshilu-houxu]
+  - name: 青州
+    modern_name: 山东省青州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1107—1121年屏居乡里十年，归来堂赌书泼茶；1127年十二月故第十余屋毁于兵火
+      year: 1107
+      range_end: 1127
+      precision: 范围
+    kind: 居住
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 屏居起讫年份系推定；陷城月份从后序纪年。
+    source_ids: [src-jinshilu-houxu]
+  - name: 莱州
+    modern_name: 山东省莱州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1121—1126年随夫守郡（连守两郡之一）
+      year: 1121
+      range_end: 1126
+      precision: 范围
+    kind: 居住
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 连守两郡通指莱州淄州，随居年份据职历推定。
+    source_ids: [src-jinshilu-houxu]
+  - name: 淄州
+    modern_name: 山东省淄博市淄川区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 靖康丙午（1126）侯守淄川，随寓至南渡
+      year: 1126
+      precision: 精确
+    kind: 居住
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-jinshilu-houxu]
+  - name: 建康
+    modern_name: 江苏省南京市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1127年随丧南来至建康；1128—1129年随夫守郡；1129年八月葬明诚于此"
+      year: 1127
+      range_end: 1129
+      precision: 范围
+    kind: 居住
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-jinshilu-houxu]
+  - name: 乌江
+    modern_name: 安徽省和县乌江镇
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 建炎中南渡行旅途中（夏日绝句咏地，行旅说）
+      year: 1127
+      range_end: 1129
+      precision: 范围
+    kind: 游历
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 是否亲历乌江无原始记载，系据诗题与行迹推断，仅按行旅说著录。
+    source_ids: [src-licizhaoji]
+  - name: 会稽
+    modern_name: 浙江省绍兴市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1130—1131年卜居士民钟氏舍，夜盗负五簏去
+      year: 1130
+      range_end: 1131
+      precision: 范围
+    kind: 居住
+    route_order: 8
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 卜居与被盗年份据后序叙事次第推定。
+    source_ids: [src-jinshilu-houxu]
+  - name: 临安
+    modern_name: 浙江省杭州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1132年在杭州自题金石录后序；此后长期流寓，约终于此"
+      year: 1132
+      precision: 精确
+    kind: 居住
+    route_order: 9
+    memorial_only: false
+    source_ids: [src-jinshilu-houxu]
+  - name: 金华
+    modern_name: 浙江省金华市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1134—1135年避乱卜居陈氏第，作打马图序，泛舟双溪"
+      year: 1134
+      range_end: 1135
+      precision: 范围
+    kind: 居住
+    route_order: 10
+    memorial_only: false
+    source_ids: [src-licizhaoji]
+
+relations:
+  - relation_type: 论敌
+    target_id: sushi
+    direction: 单向
+    period:
+      text: 词学立场之争，作年无定说（词论成文于其晚年之前）
+      precision: 未知
+    evidence: 词论实取原文：至晏元献欧阳永叔苏子瞻学际天人作为小歌词直如酌蠡水于大海然皆句读不葺之诗尔又往往不协音律者——遍评前辈而于东坡尤峻，主张词别是一家。
+    source_ids: [src-cilun]
+    # 出处待登记：词论（维基文库 https://zh.wikisource.org/wiki/詞論_(李清照) ）待主会话登记后补填 source_ids
+    # 说明：此为词学理论批评而非个人恩怨；赵明诚、陆德夫、赵挺之等关键人物均未入库，故关系仅此一组，不为凑数编造。
+
+reception:
+  - era: 同时代
+    evaluator: 王灼《碧鸡漫志》（宋人记载层）
+    quote: 作长短句能曲折尽人意，轻巧尖新，姿态百出，闾巷荒淫之语，肆意落笔，自古搢绅之家能文妇女，未见如此无顾籍也。
+    text_display: excerpt
+    comment: 同时代人最激烈的贬评，同条又称其自少年便有诗名才力华赡逼近前辈、在本朝妇人为词采第一——毁誉同源，恰见其突破时代规范的程度；同条并载再嫁讼离之说，属本案核心宋人记载。维基文库碧鸡漫志卷2实取。
+    confidence: 确定
+    source_ids: [src-bijimanzhi-vol2]
+  - era: 同时代
+    evaluator: 胡仔《苕溪渔隐丛话》（宋人记载层，转引）
+    quote: 近时妇人能文词如李易安，颇多佳句，如云绿肥红瘦，此语甚新。
+    text_display: excerpt
+    comment: 生前词名的同时代正面证据，本条经唐宋诸贤绝妙词选等转引实取；苕溪渔隐并载其再适张汝舟有启事上綦处厚之说，是再嫁案的另一路宋人来源。
+    confidence: 存疑
+    dispute: 丛话原书条目未直接实取，属可靠转引；再嫁相关记载互有矛盾。
+    source_ids: [src-licizhaoji]
+  - era: 历代批评
+    evaluator: 「易安体」之称与沈谦《填词杂说》等宗主之说（后世追认层）
+    quote: ""
+    text_display: none
+    comment: 宋人已有以易安体名其词者（侯寘、辛弃疾词中曾效易安体，属转述）；清沈谦填词杂说有婉约以易安为宗之目，王士禛称婉约以易安为宗豪放惟幼安称首——婉约之宗与千古第一才女皆为后世追认的评价框架，非当时封号，故置接受史而不入 profile。沈谦原文本次未实取，按转述著录。
+    confidence: 存疑
+    dispute: 易安体具体所指宋人语焉不详；宗主说为清人词统建构的一部分。
+    source_ids: []
+  - era: 历代批评
+    evaluator: 吴衡照《莲子居词话》与俞正燮（后世考证层）
+    quote: 易安居士再适张汝舟，卒至对簿……宋人说部多载其事，大抵彼此衍袭，未可尽信。
+    text_display: excerpt
+    comment: 清人对再嫁公案的系统怀疑始于梁绍壬、俞正燮等辨诬一路，莲子居词话明言宋人说部彼此衍袭未可尽信；本条维基文库莲子居词话实取。俞正燮易安居士事迹辑及其后考辨为辩诬说的代表作，属清代考证层，不能推翻宋人记载但确立了两案并存的格局。
+    confidence: 确定
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究三大议题——词史地位（词别是一家理论的词体论价值与易安体的艺术独创）、漱玉词版本源流（宋史艺文志著录易安居士文集七卷易安词六卷今均佚，今本漱玉词为后人辑本）、再嫁公案的现代重审（20世纪学者多回到宋人记载可信说，辩诬说渐弱）。具体论著引文须取得许可后补入，暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 如梦令两首、声声慢、夏日绝句、醉花阴等长期入选两岸语文教材与读本（声声慢并列为香港中学文凭考试指定文言篇章，维基文库页面分类可证）；千古第一才女的称号属公共文化追认。教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: [src-licizhaoji]
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中的李清照形象多围绕其爱情与南渡叙事敷演，不作信史依据；网络传播集中于绿肥红瘦、怎一个愁字了得、生当作人杰等名句，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-jinshilu-houxu, src-licizhaoji, src-cilun, src-xinianyaolu-vol58, src-bijimanzhi-vol2]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。22条年谱（5阶段）、12件作品、10处足迹、1组关系（论敌苏轼，词学立场）、7层接受史（含影视网络占位）。金石录后序全文、词论、声声慢、醉花阴、一剪梅、永遇乐、武陵春、如梦令两首、乌江（夏日绝句）均自维基文库实取；再嫁讼事原文实取自建炎以来系年要录卷058（通行引文误标卷88，卷88实取未见该条）；碧鸡漫志卷2贬评与莲子居词话辨诬语实取；打马图序金华卜居自证实取。审计表按自述层/诗文层/宋人记载层/后世考证层四层著录。"}

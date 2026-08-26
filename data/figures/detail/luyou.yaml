@@ -1,0 +1,722 @@
+# 陆游全景详卷（schema v1）
+# 史料审计表（来源见 data/sources.yaml）：
+#
+# | 事实点 | 宋史·卷395(J) | 其他材料层 | 结论与置信 |
+# |---|---|---|---|
+# | 家世籍贯 | 字務觀越州山陰人 | —— | 确定 |
+# | 早慧入仕 | 年十二能詩文蔭補登仕郎 | —— | 确定（约1136系倒推） |
+# | 科场之厄 | 鎖廳薦送第一秦檜孫塤適居其次檜怒至罪主司；明年試禮部主司復置游前列檜顯黜之 | —— | 确定（约1153—1154）；任务描述「埜」实为「塤」（秦塤）以原文为准 |
+# | 初仕 | 檜死始赴福州寧德簿以薦者除敕令所刪定官 | —— | 确定（起讫年份谱系推定） |
+# | 赐进士出身 | 史浩黃祖舜薦游善詞章諳典故召見上曰游力學有聞言論剴切遂賜進士出身 | —— | 确定（孝宗即位后约1163） |
+# | 外放免归 | 出通判建康府尋易隆興府言者論游交結臺諫鼓唱是非力說張浚用兵免歸久之通判夔州 | —— | 确定；具体年份正史无载 |
+# | 南郑从戎 | 王炎宣撫川陝辟為幹辦公事；經略中原必自長安始取長安必自隴右始；請以玠子拱代挺後挺子曦僭叛游言始驗 | 大散关亲历见其诗（src-luyou-ji 诗层） | 正史确定王炎幕事；乾道八年(1172)系年从通说 |
+# | 自号放翁 | 范成大帥蜀游為參議官以文字交不拘禮法人譏其頹放因自號放翁 | —— | 确定（约1175前后） |
+# | 江西赈灾 | 累遷江西常平提舉江西水災奏撥義倉振濟檄諸郡發粟以予民召還給事中趙汝愚駁之遂與祠 | —— | 确定 |
+# | 知严州 | 起知嚴州過闕陛辭上諭嚴陵山水勝處職事之暇可以賦詠自適再召入見上曰卿筆力回斡甚善非他人可及除軍器少監 | 刻《剑南诗稿》于严州属文集序层（待核） | 正史确定职事；严州刻稿不入本卷硬事实 |
+# | 修实录致仕 | 紹熙元年遷禮部郎中兼實錄院檢討官；嘉泰二年詔游權同修國史實錄院同修撰尋兼秘書監三年書成遂升寶章閣待制致仕 | —— | 确定；注意正史作「寶章閣」非「宝谟阁」，以原文为准 |
+# | 清议 | 晚年再出為韓侂胄撰南園閱古泉記見譏清議朱熹嘗言其能太高跡太近恐為有力者所牽挽不得全其晚節 | —— | 确定 |
+# | 卒 | 嘉定二年卒年八十五 | —— | 确定(1210)；生年1125由卒年倒推闭合，正史不载生日生地 |
+# | 沈园情事 | 无载 | 其自作沈园二首诗序层＋周密齐东野语笔记层（本卷仅分层标注不作确证事实） | 有争议；钗头凤本事亦属笔记层 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: luyou
+
+profile:
+  courtesy_name: 务观
+  art_name: 放翁
+  aliases: [陆放翁]
+  gender: 男
+  ethnicity: ""
+  ancestry: 越州山阴
+  birthplace: 越州山阴（正史不载出生地；「生于淮上舟中」说出自年谱层，详见 timeline 出生条目 dispute）
+  death_place: 山阴
+  offices: [福州宁德县主簿, 敕令所删定官, 大理寺司直兼宗正簿, 枢密院编修官兼编类圣政所检讨官, 通判建康府, 通判隆兴府, 通判夔州, 王炎川陕幕干办公事, 四川制置司参议官, 江西常平提举, 严州知府, 军器少监, 礼部郎中兼实录院检讨官, 权同修国史实录院同修撰兼秘书监, 宝章阁待制（致仕）]
+  fields: [文学]
+  roles: [诗人, 词人]
+  summary: 南宋存诗近万首的爱国诗人，亲历大散关前线而终老镜湖之滨，「家祭无忘告乃翁」的临终绝唱与其科场受厄、从戎南郑、自号放翁的一生互证。
+
+timeline:
+  # ── 阶段一：少年与科场之厄 ──────────────────────────
+  - stage: 少年与科场之厄
+    stage_order: 1
+    title: 生于靖康之难前夕
+    date:
+      text: "约1125年"
+      year: 1125
+      precision: 约
+    place: 越州山阴（一说生于淮上舟中）
+    summary: 宣和七年金兵南下之际出生。正史不载生日生地；生年由嘉定二年(1210)卒时年八十五倒推闭合，生于淮上舟中之说出自年谱层而非正史。
+    confidence: 存疑
+    dispute: 正史无生年生地记录；1125系卒年八十五倒推并从通行谱系，「淮上舟中」说属后世年谱层材料。
+    source_ids: [src-songshi-vol395]
+  - stage: 少年与科场之厄
+    stage_order: 2
+    title: 年十二能诗文，荫补登仕郎
+    date:
+      text: "约1136年"
+      year: 1136
+      precision: 约
+    place: 山阴
+    summary: 宋史载年十二能诗文，以门荫补登仕郎。早慧与荫补出身决定其入仕起点。
+    source_ids: [src-songshi-vol395]
+  - stage: 少年与科场之厄
+    stage_order: 3
+    title: 锁厅荐送第一，遭秦桧显黜
+    date:
+      text: 约1153—1154年之间
+      year: 1153
+      range_end: 1154
+      precision: 范围
+    place: 临安
+    summary: 锁厅试荐送第一，秦桧孙塤适居其次，桧怒至罪主司；明年试礼部，主司复置游前列，桧显黜之，由是为所嫉。科场之厄使其仕途蹉跎十余年。
+    source_ids: [src-songshi-vol395]
+
+  # ── 阶段二：初仕东南与孝宗朝起落 ────────────────────
+  - stage: 初仕东南与孝宗朝起落
+    stage_order: 4
+    title: 秦桧死后始出仕福州宁德簿
+    date:
+      text: 约1155—1158年之间
+      year: 1155
+      range_end: 1158
+      precision: 范围
+    place: 福州宁德
+    summary: 檜死始赴福州宁德簿，以薦者除敕令所刪定官。被压多年后方得初仕。
+    confidence: 存疑
+    dispute: 正史仅记桧死后始赴任，宁德起讫年份据通行谱系推定。
+    source_ids: [src-songshi-vol395]
+  - stage: 初仕东南与孝宗朝起落
+    stage_order: 5
+    title: 临安任职，力陈罢杨存中、谏市珍玩
+    date:
+      text: 约1160—1162年之间
+      year: 1160
+      range_end: 1162
+      precision: 范围
+    place: 临安
+    summary: 除敕令所删定官后，力陈杨存中久掌禁旅非便，上嘉其言遂罢存中；又奏禁中贵人市北方珍玩亏損圣德乞严行禁绝；应诏言非宗室外家虽实有勋劳毋得辄加王爵。迁大理寺司直兼宗正簿。
+    confidence: 存疑
+    dispute: 三事连记于传内而无系年，年份据除职次第与通行谱系推定。
+    source_ids: [src-songshi-vol395]
+  - stage: 初仕东南与孝宗朝起落
+    stage_order: 6
+    title: 孝宗召对，赐进士出身
+    date:
+      text: 约1163年
+      year: 1163
+      precision: 约
+    place: 临安
+    summary: 孝宗即位迁枢密院编修官兼编类圣政所检讨官。史浩黄祖舜荐游善词章谙典故，召见，上曰游力学有闻言论剀切，遂赐进士出身——以其科场被黜之辱得朝廷正式补偿。
+    confidence: 存疑
+    dispute: 赐出身在孝宗即位后，隆兴元年(1163)说为主流，精确月份无载。
+    source_ids: [src-songshi-vol395]
+  - stage: 初仕东南与孝宗朝起落
+    stage_order: 7
+    title: 和议将成，上书白二府论建康驻跸
+    date:
+      text: 约1163—1164年之间
+      year: 1163
+      range_end: 1164
+      precision: 范围
+    place: 临安
+    summary: 隆兴和议将成之际，以书白二府：江左自吴以来未有舍建康他都者驻跸临安出于权宜形势不固馈饷不便海道逼近凛然意外之忧；主张建康临安皆係驻跸之地以便异日建都立国。
+    source_ids: [src-songshi-vol395]
+  - stage: 初仕东南与孝宗朝起落
+    stage_order: 8
+    title: 出通判建康隆兴，坐力说张浚用兵免归
+    date:
+      text: 约1164—1166年之间
+      year: 1164
+      range_end: 1166
+      precision: 范围
+    place: 建康、隆兴
+    summary: 因向枢臣张燾言龙大渊曾覿招权植党事发，上怒，出通判建康府寻易隆兴府；言者论游交结台谏鼓唱是非力说张浚用兵，免归。张浚北伐符离之败后的和战风潮为其外放背景。
+    confidence: 存疑
+    dispute: 免归与谪迁年份正史无载；符离之败(1163)仅作背景关联，传文未直接系年。
+    source_ids: [src-songshi-vol395]
+
+  # ── 阶段三：夔州与南郑从戎 ─────────────────────────
+  - stage: 夔州与南郑从戎
+    stage_order: 9
+    title: 久之，通判夔州
+    date:
+      text: 约1169—1170年之间
+      year: 1169
+      range_end: 1170
+      precision: 范围
+    place: 夔州
+    summary: 免归之后久之通判夔州，溯江入蜀，由此开启八年蜀中岁月。
+    confidence: 存疑
+    dispute: 夔州起讫据通行谱系（乾道五年除命、六年到任）推定，正史只言久之二字。
+    source_ids: [src-songshi-vol395]
+  - stage: 夔州与南郑从戎
+    stage_order: 10
+    title: 入王炎川陕幕，陈进取之策
+    date:
+      text: "约1172年"
+      year: 1172
+      precision: 约
+    place: 南郑
+    summary: 王炎宣抚川陕辟为干办公事。游为炎陈进取之策：经略中原必自长安始取长安必自陇右始当积粟练兵有衅则攻无则守。亲临对敌前线，铁马秋风大散关即此期军旅体验的诗化记忆（诗层证据）。
+    confidence: 存疑
+    dispute: 幕府年份乾道八年(1172)从通说；大散关亲历细节出自其诗作而非正史，本条分层标注。
+    source_ids: [src-songshi-vol395, src-luyou-ji]
+  - stage: 夔州与南郑从戎
+    stage_order: 11
+    title: 请以吴拱代吴挺，预言吴曦之叛
+    date:
+      text: 在王炎幕期间
+      year: 1172
+      range_end: 1173
+      precision: 范围
+    place: 南郑
+    summary: 吴璘子挺代掌兵颇骄恣倾财结士屡以过误杀人，炎莫谁何。游请以玠子拱代挺；炎谓拱怯而寡谋遇敌必败，游答使挺遇敌安保其不败就令有功愈不可驾驭。及挺子曦僭叛，游言始验。
+    source_ids: [src-songshi-vol395]
+
+  # ── 阶段四：蜀中放翁 ──────────────────────────────
+  - stage: 蜀中放翁
+    stage_order: 12
+    title: 范成大帅蜀为参议官，人讥颓放自号放翁
+    date:
+      text: 约1175—1176年之间
+      year: 1175
+      range_end: 1176
+      precision: 范围
+    place: 成都
+    summary: 范成大帅蜀游为参议官，以文字交不拘礼法人讥其颓放，因自号放翁。号由贬辞而来而终身自承，成为其最具辨识度的名号。
+    confidence: 存疑
+    dispute: 参议官任期据范成大帅蜀时段（淳熙二年后）推定。
+    source_ids: [src-songshi-vol395]
+  - stage: 蜀中放翁
+    stage_order: 13
+    title: 江西常平提举赈济水灾，召还遭驳遂与祠
+    date:
+      text: 约1178—1180年之间
+      year: 1178
+      range_end: 1180
+      precision: 范围
+    place: 江西
+    summary: 后累迁江西常平提举。江西水灾奏拨义仓振济檄诸郡发粟以予民；召还给事中赵汝愚驳之遂与祠禄。开仓赈民而遭驳斥，是其行政才干与政治挫折的又一例证。
+    confidence: 存疑
+    dispute: 提举江西与赈灾系年据通行谱系（淳熙六七年间）推定，正史无载。
+    source_ids: [src-songshi-vol395]
+
+  # ── 阶段五：知严州与再修实录 ───────────────────────
+  - stage: 知严州与再修实录
+    stage_order: 14
+    title: 起知严州，陛辞获谕赋咏自适
+    date:
+      text: "约1186年"
+      year: 1186
+      precision: 约
+    place: 严州
+    summary: 起知严州过阙陛辞，上谕曰严陵山水胜处职事之暇可以赋咏自适。严州任上为其诗集编年整理的重要阶段（刻剑南诗稿之说属文集序层，本卷不作确证事实）。
+    confidence: 存疑
+    dispute: 淳熙十三年(1186)知严州从通行谱系；严州刊行剑南诗稿属渭南文集序层材料，与正史分列。
+    source_ids: [src-songshi-vol395]
+  - stage: 知严州与再修实录
+    stage_order: 15
+    title: 再入朝，除军器少监、礼部郎中兼实录院检讨官
+    date:
+      text: 约1188—1190年之间
+      year: 1188
+      range_end: 1190
+      precision: 范围
+    place: 临安
+    summary: 再召入见上曰卿笔力回斡甚善非他人可及，除军器少监。绍熙元年(1190)迁礼部郎中兼实录院检讨官——绍熙元年为传内明确纪年。
+    source_ids: [src-songshi-vol395]
+  - stage: 知严州与再修实录
+    stage_order: 16
+    title: 嘉泰修两朝实录，书成升宝章阁待制致仕
+    date:
+      text: 1202—1203年之间
+      year: 1202
+      range_end: 1203
+      precision: 范围
+    place: 临安
+    summary: 嘉泰二年以孝宗光宗两朝实录及三朝史未就，诏游权同修国史实录院同修撰免奉朝请寻兼秘书监；三年书成遂升宝章阁待制致仕。七十八岁高龄再度出仕修史后告老。
+    source_ids: [src-songshi-vol395]
+
+  # ── 阶段六：山阴终老 ──────────────────────────────
+  - stage: 山阴终老
+    stage_order: 17
+    title: 为韩侂胄撰南园阅古泉记，见讥清议
+    date:
+      text: 约1202年前后
+      year: 1202
+      precision: 约
+    place: 临安、山阴
+    summary: 晚年再出为韩侂胄撰南园阅古泉记见讥清议。朱熹尝言其能太高迹太近恐为有力者所牵挽不得全其晚节，盖有先见之明焉。元修宋史论赞亦以此惜之。
+    source_ids: [src-songshi-vol395]
+  - stage: 山阴终老
+    stage_order: 18
+    title: 镜湖三山乡居二十余年，示儿绝笔
+    date:
+      text: 约1203—1210年之间
+      year: 1203
+      range_end: 1210
+      precision: 范围
+    place: 山阴三山
+    summary: 致仕后归山阴乡居近二十年，僵卧孤村犹思为国戍轮台。临终作示儿：死去元知万事空但悲不见九州同王师北定中原日家祭无忘告乃翁——文学史上最著名的绝笔诗（诗层证据）。
+    confidence: 存疑
+    dispute: 示儿系于临终从通说；乡居起讫以嘉泰三年致仕至嘉定二年卒为界推定。
+    source_ids: [src-songshi-vol395, src-luyou-ji]
+  - stage: 山阴终老
+    stage_order: 19
+    title: 卒于山阴，年八十五
+    date:
+      text: "1210年"
+      year: 1210
+      precision: 精确
+    place: 山阴
+    summary: 嘉定二年卒年八十五。生年1125由此倒推闭合，正史生卒系年完整。
+    source_ids: [src-songshi-vol395]
+
+works:
+  - work_id: shi-er
+    title: 示儿
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约1210年岁末临终
+      year: 1210
+      precision: 约
+    place: 山阴
+    context: 八十五岁临终绝笔，以家祭告乃翁嘱托王师北定，将个人生死与九州统一系于一诗。
+    attribution: 确凿
+    excerpt: 死去元知万事空，但悲不见九州同。王师北定中原日，家祭无忘告乃翁。
+    text_display: full
+    themes: [爱国, 绝笔]
+    influence: 中国诗歌史上最著名的临终之作，爱国诗人形象的最终定格。
+    confidence: 存疑
+    dispute: 系于临终从通行编年说；文本各版本无异文之争。
+    source_ids: [src-luyou-ji]
+
+  - work_id: you-shan-xi-cun
+    title: 游山西村
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 约1167年罢归山阴闲居期间
+      year: 1167
+      precision: 约
+    place: 山阴
+    context: 力说用兵免归后乡居，纪农家春社游村之乐，于闲适中仍存古风之思。
+    attribution: 确凿
+    excerpt: 莫笑农家腊酒浑，丰年留客足鸡豚。山重水复疑无路，柳暗花明又一村。箫鼓追随春社近，衣冠简朴古风存。从今若许闲乘月，拄杖无时夜叩门。
+    text_display: full
+    themes: [田园, 村野]
+    influence: 山重水复柳暗花明成为困境转机的千古成语。
+    confidence: 存疑
+    dispute: 系年从乾道三年罢归通说。
+    source_ids: [src-luyou-ji]
+
+  - work_id: shu-fen
+    title: 书愤
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 约1186年山阴闲居时期
+      year: 1186
+      precision: 约
+    place: 山阴
+    context: 回忆早岁北望与楼船夜雪瓜洲渡铁马秋风大散关的亲历岁月，塞上长城空自许是对壮志落空的自嘲。
+    attribution: 确凿
+    excerpt: 早岁那知世事艰，中原北望气如山。楼船夜雪瓜洲渡，铁马秋风大散关。……塞上长城空自许，镜中衰鬓已先斑。出师一表真名世，千载谁堪伯仲间。
+    text_display: excerpt
+    themes: [爱国, 抒愤]
+    influence: 其军旅记忆最凝练的名联，也是研究南郑经历的第一诗证。
+    source_ids: [src-luyou-ji]
+
+  - work_id: guan-shan-yue
+    title: 关山月
+    alt_titles: []
+    genre: 乐府
+    date:
+      text: 约1176—1177年蜀中时期
+      year: 1176
+      range_end: 1177
+      precision: 范围
+    place: 成都（一说）
+    context: 以和戎诏下十五年总领全篇，朱门歌舞与遗民垂泪对写，是隆兴和议后主和局面的乐府式控诉。
+    attribution: 确凿
+    excerpt: 和戎诏下十五年，将军不战空临边。朱门沉沉按歌舞，厩马肥死弓断弦。……笛里谁知壮士心，沙头空照征人骨。
+    text_display: excerpt
+    themes: [爱国, 边塞, 讽喻]
+    influence: 以旧题乐府写当代时局的代表作。
+    confidence: 存疑
+    dispute: 作地作年诸家有出入，蜀中淳熙间说为主流。
+    source_ids: [src-luyou-ji]
+
+  - work_id: chai-tou-feng
+    title: 钗头凤·红酥手
+    alt_titles: []
+    genre: 词
+    date:
+      text: 约1155年沈园邂逅后（笔记层系年）
+      year: 1155
+      precision: 约
+    place: 沈园
+    context: 传统说法系于绍兴间沈园与前妻唐氏邂逅，错错错莫莫莫的悔恨成为其情事叙事的核心文本；此本事主要见于宋人笔记层而非正史。
+    attribution: 存疑
+    excerpt: 红酥手，黄縢酒。满城春色宫墙柳。东风恶，欢情薄。一怀愁绪，几年离索。错、错、错。……山盟虽在，锦书难托。莫、莫、莫！
+    text_display: excerpt
+    themes: [爱情, 悔恨]
+    influence: 宋词中流传最广的情殇之作之一。
+    confidence: 有争议
+    dispute: 本事（沈园遇唐氏说）出自宋人笔记层（齐东野语等），早期文献著录与系年均非正史层面；亦有学者对词的本事提出另解。
+    source_ids: [src-luyou-ji]
+
+  - work_id: shen-yuan-er-shou
+    title: 沈园二首（其一）
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约1199年重游沈园时
+      year: 1199
+      precision: 约
+    place: 沈园
+    context: 晚年重游故地，伤心桥下春波绿曾是惊鸿照影来。周密齐东野语据此系出唐氏情事的笔记层叙述，诗人自述层面仅存于诗作本身。
+    attribution: 确凿
+    excerpt: 城上斜阳画角哀，沈园非复旧池台。伤心桥下春波绿，曾是惊鸿照影来。
+    text_display: excerpt
+    themes: [怀旧, 爱情]
+    influence: 沈园因此诗成为中国文学中最著名的情殇纪念地。
+    confidence: 存疑
+    dispute: 诗作为本人作品无疑；然「悼唐琬」的解读依赖齐东野语笔记层，材料层级须与本诗本文区分。
+    source_ids: [src-luyou-ji]
+
+  - work_id: shi-yi-yue-si-feng-yu
+    title: 十一月四日风雨大作（其二）
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: "约1192年冬"
+      year: 1192
+      precision: 约
+    place: 山阴
+    context: 六十八岁退居山阴，风雨之夜卧听风吹雨而梦铁马冰河，乡居与恢复之志的典型合体。
+    attribution: 确凿
+    excerpt: 僵卧孤村不自哀，尚思为国戍轮台。夜阑卧听风吹雨，铁马冰河入梦来。
+    text_display: full
+    themes: [爱国, 梦境]
+    influence: 夜阑卧听风吹雨为晚年爱国心境的最著名写照。
+    confidence: 存疑
+    dispute: 绍熙三年冬从通行编年说。
+    source_ids: [src-luyou-ji]
+
+  - work_id: lin-an-chun-yu
+    title: 临安春雨初霁
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 约1186年春赴严州前客居临安时
+      year: 1186
+      precision: 约
+    place: 临安
+    context: 小楼一夜听春雨深巷明朝卖杏花的清丽背后，是世味年来薄似纱的倦怠与素衣莫起风尘叹的自持。
+    attribution: 确凿
+    excerpt: 世味年来薄似纱，谁令骑马客京华。小楼一夜听春雨，深巷明朝卖杏花。……素衣莫起风尘叹，犹及清明可到家。
+    text_display: excerpt
+    themes: [抒怀, 京华]
+    influence: 江南春雨意象的经典化文本。
+    confidence: 存疑
+    dispute: 系年从淳熙十三年春通说。
+    source_ids: [src-luyou-ji]
+
+  - work_id: qiu-ye-jiang-xiao
+    title: 秋夜将晓出篱门迎凉有感
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约1192年秋
+      year: 1192
+      precision: 约
+    place: 山阴
+    context: 遗民泪尽胡尘里南望王师又一年，替沦陷区遗民立言，与其晚年乡居处境形成强烈张力。
+    attribution: 确凿
+    excerpt: 三万里河东入海，五千仞岳上摩天。遗民泪尽胡尘里，南望王师又一年。
+    text_display: full
+    themes: [爱国, 遗民]
+    influence: 以山河气象托遗民之泪的爱国绝句典范。
+    confidence: 存疑
+    dispute: 绍熙三年秋从通行编年说。
+    source_ids: [src-luyou-ji]
+
+  - work_id: jian-men-dao-zhong
+    title: 剑门道中遇微雨
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约1172年冬自南郑调成都途中
+      year: 1172
+      precision: 约
+    place: 剑门
+    context: 此身合是诗人未细雨骑驴入剑门的自我叩问，恰是从军前线转入幕府文职的人生转折注脚。
+    attribution: 确凿
+    excerpt: 衣上征尘杂酒痕，远游无处不消魂。此身合是诗人未？细雨骑驴入剑门。
+    text_display: full
+    themes: [自况, 行旅]
+    influence: 诗人身份自觉的标志性自画像。
+    confidence: 存疑
+    dispute: 乾道八年冬离南郑赴成都通说。
+    source_ids: [src-luyou-ji]
+
+  - work_id: bu-suan-zi-yong-mei
+    title: 卜算子·咏梅
+    alt_titles: []
+    genre: 词
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 驿外断桥边寂寞开无主的梅花，零落成泥碾作尘只有香如故，是其人格操守的自喻。
+    attribution: 确凿
+    excerpt: 零落成泥碾作尘，只有香如故。
+    text_display: excerpt
+    themes: [咏物, 言志]
+    influence: 咏梅词中人格化的巅峰之作。
+    source_ids: [src-luyou-ji]
+
+footprints:
+  - name: 山阴
+    modern_name: 浙江省绍兴市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1125年生，此后一生以此为根
+      year: 1125
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-songshi-vol395]
+  - name: 临安
+    modern_name: 浙江省杭州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 锁厅试、敕令所、枢密院、礼部与嘉泰修史所在
+      year: 1153
+      range_end: 1203
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-songshi-vol395]
+  - name: 福州宁德
+    modern_name: 福建省宁德市蕉城区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1155—1158年之间初仕县主簿
+      year: 1155
+      range_end: 1158
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    confidence: 存疑
+    dispute: 赴任起讫年份据通行谱系推定。
+    source_ids: [src-songshi-vol395]
+  - name: 夔州
+    modern_name: 重庆市奉节县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1169—1170年之间通判夔州
+      year: 1169
+      range_end: 1170
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 正史只言久之通判夔州，年份据通行谱系推定。
+    source_ids: [src-songshi-vol395]
+  - name: 南郑
+    modern_name: 陕西省汉中市南郑区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1172年王炎宣抚使幕从戎
+      year: 1172
+      precision: 约
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    confidence: 存疑
+    dispute: 幕府驻地在南郑为主流考订；正史记辟为王炎幕干办公事而不载驻地细节。
+    source_ids: [src-songshi-vol395]
+  - name: 大散关
+    modern_name: 陕西省宝鸡市西南大散关
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 从戎前线据其诗作（铁马秋风大散关）与地理方位推定，坐标暂缺
+    visit_date:
+      text: 约1172年在王炎幕期间巡边前线
+      year: 1172
+      precision: 约
+    kind: 游历
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 亲历大散关出自诗层证据，正史传文未载前线行程细节。
+    source_ids: [src-luyou-ji]
+  - name: 成都
+    modern_name: 四川省成都市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1173—1178年之间蜀中期，参议范成大幕自号放翁
+      year: 1173
+      range_end: 1178
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    confidence: 存疑
+    dispute: 蜀中八年各职任次第诸家谱系略有出入。
+    source_ids: [src-songshi-vol395]
+  - name: 江西
+    modern_name: 江西省南昌市一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1178—1180年之间提举江西常平赈济水灾
+      year: 1178
+      range_end: 1180
+      precision: 范围
+    kind: 任职
+    route_order: 8
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 提举江西系年据通行谱系推定；治所以江南西路治所南昌一带为准。
+    source_ids: [src-songshi-vol395]
+  - name: 严州
+    modern_name: 浙江省建德市梅城镇
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1186年起知严州
+      year: 1186
+      precision: 约
+    kind: 任职
+    route_order: 9
+    memorial_only: false
+    confidence: 存疑
+    dispute: 淳熙十三年知严州从通行谱系。
+    source_ids: [src-songshi-vol395]
+  - name: 沈园
+    modern_name: 浙江省绍兴市沈园
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 纪念地坐标待接入体系；情事本身属笔记层不作确证到访处理
+    visit_date:
+      text: 不详
+      precision: 未知
+    kind: 纪念地
+    route_order: 10
+    memorial_only: true
+    confidence: 有争议
+    dispute: 与唐氏沈园情事主要见于周密齐东野语笔记层及其自作沈园诗序层，正史无载；今沈园为后世依托纪念地，故仅作纪念地著录。
+    source_ids: [src-luyou-ji]
+  - name: 山阴三山别业
+    modern_name: 浙江省绍兴市鉴湖三山
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 别业地望据其自述诗与地方志层推定，坐标暂缺
+    visit_date:
+      text: 约1203年致仕后乡居至1210年病逝
+      year: 1203
+      range_end: 1210
+      precision: 范围
+    kind: 逝世
+    route_order: 11
+    memorial_only: false
+    inferred: true
+    source_ids: [src-songshi-vol395, src-luyou-ji]
+
+relations:
+  - relation_type: 思想影响
+    target_id: sushi
+    direction: 单向
+    period:
+      text: 南宋诗坛对北宋大家的整体承接
+      year: 1150
+      range_end: 1210
+      precision: 范围
+    evidence: 无直接交往记载（二人时代相隔）。此条属文学史归纳层的推定关系：放翁论诗推尊前代大家、以雄放自然为尚的风格取向，学界常置于苏轼以来的文人诗传统脉络中讨论。
+    inferred: true
+    confidence: 有争议
+    dispute: 苏轼对陆游的具体影响路径与程度系学术归纳，非史料直接记载；目标人物入库前仅为占位性归纳条目。
+    source_ids: []
+
+reception:
+  - era: 同时代
+    evaluator: 孝宗赵昚
+    quote: 卿笔力回斡甚善，非他人可及。
+    text_display: excerpt
+    comment: 宋史本传所记陛辞召对时的当面评价，代表朝廷对其文字才能的直接肯定。
+    source_ids: [src-songshi-vol395]
+  - era: 同时代
+    evaluator: 朱熹
+    quote: 其能太高，迹太近，恐为有力者所牵挽，不得全其晚节。
+    text_display: excerpt
+    comment: 宋史传直引朱熹语，对其晚年出处（韩侂胄南园阅古泉记事件）的预见性批评，与传尾见讥清议相呼应。
+    source_ids: [src-songshi-vol395]
+  - era: 历代批评
+    evaluator: 元·宋史史臣论赞
+    quote: 学广而望隆，晚为韩侂胄著堂记，君子惜之，抑《春秋》责贤者备也。
+    text_display: excerpt
+    comment: 卷395论赞对陆游的双重评价：既许其学识声望，又以春秋责贤之义惋惜其晚节瑕疵，代表传统史学的评价框架。
+    source_ids: [src-songshi-vol395]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦其爱国诗人的历史定位、南郑从戎经历的系年与诗史互证、沈园情事的材料层级考辨、放翁体的风格研究等议题；现代论著引文须取得许可后补入，本卷暂以中性转述处理。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 示儿游山西村十一月四日风雨大作秋夜将晓出篱门迎凉有感等长期入选中小学语文教材，山重水复柳暗花明成为常用成语；教材篇目随学期变动录入时须另行核验。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 影视改编与网络传播
+    quote: ""
+    text_display: none
+    comment: 网络传播集中于示儿绝笔与沈园情事的通俗演绎，后者多为笔记层材料的戏剧化铺陈；本卷对情事类内容保持材料分层标注，不随附会叙事升级置信。
+    source_ids: []
+
+sources_used: [src-songshi-vol395, src-luyou-ji]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: "初版。19条年谱（6阶段）、12首作品、11处足迹、1组推定关系、6层接受史；宋史卷395实取成功（wikisource）。实取校正：正史作宝章阁待制（非宝谟阁）、秦桧孙塤（非埜）；沈园唐琬事按笔记层分层标注；梁启超语未引，历代批评改用卷内元代史臣论赞"}

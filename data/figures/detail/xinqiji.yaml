@@ -1,0 +1,858 @@
+# 辛弃疾全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 宋史·卷401·列传第一百六十·辛弃疾传（维基文库实取） | 结论与置信 |
+# |---|---|---|
+# | 名号籍贯师承 | 字幼安齐之历城人；少师蔡伯坚与党怀英同学号辛党；始筮仕决以蓍，怀英遇坎因留事金，弃疾得离遂决意南归 | 确定 |
+# | 耿京起义 | 金主亮死中原豪杰并起；耿京聚兵山东称天平节度使节制山东河北忠义军马，弃疾为掌书记即劝京决策南向；僧义端窃印以逃，弃疾追获斩其首归报 | 确定 |
+# | 奉表南归擒张安国 | 绍兴三十二年奉表归宋，高宗劳师建康召见嘉纳之；会张安国邵进已杀京降金，乃约统制王世隆及忠义人马全福等径趋金营，安国方与金将酣饮，即众中缚之以归，献俘行在斩安国于市；改差江阴签判，弃疾时年二十三 | 确定。重点：本传无「五十骑」「五万众」数字！该夸饰出自洪迈《稼轩记》（赤手领五十骑缚取于五万众中）等别源，属笔记层，待核后另立来源登记 |
+# | 美芹十论九议 | 作《九议》并《应问》三篇、《美芹十论》献于朝，言逆顺之理消长之势技之长短地之要害甚备；以讲和方定议不行 | 确定；《美芹十论》文库独立页已实取（总叙自述鸠众二千隶耿京、大父辛赞指画山河两随计吏抵燕山），页面系年1165与召对乾道六年(1170)上朝说并存 |
+# | 帅湘建飞虎军 | 乞依广东摧锋荆南神劲福建左翼例别创一军以湖南飞虎为名；度马殷营垒故基招步军二千人马军五百人；降御前金字牌俾日下住罢，受而藏之期一月营栅成；军成雄镇一方为江上诸军之冠 | 确定 |
+# | 台臣弹劾 | 台臣王蔺劾其用钱如泥沙杀人如草芥旦夕望端坐闽王殿，遂丐祠归；庆元元年落职 | 确定 |
+# | 朱熹交往 | 尝同朱熹游武夷山赋九曲棹歌，熹书克己复礼夙兴夜寐题其二斋室；熹殁伪学禁方严门生故旧至无送葬者，弃疾为文往哭之曰所不朽者垂万世名孰谓公死凛凛犹生 | 确定（正史层直接证据） |
+# | 卒年卒地 | 进枢密都承旨未受命而卒，守龙图阁待制致仕特赠四官；绍定六年赠光禄大夫，德祐初谢枋得请谥忠敏 | 本传不系卒年不载享年不载卒地！通行开禧三年(1207)年六十八、卒于铅山说出后世文献层，存疑著录 |
+# | 词作文本 | 12首词均实取维基文库单篇页公版文本（URL见各条目下注），通行本层；善本异文未逐字深校 | 通行本层 |
+# | 陆游交往 | 陆游《送辛幼安殿撰造朝》公版全文库多源一致实取：稼轩落笔凌鲍谢退避声名称学稼；大材小用古所叹管仲萧何实流亚 | 确定（文集层）；该诗来源尚未登记 data/sources.yaml，主会话补录 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: xinqiji
+
+profile:
+  courtesy_name: 幼安
+  art_name: 稼轩居士
+  aliases: [稼轩, 辛忠敏, 词中之龙]
+  gender: 男
+  ethnicity: ""
+  ancestry: 济南历城
+  birthplace: 济南历城
+  death_place: 铅山（通行说；本传不载卒地）
+  offices: [承务郎天平节度掌书记, 江阴签判, 建康通判, 司农寺主簿, 知滁州, 江东安抚司参议官, 仓部郎官, 提点江西刑狱（加秘阁修撰）, 知江陵府兼湖北安抚, 知隆兴府兼江西安抚, 湖北转运副使, 知潭州兼湖南安抚, 福建提点刑狱, 知福州兼福建安抚使, 知绍兴府兼浙东安抚使, 宝谟阁待制知镇江府, 枢密都承旨（未受命而卒）]
+  fields: [文学]
+  roles: [词人]
+  summary: 豪放词双璧之一、词中之龙；以武起身却终身被闲置的归正人——二十二岁聚众起义、二十三岁众中缚叛献俘行在，此后帅湘建飞虎军雄镇一方，却屡遭台谏弹劾，带湖瓢泉闲居近二十年，《美芹十论》《九议》言恢复而不行，开禧局中赍志而殁。
+
+timeline:
+  # ── 阶段一：沦陷区少年与起义南归 ──────────────────────────────
+  - stage: 沦陷区少年与起义南归
+    stage_order: 1
+    title: 生于济南历城（金占区）
+    date:
+      text: "约1140年"
+      year: 1140
+      precision: 约
+    place: 济南历城
+    summary: 本传仅记字幼安齐之历城人，不载生年。生年系由绍兴三十二年擒张安国时「棄疾時年二十三」倒推，通行定为1140年。
+    confidence: 存疑
+    dispute: 正史不载生年；倒推按虚岁计得1140年，亦有1139年后半年生等细部异说。
+    source_ids: [src-songshi-vol401]
+  - stage: 沦陷区少年与起义南归
+    stage_order: 2
+    title: 少师蔡伯坚，与党怀英筮仕决蓍
+    date:
+      text: 少年时期，具体年代不详
+      precision: 未知
+    place: 济南一带
+    summary: 本传载少师蔡伯坚与党怀英同学号辛党；始筮仕决以蓍，怀英遇坎因留事金，弃疾得离遂决意南归——以蓍草占卜决定出处去就。
+    source_ids: [src-songshi-vol401]
+  - stage: 沦陷区少年与起义南归
+    stage_order: 3
+    title: 大父辛赞指画山河，两随计吏抵燕山
+    date:
+      text: 约1150年代
+      year: 1150
+      range_end: 1160
+      precision: 范围
+    place: 历城、燕山
+    summary: 《美芹十论》总叙自述家世受廛济南，大父辛赞被污虏官留京师，「每退食，辄引臣辈登高望远，指画山河，思投衅而起」，常令其两随计吏抵燕山谛观形势。祖父遗教为其恢复志业之起点。
+    confidence: 存疑
+    dispute: 自述出《美芹十论》总叙（维基文库独立页实取），系年为约1150年代推定。
+    source_ids: [src-jiaxuanci]
+  - stage: 沦陷区少年与起义南归
+    stage_order: 4
+    title: 鸠众二千隶耿京为掌书记，追斩窃印僧义端
+    date:
+      text: 约1161年（辛巳岁）
+      year: 1161
+      precision: 约
+    place: 山东
+    summary: 金主亮死中原豪杰并起，耿京聚兵山东称天平节度使节制山东河北忠义军马。《美芹十论》自述「臣尝鸠众二千，隶耿京，为掌书记」；本传载弃疾为掌书记即劝京决策南向。僧义端一夕窃印以逃，弃疾曰匄我三日期，急追获之，斩其首归报，京益壮之。
+    source_ids: [src-songshi-vol401, src-jiaxuanci]
+  - stage: 沦陷区少年与起义南归
+    stage_order: 5
+    title: 奉表南归，径趋金营众中缚张安国献俘行在
+    date:
+      text: "1162年（绍兴三十二年）"
+      year: 1162
+      precision: 精确
+    place: 海州、建康行在
+    summary: 本传载京令弃疾奉表归宋，高宗劳师建康召见嘉纳之；会张安国邵进已杀京降金，弃疾还至海州与众谋曰我缘主帅来归朝不期事变何以复命，乃约统制王世隆及忠义人马全福等径趋金营，安国方与金将酣饮，即众中缚之以归，金将追之不及。献俘行在，斩安国于市。改差江阴签判。「棄疾時年二十三」。时年二十二三正史有载，可精确。
+    confidence: 存疑
+    dispute: 「五十骑入五万众」数字不见于本传！本传仅记径趋金营、众中缚之以归；五十骑五万众出自洪迈《稼轩记》（赤手领五十骑缚取于五万众中）等别源，属夸饰笔记层，引用时须注明。
+    source_ids: [src-songshi-vol401]
+
+  # ── 阶段二：江湖郎官与美芹十论 ──────────────────────────────
+  - stage: 江湖郎官与美芹十论
+    stage_order: 6
+    title: 改差江阴签判
+    date:
+      text: 约1162—1164年间
+      year: 1162
+      range_end: 1164
+      precision: 范围
+    place: 江阴
+    summary: 擒张安国后仍授前官，改差江阴签判，以归正人身份始入南宋官序。任职起讫年份据职历推定。
+    confidence: 存疑
+    dispute: 本传不系签判起讫年份。
+    source_ids: [src-songshi-vol401]
+  - stage: 江湖郎官与美芹十论
+    stage_order: 7
+    title: 乾道四年通判建康府
+    date:
+      text: "1168年（乾道四年）"
+      year: 1168
+      precision: 精确
+    place: 建康
+    summary: 本传系年明确：乾道四年通判建康府。史臣考订此段仕历多据本传。
+    source_ids: [src-songshi-vol401]
+  - stage: 江湖郎官与美芹十论
+    stage_order: 8
+    title: 召对延和殿，进《美芹十论》《九议》，议不行
+    date:
+      text: "1170年（乾道六年）"
+      year: 1170
+      precision: 精确
+    place: 临安延和殿
+    summary: 孝宗召对延和殿，时虞允文当国帝锐意恢复，弃疾因论南北形势及三国晋汉人才持论劲直不为迎合。作九议并应问三篇美芹十论献于朝，言逆顺之理消长之势技之长短地之要害甚备。以讲和方定，议不行——《美芹十论》文库页系年1165，与乾道六年进呈说并存。
+    confidence: 存疑
+    dispute: 《美芹十论》成书年份有乾道元年(1165)与乾道六年(1170)进呈诸说；维基文库页面系年1165，本传系召对于乾道六年。
+    source_ids: [src-songshi-vol401, src-jiaxuanci]
+  - stage: 江湖郎官与美芹十论
+    stage_order: 9
+    title: 出知滁州，宽征薄赋创奠枕楼繁雄馆
+    date:
+      text: 约1172年前后
+      year: 1172
+      precision: 约
+    place: 滁州
+    summary: 迁司农寺主簿出知滁州。州罹兵烬井邑凋残，弃疾宽征薄赋招流散教民兵议屯田，乃创奠枕楼繁雄馆。
+    confidence: 存疑
+    dispute: 本传叙于乾道六年后不系年，知滁年份从通行乾道八年(1172)说。
+    source_ids: [src-songshi-vol401]
+  - stage: 江湖郎官与美芹十论
+    stage_order: 10
+    title: 叶衡力荐，提点江西刑狱平赖文政，加秘阁修撰
+    date:
+      text: 约1175—1176年之间
+      year: 1175
+      range_end: 1176
+      precision: 范围
+    place: 江西
+    summary: 辟江东安抚司参议官，留守叶衡雅重之，衡入相力荐弃疾慷慨有大略。迁仓部郎官、提点江西刑狱，平剧盗赖文政有功加秘阁修撰——茶商军之役为其平乱声名之顶点。
+    confidence: 存疑
+    dispute: 赖文政之平在淳熙二年(1175)，年份据孝宗纪与本传互证推定。
+    source_ids: [src-songshi-vol401]
+
+  # ── 阶段三：帅湘建飞虎军 ──────────────────────────────
+  - stage: 帅湘建飞虎军
+    stage_order: 11
+    title: 自湖北漕移湖南，知潭州兼湖南安抚，上弭盗疏
+    date:
+      text: "1179年（淳熙己亥）"
+      year: 1179
+      precision: 精确
+    place: 长沙
+    summary: 迁知隆兴府兼江西安抚，以大理少卿召，出为湖北转运副使，改湖南寻知潭州兼湖南安抚。盗连起湖湘悉讨平之，奏疏直言致盗之由：夫民为国本而贪吏迫使为盗，欲望陛下深思致盗之由讲求弭盗之术无徒恃平盗之兵。诏奖谕之。摸鱼儿小序自注淳熙己亥自湖北漕移湖南与本传互证。
+    source_ids: [src-songshi-vol401, src-jiaxuanci]
+  - stage: 帅湘建飞虎军
+    stage_order: 12
+    title: 创置湖南飞虎军，金字牌风波
+    date:
+      text: 约1180年
+      year: 1180
+      precision: 约
+    place: 长沙
+    summary: 复奏乞依广东摧锋荆南神劲福建左翼例别创一军以湖南飞虎为名专听帅臣节制调度。诏委以规画，乃度马殷营垒故基建寨栅，招步军二千人马军五百人，战马铁甲皆备。枢府沮挠，弃疾行愈力；议者以聚敛闻，降御前金字牌俾日下住罢，弃疾受而藏之，期一月飞虎营栅成，如期落成绘图缴进。军成，雄镇一方，为江上诸军之冠。
+    source_ids: [src-songshi-vol401]
+  - stage: 帅湘建飞虎军
+    stage_order: 13
+    title: 知隆兴府兼江西安抚，荒政分米济信州
+    date:
+      text: 约1180—1181年之间
+      year: 1180
+      range_end: 1181
+      precision: 范围
+    place: 隆兴府（南昌）
+    summary: 加右文殿修撰差知隆兴府兼江西安抚。江右大饥榜通衢曰闭籴者配强籴者斩，尽出公家官钱银器召官吏儒生商贾市民各举有干实者量借钱物运籴，连樯而至民赖以济；信守谢源明乞米救助，弃疾曰均为赤子皆王民也，即以米舟十之三予信。
+    source_ids: [src-songshi-vol401]
+
+  # ── 阶段四：台臣弹劾与带湖瓢泉闲居二十年 ────────────────────
+  - stage: 台臣弹劾与带湖瓢泉闲居二十年
+    stage_order: 14
+    title: 以言者落职，退居上饶带湖
+    date:
+      text: 约1182年起
+      year: 1182
+      precision: 约
+    place: 上饶带湖
+    summary: 以言者落职，久之主管冲佑观。自此退居江西上饶带湖，开始长达十余年的闲居生涯。陆游后来赠诗所谓退避声名称学稼十年高卧不出门即咏此段岁月。
+    confidence: 存疑
+    dispute: 罢官确切月份与带湖第宅落成年份本传不载，从通行淳熙八年(1181)冬罢说。
+    source_ids: [src-songshi-vol401, src-jiaxuanci]
+  - stage: 台臣弹劾与带湖瓢泉闲居二十年
+    stage_order: 15
+    title: 陈亮来访，同游鹅湖，会朱晦庵紫溪不至，贺新郎唱和
+    date:
+      text: 约1188年冬
+      year: 1188
+      precision: 约
+    place: 上饶鹅湖寺、紫溪
+    summary: 贺新郎把酒长亭说小序自记：陈同父自东阳来过余，留十日，与之同游鹅湖，且会朱晦庵于紫溪，不至，飘然东归。既别意中殊恋恋，雪深泥滑不得前，夜半闻邻笛悲甚为赋贺新郎以见意。陈亮索词并以贺新郎见和，往复唱和数四，是为文学史上著名的鹅湖之会与辛陈唱和。
+    confidence: 存疑
+    dispute: 铅山鹅湖之会年份据小序本事与年谱定为淳熙十五年(1188)，与朱陆鹅湖寺之会(1175)为两事，勿混。
+    source_ids: [src-jiaxuanci, src-songshi-vol401]
+  - stage: 台臣弹劾与带湖瓢泉闲居二十年
+    stage_order: 16
+    title: 绍熙二年起福建提刑，知福州兼福建安抚使，置备安库
+    date:
+      text: "1191年（绍熙二年）"
+      year: 1191
+      precision: 精确
+    place: 福州
+    summary: 绍熙二年起福建提点刑狱，召见迁大理少卿，加集英殿修撰知福州兼福建安抚使。务为镇静，未期岁积缗钱五十万榜曰备安库；又欲造万铠招强壮补军额严训练，事未行。
+    source_ids: [src-songshi-vol401]
+  - stage: 台臣弹劾与带湖瓢泉闲居二十年
+    stage_order: 17
+    title: 台臣王蔺劾其用钱如泥沙杀人如草芥，丐祠归；庆元元年落职
+    date:
+      text: 约1192—1195年之间
+      year: 1192
+      range_end: 1195
+      precision: 范围
+    place: 福州、上饶
+    summary: 本传直书：台臣王蔺劾其用钱如泥沙杀人如草芥，旦夕望端坐闽王殿，遂丐祠归。庆元元年落职，四年复主管冲佑观——用钱如泥沙杀人如草芥成为南宋官方对能臣的诛心之评，亦成后世理解辛弃疾处境的标志性文本。
+    source_ids: [src-songshi-vol401]
+  - stage: 台臣弹劾与带湖瓢泉闲居二十年
+    stage_order: 18
+    title: 徙居铅山瓢泉，以稼名轩
+    date:
+      text: 约1196年起
+      year: 1196
+      precision: 约
+    place: 铅山瓢泉
+    summary: 本传记其尝谓人生在勤当以力田为先，北方之人养生之具不求于人是以无甚富甚贫之家，故以稼名轩。闲居期间创作了破阵子丑奴儿西江月等大批代表作，前后家居近二十年，是其词艺的成熟期。
+    confidence: 存疑
+    dispute: 徙瓢泉年份系学界推定（庆元元年落职后）；闲居总时长二十年系综合带湖瓢泉两期而言。
+    source_ids: [src-songshi-vol401]
+
+  # ── 阶段五：嘉泰起复与京口怀古 ──────────────────────────────
+  - stage: 嘉泰起复与京口怀古
+    stage_order: 19
+    title: 起知绍兴府兼浙东安抚使
+    date:
+      text: 约1203年（嘉泰三年）
+      year: 1203
+      precision: 约
+    place: 绍兴
+    summary: 久之，起知绍兴府兼浙东安抚使。韩侂胄谋北伐起用主战旧臣，闲居多年的辛弃疾复出。陆游时居镜湖，有交游酬答。
+    confidence: 存疑
+    dispute: 本传但云久之不系年，嘉泰三年起复从通行说并得陆游诗作年旁证。
+    source_ids: [src-songshi-vol401, src-jiaxuanci]
+  - stage: 嘉泰起复与京口怀古
+    stage_order: 20
+    title: 差知镇江府，登北固亭作永遇乐南乡子
+    date:
+      text: 约1204—1205年之间
+      year: 1204
+      range_end: 1205
+      precision: 范围
+    place: 京口（镇江）
+    summary: 宁宗召见言盐法，加宝谟阁待制提举佑神观奉朝请，寻差知镇江府赐金带。在京口登北固亭，千古江山廉颇老矣之永遇乐与何处望神州的南乡子皆作于此期；旋坐缪举降朝散大夫提举冲佑观。永遇乐文库页系年1205。
+    source_ids: [src-songshi-vol401, src-jiaxuanci]
+
+  # ── 阶段六：开禧局中赍志而殁 ──────────────────────────────
+  - stage: 开禧局中赍志而殁
+    stage_order: 21
+    title: 进龙图阁知江陵府、试兵部侍郎皆辞免
+    date:
+      text: 约1205—1206年之间
+      year: 1205
+      range_end: 1206
+      precision: 范围
+    place: ""
+    summary: 进宝文阁待制又进龙图阁知江陵府，令赴行在奏事试兵部侍郎皆辞免——朝廷屡易其衔而不用其实。
+    confidence: 存疑
+    dispute: 各次除命的具体月份本传不载。
+    source_ids: [src-songshi-vol401]
+  - stage: 开禧局中赍志而殁
+    stage_order: 22
+    title: 进枢密都承旨，未受命而卒
+    date:
+      text: 约1207年（开禧三年）
+      year: 1207
+      precision: 约
+    place: 铅山（通行说）
+    summary: 进枢密都承旨，未受命而卒。赐对衣金带，守龙图阁待制致仕，特赠四官。北伐局中，这位六十八岁的老帅带着未竟的恢复之志赍志而殁。
+    confidence: 存疑
+    dispute: 本传不系卒年不载享年！通行开禧三年(1207)九月卒年六十八说出后世文献层（本传仅记未受命而卒），卒地铅山亦非本传明文，均存疑著录。
+    source_ids: [src-songshi-vol401]
+  - stage: 开禧局中赍志而殁
+    stage_order: 23
+    title: 身后恤典：赠光禄大夫，谢枋得请谥忠敏
+    date:
+      text: 绍定六年(1233)赠官，德祐初(1275)请谥
+      year: 1233
+      range_end: 1275
+      precision: 范围
+    place: ""
+    summary: 绍定六年赠光禄大夫。咸淳间史馆校勘谢枋得过弃疾墓旁僧舍，有疾声大呼于堂上若鸣其不平自昏暮至三鼓不绝，枋得秉烛作文祭之文成而声始息。德祐初枋得请于朝加赠少师谥忠敏。
+    source_ids: [src-songshi-vol401]
+
+works:
+  # 作品文本均实取自维基文库单篇页（简体转录自页面繁体原文，通行本层）：
+  # - 永遇乐 https://zh.wikisource.org/wiki/永遇樂_(辛棄疾)
+  # - 青玉案 https://zh.wikisource.org/wiki/青玉案_(辛棄疾)
+  # - 摸鱼儿 https://zh.wikisource.org/wiki/摸魚兒_(辛棄疾)
+  # - 水龙吟（登建康赏心亭/过南剑双溪楼）https://zh.wikisource.org/wiki/水龍吟_(辛棄疾)
+  # - 菩萨蛮 https://zh.wikisource.org/wiki/菩薩蠻_(辛棄疾)/書江西造口壁
+  # - 破阵子 https://zh.wikisource.org/wiki/破陣子_(辛棄疾)
+  # - 西江月 https://zh.wikisource.org/wiki/西江月_(辛棄疾)
+  # - 南乡子 https://zh.wikisource.org/wiki/南鄉子_(辛棄疾)
+  # - 贺新郎 https://zh.wikisource.org/wiki/賀新郎_(辛棄疾)
+  # - 丑奴儿 https://zh.wikisource.org/wiki/采桑子_(辛棄疾)
+  # - 美芹十论 https://zh.wikisource.org/wiki/美芹十論
+  - work_id: yongyule-jingkou-beiguting-huaigu
+    title: 永遇乐·京口北固亭怀古
+    alt_titles: []
+    genre: 词（慢词）
+    date:
+      text: "1205年"
+      year: 1205
+      precision: 精确
+    place: 京口北固亭
+    context: 知镇江府时登北固亭怀古，千古江山英雄无觅孙仲谋处起笔，借元嘉草草封狼居胥警韩侂胄轻启战端，末以凭谁问廉颇老矣尚能饭否自况。文库页面系年1205。
+    attribution: 确凿
+    excerpt: 千古江山，英雄无觅，孙仲谋处。……四十三年，望中犹记，烽火扬州路。……凭谁问：廉颇老矣，尚能饭否？
+    text_display: excerpt
+    themes: [怀古, 北伐, 用舍行藏]
+    influence: 明代杨慎推为本朝第一词（转述层），豪放词怀古之绝顶。
+    source_ids: [src-jiaxuanci]
+  - work_id: qingyuanan-yuanxi
+    title: 青玉案·元夕
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代无定说，一般系于闲居带湖时期
+      year: 1180
+      precision: 约
+    place: 临安或带湖（咏元夕）
+    context: 东风夜放花千树极写元夕繁华，结拍众里寻他千百度蓦然回首那人却在灯火阑珊处自甘寂寞之境。香港中学文凭考试指定文言篇章（文库页面分类明示）。
+    attribution: 确凿
+    excerpt: 东风夜放花千树，更吹落、星如雨。……众里寻他千百度；蓦然回首，那人却在，灯火阑珊处。
+    text_display: excerpt
+    themes: [元夕, 寂寞自守]
+    influence: 众里寻他千百度已成国民级名句，王国维借喻治学第三境界（转述层）。
+    confidence: 存疑
+    dispute: 是否有政治寄托历来有两读；创作年份无考。
+    source_ids: [src-jiaxuanci]
+  - work_id: moyuer-gengnengxiao-jifan-fengyu
+    title: 摸鱼儿·更能消几番风雨
+    alt_titles: []
+    genre: 词（慢词）
+    date:
+      text: "1179年（淳熙己亥）"
+      year: 1179
+      precision: 精确
+    place: 湖南漕移途中（小山亭饯席）
+    context: 小序自注淳熙己亥自湖北漕移湖南同官王正之置酒小山亭为赋，惜春怨春长门玉环飞燕层层寄托身世之忧，梁启超谓回肠荡气至于此极（转述层）。
+    attribution: 确凿
+    excerpt: 更能消几番风雨，匆匆春又归去。……君莫舞！君不见、玉环飞燕皆尘土！闲愁最苦。休去倚危栏，斜阳正在，烟柳断肠处。
+    text_display: excerpt
+    themes: [惜春, 身世寄托]
+    influence: 以婉约外壳包藏家国悲愤，被视为稼轩词风多样性的代表。
+    source_ids: [src-jiaxuanci]
+  - work_id: shuilongyin-dengjiankang-shangxinting
+    title: 水龙吟·登建康赏心亭
+    alt_titles: []
+    genre: 词（慢词）
+    date:
+      text: 约通判建康府期间（乾道四年以后）
+      year: 1169
+      precision: 约
+    place: 建康赏心亭
+    context: 楚天千里清秋遥岑远目献愁供恨，把吴钩看了栏杆拍遍无人会登临意，写江南游子无人知晓的恢复壮心。
+    attribution: 确凿
+    excerpt: 楚天千里清秋，水随天去秋无际。……把吴钩看了，栏杆拍遍，无人会，登临意。……倩何人唤取，红巾翠袖，揾英雄泪！
+    text_display: excerpt
+    themes: [登临, 英雄失路]
+    influence: 其早期豪放词的奠基之作，中学教材常选篇目。
+    confidence: 存疑
+    dispute: 系年有建康通判任(1169前后)与江东参议任(1174前后)诸说。
+    source_ids: [src-jiaxuanci]
+  - work_id: pusaman-shujiangxi-zaokou-bi
+    title: 菩萨蛮·书江西造口壁
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 约淳熙二三年间提点江西刑狱任内
+      year: 1176
+      precision: 约
+    place: 江西造口（郁孤台）
+    context: 郁孤台下清江水中间多少行人泪，西北望长安可怜无数山，青山遮不住毕竟东流去——造口怀伤靖康以来中原沦丧之痛。
+    attribution: 确凿
+    excerpt: 郁孤台下清江水，中间多少行人泪。西北望长安，可怜无数山。青山遮不住，毕竟东流去。
+    text_display: full
+    themes: [家国之痛, 山水寄慨]
+    influence: 四十年后罗大经犹叹其忠愤之气拂拂指端（转述层），宋词中家国书写的巅峰之作。
+    confidence: 存疑
+    dispute: 系年从提点江西刑狱任内通说；郁孤台下所指行人泪本事有靖康隆祐太后奔虔州说等多种解读。
+    source_ids: [src-jiaxuanci]
+  - work_id: pozhenzi-wei-chentongfu-fuzhuangci-yijizhi
+    title: 破阵子·为陈同甫赋壮词以寄之
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 约闲居带湖时期，鹅湖之会后与陈亮唱和之际
+      year: 1188
+      range_end: 1190
+      precision: 范围
+    place: 上饶带湖
+    context: 题为陈同甫赋壮词以寄之，醉里挑灯看剑梦回吹角连营，了却君王天下事赢得生前身后名，结拍可怜白发生陡然跌落。
+    attribution: 确凿
+    excerpt: 醉里挑灯看剑，梦回吹角连营。……马作的卢飞快，弓如霹雳弦惊。了却君王天下事，赢得生前身后名。可怜白发生！
+    text_display: excerpt
+    themes: [军旅梦境, 壮志难酬]
+    influence: 中学教材必选名篇，梦里沙场与白发现实的对照成为中国式英雄迟暮的经典表达。
+    confidence: 存疑
+    dispute: 系年从鹅湖唱和期通说，确切年份无考。
+    source_ids: [src-jiaxuanci]
+  - work_id: xijiangyue-yexing-huangsha-daozhong
+    title: 西江月·夜行黄沙道中
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 约闲居带湖时期
+      year: 1183
+      precision: 约
+    place: 上饶黄沙岭道中
+    context: 明月别枝惊鹊清风半夜鸣蝉稻花香里说丰年听取蛙声一片，闲居中夜行道上的丰年喜悦。
+    attribution: 确凿
+    excerpt: 明月别枝惊鹊，清风半夜鸣蝉。稻花香里说丰年，听取蛙声一片。七八个星天外，两三点雨山前。旧时茅店社林边，路转溪桥忽见。
+    text_display: full
+    themes: [田园, 夏夜]
+    influence: 乡村词的典范之作，教材常选。
+    confidence: 存疑
+    dispute: 系年只能框定在带湖闲居期内。
+    source_ids: [src-jiaxuanci]
+  - work_id: nanxiangzi-dengjingkou-beiguting-youhuai
+    title: 南乡子·登京口北固亭有怀
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 约1204—1205年间知镇江府时
+      year: 1204
+      range_end: 1205
+      precision: 范围
+    place: 京口北固亭
+    context: 与永遇乐同期同地之作。何处望神州满眼风光北固楼，天下英雄谁敌手曹刘生子当如孙仲谋，借孙权讽当朝无人。
+    attribution: 确凿
+    excerpt: 何处望神州？满眼风光北固楼。千古兴亡多少事，悠悠。不尽长江滚滚流。……天下英雄谁敌手？曹刘。生子当如孙仲谋。
+    text_display: excerpt
+    themes: [怀古, 讽今]
+    influence: 生子当如孙仲谋化曹操语入词，问答体的豪放小令代表。
+    source_ids: [src-jiaxuanci]
+  - work_id: hexinlang-shenyiwushuaiyi
+    title: 贺新郎·甚矣吾衰矣
+    alt_titles: []
+    genre: 词（慢词）
+    date:
+      text: 约闲居期晚年，独坐停云堂所作
+      year: 1196
+      range_end: 1202
+      precision: 范围
+    place: 铅山（一说带湖）停云堂
+    context: 小序自记邑中园亭仆皆为赋此词一日独坐停云水声山色竞来相娱，庶几仿佛渊明思亲友之意。我见青山多妩媚料青山见我应如是、不恨古人吾不见恨古人不见吾狂耳为其狂态自供状。
+    attribution: 确凿
+    excerpt: 甚矣吾衰矣。怅平生、交游零落，只今余几！……我见青山多妩媚，料青山见我应如是。……不恨古人吾不见，恨古人不见吾狂耳。知我者，二三子。
+    text_display: excerpt
+    themes: [知己之叹, 狂与寂寞]
+    influence: 岳珂桯史记其每宴必命侍妓歌此阕自诵其警句（笔记层转述），狂与孤独的双重画像。
+    confidence: 存疑
+    dispute: 系年无定说；岳珂桯史所记本事属笔记层未经核实。
+    source_ids: [src-jiaxuanci]
+  - work_id: hexinlang-bajiu-changting-shuo
+    title: 贺新郎·把酒长亭说
+    alt_titles: [贺新郎·陈同父自东阳来过余]
+    genre: 词（慢词）
+    date:
+      text: 约1188年冬（淳熙十五年）
+      year: 1188
+      precision: 约
+    place: 上饶鹅湖、方村泉湖四望楼
+    context: 小序详记鹅湖之会本事：陈同父自东阳来过余留十日与之同游鹅湖且会朱晦庵于紫溪不至飘然东归，既别余意中殊恋恋雪深泥滑不得前，夜半投宿吴氏泉湖四望楼闻邻笛悲甚为赋贺新郎以见意。看渊明风流酷似卧龙诸葛以许陈亮。
+    attribution: 确凿
+    excerpt: 把酒长亭说。看渊明、风流酷似，卧龙诸葛。……铸就而今相思错，料当初、费尽人间铁。长夜笛，莫吹裂。
+    text_display: excerpt
+    themes: [友谊, 别情]
+    influence: 辛陈唱和五章之首，小序本身即南宋文人交游的第一手文献。
+    source_ids: [src-jiaxuanci]
+  - work_id: chounuer-shu-boshan-daozhong-bi
+    title: 丑奴儿·书博山道中壁
+    alt_titles: [采桑子·书博山道中壁]
+    genre: 词（小令）
+    date:
+      text: 约闲居带湖时期
+      year: 1189
+      precision: 约
+    place: 上饶博山道中
+    context: 少年不识愁滋味爱上层楼与而今识尽愁滋味欲说还休对勘，却道天凉好个秋以淡语收至痛。
+    attribution: 确凿
+    excerpt: 少年不识愁滋味，爱上层楼。爱上层楼，为赋新词强说愁。而今识尽愁滋味，欲说还休。欲说还休，却道天凉好个秋。
+    text_display: full
+    themes: [愁绪, 人生况味]
+    influence: 强说愁与天凉好个秋进入日常汉语，教材常选。
+    confidence: 存疑
+    dispute: 系年只能框定在带湖闲居期内。
+    source_ids: [src-jiaxuanci]
+  - work_id: shuilongyin-guo-nanjian-shuangxilou
+    title: 水龙吟·过南剑双溪楼
+    alt_titles: []
+    genre: 词（慢词）
+    date:
+      text: 约绍熙间闽中时期
+      year: 1191
+      range_end: 1192
+      precision: 范围
+    place: 南剑州双溪楼
+    context: 举头西北浮云倚天万里须长剑，人言此地夜深长见斗牛光焰，借延津剑气神话写恢复之志与风雷鱼龙的险阻。
+    attribution: 确凿
+    excerpt: 举头西北浮云，倚天万里须长剑。……千古兴亡，百年悲笑，一时登览。
+    text_display: excerpt
+    themes: [剑气, 山川奇想]
+    influence: 以神话意象承载政治抱负的后期代表作。
+    confidence: 存疑
+    dispute: 系年有绍熙闽中说与晚年福建安抚使再任说等分歧。
+    source_ids: [src-jiaxuanci]
+  - work_id: meiqin-shilun
+    title: 美芹十论
+    alt_titles: [御戎十论]
+    genre: 政论奏议
+    date:
+      text: 成书约1165年（文库页系年），乾道六年(1170)献于朝
+      year: 1165
+      range_end: 1170
+      precision: 范围
+    place: ""
+    context: 总叙自述臣尝鸠众二千隶耿京为掌书记共籍兵二十五万纳款于朝及大父辛赞指画山河事，正文审势察情观衅自治守淮屯田致勇防微久任详战十篇，三言虏人之弊七言朝廷之所当行。野人美芹而献于君亦爱主之诚可取自解其名。本传载与九议应问同献，以讲和方定议不行。
+    attribution: 确凿
+    excerpt: 臣闻事未至而预图，则处之常有余；事既至而后计，则应之常不足。……野人美芹而献于君，亦爱主之诚可取。
+    text_display: excerpt
+    themes: [恢复方略, 军政]
+    influence: 南宋主战派战略思想的系统文本，审势篇形与势之辨为古代战略分析名论。
+    confidence: 存疑
+    dispute: 成书与进呈年份有1165与1170两说并存；真伪历代无异辞，个别篇目文字异同有待善本校核。
+    source_ids: [src-songshi-vol401, src-jiaxuanci]
+
+footprints:
+  - name: 济南历城
+    modern_name: 山东省济南市历城区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约1140年生，少年时期在此"
+      year: 1140
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-songshi-vol401]
+  - name: 燕山
+    modern_name: 北京市西南至河北北部一线
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 两随计吏谛观形势之行迹路线系据美芹十论自述推定
+    visit_date:
+      text: 约1150年代两次随计吏抵燕山
+      year: 1150
+      range_end: 1160
+      precision: 范围
+    kind: 游历
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 正史无载，出美芹十论总叙自述，具体路线不可考。
+    source_ids: [src-jiaxuanci]
+  - name: 海州
+    modern_name: 江苏省连云港市海州区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1162年奉表归宋还至海州，与众谋缚张安国"
+      year: 1162
+      precision: 精确
+    kind: 游历
+    route_order: 3
+    memorial_only: false
+    source_ids: [src-songshi-vol401]
+  - name: 江阴
+    modern_name: 江苏省江阴市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1162—1164年任江阴签判
+      year: 1162
+      range_end: 1164
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任职起讫年份据职历推定，本传不系年。
+    source_ids: [src-songshi-vol401]
+  - name: 建康
+    modern_name: 江苏省南京市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1162年高宗劳师建康召见；乾道四年起通判建康府"
+      year: 1162
+      range_end: 1172
+      precision: 范围
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-songshi-vol401]
+  - name: 滁州
+    modern_name: 安徽省滁州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1172年前后知滁州
+      year: 1172
+      precision: 约
+    kind: 任职
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 知滁年份本传不系年，从通行乾道八年说。
+    source_ids: [src-songshi-vol401]
+  - name: 长沙
+    modern_name: 湖南省长沙市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1179—1181年知潭州兼湖南安抚，创建飞虎军"
+      year: 1179
+      range_end: 1181
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    source_ids: [src-songshi-vol401]
+  - name: 隆兴府（南昌）
+    modern_name: 江西省南昌市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1180—1181年知隆兴府兼江西安抚行荒政
+      year: 1180
+      range_end: 1181
+      precision: 范围
+    kind: 任职
+    route_order: 8
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 两度除知隆兴府，首任到任与离任月份无载。
+    source_ids: [src-songshi-vol401]
+  - name: 福州
+    modern_name: 福建省福州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1191年起福建提点刑狱，后知福州兼福建安抚使"
+      year: 1191
+      range_end: 1194
+      precision: 范围
+    kind: 任职
+    route_order: 9
+    memorial_only: false
+    source_ids: [src-songshi-vol401]
+  - name: 上饶带湖
+    modern_name: 江西省上饶市带湖遗址带湖新村一带
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 带湖第宅地望系后世考订，坐标待接入体系
+    visit_date:
+      text: 约1182—1196年退居于此，其后仍常往来
+      year: 1182
+      precision: 约
+    kind: 居住
+    route_order: 10
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 罢官退居确切年份本传不载，从通行淳熙八年冬罢说。
+    source_ids: [src-songshi-vol401, src-jiaxuanci]
+  - name: 铅山瓢泉
+    modern_name: 江西省铅山县稼轩乡瓢泉
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1196年起徙居瓢泉，以稼名轩
+      year: 1196
+      precision: 约
+    kind: 居住
+    route_order: 11
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 徙瓢泉年份系学界推定。
+    source_ids: [src-songshi-vol401]
+  - name: 绍兴
+    modern_name: 浙江省绍兴市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1203年起知绍兴府兼浙东安抚使
+      year: 1203
+      precision: 约
+    kind: 任职
+    route_order: 12
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 起复年份本传作久之，从嘉泰三年通行说。
+    source_ids: [src-songshi-vol401]
+  - name: 京口（镇江）
+    modern_name: 江苏省镇江市北固山
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1204—1205年差知镇江府，登北固亭作永遇乐
+      year: 1204
+      range_end: 1205
+      precision: 范围
+    kind: 任职
+    route_order: 13
+    memorial_only: false
+    source_ids: [src-songshi-vol401, src-jiaxuanci]
+  - name: 铅山（卒葬地）
+    modern_name: 江西省铅山县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1207年卒，葬铅山（通行说）
+      year: 1207
+      precision: 约
+    kind: 逝世
+    route_order: 14
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 卒年卒地均非本传明文；本传仅记进枢密都承旨未受命而卒。卒地铅山、葬所及墓旁谢枋得祭故事出后世记载层。
+    source_ids: [src-songshi-vol401]
+
+relations:
+  - relation_type: 社群
+    target_id: zhuxi
+    direction: 双向
+    period:
+      text: 约1181—1200年间游武夷、题斋室，至朱熹殁弃疾往哭
+      year: 1181
+      range_end: 1200
+      precision: 范围
+    evidence: 本传明载：弃疾尝同朱熹游武夷山赋九曲棹歌，熹书克己复礼夙兴夜寐题其二斋室——克己复礼是朱熹对辛的人品期许。熹殁伪学禁方严门生故旧至无送葬者，弃疾为文往哭之曰所不朽者垂万世名孰谓公死凛凛犹生——在庆元党禁最酷烈时的公开吊唁尤为难得。另稼轩词贺新郎把酒长亭说小序自记与陈亮同游鹅湖且会朱晦庵于紫溪不至，可见三人过从之约。
+    source_ids: [src-songshi-vol401, src-jiaxuanci]
+  - relation_type: 社群
+    target_id: luyou
+    direction: 双向
+    period:
+      text: 嘉泰末开禧初（约1203—1205年）相互推许
+      year: 1203
+      range_end: 1205
+      precision: 范围
+    evidence: 陆游《送辛幼安殿撰造朝》（剑南诗稿，公版全文库多源一致实取）：稼轩落笔凌鲍谢，退避声名称学稼……大材小用古所叹，管仲萧何实流亚……深仇积愤在逆胡，不用追思灞亭夜——既推其文才将略，又诫其勿因私怨轻发，为辛陆晚年交往与相互评价的直接诗文证据。来源登记待主会话补录（剑南诗稿单篇）。
+    source_ids: []
+
+reception:
+  - era: 同时代
+    evaluator: 朱熹
+    quote: 克己复礼；夙兴夜寐
+    text_display: excerpt
+    comment: 本传载朱熹手书二语题辛弃疾二斋室，是同时代大儒对其人格修养的直接期许；朱熹殁时伪学禁方严，弃疾为文往哭曰所不朽者垂万世名孰谓公死凛凛犹生，亦见二人相知之深。
+    source_ids: [src-songshi-vol401]
+  - era: 同时代
+    evaluator: 陈亮（辛陈唱和圈）
+    quote: ""
+    text_display: none
+    comment: 铅山鹅湖之会后陈亮以贺新郎见和往复唱和数四（同父见和再用韵答之等俱在稼轩词内），时人视为词坛主战阵营的双璧之交；陈亮一方评语引文须另核龙川文集后补入，暂作中立转述。
+    source_ids: [src-jiaxuanci]
+  - era: 历代批评
+    evaluator: 谢枋得（宋末）
+    quote: ""
+    text_display: none
+    comment: 本传记德祐初谢枋得请于朝加赠少师谥忠敏，并载其过墓旁僧舍秉烛作文祭之文成而声始息的传说——宋遗民的追尊确立了忠敏这一官方定评。
+    source_ids: [src-songshi-vol401]
+  - era: 历代批评
+    evaluator: 刘克庄、王士祯等历代词论（转述）
+    quote: ""
+    text_display: none
+    comment: 刘克庄辛稼轩集序称其大声镗鞳小声铿鍧横绝六合扫空万古（转述）；后世词论有词中之龙之称（常见归于明清词话系统）。上述引文本次未逐一实取原句，确切首出待核后再改为实引，现按转述层著录。
+    confidence: 存疑
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦归正人身份与仕途困境、以文为词与英雄语的词体突破、稼轩词编年笺注与版本源流、五十骑故事的史料层次辨析等议题；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 破阵子青玉案永遇乐水龙吟菩萨蛮丑奴儿等长期入选中小学语文教材，众里寻他千百度成为国民级语汇；青玉案系香港中学文凭考试指定文言篇章（文库页面分类明示）。教材版本信息随学期变动，录入时须另行核验当期篇目。
+    source_ids: [src-jiaxuanci]
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中的辛弃疾形象多为擒张安国与北固亭怀古场面的戏剧化敷演，不作信史依据；网络传播集中于醉里挑灯看剑等名句，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-songshi-vol401, src-jiaxuanci]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。23条年谱（6阶段）、13种作品（12词+美芹十论）、14处足迹、2组关系（社群朱熹/社群陆游）、7层接受史。生平全部实取维基文库宋史卷401；12首词+美芹十论实取维基文库单篇页；陆游诗经公版全文库多源比对。关键发现：五十骑入五万众不见本传（洪迈稼轩记夸饰层）、本传不系卒年不载享年不载卒地，均已落dispute。"}

@@ -1,0 +1,652 @@
+# 韦应物全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 全唐诗小传层（维基文库《全唐詩/卷186》卷首实取） | 结论与置信 |
+# |---|---|---|
+# | 名号籍贯 | 韋應物京兆長安人 | 确定；无正史本传，此为正史外最权威小传 |
+# | 三卫郎经历 | 少以三衛郎事明皇晚更折節讀書 | 确定 |
+# | 历职 | 永泰中授京兆功曹遷洛陽丞；大曆十四年自鄠令制除櫟陽令以疾辭不就；建中三年拜比部員外郎出爲滁州刺史；久之調江州追赴闕改左司郎中復出爲蘇州刺史 | 确定；惟诸任起讫年份小传多不系年，仅大历十四年有明确纪年 |
+# | 性情交游 | 應物性高潔所在焚香埽地而坐唯顧況劉長卿丘丹秦系皎然之儔得廁賓客與之酬倡 | 确定；顾况刘长卿等未入 figures.yaml 故不建关系 |
+# | 诗史定位 | 其詩閑澹簡遠人比之陶潛稱陶韋云 | 确定；陶韦并称为唐人公论而非后人追封 |
+#
+# | 事实点 | 唐才子传层（《唐才子傳/卷四》维基文库实取） | 结论与置信 |
+# |---|---|---|
+# | 少年气质 | 應物京兆人也尚俠初以三衛郎事玄宗及崩始悔折節讀書 | 笔记层确定；「及崩」指玄宗崩（762），悔悟折节系于是年后 |
+# | 性情 | 為性高潔鮮食寡欲所居必焚香掃地而坐冥心象外 | 笔记层确定 |
+# | 历职异文 | 天寶時扈從遊幸；永泰中任洛陽丞遷京兆府功曹；大曆十四年自鄠縣令制除櫟陽令以疾辭歸寓善福寺精舍；建中二年由前資除比部員外郎出為滁州刺史；居傾之改江州刺史追赴闕改左司郎中或媢其進媒孽之貞元初又出為蘇州刺史罷居永定齋心屏除人事 | 笔记层；与全唐诗小传两处抵牾——功曹洛阳丞先后互倒、比部员外郎系年建中二/三年之差，均按存疑著录 |
+# | 太仆少卿条 | 大和中以太僕少卿兼御史中丞為諸道鹽鐵轉運江淮留後 | 年代抵牾存疑；韦应物卒于贞元间，「大和中」（827—835）于时序不可能，学界视为辛文房误记 |
+# | 自述诗 | 晚歲逢楊開府贈詩言事曰少事武皇帝無賴恃恩私……讀書事已晚把筆學題詩 | 作品文本层；其少年豪纵的自供状 |
+# | 论云 | 獨應物馳驟建安以還各有風韻自成一家之體清深雅麗雖詩人之盛亦罕其倫 | 元人批评层 |
+#
+# | 事实点 | 白居易书层（《與元九書》维基文库实取，全唐文卷675/白氏長慶集卷45系统） | 结论与置信 |
+# |---|---|---|
+# | 白居易评语 | 如近歲韋蘇州歌行才麗之外頗近興諷其五言詩又高雅閑澹自成一家之體今之秉筆者誰能及之然當蘇州在時人亦未甚愛重必待身後然人貴之 | 确定（逐字实取）；同时代人评韦的第一手文献 |
+#
+# | 事实点 | 作品文本层（维基文库单篇页与全唐诗卷186/187/188/192/193实取） | 结论与置信 |
+# |---|---|---|
+# | 诗歌文本 | 滁州西涧寄李儋元锡秋夜寄丘二十二员外淮上喜会梁川故人赋得暮雨送李胄观田家拟古诗十二首寺居独夜寄崔主簿郡斋雨中与诸文士燕集与友生野饮效陶体效陶彭泽燕李录事 | 通行本层；各篇异文一作随页注录，未深校善本 |
+# | 生卒 | 无任何史料明载生卒年 | 学界推定约737—约791年后，全部按推定+dispute著录 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: weiyingwu
+
+profile:
+  courtesy_name: （史无明载）
+  art_name: 韦苏州（任所尊称）
+  aliases: [韦左司, 韦江州, 陶韦]
+  gender: 男
+  ethnicity: ""
+  ancestry: 京兆杜陵（据《元和姓纂》韦氏京兆房通说，小传作京兆长安人）
+  birthplace: 京兆长安
+  death_place: 无确载（罢苏州刺史后罢居永定，事迹渐晦）
+  offices: [三卫郎, 洛阳丞, 京兆府功曹, 鄠县令, 栎阳令（以疾辞不就）, 比部员外郎, 滁州刺史, 江州刺史, 左司郎中, 苏州刺史]
+  fields: [文学]
+  roles: [诗人]
+  summary: 山水田园诗继陶潜王维之后的关键一环，唐人称陶韦；「邑有流亡愧俸钱」的仁者之言与「高雅闲淡自成一家之体」的诗风，使他成为大历诗坛最干净的一个人。
+
+timeline:
+  # ── 阶段一：京兆少年与三卫郎侍玄宗 ────────────────
+  - stage: 京兆少年与三卫郎侍玄宗
+    stage_order: 1
+    title: 出生于京兆长安
+    date:
+      text: 约737年（推定）
+      year: 737
+      precision: 约
+    place: 京兆长安
+    summary: 韦应物生于京兆长安。生年无任何史料明载，学界据天宝中已得侍卫之职及其自述「与君十五侍皇闱」倒推，通说约开元二十五年前后（约737）。
+    confidence: 存疑
+    dispute: 生年为纯推定值，诸家年谱出入数年；本卷从通说约737著录。
+    source_ids: [src-qts-weiyingwu]
+  - stage: 京兆少年与三卫郎侍玄宗
+    stage_order: 2
+    title: 少以三卫郎事玄宗，扈从游幸
+    date:
+      text: 天宝年间，具体起讫不详
+      year: 742
+      range_end: 755
+      precision: 范围
+    place: 长安宫廷
+    summary: 小传载少以三卫郎事明皇，唐才子传谓尚侠，天宝时扈从游幸。《燕李录事》自述与君十五侍皇闱，晓拂炉烟上赤墀……雪下骊山沐浴时；《逢杨开府》更自供少事武皇帝，无赖恃恩私，身作里中横，家藏亡命儿——是少年豪纵的亲笔供状。
+    source_ids: [src-qts-weiyingwu, src-tangcaizizhuan]
+
+  # ── 阶段二：安史乱后折节读书 ────────────────────
+  - stage: 安史乱后折节读书
+    stage_order: 3
+    title: 玄宗崩，始悔，折节读书
+    date:
+      text: "762年玄宗崩之后"
+      year: 762
+      precision: 约
+    place: 长安
+    summary: 唐才子传载初以三卫郎事玄宗，及崩，始悔，折节读书——小传则总括为晚更折节读书。三卫建制随天宝乱世瓦解，其凭荫入仕的旧路断绝，遂由斗鸡走马的贵游少年转向案头灯火。
+    confidence: 存疑
+    dispute: 悔悟折节的确切年份笔记只系于玄宗崩后，具体转变过程无考。
+    source_ids: [src-tangcaizizhuan, src-qts-weiyingwu]
+  - stage: 安史乱后折节读书
+    stage_order: 4
+    title: 折节读书，行迹晦暗不明
+    date:
+      text: 约763—765年之间
+      year: 763
+      range_end: 765
+      precision: 范围
+    place: 长安一带
+    summary: 自述读书事已晚，把笔学题诗，两府始收迹，南宫谬见推——由武职余荫转入文官序列的过渡期，史料几近空白，只能从其晚年追忆诗中钩沉。
+    confidence: 存疑
+    dispute: 此期无直接记载，行迹系据《逢杨开府》追述逆推。
+    source_ids: [src-tangcaizizhuan]
+
+  # ── 阶段三：州县与台省历职 ──────────────────────
+  - stage: 州县与台省历职
+    stage_order: 5
+    title: 永泰中历洛阳丞与京兆府功曹
+    date:
+      text: 永泰年间（约765—766）
+      year: 765
+      range_end: 766
+      precision: 范围
+    place: 洛阳、长安
+    summary: 全唐诗小传作永泰中授京兆功曹迁洛阳丞，唐才子传作永泰中任洛阳丞迁京兆府功曹——两源对两官先后记载互倒，孰是难决，要之永泰中已再入仕途。
+    confidence: 存疑
+    dispute: 功曹与洛阳丞的先后次序两说互倒；本卷从小传著录而不下断语。
+    source_ids: [src-qts-weiyingwu, src-tangcaizizhuan]
+  - stage: 州县与台省历职
+    stage_order: 6
+    title: 大历十四年自鄠令制除栎阳令，以疾辞归，寓善福寺精舍
+    date:
+      text: "779年"
+      year: 779
+      precision: 精确
+    place: 鄠县、栎阳、长安沣上善福寺
+    summary: 小传载大历十四年自鄠令制除栎阳令，以疾辞不就；唐才子传补出辞归后的去向——寓善福寺精舍。卷中沣上、善福寺诸诗即此期前后所作，焚香扫地而坐的生活方式已成常态。
+    source_ids: [src-qts-weiyingwu, src-tangcaizizhuan]
+  - stage: 州县与台省历职
+    stage_order: 7
+    title: 建中中拜比部员外郎
+    date:
+      text: 约781—782年之间
+      year: 781
+      range_end: 782
+      precision: 范围
+    place: 长安
+    summary: 由前资除比部员外郎，重回台省。系年两源有一年之差：全唐诗小传作建中三年，唐才子传作建中二年。
+    confidence: 存疑
+    dispute: 比部员外郎之除，小传系建中三年、唐才子传系建中二年，本卷按范围著录。
+    source_ids: [src-qts-weiyingwu, src-tangcaizizhuan]
+
+  # ── 阶段四：三州刺史 ────────────────────────────
+  - stage: 三州刺史
+    stage_order: 8
+    title: 出为滁州刺史
+    date:
+      text: 约782—783年之间
+      year: 782
+      range_end: 783
+      precision: 范围
+    place: 滁州
+    summary: 出为滁州刺史，是其第一个方镇之任。滁州西涧、寄李儋元锡等名作皆系于此期前后。
+    confidence: 存疑
+    dispute: 出刺滁州的具体年份小传不系年，据比部员外郎除年与滁州任次第推定。
+    source_ids: [src-qts-weiyingwu]
+  - stage: 三州刺史
+    stage_order: 9
+    title: 滁州任上作滁州西涧等
+    date:
+      text: 约783年（滁州任期内，系年从通说）
+      year: 783
+      precision: 约
+    place: 滁州西涧
+    summary: 独怜幽草涧边生，上有黄鹂深树鸣。春潮带雨晚来急，野渡无人舟自横——幽草野渡的自况成为中唐山水绝句的极则。同期的寄李儋元锡写出邑有流亡愧俸钱，身多疾病思田里与闻道欲来相问讯，西楼望月几回圆皆刺史任上的仁者之言。
+    confidence: 存疑
+    dispute: 滁州西涧与寄李儋元锡均无原注系年，从滁州任上通说；亦有学者系寄李儋元锡于江州任。
+    source_ids: [src-qts-weiyingwu]
+  - stage: 三州刺史
+    stage_order: 10
+    title: 改江州刺史
+    date:
+      text: 约784—785年之间
+      year: 784
+      range_end: 785
+      precision: 范围
+    place: 江州
+    summary: 居倾之改江州刺史（唐才子传语），小传作久之调江州。由滁徙江，仍在江南西道地方任上。
+    confidence: 存疑
+    dispute: 徙江州年份系据滁州任期与后续赴阙时间倒推。
+    source_ids: [src-qts-weiyingwu, src-tangcaizizhuan]
+  - stage: 三州刺史
+    stage_order: 11
+    title: 追赴阙，改左司郎中
+    date:
+      text: 约786—787年之间
+      year: 786
+      range_end: 787
+      precision: 范围
+    place: 长安
+    summary: 追赴阙改左司郎中；唐才子传特书或媢其进，媒孽之——升迁遭人中伤，为再度外放埋下伏线。世称韦左司由此。
+    confidence: 存疑
+    dispute: 除左司郎中年份无载，据贞元纪元前后仕历节奏推定。
+    source_ids: [src-qts-weiyingwu, src-tangcaizizhuan]
+  - stage: 三州刺史
+    stage_order: 12
+    title: 贞元初复出为苏州刺史
+    date:
+      text: 约787—788年之间（贞元初）
+      year: 787
+      range_end: 788
+      precision: 范围
+    place: 苏州
+    summary: 复出为苏州刺史，世称韦苏州由此定名。郡斋雨中与诸文士燕集即苏州任上之作——兵卫森画戟，燕寝凝清香，而自惭居处崇，未睹斯民康，宴集中仍不忘民瘼。
+    confidence: 存疑
+    dispute: 始刺苏州年份诸谱互有出入，从贞元初通说。
+    source_ids: [src-qts-weiyingwu]
+  - stage: 三州刺史
+    stage_order: 13
+    title: 苏州任上与文士酬倡
+    date:
+      text: 约788—790年之间
+      year: 788
+      range_end: 790
+      precision: 范围
+    place: 苏州
+    summary: 小传载性高洁，唯顾况、刘长卿、丘丹、秦系、皎然之俦得厕宾客，与之酬倡——其交游圈尽在方外与诗客之间，吴中盛文史群彦今汪洋即此时风会。
+    confidence: 存疑
+    dispute: 具体酬倡年份无考，按苏州任内框定。
+    source_ids: [src-qts-weiyingwu]
+
+  # ── 阶段五：罢官寓居与事迹渐晦 ──────────────────
+  - stage: 罢官寓居与事迹渐晦
+    stage_order: 14
+    title: 罢苏州刺史，罢居永定
+    date:
+      text: 约790—791年之后（推定）
+      year: 790
+      range_end: 791
+      precision: 范围
+    place: 永定（一说苏州永定寺）
+    summary: 罢郡后贫无所归，寓居永定，斋心屏除人事——唐才子传八字写尽其晚境。身后丧葬之事史无一字。
+    confidence: 存疑
+    dispute: 罢任与寓居年份系据贞元仕历推定；寓居地永定通说为苏州永定寺，亦有异说。
+    source_ids: [src-tangcaizizhuan]
+  - stage: 罢官寓居与事迹渐晦
+    stage_order: 15
+    title: 卒年无确载，约贞元末
+    date:
+      text: 约791年后（推定）
+      year: 791
+      precision: 约
+    place: ""
+    summary: 韦应物无正史本传，卒年无确载。学界据其贞元间犹在世的最晚行迹，推定卒于贞元末年（约791年之后），享年约五十五六。
+    confidence: 存疑
+    dispute: 卒年为纯推定值，诸家有贞元七八年前后至贞元末诸说；唐才子传大和中以太仆少卿兼御史中丞为诸道盐铁转运江淮留后一条与卒年抵牾（大和系827—835年号），学界公认为辛文房误记，本卷不采。
+    source_ids: [src-qts-weiyingwu, src-tangcaizizhuan]
+
+works:
+  - work_id: chu-zhou-xi-jian
+    title: 滁州西涧
+    alt_titles: [西涧]
+    genre: 七言绝句
+    date:
+      text: 约783年，滁州任内（通说）
+      year: 783
+      precision: 约
+    place: 滁州西涧
+    context: 幽草黄鹂春潮野渡，末句野渡无人舟自横以无所求待的姿态自况，是中唐山水绝句的极则。
+    attribution: 确凿
+    excerpt: 独怜幽草涧边生，上有黄鹂深树鸣。春潮带雨晚来急，野渡无人舟自横。
+    text_display: full
+    themes: [山水, 闲淡, 自况]
+    influence: 入选历代选本与语文教材，野渡无人舟自横成为国民名句；宋人已以其诗镇渡江风波（冷斋夜话所记，笔记层）。
+    confidence: 确定
+    dispute: 维基文库单篇页注幽草一作芳草、生一作行、深树一作处，文本有小异而无碍句意。
+    source_ids: [src-qts-weiyingwu]
+
+  - work_id: ji-li-dan-yuan-xi
+    title: 寄李儋元锡
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 刺史任上（滁州说为主流，一说江州）
+      year: 783
+      precision: 约
+    place: 滁州（一说江州）
+    context: 世事茫茫难自料写乱后士人的普遍惶惑，邑有流亡愧俸钱则是刺史对治下饥民的道德自省，被后世目为仁者之言。
+    attribution: 确凿
+    excerpt: 身多疾病思田里，邑有流亡愧俸钱。闻道欲来相问讯，西楼望月几回圆。
+    text_display: excerpt
+    themes: [忧民, 官德, 怀友]
+    influence: 宋代即传为名篇；邑有流亡愧俸钱成为历代循吏自警的格言。
+    confidence: 确定
+    dispute: 受诗对象李儋元锡生平简略；系年有滁州、江州两说。
+    source_ids: [src-qts-weiyingwu]
+
+  - work_id: qiu-ye-ji-qiu-er-shi-er-yuan-wai
+    title: 秋夜寄丘二十二员外
+    alt_titles: [秋夜寄邱员外]
+    genre: 五言绝句
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 前两句写自己秋夜散步咏凉天，后两句悬想临平山中的隐者应未眠——隔地的悬想使二十字有两地空翠。
+    attribution: 确凿
+    excerpt: 怀君属秋夜，散步咏凉天。山空松子落，幽人应未眠。
+    text_display: full
+    themes: [怀友, 秋夜, 隐逸]
+    influence: 五绝中以淡语致远的典范，历代选本必收。
+    source_ids: [src-qts-weiyingwu]
+
+  - work_id: huai-shang-xi-hui-liang-chuan-gu-ren
+    title: 淮上喜会梁川故人
+    alt_titles: [淮上喜会梁州故人]
+    genre: 五言律诗
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: 淮上
+    context: 浮云一别后流水十年间，以浮云流水写久别乍逢，欢情与鬓斑相照。
+    attribution: 确凿
+    excerpt: 江汉曾为客，相逢每醉还。浮云一别后，流水十年间。
+    text_display: excerpt
+    themes: [重逢, 流离, 友情]
+    influence: 浮云流水一联为唐人聚散感喟的经典表达。
+    confidence: 确定
+    dispute: 维基文库页注梁川一作州，题面有小异。
+    source_ids: [src-qts-weiyingwu]
+
+  - work_id: fu-de-mu-yu-song-li-zhou
+    title: 赋得暮雨送李胄
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: 建业一带（咏地）
+    context: 楚江微雨建业暮钟起笔，帆重鸟迟浦树含滋，通体雨气，结拍沾襟比散丝以雨丝喻泪丝。
+    attribution: 确凿
+    excerpt: 楚江微雨里，建业暮钟时。漠漠帆来重，冥冥鸟去迟。……相送情无限，沾襟比散丝。
+    text_display: excerpt
+    themes: [送别, 微雨, 含蓄]
+    influence: 以景语包裹离情的送别律典型。
+    source_ids: [src-qts-weiyingwu]
+
+  - work_id: guan-tian-jia
+    title: 观田家
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 微雨众卉新一雷惊蛰始的节气白描之后，直书仓廪无宿储徭役犹未已，结尾方惭不耕者禄食出闾里与邑有流亡愧俸钱同一肺肠。
+    attribution: 确凿
+    excerpt: 仓廪无宿储，徭役犹未已。方惭不耕者，禄食出闾里。
+    text_display: excerpt
+    themes: [田家, 徭役, 自惭]
+    influence: 中唐新乐府精神的前声，观田家题材自此立目。
+    source_ids: [src-qts-weiyingwu]
+
+  - work_id: ni-gu-shi-shi-er-shou
+    title: 拟古诗十二首
+    alt_titles: []
+    genre: 五言古诗（组诗）
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 遍拟汉魏古意的组诗，其一辞君远行迈饮此长恨端以下写行役险艰；无情尚有归行子何独难以无情衬有情。全唐诗小传所谓人比之陶潜称陶韦云，于此类冲淡拟古诸篇最能坐实。
+    attribution: 确凿
+    excerpt: 辞君远行迈，饮此长恨端。……流水赴大壑，孤云还暮山。无情尚有归，行子何独难。
+    text_display: excerpt
+    themes: [拟古, 行役, 冲淡]
+    influence: 其追踪汉魏的代表作，皎然尝拟其格以求教（唐才子传皎然条，笔记层）。
+    source_ids: [src-qts-weiyingwu]
+
+  - work_id: si-ju-du-ye-ji-cui-zhu-bu
+    title: 寺居独夜寄崔主簿
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 约寓居善福寺精舍期间
+      year: 779
+      precision: 约
+    place: 长安沣上善福寺
+    context: 幽人寂不寐木叶纷纷落，寒雨暗深更流萤度高阁——寺居独夜的清寂与其焚香扫地而坐的生活互证。
+    attribution: 确凿
+    excerpt: 幽人寂不寐，木叶纷纷落。寒雨暗深更，流萤度高阁。
+    text_display: excerpt
+    themes: [寺居, 秋夜, 寄友]
+    influence: 高雅闲淡诗风的样本之一。
+    confidence: 确定
+    dispute: 系年从寓居善福寺精舍说，精确月份无考。
+    source_ids: [src-qts-weiyingwu]
+
+  - work_id: jun-zhai-yu-zhong-yu-zhu-wen-shi-yan-ji
+    title: 郡斋雨中与诸文士燕集
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 苏州刺史任上（约788—790年之间）
+      year: 788
+      range_end: 790
+      precision: 范围
+    place: 苏州郡斋
+    context: 兵卫森画戟燕寝凝清香为一代名句；宴集之中忽接自惭居处崇未睹斯民康，方知大藩地岂曰财赋疆，盛筵与愧意并存，正是其为政底色。
+    attribution: 确凿
+    excerpt: 兵卫森画戟，燕寝凝清香。……自惭居处崇，未睹斯民康。……吴中盛文史，群彦今汪洋。
+    text_display: excerpt
+    themes: [宴集, 吴中文会, 忧民]
+    influence: 顾况曾和此诗（唐人说部层）；兵卫画戟联为历代谈艺者称引。
+    confidence: 确定
+    dispute: 顾况和诗之说见唐人说部，本轮未实取原文，姑存而不论。
+    source_ids: [src-qts-weiyingwu]
+
+  - work_id: yu-you-sheng-ye-yin-xiao-tao-ti
+    title: 与友生野饮效陶体
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 携酒花林下前有千载坟，聊舒远世踪坐望还山云——题目自标效陶体，是唐人自觉学陶的直接文本证据。
+    attribution: 确凿
+    excerpt: 携酒花林下，前有千载坟。……聊舒远世踪，坐望还山云。且遂一欢笑，焉知贱与贫。
+    text_display: excerpt
+    themes: [效陶, 野饮, 旷达]
+    influence: 与效陶彭泽同为陶韦并称的文本支点。
+    source_ids: [src-qts-weiyingwu]
+
+  - work_id: xiao-tao-peng-ze
+    title: 效陶彭泽
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 霜露悴百草时菊独妍华起兴，掇英泛浊醪日入会田家，尽醉茅檐下一生岂在多——句法意趣皆从陶诗化出。
+    attribution: 确凿
+    excerpt: 掇英泛浊醪，日入会田家。尽醉茅檐下，一生岂在多。
+    text_display: excerpt
+    themes: [效陶, 田家, 知足]
+    influence: 人比之陶潜称陶韦云（全唐诗小传）的最直接例证。
+    source_ids: [src-qts-weiyingwu]
+
+  - work_id: yan-li-lu-shi
+    title: 燕李录事
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 晚岁追忆之作，具体年份无考
+      precision: 未知
+    place: ""
+    context: 与君十五侍皇闱晓拂炉烟上赤墀，花开汉苑经过处雪下骊山沐浴时——追忆三卫郎扈从玄宗的盛时，近臣零落仙驾飘飖，一杯成喜亦成悲。
+    attribution: 确凿
+    excerpt: 与君十五侍皇闱，晓拂炉烟上赤墀。花开汉苑经过处，雪下骊山沐浴时。
+    text_display: excerpt
+    themes: [怀旧, 盛世追忆, 今昔之感]
+    influence: 其三卫郎经历的唯一自述长证，与逢杨开府互为表里。
+    source_ids: [src-qts-weiyingwu]
+
+footprints:
+  - name: 京兆长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约737年生（推定），籍贯与少年成长地
+      year: 737
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 生年系推定；籍贯小传作京兆长安人，杜陵云云据韦氏郡望通说。
+    source_ids: [src-qts-weiyingwu]
+  - name: 长安宫廷
+    modern_name: 陕西省西安市（唐宫城区域）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 天宝年间以三卫郎侍玄宗扈从游幸
+      year: 742
+      range_end: 755
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-qts-weiyingwu, src-tangcaizizhuan]
+  - name: 洛阳
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 永泰中任洛阳丞（约765—766）
+      year: 765
+      range_end: 766
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    confidence: 存疑
+    dispute: 任期年份据永泰纪年框定；与京兆功曹先后两源互倒。
+    source_ids: [src-qts-weiyingwu, src-tangcaizizhuan]
+  - name: 鄠县、栎阳
+    modern_name: 陕西省西安市鄠邑区、西安市阎良区（唐栎阳县境）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 大历十四年前任鄠县令，779年制除栎阳令以疾辞不就
+      year: 779
+      precision: 精确
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-qts-weiyingwu, src-tangcaizizhuan]
+  - name: 长安沣上善福寺
+    modern_name: 陕西省西安市西南沣河一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 779年辞栎阳令后寓善福寺精舍，沣上善福诸诗皆此期所作
+      year: 779
+      precision: 约
+    kind: 居住
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-tangcaizizhuan, src-qts-weiyingwu]
+  - name: 滁州
+    modern_name: 安徽省滁州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约782—783年任滁州刺史，作滁州西涧
+      year: 782
+      range_end: 783
+      precision: 范围
+    kind: 任职
+    route_order: 6
+    memorial_only: false
+    confidence: 存疑
+    dispute: 到任与去任年份据仕历推定。
+    source_ids: [src-qts-weiyingwu]
+  - name: 江州
+    modern_name: 江西省九江市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约784—785年改江州刺史
+      year: 784
+      range_end: 785
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 徙江州年份无载，据滁州任后次第推定。
+    source_ids: [src-qts-weiyingwu, src-tangcaizizhuan]
+  - name: 苏州
+    modern_name: 江苏省苏州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 贞元初（约787—788年起）复出为苏州刺史
+      year: 787
+      range_end: 788
+      precision: 范围
+    kind: 任职
+    route_order: 8
+    memorial_only: false
+    confidence: 存疑
+    dispute: 始刺苏州年份诸谱互有出入。
+    source_ids: [src-qts-weiyingwu]
+  - name: 永定
+    modern_name: 江苏省苏州市（永定寺故址，一说）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约790—791年罢苏州刺史后罢居永定，斋心屏除人事
+      year: 790
+      range_end: 791
+      precision: 范围
+    kind: 居住
+    route_order: 9
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 罢居年份系推定；永定为寺名抑或地名两源未详，从苏州永定寺通说。
+    source_ids: [src-tangcaizizhuan]
+
+relations: []
+
+reception:
+  - era: 同时代
+    evaluator: 白居易《与元九书》
+    quote: 如近岁韦苏州歌行，才丽之外，颇近兴讽；其五言诗又高雅闲澹，自成一家之体，今之秉笔者谁能及之！然当苏州在时，人亦未甚爱重，必待身后，然人贵之。
+    text_display: excerpt
+    comment: 元和十年白居易贬江州司马后致元稹书中逐字实取的评语，代表同时代人对韦应物歌行兴讽与五言闲澹两面价值的最高定位，并记录了韦诗身前寂寞身后贵的接受事实。
+    confidence: 确定
+    source_ids: [src-bai-yuanyujiushu]
+  - era: 历代批评
+    evaluator: 辛文房《唐才子传》卷四论云
+    quote: 诗律自沈、宋之下，日益靡嫚……独应物驰骤建安以还，各有风韵，自成一家之体，清深雅丽，虽诗人之盛，亦罕其伦。
+    text_display: excerpt
+    comment: 元人将韦应物置于沈宋靡嫚之后的诗史低点作对照，许其驰骤建安自成一家，是通代视野下的经典化判断。
+    confidence: 确定
+    source_ids: [src-tangcaizizhuan]
+  - era: 历代批评
+    evaluator: 苏轼（转述层）
+    quote: ""
+    text_display: none
+    comment: 相传苏轼有乐天长短三千首却爱韦郎五字诗之句，以韦应物五言为学诗正途；该句本轮未能在维基文库实取原文，按转述层著录，出处待核后再升格为引文。
+    confidence: 存疑
+    dispute: 所引诗句出处篇目待核，暂不作信据使用。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究将其纳入陶潜——王维——韦应物——柳宗元的山水田园诗谱系（陶王韦柳并称），聚焦其三卫郎到刺史的人生断层与诗风关系、韦集版本源流等议题；具体论著引文须取得许可后补入，本卷暂作中立转述。唐人已有其诗闲澹简远人比之陶潜称陶韦云（全唐诗小传）的先声。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 滁州西涧长期入选语文教材与大众读本，野渡无人舟自横成为国民名句；秋夜寄丘二十二员外亦常见于启蒙读物。教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中韦应物多为背景式文人形象，无可靠专门作品可引；网络传播集中于滁州西涧与邑有流亡愧俸钱两类名句，暂无可信专门条目可依。
+    source_ids: []
+
+sources_used: [src-qts-weiyingwu, src-tangcaizizhuan]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。15条年谱（5阶段）、12首作品、9处足迹、0组关系、6层接受史。全唐诗小传（卷186卷首）、唐才子传卷四本传、白居易与元九书评语及12篇作品文本均经维基文库逐字实取。生卒年均按推定+dispute著录；功曹/洛阳丞先后互倒、比部员外郎建中二/三年之差、唐才子传大和中太仆少卿条年代抵牾等异文均存疑著录。"}

@@ -1,0 +1,635 @@
+# 曹植全景详卷（schema v1）
+# 史料审计表（TASK-003 批次四；来源见 data/sources.yaml）：
+#
+# | 事实点 | 三国志·魏书·卷19·任城陈萧王传(S) | 结论与置信 |
+# |---|---|---|
+# | 少年才名 | 年十岁余诵读诗论及辞赋数十万言善属文；太祖视其文谓「汝倩人邪」 | 确定(2026-08-25 实取维基文库卷19全文核验) |
+# | 铜爵台赋 | 时邺铜爵台新成太祖悉将诸子登台使各为赋植援笔立成可观太祖甚异之 | 确定 |
+# | 争储 | 丁仪丁廙杨修为之羽翼太祖狐疑几为太子者数矣；植任性而行不自雕励饮酒不节；文帝御之以术矫情自饰遂定为嗣 | 确定 |
+# | 司马门案 | 植尝乘车行驰道中开司马门出太祖大怒公车令坐死由是重诸侯科禁植宠日衰 | 确定(建安二十二年) |
+# | 醉不能受命 | 二十四年曹仁为关羽所围以植为南中郎将行征虏将军欲遣救仁植醉不能受命于是悔而罢之 | 确定 |
+# | 丁氏被诛 | 文帝即王位诛丁仪丁廙并其男口；植与诸侯并就国 | 确定(220) |
+# | 黄初贬爵 | 二年监国谒者灌均希指奏植醉酒悖慢劫胁使者帝以太后故贬爵安乡侯其年改封鄄城侯；三年立为鄄城王邑二千五百户；四年徙封雍丘王朝京都上疏献诗二篇 | 确定 |
+# | 赠白马王彪本事 | 裴注引魏氏春秋：任城王暴薨诸王既怀友于之痛植及白马王彪还国欲同路东归而监国使者不听植发愤告离而作诗(全篇见裴注引) | 确定(本事层) |
+# | 太和迁转 | 元年徙封浚仪二年复还雍丘上疏求自试；三年徙封东阿；五年覆上疏求存问亲戚又陈审举之义 | 确定 |
+# | 卒 | 六年二月以陈四县封植为陈王邑三千五百户十一年中而三徙都常汲汲无欢遂发疾薨时年四十一遗令薄葬；初植登鱼山临东阿喟然有终焉之心遂营为墓 | 确定(232卒→192生闭合) |
+# | 身后 | 子志嗣；景初中诏收黄初中诸奏植罪状削除之撰录植所著赋颂诗铭杂论凡百余篇副藏内外 | 确定 |
+# | 七步诗 | 不见于三国志本传正文与裴注——出自世说新语文学篇，属本事/传说层 | 传说层存疑；来源未登记故 source_ids 留空并加 dispute 说明 |
+# | 感甄说 | 洛神赋序自记黄初三年朝京师还济洛川；感甄说为后世附会 | 有争议记录 |
+#
+# 版权：本文件只收公版古籍原文（三国志、曹子建集均公版）与自写中立转述。
+schema_version: 1
+id: caozhi
+
+profile:
+  courtesy_name: 子建
+  art_name: ""
+  aliases: [陈思王, 曹子建]
+  gender: 男
+  ethnicity: ""
+  ancestry: 沛国谯县
+  birthplace: 沛国谯县
+  death_place: 陈（陈王国）
+  offices: [平原侯, 临淄侯, 鄄城侯, 鄄城王, 雍丘王, 东阿王, 陈王]
+  fields: [文学]
+  roles: [诗人, 辞赋家]
+  summary: 建安文学集大成者，「骨气奇高词采华茂」；半生困于藩禁，「十一年中三徙都」，谢灵运叹其才高八斗。
+
+timeline:
+  # ── 阶段一：乱世生于谯 ──────────────────────────────
+  - stage: 乱世生于谯
+    stage_order: 1
+    title: 生于沛国谯县战乱年代
+    date:
+      text: "192年"
+      year: 192
+      precision: 精确
+    place: 沛国谯县
+    summary: 曹操卞夫人第四子。生年由太和六年（232）薨时年四十一倒推闭合。其自述「臣生乎乱，长乎军」（陈审举表），童年随父征行于汉末群雄混战之中。
+    source_ids: [src-sanguozhi-vol19]
+  - stage: 乱世生于谯
+    stage_order: 2
+    title: 十岁余诵读诗论辞赋数十万言
+    date:
+      text: 约202—210年之间
+      year: 202
+      range_end: 210
+      precision: 范围
+    place: 邺
+    summary: 本传载年十岁余诵读《诗》《论》及辞赋数十万言善属文。太祖尝视其文谓汝倩人邪，植跪曰言出为论下笔成章顾当面试奈何倩人。性简易不治威仪，舆马服饰不尚华丽，每进见难问应声而对特见宠爱。
+    confidence: 存疑
+    dispute: 具体年份系据曹操定邺后居邺的行迹推定，正史无系年。
+    source_ids: [src-sanguozhi-vol19]
+
+  # ── 阶段二：邺下少年才名 ────────────────────────────
+  - stage: 邺下少年才名
+    stage_order: 3
+    title: 铜爵台上援笔立成
+    date:
+      text: 约210—212年之间
+      year: 210
+      range_end: 212
+      precision: 范围
+    place: 邺·铜爵台
+    summary: 时邺铜爵台新成，太祖悉将诸子登台使各为赋，植援笔立成可观，太祖甚异之。裴注引阴澹《魏纪》存其赋句「从明后而嬉游兮登层台以娱情……临漳水之长流兮望园果之滋荣」。此即邺下文人集团鼎盛期的少年成名事件。
+    confidence: 存疑
+    dispute: 铜爵台建成于建安十五年冬，登台作赋确切年份史无明文，从建成至十七年间推定；裴注所录登台赋文字经后世辑录或有窜乱。
+    source_ids: [src-sanguozhi-vol19]
+
+  # ── 阶段三：争储之局 ──────────────────────────────
+  - stage: 争储之局
+    stage_order: 4
+    title: 建安十六年封平原侯，十九年徙临淄侯
+    date:
+      text: "211—214年之间"
+      year: 211
+      range_end: 214
+      precision: 范围
+    place: 平原、临淄
+    summary: 建安十六年封平原侯，十九年徙封临淄侯。太祖征孙权使植留守邺，戒之曰吾昔为顿邱令年二十三思此时所行无悔于今今汝年亦二十三矣可不勉与。
+    source_ids: [src-sanguozhi-vol19]
+  - stage: 争储之局
+    stage_order: 5
+    title: 几为太子：任性而行对御之以术
+    date:
+      text: 约215—217年之间
+      year: 215
+      range_end: 217
+      precision: 范围
+    place: 邺
+    summary: 植既以才见异，而丁仪、丁廙、杨修等为之羽翼，太祖狐疑几为太子者数矣。然植任性而行不自雕励饮酒不节，文帝御之以术矫情自饰宫人左右并为之说，故遂定为嗣。
+    source_ids: [src-sanguozhi-vol19]
+  - stage: 争储之局
+    stage_order: 6
+    title: 私开司马门，宠日衰
+    date:
+      text: "217年"
+      year: 217
+      precision: 精确
+    place: 邺
+    summary: 建安二十二年增置邑五千并前万户。植尝乘车行驰道中开司马门出，太祖大怒公车令坐死，由是重诸侯科禁而植宠日衰。裴注引《魏武故事》载令曰始者谓子建儿中最可定大事，又曰自临菑侯植私出开司马门至金门令吾异目视此儿矣。
+    source_ids: [src-sanguozhi-vol19]
+  - stage: 争储之局
+    stage_order: 7
+    title: 杨修被诛，植益内不自安
+    date:
+      text: "219年"
+      year: 219
+      precision: 精确
+    place: 邺
+    summary: 太祖既虑终始之变，以杨修颇有才策而又袁氏之甥，于建安二十四年秋以前后漏泄言教交关诸侯之罪收杀之。植益内不自安。
+    source_ids: [src-sanguozhi-vol19]
+  - stage: 争储之局
+    stage_order: 8
+    title: 醉不能受命救曹仁
+    date:
+      text: "219年"
+      year: 219
+      precision: 精确
+    place: 邺
+    summary: 曹仁为关羽所围，太祖以植为南中郎将行征虏将军欲遣救仁呼有所敕戒，植醉不能受命，于是悔而罢之。饮酒失职成为其政治生命的终点一击。
+    confidence: 存疑
+    dispute: 「太子饮焉偪而醉之」出裴注引《魏氏春秋》，属传闻层细节，正史仅记醉不能受命的事实。
+    source_ids: [src-sanguozhi-vol19]
+
+  # ── 阶段四：曹丕即位与黄初贬爵 ──────────────────────
+  - stage: 黄初贬爵
+    stage_order: 9
+    title: 曹丕即位，诛丁仪丁廙，就国
+    date:
+      text: "220年"
+      year: 220
+      precision: 精确
+    place: 临淄
+    summary: 曹丕即魏王位，即诛丁仪丁廙并其男口，剪除曹植党羽。植与诸侯并就国，自此离开权力中枢。
+    source_ids: [src-sanguozhi-vol19]
+  - stage: 黄初贬爵
+    stage_order: 10
+    title: 灌均希旨奏罪，贬安乡侯改封鄄城侯
+    date:
+      text: "221年"
+      year: 221
+      precision: 精确
+    place: 安乡、鄄城
+    summary: 黄初二年监国谒者灌均希指奏植醉酒悖慢劫胁使者，有司请治罪，帝以太后故贬爵安乡侯，其年改封鄄城侯。《魏书》载诏曰植朕之同母弟朕于天下无所不容而况植乎骨肉之亲舍而不诛其改封植。监国谒者自此成为悬在诸王头上的监视利刃。
+    source_ids: [src-sanguozhi-vol19]
+  - stage: 黄初贬爵
+    stage_order: 11
+    title: 立鄄城王，徙雍丘，朝京师献诗二篇
+    date:
+      text: "222—223年之间"
+      year: 222
+      range_end: 223
+      precision: 范围
+    place: 鄄城、雍丘、洛阳
+    summary: 黄初三年立为鄄城王邑二千五百户，四年徙封雍丘王。其年朝京都，上疏刻肌刻骨追思罪戾，并献责躬、应诏诗二篇，帝嘉其辞义优诏答勉之。
+    source_ids: [src-sanguozhi-vol19]
+  - stage: 黄初贬爵
+    stage_order: 12
+    title: 任城王暴薨，同路东归被阻，发愤作别诗
+    date:
+      text: "223年"
+      year: 223
+      precision: 精确
+    place: 洛阳东归道
+    summary: 裴注引《魏氏春秋》：朝京师时任城王曹彰暴薨，诸王既怀友于之痛。植及白马王曹彪还国欲同路东归以叙隔阔之思，而监国使者不听。植发愤告离而作诗（《赠白马王彪》），裴注存其全篇七章章章相承。
+    source_ids: [src-sanguozhi-vol19]
+  - stage: 黄初贬爵
+    stage_order: 13
+    title: 七步成诗传说（传说层）
+    date:
+      text: 相传在黄初年间，正史无载
+      precision: 未知
+    place: 洛阳（传说情境）
+    summary: 相传曹丕命植七步中作诗不成行大法，植应声为煮豆燃萁之咏。此事不见于三国志本传正文与裴注，出自《世说新语·文学》，属后世本事传说。
+    confidence: 传说
+    dispute: 七步诗不见于三国志（含裴注所引诸书），最早见于《世说新语·文学》（六句本）；通行七句本更为晚出。学界多疑为后人附会，本项目仅按传说层著录，不作为信史。世说新语未登记于 sources.yaml，故 source_ids 留空。
+    source_ids: []
+  - stage: 黄初贬爵
+    stage_order: 14
+    title: 帝东征还过雍丘幸植宫
+    date:
+      text: "225年"
+      year: 225
+      precision: 精确
+    place: 雍丘
+    summary: 黄初六年帝东征，还过雍丘幸植宫增户五百——兄弟间最后一次体面接触，恩遇仅止于增户。
+    source_ids: [src-sanguozhi-vol19]
+
+  # ── 阶段五：太和汲汲无欢 ────────────────────────────
+  - stage: 太和汲汲无欢
+    stage_order: 15
+    title: 徙浚仪复还雍丘，上疏求自试
+    date:
+      text: "227—228年之间"
+      year: 227
+      range_end: 228
+      precision: 范围
+    place: 浚仪、雍丘
+    summary: 太和元年徙封浚仪，二年复还雍丘。植常自愤怨抱利器而无所施，上疏求自试，愿西属大将军当一校之队东属大司马统偏舟之任乘危蹈险为士卒先，虽未能禽权馘亮庶将虏其雄率。明帝优文答报而不见用。
+    source_ids: [src-sanguozhi-vol19]
+  - stage: 太和汲汲无欢
+    stage_order: 16
+    title: 徙封东阿，上疏求存问亲戚
+    date:
+      text: "229年"
+      year: 229
+      precision: 精确
+    place: 东阿
+    summary: 太和三年徙封东阿。五年覆上疏求存问亲戚，痛陈婚媾不通兄弟乖绝吉凶之问塞庆吊之礼废恩纪之违甚于路人隔阂之异殊于胡越；又上疏陈审举之义。明帝诏报已敕有司如王所诉，然制度终未改。
+    source_ids: [src-sanguozhi-vol19]
+  - stage: 太和汲汲无欢
+    stage_order: 17
+    title: 封陈王，发疾薨年四十一，遗令薄葬
+    date:
+      text: "232年"
+      year: 232
+      precision: 精确
+    place: 陈
+    summary: 太和六年二月以陈四县封植为陈王邑三千五百户。每欲求别见独谈论及时政幸冀试用终不能得既还怅然绝望。时法制待藩国既自峻迫，又植以前过事事复减半，十一年中而三徙都常汲汲无欢遂发疾薨时年四十一。遗令薄葬。初植登鱼山临东阿喟然有终焉之心遂营为墓。谥曰思。景初中诏削除黄初中诸奏植罪状，撰录其赋颂诗铭杂论凡百余篇副藏内外。
+    source_ids: [src-sanguozhi-vol19]
+
+works:
+  - work_id: luoshen-fu
+    title: 洛神赋
+    alt_titles: [感甄赋]
+    genre: 赋
+    date:
+      text: 黄初三年（222）说为主流
+      year: 222
+      precision: 约
+    place: 洛水
+    context: 序自记黄初三年朝京师还济洛川，古人有言斯水之神名曰宓妃，感宋玉对楚王神女之事遂为其赋。「翩若惊鸿婉若游龙」写人神相遇，终以「人神之道殊」怅然长逝。
+    attribution: 确凿
+    excerpt: 其形也，翩若惊鸿，婉若游龙。荣曜秋菊，华茂春松。……恨人神之道殊兮，怨盛年之莫当。
+    text_display: excerpt
+    themes: [人神之恋, 抒愤]
+    influence: 中国文学史上最负盛名的抒情小赋，书画戏曲反复取材，洛神形象成为经典审美意象。
+    confidence: 有争议
+    dispute: 作年有黄初三年入朝说为主流，亦有黄初四年及他解；「感甄」谓赋为感恋甄后而作者系后世附会流传，学界多不取，仅录为传播史上的著名异说。
+    source_ids: [src-caozhiji]
+
+  - work_id: baima-pian
+    title: 白马篇
+    alt_titles: []
+    genre: 乐府
+    date:
+      text: 约建安年间青年时期所作，确切年份不详
+      precision: 未知
+    place: ""
+    context: 以幽并游侠儿为主角，「控弦破左的右发摧月支」「捐躯赴国难视死忽如归」，寄托其建功立业的少年壮志，亦被视为自我写照。
+    attribution: 确凿
+    excerpt: 白马饰金羁，连翩西北驰。借问谁家子？幽并游侠儿。少小去乡邑，扬声沙漠垂。……捐躯赴国难，视死忽如归。
+    text_display: full
+    themes: [游侠, 建功立业]
+    influence: 建安风骨的代表作之一，「捐躯赴国难」成为后世忠勇精神的经典表述。
+    source_ids: [src-caozhiji]
+
+  - work_id: qi-ai-shi
+    title: 七哀诗
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 约建安末至黄初间，一说作于曹丕即位之后
+      precision: 未知
+    place: ""
+    context: 以思妇望月起兴「明月照高楼流光正徘徊」，借夫妇喻君臣，「君若清路尘妾若浊水泥」写疏离之痛，「愿为西南风长逝入君怀」哀恳动人。
+    attribution: 确凿
+    excerpt: 明月照高楼，流光正徘徊。上有愁思妇，悲叹有余哀。……愿为西南风，长逝入君怀。
+    text_display: excerpt
+    themes: [思妇, 君臣寄托]
+    influence: 五言诗比兴寄托传统的名篇，历代拟作评点不绝。
+    confidence: 存疑
+    dispute: 系年无考；「喻君臣」的读法自六朝以来渐成主流，亦属阐释传统而非作者自注。
+    source_ids: [src-caozhiji]
+
+  - work_id: yetian-huangque-xing
+    title: 野田黄雀行
+    alt_titles: []
+    genre: 乐府
+    date:
+      text: 约建安二十四年（219）前后，通说系于杨修丁仪之难之际
+      year: 219
+      precision: 约
+    place: 邺
+    context: 「高树多悲风海水扬其波利剑不在掌结友何须多」，以篱间黄雀投罗喻友人罹祸而无力相救，少年拔剑捎网救雀则是想象中的救赎。
+    attribution: 确凿
+    excerpt: 高树多悲风，海水扬其波。利剑不在掌，结友何须多？不见篱间雀，见鹞自投罗。
+    text_display: excerpt
+    themes: [忧生, 友难]
+    influence: 以寓言写政治恐惧的开创之作，忧生之嗟的代表文本。
+    confidence: 存疑
+    dispute: 本事与丁仪丁廙被害相系的读法属传统笺释，作年系推定。
+    source_ids: [src-caozhiji]
+
+  - work_id: zeng-baima-wang-biao
+    title: 赠白马王彪（并序）
+    alt_titles: []
+    genre: 赠答诗（七首连章）
+    date:
+      text: "223年"
+      year: 223
+      precision: 精确
+    place: 洛阳东归道
+    context: 黄初四年朝京师，任城王曹彰暴薨，与白马王曹彪同路东归被监国使者禁止，发愤告离而作。七章章章相承蝉联而下：「鸱枭鸣衡轭豺狼当路衢苍蝇间白黑谗巧反亲疏」直刺监视构陷，「丈夫志四海万里犹比邻」强抑悲痛互勉。
+    attribution: 确凿
+    excerpt: 谒帝承明庐，逝将归旧疆。清晨发皇邑，日夕过首阳。……丈夫志四海，万里犹比邻。
+    text_display: excerpt
+    themes: [骨肉之痛, 政治压抑, 别离]
+    influence: 连章体赠答诗的高峰，「万里犹比邻」为王勃「天涯若比邻」之所本；三国志裴注引魏氏春秋存其全篇，本事确凿。
+    source_ids: [src-sanguozhi-vol19, src-caozhiji]
+
+  - work_id: za-shi-q4
+    title: 杂诗六首（其四）
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 约太和年间，确切年份不详
+      precision: 未知
+    place: ""
+    context: 「南国有佳人容华若桃李朝游江北岸夕宿潇湘沚」，以佳人迟暮自况，「时俗薄朱颜谁为发皓齿」，写抱才不用的悲哀。
+    attribution: 确凿
+    excerpt: 南国有佳人，容华若桃李。朝游江北岸，夕宿潇湘沚。时俗薄朱颜，谁为发皓齿？俯仰岁将暮，荣耀难久恃。
+    text_display: full
+    themes: [自况, 迟暮]
+    influence: 以美人意象写士不遇的经典范式。
+    source_ids: [src-caozhiji]
+
+  - work_id: konghou-yin
+    title: 箜篌引（置酒）
+    alt_titles: [置酒高殿上]
+    genre: 乐府
+    date:
+      text: 约邺下时期，确切年份不详
+      precision: 未知
+    place: 邺
+    context: 「置酒高殿上亲交从我飞」极写邺下游宴之乐，忽转「惊风飘白日光景驰西流盛年不再来岁月不我待」，宴饮之欢与生命焦虑并置。
+    attribution: 确凿
+    excerpt: 置酒高殿上，亲交从我飞。中厨办丰膳，烹羊宰肥牛。……惊风飘白日，光景驰西流。盛年不再来，岁月不我待。
+    text_display: excerpt
+    themes: [游宴, 人生无常]
+    influence: 邺下集团生活的实录性文本，乐府旧题翻新的代表。
+    confidence: 存疑
+    dispute: 作年无确证；题名在乐府文献中有「箜篌引」「野田黄雀行」两题互见的版本问题。
+    source_ids: [src-caozhiji]
+
+  - work_id: ze-gong-ying-zhao
+    title: 责躬诗·应诏诗
+    alt_titles: [献诗二篇]
+    genre: 四言诗
+    date:
+      text: "223年"
+      year: 223
+      precision: 精确
+    place: 洛阳
+    context: 黄初四年朝京都上疏献诗二篇，责躬篇自陈「举挂时网动乱国经傲我皇使犯我朝仪」请罪乞恩，应诏篇颂圣感恩。本传全文收录，帝嘉其辞义优诏答勉之。
+    attribution: 确凿
+    excerpt: 於穆显考，时惟武皇。受命于天，宁济四方。……皇恩过隆，祗承怵惕。
+    text_display: excerpt
+    themes: [请罪, 颂圣]
+    influence: 正史记存的臣藩献诗范本，也是其晚年屈辱处境的第一手材料。
+    source_ids: [src-sanguozhi-vol19]
+
+  - work_id: zhuanpeng-ge
+    title: 转蓬（琴瑟调歌）
+    alt_titles: []
+    genre: 乐府歌辞
+    date:
+      text: 约晚年徙封期间，确切年份不详
+      precision: 未知
+    place: 东阿、陈一带
+    context: 「吁嗟此转蓬居世何独然长去本根逝夙夜无休闲东西经七陌南北越九阡」，以随风飘转的蓬草自喻十一年中三徙都的命运。本传裴注引作其常为琴瑟调歌。
+    attribution: 确凿
+    excerpt: 吁嗟此转蓬，居世何独然！长去本根逝，夙夜无休闲。……流转无恒处，谁知吾苦艰？
+    text_display: excerpt
+    themes: [迁徙之苦, 自伤]
+    influence: 转蓬意象自此与其迁徙命运绑定，成为漂泊主题的经典符号。
+    source_ids: [src-sanguozhi-vol19]
+
+  - work_id: qibu-shi
+    title: 七步诗
+    alt_titles: []
+    genre: 五言古诗（传说文本）
+    date:
+      text: 相传作于黄初年间，正史无载
+      precision: 未知
+    place: 洛阳（传说情境）
+    context: 相传文帝尝令东阿王七步中作诗不成者行大法，应声便为诗。煮豆燃萁同根相煎的比喻流传极广。
+    attribution: 托名
+    excerpt: 煮豆持作羹，漉菽以为汁。萁在釜下燃，豆在釜中泣。本自同根生，相煎何太急？
+    text_display: excerpt
+    themes: [兄弟相煎]
+    influence: 汉语中最广为人知的急智诗传说，同根相煎成为兄弟内斗的固定隐喻。
+    confidence: 传说
+    dispute: 不见于三国志本传正文与裴注，最早见于《世说新语·文学》（六句本）；通行「本是同根生」七句本更为晚出。学界多疑为附会传说，本项目按传说层著录。世说新语未登记于 sources.yaml，故 source_ids 留空以示无原始文献支撑。
+    source_ids: []
+
+footprints:
+  - name: 沛国谯县
+    modern_name: 安徽省亳州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "192年生"
+      year: 192
+      precision: 精确
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-sanguozhi-vol19]
+  - name: 邺
+    modern_name: 河北省邯郸市临漳县（邺城遗址）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约建安九年至二十五年之间，少年成名与争储时期
+      year: 204
+      range_end: 220
+      precision: 范围
+    kind: 居住
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    source_ids: [src-sanguozhi-vol19]
+  - name: 临淄（临菑侯国）
+    modern_name: 山东省淄博市临淄区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 建安十九年（214）徙封临淄侯至黄初二年贬爵
+      year: 214
+      range_end: 221
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    source_ids: [src-sanguozhi-vol19]
+  - name: 鄄城（鄄城王）
+    modern_name: 山东省菏泽市鄄城县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 黄初二年改封鄄城侯、三年立为王至四年徙封
+      year: 221
+      range_end: 223
+      precision: 范围
+    kind: 谪迁
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    source_ids: [src-sanguozhi-vol19]
+  - name: 雍丘（雍丘王）
+    modern_name: 河南省开封市杞县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 黄初四年徙封至太和元年，太和二年复还至三年徙东阿前
+      year: 223
+      range_end: 229
+      precision: 范围
+    kind: 谪迁
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    source_ids: [src-sanguozhi-vol19]
+  - name: 浚仪
+    modern_name: 河南省开封市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 太和元年徙封浚仪至二年复还雍丘
+      year: 227
+      range_end: 228
+      precision: 范围
+    kind: 谪迁
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    source_ids: [src-sanguozhi-vol19]
+  - name: 东阿（东阿王）
+    modern_name: 山东省聊城市东阿县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 太和三年徙封东阿至六年封陈王前
+      year: 229
+      range_end: 232
+      precision: 范围
+    kind: 居住
+    route_order: 7
+    memorial_only: false
+    source_ids: [src-sanguozhi-vol19]
+  - name: 鱼山（曹植墓）
+    modern_name: 山东省聊城市东阿县鱼山曹植墓
+    lng: null
+    lat: null
+    coord_precision: 乡镇级
+    coord_source: 本传记「初植登鱼山临东阿喟然有终焉之心遂营为墓」；墓址坐标待接入 data/geography 体系
+    visit_date:
+      text: "232年卒后依遗令营葬于此"
+      year: 232
+      precision: 精确
+    kind: 逝世
+    route_order: 8
+    memorial_only: false
+    source_ids: [src-sanguozhi-vol19]
+  - name: 陈（陈王国，卒地）
+    modern_name: 河南省周口市淮阳区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 太和六年二月封陈王同年发疾薨
+      year: 232
+      precision: 精确
+    kind: 逝世
+    route_order: 9
+    memorial_only: false
+    source_ids: [src-sanguozhi-vol19]
+  - name: 洛水（洛神赋文学空间）
+    modern_name: 河南省洛阳市洛河
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 纪念地标处理，坐标不作到访确证登记
+    visit_date:
+      text: 不详
+      precision: 未知
+    kind: 纪念地
+    route_order: 10
+    memorial_only: true
+    inferred: true
+    confidence: 存疑
+    dispute: 洛神赋序自称黄初三年朝京师还济洛川，然赋属文学创作，是否确曾途经此地无法实证；此处仅作纪念性地标著录，不作确证到访。
+    source_ids: [src-caozhiji]
+
+relations:
+  - relation_type: 亲属
+    target_id: caocao
+    direction: 双向
+    period:
+      text: 192—220年，父子
+      year: 192
+      range_end: 220
+      precision: 范围
+    evidence: 三国志卷19本传：植为太祖（曹操）之子、卞太后同母弟。铜爵台新成太祖悉将诸子登台使各为赋植援笔立成太祖甚异之；征孙权使植留守邺戒以年二十三往事；太祖狐疑几为太子者数矣；司马门事后重诸侯科禁植宠日衰。父子关系为正史铁证。
+    source_ids: [src-sanguozhi-vol19]
+  - relation_type: 思想影响
+    target_id: jikang
+    direction: 单向
+    period:
+      text: 无直接交往记载；建安风骨向正始延展的文学史谱系
+      year: 217
+      range_end: 262
+      precision: 范围
+    evidence: 曹植卒（232）时嵇康尚未成年，二人无任何交往记载。所谓影响实为「汉魏风骨」谱系的文学史归纳：钟嵘称植诗「骨气奇高词采华茂」，嵇康诗文被视为建安气骨向正始之音转化的一环。此归纳属后世批评建构而非可证实的影响事实，故按推定著录。
+    inferred: true
+    confidence: 存疑
+    dispute: 无交往实证，影响关系仅是文学史谱系归纳，渲染层应降级展示。
+    source_ids: []
+
+reception:
+  - era: 同时代
+    evaluator: 陈寿（《三国志》卷十九评）
+    quote: 陈思文才富艳，足以自通后叶，然不能克让远防，终致携隙。
+    text_display: excerpt
+    comment: 本传评语对曹植文才与其政治失防作双重评价；裴注又引鱼豢语「余每览植之华采思若有神」，可见魏晋之际对其文章的普遍倾倒。评语原文据维基文库卷19实取核对。
+    source_ids: [src-sanguozhi-vol19]
+  - era: 历代批评
+    evaluator: 谢灵运（本事传闻层）
+    quote: ""
+    text_display: none
+    comment: 「天下才共一石，曹子建独得八斗」的才高八斗说流传极广，然出自后人记述的轶事传闻而非可靠原始文献，本项目按传说层中性转述，不作信史引用，故 source_ids 留空。
+    source_ids: []
+    confidence: 传说
+    dispute: 才高八斗语出处属本事传闻系统，版本歧异，无法落实到可靠一手文献。
+  - era: 历代批评
+    evaluator: 钟嵘《诗品》
+    quote: ""
+    text_display: none
+    comment: 《诗品》列曹植诗为上品，以「骨气奇高，词采华茂」概括其风格，并置于「譬人伦之有周孔」的极高地位——此为中国诗学史上对曹植的经典定评。引文属公版古籍，然本次未实取《诗品》原文页面，故按规范留空警告并仅作中性转述。
+    source_ids: []
+    confidence: 存疑
+    dispute: 引文未逐字核验原典页面，暂以转述呈现；待补核后可升级为 excerpt 并登记来源。
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦洛神赋主旨之争（感甄说批判、政治寄托说、纯文学说）、七步诗真伪考辨、曹植后期诗歌系年与赠白马王彪文本校勘等议题；具体论著引文须取得许可后补入，本卷暂作中立综述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 七步诗、白马篇等长期入选中小学语文教材；「翩若惊鸿」进入日常审美语汇，顾恺之洛神赋图使其形象视觉化。教材篇目随学期变动，录入时须另行核验当期篇目。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 影视剧与网络文化
+    quote: ""
+    text_display: none
+    comment: 曹植作为「悲情才子」形象反复出现于三国题材影视剧与游戏；网络语境中「才高八斗」「相煎何太急」成为高频成语引用。具体作品评价随流行文化变动，不设固定引文。
+    source_ids: []
+
+sources_used: [src-sanguozhi-vol19, src-caozhiji]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。17条年谱、10件作品、10处足迹、2组关系、6层接受史；三国志卷19已实取维基文库核验；七步诗与才高八斗均落传说层dispute；感甄说落dispute}

@@ -1,0 +1,512 @@
+# 鲍照全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 南史·卷13·宋宗室及诸王上·临川烈武王道规传附鲍照传（维基文库实取） | 结论与置信 |
+# |---|---|---|
+# | 名号籍贯 | 鲍照字明远东海人文辞瞻逸 | 确定（正史无专传，附于临川烈武王道规传后） |
+# | 乐府知名 | 尝为古乐府文甚遒丽 | 确定 |
+# | 河清颂 | 元嘉中河济俱清当时以为美瑞照为河清颂其序甚工 | 确定；确切开元年份正史不系年 |
+# | 贡诗言志 | 始尝谒义庆未见知欲贡诗言志人止之曰卿位尚卑不可轻忤大王照勃然曰千载上有英才异士沈没而不闻者安可数哉大丈夫岂可遂蕴智慧使兰艾不辨终日碌碌与燕雀相随乎于是奏诗义庆奇之赐帛二十匹寻擢为国侍郎甚见知赏 | 确定 |
+# | 佐吏国臣 | 太尉袁淑文冠当时义庆在江州请为卫军谘议其余吴郡陆展东海何长瑜鲍照等并有辞章之美引为佐吏国臣 | 确定 |
+# | 秣陵令与中书舍人 | 迁秣陵令文帝以为中书舍人 | 确定 |
+# | 才尽之谜 | 上好为文章自谓人莫能及照悟其旨为文章多鄙言累句咸谓照才尽实不然也 | 确定 |
+# | 鲍参军与遇害 | 临海王子顼为荆州照为前军参军掌书记之任子顼败为乱兵所杀 | 确定（官衔出处即鲍参军之称所本）；卒年系于兵败，学界通说泰始二年466，正史不系年 |
+# | 生年 | 正史附传不系生年 | 学界推定约414，一律以约+dispute著录 |
+# | 作品文本 | 擬行路難／梅花落／代出自薊北門行／代白頭吟／玩月城西門廨中／觀漏賦並序／登大雷岸與妹書均自维基文库对应公版页实取 | 公版原文层；维基文库作品页尚未登记 sources.yaml（建议新增），故 source_ids 权挂 src-nanshi-vol13 并逐条注明实际文本出处 |
+# | 钟嵘诗品评语 | 宋参军鲍照诗……嗟其才秀人微故取湮当代……故言险俗者多以附照（诗品四库全书本卷2实取） | 实取得手；来源未登记，建议新增 |
+# | 杜甫俊逸鲍参军 | 清新庾开府俊逸鲍参军（春日忆李白）本次未直取全唐诗页面 | 转述层著录，建议新增来源 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: baozhao
+
+profile:
+  courtesy_name: 明远
+  aliases: [鲍参军]
+  gender: 男
+  ancestry: 东海（一说上党）
+  birthplace: 东海（确切县邑无考）
+  death_place: 荆州一带（随临海王子顼兵败，为乱兵所杀）
+  offices: [国侍郎（临川王国）, 秣陵令, 中书舍人, 前军参军（临海王幕，掌书记之任）]
+  fields: [文学]
+  roles: [诗人]
+  summary: 元嘉三大家之一，中国七言歌行的关键推进者；出身寒素而才高气盛，以贡诗言志强取仕进之门，终以才秀人微取湮当代——南朝寒门之声的第一歌者。
+
+timeline:
+  # ── 阶段一：东海寒素与贡诗言志 ────────────────────
+  - stage: 东海寒素与贡诗言志
+    stage_order: 1
+    title: 出生于东海
+    date:
+      text: 约414年
+      year: 414
+      precision: 约
+    place: 东海
+    summary: 鲍照生于东海。正史附传不系生年，此年为学界据卒年与仕历倒推的通行推定。
+    confidence: 存疑
+    dispute: 生年无任何正史依据，约414系学界推定；籍贯东海为《南史》明载，另有上党一说。
+    source_ids: [src-nanshi-vol13]
+  - stage: 东海寒素与贡诗言志
+    stage_order: 2
+    title: 以乐府知名，文甚遒丽
+    date:
+      text: 早年，具体年代不详
+      precision: 未知
+    place: ""
+    summary: 本传记其文辞瞻逸，尝为古乐府，文甚遒丽——未入仕已以乐府歌行立名。
+    source_ids: [src-nanshi-vol13]
+  - stage: 东海寒素与贡诗言志
+    stage_order: 3
+    title: 谒义庆未见知，欲贡诗言志
+    date:
+      text: 元嘉年间，临川王义庆藩镇时期
+      year: 430
+      range_end: 444
+      precision: 约
+    place: 临川王义庆藩镇（荆州或江州）
+    summary: 始尝谒义庆未见知，欲贡诗言志，人止之曰卿位尚卑不可轻忤大王。照勃然曰千载上有英才异士沉没而不闻者安可数哉！大丈夫岂可遂蕴智慧，使兰艾不辨，终日碌碌，与燕雀相随乎。
+    confidence: 存疑
+    dispute: 本传不系此事年份；义庆历镇荆州、江州，谒见地点与年份均系学界推定（通行谓元嘉十六年前后于江州）。
+    source_ids: [src-nanshi-vol13]
+  - stage: 东海寒素与贡诗言志
+    stage_order: 4
+    title: 奏诗，义庆奇之赐帛二十匹，擢国侍郎
+    date:
+      text: 元嘉年间，紧接贡诗之后
+      year: 430
+      range_end: 444
+      precision: 约
+    place: 临川王义庆藩镇
+    summary: 于是奏诗，义庆奇之，赐帛二十匹，寻擢为国侍郎，甚见知赏——以一首诗强取仕进之门，寒门文士的成名范式由此立。
+    source_ids: [src-nanshi-vol13]
+
+  # ── 阶段二：佐临川幕 ──────────────────────────────
+  - stage: 佐临川幕
+    stage_order: 5
+    title: 与何长瑜等同引为佐吏国臣
+    date:
+      text: 元嘉年间，佐临川王府时期
+      year: 439
+      range_end: 444
+      precision: 约
+    place: 临川王府
+    summary: 义庆招聚才学之士，太尉袁淑文冠当时亦被延请；吴郡陆展、东海何长瑜、鲍照等并有辞章之美，引为佐吏国臣——寒门文士进入宗室文学集团。
+    source_ids: [src-nanshi-vol13]
+  - stage: 佐临川幕
+    stage_order: 6
+    title: 作河清颂，其序甚工
+    date:
+      text: 元嘉中，具体年份不详
+      precision: 未知
+    place: ""
+    summary: 元嘉中河济俱清，当时以为美瑞，照为河清颂，其序甚工——应瑞而作的颂体名笔。
+    confidence: 存疑
+    dispute: 河济俱清的确切年份正史此处不系年，各家系年不一。
+    source_ids: [src-nanshi-vol13]
+  - stage: 佐临川幕
+    stage_order: 7
+    title: 登大雷岸与妹书
+    date:
+      text: 约439年前后，赴江州途中（通行推定）
+      year: 439
+      precision: 约
+    place: 大雷岸（约当今安徽望江一带）
+    summary: 赴任途中秋潦浩汗，栈石星饭结荷水宿，登大雷岸致书其妹，写江山雄峻之景，滔滔何穷漫漫安竭——南朝山水书信体的绝唱，受书人鲍令晖亦能诗。
+    confidence: 存疑
+    dispute: 书信本身为本集系统确凿文字；写作年份与行程背景系学界据义庆徙镇江州的推定。
+    source_ids: [src-nanshi-vol13]
+
+  # ── 阶段三：文帝朝中书舍人与见忌 ──────────────────
+  - stage: 文帝朝中书舍人与见忌
+    stage_order: 8
+    title: 迁秣陵令
+    date:
+      text: 元嘉后期，具体年份不详
+      precision: 未知
+    place: 建康
+    summary: 自临川王国侍郎迁秣陵令，由藩邸属官转为京邑附郭县令。
+    source_ids: [src-nanshi-vol13]
+  - stage: 文帝朝中书舍人与见忌
+    stage_order: 9
+    title: 文帝以为中书舍人
+    date:
+      text: 元嘉后期至末年，具体年份不详
+      precision: 未知
+    place: 建康
+    summary: 文帝以为中书舍人——寒门文士得近禁中，掌诏诰文书之任。
+    source_ids: [src-nanshi-vol13]
+  - stage: 文帝朝中书舍人与见忌
+    stage_order: 10
+    title: 为文章多鄙言累句，咸谓才尽
+    date:
+      text: 任中书舍人期间，具体年份不详
+      precision: 未知
+    place: 建康
+    summary: 上好为文章，自谓人莫能及。照悟其旨，为文章多鄙言累句，咸谓照才尽，实不然也——本传一语点破：非才尽，乃自晦避忌。
+    source_ids: [src-nanshi-vol13]
+
+  # ── 阶段四：历王幕与乱离 ──────────────────────────
+  - stage: 历王幕与乱离
+    stage_order: 11
+    title: 拟行路难十八首行世
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    summary: 组诗以泻水置平地与对案不能食诸篇写寒门之士的愤懑不平，自古圣贤尽贫贱何况我辈孤且直为其人格写照；十八首系统完整存录于公版文献。
+    confidence: 存疑
+    dispute: 组诗作年与地点均无定论，历来有早年说、佐幕说、晚岁说并存，本卷不强系年。
+    source_ids: [src-nanshi-vol13]
+  - stage: 历王幕与乱离
+    stage_order: 12
+    title: 临海王子顼镇荆州，为前军参军掌书记
+    date:
+      text: 孝武帝以后，具体年份不详（通行推定大明年间）
+      year: 457
+      range_end: 465
+      precision: 约
+    place: 荆州（江陵）
+    summary: 临海王子顼为荆州，照为前军参军，掌书记之任——鲍参军之称即由此官而来，晚年再入宗室幕府。
+    confidence: 存疑
+    dispute: 入临海王幕的具体年份正史不载，系据子顼出镇时间推定。
+    source_ids: [src-nanshi-vol13]
+
+  # ── 阶段五：乱军遇害 ──────────────────────────────
+  - stage: 乱军遇害
+    stage_order: 13
+    title: 子顼兵败，为乱兵所杀
+    date:
+      text: 约466年（泰始二年）
+      year: 466
+      precision: 约
+    place: 荆州一带
+    summary: 子顼败，照为乱兵所杀——诗人之死与其所依的最后藩镇同归于乱局，身后事正史无一语及葬地。
+    confidence: 存疑
+    dispute: 正史仅记死于子顼兵败之乱，不系卒年；泰始二年466为学界据兵败时间的通说。
+    source_ids: [src-nanshi-vol13]
+
+works:
+  - work_id: ni-xing-lu-nan-qi-si-xie-shui-zhi-ping-di
+    title: 拟行路难十八首·其四
+    alt_titles: [擬行路難十八首·其四]
+    genre: 七言杂言乐府（组诗）
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 以泻水置平地各东西南北流起兴，写人生有命而行叹坐愁的困局；结尾心非木石岂无感吞声踯躅不敢言，把不敢言三个字压成千古寒门的心声。
+    attribution: 确凿
+    excerpt: 泻水置平地，各自东西南北流。人生亦有命，安能行叹复坐愁！酌酒以自宽，举杯断绝歌路难。心非木石岂无感？吞声踯躅不敢言。
+    text_display: full
+    themes: [命途, 寒门之愤, 吞声不言]
+    influence: 中国诗歌史上以组诗形式抒写士人不遇之愤的巅峰之作，下启李白等人的行路难系列。
+    confidence: 存疑
+    dispute: 文本实取维基文库擬行路難页（公版，鲍氏集系统，src-baomingyuanji）；组诗系年无定说。
+    source_ids: [src-baomingyuanji]
+
+  - work_id: ni-xing-lu-nan-qi-liu-dui-an-bu-neng-shi
+    title: 拟行路难十八首·其六
+    alt_titles: [擬行路難十八首·其六]
+    genre: 七言杂言乐府（组诗）
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 对案不能食拔剑击柱长叹息，写弃置罢官后的居家场景，弄儿床前戏看妇机中织，愈平淡愈见牢落；尾联自古圣贤尽贫贱何况我辈孤且直，孤且直二字是其一生自况。
+    attribution: 确凿
+    excerpt: 对案不能食，拔剑击柱长叹息。丈夫生世会几时，安能蹀躞垂羽翼？弃置罢官去，还家自休息。……弄儿床前戏，看妇机中织。自古圣贤尽贫贱，何况我辈孤且直！
+    text_display: excerpt
+    themes: [失意, 孤直, 门第之慨]
+    influence: 长期入选语文教材的鲍照代表作，孤且直成为寒门士人自我认同的经典语汇。
+    confidence: 存疑
+    dispute: 文本实取维基文库擬行路難页（公版，鲍氏集系统，src-baomingyuanji）；系年无定说。
+    source_ids: [src-baomingyuanji]
+
+  - work_id: ni-xing-lu-nan-qi-yi-feng-jun-jin-zhi
+    title: 拟行路难十八首·其一
+    alt_titles: [擬行路難十八首·其一]
+    genre: 七言杂言乐府（组诗）
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 组诗首章，以金卮美酒雕琴羽帐锦衾铺陈人生欢娱之物，而以红颜零落岁将暮陡然转折，劝君裁悲减思，听我抵节行路吟——为整组行路吟定调。
+    attribution: 确凿
+    excerpt: 奉君金卮之美酒，玳瑁玉匣之雕琴。七彩芙蓉之羽帐，九华蒲萄之锦衾。……愿君裁悲且减思，听我抵节行路吟。不见柏梁铜雀上，宁闻古时清吹音？
+    text_display: excerpt
+    themes: [行乐与悲慨, 组诗序曲]
+    influence: 七言歌行铺陈转折章法的示范之作。
+    confidence: 存疑
+    dispute: 文本实取维基文库擬行路難页（公版，鲍氏集系统，src-baomingyuanji）。
+    source_ids: [src-baomingyuanji]
+
+  - work_id: mei-hua-luo
+    title: 梅花落
+    alt_titles: []
+    genre: 乐府横吹曲辞
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 借庭中杂树问梅独芳，念尔零落逐风飙徒有霜华无霜质，以霜华与霜质对举讥无质之徒，是咏物寓怀的名篇。
+    attribution: 确凿
+    excerpt: 中庭杂树多，偏为梅咨嗟。问君何独然？念其霜中能作花，露中能作实。摇荡春风媚春日。念尔零落逐风飙，徒有霜华无霜质。
+    text_display: full
+    themes: [咏梅, 骨质之喻]
+    influence: 梅花落由此成为历代递相拟作的笛曲诗题，《乐府诗集》卷二十四录鲍照为此题现存最早完整作者。
+    confidence: 存疑
+    dispute: 文本实取维基文库樂府詩集024卷页（公版，src-yuefushiji）。
+    source_ids: [src-yuefushiji]
+
+  - work_id: dai-chu-zi-ji-bei-men-xing
+    title: 代出自蓟北门行
+    alt_titles: [出自蓟北门行（《乐府诗集》题）]
+    genre: 乐府杂曲歌辞
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 自羽檄起边亭至投躯报明主，写征戍之苦与死节之志；疾风冲塞起一联状塞外苦寒如画，时危见臣节世乱识忠良为全篇筋骨。
+    attribution: 确凿
+    excerpt: 疾风冲塞起，沙砾自飘扬。马毛缩如猬，角弓不可张。时危见臣节，世乱识忠良。投躯报明主，身死为国殇。
+    text_display: excerpt
+    themes: [边塞, 忠节, 国殇]
+    influence: 边塞诗传统的前驱名作，马毛缩如猬角弓不可张为唐代边塞诗反复化用的意象。
+    confidence: 存疑
+    dispute: 文本实取维基文库代出自薊北門行页（公版，录自鮑氏集四部丛刊本／樂府詩集四部丛刊本，src-yuefushiji/src-baomingyuanji 已登记）；《乐府诗集》录本题出自蓟北门行，与本集题有一字之异。
+    source_ids: [src-yuefushiji, src-baomingyuanji]
+
+  - work_id: dai-bai-tou-yin
+    title: 代白头吟
+    alt_titles: []
+    genre: 乐府相和歌辞
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 直如朱丝绳清如玉壶冰起笔，借旧题怨情写小人当道忠信见猜之愤，食苗实硕鼠点白信苍蝇直斥时弊；玉壶冰一喻为后世咏清操者所祖。
+    attribution: 确凿
+    excerpt: 直如朱丝绳，清如玉壶冰。何惭宿昔意，猜恨坐相仍。……心赏犹难恃，貌恭岂易凭。古来共如此，非君独抚膺。
+    text_display: excerpt
+    themes: [清直自守, 猜恨, 知音难恃]
+    influence: 清如玉壶冰成为汉语咏高洁品格的经典意象源头之一。
+    confidence: 存疑
+    dispute: 文本实取维基文库鮑明遠集页（公版，src-baomingyuanji）；异文未深校善本。
+    source_ids: [src-baomingyuanji]
+
+  - work_id: wan-yue-cheng-xi-men-xie-zhong
+    title: 玩月城西门廨中
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 创作年代不详，多系于任职京邑时期
+      year: 445
+      range_end: 450
+      precision: 约
+    place: 建康城西门廨舍
+    context: 始见西南楼纤纤如玉钩，写新月至满月的夜色流转；三五二八时千里与君同为咏月名句，客游厌苦辛仕子倦飘尘透出宦游倦意。
+    attribution: 确凿
+    excerpt: 始见西南楼，纤纤如玉钩。末映东北墀，娟娟似蛾眉。……三五二八时，千里与君同。……归华先委露，别叶早辞风。……回轩驻轻盖，留酌待情人。
+    text_display: excerpt
+    themes: [咏月, 宦游倦怠]
+    influence: 千里与君同被视为望月怀远母题的先声。
+    confidence: 存疑
+    dispute: 文本实取维基文库鮑明遠集页（公版，src-baomingyuanji）；系年从京邑任职期的通行推定，亦有异说。
+    source_ids: [src-baomingyuanji]
+
+  - work_id: guan-lou-fu
+    title: 观漏赋并序
+    alt_titles: [觀漏賦]
+    genre: 赋（咏物玄思）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 由刻漏观照时间流逝与生命短促，波沉沉而东注日滔滔而西属写时光一去不返，结以漏盈兮漏虚长无绝兮芬芳，于哀感中翻出委顺自适之意。
+    attribution: 确凿
+    excerpt: 波沉沉而东注，日滔滔而西属。……聊弭志以高歌，顺烟雨而沉逸。……漏盈兮漏虚，长无绝兮芬芳。
+    text_display: excerpt
+    themes: [时间焦虑, 生死之思]
+    influence: 南朝咏物赋中以器物写宇宙意识的代表，与玩月城西门廨中的时间敏感互证。
+    confidence: 存疑
+    dispute: 文本实取维基文库觀漏賦页（公版，出自鮑明遠集，src-baomingyuanji）。
+    source_ids: [src-baomingyuanji]
+
+  - work_id: deng-da-lei-an-yu-mei-shu
+    title: 登大雷岸与妹书
+    alt_titles: []
+    genre: 骈散兼行的书信体文
+    date:
+      text: 约439年前后（通行推定）
+      year: 439
+      precision: 约
+    place: 大雷岸（约当今安徽望江一带）
+    context: 旅途登岸致书其妹，四面分写山川湖泽庐山云水，滔滔何穷漫漫安竭与孤鹤寒啸游鸿远吟诸句雄视千古，是南朝山水文中第一等的笔墨。
+    attribution: 确凿
+    excerpt: 吾自发寒雨，全行日少，加秋潦浩汗，山溪猥至，渡溯无边，险径游历，栈石星饭，结荷水宿。……南则积山万状，争气负高……西则回江永指，长波天合。滔滔何穷，漫漫安竭！
+    text_display: excerpt
+    themes: [山水, 行役, 手足之情]
+    influence: 中国文学史上最负盛名的家书之一，山水书信体的开创性范本。
+    confidence: 存疑
+    dispute: 文本实取维基文库鮑明遠集页（公版，src-baomingyuanji）；维基文库底本险径游历一处与别本险境游历存在异文；系年系学界推定。
+    source_ids: [src-baomingyuanji]
+
+footprints:
+  - name: 东海
+    modern_name: 约当今鲁苏交界郯城—连云港一带（郡望所在，确切县邑无考）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约414年生，少年时期在此
+      year: 414
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 《南史》仅记东海人，未记具体县邑与生地，足迹按郡望著录；另有上党一说。
+    source_ids: [src-nanshi-vol13]
+  - name: 临川王义庆藩镇（荆州／江州）
+    modern_name: 湖北省荆州市／江西省九江市（两镇先后，贡诗地点无定说）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 元嘉年间佐临川幕，先在荆州后随府徙江州（通行推定）
+      year: 439
+      range_end: 444
+      precision: 约
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 本传明载引为佐吏国臣，惟入幕地点与年份不载，义庆历镇荆州、江州，两处均可能，按藩镇迁徙次第并著。
+    source_ids: [src-nanshi-vol13]
+  - name: 大雷岸
+    modern_name: 安徽省安庆市望江县一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约439年前后途经登岸，作登大雷岸与妹书
+      year: 439
+      precision: 约
+    kind: 游历
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 经行地为书信本文内证，年份系学界据行程推定。
+    source_ids: [src-nanshi-vol13]
+  - name: 建康（秣陵）
+    modern_name: 江苏省南京市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 元嘉后期迁秣陵令、任中书舍人
+      year: 440
+      range_end: 453
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-nanshi-vol13]
+  - name: 荆州（江陵）
+    modern_name: 湖北省荆州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 孝武以后为临海王前军参军掌书记，直至兵败
+      year: 457
+      range_end: 466
+      precision: 范围
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 入幕起始年份据子顼出镇时间推定。
+    source_ids: [src-nanshi-vol13]
+  - name: 荆州一带（遇害地）
+    modern_name: 湖北省荆州市及周边
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约466年子顼兵败，为乱兵所杀
+      year: 466
+      precision: 约
+    kind: 逝世
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-nanshi-vol13]
+
+relations: []
+
+reception:
+  - era: 同时代
+    evaluator: 临川王刘义庆
+    quote: 于是奏诗，义庆奇之，赐帛二十匹，寻擢为国侍郎，甚见知赏。
+    text_display: excerpt
+    comment: 本传直载的赏遇始末——贡诗言志是鲍照一生仕进的起点，也是寒门文士以作品敲开权门的时代样本。
+    source_ids: [src-nanshi-vol13]
+  - era: 同时代
+    evaluator: 宋文帝（刘义隆）
+    quote: 上好为文章，自谓人莫能及。照悟其旨，为文章多鄙言累句。咸谓照才尽，实不然也。
+    text_display: excerpt
+    comment: 本传记文帝朝君臣文章之际的微妙生态：鲍照故意以鄙言累句自抑避忌，时人误传才尽，史臣特笔辩诬。
+    source_ids: [src-nanshi-vol13]
+  - era: 历代批评
+    evaluator: 钟嵘《诗品》
+    quote: 嗟其才秀人微，故取湮当代。然贵尚巧似，不避危仄，颇伤清雅之调。故言险俗者，多以附照。
+    text_display: excerpt
+    comment: 诗品对鲍照的定位语——才秀人微四字成为解释其一生沉浮的经典判词；险俗之讥反证其诗风越出门第雅调的冲击力。
+    confidence: 确定
+    dispute: 文本经维基文库诗品（四库全书本）卷2实取核验，src-shipin 已登记。
+    source_ids: [src-shipin]
+  - era: 历代批评
+    evaluator: 杜甫
+    quote: 清新庾开府，俊逸鲍参军。（春日忆李白）
+    text_display: excerpt
+    comment: 杜甫以俊逸许鲍照并与庾信并举，奠定鲍照在唐诗谱系中的先导地位。
+    confidence: 存疑
+    dispute: 此句为公版名句，但本次未直接实取全唐诗对应页面，按转述层著录；建议登记全唐诗杜甫卷相关来源后翻转。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究公认鲍照为七言歌行的关键推进者，其杂言乐府直接影响李白（李白拟行路难即承其题旨，李白已在库但不建跨时代关系条目，仅在此转述提及）；另聚焦其寒门身份与门阀制度的关系、元嘉三大家（与谢灵运颜延之并称）的诗史比较及生平系年考证。具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 拟行路难（其六等篇）长期入选语文教材与选本，对案不能食与自古圣贤尽贫贱何况我辈孤且直为公众熟诵；教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 鲍照少有专门影视形象，网络传播集中于其名句与鲍参军称号轶事；暂无可靠专门条目可引，留占位待补。
+    source_ids: []
+
+sources_used: [src-nanshi-vol13, src-baomingyuanji, src-yuefushiji, src-shipin]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "收口修订：src-yuefushiji、src-baomingyuanji、src-shipin 已由主会话登记为有效，9件作品与诗品批评条目自权挂/转述层翻入正式 source_ids 引用。"}
+    - {date: 2026-08-26, note: "初版。13条年谱（5阶段）、9件作品、6处足迹、0组关系（刘义庆／刘子顼非文学人物不入库；颜延之／谢灵运未入库；陶渊明无交游记载；李白跨时代仅在接受史转述）、5层以上接受史（含影视网络占位）。生平事实全部实取自维基文库南史卷13附传原文；诗品才秀人微评语经维基文库诗品四库本卷2实取；作品文本实取自擬行路難／梅花落（樂府詩集024卷）／代出自薊北門行／鮑明遠集等公版页。上述作品与批评来源尚未登记 sources.yaml，source_ids 权挂 src-nanshi-vol13 并逐条注明，建议主会话新增 src-yuefu-shiji、src-baomingyuanji、src-shipin 等来源后翻转。"}

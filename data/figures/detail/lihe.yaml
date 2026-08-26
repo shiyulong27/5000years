@@ -1,0 +1,464 @@
+# 李贺全景详卷（schema v1）
+# 史料审计表（TASK-003 批次；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 新唐书·卷203·文艺下·李贺传(J) | 李商隐·李贺小传(L) | 结论与置信 |
+# |---|---|---|---|
+# | 家世籍贯 | 字長吉系出鄭王後 | 无载 | 确定(J)；宗室远支家道中落系通识推论 |
+# | 籍里 | 无载 | 无载 | 福昌昌谷（今河南宜阳）系历代通行说法，正史无载→存疑 |
+# | 七岁赋高轩过 | 七歳能辭章韓愈皇甫湜始聞未信過其家使賀賦詩援筆輒就如素構自目曰髙軒過二人大驚 | 最先為昌黎韓愈所知 | 仅J载且七岁作说近传奇→存疑（本事层） |
+# | 形貌 | 纖瘦通眉長指爪能疾書 | 細瘦通眉長指爪能苦吟疾書 | 确定（J/L互证） |
+# | 锦囊觅句 | 每旦日騎弱馬從小奚奴背古錦囊遇所得書投囊中暮歸足成之 | 騎距驢背一古破錦囊遇有所得即書投囊中 | 确定；弱马/距驴细节两书互异 |
+# | 呕心 | 母探囊怒曰是兒要嘔出心乃已耳 | 太夫人曰是兒要當嘔出心始已耳 | 确定（J/L互证） |
+# | 避父讳 | 以父名晉肅不肯舉進士愈為作諱辨然卒亦不就舉 | 无载 | 确定(J)；讳辨系年据元和间韩愈行迹推定 |
+# | 官职 | 為協律郎 | 位不過奉禮太常 | 两书矛盾：协律郎/奉礼郎并存记录→有争议 |
+# | 享年 | 卒年二十七 | 長吉生二十四年 | 两书矛盾→有争议；L1从约790—816 |
+# | 临终白玉楼 | 无载 | 帝成白玉樓立召君為記 | 仅L载且自述出自姊嫁王氏口述→传说层 |
+# | 身后集 | 賀亦早世故其詩歌世傳者鮮焉 | 沈子明家所餘四卷而已；杜牧為《李長吉集序》 | 确定（J/L互证） |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: lihe
+
+profile:
+  courtesy_name: 长吉
+  art_name: ""
+  aliases: [诗鬼, 李长吉]
+  gender: 男
+  ethnicity: ""
+  ancestry: 福昌昌谷（今河南宜阳），唐宗室郑王房后裔，家道中落
+  birthplace: 福昌昌谷
+  death_place: 昌谷（据临终侍母情境推定）
+  offices: [奉礼郎（李商隐小传），协律郎（新唐书）]
+  fields: [文学]
+  roles: [诗人]
+  summary: 中唐诗坛奇才，人称诗鬼；骑驴觅句呕心沥血，因避父讳断绝进士之路，二十七岁早逝而奇诡冷艳自成一格。
+
+timeline:
+  # ── 阶段一：昌谷少年 ──────────────────────────────
+  - stage: 昌谷少年
+    stage_order: 1
+    title: 生于福昌昌谷，宗室远支家道中落
+    date:
+      text: "约790年"
+      year: 790
+      precision: 约
+    place: 福昌昌谷
+    summary: 新唐书仅称字长吉系出郑王后，籍里与生年均无明载。昌谷（今河南宜阳）为历代通行说法；宗室远支至其时已家道中落。
+    confidence: 存疑
+    dispute: 生年有约790、约791诸说，均由卒年与享年倒推；籍里昌谷说通行而正史无载。
+    source_ids: [src-xts-vol203]
+  - stage: 昌谷少年
+    stage_order: 2
+    title: 七岁能辞章，韩愈皇甫湜过访命赋《高轩过》
+    date:
+      text: 相传童年时事，确切年份不详
+      precision: 未知
+    place: 昌谷
+    summary: 新唐书载七歳能辭章，韓愈、皇甫湜始聞未信，過其家使賀賦詩，援筆輒就如素構，自目曰髙軒過，二人大驚，自是有名。
+    confidence: 存疑
+    dispute: 七岁赋高轩过仅见新唐书且近传奇笔法，学界多以《高轩过》实为成年后谒见之作、七岁说属本事层传闻；韩愈知赏李贺一事本身可信。
+    source_ids: [src-xts-vol203, src-lixiaoyin-lihezhuan]
+  - stage: 昌谷少年
+    stage_order: 3
+    title: 形貌纤瘦通眉长指爪，能苦吟疾书
+    date:
+      text: 不详
+      precision: 未知
+    place: ""
+    summary: 新唐书称爲人纖瘦通眉長指爪能疾書，李商隐小传称細瘦通眉長指爪能苦吟疾書，两书互证，为其最可靠的体貌记载。
+    source_ids: [src-xts-vol203, src-lixiaoyin-lihezhuan]
+
+  # ── 阶段二：骑驴觅句与交游 ──────────────────────────
+  - stage: 骑驴觅句与交游
+    stage_order: 4
+    title: 古锦囊骑驴觅句，母叹「呕出心乃已」
+    date:
+      text: 创作生涯日常，起讫年份不详
+      precision: 未知
+    place: 昌谷至京洛沿途
+    summary: 新唐书載每旦日出騎弱馬從小奚奴背古錦囊遇所得書投囊中，未始先立題然後爲詩，及暮歸足成之；母使婢探囊見所書多怒曰是兒要嘔出心乃已耳。李商隐小传同记而作騎距驢背一古破錦囊，呕心沥血典即出于此。
+    source_ids: [src-xts-vol203, src-lixiaoyin-lihezhuan]
+  - stage: 骑驴觅句与交游
+    stage_order: 5
+    title: 与王参元、杨敬之、权璩等交游唱和
+    date:
+      text: 元和前后，具体年份不详
+      precision: 未知
+    place: 长安、洛阳
+    summary: 新唐书載與游者權璩、楊敬之、王參元，每譔著時爲所取去；李商隐小传亦列王参元杨敬之权璩崔植为密。友人常来探取其囊中书稿传写。
+    confidence: 存疑
+    dispute: 所与游名单两书略有出入（新唐书作王恭元式异文、小传多崔植），交游事实可信而名录细节存疑。
+    source_ids: [src-xts-vol203, src-lixiaoyin-lihezhuan]
+  - stage: 骑驴觅句与交游
+    stage_order: 6
+    title: 乐府数十篇被诸弦管，辞尚奇诡无能效者
+    date:
+      text: 生前成名期，具体年份不详
+      precision: 未知
+    place: 长安
+    summary: 新唐书評其辭尚奇詭所得皆驚邁絶去翰墨畦逕當時無能效者，樂府數十篇雲韶諸工皆合之絃管——作品生前已入乐工传唱。
+    source_ids: [src-xts-vol203]
+
+  # ── 阶段三：讳阻与沉沦下僚 ──────────────────────────
+  - stage: 讳阻与沉沦下僚
+    stage_order: 7
+    title: 避父讳晋肃不肯举进士，韩愈作《讳辨》而不就
+    date:
+      text: 约809—810年之间（元和中期）
+      year: 809
+      range_end: 810
+      precision: 范围
+    place: 洛阳、长安
+    summary: 因父名晋肃、晋进同音，遭人毁谤不得举进士；韩愈特作《讳辨》力辩父名晋肃子不得举进士之说的荒谬，然贺卒亦不就举。此为其一生最大转折。
+    confidence: 存疑
+    dispute: 事件本末见新唐书与韩愈《讳辨》可证，惟毁谤者姓名、《讳辨》写作确年系学界依韩愈行迹推定。
+    source_ids: [src-xts-vol203]
+  - stage: 讳阻与沉沦下僚
+    stage_order: 8
+    title: 往还京洛干谒觅仕
+    date:
+      text: 元和年间，具体年份不详
+      precision: 未知
+    place: 长安、洛阳
+    summary: 李商隐小传載長吉往往獨騎往還京雒所至或時有著隨棄之。进士路绝之后，仍奔走两京以求仕进。
+    source_ids: [src-lixiaoyin-lihezhuan]
+  - stage: 讳阻与沉沦下僚
+    stage_order: 9
+    title: 官卑微职，沉沦下僚
+    date:
+      text: 约811—815年之间
+      year: 811
+      range_end: 815
+      precision: 范围
+    place: 长安
+    summary: 李商隐小传謂長吉生二十四年位不過奉禮太常，新唐书则作爲協律郎。两书所记均为太常寺卑微乐官，任上郁郁不得志。
+    confidence: 有争议
+    dispute: 官职两书矛盾：奉礼郎（李商隐）与协律郎（新唐书）并存，学界至今聚讼；任职起讫年份系据其诗集编年推定。
+    source_ids: [src-xts-vol203, src-lixiaoyin-lihezhuan]
+
+  # ── 阶段四：早逝与身后 ──────────────────────────────
+  - stage: 早逝与身后
+    stage_order: 10
+    title: 卒，年仅二十七
+    date:
+      text: "约816年"
+      year: 816
+      precision: 约
+    place: 昌谷（推定）
+    summary: 新唐书載爲協律郎卒年二十七。英年早逝，新唐书叹賀亦早世故其詩歌世傳者鮮焉。
+    confidence: 存疑
+    dispute: 享年两书相牾：新唐书作二十七，李商隐小传作生二十四年；卒年亦有816、817两说，L1从约790—816通说。卒地正史无载，此处从归乡说推定。
+    source_ids: [src-xts-vol203, src-lixiaoyin-lihezhuan]
+  - stage: 早逝与身后
+    stage_order: 11
+    title: 沈子明集遗诗四卷，杜牧受托作序
+    date:
+      text: 卒后数年内
+      precision: 未知
+    place: 长安
+    summary: 李商隐小传载遗诗仅沈子明家所餘四卷而已；沈子明以遗稿托杜牧，《李长吉集序》遂传世，李贺诗集赖此编定流传。
+    source_ids: [src-lixiaoyin-lihezhuan]
+  - stage: 早逝与身后
+    stage_order: 12
+    title: 天帝召登白玉楼的传说
+    date:
+      text: 临终之际（身后口述传说）
+      precision: 未知
+    place: ""
+    summary: 李商隐小传記長吉將死忽晝見緋衣人駕赤蚪持版來召，笑曰帝成白玉樓立召君爲記天上差樂不苦也，语出其姊嫁王氏者的转述。此为中国文学最著名的诗人临终传说。
+    confidence: 传说
+    dispute: 纯属身后传说层叙事，李商隐本人亦以天蒼蒼而高也上果有帝耶设疑问之；不得作信史处理。
+    source_ids: [src-lixiaoyin-lihezhuan]
+  - stage: 早逝与身后
+    stage_order: 13
+    title: 《新唐书·文艺下》为之立传
+    date:
+      text: 北宋修《新唐书》时（1060年前）
+      precision: 未知
+    place: ""
+    summary: 宋祁等采高轩过、古锦囊、避父讳、呕心诸事入正史文艺传，李贺事迹自此进入官方史学谱系，与李商隐小传构成双源。
+    source_ids: [src-xts-vol203]
+
+works:
+  - work_id: yanmen-taishou-xing
+    title: 雁门太守行
+    alt_titles: []
+    genre: 乐府
+    date:
+      text: 创作年代不详，一般系于元和年间
+      precision: 未知
+    place: ""
+    context: 以浓烈色彩写边塞危局与报国壮志，黑云压城一句为唐诗中最著名的战争开场之一。
+    attribution: 确凿
+    excerpt: 黑云压城城欲摧，甲光向日金鳞开。角声满天秋色里，塞上燕脂凝夜紫。半卷红旗临易水，霜重鼓寒声不起。报君黄金台上意，提携玉龙为君死。
+    text_display: full
+    themes: [边塞, 报国]
+    influence: 黑云压城城欲摧成为形容危急局势的成语级名句。
+    source_ids: [src-qts-lihe]
+
+  - work_id: liping-konghou-yin
+    title: 李凭箜篌引
+    alt_titles: [李凭箜篌引]
+    genre: 乐府
+    date:
+      text: 创作年代不详，李凭为元和间宫廷乐师
+      year: 810
+      precision: 约
+    place: 长安
+    context: 听乐师李凭弹箜篌而作，以石破天惊的想象摹写音乐效果，为古代音乐诗双璧之一。
+    attribution: 确凿
+    excerpt: 昆山玉碎凤凰叫，芙蓉泣露香兰笑。……女娲炼石补天处，石破天惊逗秋雨。
+    text_display: excerpt
+    themes: [音乐, 想象]
+    influence: 石破天惊成为成语；与白居易琵琶行并称摹写音乐的名篇。
+    confidence: 存疑
+    dispute: 系年据李凭供职宫廷时段推定。
+    source_ids: [src-qts-lihe]
+
+  - work_id: jin-tong-xian-ren-ci-han-ge
+    title: 金铜仙人辞汉歌
+    alt_titles: []
+    genre: 乐府
+    date:
+      text: 约813年前后（辞奉礼郎离京之际，一说）
+      year: 813
+      precision: 约
+    place: 长安（创作地推定）
+    context: 咏汉武帝金铜仙人被拆迁而潸然泪下的假想故事，借兴亡之感抒家国身世之悲。天若有情天亦老为千古名句。
+    attribution: 确凿
+    excerpt: 空将汉月出宫门，忆君清泪如铅水。衰兰送客咸阳道，天若有情天亦老。
+    text_display: excerpt
+    themes: [怀古, 兴亡]
+    influence: 天若有情天亦老后世屡被借用翻新（如近人词句），成为接受史上被引用密度极高的唐诗名句；此为后世化用现象而非原诗归属之争。
+    confidence: 存疑
+    dispute: 系年从辞官离京说，另有异说；天若有情句的历代借用属接受现象，不影响原诗归属。
+    source_ids: [src-qts-lihe]
+
+  - work_id: meng-tian
+    title: 梦天
+    alt_titles: []
+    genre: 七言古诗
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 梦中升天俯瞰尘寰，从月宫视角看沧海桑田，是古典诗中罕见的宇宙尺度想象。
+    attribution: 确凿
+    excerpt: 老兔寒蟾泣天色，云楼半开壁斜白。……遥望齐州九点烟，一泓海水杯中泻。
+    text_display: excerpt
+    themes: [梦境, 宇宙]
+    influence: 其俯瞰时空的想象力被视为古典诗歌中近乎现代宇宙观的孤例。
+    source_ids: [src-qts-lihe]
+
+  - work_id: ma-shi-qi-wu
+    title: 马诗二十三首（其五）
+    alt_titles: []
+    genre: 五言绝句
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 咏马组诗其一，以骏马渴望金络脑自喻怀才思用。
+    attribution: 确凿
+    excerpt: 大漠沙如雪，燕山月似钩。何当金络脑，快走踏清秋。
+    text_display: full
+    themes: [咏物, 怀才]
+    influence: 何当金络脑成为渴望建功立业的经典意象。
+    source_ids: [src-qts-lihe]
+
+  - work_id: nan-yuan-shi-san-shou-liu
+    title: 南园十三首（其六）
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 创作年代不详，居家昌谷时期
+      precision: 未知
+    place: 昌谷南园
+    context: 自嘲寻章摘句的书斋人生在乱世无补于事，苦吟诗人的自省与牢骚。
+    attribution: 确凿
+    excerpt: 寻章摘句老雕虫，晓月当帘挂玉弓。不见年年辽海上，文章何处哭秋风。
+    text_display: full
+    themes: [自嘲, 书斋]
+    influence: 寻章摘句由此成为固定成语。
+    source_ids: [src-qts-lihe]
+
+  - work_id: qiu-lai
+    title: 秋来
+    alt_titles: []
+    genre: 七言古诗
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 秋夜惊心，感伤知音零落，秋坟鬼唱一句奠定其鬼气森森的诗风印象。
+    attribution: 确凿
+    excerpt: 桐风惊心壮士苦，衰灯络纬啼寒素。……秋坟鬼唱鲍家诗，恨血千年土中碧。
+    text_display: excerpt
+    themes: [秋, 死亡]
+    influence: 秋坟鬼唱鲍家诗为后世鬼诗想象的源头性意象。
+    source_ids: [src-qts-lihe]
+
+  - work_id: qin-wang-yin-jiu
+    title: 秦王饮酒
+    alt_titles: []
+    genre: 七言古诗
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 借秦王宴饮驰想盛极而衰的幻境，羲和敲日一句以声音写光色，为其奇诡诗风代表。
+    attribution: 确凿
+    excerpt: 秦王骑虎游八极，剑光照空天自碧。羲和敲日玻璃声，劫灰飞尽古今平。
+    text_display: excerpt
+    themes: [咏史, 幻想]
+    influence: 羲和敲日玻璃声被誉为通感修辞的极致样本。
+    confidence: 存疑
+    dispute: 所咏秦王所指（秦始皇抑或借喻德宗）历来有争议。
+    source_ids: [src-qts-lihe]
+
+footprints:
+  - name: 福昌昌谷
+    modern_name: 河南省宜阳县昌谷一带
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 昌谷地望系历代考订（今宜阳三乡镇一带），坐标待接入 data/geography 体系
+    visit_date:
+      text: "约790年生于此并度过少年时代"
+      year: 790
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 籍里昌谷说为历代通行说法，正史无载；今宜阳境内具体点位尚有讨论。
+    source_ids: [src-xts-vol203]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约811—815年之间任太常微职，此前亦多次赴京
+      year: 811
+      range_end: 815
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    confidence: 存疑
+    dispute: 任奉礼郎（一说协律郎）的具体起讫年份系据诗集编年推定。
+    source_ids: [src-xts-vol203, src-lixiaoyin-lihezhuan]
+  - name: 洛阳
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 元和年间往还京洛之间
+      precision: 未知
+    kind: 游历
+    route_order: 3
+    memorial_only: false
+    source_ids: [src-lixiaoyin-lihezhuan]
+  - name: 昌谷（卒地，推定）
+    modern_name: 河南省宜阳县
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 卒地无明载，据李商隐小传临终侍母情境与归乡通说推定
+    visit_date:
+      text: "约816年病卒"
+      year: 816
+      precision: 约
+    kind: 逝世
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 正史与小传均未明言卒地，归昌谷卒为一说；另有卒于长安说。
+    source_ids: [src-lixiaoyin-lihezhuan]
+  - name: 白玉楼
+    modern_name: 无实地对应（天上宫阙）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 传说地名无地理实体，仅作文学纪念地标著录
+    visit_date:
+      text: 临终传说中受帝召为记
+      precision: 未知
+    kind: 纪念地
+    route_order: 5
+    memorial_only: true
+    inferred: true
+    confidence: 传说
+    dispute: 出自李商隐小传的天帝征召传说，纯为身后书写，后世据此建李贺相关纪念设施亦属纪念性质。
+    source_ids: [src-lixiaoyin-lihezhuan]
+
+relations:
+  - relation_type: 社群
+    target_id: hanyu
+    direction: 双向
+    period:
+      text: 元和初年前后订交
+      year: 806
+      range_end: 810
+      precision: 范围
+    evidence: 新唐书载韩愈皇甫湜始聞未信過其家使賀賦詩援筆輒就如素構自目曰髙軒過二人大驚自是有名；又因避父讳事愈爲作諱辨。李商隐小传亦称最先爲昌黎韓愈所知。
+    inferred: true
+    confidence: 存疑
+    dispute: 交往与知赏本身两源互证可信；但七岁赋高轩过的情节近传奇，学界多疑高轩过实为成年谒见之作，故整体按推定社群关系处理。
+    source_ids: [src-xts-vol203, src-lixiaoyin-lihezhuan]
+  - relation_type: 后世附会
+    target_id: lishangyin
+    direction: 单向
+    period:
+      text: 九世纪中叶李商隐追记其事
+      precision: 未知
+    evidence: 李商隐为李贺作《李贺小传》，据其姊嫁王氏者的口述记录生平细节与临终白玉楼征召传说。此为身后书写而非二人生前交往——二人年代错开，并无接触证据。
+    inferred: true
+    confidence: 确定
+    source_ids: [src-lixiaoyin-lihezhuan]
+
+reception:
+  - era: 同时代
+    evaluator: 韩愈、皇甫湜及长安乐工
+    quote: 援筆輒就如素構……二人大驚，自是有名。
+    text_display: excerpt
+    comment: 新唐书总评其辭尚奇詭所得皆驚邁絶去翰墨畦逕當時無能效者，樂府數十篇雲韶諸工皆合之絃管——生前诗名兼具文人激赏与乐工传唱两个维度。
+    source_ids: [src-xts-vol203]
+  - era: 历代批评
+    evaluator: 杜牧（《李长吉歌诗叙》）
+    quote: 骚之苗裔，理虽不及，辞或过之。
+    text_display: excerpt
+    comment: 杜牧受沈子明之托为李贺遗诗作序，以骚之苗裔定位其承续楚骚的奇诡传统；该评价为历代李贺批评的总纲。《李长吉歌诗叙》尚未登记入 sources.yaml，出处待登记后补 source_ids。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 研究集中于三题：呕心意象与中唐苦吟诗人群体的创作论；避父讳事件与唐代避讳制度、科举资格的关系辨析；生卒年（790/791生、816/817卒、享年27/24）与官职（奉礼郎/协律郎）的史料批判。具体论著引文须取得许可后补入。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 雁门太守行、马诗长期入选中小学语文教材；诗鬼称号与骑驴锦囊、呕心沥血典故构成大众文化记忆。教材篇目随学期变动，录入时须另行核验。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传媒综述
+    quote: ""
+    text_display: none
+    comment: 天若有情天亦老在网络语境中被高频引用翻新；白玉楼传说成为动漫、影视中常见的死亡美学符号。具体作品引用情况随媒介变动，暂不作条目级著录。
+    source_ids: []
+
+sources_used: [src-xts-vol203, src-lixiaoyin-lihezhuan, src-qts-lihe]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。13条年谱、9首作品、5处足迹、2组关系、5层接受史；生卒享年官职诸说落dispute，高轩过标本事层存疑、白玉楼标传说层}

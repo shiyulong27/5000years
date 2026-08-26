@@ -1,0 +1,553 @@
+# 嵇康全景详卷（schema v1）
+# 史料审计表（实取文本前置证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 晋书·卷四十九·嵇康传（J，维基文库实取） | 结论与置信 |
+# |---|---|---|
+# | 家世命氏 | 字叔夜，谯国铚人；其先姓奚，会稽上虞人，避怨徙焉；铚有嵇山，家于其侧因而命氏 | 确定(J) |
+# | 才性形仪 | 早孤有奇才远迈不群；身长七尺八寸美词气有风仪，土木形骸不自藻饰，人以为龙章凤姿天质自然；恬静寡欲宽简有大量 | 确定(J) |
+# | 学养 | 学不师受，博览无不该通，长好老庄 | 确定(J) |
+# | 仕婚 | 与魏宗室婚，拜中散大夫（年份无载） | 确定(J)/系年存疑 |
+# | 七贤 | 所与神交者惟阮籍、山涛，豫其流者向秀、刘伶、阮咸、王戎，遂为竹林之游，世所谓竹林七贤；戎自言与康居山阳二十年未尝见其喜愠之色 | 确定(J)；游处年代推定 |
+# | 问学隐逸 | 采药游山泽；从孙登游，登曰君性烈而才隽其能免乎；又遇王烈得石髓素书异事 | 确定(J)/王烈事志怪层 |
+# | 绝交书 | 山涛将去选官举康自代，康乃与涛书告绝（本传节录；全文另据文选系统实取核校） | 确定 |
+# | 锻铁 | 性绝巧而好锻；宅中有一柳树甚茂激水圜之每夏月居其下以锻；居贫尝与向秀共锻于大树之下以自赡给 | 确定(J)；地点洛阳系推定 |
+# | 钟会造访 | 会精练有才辩故往造焉，康不为之礼而锻不辍；何所闻而来／闻所闻而去问答；会以此憾之 | 确定(J) |
+# | 构陷 | 会言于文帝曰嵇康卧龙也不可起；谮康欲助毌丘俭赖山涛不听；言论放荡非毁典谟宜因衅除之；帝昵听信遂并害之 | 确定(J) |
+# | 吕安案 | 东平吕安服康高致每一相思辄千里命驾；后安为兄所枉诉以事系狱，辞相证引遂复收康 | 确定(J)；案情细节史文简略 |
+# | 幽愤诗 | 康一旦缧绁乃作幽愤诗（全篇载本传） | 确定(J) |
+# | 临刑 | 将刑东市，太学生三千人请以为师弗许；顾视日影索琴弹之曰广陵散于今绝矣；时年四十 | 确定(J) |
+# | 广陵散来历 | 尝游洛西暮宿华阳亭引琴而弹，夜有客称是古人授广陵散誓不传人（本传自记此异闻） | 传说(J) |
+# | 卒年 | 时年四十（本传无干支）；学界有景元三年(262)、四年(263)两说 | 有争议；本卷从约263 |
+# | 身后 | 海内之士莫不痛之，帝寻悟而恨焉；同卷向秀传载秀经山阳旧居作思旧赋悼嵇生之永辞顾日影而弹琴 | 确定(J) |
+#
+# 作品文本核源：与山巨源绝交书、养生论、声无哀乐论、琴赋均已逐字实取维基文库原文；
+# 赠秀才入军据通行本嵇康集转写（src-jikangji 预登记待核验，警告属预期）。
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: jikang
+
+profile:
+  courtesy_name: 叔夜
+  art_name: ""
+  aliases: [嵇中散]
+  gender: 男
+  ethnicity: ""
+  ancestry: 谯国铚县（今安徽濉溪临涣一带）；其先姓奚，会稽上虞人，避怨徙谯，家居铚县嵇山之侧，因而命氏
+  birthplace: 谯国铚县
+  death_place: 洛阳东市
+  offices: [中散大夫]
+  fields: [文学]
+  roles: [诗人, 音乐家, 思想家]
+  summary: 竹林七贤的精神领袖，越名教而任自然的玄学家与琴家，拒仕司马氏，冤死东市，临刑索琴一曲广陵散成为千古绝响。
+
+timeline:
+  # ── 阶段一：谯郡少年 ──────────────────────────────
+  - stage: 谯郡少年
+    stage_order: 1
+    title: 家世命氏与出生
+    date:
+      text: "约223年"
+      year: 223
+      precision: 约
+    place: 谯国铚县
+    summary: 本传记其字叔夜，谯国铚人；先世姓奚，会稽上虞人，避怨北徙，因家居铚县嵇山之侧而改氏嵇。生年正史无载。
+    confidence: 存疑
+    dispute: 生年系由卒年四十倒推（约223或224）；figures.yaml 登记卒年为262，则生年相应提前一年，两说并存详见卒条。
+    source_ids: [src-jinshu-vol49]
+  - stage: 谯郡少年
+    stage_order: 2
+    title: 早孤有奇才，学不师受博览该通
+    date:
+      text: 幼年至少年时期，具体年代不详
+      precision: 未知
+    place: 谯国铚县
+    summary: 本传载康早孤，有奇才远迈不群；学不师受，博览无不该通，长好老庄。又载兄喜有当世才，历太仆宗正。
+    source_ids: [src-jinshu-vol49]
+  - stage: 谯郡少年
+    stage_order: 3
+    title: 土木形骸，龙章凤姿
+    date:
+      text: 成年以后的自处风格，具体年代不详
+      precision: 未知
+    place: ""
+    summary: 身长七尺八寸，美词气，有风仪，而土木形骸不自藻饰，人以为龙章凤姿天质自然。恬静寡欲，含垢匿瑕，宽简有大量；常修养性服食之事，弹琴咏诗自足于怀。
+    source_ids: [src-jinshu-vol49]
+
+  # ── 阶段二：竹林高蹈 ──────────────────────────────
+  - stage: 竹林高蹈
+    stage_order: 4
+    title: 与魏宗室婚，拜中散大夫
+    date:
+      text: 婚娶与拜官年份正史无载
+      precision: 未知
+    place: 洛阳（推定）
+    summary: 本传载与魏宗室婚，拜中散大夫。中散大夫为王莽以来置散秩，魏晋沿置，无事而禄，与其不愿任事的姿态相合。
+    confidence: 存疑
+    dispute: 婚于何家、婚于何年均无明文；任职地点洛阳系依散官常居京师之制推定。
+    source_ids: [src-jinshu-vol49]
+  - stage: 竹林高蹈
+    stage_order: 5
+    title: 神交阮籍山涛，竹林之游成七贤
+    date:
+      text: 约249—260年之间
+      year: 249
+      range_end: 260
+      precision: 范围
+    place: 山阳（今河南焦作一带）
+    summary: 本传载所与神交者惟陈留阮籍、河内山涛，豫其流者河内向秀、沛国刘伶、籍兄子咸、琅邪王戎，遂为竹林之游，世所谓竹林七贤也。戎自言与康居山阳二十年，未尝见其喜愠之色。
+    confidence: 存疑
+    dispute: 七贤聚合的起讫年份正史无载，系依高平陵事变后政局与卒年框定；山阳游处地望另有河内他说。
+    source_ids: [src-jinshu-vol49]
+  - stage: 竹林高蹈
+    stage_order: 6
+    title: 采药游山泽，从孙登游
+    date:
+      text: 正始至景元间，具体年份不详
+      precision: 未知
+    place: 汲郡山中（今豫北太行山地）
+    summary: 康尝采药游山泽，会其得意忽焉忘反，樵苏者遇之咸谓神。至汲郡山中见孙登遂从之游；临去登曰君性烈而才隽其能免乎。又遇王烈共入山，得石髓素书异事，本传以见其神心所感每遇幽逸如此。
+    confidence: 存疑
+    dispute: 孙登所言系谶语式记载；王烈石髓素书情节属志怪笔法，采录仅以见本传叙事原貌。
+    source_ids: [src-jinshu-vol49]
+
+  # ── 阶段三：拒仕绝交 ──────────────────────────────
+  - stage: 拒仕绝交
+    stage_order: 7
+    title: 居贫锻铁，与向秀共锻大树之下
+    date:
+      text: 具体年份不详
+      precision: 未知
+    place: 洛阳（推定）
+    summary: 性绝巧而好锻。宅中有一柳树甚茂，乃激水圜之，每夏月居其下以锻。初康居贫，尝与向秀共锻于大树之下以自赡给，秀为之佐相对欣然傍若无人。
+    confidence: 存疑
+    dispute: 锻铁所在，本传兼载宅中柳树与大树之下两处而不系地名；洛阳说系依任职与交游圈推定，亦有主山阳说者。
+    source_ids: [src-jinshu-vol49]
+  - stage: 拒仕绝交
+    stage_order: 8
+    title: 钟会造访，锻不辍不为礼
+    date:
+      text: 具体年份不详
+      precision: 未知
+    place: 洛阳或山阳（推定）
+    summary: 颍川钟会贵公子精练有才辨，故往造焉。康不为之礼而锻不辍，良久会去，康问何所闻而来何所见而去，会答闻所闻而来见所见而去，会以此憾之。后遂进谗于文帝。
+    confidence: 存疑
+    dispute: 造访年份无载；地点系依锻铁所在推定。钟会衔恨与后来构陷的因果关系出自本传叙事框架。
+    source_ids: [src-jinshu-vol49]
+  - stage: 拒仕绝交
+    stage_order: 9
+    title: 山涛举康自代，作与山巨源绝交书
+    date:
+      text: 约257年前后
+      year: 257
+      precision: 约
+    place: 洛阳（推定）
+    summary: 山涛将去选官，举康自代，康乃与涛书告绝。书中自陈必不堪者七甚不可者二，每非汤武而薄周孔，宣言今但愿守陋巷教养子孙浊酒一杯弹琴一曲志愿毕矣。此书既行，知其不可羁屈也。
+    confidence: 有争议
+    dispute: 绝交书作年有甘露年间（约257）与景元元年前（约260）诸说；非汤武而薄周孔一句被后世视为招祸之由，亦有学者认为系司马氏借吕安案诛异己的托辞。
+    source_ids: [src-jinshu-vol49, src-jikangji]
+
+  # ── 阶段四：冤狱与东市 ──────────────────────────────
+  - stage: 冤狱与东市
+    stage_order: 10
+    title: 吕安案牵连下狱
+    date:
+      text: 约262—263年之间
+      year: 262
+      range_end: 263
+      precision: 范围
+    place: 洛阳
+    summary: 东平吕安服康高致，每一相思辄千里命驾，康友而善之。后安为兄所枉诉以事系狱，辞相证引，遂复收康。
+    confidence: 存疑
+    dispute: 吕安为兄吕巽诬诉的具体罪名（本传言及安妻徐氏事者出别传系统）与本传文字简略，案发年份在262与263间尚有分歧。
+    source_ids: [src-jinshu-vol49]
+  - stage: 冤狱与东市
+    stage_order: 11
+    title: 缧绁之中作幽愤诗
+    date:
+      text: 约262—263年之间，系狱期间
+      year: 262
+      range_end: 263
+      precision: 范围
+    place: 洛阳狱中
+    summary: 康性慎言行，一旦缧绁，乃作幽愤诗。诗自叙早孤任性抗心希古托好庄老，至昔惭柳惠今愧孙登内负宿心外恧良朋，末以采薇山阿散发岩岫颐神养寿明志。
+    source_ids: [src-jinshu-vol49]
+  - stage: 冤狱与东市
+    stage_order: 12
+    title: 钟会谮害，文帝昵听信会
+    date:
+      text: 约262—263年之间
+      year: 262
+      range_end: 263
+      precision: 范围
+    place: 洛阳
+    summary: 会言于文帝曰嵇康卧龙也不可起，公无忧天下顾以康为虑耳；因谮康欲助毌丘俭赖山涛不听，又谓康安等言论放荡非毁典谟帝王者所不宜容宜因衅除之以淳风俗。帝既昵听信会，遂并害之。
+    source_ids: [src-jinshu-vol49]
+  - stage: 冤狱与东市
+    stage_order: 13
+    title: 太学生三千请以为师，弗许
+    date:
+      text: "约263年"
+      year: 263
+      precision: 约
+    place: 洛阳
+    summary: 康将刑东市，太学生三千人请以为师，弗许。士林之望至于如此，反促其死。
+    confidence: 存疑
+    dispute: 卒年有景元三年(262)与四年(263)两说，本卷从约263；figures.yaml 登记为262。太学生请师人数三千见于本传，别传系统文字略异。
+    source_ids: [src-jinshu-vol49]
+  - stage: 冤狱与东市
+    stage_order: 14
+    title: 顾视日影，索琴弹广陵散，年四十
+    date:
+      text: "约263年"
+      year: 263
+      precision: 约
+    place: 洛阳东市
+    summary: 康顾视日影，索琴弹之，曰昔袁孝尼尝从吾学广陵散吾每靳固之，广陵散于今绝矣！时年四十。本传又记其早年游洛西暮宿华阳亭，有古人夜授此曲誓不传人之异闻。
+    confidence: 存疑
+    dispute: 卒年两说见上条；华阳亭神授故事属志怪层，仅为本传自记之传说，不作信史。
+    source_ids: [src-jinshu-vol49]
+
+  # ── 阶段五：身后余响 ──────────────────────────────
+  - stage: 身后余响
+    stage_order: 15
+    title: 海内痛之，向秀作思旧赋
+    date:
+      text: 约264年及以后
+      year: 264
+      precision: 约
+    place: 洛阳、山阳
+    summary: 康死后海内之士莫不痛之，帝寻悟而恨焉。同卷向秀传载秀应本郡计入洛，途经山阳旧居，日薄虞泉寒冰凄然，邻人吹笛发声寥亮，追想曩昔游宴之好，作思旧赋悼嵇生之永辞兮顾日影而弹琴。
+    confidence: 存疑
+    dispute: 思旧赋作于入洛对答文帝之后，系年约在康死后一两年间；帝寻悟而恨焉云云为唐修晋书之史论笔法。
+    source_ids: [src-jinshu-vol49]
+
+works:
+  - work_id: yushanjuyuanjuejiaoshu
+    title: 与山巨源绝交书
+    alt_titles: [绝交书]
+    genre: 书牍
+    date:
+      text: 约257年前后
+      year: 257
+      precision: 约
+    place: 洛阳（推定）
+    context: 山涛（字巨源）迁选官举康自代，康作书拒绝并举自陈不堪仕宦的九患，宣布决裂。书中每非汤武而薄周孔一句历来被视为触忌之尤，书行而知其不可羁屈。
+    attribution: 确凿
+    excerpt: 今但愿守陋巷，教养子孙，时与亲旧叙阔，陈说平生，浊酒一杯，弹琴一曲，志愿毕矣。……又每非汤武而薄周孔，在人闲不止，此事会显世教所不容，此甚不可一也。刚肠疾恶，轻肆直言，遇事便发，此甚不可二也。
+    text_display: excerpt
+    themes: [拒仕, 自我剖白]
+    influence: 中国士人拒绝合作与人格独立的宣言书，历代传诵不绝。
+    confidence: 存疑
+    dispute: 作年有甘露年间与景元年间诸说；本传所录为节本，全文从文选系统实取核校。
+    source_ids: [src-jinshu-vol49, src-jikangji]
+
+  - work_id: yangshenglun
+    title: 养生论
+    alt_titles: [养生论（嵇康）]
+    genre: 论说文
+    date:
+      text: 成年后至下狱前，具体年份不详
+      precision: 未知
+    place: ""
+    context: 本传载康常修养性服食之事，以为神仙禀之自然非积学所得，至于导养得理则安期彭祖之伦可及，乃著养生论。向秀曾与之论养生辞难往复。
+    attribution: 确凿
+    excerpt: 精神之于形骸，犹国之有君也。神躁于中，而形丧于外，犹君昏于上，国乱于下也。……是以君子知形恃神以立，神须形以存，悟生理之易失，知一过之害生。
+    text_display: excerpt
+    themes: [养生, 形神]
+    influence: 魏晋养生思想的代表作，与向秀往复辩难开名理之争的风气。
+    source_ids: [src-jinshu-vol49, src-jikangji]
+
+  - work_id: shengwuailelun
+    title: 声无哀乐论
+    alt_titles: []
+    genre: 论说文
+    date:
+      text: 具体年份不详
+      precision: 未知
+    place: ""
+    context: 设秦客与东野主人八难八答，主张声音自当以善恶为主则无关乎哀乐，哀乐自当以情感则无系于声音。本传评曰甚有条理。
+    attribution: 确凿
+    excerpt: 音声之作，其犹臭味在于天地闲。其善与不善，虽遭遇浊乱，其体自若而不变也。……然则心之与声，明为二物。
+    text_display: excerpt
+    themes: [音乐美学, 名理]
+    influence: 中国音乐美学史上最系统的独立命题，与养生论并称嵇康论辩双璧，后世玄谈清议奉为经典。
+    source_ids: [src-jinshu-vol49, src-jikangji]
+
+  - work_id: qinfu
+    title: 琴赋
+    alt_titles: []
+    genre: 赋
+    date:
+      text: 具体年份不详
+      precision: 未知
+    place: ""
+    context: 推众器之中琴德最优，历写琴材之生、制器之工、演奏之妙与琴德之和，末缀乱辞。既见其音乐家的当行本色，亦与临刑索琴的命运互证。
+    attribution: 确凿
+    excerpt: 可以导养神气，宣和情志，处穷独而不闷者，莫近于音声也。……众器之中，琴德最优。……性洁静以端理，含至德之和平。
+    text_display: excerpt
+    themes: [音乐, 咏物]
+    influence: 咏琴文学的巅峰之作，历代琴人书斋必读，广陵止息等曲名赖此以传。
+    source_ids: [src-jinshu-vol49, src-jikangji]
+
+  - work_id: youfenshi
+    title: 幽愤诗
+    alt_titles: []
+    genre: 四言诗
+    date:
+      text: 约262—263年之间，系狱期间
+      year: 262
+      range_end: 263
+      precision: 范围
+    place: 洛阳狱中
+    context: 一旦缧绁，自讼自陈之作。回望早孤任性、抗心希古的一生，愧对孙登昔日性烈才隽之诫，以颐神养寿之愿作结。全篇载于本传。
+    attribution: 确凿
+    excerpt: 嗟余薄祜，少遭不造，哀茕靡识，越在襁褓。……昔惭柳惠，今愧孙登，内负宿心，外恧良朋。……采薇山阿，散发岩岫，永啸长吟，颐神养寿。
+    text_display: excerpt
+    themes: [自省, 冤愤]
+    influence: 其绝命前的心史，与临刑弹琴同为嵇康形象的两块基石。
+    source_ids: [src-jinshu-vol49]
+
+  - work_id: zengxiucairujun
+    title: 赠秀才入军
+    alt_titles: [兄秀才公穆入军赠诗]
+    genre: 四言诗
+    date:
+      text: 具体年份不详
+      precision: 未知
+    place: ""
+    context: 赠兄嵇喜入军的组诗，想象军旅行猎之乐。目送归鸿手挥五弦一联写名士风神，俯仰自得游心太玄申言玄学襟抱，为其四言诗最高成就。
+    attribution: 确凿
+    excerpt: 息徒兰圃，秣马华山。流磻平皋，垂纶长川。目送归鸿，手挥五弦。俯仰自得，游心太玄。
+    text_display: excerpt
+    themes: [赠答, 玄想]
+    influence: 目送归鸿手挥五弦成为魏晋风度最凝练的意象之一。
+    confidence: 存疑
+    dispute: 文字据通行本嵇康集转写待逐字核验；目送归鸿联所在篇次从通说第十四首，组诗作年无考。
+    source_ids: [src-jikangji]
+
+  - work_id: taishizhen
+    title: 太师箴
+    alt_titles: []
+    genre: 箴
+    date:
+      text: 具体年份不详
+      precision: 未知
+    place: ""
+    context: 本传载复作太师箴，亦足以明帝王之道焉。借古太师之口箴规君主，寄其政治批判于扬榷上古。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [政论]
+    influence: 与声无哀乐论等同为其借文体立言的代表。
+    source_ids: [src-jinshu-vol49]
+
+  - work_id: gaoshizhuan
+    title: 高士传（传赞）
+    alt_titles: []
+    genre: 传记著作
+    date:
+      text: 具体年份不详
+      precision: 未知
+    place: ""
+    context: 本传载撰上古以来高士为之传赞，欲友其人于千载也。以立传知古为友，是其慕隐逸尚奇节人格的系统表达。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [隐逸, 人物品题]
+    influence: 开魏晋高士类传风气，原书已佚，后世辑本所收与原帙关系存争议。
+    confidence: 存疑
+    dispute: 本传仅言撰高士传赞；今传皇甫谧高士传与此书关系、及嵇著卷帙篇目均难确考。
+    source_ids: [src-jinshu-vol49]
+
+  - work_id: guanglingsan
+    title: 广陵散
+    alt_titles: [广陵止息]
+    genre: 琴曲
+    date:
+      text: 曲出先秦汉魏间，具体来源不详
+      precision: 未知
+    place: ""
+    context: 康临刑顾视日影索琴弹之，叹广陵散于今绝矣，曲与人俱成绝响符号。本传自记早年洛西华阳亭遇古人夜授此曲誓不传人的异闻，又记袁孝尼尝求学而靳固不予。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [音乐, 绝响]
+    influence: 因其临刑一曲成为中国文化中壮烈与绝艺的代名词，琴谱后世复出，聂政刺韩王说流行，皆围绕此曲层累而成。
+    confidence: 传说
+    dispute: 华阳亭神授故事属志怪层不足信史；曲情本事有聂政刺韩相等说，今存谱本与嵇康所奏渊源难考。
+    source_ids: [src-jinshu-vol49]
+
+footprints:
+  - name: 谯国铚县嵇山故里
+    modern_name: 安徽省淮北市濉溪县临涣镇一带
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 铚县地望系历史地理考订（通说今濉溪临涣），坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: 幼年至离乡之前
+      precision: 未知
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    source_ids: [src-jinshu-vol49]
+  - name: 山阳竹林游处
+    modern_name: 河南省焦作市一带
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 竹林之游地望系学界考订推定，坐标待接入体系
+    visit_date:
+      text: 约249—260年之间
+      year: 249
+      range_end: 260
+      precision: 范围
+    kind: 游历
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 戎自言与康居山阳二十年为游处主要依据；竹林是否实有其地、山阳地望所指学界长期讨论。
+    source_ids: [src-jinshu-vol49]
+  - name: 汲郡山中
+    modern_name: 河南省卫辉、辉县一带太行山地
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 孙登隐处地望系历史地理考订，坐标待接入体系
+    visit_date:
+      text: 正始至景元间，具体年份不详
+      precision: 未知
+    kind: 游历
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 孙登所居有苏门山、汲郡山中诸说，本传两存其文。
+    source_ids: [src-jinshu-vol49]
+  - name: 洛阳
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 拜中散大夫以后至被害，任职、锻铁与系狱所在
+      year: 245
+      range_end: 263
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 中散大夫任所与宅中锻铁在洛阳系依职制和交游圈推定，正史未明言宅第所在。
+    source_ids: [src-jinshu-vol49]
+  - name: 洛阳东市
+    modern_name: 河南省洛阳市（汉魏洛阳城东市故地）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 汉魏洛阳东市故地系考古与历史地理考订，坐标待接入体系
+    visit_date:
+      text: "约263年"
+      year: 263
+      precision: 约
+    kind: 逝世
+    route_order: 5
+    memorial_only: false
+    confidence: 存疑
+    dispute: 本传明载将刑东市；卒年262与263两说并存（详见 timeline 卒条 dispute）。
+    source_ids: [src-jinshu-vol49]
+  - name: 华阳亭（洛西）
+    modern_name: 河南省洛阳市西郊（故地无考）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 仅知在本传所谓洛西，亭址无考；坐标暂缺
+    visit_date:
+      text: 不详
+      precision: 未知
+    kind: 纪念地
+    route_order: 6
+    memorial_only: true
+    confidence: 传说
+    dispute: 夜有客人授广陵散的故事为本传自记异闻，属传说层，此处仅按规范作纪念地著录。
+    source_ids: [src-jinshu-vol49]
+
+relations:
+  - relation_type: 社群
+    target_id: ruanji
+    direction: 双向
+    period:
+      text: 约249—260年之间，同预竹林之游
+      year: 249
+      range_end: 260
+      precision: 范围
+    evidence: 本传载康所与神交者惟陈留阮籍、河内山涛，豫其流者河内向秀、沛国刘伶、籍兄子咸、琅邪王戎，遂为竹林之游，世所谓竹林七贤也。阮籍传同卷互证；绝交书中康自言阮嗣宗口不论人过吾每师之而未能及，知二人相知之深。
+    source_ids: [src-jinshu-vol49, src-jikangji]
+  - relation_type: 思想影响
+    target_id: zhuangzi
+    direction: 单向
+    period:
+      text: 终生服膺
+      precision: 未知
+    evidence: 本传载康长好老庄；幽愤诗自叙托好庄老贱物贵身志在守朴；绝交书开篇即称老子庄周吾之师也。
+    source_ids: [src-jinshu-vol49, src-jikangji]
+  - relation_type: 思想影响
+    target_id: laozi
+    direction: 单向
+    period:
+      text: 终生服膺
+      precision: 未知
+    evidence: 同上，长好老庄、老子庄周吾之师也；越名教而任自然之说（本传所录君子无私之论）以老庄自然观为底色。
+    source_ids: [src-jinshu-vol49, src-jikangji]
+
+reception:
+  - era: 同时代
+    evaluator: 晋书本传（录时人品目）
+    quote: 龙章凤姿，天质自然。
+    text_display: excerpt
+    comment: 本传评价原貌——时人以龙凤喻其仪表天成而不假修饰，此四字遂成嵇康形象的定妆语。
+    source_ids: [src-jinshu-vol49]
+  - era: 同时代
+    evaluator: 孙登
+    quote: 君性烈而才隽，其能免乎！
+    text_display: excerpt
+    comment: 汲郡山中临别之言，本传引以预示其杀身之祸，是同时代人对嵇康性格命运最著名也最沉重的判断。
+    source_ids: [src-jinshu-vol49]
+  - era: 历代批评
+    evaluator: 颜延之（五君咏·嵇中散）
+    quote: 中散不偶世，本自餐霞人。……鸾翮有时铩，龙性谁能驯。
+    text_display: excerpt
+    comment: 南朝宋颜延之咏竹林五贤之作，鸾翮龙性一联确立嵇康刚烈不可驯的经典批评形象。诗句据通行本文选转写，来源条目待补登记，source_ids 暂留空（警告可接受）。
+    confidence: 存疑
+    dispute: 五君咏文字历代刊本小异；本条引文未经逐字实取，仅作接受史线索著录。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦玄学与名教之争框架下的嵇康思想定位、声无哀乐论的音乐美学重估、吕安案与司马氏政权性质的政治史再检讨、广陵散谱系源流考辨等议题；具体论著引文须逐条取得许可后补入，本卷暂作中立综述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 广陵散已成为绝响与文化气节的公共符号，竹林七贤作为魏晋风度的代名词进入中学历史与语文叙述；教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播
+    quote: ""
+    text_display: none
+    comment: 嵇康与广陵散题材屡见于影视戏剧与网络讨论，相关具体作品权利状态不一，暂不著录以免失核。
+    source_ids: []
+
+sources_used: [src-jinshu-vol49, src-jikangji]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版（首次执行因上游网络故障中断后重试完成）。15条年谱、9部作品、6处足迹、3组关系、6层接受史；晋书卷49与四种诗文全文均经维基文库实取核校}

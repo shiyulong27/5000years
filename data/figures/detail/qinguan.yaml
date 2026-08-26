@@ -1,0 +1,641 @@
+# 秦观全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 宋史·卷444·文苑六·秦观传（维基文库实取） | 结论与置信 |
+# |---|---|---|
+# | 名号籍贯 | 字少游一字太虚扬州高邮人 | 确定 |
+# | 少年气质 | 少豪隽慷慨溢于文词举进士不中；强志盛气好大而见奇读兵家书与己意合 | 确定 |
+# | 谒苏轼 | 见苏轼于徐为赋黄楼轼以为有屈宋才；又介其诗于王安石安石亦谓清新似鲍谢 | 确定；谒徐确年正史无载（通说约1077—1078） |
+# | 及第释褐 | 轼勉以应举为亲养始登第调定海主簿蔡州教授 | 确定；及第年份正史无载（通行元丰八年1085） |
+# | 元祐入馆 | 元祐初轼以贤良方正荐于朝除太学博士校正秘书省书籍迁正字复兼国史院编修官上日有砚墨器币之赐 | 确定 |
+# | 苏门四学士 | 同卷黄庭坚传：与张耒晁补之秦观俱游苏轼门天下称为四学士 | 确定 |
+# | 绍圣贬窜 | 绍圣初坐党籍出通判杭州；御史刘拯论其增损实录贬监处州酒税；使者承风望指候伺过失既而无所得则以谒告写佛书为罪削秩徙郴州继编管横州又徙雷州 | 确定 |
+# | 放还与卒 | 徽宗立复宣德郎放还；至藤州出游华光亭为客道梦中长短句索水欲饮水至笑视之而卒；先自作挽词其语哀甚；年五十三有文集四十卷 | 确定（卒年1100与生年1049闭合） |
+# | 文风与身后 | 观长于议论文丽而思深；轼闻之叹少游不幸死道路哀哉世岂复有斯人乎 | 确定 |
+# | 词作文本 | 鹊桥仙踏莎行等取通行公版文本（淮海居士长短句系统），未逐字核对善本异文 | 通行本层；异文未深校，标存疑说明 |
+# | 苏轼书扇事 | 通行说法：苏轼绝爱踏莎行尾两句书于扇曰少游已矣虽万人何赎——题惠洪冷斋夜话；已在维基文库冷斋夜话卷一卷三检索未获该条原文 | 笔记层存疑，出处待核 |
+# | 满庭芳本事 | 会稽艳遇说与苏轼戏称山抹微云君事均出宋人笔记层 | 笔记层存疑 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: qinguan
+
+profile:
+  courtesy_name: 少游（一字太虚）
+  art_name: 淮海居士
+  aliases: [秦淮海, 淮海先生]
+  gender: 男
+  ethnicity: ""
+  ancestry: 扬州高邮
+  birthplace: 扬州高邮
+  death_place: 藤州（今广西藤县）
+  offices: [定海主簿, 蔡州教授, 太学博士, 秘书省正字, 兼国史院编修官, 通判杭州, 监处州酒税, 宣德郎（徽宗立复）]
+  fields: [文学]
+  roles: [词人, 散文家]
+  summary: 苏门四学士中最具词心的一位，婉约派正宗；一谪南荒而词境由凄婉转凄厉，「古之伤心人」的千古典范。
+
+timeline:
+  # ── 阶段一：高邮少年 ──────────────────────────────
+  - stage: 高邮少年
+    stage_order: 1
+    title: 出生于扬州高邮
+    date:
+      text: "1049年"
+      year: 1049
+      precision: 精确
+    place: 扬州高邮
+    summary: 秦观生于扬州高邮。生年由宋史卒年五十三倒推闭合，与L1登记一致。
+    source_ids: [src-songshi-vol444]
+  - stage: 高邮少年
+    stage_order: 2
+    title: 豪隽慷慨，读兵家书
+    date:
+      text: 少年时期，具体年代不详
+      precision: 未知
+    place: 高邮
+    summary: 本传记其少豪隽慷慨溢于文词，举进士不中；强志盛气好大而见奇，读兵家书与己意合——少年气象兼有文采与豪气两面。
+    source_ids: [src-songshi-vol444]
+
+  # ── 阶段二：从游苏门 ──────────────────────────────
+  - stage: 从游苏门
+    stage_order: 3
+    title: 见苏轼于徐州，赋黄楼
+    date:
+      text: 约1077—1078年之间
+      year: 1077
+      range_end: 1078
+      precision: 范围
+    place: 徐州
+    summary: 见苏轼于徐，为赋黄楼，轼以为有屈宋才。此即苏秦师承之始，正史明载；黄楼为苏轼知徐州时抗洪后所建。
+    confidence: 存疑
+    dispute: 谒苏轼的确年份正史无载，系学界据黄楼建成时间推定为约1077—1078年间。
+    source_ids: [src-songshi-vol444]
+  - stage: 从游苏门
+    stage_order: 4
+    title: 介诗王安石，谓清新似鲍谢
+    date:
+      text: 约1078年起，具体年份不详
+      year: 1078
+      precision: 约
+    place: 金陵一带（介诗经由）
+    summary: 苏轼又介其诗于王安石，安石亦谓清新似鲍谢。得当时文坛前后两巨擘同声推许，声名遂起。
+    confidence: 存疑
+    dispute: 王安石评语正史有载，然介诗确切年份无考。
+    source_ids: [src-songshi-vol444]
+
+  # ── 阶段三：登第与馆阁 ────────────────────────────
+  - stage: 登第与馆阁
+    stage_order: 5
+    title: 应举登第
+    date:
+      text: 约1085年
+      year: 1085
+      precision: 约
+    place: 汴京
+    summary: 初举进士不中，轼勉以应举为亲养，始登第。登第年份正史无载，从通行元丰八年（1085）说。
+    confidence: 存疑
+    dispute: 及第年份系学界通行推定，正史仅记应举经过不系年。
+    source_ids: [src-songshi-vol444]
+  - stage: 登第与馆阁
+    stage_order: 6
+    title: 调定海主簿、蔡州教授
+    date:
+      text: 约1085—1086年之间
+      year: 1085
+      range_end: 1086
+      precision: 范围
+    place: 定海、蔡州
+    summary: 登第后调定海主簿、蔡州教授，仕历起点均在州县学官。
+    confidence: 存疑
+    dispute: 两任起讫年份据职历推定。
+    source_ids: [src-songshi-vol444]
+  - stage: 登第与馆阁
+    stage_order: 7
+    title: 元祐初除太学博士，校正秘书省书籍
+    date:
+      text: 约1086年
+      year: 1086
+      precision: 约
+    place: 汴京
+    summary: 元祐初，轼以贤良方正荐于朝，除太学博士，校正秘书省书籍。因苏轼荐引入京，进入馆阁系统。
+    source_ids: [src-songshi-vol444]
+  - stage: 登第与馆阁
+    stage_order: 8
+    title: 迁秘书省正字，兼国史院编修官
+    date:
+      text: 约1087—1088年之间
+      year: 1087
+      range_end: 1088
+      precision: 范围
+    place: 汴京
+    summary: 迁正字，而复为兼国史院编修官，上日有砚墨器币之赐。此为其仕途顶点。
+    confidence: 存疑
+    dispute: 迁正字与兼编修官的具体年份诸谱系略有出入。
+    source_ids: [src-songshi-vol444]
+  - stage: 登第与馆阁
+    stage_order: 9
+    title: 与黄庭坚张耒晁补之并称苏门四学士
+    date:
+      text: 元祐年间
+      year: 1086
+      range_end: 1093
+      precision: 范围
+    place: 汴京
+    summary: 同卷黄庭坚传明载：与张耒、晁补之、秦观俱游苏轼门，天下称为四学士。四学士之名是同时代的公论而非后世追封。
+    confidence: 存疑
+    dispute: 并称形成的确切时间无载，系元祐间苏轼居朝时期的通称。
+    source_ids: [src-songshi-vol444]
+
+  # ── 阶段四：绍圣贬窜 ──────────────────────────────
+  - stage: 绍圣贬窜
+    stage_order: 10
+    title: 坐元祐党籍，出通判杭州
+    date:
+      text: 约1094年
+      year: 1094
+      precision: 约
+    place: 杭州
+    summary: 绍圣初，坐党籍，出通判杭州。新党复起，元祐旧臣例遭清洗，秦观以苏门中人首当其冲。
+    source_ids: [src-songshi-vol444]
+  - stage: 绍圣贬窜
+    stage_order: 11
+    title: 御史刘拯论增损实录，贬监处州酒税
+    date:
+      text: 约1094—1095年之间
+      year: 1094
+      range_end: 1095
+      precision: 范围
+    place: 处州
+    summary: 以御史刘拯论其增损实录，贬监处州酒税——由倅贰大郡直落为监当小吏。增损实录云云指其在国史院参与编修神宗实录事。
+    source_ids: [src-songshi-vol444]
+  - stage: 绍圣贬窜
+    stage_order: 12
+    title: 写佛书获罪削秩，徙郴州
+    date:
+      text: 约1096年
+      year: 1096
+      precision: 约
+    place: 处州、郴州
+    summary: 使者承风望指，候伺过失，既而无所得，则以谒告写佛书为罪，削秩徙郴州——罗织无所得竟以病假抄经构罪。名篇踏莎行郴州旅舍即作于郴州贬所。
+    confidence: 存疑
+    dispute: 徙郴年份系据行迹推定；踏莎行系年从郴州说为主流，亦有异说。
+    source_ids: [src-songshi-vol444, src-huaihaiji]
+  - stage: 绍圣贬窜
+    stage_order: 13
+    title: 编管横州
+    date:
+      text: 约1097年
+      year: 1097
+      precision: 约
+    place: 横州
+    summary: 继编管横州——削秩之后再加人身管制，编管即就地监视居住，罪臣待遇再降一等。
+    confidence: 存疑
+    dispute: 编管横州起讫年份据贬窜次第推定。
+    source_ids: [src-songshi-vol444]
+  - stage: 绍圣贬窜
+    stage_order: 14
+    title: 又徙雷州
+    date:
+      text: 约1099年
+      year: 1099
+      precision: 约
+    place: 雷州
+    summary: 又徙雷州，贬窜极于海角。与谪儋州的苏轼隔海相望，二人雷州曾有会合之行。
+    confidence: 存疑
+    dispute: 徙雷年份约1099年从通说；雷苏会面细节正史无载，见于年谱与文集互证。
+    source_ids: [src-songshi-vol444]
+
+  # ── 阶段五：放还与身后 ────────────────────────────
+  - stage: 放还与身后
+    stage_order: 15
+    title: 徽宗立，复宣德郎放还
+    date:
+      text: "1100年"
+      year: 1100
+      precision: 精确
+    place: 雷州北归途中
+    summary: 徽宗立，复宣德郎，放还。元符三年哲宗崩徽宗即位，贬臣量移，秦观获准内迁。
+    source_ids: [src-songshi-vol444]
+  - stage: 放还与身后
+    stage_order: 16
+    title: 卒于藤州华光亭，年五十三
+    date:
+      text: "1100年"
+      year: 1100
+      precision: 精确
+    place: 藤州华光亭
+    summary: 至藤州，出游华光亭，为客道梦中长短句，索水欲饮，水至，笑视之而卒——含笑视水而逝，如谶其先自作挽词其语哀甚读者悲伤之。年五十三，有文集四十卷。
+    source_ids: [src-songshi-vol444]
+  - stage: 放还与身后
+    stage_order: 17
+    title: 苏轼闻讣痛悼，世岂复有斯人
+    date:
+      text: "1100年卒后"
+      year: 1100
+      precision: 约
+    place: ""
+    summary: 本传载观长于议论，文丽而思深；及死，轼闻之叹曰：少游不幸死道路，哀哉！世岂复有斯人乎！次年苏轼亦卒，苏门凋零自此始。
+    source_ids: [src-songshi-vol444]
+
+works:
+  - work_id: que-qiao-xian-xian-yun-nong-qiao
+    title: 鹊桥仙·纤云弄巧
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 咏七夕牛女而翻出一层：金风玉露一相逢便胜却人间无数，将一年一会写得胜过人间朝暮相守。
+    attribution: 确凿
+    excerpt: 纤云弄巧，飞星传恨，银汉迢迢暗度。……两情若是久长时，又岂在朝朝暮暮。
+    text_display: excerpt
+    themes: [七夕, 恋歌, 议论入词]
+    influence: 中国爱情词的巅峰名句，两情若是久长时成为千古爱情箴言。
+    confidence: 有争议
+    dispute: 牛女本事的传统解读历来有两路：或谓翻恨为慰、化短为长是对牛女悲剧的超越性礼赞；亦有学者主张词中自有寄托非专咏七夕。文本异文与系年均无定论。
+    source_ids: [src-huaihaiji]
+
+  - work_id: ta-suo-xing-cheng-zhou-lv-she
+    title: 踏莎行·郴州旅舍
+    alt_titles: [踏莎行·雾失楼台]
+    genre: 词（小令）
+    date:
+      text: 约1096—1097年，郴州贬所
+      year: 1096
+      range_end: 1097
+      precision: 范围
+    place: 郴州旅舍
+    context: 削秩徙郴后所作，雾失楼台月迷津渡写尽贬所前途俱失之境；结尾郴江幸自绕郴山为谁流下潇湘去以山水无理之问写身世无可排遣之悲。
+    attribution: 确凿
+    excerpt: 雾失楼台，月迷津渡，桃源望断无寻处。……郴江幸自绕郴山，为谁流下潇湘去？
+    text_display: excerpt
+    themes: [贬谪, 绝望, 山水问情]
+    influence: 由凄婉转凄厉的代表作，王国维评为最凄咽的词境之一；苏轼绝爱其尾两句。
+    confidence: 存疑
+    dispute: 通行说法谓苏轼绝爱其尾两句、自书扇面并有少游已矣虽万人何赎之叹，此事题惠洪冷斋夜话；本次在维基文库冷斋夜话卷一、卷三实取检索未获该条原文，出处待核，故仅按笔记层存疑著录。系年亦有小异。
+    source_ids: [src-huaihaiji]
+
+  - work_id: man-ting-fang-shan-mo-wei-yun
+    title: 满庭芳·山抹微云
+    alt_titles: []
+    genre: 词（慢词）
+    date:
+      text: 创作年代无定说，一般系于元丰前期
+      year: 1080
+      precision: 约
+    place: 会稽（一说）
+    context: 此词一出传唱汴京，苏轼戏称作者为山抹微云君——该轶事属宋人笔记层。另有会稽艳遇的本事传说，均不可确证。
+    attribution: 确凿
+    excerpt: 山抹微云，天连衰草，画角声断谯门。……伤情处，高城望断，灯火已黄昏。
+    text_display: excerpt
+    themes: [离情, 秋景]
+    influence: 使秦观得名山抹微云君，为北宋传唱最广的长调之一。
+    confidence: 存疑
+    dispute: 山抹微云君之称与会稽艳遇本事均出宋人笔记，属传闻层面不足为史实；创作地点会稽说亦系后人附会本事而来，系年仅能约估。
+    source_ids: [src-huaihaiji]
+
+  - work_id: huan-xi-sha-mo-mo-qing-han
+    title: 浣溪沙·漠漠轻寒上小楼
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 以轻似梦细如愁写抽象愁绪，通体空灵，是其婉约本色的小令代表。
+    attribution: 确凿
+    excerpt: 漠漠轻寒上小楼，晓阴无赖似穷秋。淡烟流水画屏幽。自在飞花轻似梦，无边丝雨细如愁。宝帘闲挂小银钩。
+    text_display: full
+    themes: [闲愁, 春景]
+    influence: 自在飞花轻似梦无边丝雨细如愁为以景语写情语的绝唱。
+    source_ids: [src-huaihaiji]
+
+  - work_id: qian-qiu-sui-shui-bian-sha-wai
+    title: 千秋岁·水边沙外
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 约1096年前后，处州—郴州贬途
+      year: 1096
+      precision: 约
+    place: 处州（一说衡阳）
+    context: 贬谪中所作，落红万点愁如海以海喻愁，愁绪至此浩漫无边；和者众，成北宋贬谪词的名场。
+    attribution: 确凿
+    excerpt: 春去也，飞红万点愁如海。
+    text_display: excerpt
+    themes: [贬谪, 愁绪]
+    influence: 飞红万点愁如海被视为其词境转厉的标志句，黄庭坚有和篇。
+    confidence: 存疑
+    dispute: 作地处州说与衡阳说并存，系年从贬谪期间通说。
+    source_ids: [src-huaihaiji]
+
+  - work_id: wang-hai-chao-mei-ying-shu-dan
+    title: 望海潮·梅英疏淡
+    alt_titles: [望海潮·洛阳怀古]
+    genre: 词（慢词）
+    date:
+      text: 创作年代有绍圣初重过洛阳说等多种意见
+      year: 1094
+      precision: 约
+    place: 洛阳（咏地）
+    context: 梅英疏淡冰澌溶泄东风暗换年华，以物候暗换写繁华消歇，故多解为洛阳怀古之作。
+    attribution: 确凿
+    excerpt: 梅英疏淡，冰澌溶泄，东风暗换年华。
+    text_display: excerpt
+    themes: [怀古, 时序之感]
+    influence: 慢词章法谨严的代表，开篇三句为历代选家激赏。
+    confidence: 存疑
+    dispute: 是否怀古及创作年份均有分歧，洛阳重游说为主流。
+    source_ids: [src-huaihaiji]
+
+  - work_id: ru-meng-ling-yao-ye-chen-chen
+    title: 如梦令·遥夜沉沉如水
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 贬途驿舍所作，约1096—1099年之间
+      year: 1096
+      range_end: 1099
+      precision: 范围
+    place: 贬途驿亭
+    context: 驿亭夜宿闻马嘶人起，写贬途奔波之无尽，鼠窥灯霜侵被的细节冷峭逼真。
+    attribution: 确凿
+    excerpt: 遥夜沉沉如水，风紧驿亭深闭。……无寐，无寐，门外马嘶人起。
+    text_display: excerpt
+    themes: [贬途, 夜宿]
+    influence: 以白描写迁谪劳顿的小令极品。
+    confidence: 存疑
+    dispute: 系年只能框定在南方贬窜途中，确切年份与地点无考。
+    source_ids: [src-huaihaiji]
+
+  - work_id: ba-liu-zi-yi-wei-ting
+    title: 八六子·倚危亭
+    alt_titles: []
+    genre: 词（慢词）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 倚危亭恨如芳草萋萋刬尽还生，以春草喻恨起笔，写别后相思的无穷无尽。
+    attribution: 确凿
+    excerpt: 倚危亭。恨如芳草，萋萋刬尽还生。
+    text_display: excerpt
+    themes: [相思, 别情]
+    influence: 恨如芳草成为以草木喻愁的经典意象组合。
+    source_ids: [src-huaihaiji]
+
+  - work_id: jian-zi-mu-lan-hua-tian-ya-jiu-hen
+    title: 减字木兰花·天涯旧恨
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 天涯旧恨独自凄凉人不问，断尽金炉小篆香，写孤独者的旧恨新愁。
+    attribution: 确凿
+    excerpt: 天涯旧恨，独自凄凉人不问。欲见回肠，断尽金炉小篆香。
+    text_display: excerpt
+    themes: [孤独, 离恨]
+    influence: 其伤心人词品的典型样本。
+    source_ids: [src-huaihaiji]
+
+  - work_id: hua-tang-chun-luo-hong-pu-jing
+    title: 画堂春·落红铺径水平池
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 落红铺径弄晴小雨，结拍放花无语对斜晖此恨谁知，无言处的深情正是淮海家数。
+    attribution: 确凿
+    excerpt: 落红铺径水平池，弄晴小雨霏霏。……放花无语对斜晖，此恨谁知。
+    text_display: excerpt
+    themes: [伤春, 幽恨]
+    influence: 冯煦所谓淡语皆有味浅语皆有致的注脚之作。
+    source_ids: [src-huaihaiji]
+
+footprints:
+  - name: 扬州高邮
+    modern_name: 江苏省高邮市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1049年生，少年时期在此"
+      year: 1049
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-songshi-vol444]
+  - name: 徐州
+    modern_name: 江苏省徐州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1077—1078年之间谒苏轼赋黄楼
+      year: 1077
+      range_end: 1078
+      precision: 范围
+    kind: 游历
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 正史明载见苏轼于徐为赋黄楼，惟到访年份系推定。
+    source_ids: [src-songshi-vol444]
+  - name: 蔡州
+    modern_name: 河南省汝南县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1085—1086年任蔡州教授
+      year: 1085
+      range_end: 1086
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任职年份据职历推定。
+    source_ids: [src-songshi-vol444]
+  - name: 汴京
+    modern_name: 河南省开封市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1086—1094年任职太学博士秘书省
+      year: 1086
+      range_end: 1094
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-songshi-vol444]
+  - name: 杭州
+    modern_name: 浙江省杭州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1094年被命通判杭州，旋遭论贬
+      year: 1094
+      precision: 约
+    kind: 谪迁
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 正史仅记出通判杭州随即被劾贬处州，是否实际到任无载，此处按受命之地著录。
+    source_ids: [src-songshi-vol444]
+  - name: 处州
+    modern_name: 浙江省丽水市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1094—1096年监处州酒税
+      year: 1094
+      range_end: 1096
+      precision: 范围
+    kind: 谪迁
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-songshi-vol444]
+  - name: 郴州
+    modern_name: 湖南省郴州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1096—1097年削秩徙郴，作踏莎行
+      year: 1096
+      range_end: 1097
+      precision: 范围
+    kind: 谪迁
+    route_order: 7
+    memorial_only: false
+    confidence: 存疑
+    dispute: 到郴与离郴年份系据行迹推定。
+    source_ids: [src-songshi-vol444, src-huaihaiji]
+  - name: 横州
+    modern_name: 广西壮族自治区横州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1097—1099年编管横州
+      year: 1097
+      range_end: 1099
+      precision: 范围
+    kind: 谪迁
+    route_order: 8
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 编管起讫年份据贬窜次第推定。
+    source_ids: [src-songshi-vol444]
+  - name: 雷州
+    modern_name: 广东省雷州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1099—1100年徙居雷州
+      year: 1099
+      range_end: 1100
+      precision: 范围
+    kind: 谪迁
+    route_order: 9
+    memorial_only: false
+    inferred: true
+    source_ids: [src-songshi-vol444]
+  - name: 藤州华光亭
+    modern_name: 广西壮族自治区藤县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1100年放还北归途中卒于此"
+      year: 1100
+      precision: 精确
+    kind: 逝世
+    route_order: 10
+    memorial_only: false
+    source_ids: [src-songshi-vol444]
+
+relations:
+  - relation_type: 师承
+    target_id: sushi
+    direction: 双向
+    period:
+      text: 约1077—1078年徐州订交至1100年秦观卒
+      year: 1077
+      range_end: 1100
+      precision: 范围
+    evidence: 本传明载见苏轼于徐，为赋黄楼，轼以为有屈宋才；又介其诗于王安石；元祐初轼以贤良方正荐于朝；同卷黄庭坚传称与张耒晁补之秦观俱游苏轼门天下称为四学士；及死轼叹曰少游不幸死道路哀哉世岂复有斯人乎。
+    source_ids: [src-songshi-vol444]
+
+reception:
+  - era: 同时代
+    evaluator: 苏轼
+    quote: 少游不幸死道路，哀哉！世岂复有斯人乎！
+    text_display: excerpt
+    comment: 本传直引的苏轼闻讣之叹，代表师门对秦观人品文品的最高评价。
+    source_ids: [src-songshi-vol444]
+  - era: 同时代
+    evaluator: 王安石
+    quote: 清新似鲍、谢。
+    text_display: excerpt
+    comment: 本传载安石读其诗后的评语，说明秦观早年已获新旧两党文坛领袖的一致推许。
+    source_ids: [src-songshi-vol444]
+  - era: 历代批评
+    evaluator: 冯煦《蒿庵论词》
+    quote: 淮海、小山，真古之伤心人也。其淡语皆有味，浅语皆有致，求之两宋词人，实罕其匹。
+    text_display: excerpt
+    comment: 清代词论的代表性定位——伤心人与词心之说（冯氏又谓他人之词词才也少游词心也）奠定秦观婉约正宗、以情致胜的千年评价框架；蒿庵论词为清代公版文献，文本经网络公版全文库比对核验。
+    confidence: 确定
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦其词境由凄婉转凄厉的分期、苏门交游与党争关系、词集版本源流（淮海居士长短句系统）等议题；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 鹊桥仙纤云弄巧与踏莎行郴州旅舍长期入选语文教材与大众读本，两情若是久长时成为国民级爱情格言；教材篇目随学期变动录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中的秦观形象多为苏门轶事的戏剧化敷演，不作信史依据；网络传播集中于其爱情名句，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-songshi-vol444, src-huaihaiji]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: "初版。17条年谱（5阶段）、10首作品、10处足迹、1组关系（师承苏轼）、5层接受史（含影视网络占位）。全部生平事实实取自维基文库宋史卷444秦观传原文；冯煦评语经公版全文库比对。苏轼书扇事与满庭芳本事按笔记层存疑著录。"}

@@ -1,0 +1,942 @@
+# 杜甫全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 旧唐书·卷190下·文苑下（维基文库实取） | 新唐书·卷201·文艺上（附杜审言传后「孙甫」节，维基文库实取） | 结论与置信 |
+# |---|---|---|---|
+# | 家世籍贯 | 字子美，本襄陽人，後徙河南鞏縣；曾祖依藝位終鞏令，祖審言位終膳部員外郎，父閑終奉天令 | 審言生子閑，閑生甫 | 确定（两史闭合） |
+# | 少年壮游 | 无载 | 少貧不自振，客吳越、齊趙間；李邕奇其材，先往見之 | 确定(X)；壮游年份正史无载 |
+# | 应进士举 | 天寶初應進士不第 | 舉進士不中第，困長安 | 下第事实确定；JTS系天宝初与通行编年（开元末735—736）不合，存疑著录 |
+# | 献三大礼赋与授官 | 天寶末獻三大禮賦，玄宗奇之，召試文章，授京兆府兵曹參軍 | 天寶十三載奏賦三篇，帝奇之，使待制集賢院命宰相試文章，擢河西尉不拜，改右衛率府胄曹參軍 | 献赋确定；授职两史互异，新书与全唐诗卷224《官定後戲贈》题注（免河西尉为右卫率府兵曹）互证，从X |
+# | 贫困自述与沉郁顿挫 | 无载 | 引其上表：自七歲屬辭且四十年然衣不蓋體常寄食於人……沈郁頓挫隨時敏給 | 确定(X)——沉郁顿挫为其自评原文 |
+# | 陷贼与拜右拾遗 | 十五載禄山陷京師，自京師宵遁，於彭原郡拜右拾遺 | 避走三川，自鄜州羸服欲奔行在，為賊所得；至德二年亡走鳳翔上謁，拜右拾遺 | 拜右拾遗确定（两史均作右拾遗）；奔行走向细节两书略异 |
+# | 疏救房琯 | 琯罷相，甫上疏言琯有才不宜罷免，肅宗怒，出甫為華州司功參軍 | 疏言罪細不宜免大臣，張鎬曰甫若抵罪絶言者路，帝乃解，然帝自是不甚省錄；從還京師，出為華州司功參軍 | 确定 |
+# | 弃官客秦州同谷 | 時關畿亂離穀食踊貴，寓居成州同谷縣，自負薪採稆，兒女餓殍者數人 | 關輔饑，輒棄官去，客秦州，負薪采橡栗自給 | 确定 |
+# | 依严武 | 上元二年冬嚴武鎮成都，奏為節度參謀檢校尚書工部員外郎，賜緋魚袋 | 武再帥劍南，表為參謀檢校工部員外郎 | 表荐确定；两书系年均压缩，参谋实在严武再镇剑南（广德二年764）时，存疑著录 |
+# | 醉登武床 | 恃恩放恣，嘗憑醉登武之牀瞪視曰嚴挺之乃有此兒，武不以為忤 | 或時不巾；嘗醉登武牀瞪視；一日欲殺甫及梓州刺史章彝，其母奔救得止獨殺彝 | 醉床事两史同记；新书欲杀情节采传闻层，存疑 |
+# | 武卒后漂泊 | 永泰元年夏武卒，遊東蜀依高適，既至而適卒；扁舟下峽，泝沿湘流 | 武卒，崔旰等亂，甫往來梓、夔間；大曆中出瞿唐下江陵溯沅湘以登衡山 | 确定 |
+# | 死因卒地 | 永泰二年啗牛肉白酒，一夕而卒於耒陽，時年五十九 | 因客耒陽，游岳祠大水遽至涉旬不得食，縣令具舟迎之乃得還；令嘗饋牛炙白酒大醉，一昔卒，年五十九 | 年五十九两史合；牛肉白酒说属传闻层存疑；JTS永泰二年纪年有误（次年即改元大历），通行定为卒于大历五年（770） |
+# | 身后归葬 | 子宗武流落湖湘而卒；元和中宗武子嗣業自耒陽遷甫之柩歸葬於偃師縣西北首陽山之前 | 无载（全唐诗卷216小传：元和中歸葬偃師首陽山，元稹志其墓） | 确定 |
+# | 李杜齐名 | 天寶末詩人甫與李白齊名，而白自負文格放達譏甫齷齪，有飯顆山之嘲誚；並載元稹論李杜優劣全文 | 少與李白齊名時號李杜；嘗從白及高適過汴州，酒酣登吹台慷慨懷古 | 确定 |
+# | 诗史之称 | 载元稹语：至於子美蓋所謂上薄風騷……詩人已來未有如子美者 | 贊曰：渾涵汪茫千匯萬狀兼古今而有之；又善陳世事律切精深，世號詩史；引韓愈李杜文章在光焰萬丈長 | 确定 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: dufu
+
+profile:
+  courtesy_name: 子美
+  art_name: 少陵野老（自称）
+  aliases: [杜工部, 杜少陵, 老杜, 杜二, 诗圣（后世尊号）]
+  gender: 男
+  ethnicity: ""
+  ancestry: 本襄阳人，后徙河南巩县；祖父杜审言为武后朝著名诗人（旧唐书本传）
+  birthplace: 河南巩县
+  death_place: 湖湘流寓途中（旧唐书谓卒于耒阳，卒地细节存异说，详见timeline卒条dispute）
+  offices: [右卫率府胄曹参军, 右拾遗, 华州司功参军, 剑南东西川节度参谋·检校尚书工部员外郎, 京兆府功曹（召补不赴）]
+  fields: [文学]
+  roles: [诗人]
+  summary: 诗圣，诗史——集大成的现实主义巅峰。身经安史之乱全程，以沉郁顿挫之笔写尽时代疮痍与生民疾苦，律诗典范与儒家诗教的最高代表。
+
+timeline:
+  # ── 阶段一：巩县少年与吴越齐赵壮游 ──────────────
+  - stage: 巩县少年与吴越齐赵壮游
+    stage_order: 1
+    title: 生于河南巩县
+    date:
+      text: "712年"
+      year: 712
+      precision: 精确
+    place: 河南巩县
+    summary: 旧唐书本传载字子美，本襄阳人，后徙河南巩县，曾祖依艺位终巩令，祖审言位终膳部员外郎自有传，父闲终奉天令。生年由两史卒年五十九倒推与大历五年（770）闭合。
+    source_ids: [src-jts-vol190b, src-xts-vol201]
+  - stage: 巩县少年与吴越齐赵壮游
+    stage_order: 2
+    title: 少贫不自振，客吴越齐赵间
+    date:
+      text: 约731—735年之间
+      year: 731
+      range_end: 735
+      precision: 范围
+    place: 吴越、齐赵
+    summary: 新唐书载其少贫不自振，客吴越、齐赵间——两次长途壮游是其诗人生涯的起点。壮游起讫年份正史无载，系学界据行迹与诗文推定。
+    confidence: 存疑
+    dispute: 壮游确切年份正史无载，通行谱系推定为开元十九年后游吴越、二十三四载间游齐赵。
+    source_ids: [src-xts-vol201]
+  - stage: 巩县少年与吴越齐赵壮游
+    stage_order: 3
+    title: 李邕奇其材，先往见之
+    date:
+      text: 壮游期间，具体年代不详
+      precision: 未知
+    place: 齐赵间（一说洛阳）
+    summary: 新唐书载李邕奇其材，先往见之——前辈文坛重臣屈尊先访，可见杜甫早年的名声。《奉赠韦左丞丈》中李邕求识面王翰愿卜邻即咏此段佳话。
+    source_ids: [src-xts-vol201, src-qts-dufu]
+  - stage: 巩县少年与吴越齐赵壮游
+    stage_order: 4
+    title: 应进士举不第
+    date:
+      text: 约735年前后（旧唐书系于天宝初）
+      year: 735
+      precision: 约
+    place: 长安
+    summary: 旧唐书载天宝初应进士不第，新唐书仅记举进士不中第困长安。落第事实确定，惟下第年份两说悬隔。
+    confidence: 存疑
+    dispute: 旧唐书系天宝初（约742—744），通行编年据其自述与贡举制度系开元二十三、四载（735—736），两说不合；本卷年份从通行说而并存正史记载。
+    source_ids: [src-jts-vol190b, src-xts-vol201]
+  - stage: 巩县少年与吴越齐赵壮游
+    stage_order: 5
+    title: 与李白相遇同游，时号李杜
+    date:
+      text: 约744—745年之间
+      year: 744
+      range_end: 745
+      precision: 范围
+    place: 洛阳、梁宋、东鲁
+    summary: 新唐书载少与李白齐名时号李杜，尝从白及高适过汴州酒酣登吹台慷慨怀古人莫测也；旧唐书亦记甫与李白齐名而白自负文格放达讥甫龌龊有饭颗山之嘲诮。现存《与李十二白同寻范十隐居》（醉眠秋共被携手日同行）、《春日忆李白》（白也诗无敌）等即为这段交谊的诗证。
+    confidence: 存疑
+    dispute: 相会订交年份系据双方诗文集互证推定；饭颗山嘲诮属旧唐书所记传闻层。
+    source_ids: [src-jts-vol190b, src-xts-vol201, src-qts-dufu]
+
+  # ── 阶段二：长安十年困守 ──────────────────────
+  - stage: 长安十年困守
+    stage_order: 6
+    title: 困守长安，干谒求仕
+    date:
+      text: 约746—755年之间
+      year: 746
+      range_end: 755
+      precision: 范围
+    place: 长安
+    summary: 新唐书所谓困长安。《奉赠韦左丞丈二十二韵》自述朝扣富儿门暮随肥马尘残杯与冷炙到处潜悲辛，又有致君尧舜上再使风俗淳的政治抱负宣言；诗中原注并记天宝中诏征天下士有一艺者诣京师就选、李林甫抑之遂无一人得第的野无遗贤闹剧。
+    confidence: 存疑
+    dispute: 困守十年的起讫系通行谱系推定；野无遗贤事出自其诗自注层。
+    source_ids: [src-xts-vol201, src-qts-dufu]
+  - stage: 长安十年困守
+    stage_order: 7
+    title: 献三大礼赋，待制集贤院
+    date:
+      text: 约754年（旧唐书作天宝末）
+      year: 754
+      precision: 约
+    place: 长安
+    summary: 玄宗朝献太清宫飨庙及郊，甫奏赋三篇，帝奇之，使待制集贤院，命宰相试文章——此为其干谒十年中最接近成功的一次。
+    confidence: 存疑
+    dispute: 系年两史不合：新唐书明确作天宝十三载（754），旧唐书泛称天宝末；从新书系年。
+    source_ids: [src-jts-vol190b, src-xts-vol201]
+  - stage: 长安十年困守
+    stage_order: 8
+    title: 上表自陈，沉郁顿挫
+    date:
+      text: 献赋前后
+      year: 754
+      precision: 约
+    place: 长安
+    summary: 新唐书载其数上赋颂因高自称道，自述臣赖绪业自七岁属辞且四十年然衣不盖体常寄食于人窃恐转死沟壑，又称臣之述作虽不足鼓吹六经至沈郁顿挫随时敏给扬雄枚皋可企及也——沉郁顿挫由此成为其终身的风格标签，且出于本人自评。
+    source_ids: [src-xts-vol201]
+  - stage: 长安十年困守
+    stage_order: 9
+    title: 得右卫率府胄曹参军微职
+    date:
+      text: 约755年
+      year: 755
+      precision: 约
+    place: 长安
+    summary: 新唐书载擢河西尉不拜，改右卫率府胄曹参军；《官定后戏赠》题注亦记时免河西尉为右卫率府兵曹，诗云不作河西尉凄凉为折腰老夫怕趋走率府且逍遥。旧唐书则径作授京兆府兵曹参军。
+    confidence: 存疑
+    dispute: 所授官名两史互异，从新唐书并与全唐诗题注互证；任职年份系推定。
+    source_ids: [src-xts-vol201, src-qts-dufu, src-jts-vol190b]
+
+  # ── 阶段三：陷贼与左拾遗 ──────────────────────
+  - stage: 陷贼与左拾遗
+    stage_order: 10
+    title: 安禄山陷京师，避走三川陷贼
+    date:
+      text: 约755—756年之间
+      year: 755
+      range_end: 756
+      precision: 范围
+    place: 奉先、白水、鄜州三川一带
+    summary: 会禄山乱天子入蜀，甫避走三川（《新唐书》）；肃宗立，自鄜州羸服欲奔行在，为贼所得。旧唐书则记十五载禄山陷京师甫自京师宵遁。陷贼期间写下月夜春望哀江头等名篇。
+    confidence: 存疑
+    dispute: 奔走路线细节两书叙述角度不同（一书自京宵遁、一书自鄜州赴行在被俘），学者多据诗文调和两说。
+    source_ids: [src-xts-vol201, src-jts-vol190b]
+  - stage: 陷贼与左拾遗
+    stage_order: 11
+    title: 亡走凤翔，拜右拾遗
+    date:
+      text: "757年（至德二载）"
+      year: 757
+      precision: 精确
+    place: 凤翔行在
+    summary: 至德二年亡走凤翔上谒，拜右拾遗（《新唐书》）；旧唐书记于彭原郡拜右拾遗。《述怀》麻鞋见天子衣袖露两肘涕泪授拾遗流离主恩厚即咏此段。谏官之任虽短暂，为其政治生涯顶点。
+    source_ids: [src-xts-vol201, src-jts-vol190b, src-qts-dufu]
+  - stage: 陷贼与左拾遗
+    stage_order: 12
+    title: 疏救房琯，触怒肃宗
+    date:
+      text: "757年（至德二载）"
+      year: 757
+      precision: 精确
+    place: 凤翔行在
+    summary: 房琯罢相，甫上疏言罪细不宜免大臣，帝怒诏三司亲问，宰相张镐曰甫若抵罪绝言者路，帝乃解；然帝自是不甚省录。此事决定其后半生命运，《新唐书》全录其谢表长文。
+    source_ids: [src-xts-vol201, src-jts-vol190b]
+  - stage: 陷贼与左拾遗
+    stage_order: 13
+    title: 墨制放往鄜州省家，还京后出为华州司功参军
+    date:
+      text: 757—758年之间
+      year: 757
+      range_end: 758
+      precision: 范围
+    place: 鄜州羌村、长安、华州
+    summary: 时所在寇夺甫家寓鄜弥年艰窭孺弱至饿死，因许甫自往省视——《北征》即墨制放往鄜州途中所作。从还京师，出为华州司功参军，自此离开朝廷。
+    source_ids: [src-xts-vol201, src-qts-dufu]
+
+  # ── 阶段四：华州弃官与秦州同谷艰险 ────────────
+  - stage: 华州弃官与秦州同谷艰险
+    stage_order: 14
+    title: 关辅饥，弃官客秦州
+    date:
+      text: "759年（乾元二载）秋"
+      year: 759
+      precision: 精确
+    place: 秦州
+    summary: 新唐书载关辅饥辄弃官去客秦州负薪采橡栗自给；《立秋后题》平生独往愿惆怅年半百罢官亦由人何事拘形役为其弃官自白。主动弃官是理解其中年转向的关键节点。
+    confidence: 存疑
+    dispute: 弃官动机（饥馑说、远祸说、厌官说）历代讨论不一；弃官月份据诗文自证系于乾元二年立秋后。
+    source_ids: [src-xts-vol201, src-jts-vol190b, src-qts-dufu]
+  - stage: 华州弃官与秦州同谷艰险
+    stage_order: 15
+    title: 寓居同谷，负薪拾橡栗，岁暮入蜀
+    date:
+      text: "759年（乾元二载）冬"
+      year: 759
+      precision: 精确
+    place: 成州同谷县
+    summary: 旧唐书载时关畿乱离谷食踊贵甫寓居成州同谷县自负薪采稆儿女饿殍者数人；新唐书作负薪采橡栗自给。同谷一月为全家生计最绝境，岁暮携家入蜀。
+    source_ids: [src-jts-vol190b, src-xts-vol201]
+
+  # ── 阶段五：成都草堂与梓阆飘泊 ──────────────
+  - stage: 成都草堂与梓阆飘泊
+    stage_order: 16
+    title: 流落剑南，结庐成都西郭
+    date:
+      text: 约760年（上元元年）
+      year: 760
+      precision: 约
+    place: 成都浣花溪畔
+    summary: 新唐书载流落剑南结庐成都西郭；旧唐书作甫于成都浣花里种竹植树结庐枕江纵酒啸咏与田夫野老相狎荡无拘检。草堂时期为其后半生难得的安定岁月，蜀相江村客至等篇皆成于此。
+    confidence: 存疑
+    dispute: 卜居草堂的确切月份系据诗文推定。
+    source_ids: [src-xts-vol201, src-jts-vol190b]
+  - stage: 成都草堂与梓阆飘泊
+    stage_order: 17
+    title: 召补京兆功曹参军，不至
+    date:
+      text: 约762—763年之间
+      year: 762
+      range_end: 763
+      precision: 范围
+    place: 成都
+    summary: 新唐书载召补京兆功曹参军不至——朝廷再给仕途机会而不赴，可见其对朝局与自身处境的判断。旧唐书作久之召补京兆府功曹。
+    confidence: 存疑
+    dispute: 征召年份系据徐知道乱后行迹推定。
+    source_ids: [src-xts-vol201, src-jts-vol190b]
+  - stage: 成都草堂与梓阆飘泊
+    stage_order: 18
+    title: 严武表为参谋，检校工部员外郎
+    date:
+      text: 约764年（广德二载）
+      year: 764
+      precision: 约
+    place: 成都
+    summary: 会严武节度剑南东西川往依焉，武再帅剑南表为参谋检校工部员外郎（《新唐书》）；旧唐书作上元二年冬严武镇成都奏为节度参谋检校尚书工部员外郎赐绯鱼袋。杜工部之称即源于此官。
+    confidence: 存疑
+    dispute: 两书系年均压缩失次：参谋之任实在严武广德二年（764）再镇剑南时，旧唐书上元二年（761）说与之矛盾，从严武再镇之年。
+    source_ids: [src-xts-vol201, src-jts-vol190b]
+  - stage: 成都草堂与梓阆飘泊
+    stage_order: 19
+    title: 醉登武床，幕府不协
+    date:
+      text: 入幕期间，约764年
+      year: 764
+      precision: 约
+    place: 成都
+    summary: 两史均记其尝醉登武床瞪视曰严挺之乃有此儿；旧唐书谓武虽急暴不以为忤，新唐书则谓武外若不为忤中衔之，一日欲杀甫及梓州刺史章彝集吏于门，武将出冠钩于帘三左右白其母奔救得止独杀彝。
+    confidence: 存疑
+    dispute: 严武欲杀杜甫情节为新唐书采自传闻，情理与时序均有可疑，历来考辨不休；本条仅按正史层面著录并存疑。
+    source_ids: [src-jts-vol190b, src-xts-vol201]
+  - stage: 成都草堂与梓阆飘泊
+    stage_order: 20
+    title: 严武卒，蜀中大乱，往来梓阆
+    date:
+      text: 约765—766年之间
+      year: 765
+      range_end: 766
+      precision: 范围
+    place: 成都、梓州、阆州、嘉州以下
+    summary: 永泰元年夏武卒甫无所依，郭英乂代镇粗暴无能刺谒，乃游东蜀依高适既至而适卒，崔宁杀英乂杨子琳攻西川蜀中大乱（《旧唐书》）；新唐书作武卒崔旰等乱甫往来梓夔间。携家离蜀下峡前的飘泊期。
+    source_ids: [src-jts-vol190b, src-xts-vol201]
+
+  # ── 阶段六：夔府孤舟与湖湘终老 ──────────────
+  - stage: 夔府孤舟与湖湘终老
+    stage_order: 21
+    title: 流寓夔州孤城
+    date:
+      text: 约766—768年之间
+      year: 766
+      range_end: 768
+      precision: 范围
+    place: 夔州
+    summary: 新唐书往来梓夔间与出瞿唐的记载之间，即其寓居夔州近两年的创作爆发期；秋兴八首诸将五首咏怀古迹五首等律诗极诣皆成于此。寓夔起讫系据诗文自证推定。
+    confidence: 存疑
+    dispute: 正史对夔州时期几乎无具体记载，行迹全赖诗集编年重建。
+    source_ids: [src-xts-vol201, src-qts-dufu]
+  - stage: 夔府孤舟与湖湘终老
+    stage_order: 22
+    title: 出瞿唐，下江陵，溯沅湘
+    date:
+      text: 约768年
+      year: 768
+      precision: 约
+    place: 江陵、公安、岳阳
+    summary: 大历中出瞿唐下江陵溯沅湘以登衡山（《新唐书》）。出峡后以舟为家，亲朋无一字老病有孤舟即此时写照；旧唐书则记扁舟下峡未维舟而江陵乱乃泝沿湘流。
+    source_ids: [src-xts-vol201, src-jts-vol190b]
+  - stage: 夔府孤舟与湖湘终老
+    stage_order: 23
+    title: 游岳祠为大水所阻，旬日不得食
+    date:
+      text: 约770年
+      year: 770
+      precision: 约
+    place: 衡山、耒阳一带
+    summary: 新唐书载游岳祠大水遽至涉旬不得食县令具舟迎之乃得还；旧唐书记耒阳聂令知之自棹舟迎甫而还——生命最后一年的困厄场景。
+    source_ids: [src-xts-vol201, src-jts-vol190b]
+  - stage: 夔府孤舟与湖湘终老
+    stage_order: 24
+    title: 一夕而卒，年五十九
+    date:
+      text: "770年（大历五载）冬"
+      year: 770
+      precision: 精确
+    place: 湖湘舟中（旧唐书谓卒于耒阳）
+    summary: 旧唐书载永泰二年啗牛肉白酒一夕而卒于耒阳时年五十九；新唐书作令尝馈牛炙白酒大醉一昔卒年五十九。年五十九两史一致，与生于712年闭合。
+    confidence: 存疑
+    dispute: 死因为两史共记的牛肉白酒说，然情节近乎轶闻，历来视为传闻层存疑（另有病死长沙至耒阳间诸说）；旧唐书永泰二年纪年显误（永泰仅一年即改元大历），卒年从大历五年（770）通说。
+    source_ids: [src-jts-vol190b, src-xts-vol201]
+  - stage: 夔府孤舟与湖湘终老
+    stage_order: 25
+    title: 元和中迁柩归葬偃师首阳山
+    date:
+      text: 806—820年之间（元和中）
+      year: 806
+      range_end: 820
+      precision: 范围
+    place: 偃师首阳山前
+    summary: 子宗武流落湖湘而卒；元和中宗武子嗣业自耒阳迁甫之柩归葬于偃师县西北首阳山之前（旧唐书）。全唐诗小传并记元稹志其墓——今存元稹墓系铭即迁葬背景下的产物。
+    source_ids: [src-jts-vol190b, src-qts-dufu]
+
+works:
+  - work_id: wang-yue
+    title: 望岳
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 约736年前后（开元二十四载后游齐赵间）
+      year: 736
+      precision: 约
+    place: 齐赵间（遥望泰山）
+    context: 壮游齐赵时期的开笔之作，岱宗夫如何齐鲁青未了起势，会当凌绝顶一览众山小收束，少年气象与盛唐气象合一。
+    attribution: 确凿
+    excerpt: 岱宗夫如何？齐鲁青未了。造化钟神秀，阴阳割昏晓。荡胸生曾云，决眦入归鸟。会当凌绝顶，一览众山小。
+    text_display: full
+    themes: [山水, 壮怀]
+    influence: 咏泰山第一诗，青年杜甫的气象宣言。
+    confidence: 存疑
+    dispute: 系年从开元后期齐赵壮游通说，确切年份无考。
+    source_ids: [src-qts-dufu]
+
+  - work_id: fengzeng-wei-zuocheng
+    title: 奉赠韦左丞丈二十二韵
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 约748年前后（天宝七载韦济迁尚书左丞后）
+      year: 748
+      precision: 约
+    place: 长安
+    context: 困守长安干谒期的自陈之作，读书破万卷下笔如有神与致君尧舜上再使风俗淳为其自我期许的双联；诗中原注记李林甫抑才致无一人得第之事。
+    attribution: 确凿
+    excerpt: 甫昔少年日，早充观国宾。读书破万卷，下笔如有神。……致君尧舜上，再使风俗淳。……骑驴三十载，旅食京华春。朝扣富儿门，暮随肥马尘。残杯与冷炙，到处潜悲辛。
+    text_display: excerpt
+    themes: [干谒自陈, 抱负]
+    influence: 其政治理想与长安困顿生活的第一手自述。
+    source_ids: [src-qts-dufu]
+
+  - work_id: bingche-xing
+    title: 兵车行
+    alt_titles: []
+    genre: 乐府（新题乐府）
+    date:
+      text: 约天宝十载（751）前后
+      year: 751
+      precision: 约
+    place: 咸阳桥畔（纪实背景）
+    context: 借行人点行之苦讽开边黩武，边庭流血成海水武皇开边意未已直刺时政，是新题乐府写时事的开山之作。
+    attribution: 确凿
+    excerpt: 车辚辚，马萧萧，行人弓箭各在腰。……边庭流血成海水，武皇开边意未已。……君不见青海头，古来白骨无人收。新鬼烦冤旧鬼哭，天阴雨湿声啾啾。
+    text_display: excerpt
+    themes: [讽喻, 反战, 乐府]
+    influence: 以乐府旧体写当下时事的范式，直接启发元白新乐府运动。
+    confidence: 存疑
+    dispute: 系年有天宝十载用兵吐蕃说与天宝间泛指诸说，确切年份无考。
+    source_ids: [src-qts-dufu]
+
+  - work_id: tongdeng-cients
+    title: 同诸公登慈恩寺塔
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 约752年秋（天宝十一载）
+      year: 752
+      precision: 约
+    place: 长安慈恩寺塔
+    context: 与高适薛据岑参储光羲同时登塔唱和，题注记时高适薛据先有此作。回首叫虞舜苍梧云正愁与君看随阳雁各有稻粱谋，盛世塔顶已见忧危之眼。
+    attribution: 确凿
+    excerpt: 高标跨苍穹，烈风无时休。自非旷士怀，登兹翻百忧。……秦山忽破碎，泾渭不可求。俯视但一气，焉能辨皇州？……君看随阳雁，各有稻粱谋。
+    text_display: excerpt
+    themes: [登览, 忧世]
+    influence: 盛唐同题唱和中公认压卷，被视为乱前忧患意识的先声。
+    source_ids: [src-qts-dufu]
+
+  - work_id: liren-xing
+    title: 丽人行
+    alt_titles: []
+    genre: 七言古诗（乐府）
+    date:
+      text: 约753年春（天宝十二载）
+      year: 753
+      precision: 约
+    place: 长安曲江
+    context: 三月三日水边丽人的工笔长卷，就中云幕椒房亲赐名大国虢与秦直指杨氏姐妹，结尾炙手可热势绝伦慎莫近前丞相嗔以冷刺收束。
+    attribution: 确凿
+    excerpt: 三月三日天气新，长安水边多丽人。……紫驼之峰出翠釜，水精之盘行素鳞。……炙手可热势绝伦，慎莫近前丞相嗔。
+    text_display: excerpt
+    themes: [讽刺, 时政]
+    influence: 不着一字议论而讽刺自见的曲笔典范。
+    source_ids: [src-qts-dufu]
+
+  - work_id: zijing-fufengxian-yonghuai
+    title: 自京赴奉先县咏怀五百字
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 755年冬（天宝十四载十二月初作，诗有原注自证）
+      year: 755
+      precision: 精确
+    place: 自长安至奉先县道中
+    context: 原注天宝十四载十二月初作——恰在安禄山反讯传到前夕。朱门酒肉臭路有冻死骨为千年阶级对照名句；入门闻号咷幼子饥已卒记幼子饿死的私痛，忧端齐终南澒洞不可掇收束全篇，被后世视为其诗史品格的总纲。
+    attribution: 确凿
+    excerpt: 杜陵有布衣，老大意转拙。许身一何愚，窃比稷与契。……彤庭所分帛，本自寒女出。……朱门酒肉臭，路有冻死骨。……入门闻号啕，幼子饥已卒。……忧端齐终南，澒洞不可掇。
+    text_display: excerpt
+    themes: [咏怀, 诗史, 社会批判]
+    influence: 个人咏怀与时代记录熔于一炉的最高样本。
+    source_ids: [src-qts-dufu]
+
+  - work_id: yueye
+    title: 月夜
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 756年秋（至德元载，陷贼长安）
+      year: 756
+      precision: 约
+    place: 长安（陷贼中）
+    context: 陷贼望月而不写己望月、反写鄜州闺中人独看，遥怜小儿女未解忆长安从对面着笔，为律诗中对写法的千古典范。
+    attribution: 确凿
+    excerpt: 今夜鄜州月，闺中只独看。遥怜小儿女，未解忆长安。香雾云鬟湿，清辉玉臂寒。何时倚虚幌，双照泪痕干。
+    text_display: full
+    themes: [思亲, 战乱]
+    influence: 对写法与炼字（独看双照呼应）的经典教材。
+    source_ids: [src-qts-dufu]
+
+  - work_id: chunwang
+    title: 春望
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 757年春（至德二载，陷贼长安）
+      year: 757
+      precision: 约
+    place: 长安（陷贼中）
+    context: 国破山河在城春草木深八字抵一部兴亡史，烽火连三月家书抵万金写乱世音书之贵，尾联白头搔更短浑欲不胜簪以身体细节收束家国之痛。
+    attribution: 确凿
+    excerpt: 国破山河在，城春草木深。感时花溅泪，恨别鸟惊心。烽火连三月，家书抵万金。白头搔更短，浑欲不胜簪。
+    text_display: full
+    themes: [战乱, 忧国]
+    influence: 传播最广的唐诗之一，五律沉郁风格的代表。
+    source_ids: [src-qts-dufu]
+
+  - work_id: bei-zheng
+    title: 北征
+    alt_titles: []
+    genre: 五言古诗
+    date:
+      text: 757年闰八月（至德二载，诗首句自证）
+      year: 757
+      precision: 精确
+    place: 自凤翔至鄜州途中
+    context: 墨制放往鄜州省家途中作，皇帝二载秋闰八月初吉开篇自记年月；途中所见夜深经战场寒月照白骨与到家后儿女衣百结的家国双写，末段以煌煌太宗业树立甚宏达寄中兴之望。与自京赴奉先县咏怀五百字并称双璧。
+    attribution: 确凿
+    excerpt: 皇帝二载秋，闰八月初吉。杜子将北征，苍茫问家室。……靡靡逾阡陌，人烟眇萧瑟。……夜深经战场，寒月照白骨。……煌煌太宗业，树立甚宏达。
+    text_display: excerpt
+    themes: [纪实, 家国, 中兴之望]
+    influence: 五古排比纪行的巅峰，编年自证的史诗标本。
+    source_ids: [src-qts-dufu, src-xts-vol201]
+
+  - work_id: shihao-li
+    title: 石壕吏
+    alt_titles: [三吏之三]
+    genre: 五言古诗（乐府）
+    date:
+      text: 759年春（乾元二载）
+      year: 759
+      precision: 约
+    place: 陕州石壕镇
+    context: 由华州赴东都道中即目所见，与潼关吏新安吏垂老别无家别新婚别同为三吏三别组诗。暮投石壕村有吏夜捉人以纯客观叙事藏批判于不言，卷217诸诗题注层系于乾元二载自华州之东都道途所感。
+    attribution: 确凿
+    excerpt: 暮投石壕村，有吏夜捉人。老翁逾墙走，老妇出门看。……听妇前致词：三男邺城戍。……夜久语声绝，如闻泣幽咽。天明登前途，独与老翁别。
+    text_display: excerpt
+    themes: [战乱民生, 叙事诗]
+    influence: 中国叙事诗的白描高峰，长期入选语文教材。
+    confidence: 存疑
+    dispute: 系年乾元二载从通行编年及选本题注层，月份无考。
+    source_ids: [src-qts-dufu]
+
+  - work_id: xinhun-bie
+    title: 新婚别
+    alt_titles: [三别之一]
+    genre: 五言古诗（乐府）
+    date:
+      text: 759年（乾元二载）
+      year: 759
+      precision: 约
+    place: 洛阳以西道中（拟托）
+    context: 三别之一，代暮婚晨别的征妇立言，兔丝附蓬麻起兴，勿为新婚念努力事戎行于私痛中翻出公义，结以人事多错迕与君永相望，代言体的极致。
+    attribution: 确凿
+    excerpt: 兔丝附蓬麻，引蔓故不长。嫁女与征夫，不如弃路旁。……暮婚晨告别，无乃太匆忙。……勿为新婚念，努力事戎行。……人事多错迕，与君永相望。
+    text_display: excerpt
+    themes: [战乱民生, 代言体]
+    influence: 以小人物命运折射大战局的组诗经典。
+    source_ids: [src-qts-dufu]
+
+  - work_id: maowu-qiufeng-ge
+    title: 茅屋为秋风所破歌
+    alt_titles: []
+    genre: 七言古诗（歌行）
+    date:
+      text: 761年秋（上元二年，成都）
+      year: 761
+      precision: 约
+    place: 成都草堂
+    context: 草堂为秋风所破、娇儿恶卧、床头屋漏的个人窘境，翻出安得广厦千万间大庇天下寒士俱欢颜的推己及人之愿，吾庐独破受冻死亦足收束，儒家仁者襟怀的诗化表达。
+    attribution: 确凿
+    excerpt: 八月秋高风怒号，卷我屋上三重茅。……床头屋漏无干处，雨脚如麻未断绝。……安得广厦千万间，大庇天下寒士俱欢颜，风雨不动安如山！呜呼！何时眼前突兀见此屋，吾庐独破受冻死亦足！
+    text_display: excerpt
+    themes: [济世情怀, 歌行]
+    influence: 由一身之寒推及天下寒士的精神坐标，长期入选教材。
+    source_ids: [src-qts-dufu]
+
+  - work_id: qiuxing-bashou-zhiyi
+    title: 秋兴八首（其一）
+    alt_titles: [秋兴八首·玉露凋伤枫树林]
+    genre: 七言律诗（组诗）
+    date:
+      text: 766年秋（大历元年，夔州）
+      year: 766
+      precision: 约
+    place: 夔州
+    context: 夔州组律八首之首章，玉露凋伤枫树林起而丛菊两开他日泪孤舟一系故园心收束于故园之念，八章以身居夔州心驰长安为总纲，为其晚年律诗结构与声情的最高成就。
+    attribution: 确凿
+    excerpt: 玉露凋伤枫树林，巫山巫峡气萧森。江间波浪兼天涌，塞上风云接地阴。丛菊两开他日泪，孤舟一系故园心。寒衣处处催刀尺，白帝城高急暮砧。
+    text_display: full
+    themes: [秋兴, 故园之思, 律诗极诣]
+    influence: 七律组诗的巅峰，历代诗话推为唐人七律门径。
+    source_ids: [src-qts-dufu]
+
+  - work_id: deng-gao
+    title: 登高
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 767年秋（大历二年重阳，夔州）
+      year: 767
+      precision: 约
+    place: 夔州长江之滨
+    context: 万里悲秋常作客百年多病独登台十四字含八重悲慨，通篇对仗精严而不见斧凿。文本据维基文库登高单篇页（录自杜工部集卷12与全唐诗卷227系统），渚清沙白鸟飞回句一作渚涛沙白鸟飞回。
+    attribution: 确凿
+    excerpt: 风急天高猿啸哀，渚清沙白鸟飞回。无边落木萧萧下，不尽长江滚滚来。万里悲秋常作客，百年多病独登台。艰难苦恨繁霜鬓，潦倒新停浊酒杯。
+    text_display: full
+    themes: [悲秋, 登览, 沉郁顿挫]
+    influence: 被历代评家推为古今七律第一。
+    confidence: 存疑
+    dispute: 系年从夔州重阳通说。
+    source_ids: [src-qts-dufu]
+
+  - work_id: deng-yueyang-lou
+    title: 登岳阳楼
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 768年冬（大历三年，出峡漂泊湖湘之际）
+      year: 768
+      precision: 约
+    place: 岳阳楼
+    context: 昔闻洞庭水今上岳阳楼偿愿与迟暮相对，吴楚东南坼乾坤日夜浮写洞庭之阔，而亲朋无一字老病有孤舟骤然收回孤舟一身，戎马关山北凭轩涕泗流以涕泗收束家国。
+    attribution: 确凿
+    excerpt: 昔闻洞庭水，今上岳阳楼。吴楚东南坼，乾坤日夜浮。亲朋无一字，老病有孤舟。戎马关山北，凭轩涕泗流。
+    text_display: full
+    themes: [登览, 漂泊, 忧国]
+    influence: 五律境界阔大与身世之悲结合的绝唱，岳阳楼诗第一名篇。
+    source_ids: [src-qts-dufu]
+
+  - work_id: jiangnan-feng-liguinian
+    title: 江南逢李龟年
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约769—770年间（大历四、五年，潭州）
+      year: 769
+      range_end: 770
+      precision: 范围
+    place: 潭州
+    context: 岐王宅里寻常见崔九堂前几度闻忆开元盛世，正是一年江南好风景落花时节又逢君以四十年的盛衰折叠于一句相逢之中，被誉为绝句中最含蓄深沉的一首。
+    attribution: 确凿
+    excerpt: 岐王宅里寻常见，崔九堂前几度闻。正是江南好风景，落花时节又逢君。
+    text_display: full
+    themes: [盛衰之感, 相逢]
+    influence: 以个人交游写时代兴亡的绝句典范。
+    confidence: 存疑
+    dispute: 作年有大历五年潭州说与四载衡州潭州间说；另有学者疑非杜甫作，主流仍定为杜诗。
+    source_ids: [src-qts-dufu]
+
+footprints:
+  - name: 巩县
+    modern_name: 河南省巩义市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "712年生于此，少年时期在此"
+      year: 712
+      precision: 精确
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-jts-vol190b]
+  - name: 吴越齐赵壮游线
+    modern_name: 江浙一带至山东河北一线
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 壮游路线走向系据诗文与谱系推定，坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: 约731—735年之间客吴越齐赵间
+      year: 731
+      range_end: 735
+      precision: 范围
+    kind: 游历
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 壮游具体路线与年份正史无载，仅有新唐书客吴越齐赵间的概括记载。
+    source_ids: [src-xts-vol201]
+  - name: 洛阳
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约743—745年之间居东都（赠李白诗自称二年客东都）
+      year: 743
+      range_end: 745
+      precision: 范围
+    kind: 居住
+    route_order: 3
+    memorial_only: false
+    confidence: 存疑
+    dispute: 客东都起讫据赠李白诗自述推定；与李白相遇地点主流意见在洛阳。
+    source_ids: [src-qts-dufu]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约746—755年困守求仕，755—756年任右卫率府胄曹参军并陷贼
+      year: 746
+      range_end: 756
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-xts-vol201, src-jts-vol190b]
+  - name: 凤翔
+    modern_name: 陕西省宝鸡市凤翔区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "757年亡走凤翔上谒拜右拾遗"
+      year: 757
+      precision: 精确
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-xts-vol201]
+  - name: 华州
+    modern_name: 陕西省渭南市华州区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 758—759年任华州司功参军
+      year: 758
+      range_end: 759
+      precision: 范围
+    kind: 任职
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-xts-vol201, src-jts-vol190b]
+  - name: 秦州
+    modern_name: 甘肃省天水市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "759年秋弃官客秦州，负薪采橡栗自给"
+      year: 759
+      precision: 精确
+    kind: 游历
+    route_order: 7
+    memorial_only: false
+    source_ids: [src-xts-vol201]
+  - name: 同谷
+    modern_name: 甘肃省陇南市成县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "759年冬寓居成州同谷县，自负薪采稆"
+      year: 759
+      precision: 精确
+    kind: 居住
+    route_order: 8
+    memorial_only: false
+    source_ids: [src-jts-vol190b]
+  - name: 成都浣花溪草堂
+    modern_name: 四川省成都市青羊区杜甫草堂
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约760—765年结庐成都西郭浣花里，其间短往梓阆
+      year: 760
+      range_end: 765
+      precision: 范围
+    kind: 居住
+    route_order: 9
+    memorial_only: false
+    source_ids: [src-xts-vol201, src-jts-vol190b]
+  - name: 梓州阆州
+    modern_name: 四川省绵阳市三台县、南充市阆中市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约762—764年避乱往来梓阆间
+      year: 762
+      range_end: 764
+      precision: 范围
+    kind: 居住
+    route_order: 10
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 正史仅记往来梓夔间，阆中之行系据诗集编年补足。
+    source_ids: [src-xts-vol201]
+  - name: 夔州
+    modern_name: 重庆市奉节县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约766—768年流寓夔州孤城
+      year: 766
+      range_end: 768
+      precision: 范围
+    kind: 居住
+    route_order: 11
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 新唐书仅有往来梓夔间的概述，寓夔时段全赖诗集编年重建。
+    source_ids: [src-xts-vol201, src-qts-dufu]
+  - name: 江陵
+    modern_name: 湖北省荆州市荆州区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约768年出瞿唐下江陵
+      year: 768
+      precision: 约
+    kind: 游历
+    route_order: 12
+    memorial_only: false
+    source_ids: [src-xts-vol201]
+  - name: 岳阳
+    modern_name: 湖南省岳阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约768年冬至楼，登岳阳楼即作于此
+      year: 768
+      precision: 约
+    kind: 游历
+    route_order: 13
+    memorial_only: false
+    source_ids: [src-qts-dufu, src-xts-vol201]
+  - name: 耒阳
+    modern_name: 湖南省耒阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约770年寓居耒阳，两史记卒于此（卒地存异说）
+      year: 770
+      precision: 约
+    kind: 逝世
+    route_order: 14
+    memorial_only: false
+    confidence: 存疑
+    dispute: 旧唐书谓一夕而卒于耒阳，新唐书谓因客耒阳一昔卒；另有病殁潭岳舟中说等异说，卒地细节存疑著录。
+    source_ids: [src-jts-vol190b, src-xts-vol201]
+  - name: 偃师首阳山
+    modern_name: 河南省偃师区首阳山（杜甫墓所在区域）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 纪念地坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: 元和中（806—820）自耒阳迁柩归葬于此
+      year: 806
+      range_end: 820
+      precision: 范围
+    kind: 纪念地
+    route_order: 15
+    memorial_only: true
+    source_ids: [src-jts-vol190b]
+
+relations:
+  - relation_type: 挚友
+    target_id: libai
+    direction: 双向
+    period:
+      text: 约744—745年相遇订交，此后终身以诗相忆
+      year: 744
+      precision: 约
+    evidence: 新唐书本传载少与李白齐名时号李杜，尝从白及高适过汴州酒酣登吹台慷慨怀古人莫测也；旧唐书亦载天宝末诗人甫与李白齐名。诗证俱在：与李十二白同寻范十隐居（醉眠秋共被携手日同行）、春日忆李白（白也诗无敌）、冬日有怀李白、赠李白等均为实取原文。
+    source_ids: [src-xts-vol201, src-jts-vol190b, src-qts-dufu]
+  - relation_type: 思想影响
+    target_id: yuanzhen
+    direction: 单向（甫→稹）
+    period:
+      text: 元和年间（806—820）元稹作墓系铭推尊杜甫
+      year: 806
+      range_end: 820
+      precision: 范围
+    evidence: 旧唐书本传全文转录元稹论李杜优劣：至于子美盖所谓上薄风骚下该沈宋言夺苏李气吞曹刘掩颜谢之孤高杂徐庾之流丽尽得古今之体势而兼人人之所独专矣……诗人已来未有如子美者；并称自后属文者以稹论为是。全唐诗小传记迁葬时元稹志其墓。
+    source_ids: [src-jts-vol190b, src-qts-dufu]
+  - relation_type: 思想影响
+    target_id: baijuyi
+    direction: 单向（甫→居易）
+    period:
+      text: 中唐新乐府运动承其诗史精神
+      year: 806
+      range_end: 846
+      precision: 范围
+    evidence: 全唐诗卷216小传引白居易语：杜诗贯穿古今尽工尽善殆过于李；其写时事故实的新题乐府路径为元白新乐府运动的直接源头。
+    source_ids: [src-qts-dufu]
+  - relation_type: 思想影响
+    target_id: hanyu
+    direction: 单向（甫→愈）
+    period:
+      text: 中唐诗坛李杜并尊格局
+      year: 800
+      range_end: 824
+      precision: 范围
+    evidence: 新唐书杜甫赞明载：昌黎韩愈于文章慎许可至歌诗独推曰李杜文章在光焰万丈长——正史层面坐实韩愈对杜甫的推崇与李杜并举的经典表述。
+    source_ids: [src-xts-vol201]
+
+reception:
+  - era: 同时代
+    evaluator: 元稹《唐故工部员外郎杜君墓系铭并序》（旧唐书本传全文转录）
+    quote: 至于子美，盖所谓上薄风骚，下该沈宋，言夺苏李，气吞曹刘，掩颜谢之孤高，杂徐庾之流丽，尽得古今之体势，而兼人人之所独专矣。……诗人已来，未有如子美者。
+    text_display: excerpt
+    comment: 同时代人给出的最高定位，诗人以来未有如子美者成为杜甫评价史的基石；本文经维基文库旧唐书卷190下实取得手，无需另行转述。
+    source_ids: [src-jts-vol190b]
+  - era: 历代批评
+    evaluator: 《新唐书》杜甫赞（宋祁）
+    quote: 至甫，浑涵汪茫，千汇万状，兼古今而有之，它人不足，甫乃厌余，残膏剩馥，沾丐后人多矣。……甫又善陈时事，律切精深，至千言不少衰，世号诗史。
+    text_display: excerpt
+    comment: 诗史之称的正史出处；赞语同时引韩愈李杜文章在光焰万丈长为佐证。
+    source_ids: [src-xts-vol201]
+  - era: 历代批评
+    evaluator: 秦观
+    quote: ""
+    text_display: none
+    comment: 秦观韩愈论中有杜子美者穷高妙之格极豪逸之气包冲淡之趣峻洁之姿备藻丽之态而诸家之作所不及焉、比之孔子所谓集大成之说，为集大成论的代表性表述；本次未在维基文库实取原文，按中立转述层著录，引文待核后补。
+    confidence: 存疑
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究将其定位为中国现实主义诗歌的高峰与集大成者，聚焦其编年系谱重建、律诗艺术、诗史互证方法及安史之乱书写等议题；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 春望石壕吏茅屋为秋风所破歌望岳登高等长期入选中小学语文教材；诗圣与民间疾苦笔底波澜的形象成为中华文化符号。教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中的杜甫形象多为安史之乱叙事与李杜友谊的戏剧化敷演，不作信史依据；网络传播集中于其名句与成都草堂等纪念空间，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-jts-vol190b, src-xts-vol201, src-qts-dufu]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。25条年谱（6阶段）、16首作品、15处足迹、4组关系、6层接受史（含影视网络占位）。生平事实实取自维基文库旧唐书卷190下与新唐书卷201杜甫本传原文；作品文本实取自全唐诗卷216/217/219/224/230及登高、春望、登岳阳楼、江南逢李龟年单篇页。两唐书授官互异、严武表荐系年、卒年卒地与牛肉白酒死因说均落dispute字段；秦观集大成说按转述层存疑著录。"}

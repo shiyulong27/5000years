@@ -1,0 +1,521 @@
+# 左思全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 晋书·卷九十二·文苑·左思传（维基文库实取） | 结论与置信 |
+# |---|---|---|
+# | 名号籍贯 | 左思字太沖齊國臨淄人也；其先齊之公族有左右公子因為氏焉；家世儒學；父雍起小吏以能擢授殿中侍御史 | 确定 |
+# | 少年勤学 | 思小學鐘、胡書及鼓琴並不成；雍謂友人曰思所曉解不及我少時；思遂感激勤學兼善陰陽之術 | 确定 |
+# | 形貌性情 | 貌寢口訥而辭藻壯麗；不好交遊惟以閒居為事 | 确定 |
+# | 齐都赋 | 造《齊都賦》一年乃成 | 确定；赋文已佚 |
+# | 妹入宫移家 | 復欲賦三都會妹芬入宮移家京師乃詣著作郎張載訪岷邛之事 | 确定；入宫系年本传此处无载（通行系泰始八年前后） |
+# | 构思十年 | 遂構思十年門庭籓溷皆著筆紙遇得一句即便疏之；自以所見不博求為秘書郎 | 确定；起讫年份无载 |
+# | 序注推重 | 及賦成時人未之重；安定皇甫謐有高譽思造而示之謐稱善為其賦序；張載為注《魏都》劉逵注《吳》《蜀》；陳留衛權又為思賦作《略解》 | 确定 |
+# | 洛阳纸贵 | 司空張華見而歎曰班張之流也使讀之者盡而有餘久而更新；於是豪貴之家競相傳寫洛陽為之紙貴 | 确定 |
+# | 陆机叹服 | 初陸機入洛欲為此賦聞思作之撫掌而笑與弟雲書曰此間有傖父欲作三都賦須其成當以覆酒甕耳；及思賦出機絕歎伏以為不能加也遂輟筆焉 | 确定 |
+# | 贾谧讲汉书 | 秘書監賈謐請講《漢書》；謐誅退居宜春裏專意典籍 | 确定；「二十四友」之称见晋书贾谧传（卷40），本次未实取该卷，按转述层存疑 |
+# | 记室督辞疾 | 齊王冏命為記室督辭疾不就 | 确定；系年无载 |
+# | 适冀州病卒 | 及張方縱暴都邑舉家適冀州；數歲以疾終 | 确定；卒年正史不载（学界推定约305） |
+# | 作品文本 | 咏史八首（文选卷21）、招隐诗二首（文选卷22）、三都赋序（文选卷4）均维基文库实取；娇女诗（玉台新咏页）与悼离赠妹诗二首（单篇页未标出处）已实取惟来源未登记，暂列注释待补 | 公版原文层 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: zuosi
+
+profile:
+  courtesy_name: 太冲
+  art_name: ""
+  aliases: [左太冲]
+  gender: 男
+  ethnicity: ""
+  ancestry: 齐国临淄
+  birthplace: 齐国临淄
+  death_place: 冀州
+  offices: [秘书郎, 记室督（齐王冏命，辞疾不就）]
+  fields: [文学]
+  roles: [诗人, 辞赋家]
+  summary: 貌寝口讷的大才子，「洛阳纸贵」的主角；构思十年而成三都赋令陆机辍笔，咏史八首开创咏史借古抒怀的传统。
+
+timeline:
+  # ── 阶段一：临淄少年 ──────────────────────────────
+  - stage: 临淄少年
+    stage_order: 1
+    title: 出生于齐国临淄
+    date:
+      text: 约250年
+      year: 250
+      precision: 约
+    place: 齐国临淄
+    summary: 左思生于齐国临淄。生年为学界据卒年与生平行迹倒推的约数，正史本传不载生卒。
+    confidence: 存疑
+    dispute: 正史只载事迹不系生卒，生卒年均为学界推定（通说约250—约305）。
+    source_ids: [src-jinshi-vol92]
+  - stage: 临淄少年
+    stage_order: 2
+    title: 家世儒学，父雍起于小吏
+    date:
+      text: 家世背景，具体年代不详
+      precision: 未知
+    place: 临淄
+    summary: 本传记其先齐之公族有左右公子因为氏焉，家世儒学；父左雍起小吏，以能擢授殿中侍御史——寒门儒学之家，非高门世族。
+    source_ids: [src-jinshi-vol92]
+  - stage: 临淄少年
+    stage_order: 3
+    title: 学书法琴艺俱不成，感父言而发愤
+    date:
+      text: 少年时期，具体年代不详
+      precision: 未知
+    place: 临淄
+    summary: 思小学钟、胡书及鼓琴并不成，雍谓友人曰思所晓解不及我少时；思遂感激勤学，兼善阴阳之术——被父亲当面看轻后的发愤，是左思一生的起点。
+    source_ids: [src-jinshi-vol92]
+  - stage: 临淄少年
+    stage_order: 4
+    title: 貌寝口讷而辞藻壮丽
+    date:
+      text: 性情才貌总述，年代不详
+      precision: 未知
+    place: 临淄
+    summary: 本传八字定评：貌寝，口讷，而辞藻壮丽；又不好交游，惟以闲居为事。形貌丑拙不善言谈与笔下壮丽辞藻的强烈反差，构成其人最深的底色。
+    source_ids: [src-jinshi-vol92]
+
+  # ── 阶段二：移家京师构思三都 ────────────────────
+  - stage: 移家京师构思三都
+    stage_order: 5
+    title: 造齐都赋，一年乃成
+    date:
+      text: 移家京师之前，具体年代不详
+      precision: 未知
+    place: 临淄
+    summary: 造齐都赋，一年乃成——咏故乡齐地的京都赋体试笔，为三都赋的先声；赋文后世已佚。
+    source_ids: [src-jinshi-vol92]
+  - stage: 移家京师构思三都
+    stage_order: 6
+    title: 妹芬入宫，移家京师
+    date:
+      text: 约泰始八年（272）前后
+      year: 272
+      precision: 约
+    place: 洛阳
+    summary: 复欲赋三都会妹芬入宫移家京师——因妹妹左棻（本传作芬）选入晋武帝后宫，全家自临淄迁居洛阳，左思由此进入西晋京华文人圈。
+    confidence: 存疑
+    dispute: 本传仅记会妹芬入宫移家京师而不系年；泰始八年前后系通行推定，左棻本传在晋书后妃传（本次未实取）。
+    source_ids: [src-jinshi-vol92]
+  - stage: 移家京师构思三都
+    stage_order: 7
+    title: 诣张载访岷邛之事
+    date:
+      text: 移家京师后，具体年代不详
+      precision: 未知
+    place: 洛阳
+    summary: 乃诣著作郎张载访岷邛之事——为写实蜀地风物登门请教曾游蜀中的张载，实地求证的写作态度与其三都赋序征实主张一致。
+    source_ids: [src-jinshi-vol92]
+
+  # ── 阶段三：十年乃成洛阳纸贵 ────────────────────
+  - stage: 十年乃成洛阳纸贵
+    stage_order: 8
+    title: 构思十年，门庭藩溷皆著笔纸
+    date:
+      text: 约280—291年之间
+      year: 280
+      range_end: 291
+      precision: 范围
+    place: 洛阳
+    summary: 遂构思十年，门庭藩溷皆著笔纸，遇得一句即便疏之；自以所见不博求为秘书郎——为增广见识自请掌秘阁图书，门旁篱厕处处挂纸笔的苦吟已成创作执着的千古意象。
+    confidence: 存疑
+    dispute: 构思十年的起讫年份正史无载，系据平吴（280）后素材齐备与赋成年代的通行框架推定。
+    source_ids: [src-jinshi-vol92]
+  - stage: 十年乃成洛阳纸贵
+    stage_order: 9
+    title: 赋成未重，皇甫谧称善为序
+    date:
+      text: 赋成之初，约291年前后
+      year: 291
+      precision: 约
+    place: 洛阳
+    summary: 及赋成时人未之重；思自以其作不谢班张恐以人废言，遂造高誉的皇甫谧出示，谧称善为其赋序；张载注魏都刘逵注吴蜀，卫权又作略解——借名公序注破以人废言之局。
+    confidence: 存疑
+    dispute: 赋成与作序的确切年份正史无载，系学界推定；皇甫谧卒于太康三年（282）与序赋之说的时间矛盾，历来有考辨异说。
+    source_ids: [src-jinshi-vol92]
+  - stage: 十年乃成洛阳纸贵
+    stage_order: 10
+    title: 张华叹服，洛阳为之纸贵
+    date:
+      text: 赋成之后，具体年代不详
+      precision: 未知
+    place: 洛阳
+    summary: 司空张华见而叹曰班张之流也使读之者尽而有馀久而更新；于是豪贵之家竞相传写洛阳为之纸贵——成语洛阳纸贵的正史出处即此一句。
+    source_ids: [src-jinshi-vol92]
+  - stage: 十年乃成洛阳纸贵
+    stage_order: 11
+    title: 陆机抚掌笑覆酒瓮，赋出绝叹伏而辍笔
+    date:
+      text: 与赋成同时，具体年代不详
+      precision: 未知
+    place: 洛阳
+    summary: 初陆机入洛欲为此赋闻思作之抚掌而笑与弟云书曰此间有伧父欲作三都赋须其成当以覆酒瓮耳；及思赋出机绝叹服以为不能加也遂辍笔焉——从讥为南人伧父到搁笔不服气地认输，是西晋文坛最著名的一次反转。
+    source_ids: [src-jinshi-vol92]
+
+  # ── 阶段四：二十四友与贾谧之祸 ──────────────────
+  - stage: 二十四友与贾谧之祸
+    stage_order: 12
+    title: 秘书监贾谧请讲汉书
+    date:
+      text: 元康年间
+      year: 291
+      range_end: 300
+      precision: 范围
+    place: 洛阳
+    summary: 秘书监贾谧请讲汉书——左思列名贾谧讲汉书门下的文人集团，即后世所谓二十四友之一；依附外戚贾谧是其一生罕见的政治痕迹。
+    confidence: 存疑
+    dispute: 本传只记贾谧请讲汉书；二十四友之名号与成员名单出自晋书贾谧传（卷40），本次未实取该卷，集团细节按转述层存疑。
+    source_ids: [src-jinshi-vol92]
+  - stage: 二十四友与贾谧之祸
+    stage_order: 13
+    title: 谧诛，退居宜春里专意典籍
+    date:
+      text: 贾谧被诛之年（约300年）
+      year: 300
+      precision: 约
+    place: 洛阳宜春里
+    summary: 谥诛退居宜春里专意典籍——靠山贾谧在宫廷政变中被诛，左思未被株连而退出政治圈，闭门治学度过晚年前的最后一段洛阳岁月。
+    confidence: 存疑
+    dispute: 本传不系谧诛之年，约300年从贾谧死于赵王伦政变（永康元年）的通史纪年推定。
+    source_ids: [src-jinshi-vol92]
+  - stage: 二十四友与贾谧之祸
+    stage_order: 14
+    title: 齐王冏命为记室督，辞疾不就
+    date:
+      text: 约301—302年之间
+      year: 301
+      range_end: 302
+      precision: 范围
+    place: 洛阳
+    summary: 齐王冏命为记室督辞疾不就——八王乱中权臣屡易，左思拒绝出仕，乱世辞聘保全其身。
+    confidence: 存疑
+    dispute: 齐王冏辅政时间甚短，受命与辞疾的具体年份正史无载，系据冏执政时段推定。
+    source_ids: [src-jinshi-vol92]
+
+  # ── 阶段五：冀州避乱病卒 ────────────────────────
+  - stage: 冀州避乱病卒
+    stage_order: 15
+    title: 张方纵暴都邑，举家适冀州
+    date:
+      text: 约304年
+      year: 304
+      precision: 约
+    place: 洛阳至冀州
+    summary: 及张方纵暴都邑举家适冀州——长沙王乂败后张方纵兵大掠洛阳，年过半百的左思携全家避乱东出，离开生活了三十余年的京洛。
+    confidence: 存疑
+    dispute: 本传不系迁居之年，约304年从张方纵暴都邑的史事纪年推定。
+    source_ids: [src-jinshi-vol92]
+  - stage: 冀州避乱病卒
+    stage_order: 16
+    title: 数岁以疾终于冀州
+    date:
+      text: 约305年
+      year: 305
+      precision: 约
+    place: 冀州
+    summary: 数岁以疾终——一代大手笔病逝于避乱的冀州，无显官无厚葬，身后唯诗文不朽。
+    confidence: 存疑
+    dispute: 卒年正史只记数岁以疾终而不系年；约305系学界据迁冀州年代加数岁的推定，另有异说。
+    source_ids: [src-jinshi-vol92]
+
+works:
+  - work_id: yong-shi-ba-shou-zhi-er
+    title: 咏史八首·其二（郁郁涧底松）
+    alt_titles: []
+    genre: 五言诗（咏史）
+    date:
+      text: 创作年代无定说，一般认为作于滞洛期间
+      precision: 未知
+    place: ""
+    context: 以涧底松与山上苗起兴，世胄蹑高位英俊沉下僚直斥门阀制度压抑人才，金张七叶珥汉貂与冯唐白首不见招用史实对照，为寒士不平的最强音。
+    attribution: 确凿
+    excerpt: 郁郁涧底松，离离山上苗。以彼径寸茎，荫此百尺条。世胄蹑高位，英俊沉下僚。地势使之然，由来非一朝。金张籍旧业，七叶珥汉貂。冯公岂不伟，白首不见招。
+    text_display: full
+    themes: [咏史, 门阀批判, 寒士不平]
+    influence: 中国咏史诗由咏史实转向借古抒怀、托古讽今的奠基之作；郁郁涧底松成为寒门才士的经典意象。
+    source_ids: [src-wenxuan]
+
+  - work_id: yong-shi-ba-shou-zhi-yi
+    title: 咏史八首·其一（弱冠弄柔翰）
+    alt_titles: []
+    genre: 五言诗（咏史）
+    date:
+      text: 组诗之首，创作年代无定说
+      precision: 未知
+    place: ""
+    context: 自述文武兼资的少年抱负——著论准过秦作赋拟子虚的文学自信，与长啸激清风志若无东吴的功业幻想；结句功成不受爵长揖归田庐已埋下功成身退的主调。
+    attribution: 确凿
+    excerpt: 弱冠弄柔翰，卓荦观群书。著论准过秦，作赋拟子虚。……铅刀贵一割，梦想骋良图。……功成不受爵，长揖归田庐。
+    text_display: excerpt
+    themes: [咏史, 自述怀抱, 功成身退]
+    influence: 八首组诗的总纲，确立了左思咏史连章体、以我观史的写法。
+    source_ids: [src-wenxuan]
+
+  - work_id: yong-shi-ba-shou-zhi-wu
+    title: 咏史八首·其五（皓天舒白日）
+    alt_titles: []
+    genre: 五言诗（咏史）
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 写帝城王侯宅第的煊赫与攀龙客的自省，被褐出阊阖高步追许由作结，尾联振衣千仞岗濯足万里流以极目天地的姿态写精神超越。
+    attribution: 确凿
+    excerpt: 皓天舒白日，灵景耀神州。……被褐出阊阖，高步追许由。振衣千仞岗，濯足万里流。
+    text_display: excerpt
+    themes: [咏史, 鄙弃权贵, 精神超越]
+    influence: 振衣千仞岗濯足万里流被视为晋诗中最具气象的名联之一，历代选本必录。
+    source_ids: [src-wenxuan]
+
+  - work_id: san-du-fu
+    title: 三都赋（蜀都赋、吴都赋、魏都赋）
+    alt_titles: [蜀都赋, 吴都赋, 魏都赋]
+    genre: 京都大赋
+    date:
+      text: 构思十年，约280—291年之间写成
+      year: 280
+      range_end: 291
+      precision: 范围
+    place: 洛阳
+    context: 分咏蜀吴魏三国都城物产形胜，以魏都归于一统收束；山川城邑稽之地图鸟兽草木验之方志的征实写法，是对汉赋虚夸传统的自觉矫正。赋成而豪贵竞相传写洛阳为之纸贵。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [京都赋, 征实, 一统理想]
+    influence: 被视为汉代以来京都大赋的压轴之作，张华评为班张之流，陆机为之辍笔；洛阳纸贵的本事所在。
+    confidence: 有争议
+    dispute: 正文全篇收录于文选卷四至卷六（目录级实取确认），本次未逐字核对赋文正文；皇甫谧作序之说与谧卒年的矛盾历来有考辨。
+    source_ids: [src-wenxuan, src-jinshi-vol92]
+
+  - work_id: san-du-fu-xu
+    title: 三都赋序
+    alt_titles: []
+    genre: 赋序（论体文）
+    date:
+      text: 与三都赋同时，约291年前后
+      year: 291
+      precision: 约
+    place: 洛阳
+    context: 开篇盖诗有六义焉其二曰赋引扬雄诗人之赋丽以则与班固赋者古诗之流也立论；历数相如赋上林而引卢橘夏熟等假称珍怪之失，提出美物者贵依其本赞事者宜本其实的征实纲领。
+    attribution: 确凿
+    excerpt: 盖诗有六义焉，其二曰赋。……美物者贵依其本，赞事者宜本其实。匪本匪实，览者奚信？
+    text_display: excerpt
+    themes: [赋论, 征实, 批判虚夸]
+    influence: 西晋文学批评的重要文献，征实主张与其访岷邛、检方志的写作实践互证，对后世纪实文论影响深远。
+    source_ids: [src-wenxuan]
+
+  - work_id: zhao-yin-shi-er-shou
+    title: 招隐诗二首
+    alt_titles: []
+    genre: 五言诗（招隐／游览）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 杖策寻访隐士而岩穴无结构丘中有鸣琴，寻隐不遇反悟山林之美；非必丝与竹山水有清音谓自然之声胜过人工音乐，结以聊欲投吾簪的弃官之想。
+    attribution: 确凿
+    excerpt: 杖策招隐士，荒涂横古今。……非必丝与竹，山水有清音。何事待啸歌，灌木自悲吟。……踌躇足力烦，聊欲投吾簪。
+    text_display: excerpt
+    themes: [招隐, 山水清音, 弃官]
+    influence: 非必丝与竹山水有清音是以山水入诗审美的先声，下开东晋南朝山水诗一路；两首均录入文选。
+    source_ids: [src-wenxuan]
+
+  - work_id: yong-shi-ba-shou-zhi-qi
+    title: 咏史八首·其七（主父宦不达）
+    alt_titles: []
+    genre: 五言诗（咏史）
+    date:
+      text: 组诗之七，创作年代无定说
+      precision: 未知
+    place: ""
+    context: 连举主父偃朱买臣陈平司马相如四人微时困顿的史事——四贤岂不伟当其未遇时忧在填沟壑，归结为英雄有屯邅由来自古昔何世无奇才遗之在草泽，为埋没草泽的奇才作总申诉。
+    attribution: 确凿
+    excerpt: 英雄有屯邅，由来自古昔。何世无奇才？遗之在草泽。
+    text_display: excerpt
+    themes: [咏史, 不遇之士, 草泽遗才]
+    influence: 何世无奇才遗之在草泽成为历代论人才埋没的常引名句。
+    source_ids: [src-wenxuan]
+
+  # 待补作品（维基文库已实取文本，惟所据总集页未在 data/sources.yaml 登记，
+  # 为满足「works.source_ids 非空且指向已登记来源」约束暂不入 works 列表）：
+  # - 娇女诗：出维基文库玉台新咏页，咏幼女纨素惠芳情态，开咏儿女题材先河；
+  # - 悼离赠妹诗二首：出维基文库单篇页（未标总集卷次），因妹左棻入宫骨肉分离而作。
+
+  - work_id: qi-du-fu
+    title: 齐都赋
+    alt_titles: []
+    genre: 京都赋
+    date:
+      text: 移家京师之前，具体年代不详
+      precision: 未知
+    place: 临淄
+    context: 本传明载造齐都赋一年乃成，咏故乡齐地都邑风物的早期练笔，为其后赋三都的张本；全文已佚。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [京都赋, 乡邦风物]
+    influence: 三都赋的前奏，见其京都赋体的成长轨迹；佚文散见类书的辑佚问题待专门处理。
+    source_ids: [src-jinshi-vol92]
+
+footprints:
+  - name: 齐国临淄
+    modern_name: 山东省淄博市临淄区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约250年生，少年时期在此
+      year: 250
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    confidence: 存疑
+    dispute: 生年系学界推定。
+    source_ids: [src-jinshi-vol92]
+  - name: 洛阳
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约泰始八年（272）前后因妹入宫移家京师，此后长期定居
+      year: 272
+      precision: 约
+    kind: 居住
+    route_order: 2
+    memorial_only: false
+    confidence: 存疑
+    dispute: 移家系年正史无载，从通行推定。
+    source_ids: [src-jinshi-vol92]
+  - name: 洛阳
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 构思三都期间自以所见不博求为秘书郎
+      year: 280
+      range_end: 291
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    confidence: 存疑
+    dispute: 任秘书郎的具体年份正史无载，系据构思十年时段框定。
+    source_ids: [src-jinshi-vol92]
+  - name: 洛阳宜春里
+    modern_name: 河南省洛阳市（汉魏洛阳城内坊里，方位待考）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 贾谧被诛（约300年）后退居于此，专意典籍
+      year: 300
+      precision: 约
+    kind: 居住
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 宜春里为本传明载的退居地，惟其坊里方位与谧诛年份均待考订。
+    source_ids: [src-jinshi-vol92]
+  - name: 冀州
+    modern_name: 河北省冀州市一带（冀州治所历年有迁，待考）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约304年张方纵暴都邑，举家适冀州避乱
+      year: 304
+      precision: 约
+    kind: 居住
+    route_order: 5
+    memorial_only: false
+    confidence: 存疑
+    dispute: 迁居年份与冀州境内具体居地正史皆无载。
+    source_ids: [src-jinshi-vol92]
+  - name: 冀州
+    modern_name: 河北省冀州市一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约305年数岁以疾终
+      year: 305
+      precision: 约
+    kind: 逝世
+    route_order: 6
+    memorial_only: false
+    confidence: 存疑
+    dispute: 卒年正史不系年，约305系学界推定。
+    source_ids: [src-jinshi-vol92]
+
+relations: []
+# 关系说明：本拟建两组——亲属（妹左棻）与社群（二十四友之石崇、潘岳、陆机等）；
+# 经核 figures.yaml（1933行全量检索），库中尚无 zuopan/luyun/panyue/shichong/zhanghua 等
+# 任何西晋人物条目，relation_type 目标 id 无合规落点，按边界约定不为凑数编造，
+# 故本卷 relations 置空。妹左棻入宫事已入 timeline 第6条与作品悼离赠妹诗条目；
+# 陆机叹服事已入 reception 同时代层。待上述人物入库后补建。
+
+reception:
+  - era: 同时代
+    evaluator: 陆机
+    quote: 此间有伧父，欲作《三都赋》，须其成，当以覆酒瓮耳。——及思赋出，机绝叹伏，以为不能加也，遂辍笔焉。
+    text_display: excerpt
+    comment: 本传直引的两段合观——先讥后服再到搁笔，是同时代最强对手给出的最高承认，也是覆酒瓮典故的出处。
+    source_ids: [src-jinshi-vol92]
+  - era: 同时代
+    evaluator: 张华
+    quote: 班张之流也。使读之者尽而有馀，久而更新。
+    text_display: excerpt
+    comment: 本传直引的当朝重臣文坛巨擘之评，将其直接接续班固张衡的大赋正统；其后豪贵竞相传写遂有洛阳纸贵。
+    source_ids: [src-jinshi-vol92]
+  - era: 同时代
+    evaluator: 刘逵（注《吴》《蜀》序）
+    quote: 观中古以来为赋者多矣……至若此赋，拟议数家，傅辞会义，抑多精致，非夫研核者不能练其旨，非夫博物者不能统其异。
+    text_display: excerpt
+    comment: 本传转录的注家评语，指出三都赋研核博物之难，代表当时专业读者对其征实写法的认可。
+    source_ids: [src-jinshi-vol92]
+  - era: 历代批评
+    evaluator: 钟嵘《诗品》、刘勰《文心雕龙》（转述层）
+    quote: ""
+    text_display: none
+    comment: 通行评价谓钟嵘诗品列左思为上品并有文典以怨颇为精切得讽谕之致之评；文心雕龙才略篇谓其尽锐于三都拔萃于咏史——两条评语本次未在维基文库实取原文，暂按学界转述层著录。
+    confidence: 存疑
+    dispute: 诗品与文心雕龙评语原文待实取核验后方可升格为引文层。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究公认其为咏史诗传统的奠基人——咏史八首使咏史从敷衍史实转为寄托身世，寒士文学的代表声音；三都赋则被视为京都大赋的终结者。具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 成语洛阳纸贵进入国民语汇，是罕见以出版传播盛况凝成的成语；郁郁涧底松长期入选教材与选本，成为门阀制度批判的教科书级文本。教材篇目随学期变动录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中的左思多为竹林名士题材或世说新语式轶事的配角化敷演，不作信史依据；网络传播集中于洛阳纸贵与覆酒瓮两个段子，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-jinshi-vol92, src-wenxuan]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。16条年谱（5阶段）、8件作品、6处足迹、0组关系（figures.yaml无西晋人物可作目标，说明见relations注释）、7层接受史（含影视网络占位）。生平事实全部实取自维基文库晋书卷092左思传原文；咏史八首/招隐诗二首/三都赋序实取自文选单篇页。娇女诗与悼离赠妹诗二首文本已实取惟所据总集页未在sources.yaml登记，按注释待补，不计入works。"}

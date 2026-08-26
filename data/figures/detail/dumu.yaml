@@ -1,0 +1,696 @@
+# 杜牧全景详卷（schema v1）
+# 史料审计表（前置证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 旧唐书卷147附传(J) | 新唐书卷166(X) | 结论与置信 |
+# |---|---|---|---|
+# | 字与文名 | 牧字牧之 | 牧字牧之善属文 | 确定 |
+# | 科第 | 既以进士擢第又制举登乙第 | 第进士复举贤良方正 | 确定 |
+# | 起家 | 解褐弘文馆校书郎试左武卫兵曹参军 | （未详记起家官） | 确定(J) |
+# | 幕府 | 沈传师辟为从事；淮南节度推官转掌书记 | 沈传师表为江西团练府巡官；牛僧孺淮南节度府掌书记 | 确定；牛僧孺幕主名从X |
+# | 弃官 | 分司东都以弟顗病目弃官 | 移疾分司东都以弟顗病弃官 | 确定 |
+# | 罪言 | 无载 | 刘从谏守泽潞何进滔据魏博……作《罪言》，全文载 | 确定(X) |
+# | 论兵受知 | 上宰相书论兵言秋冬击胡；李德裕称之 | 李德裕素奇其才；说德裕取溃回鹘；移书平刘稹泽潞平略如牧策 | 确定 |
+# | 注兵书 | 注曹公所定孙武十三篇行于代 | （未及） | 确定(J) |
+# | 外任 | 出牧黄池睦三郡；授湖州刺史 | 历黄池睦三州刺史；改吏部复乞为湖州刺史 | 确定 |
+# | 终官 | 入拜考功郎中知制诰岁中迁中书舍人 | 逾年以考功郎中知制诰迁中书舍人 | 确定 |
+# | 性情 | 好读书工诗为文尝自负经纬才略 | 刚直有奇节敢论列大事指陈病利尤切至 | 确定 |
+# | 从兄悰 | 牧从兄悰隆盛于时牧居下位心常不乐 | 从兄悰更历将相而牧困踬不自振颇怏怏不平 | 确定 |
+# | 临终 | 得病自为墓志祭文；梦告诸异；终于安仁里年五十 | 自为墓志悉取所为文章焚之；卒年五十 | 确定；焚稿事从X |
+# | 集子 | 有集二十卷曰杜氏樊川集行于代 | （未及） | 确定(J) |
+# | 并称 | 无载 | 牧于诗情致豪迈人号为小杜以别杜甫 | 确定(X) |
+# | 生年卒年 | 卒时年五十 | 卒年五十 | 两史均未载生年卒年之公元纪年；约803—852系学界通说倒推 |
+# | 扬州风流传闻 | 无载 | 无载 | 两唐书均无；笔记传闻不入正史层，标传说 |
+#
+# 访问记录（2026-08-25，webfetch 实抓）：
+# - https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7147 成功，含「從郁子牧」传
+# - https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7166 成功，含「從郁子牧」传
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: dumu
+
+profile:
+  courtesy_name: 牧之
+  art_name: 樊川居士
+  aliases: [小杜, 杜樊川]
+  gender: 男
+  ethnicity: ""
+  ancestry: 京兆万年
+  birthplace: 长安安仁里（旧唐书载其终于安仁里私第，家在此坊，出生地系据此推定）
+  death_place: 长安安仁里
+  offices: [弘文馆校书郎, 江西宣州幕从事, 淮南节度掌书记, 监察御史, 宣州团练判官, 左补阙, 史馆修撰, 膳部员外郎, 比部员外郎, 黄州刺史, 池州刺史, 睦州刺史, 司勋员外郎, 吏部员外郎, 湖州刺史, 考功郎中知制诰, 中书舍人]
+  fields: [文学]
+  roles: [诗人, 散文家]
+  summary: 晚唐诗文兼擅的贵胄才士，宰相杜佑之孙；自负经纬才略而困踬外郡，诗情致豪迈，人称小杜。
+
+timeline:
+  # ── 阶段一：京兆世族 ──────────────────────────────
+  - stage: 京兆世族
+    stage_order: 1
+    title: 生于宰相门第
+    date:
+      text: "约803年"
+      year: 803
+      precision: 约
+    place: 长安安仁里
+    summary: 出身京兆杜氏。曾祖杜希望为边将，祖父杜佑历相德顺宪三朝、封岐国公，以二百卷通典名世；父从郁终驾部员外郎。两唐书均只记其卒年五十，生年约803系学界倒推测算。
+    confidence: 存疑
+    dispute: 正史无生年明文，803年由卒年五十倒推，各家谱系或有出入。
+    inferred: true
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - stage: 京兆世族
+    stage_order: 2
+    title: 家学熏陶与少年苦读
+    date:
+      text: 约810—826年之间
+      year: 810
+      range_end: 826
+      precision: 范围
+    place: 长安
+    summary: 生长于书香相门，旧唐书称其好读书工诗为文，尝自负经纬才略；新唐书谓善属文，少与李甘、李中敏、宋邧善，其通古今善处成败，甘等不及也。
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - stage: 京兆世族
+    stage_order: 3
+    title: 进士及第，复举贤良方正
+    date:
+      text: 约828年前后
+      year: 828
+      precision: 约
+    place: 长安
+    summary: 旧唐书载既以进士擢第又制举登乙第，新唐书作第进士复举贤良方正。同年进士科系学界通说系于大和二年，两唐书均未载年分。
+    confidence: 存疑
+    dispute: 及第确年在827与828间尚有讨论，此从大和二年通说。
+    inferred: true
+    source_ids: [src-jts-dumu, src-xts-vol166]
+
+  # ── 阶段二：幕府南北 ──────────────────────────────
+  - stage: 幕府南北
+    stage_order: 4
+    title: 解褐校书郎，入沈传师江西宣州幕
+    date:
+      text: 约828—833年之间
+      year: 828
+      range_end: 833
+      precision: 范围
+    place: 长安、洪州、宣州
+    summary: 旧唐书载解褐弘文馆校书郎试左武卫兵曹参军；沈传师廉察江西宣州，辟牧为从事试大理评事。新唐书作表为江西团练府巡官。幕府岁月为其诗名渐起之时。
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - stage: 幕府南北
+    stage_order: 5
+    title: 牛僧孺淮南节度府掌书记
+    date:
+      text: 约833—835年之间
+      year: 833
+      range_end: 835
+      precision: 范围
+    place: 扬州
+    summary: 新唐书明载又为牛僧孺淮南节度府掌书记，旧唐书作淮南节度推官监察御史里行转掌书记。扬州繁盛之地，其治游传闻即系于此段幕职。牧一生周旋于牛僧孺幕府与李德裕知遇之间，后世多以其处牛李党争间依违两端论其宦途。
+    confidence: 存疑
+    dispute: 在扬起讫年份系学界推定；党争依违云云属后设框架，两唐书本传并无此语，仅见其先后受知于牛、李两面事实。
+    inferred: true
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - stage: 幕府南北
+    stage_order: 6
+    title: 扬州冶游薄幸传闻
+    date:
+      text: 淮南掌书记任内
+      year: 833
+      range_end: 835
+      precision: 范围
+    place: 扬州
+    summary: 十年一觉扬州梦赢得青楼薄幸名等自述诗句流传甚广，唐人笔记更敷衍出牛僧孺密遣街卒暗中护持之说。两唐书本传于此均无一字。
+    confidence: 传说
+    dispute: 冶游细节出自晚唐五代以来笔记小说，非正史所载；遣卒护持故事尤属敷演，本条仅为诗自述与传闻并存之记录。
+    inferred: true
+    source_ids: [src-qts-dumu]
+  - stage: 幕府南北
+    stage_order: 7
+    title: 拜监察御史，分司东都，以弟病弃官
+    date:
+      text: 约835—837年之间
+      year: 835
+      range_end: 837
+      precision: 范围
+    place: 长安、洛阳
+    summary: 旧唐书载俄真拜监察御史分司东都，以弟顗病目弃官；新唐书作擢监察御史移疾分司东都以弟顗病弃官。手足之情见于行事，其后居官亦屡因弟病乞免。
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - stage: 幕府南北
+    stage_order: 8
+    title: 复佐宣州幕
+    date:
+      text: 约837—838年之间
+      year: 837
+      range_end: 838
+      precision: 范围
+    place: 宣州
+    summary: 旧唐书载授宣州团练判官殿中侍御史内供奉；新唐书作复为宣州团练判官拜殿中侍御史内供奉。再赴宣城当在其弃官东都之后。
+    confidence: 存疑
+    dispute: 再佐宣州的起讫年份系据崔郸镇宣州年代推定。
+    inferred: true
+    source_ids: [src-jts-dumu, src-xts-vol166]
+
+  # ── 阶段三：朝官论兵 ──────────────────────────────
+  - stage: 朝官论兵
+    stage_order: 9
+    title: 作《罪言》论藩镇
+    date:
+      text: 约大和、开成之际
+      year: 837
+      precision: 约
+    place: 长安或宣州
+    summary: 新唐书载是时刘从谏守泽潞何进滔据魏博颇骄蹇不循法度，牧追咎长庆以来朝廷措置亡术，嫌不当位而言实有罪，故作《罪言》；提出上策莫如自治中策莫如取魏最下策为浪战，全文赖新唐书收录得传。
+    confidence: 存疑
+    dispute: 罪言确切写作年份正史未系，学界有太和末与开成初诸说。
+    inferred: true
+    source_ids: [src-xts-vol166]
+  - stage: 朝官论兵
+    stage_order: 10
+    title: 迁左补阙史馆修撰
+    date:
+      text: 约838—841年之间
+      year: 838
+      range_end: 841
+      precision: 范围
+    place: 长安
+    summary: 旧唐书载迁左补阙史馆修撰转膳部比部员外郎并兼史职；新唐书作累迁左补阙史馆修撰改膳部员外郎。任职次序两书小异，兼领史职则同。
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - stage: 朝官论兵
+    stage_order: 11
+    title: 武宗朝上宰相书论兵，注《孙子十三篇》
+    date:
+      text: 会昌年间
+      year: 841
+      range_end: 846
+      precision: 范围
+    place: 长安
+    summary: 旧唐书载武宗朝诛昆夷鲜卑，牧上宰相书论兵事，言胡戎入寇在秋冬之间盛夏无备宜五六月中击胡为便，李德裕称之；又注曹公所定孙武十三篇行于代。新唐书另载黠戛斯破回鹘后牧说德裕不如遂取之，以为两汉伐虏常以秋冬故败多胜少，今若以仲夏发幽并突骑出其意外一举无类矣。
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - stage: 朝官论兵
+    stage_order: 12
+    title: 移书德裕筹平泽潞
+    date:
+      text: 约843—844年之间
+      year: 843
+      range_end: 844
+      precision: 范围
+    place: 长安
+    summary: 会昌中刘稹拒命，诏诸镇兵讨之，牧复移书于德裕，陈河阳天井关守御与道绛州入袭昭义之策；俄而泽潞平，略如牧策。新唐书赞曰牧论天下兵曰上策莫如自治贤矣哉。
+    source_ids: [src-xts-vol166]
+
+  # ── 阶段四：外郡刺史 ──────────────────────────────
+  - stage: 外郡刺史
+    stage_order: 13
+    title: 出刺黄州
+    date:
+      text: 约842年
+      year: 842
+      precision: 约
+    place: 黄州
+    summary: 旧唐书作出牧黄池睦三郡，新唐书作历黄池睦三州刺史。黄州为首郡，会昌二年出守系学界通说；在任修城练兵整饬武备，为三郡刺史期中之始。
+    confidence: 存疑
+    dispute: 刺黄起讫月份两唐书无载，年份系据会昌政局与其行状推定。
+    inferred: true
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - stage: 外郡刺史
+    stage_order: 14
+    title: 移刺池州
+    date:
+      text: 约844—846年之间
+      year: 844
+      range_end: 846
+      precision: 范围
+    place: 池州
+    summary: 由黄州转池州，会昌四年到任系学界通说。齐山、九华之胜与郡斋吟咏相映，赤壁、清明诸题皆与此际江淮宦迹相涉。
+    confidence: 存疑
+    dispute: 移池州年份系推定；赤壁咏怀之作是否即刺池州时所题亦有不同意见。
+    inferred: true
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - stage: 外郡刺史
+    stage_order: 15
+    title: 移刺睦州
+    date:
+      text: 约846—848年之间
+      year: 846
+      range_end: 848
+      precision: 范围
+    place: 睦州
+    summary: 再徙睦州。僻处浙西山水间，郡务之外多感怀之作，屡有乞归之思。
+    confidence: 存疑
+    dispute: 移睦州年份系推定。
+    inferred: true
+    source_ids: [src-jts-dumu, src-xts-vol166]
+
+  # ── 阶段五：还朝终老 ──────────────────────────────
+  - stage: 还朝终老
+    stage_order: 16
+    title: 入为司勋员外郎，兼领史职
+    date:
+      text: 约848年
+      year: 848
+      precision: 约
+    place: 长安
+    summary: 旧唐书载复迁司勋员外郎史馆修撰转吏部员外郎；新唐书作入为司勋员外郎常兼史职改吏部。自睦州内召还朝，重预史笔。
+    confidence: 存疑
+    dispute: 内召年份系推定。
+    inferred: true
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - stage: 还朝终老
+    stage_order: 17
+    title: 三上启乞守湖州
+    date:
+      text: 约850年
+      year: 850
+      precision: 约
+    place: 长安、湖州
+    summary: 新唐书载改吏部复乞为湖州刺史，旧唐书作又以弟病免归授湖州刺史。求守湖郡之请获准，逾年入拜考功郎中知制诰岁中迁中书舍人。
+    confidence: 存疑
+    dispute: 乞守湖州动机旧说系于早年湖州之约，属笔记敷演；两唐书仅记其乞郡与弟病两事。
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - stage: 还朝终老
+    stage_order: 18
+    title: 自撰墓志，焚稿而卒
+    date:
+      text: "约852年"
+      year: 852
+      precision: 约
+    place: 长安安仁里
+    summary: 将及知命得病，自为墓志祭文；新唐书载乃自为墓志悉取所为文章焚之，又记梦告改名毕甑裂皎皎白驹诸异梦。其年以疾终于安仁里，年五十。旧唐书载有集二十卷曰杜氏樊川集行于代，外甥裴延翰编次之本实存，焚稿云云当非尽焚。从兄悰更历将相而牧困踬不自振，颇怏怏不平。
+    confidence: 存疑
+    dispute: 卒年大中六年系由年五十倒推的学界通说；焚稿事新旧唐书互见而樊川文集俱在，历代学者多疑其焚者别有所指或史笔缘饰。
+    source_ids: [src-jts-dumu, src-xts-vol166]
+
+works:
+  - work_id: epanggong-fu
+    title: 阿房宫赋
+    alt_titles: []
+    genre: 文赋
+    date:
+      text: 约宝历年间
+      year: 825
+      precision: 约
+    place: 长安
+    context: 少年感愤秦奢，借阿房宫兴废警讽时君，成于弱冠之前后。六王毕四海一之劈空而起与后人哀之而不鉴之之结穴，使其成为唐赋转折名篇。
+    attribution: 确凿
+    excerpt: 六王毕，四海一；蜀山兀，阿房出。……秦人不暇自哀，而后人哀之；后人哀之而不鉴之，亦使后人而复哀后人也。
+    text_display: excerpt
+    themes: [咏史, 讽喻]
+    influence: 以赋为论的名篇，戒奢之典千古沿用。
+    confidence: 存疑
+    dispute: 写作年份通行系于宝历元年敬宗大起宫室之际，系据文中讽意推定。
+    source_ids: [src-qts-dumu]
+  - work_id: zui-yan
+    title: 罪言
+    alt_titles: []
+    genre: 论议散文
+    date:
+      text: 约大和、开成之际
+      year: 837
+      precision: 约
+    place: ""
+    context: 因刘从谏何进滔辈骄蹇不循法度，追咎长庆以来措置亡术；自谦位不当而言实有罪故名罪言。全文赖新唐书本传收录得传。
+    attribution: 确凿
+    excerpt: 生人常病兵，兵祖于山东……上策莫如自治。中策莫如取魏。……最下策为浪战，不计地势，不审攻守是也。
+    text_display: excerpt
+    themes: [军事, 藩镇]
+    influence: 晚唐藩镇问题的纲领性政论，新唐书全篇采录。
+    source_ids: [src-xts-vol166]
+  - work_id: sunzi-zhu
+    title: 注曹公所定孙武十三篇
+    alt_titles: [杜牧注孙子]
+    genre: 兵书注释
+    date:
+      text: 会昌年间成书
+      year: 841
+      range_end: 846
+      precision: 范围
+    place: 长安
+    context: 为曹操所定孙子十三篇作注，旧唐书谓行于代。与其上宰相书论兵、罪言之军事议论互为表里，宋以后刊本十一家注孙子中杜注居其一。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [军事]
+    influence: 使其在文学之外别立兵学一席。
+    source_ids: [src-jts-dumu]
+  - work_id: bo-qinhuai
+    title: 泊秦淮
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约文宗年间夜泊金陵时
+      year: 833
+      precision: 约
+    place: 秦淮河
+    context: 夜泊秦淮闻商女犹唱玉树后庭花，借陈亡旧曲写晚唐衰象。
+    attribution: 确凿
+    excerpt: 烟笼寒水月笼沙，夜泊秦淮近酒家。商女不知亡国恨，隔江犹唱后庭花。
+    text_display: full
+    themes: [咏史, 忧时]
+    influence: 咏史绝句中以轻笔负重忧的代表，传诵极广。
+    confidence: 存疑
+    dispute: 系年与作地有金陵说、扬州说之别。
+    source_ids: [src-qts-dumu]
+  - work_id: chi-bi
+    title: 赤壁
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约会昌间刺池州时
+      year: 844
+      precision: 约
+    place: 池州（一说黄州）
+    context: 于江滨得折戟沉沙，磨洗认出前朝遗物，翻案设想东风不与周郎便铜雀春深锁二乔，以二乔系二国之运。
+    attribution: 确凿
+    excerpt: 折戟沉沙铁未销，自将磨洗认前朝。东风不与周郎便，铜雀春深锁二乔。
+    text_display: full
+    themes: [咏史, 翻案]
+    influence: 借地咏史翻转定评的名作，后世聚讼其议论之奇。
+    confidence: 存疑
+    dispute: 作地有黄州赤鼻矶说与池州贵池说；系年均系推定。
+    source_ids: [src-qts-dumu]
+  - work_id: jiangnan-chun
+    title: 江南春
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 创作年代不详，当在大和会昌间江南宦游之日
+      precision: 未知
+    place: 江南
+    context: 千里莺啼水村山郭酒旗风，收南朝四百八十寺多少楼台烟雨中于一幅，写尽江南春色与历史烟霭。
+    attribution: 确凿
+    excerpt: 千里莺啼绿映红，水村山郭酒旗风。南朝四百八十寺，多少楼台烟雨中。
+    text_display: full
+    themes: [写景, 咏史]
+    influence: 江南意象的经典定格，画境与史感兼备。
+    source_ids: [src-qts-dumu]
+  - work_id: shan-xing
+    title: 山行
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 秋日山行为枫林驻车，霜叶红于二月花翻悲秋为新赏。
+    attribution: 确凿
+    excerpt: 远上寒山石径斜，白云生处有人家。停车坐爱枫林晚，霜叶红于二月花。
+    text_display: full
+    themes: [秋景]
+    influence: 咏秋叶第一名句，长期入选蒙学与教材。
+    source_ids: [src-qts-dumu]
+  - work_id: qing-ming
+    title: 清明
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 杏花春雨中的问酒小景，明白如话而成清明的国民记忆。
+    attribution: 存疑
+    excerpt: 清明时节雨纷纷，路上行人欲断魂。借问酒家何处有？牧童遥指杏花村。
+    text_display: full
+    themes: [节令, 行旅]
+    influence: 使杏花村成为清明文化符号。
+    confidence: 有争议
+    dispute: 此诗不见于樊川文集与唐宋选本，明代始阑入杜集，作者归属有学术争议（主流仍归杜牧），亦有主张许浑或他人作者；本项目从主流归于杜牧而标注存疑。
+    source_ids: [src-qts-dumu]
+  - work_id: qiu-xi
+    title: 秋夕
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: 长安（宫怨题材，作地无考）
+    context: 以轻罗小扇扑流萤的天阶秋色写宫人幽寂，坐看牵牛织女星结出无限心事。
+    attribution: 确凿
+    excerpt: 银烛秋光冷画屏，轻罗小扇扑流萤。天阶夜色凉如水，坐看牵牛织女星。
+    text_display: full
+    themes: [宫怨]
+    influence: 宫怨绝句中不着怨字而怨深之作。
+    confidence: 存疑
+    dispute: 别本题作七夕，又有阑入王建名下之版本系统，文本小异尚存讨论。
+    source_ids: [src-qts-dumu]
+  - work_id: zeng-bie
+    title: 赠别二首（其二）
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约大和末离扬州之际
+      year: 835
+      precision: 约
+    place: 扬州
+    context: 与扬州歌妓留别之作，蜡烛有心还惜别替人垂泪到天明以物拟人而情深一往。
+    attribution: 确凿
+    excerpt: 多情却似总无情，唯觉樽前笑不成。蜡烛有心还惜别，替人垂泪到天明。
+    text_display: full
+    themes: [离别]
+    influence: 咏蜡烛惜别的千古名句。
+    confidence: 存疑
+    dispute: 系于离扬州时仅从诗境与行迹之通说，确年无考。
+    source_ids: [src-qts-dumu]
+  - work_id: qian-huai
+    title: 遣怀
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约晚年回顾扬州幕岁时
+      year: 848
+      precision: 约
+    place: ""
+    context: 落魄江湖载酒行楚腰纤细掌中轻，十年一觉扬州梦赢得青楼薄幸名，自嘲中寓半生蹉跎之慨。
+    attribution: 确凿
+    excerpt: 落魄江湖载酒行，楚腰纤细掌中轻。十年一觉扬州梦，赢得青楼薄幸名。
+    text_display: full
+    themes: [抒怀, 自嘲]
+    influence: 扬州记忆的第一诗证，薄幸一词自此成典。
+    confidence: 存疑
+    dispute: 所忆扬州岁月起讫与写作确年均有异说。
+    source_ids: [src-qts-dumu]
+
+footprints:
+  - name: 长安安仁里
+    modern_name: 陕西省西安市（朱雀门东安仁坊一带，推定）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 唐长安坊市方位据文献复原推定，精确坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: "约803年生，至852年终老于此坊"
+      year: 803
+      range_end: 852
+      precision: 范围
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-jts-dumu]
+  - name: 洪州与宣州（江西宣歙幕）
+    modern_name: 江西省南昌市、安徽省宣城市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约828—833年之间，约837—838年再佐宣州
+      year: 828
+      range_end: 838
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 两度入宣州幕的起讫年份均系学界推定。
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - name: 扬州（淮南节度使府）
+    modern_name: 江苏省扬州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约833—835年之间
+      year: 833
+      range_end: 835
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 掌书记任期起讫系学界推定。
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - name: 洛阳（分司东都）
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约835—837年之间
+      year: 835
+      range_end: 837
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - name: 黄州
+    modern_name: 湖北省武汉市新洲区（唐黄州治所邾城一带）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 唐黄州治所地望随时代迁移，此处从邾城说推定
+    visit_date:
+      text: 约842—844年之间
+      year: 842
+      range_end: 844
+      precision: 范围
+    kind: 谪迁
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 刺黄年份系推定；出守三郡究属平迁抑或外放，历来评价不一。
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - name: 池州
+    modern_name: 安徽省池州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约844—846年之间
+      year: 844
+      range_end: 846
+      precision: 范围
+    kind: 任职
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - name: 睦州
+    modern_name: 浙江省杭州市建德市梅城镇（唐睦州治所）
+    lng: null
+    lat: null
+    coord_precision: 乡镇级
+    coord_source: 唐睦州治建德县即今梅城镇，据沿革志推定
+    visit_date:
+      text: 约846—848年之间
+      year: 846
+      range_end: 848
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - name: 湖州
+    modern_name: 浙江省湖州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约850—851年之间
+      year: 850
+      range_end: 851
+      precision: 范围
+    kind: 任职
+    route_order: 8
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 刺湖确年系推定；早年湖州之约为笔记传闻，不作信史。
+    source_ids: [src-jts-dumu, src-xts-vol166]
+  - name: 长安城南樊川
+    modern_name: 陕西省西安市长安区樊川（韦曲、杜曲一带）
+    lng: null
+    lat: null
+    coord_precision: 乡镇级
+    coord_source: 樊川地望据旧唐书杜佑传城南樊川佳林亭及樊川文集得名由来推定
+    visit_date:
+      text: 家世别业所在，身后以樊川名集
+      year: 852
+      precision: 约
+    kind: 逝世
+    route_order: 9
+    memorial_only: false
+    source_ids: [src-jts-dumu]
+
+relations:
+  - relation_type: 社群
+    target_id: lishangyin
+    direction: 双向
+    period:
+      text: 大中年间同官长安前后，身后并称
+      year: 848
+      range_end: 852
+      precision: 范围
+    evidence: 晚唐诗坛双璧，后世并称小李杜以别于李白杜甫之李杜。二人同世同域而有交往之可能，然现存史料无直接唱酬实证，并称属文学史定位而非交游实录。
+    inferred: true
+    confidence: 确定
+    source_ids: [src-xts-vol166]
+  - relation_type: 社群
+    target_id: dufu
+    direction: 双向
+    period:
+      text: 身后并称，无生前交往
+      precision: 未知
+    evidence: 新唐书本传明载牧于诗情致豪迈人号为小杜以别杜甫；二人分属祖孙两代且无交往记载，小杜之称纯为诗名对举。
+    inferred: true
+    confidence: 确定
+    source_ids: [src-xts-vol166]
+  - relation_type: 社群
+    target_id: baijuyi
+    direction: 双向
+    period:
+      text: 同处长庆大和间长安洛阳诗坛
+      year: 821
+      range_end: 831
+      precision: 范围
+    evidence: 元白诗体盛行之际，牧持论别有所尚，学界素以其对元和诗风的批评态度为讨论议题；二人有无直接交往史料阙如。
+    inferred: true
+    confidence: 存疑
+    dispute: 相关论述多牵合其为李戡所作墓志中对元和诗体的讥评文字，该墓志不在本卷登记来源之内，故此处仅作中立转述而不引其原文。
+    source_ids: [src-xts-vol166]
+
+reception:
+  - era: 同时代
+    evaluator: 唐末五代之际诗坛通称（新唐书本传追记）
+    quote: 牧于诗，情致豪迈，人号为「小杜」，以别杜甫云。
+    text_display: excerpt
+    comment: 新唐书本传所录称号，可见其身后不久已以继轨老杜视之。
+    source_ids: [src-xts-vol166]
+  - era: 历代批评
+    evaluator: 旧唐书史臣
+    quote: 牧之文章，悰之长厚，能否既异，才位不伦，命矣夫！
+    text_display: excerpt
+    comment: 五代史臣于杜佑传末合论悰牧，叹其才高位下，为正史层面最早的盖棺之论。
+    source_ids: [src-jts-dumu]
+  - era: 历代批评
+    evaluator: 新唐书赞
+    quote: 牧论天下兵曰：「上策莫如自治。」贤矣哉！
+    text_display: excerpt
+    comment: 宋祁等于卷赞独引其兵论，确立杜牧诗文之外的经世形象。
+    source_ids: [src-xts-vol166]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究集中于牛李党争中的处境重估、扬州行迹与系年考辨、清明诗作者归属、罪言与注孙子的军事思想等议题；具体论著引文须逐条取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 山行清明泊秦淮赤壁江南春秋夕等长期入选中小学语文教材，小李杜并称成为晚唐诗坛公共符号。教材版本信息随学期变动，录入时须另行核验当期篇目。
+    source_ids: []
+
+sources_used: [src-jts-dumu, src-xts-vol166, src-qts-dumu]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。18条年谱、11种作品、9处足迹、3组关系、5层接受史；新旧唐书异说全部落dispute字段}

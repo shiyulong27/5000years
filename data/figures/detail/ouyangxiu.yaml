@@ -1,0 +1,729 @@
+# 欧阳修全景详卷（schema v1）
+# 史料审计表（TASK-003 批次；来源登记见 data/sources.yaml）：
+#
+# 实取记录：
+# - 宋史·卷三百一十九·欧阳修传：https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7319 实取成功（2026-08-25）。
+#   本传首段即「歐陽脩，字永叔，廬陵人。四歲而孤……至以荻畫地學書」，画荻教子、试南宫第一、知谏院、
+#   朋党论、贬夷陵、知滁州、嘉祐二年贡举、修唐书、濮议、蒋之奇诬案、青州止散青苗钱、六一居士、
+#   熙宁五年卒谥文忠诸事均见本传原文，以下逐条对应。
+# - 醉翁亭记：https://zh.wikisource.org/wiki/%E9%86%89%E7%BF%81%E4%BA%AD%E8%A8%98 实取成功（2026-08-25，
+#   古文观止/庐陵文钞系统）；页面注泉名作让泉、明刻本讹作酿泉，摘录从页面。
+# - 秋声赋、祭石曼卿文、丰乐亭记、戏答元珍、玉楼春、踏莎行、生查子元夕、蝶恋花等单篇未逐字核
+#   维基文库页面，凭通行公版文本录入，各条 dispute 已注明「文本为通行本未逐字核页面」。
+#
+# | 事实点 | 宋史卷319(O) | 结论与置信 |
+# |---|---|---|
+# | 家世 | 字永叔庐陵人四岁而孤母郑守节自誓亲诲之学家贫至以荻画地学书 | 确定 |
+# | 科第 | 举进士试南宫第一擢甲科调西京推官 | 确定；系年天圣八年(1030)从通说 |
+# | 洛阳幕府 | 从尹洙游为古文与梅尧臣游歌诗倡和文章名冠天下入朝为馆阁校勘 | 确定 |
+# | 责高若讷 | 范仲淹以言事贬修贻书责若讷坐贬夷陵令 | 确定(景祐三年1036系年从通说) |
+# | 知谏院 | 庆历三年知谏院增谏官员用天下名士修首在选中帝面赐五品服 | 确定(1043) |
+# | 朋党论 | 自是朋党之论起脩乃为朋党论以进(传内大段引原文) | 确定(庆历四年从通说) |
+# | 贬滁州 | 因其孤甥张氏狱傅致以罪左迁知制诰知滁州居二年徙扬州颍州 | 确定(庆历五年1045左迁从通说) |
+# | 嘉祐贡举 | 知嘉祐二年贡举时士子尚为险怪奇涩之文号太学体修痛排抑之场屋之习从是遂变 | 确定(1057) |
+# | 修唐书 | 迁翰林学士俾修唐书奉诏修唐书记志表唐书成拜礼部侍郎兼翰林侍读学士 | 确定 |
+# | 五代史记 | 自撰五代史记法严词约多取春秋遗旨 | 确定 |
+# | 集古录 | 凡周汉以降金石遗文一切掇拾研稽异同立说于左谓之集古录 | 确定 |
+# | 执政 | 五年拜枢密副使六年参知政事与韩琦同心辅政英宗疾太后垂帘修调停两宫 | 确定(嘉祐五六年间) |
+# | 濮议 | 中书引丧服记为人后者为其父母服主张称亲御史吕诲等诋修争论不已皆被逐 | 确定(治平间) |
+# | 蒋之奇诬案 | 妇弟薛宗孺造帷薄不根之谤辗转达彭思永告蒋之奇之奇上章劾修辞穷坐黜修力求退罢知亳州 | 确定(治平四年1067) |
+# | 青苗异议 | 及守青州又以请止散青苗钱为安石所诋故求归愈切 | 确定(传内无系年；约熙宁初推定落dispute) |
+# | 致仕卒 | 熙宁四年以太子少师致仕五年卒赠太子太师谥曰文忠始在滁州号醉翁晚更号六一居士 | 确定(1071致仕/1072卒)；卒地本传未载通说颍州 |
+# | 奖引后进 | 曾巩王安石苏洵洵子轼辙布衣屏处未为人知修即游其声誉谓必显于世 | 确定 |
+# | 苏轼评 | 苏轼叙其文曰论大道似韩愈论事似陆贽记事似司马迁诗赋似李白识者以为知言 | 确定 |
+# | 生年 | 本传无载 | 1007系由卒年与享年六十六倒推，落dispute |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: ouyangxiu
+
+profile:
+  courtesy_name: 永叔
+  art_name: 醉翁、六一居士
+  aliases: [欧阳文忠]
+  gender: 男
+  ethnicity: ""
+  ancestry: 吉州庐陵（宋史本传作庐陵人，今江西吉安永丰一带）
+  birthplace: 吉州庐陵（另有生于绵州说，详见 timeline 出生条目 dispute）
+  death_place: 颍州（通说；宋史本传仅记卒年）
+  offices: [馆阁校勘, 知谏院, 知制诰, 知滁州, 翰林学士, 枢密副使, 参知政事, 兵部尚书知青州, 太子少师]
+  fields: [文学]
+  roles: [散文家, 诗人, 文学批评家]
+  summary: 北宋诗文革新运动领袖，唐宋八大家中的宋代宗师；一身历谏臣、史官、执政与贬谪，醉翁之意不在酒而志在斯文。
+
+timeline:
+  # ── 阶段一：寒门苦学与科举入仕 ──────────────────────
+  - stage: 寒门苦学与科举入仕
+    stage_order: 1
+    title: 出生于庐陵寒素之家
+    date:
+      text: "约1007年"
+      year: 1007
+      precision: 约
+    place: 吉州庐陵
+    summary: 宋史本传称庐陵人，未载生年。今通行生年1007系由熙宁五年(1072)卒与享年六十六倒推。
+    confidence: 存疑
+    dispute: 本传无生年亦未明载享年，1007年为据行状墓志系统享年推定的通说，待核欧阳文忠集附录碑铭。
+    source_ids: [src-songshi-vol319]
+  - stage: 寒门苦学与科举入仕
+    stage_order: 2
+    title: 四岁而孤，母郑氏画荻教子
+    date:
+      text: "约1011年起"
+      year: 1011
+      precision: 约
+    place: 吉州庐陵
+    summary: 本传载四岁而孤，母郑守节自誓亲诲之学，家贫，至以荻画地学书。幼敏悟过人读书辄成诵。画荻教子由此成为苦学成才的典范叙事。
+    source_ids: [src-songshi-vol319]
+  - stage: 寒门苦学与科举入仕
+    stage_order: 3
+    title: 游随州，废书麓中得韩愈遗稿
+    date:
+      text: 少年时期，具体年份不详
+      precision: 未知
+    place: 随州
+    summary: 时宋兴且百年而文章体裁犹仍五季余习，鎪刻骈偶。修游随得唐韩愈遗稿于废书麓中，读而心慕焉，苦志探赜至忘寝食——日后诗文革新运动的远因即系于此。
+    source_ids: [src-songshi-vol319]
+  - stage: 寒门苦学与科举入仕
+    stage_order: 4
+    title: 举进士试南宫第一，调西京推官
+    date:
+      text: "1030年"
+      year: 1030
+      precision: 精确
+    place: 开封
+    summary: 举进士试南宫第一擢甲科，调西京推官。系年天圣八年(1030)从通行职谱。
+    confidence: 存疑
+    dispute: 及第为本传明文，天圣八年系年从通说，本传未书干支年份。
+    source_ids: [src-songshi-vol319]
+
+  # ── 阶段二：洛阳幕府与谏官风骨 ──────────────────────
+  - stage: 洛阳幕府与谏官风骨
+    stage_order: 5
+    title: 西京幕府，从尹洙梅尧臣游，名冠天下
+    date:
+      text: 约1031—1034年之间
+      year: 1031
+      range_end: 1034
+      precision: 范围
+    place: 西京洛阳
+    summary: 为西京留守推官。始从尹洙游为古文议论当世事迭相师友，与梅尧臣游为歌诗相倡和，遂以文章名冠天下。任满入朝为馆阁校勘。
+    confidence: 存疑
+    dispute: 幕府起讫年份据职历推定。
+    source_ids: [src-songshi-vol319]
+  - stage: 洛阳幕府与谏官风骨
+    stage_order: 6
+    title: 贻书责高若讷，坐贬夷陵令
+    date:
+      text: "1036年"
+      year: 1036
+      precision: 精确
+    place: 开封、夷陵
+    summary: 范仲淹以言事贬，在廷多论救，司谏高若讷独以为当黜。修贻书责之谓其不复知人间有羞耻事。若讷上其书坐贬夷陵令，稍徙乾德令武成节度判官。范仲淹使陕西辟掌书记，修笑而辞曰昔者之举岂以为己利哉同其退不同其进可也。
+    confidence: 存疑
+    dispute: 事为本传明文；景祐三年(1036)系年从通说，本传未书年份。
+    source_ids: [src-songshi-vol319]
+  - stage: 洛阳幕府与谏官风骨
+    stage_order: 7
+    title: 庆历三年知谏院，面赐五品服
+    date:
+      text: "1043年"
+      year: 1043
+      precision: 精确
+    place: 开封
+    summary: 庆历三年仁宗更用大臣，杜衍富弼韩琦范仲淹皆在位，增谏官员用天下名士修首在选中。修论事切直人视之如仇，帝独奖其敢言面赐五品服顾侍臣曰如欧阳修者何处得来。同修起居注遂知制诰，故事必试而后命帝知修诏特除之。
+    source_ids: [src-songshi-vol319]
+  - stage: 洛阳幕府与谏官风骨
+    stage_order: 8
+    title: 朋党之论起，乃作《朋党论》以进
+    date:
+      text: "1044年"
+      year: 1044
+      precision: 精确
+    place: 开封
+    summary: 初范仲淹之贬饶州修与尹洙余靖皆以直仲淹见逐目之曰党人，自是朋党之论起，修乃为朋党论以进，提出君子以同道为朋小人以同利为朋、惟君子则有朋的著名论断。系年庆历四年从通说，与庆历新政党争背景相合。
+    confidence: 存疑
+    dispute: 进呈年份本传未书，庆历四年(1044)说为学界主流，亦有系于庆历三年之说。
+    related_event_id: ouyangxiu-guwen-1044
+    source_ids: [src-songshi-vol319]
+  - stage: 洛阳幕府与谏官风骨
+    stage_order: 9
+    title: 使河东议存麟州，保州兵乱后按抚河北
+    date:
+      text: 约1044—1048年之间
+      year: 1044
+      range_end: 1048
+      precision: 范围
+    place: 河东、河北
+    summary: 奉使河东力主麟州天险不可废，又请开忻代岢岚禁地废田，奏罢河东过重赋敛十数事。使还会保州兵乱，以为龙图阁直学士河北都转运使。胁从二千人将遭同日诛之议，修以祸莫大于杀已降况胁从乎止富弼之谋。
+    confidence: 存疑
+    dispute: 两役起讫年份据庆历职历推定，本传未系年。
+    source_ids: [src-songshi-vol319]
+
+  # ── 阶段三：外任十年与滁州二记 ──────────────────────
+  - stage: 外任十年与滁州二记
+    stage_order: 10
+    title: 张氏狱傅致以罪，左迁知滁州
+    date:
+      text: 约1045—1048年之间
+      year: 1045
+      range_end: 1048
+      precision: 范围
+    place: 滁州
+    summary: 庆历新政受挫杜衍等相继以党议罢去，修慨然上疏救之，于是邪党益忌，因其孤甥张氏狱傅致以罪，左迁知制诰知滁州。居二年徙扬州颍州。醉翁亭记丰乐亭记皆作于此期。
+    confidence: 存疑
+    dispute: 左迁年份本传未书，庆历五年(1045)说为通说；醉翁亭记系年庆历六年(1046)在滁说详见作品条。
+    source_ids: [src-songshi-vol319]
+  - stage: 外任十年与滁州二记
+    stage_order: 11
+    title: 徙扬颍、留守南京、母忧去职，服除召判流内铨
+    date:
+      text: 约1048—1054年之间
+      year: 1048
+      range_end: 1054
+      precision: 范围
+    place: 扬州、颍州、南京应天府
+    summary: 复学士留守南京以母忧去。服除召判流内铨时在外十二年矣帝见其发白问劳甚至。小人畏修复用诈为修奏乞澄汰内侍为奸利者群小譖之出知同州，帝纳吴充言而止。
+    confidence: 存疑
+    dispute: 各任起讫据职历推定。
+    source_ids: [src-songshi-vol319]
+  - stage: 外任十年与滁州二记
+    stage_order: 12
+    title: 迁翰林学士，俾修《唐书》
+    date:
+      text: 约1054—1060年之间
+      year: 1054
+      range_end: 1060
+      precision: 范围
+    place: 开封
+    summary: 迁翰林学士俾修唐书，在翰林八年知无不言。其间河决商胡回河之议大起，修力陈横垄功大难成六塔狭小不能容全河，宰相不从竟为河北患。又尝因水灾上疏请早建储宫，其后建立英宗盖原于此。奉使契丹其主命贵臣四人押宴曰此非常制以卿名重故尔。
+    confidence: 存疑
+    dispute: 入翰林年份据在外十二年后服除还朝职历推定为至和元年(1054)前后。
+    source_ids: [src-songshi-vol319]
+
+  # ── 阶段四：嘉祐主盟与政府 ─────────────────────────
+  - stage: 嘉祐主盟与政府
+    stage_order: 13
+    title: 知嘉祐二年贡举，痛排太学体，拔苏轼曾巩
+    date:
+      text: "1057年"
+      year: 1057
+      precision: 精确
+    place: 开封
+    summary: 知嘉祐二年贡举。时士子尚为险怪奇涩之文号太学体，修痛排抑之凡如是者辄黜，毕事向之嚣薄者伺修出聚噪于马首街逻不能制，然场屋之习从是遂变。本传谓曾巩王安石苏洵洵子轼辙布衣屏处未为人知修即游其声誉谓必显于世，嘉祐榜拔擢苏轼兄弟曾巩即其显证。
+    source_ids: [src-songshi-vol319]
+  - stage: 嘉祐主盟与政府
+    stage_order: 14
+    title: 《唐书》成，拜礼部侍郎兼翰林侍读学士
+    date:
+      text: "1060年"
+      year: 1060
+      precision: 精确
+    place: 开封
+    summary: 先已加龙图阁学士知开封府承包拯威严之后简易循理不求赫赫名京师亦治。《唐书》成拜礼部侍郎兼翰林侍读学士。奉诏修唐书记志表与宋祁等合作而成。
+    confidence: 存疑
+    dispute: 唐书成书进呈系年从嘉祐五年(1060)通说。
+    source_ids: [src-songshi-vol319]
+  - stage: 嘉祐主盟与政府
+    stage_order: 15
+    title: 拜枢密副使、参知政事，与韩琦同心辅政
+    date:
+      text: 约1061—1062年之间
+      year: 1061
+      range_end: 1062
+      precision: 范围
+    place: 开封
+    summary: 五年拜枢密副使六年参知政事。在兵府与曾公亮考天下兵数三路屯戍地理远近更为图籍。在政府与韩琦同心辅政集中书所当知者为总目。时东宫犹未定与韩琦等协定大议。英宗以疾未亲政太后垂帘左右交构几成嫌隙，修以温成之宠与仁宗遗意两番进言解两宫之嫌。
+    confidence: 存疑
+    dispute: 本传以纪年连书，拜枢副与参政分别系于嘉祐五、六年(1061/1062)。
+    source_ids: [src-songshi-vol319]
+  - stage: 嘉祐主盟与政府
+    stage_order: 16
+    title: 濮议之争，主称亲而犯众议
+    date:
+      text: 约1064—1065年之间
+      year: 1064
+      range_end: 1065
+      precision: 范围
+    place: 开封
+    summary: 英宗追崇濮王有司议皆谓当称皇伯改封大国。修引丧服记为人后者为其父母服降三年为期而不没父母之名，考前世皆无典据故中书之议不与众同。太后手书许帝称亲。御史吕诲等诋修主此议争论不已皆被逐。
+    confidence: 存疑
+    dispute: 濮议起讫跨治平元年至三年，此处取争议最烈的治平二年前后；礼制是非历代评价不一。
+    source_ids: [src-songshi-vol319]
+
+  # ── 阶段五：暮年风波与谢世 ─────────────────────────
+  - stage: 暮年风波与谢世
+    stage_order: 17
+    title: 蒋之奇诬告案，罢知亳州
+    date:
+      text: "1067年"
+      year: 1067
+      precision: 精确
+    place: 开封、亳州
+    summary: 濮议中被逐诸御史中惟蒋之奇之说合修意修荐为御史众目为奸邪之奇患之思所以自解。会妇弟薛宗孺挟憾造帷薄不根之谤辗转达中丞彭思永思永告之奇之奇即上章劾修。神宗初即位欲深护修访故宫臣孙思恭为辨释修杜门请推治。帝使诘思永之奇问所从来辞穷皆坐黜。修亦力求退罢为观文殿学士刑部尚书知亳州。
+    confidence: 存疑
+    dispute: 事发治平四年(1067)从通说；诬告内容本传以帷薄二字讳书，细节须参行状笔记，本卷不作铺陈。
+    source_ids: [src-songshi-vol319]
+  - stage: 暮年风波与谢世
+    stage_order: 18
+    title: 守青州请止散青苗钱，为王安石所诋
+    date:
+      text: "约1069年"
+      year: 1069
+      precision: 约
+    place: 青州
+    summary: 明年迁兵部尚书知青州改宣徽南院使判太原府辞不拜徙蔡州。本传载及守青州又以请止散青苗钱为安石所诋故求归愈切——新法推行之际老臣与执政的正面分歧见于此。
+    confidence: 存疑
+    dispute: 本传叙事无系年；青苗钱行于熙宁二年(1069)后，此处约系熙宁二年前后，亦有学者系于熙宁三年上疏论青苗，确切年份待考。
+    source_ids: [src-songshi-vol319]
+  - stage: 暮年风波与谢世
+    stage_order: 19
+    title: 以太子少师致仕，晚号六一居士
+    date:
+      text: "1071年"
+      year: 1071
+      precision: 精确
+    place: 蔡州、颍州
+    summary: 修以风节自持既数被污蔑年六十即连乞谢事帝辄优诏弗许，求归愈切之后终于熙宁四年以太子少师致仕。始在滁州号醉翁晚更号六一居士——以藏书一万卷金石遗文一千卷琴一张棋一局酒一壶加吾一翁老于此五物之间自解。
+    confidence: 存疑
+    dispute: 致仕年份为本传明文。六一名目出自六一居士传属本人文集自述，本传仅记更号事实；名目细节为通行文本未逐字核页面。
+    source_ids: [src-songshi-vol319, src-ouyangxiu-ji]
+  - stage: 暮年风波与谢世
+    stage_order: 20
+    title: 卒赠太子太师，谥曰文忠
+    date:
+      text: "1072年"
+      year: 1072
+      precision: 精确
+    place: 颍州（通说）
+    summary: 熙宁五年卒赠太子太师谥曰文忠。本传赞其天资刚劲见义勇为放逐流离至于再三志气自若；为文天才自然丰约中度天下翕然师尊之。卒地本传未载通说卒于颍州。
+    confidence: 存疑
+    dispute: 卒年卒谥为本传明文；卒地颍州说出自行状墓志系统本传无文，待核欧阳文忠集附录。
+    source_ids: [src-songshi-vol319]
+
+works:
+  - work_id: zuiwengting-ji
+    title: 醉翁亭记
+    alt_titles: []
+    genre: 文（记）
+    date:
+      text: "约1046年"
+      year: 1046
+      precision: 约
+    place: 滁州
+    context: 知滁州任上自号醉翁，与民同乐寄于山水，环滁皆山也起笔。全文经维基文库古文观止系统实取核对。
+    attribution: 确凿
+    excerpt: 环滁皆山也。其西南诸峰，林壑尤美。……峰回路转，有亭翼然临于泉上者，醉翁亭也。……醉翁之意不在酒，在乎山水之间也。山水之乐，得之心而寓之酒也。……太守谓谁？庐陵欧阳修也。
+    text_display: excerpt
+    themes: [山水, 与民同乐]
+    influence: 古文运动写景名篇，醉翁之意成为汉语经典意象。
+    confidence: 存疑
+    dispute: 系年从庆历六年在滁通说；文本据维基文库实取，泉名从页面注作让泉（明刻本讹作酿泉），通行选本多作酿泉。
+    source_ids: [src-songshi-vol319, src-ouyangxiu-ji]
+
+  - work_id: fengleting-ji
+    title: 丰乐亭记
+    alt_titles: []
+    genre: 文（记）
+    date:
+      text: "约1046年"
+      year: 1046
+      precision: 约
+    place: 滁州
+    context: 与醉翁亭记同时期的滁州双记之一，记滁岁物丰成人事安闲，追述五代战乱以颂休养生息。
+    attribution: 确凿
+    excerpt: 修既治滁之明年，夏，始饮滁水而甘。……幸生无事之时也。
+    text_display: excerpt
+    themes: [与民同乐, 怀古]
+    influence: 与醉翁亭记并称的滁州二记。
+    confidence: 存疑
+    dispute: 系年约与醉翁亭记同期从通说；文本为通行本未逐字核页面。
+    source_ids: [src-ouyangxiu-ji]
+
+  - work_id: qiusheng-fu
+    title: 秋声赋
+    alt_titles: []
+    genre: 赋
+    date:
+      text: "约1059年"
+      year: 1059
+      precision: 约
+    place: 开封
+    context: 夜闻秋声而作，以无形之秋声写肃杀之气，破骈俪旧格开文赋先声。
+    attribution: 确凿
+    excerpt: 欧阳子方夜读书，闻有声自西南来。……初淅沥以萧飒，忽奔腾而砰湃。……念谁为之戕贼，亦何恨乎秋声！
+    text_display: excerpt
+    themes: [咏秋, 人生感慨]
+    influence: 宋代文赋的奠基之作。
+    confidence: 存疑
+    dispute: 系年有嘉祐四年前后诸说；文本为通行本未逐字核页面。
+    source_ids: [src-ouyangxiu-ji]
+
+  - work_id: shengzhazi-yuanxi
+    title: 生查子·元夕
+    alt_titles: []
+    genre: 词
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 以元夕今昔对照写物是人非的恋情绝唱，语言浅白情深。
+    attribution: 存疑
+    excerpt: 去年元夜时，花市灯如昼。月上柳梢头，人约黄昏后。今年元夜时，月与灯依旧。不见去年人，泪湿春衫袖。
+    text_display: full
+    themes: [恋歌, 元夕]
+    influence: 元宵诗词中传诵最广之作。
+    confidence: 有争议
+    dispute: 作者归属历来有争议——此词又见于朱淑真断肠词，一说朱淑真作，通行选本多题欧阳修，归属至今无定论；创作年代不详；文本为通行本未逐字核页面。
+    source_ids: [src-ouyangxiu-ji]
+
+  - work_id: dielianhua-tingyuan-shenshen
+    title: 蝶恋花·庭院深深深几许
+    alt_titles: []
+    genre: 词
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 深闺怀人之作，庭院深深与泪眼问花花不语为词史名句。
+    attribution: 存疑
+    excerpt: 庭院深深深几许，杨柳堆烟，帘幕无重数。……泪眼问花花不语，乱红飞过秋千去。
+    text_display: excerpt
+    themes: [闺怨]
+    influence: 深婉一路北宋词风的代表文本。
+    confidence: 有争议
+    dispute: 此词六一词与冯延巳阳春集互见，一说冯延巳作，李清照则以为欧阳修作，归属存疑；创作年代不详；文本为通行本未逐字核页面。
+    source_ids: [src-ouyangxiu-ji]
+
+  - work_id: xida-yuanzhen
+    title: 戏答元珍
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: "约1036年"
+      year: 1036
+      precision: 约
+    place: 夷陵
+    context: 贬夷陵期间早春答丁元珍之作，春风疑不到天涯写迁谪之地的苦寒与自持。
+    attribution: 确凿
+    excerpt: 春风疑不到天涯，二月山城未见花。残雪压枝犹有橘，冻雷惊笋欲抽芽。
+    text_display: excerpt
+    themes: [贬谪, 早春]
+    influence: 其律诗代表作，春风不至暗喻君恩远贬的解读历代流传。
+    confidence: 存疑
+    dispute: 系年景祐四年(1037)春在夷陵说为主流；文本为通行本未逐字核页面。
+    source_ids: [src-songshi-vol319, src-ouyangxiu-ji]
+
+  - work_id: yulouchun-zunqian
+    title: 玉楼春·尊前拟把归期说
+    alt_titles: [玉楼春·春思]
+    genre: 词
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 别情词，人生自是有情痴此恨不关风与月翻愁怨为理趣。
+    attribution: 确凿
+    excerpt: 尊前拟把归期说，欲语春容先惨咽。……人生自是有情痴，此恨不关风与月。
+    text_display: excerpt
+    themes: [别情, 人生感慨]
+    influence: 以理入情词的名篇。
+    confidence: 存疑
+    dispute: 创作年代不详；文本为通行本未逐字核页面。
+    source_ids: [src-ouyangxiu-ji]
+
+  - work_id: tasuoxing-houguan
+    title: 踏莎行·候馆梅残
+    alt_titles: []
+    genre: 词
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 行旅别情词，离愁渐远渐无穷与行人更在春山外为结句经典。
+    attribution: 确凿
+    excerpt: 候馆梅残，溪桥柳细，草薰风暖摇征辔。……离愁渐远渐无穷，迢迢不断如春水。……平芜尽处是春山，行人更在春山外。
+    text_display: excerpt
+    themes: [别情, 行旅]
+    influence: 宋词写离愁的典范文本。
+    confidence: 存疑
+    dispute: 创作年代不详；文本为通行本未逐字核页面。
+    source_ids: [src-ouyangxiu-ji]
+
+  - work_id: pengdang-lun
+    title: 朋党论
+    alt_titles: [朋党论上]
+    genre: 论说文
+    date:
+      text: "1044年"
+      year: 1044
+      precision: 精确
+    place: 开封
+    context: 庆历党议正炽时进呈仁宗的政论，为范仲淹等君子之党正名。摘录文字为本传所引原文，实取核对。
+    attribution: 确凿
+    excerpt: 君子以同道为朋，小人以同利为朋，此自然之理也。……故为君但当退小人之伪朋，用君子之真朋，则天下治矣。
+    text_display: excerpt
+    themes: [政论, 党争]
+    influence: 中国政治思想史上论朋党问题的经典文献。
+    confidence: 存疑
+    dispute: 进呈年份从庆历四年(1044)通说；摘录据宋史卷319传内引文。
+    source_ids: [src-songshi-vol319]
+
+  - work_id: ji-shimanqing-wen
+    title: 祭石曼卿文
+    alt_titles: []
+    genre: 祭文
+    date:
+      text: 约庆历皇祐年间
+      year: 1041
+      range_end: 1054
+      precision: 范围
+    place: ""
+    context: 悼祭好友石延年的名文，生而为英死而为灵与不与万物共尽而卓然其不朽者后世之名为传诵警句。
+    attribution: 确凿
+    excerpt: 呜呼曼卿！生而为英，死而为灵。其同乎万物生死者，暂聚之形；不与万物共尽而卓然其不朽者，后世之名。
+    text_display: excerpt
+    themes: [悼亡, 友情]
+    influence: 唐宋祭文名篇。
+    confidence: 存疑
+    dispute: 系年诸家不一仅可断在庆历至皇祐间；文本为通行本未逐字核页面。
+    source_ids: [src-ouyangxiu-ji]
+
+  - work_id: xin-wudaishi
+    title: 新五代史（五代史记）
+    alt_titles: [五代史记]
+    genre: 史书（私修纪传）
+    date:
+      text: 私撰历数十年，身后由朝廷刊行
+      precision: 未知
+    place: ""
+    context: 本传记自撰五代史记法严词约多取春秋遗旨，为二十四史中唐代以后唯一的私修正史。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [史学, 春秋笔法]
+    influence: 私修正史的绝响，义例谨严影响后世史评。
+    source_ids: [src-songshi-vol319]
+
+  - work_id: jigu-lu
+    title: 集古录
+    alt_titles: [集古录跋尾]
+    genre: 金石学著作
+    date:
+      text: 嘉祐末至治平间辑成
+      year: 1060
+      range_end: 1067
+      precision: 范围
+    place: 开封
+    context: 本传记好古嗜学凡周汉以降金石遗文断编残简一切掇拾研稽异同立说于左的可谓之集古录——中国现存最早的金石学专着之一。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [金石学, 考据]
+    influence: 开创金石考据之学，为宋代学术新范式。
+    confidence: 存疑
+    dispute: 编成年份本传未书，从嘉祐末至治平间通说推定。
+    source_ids: [src-songshi-vol319]
+
+footprints:
+  - name: 吉州庐陵故里
+    modern_name: 江西省吉安市永丰县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 出生地按本传庐陵人著录，另有生于绵州说；坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: "约1007年出生前后"
+      year: 1007
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 本传仅称庐陵人，另有生于绵州（父任绵州军事推官）之说。
+    source_ids: [src-songshi-vol319]
+  - name: 西京洛阳
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1031—1034年之间为西京留守推官
+      year: 1031
+      range_end: 1034
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-songshi-vol319]
+  - name: 夷陵
+    modern_name: 湖北省宜昌市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1036—1038年之间贬夷陵令
+      year: 1036
+      range_end: 1038
+      precision: 范围
+    kind: 谪迁
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 夷陵任期起讫据职历推定；贬所取旧案反复观之仰天而叹事见本传。
+    source_ids: [src-songshi-vol319]
+  - name: 汴京开封
+    modern_name: 河南省开封市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1034—1067年间历任职官多在京城
+      year: 1034
+      range_end: 1067
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-songshi-vol319]
+  - name: 滁州醉翁亭
+    modern_name: 安徽省滁州市琅琊山醉翁亭
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1045—1048年之间知滁州，自号醉翁作醉翁亭记
+      year: 1045
+      range_end: 1048
+      precision: 范围
+    kind: 谪迁
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-songshi-vol319]
+  - name: 颍州
+    modern_name: 安徽省阜阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1049年徙颍州，晚年致仕归颍终老
+      year: 1049
+      range_end: 1072
+      precision: 范围
+    kind: 居住
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-songshi-vol319]
+  - name: 青州
+    modern_name: 山东省青州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约1067—1069年之间知青州，请止散青苗钱"
+      year: 1067
+      range_end: 1069
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 青州任期与止散青苗钱的确切年份本传未书，从熙宁初推定。
+    source_ids: [src-songshi-vol319]
+  - name: 蔡州
+    modern_name: 河南省汝南县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约1070—1071年之间徙蔡州，以太子少师致仕"
+      year: 1070
+      range_end: 1071
+      precision: 范围
+    kind: 居住
+    route_order: 8
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 徙蔡州年份据本传叙事次序与致仕前行迹推定。
+    source_ids: [src-songshi-vol319]
+
+relations:
+  - relation_type: 社群
+    target_id: sushi
+    direction: 双向
+    period:
+      text: 嘉祐二年(1057)知贡举前后，提携苏氏父子
+      year: 1057
+      precision: 约
+    evidence: 本传明文：曾巩王安石苏洵洵子轼辙布衣屏处未为人知修即游其声誉谓必显于世；嘉祐二年贡举痛排太学体拔苏轼兄弟于场屋；苏轼叙其文曰论大道似韩愈论事似陆贽记事似司马迁诗赋似李白识者以为知言。座主门生之谊正史两见。
+    inferred: true
+    confidence: 确定
+    source_ids: [src-songshi-vol319]
+  - relation_type: 同僚
+    target_id: wanganshi
+    direction: 双向
+    period:
+      text: 嘉祐至熙宁间同朝，政见终至相左
+      year: 1057
+      range_end: 1069
+      precision: 范围
+    evidence: 本传记修奖引王安石声誉谓必显于世（同卷曾巩附传并载巩导安石于欧阳修）；及守青州又以请止散青苗钱为安石所诋故求归愈切——奖掖与分歧均有实取。
+    confidence: 确定
+    source_ids: [src-songshi-vol319]
+
+reception:
+  - era: 同时代
+    evaluator: 宋仁宗
+    quote: 如欧阳修者，何处得来？
+    text_display: excerpt
+    comment: 本传所记仁宗面赐五品服时顾侍臣语，对其敢言风节的同时代官方评价。
+    source_ids: [src-songshi-vol319]
+  - era: 同时代
+    evaluator: 苏轼
+    quote: 论大道似韩愈，论事似陆贽，记事似司马迁，诗赋似李白。
+    text_display: excerpt
+    comment: 苏轼叙其文语，本传引之并谓识者以为知言，门生视角的权威定评。
+    source_ids: [src-songshi-vol319]
+  - era: 历代批评
+    evaluator: 元·脱脱等《宋史》史臣
+    quote: 唐之文，涉五季而弊，至宋欧阳修又振起之。挽百川之颓波，息千古之邪说。
+    text_display: excerpt
+    comment: 卷319论曰语，将他与韩愈并列为两代文运振起者。「唐宋八大家」并称属明代茅坤唐宋八大家文钞之后世归纳，非宋人自称，本卷如实分层著录。
+    source_ids: [src-songshi-vol319]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦濮议礼制再评价、庆历党争与朋党论的政治思想史意义、新五代史春秋笔法、生查子归属考辨等议题；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 醉翁亭记秋声赋生查子元夕等长期入选中小学语文教材；画荻教子醉翁之意成为家喻户晓的文化典故。教材篇目随学期变动，录入时须另行核验当期篇目。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 无稳定影视代表作可考；网络传播集中于名句与生平段子化叙事，本卷不作事实采信。
+    source_ids: []
+
+sources_used: [src-songshi-vol319, src-ouyangxiu-ji]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。20条年谱、12首作品（含新五代史集古录）、8处足迹、2组关系、5层接受史；宋史卷319与醉翁亭记页面实取，其余单篇注明未逐字核；生查子归属争议、蝶恋花互见归属、青苗异议系年均落dispute}

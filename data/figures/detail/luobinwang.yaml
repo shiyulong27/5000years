@@ -1,0 +1,549 @@
+# 骆宾王全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 证据（维基文库实取） | 结论与置信 |
+# |---|---|---|
+# | 名号籍贯 | 旧唐书卷190上文苑上：骆宾王婺州义乌人 | 确定 |
+# | 少年诗才 | 新唐书卷201文艺上王勃附传：宾王义乌人七岁能赋诗 | 确定 |
+# | 帝京篇绝唱 | 旧唐书：少善属文尤妙于五言诗尝作帝京篇当时以为绝唱 | 确定 |
+# | 早期仕历 | 新唐书：初为道王府属尝使自言所能宾王不答；曆武功主簿；裴行儉為洮州總管表掌書奏不應調長安主簿 | 确定（各任年份正史无载） |
+# | 下狱与贬临海 | 在狱咏蝉并序（维基文库单篇页实取）；贬任两书均有而贬因互异：旧唐书坐贓左遷臨海丞／新唐書數上疏言事下除臨海丞 | 确定被贬；贬因两说并存 |
+# | 讨武曌檄与则天反应 | 新唐书：為敬業傳檄天下斥武后罪后讀但嘻笑至一抔之土未乾六尺之孤安在矍然曰誰為之或以賓王對后曰宰相安得失此人 | 确定（新唐书口径；旧唐书仅言敬业军中书檄皆宾王之词） |
+# | 结局 | 旧唐书：敬業敗伏誅／新唐書：敬業敗賓王亡命不知所之 | 两唐书矛盾，无定论，按异说著录 |
+# | 身后文集 | 旧唐书：則天素重其文遣使求之有兗州人郤雲卿集成十卷盛傳於世；新唐書：中宗昌詔求其文得數百篇 | 确定 |
+# | 四杰并称 | 旧唐书杨炯附段與新唐书王勃段：炯與王勃盧照鄰駱賓王以文詞齊名海內稱為王楊盧駱亦號為四傑；楊炯曰吾愧在盧前恥居王後 | 确定 |
+# | 诗文文本 | 为徐敬业讨武曌檄（古文观止卷七）、在狱咏蝉并序（唐诗三百首系统）、於易水送人／詠鵝／夕次蒲類津（全唐诗卷079）、帝京篇／疇昔篇（卷077）、送鄭少府入遼共賦俠客遠從戎／久客臨海有懷（卷078）均经维基文库单篇页逐字实取 | 公版原文层；异文未深校善本 |
+# | 咏鹅七岁传说 | 正史仅言七岁能赋诗未指咏鹅；全唐诗卷079该篇原注七歲時作；七岁咏鹅故事细节出后世笔记层 | 作品文本确定；七岁本事属传说层存疑 |
+# | 字观光 | 两唐书本传均不载其字；观光之说出自后世（通行谓取义《易·观》观国之光），本次未实取原典 | 笔记层存疑 |
+# | 生年 | 约619／约626／约640诸说并存，均非正史明载 | 异说并存，无定论 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: luobinwang
+
+profile:
+  courtesy_name: 观光（一说；两唐书本传不载其字，此说出后世，待核）
+  art_name: ""
+  aliases: [骆临海]
+  gender: 男
+  ethnicity: ""
+  ancestry: 婺州义乌
+  birthplace: 婺州义乌
+  death_place: 不详（兵败后亡命不知所之）
+  offices: [道王府属, 武功主簿, 长安主簿, 临海丞, 徐敬业府属]
+  fields: [文学]
+  roles: [诗人]
+  summary: 初唐四杰中年辈最长、命运最烈的一位；一篇讨武曌檄撼动女皇，帝京篇当时以为绝唱，而兵败之后亡命不知所之，成为唐代文学史上最大的悬案之一。
+
+timeline:
+  # ── 阶段一：义乌少年与咏鹅传说 ────────────────────
+  - stage: 义乌少年与咏鹅传说
+    stage_order: 1
+    title: 生于婺州义乌
+    date:
+      text: "约626年（一说619年或640年，诸说不一）"
+      year: 626
+      precision: 约
+    place: 婺州义乌
+    summary: 骆宾王生于婺州义乌（今浙江义乌）。籍贯两唐书一致明载，惟生年正史不载，诸家推算相差可达二十余年。
+    confidence: 存疑
+    dispute: 生年诸说不一——约619年说、约626年说、约640年说并行，均系后人据仕历与诗文倒推，无正史依据；本卷从figures.yaml登记的约626年为叙述基准，不作定论。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - stage: 义乌少年与咏鹅传说
+    stage_order: 2
+    title: 七岁能赋诗，咏鹅传说
+    date:
+      text: 幼年（约7岁时），具体年份不可考
+      precision: 未知
+    place: 义乌
+    summary: 新唐书本传记七岁能赋诗；全唐诗卷079咏鹅篇下原注七歲時作，鹅鹅鹅曲项向天歌遂成为其神童之名的标志。惟正史只言能赋诗而未指实此篇。
+    confidence: 存疑
+    dispute: 七岁作咏鹅属传说层——正史无此文，全唐诗原注为清人据传闻所加，故事细节定型于后世笔记；著作权本身亦有讨论。本卷按文本确定、本事存疑著录。
+    source_ids: [src-xts-vol201, src-luobinwangji]
+
+  # ── 阶段二：入道王府与仕途蹇涩 ────────────────────
+  - stage: 入道王府与仕途蹇涩
+    stage_order: 3
+    title: 初为道王府属，不答才所能
+    date:
+      text: 太宗末至高宗初年，具体年份无考
+      precision: 未知
+    place: 长安
+    summary: 新唐书载其初为道王府属，尝使自言所能，宾王不答——道王李元庆命僚属自陈才器以求荐拔，他拒绝自我标榜，傲岸之气见于行事。
+    confidence: 存疑
+    dispute: 入道王府年份正史无载，系据其生平次第推定于高宗初年。
+    source_ids: [src-xts-vol201]
+  - stage: 入道王府与仕途蹇涩
+    stage_order: 4
+    title: 作帝京篇，当时以为绝唱
+    date:
+      text: 高宗朝，具体年份无考
+      precision: 未知
+    place: 长安
+    summary: 旧唐书载其少善属文尤妙于五言诗，尝作帝京篇，当时以为绝唱。此篇以七言歌行铺写帝都气象与贵游骄奢，收束于寒士不遇之慨，是初唐长篇歌行的代表作。
+    source_ids: [src-jts-vol190a, src-luobinwangji]
+  - stage: 入道王府与仕途蹇涩
+    stage_order: 5
+    title: 历武功主簿，自述十年不调
+    date:
+      text: 高宗朝前期，具体年份无考
+      precision: 未知
+    place: 武功
+    summary: 新唐书载历武功主簿。畴昔篇自叙少年重英俠弱歲賤衣冠以下，有十年不調爲貧賤百日屢遷隨倚伏之叹，可见其沉沦下僚之久。
+    confidence: 存疑
+    dispute: 任武功主簿年份正史无载；畴昔篇系自传体长诗，所叙职历次第与正史互证而细节难逐年坐实。
+    source_ids: [src-xts-vol201, src-luobinwangji]
+  - stage: 入道王府与仕途蹇涩
+    stage_order: 6
+    title: 裴行俭表掌书奏不应，调长安主簿
+    date:
+      text: 高宗朝后期（旧唐书系于高宗末）
+      year: 676
+      range_end: 680
+      precision: 范围
+    place: 长安
+    summary: 新唐书载裴行俭为洮州总管表其掌书奏，不应，调长安主簿；旧唐书则径记高宗末为长安主簿。拒不应辟而仍入京畿任卑职，仕路始终偃蹇。
+    confidence: 存疑
+    dispute: 调任长安主簿的年份正史不系年，旧唐书仅称高宗末，此处按通说框定于高宗朝后期数年内。
+    source_ids: [src-xts-vol201, src-jts-vol190a]
+  - stage: 入道王府与仕途蹇涩
+    stage_order: 7
+    title: 远使西南与边塞之行
+    date:
+      text: 高宗朝，具体年份无考
+      precision: 未知
+    place: 蜀中、蒲类一带
+    summary: 畴昔篇自述脂車秣馬辭鄉國縈轡西南使邛僰，又有蜀路何悠悠岷峯阻且修之句；夕次蒲類津写二庭歸望斷萬里客心愁的边地秋色。学界据此通说他曾从军或奉使西北、游宦蜀中。
+    confidence: 存疑
+    dispute: 行迹据自叙诗与边塞诗系地推定，正史不载；从军西域说与入蜀游宦说的路线细节学界尚有分歧，此处仅按诗文自证著录。
+    source_ids: [src-luobinwangji]
+
+  # ── 阶段三：狱中咏蝉与贬临海 ──────────────────────
+  - stage: 狱中咏蝉与贬临海
+    stage_order: 8
+    title: 数上疏言事，触忤武后
+    date:
+      text: 武后当政时期，具体年份无考
+      precision: 未知
+    place: 长安
+    summary: 新唐书载武后时数上疏言事——屡次直言进谏为其招致祸端的前因，与其后下狱、贬黜构成因果链。旧唐书于此节不书，仅以坐赃二字定谳。
+    source_ids: [src-xts-vol201, src-jts-vol190a]
+  - stage: 狱中咏蝉与贬临海
+    stage_order: 9
+    title: 下狱，狱中咏蝉
+    date:
+      text: 约678年（仪凤三年前后，通说）
+      year: 678
+      precision: 约
+    place: 长安御史台狱
+    summary: 在狱咏蝉并序作于狱中。序自称僕失路艱虞遭時徽纆；诗云露重飛難進風多響易沉無人信高潔誰為表予心——以秋蝉自喻，高洁之鸣无人听，成为唐人咏物寄托的典范之作。
+    confidence: 存疑
+    dispute: 系年从学界通说约仪凤三年（678），亦有前后一两年异说；下狱罪名两唐书均未明言（旧唐书坐赃语或即指此案，然无佐证细节），狱之所在据序文禁所指为法厅事推定在长安。
+    source_ids: [src-luobinwangji, src-xts-vol201]
+  - stage: 狱中咏蝉与贬临海
+    stage_order: 10
+    title: 左迁临海丞
+    date:
+      text: 约679年前后（系年推定）
+      year: 679
+      precision: 约
+    place: 临海
+    summary: 出狱后被贬为临海丞——旧唐书作坐贓左遷臨海丞，新唐书作數上疏言事下除臨海丞。两书对贬因的记载截然不同：一为贪赃案，一为直言获罪，后世评价的分野正在于此。
+    confidence: 存疑
+    dispute: 贬因两唐书互异（坐赃／言事），无第三方史料裁断；到任年份系据下狱系年顺推。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - stage: 狱中咏蝉与贬临海
+    stage_order: 11
+    title: 怏怏失志，弃官而去
+    date:
+      text: 约680年前后（临海任内弃官）
+      year: 680
+      precision: 约
+    place: 临海
+    summary: 旧唐书怏怏失誌棄官而去；畴昔篇亦有挂冠裂冕已辭榮南畝東臯事耕鑿之句，久客临海有怀写天涯非日觀地屺望星樓的凄断。弃官之后行踪转入江湖。
+    confidence: 存疑
+    dispute: 弃官年份系据贬任时间顺推，正史不载确年。
+    source_ids: [src-jts-vol190a, src-luobinwangji]
+
+  # ── 阶段四：扬州起兵与讨武曌檄 ────────────────────
+  - stage: 扬州起兵与讨武曌檄
+    stage_order: 12
+    title: 文明中赴扬州，署徐敬业府属
+    date:
+      text: "684年（文明中／光宅元年）"
+      year: 684
+      precision: 精确
+    place: 扬州
+    summary: 文明中与徐敬业于扬州作乱，敬业军中书檄皆宾王之词（旧唐书）；新唐书作徐敬业乱署宾王为府属。被贬弃置十余年的老诗人投入了反对武则天的武装起事。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - stage: 扬州起兵与讨武曌檄
+    stage_order: 13
+    title: 草讨武曌檄，女皇读之动容
+    date:
+      text: "684年"
+      year: 684
+      precision: 精确
+    place: 扬州
+    summary: 为敬业传檄天下斥武后罪。新唐书载后讀但嘻笑至一抔之土未乾六尺之孤安在矍然曰誰為之或以賓王對后曰宰相安得失此人——一篇檄文的敌手成了它最深的知音，此事成为中国文学史上最著名的接受瞬间。
+    source_ids: [src-xts-vol201, src-luobinwangji]
+
+  # ── 阶段五：兵败与下落不明 ────────────────────────
+  - stage: 兵败与下落不明
+    stage_order: 14
+    title: 兵败，结局成谜
+    date:
+      text: "684年末兵败之后"
+      year: 684
+      precision: 约
+    place: 扬州一线
+    summary: 徐敬业兵败，骆宾王的下落从此没有定论：旧唐书作敬業敗伏誅，新唐书作敬業敗賓王亡命不知所之。后世更有投水死、逃匿为僧诸说流传，均不出正史之外。
+    confidence: 存疑
+    dispute: 结局异说并存——被杀（旧唐书伏诛）、逃匿不知所终（新唐书）、投水、为僧诸说均见于史籍或笔记传闻，无一可确证；本卷按两唐书原文并列，绝不写成定论。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - stage: 兵败与下落不明
+    stage_order: 15
+    title: 诏求遗文，郤云卿集成十卷
+    date:
+      text: 武则天当政末至中宗复位之际
+      year: 705
+      range_end: 710
+      precision: 范围
+    place: ""
+    summary: 旧唐书载則天素重其文遣使求之，有兗州人郤雲卿集成十卷盛傳於世；新唐书作中宗昌詔求其文得數百篇。敌对阵营的胜利者回头搜求败党文章——这是对其文学价值的最终裁决。
+    confidence: 存疑
+    dispute: 诏求其文的时间两书系于不同君主名下（则天遣使／中宗下诏），郤云卿编集成书的准确年份亦无载。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+
+works:
+  - work_id: wei-xu-jingye-tao-wuzhao-xi
+    title: 为徐敬业讨武曌檄
+    alt_titles: [代李敬业传檄天下文, 讨武曌檄]
+    genre: 骈文（檄文）
+    date:
+      text: "684年"
+      year: 684
+      precision: 精确
+    place: 扬州
+    context: 徐敬业起兵时的动员檄文，前半历数武氏罪状，后半申明大义号召勤王，气势与辞采兼极，是骈文战斗功能的巅峰示范。
+    attribution: 确凿
+    excerpt: 入门见嫉，蛾眉不肯让人；掩袖工谗，狐媚偏能惑主。……一抔之土未干，六尺之孤何托？……请看今日之域中，竟是谁家之天下！
+    text_display: excerpt
+    themes: [檄文, 讨武, 骈文]
+    influence: 武则天读至六尺之孤一联矍然动容问谁为之，叹宰相安得失此人；檄文作为政治动员文本的经典，千年来传诵不衰。
+    confidence: 确定
+    dispute: 本传引文作六尺之孤安在，檄文通行本作何托，异文并存；篇题与归属历代略有异说（代李敬业／为徐敬业），文本归属无争议。
+    source_ids: [src-luobinwangji]
+
+  - work_id: zai-yu-yong-chan
+    title: 在狱咏蝉（并序）
+    alt_titles: [在狱咏蝉]
+    genre: 五言律诗（并序）
+    date:
+      text: 约678年狱中作（通说）
+      year: 678
+      precision: 约
+    place: 长安狱中
+    context: 序自陈失路艰虞遭时徽纆，诗以秋蝉的高洁难伸自喻，露重风多是处境，无人信高洁是悲音，物我合一的咏物范式。
+    attribution: 确凿
+    excerpt: 西陆蝉声唱，南冠客思侵。……露重飞难进，风多响易沉。无人信高洁，谁为表予心。
+    text_display: excerpt
+    themes: [咏物寄怀, 狱中悲愤, 高洁自守]
+    influence: 与虞世南垂緌饮清露、李商隐本以高难饱并称唐人咏蝉三绝；此首情最激切，入选唐诗三百首。
+    confidence: 确定
+    dispute: 系年从通说约仪凤年间，确年无载。
+    source_ids: [src-luobinwangji]
+
+  - work_id: yu-yi-shui-song-ren
+    title: 于易水送人
+    alt_titles: [於易水送人]
+    genre: 五言绝句
+    date:
+      text: 创作年代无考
+      precision: 未知
+    place: 易水
+    context: 地点别燕丹壮士发冲冠，二十字将荆轲典故与眼前送别叠印，昔日人已没今日水犹寒，寒意由水及人，怀古绝句中的极致简笔。
+    attribution: 确凿
+    excerpt: 此地别燕丹，壮士发冲冠。昔时人已没，今日水犹寒。
+    text_display: full
+    themes: [怀古, 送别, 侠气]
+    influence: 咏荆轲题材的千古名作，今日水犹寒以景结情的典范。
+    source_ids: [src-luobinwangji]
+
+  - work_id: yong-e
+    title: 咏鹅
+    alt_titles: []
+    genre: 五言古诗（儿歌体）
+    date:
+      text: 相传七岁时作（传说层）
+      precision: 未知
+    place: 义乌（传说）
+    context: 鹅鹅鹅曲项向天歌，白毛浮绿水红掌拨清波——状物如画，声色兼备，是中国儿童启蒙背诵的第一批古诗之一。
+    attribution: 存疑
+    excerpt: 鹅，鹅，鹅，曲项向天歌。白毛浮绿水，红掌拨清波。
+    text_display: full
+    themes: [咏物, 童趣]
+    influence: 国民启蒙第一诗级别的传播广度，长期入选义务教育课标推荐背诵篇目。
+    confidence: 存疑
+    dispute: 七岁作咏鹅属传说层——两唐书仅言七岁能赋诗未指实此篇，全唐诗卷079原注七歲時作为清人所加，故事细节定型于后世笔记；本次未实取更早出处原典，故著作权按存疑著录。
+    source_ids: [src-luobinwangji]
+
+  - work_id: di-jing-pian
+    title: 帝京篇
+    alt_titles: []
+    genre: 七言歌行
+    date:
+      text: 高宗朝，具体年份无考
+      precision: 未知
+    place: 长安
+    context: 以千里山河九重城阙起笔，铺陈皇居之壮、贵游之奢，而以谁惜长沙傅独负洛阳才的寒士之叹收束；旧唐书谓当时以为绝唱。
+    attribution: 确凿
+    excerpt: 山河千里国，城阙九重门。不睹皇居壮，安知天子尊。……倏忽抟风生羽翼，须臾失浪委泥沙。
+    text_display: excerpt
+    themes: [帝京, 讽喻, 寒士不遇]
+    influence: 初唐七言歌行的宏制，与卢照邻长安古意同为拓荒之作；绝唱之评见旧唐书本传。
+    source_ids: [src-jts-vol190a, src-luobinwangji]
+
+  - work_id: xi-ci-pu-lei-jin
+    title: 夕次蒲类津
+    alt_titles: [晚泊蒲类]
+    genre: 五言律诗
+    date:
+      text: 创作年代无考（从军塞上期间）
+      precision: 未知
+    place: 蒲类津（边塞）
+    context: 晚风连朔气新月照边秋，竈火通軍壁烽煙上戍樓，边地苦战与封侯之想的对照，是其边塞行旅诗的代表。
+    attribution: 确凿
+    excerpt: 二庭归望断，万里客心愁。……龙庭但苦战，燕颔会封侯。
+    text_display: excerpt
+    themes: [边塞, 行役]
+    influence: 为初唐文人边塞诗提供了写实一笔，亦是其曾赴西北边地的自证材料。
+    confidence: 存疑
+    dispute: 系年与从军背景正史无载，据诗意推定。
+    source_ids: [src-luobinwangji]
+
+  - work_id: song-zheng-shaofu-ru-liao-gong-fu-xiake-yuan-cong-rong
+    title: 送郑少府入辽共赋侠客远从戎
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 创作年代无考
+      precision: 未知
+    place: ""
+    context: 边烽警榆塞侠客度桑干，满月临弓影连星入剑端，以侠客意象壮行色；尾联不学燕丹客空歌易水寒反用荆轲典，与于易水送人互成镜像。
+    attribution: 确凿
+    excerpt: 边烽警榆塞，侠客度桑干。……不学燕丹客，空歌易水寒。
+    text_display: excerpt
+    themes: [送别, 侠客, 边塞]
+    influence: 初唐送人从军诗的名篇，弓影剑端的造语为选家所称。
+    source_ids: [src-luobinwangji]
+
+  - work_id: chou-xi-pian
+    title: 畴昔篇
+    alt_titles: []
+    genre: 七言歌行（自传体长诗）
+    date:
+      text: 晚年追叙平生所作，确切年份无考
+      precision: 未知
+    place: ""
+    context: 自少年重英侠弱岁贱衣冠起，历叙宦游、使蜀、下狱、弃官诸事，适離京兆謗還從御史彈可与下狱事互证，是研究其生平的第一手自叙材料。
+    attribution: 确凿
+    excerpt: 少年重英侠，弱岁贱衣冠。……挂冠裂冕已辞荣，南亩东皋事耕凿。
+    text_display: excerpt
+    themes: [自传, 坎壈, 追忆]
+    influence: 初唐罕见的自传体长篇歌行，篇幅宏巨，为骆宾王生平考证的核心文本。
+    source_ids: [src-luobinwangji]
+
+  - work_id: jiu-ke-lin-hai-you-huai
+    title: 久客临海有怀
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 贬任临海期间，约679—680年（推定）
+      year: 679
+      range_end: 680
+      precision: 范围
+    place: 临海
+    context: 天涯非日观地屺望星楼，写贬所海隅望乡之思；欲知凄断意江上涉安流以流水写无可奈何，是临海岁月的心境存照。
+    attribution: 确凿
+    excerpt: 天涯非日观，地屺望星楼。……欲知凄断意，江上涉安流。
+    text_display: excerpt
+    themes: [贬谪, 望乡]
+    influence: 直接对应其临海丞任期的诗作，贬谪行迹的诗证。
+    confidence: 存疑
+    dispute: 系年据贬任时段推定。
+    source_ids: [src-luobinwangji]
+
+footprints:
+  - name: 婺州义乌
+    modern_name: 浙江省金华市义乌市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 生于此，幼年在义乌度过
+      year: 626
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    confidence: 存疑
+    dispute: 籍贯义乌两唐书明载；出生年份诸说不一。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 道王府属、长安主簿任内及下狱均在长安（高宗朝，年份无考）
+      year: 660
+      range_end: 680
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    confidence: 存疑
+    dispute: 任职序列据新唐书；各任年份正史不系年，狱所在据在狱咏蝉序文禁垣法厅事推定为长安御史台狱。
+    source_ids: [src-xts-vol201, src-jts-vol190a, src-luobinwangji]
+  - name: 蜀中
+    modern_name: 四川省成都市一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 使蜀游宦（畴昔篇自述西南使邛僰），年份无考
+      precision: 未知
+    kind: 游历
+    route_order: 3
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 行迹据畴昔篇诗句自证推定，正史无载。
+    source_ids: [src-luobinwangji]
+  - name: 蒲类津
+    modern_name: 新疆维吾尔自治区哈密市巴里坤湖一带（推定）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 从军塞上经行地（夕次蒲类津），年份无考
+      precision: 未知
+    kind: 游历
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 蒲类津地望学界一般系于蒲类海（今巴里坤湖）一带，系推定；从军年份与身份均无载。
+    source_ids: [src-luobinwangji]
+  - name: 易水
+    modern_name: 河北省保定市易县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 于易水送人所咏之地，到访与否及年份无考
+      precision: 未知
+    kind: 游历
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 诗题示其曾至易水送人，惟系年与缘由无考，是否实地登临仅据诗题推定。
+    source_ids: [src-luobinwangji]
+  - name: 临海
+    modern_name: 浙江省台州市临海市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约679年前后贬任临海丞，任满前弃官
+      year: 679
+      precision: 约
+    kind: 谪迁
+    route_order: 6
+    memorial_only: false
+    confidence: 存疑
+    dispute: 贬任两唐书明载；贬因互异（坐赃／言事），到任与弃官年份系推定。
+    source_ids: [src-jts-vol190a, src-xts-vol201, src-luobinwangji]
+  - name: 扬州
+    modern_name: 江苏省扬州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 684年文明中与徐敬业起兵于此，草讨武曌檄；同年兵败，此后下落不明
+      year: 684
+      precision: 精确
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    confidence: 存疑
+    dispute: 起兵与草檄两唐书明载；兵败后结局异说并存（伏诛／亡命不知所之／投水／为僧），因其下落无定论，本卷不设逝世足迹，生平线止于扬州。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+
+relations:
+  - relation_type: 社群
+    target_id: wangbo
+    direction: 双向
+    period:
+      text: 高宗朝四杰并称形成期（约650—680年之间）
+      year: 650
+      range_end: 680
+      precision: 范围
+    evidence: 旧唐书杨炯附段：炯與王勃盧照鄰駱賓王以文詞齊名海內稱為王楊盧駱亦號為四傑，楊炯聞之謂人曰吾愧在盧前恥居王後；新唐书王勃段同载并称与杨炯语，且载崔融张说评四杰文。并称系同时代公论而非后世追封。
+    confidence: 确定
+    dispute: 四杰并称为文名齐名之目，四人实际交往深浅史料有限；排序王杨卢骆与杨炯自陈之愧耻为文学史著名公案，此处仅按社群关系著录。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+
+reception:
+  - era: 同时代
+    evaluator: 武则天（读讨武曌檄）
+    quote: 宰相安得失此人！
+    text_display: excerpt
+    comment: 新唐书所载女皇读檄至一抔之土未干六尺之孤安在矍然而问、闻出自宾王后的感叹——被讨伐者对讨伐者的最高认可，代表檄文在其时代的即时冲击力。
+    source_ids: [src-xts-vol201]
+  - era: 同时代
+    evaluator: 时论（见旧唐书本传）
+    quote: 尝作《帝京篇》，当时以为绝唱。
+    text_display: excerpt
+    comment: 旧唐书实录的同时代评价；又载则天素重其文遣使求之——政敌政权对其文学价值的持续追认，同时代层面罕见的双重背书。
+    source_ids: [src-jts-vol190a]
+  - era: 历代批评
+    evaluator: 杨炯、崔融、张说（评四杰，见两唐书）
+    quote: 吾愧在卢前，耻居王后。……勃文章宏放，非常人所及。
+    text_display: excerpt
+    comment: 四杰内部排序之争（杨炯愧耻之语）与开元名相张说的再裁定（旧唐书作盈川文思如悬河注水酌之不竭既优于卢亦不减王），奠定四杰并称千年讨论的基本框架；两唐书文字略异，均为公版原文实取。
+    source_ids: [src-jts-vol190a, src-xts-vol201]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦生年三说与结局诸说的考辨、讨武曌檄的文体与政治动员力量、其在五言律诗与七言歌行定型中的贡献、以及郤云卿十卷本文集的流传系统等议题；具体论著引文须取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 咏鹅为国民级启蒙诗，长期位列义务教育课标优秀诗文背诵推荐篇目；在狱咏蝉入选唐诗三百首并常见于中学读本，无人信高洁谁为表予心为咏物寄怀名句；教材篇目随学期变动录入时须另行核验。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 七岁咏鹅神童与一篇檄文骂醒女皇、兵败不知所终的传奇终局使其成为大众文化常见素材；相关影视改编暂不著录具体作品以免权利状态不明。
+    source_ids: []
+
+sources_used: [src-jts-vol190a, src-xts-vol201, src-luobinwangji]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。15条年谱（5阶段）、9件作品（全部经维基文库单篇页逐字实取）、7处足迹、1组关系（社群·初唐四杰并称→wangbo）、6层接受史。生平事实实取旧唐书卷190上、新唐书卷201附传原文。生年三说、结局四说、贬因两书互异、咏鹅七岁传说层、字观光未核原典均落dispute。src-luobinwangji现为占位（失效），建议补URL：檄文 https://zh.wikisource.org/wiki/為徐敬業討武曌檄 等，详见版本报告。"}

@@ -1,0 +1,552 @@
+# 刘禹锡全景详卷（schema v1）
+# 史料审计表（TASK-003 批次一；来源见 data/sources.yaml）：
+#
+# | 事实点 | 旧唐书·卷160(J) | 新唐书·卷168(X) | 结论与置信 |
+# |---|---|---|---|
+# | 家世 | 彭城人，祖云父漵世以儒学称 | 本卷尚未实取（待补核） | 确定(J)；X侧细节待复核 |
+# | 及第 | 贞元九年擢进士第又登宏辞科 | 待补 | 确定(793) |
+# | 杜佑幕 | 从事淮南节度使杜佑幕典记室尤加礼异 | 待补 | 确定 |
+# | 永贞革新 | 叔文知奖以宰相器待；引禹锡柳宗元入禁中图议言无不从；转屯田员外郎判度支盐铁案；窦群奏挟邪乱政；时号二王刘柳 | 待补 | 确定(J单侧详载) |
+# | 初贬 | 坐贬连州刺史在道贬朗州司马；制有逢恩不原之令 | 待补 | 确定 |
+# | 朗州十年 | 唯以文章吟咏陶冶情性；依骚人之作为新辞教巫祝，武陵溪洞夷歌率多禹锡之辞 | 待补 | 确定——竹枝词体之史源 |
+# | 玄都观诗案一 | 元和十年召还作游玄都观咏看花君子诗语涉讥刺复出播州；裴度奏母年八十余改连州 | 待补 | 确定；诗文本「玄都观里桃千树总是刘郎去后栽」 |
+# | 再征与诗案二 | 太和二年自和州征还拜主客郎中；复作游玄都观诗序；引句「种桃道士今何在前度刘郎又到来」 | 待补 | 确定；通行本作「前度刘郎今又来」，异文落dispute |
+# | 白居易评 | 晚年与白居易友善唱和；白序：彭城刘梦得诗豪者也其锋森然少敢当者；集一百三十八首 | 待补 | 确定(J直引白序) |
+# | 卒 | 会昌二年七月卒时年七十一赠户部尚书 | 待补 | 确定(842卒→772生) |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: liuyuxi
+
+profile:
+  courtesy_name: 梦得
+  art_name: ""
+  aliases: [诗豪, 刘宾客]
+  gender: 男
+  ethnicity: ""
+  ancestry: 彭城
+  birthplace: 彭城（一说嘉兴，待核）
+  death_place: 洛阳
+  offices: [监察御史, 屯田员外郎, 连州刺史, 和州刺史, 主客郎中, 苏州刺史, 太子宾客分司]
+  fields: [文学]
+  roles: [诗人]
+  summary: 两遭贬谪二十三年而豪气不减的诗豪，永贞革新的核心成员，「前度刘郎」的硬骨诗人。
+
+timeline:
+  # ── 阶段一：入仕与永贞革新 ──────────────────────────
+  - stage: 入仕与永贞革新
+    stage_order: 1
+    title: 出生于彭城儒学之家
+    date:
+      text: "约772年"
+      year: 772
+      precision: 约
+    place: 彭城
+    summary: 祖云父漵仕历州县令佐世以儒学称。生年由会昌二年卒年七十一倒推，正史系年闭合。
+    source_ids: [src-jts-vol160]
+  - stage: 入仕与永贞革新
+    stage_order: 2
+    title: 贞元九年进士及第，再登宏辞科
+    date:
+      text: "793年"
+      year: 793
+      precision: 精确
+    place: 长安
+    summary: 贞元九年擢进士第，又登宏辞科。精于古文善五言诗今体文章复多才丽。
+    source_ids: [src-jts-vol160]
+  - stage: 入仕与永贞革新
+    stage_order: 3
+    title: 入杜佑淮南幕掌记室
+    date:
+      text: 约795—802年之间
+      year: 795
+      range_end: 802
+      precision: 范围
+    place: 扬州
+    summary: 从事淮南节度使杜佑幕典记室尤加礼异，从佑入朝为监察御史。
+    confidence: 存疑
+    dispute: 幕府起讫年份据职历推定。
+    source_ids: [src-jts-vol160]
+  - stage: 入仕与永贞革新
+    stage_order: 4
+    title: 永贞革新核心，「二王刘柳」
+    date:
+      text: "805年"
+      year: 805
+      precision: 精确
+    place: 长安
+    summary: 王叔文于东宫用事，禹锡尤为叔文知奖以宰相器待之。顺宗即位久疾不任政事禁中文诰皆出于叔文，引禹锡及柳宗元入禁中与之图议言无不从。转屯田员外郎判度支盐铁案。侍御史窦群奏禹锡挟邪乱政不宜在朝群即日罢官。京师人士道路以目时号二王刘柳。
+    source_ids: [src-jts-vol160]
+
+  # ── 阶段二：朗州十年 ──────────────────────────────
+  - stage: 朗州十年
+    stage_order: 5
+    title: 叔文败，贬连州再贬朗州司马
+    date:
+      text: 约805—806年之间
+      year: 805
+      range_end: 806
+      precision: 范围
+    place: 连州、朗州
+    summary: 叔文败坐贬连州刺史，在道贬朗州司马。初禹锡宗元等八人犯众怒宪宗亦怒故再贬，制有逢恩不原之令。
+    source_ids: [src-jts-vol160]
+  - stage: 朗州十年
+    stage_order: 6
+    title: 朗州十年，为巫祝作新辞
+    date:
+      text: 约806—815年之间
+      year: 806
+      range_end: 815
+      precision: 范围
+    place: 朗州（武陵）
+    summary: 地居西南夷士风僻陋无可与言者，唯以文章吟咏陶冶情性。蛮俗好巫每淫祠鼓舞必歌俚辞，禹锡依骚人之作为新辞以教巫祝，故武陵溪洞间夷歌率多禹锡之辞——此即其民歌词体创作的正史史源。
+    source_ids: [src-jts-vol160]
+  - stage: 朗州十年
+    stage_order: 7
+    title: 读张九龄文集而叙怨刺之意
+    date:
+      text: 贬谪期间，确切年份不详
+      precision: 未知
+    place: 湘澧间
+    summary: 积岁在湘澧间郁悒不怡，因读张九龄文集乃叙其意，责曲江建言放臣不宜于善地多徙五溪不毛之乡，托讽禽鸟寄辞草树郁然与骚人同风。
+    source_ids: [src-jts-vol160]
+
+  # ── 阶段三：玄都观诗案与连州 ────────────────────────
+  - stage: 玄都观诗案与连州
+    stage_order: 8
+    title: 元和十年召还，看花诗案复出播州
+    date:
+      text: "815年"
+      year: 815
+      precision: 精确
+    place: 长安
+    summary: 自武陵召还宰相复欲置之郎署，时禹锡作游玄都观咏看花君子诗语涉讥刺执政不悦复出为播州刺史。前篇有玄都观里桃千树总是刘郎去后栽之句。
+    source_ids: [src-jts-vol160]
+  - stage: 玄都观诗案与连州
+    stage_order: 9
+    title: 柳宗元请以柳州易播州，裴度奏老母改连州
+    date:
+      text: "815年"
+      year: 815
+      precision: 精确
+    place: 长安
+    summary: 御史中丞裴度奏禹锡有母年八十余播州西南极远恐伤陛下孝理之风，宪宗改容乃改授连州刺史。同卷柳宗元传并载宗元请以柳州授禹锡自往播州的执友情事。
+    source_ids: [src-jts-vol160]
+  - stage: 玄都观诗案与连州
+    stage_order: 10
+    title: 连州而后连剌数郡十余年
+    date:
+      text: 约815—826年之间
+      year: 815
+      range_end: 826
+      precision: 范围
+    place: 连州、夔州、和州
+    summary: 去京师又十余年连刺数郡。夔州任上依朗州旧习作竹枝新辞，和州任上题陋室。任职次第据职历与诗集编年互证。
+    confidence: 存疑
+    dispute: 夔州和州起讫年份诸家谱系略有出入。
+    source_ids: [src-jts-vol160, src-quantangshi-liuyuxi]
+
+  # ── 阶段四：再征与晚年唱和 ──────────────────────────
+  - stage: 再征与晚年唱和
+    stage_order: 11
+    title: 太和二年征还，再题玄都观
+    date:
+      text: "828年"
+      year: 828
+      precision: 精确
+    place: 长安
+    summary: 自和州刺史征还拜主客郎中。禹锡衔前事未已复作游玄都观诗序：重游兹观荡然无复一树唯兔葵燕麦动摇于春风。后篇有种桃道士今何在前度刘郎又到来之句（通行本作今又来），人嘉其才而薄其行。
+    confidence: 存疑
+    dispute: 后篇结句旧书引作「前度刘郎又到来」通行本作「前度刘郎今又来」，文本异文待核别集底本。
+    source_ids: [src-jts-vol160]
+  - stage: 再征与晚年唱和
+    stage_order: 12
+    title: 礼部郎中集贤学士，出刺苏州赐金紫
+    date:
+      text: 约829—836年之间
+      year: 829
+      range_end: 836
+      precision: 范围
+    place: 长安、苏州
+    summary: 累转礼部郎中集贤院学士；裴度罢知政事禹锡求分司东都不得久处朝列，六月授苏州刺史就赐金紫。
+    source_ids: [src-jts-vol160]
+  - stage: 再征与晚年唱和
+    stage_order: 13
+    title: 与白居易唱和，诗豪之名定于白序
+    date:
+      text: 约826—842年之间
+      year: 826
+      range_end: 842
+      precision: 范围
+    place: 扬州、洛阳
+    summary: 晚年与少傅白居易友善诗笔文章时无在其右者。白序曰彭城刘梦得诗豪者也其锋森然少敢当者，并举沉舟侧畔千帆过病树前头万木春为神妙之句，编唱和一百三十八首附两家文集。
+    source_ids: [src-jts-vol160]
+  - stage: 再征与晚年唱和
+    stage_order: 14
+    title: 卒于洛阳，赠户部尚书
+    date:
+      text: "842年"
+      year: 842
+      precision: 精确
+    place: 洛阳
+    summary: 开成初复为太子宾客分司俄授同州刺史，秩满检校礼部尚书太子宾客分司。会昌二年七月卒时年七十一赠户部尚书。子承雍登进士第亦有才藻。
+    source_ids: [src-jts-vol160]
+
+works:
+  - work_id: qiu-ci
+    title: 秋词二首（其一）
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 朗州贬谪期间，约806—815年之间
+      year: 806
+      range_end: 815
+      precision: 范围
+    place: 朗州
+    context: 自古逢秋悲寂寥我言秋日胜春晴——贬谪逆境中的翻案之作，与其不服输的硬骨互证。
+    attribution: 确凿
+    excerpt: 自古逢秋悲寂寥，我言秋日胜春朝。晴空一鹤排云上，便引诗情到碧霄。
+    text_display: full
+    themes: [咏秋, 抒怀]
+    influence: 一反悲秋传统的宣言式名篇。
+    confidence: 存疑
+    dispute: 系年从朗州时期通说。
+    source_ids: [src-quantangshi-liuyuxi]
+
+  - work_id: xi-kan-hua-junzi
+    title: 元和十年自朗州承召至京戏赠看花诸君子
+    alt_titles: [游玄都观]
+    genre: 七言绝句
+    date:
+      text: "815年"
+      year: 815
+      precision: 精确
+    place: 长安玄都观
+    context: 召还京师游玄都观见道士手植红桃满观如烁晨霞，遂有诗以志一时之事。语涉讥刺执政不悦复出播州——一首诗换十四年再贬。
+    attribution: 确凿
+    excerpt: 紫陌红尘拂面来，无人不道看花回。玄都观里桃千树，尽是刘郎去后栽。
+    text_display: full
+    themes: [讽喻]
+    influence: 中唐诗案与讽刺艺术的标志性文本。
+    confidence: 存疑
+    dispute: 末句通行本作「总是刘郎去后栽」旧书引作「总」字同而序文细节互有详略。
+    source_ids: [src-jts-vol160, src-quantangshi-liuyuxi]
+  - work_id: zai-you-xuandu-guan
+    title: 再游玄都观（并序）
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: "828年"
+      year: 828
+      precision: 精确
+    place: 长安玄都观
+    context: 十四年后以主客郎中再游兹观荡然无复一树唯兔葵燕麦动摇于春风，因再题二十八字以俟后游。旧书引结句作前度刘郎又到来。
+    attribution: 确凿
+    excerpt: 百亩庭中半是苔，桃花净尽菜花开。种桃道士归何处？前度刘郎今又来。
+    text_display: full
+    themes: [讽喻, 抒怀]
+    influence: 不屈人格的二次宣言。
+    confidence: 存疑
+    dispute: 结句异文：通行本「今又来」与旧唐书引文「又到来」并存。
+    source_ids: [src-jts-vol160, src-quantangshi-liuyuxi]
+  - work_id: zhu-zhi-ci
+    title: 竹枝词二首（其一）
+    alt_titles: []
+    genre: 乐府（竹枝）
+    date:
+      text: 夔州刺史任上约822—824年之间
+      year: 822
+      range_end: 824
+      precision: 范围
+    place: 夔州
+    context: 朗州教巫祝新辞经验的延续与升华。东边日出西边雨道是无晴却有晴以民歌谐音写情。
+    attribution: 确凿
+    excerpt: 杨柳青青江水平，闻郎江上唱歌声。东边日出西边雨，道是无晴却有晴。
+    text_display: full
+    themes: [民歌, 恋歌]
+    influence: 文人拟民歌体的巅峰，竹枝词自此成体。
+    confidence: 存疑
+    dispute: 作地有夔州说为主流；系年据职历推定。
+    source_ids: [src-quantangshi-liuyuxi, src-jts-vol160]
+
+  - work_id: chou-le-tian
+    title: 酬乐天扬州初逢席上见赠
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 约826年冬
+      year: 826
+      precision: 约
+    place: 扬州
+    context: 罢和州刺史返洛阳与罢苏州刺史的白居易相逢扬州，白有赠诗禹锡酬之。沉舟侧畔千帆过病树前头万木春被白居易序举为神妙。
+    attribution: 确凿
+    excerpt: 巴山楚水凄凉地，二十三年弃置身。……沉舟侧畔千帆过，病树前头万木春。今日听君歌一曲，暂凭杯酒长精神。
+    text_display: full
+    themes: [酬答, 抒怀]
+    influence: 沉舟侧畔一联为逆境自励的千古名句。
+    confidence: 存疑
+    dispute: 相逢地点扬州从通行编年说；「二十三年」起算点有自永贞元年与自朗州贬两解。
+    source_ids: [src-jts-vol160, src-quantangshi-liuyuxi]
+  - work_id: wu-yi-xiang
+    title: 乌衣巷（金陵五题之一）
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 和州刺史任上约824—826年之间
+      year: 824
+      range_end: 826
+      precision: 范围
+    place: 和州（咏金陵）
+    context: 金陵五题之一。旧时王谢堂前燕飞入寻常百姓家以燕子的去向写尽门阀兴亡。
+    attribution: 确凿
+    excerpt: 朱雀桥边野草花，乌衣巷口夕阳斜。旧时王谢堂前燕，飞入寻常百姓家。
+    text_display: full
+    themes: [怀古]
+    influence: 咏史怀古组诗的巅峰之作，江南文士称为佳作（旧书）。
+    confidence: 存疑
+    dispute: 五题创作于和州任上为主流说，确切年份无载。
+    source_ids: [src-jts-vol160, src-quantangshi-liuyuxi]
+  - work_id: shi-tou-cheng
+    title: 石头城（金陵五题之一）
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 和州刺史任上约824—826年之间
+      year: 824
+      range_end: 826
+      precision: 范围
+    place: 和州（咏金陵）
+    context: 山围故国周遭在潮打空城寂寞回。淮水东边旧时月夜深还过女墙来。
+    attribution: 确凿
+    excerpt: 山围故国周遭在，潮打空城寂寞回。淮水东边旧时月，夜深还过女墙来。
+    text_display: full
+    themes: [怀古]
+    influence: 以月写兴亡的怀古绝唱。
+    source_ids: [src-quantangshi-liuyuxi]
+  - work_id: lou-shi-ming
+    title: 陋室铭
+    alt_titles: []
+    genre: 铭
+    date:
+      text: 和州刺史任上说为主流，年代不详
+      precision: 未知
+    place: 和州
+    context: 斯是陋室惟吾德馨。苔痕上阶绿草色入帘青。安贫乐道的居室自铭。
+    attribution: 存疑
+    excerpt: 山不在高，有仙则名。水不在深，有龙则灵。斯是陋室，惟吾德馨。
+    text_display: excerpt
+    themes: [安贫乐道]
+    influence: 文人清贫自守的经典文本。
+    confidence: 有争议
+    dispute: 作者归属主流定为刘禹锡然历代文献著录有异文异题之疑，作年和州说系后世推定；正史无载。
+    source_ids: [src-quantangshi-liuyuxi]
+
+  - work_id: wang-dongting
+    title: 望洞庭
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 长庆年间赴任途中，约824年前后
+      year: 824
+      precision: 约
+    place: 洞庭湖
+    context: 湖光秋月两相和潭面无风镜未磨。遥望洞庭山水翠白银盘里一青螺。
+    attribution: 确凿
+    excerpt: 湖光秋月两相和，潭面无风镜未磨。遥望洞庭山水翠，白银盘里一青螺。
+    text_display: full
+    themes: [山水]
+    influence: 以器物喻山水的巧思名篇。
+    confidence: 存疑
+    dispute: 系年有长庆四年秋赴和州说为主流，亦有他解。
+    source_ids: [src-quantangshi-liuyuxi]
+
+footprints:
+  - name: 彭城（祖籍）
+    modern_name: 江苏省徐州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 祖籍；本人出生地另有嘉兴说待核
+      precision: 未知
+    kind: 居住
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 正史称彭城人，学界另有生于嘉兴说。
+    source_ids: [src-jts-vol160]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 及第、革新与两度召还所在
+      year: 793
+      range_end: 828
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-jts-vol160]
+  - name: 朗州
+    modern_name: 湖南省常德市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约806—815年之间贬所十年
+      year: 806
+      range_end: 815
+      precision: 范围
+    kind: 谪迁
+    route_order: 3
+    memorial_only: false
+    source_ids: [src-jts-vol160]
+  - name: 连州
+    modern_name: 广东省连州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约815年起刺连州数年
+      year: 815
+      precision: 约
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-jts-vol160]
+  - name: 夔州
+    modern_name: 重庆市奉节县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约821—824年之间刺夔州作竹枝词
+      year: 821
+      range_end: 824
+      precision: 范围
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 夔州起讫年份诸家谱系略有出入。
+    source_ids: [src-quantangshi-liuyuxi, src-jts-vol160]
+
+  - name: 和州
+    modern_name: 安徽省和县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约824—826年之间刺和州，咏金陵五题
+      year: 824
+      range_end: 826
+      precision: 范围
+    kind: 任职
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    source_ids: [src-jts-vol160]
+  - name: 苏州
+    modern_name: 江苏省苏州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约832—835年之间刺苏州赐金紫
+      year: 832
+      range_end: 835
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    source_ids: [src-jts-vol160]
+  - name: 洛阳
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 太子宾客分司东都，晚年定居终老
+      year: 836
+      range_end: 842
+      precision: 范围
+    kind: 居住
+    route_order: 8
+    memorial_only: false
+    source_ids: [src-jts-vol160]
+
+relations:
+  - relation_type: 挚友
+    target_id: baijuyi
+    direction: 双向
+    period:
+      text: 约826年扬州初逢至842年禹锡卒，唱和不断
+      year: 826
+      range_end: 842
+      precision: 范围
+    evidence: 旧唐书载晚年与白居易友善诗笔文章时无在其右者；白序称彭城刘梦得诗豪者也其锋森然少敢当者，编唱和一百三十八首附两家文集，并举沉舟侧畔一联为神妙。
+    source_ids: [src-jts-vol160]
+  - relation_type: 社群
+    target_id: dufu
+    direction: 双向
+    period:
+      text: 无直接交往记载；同为贬谪诗史脉络的对照人物
+      precision: 未知
+    evidence: 刘杜无交往。此条实为占位性社群关系，建议后续批次引入柳宗元（liuzongyuan）后以「执友」条替换——旧书柳传载柳请以柳州易播州事为二人生死之交的正史记述。
+    inferred: true
+    confidence: 有争议
+    dispute: 本条不应长期保留：目标人物入库后应删除并以柳宗元条目替代。
+    source_ids: []
+
+reception:
+  - era: 同时代
+    evaluator: 白居易
+    quote: 彭城刘梦得，诗豪者也。其锋森然，少敢当者。
+    text_display: excerpt
+    comment: 白居易刘白唱和集序语（旧唐书直引），诗豪之称即出于此。
+    source_ids: [src-jts-vol160]
+  - era: 同时代
+    evaluator: 江南文士与公卿大僚
+    quote: ""
+    text_display: none
+    comment: 旧书载梦得尝为西塞怀古金陵五题等诗江南文士称为佳作虽名位不达公卿大僚多与之交。
+    source_ids: [src-jts-vol160]
+  - era: 历代批评
+    evaluator: 旧唐书史臣
+    quote: 贞元、太和之间，以文学耸动搢绅之伍者，宗元、禹锡而已。……而蹈道不谨，昵比小人，自致流离。
+    text_display: excerpt
+    comment: 五代史臣对刘柳才高而党败的双重评价，代表传统史学对其政治选择的批评立场，与后世对其诗歌的推崇并存。
+    source_ids: [src-jts-vol160]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 研究聚焦永贞革新的政治评价再检讨、竹枝词与民歌关系、玄都观两诗的自传性结构等议题；具体论著引文须取得许可后补入。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 陋室铭酬乐天望洞庭乌衣巷秋词等长期入选语文教材；前度刘郎与诗豪形象成为坚韧人格的文化符号。教材篇目随学期变动录入时须另行核验。
+    source_ids: []
+
+sources_used: [src-jts-vol160, src-quantangshi-liuyuxi]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。14条年谱、9首作品、8处足迹、2组关系、5层接受史；新唐书卷168待补核已在审计表标注；陋室铭归属争议如实记录}

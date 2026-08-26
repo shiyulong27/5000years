@@ -1,0 +1,517 @@
+# 姜夔全景详卷（schema v1）
+# 史料分层审计表（本卷关键：宋史无传，材料全靠本集自序＋笔记层＋学术层）：
+#
+# | 事实点 | 材料层 | 结论与置信 |
+# |---|---|---|
+# | 生卒年 | 宋史无传；学界由行迹推定 | 约1155—约1221，均系推定（L1 已用 birth_note/death_note 方案） |
+# | 籍贯 | 本集署「番阳姜夔」（白石道人歌曲疏证卷五首页）；另有德兴说 | 饶州鄱阳为主流，记有争议 |
+# | 扬州慢系年 | 词前小序自证：淳熙丙申至日予过维扬…千岩老人以为有黍离之悲 | 淳熙三年(1176)，精确（小序自证） |
+# | 点绛唇系年 | 词题自证：丁未冬过吴松作 | 淳熙十四年(1187)，精确 |
+# | 暗香疏影系年 | 小序自证：辛亥之冬予载雪诣石湖 | 绍熙二年(1191)，精确 |
+# | 齐天乐系年 | 小序自证：丙辰岁与张功父会饮张达可堂 | 庆元二年(1196)，精确 |
+# | 琵琶仙系年 | 小序自证：己酉岁予与萧时父载酒南郭 | 淳熙十六年(1189)，精确 |
+# | 大乐议 | 宋史·乐志六：「书奏，诏付太常」（转引层，本卷未直接核验原页） | 庆元三年(1197)进大乐议，存疑 |
+# | 陈郁藏一话腴评语 | 「襟期洒落如晋宋间人」等，仅得后世词学文献转引 | 记录但落 dispute |
+# | 张炎词源评语 | 「词要清空不要质实…姜白石词如野云孤飞去留无迹」，ctext 白石道人歌曲疏证附词源条实取 | 公版原文，确定 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: jiangkui
+
+profile:
+  courtesy_name: 尧章
+  art_name: 白石道人
+  aliases: [姜白石]
+  gender: 男
+  ethnicity: ""
+  ancestry: 饶州鄱阳（本集署番阳姜夔；另有德兴说）
+  birthplace: 饶州鄱阳（推定）
+  death_place: 杭州（推定）
+  offices: [终身布衣（庆元间进大乐议、获免解，试礼部不第）]
+  fields: [文学]
+  roles: [词人, 音乐家]
+  summary: 南宋骚雅词派宗师兼音乐家，终身布衣而以十七首自度曲旁谱传世，为宋代词乐留下唯一成体系的乐谱文献。
+
+timeline:
+  # ── 阶段一：鄱阳出身与早岁孤贫 ──────────────────────
+  - stage: 鄱阳出身与早岁孤贫
+    stage_order: 1
+    title: 生于饶州鄱阳
+    date:
+      text: "约1155年"
+      year: 1155
+      precision: 约
+    place: 饶州鄱阳
+    summary: 本集署番阳姜夔，后世通称饶州鄱阳（今江西鄱阳）人，另有德兴说。生年无任何直接记载，约1155系学界依行迹倒推。
+    confidence: 存疑
+    dispute: 生年均系推定；籍贯另有德兴说并立。
+    source_ids: [src-baishidaoren]
+  - stage: 鄱阳出身与早岁孤贫
+    stage_order: 2
+    title: 幼年随宦汉阳，父卒后依姊长大
+    date:
+      text: 约幼年至二十余岁之间
+      precision: 未知
+    place: 汉阳
+    summary: 其父尝官汉阳，夔幼年随宦；父死后流寓湘鄂间，依嫁于汉阳的姐姐长大，自称早岁孤贫。具体年份正史笔记俱无载。
+    confidence: 存疑
+    dispute: 随宦与依姊的起讫年代全凭后世年谱推排，本卷不作系年。
+    source_ids: []
+  - stage: 鄱阳出身与早岁孤贫
+    stage_order: 3
+    title: 北游淮楚，南历潇湘
+    date:
+      text: 约二十岁后漫游江淮湖湘之间
+      precision: 未知
+    place: 江淮、湖湘
+    summary: 早年孤贫而浪迹江湖，往来淮楚潇湘之间，此期诗作词作为日后声名之基。行程细节散见本集诗文而无编年。
+    confidence: 存疑
+    dispute: 漫游路线据作品地名归纳，无独立史料佐证。
+    source_ids: []
+
+  # ── 阶段二：过扬州自度曲 ────────────────────────────
+  - stage: 过扬州自度曲
+    stage_order: 4
+    title: 淳熙丙申冬至过维扬，自度扬州慢
+    date:
+      text: 淳熙三年冬至日（1176）
+      year: 1176
+      precision: 精确
+    place: 扬州
+    summary: 词前小序自证：淳熙丙申至日予过维扬，夜雪初霁荠麦弥望，入其城则四顾萧条寒水自碧暮色渐起戍角悲吟，因自度此曲，千岩老人以为有黍离之悲也。金兵屡南侵后的扬州劫景由此定格为词史名篇。
+    source_ids: [src-baishidaoren]
+
+  # ── 阶段三：依萧德藻居湖州与交游 ────────────────────
+  - stage: 依萧德藻居湖州与交游
+    stage_order: 5
+    title: 千岩老人萧德藻赏识，以侄女妻之
+    date:
+      text: 约1186年前后
+      year: 1186
+      precision: 约
+    place: 长沙
+    summary: 诗人萧德藻（号千岩老人）激赏其才，约为淳熙十三年前后相识于长沙，遂以兄女妻之。扬州慢小序中千岩老人语即出此人。
+    confidence: 存疑
+    dispute: 定交与联姻确年系学界通说推排；婚事记载出自后世年谱传记层。
+    source_ids: []
+  - stage: 依萧德藻居湖州与交游
+    stage_order: 6
+    title: 随萧德藻移居湖州，卜居苕溪之上
+    date:
+      text: 约1187年起
+      year: 1187
+      precision: 约
+    place: 湖州苕溪
+    summary: 依萧氏寓居湖州，卜居苕溪之上，与弁山白石洞天为邻，因号白石道人。此后往来苏杭间。同年丁未冬过吴松作点绛唇，有第四桥边拟共天随住句，致意隐居于此的唐贤陆龟蒙。
+    confidence: 存疑
+    dispute: 移居确年从通说；白石道人之号的得名缘由另有异说。
+    source_ids: [src-baishidaoren]
+  - stage: 依萧德藻居湖州与交游
+    stage_order: 7
+    title: 得杨万里范成大赏爱，出入石湖
+    date:
+      text: 约1186—1191年之间
+      year: 1186
+      range_end: 1191
+      precision: 范围
+    place: 杭州、苏州石湖
+    summary: 由萧德藻之介结识杨万里、范成大一辈前辈诗人，杨万里称其于文无所不工甚似陆天随，范成大称其翰墨人品皆似晋宋之雅士。绍熙辛亥之冬载雪诣石湖，止既月授简索句，作暗香疏影两曲，石湖把玩不已使工妓肄习之。
+    confidence: 存疑
+    dispute: 二家评语见后世词学文献转引，原始出处页面未直接核验；定交先后亦据交游网络推定。
+    source_ids: [src-baishidaoren]
+  - stage: 依萧德藻居湖州与交游
+    stage_order: 8
+    title: 己酉吴兴载酒，感遇成琵琶仙
+    date:
+      text: 淳熙十六年（1189）
+      year: 1189
+      precision: 精确
+    place: 吴兴（湖州）
+    summary: 小序自证：己酉岁予与萧时父载酒南郭感遇成歌。舟中误认歌女似旧曲桃根桃叶而生怀人之思，为自创新调琵琶仙。
+    source_ids: [src-baishidaoren]
+  - stage: 依萧德藻居湖州与交游
+    stage_order: 9
+    title: 客居合肥与寄怀之作
+    date:
+      text: 绍熙二年前后数年间往返
+      year: 1190
+      range_end: 1192
+      precision: 范围
+    place: 合肥
+    summary: 自度曲淡黄柳小序自述客居合肥南城赤阑桥之西，巷陌凄凉与江左异，唯柳色夹道依依可怜，因度此阕以纾客怀。合肥情事为其词中怀人主题的重要背景。
+    confidence: 存疑
+    dispute: 往返合肥的次数与情事细节均系后人考索，本卷仅据小序著录客居事实。
+    source_ids: [src-baishidaoren]
+
+  # ── 阶段四：进大乐议与杭州晚年 ──────────────────────
+  - stage: 进大乐议与杭州晚年
+    stage_order: 10
+    title: 丙辰岁与张功甫会饮赋齐天乐
+    date:
+      text: 庆元二年秋（1196）
+      year: 1196
+      precision: 精确
+    place: 杭州
+    summary: 小序自证：丙辰岁与张功甫会饮张达可之堂，闻屋壁间蟋蟀有声，功甫约予同赋以授歌者。庾郎先自吟愁赋一阕为咏物词名篇。
+    source_ids: [src-baishidaoren]
+  - stage: 进大乐议与杭州晚年
+    stage_order: 11
+    title: 进大乐议论雅乐，免解试礼部不第
+    date:
+      text: 约1197—1200年之间
+      year: 1197
+      range_end: 1200
+      precision: 范围
+    place: 杭州
+    summary: 以布衣上书论雅乐，进大乐议并献琴瑟考古图，时南渡后乐典久亡，其议诏付太常；朝廷曾予免解应试礼部而不第，终身布衣如故。此为其一生唯一一次接近仕途的事件。
+    confidence: 存疑
+    dispute: 上书确年在庆元三年前后诸说不一；免解试礼部不第事出自宋史乐志与笔记层，细节未经本卷直接核验原页。
+    source_ids: []
+  - stage: 进大乐议与杭州晚年
+    stage_order: 12
+    title: 移居杭州，依张鉴十年
+    date:
+      text: 约庆元、嘉泰之交起，前后十年
+      year: 1200
+      range_end: 1210
+      precision: 范围
+    place: 杭州
+    summary: 晚岁移居杭州，贵胄张鉴（字平甫）怜其贫与之分资，相依近十年；张鉴死后生计益窘。依人岁月与迁居确年俱系年谱推排。
+    confidence: 存疑
+    dispute: 张鉴资助始末与十年之数出自传记层材料，无一手文献可核。
+    source_ids: []
+  - stage: 进大乐议与杭州晚年
+    stage_order: 13
+    title: 贫病旅食浙东，卒于杭州
+    date:
+      text: "约1221年"
+      year: 1221
+      precision: 约
+    place: 杭州
+    summary: 张鉴殁后贫病交加，旅食浙东，尝客游嘉兴金陵等地；约嘉定十四年前后卒于杭州，葬钱塘门外。身后赖友人营葬之说流传而葬地细节难考。
+    confidence: 存疑
+    dispute: 卒年约1221系学界通说，亦有1209与1224诸异说；卒地为杭州推定，营葬细节出自笔记传记层不足确证。
+    source_ids: []
+
+works:
+  - work_id: yangzhou-man
+    title: 扬州慢·淮左名都
+    alt_titles: [扬州慢]
+    genre: 词（自度曲，中吕宫）
+    date:
+      text: 淳熙三年冬至日（1176）
+      year: 1176
+      precision: 精确
+    place: 扬州
+    context: 自序纪年：淳熙丙申至日予过维扬，夜雪初霁荠麦弥望……予怀怆然感慨今昔，因自度此曲，千岩老人以为有黍离之悲也。写金兵南侵后扬州的废池乔木清角吹寒，为其最早的自度曲。
+    attribution: 确凿
+    excerpt: 二十四桥仍在，波心荡、冷月无声。念桥边红药，年年知为谁生？
+    text_display: excerpt
+    themes: [黍离之悲, 怀古]
+    influence: 自创词牌而小序自带系年证据，成为姜词编年的锚点；黍离之悲自此成为咏兵燹后城市荒残的经典范式。
+    source_ids: [src-baishidaoren]
+
+  - work_id: an-xiang
+    title: 暗香·旧时月色
+    alt_titles: [暗香]
+    genre: 词（自度曲，仙吕宫）
+    date:
+      text: 绍熙二年冬（1191）
+      year: 1191
+      precision: 精确
+    place: 苏州石湖
+    context: 自度曲。小序自证：辛亥之冬予载雪诣石湖，止既月授简索句且徵新声，作此两曲，石湖把玩不已，使工妓肄习之音节谐婉，乃名之曰暗香疏影。
+    attribution: 确凿
+    excerpt: 旧时月色，算几番照我，梅边吹笛？唤起玉人，不管清寒与攀摘。……长记曾携手处，千树压、西湖寒碧。
+    text_display: excerpt
+    themes: [咏梅, 忆旧]
+    influence: 咏梅词双璧之一，张炎词源举为清空骚雅的范例；调名取林逋暗香浮动月黄昏意。
+    source_ids: [src-baishidaoren]
+  - work_id: shu-ying
+    title: 疏影·苔枝缀玉
+    alt_titles: [疏影]
+    genre: 词（自度曲，仙吕宫）
+    date:
+      text: 绍熙二年冬（1191）
+      year: 1191
+      precision: 精确
+    place: 苏州石湖
+    context: 暗香姊妹篇，同出辛亥石湖之会小序。咏苔梅而用昭君佩环、寿阳梅妆诸典，写尽幽独身世之感。
+    attribution: 确凿
+    excerpt: 苔枝缀玉，有翠禽小小，枝上同宿。客里相逢，篱角黄昏，无言自倚修竹。
+    text_display: excerpt
+    themes: [咏梅, 幽独]
+    influence: 与暗香并为骚雅词派典范文本，历代和作蜂起。
+    source_ids: [src-baishidaoren]
+  - work_id: dianjiangchun-dingwei
+    title: 点绛唇·丁未冬过吴松作
+    alt_titles: [点绛唇·燕雁无心]
+    genre: 词
+    date:
+      text: 淳熙十四年冬（1187）
+      year: 1187
+      precision: 精确
+    place: 吴松（今苏州吴江一带）
+    context: 词题自带系年：丁未冬过吴松作。时往返湖苏之间，经晚唐陆龟蒙隐居故地而凭阑怀古，拟共天随住致其心仪。
+    attribution: 确凿
+    excerpt: 燕雁无心，太湖西畔随云去。数峰清苦。商略黄昏雨。第四桥边，拟共天随住。今何许。凭阑怀古。残柳参差舞。
+    text_display: full
+    themes: [怀古, 羁旅]
+    influence: 四十一字小令而苍茫无尽，被推为南宋小令绝唱之一。
+    source_ids: [src-baishidaoren]
+  - work_id: qitianle-qishuai
+    title: 齐天乐·蟋蟀
+    alt_titles: [齐天乐·庾郎先自吟愁赋]
+    genre: 词
+    date:
+      text: 庆元二年秋（1196）
+      year: 1196
+      precision: 精确
+    place: 杭州
+    context: 小序自证：丙辰岁与张功父会饮张达可之堂，闻屋壁间蟋蟀有声，功甫约予同赋以授歌者。以虫声串起思妇、迁客、离宫吊月诸般人间哀怨。
+    attribution: 确凿
+    excerpt: 庾郎先自吟愁赋，凄凄更闻私语。露湿铜铺，苔侵石井，都是曾听伊处。……写入琴丝，一声声更苦。
+    text_display: excerpt
+    themes: [咏物, 秋思]
+    influence: 咏蟋蟀词的压卷之作，笑篱落呼灯以儿女之乐反衬有心人之苦为论词者津津乐道。
+    source_ids: [src-baishidaoren]
+  - work_id: pipaxian
+    title: 琵琶仙·双桨来时
+    alt_titles: [琵琶仙]
+    genre: 词（自度曲）
+    date:
+      text: 淳熙十六年（1189）
+      year: 1189
+      precision: 精确
+    place: 吴兴（湖州）
+    context: 自度曲。小序自证：《吴都赋》云户藏烟浦家具画船，唯吴兴为然……己酉岁予与萧时父载酒南郭感遇成歌。舟中误认似旧曲桃根桃叶之人而生怀人之思。
+    attribution: 确凿
+    excerpt: 双桨来时，有人似、旧曲桃根桃叶。歌扇轻约飞花，蛾眉正奇绝。……十里扬州，三生杜牧，前事休说。
+    text_display: excerpt
+    themes: [怀人, 春游]
+    influence: 张炎词源许其离情当在全在情景交炼得言外意。
+    source_ids: [src-baishidaoren]
+  - work_id: danhuang-liu
+    title: 淡黄柳·空城晓角
+    alt_titles: [淡黄柳]
+    genre: 词（自度曲）
+    date:
+      text: 绍熙二年春（1191）
+      year: 1191
+      precision: 约
+    place: 合肥
+    context: 自度曲。小序自证：客居合肥南城赤阑桥之西，巷陌凄凉与江左异，唯柳色夹道依依可怜，因度此阕以纾客怀。
+    attribution: 确凿
+    excerpt: 空城晓角，吹入垂杨陌。马上单衣寒恻恻。看尽鹅黄嫩绿，都是江南旧相识。……燕燕飞来，问春何在？唯有池塘自碧。
+    text_display: excerpt
+    themes: [客怀, 柳]
+    influence: 边城合肥的空城意象与其黍离之悲一脉相通。
+    confidence: 存疑
+    dispute: 系年从绍熙二年春通说。
+    source_ids: [src-baishidaoren]
+  - work_id: changting-yuanman
+    title: 长亭怨慢·渐吹尽枝头香絮
+    alt_titles: [长亭怨慢]
+    genre: 词（自度曲，中吕宫）
+    date:
+      text: 约1174—1189年之间（淳熙年间）
+      year: 1174
+      range_end: 1189
+      precision: 范围
+    place: 江淮一带（推定）
+    context: 自度曲。小序自陈：予颇喜自制曲，初率意为长短句然后协以律，故前后阕多不同；又引桓大司马昔年种柳语谓深爱之。树若有情时会得青青如此为千古奇语。
+    attribution: 确凿
+    excerpt: 渐吹尽、枝头香絮，是处人家，绿深门户。……阅人多矣，谁得似长亭树？树若有情时，不会得青青如此！
+    text_display: excerpt
+    themes: [离别, 柳]
+    influence: 自度曲旁谱今存（见白石道人歌曲），可据以复原宋代词乐旋律，为音乐史孤本级材料。
+    confidence: 存疑
+    dispute: 创作年代无小序纪年，系年诸家有分歧。
+    source_ids: [src-baishidaoren]
+  - work_id: chuye-gu-shihu
+    title: 除夜自石湖归苕溪十首（其一）
+    alt_titles: [除夜自石湖归苕溪]
+    genre: 七言绝句（组诗）
+    date:
+      text: 绍熙二年岁末除夕（辛亥冬，公历已入1192年初）
+      year: 1191
+      range_end: 1192
+      precision: 范围
+    place: 苏州至湖州苕溪水路
+    context: 辛亥冬辞别范成大石湖别墅，除夜乘舟归苕溪，一路雪消梅放而成组诗十首，杨万里盛赏其有裁云缝月之妙思（此评语见转引层）。其一写细草穿沙一夜梅香，萧散简远。
+    attribution: 确凿
+    excerpt: 细草穿沙雪半销，吴宫烟冷水迢迢。梅花竹里无人见，一夜吹香过石桥。
+    text_display: full
+    themes: [羁旅, 梅]
+    influence: 组诗为其诗名代表作，与暗香疏影同一行旅的词、诗互证。
+    confidence: 存疑
+    dispute: 除夕跨辛壬之际，系年有1191与1192两算；杨万里评语系后世转引未经直接核验。
+    source_ids: [src-baishidaoren]
+
+footprints:
+  - name: 饶州鄱阳
+    modern_name: 江西省鄱阳县
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 籍贯层面的故里推定，坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: "约1155年生"
+      year: 1155
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 出生地依籍贯推定为鄱阳，另有德兴说。
+    source_ids: [src-baishidaoren]
+  - name: 汉阳
+    modern_name: 湖北省武汉市汉阳区
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 幼年随宦与依姊而居的地望据本集诗文与后世年谱推定，坐标暂缺
+    visit_date:
+      text: 幼年至青年，具体年份不详
+      precision: 未知
+    kind: 居住
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 随宦汉阳、父卒依姊事无编年史料。
+    source_ids: []
+  - name: 扬州
+    modern_name: 江苏省扬州市
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 淳熙三年冬至日过维扬
+      year: 1176
+      precision: 精确
+    kind: 游历
+    route_order: 3
+    memorial_only: false
+    source_ids: [src-baishidaoren]
+  - name: 湖州苕溪
+    modern_name: 浙江省湖州市
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1187年起卜居，往来多年
+      year: 1187
+      precision: 约
+    kind: 居住
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    source_ids: [src-baishidaoren]
+  - name: 苏州石湖
+    modern_name: 江苏省苏州市西南石湖景区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 绍熙二年辛亥之冬载雪诣石湖，止既月
+      year: 1191
+      precision: 精确
+    kind: 游历
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-baishidaoren]
+  - name: 合肥
+    modern_name: 安徽省合肥市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 绍熙二年前后客居
+      year: 1191
+      precision: 约
+    kind: 游历
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 客居次数与时限系据淡黄柳等词小序推定。
+    source_ids: [src-baishidaoren]
+  - name: 杭州
+    modern_name: 浙江省杭州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 晚岁移居至约1221年卒，卒地系推定
+      year: 1200
+      range_end: 1221
+      precision: 范围
+    kind: 逝世
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 移居杭州与卒于杭州均为学界通说推定，无一手史料直证。
+    source_ids: []
+
+relations:
+  - relation_type: 社群
+    target_id: luyou
+    direction: 双向
+    period:
+      text: 同处南宋中期江湖诗人交游圈
+      year: 1180
+      range_end: 1210
+      precision: 范围
+    evidence: 陆游长姜夔三十岁而同尊杨万里范成大一辈，二人同在以石湖、山阴为中心的南宋中兴诗人交游网络之中；然现存史料未见二人直接交往记载，此处仅为社群层面归纳。
+    inferred: true
+    confidence: 存疑
+    dispute: 无直接交往记录，任何具体交往传闻均不可据；本条按规范标为推定的社群关联。
+    source_ids: []
+
+reception:
+  - era: 同时代
+    evaluator: 杨万里、范成大
+    quote: ""
+    text_display: none
+    comment: 杨万里称其于文无所不工甚似陆天随，范成大称其翰墨人品皆似晋宋之雅士；二语均见后世词学文献与今人辑录的转引层，原始出处页面未直接核验，故本卷暂作中性转述留待补证。
+    source_ids: []
+  - era: 历代批评
+    evaluator: 张炎《词源》
+    quote: 词要清空，不要质实。……姜白石词如野云孤飞，去留无迹。
+    text_display: excerpt
+    comment: 词源卷下以清空质实对举，举白石为清空一格的代表，又称其疏影暗香扬州慢等曲不惟清虚且又骚雅读之使人神观飞越；此段原文已于维基文库／中国哲学书电子化计划之白石道人歌曲疏证附词源条实取得手。
+    source_ids: [src-baishidaoren]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦白石旁谱：白石道人歌曲所存十七首自度曲工尺旁谱为宋代词乐唯一成体系的乐谱文献，自清代以来校勘译解不绝，涉及燕乐宫调、旁谱符号与旋律复原诸议题；具体论著引文须逐条取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 扬州慢·淮左名都长期入选中学语文教材，念桥边红药年年知为谁生为大众熟诵；教材版本信息随学期变动，录入时须另行核验当期篇目。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 学界综述（暂缺专门研究）
+    quote: ""
+    text_display: none
+    comment: 影视改编稀少，网络传播以词选音频与古谱复原演奏为主；本层暂无可靠综述来源，留空待补。
+    source_ids: []
+
+sources_used: [src-baishidaoren]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。13条年谱（4阶段）、9件作品（多有小序自证系年）、7处足迹、1组关系（luyou社群inferred）、5层接受史；宋史无传故生平框架多落dispute，杨万里范成大评语仅得转引层作中性转述}

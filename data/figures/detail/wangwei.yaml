@@ -1,0 +1,550 @@
+# 王维全景详卷（schema v1）
+# 史料审计表（TASK-003 批次一；来源见 data/sources.yaml）：
+#
+# | 事实点 | 旧唐书·文苑下(J) | 新唐书·文艺中(X) | 结论与置信 |
+# |---|---|---|---|
+# | 籍贯家世 | 太原祁人，父处廉终汾州司马，徙家于蒲遂为河东人 | 无详载 | 确定(J) |
+# | 及第 | 开元九年进士擢第 | 开元初擢进士，调太乐丞 | 两书系年互异；「状元」说出自《集异记》小说不采 |
+# | 早贬 | 未载贬因 | 坐累为济州司仓参军 | 确定(X)；坐伶人舞黄狮子事出《集异记》层存疑 |
+# | 擢右拾遗 | 历右拾遗 | 张九龄执政擢右拾遗 | 确定；系年约735为通说 |
+# | 出塞 | 未载 | 使至塞上（监察御史）未明言 | 通说据本诗集年，737慰军凉州，存疑 |
+# | 丧妻 | 妻亡不再娶 | 丧妻不娶孤居三十年 | 确定；丧妻年份无载，推约730前后 |
+# | 母丧居敬 | 居母丧柴毁骨立殆不胜丧 | 母丧毁几不生；母亡表辋川第为寺 | 确定 |
+# | 辋川别业 | 得宋之问蓝田别墅在辋口，与裴迪浮舟往来 | 别墅在辋川有华子冈欹湖竹里馆等，与裴迪赋诗相酬 | 确定 |
+# | 陷贼 | 为贼所得服药取痢伪称瘖病，拘普施寺迫伪署 | 同（文字小异） | 确定 |
+# | 凝碧池诗 | 潜为诗万户伤心生野烟 | 赋诗悼痛（文异） | 确定；诗句文本从J |
+# | 免罪 | 缙请削己刑部侍郎以赎，责授太子中允 | 缙位已显请削官赎维罪 | 确定 |
+# | 卒年 | 乾元二年(759)七月卒 | 上元初卒，年六十一(→761) | 两史矛盾→主流从X推701-761，J说存疑记录 |
+# | 临终 | 索笔作别缙书与亲故别书数幅舍笔而绝 | 作书与别遗亲故书数幅停笔而化 | 确定（措辞互异） |
+# | 身后 | 代宗命缙辑得四百余篇 | 宝应中代宗语缙取诗；赠秘书监(X) | 确定 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: wangwei
+
+profile:
+  courtesy_name: 摩诘
+  art_name: ""
+  aliases: [诗佛, 王右丞]
+  gender: 男
+  ethnicity: ""
+  ancestry: 太原祁（今山西祁县），父徙家蒲州遂为河东人
+  birthplace: 蒲州
+  death_place: 长安
+  offices: [太乐丞, 右拾遗, 监察御史, 给事中, 尚书右丞]
+  fields: [文学, 艺术]
+  roles: [诗人, 画家, 音乐家]
+  summary: 诗中有画画中有诗的山水田园宗师，亦官亦隐的居士型诗人，安史之乱中一段伪署污点以凝碧池诗自赎。
+
+timeline:
+  # ── 阶段一：早慧入仕 ──────────────────────────────
+  - stage: 早慧入仕
+    stage_order: 1
+    title: 出生与家世
+    date:
+      text: "约701年"
+      year: 701
+      precision: 约
+    place: 蒲州
+    summary: 新唐书载九岁知属辞。生年701系由卒年六十一倒推，与其弟王缙齐名并称。
+    confidence: 存疑
+    dispute: 生年由卒年倒推；卒年两唐书互异（详见卒条 dispute），故生年在701上下浮动。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+  - stage: 早慧入仕
+    stage_order: 2
+    title: 开元进士及第，调太乐丞
+    date:
+      text: 约721年
+      year: 721
+      precision: 约
+    place: 长安
+    summary: 旧唐书称开元九年进士擢第，新唐书称开元初擢进士调太乐丞。旋坐累贬。
+    confidence: 存疑
+    dispute: 及第确切年份两书互异；民间状元及第说出自集异记小说，不足为信史。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+
+  - stage: 早慧入仕
+    stage_order: 3
+    title: 坐累贬济州司仓参军
+    date:
+      text: 约721—726年之间
+      year: 721
+      range_end: 726
+      precision: 范围
+    place: 济州
+    summary: 新唐书载坐累为济州司仓参军，远离京洛数年。
+    confidence: 存疑
+    dispute: 所坐何事正史未明言，伶人舞黄狮子说出自集异记层材料。
+    source_ids: [src-xts-vol202]
+  - stage: 早慧入仕
+    stage_order: 4
+    title: 张九龄执政，擢右拾遗
+    date:
+      text: 约735年
+      year: 735
+      precision: 约
+    place: 长安
+    summary: 新唐书载张九龄执政擢右拾遗。此前有献诗张九龄求汲引事，此后历监察御史。
+    source_ids: [src-xts-vol202, src-jts-vol190b]
+  - stage: 边塞与半官半隐
+    stage_order: 5
+    title: 出塞宣慰，居凉州
+    date:
+      text: 约737年
+      year: 737
+      precision: 约
+    place: 凉州
+    summary: 以监察御史出塞宣慰，兼河西节度判官，大漠孤烟直长河落日圆即此行所见。系年据本诗集年通说。
+    confidence: 存疑
+    dispute: 出塞年份与职任据诗集推定，两唐书仅存监察御史官历。
+    source_ids: [src-quantangshi-wangwei, src-jts-vol190b]
+  - stage: 边塞与半官半隐
+    stage_order: 6
+    title: 丧妻不再娶，孤居三十年
+    date:
+      text: 约730年起
+      year: 730
+      precision: 约
+    place: ""
+    summary: 旧唐书载妻亡不再娶；新唐书称丧妻不娶孤居三十年。丧妻确切年份无载，由三十年逆推约在开元十八九年前后。
+    confidence: 存疑
+    dispute: 丧妻年份无正史明文，纯由孤居年数倒推。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+
+  - stage: 边塞与半官半隐
+    stage_order: 7
+    title: 购辋川别业，与裴迪唱和
+    date:
+      text: 约740年代
+      year: 740
+      range_end: 750
+      precision: 范围
+    place: 蓝田辋川
+    summary: 得宋之问蓝田别墅，在辋口。别业有华子冈欹湖竹里馆柳浪茱萸沜辛夷坞诸胜，与道友裴迪浮舟往来弹琴赋诗，聚田园所为诗号辋川集。
+    confidence: 存疑
+    dispute: 购业确切年份无载，通说在天宝元载前后数年间。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+  - stage: 边塞与半官半隐
+    stage_order: 8
+    title: 居母丧，表辋川第为寺
+    date:
+      text: 约750年代
+      year: 750
+      range_end: 756
+      precision: 范围
+    place: 长安
+    summary: 旧唐书载居母丧柴毁骨立殆不胜丧，服阙拜吏部郎中；新唐书载母亡毁几不生，表辋川第为寺，终葬其西。事母崔氏以孝闻。
+    confidence: 存疑
+    dispute: 母崔氏卒年正史无明文，系年由服阙后官历倒推。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+  - stage: 边塞与半官半隐
+    stage_order: 9
+    title: 天宝末官给事中
+    date:
+      text: 约750—755年之间
+      year: 750
+      range_end: 755
+      precision: 范围
+    place: 长安
+    summary: 旧唐书载天宝末为给事中，历右拾遗监察御史左补阙库部郎中诸职。
+    source_ids: [src-jts-vol190b]
+
+  # ── 阶段三：陷贼与自赎 ──────────────────────────────
+  - stage: 陷贼与自赎
+    stage_order: 10
+    title: 安禄山陷两都，扈从不及被执
+    date:
+      text: "约756年"
+      year: 756
+      precision: 约
+    place: 长安
+    summary: 禄山陷两都玄宗出幸，维扈从不及为贼所得。服药取痢伪称瘖病。禄山素怜之遣人迎置洛阳拘于普施寺迫以伪署。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+  - stage: 陷贼与自赎
+    stage_order: 11
+    title: 凝碧池头潜赋诗
+    date:
+      text: "约756年"
+      year: 756
+      precision: 约
+    place: 洛阳凝碧池
+    summary: 禄山宴其徒于凝碧宫，乐工皆梨园弟子教坊工人，维闻之悲恻潜为诗曰万户伤心生野烟百官何日再朝天秋槐花落空宫里凝碧池头奏管弦。此诗后成其免罪关键。
+    source_ids: [src-jts-vol190b]
+  - stage: 陷贼与自赎
+    stage_order: 12
+    title: 贼平定罪，弟缙请削官赎罪获宥
+    date:
+      text: "约757年"
+      year: 757
+      precision: 约
+    place: 长安
+    summary: 陷贼官三等定罪。维以凝碧诗闻于行在肃宗嘉之，会缙请削己刑部侍郎以赎兄罪，特宥之，责授太子中允。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+
+  - stage: 晚年尚右丞
+    stage_order: 13
+    title: 屡迁至尚书右丞
+    date:
+      text: 约758—760年之间
+      year: 758
+      range_end: 760
+      precision: 范围
+    place: 长安
+    summary: 乾元中迁太子中庶子中书舍人，复拜给事中，转尚书右丞。晚年长斋不衣文彩，退朝焚香独坐以禅诵为事。
+    source_ids: [src-jts-vol190b]
+  - stage: 晚年尚右丞
+    stage_order: 14
+    title: 临终索笔作别书
+    date:
+      text: 约759—761年之间
+      year: 759
+      range_end: 761
+      precision: 范围
+    place: 长安
+    summary: 疾甚时弟缙在凤翔，忽索笔作别缙书，又与平生亲故作别书数幅，多敦厉朋友奉佛修心之旨，舍笔而绝。新唐书称停笔而化。
+    confidence: 存疑
+    dispute: 卒年两唐书相牾：旧唐书作乾元二年七月(759)，新唐书作上元初卒年六十一(→761)。本卷从主流701—761说，旧说说存疑记录。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+  - stage: 晚年尚右丞
+    stage_order: 15
+    title: 身后：代宗命辑遗诗四百余篇
+    date:
+      text: 约762—763年之间
+      year: 762
+      range_end: 763
+      precision: 范围
+    place: 长安
+    summary: 代宗好文，语缙曰卿之伯氏天宝中诗名冠代朕尝于诸王座闻其乐章。缙答开元中诗百千余篇天宝事后十不存一，编缀得四百余篇上之，帝优诏褒赏。新唐书另载赠秘书监。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+
+works:
+  - work_id: jiu-yue-jiu-ri
+    title: 九月九日忆山东兄弟
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 约717年，十七岁作
+      year: 717
+      precision: 约
+    place: 长安（一说华山以东诸地）
+    context: 少年游历长安求仕期间重阳忆弟之作。独在异乡为异客每逢佳节倍思亲。
+    attribution: 确凿
+    excerpt: 独在异乡为异客，每逢佳节倍思亲。遥知兄弟登高处，遍插茱萸少一人。
+    text_display: full
+    themes: [思亲, 节令]
+    influence: 倍思亲成为节令思亲的通用表达。
+    confidence: 存疑
+    dispute: 十七岁自注见于题下小注，系年从通说。
+    source_ids: [src-quantangshi-wangwei]
+
+  - work_id: shi-zhi-sai-shang
+    title: 使至塞上
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 约737年
+      year: 737
+      precision: 约
+    place: 居延至凉州道中
+    context: 出塞宣慰途中所作，单车欲问边属国过居延。大漠孤烟直长河落日圆为王维边塞诗压卷之笔。
+    attribution: 确凿
+    excerpt: 单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。
+    text_display: full
+    themes: [边塞]
+    influence: 大漠孤烟直长河落日圆为千古壮景名句。
+    confidence: 存疑
+    dispute: 系年从开元二十五年出塞通说。
+    source_ids: [src-quantangshi-wangwei]
+  - work_id: lu-zhai
+    title: 鹿柴
+    alt_titles: [鹿寨]
+    genre: 五言绝句
+    date:
+      text: 天宝年间辋川时期
+      year: 745
+      range_end: 755
+      precision: 范围
+    place: 辋川鹿柴
+    context: 辋川集二十首之一，与裴迪同咏辋川诸景。空山不见人但闻人语响返景入深林复照青苔上。
+    attribution: 确凿
+    excerpt: 空山不见人，但闻人语响。返景入深林，复照青苔上。
+    text_display: full
+    themes: [山水, 禅意]
+    influence: 以声与光写空寂的禅诗典范。
+    source_ids: [src-quantangshi-wangwei, src-jts-vol190b]
+  - work_id: zhu-li-guan
+    title: 竹里馆
+    alt_titles: []
+    genre: 五言绝句
+    date:
+      text: 天宝年间辋川时期
+      year: 745
+      range_end: 755
+      precision: 范围
+    place: 辋川竹里馆
+    context: 辋川集名篇。独坐幽篁里弹琴复长啸深林人不知明月来相照。
+    attribution: 确凿
+    excerpt: 独坐幽篁里，弹琴复长啸。深林人不知，明月来相照。
+    text_display: full
+    themes: [隐逸, 月]
+    influence: 幽篁弹琴意象为后世隐逸画题常见母本。
+    source_ids: [src-quantangshi-wangwei]
+  - work_id: shan-ju-qiu-ming
+    title: 山居秋暝
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 辋川隐居时期
+      year: 745
+      range_end: 755
+      precision: 范围
+    place: 辋川
+    context: 空山新雨后天气晚来秋，随意春芳歇王孙自可留。诗中有画的典型样本。
+    attribution: 确凿
+    excerpt: 空山新雨后，天气晚来秋。明月松间照，清泉石上流。
+    text_display: full
+    themes: [山水, 秋]
+    influence: 明月松间照一联为诗中有画最常引证的例句。
+    source_ids: [src-quantangshi-wangwei]
+  - work_id: zhong-nan-bie-ye
+    title: 终南别业
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 中岁以后，约天宝年间
+      year: 750
+      precision: 约
+    place: 终南山
+    context: 中岁颇好道晚家南山陲。行到水穷处坐看云起时为其随缘任运人生观的自白。
+    attribution: 确凿
+    excerpt: 中岁颇好道，晚家南山陲。……行到水穷处，坐看云起时。
+    text_display: excerpt
+    themes: [禅意, 隐逸]
+    influence: 行到水穷处被视为禅诗化境的代表。
+    source_ids: [src-quantangshi-wangwei]
+
+  - work_id: xiang-si
+    title: 相思
+    alt_titles: [江上赠李龟年]
+    genre: 五言绝句
+    date:
+      text: 创作年代不详，天宝间已传唱
+      precision: 未知
+    place: ""
+    context: 红豆生南国春来发几枝。据唐人记载经乐工李龟年演唱而传播宫禁民间。
+    attribution: 确凿
+    excerpt: 红豆生南国，春来发几枝。愿君多采撷，此物最相思。
+    text_display: full
+    themes: [相思, 咏物]
+    influence: 红豆自此成为相思信物的固定意象。
+    confidence: 存疑
+    dispute: 别题江上赠李龟年所指向的受赠者与本事均无确证。
+    source_ids: [src-quantangshi-wangwei]
+  - work_id: song-yuan-er-shi-anxi
+    title: 送元二使安西
+    alt_titles: [渭城曲, 阳关三叠]
+    genre: 七言绝句
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: 渭城
+    context: 谱入乐府后为送别曲阳关三叠之祖本，唐人传唱最盛。
+    attribution: 确凿
+    excerpt: 渭城朝雨浥轻尘，客舍青青柳色新。劝君更尽一杯酒，西出阳关无故人。
+    text_display: full
+    themes: [送别]
+    influence: 与音乐结合流传最广的唐诗之一。
+    source_ids: [src-quantangshi-wangwei]
+
+footprints:
+  - name: 太原祁县（祖籍）
+    modern_name: 山西省祁县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 祖籍，本人或未常居
+      precision: 未知
+    kind: 居住
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-jts-vol190b]
+  - name: 蒲州
+    modern_name: 山西省永济市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 徙家之后
+      precision: 未知
+    kind: 居住
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 迁蒲在父辈还是维本人少年时无明文。
+    source_ids: [src-jts-vol190b]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 及第与仕历主要所在
+      year: 721
+      precision: 约
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    source_ids: [src-jts-vol190b]
+
+  - name: 济州
+    modern_name: 山东省茌平、长清一带（唐济州）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 唐济州地望系历史地理考订，坐标待接入体系
+    visit_date:
+      text: 约721—726年之间
+      year: 721
+      range_end: 726
+      precision: 范围
+    kind: 谪迁
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-xts-vol202]
+  - name: 凉州
+    modern_name: 甘肃省武威市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约737年
+      year: 737
+      precision: 约
+    kind: 游历
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 河西之行据诗集推定，正史仅存官历。
+    source_ids: [src-quantangshi-wangwei]
+  - name: 辋川别业
+    modern_name: 陕西省西安市蓝田县辋川镇
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 天宝年间起半隐居地，母亡后舍为寺
+      year: 740
+      range_end: 761
+      precision: 范围
+    kind: 居住
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+  - name: 洛阳普施寺与凝碧池
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约756年陷贼拘禁"
+      year: 756
+      precision: 约
+    kind: 游历
+    route_order: 7
+    memorial_only: false
+    source_ids: [src-jts-vol190b]
+  - name: 终南山
+    modern_name: 陕西省西安市终南山
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 中岁好道以后常游
+      year: 750
+      precision: 约
+    kind: 游历
+    route_order: 8
+    memorial_only: false
+    inferred: true
+    source_ids: [src-quantangshi-wangwei]
+
+relations:
+  - relation_type: 挚友
+    target_id: menghaoran
+    direction: 双向
+    period:
+      text: 开元间订交，襄阳之约传为佳话
+      year: 730
+      precision: 约
+    evidence: 王孟并称同为山水田园宗师；旧唐书孟浩然传载维私邀入内署玄宗至匿床下事（该事细节学界多疑小说化），二人唱和诗存。
+    confidence: 存疑
+    dispute: 王维邀孟浩然入内署遇玄宗的故事出自本事诗层材料，正史无此情节，交往本身可信而细节存疑。
+    source_ids: [src-jts-vol190b, src-xts-vol202]
+  - relation_type: 社群
+    target_id: dufu
+    direction: 双向
+    period:
+      text: 同处盛唐长安诗坛
+      year: 750
+      precision: 约
+    evidence: 杜甫有奉赠王维诗称中允声名久；二人无深交记载但互知其名。后世常以李杜王孟并举对照两种诗风。
+    inferred: true
+    confidence: 确定
+    source_ids: [src-jts-vol190b]
+
+reception:
+  - era: 同时代
+    evaluator: 唐代宗（语王缙）
+    quote: 卿之伯氏，天宝中诗名冠代。
+    text_display: excerpt
+    comment: 出自旧唐书所载代宗与王缙问答，是帝王层面的盖棺定论。
+    source_ids: [src-jts-vol190b]
+  - era: 同时代
+    evaluator: 王缙
+    quote: 臣兄开元中诗百千余篇，天宝事后，十不存一。
+    text_display: excerpt
+    comment: 其弟对作品散佚规模的陈述，亦是辑成四百余卷的来源记录。
+    source_ids: [src-jts-vol190b]
+  - era: 历代批评
+    evaluator: 苏轼
+    quote: 味摩诘之诗，诗中有画；观摩诘之画，画中有诗。
+    text_display: excerpt
+    comment: 书摩诘蓝田烟雨图跋语，诗中有画自此成为王维批评史的定谳。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦辋川集真伪与编年、王维奉佛与诗风关系、陷贼伪署的政治评价再检讨等议题；具体论著引文须取得许可后补入。
+    source_ids: []
+
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 九月九日忆山东兄弟送元二使安西山居秋暝等长期入选语文教材；诗佛与南宗文人画之祖形象深入人心。教材篇目随学期变动，录入时须另行核验。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播
+    quote: ""
+    text_display: none
+    comment: 辋川图卷的流传使王维成为艺术史与大众文化共同关注的对象，相关影视形象暂不著录具体作品以免权利状态不明。
+    source_ids: []
+
+sources_used: [src-jts-vol190b, src-xts-vol202, src-quantangshi-wangwei]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。15条年谱、8首作品、8处足迹、2组关系、5层接受史；卒年两唐书矛盾落dispute}

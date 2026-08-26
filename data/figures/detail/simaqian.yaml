@@ -1,0 +1,603 @@
+# 司马迁全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 汉书·卷六十二·司马迁传(J，维基文库实取) | 结论与置信 |
+# |---|---|---|
+# | 家世 | 昌生毋懌毋懌生喜喜生談談為太史公；司馬氏世典周史 | 确定 |
+# | 生年卒年 | 本传俱无载（仅「遷生龍門」） | 通说前145—约前86系学界推算，存疑 |
+# | 少年 | 遷生龍門耕牧河山之陽年十歲則誦古文 | 确定(J) |
+# | 壯遊 | 二十而南遊江淮上會稽探禹穴窺九疑浮沅湘北涉汶泗講業齊魯之都觀夫子遺風鄉射鄒嶧厄困蕃薛彭城過梁楚以歸 | 确定(J)；系年由生年倒推 |
+# | 奉使 | 於是遷仕為郎中奉使西征巴蜀以南略邛莋昆明還報命 | 确定(J) |
+# | 父卒遗命 | 天子始建漢家之封太史公留滯周南發憤且卒子遷適反見父於河洛之間執手泣曰予死爾必為太史 | 确定(J)；元封元年系年从通说 |
+# | 为太史令 | 卒三歲而遷為太史令紬史記石室金鐀之書五年而當太初元年十一月甲子朔旦冬至天歷始改 | 确定(J) |
+# | 李陵之祸 | 十年而遭李陵之禍幽於累紲；報書：明主不深曉以為僕沮貳師而為李陵遊說遂下於理因為誣上卒從吏議家貧財賂不足以自贖 | 确定(J)；受刑具体年份正史无载 |
+# | 受刑 | 李陵既生降頹其家聲而僕又茸以蠶室重為天下觀笑；最下腐刑極矣 | 确定(J) |
+# | 受刑后 | 遷既被刑之後為中書令尊寵任職 | 确定(J) |
+# | 发愤著述 | 惜其不成是以就極刑而無慍色僕誠已著此書藏諸名山傳之其人通邑大都則僕償前辱之責雖萬被戮豈有悔哉 | 确定(J) |
+# | 成书 | 凡百三十篇五十二萬六千五百字為太史公書臧之名山副在京師；十篇缺有錄無書 | 确定(J) |
+# | 身后 | 遷既死後其書稍出宣帝時遷外孫平通侯楊惲祖述其書遂宣布焉王莽時求封遷後為史通子 | 确定(J) |
+# | 传末赞 | 是非頗繆於聖人論大道則先黃老而後六經…此其所蔽也；劉向揚雄皆稱遷有良史之材…不虛美不隱惡故謂之實錄 | 确定(J) |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: simaqian
+
+profile:
+  courtesy_name: 子长
+  art_name: ""
+  aliases: [太史公, 史迁]
+  gender: 男
+  ethnicity: ""
+  ancestry: 夏阳龙门（今陕西韩城一带）
+  birthplace: 龙门
+  death_place: 不详（卒年卒地正史均无载）
+  offices: [太史令, 中书令（受刑后）]
+  fields: [文学]
+  roles: [史学家, 散文家]
+  summary: 忍辱负重究天人之际的太史公，以一部《史记》开创纪传体，将史笔写成了不朽的文章。
+
+timeline:
+  # ── 阶段一：龙门少年与壮游天下 ──────────────────────
+  - stage: 龙门少年与壮游天下
+    stage_order: 1
+    title: 生于龙门，史官世家
+    date:
+      text: 约前145年
+      year: -145
+      precision: 约
+    place: 龙门
+    summary: 迁生龙门，耕牧河山之阳。先世自周即世典周史，曾祖喜祖昌皆葬高门，父谈仕于建元元封之间为太史公。生年正史无载，前145年为学界通说推算。
+    confidence: 存疑
+    dispute: 生年有前145（王国维等据自述「为太史令五年当太初元年」推算）与前135（依报任安书作年另解）两说并存，正史不载。
+    source_ids: [src-hanshu-vol62]
+  - stage: 龙门少年与壮游天下
+    stage_order: 2
+    title: 年十岁诵古文
+    date:
+      text: 约前136年前后
+      year: -136
+      precision: 约
+    place: 龙门、茂林（随父居）
+    summary: 年十岁则诵古文，自幼接受古文经传教育，为其后紬史记石室金鐀之书打下根底。系年按生年前145说推算。
+    confidence: 存疑
+    dispute: 十岁诵古文本传明载，但对应公元年份随生年两说浮动。
+    source_ids: [src-hanshu-vol62]
+  - stage: 龙门少年与壮游天下
+    stage_order: 3
+    title: 二十而南游江淮，探禹穴窥九疑
+    date:
+      text: 约前126年起
+      year: -126
+      precision: 约
+    place: 江淮、会稽、九疑、沅湘
+    summary: 二十而南游江淮，上会稽探禹穴，窥九疑，浮于沅湘——遍访大禹、舜帝传说遗迹与屈原沉江故地。壮游行程详见 footprints。
+    confidence: 存疑
+    dispute: 出游年份系由「二十而南游」与生年通说倒推，非正史明载。
+    source_ids: [src-hanshu-vol62]
+  - stage: 龙门少年与壮游天下
+    stage_order: 4
+    title: 北涉汶泗，讲业齐鲁，厄困蕃薛彭城
+    date:
+      text: 约前126—前125年之间
+      year: -126
+      range_end: -125
+      precision: 范围
+    place: 汶泗、齐鲁之都、邹峄、蕃薛彭城、梁楚
+    summary: 北涉汶泗，讲业齐鲁之都，观孔子遗风，乡射邹峄；厄困蕃薛彭城，过梁楚以归。一路考信访古亦备尝困厄，归而成胸中丘壑。
+    source_ids: [src-hanshu-vol62]
+
+  # ── 阶段二：仕为郎中与继任太史令 ────────────────────
+  - stage: 仕为郎中与继任太史令
+    stage_order: 5
+    title: 仕为郎中，奉使西征巴蜀以南
+    date:
+      text: 约前112—前111年之间
+      year: -112
+      range_end: -111
+      precision: 范围
+    place: 巴蜀以南、邛笮、昆明
+    summary: 于是迁仕为郎中，奉使西征巴蜀以南，略邛、莋、昆明，还报命。此行深入西南新辟之地，为后来作西南夷列传蓄积实地见闻。
+    confidence: 存疑
+    dispute: 奉使年份系结合元鼎年间平定西南夷史事推定，本传未系年。
+    source_ids: [src-hanshu-vol62]
+  - stage: 仕为郎中与继任太史令
+    stage_order: 6
+    title: 父卒河洛之间，执手遗命
+    date:
+      text: 约前110年
+      year: -110
+      precision: 约
+    place: 河洛之间
+    summary: 天子始建汉家之封，太史公留滞周南不得与从事，发愤且卒。子迁适反，见父于河洛之间。谈执迁手而泣：「予死，尔必为太史……毋忘吾所欲论著矣。」迁俯首流涕：「小子不敏，请悉论先人所次旧闻，不敢阙。」
+    confidence: 存疑
+    dispute: 封禅在元封元年（前110）史有明文，父子相会与遗命的具体时日本传未载。
+    source_ids: [src-hanshu-vol62]
+  - stage: 仕为郎中与继任太史令
+    stage_order: 7
+    title: 为太史令，紬史记石室金鐀之书
+    date:
+      text: 约前108年
+      year: -108
+      precision: 约
+    place: 长安
+    summary: 卒三岁而迁为太史令，紬史记石室金鐀之书——缀集皇家藏书，着手史料整理。继父之职，遗命得践。
+    source_ids: [src-hanshu-vol62]
+  - stage: 仕为郎中与继任太史令
+    stage_order: 8
+    title: 太初元年天历始改
+    date:
+      text: 前104年
+      year: -104
+      precision: 精确
+    place: 长安
+    summary: 五年而当太初元年，十一月甲子朔旦冬至，天历始改，建于明堂，诸神受记。迁以太史令之职亲与其事。
+    confidence: 存疑
+    dispute: 太初改历本传系年明确；主持造历者细节（唐都、落下闳等）出《汉书·律历志》，非本传范围，此处仅录本传层面记载。
+    source_ids: [src-hanshu-vol62]
+
+  # ── 阶段三：李陵之祸 ───────────────────────────────
+  - stage: 李陵之祸
+    stage_order: 9
+    title: 论次其文，草创史记
+    date:
+      text: 约前104年起
+      year: -104
+      precision: 约
+    place: 长安
+    summary: 与壶遂问答春秋之义后，「于是论次其文」——正式开始著述。自比于继孔子《春秋》之统，本欲载明圣盛德、述功臣贤大夫之业。
+    source_ids: [src-hanshu-vol62]
+  - stage: 李陵之祸
+    stage_order: 10
+    title: 遭李陵之祸，幽于累绁
+    date:
+      text: 前99年
+      year: -99
+      precision: 约
+    place: 长安
+    summary: 论次其文十年而遭李陵之祸。李陵提步卒不满五千深践戎马之地，矢尽道穷救兵不至而降。迁适会召问，即以此指推言陵功，欲以广主上之意塞睚眦之辞。明主不深晓，以为仆沮贰师而为李陵游说，遂下于理。拳拳之忠终不能自列，因为诬上卒从吏议。家贫财赂不足以自赎，交游莫救，左右亲近不为一言。
+    confidence: 存疑
+    dispute: 天汉二年（前99）李陵败降系年从通说；迁获罪在下狱当年抑或次年定罪，诸家谱略有出入。「沮贰师」谓被认作诋毁贰师将军李广利。
+    source_ids: [src-hanshu-vol62]
+  - stage: 李陵之祸
+    stage_order: 11
+    title: 下蚕室受腐刑
+    date:
+      text: 约前98年
+      year: -98
+      precision: 约
+    place: 长安
+    summary: 李陵既生降颓其家声，而仆又茸以蚕室，重为天下观笑。悲夫！悲夫！——最下腐刑极矣。人固有一死，死有重于泰山或轻于鸿毛，用之所趋异也。
+    confidence: 有争议
+    dispute: 受腐刑本传明载（「茸以蚕室」「诟莫大于宫刑」），但行刑确切年份正史无载，约前98说系由下狱与赦免时序推算；另有学者主张前97年。
+    source_ids: [src-hanshu-vol62]
+  - stage: 李陵之祸
+    stage_order: 12
+    title: 就极刑而无愠色，隐忍苟活
+    date:
+      text: 约前98年之后
+      year: -98
+      precision: 约
+    place: 长安
+    summary: 草创未就会遭此祸，惜其不成，是以就极刑而无愠色。所以隐忍苟活函粪土之中而不辞者，恨私心有所不尽，鄙没世而文采不表于后世也。肠一日而九回，每念斯耻汗未尝不发背沾衣。
+    source_ids: [src-hanshu-vol62]
+
+  # ── 阶段四：忍辱著成一家之言 ────────────────────────
+  - stage: 忍辱著成一家之言
+    stage_order: 13
+    title: 既被刑之后为中书令
+    date:
+      text: 约前96年后
+      year: -96
+      precision: 约
+    place: 长安
+    summary: 迁既被刑之后为中书令，尊宠任职——以内朝近臣身份继续典掌文书。故人益州刺史任安予迁书，责以古贤臣之义。
+    confidence: 存疑
+    dispute: 任中书令的确切年份无载，约前96年后说系据受刑时间顺推。
+    source_ids: [src-hanshu-vol62]
+  - stage: 忍辱著成一家之言
+    stage_order: 14
+    title: 报任安书，自陈心迹
+    date:
+      text: 约前91年
+      year: -91
+      precision: 约
+    place: 长安
+    summary: 迁报任安书，尽舒愤懣：亦欲以究天人之际，通古今之变，成一家之言。仆诚已著此书，藏诸名山传之其人通邑大都，则仆偿前辱之责虽万被戮岂有悔哉！要之死日然后是非乃定。
+    confidence: 存疑
+    dispute: 报书写作年份正史无载，通说系于征和二年前91年任安下狱之际，亦有更早数年的异说；书中「今少卿抱不测之罪」所指任安得罪事由学界仍有讨论。
+    source_ids: [src-hanshu-vol62]
+  - stage: 忍辱著成一家之言
+    stage_order: 15
+    title: 百三十篇成，藏之名山
+    date:
+      text: 约前91年前后写成
+      year: -91
+      precision: 约
+    place: 长安
+    summary: 网罗天下放失旧闻，考之行事稽其成败兴坏之理，上记轩辕下至于兹，凡百三十篇五十二万六千五百字为太史公书。序略以拾遗补阙成一家言，臧之名山副在京师以俟后圣君子。（本传言十篇缺有录无书。）
+    confidence: 存疑
+    dispute: 全书完成年代无确载，从报任安书「仆诚已著此书」系于约前91年前后；十篇亡缺的时间与篇目自汉以来聚讼不已。
+    source_ids: [src-hanshu-vol62]
+  - stage: 忍辱著成一家之言
+    stage_order: 16
+    title: 卒年无载，其书稍出
+    date:
+      text: 卒年正史无载，通说约前86年
+      year: -86
+      precision: 约
+    place: 不详
+    summary: 迁既死后其书稍出。宣帝时迁外孙平通侯杨恽祖述其书遂宣布焉；王莽时求封迁后为史通子。一代太史公之卒，正史竟无一字及之。
+    confidence: 存疑
+    dispute: 卒年卒地正史均无载。约前86说系学界由武帝末年世次推断；另有前90年因巫蛊事下狱而死（《史记》褚少孙补引述线索及东汉卫宏说）等异说，皆无定论。
+    source_ids: [src-hanshu-vol62]
+  - stage: 忍辱著成一家之言
+    stage_order: 17
+    title: 班固承其体例，为之立传
+    date:
+      text: 东汉明帝章帝间（约1世纪）
+      precision: 未知
+    place: ""
+    summary: 百余年后班固撰《汉书》，专立司马迁传，全载太史公自序节录与报任安书，纪传体由此成为正史不祧之祖。
+    related_year: 60
+    source_ids: [src-hanshu-vol62]
+
+works:
+  - work_id: shiji-xiangyu-benji
+    title: 史记·项羽本纪（选段）
+    alt_titles: [项羽本纪]
+    genre: 纪传体本纪
+    date:
+      text: 约前104—前91年间著述期内
+      year: -104
+      range_end: -91
+      precision: 范围
+    place: 长安
+    context: 本传著录十二本纪第七即项羽本纪。不以成败论英雄，将失败者列入帝王本纪，正是司马迁史识与文章合一的极致——垓下之围悲歌慷慨，千载如闻其声。
+    attribution: 确凿
+    excerpt: 于是项王乃悲歌慷慨，自为诗曰：力拔山兮气盖世，时不利兮骓不逝。骓不逝兮可奈何，虞兮虞兮奈若何！歌数阕，美人和之。项王泣数行下。
+    text_display: excerpt
+    themes: [英雄悲剧, 史传文学]
+    influence: 被历代文家推为本纪中最具文学光彩之篇，鸿门宴垓下之围成为经典叙事范本。
+    source_ids: [src-hanshu-vol62]
+
+  - work_id: shiji-lianpo-linxiangru
+    title: 史记·廉颇蔺相如列传（选段）
+    alt_titles: [廉颇蔺相如列传]
+    genre: 纪传体合传
+    date:
+      text: 约前104—前91年间著述期内
+      year: -104
+      range_end: -91
+      precision: 范围
+    place: 长安
+    context: 本传著录七十列传第二十一。完璧归赵渑池会将相和，以人物对话推动叙事，智勇与气节跃然纸上，后世戏曲小说多取材于此。
+    attribution: 确凿
+    excerpt: 赵惠文王时，得楚和氏璧。秦昭王闻之，使人遗赵王书，愿以十五城请易璧。……相如曰：王必无人，臣愿奉璧往使。城入赵而璧留秦；城不入，臣请完璧归赵。
+    text_display: excerpt
+    themes: [智勇, 将相和]
+    influence: 长期入选语文教材，完璧归赵、负荆请罪成为成语典故库中的常青篇目。
+    source_ids: [src-hanshu-vol62]
+  - work_id: shiji-chenshe-shijia
+    title: 史记·陈涉世家（选段）
+    alt_titles: [陈涉世家]
+    genre: 纪传体世家
+    date:
+      text: 约前104—前91年间著述期内
+      year: -104
+      range_end: -91
+      precision: 范围
+    place: 长安
+    context: 本传著录三十世家第十八。以佣耕者入世家、首倡发难者为张楚立传，见其别识心裁；燕雀鸿鹄之叹与王侯将相宁有种乎，皆为千古名句。
+    attribution: 确凿
+    excerpt: 陈涉太息曰：嗟乎！燕雀安知鸿鹄之志哉！……且壮士不死即已，死即举大名耳，王侯将相宁有种乎！
+    text_display: excerpt
+    themes: [布衣之志, 首义]
+    influence: 长期入选语文教材，塑造了国人对大泽乡起义的基本记忆。
+    source_ids: [src-hanshu-vol62]
+  - work_id: shiji-cike-liezhuan
+    title: 史记·刺客列传（选段）
+    alt_titles: [刺客列传]
+    genre: 纪传体类传
+    date:
+      text: 约前104—前91年间著述期内
+      year: -104
+      range_end: -91
+      precision: 范围
+    place: 长安
+    context: 本传著录七十列传第二十六。曹沫专诸豫让聂政荆轲五人事迹汇为一传，易水送别一节白衣冠悲歌，是中国文学里最著名的赴死场景之一。
+    attribution: 确凿
+    excerpt: 太子及宾客知其事者，皆白衣冠以送之。至易水之上，既祖，取道，高渐离击筑，荆轲和而歌，为变徵之声，士皆垂泪涕泣。……风萧萧兮易水寒，壮士一去兮不复还！
+    text_display: excerpt
+    themes: [侠义, 悲歌]
+    influence: 易水意象自此定型，历代咏刺客诗文不绝。
+    source_ids: [src-hanshu-vol62]
+  - work_id: bao-ren-an-shu
+    title: 报任安书
+    alt_titles: [报任少卿书, 与任安书]
+    genre: 书信体散文
+    date:
+      text: 约前91年
+      year: -91
+      precision: 约
+    place: 长安
+    context: 故人益州刺史任安责以古贤臣之义，迁报之书尽舒愤懣——自叙李陵之祸本末、受刑之辱与隐忍著书之志，是理解《史记》写作动机的第一手自白。
+    attribution: 确凿
+    excerpt: 古者富贵而名摩灭不可胜记，唯俶傥非常之人称焉。盖西伯拘而演周易，仲尼厄而作春秋……诗三百篇，大氐贤圣发愤之所为作也。……亦欲以究天人之际，通古今之变，成一家之言。
+    text_display: excerpt
+    themes: [发愤著书, 自白]
+    influence: 中国书信文中第一等文字，发愤著书说由此成为中国文学批评的核心命题之一。
+    confidence: 存疑
+    dispute: 写作年份系学界推定；汉书所录与文选所收文本互有异文。
+    source_ids: [src-hanshu-vol62]
+  - work_id: taishigong-zixu
+    title: 太史公自序
+    alt_titles: [太史公书自序]
+    genre: 自序（书序）
+    date:
+      text: 约前91年前后
+      year: -91
+      precision: 约
+    place: 长安
+    context: 汉书本传全文节录——自叙史官世系、父亲遗命、著述宗旨与百三十篇目录，兼载论六家要指，是《史记》的总纲与作者的精神自画像。
+    attribution: 确凿
+    excerpt: 网罗天下放失旧闻，王迹所兴原始察终，见盛观衰论考之行事……凡百三十篇五十二万六千五百字为太史公书。序略以拾遗补阙成一家言，协六经异传齐百家杂语，臧之名山副在京师以俟后圣君子。
+    text_display: excerpt
+    themes: [著述宗旨, 家学]
+    influence: 后世文集自序体的典范，成一家之言成为学人的最高自期。
+    source_ids: [src-hanshu-vol62]
+  - work_id: bei-shi-buyu-fu
+    title: 悲士不遇赋
+    alt_titles: []
+    genre: 辞赋
+    date:
+      text: 晚年所作，具体年份不详
+      precision: 未知
+    place: 长安（一说）
+    context: 与报任安书同一心境的短赋，抒士生不逢时、志行无闻之悲，是其现存唯一的赋作，可与发愤著书的自白互证。
+    attribution: 确凿
+    excerpt: 悲夫！士生之不辰，愧顾影而独存。恒克己而复礼，惧志行之无闻。
+    text_display: excerpt
+    themes: [士不遇, 抒愤]
+    influence: 西汉抒情小赋中以生命痛感写不遇之感的代表文本。
+    confidence: 存疑
+    dispute: 该赋赖《艺文类聚》等类书收录而传，不在汉书本传之内；归属历代无异词而来源登记尚待补入 sources.yaml，故本条暂不引用来源 id。
+    source_ids: []
+
+footprints:
+  - name: 龙门（夏阳）
+    modern_name: 陕西省韩城市
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 龙门地望夏阳说为主流通说，精确坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: 出生至早年耕牧
+      year: -145
+      range_end: -130
+      precision: 范围
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-hanshu-vol62]
+  - name: 会稽禹穴
+    modern_name: 浙江省绍兴市会稽山（禹陵一带）
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 二十壮游，约前126年
+      year: -126
+      precision: 约
+    kind: 游历
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-hanshu-vol62]
+  - name: 九疑山
+    modern_name: 湖南省永州市宁远县九嶷山
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 二十壮游，窥九疑，约前126年
+      year: -126
+      precision: 约
+    kind: 游历
+    route_order: 3
+    memorial_only: false
+    source_ids: [src-hanshu-vol62]
+  - name: 沅湘流域
+    modern_name: 湖南省沅江、湘江流域
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 流域范围广阔取区域级定位，待接入体系后细化
+    visit_date:
+      text: 二十壮游，浮于沅湘，约前126年
+      year: -126
+      precision: 约
+    kind: 游历
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-hanshu-vol62]
+  - name: 汶泗与齐鲁之都
+    modern_name: 山东省济宁市（汶泗间）、曲阜市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 壮游北段，讲业齐鲁之都观孔子遗风，约前126—前125年
+      year: -126
+      range_end: -125
+      precision: 范围
+    kind: 游历
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-hanshu-vol62]
+  - name: 邹峄
+    modern_name: 山东省邹城市峄山
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 壮游北段，乡射邹峄，约前126—前125年
+      year: -126
+      range_end: -125
+      precision: 范围
+    kind: 游历
+    route_order: 6
+    memorial_only: false
+    source_ids: [src-hanshu-vol62]
+  - name: 蕃、薛、彭城
+    modern_name: 山东省滕州市、江苏省徐州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 三地连缀取彭城为代表定位，待接入体系后拆分
+    visit_date:
+      text: 壮游返程，厄困蕃薛彭城，约前125年
+      year: -125
+      precision: 约
+    kind: 游历
+    route_order: 7
+    memorial_only: false
+    source_ids: [src-hanshu-vol62]
+  - name: 梁楚之地
+    modern_name: 河南省商丘市一带至苏北皖北
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 过梁楚以归取梁地宋都为代表定位，待接入体系后细化
+    visit_date:
+      text: 壮游返程过梁楚以归，约前125年
+      year: -125
+      precision: 约
+    kind: 游历
+    route_order: 8
+    memorial_only: false
+    source_ids: [src-hanshu-vol62]
+  - name: 巴蜀以南、邛笮、昆明
+    modern_name: 四川成都以南至西昌（邛）、汉源（笮）、云南昆明一线
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 奉使巡行使程走向系学界据西南夷地理推定，坐标待接入体系
+    visit_date:
+      text: 奉使西征巴蜀以南略邛笮昆明，约前112—前111年之间
+      year: -112
+      range_end: -111
+      precision: 范围
+    kind: 任职
+    route_order: 9
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 使程具体路线与所至范围本传仅一句带过，路线走向系推定。
+    source_ids: [src-hanshu-vol62]
+  - name: 河洛之间
+    modern_name: 河南省洛阳市至巩义一带黄河洛水间
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 见父执手处仅记河洛之间，取洛阳外围推定定位
+    visit_date:
+      text: 约前110年父卒遗命之处
+      year: -110
+      precision: 约
+    kind: 游历
+    route_order: 10
+    memorial_only: false
+    inferred: true
+    source_ids: [src-hanshu-vol62]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 仕为郎中至太史令中书令，著述终老于此一带
+      year: -112
+      range_end: -86
+      precision: 范围
+    kind: 任职
+    route_order: 11
+    memorial_only: false
+    source_ids: [src-hanshu-vol62]
+  - name: 司马迁祠墓
+    modern_name: 陕西省韩城市芝川镇司马迁祠
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 纪念地坐标待接入体系；不作确证到访处理
+    visit_date:
+      text: 不详
+      precision: 未知
+    kind: 纪念地
+    route_order: 12
+    memorial_only: true
+    confidence: 确定
+    dispute: 后世纪念建筑，非本人到访地；卒葬地正史无载，韩城祠墓为衣冠冢性质的纪念传统。
+    source_ids: []
+
+relations:
+  - relation_type: 思想影响
+    target_id: bangu
+    direction: 单向
+    period:
+      text: 东汉班固撰汉书时承其余绪（晚司马迁约百余年）
+      precision: 未知
+    evidence: 汉书司马迁传赞自述：司马迁据左氏国语采世本战国策述楚汉春秋接其后事讫于大汉——班固明言承其所述而续之；汉书又全录太史公自序节录与报任安书为之立传，纪传体例由史记开山而定。
+    inferred: true
+    confidence: 存疑
+    dispute: 此为史学史/文学史的归纳性影响关系，二人无直接交往可能；单向以司马迁为起点。
+    source_ids: [src-hanshu-vol62]
+
+reception:
+  - era: 同时代
+    evaluator: 朝廷与世俗舆论（报任安书自述语境）
+    quote: 明主不深晓，以为仆沮贰师，而为李陵游说，遂下于理。……重为天下观笑。
+    text_display: excerpt
+    comment: 同时代评价的原貌只能取自其自诉：为李陵一言而获诬上之罪，被刑之后身残处秽动而见尤，负下未易居下流多谤议——时人非议与皇权定性共同构成他生前所处的舆论处境，本卷如实分层呈现。
+    source_ids: [src-hanshu-vol62]
+  - era: 历代批评
+    evaluator: 班固（汉书·司马迁传赞）
+    quote: 又其是非颇缪于圣人，论大道则先黄老而后六经，序游侠则退处士而进奸雄，述货殖则崇埶利而羞贱贫，此其所蔽也。
+    text_display: excerpt
+    comment: 汉书传末的官方批评，指其思想立场不合于儒家正统；此评成为历代尊经派贬抑史记的经典依据，与其对史记体例的继承形成耐人寻味的对照。
+    source_ids: [src-hanshu-vol62]
+  - era: 历代批评
+    evaluator: 刘向、扬雄（转见汉书传赞）
+    quote: 皆称迁有良史之材，服其善序事理，辨而不华，质而不俚，其文直，其事核，不虚美，不隐恶，故谓之实录。
+    text_display: excerpt
+    comment: 汉代最具分量的正面定评，实录二字自此成为史家最高荣誉；班固虽批评其是非而仍服其文章，两评并存恰见汉代评价的张力。
+    source_ids: [src-hanshu-vol62]
+  - era: 历代批评
+    evaluator: 韩愈、柳宗元等唐宋文家（综述）
+    quote: ""
+    text_display: none
+    comment: 唐宋古文运动以降，韩愈柳宗元以下文家普遍尊史记为文章典范，以为三代以下之文莫尚于司马迁；此层属文学史共识的中性转述，具体论著原文未实取，来源留空以待补核。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究聚焦生卒年推算（前145与前135两说）、李陵案的政治语境与受刑年份考辨、史记十篇亡缺问题、实录与文学性（史家之绝唱无韵之离骚）的双重品格等议题；具体论著引文须逐条取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 廉颇蔺相如（完璧归赵负荆请罪）、陈涉世家（燕雀安知鸿鹄之志）、报任安书节选等长期入选中小学及大学语文教材；司马迁忍辱著书的形象成为坚韧人格的文化符号。教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+
+sources_used: [src-hanshu-vol62]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。17条年谱、7篇作品、12处足迹、1组关系、6层接受史（覆盖5个时代层）。汉书卷62与报任少卿书均为维基文库实取；生年两说、受刑年份、卒年无载等全部落dispute字段}

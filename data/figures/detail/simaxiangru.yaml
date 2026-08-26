@@ -1,0 +1,622 @@
+# 司马相如全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 史记·卷117·司马相如列传(J) | 结论与置信 |
+# |---|---|---|
+# | 籍贯名字 | 蜀郡成都人也字长卿；少时好读书学击剑，亲名之曰犬子；慕蔺相如之为人更名相如 | 确定(J) |
+# | 入仕 | 以赀为郎，事孝景帝为武骑常侍非其好也；会景帝不好辞赋 | 确定(J) |
+# | 游梁 | 因病免客游梁，与邹阳枚乘庄忌诸生同舍居数岁，乃著子虚之赋 | 确定(J) |
+# | 归蜀 | 梁孝王卒相如归而家贫无以自业，素与临邛令王吉相善 | 确定(J) |
+# | 琴挑文君 | 文君新寡好音，相如缪与令相重而以琴心挑之；文君夜亡奔相如驰归成都，家居徒四壁立 | 确定(J)——细节按史记原文录 |
+# | 当垆涤器 | 俱之临邛买一酒舍酤酒令文君当炉，相如身自着犊鼻褌与保庸杂作涤器于市中 | 确定(J) |
+# | 分财 | 卓王孙不得已分予文君僮百人钱百万及其嫁时衣被财物；文君乃与相如归成都买田宅为富人 | 确定(J) |
+# | 狗监荐引 | 上读子虚赋而善之曰朕独不得与此人同时哉；狗监杨得意言臣邑人司马相如自言为此赋，上惊召问 | 确定(J) |
+# | 以为郎 | 相如请为天子游猎赋，赋成奏之，天子大说；赋奏天子以为郎 | 确定(J) |
+# | 通西南夷 | 使相如责唐蒙因喻告巴蜀民；拜中郎将建节往使，略定西夷邛筰厓駹斯榆皆请为内臣；卓王孙喟然而叹厚分与其女财与男等同 | 确定(J) |
+# | 难蜀父老 | 相如欲谏业已建之不敢，乃著书藉以蜀父老为辞而己诘难之以风天子 | 确定(J) |
+# | 受金失官 | 人有上书言相如使时受金失官，居岁余复召为郎 | 确定(J) |
+# | 谏猎 | 常从上至长杨猎上疏谏之；还过宜春宫奏赋以哀二世行失 | 确定(J) |
+# | 孝文园令 | 相如拜为孝文园令；见上好仙道遂就大人赋奏之，天子大说飘飘有凌云之气 | 确定(J) |
+# | 病免与卒 | 相如既病免家居茂陵；使所忠往取书而相如已死家无书，遗札书言封禅事奏所忠，忠奏其书天子异之 | 确定(J) |
+# | 生卒年 | 正史无明文 | 约前179—前118，系学界通说推算，存疑 |
+# | 长门赋美人赋琴歌 | 本传不载 | 见《文选》《古文苑》《玉台新咏》等后世文献，属集外层，存疑记录 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: simaxiangru
+
+profile:
+  courtesy_name: 长卿
+  art_name: ""
+  aliases: [赋圣]
+  gender: 男
+  ethnicity: ""
+  ancestry: 蜀郡成都
+  birthplace: 蜀郡成都
+  death_place: 茂陵
+  offices: [武骑常侍, 郎, 中郎将, 孝文园令]
+  fields: [文学]
+  roles: [辞赋家]
+  summary: 汉赋的巅峰代表作家，以《子虚赋》《上林赋》确立大赋体制；琴挑文君当垆涤器的传奇与临终遗篇封禅事，使其成为文学史与大众传说双重意义上的名人。
+
+timeline:
+  # ── 阶段一：蜀郡少年 ──────────────────────────────
+  - stage: 蜀郡少年
+    stage_order: 1
+    title: 出生于蜀郡成都
+    date:
+      text: "约前179年"
+      year: -179
+      precision: 约
+    place: 蜀郡成都
+    summary: 司马相如者，蜀郡成都人也，字长卿。生年正史无明文，约前179系据景帝初入仕等行迹倒推的学界通说。
+    confidence: 存疑
+    dispute: 生卒年正史均无明文记载，约前179—前118全系后人推算，各家常有一两年出入。
+    source_ids: [src-shiji-vol117]
+  - stage: 蜀郡少年
+    stage_order: 2
+    title: 好读书学击剑，名犬子慕蔺相如更名
+    date:
+      text: 少年时期，具体年份不详
+      precision: 未知
+    place: 蜀郡成都
+    summary: 少时好读书学击剑，故其亲名之曰犬子。相如既学，慕蔺相如之为人，更名相如——改名寄寓建功立国之志。
+    source_ids: [src-shiji-vol117]
+
+  # ── 阶段二：武骑常侍与客游梁国 ────────────────────
+  - stage: 武骑常侍与客游梁国
+    stage_order: 3
+    title: 以赀为郎，事孝景帝为武骑常侍
+    date:
+      text: 约前155年前后
+      year: -155
+      precision: 约
+    place: 长安
+    summary: 以赀为郎，事孝景帝，为武骑常侍，非其好也。会景帝不好辞赋，其文学抱负在朝廷无所施展。入仕年份系据景帝朝行迹推定。
+    confidence: 存疑
+    dispute: 以赀为郎的确切年份无载，此处系推定。
+    source_ids: [src-shiji-vol117]
+  - stage: 武骑常侍与客游梁国
+    stage_order: 4
+    title: 病免客游梁，与邹阳枚乘同舍著《子虚赋》
+    date:
+      text: 约前154—前146年之间
+      year: -154
+      range_end: -146
+      precision: 范围
+    place: 梁国睢阳
+    summary: 会梁孝王朝，从游说之士齐人邹阳、淮阴枚乘、吴庄忌夫子之徒，相如见而说之，因病免，客游梁。梁孝王令与诸生同舍，得与诸生游士居数岁，乃著《子虚之赋》。梁孝王卒于前143年，游梁下限据此。
+    confidence: 存疑
+    dispute: 游梁起讫年份系据景帝朝政局与梁孝王卒年推定；《史记》仅称「居数岁」。
+    source_ids: [src-shiji-vol117]
+
+  # ── 阶段三：临邛琴挑与当垆 ────────────────────────
+  - stage: 临邛琴挑与当垆
+    stage_order: 5
+    title: 梁孝王卒，归成都家贫徒四壁
+    date:
+      text: 约前143—前142年之间
+      year: -143
+      range_end: -142
+      precision: 范围
+    place: 成都
+    summary: 会梁孝王卒，相如归，而家贫，无以自业。素与临邛令王吉相善，吉曰长卿久宦游不遂而来过我，于是相如往舍都亭。
+    source_ids: [src-shiji-vol117]
+  - stage: 临邛琴挑与当垆
+    stage_order: 6
+    title: 卓氏盛宴，鼓一再行以琴心挑文君
+    date:
+      text: 约前142—前141年之间
+      year: -142
+      range_end: -141
+      precision: 范围
+    place: 临邛卓王孙宅
+    summary: 临邛令缪为恭敬日往朝相如。富人卓王孙程郑为具召之，相如不得已强往，一坐尽倾。酒酣临邛令前奏琴，相如为鼓一再行。是时卓王孙有女文君新寡好音，故相如缪与令相重，而以琴心挑之。文君窃从户窥之心悦而好之。
+    confidence: 存疑
+    dispute: 宴会与琴挑的具体年份无载系推定；本条按《史记》原文层录「以琴心挑之为鼓一再行」，所弹曲目正史未言，《凤求凰》歌辞属集外层材料另列于作品区并标存疑。
+    source_ids: [src-shiji-vol117]
+  - stage: 临邛琴挑与当垆
+    stage_order: 7
+    title: 文君夜奔，驰归成都家徒四壁
+    date:
+      text: 约前142—前141年之间
+      year: -142
+      range_end: -141
+      precision: 范围
+    place: 临邛、成都
+    summary: 既罢，相如乃使人重赐文君侍者通殷勤。文君夜亡奔相如，相如乃与驰归成都，家居徒四壁立。卓王孙大怒曰女至不材我不忍杀不分一钱也。
+    confidence: 存疑
+    dispute: 夜奔细节按《史记》本传原文录入；具体年份系推定。
+    source_ids: [src-shiji-vol117]
+  - stage: 临邛琴挑与当垆
+    stage_order: 8
+    title: 俱之临邛，文君当垆相如犊鼻裈涤器
+    date:
+      text: 约前142—前141年之间
+      year: -142
+      range_end: -141
+      precision: 范围
+    place: 临邛酒舍
+    summary: 文君久之不乐劝其第俱如临邛从昆弟假贷犹足为生。相如与俱之临邛，尽卖其车骑，买一酒舍酤酒，而令文君当炉；相如身自著犊鼻褌，与保庸杂作，涤器于市中。卓王孙闻而耻之为杜门不出。
+    source_ids: [src-shiji-vol117]
+  - stage: 临邛琴挑与当垆
+    stage_order: 9
+    title: 卓王孙分予僮百人钱百万，复归成都买田宅
+    date:
+      text: 约前141—前140年之间
+      year: -141
+      range_end: -140
+      precision: 范围
+    place: 临邛、成都
+    summary: 昆弟诸公更谓王孙，谓长卿虽贫其人材足依也且又令客。卓王孙不得已，分予文君僮百人钱百万及其嫁时衣被财物。文君乃与相如归成都，买田宅，为富人。
+    confidence: 存疑
+    dispute: 分财与迁归年份无载，系依事件链推定。
+    source_ids: [src-shiji-vol117]
+
+  # ── 阶段四：武帝召见 ──────────────────────────────
+  - stage: 武帝召见与供奉
+    stage_order: 10
+    title: 武帝读《子虚赋》，狗监杨得意荐引召问
+    date:
+      text: 约前136年前后
+      year: -136
+      precision: 约
+    place: 长安
+    summary: 居久之，蜀人杨得意为狗监侍上。上读《子虚赋》而善之，曰朕独不得与此人同时哉！得意曰臣邑人司马相如自言为此赋，上惊，乃召问相如。
+    confidence: 存疑
+    dispute: 召见年份正史无载，约前136系学界依武帝即位与唐蒙事推定的通说。
+    source_ids: [src-shiji-vol117]
+  - stage: 武帝召见与供奉
+    stage_order: 11
+    title: 奏天子游猎赋，天子以为郎
+    date:
+      text: 约前136—前135年之间
+      year: -136
+      range_end: -135
+      precision: 范围
+    place: 长安
+    summary: 相如曰此乃诸侯之事未足观也，请为天子游猎赋。以「子虚」虚言为楚称、「乌有先生」乌有事为齐难、「无是公」无是人明天子之义，空借此三人为辞推天子诸侯之苑囿，其卒章归之于节俭因以风谏。奏之天子大说，赋奏天子以为郎。
+    source_ids: [src-shiji-vol117]
+
+  # ── 阶段五：奉使通西南夷 ──────────────────────────
+  - stage: 奉使通西南夷
+    stage_order: 12
+    title: 使蜀责唐蒙，喻告巴蜀民
+    date:
+      text: 约前130年前后
+      year: -130
+      precision: 约
+    place: 巴蜀
+    summary: 唐蒙使略通夜郎西僰中，发巴蜀吏卒诛其渠帅，巴蜀民大惊恐。上闻之，乃使相如责唐蒙，因喻告巴蜀民以非上意，作檄喻巴蜀太守，申明发卒之事皆非陛下之意。
+    confidence: 存疑
+    dispute: 奉使年份系据唐蒙通夜郎事推定。
+    source_ids: [src-shiji-vol117]
+  - stage: 奉使通西南夷
+    stage_order: 13
+    title: 拜中郎将建节往使，略定西夷
+    date:
+      text: 约前129—前128年之间
+      year: -129
+      range_end: -128
+      precision: 范围
+    place: 邛筰厓駹之地（今川西南一带）
+    summary: 邛筰之君长多愿为内臣妾请吏比南夷。天子问相如，对曰邛筰厓駹近蜀道亦易通秦时尝通为郡县。乃拜相如为中郎将，建节往使。至蜀，蜀太守以下郊迎，县令负弩矢先驱，蜀人以为宠。卓王孙喟然而叹，自以得使女尚司马长卿晚，厚分与其女财，与男等同。略定西夷，邛筰厓駹斯榆之君皆请为内臣，除边关，西至沬若水，南至牂柯为徼，通零关道桥孙水。还报天子大说。
+    confidence: 存疑
+    dispute: 建节出使年份系学界推定，诸谱系略有出入。
+    source_ids: [src-shiji-vol117]
+  - stage: 奉使通西南夷
+    stage_order: 14
+    title: 著《难蜀父老》，借诘难以风天子
+    date:
+      text: 约前128年前后
+      year: -128
+      precision: 约
+    place: 蜀
+    summary: 相如使时蜀长老多言通西南夷不为用，大臣亦以为然。相如欲谏，业已建之不敢，乃著书籍以蜀父老为辞而己诘难之，以风天子，且因宣其使指令百姓知天子之意。文中世必有非常之人然后有非常之事遂成名句。
+    source_ids: [src-shiji-vol117]
+  - stage: 奉使通西南夷
+    stage_order: 15
+    title: 人上书言受金，失官岁余复召为郎
+    date:
+      text: 约前128—前126年之间
+      year: -128
+      range_end: -126
+      precision: 范围
+    place: 长安
+    summary: 其后人有上书言相如使时受金，失官。居岁余，复召为郎。受贿有无无从考实，《史记》仅录其事。
+    confidence: 存疑
+    dispute: 受金案详情失官起讫年份均无明文。
+    source_ids: [src-shiji-vol117]
+
+  # ── 阶段六：晚年与身后 ────────────────────────────
+  - stage: 晚年与身后
+    stage_order: 16
+    title: 从上长杨猎上疏谏，过宜春奏赋哀二世
+    date:
+      text: 武帝朝中期，确切年份不详
+      precision: 未知
+    place: 长安、宜春宫
+    summary: 相如口吃而善著书，常有消渴疾，称病闲居不慕官爵。常从上至长杨猎，天子方好自击熊彘驰逐野兽，相如上疏谏之，引鄙谚家累千金坐不垂堂。上善之。还过宜春宫，相如奏赋以哀二世行失也。
+    source_ids: [src-shiji-vol117]
+  - stage: 晚年与身后
+    stage_order: 17
+    title: 拜孝文园令，奏《大人赋》天子飘飘凌云
+    date:
+      text: 武帝朝中期，确切年份不详
+      precision: 未知
+    place: 长安
+    summary: 相如拜为孝文园令。见上好仙道，因曰上林之事未足美也尚有靡者臣尝为大人赋未就请具而奏之。相如以为列仙之传居山泽间形容甚臞，此非帝王仙意也，乃遂就《大人赋》。既奏，天子大说，飘飘有凌云之气，似游天地之间意。
+    source_ids: [src-shiji-vol117]
+  - stage: 晚年与身后
+    stage_order: 18
+    title: 病免家居茂陵
+    date:
+      text: 约前119年前后
+      year: -119
+      precision: 约
+    place: 茂陵
+    summary: 相如既病免，家居茂陵。与卓氏婚饶于财，进仕宦未尝肯与公卿国家之事，称病闲居不慕官爵。病免与移居年份系由卒年倒推。
+    confidence: 存疑
+    dispute: 病免年份正史无载系推定。
+    source_ids: [src-shiji-vol117]
+  - stage: 晚年与身后
+    stage_order: 19
+    title: 卒于茂陵，遗札书言封禅事
+    date:
+      text: "约前118年"
+      year: -118
+      precision: 约
+    place: 茂陵
+    summary: 天子曰司马相如病甚可往从悉取其书若不然后失之矣。使所忠往而相如已死家无书。问其妻，对曰长卿未死时为一卷书曰有使者来求书奏之。其遗札书言封禅事，忠奏其书，天子异之。相如既卒五岁天子始祭后土，八年而遂先礼中岳封于泰山至梁父禅肃然——遗篇竟成封禅大典的理论先声。
+    confidence: 存疑
+    dispute: 卒年约前118系推算，正史无明文；卒年直接决定生年前179之说亦随之存疑。
+    source_ids: [src-shiji-vol117]
+
+works:
+  - work_id: zixu-fu
+    title: 子虚赋
+    alt_titles: []
+    genre: 大赋
+    date:
+      text: 客游梁国期间，约前150年代
+      year: -150
+      range_end: -146
+      precision: 范围
+    place: 梁国睢阳
+    context: 与邹阳枚乘等梁苑游士同居数岁间所著。借楚使子虚夸云梦之猎、乌有先生折之，为后来天子游猎赋的前半骨架。武帝读之叹不得与此人同时，遂有狗监荐引召见之事。
+    attribution: 确凿
+    excerpt: 臣之所见，盖特其小小者耳，名曰云梦。云梦者，方九百里，其中有山焉。其山则盘纡茀郁，隆崇嵂崒；岑岩参差，日月蔽亏；交错纠纷，上干青云。
+    text_display: excerpt
+    themes: [苑囿, 田猎, 夸饰]
+    influence: 汉大赋体制的奠基之作之一，「子虚乌有」由此成为虚构的代词。
+    confidence: 存疑
+    dispute: 《史记》所载为客梁所著「子虚之赋」，与武帝朝所奏天子游猎赋的篇题分合关系历来有讨论，详见上林赋条。
+    source_ids: [src-shiji-vol117]
+
+  - work_id: shanglin-fu
+    title: 上林赋（天子游猎赋）
+    alt_titles: [天子游猎赋]
+    genre: 大赋
+    date:
+      text: 约前136—前135年之间奏上
+      year: -136
+      range_end: -135
+      precision: 范围
+    place: 长安
+    context: 召见后应武帝之请而作，无是公盛陈天子之上林以压齐楚之争，卒章归之节俭以寓风谏。赋奏天子以为郎。《汉书》《文选》析子虚上林为两题，《史记》合载为一篇。
+    attribution: 确凿
+    excerpt: 君未睹夫巨丽也，独不闻天子之上林乎？左苍梧，右西极，丹水更其南，紫渊径其北……荡荡兮八川分流，相背而异态。
+    text_display: excerpt
+    themes: [苑囿, 田猎, 风谏]
+    influence: 确立了劝百讽一的汉大赋范式，为扬雄、班固等竞相摹习的典范。
+    confidence: 存疑
+    dispute: 篇题分合问题：《史记》以子虚上林连为一体称天子游猎赋，《汉书艺文志》《文选》始分题二篇；作于此说外另有改定旧稿说。
+    source_ids: [src-shiji-vol117]
+
+  - work_id: daren-fu
+    title: 大人赋
+    alt_titles: [大人之颂]
+    genre: 大赋
+    date:
+      text: 孝文园令任上，确切年份不详
+      precision: 未知
+    place: 长安
+    context: 相如见上好仙道，以为列仙居山泽形容甚臞非帝王仙意，乃就大人赋以讽。奏之天子大说飘飘有凌云之气——欲谏反成劝，风谏失效的著名个案。
+    attribution: 确凿
+    excerpt: 世有大人兮，在于中州。宅弥万里兮，曾不足以少留。悲世俗之迫隘兮，朅轻举而远游。……下峥嵘而无地兮，上寥廓而无天。视眩眠而无见兮，听惝恍而无闻。乘虚无而上假兮，超无友而独存。
+    text_display: excerpt
+    themes: [神仙, 远游, 讽谏]
+    influence: 反向效果的讽谏名例，常被用为汉代献赋制度批评的标本。
+    source_ids: [src-shiji-vol117]
+
+  - work_id: jian-lie-shu
+    title: 上书谏猎
+    alt_titles: [谏猎疏, 谏猎书]
+    genre: 奏疏
+    date:
+      text: 武帝朝中期，确切年份不详
+      precision: 未知
+    place: 长杨宫一带
+    context: 天子方好自击熊彘驰逐野兽，相如随行上疏谏止，引家累千金坐不垂堂之谚，谓轻万乘之重乐出万有一危之涂以为娱臣窃为陛下不取也。上善之。
+    attribution: 确凿
+    excerpt: 盖明者远见于未萌，而智者避危于无形；祸固多藏于隐微，而发于人之所忽者也。故鄙谚曰「家累千金，坐不垂堂」。此言虽小，可以喻大。
+    text_display: excerpt
+    themes: [谏诤, 明哲保身]
+    influence: 明者远见于未萌成为传世格言，历代谏书常引。
+    source_ids: [src-shiji-vol117]
+
+  - work_id: nan-shufulao
+    title: 难蜀父老
+    alt_titles: [喻难蜀父老]
+    genre: 散体文（设难问答）
+    date:
+      text: 约前128年前后，奉使还报之际
+      year: -128
+      precision: 约
+    place: 蜀
+    context: 通西南夷劳费而蜀长者多言不便，相如欲谏业已建之不敢，乃设蜀父老二十七人与使者问答，己诘难之以风天子，宣明开边之义。
+    attribution: 确凿
+    excerpt: 盖世必有非常之人，然后有非常之事；有非常之事，然后有非常之功。非常者，固常之所异也。
+    text_display: excerpt
+    themes: [经略, 风谏]
+    influence: 非常之人非常之事成为历代开拓叙事的经典语汇。
+    confidence: 存疑
+    dispute: 作年系于奉使期间，学界依《史记》叙次推定。
+    source_ids: [src-shiji-vol117]
+
+  - work_id: ai-ershi-fu
+    title: 哀二世赋
+    alt_titles: []
+    genre: 骚体赋
+    date:
+      text: 武帝朝中期，确切年份不详
+      precision: 未知
+    place: 宜春宫
+    context: 上善谏猎之言，还过宜春宫，相如奏赋以哀二世行失——借秦二世持身不谨信谗不寤以致宗庙灭绝，婉讽武帝。
+    attribution: 确凿
+    excerpt: 持身不谨兮，亡国失势。信谗不寤兮，宗庙灭绝。呜呼哀哉！操行之不得兮，坟墓芜秽而不修兮，魂无归而不食。
+    text_display: excerpt
+    themes: [吊古, 讽谏]
+    influence: 以秦亡为镜的短章骚赋，与谏猎疏同为其兼擅讽谕的证据。
+    source_ids: [src-shiji-vol117]
+
+  - work_id: fengshan-wen
+    title: 封禅文
+    alt_titles: [遗札书]
+    genre: 文（颂赞）
+    date:
+      text: 临终所作，约前118年
+      year: -118
+      precision: 约
+    place: 茂陵
+    context: 家无余书，惟临终预为一卷书嘱妻曰有使者来求书奏之。遗札言封禅事，奏所忠，忠奏其书天子异之。卒后五岁祭后土，八年遂封泰山禅梁父，遗篇与盛典遥相呼应。
+    attribution: 确凿
+    excerpt: 兴必虑衰，安必思危。……圣王之德，兢兢翼翼也。
+    text_display: excerpt
+    themes: [封禅, 颂德]
+    influence: 中国历史上少有的「身后生效」的政治文书，直接为武帝封禅提供文本依据。
+    confidence: 存疑
+    dispute: 卒年约前118系推算；封禅文与武帝元封封禅的呼应关系系《史记》叙次所示，其间因果程度学者有不同解读。
+    source_ids: [src-shiji-vol117]
+
+  - work_id: changmen-fu
+    title: 长门赋
+    alt_titles: []
+    genre: 骚体赋
+    date:
+      text: 不详（托言武帝时陈皇后事）
+      precision: 未知
+    place: ""
+    context: 《文选》所收本题序言称陈皇后失宠别在长门宫，闻相如工文章奉黄金百斤令取愁思之辞，相如为之而皇后复得亲幸。赋写佳人望君之不来，凄婉深致。
+    attribution: 存疑
+    excerpt: 夫何一佳人兮，步逍遥以自虞。魂逾佚而不反兮，形枯槁而独居。
+    text_display: excerpt
+    themes: [宫怨, 抒情]
+    influence: 后世宫怨文学的源头文本之一，「长门」成为失宠幽居的经典意象。
+    confidence: 有争议
+    dispute: 归属历来有争议：《史记》《汉书》均不载此事，赋序所叙黄金买赋情节被多数近现代学者视为后人敷演，或疑为托名之作；本卷按存疑著录。出处《文选》尚未登记来源，source_ids 留空待补。
+    source_ids: []
+
+  - work_id: meiren-fu
+    title: 美人赋
+    alt_titles: []
+    genre: 赋
+    date:
+      text: 不详
+      precision: 未知
+    place: ""
+    context: 见于后世辑本《古文苑》，设东邻女子登墙窥臣三年而相如不为动之类情节，以自守答谤。文体与《西京杂记》所存相如逸闻互有纠缠。
+    attribution: 托名
+    excerpt: ""
+    text_display: none
+    themes: [自守, 辨诬]
+    influence: 常与登徒子好色赋对读，作为汉代艳情辩诬题材的样本。
+    confidence: 有争议
+    dispute: 真伪聚讼已久：《史记》《汉书》本传及艺文志皆不载，多数学者认为系后人依托；因来源文献未登记且真伪未决，本卷不作原文摘录。
+    source_ids: []
+
+  - work_id: qinge-ershou
+    title: 琴歌二首（其一·凤求凰）
+    alt_titles: [凤求凰]
+    genre: 琴歌
+    date:
+      text: 传说系于琴挑文君之时，年代不详
+      precision: 未知
+    place: 临邛
+    context: 正史层面《史记》只记相如于卓氏宴上「为鼓一再行」而以琴心挑之，并未载歌辞。凤求凰歌辞见于后世所编《玉台新咏》等集外文献，与《西京杂记》系统的传闻共同构成琴挑故事的后出层。
+    attribution: 托名
+    excerpt: 凤兮凤兮归故乡，遨游四海求其凰。
+    text_display: excerpt
+    themes: [求偶, 琴挑]
+    influence: 凤求凰成为中国爱情文化的核心符号，戏曲小说母题之源。
+    confidence: 传说
+    dispute: 属集外层材料而非正史：歌辞晚出，异文繁多（求其凰/求其皇），学界多认为经后人润色或依托，不可与本传「琴心挑之」混为一谈；本卷分层著录。
+    source_ids: []
+
+footprints:
+  - name: 成都故里
+    modern_name: 四川省成都市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约前179年生，少年在此读书学击剑；分财后与文君归成都买田宅"
+      year: -179
+      range_end: -140
+      precision: 范围
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    coord_source_note: 出生年为推算值，故整条按推定处理
+    confidence: 存疑
+    dispute: 生年约前179系推算；故居具体方位后世记载不一。
+    source_ids: [src-shiji-vol117]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 两度居京：事孝景为武骑常侍；武帝朝召为郎、拜中郎将、孝文园令
+      year: -155
+      range_end: -119
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-shiji-vol117]
+  - name: 梁国睢阳
+    modern_name: 河南省商丘市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约前154—前146年之间客游梁孝王门下数岁
+      year: -154
+      range_end: -146
+      precision: 范围
+    kind: 游历
+    route_order: 3
+    memorial_only: false
+    confidence: 存疑
+    dispute: 游梁起讫年份系据梁孝王卒年推定。
+    source_ids: [src-shiji-vol117]
+  - name: 临邛
+    modern_name: 四川省邛崃市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约前143—前140年之间，琴挑文君、当垆涤器、岳父分财俱在此前后
+      year: -143
+      range_end: -140
+      precision: 范围
+    kind: 居住
+    route_order: 4
+    memorial_only: false
+    confidence: 存疑
+    dispute: 各事件年份无载，系依事件链推定；文君井等遗迹均为后世纪念建构。
+    source_ids: [src-shiji-vol117]
+  - name: 西南夷道
+    modern_name: 四川宜宾、西昌至云南曲靖、贵州西部一线
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 建节所略西夷邛筰厓駹的地望系学界通行推定，坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: 约前129—前128年之间，拜中郎将建节往使略定西夷
+      year: -129
+      range_end: -128
+      precision: 范围
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 使程路线与驻节地点正史仅有方向性记载，具体行经路线系推定。
+    source_ids: [src-shiji-vol117]
+  - name: 茂陵
+    modern_name: 陕西省咸阳市兴平市南位镇策村一带
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 相如家居茂陵的邑里系依汉制与后世记载推定，坐标暂缺
+    visit_date:
+      text: 约前119年前后病免家居，约前118年卒于此
+      year: -119
+      range_end: -118
+      precision: 范围
+    kind: 逝世
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 病免与卒年均系推算，正史无明文；墓冢位置后世多有迁改之说。
+    source_ids: [src-shiji-vol117]
+
+relations:
+  - relation_type: 思想影响
+    target_id: simaqian
+    direction: 单向
+    period:
+      text: 相如卒（约前118）后，司马迁著史为其立专篇
+      year: -118
+      precision: 约
+    evidence: 《史记》卷一百一十七即司马迁亲撰的司马相如列传，全文收录子虚、上林（天子游猎赋）、大人、哀二世、封禅诸篇并系传主生平，是关于相如的第一手史料；太史公曰评「相如虽多虚辞滥说，然其要归引之节俭，此与诗之风谏何异」。须说明：此为传主关系而非可证实的两人交往——相如卒时司马迁年少，现存史料无二人直接往来记载。
+    inferred: true
+    confidence: 存疑
+    dispute: 本条实为史学编纂关联而非人际交往，direction 单向仅表示史料收录与评价的方向；二人交往传闻均无史据。「赋家之心」语境出自后世文献，本卷来源未登记，不予引用。
+    source_ids: [src-shiji-vol117]
+
+reception:
+  - era: 同时代
+    evaluator: 汉武帝刘彻
+    quote: 朕独不得与此人同时哉！
+    text_display: excerpt
+    comment: 武帝读《子虚赋》后的感叹（《史记》本传），直接引发狗监杨得意荐引召见；其后读《大人赋》又飘飘有凌云之气。帝王的两度激赏奠定了相如在当世的地位。
+    source_ids: [src-shiji-vol117]
+  - era: 同时代
+    evaluator: 司马迁（太史公曰）
+    quote: 相如虽多虚辞滥说，然其要归引之节俭，此与诗之风谏何异。
+    text_display: excerpt
+    comment: 太史公在专篇末尾为汉赋辩护的总评，将其纳入诗经讽谏传统；同段又引扬雄「劝百风一」之讥并存两说，显示史家态度的复杂性。
+    source_ids: [src-shiji-vol117]
+  - era: 历代批评
+    evaluator: 扬雄
+    quote: 靡丽之赋，劝百风一，犹驰骋郑卫之声，曲终而奏雅，不已亏乎？
+    text_display: excerpt
+    comment: 此语见于《史记》卷一百一十七太史公曰所引（该段落是否司马迁原笔抑或后人增补，学界有讨论）。扬雄晚年悔作赋，于《法言·吾子》更有「童子雕虫篆刻」「壮夫不为」之论——《法言》来源本卷尚未登记，故该句仅在此中立转述而不录引文。扬雄的批评开启了此后两千年对汉赋价值聚讼不休的传统。
+    confidence: 有争议
+    dispute: 「劝百风一」段的作者归属（司马迁原笔/褚少孙以降补缀）本身即是学术公案；《法言》引文未登记来源，暂不摘引。
+    source_ids: [src-shiji-vol117]
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 研究聚焦三大议题：其一，大赋体制研究——子虚上林的篇题分合、劝讽结构与散体大赋的形成机制；其二，真伪考辨——《长门赋》《美人赋》归属与《琴歌》凤求凰的晚出问题；其三，生卒年推算与通西南夷史事的系年。具体论著引文须逐条取得许可后补入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 大众传播与戏曲传统
+    quote: ""
+    text_display: none
+    comment: 琴挑文君、当垆卖酒的故事经由《西京杂记》系统与后世戏曲小说不断敷演，成为才子佳人叙事的祖型母题，「凤求凰」「愿得一心人」（白头吟系统，归属另议）化为爱情文化符号；相如故里（成都/蓬安）、文君井等纪念景观持续生成。教材选篇情况随学期变动，录入时须另行核验。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 影视改编综述
+    quote: ""
+    text_display: none
+    comment: 相关影视剧与网络内容多据传说层敷演琴挑与私奔情节，与《史记》正史层出入较大；本项目仅将影视呈现视为当代接受现象记录，不作史实依据。
+    source_ids: []
+
+sources_used: [src-shiji-vol117]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。19条年谱、10件作品、6处足迹、1组关系、6条接受史。唯一实取来源为维基文库《史记》卷117（成功抓取）；生卒约前179—前118存疑标注；长门赋美人赋琴歌按集外层分层著录}

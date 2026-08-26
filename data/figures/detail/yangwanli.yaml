@@ -1,0 +1,736 @@
+# 杨万里全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 宋史·卷433·列传192·儒林三·杨万里传（维基文库实取） | 结论与置信 |
+# |---|---|---|
+# | 名号籍贯 | 楊萬里，字廷秀，吉州吉水人 | 确定 |
+# | 及第释褐 | 中紹興二十四年進士第，為贛州司戶，調永州零陵丞 | 确定；及第年份1154可精确 |
+# | 诚斋之诲 | 時張浚謫永，杜門謝客，萬里三往不得見，以書力請，始見之。浚勉以正心誠意之學，萬里服其教終身，乃名讀書之室曰「誠齋」 | 确定 |
+# | 荐起与县治 | 浚入相，薦之朝。除臨安府教授，未赴，丁父憂。改知隆興府奉新縣，戢追胥不入鄉……縣以大治 | 确定 |
+# | 抗疏留栻 | 侍講張栻以論張說出守袁，萬里抗疏留栻……而公論偉之 | 确定 |
+# | 广东平盗与仁者之勇 | 盜沈師犯南粵，帥師往平之。孝宗稱之曰「仁者之勇」，遂有大用意，就除提點刑獄。請於潮、惠二州築外砦 | 确定 |
+# | 地震应诏上书 | 淳熙十二年五月，以地震，應詔上書曰：臣聞言有事於無事之時，不害其為忠…… | 确定 |
+# | 东宫侍读 | 東宮講官闕，帝親擢萬里為侍讀。宮僚以得端人相賀……太子深敬之 | 确定 |
+# | 献人才名录 | 即疏朱熹、袁樞以下六十人以獻，淮次第擢用之 | 确定 |
+# | 直谏获谴 | 萬里上疏詆之，力言張浚當預，且謂邁無異指鹿為馬。孝宗覽疏不悅，曰：「萬里以朕為何如主？」由是以直秘閣出知筠州 | 确定 |
+# | 铁钱忤意不复出 | 萬里疏其不便，不奉詔，忤宰相意，改知贛州，不赴，乞祠……提舉萬壽宮，自是不復出矣 | 确定 |
+# | 拒为南园记 | 屬萬里為之記，許以掖垣。萬里曰：「官可棄，記不可作也。」……臥家十五年，皆其柄國之日也 | 确定 |
+# | 临终恸哭 | 萬里慟哭失聲，亟呼紙書曰：「韓侂胄姦臣，專權無上，動兵殘民，謀危社稷，吾頭顱如許，報國無路，惟有孤憤！」又書十四言別妻子，筆落而逝 | 确定 |
+# | 卒年寿数 | 明年，升寶謨閣學士，卒，年八十三，贈光祿大夫 | 卒于开禧二年（1206）确定；惟「年八十三」与通行生年1127不合（按1127年生则享年八十），寿数存疑 |
+# | 光宗书斋名 | 光宗嘗為書「誠齋」二字，學者稱「誠齋先生」，賜諡「文節」 | 确定；谥号赐予年份本传未系年 |
+# | 诗才著述 | 萬里精於詩，嘗著《易傳》行於世 | 确定；《千虑策》不见本传，通行说法待另行核实（存疑） |
+# | 作品文本 | 小池、曉出淨慈寺送林子方、宿新市徐公店、閑居初夏午睡起、過松源晨炊漆公店、初入淮河四絕句、昭君怨咏荷上雨、寒雀、曉行望雲山、偶成均取维基文库单篇页公版原文 | 通行本层；个别异文（宿新市「新綠／花落」、闲居「濂／灑蕉葉」）已逐条标注 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: yangwanli
+
+profile:
+  courtesy_name: 廷秀
+  art_name: 诚斋
+  aliases: [杨诚斋, 诚斋先生]
+  gender: 男
+  ethnicity: ""
+  ancestry: 吉州吉水
+  birthplace: 吉州吉水（今江西省吉水县）
+  death_place: 吉州吉水（本传不载卒地，从通说卒于家）
+  offices: [赣州司户, 永州零陵丞, 临安府教授（未赴）, 知隆兴府奉新县, 国子博士, 太常博士, 吏部侍右郎官, 将作少监, 知漳州, 知常州, 提举广东常平茶盐, 提点广东刑狱, 尚左郎官, 太子侍读, 左司郎中, 秘书少监, 知筠州, 秘书监, 接伴金国贺正旦使, 江东转运副使, 知赣州（不赴）, 秘阁修撰, 宝谟阁直学士, 宝谟阁学士]
+  fields: [文学]
+  roles: [诗人]
+  summary: 南宋中兴四大诗人之一，独创活泼跳脱、自成机杼的「诚斋体」；一生刚直敢言，晚岁卧家十五年拒韩侂胄征召，闻权臣妄动兵事恸哭失声、笔落而逝。
+
+timeline:
+  # ── 阶段一：吉水少年 ──────────────────────────────
+  - stage: 吉水少年
+    stage_order: 1
+    title: 出生于吉州吉水
+    date:
+      text: "1127年"
+      year: 1127
+      precision: 精确
+    place: 吉州吉水
+    summary: 杨万里生于吉州吉水。生年从通行建炎元年（1127）说，与维基文库作者页标注一致；按本传卒年八十三逆推则为1124年前后，两说不合。
+    confidence: 存疑
+    dispute: 本传仅记卒年八十三，未载生年。通行1127年生与本传寿数记载相差约三岁，学界多以文集行状订正为1127年，此处从通行说并存疑。
+    source_ids: [src-yangwanli-zhuan]
+
+  # ── 阶段二：科第零陵与诚斋之诲 ────────────────────
+  - stage: 科第零陵与诚斋之诲
+    stage_order: 2
+    title: 绍兴二十四年进士及第
+    date:
+      text: "1154年"
+      year: 1154
+      precision: 精确
+    place: 临安
+    summary: 中紹興二十四年進士第。本传明确系年，是其仕履起点。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 科第零陵与诚斋之诲
+    stage_order: 3
+    title: 为赣州司户，调永州零陵丞
+    date:
+      text: 1154年及第之后数年间，具体年份不详
+      year: 1154
+      precision: 约
+    place: 赣州、永州零陵
+    summary: 初仕为赣州司户，继调永州零陵丞。州县佐杂小职，是其历练之始。
+    confidence: 存疑
+    dispute: 两任起讫年份本传无载，系依及第时间与张浚谪永时段推定。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 科第零陵与诚斋之诲
+    stage_order: 4
+    title: 三谒张浚不得见，以书力请始见之
+    date:
+      text: 约绍兴末年任零陵丞期间
+      year: 1157
+      range_end: 1162
+      precision: 范围
+    place: 永州
+    summary: 時張浚謫永，杜門謝客，萬里三往不得見，以書力請，始見之。以执弟子礼再三求教，终得名相倾接。
+    confidence: 存疑
+    dispute: 谒浚确年正史无载，系依张浚谪居永州与万里佐郡时段框定范围。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 科第零陵与诚斋之诲
+    stage_order: 5
+    title: 服膺正心诚意之学，名读书之室曰诚斋
+    date:
+      text: 见张浚之后，终身服其教；命名之年不详
+      year: 1157
+      range_end: 1162
+      precision: 范围
+    place: 永州
+    summary: 浚勉以正心誠意之學，萬里服其教終身，乃名讀書之室曰「誠齋」。斋名由此而来，后光宗尝为书「誠齋」二字，学者称诚斋先生。
+    confidence: 存疑
+    dispute: 命名确年无载，随谒浚时段推定；光宗御书二字的具体年份本传亦未系年。
+    source_ids: [src-yangwanli-zhuan]
+
+  # ── 阶段三：荐起庙堂 ──────────────────────────────
+  - stage: 荐起庙堂
+    stage_order: 6
+    title: 张浚入相荐之朝，除临安府教授未赴丁父忧
+    date:
+      text: 约1163—1164年间（隆兴初张浚再相时）
+      year: 1163
+      range_end: 1164
+      precision: 范围
+    place: 临安
+    summary: 浚入相，薦之朝。除臨安府教授，未赴，丁父憂。由张浚汲引进入朝廷铨选视野，旋因父丧去职。
+    confidence: 存疑
+    dispute: 荐举与除官年份据张浚隆兴再相时段推定。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 荐起庙堂
+    stage_order: 7
+    title: 知奉新县，戢追胥不入乡，县以大治
+    date:
+      text: 约1160年代后期，具体年份不详
+      year: 1167
+      precision: 约
+    place: 隆兴府奉新县
+    summary: 改知隆興府奉新縣，戢追胥不入鄉，民逋賦者揭其名市中，民讙趨之，賦不擾而足，縣以大治。约束衙役下乡扰民、以公示催缴代苛征，治术宽而有方。
+    confidence: 存疑
+    dispute: 知奉新年份据职历推定。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 荐起庙堂
+    stage_order: 8
+    title: 召为国子博士，抗疏留张栻
+    date:
+      text: 约乾道末至淳熙初
+      year: 1172
+      range_end: 1174
+      precision: 范围
+    place: 临安
+    summary: 会陳俊卿、虞允文为相交荐，召为国子博士。侍講張栻以論張說出守袁，萬里抗疏留栻，又遺允文書，以和同之說規之，栻雖不果留，而公論偉之。为留名儒不惜犯颜，公论由此重之。
+    confidence: 存疑
+    dispute: 张栻出守袁州在淳熙元年前后，万里抗疏的确切年份据此事系年推定。
+    source_ids: [src-yangwanli-zhuan]
+
+  # ── 阶段四：郡守岭海 ──────────────────────────────
+  - stage: 郡守岭海
+    stage_order: 9
+    title: 迁太常博士，转将作少监，出知漳州、改常州
+    date:
+      text: 约1174—1180年之间
+      year: 1174
+      range_end: 1180
+      precision: 范围
+    place: 临安、漳州、常州
+    summary: 遷太常博士，尋升丞兼吏部侍右郎官，轉將作少監，出知漳州，改常州。由朝列外放郡守，仕历遍及闽吴。
+    confidence: 存疑
+    dispute: 诸任职次第本传有载而年份俱略，系据职历与年谱推定区间。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 郡守岭海
+    stage_order: 10
+    title: 提举广东常平茶盐，帅师平沈师之乱
+    date:
+      text: 约1180—1182年之间
+      year: 1180
+      range_end: 1182
+      precision: 范围
+    place: 广东
+    summary: 尋提舉廣東常平茶鹽。盜沈師犯南粵，帥師往平之。以文臣提举亲督师旅靖乱，是其一生的罕见武功面。
+    confidence: 存疑
+    dispute: 平乱年份诸谱所记略有出入，取约值。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 郡守岭海
+    stage_order: 11
+    title: 孝宗称仁者之勇，就除提点刑狱，请于潮惠州筑砦
+    date:
+      text: 约1182—1183年之间
+      year: 1182
+      range_end: 1183
+      precision: 范围
+    place: 广东潮州、惠州
+    summary: 孝宗稱之曰「仁者之勇」，遂有大用意，就除提點刑獄。請於潮、惠二州築外砦，潮以鎮賊之巢，惠以扼賊之路。俄以憂去。御前嘉许而至经边之议，旋遭母忧离任。
+    confidence: 存疑
+    dispute: 就除提点刑狱与忧去年份据职历推定。
+    source_ids: [src-yangwanli-zhuan]
+
+  # ── 阶段五：枢廷言事 ──────────────────────────────
+  - stage: 枢廷言事
+    stage_order: 12
+    title: 免丧召还，地震应诏上书极言备敌
+    date:
+      text: "1185年（淳熙十二年五月地震后）"
+      year: 1185
+      precision: 精确
+    place: 临安
+    summary: 免喪，召為尚左郎官。淳熙十二年五月，以地震，應詔上書，首揭「言有事於無事之時，不害其為忠；言無事於有事之時，其為姦也大矣」，历陈淮防、舟师、楮币十事，末归于人主不可以自用。是南宋中期罕见的国防危言。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 枢廷言事
+    stage_order: 13
+    title: 帝亲擢东宫侍读，荐朱熹袁枢以下六十人
+    date:
+      text: 约1185—1187年之间
+      year: 1185
+      range_end: 1187
+      precision: 范围
+    place: 临安
+    summary: 東宮講官闕，帝親擢萬里為侍讀。宮僚以得端人相賀。讀《陸宣公奏議》，皆隨事規警，太子深敬之。王淮问宰相先务，对曰人才，即疏朱熹、袁樞以下六十人以獻。储宫师傅与荐贤名录并举。
+    confidence: 存疑
+    dispute: 擢侍读与进人才名录的具体年份本传未系年，据淳熙十二年上书后迁转次第推定。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 枢廷言事
+    stage_order: 14
+    title: 夏旱复应诏疏四事，迁秘书少监
+    date:
+      text: "1187年（淳熙十四年）"
+      year: 1187
+      precision: 精确
+    place: 临安
+    summary: 十四年夏旱，萬里復應詔，言旱及兩月然後求言，不曰遲乎？因疏四事以獻，言皆懇切。遷秘書少監。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 枢廷言事
+    stage_order: 15
+    title: 力谏三年丧议，诋洪迈配飨之奏，出知筠州
+    date:
+      text: "1187年（淳熙十四年高宗崩后）"
+      year: 1187
+      precision: 精确
+    place: 临安、筠州
+    summary: 高宗崩，孝宗欲行三年喪，命皇太子參決庶務，萬里上疏力諫「天無二日，民無二王」，太子悚然。翰林學士洪邁配饗獨以呂頤浩等姓名上，萬里力言張浚當預，且謂邁無異指鹿為馬。孝宗覽疏不悅，曰「萬里以朕為何如主」，由是以直秘閣出知筠州。直道犯鳞，终遭外斥。
+    source_ids: [src-yangwanli-zhuan]
+
+  # ── 阶段六：光宗朝与退居东园 ──────────────────────
+  - stage: 光宗朝与退居东园
+    stage_order: 16
+    title: 光宗召为秘书监，论朋党与近习窃权
+    date:
+      text: 约1189—1190年之间（光宗即位后）
+      year: 1189
+      range_end: 1190
+      precision: 范围
+    place: 临安
+    summary: 光宗即位，召為秘書監。入对极言朋党之论足以空天下人才，而竊權之最難防者其惟近習。两论皆中南宋政治痼疾。
+    confidence: 存疑
+    dispute: 入对年份据光宗即位时间推定。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 光宗朝与退居东园
+    stage_order: 17
+    title: 绍熙元年接伴金国贺正旦使，北望淮河
+    date:
+      text: "1190年（绍熙元年）"
+      year: 1190
+      precision: 精确
+    place: 淮河沿线
+    summary: 紹熙元年，借煥章閣學士為接伴金國賀正旦使兼實錄院檢討官。奉使北上亲见中流划界之痛，名作初入淮河四绝句即此行所赋：兩岸舟船各背馳，波痕交涉亦難為。
+    confidence: 存疑
+    dispute: 接伴使命本传系年明确；初入淮河组诗系于此行系通行系年，非本传明载。
+    source_ids: [src-yangwanli-zhuan, src-chengzhaiji]
+  - stage: 光宗朝与退居东园
+    stage_order: 18
+    title: 江东转运副使任内抗铁钱之令，自此不复出
+    date:
+      text: 约1190—1192年之间
+      year: 1190
+      range_end: 1192
+      precision: 范围
+    place: 建康（江东）
+    summary: 遂出為江東轉運副使，權總領淮西、江東軍馬錢糧。朝議欲行鐵錢於江南諸郡，萬里疏其不便，不奉詔，忤宰相意，改知贛州，不赴，乞祠，除秘閣修撰，提舉萬壽宮，自是不復出矣。抗命弃官，归隐之志遂决。
+    confidence: 存疑
+    dispute: 江东任期起讫据职历推定。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 光宗朝与退居东园
+    stage_order: 19
+    title: 卧家十五年，拒为韩侂胄作南园记
+    date:
+      text: 约1192—1206年退居期间
+      year: 1192
+      range_end: 1206
+      precision: 范围
+    place: 吉水东园故里
+    summary: 韓侂胄用事，欲網羅四方知名士相羽翼，嘗築南園，屬萬里為之記，許以掖垣。萬里曰：「官可棄，記不可作也。」臥家十五年，皆其柄國之日也。宁宗嗣位、嘉泰三年进宝谟阁直学士、开禧元年召，皆辞不赴。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 光宗朝与退居东园
+    stage_order: 20
+    title: 闻韩侂胄用兵，恸哭书孤愤，笔落而逝
+    date:
+      text: "1206年（开禧二年）"
+      year: 1206
+      precision: 精确
+    place: 吉水
+    summary: 忽族子自外至，遽言侂胄用兵事。萬里慟哭失聲，亟呼紙書曰：「韓侂胄姦臣，專權無上，動兵殘民，謀危社稷，吾頭顱如許，報國無路，惟有孤憤！」又書十四言別妻子，筆落而逝。明年（本传叙事序次）升寶謨閣學士，卒，年八十三，贈光祿大夫。
+    confidence: 存疑
+    dispute: 卒年从开禧二年（1206）通行说，与 figures.yaml 登记闭合；本传卒于升宝谟阁学士同年而记事稍歧，寿数八十三与1127年生年不合（按1127年生享年八十），寿数存疑。
+    source_ids: [src-yangwanli-zhuan]
+  - stage: 光宗朝与退居东园
+    stage_order: 21
+    title: 学者称诚斋先生，赐谥文节
+    date:
+      text: 卒后赐谥，具体年份本传未载
+      year: 1206
+      precision: 约
+    place: ""
+    summary: 萬里精於詩，嘗著《易傳》行於世。光宗嘗為書「誠齋」二字，學者稱「誠齋先生」，賜諡「文節」。身后以诗名与节义并传。
+    confidence: 存疑
+    dispute: 赐谥文节的年份本传未系年，通说在嘉定年间追赐，待核。
+    source_ids: [src-yangwanli-zhuan]
+
+works:
+  - work_id: xiao-chi
+    title: 小池
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 泉眼无声惜细流，树阴照水爱晴柔，以一个惜字一个爱字赋予泉眼树阴以情，小荷才露尖尖角早有蜻蜓立上头，截取初夏池畔一瞬生机。
+    attribution: 确凿
+    excerpt: 泉眼無聲惜細流，樹陰照水愛晴柔。小荷纔露尖尖角，早有蜻蜓立上頭。
+    text_display: full
+    themes: [自然小品, 生机, 诚斋体]
+    influence: 诚斋体最负盛名的样本之一，小荷才露尖尖角成为汉语中新生事物的经典意象；长期入选语文教材。
+    source_ids: [src-chengzhaiji]
+
+  - work_id: xiao-chu-jing-ci-song-lin-zifang
+    title: 晓出净慈寺送林子方
+    alt_titles: [西湖绝句（一说苏轼题名）]
+    genre: 七言绝句
+    date:
+      text: 创作年代无定说，多系于淳熙后杭州时期
+      year: 1187
+      precision: 约
+    place: 临安西湖净慈寺
+    context: 送别诗而不写离情，纯以六月西湖大景压卷：接天蓮葉無窮碧，映日荷花別樣紅。
+    attribution: 确凿
+    excerpt: 畢竟西湖六月中，風光不與四時同。接天蓮葉無窮碧，映日荷花別樣紅。
+    text_display: full
+    themes: [送别, 西湖荷花, 大景白描]
+    influence: 咏荷千古绝唱，接天莲叶无穷碧成为西湖夏日名片；长期入选语文教材。
+    confidence: 有争议
+    dispute: 维基文库该页标注此诗一说苏轼作、题西湖绝句；作者归属主流定为杨万里，惟存在异说。系年为约值无定论。
+    source_ids: [src-chengzhaiji]
+
+  - work_id: su-xin-shi-xu-gong-dian
+    title: 宿新市徐公店二首（其一）
+    alt_titles: [宿新市徐公店]
+    genre: 七言绝句
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: 新市徐公店
+    context: 篱落疏疏一径深的村店春景，儿童急走追黄蝶飞入菜花无处寻，以蝶色菜花一色难辨收束童趣。
+    attribution: 确凿
+    excerpt: 籬落疏疏一逕深，樹頭新綠未成陰。兒童急走追黃蝶，飛入菜花無處尋。
+    text_display: full
+    themes: [田园, 童趣, 春景]
+    influence: 追黄蝶入菜花是古代儿童诗的名场面，长期入选小学语文教材。
+    confidence: 有争议
+    dispute: 第二句维基文库本作樹頭新綠未成陰，通行教材本多作樹頭花落未成陰，异文并存未定孰为原本。
+    source_ids: [src-chengzhaiji]
+
+  - work_id: xian-ju-chu-xia-wu-shui-qi
+    title: 闲居初夏午睡起二绝句（其一）
+    alt_titles: [闲居初夏午睡起]
+    genre: 七言绝句
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 梅子留酸软齿牙，芭蕉分绿与窗纱，以味觉与色彩写初夏午睡起的慵懒，闲看儿童捉柳花收于一片闲静。
+    attribution: 确凿
+    excerpt: 梅子留酸軟齒牙，芭蕉分綠與窗紗。日長睡起無情思，閑看兒童捉柳花。
+    text_display: full
+    themes: [初夏, 闲适, 生活趣味]
+    influence: 诚斋体以生活琐事入诗的代表，闲看儿童捉柳花为历代传诵的名句。
+    confidence: 有争议
+    dispute: 其第二句维基文库本作戲掬清泉濂蕉葉，通行本或作灑蕉葉，濂字疑为形误或版本异文，未深校善本。
+    source_ids: [src-chengzhaiji]
+
+  - work_id: guo-song-yuan-chen-chui-qi-gong-dian
+    title: 过松源晨炊漆公店（其五）
+    alt_titles: [过松源晨炊漆公店六首（其五）]
+    genre: 七言绝句
+    date:
+      text: 通说系于绍熙年间江东任职往返山中途中，无定说
+      year: 1190
+      range_end: 1192
+      precision: 范围
+    place: 松源、漆公店（皖浙山区道中）
+    context: 莫言下嶺便無難，賺得行人空喜歡。正入萬山圈子裡，一山放出一山攔。以行山喻人生困难重重，议论与形象浑然一体。
+    attribution: 确凿
+    excerpt: 莫言下嶺便無難，賺得行人空喜歡。正入萬山圈子裡，一山放出一山攔。
+    text_display: full
+    themes: [行旅, 哲理, 山川拟人]
+    influence: 以俚语入理趣的诚斋体名篇，一山放出一山拦成为常用的人生譬喻；入选语文教材。
+    confidence: 存疑
+    dispute: 组诗首数各本著录不一（五首／六首），系年无定说，取江东任内通行推定。
+    source_ids: [src-chengzhaiji]
+
+  - work_id: chu-ru-huai-he-si-jue-ju
+    title: 初入淮河四绝句
+    alt_titles: []
+    genre: 七言绝句（组诗）
+    date:
+      text: "约1190年（绍熙元年接伴金使北行途中）"
+      year: 1190
+      precision: 约
+    place: 淮河沿线
+    context: 奉使北上亲见绍兴和议后以淮水为界的中流之痛：兩岸舟船各背馳，波痕交涉亦難為。衹餘鷗鷺無拘管，北去南來自在飛。以鸥鹭之自由反衬南北之阻隔。
+    attribution: 确凿
+    excerpt: 船離洪澤岸頭沙，人到淮河意不佳。何必桑乾方是遠，中流以北即天涯。……兩岸舟船各背馳，波痕交涉亦難為。衹餘鷗鷺無拘管，北去南來自在飛。
+    text_display: excerpt
+    themes: [使金, 南北分界, 家国之痛]
+    influence: 南宋使北诗中的代表作，鸥鹭无拘管之叹被视为以轻笔写沉痛的典范。
+    confidence: 存疑
+    dispute: 组诗系于绍熙元年接伴之行系据本传使命与诗境互证的通行系年，非本传明载。
+    source_ids: [src-chengzhaiji, src-yangwanli-zhuan]
+
+  - work_id: zhao-jun-yuan-yong-he-shang-yu
+    title: 昭君怨·咏荷上雨
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: 西湖（词境）
+    context: 午梦扁舟花底起笔，却是池荷跳雨，散了真珠还聚，聚作水银窝，泛清波，以跳、散、聚、泛四个动词写尽雨点荷叶的动感。
+    attribution: 确凿
+    excerpt: 午夢扁舟花底，香滿西湖煙水。急雨打篷聲，夢初驚。卻是池荷跳雨，散了真珠還聚。聚作水銀窩，泛清波。
+    text_display: full
+    themes: [咏物, 夏雨, 动感白描]
+    influence: 诚斋体活法移之于词的样本，咏荷上雨为宋词咏物小令中的巧思之作。
+    source_ids: [src-chengzhaiji]
+
+  - work_id: han-que
+    title: 寒雀
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 百千寒雀下空庭，小集梅梢话晚晴，特地作团喧杀我，忽然惊散寂无声，写寒雀群喧乍寂的瞬间，如闻其声。
+    attribution: 确凿
+    excerpt: 百千寒雀下空庭，小集梅梢話晚晴。特地作團喧殺我，忽然驚散寂無聲。
+    text_display: full
+    themes: [咏物, 冬景, 谐趣]
+    influence: 诚斋体以口语写物态生趣的小品代表。
+    source_ids: [src-chengzhaiji]
+
+  - work_id: xiao-xing-wang-yun-shan
+    title: 晓行望云山
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 却有一峰忽然长，方知不动是真山，以动写静、以幻衬真，破晓时分云山莫辨的一悟。
+    attribution: 确凿
+    excerpt: 霽天欲曉未明間，滿目奇峯總可觀。却有一峯忽然長，方知不動是真山。
+    text_display: full
+    themes: [山水, 观物之理, 诚斋体]
+    influence: 活法诗学的典型样本——于寻常晓行中翻出真幻之辨。
+    source_ids: [src-chengzhaiji]
+
+  - work_id: ou-cheng-zhen-qin-yin-pen-chi
+    title: 偶成（珍禽饮盆池）
+    alt_titles: []
+    genre: 五言绝句
+    date:
+      text: 创作年代无定说
+      precision: 未知
+    place: ""
+    context: 珍禽饮盆池，将扇扑窗户。一声惊得飞，再声惊不去。二十字写小鸟与人相狎的瞬间情态，机趣盎然。
+    attribution: 确凿
+    excerpt: 珍禽飲盆池，將扇撲窗戶。一聲驚得飛，再聲驚不去。
+    text_display: full
+    themes: [咏物, 小品, 谐趣]
+    influence: 五绝小品的诚斋体样本，可见其观物之细。
+    source_ids: [src-chengzhaiji]
+
+footprints:
+  - name: 吉州吉水
+    modern_name: 江西省吉水县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "1127年生，晚年退居东园故里（约1192—1206）至此终老"
+      year: 1127
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    confidence: 存疑
+    dispute: 生年从通行1127说，与本传卒年八十三的记载不合，详见 timeline 首条。
+    source_ids: [src-yangwanli-zhuan]
+  - name: 赣州
+    modern_name: 江西省赣州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1154年后任赣州司户
+      year: 1154
+      precision: 约
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 任期年份据及第后推定。
+    source_ids: [src-yangwanli-zhuan]
+  - name: 永州零陵
+    modern_name: 湖南省永州市零陵区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约绍兴末任零陵丞，三谒张浚受诚斋之诲
+      year: 1157
+      range_end: 1162
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    confidence: 存疑
+    dispute: 任职与谒浚年份正史无载，据张浚谪永时段推定。
+    source_ids: [src-yangwanli-zhuan]
+  - name: 临安
+    modern_name: 浙江省杭州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1163年起历任京朝官，淳熙间为东宫侍读秘书少监
+      year: 1163
+      range_end: 1187
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    source_ids: [src-yangwanli-zhuan]
+  - name: 隆兴府奉新县
+    modern_name: 江西省宜丰县以西之奉新县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1160年代后期知奉新县，县以大治
+      year: 1167
+      precision: 约
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 到任年份据职历推定。
+    source_ids: [src-yangwanli-zhuan]
+  - name: 漳州
+    modern_name: 福建省漳州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1174—1180年间出知漳州
+      year: 1174
+      range_end: 1180
+      precision: 范围
+    kind: 任职
+    route_order: 6
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 知漳州年份据职历推定。
+    source_ids: [src-yangwanli-zhuan]
+  - name: 常州
+    modern_name: 江苏省常州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 知漳州后改知常州
+      year: 1176
+      range_end: 1180
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 改知常州年份据职历推定。
+    source_ids: [src-yangwanli-zhuan]
+  - name: 广东（广州一带）
+    modern_name: 广东省广州市及周边
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1180—1183年提举广东常平茶盐、帅师平沈师、就除提点刑狱
+      year: 1180
+      range_end: 1183
+      precision: 范围
+    kind: 任职
+    route_order: 8
+    memorial_only: false
+    confidence: 存疑
+    dispute: 岭海任期诸谱出入，取约值。
+    source_ids: [src-yangwanli-zhuan]
+  - name: 筠州
+    modern_name: 江西省高安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 1187年以直秘阁出知筠州
+      year: 1187
+      precision: 精确
+    kind: 谪迁
+    route_order: 9
+    memorial_only: false
+    source_ids: [src-yangwanli-zhuan]
+  - name: 江东（建康）
+    modern_name: 江苏省南京市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约1190—1192年出为江东转运副使，权总领淮西江东军马钱粮
+      year: 1190
+      range_end: 1192
+      precision: 范围
+    kind: 任职
+    route_order: 10
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 治所设在建康系据江东转运司通制推定，本传未明言驻在地。
+    source_ids: [src-yangwanli-zhuan]
+
+relations:
+  - relation_type: 社群
+    target_id: fanchengda
+    direction: 双向
+    period:
+      text: 绍兴末至开禧间同预中兴诗坛
+      year: 1154
+      range_end: 1206
+      precision: 范围
+    evidence: 与尤袤、范成大、陆游合称南宋中兴四大诗人（维基文库作者:楊萬里页总述）；二人同为绍兴二十四年前后登第的江西以东诗友，诗风各开生面而无门户之争。
+    confidence: 存疑
+    dispute: 四大家并称属后世文学史通名，二人直接交往细节正史无载。
+    source_ids: [src-chengzhaiji]
+  - relation_type: 社群
+    target_id: luyou
+    direction: 双向
+    period:
+      text: 绍兴末至开禧间同预中兴诗坛
+      year: 1154
+      range_end: 1206
+      precision: 范围
+    evidence: 维基文库作者:楊萬里页总述与陆游、尤袤、范成大并称中兴四大诗人；二人皆主恢复、皆以诗鸣世，交谊见于集中酬唱层（本次未逐篇实取，暂按并称关系著录）。
+    confidence: 存疑
+    dispute: 并称为文学史通名；二人唱和细节待核诚斋集剑南诗稿后升级。
+    source_ids: [src-chengzhaiji]
+  - relation_type: 同僚
+    target_id: zhuxi
+    direction: 单向（我方荐举对方）
+    period:
+      text: 约1185—1187年间（东宫侍读任内）
+      year: 1185
+      range_end: 1187
+      precision: 范围
+    evidence: 本传：王淮为相，一日问曰宰相先务者何事？曰人才。又问孰为才？即疏朱熹、袁樞以下六十人以獻，淮次第擢用之。杨万里向宰相具名荐朱熹等六十人。
+    confidence: 存疑
+    dispute: 荐举年份本传未系年，据东宫侍读任期推定。
+    source_ids: [src-yangwanli-zhuan]
+
+reception:
+  - era: 同时代
+    evaluator: 宋孝宗
+    quote: 仁者之勇。
+    text_display: excerpt
+    comment: 本传直引的御前评语——因帅师平沈师之乱而得，孝宗并有遂有大用意之语，是皇帝对其胆识的最高认可。
+    source_ids: [src-yangwanli-zhuan]
+  - era: 同时代
+    evaluator: 宋光宗
+    quote: 光宗嘗為書「誠齋」二字。
+    text_display: excerpt
+    comment: 天子亲书斋名，学者称诚斋先生——斋号由师训而御笔，成为其人其诗的终身标识。
+    source_ids: [src-yangwanli-zhuan]
+  - era: 历代批评
+    evaluator: 南宋以来诗话综述
+    quote: ""
+    text_display: none
+    comment: 中立转述：南宋以降诗话笔记对其自成机杼的诚斋体多有推挹，谓其以活法写生趣、化俗为雅；姜夔等同时人的具体戏评与后世选家的代表性论断，因本次未能在公版全文库实取原文，一律不作引录，待核后升级为摘录层。其本人所著《诚斋诗话》存目于维基文库，尚未逐条核校。
+    confidence: 存疑
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 中立转述：近现代研究聚焦诚斋体的活法与谐趣、其一生诗作总量与存世数量（通说作诗二万余首、传世四千余首，出自诚斋集系统序跋层的通行说法，非正史明文）、以及拒韩侂胄气节的政治史解读；具体论著引文须取得许可后补入。
+    confidence: 存疑
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 小池、晓出净慈寺送林子方、宿新市徐公店、过松源晨炊漆公店长期入选中小学语文教材，小荷才露尖尖角、接天莲叶无穷碧、一山放出一山拦均为国民级诗句；教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中的杨万里形象多为诚斋轶事的戏剧化敷演，不作信史依据；网络传播集中于其写景名句，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-yangwanli-zhuan, src-chengzhaiji]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。21条年谱（6阶段）、10首诗文、10处足迹、3组关系（范成大陆游并称＋荐举朱熹）、6层接受史（含历代批评与影视网络占位）。全部生平事实实取自维基文库宋史卷433儒林三杨万里传原文；10篇诗文逐一取自维基文库单篇页公版原文。存疑要点：生年1127与本传卒年八十三不合、晓出净慈寺作者异说（一说苏轼）、宿新市与闲居二诗异文、千虑策与作诗总数均未见本传、赐谥年份未系年。"}

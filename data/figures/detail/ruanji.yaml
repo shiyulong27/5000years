@@ -1,0 +1,464 @@
+# 阮籍全景详卷（schema v1）
+# 史料审计表（实取来源：晋书·卷四十九·阮籍传，维基文库公版原文，2026-08-25 访问成功）：
+# https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8/%E5%8D%B7049 （oldid=2199702）
+#
+# | 事实点 | 晋书卷49 原文依据 | 结论与置信 |
+# |---|---|---|
+# | 籍贯家世 | 阮籍字嗣宗陳留尉氏人也父瑀魏丞相掾知名於世 | 确定 |
+# | 气性才貌 | 容貌瑰傑志氣宏放傲然獨得任性不羈；閉戸視書累月不出或登臨山水經日忘歸 | 确定 |
+# | 嗜好 | 博覽群籍尤好莊老嗜酒能嘯善彈琴當其得意忽忘形骸 | 确定 |
+# | 济世志转饮 | 本有濟世志屬魏晉之際天下多故名士少有全者由是不與世事遂酣飲為常 | 确定 |
+# | 醉六十日拒婚 | 文帝初欲為武帝求婚於籍籍醉六十日不得言而止 | 确定 |
+# | 钟会问罪 | 鍾會數以時事問之欲因其可否而致之罪皆以酣醉獲免 | 确定 |
+# | 东平相 | 籍平生曾游東平樂其風土即拜東平相乘驢到郡壞府舍屏鄣法令清簡旬日而還 | 确定（系年无载） |
+# | 步兵校尉 | 聞歩兵廚營人善釀有貯酒三百斛乃求為歩兵校尉 | 确定 |
+# | 母丧 | 食一蒸肫飲二斗酒然後臨訣直言窮矣舉聲一號因又吐血數升毀瘠骨立殆致滅性 | 确定 |
+# | 青白眼 | 見禮俗之士以白眼對之嵇喜來弔作白眼嵇康齎酒挾琴造焉乃見靑眼 | 确定 |
+# | 处境 | 由是禮法之士疾之若仇而帝毎保護之 | 确定 |
+# | 穷途恸哭 | 率意獨駕不由徑路車跡所窮輒慟哭而反 | 确定 |
+# | 广武之叹 | 登廣武觀楚漢戰處歎曰時無英雄使豎子成名 | 确定 |
+# | 卒 | 景元四年冬卒時年五十四 | 确定（生年由此倒推约210） |
+# | 著述 | 作詠懷詩八十餘篇為世所重著達莊論敘無為之貴 | 确定 |
+# | 苏门山遇孙登 | 籍嘗于蘇門山遇孫登與商略終古及棲神導氣之術登皆不應籍因長嘯而退 | 本载确定；与嵇康从孙登游叙事重叠，学界有传闻异辞之辨→存疑 |
+# | 竹林之游（嵇康条） | 所與神交者惟陳留阮籍河內山濤豫其流者河内向秀沛國劉伶籍兄子咸琅邪王戎遂為竹林之遊世所謂竹林七賢也 | 确定（同卷互证）；另阮咸條「與叔父籍為竹林之遊」 |
+#
+# 版权：本文件只收公版古籍原文与自写中立转述；无现代注释译文。
+schema_version: 1
+id: ruanji
+
+profile:
+  courtesy_name: 嗣宗
+  art_name: ""
+  aliases: [阮步兵]
+  gender: 男
+  ethnicity: ""
+  ancestry: 陈留尉氏
+  birthplace: 陈留尉氏
+  death_place: ""
+  offices: [东平相, 步兵校尉, 散骑常侍]
+  fields: [文学]
+  roles: [诗人, 思想家]
+  summary: 正始之音的代表，竹林七贤精神领袖；本有济世志而生逢乱世，以酣饮青白眼全身远祸，《咏怀》八十二首开五言抒情组诗新境。
+
+timeline:
+  # ── 阶段一：陈留世家 ──────────────────────────────
+  - stage: 陈留世家
+    stage_order: 1
+    title: 生于陈留尉氏文学之家
+    date:
+      text: "约210年"
+      year: 210
+      precision: 约
+    place: 陈留尉氏
+    summary: 阮籍字嗣宗，陈留尉氏人。父阮瑀，魏丞相掾，知名于世，建安七子之一。生年由景元四年卒时年五十四依传统虚岁倒推。
+    confidence: 存疑
+    dispute: 正史无生年载记，约210系由卒年五十四倒推的通说。
+    source_ids: [src-jinshu-vol49]
+  - stage: 陈留世家
+    stage_order: 2
+    title: 容貌瑰杰，志气宏放
+    date:
+      text: 青年时期，具体年代不详
+      precision: 未知
+    place: 陈留
+    summary: 晋书载其容貌瑰杰志气宏放傲然独得任性不羁，喜怒不形于色；或闭户视书累月不出，或登临山水经日忘归。博览群籍尤好庄老，嗜酒能啸善弹琴，当其得意忽忘形骸，时人多谓之痴。
+    source_ids: [src-jinshu-vol49]
+
+  # ── 阶段二：仕途浮沉与本有济世志 ────────────────────
+  - stage: 仕途浮沉
+    stage_order: 3
+    title: 蒋济辟召，奏记乞回
+    date:
+      text: 魏正始前后，蒋济任太尉时，确切年份不详
+      precision: 未知
+    place: 洛阳都亭
+    summary: 太尉蒋济闻其有隽才而辟之，籍诣都亭奏记自陈无邹卜之道乞回谬恩；初济恐籍不至得记欣然遣卒迎之而籍已去。后乡亲共喻乃就吏，旋谢病归；复为尚书郎少时又以病免。
+    confidence: 存疑
+    dispute: 辟召与就吏的确切年份正史无载。
+    source_ids: [src-jinshu-vol49]
+  - stage: 仕途浮沉
+    stage_order: 4
+    title: 辞曹爽参军，岁余爽诛服其远识
+    date:
+      text: "约249年（曹爽诛前岁余辞征）"
+      year: 249
+      range_end: 250
+      precision: 范围
+    place: 田里
+    summary: 及曹爽辅政召为参军，籍因以疾辞屏于田里。岁余而爽诛，时人服其远识。宣帝为太傅复命为从事中郎，帝崩后又为景帝大司马从事中郎。
+    confidence: 存疑
+    dispute: 辞征在爽诛（249）前岁余，系年由史文逆推。
+    source_ids: [src-jinshu-vol49]
+  - stage: 仕途浮沉
+    stage_order: 5
+    title: 高贵乡公即位，封关内侯徙散骑常侍
+    date:
+      text: "约254年"
+      year: 254
+      precision: 约
+    place: 洛阳
+    summary: 高贵乡公即位（254），封关内侯，徙散骑常侍。此为其在魏廷名义上最显要的职位。
+    source_ids: [src-jinshu-vol49]
+
+  # ── 阶段三：酣饮避祸 ──────────────────────────────
+  - stage: 酣饮避祸
+    stage_order: 6
+    title: 本有济世志，遂酣饮为常
+    date:
+      text: 魏晋之际天下多故时期
+      year: 240
+      range_end: 263
+      precision: 范围
+    place: ""
+    summary: 晋书点破关键转折——籍本有济世志，属魏晋之际天下多故名士少有全者，籍由是不与世事遂酣饮为常。纵酒由是避祸的自保策略而非天性疏懒。
+    source_ids: [src-jinshu-vol49]
+  - stage: 酣饮避祸
+    stage_order: 7
+    title: 醉六十日拒司马氏联姻
+    date:
+      text: 文帝初欲为婚之时，年份不详
+      precision: 未知
+    place: 洛阳
+    summary: 文帝初欲为武帝求婚于籍，籍醉六十日不得言而止。又钟会数以时事问之，欲因其可否而致之罪，皆以酣醉获免。
+    source_ids: [src-jinshu-vol49]
+  - stage: 酣饮避祸
+    stage_order: 8
+    title: 自请东平相，坏屏鄣旬日而还
+    date:
+      text: 文帝辅政期间，确切年份不详
+      precision: 未知
+    place: 东平
+    summary: 籍尝从容言于帝曰籍平生曾游东平乐其风土，帝大悦即拜东平相。籍乘驴到郡，坏府舍屏鄣使内外相望，法令清简，旬日而还。后世视为其行政才具与疏放作风的双重见证。
+    confidence: 存疑
+    dispute: 拜东平相的确切年份诸家系年不一，正史仅系于文帝辅政语境。
+    source_ids: [src-jinshu-vol49]
+  - stage: 酣饮避祸
+    stage_order: 9
+    title: 闻步兵厨营善酿，求为步兵校尉
+    date:
+      text: 东平相还后，确切年份不详
+      precision: 未知
+    place: 洛阳
+    summary: 籍闻步兵厨营人善酿有贮酒三百斛，乃求为步兵校尉。遗落世事，虽去佐职恒游府内朝宴必与焉。阮步兵之称由此而来。
+    source_ids: [src-jinshu-vol49]
+  - stage: 酣饮避祸
+    stage_order: 10
+    title: 沈醉忘作，书案成劝进辞
+    date:
+      text: 会帝让九锡公卿将劝进之际，年份不详
+      precision: 未知
+    place: 洛阳
+    summary: 公卿将劝进使籍为其辞，籍沈醉忘作；临诣府使取之，见籍方据案醉眠，使者以告，籍便书案使写之无所改窜，辞甚清壮为时所重。此篇即流传的为郑冲劝晋王笺。
+    confidence: 有争议
+    dispute: 劝进笺写作时间紧接卒年且是否出于本愿，历来聚讼：或视为被迫应制之屈辱，或以为借醉脱身的权宜，晋书仅记其事不著心迹。
+    source_ids: [src-jinshu-vol49]
+
+  # ── 阶段四：至情至性 ──────────────────────────────
+  - stage: 至情至性
+    stage_order: 11
+    title: 母丧毁瘠骨立，青白眼待人
+    date:
+      text: 具体年份不详
+      precision: 未知
+    place: 洛阳
+    summary: 性至孝。母终正与人围棋留与决赌，既而饮酒二斗举声一号吐血数升；将葬食一蒸肫饮二斗酒然后临诀直言穷矣，又吐血数升毁瘠骨立殆致灭性。又能为青白眼，见礼俗之士以白眼对之——嵇喜来吊作白眼，嵇康闻之乃赍酒挟琴造焉籍大悦乃见青眼。由是礼法之士疾之若仇而帝每保护之。
+    source_ids: [src-jinshu-vol49]
+  - stage: 至情至性
+    stage_order: 12
+    title: 礼岂为我辈设，外坦荡而内淳至
+    date:
+      text: 具体年份不详
+      precision: 未知
+    place: 洛阳
+    summary: 籍嫂尝归宁籍相见与别或讥之，籍曰礼岂为我设邪。邻家少妇当垆沽酒，籍尝诣饮醉便卧其侧，其夫察之亦不疑。兵家女有才色未嫁而死，籍不识其父兄径往哭之尽哀而还。其外坦荡而内淳至皆此类也。
+    source_ids: [src-jinshu-vol49]
+  - stage: 至情至性
+    stage_order: 13
+    title: 率意独驾，穷途恸哭而返
+    date:
+      text: 具体年份不详
+      precision: 未知
+    place: 洛阳郊野
+    summary: 时率意独驾不由径路，车迹所穷辄恸哭而返。这一意象成为后世士人途穷之悲的原型语汇。
+    source_ids: [src-jinshu-vol49]
+  - stage: 至情至性
+    stage_order: 14
+    title: 登广武观楚汉古战场
+    date:
+      text: 具体年份不详
+      precision: 未知
+    place: 广武山
+    summary: 尝登广武观楚汉战处，叹曰时无英雄使竖子成名！又登武牢山望京邑而叹，于是赋豪杰诗。济世之志未泯，于此二叹可见。
+    source_ids: [src-jinshu-vol49]
+
+  # ── 阶段五：逝世 ──────────────────────────────
+  - stage: 逝世
+    stage_order: 15
+    title: 景元四年冬卒，时年五十四
+    date:
+      text: 景元四年冬（263年）
+      year: 263
+      precision: 约
+    place: ""
+    summary: 景元四年冬卒时年五十四。能属文初不留思，作咏怀诗八十余篇为世所重，著达庄论叙无为之贵。
+    source_ids: [src-jinshu-vol49]
+
+works:
+  - work_id: yonghuai-qiyi
+    title: 咏怀诗八十二首（其一）
+    alt_titles: [咏怀八十二首其一]
+    genre: 五言古诗（组诗）
+    date:
+      text: 创作年代不详，历来编年聚讼
+      precision: 未知
+    place: ""
+    context: 组诗首篇，夜中不能寐起坐弹鸣琴，以失眠独夜的忧思奠定八十二章的总基调。晋书称作咏怀诗八十余篇为世所重。
+    attribution: 确凿
+    excerpt: 夜中不能寐，起坐弹鸣琴。薄帷鉴明月，清风吹我襟。孤鸿号外野，翔鸟鸣北林。徘徊将何见，忧思独伤心。
+    text_display: full
+    themes: [忧思, 夜咏]
+    influence: 五言抒情组诗的开山之作，陶潜陈子昂李白杜甫的咏怀咏古感遇一脉皆承此体。
+    confidence: 有争议
+    dispute: 咏怀诗寄托所指历来聚讼——忧魏晋之际的时局、自伤身世、或泛言人生哲思，各家解说纷纭无定论。
+    source_ids: [src-jinshu-vol49]
+  - work_id: yonghuai-qisan
+    title: 咏怀诗八十二首（其三）
+    alt_titles: []
+    genre: 五言古诗（组诗）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 嘉树东园起兴，写繁华憔悴盛衰倏忽之忧，多解为魏室将倾的政治预感。
+    attribution: 确凿
+    excerpt: 嘉树下成蹊，东园桃与李。秋风吹飞藿，零落从此始。
+    text_display: excerpt
+    themes: [盛衰, 忧时]
+    influence: 以草木荣枯喻时世危殆的名例。
+    confidence: 有争议
+    dispute: 是否影射正始政局，注家意见分歧。
+    source_ids: []
+  - work_id: yonghuai-qisanshijiu
+    title: 咏怀诗八十二首（其三十九）
+    alt_titles: []
+    genre: 五言古诗（组诗）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 壮士何慷慨一篇慷慨激昂，与其一贯隐晦诗风迥异，常被引证其济世志并未消亡。
+    attribution: 确凿
+    excerpt: 壮士何慷慨，志欲威八荒。驱车远行役，受命念自忘。
+    text_display: excerpt
+    themes: [慷慨, 壮志]
+    influence: 证明阮籍胸中块垒非止逃禅避世一路。
+    confidence: 存疑
+    dispute: 此篇与组诗整体年代的编定关系尚无定说。
+    source_ids: []
+  - work_id: yonghuai-qiqishijiu
+    title: 咏怀诗八十二首（其七十九）
+    alt_titles: []
+    genre: 五言古诗（组诗）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 林中有奇鸟自言是凤凰，以失群凤凰自况，高鸣彻九州延颈望八荒而终无所遇。
+    attribution: 确凿
+    excerpt: 林中有奇鸟，自言是凤凰。清朝饮醴泉，日夕栖山冈。
+    text_display: excerpt
+    themes: [咏物抒怀, 孤高]
+    influence: 凤凰意象成为解读阮籍自我期许的经典入口。
+    confidence: 存疑
+    dispute: 凤鸟所喻何指，注家解说不同。
+    source_ids: []
+  - work_id: da-ren-xian-sheng-zhuan
+    title: 大人先生传
+    alt_titles: []
+    genre: 赋体传记文
+    date:
+      text: 相传苏门山归后所作，年份不详
+      precision: 未知
+    place: 苏门山
+    context: 晋书载籍于苏门山遇孙登长啸而退还半岭闻鸾凤之音，遂归著大人先生传。文中以群虱处裈中讽礼法君子，惟法是修惟礼是克者不过虱处裈中，此亦籍之胸怀本趣。
+    attribution: 确凿
+    excerpt: 世人所谓君子，惟法是修，惟礼是克。手执圭璧，足履绳墨。……独不见群虱之处裈中……君子之处域内，何异夫虱之处裈中乎！
+    text_display: excerpt
+    themes: [越名任自然, 讽礼法]
+    influence: 魏晋玄学文学的代表作，对后世狂士文学影响深远。
+    confidence: 存疑
+    dispute: 苏门山遇孙登事晋书本载，然孙登事迹与嵇康传所述互有重叠，学界有传闻异辞之辨；著作系年亦不详。
+    source_ids: [src-jinshu-vol49]
+  - work_id: da-zhuang-lun
+    title: 达庄论
+    alt_titles: []
+    genre: 论说文
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 晋书称著达庄论叙无为之贵，为其玄学论文代表作，以自然一体之说申庄子齐物之旨。
+    attribution: 确凿
+    excerpt: 天地生于自然，万物生于天地。
+    text_display: excerpt
+    themes: [玄学, 自然]
+    influence: 正始玄学的核心文献之一。
+    source_ids: []
+  - work_id: le-lun
+    title: 乐论
+    alt_titles: []
+    genre: 论说文
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 托刘子之问畅论礼乐功用，主张移风易俗莫善于乐、刑赏不用而民自安，是其以乐化民的政治哲学表达。
+    attribution: 确凿
+    excerpt: 安上治民，莫善于礼；移风易俗，莫善于乐。
+    text_display: excerpt
+    themes: [乐教, 政治哲学]
+    influence: 与嵇康声无哀乐论并观，见正始音乐美学两端。
+    source_ids: []
+  - work_id: wei-zhengchong-quan-jinwang-jian
+    title: 为郑冲劝晋王笺
+    alt_titles: [劝进笺]
+    genre: 笺表文
+    date:
+      text: 景元末公卿劝进之际，年份不详
+      precision: 未知
+    place: 洛阳
+    context: 晋书载会帝让九锡公卿将劝进使籍为其辞，籍沈醉忘作临使者取之便书案使写之无所改窜，辞甚清壮为时所重。
+    attribution: 确凿
+    text_display: none
+    themes: [应制, 争议之作]
+    influence: 因写作情境的特殊而成为阮籍人格评价争议的焦点文本。
+    confidence: 有争议
+    dispute: 是否出自主愿、写作距其去世多久，历代评价两极；本文只著录史载情境不作立场判断。
+    source_ids: [src-jinshu-vol49]
+
+footprints:
+  - name: 陈留尉氏
+    modern_name: 河南省开封市尉氏县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 尉氏县治坐标待接入 data/geography 体系后登记
+    visit_date:
+      text: "约210年生，家族世居之地"
+      year: 210
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    source_ids: [src-jinshu-vol49]
+  - name: 洛阳
+    modern_name: 河南省洛阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 仕宦所在，自尚书郎至散骑常侍、步兵校尉
+      year: 240
+      range_end: 263
+      precision: 范围
+    kind: 任职
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-jinshu-vol49]
+  - name: 东平
+    modern_name: 山东省泰安市东平县一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 为东平相旬日而还
+      precision: 未知
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    source_ids: [src-jinshu-vol49]
+  - name: 苏门山
+    modern_name: 河南省辉县市百门山（太行余脉）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 苏门山地望系历史地理通行考订，坐标待接入体系
+    visit_date:
+      text: 遇孙登长啸之年不详
+      precision: 未知
+    kind: 游历
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 遇孙登事晋书本载，然与嵇康传孙登叙事互有重叠，细节存传闻之疑。
+    source_ids: [src-jinshu-vol49]
+  - name: 广武山
+    modern_name: 河南省荥阳市广武山（楚汉霸王城遗址所在）
+    lng: null
+    lat: null
+    coord_precision: 推定
+    coord_source: 广武楚汉战处地望系通行考订，坐标待接入体系
+    visit_date:
+      text: 观楚汉战处，年份不详
+      precision: 未知
+    kind: 游历
+    route_order: 5
+    memorial_only: false
+    inferred: true
+    source_ids: [src-jinshu-vol49]
+
+relations:
+  - relation_type: 社群
+    target_id: jikang
+    direction: 双向
+    period:
+      text: 竹林之游时期，魏晋之际
+      year: 240
+      range_end: 262
+      precision: 范围
+    evidence: 同卷嵇康传明载——所与神交者惟陈留阮籍、河内山涛，豫其流者河内向秀、沛国刘伶、籍兄子咸、琅邪王戎，遂为竹林之游，世所谓竹林七贤也。又阮咸条云与叔父籍为竹林之游。嵇康闻籍母丧赍酒挟琴造焉籍大悦乃见青眼，二人交谊有直接行事可证。
+    source_ids: [src-jinshu-vol49]
+
+reception:
+  - era: 同时代
+    evaluator: 礼法之士与司马昭（晋书原貌）
+    quote: 由是礼法之士疾之若仇，而帝每保护之。
+    text_display: excerpt
+    comment: 晋书如实记录阮籍的两难处境——礼法阵营视其为仇雠，唯赖司马昭庇护得以保全；口不臧否人物与酣醉正是乱世名士的生存技术，此层处境不应被后世风流想象遮蔽。
+    source_ids: [src-jinshu-vol49]
+  - era: 历代批评
+    evaluator: 钟嵘《诗品》（上品）
+    quote: 言在耳目之内，情寄八荒之表……厥旨渊放，归趣难求。
+    text_display: excerpt
+    comment: 南朝品评将阮籍列于上品，指出咏怀诗言近旨远的特质；归趣难求四字实为千余年咏怀诠释之争的总纲。
+    source_ids: []
+  - era: 历代批评
+    evaluator: 刘勰《文心雕龙·明诗》
+    quote: 嵇志清峻，阮旨遥深。
+    text_display: excerpt
+    comment: 与嵇康对举的经典概括，阮旨遥深成为后世理解阮籍诗歌风格的基准表述。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究将阮籍定位为正始之音的代表，聚焦咏怀诗作年分组与政治寄托的诠释方法之争、玄学与创作的关系、以及竹林之游的历史真实性问题；具体论著引文须取得许可后补入，本卷暂作中立综述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 咏怀选篇长期见于大学语文与中国文学史课程，夜中不能寐为必选篇目；竹林七贤、青白眼、穷途恸哭构成大众文化中的阮籍形象。当期教材篇目须另行核验后录入。
+    source_ids: []
+
+sources_used: [src-jinshu-vol49]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。15条年谱、8部作品、5处足迹、1组关系、5层接受史；全部事实点实取晋书卷49维基文库公版原文}

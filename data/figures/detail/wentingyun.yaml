@@ -1,0 +1,612 @@
+# 温庭筠全景详卷（schema v1）
+# 史料审计表（实取证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 证据（维基文库实取） | 结论与置信 |
+# |---|---|---|
+# | 名号籍贯 | 旧唐书卷190下本传：温庭筠者太原人本名岐字飛卿 | 确定（旧唐书只称「太原人」，未言祁县） |
+# | 家世 | 新唐书卷91温大雅传附「彥博裔孫廷筠」（实取，来源 src-xts-vol091 已登记） | 确定 |
+# | 少年才思 | 旧唐书：大中初應進士苦心硯席尤長於詩賦；新唐书卷91：少敏悟工爲辭章思神速多爲人作文 | 确定 |
+# | 侧艳词章 | 旧唐书：然士行塵雜不脩邉幅能逐絃吹之音爲側艶之詞 | 确定 |
+# | 累年不第 | 旧唐书：與裴誠令狐滈之徒相與蒱飲酣醉終日由是累年不第 | 确定 |
+# | 科场犯规 | 新唐书卷91（src-xts-vol091 已登记）：大中末試有司廉視尤謹……私占授者已八人執政鄙其爲授方山尉 | 确定（绰号细节仍属笔记层存疑） |
+# | 温李并称 | 旧唐书同卷李商隐传：與太原溫庭筠南郡段成式齊名時號「三十六」文思清麗庭筠過之；新唐书卷203李商隐传：時溫庭筠段成式倶用是相誇號「三十六體」 | 确定 |
+# | 品行定评 | 旧唐书李商隐传：而俱無持操恃才詭激爲當涂者所薄名宦不進坎壈終身 | 确定 |
+# | 襄阳幕府 | 旧唐书：徐商鎮襄陽往依之署爲巡官；新唐书卷91同 | 确定 |
+# | 广陵事件 | 旧唐书：路由廣陵……乞索於楊子院醉而犯夜爲虞候所擊敗面折齒……令狐綯捕虞候治之……乃兩釋之自是汙行聞于京師 | 确定 |
+# | 雪冤与晚境 | 旧唐书：致書公卿間雪寃屬徐商知政事頗爲言之無何商罷相……貶爲方城尉再遷隋縣尉卒；新唐书卷91：會商罷楊收疾之遂廢卒 | 确定（卒年卒地两史皆无确载） |
+# | 词史地位 | 花间集实取：卷一首列「菩薩蠻 溫助教庭筠」十四首；歐陽炯《花間集敘》：近代溫飛卿復有金筌集……乃命之爲花間集時大蜀廣政三年 | 确定 |
+# | 温八叉／宣宗微行／中书堂坐将军 | 两唐书正文均无载，属唐宋笔记层（《北梦琐言》《云溪友议》系统），本次未实取原文 | 笔记层存疑，仅作转述 |
+# | 生卒年 | 两唐书本传均未系年；学界约812—866主流说与约801—870等异说并存 | 异说著录，不作精确年份 |
+#
+# 版权：本文件只收公版古籍原文与中立转述；无现代注释译文。
+schema_version: 1
+id: wentingyun
+
+profile:
+  original_name: 岐（本名岐）
+  courtesy_name: 飛卿
+  art_name: 温八叉（时人绰号层，谓八叉手而成八韵；正史无载，见笔记层转述）
+  aliases: [温助教（花间集题署）]
+  gender: 男
+  ethnicity: ""
+  ancestry: 太原祁（旧唐书止称太原人；祁县世系据新唐书卷91温大雅传并州祁人一支，src-xts-vol091）
+  birthplace: 太原祁县（今山西省祁县，据籍贯推定）
+  death_place: 卒地无确载（两史止记贬隋县尉后卒，通行说系于随县一带）
+  offices: [襄阳徐商幕巡官, 方城尉, 隋县尉]
+  fields: [文学]
+  roles: [词人, 诗人]
+  summary: 花间鼻祖，第一个大量倚声填词的文人；侧艳词章与科场失意纠缠的一生，「温李」并称中的另一半，也是晚唐才高德薄争议的千年样本。
+
+timeline:
+  # ── 阶段一：太原祁县与少年才名 ────────────────────
+  - stage: 太原祁与少年才名
+    stage_order: 1
+    title: 生于太原祁县
+    date:
+      text: 约812年（另有约801年生等异说）
+      year: 812
+      precision: 约
+    place: 太原祁县
+    summary: 温庭筠生于太原温氏祁县房。两唐书本传均未系年，通行说法以约812年生为主流，另有约801年等异说。
+    confidence: 存疑
+    dispute: 生年诸说不一：约812年为主流，另有约801年生说等；正史无载，一律按异说著录。
+    source_ids: [src-jts-vol190b]
+  - stage: 太原祁与少年才名
+    stage_order: 2
+    title: 本名岐，字飞卿，彦博之裔
+    date:
+      text: 家世背景，具体年份不详
+      precision: 未知
+    place: ""
+    summary: 旧唐书本传记其本名岐字飞卿、太原人；新唐书则将其附于宰相温大雅温彦博传后，称彦博裔孙，世系由此上接贞观名臣。旧唐书止言太原人，未言祁县。
+    source_ids: [src-jts-vol190b, src-xts-vol091]
+  - stage: 太原祁与少年才名
+    stage_order: 3
+    title: 少敏悟，苦心砚席，尤长诗赋
+    date:
+      text: 少年至青年时期，具体年代不详
+      precision: 未知
+    place: 太原、长安之间
+    summary: 旧唐书谓其苦心砚席尤长于诗赋；新唐书谓其少敏悟工为辞章、思神速多为为人作文——文思神速成为他一生最鲜明的标签，也埋下替人枪试的祸根。
+    source_ids: [src-jts-vol190b, src-xts-vol091]
+
+  # ── 阶段二：长安应举累试不第 ──────────────────────
+  - stage: 长安应举累试不第
+    stage_order: 4
+    title: 大中初应进士，初至京师翕然推重
+    date:
+      text: 约大中初年（约847年起）
+      year: 847
+      precision: 约
+    place: 长安
+    summary: 旧唐书明载大中初应进士，初至京师人士翕然推重——才名先立，功名未就，是他此后二十余年的基本处境。
+    source_ids: [src-jts-vol190b]
+  - stage: 长安应举累试不第
+    stage_order: 5
+    title: 士行尘杂，能逐弦吹之音为侧艳之词
+    date:
+      text: 大中年间应举期间
+      year: 847
+      range_end: 859
+      precision: 范围
+    place: 长安
+    summary: 旧唐书评其士行尘杂不修边幅，能逐弦吹之音为侧艳之词——精通音律而作词供歌席之用，正是这一「侧艳」标签使他为礼法士族所轻，也成为他开创词体的起点。
+    source_ids: [src-jts-vol190b]
+  - stage: 长安应举累试不第
+    stage_order: 6
+    title: 与裴諴令狐滈辈蒲饮酣醉，累年不第
+    date:
+      text: 约大中年间，屡举屡败
+      year: 847
+      range_end: 859
+      precision: 范围
+    place: 长安
+    summary: 旧唐书直书其与公卿家无赖子弟裴諴、令狐滈之徒相与蒲饮酣醉终日，由是累年不第；新唐书亦记其薄于行无检幅，又多作侧辞艳曲，蒲饮狎昵。放浪形骸与屡败科场互为因果。
+    source_ids: [src-jts-vol190b]
+  - stage: 长安应举累试不第
+    stage_order: 7
+    title: 试有司廉视尤谨，私占授者已八人
+    date:
+      text: 大中末（约858—859年前后）
+      year: 858
+      range_end: 859
+      precision: 范围
+    place: 长安
+    summary: 据新唐书卷91附传：大中末考试有司防范极严，温庭筠不乐，上书千余言自辩，然而当日私下为人作弊传递者已达八人，执政鄙其所为，仅授方山尉。「温八叉」（八叉手而成八韵）的绰号即出于此类科场速才传闻，属笔记层，两唐书正文无载。
+    confidence: 存疑
+    dispute: 正史仅存「思神速多为人作文」「私占授者已八人」之概括（新唐书卷91）；「温八叉」「温八吟」绰号及考场代人作文细节主要见于唐宋笔记，属传闻层不足为信史。
+    source_ids: [src-xts-vol091]
+
+  # ── 阶段三：干谒交游与令狐绹恩怨 ──────────────────
+  - stage: 干谒交游与令狐绹恩怨
+    stage_order: 8
+    title: 与李商隐齐名，号「温李」
+    date:
+      text: 大中年间并称已成
+      year: 847
+      range_end: 858
+      precision: 范围
+    place: 长安
+    summary: 旧唐书同卷李商隐传明载：与太原温庭筠、南郡段成式齐名，时号「三十六」，又称文思清丽庭筠过之；新唐书卷91记与李商隐皆有名号「温李」，卷203则记三人俪偶相夸号「三十六体」。温李并称是同时代的公论而非后世追认。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 干谒交游与令狐绹恩怨
+    stage_order: 9
+    title: 恃才诡激，为当涂者所薄
+    date:
+      text: 终身定评，大中年间最烈
+      year: 847
+      range_end: 859
+      precision: 范围
+    place: 长安
+    summary: 旧唐书总断二人：俱无持操，恃才诡激，为当涂者所薄，名宦不进，坎壈终身——这是正史对温李的共同判词，也解释了两人同归潦倒的命运结构。
+    source_ids: [src-jts-vol190b]
+  - stage: 干谒交游与令狐绹恩怨
+    stage_order: 10
+    title: 怨令狐绹不为成名，过府不肯谒
+    date:
+      text: 咸通中（约860年代前期）
+      year: 860
+      range_end: 866
+      precision: 范围
+    place: 长安、扬州
+    summary: 旧唐书记其失意归江东时心怨令狐绹在位时不为成名；新唐书亦记令狐绹方镇淮南，庭筠怨其居中时不为助力，过府不肯謁。与权相令狐绹的交恶是温庭筠仕途绝路的关键；至于「中书堂内坐将军」讥语、宣宗微行逆旅相遇等著名轶事均出笔记，正史无载，仅作存疑转述。
+    confidence: 存疑
+    dispute: 与令狐绹交恶的正史骨架可信；「中书堂内坐将军」与宣宗微行事属《云溪友议》《北梦琐言》一类笔记层，未经本次实取，不足为史实。
+    source_ids: [src-jts-vol190b]
+
+  # ── 阶段四：幕府晚境潦倒 ──────────────────────────
+  - stage: 幕府晚境潦倒
+    stage_order: 11
+    title: 往依徐商，署襄阳巡官
+    date:
+      text: 约大中末至咸通初（约856—861年前后）
+      year: 856
+      range_end: 861
+      precision: 范围
+    place: 襄阳
+    summary: 徐商镇襄阳，温庭筠往依之，署为巡官——漂泊半生始得一幕职安身处。两唐书记载一致，此期亦为其创作相对集中的安稳岁月。
+    confidence: 存疑
+    dispute: 入幕确切年份两史未系年，从徐商镇襄阳任期推定为约856—861年之间。
+    source_ids: [src-jts-vol190b]
+  - stage: 幕府晚境潦倒
+    stage_order: 12
+    title: 失意归江东，广陵醉犯夜被击败面折齿
+    date:
+      text: 咸通中（约860年代前期）
+      year: 860
+      range_end: 866
+      precision: 范围
+    place: 广陵（扬州）、江东
+    summary: 咸通中失意归江东路由广陵，与新进少年狂游狭邪，乞索于扬子院，醉而犯夜，被虞候击得败面折齿；诉至官府，令狐绹捕虞候治之却极言其狭邪丑迹，两人各打处理，自此污行闻于京师——晚年最狼狈的一幕，正史不讳。
+    source_ids: [src-jts-vol190b]
+  - stage: 幕府晚境潦倒
+    stage_order: 13
+    title: 致书公卿雪冤，徐商执政颇右之
+    date:
+      text: 约咸通前期
+      year: 861
+      range_end: 866
+      precision: 范围
+    place: 长安
+    summary: 庭筠自至长安，致书公卿间雪冤；适逢旧主徐商拜相，颇为言之，一度有望起复——命运最后一次向他开门。
+    source_ids: [src-jts-vol190b]
+  - stage: 幕府晚境潦倒
+    stage_order: 14
+    title: 商罢相杨收疾之，贬方城尉再迁隋县尉
+    date:
+      text: 约咸通中（约865—866年前后）
+      year: 865
+      range_end: 866
+      precision: 范围
+    place: 方城、随县
+    summary: 无何商罢相，旧唐书记「收怒之」（即杨收），贬为方城尉，再迁隋县尉；新唐书径记会商罢杨收疾之遂废卒。一生终于县尉微官。
+    confidence: 存疑
+    dispute: 贬谪次第两史一致，但系年只能框定于咸通中后期；「大中十三年授随县尉」等细目系后世谱牒之说，非正史明文。
+    source_ids: [src-jts-vol190b]
+  - stage: 幕府晚境潦倒
+    stage_order: 15
+    title: 卒，年约五十余
+    date:
+      text: 约866年（另有约870年等异说）
+      year: 866
+      precision: 约
+    place: 隋县一带（卒地无确载）
+    summary: 旧唐书止书一「卒」字，新唐书止书「遂废卒」。旧唐书评曰：庭筠著述颇多，而诗赋韵格清拔，文士称之——潦倒而终，文章不朽。
+    confidence: 存疑
+    dispute: 卒年诸说不一：约866年为主流，另有约870年说等；卒地两史无载，通行说系于隋县尉任上前后。子宪后以进士擢第，弟庭皓咸通中死于庞勋之难。
+    source_ids: [src-jts-vol190b]
+
+  # ── 阶段五：身后花间尊奉 ─────────────────────────
+  - stage: 身后花间尊奉
+    stage_order: 16
+    title: 后蜀广政三年，《花间集》尊其为卷首
+    date:
+      text: "940年"
+      year: 940
+      precision: 精确
+    place: 成都
+    summary: 后蜀广政三年赵崇祚辑《花间集》，欧阳炯作叙，追述「近代温飞卿复有《金筌集》」，所集五百首十卷以温庭筠《菩萨蛮》冠于卷一之首，题署「温助教庭筠」——身后七十余年，这位科场弃儿被尊为一代词宗开山。
+    source_ids: [src-huajianji]
+  - stage: 身后花间尊奉
+    stage_order: 17
+    title: 词体鼻祖地位的千年确立
+    date:
+      text: 五代至今
+      year: 940
+      precision: 约
+    place: ""
+    summary: 六十六首词居《花间集》各家之冠，与韦庄并为花间双璧；此后「温韦」并称、婉约一体溯源于飞卿，文人词的传统由此正式开启——生前侧艳之讥，身后竟成百代词人之祖。
+    confidence: 有争议
+    dispute: 「花间鼻祖」「词体鼻祖」为历代词学共识性定位，但近现代学界对其词有无寄托（张惠言比兴说与王国维反拨）争论不休，详见接受史层。
+    source_ids: [src-huajianji]
+
+works:
+  - work_id: pu-sa-man-xiao-shan-chong-die
+    title: 菩萨蛮·小山重叠金明灭
+    alt_titles: []
+    genre: 词（小令）
+    date:
+      text: 创作年代无定说，或系应举流连长安时期
+      year: 840
+      precision: 约
+    place: ""
+    context: 《花间集》全书第一首。小山重叠金明灭鬓云欲度香腮雪，以器物与光色拼合闺中人晓起的慵懒，懒起画蛾眉弄妆梳洗迟，结于双双金鹧鸪的反衬。
+    attribution: 确凿
+    excerpt: 小山重叠金明灭，鬓云欲度香腮雪。懒起画蛾眉，弄妆梳洗迟。……新贴绣罗襦，双双金鹧鸪。
+    text_display: excerpt
+    themes: [闺情, 侧艳, 工笔密丽]
+    influence: 《花间集》卷一首列之作，文人词的开山标志；清代张惠言读出「感士不遇」的比兴，近代王国维则以「画屏金鹧鸪」状其词品。
+    confidence: 存疑
+    dispute: 文本据维基文库花间集卷一实取（贴一作帖）。是否别有寄托聚讼百年：张惠言谓此感士不遇也篇法仿佛长门赋照花四句离骚初服之意，王国维一派斥为穿凿；系年为约估。
+    source_ids: [src-huajianji]
+
+  - work_id: pu-sa-man-shui-jing-lian-li-po-li-zhen
+    title: 菩萨蛮·水精帘里颇黎枕
+    alt_titles: [菩萨蛮·其二（组词）]
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 江上柳如烟雁飞残月天，以淡墨远景插入秾丽闺阁，虚实相生，为十四首中最空灵的一阕。
+    attribution: 确凿
+    excerpt: 水精帘里颇黎枕，暖香惹梦鸳鸯锦。江上柳如烟，雁飞残月天。
+    text_display: excerpt
+    themes: [闺情, 梦境, 清远之境]
+    influence: 被历代选家视为温词中「浓丽中有远韵」的代表。
+    source_ids: [src-huajianji]
+
+  - work_id: pu-sa-man-yu-lou-ming-yue
+    title: 菩萨蛮·玉楼明月长相忆
+    alt_titles: [菩萨蛮·其六（组词）]
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 十四首中唯一以送别直陈相思起笔者，柳丝袅娜春无力，花落子规啼绿窗残梦迷，情致较他阕为显豁。
+    attribution: 确凿
+    excerpt: 玉楼明月长相忆，柳丝袅娜春无力。门外草萋萋，送君闻马嘶。……花落子规啼，绿窗残梦迷。
+    text_display: excerpt
+    themes: [离情, 春夜, 相忆]
+    influence: 温词中少数被评家许为「直抒而仍含蓄」的名篇。
+    source_ids: [src-huajianji]
+
+  - work_id: geng-lou-zi-yu-lu-xiang-hong-la-lei
+    title: 更漏子·玉炉香红蜡泪
+    alt_titles: [更漏子·其六（组词）]
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 上片室内香烛眉鬓，下片忽转梧桐三更雨，不道离情正苦，一叶叶一声声空阶滴到明——以雨声写彻夜无眠，声情俱绝。
+    attribution: 确凿
+    excerpt: 玉炉香，红蜡泪，偏照画堂秋思。……梧桐树，三更雨，不道离情正苦。一叶叶，一声声，空阶滴到明。
+    text_display: excerpt
+    themes: [秋夜, 离情, 声景]
+    influence: 空阶滴到明被视为以景语收束离愁的千古典范，后世雨打梧桐意象的经典源头之一。
+    source_ids: [src-huajianji]
+
+  - work_id: geng-lou-zi-liu-si-chang-chun-yu-xi
+    title: 更漏子·柳丝长春雨细
+    alt_titles: [更漏子·其一（组词）]
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 柳丝长春雨细花外漏声迢递，惊塞雁起城乌，结于红烛背绣帏垂梦长君不知，全篇以细微声象织成无眠之夜。
+    attribution: 确凿
+    excerpt: 柳丝长，春雨细，花外漏声迢递。惊塞雁，起城乌，画屏金鹧鸪。……红烛背，绣帏垂，梦长君不知。
+    text_display: excerpt
+    themes: [春夜, 无眠, 幽怨]
+    influence: 画屏金鹧鸪一句经王国维拈出，成为温庭筠词品（句秀）的象征。
+    source_ids: [src-huajianji]
+
+  - work_id: meng-jiang-nan-shu-xi-ba
+    title: 梦江南·梳洗罢
+    alt_titles: [望江南·梳洗罢]
+    genre: 词（小令）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 梳洗罢独倚望江楼，过尽千帆皆不是，斜晖脉脉水悠悠，肠断白苹洲——二十七字写尽凭楼望归的一天，纯用白描，是温词中罕见疏朗之笔。
+    attribution: 确凿
+    excerpt: 梳洗罢，独倚望江楼。过尽千帆皆不是，斜晖脉脉水悠悠。肠断白苹洲。
+    text_display: full
+    themes: [望归, 江楼, 白描]
+    influence: 过尽千帆皆不是成为等待与落空的千古成语级意象；亦证温词非一味秾艳而有清淡一路。
+    source_ids: [src-huajianji]
+
+  - work_id: shang-shan-zao-xing
+    title: 商山早行
+    alt_titles: []
+    genre: 诗（五言律诗）
+    date:
+      text: 系年无定说，一般系于离长安东南行途中
+      year: 850
+      precision: 约
+    place: 商山道中
+    context: 客行悲故乡的羁旅早行图。颔联鸡声茅店月人迹板桥霜以十个名词意象叠加，不着动词而霜晨气象全出，为宋人梅尧臣状难写之景如在目前的先声。
+    attribution: 确凿
+    excerpt: 晨起动征铎，客行悲故乡。鸡声茅店月，人迹板桥霜。槲叶落山路，枳花明驿墙。因思杜陵梦，凫雁满回塘。
+    text_display: full
+    themes: [羁旅, 早行, 名物对仗]
+    influence: 鸡声茅店月人迹板桥霜为唐诗最著名的名词意象并置名联，长期入选语文教材；枳花明一作照，文本据维基文库全唐诗卷581系统实取。
+    confidence: 存疑
+    dispute: 确切系年与写作缘起无考；「明」「照」二字有异文。
+    source_ids: []
+
+  - work_id: yao-se-yuan
+    title: 瑶瑟怨
+    alt_titles: []
+    genre: 诗（七言绝句）
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 冰簟银床梦不成，碧天如水夜云轻；雁声远过潇湘去，十二楼中月自明——瑟怨之题而不写瑟，全以秋夜清景烘托幽怨。
+    attribution: 确凿
+    excerpt: 冰簟银床梦不成，碧天如水夜云轻。雁声远过潇湘去，十二楼中月自明。
+    text_display: full
+    themes: [秋夜, 幽怨, 清空之境]
+    influence: 七绝中以清空胜秾丽的代表作，入选《唐诗三百首》；文本据维基文库单篇页实取。
+    source_ids: []
+
+  - work_id: li-zhou-nan-du
+    title: 利州南渡
+    alt_titles: []
+    genre: 诗（七言律诗）
+    date:
+      text: 创作年代不详，或系游蜀途经利州时
+      year: 850
+      precision: 约
+    place: 利州（今四川广元）
+    context: 数丛沙草群鸥散万顷江田一鹭飞，渡口暮色的开阔画卷；尾联谁解乘舟寻范蠡五湖烟水独忘机，于山水间寄江湖忘机之想。
+    attribution: 确凿
+    excerpt: 澹然空水对斜晖，曲岛苍茫接翠微。……数丛沙草群鸥散，万顷江田一鹭飞。谁解乘舟寻范蠡，五湖烟水独忘机。
+    text_display: excerpt
+    themes: [渡口, 江湖之思, 山水]
+    influence: 中二联为晚唐写景律句名对；文本据维基文库全唐诗卷578系统实取，波上一作坡上。
+    confidence: 存疑
+    dispute: 作年与是否亲至利州均有不同意见，系年约估。
+    source_ids: []
+
+  - work_id: guo-chen-lin-mu
+    title: 过陈琳墓
+    alt_titles: []
+    genre: 诗（七言律诗）
+    date:
+      text: 系年无定说，或系漫游江淮间
+      year: 850
+      precision: 约
+    place: 陈琳墓（今江苏境内，一说）
+    context: 词客有灵应识我霸才无主始怜君，借吊三国文士浇自身块垒；莫怪临风倍惆怅欲将书剑学从军，怀才不遇之愤溢于言表。
+    attribution: 确凿
+    excerpt: 曾于青史见遗文，今日飘蓬过古坟。词客有灵应识我，霸才无主始怜君。……莫怪临风倍惆怅，欲将书剑学从军。
+    text_display: excerpt
+    themes: [怀古, 怀才不遇]
+    influence: 霸才无主一联被历代评家视为温庭筠一生遭际的自我写照；文本据维基文库全唐诗卷578系统实取，飘蓬一作飘零。
+    confidence: 存疑
+    dispute: 系年与墓地所在均无定说。
+    source_ids: []
+
+footprints:
+  - name: 太原祁县
+    modern_name: 山西省晋中市祁县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约812年生，少年时期在此
+      year: 812
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 籍贯太原祁据新唐书卷91温氏世系；旧唐书止称太原人；出生地在祁县系据籍贯推定，生年本身亦有异说。
+    source_ids: [src-jts-vol190b, src-xts-vol091]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约大中初（约847年）起应进士，累年不第，干谒交游于此
+      year: 847
+      range_end: 866
+      precision: 范围
+    kind: 游历
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-jts-vol190b]
+  - name: 襄阳
+    modern_name: 湖北省襄阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约大中末至咸通初往依徐商，署巡官
+      year: 856
+      range_end: 861
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    confidence: 存疑
+    dispute: 入幕年份据徐商镇襄阳任期推定。
+    source_ids: [src-jts-vol190b]
+  - name: 商山
+    modern_name: 陕西省商洛市商州区、丹凤县一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 系年无定说，作商山早行
+      year: 850
+      precision: 约
+    kind: 游历
+    route_order: 4
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 诗题明指商山道中，但到访时间与行程背景均系推定。
+    source_ids: []
+  - name: 广陵（扬州）
+    modern_name: 江苏省扬州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 咸通中失意归江东路由于此，醉犯夜被击
+      year: 860
+      range_end: 866
+      precision: 范围
+    kind: 游历
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-jts-vol190b]
+  - name: 方城
+    modern_name: 河南省南阳市方城县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约咸通中贬方城尉
+      year: 865
+      range_end: 866
+      precision: 范围
+    kind: 谪迁
+    route_order: 6
+    memorial_only: false
+    confidence: 存疑
+    dispute: 贬谪事实两史明确，系年为约估。
+    source_ids: [src-jts-vol190b]
+  - name: 随县
+    modern_name: 湖北省随州市曾都区
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 再迁隋县尉，约866年前后卒于此任一带
+      year: 866
+      precision: 约
+    kind: 逝世
+    route_order: 7
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 终官隋县尉两史明确；但卒年卒地均无确载，「卒于此」系据终官推定的通行说法。
+    source_ids: [src-jts-vol190b]
+  - name: 利州
+    modern_name: 四川省广元市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 或系游蜀途经，作利州南渡
+      year: 850
+      precision: 约
+    kind: 游历
+    route_order: 8
+    memorial_only: false
+    inferred: true
+    confidence: 存疑
+    dispute: 是否亲至利州无定说，仅据诗题推定，存疑著录。
+    source_ids: []
+
+relations:
+  - relation_type: 社群
+    target_id: lishangyin
+    direction: 双向
+    period:
+      text: 大中年间并称已成，号「温李」「三十六」
+      year: 847
+      range_end: 858
+      precision: 范围
+    evidence: 旧唐书卷190下李商隐传明载：与太原温庭筠、南郡段成式齐名，时号「三十六」；文思清丽，庭筠过之；而俱无持操，恃才诡激，为当涂者所薄，名宦不进，坎壈终身。新唐书卷203李商隐传：时温庭筠、段成式俱用是相夸，号「三十六体」。新唐书卷91附传另记与李商隐皆有名号「温李」。
+    confidence: 确定
+    dispute: 「三十六」「三十六体」与「温李」均两唐书有明文，惟各卷表述略异。
+    source_ids: [src-jts-vol190b, src-xts-vol203, src-xts-vol091]
+
+reception:
+  - era: 历代批评
+    evaluator: 欧阳炯《花间集叙》（赵崇祚辑《花间集》卷首）
+    quote: 在明皇朝则有李太白应制清平乐词四首，近代温飞卿复有《金筌集》。迩来作者，无愧前人。……因集近来诗客曲子词五百首，分为十卷……昔郢人有歌阳春者，号为绝唱，乃命之为花间集。
+    text_display: excerpt
+    comment: 花间集叙全文经维基文库实取（时大蜀广政三年夏四月），温庭筠词冠于全书卷一之首、题署「温助教庭筠」，这是词史上第一次明确的宗主定位——花间一体以温词为范型。
+    confidence: 确定
+    source_ids: [src-huajianji]
+  - era: 历代批评
+    evaluator: 张惠言《词选序》及《词选》评语（经王国维《人间词话》注引实取）
+    quote: 唐之词人，温庭筠最高，其言深美闳约。（《词选序》）此感士不遇也，篇法仿佛《长门赋》。「照花」四句，《离骚》初服之意。（评菩萨蛮）
+    text_display: excerpt
+    comment: 常州词派将温词读成楚骚寄托传统，把这位「侧艳」词人抬入风雅比兴谱系；原文经维基文库人间词话注①②实取转引。
+    confidence: 确定
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 刘熙载《艺概》、周济《介存斋论词杂著》、王国维《人间词话》
+    quote: 温飞卿词精妙绝人，然类不出乎绮怨。（刘熙载）毛嫱西施，天下美妇人也。严妆佳，淡妆亦佳……飞卿，严妆也。（周济）「画屏金鹧鸪」，飞卿语也，其词品似之。……温飞卿之词，句秀也。（王国维）
+    text_display: excerpt
+    comment: 近代词学的三家定位：精妙而限于绮怨、浓妆式的形式之美、句秀——共同点是不取张惠言的寄托说而直面其艺术本体；诸条均经维基文库人间词话及其注文实取。
+    confidence: 确定
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究围绕三条主线展开：温词是否别有寄托的百年之争、花间鼻祖与词体成立史的定位、生卒年与行迹谱系的考订（如温飞卿系年一类的专门研究）；具体论著引文须取得许可后补入，本层暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 商山早行（鸡声茅店月人迹板桥霜）长期入选语文教材，瑶瑟怨入选唐诗三百首系统的通行选本；教材篇目随学期变动，录入时须另行核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 大众传播综述
+    quote: ""
+    text_display: none
+    comment: 影视剧中的温庭筠形象多为晚唐才子轶事（考场枪手、狎游风流）的戏剧化敷演，不作信史依据；网络传播集中于其闺情词名句，暂无可靠专门条目可引。
+    source_ids: []
+
+sources_used: [src-jts-vol190b, src-xts-vol203, src-huajianji]
+
+version_notes:
+  created: 2026-08-26
+  last_reviewed: 2026-08-26
+  revisions:
+    - {date: 2026-08-26, note: "初版。17条年谱（5阶段）、11件作品（词6诗5）、8处足迹、1组关系（并称李商隐）、6层接受史。生平事实实取维基文库旧唐书卷190下温庭筠附传及同卷李商隐传、新唐书卷203；新唐书卷91温大雅传附传已实取但该卷未登记，相关内容按转述层著录并建议新增来源。花间集入口与卷一菩萨蛮、更漏子、梦江南文本实取成功，欧阳炯叙全文在手。生卒年按约812—866主流说与约801—870等异说著录，不写精确年份。"}
+    - {date: 2026-08-26, note: "收口修订：src-xts-vol091 已由主会话登记为有效，新唐书卷91相关条目（家世/少年才思/科场犯规/籍贯足迹/温李关系）自转述层翻入正式 source_ids 引用，审计表同步更新。"}

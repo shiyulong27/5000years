@@ -1,0 +1,679 @@
+# 李商隐全景详卷（schema v1）
+# 史料审计表（前置证据；来源登记见 data/sources.yaml）：
+#
+# | 事实点 | 旧唐书·卷190下(J) | 新唐书·卷203(X) | 结论与置信 |
+# |---|---|---|---|
+# | 籍贯 | 字义山，怀州河内人 | 同 | 确定 |
+# | 家世 | 曾祖叔恒安阳令、祖俌邢州录事参军、父嗣 | 或言英国公世勣之裔孙 | 世系确定(J)；帝裔说(X)仅「或言」，存疑 |
+# | 生年 | 无载 | 无载 | 约813系学界倒推，存疑 |
+# | 令狐楚知遇 | 楚镇河阳，以所业文干之，年才及弱冠；令与诸子游 | 楚帅河阳奇其文使与诸子游 | 确定；镇河阳年份系推定 |
+# | 巡官随计 | 楚镇天平、汴州，从为巡官，岁给资装令随计上都 | 徙天平、宣武皆表署巡官 | 确定 |
+# | 授章奏学 | 楚能章奏，遂以其道授商隐，始为今体章奏 | 因授其学，俪偶长短繁缛过之 | 确定 |
+# | 进士及第 | 开成二年方登进士第 | 高锴知贡举，令狐绹雅善锴，力誉之 | 确定(开成二年=837) |
+# | 弘农尉 | 调补弘农尉 | 以活狱忤观察使孙简将罢去，会姚合代简谕使还官 | 确定 |
+# | 书判拔萃 | 会昌二年又以书判拔萃 | 又试拔萃中选 | 确定(会昌二年=842) |
+# | 入茂元幕 | 辟为掌书记得侍御史，茂元爱其才以子妻之 | 同 | 确定；系年推定 |
+# | 党争排笮 | 德裕与宗闵、嗣复、令狐楚大相仇怨；绹以商隐背恩尤恶其无行 | 牛、李党人蚩谪商隐以为诡薄无行共排笮之 | 确定 |
+# | 桂府 | 郑亚廉察桂州请为观察判官检校水部员外郎 | 更依桂管观察使郑亚府为判官；亚谪循州从之凡三年乃归 | 确定 |
+# | 徐府 | 卢弘正奏署掾曹令典笺奏；镇徐州又从为掌书记 | 同 | 确定 |
+# | 陈情绹 | 明年令狐绹作相，屡启陈情，绹不之省 | 綯当国归穷自解綯憾不置 | 确定 |
+# | 东川 | 柳仲郢镇东蜀辟节度判官检校工部郎中 | 柳仲郢节度剑南东川辟判官检校工部员外郎 | 确定 |
+# | 卒 | 大中末废罢还郑州未几病卒 | 府罢客荥阳卒 | 死地两书互见(郑州还/客荥阳)，卒年倒推约858存疑 |
+# | 三十六体 | 与温庭筠、段成式齐名时号「三十六」 | 号「三十六体」 | 确定 |
+# | 表状集 | 商隐有表状集四十卷 | —— | 确定(J) |
+# | 生卒年 | 两史均无明文；L1库存约813—858，据行迹倒推 | 同左 | 存疑 |
+#
+# 版权：本文件只收公版古籍原文与自写中立转述；无现代注释译文、百科文字。
+schema_version: 1
+id: lishangyin
+
+profile:
+  courtesy_name: 义山
+  art_name: 玉谿生
+  aliases: [樊南生]
+  gender: 男
+  ethnicity: ""
+  ancestry: 怀州河内
+  birthplace: 怀州河内（生年正史无载，详见 timeline 出生条目 dispute）
+  death_place: 荥阳（新唐书称客荥阳卒；旧唐书称还郑州病卒）
+  offices: [秘书省校书郎, 弘农尉, 桂管观察判官（检校水部员外郎）, 徐州掌书记, 太学博士, 东川节度判官（检校工部郎中/员外郎）]
+  fields: [文学]
+  roles: [诗人]
+  summary: 晚唐诗坛巨擘，无题诗朦胧深婉独成一格；一生困于牛李党争夹缝，坎壈终身，与杜牧并称小李杜。
+
+timeline:
+  # ── 阶段一：怀州少年 ──────────────────────────────
+  - stage: 怀州少年
+    stage_order: 1
+    title: 出生怀州河内
+    date:
+      text: "约813年"
+      year: 813
+      precision: 约
+    place: 怀州河内
+    summary: 李商隐生于怀州河内。两唐书本传均不载生卒年，通行生年系学界依其行迹与卒年倒推。
+    confidence: 存疑
+    dispute: 两唐书无生年明文；约813由「年才及弱冠」干谒令狐楚（通行系于大和三年前后）与大中末卒年两端倒推，另有811、812诸说并存。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 怀州少年
+    stage_order: 2
+    title: 家世与门第
+    date:
+      text: 家世沿革，具体年代不详
+      precision: 未知
+    place: 怀州河内
+    summary: 旧唐书记曾祖叔恒年十九登进士第位终安阳令，祖俌位终邢州录事参军，父嗣；新唐书则称或言英国公世勣之裔孙。门第清寒而自称帝裔。
+    confidence: 存疑
+    dispute: 为李世勣裔孙之说新唐书仅以「或言」引之，史源不明，学界多视为攀附存疑。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 怀州少年
+    stage_order: 3
+    title: 幼能为文
+    date:
+      text: 少年时期，具体年代不详
+      precision: 未知
+    place: 怀州河内
+    summary: 旧唐书称商隐幼能为文；初为文瑰迈奇古，后入令狐楚幕始改工今体章奏。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+
+  # ── 阶段二：受知令狐氏与科第 ──────────────────────────
+  - stage: 受知令狐氏与科第
+    stage_order: 4
+    title: 令狐楚知遇，授章奏之学
+    date:
+      text: 约829年前后
+      year: 829
+      precision: 约
+    place: 河阳
+    summary: 令狐楚镇河阳，商隐以所业文干之，年才及弱冠；楚以其少俊深礼之，令与诸子游。楚本工章奏，遂以其道授商隐，自是始为今体章奏。
+    confidence: 存疑
+    dispute: 干谒令狐楚的具体年份两唐书未系年，约829系据令狐楚镇河阳的时间推定。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 受知令狐氏与科第
+    stage_order: 5
+    title: 从巡官，随计上都
+    date:
+      text: 约830—836年之间
+      year: 830
+      range_end: 836
+      precision: 范围
+    place: 天平、汴州、长安
+    summary: 令狐楚徙镇天平、宣武（汴州），皆表署商隐为巡官，岁给资装令随计上都赴举。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 受知令狐氏与科第
+    stage_order: 6
+    title: 开成二年登进士第
+    date:
+      text: "837年（开成二年）"
+      year: 837
+      precision: 精确
+    place: 长安
+    summary: 高锴知贡举，令狐绹雅善锴，为之延誉甚力，商隐遂擢进士第。旧唐书径记开成二年方登进士第。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+
+  # ── 阶段三：仕途与党争夹缝 ────────────────────────────
+  - stage: 仕途与党争夹缝
+    stage_order: 7
+    title: 释褐校书郎，调补弘农尉
+    date:
+      text: 约837—839年之间
+      year: 837
+      range_end: 839
+      precision: 范围
+    place: 长安、弘农
+    summary: 登第后释褐秘书省校书郎，旋调补弘农尉。
+    source_ids: [src-jts-vol190b]
+  - stage: 仕途与党争夹缝
+    stage_order: 8
+    title: 活狱忤上，姚合谕还
+    date:
+      text: 任弘农尉期间，具体年代不详
+      precision: 未知
+    place: 弘农
+    summary: 在弘农尉任以活狱忤观察使孙简，将罢去；会姚合代简，谕使还官。
+    source_ids: [src-xts-vol203]
+  - stage: 仕途与党争夹缝
+    stage_order: 9
+    title: 入王茂元幕，以子妻之
+    date:
+      text: 约838—839年之间
+      year: 838
+      range_end: 839
+      precision: 范围
+    place: 河阳
+    summary: 王茂元镇河阳，爱其才，表辟掌书法记，得侍御史，并以子妻之。
+    confidence: 存疑
+    dispute: 入幕与成婚的确切年份两唐书未系年，系据王茂元镇河阳时段推定；旧唐书且将其叙于会昌二年书判拔萃之前后文互见，次序历来有讨论。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 仕途与党争夹缝
+    stage_order: 10
+    title: 书判拔萃
+    date:
+      text: "842年（会昌二年）"
+      year: 842
+      precision: 精确
+    place: 长安
+    summary: 会昌二年又以书判拔萃中选。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 仕途与党争夹缝
+    stage_order: 11
+    title: 牛李党争排笮，「背恩」之谤
+    date:
+      text: 约838年以后持续多年
+      year: 838
+      precision: 约
+    place: 长安及各地幕府
+    summary: 茂元虽读书为儒然本将家子，李德裕素遇之；德裕与李宗闵、杨嗣复、令狐楚大相仇怨。商隐既为茂元从事，牛党之人蚩谪其为诡薄无行共排笮之；令狐楚卒后，子绹以商隐背恩，尤恶其无行。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 仕途与党争夹缝
+    stage_order: 12
+    title: 茂元卒，久滞不调
+    date:
+      text: 约843—846年之间
+      year: 843
+      range_end: 846
+      precision: 范围
+    place: 长安
+    summary: 王茂元卒，商隐来游京师，久之不调，困顿守选。
+    confidence: 存疑
+    dispute: 茂元卒年与此段滞留起讫系学界据相关碑志与史事推定，两唐书未系年。
+    source_ids: [src-jts-vol190b]
+
+  # ── 阶段四：桂府徐幕与东川晚年 ──────────────────────────
+  - stage: 桂府徐幕与东川晚年
+    stage_order: 13
+    title: 入郑亚桂州幕
+    date:
+      text: 约847年（大中元年）前后
+      year: 847
+      precision: 约
+    place: 桂州
+    summary: 给事中郑亚廉察桂州，请商隐为观察判官、检校水部员外郎。
+    confidence: 存疑
+    dispute: 桂府之行的具体年份系据郑亚出镇桂管时间推定。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 桂府徐幕与东川晚年
+    stage_order: 14
+    title: 亚贬循州，随府岭表累载
+    date:
+      text: 约848—850年之间
+      year: 848
+      range_end: 850
+      precision: 范围
+    place: 循州、岭表
+    summary: 大中初白敏中执政、令狐绹在内署，共排李德裕逐之；郑亚坐德裕党贬循州刺史，商隐随亚在岭表累载，凡三年乃归。亚亦德裕所善，绹以为忘家恩放利偷合，谢不通。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 桂府徐幕与东川晚年
+    stage_order: 15
+    title: 入朝为卢弘正典笺奏
+    date:
+      text: 约849年（大中三年）
+      year: 849
+      precision: 约
+    place: 长安
+    summary: 岭表归后入朝，京兆尹卢弘正奏署掾曹，令典笺奏。
+    confidence: 存疑
+    dispute: 旧唐书「三年入朝」之「三年」读为大中三年系通行意见，仍有异解。
+    source_ids: [src-jts-vol190b]
+  - stage: 桂府徐幕与东川晚年
+    stage_order: 16
+    title: 令狐绹作相，屡启陈情不省
+    date:
+      text: 约850年（大中四年）以后
+      year: 850
+      precision: 约
+    place: 长安
+    summary: 明年令狐绹作相，商隐屡启陈情，绹不之省；新唐书称其归穷自解，綯憾不置。
+    confidence: 存疑
+    dispute: 「明年」承大中三年文义读为大中四年，系年仍属推定。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 桂府徐幕与东川晚年
+    stage_order: 17
+    title: 从卢弘正镇徐州
+    date:
+      text: 约850—851年之间
+      year: 850
+      range_end: 851
+      precision: 范围
+    place: 徐州
+    summary: 弘正镇徐州，商隐又从为掌书记；府罢入朝，复以文章干谒，乃补太学博士。
+    confidence: 存疑
+    dispute: 徐府起讫与补太学博士的年份诸家年谱略有出入。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 桂府徐幕与东川晚年
+    stage_order: 18
+    title: 柳仲郢辟为东川判官
+    date:
+      text: 约851—856年之间
+      year: 851
+      range_end: 856
+      precision: 范围
+    place: 梓州
+    summary: 柳仲郢节度剑南东川，辟商隐为节度判官、检校工部郎中（新唐书作检校工部员外郎），居东川幕数年。
+    confidence: 存疑
+    dispute: 入东川幕年份有851诸说，官衔两唐书一作郎中一作员外郎；系年均据柳仲郢出镇时间推定。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - stage: 桂府徐幕与东川晚年
+    stage_order: 19
+    title: 废罢北归
+    date:
+      text: 约857年（大中末）
+      year: 857
+      precision: 约
+    place: 郑州
+    summary: 大中末仲郢坐专杀左迁，商隐废罢，还郑州。
+    confidence: 存疑
+    dispute: 大中末系笼统纪时，废罢与北归年份系倒推。
+    source_ids: [src-jts-vol190b]
+  - stage: 桂府徐幕与东川晚年
+    stage_order: 20
+    title: 客荥阳病卒
+    date:
+      text: "约858年"
+      year: 858
+      precision: 约
+    place: 荥阳
+    summary: 新唐书称府罢客荥阳卒；旧唐书称还郑州未几病卒。弟羲叟亦进士擢第；商隐有表状集四十卷行世。
+    confidence: 存疑
+    dispute: 两唐书均无确切卒年，仅记大中末未几病卒/客荥阳卒；通行约858系据「大中末」倒推，另有857、859乃至861诸说。死地郑州说与荥阳说不必互斥（还郑州后客卒近郊），然细节无从确考。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+
+works:
+  - work_id: jin-se
+    title: 锦瑟
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 创作年代无定论，多系于晚年
+      precision: 未知
+    place: ""
+    context: 以锦瑟五十弦起兴，中间化用庄生梦蝶、望帝啼鹃、沧海珠泪、蓝田玉烟诸意象，尾联归于追忆惘然。诗旨自宋代以来即为聚讼焦点。
+    attribution: 确凿
+    excerpt: 锦瑟无端五十弦，一弦一柱思华年。庄生晓梦迷蝴蝶，望帝春心托杜鹃。沧海月明珠有泪，蓝田日暖玉生烟。此情可待成追忆，只是当时已惘然。
+    text_display: full
+    themes: [追忆, 朦胧]
+    influence: 其朦胧诗风的代表，被视为中国诗歌多义性的经典个案。
+    confidence: 有争议
+    dispute: 本事历来聚讼：悼亡说、自伤身世说、诗集自序说、咏瑟适怨清和说、政治寄托说长期并立而无定论；本卷不作裁决。
+    source_ids: [src-qts-lishangyin]
+  - work_id: ye-yu-ji-bei
+    title: 夜雨寄北
+    alt_titles: [夜雨寄内]
+    genre: 七言绝句
+    date:
+      text: 约大中年间客居巴蜀时期
+      year: 851
+      range_end: 856
+      precision: 范围
+    place: 巴山（具体地点不详）
+    context: 身在巴山秋雨之夜，遥想他日共剪西窗烛、重话今宵的情景，时空往复回环。
+    attribution: 确凿
+    excerpt: 君问归期未有期，巴山夜雨涨秋池。何当共剪西窗烛，却话巴山夜雨时。
+    text_display: full
+    themes: [相思, 巴蜀]
+    influence: 时空交错手法脍炙人口，巴山夜雨成为羁旅相思的经典语汇。
+    confidence: 有争议
+    dispute: 题目一作夜雨寄内，受赠对象历来有寄妻王氏与寄长安友人两说；若系东川幕时期王氏已卒，寄内说遂生扞格，故亦有主张作于入蜀之前者。作年作地均无定论。
+    source_ids: [src-qts-lishangyin]
+  - work_id: wuti-xiangjian
+    title: 无题·相见时难别亦难
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 以相见时难别亦难起笔，春蚕蜡炬两句写至死不渝之情，蓬山万里寄青鸟之思。
+    attribution: 确凿
+    excerpt: 相见时难别亦难，东风无力百花残。春蚕到死丝方尽，蜡炬成灰泪始干。晓镜但愁云鬓改，夜吟应觉月光寒。蓬山此去无多路，青鸟殷勤为探看。
+    text_display: full
+    themes: [爱情, 无题]
+    influence: 春蚕到死丝方尽成为献身精神的千古名句。
+    confidence: 有争议
+    dispute: 无题诗本事自唐以来即不可确考，或谓艳情本事、或谓政治寄托、或谓借情喻道，诸说并立；本条仅录文本层面事实。
+    source_ids: [src-qts-lishangyin]
+  - work_id: wuti-zuoye
+    title: 无题·昨夜星辰昨夜风
+    alt_titles: []
+    genre: 七言律诗
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 追忆昨夜画楼西畔一场宴集，身无彩凤双飞翼、心有灵犀一点通写阻隔中的默契相通。
+    attribution: 确凿
+    excerpt: 昨夜星辰昨夜风，画楼西畔桂堂东。身无彩凤双飞翼，心有灵犀一点通。隔座送钩春酒暖，分曹射覆蜡灯红。嗟余听鼓应官去，走马兰台类转蓬。
+    text_display: full
+    themes: [爱情, 追忆, 无题]
+    influence: 心有灵犀成为心意相通的通用成语。
+    confidence: 有争议
+    dispute: 所忆对象与场合无考，本事有宴席邂逅、寄托身世诸说；尾联听鼓应官所涉职任年代亦难坐实。
+    source_ids: [src-qts-lishangyin]
+  - work_id: deng-le-you-yuan
+    title: 登乐游原
+    alt_titles: [乐游原]
+    genre: 五言绝句
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: 长安乐游原
+    context: 向晚意不适而驱车登古原，面对夕阳发出无限好与近黄昏的并置感慨。
+    attribution: 确凿
+    excerpt: 向晚意不适，驱车登古原。夕阳无限好，只是近黄昏。
+    text_display: full
+    themes: [夕阳, 抒怀]
+    influence: 夕阳无限好成为晚唐气象与迟暮美感的象征性表达。
+    confidence: 存疑
+    dispute: 系年无考；末句「只是」作转折抑或正是之义，历代解读有分歧。
+    source_ids: [src-qts-lishangyin]
+  - work_id: jia-sheng
+    title: 贾生
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 咏贾谊宣室召对故事，夜半前席却不问苍生问鬼神，托古讽时而寓才士不遇之慨。
+    attribution: 确凿
+    excerpt: 宣室求贤访逐臣，贾生才调更无伦。可怜夜半虚前席，不问苍生问鬼神。
+    text_display: full
+    themes: [咏史, 不遇]
+    influence: 翻案咏史的典范，寄寓晚唐士人对君主求贤名实不符的讽喻。
+    confidence: 存疑
+    dispute: 托古讽时的主旨大体公认，然所刺具体时事为何，诸家所指不一。
+    source_ids: [src-qts-lishangyin]
+  - work_id: ma-wei
+    title: 马嵬二首（其二）
+    alt_titles: [马嵬]
+    genre: 七言律诗
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 咏玄宗幸蜀马嵬之变，以海外更九州起兴，对比四纪天子不及卢家莫愁，讽帝王爱情神话之虚妄。
+    attribution: 确凿
+    excerpt: 海外徒闻更九州，他生未卜此生休。……此日六军同驻马，当时七夕笑牵牛。如何四纪为天子，不及卢家有莫愁。
+    text_display: excerpt
+    themes: [咏史, 讽喻]
+    influence: 晚唐咏马嵬诸作中最负盛名的一首。
+    confidence: 存疑
+    dispute: 系年无定论；讽刺锋芒所向（玄宗本人抑或时政影射）历代解说有别。
+    source_ids: [src-qts-lishangyin]
+  - work_id: wan-qing
+    title: 晚晴
+    alt_titles: []
+    genre: 五言律诗
+    date:
+      text: 约851年寓梓州初期
+      year: 851
+      precision: 约
+    place: 梓州
+    context: 久雨初晴，幽草得天怜而人间重晚晴，于晚岁失路之际写出澄明欣慰之境。
+    attribution: 确凿
+    excerpt: 天意怜幽草，人间重晚晴。
+    text_display: excerpt
+    themes: [晚晴, 自况]
+    influence: 人间重晚晴成为历经忧患后珍惜晴光的通用语。
+    confidence: 存疑
+    dispute: 系于初入东川幕时期系通行说法，仍有异说。
+    source_ids: [src-qts-lishangyin]
+  - work_id: chang-e
+    title: 嫦娥
+    alt_titles: []
+    genre: 七言绝句
+    date:
+      text: 创作年代不详
+      precision: 未知
+    place: ""
+    context: 写烛影星沉之夜，悬想嫦娥偷灵药后碧海青天夜夜心的孤寂。
+    attribution: 确凿
+    excerpt: 云母屏风烛影深，长河渐落晓星沉。嫦娥应悔偷灵药，碧海青天夜夜心。
+    text_display: full
+    themes: [孤寂, 神话]
+    influence: 以仙境写孤独的代表作，碧海青天成为永恒寂寞的意象。
+    confidence: 有争议
+    dispute: 主旨有咏女道士、自伤不遇、悼亡、泛咏孤高等诸说，历来无定论。
+    source_ids: [src-qts-lishangyin]
+  - work_id: fan-nan-biaozhuangji
+    title: 樊南文集（表状集四十卷）
+    alt_titles: [樊南甲集, 樊南乙集]
+    genre: 四六文（骈体章奏）
+    date:
+      text: 编集年代不详，两唐书著录四十卷
+      precision: 未知
+    place: ""
+    context: 旧唐书本传记商隐有表状集四十卷；其章奏之学受自令狐楚，樊南四六与诗并称，新唐书谓其俪偶长短繁缛过楚。
+    attribution: 确凿
+    excerpt: ""
+    text_display: none
+    themes: [章奏, 骈文]
+    influence: 樊南文派为晚唐骈体章奏代表，后世四六奉为轨范。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+
+footprints:
+  - name: 怀州河内
+    modern_name: 河南省沁阳市一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约813年生，少年在家乡"
+      year: 813
+      precision: 约
+    kind: 出生
+    route_order: 1
+    memorial_only: false
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - name: 长安
+    modern_name: 陕西省西安市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约830年代随计赴举起，此后屡居长安
+      year: 830
+      precision: 约
+    kind: 居住
+    route_order: 2
+    memorial_only: false
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - name: 弘农
+    modern_name: 河南省灵宝市一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约837—839年任弘农尉
+      year: 837
+      range_end: 839
+      precision: 范围
+    kind: 任职
+    route_order: 3
+    memorial_only: false
+    confidence: 存疑
+    dispute: 任期系据登第后释褐迁转推定。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - name: 河阳
+    modern_name: 河南省孟州市一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约838—839年入王茂元幕
+      year: 838
+      range_end: 839
+      precision: 范围
+    kind: 任职
+    route_order: 4
+    memorial_only: false
+    confidence: 存疑
+    dispute: 入幕年份系推定，详见 timeline 对应条目。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - name: 桂州
+    modern_name: 广西壮族自治区桂林市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约847年起为郑亚观察判官
+      year: 847
+      precision: 约
+    kind: 任职
+    route_order: 5
+    memorial_only: false
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - name: 循州
+    modern_name: 广东省龙川县一带
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约848—850年随郑亚贬所居岭表
+      year: 848
+      range_end: 850
+      precision: 范围
+    kind: 谪迁
+    route_order: 6
+    memorial_only: false
+    confidence: 存疑
+    dispute: 随府南来无疑，然居循州城抑或往来岭表诸地，行程细节无考。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - name: 徐州
+    modern_name: 江苏省徐州市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约850—851年为卢弘正掌书记
+      year: 850
+      range_end: 851
+      precision: 范围
+    kind: 任职
+    route_order: 7
+    memorial_only: false
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - name: 梓州
+    modern_name: 四川省三台县
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: 约851—856年为柳仲郢东川判官
+      year: 851
+      range_end: 856
+      precision: 范围
+    kind: 任职
+    route_order: 8
+    memorial_only: false
+    confidence: 存疑
+    dispute: 东川幕起讫年份诸家年谱略有出入。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - name: 荥阳
+    modern_name: 河南省荥阳市
+    lng: null
+    lat: null
+    coord_precision: 县级
+    coord_source: 待接入 data/geography 体系后登记精确坐标
+    visit_date:
+      text: "约858年客卒于此"
+      year: 858
+      precision: 约
+    kind: 逝世
+    route_order: 9
+    memorial_only: false
+    confidence: 存疑
+    dispute: 卒地新唐书作客荥阳、旧唐书作还郑州病卒；卒年约858系倒推。
+    source_ids: [src-xts-vol203, src-jts-vol190b]
+
+relations:
+  - relation_type: 社群
+    target_id: dumu
+    direction: 单向
+    period:
+      text: 同处晚唐诗坛，生世重叠
+      year: 803
+      range_end: 858
+      precision: 范围
+    evidence: 李商隐有《杜司勋》诗称刻意伤春复伤别，人间唯有杜司勋，对杜牧诗推崇备至；二人直接交往的其他史料阙如，后世以小李杜并举。
+    inferred: true
+    confidence: 存疑
+    dispute: 小李杜并称系后世文学史归纳而非唐人成说；二人交往的直接记录不足，《杜司勋》仅证单向推崇。
+    source_ids: [src-qts-lishangyin]
+  - relation_type: 思想影响
+    target_id: dufu
+    direction: 单向
+    period:
+      text: 诗学承祧，时代悬隔无交往可能
+      precision: 未知
+    evidence: 义山七律深婉沉郁、精于布局，历代评家多以师法杜甫论之；此为诗学史上的承传判断而非实际交往。
+    inferred: true
+    confidence: 存疑
+    dispute: 义山学杜为历代主流批评意见，然具体取径与程度各家论述不一，非正史明文。
+    source_ids: []
+  - relation_type: 后世附会
+    target_id: baijuyi
+    direction: 双向
+    period:
+      text: 传说附会，时代不合实证
+      precision: 未知
+    evidence: 唐宋笔记流传白居易晚年极赏义山文章，戏言死后当为其子、义山生子遂名白老之说；纯属轶闻，正史无载。
+    inferred: true
+    confidence: 传说
+    dispute: 此说出处为晚出笔记，情节近小说家言，学界普遍视为附会，仅录以见接受史上之义山声望。
+    source_ids: []
+
+reception:
+  - era: 同时代
+    evaluator: 两唐书本传所录时论
+    quote: "与太原温庭筠、南郡段成式齐名，时号「三十六」。"
+    text_display: excerpt
+    comment: 新唐书称三十六体，谓三人俱以俪偶章奏相夸；此为对其骈文与今体成就的同时代定位。
+    source_ids: [src-jts-vol190b, src-xts-vol203]
+  - era: 同时代
+    evaluator: 牛党人物（新唐书转述）
+    quote: 诡薄无行，共排笮之。
+    text_display: excerpt
+    comment: 党争攻讦之辞，带明显立场；本卷引之以呈现其陷身牛李夹缝的处境，不作为人品定评。
+    confidence: 确定
+    source_ids: [src-xts-vol203]
+  - era: 历代批评
+    evaluator: 元好问《论诗三十首》
+    quote: 诗家总爱西昆好，独恨无人作郑笺。
+    text_display: excerpt
+    comment: 金元论诗绝句点出义山诗深晦难解、笺注蜂起而终无定论的接受困境，为历代批评层的代表性概括。
+    source_ids: []
+  - era: 近现代学术
+    evaluator: 学界综述
+    quote: ""
+    text_display: none
+    comment: 近现代研究集中于生卒年考订、无题诗与锦瑟诗旨聚讼、牛李党争中的政治处境重估及樊南文的文体价值等议题；具体现代论著引文须另行取得许可后录入，本卷暂作中立转述。
+    source_ids: []
+  - era: 教科书与公共文化
+    evaluator: 通用语文教育与大众传播
+    quote: ""
+    text_display: none
+    comment: 夜雨寄北、无题、贾生、嫦娥等篇长期见于中小学语文教材，春蚕到死丝方尽、心有灵犀等句化为常用成语；教材篇目随课标变动，录入时须核验当期版本。
+    source_ids: []
+  - era: 影视与网络
+    evaluator: 影视改编与网络传播
+    quote: ""
+    text_display: none
+    comment: 义山生平与无题诸作常见于诗词题材影视、纪录片与网络诗词社群话题，锦瑟诗旨之争在网络语境中被反复演绎；具体作品信息散见各平台，本卷不作逐条著录。
+    source_ids: []
+
+sources_used: [src-jts-vol190b, src-xts-vol203, src-qts-lishangyin]
+
+version_notes:
+  created: 2026-08-25
+  last_reviewed: 2026-08-25
+  revisions:
+    - {date: 2026-08-25, note: 初版。20条年谱、10种作品、9处足迹、3组关系、6层接受史；生卒年与作品本事争议全部落dispute字段}
