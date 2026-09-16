@@ -1,0 +1,1081 @@
+---
+import Base from '../../layouts/Base.astro'
+import '../../styles/ai.css'
+import knowledgeModules from '../../data/ai/knowledge_modules.json'
+import interviewQuestions from '../../data/ai/interview_questions.json'
+
+const base = import.meta.env.BASE_URL
+---
+
+<Base title="从零开始 · AI 架构与 Agent 工程师系统通关教程 (先修 · LLM · Embedding · RAG · Rank · Memory · Agent · 沙箱 · Harness · Dify) · 十丘" wide={true}>
+  <div class="ai-page-wrapper">
+    <!-- 顶部导航与全局快速切换 -->
+    <header class="ai-top-nav">
+      <nav class="ai-breadcrumbs">
+        <a href={base}>🏛️ 十丘门户</a>
+        <span>/</span>
+        <strong style="color: #2563eb;">🤖 AI 架构与 Agent 工程师系统学习教程</strong>
+      </nav>
+      <div class="ai-nav-pills">
+        <a href={base} class="ai-nav-pill">🏠 门户首页</a>
+        <a href={`${base}timeline/`} class="ai-nav-pill">📜 历史长卷</a>
+        <a href={`${base}geography/`} class="ai-nav-pill">🗺️ 历代舆图</a>
+        <a href={`${base}chinese/pinyin/`} class="ai-nav-pill">📖 语文</a>
+        <a href={`${base}math/`} class="ai-nav-pill">📐 数学</a>
+        <a href={`${base}english/`} class="ai-nav-pill">🔤 英语</a>
+        <a href="#interview-bank" class="ai-nav-pill">📚 进阶 FAQ 附录</a>
+      </div>
+    </header>
+
+    <!-- 顶部沉浸式 Hero Banner -->
+    <section class="ai-hero-banner">
+      <div class="ai-hero-badge">
+        <span>🌱</span> ZERO-TO-HERO · 零基础到工程实战全景教程
+      </div>
+      <h1 class="ai-hero-title">从零开始 · AI 架构与 Agent 工程师系统教程</h1>
+      <p class="ai-hero-desc">
+        专为<strong>完全零基础小白</strong>与探索大模型工程落地的<strong>开发者、Agent 架构师、Dify 工程师</strong>打造。全篇采用<strong>高清架构图解 + 大白话通俗比喻 + 丰富生活举例 + 动手代码实操 + 随堂通关小测验</strong>，从最基础的软件工程与数学先修，一路通关到工业级 RAG、记忆系统、Agent 运行时、代码执行沙箱与 Dify 企业实战！
+      </p>
+      <div class="ai-quick-stats">
+        <div class="ai-stat-item">
+          <span>🗺️</span> 体系架构：<strong>8 阶循序渐进精讲（Stage 0~7）</strong>
+        </div>
+        <div class="ai-stat-item">
+          <span>🖼️</span> 视觉心智：<strong>8 幅全高清架构流程图解</strong>
+        </div>
+        <div class="ai-stat-item">
+          <span>🧪</span> 动手实操：<strong>交互实验计算器 + 沙箱终端模拟器 + 随堂通关自测</strong>
+        </div>
+        <div class="ai-stat-item">
+          <span>🛠️</span> 生产落地：<strong>Docker 沙箱 / E2B / Dify / Mem0 / HNSW / 双 Harness</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🌟 8 阶循序渐进学习路线图 (Roadmap Stepper) -->
+    <section class="ai-roadmap-box">
+      <div class="ai-roadmap-head">
+        <h2 class="ai-roadmap-title">
+          <span>🧭</span> 学习导航 · 8 阶系统化通关路径
+        </h2>
+        <span style="font-size: 0.82rem; color: #64748b;">点击任意卡片即可直接跳转至对应章节精讲</span>
+      </div>
+
+      <div class="ai-roadmap-grid">
+        {knowledgeModules.map((m) => (
+          <a href={`#${m.id}`} class="ai-roadmap-card">
+            <div class="ai-roadmap-icon">{m.icon}</div>
+            <div class="ai-roadmap-meta">
+              <div class="ai-roadmap-step-tag">STAGE {m.stageNum} · {m.badge}</div>
+              <div class="ai-roadmap-step-title">{m.title.split('：')[1] || m.title}</div>
+            </div>
+          </a>
+        ))}
+        <a href="#interview-bank" class="ai-roadmap-card" style="border-color: #bfdbfe; background: #eff6ff;">
+          <div class="ai-roadmap-icon" style="border-color: #93c5fd; background: #ffffff;">📚</div>
+          <div class="ai-roadmap-meta">
+            <div class="ai-roadmap-step-tag" style="color: #2563eb;">附录 · 拔高拓展</div>
+            <div class="ai-roadmap-step-title" style="color: #1d4ed8;">工程疑难与进阶 FAQ ({interviewQuestions.length}篇)</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 粘性锚点导航栏 -->
+    <nav class="ai-sticky-nav" id="sticky-nav">
+      <div class="ai-tab-links">
+        <a href="#stage0" class="ai-tab-link">🌱 0.先修</a>
+        <a href="#stage1" class="ai-tab-link">🧬 1.LLM推理</a>
+        <a href="#stage2" class="ai-tab-link">📐 2.向量检索</a>
+        <a href="#stage3" class="ai-tab-link">📚 3.RAG全链路</a>
+        <a href="#stage4" class="ai-tab-link">⚖️ 4.Rank精排</a>
+        <a href="#stage5" class="ai-tab-link">🧠 5.记忆系统</a>
+        <a href="#stage6" class="ai-tab-link">🤖 6.Agent与沙箱</a>
+        <a href="#stage7" class="ai-tab-link">⚡ 7.双Harness与Dify</a>
+        <a href="#interview-bank" class="ai-tab-link" style="color: #2563eb; font-weight: 700;">📚 附录: 进阶FAQ</a>
+      </div>
+      <a href="#stage0" class="ai-quick-btn" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">
+        🚀 从零开始
+      </a>
+    </nav>
+
+    <!-- 8 阶知识模块主体 -->
+    {knowledgeModules.map((m) => (
+      <section class="ai-module-section" id={m.id}>
+        <div class="ai-module-header">
+          <div class="ai-module-title-group">
+            <div class="ai-module-icon">{m.icon}</div>
+            <div>
+              <h2 class="ai-module-title">{m.title}</h2>
+              <div style="font-size: 0.85rem; color: #64748b; margin-top: 0.2rem;">{m.summary}</div>
+            </div>
+          </div>
+          <span class="ai-module-badge" style="background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1;">
+            {m.badge}
+          </span>
+        </div>
+
+        {/* 💡 小白通俗比喻卡片 */}
+        <div class="ai-analogy-card">
+          <div class="ai-analogy-icon">💡</div>
+          <div>
+            <div class="ai-analogy-title">【一句话大白话直觉】</div>
+            <p class="ai-analogy-text">{m.analogy}</p>
+          </div>
+        </div>
+
+        {/* 阶段 0 专属架构图：全景架构数据流转图 */}
+        {m.id === 'stage0' && (
+          <div class="ai-diagram-card">
+            <div class="ai-diagram-head">
+              <h4 class="ai-diagram-title"><span>🖼️</span> 架构全景图：现代 AI 应用 7 大组件数据流转与协作</h4>
+              <span class="ai-module-badge" style="background: #e0f2fe; color: #0284c7;">DATA FLOW</span>
+            </div>
+            <p class="ai-diagram-desc">用户请求从 Web/App 端发出，经过业务网关与调度中枢，协调向量库、大模型与沙箱工具，最终以 SSE 流式长连接返回给前端打字机。</p>
+            <div class="ai-diagram-svg-wrap">
+              <svg viewBox="0 0 880 250" width="100%" height="250" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 1 L 10 5 L 0 9 z" fill="#3b82f6" />
+                  </marker>
+                  <marker id="arrow-emerald" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 1 L 10 5 L 0 9 z" fill="#10b981" />
+                  </marker>
+                </defs>
+
+                {/* 1. Client UI */}
+                <rect x="20" y="75" width="115" height="95" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+                <text x="77" y="105" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">客户端 UI</text>
+                <text x="77" y="128" font-size="11" fill="#64748b" text-anchor="middle">Web / App / 桌面</text>
+                <text x="77" y="148" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle">打字机 SSE 渲染</text>
+
+                {/* Arrow to Gateway */}
+                <line x1="135" y1="110" x2="175" y2="110" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+                <text x="155" y="102" font-size="9" fill="#64748b" text-anchor="middle">POST</text>
+
+                {/* Return SSE stream */}
+                <line x1="175" y1="130" x2="135" y2="130" stroke="#10b981" stroke-width="2" stroke-dasharray="4" marker-end="url(#arrow-emerald)"/>
+                <text x="155" y="145" font-size="9" fill="#10b981" text-anchor="middle">SSE流</text>
+
+                {/* 2. Backend & Gateway */}
+                <rect x="175" y="65" width="130" height="115" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+                <text x="240" y="93" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">业务后端网关</text>
+                <text x="240" y="118" font-size="11" fill="#475569" text-anchor="middle">鉴权 / 限流防刷</text>
+                <text x="240" y="138" font-size="11" fill="#475569" text-anchor="middle">会话 (Redis)</text>
+                <text x="240" y="158" font-size="11" fill="#475569" text-anchor="middle">订单 (Postgres)</text>
+
+                {/* Arrow to Orchestrator */}
+                <line x1="305" y1="122" x2="345" y2="122" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                {/* 3. Orchestration Hub (Agent Core) */}
+                <rect x="345" y="30" width="165" height="190" rx="10" fill="#faf5ff" stroke="#8b5cf6" stroke-width="2"/>
+                <text x="427" y="58" font-size="14" font-weight="bold" fill="#6b21a8" text-anchor="middle">调度中枢 (Orchestrator)</text>
+                <text x="427" y="80" font-size="11" fill="#7e22ce" text-anchor="middle">Dify / Agent 运行时</text>
+                <line x1="360" y1="90" x2="495" y2="90" stroke="#d8b4fe" stroke-width="1"/>
+                <text x="427" y="110" font-size="11" fill="#475569" text-anchor="middle">Prompt 动态拼接</text>
+                <text x="427" y="130" font-size="11" fill="#475569" text-anchor="middle">ReAct 控制循环</text>
+                <text x="427" y="150" font-size="11" fill="#475569" text-anchor="middle">记忆提取与注入</text>
+                <text x="427" y="170" font-size="11" fill="#475569" text-anchor="middle">Trace 链路追踪</text>
+                <text x="427" y="195" font-size="11" font-weight="bold" fill="#6b21a8" text-anchor="middle">沙箱调度与熔断</text>
+
+                {/* Branch to Qdrant */}
+                <path d="M 510 75 L 565 50" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+                <rect x="565" y="20" width="145" height="55" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+                <text x="637" y="44" font-size="12" font-weight="bold" fill="#065f46" text-anchor="middle">向量数据库与搜索</text>
+                <text x="637" y="62" font-size="10" fill="#047857" text-anchor="middle">Qdrant / Milvus / ES</text>
+
+                {/* Branch to LLM */}
+                <path d="M 510 125 L 565 125" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+                <rect x="565" y="95" width="145" height="55" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+                <text x="637" y="119" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">LLM 推理大脑</text>
+                <text x="637" y="137" font-size="10" fill="#2563eb" text-anchor="middle">GPT-4o / DeepSeek / Claude</text>
+
+                {/* Branch to Sandbox / Tools */}
+                <path d="M 510 175 L 565 200" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+                <rect x="565" y="170" width="145" height="60" rx="6" fill="#fff1f2" stroke="#f43f5e" stroke-width="1.5"/>
+                <text x="637" y="194" font-size="12" font-weight="bold" fill="#9f1239" text-anchor="middle">代码沙箱与外部 Tool</text>
+                <text x="637" y="213" font-size="10" fill="#be123c" text-anchor="middle">Docker / E2B / MCP 接口</text>
+
+                {/* Right note: Observability */}
+                <rect x="735" y="45" width="125" height="155" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-dasharray="3"/>
+                <text x="797" y="70" font-size="12" font-weight="bold" fill="#334155" text-anchor="middle">运维与质检</text>
+                <text x="797" y="95" font-size="10" fill="#64748b" text-anchor="middle">📊 Langfuse 链路</text>
+                <text x="797" y="118" font-size="10" fill="#64748b" text-anchor="middle">💰 Token 成本核算</text>
+                <text x="797" y="140" font-size="10" fill="#64748b" text-anchor="middle">⏱️ P95/P99 延迟</text>
+                <text x="797" y="162" font-size="10" fill="#64748b" text-anchor="middle">🎯 幻觉率质检</text>
+              </svg>
+            </div>
+          </div>
+        )}
+
+        {/* 阶段 1 专属架构图：Token 与自回归生成机制图 */}
+        {m.id === 'stage1' && (
+          <div class="ai-diagram-card">
+            <div class="ai-diagram-head">
+              <h4 class="ai-diagram-title"><span>🖼️</span> 机制图解：从文本切词、KV Cache 到自回归逐词生成</h4>
+              <span class="ai-module-badge" style="background: #eff6ff; color: #2563eb;">TOKEN AUTOREGRESSION</span>
+            </div>
+            <p class="ai-diagram-desc">输入文本经 BPE 分词转化为 Token 序列，自注意力机制结合 KV Cache 快速提取语义特征，Softmax 输出概率分布，由 Temperature 决定下一个词。</p>
+            <div class="ai-diagram-svg-wrap">
+              <svg viewBox="0 0 880 180" width="100%" height="180" xmlns="http://www.w3.org/2000/svg">
+                {/* Step 1: Input text */}
+                <rect x="15" y="50" width="115" height="80" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+                <text x="72" y="80" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">输入文本</text>
+                <text x="72" y="105" font-size="12" fill="#2563eb" text-anchor="middle">"今天天气真好"</text>
+
+                <line x1="130" y1="90" x2="165" y2="90" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                {/* Step 2: BPE Tokenizer */}
+                <rect x="165" y="40" width="135" height="100" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+                <text x="232" y="68" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">BPE 分词器</text>
+                <text x="232" y="90" font-size="10" fill="#475569" text-anchor="middle">拆分为 Token 碎片</text>
+                <text x="232" y="115" font-size="11" fill="#2563eb" font-family="monospace" text-anchor="middle">[今天] [天气] [真好]</text>
+
+                <line x1="300" y1="90" x2="335" y2="90" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                {/* Step 3: Transformer & KV Cache */}
+                <rect x="335" y="30" width="170" height="120" rx="8" fill="#faf5ff" stroke="#8b5cf6" stroke-width="2"/>
+                <text x="420" y="58" font-size="13" font-weight="bold" fill="#6b21a8" text-anchor="middle">Transformer 核心</text>
+                <text x="420" y="78" font-size="10" fill="#7e22ce" text-anchor="middle">多头自注意力 (Self-Attention)</text>
+                <rect x="350" y="90" width="140" height="45" rx="6" fill="#f3e8ff" stroke="#c084fc"/>
+                <text x="420" y="110" font-size="10" font-weight="bold" fill="#581c87" text-anchor="middle">⚡ KV Cache 显存加速</text>
+                <text x="420" y="126" font-size="9" fill="#7e22ce" text-anchor="middle">复用已计算好的键值矩阵</text>
+
+                <line x1="505" y1="90" x2="540" y2="90" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                {/* Step 4: Probability Softmax & Sampling */}
+                <rect x="540" y="40" width="160" height="100" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+                <text x="620" y="68" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">概率分布与采样</text>
+                <text x="620" y="90" font-size="10" fill="#b45309" text-anchor="middle">"呀" (60%) / "呢" (25%)</text>
+                <text x="620" y="115" font-size="10" fill="#78350f" text-anchor="middle">Temperature 调控平滑度</text>
+
+                <line x1="700" y1="90" x2="735" y2="90" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                {/* Step 5: Output Token */}
+                <rect x="735" y="50" width="130" height="80" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+                <text x="800" y="80" font-size="12" font-weight="bold" fill="#065f46" text-anchor="middle">吐出新 Token</text>
+                <text x="800" y="105" font-size="14" font-weight="bold" fill="#059669" text-anchor="middle">"呀"</text>
+
+                {/* Loopback arrow */}
+                <path d="M 800 50 L 800 15 L 420 15 L 420 28" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3" marker-end="url(#arrow-emerald)" fill="none"/>
+                <text x="610" y="12" font-size="9" fill="#059669" text-anchor="middle">自回归接龙循环 (Autoregressive Loop)</text>
+              </svg>
+            </div>
+          </div>
+        )}
+
+        {/* 阶段 2 专属架构图：HNSW 算法跳跃寻路图 */}
+        {m.id === 'stage2' && (
+          <div class="ai-diagram-card">
+            <div class="ai-diagram-head">
+              <h4 class="ai-diagram-title"><span>🖼️</span> 算法图解：HNSW 分层跳跃与六度分割极速寻路</h4>
+              <span class="ai-module-badge" style="background: #e0e7ff; color: #3730a3;">HNSW INDEX</span>
+            </div>
+            <p class="ai-diagram-desc">类似跳表（Skip-List）的分层结构：从稀疏顶层进行大跨度高速跳跃，逐步收敛至底层稠密近邻图，在毫秒级内从千万向量中精准定位 Top-K。</p>
+            <div class="ai-diagram-svg-wrap">
+              <svg viewBox="0 0 880 180" width="100%" height="180" xmlns="http://www.w3.org/2000/svg">
+                {/* Layer 2 (Top Highway) */}
+                <rect x="30" y="20" width="820" height="36" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-dasharray="3"/>
+                <text x="50" y="42" font-size="11" font-weight="bold" fill="#475569">Layer 2 (高速路跨区跳跃)</text>
+                <circle cx="200" cy="38" r="8" fill="#3b82f6"/>
+                <line x1="208" y1="38" x2="480" y2="38" stroke="#3b82f6" stroke-width="2.5"/>
+                <circle cx="488" cy="38" r="8" fill="#3b82f6"/>
+                <line x1="496" y1="38" x2="720" y2="38" stroke="#3b82f6" stroke-width="2.5"/>
+                <circle cx="728" cy="38" r="8" fill="#3b82f6"/>
+
+                {/* Down arrow 1 */}
+                <line x1="488" y1="46" x2="488" y2="70" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3"/>
+
+                {/* Layer 1 (Medium Sub-highway) */}
+                <rect x="30" y="70" width="820" height="42" rx="6" fill="#eff6ff" stroke="#93c5fd"/>
+                <text x="50" y="95" font-size="11" font-weight="bold" fill="#1e40af">Layer 1 (中层支路定位城市)</text>
+                <circle cx="340" cy="91" r="7" fill="#60a5fa"/>
+                <line x1="347" y1="91" x2="480" y2="91" stroke="#60a5fa" stroke-width="2"/>
+                <circle cx="488" cy="91" r="8" fill="#2563eb"/>
+                <line x1="496" y1="91" x2="600" y2="91" stroke="#60a5fa" stroke-width="2"/>
+                <circle cx="608" cy="91" r="7" fill="#60a5fa"/>
+
+                {/* Down arrow 2 */}
+                <line x1="608" y1="99" x2="608" y2="124" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3"/>
+
+                {/* Layer 0 (Dense Bottom Ground) */}
+                <rect x="30" y="125" width="820" height="45" rx="6" fill="#ecfdf5" stroke="#86efac"/>
+                <text x="50" y="152" font-size="11" font-weight="bold" fill="#065f46">Layer 0 (底层全量稠密图)</text>
+                <circle cx="420" cy="148" r="6" fill="#34d399"/>
+                <circle cx="480" cy="148" r="6" fill="#34d399"/>
+                <circle cx="540" cy="148" r="6" fill="#34d399"/>
+                <circle cx="608" cy="148" r="8" fill="#059669"/>
+                <circle cx="660" cy="148" r="8" fill="#10b981"/>
+                <circle cx="710" cy="148" r="6" fill="#34d399"/>
+                <line x1="546" y1="148" x2="600" y2="148" stroke="#059669" stroke-width="1.5"/>
+                <line x1="616" y1="148" x2="652" y2="148" stroke="#059669" stroke-width="2.5"/>
+                <line x1="668" y1="148" x2="704" y2="148" stroke="#059669" stroke-width="1.5"/>
+
+                {/* Query entrance badge */}
+                <rect x="630" y="130" width="80" height="30" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+                <text x="670" y="150" font-size="10" font-weight="bold" fill="#991b1b" text-anchor="middle">🎯 命中 Top-K</text>
+              </svg>
+            </div>
+          </div>
+        )}
+
+        {/* 阶段 3 专属架构图：RAG 父子文档与头尾重排流程图 */}
+        {m.id === 'stage3' && (
+          <div class="ai-diagram-card">
+            <div class="ai-diagram-head">
+              <h4 class="ai-diagram-title"><span>🖼️</span> 链路图解：父子文档 (Small-to-Big) 与头尾重排全流程</h4>
+              <span class="ai-module-badge" style="background: #ecfdf5; color: #047857;">ADVANCED RAG</span>
+            </div>
+            <p class="ai-diagram-desc">用高精度的小子块进行向量检索，命中后提取大父块作为完整上下文；并将最关键的参考资料排在 Prompt 首尾，消除大模型中间失忆症。</p>
+            <div class="ai-diagram-svg-wrap">
+              <svg viewBox="0 0 880 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+                {/* Raw doc */}
+                <rect x="15" y="55" width="110" height="90" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+                <text x="70" y="85" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">长篇原始文档</text>
+                <text x="70" y="108" font-size="10" fill="#64748b" text-anchor="middle">PDF / Word / 网页</text>
+                <text x="70" y="128" font-size="10" fill="#3b82f6" text-anchor="middle">几万字完整内容</text>
+
+                <line x1="125" y1="100" x2="165" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                {/* Small to big splitting */}
+                <rect x="165" y="35" width="155" height="130" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+                <text x="242" y="60" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">父子文档切分</text>
+                <rect x="180" y="70" width="125" height="38" rx="4" fill="#dbeafe" stroke="#93c5fd"/>
+                <text x="242" y="87" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">📖 父文档 (1000字)</text>
+                <text x="242" y="100" font-size="9" fill="#3b82f6" text-anchor="middle">提供完整因果上下文</text>
+                <rect x="180" y="115" width="125" height="38" rx="4" fill="#ffffff" stroke="#3b82f6"/>
+                <text x="242" y="132" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle">📇 子卡片 (150字)</text>
+                <text x="242" y="145" font-size="9" fill="#64748b" text-anchor="middle">用于高精度向量检索</text>
+
+                <line x1="320" y1="100" x2="360" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                {/* Vector Match & Fetch */}
+                <rect x="360" y="45" width="145" height="110" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+                <text x="432" y="75" font-size="12" font-weight="bold" fill="#065f46" text-anchor="middle">精准检索与提取</text>
+                <text x="432" y="100" font-size="10" fill="#047857" text-anchor="middle">子卡片命中 (98%)</text>
+                <text x="432" y="125" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle">自动提取对应父文档</text>
+
+                <line x1="505" y1="100" x2="545" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                {/* Lost in the middle fix */}
+                <rect x="545" y="30" width="170" height="140" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+                <text x="630" y="55" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">头尾重排 (Re-ordering)</text>
+                <rect x="560" y="65" width="140" height="28" rx="4" fill="#fef3c7" stroke="#fde68a"/>
+                <text x="630" y="83" font-size="10" font-weight="bold" fill="#b45309" text-anchor="middle">🥇 第 1 名核心资料 (排在最前)</text>
+                <rect x="560" y="98" width="140" height="28" rx="4" fill="#fef9c3" stroke="#fef08a"/>
+                <text x="630" y="116" font-size="9" fill="#854d0e" text-anchor="middle">🥉 第 3 名补充资料 (排在中间)</text>
+                <rect x="560" y="131" width="140" height="28" rx="4" fill="#fef3c7" stroke="#fde68a"/>
+                <text x="630" y="149" font-size="10" font-weight="bold" fill="#b45309" text-anchor="middle">🥈 第 2 名重要资料 (排在最末)</text>
+
+                <line x1="715" y1="100" x2="750" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                {/* Final Generation */}
+                <rect x="750" y="55" width="115" height="90" rx="8" fill="#faf5ff" stroke="#8b5cf6" stroke-width="1.5"/>
+                <text x="807" y="85" font-size="12" font-weight="bold" fill="#6b21a8" text-anchor="middle">LLM 准确回答</text>
+                <text x="807" y="108" font-size="10" fill="#7e22ce" text-anchor="middle">依据充分</text>
+                <text x="807" y="128" font-size="10" font-weight="bold" fill="#9333ea" text-anchor="middle">零中间失忆</text>
+              </svg>
+            </div>
+          </div>
+        )}
+
+        {/* 阶段 4 专属架构图：双塔 vs 交叉编码器对比图 */}
+        {m.id === 'stage4' && (
+          <div class="ai-diagram-card">
+            <div class="ai-diagram-head">
+              <h4 class="ai-diagram-title"><span>🖼️</span> 架构对比：双塔粗排 (Bi-Encoder) vs 交叉编码器精排 (Cross-Encoder)</h4>
+              <span class="ai-module-badge" style="background: #fef3c7; color: #b45309;">RANK ARCHITECTURE</span>
+            </div>
+            <p class="ai-diagram-desc">双塔模型分别计算 Query 与 Doc 向量（速度极快，海选 50 篇）；交叉编码器将 Query 与 Doc 拼接进行全量注意力交互（打分极其精准，精排挑出 3 篇）。</p>
+            <div class="ai-diagram-svg-wrap">
+              <svg viewBox="0 0 880 180" width="100%" height="180" xmlns="http://www.w3.org/2000/svg">
+                {/* Left: Bi-Encoder */}
+                <rect x="20" y="20" width="400" height="140" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+                <text x="220" y="45" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">1. 双塔模型 (Bi-Encoder / 粗排海选)</text>
+                <rect x="40" y="60" width="100" height="35" rx="4" fill="#ffffff" stroke="#93c5fd"/>
+                <text x="90" y="82" font-size="10" fill="#1e40af" text-anchor="middle">Query ➔ 向量 U</text>
+                <rect x="40" y="105" width="100" height="35" rx="4" fill="#ffffff" stroke="#93c5fd"/>
+                <text x="90" y="127" font-size="10" fill="#1e40af" text-anchor="middle">Doc ➔ 向量 V</text>
+                <line x1="140" y1="78" x2="200" y2="95" stroke="#3b82f6" stroke-width="1.5"/>
+                <line x1="140" y1="122" x2="200" y2="105" stroke="#3b82f6" stroke-width="1.5"/>
+                <rect x="200" y="75" width="120" height="50" rx="6" fill="#dbeafe" stroke="#3b82f6"/>
+                <text x="260" y="98" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">点积快速计算</text>
+                <text x="260" y="115" font-size="9" fill="#2563eb" text-anchor="middle">耗时 &lt; 5ms / 海选50篇</text>
+
+                {/* Right: Cross-Encoder */}
+                <rect x="460" y="20" width="400" height="140" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+                <text x="660" y="45" font-size="13" font-weight="bold" fill="#92400e" text-anchor="middle">2. 交叉编码器 (Cross-Encoder / 精排重排)</text>
+                <rect x="480" y="70" width="130" height="60" rx="6" fill="#ffffff" stroke="#fcd34d"/>
+                <text x="545" y="95" font-size="10" font-weight="bold" fill="#78350f" text-anchor="middle">[Query] + [Doc]</text>
+                <text x="545" y="115" font-size="9" fill="#92400e" text-anchor="middle">拼接送入深度模型</text>
+                <line x1="610" y1="100" x2="650" y2="100" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow-blue)"/>
+                <rect x="650" y="65" width="180" height="70" rx="6" fill="#fef3c7" stroke="#f59e0b"/>
+                <text x="740" y="90" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">全量逐词自注意力交互</text>
+                <text x="740" y="110" font-size="9" fill="#b45309" text-anchor="middle">精准评分 ➔ 精挑 3~5 篇</text>
+                <text x="740" y="125" font-size="9" fill="#78350f" text-anchor="middle">耗时 ~20ms</text>
+              </svg>
+            </div>
+          </div>
+        )}
+
+        {/* 具体知识子板块 */}
+        {m.sections.map((sec) => (
+          <div class="ai-sub-section">
+            <h3 class="ai-sub-title">📌 {sec.title}</h3>
+            <div class="ai-sub-content">
+              <div style="white-space: pre-line; margin-bottom: 0.75rem;">{sec.content}</div>
+            </div>
+
+            {sec.exampleCode && (
+              <div>
+                <div style="font-size: 0.82rem; font-weight: 700; color: #475569; margin-top: 0.5rem;">💻 最小可运行代码示例：</div>
+                <pre class="ai-code-block"><code>{sec.exampleCode}</code></pre>
+              </div>
+            )}
+
+            {sec.keyPoints && (
+              <div class="ai-keypoints-box">
+                <h5>⚡ 核心要点与避坑指南</h5>
+                <ul>
+                  {sec.keyPoints.map((kp) => (
+                    <li>{kp}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        ))}
+
+        {/* 阶段 2 内嵌 2D 向量相似度计算器 */}
+        {m.id === 'stage2' && (
+          <div class="ai-interactive-widget">
+            <div class="ai-widget-title">
+              <span>🧪 互动实验台：2D 向量相似度与度量在线计算器</span>
+              <span class="ai-widget-badge">SIMULATOR</span>
+            </div>
+            <p style="font-size: 0.85rem; color: #64748b; margin: 0 0 0.75rem;">
+              输入两个 2 维坐标，实时查看余弦相似度、点积与欧氏几何距离计算：
+            </p>
+            <div class="ai-calculator-grid">
+              <div class="ai-input-group">
+                <label>向量 U (x1, y1):</label>
+                <input type="text" id="calc-vec-u" class="ai-input-field" value="0.6, 0.8" placeholder="如 0.6, 0.8" />
+              </div>
+              <div class="ai-input-group">
+                <label>向量 V (x2, y2):</label>
+                <input type="text" id="calc-vec-v" class="ai-input-field" value="0.8, 0.6" placeholder="如 0.8, 0.6" />
+              </div>
+              <div style="display: flex; align-items: flex-end;">
+                <button class="ai-calc-btn" id="btn-calc-vec">⚡ 实时计算度量</button>
+              </div>
+            </div>
+            <div class="ai-calc-result-box" id="calc-vec-result">
+              <div style="font-size: 0.9rem; color: #334155;">
+                <strong>计算结果</strong>：余弦相似度 Cos = <span style="color: #2563eb; font-weight: 700;">0.9600</span> | 点积 Dot = <span style="color: #059669; font-weight: 700;">0.9600</span> | 欧氏距离 L2 = <span style="color: #d97706; font-weight: 700;">0.2828</span>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* 阶段 4 内嵌 RRF 排名融合计算器 */}
+        {m.id === 'stage4' && (
+          <div class="ai-interactive-widget">
+            <div class="ai-widget-title">
+              <span>🧮 互动计算器：RRF (Reciprocal Rank Fusion) 倒数排名融合模拟器</span>
+              <span class="ai-widget-badge">INTERACTIVE RRF</span>
+            </div>
+            <p style="font-size: 0.85rem; color: #64748b; margin: 0 0 0.75rem;">
+              公式：<code>得分 = 1/(60 + 考官1排名) + 1/(60 + 考官2排名)</code>。输入文档在两个通道中的名次：
+            </p>
+            <div class="ai-calculator-grid">
+              <div class="ai-input-group">
+                <label>向量检索排名 (Rank 1):</label>
+                <input type="number" id="calc-rrf-r1" class="ai-input-field" value="2" min="1" max="100" />
+              </div>
+              <div class="ai-input-group">
+                <label>BM25 检索排名 (Rank 2):</label>
+                <input type="number" id="calc-rrf-r2" class="ai-input-field" value="5" min="1" max="100" />
+              </div>
+              <div style="display: flex; align-items: flex-end;">
+                <button class="ai-calc-btn" id="btn-calc-rrf">⚡ 计算综合 RRF 得分</button>
+              </div>
+            </div>
+            <div class="ai-calc-result-box" id="calc-rrf-result">
+              <div style="font-size: 0.9rem; color: #334155;">
+                <strong>RRF 综合得分</strong>：<span style="color: #2563eb; font-weight: 700;">0.03151</span> （Vector 得分: 0.01613 + BM25 得分: 0.01538）
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* 阶段 5 专属架构图：智能体记忆系统生命周期图 */}
+        {m.id === 'stage5' && (
+          <div class="ai-diagram-card">
+            <div class="ai-diagram-head">
+              <h4 class="ai-diagram-title"><span>🖼️</span> 架构图解：智能体记忆系统生命周期与多层存储流转</h4>
+              <span class="ai-module-badge" style="background: #faf5ff; color: #6b21a8;">MEMORY LIFECYCLE</span>
+            </div>
+            <p class="ai-diagram-desc">短期会话窗口提取用户偏好与关键事件，经 Mem0 异步提炼为结构化事实，存入长期向量与图谱库，并具备实体冲突覆盖与遗忘衰减机制。</p>
+            <div class="ai-diagram-svg-wrap">
+              <svg viewBox="0 0 880 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+                {/* 1. Raw Dialog Input */}
+                <rect x="20" y="55" width="120" height="90" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+                <text x="80" y="85" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">用户多轮交互</text>
+                <text x="80" y="108" font-size="10" fill="#64748b" text-anchor="middle">"我上周搬去杭州了"</text>
+                <text x="80" y="128" font-size="10" fill="#8b5cf6" text-anchor="middle">工作记忆 (Context)</text>
+
+                <line x1="140" y1="100" x2="180" y2="100" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                {/* 2. Mem0 Fact Extractor */}
+                <rect x="180" y="40" width="160" height="120" rx="8" fill="#faf5ff" stroke="#8b5cf6" stroke-width="2"/>
+                <text x="260" y="68" font-size="12" font-weight="bold" fill="#6b21a8" text-anchor="middle">Mem0 事实提取器</text>
+                <text x="260" y="90" font-size="10" fill="#7e22ce" text-anchor="middle">异步轻量 LLM 萃取</text>
+                <rect x="195" y="102" width="130" height="45" rx="4" fill="#ffffff" stroke="#d8b4fe"/>
+                <text x="260" y="120" font-size="9" font-family="monospace" fill="#581c87" text-anchor="middle">&#123;user_city: "杭州"&#125;</text>
+                <text x="260" y="136" font-size="9" fill="#10b981" text-anchor="middle">时间戳: 2026-08-24</text>
+
+                <line x1="340" y1="100" x2="380" y2="100" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                {/* 3. Conflict Resolution & Long-term Storage */}
+                <rect x="380" y="30" width="220" height="140" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+                <text x="490" y="55" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">冲突消歧与分层长期存储</text>
+                <rect x="395" y="65" width="190" height="35" rx="4" fill="#fee2e2" stroke="#fca5a5"/>
+                <text x="490" y="82" font-size="9" fill="#991b1b" text-anchor="middle">旧记忆: "居住在深圳" ➔ 覆盖废弃</text>
+                <text x="490" y="94" font-size="9" fill="#166534" text-anchor="middle">新记忆: "居住在杭州" ➔ UPDATE</text>
+
+                <rect x="395" y="108" width="190" height="50" rx="4" fill="#ffffff" stroke="#93c5fd"/>
+                <text x="490" y="126" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">Qdrant 向量库 + Neo4j 知识图谱</text>
+                <text x="490" y="145" font-size="9" fill="#64748b" text-anchor="middle">语义记忆 / 情景记忆 / 遗忘衰减</text>
+
+                <line x1="600" y1="100" x2="640" y2="100" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                {/* 4. Dynamic Recall & Injection */}
+                <rect x="640" y="45" width="215" height="110" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+                <text x="747" y="72" font-size="12" font-weight="bold" fill="#065f46" text-anchor="middle">动态回注与个性化生成</text>
+                <text x="747" y="95" font-size="10" fill="#047857" text-anchor="middle">下次提问自动注入 Prompt：</text>
+                <rect x="655" y="105" width="185" height="38" rx="4" fill="#ffffff" stroke="#86efac"/>
+                <text x="747" y="122" font-size="9" fill="#166534" text-anchor="middle">"已知用户位于杭州，推荐周边景点"</text>
+                <text x="747" y="136" font-size="9" font-weight="bold" fill="#059669" text-anchor="middle">真正的长期个性化伴随！</text>
+              </svg>
+            </div>
+          </div>
+        )}
+
+        {/* 阶段 6 专属展台：代码执行沙箱技术全景与终端模拟器 */}
+        {m.id === 'stage6' && (
+          <div>
+            {/* ReAct 循环与沙箱防护四重门流程图 */}
+            <div class="ai-diagram-card">
+              <div class="ai-diagram-head">
+                <h4 class="ai-diagram-title"><span>🖼️</span> 控制流图解：ReAct 推理循环与代码沙箱安全防护四重门</h4>
+                <span class="ai-module-badge" style="background: #fdf2f8; color: #be185d;">REACT & SANDBOX</span>
+              </div>
+              <p class="ai-diagram-desc">Agent 通过 Thought-Action-Observation 闭环自主决策，在执行写操作或代码时必须经过文件只读、网络单向阻断、虚拟内核隔离与超时熔断四道安全防线。</p>
+              <div class="ai-diagram-svg-wrap">
+                <svg viewBox="0 0 880 220" width="100%" height="220" xmlns="http://www.w3.org/2000/svg">
+                  {/* Step 1: Thought */}
+                  <rect x="20" y="65" width="110" height="90" rx="8" fill="#faf5ff" stroke="#a855f7" stroke-width="2"/>
+                  <text x="75" y="95" font-size="13" font-weight="bold" fill="#6b21a8" text-anchor="middle">1. Thought</text>
+                  <text x="75" y="118" font-size="10" fill="#7e22ce" text-anchor="middle">思考当前目标</text>
+                  <text x="75" y="138" font-size="9" fill="#475569" text-anchor="middle">"需写代码画图"</text>
+
+                  <line x1="130" y1="110" x2="165" y2="110" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                  {/* Step 2: Action Tool Call */}
+                  <rect x="165" y="65" width="125" height="90" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+                  <text x="227" y="95" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">2. Action</text>
+                  <text x="227" y="118" font-size="10" fill="#2563eb" text-anchor="middle">输出 JSON 指令</text>
+                  <text x="227" y="138" font-size="9" font-family="monospace" fill="#1e40af" text-anchor="middle">run_python(code)</text>
+
+                  <line x1="290" y1="110" x2="330" y2="110" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                  {/* Step 3: Sandbox 4-Layer Gates */}
+                  <rect x="330" y="25" width="280" height="170" rx="10" fill="#0f172a" stroke="#4338ca" stroke-width="2"/>
+                  <text x="470" y="52" font-size="13" font-weight="bold" fill="#a5b4fc" text-anchor="middle">🛡️ 沙箱安全防护四重门</text>
+
+                  <rect x="345" y="65" width="120" height="42" rx="4" fill="rgba(30, 41, 59, 0.9)" stroke="#ef4444"/>
+                  <text x="405" y="84" font-size="9" font-weight="bold" fill="#fca5a5" text-anchor="middle">① 只读文件系统</text>
+                  <text x="405" y="98" font-size="8" fill="#cbd5e1" text-anchor="middle">禁止 rm -rf 宿主机</text>
+
+                  <rect x="475" y="65" width="120" height="42" rx="4" fill="rgba(30, 41, 59, 0.9)" stroke="#f59e0b"/>
+                  <text x="535" y="84" font-size="9" font-weight="bold" fill="#fcd34d" text-anchor="middle">② 单向网络阻断</text>
+                  <text x="535" y="98" font-size="8" fill="#cbd5e1" text-anchor="middle">禁止扫描内网资产</text>
+
+                  <rect x="345" y="115" width="120" height="42" rx="4" fill="rgba(30, 41, 59, 0.9)" stroke="#38bdf8"/>
+                  <text x="405" y="134" font-size="9" font-weight="bold" fill="#7dd3fc" text-anchor="middle">③ 虚拟内核隔离</text>
+                  <text x="405" y="148" font-size="8" fill="#cbd5e1" text-anchor="middle">gVisor / Firecracker</text>
+
+                  <rect x="475" y="115" width="120" height="42" rx="4" fill="rgba(30, 41, 59, 0.9)" stroke="#34d399"/>
+                  <text x="535" y="134" font-size="9" font-weight="bold" fill="#86efac" text-anchor="middle">④ 5秒超时熔断</text>
+                  <text x="535" y="148" font-size="8" fill="#cbd5e1" text-anchor="middle">防 Fork 死循环占满</text>
+
+                  <text x="470" y="180" font-size="9" fill="#94a3b8" text-anchor="middle">E2B / Dify 隔离执行环境</text>
+
+                  <line x1="610" y1="110" x2="650" y2="110" stroke="#10b981" stroke-width="2" marker-end="url(#arrow-emerald)"/>
+
+                  {/* Step 4: Observation */}
+                  <rect x="650" y="65" width="105" height="90" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+                  <text x="702" y="95" font-size="12" font-weight="bold" fill="#065f46" text-anchor="middle">3. Observation</text>
+                  <text x="702" y="118" font-size="10" fill="#047857" text-anchor="middle">安全拿到结果</text>
+                  <text x="702" y="138" font-size="9" fill="#15803d" text-anchor="middle">"图表已生成"</text>
+
+                  <line x1="755" y1="110" x2="785" y2="110" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+                  {/* Step 5: Final Answer */}
+                  <rect x="785" y="65" width="85" height="90" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+                  <text x="827" y="95" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">4. Final</text>
+                  <text x="827" y="118" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Answer</text>
+                  <text x="827" y="138" font-size="9" fill="#059669" text-anchor="middle">返回用户</text>
+
+                  {/* Loopback */}
+                  <path d="M 702 65 L 702 15 L 75 15 L 75 60" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="3" marker-end="url(#arrow-blue)" fill="none"/>
+                  <text x="390" y="12" font-size="9" fill="#7e22ce" text-anchor="middle">若任务未完，带着 Observation 继续下一轮 Thought</text>
+                </svg>
+              </div>
+            </div>
+
+            {/* 沙箱四大流派对比表与交互终端 */}
+            <div class="ai-sandbox-box">
+              <div class="ai-sandbox-head">
+                <h4 class="ai-sandbox-title">
+                  <span>🛡️</span> 工业级核心展台：代码执行沙箱 (Code Sandbox) 四大流派与安全防御
+                </h4>
+                <span class="ai-sandbox-badge">PRODUCTION SANDBOX</span>
+              </div>
+              <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0 0 1rem; line-height: 1.6;">
+                当 Agent 编写并执行 Python/Bash 时，绝对不能在宿主机直接跑。必须通过独立虚拟环境、单向网络防火墙与超时熔断进行严格隔离。
+              </p>
+
+              {/* 四大流派选型对比表 */}
+              <div class="ai-sandbox-table-wrapper">
+                <table class="ai-sandbox-table">
+                  <thead>
+                    <tr>
+                      <th>沙箱技术方案</th>
+                      <th>隔离等级</th>
+                      <th>冷启动延迟</th>
+                      <th>内存开销</th>
+                      <th>核心适用场景与代表框架</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Docker 容器沙箱</strong></td>
+                      <td><span style="color: #fbbf24;">中等</span> (共享宿主内核)</td>
+                      <td>~500ms - 2s</td>
+                      <td>~50MB</td>
+                      <td>标准后端部署、Dify 默认 Python Code Sandbox 服务</td>
+                    </tr>
+                    <tr>
+                      <td><strong>gVisor 用户态虚拟内核</strong></td>
+                      <td><span style="color: #34d399; font-weight: 700;">极高</span> (拦截 Syscall)</td>
+                      <td>~100ms - 300ms</td>
+                      <td>~30MB</td>
+                      <td>Google Cloud Run、防逃逸要求极高的多租户环境</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Firecracker 微虚拟机 (MicroVM)</strong></td>
+                      <td><span style="color: #38bdf8; font-weight: 700;">硬件级隔离</span></td>
+                      <td><strong>&lt; 5ms</strong> (极速冷启)</td>
+                      <td>&lt; 5MB</td>
+                      <td>AWS Lambda、E2B 开源 Agent 云端代码解释器</td>
+                    </tr>
+                    <tr>
+                      <td><strong>WebAssembly (WASI)</strong></td>
+                      <td><span style="color: #a78bfa; font-weight: 700;">内存安全字节码</span></td>
+                      <td><strong>&lt; 1ms</strong></td>
+                      <td>&lt; 1MB</td>
+                      <td>浏览器端直接跑 Python/JS、边缘计算轻量沙箱</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* 终端交互模拟器 */}
+              <div style="margin-top: 1.25rem;">
+                <div style="font-size: 0.9rem; font-weight: 700; color: #e0e7ff; margin-bottom: 0.5rem;">
+                  🧪 沙箱安全防御实测（点击切换攻击与正常场景，观察沙箱实时拦截行为）：
+                </div>
+                <div class="ai-scenario-selector" id="sandbox-scenarios">
+                  <button class="ai-scenario-btn active" data-scenario="rm">💣 恶意命令：rm -rf /</button>
+                  <button class="ai-scenario-btn" data-scenario="scan">🕵️ 恶意探测：扫描内网私有 IP</button>
+                  <button class="ai-scenario-btn" data-scenario="fork">⏳ 恶意消耗：100秒无限死循环</button>
+                  <button class="ai-scenario-btn" data-scenario="plot">📊 正常任务：安全绘制折线图并导出</button>
+                </div>
+
+                <div class="ai-sandbox-terminal-wrap">
+                  <div class="ai-terminal-header">
+                    <div class="ai-terminal-dots">
+                      <span class="ai-terminal-dot dot-red"></span>
+                      <span class="ai-terminal-dot dot-yellow"></span>
+                      <span class="ai-terminal-dot dot-green"></span>
+                    </div>
+                    <span class="ai-terminal-title">sandbox-container: ~ /workspace (E2B / gVisor Environment)</span>
+                    <span style="font-size: 0.7rem; color: #64748b;">FIREWALL: ACTIVE</span>
+                  </div>
+                  <pre class="ai-terminal-body" id="sandbox-terminal-output">$ python3 agent_task.py
+[SECURITY AUDIT] Inspecting syscalls and filesystem bindings...
+[BLOCKED] Operation 'os.system("rm -rf /")' intercepted!
+[ERROR] Read-only file system: rootfs is mounted as read-only.
+[STATUS] Sandbox safe. Host machine 100% protected. Exit Code: 1</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* 阶段 7 专属架构图：双 Harness 体系对比图 */}
+        {m.id === 'stage7' && (
+          <div class="ai-diagram-card">
+            <div class="ai-diagram-head">
+              <h4 class="ai-diagram-title"><span>🖼️</span> 架构对比：双 Harness 体系 (Runtime 运行时治具 vs Evaluation 评测治具)</h4>
+              <span class="ai-module-badge" style="background: #e0f2fe; color: #0369a1;">DUAL HARNESS</span>
+            </div>
+            <p class="ai-diagram-desc">Runtime Harness 像工业制造流水线，护航线上高并发与沙箱安全；Evaluation Harness 像质检考场，通过黄金试卷与 LLM Judge 对称评测护航线下迭代质量。</p>
+            <div class="ai-diagram-svg-wrap">
+              <svg viewBox="0 0 880 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+                {/* Left: Runtime Harness */}
+                <rect x="20" y="20" width="410" height="160" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+                <text x="225" y="48" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">⚙️ 1. Runtime Harness (线上运行时治具)</text>
+                <text x="225" y="68" font-size="10" fill="#2563eb" text-anchor="middle">【核心使命】：组装流水线 · 护航线上高可用与安全隔离</text>
+
+                <rect x="35" y="80" width="115" height="40" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+                <text x="92" y="98" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">模型驱动适配</text>
+                <text x="92" y="112" font-size="9" fill="#64748b" text-anchor="middle">OpenAI / Claude / MCP</text>
+
+                <rect x="165" y="80" width="115" height="40" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+                <text x="222" y="98" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">Prompt 动态组装</text>
+                <text x="222" y="112" font-size="9" fill="#64748b" text-anchor="middle">Context + RAG + 记忆</text>
+
+                <rect x="295" y="80" width="120" height="40" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+                <text x="355" y="98" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">Docker 沙箱调度</text>
+                <text x="355" y="112" font-size="9" fill="#64748b" text-anchor="middle">超时熔断 / 单向网络</text>
+
+                <rect x="35" y="130" width="380" height="35" rx="6" fill="#dbeafe" stroke="#3b82f6"/>
+                <text x="225" y="152" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">📊 全链路可观测：Langfuse Trace / Token 预算控制 / 人工审批卡点</text>
+
+                {/* Right: Evaluation Harness */}
+                <rect x="450" y="20" width="410" height="160" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+                <text x="655" y="48" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">🧪 2. Evaluation Harness (线下自动化评测治具)</text>
+                <text x="655" y="68" font-size="10" fill="#047857" text-anchor="middle">【核心使命】：质检实验室 · 杜绝负优化 · 护航质量持续提升</text>
+
+                <rect x="465" y="80" width="115" height="40" rx="6" fill="#ffffff" stroke="#86efac"/>
+                <text x="522" y="98" font-size="10" font-weight="bold" fill="#065f46" text-anchor="middle">Golden 试卷集</text>
+                <text x="522" y="112" font-size="9" fill="#64748b" text-anchor="middle">标准问答 / Hard Case</text>
+
+                <rect x="595" y="80" width="115" height="40" rx="6" fill="#ffffff" stroke="#86efac"/>
+                <text x="652" y="98" font-size="10" font-weight="bold" fill="#065f46" text-anchor="middle">Mock 外部桩</text>
+                <text x="652" y="112" font-size="9" fill="#64748b" text-anchor="middle">离线稳定可复现测试</text>
+
+                <rect x="725" y="80" width="120" height="40" rx="6" fill="#ffffff" stroke="#86efac"/>
+                <text x="785" y="98" font-size="10" font-weight="bold" fill="#065f46" text-anchor="middle">LLM 裁判防偏见</text>
+                <text x="785" y="112" font-size="9" fill="#64748b" text-anchor="middle">双向对调 AB/BA 测试</text>
+
+                <rect x="465" y="130" width="380" height="35" rx="6" fill="#d1fae5" stroke="#10b981"/>
+                <text x="655" y="152" font-size="11" font-weight="bold" fill="#065f46" text-anchor="middle">🎯 CI/CD 自动化门禁：忠实度 &lt; 0.90 拦截发布 · 轨迹断言分析</text>
+              </svg>
+            </div>
+          </div>
+        )}
+
+        {/* 🌟 随堂通关小测验 (Knowledge Check Quiz) */}
+        {m.quiz && (
+          <div class="ai-quiz-box" data-ans={m.quiz.answer}>
+            <div class="ai-quiz-head">
+              <span>🎯</span> 本章通关自测 (Knowledge Check)
+            </div>
+            <div class="ai-quiz-question">
+              <strong>{m.quiz.question}</strong>
+            </div>
+            <div class="ai-quiz-options">
+              {m.quiz.options.map((opt) => (
+                <button class="ai-quiz-opt-btn" data-choice={opt.charAt(0)}>
+                  {opt}
+                </button>
+              ))}
+            </div>
+            <div class="ai-quiz-feedback">
+              <div style="font-weight: 700; color: #166534; margin-bottom: 0.25rem;">✅ 正确答案：{m.quiz.answer}</div>
+              <div style="font-size: 0.88rem; color: #334155;">{m.quiz.analysis}</div>
+            </div>
+          </div>
+        )}
+      </section>
+    ))}
+
+    <!-- 附录: 工程疑难与进阶深度专题 FAQ -->
+    <section class="ai-interview-section" id="interview-bank">
+      <div class="ai-interview-header">
+        <div class="ai-hero-badge" style="background: #eff6ff; color: #2563eb; border-color: #bfdbfe;">
+          APPENDIX · DEEP DIVE FAQ
+        </div>
+        <h2 class="ai-interview-title">📚 附录：工程疑难与进阶深度专题 FAQ</h2>
+        <p class="ai-interview-subtitle">
+          学完 8 阶体系后的进阶专题研讨：收录 10 个生产环境常见疑难故障、性能瓶颈与架构决策深度剖析，供进阶学习参考。
+        </p>
+      </div>
+
+      <!-- 控制台：搜索 + 分类筛选 -->
+      <div class="ai-filter-console">
+        <div class="ai-search-row">
+          <input
+            type="text"
+            id="interview-search"
+            class="ai-search-input"
+            placeholder="🔍 搜索专题关键词（如：幻觉、L2归一化、Cross-Encoder、死循环熔断、Mem0、Dify）..."
+          />
+          <button class="ai-quick-btn" id="btn-expand-all">📖 全部展开</button>
+          <button class="ai-quick-btn" id="btn-collapse-all">📕 全部收起</button>
+        </div>
+
+        <div class="ai-category-tags" id="cat-filters">
+          <button class="ai-cat-btn active" data-cat="all">全部专题 ({interviewQuestions.length})</button>
+          <button class="ai-cat-btn" data-cat="rag">📚 RAG 调优</button>
+          <button class="ai-cat-btn" data-cat="embedding">📐 Embedding 向量</button>
+          <button class="ai-cat-btn" data-cat="rank">⚖️ Re-rank 重排</button>
+          <button class="ai-cat-btn" data-cat="memory">🧠 Memory 记忆</button>
+          <button class="ai-cat-btn" data-cat="agent">🤖 Agent 架构 & 沙箱</button>
+          <button class="ai-cat-btn" data-cat="dify">⚡ Dify 工作流</button>
+          <button class="ai-cat-btn" data-cat="architecture">🏗️ 系统高并发</button>
+        </div>
+      </div>
+
+      <!-- 专题列表 -->
+      <div class="ai-questions-grid" id="questions-list">
+        {interviewQuestions.map((q, idx) => (
+          <div class="ai-question-card" data-id={q.id} data-cat={q.category} data-idx={idx}>
+            <div class="ai-q-head">
+              <div class="ai-q-main">
+                <div class="ai-q-meta">
+                  <span class={`ai-q-level level-${q.level}`}>{q.level}</span>
+                  {q.tags.map((t) => (
+                    <span class="ai-q-tag">{t}</span>
+                  ))}
+                </div>
+                <h3 class="ai-q-title">专题 {idx + 1}：{q.title}</h3>
+              </div>
+              <span class="ai-toggle-arrow">▼</span>
+            </div>
+
+            <div class="ai-q-body">
+              {/* 💡 小白人话通俗解读 */}
+              <div class="ai-q-analogy-box">
+                {q.plainAnalogy}
+              </div>
+
+              <div class="ai-q-analysis">
+                <strong>🎯 深度背景剖析：</strong>{q.analysis}
+              </div>
+
+              <div class="ai-q-answer">
+                <div style="font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">🏗️ 工业级标准方案：</div>
+                <div style="white-space: pre-line;">{q.coreAnswer}</div>
+              </div>
+
+              <div class="ai-q-bonus">
+                <strong>🌟 进阶架构亮点：</strong>{q.bonusPoints}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 底部友情指引 -->
+    <footer style="margin-top: 3rem; text-align: center; padding: 2rem 1rem; border-top: 1px solid var(--ai-card-border); color: #64748b; font-size: 0.9rem;">
+      <p>【十丘】知识门户 · 从零开始 AI 架构与 Agent 工程师系统教程 · 持续更新前沿大模型工程实践</p>
+      <p>
+        <a href={base} style="color: #2563eb; text-decoration: none; margin-right: 1.5rem; font-weight: 600;">🏠 十丘首页</a>
+        <a href={`${base}timeline/`} style="color: #64748b; text-decoration: none; margin-right: 1.5rem;">📜 历史长卷</a>
+        <a href={`${base}geography/`} style="color: #64748b; text-decoration: none; margin-right: 1.5rem;">🗺️ 历代舆图</a>
+        <a href={`${base}chinese/pinyin/`} style="color: #e11d48; text-decoration: none; margin-right: 1.5rem;">📖 语文拼音</a>
+        <a href={`${base}math/`} style="color: #059669; text-decoration: none; margin-right: 1.5rem;">📐 数学乐园</a>
+        <a href={`${base}english/`} style="color: #d97706; text-decoration: none;">🔤 英语自然拼读</a>
+      </p>
+    </footer>
+  </div>
+
+  <!-- 客户端交互脚本 -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. 向量相似度交互计算器
+      const btnCalcVec = document.getElementById('btn-calc-vec')
+      if (btnCalcVec) {
+        btnCalcVec.addEventListener('click', () => {
+          const uStr = document.getElementById('calc-vec-u').value.split(',')
+          const vStr = document.getElementById('calc-vec-v').value.split(',')
+          const u = uStr.map((n) => parseFloat(n.trim()) || 0)
+          const v = vStr.map((n) => parseFloat(n.trim()) || 0)
+
+          if (u.length < 2 || v.length < 2) {
+            alert('请输入合法的 2 维坐标，例如：0.6, 0.8')
+            return
+          }
+
+          const dot = u[0] * v[0] + u[1] * v[1]
+          const normU = Math.sqrt(u[0] * u[0] + u[1] * u[1])
+          const normV = Math.sqrt(v[0] * v[0] + v[1] * v[1])
+          const cos = normU && normV ? dot / (normU * normV) : 0
+          const l2 = Math.sqrt(Math.pow(u[0] - v[0], 2) + Math.pow(u[1] - v[1], 2))
+
+          const resultBox = document.getElementById('calc-vec-result')
+          resultBox.innerHTML = `
+            <div style="font-size: 0.9rem; color: #334155;">
+              <strong>计算结果</strong>：余弦相似度 Cos = <span style="color: #2563eb; font-weight: 700;">${cos.toFixed(4)}</span> |
+              点积 Dot = <span style="color: #059669; font-weight: 700;">${dot.toFixed(4)}</span> (模长 ||u||=${normU.toFixed(2)}, ||v||=${normV.toFixed(2)}) |
+              欧氏距离 L2 = <span style="color: #d97706; font-weight: 700;">${l2.toFixed(4)}</span>
+            </div>
+          `
+        })
+      }
+
+      // 2. RRF 计算器
+      const btnCalcRrf = document.getElementById('btn-calc-rrf')
+      if (btnCalcRrf) {
+        btnCalcRrf.addEventListener('click', () => {
+          const r1 = parseInt(document.getElementById('calc-rrf-r1').value) || 1
+          const r2 = parseInt(document.getElementById('calc-rrf-r2').value) || 1
+          const k = 60
+          const s1 = 1 / (k + r1)
+          const s2 = 1 / (k + r2)
+          const total = s1 + s2
+
+          const resultBox = document.getElementById('calc-rrf-result')
+          resultBox.innerHTML = `
+            <div style="font-size: 0.9rem; color: #334155;">
+              <strong>RRF 综合得分</strong>：<span style="color: #2563eb; font-weight: 700;">${total.toFixed(5)}</span>
+              （Vector 通道得分: ${s1.toFixed(5)} + BM25 通道得分: ${s2.toFixed(5)}）
+            </div>
+          `
+        })
+      }
+
+      // 3. 随堂小测验交互逻辑
+      const quizBoxes = document.querySelectorAll('.ai-quiz-box')
+      quizBoxes.forEach((box) => {
+        const correctAns = box.dataset.ans
+        const optBtns = box.querySelectorAll('.ai-quiz-opt-btn')
+        const feedback = box.querySelector('.ai-quiz-feedback')
+
+        optBtns.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const userChoice = btn.dataset.choice
+            optBtns.forEach((b) => b.classList.remove('correct', 'wrong'))
+            if (userChoice === correctAns) {
+              btn.classList.add('correct')
+            } else {
+              btn.classList.add('wrong')
+              optBtns.forEach((b) => {
+                if (b.dataset.choice === correctAns) b.classList.add('correct')
+              })
+            }
+            if (feedback) feedback.style.display = 'block'
+          })
+        })
+      })
+
+      // 4. 进阶专题折叠/展开
+      const questionCards = document.querySelectorAll('.ai-question-card')
+      questionCards.forEach((card) => {
+        const head = card.querySelector('.ai-q-head')
+        head.addEventListener('click', () => {
+          card.classList.toggle('expanded')
+        })
+      })
+
+      // 5. 一键展开与收起
+      const btnExpandAll = document.getElementById('btn-expand-all')
+      const btnCollapseAll = document.getElementById('btn-collapse-all')
+
+      if (btnExpandAll) {
+        btnExpandAll.addEventListener('click', () => {
+          document.querySelectorAll('.ai-question-card:not([style*="display: none"])').forEach((c) => c.classList.add('expanded'))
+        })
+      }
+      if (btnCollapseAll) {
+        btnCollapseAll.addEventListener('click', () => {
+          document.querySelectorAll('.ai-question-card').forEach((c) => c.classList.remove('expanded'))
+        })
+      }
+
+      // 6. 分类筛选与搜索联动
+      let currentCat = 'all'
+      let searchQuery = ''
+
+      function filterQuestions() {
+        questionCards.forEach((card) => {
+          const cardCat = card.dataset.cat
+          const text = card.textContent.toLowerCase()
+          const matchesCat = currentCat === 'all' || cardCat === currentCat
+          const matchesSearch = !searchQuery || text.includes(searchQuery)
+
+          if (matchesCat && matchesSearch) {
+            card.style.display = 'block'
+          } else {
+            card.style.display = 'none'
+          }
+        })
+      }
+
+      const catButtons = document.querySelectorAll('.ai-cat-btn')
+      catButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          catButtons.forEach((b) => b.classList.remove('active'))
+          btn.classList.add('active')
+          currentCat = btn.dataset.cat
+          filterQuestions()
+        })
+      })
+
+      const searchInput = document.getElementById('interview-search')
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          searchQuery = e.target.value.trim().toLowerCase()
+          filterQuestions()
+        })
+      }
+
+      // 7. 沙箱安全终端模拟器交互逻辑
+      const scenarioBtns = document.querySelectorAll('.ai-scenario-btn')
+      const terminalOutput = document.getElementById('sandbox-terminal-output')
+
+      const scenarioLogs = {
+        rm: `$ python3 agent_task.py
+[SECURITY AUDIT] Inspecting syscalls and filesystem bindings...
+[BLOCKED] Operation 'os.system("rm -rf /")' intercepted!
+[ERROR] Read-only file system: rootfs is mounted as read-only.
+[STATUS] Sandbox safe. Host machine 100% protected. Exit Code: 1`,
+
+        scan: `$ python3 agent_task.py
+[NETWORK AUDIT] Outbound connection requested -> 192.168.1.1:80
+[FIREWALL ALERT] RFC-1918 Private Subnet detected!
+[BLOCKED] Unidirectional egress firewall dropped packet to private network.
+[STATUS] Internal infrastructure probing prevented. Exit Code: 1`,
+
+        fork: `$ python3 agent_task.py
+[WATCHDOG] Execution started at 17:15:00...
+[WATCHDOG] CPU usage 100% on Core 0 for 5.00s.
+[TIMEOUT TRIGGERED] Hard limit reached (MAX_EXEC_TIME = 5s).
+[KILLED] Process terminated by SIGKILL signal. Resource freed.`,
+
+        plot: `$ python3 agent_task.py
+[ENVIRONMENT] Python 3.11 with matplotlib, numpy pre-installed.
+[COMPUTING] Generating sine curve data points (100 samples)...
+[FILE OUTPUT] Saving render to /workspace/output_curve.png ...
+[SUCCESS] File exported: 24.8 KB.
+[CLEANUP] Sandbox ephemeral volume successfully archived. Exit Code: 0`
+      }
+
+      scenarioBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          scenarioBtns.forEach((b) => b.classList.remove('active'))
+          btn.classList.add('active')
+          const scenario = btn.dataset.scenario
+          if (terminalOutput && scenarioLogs[scenario]) {
+            terminalOutput.textContent = scenarioLogs[scenario]
+          }
+        })
+      })
+    })
+  </script>
+</Base>

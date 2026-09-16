@@ -1,0 +1,112 @@
+[
+  {
+    "id": "q1",
+    "category": "rag",
+    "level": "Senior",
+    "title": "如何系统性解决企业级 RAG 中的幻觉与“Lost in the Middle”中间失忆问题？",
+    "tags": ["RAG", "幻觉治理", "Lost in the Middle", "上下文压缩"],
+    "plainAnalogy": "【💡 小白人话解读】：把一大堆参考资料塞给大模型时，它就像一个精力有限的学生，只看得进考卷第一段和最后一段，夹在中间的参考答案常常被直接无视。解决办法就是：把最核心的参考资料放在试卷最前面和最后面（头尾重排），并用小模型把中间的废话压缩掉。",
+    "analysis": "考查候选人对大模型长上下文注意力首尾偏置机制的深刻理解，以及生产级 RAG 检索前、检索中、检索后端到端防幻觉工程方案。",
+    "coreAnswer": "1. **原因剖析 (Lost in the Middle 机制)**：\n   - Transformer 自注意力机制在超长 Context 中存在天然的首尾位置偏置（Primacy & Recency Bias），对位于中间 40%~80% 区域的文本注意力权重显著衰减。\n\n2. **工程解决方案**：\n   - **切分级**：采用 Parent-Document（父子文档）或句子窗口切分，严格控制单次注入 Context 的总 Token 数在 2K~4K 内，杜绝盲目堆砌。\n   - **重排级 (Re-ordering)**：在 Re-rank 阶段后执行“头尾重排算法”——将得分最高的 Chunk 1 放在 Prompt 最开头，得分次高的 Chunk 2 放在 Prompt 最末尾，次优的放在中间。\n   - **上下文压缩 (Context Compression)**：利用小型轻量模型或 LLM Extractor 提取仅与 Query 强相关的 2~3 句话，剔除 70% 无关噪声。\n   - **Prompt 约束与拒答机制**：显式要求模型“若资料未提及，严禁推理假设，必须直接回答'依据现有资料未提及'”，并要求附带引用标号（`[1]`、`[2]`）。",
+    "bonusPoints": "提到构建 Ragas 评测流水线，将 Faithfulness（忠实度）作为 CI/CD 质量卡点；提到结合 Corrective RAG (CRAG) 做检索质量自检与 Web 兜底检索。"
+  },
+  {
+    "id": "q2",
+    "category": "embedding",
+    "level": "Mid",
+    "title": "余弦相似度与点积相似度有什么区别？为什么高维向量在入库前必须做 L2 归一化？",
+    "tags": ["Embedding", "余弦相似度", "点积", "L2归一化"],
+    "plainAnalogy": "【💡 小白人话解读】：余弦相似度就像看两个人走路的方向一不一样（不管大步还是小步）；点积既看方向又看步子跨得多大。如果在入库前把所有向量的长度都统一变成 1（归一化），点积就直接等同于余弦相似度，而且计算机算点积的速度比算余弦快好几倍！",
+    "analysis": "考查候选人向量检索底层数学原理，以及大规模高并发向量库工程优化经验。",
+    "coreAnswer": "1. **几何与数学定义**：\n   - **余弦相似度**：计算超球面上的夹角余弦值，与向量绝对长度无关。\n   - **点积 (Inner Product)**：既受夹角影响，又受两向量模长的乘积放大。\n\n2. **为什么必须做 L2 归一化 (Unit Vector, ||v||=1)**：\n   - **等价性**：当向量模长为 1 时，余弦公式分母为 1，此时**点积计算结果在数值上完全等同于余弦相似度**。\n   - **性能飞跃**：在百万/千万级向量库检索时，计算余弦需要动态开根号（计算昂贵）；若入库前先完成 L2 归一化，检索时底层可直接利用 CPU AVX-512 / GPU Tensor Core 硬件指令以极高吞吐执行点积乘加运算（FMA），吞吐提升 3~5 倍。",
+    "bonusPoints": "能指出某些特定领域（如推荐系统协同过滤或带权重词频）可能保留模长表达“重要性/热度”，但对于标准文本语义检索一律强制 L2 归一化。"
+  },
+  {
+    "id": "q3",
+    "category": "rank",
+    "level": "Senior",
+    "title": "为什么不能直接用 Cross-Encoder 对全库百万文档做检索？RRF 算法在多路召回中的原理是什么？",
+    "tags": ["Re-rank", "Cross-Encoder", "Bi-Encoder", "RRF"],
+    "plainAnalogy": "【💡 小白人话解读】：双塔模型就像让考生把简历发给考官提前看一眼（1秒钟快速海选50人）；Cross-Encoder 就像让考官和考生坐在一起面对面深聊10分钟（极其精准但耗时巨大）。如果对全库100万考生都做深度面试，考官会累瘫。所以必须先用双塔粗筛 50 人，再用 Cross-Encoder 精选前 3 名。",
+    "analysis": "考查检索召回（Recall）与精排重排（Re-rank）的阶梯架构设计哲学及多路融合算法。",
+    "coreAnswer": "1. **计算复杂度对比**：\n   - **Bi-Encoder**：Query 与 Doc 独立编码，Doc 向量可离线预存。在线检索只需 1 次 Query 编码 + N 次向量内积，复杂度为 O(N)（配合 HNSW 为 O(log N)），耗时 < 5ms。\n   - **Cross-Encoder**：必须将 Query 与 Doc 拼接为单个序列送入深度 Transformer，进行全序列自注意力计算。对百万文档检索将耗费数分钟，无法满足线上 SLA。\n   - **工业架构**：Bi-Encoder 粗排召回 Top-50 ➔ Cross-Encoder (如 `bge-reranker-large`) 精排筛选 Top-5。\n\n2. **RRF (Reciprocal Rank Fusion) 原理**：\n   - 公式：`RRF(d) = 1/(60 + Rank1) + 1/(60 + Rank2)`。\n   - 核心优势：BM25 得分（0~50）与 Dense 向量得分（-1~1）量纲不同。RRF **仅利用排序名次 (Rank)** 进行平滑融合，无需参数标定，抗噪性强，完美平衡精准专有名词与语义泛化。",
+    "bonusPoints": "给出针对时效性要求高的场景结合 MMR (Maximal Marginal Relevance) 和 Time-Decay 规则加权的设计。"
+  },
+  {
+    "id": "q4",
+    "category": "agent",
+    "level": "Lead",
+    "title": "在 ReAct 循环中，如何防止 Agent 陷入死循环或无意义工具调用？如何设计健壮的熔断与容错机制？",
+    "tags": ["Agent", "ReAct", "死循环防范", "容错与熔断", "Self-Correction"],
+    "plainAnalogy": "【💡 小白人话解读】：机器人调用查天气接口失败了，它可能会像死机一样反复重试 100 次同样的错误参数。防止这种情况发生，要给它加三个保护伞：① 规定最多只许尝试 8 步（硬步数上限）；② 发现它连续两次发出完全一样的请求，立刻拍醒它警告（指纹去重）；③ 如果接口报错，详细告诉它哪里错了而不是只扔一个 500 错误码。",
+    "analysis": "考查候选人在生产级 Agent 落地过程中面对非确定性与幻觉时的防御性编程架构能力。",
+    "coreAnswer": "1. **死循环发生根因**：\n   - 工具返回错误或空数据，Agent 未能理解错误原因，反复以相同参数重复调用；\n   - LLM 陷入局部逻辑死结，Thought 重复生成相同推理。\n\n2. **多层防御与熔断机制**：\n   - **最大步数硬截断 (Max Iterations Guard)**：设定最大执行步数（如 8~12 步），超限立即中断由 Fallback 兜底。\n   - **工具调用指纹去重检测 (Duplicate Action Detector)**：对 `(Tool_Name, Normalized_Args)` 生成哈希指纹。若连续 2 次出现相同调用，拦截并注入系统警告：“检测到重复调用相同参数，请更换策略或向用户求助”。\n   - **环境反馈丰富化 (Informative Observation)**：工具出错时返回引导性明确提示：“订单 ID 格式错误，应为 10 位数字，请修正后重新推理”。\n   - **引入 Reflexion / Critic 节点**：连续失败达阈值时激活反思模式，总结失败教训并重新规划。",
+    "bonusPoints": "提到利用 LangGraph 状态机定义明确的状态转移边界与超时熔断器（Circuit Breaker）。"
+  },
+  {
+    "id": "q5",
+    "category": "memory",
+    "level": "Senior",
+    "title": "如何设计一个支持长期记忆（Long-term Memory）与动态偏好进化的 Agent 记忆系统？",
+    "tags": ["Memory", "Mem0", "MemGPT", "长期记忆", "遗忘曲线"],
+    "plainAnalogy": "【💡 小白人话解读】：把 Agent 的记忆分成两种：桌上的便签纸（当前对话在聊什么）和抽屉里的日记本（用户叫什么名字、用什么编程语言）。每次聊完天，后台悄悄派个小助手总结一句话事实写进日记本；如果用户说'我搬家到上海了'，小助手把日记本里的旧地址更新掉。太久没被翻看过的日记本，随时间慢慢淡出归档。",
+    "analysis": "考查候选人对 Agent 状态持久化、用户个性化画像沉淀、向量+图谱双层存储及记忆生命周期管理的理解。",
+    "coreAnswer": "1. **记忆分层架构设计**：\n   - **工作记忆 (Working Memory)**：当前轮会话滑动窗口（Buffer Window），负责多轮指代消解与即时上下文。\n   - **语义长期记忆 (Semantic Long-term Memory)**：存储用户偏好、事实画像、实体关系。\n   - **情景长期记忆 (Episodic Long-term Memory)**：存储历史标志性事件与交互时间线。\n\n2. **记忆生命周期流水线 (参考 Mem0 设计)**：\n   - **异步提取 (Async Extraction)**：对话结束后，后台 Worker 异步调用小模型提取结构化事实 JSON（包含 subject, predicate, object, confidence）。\n   - **记忆消歧与变更 (CRUD Operation)**：若新事实与旧记忆冲突，执行 UPDATE；全新事实执行 ADD；废弃信息执行 DELETE。\n   - **双层存储引擎**：向量数据库（用于语义相似召回） + 知识图谱（用于复杂多跳实体关联）。\n   - **遗忘衰减机制**：引入时间衰减因子与命中频率加权，定期清理低频冷记忆。",
+    "bonusPoints": "能结合 MemGPT 的主动系统函数调用（`archival_memory_search`, `core_memory_replace`）阐述操作系统级分层内存设计。"
+  },
+  {
+    "id": "q6",
+    "category": "dify",
+    "level": "Senior",
+    "title": "在 Dify 中如何实现复杂业务编排、长列表迭代 (Iteration)、跨轮会话变量持久化及生产高并发接入？",
+    "tags": ["Dify", "Chatflow", "Iteration", "会话变量", "生产高并发"],
+    "plainAnalogy": "【💡 小白人话解读】：在 Dify 里拼积木：如果有 10 篇文章要翻译，不用写 10 个节点，把文章列表接进 Iteration（循环积木），它会自动并发逐篇翻译；如果有多个 If-Else 叉路，汇合时必须放一个 Variable Aggregator（汇聚插座）把不同叉路的电线并在一起，不然下游会断电报错；把整个工作流通过 API 发布，前端用流式打字机效果（SSE）展示。",
+    "analysis": "深度考察候选人在 Dify 平台中的实际工程实操、节点深度用法与生产级落地调优能力。",
+    "coreAnswer": "1. **长列表批量处理 (Iteration 节点)**：\n   - 将上游 Code 节点或 LLM 输出的 JSON 数组接入 Iteration 节点，配置并发数（Concurrency）提升吞吐，迭代结束后聚合输出列表。\n\n2. **跨轮会话状态持久化 (Conversation Variables)**：\n   - 在 Chatflow 中定义 Conversation Variables（如 `auth_token`, `current_step`），通过 Variable Assigner 节点动态更新，跨多轮保持状态。\n\n3. **多分支汇聚与防断流 (Variable Aggregator)**：\n   - 当多条 If-Else 分支汇聚到同一下游节点时，必须插入 Variable Aggregator 将不同分支输出统一映射为同一变量，杜绝下游缺失输入报错。\n\n4. **生产接入与高并发优化**：\n   - **流式接入**：调用 `/v1/chat-messages` 开启 `response_mode='streaming'` 提升首字响应时间（TTFT < 800ms）。\n   - **沙箱隔离**：独立部署 Dify Sandbox 隔离 Python Code 节点资源与安全。\n   - **缓存加速**：在网关层做 Query Embedding 语义缓存，降低大模型与向量库负载。",
+    "bonusPoints": "提到基于 Dify DSL 规范进行 Git 版本控制与 CI/CD 自动化部署，以及通过 OpenAPI 规范封装企业内网私有微服务 Tool 插件。"
+  },
+  {
+    "id": "q7",
+    "category": "rag",
+    "level": "Senior",
+    "title": "什么是父子文档检索（Parent-Document / Small-to-Big Retrieval）？相比传统固定分块它解决了什么根本矛盾？",
+    "tags": ["RAG", "Chunking", "Parent-Document", "Small-to-Big"],
+    "plainAnalogy": "【💡 小白人话解读】：去图书馆借书：如果只给你看单页撕下来的纸条（小块），你找书特别快，但读起来断章取义；如果把一整本大部头全拿给你（大块），你根本找不到那句话在哪。父子文档就是：给你一个小卡片索引去书架精确定位，找到后把整本完整的大书端给你读！",
+    "analysis": "考查候选人对 RAG 中'检索粒度'与'生成粒度'之间天然矛盾的深刻洞察与架构破解之道。",
+    "coreAnswer": "1. **传统固定分块的根本矛盾**：\n   - **切太大 (如 1500 tokens)**：向量语义被稀释平均化，难以精准匹配细粒度具体问题，且引入大量噪音。\n   - **切太小 (如 100 tokens)**：检索匹配极准，但缺少前后文前因后果，送给 LLM 时导致模型断章取义。\n\n2. **父子文档架构设计与工作流**：\n   - **切分阶段**：将大文档切分为完整的大父文档 (1000~2000 tokens)；再将每个父文档递归切分为若干小子文档 (100~200 tokens)。\n   - **存储阶段**：只对**子文档**计算 Embedding 存入向量数据库，子文档元数据记录其所属的 `parent_id`；父文档完整文本存入文档存储引擎。\n   - **检索与生成阶段**：用户 Query 只与子文档比对；命中 Top-K 子文档后，根据 `parent_id` 自动查出完整**父文档**注入 LLM Prompt。\n   - **效果**：“检索时用子块保证超高精度，生成时用父块保证超全上下文”，彻底平衡两者矛盾。",
+    "bonusPoints": "能进一步对比 Sentence Window Retrieval（句子窗口检索）的异同与适用边界。"
+  },
+  {
+    "id": "q8",
+    "category": "agent",
+    "level": "Senior",
+    "title": "如何构建一套自动化的 Agent Test Harness？如何有效防范 LLM-as-a-Judge 的三大固有偏见？",
+    "tags": ["Agent Harness", "LLM-as-a-Judge", "自动化评测", "偏见防范"],
+    "plainAnalogy": "【💡 小白人话解读】：期末考试时，让学霸模型当阅卷老师。但阅卷老师有毛病：喜欢给先交卷的人打高分（位置偏见）、喜欢给写字多的人打高分（话痨偏见）、喜欢给自己同校的师弟打高分（自夸偏见）。解决办法：把两份考卷对调名字重批一遍，要求老师只看要点不看字数，再找另一个学校的老师交叉批改。",
+    "analysis": "考查候选人对大模型工程化体系中质量保障（QA/CI）、基准测试治具（Harness）与裁判模型偏见治理的经验。",
+    "coreAnswer": "1. **Agent Test Harness 核心要素**：\n   - **确定性测试环境**：基于 Docker 沙箱或 Mock API 桩构建隔离环境，杜绝外部网络变动导致的偶发失败。\n   - **多维度测试用例集**：包含标准流程、边界异常值与恶意注入用例。\n   - **断言与打分管道**：确定性断言（Regex、JSON Schema 校验） + 轨迹步数断言 + LLM 裁判语义打分。\n\n2. **LLM-as-a-Judge 三大偏见治理**：\n   - **位置偏见 (Position Bias)**：对每个用例执行**双向翻转测试 (Swap Position)**：先跑 (A, B)，再对调跑 (B, A)，只有两次一致才判定胜出。\n   - **字数偏见 (Verbosity Bias)**：评分 Prompt 中显式约束：“回答长短不作为加分项，仅依据事实准确性与信息命中率打分”。\n   - **自夸偏见 (Self-enhancement Bias)**：采用跨模型 Ensemble 跨模型裁决机制（如 GPT-4o + Claude-3.5 联合打分）。",
+    "bonusPoints": "提及将 Harness 测试套件集成进 GitHub Actions / GitLab CI 作为 Pull Request 自动化门禁。"
+  },
+  {
+    "id": "q9",
+    "category": "architecture",
+    "level": "Lead",
+    "title": "如果要设计一个百万 QPS 级别的高可用企业知识库与 Agent 检索网关，整体技术架构该如何设计？",
+    "tags": ["高并发架构", "向量缓存", "分布式检索", "网关降级", "系统设计"],
+    "plainAnalogy": "【💡 小白人话解读】：就像高峰期的高铁站安检系统：① 刷身份证秒过（精确缓存，老问题直接出答案不用查数据库）；② 相似脸识别秒过（语义缓存，问法不同但意思一样的问题直接出答案）；③ 大件行李分流（向量检索与 Re-rank 分开部署，各跑各的 GPU 集群）；④ 突发大客流限流（网关层自动熔断，降级为轻量搜索保住系统不崩）。",
+    "analysis": "考查大厂技术专家/架构师级别的全链路高并发高可用系统设计能力。",
+    "coreAnswer": "1. **多级缓存层 (Semantic & Vector Caching)**：\n   - **L1 精确匹配缓存 (Redis)**：Query MD5 直出历史高频标准问答。\n   - **L2 语义相似度缓存 (GPTCache)**：计算 Query Embedding 与缓存向量比对，若相似度 > 0.96 直接返回命中缓存，拦截 40%~60% 重复请求，大幅降低 LLM 成本与向量库负载。\n\n2. **检索服务与向量库分层扩容**：\n   - **读写分离与分布式分片**：Milvus / Qdrant 集群采用 Coordinator + QueryNode 分离架构，分片水平横向扩容，结合 HNSW 与内存 PQ 乘积量化。\n   - **粗排与精排解耦微服务**：召回服务（BM25 + Vector）与 Re-rank 服务（GPU ONNX 加速集群）独立部署，支持弹性 HPA 自动伸缩。\n\n3. **限流降级与高可用容灾**：\n   - **网关层 (Kong / Envoy)**：按租户与 Token 限流，熔断时降级为纯 BM25 检索或缓存兜底。\n   - **异步写入管道**：文档解析与 Embedding 入库通过 Kafka 消息队列异步化削峰填谷。",
+    "bonusPoints": "提到 Prometheus + Grafana 全链路监控指标（P99 延迟、Recall@K、GPU 显存占用、首字延迟 TTFT）与 OpenTelemetry 链路追踪。"
+  },
+  {
+    "id": "q10",
+    "category": "agent",
+    "level": "Mid",
+    "title": "大模型在调用 Function Calling / Tools 时，出现 JSON 截断或参数提取错误该如何自动容错？",
+    "tags": ["Function Calling", "JSON Schema", "容错", "Pydantic", "Instructor"],
+    "plainAnalogy": "【💡 小白人话解读】：让机器人填快递单，它有时候漏写括号、有时候把手机号填成文字。应对办法：① 强制定制表格模板（JSON Schema）；② 填完先由后台检查员（Pydantic）校验，如果错了，把错误信息拍在机器人脸上让它立刻重新填一遍；③ 用修剪胶水工具（json-repair）自动把漏掉的右括号补齐。",
+    "analysis": "考查工程落地中针对大模型非确定性输出的防御性设计与结构化输出约束方案。",
+    "coreAnswer": "1. **输出约束机制 (Constrained Decoding / JSON Mode)**：\n   - 开启大模型原生的 `response_format: { type: 'json_object' }` 或采用工具专用的 Tool Schema（OpenAI Tools API）。\n   - 使用引导式解码库（如 Outlines、Instructor、SGLang），在 Token 概率采样阶段基于词法状态机强制模型只能输出合法 JSON。\n\n2. **数据校验与动态纠错 (Pydantic Validation & Retry Loop)**：\n   - 后端使用 Pydantic Model 严格校验接收到的 JSON 参数。\n   - 若校验失败，捕获 ValidationError 并将错误打包为 Feedback 重新发送给 LLM：“参数存在字段类型错误：age 期望为 int，但收到 'twenty'，请修正后重试”。\n\n3. **宽松解析与 JSON 修复器 (Lenient Parser)**：\n   - 在进入正式校验前，使用 `json-repair` 或正则提取器处理常见的 Markdown 代码块包裹、中文引号、末尾逗号缺失或尾部括号截断问题。",
+    "bonusPoints": "指出对于流式输出（Streaming Tools Call）可采用分块增量 JSON 流式解析器（Incremental JSON Parser）提早截获参数。"
+  }
+]
