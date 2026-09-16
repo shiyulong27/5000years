@@ -5,6 +5,7 @@
   importance: 5
   summary: 赵匡胤发动陈桥兵变，黄袍加身，代后周建立宋朝，定都开封，史称北宋。
   confidence: 确定
+  related_dynasties: [beisong]
   sources: [宋史·太祖纪]
 
 - id: cupiu-bingquan
@@ -15,6 +16,7 @@
   importance: 4
   summary: 宋太祖设宴劝说石守信等高级将领交出兵权，解除禁军将领威胁，强化中央集权。
   confidence: 确定
+  related_dynasties: [beisong]
   sources: [宋史·石守信传]
 
 - id: liyu-nantang
@@ -25,6 +27,8 @@
   importance: 4
   summary: 宋军攻陷金陵，南唐后主李煜出降，幽禁汴京，作《虞美人》《相见欢》遂成词帝。
   confidence: 确定
+  related_dynasties: [song]
+  dispute: 项目没有南唐独立 dynasty ID，此处以宋灭南唐的承接政权归入 `song`，不把南唐等同于北宋制度。
   sources: [宋史·南唐世家]
 
 - id: yangjiajiang-jinsha
@@ -35,6 +39,7 @@
   importance: 4
   summary: 宋太宗发兵数路北伐欲复燕云失地，主将杨业孤军无援力战被俘，绝食三日而亡，成就忠烈杨家将传说。
   confidence: 有争议
+  related_dynasties: [beisong, liao]
   dispute: 「金沙滩撞李陵碑殉国」为《杨家将演义》虚构，正史载杨业败于陈家谷口被俘后绝食而死。
   sources: [宋史·杨业传]
 
@@ -46,6 +51,7 @@
   importance: 4
   summary: 辽军兵临澶州，宰相寇准力排众议促宋真宗亲征鼓舞士气，射杀辽将萧挞凛，双方订盟约为兄弟之国，维持百年和平。
   confidence: 有争议
+  related_dynasties: [song, beisong, liao]
   dispute: 辽军南下、真宗亲征在1004年，盟约于1005年正月（景德二年）订立，此处系于盟成之年。
   sources: [宋史·寇准传]
 
@@ -68,6 +74,7 @@
   importance: 3
   summary: 李元昊于兴庆府称帝，建国号大夏，史称西夏。
   confidence: 确定
+  related_dynasties: [xixia]
   sources: [宋史·夏国传]
 
 - id: fanzhongyan-qingli
@@ -78,6 +85,7 @@
   importance: 4
   summary: 范仲淹向宋仁宗呈《答手诏条陈十事》推行新法整顿吏治，虽因守旧派反对而止，后作《岳阳楼记》传世。
   confidence: 确定
+  related_dynasties: [beisong]
   sources: [宋史·范仲淹传]
 
 - id: bisheng-moveable-type-1044
@@ -87,6 +95,7 @@
   importance: 4
   summary: 毕昇发明泥活字印刷术，为印刷术发展带来革命性突破。
   confidence: 有争议
+  related_dynasties: [beisong]
   dispute: 活字创制之年无确载，仅《梦溪笔谈》记庆历中，年代为约值。
   sources: [梦溪笔谈]
 
@@ -98,6 +107,7 @@
   importance: 4
   summary: 名将狄青每临阵披发戴青铜面具冲锋陷阵，于上元夜举宴麻痹守军后奇袭昆仑关，平定侬智高（nóng zhì gāo）。
   confidence: 确定
+  related_dynasties: [beisong]
   sources: [宋史·狄青传]
 
 - id: baozheng-kaifeng
@@ -109,6 +119,7 @@
   importance: 4
   summary: 包拯任开封府知府，严惩贪官权贵、不避亲戚，朝野称「关节不到，有阎罗包老」，传为包青天。
   confidence: 确定
+  related_dynasties: [beisong]
   sources: [宋史·包拯传]
 
 
@@ -119,6 +130,7 @@
   importance: 4
   summary: 宋神宗任用王安石推行新法，意在富国强兵，引发朝廷富国派与守旧派之争。
   confidence: 确定
+  related_dynasties: [beisong]
   sources: [宋史·王安石传]
 
 - id: zizhizongjian-1084
@@ -128,6 +140,7 @@
   importance: 5
   summary: 司马光主持编撰的编年体通史《资治通鉴》成书，涵盖上起战国下至五代 1362 年历史。
   confidence: 确定
+  related_dynasties: [beisong]
   sources: [宋史·司马光传]
 
 - id: su-dongpo-chibi
@@ -138,6 +151,7 @@
   importance: 4
   summary: 苏轼被贬黄州游赤壁矶，作前后《赤壁赋》与《念奴娇·赤壁怀古》，抒发旷达襟怀与千古兴亡之感。
   confidence: 确定
+  related_dynasties: [beisong]
   sources: [宋史·苏轼传]
 
 
@@ -148,6 +162,7 @@
   importance: 3
   summary: 完颜阿骨打统一女真各部，称帝建国，国号大金。
   confidence: 确定
+  related_dynasties: [jin1115]
   sources: [金史·太祖纪]
 
 - id: fangla-qiyi
@@ -158,6 +173,7 @@
   importance: 4
   summary: 宋徽宗设花石纲搜刮江南，方腊于睦州起义，攻占六州五十二县、震动东南，后遭镇压，尽显北宋末年朝政腐败。
   confidence: 确定
+  related_dynasties: [beisong]
   sources: [宋史·徽宗纪]
 
 - id: jingkang-incident-1127
@@ -168,6 +184,7 @@
   importance: 5
   summary: 金军攻陷汴京，俘徽钦二帝，北宋亡；赵构于应天府即位，重建宋朝，史称南宋。
   confidence: 确定
+  related_dynasties: [beisong, nansong, jin1115]
   sources: [宋史·高宗纪]
 
 - id: yuemu-cizi
@@ -178,6 +195,7 @@
   importance: 4
   summary: 北宋将亡之际岳飞投身抗金，相传岳母在其背上刺「尽忠报国」（后俗称精忠报国）以励其志。
   confidence: 传说
+  related_dynasties: [beisong, jin1115]
   dispute: |
     岳母刺字为正史无载的传说，源自后世笔记小说；岳飞从军约在靖康元年（1126），
     年代亦系约估。
@@ -192,6 +210,7 @@
   importance: 5
   summary: 岳飞率岳家军在郾城（yǎn chéng）大败金兀术（wù zhú）主力拐子马、铁浮屠，收复郑州洛阳，直逼汴京。
   confidence: 确定
+  related_dynasties: [nansong, jin1115]
   sources: [宋史·岳飞传]
 
 - id: shaoxing-treaty-1141
@@ -201,6 +220,7 @@
   importance: 4
   summary: 南宋与金朝达成绍兴和议，划淮河为界，宋向金称臣纳贡。
   confidence: 确定
+  related_dynasties: [nansong, jin1115]
   sources: [宋史·高宗纪]
 
 - id: linan-falls-1276
@@ -210,6 +230,7 @@
   importance: 4
   summary: 元军攻陷南宋都城临安，宋恭帝出降。
   confidence: 确定
+  related_dynasties: [nansong, yuan]
   sources: [宋史·恭帝纪]
 
 - id: wen-tianxiang-01279
@@ -220,6 +241,7 @@
   importance: 4
   summary: 丞相文天祥兵败被俘后拒绝降元，于零丁洋作诗「人生自古谁无死？留取丹心照汗青」。
   confidence: 确定
+  related_dynasties: [nansong, yuan]
   sources: [宋史·文天祥传]
 
 - id: yashan-battle-1279
@@ -230,6 +252,249 @@
   importance: 5
   summary: 崖山海战宋军绝境力战不敌，丞相陆秀夫背负八岁少帝赵昺（bǐng）投海殉国，十万军民随之投海，南宋彻底灭亡。
   confidence: 确定
+  related_dynasties: [nansong, yuan]
   sources: [宋史·陆秀夫传]
 
+- id: zhaopu-receives-gifts-0976
+  date: "0976"
+  title: 赵普纳金事发
+  category: 政治
+  tags: [北宋, 宰相, 权力结构]
+  importance: 4
+  summary: 北宋初年赵普任相时接受馈赠，相关事迹被宋太祖知悉并诘问，反映开国君臣对宰相权力和私交馈遗的警惕。
+  confidence: 有争议
+  dispute: 《宋史·赵普传》叙事涉及不同阶段的受馈与君臣处置，篇名“收礼”是通俗概括；此处不补造礼金数额和对白。
+  related_dynasties: [beisong]
+  sources: [宋史·赵普传]
 
+- id: wangxiaobo-qiyi-0993
+  date: "0993"
+  title: 王小波起义
+  category: 战争
+  tags: [北宋, 四川, 起义]
+  importance: 4
+  summary: 淳化年间四川民众在王小波、李顺领导下起事，反映北宋初年地方赋役和社会矛盾，起义后被宋军镇压。
+  confidence: 确定
+  related_dynasties: [beisong]
+  sources: [宋史·王小波传]
+
+- id: ouyangxiu-guwen-1044
+  date: "1044"
+  title: 欧阳修倡导古文
+  category: 文化
+  tags: [北宋, 古文运动, 科举]
+  importance: 4
+  summary: 欧阳修在北宋中期主持文坛和科举取士，提倡质实古文，推动宋代散文风格转变。
+  confidence: 有争议
+  dispute: 欧阳修的文风改革是跨年文坛过程，1044年仅作展示锚点。
+  related_dynasties: [beisong]
+  sources: [宋史·欧阳修传]
+
+- id: shenkuo-liao-mission-1075
+  date: "1075"
+  title: 沈括出使辽国议边
+  category: 政治
+  tags: [北宋, 辽, 边界]
+  importance: 4
+  summary: 宋神宗时期沈括出使辽国，参与核定宋辽边界和交涉，体现北宋与辽长期对峙下的外交活动。
+  confidence: 确定
+  related_dynasties: [beisong, liao]
+  sources: [宋史·沈括传]
+
+- id: huashigang-1110
+  date: "1110"
+  title: 花石纲搜求加剧
+  category: 经济
+  tags: [北宋, 徽宗, 花石纲, 江南]
+  importance: 4
+  summary: 宋徽宗时期以花石纲搜求奇石异物并经水陆转运，增加江南地方负担，成为北宋末社会矛盾和方腊起事背景之一。
+  confidence: 有争议
+  dispute: 花石纲是持续性的财政与劳役过程，1110年仅作展示锚点，不把它写成方腊起义的唯一原因。
+  related_dynasties: [beisong]
+  sources: [宋史·朱勔传, 宋史·徽宗纪]
+
+- id: ligang-defends-kaifeng-1126
+  date: "1126"
+  title: 李纲守东京
+  category: 战争
+  tags: [北宋, 靖康, 金]
+  importance: 5
+  summary: 金军南下时李纲主持东京防御并组织守城，主张抗战和整顿军政，成为靖康危局中的重要防线。
+  confidence: 确定
+  related_dynasties: [beisong, jin1115]
+  sources: [宋史·李纲传]
+
+- id: taixue-petition-1126
+  date: "1126"
+  title: 太学生伏阙请愿
+  category: 政治
+  tags: [北宋, 靖康, 士人]
+  importance: 4
+  summary: 靖康年间太学生等士人伏阙上书，要求朝廷坚持抗金和任用主战大臣，反映北宋末士人政治参与。
+  confidence: 有争议
+  dispute: 太学生请愿有多次上书和不同参与者，具体日期与人数需互校；此处仅用1126年年份级展示。
+  related_dynasties: [beisong, jin1115]
+  sources: [宋史·钦宗纪, 宋史·李纲传]
+
+- id: zongze-cross-river-1128
+  date: "1128"
+  title: 宗泽临终仍呼过河
+  category: 战争
+  tags: [南宋, 抗金, 宗泽]
+  importance: 4
+  summary: 宗泽在东京留守任上持续主张收复失地、迎回二帝，临终前仍以北伐过河相勉，成为南宋初抗金政治象征。
+  confidence: 有争议
+  dispute: 《宋史·宗泽传》记其临终连呼“过河”三声，但具体语境带有传记修辞，不扩写为未经核实的演说。
+  related_dynasties: [nansong, jin1115]
+  sources: [宋史·宗泽传]
+
+- id: han-shizhong-huangtiandang-1130
+  date: "1130"
+  title: 韩世忠黄天荡阻击金军
+  category: 战争
+  tags: [南宋, 抗金, 水战]
+  importance: 5
+  summary: 金军南渡后，韩世忠率水军在黄天荡设伏阻击完颜宗弼，迫使金军退却，稳定南宋江南防线。
+  confidence: 确定
+  related_dynasties: [nansong, jin1115]
+  sources: [宋史·韩世忠传]
+
+- id: qinhui-yuefei-case-1142
+  date: "1142"
+  title: 秦桧主导岳飞狱案
+  category: 政治
+  tags: [南宋, 岳飞, 秦桧, 宋金关系]
+  importance: 5
+  summary: 绍兴和议前后秦桧参与朝廷对岳飞的审讯和处置，岳飞被赐死的传统叙事由此形成。
+  confidence: 有争议
+  dispute: “卖国贼”“莫须有”是后世强烈评价或概括；正史可核实的是岳飞被下狱、赐死及秦桧参与，具体责任链需并读相关列传。
+  related_dynasties: [nansong, jin1115]
+  sources: [宋史·岳飞传, 宋史·秦桧传]
+
+- id: yu-yunwen-caishi-1161
+  date: "1161"
+  title: 虞允文采石退金军
+  category: 战争
+  tags: [南宋, 金, 采石之战]
+  importance: 5
+  summary: 金海陵王南侵时，虞允文在采石组织宋军水战，击退金军渡江攻势，南宋防线由此稳固。
+  confidence: 确定
+  related_dynasties: [nansong, jin1115]
+  sources: [宋史·虞允文传]
+
+- id: li-qingzhao-nandu-1127
+  date: "1127"
+  title: 李清照南渡
+  category: 文化
+  tags: [南宋, 词, 流徙]
+  importance: 4
+  summary: 靖康之变后李清照携带文物书籍辗转南渡，个人流离与金石收藏损失折射宋室南渡后的文化迁徙。
+  confidence: 有争议
+  dispute: 李清照南渡路线和具体年份见《金石录后序》等自述与后人考证，不能把全部经历压缩为1127年单一事件。
+  related_dynasties: [nansong]
+  sources: [金石录后序]
+
+- id: xin-qiji-qinwang-1162
+  date: "1162"
+  title: 辛弃疾南归任职
+  category: 政治
+  tags: [南宋, 抗金, 辛弃疾]
+  importance: 4
+  summary: 辛弃疾率众南归后进入南宋仕途，持续提出恢复中原和整军备战主张，成为南宋抗金政治与文学的重要人物。
+  confidence: 有争议
+  dispute: 辛弃疾南归及早年经历跨越多个年份，1162年为南归后进入南宋政权活动的展示锚点。
+  related_dynasties: [nansong, jin1115]
+  sources: [宋史·辛弃疾传]
+
+- id: lu-you-shushi-1210
+  date: "1210"
+  title: 陆游临终示儿
+  category: 文化
+  tags: [南宋, 诗歌, 陆游]
+  importance: 4
+  summary: 陆游临终作《示儿》，表达对国家统一的遗愿，作品成为南宋士大夫家国意识的代表文本。
+  confidence: 确定
+  related_dynasties: [nansong]
+  sources: [宋史·陆游传]
+
+- id: abaoji-liao-0916
+  date: "0916"
+  title: 耶律阿保机建辽
+  category: 政治
+  tags: [辽, 契丹, 建国]
+  importance: 5
+  summary: 契丹首领耶律阿保机建立契丹政权，辽国由此形成并与中原五代、北宋长期并立。
+  confidence: 有争议
+  dispute: 契丹建国、称帝和国号变更分见不同史料，916年作为辽太祖建国展示年份，不把后续国号变化压缩成单一过程。
+  related_dynasties: [liao]
+  sources: [辽史·太祖纪]
+
+- id: xixia-song-conflict-1040
+  date: "1040"
+  title: 宋夏战争爆发
+  category: 战争
+  tags: [北宋, 西夏, 边疆]
+  importance: 4
+  summary: 李元昊建夏后，西夏与北宋在陕西沿边发生持续战争，三川口等战事促成双方重新调整边防与外交。
+  confidence: 有争议
+  dispute: 宋夏战争延续多年，1040年为集中冲突阶段的年份锚点；具体战役和和议需分事件核验。
+  related_dynasties: [beisong, xixia]
+  sources: [宋史·夏国传, 宋史·仁宗纪]
+
+- id: haishangmeng-1120
+  date: "1120"
+  title: 宋金海上之盟
+  category: 政治
+  tags: [北宋, 金, 辽, 外交]
+  importance: 5
+  summary: 北宋与新兴金政权约定共同夹击辽国，形成海上之盟；辽亡后宋金矛盾迅速转化为战争。
+  confidence: 有争议
+  dispute: 海上之盟包含多次使节往来和条款变化，1120年为盟约形成的年份级锚点，不补造具体密约对白。
+  related_dynasties: [beisong, liao, jin1115]
+  sources: [宋史·徽宗纪, 金史·太祖纪]
+
+- id: jin-destroy-liao-1125
+  date: "1125"
+  title: 金灭辽
+  category: 战争
+  tags: [金, 辽, 政权更替]
+  importance: 5
+  summary: 金军攻灭辽朝，辽天祚帝被俘，东北和北方政局转入金与北宋直接对峙阶段。
+  confidence: 确定
+  related_dynasties: [liao, jin1115]
+  sources: [辽史·天祚帝纪, 金史·太宗纪]
+
+- id: zhongxiang-yangya-1130
+  date: "1130"
+  title: 钟相杨么起义
+  category: 战争
+  tags: [南宋, 湖南, 起义]
+  importance: 4
+  summary: 南宋初年洞庭湖地区爆发钟相、杨么领导的地方武装起事，长期影响荆湖水陆交通，后被宋军镇压。
+  confidence: 有争议
+  dispute: 起义持续时间、钟相与杨么的领导交接及具体战事见不同纪传，1130年仅作起事阶段展示锚点。
+  related_dynasties: [nansong]
+  sources: [宋史·高宗纪, 建炎以来系年要录]
+
+- id: wen-tianxiang-qibing-1275
+  date: "1275"
+  title: 文天祥起兵勤王
+  category: 战争
+  tags: [南宋, 文天祥, 抗元]
+  importance: 5
+  summary: 元军南下后，文天祥在江西、广东一带组织勤王兵力，坚持南宋抗战并参与后续防御。
+  confidence: 有争议
+  dispute: 文天祥起兵、任职和转战跨越多个年份，本事件以1275年响应勤王诏的阶段为展示锚点，不压缩复杂行军过程。
+  related_dynasties: [nansong, yuan]
+  sources: [宋史·文天祥传]
+
+- id: zhangshijie-yashan-1279
+  date: "1279-02"
+  title: 张世杰守崖山
+  category: 战争
+  tags: [南宋, 崖山, 张世杰]
+  importance: 5
+  summary: 张世杰率南宋水军在崖山组织抵抗，宋军战败后拒绝降元并投海，南宋海上抵抗由此结束。
+  confidence: 确定
+  related_dynasties: [nansong, yuan]
+  sources: [宋史·张世杰传]

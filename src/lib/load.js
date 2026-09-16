@@ -144,10 +144,16 @@ export function loadAll(dataDir) {
     figures: loadFile(dataDir, 'figures.yaml'),
     legends: loadDir(dataDir, 'legends'),
     rulers: loadDir(dataDir, 'rulers'),
+    polities: loadDir(dataDir, 'polities'),
     events: loadDir(dataDir, 'events'),
     worldEvents: loadDir(dataDir, 'world'),
     figureDetails: loadSingleDir(dataDir, 'figures/detail'),
     sources: loadFile(dataDir, 'sources.yaml'),
+    shanhaijing: {
+      beasts: loadFile(dataDir, 'shanhaijing/beasts.yaml'),
+      myths: loadFile(dataDir, 'shanhaijing/myths.yaml'),
+      chapters: loadFile(dataDir, 'shanhaijing/chapters.yaml'),
+    },
   }
 }
 

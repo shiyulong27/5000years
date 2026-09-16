@@ -279,30 +279,116 @@
 
 
 - id: wangmang-9
+  related_dynasties: [xihan, xin]
   date: "0009"
   title: 王莽篡汉，建立新朝
   category: 政治
-  importance: 4
-  summary: 外戚代汉自立，行托古改制，十五年而亡。
-  confidence: 确定
+  tags: [王朝更替, 托古改制, 制度]
+  importance: 5
+  summary: 王莽代汉称帝，建立新朝，并以经学和古制为依据推行一系列制度、财政与货币改革。
+  confidence: 有争议
+  dispute: |
+    《汉书·王莽传》记其代汉、改制及后续政局；“托古改制”的概括有史料依据，
+    但改革项目、实施范围与失败原因不能压缩为单一结论，十五年时长只作项目时间线锚点。
+  sources: [汉书·王莽传]
+
+- id: wangmang-crisis-17
+  related_dynasties: [xin]
+  date: "0017"
+  title: 王莽末年饥旱与流民起义加剧
+  category: 灾害
+  tags: [灾害, 流民, 社会危机]
+  importance: 5
+  summary: 新朝后期饥旱、蝗灾、徭役与财政措施叠加，关东流民增多，地方武装和反新起义相继形成。
+  confidence: 有争议
+  dispute: |
+    《汉书·王莽传下》和《后汉书·刘玄刘盆子列传》分别记饥旱、税役、盗贼与起兵背景；
+    具体灾害年份、区域差异以及各项政策与起义之间的因果关系不能仅凭传世叙事逐项确定。
+  sources: [汉书·王莽传, 后汉书·刘玄刘盆子列传]
+
+- id: lulin-qiyi-17
+  related_dynasties: [xin]
+  date: "0017"
+  title: 绿林军起兵，反新起义扩展
+  category: 战争
+  tags: [起义, 绿林军, 新朝末年]
+  importance: 5
+  summary: 荆州一带的王匡、王凤等组织绿林军，起义力量在新朝末年逐步扩大，并与其他反新武装汇合。
+  confidence: 有争议
+  dispute: |
+    《后汉书·刘玄刘盆子列传》记绿林形成及王匡、王凤等活动；起兵时间和“逐步扩大”的阶段划分，
+    采用年份级锚点，不把不同部众的行动压缩为单一日期。
+  sources: [后汉书·刘玄刘盆子列传]
+
+- id: chimei-qiyi-18
+  related_dynasties: [xin]
+  date: "0018"
+  title: 赤眉军起兵，关东反新势力壮大
+  category: 战争
+  tags: [起义, 赤眉军, 新朝末年]
+  importance: 5
+  summary: 樊崇等人在青州、徐州一带组织赤眉军，成为新朝末年与绿林并列的重要反新力量。
+  confidence: 有争议
+  dispute: |
+    《后汉书·刘玄刘盆子列传》记赤眉首领樊崇及其活动；起兵地点、时间和部众规模存在传世记载差异，
+    本条只保留年份级过程，不将后来的刘盆子拥立提前到起兵之时。
+  sources: [后汉书·刘玄刘盆子列传]
+
+- id: gengshi-liuxuan-23
+  related_dynasties: [xin]
+  date: "0023"
+  title: 更始帝刘玄即位，形成反新过渡政权
+  category: 政治
+  tags: [更始政权, 绿林军, 政权更替]
+  importance: 5
+  summary: 绿林部众拥立刘玄为更始帝，反新力量取得名义上的汉室政权，随后与各地武装展开新的权力竞争。
+  confidence: 有争议
+  dispute: |
+    《后汉书·刘玄刘盆子列传》记刘玄被拥立及更始政权活动；拥立过程、日期和各部众关系依传记叙述，
+    本条用于标记新朝覆亡前的过渡政权，不等同于刘秀即位后的东汉。
+  sources: [后汉书·刘玄刘盆子列传]
 
 - id: kunyang-zhizhan
+  related_dynasties: [xin]
   date: "0023-06"
   title: 昆阳之战，刘秀大破王莽军
   category: 战争
   tags: [决定性战役, 绿林军]
   importance: 5
-  summary: 刘秀以少胜多，大破王莽王寻、王邑数十万大军于昆阳城下，斩王寻，王莽主力尽歼，新朝随之败亡。
-  confidence: 确定
+  summary: 刘秀率援军解昆阳之围，王寻战死，王邑所部败退；此战重创新军并加速新朝政权崩解。
+  confidence: 有争议
+  dispute: |
+    《后汉书·光武帝纪》记王寻、王邑与昆阳战事；“数十万”兵力、以少胜多和“主力尽歼”等数字化或传奇化表述，
+    主要依赖传世叙事，不能当作已独立核实的精确统计；新朝覆亡还涉及其后各地攻战。
   sources: [后汉书·光武帝纪]
 
+- id: chimei-liupenzi-25
+  related_dynasties: [xin, donghan]
+  date: "0025"
+  title: 赤眉拥立刘盆子，攻入长安
+  category: 政治
+  tags: [赤眉军, 刘盆子, 政权更替]
+  importance: 5
+  summary: 赤眉军拥立刘盆子为帝并攻入长安，更始政权覆亡；关中局势随后转入刘秀与赤眉等势力的竞争。
+  confidence: 有争议
+  dispute: |
+    《后汉书·刘玄刘盆子列传》记刘盆子被拥立、赤眉入关及更始败亡；拥立和入长安的具体日期、部众规模与战事细节，
+    采用年份级锚点并保留传世记载差异，不把刘盆子政权等同于后来的东汉。
+  sources: [后汉书·刘玄刘盆子列传]
+
 - id: guangwu-25
+  related_dynasties: [xin, donghan]
   date: "0025"
   title: 刘秀称帝，东汉建立
   category: 政治
+  tags: [政权更替, 东汉建立, 河北平定]
   importance: 5
-  summary: 定都洛阳，史称光武中兴。
-  confidence: 确定
+  summary: 刘秀在河北势力基础上即皇帝位，建立东汉并以洛阳为都；统一战争仍在其后持续。
+  confidence: 有争议
+  dispute: |
+    《后汉书·光武帝纪》记刘秀即位、定都及后续平定诸势力；“重建汉王朝”是对长期过程的概括，
+    本条日期只标记即位节点，不把东汉统一、光武中兴等后续评价提前完成。
+  sources: [后汉书·光武帝纪]
 
 
 - id: mayuan-guoshi
@@ -324,6 +410,20 @@
   summary: 汉明帝感念东汉中兴功勋，于洛阳南宫云台阁图画邓禹、马武等二十八位中兴名将画像。
   confidence: 确定
   sources: [后汉书·二十八将传]
+
+- id: chuwang-ying-buddhism-65
+  related_dynasties: [donghan]
+  date: "0065"
+  title: 楚王英奉佛，东汉早期佛教活动见于诏书
+  category: 文化
+  tags: [东汉, 佛教, 楚王英]
+  importance: 4
+  summary: 汉明帝永平八年诏书称楚王英诵黄老、尚浮屠仁祠并斋戒三月，相关诏令显示东汉宗室已出现有明确纪年的佛教奉祀活动。
+  confidence: 有争议
+  dispute: |
+    《后汉书·楚王英传》直接记永平八年诏书和“尚浮屠之仁祠”；《后汉书·西域传》将明帝梦金人、遣使天竺及白马寺相关传统写作“世传”，
+    因此本条只承载 65 年楚王英奉佛这一可定位节点，不把明帝梦感、摄摩腾/竺法兰或白马寺创建写成同等确定的史实。
+  sources: [后汉书·楚王英传, 后汉书·西域传]
 
 - id: banchao-toubi
   date: "0073"
@@ -356,15 +456,77 @@
   confidence: 确定
   sources: [后汉书·张衡传]
 
+- id: liangji-fall-159
+  related_dynasties: [donghan]
+  date: "0159"
+  title: 梁冀长期专权，桓帝联合近侍诛除梁氏
+  category: 政治
+  tags: [东汉中期, 外戚, 宫廷政变]
+  importance: 5
+  summary: 梁冀任大将军二十余年，历经顺、冲、质、桓诸帝并长期控制朝政；汉桓帝后来与单超等近侍密谋，派兵包围梁冀宅第、收回印绶，梁冀与妻孙寿自杀。
+  confidence: 有争议
+  dispute: |
+    《后汉书·梁统列传》和《后汉书·桓帝纪》记梁冀长期掌权、梁氏覆亡及相关政治清算；毒杀质帝、宫中密谋、
+    财产数字和人物动机均来自传世纪传，不能视为独立同时代实证。本条以延熹二年梁冀覆亡为年份级锚点，不把二十余年专权压缩成单日事件。
+  sources: [后汉书·梁统列传, 后汉书·桓帝纪]
+
+- id: first-party-prohibition-166
+  related_dynasties: [donghan]
+  date: "0166"
+  title: 第一次党锢，李膺等被捕禁锢
+  category: 政治
+  tags: [东汉中期, 党锢, 宦官]
+  importance: 5
+  summary: 牢修上书指控李膺等结交太学生、形成部党，朝廷随即逮捕李膺及其牵连者；次年相关人员虽获释归乡，仍被终身禁锢并留下党人名籍。
+  confidence: 有争议
+  dispute: |
+    《后汉书·党锢列传》和《后汉书·桓帝纪》记延熹九年逮捕及次年赦归禁锢；涉案人数、告发动机和“党人”范围
+    主要依赖东汉以后编成的纪传。本条采用公元166年作为第一次大规模逮捕的年份级锚点，不与169年的第二次捕杀合并。
+  sources: [后汉书·党锢列传, 后汉书·桓帝纪]
+
+- id: second-party-prohibition-169
+  related_dynasties: [donghan]
+  date: "0169"
+  title: 第二次党锢扩大，范滂等遇害
+  category: 政治
+  tags: [东汉中期, 党锢, 范滂]
+  importance: 5
+  summary: 汉灵帝建宁二年，朝廷扩大追捕党人，李膺、杜密、范滂等被捕后死于狱中或遇害，禁锢和牵连范围进一步扩大；范滂得知诏令后自行前往县狱。
+  confidence: 有争议
+  dispute: |
+    《后汉书·党锢列传》和《后汉书·灵帝纪》记建宁二年大举钩党、范滂自诣狱及党人遇害；死者规模、牵连范围、
+    范滂与母亲及县令的对话属于传世纪传叙事。本条保留基本过程，不把文学化临别言辞写作已独立核实事实。
+  sources: [后汉书·党锢列传, 后汉书·灵帝纪]
+
 
 
 - id: huangjin-184
+  related_dynasties: [donghan]
   date: "0184"
   title: 黄巾起义
   category: 战争
-  importance: 4
-  summary: 张角以太平道聚众而起，东汉自此名存实亡。
-  confidence: 确定
+  tags: [东汉末年, 太平道, 起义]
+  importance: 5
+  summary: 张角以太平道长期组织信众，原定起事计划泄露后，各地部众于184年提前发动；朝廷解除党禁并派皇甫嵩、朱儁等镇压，黄巾主力当年受挫，但各地相关武装仍持续活动。
+  confidence: 有争议
+  dispute: |
+    《后汉书·灵帝纪》和《后汉书·皇甫嵩朱儁列传》记张角组织、各地响应、朝廷出兵和主要战事；部众规模、斩获数字及“天下响应”
+    属于传世纪传口径。起义对东汉权力结构影响深远，但“东汉自此名存实亡”是过度简化的后世概括，不能作为单一事件的确定结论。
+  sources: [后汉书·灵帝纪, 后汉书·皇甫嵩朱儁列传]
+
+- id: yuanshao-eunuchs-189
+  related_dynasties: [donghan]
+  date: "0189"
+  title: 袁绍率兵诛杀宦官
+  category: 政治
+  tags: [东汉末年, 宦官, 宫廷政变]
+  importance: 5
+  summary: 大将军何进被宦官杀害后，袁绍率兵封锁宫门并搜捕诛杀宦官；宫廷冲突进一步破坏中央秩序，董卓随后控制朝政。
+  confidence: 有争议
+  dispute: |
+    《后汉书·窦武何进列传》记袁绍勒兵捕杀宦官及宫中大乱；被杀人数、误杀情况和参与者动机来自传世纪传，
+    本条以中平六年为年份级锚点，不采用篇名将复杂行动简化为袁绍一人所为。
+  sources: [后汉书·窦武何进列传]
 
 - id: dongzhuo-changan
   date: "0189"
@@ -375,6 +537,76 @@
   summary: 董卓率凉州军入洛阳废少帝立献帝，专横残暴焚毁洛阳迁都长安，袁绍等关东诸侯起兵讨伐。
   confidence: 确定
   sources: [后汉书·董卓传]
+
+- id: caocao-chenliu-189
+  related_dynasties: [donghan]
+  date: "0189"
+  title: 曹操在陈留起兵讨董
+  category: 战争
+  tags: [东汉末年, 讨董, 陈留]
+  importance: 4
+  summary: 曹操离开董卓控制下的洛阳后到达陈留，散出家财、联合义兵，准备讨伐董卓，并于当年冬季起兵。
+  confidence: 有争议
+  dispute: |
+    《三国志·武帝纪》记曹操至陈留散家财、合义兵及冬十二月起兵于己吾；部众规模和资助细节见裴松之注引材料，
+    本条只采用中平六年的年份级纪年，不把后来的关东联军行动全部归入同一节点。
+  sources: [三国志·武帝纪]
+
+- id: wangyun-lvbu-192
+  related_dynasties: [donghan]
+  date: "0192"
+  title: 王允联吕布诛杀董卓
+  category: 政治
+  tags: [东汉末年, 董卓, 宫廷政变]
+  importance: 4
+  summary: 司徒王允与吕布、士孙瑞密谋诛杀董卓，吕布等人在宫门设伏并杀死董卓，董卓控制朝政的局面暂告结束。
+  confidence: 有争议
+  dispute: |
+    《后汉书·董卓列传》将事件系于初平三年四月，并记王允、吕布、士孙瑞的谋划；宫门对话、预兆和行刺细节属于传世纪传叙事，
+    本条只采用公元192年的年份级锚点，不把农历月日直接换算为公历日期。
+  sources: [后汉书·董卓列传]
+
+- id: xiandi-moves-xu-196
+  related_dynasties: [donghan]
+  date: "0196"
+  title: 汉献帝迁都许县
+  category: 政治
+  tags: [东汉末年, 许都, 曹操]
+  importance: 5
+  summary: 曹操迎汉献帝至洛阳并掌录尚书事；因洛阳残破，朝廷随后迁往许县，曹操由此取得以朝廷名义号令诸侯的政治优势。
+  confidence: 有争议
+  dispute: |
+    《三国志·武帝纪》记建安元年曹操迎帝、洛阳残破、董昭等劝都许及车驾东行；“挟天子以令诸侯”是后世概括，
+    迁都决策、献帝自主程度和曹操政治动机不能简化为单一确定因果，本条只采用公元196年。
+  sources: [三国志·武帝纪]
+
+- id: caocao-tuntian-196
+  related_dynasties: [donghan, wei]
+  date: "0196"
+  title: 曹操在许下始兴屯田
+  category: 经济
+  tags: [东汉末年, 屯田, 农业, 曹操]
+  importance: 5
+  summary: 曹操采用枣祗、韩浩等人的建议，在许县一带招募百姓屯田；此后设置田官推广屯田，为持续征战提供粮食基础。
+  confidence: 有争议
+  dispute: |
+    《三国志·武帝纪》正文明确记建安元年“始兴屯田”；许下民屯、州郡设置田官及其粮运效果见裴松之注引《魏书》。
+    本条以公元196年为制度起点，不把注文所述的后续推广压缩成当年一次完成，也不据此概括全部曹魏土地制度。
+  sources: [三国志·武帝纪及裴松之注引魏书]
+
+- id: yidai-edict-199
+  related_dynasties: [donghan]
+  date: "0199"
+  title: 董承受衣带诏，密谋诛曹操
+  category: 政治
+  tags: [东汉末年, 衣带诏, 董承]
+  importance: 4
+  summary: 《三国志·先主传》载董承受汉献帝衣带中的密诏，随后与刘备、种辑、吴子兰、王子服等谋划诛杀曹操，事情未成便败露。
+  confidence: 有争议
+  dispute: |
+    衣带密诏的基本叙事见《三国志·先主传》，但密诏原文、载体形式、献帝授意过程和参与者具体分工没有独立同时代文本可核；
+    本条按建安四年采用公元199年的年份级锚点，不沿用后世文学扩展情节。
+  sources: [三国志·先主传]
 
 
 - id: qingmei-zhujiu
@@ -404,13 +636,17 @@
   sources: [三国志·关羽传]
 
 - id: guandu-zhizhan
-  date: "0200-10"
-  title: 官渡之战，许攸投曹夜袭乌巢
+  related_dynasties: [donghan]
+  date: "0200"
+  title: 官渡之战，曹操袭击乌巢
   category: 战争
-  tags: [决定性战役, 曹操]
+  tags: [东汉末年, 曹操, 袁绍]
   importance: 5
-  summary: 曹操与袁绍相持于官渡，采纳许攸奇计亲率精骑奇袭乌巢烧毁袁军粮草，以少胜多击败袁绍奠定北方统一。
-  confidence: 确定
+  summary: 曹操与袁绍在官渡一带长期对峙；许攸离开袁绍后向曹操建议袭击粮屯，曹操率军攻破淳于琼守卫的乌巢，袁绍军随后溃退。袁氏势力仍延续数年，北方格局并非在此战后立即统一。
+  confidence: 有争议
+  dispute: |
+    《三国志·武帝纪》记建安五年官渡对峙、许攸来奔、乌巢袭击和袁绍败退；裴松之已质疑曹军“不满万”等兵力记载，
+    斩杀数字、许攸献策细节和“以少胜多”的固定概括也依赖不同传世材料。本条只采用公元200年，不把农历冬十月直接写作公历月份。
   sources: [三国志·武帝纪]
 
 

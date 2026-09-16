@@ -1,0 +1,331 @@
+# 春秋战国不是单一王朝。这里按主要诸侯国收录代表君主，供周朝详情页
+# 展示政治格局；这些记录不进入周天子世系，也不进入时间线中轴。
+
+- id: chunqiu-qi
+  period: chunqiu
+  name: 齐
+  capital: 临淄
+  summary: 姜姓诸侯国。管仲改革后率先称霸，是春秋会盟政治的重要主导者。
+  sources: [左传, 史记·齐太公世家]
+  rulers:
+    - title: 齐桓公
+      name: 姜小白
+      reign_start: "-0685"
+      reign_end: "-0643"
+      tags: [春秋首霸]
+      note: 任用管仲改革，以尊王攘夷号召诸侯，多次主持会盟。
+    - title: 齐景公
+      name: 姜杵臼（chǔ jiù）
+      reign_start: "-0547"
+      reign_end: "-0490"
+      tags: [齐国君主]
+      note: 在位时间较长，任用晏婴；晚年齐国内部卿族势力上升。
+
+- id: chunqiu-jin
+  period: chunqiu
+  name: 晋
+  capital: 绛、新田
+  summary: 春秋中期最强势的中原诸侯之一，长期与楚国争霸，后被韩赵魏三家瓜分。
+  sources: [左传, 史记·晋世家]
+  rulers:
+    - title: 晋文公
+      name: 姬重耳
+      reign_start: "-0636"
+      reign_end: "-0628"
+      tags: [春秋霸主]
+      note: 流亡十九年后返国即位，城濮之战击败楚军并主持践土之盟。
+    - title: 晋襄公
+      name: 姬欢
+      reign_start: "-0627"
+      reign_end: "-0621"
+      tags: [晋国君主]
+      note: 延续文公霸业，在殽之战击败秦军，维持晋国中原优势。
+    - title: 晋悼公
+      name: 姬周
+      reign_start: "-0573"
+      reign_end: "-0558"
+      tags: [复霸]
+      note: 整顿内政、和戎用贤，使晋国一度恢复诸侯盟主地位。
+
+- id: chunqiu-chu
+  period: chunqiu
+  name: 楚
+  capital: 郢
+  summary: 长江中游强国，以王号自立并持续北上，与晋国构成春秋争霸主轴。
+  sources: [左传, 史记·楚世家]
+  rulers:
+    - title: 楚成王
+      name: 熊恽（yùn）
+      reign_start: "-0671"
+      reign_end: "-0626"
+      tags: [楚国君主]
+      note: 扩张楚国势力并与齐、宋、晋周旋，城濮战败后仍保有南方实力。
+    - title: 楚庄王
+      name: 熊旅
+      reign_start: "-0613"
+      reign_end: "-0591"
+      tags: [春秋霸主]
+      note: 问鼎中原，在邲之战击败晋军，使楚国霸业达到高峰。
+    - title: 楚共王
+      name: 熊审
+      reign_start: "-0590"
+      reign_end: "-0560"
+      tags: [楚国君主]
+      note: 鄢陵之战败于晋国，仍维持楚国对南方和部分中原诸侯的影响。
+
+- id: chunqiu-qin
+  period: chunqiu
+  name: 秦
+  capital: 雍
+  summary: 据有关中西部，受晋国阻隔后转向经营西戎，为战国时期东进积累基础。
+  sources: [左传, 史记·秦本纪]
+  rulers:
+    - title: 秦穆公
+      name: 嬴任好
+      reign_start: "-0659"
+      reign_end: "-0621"
+      tags: [春秋霸主]
+      note: 任用百里奚等人，介入晋国内政；东进受阻后称霸西戎。
+    - title: 秦康公
+      name: 嬴罃（yīng）
+      reign_start: "-0620"
+      reign_end: "-0609"
+      tags: [秦国君主]
+      note: 继续与晋国争夺河西，秦晋关系由婚姻联盟转向长期战争。
+    - title: 秦景公
+      name: 嬴后伯车
+      reign_start: "-0576"
+      reign_end: "-0537"
+      tags: [秦国君主]
+      note: 在位近四十年，维持秦国在西方诸侯中的强国地位。
+
+- id: chunqiu-song
+  period: chunqiu
+  name: 宋
+  capital: 商丘
+  summary: 商王室后裔建立的诸侯国，地处中原交通要冲，宋襄公曾试图主持诸侯秩序。
+  sources: [左传, 史记·宋微子世家]
+  rulers:
+    - title: 宋襄公
+      name: 子兹甫
+      reign_start: "-0650"
+      reign_end: "-0637"
+      tags: [春秋五霸之一说]
+      note: 齐桓公死后争取盟主地位，泓水之战坚持旧礼而败于楚军。
+
+- id: chunqiu-wu
+  period: chunqiu
+  name: 吴
+  capital: 姑苏
+  summary: 春秋晚期东南强国，借助伍子胥、孙武整军，曾攻破楚都郢。
+  sources: [左传, 史记·吴太伯世家]
+  rulers:
+    - title: 吴王阖闾（hé lǘ）
+      name: 姬光
+      reign_start: "-0514"
+      reign_end: "-0496"
+      tags: [春秋霸主]
+      note: 任用伍子胥、孙武，柏举之战后攻入楚都郢。
+    - title: 吴王夫差（fū chāi）
+      name: 姬夫差
+      reign_start: "-0495"
+      reign_end: "-0473"
+      tags: [吴国末代君主]
+      note: 夫椒之战败越后北上争霸，最终被复兴的越国攻灭。
+
+- id: chunqiu-yue
+  period: chunqiu
+  name: 越
+  capital: 会稽
+  summary: 钱塘江流域强国，勾践灭吴后北上会盟，是春秋战国之际的重要力量。
+  sources: [国语·越语, 史记·越王勾践世家]
+  rulers:
+    - title: 越王允常
+      name: 姒允常
+      reign_start: "-0510"
+      reign_end: "-0497"
+      tags: [越国君主]
+      note: 与吴国长期交战，为勾践继位后的吴越争霸留下政治格局。
+      confidence: 有争议
+    - title: 越王勾践
+      name: 姒鸠浅（jiū qiǎn）
+      reign_start: "-0496"
+      reign_end: "-0464"
+      tags: [春秋霸主]
+      note: 兵败后休养生息，最终灭吴并北上会盟；在位跨越本项目春秋、战国分界。
+
+- id: zhanguo-qin
+  period: zhanguo
+  name: 秦
+  capital: 栎阳、咸阳
+  summary: 商鞅变法后形成高效军政体系，逐步兼并六国，最终完成统一。
+  sources: [史记·秦本纪, 史记·秦始皇本纪]
+  rulers:
+    - title: 秦孝公
+      name: 嬴渠梁
+      reign_start: "-0361"
+      reign_end: "-0338"
+      tags: [变法]
+      note: 任用商鞅推行变法，使秦国国力和军事实力显著增强。
+    - title: 秦惠文王
+      name: 嬴驷（sì）
+      reign_start: "-0338"
+      reign_end: "-0311"
+      tags: [秦国首位称王]
+      note: 处死商鞅但保留新法，任用张仪连横，继续向巴蜀和关东扩张。
+    - title: 秦昭襄王
+      name: 嬴稷（jì）
+      reign_start: "-0306"
+      reign_end: "-0251"
+      tags: [兼并战争]
+      note: 在位五十余年，任用白起发动伊阙、鄢郢、长平等大战。
+    - title: 秦王政
+      name: 嬴政
+      reign_start: "-0246"
+      reign_end: "-0221"
+      tags: [统一六国]
+      note: 前221年灭齐完成统一，随后改称始皇帝；此处只列其战国秦王阶段。
+
+- id: zhanguo-chu
+  period: zhanguo
+  name: 楚
+  capital: 郢、陈、寿春
+  summary: 疆域广阔的南方强国，受贵族结构和秦国持续进攻影响，后期多次迁都。
+  sources: [史记·楚世家, 战国策·楚策]
+  rulers:
+    - title: 楚威王
+      name: 熊商
+      reign_start: "-0339"
+      reign_end: "-0329"
+      tags: [楚国君主]
+      note: 在位时楚国势力强盛，向长江下游和中原方向扩张。
+    - title: 楚怀王
+      name: 熊槐
+      reign_start: "-0328"
+      reign_end: "-0299"
+      tags: [合纵连横]
+      note: 在齐秦之间反复结盟，受张仪欺骗后国势转衰，最终被秦扣留。
+    - title: 楚考烈王
+      name: 熊元
+      reign_start: "-0262"
+      reign_end: "-0238"
+      tags: [迁都寿春]
+      note: 任用春申君，迁都寿春以避秦锋，维持楚国最后阶段的政治中心。
+
+- id: zhanguo-qi
+  period: zhanguo
+  name: 齐
+  capital: 临淄
+  summary: 田氏取代姜齐后建立的东方强国，稷下学宫成为百家争鸣的重要中心。
+  sources: [史记·田敬仲完世家, 战国策·齐策]
+  rulers:
+    - title: 齐威王
+      name: 田因齐
+      reign_start: "-0356"
+      reign_end: "-0320"
+      tags: [改革]
+      note: 任用邹忌、田忌、孙膑，在桂陵、马陵之战中重创魏国。
+    - title: 齐宣王
+      name: 田辟疆
+      reign_start: "-0319"
+      reign_end: "-0301"
+      tags: [稷下学宫]
+      note: 扩大稷下学宫，孟子等学者曾游说于齐，齐国文化影响达到高峰。
+    - title: 齐湣王（mǐn）
+      name: 田地
+      reign_start: "-0300"
+      reign_end: "-0284"
+      tags: [五国伐齐]
+      note: 灭宋后一度势盛，因对外扩张和外交孤立遭五国联军攻齐。
+
+- id: zhanguo-yan
+  period: zhanguo
+  name: 燕
+  capital: 蓟
+  summary: 北方诸侯国，燕昭王招贤后国力复兴，乐毅一度攻下齐国大部分城邑。
+  sources: [史记·燕召公世家, 战国策·燕策]
+  rulers:
+    - title: 燕昭王
+      name: 姬职
+      reign_start: "-0311"
+      reign_end: "-0279"
+      tags: [招贤复国]
+      note: 筑黄金台招揽人才，任用乐毅联合诸侯伐齐。
+    - title: 燕王喜
+      name: 姬喜
+      reign_start: "-0254"
+      reign_end: "-0222"
+      tags: [燕国末代君主]
+      note: 太子丹策划荆轲刺秦失败后，秦军攻破蓟城并最终灭燕。
+
+- id: zhanguo-han
+  period: zhanguo
+  name: 韩
+  capital: 阳翟、新郑
+  summary: 三家分晋后建立，处在列强夹缝和战略要冲，是七雄中最早被秦兼并者。
+  sources: [史记·韩世家, 战国策·韩策]
+  rulers:
+    - title: 韩昭侯
+      name: 韩武
+      reign_start: "-0362"
+      reign_end: "-0333"
+      tags: [申不害变法]
+      note: 任用申不害整顿吏治和君主驾驭官僚之术，使韩国短期强盛。
+    - title: 韩王安
+      name: 韩安
+      reign_start: "-0238"
+      reign_end: "-0230"
+      tags: [韩国末代君主]
+      note: 面对秦国持续进攻无力抵御，前230年被俘，韩国灭亡。
+
+- id: zhanguo-zhao
+  period: zhanguo
+  name: 赵
+  capital: 邯郸
+  summary: 三家分晋后建立，胡服骑射改革后军力强盛，长平之战后元气大伤。
+  sources: [史记·赵世家, 战国策·赵策]
+  rulers:
+    - title: 赵武灵王
+      name: 赵雍
+      reign_start: "-0325"
+      reign_end: "-0299"
+      tags: [胡服骑射]
+      note: 改穿胡服、发展骑兵并灭中山国，退位后在沙丘之乱中身亡。
+    - title: 赵惠文王
+      name: 赵何
+      reign_start: "-0298"
+      reign_end: "-0266"
+      tags: [将相和]
+      note: 任用廉颇、蔺相如等人，在秦赵对抗加剧时维持赵国实力。
+    - title: 赵孝成王
+      name: 赵丹
+      reign_start: "-0265"
+      reign_end: "-0245"
+      tags: [长平之战]
+      note: 在位时发生长平之战和邯郸保卫战，赵国由盛转衰。
+
+- id: zhanguo-wei
+  period: zhanguo
+  name: 魏
+  capital: 安邑、大梁
+  summary: 三家分晋后率先变法强盛，战国前期居于优势，后在齐秦夹击下衰落。
+  sources: [史记·魏世家, 战国策·魏策]
+  rulers:
+    - title: 魏文侯
+      name: 魏斯
+      reign_start: "-0445"
+      reign_end: "-0396"
+      tags: [战国初霸]
+      note: 任用李悝、吴起、西门豹等人改革，是战国初期最强诸侯之一。
+    - title: 魏惠王
+      name: 魏罃（yīng）
+      reign_start: "-0370"
+      reign_end: "-0319"
+      tags: [迁都大梁]
+      note: 迁都大梁并率先称王，桂陵、马陵接连败于齐国后优势下降。
+    - title: 魏安釐王（xī）
+      name: 魏圉（yǔ）
+      reign_start: "-0276"
+      reign_end: "-0243"
+      tags: [信陵君]
+      note: 在位时信陵君窃符救赵并合纵抗秦，魏国仍难扭转衰势。

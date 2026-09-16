@@ -8,6 +8,50 @@
   confidence: 确定
   sources: [旧唐书·高祖纪]
 
+- id: taiyuan-uprising-0617
+  date: "0617"
+  title: 李渊太原起兵
+  category: 政治
+  tags: [隋末, 唐朝, 政权更替]
+  importance: 5
+  summary: 大业十三年，李渊在太原起兵，诛王威、高君雅，遣使联络突厥并西图关中，唐政权由此进入公开建国进程。
+  confidence: 确定
+  related_dynasties: [sui, tang]
+  sources: [旧唐书·高祖纪]
+
+- id: hulao-unification-0621
+  date: "0621"
+  title: 虎牢之战，唐统一中原
+  category: 战争
+  tags: [唐朝, 隋末, 统一战争]
+  importance: 5
+  summary: 武德四年，李世民在虎牢击破窦建德援军，王世充据守的洛阳随之陷入绝境，唐统一中原的关键战局确定。
+  confidence: 确定
+  related_dynasties: [tang]
+  sources: [旧唐书·太宗纪]
+
+- id: lijing-tujue-0630
+  date: "0630"
+  title: 李靖阴山袭击，东突厥覆亡
+  category: 战争
+  tags: [唐朝, 突厥, 边疆]
+  importance: 5
+  summary: 贞观四年，李靖率精骑自白道袭击颉利牙帐，东突厥部众溃散，颉利被擒，唐朝北部边疆格局由此改写。
+  confidence: 确定
+  related_dynasties: [tang]
+  sources: [旧唐书·李靖传]
+
+- id: tang-land-tax-service-0624
+  date: "0624"
+  title: 唐定均田与租庸调法
+  category: 经济
+  tags: [制度, 均田, 租庸调, 户籍]
+  importance: 5
+  summary: 武德七年唐定田令与赋役法，按丁口授田并征租、调、役，配合户籍和乡里编制组织国家财政与基层治理。
+  confidence: 确定
+  related_dynasties: [tang]
+  sources: [旧唐书·食货志]
+
 - id: xuanwu-626
   date: "0626"
   title: 玄武门之变，翌年改元贞观
@@ -110,6 +154,65 @@
   confidence: 确定
   sources: [旧唐书·玄宗纪]
 
+- id: yanzhaoqing-hebei-resistance-0755
+  date: "0755"
+  title: 颜杲卿起兵常山，河北响应
+  category: 战争
+  tags: [安史之乱, 河北, 抵抗]
+  importance: 5
+  summary: 颜杲卿在常山诛杀安禄山部将并联络河北郡县，常山、平原等地一度响应，牵制安禄山西进。
+  confidence: 有争议
+  dispute: 《旧唐书·颜杲卿传》详细记载起兵、河北响应及常山失守，但其中军报数字和忠烈叙事带有传记修辞；此处只保留起兵与区域响应的基本过程。
+  related_dynasties: [tang]
+  sources: [旧唐书·颜杲卿传]
+
+- id: mawei-mutiny-0756
+  date: "0756-06"
+  title: 马嵬驿兵变
+  category: 政治
+  tags: [安史之乱, 政变]
+  importance: 5
+  summary: 天宝十五载，玄宗西行至马嵬驿，禁军诛杨国忠并迫使贵妃自尽，太子李亨随后与玄宗分道，唐廷权力结构发生转折。
+  confidence: 确定
+  related_dynasties: [tang]
+  sources: [旧唐书·玄宗纪]
+
+- id: zhangxun-suanyang-0757
+  date: "0757-10"
+  title: 张巡守睢阳
+  category: 战争
+  tags: [安史之乱, 城防, 睢阳]
+  importance: 5
+  summary: 至德二年，张巡与许远守睢阳，长期抵御尹子奇围攻；城中粮尽、援军不至，至十月城陷，守军仍未改志。
+  confidence: 有争议
+  dispute: 《旧唐书·张巡传》同时记载守城、食尽和城陷过程，其中杀妾、食人等细节具有强烈叙事和伦理争议；此处只保留围城、缺粮与城陷基本过程。
+  related_dynasties: [tang]
+  sources: [旧唐书·张巡传]
+
+- id: nanjiyun-seek-aid-0757
+  date: "0757"
+  title: 南霁云出睢阳求援
+  category: 战争
+  tags: [安史之乱, 睢阳, 援军]
+  importance: 4
+  summary: 睢阳被围、粮食将尽时，南霁云夜间缒城赴临淮求援；贺兰进明拒绝出兵，南霁云返回睢阳继续守城。
+  confidence: 有争议
+  dispute: 《旧唐书·张巡传》记载南霁云陈词并断指明志，基本求援过程可据；断指等戏剧性细节仅作为传世纪传叙事，不写入摘要。
+  related_dynasties: [tang]
+  sources: [旧唐书·张巡传]
+
+- id: liguangbi-heyang-defense-0761
+  date: "0761"
+  title: 李光弼据守河阳三城
+  category: 战争
+  tags: [安史之乱, 河阳, 城防]
+  importance: 5
+  summary: 史思明再度西进后，李光弼放弃难守的洛阳，转据河阳三城，依托黄河与城防击退进攻，暂阻叛军逼近关中。
+  confidence: 有争议
+  dispute: 《旧唐书·李光弼传》以乾元后连续叙事记载移军河阳和城战，未在该段逐事标出公历日期；此处采用约定年份展示，不补造具体月日。
+  related_dynasties: [tang]
+  sources: [旧唐书·李光弼传]
+
 - id: guoziyi-huihe
   date: "0765"
   title: 郭子仪单骑见回纥
@@ -119,6 +222,30 @@
   summary: 吐蕃与回纥联合犯边，年近七旬的老将郭子仪单骑入回纥军营脱帽与汗相见，回纥退兵并反戈击吐蕃。
   confidence: 确定
   sources: [旧唐书·郭子仪传]
+
+- id: duanxiushi-jingyuan-0783
+  date: "0783"
+  title: 段秀实反击朱泚
+  category: 政治
+  tags: [泾原兵变, 宫廷政变, 忠烈叙事]
+  importance: 5
+  summary: 泾原兵变后，朱泚据长安并逼近奉天，段秀实在议事时夺笏击伤朱泚，因未获同谋响应而遇害。
+  confidence: 有争议
+  dispute: 《旧唐书·段秀实传》记载建中四年密谋、击朱泚及遇害过程；击额、夺象笏等细节属于传记叙事，此处保留基本政变过程并降低置信度。
+  related_dynasties: [tang]
+  sources: [旧唐书·段秀实传]
+
+- id: lisheng-recapture-changan-0784
+  date: "0784-06"
+  title: 李晟收复长安
+  category: 战争
+  tags: [泾原兵变, 长安, 唐德宗]
+  importance: 5
+  summary: 兴元元年，李晟率军击败朱泚部众并收复长安，约束军队不扰市肆，唐廷重新取得京城。
+  confidence: 确定
+  dispute: 《旧唐书·李晟传》记为兴元元年六月，日期为传统纪年月份；此处不将其直接换算为公历月日。
+  related_dynasties: [tang]
+  sources: [旧唐书·李晟传]
 
 
 
@@ -130,6 +257,29 @@
   summary: 宰相杨炎废租庸调，行两税法，按资产征税、分夏秋两征，为唐后期财政之基。
   confidence: 确定
   sources: [旧唐书·食货志]
+
+- id: lisu-ping-huaixi-0817
+  date: "0817"
+  title: 李愬雪夜下蔡州
+  category: 战争
+  tags: [藩镇, 淮西, 平叛]
+  importance: 5
+  summary: 元和十二年，李愬率军乘雪夜袭入蔡州，擒淮西节度使吴元济，淮西割据由此平定。
+  confidence: 确定
+  related_dynasties: [tang]
+  sources: [旧唐书·李愬传]
+
+- id: ganlu-incident-0835
+  date: "0835"
+  title: 甘露事件，宦官诛杀朝臣
+  category: 政治
+  tags: [宦官, 牛李党争, 政变]
+  importance: 5
+  summary: 唐文宗朝李训、郑注谋诛宦官，借观甘露之名发动政变，事败后仇士良等诛杀王涯、贾餗、舒元舆等朝臣，宦官控制进一步加强。
+  confidence: 确定
+  dispute: 《旧唐书·文宗纪》记载甘露事件发生于太和九年十一月；此处使用年份级展示，不将传统纪年月份直接换算为公历日期。
+  related_dynasties: [tang]
+  sources: [旧唐书·文宗纪]
 
 - id: huichang-845
   date: "0845"
@@ -148,4 +298,3 @@
   summary: 黄巢起义军转战千里攻陷长安，唐僖宗逃蜀，黄巢登基建大齐，留「待到秋来九月八，冲天香阵透长安」之名句。
   confidence: 确定
   sources: [旧唐书·黄巢传]
-

@@ -72,8 +72,9 @@ describe('商朝内容完善', () => {
     }
   })
 
-  it('详情页优先按显式朝代关联筛选人物', () => {
+  it('详情页优先按显式朝代关联并支持时期分组', () => {
     const dynastyPage = fs.readFileSync(path.join(ROOT, 'src/pages/dynasty/[id].astro'), 'utf8')
-    expect(dynastyPage).toContain('figure.related_dynasties?.length ? isRelated(figure) : overlaps')
+    expect(dynastyPage).toContain('related.includes(period.id)')
+    expect(dynastyPage).toContain('lineageRelated && overlaps')
   })
 })

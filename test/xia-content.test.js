@@ -48,9 +48,11 @@ describe('夏朝内容完善', () => {
 
   it('君王交接使用箭头，并在右侧展示可跳转的简介卡', () => {
     const axisCell = fs.readFileSync(path.join(ROOT, 'src/components/AxisCell.astro'), 'utf8')
+    const rulerTransitions = fs.readFileSync(path.join(ROOT, 'src/lib/rulerTransitions.js'), 'utf8')
     const timeline = fs.readFileSync(path.join(ROOT, 'src/components/Timeline.astro'), 'utf8')
     const rulerCard = fs.readFileSync(path.join(ROOT, 'src/components/RulerCard.astro'), 'utf8')
-    expect(axisCell).toContain('previous.temple_name} → ${next.temple_name')
+    expect(axisCell).toContain('buildRulerTransitions(startingRulers, endingRulers)')
+    expect(rulerTransitions).toContain('previous.temple_name} → ${next.temple_name')
     expect(timeline).toContain('<RulerCard ruler={ruler} />')
     expect(rulerCard).toContain('ruler.note')
     expect(rulerCard).toContain('查看世系')
@@ -127,7 +129,7 @@ describe('夏朝内容完善', () => {
 
   it('夏朝详情页展示历任帝王、重要人物和完整重要事件', () => {
     const dynastyPage = fs.readFileSync(path.join(ROOT, 'src/pages/dynasty/[id].astro'), 'utf8')
-    expect(dynastyPage).toContain('related_dynasties?.some')
+    expect(dynastyPage).toContain('const related = figure.related_dynasties ?? []')
     expect(dynastyPage).toContain('class="dynasty-section dynasty-rulers"')
     expect(dynastyPage).toContain('class="dynasty-section dynasty-figures"')
     expect(dynastyPage).toContain('class="dynasty-section dynasty-events"')

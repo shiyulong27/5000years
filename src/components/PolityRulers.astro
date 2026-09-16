@@ -1,0 +1,61 @@
+---
+import { yearOf } from '../lib/date.js'
+
+const { period, polities } = Astro.props
+
+const fmt = (date) => {
+  const year = yearOf(date)
+  return year < 0 ? `前${Math.abs(year)}` : String(year)
+}
+---
+
+<section class="dynasty-section polity-section" id={`period-${period.id}`} data-period={period.id}>
+  <h2 class="section-title">{period.name} · 主要诸侯国</h2>
+  <p class="section-note">
+    按国家列出影响时代格局的代表君主；这不是把诸侯并入周王世系，也不是各国完整君主表。
+  </p>
+
+  <div class="polity-list">
+    {polities.map((polity) => (
+      <article class="polity-block" id={`polity-${polity.id}`}>
+        <header class="polity-profile">
+          <p class="polity-period">{period.name}</p>
+          <h3>{polity.name}</h3>
+          {polity.capital && <p class="polity-capital">都城　{polity.capital}</p>}
+          <p class="polity-summary">{polity.summary}</p>
+          <p class="polity-sources">据 {polity.sources?.join('、')}</p>
+        </header>
+
+        <div class="polity-rulers-wrap">
+          <table class="polity-rulers-table">
+            <thead>
+              <tr>
+                <th>君主</th>
+                <th>姓名</th>
+                <th>在位</th>
+                <th>定位</th>
+                <th>简介</th>
+              </tr>
+            </thead>
+            <tbody>
+              {polity.rulers.map((ruler) => (
+                <tr>
+                  <td class="polity-ruler-title">{ruler.title}</td>
+                  <td>{ruler.name}</td>
+                  <td class="polity-ruler-reign">{fmt(ruler.reign_start)}–{fmt(ruler.reign_end)}</td>
+                  <td class="polity-ruler-tags">
+                    {ruler.tags?.map((tag) => <span>{tag}</span>)}
+                  </td>
+                  <td class="polity-ruler-note">
+                    {ruler.note}
+                    {ruler.confidence && <small>{ruler.confidence}</small>}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

@@ -4,8 +4,19 @@
   reign_start: "1636"
   reign_end: "1643"
   era_names: [崇德]
-  note: 改国号大清，定族名为满洲
+  tags: [帝王]
+  note: 1636年改国号大清、定族名满洲，建立八旗满蒙汉体制与中央官制
   role: founder
+  confidence: 确定
+
+- dynasty: qing
+  temple_name: 清世祖
+  name: 爱新觉罗·福临
+  reign_start: "1643"
+  reign_end: "1661"
+  era_names: [顺治]
+  tags: [帝王]
+  note: 1644年多尔衮辅政引清兵入关定鼎北京，顺治帝迁都中原确立全国统治格局
   confidence: 确定
 
 - dynasty: qing
@@ -14,7 +25,78 @@
   reign_start: "1661"
   reign_end: "1722"
   era_names: [康熙]
-  note: 擒鳌拜、平三藩、收台湾、亲征噶尔丹，开创康乾盛世
+  tags: [帝王]
+  note: 智擒鳌拜、平定三藩、统一台湾、签订《尼布楚条约》、亲征噶尔丹，开创康乾盛世
+  confidence: 确定
+
+- dynasty: qing
+  temple_name: 清世宗
+  name: 爱新觉罗·胤禛
+  reign_start: "1722"
+  reign_end: "1735"
+  era_names: [雍正]
+  tags: [帝王]
+  note: 推行摊丁入亩、火耗归公、改土归流，设立军机处与驻藏大臣，君主专制达到顶峰
+  confidence: 确定
+
+- dynasty: qing
+  temple_name: 清高宗
+  name: 爱新觉罗·弘历
+  reign_start: "1735"
+  reign_end: "1796"
+  era_names: [乾隆]
+  tags: [帝王]
+  note: 平定准噶尔与大小和卓叛乱，统一新疆，编纂《四库全书》，确立金瓶掣签制度，康乾盛世达顶峰
+  confidence: 确定
+
+- dynasty: qing
+  temple_name: 清仁宗
+  name: 爱新觉罗·颙琰
+  reign_start: "1796"
+  reign_end: "1820"
+  era_names: [嘉庆]
+  tags: [帝王]
+  note: 惩治权臣和珅，平定川楚白莲教起义，整肃纲纪但未能遏止清朝由盛转衰
+  confidence: 确定
+
+- dynasty: qing
+  temple_name: 清宣宗
+  name: 爱新觉罗·旻宁
+  reign_start: "1820"
+  reign_end: "1850"
+  era_names: [道光]
+  tags: [帝王]
+  note: 厉行节俭，经历第一次鸦片战争并签署《南京条约》，中国近代半殖民地半封建历史开端
+  confidence: 确定
+
+- dynasty: qing
+  temple_name: 清文宗
+  name: 爱新觉罗·奕詝
+  reign_start: "1850"
+  reign_end: "1861"
+  era_names: [咸丰]
+  tags: [帝王]
+  note: 遭遇太平天国起义与第二次鸦片战争，英法联军火烧圆明园，签订中俄中英中法《北京条约》
+  confidence: 确定
+
+- dynasty: qing
+  temple_name: 清穆宗
+  name: 爱新觉罗·载淳
+  reign_start: "1861"
+  reign_end: "1875"
+  era_names: [同治]
+  tags: [帝王]
+  note: 辛酉政变后两宫太后垂帘听政，奕訢、曾国藩、李鸿章推行洋务运动，平定太平天国与捻军
+  confidence: 确定
+
+- dynasty: qing
+  temple_name: 清德宗
+  name: 爱新觉罗·载湉
+  reign_start: "1875"
+  reign_end: "1908"
+  era_names: [光绪]
+  tags: [帝王]
+  note: 经历中法战争、甲午海战，支持康梁百日维新，政变后遭慈禧太后幽禁，经历八国联军侵华与《辛丑条约》
   confidence: 确定
 
 - dynasty: qing
@@ -23,6 +105,7 @@
   reign_start: "1908"
   reign_end: "1912"
   era_names: [宣统]
-  note: 中国封建王朝末代皇帝，辛亥革命后退位
+  tags: [帝王]
+  note: 中国两千余年封建君主专制末代皇帝，辛亥革命爆发后于1912年2月12日颁布退位诏书
   role: last
   confidence: 确定

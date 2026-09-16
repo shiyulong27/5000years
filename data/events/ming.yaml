@@ -1,3 +1,61 @@
+- id: xu-guangqi-western-learning-1629
+  date: '1629'
+  title: 徐光启推进西学与历法改革
+  category: 文化
+  importance: 4
+  summary: 徐光启参与修历并组织翻译西方数学、天文学著作，推动晚明中西知识交流与历法改革。
+  confidence: 有争议
+  dispute: 西学传播与修历活动跨越多年，1629年为崇祯初修历阶段锚点，不把单一译书年份绝对化。
+  related_dynasties: [ming]
+  tags: [明, 西学, 历法, 徐光启]
+  sources: [明史·徐光启传, 崇祯历书]
+
+- id: five-tombs-1626
+  date: '1626'
+  title: 苏州五人墓事件
+  category: 政治
+  importance: 4
+  summary: 苏州民众反对税监和地方权势引发冲突，颜佩韦等五人遇害，后世以“五人墓”纪念其抗争。
+  confidence: 有争议
+  dispute: 事件人物、日期和地方冲突经过主要见墓志与明末文献，本条不把《五人墓碑记》的修辞直接当作完整案情。
+  related_dynasties: [ming]
+  tags: [明末, 苏州, 社会抗争]
+  sources: [五人墓碑记, 明史·周顺昌传]
+
+- id: zuo-guangdou-imprisoned-1625
+  date: '1625'
+  title: 左光斗下狱
+  category: 政治
+  importance: 4
+  summary: 魏忠贤专权时期，东林重臣左光斗被捕下狱并死于狱中，反映天启年间宦官与言官集团的冲突。
+  confidence: 确定
+  related_dynasties: [ming]
+  tags: [明末, 东林党, 魏忠贤]
+  sources: [明史·左光斗传, 明史·魏忠贤传]
+
+- id: po-yang-lake-1363
+  date: "1363"
+  title: 鄱阳湖大战
+  category: 战争
+  tags: [元末, 朱元璋, 陈友谅]
+  importance: 5
+  summary: 朱元璋与陈友谅在鄱阳湖展开大规模水战，陈友谅战败身亡，长江中游的竞争格局转向朱元璋占优。
+  confidence: 确定
+  dispute: 战事持续数月且包含多次交锋，本事件以1363年决战阶段概括，不将后世兵法故事写成史实。
+  sources: [明史·太祖纪, 明史·陈友谅传]
+
+- id: hu-weiyong-case-1380
+  date: "1380"
+  title: 胡惟庸案与废除丞相
+  category: 政治
+  tags: [明初, 中央集权, 官制]
+  importance: 5
+  summary: 胡惟庸案发生后，朱元璋废除中书省和丞相职位，权力改由六部直接承接，明初中央行政结构随之重组。
+  confidence: 确定
+  dispute: 案件牵连范围和“谋反”叙述受明代政治书写影响；本事件只确认案件与官制变动的先后关系。
+  related_dynasties: [ming]
+  sources: [明史·太祖纪, 明史·胡惟庸传]
+
 - id: ming-1368
   date: "1368-01"
   title: 朱元璋称帝，明朝建立
@@ -65,6 +123,29 @@
   confidence: 确定
   sources: [明史·于谦传]
 
+- id: yang-yiquan-li-jin-1510
+  date: "1510"
+  title: 杨一清参与处置刘瑾
+  category: 政治
+  tags: [明, 宦官, 朝政]
+  importance: 4
+  summary: 刘瑾专权集团失势后，杨一清等大臣参与处置其党羽，正德初年的宦官政治转折由此显现。
+  confidence: 有争议
+  dispute: 杨一清在处置过程中的具体作用与后世叙述有差异；不采用“计除”作为无争议事实标题。
+  related_dynasties: [ming]
+  sources: [明史·武宗纪, 明史·杨一清传, 明史·刘瑾传]
+
+- id: yang-jisheng-impeach-1553
+  date: "1553"
+  title: 杨继盛上疏弹劾严嵩
+  category: 政治
+  tags: [明, 嘉靖朝, 言官]
+  importance: 4
+  summary: 杨继盛任兵部员外郎期间上疏弹劾严嵩，因言获罪并长期下狱，反映嘉靖朝权力与言官冲突。
+  confidence: 确定
+  related_dynasties: [ming]
+  sources: [明史·杨继盛传, 明史·严嵩传]
+
 - id: qijiguang-wokou
   date: "1561"
   title: 戚继光台州大捷，抗击倭寇
@@ -125,6 +206,41 @@
   confidence: 确定
   sources: [明史·徐霞客传]
 
+- id: luxiangsheng-julu-1639
+  date: '1639'
+  title: 卢象升战死巨鹿
+  category: 战争
+  importance: 4
+  summary: 明将卢象升率军在巨鹿一带与清军作战，战败阵亡，晚明边防与勤王军事体系进一步受挫。
+  confidence: 有争议
+  dispute: 卢象升战死地点、战斗过程和“孤军奋战”等细节在不同记载中有差异，本条只确认其于 1639 年清军南下战事中阵亡。
+  related_dynasties: [ming]
+  tags: [明末, 卢象升, 巨鹿, 清军南下]
+  sources: [明史·卢象升传, 明季北略]
+
+- id: zhangxianzhong-xiangyang-1641
+  date: '1641'
+  title: 张献忠攻占襄阳
+  category: 战争
+  importance: 4
+  summary: 张献忠部在明末流寇战争中攻占襄阳，长江中游和湖广地区的军事与政权竞争进一步激化。
+  confidence: 有争议
+  dispute: 襄阳攻占的具体月份、参战部队和地方处置在不同史料中记载不一，本条只确认其作为张献忠势力扩张阶段的结构节点。
+  related_dynasties: [ming]
+  tags: [明末, 张献忠, 襄阳, 农民战争]
+  sources: [明史·张献忠传, 明史·流贼传]
+
+- id: li-zicheng-shun-1644
+  date: '1644-01'
+  title: 李自成建立大顺政权
+  category: 政治
+  importance: 5
+  summary: 李自成在西安建立大顺政权并改元永昌，随后率军东进攻取北京，明末政权更替进入决定性阶段。
+  confidence: 确定
+  related_dynasties: [ming]
+  tags: [明末, 李自成, 大顺, 政权更替]
+  sources: [明史·李自成传, 明史·庄烈帝纪]
+
 - id: jiashen-1644
   date: "1644-03"
   title: 李自成大顺军破北京，崇祯自缢明亡
@@ -135,3 +251,38 @@
   confidence: 确定
   sources: [明史·庄烈帝纪]
 
+- id: xia-wanchun-anti-qing-1647
+  date: '1647'
+  title: 夏完淳抗清被捕
+  category: 战争
+  importance: 4
+  summary: 夏完淳参与江南抗清活动，兵败后被清军捕获并处死，成为南明覆亡后地方士绅与遗民持续抵抗的代表人物。
+  confidence: 有争议
+  dispute: 夏完淳审讯、答辩和临刑言辞多有后世文学化叙述，本条不采纳具体对话，只确认其抗清、被捕和遇害。
+  related_dynasties: [ming]
+  tags: [南明, 夏完淳, 抗清, 江南遗民]
+  sources: [明季南略, 明史纪事本末]
+
+- id: wanli-mining-tax-1596
+  date: "1596"
+  title: 万历矿税扩张
+  category: 经济
+  tags: [明, 矿税, 宦官, 社会矛盾]
+  importance: 4
+  summary: 万历年间矿税和税监派遣范围扩大，地方官民与矿税使的冲突增多，晚明财政和社会矛盾进一步显现。
+  confidence: 有争议
+  dispute: 矿税始行、扩张和各地抗争并非同一年发生；1596年为政策扩张阶段锚点，不把葛贤等地方事件合并为单一事实。
+  related_dynasties: [ming]
+  sources: [明史·神宗纪, 明史·宦官传]
+
+- id: wangyangming-xinxue-1521
+  date: "1521"
+  title: 王阳明讲学与心学传播
+  category: 文化
+  tags: [明, 心学, 王阳明]
+  importance: 4
+  summary: 王阳明在仕宦与讲学过程中系统阐发“致良知”等心学主张，门人传播使其成为明代思想的重要支流。
+  confidence: 有争议
+  dispute: 心学思想形成和讲学活动跨越多年，1521年仅作晚年讲学阶段锚点，不把后世概括当作单一制度事件。
+  related_dynasties: [ming]
+  sources: [明史·王守仁传, 传习录]

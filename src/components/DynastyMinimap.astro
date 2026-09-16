@@ -1,0 +1,23 @@
+---
+const { dynasties = [] } = Astro.props
+---
+
+<nav class="dynasty-minimap" aria-label="朝代微缩导航轨" id="dynasty-minimap">
+  <div class="minimap-track">
+    <div class="minimap-indicator" id="minimap-indicator"></div>
+    {dynasties.map((d) => (
+      <button
+        type="button"
+        class="minimap-node"
+        data-dynasty-id={d.id}
+        data-name={d.name}
+        style={`--d-color:${d.color || 'var(--accent)'}`}
+        title={`${d.name}`}
+        aria-label={`跳转至 ${d.name}`}
+      >
+        <span class="minimap-node-dot"></span>
+        <span class="minimap-node-label">{d.name}</span>
+      </button>
+    ))}
+  </div>
+</nav>

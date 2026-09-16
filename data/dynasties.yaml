@@ -52,6 +52,24 @@
   color: "#a1887f"
   parent: zhou
 
+- id: chunqiu
+  name: 春秋
+  start: "-0770"
+  end: "-0476"
+  capital: 洛邑
+  color: "#a1887f"
+  parent: dongzhou
+  summary: 周王室东迁后诸侯争霸的时期，终于战国格局形成之前。
+
+- id: zhanguo
+  name: 战国
+  start: "-0475"
+  end: "-0221"
+  capital: 洛邑
+  color: "#a1887f"
+  parent: dongzhou
+  summary: 七雄兼并、变法竞起，周王室于前256年灭亡，时代终于秦统一。
+
 - id: qin
   name: 秦
   start: "-0221"

@@ -7,11 +7,24 @@
   confidence: 确定
   sources: [隋书·高祖纪]
 
+- id: zhaochuo-law-0581
+  date: "0581"
+  title: 赵绰据法执谏
+  category: 政治
+  tags: [隋朝, 法律, 司法]
+  importance: 4
+  summary: 赵绰任大理丞、刑部侍郎期间，面对隋文帝拟重罚或误杀的命令，坚持以律法裁断并据理进谏，成为隋代司法实践的代表案例。
+  confidence: 有争议
+  dispute: 《隋书·赵绰传》完整记载其仕历与多次执法进谏，但未给每次案件的公历年份；此处以隋文帝受禅后的581年作为人物事迹展示锚点。
+  related_dynasties: [sui]
+  sources: [隋书·赵绰传]
+
 - id: sui-destroy-chen-0589
   date: "0589"
   title: 隋灭陈，天下一统
   category: 政治
   importance: 5
+  related_dynasties: [sui, chen]
   summary: 隋军攻陷建康，俘陈后主，结束近三百年南北分裂局面。
   confidence: 确定
   sources: [隋书·高祖纪]

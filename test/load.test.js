@@ -37,6 +37,7 @@ describe('loadAll', () => {
     const empty = loadAll(fileURLToPath(new URL('./fixtures/nonexistent', import.meta.url)))
     expect(empty.events).toEqual([])
     expect(empty.dynasties).toEqual([])
+    expect(empty.polities).toEqual([])
   })
 })
 

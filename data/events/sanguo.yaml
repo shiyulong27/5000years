@@ -1,32 +1,78 @@
+- id: longzhong-plan-207
+  related_dynasties: [donghan, shu]
+  date: "0207"
+  title: 刘备三顾诸葛亮，形成隆中对策
+  category: 政治
+  tags: [东汉末年, 隆中对, 诸葛亮, 刘备]
+  importance: 5
+  summary: 刘备多次前往拜访诸葛亮，诸葛亮提出避开曹操、联合孙权，并以荆州和益州为基础谋求发展的战略构想。
+  confidence: 有争议
+  dispute: |
+    《三国志·诸葛亮传》载刘备“凡三往，乃见”及其战略问答，但正文没有直接标明会见年份，且传世对话不能视为逐字实录。
+    本条沿用建安十二年即公元207年的传统系年，只作年份级锚点，不补造具体月日。
+  sources: [三国志·诸葛亮传]
+
+- id: liubei-yizhou-214
+  related_dynasties: [donghan, shu]
+  date: "0214"
+  title: 刘备取得益州
+  category: 政治
+  tags: [东汉末年, 益州, 刘备, 刘璋]
+  importance: 5
+  summary: 刘备自211年受刘璋邀请入蜀，双方随后决裂交战；214年刘备进围成都，刘璋出降，刘备领益州牧，蜀汉政权由此取得主要统治基础。
+  confidence: 确定
+  sources: [三国志·先主传]
+
+- id: lumeng-jingzhou-219
+  related_dynasties: [donghan, shu, wu]
+  date: "0219"
+  title: 吕蒙袭取荆州
+  category: 战争
+  tags: [东汉末年, 荆州, 孙刘关系, 吕蒙]
+  importance: 5
+  summary: 关羽围攻樊城时，吕蒙率军沿江伪装商旅，控制守候并进取南郡；士仁、麋芳投降，关羽回军时部众离散，荆州格局由此改变。
+  confidence: 确定
+  sources: [三国志·吕蒙传, 三国志·关羽传]
+
 - id: caozhi-qibu
-  date: "0220-11"
+  related_dynasties: [wei]
+  date: "0220"
   title: 曹植七步成诗
   category: 文化
   tags: [建安文学, 典故]
   importance: 4
-  summary: 魏文帝曹丕逼迫弟曹植七步之内作诗，曹植应声作「煮豆燃豆萁（qí），豆在釜中泣」，表达兄弟相残之悲痛。
+  summary: 《世说新语》记魏文帝曹丕命弟曹植在七步内作诗，曹植应声作煮豆诗，以同根相煎比喻兄弟相逼。
   confidence: 传说
-  dispute: 典故源自《世说新语·文学》，正史《三国志》未载，具体地点年代系传说推定。
+  dispute: |
+    典故见《世说新语·文学》，《三国志·陈思王植传》未载，且《世说新语》没有给出事件年份。
+    本条仅以曹丕于220年称帝作为传说的年份级展示锚点，不保留原有月级精度，也不把诗句视为同时代实录。
+  sources: [世说新语·文学]
 
 - id: wei-founding-220
+  related_dynasties: [donghan, wei]
   date: "0220-12-11"
   title: 曹丕称帝，魏代汉
   category: 政治
+  tags: [魏国, 汉魏禅代, 曹丕]
   importance: 5
-  summary: 汉献帝禅位于曹丕，东汉终，三国鼎立之局正式形成。
+  summary: 汉献帝禅位于曹丕，曹丕即皇帝位，国号魏，东汉统治终结；蜀汉和孙吴此后分别建立帝号，三政权并非在同一天同时成立。
   confidence: 确定
   sources: [三国志·文帝纪]
 
 
 - id: shu-founding-221
+  related_dynasties: [shu]
   date: "0221-05"
   title: 刘备称帝，蜀汉建立
   category: 政治
+  tags: [蜀汉, 刘备, 成都]
   importance: 4
   summary: 以汉室宗亲自居，国号仍称汉，定都成都。
   confidence: 确定
+  sources: [三国志·先主传]
 
 - id: yiling-222
+  related_dynasties: [shu, wu]
   # 陆逊火攻大破刘备在章武二年六月（《三国志·陆逊传》），八月是刘备退守永安的时间
   date: "0222-06"
   title: 夷陵之战
@@ -34,8 +80,10 @@
   importance: 4
   summary: 陆逊火烧连营，刘备大败，蜀汉元气大伤。
   confidence: 确定
+  sources: [三国志·陆逊传]
 
 - id: qiqin-menghuo
+  related_dynasties: [shu]
   date: "0225"
   title: 诸葛亮七擒孟获
   category: 战争
@@ -47,24 +95,71 @@
   sources: [三国志·诸葛亮传]
 
 - id: chushibiao-227
+  related_dynasties: [shu, wei]
   date: "0227"
   title: 诸葛亮上《出师表》
   category: 文化
+  tags: [蜀汉, 北伐, 诸葛亮]
   importance: 4
-  summary: 「先帝创业未半而中道崩殂」，此后六出祁山，鞠躬尽瘁。
+  summary: 诸葛亮在北伐前上表后主刘禅，陈述出兵理由、朝政用人和受托尽忠之责，随后率军北伐曹魏。
   confidence: 确定
+  sources: [三国志·诸葛亮传]
 
 - id: jieting-jiji
+  related_dynasties: [shu, wei]
   date: "0228"
-  title: 街亭之战与挥泪斩马谡
+  title: 街亭失守与马谡被处置
   category: 战争
-  tags: [北伐, 典故]
+  tags: [蜀汉, 北伐, 街亭, 马谡]
   importance: 4
-  summary: 参军马谡违背诸葛亮部署舍水上山致街亭失守，蜀军第一次北伐功败垂成，诸葛亮挥泪斩马谡。
+  summary: 马谡违背诸葛亮部署，依托南山而不据城；魏将张郃断绝蜀军汲水道路并将其击破，诸葛亮退回汉中，随后追究马谡责任。
+  confidence: 有争议
+  dispute: |
+    《三国志·张郃传》记马谡依阻南山、张郃断绝汲道；《诸葛亮传》记“戮谡以谢众”，《马良传》附马谡传则记马谡下狱物故、诸葛亮为之流涕。
+    本条保留街亭失守和处置的基本过程，不用“挥泪斩马谡”合并不同记载，也不把“舍水上山”写作原文逐字表述。
+  sources: [三国志·张郃传, 三国志·诸葛亮传, 三国志·马良传附马谡传]
+
+- id: sunquan-emperor-229
+  related_dynasties: [wu]
+  date: "0229"
+  title: 孙权称帝，孙吴建立帝号
+  category: 政治
+  tags: [孙吴, 孙权, 武昌]
+  importance: 5
+  summary: 黄龙元年，孙权在武昌南郊即皇帝位并改元；同年蜀汉遣使庆贺，双方重申联合对魏，孙权随后迁都建业。
   confidence: 确定
-  sources: [三国志·马良传附马谡传]
+  sources: [三国志·吴主传]
+
+- id: wuzhangyuan-234
+  related_dynasties: [shu, wei]
+  date: "0234"
+  title: 五丈原对峙，诸葛亮病卒军中
+  category: 战争
+  tags: [蜀汉, 北伐, 五丈原, 诸葛亮]
+  importance: 5
+  summary: 诸葛亮率蜀军由斜谷出兵，进据五丈原，与司马懿在渭南相持百余日；同年八月诸葛亮病卒于军中，蜀军随后退还。
+  confidence: 确定
+  dispute: |
+    《三国志·诸葛亮传》明确记建兴十二年据五丈原、相持百余日及八月病卒；“死诸葛走生仲达”等内容见裴松之注引材料，
+    本条不把相关谚语和追击细节写成确定战果。
+  sources: [三国志·诸葛亮传]
+
+- id: simayi-feign-illness-249
+  related_dynasties: [wei]
+  date: "0249"
+  title: 司马懿称疾避曹爽
+  category: 政治
+  tags: [曹魏, 司马氏, 高平陵之变]
+  importance: 4
+  summary: 曹爽及其党羽掌政后，司马懿以年老有病为由退避，李胜出任荆州刺史时前往辞行，司马懿借病势试探其意，随后发动高平陵之变。
+  confidence: 有争议
+  dispute: |
+    《三国志·曹爽传》正文记司马懿“称疾避爽”，并记李胜辞行时所见；口不能摄杯、错认并州等夸张的示病细节主要见裴松之注引《魏末传》，
+    本条保留基本权力过程，不把注文细节当作无争议事实。
+  sources: [三国志·曹爽传]
 
 - id: gaopingling-249
+  related_dynasties: [wei]
   date: "0249"
   title: 高平陵之变
   category: 政治
@@ -74,7 +169,19 @@
   confidence: 确定
   sources: [三国志·三少帝纪]
 
+- id: simazhao-power-255
+  related_dynasties: [wei, jin]
+  date: "0255"
+  title: 司马昭继掌曹魏军政
+  category: 政治
+  tags: [曹魏, 司马氏, 魏晋过渡]
+  importance: 5
+  summary: 司马师去世后，司马昭自率掌握禁军的主力返回洛阳，继任大将军、都督中外诸军并录尚书事，延续司马氏对曹魏军政的控制。
+  confidence: 确定
+  sources: [晋书·文帝纪]
+
 - id: shu-fall-263
+  related_dynasties: [shu, wei]
   date: "0263-11"
   title: 邓艾偷渡阴平，蜀汉亡
   category: 政治
@@ -87,9 +194,12 @@
 
 
 - id: jin-unify-280
+  related_dynasties: [wu, jin]
   date: "0280"
   title: 西晋灭吴，天下复归一统
   category: 政治
+  tags: [晋灭吴, 孙吴, 王濬]
   importance: 5
-  summary: 王濬楼船下益州，金陵王气黯然收。三国之世终。
+  summary: 晋军分路伐吴，王濬率水军沿江东下进入建业，吴主孙皓投降，孙吴灭亡，西晋结束三国分立局面。
   confidence: 确定
+  sources: [晋书·武帝纪, 晋书·王濬传]

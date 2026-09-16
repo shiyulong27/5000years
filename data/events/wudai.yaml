@@ -7,6 +7,17 @@
   confidence: 确定
   sources: [旧五代史·梁太祖纪]
 
+- id: qianliu-wuyue-0907
+  date: "0907"
+  title: 钱镠受封吴越王
+  category: 政治
+  tags: [十国, 吴越, 钱镠, 唐末五代]
+  importance: 5
+  summary: 钱镠早年以杭州八都平定两浙，唐末据有吴越；后梁建立后受封吴越王，吴越政权由此在江南延续。
+  confidence: 确定
+  related_dynasties: [wudai]
+  sources: [旧五代史·钱镠传]
+
 - id: houtang-923
   date: "0923"
   title: 后唐灭后梁
@@ -14,6 +25,19 @@
   importance: 3
   summary: 李存勖灭梁，建后唐，都洛阳，以继唐统自居。
   confidence: 确定
+  sources: [旧五代史·唐庄宗纪]
+
+- id: tang-伶官干政-0923
+  date: "0923"
+  title: 后唐伶人参与政务
+  category: 政治
+  tags: [后唐, 伶官, 权力结构]
+  importance: 4
+  summary: 后唐庄宗长期亲近伶人，景进等出入宫掖并参与军机国政，伶人由此获得超出宫廷演出的政治影响。
+  confidence: 有争议
+  dispute: 《新五代史·伶官传》以庄宗一朝连续叙事记载伶人用事及政局后果，未给每段经历独立公历年份；此处以923年后唐建立作为展示锚点，不补造具体日期。
+  related_dynasties: [wudai, houtang]
+  sources: [新五代史·伶官传]
 
 - id: shi-jingtang-936
   date: "0936"
@@ -22,7 +46,20 @@
   importance: 5
   summary: 石敬瑭借契丹兵灭后唐称帝，割幽云十六州相酬，中原自此失燕云屏障，为宋辽积弱之远因。
   confidence: 确定
+  sources: [旧五代史·晋高祖纪]
   tags: [边疆, 外交]
+
+- id: liuzhiyuan-houhan-0947
+  date: "0947"
+  title: 刘知远建立后汉
+  category: 政治
+  tags: [后汉, 政权更替]
+  importance: 4
+  summary: 契丹军北撤、后晋瓦解后，刘知远在太原起兵并进入开封建立后汉，中原政权再次更替。
+  confidence: 有争议
+  dispute: 五代纪年对刘知远称帝、入汴和改元的叙述分散于不同纪传，具体建国节点需与《新五代史》《资治通鉴》互校；此处只使用947年年份级展示。
+  related_dynasties: [wudai, houhan]
+  sources: [旧五代史·汉高祖纪]
 
 - id: houzhou-951
   date: "0951"
@@ -50,3 +87,14 @@
   importance: 4
   summary: 周世宗柴荣励精图治，整顿军政、北伐契丹，收复数州，惜天不假年。
   confidence: 确定
+
+- id: fengdao-shizong-0954
+  date: "0954"
+  title: 周世宗北征，冯道切谏
+  category: 政治
+  tags: [后周, 冯道, 北汉, 边疆]
+  importance: 4
+  summary: 后周世宗即位后，北汉刘旻进攻上党，冯道认为新君即位且国有大丧而切谏出兵；柴荣仍亲征并击退北汉与辽军。
+  confidence: 确定
+  dispute: 《新五代史·冯道传》记载冯道切谏及世宗不令其随征；“周世宗斥冯道”是后世篇名的评价性概括，史料可直接核实的是劝谏、亲征和战果，不补造具体斥责对白。
+  sources: [新五代史·冯道传, 旧五代史·冯道传]

@@ -1,3 +1,37 @@
+- id: li-te-refugees-301
+  date: "0301"
+  title: 李特聚集流民于绵竹
+  category: 政治
+  tags: [十六国, 流民, 巴蜀]
+  importance: 5
+  summary: 西晋遣返关中流民，李特在绵竹结营安置流民；各地流民因受逼遣而归附，旬月间众过二万，成为成汉政权形成的前奏。
+  confidence: 有争议
+  dispute: 《晋书·李特载记》记载流民结营与众过二万，但该段未给公历年份；此处按西晋永宁前后事件链取约301年锚点。
+  related_dynasties: [xijin]
+  sources: [晋书·李特载记]
+
+- id: liu-yuanhai-han-304
+  date: "0304"
+  title: 刘渊据离石称汉
+  category: 政治
+  tags: [十六国, 匈奴, 汉赵]
+  importance: 5
+  summary: 刘渊据离石建立政权并称汉，设置百官并以继承汉室自居，十六国北方政权竞争由此展开。
+  confidence: 确定
+  related_dynasties: [xijin]
+  sources: [晋书·刘元海载记]
+
+- id: liu-yuanhai-emperor-308
+  date: "0308"
+  title: 刘渊称帝并迁都平阳
+  category: 政治
+  tags: [十六国, 匈奴, 汉赵]
+  importance: 5
+  summary: 永嘉二年，刘渊即皇帝位，改元永凤，随后迁都平阳，汉赵政权的帝制建构进一步完成。
+  confidence: 确定
+  related_dynasties: [xijin]
+  sources: [晋书·刘元海载记]
+
 - id: zhouchu-chusanhai
   date: "0260"
   title: 周处斩蛟射虎，除三害
@@ -7,6 +41,18 @@
   summary: 义兴少年的周处凶暴强梁，乡人谓之与南山白额虎、长桥蛟龙为「三害」，周处斩蛟射虎后知耻改过，终成西晋名臣。
   confidence: 确定
   sources: [世说新语·自新]
+
+- id: shile-read-hanshu-321
+  date: "0321"
+  title: 石勒读《汉书》论成败
+  category: 文化
+  tags: [十六国, 后赵, 史学]
+  importance: 4
+  summary: 石勒在军旅中命儒生读史，听到郦食其建议分封六国后指出其失误，听到留侯劝阻后又称许其作用，显示后赵统治者借史论政的一面。
+  confidence: 有争议
+  dispute: 《晋书·石勒载记》记载该段轶事，但正文未给公历年份；此处按同传“祖逖卒”前后叙事取约321年锚点。
+  related_dynasties: [dongjin]
+  sources: [晋书·石勒载记]
 
 - id: jikang-guanglingsan
   date: "0262"
@@ -156,6 +202,17 @@
   confidence: 有争议
   dispute: 「扪虱而谈」为建元间见桓温事，约系354年（桓温北伐）；苻坚礼聘王猛在357年，此条年代约估。
   sources: [晋书·王猛载记]
+
+- id: huanwen-beifa-369
+  date: "0369"
+  title: 桓温北伐至枋头而退
+  category: 战争
+  tags: [东晋, 前燕, 北伐]
+  importance: 5
+  summary: 太和四年桓温率步骑五万北伐，击破前燕军至枋头；因水道不通、军粮耗尽而焚舟退兵，后在襄邑被追击失利。
+  confidence: 确定
+  related_dynasties: [dongjin]
+  sources: [晋书·桓温传]
 
 
 

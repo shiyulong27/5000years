@@ -238,17 +238,19 @@
   sources: [帝辛时期甲骨卜辞, 左传·昭公十一年, 史记·殷本纪]
 
 - id: jiangtaigong-diaoyu
+  related_dynasties: [shang, zhou, xizhou]
   date: "-1050"
   title: 姜太公渭水钓鱼
   category: 政治
   tags: [商周, 典故]
   importance: 4
   summary: 姜尚隐居渭水之滨直钩钓鱼，遇周文王姬昌礼聘为师，辅佐武王克商平天下。
-  confidence: 确定
+  confidence: 有争议
+  dispute: 姜尚辅周及其历史人物背景有传世文献依据，但直钩钓鱼、渭水遇文王等完整情节主要由后世叙事定型，不能按同时代实录处理；前1050年仅为时间线占位。
   sources: [史记·齐太公世家]
 
 - id: zhou-founding
-  related_dynasties: [shang, zhou]
+  related_dynasties: [shang, zhou, xizhou]
   date: "-1046"
   title: 武王伐纣，周朝建立
   category: 政治
@@ -263,35 +265,137 @@
   sources: [史记·周本纪]
 
 - id: zhougong-dandan
+  related_dynasties: [zhou, xizhou]
   date: "-1042"
-  title: 周公吐哺握发，辅佐成王
+  title: 周公摄政，平定三监之乱
   category: 政治
-  tags: [西周, 礼乐, 典故]
+  tags: [西周, 三监之乱, 东征]
+  importance: 5
+  summary: 武王去世后周公摄政，管叔、蔡叔等联合武庚反叛；周公东征平乱，周王朝由此控制东方地区。
+  confidence: 有争议
+  dispute: 周公摄政和东征有《尚书》、金文与传世文献支持，但三监构成、战争范围以及「周公称王」的性质仍有争论。
+  sources: [尚书·大诰, 史记·周本纪, 史记·周公世家]
+
+- id: zhou-enfeoffment-chengzhou
+  related_dynasties: [zhou, xizhou]
+  date: "-1038"
+  title: 大规模分封并营建成周
+  category: 政治
+  tags: [分封制, 成周, 礼乐]
+  importance: 5
+  summary: 周王室分封同姓宗亲与功臣，在东方营建成周洛邑，形成宗法、封建与军事控制相结合的统治网络。
+  confidence: 有争议
+  dispute: 分封和营建成周有何尊铭文、《尚书》等材料支持，但并非一次完成；「周公制礼作乐」是长期制度形成的后世概括。
+  sources: [何尊铭文, 尚书·洛诰, 史记·周本纪]
+
+- id: chengkang-rule
+  related_dynasties: [zhou, xizhou]
+  date: "-1020"
+  title: 成康之治，西周秩序趋稳
+  category: 政治
+  tags: [成康之治, 王朝治理]
   importance: 4
-  summary: 武王崩，周公旦代成王摄政，一沐三握发、一饭三吐哺求贤，平定三监之乱，制礼作乐建典章制度。
-  confidence: 确定
-  sources: [史记·周公世家]
+  summary: 成王、康王时期王室巩固东方统治并频繁册命诸侯，后世将这一阶段视为西周早期的稳定时期。
+  confidence: 有争议
+  dispute: 册命与征伐可从青铜器铭文观察，但「刑错四十余年不用」属于后世盛世叙事，不能按字面理解。
+  sources: [史记·周本纪, 大盂鼎铭文, 宜侯夨簋铭文]
+
+- id: zhaowang-south-campaign
+  related_dynasties: [zhou, xizhou]
+  date: "-0977"
+  title: 昭王南征失利，卒于汉水
+  category: 战争
+  tags: [昭王南征, 汉水, 楚地]
+  importance: 4
+  summary: 周昭王多次向南方用兵，末次南征未能返回；此后周王室对南方的扩张受到挫折。
+  confidence: 有争议
+  dispute: 昭王南征有青铜器铭文背景，但「胶船沉王」等死亡细节出自后世叙述，战争对象和路线亦无定论。
+  sources: [史记·周本纪, 过伯簋铭文, 吕氏春秋·音初]
+
+- id: muwang-western-tour
+  related_dynasties: [zhou, xizhou]
+  date: "-0960"
+  title: 穆王西巡与对外征伐
+  category: 政治
+  tags: [周穆王, 巡狩, 西域传说]
+  importance: 3
+  summary: 周穆王在位较久，开展巡狩与征伐；后世《穆天子传》将其西行扩展为会见西王母的传奇故事。
+  confidence: 有争议
+  dispute: 穆王的巡行和战争具有一定史料基础，但《穆天子传》的路线、里程和西王母叙事不能直接当作实录。
+  sources: [穆天子传, 史记·周本纪, 西周中期青铜器铭文]
+
+- id: guoren-riot
+  related_dynasties: [zhou, xizhou]
+  date: "-0841"
+  title: 国人暴动，厉王出奔
+  category: 政治
+  tags: [国人暴动, 周厉王, 历史转折]
+  importance: 5
+  summary: 镐京国人起事，周厉王逃往彘；前841年也成为中国传统史书连续纪年的起点。
+  confidence: 有争议
+  dispute: 事件年份较可靠，但「国人」具体是贵族、城市平民还是多种群体联合，以及暴动原因是否可概括为专利与止谤，仍有争论。
+  sources: [史记·周本纪, 国语·周语上]
+
+- id: gonghe-regency
+  related_dynasties: [zhou, xizhou]
+  date: "-0841"
+  title: 共和行政开始
+  category: 政治
+  tags: [共和行政, 摄政, 纪年]
+  importance: 5
+  summary: 厉王出奔后王位空缺十四年，政务由摄政力量主持，直至宣王即位。
+  confidence: 有争议
+  dispute: 《史记》称周公、召公共同执政，《竹书纪年》等材料则指向共伯和摄政；「共和」究竟是制度称呼还是人名，尚无定论。
+  sources: [史记·周本纪, 竹书纪年, 清华简·系年]
+
+- id: xuanwang-restoration
+  related_dynasties: [zhou, xizhou]
+  date: "-0827"
+  title: 宣王即位，王室一度复振
+  category: 政治
+  tags: [宣王中兴, 猃狁, 淮夷]
+  importance: 4
+  summary: 共和行政结束后周宣王即位，任用召穆公、尹吉甫等整顿政务，并对猃狁、淮夷等展开战争。
+  confidence: 有争议
+  dispute: 宣王时期战争可由《诗经》和青铜器铭文互证，但「中兴」是后世评价，其恢复程度不宜夸大。
+  sources: [史记·周本纪, 诗经·六月, 毛公鼎铭文]
+
+- id: qianmu-defeat
+  related_dynasties: [zhou, xizhou]
+  date: "-0789"
+  title: 千亩之战，周师败于姜戎
+  category: 战争
+  tags: [千亩之战, 姜戎, 西周衰落]
+  importance: 4
+  summary: 周宣王晚年在千亩之战中失利，传统史学常将其视为宣王中兴转衰和西周军事危机加深的标志。
+  confidence: 有争议
+  dispute: 战争见于传世文献，但千亩地望、参战族群和损失规模均有不同解释。
+  sources: [史记·周本纪, 国语·周语上]
 
 
 - id: fenghuo-xizhouhou
+  related_dynasties: [zhou, xizhou]
   date: "-0771-01"
-  title: 烽火戏诸侯，西周亡
+  title: 犬戎攻破镐京，西周灭亡
   category: 政治
   tags: [西周, 典故]
   importance: 4
-  summary: 周幽王为博妃子褒姒一笑多次无故点燃烽火戏弄诸侯，申侯引犬戎攻镐京，诸侯不至，幽王被杀。
+  summary: 申侯联合犬戎攻破镐京，周幽王被杀；西周王畿秩序崩溃，诸侯随后拥立平王东迁。
   confidence: 有争议
   dispute: 烽火戏诸侯见于《史记·周本纪》，清华简等新出文书对此叙事提出质疑，学界存争议。
   sources: [史记·周本纪]
 
 - id: pingwang-east
+  related_dynasties: [zhou, xizhou, dongzhou, chunqiu]
   date: "-0770"
   title: 平王东迁，东周始
   category: 政治
   tags: [历史转折, 制度]
   importance: 4
   summary: 犬戎破镐京，王室东徙洛邑，自此王纲解纽，诸侯坐大。
-  confidence: 确定
+  confidence: 有争议
+  dispute: 平王东迁洛邑的基本过程较明确，但携王并立等政治背景因清华简《系年》等新材料而更复杂，不能简化为单线继承。
+  sources: [史记·周本纪, 清华简·系年]
 
 - id: bianhe-puyu
   date: "-0689"
@@ -348,6 +452,7 @@
   sources: [左传·僖公二十三年]
 
 - id: tuibi-sanshe
+  related_dynasties: [zhou, dongzhou, chunqiu]
   date: "-0632"
   title: 城濮之战，退避三舍
 
@@ -370,6 +475,7 @@
   sources: [左传·僖公二十四年]
 
 - id: yierfanzhi
+  related_dynasties: [zhou, dongzhou, chunqiu]
   date: "-0606"
   title: 楚庄王问鼎中原
   category: 政治
@@ -380,6 +486,7 @@
   sources: [左传·宣公三年]
 
 - id: confucius
+  related_dynasties: [zhou, dongzhou, chunqiu]
   date: "-0551"
   title: 孔子生
   category: 文化
@@ -428,21 +535,23 @@
   tags: [吴国, 楚国]
   importance: 4
   summary: 伍子胥与孙武辅助吴王阖闾五战五胜破楚攻入楚都郢城，伍子胥为报父兄惨死之仇掘楚平王墓鞭尸三百。
-  confidence: 确定
+  confidence: 有争议
+  dispute: 吴军入郢及伍子胥参与破楚见于《左传》《史记》，但掘墓鞭尸的具体过程主要见后出的传世叙述，细节和道德化表达不能视为同时代记录。
   sources: [史记·伍子胥列传]
 
 - id: woxin-changdan
   date: "-0490"
-  title: 越王勾践卧薪尝胆
+  title: 越王勾践归国图强，灭吴雪耻
   category: 政治
   tags: [越国, 吴国]
   importance: 4
-  summary: 越王勾践兵败夫椒后入吴为奴三年，归国后悬挂苦胆常自尝之、励精图治，最终复仇灭吴。
+  summary: 越王勾践兵败夫椒后入吴为奴三年，归国后置胆于坐、亲自耕作并整顿国政，长期积蓄力量，最终灭吴雪耻。
   confidence: 有争议
   dispute: 「尝胆」见《史记·越王勾践世家》，「卧薪」为后世（苏轼《拟孙权答曹操书》后）附会成分；归国图强约在前490年前后。
   sources: [史记·越王勾践世家]
 
 - id: warring-states
+  related_dynasties: [zhou, dongzhou, zhanguo]
   date: "-0475"
   title: 战国之世始
   category: 战争
@@ -481,11 +590,13 @@
   category: 政治
   tags: [商鞅变法, 典故]
   importance: 4
-  summary: 商鞅变法前于国都南门立三丈之木，募能徙者予五十金，以取信于民、明示赏罚。
-  confidence: 确定
-  sources: [史记·商君列传]
+  summary: 《史记·商君列传》载，商鞅新法颁布前在国都市南门立三丈之木，先募能移至北门者予十金，后增至五十金并如数赏给，以示不欺。
+  confidence: 有争议
+  dispute: 《史记·秦本纪》以秦孝公三年记初用商鞅之法，支持前359年的时间线锚点；徙木、增赏及人物反应的完整过程只见传世《商君列传》，不能视为同时代实证。
+  sources: [史记·商君列传, 史记·秦本纪]
 
 - id: shangyang-reform
+  related_dynasties: [zhou, dongzhou, zhanguo]
   date: "-0356"
   title: 商鞅变法
   category: 政治
@@ -507,13 +618,14 @@
 
 - id: sunbin-pangjuan
   date: "-0341"
-  title: 马陵之战，庞涓死于此树下
+  title: 马陵之战，孙膑减灶诱敌
   category: 战争
   tags: [兵法, 减灶诱敌]
   importance: 4
-  summary: 孙膑用减灶退兵计诱庞涓轻敌追击，于马陵设伏，庞涓兵败穷途自刎而死，魏国精锐尽丧。
-  confidence: 确定
-  sources: [史记·孙子吴起列传]
+  summary: 《史记·孙子吴起列传》载，孙膑逐日减少军灶诱使庞涓轻兵追击，在马陵设伏击败魏军；庞涓自刎，齐军俘获魏太子申。
+  confidence: 有争议
+  dispute: 前341年马陵之战及庞涓战死见《史记·六国年表》；树上题写「庞涓死于此树之下」、夜间举火和临终话语属于《孙子吴起列传》的具体叙事，不宜直接作为无争议标题或对话。
+  sources: [史记·孙子吴起列传, 史记·六国年表]
 
 - id: shangyang-chelie
   date: "-0338"
@@ -526,13 +638,15 @@
   sources: [史记·商君列传]
 
 - id: qianjin-maigu
-  date: "-0314"
-  title: 燕昭王千金买骨，筑黄金台
+  related_dynasties: [zhou, dongzhou, zhanguo]
+  date: "-0311"
+  title: 燕昭王礼郭隗，招贤复国
   category: 政治
   tags: [燕国, 用人]
   importance: 3
-  summary: 燕昭王招贤纳士，采纳郭隗建议「千金买死马骨」显示爱才求贤决心，筑黄金台迎乐毅等天下贤士。
-  confidence: 确定
+  summary: 郭隗以古人「千金市马骨」作譬，劝燕昭王从礼遇自己开始招贤；燕昭王为郭隗筑宫并尊其为师，乐毅等贤士相继赴燕。
+  confidence: 有争议
+  dispute: 千金市马骨是郭隗讲述的古代寓言，不是燕昭王亲自买骨；《战国策·燕策一》只记「为隗筑宫而师之」，未记筑黄金台，也未给此事独立纪年。此处按项目王表系于燕昭王元年前311年，黄金台为后世流传的扩展叙事。
   sources: [战国策·燕策一]
 
 - id: zhangyi-lianzheng
@@ -563,9 +677,10 @@
   category: 政治
   tags: [战国, 典故]
   importance: 3
-  summary: 齐相孟尝君田文被秦昭王扣留，门客施「狗盗」盗狐白裘献秦姬，再施「鸡鸣」骗关吏开函谷关连夜脱险。
-  confidence: 确定
-  sources: [史记·孟尝君列传]
+  summary: 《史记·孟尝君列传》载，田文入秦遭囚后，门客盗回狐白裘托秦王幸姬说情，又仿鸡鸣使函谷关提前开关，助其逃离秦国。
+  confidence: 有争议
+  dispute: 《史记·六国年表》记前299年薛文入相秦、前298年归相齐，此处以前298年作为逃秦归齐的时间线锚点；鸡鸣、狗盗及幸姬说情的细节仅见传世列传，正文未给逃秦的独立年月。
+  sources: [史记·孟尝君列传, 史记·六国年表]
 
 - id: wanbi-guizhao
   date: "-0283"
@@ -584,9 +699,10 @@
   category: 战争
   tags: [齐国, 奇谋]
   importance: 4
-  summary: 燕将乐毅攻破齐国七十余城仅余即墨、莒城；齐将田单守即墨用火牛阵夜袭大破燕军，收复齐国全境失地。
-  confidence: 确定
-  sources: [史记·田单列传]
+  summary: 《史记·田单列传》载，齐国仅莒、即墨未降燕；田单守即墨，以火牛夜袭击败骑劫所率燕军，随后追击并恢复齐地。
+  confidence: 有争议
+  dispute: 《史记·六国年表》于前279年记齐杀燕将骑劫，支持事件时间线；千余头牛、五千壮士、火牛装束及齐七十余城复归等具体数字和战术细节来自传世《田单列传》。
+  sources: [史记·田单列传, 史记·六国年表]
 
 - id: quyuan-miluo
   date: "-0278"
@@ -595,9 +711,22 @@
   category: 文化
   tags: [楚国, 文学]
   importance: 4
-  summary: 秦破楚都郢城，楚国大夫屈原满怀悲愤写下《怀沙》后自沉汨罗江殉国。
-  confidence: 确定
-  sources: [史记·屈原贾生列传]
+  summary: 《史记·屈原贾生列传》载，屈原被迁逐后行吟江滨，作《怀沙》并怀石自沉汨罗。
+  confidence: 有争议
+  dispute: 前278年白起拔郢见《史记·六国年表》，但《屈原贾生列传》未记屈原投江的具体年月，也未把投江直接系于郢都失守；此处前278年为通行时间线锚点，人物对话、作赋与投江经过属于传世列传叙事。
+  sources: [史记·屈原贾生列传, 史记·六国年表]
+
+- id: fanju-far-alliance-near-attack
+  related_dynasties: [zhou, dongzhou, zhanguo]
+  date: "-0271"
+  title: 范雎向秦昭王提出远交近攻
+  category: 政治
+  tags: [秦国, 外交, 统一策略]
+  importance: 4
+  summary: 范雎进说秦昭王，主张结交远国、攻取邻国，使秦国逐步扩张领土；秦昭王采纳其策并任范雎为客卿。
+  confidence: 有争议
+  dispute: 范雎进说与「远交而近攻」见于《史记·范睢蔡泽列传》，此处按秦昭王三十六年系于前271年；对话原貌和部分经历细节仅有传世文献记载。
+  sources: [史记·范睢蔡泽列传]
 
 - id: eyu-zhaoshe
   date: "-0269"
@@ -610,14 +739,88 @@
   sources: [史记·廉颇蔺相如列传]
 
 - id: changping-zhizhan
+  related_dynasties: [zhou, dongzhou, zhanguo]
   date: "-0260"
-  title: 长平之战，白起坑杀赵卒
+  title: 长平之战，赵括代廉颇而败
   category: 战争
   tags: [决定性战役, 历史转折]
   importance: 5
-  summary: 秦将白起于长平击败赵括，坑杀赵降卒四十万，赵国主力尽丧，秦统一大势已不可逆转。
-  confidence: 确定
-  sources: [史记·白起王翦列传]
+  summary: 赵孝成王以赵括代廉颇，秦国暗中改任白起为将；赵括出战被射杀，赵军败降，赵国主力遭到重创。
+  confidence: 有争议
+  dispute: 赵括代廉颇及其「徒能读其父书传，不知合变」的评价见于《史记·廉颇蔺相如列传》；「纸上谈兵」是后世概括，并非原文。降卒人数及白起坑杀的具体规模、方式主要依据传世记载，细节存在争议。
+  sources: [史记·廉颇蔺相如列传, 史记·白起王翦列传]
+
+- id: xuge-battle
+  related_dynasties: [zhou, dongzhou, chunqiu]
+  date: "-0707"
+  title: 繻葛之战，周王室威权受挫
+  category: 战争
+  tags: [周郑交恶, 王权衰落, 春秋]
+  importance: 5
+  summary: 周桓王率诸侯联军讨伐郑国却战败，桓王肩部中箭，显示周天子已难以号令强势诸侯。
+  confidence: 有争议
+  dispute: 战事与桓王受伤见于《左传》，基本过程较明确；参战兵力和此战是否可视为王权衰落的单一转折点属于后世概括。
+  sources: [左传·桓公五年, 史记·周本纪]
+
+- id: kuiqiu-alliance
+  related_dynasties: [zhou, dongzhou, chunqiu]
+  date: "-0651"
+  title: 葵丘会盟，齐桓公霸业达于鼎盛
+  category: 政治
+  tags: [诸侯会盟, 尊王攘夷, 齐桓公]
+  importance: 5
+  summary: 齐桓公会合诸侯并接受周王室赐命，以尊王名义协调诸侯秩序，成为春秋霸政的代表事件。
+  confidence: 有争议
+  dispute: 会盟及周王赐命见于《左传》《史记》，但盟约具体条款在不同文献中有差异，「霸业顶峰」是历史评价。
+  sources: [左传·僖公九年, 孟子·告子下, 史记·齐太公世家]
+
+- id: three-families-partition-jin
+  related_dynasties: [zhou, dongzhou, zhanguo]
+  date: "-0403"
+  title: 周威烈王册命韩赵魏，三家分晋
+  category: 政治
+  tags: [三家分晋, 诸侯, 战国格局]
+  importance: 5
+  summary: 周天子正式承认韩、赵、魏三家为诸侯，晋国长期分裂获得名义确认，战国七雄格局逐渐定型。
+  confidence: 有争议
+  dispute: 前403年是周王室正式册命之年，并非晋国在一天内被瓜分；晋君名义延续至前376年，战国起点也另有前475、前481等说。
+  sources: [史记·周本纪, 史记·晋世家, 资治通鉴·周纪一]
+
+- id: tian-replaces-qi
+  related_dynasties: [zhou, dongzhou, zhanguo]
+  date: "-0386"
+  title: 周安王册命田和，田氏代齐
+  category: 政治
+  tags: [田氏代齐, 诸侯, 战国格局]
+  importance: 5
+  summary: 周安王承认田和为齐侯，田氏取得齐国君位，姜姓齐国退出主要政治舞台。
+  confidence: 有争议
+  dispute: 前386年是田和获周王室册命的节点；田氏掌权经历长期过程，姜姓齐康公仍在海上封地生活至前379年。
+  sources: [史记·田敬仲完世家, 史记·六国年表, 竹书纪年]
+
+- id: zhou-royal-house-ends
+  related_dynasties: [zhou, dongzhou, zhanguo, qin]
+  date: "-0256"
+  title: 秦取王畿，周王室灭亡
+  category: 政治
+  tags: [王朝更替, 周赧王, 秦国]
+  importance: 5
+  summary: 秦昭襄王攻取西周公国，周赧王献出土地和人口后去世，延续八百余年的周王室统治终结。
+  confidence: 有争议
+  dispute: 周赧王卒与秦取九鼎宝器的基本节点见于《史记》；九鼎最终下落不明，所谓周朝八百余年的精确年数取决于采用的西周始年。
+  sources: [史记·周本纪, 史记·秦本纪]
+
+- id: qin-destroys-east-zhou-state
+  related_dynasties: [zhou, dongzhou, zhanguo, qin]
+  date: "-0249"
+  title: 秦灭东周公国
+  category: 政治
+  tags: [东周公国, 秦国, 王畿]
+  importance: 4
+  summary: 秦相吕不韦率军灭东周公国，清除洛阳王畿内最后一个周系封国；此时周王室已于前256年灭亡。
+  confidence: 有争议
+  dispute: 此处「东周」指考王以后分出的东周公国，不是从平王东迁开始的整个东周王朝，二者容易混淆。
+  sources: [史记·秦本纪, 史记·吕不韦列传]
 
 - id: chulong-zhaotaihou
   date: "-0265"
@@ -630,25 +833,27 @@
   sources: [战国策·赵策四]
 
 - id: maosui-zijian
-  date: "-0257-01"
-  title: 毛遂自荐
+  date: "-0257"
+  title: 毛遂自荐，随平原君赴楚定纵
   category: 政治
   tags: [外交, 平原君, 典故]
   importance: 3
-  summary: 秦围赵邯郸，毛遂自荐随平原君出使楚国，按剑定盟，促成楚赵合纵解围。
-  confidence: 确定
-  sources: [史记·平原君虞卿列传]
+  summary: 《史记·平原君虞卿列传》载，秦围邯郸时毛遂自荐随平原君赴楚，在楚廷参与说服楚王，最终歃血定纵。
+  confidence: 有争议
+  dispute: 《史记·六国年表》记前257年楚、魏救赵，支持事件年度背景，但列传未记出使月份；毛遂按剑进说、具体对话及歃血次序属于传世列传叙事，不能把定纵直接等同于随后完成解围。
+  sources: [史记·平原君虞卿列传, 史记·六国年表]
 
 
 - id: qiefu-jiuzhao
-  date: "-0257-10"
+  date: "-0257"
   title: 信陵君窃符救赵
   category: 战争
   tags: [魏国, 邯郸之围]
   importance: 4
-  summary: 秦围赵邯郸，魏安厘王畏秦不救；信陵君魏无忌通过如姬窃得兵符，夺晋鄙军救赵解围。
-  confidence: 确定
-  sources: [史记·魏公子列传]
+  summary: 《史记·魏公子列传》载，魏安釐王命晋鄙救赵后又令其驻军观望；如姬为信陵君盗得虎符，朱亥击杀拒绝交兵的晋鄙，信陵君率军击退秦军、解邯郸之围。
+  confidence: 有争议
+  dispute: 《史记·六国年表》明确记前257年公子无忌救邯郸、秦兵解去，但未记十月；如姬报恩盗符、朱亥袖四十斤铁椎等动机和细节来自传世《魏公子列传》。
+  sources: [史记·魏公子列传, 史记·六国年表]
 
 
 - id: zhengguo-qu
@@ -660,3 +865,75 @@
   summary: 韩国水工郑国奉命入秦修渠本意疲秦，秦王觉察后仍命其完工，引泾水灌溉关中平原，秦由此大富。
   confidence: 确定
   sources: [史记·河渠书]
+
+- id: lisi-remonstrates-expulsion
+  related_dynasties: [zhou, dongzhou, zhanguo]
+  date: "-0237"
+  title: 李斯上《谏逐客书》，秦王撤销逐客令
+  category: 政治
+  tags: [秦国, 用人, 政策]
+  importance: 4
+  summary: 郑国渠事件引发秦国驱逐客卿之议，李斯上书陈述任用各国人才对秦国强盛的重要性；秦王政采纳劝谏，撤销逐客令并恢复李斯官职。
+  confidence: 有争议
+  dispute: 李斯上书、秦王撤销逐客令的基本过程见《史记·李斯列传》和传世《谏逐客书》；此处采用前237年的通行系年，诏令与上书的文本传承细节仍需区分于同时代实物证据。
+  sources: [史记·李斯列传, 谏逐客书]
+
+- id: changshao-battle
+  related_dynasties: [zhou, dongzhou, chunqiu]
+  date: "-0684"
+  title: 长勺之战，曹刿论战
+  category: 战争
+  tags: [鲁国, 齐国, 曹刿]
+  importance: 4
+  summary: 齐军伐鲁，曹刿随鲁庄公出战，在长勺待齐军三鼓后反击并追击，鲁军击败齐师。
+  confidence: 有争议
+  dispute: 战事和曹刿论战见于《左传·庄公十年》，但曹刿的生卒年、身份细节和具体战场过程没有同时代完整记录；前684年为传统纪年定位。
+  sources: [左传·庄公十年, 史记·鲁周公世家]
+
+- id: battle-of-hong
+  related_dynasties: [zhou, dongzhou, chunqiu]
+  date: "-0638"
+  title: 泓水之战，宋襄公败于楚
+  category: 战争
+  tags: [宋国, 楚国, 宋襄公]
+  importance: 4
+  summary: 宋襄公与楚军战于泓水，宋军等待楚军渡河并列阵后才进攻，最终败于楚军，宋襄公负伤。
+  confidence: 有争议
+  dispute: 泓水交战及「不鼓不成列」的争论见于《左传·僖公二十二年》，但宋襄公是否应概括为「愚蠢」是后世评价，不应写成事件事实；前638年为传统纪年定位。
+  sources: [左传·僖公二十二年, 史记·宋微子世家]
+
+- id: xian-gao-warns-zheng
+  related_dynasties: [zhou, dongzhou, chunqiu]
+  date: "-0627"
+  title: 弦高犒师，秦军放弃袭郑
+  category: 战争
+  tags: [郑国, 秦国, 弦高, 外交]
+  importance: 4
+  summary: 郑商人弦高在滑地遇秦军，以牛和熟食犒劳并暗中告知郑国；郑国因此整军备战，秦军判断郑有准备而退兵。
+  confidence: 有争议
+  dispute: 弦高犒师和郑国备战见于《左传·僖公三十三年》，但弦高的身份、犒师数量和对秦军决策的具体影响属于传世叙事，前627年为传统纪年定位。
+  sources: [左传·僖公三十三年, 史记·秦本纪]
+
+- id: battle-of-xiao
+  related_dynasties: [zhou, dongzhou, chunqiu]
+  date: "-0627"
+  title: 崤之战，晋军击败秦师
+  category: 战争
+  tags: [晋国, 秦国, 姜戎]
+  importance: 4
+  summary: 秦军东进袭郑未果后回师，晋军与姜戎在崤地设伏并击败秦师，秦国东进受挫。
+  confidence: 有争议
+  dispute: 晋人与姜戎败秦师于殽见于《左传·僖公三十三年》，但战场细节、参战规模和秦军东进的具体动机存在传世文献叙述差异；前627年为传统纪年定位。
+  sources: [左传·僖公三十三年, 史记·晋世家]
+
+- id: yue-destroys-wu
+  related_dynasties: [zhou, dongzhou, chunqiu, zhanguo]
+  date: "-0473"
+  title: 越灭吴，吴越争霸结束
+  category: 战争
+  tags: [越国, 吴国, 吴越争霸, 跨期]
+  importance: 5
+  summary: 越王勾践在会稽败后长期整顿国政、积蓄力量，最终攻破吴国并迫使夫差自尽，吴越争霸由此结束。
+  confidence: 有争议
+  dispute: 越灭吴及范蠡、文种辅越见于《史记·越王勾践世家》《国语·越语》；前473年是通行纪年，但项目前475年分界将其关联至战国，传统叙事上仍属于春秋末期吴越争霸的收束。
+  sources: [史记·越王勾践世家, 国语·越语]

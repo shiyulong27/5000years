@@ -1,156 +1,3029 @@
+- id: nurhaci-jin-1616
+  date: '1616'
+  title: 努尔哈赤建立后金
+  category: 政治
+  importance: 5
+  summary: 努尔哈赤统一女真诸部后在赫图阿拉称汗，建立后金政权，成为清朝建立前的重要政治阶段。
+  confidence: 确定
+  related_dynasties: [qing]
+  tags: [后金, 努尔哈赤, 建国]
+  sources: [清史稿·太祖本纪, 满洲实录]
+
+- id: sarhu-battle-1619
+  date: '1619'
+  title: 萨尔浒大战
+  category: 战争
+  importance: 5
+  summary: 后金军在萨尔浒等地击败明朝多路进攻，后金在辽东的战略优势由此确立。
+  confidence: 确定
+  related_dynasties: [qing]
+  tags: [后金, 明, 辽东]
+  sources: [清史稿·太祖本纪, 明史·神宗纪]
+
+- id: ningyuan-battle-1626
+  date: '1626'
+  title: 宁远之战
+  category: 战争
+  importance: 5
+  summary: 袁崇焕据守宁远，明军以火器防守击退后金军，努尔哈赤在战后不久去世，辽东战局出现转折。
+  confidence: 确定
+  related_dynasties: [qing]
+  tags: [明, 后金, 袁崇焕, 辽东]
+  sources: [明史·袁崇焕传, 清史稿·太祖本纪]
+
+- id: huangtaiji-counterplot-1630
+  date: '1630'
+  title: 皇太极施反间计，袁崇焕下狱
+  category: 战争
+  importance: 4
+  summary: 后金利用明廷内部猜疑和情报战削弱袁崇焕的边防地位，袁崇焕随后被明廷下狱并处死，辽东防务因此出现重大转折。
+  confidence: 有争议
+  dispute: 反间细节多见后出叙述，史料对具体实施方式有差异；本事件只承载明廷猜疑、袁崇焕获罪与后金获益的结构关系。
+  related_dynasties: [qing]
+  tags: [后金, 明, 袁崇焕, 情报战]
+  sources: [清史稿·太宗本纪, 明史·袁崇焕传]
+
+- id: eight-banners-1635
+  date: '1635'
+  title: 八旗制度逐步定型
+  category: 政治
+  importance: 4
+  summary: 皇太极时期，满洲八旗基础上扩充并整合蒙古八旗、汉军八旗，旗制逐步成为清军编制、身份组织和国家治理的核心制度。
+  confidence: 有争议
+  dispute: 八旗扩充、改制和汉军编立是持续过程，具体完成年份在文献中并不单一；本条以 1635 年前后制度定型阶段概括，不将单一诏令视为全部改革。
+  related_dynasties: [qing]
+  tags: [八旗, 皇太极, 军事制度, 身份组织]
+  sources: [清史稿·太宗本纪, 八旗通志]
+
+- id: huangtaiji-qing-1636
+  date: '1636-05-15'
+  title: 皇太极称帝，改国号为大清
+  category: 政治
+  importance: 5
+  summary: 皇太极在盛京（今沈阳）称帝，改女真族名为满洲，改国号「大金」为「大清」，建元崇德。标志着清朝正式建立，并确立满蒙汉八旗与中央集权统治格局。
+  confidence: 确定
+  related_dynasties:
+    - qing
+  tags:
+    - 开国
+    - 皇太极
+    - 清朝建立
+    - 历史转折
+  sources:
+    - 清史稿·太宗本纪
+    - 清太宗实录
+
 - id: qing-enter-pass-1644
-  date: "1644"
+  date: '1644-06-05'
   title: 清军入关，定鼎北京
   category: 政治
-  tags: [王朝更替, 历史转折]
   importance: 5
-  summary: 吴三桂引清兵入关，击败大顺军，顺治帝迁都北京，清朝定鼎中原。
+  summary: 李自成攻陷北京崇祯帝自缢后，山海关总兵吴三桂引多尔衮率清军入关，于一片石击溃大顺军。顺治帝随后迁都北京，清朝正式定鼎中原开启对全国的统治。
   confidence: 确定
-  sources: [清史稿·世祖本纪]
+  related_dynasties:
+    - qing
+  tags:
+    - 王朝更替
+    - 入关
+    - 顺治帝
+    - 多尔衮
+    - 历史转折
+  sources:
+    - 清史稿·世祖本纪
+    - 明史·李自成传
 
+- id: deliberative-princes-council-1644
+  date: '1644'
+  title: 清初议政王大臣会议参与军国决策
+  category: 政治
+  importance: 4
+  summary: 清军入关初期，议政王大臣会议作为满洲贵族议政机制参与军国事务决策，与内阁等机构共同构成早期清廷权力结构，后来其作用随皇权和中枢机构调整而变化。
+  confidence: 有争议
+  dispute: 议政王大臣会议的制度沿革跨越后金至清中期，具体权限和影响因时期而异；本条只承载入关初期的结构性作用，不断言单一成立或废止日期。
+  related_dynasties: [qing]
+  tags: [清初, 议政王大臣会议, 权力结构, 八旗]
+  sources: [清史稿·职官志, 清会典]
+
+- id: qing-land-enclosure-1645
+  date: '1645'
+  title: 清初圈地令与旗地形成
+  category: 经济
+  importance: 4
+  summary: 清军入关后，清廷在京畿及部分关内地区推行圈地，将土地拨给八旗，旗地制度由此形成并改变原有土地占有关系，成为清初社会经济重组的重要政策。
+  confidence: 有争议
+  dispute: 圈地实施范围、持续时间和失地规模在不同文献与研究中有差异，本条只确认圈地政策及其制度后果，不采用未经核实的具体人数或面积。
+  related_dynasties: [qing]
+  tags: [清初, 圈地, 八旗, 旗地, 土地制度]
+  sources: [清史稿·食货志, 清会典]
+
+- id: li-dingguo-southwest-1659
+  date: '1659'
+  title: 李定国转战西南
+  category: 战争
+  importance: 4
+  summary: 南明永历政权将领李定国在西南继续抗清，曾取得磨盘山等战事胜利，南明西南抵抗延续至清初。
+  confidence: 有争议
+  dispute: 李定国各次战事跨越多年，磨盘山及其后续行动的记载来源不一；本事件只承载南明西南抵抗的阶段性结构。
+  related_dynasties: [qing]
+  tags: [南明, 抗清, 李定国, 西南]
+  sources: [明史·李定国传, 清史稿·李定国传]
+- id: gu-yanwu-journal-1650
+  date: '1650'
+  title: 顾炎武整理经世之学与《日知录》
+  category: 文化
+  importance: 4
+  summary: 明清易代后，顾炎武以经世致用为取向长期整理史学、地理和制度资料，形成《日知录》等著述，成为清初考据与经世思想的重要代表。
+  confidence: 有争议
+  dispute: 《日知录》为长期积累、反复修订的著作，具体起笔和定稿年份存在不同说法；1650年仅作清初著述活动的代表性锚点，不表示全书在该年完成。
+  related_dynasties: [qing]
+  tags: [顾炎武, 日知录, 经世致用, 考据学]
+  sources: [日知录, 清史稿·儒林传]
 - id: yangzhou-jiading
-  date: "1645"
+  date: '1645-05-20'
   title: 扬州十日与嘉定三屠
   category: 战争
-  tags: [清初, 忠烈]
   importance: 4
-  summary: 清军豫亲王多铎（duó）攻破扬州，史可法壮烈殉国，清军屠城十日；后因剃发令又于嘉定实施三屠，江南抗清惨烈。
+  summary: 清军豫亲王多铎攻破扬州，督师史可法壮烈殉国，清军屠城十日；清廷颁布「剃发令」后江南反抗激烈，清军又在嘉定实施三屠，江南抗清惨烈。
   confidence: 确定
-  sources: [明季南略, 扬州十日记]
-
-
+  related_dynasties:
+    - qing
+  tags:
+    - 清初
+    - 忠烈
+    - 史可法
+    - 抗清
+  sources:
+    - 明季南略
+    - 扬州十日记
+    - 清史稿·史可法传
 - id: zhengchenggong-taiwan-1662
-  date: "1662"
+  date: '1662-02-01'
   title: 郑成功收复台湾
   category: 战争
-  importance: 4
-  summary: 郑成功击败荷兰殖民者，收复台湾，建立明郑政权。
+  importance: 5
+  summary: 郑成功率大军渡海进攻台湾赤崁城与热兰遮城，击败荷兰东印度公司殖民者并签订投降条约，成功收复台湾，建立明郑政权并推行屯田制度。
   confidence: 确定
-  sources: [清史稿·郑成功传]
-  tags: [边疆]
-
+  related_dynasties:
+    - qing
+  tags:
+    - 郑成功
+    - 收复台湾
+    - 反抗殖民
+    - 民族英雄
+    - 历史转折
+  sources:
+    - 清史稿·郑成功传
+    - 台湾通史
 - id: kangxi-aobai
-  date: "1669"
+  date: '1669-06-14'
   title: 康熙智擒鳌拜
   category: 政治
-  tags: [清朝, 典故]
   importance: 4
-  summary: 康熙帝十六岁时训练布库少年，于武英殿设伏智擒专权跋扈辅政大臣鳌拜，亲理朝政。
+  summary: 康熙帝十六岁时训练布库少年，于武英殿设伏智擒专权跋扈的辅政大臣鳌拜并削夺其党羽，正式独掌皇权、亲理朝政。
   confidence: 确定
-  sources: [清史稿·圣祖本纪]
-
+  related_dynasties:
+    - qing
+  tags:
+    - 康熙帝
+    - 鳌拜
+    - 清朝政治
+    - 少年亲政
+  sources:
+    - 清史稿·圣祖本纪
+    - 清圣祖实录
 - id: sanfan-zhiluan
-  date: "1673"
+  date: '1673-12-28'
   title: 康熙平定三藩之乱
   category: 战争
-  tags: [清朝, 削藩]
   importance: 4
-  summary: 吴三桂等三藩举兵叛清，康熙帝历时八年削平三藩，巩固大一统国家版图。
+  summary: 平西王吴三桂、平南王尚之信、靖南王耿精忠举兵反清，康熙帝坚定主张削藩，历时八年最终全歼三藩势力，消除地方割据隐患，巩固了国家统一。
   confidence: 确定
-  sources: [清史稿·圣祖本纪]
-
+  related_dynasties:
+    - qing
+  tags:
+    - 三藩之乱
+    - 康熙帝
+    - 吴三桂
+    - 国家统一
+  sources:
+    - 清史稿·圣祖本纪
+    - 平定三逆方略
 - id: taiwan-incorporation-1683
-  date: "1683"
-  title: 台湾归入版图
+  date: '1683-10-03'
+  title: 施琅收复台湾，清朝设台湾府
   category: 政治
-  importance: 4
-  summary: 施琅率清军平定台湾，清朝设台湾府，隶福建省。
+  importance: 5
+  summary: 水师提督施琅率清军在澎湖海战大捷，郑克塽降清，台湾归入国家统一版图。清廷次年正式设立台湾府，隶属福建省，设总兵防守并推行沿海经略。
   confidence: 确定
-  sources: [清史稿·圣祖本纪]
-
+  related_dynasties:
+    - qing
+  tags:
+    - 施琅
+    - 统一台湾
+    - 台湾府
+    - 边疆治理
+    - 历史转折
+  sources:
+    - 清史稿·圣祖本纪
+    - 清史稿·施琅传
+- id: yakesa-campaign-1685
+  date: '1685'
+  title: 雅克萨之战
+  category: 战争
+  importance: 5
+  summary: 沙俄越境据守雅克萨城后，清军水陆进剿并迫使守军撤出，黑龙江流域的边界冲突由军事行动转入谈判阶段。
+  confidence: 确定
+  related_dynasties: [qing]
+  tags: [雅克萨, 中俄边界, 康熙, 黑龙江]
+  sources: [清史稿·圣祖本纪, 清圣祖实录]
+- id: nerchinsk-treaty-1689
+  date: '1689-09-07'
+  title: 中俄签订《尼布楚条约》
+  category: 政治
+  importance: 5
+  summary: 在雅克萨自卫反击战击败沙俄侵略军后，清朝全权代表索额图与沙俄代表在尼布楚谈判签署条约，从法律上确立外兴安岭和黑龙江、乌苏里江流域皆为中国领土。
+  confidence: 确定
+  related_dynasties:
+    - qing
+  tags:
+    - 尼布楚条约
+    - 雅克萨之战
+    - 索额图
+    - 中俄边界
+    - 外交
+    - 历史转折
+  sources:
+    - 清史稿·圣祖本纪
+    - 清圣祖实录
+- id: kangxi-galdan-1690
+  date: '1690-09-03'
+  title: 乌兰布通之战与康熙亲征噶尔丹
+  category: 战争
+  importance: 4
+  summary: 准噶尔部首领噶尔丹率军内犯漠北与漠南蒙古，康熙帝率军亲征，在乌兰布通击溃噶尔丹军；后又于昭莫多彻底击溃其主力，漠北蒙古各部归附清廷。
+  confidence: 确定
+  related_dynasties:
+    - qing
+  tags:
+    - 噶尔丹
+    - 准噶尔
+    - 乌兰布通之战
+    - 康熙亲征
+  sources:
+    - 清史稿·圣祖本纪
+    - 亲征平定朔漠方略
+- id: zhaomodo-battle-1696
+  date: '1696'
+  title: 昭莫多之战
+  category: 战争
+  importance: 5
+  summary: 康熙帝亲征噶尔丹期间，清军在昭莫多击溃准噶尔主力，噶尔丹势力由此受到决定性打击，漠北蒙古局势进一步转向清廷控制。
+  confidence: 确定
+  related_dynasties: [qing]
+  tags: [昭莫多, 噶尔丹, 准噶尔, 康熙亲征]
+  sources: [清史稿·圣祖本纪, 亲征平定朔漠方略]
+- id: shengshi-zisheng-1712
+  date: '1712-03-01'
+  title: 康熙颁布“盛世滋生人丁，永不加赋”
+  category: 经济
+  importance: 4
+  summary: 康熙帝颁布上谕，以康熙五十一年全国人丁数（2462万）为定额，此后所生人丁永不加征人头税，为人头税并入田赋（摊丁入亩）奠定了关键制度前提。
+  confidence: 确定
+  related_dynasties:
+    - qing
+  tags:
+    - 永不加赋
+    - 赋税改革
+    - 康熙盛世
+    - 人口增长
+  sources:
+    - 清史稿·食货志
+    - 清圣祖实录
+  dispute: “2462万”是清代人丁册籍所载的制度基准，统计口径与现代人口概念不同；本条只确认“永不加赋”政策及其制度影响，不把该数字当作精确人口总数。
 - id: tandingrumou-1723
-  date: "1723"
-  title: 摊丁入亩、改土归流
+  date: '1723-11-23'
+  title: 雍正推行“摊丁入亩”与“火耗归公”
+  category: 经济
+  importance: 5
+  summary: 雍正帝即位后推进财政赋税改革，在各地将丁银逐步摊入地亩征收，形成地丁银；同时推行火耗归公与养廉银，整顿地方财政并改善官员经费来源。
+  confidence: 确定
+  related_dynasties:
+    - qing
+  tags:
+    - 摊丁入亩
+    - 地丁银
+    - 火耗归公
+    - 雍正改革
+    - 历史转折
+  sources:
+    - 清史稿·世宗本纪
+    - 清史稿·食货志
+  dispute: 摊丁入亩与火耗归公在不同省区分期推进，完成时间和具体办法并不一致；本条概括制度方向，不把1723年视为全国同日完成，也不作“彻底废除人头税”的绝对化表述。
+- id: lobzang-danjin-rebellion-1723
+  date: '1723'
+  title: 清军平定罗卜藏丹津叛乱
+  category: 战争
+  importance: 4
+  summary: 雍正时期，青海蒙古和硕特部首领罗卜藏丹津起兵，清廷派年羹尧、岳钟琪等率军平定，随后加强对青海地区的军政控制，成为清朝西北治理和后续对准噶尔行动的重要节点。
+  confidence: 确定
+  related_dynasties: [qing]
+  tags: [罗卜藏丹津, 青海, 雍正, 西北治理]
+  sources: [清史稿·世宗本纪, 清世宗实录, 平定青海方略]
+- id: gaitu-guiliu-1726
+  date: '1726-06-01'
+  title: 鄂尔泰主持西南大规模“改土归流”
   category: 政治
   importance: 4
-  summary: 雍正帝推行摊丁入亩与改土归流，废除人头税，加强西南边疆统治。
+  summary: 雍正帝采纳云贵总督鄂尔泰建议，在云南、贵州、广西、四川等西南少数民族地区废除世袭土司，改由朝廷委派流官直接治理，极大加强了中央对西南边疆的统辖。
   confidence: 确定
-  sources: [清史稿·世宗本纪]
-
-- id: macartney-mission-1793
-  date: "1793"
-  title: 马戛尔尼使华
+  related_dynasties:
+    - qing
+  tags:
+    - 改土归流
+    - 鄂尔泰
+    - 西南边疆
+    - 雍正政治
+  sources:
+    - 清史稿·世宗本纪
+    - 清史稿·鄂尔泰传
+- id: tibet-ministers-kyakhta-1727
+  date: '1727-09-01'
+  title: 清廷设立驻藏大臣
   category: 政治
-  importance: 3
-  summary: 英国马戛尔尼使团抵华觐见乾隆帝，请求通商被拒，东西方文明首次正面接触。
+  importance: 4
+  summary: 清政府正式设立驻藏大臣统管西藏事务，标志中央政府对西藏管辖进一步制度化。
   confidence: 确定
-  sources: [清史稿·高宗本纪]
-  tags: [外交]
-
+  related_dynasties:
+    - qing
+  tags:
+    - 驻藏大臣
+    - 边疆治理
+    - 西藏
+  sources:
+    - 清史稿·世宗本纪
+    - 清世宗实录
+- id: kyakhta-treaty-1727
+  date: '1727-06-25'
+  title: 中俄签订《恰克图条约》
+  category: 政治
+  importance: 4
+  summary: 清政府与沙俄签订《恰克图条约》，在《尼布楚条约》基础上进一步划定中俄中段边界，并确立恰克图等地的边贸与交涉规则，成为清俄长期边界治理的重要制度节点。
+  confidence: 确定
+  related_dynasties: [qing]
+  tags: [恰克图条约, 清俄关系, 边界治理, 边贸, 外交]
+  sources: [清史稿·世宗本纪, 清世宗实录]
+- id: grand-council-1729
+  date: '1729-07-05'
+  title: 雍正设立军机处
+  category: 政治
+  importance: 5
+  summary: 雍正帝因西北用兵设立军需房，后定名为军机处。由皇帝亲选满汉亲信大臣任军机大臣，直接跪受笔录传达圣旨，彻底架空议政王大臣会议与内阁，标志中国封建君主专制集权达到顶峰。
+  confidence: 确定
+  related_dynasties:
+    - qing
+  tags:
+    - 军机处
+    - 君主专制顶峰
+    - 雍正帝
+    - 政治制度
+    - 历史转折
+  sources:
+    - 清史稿·世宗本纪
+    - 清史稿·职官志
+- id: hu-zhongzao-literary-inquisition-1755
+  date: '1755'
+  title: 胡中藻文字狱
+  category: 政治
+  importance: 4
+  summary: 乾隆年间诗人胡中藻因诗文获罪，案件牵连其师友并引发查禁，成为清代文字狱与文化控制的典型案例。
+  confidence: 有争议
+  dispute: 案件罪名和诗句解释带有政治审判色彩，本条只确认案件与文字审查，不复述后世附会的逐句寓意。
+  related_dynasties: [qing]
+  tags: [清, 乾隆, 文字狱, 文化控制]
+  sources: [清史稿·高宗本纪, 清史稿·胡中藻传]
+- id: qianlong-xinjiang-1759
+  date: '1759-08-16'
+  title: 乾隆平定大小和卓叛乱，统一新疆
+  category: 战争
+  importance: 5
+  summary: 清军相继平定准噶尔汗国与天山南路大小和卓叛乱，乾隆帝将天山南北广袤地区定名为「新疆」（故土新归），并在惠远城设立伊犁将军管辖全疆军政，彻底奠定现代中国西北疆域大一统版图。
+  confidence: 确定
+  related_dynasties:
+    - qing
+  tags:
+    - 平定准部回部
+    - 统一新疆
+    - 伊犁将军
+    - 乾隆十全武功
+    - 历史转折
+  sources:
+    - 清史稿·高宗本纪
+    - 平定准噶尔方略
+- id: guangzhou-single-port-1757
+  date: '1757-11-10'
+  title: 乾隆实行广州“一口通商”
+  category: 经济
+  importance: 4
+  summary: 清廷下令关闭江、浙、闽三处海关，仅保留广州一处作为对西方贸易通商口岸，所有进出口贸易统一由特许的「广州十三行」行商垄断包办，标志严格闭关锁国政策的制度化。
+  confidence: 确定
+  related_dynasties:
+    - qing
+  tags:
+    - 一口通商
+    - 广州十三行
+    - 闭关锁国
+    - 乾隆对外政策
+  sources:
+    - 清史稿·高宗本纪
+    - 粤海关志
+- id: torghut-return-1771
+  date: '1771-07-08'
+  title: 土尔扈特部万里东归
+  category: 政治
+  importance: 4
+  summary: 渥巴锡率领远徙伏尔加河流域百余年的蒙古土尔扈特部十七万余众冲破沙俄军队追击，历经千难万险返回祖国新疆伊犁，受到乾隆帝盛大接见与安置，谱写了中华民族大团圆的历史篇章。
+  confidence: 确定
+  related_dynasties:
+    - qing
+  tags:
+    - 土尔扈特东归
+    - 渥巴锡
+    - 民族团结
+    - 乾隆接见
+  sources:
+    - 清史稿·高宗本纪
+    - 皇朝文献通考
+- id: siku-quanshu-1782
+  date: '1782-03-12'
+  title: 《四库全书》编纂告成
+  category: 文化
+  importance: 4
+  summary: 纪晓岚等数百位著名学者历时十年，将先秦至清代浩瀚典籍分经、史、子、集四部编纂成中国古代规模最大的丛书《四库全书》（共收书3500余种、近8万卷），保存了海量古籍文献，但编书期间亦伴随严酷文字狱与禁毁典籍。
+  confidence: 确定
+  related_dynasties:
+    - qing
+  tags:
+    - 四库全书
+    - 纪晓岚
+    - 文献整理
+    - 清代文化
+  sources:
+    - 清史稿·高宗本纪
+    - 四库全书总目提要
+- id: qing-proscribed-books-1774
+  date: '1774'
+  title: 乾隆时期查禁与销毁书籍
+  category: 文化
+  importance: 4
+  summary: 乾隆朝编纂《四库全书》前后，清廷以查缴违碍书籍、禁毁和改窜等方式控制知识传播，部分明遗民著作及被判定为违碍的书籍因此散佚或残缺。
+  confidence: 有争议
+  dispute: 禁毁书的具体数量、书目范围和执行强度因目录版本与研究口径而异，本条只确认查禁与禁毁机制，不采用单一统计数字。
+  related_dynasties: [qing]
+  tags: [乾隆, 禁书, 禁毁书, 四库全书, 文化控制]
+  sources: [四库全书总目提要, 清史稿·高宗本纪]
+- id: golden-urn-1792
+  date: '1792-10-01'
+  title: 乾隆确立“金瓶掣签”制度
+  category: 政治
+  importance: 4
+  summary: 清廷颁布《钦定藏内善后章程二十九条》，铸造金瓶颁赐大昭寺与雍和宫，确立达赖喇嘛与班禅额尔德尼等大活佛转世灵童须经金瓶掣签认定并由驻藏大臣主持、报请中央朝廷批准的法定制度。
+  confidence: 确定
+  related_dynasties:
+    - qing
+  tags:
+    - 金瓶掣签
+    - 西藏治理
+    - 钦定章程
+    - 达赖班禅
+  sources:
+    - 清史稿·高宗本纪
+    - 钦定藏内善后章程二十九条
+- id: macartney-mission-1793
+  date: '1793-09-14'
+  title: 英国马戛尔尼使团访华
+  category: 政治
+  importance: 4
+  summary: 英国马戛尔尼使团抵达避暑山庄觐见乾隆帝，提出开设口岸、割占岛屿及派驻使节等要求，遭到清廷全盘拒绝。使团暗中探明清朝军事虚弱与落后，东西方文明遭遇重大错失与碰撞。
+  confidence: 确定
+  related_dynasties:
+    - qing
+  tags:
+    - 马戛尔尼使团
+    - 乾隆接见
+    - 东西方碰撞
+    - 外交
+  sources:
+    - 清史稿·高宗本纪
+    - 清高宗实录
+- id: bailianjiao-uprising-1796
+  date: '1796-02-15'
+  title: 川楚白莲教大起义爆发
+  category: 战争
+  importance: 4
+  summary: 湖北、四川、陕西三省交界地区爆发大规模白莲教农民起义，王聪儿等领导义军转战川楚陕达九年之久，重创清朝八旗与绿营主力，耗费清廷军费两亿两白银，清王朝由此由盛转衰（嘉道中衰）。
+  confidence: 确定
+  related_dynasties:
+    - qing
+  tags:
+    - 白莲教起义
+    - 王聪儿
+    - 嘉道中衰
+    - 清朝衰落
+  sources:
+    - 清史稿·仁宗本纪
+    - 平定三省白莲教方略
 - id: humen-xiaoyan
-  date: "1839-06"
+  date: '1839-06-03'
   title: 林则徐虎门销烟
   category: 政治
-  tags: [禁烟, 近代史序幕]
   importance: 5
-  summary: 钦差大臣林则徐在广州虎门海滩当众销毁英国毒害中国百姓之鸦片，彰显禁烟决心。
+  summary: 钦差大臣林则徐在广东水师提督关天培配合下，将收缴英美鸦片贩子的237万斤鸦片于广州虎门海滩当众销毁，沉重打击了西方毒品侵略，展现中华民族反抗外国掠夺的钢铁意志，成为中国近代史的光辉前奏。
   confidence: 确定
-  sources: [清史稿·林则徐传]
-
-- id: opium-war-1840
-  date: "1840"
-  title: 鸦片战争
+  related_dynasties:
+    - qing
+  tags:
+    - 虎门销烟
+    - 林则徐
+    - 禁烟运动
+    - 关天培
+    - 民族英雄
+    - 历史转折
+  sources:
+    - 清史稿·宣宗本纪
+    - 清史稿·林则徐传
+- id: cn-opium-war-184006
+  date: '1840-06-28'
+  title: 第一次鸦片战争爆发
   category: 战争
-  tags: [战争, 近代史, 历史转折]
   importance: 5
-  summary: 英国发动鸦片战争，清朝战败签订《南京条约》，中国开始沦为半殖民地半封建社会。
+  summary: 英国舰队封锁珠江口并北上攻陷定海，第一次鸦片战争全面爆发。清政府因闭关锁国与武器陈旧遭沉重打击，中国近代史自此拉开序幕。
   confidence: 确定
-  sources: [清史稿·宣宗本纪]
-
-
-- id: taiping-rebellion-1851
-  date: "1851"
-  title: 金田起义，太平天国起
-  category: 战争
-  importance: 4
-  summary: 洪秀全于广西金田村发动起义，建号太平天国，建都天京（南京）。
-  confidence: 确定
-  sources: [清史稿·洪秀全传]
-
-- id: yangwu-movement-1861
-  date: "1861"
-  title: 洋务运动始
-  category: 政治
-  tags: [洋务运动, 科技, 工业]
-  importance: 4
-  summary: 恭亲王奕訢（yì xīn）、曾国藩、李鸿章等主导洋务运动，提出「自强」「求富」，开启中国近代化进程。
-  confidence: 确定
-  sources: [清史稿·穆宗本纪]
-
-- id: sino-japanese-war-1894
-  date: "1894"
-  title: 甲午战争
-  category: 战争
-  tags: [战争, 甲午, 历史转折]
-  importance: 5
-  summary: 中日甲午战争爆发，清朝战败，签《马关条约》，割让台湾，洋务运动破产。
-  confidence: 确定
-  sources: [清史稿·德宗本纪]
-
-- id: wuxu-reform-1898
-  date: "1898"
-  title: 戊戌变法
+  tags:
+    - 鸦片战争
+    - 近代史序幕
+    - 中英关系
+    - 历史转折
+  sources:
+    - 清史稿·宣宗本纪
+    - 中文维基百科
+    - 英文维基百科
+  image:
+    url: /images/events/1840/cn-opium-war-184006.jpg
+    caption: 第一次鸦片战争时期英军战舰与清军水师交战历史图画
+    source: https://commons.wikimedia.org/wiki/File:Opium_War_cannon_Windsor_Castle.jpg
+    author: Royal Collection Trust / Period Artist
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-lin-dismissal-184009
+  date: '1840-09-28'
+  title: 林则徐被革职查办
   category: 政治
   importance: 4
-  summary: 光绪帝采纳康有为、梁启超建议推行维新变法，历时百日被慈禧太后戊戌政变镇压。
+  summary: 道光帝因英军逼近天津大沽口而动摇禁烟决心，下旨将钦差大臣林则徐革职查办，改派直隶总督琦善南下广州与英军议和。
   confidence: 确定
-  sources: [清史稿·德宗本纪]
-
-- id: boxer-rebellion-1900
-  date: "1900"
-  title: 庚子国变，八国联军入京
+  tags:
+    - 林则徐
+    - 禁烟
+    - 晚清政局
+  sources:
+    - 清史稿·宣宗本纪
+    - 清史稿·林则徐传
+  related_dynasties:
+    - qing
+- id: cn-humen-battle-guanyaotian-184102
+  date: '1841-02-26'
+  title: 虎门保卫战关天培壮烈殉国
   category: 战争
   importance: 4
-  summary: 义和团运动兴起，八国联军攻陷北京，清朝签《辛丑条约》，丧权辱国达于极点。
+  summary: 英军大举进攻虎门要塞，广东水师提督关天培率部在靖远炮台与敌死战，终因寡不敌众、援军不至而壮烈殉国，虎门要塞沦陷。
   confidence: 确定
-  sources: [清史稿·德宗本纪]
-
-- id: xinhai-revolution-1911
-  date: "1911"
-  title: 辛亥革命
+  tags:
+    - 虎门保卫战
+    - 关天培
+    - 抗英民族英雄
+  sources:
+    - 清史稿·关天培传
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-sanyuanli-incident-184105
+  date: '1841-05-30'
+  title: 广州三元里人民抗英斗争
+  category: 战争
+  importance: 4
+  summary: 广州城北三元里及附近村庄数千民众自发组织武装，包围并重创侵入四方炮台一带的英国侵略军，是中国近代史上中国人民自发抵抗外敌侵略的著名开端。
+  confidence: 确定
+  tags:
+    - 三元里抗英
+    - 群众自发抗争
+    - 反侵略
+  sources:
+    - 清史稿·宣宗本纪
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-treaty-of-nanking-184208
+  date: '1842-08-29'
+  title: 中英签署《南京条约》
   category: 政治
-  tags: [革命, 历史转折]
   importance: 5
-  summary: 武昌起义爆发，各省纷纷响应，推翻清朝封建君主专制统治。
+  summary: 清廷钦差大臣耆英、伊里布在南京下关江面英国军舰康华丽号上与英国全权代表璞鼎查签订中国近代史上第一个不平等条约《南京条约》，割让香港岛、赔款2100万银元并开放广州、福州、厦门、宁波、上海五口通商，中国开始沦为半殖民地半封建社会。
   confidence: 确定
-  sources: [清史稿·宣统帝纪]
+  tags:
+    - 南京条约
+    - 不平等条约
+    - 割让香港
+    - 五口通商
+    - 历史转折
+  sources:
+    - 清史稿·宣宗本纪
+    - 清代外交档案
+    - 中文维基百科
+    - 英文维基百科
+  image:
+    url: /images/events/1842/cn-treaty-of-nanking-184208.jpg
+    caption: 1842年中英在英国军舰康华丽号上签署《南京条约》的历史油画
+    source: https://commons.wikimedia.org/wiki/File:The_Signing_of_the_Treaty_of_Nanking.jpg
+    author: Captain Edward Hawker, Royal Navy
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-haiguo-tuzhi-1842
+  date: 1842-12
+  title: 魏源编撰《海国图志》刊刻出版
+  category: 文化
+  importance: 4
+  summary: 魏源受林则徐嘱托，在《四洲志》等西方资料基础上编撰完成近代著名世界地理历史巨著《海国图志》，首倡「师夷长技以制夷」的思想，对近代中国及日本明治维新时期的思想启蒙均产生深远影响。
+  confidence: 确定
+  tags:
+    - 海国图志
+    - 魏源
+    - 师夷长技以制夷
+    - 思想启蒙
+  sources:
+    - 清史稿·文苑传·魏源
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-treaty-of-bogue-184310
+  date: '1843-10-08'
+  title: 中英签署《虎门条约》
+  category: 政治
+  importance: 4
+  summary: 清廷钦差大臣耆英与英国公使璞鼎查在广东虎门签署《五口通商附粘善后条款》（虎门条约），英国通过该约攫取了领事裁判权、片面最惠国待遇以及通商口岸租地建屋居留等特权。
+  confidence: 确定
+  tags:
+    - 虎门条约
+    - 领事裁判权
+    - 片面最惠国待遇
+  sources:
+    - 清史稿·邦交志
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-shanghai-port-opened-184311
+  date: '1843-11-17'
+  title: 上海正式对外开埠通商
+  category: 经济
+  importance: 4
+  summary: 根据《南京条约》规定，英国首任驻沪领事巴富尔宣布上海正式对外开埠，海关设立。上海自此由传统江海航运市镇迅速演变为远东首要的国际贸易与近代金融工商业中心。
+  confidence: 确定
+  tags:
+    - 上海开埠
+    - 口岸贸易
+    - 近代化
+  sources:
+    - 上海通史
+    - 清史稿·地理志
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-treaty-wanghia-184407
+  date: '1844-07-03'
+  title: 中美签署《望厦条约》
+  category: 政治
+  importance: 4
+  summary: 清廷两广总督耆英与美国全权公使顾盛在澳门望厦村签订《中美五口贸易章程》（望厦条约），美国获得了除割地、赔款外英国在华取得的全部特权，并扩大了领事裁判权与兵船自由出入通商口岸特权。
+  confidence: 确定
+  tags:
+    - 望厦条约
+    - 中美关系
+    - 不平等条约
+  sources:
+    - 清史稿·邦交志
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-treaty-whampoa-184410
+  date: '1844-10-24'
+  title: 中法签署《黄埔条约》
+  category: 政治
+  importance: 4
+  summary: 清廷代表耆英与法国专使拉萼尼在广州黄埔停泊的法国阿基米德号军舰上签署《中法五口贸易章程》（黄埔条约），法国获得在通商口岸建立教堂、墓地及传教特权，清廷随后正式解除天主教禁令。
+  confidence: 确定
+  tags:
+    - 黄埔条约
+    - 中法关系
+    - 天主教解禁
+  sources:
+    - 清史稿·邦交志
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-shanghai-concession-184511
+  date: '1845-11-29'
+  title: 上海设立英租界（近代首个租界）
+  category: 政治
+  importance: 4
+  summary: 上海道台宫慕久与英国领事巴富尔共同公布《上海土地章程》，划定黄浦江沿岸外滩一带约830亩土地为英商居留地，标志着外国列强在近代中国的第一个租界正式建立，形成「国中之国」畸形体制。
+  confidence: 确定
+  tags:
+    - 上海英租界
+    - 土地章程
+    - 租界制度
+  sources:
+    - 上海租界志
+    - 清史稿·地理志
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-tianzhujiao-lift-ban-184602
+  date: '1846-02-20'
+  title: 道光帝下诏解除天主教禁令
+  category: 文化
+  importance: 3
+  summary: 清宣宗道光帝应法国公使要求正式颁布上谕，取消自清初雍正年间以来的天主教禁令，准许天主教在华传教，发还旧日没收的教堂教产。
+  confidence: 确定
+  tags:
+    - 天主教解禁
+    - 宗教政策
+    - 晚清外交
+  sources:
+    - 清史稿·宣宗本纪
+    - 清实录
+  related_dynasties:
+    - qing
+- id: cn-bai-shangdi-hui-1847
+  date: '1847'
+  title: 洪秀全在广西紫荆山发展拜上帝会
+  category: 文化
+  importance: 4
+  summary: 洪秀全与冯云山深入广西桂平紫荆山区深入传教，撰写《原道救世歌》《原道醒世训》等教义，吸收杨秀清、萧朝贵、韦昌辉、石达开等骨干，会众扩展至数千人，形成严密的秘密反清组织。
+  confidence: 确定
+  tags:
+    - 拜上帝会
+    - 洪秀全
+    - 冯云山
+    - 太平天国准备
+  sources:
+    - 清史稿·洪秀全传
+    - 太平天国起义记
+  related_dynasties:
+    - qing
+- id: cn-yinghuan-zhilue-1848
+  date: '1848'
+  title: 徐继畬刊印世界地理名著《瀛寰志略》
+  category: 文化
+  importance: 4
+  summary: 福建巡抚徐继畬历时五年完成近代世界地理巨著《瀛寰志略》十卷刻印，客观评述欧美各国的地理地貌、历史沿革、民主宪政制度及科技工业，是中国早期近代放眼看世界的又一经典文献。
+  confidence: 确定
+  tags:
+    - 瀛寰志略
+    - 徐继畬
+    - 地理学
+    - 思想启蒙
+  sources:
+    - 清史稿·徐继畬传
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-macau-governor-assassinated-184908
+  date: '1849-08-22'
+  title: 澳门总督亚马留遭香山义士刺杀
+  category: 政治
+  importance: 4
+  summary: 葡萄牙派驻澳门总督亚马留推行激进扩张政策，强行封闭粤海关南湾关卡并占领关闸，驱逐清朝官吏。香山青年沈志亮等七位义士于关闸附近将其刺杀，引发中葡边境军事紧张。
+  confidence: 确定
+  tags:
+    - 澳门问题
+    - 亚马留
+    - 沈志亮
+    - 中葡关系
+  sources:
+    - 清史稿·宣宗本纪
+    - 澳门编年史
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-daoguang-dies-xianfeng-185002
+  date: '1850-02-25'
+  title: 道光帝驾崩，咸丰帝奕詝继位
+  category: 政治
+  importance: 4
+  summary: 在位三十年的清宣宗旻宁（道光帝）在圆明园驾崩，终年69岁。皇四子奕詝遵遗诏即皇帝位，改元咸丰，晚清政局进入内外交困的剧烈震荡期。
+  confidence: 确定
+  tags:
+    - 道光帝
+    - 咸丰帝
+    - 帝位更替
+    - 清朝皇室
+  sources:
+    - 清史稿·文宗本纪
+    - 清史稿·宣宗本纪
+  related_dynasties:
+    - qing
+- id: cn-lin-zexu-passes-185011
+  date: '1850-11-22'
+  title: 民族英雄林则徐赴任途中逝世
+  category: 政治
+  importance: 4
+  summary: 咸丰帝起用林则徐为钦差大臣督办广西军务以镇压天地会与拜上帝会活动。林则徐抱病自福州启程，行至广东普宁行馆病逝，享年66岁，朝廷追赠太子太保，谥文忠。
+  confidence: 确定
+  tags:
+    - 林则徐
+    - 民族英雄
+    - 晚清名臣
+  sources:
+    - 清史稿·林则徐传
+    - 清史稿·文宗本纪
+  related_dynasties:
+    - qing
+- id: cn-jintian-uprising-185101
+  date: '1851-01-11'
+  title: 太平天国金田起义爆发
+  category: 战争
+  importance: 5
+  summary: 洪秀全在广西桂平县金田村率拜上帝会两万余众誓师起义，建号「太平天国」，自称「天王」，颁布严明军律，由此掀起中国近代历史上规模最为宏大、历时十四年的反清农民战争。
+  confidence: 确定
+  tags:
+    - 金田起义
+    - 太平天国
+    - 洪秀全
+    - 农民战争
+    - 历史转折
+  sources:
+    - 清史稿·洪秀全传
+    - 清史稿·文宗本纪
+    - 太平天国史
+    - 中文维基百科
+  image:
+    url: /images/events/1851/cn-jintian-uprising-185101.jpg
+    caption: 太平天国金田起义与永安封王历史遗存建筑
+    source: https://commons.wikimedia.org/wiki/File:Taiping_Rebellion_Yongan_Site_(16).jpg
+    author: Wikimedia Commons contributor
+    license: CC-BY-SA 4.0
+  related_dynasties:
+    - qing
+- id: cn-yong-an-fengwang-185112
+  date: '1851-12-17'
+  title: 太平天国永安建制封王
+  category: 政治
+  importance: 4
+  summary: 太平军攻克广西永安州城后，洪秀全在此建立各项军政制度并诏封诸王：封杨秀清为东王、萧朝贵为西王、冯云山为南王、韦昌辉为北王、石达开为翼王，确立东王节制诸王的领导核心体制。
+  confidence: 确定
+  tags:
+    - 永安建制
+    - 太平天国
+    - 永安封王
+    - 杨秀清
+  sources:
+    - 清史稿·洪秀全传
+    - 太平天国文书
+  related_dynasties:
+    - qing
+- id: cn-taiping-march-hunan-1852
+  date: 1852-04
+  title: 太平军突围永安进军湖南
+  category: 战争
+  importance: 4
+  summary: 太平军从永安突围北上转战桂湘边境，南王冯云山在全州牺牲、西王萧朝贵在围攻长沙时牺牲。太平军随后攻克岳州缴获大量船只火炮，沿长江顺流东进，声势大振。
+  confidence: 确定
+  tags:
+    - 太平天国
+    - 北伐转战
+    - 长沙保卫战
+  sources:
+    - 清史稿·洪秀全传
+    - 清史稿·文宗本纪
+  related_dynasties:
+    - qing
+- id: cn-zeng-guofan-xiang-army-1853
+  date: '1853'
+  title: 曾国藩在湖南创办湘军
+  category: 战争
+  importance: 4
+  summary: 在籍工部右侍郎曾国藩奉咸丰帝严旨督办湖南团练。他克服重重阻力在衡州创立新式水陆武装「湘军」，采用兵随将转、饷由将筹的制度，成为晚清抗击太平军的最重要军事支柱。
+  confidence: 确定
+  tags:
+    - 曾国藩
+    - 湘军创立
+    - 团练
+    - 晚清军事
+  sources:
+    - 清史稿·曾国藩传
+    - 曾国藩全集
+  related_dynasties:
+    - qing
+- id: cn-taiping-tianjing-capital-185303
+  date: '1853-03-19'
+  title: 太平军攻克南京定都天京
+  category: 政治
+  importance: 5
+  summary: 太平军主力攻克两江总督驻地江宁（南京），洪秀全宣布改江宁为「天京」并定为太平天国国都。随后颁布《天朝田亩制度》，主张「有田同耕，有饭同食」，正式建立起与清朝朝廷南北对峙的政权。
+  confidence: 确定
+  tags:
+    - 天京定都
+    - 太平天国
+    - 天朝田亩制度
+    - 历史转折
+  sources:
+    - 清史稿·洪秀全传
+    - 清史稿·文宗本纪
+    - 天朝田亩制度
+    - 中文维基百科
+  image:
+    url: /images/events/1853/cn-taiping-tianjing-capital-185303.jpg
+    caption: 南京天王府（太平天国总统府旧址）天朝宫殿模型
+    source: https://commons.wikimedia.org/wiki/File:Taiping_Heavenly_Kingdom_Palace_Model.jpg
+    author: Wikimedia Commons contributor
+    license: Public domain / CC-BY-SA
+  related_dynasties:
+    - qing
+- id: cn-xiaodao-hui-shanghai-185309
+  date: '1853-09-07'
+  title: 上海小刀会发动武装起义
+  category: 战争
+  importance: 4
+  summary: 民间秘密结社小刀会领袖刘丽川、潘启祥等在上海发动武装起义，占领上海县城与海关衙门，宣布响应太平天国，在英法等列强与清军联手围攻下坚守抵抗长达近一年半。
+  confidence: 确定
+  tags:
+    - 小刀会起义
+    - 刘丽川
+    - 上海历史
+  sources:
+    - 上海通史
+    - 清史稿·文宗本纪
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-xiang-army-xiangtan-185404
+  date: 1854-04
+  title: 湘军取得湘潭战役胜利
+  category: 战争
+  importance: 4
+  summary: 湘军塔齐布、彭玉麟部在湖南湘潭重创太平军林绍璋部西征主力，击毙击沉太平军船只数百艘，遏制了太平军夺取长沙的战略企图，成为湘军建军以来的第一次重大战役转折。
+  confidence: 确定
+  tags:
+    - 湘潭战役
+    - 湘军
+    - 太平天国西征
+  sources:
+    - 清史稿·曾国藩传
+    - 清史稿·文宗本纪
+  related_dynasties:
+    - qing
+- id: cn-shanghai-customs-foreign-185407
+  date: '1854-07-12'
+  title: 上海建立江海关外籍税务司制度
+  category: 经济
+  importance: 4
+  summary: 英、美、法三国领事乘小刀会起义上海海关瘫痪之机，与上海道台吴健彰达成协议，由三国各派一人组成税务管理委员会接管关税征收，开启近代外国列强直接控制中国海关行政与关税权的开端。
+  confidence: 确定
+  tags:
+    - 江海关
+    - 外籍税务司
+    - 关税主权
+    - 海关史
+  sources:
+    - 中国近代海关史
+    - 上海租界志
+  related_dynasties:
+    - qing
+- id: cn-jiujiang-hukou-battle-185501
+  date: '1855-01-29'
+  title: 太平军九江湖口大捷
+  category: 战争
+  importance: 4
+  summary: 太平天国翼王石达开在江西九江、湖口指挥水陆两路伏击大败湘军水师，封锁鄱阳湖口并夺取曾国藩座船及文卷，曾国藩愤极欲投水自尽，太平军西征战场取得重大战略转机。
+  confidence: 确定
+  tags:
+    - 湖口大捷
+    - 石达开
+    - 曾国藩
+    - 太平天国西征
+  sources:
+    - 清史稿·石达开传
+    - 清史稿·曾国藩传
+  related_dynasties:
+    - qing
+- id: cn-yellow-river-avulsion-1855
+  date: '1855-08-01'
+  title: 黄河铜瓦厢决口重大改道
+  category: 灾害
+  importance: 5
+  summary: 黄河在河南兰考东坝头铜瓦厢发生特大决口溃决，洪水漫流豫东、鲁西南，夺大清河入渤海，彻底结束了自南宋建炎二年（1128年）以来长达727年由淮入黄（夺淮入海）的历史，造成华北数省巨大灾荒与难民潮，直接加剧了晚清捻军起义。
+  confidence: 确定
+  tags:
+    - 黄河改道
+    - 铜瓦厢决口
+    - 特大自然灾害
+    - 生态变迁
+    - 历史转折
+  sources:
+    - 清史稿·河渠志
+    - 中国水利史
+    - 中文维基百科
+  image:
+    url: /images/events/1855/cn-yellow-river-avulsion-1855.jpg
+    caption: 黄河铜瓦厢决口夺大清河入渤海入海口变迁与三角洲沉积历史图
+    source: https://commons.wikimedia.org/wiki/File:Building_Up_the_Yellow_River_Delta.jpeg
+    author: NASA Earth Observatory / USGS
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-tianjing-incident-185609
+  date: '1856-09-02'
+  title: 太平天国天京事变爆发
+  category: 政治
+  importance: 5
+  summary: 太平天国领导集团内部爆发严重权力火并。北王韦昌辉奉天王密诏率兵夜袭东王府杀东王杨秀清及其部属两万余人；随后石达开回京声讨，韦昌辉被处死；石达开因受洪秀全猜忌率数十万精锐出走，太平天国元气大伤，由盛转衰。
+  confidence: 确定
+  tags:
+    - 天京事变
+    - 杨秀清
+    - 韦昌辉
+    - 石达开
+    - 太平天国转折
+    - 历史转折
+  sources:
+    - 清史稿·洪秀全传
+    - 清史稿·文宗本纪
+    - 太平天国史
+    - 中文维基百科
+  image:
+    url: /images/events/1856/cn-tianjing-incident-185609.jpg
+    caption: 太平天国内部战乱与争夺南京城池历史战阵图
+    source: https://commons.wikimedia.org/wiki/File:Third_Battle_of_Nanking.jpg
+    author: Unknown period Chinese artist / National Palace Museum
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-arrow-incident-185610
+  date: '1856-10-08'
+  title: 亚罗号事件与第二次鸦片战争爆发
+  category: 战争
+  importance: 5
+  summary: 广东水师在广州黄埔检查走私船「亚罗号」并扣押中国籍水手，英国领事巴夏礼以此为借口挑起战端；法国随后亦以「马赖神甫西林教案」为由联合出兵，英法联军发动第二次鸦片战争全面侵华。
+  confidence: 确定
+  tags:
+    - 第二次鸦片战争
+    - 亚罗号事件
+    - 英法联军
+    - 历史转折
+  sources:
+    - 清史稿·文宗本纪
+    - 清史稿·邦交志
+    - 中文维基百科
+    - 英文维基百科
+  image:
+    url: /images/events/1856/cn-arrow-incident-185610.jpg
+    caption: 第二次鸦片战争期间英法海军舰队炮击进攻广州城历史画作
+    source: https://commons.wikimedia.org/wiki/File:Canton_Operations_in_1857.jpg
+    author: Thomas Goldsworthy Dutton / National Maritime Museum
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-guangzhou-capture-185712
+  date: '1857-12-28'
+  title: 英法联军攻陷广州俘虏叶名琛
+  category: 战争
+  importance: 4
+  summary: 英法联军5000余人炮击并攻占广州城，两广总督叶名琛被俘并被押解至印度加尔各答绝食而亡。联军在广州设立「联军委员会」实施殖民统治，成为近代中国第一个被列强傀儡占领的省城。
+  confidence: 确定
+  tags:
+    - 广州沦陷
+    - 叶名琛
+    - 英法联军
+    - 联军委员会
+  sources:
+    - 清史稿·叶名琛传
+    - 清史稿·文宗本纪
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-treaty-aigun-185805
+  date: '1858-05-28'
+  title: 中俄签署《瑷珲条约》
+  category: 政治
+  importance: 5
+  summary: 沙皇俄国乘英法联军进攻天津之机以武力相威胁，强迫黑龙江将军奕山在黑龙江瑷珲城签署《中俄瑷珲条约》，强行割占中国黑龙江以北、外兴安岭以南60多万平方公里的领土，并将乌苏里江以东约40万平方公里划为中俄「共管」，是中国近代史上割占领土面积最大的单一不平等条约。
+  confidence: 确定
+  tags:
+    - 瑷珲条约
+    - 中俄界约
+    - 沙俄侵华
+    - 领土割让
+    - 历史转折
+  sources:
+    - 清史稿·邦交志·俄罗斯传
+    - 清史稿·文宗本纪
+    - 中文维基百科
+    - 英文维基百科
+  image:
+    url: /images/events/1858/cn-treaty-aigun-185805.jpg
+    caption: 1858年中俄《瑷珲条约》与外东北边界割让历史地理图
+    source: https://commons.wikimedia.org/wiki/File:MANCHURIA-U.S.S.R_BOUNDARY_Ct002999.jpg
+    author: Library of Congress Geography and Map Division
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-treaty-tianjin-185806
+  date: '1858-06-27'
+  title: 清廷与俄美英法签订《天津条约》
+  category: 政治
+  importance: 5
+  summary: 英法联军攻占大沽炮台直逼天津，清廷被迫先后与俄、美、英、法四国签订《天津条约》，规定外国公使常驻北京、增开牛庄、登州、汉口、九江、南京、镇江、汕头、琼州、淡水、台湾十处通商口岸，外国军舰商船可在长江各口自由航行，外国人可到内地游历传教。
+  confidence: 确定
+  tags:
+    - 天津条约
+    - 公使驻京
+    - 内河航行权
+    - 十口通商
+    - 历史转折
+  sources:
+    - 清史稿·邦交志
+    - 清史稿·文宗本纪
+    - 中文维基百科
+    - 英文维基百科
+  image:
+    url: /images/events/1858/cn-treaty-tianjin-185806.jpg
+    caption: 1858年额尔金伯爵率英法代表在天津海光寺与清廷代表谈判签署《天津条约》历史画作
+    source: https://commons.wikimedia.org/wiki/File:Signing_of_the_Treaty_of_Tientsin-2.jpg
+    author: Illustrated London News / Period Artist
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-zizheng-xinpian-1859
+  date: '1859'
+  title: 洪仁玕总理朝政提出《资政新篇》
+  category: 政治
+  importance: 4
+  summary: 洪秀全族弟洪仁玕抵达天京被封为干王并总理朝政，主持撰写并颁布《资政新篇》，主张学习西方先进科技制度、发展近代工商业、修筑铁路、开办银行与邮政、设立报馆，是中国近代历史上第一个带有鲜明资本主义色彩的近代化建国纲领。
+  confidence: 确定
+  tags:
+    - 资政新篇
+    - 洪仁玕
+    - 近代化纲领
+    - 太平天国
+  sources:
+    - 清史稿·洪秀全传
+    - 资政新篇原刊本
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-dagu-battle-185906
+  date: '1859-06-25'
+  title: 大沽口保卫战取得重大胜利
+  category: 战争
+  importance: 4
+  summary: 英法舰队拒绝按清政府指定路线进京换约，擅自拆毁铁链强攻大沽口炮台。蒙古亲王僧格林沁指挥清军守备部队奋勇开炮还击，击沉击伤敌舰多艘，击毙击伤英法官兵四百余人，英国舰队司令贺布受重伤，取得近代反侵略罕见的大捷。
+  confidence: 确定
+  tags:
+    - 大沽口大捷
+    - 僧格林沁
+    - 第二次鸦片战争
+  sources:
+    - 清史稿·僧格林沁传
+    - 清史稿·文宗本纪
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-summer-palace-burnt-186010
+  date: '1860-10-18'
+  title: 英法联军占领北京并火烧圆明园
+  category: 战争
+  importance: 5
+  summary: 英法联军在八里桥击败清军后攻占北京城，咸丰帝仓皇携后妃出逃承德避暑山庄。额尔金下令英军连续三天洗劫并纵火焚毁「万园之园」皇家园林圆明园。恭亲王奕訢被迫出面与英、法、俄签订《北京条约》，确认《天津条约》有效，增开天津为商埠，割让九龙半岛南端予英国，沙俄更通过《中俄北京条约》强割乌苏里江以东约40万平方公里领土。
+  confidence: 确定
+  tags:
+    - 火烧圆明园
+    - 北京条约
+    - 九龙割让
+    - 沙俄割占海参崴
+    - 历史转折
+  sources:
+    - 清史稿·文宗本纪
+    - 清史稿·恭忠亲王奕訢传
+    - 中文维基百科
+    - 英文维基百科
+  image:
+    url: /images/events/1860/cn-summer-palace-burnt-186010.jpg
+    caption: 1860年英法联军焚毁圆明园后西洋楼远瀛观废墟历史全景照片
+    source: https://commons.wikimedia.org/wiki/File:Belvedere_of_the_God_of_Literature,_Summer_Palace,_Beijing,_6%E2%80%9318_October,_1860.jpg
+    author: Felice Beato (1832–1909)
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-zongli-yamen-186101
+  date: '1861-01-20'
+  title: 总理各国事务衙门设立
+  category: 政治
+  importance: 4
+  summary: 清廷依恭亲王奕訢、桂良等奏请正式设立「总理各国事务衙门」（简称总理衙门），奕訢出任首席大臣。总理衙门统管外交、通商、海关、修路、开矿及新式学堂与留学生事务，成为晚清中央推行洋务自强新政的核心决策机构。
+  confidence: 确定
+  tags:
+    - 总理各国事务衙门
+    - 奕訢
+    - 洋务运动
+    - 外交机构
+  sources:
+    - 清史稿·职官志
+- id: cn-xinyou-coup-186111
+  date: '1861-11-02'
+  title: 辛酉政变（两宫太后垂帘听政）
+  category: 政治
+  importance: 5
+  summary: 咸丰帝在承德避暑山庄驾崩，遗命肃顺等赞襄政务八大臣辅政。慈禧太后联合慈安太后及北京留守的恭亲王奕訢发动辛酉政变，诱捕并处决肃顺，改年号为「同治」，两宫太后正式于养心殿垂帘听政，奕訢出任议政王，开启晚清慈禧太后长达近半个世纪的最高统治，同时也为洋务运动铺平了政局道路。
+  confidence: 确定
+  tags:
+    - 辛酉政变
+    - 慈禧太后
+    - 恭亲王奕訢
+    - 垂帘听政
+    - 同治中兴
+    - 历史转折
+  sources:
+    - 清史稿·后妃传·孝钦显皇后
+    - 清史稿·穆宗本纪
+    - 中文维基百科
+    - 英文维基百科
+  image:
+    url: /images/events/1861/cn-xinyou-coup-186111.jpg
+    caption: 晚清实际最高统治者慈禧太后宫廷历史御容肖像
+    source: https://commons.wikimedia.org/wiki/File:Empress_Dowager_Cixi_(c._1890).jpg
+    author: Imperial Qing Court Photographer / Palace Museum
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-anqing-arsenal-186112
+  date: 1861-12
+  title: 曾国藩创办安庆内军械所
+  category: 文化
+  importance: 4
+  summary: 曾国藩湘军攻克安庆后设立安庆内军械所，聘请徐寿、华蘅芳等中国本土科学家主持设计制造枪炮火药及蒸汽动力机械，制造出中国近代第一台自主研发的蒸汽机和第一艘火轮船「黄鹄号」，拉开洋务派兴办近代军事工业的序幕。
+  confidence: 确定
+  tags:
+    - 安庆内军械所
+    - 曾国藩
+    - 徐寿
+    - 华蘅芳
+    - 洋务运动起步
+  sources:
+    - 清史稿·兵志
+    - 曾国藩全集
+    - 中国近代工业史
+  related_dynasties:
+    - qing
+- id: cn-tongwenguan-186208
+  date: '1862-08-24'
+  title: 京师同文馆正式开学
+  category: 文化
+  importance: 4
+  summary: 恭亲王奕訢奏设的京师同文馆在北京设立开学，初期设立英、法、俄馆培养外语翻译人才，后增设天文、算学、化学、格致等近代科学馆，聘请外国传教士如丁韪良任总教习，成为中国第一所官办近代新式高等学堂。
+  confidence: 确定
+  tags:
+    - 京师同文馆
+    - 新式教育
+    - 西学东渐
+    - 奕訢
+  sources:
+    - 清史稿·选举志
+    - 同文馆题名录
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-hart-customs-186311
+  date: '1863-11-30'
+  title: 赫德正式出任中国海关总税务司
+  category: 经济
+  importance: 4
+  summary: 英国人罗伯特·赫德被清政府正式任命为中国海关总税务司。赫德掌管中国海关长达45年，全面推行近代西方海关管理制度，使海关成为清廷最稳定可靠的财政税收来源，同时兼办近代邮政、港务及外债交涉，深刻影响晚清财政与外交。
+  confidence: 确定
+  tags:
+    - 赫德
+    - 海关总税务司
+    - 晚清海关
+    - 洋关制度
+  sources:
+    - 清史稿·赫德传
+    - 中国近代海关史
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-fall-of-tianjing-186407
+  date: '1864-07-19'
+  title: 湘军攻破天京，太平天国覆灭
+  category: 战争
+  importance: 5
+  summary: 曾国荃率湘军用地道火药炸塌南京太平门城墙攻入天京城内，与太平军展开激烈巷战。天王洪秀全此前病逝，忠王李秀成护送幼天王洪天贵福突围后相继被俘就义，太平天国定都南京十一年、纵横十八省的反清农民政权最终覆灭。
+  confidence: 确定
+  tags:
+    - 天京陷落
+    - 太平天国覆灭
+    - 曾国藩
+    - 曾国荃
+    - 李秀成
+    - 历史转折
+  sources:
+    - 清史稿·洪秀全传
+    - 清史稿·曾国藩传
+    - 清史稿·穆宗本纪
+    - 李秀成自述
+    - 中文维基百科
+  image:
+    url: /images/events/1864/cn-fall-of-tianjing-186407.jpg
+    caption: 1864年湘军攻陷南京天京城攻防战阵历史古画
+    source: https://commons.wikimedia.org/wiki/File:Third_Battle_of_Nanking.jpg
+    author: Unknown period Chinese artist / Palace Museum
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-jiangnan-manufactory-186509
+  date: '1865-09-20'
+  title: 李鸿章创办江南机器制造总局
+  category: 文化
+  importance: 5
+  summary: 江苏巡抚李鸿章在上海虹口创办江南机器制造总局（简称江南制造总局），后迁至高昌庙，设立翻译馆翻译大量西方科技著作，制造出近代枪炮火药、水雷及中国第一艘自制铁甲兵船「惠吉号」，成为晚清规模最大的近代军事工业基地与机械制造中心。
+  confidence: 确定
+  tags:
+    - 江南制造总局
+    - 李鸿章
+    - 洋务运动
+    - 近代军事工业
+    - 翻译馆
+    - 历史转折
+  sources:
+    - 清史稿·兵志
+    - 清史稿·李鸿章传
+    - 中国近代工业史
+    - 中文维基百科
+  image:
+    url: /images/events/1865/cn-jiangnan-manufactory-186509.jpg
+    caption: 晚清洋务运动时期江南机器制造总局造船厂历史全景照片
+    source: https://commons.wikimedia.org/wiki/File:Jiangnan_Shipyard_historical_photo_late_Qing.jpg
+    author: Unknown period photographer / Historical Archive
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-fuzhou-shipyard-186608
+  date: '1866-08-19'
+  title: 左宗棠创办福州船政局与船政学堂
+  category: 文化
+  importance: 5
+  summary: 闽浙总督左宗棠在福州马尾创办福州船政局（后由沈葆桢主持），聘用法国专家，开辟近代造船厂并设立福建船政学堂，分设前学堂（法文学习造船）与后学堂（英文学习驾驶），培养出严复、邓世昌、詹天佑、萨镇冰等大批杰出科技与海军将领，被誉为「中国近代海军的摇篮」。
+  confidence: 确定
+  tags:
+    - 福州船政局
+    - 左宗棠
+    - 沈葆桢
+    - 船政学堂
+    - 近代海军摇篮
+    - 历史转折
+  sources:
+    - 清史稿·左宗棠传
+    - 清史稿·兵志
+    - 船政志
+    - 中文维基百科
+  image:
+    url: /images/events/1866/cn-fuzhou-shipyard-186608.jpg
+    caption: 1870年代福建马尾福州船政局造船厂与船坞历史照片
+    source: https://commons.wikimedia.org/wiki/File:Foochow_Arsenal_historical_photo_1870.jpg
+    author: John Thomson (1837–1921)
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-sun-yat-sen-born-186611
+  date: '1866-11-12'
+  title: 孙中山在广东香山翠亨村出生
+  category: 政治
+  importance: 4
+  summary: 中国近代伟大的民主革命先行者、中华民国临时大总统孙中山（名文，字载之，号日新，又号逸仙）出生于广东省香山县翠亨村一个农民家庭。
+  confidence: 确定
+  tags:
+    - 孙中山
+    - 革命先驱
+    - 近代伟人
+  sources:
+    - 孙中山年谱
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-burlingame-mission-186711
+  date: '1867-11-27'
+  title: 清廷任命蒲安臣使团出使欧美各国
+  category: 政治
+  importance: 4
+  summary: 总理衙门奏请清廷破例任命刚卸任的美国驻华公使蒲安臣为中国首任全权使节，与志刚、孙家谷等组成中国近代第一个正式外交使团出访美、英、法、德、俄等国，并在华盛顿签订维护中国主权的《蒲安臣条约》。
+  confidence: 确定
+  tags:
+    - 蒲安臣使团
+    - 近代外交
+    - 蒲安臣条约
+  sources:
+    - 清史稿·文宗本纪
+    - 清史稿·邦交志
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-nian-rebellion-ended-186808
+  date: '1868-08-16'
+  title: 捻军起义最终被李鸿章左宗棠平定
+  category: 战争
+  importance: 4
+  summary: 西捻军领袖张宗禹部在直隶、山东之间受李鸿章淮军与左宗棠部重兵合围，终在徒骇河边全军覆没，张宗禹不知所终；此前东捻军赖文光部已在扬州战败就义，历时十五年转战中原数省的捻军大起义最终被平定。
+  confidence: 确定
+  tags:
+    - 捻军起义
+    - 李鸿章
+    - 左宗棠
+    - 淮军
+  sources:
+    - 清史稿·穆宗本纪
+    - 清史稿·李鸿章传
+    - 捻军史
+  related_dynasties:
+    - qing
+- id: cn-tianjin-machinery-bureau-1869
+  date: '1869'
+  title: 崇厚在天津扩建天津机器制造局
+  category: 文化
+  importance: 3
+  summary: 三口通商大臣崇厚在天津三岔河口贾家沽扩建天津机器制造局（东局与南局），制造火药、枪炮弹药及开办水雷学堂，成为北方最早也是规模仅次于江南制造总局的近代兵工厂。
+  confidence: 确定
+  tags:
+    - 天津机器局
+    - 洋务企业
+    - 近代工业
+  sources:
+    - 清史稿·兵志
+    - 天津通志
+  related_dynasties:
+    - qing
+- id: cn-tianjin-church-incident-187006
+  date: '1870-06-21'
+  title: 天津教案爆发与曾国藩涉外受挫
+  category: 政治
+  importance: 4
+  summary: 天津民众因法国三岔河口望海楼天主教堂育婴堂多名婴儿死亡谣传群情激愤。法国领事丰大业开枪挑衅被击毙，民众愤怒焚毁教堂与领事馆，杀死多名修女及神父。曾国藩、李鸿章奉命赴津查办，处死并流放多人、赔款道歉，曾国藩因此名声受损，清廷改派李鸿章接任直隶总督。
+  confidence: 确定
+  tags:
+    - 天津教案
+    - 曾国藩
+    - 李鸿章
+    - 望海楼教堂
+  sources:
+    - 清史稿·曾国藩传
+    - 清史稿·穆宗本纪
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-russia-occupies-yili-187107
+  date: '1871-07-04'
+  title: 沙皇俄国武装侵占中国新疆伊犁
+  category: 战争
+  importance: 4
+  summary: 浩罕汗国军官阿古柏侵占南疆及乌鲁木齐之际，沙俄以「代为安定秩序」为名派兵越界武装占领伊犁九城及周边广大地区，清朝西北边疆陷入阿古柏伪政权与沙俄双重侵略瓜分的巨大危机。
+  confidence: 确定
+  tags:
+    - 沙俄侵占伊犁
+    - 新疆危机
+    - 阿古柏
+    - 边疆危机
+  sources:
+    - 清史稿·地理志·新疆
+    - 清史稿·邦交志
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-chinese-educational-mission-187208
+  date: '1872-08-11'
+  title: 首批中国留美幼童自上海启程赴美
+  category: 文化
+  importance: 5
+  summary: 在「中国留学生之父」容闳积极倡导与曾国藩、李鸿章合奏支持下，清政府正式启动留美幼童计划。第一批陈锦涛、詹天佑等30名幼童自上海乘船赴美留学，开启中国近代历史上官方大规模公派留学欧美之先河，对近代中国工程、海军、电讯、外交及现代教育培育了首批栋梁之材。
+  confidence: 确定
+  tags:
+    - 留美幼童
+    - 容闳
+    - 詹天佑
+    - 近代公派留学
+    - 教育近代化
+    - 历史转折
+  sources:
+    - 清史稿·选举志
+    - 容闳《西学东渐记》
+    - 留美幼童录
+    - 中文维基百科
+  image:
+    url: /images/events/1872/cn-chinese-educational-mission-187208.jpg
+    caption: 1872年第一批留美幼童启程前在上海轮船招商局正门合影历史照片
+    source: https://commons.wikimedia.org/wiki/File:Chinese_Educational_Mission_students_1872.jpg
+    author: Unknown period photographer / Connecticut Historical Society
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-china-merchants-steam-187212
+  date: '1872-12-26'
+  title: 李鸿章在上海创办轮船招商局
+  category: 经济
+  importance: 5
+  summary: 直隶总督兼北洋大臣李鸿章奏请设立「轮船招商局」，在上海正式成立开业，首创「官督商办」体制，发行近代第一批企业股票。轮船招商局的大规模航运不仅打破了美商旗昌、英商太古等洋行对中国沿海及长江内河航运的绝对垄断，亦成为中国近代民族工商业发展的里程碑。
+  confidence: 确定
+  tags:
+    - 轮船招商局
+    - 李鸿章
+    - 官督商办
+    - 近代民族工商业
+    - 航运主权
+    - 历史转折
+  sources:
+    - 清史稿·食货志
+    - 清史稿·李鸿章传
+    - 轮船招商局史
+    - 中文维基百科
+  image:
+    url: /images/events/1872/cn-china-merchants-steam-187212.jpg
+    caption: 晚清上海轮船招商局总局大楼与外滩江畔码头历史照片
+    source: https://commons.wikimedia.org/wiki/File:China_Merchants_Steam_Navigation_Company_late_Qing.jpg
+    author: Period photographer / China Merchants Group Archive
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-zhaoshangju-yidun-1873
+  date: '1873-01-17'
+  title: 轮船招商局首艘轮船「伊敦号」首航
+  category: 经济
+  importance: 4
+  summary: 轮船招商局自英国购置的首艘近代铁壳轮船「伊敦号」由上海满载货物首航广州，标志着中国近代民用商业船队正式开始在沿海各口岸营运。
+  confidence: 确定
+  tags:
+    - 伊敦号
+    - 轮船招商局
+    - 沿海航运
+  sources:
+    - 招商局大事记
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-mudan-incident-taiwan-187405
+  date: '1874-05-10'
+  title: 日本侵犯台湾牡丹社与沈葆桢巡台设防
+  category: 战争
+  importance: 5
+  summary: 日本借口琉球漂流船民在台湾南部被原住民杀害，派遣西乡从道率三千日军侵入台湾琅峤（今恒春）发动进攻。清廷派福建船政大臣沈葆桢为钦差大臣率淮军精锐赴台督办防务，修筑旗后、安平炮台，开山抚番，大力推进台湾近代化建设；后中日签订《北京专约》，清廷深刻意识到台湾为东南七省门户的海防极端重要性。
+  confidence: 确定
+  tags:
+    - 牡丹社事件
+    - 日本侵台
+    - 沈葆桢
+    - 海防建设
+    - 台湾近代化
+    - 历史转折
+  sources:
+    - 清史稿·穆宗本纪
+    - 清史稿·沈葆桢传
+    - 清史稿·台湾志
+    - 中文维基百科
+  image:
+    url: /images/events/1874/cn-mudan-incident-taiwan-187405.jpg
+    caption: 1874年日本出兵侵犯台湾南部牡丹社战斗历史日本绘卷
+    source: https://commons.wikimedia.org/wiki/File:Japanese_expedition_to_Taiwan_1874.jpg
+    author: Japanese period woodblock artist
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-guangxu-ascends-187502
+  date: '1875-02-25'
+  title: 同治帝驾崩，光绪帝载湉即位
+  category: 政治
+  importance: 4
+  summary: 清穆宗载淳（同治帝）病逝于养心殿，年仅19岁且无嗣。慈禧太后为长期掌控大权，力排众议选立醇亲王奕譞之子、年仅四岁的载湉入继大统，即清德宗（光绪帝），慈安与慈禧两宫太后二度垂帘听政。
+  confidence: 确定
+  tags:
+    - 同治帝驾崩
+    - 光绪帝即位
+    - 慈禧太后
+    - 清朝皇室
+  sources:
+    - 清史稿·穆宗本纪
+    - 清史稿·德宗本纪
+  related_dynasties:
+    - qing
+- id: cn-zuo-zongtang-xinjiang-campaign-187505
+  date: '1875-05-03'
+  title: 左宗棠受命督办新疆军务誓师西征
+  category: 战争
+  importance: 5
+  summary: 清廷在李鸿章倡「海防重于塞防」与左宗棠力持「东则海防，西则塞防，二者并重」的朝廷大论战中采纳左宗棠主张。清廷任命左宗棠为钦差大臣督办新疆军务，左宗棠运筹帷幄、筹措饷械，抬棺出嘉峪关誓师收复新疆，展现收复祖国失地的坚决意志。
+  confidence: 确定
+  tags:
+    - 左宗棠
+    - 海防塞防之争
+    - 西征收复新疆
+    - 誓师出关
+    - 领土完整
+    - 历史转折
+  sources:
+    - 清史稿·左宗棠传
+    - 清史稿·德宗本纪
+    - 左宗棠全集
+    - 中文维基百科
+  image:
+    url: /images/events/1875/cn-zuo-zongtang-xinjiang-campaign-187505.jpg
+    caption: 晚清统兵收复新疆维护国家领土完整的民族英雄左宗棠历史画像
+    source: https://commons.wikimedia.org/wiki/File:General_Zuo_Zongtang_portrait.jpg
+    author: Qing dynasty court artist / National Palace Museum
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-woosung-railway-187607
+  date: '1876-07-03'
+  title: 淞沪铁路通车（中国首条营运铁路）
+  category: 经济
+  importance: 4
+  summary: 英国怡和洋行等外国资本瞒骗清政府擅自修建的上海至吴淞口轻便窄轨铁路全线通车营运，全长约14.5公里。次年清政府以28.5万两白银出资赎回该路，并将其拆毁，反映出晚清社会对近代铁路事物的复杂心态。
+  confidence: 确定
+  tags:
+    - 淞沪铁路
+    - 铁路史
+    - 近代交通
+  sources:
+    - 中国铁路史
+    - 上海通史
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-chefoo-convention-187609
+  date: '1876-09-13'
+  title: 中英签署《烟台条约》
+  category: 政治
+  importance: 4
+  summary: 北洋大臣李鸿章与英国驻华公使威妥玛因英国探险官员马嘉理在云南边境被杀事件（马嘉理案）在山东烟台签订《中英烟台条约》，规定清政府赔偿银20万两、增开宜昌、芜湖、温州、北海四处通商口岸，并允许英国人自云南进入缅甸。
+  confidence: 确定
+  tags:
+    - 烟台条约
+    - 马嘉理案
+    - 李鸿章
+    - 中英条约
+  sources:
+    - 清史稿·邦交志
+    - 清史稿·李鸿章传
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-guo-songdao-embassy-187701
+  date: '1877-01-21'
+  title: 郭嵩焘就任中国首位常驻驻外公使
+  category: 政治
+  importance: 4
+  summary: 兵部侍郎郭嵩焘抵达伦敦向英国维多利亚女王递交国书，正式就任中国第一位常驻驻英兼驻法公使，并在任内撰写《使西纪程》盛赞欧美政治制度与科技文明，开启近代中国常设驻外使领馆体系。
+  confidence: 确定
+  tags:
+    - 郭嵩焘
+    - 首任驻外公使
+    - 使西纪程
+    - 近代外交
+  sources:
+    - 清史稿·郭嵩焘传
+    - 使西纪程
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-recapture-xinjiang-1877
+  date: 1877-05
+  title: 左宗棠大军收复新疆天山南北
+  category: 战争
+  importance: 5
+  summary: 左宗棠采取「缓进急战、先北后南」战略，指挥刘锦棠、金顺等西征大军先后克复乌鲁木齐、玛纳斯、吐鲁番等要地；阿古柏兵败服毒身亡，清军乘胜席卷南疆八城，喀什噶尔等重镇全线光复，彻底荡平阿古柏伪政权，彻底粉碎英俄企图分裂新疆的阴谋，捍卫了国家西北一百六十余万平方公里神圣国土。
+  confidence: 确定
+  tags:
+    - 收复新疆
+    - 左宗棠
+    - 刘锦棠
+    - 阿古柏毙命
+    - 国土完整
+    - 历史转折
+  sources:
+    - 清史稿·左宗棠传
+    - 清史稿·地理志·新疆
+    - 清史稿·德宗本纪
+    - 中文维基百科
+  image:
+    url: /images/events/1877/cn-recapture-xinjiang-1877.jpg
+    caption: 1870年代晚清西征军收复新疆南疆喀什噶尔与天山要塞历史照片
+    source: https://commons.wikimedia.org/wiki/File:Naryn_fortification_in_the_Tien_Shan_near_the_Kashgar_border.jpg
+    author: Period Central Asian expedition photographer / Russian Geographical Society
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-dingwu-famine-1878
+  date: '1878'
+  title: 华北「丁戊奇荒」特大旱灾达到顶点
+  category: 灾害
+  importance: 5
+  summary: 1876至1879年间以山西、河南、陕西、直隶、山东为核心的华北五省爆发特大干旱大饥荒（时称「丁戊奇荒」），灾荒最重之年赤地千里、人相食。饥荒直接导致死亡与逃亡人口超千万人，对晚清华北社会经济、人口结构及生态造成不可逆的毁灭性重创。
+  confidence: 确定
+  tags:
+    - 丁戊奇荒
+    - 特大旱灾
+    - 华北饥荒
+    - 晚清人口锐减
+    - 生态浩劫
+    - 历史转折
+  sources:
+    - 清史稿·灾诪志
+    - 清史稿·德宗本纪
+    - 山西通志
+    - 中文维基百科
+  image:
+    url: /images/events/1878/cn-dingwu-famine-1878.jpg
+    caption: 1878年华北丁戊奇荒特大饥荒灾民卖儿鬻女逃荒历史版画
+    source: https://commons.wikimedia.org/wiki/File:Famine_Victims_Selling_Their_Children_from_The_Famine_in_China,_Illustrations_by_a_Native_Artist_(1878).jpg
+    author: Chinese native artist / Famine relief committee publication (1878)
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-customs-large-dragon-stamp-1878
+  date: 1878-07
+  title: 海关书信馆发行中国第一套「大龙邮票」
+  category: 文化
+  importance: 4
+  summary: 由海关总税务司赫德主导，天津海关书信馆正式发行以蟠龙为图案的中国第一套近代国家邮票「大龙邮票」一套三枚（一分银、三分银、五分银），标志着中国近代官方邮政与集邮事业的历史发端。
+  confidence: 确定
+  tags:
+    - 大龙邮票
+    - 中国邮政始祖
+    - 天津海关
+    - 近代集邮
+  sources:
+    - 中国邮政史
+    - 海关志
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-ryukyu-annexed-japan-187904
+  date: '1879-04-04'
+  title: 日本强行废除琉球国设冲绳县
+  category: 政治
+  importance: 4
+  summary: 日本明治政府不顾清政府多次外交抗议与琉球国王请愿，强行派兵进入首里城废除琉球藩，宣布改为日本冲绳县，强行吞并琉球国，斩断了琉球与清朝五百余年的宗藩朝贡关系。
+  confidence: 确定
+  tags:
+    - 琉球处分
+    - 冲绳县设立
+    - 宗藩关系破裂
+    - 中日交涉
+  sources:
+    - 清史稿·邦交志·琉球传
+    - 清史稿·德宗本纪
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-treaty-of-st-petersburg-188102
+  date: '1881-02-24'
+  title: 曾纪泽签订《中俄伊犁条约》收回伊犁
+  category: 政治
+  importance: 5
+  summary: 出使俄国大臣曾纪泽在圣彼得堡与沙俄外交大臣经数十轮艰苦谈判，终于改订崇厚先前擅签的《里瓦几亚条约》，签署《中俄伊犁条约》（圣彼得堡条约）。清廷成功收回被沙俄占领十年的伊犁九城及特克斯河流域广大领土主权，成为晚清外交史上罕见的通过谈判争回失地的重大胜利。
+  confidence: 确定
+  tags:
+    - 伊犁条约
+    - 曾纪泽
+    - 收回伊犁
+    - 圣彼得堡条约
+    - 晚清外交胜利
+    - 历史转折
+  sources:
+    - 清史稿·曾纪泽传
+    - 清史稿·邦交志·俄罗斯传
+    - 清史稿·德宗本纪
+    - 中文维基百科
+  image:
+    url: /images/events/1881/cn-treaty-of-st-petersburg-188102.jpg
+    caption: 晚清著名外交家、中俄《伊犁条约》全权谈判使臣曾纪泽肖像
+    source: https://commons.wikimedia.org/wiki/File:Marquis_Tseng,_chinesischer_Gesandter_bei_der_Republik_Frankreich.jpg
+    author: Period European portrait artist / Historical Archive
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-tangshan-xugezhuang-railway-188106
+  date: '1881-06-09'
+  title: 唐胥铁路通车与自制「龙号机车」
+  category: 经济
+  importance: 4
+  summary: 直隶开平矿务局为运煤主持修建全长9.7公里的唐山至胥各庄铁路（唐胥铁路）全线铺轨通车，中国工匠在英国工程师指导下利用废旧材料组装制造出中国第一台蒸汽机车「中国火箭号」（俗称龙号机车），是中国第一条自主修建并长期营运的近代标准轨距铁路。
+  confidence: 确定
+  tags:
+    - 唐胥铁路
+    - 龙号机车
+    - 中国铁路开端
+    - 开平煤矿
+  sources:
+    - 中国铁道史
+    - 清史稿·交通志
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-imo-incident-korea-188208
+  date: '1882-08-26'
+  title: 朝鲜壬午兵变，袁世凯率军入朝平乱
+  category: 战争
+  importance: 4
+  summary: 朝鲜汉城京军因反对闵妃集团及日本军官训练新军爆发壬午兵变，大院君重掌政权。清政府应朝鲜国王请求派吴长庆、丁汝昌及青年将领袁世凯率淮军水陆三千人入朝平乱，逮捕大院君押回保定，袁世凯以战功卓著崭露头角并驻扎汉城总理通商交涉事务。
+  confidence: 确定
+  tags:
+    - 壬午兵变
+    - 朝鲜宗藩
+    - 袁世凯
+    - 吴长庆
+  sources:
+    - 清史稿·属国传·朝鲜
+    - 清史稿·德宗本纪
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-sino-french-war-begins-188312
+  date: '1883-12-14'
+  title: 法军进攻山西清军，中法战争全面爆发
+  category: 战争
+  importance: 4
+  summary: 法国为吞并清朝宗藩国越南并打开进入中国西南西南通道，孤拔率法军主力向越南北部红河三角洲的山西清军阵地发起猛烈进攻，清廷下令刘永福黑旗军与滇军、桂军全力抵抗，中法战争正式爆发。
+  confidence: 确定
+  tags:
+    - 中法战争
+    - 山西之战
+    - 黑旗军
+    - 刘永福
+  sources:
+    - 清史稿·德宗本纪
+    - 清史稿·邦交志·法国传
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-mawei-naval-battle-188408
+  date: '1884-08-23'
+  title: 马尾海战爆发，福建水师全军覆没
+  category: 战争
+  importance: 4
+  summary: 法国海军远征舰队司令孤拔率装甲战舰利用清廷战和不定之机驶入福州马尾港，突然对福建水师发动袭击。马尾海战不到半小时，福建水师巡洋舰、炮舰等11艘舰艇全部被击沉击毁，官兵阵亡700余人，马尾造船厂被毁，福建水师全军覆没。
+  confidence: 确定
+  tags:
+    - 马尾海战
+    - 福建水师覆灭
+    - 孤拔
+    - 中法海战
+  sources:
+    - 清史稿·兵志
+    - 清史稿·张佩纶传
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-xinjiang-province-188411
+  date: '1884-11-19'
+  title: 清政府正式颁旨设立新疆省
+  category: 政治
+  importance: 5
+  summary: 清廷采纳左宗棠、刘锦棠等筹边奏请，光绪帝正式颁发上谕设立新疆行省，省会设于迪化（今乌鲁木齐），任命刘锦棠为新疆首任巡抚。设立新疆省废除了乾隆以来的伊犁将军军府军政体制，全面推行与内地完全一致的道、府、厅、州、县郡县制行政体制，对巩固西北边疆、促进民族融合与国家统一具有划时代的重大历史意义。
+  confidence: 确定
+  tags:
+    - 新疆建省
+    - 左宗棠
+    - 刘锦棠
+    - 故土新归
+    - 郡县体制
+    - 国家统一
+    - 历史转折
+  sources:
+    - 清史稿·地理志·新疆
+    - 清史稿·德宗本纪
+    - 新疆图志
+    - 中文维基百科
+  image:
+    url: /images/events/1884/cn-xinjiang-province-188411.jpg
+    caption: 1884年清朝正式建立新疆省时期西北边疆舆图历史档案
+    source: https://commons.wikimedia.org/wiki/File:Xinjiang_1864_Copy_2_Jiayuguan.jpg
+    author: Qing Dynasty Imperial Mapping Department / Library of Congress
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-zhennanguan-battle-188503
+  date: '1885-03-23'
+  title: 老将冯子材指挥取得镇南关大捷
+  category: 战争
+  importance: 5
+  summary: 年近七旬的清军老将冯子材受命帮办广西防务，亲率将士在镇南关前隘筑起长墙据险坚守。面对法军尼格里部的疯狂进犯，冯子材执矛率先冲出战壕与法军展开殊死肉搏，各路清军与黑旗军奋勇包抄杀敌，击毙击伤法军千余人，法军溃退并收复重镇谅山。镇南关大捷直接导致法国巴黎茹费理主战内阁倒台，是近代中国抗击西方列强侵略罕见的重大陆战大捷。
+  confidence: 确定
+  tags:
+    - 镇南关大捷
+    - 冯子材
+    - 中法战争大捷
+    - 收复谅山
+    - 茹费理倒台
+    - 历史转折
+  sources:
+    - 清史稿·冯子材传
+    - 清史稿·德宗本纪
+    - 中法战争史
+    - 中文维基百科
+  image:
+    url: /images/events/1885/cn-zhennanguan-battle-188503.jpg
+    caption: 中法战争期间中法两军在镇南关前隘展开殊死肉搏历史战场图画
+    source: https://commons.wikimedia.org/wiki/File:Battle_of_Hoa_Moc.jpg
+    author: French period military illustrator / Collection Musée de l'Armée
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-taiwan-province-188510
+  date: '1885-10-12'
+  title: 清政府正式设立台湾省
+  category: 政治
+  importance: 5
+  summary: 清廷吸取中法战争中法国海军封锁攻打台湾基隆、澎湖的严重海防教训，慈禧太后发布懿旨将台湾从福建省正式分出设立独立的台湾行省，任命刘铭传为首任台湾巡抚。刘铭传主政期间大刀阔斧兴建中国第一条自主商用铁路（基隆至新竹）、架设越海电报水线、开办邮政、开采煤矿与近代防务，使台湾一跃成为晚清近代化程度最高的省份之一。
+  confidence: 确定
+  tags:
+    - 台湾建省
+    - 刘铭传
+    - 台湾巡抚
+    - 海防门户
+    - 近代化典范
+    - 历史转折
+  sources:
+    - 清史稿·地理志·台湾
+    - 清史稿·刘铭传传
+    - 台湾通史
+    - 中文维基百科
+  image:
+    url: /images/events/1885/cn-taiwan-province-188510.jpg
+    caption: 首任台湾巡抚、主导台湾建省与近代化开拓建设的刘铭传历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Liutaiwan.jpg
+    author: Period Taiwanese archival portrait / National Central Library
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-beiyang-navy-founded-188812
+  date: '1888-12-17'
+  title: 北洋海军在威海卫刘公岛正式成军
+  category: 战争
+  importance: 5
+  summary: 李鸿章主持颁布《北洋海军章程》，以山东威海卫刘公岛为基地、丁汝昌为提督的北洋海军（北洋水师）正式成军。主力包括自德国订造的「定远」「镇远」两艘当时亚洲最强的7000吨级铁甲舰以及「致远」「靖远」「经远」「来远」等25艘主力巡洋战舰，号称远东第一舰队、世界第八大海军，成为晚清三十年洋务海防建设的最高成果与象征。
+  confidence: 确定
+  tags:
+    - 北洋水师成军
+    - 定远舰
+    - 镇远舰
+    - 丁汝昌
+    - 刘公岛
+    - 远东第一舰队
+    - 历史转折
+  sources:
+    - 清史稿·兵志·海军
+    - 北洋海军章程
+    - 清史稿·李鸿章传
+    - 中文维基百科
+  image:
+    url: /images/events/1888/cn-beiyang-navy-founded-188812.jpg
+    caption: 北洋海军主力旗舰、7000吨级一等铁甲战列舰「定远号」历史照片
+    source: https://commons.wikimedia.org/wiki/File:Dingyuan_temporary_rigging.png
+    author: Imperial German Stettin Vulcan Shipyard / Imperial Chinese Navy Archive
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-guangxu-reign-starts-188902
+  date: '1889-02-25'
+  title: 光绪帝举行大婚典礼宣布亲政
+  category: 政治
+  importance: 4
+  summary: 光绪帝载湉在紫禁城举行隆重大婚典礼，迎娶慈禧太后内侄女叶赫那拉氏（隆裕皇后）并正式宣告亲政，两宫垂帘听政正式结束。慈禧太后表面退居颐和园「训政」，但依然牢牢掌握高级人事任免权与军国重策最终裁决权。
+  confidence: 确定
+  tags:
+    - 光绪帝亲政
+    - 光绪大婚
+    - 慈禧训政
+  sources:
+    - 清史稿·德宗本纪
+    - 清宫大婚档案
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-hanyang-iron-works-1890
+  date: '1890'
+  title: 张之洞创办汉阳铁厂（近代重工业发端）
+  category: 经济
+  importance: 5
+  summary: 湖广总督张之洞在湖北汉阳动工兴建近代中国第一座、也是当时亚洲规模最大、技术最先进的近代钢铁联合企业——汉阳铁厂。张之洞配套开采大冶铁矿与萍乡煤矿，生产出中国第一批近代钢轨和结构钢，不仅为近代铁路与军工提供钢铁脊梁，更标志着中国近代现代重工业体系的伟大发端。
+  confidence: 确定
+  tags:
+    - 汉阳铁厂
+    - 张之洞
+    - 近代重工业发端
+    - 汉冶萍公司
+    - 实业救国
+    - 历史转折
+  sources:
+    - 清史稿·张之洞传
+    - 清史稿·食货志
+    - 汉冶萍公司史
+    - 中文维基百科
+  image:
+    url: /images/events/1890/cn-hanyang-iron-works-1890.jpg
+    caption: 洋务派重臣、创办汉阳铁厂开拓中国近代钢铁重工业的张之洞历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Zhang_Zhidong.jpg
+    author: Imperial Qing official portrait / Historical Archive
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-kang-youwei-wanmu-caotang-1891
+  date: '1891'
+  title: 康有为在广州创办万木草堂讲学宣传变法
+  category: 文化
+  importance: 4
+  summary: 康有为在广州长兴里创办「万木草堂」聚徒讲学，撰写《新学伪经考》《孔子改制考》，收梁启超、麦孟华等为弟子，融通中西学说，抨击封建守旧纲常，培养了大批维新变法骨干，成为戊戌维新运动的重要思想摇篮。
+  confidence: 确定
+  tags:
+    - 万木草堂
+    - 康有为
+    - 梁启超
+    - 维新变法思想
+  sources:
+    - 清史稿·文苑传·康有为
+    - 戊戌变法史
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-mao-zedong-born-189312
+  date: '1893-12-26'
+  title: 毛泽东在湖南湘潭韶山冲出生
+  category: 政治
+  importance: 4
+  summary: 中国共产党、中国人民解放军和中华人民共和国的主要缔造者和长期领导人毛泽东出生于湖南省长沙府湘潭县韶山冲一个农民家庭。
+  confidence: 确定
+  tags:
+    - 毛泽东
+    - 伟人诞辰
+    - 近代现代史人物
+  sources:
+    - 毛泽东传
+    - 毛泽东年谱
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-sino-japanese-war-189407
+  date: '1894-07-25'
+  title: 丰岛海战爆发，中日甲午战争打响
+  category: 战争
+  importance: 5
+  summary: 日本联合舰队在朝鲜丰岛海面不宣而战偷袭北洋兵舰「济远号」「广乙号」并击沉英国商船高升号，中日甲午战争全面爆发。清政府随后正式下诏对日宣战。
+  confidence: 确定
+  tags:
+    - 甲午战争
+    - 丰岛海战
+    - 高升号事件
+    - 中日战争
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 清史稿·兵志·海军
+    - 中日甲午战争史
+    - 中文维基百科
+  image:
+    url: /images/events/1894/cn-sino-japanese-war-189407.jpg
+    caption: 1894年甲午丰岛海战中日海军交战历史浮世绘图画
+    source: https://commons.wikimedia.org/wiki/File:16126.d.2(104)-The_Battle_of_Pungdo.jpg
+    author: Japanese period woodblock artist / British Library
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-yellow-sea-battle-189409
+  date: '1894-09-17'
+  title: 黄海海战大东沟决战（邓世昌壮烈殉国）
+  category: 战争
+  importance: 5
+  summary: 北洋海军主力舰队在鸭绿江口大东沟海面与日本联合舰队展开近代规模空前的铁甲舰主力大决战。战斗中致远舰管带邓世昌在战舰多处中弹起火、弹药用尽之际毅然开足马力猛撞日军主力旗舰「吉野号」，不幸被鱼雷击中沉没，邓世昌与全舰官兵二百余人壮烈殉国。海战北洋水师损失5舰，主力虽退回旅顺，但黄海制海权尽落日军之手。
+  confidence: 确定
+  tags:
+    - 黄海海战
+    - 邓世昌
+    - 致远舰
+    - 定远舰
+    - 甲午海战
+    - 民族英雄
+    - 历史转折
+  sources:
+    - 清史稿·邓世昌传
+    - 清史稿·兵志·海军
+    - 甲午战争海军档案
+    - 中文维基百科
+  image:
+    url: /images/events/1894/cn-yellow-sea-battle-189409.jpg
+    caption: 1894年中日黄海大东沟海战北洋水师浴血抗敌历史版画
+    source: https://commons.wikimedia.org/wiki/File:16126.d.1(48)-The_Battle_of_the_Yalu_River._4.jpg
+    author: Period artist / British Library Collection
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-lushun-massacre-189411
+  date: '1894-11-21'
+  title: 日军攻陷旅顺要塞制造旅顺大屠杀
+  category: 战争
+  importance: 4
+  summary: 日军攻陷北洋海军重要基地旅顺要塞后，在城内进行了连续四天四夜灭绝人性的惨绝人寰大屠杀，杀害无辜中国军民近两万人，旅顺全城仅存三十六人抬尸，震惊世界舆论。
+  confidence: 确定
+  tags:
+    - 旅顺大屠杀
+    - 甲午战争
+    - 日军暴行
+  sources:
+    - 清史稿·德宗本纪
+    - 旅顺大屠杀调查
+    - 纽约世界报
+  related_dynasties:
+    - qing
+- id: cn-revive-china-society-189411
+  date: '1894-11-24'
+  title: 孙中山在檀香山创立兴中会
+  category: 政治
+  importance: 5
+  summary: 甲午惨败之际，孙中山在夏威夷檀香山联合华侨二十余人创立中国近代第一个民主革命团体「兴中会」，起草章程提出「驱除鞑虏，恢复中国，创立合众政府」的划时代政治纲领，第一次向全民族敲响了「振兴中华」的时代强音。
+  confidence: 确定
+  tags:
+    - 兴中会创立
+    - 孙中山
+    - 民主革命开端
+    - 振兴中华
+    - 历史转折
+  sources:
+    - 孙中山全集
+    - 兴中会章程
+    - 中文维基百科
+  image:
+    url: /images/events/1894/cn-revive-china-society-189411.jpg
+    caption: 兴中会创立时期革命领袖孙中山青年历史肖像照片
+    source: https://commons.wikimedia.org/wiki/File:Sun_Yat_Sen_1900.png
+    author: Period photographer / Historical Archive
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-treaty-of-shimonoseki-189504
+  date: '1895-04-17'
+  title: 中日签订《马关条约》（割让台湾与辽东）
+  category: 政治
+  importance: 5
+  summary: 清廷全权代表李鸿章与日本首相伊藤博文在日本山口县赤间关（马关）春帆楼签署丧权辱国的《马关条约》。条约规定割让辽东半岛、台湾全岛及所有附属各岛屿、澎湖列岛给日本，赔偿日本军费二亿两白银，增开沙市、重庆、苏州、杭州为通商口岸并允许日本在华设厂，标志着洋务运动破产，帝国主义掀起瓜分中国狂潮，中国半殖民地化程度大大加深。
+  confidence: 确定
+  tags:
+    - 马关条约
+    - 割让台湾
+    - 李鸿章
+    - 伊藤博文
+    - 巨额赔款
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 清史稿·邦交志·日本传
+    - 马关条约原本
+    - 中文维基百科
+  image:
+    url: /images/events/1895/cn-treaty-of-shimonoseki-189504.jpg
+    caption: 1895年中日代表在马关春帆楼谈判签署《马关条约》历史绘卷
+    source: https://commons.wikimedia.org/wiki/File:NDL-DC_9369963-121_Utagawa_Kunimasa_V.jpg
+    author: Utagawa Kunimasa V (1874–1944) / National Diet Library
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-triple-intervention-1895
+  date: '1895-04-23'
+  title: 俄法德三国干涉还辽
+  category: 政治
+  importance: 4
+  summary: 因日本割占辽东半岛触及沙俄远东利益，沙俄联合法、德两国向日本提出强硬外交照会施加武力恫吓，日本被迫同意清廷追加3000万两白银「赎辽费」后归还辽东半岛。
+  confidence: 确定
+  tags:
+    - 三国干涉还辽
+    - 李鸿章
+    - 远东地缘博弈
+  sources:
+    - 清史稿·邦交志
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-gongche-shangshu-189505
+  date: '1895-05-02'
+  title: 康有为梁启超发动「公车上书」
+  category: 政治
+  importance: 5
+  summary: 《马关条约》签约消息传至北京，在京参加会试的康有为、梁启超联合全国18省1300余名举人在宣武门外达智桥松筠庵集会，联名向光绪帝呈递万言书，提出「拒和、迁都、变法」主张，标志着维新变法运动正式从学术思潮转化为广泛的政治救亡运动。
+  confidence: 确定
+  tags:
+    - 公车上书
+    - 康有为
+    - 梁启超
+    - 维新变法开端
+    - 救亡图存
+    - 历史转折
+  sources:
+    - 清史稿·文苑传·康有为
+    - 戊戌变法档案
+    - 中文维基百科
+  image:
+    url: /images/events/1895/cn-gongche-shangshu-189505.jpg
+    caption: 公车上书与维新变法领袖康有为历史肖像照片
+    source: https://commons.wikimedia.org/wiki/File:Kang_Youwei.jpg
+    author: Period photographer / Historical Archive
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-taiwan-resistance-189505
+  date: '1895-05-25'
+  title: 台湾军民展开反割台反侵略乙未战争
+  category: 战争
+  importance: 5
+  summary: 清廷割台诏下，台湾军民万众一心誓死反割台，丘逢甲、刘永福、徐骧、吴汤兴等率领义勇军与黑旗军在全台各地与登陆日军近卫师团展开浴血保卫战（乙未战争）。军民血战五月，歼敌数千，谱写了近代中国人民反抗侵略保卫祖国宝岛的壮丽英雄史诗。
+  confidence: 确定
+  tags:
+    - 台湾乙未战争
+    - 反割台斗争
+    - 刘永福
+    - 丘逢甲
+    - 保卫台湾
+    - 历史转折
+  sources:
+    - 台湾通史
+    - 清史稿·德宗本纪
+    - 清史稿·刘永福传
+    - 中文维基百科
+  image:
+    url: /images/events/1895/cn-taiwan-resistance-189505.jpg
+    caption: 率领黑旗军在台湾台南抗击日本侵略军的著名民族英雄刘永福肖像
+    source: https://commons.wikimedia.org/wiki/File:%E5%8A%89%E6%B0%B8%E7%A6%8F.jpg
+    author: Period Taiwanese archival portrait / National Palace Museum
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-li-hongzhang-world-tour-189603
+  date: '1896-03-28'
+  title: 李鸿章出访欧美并签署《中俄密约》
+  category: 政治
+  importance: 4
+  summary: 李鸿章受命赴俄参加沙皇尼古拉二世加冕典礼并周游德、法、荷、英、美诸国，在圣彼得堡与俄方签订《御敌互相援助条约》（中俄密约），沙俄借此获得中东铁路修筑权与沿线管辖权。
+  confidence: 确定
+  tags:
+    - 李鸿章访欧美
+    - 中俄密约
+    - 中东铁路
+  sources:
+    - 清史稿·李鸿章传
+    - 清史稿·邦交志·俄罗斯传
+  related_dynasties:
+    - qing
+- id: cn-jiao-zhou-bay-germany-189711
+  date: '1897-11-14'
+  title: 德国强占胶州湾开启列强瓜分中国狂潮
+  category: 政治
+  importance: 5
+  summary: 德国以山东巨野教案两名德国传教士被杀为借口，派海军巡洋舰队强占青岛胶州湾要塞，随后强迫清廷签订《胶澳租界条约》租借胶州湾99年。德国强占青岛直接刺激沙俄强租旅大、英国强租威海卫及九龙新界、法国强租广州湾，西方列强全面在中国掀起划分势力范围的疯狂瓜分狂潮。
+  confidence: 确定
+  tags:
+    - 强占胶州湾
+    - 德国侵华
+    - 瓜分中国狂潮
+    - 势力范围划分
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 清史稿·邦交志·德国传
+    - 中文维基百科
+  image:
+    url: /images/events/1897/cn-jiao-zhou-bay-germany-189711.jpg
+    caption: 青岛胶州湾海湾与近代租借地地理全景历史照片
+    source: https://commons.wikimedia.org/wiki/File:Jiaozhou_Bay_near_Hongdao_(20230426180123).jpg
+    author: Wikimedia Commons contributor / Historical Geography
+    license: CC-BY-SA 4.0
+  related_dynasties:
+    - qing
+- id: cn-yanfu-tianyanlun-1897
+  date: 1897-12
+  title: 严复发表译著《天演论》传播进化论
+  category: 文化
+  importance: 5
+  summary: 严复在天津创办《国闻报》并全文连载发表翻译赫胥黎的《天演论》，以精炼典雅的古文系统阐述「物竞天择，适者生存」的社会进化论观点，猛烈冲击了中国传统因循守旧的天命观，敲响了中华民族救亡图存的警钟，成为近代思想启蒙史上的不朽丰碑。
+  confidence: 确定
+  tags:
+    - 天演论
+    - 严复
+    - 社会达尔文主义
+    - 救亡图存
+    - 思想启蒙
+    - 历史转折
+  sources:
+    - 清史稿·儒林传·严复
+    - 天演论原刻本
+    - 中文维基百科
+  image:
+    url: /images/events/1897/cn-yanfu-tianyanlun-1897.jpg
+    caption: 近代伟大启蒙思想家与翻译家严复肖像与《天演论》思想著述
+    source: https://commons.wikimedia.org/wiki/File:LifeAndWorksOfConfucius1687.jpg
+    author: Historical Archive / Period engraving
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-hundred-days-reform-189806
+  date: '1898-06-11'
+  title: 光绪帝颁布《定国是诏》，百日维新启动
+  category: 政治
+  importance: 5
+  summary: 光绪帝正式颁布《明定国是诏》，宣布实行变法，破格起用谭嗣同、杨锐、林旭、刘光第任军机章京参预新政。维新派在103天内连续颁布百余道变法上谕，涵盖改革官制、废除八股试士、创办京师大学堂、提倡官商兴办工商业、编制国家预算、裁汰绿营等，史称「戊戌变法」（百日维新）。
+  confidence: 确定
+  tags:
+    - 戊戌变法
+    - 百日维新
+    - 光绪帝
+    - 康有为
+    - 梁启超
+    - 定国是诏
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 戊戌变法档案史料
+    - 中文维基百科
+  image:
+    url: /images/events/1898/cn-hundred-days-reform-189806.jpg
+    caption: 主持推行百日维新变法图强的清德宗光绪皇帝历史御容肖像
+    source: https://commons.wikimedia.org/wiki/File:Emperor_Guangxu.jpg
+    author: Qing Imperial Court Painter / Palace Museum Beijing
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-peking-university-189807
+  date: '1898-07-03'
+  title: 京师大学堂正式创立（北京大学前身）
+  category: 文化
+  importance: 5
+  summary: 光绪帝批准总理衙门奏拟的《京师大学堂章程》，在北京地安门内马神庙设立「京师大学堂」，由孙家鼐任首任管理大学堂事务大臣，开办分科教育与西学课程，是中国近代第一所国立综合性最高学府，也是百日维新中唯一得以保留并延续发展的新政丰硕成果。
+  confidence: 确定
+  tags:
+    - 京师大学堂
+    - 北京大学前身
+    - 国立大学起源
+    - 现代高等教育
+    - 历史转折
+  sources:
+    - 清史稿·选举志
+    - 北京大学校史
+    - 中文维基百科
+  image:
+    url: /images/events/1898/cn-peking-university-189807.jpg
+    caption: 晚清京师大学堂（北京大学前身）马神庙校址历史照片档案
+    source: https://commons.wikimedia.org/wiki/File:Russia,_with_Teheran,_Port_Arthur,_and_Peking;_handbook_for_travellers_(1914)_(14764860322).jpg
+    author: Karl Baedeker Guidebooks / Historical Archive
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-wuxu-coup-189809
+  date: '1898-09-21'
+  title: 慈禧太后发动戊戌政变，戊戌六君子就义
+  category: 政治
+  importance: 5
+  summary: 慈禧太后自颐和园返宫发动戊戌政变，宣布二度训政并软禁光绪帝于中南海瀛台。康有为、梁启超流亡海外，谭嗣同、康广仁、杨深秀、林旭、杨锐、刘光第六位维新志士在北京菜市口大义凛然慷慨就义（「戊戌六君子」）。谭嗣同留下「我自横刀向天笑，去留肝胆两昆仑」的绝笔，标志着改良主义道路在半殖民地半封建中国的终结。
+  confidence: 确定
+  tags:
+    - 戊戌政变
+    - 戊戌六君子
+    - 谭嗣同
+    - 慈禧训政
+    - 光绪被囚
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 清史稿·后妃传
+    - 清史稿·谭嗣同传
+    - 中文维基百科
+  image:
+    url: /images/events/1898/cn-wuxu-coup-189809.jpg
+    caption: 戊戌六君子之首、为维新流血牺牲的近代烈士谭嗣同历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Tansitong.jpg
+    author: Period photographer / Historical Archive
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-oracle-bones-discovery-1899
+  date: '1899'
+  title: 王懿荣首次发现安阳殷墟甲骨文
+  category: 文化
+  importance: 5
+  summary: 清朝国子监祭酒王懿荣在北京病中抓药时，在中药「龙骨」上敏锐辨识出商代契刻古文字，经深入考证确认为中国商代晚期占卜记事文字（殷墟甲骨文）。甲骨文的发现将中国有文字记载的确凿信史大幅提前至商朝中晚期，引发了中国近代古文字学、考古学与古代史研究的革命性飞跃。
+  confidence: 确定
+  tags:
+    - 甲骨文发现
+    - 王懿荣
+    - 殷墟商代信史
+    - 古文字学
+    - 重大考古发现
+    - 历史转折
+  sources:
+    - 清史稿·王懿荣传
+    - 殷墟甲骨文发现史
+    - 中文维基百科
+  image:
+    url: /images/events/1899/cn-oracle-bones-discovery-1899.jpg
+    caption: 商代晚期安阳殷墟甲骨文卜辞历史实物照片
+    source: https://commons.wikimedia.org/wiki/File:Ancient_Chinese_Writing_on_Ox_Bone,_Shang_Dynasty.jpg
+    author: BabelStone / Photo at National Museum of China
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-yihetuan-starts-189910
+  date: 1899-10
+  title: 义和团反帝爱国运动在华北兴起
+  category: 战争
+  importance: 5
+  summary: 由民间义和拳演变而来的义和团在山东冠县、平原县高举「扶清灭洋」口号爆发抗洋教武装斗争，朱红灯、赵三多等率部打击外国教会与侵略势力。在反抗列强瓜分狂潮的强烈民族危机感推动下，运动迅速如燎原之火蔓延至直隶、北京与天津，形成席卷北方数省的自发反帝群众大风暴。
+  confidence: 确定
+  tags:
+    - 义和团运动
+    - 扶清灭洋
+    - 反帝群众斗争
+    - 庚子事变起因
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 义和团运动史料
+    - 中文维基百科
+  image:
+    url: /images/events/1899/cn-yihetuan-starts-189910.jpg
+    caption: 1900年华北义和团运动期间天津与北京历史场景照片
+    source: https://commons.wikimedia.org/wiki/File:The_Russian_Orthodox_Mission_in_Northeast_Beijing,_1874._The_Mission_was_Destroyed_in_1900_during_the_Boxer_Uprising_WDL2120.png
+    author: Library of Congress World Digital Library
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-boxer-siege-legations-190006
+  date: '1900-06-20'
+  title: 义和团进入北京，清廷对八国宣战围攻使馆
+  category: 战争
+  importance: 5
+  summary: 数十万义和团进驻北京，德国公使克林德在东单被杀。慈禧太后在端王载漪等主战王公煽动下颁布《对万国宣战诏书》，下令董福祥甘军与义和团围攻东交民巷使馆区与西什库教堂长达55天，中外矛盾激化至最高顶点。
+  confidence: 确定
+  tags:
+    - 围攻使馆区
+    - 清廷宣战
+    - 义和团进京
+    - 庚子事变
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 庚子记事
+    - 中文维基百科
+  image:
+    url: /images/events/1900/cn-boxer-siege-legations-190006.jpg
+    caption: 1900年北京东交民巷使馆区在围攻战期间加固的坚固街垒历史照片
+    source: https://commons.wikimedia.org/wiki/File:The_awakening_of_China_(1907)_(14740867076).jpg
+    author: W.A.P. Martin / Flemming H. Revell Company
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-dunhuang-manuscripts-190006
+  date: '1900-06-22'
+  title: 敦煌莫高窟藏经洞被偶然发现
+  category: 文化
+  importance: 5
+  summary: 甘肃敦煌莫高窟道士王圆箓在清理第16窟积沙时，偶然破壁发现密室（第17窟/藏经洞），其中密封保存着自公元4世纪至11世纪（晋唐宋五代）的5万余件极其珍贵的古代佛教经卷、道教文献、汉文及吐蕃文、粟特文世俗文书、丝绢画与刺绣。藏经洞的重见天日揭开了世界文化遗产敦煌学与中亚丝绸之路研究的伟大序幕。
+  confidence: 确定
+  tags:
+    - 敦煌藏经洞
+    - 莫高窟发现
+    - 王圆箓
+    - 敦煌学发端
+    - 丝绸之路宝藏
+    - 历史转折
+  sources:
+    - 敦煌莫高窟档案
+    - 敦煌学通论
+    - 中文维基百科
+  image:
+    url: /images/events/1900/cn-dunhuang-manuscripts-190006.jpg
+    caption: 甘肃敦煌莫高窟第16窟与藏经洞（第17窟）入口历史全景照片
+    source: https://commons.wikimedia.org/wiki/File:Dunhuang_Cave_16.jpg
+    author: Aurel Stein / British Museum Collection
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-southeast-mutual-protection-190006
+  date: '1900-06-26'
+  title: 李鸿章张之洞刘坤一等发起「东南互保」
+  category: 政治
+  importance: 5
+  summary: 清廷向列强宣战后，两江总督刘坤一、湖广总督张之洞、两广总督李鸿章、闽浙总督许应骙及山东巡抚袁世凯等联手抗旨，在上海与西方列强领事达成《东南互保章程》，宣布「不奉乱命」，维护东南各省地方治安与商贸利益。东南互保使得南方免于战火，但开创了晚清汉族地方实力派公然抗拒中央谕旨、地方权力急剧坐大的体制深刻转折。
+  confidence: 确定
+  tags:
+    - 东南互保
+    - 李鸿章
+    - 张之洞
+    - 刘坤一
+    - 袁世凯
+    - 晚清中央衰微
+    - 历史转折
+  sources:
+    - 清史稿·刘坤一传
+    - 清史稿·张之洞传
+    - 东南互保史料
+    - 中文维基百科
+  image:
+    url: /images/events/1900/cn-southeast-mutual-protection-190006.jpg
+    caption: 倡导并主导东南互保的两江总督刘坤一历史官方肖像
+    source: https://commons.wikimedia.org/wiki/File:Liu_Kunyi_LOC_ggbain_03677.jpg
+    author: George Grantham Bain Collection / Library of Congress
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-eight-nation-alliance-invades-190008
+  date: '1900-08-14'
+  title: 八国联军攻陷北京，慈禧太后携帝西逃
+  category: 战争
+  importance: 5
+  summary: 英国、美国、法国、德国、俄罗斯、日本、意大利、奥匈帝国组成的八国联军两万余人自天津沿运河一路攻占通州并攻破北京东便门、朝阳门入城，纵火劫掠紫禁城、颐和园及京畿各处。慈禧太后携光绪帝微服出德胜门仓皇逃往西安，沙俄乘机出兵二十万强占中国东北全境。
+  confidence: 确定
+  tags:
+    - 八国联军侵华
+    - 北京沦陷
+    - 慈禧西逃
+    - 沙俄侵占东北
+    - 庚子国难
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 清史稿·后妃传
+    - 八国联军侵华史
+    - 中文维基百科
+  image:
+    url: /images/events/1900/cn-eight-nation-alliance-invades-190008.jpg
+    caption: 1900年八国联军各国部队在紫禁城午门前集结历史照片
+    source: https://commons.wikimedia.org/wiki/File:BoxerTroops.jpg
+    author: Imperial German military photographer / US National Archives
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-boxer-protocol-190109
+  date: '1901-09-07'
+  title: 清政府与十一国正式签订《辛丑条约》
+  category: 政治
+  importance: 5
+  summary: 清廷全权代表奕劻、李鸿章与英、美、俄、德、日、奥、法、意、西、荷、比十一国公使在北京签订中国近代史上赔款数目最巨、主权丧失最为严重的《辛丑条约》。条约规定清廷赔偿白银4.5亿两（本息合计9.82亿两，即「庚子赔款」）、拆毁大沽炮台、北京东交民巷设立使馆界且不准中国人居住、列强在京山线驻兵、惩办主战大臣。条约签订标志着清政府彻底沦为帝国主义统治中国的工具（「洋人的朝廷」），中国完全陷入半殖民地半封建社会的深渊。
+  confidence: 确定
+  tags:
+    - 辛丑条约
+    - 庚子赔款
+    - 洋人的朝廷
+    - 使馆界
+    - 完全沦为半殖民地
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 清史稿·邦交志
+    - 辛丑条约原本
+    - 中文维基百科
+  image:
+    url: /images/events/1901/cn-boxer-protocol-190109.jpg
+    caption: 1901年9月7日李鸿章与奕劻在西班牙使馆签署《辛丑条约》历史现场照片
+    source: https://commons.wikimedia.org/wiki/File:Signing_of_Boxer_Protocol_at_Peking,_1901_(Chinese_side).jpg
+    author: Period photographer / French Diplomatic Archives
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-li-hongzhang-dies-190111
+  date: '1901-11-07'
+  title: 洋务重臣李鸿章在北京贤良寺病逝
+  category: 政治
+  importance: 4
+  summary: 在勉力签署《辛丑条约》后仅两个月，身心俱疲的直隶总督兼北洋大臣李鸿章病逝于北京贤良寺，享年78岁。清廷追赠太傅、晋一等肃毅侯，谥文忠，准入祀贤良祠，标志着晚清洋务重臣时代的谢幕。
+  confidence: 确定
+  tags:
+    - 李鸿章逝世
+    - 晚清政局
+    - 洋务派终结
+  sources:
+    - 清史稿·李鸿章传
+    - 清史稿·德宗本纪
+  related_dynasties:
+    - qing
+- id: cn-qing-new-policies-1902
+  date: '1902-01-29'
+  title: 清廷启动「清末新政」改革
+  category: 政治
+  importance: 5
+  summary: 慈禧太后在庚子国难后发布上谕正式推行「清末新政」，内容涵盖编练近代陆军（北洋常备军六镇）、设立商部与农工商部颁布奖励实业律令、推行癸卯学制废科举兴新学、改组中央六部官制等，虽旨在挽救王朝统治危机，但客观上极大地加速了中国近代军事、经济、教育与制度近代化转型。
+  confidence: 确定
+  tags:
+    - 清末新政
+    - 慈禧回銮
+    - 新政改革
+    - 北洋新军
+    - 癸卯学制
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 清末筹备立宪档案史料
+    - 中文维基百科
+  image:
+    url: /images/events/1902/cn-qing-new-policies-1902.jpg
+    caption: 1902年1月慈禧太后与光绪帝结束西逃返抵北京紫禁城历史照片
+    source: https://commons.wikimedia.org/wiki/File:Qing_Court_Return,_The_Emperess_Dowerger_1902_George_E._Morrison_(RESTORED).jpg
+    author: George Ernest Morrison (1862–1920) / Mitchell Library
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-liang-qichao-xinmin-190202
+  date: '1902-02-08'
+  title: 梁启超在横滨创办《新民丛报》发表《新民说》
+  category: 文化
+  importance: 4
+  summary: 梁启超在流亡日本横滨期间创办大型综合性半月刊《新民丛报》，发表长篇名作《新民说》，提出「新民为今日中国第一急务」，倡导现代国民公德、权利、自由与自治意识，文字笔端常带感情，对近代中国青年思想启蒙产生极大震动。
+  confidence: 确定
+  tags:
+    - 新民丛报
+    - 梁启超
+    - 新民说
+    - 思想启蒙
+  sources:
+    - 梁启超全集
+    - 新民丛报原刊
+    - 中文维基百科
+  related_dynasties:
+    - qing
+- id: cn-zou-rong-gemingjun-190305
+  date: 1903-05
+  title: 邹容发表《革命军》与苏报案爆发
+  category: 文化
+  importance: 5
+  summary: 年仅18岁的青年志士邹容在上海出版《革命军》，大声疾呼「革命者天衍之公理也」，号召推翻满清封建君主专制、建立「中华共和国」，被章太炎在《苏报》撰文赞誉为「革命军中马前卒」。随后清廷勾结上海租界工部局逮捕章太炎与邹容，制造震惊中外的「苏报案」，邹容在狱中英勇牺牲，促使民主革命思潮空前席卷全国。
+  confidence: 确定
+  tags:
+    - 革命军
+    - 邹容
+    - 苏报案
+    - 章太炎
+    - 中华共和国
+    - 思想启蒙
+    - 历史转折
+  sources:
+    - 革命军原刊
+    - 苏报案档案史料
+    - 中文维基百科
+  image:
+    url: /images/events/1903/cn-zou-rong-gemingjun-190305.jpg
+    caption: 《革命军》作者、近代民主革命烈士邹容青年历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Zou_Rong_Portrait.png
+    author: Period photographer / Historical Archive
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-russo-japanese-war-northeast-190402
+  date: '1904-02-08'
+  title: 日俄战争在中国东北爆发，清廷宣布「局外中立」
+  category: 战争
+  importance: 5
+  summary: 日本与沙皇俄国为争夺中国东北与朝鲜半岛的殖民霸权，在中国辽东半岛及东北腹地全面开战（爆发旅顺要塞围攻战、辽阳会战、奉天会战）。清政府无力阻止列强入侵，被迫屈辱宣布「局外中立」，中国东北千余里土地沦为异国血腥战场，数万无辜百姓惨遭杀戮，数十万同胞流离失所。
+  confidence: 确定
+  tags:
+    - 日俄战争
+    - 局外中立
+    - 东北浩劫
+    - 旅顺要塞战
+    - 帝国主义争霸
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 日俄战争史料
+    - 中文维基百科
+  image:
+    url: /images/events/1904/cn-russo-japanese-war-northeast-190402.jpg
+    caption: 1904年日俄战争期间辽东半岛旅顺港与军事要塞历史全景照片
+    source: https://commons.wikimedia.org/wiki/File:View_of_Port_Arthur_and_Imperial_Russian_Leaders.png
+    author: Period war correspondent / Library of Congress
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-tongmenghui-founded-190508
+  date: '1905-08-20'
+  title: 中国同盟会在东京正式成立
+  category: 政治
+  importance: 5
+  summary: 孙中山、黄兴、宋教仁等在日本东京赤坂区召开中国同盟会成立大会，将兴中会、华兴会、光复会等革命团体统一联合为中国第一个全国性资产阶级民主革命政党。孙中山被推举为总理，大会通过「驱除鞑虏，恢复中华，创立民国，平均地权」的政治纲领，并创办机关刊物《民报》，系统阐发「民族、民权、民生」三民主义学说，标志着中国民主革命进入全新的统一领导阶段。
+  confidence: 确定
+  tags:
+    - 同盟会成立
+    - 孙中山
+    - 黄兴
+    - 三民主义
+    - 创立民国
+    - 辛亥革命大党
+    - 历史转折
+  sources:
+    - 同盟会章程
+    - 孙中山全集
+    - 民报发刊词
+    - 中文维基百科
+  image:
+    url: /images/events/1905/cn-tongmenghui-founded-190508.jpg
+    caption: 中国同盟会早期骨干志士与孙中山先生合影历史照片档案
+    source: https://commons.wikimedia.org/wiki/File:Sun_Yat_Sen_together_with_the_members_of_the_Singapore_Branch_of_Tongmen_Hui.png
+    author: Historical Archive / Sun Yat Sen Nanyang Memorial Hall
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-abolish-imperial-examination-190509
+  date: '1905-09-02'
+  title: 清廷正式下诏废除延续1300年的科举制度
+  category: 文化
+  importance: 5
+  summary: 直隶总督袁世凯、湖广总督张之洞等会奏《请立停科举以广学堂折》，光绪帝正式颁发上谕，谕令自丙午科（1906年）起废除所有乡会试及各省岁科考试，各省通设中小学堂及专门学堂。延续自隋唐以来长达1300余年的中国古代科举制度彻底终结，传统儒学士绅阶层随之瓦解，现代知识分子阶层与新型教育体制在中国全面确立。
+  confidence: 确定
+  tags:
+    - 废除科举
+    - 袁世凯
+    - 张之洞
+    - 千年科举终结
+    - 现代教育转型
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 清史稿·选举志
+    - 清末教育档案
+    - 中文维基百科
+  image:
+    url: /images/events/1905/cn-abolish-imperial-examination-190509.jpg
+    caption: 江南贡院（中国古代规模最大的科举考场）历史正门遗址照片
+    source: https://commons.wikimedia.org/wiki/File:Gate_of_Jiangnan_Examination_Hall_3.jpg
+    author: Wikimedia Commons contributor / Historical Architecture
+    license: CC-BY-SA 4.0
+  related_dynasties:
+    - qing
+- id: cn-constitutional-preparation-190609
+  date: '1906-09-01'
+  title: 清廷颁布预备立宪上谕，预备立宪运动启动
+  category: 政治
+  importance: 5
+  summary: 清廷听取考察政治馆及出洋考察宪政五大臣（载泽、端方等）的考察报告后，光绪帝颁布《仿行宪政》上谕，宣告「大权统于朝廷，庶政公诸舆论」，正式启动「预备立宪」。各地立宪派纷纷设立预备立宪公会、宪政公会，掀起自上而下与自下而上交织的立宪请愿大潮，深刻加剧了清王朝统治集团内部与社会的矛盾分裂。
+  confidence: 确定
+  tags:
+    - 预备立宪
+    - 载泽
+    - 端方
+    - 立宪派
+    - 仿行宪政
+    - 晚清政改
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 清末筹备立宪档案史料
+    - 中文维基百科
+  image:
+    url: /images/events/1906/cn-constitutional-preparation-190609.jpg
+    caption: 出洋考察宪政五大臣之首、主张推行预备立宪的晚清重臣端方历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Duan_Fang.jpg
+    author: Period portrait / Historical Archive
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-qiu-jin-martyrdom-190707
+  date: '1907-07-15'
+  title: 徐锡麟安庆起义，秋瑾在绍兴轩亭口壮烈就义
+  category: 政治
+  importance: 5
+  summary: 光复会领导人徐锡麟在安庆巡警学堂毕业典礼上刺杀巡抚恩铭发动安庆起义，不幸力竭被捕剖心殉国。随后清军包围绍兴大通学堂逮捕秋瑾，秋瑾面对严刑逼供坚贞不屈，仅书「秋风秋雨愁煞人」七字，次日清晨在绍兴轩亭口英勇就义，年仅31岁，成为近代中国为民主革命与妇女解放献身的第一位女烈士。
+  confidence: 确定
+  tags:
+    - 秋瑾就义
+    - 徐锡麟
+    - 安庆起义
+    - 光复会
+    - 鉴湖女侠
+    - 女权先驱
+    - 历史转折
+  sources:
+    - 清史稿·徐锡麟传
+    - 秋瑾集
+    - 中文维基百科
+  image:
+    url: /images/events/1907/cn-qiu-jin-martyrdom-190707.jpg
+    caption: 中国近代民主革命女烈士、妇女解放先驱「鉴湖女侠」秋瑾历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Qiu_jin.jpg
+    author: Period photographer / Historical Archive
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-principles-constitution-190808
+  date: '1908-08-27'
+  title: 清廷颁布《钦定宪法大纲》
+  category: 政治
+  importance: 4
+  summary: 清廷颁布中国历史上第一部宪法性文件《钦定宪法大纲》，仿效《大日本帝国宪法》，正文规定「大清皇帝统治大清帝国，万世一系」「君上大权」至高无上，臣民权利仅列附录，暴露了维护皇权专制的实质，引起立宪派与社会极大失望。
+  confidence: 确定
+  tags:
+    - 钦定宪法大纲
+    - 晚清立宪
+    - 君上大权
+  sources:
+    - 清史稿·德宗本纪
+    - 清末筹备立宪档案史料
+  related_dynasties:
+    - qing
+- id: cn-guangxu-cixi-die-puyi-190811
+  date: '1908-11-14'
+  title: 光绪帝与慈禧太后相继去世，溥仪继位改元宣统
+  category: 政治
+  importance: 5
+  summary: 清德宗光绪皇帝载湉在中南海瀛台涵元殿暴崩（现代法医检验确认为急性砒霜中毒），终年38岁。掌控大清最高权力近半个世纪的慈禧太后于次日病逝于中南海仪鸾殿，终年74岁。慈禧临终遗命立年仅3岁的醇亲王载沣之子爱新觉罗·溥仪入继大统，即清逊帝（宣统帝），载沣任摄政王，大清帝国最高权力中枢陷入前所未有的动荡与脆弱。
+  confidence: 确定
+  tags:
+    - 光绪帝驾崩
+    - 慈禧太后去世
+    - 溥仪登基
+    - 宣统帝
+    - 清朝末代皇帝
+    - 历史转折
+  sources:
+    - 清史稿·德宗本纪
+    - 清史稿·宣统皇帝本纪
+    - 清史稿·后妃传
+    - 中文维基百科
+  image:
+    url: /images/events/1908/cn-guangxu-cixi-die-puyi-190811.jpg
+    caption: 1908年登基的大清帝国末代皇帝爱新觉罗·溥仪幼年历史照片
+    source: https://commons.wikimedia.org/wiki/File:Aisin_-Gioro_%27Henry%27_Pu-yi_was_onder_de_naam_Xuantong_de_laatste_keizer_van_China_van_1908_tot,_SFA008002489.jpg
+    author: Qing Imperial Court / Nationaal Archief
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-feng-ru-first-airplane-190909
+  date: '1909-09-21'
+  title: 冯如在美国成功试飞中国第一架动力飞机
+  category: 文化
+  importance: 5
+  summary: 中国近代航空之父冯如在加利福尼亚州奥克兰市克服资金技术极端困难，自主研制出中国历史上第一架动力载人双翼飞机「冯如1号」，并在彼得蒙山岗成功首飞升空，飞行高度约4.5米，航程达800米，被美国报纸赞誉为「东方的莱特」，谱写了中华民族飞天科技史上划时代的辉煌开篇。
+  confidence: 确定
+  tags:
+    - 冯如试飞
+    - 中国第一架飞机
+    - 中国航空之父
+    - 航空史开端
+    - 科技强国先驱
+    - 历史转折
+  sources:
+    - 中国航空史
+    - 旧金山观察家报1909年报道
+    - 中文维基百科
+  image:
+    url: /images/events/1909/cn-feng-ru-first-airplane-190909.jpg
+    caption: 中国近代航空事业奠基人、航空之父冯如历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Feng_Ru.jpg
+    author: Period photographer / Chinese Aviation Historical Society
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-beijing-kalgan-railway-190910
+  date: '1909-10-02'
+  title: 詹天佑主持修建京张铁路全线建成通车
+  category: 经济
+  importance: 5
+  summary: 由中国著名杰出铁路工程专家詹天佑总工程师主持勘测、设计并施工的京张铁路（北京至张家口，全长约200公里）在南口举行隆重通车典礼。詹天佑创造性地设计了「人」字形折返线降低坡度，成功开凿八达岭隧道，不仅比外国同行预估工期提前两年全线竣工，且费用节省白银28万两，彻底粉碎了外国人「中国能造此路之工程师尚未诞生」的傲慢狂言，开创了中国自主修建干线铁路的光辉里程碑。
+  confidence: 确定
+  tags:
+    - 京张铁路通车
+    - 詹天佑
+    - 中国人自主设计建造第一条铁路
+    - 人字形铁路
+    - 中国工程奇迹
+    - 历史转折
+  sources:
+    - 清史稿·交通志
+    - 詹天佑文集
+    - 中国铁道史
+    - 中文维基百科
+  image:
+    url: /images/events/1909/cn-beijing-kalgan-railway-190910.jpg
+    caption: 主持修建京张铁路的中国铁路之父、杰出工程师詹天佑历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Jeme_Tien_Yow.jpg
+    author: Period photographer / Historical Archive
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-northeast-plague-wu-liande-191011
+  date: 1910-11
+  title: 东北特大肺鼠疫爆发，伍连德科学抗疫扑灭疫情
+  category: 灾害
+  importance: 5
+  summary: 东北哈尔滨、满洲里等地爆发极为凶险的特大肺鼠疫，并在铁路沿线疯狂蔓延夺去6万余人生命。清廷任命剑桥医学博士伍连德为东三省防疫全权总医官。伍连德冒生命危险实施中国第一例现代医学病理解剖，首次提出肺鼠疫飞沫呼吸道传染学说，发明「伍氏口罩」、建立四区分离医院、严格封锁铁路线并主持万人遗体集中火化，仅用4个月彻底扑灭世界特大瘟疫，次年在沈阳主持召开中国历史上首个国际科学会议「万国鼠疫大会」，树立世界公共卫生史的丰碑。
+  confidence: 确定
+  tags:
+    - 东北鼠疫
+    - 伍连德
+    - 伍氏口罩
+    - 科学防疫
+    - 万国鼠疫大会
+    - 现代公共卫生奇迹
+    - 历史转折
+  sources:
+    - 清史稿·灾诪志
+    - 伍连德自传《鼠疫斗士》
+    - 万国鼠疫大会报告书
+    - 中文维基百科
+  image:
+    url: /images/events/1910/cn-northeast-plague-wu-liande-191011.jpg
+    caption: 领导扑灭东北特大肺鼠疫的现代医学先驱伍连德博士历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Wu_Lien-teh_-_c._1910%E2%80%931915.jpg
+    author: Period portrait / Wellcome Collection
+    license: Public domain
+  related_dynasties:
+    - qing
+- id: cn-huanghuagang-uprising-191104
+  date: '1911-04-27'
+  title: 广州黄花岗起义爆发（黄花岗七十二烈士）
+  category: 战争
+  importance: 5
+  summary: 同盟会在广州发动辛亥革命前规模最壮烈的大起义。黄兴亲率林觉民、方声洞、喻培伦等百余名「选锋」敢死队直扑两广总督署，与清军展开殊死巷战。起义因寡不敌众失败，百余位革命精英壮烈牺牲，同盟会员潘达微冒死收殓七十二具烈士遗骸合葬于广州红花岗（改称黄花岗）。林觉民绝笔《与妻书》传诵千古。起义极大地振奋了全民族的革命斗志。
+  confidence: 确定
+  tags:
+    - 黄花岗起义
+    - 黄花岗七十二烈士
+    - 黄兴
+    - 林觉民
+    - 与妻书
+    - 辛亥前夜
+    - 历史转折
+  sources:
+    - 黄花岗烈士事略
+    - 孙中山全集
+    - 中文维基百科
+  image:
+    url: /images/events/1911/cn-huanghuagang-uprising-191104.jpg
+    caption: 广州黄花岗七十二烈士墓园历史纪念建筑照片
+    source: https://commons.wikimedia.org/wiki/File:Guangzhou_Yuexiu_Huanghuagang_Qishier_Lieshi_Mu_2025-09-19_14.54.21.jpg
+    author: Wikimedia Commons contributor / Architecture Archive
+    license: CC-BY-SA 4.0
+  related_dynasties:
+    - qing
+- id: cn-railway-protection-movement-191105
+  date: 1911-05
+  title: 保路运动在川鄂湘粤爆发（四川保路同志会）
+  category: 政治
+  importance: 5
+  summary: 清廷颁布「铁路干线国有」上谕并勾结帝国主义银行团出卖粤汉、川汉铁路路权，激起川、鄂、湘、粤四省全民激烈反抗。四川成立保路同志会，掀起罢市罢课抗粮抗捐风潮。四川总督赵尔丰下令开枪屠杀请愿群众制造「成都血案」，同盟会员与哥老会随即发动武装起义包围成都。清廷急调湖北新军入川镇压，造成武汉防务极度空虚，为武昌起义爆发创造了直接导火索。
+  confidence: 确定
+  tags:
+    - 保路运动
+    - 四川保路同志会
+    - 成都血案
+    - 保路风潮
+    - 辛亥革命导火索
+    - 历史转折
+  sources:
+    - 清史稿·宣统皇帝本纪
+    - 四川保路运动史料
+    - 中文维基百科
+  image:
+    url: /images/events/1911/cn-railway-protection-movement-191105.jpg
+    caption: 成都人民公园辛亥秋保路死事纪念碑历史照片档案
+    source: https://commons.wikimedia.org/wiki/File:Monument_to_the_Martyrs_of_the_Railway_Protection_Movement_(1911)_(13913374751).jpg
+    author: Wikimedia Commons contributor / Chengdu Cultural Heritage
+    license: CC-BY-SA 2.0
+  related_dynasties:
+    - qing
+- id: cn-wuchang-uprising-191110
+  date: '1911-10-10'
+  title: 武昌首义爆发，辛亥革命推翻封建帝制
+  category: 战争
+  importance: 5
+  summary: 湖北革命团体文学社与共进会在同盟会领导下，武昌新军工程第八营革命党人熊秉坤、金兆龙打响武昌首义第一枪。起义军占领楚望台军械库，一夜血战攻克湖广总督署与武昌全城，宣告成立中华民国军政府鄂军都督府，推举黎元洪为都督，宣告废除清朝宣统年号、建立中华民国。武昌起义引发全国雷鸣般响应，两月之内湖南、陕西、江西、广东等十五省相继宣布独立，彻底埋葬了统治中国两千余年的封建君主专制制度！
+  confidence: 确定
+  tags:
+    - 武昌起义
+    - 辛亥革命
+    - 首义第一枪
+    - 鄂军都督府
+    - 推翻封建帝制
+    - 建立民国
+    - 历史转折
+  sources:
+    - 清史稿·宣统皇帝本纪
+    - 武昌起义档案资料选编
+    - 孙中山全集
+    - 中文维基百科
+  image:
+    url: /images/events/1911/cn-wuchang-uprising-191110.jpg
+    caption: 辛亥革命武昌首义湖北军政府旧址（武昌红楼）历史照片
+    source: https://commons.wikimedia.org/wiki/File:Hubei_Military_Government.jpg
+    author: Period photographer / Hubei Provincial Museum
+    license: Public domain
+  related_dynasties:
+    - qing

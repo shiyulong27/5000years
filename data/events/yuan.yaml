@@ -1,3 +1,48 @@
+- id: mongol-unification-1206
+  date: "1206"
+  title: 铁木真统一蒙古诸部
+  category: 政治
+  tags: [蒙古, 政权形成, 元明过渡]
+  importance: 5
+  summary: 铁木真在漠北诸部大会中被推举为成吉思汗，蒙古诸部由此形成统一的政治军事组织，随后展开对外扩张。
+  confidence: 确定
+  dispute: 1206年大会及称号的具体仪式细节主要见《蒙古秘史》等记载；本事件只承载统一与政权形成，不补传奇对白。
+  sources: [蒙古秘史, 元史·太祖纪]
+
+- id: mongol-jin-war-1211
+  date: "1211"
+  title: 蒙古攻金战争开始
+  category: 战争
+  tags: [蒙古, 金, 北方战争]
+  importance: 5
+  summary: 成吉思汗率蒙古军南下攻金，蒙古与金朝的长期战争开始，华北政治格局和人口迁徙由此持续改变。
+  confidence: 确定
+  related_dynasties: [jin1115]
+  sources: [元史·太祖纪, 金史·太祖纪]
+
+- id: mongol-destroy-jin-1234
+  date: "1234"
+  title: 蒙古灭金
+  category: 政治
+  tags: [蒙古, 金, 政权更替]
+  importance: 5
+  summary: 蒙古与南宋联军攻灭金朝，金哀宗自杀，北方旧有政权格局终结，蒙古随后与南宋直接对峙。
+  confidence: 确定
+  related_dynasties: [jin1115]
+  sources: [元史·太宗纪, 金史·哀宗纪, 宋史·理宗纪]
+
+- id: yuan-province-system-1280
+  date: "1280"
+  title: 元朝行省制度逐步确立
+  category: 政治
+  tags: [元, 行省, 行政制度]
+  importance: 5
+  summary: 元朝在统一南北后将行中书省制度扩展到各地，形成中央中书省与地方行省相联系的行政架构。
+  confidence: 有争议
+  dispute: 行省设置经历统一战争前后多次调整，1280年为制度扩展阶段的年份锚点，不表示某一日完成全国定型。
+  related_dynasties: [yuan]
+  sources: [元史·百官志, 元史·地理志]
+
 - id: hubilie-yuan-1271
   date: "1271"
   title: 忽必烈定国号大元
@@ -65,3 +110,26 @@
   summary: 明军攻陷大都，元顺帝北逃漠北，元朝在中原统治结束，史称北元。
   confidence: 确定
   sources: [元史·顺帝纪]
+
+- id: yuan-paper-money-crisis-1350
+  date: "1350"
+  title: 元末纸钞贬值与财政危机
+  category: 经济
+  tags: [元, 纸钞, 财政]
+  importance: 4
+  summary: 至正年间元廷发行新钞并扩大财政支出，纸钞贬值和物价波动加剧，成为元末社会危机的制度背景之一。
+  confidence: 有争议
+  dispute: 纸钞贬值、河工支出和社会动荡的因果链涉及多年变化，1350年仅作至正财政危机阶段锚点。
+  related_dynasties: [yuan]
+  sources: [元史·食货志, 元史·顺帝纪]
+
+- id: shoushi-calendar-1281
+  date: "1281"
+  title: 郭守敬编制《授时历》
+  category: 文化
+  tags: [元, 天文, 历法]
+  importance: 5
+  summary: 郭守敬等修订历法，元廷颁行《授时历》，以实测改进历法计算，成为元代重要科技制度成果。
+  confidence: 确定
+  related_dynasties: [yuan]
+  sources: [元史·郭守敬传, 元史·历志]

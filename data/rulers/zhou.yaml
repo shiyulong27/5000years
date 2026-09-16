@@ -1,0 +1,400 @@
+# 西周君主。
+#
+# 收录武王至幽王十二王。前841年国人暴动后，厉王出奔，周公、召公
+# 「共和行政」或共伯和摄政，传统材料对主持者解释不同；该阶段不是一位
+# 名为「共和」的君王，故不伪造 ruler 记录，而由事件数据呈现。
+# 前841年以前的逐王绝对年代主要采用夏商周断代工程框架，仍有争议；
+# 前841年以后进入中国传统纪年的连续年份体系。
+
+- dynasty: xizhou
+  temple_name: 周武王
+  name: 姬发
+  reign_start: "-1046"
+  reign_end: "-1043"
+  era_names: []
+  tags: [帝王]
+  note: 牧野克商，建立周朝并推行分封
+  role: founder
+  confidence: 有争议
+  dispute: 牧野之战及武王在位年代有前1046、前1044、前1027等多种方案；此处采用夏商周断代工程框架。
+
+- dynasty: xizhou
+  temple_name: 周成王
+  name: 姬诵
+  reign_start: "-1043"
+  reign_end: "-1021"
+  era_names: []
+  tags: [帝王]
+  note: 年少即位，周公摄政，平定三监并营建成周
+  confidence: 有争议
+  dispute: 成王在位及周公摄政年数存在不同推算，前1043年作为交接锚点，约前1042年亲政或即位亦常见。
+
+- dynasty: xizhou
+  temple_name: 周康王
+  name: 姬钊
+  reign_start: "-1021"
+  reign_end: "-0996"
+  era_names: []
+  tags: [帝王]
+  note: 延续成王时期秩序，后世合称成康之治
+  confidence: 有争议
+  dispute: 康王世系有青铜器铭文支持，但具体在位起止与「四十余年不用刑措」的盛世叙述带有后世理想化色彩。
+
+- dynasty: xizhou
+  temple_name: 周昭王
+  name: 姬瑕
+  reign_start: "-0996"
+  reign_end: "-0977"
+  era_names: []
+  tags: [帝王]
+  note: 多次南征，传统称渡汉水时身亡
+  confidence: 有争议
+  dispute: 昭王南征可由多件青铜器铭文与传世文献相互参照，但死亡经过及绝对年份仍有争议。
+
+- dynasty: xizhou
+  temple_name: 周穆王
+  name: 姬满
+  reign_start: "-0977"
+  reign_end: "-0922"
+  era_names: []
+  tags: [帝王]
+  note: 在位较久，曾大规模巡行和征伐；后世衍生西游传说
+  confidence: 有争议
+  dispute: 穆王时期有青铜铭文和传世记载，但《穆天子传》的西行路线、会见西王母等内容兼具史料与传说性质。
+
+- dynasty: xizhou
+  temple_name: 周共王
+  name: 姬繄扈（yī hù）
+  reign_start: "-0922"
+  reign_end: "-0900"
+  era_names: []
+  tags: [帝王]
+  note: 穆王之子，西周中期君主
+  confidence: 有争议
+  dispute: 共王王位次序较明确，但名字写法、在位年数及绝对年代存在不同重建方案。
+
+- dynasty: xizhou
+  temple_name: 周懿王
+  name: 姬囏（jiān）
+  reign_start: "-0900"
+  reign_end: "-0892"
+  era_names: []
+  tags: [帝王]
+  note: 共王之子，传统文献称其时王室渐衰
+  confidence: 有争议
+  dispute: 懿王时期材料有限，「王室遂衰」是后世概括；在位起止主要据断代方案推定。
+
+- dynasty: xizhou
+  temple_name: 周孝王
+  name: 姬辟方
+  reign_start: "-0892"
+  reign_end: "-0886"
+  era_names: []
+  tags: [帝王]
+  note: 共王之弟，越过懿王之子而继位
+  confidence: 有争议
+  dispute: 孝王在位较短，具体起止与秦非子受封的年代主要依赖后世文献重建。
+
+- dynasty: xizhou
+  temple_name: 周夷王
+  name: 姬燮（xiè）
+  reign_start: "-0886"
+  reign_end: "-0878"
+  era_names: []
+  tags: [帝王]
+  note: 懿王之子，孝王之后恢复父系继承
+  confidence: 有争议
+  dispute: 夷王在位起止和烹齐哀公等叙事的史实性均有争议。
+
+- dynasty: xizhou
+  temple_name: 周厉王
+  name: 姬胡
+  reign_start: "-0878"
+  reign_end: "-0841"
+  era_names: []
+  tags: [帝王]
+  note: 推行专利政策激化矛盾，国人暴动后出奔彘
+  confidence: 有争议
+  dispute: 前841年国人暴动是传统连续纪年的可靠起点，但「专利」「止谤」的具体制度和暴动参与者身份仍有不同解释。
+
+- dynasty: xizhou
+  temple_name: 周宣王
+  name: 姬静
+  reign_start: "-0827"
+  reign_end: "-0782"
+  era_names: []
+  tags: [帝王]
+  note: 共和行政后即位，一度重振王室，史称宣王中兴
+  confidence: 有争议
+  dispute: 宣王在位年份相对明确，但「中兴」程度及对猃狁、淮夷战争的具体过程仍需结合铭文和传世文献判断。
+
+- dynasty: xizhou
+  temple_name: 周幽王
+  name: 姬宫湦（shēng）
+  reign_start: "-0782"
+  reign_end: "-0771"
+  era_names: []
+  tags: [帝王]
+  note: 西周末代君主，犬戎攻破镐京时被杀
+  role: last
+  confidence: 有争议
+  dispute: 幽王被杀和西周灭亡的基本事实较明确，但「烽火戏诸侯」故事及褒姒导致亡国的归因受到清华简等材料质疑。
+
+# 东周君主。前770年至前476年归入春秋，前475年以后归入战国。
+# 周王室于前256年灭亡，战国时代则延续至前221年秦统一。
+
+- dynasty: chunqiu
+  temple_name: 周平王
+  name: 姬宜臼（jiù）
+  reign_start: "-0770"
+  reign_end: "-0720"
+  era_names: []
+  tags: [帝王]
+  note: 东迁洛邑，开启东周；此后周王室权威逐渐衰落
+  role: founder
+  confidence: 有争议
+  dispute: 平王即位、东迁与携王并立的过程因清华简《系年》等材料而有不同重建；此处采用传统纪年。
+
+- dynasty: chunqiu
+  temple_name: 周桓王
+  name: 姬林
+  reign_start: "-0720"
+  reign_end: "-0697"
+  era_names: []
+  tags: [帝王]
+  note: 与郑庄公交恶，繻葛之战中周天子权威进一步受挫
+  confidence: 确定
+
+- dynasty: chunqiu
+  temple_name: 周庄王
+  name: 姬佗
+  reign_start: "-0697"
+  reign_end: "-0682"
+  era_names: []
+  tags: [帝王]
+  note: 桓王之子，在位时齐桓公开始崛起
+  confidence: 确定
+
+- dynasty: chunqiu
+  temple_name: 周釐王
+  name: 姬胡齐
+  reign_start: "-0682"
+  reign_end: "-0677"
+  era_names: []
+  tags: [帝王]
+  note: 在位较短，齐桓公称霸局面继续形成
+  confidence: 确定
+
+- dynasty: chunqiu
+  temple_name: 周惠王
+  name: 姬阆（làng）
+  reign_start: "-0677"
+  reign_end: "-0652"
+  era_names: []
+  tags: [帝王]
+  note: 王子颓之乱中一度出奔，依靠诸侯援助复位
+  confidence: 确定
+
+- dynasty: chunqiu
+  temple_name: 周襄王
+  name: 姬郑
+  reign_start: "-0652"
+  reign_end: "-0619"
+  era_names: []
+  tags: [帝王]
+  note: 王子带之乱中出奔，后由晋文公护送复位
+  confidence: 确定
+
+- dynasty: chunqiu
+  temple_name: 周顷王
+  name: 姬壬臣
+  reign_start: "-0619"
+  reign_end: "-0613"
+  era_names: []
+  tags: [帝王]
+  note: 在位六年，王室财政和政治影响力继续衰弱
+  confidence: 确定
+
+- dynasty: chunqiu
+  temple_name: 周匡王
+  name: 姬班
+  reign_start: "-0613"
+  reign_end: "-0607"
+  era_names: []
+  tags: [帝王]
+  note: 顷王之弟，在位期间晋楚争霸持续
+  confidence: 确定
+
+- dynasty: chunqiu
+  temple_name: 周定王
+  name: 姬瑜
+  reign_start: "-0607"
+  reign_end: "-0586"
+  era_names: []
+  tags: [帝王]
+  note: 楚庄王陈兵洛水并问鼎轻重，王权象征受到挑战
+  confidence: 确定
+
+- dynasty: chunqiu
+  temple_name: 周简王
+  name: 姬夷
+  reign_start: "-0586"
+  reign_end: "-0572"
+  era_names: []
+  tags: [帝王]
+  note: 在位时晋楚争霸趋向弭兵，诸侯政治占据主导
+  confidence: 确定
+
+- dynasty: chunqiu
+  temple_name: 周灵王
+  name: 姬泄心
+  reign_start: "-0572"
+  reign_end: "-0545"
+  era_names: []
+  tags: [帝王]
+  note: 在位二十余年，王室内部矛盾与诸侯争霸并存
+  confidence: 确定
+
+- dynasty: chunqiu
+  temple_name: 周景王
+  name: 姬贵
+  reign_start: "-0545"
+  reign_end: "-0520"
+  era_names: []
+  tags: [帝王]
+  note: 铸大钱、造无射钟，晚年储位之争引发王室内乱
+  confidence: 确定
+
+- dynasty: chunqiu
+  temple_name: 周悼王
+  name: 姬猛
+  reign_start: "-0520"
+  reign_end: "-0520"
+  era_names: []
+  tags: [帝王]
+  note: 景王之子，在王子朝之乱中即位不久即去世
+  confidence: 有争议
+  dispute: 悼王在位不足一年，同年内即位、去世及敬王继位的具体月日存在不同记载；时间线按传统顺序排列。
+
+- dynasty: chunqiu
+  temple_name: 周敬王
+  name: 姬匄（gài）
+  reign_start: "-0520"
+  reign_end: "-0476"
+  era_names: []
+  tags: [帝王]
+  note: 在晋国支持下平定王子朝之乱，在位跨越春秋末期
+  confidence: 确定
+
+- dynasty: zhanguo
+  temple_name: 周元王
+  name: 姬仁
+  reign_start: "-0475"
+  reign_end: "-0469"
+  era_names: []
+  tags: [帝王]
+  note: 敬王之子，其在位起点对应本项目采用的战国起年
+  confidence: 确定
+
+- dynasty: zhanguo
+  temple_name: 周贞定王
+  name: 姬介
+  reign_start: "-0469"
+  reign_end: "-0441"
+  era_names: []
+  tags: [帝王]
+  note: 在位近三十年，晋国卿族势力继续分化
+  confidence: 确定
+
+- dynasty: zhanguo
+  temple_name: 周哀王
+  name: 姬去疾
+  reign_start: "-0441"
+  reign_end: "-0441"
+  era_names: []
+  tags: [帝王]
+  note: 贞定王长子，即位数月后被弟弟姬叔杀害
+  confidence: 有争议
+  dispute: 哀王与思王均在前441年前后短暂在位，传世文献对具体月日记载有限；时间线按《史记》王次排列。
+
+- dynasty: zhanguo
+  temple_name: 周思王
+  name: 姬叔
+  reign_start: "-0441"
+  reign_end: "-0440"
+  era_names: []
+  tags: [帝王]
+  note: 杀哀王自立，旋即又被弟弟姬嵬所杀
+  confidence: 有争议
+  dispute: 思王实际在位时间很短，跨年边界依传统纪年表达，不代表完整在位一年。
+
+- dynasty: zhanguo
+  temple_name: 周考王
+  name: 姬嵬（wéi）
+  reign_start: "-0440"
+  reign_end: "-0426"
+  era_names: []
+  tags: [帝王]
+  note: 平定兄弟间王位冲突，并封弟于河南形成西周公国
+  confidence: 确定
+
+- dynasty: zhanguo
+  temple_name: 周威烈王
+  name: 姬午
+  reign_start: "-0426"
+  reign_end: "-0402"
+  era_names: []
+  tags: [帝王]
+  note: 正式册命韩、赵、魏为诸侯，三家分晋获得王室承认
+  confidence: 确定
+
+- dynasty: zhanguo
+  temple_name: 周安王
+  name: 姬骄
+  reign_start: "-0402"
+  reign_end: "-0376"
+  era_names: []
+  tags: [帝王]
+  note: 在位时田氏取代姜姓成为齐国国君，七雄格局渐成
+  confidence: 确定
+
+- dynasty: zhanguo
+  temple_name: 周烈王
+  name: 姬喜
+  reign_start: "-0376"
+  reign_end: "-0369"
+  era_names: []
+  tags: [帝王]
+  note: 在位七年，周王室仅保有洛邑附近有限领地
+  confidence: 确定
+
+- dynasty: zhanguo
+  temple_name: 周显王
+  name: 姬扁
+  reign_start: "-0369"
+  reign_end: "-0321"
+  era_names: []
+  tags: [帝王]
+  note: 在位近五十年，经历商鞅变法与列国相继称王
+  confidence: 确定
+
+- dynasty: zhanguo
+  temple_name: 周慎靓王
+  name: 姬定
+  reign_start: "-0321"
+  reign_end: "-0315"
+  era_names: []
+  tags: [帝王]
+  note: 显王之子，在位时合纵连横竞争加剧
+  confidence: 确定
+
+- dynasty: zhanguo
+  temple_name: 周赧王
+  name: 姬延
+  reign_start: "-0315"
+  reign_end: "-0256"
+  era_names: []
+  tags: [帝王]
+  note: 东周末代君主，债台高筑；秦取王畿后周王室灭亡
+  role: last
+  confidence: 确定

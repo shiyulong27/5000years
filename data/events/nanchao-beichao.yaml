@@ -1,3 +1,25 @@
+- id: beiwei-juntian-485
+  date: "0485"
+  title: 北魏颁行均田制
+  category: 政治
+  tags: [北魏, 制度, 土地]
+  importance: 5
+  summary: 北魏在太和九年颁行均田制度，按人口与身份授予露田、桑田等土地，并设置官田与授受规则，重塑国家对土地和赋役的组织方式。
+  confidence: 确定
+  related_dynasties: [beiwei]
+  sources: [魏书·食货志]
+
+- id: beiwei-sanchang-486
+  date: "0486"
+  title: 北魏建立三长制
+  category: 政治
+  tags: [北魏, 制度, 户籍, 赋役]
+  importance: 5
+  summary: 北魏采纳李冲建议，五家立邻长、五邻立里长、五里立党长，以基层编制整顿户籍、赋役和地方治理，作为均田制的组织配套。
+  confidence: 确定
+  related_dynasties: [beiwei]
+  sources: [魏书·食货志]
+
 - id: liu-song-420
   date: "0420"
   title: 刘裕代晋，刘宋建立
@@ -27,6 +49,29 @@
   dispute: 木兰事迹源自北朝民歌《木兰诗》，人物真实性与具体年代史学界无定论，年代系约估。
   sources: [木兰诗]
 
+- id: gaoyun-history-case-450
+  date: "0450-06"
+  title: 高允直陈国史案
+  category: 政治
+  tags: [北魏, 国史, 司法]
+  importance: 4
+  summary: 崔浩国史案发后，高允面对太武帝如实说明自己参与撰述的程度，没有顺从太子的免责说辞，因“对君以实”获免，并反对扩大株连。
+  confidence: 确定
+  related_dynasties: [beiwei]
+  sources: [魏书·世祖纪下, 魏书·高允传]
+
+- id: tandaoji-liangsha-0431
+  date: "0431"
+  title: 檀道济唱筹量沙
+  category: 战争
+  tags: [刘宋, 北魏, 军事]
+  importance: 4
+  summary: 元嘉八年檀道济北略至历城，因资运将尽而夜间以少米铺沙伪装军粮，令北魏误判宋军储备，最终全军退还。
+  confidence: 有争议
+  dispute: 《南史·檀道济传》记载唱筹量沙及全军退还，但细节带有战地叙事色彩；此处仅保留撤军与伪装军粮的基本过程。
+  related_dynasties: [liusong, beiwei]
+  sources: [南史·檀道济传]
+
 - id: zu-chongzhi-462
   date: "0462"
   title: 祖冲之成《大明历》
@@ -35,6 +80,18 @@
   summary: 祖冲之造《大明历》，首次将岁差引入历法，其圆周率推算精度领先世界近千年。
   confidence: 确定
   sources: [宋书·律历志]
+
+- id: fan-zhen-shenmielun-0500
+  date: "0500"
+  title: 范缜论《神灭论》
+  category: 文化
+  tags: [南朝, 思想, 佛教]
+  importance: 4
+  summary: 范缜以“形存则神存，形谢则神灭”论证形神不可分离，反对神不灭等说法，南朝形神之争由此留下重要文本。
+  confidence: 有争议
+  dispute: 《梁书·范缜传》记其在齐代与竟陵王子良论佛及著《神灭论》，正文未给成文公历年份；此处取齐梁之际约500年锚点。
+  related_dynasties: [nanqi]
+  sources: [梁书·范缜传]
 
 - id: nanqi-479
   date: "0479"
@@ -63,6 +120,17 @@
   summary: 萧衍（梁武帝）代齐立梁，在位四十八年，前期政绩斐然，晚年侯景之乱瓦解梁统。
   confidence: 确定
 
+- id: liangwudi-sheshen-527
+  date: "0527-03"
+  title: 梁武帝同泰寺舍身
+  category: 文化
+  tags: [南梁, 佛教, 宗教政策]
+  importance: 4
+  summary: 大通元年三月，梁武帝幸同泰寺舍身，数日后还宫并改元；这是其将佛教仪式纳入帝王政治实践的重要节点。
+  confidence: 确定
+  related_dynasties: [liang]
+  sources: [梁书·高祖本纪]
+
 - id: beiwei-split-534
   date: "0534"
   title: 北魏分裂为东魏西魏
@@ -77,7 +145,7 @@
   category: 战争
   tags: [南梁, 兵变]
   importance: 4
-  summary: 东魏降将侯景举兵叛梁攻陷建康，梁武帝被饿死台城，江南繁华之地毁于一旦。
+  summary: 东魏降将侯景举兵叛梁并围攻建康，台城陷落后梁武帝受到供膳限制，忧愤感疾而崩，梁政权和江南社会秩序遭到重创。
   confidence: 确定
   sources: [梁书·侯景传]
 
@@ -87,5 +155,5 @@
   title: 陈霸先建陈；北周代西魏
   category: 政治
   importance: 3
-  summary: 陈霸先代梁建陈；宇文觉受禅代西魏建北周，南北格局进入陈与北周相持。
+  summary: 陈霸先代梁建陈；宇文觉受禅代西魏建北周，北方此后仍有北齐与北周并立，南方为陈。
   confidence: 确定
