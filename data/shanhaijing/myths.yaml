@@ -1,0 +1,223 @@
+- id: myth-nuwa
+  title: 女娲造人与炼石补天
+  pinyin: nǚ wā zào rén yǔ liàn shí bǔ tiān
+  book: 大荒西经
+  figures:
+    - 女娲
+  spirit: 创世之母与拯救苍生的博大母爱
+  summary: 创世女神抟土造人、繁衍华夏生息；当天塌地陷、洪水猛兽横行时，炼五色石以补苍天，断鳌足以立四极。
+  original_text: |
+    往古之时，四极废，九州裂，天不兼覆，地不周载。火爁焱而不灭，水浩洋而不息。猛兽食颛民，鸷鸟攫老弱。于是女娲炼五色石以补苍天，断鳌足以立四极，杀黑龙以济冀州，积芦灰以止淫水。
+  translation: |
+    远古时代，支撑天地的四根天柱倒塌，九州大地崩裂，天不能完全覆盖大地，地不能完全承载万物。烈火熊熊燃烧不熄，洪水滔天泛滥不止。猛兽吞食善良百姓，凶鸟抓走老弱妇孺。于是女娲炼化五色石来修补苍天，砍下巨鳌的四足树立为撑天的四极，斩杀兴风作浪的黑龙解救冀州，堆积芦苇灰烬堵住泛滥的洪水。
+  cultural_meaning: 华夏文明中关于母性创世、重构天地秩序的最伟大史诗，体现了先民战胜洪荒灾难的坚定决心。
+  tags:
+    - 补天
+    - 造人
+    - 五色石
+    - 创世母神
+    - 四极
+  video:
+    title: 央视动画《典籍里的中国·女娲补天》
+    url: https://www.bilibili.com/video/BV1cW411E7qT
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1cW411E7qT
+  image: /images/shanhaijing/digital_art/xiwangmu.png
+  image_ancient: /images/shanhaijing/myths/nuwa.jpg
+  image_refined: /images/shanhaijing/digital_art/xiwangmu.png
+- id: myth-kuafu
+  title: 夸父逐日
+  pinyin: kuā fù zhú rì
+  book: 海外北经·大荒北经
+  figures:
+    - 夸父
+  spirit: 追逐光明、征服自然、死而不休的悲壮气魄
+  summary: 巨人夸父立志追赶落日，与太阳在禺谷赛跑；渴饮黄河渭水不足，北饮大泽未至道渴而死，弃其手杖化为邓林桃林。
+  original_text: |
+    夸父与日逐走，入日；渴，欲得饮，饮于河、渭；河、渭不足，北饮大泽。未至，道渴而死。弃其杖，化为邓林。
+  translation: |
+    巨人夸父追赶太阳赛跑，一直追到太阳落下的地方；他口渴难耐想要喝水，便痛饮黄河和渭水；黄河和渭水的水喝干了仍不解渴，又向北去喝大泽之水。还没赶到大泽，就在半路极度焦渴而倒下死去。他死前抛弃的手杖，在荒原上化作了一片郁郁葱葱的桃林（邓林）。
+  cultural_meaning: 表现了早期人类探索自然、向往光明烈日的雄奇浪漫与不屈斗志，手杖化桃林寓意造福后世追光之人。
+  tags:
+    - 逐日
+    - 邓林
+    - 巨人族
+    - 追光者
+    - 悲壮
+  video:
+    title: 国风水墨巨制《山海经·夸父逐日》
+    url: https://www.bilibili.com/video/BV1iE411r7P9
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1iE411r7P9
+  image: /images/shanhaijing/digital_art/kuafu.png
+  image_ancient: /images/shanhaijing/myths/kuafu.gif
+  image_refined: /images/shanhaijing/digital_art/kuafu.png
+- id: myth-jingwei
+  title: 精卫填海
+  pinyin: jīng wèi tián hǎi
+  book: 北山经
+  figures:
+    - 女娃
+    - 精卫
+    - 炎帝
+  spirit: 誓不向浩瀚命运低头的不屈抗争信念
+  summary: 炎帝小女儿女娃溺死东海，化作红爪白喙的精卫神鸟，日夜衔西山木石企图填平波涛浩瀚的东海。
+  original_text: |
+    发鸠之山，其上多柘木。有鸟焉，其状如乌，文首、白喙、赤足，名曰精卫，其鸣自詨。是炎帝之少女，名曰女娃。女娃游于东海，溺而不返，故为精卫，常衔西山之木石，以堙于东海。
+  translation: |
+    发鸠山山顶长满柘树。山中有一种鸟，形状像乌鸦，头部生有花纹，长着白色的嘴和赤红的脚爪，名叫精卫，鸣叫如自呼其名。她是炎帝的小女儿女娃。女娃在东海泛舟游泳溺水没有回来，化作了精卫鸟，常常口衔西山的树枝石子，飞去填塞辽阔的东海。
+  cultural_meaning: 陶渊明诗云“精卫衔微木，将以填沧海”，精卫成为中华民族坚韧意志、百折不挠对抗命运的千古图腾。
+  tags:
+    - 精卫
+    - 填海
+    - 炎帝少女
+    - 坚韧意志
+    - 东海
+  video:
+    title: 上海美术电影制片厂《精卫填海》经典重温
+    url: https://www.bilibili.com/video/BV15x411p7qB
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV15x411p7qB
+  image: /images/shanhaijing/digital_art/jingwei.png
+  image_ancient: /images/shanhaijing/myths/jingwei_myth.jpg
+  image_refined: /images/shanhaijing/digital_art/jingwei.png
+- id: myth-xingtian
+  title: 刑天舞干戚
+  pinyin: xíng tiān wǔ gān qī
+  book: 海外西经
+  figures:
+    - 刑天
+    - 黄帝
+  spirit: 纵使身首异处亦永不屈服的战神意志
+  summary: 勇士刑天与天帝争夺神位，被斩去头颅埋于常羊山；刑天仍以双乳为目、以肚脐为口，手握巨斧与盾牌狂怒挥舞战斗。
+  original_text: |
+    刑天与帝至此争神，帝断其首，葬之於常羊之山。乃以乳为目，以脐为口，操干戚以舞。
+  translation: |
+    刑天与黄帝在此地争夺至高神位，黄帝斩断了他的头颅，埋葬在常羊山下。刑天失去头颅后，竟以双乳化为眼睛，以肚脐化为嘴巴，双手紧握盾牌与大斧，在天地间永不停息地怒吼挥舞。
+  cultural_meaning: “刑天舞干戚，猛志固常在”，无头战神刑天的形象树立了华夏神话中最纯粹、最具冲击力的抗争英雄丰碑。
+  tags:
+    - 刑天
+    - 舞干戚
+    - 常羊山
+    - 无头战神
+    - 不屈猛志
+  video:
+    title: 国漫短片《山海战神·刑天之怒》
+    url: https://www.bilibili.com/video/BV1nJ411D7V8
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1nJ411D7V8
+  image: /images/shanhaijing/digital_art/xingtian.png
+  image_ancient: /images/shanhaijing/myths/xingtian.png
+  image_refined: /images/shanhaijing/digital_art/xingtian.png
+- id: myth-chiyou
+  title: 涿鹿之战 (黄帝大战蚩尤)
+  pinyin: zhuō lù zhī zhàn (huáng dì dà zhàn chī yóu)
+  book: 大荒北经·大荒东经
+  figures:
+    - 黄帝
+    - 蚩尤
+    - 应龙
+    - 女魃
+    - 风伯
+    - 雨师
+  spirit: 华夏部族融合与秩序奠基史诗
+  summary: 蚩尤率九黎部落起兵，呼唤风伯雨师纵漫天大雾暴雨；黄帝命应龙蓄水、天女魃止雨，最终破阵斩蚩尤，统一华夏诸部。
+  original_text: |
+    蚩尤作兵伐黄帝，黄帝乃令应龙攻之冀州之野。应龙蓄水。蚩尤请风伯雨师，纵大风雨。黄帝乃下天女曰魃，雨止，遂杀蚩尤。
+  translation: |
+    蚩尤制造兵器兴兵讨伐黄帝，黄帝命应龙在冀州原野迎战。应龙施展神力蓄积大水。蚩尤请来风伯与雨师，刮起狂风降下漫天暴雨。黄帝于是召请天女魃下界，暴雨瞬间止息，黄帝大军遂一举斩杀蚩尤平定天下。
+  cultural_meaning: 上古神话与信史交界处的最大规模战争叙事，汇聚了翼龙、旱神、风雨之神，奠定了华夏共祖的文明格局。
+  tags:
+    - 涿鹿之战
+    - 黄帝
+    - 蚩尤
+    - 应龙
+    - 女魃
+    - 华夏起源
+  video:
+    title: 纪录片《史前神魔之战·涿鹿巅峰对决》
+    url: https://www.bilibili.com/video/BV1g4411C7h1
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1g4411C7h1
+  image: /images/shanhaijing/digital_art/taotie.png
+  image_ancient: /images/shanhaijing/myths/chiyou.jpg
+  image_refined: /images/shanhaijing/digital_art/taotie.png
+- id: myth-gonggong
+  title: 共工怒触不周山
+  pinyin: gòng gōng nù chù bù zhōu shān
+  book: 西山经·大荒西经
+  figures:
+    - 共工
+    - 颛顼
+  spirit: 震撼寰宇的宇宙倾斜与地势演化神话
+  summary: 水神共工与颛顼争帝位落败，怒撞天地支柱不周山，导致天柱折断、地维破损，天倾西北、地陷东南，日月星辰与百川皆依此归流。
+  original_text: |
+    昔者共工与颛顼争为帝，怒而触不周之山，天柱折，地维绝。天倾西北，故日月星辰移焉；地不满东南，故水潦尘埃归焉。
+  translation: |
+    从前水神共工与颛顼帝争夺帝位失败，盛怒之下猛烈撞击不周之山，导致撑天之柱崩折，系地之绳断绝。苍天向西北方向倾斜，因此日月星辰都向西北运转；大地在东南方向塌陷，因此天下江河流水泥沙都汇聚流向东南大海。
+  cultural_meaning: 华夏先民对中国“西高东低”地理大势与星辰东升西落天文运行规律的浪漫神话解释。
+  tags:
+    - 共工
+    - 不周山
+    - 天倾西北
+    - 地陷东南
+    - 颛顼
+  video:
+    title: 《山海经地理密码·共工怒触不周山》
+    url: https://www.bilibili.com/video/BV1sW411j77v
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1sW411j77v
+  image: /images/shanhaijing/digital_art/leishen.png
+  image_ancient: /images/shanhaijing/myths/gonggong.jpg
+  image_refined: /images/shanhaijing/digital_art/leishen.png
+- id: myth-sunmoon
+  title: 羲和浴日与常羲浴月
+  pinyin: xī hé yù rì yǔ cháng xī yù yuè
+  book: 大荒南经·大荒西经
+  figures:
+    - 帝俊
+    - 羲和
+    - 常羲
+  spirit: 上古天象崇拜与时序更迭的瑰丽想象
+  summary: 太阳女神羲和在甘渊为十个太阳沐浴，月亮女神常羲在荒野为十二个月亮沐浴，生动构建了十日干与十二地支的早期历法神格。
+  original_text: |
+    东南海之外，甘水之间，有羲和之国。有女子名曰羲和，方日浴于甘渊。羲和者，帝俊之妻，生十日。有女子方浴月。帝俊妻常羲，生月十有二，此始浴之。
+  translation: |
+    在东南海的外面，甘水之间，有一个羲和之国。有一位女子名叫羲和，正在甘渊温泉中给太阳洗澡。羲和是天帝帝俊的妻子，生下了十个太阳。又有女子正在给月亮洗澡，她是帝俊的妻子常羲，生下了十二个月亮，这是她开始为月亮沐浴的所在。
+  cultural_meaning: 反映了远古先民对天体运行规律的拟人化观察，十日即十天干周期的萌芽，十二月即一年十二个朔望月的历法映射。
+  tags:
+    - 羲和
+    - 常羲
+    - 浴日
+    - 浴月
+    - 帝俊
+    - 天文历法
+  video:
+    title: 国风奇幻《上古日月之母·羲和与常羲》
+    url: https://www.bilibili.com/video/BV1tb411t7f2
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1tb411t7f2
+  image: /images/shanhaijing/digital_art/sanzuwu.png
+  image_ancient: /images/shanhaijing/myths/sunmoon.jpg
+  image_refined: /images/shanhaijing/digital_art/sanzuwu.png
+- id: myth-yuzhishui
+  title: 鲧禹治水与盗息壤
+  pinyin: gǔn yǔ zhì shuǐ yǔ dào xī rǎng
+  book: 海内经
+  figures:
+    - 鲧
+    - 禹
+    - 祝融
+  spirit: 舍身救民、顺应自然、疏堵相济的华夏治世大智慧
+  summary: 洪水滔天之际，鲧盗取天帝自生不息的息壤去围堵洪水，被天帝命火神祝融殛杀于羽山；禹继承遗志，改堵为疏，导江疏川终平天下水患。
+  original_text: |
+    洪水滔天。鲧窃帝之息壤以堙洪水，不待帝命。帝令祝融杀鲧于羽郊。鲧复生禹。帝乃命禹卒布土以定九州。
+  translation: |
+    上古大洪水漫无边际淹没天地。鲧私自盗取了天帝能够不断自生膨胀的“息壤”神土去堵塞洪水，没有等待天帝的旨意。天帝震怒，派遣火神祝融在羽山郊野将鲧诛杀。鲧死后躯体孕育诞生了大禹。天帝于是命令大禹巡行大地铺展神土、疏通河川，最终平定天下九州大水。
+  cultural_meaning: 从“鲧之堵”到“禹之疏”，标志着中华先民告别蛮荒，建立水利文明、划分九州格局的关键历史跨越。
+  tags:
+    - 大禹治水
+    - 鲧盗息壤
+    - 祝融
+    - 定九州
+    - 治水史诗
+  video:
+    title: 史诗动画《山海经大结局·鲧禹治水神话》
+    url: https://www.bilibili.com/video/BV15E411r7Q1
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV15E411r7Q1
+  image: /images/shanhaijing/digital_art/yinglong.png
+  image_ancient: /images/shanhaijing/myths/yuzhishui.jpg
+  image_refined: /images/shanhaijing/digital_art/yinglong.png

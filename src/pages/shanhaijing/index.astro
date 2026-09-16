@@ -1,0 +1,658 @@
+---
+import { fileURLToPath } from 'node:url'
+import Base from '../../layouts/Base.astro'
+import { loadAll } from '../../lib/load.js'
+import '../../styles/shanhaijing.css'
+
+const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
+const data = loadAll(dataDir)
+
+const beasts = data.shanhaijing?.beasts ?? []
+const myths = data.shanhaijing?.myths ?? []
+const chapters = data.shanhaijing?.chapters ?? []
+
+const base = import.meta.env.BASE_URL
+
+// 提取所有篇卷与类别选项
+const allBooks = ['全部', ...new Set(beasts.map((b) => b.book))]
+const allCategories = ['全部', ...new Set(beasts.map((b) => b.category))]
+const allAuspicious = ['全部', ...new Set(beasts.map((b) => b.auspicious))]
+
+const pageTitle = '山海经 · 上古神兽与奇幻大荒 | 十丘通识'
+const pageDesc = `收录《山海经》${beasts.length} 种上古神兽异禽、${myths.length} 大创世史诗神话与 18 卷全景架构，配有现代精美工笔彩绘、明清古籍原版刻本插图、生僻字拼音点读与音视频考据。`
+
+const head = `
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="${pageTitle}" />
+  <meta property="og:description" content="${pageDesc}" />
+`
+---
+
+<Base title={pageTitle} description={pageDesc} head={head} wide={true}>
+  <main class="shj-container">
+    <!-- 顶部导航条 -->
+    <nav class="shj-nav">
+      <a href={base} class="shj-back-link">
+        <span>←</span> <span>返回【十丘】知识总门户</span>
+      </a>
+      <div class="shj-portal-tag">
+        <span>🦚</span> <span>上古奇幻与地理志怪长卷 · 古今双图对照版</span>
+      </div>
+    </nav>
+
+    <!-- Hero 卷首介绍 -->
+    <header class="shj-hero">
+      <div class="shj-hero-badge">典籍可视化 · 奇幻大荒图志</div>
+      <h1 class="shj-hero-title">山 海 经</h1>
+      <p class="shj-hero-desc">
+        《山海经》乃中国先秦志怪之渊薮、华夏神话与奇幻地理之总纲。精选现代精美工笔彩绘复原与明清古刻本插图，图文音视重现大荒万象。
+      </p>
+
+      <div class="shj-stats-bar">
+        <div class="shj-stat-item">
+          <span class="shj-stat-num" id="stat-beasts-count">{beasts.length}</span>
+          <span class="shj-stat-label">种神兽双图考据</span>
+        </div>
+        <div class="shj-stat-item">
+          <span class="shj-stat-num">{myths.length}</span>
+          <span class="shj-stat-label">大创世史诗</span>
+        </div>
+        <div class="shj-stat-item">
+          <span class="shj-stat-num">{chapters.length}</span>
+          <span class="shj-stat-label">卷全景架构</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 标签切换栏 -->
+    <div class="shj-tabs-wrapper">
+      <div class="shj-tabs-nav" role="tablist">
+        <button class="shj-tab-btn active" data-tab="tab-beasts" id="btn-tab-beasts">
+          <span>🐾</span> <span>山海神兽谱</span>
+        </button>
+        <button class="shj-tab-btn" data-tab="tab-myths" id="btn-tab-myths">
+          <span>⚡</span> <span>上古神话卷</span>
+        </button>
+        <button class="shj-tab-btn" data-tab="tab-chapters" id="btn-tab-chapters">
+          <span>📖</span> <span>十八卷典藏</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         TAB 1: 山海神兽谱
+         ======================================================== -->
+    <section class="shj-tab-pane active" id="tab-beasts">
+      <!-- 多维筛选条 -->
+      <div class="shj-filter-bar">
+        <div class="shj-filter-group">
+          <label class="shj-filter-label" for="filter-search">🔍 搜索神兽 / 山名 / 关键词</label>
+          <input
+            type="search"
+            id="filter-search"
+            class="shj-search-input"
+            placeholder="例如：九尾狐、青丘、祥瑞、食之不蛊..."
+          />
+        </div>
+
+        <div class="shj-filter-group">
+          <label class="shj-filter-label" for="filter-book">📜 篇卷出处</label>
+          <select id="filter-book" class="shj-filter-select">
+            {allBooks.map((book) => (
+              <option value={book === '全部' ? '' : book}>{book}</option>
+            ))}
+          </select>
+        </div>
+
+        <div class="shj-filter-group">
+          <label class="shj-filter-label" for="filter-category">🐾 类别分类</label>
+          <select id="filter-category" class="shj-filter-select">
+            {allCategories.map((cat) => (
+              <option value={cat === '全部' ? '' : cat}>{cat}</option>
+            ))}
+          </select>
+        </div>
+
+        <div class="shj-filter-group">
+          <label class="shj-filter-label" for="filter-auspicious">✨ 凶吉征兆</label>
+          <select id="filter-auspicious" class="shj-filter-select">
+            {allAuspicious.map((aus) => (
+              <option value={aus === '全部' ? '' : aus}>{aus}</option>
+            ))}
+          </select>
+        </div>
+
+        <div>
+          <button type="button" class="shj-btn-reset" id="btn-reset-filters">重置筛选</button>
+        </div>
+      </div>
+
+      <p class="shj-results-count" id="results-count-text">
+        正在展示全部 {beasts.length} 种神兽精怪（支持现代精绘与古籍木刻双图切换）
+      </p>
+
+      <!-- 神兽卡片流 -->
+      <div class="shj-beasts-grid" id="beasts-grid">
+        {beasts.map((beast) => {
+          const mainImg = beast.image_refined || beast.image || beast.image_ancient
+          return (
+            <article
+              class="shj-beast-card"
+              data-id={beast.id}
+              data-name={beast.name}
+              data-pinyin={beast.pinyin}
+              data-book={beast.book}
+              data-category={beast.category}
+              data-auspicious={beast.auspicious}
+              data-mountain={beast.mountain}
+              data-tags={(beast.tags || []).join(' ')}
+            >
+              <div>
+                <!-- 精美插图卡片视窗 -->
+                {mainImg && (
+                  <div class="shj-card-woodcut-wrap">
+                    <img
+                      src={`${base}${mainImg.replace(/^\//, '')}`}
+                      alt={`${beast.name} 精美绘图`}
+                      class="shj-card-woodcut-img"
+                      loading="lazy"
+                    />
+                    <span class="shj-woodcut-subtag">✨ 现代精绘</span>
+                    <span class="shj-woodcut-tag">📜 详情含古刻本</span>
+                  </div>
+                )}
+
+                <div class="shj-card-head">
+                  <div class="shj-beast-name-wrap">
+                    <h3 class="shj-beast-name">
+                      <ruby>{beast.name}<rt>{beast.pinyin}</rt></ruby>
+                    </h3>
+                  </div>
+                  <div class="shj-badges-row">
+                    <span class={`shj-badge badge-${beast.auspicious}`}>{beast.auspicious}</span>
+                    <span class="shj-badge" style="background:#eef2f6;color:#334155;">{beast.category}</span>
+                  </div>
+                </div>
+
+                <div class="shj-location-bar">
+                  <span>📍</span>
+                  <span class="shj-location-pill">{beast.book} · {beast.mountain}</span>
+                </div>
+
+                <p class="shj-summary-text">{beast.summary}</p>
+
+                <div class="shj-ability-box">
+                  <strong>异能与征兆：</strong>{beast.abilities}
+                </div>
+
+                <div class="shj-tags-list">
+                  {(beast.tags || []).map((t) => (
+                    <span class="shj-tag-item">#{t}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div class="shj-card-actions">
+                <button
+                  type="button"
+                  class="shj-btn-detail btn-open-detail"
+                  data-id={beast.id}
+                >
+                  🖼️ 双图考据详情
+                </button>
+
+                {beast.video && (
+                  <button
+                    type="button"
+                    class="shj-btn-video btn-open-video"
+                    data-video-title={beast.video.title}
+                    data-video-url={beast.video.url}
+                    data-embed-url={beast.video.embed_url || ''}
+                  >
+                    <span>🎬</span> <span>播放视频</span>
+                  </button>
+                )}
+              </div>
+            </article>
+          )
+        })}
+      </div>
+    </section>
+
+    <!-- ========================================================
+         TAB 2: 上古神话卷
+         ======================================================== -->
+    <section class="shj-tab-pane" id="tab-myths" style="display: none;">
+      <div class="shj-myths-list">
+        {myths.map((myth) => {
+          const mythImg = myth.image_refined || myth.image || myth.image_ancient
+          return (
+            <article class="shj-myth-card" id={myth.id}>
+              <div class="shj-myth-grid">
+                {mythImg && (
+                  <div class="shj-myth-img-box">
+                    <img
+                      src={`${base}${mythImg.replace(/^\//, '')}`}
+                      alt={`${myth.title} 精美插画`}
+                      class="shj-myth-img"
+                      loading="lazy"
+                    />
+                    <span class="shj-woodcut-tag" style="bottom:8px;right:8px;">✨ 精美彩绘复原</span>
+                  </div>
+                )}
+
+                <div>
+                  <div class="shj-myth-header">
+                    <div>
+                      <h3 class="shj-myth-title">
+                        <ruby>{myth.title}<rt>{myth.pinyin}</rt></ruby>
+                      </h3>
+                      <div style="font-size: 0.86rem; color: var(--shj-azure); margin-top: 6px; font-weight: 600;">
+                        出处：{myth.book} · 主角：{(myth.figures || []).join('、')}
+                      </div>
+                    </div>
+                    <div class="shj-myth-spirit">
+                      <span>精神内核：</span>{myth.spirit}
+                    </div>
+                  </div>
+
+                  <p class="shj-myth-summary">{myth.summary}</p>
+
+                  <div class="shj-quote-box">
+                    <div class="shj-quote-title">📜 典籍原文出处</div>
+                    <div class="shj-quote-content">{myth.original_text}</div>
+                  </div>
+
+                  <div class="shj-trans-box">
+                    <div class="shj-trans-title">📖 现代白话今译</div>
+                    <div class="shj-trans-content">{myth.translation}</div>
+                  </div>
+
+                  <div class="shj-meaning-box">
+                    <strong>💡 文化史意义：</strong>{myth.cultural_meaning}
+                  </div>
+
+                  {myth.video && (
+                    <div style="text-align: right; margin-top: 12px;">
+                      <button
+                        type="button"
+                        class="shj-btn-video btn-open-video"
+                        data-video-title={myth.video.title}
+                        data-video-url={myth.video.url}
+                        data-embed-url={myth.video.embed_url || ''}
+                      >
+                        <span>🎬 观赏神话短片 / 解说：{myth.video.title}</span>
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </article>
+          )
+        })}
+      </div>
+    </section>
+
+    <!-- ========================================================
+         TAB 3: 十八卷典藏篇目
+         ======================================================== -->
+    <section class="shj-tab-pane" id="tab-chapters" style="display: none;">
+      <div class="shj-chapters-grid">
+        {chapters.map((ch) => (
+          <article class="shj-chapter-card">
+            <div class="shj-chapter-head">
+              <span class="shj-chapter-num">{ch.number}</span>
+              <span class="shj-chapter-sec">{ch.section}</span>
+            </div>
+
+            <h3 class="shj-chapter-name">{ch.name}</h3>
+
+            {ch.mountains_count > 0 && (
+              <div class="shj-chapter-meta">
+                <span>⛰️ 载山 {ch.mountains_count} 座</span>
+                {ch.distance_li > 0 && <span> · 里程 {ch.distance_li} 里</span>}
+              </div>
+            )}
+
+            <p class="shj-chapter-summary">{ch.summary}</p>
+
+            {ch.representative_mountains && ch.representative_mountains.length > 0 && (
+              <div style="margin-top: 12px; font-size: 0.8rem; color: #786b5e;">
+                <strong>代表名山：</strong>{ch.representative_mountains.join('、')}
+              </div>
+            )}
+
+            {ch.key_beasts && ch.key_beasts.length > 0 && (
+              <div style="margin-top: 6px; font-size: 0.8rem; color: var(--shj-primary);">
+                <strong>核心物种：</strong>{ch.key_beasts.join('、')}
+              </div>
+            )}
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- ========================================================
+         视频播放弹窗模态框 (Video Modal)
+         ======================================================== -->
+    <div class="shj-modal-overlay" id="video-modal" aria-hidden="true">
+      <div class="shj-modal-box">
+        <button type="button" class="shj-modal-close" id="btn-close-video" title="关闭 (Esc)">✕</button>
+        <h3 id="video-modal-title" style="margin: 0 0 16px; font-size: 1.25rem; color: #1a222c; padding-right: 40px;">
+          山海经音视频精选
+        </h3>
+
+        <div class="shj-video-container" id="video-container">
+          <!-- 动态注入 iframe -->
+        </div>
+
+        <div class="shj-video-fallback">
+          <p style="font-size: 0.85rem; color: var(--shj-text-sub); margin-bottom: 12px;">
+            提示：若因浏览器跨域策略无法直接内嵌播放，可点击下方各平台精选直达通道：
+          </p>
+          <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="shj-btn-video"
+              id="video-direct-link"
+              style="display: inline-flex; background: #00aeec;"
+            >
+              <span>📺 哔哩哔哩精选视频 ➔</span>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="shj-btn-video"
+              id="video-douyin-link"
+              style="display: inline-flex; background: #fe2c55;"
+            >
+              <span>📱 抖音神兽短视频 ➔</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         神兽考据详情抽屉模态框 (Detail Drawer with Dual Gallery)
+         ======================================================== -->
+    <div class="shj-modal-overlay" id="detail-modal" aria-hidden="true">
+      <div class="shj-modal-box" id="detail-modal-box">
+        <button type="button" class="shj-modal-close" id="btn-close-detail" title="关闭 (Esc)">✕</button>
+        
+        <div id="detail-modal-content">
+          <!-- 动态注入双图考据内容 -->
+        </div>
+      </div>
+    </div>
+  </main>
+</Base>
+
+<!-- 客户端互动脚本 -->
+<script define:vars={{ beastsData: beasts, base }}>
+  function initShanHaiJing() {
+    // 1. 标签页切换逻辑
+    const tabButtons = document.querySelectorAll('.shj-tab-btn')
+    const tabPanes = document.querySelectorAll('.shj-tab-pane')
+
+    tabButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const targetTab = btn.getAttribute('data-tab')
+        
+        tabButtons.forEach((b) => b.classList.remove('active'))
+        btn.classList.add('active')
+
+        tabPanes.forEach((pane) => {
+          if (pane.id === targetTab) {
+            pane.style.display = 'block'
+            pane.classList.add('active')
+          } else {
+            pane.style.display = 'none'
+            pane.classList.remove('active')
+          }
+        })
+      })
+    })
+
+    // 2. 神兽多维组合筛选逻辑
+    const searchInput = document.getElementById('filter-search')
+    const bookSelect = document.getElementById('filter-book')
+    const categorySelect = document.getElementById('filter-category')
+    const auspiciousSelect = document.getElementById('filter-auspicious')
+    const resetBtn = document.getElementById('btn-reset-filters')
+    const countText = document.getElementById('results-count-text')
+    const beastCards = document.querySelectorAll('.shj-beast-card')
+
+    function applyFilter() {
+      const q = (searchInput?.value || '').trim().toLowerCase()
+      const book = bookSelect?.value || ''
+      const category = categorySelect?.value || ''
+      const auspicious = auspiciousSelect?.value || ''
+
+      let visibleCount = 0
+
+      beastCards.forEach((card) => {
+        const cName = (card.getAttribute('data-name') || '').toLowerCase()
+        const cPinyin = (card.getAttribute('data-pinyin') || '').toLowerCase()
+        const cBook = card.getAttribute('data-book') || ''
+        const cCat = card.getAttribute('data-category') || ''
+        const cAus = card.getAttribute('data-auspicious') || ''
+        const cMtn = (card.getAttribute('data-mountain') || '').toLowerCase()
+        const cTags = (card.getAttribute('data-tags') || '').toLowerCase()
+
+        const matchSearch =
+          !q ||
+          cName.includes(q) ||
+          cPinyin.includes(q) ||
+          cMtn.includes(q) ||
+          cTags.includes(q)
+
+        const matchBook = !book || cBook.includes(book)
+        const matchCat = !category || cCat === category
+        const matchAus = !auspicious || cAus === auspicious
+
+        if (matchSearch && matchBook && matchCat && matchAus) {
+          card.style.display = 'flex'
+          visibleCount++
+        } else {
+          card.style.display = 'none'
+        }
+      })
+
+      if (countText) {
+        countText.textContent = `共筛选出 ${visibleCount} 种神兽精怪（总计 ${beastCards.length} 种）`
+      }
+    }
+
+    searchInput?.addEventListener('input', applyFilter)
+    bookSelect?.addEventListener('change', applyFilter)
+    categorySelect?.addEventListener('change', applyFilter)
+    auspiciousSelect?.addEventListener('change', applyFilter)
+
+    resetBtn?.addEventListener('click', () => {
+      if (searchInput) searchInput.value = ''
+      if (bookSelect) bookSelect.value = ''
+      if (categorySelect) categorySelect.value = ''
+      if (auspiciousSelect) auspiciousSelect.value = ''
+      applyFilter()
+    })
+
+    // 3. 视频弹窗逻辑
+    const videoModal = document.getElementById('video-modal')
+    const videoModalTitle = document.getElementById('video-modal-title')
+    const videoContainer = document.getElementById('video-container')
+    const videoDirectLink = document.getElementById('video-direct-link')
+    const videoDouyinLink = document.getElementById('video-douyin-link')
+    const closeVideoBtn = document.getElementById('btn-close-video')
+
+    function openVideo(title, url, embedUrl) {
+      if (!videoModal || !videoContainer) return
+      if (videoModalTitle) videoModalTitle.textContent = title || '山海经精选视频'
+      if (videoDirectLink) videoDirectLink.href = url || '#'
+      if (videoDouyinLink) videoDouyinLink.href = 'https://www.douyin.com/search/' + encodeURIComponent('山海经 ' + (title || ''))
+
+      if (embedUrl) {
+        videoContainer.innerHTML = `<iframe src="${embedUrl}" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>`
+      } else {
+        videoContainer.innerHTML = `<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#fff;font-size:0.95rem;">请点击下方链接直达播放</div>`
+      }
+
+      videoModal.classList.add('active')
+      videoModal.setAttribute('aria-hidden', 'false')
+    }
+
+    function closeVideo() {
+      if (!videoModal || !videoContainer) return
+      videoModal.classList.remove('active')
+      videoModal.setAttribute('aria-hidden', 'true')
+      videoContainer.innerHTML = '' // 停止播放
+    }
+
+    document.querySelectorAll('.btn-open-video').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation()
+        const title = btn.getAttribute('data-video-title') || ''
+        const url = btn.getAttribute('data-video-url') || ''
+        const embedUrl = btn.getAttribute('data-embed-url') || ''
+        openVideo(title, url, embedUrl)
+      })
+    })
+
+    closeVideoBtn?.addEventListener('click', closeVideo)
+    videoModal?.addEventListener('click', (e) => {
+      if (e.target === videoModal) closeVideo()
+    })
+
+    // 4. 考据详情弹窗（双图对揽画廊）
+    const detailModal = document.getElementById('detail-modal')
+    const detailModalContent = document.getElementById('detail-modal-content')
+    const closeDetailBtn = document.getElementById('btn-close-detail')
+
+    const beastsMap = new Map(beastsData.map((b) => [b.id, b]))
+
+    function openDetail(id) {
+      const b = beastsMap.get(id)
+      if (!b || !detailModal || !detailModalContent) return
+
+      const refinedSrc = b.image_refined ? `${base}${b.image_refined.replace(/^\//, '')}` : ''
+      const ancientSrc = b.image_ancient ? `${base}${b.image_ancient.replace(/^\//, '')}` : (b.image ? `${base}${b.image.replace(/^\//, '')}` : '')
+
+      detailModalContent.innerHTML = `
+        <div style="border-bottom: 1px solid #ebd9be; padding-bottom: 14px; margin-bottom: 18px;">
+          <span class="shj-badge badge-${b.auspicious}" style="margin-bottom: 8px;">${b.auspicious}</span>
+          <h2 style="margin: 4px 0 6px; font-size: 1.8rem; font-family: serif;">
+            <ruby>${b.name}<rt style="color:var(--shj-primary);font-size:0.55em;">${b.pinyin}</rt></ruby>
+          </h2>
+          <div style="font-size: 0.9rem; color: var(--shj-azure); font-weight: 600;">
+            📍 出处：${b.book} · ${b.mountain}
+          </div>
+        </div>
+
+        <!-- 双图对揽画廊 -->
+        <div class="shj-gallery-container">
+          <div class="shj-gallery-nav">
+            <button type="button" class="shj-gallery-tab-btn active" id="gallery-btn-refined">
+              ✨ 现代高清数字原画 (国风手绘)
+            </button>
+            <button type="button" class="shj-gallery-tab-btn" id="gallery-btn-ancient">
+              📜 明清古籍木刻原版 (文献绣像)
+            </button>
+          </div>
+
+          <div class="shj-gallery-view-box">
+            <img
+              id="gallery-main-img"
+              src="${refinedSrc || ancientSrc}"
+              alt="${b.name}"
+              class="shj-gallery-img"
+            />
+            <div class="shj-gallery-caption" id="gallery-caption">
+              ✨ 现代东方神话数字概念手绘 · 准确复原《山海经》异兽形态特征
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 18px;">
+          <h4 style="margin: 0 0 6px; color: var(--shj-primary); font-size: 0.95rem;">🐾 形态与异能特质</h4>
+          <p style="font-size: 0.92rem; line-height: 1.7; color: #334155; margin: 0 0 8px;">${b.appearance}</p>
+          <div class="shj-ability-box" style="margin: 0;">
+            <strong>征兆异能：</strong>${b.abilities}
+          </div>
+        </div>
+
+        <div class="shj-quote-box" style="margin-bottom: 18px;">
+          <div class="shj-quote-title">📜 《山海经·${b.book}》古文原文</div>
+          <div class="shj-quote-content">${b.original_text}</div>
+        </div>
+
+        <div class="shj-trans-box" style="margin-bottom: 18px;">
+          <div class="shj-trans-title">📖 白话现代今译</div>
+          <div class="shj-trans-content">${b.translation}</div>
+        </div>
+
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;">
+          ${(b.tags || []).map((t) => `<span class="shj-tag-item">#${t}</span>`).join('')}
+        </div>
+      `
+
+      // 绑定双图切换事件
+      const btnRefined = document.getElementById('gallery-btn-refined')
+      const btnAncient = document.getElementById('gallery-btn-ancient')
+      const mainImgEl = document.getElementById('gallery-main-img')
+      const captionEl = document.getElementById('gallery-caption')
+
+      btnRefined?.addEventListener('click', () => {
+        btnRefined.classList.add('active')
+        btnAncient?.classList.remove('active')
+        if (mainImgEl) mainImgEl.src = refinedSrc || ancientSrc
+        if (captionEl) captionEl.textContent = '✨ 现代东方神话数字概念手绘 · 准确复原《山海经》异兽形态特征'
+      })
+
+      btnAncient?.addEventListener('click', () => {
+        btnAncient.classList.add('active')
+        btnRefined?.classList.remove('active')
+        if (mainImgEl) mainImgEl.src = ancientSrc || refinedSrc
+        if (captionEl) captionEl.textContent = '📜 明清古籍刻本《山海经图》经典木刻插图（蒋应镐/汪绂刻本）'
+      })
+
+      detailModal.classList.add('active')
+      detailModal.setAttribute('aria-hidden', 'false')
+    }
+
+    function closeDetail() {
+      if (!detailModal) return
+      detailModal.classList.remove('active')
+      detailModal.setAttribute('aria-hidden', 'true')
+    }
+
+    document.querySelectorAll('.btn-open-detail').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-id')
+        if (id) openDetail(id)
+      })
+    })
+
+    closeDetailBtn?.addEventListener('click', closeDetail)
+    detailModal?.addEventListener('click', (e) => {
+      if (e.target === detailModal) closeDetail()
+    })
+
+    // 键盘 Esc 关闭任意打开的弹窗
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeVideo()
+        closeDetail()
+      }
+    })
+  }
+
+  // DOM 就绪后启动
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initShanHaiJing)
+  } else {
+    initShanHaiJing()
+  }
+</script>

@@ -1,0 +1,181 @@
+# 山海经十八卷全览与架构导读
+
+- id: ch-nanshan
+  number: 卷一
+  name: 南山经
+  section: 五藏山经
+  mountains_count: 40
+  distance_li: 16380
+  representative_mountains: [招摇之山, 杻阳之山, 柢山, 基山, 青丘之山, 鹿吴之山, 令丘之山]
+  key_beasts: [祝余, 迷榖, 鹿蜀, 旋龟, 鯥, 猼訑, 九尾狐, 赤鱬, 蛊雕, 颙]
+  summary: 记录南方三列山脉，起自招摇之山，终于箕尾之山。记载了青丘九尾、解忧之兽、治病水族等丰富风物，是山海经的开篇大作。
+
+- id: ch-xishan
+  number: 卷二
+  name: 西山经
+  section: 五藏山经
+  mountains_count: 77
+  distance_li: 17517
+  representative_mountains: [华山, 钱来之山, 阴山, 昆仑之丘, 玉山, 章莪之山, 天山]
+  key_beasts: [天狗, 陆吾, 狡, 胜遇, 毕方, 帝江, 冉遗鱼, 驳]
+  summary: 记录西方四列山脉，以神山昆仑与天帝下都为核心枢纽，西王母之居玉山亦在此卷，神鸟异兽众多，充满神圣色彩。
+
+- id: ch-beishan
+  number: 卷三
+  name: 北山经
+  section: 五藏山经
+  mountains_count: 87
+  distance_li: 23230
+  representative_mountains: [单狐之山, 求如之山, 发鸠之山, 钩吾之山, 狱法之山]
+  key_beasts: [诸犍, 精卫, 狍鸮(饕餮), 猾褢, 䖪鼠]
+  summary: 记录北方三列山脉，地域极其广袤辽远。精卫填海的发鸠山与四大凶兽饕餮所居的钩吾之山均坐落于此。
+
+- id: ch-dongshan
+  number: 卷四
+  name: 东山经
+  section: 五藏山经
+  mountains_count: 46
+  distance_li: 18880
+  representative_mountains: [樕𧑤之山, 泰山, 钦山, 姑儿之山, 卢其之山]
+  key_beasts: [当康, 犰狳, 箴鱼, 蜚]
+  summary: 记录东方四列山脉，濒临东海。记载了预示天下大丰收的祥瑞神兽当康，以及东海沿线的诸多元古奇珍。
+
+- id: ch-zhongshan
+  number: 卷五
+  name: 中山经
+  section: 五藏山经
+  mountains_count: 197
+  distance_li: 21371
+  representative_mountains: [霍山, 阳山, 鲜山, 中曲之山, 熊耳之山, 丰山]
+  key_beasts: [朏朏, 化蛇, 鸣蛇, 驳, 骄虫, 计蒙]
+  summary: 记录中原十二列山系，山岭最多、祭祀仪式记载最详尽。收录了能解人千愁的朏朏、食虎豹的驳与大水化蛇。
+
+- id: ch-haiwainan
+  number: 卷六
+  name: 海外南经
+  section: 海外经
+  mountains_count: 0
+  distance_li: 0
+  representative_mountains: [结匈国, 南山, 结胫国]
+  key_beasts: [羽民国, 贯胸国, 不死民, 岐舌国, 厌火国]
+  summary: 记录海外西南角至东南角的奇人异国，如生有羽翼能飞行的羽民国、胸前贯穿一洞的贯胸国、长生不死的不死民。
+
+- id: ch-haiwaixi
+  number: 卷七
+  name: 海外西经
+  section: 海外经
+  mountains_count: 0
+  distance_li: 0
+  representative_mountains: [常羊之山, 轩辕之丘, 女子国]
+  key_beasts: [刑天, 三首国, 奇肱国, 白民国, 乘黄]
+  summary: 记录海外西南至西北的荒域，最著名的“刑天舞干戚”与能使人寿两千岁的神兽乘黄皆记载于此卷。
+
+- id: ch-haiwaibei
+  number: 卷八
+  name: 海外北经
+  section: 海外经
+  mountains_count: 0
+  distance_li: 0
+  representative_mountains: [钟山, 烛阴, 夸父之山]
+  key_beasts: [夸父, 烛九阴, 一目国, 柔利国, 无肠国]
+  summary: 记录海外西北至东北的极北冰寒之境，千古史诗“夸父逐日”与照耀九阴的钟山之神“烛龙”坐镇于此。
+
+- id: ch-haiwaidong
+  number: 卷九
+  name: 海外东经
+  section: 海外经
+  mountains_count: 0
+  distance_li: 0
+  representative_mountains: [汤谷, 扶桑, 孽摇隃琘之山]
+  key_beasts: [大人国, 君子国, 黑齿国, 青丘国, 奢比尸]
+  summary: 记录海外东北至东南的大洋之滨，包括太阳升起的扶桑神木、汤谷温泉以及好让不争的君子之国。
+
+- id: ch-haineinan
+  number: 卷十
+  name: 海内南经
+  section: 海内经
+  mountains_count: 0
+  distance_li: 0
+  representative_mountains: [洞庭之山, 建木, 弱水]
+  key_beasts: [巴蛇, 兕, 犀牛, 狌狌]
+  summary: 记录海内南部山川与奇物，包含吞象的洞庭巨蟒巴蛇、通天神梯“建木”以及西南百越诸地之灵异。
+
+- id: ch-haineixi
+  number: 卷十一
+  name: 海内西经
+  section: 海内经
+  mountains_count: 0
+  distance_li: 0
+  representative_mountains: [昆仑之虚, 后稷之丘, 流沙]
+  key_beasts: [开明兽, 视肉, 凤皇, 鸾鸟]
+  summary: 聚焦于西北海内极地昆仑虚，九门守护神开明兽雄踞于此，百神汇聚，不死树与灵池圣水环绕。
+
+- id: ch-haineibei
+  number: 卷十二
+  name: 海内北经
+  section: 海内经
+  mountains_count: 0
+  distance_li: 0
+  representative_mountains: [幽都之山, 列姑射, 雁门]
+  key_beasts: [穷奇, 犬戎, 居暨, 大行伯]
+  summary: 记录海内北方的极寒与幽冥之国，四凶之一穷奇猎食于此，亦记述了犬戎、大夏、幽都等北方古族。
+
+- id: ch-haineidong
+  number: 卷十三
+  name: 海内东经
+  section: 海内经
+  mountains_count: 0
+  distance_li: 0
+  representative_mountains: [雷泽, 会稽之山, 琅琊台]
+  key_beasts: [雷泽雷神, 巨燕, 朝鲜]
+  summary: 记录东部近海与江河源流，雷泽中人首龙身、击腹则如雷鸣的远古雷神在此显化。
+
+- id: ch-dahuangdong
+  number: 卷十四
+  name: 大荒东经
+  section: 大荒经
+  mountains_count: 0
+  distance_li: 0
+  representative_mountains: [东海大壑, 流波之山, 凶犁土丘]
+  key_beasts: [羲和浴日, 夔牛, 应龙, 奢比尸]
+  summary: 大荒神话核心卷之一，记述太阳之母羲和在甘渊为十个太阳沐浴，以及黄帝制夔牛鼓破蚩尤大军的英雄史诗。
+
+- id: ch-dahuangnan
+  number: 卷十五
+  name: 大荒南经
+  section: 大荒经
+  mountains_count: 0
+  distance_li: 0
+  representative_mountains: [南海之渚, 熊山, 巫山]
+  key_beasts: [祝融, 帝俊, 欢头之国, 三苗]
+  summary: 记录大荒南部辽阔地域，火神祝融之居所，帝俊后裔的繁衍流播，以及早期神圣部族之源起。
+
+- id: ch-dahuangxi
+  number: 卷十六
+  name: 大荒西经
+  section: 大荒经
+  mountains_count: 0
+  distance_li: 0
+  representative_mountains: [不周之山, 灵山, 丰沮玉门]
+  key_beasts: [女娲之肠, 灵山十巫, 常羲浴月, 开明]
+  summary: 充满浓郁巫觋文化的神圣之卷，记录天柱不周山、月亮之母常羲沐浴十二月、灵山十巫升降采不死之药。
+
+- id: ch-dahuangbei
+  number: 卷十七
+  name: 大荒北经
+  section: 大荒经
+  mountains_count: 0
+  distance_li: 0
+  representative_mountains: [北极天柜, 系昆之山, 钟山]
+  key_beasts: [烛龙, 九凤, 女魃, 蚩尤]
+  summary: 创世神与上古大战交织之巅，烛龙开合昼夜、九凤九头人面、黄帝斩蚩尤与天女魃降旱均汇聚于此卷。
+
+- id: ch-haineijing
+  number: 卷十八
+  name: 海内经
+  section: 海内经
+  mountains_count: 0
+  distance_li: 0
+  representative_mountains: [都广之野, 肇山, 羽山]
+  key_beasts: [鲧, 禹, 建木, 炎帝世系, 息壤]
+  summary: 《山海经》宏伟终卷，记载天地中心都广之野、炎帝黄帝宏大谱系，以及鲧盗息壤、大禹定九州平水患的文明收官之章。

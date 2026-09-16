@@ -1,0 +1,927 @@
+- id: beast-jiuweihu
+  name: 九尾狐
+  pinyin: jiǔ wěi hú
+  category: 异兽
+  book: 南山经
+  mountain: 青丘之山
+  auspicious: 祥瑞
+  appearance: 其状如狐而九尾，其音如婴儿。
+  abilities: 能食人；食者不蛊（不逢妖邪毒气），佩之不惑。
+  summary: 青丘之山著名神兽，兼具祥瑞与勇猛之气，上古部族图腾，象征子孙繁衍与吉祥。
+  original_text: |
+    又东三百里，曰青丘之山，其阳多玉，其阴多青䨼。有兽焉，其状如狐而九尾，其音如婴儿，能食人，食者不蛊。
+  translation: |
+    再往东三百里，是青丘山。山南盛产美玉，山北多产青垩石。山中有一种野兽，形状像狐狸却长着九条尾巴，啼叫声宛如婴儿哭泣，能吃人，人吃了它的肉就可以不受妖邪蛊惑之气侵害。
+  tags:
+    - 九尾
+    - 祥瑞
+    - 食者不蛊
+    - 青丘
+    - 狐仙
+  image: /images/shanhaijing/digital_art/jiuweihu.png
+  video:
+    title: 央视纪录片《山海经奇》· 青丘九尾
+    url: https://www.bilibili.com/video/BV1xM4y1V7cR
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1xM4y1V7cR
+  image_ancient: /images/shanhaijing/beasts/jiuweihu.png
+  image_refined: /images/shanhaijing/digital_art/jiuweihu.png
+- id: beast-zhulong
+  name: 烛龙 (烛九阴)
+  pinyin: zhú lóng (zhú jiǔ yīn)
+  category: 灵神
+  book: 大荒北经
+  mountain: 钟山
+  auspicious: 灵神
+  appearance: 人面蛇身而赤，身长千里，直目正乘。
+  abilities: 视为昼，瞑为夜，吹为冬，呼为夏；不饮不食不息，息为大风。
+  summary: 钟山之神，照耀极北无日之地的创世级自然神祇，睁眼即为白天，闭眼即为黑夜。
+  original_text: |
+    西北海之外，赤水之北，有章尾山。有神，人面蛇身而赤，直目正乘，其瞑乃晦，其视乃明，不食不寝不息，风雨是谒。是烛九阴，是谓烛龙。
+  translation: |
+    在西北海的外围，赤水的北岸，有座章尾山。山中有位神人，长着人的面孔、红色的蛇身，两眼垂直正向。他闭上眼天地就陷入黑暗，睁开眼天地就一片光明；不进食、不睡觉、不呼吸，能招来狂风暴雨。这就是照亮九阴幽冥的烛龙。
+  tags:
+    - 创世神
+    - 钟山
+    - 昼夜之神
+    - 千里红蛇
+    - 司时
+  image: /images/shanhaijing/digital_art/zhulong.png
+  video:
+    title: 动画科普《山海经·钟山之神烛九阴》
+    url: https://www.bilibili.com/video/BV1sW411j77u
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1sW411j77u
+  image_ancient: /images/shanhaijing/beasts/zhulong.png
+  image_refined: /images/shanhaijing/digital_art/zhulong.png
+- id: beast-taotie
+  name: 饕餮 (狍鸮)
+  pinyin: tāo tiè (páo xiāo)
+  category: 异兽
+  book: 北山经
+  mountain: 钩吾之山
+  auspicious: 凶兆
+  appearance: 其状如羊身人面，其目在腋下，虎齿人爪，其音如婴儿。
+  abilities: 贪食无厌，食人；上古四大凶兽之一。
+  summary: 钩吾之山的大凶之兽，后世常铸于青铜礼器之上，作为威严与戒贪的象征图腾。
+  original_text: |
+    钩吾之山，其上多玉，其下多铜。有兽焉，其状如羊身人面，其目在腋下，虎齿人爪，其音如婴儿，名曰狍鸮，是食人。
+  translation: |
+    钩吾山上盛产玉石，山下多产铜矿。山里有一种野兽，形状为羊身人面，眼睛长在腋窝下面，长着老虎的牙齿和人的手爪，叫声像婴儿啼哭，名叫狍鸮（饕餮），会吃人。
+  tags:
+    - 四凶
+    - 贪食
+    - 青铜器纹饰
+    - 钩吾山
+    - 凶兽
+  image: /images/shanhaijing/digital_art/taotie.png
+  video:
+    title: 青铜重器与四凶之谜·《饕餮的诞生》
+    url: https://www.bilibili.com/video/BV1qK4y1P7h9
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1qK4y1P7h9
+  image_ancient: /images/shanhaijing/beasts/taotie.jpg
+  image_refined: /images/shanhaijing/digital_art/taotie.png
+- id: beast-dijiang
+  name: 帝江 (浑沌)
+  pinyin: dì jiāng (hùn dùn)
+  category: 灵神
+  book: 西山经
+  mountain: 天山
+  auspicious: 祥瑞
+  appearance: 其状如黄囊，赤如丹火，六足四翼，浑敦无面目。
+  abilities: 通晓歌舞，为天山神鸟，天然混沌一体。
+  summary: 西方天山上的神鸟，通体赤红如火，六只脚四只翅膀，虽无耳目五官，却极其懂得音律歌舞。
+  original_text: |
+    又西三百五十里，曰天山，多金玉，有青雄黄。英水出焉，而西南流注于汤谷。有神焉，其状如黄囊，赤如丹火，六足四翼，浑敦无面目，是识歌舞，实为帝江也。
+  translation: |
+    再向西三百五十里，是天山。山中多金玉和雄黄。山里有一种神，形状像黄色口袋，浑身红如炽烈炭火，长着六只脚和四只翅膀，混沌一片没有五官面目，却通晓歌舞音律，它就是帝江。
+  tags:
+    - 天山
+    - 六足四翼
+    - 浑敦
+    - 识歌舞
+    - 神鸟
+  image: /images/shanhaijing/digital_art/dijiang.png
+  video:
+    title: 庄子与山海经·《天山神帝江》
+    url: https://www.bilibili.com/video/BV1fE411x7c8
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1fE411x7c8
+  image_ancient: /images/shanhaijing/beasts/dijiang.png
+  image_refined: /images/shanhaijing/digital_art/dijiang.png
+- id: beast-qiongqi
+  name: 穷奇
+  pinyin: qióng qí
+  category: 异兽
+  book: 海内北经
+  mountain: 邽山
+  auspicious: 凶兆
+  appearance: 其状如虎，有翼，身披刺猬毛，叫声如犬吠。
+  abilities: 喜助恶除善，食人从首始；上古四大凶兽之一。
+  summary: 抑善扬恶的凶烈异兽，长着翅膀的老虎，若见人争斗便食正直之士，被称为上古四凶之一。
+  original_text: |
+    穷奇状如虎，有翼，食人从首始，所食被发，在蜪犬北。一曰从足。
+  translation: |
+    穷奇外形像老虎，长着一对翅膀，吃人时从头部开始吞食，被吃的人披散着头发。另一种说法是从脚开始吃。
+  tags:
+    - 四凶
+    - 飞虎
+    - 惩善扬恶
+    - 凶猛
+    - 战神坐骑
+  image: /images/shanhaijing/digital_art/qiongqi.png
+  video:
+    title: 《山海经异兽录》· 上古恶神穷奇
+    url: https://www.bilibili.com/video/BV117411x7H6
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV117411x7H6
+  image_ancient: /images/shanhaijing/beasts/qiongqi.jpg
+  image_refined: /images/shanhaijing/digital_art/qiongqi.png
+- id: beast-taowu
+  name: 梼杌
+  pinyin: táo wù
+  category: 异兽
+  book: 西次三经
+  mountain: 翼望之山
+  auspicious: 凶兆
+  appearance: 其状如虎而犬毛，长二尺，人面，虎足，猪口牙，尾长一丈八尺。
+  abilities: 桀骜不驯，勇悍不可挫，顽固不化；四大凶兽之一。
+  summary: 荒野顽兽，性情暴烈凶悍，从不退缩屈服，后世用以指代冥顽不灵与凶暴蛮横之徒。
+  original_text: |
+    西方荒中有兽焉，其状如虎而犬毛，长二尺，人面虎足，猪口牙，尾长一丈八尺，搅乱荒中，名曰梼杌。
+  translation: |
+    西方荒野中有一种异兽，长相像老虎却长着狗一样的长毛，身长两尺，人面虎足，长着野猪一样的獠牙，尾巴长达一丈八尺，在荒野中横行肆虐，名叫梼杌。
+  tags:
+    - 四凶
+    - 人面虎足
+    - 顽劣
+    - 凶兽
+  image: /images/shanhaijing/digital_art/taowu.png
+  video:
+    title: 上古四大凶兽全解·《梼杌传奇》
+    url: https://www.bilibili.com/video/BV1nJ411D7V7
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1nJ411D7V7
+  image_ancient: /images/shanhaijing/beasts/taowu.jpg
+  image_refined: /images/shanhaijing/digital_art/taowu.png
+- id: beast-luwu
+  name: 陆吾 (开明之神)
+  pinyin: lù wú
+  category: 灵神
+  book: 西山经
+  mountain: 昆仑之丘
+  auspicious: 灵神
+  appearance: 其神状虎身而九尾，人面而虎爪。
+  abilities: 司天之九部及帝之囿时，威镇昆仑丘。
+  summary: 天帝在昆仑天都的大总管，统管天上九域及天帝的花园神苑，庄严神圣。
+  original_text: |
+    西南四百里，曰昆仑之丘，是实惟帝之下都，神陆吾司之。其神状虎身而九尾，人面而虎爪；是神也，司天之九部及帝之囿时。
+  translation: |
+    向西南四百里是昆仑之丘，这里正是天帝在人间的都城，由神祇陆吾统管。陆吾神虎身九尾，人面虎爪，执掌天界九大区域及天帝花园的节气四时。
+  tags:
+    - 昆仑山
+    - 天帝管家
+    - 虎身九尾
+    - 灵神
+    - 守护神
+  image: /images/shanhaijing/digital_art/luwu.png
+  video:
+    title: 昆仑神话《天帝总管·陆吾神》
+    url: https://www.bilibili.com/video/BV1g4411C7g9
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1g4411C7g9
+  image_ancient: /images/shanhaijing/beasts/luwu.jpg
+  image_refined: /images/shanhaijing/digital_art/luwu.png
+- id: beast-kaimingshou
+  name: 开明兽
+  pinyin: kāi míng shòu
+  category: 灵神
+  book: 海内西经
+  mountain: 昆仑之虚
+  auspicious: 灵神
+  appearance: 身大类虎而九首，皆人面，东向立博望上。
+  abilities: 洞察万物，守护昆仑九重神门，神兽之长。
+  summary: 镇守昆仑九门的神兽，身躯如巨大猛虎长有九个头颅，九颗人首皆面朝东方，威视天下妖邪。
+  original_text: |
+    昆仑南渊深三百仞。开明兽身大类虎而九首，皆人面，东向立博望上。海内昆仑之虚，在西北，帝之下都。昆仑之虚，方八百里，高万仞。
+  translation: |
+    昆仑山南面的深渊深达三百仞。开明兽体型巨大如猛虎，长着九个头，全是人面，面朝东方威立在博望山上，日夜守护着巍峨的天帝之都。
+  tags:
+    - 昆仑九门
+    - 九首人面
+    - 守护神
+    - 镇山之宝
+  image: /images/shanhaijing/digital_art/yingzhao.png
+  video:
+    title: 《昆仑天门守护者·开明兽》
+    url: https://www.bilibili.com/video/BV1oV411z7aB
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1oV411z7aB
+  image_ancient: /images/shanhaijing/beasts/kaimingshou.jpg
+  image_refined: /images/shanhaijing/digital_art/yingzhao.png
+- id: beast-baize
+  name: 白泽
+  pinyin: bái zé
+  category: 异兽
+  book: 传世山海补遗
+  mountain: 东海流沙
+  auspicious: 祥瑞
+  appearance: 虎首朱发，身具双翼与多目，头顶独角。
+  abilities: 能言语，通晓天下万物神鬼精怪之形貌名讳与驱避之道。
+  summary: 至高无上的祥瑞圣兽，逢圣王出世而现身，曾献《白泽图》助黄帝降服天下万千鬼神。
+  original_text: |
+    东望山有泽，兽名白泽，能言，达万物之情，晓天下鬼神万物之状貌。黄帝巡狩至海滨，白泽出，能言，达于万物之情。
+  translation: |
+    东望山有神兽名为白泽，能通晓人类语言，洞彻天地万物的情理与秘密，熟知天下万种鬼神精怪的相貌和驱避法门。黄帝巡游至海边时白泽现身，作图以昭示天下。
+  tags:
+    - 辟邪
+    - 圣兽
+    - 白泽图
+    - 晓万物
+    - 祥瑞
+  image: /images/shanhaijing/digital_art/fuzhu.png
+  video:
+    title: 国风典故《万妖克星·神兽白泽》
+    url: https://www.bilibili.com/video/BV1gA411W79C
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1gA411W79C
+  image_ancient: /images/shanhaijing/beasts/baize.jpg
+  image_refined: /images/shanhaijing/digital_art/fuzhu.png
+- id: beast-jingwei
+  name: 精卫
+  pinyin: jīng wèi
+  category: 神禽
+  book: 北山经
+  mountain: 发鸠之山
+  auspicious: 异象
+  appearance: 其状如乌，文首，白喙，赤足。
+  abilities: 衔西山之木石以填东海，誓不罢休。
+  summary: 炎帝少女女娃溺水东海后所化，日夜衔木石填海，成为百折不挠、坚韧不屈的中华精神象征。
+  original_text: |
+    发鸠之山，其上多柘木。有鸟焉，其状如乌，文首、白喙、赤足，名曰精卫，其鸣自詨。是炎帝之少女，名曰女娃。女娃游于东海，溺而不返，故为精卫，常衔西山之木石，以堙于东海。
+  translation: |
+    发鸠山上长满柘树。山中有一种鸟，形状像乌鸦，头部有花纹，白嘴巴，红爪子，名叫精卫，叫声就像在呼唤自己。她是炎帝的小女儿女娃所化。女娃在东海游泳溺水未返，化为精卫鸟，常常衔着西山的树枝和石子去填平东海。
+  tags:
+    - 精卫填海
+    - 炎帝之女
+    - 坚韧不拔
+    - 悲壮
+    - 神禽
+  image: /images/shanhaijing/digital_art/jingwei.png
+  video:
+    title: 经典水墨动画《精卫填海》
+    url: https://www.bilibili.com/video/BV15x411p7qB
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV15x411p7qB
+  image_ancient: /images/shanhaijing/beasts/jingwei.jpg
+  image_refined: /images/shanhaijing/digital_art/jingwei.png
+- id: beast-bifang
+  name: 毕方
+  pinyin: bì fāng
+  category: 神禽
+  book: 西山经
+  mountain: 章莪之山
+  auspicious: 凶兆
+  appearance: 其状如鹤，一足，赤文青质而白喙。
+  abilities: 见则其邑有讹火（火灾）；侍从黄帝出巡。
+  summary: 木精与火灵化身的神鸟，青色羽毛布满红斑，仅生独足，它的出现往往预示着不寻常的火灾。
+  original_text: |
+    章莪之山，无草木，多瑶碧。有鸟焉，其状如鹤，一足，赤文青质而白喙，名曰毕方，其鸣自叫也，见则其邑有讹火。
+  translation: |
+    章莪山寸草不生，多美玉。山中有一种鸟，形状像鹤却只有一只脚，青绿色的羽毛上长着红斑，白色的嘴喙，名叫毕方。它的叫声如同呼唤自己的名字，一旦出现，当地就会发生离奇大火。
+  tags:
+    - 独足
+    - 火兆
+    - 神禽
+    - 黄帝扈从
+    - 章莪山
+  image: /images/shanhaijing/digital_art/bifang.png
+  video:
+    title: 山海经火神之鸟·《独足毕方》
+    url: https://www.bilibili.com/video/BV17t411974Z
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV17t411974Z
+  image_ancient: /images/shanhaijing/beasts/bifang.jpg
+  image_refined: /images/shanhaijing/digital_art/bifang.png
+- id: beast-huashe
+  name: 化蛇
+  pinyin: huà shé
+  category: 异兽
+  book: 中山经
+  mountain: 阳山
+  auspicious: 凶兆
+  appearance: 其状如人面而豺身，鸟翼而蛇行。
+  abilities: 其音如叱呼，见则其邑大水。
+  summary: 阳山之凶物，人面豺身，生有飞鸟羽翼却如蛇般贴地游走，叫声如人在厉声斥责，是引发滔天洪水的大凶异兆。
+  original_text: |
+    又西二百里，曰阳山，多石，无草木。阳水出焉，而北流注于伊水。其中多化蛇，其状如人面而豺身，鸟翼而蛇行，其音如叱呼，见则其邑大水。
+  translation: |
+    再往西二百里是阳山，满山乱石，寸草不生。阳水发源于此，向北流入伊水。水中有很多化蛇，长着人一样的脸孔、豺狼的躯体、飞鸟的双翅，像蛇一样游行，叫声宛如厉声呼喝，出现则当地必遭特大洪水。
+  tags:
+    - 大水之兆
+    - 人面蛇身
+    - 飞翅
+    - 凶异
+    - 阳山
+  image: /images/shanhaijing/digital_art/huashe.png
+  video:
+    title: 水怪探秘《山海经大水之兆·化蛇》
+    url: https://www.bilibili.com/video/BV16b411Q77P
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV16b411Q77P
+  image_ancient: /images/shanhaijing/beasts/huashe.jpg
+  image_refined: /images/shanhaijing/digital_art/huashe.png
+- id: beast-yong
+  name: 颙
+  pinyin: yóng
+  category: 神禽
+  book: 南山经
+  mountain: 令丘之山
+  auspicious: 凶兆
+  appearance: 其状如枭，人面而四目，有耳。
+  abilities: 其鸣自号也，见则天下大旱。
+  summary: 令丘之山的怪鸟，猫头鹰形状却生着人脸与四只眼睛，还长着耳朵，是引发全国大旱的凶鸟。
+  original_text: |
+    令丘之山，无草木，处处有火。其南有谷焉，曰中谷，条风自是出。有鸟焉，其状如枭，人面而四目，有耳，其名曰颙，其鸣自号也，见则天下大旱。
+  translation: |
+    令丘山寸草不生，到处燃烧着烈火。南面有一峡谷叫中谷，东北风便从此刮出。山中有一种鸟，形状像猫头鹰，长着人面、四只眼睛和耳朵，名字叫颙，叫声如自呼其名，一旦出现天下就会发生大旱灾。
+  tags:
+    - 大旱之兆
+    - 四目神鸟
+    - 令丘山
+    - 凶鸟
+  image: /images/shanhaijing/digital_art/quru.png
+  video:
+    title: 异鸟奇谈《见则大旱·怪鸟颙》
+    url: https://www.bilibili.com/video/BV1tb411t7eA
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1tb411t7eA
+  image_ancient: /images/shanhaijing/beasts/yong.png
+  image_refined: /images/shanhaijing/digital_art/quru.png
+- id: beast-bo
+  name: 驳
+  pinyin: bó
+  category: 异兽
+  book: 中山经
+  mountain: 中曲之山
+  auspicious: 祥瑞
+  appearance: 其状如马而白身黑尾，一角，虎牙爪，音如鼓音。
+  abilities: 是食虎豹，可以御兵（防避战争兵燹）。
+  summary: 能生吞虎豹的威猛独角神兽，其声如雷鸣战鼓，饲养或佩其标志能防御兵戈战乱。
+  original_text: |
+    中曲之山，其阳多玉，其阴多雄黄、白玉及金。有兽焉，其状如马而白身黑尾，一角，虎牙爪，音如鼓音，其名曰驳，是食虎豹，可以御兵。
+  translation: |
+    中曲山山南多美玉，山北多雄黄、白玉和黄金。山中有一种兽，形状像马，白身黑尾，头顶长着独角，拥有猛虎般的尖牙和利爪，叫声如击鼓轰鸣，名叫驳，能以虎豹为食，养它可以防避战争兵灾。
+  tags:
+    - 食虎豹
+    - 独角神兽
+    - 御兵
+    - 勇武
+    - 战马
+  image: /images/shanhaijing/digital_art/bo.png
+  video:
+    title: 《山海经战神坐骑·神兽驳》
+    url: https://www.bilibili.com/video/BV15E411T7U3
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV15E411T7U3
+  image_ancient: /images/shanhaijing/beasts/bo.jpg
+  image_refined: /images/shanhaijing/digital_art/bo.png
+- id: beast-gudiao
+  name: 蛊雕
+  pinyin: gǔ diāo
+  category: 异兽
+  book: 南山经
+  mountain: 鹿吴之山
+  auspicious: 凶兆
+  appearance: 其状如雕而有角，其音如婴儿之音。
+  abilities: 迅捷凶残，喜食人。
+  summary: 鹿吴之水中的残暴怪兽，外形似猛禽巨雕却长有犄角，擅长发出婴儿般的啼哭声引诱猎物并吞食。
+  original_text: |
+    又东五百里，曰鹿吴之山，上无草木，多金石。泽更之水出焉，而南流注于滂水。水有兽焉，名曰蛊雕，其状如雕而有角，其音如婴儿之音，是食人。
+  translation: |
+    再往东五百里是鹿吴山，山上寸草不生，多金属矿石。泽更水发源于此，向南流入滂水。水中有一种怪兽名叫蛊雕，长相像巨雕却头生双角，叫声宛如婴儿哭啼，极其凶残，专以人为食。
+  tags:
+    - 食人凶兽
+    - 巨雕生角
+    - 婴儿音
+    - 鹿吴山
+  image: /images/shanhaijing/digital_art/gudiao.png
+  video:
+    title: 上古巨怪《水陆双栖·蛊雕》
+    url: https://www.bilibili.com/video/BV1a7411i7u4
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1a7411i7u4
+  image_ancient: /images/shanhaijing/beasts/gudiao.png
+  image_refined: /images/shanhaijing/digital_art/gudiao.png
+- id: beast-luoyu
+  name: 蠃鱼
+  pinyin: luǒ yú
+  category: 水族
+  book: 西山经
+  mountain: 邽山
+  auspicious: 凶兆
+  appearance: 鱼身而鸟翼，音如鸳鸯。
+  abilities: 见则其邑大水。
+  summary: 蒙水之中的飞鱼异种，长着飞鸟的双翼，叫声动听如同鸳鸯鸣叫，但现身之处必有大水漫灌。
+  original_text: |
+    邽山，蒙水出焉，南流注于洋水，其中多黄贝；蠃鱼，鱼身而鸟翼，音如鸳鸯，见则其邑大水。
+  translation: |
+    邽山，蒙水发源于此向南注入洋水，水中多产黄色贝类。水中有一种蠃鱼，长着鱼的身躯和飞鸟的翅膀，叫声如同鸳鸯交颈鸣啼，它一旦现身，当地必会遭遇大洪水。
+  tags:
+    - 飞鱼
+    - 大水之兆
+    - 鸟翼鱼身
+    - 蒙水
+  image: /images/shanhaijing/digital_art/luoyu.png
+  video:
+    title: 奇幻生物《生双翼的飞鱼·蠃鱼》
+    url: https://www.bilibili.com/video/BV1rt411W79a
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1rt411W79a
+  image_ancient: /images/shanhaijing/beasts/luoyu.jpg
+  image_refined: /images/shanhaijing/digital_art/luoyu.png
+- id: beast-mingshe
+  name: 鸣蛇
+  pinyin: míng shé
+  category: 异兽
+  book: 中山经
+  mountain: 鲜山
+  auspicious: 凶兆
+  appearance: 其状如蛇而四翼，其音如磬。
+  abilities: 见则其邑大旱。
+  summary: 鲜山之凶蛇，生有四只翅膀，飞翔鸣叫时声音清越如敲击玉磬，然而它的鸣叫是大旱的警讯。
+  original_text: |
+    又西三百里，曰鲜山，多金玉，无草木。鲜水出焉，而北流注于伊水。其中多鸣蛇，其状如蛇而四翼，其音如磬，见则其邑大旱。
+  translation: |
+    向西三百里是鲜山，盛产黄金美玉，草木不生。鲜水发源于此北流注入伊水。水中有很多鸣蛇，形状如长蛇却生有四只翅膀，声音如敲击石磬般悦耳，它一出现，当地便会大旱。
+  tags:
+    - 四翼飞蛇
+    - 磬鸣
+    - 大旱之兆
+    - 鲜山
+  image: /images/shanhaijing/digital_art/mingshe.png
+  video:
+    title: 志怪传说《四翼飞天鸣蛇》
+    url: https://www.bilibili.com/video/BV154411w7dF
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV154411w7dF
+  image_ancient: /images/shanhaijing/beasts/mingshe.jpg
+  image_refined: /images/shanhaijing/digital_art/mingshe.png
+- id: beast-jiao
+  name: 狡
+  pinyin: jiǎo
+  category: 异兽
+  book: 西山经
+  mountain: 玉山
+  auspicious: 祥瑞
+  appearance: 其状如犬而豹文，其角如牛，其音如吠犬。
+  abilities: 见则其国大丰（五谷丰登）。
+  summary: 西王母所居玉山之祥兽，外形如猎犬长着豹纹和牛角，是代表天下五谷大丰收的吉兆。
+  original_text: |
+    又西三百五十里，曰玉山，是西王母之所居也。有兽焉，其状如犬而豹文，其角如牛，其名曰狡，其音如吠犬，见则其国大丰。
+  translation: |
+    再往西三百五十里是玉山，这是西王母居住的仙境。山中有一种神兽，体型如狗身上布满豹纹，头顶生着牛角，名叫狡，叫声像狗吠，只要它出现，国家就会迎来大丰收。
+  tags:
+    - 五谷丰登
+    - 玉山
+    - 西王母
+    - 吉祥瑞兽
+  image: /images/shanhaijing/digital_art/jiao.png
+  video:
+    title: 《西王母仙山的吉兽·狡》
+    url: https://www.bilibili.com/video/BV1k4411r7P2
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1k4411r7P2
+  image_ancient: /images/shanhaijing/beasts/jiao.jpg
+  image_refined: /images/shanhaijing/digital_art/jiao.png
+- id: beast-feifei
+  name: 朏朏
+  pinyin: fěi fěi
+  category: 异兽
+  book: 中山经
+  mountain: 霍山
+  auspicious: 祥瑞
+  appearance: 其状如狸，而白尾，有鬣。
+  abilities: 养之可以已忧（消除忧愁烦恼）。
+  summary: 上古最治愈的仙宠瑞兽，形状如小猫/狸子，长着白色的尾巴和柔顺鬃毛，饲养它可以忘却一切烦恼。
+  original_text: |
+    又北四十里，曰霍山，其木多榖。有兽焉，其状如狸，而白尾，有鬣，名曰朏朏，养之可以已忧。
+  translation: |
+    再向北四十里是霍山，山中多构树。山中有一种灵兽，外形像狸猫，拖着一条蓬松洁白的尾巴，颈项长有鬃毛，名叫朏朏。人类如果饲养它，就能消除心中的忧愁和烦恼。
+  tags:
+    - 解忧萌宠
+    - 白尾狸
+    - 治愈
+    - 祥瑞
+    - 霍山
+  image: /images/shanhaijing/digital_art/feifei.png
+  video:
+    title: 上古解忧萌宠《山海经最可爱神兽·朏朏》
+    url: https://www.bilibili.com/video/BV15E411r7p3
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV15E411r7p3
+  image_ancient: /images/shanhaijing/beasts/feifei.png
+  image_refined: /images/shanhaijing/digital_art/feifei.png
+- id: beast-shengyu
+  name: 胜遇
+  pinyin: shèng yù
+  category: 神禽
+  book: 西山经
+  mountain: 玉山
+  auspicious: 凶兆
+  appearance: 其状如翟而赤，音如录。
+  abilities: 食鱼，见则其国大水。
+  summary: 栖息于玉山的红色野鸡状神禽，叫声如鹿鸣，是引发暴雨与洪水的大水凶兆。
+  original_text: |
+    玉山，有鸟焉，其状如翟而赤，名曰胜遇，是食鱼，其音如录，见则其国大水。
+  translation: |
+    玉山中有一种鸟，形状像长尾野鸡通体赤红，名叫胜遇。它以捕鱼为食，叫声如鹿鸣，它在哪个国家现身，该国就会发生特大水灾。
+  tags:
+    - 赤鸟
+    - 大水之兆
+    - 异禽
+    - 玉山
+  image: /images/shanhaijing/digital_art/shengyu.png
+  video:
+    title: 探秘山海神鸟《赤羽水兆·胜遇》
+    url: https://www.bilibili.com/video/BV13b411h7kC
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV13b411h7kC
+  image_ancient: /images/shanhaijing/beasts/shengyu.jpg
+  image_refined: /images/shanhaijing/digital_art/shengyu.png
+- id: beast-zhujian
+  name: 诸犍
+  pinyin: zhū jiān
+  category: 奇兽
+  book: 北山经
+  mountain: 单狐之山
+  auspicious: 异象
+  appearance: 其状如豹而长尾，人首而牛耳，一目。
+  abilities: 衔其尾以行，其音如叫呼，力大无穷。
+  summary: 单狐之山的独眼神兽，豹身人面，长尾巴可衔在口中行走，停歇时则盘曲如轮，吼声震天。
+  original_text: |
+    又北百一十里，曰单狐之山，多檖，多华花。有兽焉，其状如豹而长尾，人首而牛耳，一目，名曰诸犍，善吒，行则衔其尾，居则盘尾。
+  translation: |
+    再往北一百一十里是单狐山，生长着许多野梨树和各色奇花。山中有一种异兽，体态像豹子尾巴极长，长着人的脑袋和牛的耳朵，只有一只眼睛，名叫诸犍，行走时嘴里咬着自己的长尾，休息时尾巴盘曲起来。
+  tags:
+    - 人首豹身
+    - 独眼
+    - 衔尾而行
+    - 奇兽
+  image: /images/shanhaijing/digital_art/zhujian.png
+  video:
+    title: 《山海经奇特怪物·人面豹身诸犍》
+    url: https://www.bilibili.com/video/BV1d4411M7b4
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1d4411M7b4
+  image_ancient: /images/shanhaijing/beasts/zhujian.jpg
+  image_refined: /images/shanhaijing/digital_art/zhujian.png
+- id: beast-chiru
+  name: 赤鱬
+  pinyin: chì rú
+  category: 水族
+  book: 南山经
+  mountain: 青丘之山
+  auspicious: 祥瑞
+  appearance: 其状如鱼而人面，其音如鸳鸯。
+  abilities: 食之不疥（吃了它的肉不会患皮肤疥疮）。
+  summary: 青丘山英水中的美人鱼始祖，人面鱼身，声音宛转动听，具有极佳的药用避疾神效。
+  original_text: |
+    青丘之山，英水出焉，南流注于即翼之泽。其中多赤鱬，其状如鱼而人面，其音如鸳鸯，食之不疥。
+  translation: |
+    青丘山中英水发源于此，向南流入即翼之泽。水中多产赤鱬，外形如鱼却长着人的面孔，叫声如同鸳鸯鸣啼，人若吃了它的肉就不会生疥疮等皮肤顽疾。
+  tags:
+    - 人面鱼
+    - 药效
+    - 治疥疮
+    - 美人鱼始祖
+    - 青丘
+  image: /images/shanhaijing/digital_art/chiru.png
+  video:
+    title: 寻踪东方美人鱼《山海经人面鱼·赤鱬》
+    url: https://www.bilibili.com/video/BV1bE411q7oD
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1bE411q7oD
+  image_ancient: /images/shanhaijing/beasts/chiru.png
+  image_refined: /images/shanhaijing/digital_art/chiru.png
+- id: beast-boyi
+  name: 猼訑
+  pinyin: bó yí
+  category: 异兽
+  book: 南山经
+  mountain: 基山
+  auspicious: 祥瑞
+  appearance: 其状如羊，九尾四耳，其目在背。
+  abilities: 佩之不畏（佩戴其毛皮可以让人勇气倍增，毫无畏惧）。
+  summary: 基山之灵兽，羊身九尾四耳，眼睛长在脊背之上，是上古赐予勇气的祥瑞图腾。
+  original_text: |
+    又东三百里，曰基山，其阳多玉，其阴多怪木。有兽焉，其状如羊，九尾四耳，其目在背，其名曰猼訑，佩之不畏。
+  translation: |
+    再往东三百里是基山，山南多美玉，山北多奇异林木。山中有一种异兽，形状像羊却长着九条尾巴和四只耳朵，眼睛奇特地长在后背上，名叫猼訑。佩戴它的皮毛能让人胆气大壮，不再有恐惧感。
+  tags:
+    - 九尾四耳
+    - 背上生目
+    - 赐予勇气
+    - 基山
+    - 祥瑞
+  image: /images/shanhaijing/digital_art/boyi.png
+  video:
+    title: 《无畏之兽·九尾四耳猼訑》
+    url: https://www.bilibili.com/video/BV1gW411E7qT
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1gW411E7qT
+  image_ancient: /images/shanhaijing/beasts/boyi.png
+  image_refined: /images/shanhaijing/digital_art/boyi.png
+- id: beast-xuangui
+  name: 旋龟
+  pinyin: xuán guī
+  category: 水族
+  book: 南山经
+  mountain: 杻阳之山
+  auspicious: 祥瑞
+  appearance: 其状如龟而鸟首虺尾，其音如判木。
+  abilities: 佩之不聋，可以为底（治疗耳聋和足茧老茧）。
+  summary: 杻阳山怪水中的神龟，鸟头毒蛇尾，叫声如劈开木头的脆响，佩戴其壳能治疗耳聋。
+  original_text: |
+    杻阳之山，怪水出焉，而东流注于宪翼之水。其中多玄龟，其状如龟而鸟首虺尾，其名曰旋龟，其音如判木，佩之不聋，可以为底。
+  translation: |
+    杻阳山，怪水发源于此东流注入宪翼水。水中盛产旋龟，外形像乌龟却长着鸟的头和毒蛇的尾巴，叫声宛如劈柴破木的声响，佩戴它可以免除耳聋，还可以治疗脚茧死皮。
+  tags:
+    - 鸟首蛇尾
+    - 治耳聋
+    - 玄武原型
+    - 杻阳山
+  image: /images/shanhaijing/digital_art/xuangui.png
+  video:
+    title: 探秘玄武始祖《鸟首蛇尾旋龟》
+    url: https://www.bilibili.com/video/BV1u441187uC
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1u441187uC
+  image_ancient: /images/shanhaijing/beasts/xuangui.png
+  image_refined: /images/shanhaijing/digital_art/xuangui.png
+- id: beast-lili
+  name: 狸力
+  pinyin: lí lì
+  category: 异兽
+  book: 南山经
+  mountain: 柜山
+  auspicious: 异象
+  appearance: 其状如豚，有距，其音如狗吠。
+  abilities: 善于掘地挖土，见则其县多土功（大兴土木工程）。
+  summary: 柜山上的工程神兽，形如长有鸡爪的小猪，擅长穿山凿洞，它的出现预示着当地将大兴水利和土木建设。
+  original_text: |
+    柜山，有兽焉，其状如豚，有距，其音如狗吠，其名曰狸力，见则其县多土功。
+  translation: |
+    柜山中有一种野兽，形状像猪，脚上却长着雄鸡一样的飞禽利爪，叫声像狗叫，名字叫狸力。只要它在哪个县出现，当地不久就会大兴土木工程。
+  tags:
+    - 大兴土木
+    - 穿山掘土
+    - 柜山
+    - 异兽
+  image: /images/shanhaijing/digital_art/lili.png
+  video:
+    title: 《上古土木基建狂魔·神兽狸力》
+    url: https://www.bilibili.com/video/BV154411E73g
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV154411E73g
+  image_ancient: /images/shanhaijing/beasts/lili.jpg
+  image_refined: /images/shanhaijing/digital_art/lili.png
+- id: beast-chongmingniao
+  name: 重明鸟
+  pinyin: chóng míng niǎo
+  category: 神禽
+  book: 传世上古志
+  mountain: 祗支之国
+  auspicious: 祥瑞
+  appearance: 其状如鸡，鸣似凤，两目皆有双眸。
+  abilities: 搏逐猛兽虎狼，辟一切妖邪之气与盗寇之灾。
+  summary: 双目各生双瞳的驱邪吉鸟，能够搏杀豺狼虎豹，驱赶妖魅，尧帝时曾入贡，是千门万户贴金鸡辟邪的原型。
+  original_text: |
+    尧在位七十年，祗支之国献重明之鸟，一名双睛，言又目中各有两眸。状如鸡，鸣似凤。时解落毛羽，肉翮而飞。能搏逐猛兽虎狼，使妖灾群恶不能为害。
+  translation: |
+    尧帝在位七十年时，祗支国进献重明鸟，又称“双睛”，因为每只眼睛里都有两个瞳孔。形状像公鸡，啼叫如同凤凰。它能搏杀猛虎豺狼，使天下妖邪恶气无法为害百姓。
+  tags:
+    - 重瞳
+    - 辟邪金鸡
+    - 驱鬼神禽
+    - 尧帝
+    - 祥瑞
+  image: /images/shanhaijing/digital_art/sanzuwu.png
+  video:
+    title: 《年画金鸡辟邪之源·重明鸟》
+    url: https://www.bilibili.com/video/BV1sJ411D7V9
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1sJ411D7V9
+  image_ancient: /images/shanhaijing/beasts/chongmingniao.jpg
+  image_refined: /images/shanhaijing/digital_art/sanzuwu.png
+- id: beast-jiufeng
+  name: 九凤 (九头鸟)
+  pinyin: jiǔ fèng
+  category: 神禽
+  book: 大荒北经
+  mountain: 北极天柜
+  auspicious: 灵神
+  appearance: 九首人面，鸟身。
+  abilities: 执掌极北之天柜，楚人原始凤鸟图腾。
+  summary: 大荒北极天柜山中的崇高神鸟，九个头皆为人面，是战国楚地先民崇拜的九头神凤图腾。
+  original_text: |
+    大荒之中，有山名曰北极天柜，海水北注焉。有神九首人面鸟身，名曰九凤。
+  translation: |
+    在大荒深处，有一座山名叫北极天柜山，海水向北注入其中。山中有一位神祇，长着九个脑袋、人的面孔、飞鸟的身躯，名叫九凤。
+  tags:
+    - 九头凤
+    - 楚国图腾
+    - 北极天柜
+    - 灵神
+  image: /images/shanhaijing/digital_art/jiufeng.png
+  video:
+    title: 楚地神话《九头神鸟九凤传奇》
+    url: https://www.bilibili.com/video/BV1iE411q7p6
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1iE411q7p6
+  image_ancient: /images/shanhaijing/beasts/jiufeng.jpg
+  image_refined: /images/shanhaijing/digital_art/jiufeng.png
+- id: beast-dangkang
+  name: 当康
+  pinyin: dāng kāng
+  category: 异兽
+  book: 东山经
+  mountain: 钦山
+  auspicious: 祥瑞
+  appearance: 其状如豚而有牙，其鸣自叫。
+  abilities: 见则天下大穰（天下农业大丰收）。
+  summary: 象征五谷丰登的大吉瑞兽，长相如长有四只大獠牙的小野猪，每逢丰收之年便欢跃鸣叫。
+  original_text: |
+    钦山，多金玉而无石。师水出焉，而北流注于皋泽。有兽焉，其状如豚而有牙，其名曰当康，其鸣自叫，见则天下大穰。
+  translation: |
+    钦山盛产金玉而没有碎石。师水发源于此北流注入皋泽。山中有一种异兽，外形像小猪却长着四枚突出的长獠牙，名字叫当康，它的叫声如同呼唤自己的名字，一旦出现就预示着天下大丰收。
+  tags:
+    - 天下大穰
+    - 丰收之兽
+    - 钦山
+    - 祥瑞吉祥
+  image: /images/shanhaijing/digital_art/haozhi.png
+  video:
+    title: 《天下丰收之神·瑞兽当康》
+    url: https://www.bilibili.com/video/BV15E411r7P8
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV15E411r7P8
+  image_ancient: /images/shanhaijing/beasts/dangkang.jpg
+  image_refined: /images/shanhaijing/digital_art/haozhi.png
+- id: beast-bashe
+  name: 巴蛇
+  pinyin: bā shé
+  category: 异兽
+  book: 海内南经
+  mountain: 洞庭之山
+  auspicious: 异象
+  appearance: 黑蛇青首，身长百丈。
+  abilities: 巴蛇食象，三岁而出其骨；服之无心腹之疾。
+  summary: 能够吞食大象的通天巨蟒，后羿曾射杀巴蛇于洞庭湖，其骨化为陵丘，肉入药可治心腹顽疾。
+  original_text: |
+    巴蛇食象，三岁而出其骨，君子服之，无心腹之疾。其为蛇青黄赤黑。一曰黑蛇青首，在犀牛西。
+  translation: |
+    巴蛇能够吞下一整头大象，经过三年才吐出大象的骨头。贵人吃了它的肉，就不会得心腹内脏的疾病。巴蛇身躯五彩，另一种说法是黑色的蛇身、青色的头颅。
+  tags:
+    - 人心不足蛇吞象
+    - 洞庭巨蟒
+    - 吞天巨蛇
+    - 药用
+  image: /images/shanhaijing/digital_art/bashe.png
+  video:
+    title: 典故探源《巴蛇吞象与洞庭神话》
+    url: https://www.bilibili.com/video/BV16b411Q77P
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV16b411Q77P
+  image_ancient: /images/shanhaijing/beasts/bashe.jpg
+  image_refined: /images/shanhaijing/digital_art/bashe.png
+- id: beast-yinglong
+  name: 应龙
+  pinyin: yìng lóng
+  category: 灵神
+  book: 大荒东经
+  mountain: 凶犁土丘
+  auspicious: 灵神
+  appearance: 生有双翼之巨龙，鳞身脊棘，头大而长，吻尖，鼻目耳皆小。
+  abilities: 司掌行云布雨，曾助黄帝斩蚩尤夸父，又助大禹以尾画地导水开三门峡。
+  summary: 华夏神话中的至尊战神翼龙，有生翼之龙的美誉，立下诛蚩尤、定四海、助禹治水的盖世功勋。
+  original_text: |
+    大荒东北隅中，有山名曰凶犁土丘。应龙处南极，杀蚩尤与夸父，不得复上，故下数旱，旱而为应龙之状，乃得大雨。
+  translation: |
+    在大荒的东北角，有一座凶犁土丘山。应龙居住在最南极，大战中诛杀了蚩尤与夸父，因神力消耗无法重返天庭。人间如果遭遇大旱，只要做成应龙的模样祈雨，便能降下滂沱大雨。
+  tags:
+    - 战神翼龙
+    - 斩蚩尤
+    - 禹王治水
+    - 祈雨之神
+    - 灵神
+  image: /images/shanhaijing/digital_art/yinglong.png
+  video:
+    title: 华夏第一战神《生双翼的始祖巨龙·应龙》
+    url: https://www.bilibili.com/video/BV19W411E7qT
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV19W411E7qT
+  image_ancient: /images/shanhaijing/beasts/yinglong.jpg
+  image_refined: /images/shanhaijing/digital_art/yinglong.png
+- id: beast-nuba
+  name: 女魃 (旱魃)
+  pinyin: nǚ bá (hàn bá)
+  category: 灵神
+  book: 大荒北经
+  mountain: 系昆之山
+  auspicious: 凶兆
+  appearance: 身穿青衣，秃发，目在顶上。
+  abilities: 身上散发无尽热量与强光，止风雨，所居之处滴雨不降。
+  summary: 黄帝之女，逐鹿之战中下界破风伯雨师大阵，诛杀蚩尤，因神力耗尽无法升天，驻足之地天下大旱。
+  original_text: |
+    蚩尤请风伯雨师，纵大风雨。黄帝乃下天女曰魃，雨止，遂杀蚩尤。魃不得复上，所居不雨。
+  translation: |
+    蚩尤请来风伯和雨师，刮起狂风降下暴雨。黄帝便令天女魃下界助战，魃一出现狂风暴雨立刻止息，黄帝遂趁机斩杀蚩尤。魃耗尽神力无法再返回天庭，她所停留的地方天地不降一滴雨水。
+  tags:
+    - 黄帝之女
+    - 逐鹿之战
+    - 旱神
+    - 破风雨阵
+  image: /images/shanhaijing/digital_art/xiwangmu.png
+  video:
+    title: 涿鹿之战《黄帝天女·旱神女魃之谜》
+    url: https://www.bilibili.com/video/BV1oJ411D7Va
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1oJ411D7Va
+  image_ancient: /images/shanhaijing/beasts/nuba.jpg
+  image_refined: /images/shanhaijing/digital_art/xiwangmu.png
+- id: beast-lushou
+  name: 鹿蜀
+  pinyin: lù shǔ
+  category: 异兽
+  book: 南山经
+  mountain: 杻阳之山
+  auspicious: 祥瑞
+  appearance: 其状如马而白首，其文如虎而赤尾，其音如谣。
+  abilities: 佩之宜子孙（佩戴其皮毛能使子孙昌盛繁衍）。
+  summary: 杻阳山上的祥瑞仙兽，马身白头、虎纹赤尾，鸣声宛如山歌悠扬，是祈求多子多孙的吉祥物。
+  original_text: |
+    杻阳之山，有兽焉，其状如马而白首，其文如虎而赤尾，其音如谣，其名曰鹿蜀，佩之宜子孙。
+  translation: |
+    杻阳山中有一种野兽，形状像野马却长着白色的头部，身上布满虎纹拖着红色尾巴，鸣叫声如同人类在吟唱民谣，名字叫鹿蜀，佩戴它的皮毛可以使家族子孙兴旺繁盛。
+  tags:
+    - 宜子孙
+    - 虎纹神马
+    - 如谣之音
+    - 杻阳山
+    - 祥瑞
+  image: /images/shanhaijing/digital_art/lushu.png
+  video:
+    title: 《山海经歌唱家·宜子孙神兽鹿蜀》
+    url: https://www.bilibili.com/video/BV13b411h7kC
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV13b411h7kC
+  image_ancient: /images/shanhaijing/beasts/lushou.png
+  image_refined: /images/shanhaijing/digital_art/lushu.png
+- id: beast-tiangou
+  name: 天狗
+  pinyin: tiān gǒu
+  category: 异兽
+  book: 西山经
+  mountain: 阴山
+  auspicious: 祥瑞
+  appearance: 其状如狸而白首，其音如榴榴。
+  abilities: 可以御凶（防御并驱除一切凶邪之灾）。
+  summary: 阴山之瑞兽，外形如白头狸猫，叫声如猫呜，不仅不会吞月，反而是能驱逐妖邪、御凶保平安的神宠。
+  original_text: |
+    阴山，有兽焉，其状如狸而白首，名曰天狗，其音如榴榴，可以御凶。
+  translation: |
+    阴山中有一种异兽，体态像狸猫却长着雪白色的头部，名叫天狗，叫声就像榴榴的猫叫声，养它可以驱御并抵挡一切灾祸邪气。
+  tags:
+    - 白首狸
+    - 御凶辟邪
+    - 阴山
+    - 祥瑞
+  image: /images/shanhaijing/digital_art/tiangou.png
+  video:
+    title: 《天狗其实不是恶犬·山海经御凶天狗》
+    url: https://www.bilibili.com/video/BV1jW411E7qP
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1jW411E7qP
+  image_ancient: /images/shanhaijing/beasts/tiangou.jpg
+  image_refined: /images/shanhaijing/digital_art/tiangou.png
+- id: beast-ranyiyu
+  name: 冉遗鱼
+  pinyin: rǎn yí yú
+  category: 水族
+  book: 西山经
+  mountain: 英鞮之山
+  auspicious: 祥瑞
+  appearance: 其状如鱼而蛇首六足，其目如马耳。
+  abilities: 食之使人不眯（不被梦魇迷惑），可以御凶。
+  summary: 英鞮山涴水中的奇鱼，蛇头鱼身六只脚，眼睛如马耳般灵动，吃了它能不做噩梦，并能防避凶灾。
+  original_text: |
+    英鞮之山，涴水出焉，而南流注于陵羊之泽。其中多冉遗之鱼，鱼身而蛇首六足，其目如马耳，食之使人不眯，可以御凶。
+  translation: |
+    英鞮山中，涴水发源于此南流注入陵羊之泽。水中生长着很多冉遗鱼，鱼的身躯却长着蛇的头和六只脚，眼睛像马的耳朵，人吃了它可以不做噩梦魇魅，还能辟除凶灾。
+  tags:
+    - 蛇首六足
+    - 防噩梦
+    - 御凶
+    - 水族奇珍
+  image: /images/shanhaijing/digital_art/ranyiyu.png
+  video:
+    title: 《不做噩梦的神鱼·冉遗鱼探秘》
+    url: https://www.bilibili.com/video/BV15E411r7P9
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV15E411r7P9
+  image_ancient: /images/shanhaijing/beasts/ranyiyu.jpg
+  image_refined: /images/shanhaijing/digital_art/ranyiyu.png
+- id: beast-lu
+  name: 鯥
+  pinyin: lù
+  category: 水族
+  book: 南山经
+  mountain: 柢山
+  auspicious: 祥瑞
+  appearance: 其状如牛，陵居，蛇尾有翼，其羽在魼下，其音如留牛。
+  abilities: 冬死而夏生，食之无肿疾（吃了它可以不生痈肿脓疮）。
+  summary: 柢山彭水中的陆行两栖神鱼，牛身蛇尾生双翅，冬眠若死夏则复苏，是治疗痈肿疮毒的上古神药。
+  original_text: |
+    柢山，多水，无草木。彭水出焉，而西流注于芘湖之水，中多鯥，其状如牛，陵居，蛇尾有翼，其羽在魼下，其音如留牛，冬死而夏生，食之无肿疾。
+  translation: |
+    柢山到处是水，没有草木。彭水发源于此西流注入芘湖。水中有很多鯥鱼，外形像牛却居住在陆地上，蛇尾生翅，翅膀长在肋下，叫声如小牛鸣啼，冬天冬眠休眠夏天苏醒复活，吃了它的肉不会生毒疮痈肿。
+  tags:
+    - 冬死夏生
+    - 蛇尾牛身
+    - 治痈肿
+    - 彭水
+  image: /images/shanhaijing/digital_art/lu_fish.png
+  video:
+    title: 《冬死夏生的奇异两栖鱼·鯥》
+    url: https://www.bilibili.com/video/BV1rt411W79b
+    embed_url: https://player.bilibili.com/player.html?isOutside=true&bvid=BV1rt411W79b
+  image_ancient: /images/shanhaijing/beasts/lu.png
+  image_refined: /images/shanhaijing/digital_art/lu_fish.png
