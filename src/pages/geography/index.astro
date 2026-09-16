@@ -1,0 +1,1158 @@
+---
+import Base from '../../layouts/Base.astro'
+import '../../styles/geography.css'
+import dynastiesData from '../../../data/geography/dynasties_geography.json'
+import routesData from '../../../data/geography/historical_routes.json'
+
+const base = import.meta.env.BASE_URL
+---
+
+<Base title="历代疆域与古都变迁（夏朝 — 1999年澳门回归） · 上下五千年" wide={true}>
+  <div class="geography-container" id="geo-app" data-theme="parchment">
+    <!-- 顶部导航条 -->
+    <header class="geo-header">
+      <a href={base} class="geo-brand">
+        <span class="geo-brand-icon">🗺️</span>
+        <div>
+          <div class="geo-title">山川风物 · 历代疆域与古都变迁</div>
+        </div>
+      </a>
+      <div class="geo-subtitle">
+        夏朝 (前2070) ➔ 1999年澳门回归 · 双地名考证与时空地图
+      </div>
+      <div class="geo-header-tools">
+        <button class="geo-btn" id="btn-theme-toggle" title="切换古风/夜幕主题">
+          <span class="theme-icon">🌙</span> <span class="theme-text">深色模式</span>
+        </button>
+        <button class="geo-btn" id="btn-compare-toggle" title="开启双朝代疆域重叠对比">
+          <span>⚖️</span> <span>朝代对比</span>
+        </button>
+        <button class="geo-btn" id="btn-focus-return" title="直达港澳回归里程碑">
+          <span>🇲🇴</span> <span>港澳回归 (1999)</span>
+        </button>
+        <a href={base} class="geo-btn">
+          <span>📜</span> <span>历史长卷</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- 主展示区 -->
+    <div class="geo-main-stage">
+      <!-- 地图视口 -->
+      <div class="geo-map-viewport">
+        <div id="dynasty-map-canvas"></div>
+
+        <!-- 浮动图层开关 -->
+        <div class="geo-layers-dock">
+          <div class="geo-dock-title">
+            <span>🧭</span> 历史地理要素图层
+          </div>
+          <label class="geo-layer-item">
+            <input type="checkbox" id="layer-capitals" checked />
+            <span class="geo-legend-dot" style="background: #f57f17;"></span>
+            <span>★ 古代都城 (今城市)</span>
+          </label>
+          <label class="geo-layer-item">
+            <input type="checkbox" id="layer-cities" checked />
+            <span class="geo-legend-dot" style="background: #5d4037;"></span>
+            <span>● 历代重镇与关隘</span>
+          </label>
+          <label class="geo-layer-item">
+            <input type="checkbox" id="layer-greatwall" checked />
+            <span class="geo-legend-dot" style="background: #e65100;"></span>
+            <span>万里长城走向</span>
+          </label>
+          <label class="geo-layer-item">
+            <input type="checkbox" id="layer-canal" checked />
+            <span class="geo-legend-dot" style="background: #0288d1;"></span>
+            <span>隋唐与京杭大运河</span>
+          </label>
+          <label class="geo-layer-item">
+            <input type="checkbox" id="layer-silkroad" checked />
+            <span class="geo-legend-dot" style="background: #b37418;"></span>
+            <span>陆上海上丝绸之路</span>
+          </label>
+          <label class="geo-layer-item">
+            <input type="checkbox" id="layer-rivers" checked />
+            <span class="geo-legend-dot" style="background: #409eff;"></span>
+            <span>长江与黄河水系</span>
+          </label>
+        </div>
+
+        <!-- 对比模式浮动坞 -->
+        <div class="geo-compare-dock" id="compare-dock">
+          <span>基准朝代：<strong id="compare-base-name">夏朝</strong></span>
+          <span>对比朝代：</span>
+          <select id="compare-target-select" class="geo-select">
+            {dynastiesData.map((d, index) => (
+              <option value={d.id} selected={index === 5}>{d.name}</option>
+            ))}
+          </select>
+          <button class="geo-btn" id="btn-close-compare" style="padding: 2px 8px; font-size: 0.75rem;">关闭对比</button>
+        </div>
+
+        <!-- 省份下钻浮动面包屑导航坞 -->
+        <div class="geo-breadcrumb-dock" id="geo-breadcrumb">
+          <span style="font-weight: 500;">🇨🇳 全国疆域</span>
+          <span style="color: var(--geo-text-muted); font-size: 0.8rem;">❯</span>
+          <span class="geo-breadcrumb-province" id="breadcrumb-province-name">河南省</span>
+          <button class="geo-breadcrumb-back-btn" id="btn-breadcrumb-back" title="返回全国视图 (Esc)">
+            <span>✕</span> <span>返回全国</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 右侧朝代档案面板 -->
+      <aside class="geo-side-panel" id="geo-side-panel">
+        <button class="geo-panel-toggle" id="btn-panel-toggle" title="展开/收起档案">
+          <span id="panel-toggle-arrow">❯</span>
+        </button>
+
+        <div class="geo-panel-header">
+          <div class="geo-dynasty-badge" id="dynasty-badge">
+            <span>🏛️</span> <span id="panel-dynasty-badge-text">世袭王朝首开</span>
+          </div>
+          <h2 class="geo-dynasty-name">
+            <span id="panel-dynasty-name">夏朝</span>
+            <span id="panel-dynasty-area" style="font-size: 0.85rem; font-weight: 500; color: var(--geo-gold);">约 50 万 km²</span>
+          </h2>
+          <div class="geo-dynasty-period" id="panel-dynasty-period">约公元前 2070 — 前 1600 年</div>
+        </div>
+
+        <div class="geo-panel-body">
+          <!-- 都城考证 -->
+          <div class="geo-info-card">
+            <div class="geo-card-label">
+              <span>👑</span> <span id="panel-capitals-title">历代都城与今地名对照（优先古名）</span>
+            </div>
+            <div class="geo-capitals-list" id="panel-capitals-list">
+              <!-- 动态注入 -->
+            </div>
+          </div>
+
+          <!-- 极盛疆域与四至 -->
+          <div class="geo-info-card">
+            <div class="geo-card-label">
+              <span>🗺️</span> 极盛四至与疆域格局
+            </div>
+            <div class="geo-extremes-grid">
+              <div class="geo-extreme-item">
+                <span class="geo-extreme-tag">东至:</span>
+                <span id="extreme-east">豫东平原与泰山</span>
+              </div>
+              <div class="geo-extreme-item">
+                <span class="geo-extreme-tag">西达:</span>
+                <span id="extreme-west">华山之麓</span>
+              </div>
+              <div class="geo-extreme-item">
+                <span class="geo-extreme-tag">南抵:</span>
+                <span id="extreme-south">淮河北岸</span>
+              </div>
+              <div class="geo-extreme-item">
+                <span class="geo-extreme-tag">北跨:</span>
+                <span id="extreme-north">黄河与晋南</span>
+              </div>
+            </div>
+            <p id="extreme-summary" style="font-size: 0.82rem; color: var(--geo-text-muted); margin-top: 8px; line-height: 1.5;"></p>
+          </div>
+
+          <!-- 涵盖省区 -->
+          <div class="geo-info-card">
+            <div class="geo-card-label">
+              <span>🏛️</span> 该时期核心涵盖省区（点击下钻特写）
+            </div>
+            <div class="geo-provinces-tags" id="panel-provinces-tags">
+              <!-- 动态注入省份标签 -->
+            </div>
+          </div>
+
+          <!-- 重大历史事件 -->
+          <div class="geo-info-card">
+            <div class="geo-card-label">
+              <span>⚡</span> 该时期重大历史节点
+            </div>
+            <ul id="panel-events-list" style="margin: 0; padding-left: 18px; font-size: 0.82rem; line-height: 1.6; color: var(--geo-text-main);">
+              <!-- 动态注入 -->
+            </ul>
+          </div>
+
+          <!-- 地理与历史意义 -->
+          <div class="geo-info-card">
+            <div class="geo-card-label">
+              <span>📖</span> 历史地理沿革评析
+            </div>
+            <div id="panel-significance" style="font-size: 0.82rem; line-height: 1.6; color: var(--geo-text-muted);"></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- 底部时间轴长卷 -->
+    <footer class="geo-timeline-footer">
+      <div class="geo-timeline-controls">
+        <div class="geo-playback-tools">
+          <button class="geo-btn" id="btn-prev-dynasty" title="上一个朝代">◀ 上一朝代</button>
+          <button class="geo-btn active" id="btn-play-pause" title="自动巡航播放/暂停">
+            <span id="play-icon">▶</span> <span id="play-text">自动演进</span>
+          </button>
+          <button class="geo-btn" id="btn-next-dynasty" title="下一个朝代">下一朝代 ▶</button>
+          <span style="font-size: 0.8rem; color: var(--geo-text-muted); margin-left: 8px;">
+            当前：<strong id="timeline-current-label" style="color: var(--geo-primary);">夏朝</strong>
+          </span>
+        </div>
+        <div style="font-size: 0.78rem; color: var(--geo-text-muted);">
+          提示：支持使用键盘方向键 ← / → 快速切换朝代
+        </div>
+      </div>
+
+      <div class="geo-slider-wrapper">
+        <div class="geo-dynasty-ticks" id="dynasty-ticks-container">
+          {dynastiesData.map((d, index) => (
+            <div
+              class={`geo-tick-item ${index === 0 ? 'active' : ''} ${d.specialTag ? 'special-return' : ''}`}
+              data-id={d.id}
+              data-index={index}
+              title={`${d.name} (${d.period})`}
+            >
+              {d.shortName}
+            </div>
+          ))}
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 客户端 ECharts 交互脚本 -->
+  <script>
+    import * as echarts from 'echarts'
+    import dynasties from '../../../data/geography/dynasties_geography.json'
+    import routes from '../../../data/geography/historical_routes.json'
+    import chinaGeo from '../../../data/geography/china_geo.json'
+    import provinceConfig from '../../../data/geography/provinces_config.json'
+
+    // 注册中国基础地理底图 (GeoJSON)
+    echarts.registerMap('china', chinaGeo)
+
+    function initGeographyApp() {
+      let currentIndex = 0
+      let compareMode = false
+      let compareTargetIndex = 5 // 默认对比秦朝
+      let isPlaying = false
+      let playTimer = null
+      let currentTheme = 'parchment'
+      let selectedProvince = null // 当前下钻的省份名称（如 '河南省'），null 表示全国视角
+
+      const chartDom = document.getElementById('dynasty-map-canvas')
+      if (!chartDom) return
+      const myChart = echarts.init(chartDom)
+
+      // 图层状态
+      const layers = {
+        capitals: true,
+        cities: true,
+        greatWall: true,
+        canal: true,
+        silkRoad: true,
+        rivers: true
+      }
+
+      // 获取当前主题样式参数
+      function getThemeParams() {
+        if (currentTheme === 'night') {
+          return {
+            geoBg: '#14171d',
+            mapAreaColor: '#1c222d',
+            mapBorderColor: 'rgba(212, 175, 55, 0.25)',
+            mapEmphasisColor: '#283344',
+            uncoveredAreaColor: '#181d26',
+            textColor: '#e0ded8',
+            capitalLabelBg: 'rgba(30, 36, 48, 0.94)',
+            capitalLabelBorder: '#d4af37',
+            drilledBorderColor: '#ffb74d'
+          }
+        }
+        return {
+          geoBg: '#f7f4ed',
+          mapAreaColor: '#ebe4d5',
+          mapBorderColor: '#c2b5a2',
+          mapEmphasisColor: '#dfd4c0',
+          uncoveredAreaColor: '#ede7da',
+          textColor: '#2c2523',
+          capitalLabelBg: 'rgba(255, 255, 255, 0.94)',
+          capitalLabelBorder: '#b37418',
+          drilledBorderColor: '#b71c1c'
+        }
+      }
+
+      // 所有省级行政区名称列表
+      const allProvinceNames = [
+        '北京市', '天津市', '河北省', '山西省', '内蒙古自治区', '辽宁省', '吉林省', '黑龙江省',
+        '上海市', '江苏省', '浙江省', '安徽省', '福建省', '江西省', '山东省', '河南省',
+        '湖北省', '湖南省', '广东省', '广西壮族自治区', '海南省', '重庆市', '四川省',
+        '贵州省', '云南省', '西藏自治区', '陕西省', '甘肃省', '青海省', '宁夏回族自治区',
+        '新疆维吾尔自治区', '台湾省', '香港特别行政区', '澳门特别行政区'
+      ]
+
+      // 下钻至指定省份
+      function drillDownToProvince(pName) {
+        selectedProvince = pName
+        const breadcrumbEl = document.getElementById('geo-breadcrumb')
+        const provinceNameEl = document.getElementById('breadcrumb-province-name')
+        if (breadcrumbEl && provinceNameEl) {
+          provinceNameEl.textContent = pName
+          breadcrumbEl.classList.add('show')
+        }
+        updatePanelCapitalsAndTags()
+        renderMap()
+      }
+
+      // 返回全国视角
+      function resetToNationwide() {
+        selectedProvince = null
+        const breadcrumbEl = document.getElementById('geo-breadcrumb')
+        if (breadcrumbEl) {
+          breadcrumbEl.classList.remove('show')
+        }
+        updatePanelCapitalsAndTags()
+        renderMap()
+      }
+
+      // 渲染图表
+      function renderMap() {
+        const dynasty = dynasties[currentIndex]
+        const theme = getThemeParams()
+        const series = []
+
+        const dynastyProvinces = new Set(dynasty ? (dynasty.provinces || []) : [])
+        const compDynasty = compareMode && dynasties[compareTargetIndex] ? dynasties[compareTargetIndex] : null
+        const compProvinces = compDynasty ? new Set(compDynasty.provinces || []) : new Set()
+
+        // 构造省份真实地理图层着色
+        const provinceRegions = allProvinceNames.map(pName => {
+          const isBase = dynastyProvinces.has(pName)
+          const isComp = compProvinces.has(pName)
+          const isSelected = selectedProvince === pName
+
+          if (compareMode && compDynasty) {
+            if (isBase && isComp) {
+              return {
+                name: pName,
+                itemStyle: {
+                  areaColor: dynasty.color || '#8d4024',
+                  opacity: isSelected ? 0.95 : (selectedProvince ? 0.35 : (currentTheme === 'night' ? 0.78 : 0.68)),
+                  borderColor: isSelected ? theme.drilledBorderColor : '#29b6f6',
+                  borderWidth: isSelected ? 3 : 1.5
+                },
+                emphasis: {
+                  itemStyle: {
+                    areaColor: dynasty.color || '#8d4024',
+                    opacity: 0.95
+                  }
+                }
+              }
+            } else if (isBase) {
+              return {
+                name: pName,
+                itemStyle: {
+                  areaColor: dynasty.color || '#8d4024',
+                  opacity: isSelected ? 0.95 : (selectedProvince ? 0.35 : (currentTheme === 'night' ? 0.72 : 0.62)),
+                  borderColor: isSelected ? theme.drilledBorderColor : (dynasty.color || '#8d4024'),
+                  borderWidth: isSelected ? 3 : 1.2
+                },
+                emphasis: {
+                  itemStyle: {
+                    areaColor: dynasty.color || '#8d4024',
+                    opacity: 0.95
+                  }
+                }
+              }
+            } else if (isComp) {
+              return {
+                name: pName,
+                itemStyle: {
+                  areaColor: '#0288d1',
+                  opacity: isSelected ? 0.92 : (selectedProvince ? 0.25 : (currentTheme === 'night' ? 0.65 : 0.52)),
+                  borderColor: isSelected ? theme.drilledBorderColor : '#29b6f6',
+                  borderWidth: isSelected ? 3 : 1.5
+                },
+                emphasis: {
+                  itemStyle: {
+                    areaColor: '#0288d1',
+                    opacity: 0.9
+                  }
+                }
+              }
+            } else {
+              return {
+                name: pName,
+                itemStyle: {
+                  areaColor: theme.uncoveredAreaColor,
+                  opacity: isSelected ? 0.9 : (selectedProvince ? 0.2 : 1),
+                  borderColor: isSelected ? theme.drilledBorderColor : theme.mapBorderColor,
+                  borderWidth: isSelected ? 2.5 : 0.6
+                }
+              }
+            }
+          }
+
+          // 常规单朝代模式
+          if (isBase) {
+            return {
+              name: pName,
+              itemStyle: {
+                areaColor: dynasty.color || '#8d4024',
+                opacity: isSelected ? 0.92 : (selectedProvince ? 0.35 : (currentTheme === 'night' ? 0.76 : 0.65)),
+                borderColor: isSelected ? theme.drilledBorderColor : (currentTheme === 'night' ? 'rgba(255, 235, 170, 0.45)' : 'rgba(120, 50, 20, 0.4)'),
+                borderWidth: isSelected ? 3 : 1.2
+              },
+              emphasis: {
+                itemStyle: {
+                  areaColor: dynasty.color || '#8d4024',
+                  opacity: 0.95
+                }
+              }
+            }
+          }
+
+          // 未涵盖区域 (低饱和度底图)
+          return {
+            name: pName,
+            itemStyle: {
+              areaColor: theme.uncoveredAreaColor,
+              opacity: isSelected ? 0.85 : (selectedProvince ? 0.25 : 1),
+              borderColor: isSelected ? theme.drilledBorderColor : theme.mapBorderColor,
+              borderWidth: isSelected ? 2.5 : 0.6
+            }
+          }
+        })
+
+        // 1. 黄河与长江水系
+        if (layers.rivers) {
+          if (routes.yellowRiver) {
+            series.push({
+              name: '黄河',
+              type: 'lines',
+              coordinateSystem: 'geo',
+              polyline: true,
+              data: [{ coords: routes.yellowRiver.coords }],
+              lineStyle: {
+                color: '#e6a23c',
+                width: selectedProvince ? 3.2 : 2.5,
+                opacity: selectedProvince ? 0.85 : 0.75
+              },
+              silent: true,
+              zlevel: 2
+            })
+          }
+          if (routes.yangtzeRiver) {
+            series.push({
+              name: '长江',
+              type: 'lines',
+              coordinateSystem: 'geo',
+              polyline: true,
+              data: [{ coords: routes.yangtzeRiver.coords }],
+              lineStyle: {
+                color: '#409eff',
+                width: selectedProvince ? 3.2 : 2.5,
+                opacity: selectedProvince ? 0.85 : 0.75
+              },
+              silent: true,
+              zlevel: 2
+            })
+          }
+        }
+
+        // 2. 万里长城
+        if (layers.greatWall && routes.greatWall) {
+          series.push({
+            name: '万里长城',
+            type: 'lines',
+            coordinateSystem: 'geo',
+            polyline: true,
+            data: [{ coords: routes.greatWall.coords }],
+            lineStyle: {
+              color: '#d84315',
+              width: selectedProvince ? 4 : 3.5,
+              type: 'solid',
+              shadowBlur: 4,
+              shadowColor: 'rgba(216, 67, 21, 0.4)'
+            },
+            zlevel: 3
+          })
+        }
+
+        // 3. 大运河
+        if (layers.canal && routes.grandCanal) {
+          series.push({
+            name: '大运河',
+            type: 'lines',
+            coordinateSystem: 'geo',
+            polyline: true,
+            data: [{ coords: routes.grandCanal.coords }],
+            lineStyle: {
+              color: '#0288d1',
+              width: selectedProvince ? 3.5 : 2.8,
+              type: 'dashed',
+              dashOffset: 2
+            },
+            zlevel: 3
+          })
+        }
+
+        // 4. 丝绸之路 (陆上与海上)
+        if (layers.silkRoad) {
+          if (routes.silkRoad) {
+            series.push({
+              name: '陆上丝绸之路',
+              type: 'lines',
+              coordinateSystem: 'geo',
+              polyline: true,
+              data: [{ coords: routes.silkRoad.coords }],
+              lineStyle: { color: '#f57f17', width: 2.2, type: 'dotted' },
+              zlevel: 3
+            })
+          }
+          if (routes.maritimeSilkRoad) {
+            series.push({
+              name: '海上丝绸之路',
+              type: 'lines',
+              coordinateSystem: 'geo',
+              polyline: true,
+              data: [{ coords: routes.maritimeSilkRoad.coords }],
+              lineStyle: { color: '#00897b', width: 2.2, type: 'dotted' },
+              zlevel: 3
+            })
+          }
+        }
+
+        // 5. 重镇与要塞 (● 古名 (今名))
+        if (layers.cities && dynasty.majorCities && dynasty.majorCities.length > 0) {
+          const provShort = selectedProvince ? selectedProvince.replace(/(省|市|自治区|特别行政区)/, '') : ''
+          const cityData = dynasty.majorCities.map(c => {
+            const isLocal = !selectedProvince || c.modern.includes(provShort)
+            const isPass = c.type === 'pass' || c.type === 'military'
+            return {
+              name: `${isPass ? '▲' : '●'} ${c.ancient} (${c.modern})`,
+              value: [...c.coords, 1],
+              cityInfo: c,
+              symbol: isPass ? 'triangle' : 'circle',
+              symbolSize: selectedProvince ? (isLocal ? 12 : 5) : 8,
+              itemStyle: {
+                color: isLocal ? (isPass ? '#d84315' : '#5d4037') : 'rgba(93, 64, 55, 0.15)',
+                borderColor: isLocal ? '#fff' : 'rgba(255,255,255,0.2)',
+                borderWidth: isLocal ? 1.5 : 0.5,
+                opacity: isLocal ? 1 : 0.2
+              },
+              label: {
+                show: isLocal,
+                position: 'right',
+                formatter: '{b}',
+                fontSize: selectedProvince ? 11 : 10,
+                color: theme.textColor,
+                backgroundColor: theme.capitalLabelBg,
+                padding: [2, 6],
+                borderRadius: 4,
+                borderWidth: 1,
+                borderColor: 'rgba(0,0,0,0.1)'
+              }
+            }
+          })
+
+          series.push({
+            name: '历代重镇',
+            type: 'scatter',
+            coordinateSystem: 'geo',
+            data: cityData,
+            labelLayout: {
+              hideOverlap: true,
+              moveOverlap: 'shiftY'
+            },
+            zlevel: 4
+          })
+        }
+
+        // 6. 历代都城与都会 (主都 ★ 涟漪散点，陪都/都会 ☆ 分级散点)
+        if (layers.capitals && dynasty.capitals && dynasty.capitals.length > 0) {
+          const primaryCapitals = []
+          const secondaryCapitals = []
+          const provShort = selectedProvince ? selectedProvince.replace(/(省|市|自治区|特别行政区)/, '') : ''
+
+          dynasty.capitals.forEach(c => {
+            const isLocal = !selectedProvince || (c.province === selectedProvince || c.modern.includes(provShort))
+            const prefix = c.type === 'primary' ? '★' : (c.type === 'regional' ? '◆' : (c.type === 'temporary' ? '▲' : '☆'))
+            const item = {
+              name: `${prefix} ${c.ancient} (${c.modern})`,
+              value: [...c.coords, c.type === 'primary' ? 20 : 10],
+              capitalInfo: c,
+              isLocal: isLocal
+            }
+
+            if (c.type === 'primary') {
+              primaryCapitals.push({
+                ...item,
+                symbolSize: selectedProvince ? (isLocal ? 24 : 8) : 16,
+                rippleEffect: {
+                  brushType: 'stroke',
+                  scale: isLocal ? 4 : 0,
+                  period: 2.8
+                },
+                itemStyle: {
+                  color: isLocal ? '#d84315' : 'rgba(216, 67, 21, 0.25)',
+                  shadowBlur: isLocal ? 12 : 0,
+                  shadowColor: '#d84315'
+                },
+                label: {
+                  show: isLocal,
+                  position: 'top',
+                  formatter: '{b}',
+                  fontWeight: 'bold',
+                  fontSize: selectedProvince ? 13 : 12,
+                  color: '#b71c1c',
+                  backgroundColor: theme.capitalLabelBg,
+                  borderColor: theme.capitalLabelBorder,
+                  borderWidth: 1.5,
+                  padding: [4, 8],
+                  borderRadius: 6,
+                  shadowBlur: 6,
+                  shadowColor: 'rgba(0,0,0,0.15)'
+                }
+              })
+            } else {
+              secondaryCapitals.push({
+                ...item,
+                symbolSize: selectedProvince ? (isLocal ? 15 : 6) : 11,
+                itemStyle: {
+                  color: isLocal ? '#e65100' : 'rgba(230, 81, 0, 0.2)',
+                  borderColor: isLocal ? '#fff' : 'rgba(255,255,255,0.2)',
+                  borderWidth: isLocal ? 1.2 : 0.5
+                },
+                label: {
+                  show: isLocal,
+                  position: 'bottom',
+                  formatter: '{b}',
+                  fontWeight: '600',
+                  fontSize: selectedProvince ? 11 : 10,
+                  color: currentTheme === 'night' ? '#ffb74d' : '#8d4024',
+                  backgroundColor: theme.capitalLabelBg,
+                  borderColor: 'rgba(230, 81, 0, 0.4)',
+                  borderWidth: 1,
+                  padding: [2, 6],
+                  borderRadius: 4
+                }
+              })
+            }
+          })
+
+          // 主都（带波纹效果）
+          if (primaryCapitals.length > 0) {
+            series.push({
+              name: '主都',
+              type: 'effectScatter',
+              coordinateSystem: 'geo',
+              data: primaryCapitals,
+              symbol: 'star',
+              labelLayout: {
+                hideOverlap: true,
+                moveOverlap: 'shiftY'
+              },
+              zlevel: 6
+            })
+          }
+
+          // 陪都/都会/行在/割据都城
+          if (secondaryCapitals.length > 0) {
+            series.push({
+              name: '陪都与都会',
+              type: 'scatter',
+              coordinateSystem: 'geo',
+              data: secondaryCapitals,
+              symbol: 'roundRect',
+              labelLayout: {
+                hideOverlap: true,
+                moveOverlap: 'shiftY'
+              },
+              zlevel: 5
+            })
+          }
+        }
+
+        // 计算当前视口中心与缩放级别
+        let viewCenter = [104.5, 35.8]
+        let viewZoom = 1.25
+
+        if (selectedProvince && provinceConfig[selectedProvince]) {
+          viewCenter = provinceConfig[selectedProvince].center
+          viewZoom = provinceConfig[selectedProvince].zoom
+        }
+
+        const option = {
+          backgroundColor: theme.geoBg,
+          tooltip: {
+            trigger: 'item',
+            backgroundColor: theme.capitalLabelBg,
+            borderColor: theme.capitalLabelBorder,
+            borderWidth: 1,
+            textStyle: { color: theme.textColor, fontSize: 12 },
+            formatter: (params) => {
+              if (params.data && params.data.capitalInfo) {
+                const c = params.data.capitalInfo
+                const typeTag = c.type === 'primary' ? '👑 主都' : (c.type === 'regional' ? '◆ 割据/藩国都城' : (c.type === 'temporary' ? '▲ 行在/巡幸都邑' : '🏛️ 陪都'))
+                return `<div style="font-weight: bold; font-size: 14px; color: #b71c1c; margin-bottom: 4px;">${typeTag}：${c.ancient}（今 ${c.modern}）</div>` +
+                       `<div style="font-size: 11px; color: var(--geo-gold); margin-bottom: 4px;">省区归属：${c.province || '中原'}</div>` +
+                       `<div style="font-size: 12px; max-width: 260px; line-height: 1.5;">${c.desc || ''}</div>`
+              }
+              if (params.data && params.data.cityInfo) {
+                const c = params.data.cityInfo
+                const typeTag = c.type === 'pass' ? '⚔️ 雄关要隘' : (c.type === 'military' ? '🛡️ 军事重镇' : '📍 重要州府/名胜')
+                return `<div style="font-weight: bold; font-size: 13px; color: #5d4037; margin-bottom: 4px;">${typeTag}：${c.ancient}（今 ${c.modern}）</div>` +
+                       `<div style="font-size: 12px; max-width: 240px;">${c.desc || ''}</div>`
+              }
+              if (params.componentType === 'geo') {
+                const isCovered = dynastyProvinces.has(params.name)
+                const isDrilled = selectedProvince === params.name
+                const drillTip = isDrilled ? '<div style="color: #4caf50; font-size: 11px; margin-top: 4px;">🔍 已处于特写视角（点击或按 Esc 返回全国）</div>' : '<div style="color: #2196f3; font-size: 11px; margin-top: 4px;">💡 点击下钻特写此省并查看历代古都名胜</div>'
+
+                if (compareMode && compDynasty) {
+                  const isComp = compProvinces.has(params.name)
+                  if (isCovered && isComp) {
+                    return `<div style="font-weight: bold; color: var(--geo-gold); font-size: 13px;">🗺️ ${params.name}</div>` +
+                           `<div style="font-size: 12px; color: var(--geo-text-muted); margin-top: 2px;">【${dynasty.name}】与【${compDynasty.name}】共同涵盖省区</div>` + drillTip
+                  } else if (isCovered) {
+                    return `<div style="font-weight: bold; color: ${dynasty.color || 'var(--geo-primary)'}; font-size: 13px;">🗺️ ${params.name}</div>` +
+                           `<div style="font-size: 12px; color: var(--geo-text-muted); margin-top: 2px;">仅【${dynasty.name}】涵盖疆域</div>` + drillTip
+                  } else if (isComp) {
+                    return `<div style="font-weight: bold; color: #0288d1; font-size: 13px;">🗺️ ${params.name}</div>` +
+                           `<div style="font-size: 12px; color: var(--geo-text-muted); margin-top: 2px;">仅【${compDynasty.name}】涵盖疆域</div>` + drillTip
+                  }
+                }
+                if (isCovered) {
+                  return `<div style="font-weight: bold; color: ${dynasty.color || 'var(--geo-primary)'}; font-size: 13px;">🗺️ ${params.name}</div>` +
+                         `<div style="font-size: 12px; color: var(--geo-text-muted); margin-top: 2px;">归属【${dynasty.name}】主要疆域与经略腹地</div>` + drillTip
+                }
+                return `<div style="font-weight: 500; color: var(--geo-text-muted);">🧭 ${params.name}</div>` + drillTip
+              }
+              if (params.seriesName) {
+                return `<strong>${params.seriesName}</strong>`
+              }
+              return ''
+            }
+          },
+          geo: {
+            map: 'china',
+            roam: true,
+            zoom: viewZoom,
+            center: viewCenter,
+            aspectScale: 0.85,
+            label: { show: false },
+            itemStyle: {
+              areaColor: theme.uncoveredAreaColor,
+              borderColor: theme.mapBorderColor,
+              borderWidth: 0.8
+            },
+            emphasis: {
+              itemStyle: {
+                areaColor: theme.mapEmphasisColor
+              },
+              label: {
+                show: false
+              }
+            },
+            regions: provinceRegions
+          },
+          series: series
+        }
+
+        myChart.setOption(option, true)
+      }
+
+      // 更新右侧面板中都城列表与省份标签的高亮状态
+      function updatePanelCapitalsAndTags() {
+        const dynasty = dynasties[currentIndex]
+        if (!dynasty) return
+
+        const titleEl = document.getElementById('panel-capitals-title')
+        const capitalsListEl = document.getElementById('panel-capitals-list')
+
+        if (!capitalsListEl) return
+
+        if (!selectedProvince) {
+          if (titleEl) titleEl.textContent = '历代都城与今地名对照（优先古名）'
+          capitalsListEl.innerHTML = (dynasty.capitals || []).map(c => {
+            const tagText = c.type === 'primary' ? '★ 都城' : (c.type === 'regional' ? '◆ 割据' : (c.type === 'temporary' ? '▲ 行在' : '☆ 陪都'))
+            return `
+              <div class="geo-capital-item">
+                <span class="geo-capital-tag" style="${c.type !== 'primary' ? 'background: #e65100;' : ''}">${tagText}</span>
+                <div>
+                  <div>
+                    <span class="geo-capital-text">${c.ancient}</span>
+                    <span class="geo-capital-modern">（今 ${c.modern}）</span>
+                  </div>
+                  <div class="geo-capital-desc">${c.desc}</div>
+                </div>
+              </div>
+            `
+          }).join('')
+        } else {
+          if (titleEl) titleEl.textContent = `【${selectedProvince}】${dynasty.name}都邑与重要名胜`
+
+          const provShort = selectedProvince.replace(/(省|市|自治区|特别行政区)/, '')
+          const localCapitals = (dynasty.capitals || []).filter(c => c.province === selectedProvince || c.modern.includes(provShort))
+          const localCities = (dynasty.majorCities || []).filter(c => c.modern.includes(provShort))
+
+          let html = ''
+
+          if (localCapitals.length > 0) {
+            html += localCapitals.map(c => {
+              const tagText = c.type === 'primary' ? '★ 核心主都' : (c.type === 'regional' ? '◆ 割据都会' : (c.type === 'temporary' ? '▲ 巡幸行在' : '☆ 陪都/都会'))
+              return `
+                <div class="geo-capital-item" style="border-left: 3px solid var(--geo-primary); padding-left: 8px; background: rgba(141,64,36,0.06); border-radius: 4px; margin-bottom: 6px;">
+                  <span class="geo-capital-tag" style="${c.type !== 'primary' ? 'background: #e65100;' : ''}">${tagText}</span>
+                  <div>
+                    <div>
+                      <span class="geo-capital-text">${c.ancient}</span>
+                      <span class="geo-capital-modern">（今 ${c.modern}）</span>
+                    </div>
+                    <div class="geo-capital-desc">${c.desc}</div>
+                  </div>
+                </div>
+              `
+            }).join('')
+          }
+
+          if (localCities.length > 0) {
+            html += localCities.map(c => {
+              const tagText = c.type === 'pass' ? '⚔️ 雄关要隘' : (c.type === 'military' ? '🛡️ 军事重镇' : '📍 重要州府/名胜')
+              const tagBg = c.type === 'pass' ? '#c62828' : (c.type === 'military' ? '#ad1457' : '#4e342e')
+              return `
+                <div class="geo-capital-item" style="border-left: 3px solid ${tagBg}; padding-left: 8px; background: rgba(0,0,0,0.02); border-radius: 4px; margin-bottom: 6px;">
+                  <span class="geo-capital-tag" style="background: ${tagBg};">${tagText}</span>
+                  <div>
+                    <div>
+                      <span class="geo-capital-text">${c.ancient}</span>
+                      <span class="geo-capital-modern">（今 ${c.modern}）</span>
+                    </div>
+                    <div class="geo-capital-desc">${c.desc}</div>
+                  </div>
+                </div>
+              `
+            }).join('')
+          }
+
+          if (localCapitals.length === 0 && localCities.length === 0) {
+            html = `<div style="font-size: 0.82rem; color: var(--geo-text-muted); padding: 8px 0;">该省在${dynasty.name}时期为非核心防区或羁縻区域，未设立主要国都或重要军政都会。</div>`
+          }
+
+          capitalsListEl.innerHTML = html
+        }
+
+        // 更新涵盖省区标签 active 状态
+        document.querySelectorAll('.geo-province-tag').forEach(tag => {
+          if (selectedProvince && tag.textContent.trim() === selectedProvince) {
+            tag.classList.add('active')
+          } else {
+            tag.classList.remove('active')
+          }
+        })
+      }
+
+      // 更新右侧档案与时间轴状态
+      function updatePanelAndTimeline() {
+        const dynasty = dynasties[currentIndex]
+        if (!dynasty) return
+
+        // 更新顶部/时间轴标签
+        const currentLabel = document.getElementById('timeline-current-label')
+        if (currentLabel) currentLabel.textContent = dynasty.name
+
+        // 更新时间轴选中状态
+        document.querySelectorAll('.geo-tick-item').forEach((el, idx) => {
+          if (idx === currentIndex) {
+            el.classList.add('active')
+            el.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+          } else {
+            el.classList.remove('active')
+          }
+        })
+
+        // 更新右侧面板
+        const badgeEl = document.getElementById('panel-dynasty-badge-text')
+        const nameEl = document.getElementById('panel-dynasty-name')
+        const areaEl = document.getElementById('panel-dynasty-area')
+        const periodEl = document.getElementById('panel-dynasty-period')
+
+        if (badgeEl) badgeEl.textContent = dynasty.peakDesc || '历史风云'
+        if (nameEl) nameEl.textContent = dynasty.name
+        if (areaEl) areaEl.textContent = dynasty.area || ''
+        if (periodEl) periodEl.textContent = dynasty.displayPeriod || dynasty.period
+
+        // 涵盖省区标签
+        const provincesListEl = document.getElementById('panel-provinces-tags')
+        if (provincesListEl && dynasty.provinces) {
+          provincesListEl.innerHTML = dynasty.provinces.map(p => `
+            <span class="geo-province-tag ${selectedProvince === p ? 'active' : ''}">${p}</span>
+          `).join('')
+        }
+
+        // 都城列表与高亮
+        updatePanelCapitalsAndTags()
+
+        // 四至范围
+        if (dynasty.territory) {
+          const eastEl = document.getElementById('extreme-east')
+          const westEl = document.getElementById('extreme-west')
+          const southEl = document.getElementById('extreme-south')
+          const northEl = document.getElementById('extreme-north')
+          const summaryEl = document.getElementById('extreme-summary')
+
+          if (eastEl) eastEl.textContent = dynasty.territory.east
+          if (westEl) westEl.textContent = dynasty.territory.west
+          if (southEl) southEl.textContent = dynasty.territory.south
+          if (northEl) northEl.textContent = dynasty.territory.north
+          if (summaryEl) summaryEl.textContent = dynasty.territory.summary
+        }
+
+        // 重大事件
+        const eventsListEl = document.getElementById('panel-events-list')
+        if (eventsListEl && dynasty.keyEvents) {
+          eventsListEl.innerHTML = dynasty.keyEvents.map(e => `<li>${e}</li>`).join('')
+        }
+
+        // 历史意义
+        const sigEl = document.getElementById('panel-significance')
+        if (sigEl) sigEl.textContent = dynasty.significance || ''
+
+        // 更新对比基准名称
+        const compBaseName = document.getElementById('compare-base-name')
+        if (compBaseName) compBaseName.textContent = dynasty.name
+
+        // 重新渲染地图
+        renderMap()
+      }
+
+      // 时间轴步进
+      function nextDynasty() {
+        currentIndex = (currentIndex + 1) % dynasties.length
+        updatePanelAndTimeline()
+      }
+
+      function prevDynasty() {
+        currentIndex = (currentIndex - 1 + dynasties.length) % dynasties.length
+        updatePanelAndTimeline()
+      }
+
+      // 切换播放/暂停
+      function togglePlay() {
+        isPlaying = !isPlaying
+        const playIcon = document.getElementById('play-icon')
+        const playText = document.getElementById('play-text')
+        const playBtn = document.getElementById('btn-play-pause')
+
+        if (isPlaying) {
+          if (playIcon) playIcon.textContent = '⏸'
+          if (playText) playText.textContent = '暂停演进'
+          if (playBtn) playBtn.classList.add('active')
+          playTimer = setInterval(() => {
+            nextDynasty()
+          }, 3500)
+        } else {
+          if (playIcon) playIcon.textContent = '▶'
+          if (playText) playText.textContent = '自动演进'
+          if (playBtn) playBtn.classList.remove('active')
+          if (playTimer) clearInterval(playTimer)
+        }
+      }
+
+      // 事件监听：地图省份点击下钻
+      myChart.on('click', (params) => {
+        if (params.componentType === 'geo' && params.name) {
+          if (selectedProvince === params.name) {
+            resetToNationwide()
+          } else {
+            drillDownToProvince(params.name)
+          }
+        }
+      })
+
+      // 面包屑返回全国按钮
+      document.getElementById('btn-breadcrumb-back')?.addEventListener('click', () => {
+        resetToNationwide()
+      })
+
+      // 右侧面板省份标签点击下钻
+      document.getElementById('panel-provinces-tags')?.addEventListener('click', (e) => {
+        const tag = (e.target as HTMLElement)?.closest('.geo-province-tag')
+        if (tag) {
+          const pName = tag.textContent?.trim()
+          if (pName) {
+            if (selectedProvince === pName) {
+              resetToNationwide()
+            } else {
+              drillDownToProvince(pName)
+            }
+          }
+        }
+      })
+
+      // 时间轴按钮与标签点击
+      document.getElementById('btn-prev-dynasty')?.addEventListener('click', () => {
+        if (isPlaying) togglePlay()
+        prevDynasty()
+      })
+
+      document.getElementById('btn-next-dynasty')?.addEventListener('click', () => {
+        if (isPlaying) togglePlay()
+        nextDynasty()
+      })
+
+      document.getElementById('btn-play-pause')?.addEventListener('click', togglePlay)
+
+      document.getElementById('dynasty-ticks-container')?.addEventListener('click', (e) => {
+        const target = (e.target as HTMLElement)?.closest('.geo-tick-item')
+        if (target) {
+          const index = parseInt(target.getAttribute('data-index') || '0', 10)
+          if (!isNaN(index)) {
+            if (isPlaying) togglePlay()
+            currentIndex = index
+            updatePanelAndTimeline()
+          }
+        }
+      })
+
+      // 直达1999澳门回归
+      document.getElementById('btn-focus-return')?.addEventListener('click', () => {
+        if (isPlaying) togglePlay()
+        currentIndex = dynasties.length - 1
+        updatePanelAndTimeline()
+      })
+
+      // 键盘交互：Esc 返回全国，左右方向键切换朝代，空格播放/暂停
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          resetToNationwide()
+        } else if (e.key === 'ArrowRight') {
+          if (isPlaying) togglePlay()
+          nextDynasty()
+        } else if (e.key === 'ArrowLeft') {
+          if (isPlaying) togglePlay()
+          prevDynasty()
+        } else if (e.key === ' ') {
+          e.preventDefault()
+          togglePlay()
+        }
+      })
+
+      // 图层勾选
+      document.getElementById('layer-capitals')?.addEventListener('change', (e) => {
+        layers.capitals = (e.target as HTMLInputElement).checked
+        renderMap()
+      })
+      document.getElementById('layer-cities')?.addEventListener('change', (e) => {
+        layers.cities = (e.target as HTMLInputElement).checked
+        renderMap()
+      })
+      document.getElementById('layer-greatwall')?.addEventListener('change', (e) => {
+        layers.greatWall = (e.target as HTMLInputElement).checked
+        renderMap()
+      })
+      document.getElementById('layer-canal')?.addEventListener('change', (e) => {
+        layers.canal = (e.target as HTMLInputElement).checked
+        renderMap()
+      })
+      document.getElementById('layer-silkroad')?.addEventListener('change', (e) => {
+        layers.silkRoad = (e.target as HTMLInputElement).checked
+        renderMap()
+      })
+      document.getElementById('layer-rivers')?.addEventListener('change', (e) => {
+        layers.rivers = (e.target as HTMLInputElement).checked
+        renderMap()
+      })
+
+      // 对比模式控制
+      const compareDock = document.getElementById('compare-dock')
+      const btnCompareToggle = document.getElementById('btn-compare-toggle')
+      const selectCompare = document.getElementById('compare-target-select') as HTMLSelectElement | null
+
+      btnCompareToggle?.addEventListener('click', () => {
+        compareMode = !compareMode
+        if (compareMode) {
+          btnCompareToggle.classList.add('active')
+          compareDock?.classList.add('show')
+        } else {
+          btnCompareToggle.classList.remove('active')
+          compareDock?.classList.remove('show')
+        }
+        renderMap()
+      })
+
+      document.getElementById('btn-close-compare')?.addEventListener('click', () => {
+        compareMode = false
+        btnCompareToggle?.classList.remove('active')
+        compareDock?.classList.remove('show')
+        renderMap()
+      })
+
+      selectCompare?.addEventListener('change', (e) => {
+        const id = (e.target as HTMLSelectElement).value
+        const found = dynasties.findIndex(d => d.id === id)
+        if (found >= 0) {
+          compareTargetIndex = found
+          renderMap()
+        }
+      })
+
+      // 主题切换
+      const btnTheme = document.getElementById('btn-theme-toggle')
+      btnTheme?.addEventListener('click', () => {
+        const app = document.getElementById('geo-app')
+        if (currentTheme === 'parchment') {
+          currentTheme = 'night'
+          app?.setAttribute('data-theme', 'night')
+          if (btnTheme) {
+            const icon = btnTheme.querySelector('.theme-icon')
+            const text = btnTheme.querySelector('.theme-text')
+            if (icon) icon.textContent = '☀️'
+            if (text) text.textContent = '古风浅色'
+          }
+        } else {
+          currentTheme = 'parchment'
+          app?.setAttribute('data-theme', 'parchment')
+          if (btnTheme) {
+            const icon = btnTheme.querySelector('.theme-icon')
+            const text = btnTheme.querySelector('.theme-text')
+            if (icon) icon.textContent = '🌙'
+            if (text) text.textContent = '深色模式'
+          }
+        }
+        renderMap()
+      })
+
+      // 右侧面板折叠/展开
+      const sidePanel = document.getElementById('geo-side-panel')
+      const btnPanelToggle = document.getElementById('btn-panel-toggle')
+      const arrow = document.getElementById('panel-toggle-arrow')
+      btnPanelToggle?.addEventListener('click', () => {
+        sidePanel?.classList.toggle('collapsed')
+        if (sidePanel?.classList.contains('collapsed')) {
+          if (arrow) arrow.textContent = '❮'
+        } else {
+          if (arrow) arrow.textContent = '❯'
+        }
+        setTimeout(() => myChart.resize(), 300)
+      })
+
+      // 响应式调整
+      window.addEventListener('resize', () => {
+        myChart.resize()
+      })
+
+      // 初始化显示
+      updatePanelAndTimeline()
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initGeographyApp)
+    } else {
+      initGeographyApp()
+    }
+  </script>
+</Base>

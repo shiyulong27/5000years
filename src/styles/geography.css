@@ -1,0 +1,603 @@
+/* 历代地理图志专用古典与现代融合样式 */
+
+:root {
+  --geo-bg: #f7f4ed;
+  --geo-card-bg: rgba(255, 255, 255, 0.88);
+  --geo-card-border: rgba(184, 155, 122, 0.35);
+  --geo-text-main: #2c2523;
+  --geo-text-muted: #6e645e;
+  --geo-primary: #8d4024;
+  --geo-gold: #b37418;
+  --geo-accent: #1565c0;
+  --geo-shadow: 0 8px 32px rgba(44, 37, 35, 0.08);
+  --geo-border-radius: 12px;
+}
+
+[data-theme='night'] {
+  --geo-bg: #14171d;
+  --geo-card-bg: rgba(24, 29, 38, 0.9);
+  --geo-card-border: rgba(212, 175, 55, 0.25);
+  --geo-text-main: #f0ede6;
+  --geo-text-muted: #9e9a93;
+  --geo-primary: #e65100;
+  --geo-gold: #d4af37;
+  --geo-accent: #42a5f5;
+  --geo-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.geography-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--geo-bg);
+  color: var(--geo-text-main);
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 顶部导航与控制栏 */
+.geo-header {
+  height: 60px;
+  background: var(--geo-card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--geo-card-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.geo-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.geo-brand-icon {
+  font-size: 24px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.geo-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, var(--geo-primary), var(--geo-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.geo-subtitle {
+  font-size: 0.78rem;
+  color: var(--geo-text-muted);
+  border-left: 1px solid var(--geo-card-border);
+  padding-left: 10px;
+  margin-left: 4px;
+}
+
+.geo-header-tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.geo-btn {
+  background: var(--geo-card-bg);
+  border: 1px solid var(--geo-card-border);
+  color: var(--geo-text-main);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.geo-btn:hover {
+  background: rgba(179, 116, 24, 0.1);
+  border-color: var(--geo-gold);
+  transform: translateY(-1px);
+}
+
+.geo-btn.active {
+  background: var(--geo-primary);
+  color: #fff;
+  border-color: var(--geo-primary);
+  box-shadow: 0 2px 8px rgba(141, 64, 36, 0.3);
+}
+
+/* 主内容工作区 */
+.geo-main-stage {
+  flex: 1;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 地图核心视口 */
+.geo-map-viewport {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  background: transparent;
+}
+
+#dynasty-map-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* 浮动图层与开关坞 */
+.geo-layers-dock {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--geo-card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--geo-card-border);
+  border-radius: var(--geo-border-radius);
+  padding: 12px 16px;
+  box-shadow: var(--geo-shadow);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 240px;
+}
+
+.geo-dock-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--geo-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.geo-layer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.geo-layer-item input[type="checkbox"] {
+  accent-color: var(--geo-primary);
+  cursor: pointer;
+}
+
+.geo-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* 对比模式坞 */
+.geo-compare-dock {
+  position: absolute;
+  top: 16px;
+  left: 270px;
+  background: var(--geo-card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--geo-card-border);
+  border-radius: var(--geo-border-radius);
+  padding: 12px 16px;
+  box-shadow: var(--geo-shadow);
+  z-index: 20;
+  display: none;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
+.geo-compare-dock.show {
+  display: flex;
+}
+
+/* 省份下钻浮动面包屑导航 */
+.geo-breadcrumb-dock {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--geo-card-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--geo-card-border);
+  border-radius: var(--geo-border-radius);
+  padding: 8px 18px;
+  box-shadow: var(--geo-shadow);
+  z-index: 30;
+  display: none;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.88rem;
+  animation: fadeIn 0.25s ease;
+}
+
+.geo-breadcrumb-dock.show {
+  display: flex;
+}
+
+.geo-breadcrumb-province {
+  font-weight: 700;
+  color: var(--geo-primary);
+  font-size: 0.95rem;
+}
+
+.geo-breadcrumb-back-btn {
+  background: rgba(141, 64, 36, 0.1);
+  border: 1px solid var(--geo-primary);
+  color: var(--geo-primary);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s ease;
+}
+
+.geo-breadcrumb-back-btn:hover {
+  background: var(--geo-primary);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+[data-theme='night'] .geo-breadcrumb-province {
+  color: var(--geo-gold);
+}
+
+[data-theme='night'] .geo-breadcrumb-back-btn {
+  background: rgba(230, 81, 0, 0.2);
+  border-color: #ff9800;
+  color: #ffb74d;
+}
+
+[data-theme='night'] .geo-breadcrumb-back-btn:hover {
+  background: #e65100;
+  color: #fff;
+}
+
+.geo-select {
+  background: var(--geo-card-bg);
+  border: 1px solid var(--geo-card-border);
+  color: var(--geo-text-main);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  outline: none;
+  cursor: pointer;
+}
+
+/* 右侧朝代档案面板 */
+.geo-side-panel {
+  width: 380px;
+  height: 100%;
+  background: var(--geo-card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-left: 1px solid var(--geo-card-border);
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  z-index: 30;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.geo-side-panel.collapsed {
+  transform: translateX(100%);
+}
+
+.geo-panel-toggle {
+  position: absolute;
+  left: -36px;
+  top: 16px;
+  width: 36px;
+  height: 36px;
+  background: var(--geo-card-bg);
+  border: 1px solid var(--geo-card-border);
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: -2px 2px 8px rgba(0,0,0,0.06);
+  color: var(--geo-text-main);
+  z-index: 31;
+}
+
+.geo-panel-header {
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid var(--geo-card-border);
+  position: relative;
+}
+
+.geo-dynasty-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: rgba(179, 116, 24, 0.12);
+  color: var(--geo-gold);
+  border: 1px solid rgba(179, 116, 24, 0.3);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.geo-dynasty-name {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.geo-dynasty-period {
+  font-size: 0.9rem;
+  color: var(--geo-text-muted);
+  margin-top: 4px;
+}
+
+.geo-panel-body {
+  flex: 1;
+  padding: 20px 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 核心信息卡片 */
+.geo-info-card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--geo-card-border);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+[data-theme='night'] .geo-info-card {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.geo-card-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--geo-gold);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.geo-capitals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.geo-capital-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.geo-capital-tag {
+  color: #fff;
+  background: var(--geo-primary);
+  font-size: 0.72rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.geo-capital-text {
+  font-weight: 700;
+}
+
+.geo-capital-modern {
+  font-weight: 400;
+  color: var(--geo-text-muted);
+  margin-left: 4px;
+}
+
+.geo-capital-desc {
+  font-size: 0.78rem;
+  color: var(--geo-text-muted);
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+/* 四至网格 */
+.geo-extremes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  font-size: 0.8rem;
+}
+
+.geo-extreme-item {
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px dashed var(--geo-card-border);
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+[data-theme='night'] .geo-extreme-item {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.geo-extreme-tag {
+  font-weight: 700;
+  color: var(--geo-primary);
+  margin-right: 4px;
+}
+
+/* 涵盖省区标签 */
+.geo-provinces-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.geo-province-tag {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(141, 64, 36, 0.08);
+  color: var(--geo-primary);
+  border: 1px solid rgba(141, 64, 36, 0.2);
+  line-height: 1.4;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.geo-province-tag:hover {
+  background: var(--geo-primary);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.geo-province-tag.active {
+  background: var(--geo-primary);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 0 8px rgba(141, 64, 36, 0.4);
+}
+
+[data-theme='night'] .geo-province-tag {
+  background: rgba(230, 81, 0, 0.15);
+  color: #ffb74d;
+  border-color: rgba(255, 152, 0, 0.3);
+}
+
+[data-theme='night'] .geo-province-tag:hover,
+[data-theme='night'] .geo-province-tag.active {
+  background: #e65100;
+  color: #fff;
+  border-color: #ff9800;
+  box-shadow: 0 0 8px rgba(230, 81, 0, 0.6);
+}
+
+/* 底部时间轴长卷控制器 */
+.geo-timeline-footer {
+  height: 110px;
+  background: var(--geo-card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid var(--geo-card-border);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 24px 14px;
+  z-index: 90;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.geo-timeline-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.geo-playback-tools {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.geo-slider-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.geo-dynasty-ticks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  padding: 4px 0;
+  gap: 6px;
+}
+
+.geo-tick-item {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid transparent;
+  color: var(--geo-text-muted);
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.geo-tick-item:hover {
+  background: rgba(179, 116, 24, 0.1);
+  color: var(--geo-gold);
+}
+
+.geo-tick-item.active {
+  background: var(--geo-primary);
+  color: #fff;
+  border-color: var(--geo-primary);
+  box-shadow: 0 2px 6px rgba(141, 64, 36, 0.25);
+  transform: scale(1.05);
+}
+
+.geo-tick-item.special-return {
+  border: 1px solid #c62828;
+  color: #c62828;
+}
+
+.geo-tick-item.special-return.active {
+  background: #c62828;
+  color: #fff;
+}
+
+/* 响应式适配 */
+@media (max-width: 900px) {
+  .geo-side-panel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+  }
+  .geo-compare-dock {
+    top: 80px;
+    left: 16px;
+  }
+}
