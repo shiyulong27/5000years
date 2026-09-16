@@ -857,4 +857,31 @@ function validateFigureDetails(data, { pushLoc, figIds, sourceById }) {
       emit(`存在人物详卷 data/figures/detail/${f.id}.yaml，但 L1 未声明 has_detail: true`)
     }
   }
+
+  // ── 山海经数据校验 ──────────────────────────────────────────
+  if (data.shanhaijing) {
+    const { beasts = [], myths = [], chapters = [] } = data.shanhaijing
+    for (const b of beasts) {
+      for (const field of ['id', 'name', 'pinyin', 'category', 'book', 'summary', 'original_text', 'translation']) {
+        if (!b[field]) {
+          push(b, `山海经神兽「${b.name ?? b.id ?? '(无名)'}」缺少必填字段 ${field}`)
+        }
+      }
+    }
+    for (const m of myths) {
+      for (const field of ['id', 'title', 'book', 'summary', 'original_text', 'translation']) {
+        if (!m[field]) {
+          push(m, `山海经神话「${m.title ?? m.id ?? '(无名)'}」缺少必填字段 ${field}`)
+        }
+      }
+    }
+    for (const c of chapters) {
+      for (const field of ['id', 'number', 'name', 'section', 'summary']) {
+        if (!c[field]) {
+          push(c, `山海经篇卷「${c.name ?? c.id ?? '(无名)'}」缺少必填字段 ${field}`)
+        }
+      }
+    }
+  }
 }
+

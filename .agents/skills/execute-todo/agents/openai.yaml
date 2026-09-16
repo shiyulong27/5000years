@@ -1,0 +1,4 @@
+interface:
+  display_name: "执行任务 Todo"
+  short_description: "按 Todo 恢复执行，记录阻塞、状态和验证进度证据"
+  default_prompt: "使用 $execute-todo 从指定 Todo 恢复上下文，执行下一项任务；遇到阻塞先记录并跳过，再继续独立可执行项。"

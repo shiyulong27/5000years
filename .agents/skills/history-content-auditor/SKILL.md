@@ -1,13 +1,13 @@
 ---
 name: history-content-auditor
-description: Audit and revise Chinese dynastic history coverage in the 十丘 project against a fixed edition of 上下五千年, including rulers, figures, events, source evidence, uncertainty, period boundaries, and regression validation. Use when auditing a dynasty or historical period for omissions, mapping book chapters to project data, correcting traditional narratives, or designing a scoped data revision.
+description: "Audit and revise Chinese dynastic history coverage in the 十丘 project through two layers: reader-expectation mapping against a fixed edition of 上下五千年 and an independent dynasty-wide completeness review. Covers rulers, figures, events, institutions, society, culture, source evidence, uncertainty, period boundaries, and regression validation. Use when auditing a dynasty or historical period for omissions, mapping book chapters to project data, finding important topics beyond the book, correcting traditional narratives, or designing a scoped data revision."
 ---
 
 # 朝代内容审计
 
 ## 目标
 
-按固定书目版本检查项目对中国历史时期的读者预期覆盖，并将书目索引与史实核验分开。审计可以发现人物、事件和王表缺口；不得把故事书篇目当作史实权威，也不得为了逐篇对应而编造年代、人物生卒或传奇细节。
+先按固定书目版本检查项目对中国历史时期的读者预期覆盖，再独立检查该时期的重要内容是否完整。书目层是最低覆盖入口，不是内容上限；朝代层不得从书目篇目反推完整性。两层都必须与史实核验分开，不得把故事书篇目当作史实权威，也不得为了逐篇对应或填满分类而编造年代、人物生卒或传奇细节。
 
 开始前读取 [书目基线](references/book-baseline.md)、项目根目录 `AGENTS.md`（若存在）、相关 Todo、审计报告、数据文件和测试。
 
@@ -15,6 +15,7 @@ description: Audit and revise Chinese dynastic history coverage in the 十丘 pr
 
 - 书目基线只用于固定版本、读取篇名和建立覆盖索引；报告必须写明版本标识、链接、访问日期和目录是否连续。
 - 事实核验优先使用传世原始文献、出土材料、官方档案/博物馆资料和可靠学术研究。二手百科或聚合书目只能补充，不能在存在冲突时替代一手证据。
+- 书目未收录不等于主题不重要；书目已收录也不自动提高候选优先级。书外候选必须由时期结构、历史影响和独立证据支持。
 - 把每条结论标成：已核实事实、证据推断、待验证假设或建议。古籍有记载不等于同时代实证，更不等于故事细节全部可靠。
 - 传统评价、成语和道德化叙事不直接写进无争议标题。可保留为争议说明，或改用事实性标题。
 - 无法可靠确定生卒年、事件年份、来源正文或版权许可时保留较低精度、写入争议/待核验，不用占位数字冒充事实。
@@ -26,9 +27,9 @@ description: Audit and revise Chinese dynastic history coverage in the 十丘 pr
 1. 明确目标朝代/时期、项目分期 ID、时间边界、跨期规则和用户授权范围。
 2. 检查工作区，保护不属于本任务的未提交改动；目标 YAML 先记录编码、BOM、换行和当前差异。
 3. 用 `src/lib/load.js` 的 `loadAll` 读取数据，统计王表、人物、事件和诸侯/政体。事件基线必须组合日期范围、文件归属和 `related_dynasties`，不得只按关系字段过滤；不要用文件文本搜索代替加载器结果。
-4. 依据固定书目目录提取目标篇目，保存篇号、原题和访问证据。目录不可复核、版本不唯一或篇目不连续时，停止并记录阻塞。
+4. 依据固定书目目录提取目标篇目，保存篇号、原题和访问证据。目录不可复核、版本不唯一或篇目不连续时，停止书目层并记录阻塞；经用户授权可继续独立朝代层，但不得声称双层审计完成。
 
-### 2. 逐篇映射
+### 2. 书目覆盖映射
 
 对每篇记录：篇号、篇名、时期、核心人物、核心事件、当前项目 ID、来源、证据等级和覆盖状态。
 
@@ -38,17 +39,33 @@ description: Audit and revise Chinese dynastic history coverage in the 十丘 pr
 
 覆盖状态只回答“是否有直接承载”，不回答“承载是否准确”。对已覆盖项仍须检查标题、摘要、来源、置信度和争议边界，必要时另列叙事纠偏项。
 
-书籍之外的项目数据保留，不因目录没有提到就删除。王表完整性另做世系/出土材料核验，不从故事篇目推断“历任君主”完整。
+书籍之外的项目数据保留，不因目录没有提到就删除。书目层完成只表示目标篇目已有承载，不表示目标朝代的重要内容已经完整。
 
-### 3. 形成候选并核验
+### 3. 独立朝代完整性审计
 
-1. 为缺失和部分覆盖项建立候选 ID、目标字段、来源和优先级。
-2. 逐条读取可访问的来源正文或原始文献文本；不能只凭搜索摘要、标题、记忆或其他代理的结论。
-3. 对跨年经历优先扩充人物简介或使用明确的时间范围；只有来源支持时才新增单年事件。
-4. 对传奇叙事拆分基本过程和后世细节，分别写 `summary`、`note`、`confidence`、`dispute`。
-5. 来源冲突、无法访问或只有后世传说时，降低置信度并记录未决问题，不强行修订。
+完成书目映射后，不依赖篇名另建一份时期基线。按目标时期实际适用性检查以下维度，不为凑数强制每类新增内容：
 
-### 4. 最小修改
+- 时期边界、政权沿革、统一与分裂、继承和王表完整性；王表须另用世系、纪年和出土材料核验。
+- 改变政治结构或历史走向的关键事件、制度、法律、行政和财政变化。
+- 重要战争、外交、边疆互动、人口迁徙及跨政权关系。
+- 对理解该时期必要的经济、社会、人口、环境与灾害变化。
+- 有时期代表性的思想、文化、宗教、教育、科技与知识传播。
+- 具有结构性或代表性影响的人物、群体，以及不能被单一事件替代的跨年经历。
+
+对每个适用维度记录“已覆盖、部分覆盖、缺失、不适用、待核验”，列出当前项目承载、独立基线来源和判断理由。不得只凭通识记忆、单一故事集或现有项目内容反向定义基线；优先使用权威断代史、原始文献、考古材料和可靠专题研究交叉建立候选。
+
+书目覆盖表与朝代完整性表必须分开统计。只能声称“本轮定义范围内的双层审计已完成”，不得声称某朝代绝对完整或没有任何遗漏。
+
+### 4. 形成候选并核验
+
+1. 合并书目缺口、朝代完整性缺口和已覆盖内容中的叙事纠偏项；为每项记录候选 ID、来源层、目标字段和产生来源，不得只处理书目缺口。
+2. 按历史重要性排序：影响时期边界、政权结构、制度、疆域、社会秩序或长期走向的缺口为高优先级；补足关键解释链或代表性内容的为中优先级；重复承载、轶事性细节或证据薄弱者为低优先级或不收录。篇目是否存在不能单独决定优先级。
+3. 逐条读取可访问的来源正文或原始文献文本；不能只凭搜索摘要、标题、记忆或其他代理的结论。
+4. 对跨年经历优先扩充人物简介或使用明确的时间范围；只有来源支持时才新增单年事件。
+5. 对传奇叙事拆分基本过程和后世细节，分别写 `summary`、`note`、`confidence`、`dispute`。
+6. 来源冲突、无法访问或只有后世传说时，降低置信度并记录未决问题，不强行修订。
+
+### 5. 最小修改
 
 - 遵循目标 YAML 的既有字段、顺序和 ID 风格，只做定点补丁；不得整文件重写或格式化 `data/figures.yaml`。
 - 事件至少核对 `id`、`date`、`related_dynasties`、`title`、`summary`、`tags`、`confidence`、`dispute`、`sources`；人物至少核对 `id`、`name`、`related_dynasties`、`birth`、`death`、`note`、`confidence`、`dispute`。
@@ -56,7 +73,7 @@ description: Audit and revise Chinese dynastic history coverage in the 十丘 pr
 - 项目分期边界优先服从代码和既有约定；跨边界事件可以多关联时期，但必须说明理由。
 - 不下载或保存受版权保护的书籍正文；只保存书目元数据、篇名和合法的来源链接。
 
-### 5. 回归和复审
+### 6. 回归和复审
 
 按风险选择最小验证，至少运行：
 
@@ -67,12 +84,13 @@ npx vitest run <相关测试文件>
 
 若用户要求完整回归且存在基线，再运行 `npm test`。禁止执行 `npm run build`。测试失败先定位是数据、测试断言、加载器还是既有工作区改动，不把失败直接等同于产品缺陷。
 
-复审报告保留修订前基线，追加修订后统计、每项变化、来源状态、未解决问题和实际命令结果。即使没有数据修改，也要记录完成的检索和“本年/本期无数据修改”。
+复审报告保留修订前基线，分别追加书目覆盖和朝代完整性的修订后统计，再记录每项变化、来源状态、未解决问题和实际命令结果。即使没有数据修改，也要记录完成的检索和“本年/本期无数据修改”。
 
 ## 交付检查
 
 - 书目版本、链接、访问日期和目录连续性可复核。
-- 覆盖映射区分事实、推断、假设和建议，且没有把书籍当作史实唯一依据。
+- 书目覆盖表与独立朝代完整性表均已完成并分开统计；书外高优先级缺口没有被篇目范围遮蔽。
+- 两层映射区分事实、推断、假设和建议，且没有把书籍当作史实唯一依据或完整性上限。
 - 每项修改有来源和争议边界；没有伪造精确日期、生卒年、引文或图片许可。
 - 目标文件编码和无关工作区改动保持不变。
 - 数据校验、相关测试和报告状态一致；未执行的验证如实说明。

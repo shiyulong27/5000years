@@ -1,0 +1,4 @@
+interface:
+  display_name: "创建可恢复 Todo"
+  short_description: "创建跨对话 Todo，记录方案、步骤、边界和状态信息"
+  default_prompt: "使用 $create-todo 在项目根目录 todos/ 创建或补全 YYYY-MM-DD-中文任务名称.md，记录背景、方案、步骤、边界、验证和恢复入口。"
