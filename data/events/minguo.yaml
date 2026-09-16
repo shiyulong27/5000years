@@ -1,45 +1,463 @@
-- id: minguo-establish-1912
-  date: "1912"
-  title: 清帝退位，民国建立
-  category: 政治
-  tags: [王朝更替, 历史转折]
-  importance: 5
-  summary: 孙中山于南京宣誓就任临时大总统，清帝颁布退位诏书，中华民国正式成立。
-  confidence: 确定
-  sources: [清史稿·宣统帝纪]
-
-- id: new-culture-movement-1915
-  date: "1915"
-  title: 新文化运动始
-  category: 文化
-  importance: 4
-  summary: 陈独秀在上海创办《青年杂志》（后改名《新青年》），提倡民主与科学。
-  confidence: 确定
-
-- id: may-fourth-movement-1919
-  date: "1919"
-  title: 五四运动
-  category: 政治
-  tags: [思想, 历史转折]
-  importance: 5
-  summary: 北京学生因巴黎和会外交失败爆发爱国游行，迅速演变为全国性反帝反封建爱国运动。
-  confidence: 确定
-
-- id: cn-shanghai-communist-group-192008
-  date: '1920-08'
-  title: 上海共产党早期组织成立
+- id: cn-republic-of-china-established-191201
+  date: '1912-01-01'
+  title: 孙中山在南京宣誓就任临时大总统，民国建立
   category: 政治
   importance: 5
-  summary: 陈独秀等人在上海建立共产党早期组织，推动马克思主义传播、工人运动和各地建党活动，为中国共产党成立奠定组织基础。
+  summary: 孙中山在南京原两江总督署宣誓就任中华民国临时大总统，宣告中华民国临时政府正式成立。大会定都南京，改用公历（以1912年为中华民国元年），确立红黄蓝白黑「五色旗」为国旗，开创了中国历史上也是亚洲历史上第一个民主共和国，翻开了中华民族现代文明史的崭新篇章。
   confidence: 确定
   tags:
-    - 上海共产党早期组织
-    - 陈独秀
-    - 建党准备
+    - 中华民国建立
+    - 孙中山
+    - 临时大总统
+    - 五色旗
+    - 开创共和
+    - 亚洲首个共和国
+    - 历史转折
   sources:
+    - 中华民国临时政府公报
+    - 孙中山全集
     - 中文维基百科
-    - 党史资料
-
+  image:
+    url: /images/events/1912/cn-republic-of-china-established-191201.jpg
+    caption: 1912年中华民国临时大总统孙中山先生就职历史肖像照片
+    source: https://commons.wikimedia.org/wiki/File:Sun_Yat_Sen_portrait_2.jpg
+    author: Period photographer / Historical Archive
+    license: Public domain
+- id: cn-qing-abdication-191202
+  date: '1912-02-12'
+  title: 清帝颁布退位诏书，清朝灭亡与君主专制终结
+  category: 政治
+  importance: 5
+  summary: 隆裕皇太后携六岁宣统帝爱新觉罗·溥仪在紫禁城养心殿正式颁布《清帝逊位诏书》，宣布「将统治权公诸全国，定为共和立宪国体」，统治中国长达268年的大清帝国正式寿终正寝，在中国延续了两千一百余年的封建君主专制制度自此彻底终结，民主共和观念从此深入人心。
+  confidence: 确定
+  tags:
+    - 清帝退位
+    - 宣统退位诏书
+    - 清朝灭亡
+    - 帝制终结
+    - 两千年君主制落幕
+    - 历史转折
+  sources:
+    - 清史稿·宣统皇帝本纪
+    - 清帝逊位诏书原本
+    - 中文维基百科
+  image:
+    url: /images/events/1912/cn-qing-abdication-191202.jpg
+    caption: 1912年2月12日大清帝国隆裕太后颁布的《清帝逊位诏书》历史原件
+    source: https://commons.wikimedia.org/wiki/File:Qingtuiweizhaoshu.JPG
+    author: Qing Imperial Court / Museum of the War of Chinese People's Resistance Against Japanese Aggression
+    license: Public domain
+  related_dynasties:
+    - qing
+    - minguo
+- id: cn-yuan-shikai-inauguration-191203
+  date: '1912-03-10'
+  title: 袁世凯在北京宣誓就任临时大总统
+  category: 政治
+  importance: 4
+  summary: 在清帝退位与南北议和妥协下，袁世凯借口北京兵变拒绝南下，在北京石大人胡同前清外交部大楼宣誓就任中华民国第二任临时大总统，辛亥革命胜利果实落入北洋军阀首领手中，民国政治重心由南京北迁。
+  confidence: 确定
+  tags:
+    - 袁世凯就任大总统
+    - 北洋政府开端
+    - 民国政治
+  sources:
+    - 北洋军阀史料
+    - 袁世凯年谱
+    - 中文维基百科
+- id: cn-provisional-constitution-191203
+  date: '1912-03-11'
+  title: 孙中山颁布《中华民国临时约法》
+  category: 政治
+  importance: 5
+  summary: 中华民国临时参议院通过、临时大总统孙中山正式公布《中华民国临时约法》。约法明确规定「中华民国之主权属于国民全体」，确立三权分立与责任内阁制，规定人民享有人身、言论、集会、结社等自由与平等权利，是中国历史上第一部具有资产阶级共和国宪法性质的根本大法，具有不可磨灭的民主法治启蒙意义。
+  confidence: 确定
+  tags:
+    - 临时约法
+    - 孙中山
+    - 主权在民
+    - 责任内阁制
+    - 第一部共和宪法
+    - 历史转折
+  sources:
+    - 中华民国临时约法
+    - 孙中山全集
+    - 中文维基百科
+  image:
+    url: /images/events/1912/cn-provisional-constitution-191203.jpg
+    caption: 南京中华民国临时参议院旧址（颁布《临时约法》历史发生地）照片
+    source: https://commons.wikimedia.org/wiki/File:Senate_Nanjing_historical_sites.JPG
+    author: Wikimedia Commons contributor / Nanjing Cultural Heritage
+    license: Public domain
+- id: cn-song-jiaoren-assassinated-191303
+  date: '1913-03-20'
+  title: 宋教仁在上海火车站遇刺身亡
+  category: 政治
+  importance: 5
+  summary: 国民党在民国首届国会选举中取得压倒性大胜，国民党代理理事长宋教仁准备自上海北上组阁推行责任内阁制。在上海沪宁火车站检票处，宋教仁遭暴徒武士英开枪暗杀，两日后伤重不治殉职，年仅31岁。宋案证据直指国务总理赵秉钧与袁世凯当局，彻底撕碎了北洋政权的宪政遮羞布，直接引发反袁的「二次革命」。
+  confidence: 确定
+  tags:
+    - 宋教仁遇刺
+    - 宋案
+    - 责任内阁制受挫
+    - 民国宪政危机
+    - 二次革命导火索
+    - 历史转折
+  sources:
+    - 宋教仁集
+    - 宋教仁遇刺档案
+    - 民国史料
+    - 中文维基百科
+  image:
+    url: /images/events/1913/cn-song-jiaoren-assassinated-191303.jpg
+    caption: 民国宪政先驱、国民党领袖宋教仁烈士历史肖像照片
+    source: https://commons.wikimedia.org/wiki/File:Sung_Chiao-jen.jpg
+    author: Period photographer / Historical Archive
+    license: Public domain
+- id: cn-second-revolution-191307
+  date: '1913-07-12'
+  title: 孙中山黄兴发动「二次革命」武装讨袁
+  category: 战争
+  importance: 5
+  summary: 袁世凯非法签订善后大借款并下令免除李烈钧、胡汉民、柏文蔚三都督职务。李烈钧在江西湖口誓师讨袁，孙中山、黄兴在南京、上海、广东、安徽、福建、湖南等省相继宣告独立发动「二次革命」。但因力量分散且北洋陆军主力重兵压境，讨袁军在湖口和南京激战后相继失败，孙中山、黄兴流亡日本，袁世凯独裁统治全面确立。
+  confidence: 确定
+  tags:
+    - 二次革命
+    - 讨袁战争
+    - 孙中山
+    - 黄兴
+    - 李烈钧
+    - 湖口誓师
+    - 历史转折
+  sources:
+    - 孙中山全集
+    - 二次革命史料
+    - 中文维基百科
+  image:
+    url: /images/events/1913/cn-second-revolution-191307.jpg
+    caption: 在江西湖口首举义旗发动二次革命讨袁的著名将领李烈钧历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Li_lie_jun.jpg
+    author: Period photographer / Historical Archive
+    license: Public domain
+- id: cn-siege-of-tsingtao-191408
+  date: '1914-08-23'
+  title: 日德在青岛开战，日本强占胶州湾与胶济铁路
+  category: 战争
+  importance: 5
+  summary: 一战爆发后，日本借口对德宣战出兵五万大军联合英军围攻德国在远东的核心据点青岛胶州湾要塞。中德青岛战役历时两月日军攻陷青岛，随后日本不顾北洋政府划定战区限制，借机强占胶济铁路全线与山东内地，将德国在山东的殖民特权全部据为己有，直接引爆了近代中日严重外交危机与后来的五四运动。
+  confidence: 确定
+  tags:
+    - 青岛战役
+    - 日军占领青岛
+    - 胶济铁路
+    - 山东问题起因
+    - 一战远东战火
+    - 历史转折
+  sources:
+    - 青岛战役史料
+    - 北洋外交档案
+    - 中文维基百科
+  image:
+    url: /images/events/1914/cn-siege-of-tsingtao-191408.jpg
+    caption: 1914年日德青岛战役期间日军舰队封锁胶州湾要塞历史照片
+    source: https://commons.wikimedia.org/wiki/File:Si%C3%A8ge_de_Tsingtao_-_blocus_instaur%C3%A9_par_les_japonais_d%C3%A8s_27_ao%C3%BBt_1914.jpg
+    author: Period war press / Bibliothèque nationale de France
+    license: Public domain
+- id: cn-twenty-one-demands-191505
+  date: '1915-05-09'
+  title: 袁世凯屈服日本「二十一条」，全国定为五九国耻
+  category: 政治
+  importance: 5
+  summary: 日本驻华公使日置益趁一战欧美无暇东顾向袁世凯直接递交企图全面灭亡中国的密约「二十一条」，内容包括吞并山东、控制南满及东蒙、合办汉冶萍公司、长江沿岸要港不租借他国及聘用日本政治军事财政顾问等。袁世凯政府在最后通牒逼迫下接受前四号条款，激起全国四万万民众罢市、抵制日货的爱国怒潮，5月9日被定为「五九国耻日」。
+  confidence: 确定
+  tags:
+    - 二十一条
+    - 五九国耻
+    - 袁世凯
+    - 抵制日货
+    - 反帝救国风暴
+    - 历史转折
+  sources:
+    - 中日交涉二十一条档案
+    - 北洋外交公报
+    - 中文维基百科
+  image:
+    url: /images/events/1915/cn-twenty-one-demands-191505.jpg
+    caption: 1915年中日双方代表在二十一条不平等条约换文后合影历史档案
+    source: https://commons.wikimedia.org/wiki/File:Group_photo_of_representatives_from_China_and_Japan_after_signing_Twenty-One_Demands.jpg
+    author: Period diplomatic photographer / Historical Archive
+    license: Public domain
+- id: cn-new-youth-magazine-191509
+  date: '1915-09-15'
+  title: 陈独秀创办《青年杂志》，新文化运动全面爆发
+  category: 文化
+  importance: 5
+  summary: 陈独秀在上海创办《青年杂志》（次年改名《新青年》），发表著名发刊词《敬告青年》，大声疾呼「国人而欲脱蒙昧时代，羞为浅化之民也，则急起直追，当以科学与人权（民主）并重」。新文化运动高举「德先生」（民主）与「赛先生」（科学）两面大旗，向腐朽封建伦理礼教发起猛烈冲击，开启了近代中国最深刻的思想解放与文化启蒙狂飙运动。
+  confidence: 确定
+  tags:
+    - 新青年创刊
+    - 陈独秀
+    - 新文化运动
+    - 德先生与赛先生
+    - 思想解放狂飙
+    - 历史转折
+  sources:
+    - 青年杂志第一卷第一号
+    - 陈独秀著作选
+    - 新文化运动史
+    - 中文维基百科
+  image:
+    url: /images/events/1915/cn-new-youth-magazine-191509.jpg
+    caption: 新文化运动主要发起人、《新青年》杂志主编陈独秀历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Chen_Duxiu4.jpg
+    author: Period photographer / Historical Archive
+    license: Public domain
+- id: cn-national-protection-war-191512
+  date: '1915-12-25'
+  title: 蔡锷唐继尧在云南誓师宣布独立，护国战争爆发
+  category: 战争
+  importance: 5
+  summary: 袁世凯公然称帝改国号为「中华帝国」（洪宪元年）。蔡锷潜离北京返回昆明，与云南都督唐继尧、李烈钧等联衔通电全国宣告云南独立，成立护国军誓师讨伐帝制。蔡锷亲率护国第一军出师四川，在泸州、纳溪同北洋精锐血战数月屡创敌军；贵州、广西、广东等省相继响应独立，掀起波澜壮阔的全民护国讨袁反帝制运动。
+  confidence: 确定
+  tags:
+    - 护国战争
+    - 蔡锷
+    - 唐继尧
+    - 再造共和
+    - 讨伐帝制
+    - 护国军出川
+    - 历史转折
+  sources:
+    - 护国运动史料
+    - 蔡松坡集
+    - 中文维基百科
+  image:
+    url: /images/events/1915/cn-national-protection-war-191512.jpg
+    caption: 护国战争时期讨袁将士集结誓师与辎重后勤历史照片
+    source: https://commons.wikimedia.org/wiki/File:Desembarque_de_Mercadorias_e_Animais_no_Cais_de_Porto_Velho_-_958,_Acervo_do_Museu_Paulista_da_USP.jpg
+    author: Period photographer / Historical Archive
+    license: Public domain
+- id: cn-hongxian-empire-collapsed-191603
+  date: '1916-03-22'
+  title: 袁世凯被迫撤销帝制，洪宪帝制宣告覆灭
+  category: 政治
+  importance: 5
+  summary: 在护国军沉重打击、全国人民声讨以及北洋亲信段祺瑞、冯国璋等暗中倒戈下，袁世凯被迫颁布申令撤销帝制，退回大总统原职，仅做了83天的皇帝梦彻底破灭。同年6月6日袁世凯在内外交困与羞愤绝望中因尿毒症病逝，黎元洪继任总统，段祺瑞出任总理，北洋军阀迅速陷入直系、皖系、奉系三大派系军阀混战割据乱局。
+  confidence: 确定
+  tags:
+    - 撤销帝制
+    - 袁世凯病逝
+    - 洪宪帝制覆灭
+    - 军阀割据混战开启
+    - 历史转折
+  sources:
+    - 政府公报1916
+    - 北洋军阀统治时期史话
+    - 中文维基百科
+  image:
+    url: /images/events/1916/cn-hongxian-empire-collapsed-191603.jpg
+    caption: 北洋军阀首领、逆历史潮流称帝覆灭的袁世凯历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Emperor_Meiji_detail,_from-_16126.d.2(84)-Japanese,_Chinese_and_Korean_dignitaries_(cropped).jpg
+    author: Period portrait / British Library Collection
+    license: Public domain
+- id: cn-hu-shi-vernacular-191701
+  date: '1917-01-01'
+  title: 胡适发表《文学改良刍议》，白话文文学革命打响
+  category: 文化
+  importance: 5
+  summary: 胡适在《新青年》发表《文学改良刍议》，首倡「不用典、不用套语、不讲对仗、不避俗字俗语」等文学改良八事，主张「白话文学之为中国文学之正宗」。陈独秀随即发表《文学革命论》高举「文学革命军三大主义」，钱玄同、刘半农、鲁迅等起而响应，彻底打破了文言文垄断两千余年的表达枷锁，现代汉语白话文与现代文学由此蓬勃诞生。
+  confidence: 确定
+  tags:
+    - 文学改良刍议
+    - 胡适
+    - 陈独秀
+    - 白话文运动
+    - 文学革命
+    - 现代汉语奠基
+    - 历史转折
+  sources:
+    - 新青年第二卷第五号
+    - 胡适文存
+    - 中文维基百科
+  image:
+    url: /images/events/1917/cn-hu-shi-vernacular-191701.jpg
+    caption: 白话文运动倡导者、著名学者胡适青年历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Hu_Shih.jpg
+    author: Period photographer / Historical Archive
+    license: Public domain
+- id: cn-cai-yuanpei-beida-191701
+  date: '1917-01-04'
+  title: 蔡元培出任北京大学校长，「思想自由，兼容并包」
+  category: 文化
+  importance: 5
+  summary: 著名民主革命家、教育家蔡元培正式就任北京大学校长。蔡元培提出「思想自由，兼容并包」的治校方针，聘请陈独秀任文科学长，延揽李大钊、胡适、鲁迅、钱玄同、刘半农、辜鸿铭、梁漱溟等大批新旧学术名家入校执教，推行教授治校与学术民主，使北大从封建官僚养成所彻底蜕变为中国新文化运动与思想解放的圣地与大本营。
+  confidence: 确定
+  tags:
+    - 蔡元培
+    - 北京大学
+    - 思想自由兼容并包
+    - 新文化运动圣地
+    - 现代高等教育奠基
+    - 历史转折
+  sources:
+    - 蔡元培全集
+    - 北京大学校史
+    - 中文维基百科
+  image:
+    url: /images/events/1917/cn-cai-yuanpei-beida-191701.jpg
+    caption: 北京大学校长、中国现代教育泰斗蔡元培先生历史肖像
+    source: https://commons.wikimedia.org/wiki/File:Cai_Yuanpei-loc-nodate-crop.jpg
+    author: George Grantham Bain Collection / Library of Congress
+    license: Public domain
+- id: cn-china-joins-ww1-191708
+  date: '1917-08-14'
+  title: 中国正式对德奥宣战参加一战（十四万劳工赴欧）
+  category: 政治
+  importance: 5
+  summary: 北洋政府代总统冯国璋与国务总理段祺瑞正式发布大总统布告，对德意志帝国和奥匈帝国宣战，中国作为协约国正式参加第一次世界大战。中国随后派出14万余名华工远赴法国、英国西线战场从事艰苦卓绝的挖战壕、修铁路、搬运弹药等战勤支援，数千同胞长眠异国，为一战协约国胜利作出了不可替代的重大贡献，为中国赢得战胜国席位。
+  confidence: 确定
+  tags:
+    - 中国对德宣战
+    - 参加一战
+    - 一战华工军团
+    - 以工代兵
+    - 中国战胜国地位
+    - 历史转折
+  sources:
+    - 大总统布告1917
+    - 一战华工史料
+    - 北洋外交档案
+    - 中文维基百科
+  image:
+    url: /images/events/1917/cn-china-joins-ww1-191708.jpg
+    caption: 一战期间赴欧洲西线战场的中国劳工军团（CLC）英国墓园历史照片
+    source: https://commons.wikimedia.org/wiki/File:CLC_Graves_Shorncliffe_Military_Cemetery_Folkestone.jpg
+    author: Wikimedia Commons contributor / Commonwealth War Graves
+    license: CC-BY-SA 4.0
+- id: cn-constitutional-protection-191709
+  date: '1917-09-01'
+  title: 孙中山在广州建立护法军政府（护法运动）
+  category: 政治
+  importance: 5
+  summary: 皖系军阀段祺瑞击败张勋复辟后拒绝恢复《临时约法》与国会，孙中山发表《讨逆宣言》，率领百余名国会议员与南下海军舰队抵粤，在广州召开非常国会通过《中华民国军政府组织大纲》，孙中山当选为中华民国军政府海陆军大元帅，树起「护法」大旗誓师讨伐北洋军阀非法政权，形成南北对峙政局。
+  confidence: 确定
+  tags:
+    - 护法运动
+    - 孙中山
+    - 广州军政府
+    - 大元帅
+    - 捍卫约法
+    - 南北分裂
+    - 历史转折
+  sources:
+    - 孙中山全集
+    - 护法运动档案
+    - 中文维基百科
+  image:
+    url: /images/events/1917/cn-constitutional-protection-191709.jpg
+    caption: 领导护法运动的中华民国军政府大元帅孙中山历史建筑与纪念地
+    source: https://commons.wikimedia.org/wiki/File:China-Nanjing_(2024)_Mausoleum_of_Sun_Yat_Sen_%E4%B8%AD%E5%B1%B1%E9%99%B5_-_img_01.jpg
+    author: Wikimedia Commons contributor / Sun Yat-sen Memorial
+    license: CC-BY-SA 4.0
+- id: cn-luxun-madman-diary-191805
+  date: '1918-05-15'
+  title: 鲁迅发表《狂人日记》（中国第一篇现代白话小说）
+  category: 文化
+  importance: 5
+  summary: 周树人首次以「鲁迅」为笔名在《新青年》第四卷第五号发表白话短篇小说《狂人日记》。作品借「狂人」日记形式，以极具现代主义色彩的尖锐笔触，字字泣血地深刻揭露封建宗法礼教「吃人」的吃人本质，大声疾呼「救救孩子！」，吹响反封建旧礼教的时代最强音，成为中国现代白话小说的伟大奠基之作。
+  confidence: 确定
+  tags:
+    - 狂人日记
+    - 鲁迅
+    - 吃人礼教
+    - 救救孩子
+    - 中国现代文学奠基
+    - 新文学里程碑
+    - 历史转折
+  sources:
+    - 新青年第四卷第五号
+    - 鲁迅全集
+    - 中文维基百科
+  image:
+    url: /images/events/1918/cn-luxun-madman-diary-191805.jpg
+    caption: 中国现代文学奠基人、思想家鲁迅先生历史肖像
+    source: https://commons.wikimedia.org/wiki/File:LuXun1930.jpg
+    author: Period photographer / Lu Xun Memorial Museum
+    license: Public domain
+- id: cn-li-dazhao-marxism-191811
+  date: '1918-11-15'
+  title: 李大钊发表《庶民的胜利》《Bolshevism的胜利》
+  category: 文化
+  importance: 5
+  summary: 北京大学教授兼图书馆主任李大钊在中央公园（今中山公园）天安门前发表演讲《庶民的胜利》，并在《新青年》发表长文《Bolshevism的胜利》，极富远见地预言「试看将来的环球，必是赤旗的世界！」，热烈讴歌俄国十月社会主义革命，成为中国最早系统宣传马克思主义理论与十月革命道路的伟大共产主义先驱。
+  confidence: 确定
+  tags:
+    - 庶民的胜利
+    - 李大钊
+    - Bolshevism的胜利
+    - 马克思主义传入中国
+    - 十月革命歌颂
+    - 历史转折
+  sources:
+    - 新青年第五卷第五号
+    - 李大钊文集
+    - 中文维基百科
+  image:
+    url: /images/events/1918/cn-li-dazhao-marxism-191811.jpg
+    caption: 中国最早的马克思主义传播先驱李大钊先生历史肖像照片
+    source: https://commons.wikimedia.org/wiki/File:1930_Li_Dazhao_Chinese_comintern.jpg
+    author: Historical Archive / Comintern Records
+    license: Public domain
+- id: cn-may-fourth-movement-191905
+  date: '1919-05-04'
+  title: 五四爱国运动爆发（新民主主义革命开端）
+  category: 政治
+  importance: 5
+  summary: 因巴黎和会西方列强践踏公理强行将德国在山东特权转交日本，中国外交遭受惨重失败。5月4日下午北京大学等13所大专院校三千余名学生在天安门集会示威，高呼「外争国权，内除国贼」「废除二十一条」「还我青岛」，火烧曹汝霖赵家楼住宅，痛打章宗祥。随后运动迅速席卷全国，上海、天津、汉口、广州等地工人阶级率先举行政治罢工（「六三」罢工），商人罢市，形成声势浩大的工农学商全民爱国反帝大风暴，迫使北洋政府释放被捕学生、罢免曹汝霖、章宗祥、陆宗舆官职。五四运动是中国从旧民主主义革命走向新民主主义革命的伟大里程碑！
+  confidence: 确定
+  tags:
+    - 五四运动
+    - 外争主权内除国贼
+    - 火烧赵家楼
+    - 学生爱国运动
+    - 工人阶级登上政治舞台
+    - 新民主主义革命开端
+    - 历史转折
+  sources:
+    - 五四爱国运动档案资料
+    - 北京大学日刊1919
+    - 新青年第六卷第五号
+    - 中文维基百科
+  image:
+    url: /images/events/1919/cn-may-fourth-movement-191905.jpg
+    caption: 1919年五四爱国运动期间青年学生走上街头游行示威历史照片档案
+    source: https://commons.wikimedia.org/wiki/File:Female_students_participate_in_demonstration_as_part_of_the_May_Fourth_Movement,_in_1919.jpg
+    author: Period press photographer / Beijing Municipal Archives
+    license: Public domain
+- id: cn-paris-peace-treaty-refusal-191906
+  date: '1919-06-28'
+  title: 中国代表团拒绝在《凡尔赛和约》上签字
+  category: 政治
+  importance: 5
+  summary: 在全国五四爱国运动的强大民意压力与旅法华工、留法学生的严密包围请愿下，出席巴黎和会的中国全权代表团（顾维钧、陆征祥等）顶住各方巨大压力，毅然决定拒绝出席凡尔赛宫签字仪式，拒绝在损害中国领土主权的《凡尔赛和约》上签字。这是近代中国自鸦片战争近八十年以来，在列强强加的不平等条约面前第一次以主权国家尊严敢于大声说「不」，在近代中国外交史上具有划时代的里程碑意义。
+  confidence: 确定
+  tags:
+    - 拒签凡尔赛和约
+    - 顾维钧
+    - 巴黎和会外交
+    - 捍卫国家主权
+    - 近代外交觉醒
+    - 历史转折
+  sources:
+    - 顾维钧回忆录
+    - 巴黎和会中国代表团档案
+    - 中文维基百科
+  image:
+    url: /images/events/1919/cn-paris-peace-treaty-refusal-191906.jpg
+    caption: 巴黎和会期间中国外交代表团顾维钧等就山东主权发表演说历史场景
+    source: https://commons.wikimedia.org/wiki/File:League_of_Nations_Commission.jpg
+    author: Period diplomatic photographer / League of Nations Archives
+    license: Public domain
 - id: cn-zhili-anhui-war-192007
   date: '1920-07-14'
   title: 直皖战争爆发
@@ -54,7 +472,26 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+- id: cn-shanghai-communist-group-192008
+  date: 1920-08
+  title: 上海共产党早期组织成立
+  category: 政治
+  importance: 5
+  summary: 陈独秀等人在上海建立共产党早期组织，推动马克思主义传播、工人运动和各地建党活动，为中国共产党成立奠定组织基础。
+  confidence: 确定
+  tags:
+    - 上海共产党早期组织
+    - 陈独秀
+    - 建党准备
+  sources:
+    - 中文维基百科
+    - 党史资料
+  image:
+    url: /images/events/1920/cn-shanghai-communist-group-192008.jpg
+    caption: 陈独秀历史肖像照，1920年8月陈独秀、李汉俊等人在上海法租界老渔阳里2号成立中国共产党早期组织并出任书记
+    source: https://commons.wikimedia.org/wiki/File%3AChen_Duxiu.jpg
+    author: Unknown photographer
+    license: Public domain
 - id: cn-socialist-youth-league-192008
   date: '1920-08-22'
   title: 上海社会主义青年团成立
@@ -69,7 +506,6 @@
   sources:
     - 中文维基百科
     - 党史资料
-
 - id: cn-haiyuan-earthquake-192012
   date: '1920-12-16'
   title: 海原大地震
@@ -84,16 +520,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
-- id: cpc-founding-1921
-  date: '1921-07-23'
-  title: 中国共产党成立
-  category: 政治
-  tags: [政治, 历史转折]
-  importance: 5
-  summary: 中国共产党第一次全国代表大会于上海召集，标志着中国共产党正式成立。
-  confidence: 确定
-
+  image:
+    url: /images/events/1920/cn-haiyuan-earthquake-192012.svg
+    caption: 1920年海原大地震（震级8.5级）烈度与地震波及范围历史调查图，大地震造成逾28万人遇难
+    source: https://commons.wikimedia.org/wiki/File%3A1920_Gansu_earthquake.svg
+    author: National Geographic Society / Upton Close
+    license: Public domain
 - id: cn-sun-yat-sen-extraordinary-president-192105
   date: '1921-05-05'
   title: 孙中山就任非常大总统
@@ -108,22 +540,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
-- id: cn-chinese-labour-secretariat-192108
-  date: '1921-08-11'
-  title: 中国劳动组合书记部成立
-  category: 经济
-  importance: 4
-  summary: 中国劳动组合书记部在上海成立，成为中国共产党早期领导工人运动的重要公开机构，推动铁路、海员等产业工人组织化。
-  confidence: 确定
-  tags:
-    - 工人运动
-    - 中国共产党
-    - 劳动组合书记部
-  sources:
-    - 中文维基百科
-    - 党史资料
-
+  image:
+    url: /images/events/1921/cn-sun-yat-sen-extraordinary-president-192105.jpg
+    caption: 1921年：孙中山就任非常大总统
+    source: https://commons.wikimedia.org/wiki/File%3A1921%E5%B9%B4%EF%BC%8C%E5%B9%BF%E5%B7%9E%E7%BE%A4%E4%BC%97%E6%B8%B8%E8%A1%8C%E5%BA%86%E7%A5%9D%E5%AD%99%E4%B8%AD%E5%B1%B1%E5%B0%B1%E4%BB%BB%E9%9D%9E%E5%B8%B8%E5%A4%A7%E6%80%BB%E7%BB%9F%E3%80%82.jpg
+    author: Unknown authorUnknown author
+    license: Public domain
 - id: cn-outer-mongolian-revolution-192107
   date: '1921-07-11'
   title: 外蒙古人民革命胜利
@@ -138,7 +560,36 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+- id: cpc-founding-1921
+  date: '1921-07-23'
+  title: 中国共产党成立
+  category: 政治
+  tags:
+    - 政治
+    - 历史转折
+  importance: 5
+  summary: 中国共产党第一次全国代表大会于上海召集，标志着中国共产党正式成立。
+  confidence: 确定
+  image:
+    url: /images/events/1921/cpc-founding-1921.jpg
+    caption: 上海望志路106号（今兴业路76号）中共一大会址建筑外景，1921年7月中国共产党第一次全国代表大会在此开幕
+    source: https://commons.wikimedia.org/wiki/File%3AThe_First_National_Congress_of_CPC.jpg
+    author: 维基百科贡献者
+    license: Public domain
+- id: cn-chinese-labour-secretariat-192108
+  date: '1921-08-11'
+  title: 中国劳动组合书记部成立
+  category: 经济
+  importance: 4
+  summary: 中国劳动组合书记部在上海成立，成为中国共产党早期领导工人运动的重要公开机构，推动铁路、海员等产业工人组织化。
+  confidence: 确定
+  tags:
+    - 工人运动
+    - 中国共产党
+    - 劳动组合书记部
+  sources:
+    - 中文维基百科
+    - 党史资料
 - id: cn-hong-kong-seamen-strike-192201
   date: '1922-01-12'
   title: 香港海员大罢工开始
@@ -153,7 +604,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-first-zhili-fengtian-war-192204
   date: '1922-04-29'
   title: 第一次直奉战争爆发
@@ -168,7 +618,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-chen-jiongming-revolt-192206
   date: '1922-06-16'
   title: 陈炯明兵变
@@ -183,7 +632,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-cpc-second-congress-192207
   date: '1922-07-16'
   title: 中共二大召开
@@ -198,7 +646,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+  image:
+    url: /images/events/1922/cn-cpc-second-congress-192207.jpg
+    caption: 上海辅德里625号中共二大会址外景，1922年7月中共二大在此召开并制定党的反帝反封建民主革命纲领
+    source: https://commons.wikimedia.org/wiki/File%3AZhongguogongchandang_Di'erci_Quanguodaibiaodahui_Huizhi.JPG
+    author: 猫猫的日记本
+    license: CC BY-SA 3.0
 - id: cn-sun-joffe-manifesto-192301
   date: '1923-01-26'
   title: 孙文越飞宣言发表
@@ -213,7 +666,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-february-seventh-strike-192302
   date: '1923-02-07'
   title: 二七惨案
@@ -228,7 +680,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-cpc-third-congress-192306
   date: '1923-06-12'
   title: 中共三大召开
@@ -243,7 +694,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+  image:
+    url: /images/events/1923/cn-cpc-third-congress-192306.jpg
+    caption: 广州中共三大会址历史遗址，1923年6月大会在此确立国共合作方针并决定共产党员以个人身份加入国民党
+    source: https://commons.wikimedia.org/wiki/File%3AGuangzhou_Zhongguo_Gongchandang_Disanci_Quanguo_Daibiao_Dahui_Huizhi_2013.12.15_16-23-07.jpg
+    author: 维基百科贡献者
+    license: CC BY-SA 3.0
 - id: cn-cao-kun-bribery-election-192310
   date: '1923-10-05'
   title: 曹锟贿选总统
@@ -258,7 +714,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-kmt-first-congress-192401
   date: '1924-01-20'
   title: 国民党一大召开
@@ -273,7 +728,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+  image:
+    url: /images/events/1924/cn-kmt-first-congress-192401.jpg
+    caption: 1924年：国民党一大召开
+    source: https://commons.wikimedia.org/wiki/File%3AKMTfirstCongress1924.jpg
+    author: No machine-readable author provided. Lukacs~commonswiki assumed (based on copyright claims).
+    license: CC BY 2.5
 - id: cn-whampoa-military-academy-192406
   date: '1924-06-16'
   title: 黄埔军校开学
@@ -288,7 +748,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+  image:
+    url: /images/events/1924/cn-whampoa-military-academy-192406.jpg
+    caption: 1924年：黄埔军校开学
+    source: https://commons.wikimedia.org/wiki/File%3ASun_Yat-sen%2C_He_Yingqin%2C_Chiang_Kai-shek_%26_Wang_Bo-ling_at_the_Whampoa_Military_Academy%2C_June_1924.jpg
+    author: Unknown authorUnknown author
+    license: Public domain
 - id: cn-beijing-coup-192410
   date: '1924-10-23'
   title: 北京政变
@@ -303,7 +768,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+  image:
+    url: /images/events/1924/cn-beijing-coup-192410.jpg
+    caption: 1924年：北京政变
+    source: https://commons.wikimedia.org/wiki/File%3ABeijing_Coup.jpg
+    author: Agence Rol
+    license: Public domain
 - id: cn-sun-yat-sen-northbound-192411
   date: '1924-11-13'
   title: 孙中山北上
@@ -318,7 +788,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-sun-yat-sen-death-192503
   date: '1925-03-12'
   title: 孙中山逝世
@@ -333,7 +802,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+  image:
+    url: /images/events/1925/cn-sun-yat-sen-death-192503.jpg
+    caption: 孙中山先生标准肖像照，作为其1925年3月12日在北京病逝的历史人物档案资料
+    source: https://commons.wikimedia.org/wiki/File%3A%E5%AD%99%E4%B8%AD%E5%B1%B1%E8%82%96%E5%83%8F.jpg
+    author: Unknown photographer
+    license: Public domain
 - id: cn-may-thirtieth-movement-192505
   date: '1925-05-30'
   title: 五卅运动爆发
@@ -348,7 +822,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+  image:
+    url: /images/events/1925/cn-may-thirtieth-movement-192505.png
+    caption: 1925年五卅惨案后上海各界印发的反对帝国主义暴行宣传海报，五卅运动掀起全国反帝爱国运动高潮
+    source: https://commons.wikimedia.org/wiki/File%3AMay_30th_Movement_Propaganda_Poster.png
+    author: 上海反帝运动宣传委员会 / Unknown author
+    license: Public domain
 - id: cn-canton-hongkong-strike-192506
   date: '1925-06-19'
   title: 省港大罢工开始
@@ -363,7 +842,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-guangzhou-national-government-192507
   date: '1925-07-01'
   title: 广州国民政府成立
@@ -378,7 +856,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-zhongshan-warship-incident-192603
   date: '1926-03-20'
   title: 中山舰事件
@@ -393,7 +870,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-northern-expedition-begins-192607
   date: '1926-07-09'
   title: 北伐战争开始
@@ -408,7 +884,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+  image:
+    url: /images/events/1926/cn-northern-expedition-begins-192607.jpg
+    caption: 国民革命军北伐战争历史照片组图（包含蒋介石誓师、前线部队行军及攻占武汉），标志北伐战争全面展开
+    source: https://commons.wikimedia.org/wiki/File%3ANorthern_Expedition_collage.jpg
+    author: Unknown photographers / Nationalist Government
+    license: CC BY-SA 3.0
 - id: cn-wanxian-incident-192609
   date: '1926-09-05'
   title: 万县事件
@@ -423,7 +904,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-wuchang-captured-192610
   date: '1926-10-10'
   title: 北伐军攻克武昌
@@ -438,7 +918,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-nanjing-incident-192703
   date: '1927-03-24'
   title: 南京事件爆发
@@ -453,7 +932,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-shanghai-massacre-192704
   date: '1927-04-12'
   title: 上海四一二事件
@@ -468,7 +946,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+  image:
+    url: /images/events/1927/cn-shanghai-massacre-192704.jpg
+    caption: 1927年4月上海四一二政变期间，军警在上海街头搜捕并处决共产党人与革命群众的历史照片
+    source: https://commons.wikimedia.org/wiki/File%3APublic_beheading_of_a_communist_during_Shanghai_massacre_of_1927.jpg
+    author: Unknown photographer
+    license: Public domain
 - id: cn-nanchang-uprising-192708
   date: '1927-08-01'
   title: 南昌起义
@@ -483,7 +966,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+  image:
+    url: /images/events/1927/cn-nanchang-uprising-192708.jpg
+    caption: 南昌八一起义纪念塔建筑外景，1927年8月1日南昌起义打响了武装反抗国民党反动派的第一枪
+    source: https://commons.wikimedia.org/wiki/File%3AMemorial_tower_of_Nanchang_Uprising.jpg
+    author: 维基百科贡献者
+    license: CC BY-SA 4.0
 - id: cn-autumn-harvest-uprising-192709
   date: '1927-09-09'
   title: 秋收起义
@@ -498,7 +986,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+  image:
+    url: /images/events/1927/cn-autumn-harvest-uprising-192709.jpg
+    caption: 秋收起义历史纪实版画与档案资料，1927年9月毛泽东领导湘赣边界秋收起义并开创井冈山革命根据地
+    source: https://commons.wikimedia.org/wiki/File%3A1967-10_1967%E5%B9%B4%E7%A7%8B%E6%94%B6%E8%B5%B7%E4%B9%89%E6%9C%A8%E5%88%BB%E5%9B%BE.jpg
+    author: 人民出版社 / Unknown artist
+    license: Public domain
 - id: cn-guangzhou-uprising-192712
   date: '1927-12-11'
   title: 广州起义
@@ -513,7 +1006,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-jinan-incident-192805
   date: '1928-05-03'
   title: 济南惨案爆发
@@ -528,7 +1020,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-huanggutun-incident-192806
   date: '1928-06-04'
   title: 皇姑屯事件
@@ -543,7 +1034,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-northern-expedition-beijing-192806
   date: '1928-06-08'
   title: 北伐军进入北京
@@ -558,7 +1048,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-northeast-flag-replacement-192812
   date: '1928-12-29'
   title: 东北易帜
@@ -573,9 +1062,14 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+  image:
+    url: /images/events/1928/cn-northeast-flag-replacement-192812.jpg
+    caption: 张学良将领军装肖像照片，1928年12月29日通电全国宣布东北易帜，遵守三民主义并服从南京国民政府
+    source: https://commons.wikimedia.org/wiki/File%3AChang_Shueliang.jpg
+    author: Unknown photographer
+    license: Public domain
 - id: cn-chiang-gui-war-192903
-  date: '1929-03'
+  date: 1929-03
   title: 蒋桂战争爆发
   category: 战争
   importance: 4
@@ -588,9 +1082,8 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-sino-soviet-conflict-192907
-  date: '1929-07'
+  date: 1929-07
   title: 中东路事件引发中苏武装冲突
   category: 战争
   importance: 4
@@ -603,7 +1096,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-baise-uprising-192912
   date: '1929-12-11'
   title: 百色起义爆发
@@ -618,7 +1110,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-gutian-congress-192912
   date: '1929-12-28'
   title: 古田会议召开
@@ -633,7 +1124,12 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
+  image:
+    url: /images/events/1929/cn-gutian-congress-192912.jpg
+    caption: 福建上杭古田会议会址（廖氏宗祠）外景，1929年12月红四军第九次党代表大会在此召开并确立思想建党、政治建军原则
+    source: https://commons.wikimedia.org/wiki/File%3AShanghang_Gutian_Huiyi_Huizhi_2013.10.07_16-06-42.jpg
+    author: 猫猫的日记本
+    license: CC BY-SA 4.0
 - id: cn-left-wing-writers-league-193003
   date: '1930-03-02'
   title: 中国左翼作家联盟成立
@@ -648,7 +1144,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-central-plains-war-193005
   date: '1930-05-11'
   title: 中原大战爆发
@@ -663,7 +1158,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-weihaiwei-returned-193010
   date: '1930-10-01'
   title: 威海卫结束英租并归还中国
@@ -678,9 +1172,8 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-first-encirclement-jiangxi-193011
-  date: '1930-11'
+  date: 1930-11
   title: 第一次围剿中央苏区开始
   category: 战争
   importance: 4
@@ -693,7 +1186,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: september-18-incident-1931
   date: '1931-09-18'
   title: 九一八事变
@@ -709,7 +1201,12 @@
     - 中文维基百科
     - 英文维基百科
     - 中国共产党新闻网
-
+  image:
+    url: /images/events/1931/september-18-incident-1931.jpg
+    caption: 1931年9月19日九一八事变爆发次日，日本关东军部队占领沈阳城巡逻警戒
+    source: https://commons.wikimedia.org/wiki/File%3AMukden_1931_japan_shenyang.jpg
+    author: Unknown Japanese military photographer
+    license: Public domain
 - id: cn-nenjiang-bridge-resistance-193111
   date: '1931-11-04'
   title: 江桥抗战爆发
@@ -724,7 +1221,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-january-28-incident-193201
   date: '1932-01-28'
   title: 一·二八事变爆发
@@ -739,7 +1235,12 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
+  image:
+    url: /images/events/1932/cn-january-28-incident-193201.jpg
+    caption: 1932年一·二八事变期间，国民革命军第十九路军战士在上海闸北前线战壕坚守抗击日军
+    source: https://commons.wikimedia.org/wiki/File%3AChinese_soldiers_of_the_19th_Army_fighting_in_Chabei_district.jpg
+    author: Unknown photographer
+    license: Public domain
 - id: cn-manchukuo-founded-193203
   date: '1932-03-01'
   title: 伪满洲国成立
@@ -754,7 +1255,12 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
+  image:
+    url: /images/events/1932/cn-manchukuo-founded-193203.jpg
+    caption: 溥仪历史肖像照片，1932年3月在日本关东军扶植下出任伪满洲国执政，傀儡政权建立
+    source: https://commons.wikimedia.org/wiki/File%3AAisin-Gioro_Puyi_01.jpg
+    author: Unknown photographer
+    license: Public domain
 - id: cn-shanghai-ceasefire-193205
   date: '1932-05-05'
   title: 《淞沪停战协定》签署
@@ -769,7 +1275,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-defense-great-wall-193301
   date: '1933-01-01'
   title: 长城抗战爆发
@@ -784,7 +1289,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-tanggu-truce-193305
   date: '1933-05-31'
   title: 《塘沽协定》签订
@@ -799,7 +1303,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-fifth-encirclement-begins-193309
   date: '1933-09-25'
   title: 第五次“围剿”开始
@@ -814,7 +1317,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-fifth-encirclement-campaign-193404
   date: '1934-04-01'
   title: 中央苏区第五次反“围剿”陷入失利
@@ -830,7 +1332,6 @@
     - 中文维基百科
     - 英文维基百科
     - 中国共产党新闻网
-
 - id: cn-long-march-begins-193410
   date: '1934-10-16'
   title: 中央红军开始长征
@@ -846,7 +1347,12 @@
     - 中文维基百科
     - 英文维基百科
     - 中国共产党新闻网
-
+  image:
+    url: /images/events/1934/cn-long-march-begins-193410.png
+    caption: 中央苏区与中国工农红军长征战略转移示意图，中央红军于1934年10月由中央根据地出发开始长征
+    source: https://commons.wikimedia.org/wiki/File%3AChina_Soviet_Zones.png
+    author: Historical Archives / Wikimedia Commons contributor
+    license: CC BY-SA 3.0
 - id: cn-xiang-river-battle-193411
   date: '1934-11-25'
   title: 湘江战役爆发
@@ -862,7 +1368,6 @@
     - 中文维基百科
     - 英文维基百科
     - 中国共产党新闻网
-
 - id: cn-zunyi-conference-193501
   date: '1935-01-15'
   title: 遵义会议召开
@@ -878,7 +1383,12 @@
     - 中文维基百科
     - 英文维基百科
     - 中国共产党新闻网
-
+  image:
+    url: /images/events/1935/cn-zunyi-conference-193501.jpg
+    caption: 贵州遵义老城红军街柏辉章公馆旧址（遵义会议会址），1935年1月中共中央政治局扩大会议在此召开
+    source: https://commons.wikimedia.org/wiki/File%3AZunyiMeeting.jpg
+    author: 维基百科贡献者
+    license: CC BY-SA 3.0
 - id: cn-long-march-arrives-shaanbei-193510
   date: '1935-10-19'
   title: 中央红军到达陕北
@@ -894,7 +1404,12 @@
     - 中文维基百科
     - 英文维基百科
     - 中国共产党新闻网
-
+  image:
+    url: /images/events/1935/cn-long-march-arrives-shaanbei-193510.jpg
+    caption: 毛泽东在陕北保安县窑洞前的历史照片，作为红军长征胜利到达陕北开创新局面的历史档案资料
+    source: https://commons.wikimedia.org/wiki/File%3A1936_Mao_and_third_wife_He_Zizhen.jpg
+    author: Edgar Snow / Historical Archives
+    license: Public domain
 - id: cn-wayao-bao-conference-193512
   date: '1935-12-17'
   title: 瓦窑堡会议召开
@@ -909,7 +1424,20 @@
   sources:
     - 中文维基百科
     - 中国共产党新闻网
-
+- id: cn-suiyuan-campaign-193611
+  date: '1936-11-14'
+  title: 绥远抗战爆发
+  category: 战争
+  importance: 4
+  summary: 傅作义等中国军队在绥远地区抵抗日伪军进攻并取得阶段性胜利，显示华北局势持续紧张，也为全国抗战前夕的抗日动员提供重要象征。
+  confidence: 确定
+  tags:
+    - 绥远抗战
+    - 傅作义
+    - 抗日战争
+  sources:
+    - 中文维基百科
+    - 英文维基百科
 - id: xian-incident-1936
   date: '1936-12-12'
   title: 西安事变
@@ -925,22 +1453,12 @@
     - 中文维基百科
     - 英文维基百科
     - 中国共产党新闻网
-
-- id: cn-suiyuan-campaign-193611
-  date: '1936-11-14'
-  title: 绥远抗战爆发
-  category: 战争
-  importance: 4
-  summary: 傅作义等中国军队在绥远地区抵抗日伪军进攻并取得阶段性胜利，显示华北局势持续紧张，也为全国抗战前夕的抗日动员提供重要象征。
-  confidence: 确定
-  tags:
-    - 绥远抗战
-    - 傅作义
-    - 抗日战争
-  sources:
-    - 中文维基百科
-    - 英文维基百科
-
+  image:
+    url: /images/events/1936/xian-incident-1936.jpg
+    caption: 西安事变主要当事人张学良、杨虎城与蒋介石历史合影档案，西安事变的和平解决促成了国共第二次合作
+    source: https://commons.wikimedia.org/wiki/File%3AZhang_Xueliang%2C_Yang_Hucheng_and_Chiang_Kai-shek.jpg
+    author: Unknown photographer
+    license: Public domain
 - id: lugou-bridge-incident-1937
   date: '1937-07-07'
   title: 七七事变，全面抗战始
@@ -956,7 +1474,12 @@
     - 中文维基百科
     - 英文维基百科
     - 中国共产党新闻网
-
+  image:
+    url: /images/events/1937/lugou-bridge-incident-1937.png
+    caption: 1937年七七卢沟桥事变期间，中国国民革命军第二十九军在北平宛平城卢沟桥头抗击日军进攻历史照片
+    source: https://commons.wikimedia.org/wiki/File%3A77shibian.png
+    author: 中华(上海) / Unknown photographer
+    license: CC BY-SA 3.0
 - id: cn-shanghai-battle-193708
   date: '1937-08-13'
   title: 淞沪会战爆发
@@ -971,7 +1494,26 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
+  image:
+    url: /images/events/1937/cn-shanghai-battle-193708.jpg
+    caption: 1937年淞沪会战期间，中国军队在上海市区修筑机枪掩体阻击侵华日军激战历史照片
+    source: https://commons.wikimedia.org/wiki/File%3AShanghai1937KMT_machine_gun_nest.jpg
+    author: Unknown photographer
+    license: Public domain
+- id: cn-capital-moves-chongqing-193711
+  date: '1937-11-20'
+  title: 国民政府迁都重庆
+  category: 政治
+  importance: 4
+  summary: 南京形势危急之际，国民政府宣布迁都重庆，战时中国政治、军事和外交中心转入西南内地，重庆成为长期抗战的重要后方基地。
+  confidence: 确定
+  tags:
+    - 重庆
+    - 国民政府
+    - 抗战后方
+  sources:
+    - 中文维基百科
+    - 英文维基百科
 - id: cn-nanjing-falls-193712
   date: '1937-12-13'
   title: 南京沦陷，南京大屠杀开始
@@ -987,22 +1529,12 @@
     - 中文维基百科
     - 英文维基百科
     - 南京大屠杀遇难同胞纪念馆
-
-- id: cn-capital-moves-chongqing-193711
-  date: '1937-11-20'
-  title: 国民政府迁都重庆
-  category: 政治
-  importance: 4
-  summary: 南京形势危急之际，国民政府宣布迁都重庆，战时中国政治、军事和外交中心转入西南内地，重庆成为长期抗战的重要后方基地。
-  confidence: 确定
-  tags:
-    - 重庆
-    - 国民政府
-    - 抗战后方
-  sources:
-    - 中文维基百科
-    - 英文维基百科
-
+  image:
+    url: /images/events/1937/cn-nanjing-falls-193712.jpg
+    caption: 1937年12月南京沦陷后，侵华日军在南京城外屠杀中国军民并遗弃于秦淮河畔的历史调查纪实照片（村濑守保摄）
+    source: https://commons.wikimedia.org/wiki/File%3ANanking_bodies_1937.jpg
+    author: Moriyasu Murase (村瀬守保)
+    license: Public domain
 - id: cn-taierzhuang-battle-193803
   date: '1938-03-24'
   title: 台儿庄战役爆发
@@ -1018,7 +1550,12 @@
     - 中文维基百科
     - 英文维基百科
     - 中国共产党新闻网
-
+  image:
+    url: /images/events/1938/cn-taierzhuang-battle-193803.jpg
+    caption: 1938年台儿庄战役大捷后，第五战区司令长官李宗仁在战火损毁的台儿庄火车站站牌前留影
+    source: https://commons.wikimedia.org/wiki/File%3ATaierzhuang.jpg
+    author: Unknown photographer
+    license: Public domain
 - id: cn-wuhan-battle-193806
   date: '1938-06-11'
   title: 武汉会战爆发
@@ -1033,7 +1570,12 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
+  image:
+    url: /images/events/1938/cn-wuhan-battle-193806.jpg
+    caption: 1938年武汉会战期间，中国守军官兵在武汉前线战壕中坚守阵地历史照片
+    source: https://commons.wikimedia.org/wiki/File%3AWuhan_1938.jpg
+    author: Unknown photographer
+    license: Public domain
 - id: cn-guangzhou-falls-193810
   date: '1938-10-21'
   title: 广州失守
@@ -1048,7 +1590,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-wuhan-falls-193810
   date: '1938-10-25'
   title: 武汉失守
@@ -1063,7 +1604,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-nanchang-campaign-193903
   date: '1939-03-17'
   title: 南昌会战爆发
@@ -1078,7 +1618,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-battle-changsha-193909
   date: '1939-09-17'
   title: 第一次长沙会战爆发
@@ -1093,7 +1632,12 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
+  image:
+    url: /images/events/1939/cn-battle-changsha-193909.jpg
+    caption: 1939年9月第一次长沙会战期间，中国军队在湖南前线抗击日军进犯并取得第一次长沙大捷
+    source: https://commons.wikimedia.org/wiki/File%3AIJA%2C_Battle_of_Changsha%2C_China%2C_September_1939.jpg
+    author: Unknown military photographer
+    license: Public domain
 - id: cn-wang-jingwei-defects-193912
   date: '1939-12-30'
   title: 汪精卫集团公开投日路线
@@ -1108,10 +1652,9 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-wang-jingwei-regime-194003
   date: '1940-03-30'
-  title: 南京国民政府成立
+  title: 汪伪南京国民政府成立
   category: 政治
   importance: 4
   summary: 汪精卫在南京成立以日本支持为背景的国民政府，成为抗战时期华中、华东地区的重要傀儡政权。其成立加深了中国政治分裂和日本对占领区的统治。
@@ -1123,7 +1666,20 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
+- id: cn-chongqing-bombing-194005
+  date: '1940-06-05'
+  title: 重庆大轰炸持续升级
+  category: 战争
+  importance: 4
+  summary: 日军对战时中国陪都重庆持续实施大规模空袭，城市公共设施和民众生活遭受严重破坏，重庆成为抗战时期中国遭受战略轰炸最集中的城市之一。
+  confidence: 确定
+  tags:
+    - 重庆大轰炸
+    - 抗日战争
+    - 战略轰炸
+  sources:
+    - 中文维基百科
+    - 英文维基百科
 - id: cn-hundred-regiments-offensive-194008
   date: '1940-08-20'
   title: 百团大战爆发
@@ -1145,22 +1701,6 @@
     source: https://commons.wikimedia.org/wiki/File:Hundred_Regiments_Offensive_1940.jpg
     author: Chinese Wikipedia uploader; original source credited to period Chinese press
     license: Public domain
-
-- id: cn-chongqing-bombing-194005
-  date: '1940-06-05'
-  title: 重庆大轰炸持续升级
-  category: 战争
-  importance: 4
-  summary: 日军对战时中国陪都重庆持续实施大规模空袭，城市公共设施和民众生活遭受严重破坏，重庆成为抗战时期中国遭受战略轰炸最集中的城市之一。
-  confidence: 确定
-  tags:
-    - 重庆大轰炸
-    - 抗日战争
-    - 战略轰炸
-  sources:
-    - 中文维基百科
-    - 英文维基百科
-
 - id: cn-new-fourth-army-incident-194101
   date: '1941-01-06'
   title: 皖南事变爆发
@@ -1182,7 +1722,6 @@
     source: https://commons.wikimedia.org/wiki/File:Order_of_the_Rebuilding_New_Fourth_Army.jpg
     author: Central Military Commission of the Chinese Communist Party
     license: Public domain
-
 - id: cn-chongqing-tunnel-massacre-194106
   date: '1941-06-05'
   title: 重庆大隧道惨案发生
@@ -1197,7 +1736,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-hong-kong-battle-194112
   date: '1941-12-08'
   title: 香港保卫战爆发
@@ -1212,7 +1750,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-yanan-rectification-194202
   date: '1942-02-01'
   title: 延安整风运动开始
@@ -1234,7 +1771,6 @@
     source: https://commons.wikimedia.org/wiki/File:Chairman_Mao_Zedong_(1893-1976)_and_people_at_the_Yan%27an_Forum_on_Literature_and_Art_in_1942,_including_Chen_Xuezhao_5th_from_left_3rd_row.jpg
     author: 吴印咸
     license: Public domain
-
 - id: cn-chinese-expeditionary-force-burma-194203
   date: '1942-03-01'
   title: 中国远征军入缅作战
@@ -1249,7 +1785,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-zhejiang-jiangxi-campaign-194205
   date: '1942-05-15'
   title: 浙赣战役爆发
@@ -1264,7 +1799,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-zuo-quan-killed-194205
   date: '1942-05-25'
   title: 八路军副参谋长左权牺牲
@@ -1279,7 +1813,6 @@
   sources:
     - 中文维基百科
     - 中国共产党新闻网
-
 - id: cn-extraterritoriality-abolished-194301
   date: '1943-01-11'
   title: 中美、中英新约签署，废除在华治外法权
@@ -1295,7 +1828,12 @@
     - 中文维基百科
     - 英文维基百科
     - 中国共产党新闻网
-
+  image:
+    url: /images/events/1943/cn-extraterritoriality-abolished-194301.jpg
+    caption: 1943年宋美龄访美在美国国会发表演说争取同盟国支持；同年1月中美、中英分别签署新约，正式废除在华治外法权
+    source: https://commons.wikimedia.org/wiki/File%3AMadame_Chiang_Kai-shek%2C_seated_portrait.jpg
+    author: Unknown photographer / Library of Congress
+    license: Public domain
 - id: cn-us-14th-air-force-194303
   date: '1943-03-10'
   title: 陈纳德组建美国第十四航空队
@@ -1310,7 +1848,6 @@
   sources:
     - 英文维基百科
     - 中文维基百科
-
 - id: cn-changde-battle-194311
   date: '1943-11-02'
   title: 常德会战爆发
@@ -1325,7 +1862,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
 - id: cn-cairo-conference-194311
   date: '1943-11-22'
   title: 蒋介石出席开罗会议
@@ -1347,7 +1883,6 @@
     source: https://commons.wikimedia.org/wiki/File:Cairo_conference.jpg
     author: United States Government
     license: Public domain
-
 - id: cn-operation-ichigo-194404
   date: '1944-04-17'
   title: 日军发动一号作战，豫湘桂战役爆发
@@ -1368,9 +1903,8 @@
     source: https://commons.wikimedia.org/wiki/File:Japanese_Ichigo_Plan_-_April_1944.jpg
     author: United States Military Academy, Department of History
     license: Public domain
-
 - id: cn-chinese-expeditionary-force-myitkyina-194405
-  date: '1944-05'
+  date: 1944-05
   title: 中国远征军缅北滇西反攻取得进展
   category: 战争
   importance: 4
@@ -1383,37 +1917,6 @@
   sources:
     - 中文维基百科
     - 英文维基百科
-
-- id: cn-dixie-mission-yanan-194407
-  date: '1944-07-22'
-  title: 美军观察组抵达延安
-  category: 政治
-  importance: 4
-  summary: 美国陆军观察组抵达延安，与中共中央及敌后根据地接触，评估中共抗战力量和华北敌后局势，成为战时中美关系与国共关系中的重要外交观察节点。
-  confidence: 确定
-  tags:
-    - 延安
-    - 美军观察组
-    - 抗战外交
-  sources:
-    - 英文维基百科
-    - 中文维基百科
-
-- id: cn-democratic-coalition-government-194409
-  date: '1944-09'
-  title: 中共提出建立民主联合政府主张
-  category: 政治
-  importance: 4
-  summary: 抗战后期，中共围绕战后中国政治安排提出废除国民党一党专政、建立民主联合政府的主张，推动国共政治分歧从战时合作转向战后国家制度安排之争。
-  confidence: 确定
-  tags:
-    - 民主联合政府
-    - 国共关系
-    - 战后政治
-  sources:
-    - 中文维基百科
-    - 中国共产党新闻网
-
 - id: cn-cpc-sixth-seventh-plenum-194405
   date: '1944-05-21'
   title: 中共六届七中全会在延安召开
@@ -1428,9 +1931,8 @@
   sources:
     - 中国共产党新闻网
     - 中文维基百科
-
 - id: cn-chen-jiageng-yanan-194406
-  date: '1944-06'
+  date: 1944-06
   title: 陈嘉庚发表《南侨回忆录》
   category: 文化
   importance: 4
@@ -1443,8 +1945,74 @@
   sources:
     - 中文维基百科
     - 中国共产党新闻网
-
-
+- id: cn-dixie-mission-yanan-194407
+  date: '1944-07-22'
+  title: 美军观察组抵达延安
+  category: 政治
+  importance: 4
+  summary: 美国陆军观察组抵达延安，与中共中央及敌后根据地接触，评估中共抗战力量和华北敌后局势，成为战时中美关系与国共关系中的重要外交观察节点。
+  confidence: 确定
+  tags:
+    - 延安
+    - 美军观察组
+    - 抗战外交
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+- id: cn-democratic-coalition-government-194409
+  date: 1944-09
+  title: 中共提出建立民主联合政府主张
+  category: 政治
+  importance: 4
+  summary: 抗战后期，中共围绕战后中国政治安排提出废除国民党一党专政、建立民主联合政府的主张，推动国共政治分歧从战时合作转向战后国家制度安排之争。
+  confidence: 确定
+  tags:
+    - 民主联合政府
+    - 国共关系
+    - 战后政治
+  sources:
+    - 中文维基百科
+    - 中国共产党新闻网
+- id: cn-cpc-seventh-congress-194504
+  date: '1945-04-23'
+  title: 中国共产党第七次全国代表大会在延安开幕
+  category: 政治
+  importance: 5
+  summary: 中共七大在延安召开，确立毛泽东思想为党的指导思想，制定夺取抗战胜利和建设新民主主义中国的政治路线，为战后中国政治格局奠定重要组织与思想基础。
+  confidence: 确定
+  tags:
+    - 中共七大
+    - 延安
+    - 毛泽东思想
+  sources:
+    - 中国共产党新闻网
+    - 中文维基百科
+  image:
+    url: /images/events/1945/cn-cpc-seventh-congress-194504.jpg
+    caption: 延安时期毛泽东与康生合影，作为中共七大召开地和领导层背景资料；非七大会场现场照片
+    source: https://commons.wikimedia.org/wiki/File:Kang_Seng_Mao_Zedong_in_Yan%27an.jpg
+    author: Unknown author
+    license: Public domain
+- id: cn-chongqing-negotiations-194508
+  date: '1945-08-28'
+  title: 毛泽东赴重庆谈判，国共签署“双十协定”
+  category: 政治
+  importance: 5
+  summary: 毛泽东应蒋介石邀请抵达重庆参加国共谈判，双方于10月10日签署《政府与中共代表会谈纪要》，即“双十协定”，围绕和平建国、政治民主化和军队国家化等问题作出政治承诺。
+  confidence: 确定
+  tags:
+    - 重庆谈判
+    - 双十协定
+    - 国共关系
+  sources:
+    - 中国共产党新闻网
+    - 中文维基百科
+  image:
+    url: /images/events/1945/cn-chongqing-negotiations-194508.jpg
+    caption: 1945年8月，毛泽东离开延安赴重庆参加国共谈判
+    source: https://commons.wikimedia.org/wiki/File:Mao_Zedong_leaving_Yan%27an_to_Chongqing.jpg
+    author: Unknown author
+    license: Public domain
 - id: victory-over-japan-1945
   date: '1945-09-02'
   title: 抗战胜利
@@ -1466,49 +2034,6 @@
     source: https://commons.wikimedia.org/wiki/File:Surrender_of_Japan_-_USS_Missouri_(restored).jpg
     author: Army Signal Corps
     license: Public domain
-
-- id: cn-cpc-seventh-congress-194504
-  date: '1945-04-23'
-  title: 中国共产党第七次全国代表大会在延安开幕
-  category: 政治
-  importance: 5
-  summary: 中共七大在延安召开，确立毛泽东思想为党的指导思想，制定夺取抗战胜利和建设新民主主义中国的政治路线，为战后中国政治格局奠定重要组织与思想基础。
-  confidence: 确定
-  tags:
-    - 中共七大
-    - 延安
-    - 毛泽东思想
-  sources:
-    - 中国共产党新闻网
-    - 中文维基百科
-  image:
-    url: /images/events/1945/cn-cpc-seventh-congress-194504.jpg
-    caption: 延安时期毛泽东与康生合影，作为中共七大召开地和领导层背景资料；非七大会场现场照片
-    source: https://commons.wikimedia.org/wiki/File:Kang_Seng_Mao_Zedong_in_Yan%27an.jpg
-    author: Unknown author
-    license: Public domain
-
-- id: cn-chongqing-negotiations-194508
-  date: '1945-08-28'
-  title: 毛泽东赴重庆谈判，国共签署“双十协定”
-  category: 政治
-  importance: 5
-  summary: 毛泽东应蒋介石邀请抵达重庆参加国共谈判，双方于10月10日签署《政府与中共代表会谈纪要》，即“双十协定”，围绕和平建国、政治民主化和军队国家化等问题作出政治承诺。
-  confidence: 确定
-  tags:
-    - 重庆谈判
-    - 双十协定
-    - 国共关系
-  sources:
-    - 中国共产党新闻网
-    - 中文维基百科
-  image:
-    url: /images/events/1945/cn-chongqing-negotiations-194508.jpg
-    caption: 1945年8月，毛泽东离开延安赴重庆参加国共谈判
-    source: https://commons.wikimedia.org/wiki/File:Mao_Zedong_leaving_Yan%27an_to_Chongqing.jpg
-    author: Unknown author
-    license: Public domain
-
 - id: cn-taiwan-retrocession-194510
   date: '1945-10-25'
   title: 中国战区台湾省受降仪式举行
@@ -1529,230 +2054,6 @@
     source: https://commons.wikimedia.org/wiki/File:Retrocession_day_1945.jpg
     author: Unknown author
     license: Public domain
-
-- id: cn-feb28-incident-194702
-  date: '1947-02-28'
-  title: 台湾发生二二八事件
-  category: 政治
-  importance: 5
-  summary: 台湾因查缉私烟冲突引发全岛性抗议，随后遭到国民政府军政力量镇压，造成大量人员伤亡，深刻影响战后台湾政治秩序、族群关系与社会记忆。
-  confidence: 确定
-  tags:
-    - 台湾
-    - 二二八事件
-    - 战后政治
-  sources:
-    - 英文维基百科
-    - 中文维基百科
-  image:
-    url: /images/events/1947/cn-feb28-incident-194702.jpg
-    caption: 二二八事件相关现场影像资料
-    source: https://commons.wikimedia.org/wiki/File:228_Incident_h.jpg
-    author: Unknown author
-    license: Public domain
-
-- id: cn-inner-mongolia-autonomous-government-194705
-  date: '1947-05-01'
-  title: 内蒙古自治政府成立
-  category: 政治
-  importance: 4
-  summary: 内蒙古自治政府在乌兰浩特成立，是中国共产党领导下民族区域自治实践的重要早期节点，并为后来内蒙古自治区建制奠定基础。
-  confidence: 确定
-  tags:
-    - 内蒙古
-    - 民族区域自治
-    - 边疆治理
-  sources:
-    - 中央统战部
-    - 人民网
-    - 中国民族宗教网
-
-- id: cn-liu-deng-dabie-mountains-194706
-  date: '1947-06-30'
-  title: 刘邓大军千里跃进大别山
-  category: 战争
-  importance: 5
-  summary: 刘伯承、邓小平率晋冀鲁豫野战军主力强渡黄河，向大别山实施战略跃进，揭开人民解放军由战略防御转入战略进攻的序幕。
-  confidence: 确定
-  tags:
-    - 解放战争
-    - 大别山
-    - 战略进攻
-  sources:
-    - 共产党员网
-    - 中文维基百科
-  image:
-    url: /images/events/1947/cn-liu-deng-dabie-mountains-194706.jpg
-    caption: 解放战争全国大反攻形势略图，作为刘邓大军跃进大别山战略转折的形势背景图；非作战现场照片
-    source: https://commons.wikimedia.org/wiki/File:%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%8F%8D%E6%94%BB%E5%BD%A2%E5%8A%BF%E7%95%A5%E5%9B%BE03576.jpg
-    author: Unknown author
-    license: Public domain
-
-- id: cn-land-law-outline-194710
-  date: '1947-10-10'
-  title: 《中国土地法大纲》公布
-  category: 政治
-  importance: 5
-  summary: 中共中央公布《中国土地法大纲》，明确废除封建性及半封建性剥削土地制度，推动解放区土地改革进入系统展开阶段。
-  confidence: 确定
-  tags:
-    - 土地改革
-    - 解放区
-    - 制度变革
-  sources:
-    - 共产党员网
-    - 中文维基百科
-
-- id: cn-taiwan-constitution-election-194711
-  date: '1947-11-21'
-  title: 行宪国民大会代表选举举行
-  category: 政治
-  importance: 4
-  summary: 中华民国举行行宪国民大会代表选举，作为 1947 年宪法施行前后的制度安排之一，反映国民政府战后宪政转轨尝试。
-  confidence: 确定
-  tags:
-    - 行宪
-    - 国民大会
-    - 民国政治
-  sources:
-    - 中文维基百科
-    - 英文维基百科
-
-- id: cn-may-day-slogans-194804
-  date: '1948-04-30'
-  title: 中共中央发布“五一口号”
-  category: 政治
-  importance: 4
-  summary: 中共中央发布纪念“五一”劳动节口号，号召各民主党派、人民团体和社会贤达召开政治协商会议、成立民主联合政府，为新政协筹备和新中国建立奠定政治基础。
-  confidence: 确定
-  tags:
-    - 新政协
-    - 统一战线
-    - 建国筹备
-  sources:
-    - 新华网
-    - 中国共产党新闻网
-
-- id: cn-litang-earthquake-194805
-  date: '1948-05-25'
-  title: 川西理塘—稻城发生强烈地震
-  category: 灾害
-  importance: 4
-  summary: 西康省理塘、稻城一带发生约7.3级强烈地震，造成严重人员伤亡和房屋、寺院损毁，是20世纪中国西南地区破坏性较强的地震之一。
-  confidence: 确定
-  tags:
-    - 地震
-    - 四川
-    - 自然灾害
-  sources:
-    - 中国地震局
-    - 美国地质调查局
-
-- id: cn-liaoshen-campaign-194809
-  date: '1948-09-12'
-  title: 辽沈战役打响
-  category: 战争
-  importance: 5
-  summary: 东北人民解放军发起辽沈战役，先后攻克锦州、长春和沈阳，歼灭国民党军主力约47万人，解放东北全境，使全国军事形势发生根本转折。
-  confidence: 确定
-  tags:
-    - 解放战争
-    - 三大战役
-    - 东北
-  sources:
-    - 新华网
-    - 中国共产党新闻网
-  image:
-    url: /images/events/1948/cn-liaoshen-campaign-194809.jpg
-    caption: 1948年辽沈战役锦州攻坚战中，人民解放军在炮火掩护下向城墙发起进攻
-    source: https://commons.wikimedia.org/wiki/File:Final_Attack_on_Jinzhou.jpg
-    author: Unknown author
-    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
-
-- id: cn-huaihai-campaign-194811
-  date: '1948-11-06'
-  title: 淮海战役打响
-  category: 战争
-  importance: 5
-  summary: 华东野战军和中原野战军发起淮海战役，在广大群众支援下歼灭国民党军主力约55.5万人，基本解放长江以北的华东和中原地区。
-  confidence: 确定
-  tags:
-    - 解放战争
-    - 三大战役
-    - 淮海
-  sources:
-    - 新华网
-    - 中国共产党新闻网
-  image:
-    url: /images/events/1948/cn-huaihai-campaign-194811.jpg
-    caption: 淮海战役中，人民解放军华东坦克大队以坦克配合步兵发起攻击
-    source: https://commons.wikimedia.org/wiki/File:PLAHuaihai.jpg
-    author: Unknown author
-    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
-
-- id: cn-pingjin-campaign-194811
-  date: '1948-11-29'
-  title: 平津战役打响
-  category: 战争
-  importance: 4
-  summary: 东北野战军和华北军区部队发起平津战役，攻克天津并促成北平和平解放，使华北大部获得解放，三大战役由此进入最后阶段。
-  confidence: 确定
-  tags:
-    - 解放战争
-    - 三大战役
-    - 北平和平解放
-  sources:
-    - 新华网
-    - 中国共产党新闻网
-  image:
-    url: /images/events/1948/cn-pingjin-campaign-194811.jpg
-    caption: 1949年1月31日人民解放军进入北平，记录平津战役结束阶段的北平和平解放，非1948年11月29日战役发起现场
-    source: https://commons.wikimedia.org/wiki/File:PLA_Enters_Peking.jpg
-    author: 原上传者 Aukingluntom（原作者未详）
-    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
-
-- id: cn-pboc-first-rmb-194812
-  date: '1948-12-01'
-  title: 中国人民银行成立并发行第一套人民币
-  category: 经济
-  importance: 4
-  summary: 中国人民银行在石家庄成立，同日开始发行第一套人民币，逐步统一各解放区货币，为恢复经济秩序和建立新中国统一金融体系创造条件。
-  confidence: 确定
-  tags:
-    - 中国人民银行
-    - 人民币
-    - 金融
-  sources:
-    - 中国人民银行
-    - 新华网
-  image:
-    url: /images/events/1948/cn-pboc-first-rmb-194812.jpg
-    caption: 中国人民银行第一套人民币100元票样；该版票样标注为1949年资料，用于第一套人民币实物背景，非1948年12月1日首发现场
-    source: https://commons.wikimedia.org/wiki/File:RMB1-100-7A.jpg
-    author: 中国人民银行
-    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
-
-- id: cn-kiangya-disaster-194812
-  date: '1948-12-03'
-  title: “江亚轮”在吴淞口外沉没
-  category: 灾害
-  importance: 4
-  summary: 客轮“江亚轮”自上海驶往宁波途中在吴淞口外爆炸沉没，造成数千人死亡或失踪，是中国近现代伤亡最惨重的海难之一。
-  confidence: 确定
-  tags:
-    - 海难
-    - 上海
-    - 交通事故
-  sources:
-    - 上海市地方志办公室
-    - 中国航海博物馆
-  image:
-    url: /images/events/1948/cn-kiangya-disaster-194812.jpg
-    caption: 1948年12月“江亚轮”沉没后的船体照片
-    source: https://commons.wikimedia.org/wiki/File:Sunk_of_SS_Kiangya.jpg
-    author: 申报（上海）
-    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
-
 - id: cn-ppcc-chongqing-194601
   date: '1946-01-10'
   title: 政治协商会议在重庆开幕
@@ -1768,7 +2069,6 @@
     - 中文维基百科
     - 英文维基百科
     - 中国共产党新闻网
-
 - id: cn-full-civil-war-194606
   date: '1946-06-26'
   title: 国民党军进攻中原解放区，全面内战爆发
@@ -1789,7 +2089,6 @@
     source: https://commons.wikimedia.org/wiki/File:Civil_war_1946.jpg
     author: Unknown author
     license: Public domain
-
 - id: cn-constitution-adopted-194612
   date: '1946-12-25'
   title: 制宪国民大会通过《中华民国宪法》
@@ -1804,3 +2103,220 @@
   sources:
     - 中文维基百科
     - 英文维基百科
+- id: cn-feb28-incident-194702
+  date: '1947-02-28'
+  title: 台湾发生二二八事件
+  category: 政治
+  importance: 5
+  summary: 台湾因查缉私烟冲突引发全岛性抗议，随后遭到国民政府军政力量镇压，造成大量人员伤亡，深刻影响战后台湾政治秩序、族群关系与社会记忆。
+  confidence: 确定
+  tags:
+    - 台湾
+    - 二二八事件
+    - 战后政治
+  sources:
+    - 英文维基百科
+    - 中文维基百科
+  image:
+    url: /images/events/1947/cn-feb28-incident-194702.jpg
+    caption: 二二八事件相关现场影像资料
+    source: https://commons.wikimedia.org/wiki/File:228_Incident_h.jpg
+    author: Unknown author
+    license: Public domain
+- id: cn-inner-mongolia-autonomous-government-194705
+  date: '1947-05-01'
+  title: 内蒙古自治政府成立
+  category: 政治
+  importance: 4
+  summary: 内蒙古自治政府在乌兰浩特成立，是中国共产党领导下民族区域自治实践的重要早期节点，并为后来内蒙古自治区建制奠定基础。
+  confidence: 确定
+  tags:
+    - 内蒙古
+    - 民族区域自治
+    - 边疆治理
+  sources:
+    - 中央统战部
+    - 人民网
+    - 中国民族宗教网
+- id: cn-liu-deng-dabie-mountains-194706
+  date: '1947-06-30'
+  title: 刘邓大军千里跃进大别山
+  category: 战争
+  importance: 5
+  summary: 刘伯承、邓小平率晋冀鲁豫野战军主力强渡黄河，向大别山实施战略跃进，揭开人民解放军由战略防御转入战略进攻的序幕。
+  confidence: 确定
+  tags:
+    - 解放战争
+    - 大别山
+    - 战略进攻
+  sources:
+    - 共产党员网
+    - 中文维基百科
+  image:
+    url: /images/events/1947/cn-liu-deng-dabie-mountains-194706.jpg
+    caption: 解放战争全国大反攻形势略图，作为刘邓大军跃进大别山战略转折的形势背景图；非作战现场照片
+    source: https://commons.wikimedia.org/wiki/File:%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%8F%8D%E6%94%BB%E5%BD%A2%E5%8A%BF%E7%95%A5%E5%9B%BE03576.jpg
+    author: Unknown author
+    license: Public domain
+- id: cn-land-law-outline-194710
+  date: '1947-10-10'
+  title: 《中国土地法大纲》公布
+  category: 政治
+  importance: 5
+  summary: 中共中央公布《中国土地法大纲》，明确废除封建性及半封建性剥削土地制度，推动解放区土地改革进入系统展开阶段。
+  confidence: 确定
+  tags:
+    - 土地改革
+    - 解放区
+    - 制度变革
+  sources:
+    - 共产党员网
+    - 中文维基百科
+  image:
+    url: /images/events/1947/cn-land-law-outline-194710.jpg
+    caption: 农民阅读土地改革法令历史档案照片；1947年中共全国土地会议通过并公布《中国土地法大纲》，在解放区全面实行耕者有其田
+    source: https://commons.wikimedia.org/wiki/File%3AA_man_reads_the_Land_Reform_Law_of_PRC.jpg
+    author: Historical Archives / Unknown photographer
+    license: Public domain
+- id: cn-taiwan-constitution-election-194711
+  date: '1947-11-21'
+  title: 行宪国民大会代表选举举行
+  category: 政治
+  importance: 4
+  summary: 中华民国举行行宪国民大会代表选举，作为 1947 年宪法施行前后的制度安排之一，反映国民政府战后宪政转轨尝试。
+  confidence: 确定
+  tags:
+    - 行宪
+    - 国民大会
+    - 民国政治
+  sources:
+    - 中文维基百科
+    - 英文维基百科
+- id: cn-may-day-slogans-194804
+  date: '1948-04-30'
+  title: 中共中央发布“五一口号”
+  category: 政治
+  importance: 4
+  summary: 中共中央发布纪念“五一”劳动节口号，号召各民主党派、人民团体和社会贤达召开政治协商会议、成立民主联合政府，为新政协筹备和新中国建立奠定政治基础。
+  confidence: 确定
+  tags:
+    - 新政协
+    - 统一战线
+    - 建国筹备
+  sources:
+    - 新华网
+    - 中国共产党新闻网
+- id: cn-litang-earthquake-194805
+  date: '1948-05-25'
+  title: 川西理塘—稻城发生强烈地震
+  category: 灾害
+  importance: 4
+  summary: 西康省理塘、稻城一带发生约7.3级强烈地震，造成严重人员伤亡和房屋、寺院损毁，是20世纪中国西南地区破坏性较强的地震之一。
+  confidence: 确定
+  tags:
+    - 地震
+    - 四川
+    - 自然灾害
+  sources:
+    - 中国地震局
+    - 美国地质调查局
+- id: cn-liaoshen-campaign-194809
+  date: '1948-09-12'
+  title: 辽沈战役打响
+  category: 战争
+  importance: 5
+  summary: 东北人民解放军发起辽沈战役，先后攻克锦州、长春和沈阳，歼灭国民党军主力约47万人，解放东北全境，使全国军事形势发生根本转折。
+  confidence: 确定
+  tags:
+    - 解放战争
+    - 三大战役
+    - 东北
+  sources:
+    - 新华网
+    - 中国共产党新闻网
+  image:
+    url: /images/events/1948/cn-liaoshen-campaign-194809.jpg
+    caption: 1948年辽沈战役锦州攻坚战中，人民解放军在炮火掩护下向城墙发起进攻
+    source: https://commons.wikimedia.org/wiki/File:Final_Attack_on_Jinzhou.jpg
+    author: Unknown author
+    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
+- id: cn-huaihai-campaign-194811
+  date: '1948-11-06'
+  title: 淮海战役打响
+  category: 战争
+  importance: 5
+  summary: 华东野战军和中原野战军发起淮海战役，在广大群众支援下歼灭国民党军主力约55.5万人，基本解放长江以北的华东和中原地区。
+  confidence: 确定
+  tags:
+    - 解放战争
+    - 三大战役
+    - 淮海
+  sources:
+    - 新华网
+    - 中国共产党新闻网
+  image:
+    url: /images/events/1948/cn-huaihai-campaign-194811.jpg
+    caption: 淮海战役中，人民解放军华东坦克大队以坦克配合步兵发起攻击
+    source: https://commons.wikimedia.org/wiki/File:PLAHuaihai.jpg
+    author: Unknown author
+    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
+- id: cn-pingjin-campaign-194811
+  date: '1948-11-29'
+  title: 平津战役打响
+  category: 战争
+  importance: 4
+  summary: 东北野战军和华北军区部队发起平津战役，攻克天津并促成北平和平解放，使华北大部获得解放，三大战役由此进入最后阶段。
+  confidence: 确定
+  tags:
+    - 解放战争
+    - 三大战役
+    - 北平和平解放
+  sources:
+    - 新华网
+    - 中国共产党新闻网
+  image:
+    url: /images/events/1948/cn-pingjin-campaign-194811.jpg
+    caption: 1949年1月31日人民解放军进入北平，记录平津战役结束阶段的北平和平解放，非1948年11月29日战役发起现场
+    source: https://commons.wikimedia.org/wiki/File:PLA_Enters_Peking.jpg
+    author: 原上传者 Aukingluntom（原作者未详）
+    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
+- id: cn-pboc-first-rmb-194812
+  date: '1948-12-01'
+  title: 中国人民银行成立并发行第一套人民币
+  category: 经济
+  importance: 4
+  summary: 中国人民银行在石家庄成立，同日开始发行第一套人民币，逐步统一各解放区货币，为恢复经济秩序和建立新中国统一金融体系创造条件。
+  confidence: 确定
+  tags:
+    - 中国人民银行
+    - 人民币
+    - 金融
+  sources:
+    - 中国人民银行
+    - 新华网
+  image:
+    url: /images/events/1948/cn-pboc-first-rmb-194812.jpg
+    caption: 中国人民银行第一套人民币100元票样；该版票样标注为1949年资料，用于第一套人民币实物背景，非1948年12月1日首发现场
+    source: https://commons.wikimedia.org/wiki/File:RMB1-100-7A.jpg
+    author: 中国人民银行
+    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）
+- id: cn-kiangya-disaster-194812
+  date: '1948-12-03'
+  title: “江亚轮”在吴淞口外沉没
+  category: 灾害
+  importance: 4
+  summary: 客轮“江亚轮”自上海驶往宁波途中在吴淞口外爆炸沉没，造成数千人死亡或失踪，是中国近现代伤亡最惨重的海难之一。
+  confidence: 确定
+  tags:
+    - 海难
+    - 上海
+    - 交通事故
+  sources:
+    - 上海市地方志办公室
+    - 中国航海博物馆
+  image:
+    url: /images/events/1948/cn-kiangya-disaster-194812.jpg
+    caption: 1948年12月“江亚轮”沉没后的船体照片
+    source: https://commons.wikimedia.org/wiki/File:Sunk_of_SS_Kiangya.jpg
+    author: 申报（上海）
+    license: Public domain（PD-China；Commons 页面提示需另行核验美国版权状态）

@@ -2522,3 +2522,117 @@
 - 验证：
   - `npm run validate`：通过，校验 808 条事件、47 个朝代、65 位君主、683 条世界事件；保留既有 12 条君主缺口提示。
   - `npm test -- test/load.test.js`：通过，1 个测试文件、31 项测试。
+
+## 1925 年世界事件配图复审补充（2026-08-17）
+
+- 审查范围：1925 年世界事件 6 条；复审后 6 条均有本地配图。
+- 实际读取来源：各事件英文维基百科条目主图与对应 Wikimedia Commons 文件页；重点核验诺姆血清接力、斯科普斯审判、《我的奋斗》初版、洛迦诺公约、贝尔德电视接收机、礼萨汗加冕图的作者、年代和许可。
+- 配图变化：补充 `w-serum-run-nome-192501`、`w-mein-kampf-volume1-192507`、`w-pahlavi-dynasty-192512`；保留并复核其余 3 条既有图片。
+- 非现场说明：贝尔德事件使用 1928 年机械电视接收机；巴列维王朝事件的加冕图数字来源为 1967 年王室出版物，原始拍摄时间未明确，图注已如实标注。
+- 未解决问题：无世界事件缺图；未使用纪念设施或版权不明新闻图片。
+
+## 1926 年世界事件配图复审补充（2026-08-17）
+
+- 审查范围：1926 年世界事件 6 条；复审后 5 条有本地配图，1 条保持无图。
+- 实际读取来源：英文维基百科相关条目及 Wikimedia Commons；德国加入国联照片来自德国联邦档案馆，帝国会议照片来自《泰晤士报》/加拿大图书档案馆记录，裕仁照片来自美国国会图书馆记录。
+- 配图变化：补充 `w-germany-league-nations-192609`、`w-balfour-declaration-192611`、`w-showa-era-begins-192612`；复核戈达德火箭复原图与英国总罢工照片。
+- 非现场说明：戈达德事件为 NASA 工程团队复原场景；昭和事件为约 1926-1928 年裕仁人物背景照，均已在图注中说明。
+- 保持无图：`w-nbc-radio-network-192611`。已检索 NBC、WEAF、1926 年开播节目及同期《Radio Age》档案，只找到整期 PDF 和现代标识，无法确认一张直接对应开播事件且适合作为静态配图的可复用图片。
+
+## 1927 年世界事件配图复审补充（2026-08-17）
+
+- 审查范围：1927 年世界事件 5 条；复审后 5 条均有本地配图。
+- 实际读取来源：法国国家图书馆 Rol 通讯社林德伯格照片、Wikimedia Commons 法恩斯沃斯图像分解器文件页、索尔维国际物理研究所会议合影、安年科夫托洛茨基肖像文件页及《爵士歌手》海报文件页。
+- 配图变化：补充 `w-lindbergh-flight-192705`、`w-farnsworth-television-192709`、`w-solvay-conference-192710`、`w-trotsky-expelled-192711`；保留并复核《爵士歌手》海报。
+- 非现场说明：法恩斯沃斯事件使用 1930 年图像分解器管；托洛茨基事件使用 1923 年肖像，该版本用于 1927 年《时代》封面，图注均已说明。
+- 未解决问题：无世界事件缺图。
+
+## 1928 年世界事件配图复审补充（2026-08-17）
+
+- 审查范围：1928 年世界事件 5 条；复审后 5 条均有本地配图。
+- 实际读取来源：LSE Library 同等选举权法案御准后合影、《非战公约》签署照片、英国官方二战时期弗莱明实验室照片、维克托·捷尼五年计划宣传画、《汽船威利号》公共领域字幕卡的 Commons 文件页。
+- 配图变化：补充 `w-uk-equal-franchise-192807`、`w-kellogg-briand-pact-192808`、`w-penicillin-discovered-192809`、`w-soviet-first-five-year-plan-192810`、`w-steamboat-willie-192811`。
+- 非现场说明：青霉素事件使用 1943 年弗莱明实验室照片；五年计划事件使用 1933 年宣传画；《汽船威利号》使用 1929 年重映版字幕卡，图注均已说明。
+- 未解决问题：无世界事件缺图。
+
+## 1929 年世界事件配图复审补充（2026-08-17）
+
+- 审查范围：1929 年世界事件 5 条；复审后 5 条均有本地配图。
+- 实际读取来源：拉特兰宫条约签署前合影、首届奥斯卡节目封面、瑞士联邦档案馆 1929 年战俘公约原文、法国国家图书馆 Rol 通讯社杨格计划委员会照片、美国政府纽约证券交易所外人群照片的 Commons 文件页。
+- 配图变化：补充 `w-lateran-treaty-192902`、`w-first-academy-awards-192905`、`w-geneva-pow-convention-192907`、`w-young-plan-192909`、`w-great-depression-1929`。
+- 非现场说明：战俘公约使用原文首页；首届奥斯卡使用节目封面，均未冒充典礼或签署现场。
+- 未解决问题：无世界事件缺图。
+
+## 1930 年世界事件配图复审补充（2026-08-17）
+
+- 审查范围：1930 年世界事件 6 条；复审后 6 条均有本地配图。
+- 实际读取来源：冥王星发现原始观测底片、甘地丹迪取盐现场、伦敦海军条约签署照片、威利斯·霍利肖像、首届世界杯官方艺术图、纳粹党 1930 年竞选海报的 Wikimedia Commons 文件页。
+- 配图变化：补充 `w-pluto-discovered-193002`、`w-salt-march-193003`、`w-london-naval-treaty-193004`、`w-smoot-hawley-tariff-193006`、`w-first-fifa-world-cup-193007`、`w-german-federal-election-193009`。
+- 非现场说明：斯姆特-霍利关税法使用共同发起人霍利 1923 年肖像；德国选举使用纳粹党同期竞选宣传海报，图注均明确资料性质。
+- 未解决问题：无世界事件缺图；未使用日期元数据异常的现代选举结果图。
+
+## 1931 年世界事件配图复审补充（2026-08-17）
+
+- 审查范围：1931 年世界事件 4 条；复审后 3 条有本地配图，1 条保持无图。
+- 实际读取来源：西班牙第二共和国成立庆祝照片、胡佛 1928 年总统肖像、1931 年日军骑兵进入沈阳照片的 Wikimedia Commons 文件页；并针对英国脱离金本位制检索同期文件、银行资料、杂志和纸币候选。
+- 配图变化：补充 `w-spanish-second-republic-193104`、`w-hoover-moratorium-193106`、`w-manchurian-crisis-193109`。
+- 图注纠正与非现场说明：西班牙照片的旧联邦档案标题误写为马德里，Commons 元数据已纠正为巴塞罗那，图注采用巴塞罗那并说明电车悬挂加泰罗尼亚旗；胡佛事件使用 1928 年人物肖像，明确为背景资料而非 1931 年倡议发布现场。
+- 保持无图：`w-uk-leaves-gold-standard-193109`。针对性检索只找到无关旧文件、通用银行资料、整期杂志和纸币，无法确认一张直接对应 1931 年 9 月英国脱离金本位制且适合作为静态配图的可复用图片，因此未接受替代图。
+
+## 1932 年世界事件配图复审补充（2026-08-17）
+
+- 审查范围：1932 年世界事件 5 条；复审后 4 条有本地配图，1 条保持无图。
+- 实际读取来源：史汀生 1931 年国务卿任内肖像、约 1932 年查科战争巴拉圭军机枪阵地、伊本·沙特 1930 年致英国海湾事务官员信函、罗斯福 1932 年 10 月竞选照片的 Wikimedia Commons 文件页；并以英、法、德文关键词检索洛桑赔款会议候选。
+- 配图变化：补充 `w-stimson-doctrine-193201`、`w-chaco-war-begins-193209`、`w-saudi-arabia-founded-193209`、`w-roosevelt-elected-193211`；本地图片均已目视确认与文件页描述一致。
+- 非现场说明：史汀生事件使用 1931 年人物肖像；沙特建国事件使用 1930 年伊本·沙特信函作为建国前文献背景，均在图注中明确不是事件现场或建国公告原件。
+- 保持无图：`w-lausanne-conference-193207`。多语种定向检索只返回无关政治照片、巴黎和会照片、银行期刊及后世文档，未找到可确认对应 1932 年洛桑赔款会议的可复用静态图片。
+- 误配处理：精确候选未通过脚本建国事件标题规则时，自动回退曾错误命中吉达清真寺；该 YAML 图片块与本地文件已立即删除，未作为审查结果保留。
+
+## 1933 年世界事件配图复审补充（2026-08-17）
+
+- 审查范围：1933 年世界事件 5 条；复审后 4 条有本地配图，1 条保持无图。
+- 实际读取来源：1933 年 1 月 30 日希特勒首届内阁合影、2 月 27 日德国国会大厦火灾现场、3 月 4 日罗斯福与胡佛前往就职典礼照片、3 月 24 日《授权法》在《帝国法律公报》刊载页的 Wikimedia Commons 文件页；并检索德国退出国联和裁军会议的同期照片与文书候选。
+- 配图变化：补充 `w-hitler-chancellor-193301`、`w-reichstag-fire-193302`、`w-new-deal-begins-193303`、`w-enabling-act-193303`；本地图片均已目视确认与文件页描述一致。
+- 资料图说明：罗斯福新政事件使用其就职当天前往国会大厦的照片，代表新政府上台这一新政起点；《授权法》使用次日正式刊载的法律文本，图注均说明与事件的具体关系。
+- 保持无图：`w-germany-leaves-league-193310`。针对德国退出国际联盟与裁军会议的检索只返回无关期刊、后世研究和其他外交事件资料，未找到可确认对应 1933 年 10 月退出决定的可复用静态图片。
+
+## 1920—1948 年五星事件配图收尾（2026-08-17）
+
+- 审查范围：仅检查 1920—1948 年 `importance: 5` 事件；四星事件不要求配图。
+- 完成统计：中国五星事件 44 条、世界五星事件 84 条，共 128 条；缺图 0 条，图片路径失效 0 条，图片元数据不完整 0 条。
+- 1940 年误配修正：`w-france-falls-194006` 原图错误匹配为法国 Glandieu 瀑布，现替换为 1940 年 6 月 22 日亨齐格在贡比涅签署对德停战协定的德国联邦档案馆照片。来源：https://commons.wikimedia.org/wiki/File%3ABundesarchiv_B_145_Bild-P50284%2C_Compi%C3%A8gne%2C_Waffenstillstandvertrag%2C_Huntziger.jpg；作者：Unknown photographer / German Federal Archives；许可：CC BY-SA 3.0 de。
+- 1947 年误配修正：`w-gatt-signed-194710` 原图错误匹配为同名艺人 Josh Gatt，现替换为收录 GATT 文本的《联合国条约汇编》第 55 卷资料页。来源：https://commons.wikimedia.org/wiki/File%3AUN_Treaty_Series_-_vol_55.pdf；作者：Secretariat of the United Nations；许可：Public domain。
+- 验证：`npm run validate` 通过；`npm test` 通过（10 个测试文件、146 项测试）；专项脚本确认 128 条五星事件全部有图，且图片文件与 `caption/source/author/license` 字段完整。
+## 1840—2026 五星事件配图补全（2026-08-25）
+
+- 审查范围：按用户要求检查 1840—2026 年全部 `importance: 5` 事件是否配图。基线：五星事件共 714 条，缺图 37 条（中国 `xiandai.yaml` 27 条、世界 `modern.yaml` 10 条）；凡含 `image:` 字段的事件均带非空 `url`，无「有字段无图」情况。
+- 配图原则：仅从 Wikimedia Commons 等明确允许复用的来源取图；优先事件现场图；非现场的会址、人物肖像、象征图一律在图注标明；未找到可靠可复用图的事件保持无图并记录。不下载新华网版权图片。
+
+### 本次已补图（12 条）
+
+| 事件 ID | 图片内容 | 来源文件页 | 作者/机构 | 许可 |
+|---|---|---|---|---|
+| w-gaza-ceasefire-202501 | 停火后加沙民众经拉希德街返乡 | commons:File:Return_of_displaced_people_via_Al-Rasheed_Street_after_ceasefire,_January_2025,_Gaza_Strip.jpg | Hussein Jaber | CC BY-SA 3.0 IGO |
+| w-us-trump-2nd-term-202501 | 特朗普 2025-01-20 宣誓就任 | commons:File:Donald_Trump_takes_the_oath_of_office_(2025)_(alternate).jpg | Ike Hayman（白宫） | Public domain |
+| w-myanmar-earthquake-202503 | 缅甸 7.7 级地震 USGS 震感图 | commons:File:2025-03-28_2025_Mandalay,_Burma_(Myanmar)_Earthquake_M7.7_earthquake_shakemap_(USGS).jpg | USGS | Public domain |
+| w-liberation-day-tariffs-202504 | 奥克兰港集装箱吊机（跨境贸易象征图，图注已注明） | commons:File:Container_cranes_at_the_Port_of_Oakland.jpg | Jim Heaphy / Cullen328 | CC BY-SA 4.0 |
+| w-pope-francis-dies-202504 | 教宗方济各 2014 访韩留影（肖像） | commons:File:Pope_Francis_Korea_Haemi_Castle_19_(4x5_cropped).jpg | Korea.net / Jeon Han | CC BY-SA 2.0 |
+| w-israel-iran-war-202506 | 2025-06 以军 F-15I 奔袭伊朗 | commons:File:Israeli_Air_Force_fighter_jets_on_their_way_to_attack_Iran,_June_2025._I.jpg | IDF 发言人办公室 | CC BY-SA 3.0 |
+| w-gaza-ceasefire-plan-202510 | 鲁比奥向特朗普汇报加沙和平协议 | commons:File:Secretary_of_State_Marco_Rubio_briefing_President_Donald_Trump_on_the_Gaza_Peace_Deal.png | The White House | Public domain |
+| w-human-rights-covenants-196612 | 纽约联合国大会厅（会厅资料照，图注已注明） | commons:File:United_Nations_General_Assembly_Hall_(2).jpg | Basil D Soufi | CC BY-SA 3.0 |
+| w-fifa-world-cup-202606 | 2026 世界杯决赛场地 MetLife 球场（场地资料照，图注已注明） | commons:File:MetLife_Stadium,_East_Rutherford_NJ.jpg | Kenneth C. Zirkel | CC BY-SA 4.0 |
+| w-us-israel-iran-war-202602 | 2026 德黑兰恩格赫拉布广场周边遭袭现场 | commons:File:Attack_around_Enghelab_Square_1.jpg | Mostafa Tehrani | CC BY 4.0 |
+| cn-shanghai-hongkong-stock-connect-201411 | 香港交易所交易广场（交易场所资料照，图注已注明） | commons:File:Exchange_Square_(交易廣塲),_Hong_Kong_Stock_Exchange,_Hong_Kong_SAR,_China_(Ank_Kumar,_Infosys_Limited)_02.jpg | Ank Kumar (Infosys) | CC BY-SA 4.0 |
+| cn-china-world-cup-debut-200206 | 2002 韩日世界杯首尔世界杯体育场（场馆资料照，图注已注明） | commons:File:서울_월드컵_경기장_전경_(2001.11).jpg | 문덕관 기증 | KOGL Type 1 |
+
+本地图片均存放于 `public/images/events/<年份>/`，命名与事件 ID 一致；`image:` 字段的 `url/caption/source/author/license` 已写入对应 YAML。
+
+### 剩余缺图（25 条，处置：按用户决策维持无图并记录）
+
+以下中国事件为党的全会/党代会/重大会议（如历届若干中全会、十三大、十四大、十五大等）、纯政策理念类（八字方针、四清、分税制、八项规定、全面二孩、十五五规划等）或无自由许可的现场照（1982 年撒切尔访华邓小平会谈的著名照片为版权照片，无自由版）。这些事件在 Wikimedia Commons 上未检索到可确认对应事件、且许可明确的独立现场图；同一会址（人民大会堂等）照片若用于多个不同全会将构成跨事件复用，违反项目规则。2026-08-25 经用户决策采用「方案 1：维持无图 + 记录」，本批 25 条五星事件保持无图并在此登记原因。
+
+维持无图的事件：`cn-cpc-7th-3rd-plenum-195006`、`cn-eight-char-policy-196009`、`cn-cpc-8th-9th-plenum-196101`、`cn-cpc-investigation-year-196101`、`cn-cpc-8th-10th-plenum-196209`、`cn-front-ten-rules-196305`、`cn-scitech-plan-196312`、`cn-11th-6th-plenum-resolution-198106`、`cn-thatcher-deng-hk-198209`、`cn-12th-3rd-plenum-reform-198410`、`cn-13th-congress-198710`、`cn-14th-cpc-congress-199210`、`cn-tax-sharing-reform-199401`、`cn-15th-cpc-congress-199709`、`cn-cpc-16th-3rd-plenum-200310`、`cn-agricultural-tax-repeal-200601`、`cn-11th-five-year-plan-200603`、`cn-reform-openning-30th-200812`、`cn-eight-cardinal-couplets-201212`、`cn-fourth-plenum-18th-201410`、`cn-two-child-policy-enforced-201601`、`cn-fourth-plenum-19th-201910`、`cn-fifth-plenum-202010`、`cn-sixth-plenum-resolution-202111`、`cn-two-sessions-202603`。
+
+### 验证
+
+- `npm run validate` 通过（1183 条事件、950 条世界事件；其余 ⚠ 为既有的朝代缺口提示，与本任务无关）。未执行 `npm run build`。

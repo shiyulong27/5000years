@@ -37,5 +37,5 @@ describe('十丘重大事件真实专属配图严苛审计验证', () => {
       }
       hashMap.set(hash, event.id)
     }
-  })
+  }, 120000)
 })

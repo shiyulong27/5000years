@@ -5074,6 +5074,12 @@
   sources:
     - 新华网
     - FIFA
+  image:
+    url: /images/events/2002/cn-china-world-cup-debut-200206.jpg
+    caption: 2002年韩日世界杯首尔世界杯体育场（中国队比赛场馆；图为场馆资料照，非比赛现场）
+    source: "https://commons.wikimedia.org/wiki/File:서울_월드컵_경기장_전경_(2001.11).jpg"
+    author: "문덕관 기증"
+    license: "KOGL Type 1"
 - id: cn-three-gorges-diversion-closure-200211
   date: '2002-11-06'
   title: 三峡工程导流明渠截流成功
@@ -7031,6 +7037,12 @@
     - 历史转折
   sources:
     - 新华网
+  image:
+    url: /images/events/2014/cn-shanghai-hongkong-stock-connect-201411.jpg
+    caption: 香港交易所所在的香港交易广场（沪港通互联互通的代表性交易场所；图为建筑资料照，非开通仪式现场）
+    source: "https://commons.wikimedia.org/wiki/File:Exchange_Square_(交易廣塲),_Hong_Kong_Stock_Exchange,_Hong_Kong_SAR,_China_(Ank_Kumar,_Infosys_Limited)_02.jpg"
+    author: "Ank Kumar (Infosys)"
+    license: "CC BY-SA 4.0"
 - id: cn-south-to-north-water-diversion-201412
   date: '2014-12-12'
   title: 南水北调中线一期工程正式通水
