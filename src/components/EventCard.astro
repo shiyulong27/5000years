@@ -52,7 +52,14 @@ const imgUrl = rawImgUrl ? (rawImgUrl.startsWith('/') ? `${base}${rawImgUrl.slic
   {/* 历史图片/媒体配图支持 */}
   {imgUrl && (
     <figure class="event-media">
-      <img src={imgUrl} alt={imgCaption || event.title} loading="lazy" class="event-image" />
+      <img
+        src={imgUrl}
+        alt={imgCaption || event.title}
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        class="event-image"
+      />
       {imgCaption && <figcaption class="event-image-caption">{imgCaption}</figcaption>}
     </figure>
   )}

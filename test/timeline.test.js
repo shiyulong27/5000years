@@ -245,6 +245,22 @@ describe('buildTimeline — 传说人物带', () => {
       detailPath: 'legend/sanhuang-wudi/',
     })
   })
+
+  it('传说人物在起始年份行挂载 startingFigures', () => {
+    const startRow = out.rows.find((row) => row.type === 'year' && row.year === -2000)
+    expect(startRow).toBeDefined()
+    expect(startRow.startingFigures.map((f) => f.id)).toContain(legend.id)
+    const fig = startRow.startingFigures.find((f) => f.id === legend.id)
+    expect(fig.startYear).toBe(-2000)
+    expect(fig.endYear).toBe(-1900)
+    expect(fig.lifespanYears).toBe(101)
+  })
+
+  it('在终止年份行挂载 endingFigures', () => {
+    const endRow = out.rows.find((row) => row.type === 'year' && row.year === -1900)
+    expect(endRow).toBeDefined()
+    expect(endRow.endingFigures.map((f) => f.id)).toContain(legend.id)
+  })
 })
 
 describe('边界情况', () => {

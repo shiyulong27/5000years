@@ -15,9 +15,14 @@ if (timeline) {
 
   const showWorld = document.getElementById('show-world')
   const showFigures = document.getElementById('show-figures')
+  const figureFieldsBar = document.getElementById('figure-fields-bar')
+  const figFieldToggles = [...document.querySelectorAll('.fig-field-toggle')]
   const catToggles = [...document.querySelectorAll('.cat-toggle')]
   const jump = document.getElementById('jump-dynasty')
   const current = document.getElementById('current-dynasty')
+
+  const lifespanBeam = document.getElementById('lifespan-beam')
+  const beamBadge = document.getElementById('beam-badge')
 
   // ── 事件卡片日期解析与 DOM 排序辅助函数 ──────────────────────────
   function getEventSortKey(el) {
@@ -78,14 +83,37 @@ if (timeline) {
     })
   }
 
+  // 预缓存关键 DOM 引用以实现亚毫秒级无卡顿即时筛选
+  const allEventCards = [...timeline.querySelectorAll('.event-card')]
+  const allFigureCards = [...timeline.querySelectorAll('.figure-card')]
+
+  // 按行 (grid-row) 分组缓存，避免每次触发筛选重复遍历 3000+ 个单元格
+  const rowsMap = new Map()
+  for (const cell of timeline.querySelectorAll('.cell')) {
+    const gRow = cell.style.gridRow
+    if (!gRow) continue
+    if (!rowsMap.has(gRow)) {
+      rowsMap.set(gRow, { china: null, world: null, axis: null })
+    }
+    const entry = rowsMap.get(gRow)
+    if (cell.classList.contains('cell-china')) entry.china = cell
+    else if (cell.classList.contains('cell-world')) entry.world = cell
+    else if (cell.classList.contains('cell-axis')) entry.axis = cell
+  }
+
+  // 预编译朝代横幅区块
+  const allTimelineChildren = [...timeline.children]
+
   /**
-   * 重算各行可见性。
+   * 重算各行可见性（优化版：纯内存 Map 遍历，无重复 querySelectorAll 开销）。
    */
   function apply() {
     const activeLevels = new Set(levelToggles.filter((t) => t.checked).map((t) => Number(t.value)))
     const activeCats = new Set(catToggles.filter((t) => t.checked).map((t) => t.value))
+    const isFiguresOn = !!showFigures?.checked
+    const activeFigFields = new Set(figFieldToggles.filter((t) => t.checked).map((t) => t.value))
 
-    // 动态更新按钮文案
+    // 动态更新重要度按钮文案
     if (levelBtnText) {
       const selected = levelToggles.filter((t) => t.checked).map((t) => Number(t.value)).sort((a, b) => b - a)
       if (selected.length === 5) {
@@ -97,33 +125,39 @@ if (timeline) {
       }
     }
 
-    // 先决定每张卡片的去留
-    for (const card of timeline.querySelectorAll('.event-card')) {
+    // 控制人物子领域筛选栏的显隐
+    if (figureFieldsBar) {
+      if (isFiguresOn) {
+        figureFieldsBar.removeAttribute('hidden')
+      } else {
+        figureFieldsBar.setAttribute('hidden', '')
+      }
+    }
+
+    // 1. 决定每张事件卡片的去留
+    for (let i = 0; i < allEventCards.length; i++) {
+      const card = allEventCards[i]
       const imp = Number(card.dataset.importance) || 3
       const impOk = activeLevels.has(imp)
       const catOk = activeCats.has(card.dataset.category)
       card.hidden = !(impOk && catOk)
     }
 
-    // 2. 按行 (grid-row) 分组统计可见性，防止中轴年份节点在空行处堆叠重叠
-    const rowsMap = new Map()
-    for (const cell of timeline.querySelectorAll('.cell')) {
-      const gRow = cell.style.gridRow
-      if (!gRow) continue
-      if (!rowsMap.has(gRow)) {
-        rowsMap.set(gRow, { china: null, world: null, axis: null })
-      }
-      const entry = rowsMap.get(gRow)
-      if (cell.classList.contains('cell-china')) entry.china = cell
-      else if (cell.classList.contains('cell-world')) entry.world = cell
-      else if (cell.classList.contains('cell-axis')) entry.axis = cell
+    // 2. 决定人物卡片的去留（按领域多选过滤）
+    for (let i = 0; i < allFigureCards.length; i++) {
+      const figCard = allFigureCards[i]
+      const fieldOk = activeFigFields.has(figCard.dataset.field)
+      figCard.hidden = !fieldOk
     }
 
+    // 3. 极速行可见性与中轴空行收拢计算
     for (const [_, entry] of rowsMap) {
       const chinaCards = entry.china ? [...entry.china.querySelectorAll('.event-card')] : []
       const worldCards = entry.world ? [...entry.world.querySelectorAll('.event-card')] : []
+      const figureCards = entry.china ? [...entry.china.querySelectorAll('.figure-card')] : []
 
-      const hasChinaVisible = chinaCards.some((c) => !c.hidden)
+      const hasFiguresVisible = isFiguresOn && figureCards.some((c) => !c.hidden)
+      const hasChinaVisible = chinaCards.some((c) => !c.hidden) || hasFiguresVisible
       const hasWorldVisible = worldCards.some((c) => !c.hidden)
       const hasRulers = !!entry.axis?.querySelector('.axis-rulers')
       const hasRulerCards = !!entry.china?.querySelector('.ruler-card')
@@ -134,12 +168,12 @@ if (timeline) {
       if (entry.axis) entry.axis.classList.toggle('is-empty', !hasChinaVisible && !hasWorldVisible && !hasRulers)
     }
 
-    // 3. 处理朝代横幅：若某朝代下无任何可见事件，则隐藏其横幅
-    const allChildren = [...timeline.children]
+    // 4. 处理朝代横幅：若某朝代下无任何可见事件/君主/人物，则隐藏其横幅
     let currentBanner = null
     let currentBannerHasContent = false
 
-    for (const el of allChildren) {
+    for (let i = 0; i < allTimelineChildren.length; i++) {
+      const el = allTimelineChildren[i]
       if (el.classList.contains('banner-row')) {
         if (currentBanner) {
           currentBanner.classList.toggle('is-empty', !currentBannerHasContent)
@@ -149,7 +183,8 @@ if (timeline) {
       } else if (el.classList.contains('cell-china') || el.classList.contains('cell-world')) {
         if (!el.classList.contains('is-empty')) {
           const cards = el.querySelectorAll('.event-card')
-          if ([...cards].some((c) => !c.hidden) || el.querySelector('.ruler-card')) {
+          const figCards = el.querySelectorAll('.figure-card')
+          if ([...cards].some((c) => !c.hidden) || (isFiguresOn && [...figCards].some((c) => !c.hidden)) || el.querySelector('.ruler-card')) {
             currentBannerHasContent = true
           }
         }
@@ -161,17 +196,353 @@ if (timeline) {
 
     timeline.classList.toggle('hide-world', showWorld && !showWorld.checked)
 
-    // 人物图层默认关闭——人物数量远多于事件，常驻显示会淹没长卷本身
-    timeline.classList.toggle('show-figures', !!showFigures?.checked)
-
-    // 每次计算可见性时，确保 DOM 卡片顺序严格符合当前排序设置
-    sortAllContainers(isDescMode())
+    // 人物图层控制
+    timeline.classList.toggle('show-figures', isFiguresOn)
   }
 
   levelToggles.forEach((t) => t.addEventListener('change', apply))
   showWorld?.addEventListener('change', apply)
   showFigures?.addEventListener('change', apply)
+  figFieldToggles.forEach((t) => t.addEventListener('change', apply))
   catToggles.forEach((t) => t.addEventListener('change', apply))
+
+  // ── 交互式生命周期纵向高亮光束 (Lifespan Projection Beam) ──────────
+  function formatYear(yearNum) {
+    const y = Number(yearNum)
+    if (isNaN(y)) return ''
+    return y < 0 ? `前${Math.abs(y)}年` : `${y}年`
+  }
+
+  function handleFigureEnter(card) {
+    if (!lifespanBeam) return
+    const rowStart = Number(card.dataset.rowStart)
+    const rowEnd = Number(card.dataset.rowEnd)
+    const figureName = card.dataset.figureName || ''
+    const startYear = card.dataset.startYear
+    const endYear = card.dataset.endYear
+
+    const themeColor = getComputedStyle(card).getPropertyValue('--fig-theme-color').trim() || '#8a6d3b'
+
+    // 查找对应起点行与终点行 DOM
+    const startCell = timeline.querySelector(`.cell-axis[style*="grid-row:${rowStart}"], .cell-axis[style*="grid-row: ${rowStart}"]`) || card.closest('.cell-china')
+    const endCell = timeline.querySelector(`.cell-axis[style*="grid-row:${rowEnd}"], .cell-axis[style*="grid-row: ${rowEnd}"]`) || card.closest('.cell-china')
+
+    if (!startCell || !endCell) return
+
+    const timelineRect = timeline.getBoundingClientRect()
+    const startRect = startCell.getBoundingClientRect()
+    const endRect = endCell.getBoundingClientRect()
+
+    const top = startRect.top - timelineRect.top
+    const height = Math.max(endRect.bottom - startRect.top, 28)
+
+    // 定位到中轴中心线
+    const axisCell = timeline.querySelector('.cell-axis')
+    let left = 0
+    if (axisCell) {
+      const axisRect = axisCell.getBoundingClientRect()
+      left = axisRect.left - timelineRect.left + (axisRect.width / 2) - 2
+    }
+
+    lifespanBeam.style.top = `${top}px`
+    lifespanBeam.style.height = `${height}px`
+    lifespanBeam.style.left = `${left}px`
+    lifespanBeam.style.setProperty('--beam-color', themeColor)
+
+    // 计算同时代交集名士羁绊
+    const otherFigures = [...timeline.querySelectorAll('.figure-card')].filter((f) => f !== card && !f.hidden)
+    const peers = otherFigures
+      .filter((f) => {
+        const rS = Number(f.dataset.rowStart)
+        const rE = Number(f.dataset.rowEnd)
+        return Math.max(rowStart, rS) <= Math.min(rowEnd, rE)
+      })
+      .map((f) => f.dataset.figureName)
+      .filter(Boolean)
+
+    const uniquePeers = [...new Set(peers)]
+    const peerText = uniquePeers.length > 0 ? ` · 同代名士: ${uniquePeers.slice(0, 4).join('、')}${uniquePeers.length > 4 ? '等' : ''}` : ''
+
+    if (beamBadge) {
+      beamBadge.textContent = `★ ${figureName} (${formatYear(startYear)}～${formatYear(endYear)})${peerText}`
+    }
+
+    lifespanBeam.style.display = 'block'
+    timeline.classList.add('figure-focusing')
+
+    // 为区间内的年份行高亮
+    for (let r = rowStart; r <= rowEnd; r++) {
+      const cells = timeline.querySelectorAll(`.cell[style*="grid-row:${r}"], .cell[style*="grid-row: ${r}"]`)
+      cells.forEach((c) => c.classList.add('in-lifespan'))
+    }
+  }
+
+  function handleFigureLeave() {
+    if (lifespanBeam) lifespanBeam.style.display = 'none'
+    timeline.classList.remove('figure-focusing')
+    timeline.querySelectorAll('.in-lifespan').forEach((c) => c.classList.remove('in-lifespan'))
+  }
+
+  timeline.addEventListener('mouseover', (e) => {
+    const card = e.target.closest('.figure-card')
+    if (card) {
+      handleFigureEnter(card)
+    }
+  })
+
+  timeline.addEventListener('mouseout', (e) => {
+    const card = e.target.closest('.figure-card')
+    if (card) {
+      handleFigureLeave()
+    }
+  })
+
+  // ── 全局即时搜索与高亮直达 ────────────────────────────────────
+  const searchInput = document.getElementById('timeline-search-input')
+  const searchDropdown = document.getElementById('search-results-dropdown')
+  const searchList = document.getElementById('search-results-list')
+
+  function highlightTarget(el) {
+    if (!el) return
+    // 若目标属于人物卡且当前人物图层未开启，自动开启
+    if (el.classList.contains('figure-card') && showFigures && !showFigures.checked) {
+      showFigures.checked = true
+      apply()
+    }
+
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    el.classList.add('highlight-pulse')
+    setTimeout(() => el.classList.remove('highlight-pulse'), 3000)
+
+    if (el.classList.contains('figure-card')) {
+      handleFigureEnter(el)
+    }
+  }
+
+  function buildSearchIndex() {
+    const index = []
+
+    // 1. 人物
+    timeline.querySelectorAll('.figure-card').forEach((el) => {
+      const name = el.dataset.figureName || ''
+      const field = el.dataset.field || ''
+      const sY = el.dataset.startYear || ''
+      const eY = el.dataset.endYear || ''
+      const note = el.querySelector('.figure-card-note')?.textContent || ''
+      index.push({
+        type: 'figure',
+        typeName: '人物',
+        title: name,
+        meta: `${field} · ${formatYear(sY)}~${formatYear(eY)}`,
+        sub: note,
+        el,
+      })
+    })
+
+    // 2. 事件
+    timeline.querySelectorAll('.event-card').forEach((el) => {
+      const title = el.querySelector('.event-title')?.textContent || ''
+      const date = el.dataset.date || ''
+      const cat = el.dataset.category || ''
+      const summary = el.querySelector('.event-summary')?.textContent || ''
+      index.push({
+        type: 'event',
+        typeName: '事件',
+        title,
+        meta: `${cat} · ${date}`,
+        sub: summary,
+        el,
+      })
+    })
+
+    // 3. 君主
+    timeline.querySelectorAll('.ruler-card').forEach((el) => {
+      const name = el.querySelector('.ruler-name, h3')?.textContent || ''
+      const note = el.querySelector('.ruler-note, p')?.textContent || ''
+      index.push({
+        type: 'ruler',
+        typeName: '君主',
+        title: name,
+        meta: '在位君主',
+        sub: note,
+        el,
+      })
+    })
+
+    // 4. 朝代
+    timeline.querySelectorAll('.banner-row').forEach((el) => {
+      const name = el.querySelector('.banner-name')?.textContent || ''
+      const dates = el.querySelector('.banner-dates')?.textContent || ''
+      index.push({
+        type: 'dynasty',
+        typeName: '朝代',
+        title: name,
+        meta: dates,
+        sub: '历史纪元',
+        el,
+      })
+    })
+
+    return index
+  }
+
+  let searchIndex = null
+  let selectedSearchIndex = -1
+
+  function performSearch(query) {
+    const q = query.trim().toLowerCase()
+    if (!q) {
+      searchDropdown?.setAttribute('hidden', '')
+      if (searchList) searchList.innerHTML = ''
+      return
+    }
+
+    if (!searchIndex) {
+      searchIndex = buildSearchIndex()
+    }
+
+    const matches = searchIndex
+      .filter((item) => {
+        return (
+          item.title.toLowerCase().includes(q) ||
+          item.meta.toLowerCase().includes(q) ||
+          item.sub.toLowerCase().includes(q)
+        )
+      })
+      .slice(0, 10)
+
+    if (!searchList || !searchDropdown) return
+    searchList.innerHTML = ''
+    selectedSearchIndex = -1
+
+    if (matches.length === 0) {
+      const emptyDiv = document.createElement('div')
+      emptyDiv.className = 'search-no-result'
+      emptyDiv.textContent = `未找到与「${query}」相关的历史人物或事件`
+      searchList.appendChild(emptyDiv)
+    } else {
+      matches.forEach((item, idx) => {
+        const itemBtn = document.createElement('div')
+        itemBtn.className = 'search-result-item'
+        itemBtn.dataset.idx = String(idx)
+
+        const badge = document.createElement('span')
+        badge.className = `search-item-badge badge-${item.type}`
+        badge.textContent = item.typeName
+
+        const title = document.createElement('span')
+        title.className = 'search-item-title'
+        title.textContent = item.title
+
+        const meta = document.createElement('span')
+        meta.className = 'search-item-year'
+        meta.textContent = item.meta
+
+        itemBtn.appendChild(badge)
+        itemBtn.appendChild(title)
+        itemBtn.appendChild(meta)
+
+        itemBtn.addEventListener('click', () => {
+          searchDropdown.setAttribute('hidden', '')
+          highlightTarget(item.el)
+        })
+
+        searchList.appendChild(itemBtn)
+      })
+    }
+
+    searchDropdown.removeAttribute('hidden')
+  }
+
+  if (searchInput && searchDropdown && searchList) {
+    let debounceTimer = null
+    searchInput.addEventListener('input', () => {
+      clearTimeout(debounceTimer)
+      debounceTimer = setTimeout(() => {
+        performSearch(searchInput.value)
+      }, 120)
+    })
+
+    searchInput.addEventListener('focus', () => {
+      if (searchInput.value.trim()) {
+        performSearch(searchInput.value)
+      }
+    })
+
+    searchInput.addEventListener('keydown', (e) => {
+      const items = [...searchList.querySelectorAll('.search-result-item')]
+      if (items.length === 0) return
+
+      if (e.key === 'ArrowDown') {
+        e.preventDefault()
+        selectedSearchIndex = (selectedSearchIndex + 1) % items.length
+        items.forEach((it, i) => it.classList.toggle('is-selected', i === selectedSearchIndex))
+        items[selectedSearchIndex]?.scrollIntoView({ block: 'nearest' })
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault()
+        selectedSearchIndex = (selectedSearchIndex - 1 + items.length) % items.length
+        items.forEach((it, i) => it.classList.toggle('is-selected', i === selectedSearchIndex))
+        items[selectedSearchIndex]?.scrollIntoView({ block: 'nearest' })
+      } else if (e.key === 'Enter') {
+        e.preventDefault()
+        if (selectedSearchIndex >= 0 && items[selectedSearchIndex]) {
+          items[selectedSearchIndex].click()
+        } else if (items[0]) {
+          items[0].click()
+        }
+      } else if (e.key === 'Escape') {
+        searchDropdown.setAttribute('hidden', '')
+      }
+    })
+
+    document.addEventListener('click', (e) => {
+      if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
+        searchDropdown.setAttribute('hidden', '')
+      }
+    })
+  }
+
+  // 快捷键 Ctrl+K / Cmd+K
+  window.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault()
+      searchInput?.focus()
+      searchInput?.select()
+    }
+  })
+
+  // ── 朝代微缩导航轨 (Minimap) 联动 ─────────────────────────────
+  const minimapNodes = [...document.querySelectorAll('.minimap-node')]
+  minimapNodes.forEach((node) => {
+    node.addEventListener('click', () => {
+      const dynastyId = node.dataset.dynastyId
+      if (!dynastyId) return
+      const target = timeline.querySelector(`.cell-china[data-dynasty~="${dynastyId}"]`)
+      if (target) {
+        highlightTarget(target)
+      }
+    })
+  })
+
+  const dynastyBanners = [...timeline.querySelectorAll('.banner-row')]
+  if (dynastyBanners.length > 0 && minimapNodes.length > 0) {
+    const minimapObserver = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const bannerName = entry.target.querySelector('.banner-name')?.textContent.trim()
+            if (bannerName) {
+              minimapNodes.forEach((n) => {
+                n.classList.toggle('is-active', n.dataset.name === bannerName)
+              })
+            }
+          }
+        }
+      },
+      { rootMargin: '-10% 0px -75% 0px', threshold: 0 }
+    )
+    dynastyBanners.forEach((b) => minimapObserver.observe(b))
+  }
 
   // 概览 / 详情模式动态切换控制 (支持 2023, 2024, 2025, 2026 等年份)
   const toggleBtns = [...document.querySelectorAll('.axis-toggle-btn')]
@@ -279,7 +650,7 @@ if (timeline) {
 
   /** 收集所有参与 grid 定位的元素并缓存其原始 gridRow */
   function collectGridItems() {
-    const selectors = ['.cell', '.banner-row', '.civ-band', '.figure-slot']
+    const selectors = ['.cell', '.banner-row', '.civ-band']
     const items = []
     for (const sel of selectors) {
       for (const el of timeline.querySelectorAll(sel)) {
@@ -364,6 +735,7 @@ if (timeline) {
       sortOrder: btnSortDesc?.classList.contains('active') ? 'desc' : 'asc',
       showWorld: showWorld ? showWorld.checked : true,
       showFigures: showFigures ? showFigures.checked : false,
+      figureFields: figFieldToggles.filter((t) => t.checked).map((t) => t.value),
       categories: catToggles.filter((t) => t.checked).map((t) => t.value),
     }
 
@@ -396,6 +768,14 @@ if (timeline) {
     // 3. 人物 (showFigures)
     if (typeof settings.showFigures === 'boolean' && showFigures) {
       showFigures.checked = settings.showFigures
+    }
+
+    // 3.1 人物领域 (figureFields)
+    if (Array.isArray(settings.figureFields)) {
+      const figFieldSet = new Set(settings.figureFields)
+      figFieldToggles.forEach((t) => {
+        t.checked = figFieldSet.has(t.value)
+      })
     }
 
     // 4. 事件分类 (categories)

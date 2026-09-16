@@ -74,6 +74,16 @@ const modules = [
     desc: '收录伏羲、神农、女娲与五帝，明确区分传说、文献记载和可考历史，不把象征性年代当作确定事实。',
   },
   {
+    id: 'shanhaijing',
+    title: '🦚 山海经 · 上古神兽与奇幻大荒',
+    sub: '35 种异兽神禽 · 8 大创世史诗 · 十八卷全景导读与视频考据',
+    tag: '典籍 / 志怪',
+    status: 'ready',
+    link: `${base}shanhaijing/`,
+    badge: '🔥 重磅已上线',
+    desc: '全景呈现先秦志怪之源《山海经》：生僻字拼音点读、九尾狐与烛龙等 35 种神兽图鉴、女娲夸父刑天等创世神话，支持多维筛选与音视频考据。',
+  },
+  {
     id: 'poets',
     title: '✍️ 千古风流 · 诗词名家',
     sub: '汇聚历代诗人作家的生平年谱、名篇佳作与人文足迹',
@@ -96,12 +106,22 @@ const modules = [
   {
     id: 'geography',
     title: '🗺️ 山川风物 · 地理图志',
-    sub: '九州山川、重镇古都、名山大川与风土人情图鉴',
+    sub: '历代疆域演进 · 古今都城对照 · 丝路与运河长卷',
     tag: '地理 / 舆图',
-    status: 'upcoming',
-    link: '#',
-    badge: '规划中',
-    desc: '融汇古代舆图与现代地理风物，呈现大好河山与地理变迁。',
+    status: 'ready',
+    link: `${base}geography/`,
+    badge: '🌟 历代舆图已上线',
+    desc: '系统呈现夏朝至1999年澳门回归各历史时期疆域变迁与古都演进，支持双地名考证、朝代版图对比与动态时间轴。',
+  },
+  {
+    id: 'ai',
+    title: '🤖 人工智能 · 大模型与 Agent 工程实战',
+    sub: 'Embedding 向量 · RAG 全链路 · Re-rank 精排 · Memory 记忆 · Dify 工作流与面试题库',
+    tag: 'AI / 智能体工程',
+    status: 'ready',
+    link: `${base}ai/`,
+    badge: '🔥 重磅已上线',
+    desc: '专为程序员、Agent 开发者与 Dify 工作流工程师打造：深度拆解向量索引、父子分块、RRF 排名融合、Harness 自动化评测与 10+ 道高频大厂硬核面试题。',
   },
   {
     id: 'science',
@@ -197,6 +217,8 @@ const modules = [
     <footer class="portal-footer">
       <p class="foot-text">【十丘】知识门户 · 纯静态构建 · 欢迎共同建设万象知识库</p>
       <p class="foot-text">
+        <a href={`${base}shanhaijing/`} style="color: #8b261e; font-weight: 600; text-decoration: none; margin-right: 1rem;">🦚 山海经大荒专页</a>
+        <a href={`${base}ai/`} style="color: #2563eb; font-weight: 600; text-decoration: none; margin-right: 1rem;">🤖 AI & Agent 核心指南</a>
         <a href={`${base}chinese/pinyin/`} style="color: #e11d48; font-weight: 600; text-decoration: none; margin-right: 1rem;">🎯 汉语拼音专页</a>
         <a href={`${base}math/`} style="color: #059669; font-weight: 600; text-decoration: none; margin-right: 1rem;">📐 数学启蒙</a>
         <a href={`${base}english/`} style="color: #d97706; font-weight: 600; text-decoration: none; margin-right: 1rem;">🔤 英语自然拼读</a>

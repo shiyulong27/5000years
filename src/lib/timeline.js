@@ -1,4 +1,4 @@
-import { sortKey, yearOf } from './date.js'
+import { sortKey, yearOf, spanYears } from './date.js'
 
 /**
  * 渲染模型——全项目唯一的复杂逻辑层。
@@ -50,14 +50,14 @@ function isDescendantOf(dynasty, ancestorId, byId) {
  * 选取需要出行的年份。
  *
  * 出行条件：该年有中国事件 ∨ 有世界事件 ∨ 是某朝代或君主起始年
- * ∨ 是传说人物约活动区间的边界年。
+ * ∨ 是传说人物约活动区间的边界年 ∨ 是历史人物生卒年。
  *
  * 不逐年出行——公元前跨度约 2500 年而事件仅数十条，逐年会产生数千空行，
  * 页面既慢又无从阅读。视觉连续性由朝代色带跨行保证，不靠空行。
  *
  * @returns {number[]} 升序去重
  */
-export function collectYears(events = [], worldEvents = [], dynasties = [], legends = [], rulers = []) {
+export function collectYears(events = [], worldEvents = [], dynasties = [], legends = [], rulers = [], figures = []) {
   const years = new Set()
   for (const e of events) years.add(yearOf(e.date))
   for (const e of worldEvents) years.add(yearOf(e.date))
@@ -66,6 +66,10 @@ export function collectYears(events = [], worldEvents = [], dynasties = [], lege
   for (const legend of legends) {
     if (legend.timeline_start) years.add(yearOf(legend.timeline_start))
     if (legend.timeline_end) years.add(yearOf(legend.timeline_end))
+  }
+  for (const figure of figures) {
+    if (figure.birth) years.add(yearOf(figure.birth))
+    if (figure.death) years.add(yearOf(figure.death))
   }
   return [...years].sort((a, b) => a - b)
 }
@@ -95,7 +99,7 @@ export function buildTimeline(data) {
   } = data
 
   const byId = new Map(dynasties.map((d) => [d.id, d]))
-  const years = collectYears(events, worldEvents, dynasties, legends, rulers)
+  const years = collectYears(events, worldEvents, dynasties, legends, rulers, figures)
 
   // 按年份归拢事件
   const cnByYear = new Map()
@@ -176,6 +180,8 @@ export function buildTimeline(data) {
       rulers: rulersAt(y, rootIds),
       startingRulers: rulersAtBoundary(y, rootIds, 'reign_start'),
       endingRulers: rulersAtBoundary(y, rootIds, 'reign_end'),
+      startingFigures: [],
+      endingFigures: [],
       cnEvents: orderEvents(cnByYear.get(y) ?? []),
       worldEvents: orderEvents(worldByYear.get(y) ?? []),
       gridRow: rows.length + 1,
@@ -277,19 +283,31 @@ export function buildTimeline(data) {
       lanes[lane] = rowEnd
     }
 
-    figureBands.push({
+    const figureObj = {
       id: f.id,
       name: f.name,
       field: f.field,
       note: f.note,
       confidence: f.confidence,
+      dispute: f.dispute,
       kind: f.kind,
       group: f.group,
       detailPath: f.detailPath,
+      birth: f.birth || f.timelineStart,
+      death: f.death || f.timelineEnd,
+      startYear: s,
+      endYear: e,
+      lifespanYears: spanYears(f.timelineStart, f.timelineEnd),
       rowStart,
       rowEnd,
       lane,
-    })
+    }
+
+    figureBands.push(figureObj)
+    startRowObj.startingFigures.push(figureObj)
+    if (inside.length > 1) {
+      endRowObj.endingFigures.push(figureObj)
+    }
   }
 
   return {

@@ -2,6 +2,7 @@
 import { fileURLToPath } from 'node:url'
 import Base from '../../layouts/Base.astro'
 import RulerTable from '../../components/RulerTable.astro'
+import PolityRulers from '../../components/PolityRulers.astro'
 import EventCard from '../../components/EventCard.astro'
 import { loadAll } from '../../lib/load.js'
 import { resolveRoot } from '../../lib/timeline.js'
@@ -11,6 +12,8 @@ export async function getStaticPaths() {
   const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
   const data = loadAll(dataDir)
   const byId = new Map(data.dynasties.map((d) => [d.id, d]))
+  // 人物详情页实际存在的 id 集合：链接只在目标页面真实存在时生成（防死链）
+  const figureDetailIds = new Set(data.figureDetails.map((d) => d.id))
 
   // 仅为根朝代出页——子朝代在其根的页内拆分展示
   const roots = new Map()
@@ -22,39 +25,74 @@ export async function getStaticPaths() {
   const isUnder = (d, rootId) => resolveRoot(d, byId).id === rootId
 
   return [...roots.values()].map((root) => {
-    const children = data.dynasties.filter((d) => d.id !== root.id && isUnder(d, root.id))
-    const memberIds = new Set([root.id, ...children.map((d) => d.id)])
-    const isRelated = (record) => record.related_dynasties?.some((id) => memberIds.has(id))
+    const descendants = data.dynasties.filter((d) => d.id !== root.id && isUnder(d, root.id))
+    const children = descendants.filter((d) => d.parent === root.id)
+    const memberIds = new Set([root.id, ...descendants.map((d) => d.id)])
+    const periods = descendants.length > 0
+      ? descendants.filter((period) => !descendants.some((candidate) => candidate.parent === period.id))
+      : [root]
+    const contentGroups = periods.map((period) => {
+      const lineageIds = new Set()
+      let current = period
+      while (current) {
+        lineageIds.add(current.id)
+        if (current.id === root.id) break
+        current = byId.get(current.parent)
+      }
+      const figureBelongs = (figure) => {
+        const related = figure.related_dynasties ?? []
+        // 生卒不可考者（birth_note/death_note 表述）不做年份重叠推断，
+        // 仅按 related_dynasties 显式归属，避免无日期人物散落各分期
+        const b = figure.birth ? yearOf(figure.birth) : null
+        const d = figure.death ? yearOf(figure.death) : null
+        const overlaps = b != null && d != null && b <= yearOf(period.end) && d >= yearOf(period.start)
+        const lineageRelated = related.some((id) => lineageIds.has(id))
+        return related.includes(period.id) || (lineageRelated && overlaps) || (related.length === 0 && overlaps)
+      }
+      const eventBelongs = (event) => {
+        const related = event.related_dynasties ?? []
+        const year = yearOf(event.date)
+        const inside = year >= yearOf(period.start) && year <= yearOf(period.end)
+        const lineageRelated = related.some((id) => lineageIds.has(id))
+        return related.includes(period.id) || (lineageRelated && inside) || (related.length === 0 && inside)
+      }
+
+      return {
+        period: children.length > 0 ? period : null,
+        figures: data.figures.filter(figureBelongs).sort((a, b) => sortKey(a.birth) - sortKey(b.birth)),
+        events: data.events
+          .filter(eventBelongs)
+          .sort((a, b) => (b.importance ?? 0) - (a.importance ?? 0) || sortKey(a.date) - sortKey(b.date))
+          .slice(0, 12)
+          .sort((a, b) => sortKey(a.date) - sortKey(b.date)),
+      }
+    })
+    const polityGroups = periods
+      .map((period) => ({
+        period,
+        polities: data.polities.filter((polity) => polity.period === period.id),
+      }))
+      .filter((group) => group.polities.length > 0)
 
     return {
       params: { id: root.id },
       props: {
         dynasty: root,
         children,
+        periodEntries: descendants,
         dynasties: data.dynasties,
+        figureDetailIds,
         rulers: data.rulers
           .filter((r) => memberIds.has(r.dynasty))
           .sort((a, b) => sortKey(a.reign_start) - sortKey(b.reign_start)),
-        figures: data.figures
-          .filter((figure) => {
-            const overlaps = yearOf(figure.birth) <= yearOf(root.end) && yearOf(figure.death) >= yearOf(root.start)
-            return figure.related_dynasties?.length ? isRelated(figure) : overlaps
-          })
-          .sort((a, b) => sortKey(a.birth) - sortKey(b.birth)),
-        events: data.events
-          .filter((e) => {
-            const y = yearOf(e.date)
-            return (y >= yearOf(root.start) && y <= yearOf(root.end)) || isRelated(e)
-          })
-          .sort((a, b) => (b.importance ?? 0) - (a.importance ?? 0) || sortKey(a.date) - sortKey(b.date))
-          .slice(0, 12)
-          .sort((a, b) => sortKey(a.date) - sortKey(b.date)),
+        polityGroups,
+        contentGroups,
       },
     }
   })
 }
 
-const { dynasty, children, rulers, figures, events, dynasties } = Astro.props
+const { dynasty, children, periodEntries, rulers, polityGroups, contentGroups, dynasties, figureDetailIds } = Astro.props
 
 const fmt = (d) => {
   const y = yearOf(d)
@@ -62,6 +100,7 @@ const fmt = (d) => {
 }
 
 const base = import.meta.env.BASE_URL
+const polityPeriodIds = new Set(polityGroups.map((group) => group.period.id))
 ---
 
 <Base title={`${dynasty.name} · 上下五千年`}>
@@ -81,9 +120,11 @@ const base = import.meta.env.BASE_URL
       <section class="dynasty-section dynasty-periods">
         <h2 class="section-title">分期</h2>
         <ul class="sub-dynasties">
-          {children.map((c) => (
-            <li class="sub-dynasty" data-dynasty={c.id}>
-              <strong class="sub-name">{c.name}</strong>
+          {periodEntries.map((c) => (
+            <li class:list={['sub-dynasty', { 'sub-dynasty-nested': c.parent !== dynasty.id }]} data-dynasty={c.id}>
+              {polityPeriodIds.has(c.id)
+                ? <a class="sub-name" href={`#period-${c.id}`}>{c.name}</a>
+                : <strong class="sub-name">{c.name}</strong>}
               <span class="sub-span">　{fmt(c.start)}–{fmt(c.end)}</span>
               {c.capital && <span class="sub-capital">　都 {c.capital}</span>}
             </li>
@@ -99,41 +140,55 @@ const base = import.meta.env.BASE_URL
       </section>
     )}
 
-    {figures.length > 0 && (
-      <section class="dynasty-section dynasty-figures">
-        <h2 class="section-title">重要人物</h2>
-        <div class="dynasty-figure-grid">
-          {figures.map((figure) => (
-            <article class="dynasty-figure-card" id={`figure-${figure.id}`}>
-              <header class="dynasty-figure-head">
-                <h3>{figure.name}</h3>
-                <span class="dynasty-figure-field">{figure.field}</span>
-              </header>
-              <p class="dynasty-figure-meta">
-                <span>约 {fmt(figure.birth)}–{fmt(figure.death)}</span>
-                {figure.confidence && <span class="dynasty-figure-confidence">{figure.confidence}</span>}
-              </p>
-              <p class="dynasty-figure-note">{figure.note}</p>
-              {figure.dispute && (
-                <details class="dynasty-figure-dispute">
-                  <summary>争议说明</summary>
-                  <p>{figure.dispute}</p>
-                </details>
-              )}
-            </article>
-          ))}
-        </div>
-      </section>
-    )}
+    {polityGroups.map((group) => (
+      <PolityRulers period={group.period} polities={group.polities} />
+    ))}
 
-    {events.length > 0 && (
-      <section class="dynasty-section dynasty-events">
-        <h2 class="section-title">重要事件</h2>
-        <div class="event-list">
-          {events.map((e) => <EventCard event={e} />)}
-        </div>
-      </section>
-    )}
+    {contentGroups.map((group) => (
+      <>
+        {group.figures.length > 0 && (
+          <section class="dynasty-section dynasty-figures" data-period={group.period?.id}>
+            <h2 class="section-title">{group.period ? `${group.period.name} · 重要人物` : '重要人物'}</h2>
+            <div class="dynasty-figure-grid">
+              {group.figures.map((figure) => (
+                <article class="dynasty-figure-card" id={`figure-${figure.id}`}>
+                  <header class="dynasty-figure-head">
+                    <h3>
+                      {figureDetailIds.has(figure.id) ? (
+                        <a href={`${base}figure/${figure.id}/`} class="dynasty-figure-link">{figure.name}</a>
+                      ) : (
+                        figure.name
+                      )}
+                    </h3>
+                    <span class="dynasty-figure-field">{figure.field}</span>
+                  </header>
+                  <p class="dynasty-figure-meta">
+                    <span>约 {fmt(figure.birth)}–{fmt(figure.death)}</span>
+                    {figure.confidence && <span class="dynasty-figure-confidence">{figure.confidence}</span>}
+                  </p>
+                  <p class="dynasty-figure-note">{figure.note}</p>
+                  {figure.dispute && (
+                    <details class="dynasty-figure-dispute">
+                      <summary>争议说明</summary>
+                      <p>{figure.dispute}</p>
+                    </details>
+                  )}
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {group.events.length > 0 && (
+          <section class="dynasty-section dynasty-events" data-period={group.period?.id}>
+            <h2 class="section-title">{group.period ? `${group.period.name} · 重要事件` : '重要事件'}</h2>
+            <div class="event-list">
+              {group.events.map((event) => <EventCard event={event} />)}
+            </div>
+          </section>
+        )}
+      </>
+    ))}
 
     <a class="back-link" href={`${base}#dynasty-${dynasty.id}`}>← 返回长卷</a>
   </article>

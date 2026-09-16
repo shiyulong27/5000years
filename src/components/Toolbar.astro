@@ -1,7 +1,8 @@
 ---
-import { CATEGORIES } from '../lib/enums.js'
+import { CATEGORIES, FIELDS } from '../lib/enums.js'
 
 const { dynasties } = Astro.props
+const figureFields = [...FIELDS, '传说']
 ---
 
 <div class="toolbar">
@@ -54,10 +55,20 @@ const { dynasties } = Astro.props
       <span class="switch-label">世界对照</span>
     </label>
 
-    <label class="switch switch-figures">
-      <input type="checkbox" class="switch-input" id="show-figures" />
-      <span class="switch-label">人物</span>
-    </label>
+    <div class="figure-switch-wrapper">
+      <label class="switch switch-figures" title="开启/关闭历史人物生平图层">
+        <input type="checkbox" class="switch-input" id="show-figures" />
+        <span class="switch-label">人物</span>
+      </label>
+      <div class="figure-fields-bar" id="figure-fields-bar" hidden>
+        {figureFields.map((f) => (
+          <label class="chip chip-fig-field" data-field={f} title={`筛选「${f}」领域人物`}>
+            <input type="checkbox" class="fig-field-toggle chip-input" value={f} checked />
+            <span class="chip-label">{f}</span>
+          </label>
+        ))}
+      </div>
+    </div>
 
     <button
       type="button"
@@ -76,6 +87,24 @@ const { dynasties } = Astro.props
         <span class="chip-label">{c}</span>
       </label>
     ))}
+  </div>
+
+  <div class="tool-group tool-search">
+    <div class="search-box-wrapper" id="search-box-wrapper">
+      <span class="search-icon">🔍</span>
+      <input
+        type="search"
+        id="timeline-search-input"
+        class="search-input"
+        placeholder="搜索人物 / 事件 / 君主 / 年份…"
+        autocomplete="off"
+        aria-label="搜索历史长卷"
+      />
+      <kbd class="search-kbd" title="快捷键 Ctrl+K 快速搜索">Ctrl K</kbd>
+      <div class="search-results-dropdown" id="search-results-dropdown" hidden>
+        <div class="search-results-list" id="search-results-list"></div>
+      </div>
+    </div>
   </div>
 
   <div class="tool-group tool-jump">
