@@ -1,0 +1,337 @@
+# 经典名家组合与历史谱系（并称 / 流派 / 群英）
+# 用于人物总览页的分类筛选、图谱聚合、组合卡片与详卷关联。
+# 成员 id 须在 data/figures.yaml 或 data/legends/*.yaml 中有对应条目。
+
+- id: sanhuang-wudi
+  name: 三皇五帝
+  category: 神话传说
+  period: 上古时代
+  summary: 华夏文明古籍追述的开天创世、人文始祖与德治圣王，经战国至两汉儒家与诸子文献累积定型为华夏上古共祖体系。
+  tags: [华夏始祖, 禅让, 创世神话, 人文先祖]
+  figures:
+    - id: sanhuang-fuxi
+      role_in_group: 人文始祖 · 创制八卦
+    - id: sanhuang-shennong
+      role_in_group: 农耕始祖 · 尝百草兴医药
+    - id: sanhuang-nuwa
+      role_in_group: 创世母神 · 抟土造人炼石补天
+    - id: wudi-huangdi
+      role_in_group: 华夏共祖 · 垂衣裳修礼乐
+    - id: wudi-zhuanxu
+      role_in_group: 绝地天通 · 确立神人与四时秩序
+    - id: wudi-diku
+      role_in_group: 顺天成纪 · 兴礼乐化育万物
+    - id: wudi-yao
+      role_in_group: 尧天舜日 · 敬授民时禅让于贤
+    - id: wudi-shun
+      role_in_group: 舜日德风 · 孝感动天修明百官
+
+- id: zhanguo-sigongzi
+  name: 战国四公子
+  category: 政治
+  period: 战国晚期
+  summary: 战国末年齐、赵、魏、楚四国宗室与相国，皆以养士数千、倾家解难、抗秦图存著称，为战国游侠与养士之风的代表。
+  tags: [战国, 养士, 六国抗秦, 战国策]
+  figures:
+    - id: mengchangjun
+      role_in_group: 齐相 · 门客三千 · 鸡鸣狗盗
+    - id: pingyuanjun
+      role_in_group: 赵相 · 散家财解邯郸之围 · 毛遂自荐
+    - id: xinlingjun
+      role_in_group: 魏公子 · 窃符救赵 · 统帅五国联军破秦
+    - id: chunshenjun
+      role_in_group: 楚相 · 救赵定盟 · 开辟江东黄浦
+
+- id: zhuzi-baijia-core
+  name: 诸子百家巨擘
+  category: 思想
+  period: 春秋战国
+  summary: 春秋战国大变革时期的核心思想宗师，儒、道、墨、法、兵各成体系，奠定后世两千余年中华文明的根本思想根基。
+  tags: [百家争鸣, 先秦哲学, 道家, 儒家, 法家, 兵家, 墨家]
+  figures:
+    - id: laozi
+      role_in_group: 道家鼻祖 · 无为而治 · 《道德经》
+    - id: kongzi
+      role_in_group: 儒家至圣 · 克己复礼 · 万世师表
+    - id: mozi
+      role_in_group: 墨家领袖 · 兼爱非攻 · 节用尚同
+    - id: zhuangzi
+      role_in_group: 道家宗师 · 逍遥齐物 · 寓言寄意
+    - id: mengzi
+      role_in_group: 儒家亚圣 · 仁政王道 · 民贵君轻
+    - id: xunzi
+      role_in_group: 儒家集大成 · 性恶礼治 · 天行有常
+    - id: hanfei
+      role_in_group: 法家集大成 · 法术势合一 · 帝王南面之术
+    - id: sunwu
+      role_in_group: 兵圣 · 《孙子兵法》 · 不战而屈人之兵
+
+- id: hanchu-sanjie
+  name: 汉初三杰
+  category: 政治
+  period: 秦汉之际
+  summary: 汉高祖刘邦定天下之三大元勋，司马迁赞为「运筹帷幄、镇抚关中、兼并列国」，后世良将贤相之楷模。
+  tags: [楚汉相争, 开国元勋, 史记]
+  figures:
+    - id: zhangliang
+      role_in_group: 帝师谋圣 · 运筹帷幄之中，决胜千里之外
+    - id: xiaohe
+      role_in_group: 开国宰相 · 镇守关中足食足兵 · 制定九章律
+    - id: hanxin
+      role_in_group: 汉家兵仙 · 连百万之众，战必胜，攻必取
+
+- id: sancao
+  name: 三曹
+  category: 文学
+  period: 汉魏之际
+  summary: 汉末建安文学开创者曹氏父子，其诗文悲凉慷慨、骨气奇高，带领文人群体开创中国文学史上的「建安风骨」。
+  tags: [建安文学, 乐府诗, 魏晋风骨]
+  figures:
+    - id: caocao
+      role_in_group: 魏武帝 · 《短歌行》《龟虽寿》 · 慷慨苍凉
+    - id: caopi
+      role_in_group: 魏文帝 · 《燕歌行》《典论·论文》 · 创制七言典范
+    - id: caozhi
+      role_in_group: 陈思王 · 《洛神赋》《白马篇》 · 才高八斗
+
+- id: jianan-qizi
+  name: 建安七子
+  category: 文学
+  period: 东汉末年
+  summary: 汉魏之际聚集于曹操父子周围的七位杰出文人，曹丕《典论·论文》定称，其作长于悲慨写实，共铸建安文学高峰。
+  tags: [建安文学, 曹魏, 诗赋]
+  figures:
+    - id: kongrong
+      role_in_group: 鲁国孔融 · 气高博学 · 辞赋跌宕
+    - id: chenlin
+      role_in_group: 广陵陈琳 · 擅章表檄文 · 雄浑磅礴
+    - id: wangcan
+      role_in_group: 山阳王粲 · 七子之冠 · 《登楼赋》《七哀诗》
+    - id: xugan
+      role_in_group: 北海徐干 · 恬虚淡泊 · 《中论》
+    - id: ruanyu
+      role_in_group: 陈留阮瑀 · 擅长书记草檄 · 文辞俊逸
+    - id: yingyang
+      role_in_group: 汝南应玚 · 和而不靡 · 笃学好文
+    - id: liuzhen
+      role_in_group: 东平刘桢 · 骨气奇高 · 词采振拔
+
+- id: zhulin-qixian
+  name: 竹林七贤
+  category: 思想
+  period: 魏晋之际
+  summary: 魏正始至西晋初年七位名士，常聚于山阳竹林之下肆意酣畅、清谈玄远，为魏晋风度与玄学思潮的标志性群体。
+  tags: [魏晋风度, 玄学, 清谈, 广陵散]
+  figures:
+    - id: jikang
+      role_in_group: 广陵绝响 · 越名教而任自然 · 傲然风骨
+    - id: ruanji
+      role_in_group: 穷途痛哭 · 《咏怀诗》八十二首 · 隐晦幽深
+    - id: shantao
+      role_in_group: 识人拔萃 · 竹林长者 · 托孤信诺
+    - id: xiangxiu
+      role_in_group: 《庄子注》创见 · 《思旧赋》追怀
+    - id: liuling
+      role_in_group: 沉湎纵酒 · 《酒德颂》蔑视礼教
+    - id: wangrong
+      role_in_group: 神姿明秀 · 兼济朝野 · 道林名士
+    - id: ruanxian
+      role_in_group: 妙解律吕 · 阮咸乐器之名祖
+
+- id: chutang-sijie
+  name: 初唐四杰
+  category: 文学
+  period: 初唐
+  summary: 初唐高宗与武后年间四位杰出青年诗人，以勃郁才情突破梁陈绮靡宫体诗风，拓展唐诗题材与七言歌行体制，杜甫评为「不废江河万古流」。
+  tags: [初唐, 律诗奠基, 歌行]
+  figures:
+    - id: wangbo
+      role_in_group: 《滕王阁序》 · 落霞与孤鹜齐飞 · 奇才早逝
+    - id: yangjiong
+      role_in_group: 《从军行》 · 宁为百夫长，胜作一书生 · 辞气豪迈
+    - id: luzhaolin
+      role_in_group: 《长安古意》 · 得成比目何辞死 · 悲壮沉痛
+    - id: luobinwang
+      role_in_group: 《讨武曌檄》 · 鹅鹅鹅咏鹅 · 慷慨名士
+
+- id: tangshen-lidu
+  name: 李杜
+  category: 文学
+  period: 盛唐
+  summary: 唐代诗歌双子星座，分别代表中国古代浪漫主义与现实主义诗歌的巅峰，韩愈赞曰「李杜文章在，光焰万丈长」。
+  tags: [唐诗双峰, 诗仙, 诗圣, 盛唐气象]
+  figures:
+    - id: libai
+      role_in_group: 诗仙 · 豪放飘逸 · 浪漫主义诗冠
+    - id: dufu
+      role_in_group: 诗圣 · 沉郁顿挫 · 民间疾苦诗史
+
+- id: xiaolidu
+  name: 小李杜
+  category: 文学
+  period: 晚唐
+  summary: 晚唐最具代表性的两位杰出诗人，承李杜之后另辟蹊径，工于七绝与律诗，寄托晚唐世道沉沦中的深情与政治慨叹。
+  tags: [晚唐诗, 咏史绝句, 律诗巅峰]
+  figures:
+    - id: lishangyin
+      role_in_group: 玉溪生 · 无题诗沉郁迷离 · 构思奇丽
+    - id: dumu
+      role_in_group: 樊川居士 · 俊爽峭拔 · 咏史绝句千古流传
+
+- id: tangsong-badajia
+  name: 唐宋八大家
+  category: 文学
+  period: 唐代至两宋
+  summary: 唐代与宋代提倡古文运动、革新文风的八位散文巨匠，明代茅坤编选《唐宋八大家文钞》定名，为中国古代散文典范。
+  tags: [古文运动, 散文宗师, 茅坤文钞]
+  figures:
+    - id: hanyu
+      role_in_group: 古文领袖 · 文起八代之衰，道济天下之溺
+    - id: liuzongyuan
+      role_in_group: 唐宋八大家 · 永州八记 · 雄深雅健
+    - id: ouyangxiu
+      role_in_group: 北宋文宗 · 醉翁亭记 · 领导北宋诗文革新
+    - id: suxun
+      role_in_group: 老苏 · 战国策论 · 纵横博辩
+    - id: sushi
+      role_in_group: 东坡 · 前后赤壁赋 · 豪迈旷达千古一人
+    - id: suzhe
+      role_in_group: 颍滨 · 上枢密韩太尉书 · 汪洋淡泊
+    - id: wanganshi
+      role_in_group: 临川先生 · 游褒禅山记 · 严谨峭拔
+    - id: zenggong
+      role_in_group: 南丰先生 · 墨池记 · 纯正古雅
+
+- id: sansu
+  name: 三苏
+  category: 文学
+  period: 北宋
+  summary: 北宋眉山苏洵、苏轼、苏辙父子三人，皆位列唐宋八大家，在诗、词、文、赋各个领域震烁古今，为中国文学史最著名父子文豪组合。
+  tags: [蜀中三苏, 眉山, 家学渊源, 古文运动]
+  figures:
+    - id: suxun
+      role_in_group: 父 · 苏洵（老泉）· 精于策论
+    - id: sushi
+      role_in_group: 长子 · 苏轼（东坡）· 文豪旷达全能
+    - id: suzhe
+      role_in_group: 次子 · 苏辙（颍滨）· 汪洋淡泊贤相
+
+- id: sumen-sixueshi
+  name: 苏门四学士
+  category: 文学
+  period: 北宋
+  summary: 北宋受苏轼赏识、拔擢并结为师友的四位杰出文人，承东坡文脉而各具独创，推动宋代诗歌、词作与散文多元发展。
+  tags: [苏轼门生, 江西诗派, 宋词名家]
+  figures:
+    - id: huangtingjian
+      role_in_group: 山谷道人 · 江西诗派开山 · 夺胎换骨
+    - id: qinguan
+      role_in_group: 少游淮海 · 婉约词家正宗 · 两情若是久长时
+    - id: chaobuzhi
+      role_in_group: 晁补之 · 济北学士 · 词风雄放高浑
+    - id: zhanglei
+      role_in_group: 柯山张耒 · 诗风平易亲切 · 哭奠东坡
+
+- id: kaishu-sidajia
+  name: 楷书四大家
+  category: 艺术
+  period: 唐代至元代
+  summary: 中国书法史上正楷造诣最深、影响最深远的四大宗师（欧颜柳赵），四人体势各异，欧体险峻、颜体雄浑、柳体骨劲、赵体研秀，后人学书之楷模。
+  tags: [书法正脉, 欧体, 颜体, 柳体, 赵体]
+  figures:
+    - id: ouyangxun
+      role_in_group: 欧体 · 严谨险绝 · 《九成宫醴泉铭》
+    - id: yanzhenqing
+      role_in_group: 颜体 · 雄浑宽博 · 《祭侄文稿》
+    - id: liugongquan
+      role_in_group: 柳体 · 骨力道健 · 《玄秘塔碑》
+    - id: zhaomengfu
+      role_in_group: 赵体 · 遒媚秀逸 · 书画同源
+
+- id: song-sijia
+  name: 宋四家
+  category: 艺术
+  period: 两宋
+  summary: 北宋书法四位杰出代表（苏、黄、米、蔡），突破唐人尚法严谨规范，开创宋代「尚意」书法新风尚，以性灵风神著称。
+  tags: [宋代书法, 尚意书风, 墨林瑰宝]
+  figures:
+    - id: sushi
+      role_in_group: 苏轼 · 天真烂漫 · 《黄州寒食诗帖》天下第三行书
+    - id: huangtingjian
+      role_in_group: 黄庭坚 · 纵横奇崛 · 《松风阁诗帖》
+    - id: mifu
+      role_in_group: 米芾 · 沉着痛快 · 刷字入化 · 《蜀素帖》
+    - id: caixiang
+      role_in_group: 蔡襄 · 淳淡婉美 · 恪守晋唐法度
+
+- id: wumen-sijia
+  name: 吴门四家
+  category: 艺术
+  period: 明代中期
+  summary: 又称「明四家」，明代中期以苏州为中心的四位书画大师（沈周、文徵明、唐寅、仇英），融浙派、元四家与文人写意于一体，奠定明代文人书画巅峰。
+  tags: [吴门画派, 明四家, 苏州文脉, 青绿山水]
+  figures:
+    - id: shenzhou
+      role_in_group: 石田 · 吴门画派创始人 · 沉郁老辣
+    - id: wenzhengming
+      role_in_group: 衡山居士 · 吴中文坛领袖 · 雅正工稳
+    - id: tangyin
+      role_in_group: 唐伯虎 · 江南第一风流才子 · 雅俗共赏
+    - id: qiuying
+      role_in_group: 十洲 · 工笔精妙 · 青绿山水界画大师
+
+- id: yangzhou-baguai
+  name: 扬州八怪
+  category: 艺术
+  period: 清代中期
+  summary: 清乾隆年间活跃于扬州商业都会的书画家群体，因画风突破正统派陈陈相因之习、标新立异、抒发真性情而被传统画坛目为「怪」，对近现代写意画派影响深远。
+  tags: [扬州画派, 文人画革新, 诗书画印, 写意花鸟]
+  figures:
+    - id: zhengxie
+      role_in_group: 郑板桥 · 兰竹石三绝 · 六分半书 · 难得糊涂
+    - id: jinnong
+      role_in_group: 金农 · 漆书大家 · 古拙野逸 · 梅花佛像
+    - id: huangshen
+      role_in_group: 黄慎 · 瘿瓢山人 · 狂草写意人物
+    - id: lishan
+      role_in_group: 李鱓 · 泼墨大写意花鸟 · 水墨酣畅
+    - id: lifangying
+      role_in_group: 李方膺 · 清官画师 · 傲雪寒梅与风竹
+    - id: wangshishen
+      role_in_group: 汪士慎 · 盲眼苦吟画梅 · 清癯冷瘦
+    - id: luopin
+      role_in_group: 罗聘 · 金农弟子 · 《鬼趣图》画意奇崛
+    - id: gaoxiang
+      role_in_group: 高翔 · 疏秀荒简 · 扬州园林实景入画
+
+- id: sida-mingyi
+  name: 古代四大名医
+  category: 科技
+  period: 战国至明代
+  summary: 中国传统医学史上四位划时代的医道大师，奠定脉诊四诊、伤寒辨证、麻醉外科与本草学药物体系，被尊为中华医林之圣。
+  tags: [杏林圣手, 中医学, 伤寒论, 本草纲目]
+  figures:
+    - id: bianque
+      role_in_group: 战国神医 · 始创望闻问切四诊脉学 · 卢医
+    - id: huatuo
+      role_in_group: 东汉神医 · 创麻沸散外科手术 · 五禽戏
+    - id: zhangzhongjing
+      role_in_group: 东汉医圣 · 著《伤寒杂病论》 · 辨证论治之祖
+    - id: lishizhen
+      role_in_group: 明代药圣 · 历三十年撰《本草纲目》 · 集古代药物大成
+
+- id: wanqing-sidamingchen
+  name: 晚清四大名臣
+  category: 政治
+  period: 晚清
+  summary: 晚清内忧外患之际挽狂澜于既倒的四位汉族重臣，历经洋务运动与镇压农民起义，开办近代工矿学堂与军工实业，推动中国艰难走向近代化。
+  tags: [同光中兴, 洋务运动, 湘军淮军, 近代化转型]
+  figures:
+    - id: zengguofan
+      role_in_group: 湘军统领 · 创立安庆内军械所 · 治家立身典范
+    - id: zuozongtang
+      role_in_group: 陕甘总督 · 收复新疆定天山 · 创福州船政局
+    - id: lihongzhang
+      role_in_group: 北洋大臣 · 创办轮船招商局北洋水师 · 晚清外交掌舵
+    - id: zhangzhidong
+      role_in_group: 湖广总督 · 中体西用 · 创汉阳铁厂与湖北自强学堂

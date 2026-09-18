@@ -83,7 +83,7 @@ export function validate(data) {
 export function validateWithWarnings(data) {
   const errors = []
   const warnings = []
-  const { dynasties = [], rulers = [], events = [], worldEvents = [], civilizations = [], figures = [], legends = [] } = data
+  const { dynasties = [], rulers = [], events = [], worldEvents = [], civilizations = [], figures = [], legends = [], figureGroups = [] } = data
 
   const push = (record, message, level = 'error') => {
     const loc = locOf(record) ?? { file: '(未知)', line: 0 }
@@ -129,7 +129,9 @@ export function validateWithWarnings(data) {
   checkRequired(figures, 'figure', '人物')
 
   // 传说专题使用独立数据模型：不强制伪造在位年份，但必须标明传统分组、置信度和异说。
+  const legendIds = new Set()
   for (const legend of legends) {
+    if (legend.id !== undefined && legend.id !== null) legendIds.add(legend.id)
     for (const field of ['id', 'name', 'group', 'summary', 'confidence', 'dispute']) {
       if (legend[field] === undefined || legend[field] === null || legend[field] === '') {
         push(legend, `传说人物“${legend.name ?? legend.id ?? '(无标题)'}”缺少必填字段 ${field}`)
@@ -550,6 +552,7 @@ export function validateWithWarnings(data) {
   // 规范见 docs/figure-detail-schema.md。详卷是单对象文件，LOC 只能
   // 定位到文件级，条目级错误在 message 中携带条目路径（如 works[2]）。
   validateFigureDetails(data, { pushLoc, figIds, sourceById })
+  validateFigureGroups(data, { push, figIds, legendIds })
 
   return { errors, warnings }
 }
@@ -884,4 +887,51 @@ function validateFigureDetails(data, { pushLoc, figIds, sourceById }) {
     }
   }
 }
+
+/**
+ * 名家组合与历史谱系校验（data/figure-groups.yaml）。
+ *
+ * @param {object} data loadAll 的输出
+ * @param {object} ctx { push, figIds, legendIds }
+ */
+function validateFigureGroups(data, { push, figIds, legendIds }) {
+  const groups = data.figureGroups ?? []
+  const groupIds = new Set()
+
+  for (const g of groups) {
+    for (const field of ['id', 'name', 'category', 'period', 'summary', 'figures']) {
+      if (g[field] === undefined || g[field] === null || g[field] === '') {
+        push(g, `名家组合「${g.name ?? g.id ?? '(无名称)'}」缺少必填字段 ${field}`)
+      }
+    }
+
+    if (g.id !== undefined) {
+      if (groupIds.has(g.id)) {
+        push(g, `名家组合 id「${g.id}」重复`)
+      }
+      groupIds.add(g.id)
+    }
+
+    if (!Array.isArray(g.figures) || g.figures.length === 0) {
+      push(g, `名家组合「${g.name ?? g.id}」的 figures 须为非空数组`)
+      continue
+    }
+
+    for (let i = 0; i < g.figures.length; i++) {
+      const figRef = g.figures[i]
+      if (!figRef || typeof figRef !== 'object' || !figRef.id) {
+        push(g, `名家组合「${g.name ?? g.id}」的 figures[${i}] 缺少 id 字段`)
+        continue
+      }
+      const refId = figRef.id
+      if (!figIds.has(refId) && !legendIds.has(refId)) {
+        push(
+          g,
+          `名家组合「${g.name ?? g.id}」引用的成员人物 id「${refId}」在 figures.yaml 与 legends/ 中均不存在`
+        )
+      }
+    }
+  }
+}
+
 

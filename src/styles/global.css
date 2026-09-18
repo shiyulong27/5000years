@@ -2322,9 +2322,190 @@ a.figidx-name:hover { text-decoration: underline; }
 
 .figidx-foot-note { margin-top: 2rem; text-align: center; color: var(--muted); font-size: var(--meta-size); }
 
+/* ── 名家组合与徽章联动 ── */
+.figidx-card-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.2rem;
+}
+.figidx-group-badge {
+  font: inherit;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  padding: 0.15rem 0.5rem;
+  background: var(--banner-bg);
+  color: var(--accent);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.figidx-group-badge:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+.figidx-legend-badge {
+  font-size: 0.72rem;
+  padding: 0.1rem 0.45rem;
+  background: rgba(184, 130, 48, 0.12);
+  color: #9a651a;
+  border: 1px solid rgba(184, 130, 48, 0.25);
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* ── 视图模式切换器 ── */
+.figidx-view-switcher {
+  display: inline-flex;
+  background: var(--banner-bg);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 0.2rem;
+  gap: 0.2rem;
+  margin: 0.75rem 0 0.5rem;
+}
+.figidx-view-btn {
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 0.35rem 0.9rem;
+  border: none;
+  background: transparent;
+  color: var(--fg);
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.15s, color 0.15s;
+}
+.figidx-view-btn:hover {
+  background: var(--card-hover);
+}
+.figidx-view-btn.is-active {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* ── 名家谱系详卷长卷货架 ── */
+.figidx-group-shelf {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+.figidx-group-panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1.2rem 1.35rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.figidx-group-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+.figidx-group-title {
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.figidx-group-meta {
+  font-size: var(--meta-size);
+  color: var(--muted);
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+.figidx-group-period {
+  font-weight: 600;
+  color: var(--fg);
+}
+.figidx-group-category {
+  color: var(--accent);
+}
+.figidx-group-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  background: var(--banner-bg);
+  color: var(--flag-fg);
+  border: 1px solid var(--line);
+}
+.figidx-group-desc {
+  margin: 0 0 0.9rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--summary-fg);
+}
+.figidx-group-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13.8rem, 1fr));
+  gap: 0.65rem;
+}
+.figidx-member-chip {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0.6rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.figidx-member-name-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.figidx-member-name {
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+a.figidx-member-name:hover {
+  text-decoration: underline;
+}
+.figidx-member-name-plain {
+  color: var(--fg);
+}
+.figidx-member-role {
+  font-size: 0.82rem;
+  color: var(--fg);
+  line-height: 1.35;
+}
+.figidx-member-lifespan {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.figidx-member-link {
+  margin-top: 0.2rem;
+  font-size: 0.75rem;
+}
+.figidx-member-link a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.figidx-member-link a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 40rem) {
   .figidx-grid { grid-template-columns: 1fr; }
   .figidx-filters { flex-direction: column; align-items: stretch; }
+  .figidx-group-members { grid-template-columns: 1fr; }
 }
 
 /* ── 年份页人物生卒区 ───────────────────────────── */

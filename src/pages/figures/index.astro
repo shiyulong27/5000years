@@ -8,6 +8,20 @@ const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
 const data = loadAll(dataDir)
 const detailIds = new Set(data.figureDetails.map((d) => d.id))
 const base = import.meta.env.BASE_URL
+const figureGroups = data.figureGroups ?? []
+
+// 构建人物 ID 到所属组合列表的双向索引
+const figureToGroups = new Map()
+for (const g of figureGroups) {
+  for (const ref of g.figures ?? []) {
+    if (!figureToGroups.has(ref.id)) figureToGroups.set(ref.id, [])
+    figureToGroups.get(ref.id).push({
+      groupId: g.id,
+      groupName: g.name,
+      roleInGroup: ref.role_in_group ?? '',
+    })
+  }
+}
 
 // 时期分桶：与附录 A §A1 分期边界对齐；以生年（缺失时用卒年兜底，均缺失则归「待考」）
 function eraOf(figure) {
@@ -31,62 +45,131 @@ function eraOf(figure) {
   return '生卒待考'
 }
 
-const rows = data.figures
-  .map((f) => {
-    const hasDetail = detailIds.has(f.id) && f.has_detail === true
-    const roles = f.roles ?? []
-    const tags = f.tags ?? []
-    const birth = f.birth ? yearOf(f.birth) : null
-    const death = f.death ? yearOf(f.death) : null
-    const lifespan =
-      birth != null && death != null
-        ? `${birth < 0 ? `前${-birth}` : birth}–${death < 0 ? `前${-death}` : death}`
-        : [f.birth_note, f.death_note].filter(Boolean).join('，') || '生卒不可考'
-    return {
-      id: f.id,
-      name: f.name,
-      field: f.field ?? '其他',
-      roles,
-      tags,
-      lifespan,
-      era: eraOf(f),
-      note: f.note ?? '',
-      dispute: f.dispute ?? '',
-      confidence: f.confidence ?? '',
-      hasDetail,
-    }
-  })
-  .sort((a, b) => {
-    // 有详卷者靠前，其余按姓名稳定排序
-    if (a.hasDetail !== b.hasDetail) return a.hasDetail ? -1 : 1
-    return a.name.localeCompare(b.name, 'zh-Hans-CN')
-  })
+// 传说人物转化行数据（上古圣王三皇五帝等）
+const legendRows = (data.legends ?? []).map((l) => {
+  const groups = figureToGroups.get(l.id) ?? []
+  return {
+    id: l.id,
+    name: l.name,
+    field: '神话传说',
+    roles: ['传说圣王'],
+    tags: l.tags ?? ['传说', '三皇五帝'],
+    lifespan: '传说时代（约前3000–前2100）',
+    era: '先秦',
+    note: l.summary ?? '',
+    dispute: l.dispute ?? '',
+    confidence: l.confidence ?? '传说',
+    hasDetail: false,
+    isLegend: true,
+    groups,
+  }
+})
+
+// 历史人物转化行数据
+const figRows = data.figures.map((f) => {
+  const hasDetail = detailIds.has(f.id) && f.has_detail === true
+  const roles = f.roles ?? []
+  const tags = f.tags ?? []
+  const birth = f.birth ? yearOf(f.birth) : null
+  const death = f.death ? yearOf(f.death) : null
+  const lifespan =
+    birth != null && death != null
+      ? `${birth < 0 ? `前${-birth}` : birth}–${death < 0 ? `前${-death}` : death}`
+      : [f.birth_note, f.death_note].filter(Boolean).join('，') || '生卒不可考'
+  const groups = figureToGroups.get(f.id) ?? []
+  return {
+    id: f.id,
+    name: f.name,
+    field: f.field ?? '其他',
+    roles,
+    tags,
+    lifespan,
+    era: eraOf(f),
+    note: f.note ?? '',
+    dispute: f.dispute ?? '',
+    confidence: f.confidence ?? '',
+    hasDetail,
+    isLegend: false,
+    groups,
+  }
+})
+
+const rows = [...figRows, ...legendRows].sort((a, b) => {
+  // 有详卷者靠前，其余按姓名稳定排序
+  if (a.hasDetail !== b.hasDetail) return a.hasDetail ? -1 : 1
+  return a.name.localeCompare(b.name, 'zh-Hans-CN')
+})
 
 const fields = [...new Set(rows.map((r) => r.field))].sort()
 const eras = [...new Set(rows.map((r) => r.era))]
-// 按时期固定顺序排列筛选项
 const eraOrder = ['先秦', '秦汉', '魏晋南北朝', '隋唐五代', '宋辽夏金', '元明清', '近代', '现代', '生卒待考']
 eras.sort((a, b) => eraOrder.indexOf(a) - eraOrder.indexOf(b))
 const allRoles = [...new Set(rows.flatMap((r) => r.roles))].sort()
+
+// 组合分类与顺序
+const groupCategories = [...new Set(figureGroups.map((g) => g.category))]
+const categoryOrder = ['神话传说', '思想', '文学', '艺术', '政治', '科技', '医学']
+groupCategories.sort((a, b) => {
+  const ia = categoryOrder.indexOf(a)
+  const ib = categoryOrder.indexOf(b)
+  return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib)
+})
+const groupsByCategory = new Map()
+for (const cat of groupCategories) {
+  groupsByCategory.set(
+    cat,
+    figureGroups.filter((g) => g.category === cat)
+  )
+}
+
+// 为组合长卷视图准备完整关联信息
+const allFiguresById = new Map(rows.map((r) => [r.id, r]))
+const enrichedGroups = figureGroups.map((g) => {
+  const members = (g.figures ?? []).map((ref) => {
+    const figure = allFiguresById.get(ref.id)
+    return {
+      id: ref.id,
+      name: figure ? figure.name : ref.id,
+      roleInGroup: ref.role_in_group ?? '',
+      lifespan: figure ? figure.lifespan : '',
+      hasDetail: figure ? figure.hasDetail : false,
+      isLegend: figure ? figure.isLegend : false,
+    }
+  })
+  return {
+    ...g,
+    members,
+  }
+})
 
 const detailCount = rows.filter((r) => r.hasDetail).length
 
 const head = `
   <meta property="og:type" content="website" />
   <meta property="og:title" content="千古风流 · 人物总览 | 上下五千年" />
-  <meta property="og:description" content="${detailCount} 位历史人物拥有全景详卷：人生年谱、情境作品、足迹路线、关系网络与历代接受史，全部条目可溯源。" />
+  <meta property="og:description" content="${rows.length} 位历史名家与上古先圣（含 ${figureGroups.length} 组经典并称），其中 ${detailCount} 位已有全景详卷，全部条目可溯源。" />
 `
 ---
 
-<Base title="千古风流 · 人物总览 | 上下五千年" description={`${detailCount} 位历史人物全景详卷总览`} head={head}>
+<Base title="千古风流 · 人物总览 | 上下五千年" description={`${rows.length} 位名家总览与 ${figureGroups.length} 组经典并称谱系`} head={head}>
   <div class="figures-index-page">
     <header class="figidx-head">
       <a href={base} class="back-link">← 返回【十丘】知识总门户</a>
       <h1 class="figidx-title">千古风流 · 人物总览</h1>
       <p class="figidx-sub">
-        共收录 {rows.length} 位历史人物，其中 {detailCount} 位已有全景详卷（人生年谱 · 情境作品 · 足迹路线 · 关系网络 · 历代接受史）。
+        共收录 {rows.length} 位历史与传说名家（含 {figureGroups.length} 组经典并称谱系），其中 {detailCount} 位已有全景详卷（人生年谱 · 情境作品 · 足迹路线 · 关系网络 · 历代接受史）。
       </p>
     </header>
+
+    {/* 视图模式切换 */}
+    <div class="figidx-view-switcher" role="tablist" aria-label="视图模式">
+      <button type="button" class="figidx-view-btn is-active" id="view-mode-cards" role="tab" aria-selected="true">
+        人物名册
+      </button>
+      <button type="button" class="figidx-view-btn" id="view-mode-groups" role="tab" aria-selected="false">
+        名家谱系长卷 ({figureGroups.length} 组)
+      </button>
+    </div>
 
     {/* 筛选区：原生表单控件保证键盘可达；筛选纯客户端进行，不改变 URL */}
     <form class="figidx-filters" id="figidx-filters" autocomplete="off">
@@ -111,6 +194,19 @@ const head = `
           {allRoles.map((r) => <option value={r}>{r}</option>)}
         </select>
       </label>
+      <label class="filter-item">
+        <span>组合 / 并称</span>
+        <select id="flt-group">
+          <option value="">全部组合</option>
+          {groupCategories.map((cat) => (
+            <optgroup label={cat}>
+              {groupsByCategory.get(cat)?.map((g) => (
+                <option value={g.id}>{g.name}（{g.figures.length}人 · {g.period}）</option>
+              ))}
+            </optgroup>
+          ))}
+        </select>
+      </label>
       <label class="filter-item filter-search">
         <span>搜索</span>
         <input type="search" id="flt-q" placeholder="输入人名…" />
@@ -127,9 +223,10 @@ const head = `
     </p>
 
     <p class="figidx-empty" id="figidx-empty" hidden>
-      没有符合当前筛选条件的人物——请调整时期、领域或清除搜索词。
+      没有符合当前筛选条件的人物——请调整时期、领域、组合或清除搜索词。
     </p>
 
+    {/* 人物名册卡片网格 */}
     <ul class="figidx-grid" id="figidx-grid">
       {rows.map((r) => (
         <li
@@ -137,6 +234,7 @@ const head = `
           data-era={r.era}
           data-field={r.field}
           data-roles={r.roles.join('|')}
+          data-groups={r.groups.map((g) => g.groupId).join('|')}
           data-name={r.name}
         >
           <div class="figidx-card-head">
@@ -147,6 +245,22 @@ const head = `
             )}
             <span class="figidx-lifespan">{r.lifespan}</span>
           </div>
+
+          {/* 传说人物与所属名家组合徽章 */}
+          <div class="figidx-card-groups">
+            {r.isLegend && <span class="figidx-legend-badge">传说圣王</span>}
+            {r.groups.map((g) => (
+              <button
+                type="button"
+                class="figidx-group-badge"
+                data-group-id={g.groupId}
+                title={`点击筛选「${g.groupName}」：${g.roleInGroup || g.groupName}`}
+              >
+                {g.groupName}
+              </button>
+            ))}
+          </div>
+
           <p class="figidx-meta">
             <span class="figidx-field">{r.field}</span>
             {r.roles.length > 0 && <span class="figidx-roles">{r.roles.join(' · ')}</span>}
@@ -157,6 +271,8 @@ const head = `
             <p class="figidx-foot">
               <a href={`${base}figure/${r.id}/`}>阅读全景详卷 ➔</a>
             </p>
+          ) : r.isLegend ? (
+            <p class="figidx-foot figidx-foot-light">华夏上古圣王传说</p>
           ) : (
             <p class="figidx-foot figidx-foot-light">轻量索引条目（暂无详卷）</p>
           )}
@@ -164,36 +280,87 @@ const head = `
       ))}
     </ul>
 
+    {/* 名家谱系详卷长卷货架 */}
+    <div class="figidx-group-shelf" id="figidx-group-shelf" hidden>
+      {enrichedGroups.map((g) => (
+        <article class="figidx-group-panel" id={`grp-${g.id}`} data-group-id={g.id}>
+          <header class="figidx-group-head">
+            <h2 class="figidx-group-title">
+              {g.name}
+              <span class="figidx-group-tag">{g.period}</span>
+            </h2>
+            <div class="figidx-group-meta">
+              <span class="figidx-group-category">领域：{g.category}</span>
+              <span class="figidx-group-count">收录 {g.members.length} 人</span>
+            </div>
+          </header>
+          <p class="figidx-group-desc">{g.summary}</p>
+          <div class="figidx-group-members">
+            {g.members.map((m) => (
+              <div class="figidx-member-chip">
+                <div class="figidx-member-name-row">
+                  {m.hasDetail ? (
+                    <a class="figidx-member-name" href={`${base}figure/${m.id}/`}>{m.name}</a>
+                  ) : (
+                    <span class="figidx-member-name figidx-member-name-plain">{m.name}</span>
+                  )}
+                  {m.isLegend && <span class="figidx-legend-badge">传说</span>}
+                </div>
+                {m.roleInGroup && <div class="figidx-member-role">{m.roleInGroup}</div>}
+                <div class="figidx-member-lifespan">{m.lifespan}</div>
+                {m.hasDetail && (
+                  <div class="figidx-member-link">
+                    <a href={`${base}figure/${m.id}/`}>详卷 ➔</a>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+
     <footer class="figidx-foot-note">
-      <p>人物数据以 YAML 维护、构建时校验；详卷内容只收公版古籍原文与中立转述，争议事实随条目标注。</p>
+      <p>人物与组合数据以 YAML 结构化维护、构建时严苛校验；详卷内容严格遵循史料溯源，争议与传说事实均附标注。</p>
     </footer>
   </div>
 </Base>
 
 <script>
-  // 纯客户端组合筛选：无框架依赖；控件失焦/回车均可触发 change/input
+  // 纯客户端组合筛选与视图切换
   const eraSel = document.getElementById('flt-era')
   const fieldSel = document.getElementById('flt-field')
   const roleSel = document.getElementById('flt-role')
+  const groupSel = document.getElementById('flt-group')
   const qInput = document.getElementById('flt-q')
   const detailOnly = document.getElementById('flt-detail')
   const cards = [...document.querySelectorAll('#figidx-grid .figidx-card')]
   const countEl = document.getElementById('figidx-count')
   const emptyEl = document.getElementById('figidx-empty')
+  const gridEl = document.getElementById('figidx-grid')
+  const shelfEl = document.getElementById('figidx-group-shelf')
+  const filterForm = document.getElementById('figidx-filters')
+
+  const btnCardsView = document.getElementById('view-mode-cards')
+  const btnGroupsView = document.getElementById('view-mode-groups')
 
   function apply() {
     const era = eraSel.value
     const field = fieldSel.value
     const role = roleSel.value
+    const group = groupSel.value
     const q = qInput.value.trim()
     const onlyDetail = detailOnly.checked
     let shown = 0
     let withDetail = 0
+
     for (const card of cards) {
+      const cardGroups = (card.dataset.groups || '').split('|').filter(Boolean)
       const ok =
         (!era || card.dataset.era === era) &&
         (!field || card.dataset.field === field) &&
         (!role || (card.dataset.roles || '').split('|').includes(role)) &&
+        (!group || cardGroups.includes(group)) &&
         (!q || (card.dataset.name || '').includes(q)) &&
         (!onlyDetail || card.classList.contains('figidx-card-detail'))
       card.hidden = !ok
@@ -206,11 +373,54 @@ const head = `
     emptyEl.hidden = shown !== 0
   }
 
-  for (const el of [eraSel, fieldSel, roleSel]) el.addEventListener('change', apply)
+  // 视图切换
+  function switchView(mode) {
+    if (mode === 'cards') {
+      btnCardsView.classList.add('is-active')
+      btnCardsView.setAttribute('aria-selected', 'true')
+      btnGroupsView.classList.remove('is-active')
+      btnGroupsView.setAttribute('aria-selected', 'false')
+      gridEl.hidden = false
+      countEl.hidden = false
+      shelfEl.hidden = true
+      filterForm.hidden = false
+      apply()
+    } else {
+      btnGroupsView.classList.add('is-active')
+      btnGroupsView.setAttribute('aria-selected', 'true')
+      btnCardsView.classList.remove('is-active')
+      btnCardsView.setAttribute('aria-selected', 'false')
+      gridEl.hidden = true
+      countEl.hidden = true
+      emptyEl.hidden = true
+      shelfEl.hidden = false
+    }
+  }
+
+  btnCardsView.addEventListener('click', () => switchView('cards'))
+  btnGroupsView.addEventListener('click', () => switchView('groups'))
+
+  for (const el of [eraSel, fieldSel, roleSel, groupSel]) el.addEventListener('change', apply)
   qInput.addEventListener('input', apply)
   detailOnly.addEventListener('change', apply)
-  document.getElementById('figidx-filters').addEventListener('reset', () => {
-    // reset 后控件值才恢复默认，延后一帧再统计
+  filterForm.addEventListener('reset', () => {
     requestAnimationFrame(apply)
+  })
+
+  // 点击卡片上的组合徽章 -> 自动选中该组合并重新筛选
+  document.addEventListener('click', (e) => {
+    const target = e.target
+    if (target && target.matches && target.matches('.figidx-group-badge')) {
+      const gid = target.dataset.groupId
+      if (gid) {
+        groupSel.value = gid
+        // 如果当前是无详卷限制导致筛不出，自动取消勾选仅看详卷以呈现组合完整阵容
+        detailOnly.checked = false
+        switchView('cards')
+        apply()
+        // 滚动到筛选器下方
+        countEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+      }
+    }
   })
 </script>

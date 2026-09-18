@@ -1993,3 +1993,409 @@
   tags: [南宋, 豪放]
   has_detail: true
   confidence: 确定
+- id: pingyuanjun
+  name: 赵胜（平原君）
+  birth_note: 生年不详，战国末期赵国宗室
+  death: '-0251'
+  field: 政治
+  roles: [政治家]
+  tags: [战国四公子, 邯郸之围, 毛遂自荐]
+  note: 赵国宗室相国，战国四公子之一，散尽家财犒军救赵，留「毛遂自荐」「邯郸解围」等典故
+  confidence: 确定
+- id: xinlingjun
+  name: 魏无忌（信陵君）
+  birth_note: 生年不详，魏昭王少子
+  death: '-0243'
+  field: 政治
+  roles: [政治家, 军事家]
+  tags: [战国四公子, 窃符救赵, 五国联军]
+  note: 魏国公子，战国四公子之首，礼贤下士厚遇侯赢朱亥，窃符救赵大破秦军，晚年为安厘王所忌饮醇酒死
+  confidence: 确定
+- id: chunshenjun
+  name: 黄歇（春申君）
+  birth: '-0314'
+  death: '-0238'
+  field: 政治
+  roles: [政治家]
+  tags: [战国四公子, 楚国, 黄浦]
+  note: 楚国相国，战国四公子之一，辅佐考烈王迁都寿春，开浚江南故道（黄歇浦/上海黄浦江由此得名）
+  confidence: 确定
+- id: xiaohe
+  name: 萧何
+  birth: '-0257'
+  death: '-0193'
+  field: 政治
+  roles: [政治家]
+  tags: [汉初三杰, 汉相, 九章律]
+  note: 西汉开国宰相，汉初三杰之一，镇守关中足兵足食，制定《九章律》，开创「萧规曹随」典范
+  confidence: 确定
+- id: zhangliang
+  name: 张良
+  birth: '-0250'
+  death: '-0186'
+  field: 政治
+  roles: [政治家, 谋士]
+  tags: [汉初三杰, 谋圣, 运筹帷幄]
+  note: 西汉开国元勋，汉初三杰之一，字子房，得黄石公《太公兵法》，运筹帷幄之中决胜千里之外
+  confidence: 确定
+- id: caopi
+  name: 曹丕
+  birth: '0187'
+  death: '0226'
+  field: 文学
+  roles: [文学家, 诗人, 政治家]
+  tags: [三曹, 建安文学, 典论论文]
+  note: 魏文帝，建安文学代表，《燕歌行》为中国现存最早成熟纯粹的文人七言诗，《典论·论文》开创文学批评先河
+  confidence: 确定
+- id: kongrong
+  name: 孔融
+  birth: '0153'
+  death: '0208'
+  field: 文学
+  roles: [文学家, 思想家]
+  tags: [建安七子, 孔子后裔, 建安风骨]
+  note: 建安七子之首，孔子二十世孙，少有俊才，任北海相，为人高傲耿介，文辞跌宕，以直谏触忤曹操被诛
+  confidence: 确定
+- id: chenlin
+  name: 陈琳
+  birth_note: 生年不详
+  death: '0217'
+  field: 文学
+  roles: [散文家, 文学家]
+  tags: [建安七子, 檄文, 建安二十二年大疫]
+  note: 建安七子之一，初仕何进、袁绍，作《为袁绍檄豫州文》极具声势，后归曹操专掌军国书檄
+  confidence: 确定
+- id: wangcan
+  name: 王粲
+  birth: '0177'
+  death: '0217'
+  field: 文学
+  roles: [诗人, 辞赋家]
+  tags: [建安七子, 登楼赋, 七哀诗]
+  note: 建安七子之冠，七子中文学成就最高者，避乱荆州作《登楼赋》《七哀诗》，抒写汉末战乱离散极其沉痛
+  confidence: 确定
+- id: xugan
+  name: 徐干
+  birth: '0170'
+  death: '0217'
+  field: 文学
+  roles: [文学家, 思想家]
+  tags: [建安七子, 中论]
+  note: 建安七子之一，淡泊名利，潜心述作《中论》二十篇，曹丕称其「虚心自居，德行纯备」
+  confidence: 确定
+- id: ruanyu
+  name: 阮瑀
+  birth_note: 生年不详
+  death: '0212'
+  field: 文学
+  roles: [散文家, 文学家]
+  tags: [建安七子, 书记草檄, 阮籍之父]
+  note: 建安七子之一，受学于蔡邕，工章表书记，草檄立就，为竹林七贤阮籍之父
+  confidence: 确定
+- id: yingyang
+  name: 应玚
+  birth_note: 生年不详
+  death: '0217'
+  field: 文学
+  roles: [文学家, 辞赋家]
+  tags: [建安七子, 建安文学]
+  note: 建安七子之一，文辞温润，兼通辩论，官至平原侯庶子，建安二十二年殁于瘟疫
+  confidence: 确定
+- id: liuzhen
+  name: 刘桢
+  birth_note: 生年不详
+  death: '0217'
+  field: 文学
+  roles: [诗人, 文学家]
+  tags: [建安七子, 赠从弟, 骨气奇高]
+  note: 建安七子之一，文气壮烈，曹丕赞其「仗气爱奇，动多振拔」，代表作《赠从弟》风骨凛然
+  confidence: 确定
+- id: shantao
+  name: 山涛
+  birth: '0205'
+  death: '0283'
+  field: 政治
+  roles: [政治家, 思想家]
+  tags: [竹林七贤, 识人之明, 托孤之谊]
+  note: 竹林七贤之一，西晋司徒，雅量弘远，精于识人拔萃，嵇康作《与山巨源绝交书》然临刑托孤于涛
+  confidence: 确定
+- id: xiangxiu
+  name: 向秀
+  birth: '0227'
+  death: '0272'
+  field: 思想
+  roles: [思想家, 散文家]
+  tags: [竹林七贤, 庄子注, 思旧赋]
+  note: 竹林七贤之一，创《庄子注》解经新法，嵇康死后经黄县旧居闻邻人笛声作《思旧赋》，辞极酸楚
+  confidence: 确定
+- id: liuling
+  name: 刘伶
+  birth: '0221'
+  death: '0300'
+  field: 文学
+  roles: [文学家]
+  tags: [竹林七贤, 酒德颂, 魏晋风度]
+  note: 竹林七贤之一，嗜酒放达，以天地为栋宇、屋室为裈衣，作《酒德颂》蔑视封建名教
+  confidence: 确定
+- id: wangrong
+  name: 王戎
+  birth: '0234'
+  death: '0305'
+  field: 政治
+  roles: [政治家]
+  tags: [竹林七贤, 道旁苦李, 西晋司徒]
+  note: 竹林七贤最年少者，幼有俊名留「道旁苦李」典故，官至西晋司徒，为人兼具清谈风度与俭吝之癖
+  confidence: 确定
+- id: ruanxian
+  name: 阮咸
+  birth: '0230'
+  death: '0281'
+  field: 艺术
+  roles: [音乐家]
+  tags: [竹林七贤, 妙解音律, 阮咸琵琶]
+  note: 竹林七贤之一，阮籍之侄，神解音律，尤善弹琵琶，唐玄宗时因其擅弹而定名为乐器「阮咸」
+  confidence: 确定
+- id: yangjiong
+  name: 杨炯
+  birth: '0650'
+  death: '0692'
+  field: 文学
+  roles: [诗人]
+  tags: [初唐四杰, 边塞诗, 从军行]
+  note: 初唐四杰之一，辞气豪迈高华，擅长五言律诗，以《从军行》（宁为百夫长，胜作一书生）享誉后世
+  confidence: 确定
+- id: luzhaolin
+  name: 卢照邻
+  birth: '0634'
+  death: '0684'
+  field: 文学
+  roles: [诗人]
+  tags: [初唐四杰, 长安古意, 歌行体]
+  note: 初唐四杰之一，字升之，擅长七言歌行，《长安古意》（得成比目何辞死）为初唐歌行巅峰，晚年投水死
+  confidence: 确定
+- id: suxun
+  name: 苏洵
+  birth: '1009'
+  death: '1066'
+  field: 文学
+  roles: [散文家]
+  tags: [三苏, 唐宋八大家, 六国论]
+  note: 北宋著名散文家，眉山三苏与唐宋八大家之一，号老泉，大器晚成，策论深得战国纵横家之风，代表作《六国论》
+  confidence: 确定
+- id: suzhe
+  name: 苏辙
+  birth: '1039'
+  death: '1112'
+  field: 文学
+  roles: [散文家, 政治家]
+  tags: [三苏, 唐宋八大家, 上枢密韩太尉书]
+  note: 北宋散文家、门下侍郎（宰相），三苏与唐宋八大家之一，苏轼胞弟，文风汪洋澹泊，代表作《上枢密韩太尉书》
+  confidence: 确定
+- id: zenggong
+  name: 曾巩
+  birth: '1019'
+  death: '1083'
+  field: 文学
+  roles: [散文家]
+  tags: [唐宋八大家, 墨池记, 欧阳修门生]
+  note: 北宋著名散文家，唐宋八大家之一，世称南丰先生，欧阳修高足，文风古雅平正、法度谨严，代表作《墨池记》
+  confidence: 确定
+- id: chaobuzhi
+  name: 晁补之
+  birth: '1053'
+  death: '1110'
+  field: 文学
+  roles: [词人, 散文家]
+  tags: [苏门四学士, 归来子, 宋词]
+  note: 北宋文学家，苏门四学士之一，字无咎号归来子，工诗文词赋，词风受苏轼影响而豪迈拔俗
+  confidence: 确定
+- id: zhanglei
+  name: 张耒
+  birth: '1054'
+  death: '1114'
+  field: 文学
+  roles: [诗人, 文学家]
+  tags: [苏门四学士, 柯山先生]
+  note: 北宋文学家，苏门四学士之一，号柯山先生，诗学白居易，文辞平易温淳，苏轼殁后唯一敢于公祭者
+  confidence: 确定
+- id: ouyangxun
+  name: 欧阳询
+  birth: '0557'
+  death: '0641'
+  field: 艺术
+  roles: [书法家]
+  tags: [楷书四大家, 欧体, 九成宫醴泉铭]
+  note: 唐代杰出书法家，楷书四大家之一，创欧体，法度严谨、用笔险劲，楷书代表作《九成宫醴泉铭》天下闻名
+  confidence: 确定
+- id: yanzhenqing
+  name: 颜真卿
+  birth: '0709'
+  death: '0784'
+  field: 艺术
+  roles: [书法家, 政治家]
+  tags: [楷书四大家, 颜体, 祭侄文稿, 忠烈名臣]
+  note: 唐代书法宗师、忠烈宰相，楷书四大家之一，创颜体端庄浑厚，行书《祭侄文稿》被称为天下第二行书
+  confidence: 确定
+- id: liugongquan
+  name: 柳公权
+  birth: '0778'
+  death: '0865'
+  field: 艺术
+  roles: [书法家]
+  tags: [楷书四大家, 柳体, 玄秘塔碑, 颜筋柳骨]
+  note: 唐代杰出书法家，楷书四大家之一，创柳体骨力道健、结构紧凑，提出「心正则笔正」，代表作《玄秘塔碑》
+  confidence: 确定
+- id: zhaomengfu
+  name: 赵孟頫
+  birth: '1254'
+  death: '1322'
+  field: 艺术
+  roles: [书法家, 画家]
+  tags: [楷书四大家, 赵体, 书画同源, 鹊华秋色图]
+  note: 元代书画宗师，楷书四大家之一，字子昂号松雪道人，倡导「书画本来同」，楷书圆润妍秀，代表画作《鹊华秋色图》
+  confidence: 确定
+- id: mifu
+  name: 米芾
+  birth: '1051'
+  death: '1107'
+  field: 艺术
+  roles: [书法家, 画家]
+  tags: [宋四家, 米癫, 蜀素帖, 米氏云山]
+  note: 北宋书法家、画家，宋四家之一，人称米颠，善行草，笔法痛快沉着、骏迈超逸，兼创米点山水，代表作《蜀素帖》
+  confidence: 确定
+- id: caixiang
+  name: 蔡襄
+  birth: '1012'
+  death: '1067'
+  field: 艺术
+  roles: [书法家, 政治家]
+  tags: [宋四家, 洛阳桥, 茶录]
+  note: 北宋书法家、名臣，宋四家之一，书风浑厚端严、淳淡婉美，督造泉州万安桥（洛阳桥），撰《茶录》
+  confidence: 确定
+- id: shenzhou
+  name: 沈周
+  birth: '1427'
+  death: '1509'
+  field: 艺术
+  roles: [画家, 诗人]
+  tags: [吴门四家, 明四家, 石田, 吴门画派]
+  note: 明代画家，吴门画派开创者，明四家之首，号石田，工山水花鸟，笔墨浑厚苍润、意境高简，为人乐善好施
+  confidence: 确定
+- id: wenzhengming
+  name: 文徵明
+  birth: '1470'
+  death: '1559'
+  field: 艺术
+  roles: [画家, 书法家]
+  tags: [吴门四家, 明四家, 衡山居士]
+  note: 明代著名书画家，吴门四家之一，号衡山居士，诗文书画无一不精，画格温雅纯正、萧散简远，引领江南画坛三十年
+  confidence: 确定
+- id: tangyin
+  name: 唐寅
+  birth: '1470'
+  death: '1524'
+  field: 艺术
+  roles: [画家, 书法家, 诗人]
+  tags: [吴门四家, 明四家, 唐伯虎, 桃花庵歌]
+  note: 明代书画家、文学家，吴门四家之一，字伯虎号六如居士，才气纵横，山水兼通南北宗，诗文作《桃花庵歌》名动江南
+  confidence: 确定
+- id: qiuying
+  name: 仇英
+  birth: '1498'
+  death: '1552'
+  field: 艺术
+  roles: [画家]
+  tags: [吴门四家, 明四家, 汉宫春晓图, 青绿山水]
+  note: 明代杰出画家，吴门四家之一，字实父号十洲，漆工出身刻苦成大器，工笔人物与青绿山水精丽超逸，作《汉宫春晓图》
+  confidence: 确定
+- id: zhengxie
+  name: 郑燮
+  birth: '1693'
+  death: '1765'
+  field: 艺术
+  roles: [画家, 书法家]
+  tags: [扬州八怪, 郑板桥, 六分半书, 难得糊涂]
+  note: 清代书画家、文学家，号板桥，扬州八怪代表人物，为官爱民，画兰竹石三绝，创隶楷融合之「六分半书」
+  confidence: 确定
+- id: jinnong
+  name: 金农
+  birth: '1687'
+  death: '1763'
+  field: 艺术
+  roles: [书法家, 画家]
+  tags: [扬州八怪, 漆书, 冬心先生]
+  note: 清代书画家，扬州八怪之首，号冬心先生，博学多才，首创古拙苍劲之「漆书」，晚年善画梅竹、佛像，野逸清奇
+  confidence: 确定
+- id: huangshen
+  name: 黄慎
+  birth: '1687'
+  death: '1772'
+  field: 艺术
+  roles: [画家, 书法家]
+  tags: [扬州八怪, 瘿瓢山人, 狂草人物]
+  note: 清代画家，扬州八怪之一，号瘿瓢山人，擅狂草入画，以粗笔写意人物图闻名，笔势飞动、形象生动传神
+  confidence: 确定
+- id: lishan
+  name: 李鱓
+  birth: '1686'
+  death: '1762'
+  field: 艺术
+  roles: [画家]
+  tags: [扬州八怪, 复堂, 泼墨花鸟]
+  note: 清代画家，扬州八怪之一，号复堂，曾为宫廷画师后流寓扬州，擅破笔泼墨写意花鸟，风格放纵古茂
+  confidence: 确定
+- id: lifangying
+  name: 李方膺
+  birth: '1695'
+  death: '1755'
+  field: 艺术
+  roles: [画家]
+  tags: [扬州八怪, 晴江, 苍劲风竹]
+  note: 清代画家，扬州八怪之一，官知县清廉遭诬罢官，工画松竹兰菊，尤以风竹和墨梅见长，笔墨傲岸倔强
+  confidence: 确定
+- id: wangshishen
+  name: 汪士慎
+  birth: '1686'
+  death: '1759'
+  field: 艺术
+  roles: [画家, 书法家]
+  tags: [扬州八怪, 巢林, 盲眼画梅]
+  note: 清代书画家，扬州八怪之一，号巢林，一生清贫，善画梅花与墨柳，晚年双目失明仍摸索画梅，风格清瘦孤冷
+  confidence: 确定
+- id: luopin
+  name: 罗聘
+  birth: '1733'
+  death: '1799'
+  field: 艺术
+  roles: [画家]
+  tags: [扬州八怪, 两峰, 鬼趣图]
+  note: 清代画家，扬州八怪中最年轻者，号两峰，金农入室弟子，画风奇崛古奥，作《鬼趣图》讽喻世俗名噪京师
+  confidence: 确定
+- id: gaoxiang
+  name: 高翔
+  birth: '1688'
+  death: '1753'
+  field: 艺术
+  roles: [画家, 书法家]
+  tags: [扬州八怪, 西唐, 扬州园林]
+  note: 清代画家，扬州八怪之一，号西唐，终身布衣，画山水承弘仁简静之风，爱画扬州庭园实景，意境荒寒疏秀
+  confidence: 确定
+- id: bianque
+  name: 扁鹊
+  birth: '-0407'
+  death: '-0310'
+  field: 科技
+  roles: [医学家]
+  tags: [四大名医, 四诊法, 难经, 神医]
+  note: 战国名医秦越人，奠定望闻问切四诊脉法，起死回生救虢太子，后世相传其著《难经》，医界奉为神医
+  confidence: 有争议
+  dispute: 《史记·扁鹊仓公列传》汇集了战国多地关于扁鹊医案传说，具体年代与生平在学界存在多重考证讨论。
+- id: zhangzhongjing
+  name: 张仲景
+  birth: '0150'
+  death: '0219'
+  field: 科技
+  roles: [医学家]
+  tags: [四大名医, 医圣, 伤寒杂病论, 辨证论治]
+  note: 东汉医学家，被后世尊为「医圣」，目睹汉末疫病流离撰《伤寒杂病论》，创立中医理法方药辨证论治体系
+  confidence: 确定

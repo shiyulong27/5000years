@@ -148,6 +148,7 @@ export function loadAll(dataDir) {
     events: loadDir(dataDir, 'events'),
     worldEvents: loadDir(dataDir, 'world'),
     figureDetails: loadSingleDir(dataDir, 'figures/detail'),
+    figureGroups: loadFile(dataDir, 'figure-groups.yaml'),
     sources: loadFile(dataDir, 'sources.yaml'),
     shanhaijing: {
       beasts: loadFile(dataDir, 'shanhaijing/beasts.yaml'),
