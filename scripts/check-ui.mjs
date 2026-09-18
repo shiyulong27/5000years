@@ -11,7 +11,7 @@ const outDir = fileURLToPath(new URL('../.shots', import.meta.url))
 mkdirSync(outDir, { recursive: true })
 
 const PORT = 4332
-const BASE = `http://127.0.0.1:${PORT}/5000years/`
+const BASE = `http://127.0.0.1:${PORT}/shiqiu/`
 
 const server = spawn(
   process.execPath,

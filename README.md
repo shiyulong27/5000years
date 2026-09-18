@@ -1,4 +1,4 @@
-# 上下五千年 · 历史时间线
+# 十丘 · 上下五千年历史时间线
 
 一幅纵贯五千年的长卷时间线。从上古传说到 2026，中国朝代、人物与
 世界文明色带并置于一轴，可缩放、可筛选、可对照东西方历史进程。
@@ -17,7 +17,7 @@
 
 ```bash
 npm i          # 安装依赖
-npm run dev    # 开发服务器，http://localhost:4321/5000years/
+npm run dev    # 开发服务器，http://localhost:4321/shiqiu/
 npm run build  # 校验 + 测试 + 构建，产物在 dist/
 npm test       # 仅跑单元测试（不含数据校验）
 npm run validate  # 仅跑数据校验

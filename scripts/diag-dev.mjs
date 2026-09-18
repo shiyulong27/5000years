@@ -5,7 +5,7 @@ const page = await browser.newPage({ viewport: { width: 1400, height: 1000 } })
 const errors = []
 page.on('pageerror', (e) => errors.push(String(e)))
 
-await page.goto('http://127.0.0.1:4321/5000years/', { waitUntil: 'networkidle' })
+await page.goto('http://127.0.0.1:4321/shiqiu/', { waitUntil: 'networkidle' })
 
 const info = await page.evaluate(() => {
   const banners = [...document.querySelectorAll('.dynasty-banner')].map(

@@ -16,7 +16,7 @@ mkdirSync(outDir, { recursive: true })
 
 const PORT = 4331
 const ORIGIN = `http://127.0.0.1:${PORT}`
-const BASE = `${ORIGIN}/5000years/`
+const BASE = `${ORIGIN}/shiqiu/`
 
 // astro preview 默认只绑 ::1，显式指定 host 以便用 127.0.0.1 访问
 const server = spawn(
