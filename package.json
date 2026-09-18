@@ -1,8 +1,8 @@
 {
-  "name": "5000years",
+  "name": "shiqiu",
   "version": "0.1.0",
   "type": "module",
-  "description": "上下五千年 · 历史时间线",
+  "description": "十丘 · 上下五千年历史时间线",
   "private": true,
   "scripts": {
     "dev": "astro dev",
